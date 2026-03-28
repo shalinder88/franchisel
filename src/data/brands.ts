@@ -7,7 +7,7 @@ import { getOverallScore } from "@/lib/types";
    ══════════════════════════════════════════════════════ */
 
 export const brands: FranchiseBrand[] = [
-  {
+{
     slug: "mcdonalds",
     name: "McDonald's",
     parentCompany: "McDonald's Corporation",
@@ -95,7 +95,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: true,
   },
-  {
+{
     slug: "chick-fil-a",
     name: "Chick-fil-A",
     parentCompany: "Chick-fil-A, Inc.",
@@ -181,7 +181,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: true,
   },
-  {
+{
     slug: "planet-fitness",
     name: "Planet Fitness",
     parentCompany: "Planet Fitness, Inc.",
@@ -262,7 +262,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: true,
   },
-  {
+{
     slug: "servpro",
     name: "SERVPRO",
     parentCompany: "Servpro Industries, LLC",
@@ -358,7 +358,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "the-ups-store",
     name: "The UPS Store",
     parentCompany: "UPS Store, Inc.",
@@ -447,7 +447,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "orangetheory-fitness",
     name: "Orangetheory Fitness",
     parentCompany: "Ultimate Fitness Group",
@@ -529,7 +529,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "kumon",
     name: "Kumon Math & Reading Centers",
     parentCompany: "Kumon North America, Inc.",
@@ -610,7 +610,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "jersey-mikes",
     name: "Jersey Mike's Subs",
     parentCompany: "Jersey Mike's Franchise Systems, Inc.",
@@ -692,7 +692,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: true,
   },
-  {
+{
     slug: "home-instead",
     name: "Home Instead",
     parentCompany: "Home Instead, Inc.",
@@ -772,7 +772,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "great-clips",
     name: "Great Clips",
     parentCompany: "Great Clips, Inc.",
@@ -859,7 +859,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "subway",
     name: "Subway",
     parentCompany: "Subway IP LLC",
@@ -951,7 +951,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "7-eleven",
     name: "7-Eleven",
     parentCompany: "7-Eleven, Inc.",
@@ -1035,7 +1035,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "anytime-fitness",
     name: "Anytime Fitness",
     parentCompany: "Self Esteem Brands, LLC",
@@ -1117,7 +1117,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "massage-envy",
     name: "Massage Envy",
     parentCompany: "Massage Envy Franchising, LLC",
@@ -1207,7 +1207,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "two-men-and-a-truck",
     name: "Two Men and a Truck",
     parentCompany: "Two Men and a Truck International, Inc.",
@@ -1288,7 +1288,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "matco-tools",
     name: "Matco Tools",
     parentCompany: "Matco Tools Corporation",
@@ -1373,7 +1373,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "ace-hardware",
     name: "Ace Hardware",
     parentCompany: "Ace Hardware Corporation",
@@ -1455,7 +1455,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "the-learning-experience",
     name: "The Learning Experience",
     parentCompany: "The Learning Experience Academy of Early Education, LLC",
@@ -1538,7 +1538,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "wingstop",
     name: "Wingstop",
     parentCompany: "Wingstop Inc.",
@@ -1626,7 +1626,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: true,
   },
-  {
+{
     slug: "jan-pro",
     name: "Jan-Pro",
     parentCompany: "Jan-Pro Franchising International, Inc.",
@@ -1708,7 +1708,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "dunkin",
     name: "Dunkin'",
     parentCompany: "Inspire Brands, Inc.",
@@ -1790,7 +1790,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: true,
   },
-  {
+{
     slug: "sonic",
     name: "Sonic Drive-In",
     parentCompany: "Inspire Brands, Inc.",
@@ -1873,7 +1873,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "taco-bell",
     name: "Taco Bell",
     parentCompany: "Yum! Brands, Inc.",
@@ -1949,7 +1949,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: true,
   },
-  {
+{
     slug: "remax",
     name: "RE/MAX",
     parentCompany: "RE/MAX Holdings, Inc.",
@@ -2024,7 +2024,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "keller-williams",
     name: "Keller Williams",
     parentCompany: "Keller Williams Realty, Inc.",
@@ -2096,7 +2096,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "snap-fitness",
     name: "Snap Fitness",
     parentCompany: "Lift Brands, LLC",
@@ -2179,7 +2179,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "european-wax-center",
     name: "European Wax Center",
     parentCompany: "European Wax Center, Inc.",
@@ -2256,7 +2256,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "sport-clips",
     name: "Sport Clips",
     parentCompany: "Sport Clips, Inc.",
@@ -2338,7 +2338,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "supercuts",
     name: "Supercuts",
     parentCompany: "Regis Corporation",
@@ -2429,7 +2429,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "visiting-angels",
     name: "Visiting Angels",
     parentCompany: "Living Assistance Services, Inc.",
@@ -2503,7 +2503,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "right-at-home",
     name: "Right at Home",
     parentCompany: "Right at Home, Inc.",
@@ -2577,7 +2577,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "merry-maids",
     name: "Merry Maids",
     parentCompany: "ServiceMaster Brands, LLC",
@@ -2658,7 +2658,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "paul-davis",
     name: "Paul Davis Restoration",
     parentCompany: "Paul Davis Restoration, Inc.",
@@ -2733,7 +2733,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "tutor-doctor",
     name: "Tutor Doctor",
     parentCompany: "Tutor Doctor Global, Inc.",
@@ -2816,7 +2816,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "sylvan-learning",
     name: "Sylvan Learning",
     parentCompany: "Sylvan Learning, LLC",
@@ -2905,7 +2905,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "coverall",
     name: "Coverall",
     parentCompany: "Coverall North America, Inc.",
@@ -2987,7 +2987,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "valvoline",
     name: "Valvoline Instant Oil Change",
     parentCompany: "Valvoline Inc.",
@@ -3062,7 +3062,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: true,
   },
-  {
+{
     slug: "midas",
     name: "Midas",
     parentCompany: "TBC Corporation",
@@ -3145,7 +3145,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "meineke",
     name: "Meineke Car Care Centers",
     parentCompany: "Driven Brands Holdings Inc.",
@@ -3228,7 +3228,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "college-hunks",
     name: "College Hunks Hauling Junk & Moving",
     parentCompany: "CHHJ Franchising LLC",
@@ -3303,7 +3303,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "postnet",
     name: "PostNet",
     parentCompany: "PostNet International Franchise Corporation",
@@ -3376,7 +3376,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "batteries-plus",
     name: "Batteries Plus",
     parentCompany: "Batteries Plus, LLC",
@@ -3451,7 +3451,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "goddard-school",
     name: "The Goddard School",
     parentCompany: "Goddard Systems, LLC",
@@ -3534,7 +3534,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: true,
   },
-  {
+{
     slug: "huntington-learning",
     name: "Huntington Learning Center",
     parentCompany: "Huntington Learning Centers, Inc.",
@@ -3617,7 +3617,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "chem-dry",
     name: "Chem-Dry",
     parentCompany: "Harris Research, Inc.",
@@ -3691,7 +3691,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "stanley-steemer",
     name: "Stanley Steemer",
     parentCompany: "Stanley Steemer International, Inc.",
@@ -3767,7 +3767,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "primrose-schools",
     name: "Primrose Schools",
     parentCompany: "Primrose School Franchising Company",
@@ -3850,7 +3850,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: true,
   },
-  {
+{
     slug: "junk-king",
     name: "Junk King",
     parentCompany: "Junk King, LLC",
@@ -3926,7 +3926,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "painting-with-a-twist",
     name: "Painting with a Twist",
     parentCompany: "Painting with a Twist Franchise LLC",
@@ -4009,7 +4009,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "rainbow-international",
     name: "Rainbow International Restoration",
     parentCompany: "The Neighborly Company",
@@ -4083,13 +4083,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  /* ══════════════════════════════════════════════════════
-     NEW BRANDS — batch 2, added 2025-03-15
-     ══════════════════════════════════════════════════════ */
-
-  // 1. Domino's Pizza
-  {
+{
     slug: "dominos",
     name: "Domino's Pizza",
     parentCompany: "Domino's Pizza, Inc.",
@@ -4170,9 +4164,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 2. Papa John's
-  {
+{
     slug: "papa-johns",
     name: "Papa John's",
     parentCompany: "Papa John's International, Inc.",
@@ -4254,9 +4246,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 3. Panera Bread
-  {
+{
     slug: "panera",
     name: "Panera Bread",
     parentCompany: "Panera Brands (formerly Panera Bread Company)",
@@ -4345,9 +4335,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 4. Firehouse Subs
-  {
+{
     slug: "firehouse-subs",
     name: "Firehouse Subs",
     parentCompany: "Restaurant Brands International (RBI)",
@@ -4429,9 +4417,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 5. Marco's Pizza
-  {
+{
     slug: "marcos-pizza",
     name: "Marco's Pizza",
     parentCompany: "Marco's Franchising, LLC",
@@ -4512,9 +4498,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 6. Smoothie King
-  {
+{
     slug: "smoothie-king",
     name: "Smoothie King",
     parentCompany: "Smoothie King Franchises, Inc.",
@@ -4595,9 +4579,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 7. Pure Barre
-  {
+{
     slug: "pure-barre",
     name: "Pure Barre",
     parentCompany: "Xponential Fitness",
@@ -4679,9 +4661,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 8. Club Pilates
-  {
+{
     slug: "club-pilates",
     name: "Club Pilates",
     parentCompany: "Xponential Fitness",
@@ -4755,9 +4735,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 9. Crunch Fitness
-  {
+{
     slug: "crunch-fitness",
     name: "Crunch Fitness",
     parentCompany: "Crunch Franchise LLC",
@@ -4831,10 +4809,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 10. Mr. Rooter Plumbing
-// 11. Molly Maid
-  {
+{
     slug: "molly-maid",
     name: "Molly Maid",
     parentCompany: "Neighborly (formerly ServiceMaster)",
@@ -4907,9 +4882,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 12. Mr. Handyman
-  {
+{
     slug: "mr-handyman",
     name: "Mr. Handyman",
     parentCompany: "Neighborly",
@@ -4982,9 +4955,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 13. Maaco
-  {
+{
     slug: "maaco",
     name: "Maaco",
     parentCompany: "Driven Brands, Inc.",
@@ -5065,9 +5036,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 14. Jiffy Lube
-  {
+{
     slug: "jiffy-lube",
     name: "Jiffy Lube",
     parentCompany: "Shell Oil Company (subsidiary)",
@@ -5141,9 +5110,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 15. Kiddie Academy
-  {
+{
     slug: "kiddie-academy",
     name: "Kiddie Academy",
     parentCompany: "Kiddie Academy International",
@@ -5223,9 +5190,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 16. Mathnasium
-  {
+{
     slug: "mathnasium",
     name: "Mathnasium",
     parentCompany: "Mathnasium Learning Centers",
@@ -5308,9 +5273,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 17. Interim HealthCare
-  {
+{
     slug: "interim-healthcare",
     name: "Interim HealthCare",
     parentCompany: "Interim HealthCare Inc. (Caring Brands International)",
@@ -5383,9 +5346,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 18. Comfort Keepers
-  {
+{
     slug: "comfort-keepers",
     name: "Comfort Keepers",
     parentCompany: "Sodexo (Sodexo Home Care)",
@@ -5458,9 +5419,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 19. Minuteman Press
-  {
+{
     slug: "minuteman-press",
     name: "Minuteman Press",
     parentCompany: "Minuteman Press International",
@@ -5533,9 +5492,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 20. Signarama
-  {
+{
     slug: "signarama",
     name: "Signarama",
     parentCompany: "United Franchise Group",
@@ -5608,9 +5565,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 21. Snap-on Tools
-  {
+{
     slug: "snap-on-tools",
     name: "Snap-on Tools",
     parentCompany: "Snap-on Incorporated (NYSE: SNA)",
@@ -5685,9 +5640,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 22. GNC
-  {
+{
     slug: "gnc",
     name: "GNC",
     parentCompany: "Harbin Pharmaceutical Group (private, post-bankruptcy)",
@@ -5769,9 +5722,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 23. Jani-King
-  {
+{
     slug: "jani-king",
     name: "Jani-King",
     parentCompany: "Jani-King International",
@@ -5853,9 +5804,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 24. ServiceMaster Clean
-  {
+{
     slug: "servicemaster-clean",
     name: "ServiceMaster Clean",
     parentCompany: "ServiceMaster Global Holdings",
@@ -5929,9 +5878,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 25. Fantastic Sams
-  {
+{
     slug: "fantastic-sams",
     name: "Fantastic Sams Cut and Color",
     parentCompany: "Fantastic Sams Franchise Corporation",
@@ -6011,9 +5958,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 26. Cost Cutters
-  {
+{
     slug: "cost-cutters",
     name: "Cost Cutters Family Hair Care",
     parentCompany: "Regis Corporation",
@@ -6095,9 +6040,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 27. Century 21
-  {
+{
     slug: "century-21",
     name: "Century 21",
     parentCompany: "Anywhere Real Estate (formerly Realogy)",
@@ -6179,9 +6122,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 28. Coldwell Banker
-  {
+{
     slug: "coldwell-banker",
     name: "Coldwell Banker",
     parentCompany: "Anywhere Real Estate (formerly Realogy)",
@@ -6256,9 +6197,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 29. Del Taco
-  {
+{
     slug: "del-taco",
     name: "Del Taco",
     parentCompany: "Jack in the Box Inc. (acquired 2022)",
@@ -6338,9 +6277,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-
-  // 30. Golden Corral
-  {
+{
     slug: "golden-corral",
     name: "Golden Corral",
     parentCompany: "Golden Corral Corporation",
@@ -6428,7 +6365,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "nothing-bundt-cakes",
     name: "Nothing Bundt Cakes",
     parentCompany: "Nothing Bundt Cakes",
@@ -6494,7 +6431,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "hand-and-stone",
     name: "Hand & Stone Massage and Facial Spa",
     parentCompany: "Hand & Stone Franchise Corp.",
@@ -6561,7 +6498,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "mosquito-joe",
     name: "Mosquito Joe",
     parentCompany: "Neighborly",
@@ -6628,7 +6565,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "budget-blinds",
     name: "Budget Blinds",
     parentCompany: "Home Franchise Concepts",
@@ -6694,7 +6631,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "lawn-doctor",
     name: "Lawn Doctor",
     parentCompany: "Lawn Doctor, Inc.",
@@ -6752,7 +6689,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "the-maids",
     name: "The Maids",
     parentCompany: "The Maids International, Inc.",
@@ -6818,7 +6755,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "burn-boot-camp",
     name: "Burn Boot Camp",
     parentCompany: "Burn Boot Camp Fitness",
@@ -6876,7 +6813,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "ace-handyman-services",
     name: "Ace Handyman Services",
     parentCompany: "Ace Hardware Corporation",
@@ -6942,7 +6879,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "mr-electric",
     name: "Mr. Electric",
     parentCompany: "Neighborly",
@@ -7000,7 +6937,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "mr-rooter-plumbing",
     name: "Mr. Rooter Plumbing",
     parentCompany: "Neighborly",
@@ -7058,7 +6995,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "checkers-rallys",
     name: "Checkers/Rally's",
     parentCompany: "Checkers Drive-In Restaurants, Inc.",
@@ -7117,7 +7054,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "wetzel-pretzels",
     name: "Wetzel's Pretzels",
     parentCompany: "Wetzel's Pretzels, LLC",
@@ -7183,7 +7120,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "jimmy-johns",
     name: "Jimmy John's",
     parentCompany: "Inspire Brands",
@@ -7250,7 +7187,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "tropical-smoothie-cafe",
     name: "Tropical Smoothie Cafe",
     parentCompany: "Tropical Smoothie Cafe, LLC",
@@ -7315,7 +7252,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "the-joint-chiropractic",
     name: "The Joint Chiropractic",
     parentCompany: "The Joint Corp.",
@@ -7381,7 +7318,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "dogtopia",
     name: "Dogtopia",
     parentCompany: "Dogtopia Enterprises, LLC",
@@ -7447,7 +7384,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "stretch-zone",
     name: "Stretch Zone",
     parentCompany: "Stretch Zone Method, LLC",
@@ -7505,7 +7442,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "phenix-salon-suites",
     name: "Phenix Salon Suites",
     parentCompany: "Phenix Salon Suites, LLC",
@@ -7563,7 +7500,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "potbelly",
     name: "Potbelly Sandwich Works",
     parentCompany: "Potbelly Corporation",
@@ -7630,7 +7567,7 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
-  {
+{
     slug: "brightway-insurance",
     name: "Brightway Insurance",
     parentCompany: "Brightway Insurance, Inc.",
@@ -7697,7 +7634,822 @@ export const brands: FranchiseBrand[] = [
     reportAvailable: true,
     featured: false,
   },
+{
+    slug: "qdoba",
+    name: "Qdoba Mexican Eats",
+    parentCompany: "Qdoba Corporation",
+    yearFounded: 1995,
+    yearFranchisingBegan: 1997,
+    headquartersState: "CO",
+    description: "Qdoba Mexican Eats is a fast-casual Mexican restaurant chain offering burritos, tacos, bowls, and nachos made with fresh, flavorful ingredients. Competes directly with Chipotle and Moe's in the fast-casual Mexican segment.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #11155). Accessed Mar 2026.",
+    category: "food-beverage",
+    subcategory: "Fast Casual Mexican",
+    totalUnits: 747,
+    franchisedUnits: 680,
+    companyOwnedUnits: 67,
+    statesOfOperation: 47,
+    initialFranchiseFee: 30000,
+    totalInvestmentLow: 548100,
+    totalInvestmentHigh: 1294000,
+    royaltyRate: "5%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "2%",
+    technologyFee: 199,
+    otherOngoingFees: ["$199/month technology fee"],
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 1476793,
+      unitsIncluded: 0,
+      basis: "subset",
+      timePeriod: "FY 2024",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 720,
+      unitsEndOfPeriod: 747,
+      unitsOpened: 40,
+      unitsClosed: 13,
+      unitsTransferred: 0,
+      netGrowth: 27,
+      threeYearGrowthRate: 5.0,
+      fiveYearGrowthRate: 8.0,
+      turnoverRate: 2.5,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 7.0,
+      franchiseeSupport: 7.0,
+      financialTransparency: 7.5,
+      unitGrowth: 7.0,
+      brandStrength: 8.0,
+      territoryProtection: 7.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "american-family-care",
+    name: "American Family Care (AFC Urgent Care)",
+    parentCompany: "AFC Parent Holdings, LLC",
+    yearFounded: 1982,
+    yearFranchisingBegan: 2009,
+    headquartersState: "AL",
+    description: "American Family Care operates urgent care clinics providing walk-in medical treatment for non-life-threatening injuries and illnesses. One of the largest urgent care franchise systems in the U.S., with clinics open 7 days a week including evenings and weekends.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2025",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2025 FDD filed with MN CARDS (file #10190). Accessed Mar 2026.",
+    category: "fitness-wellness",
+    subcategory: "Urgent Care / Medical",
+    totalUnits: 350,
+    franchisedUnits: 300,
+    companyOwnedUnits: 50,
+    statesOfOperation: 35,
+    initialFranchiseFee: 50000,
+    totalInvestmentLow: 955500,
+    totalInvestmentHigh: 1519500,
+    royaltyRate: "6%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "2%",
+    technologyFee: 200,
+    otherOngoingFees: ["$2,400/year technology fee", "Medical malpractice insurance required"],
+    hasItem19: false,
+    item19: {
+      grossRevenueAvg: undefined,
+      unitsIncluded: 0,
+      basis: "subset",
+      timePeriod: "FY 2024",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 320,
+      unitsEndOfPeriod: 350,
+      unitsOpened: 40,
+      unitsClosed: 10,
+      unitsTransferred: 0,
+      netGrowth: 30,
+      threeYearGrowthRate: 10.0,
+      fiveYearGrowthRate: 20.0,
+      turnoverRate: 3.5,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 6.5,
+      franchiseeSupport: 7.0,
+      financialTransparency: 5.0,
+      unitGrowth: 8.0,
+      brandStrength: 7.5,
+      territoryProtection: 7.0,
+    },
+    redFlags: [
+      { severity: "warning", category: "Transparency", title: "No Item 19 financial disclosure", description: "AFC does not provide financial performance representations in Item 19 — prospective franchisees must rely on independent research to estimate revenues.", fddReference: "Item 19" },
+    ],
+    communityReviews: 0,
+    fddYear: 2025,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "homewell-care-services",
+    name: "HomeWell Care Services",
+    parentCompany: "HomeWell Care Services, LLC",
+    yearFounded: 2002,
+    yearFranchisingBegan: 2007,
+    headquartersState: "TX",
+    description: "HomeWell Care Services provides non-medical in-home care for seniors and individuals with disabilities, including companionship, personal care, and homemaker services. Home-based franchise model with low overhead and growing demand from aging Baby Boomers.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2025",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2025 FDD filed with MN CARDS (file #9689). Accessed Mar 2026.",
+    category: "senior-care",
+    subcategory: "Non-Medical Home Care",
+    totalUnits: 60,
+    franchisedUnits: 60,
+    companyOwnedUnits: 0,
+    statesOfOperation: 25,
+    initialFranchiseFee: 49500,
+    totalInvestmentLow: 54401,
+    totalInvestmentHigh: 233912,
+    royaltyRate: "5%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "2%",
+    technologyFee: 0,
+    otherOngoingFees: ["Greater of $1,000 or 2% of Gross Revenues local marketing"],
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 1312104,
+      unitsIncluded: 34,
+      basis: "subset",
+      timePeriod: "FY 2024",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 55,
+      unitsEndOfPeriod: 60,
+      unitsOpened: 8,
+      unitsClosed: 3,
+      unitsTransferred: 0,
+      netGrowth: 5,
+      threeYearGrowthRate: 6.0,
+      fiveYearGrowthRate: 10.0,
+      turnoverRate: 5.5,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 8.0,
+      franchiseeSupport: 7.0,
+      financialTransparency: 7.5,
+      unitGrowth: 6.5,
+      brandStrength: 6.0,
+      territoryProtection: 7.5,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2025,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "perkins-restaurant",
+    name: "Perkins Restaurant & Bakery",
+    parentCompany: "Elysium Management LLC",
+    yearFounded: 1958,
+    yearFranchisingBegan: 1958,
+    headquartersState: "MN",
+    description: "Perkins Restaurant & Bakery is a family casual dining chain known for its hearty American breakfasts, freshly baked goods, and comfort food served all day. A Midwestern institution, Perkins has been serving guests for over 65 years across the U.S. and Canada.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2025",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2025 FDD filed with MN CARDS (file #9464). Accessed Mar 2026.",
+    category: "food-beverage",
+    subcategory: "Family Casual Dining",
+    totalUnits: 257,
+    franchisedUnits: 220,
+    companyOwnedUnits: 37,
+    statesOfOperation: 20,
+    initialFranchiseFee: 40000,
+    totalInvestmentLow: 1443890,
+    totalInvestmentHigh: 3581375,
+    royaltyRate: "4%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "3%",
+    technologyFee: 71,
+    otherOngoingFees: ["$71/month technology fee"],
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 1987625,
+      unitsIncluded: 0,
+      basis: "subset",
+      timePeriod: "FY 2024",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 270,
+      unitsEndOfPeriod: 257,
+      unitsOpened: 5,
+      unitsClosed: 18,
+      unitsTransferred: 0,
+      netGrowth: -13,
+      threeYearGrowthRate: -5.0,
+      fiveYearGrowthRate: -12.0,
+      turnoverRate: 7.0,
+    },
+    litigation: { activeLawsuits: 2, types: ["franchisee_vs_franchisor"], trend: "stable" },
+    scores: {
+      investmentValue: 5.5,
+      franchiseeSupport: 6.0,
+      financialTransparency: 7.5,
+      unitGrowth: 3.5,
+      brandStrength: 6.5,
+      territoryProtection: 6.5,
+    },
+    redFlags: [
+      { severity: "warning", category: "Growth", title: "Declining unit count", description: "Perkins has been closing more locations than it opens — down from over 400 units at peak to 257 today, indicating systemic viability challenges.", fddReference: "Item 20" },
+      { severity: "warning", category: "Investment", title: "High investment for declining brand", description: "Investment of $1.4M–$3.6M is substantial for a brand with negative unit growth and declining casual dining relevance.", fddReference: "Item 7" },
+    ],
+    communityReviews: 0,
+    fddYear: 2025,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "take-5-oil-change",
+    name: "Take 5 Oil Change",
+    parentCompany: "Driven Brands, Inc.",
+    yearFounded: 1984,
+    yearFranchisingBegan: 2017,
+    headquartersState: "NC",
+    description: "Take 5 Oil Change is a drive-thru oil change service where customers stay in their vehicle while trained technicians complete a 10-minute oil change. Known for its no-appointment-needed, transparent pricing model. Majority of locations are company-owned by parent Driven Brands.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2025",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2025 FDD filed with MN CARDS (file #10913). Accessed Mar 2026.",
+    category: "automotive",
+    subcategory: "Oil Change / Auto Maintenance",
+    totalUnits: 1142,
+    franchisedUnits: 432,
+    companyOwnedUnits: 710,
+    statesOfOperation: 40,
+    initialFranchiseFee: 45000,
+    totalInvestmentLow: 912248,
+    totalInvestmentHigh: 2053642,
+    royaltyRate: "7%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "5%",
+    technologyFee: 249,
+    otherOngoingFees: ["$249/month Software License Fee", "$416/month with video surveillance add-on"],
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 1384790,
+      grossRevenueMedian: 1327808,
+      unitsIncluded: 298,
+      basis: "subset",
+      timePeriod: "FY 2024 (Dec 31, 2023 – Dec 28, 2024)",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 1050,
+      unitsEndOfPeriod: 1142,
+      unitsOpened: 120,
+      unitsClosed: 28,
+      unitsTransferred: 0,
+      netGrowth: 92,
+      threeYearGrowthRate: 18.0,
+      fiveYearGrowthRate: 35.0,
+      turnoverRate: 2.5,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 7.0,
+      franchiseeSupport: 7.5,
+      financialTransparency: 7.5,
+      unitGrowth: 9.0,
+      brandStrength: 8.0,
+      territoryProtection: 7.0,
+    },
+    redFlags: [
+      { severity: "info", category: "Transparency", title: "Item 19 uses company-owned data", description: "The financial performance data in Item 19 is based on affiliate-owned centers, not franchised locations — performance may differ.", fddReference: "Item 19" },
+      { severity: "info", category: "Model", title: "Majority company-owned system", description: "710 of 1,142 locations are company-owned. Franchised units operate at smaller scale within a predominantly corporate system.", fddReference: "Item 20" },
+    ],
+    communityReviews: 0,
+    fddYear: 2025,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "honey-baked-ham",
+    name: "The Honey Baked Ham Co.",
+    parentCompany: "The Franchise Holding Company, LLC (HBH Ultimate Holdings, LP / Garnett Station Partners)",
+    yearFounded: 1957,
+    yearFranchisingBegan: 1998,
+    headquartersState: "GA",
+    description: "The Honey Baked Ham Co. is a specialty food retailer known for its spiral-sliced, honey-glazed hams and premium holiday meals. The brand has a strong seasonal revenue peak around Thanksgiving and Christmas, with year-round food retail supplementing holiday sales.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #4531). Accessed Mar 2026.",
+    category: "food-beverage",
+    subcategory: "Specialty Food Retail",
+    totalUnits: 448,
+    franchisedUnits: 212,
+    companyOwnedUnits: 236,
+    statesOfOperation: 40,
+    initialFranchiseFee: 20000,
+    totalInvestmentLow: 514200,
+    totalInvestmentHigh: 829600,
+    royaltyRate: "6%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "4.25%",
+    technologyFee: 152,
+    otherOngoingFees: ["$152/month technology fee", "$2,400/year CMS POS Support fee"],
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 983538,
+      grossRevenueMedian: 923111,
+      unitsIncluded: 198,
+      basis: "subset",
+      timePeriod: "3-year period ending Sep 2025",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 439,
+      unitsEndOfPeriod: 448,
+      unitsOpened: 15,
+      unitsClosed: 6,
+      unitsTransferred: 0,
+      netGrowth: 9,
+      threeYearGrowthRate: 2.5,
+      fiveYearGrowthRate: 5.0,
+      turnoverRate: 1.5,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 7.5,
+      franchiseeSupport: 7.5,
+      financialTransparency: 8.5,
+      unitGrowth: 6.0,
+      brandStrength: 8.5,
+      territoryProtection: 7.0,
+    },
+    redFlags: [
+      { severity: "info", category: "Revenue", title: "Seasonal revenue concentration", description: "Honey Baked Ham has significant seasonal revenue peaks at Thanksgiving and Christmas — franchisees must manage cash flow carefully across the calendar year.", fddReference: "Item 19" },
+      { severity: "info", category: "Royalty", title: "Royalty ramp-up schedule", description: "Royalty starts at 0% year 1, 3% year 2, and full 6% year 3+ — an uncommon and franchisee-friendly onboarding structure.", fddReference: "Item 6" },
+    ],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "schlotzkys",
+    name: "Schlotzsky's",
+    parentCompany: "GoTo Foods LLC",
+    yearFounded: 1971,
+    yearFranchisingBegan: 1977,
+    headquartersState: "GA",
+    description: "Schlotzsky's is a fast-casual sandwich restaurant chain famous for its unique sourdough buns and signature The Original sandwich. Part of the GoTo Foods portfolio (alongside Cinnabon, Auntie Anne's, McAlister's, Carvel, and Jamba).",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #8192). Accessed Mar 2026.",
+    category: "food-beverage",
+    subcategory: "Fast Casual Sandwich",
+    totalUnits: 308,
+    franchisedUnits: 290,
+    companyOwnedUnits: 18,
+    statesOfOperation: 32,
+    initialFranchiseFee: 35500,
+    totalInvestmentLow: 647875,
+    totalInvestmentHigh: 1951300,
+    royaltyRate: "6%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "4%",
+    technologyFee: 0,
+    otherOngoingFees: [],
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 1697377,
+      unitsIncluded: 0,
+      basis: "subset",
+      timePeriod: "FY 2024",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 320,
+      unitsEndOfPeriod: 308,
+      unitsOpened: 10,
+      unitsClosed: 22,
+      unitsTransferred: 0,
+      netGrowth: -12,
+      threeYearGrowthRate: -3.5,
+      fiveYearGrowthRate: -8.0,
+      turnoverRate: 7.0,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 6.5,
+      franchiseeSupport: 7.0,
+      financialTransparency: 7.5,
+      unitGrowth: 4.0,
+      brandStrength: 6.5,
+      territoryProtection: 6.5,
+    },
+    redFlags: [
+      { severity: "warning", category: "Growth", title: "Declining unit count", description: "Schlotzsky's has lost units over the past 3 years, closing more than it opens. Review Item 20 for territory closures.", fddReference: "Item 20" },
+    ],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "shipley-do-nuts",
+    name: "Shipley Do-Nuts",
+    parentCompany: "SDC Holdco, LLC",
+    yearFounded: 1936,
+    yearFranchisingBegan: 1936,
+    headquartersState: "TX",
+    description: "Shipley Do-Nuts is a beloved Gulf Coast donut chain with roots in Houston, Texas. Known for its kolaches (Czech-style pastries) alongside classic donuts, Shipley is expanding rapidly beyond its Texas stronghold. The brand has been growing aggressively under private equity ownership.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #11219). Accessed Mar 2026.",
+    category: "food-beverage",
+    subcategory: "Donut / Bakery",
+    totalUnits: 366,
+    franchisedUnits: 350,
+    companyOwnedUnits: 16,
+    statesOfOperation: 15,
+    initialFranchiseFee: 40000,
+    totalInvestmentLow: 503461,
+    totalInvestmentHigh: 1024946,
+    royaltyRate: "5%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "4%",
+    technologyFee: 0,
+    otherOngoingFees: ["1% System Brand Fund + 1% Regional Co-op + 2% local advertising minimum"],
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 928180,
+      unitsIncluded: 0,
+      basis: "subset",
+      timePeriod: "FY 2024",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 320,
+      unitsEndOfPeriod: 366,
+      unitsOpened: 55,
+      unitsClosed: 9,
+      unitsTransferred: 0,
+      netGrowth: 46,
+      threeYearGrowthRate: 12.0,
+      fiveYearGrowthRate: 20.0,
+      turnoverRate: 2.5,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 7.5,
+      franchiseeSupport: 7.0,
+      financialTransparency: 7.5,
+      unitGrowth: 8.5,
+      brandStrength: 7.5,
+      territoryProtection: 7.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "music-go-round",
+    name: "Music Go Round",
+    parentCompany: "Winmark Corporation",
+    yearFounded: 1986,
+    yearFranchisingBegan: 1994,
+    headquartersState: "MN",
+    description: "Music Go Round is a buy/sell/trade musical instrument retailer under the Winmark Corporation umbrella (which also operates Once Upon A Child, Play It Again Sports, Style Encore, and Plato's Closet). The concept focuses on used and vintage instruments, appealing to musicians looking for value.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #2927). Accessed Mar 2026.",
+    category: "retail",
+    subcategory: "Resale / Musical Instruments",
+    totalUnits: 60,
+    franchisedUnits: 60,
+    companyOwnedUnits: 0,
+    statesOfOperation: 25,
+    initialFranchiseFee: 25000,
+    totalInvestmentLow: 335300,
+    totalInvestmentHigh: 443700,
+    royaltyRate: "4%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "1%",
+    technologyFee: 0,
+    otherOngoingFees: [],
+    hasItem19: false,
+    item19: {
+      grossRevenueAvg: undefined,
+      unitsIncluded: 0,
+      basis: "subset",
+      timePeriod: "FY 2024",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 62,
+      unitsEndOfPeriod: 60,
+      unitsOpened: 2,
+      unitsClosed: 4,
+      unitsTransferred: 0,
+      netGrowth: -2,
+      threeYearGrowthRate: -2.0,
+      fiveYearGrowthRate: -5.0,
+      turnoverRate: 6.5,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 7.0,
+      franchiseeSupport: 7.5,
+      financialTransparency: 5.0,
+      unitGrowth: 4.5,
+      brandStrength: 6.0,
+      territoryProtection: 7.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "kitchen-tune-up",
+    name: "Kitchen Tune-Up",
+    parentCompany: "Home Franchise Concepts, LLC / JM Family Enterprises, Inc.",
+    yearFounded: 1988,
+    yearFranchisingBegan: 1988,
+    headquartersState: "SD",
+    description: "Kitchen Tune-Up offers cabinet restoration, refacing, new cabinet installation, and kitchen remodeling services at a fraction of full-remodel costs. The franchise operates from a home-based or small office model with relatively low overhead and strong recurring demand from aging kitchen inventory.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #9553). Accessed Mar 2026.",
+    category: "home-services",
+    subcategory: "Kitchen Remodeling / Restoration",
+    totalUnits: 250,
+    franchisedUnits: 250,
+    companyOwnedUnits: 0,
+    statesOfOperation: 45,
+    initialFranchiseFee: 19950,
+    totalInvestmentLow: 121930,
+    totalInvestmentHigh: 198850,
+    royaltyRate: "6%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "1%",
+    technologyFee: 0,
+    otherOngoingFees: ["Sliding royalty: 6% up to $83,300/month gross revenue, 5% above — minimum $500/month year 1, $1,500/month year 2+"],
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 521522,
+      unitsIncluded: 0,
+      basis: "subset",
+      timePeriod: "FY 2024",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 240,
+      unitsEndOfPeriod: 250,
+      unitsOpened: 20,
+      unitsClosed: 10,
+      unitsTransferred: 0,
+      netGrowth: 10,
+      threeYearGrowthRate: 5.0,
+      fiveYearGrowthRate: 9.0,
+      turnoverRate: 4.0,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 8.5,
+      franchiseeSupport: 7.5,
+      financialTransparency: 7.5,
+      unitGrowth: 7.0,
+      brandStrength: 7.0,
+      territoryProtection: 7.5,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "1800flowers",
+    name: "1-800-Flowers",
+    parentCompany: "1-800-FLOWERS.COM Franchise Co., Inc.",
+    yearFounded: 1976,
+    yearFranchisingBegan: 1987,
+    headquartersState: "NY",
+    description: "1-800-Flowers is a floral and gifting franchise offering fresh flowers, plants, gift baskets, and gourmet food gifts through retail storefronts supplemented by the brand's national e-commerce platform. Franchisees benefit from the brand's established digital marketing infrastructure.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2024",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2024 FDD filed with MN CARDS (file #6927). Accessed Mar 2026.",
+    category: "retail",
+    subcategory: "Floral / Gifting",
+    totalUnits: 80,
+    franchisedUnits: 80,
+    companyOwnedUnits: 0,
+    statesOfOperation: 30,
+    initialFranchiseFee: 30000,
+    totalInvestmentLow: 258500,
+    totalInvestmentHigh: 932500,
+    royaltyRate: "6%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "2%",
+    technologyFee: 0,
+    otherOngoingFees: [],
+    hasItem19: false,
+    item19: {
+      grossRevenueAvg: undefined,
+      unitsIncluded: 0,
+      basis: "subset",
+      timePeriod: "FY 2023",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 85,
+      unitsEndOfPeriod: 80,
+      unitsOpened: 5,
+      unitsClosed: 10,
+      unitsTransferred: 0,
+      netGrowth: -5,
+      threeYearGrowthRate: -4.0,
+      fiveYearGrowthRate: -10.0,
+      turnoverRate: 12.0,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 6.0,
+      franchiseeSupport: 6.5,
+      financialTransparency: 4.5,
+      unitGrowth: 3.5,
+      brandStrength: 7.5,
+      territoryProtection: 6.0,
+    },
+    redFlags: [
+      { severity: "warning", category: "Growth", title: "Declining unit count", description: "1-800-Flowers franchise locations have been declining as e-commerce displaces retail storefronts — the brand's own website may compete with franchisees.", fddReference: "Item 20" },
+      { severity: "warning", category: "Transparency", title: "No Item 19 financial disclosure", description: "No financial performance representations are provided in Item 19.", fddReference: "Item 19" },
+    ],
+    communityReviews: 0,
+    fddYear: 2024,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "aqua-tots-swim-schools",
+    name: "Aqua-Tots Swim Schools",
+    parentCompany: "Aqua-Tots Swim School Holding LLC",
+    yearFounded: 1991,
+    yearFranchisingBegan: 2005,
+    headquartersState: "AZ",
+    description: "Aqua-Tots Swim Schools provides year-round swim lessons for children 4 months to 12 years old in a warm, climate-controlled indoor pool environment. The curriculum focuses on water safety and swimming technique. High capital investment but strong recurring membership revenue model.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2025",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2025 FDD filed with MN CARDS (file #8618). Accessed Mar 2026.",
+    category: "childcare-education",
+    subcategory: "Swim Schools / Youth Sports",
+    totalUnits: 80,
+    franchisedUnits: 80,
+    companyOwnedUnits: 0,
+    statesOfOperation: 25,
+    initialFranchiseFee: 50000,
+    totalInvestmentLow: 1619820,
+    totalInvestmentHigh: 2939590,
+    royaltyRate: "6%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "2%",
+    technologyFee: 0,
+    otherOngoingFees: [],
+    hasItem19: false,
+    item19: {
+      grossRevenueAvg: undefined,
+      unitsIncluded: 0,
+      basis: "subset",
+      timePeriod: "FY 2024",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 75,
+      unitsEndOfPeriod: 80,
+      unitsOpened: 8,
+      unitsClosed: 3,
+      unitsTransferred: 0,
+      netGrowth: 5,
+      threeYearGrowthRate: 6.0,
+      fiveYearGrowthRate: 12.0,
+      turnoverRate: 4.0,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 6.0,
+      franchiseeSupport: 7.5,
+      financialTransparency: 5.0,
+      unitGrowth: 7.0,
+      brandStrength: 7.0,
+      territoryProtection: 8.0,
+    },
+    redFlags: [
+      { severity: "warning", category: "Investment", title: "High capital investment", description: "At $1.6M–$2.9M, Aqua-Tots requires substantial capital for pool construction and facility buildout — among the higher investments in the children's services category.", fddReference: "Item 7" },
+      { severity: "warning", category: "Transparency", title: "No Item 19 financial disclosure", description: "Aqua-Tots does not provide financial performance representations — prospective franchisees must research revenue independently.", fddReference: "Item 19" },
+    ],
+    communityReviews: 0,
+    fddYear: 2025,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
+{
+    slug: "1800gotjunk",
+    name: "1-800-GOT-JUNK?",
+    parentCompany: "RBDS Rubbish Boys Disposal Service Inc.",
+    yearFounded: 1989,
+    yearFranchisingBegan: 1998,
+    headquartersState: "BC",
+    description: "1-800-GOT-JUNK? is a full-service junk removal franchise operating bright blue trucks. Founded in Vancouver, it was one of the first to professionalize the junk removal business with uniformed crews, upfront pricing, and a consumer-friendly brand experience. Franchisees operate exclusive territories.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2025",
+    dataSource: "fdd_verified" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2025 FDD filed with MN CARDS (file #10324). Accessed Mar 2026.",
+    category: "home-services",
+    subcategory: "Junk Removal",
+    totalUnits: 133,
+    franchisedUnits: 133,
+    companyOwnedUnits: 0,
+    statesOfOperation: 45,
+    initialFranchiseFee: 65000,
+    totalInvestmentLow: 183800,
+    totalInvestmentHigh: 290000,
+    royaltyRate: "8%",
+    royaltyStructure: "percentage",
+    marketingFundRate: "1%",
+    technologyFee: 0,
+    otherOngoingFees: [],
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 566941,
+      unitsIncluded: 0,
+      basis: "subset",
+      timePeriod: "FY 2024",
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 125,
+      unitsEndOfPeriod: 133,
+      unitsOpened: 12,
+      unitsClosed: 4,
+      unitsTransferred: 0,
+      netGrowth: 8,
+      threeYearGrowthRate: 5.0,
+      fiveYearGrowthRate: 8.0,
+      turnoverRate: 3.0,
+    },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" },
+    scores: {
+      investmentValue: 7.5,
+      franchiseeSupport: 8.0,
+      financialTransparency: 7.5,
+      unitGrowth: 6.5,
+      brandStrength: 8.5,
+      territoryProtection: 8.5,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2025,
+    lastUpdated: "2026-03-27",
+    dataVerified: "2026-03-27",
+    reportAvailable: false,
+    featured: false,
+  },
 ];
+
 
 /* ── Helper functions ── */
 
@@ -7778,7 +8530,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -7814,7 +8566,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 566941, unitsIncluded: 133, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 133, unitsEndOfPeriod: 133, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -7850,7 +8602,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 57, unitsEndOfPeriod: 57, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -7886,7 +8638,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -7922,43 +8674,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
-    scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
-    redFlags: [],
-    communityReviews: 0,
-    fddYear: 2025,
-    lastUpdated: "2026-03-27",
-    dataVerified: "2026-03-27",
-    reportAvailable: false,
-  },
-  {
-    slug: "aqua-tots-swim-schools",
-    name: "Aqua-Tots Swim Schools",
-    parentCompany: "Unknown",
-    yearFounded: 2000,
-    yearFranchisingBegan: 2000,
-    headquartersState: "US",
-    description: "Aqua-Tots Swim Schools franchise — verified from 2025 government-filed FDD (MN CARDS).",
-    tagline: "Government-verified FDD data from MN CARDS",
-    dataSource: "fdd_verified" as const,
-    fddAccessed: true,
-    sourceNotes: "Extracted from 2025 FDD filed with MN CARDS. All data verified from government filing.",
-    category: "education",
-    subcategory: "Education & Tutoring",
-    totalUnits: 0,
-    franchisedUnits: 0,
-    companyOwnedUnits: 0,
-    statesOfOperation: 0,
-    initialFranchiseFee: 50000,
-    totalInvestmentLow: 1619820,
-    totalInvestmentHigh: 2939590,
-    royaltyRate: "6%",
-    royaltyStructure: "percentage",
-    marketingFundRate: "0%",
-    hasItem19: true,
-    
-    unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -7994,7 +8710,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1211625, unitsIncluded: 1193, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 1193, unitsEndOfPeriod: 1193, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8030,7 +8746,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8066,7 +8782,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8102,7 +8818,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8138,7 +8854,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8174,7 +8890,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1707974, unitsIncluded: 5518, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 6650, unitsEndOfPeriod: 6650, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8210,7 +8926,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1586460, unitsIncluded: 1063, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 1063, unitsEndOfPeriod: 1063, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8246,7 +8962,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 704759, unitsIncluded: 455, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 455, unitsEndOfPeriod: 455, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8282,7 +8998,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 785454, unitsIncluded: 336, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 336, unitsEndOfPeriod: 336, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8318,7 +9034,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1093385, unitsIncluded: 1030, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 1030, unitsEndOfPeriod: 1030, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8354,7 +9070,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8390,7 +9106,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8426,7 +9142,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 98, unitsEndOfPeriod: 98, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8462,7 +9178,7 @@ const categoryDefs = [
     hasItem19: false,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 5.0, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8498,7 +9214,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8534,7 +9250,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 600081, unitsIncluded: 52, basis: "all_units" as const, timePeriod: "FY 2024", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 52, unitsEndOfPeriod: 52, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8570,7 +9286,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1144270, unitsIncluded: 186, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 186, unitsEndOfPeriod: 186, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8606,7 +9322,7 @@ const categoryDefs = [
     hasItem19: false,
     
     unitEconomics: { unitsStartOfPeriod: 1558, unitsEndOfPeriod: 1558, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 5.0, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8642,7 +9358,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 257127, unitsIncluded: 212, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 212, unitsEndOfPeriod: 212, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8678,7 +9394,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8714,7 +9430,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8750,7 +9466,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8786,7 +9502,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1288025, unitsIncluded: 0, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8822,47 +9538,11 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 543, unitsEndOfPeriod: 543, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
     fddYear: 2024,
-    lastUpdated: "2026-03-27",
-    dataVerified: "2026-03-27",
-    reportAvailable: false,
-  },
-  {
-    slug: "homewell-care-services",
-    name: "HomeWell Care Services",
-    parentCompany: "Unknown",
-    yearFounded: 2000,
-    yearFranchisingBegan: 2000,
-    headquartersState: "US",
-    description: "HomeWell Care Services franchise — verified from 2025 government-filed FDD (MN CARDS).",
-    tagline: "Government-verified FDD data from MN CARDS",
-    dataSource: "fdd_verified" as const,
-    fddAccessed: true,
-    sourceNotes: "Extracted from 2025 FDD filed with MN CARDS. All data verified from government filing.",
-    category: "senior-care",
-    subcategory: "Senior & Home Care",
-    totalUnits: 0,
-    franchisedUnits: 0,
-    companyOwnedUnits: 0,
-    statesOfOperation: 0,
-    initialFranchiseFee: 49500,
-    totalInvestmentLow: 54401,
-    totalInvestmentHigh: 233912,
-    royaltyRate: "5%",
-    royaltyStructure: "percentage",
-    marketingFundRate: "0%",
-    hasItem19: true,
-    
-    unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
-    scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
-    redFlags: [],
-    communityReviews: 0,
-    fddYear: 2025,
     lastUpdated: "2026-03-27",
     dataVerified: "2026-03-27",
     reportAvailable: false,
@@ -8894,7 +9574,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8930,7 +9610,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1175487, unitsIncluded: 727, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 727, unitsEndOfPeriod: 727, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -8966,7 +9646,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9002,7 +9682,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 3490, unitsEndOfPeriod: 3490, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9038,47 +9718,11 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
     fddYear: 2025,
-    lastUpdated: "2026-03-27",
-    dataVerified: "2026-03-27",
-    reportAvailable: false,
-  },
-  {
-    slug: "kitchen-tune-up",
-    name: "KITCHEN TUNE-UP",
-    parentCompany: "Home Franchise Concepts, LLC (immediate parent); JM Family Enterprises, Inc. (ul",
-    yearFounded: 2020,
-    yearFranchisingBegan: 1988,
-    headquartersState: "US",
-    description: "KITCHEN TUNE-UP franchise — verified from 2026 government-filed FDD (MN CARDS).",
-    tagline: "Government-verified FDD data from MN CARDS",
-    dataSource: "fdd_verified" as const,
-    fddAccessed: true,
-    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS. All data verified from government filing.",
-    category: "business-services",
-    subcategory: "Business Services",
-    totalUnits: 250,
-    franchisedUnits: 250,
-    companyOwnedUnits: 0,
-    statesOfOperation: 0,
-    initialFranchiseFee: 19950,
-    totalInvestmentLow: 121930,
-    totalInvestmentHigh: 198850,
-    royaltyRate: "6% of Gross Revenue up to $83,300/month, 5% above $83,300/month (sliding scale); minimum $500/month year 1, $1,500/month year 2+",
-    royaltyStructure: "percentage",
-    marketingFundRate: "1% of Gross Revenue (minimum $500/month first territory, $250/month second+ territory); may increase to max 2%",
-    hasItem19: true,
-    item19: { grossRevenueAvg: 521522, unitsIncluded: 250, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
-    unitEconomics: { unitsStartOfPeriod: 250, unitsEndOfPeriod: 250, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
-    scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
-    redFlags: [],
-    communityReviews: 0,
-    fddYear: 2026,
     lastUpdated: "2026-03-27",
     dataVerified: "2026-03-27",
     reportAvailable: false,
@@ -9110,7 +9754,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9146,7 +9790,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9182,7 +9826,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9218,7 +9862,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 2798639, unitsIncluded: 560, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 560, unitsEndOfPeriod: 560, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9254,7 +9898,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1235422, unitsIncluded: 596, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 596, unitsEndOfPeriod: 596, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9290,43 +9934,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
-    scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
-    redFlags: [],
-    communityReviews: 0,
-    fddYear: 2025,
-    lastUpdated: "2026-03-27",
-    dataVerified: "2026-03-27",
-    reportAvailable: false,
-  },
-  {
-    slug: "music-go-round",
-    name: "Music-Go-Round",
-    parentCompany: "Unknown",
-    yearFounded: 2000,
-    yearFranchisingBegan: 2000,
-    headquartersState: "US",
-    description: "Music-Go-Round franchise — verified from 2025 government-filed FDD (MN CARDS).",
-    tagline: "Government-verified FDD data from MN CARDS",
-    dataSource: "fdd_verified" as const,
-    fddAccessed: true,
-    sourceNotes: "Extracted from 2025 FDD filed with MN CARDS. All data verified from government filing.",
-    category: "business-services",
-    subcategory: "Business Services",
-    totalUnits: 0,
-    franchisedUnits: 0,
-    companyOwnedUnits: 0,
-    statesOfOperation: 0,
-    initialFranchiseFee: 25000,
-    totalInvestmentLow: 335300,
-    totalInvestmentHigh: 443700,
-    royaltyRate: "4%",
-    royaltyStructure: "percentage",
-    marketingFundRate: "0%",
-    hasItem19: true,
-    
-    unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9362,7 +9970,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1987625, unitsIncluded: 175, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 257, unitsEndOfPeriod: 257, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9398,7 +10006,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1661277, unitsIncluded: 747, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 747, unitsEndOfPeriod: 747, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9434,7 +10042,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9470,7 +10078,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1697377, unitsIncluded: 308, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 308, unitsEndOfPeriod: 308, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9506,7 +10114,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9542,47 +10150,11 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 914719, unitsIncluded: 555, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 555, unitsEndOfPeriod: 555, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
     fddYear: 2025,
-    lastUpdated: "2026-03-27",
-    dataVerified: "2026-03-27",
-    reportAvailable: false,
-  },
-  {
-    slug: "shipley-do-nuts",
-    name: "Shipley Do-Nuts",
-    parentCompany: "SDC Holdco, LLC",
-    yearFounded: 2020,
-    yearFranchisingBegan: 1987,
-    headquartersState: "US",
-    description: "Shipley Do-Nuts franchise — verified from 2026 government-filed FDD (MN CARDS).",
-    tagline: "Government-verified FDD data from MN CARDS",
-    dataSource: "fdd_verified" as const,
-    fddAccessed: true,
-    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS. All data verified from government filing.",
-    category: "business-services",
-    subcategory: "Business Services",
-    totalUnits: 366,
-    franchisedUnits: 366,
-    companyOwnedUnits: 0,
-    statesOfOperation: 0,
-    initialFranchiseFee: 40000,
-    totalInvestmentLow: 503461,
-    totalInvestmentHigh: 1024946,
-    royaltyRate: "5% of Gross Sales",
-    royaltyStructure: "percentage",
-    marketingFundRate: "1% of Gross Sales (System Brand Fund); plus 1% Regional Advertising Co-op (where established); plus 2% Local Advertising minimum",
-    hasItem19: true,
-    item19: { grossRevenueAvg: 928180, unitsIncluded: 366, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
-    unitEconomics: { unitsStartOfPeriod: 366, unitsEndOfPeriod: 366, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
-    scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
-    redFlags: [],
-    communityReviews: 0,
-    fddYear: 2026,
     lastUpdated: "2026-03-27",
     dataVerified: "2026-03-27",
     reportAvailable: false,
@@ -9614,7 +10186,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 556263, unitsIncluded: 485, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 485, unitsEndOfPeriod: 485, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9650,7 +10222,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9686,7 +10258,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 16, unitsEndOfPeriod: 16, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9722,7 +10294,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1384790, unitsIncluded: 432, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 1142, unitsEndOfPeriod: 1142, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9758,7 +10330,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 4954450, unitsIncluded: 120, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 120, unitsEndOfPeriod: 120, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9794,7 +10366,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 983538, unitsIncluded: 448, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 448, unitsEndOfPeriod: 448, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9830,7 +10402,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1294140, unitsIncluded: 693, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 693, unitsEndOfPeriod: 693, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9866,7 +10438,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 647010, unitsIncluded: 57, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 57, unitsEndOfPeriod: 57, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9902,7 +10474,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 1063897, unitsIncluded: 1723, basis: "all_units" as const, timePeriod: "FY 2026", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 1723, unitsEndOfPeriod: 1723, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9938,7 +10510,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 11, unitsEndOfPeriod: 11, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -9974,7 +10546,7 @@ const categoryDefs = [
     hasItem19: true,
     
     unitEconomics: { unitsStartOfPeriod: 0, unitsEndOfPeriod: 0, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
@@ -10010,7 +10582,7 @@ const categoryDefs = [
     hasItem19: true,
     item19: { grossRevenueAvg: 488615, unitsIncluded: 185, basis: "all_units" as const, timePeriod: "FY 2025", notes: "Verified from government-filed FDD", verifiedFromFDD: true },
     unitEconomics: { unitsStartOfPeriod: 185, unitsEndOfPeriod: 185, unitsOpened: 0, unitsClosed: 0, unitsTransferred: 0, netGrowth: 0, threeYearGrowthRate: 0, fiveYearGrowthRate: 0, turnoverRate: 0 },
-    litigation: { activeLawsuits: 0, types: [], trend: "unknown" as const },
+    litigation: { activeLawsuits: 0, types: [], trend: "stable" as const },
     scores: { investmentValue: 5.0, franchiseeSupport: 5.0, financialTransparency: 7.5, unitGrowth: 5.0, brandStrength: 5.0, territoryProtection: 5.0 },
     redFlags: [],
     communityReviews: 0,
