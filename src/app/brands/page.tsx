@@ -323,6 +323,7 @@ export default async function BrandsPage({
                   </div>
 
                   {/* Key metrics */}
+                  {brand.dataSource === "fdd_verified" || brand.dataSource === "state_filing" ? (
                   <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
                     <div>
                       <span className="text-muted text-xs">Investment</span>
@@ -332,7 +333,7 @@ export default async function BrandsPage({
                     </div>
                     <div>
                       <span className="text-muted text-xs">Royalty</span>
-                      <p className="font-medium text-foreground">{brand.royaltyRate}</p>
+                      <p className="font-medium text-foreground filter blur-[4px] select-none">{brand.royaltyRate}</p>
                     </div>
                     <div>
                       <span className="text-muted text-xs">Total Units</span>
@@ -341,15 +342,19 @@ export default async function BrandsPage({
                       </p>
                     </div>
                     <div>
-                      <span className="text-muted text-xs">Data</span>
-                      <p className={`font-medium text-xs ${brand.dataSource === "industry_estimate" ? "text-warning" : "text-success"}`}>
-                        {brand.dataSource === "industry_estimate" ? "Estimated" : brand.dataSource === "fdd_verified" ? "FDD Verified" : brand.dataSource === "sec_filing" ? "SEC Filing" : "Sourced"}
-                      </p>
+                      <span className="text-muted text-xs">Source</span>
+                      <p className="font-medium text-xs text-success">Gov FDD ✓</p>
                     </div>
                   </div>
+                  ) : (
+                  <div className="mt-2 py-3 rounded-lg bg-surface border border-border text-center">
+                    <p className="text-xs text-muted">FDD data verification pending</p>
+                    <p className="text-xs text-accent mt-0.5">Gov source only</p>
+                  </div>
+                  )}
 
                   {/* Red flags & reviews footer */}
-                  {totalFlags > 0 && (
+                  {(brand.dataSource === "fdd_verified" || brand.dataSource === "state_filing") && totalFlags > 0 && (
                     <div className="mt-4 pt-3 border-t border-border flex items-center gap-2 text-xs">
                       {criticalFlags > 0 && (
                         <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-danger-light text-danger font-medium">

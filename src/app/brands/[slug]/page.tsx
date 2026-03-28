@@ -26,13 +26,20 @@ export async function generateMetadata({
   const brand = getBrandBySlug(slug);
   if (!brand) return { title: "Brand Not Found" };
 
+  const isVerified = brand.dataSource === "fdd_verified" || brand.dataSource === "state_filing";
   const overall = getOverallScore(brand.scores);
+  const metaTitle = isVerified
+    ? `${brand.name} Franchise — FDD Data, Fees & Item 19 | Franchisel`
+    : `${brand.name} Franchise Overview | Franchisel`;
+  const metaDesc = isVerified
+    ? `${brand.name} franchise data sourced from ${brand.fddYear} government-filed FDD. Investment: ${formatInvestmentRange(brand.totalInvestmentLow, brand.totalInvestmentHigh)}. Item 19 revenue data, fee structure, and unit growth analysis.`
+    : `${brand.name} franchise overview. ${brand.description.slice(0, 120)}... Government FDD data pending.`;
   return {
-    title: `${brand.name} Franchise Review — Score ${overall}/10 | FDD Analysis | Franchisel`,
-    description: `Independent ${brand.fddYear} FDD analysis of ${brand.name}. Overall score: ${overall}/10. Investment: ${formatInvestmentRange(brand.totalInvestmentLow, brand.totalInvestmentHigh)}. ${brand.redFlags.length} red flag${brand.redFlags.length !== 1 ? "s" : ""} identified. Buyer-aligned, never franchisor-funded.`,
+    title: metaTitle,
+    description: metaDesc,
     openGraph: {
-      title: `${brand.name} Franchise Review — ${overall}/10`,
-      description: `${brand.tagline}. Investment: ${formatInvestmentRange(brand.totalInvestmentLow, brand.totalInvestmentHigh)}. ${brand.redFlags.length} red flag${brand.redFlags.length !== 1 ? "s" : ""} identified.`,
+      title: metaTitle,
+      description: metaDesc,
     },
     alternates: {
       canonical: `https://franchisel.com/brands/${slug}`,
@@ -108,6 +115,7 @@ export default async function BrandPage({
   if (!brand) notFound();
 
   const overall = getOverallScore(brand.scores);
+  const isGovVerified = brand.dataSource === "fdd_verified" || brand.dataSource === "state_filing";
 
   const scoreBreakdown: { label: string; key: keyof typeof brand.scores; weight: string }[] = [
     { label: "Investment Value", key: "investmentValue", weight: "25%" },
@@ -117,6 +125,47 @@ export default async function BrandPage({
     { label: "Brand Strength", key: "brandStrength", weight: "10%" },
     { label: "Territory Protection", key: "territoryProtection", weight: "10%" },
   ];
+
+  /* ── Paywall gate component ── */
+  const GovDataOnly = () => (
+    <div className="rounded-xl border border-border bg-surface p-8 text-center">
+      <div className="w-10 h-10 rounded-full bg-muted/10 flex items-center justify-center mx-auto mb-3">
+        <svg className="w-5 h-5 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.955 11.955 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+        </svg>
+      </div>
+      <p className="text-sm font-semibold text-foreground mb-1">Government FDD Source Only</p>
+      <p className="text-xs text-muted max-w-xs mx-auto leading-relaxed">
+        Franchisel only publishes data extracted directly from government-filed FDDs (MN CARDS, WI DFI, CA DFPI).
+        This brand&apos;s detailed data has not yet been verified from a state filing.
+      </p>
+    </div>
+  );
+
+  const PaywallGate = ({ children }: { children: React.ReactNode }) => (
+    <div className="relative rounded-xl overflow-hidden">
+      <div className="blur-sm pointer-events-none select-none opacity-40" aria-hidden="true">
+        {children}
+      </div>
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/70 backdrop-blur-[2px]">
+        <div className="text-center px-6">
+          <div className="w-10 h-10 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-3">
+            <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+            </svg>
+          </div>
+          <p className="text-sm font-semibold text-foreground mb-1">Full Analysis in Report</p>
+          <p className="text-xs text-muted mb-4">Scores, red flags, and detailed breakdown sourced from the {brand.fddYear} FDD.</p>
+          <Link
+            href={`/reports?brand=${brand.slug}`}
+            className="inline-flex items-center gap-2 px-5 py-2 bg-accent text-white text-sm font-medium rounded-full hover:brightness-110 transition-all"
+          >
+            Get Report from $29
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
 
   /* ── JSON-LD Structured Data ── */
 
@@ -244,20 +293,30 @@ export default async function BrandPage({
               </p>
             </div>
 
-            {/* Right: overall score */}
-            <div className="flex flex-col items-center justify-center bg-background border border-border rounded-2xl p-6 min-w-[160px] shadow-sm">
+            {/* Right: overall score or FDD badge */}
+            {isGovVerified ? (
+            <div className="flex flex-col items-center justify-center bg-background border border-accent/20 rounded-2xl p-6 min-w-[160px] shadow-sm relative">
               <span className="text-xs text-muted uppercase tracking-wider mb-1">Overall Score</span>
-              <span className={`text-5xl font-bold ${scoreTextColor(overall)}`}>
+              <span className="text-5xl font-bold text-muted filter blur-[6px] select-none">
                 {overall}
               </span>
               <span className="text-sm text-muted mt-1">out of 10</span>
               <div className="w-full mt-3 h-2 rounded-full bg-surface">
-                <div
-                  className={`h-2 rounded-full animate-fill ${scoreColor(overall)}`}
-                  style={{ width: `${overall * 10}%` }}
-                />
+                <div className="h-2 rounded-full bg-accent/30 w-3/4" />
               </div>
+              <Link href={`/reports?brand=${brand.slug}`} className="mt-3 text-xs text-accent font-medium hover:underline">
+                Unlock score →
+              </Link>
             </div>
+            ) : (
+            <div className="flex flex-col items-center justify-center bg-background border border-border rounded-2xl p-6 min-w-[160px] shadow-sm">
+              <svg className="w-8 h-8 text-muted mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+              <span className="text-xs text-muted uppercase tracking-wider text-center">FDD verification</span>
+              <span className="text-xs text-muted text-center mt-1">pending</span>
+            </div>
+            )}
           </div>
         </div>
       </section>
@@ -274,44 +333,78 @@ export default async function BrandPage({
             {/* Total Investment */}
             <div className="rounded-xl border border-border bg-background p-5">
               <p className="text-xs text-muted uppercase tracking-wider mb-1">Total Investment</p>
-              <p className="text-lg font-semibold text-foreground">
-                {formatInvestmentRange(brand.totalInvestmentLow, brand.totalInvestmentHigh)}
-              </p>
-              <p className="text-xs text-muted mt-1">Initial fee: {formatCurrency(brand.initialFranchiseFee)}</p>
+              {isGovVerified ? (
+                <>
+                  <p className="text-lg font-semibold text-foreground">
+                    {formatInvestmentRange(brand.totalInvestmentLow, brand.totalInvestmentHigh)}
+                  </p>
+                  <p className="text-xs text-muted mt-1">Initial fee: {formatCurrency(brand.initialFranchiseFee)}</p>
+                </>
+              ) : (
+                <>
+                  <p className="text-lg font-semibold text-muted">Verification pending</p>
+                  <p className="text-xs text-muted mt-1">Gov FDD source only</p>
+                </>
+              )}
             </div>
 
             {/* Average Revenue */}
             <div className="rounded-xl border border-border bg-background p-5">
               <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg Revenue (Item 19)</p>
-              {brand.hasItem19 && brand.item19?.grossRevenueAvg ? (
-                <>
-                  <p className="text-lg font-semibold text-foreground">
-                    {formatCurrency(brand.item19.grossRevenueAvg)}
-                  </p>
-                  <p className="text-xs text-muted mt-1">{brand.item19.timePeriod}</p>
-                </>
+              {isGovVerified ? (
+                brand.hasItem19 && brand.item19?.grossRevenueAvg ? (
+                  <>
+                    <p className="text-lg font-semibold text-foreground filter blur-[5px] select-none">
+                      {formatCurrency(brand.item19.grossRevenueAvg)}
+                    </p>
+                    <p className="text-xs text-accent mt-1 font-medium">Unlock with report →</p>
+                  </>
+                ) : (
+                  <p className="text-lg font-semibold text-warning">Not Disclosed</p>
+                )
               ) : (
-                <p className="text-lg font-semibold text-warning">Not Disclosed</p>
+                <>
+                  <p className="text-lg font-semibold text-muted">Verification pending</p>
+                  <p className="text-xs text-muted mt-1">Gov FDD source only</p>
+                </>
               )}
             </div>
 
             {/* Royalty */}
             <div className="rounded-xl border border-border bg-background p-5">
               <p className="text-xs text-muted uppercase tracking-wider mb-1">Royalty Rate</p>
-              <p className="text-lg font-semibold text-foreground">{brand.royaltyRate}</p>
-              <p className="text-xs text-muted mt-1 capitalize">{brand.royaltyStructure} structure</p>
+              {isGovVerified ? (
+                <>
+                  <p className="text-lg font-semibold text-foreground filter blur-[4px] select-none">{brand.royaltyRate}</p>
+                  <p className="text-xs text-accent mt-1 font-medium">Unlock with report →</p>
+                </>
+              ) : (
+                <>
+                  <p className="text-lg font-semibold text-muted">Verification pending</p>
+                  <p className="text-xs text-muted mt-1">Gov FDD source only</p>
+                </>
+              )}
             </div>
 
             {/* Total Units */}
             <div className="rounded-xl border border-border bg-background p-5">
               <p className="text-xs text-muted uppercase tracking-wider mb-1">Total Units</p>
-              <p className="text-lg font-semibold text-foreground">
-                {brand.totalUnits.toLocaleString()}
-              </p>
-              <p className="text-xs text-muted mt-1">
-                {brand.franchisedUnits.toLocaleString()} franchised &middot;{" "}
-                {brand.companyOwnedUnits.toLocaleString()} company
-              </p>
+              {isGovVerified ? (
+                <>
+                  <p className="text-lg font-semibold text-foreground">
+                    {brand.totalUnits.toLocaleString()}
+                  </p>
+                  <p className="text-xs text-muted mt-1">
+                    {brand.franchisedUnits.toLocaleString()} franchised &middot;{" "}
+                    {brand.companyOwnedUnits.toLocaleString()} company
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p className="text-lg font-semibold text-muted">Verification pending</p>
+                  <p className="text-xs text-muted mt-1">Gov FDD source only</p>
+                </>
+              )}
             </div>
           </div>
         </section>
@@ -319,6 +412,7 @@ export default async function BrandPage({
         {/* ── 2. Score Breakdown ── */}
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-4">Score Breakdown</h2>
+          <PaywallGate>
           <div className="rounded-xl border border-border bg-background p-6 space-y-4">
             {scoreBreakdown.map(({ label, key, weight }) => {
               const value = brand.scores[key];
@@ -343,6 +437,7 @@ export default async function BrandPage({
               );
             })}
           </div>
+          </PaywallGate>
         </section>
 
         {/* ── 3. Red Flags ── */}
@@ -354,6 +449,7 @@ export default async function BrandPage({
                 {brand.redFlags.length} identified
               </span>
             </div>
+            <PaywallGate>
             <div className="space-y-3">
               {brand.redFlags.map((flag, i) => {
                 const s = severityStyles(flag.severity);
@@ -398,6 +494,7 @@ export default async function BrandPage({
                 );
               })}
             </div>
+            </PaywallGate>
           </section>
         )}
 
@@ -406,7 +503,9 @@ export default async function BrandPage({
           <h2 className="text-xl font-semibold text-foreground mb-4">
             Item 19 — Financial Performance Representation
           </h2>
-          {brand.hasItem19 && brand.item19 ? (
+          {!isGovVerified ? (
+            <GovDataOnly />
+          ) : brand.hasItem19 && brand.item19 ? (
             <div className="rounded-xl border border-border bg-background overflow-hidden">
               <table className="w-full text-sm">
                 <tbody>
@@ -490,6 +589,9 @@ export default async function BrandPage({
         {/* ── 5. Fee Structure ── */}
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-4">Fee Structure</h2>
+          {!isGovVerified ? (
+            <GovDataOnly />
+          ) : (
           <div className="rounded-xl border border-border bg-background overflow-hidden">
             <table className="w-full text-sm">
               <tbody>
@@ -540,6 +642,7 @@ export default async function BrandPage({
               </tbody>
             </table>
           </div>
+          )}
         </section>
 
         {/* ── 6. Unit Economics (Item 20) ── */}
@@ -547,6 +650,8 @@ export default async function BrandPage({
           <h2 className="text-xl font-semibold text-foreground mb-4">
             Unit Economics — Item 20 (Outlets &amp; Franchisee Information)
           </h2>
+          {!isGovVerified ? <GovDataOnly /> : (
+          <PaywallGate>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
             <div className="rounded-xl border border-border bg-background p-5">
               <p className="text-xs text-muted uppercase tracking-wider mb-1">Units Opened</p>
@@ -605,6 +710,8 @@ export default async function BrandPage({
               </tbody>
             </table>
           </div>
+          </PaywallGate>
+          )}
         </section>
 
         {/* ── 7. Litigation Summary (Item 3) ── */}
@@ -612,6 +719,8 @@ export default async function BrandPage({
           <h2 className="text-xl font-semibold text-foreground mb-4">
             Litigation Summary — Item 3
           </h2>
+          {!isGovVerified ? <GovDataOnly /> : (
+          <PaywallGate>
           <div className="rounded-xl border border-border bg-background p-6">
             <div className="flex flex-wrap items-center gap-4 mb-4">
               <div>
@@ -646,6 +755,8 @@ export default async function BrandPage({
               </p>
             )}
           </div>
+          </PaywallGate>
+          )}
         </section>
 
         {/* ── 8. Community Data ── */}
