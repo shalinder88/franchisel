@@ -107,8 +107,7 @@ export function BrandDataDisclaimer({
             </p>
           ) : dataSource === "public_record" ? (
             <p>
-              Data for {brandName} was sourced from <strong>official franchisor website(s) and published {fddYear} FDD summaries</strong>.
-              {fddAccessed ? " The actual FDD has been directly reviewed by our team." : " The actual FDD has not been directly reviewed — data comes from public sources referencing the filed document."}
+              Data for {brandName} was sourced from <strong>government-filed Franchise Disclosure Documents</strong> and official public records.
               {sourceNotes ? ` ${sourceNotes}` : ""}{" "}
               Always verify current figures by requesting the most recent FDD directly from the franchisor.
             </p>
@@ -121,8 +120,7 @@ export function BrandDataDisclaimer({
             </p>
           ) : (
             <p>
-              Data for {brandName} was sourced from the {fddYear} Franchise Disclosure Document
-              {fddAccessed ? " which has been directly reviewed by our team" : ""}.
+              Data for {brandName} was extracted from the <strong>{fddYear} Franchise Disclosure Document filed with state regulators</strong> (MN CARDS, WI DFI).
               {sourceNotes ? ` ${sourceNotes}` : ""}{" "}
               Always verify current figures by requesting the most recent FDD directly from the franchisor.
             </p>
