@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { cookies } from "next/headers";
 import { brands, getBrandBySlug } from "@/data/brands";
 import {
   getOverallScore,
@@ -118,10 +117,6 @@ export default async function BrandPage({
   const overall = getOverallScore(brand.scores);
   const isGovVerified = brand.dataSource === "fdd_verified" || brand.dataSource === "state_filing";
 
-  // Admin bypass: if admin cookie is set, show everything ungated
-  const cookieStore = await cookies();
-  const isAdmin = cookieStore.get("franchisel_admin")?.value === "1";
-
   const scoreBreakdown: { label: string; key: keyof typeof brand.scores; weight: string }[] = [
     { label: "Investment Value", key: "investmentValue", weight: "25%" },
     { label: "Franchisee Support", key: "franchiseeSupport", weight: "20%" },
@@ -132,8 +127,7 @@ export default async function BrandPage({
   ];
 
   /* ── Paywall gate component ── */
-  // Admin sees everything as if gov verified
-  const effectiveGovVerified = isGovVerified || isAdmin;
+  const effectiveGovVerified = isGovVerified;
 
   const GovDataOnly = () => (
     <div className="rounded-xl border border-border bg-surface p-8 text-center">
@@ -151,9 +145,6 @@ export default async function BrandPage({
   );
 
   const PaywallGate = ({ children }: { children: React.ReactNode }) => {
-    // Admin users see everything ungated
-    if (isAdmin) return <>{children}</>;
-
     return (
       <div className="relative rounded-xl overflow-hidden">
         <div className="blur-sm pointer-events-none select-none opacity-40" aria-hidden="true">

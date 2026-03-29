@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AdminCookieSetter } from "./AdminCookieSetter";
 
 export const metadata = {
   title: "Admin | Franchisel",
@@ -8,6 +9,9 @@ export const metadata = {
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Sets the admin cookie client-side when admin layout loads */}
+      <AdminCookieSetter />
+
       {/* Admin Header */}
       <header className="bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
@@ -28,8 +32,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             </nav>
           </div>
           <div className="flex items-center gap-4 text-sm">
-            <Link href="/" className="text-gray-400 hover:text-white transition-colors">
-              View Site
+            <Link href="/?unlock=admin" className="text-gray-400 hover:text-white transition-colors">
+              View Site (ungated)
             </Link>
           </div>
         </div>
