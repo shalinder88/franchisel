@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
 import { brands, getBrandBySlug } from "@/data/brands";
 import {
   getOverallScore,
@@ -117,6 +118,10 @@ export default async function BrandPage({
   const overall = getOverallScore(brand.scores);
   const isGovVerified = brand.dataSource === "fdd_verified" || brand.dataSource === "state_filing";
 
+  // Admin bypass: if admin cookie is set, show everything ungated
+  const cookieStore = await cookies();
+  const isAdmin = cookieStore.get("franchisel_admin")?.value === "1";
+
   const scoreBreakdown: { label: string; key: keyof typeof brand.scores; weight: string }[] = [
     { label: "Investment Value", key: "investmentValue", weight: "25%" },
     { label: "Franchisee Support", key: "franchiseeSupport", weight: "20%" },
@@ -127,6 +132,9 @@ export default async function BrandPage({
   ];
 
   /* ── Paywall gate component ── */
+  // Admin sees everything as if gov verified
+  const effectiveGovVerified = isGovVerified || isAdmin;
+
   const GovDataOnly = () => (
     <div className="rounded-xl border border-border bg-surface p-8 text-center">
       <div className="w-10 h-10 rounded-full bg-muted/10 flex items-center justify-center mx-auto mb-3">
@@ -142,30 +150,35 @@ export default async function BrandPage({
     </div>
   );
 
-  const PaywallGate = ({ children }: { children: React.ReactNode }) => (
-    <div className="relative rounded-xl overflow-hidden">
-      <div className="blur-sm pointer-events-none select-none opacity-40" aria-hidden="true">
-        {children}
-      </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/70 backdrop-blur-[2px]">
-        <div className="text-center px-6">
-          <div className="w-10 h-10 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-3">
-            <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-            </svg>
+  const PaywallGate = ({ children }: { children: React.ReactNode }) => {
+    // Admin users see everything ungated
+    if (isAdmin) return <>{children}</>;
+
+    return (
+      <div className="relative rounded-xl overflow-hidden">
+        <div className="blur-sm pointer-events-none select-none opacity-40" aria-hidden="true">
+          {children}
+        </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/70 backdrop-blur-[2px]">
+          <div className="text-center px-6">
+            <div className="w-10 h-10 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-3">
+              <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+              </svg>
+            </div>
+            <p className="text-sm font-semibold text-foreground mb-1">Full Analysis in Report</p>
+            <p className="text-xs text-muted mb-4">Scores, red flags, and detailed breakdown sourced from the {brand.fddYear} FDD.</p>
+            <Link
+              href={`/reports?brand=${brand.slug}`}
+              className="inline-flex items-center gap-2 px-5 py-2 bg-accent text-white text-sm font-medium rounded-full hover:brightness-110 transition-all"
+            >
+              Get Report from $29
+            </Link>
           </div>
-          <p className="text-sm font-semibold text-foreground mb-1">Full Analysis in Report</p>
-          <p className="text-xs text-muted mb-4">Scores, red flags, and detailed breakdown sourced from the {brand.fddYear} FDD.</p>
-          <Link
-            href={`/reports?brand=${brand.slug}`}
-            className="inline-flex items-center gap-2 px-5 py-2 bg-accent text-white text-sm font-medium rounded-full hover:brightness-110 transition-all"
-          >
-            Get Report from $29
-          </Link>
         </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   /* ── JSON-LD Structured Data ── */
 
@@ -294,7 +307,7 @@ export default async function BrandPage({
             </div>
 
             {/* Right: overall score or FDD badge */}
-            {isGovVerified ? (
+            {effectiveGovVerified ? (
             <div className="flex flex-col items-center justify-center bg-background border border-accent/20 rounded-2xl p-6 min-w-[160px] shadow-sm relative">
               <span className="text-xs text-muted uppercase tracking-wider mb-1">Overall Score</span>
               <span className="text-5xl font-bold text-muted filter blur-[6px] select-none">
@@ -333,7 +346,7 @@ export default async function BrandPage({
             {/* Total Investment */}
             <div className="rounded-xl border border-border bg-background p-5">
               <p className="text-xs text-muted uppercase tracking-wider mb-1">Total Investment</p>
-              {isGovVerified ? (
+              {effectiveGovVerified ? (
                 <>
                   <p className="text-lg font-semibold text-foreground">
                     {formatInvestmentRange(brand.totalInvestmentLow, brand.totalInvestmentHigh)}
@@ -351,7 +364,7 @@ export default async function BrandPage({
             {/* Average Revenue */}
             <div className="rounded-xl border border-border bg-background p-5">
               <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg Revenue (Item 19)</p>
-              {isGovVerified ? (
+              {effectiveGovVerified ? (
                 brand.hasItem19 && brand.item19?.grossRevenueAvg ? (
                   <>
                     <p className="text-lg font-semibold text-foreground filter blur-[5px] select-none">
@@ -373,7 +386,7 @@ export default async function BrandPage({
             {/* Royalty */}
             <div className="rounded-xl border border-border bg-background p-5">
               <p className="text-xs text-muted uppercase tracking-wider mb-1">Royalty Rate</p>
-              {isGovVerified ? (
+              {effectiveGovVerified ? (
                 <>
                   <p className="text-lg font-semibold text-foreground filter blur-[4px] select-none">{brand.royaltyRate}</p>
                   <p className="text-xs text-accent mt-1 font-medium">Unlock with report →</p>
@@ -389,7 +402,7 @@ export default async function BrandPage({
             {/* Total Units */}
             <div className="rounded-xl border border-border bg-background p-5">
               <p className="text-xs text-muted uppercase tracking-wider mb-1">Total Units</p>
-              {isGovVerified ? (
+              {effectiveGovVerified ? (
                 <>
                   <p className="text-lg font-semibold text-foreground">
                     {brand.totalUnits.toLocaleString()}
@@ -503,7 +516,7 @@ export default async function BrandPage({
           <h2 className="text-xl font-semibold text-foreground mb-4">
             Item 19 — Financial Performance Representation
           </h2>
-          {!isGovVerified ? (
+          {!effectiveGovVerified ? (
             <GovDataOnly />
           ) : brand.hasItem19 && brand.item19 ? (
             <div className="rounded-xl border border-border bg-background overflow-hidden">
@@ -589,7 +602,7 @@ export default async function BrandPage({
         {/* ── 5. Fee Structure ── */}
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-4">Fee Structure</h2>
-          {!isGovVerified ? (
+          {!effectiveGovVerified ? (
             <GovDataOnly />
           ) : (
           <div className="rounded-xl border border-border bg-background overflow-hidden">
@@ -650,7 +663,7 @@ export default async function BrandPage({
           <h2 className="text-xl font-semibold text-foreground mb-4">
             Unit Economics — Item 20 (Outlets &amp; Franchisee Information)
           </h2>
-          {!isGovVerified ? <GovDataOnly /> : (
+          {!effectiveGovVerified ? <GovDataOnly /> : (
           <PaywallGate>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
             <div className="rounded-xl border border-border bg-background p-5">
@@ -719,7 +732,7 @@ export default async function BrandPage({
           <h2 className="text-xl font-semibold text-foreground mb-4">
             Litigation Summary — Item 3
           </h2>
-          {!isGovVerified ? <GovDataOnly /> : (
+          {!effectiveGovVerified ? <GovDataOnly /> : (
           <PaywallGate>
           <div className="rounded-xl border border-border bg-background p-6">
             <div className="flex flex-wrap items-center gap-4 mb-4">
