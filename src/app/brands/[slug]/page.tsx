@@ -10,6 +10,7 @@ import {
   type RedFlag,
 } from "@/lib/types";
 import { BrandDataDisclaimer, DataSourceBadge } from "@/components/DataDisclaimer";
+import { PaywallGate } from "@/components/PaywallGate";
 
 /* ── Static generation ── */
 export function generateStaticParams() {
@@ -126,7 +127,7 @@ export default async function BrandPage({
     { label: "Territory Protection", key: "territoryProtection", weight: "10%" },
   ];
 
-  /* ── Paywall gate component ── */
+  /* ── Data gate helpers ── */
   const effectiveGovVerified = isGovVerified;
 
   const GovDataOnly = () => (
@@ -143,33 +144,6 @@ export default async function BrandPage({
       </p>
     </div>
   );
-
-  const PaywallGate = ({ children }: { children: React.ReactNode }) => {
-    return (
-      <div className="relative rounded-xl overflow-hidden">
-        <div className="blur-sm pointer-events-none select-none opacity-40" aria-hidden="true">
-          {children}
-        </div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/70 backdrop-blur-[2px]">
-          <div className="text-center px-6">
-            <div className="w-10 h-10 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-3">
-              <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-              </svg>
-            </div>
-            <p className="text-sm font-semibold text-foreground mb-1">Full Analysis in Report</p>
-            <p className="text-xs text-muted mb-4">Scores, red flags, and detailed breakdown sourced from the {brand.fddYear} FDD.</p>
-            <Link
-              href={`/reports?brand=${brand.slug}`}
-              className="inline-flex items-center gap-2 px-5 py-2 bg-accent text-white text-sm font-medium rounded-full hover:brightness-110 transition-all"
-            >
-              Get Report from $29
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  };
 
   /* ── JSON-LD Structured Data ── */
 
@@ -416,7 +390,7 @@ export default async function BrandPage({
         {/* ── 2. Score Breakdown ── */}
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-4">Score Breakdown</h2>
-          <PaywallGate>
+          <PaywallGate brandSlug={brand.slug} brandName={brand.name} fddYear={brand.fddYear}>
           <div className="rounded-xl border border-border bg-background p-6 space-y-4">
             {scoreBreakdown.map(({ label, key, weight }) => {
               const value = brand.scores[key];
@@ -453,7 +427,7 @@ export default async function BrandPage({
                 {brand.redFlags.length} identified
               </span>
             </div>
-            <PaywallGate>
+            <PaywallGate brandSlug={brand.slug} brandName={brand.name} fddYear={brand.fddYear}>
             <div className="space-y-3">
               {brand.redFlags.map((flag, i) => {
                 const s = severityStyles(flag.severity);
@@ -655,7 +629,7 @@ export default async function BrandPage({
             Unit Economics — Item 20 (Outlets &amp; Franchisee Information)
           </h2>
           {!effectiveGovVerified ? <GovDataOnly /> : (
-          <PaywallGate>
+          <PaywallGate brandSlug={brand.slug} brandName={brand.name} fddYear={brand.fddYear}>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
             <div className="rounded-xl border border-border bg-background p-5">
               <p className="text-xs text-muted uppercase tracking-wider mb-1">Units Opened</p>
@@ -724,7 +698,7 @@ export default async function BrandPage({
             Litigation Summary — Item 3
           </h2>
           {!effectiveGovVerified ? <GovDataOnly /> : (
-          <PaywallGate>
+          <PaywallGate brandSlug={brand.slug} brandName={brand.name} fddYear={brand.fddYear}>
           <div className="rounded-xl border border-border bg-background p-6">
             <div className="flex flex-wrap items-center gap-4 mb-4">
               <div>

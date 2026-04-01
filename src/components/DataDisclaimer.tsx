@@ -118,9 +118,16 @@ export function BrandDataDisclaimer({
               {sourceNotes ? ` ${sourceNotes}` : ""}{" "}
               Always verify current figures by requesting the most recent FDD directly from the franchisor.
             </p>
+          ) : dataSource === "state_filing" ? (
+            <p>
+              Data for {brandName} was <strong>extracted directly from the {fddYear} Franchise Disclosure Document</strong> filed with state regulators (MN CARDS, WI DFI, or CA DFPI).
+              The actual FDD was directly reviewed and all figures shown are sourced from the government filing.
+              {sourceNotes ? ` ${sourceNotes}` : ""}{" "}
+              Always verify current figures by requesting the most recent FDD directly from the franchisor.
+            </p>
           ) : (
             <p>
-              Data for {brandName} was extracted from the <strong>{fddYear} Franchise Disclosure Document filed with state regulators</strong> (MN CARDS, WI DFI).
+              Data for {brandName} was extracted from the <strong>{fddYear} Franchise Disclosure Document</strong> (FDD Verified).
               {sourceNotes ? ` ${sourceNotes}` : ""}{" "}
               Always verify current figures by requesting the most recent FDD directly from the franchisor.
             </p>
@@ -140,8 +147,8 @@ export function LegalDisclaimer() {
           <strong>Important Notice:</strong> Franchisel provides franchise research and analysis for
           informational purposes only. This is not financial, legal, or investment advice. All financial
           data labeled &ldquo;Estimated&rdquo; is approximate and has not been verified against actual FDD filings.
-          Data labeled &ldquo;FDD Verified&rdquo; has been extracted from publicly filed Franchise Disclosure
-          Documents but may not reflect the most recent filing. Unit counts, revenue figures, and other
+          Data labeled &ldquo;FDD Verified&rdquo; or &ldquo;State Filing&rdquo; has been extracted directly from government-filed Franchise Disclosure
+          Documents (MN CARDS, WI DFI, CA DFPI) but may not reflect the most recent filing. Unit counts, revenue figures, and other
           metrics change frequently. Always request and independently verify the current FDD from the
           franchisor before making any investment decision. Consult a qualified franchise attorney and
           accountant before investing. Franchisel is not affiliated with, endorsed by, or sponsored
