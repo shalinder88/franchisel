@@ -41,6 +41,7 @@ import DataCoverageWidget from "@/components/DataCoverageWidget";
 import CommunitySourceBadge from "@/components/CommunitySourceBadge";
 import CommunitySubmitForm from "@/components/CommunitySubmitForm";
 import { getCommunityProfile } from "@/data/community";
+import BenchmarkWidget from "@/components/BenchmarkWidget";
 
 /* ── Dynamic rendering — too many brands to pre-render (causes Vercel 80MB limit) ── */
 export const dynamic = 'force-dynamic';
@@ -1582,52 +1583,7 @@ export default async function BrandPage({
         {effectiveGovVerified && cohortBenchmarks.benchmarks.some((b: CohortBenchmark) => b.percentile !== null) && (
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-1">Peer Benchmarks</h2>
-          <p className="text-xs text-muted mb-4">
-            How does {brand.name} rank within{" "}
-            <span className="font-medium text-foreground">{cohortBenchmarks.category}</span> franchises
-            at a <span className="font-medium text-foreground">{cohortBenchmarks.investmentTier}</span> investment?
-            All data from government-filed FDDs.
-          </p>
-          <>
-          <div className="rounded-xl border border-border bg-background overflow-hidden">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-border bg-surface">
-                  <th className="px-5 py-2.5 text-left text-xs font-semibold text-muted uppercase tracking-wider">Metric</th>
-                  <th className="px-5 py-2.5 text-right text-xs font-semibold text-muted uppercase tracking-wider">Value</th>
-                  <th className="px-5 py-2.5 text-right text-xs font-semibold text-muted uppercase tracking-wider">Percentile</th>
-                  <th className="px-5 py-2.5 text-right text-xs font-semibold text-muted uppercase tracking-wider hidden sm:table-cell">Peers</th>
-                </tr>
-              </thead>
-              <tbody>
-                {cohortBenchmarks.benchmarks.filter((b: CohortBenchmark) => b.percentile !== null).map((b: CohortBenchmark, i: number) => (
-                  <tr key={i} className="border-b border-border last:border-0 table-row-hover">
-                    <td className="px-5 py-3">
-                      <p className="text-sm font-medium text-foreground">{b.metric}</p>
-                      <p className="text-xs text-muted">{b.peerLabel}</p>
-                    </td>
-                    <td className="px-5 py-3 text-right font-semibold text-foreground">
-                      {b.unit === "$" ? formatCurrency(b.value!) : `${b.value}${b.unit}`}
-                    </td>
-                    <td className="px-5 py-3 text-right">
-                      <span className={`inline-flex items-center justify-center w-12 h-6 rounded-full text-xs font-bold ${
-                        b.verdict === "top_quartile" ? "bg-success/15 text-success" :
-                        b.verdict === "above_avg" ? "bg-success/8 text-success" :
-                        b.verdict === "below_avg" ? "bg-warning/15 text-warning" :
-                        b.verdict === "bottom_quartile" ? "bg-danger/15 text-danger" :
-                        "bg-surface text-muted"
-                      }`}>
-                        {b.percentile}th
-                      </span>
-                    </td>
-                    <td className="px-5 py-3 text-right text-xs text-muted hidden sm:table-cell">{b.peerCount} brands</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-muted mt-2">Percentile rank against comparable franchises. Higher = better for revenue/growth; lower = better for fees.</p>
-          </>
+          <BenchmarkWidget benchmarks={cohortBenchmarks} brandName={brand.name} />
         </section>
         )}
 
@@ -1787,6 +1743,11 @@ export default async function BrandPage({
                 </div>
               );
             })()}
+          </div>
+          <div className="mt-3 text-right">
+            <Link href={`/brands/${slug}/diff`} className="text-xs text-accent hover:underline font-medium">
+              View full filing changes →
+            </Link>
           </div>
         </section>
         )}
@@ -2158,17 +2119,29 @@ export default async function BrandPage({
         )}
 
         {/* ── 9. Tools ── */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <section className="rounded-xl border border-accent/20 bg-accent/5 p-5">
-            <h2 className="text-sm font-bold text-foreground mb-1">Diligence Memo</h2>
+            <h2 className="text-sm font-bold text-foreground mb-1">Buyer Memo</h2>
+            <p className="text-xs text-muted mb-3 leading-relaxed">
+              One-page printable summary: investment, revenue, flags, and questions to ask.
+            </p>
+            <Link
+              href={`/brands/${brand.slug}/memo`}
+              className="inline-flex items-center gap-1.5 px-4 py-2 bg-accent text-white text-xs font-semibold rounded-lg hover:brightness-110 transition-all"
+            >
+              View Memo →
+            </Link>
+          </section>
+          <section className="rounded-xl border border-border bg-surface p-5">
+            <h2 className="text-sm font-bold text-foreground mb-1">Full Diligence Memo</h2>
             <p className="text-xs text-muted mb-3 leading-relaxed">
               Item 19, system health, red flags, contract terms — cited to the filed FDD.
             </p>
             <Link
               href={`/brands/${brand.slug}/diligence`}
-              className="inline-flex items-center gap-1.5 px-4 py-2 bg-accent text-white text-xs font-semibold rounded-lg hover:brightness-110 transition-all"
+              className="inline-flex items-center gap-1.5 px-4 py-2 border border-border text-xs font-semibold rounded-lg text-muted hover:text-foreground hover:border-foreground transition-all"
             >
-              View Memo →
+              Full Analysis →
             </Link>
           </section>
           <section className="rounded-xl border border-border bg-surface p-5">
