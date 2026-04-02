@@ -25,11 +25,12 @@ export const metadata = {
 export default async function BrandsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; q?: string }>;
+  searchParams: Promise<{ category?: string; q?: string; hasYoY?: string }>;
 }) {
   const params = await searchParams;
   const activeCategory = params.category || "all";
   const searchQuery = (params.q || "").toLowerCase().trim();
+  const initialHasYoY = params.hasYoY === "true";
 
   const categoryFiltered =
     activeCategory === "all"
@@ -240,7 +241,7 @@ export default async function BrandsPage({
         )}
 
         {/* Interactive filter/sort + brand grid */}
-        <BrandsClient brands={filteredBrands} />
+        <BrandsClient brands={filteredBrands} initialHasYoY={initialHasYoY} />
       </div>
     </div>
   );

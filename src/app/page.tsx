@@ -39,6 +39,14 @@ export default function HomePage() {
     .filter(b => b.totalInvestmentLow > 0 || b.totalUnits > 0)
     .sort((a, b) => (b.lastUpdated > a.lastUpdated ? 1 : -1))
     .slice(0, 6);
+  const brandsWithYoY = brands
+    .filter(
+      (b) =>
+        (b.dataSource === "state_filing" || b.dataSource === "fdd_verified") &&
+        ((b.item19Prior?.grossRevenueAvg && b.item19?.grossRevenueAvg) ||
+          (b.unitEconomics?.yearlyNetGrowth && b.unitEconomics.yearlyNetGrowth.length >= 2))
+    )
+    .slice(0, 6);
   const brandCount = getActiveBrandCount();
   const reviewCount = getTotalCommunityReviews();
   const verifiedDate = getLatestVerifiedDate();
@@ -408,6 +416,96 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ═══════════════════════════════════════════════════
+          3c. FILING YEAR CHANGES
+          ═══════════════════════════════════════════════════ */}
+      {brandsWithYoY.length > 0 && (
+        <section className="border-b border-border">
+          <div className="max-w-7xl mx-auto px-6 py-20">
+            <div className="flex items-end justify-between mb-10">
+              <div>
+                <p className="text-sm font-medium text-cyan tracking-wide uppercase mb-3">
+                  Multi-Year FDD Data
+                </p>
+                <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
+                  Filing Year Changes
+                </h2>
+                <p className="mt-2 text-sm text-muted">
+                  Brands where we have multi-year FDD data — see what changed between filings.
+                </p>
+              </div>
+              <Link
+                href="/brands?hasYoY=true"
+                className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline"
+              >
+                View all with filing changes
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {brandsWithYoY.map((b) => {
+                const hasRevYoY = !!(b.item19Prior?.grossRevenueAvg && b.item19?.grossRevenueAvg);
+                const revPct = hasRevYoY
+                  ? Math.round(
+                      (((b.item19!.grossRevenueAvg! - b.item19Prior!.grossRevenueAvg!) /
+                        b.item19Prior!.grossRevenueAvg!) *
+                        100 *
+                        10) /
+                        10
+                    )
+                  : null;
+                return (
+                  <div
+                    key={b.slug}
+                    className="block border border-border rounded-xl p-5 hover-glow bg-background"
+                  >
+                    <div className="flex items-start justify-between mb-2">
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground">{b.name}</h3>
+                        <p className="text-xs text-muted mt-0.5">{categoryLabels[b.category]}</p>
+                      </div>
+                      {revPct !== null && (
+                        <span
+                          className={`text-sm font-bold ${
+                            revPct >= 0 ? "text-success" : "text-danger"
+                          }`}
+                        >
+                          {revPct >= 0 ? "+" : ""}
+                          {revPct}% rev
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-xs text-muted mb-4">
+                      {hasRevYoY
+                        ? `Revenue: $${((b.item19Prior!.grossRevenueAvg! / 1000)).toFixed(0)}K → $${((b.item19!.grossRevenueAvg! / 1000)).toFixed(0)}K`
+                        : "Unit growth trend available"}
+                    </p>
+                    <Link
+                      href={`/brands/${b.slug}/diff`}
+                      className="inline-flex items-center gap-1 text-xs font-medium text-accent hover:underline"
+                    >
+                      View Changes →
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="mt-8 text-center sm:hidden">
+              <Link
+                href="/brands?hasYoY=true"
+                className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline"
+              >
+                View all with filing changes →
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ═══════════════════════════════════════════════════
           4. FEATURED COMPARISONS

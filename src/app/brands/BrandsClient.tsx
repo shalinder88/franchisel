@@ -51,7 +51,21 @@ const SCORE_MIN_OPTIONS = [
   { label: "≥ 70", value: 70 },
 ];
 
-export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
+function hasYoYData(b: FranchiseBrand): boolean {
+  return (
+    (b.dataSource === "state_filing" || b.dataSource === "fdd_verified") &&
+    ((!!b.item19Prior?.grossRevenueAvg && !!b.item19?.grossRevenueAvg) ||
+      (!!b.unitEconomics?.yearlyNetGrowth && b.unitEconomics.yearlyNetGrowth.length >= 2))
+  );
+}
+
+export default function BrandsClient({
+  brands,
+  initialHasYoY = false,
+}: {
+  brands: FranchiseBrand[];
+  initialHasYoY?: boolean;
+}) {
   const [search, setSearch]               = useState("");
   const [sort, setSort]                   = useState<SortKey>("popular");
   const [categoryFilter, setCategoryFilter] = useState<FranchiseCategory | "all">("all");
@@ -61,6 +75,7 @@ export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
   const [investMax, setInvestMax]         = useState<number | null>(null);
   const [scoreMin, setScoreMin]           = useState(0);
   const [filtersOpen, setFiltersOpen]     = useState(false);
+  const [filingChangesOnly, setFilingChangesOnly] = useState(initialHasYoY);
 
   const processed = useMemo(() => {
     let list = [...brands];
@@ -78,6 +93,10 @@ export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
       list = list.filter(
         (b) => b.dataSource === "fdd_verified" || b.dataSource === "state_filing"
       );
+    }
+
+    if (filingChangesOnly) {
+      list = list.filter(hasYoYData);
     }
 
     if (categoryFilter !== "all") {
@@ -139,7 +158,7 @@ export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
     }
 
     return list;
-  }, [brands, hideNoData, item19Only, fddVerifiedOnly, categoryFilter, investMax, scoreMin, search, sort]);
+  }, [brands, hideNoData, item19Only, fddVerifiedOnly, filingChangesOnly, categoryFilter, investMax, scoreMin, search, sort]);
 
   // Stats
   const withRevenue = brands.filter((b) => b.item19?.grossRevenueAvg).length;
@@ -163,7 +182,8 @@ export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
     (!hideNoData ? 1 : 0) +
     (investMax !== null ? 1 : 0) +
     (scoreMin > 0 ? 1 : 0) +
-    (categoryFilter !== "all" ? 1 : 0);
+    (categoryFilter !== "all" ? 1 : 0) +
+    (filingChangesOnly ? 1 : 0);
 
   function clearAll() {
     setCategoryFilter("all");
@@ -174,6 +194,7 @@ export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
     setScoreMin(0);
     setSearch("");
     setSort("popular");
+    setFilingChangesOnly(false);
   }
 
   return (
@@ -276,6 +297,16 @@ export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
               {hideNoData ? "Hiding" : "Show"} incomplete data
               <span className="opacity-70">({brands.length - withData})</span>
             </button>
+            <button
+              onClick={() => setFilingChangesOnly((v) => !v)}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-all ${
+                filingChangesOnly ? "bg-cyan text-white border-cyan" : "bg-background text-muted border-border hover:border-cyan hover:text-cyan"
+              }`}
+            >
+              <span className="font-bold">{filingChangesOnly ? "✓" : "+"}</span>
+              Filing Changes Available
+              <span className="opacity-70">({brands.filter(hasYoYData).length})</span>
+            </button>
           </div>
 
           {/* Row 2: Score minimum */}
@@ -373,6 +404,11 @@ export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
         {fddVerifiedOnly && (
           <button onClick={() => setFddVerifiedOnly(false)} className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-accent/10 text-accent text-xs font-medium border border-accent/20 hover:bg-danger/10 hover:text-danger hover:border-danger/20 transition-colors">
             FDD verified only ✕
+          </button>
+        )}
+        {filingChangesOnly && (
+          <button onClick={() => setFilingChangesOnly(false)} className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-cyan/10 text-cyan text-xs font-medium border border-cyan/20 hover:bg-danger/10 hover:text-danger hover:border-danger/20 transition-colors">
+            Filing changes ✕
           </button>
         )}
         {search && (
