@@ -91,23 +91,23 @@ export default function HomePage() {
               href="/brands"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-lg bg-accent text-white font-semibold text-sm hover:brightness-110 transition-all"
             >
-              Browse Franchise Brands
+              Start Your Shortlist
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
             <Link
-              href="/compare"
+              href="/reports"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-lg bg-accent/10 border border-accent text-accent font-semibold text-sm hover:bg-accent/20 transition-colors"
             >
-              Compare Brands
+              Get a Report
             </Link>
-            <Link
-              href="/guides"
+            <a
+              href="#how-it-works"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-lg border border-border text-foreground font-semibold text-sm hover:border-accent hover:text-accent transition-colors"
             >
-              Read Guides
-            </Link>
+              How It Works
+            </a>
           </div>
 
           <p className="mt-5 text-xs text-muted tracking-wide">
@@ -149,14 +149,14 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           2. HOW IT WORKS
           ═══════════════════════════════════════════════════ */}
-      <section className="border-b border-border">
+      <section id="how-it-works" className="border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-20">
           <div className="text-center mb-14">
             <p className="text-sm font-medium text-accent tracking-wide uppercase mb-3">
               How It Works
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
-              Franchise intelligence in three steps
+              Franchise diligence in three steps
             </h2>
           </div>
 
@@ -175,9 +175,9 @@ export default function HomePage() {
               },
               {
                 step: "02",
-                title: "We estimate unit economics",
+                title: "We interpret the numbers",
                 description:
-                  "We compile investment ranges, fee structures, and unit growth data from public filings and industry sources. Where data is estimated rather than extracted from an FDD, we label it clearly.",
+                  "We break down Item 19 revenue data, Item 20 unit churn, fee structures, and contract terms into plain-English diligence insight. Where a field is estimated rather than FDD-verified, we label it clearly.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
@@ -188,7 +188,7 @@ export default function HomePage() {
                 step: "03",
                 title: "You decide with confidence",
                 description:
-                  "Red flags surfaced, benchmarks compared, community insights shared. Everything you need to negotiate smarter — or walk away informed.",
+                  "Red flags surfaced, benchmarks compared, and diligence priorities clarified. Everything you need to negotiate smarter — or walk away informed.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.746 3.746 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
@@ -221,6 +221,127 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════
+          2b. SAMPLE ANALYSIS PREVIEW
+          ═══════════════════════════════════════════════════ */}
+      {(() => {
+        const previewSlugs = ["dunkin", "jersey-mikes", "wingstop", "great-clips"];
+        const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
+        const previewBrand = brands.find(b => b.slug === previewSlugs[dayOfYear % previewSlugs.length]);
+        if (!previewBrand) return null;
+        const ps = computeProductionScores(previewBrand);
+        const scores = [
+          { label: "System Health", value: ps.systemHealth },
+          { label: "Franchisor Strength", value: ps.franchisorStrength },
+          { label: "Contract Burden", value: ps.contractBurden },
+        ];
+        const yoyUnits = previewBrand.unitEconomics?.yearlyNetGrowth;
+        const hasYoY = yoyUnits && yoyUnits.length >= 2;
+        const latestGrowth = hasYoY ? yoyUnits![yoyUnits!.length - 1].net : null;
+        return (
+          <section className="border-b border-border bg-surface-alt">
+            <div className="max-w-4xl mx-auto px-6 py-16">
+              <div className="text-center mb-8">
+                <p className="text-sm font-medium text-accent tracking-wide uppercase mb-3">
+                  See What an Analysis Looks Like
+                </p>
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-tight">
+                  Real diligence output — from a government-filed FDD
+                </h2>
+                <p className="mt-2 text-sm text-muted">
+                  This is a live preview of a Franchisel brand profile. Rotates daily.
+                </p>
+              </div>
+
+              <div className="border border-border rounded-2xl bg-background overflow-hidden shadow-sm">
+                {/* Header */}
+                <div className="flex items-center justify-between px-6 py-5 border-b border-border">
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">{previewBrand.name}</h3>
+                    <p className="text-xs text-muted mt-0.5">{categoryLabels[previewBrand.category]} · {previewBrand.totalUnits.toLocaleString()} units · {previewBrand.fddYear} FDD</p>
+                  </div>
+                  <div className="text-right">
+                    <p className={`text-3xl font-extrabold ${(ps.coreDiligence ?? 0) >= 70 ? "text-success" : (ps.coreDiligence ?? 0) >= 50 ? "text-warning" : "text-danger"}`}>
+                      {ps.coreDiligence ?? "—"}
+                    </p>
+                    <p className="text-[10px] text-muted uppercase tracking-wider mt-0.5">Core Diligence</p>
+                  </div>
+                </div>
+
+                {/* Score bars */}
+                <div className="px-6 py-5 border-b border-border space-y-3">
+                  {scores.map(s => (
+                    <div key={s.label} className="flex items-center gap-3">
+                      <span className="text-xs text-muted w-40 shrink-0">{s.label}</span>
+                      <div className="flex-1 h-2 bg-border rounded-full overflow-hidden">
+                        <div
+                          className={`h-full rounded-full ${(s.value ?? 0) >= 70 ? "bg-success" : (s.value ?? 0) >= 50 ? "bg-warning" : "bg-danger"}`}
+                          style={{ width: `${s.value ?? 0}%` }}
+                        />
+                      </div>
+                      <span className="text-xs font-semibold text-foreground w-6 text-right">{s.value ?? "—"}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Key data points */}
+                <div className="grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-border border-b border-border">
+                  <div className="px-6 py-4">
+                    <p className="text-[10px] text-muted uppercase tracking-wider mb-1">Item 19 Avg Revenue</p>
+                    <p className="text-base font-bold text-foreground">{formatCurrency(previewBrand.item19!.grossRevenueAvg!)}</p>
+                    <p className="text-[10px] text-muted mt-0.5">{previewBrand.fddYear} FDD · {previewBrand.item19!.basis?.replace(/_/g, " ")}</p>
+                  </div>
+                  <div className="px-6 py-4">
+                    <p className="text-[10px] text-muted uppercase tracking-wider mb-1">Investment Range</p>
+                    <p className="text-base font-bold text-foreground">{formatInvestmentRange(previewBrand.totalInvestmentLow, previewBrand.totalInvestmentHigh)}</p>
+                    <p className="text-[10px] text-muted mt-0.5">Item 7 — initial investment</p>
+                  </div>
+                  <div className="px-6 py-4">
+                    <p className="text-[10px] text-muted uppercase tracking-wider mb-1">
+                      {hasYoY ? "Net Unit Growth (Latest Year)" : "Red Flags"}
+                    </p>
+                    {hasYoY ? (
+                      <>
+                        <p className={`text-base font-bold ${latestGrowth! > 0 ? "text-success" : "text-danger"}`}>
+                          {latestGrowth! > 0 ? "+" : ""}{latestGrowth} units
+                        </p>
+                        <p className="text-[10px] text-muted mt-0.5">Item 20 — outlet changes</p>
+                      </>
+                    ) : (
+                      <>
+                        <p className={`text-base font-bold ${(previewBrand.redFlags?.length ?? 0) === 0 ? "text-success" : "text-warning"}`}>
+                          {(previewBrand.redFlags?.length ?? 0) === 0 ? "None detected" : `${previewBrand.redFlags!.length} flag${previewBrand.redFlags!.length > 1 ? "s" : ""}`}
+                        </p>
+                        <p className="text-[10px] text-muted mt-0.5">Items 3, 12, 20 — checked</p>
+                      </>
+                    )}
+                  </div>
+                </div>
+
+                {/* Footer CTA */}
+                <div className="flex items-center justify-between px-6 py-4">
+                  <p className="text-xs text-muted">
+                    <span className="inline-flex items-center gap-1">
+                      <span className="w-2 h-2 rounded-full bg-success inline-block" />
+                      Gov-filed · {previewBrand.dataSource === "state_filing" ? "State regulatory filing" : "FDD verified"}
+                    </span>
+                  </p>
+                  <Link
+                    href={`/brands/${previewBrand.slug}`}
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline"
+                  >
+                    Open full analysis
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* ═══════════════════════════════════════════════════
           3. TOP BRANDS BY SCORE
           ═══════════════════════════════════════════════════ */}
       <section className="border-b border-border">
@@ -228,13 +349,13 @@ export default function HomePage() {
           <div className="flex items-end justify-between mb-10">
             <div>
               <p className="text-sm font-medium text-accent tracking-wide uppercase mb-3">
-                Most Popular
+                Established Systems
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
-                Most popular franchises
+                Established franchise systems with FDD data
               </h2>
               <p className="mt-2 text-sm text-muted">
-                Ranked by total active units — the largest, most established franchise systems with FDD data on file.
+                Ranked by total active units — large, established systems with government-filed FDD data on record.
               </p>
             </div>
             <Link
@@ -341,13 +462,13 @@ export default function HomePage() {
           <div className="flex items-end justify-between mb-10">
             <div>
               <p className="text-sm font-medium text-accent tracking-wide uppercase mb-3">
-                Recently Updated
+                Recently Updated Profiles
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
-                Latest franchise intelligence
+                Recently updated brand profiles
               </h2>
               <p className="mt-2 text-sm text-muted">
-                Profiles updated from the most recent public data available.
+                Profiles updated when new FDD filings are processed. Data sourced directly from government-filed documents.
               </p>
             </div>
             <Link
