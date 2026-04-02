@@ -200,7 +200,7 @@ export default async function BrandsPage({
                 <p className="text-xs text-muted mb-1">Avg Overall Score</p>
                 <p className="text-base font-semibold text-foreground">
                   {categoryInsights.avgOverallScore}
-                  <span className="text-xs text-muted font-normal"> / 10</span>
+                  <span className="text-xs text-muted font-normal"> / 100</span>
                 </p>
               </div>
               <div>
