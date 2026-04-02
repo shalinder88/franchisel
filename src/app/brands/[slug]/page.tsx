@@ -2151,10 +2151,12 @@ export default async function BrandPage({
                     {brand.subcategory && <span className="text-muted ml-1">· {brand.subcategory}</span>}
                   </td>
                 </tr>
+                {(brand.statesOfOperation ?? 0) > 0 && (
                 <tr className="table-row-hover border-b border-border">
                   <td className="px-5 py-3 text-muted font-medium">States of Operation</td>
                   <td className="px-5 py-3 text-foreground text-right">{brand.statesOfOperation}</td>
                 </tr>
+                )}
                 <tr className="table-row-hover">
                   <td className="px-5 py-3 text-muted font-medium">FDD Year</td>
                   <td className="px-5 py-3 text-foreground text-right">{brand.fddYear}</td>
@@ -2174,11 +2176,13 @@ export default async function BrandPage({
               <p>
                 {brand.dataSource === "fdd_verified"
                   ? `Data extracted directly from the ${brand.fddYear} Franchise Disclosure Document filed by ${brand.parentCompany}.`
+                  : brand.dataSource === "state_filing"
+                  ? `Data sourced from the ${brand.fddYear} FDD filed with a state franchise regulator (${brand.headquartersState || "state"} DFI/CARDS filing). Fields not extractable from the PDF are shown as not available.`
                   : brand.dataSource === "sec_filing"
                   ? `Data sourced from SEC EDGAR filings (10-K/10-Q) for ${brand.parentCompany} and the ${brand.fddYear} FDD.`
                   : brand.dataSource === "public_record"
                   ? `Data sourced from official franchisor website and published ${brand.fddYear} FDD summaries for ${brand.parentCompany}.`
-                  : `Data estimated from public sources referencing the ${brand.fddYear} Franchise Disclosure Document filed by ${brand.parentCompany}. Financial figures are editorial estimates pending verification against the actual FDD.`}
+                  : `Data sourced from secondary public records referencing the ${brand.fddYear} FDD for ${brand.parentCompany}. Key figures are estimated where direct extraction was not possible.`}
                 {" "}Last updated <strong>{brand.dataVerified}</strong>.
               </p>
               {brand.sourceNotes && (

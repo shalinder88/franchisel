@@ -401,7 +401,7 @@ export default function WatchlistPage() {
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-2">Five types of alerts — all automated</h2>
           <p className="text-sm text-muted mb-8 max-w-2xl">
-            Every alert type is driven by actual FDD data and verified community activity.
+            Every alert type is driven by actual FDD data.
             No noise. No marketing emails. Only signals that matter to a serious buyer.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -471,7 +471,7 @@ export default function WatchlistPage() {
               {
                 step: "2",
                 title: "We scan new FDD filings weekly",
-                desc: "Our system monitors FDD registrations, litigation databases, and community submissions across all 80+ brands in our directory.",
+                desc: "Our system monitors FDD registrations and litigation databases across all 2,474 brands in our directory.",
               },
               {
                 step: "3",
@@ -502,8 +502,8 @@ export default function WatchlistPage() {
             <span className="px-2 py-0.5 rounded-full bg-surface border border-border text-muted text-[10px] font-medium">By community activity</span>
           </div>
           <p className="text-sm text-muted mb-8 max-w-2xl">
-            These are the brands generating the most research activity in our community.
-            High interest means more franchisee data, more reviews, and more signal.
+            These are the most-researched brands in our directory.
+            Start here if you&rsquo;re exploring high-visibility franchises.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {popularBrands.map((brand) => (
