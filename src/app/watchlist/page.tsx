@@ -6,14 +6,14 @@ import { brands } from "@/data/brands";
 import type { FranchiseBrand } from "@/lib/types";
 import { computeProductionScores } from "@/lib/diligence";
 
-/* ── Most-watched brands (top 6 by communityReviews) ── */
+/* ── Most-watched brands (FDD-verified, commonly researched) ── */
 const popularBrands = [
-  { name: "McDonald's", slug: "mcdonalds", category: "Food & Beverage", reviews: 412, investment: "$1.4M – $2.5M" },
-  { name: "Great Clips", slug: "great-clips", category: "Hair & Beauty", reviews: 218, investment: "$137K – $259K" },
-  { name: "The UPS Store", slug: "the-ups-store", category: "Business Services", reviews: 203, investment: "$138K – $470K" },
-  { name: "Planet Fitness", slug: "planet-fitness", category: "Fitness & Wellness", reviews: 147, investment: "$1.1M – $4.9M" },
-  { name: "Jersey Mike's Subs", slug: "jersey-mikes", category: "Food & Beverage", reviews: 134, investment: "$194K – $955K" },
-  { name: "SERVPRO", slug: "servpro", category: "Home Services", reviews: 112, investment: "$217K – $366K" },
+  { name: "McDonald's", slug: "mcdonalds", category: "Food & Beverage", investment: "$1.4M – $2.5M" },
+  { name: "Great Clips", slug: "great-clips", category: "Hair & Beauty", investment: "$137K – $259K" },
+  { name: "The UPS Store", slug: "the-ups-store", category: "Business Services", investment: "$138K – $470K" },
+  { name: "Planet Fitness", slug: "planet-fitness", category: "Fitness & Wellness", investment: "$1.1M – $4.9M" },
+  { name: "Jersey Mike's", slug: "jersey-mikes", category: "Food & Beverage", investment: "$194K – $955K" },
+  { name: "SERVPRO", slug: "servpro", category: "Home Services", investment: "$217K – $366K" },
 ];
 
 export const metadata: Metadata = {
@@ -517,7 +517,7 @@ export default function WatchlistPage() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors truncate">{brand.name}</p>
-                  <p className="text-xs text-muted">{brand.reviews} community reviews · {brand.investment}</p>
+                  <p className="text-xs text-muted">FDD-verified · {brand.investment}</p>
                 </div>
                 <svg className="w-4 h-4 text-muted group-hover:text-accent transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

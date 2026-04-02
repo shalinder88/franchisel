@@ -31,7 +31,9 @@ function scoreColor(score: number) {
 
 export default function HomePage() {
   const featuredBrands = getFeaturedBrands();
-  const topScoredBrands = getTopBrandsByScore().slice(0, 6);
+  const topScoredBrands = getTopBrandsByScore()
+    .filter(b => b.totalUnits > 0 && b.totalInvestmentLow > 0)
+    .slice(0, 6);
   const recentlyAdded = [...brands]
     .sort((a, b) => (b.lastUpdated > a.lastUpdated ? 1 : -1))
     .slice(0, 6);
@@ -683,9 +685,9 @@ export default function HomePage() {
                   <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-success-light text-success text-[10px] font-semibold">Free</span>
                 </div>
                 <p className="text-sm text-muted leading-relaxed">
-                  Plug in any franchise's Item 19 revenue and fee structure to estimate real take-home
-                  income after all royalties, costs, and debt service. See break-even revenue, payback
-                  period, and cash-on-cash return.
+                  Model your own assumptions using any franchise's fee structure. Enter your revenue
+                  target and cost inputs to see illustrated break-even, payback period, and cash-on-cash
+                  scenarios. All outputs are assumption-based — not FDD-reported results.
                 </p>
                 <p className="mt-3 text-xs font-medium text-accent flex items-center gap-1">
                   Open calculator

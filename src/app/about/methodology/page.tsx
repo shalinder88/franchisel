@@ -4,49 +4,49 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Our Methodology — How Franchisel Scores Franchises",
   description:
-    "Franchisel's scoring methodology explained. Six weighted dimensions, FDD-verified data, and a transparent process for evaluating franchise investment quality.",
+    "Franchisel's scoring methodology explained. Five FDD-derived scores on a 0–100 scale, sourced from primary regulatory filings with full source citations.",
 };
 
 const scoreDimensions = [
   {
-    name: "Investment Value",
-    weight: "25%",
+    name: "System Health",
+    weight: "FDD Items 20 + 21",
     color: "bg-accent",
-    widthClass: "w-[25%]",
+    widthClass: "w-[80%]",
     description:
-      "Compares total investment requirement (Item 7 midpoint) against FDD-disclosed revenue benchmarks (Item 19 median revenue where available) and against comparable franchises in the same category. This dimension produces an estimated payback range and cost-per-revenue-dollar metric. Franchises with investment requirements significantly above category peers without commensurate revenue justification score lower here. This is the highest-weighted dimension because investment sizing is the single most consequential variable in franchise due diligence.",
+      "Derived from Item 20 unit count data: net franchise growth over the most recent three-year period, termination and non-renewal rate as a percentage of total system, and closure trajectory. Also incorporates Item 21 audited financials where available — franchisor net worth stability and revenue trend. A system with positive net unit growth, low churn, and a financially stable franchisor scores higher here. This is the most directly observable signal of whether the franchise model works in practice.",
   },
   {
-    name: "Franchisee Support",
-    weight: "20%",
+    name: "Franchisor Strength",
+    weight: "FDD Items 3, 4, 21",
     color: "bg-success",
-    widthClass: "w-[20%]",
+    widthClass: "w-[70%]",
     description:
-      "Measures franchisee satisfaction and support quality based on independently collected community data, including would-you-do-it-again rates and support quality scores. Also assesses the depth of initial training (Item 11), field support frequency, technology platform quality, and marketing fund transparency. Unlike paid satisfaction surveys, our community data is collected without franchisor involvement and labeled with its verification status.",
+      "Derived from Items 3 and 4 (litigation and bankruptcy history) and Item 21 (audited financial statements). Measures the financial health and legal standing of the franchisor. Franchisors with pending or recurring franchisee lawsuits, unresolved regulatory actions, or declining net worth score lower. A strong franchisor should be financially solvent, litigation-light, and growing — not solely dependent on franchise fees for revenue.",
   },
   {
-    name: "Financial Transparency",
-    weight: "20%",
+    name: "Contract Burden",
+    weight: "FDD Items 17 + 12",
     color: "bg-cyan",
-    widthClass: "w-[20%]",
+    widthClass: "w-[60%]",
     description:
-      "Evaluates the completeness and clarity of Item 19 (Financial Performance Representations), the quality of fee disclosures across Items 5 and 6, and whether the FDD gives prospective buyers a realistic picture of unit economics. Franchises that omit Item 19 entirely, provide only partial representations, or bury key costs in footnotes score significantly lower on this dimension.",
+      "Derived from Items 12 and 17: territorial protection strength, renewal terms, transfer rights, termination conditions, and post-term non-compete scope. Measures how much contractual risk the franchisee bears relative to the franchisor. Weak territory protection, one-sided termination rights, or aggressive non-competes increase burden. This score reflects the legal risk profile of the agreement, not the investment economics.",
   },
   {
-    name: "Unit Growth",
-    weight: "15%",
+    name: "Economics Coverage",
+    weight: "FDD Item 19",
     color: "bg-warning",
-    widthClass: "w-[15%]",
+    widthClass: "w-[50%]",
     description:
-      "Analyzes net unit growth rate over three and five years, franchisee turnover (terminations plus non-renewals as a percentage of the total system), closure rates, and the ratio of company-owned to franchisee-owned units. A healthy franchise system should be growing, retaining franchisees, and not relying on company stores to prop up reported unit counts. Declining systems or those with high churn receive a materially lower score here.",
+      "Directly reflects the presence, completeness, and comparability of Item 19 (Financial Performance Representations). A franchisor that discloses revenue for all units in a current year using a clear metric scores higher than one that omits Item 19 entirely, discloses only a cherry-picked subset, or provides only non-comparable gross sales without context. This score is null — not penalized — if Item 19 is absent, because absence is itself disclosed as a data gap rather than treated as a negative score.",
   },
   {
-    name: "Brand Strength",
-    weight: "10%",
-    color: "bg-accent-dark",
-    widthClass: "w-[10%]",
+    name: "Data Confidence",
+    weight: "Source freshness + completeness",
+    color: "bg-muted",
+    widthClass: "w-[40%]",
     description:
-      "Evaluates consumer brand recognition, national advertising effectiveness, digital presence, marketing fund management, and competitive positioning within the category. Strong brand recognition reduces customer acquisition costs for franchisees and provides a measurable advantage in competitive markets. We review marketing fund audits (Item 11) and compare brand investment levels against demonstrated consumer awareness.",
+      "A cross-cutting quality score that reflects how complete and current the underlying FDD data is. Higher confidence when: data is extracted directly from a state-filed FDD (not estimated), the filing year is current, key Item sections are populated, and comparability flags are minimal. Lower confidence when: data is sourced from secondary filings, key sections are missing, or the FDD year is more than two years old. This score does not penalize brands for what their FDD discloses — only for the completeness of data we have on file.",
   },
   {
     name: "Territory Protection",
@@ -103,24 +103,20 @@ export default function MethodologyPage() {
           <h2 className="text-xl font-semibold text-foreground mb-4">Scoring Overview</h2>
           <div className="space-y-3 text-sm text-muted leading-relaxed">
             <p>
-              The Franchisel Score is a composite metric calculated across six weighted
-              dimensions. Each dimension is scored on a 1&ndash;10 scale using quantitative inputs
-              derived from primary regulatory filings. The composite score is a weighted average
-              of the six dimension scores, yielding a single number on a 1&ndash;10 scale that
-              summarizes investment quality.
+              Franchisel uses five independent scores, each on a <strong className="text-foreground">0&ndash;100 scale</strong>, derived entirely from primary FDD data — not editorial judgment or commercial relationships. There is no single &ldquo;Franchisel Score.&rdquo; Instead, every brand page shows the five component scores so buyers can weight what matters most to their decision.
             </p>
             <p>
-              Scores are not static. Every franchise profile shows the FDD year the score is based
-              on, and scores are updated annually as new FDDs are filed. If a franchise materially
-              changes its fee structure, support model, or litigation posture between annual
-              updates, we flag the change and expedite a score review.
+              The <strong className="text-foreground">Core Diligence</strong> figure shown on brand cards and rankings is the average of System Health, Franchisor Strength, and Contract Burden — the three scores that do not depend on optional disclosures like Item 19. Economics Coverage is shown separately and may be null for brands that did not file an Item 19. Data Confidence is always present and reflects how complete and fresh the underlying source data is.
+            </p>
+            <p>
+              Scores are tied to a specific FDD filing year, which is cited on every brand page. When a newer filing is processed, scores update and the prior year is archived.
             </p>
           </div>
         </section>
 
-        {/* Six dimensions */}
+        {/* Five scores */}
         <section>
-          <h2 className="text-xl font-semibold text-foreground mb-2">The Six Scoring Dimensions</h2>
+          <h2 className="text-xl font-semibold text-foreground mb-2">The Five Production Scores</h2>
           <p className="text-sm text-muted mb-6 leading-relaxed">
             Weights reflect each dimension&rsquo;s relative importance to buyer outcomes based on
             our analysis of franchise failure and success research.
@@ -128,7 +124,7 @@ export default function MethodologyPage() {
 
           {/* Weight summary bar */}
           <div className="mb-8 border border-border rounded-xl p-5 bg-surface-alt">
-            <p className="text-xs font-semibold text-foreground mb-3 uppercase tracking-wider">Score Weight Distribution</p>
+            <p className="text-xs font-semibold text-foreground mb-3 uppercase tracking-wider">FDD Source — Each Score</p>
             <div className="space-y-2">
               {scoreDimensions.map((dim) => (
                 <div key={dim.name} className="flex items-center gap-3">
