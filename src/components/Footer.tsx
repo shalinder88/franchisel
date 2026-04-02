@@ -43,9 +43,9 @@ const footerSections = [
     title: "Reports",
     links: [
       { href: "/reports", label: "Get a Report" },
-      { href: "/reports", label: "Standard ($99)" },
-      { href: "/reports", label: "Premium ($199)" },
-      { href: "/reports", label: "Executive ($249)" },
+      { href: "/reports", label: "Standard ($29)" },
+      { href: "/reports", label: "Premium ($79)" },
+      { href: "/reports", label: "Executive ($199)" },
       { href: "/community", label: "Community Reviews" },
     ],
   },

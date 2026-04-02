@@ -224,7 +224,7 @@ export default function HomePage() {
                 Top 6 franchises by overall score
               </h2>
               <p className="mt-2 text-sm text-muted">
-                Ranked by our composite score across investment value, brand strength, support, growth, and transparency.
+                Ranked by Core Diligence — the average of System Health, Franchisor Strength, and Contract Burden scores (0–100), derived from FDD filings.
               </p>
             </div>
             <Link
@@ -754,7 +754,7 @@ export default function HomePage() {
             {[
               {
                 name: "Standard Report",
-                price: 99,
+                price: 29,
                 popular: false,
                 features: [
                   "Plain-English FDD summary",
@@ -767,26 +767,26 @@ export default function HomePage() {
               },
               {
                 name: "Premium Report",
-                price: 199,
+                price: 79,
                 popular: true,
                 features: [
                   "Everything in Standard",
                   "Item 19 financial analysis",
-                  "Community performance data",
                   "Category benchmarks & comparison",
                   "Year-over-year FDD changes",
-                  "Franchisee satisfaction data",
+                  "Contract red-flag summary",
+                  "Franchisee interview prep questions",
                 ],
               },
               {
                 name: "Executive Report",
-                price: 249,
+                price: 199,
                 popular: false,
                 features: [
                   "Everything in Premium",
-                  "Personalized risk assessment",
+                  "Lender-ready diligence pack",
+                  "Attorney-ready memo format",
                   "Investment scenario modeling",
-                  "Exit strategy analysis",
                   "Comparable brand recommendations",
                   "30-minute expert consultation",
                 ],
@@ -870,9 +870,9 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 gap-6">
             {[
               {
-                title: "FDD-Sourced Data",
+                title: "Sourced from Public Filings",
                 description:
-                  "Every data point traces back to an actual Franchise Disclosure Document filed with state regulators. No estimates, no projections.",
+                  "FDD-verified data is extracted directly from state-filed Franchise Disclosure Documents and labeled with the source year. Data not yet extracted from a primary FDD is labeled estimated or secondary — never mixed in silently.",
               },
               {
                 title: "No Franchisor Influence",

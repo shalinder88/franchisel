@@ -5,66 +5,63 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Franchise Due Diligence Reports | Franchisel",
   description:
-    "Independent franchise due diligence reports from $79. Full FDD analysis, Item 19 deep dive, red flag registry, investment model with break-even calculator, and franchisee satisfaction data.",
+    "Independent franchise due diligence reports from $29. Full FDD analysis, Item 19 deep dive, red flag registry, investment model with break-even calculator, and franchisee satisfaction data.",
 };
 
 /* ── Pricing tiers ── */
 const pricingTiers = [
   {
-    id: "individual",
-    name: "Individual Report",
+    id: "standard",
+    name: "Standard Report",
+    price: 29,
+    perReport: null,
+    quantity: "1 brand",
+    popular: false,
+    mailSubject: "Standard Report Request — $29",
+    cta: "Order Standard Report",
+    features: [
+      "Plain-English FDD summary",
+      "Fee structure breakdown (Items 5–6)",
+      "Red flags identified with explanations",
+      "Litigation & bankruptcy summary",
+      "Unit growth & churn analysis",
+      "Territory protection assessment",
+    ],
+  },
+  {
+    id: "premium",
+    name: "Premium Report",
     price: 79,
     perReport: null,
-    quantity: "1 report",
-    popular: false,
-    mailSubject: "Individual Report Request — $79",
-    cta: "Order Report",
-    features: [
-      "Full FDD analysis — all 23 items",
-      "Item 19 deep dive & financial model",
-      "Break-even calculator with assumptions",
-      "Red flag registry with explanations",
-      "Territory analysis",
-      "Recommended questions for validation calls",
-      "PDF delivery within 2 business days",
-    ],
-  },
-  {
-    id: "pro-bundle",
-    name: "Pro Bundle",
-    price: 349,
-    perReport: 70,
-    quantity: "5 reports",
+    quantity: "1 brand",
     popular: true,
-    mailSubject: "Pro Bundle Request — 5 Reports ($349)",
-    cta: "Order Pro Bundle",
+    mailSubject: "Premium Report Request — $79",
+    cta: "Order Premium Report",
     features: [
-      "Everything in Individual Report",
-      "5 brands of your choice",
-      "Competitor benchmarking across brands",
-      "Franchisee satisfaction data",
-      "Side-by-side scoring comparison",
-      "Priority delivery within 3 business days",
-      "Save $46 vs. individual pricing",
+      "Everything in Standard",
+      "Item 19 deep dive & financial analysis",
+      "Category benchmarks & comparison",
+      "Year-over-year FDD changes",
+      "Contract red-flag summary",
+      "Franchisee interview prep questions",
     ],
   },
   {
-    id: "due-diligence-pack",
-    name: "Due Diligence Pack",
-    price: 599,
-    perReport: 60,
-    quantity: "10 reports",
+    id: "executive",
+    name: "Executive Report",
+    price: 199,
+    perReport: null,
+    quantity: "1 brand",
     popular: false,
-    mailSubject: "Due Diligence Pack Request — 10 Reports ($599)",
-    cta: "Order Full Pack",
+    mailSubject: "Executive Report Request — $199",
+    cta: "Order Executive Report",
     features: [
-      "Everything in Pro Bundle",
-      "10 brands of your choice",
-      "Full category benchmarking",
-      "Custom franchise comparison matrix",
-      "30-minute analyst consultation call",
-      "Ongoing update alerts for 6 months",
-      "Save $191 vs. individual pricing",
+      "Everything in Premium",
+      "Lender-ready diligence pack",
+      "Attorney-ready memo format",
+      "Investment scenario modeling",
+      "Comparable brand recommendations",
+      "30-minute expert consultation",
     ],
   },
 ];
@@ -433,12 +430,14 @@ export default function ReportsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-2xl font-bold text-foreground mb-2">Reports Available For</h2>
           <p className="text-sm text-muted mb-8">
-            Reports are available for all {brands.filter((b) => b.reportAvailable).length} brands in our directory — and any brand with a publicly filed FDD.
+            Reports are available for all <strong className="text-foreground">{brands.filter((b) => b.totalUnits > 0).length}</strong> brands in our directory with FDD data on file. A selection of commonly requested brands:
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {brands
-              .filter((b) => b.reportAvailable)
+              .filter((b) => b.totalUnits > 0 && b.totalInvestmentLow > 0)
+              .sort((a, b) => b.totalUnits - a.totalUnits)
+              .slice(0, 12)
               .map((brand) => (
                 <Link
                   key={brand.slug}
@@ -486,15 +485,15 @@ export default function ReportsPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <h2 className="text-2xl font-bold text-foreground">Know What You&apos;re Buying Before You Buy It</h2>
           <p className="mt-3 text-muted leading-relaxed">
-            A $79 report is the cheapest insurance policy available for a $79K–$2M investment.
+            A $29 Standard report is the cheapest insurance policy available for a $79K–$2M investment.
             Our only incentive is your success &mdash; not a commission.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href={`mailto:reports@franchisel.com?subject=${encodeURIComponent("Individual Report Request — $79")}&body=${encodeURIComponent("Hi,\n\nI'd like to order an Individual Report ($79).\n\nBrand I'm interested in:\n\nPlease confirm availability and next steps.\n\nThank you")}`}
+              href={`mailto:reports@franchisel.com?subject=${encodeURIComponent("Standard Report Request — $29")}&body=${encodeURIComponent("Hi,\n\nI'd like to order a Standard Report ($29).\n\nBrand I'm interested in:\n\nPlease confirm availability and next steps.\n\nThank you")}`}
               className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white text-sm font-semibold rounded-xl hover:brightness-110 transition-all"
             >
-              Order Your First Report — $79
+              Order Your First Report — $29
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
