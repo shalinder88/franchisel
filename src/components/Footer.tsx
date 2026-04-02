@@ -85,7 +85,7 @@ export default function Footer() {
                   <path d="M2 12l10 5 10-5" />
                 </svg>
               </div>
-              <span className="text-sm font-bold">Franchise<span className="text-accent">Intel</span></span>
+              <span className="text-sm font-bold">Franchi<span className="text-accent">sel</span></span>
             </Link>
             <p className="text-xs text-muted leading-relaxed mb-4">
               Independent franchise due diligence intelligence. Buyer-aligned, FDD-verified, never franchisor-funded.
@@ -114,7 +114,7 @@ export default function Footer() {
         <div className="border-t border-border pt-6">
           <div className="bg-surface-alt rounded-lg p-4 mb-4">
             <div className="flex items-start gap-3">
-              <div className="w-7 h-7 rounded-full bg-accent-light flex items-center justify-center shrink-0 mt-0.5">
+              <div className="w-7 h-7 rounded-lg bg-accent-light flex items-center justify-center shrink-0 mt-0.5">
                 <svg className="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                 </svg>

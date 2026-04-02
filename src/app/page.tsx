@@ -62,8 +62,8 @@ export default function HomePage() {
             Franchise Due Diligence Intelligence
           </p>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground leading-[1.1] max-w-4xl mx-auto">
-            Independent franchise analysis{" "}
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-foreground leading-[1.05] max-w-4xl mx-auto">
+            Know your franchise{" "}
             <span className="text-accent">before you sign.</span>
           </h1>
 
@@ -74,10 +74,10 @@ export default function HomePage() {
           </p>
 
           {/* CTAs */}
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/brands"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-accent text-white font-semibold text-sm hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-lg bg-accent text-white font-semibold text-sm hover:brightness-110 transition-all"
             >
               Browse Franchise Brands
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -86,54 +86,49 @@ export default function HomePage() {
             </Link>
             <Link
               href="/compare"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full border-2 border-accent text-accent font-semibold text-sm hover:bg-accent-light transition-colors"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-lg bg-accent/10 border border-accent text-accent font-semibold text-sm hover:bg-accent/20 transition-colors"
             >
               Compare Brands
             </Link>
             <Link
-              href="/reports"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full border border-border text-foreground font-semibold text-sm hover:border-accent hover:text-accent transition-colors"
+              href="/guides"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-lg border border-border text-foreground font-semibold text-sm hover:border-accent hover:text-accent transition-colors"
             >
-              Get a Report
+              Read Guides
             </Link>
           </div>
 
-          <p className="mt-6 text-xs text-muted tracking-wide">
+          <p className="mt-5 text-xs text-muted tracking-wide">
             Independent · Buyer-aligned · No franchisor advertising
           </p>
 
-          {/* Stats bar */}
-          <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl mx-auto">
-            <div>
-              <p className="text-3xl font-bold text-foreground">{brandCount}</p>
-              <p className="text-sm text-muted mt-1">Brands Analyzed</p>
+          {/* Stats bar — horizontal inline with dividers */}
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-0 border border-border rounded-xl bg-surface-alt divide-x divide-border overflow-hidden max-w-2xl mx-auto">
+            <div className="flex-1 min-w-[120px] px-5 py-4 text-center">
+              <p className="text-xl font-bold text-foreground">{brandCount}</p>
+              <p className="text-xs text-muted mt-0.5">Brands Analyzed</p>
             </div>
-            <div>
-              <p className="text-3xl font-bold text-success">
+            <div className="flex-1 min-w-[120px] px-5 py-4 text-center">
+              <p className="text-xl font-bold text-accent">
                 {brands.filter(b => b.dataSource !== "industry_estimate").length}
               </p>
-              <p className="text-sm text-muted mt-1">Officially Sourced</p>
+              <p className="text-xs text-muted mt-0.5">FDD-Sourced</p>
             </div>
-            <div>
-              <p className="text-3xl font-bold text-foreground">
-                {categories.length}
-              </p>
-              <p className="text-sm text-muted mt-1">Categories</p>
+            <div className="flex-1 min-w-[120px] px-5 py-4 text-center">
+              <p className="text-xl font-bold text-success">{categories.length}</p>
+              <p className="text-xs text-muted mt-0.5">Categories</p>
             </div>
-            <div>
-              <div className="flex items-center justify-center gap-2">
-                <span className="relative flex h-2.5 w-2.5">
+            <div className="flex-1 min-w-[120px] px-5 py-4 text-center">
+              <div className="flex items-center justify-center gap-1.5">
+                <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-success" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-success" />
                 </span>
-                <p className="text-3xl font-bold text-foreground">
-                  {new Date(verifiedDate).toLocaleDateString("en-US", {
-                    month: "short",
-                    year: "numeric",
-                  })}
+                <p className="text-xl font-bold text-foreground">
+                  {new Date(verifiedDate).toLocaleDateString("en-US", { month: "short", year: "numeric" })}
                 </p>
               </div>
-              <p className="text-sm text-muted mt-1">Last Updated</p>
+              <p className="text-xs text-muted mt-0.5">Data Verified</p>
             </div>
           </div>
         </div>
@@ -194,7 +189,7 @@ export default function HomePage() {
                 className="relative border border-border rounded-xl p-8 bg-surface-alt hover-glow"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-accent-light text-accent">
+                  <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-accent-light text-accent">
                     {item.icon}
                   </span>
                   <span className="text-xs font-bold text-muted tracking-widest uppercase">
@@ -600,7 +595,7 @@ export default function HomePage() {
                 key={flag.title}
                 className="border border-border rounded-xl p-6 bg-background"
               >
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-danger-light text-danger mb-4">
+                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-danger-light text-danger mb-4">
                   {flag.icon}
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">
@@ -620,7 +615,7 @@ export default function HomePage() {
           ═══════════════════════════════════════════════════ */}
       <section className="border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-20 text-center">
-          <div className="flex items-center justify-center w-14 h-14 rounded-full bg-accent-light text-accent mx-auto mb-6">
+          <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-accent-light text-accent mx-auto mb-6">
             <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
             </svg>
@@ -635,7 +630,7 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/community"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-accent text-white font-semibold text-sm hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-lg bg-accent text-white font-semibold text-sm hover:brightness-110 transition-all"
             >
               Share Your Experience
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -644,7 +639,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/community"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full border border-border text-foreground font-semibold text-sm hover:border-accent hover:text-accent transition-colors"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-lg border border-border text-foreground font-semibold text-sm hover:border-accent hover:text-accent transition-colors"
             >
               How verification works
             </Link>
@@ -842,9 +837,9 @@ export default function HomePage() {
                 </ul>
                 <Link
                   href="/reports"
-                  className={`block w-full text-center py-3 rounded-full font-semibold text-sm transition-opacity ${
+                  className={`block w-full text-center py-3 rounded-lg font-semibold text-sm transition-all ${
                     tier.popular
-                      ? "bg-accent text-white hover:opacity-90"
+                      ? "bg-accent text-white hover:brightness-110"
                       : "border border-border text-foreground hover:border-accent hover:text-accent"
                   }`}
                 >
