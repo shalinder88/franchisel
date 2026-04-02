@@ -70,7 +70,7 @@ export default function EditorialPolicyPage() {
             </p>
             <ul className="space-y-2.5">
               {[
-                "Franchise scores, dimension ratings, and composite Franchisel Scores",
+                "Franchise scores, dimension ratings, and Core Diligence scores",
                 "Red flag identification, categorization, or severity levels",
                 "Report content, analysis sections, or written recommendations",
                 "Guide content, educational articles, or category comparisons",
@@ -95,24 +95,13 @@ export default function EditorialPolicyPage() {
           <div className="space-y-3 text-sm text-muted leading-relaxed">
             <p>
               Franchisel earns revenue from buyer-side products: paid due diligence reports,
-              premium analysis features, and educational content. We also earn referral fees in
-              certain cases — specifically when a user purchases a full report or contacts a
-              franchisor through our platform.
-            </p>
-            <p>
-              These referral relationships are disclosed in our{" "}
-              <Link href="/disclosure" className="text-accent hover:underline">
-                Advertiser Disclosure
-              </Link>
-              . They are never hidden. Critically, referral fee eligibility does not influence
-              how any franchise is scored, ranked, or analyzed. A franchise that generates
-              referral revenue receives the same analytical treatment as one that does not. Our
-              analysts are not informed of, nor compensated based on, referral relationships
-              for any brand they analyze.
+              premium analysis features, and educational content. We do not earn referral fees,
+              commissions, or any other compensation from franchisors for any reason.
             </p>
             <p>
               We believe the entity paying for the analysis should be the entity the analysis
-              serves. Because buyers pay us for reports and research tools, we serve buyers.
+              serves. Because buyers pay us for reports and research tools, we serve buyers —
+              not franchisors.
             </p>
           </div>
         </section>

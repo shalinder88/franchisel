@@ -694,6 +694,7 @@ export function formatCurrency(amount: number): string {
 
 /* Format investment range */
 export function formatInvestmentRange(low: number, high: number): string {
+  if (low === 0 && high === 0) return "Not disclosed";
   return `${formatCurrency(low)} – ${formatCurrency(high)}`;
 }
 

@@ -378,7 +378,7 @@ export default async function BrandPage({
                   <p className="text-xl font-bold text-foreground">
                     {formatInvestmentRange(brand.totalInvestmentLow, brand.totalInvestmentHigh)}
                   </p>
-                  <p className="text-sm text-muted mt-1">Initial fee: {formatCurrency(brand.initialFranchiseFee)}</p>
+                  {brand.initialFranchiseFee > 0 && <p className="text-sm text-muted mt-1">Initial fee: {formatCurrency(brand.initialFranchiseFee)}</p>}
                 </>
               ) : (
                 <>
@@ -434,13 +434,15 @@ export default async function BrandPage({
               <p className="text-sm text-muted uppercase tracking-wider mb-1">Total Units</p>
               {effectiveGovVerified ? (
                 <>
-                  <p className="text-xl font-bold text-foreground">
-                    {brand.totalUnits.toLocaleString()}
+                  <p className={`text-xl font-bold ${brand.totalUnits === 0 ? "text-muted italic" : "text-foreground"}`}>
+                    {brand.totalUnits === 0 ? "Not disclosed" : brand.totalUnits.toLocaleString()}
                   </p>
+                  {brand.totalUnits > 0 && (
                   <p className="text-sm text-muted mt-1">
                     {brand.franchisedUnits.toLocaleString()} franchised &middot;{" "}
                     {brand.companyOwnedUnits.toLocaleString()} company
                   </p>
+                  )}
                 </>
               ) : (
                 <>
@@ -800,7 +802,7 @@ export default async function BrandPage({
                 <tr className="table-row-hover border-b border-border">
                   <td className="px-5 py-3 text-muted font-medium">Initial Franchise Fee</td>
                   <td className="px-5 py-3 text-foreground font-semibold text-right">
-                    {formatCurrency(brand.initialFranchiseFee)}
+                    {brand.initialFranchiseFee > 0 ? formatCurrency(brand.initialFranchiseFee) : "Not disclosed"}
                   </td>
                 </tr>
                 <tr className="table-row-hover border-b border-border">
@@ -1001,7 +1003,102 @@ export default async function BrandPage({
         </section>
         )}
 
-        {/* ── 5d. Territory & Encroachment Risk (Item 12) ── */}
+        {/* ── 5d. Franchisor Financing Terms (Item 10) ── */}
+        {effectiveGovVerified && brand.item10 && (brand.item10.offersFinancing || brand.item10.thirdPartyOnly || brand.item10.crossDefault || brand.item10.personalGuarantee) && (
+        <section>
+          <h2 className="text-xl font-semibold text-foreground mb-1">
+            Franchisor Financing — Item 10
+          </h2>
+          <p className="text-xs text-muted mb-4">Financing offered or facilitated by the franchisor — including direct loans, third-party referrals, and key risk clauses.</p>
+          <div className="rounded-xl border border-border bg-background p-5 space-y-4">
+
+            {/* Financing type banner */}
+            {brand.item10.offersFinancing ? (
+              <div className="rounded-lg border border-accent/20 bg-accent/5 p-3 flex items-center gap-3">
+                <svg className="w-5 h-5 text-accent shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33" />
+                </svg>
+                <div>
+                  <p className="text-sm font-semibold text-foreground">Direct Financing Available</p>
+                  <p className="text-xs text-muted">Franchisor offers loans directly — review all terms and risk clauses carefully before accepting.</p>
+                </div>
+              </div>
+            ) : brand.item10.thirdPartyOnly ? (
+              <div className="rounded-lg border border-border bg-surface p-3 flex items-center gap-3">
+                <svg className="w-5 h-5 text-muted shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+                <div>
+                  <p className="text-sm font-semibold text-foreground">Third-Party Referrals Only</p>
+                  <p className="text-xs text-muted">Franchisor refers to SBA lenders or banks — no direct financing offered.</p>
+                </div>
+              </div>
+            ) : null}
+
+            {/* Loan terms */}
+            {brand.item10.offersFinancing && (brand.item10.interestRate || brand.item10.loanAmount || brand.item10.termMonths) && (
+              <div className="grid grid-cols-3 gap-3">
+                {brand.item10.interestRate != null && (
+                  <div className="rounded-lg border border-border bg-surface p-3 text-center">
+                    <p className="text-xs text-muted uppercase tracking-wider mb-1">Interest Rate</p>
+                    <p className="text-xl font-bold text-foreground">{brand.item10.interestRate}%</p>
+                    <p className="text-xs text-muted">APR</p>
+                  </div>
+                )}
+                {brand.item10.loanAmount != null && (
+                  <div className="rounded-lg border border-border bg-surface p-3 text-center">
+                    <p className="text-xs text-muted uppercase tracking-wider mb-1">Max Loan</p>
+                    <p className="text-xl font-bold text-foreground">${brand.item10.loanAmount.toLocaleString()}</p>
+                  </div>
+                )}
+                {brand.item10.termMonths != null && (
+                  <div className="rounded-lg border border-border bg-surface p-3 text-center">
+                    <p className="text-xs text-muted uppercase tracking-wider mb-1">Term</p>
+                    <p className="text-xl font-bold text-foreground">{brand.item10.termMonths}</p>
+                    <p className="text-xs text-muted">months</p>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Risk flags */}
+            {brand.item10.offersFinancing && (brand.item10.crossDefault || brand.item10.personalGuarantee || brand.item10.collateral) && (
+              <div className="space-y-2">
+                <p className="text-xs text-muted uppercase tracking-wider">Risk Clauses</p>
+                <div className="flex flex-wrap gap-2">
+                  {brand.item10.crossDefault && (
+                    <div className="rounded-lg border border-danger/30 bg-danger/5 px-3 py-2">
+                      <p className="text-xs font-semibold text-danger">Cross-Default Clause</p>
+                      <p className="text-xs text-muted mt-0.5">Defaulting on your franchise agreement automatically triggers a default on this loan.</p>
+                    </div>
+                  )}
+                  {brand.item10.personalGuarantee && (
+                    <div className="rounded-lg border border-warning/30 bg-warning/5 px-3 py-2">
+                      <p className="text-xs font-semibold text-warning">Personal Guarantee Required</p>
+                      <p className="text-xs text-muted mt-0.5">You are personally liable for repayment — not just the business entity.</p>
+                    </div>
+                  )}
+                  {brand.item10.collateral && (
+                    <div className="rounded-lg border border-warning/30 bg-warning/5 px-3 py-2">
+                      <p className="text-xs font-semibold text-warning">Collateral Required</p>
+                      <p className="text-xs text-muted mt-0.5">Assets must be pledged to secure this loan.</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+
+            <p className="text-xs text-muted pt-2 border-t border-border">
+              Source: FDD Item 10 (government-filed disclosure document).
+              {brand.item10.extractionConfidence && (
+                <span className="ml-1 italic">Extraction confidence: {brand.item10.extractionConfidence}.</span>
+              )}
+            </p>
+          </div>
+        </section>
+        )}
+
+        {/* ── 5e. Territory & Encroachment Risk (Item 12) ── */}
         {brand.item12 && territoryRisk.level !== "unknown" && (
         <section className={`rounded-xl border p-6 ${
           territoryRisk.level === "low"      ? "border-success/25 bg-success/5" :
@@ -2132,11 +2229,11 @@ export default async function BrandPage({
                 </tr>
                 <tr className="table-row-hover border-b border-border">
                   <td className="px-5 py-3 text-muted font-medium">Year Founded</td>
-                  <td className="px-5 py-3 text-foreground text-right">{brand.yearFounded}</td>
+                  <td className="px-5 py-3 text-foreground text-right">{brand.yearFounded > 0 ? brand.yearFounded : "—"}</td>
                 </tr>
                 <tr className="table-row-hover border-b border-border">
                   <td className="px-5 py-3 text-muted font-medium">Franchising Since</td>
-                  <td className="px-5 py-3 text-foreground text-right">{brand.yearFranchisingBegan}</td>
+                  <td className="px-5 py-3 text-foreground text-right">{brand.yearFranchisingBegan > 0 ? brand.yearFranchisingBegan : "—"}</td>
                 </tr>
                 <tr className="table-row-hover border-b border-border">
                   <td className="px-5 py-3 text-muted font-medium">Headquarters</td>
@@ -2254,7 +2351,7 @@ export default async function BrandPage({
             </div>
             <div className="flex justify-between text-xs">
               <span className="text-muted">Total Units</span>
-              <span className="font-medium text-foreground">{brand.totalUnits.toLocaleString()}</span>
+              <span className="font-medium text-foreground">{brand.totalUnits > 0 ? brand.totalUnits.toLocaleString() : "—"}</span>
             </div>
             <div className="flex justify-between text-xs">
               <span className="text-muted">FDD Year</span>

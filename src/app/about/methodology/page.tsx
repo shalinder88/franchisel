@@ -48,14 +48,6 @@ const scoreDimensions = [
     description:
       "A cross-cutting quality score that reflects how complete and current the underlying FDD data is. Higher confidence when: data is extracted directly from a state-filed FDD (not estimated), the filing year is current, key Item sections are populated, and comparability flags are minimal. Lower confidence when: data is sourced from secondary filings, key sections are missing, or the FDD year is more than two years old. This score does not penalize brands for what their FDD discloses — only for the completeness of data we have on file.",
   },
-  {
-    name: "Territory Protection",
-    weight: "10%",
-    color: "bg-danger",
-    widthClass: "w-[10%]",
-    description:
-      "Reviews the strength and clarity of territory protection language across Items 12 and 13 of the FDD. We evaluate exclusive territory size, encroachment provisions, digital sales carve-outs, and renewal territory rights. We also review Item 3 (litigation history) for encroachment-related disputes, which are a leading indicator of inadequate or loosely drafted territory protection language.",
-  },
 ];
 
 const dataSources = [
