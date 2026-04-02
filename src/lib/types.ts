@@ -83,6 +83,9 @@ export interface FranchiseBrand {
   /* Item 8 — Required Purchases & Supplier Restrictions */
   item8?: Item8Data;
 
+  /* Item 10 — Financing */
+  item10?: Item10Data;
+
   /* Item 12 — Territory */
   item12?: Item12Data;
 
@@ -299,6 +302,26 @@ export interface Item8Data {
   supplierRevenueNote?: string;
   /** Supplier lock-in score: 0 = fully open, 10 = fully locked to franchisor */
   lockInScore?: number;
+  extractionConfidence?: "high" | "medium" | "low";
+}
+
+export interface Item10Data {
+  /** Whether franchisor directly offers financing (vs no financing or referral only) */
+  offersFinancing?: boolean;
+  /** True when franchisor only refers to third-party lenders (SBA, banks, etc.) */
+  thirdPartyOnly?: boolean;
+  /** Maximum loan amount in dollars */
+  loanAmount?: number;
+  /** Annual interest rate (%) — from FDD Item 10 */
+  interestRate?: number;
+  /** Loan repayment term in months */
+  termMonths?: number;
+  /** Whether collateral is required for franchisor financing */
+  collateral?: boolean;
+  /** Whether cross-default clause exists (default on franchise = default on loan) */
+  crossDefault?: boolean;
+  /** Whether personal guarantee is required */
+  personalGuarantee?: boolean;
   extractionConfidence?: "high" | "medium" | "low";
 }
 
