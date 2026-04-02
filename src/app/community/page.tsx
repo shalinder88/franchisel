@@ -146,7 +146,13 @@ export default function CommunityPage() {
 
               <div className="p-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {profile.sentiment.map((entry, i) => (
-                  <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-surface">
+                  <a
+                    key={i}
+                    href={entry.source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-3 p-3 rounded-lg bg-surface hover:bg-surface-alt transition-colors group"
+                  >
                     {entry.rating !== null && (
                       <div className="shrink-0 text-center min-w-[40px]">
                         <p className="text-xl font-bold text-foreground leading-none">{entry.rating}</p>
@@ -154,18 +160,24 @@ export default function CommunityPage() {
                       </div>
                     )}
                     <div className="flex-1 min-w-0 space-y-1.5">
-                      <p className="text-xs text-foreground leading-snug">{entry.excerpt}</p>
+                      <p className="text-xs text-foreground leading-snug group-hover:text-accent transition-colors">{entry.excerpt}</p>
                       {entry.sampleSize && (
                         <p className="text-[10px] text-muted">{entry.sampleSize.toLocaleString()} responses</p>
                       )}
                       <CommunitySourceBadge source={entry.source} />
                     </div>
-                  </div>
+                  </a>
                 ))}
                 {profile.news.map((entry, i) => (
-                  <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-surface">
+                  <a
+                    key={i}
+                    href={entry.source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-3 p-3 rounded-lg bg-surface hover:bg-surface-alt transition-colors group"
+                  >
                     <div className="flex-1 min-w-0 space-y-1.5">
-                      <p className="text-xs font-medium text-foreground">{entry.headline}</p>
+                      <p className="text-xs font-medium text-foreground group-hover:text-accent transition-colors">{entry.headline}</p>
                       <p className="text-[11px] text-muted">{entry.summary}</p>
                       <div className="flex items-center gap-2">
                         <CommunitySourceBadge source={entry.source} />
@@ -175,7 +187,7 @@ export default function CommunityPage() {
                         }`}>{entry.sentiment}</span>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>

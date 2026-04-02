@@ -378,7 +378,9 @@ export default function HomePage() {
                   <p className="text-sm text-muted mb-4">{b.tagline}</p>
                   <div className="flex items-center gap-4 text-xs text-muted">
                     <span className="font-medium text-foreground">
-                      {formatInvestmentRange(b.totalInvestmentLow, b.totalInvestmentHigh)}
+                      {b.totalInvestmentLow > 0
+                        ? formatInvestmentRange(b.totalInvestmentLow, b.totalInvestmentHigh)
+                        : "Investment not disclosed"}
                     </span>
                   </div>
                   <div className="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs text-muted">
@@ -389,7 +391,7 @@ export default function HomePage() {
                       </span>
                       Updated {updatedLabel}
                     </span>
-                    <span>{b.totalUnits.toLocaleString()} units</span>
+                    <span>{b.totalUnits > 0 ? `${b.totalUnits.toLocaleString()} units` : "Units not disclosed"}</span>
                   </div>
                 </Link>
               );
@@ -584,7 +586,7 @@ export default function HomePage() {
                 ),
                 title: "Missing Item 19",
                 description:
-                  "When a franchisor chooses not to disclose financial performance data, it often means the numbers don't look good. We flag the absence.",
+                  "Item 19 is voluntary. When a franchisor does not file one, we flag it as a data gap — not a verdict on the business. Absence removes a data point buyers rely on; it does not confirm poor performance.",
               },
               {
                 icon: (

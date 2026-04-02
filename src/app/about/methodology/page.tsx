@@ -218,19 +218,73 @@ export default function MethodologyPage() {
           <h2 className="text-xl font-semibold text-foreground mb-4">Red Flag Detection</h2>
           <div className="space-y-3 text-sm text-muted leading-relaxed">
             <p>
-              In addition to the composite score, we systematically scan each FDD for patterns
+              In addition to the five scores, we systematically scan each FDD for patterns
               associated with higher investment risk. Red flags are categorized by severity
-              (Critical, Warning, or Informational) and displayed separately from the composite
-              score so that a single severe issue is never obscured by a strong overall average.
+              (Critical, Warning, or Positive) and displayed separately from scores — so a single
+              severe issue is never obscured by a strong overall average.
             </p>
             <p>
-              Our detection logic checks for: omission of Item 19, franchisee turnover above
+              Our detection logic checks for: absence of Item 19 disclosure (flagged as a
+              data-coverage gap — not a judgment on the business), franchisee turnover above
               category average, active class action litigation, regulatory enforcement actions,
               declining net unit count over three years, royalty rates materially above category
               norms, territory encroachment provisions, unreasonable non-compete durations, and
               unusual restrictions on transfer and renewal rights.
             </p>
+            <p>
+              Item 19 absence is handled as follows: the Economics Coverage score is set to null
+              (not scored), and a Coverage Gap flag is shown so buyers can factor the missing
+              data into their own assessment. Absence does not mean the numbers are bad — it
+              means a data point buyers typically rely on is not available for this brand.
+            </p>
           </div>
+        </section>
+
+        {/* How to Read Our Analysis */}
+        <section>
+          <h2 className="text-xl font-semibold text-foreground mb-4">How to Read Our Analysis</h2>
+          <div className="space-y-3 text-sm text-muted leading-relaxed">
+            <p>
+              Everything on Franchisel sits in one of three clearly separated buckets. Understanding
+              which bucket you are reading is the most important thing for using this platform correctly.
+            </p>
+          </div>
+          <div className="mt-5 space-y-3">
+            {[
+              {
+                label: "FDD-Reported Facts",
+                color: "border-success/30 bg-success/5",
+                badge: "bg-success/10 text-success",
+                body: "Data extracted directly from a government-filed FDD: fee amounts, unit counts, Item 19 revenue figures, litigation disclosures, territory terms. Every fact is cited to the specific FDD item it comes from and the filing year. These are the strongest elements — they come from documents franchisors are legally required to file.",
+              },
+              {
+                label: "Our Analysis of Those Facts",
+                color: "border-accent/30 bg-accent/5",
+                badge: "bg-accent/10 text-accent",
+                body: "The five scores, red flags, comparability labels, benchmark percentiles, and filing-change summaries are our interpretation of the disclosed facts. We explain why a data point matters, how it compares to peers, and what questions it should raise — without speculating about outcomes the FDD does not support. Our methodology is public and every analytical conclusion is cited to the FDD item that prompted it.",
+              },
+              {
+                label: "User Assumption Tools",
+                color: "border-warning/30 bg-warning/5",
+                badge: "bg-warning/10 text-warning",
+                body: "The scenario calculator is a separate tool that lets you model economics using your own revenue and cost assumptions. It does not use our scores or FDD facts as inputs, and its outputs are your scenarios — not our estimates. It is clearly labeled as assumption-based and is never used in rankings or report content.",
+              },
+            ].map((bucket) => (
+              <div key={bucket.label} className={`rounded-xl border p-5 ${bucket.color}`}>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${bucket.badge}`}>
+                    {bucket.label}
+                  </span>
+                </div>
+                <p className="text-sm text-muted leading-relaxed">{bucket.body}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-xs text-muted leading-relaxed">
+            Community-sourced sentiment data (public surveys, Glassdoor, FBR ratings) is displayed
+            separately from FDD data on brand pages and is never blended into scores. It is labeled
+            with its source and date so you always know what you are reading.
+          </p>
         </section>
 
         {/* Limitations */}

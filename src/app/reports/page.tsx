@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Franchise Due Diligence Reports | Franchisel",
   description:
-    "Independent franchise due diligence reports from $29. Full FDD analysis, Item 19 deep dive, red flag registry, investment model with break-even calculator, and franchisee satisfaction data.",
+    "Independent franchise due diligence reports from $29. Full FDD analysis, Item 19 deep dive, red flag registry, category benchmarks, and interview prep — all sourced from government-filed FDDs.",
 };
 
 /* ── Pricing tiers ── */
@@ -17,8 +17,11 @@ const pricingTiers = [
     perReport: null,
     quantity: "1 brand",
     popular: false,
-    mailSubject: "Standard Report Request — $29",
-    cta: "Order Standard Report",
+    // Replace with your Stripe Payment Link URL
+    stripeUrl: "https://buy.stripe.com/franchisel-standard-29",
+    mailSubject: null,
+    cta: "Buy Now — $29",
+    delivery: "Instant checkout · PDF delivered within 24h",
     features: [
       "Plain-English FDD summary",
       "Fee structure breakdown (Items 5–6)",
@@ -35,14 +38,17 @@ const pricingTiers = [
     perReport: null,
     quantity: "1 brand",
     popular: true,
+    // Replace with your Stripe Payment Link URL
+    stripeUrl: "https://buy.stripe.com/franchisel-premium-79",
     mailSubject: "Premium Report Request — $79",
-    cta: "Order Premium Report",
+    cta: "Buy Now — $79",
+    delivery: "Instant checkout · PDF + analyst summary email within 24h",
     features: [
       "Everything in Standard",
-      "Item 19 deep dive & financial analysis",
-      "Category benchmarks & comparison",
-      "Year-over-year FDD changes",
-      "Contract red-flag summary",
+      "Item 19 deep dive & comparability analysis",
+      "Category benchmarks vs. peer cohort",
+      "Year-over-year FDD filing changes",
+      "Contract red-flag summary (Item 17)",
       "Franchisee interview prep questions",
     ],
   },
@@ -53,8 +59,10 @@ const pricingTiers = [
     perReport: null,
     quantity: "1 brand",
     popular: false,
+    stripeUrl: null,
     mailSubject: "Executive Report Request — $199",
-    cta: "Order Executive Report",
+    cta: "Request Quote",
+    delivery: "Custom engagement · 5–7 business days",
     features: [
       "Everything in Premium",
       "Lender-ready diligence pack",
@@ -94,8 +102,8 @@ const reportIncludes = [
     icon: "M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z",
   },
   {
-    title: "Franchisee Satisfaction Data",
-    desc: "Aggregated data from real franchisee interviews and community submissions. Covers franchisee satisfaction with support, training, marketing, technology, and overall relationship with the franchisor.",
+    title: "Public-Source Sentiment Context",
+    desc: "Where available: publicly sourced sentiment data from FBR surveys, industry ratings, and Glassdoor — clearly labeled by source and date. Kept separate from FDD data. Not blended into scores.",
     icon: "M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z",
   },
   {
@@ -145,7 +153,7 @@ const sampleReportSections = [
   { label: "Red Flag Registry — 3 flags identified", status: "preview", score: null },
   { label: "Item 19 Deep Dive", status: "locked", score: null },
   { label: "Break-Even Calculator", status: "locked", score: null },
-  { label: "Franchisee Satisfaction Data", status: "locked", score: null },
+  { label: "Public-Source Sentiment Context", status: "locked", score: null },
   { label: "Competitor Benchmarking", status: "locked", score: null },
   { label: "Territory Analysis", status: "locked", score: null },
   { label: "Validation Call Questions", status: "locked", score: null },
@@ -251,26 +259,37 @@ export default function ReportsPage() {
                 ))}
               </ul>
 
-              <a
-                href={`mailto:reports@franchisel.com?subject=${encodeURIComponent(tier.mailSubject)}&body=${encodeURIComponent("Hi,\n\nI'd like to order the " + tier.name + ".\n\nBrand(s) I'm interested in:\n1. \n\nPlease confirm availability and next steps.\n\nThank you")}`}
-                className={`w-full py-3 text-sm font-semibold rounded-xl transition-all block text-center ${
-                  tier.popular
-                    ? "bg-accent text-white hover:brightness-110"
-                    : "bg-surface text-foreground border border-border hover:border-accent hover:text-accent"
-                }`}
-              >
-                {tier.cta}
-              </a>
+              {tier.stripeUrl ? (
+                <a
+                  href={tier.stripeUrl}
+                  className={`w-full py-3 text-sm font-semibold rounded-xl transition-all block text-center ${
+                    tier.popular
+                      ? "bg-accent text-white hover:brightness-110"
+                      : "bg-surface text-foreground border border-border hover:border-accent hover:text-accent"
+                  }`}
+                >
+                  {tier.cta}
+                </a>
+              ) : (
+                <a
+                  href={`mailto:reports@franchisel.com?subject=${encodeURIComponent(tier.mailSubject ?? tier.name)}&body=${encodeURIComponent("Hi,\n\nI'd like to order the " + tier.name + ".\n\nBrand(s) I'm interested in:\n1. \n\nPlease confirm availability and next steps.\n\nThank you")}`}
+                  className="w-full py-3 text-sm font-semibold rounded-xl transition-all block text-center bg-surface text-foreground border border-border hover:border-accent hover:text-accent"
+                >
+                  {tier.cta}
+                </a>
+              )}
+              <p className="text-[10px] text-muted text-center mt-2">{tier.delivery}</p>
             </div>
           ))}
         </div>
 
         <p className="mt-6 text-center text-xs text-muted">
-          All purchases processed via email order.{" "}
+          $29 and $79 reports are instant self-serve checkout via Stripe.{" "}
+          $199 Executive Reports are custom engagements — contact{" "}
           <a href="mailto:reports@franchisel.com" className="text-accent hover:underline">
             reports@franchisel.com
-          </a>{" "}
-          &mdash; typically responded to within 4 business hours.
+          </a>.
+          14-day money-back guarantee on all purchases.
         </p>
       </section>
 
