@@ -538,7 +538,7 @@ export default async function BrandPage({
                     {prodScores.coverageStatus === "economics-not-disclosed"
                       ? "Item 19 not included in FDD (voluntary per FTC)"
                       : prodScores.coverageStatus === "economics-disclosed-not-normalized"
-                      ? "Item 19 disclosed but not yet normalized"
+                      ? "Item 19 exists in FDD — data extraction pending"
                       : "Not in covered-source corpus"}
                   </p>
                 </>

@@ -678,7 +678,7 @@ export function coverageStatusLabel(status: EconomicsCoverageStatus): string {
   switch (status) {
     case "economics-rated": return "Economics Rated";
     case "economics-not-in-corpus": return "Not in Covered-Source Corpus";
-    case "economics-disclosed-not-normalized": return "Disclosed but Not Yet Normalized";
+    case "economics-disclosed-not-normalized": return "Item 19 — Extraction Pending";
     case "economics-not-disclosed": return "Not Disclosed in Reviewed Filing";
   }
 }

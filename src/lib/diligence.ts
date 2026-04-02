@@ -98,13 +98,13 @@ function analyzeItem19(brand: FranchiseBrand): DiligenceMemo["item19Analysis"] {
           ? "This franchisor chose not to include a Financial Performance Representation. " +
             "Item 19 is voluntary per FTC rules. This does not indicate bad economics — " +
             "it means revenue projections cannot be sourced from the disclosure document."
-          : "Item 19 revenue data has not yet been normalized from our covered-source corpus. " +
-            "The franchisor may disclose financial performance in filings we have not yet processed.",
+          : "Item 19 exists in this FDD but the figures have not yet been extracted into our database. " +
+            "Data extraction is pending — check back or contact us to prioritize this brand.",
       sampleQuality: "none",
       impliedRoiYears: null,
       citations: [brand.hasItem19 === false
         ? "Item 19 — not included in filed FDD (voluntary per FTC Franchise Rule)"
-        : "Item 19 — not yet normalized from covered-source corpus"],
+        : "Item 19 — filed, extraction pending"],
     };
   }
 
