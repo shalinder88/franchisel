@@ -489,6 +489,8 @@ export default function HomePage() {
                 month: "short",
                 year: "numeric",
               });
+              const isFddVerified = b.dataSource === "state_filing" || b.dataSource === "fdd_verified";
+              const hasGoodData = isFddVerified && b.totalUnits > 100 && b.totalInvestmentLow > 0;
               return (
                 <Link
                   key={b.slug}
@@ -514,10 +516,14 @@ export default function HomePage() {
                   </div>
                   <div className="mt-4 pt-4 border-t border-border flex items-center justify-between text-xs text-muted">
                     <span className="flex items-center gap-1">
-                      <span className="relative flex h-2 w-2">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-60" />
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-success" />
-                      </span>
+                      {hasGoodData ? (
+                        <span className="relative flex h-2 w-2">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-60" />
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-success" />
+                        </span>
+                      ) : (
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-muted opacity-50" />
+                      )}
                       Updated {updatedLabel}
                     </span>
                     <span>{b.totalUnits > 0 ? `${b.totalUnits.toLocaleString()} units` : "Units not disclosed"}</span>
