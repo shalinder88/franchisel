@@ -254,11 +254,11 @@ export default function HomePage() {
                 <Link
                   key={b.slug}
                   href={`/brands/${b.slug}`}
-                  className="block border border-border rounded-xl p-5 hover-glow bg-background"
+                  className="block border border-border rounded-xl p-5 hover-glow bg-background group"
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div>
-                      <h3 className="text-lg font-semibold text-foreground">
+                      <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors">
                         {b.name}
                       </h3>
                       <p className="text-xs text-muted mt-0.5">
@@ -363,11 +363,11 @@ export default function HomePage() {
                 <Link
                   key={b.slug}
                   href={`/brands/${b.slug}`}
-                  className="block border border-border rounded-xl p-5 hover-glow bg-background"
+                  className="block border border-border rounded-xl p-5 hover-glow bg-background group"
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div>
-                      <h3 className="text-lg font-semibold text-foreground">{b.name}</h3>
+                      <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors">{b.name}</h3>
                       <p className="text-xs text-muted mt-0.5">{categoryLabels[b.category]}</p>
                     </div>
                     <span className={`text-2xl font-bold ${overall >= 70 ? "text-success" : overall >= 40 ? "text-warning" : "text-danger"}`}>
@@ -432,12 +432,12 @@ export default function HomePage() {
               return (
                 <Link
                   key={i}
-                  href="/compare"
-                  className="block border border-border rounded-xl p-6 bg-background hover-glow"
+                  href={`/compare?brandA=${comp.slugA}&brandB=${comp.slugB}`}
+                  className="block border border-border rounded-xl p-6 bg-background hover-glow group"
                 >
                   <div className="flex items-center justify-between mb-5">
                     <div className="text-center flex-1">
-                      <p className="font-semibold text-foreground text-sm">
+                      <p className="font-semibold text-foreground text-sm group-hover:text-accent transition-colors">
                         {brandA.name}
                       </p>
                       <p
@@ -450,7 +450,7 @@ export default function HomePage() {
                       VS
                     </span>
                     <div className="text-center flex-1">
-                      <p className="font-semibold text-foreground text-sm">
+                      <p className="font-semibold text-foreground text-sm group-hover:text-cyan transition-colors">
                         {brandB.name}
                       </p>
                       <p
@@ -461,8 +461,11 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  <p className="text-xs text-muted leading-relaxed">
+                  <p className="text-sm text-muted leading-relaxed">
                     {comp.verdict}
+                  </p>
+                  <p className="mt-3 text-xs text-accent opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                    View full comparison →
                   </p>
                 </Link>
               );
