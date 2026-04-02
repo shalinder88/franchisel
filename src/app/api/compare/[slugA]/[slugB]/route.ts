@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { brands } from "@/data/brands";
 import {
-  getOverallScore,
   formatCurrency,
   formatInvestmentRange,
 } from "@/lib/types";
+import { computeProductionScores } from "@/lib/diligence";
 
 export async function GET(
   _request: NextRequest,
@@ -27,8 +27,8 @@ export async function GET(
     );
   }
 
-  const scoreA = getOverallScore(brandA.scores);
-  const scoreB = getOverallScore(brandB.scores);
+  const scoreA = computeProductionScores(brandA).coreDiligence ?? 0;
+  const scoreB = computeProductionScores(brandB).coreDiligence ?? 0;
 
   const comparison = {
     brandA: {

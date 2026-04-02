@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { LogoIcon } from "./Logo";
 import SearchBar from "./SearchBar";
+import WatchlistNavBadge from "./WatchlistNavBadge";
 
 const nav = [
   { href: "/brands", label: "Franchise Directory" },
@@ -37,15 +38,19 @@ export default function Header() {
 
           {/* Desktop nav */}
           <div className="hidden xl:flex items-center gap-1.5">
-            {nav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="px-3.5 py-1.5 text-[13px] font-medium text-muted hover:text-foreground rounded-md hover:bg-surface transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {nav.map((item) =>
+              item.href === "/watchlist" ? (
+                <WatchlistNavBadge key={item.href} />
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="px-3.5 py-1.5 text-[13px] font-medium text-muted hover:text-foreground rounded-md hover:bg-surface transition-colors"
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
             <Link
               href="/reports"
               className="ml-1 px-3 py-1.5 text-[12px] font-bold bg-accent text-white rounded-md hover:brightness-110 transition-all flex items-center gap-1.5"
@@ -76,16 +81,22 @@ export default function Header() {
         {/* Mobile menu */}
         {open && (
           <div className="xl:hidden pb-3 pt-1 space-y-0.5">
-            {nav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block px-3 py-2 text-sm text-muted hover:text-foreground hover:bg-surface rounded-md transition-colors"
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {nav.map((item) =>
+              item.href === "/watchlist" ? (
+                <div key={item.href} onClick={() => setOpen(false)}>
+                  <WatchlistNavBadge />
+                </div>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="block px-3 py-2 text-sm text-muted hover:text-foreground hover:bg-surface rounded-md transition-colors"
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
           </div>
         )}
       </nav>

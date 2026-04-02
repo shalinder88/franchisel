@@ -1,26 +1,27 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { brands, categories } from "@/data/brands";
+import WatchButton from "@/components/WatchButton";
 import {
-  getOverallScore,
   formatCurrency,
   formatInvestmentRange,
   categoryLabels,
   type FranchiseCategory,
 } from "@/lib/types";
+import { computeProductionScores } from "@/lib/diligence";
 
-/* ── Score color helpers (match /brands page) ── */
+/* ── Score color helpers (0-100 scale) ── */
 function scoreColor(score: number): string {
-  if (score >= 8) return "bg-success";
-  if (score >= 6) return "bg-accent";
-  if (score >= 4) return "bg-warning";
+  if (score >= 70) return "bg-success";
+  if (score >= 55) return "bg-accent";
+  if (score >= 40) return "bg-warning";
   return "bg-danger";
 }
 
 function scoreTextColor(score: number): string {
-  if (score >= 8) return "text-success";
-  if (score >= 6) return "text-accent";
-  if (score >= 4) return "text-warning";
+  if (score >= 70) return "text-success";
+  if (score >= 55) return "text-accent";
+  if (score >= 40) return "text-warning";
   return "text-danger";
 }
 
@@ -169,7 +170,7 @@ export default async function CategoryPage({
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {categoryBrands.map((brand) => {
-              const overall = getOverallScore(brand.scores);
+              const overall = (computeProductionScores(brand).coreDiligence ?? 0);
               const criticalFlags = brand.redFlags.filter(
                 (f) => f.severity === "critical"
               ).length;
@@ -192,8 +193,8 @@ export default async function CategoryPage({
                       </p>
                     </div>
 
-                    {/* Overall score */}
-                    <div className="flex flex-col items-center ml-3">
+                    {/* Overall score + watch */}
+                    <div className="flex flex-col items-center ml-3 gap-1">
                       <span
                         className={`text-2xl font-bold ${scoreTextColor(overall)}`}
                       >
@@ -202,6 +203,13 @@ export default async function CategoryPage({
                       <span className="text-[10px] text-muted uppercase tracking-wider">
                         Score
                       </span>
+                      <WatchButton
+                        slug={brand.slug}
+                        name={brand.name}
+                        snapshotScore={overall}
+                        snapshotRevenue={brand.item19?.grossRevenueAvg}
+                        variant="icon"
+                      />
                     </div>
                   </div>
 
@@ -210,7 +218,7 @@ export default async function CategoryPage({
                     <div className="h-1.5 w-full rounded-full bg-surface">
                       <div
                         className={`h-1.5 rounded-full animate-fill ${scoreColor(overall)}`}
-                        style={{ width: `${overall * 10}%` }}
+                        style={{ width: `${overall}%` }}
                       />
                     </div>
                   </div>
@@ -246,9 +254,22 @@ export default async function CategoryPage({
                     </div>
                   </div>
 
+                  {/* Badges footer */}
+                  <div className="mt-4 pt-3 border-t border-border flex items-center gap-2 text-xs flex-wrap">
+                    {brand.hasItem19 && (
+                      <span className="text-success font-medium">Item 19 ✓</span>
+                    )}
+                    {brand.brokerData?.usesBrokers && brand.brokerData.conflictRisk === "high" && (
+                      <span className="font-medium px-1.5 py-0.5 rounded-full bg-warning/10 text-warning">⚑ Broker</span>
+                    )}
+                    {brand.item21?.goingConcernWarning && (
+                      <span className="font-medium px-1.5 py-0.5 rounded-full bg-danger/15 text-danger">⚠ Going Concern</span>
+                    )}
+                  </div>
+
                   {/* Red flags footer */}
                   {totalFlags > 0 && (
-                    <div className="mt-4 pt-3 border-t border-border flex items-center gap-2 text-xs">
+                    <div className="mt-1 flex items-center gap-2 text-xs">
                       {criticalFlags > 0 && (
                         <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-danger-light text-danger font-medium">
                           <svg

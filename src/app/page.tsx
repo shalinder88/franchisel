@@ -10,21 +10,22 @@ import {
   getLatestVerifiedDate,
 } from "@/data/brands";
 import {
-  getOverallScore,
   formatCurrency,
   formatInvestmentRange,
   categoryLabels,
 } from "@/lib/types";
+import { computeProductionScores } from "@/lib/diligence";
 
 /* ── Helper: find a brand by slug (local) ── */
 function brand(slug: string) {
   return brands.find((b) => b.slug === slug);
 }
 
-/* ── Score color helper ── */
+/* ── Score color helper (0-100 scale) ── */
 function scoreColor(score: number) {
-  if (score >= 7.5) return "text-success";
-  if (score >= 5) return "text-warning";
+  if (score >= 70) return "text-success";
+  if (score >= 55) return "text-accent";
+  if (score >= 40) return "text-warning";
   return "text-danger";
 }
 
@@ -242,7 +243,7 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {topScoredBrands.map((b) => {
-              const overall = getOverallScore(b.scores);
+              const overall = computeProductionScores(b).coreDiligence ?? 0;
               const criticalFlags = b.redFlags.filter(
                 (f) => f.severity === "critical"
               ).length;
@@ -355,7 +356,7 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {recentlyAdded.map((b) => {
-              const overall = getOverallScore(b.scores);
+              const overall = computeProductionScores(b).coreDiligence ?? 0;
               const updatedLabel = new Date(b.lastUpdated).toLocaleDateString("en-US", {
                 month: "short",
                 year: "numeric",
@@ -371,7 +372,7 @@ export default function HomePage() {
                       <h3 className="text-lg font-semibold text-foreground">{b.name}</h3>
                       <p className="text-xs text-muted mt-0.5">{categoryLabels[b.category]}</p>
                     </div>
-                    <span className={`text-2xl font-bold ${overall >= 7.5 ? "text-success" : overall >= 5 ? "text-warning" : "text-danger"}`}>
+                    <span className={`text-2xl font-bold ${overall >= 70 ? "text-success" : overall >= 40 ? "text-warning" : "text-danger"}`}>
                       {overall}
                     </span>
                   </div>
@@ -427,8 +428,8 @@ export default function HomePage() {
               const brandB = brand(comp.slugB);
               if (!brandA || !brandB) return null;
 
-              const scoreA = getOverallScore(brandA.scores);
-              const scoreB = getOverallScore(brandB.scores);
+              const scoreA = computeProductionScores(brandA).coreDiligence ?? 0;
+              const scoreB = computeProductionScores(brandB).coreDiligence ?? 0;
 
               return (
                 <Link
@@ -655,7 +656,87 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════
-          8. REPORT PRICING
+          8. FREE TOOLS
+          ═══════════════════════════════════════════════════ */}
+      <section className="border-b border-border">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+          <div className="mb-10">
+            <p className="text-sm font-medium text-accent tracking-wide uppercase mb-3">Free Tools</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground tracking-tight">
+              Run the numbers before you talk to a franchisor
+            </h2>
+            <p className="mt-2 text-muted max-w-xl">
+              Free, independent tools to help you evaluate franchise economics. No signup required.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {/* Calculator card */}
+            <Link
+              href="/fdd-calculator"
+              className="group flex gap-5 border border-border rounded-xl p-6 hover-glow bg-background"
+            >
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent-light flex items-center justify-center text-accent">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm2.25-4.5h.008v.008H10.5v-.008Zm0 2.25h.008v.008H10.5V13.5Zm0 2.25h.008v.008H10.5v-.008Zm2.25-4.5h.008v.008H12.75v-.008Zm0 2.25h.008v.008H12.75V13.5Zm0 2.25h.008v.008H12.75v-.008Zm2.25-4.5h.008v.008H15v-.008Zm0 2.25h.008v.008H15V13.5Zm0 2.25h.008v.008H15v-.008Zm2.25-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.611 4.5 4.687V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.687c0-1.076-.207-1.987-1.407-2.114A48.89 48.89 0 0 0 12 2.25Z" />
+                </svg>
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="text-base font-semibold text-foreground group-hover:text-accent transition-colors">
+                    FDD Financial Calculator
+                  </h3>
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-success-light text-success text-[10px] font-semibold">Free</span>
+                </div>
+                <p className="text-sm text-muted leading-relaxed">
+                  Plug in any franchise's Item 19 revenue and fee structure to estimate real take-home
+                  income after all royalties, costs, and debt service. See break-even revenue, payback
+                  period, and cash-on-cash return.
+                </p>
+                <p className="mt-3 text-xs font-medium text-accent flex items-center gap-1">
+                  Open calculator
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </p>
+              </div>
+            </Link>
+
+            {/* Guides card */}
+            <Link
+              href="/guides"
+              className="group flex gap-5 border border-border rounded-xl p-6 hover-glow bg-background"
+            >
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-warning-light flex items-center justify-center text-warning">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                </svg>
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="text-base font-semibold text-foreground group-hover:text-accent transition-colors">
+                    FDD Due Diligence Guides
+                  </h3>
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-success-light text-success text-[10px] font-semibold">Free</span>
+                </div>
+                <p className="text-sm text-muted leading-relaxed">
+                  8 independent guides covering how to read an FDD, what Item 19 really means, how
+                  to spot litigation red flags, territorial protection, and a 50-question due
+                  diligence checklist.
+                </p>
+                <p className="mt-3 text-xs font-medium text-accent flex items-center gap-1">
+                  Read the guides
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════
+          9. REPORT PRICING
           ═══════════════════════════════════════════════════ */}
       <section className="border-b border-border bg-surface-alt">
         <div className="max-w-6xl mx-auto px-6 py-20">
@@ -776,7 +857,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════
-          9. TRUST SECTION
+          10. TRUST SECTION
           ═══════════════════════════════════════════════════ */}
       <section>
         <div className="max-w-4xl mx-auto px-6 py-20">

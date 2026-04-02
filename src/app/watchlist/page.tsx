@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import WatchlistEmailForm from "@/components/WatchlistEmailForm";
+import WatchlistView from "@/components/WatchlistView";
+import { brands } from "@/data/brands";
+import type { FranchiseBrand } from "@/lib/types";
+import { computeProductionScores } from "@/lib/diligence";
 
 /* ── Most-watched brands (top 6 by communityReviews) ── */
 const popularBrands = [
@@ -180,6 +184,40 @@ export default function WatchlistPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Your Live Watchlist ── */}
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h2 className="text-xl font-semibold text-foreground mb-1">Your Watchlist</h2>
+        <p className="text-sm text-muted mb-6">
+          Saved brands with live risk signals. Star icon on any brand page or card to add.
+        </p>
+        <WatchlistView
+          allBrands={
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            (brands as any[]).map((b: FranchiseBrand) => ({
+              slug:               b.slug,
+              name:               b.name,
+              category:           b.category,
+              totalInvestmentLow:  b.totalInvestmentLow,
+              totalInvestmentHigh: b.totalInvestmentHigh,
+              overallScore:        computeProductionScores(b).coreDiligence ?? 0,
+              grossRevenueAvg:     b.item19?.grossRevenueAvg,
+              hasItem19:           b.hasItem19,
+              goingConcern:        b.item21?.goingConcernWarning,
+              financialStrength:   b.item21?.financialStrengthSignal,
+              turnoverRate:        b.unitEconomics.turnoverRate,
+              criticalFlags:       b.redFlags.filter((f: { severity: string }) => f.severity === "critical").length,
+              totalFlags:          b.redFlags.length,
+              dataSource:          b.dataSource,
+              brokerHighRisk:            b.brokerData?.usesBrokers && b.brokerData.conflictRisk === "high",
+              hasExclusiveTerr:          b.item12?.exclusiveTerritory,
+              managementScore:           b.managementData?.managementQualityScore,
+              supplierLockIn:            b.item8?.lockInScore,
+              franchisorSupplierRevenue: b.item8?.franchisorReceivesSupplierRevenue,
+            }))
+          }
+        />
+      </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 

@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { brands, comparisons, getBrandBySlug } from "@/data/brands";
-import { getOverallScore, formatCurrency, formatInvestmentRange, categoryLabels } from "@/lib/types";
+import { formatCurrency, formatInvestmentRange, categoryLabels } from "@/lib/types";
 import type { FranchiseBrand } from "@/lib/types";
 import type { Metadata } from "next";
+import { computeProductionScores } from "@/lib/diligence";
 import BrandSelector from "@/components/BrandSelector";
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ function ScoreBar({ label, scoreA, scoreB, nameA, nameB }: {
   nameA: string;
   nameB: string;
 }) {
-  const maxScore = 10;
+  const maxScore = 100;
   const pctA = (scoreA / maxScore) * 100;
   const pctB = (scoreB / maxScore) * 100;
 
@@ -118,10 +119,63 @@ function winner(a: number | null, b: number | null, higherIsBetter: boolean): "A
   return a < b ? "A" : "B";
 }
 
+/* ── Winner declaration ── */
+function declareWinner(brandA: FranchiseBrand, brandB: FranchiseBrand, scoreA: number, scoreB: number): { label: string; side: "A" | "B" | null } {
+  const diff = scoreA - scoreB;
+  if (diff > 0.4) return { label: `${brandA.name} edges ahead overall`, side: "A" };
+  if (diff < -0.4) return { label: `${brandB.name} edges ahead overall`, side: "B" };
+  // Near-tie — break on revenue transparency
+  const rA = brandA.item19?.grossRevenueAvg ?? 0;
+  const rB = brandB.item19?.grossRevenueAvg ?? 0;
+  if (rA > rB * 1.1) return { label: `${brandA.name} leads on revenue disclosure`, side: "A" };
+  if (rB > rA * 1.1) return { label: `${brandB.name} leads on revenue disclosure`, side: "B" };
+  return { label: "Too close to call — review details below", side: null };
+}
+
+/* ── Verdict bullet builder ── */
+function buildVerdict(brand: FranchiseBrand, other: FranchiseBrand): string[] {
+  const pts: string[] = [];
+  const investMid = (brand.totalInvestmentLow + brand.totalInvestmentHigh) / 2;
+  const otherMid  = (other.totalInvestmentLow  + other.totalInvestmentHigh)  / 2;
+  if (investMid < otherMid * 0.85) pts.push("You want a lower initial investment");
+  if (brand.item19?.grossRevenueAvg && (!other.item19?.grossRevenueAvg || brand.item19.grossRevenueAvg > other.item19.grossRevenueAvg))
+    pts.push("Disclosed revenue is a deciding factor for you");
+  if (brand.item12?.exclusiveTerritory && !other.item12?.exclusiveTerritory)
+    pts.push("Exclusive territory protection is a priority");
+  if (!brand.item17?.mandatoryArbitration && other.item17?.mandatoryArbitration)
+    pts.push("You want to keep all legal options open");
+  if (!brand.item4?.hasBankruptcy && other.item4?.hasBankruptcy)
+    pts.push("A clean bankruptcy history matters to you");
+  if ((brand.item11?.totalTrainingHours ?? 0) > (other.item11?.totalTrainingHours ?? 0) + 20)
+    pts.push("You value intensive initial training");
+  if (brand.unitEconomics.netGrowth > 0 && other.unitEconomics.netGrowth <= 0)
+    pts.push("You want a brand that is actively growing");
+  if (brand.unitEconomics.turnoverRate < other.unitEconomics.turnoverRate - 3)
+    pts.push("Franchisee retention and stability matter to you");
+  if (brand.totalUnits > other.totalUnits * 1.5)
+    pts.push("You prefer a larger, more established network");
+  return pts.slice(0, 4);
+}
+
+/* ── Feature matrix ── */
+type FeatureStatus = "yes" | "no" | "unknown";
+function fs(val?: boolean | null): FeatureStatus {
+  return val === true ? "yes" : val === false ? "no" : "unknown";
+}
+
+function FeatureCell({ status }: { status: FeatureStatus }) {
+  if (status === "yes") return <td className="py-2.5 px-4 sm:px-6 text-center text-success font-bold text-sm">✓</td>;
+  if (status === "no")  return <td className="py-2.5 px-4 sm:px-6 text-center text-danger/70 text-sm">✕</td>;
+  return <td className="py-2.5 px-4 sm:px-6 text-center text-muted/40 text-sm">—</td>;
+}
+
 /* ── Full dynamic comparison table ── */
 function DynamicComparison({ brandA, brandB }: { brandA: FranchiseBrand; brandB: FranchiseBrand }) {
-  const scoreA = getOverallScore(brandA.scores);
-  const scoreB = getOverallScore(brandB.scores);
+  const scoreA = (computeProductionScores(brandA).coreDiligence ?? 0);
+  const scoreB = (computeProductionScores(brandB).coreDiligence ?? 0);
+  const { label: winnerLabel, side: winnerSide } = declareWinner(brandA, brandB, scoreA, scoreB);
+  const verdictA = buildVerdict(brandA, brandB);
+  const verdictB = buildVerdict(brandB, brandA);
 
   const investLowA = brandA.totalInvestmentLow;
   const investLowB = brandB.totalInvestmentLow;
@@ -158,12 +212,21 @@ function DynamicComparison({ brandA, brandB }: { brandA: FranchiseBrand; brandB:
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <span className="text-2xl font-black text-accent">{scoreA}</span>
-            <div className="px-3 py-1 rounded-full bg-surface border border-border text-xs font-bold text-muted uppercase tracking-wider">
-              vs
+          <div className="flex flex-col items-center gap-2">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl font-black text-accent">{scoreA}</span>
+              <div className="px-3 py-1 rounded-full bg-surface border border-border text-xs font-bold text-muted uppercase tracking-wider">
+                vs
+              </div>
+              <span className="text-2xl font-black text-cyan">{scoreB}</span>
             </div>
-            <span className="text-2xl font-black text-cyan">{scoreB}</span>
+            <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+              winnerSide === "A" ? "bg-success-light text-success" :
+              winnerSide === "B" ? "bg-cyan/10 text-cyan" :
+              "bg-surface text-muted border border-border"
+            }`}>
+              {winnerLabel}
+            </span>
           </div>
 
           <div className="flex items-center gap-3">
@@ -236,8 +299,34 @@ function DynamicComparison({ brandA, brandB }: { brandA: FranchiseBrand; brandB:
               valueA={revenueA !== null ? formatCurrency(revenueA) : "Not Disclosed"}
               valueB={revenueB !== null ? formatCurrency(revenueB) : "Not Disclosed"}
               winnerSide={winner(revenueA, revenueB, true)}
-              hint="Higher is better"
+              hint="Higher is better — from government-filed FDD"
             />
+            {(brandA.item19?.unitsIncluded != null || brandB.item19?.unitsIncluded != null) && (
+              <CompareRow
+                label="Units in Item 19 Sample"
+                valueA={
+                  brandA.item19?.unitsIncluded
+                    ? `${brandA.item19.unitsIncluded.toLocaleString()} (${Math.round((brandA.item19.unitsIncluded / brandA.totalUnits) * 100)}% of system)`
+                    : "—"
+                }
+                valueB={
+                  brandB.item19?.unitsIncluded
+                    ? `${brandB.item19.unitsIncluded.toLocaleString()} (${Math.round((brandB.item19.unitsIncluded / brandB.totalUnits) * 100)}% of system)`
+                    : "—"
+                }
+                winnerSide={null}
+                hint="Higher % = more representative sample"
+              />
+            )}
+            {(brandA.item19?.grossRevenueMedian != null || brandB.item19?.grossRevenueMedian != null) && (
+              <CompareRow
+                label="Item 19 Median Revenue"
+                valueA={brandA.item19?.grossRevenueMedian ? formatCurrency(brandA.item19.grossRevenueMedian) : "—"}
+                valueB={brandB.item19?.grossRevenueMedian ? formatCurrency(brandB.item19.grossRevenueMedian) : "—"}
+                winnerSide={winner(brandA.item19?.grossRevenueMedian ?? null, brandB.item19?.grossRevenueMedian ?? null, true)}
+                hint="Median is more reliable than avg when skewed by top performers"
+              />
+            )}
             <CompareRow
               label="Total Units"
               valueA={brandA.totalUnits.toLocaleString()}
@@ -268,31 +357,324 @@ function DynamicComparison({ brandA, brandB }: { brandA: FranchiseBrand; brandB:
               hint="Fewer is better"
             />
             <CompareRow
-              label="Franchisee Support"
-              valueA={`${brandA.scores.franchiseeSupport} / 10`}
-              valueB={`${brandB.scores.franchiseeSupport} / 10`}
-              winnerSide={winner(brandA.scores.franchiseeSupport, brandB.scores.franchiseeSupport, true)}
+              label="Confidence Score"
+              valueA={`${computeProductionScores(brandA).confidence} / 100`}
+              valueB={`${computeProductionScores(brandB).confidence} / 100`}
+              winnerSide={winner(computeProductionScores(brandA).confidence, computeProductionScores(brandB).confidence, true)}
+              hint="Data completeness and extraction quality"
             />
+            {/* ── Item 20: Unit Turnover ── */}
             <CompareRow
-              label="Financial Transparency"
-              valueA={`${brandA.scores.financialTransparency} / 10`}
-              valueB={`${brandB.scores.financialTransparency} / 10`}
-              winnerSide={winner(brandA.scores.financialTransparency, brandB.scores.financialTransparency, true)}
+              label="Unit Turnover Rate"
+              valueA={brandA.unitEconomics.turnoverRate > 0 ? `${brandA.unitEconomics.turnoverRate}%` : "0%"}
+              valueB={brandB.unitEconomics.turnoverRate > 0 ? `${brandB.unitEconomics.turnoverRate}%` : "0%"}
+              winnerSide={winner(brandA.unitEconomics.turnoverRate, brandB.unitEconomics.turnoverRate, false)}
+              hint="Closed + transferred ÷ total — lower is healthier"
             />
+            {/* ── Item 4: Bankruptcy ── */}
+            {(brandA.item4 || brandB.item4) && (
+              <CompareRow
+                label="Bankruptcy History"
+                valueA={brandA.item4 ? (brandA.item4.hasBankruptcy ? `Yes — ${(brandA.item4.bankruptcyType ?? "disclosed").replace("_", " ")}` : "None disclosed") : "—"}
+                valueB={brandB.item4 ? (brandB.item4.hasBankruptcy ? `Yes — ${(brandB.item4.bankruptcyType ?? "disclosed").replace("_", " ")}` : "None disclosed") : "—"}
+                winnerSide={
+                  brandA.item4 && brandB.item4
+                    ? winner(brandA.item4.hasBankruptcy ? 1 : 0, brandB.item4.hasBankruptcy ? 1 : 0, false)
+                    : null
+                }
+                hint="Item 4 — franchisor or affiliate bankruptcies"
+              />
+            )}
+            {/* ── Item 11: Training ── */}
+            {(brandA.item11 || brandB.item11) && (
+              <CompareRow
+                label="Training Hours"
+                valueA={brandA.item11?.totalTrainingHours ? `${brandA.item11.totalTrainingHours}h` : brandA.item11 ? "Varies" : "—"}
+                valueB={brandB.item11?.totalTrainingHours ? `${brandB.item11.totalTrainingHours}h` : brandB.item11 ? "Varies" : "—"}
+                winnerSide={
+                  brandA.item11?.totalTrainingHours && brandB.item11?.totalTrainingHours
+                    ? winner(brandA.item11.totalTrainingHours, brandB.item11.totalTrainingHours, true)
+                    : null
+                }
+                hint="Item 11 — initial training hours (more = better support)"
+              />
+            )}
+            {/* ── Item 12: Territory ── */}
+            {(brandA.item12 || brandB.item12) && (
+              <CompareRow
+                label="Exclusive Territory"
+                valueA={brandA.item12 ? (brandA.item12.exclusiveTerritory ? "Yes ✓" : "No") : "—"}
+                valueB={brandB.item12 ? (brandB.item12.exclusiveTerritory ? "Yes ✓" : "No") : "—"}
+                winnerSide={
+                  brandA.item12 && brandB.item12
+                    ? winner(brandA.item12.exclusiveTerritory ? 1 : 0, brandB.item12.exclusiveTerritory ? 1 : 0, true)
+                    : null
+                }
+                hint="Item 12 — protected territory granted"
+              />
+            )}
+            {/* ── Item 17: Contract Term + Arbitration + Non-compete ── */}
+            {(brandA.item17 || brandB.item17) && (
+              <CompareRow
+                label="Initial Term"
+                valueA={brandA.item17?.initialTermYears ? `${brandA.item17.initialTermYears} yrs` : "—"}
+                valueB={brandB.item17?.initialTermYears ? `${brandB.item17.initialTermYears} yrs` : "—"}
+                winnerSide={null}
+                hint="Item 17 — initial franchise agreement length"
+              />
+            )}
+            {(brandA.item17 || brandB.item17) && (
+              <CompareRow
+                label="Mandatory Arbitration"
+                valueA={brandA.item17 ? (brandA.item17.mandatoryArbitration ? "Required" : "No") : "—"}
+                valueB={brandB.item17 ? (brandB.item17.mandatoryArbitration ? "Required" : "No") : "—"}
+                winnerSide={
+                  brandA.item17 && brandB.item17
+                    ? winner(brandA.item17.mandatoryArbitration ? 1 : 0, brandB.item17.mandatoryArbitration ? 1 : 0, false)
+                    : null
+                }
+                hint="Item 17 — disputes must go to arbitration (limits your legal options)"
+              />
+            )}
+            {(brandA.item17 || brandB.item17) && (
+              <CompareRow
+                label="Post-term Non-compete"
+                valueA={
+                  brandA.item17
+                    ? brandA.item17.hasNonCompete
+                      ? `${brandA.item17.nonCompeteYears ?? "?"}yr / ${brandA.item17.nonCompeteMiles ?? "?"}mi`
+                      : "None"
+                    : "—"
+                }
+                valueB={
+                  brandB.item17
+                    ? brandB.item17.hasNonCompete
+                      ? `${brandB.item17.nonCompeteYears ?? "?"}yr / ${brandB.item17.nonCompeteMiles ?? "?"}mi`
+                      : "None"
+                    : "—"
+                }
+                winnerSide={
+                  brandA.item17 && brandB.item17
+                    ? winner(brandA.item17.hasNonCompete ? 1 : 0, brandB.item17.hasNonCompete ? 1 : 0, false)
+                    : null
+                }
+                hint="Item 17 — restrictions after you exit the franchise"
+              />
+            )}
+          </tbody>
+        </table>
+      </div>
+
+      {/* ── Verdict: Choose X if / Choose Y if ── */}
+      {(verdictA.length > 0 || verdictB.length > 0) && (
+        <div className="px-6 py-6 sm:px-8 border-t border-border grid sm:grid-cols-2 gap-4">
+          <div className="rounded-xl border border-accent/20 bg-accent/5 p-4">
+            <p className="text-[10px] font-bold text-accent uppercase tracking-widest mb-2.5">
+              Choose {brandA.name} if…
+            </p>
+            {verdictA.length > 0 ? (
+              <ul className="space-y-1.5">
+                {verdictA.map((pt, i) => (
+                  <li key={i} className="flex items-start gap-2 text-xs text-foreground leading-snug">
+                    <span className="text-accent mt-px shrink-0">▸</span>
+                    {pt}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-xs text-muted">Review the metrics above to decide.</p>
+            )}
+          </div>
+          <div className="rounded-xl border border-cyan/20 bg-cyan/5 p-4">
+            <p className="text-[10px] font-bold text-cyan uppercase tracking-widest mb-2.5">
+              Choose {brandB.name} if…
+            </p>
+            {verdictB.length > 0 ? (
+              <ul className="space-y-1.5">
+                {verdictB.map((pt, i) => (
+                  <li key={i} className="flex items-start gap-2 text-xs text-foreground leading-snug">
+                    <span className="text-cyan mt-px shrink-0">▸</span>
+                    {pt}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-xs text-muted">Review the metrics above to decide.</p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* ── Feature matrix ── */}
+      <div className="border-t border-border overflow-x-auto">
+        <table className="w-full">
+          <thead>
+            <tr className="border-b border-border bg-surface/50">
+              <th className="py-3 px-4 sm:px-6 text-left text-[11px] font-bold text-muted uppercase tracking-wider w-1/2">Feature</th>
+              <th className="py-3 px-4 sm:px-6 text-center text-[11px] font-bold text-accent uppercase tracking-wider w-1/4">{brandA.name}</th>
+              <th className="py-3 px-4 sm:px-6 text-center text-[11px] font-bold text-cyan uppercase tracking-wider w-1/4">{brandB.name}</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-border/50">
+            {[
+              {
+                label: "Item 19 Revenue Disclosed",
+                a: fs(!!(brandA.item19?.grossRevenueAvg || brandA.item19?.grossRevenueMedian)),
+                b: fs(!!(brandB.item19?.grossRevenueAvg || brandB.item19?.grossRevenueMedian)),
+              },
+              {
+                label: "Exclusive Territory",
+                a: fs(brandA.item12?.exclusiveTerritory),
+                b: fs(brandB.item12?.exclusiveTerritory),
+              },
+              {
+                label: "No Mandatory Arbitration",
+                a: brandA.item17 ? fs(!brandA.item17.mandatoryArbitration) : "unknown" as FeatureStatus,
+                b: brandB.item17 ? fs(!brandB.item17.mandatoryArbitration) : "unknown" as FeatureStatus,
+              },
+              {
+                label: "Audited Financials (Item 21)",
+                a: fs(brandA.item21?.hasAuditedFinancials),
+                b: fs(brandB.item21?.hasAuditedFinancials),
+              },
+              {
+                label: "No Going Concern Warning",
+                a: brandA.item21 ? fs(!brandA.item21.goingConcernWarning) : "unknown" as FeatureStatus,
+                b: brandB.item21 ? fs(!brandB.item21.goingConcernWarning) : "unknown" as FeatureStatus,
+              },
+              {
+                label: "Franchisor Clean Auditor Opinion",
+                a: brandA.item21?.auditorOpinion ? fs(brandA.item21.auditorOpinion === "clean") : "unknown" as FeatureStatus,
+                b: brandB.item21?.auditorOpinion ? fs(brandB.item21.auditorOpinion === "clean") : "unknown" as FeatureStatus,
+              },
+              {
+                label: "No Mandatory Supplier Lock-in",
+                a: brandA.item8 ? fs(!brandA.item8.franchisorReceivesSupplierRevenue && (brandA.item8.alternativeSupplierPossible || brandA.item8.specificationsOnly || false)) : "unknown" as FeatureStatus,
+                b: brandB.item8 ? fs(!brandB.item8.franchisorReceivesSupplierRevenue && (brandB.item8.alternativeSupplierPossible || brandB.item8.specificationsOnly || false)) : "unknown" as FeatureStatus,
+              },
+              {
+                label: "Direct Sales (No FSO Brokers)",
+                a: brandA.brokerData ? fs(!brandA.brokerData.usesBrokers) : "unknown" as FeatureStatus,
+                b: brandB.brokerData ? fs(!brandB.brokerData.usesBrokers) : "unknown" as FeatureStatus,
+              },
+              {
+                label: "National Distribution (25+ States)",
+                a: brandA.stateConcentration
+                  ? fs(brandA.stateConcentration.coverageType === "national")
+                  : (brandA.statesOfOperation >= 25 ? "yes" : brandA.statesOfOperation > 0 ? "no" : "unknown") as FeatureStatus,
+                b: brandB.stateConcentration
+                  ? fs(brandB.stateConcentration.coverageType === "national")
+                  : (brandB.statesOfOperation >= 25 ? "yes" : brandB.statesOfOperation > 0 ? "no" : "unknown") as FeatureStatus,
+              },
+              {
+                label: "No Geographic Concentration Risk",
+                a: brandA.stateConcentration ? fs(!brandA.stateConcentration.highlyConcentrated) : "unknown" as FeatureStatus,
+                b: brandB.stateConcentration ? fs(!brandB.stateConcentration.highlyConcentrated) : "unknown" as FeatureStatus,
+              },
+              {
+                label: "Exclusive Territory (Item 12)",
+                a: brandA.item12?.exclusiveTerritory != null
+                  ? fs(brandA.item12.exclusiveTerritory)
+                  : "unknown" as FeatureStatus,
+                b: brandB.item12?.exclusiveTerritory != null
+                  ? fs(brandB.item12.exclusiveTerritory)
+                  : "unknown" as FeatureStatus,
+              },
+              {
+                label: "Franchisor Cannot Compete in Territory",
+                a: brandA.item12?.franchisorMayCompete != null
+                  ? fs(!brandA.item12.franchisorMayCompete)
+                  : "unknown" as FeatureStatus,
+                b: brandB.item12?.franchisorMayCompete != null
+                  ? fs(!brandB.item12.franchisorMayCompete)
+                  : "unknown" as FeatureStatus,
+              },
+              {
+                label: "Online Sales Not Reserved by Franchisor",
+                a: brandA.item12?.onlineSalesReserved != null
+                  ? fs(!brandA.item12.onlineSalesReserved)
+                  : "unknown" as FeatureStatus,
+                b: brandB.item12?.onlineSalesReserved != null
+                  ? fs(!brandB.item12.onlineSalesReserved)
+                  : "unknown" as FeatureStatus,
+              },
+              {
+                label: "Experienced Management (Item 2)",
+                a: brandA.managementData
+                  ? fs((brandA.managementData.managementQualityScore ?? 0) >= 6)
+                  : "unknown" as FeatureStatus,
+                b: brandB.managementData
+                  ? fs((brandB.managementData.managementQualityScore ?? 0) >= 6)
+                  : "unknown" as FeatureStatus,
+              },
+              {
+                label: "Franchise-Experienced Leadership",
+                a: brandA.managementData
+                  ? fs(brandA.managementData.hasFranchiseExp === true)
+                  : "unknown" as FeatureStatus,
+                b: brandB.managementData
+                  ? fs(brandB.managementData.hasFranchiseExp === true)
+                  : "unknown" as FeatureStatus,
+              },
+              {
+                label: "Low Supplier Lock-In (Item 8)",
+                a: brandA.item8?.lockInScore != null
+                  ? fs(brandA.item8.lockInScore <= 4)
+                  : "unknown" as FeatureStatus,
+                b: brandB.item8?.lockInScore != null
+                  ? fs(brandB.item8.lockInScore <= 4)
+                  : "unknown" as FeatureStatus,
+              },
+              {
+                label: "No Franchisor Supplier Revenue (Item 8)",
+                a: brandA.item8 ? fs(!brandA.item8.franchisorReceivesSupplierRevenue) : "unknown" as FeatureStatus,
+                b: brandB.item8 ? fs(!brandB.item8.franchisorReceivesSupplierRevenue) : "unknown" as FeatureStatus,
+              },
+              {
+                label: "No Bankruptcy History (Item 4)",
+                a: brandA.item4 ? fs(!brandA.item4.hasBankruptcy) : "unknown" as FeatureStatus,
+                b: brandB.item4 ? fs(!brandB.item4.hasBankruptcy) : "unknown" as FeatureStatus,
+              },
+              {
+                label: "Annual Conference",
+                a: fs(brandA.item11?.hasAnnualConference),
+                b: fs(brandB.item11?.hasAnnualConference),
+              },
+              {
+                label: "Field Support",
+                a: fs(brandA.item11?.hasFieldSupport),
+                b: fs(brandB.item11?.hasFieldSupport),
+              },
+              {
+                label: "Technology System",
+                a: fs(brandA.item11?.hasTechnologySystem),
+                b: fs(brandB.item11?.hasTechnologySystem),
+              },
+              {
+                label: "Renewal Option",
+                a: fs((brandA.item17?.renewalCount ?? 0) > 0),
+                b: fs((brandB.item17?.renewalCount ?? 0) > 0),
+              },
+            ].map((row) => (
+              <tr key={row.label}>
+                <td className="py-2.5 px-4 sm:px-6 text-xs font-medium text-muted">{row.label}</td>
+                <FeatureCell status={row.a} />
+                <FeatureCell status={row.b} />
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
 
       {/* Score breakdown bars */}
       <div className="px-6 py-6 sm:px-8 border-t border-border">
-        <h3 className="text-xs font-bold text-muted uppercase tracking-wider mb-4">Score Breakdown</h3>
+        <h3 className="text-xs font-bold text-muted uppercase tracking-wider mb-4">Diligence Score Breakdown (0–100)</h3>
         <div className="space-y-3">
-          <ScoreBar label="Investment Value" scoreA={brandA.scores.investmentValue} scoreB={brandB.scores.investmentValue} nameA={brandA.name} nameB={brandB.name} />
-          <ScoreBar label="Franchisee Support" scoreA={brandA.scores.franchiseeSupport} scoreB={brandB.scores.franchiseeSupport} nameA={brandA.name} nameB={brandB.name} />
-          <ScoreBar label="Transparency" scoreA={brandA.scores.financialTransparency} scoreB={brandB.scores.financialTransparency} nameA={brandA.name} nameB={brandB.name} />
-          <ScoreBar label="Unit Growth" scoreA={brandA.scores.unitGrowth} scoreB={brandB.scores.unitGrowth} nameA={brandA.name} nameB={brandB.name} />
-          <ScoreBar label="Brand Strength" scoreA={brandA.scores.brandStrength} scoreB={brandB.scores.brandStrength} nameA={brandA.name} nameB={brandB.name} />
-          <ScoreBar label="Territory" scoreA={brandA.scores.territoryProtection} scoreB={brandB.scores.territoryProtection} nameA={brandA.name} nameB={brandB.name} />
+          <ScoreBar label="System Health" scoreA={computeProductionScores(brandA).systemHealth ?? 0} scoreB={computeProductionScores(brandB).systemHealth ?? 0} nameA={brandA.name} nameB={brandB.name} />
+          <ScoreBar label="Franchisor Strength" scoreA={computeProductionScores(brandA).franchisorStrength ?? 0} scoreB={computeProductionScores(brandB).franchisorStrength ?? 0} nameA={brandA.name} nameB={brandB.name} />
+          <ScoreBar label="Contract Burden" scoreA={computeProductionScores(brandA).contractBurden ?? 0} scoreB={computeProductionScores(brandB).contractBurden ?? 0} nameA={brandA.name} nameB={brandB.name} />
+          <ScoreBar label="Economics" scoreA={computeProductionScores(brandA).economics ?? 0} scoreB={computeProductionScores(brandB).economics ?? 0} nameA={brandA.name} nameB={brandB.name} />
+          <ScoreBar label="Confidence" scoreA={computeProductionScores(brandA).confidence} scoreB={computeProductionScores(brandB).confidence} nameA={brandA.name} nameB={brandB.name} />
         </div>
       </div>
 
@@ -406,8 +788,8 @@ export default async function ComparePage({
               const brandB = getBrandBySlug(comp.slugB);
               if (!brandA || !brandB) return null;
 
-              const scoreA = getOverallScore(brandA.scores);
-              const scoreB = getOverallScore(brandB.scores);
+              const scoreA = (computeProductionScores(brandA).coreDiligence ?? 0);
+              const scoreB = (computeProductionScores(brandB).coreDiligence ?? 0);
 
               return (
                 <div
@@ -480,12 +862,11 @@ export default async function ComparePage({
                     {/* Score comparison bars */}
                     <div className="space-y-3 mb-6">
                       <h3 className="text-xs font-bold text-muted uppercase tracking-wider mb-3">Score Breakdown</h3>
-                      <ScoreBar label="Investment Value" scoreA={brandA.scores.investmentValue} scoreB={brandB.scores.investmentValue} nameA={brandA.name} nameB={brandB.name} />
-                      <ScoreBar label="Franchisee Support" scoreA={brandA.scores.franchiseeSupport} scoreB={brandB.scores.franchiseeSupport} nameA={brandA.name} nameB={brandB.name} />
-                      <ScoreBar label="Transparency" scoreA={brandA.scores.financialTransparency} scoreB={brandB.scores.financialTransparency} nameA={brandA.name} nameB={brandB.name} />
-                      <ScoreBar label="Unit Growth" scoreA={brandA.scores.unitGrowth} scoreB={brandB.scores.unitGrowth} nameA={brandA.name} nameB={brandB.name} />
-                      <ScoreBar label="Brand Strength" scoreA={brandA.scores.brandStrength} scoreB={brandB.scores.brandStrength} nameA={brandA.name} nameB={brandB.name} />
-                      <ScoreBar label="Territory" scoreA={brandA.scores.territoryProtection} scoreB={brandB.scores.territoryProtection} nameA={brandA.name} nameB={brandB.name} />
+                      <ScoreBar label="System Health" scoreA={computeProductionScores(brandA).systemHealth ?? 0} scoreB={computeProductionScores(brandB).systemHealth ?? 0} nameA={brandA.name} nameB={brandB.name} />
+                      <ScoreBar label="Franchisor Strength" scoreA={computeProductionScores(brandA).franchisorStrength ?? 0} scoreB={computeProductionScores(brandB).franchisorStrength ?? 0} nameA={brandA.name} nameB={brandB.name} />
+                      <ScoreBar label="Contract Burden" scoreA={computeProductionScores(brandA).contractBurden ?? 0} scoreB={computeProductionScores(brandB).contractBurden ?? 0} nameA={brandA.name} nameB={brandB.name} />
+                      <ScoreBar label="Economics" scoreA={computeProductionScores(brandA).economics ?? 0} scoreB={computeProductionScores(brandB).economics ?? 0} nameA={brandA.name} nameB={brandB.name} />
+                      <ScoreBar label="Confidence" scoreA={computeProductionScores(brandA).confidence} scoreB={computeProductionScores(brandB).confidence} nameA={brandA.name} nameB={brandB.name} />
                     </div>
 
                     {/* Verdict */}
@@ -558,7 +939,7 @@ export default async function ComparePage({
                         className="flex items-center justify-between py-1.5 px-2 rounded-lg hover:bg-surface transition-colors group"
                       >
                         <span className="text-sm text-foreground group-hover:text-accent transition-colors">{b.name}</span>
-                        <span className="text-xs font-mono font-bold text-accent">{getOverallScore(b.scores)}</span>
+                        <span className="text-xs font-mono font-bold text-accent">{(computeProductionScores(b).coreDiligence ?? 0)}</span>
                       </Link>
                     ))}
                   </div>

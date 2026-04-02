@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { FranchiseBrand } from "@/lib/types";
-import { getOverallScore, categoryLabels } from "@/lib/types";
+import { categoryLabels } from "@/lib/types";
+import { computeProductionScores } from "@/lib/diligence";
 import InvestmentRange from "./InvestmentRange";
 import RedFlagBadge from "./RedFlagBadge";
 
@@ -9,21 +10,21 @@ interface BrandCardProps {
 }
 
 function scoreColor(score: number): string {
-  if (score >= 8) return "text-success";
-  if (score >= 6) return "text-accent";
-  if (score >= 4) return "text-warning";
+  if (score >= 70) return "text-success";
+  if (score >= 55) return "text-accent";
+  if (score >= 40) return "text-warning";
   return "text-danger";
 }
 
 function scoreBg(score: number): string {
-  if (score >= 8) return "bg-success-light";
-  if (score >= 6) return "bg-accent-light";
-  if (score >= 4) return "bg-warning-light";
+  if (score >= 70) return "bg-success-light";
+  if (score >= 55) return "bg-accent-light";
+  if (score >= 40) return "bg-warning-light";
   return "bg-danger-light";
 }
 
 export default function BrandCard({ brand }: BrandCardProps) {
-  const overall = getOverallScore(brand.scores);
+  const overall = computeProductionScores(brand).coreDiligence ?? 0;
   const criticalCount = brand.redFlags.filter((f) => f.severity === "critical").length;
   const warningCount = brand.redFlags.filter((f) => f.severity === "warning").length;
   const infoCount = brand.redFlags.filter((f) => f.severity === "info").length;
@@ -44,7 +45,7 @@ export default function BrandCard({ brand }: BrandCardProps) {
         <div
           className={`shrink-0 flex items-center justify-center w-11 h-11 rounded-xl text-lg font-bold tabular-nums ${scoreBg(overall)} ${scoreColor(overall)}`}
         >
-          {overall.toFixed(1)}
+          {overall}
         </div>
       </div>
 

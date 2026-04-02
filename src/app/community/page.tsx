@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { brands, getTotalCommunityReviews } from "@/data/brands";
-import { getOverallScore } from "@/lib/types";
+import { computeProductionScores } from "@/lib/diligence";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

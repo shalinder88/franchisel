@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { brands, categories } from "@/data/brands";
-import { getOverallScore, formatCurrency } from "@/lib/types";
+import { formatCurrency } from "@/lib/types";
+import { computeProductionScores } from "@/lib/diligence";
 
 export const metadata: Metadata = {
   title: "Franchise Categories — Compare Investment, Scores & Unit Economics by Category",
@@ -65,7 +66,7 @@ export default function CategoryHubPage() {
         brandCount > 0
           ? Number(
               (
-                catBrands.reduce((sum, b) => sum + getOverallScore(b.scores), 0) /
+                catBrands.reduce((sum, b) => sum + (computeProductionScores(b).coreDiligence ?? 0), 0) /
                 brandCount
               ).toFixed(1)
             )
