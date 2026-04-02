@@ -59,10 +59,10 @@ function MetricRow({ label, valueA, valueB }: {
   valueB: string;
 }) {
   return (
-    <div className="flex items-center justify-between py-2 border-b border-border/50 last:border-0 hover-item">
-      <span className="text-sm text-foreground font-medium w-1/3 text-left">{valueA}</span>
-      <span className="text-[11px] font-semibold text-muted uppercase tracking-wider w-1/3 text-center">{label}</span>
-      <span className="text-sm text-foreground font-medium w-1/3 text-right">{valueB}</span>
+    <div className="flex items-center justify-between py-3 border-b border-border/50 last:border-0 hover-item">
+      <span className="text-base text-foreground font-semibold w-1/3 text-left">{valueA}</span>
+      <span className="text-xs font-bold text-muted uppercase tracking-wider w-1/3 text-center">{label}</span>
+      <span className="text-base text-foreground font-semibold w-1/3 text-right">{valueB}</span>
     </div>
   );
 }
@@ -83,27 +83,27 @@ function CompareRow({
 }) {
   return (
     <tr className="border-b border-border/50 last:border-0">
-      <td className="py-3 px-4 sm:px-6">
-        <div className="text-[11px] font-bold text-muted uppercase tracking-wider">{label}</div>
-        {hint && <div className="text-[10px] text-muted/70 mt-0.5">{hint}</div>}
+      <td className="py-4 px-4 sm:px-6">
+        <div className="text-xs font-bold text-muted uppercase tracking-wider">{label}</div>
+        {hint && <div className="text-[11px] text-muted/70 mt-0.5">{hint}</div>}
       </td>
       <td
-        className={`py-3 px-4 sm:px-6 text-sm font-medium text-center ${
-          winnerSide === "A" ? "bg-success/5 text-success font-semibold" : "text-foreground"
+        className={`py-4 px-4 sm:px-6 text-base font-semibold text-center ${
+          winnerSide === "A" ? "bg-success/5 text-success" : "text-foreground"
         }`}
       >
         {winnerSide === "A" && (
-          <span className="inline-block mr-1.5 text-success text-xs">▲</span>
+          <span className="inline-block mr-1.5 text-success text-sm">▲</span>
         )}
         {valueA}
       </td>
       <td
-        className={`py-3 px-4 sm:px-6 text-sm font-medium text-center ${
-          winnerSide === "B" ? "bg-success/5 text-success font-semibold" : "text-foreground"
+        className={`py-4 px-4 sm:px-6 text-base font-semibold text-center ${
+          winnerSide === "B" ? "bg-success/5 text-success" : "text-foreground"
         }`}
       >
         {winnerSide === "B" && (
-          <span className="inline-block mr-1.5 text-success text-xs">▲</span>
+          <span className="inline-block mr-1.5 text-success text-sm">▲</span>
         )}
         {valueB}
       </td>
@@ -738,45 +738,55 @@ export default async function ComparePage({
         </div>
       </section>
 
-      {/* ── Build Your Own Comparison ── */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
-        <div className="mb-6">
-          <h2 className="text-2xl font-bold text-foreground">Build Your Own Comparison</h2>
-          <p className="mt-2 text-sm text-muted">
-            Select any two franchise brands for an instant side-by-side analysis.
-          </p>
-        </div>
-        <BrandSelector
-          brands={brandOptions}
-          initialA={slugA}
-          initialB={slugB}
-        />
-      </section>
-
-      {/* ── Dynamic comparison result ── */}
-      {hasCustomComparison && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* ── Full comparison view (when both brands selected) ── */}
+      {hasCustomComparison ? (
+        <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="flex items-center justify-between mb-6">
+            <Link href="/compare" className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
+              Back to Compare
+            </Link>
+            <BrandSelector
+              brands={brandOptions}
+              initialA={slugA}
+              initialB={slugB}
+            />
+          </div>
           <DynamicComparison brandA={activeBrandA} brandB={activeBrandB} />
         </section>
-      )}
+      ) : (
+        <>
+          {/* ── Build Your Own Comparison ── */}
+          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-foreground">Build Your Own Comparison</h2>
+              <p className="mt-2 text-sm text-muted">
+                Select any two franchise brands for an instant side-by-side analysis.
+              </p>
+            </div>
+            <BrandSelector
+              brands={brandOptions}
+              initialA={slugA}
+              initialB={slugB}
+            />
+          </section>
 
       {/* ── Invalid slug warning ── */}
-      {(slugA || slugB) && !hasCustomComparison && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="rounded-xl bg-warning-light border border-warning/20 px-6 py-4 text-sm text-foreground">
-            {!activeBrandA && slugA && (
-              <p>Could not find brand &ldquo;{slugA}&rdquo;. Please select a valid brand from the dropdowns above.</p>
-            )}
-            {!activeBrandB && slugB && (
-              <p>Could not find brand &ldquo;{slugB}&rdquo;. Please select a valid brand from the dropdowns above.</p>
-            )}
-          </div>
-        </section>
-      )}
+          {(slugA || slugB) && (
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+              <div className="rounded-xl bg-warning-light border border-warning/20 px-6 py-4 text-sm text-foreground">
+                {!activeBrandA && slugA && (
+                  <p>Could not find brand &ldquo;{slugA}&rdquo;. Please select a valid brand from the dropdowns above.</p>
+                )}
+                {!activeBrandB && slugB && (
+                  <p>Could not find brand &ldquo;{slugB}&rdquo;. Please select a valid brand from the dropdowns above.</p>
+                )}
+              </div>
+            </section>
+          )}
 
-      {/* ── Pre-built comparisons (only shown when no custom comparison) ── */}
-      {!hasCustomComparison && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          {/* ── Pre-built comparisons ── */}
+          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="mb-10">
             <h2 className="text-2xl font-bold text-foreground">Featured Comparisons</h2>
             <p className="mt-2 text-sm text-muted">Data-driven head-to-head analysis of popular franchise brands.</p>
@@ -898,17 +908,18 @@ export default async function ComparePage({
                     {/* Links */}
                     <div className="mt-5 flex flex-col sm:flex-row items-center gap-3">
                       <Link
-                        href={`/brands/${brandA.slug}`}
-                        className="text-sm font-semibold text-accent hover:underline"
+                        href={`/compare?brandA=${comp.slugA}&brandB=${comp.slugB}`}
+                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-accent text-white text-sm font-semibold hover:brightness-110 transition-all"
                       >
-                        View {brandA.name} Profile &rarr;
+                        Full Side-by-Side Comparison
+                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
                       </Link>
-                      <span className="hidden sm:inline text-border">|</span>
-                      <Link
-                        href={`/brands/${brandB.slug}`}
-                        className="text-sm font-semibold text-accent hover:underline"
-                      >
-                        View {brandB.name} Profile &rarr;
+                      <Link href={`/brands/${brandA.slug}`} className="text-sm text-muted hover:text-accent transition-colors">
+                        {brandA.name} Profile
+                      </Link>
+                      <span className="hidden sm:inline text-border/50">|</span>
+                      <Link href={`/brands/${brandB.slug}`} className="text-sm text-muted hover:text-accent transition-colors">
+                        {brandB.name} Profile
                       </Link>
                     </div>
                   </div>
@@ -917,38 +928,9 @@ export default async function ComparePage({
             })}
           </div>
         </section>
+
+        </>
       )}
-
-      {/* ── All brands by category ── */}
-      <section className="border-t border-border bg-surface-alt">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <h2 className="text-2xl font-bold text-foreground mb-2">Browse by Category</h2>
-          <p className="text-sm text-muted mb-8">Select a brand from any category to begin comparing.</p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {Array.from(new Set(brands.map((b) => b.category))).map((cat) => {
-              const catBrands = brands.filter((b) => b.category === cat);
-              return (
-                <div key={cat} className="border border-border rounded-xl bg-background p-5 hover-glow">
-                  <h3 className="text-sm font-bold text-foreground mb-3">{categoryLabels[cat]}</h3>
-                  <div className="space-y-2">
-                    {catBrands.map((b) => (
-                      <Link
-                        key={b.slug}
-                        href={`/brands/${b.slug}`}
-                        className="flex items-center justify-between py-1.5 px-2 rounded-lg hover:bg-surface transition-colors group"
-                      >
-                        <span className="text-sm text-foreground group-hover:text-accent transition-colors">{b.name}</span>
-                        <span className="text-xs font-mono font-bold text-accent">{(computeProductionScores(b).coreDiligence ?? 0)}</span>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* ── CTA ── */}
       <section className="border-t border-border">

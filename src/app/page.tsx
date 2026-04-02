@@ -31,8 +31,9 @@ function scoreColor(score: number) {
 
 export default function HomePage() {
   const featuredBrands = getFeaturedBrands();
-  const topScoredBrands = getTopBrandsByScore()
+  const topScoredBrands = [...brands]
     .filter(b => b.totalUnits > 0 && b.totalInvestmentLow > 0)
+    .sort((a, b) => b.totalUnits - a.totalUnits)
     .slice(0, 6);
   const recentlyAdded = [...brands]
     .sort((a, b) => (b.lastUpdated > a.lastUpdated ? 1 : -1))
@@ -218,13 +219,13 @@ export default function HomePage() {
           <div className="flex items-end justify-between mb-10">
             <div>
               <p className="text-sm font-medium text-accent tracking-wide uppercase mb-3">
-                Highest Rated
+                Most Popular
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
-                Top 6 franchises by overall score
+                Most popular franchises
               </h2>
               <p className="mt-2 text-sm text-muted">
-                Ranked by Core Diligence — the average of System Health, Franchisor Strength, and Contract Burden scores (0–100), derived from FDD filings.
+                Ranked by total active units — the largest, most established franchise systems with FDD data on file.
               </p>
             </div>
             <Link

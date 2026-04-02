@@ -412,23 +412,25 @@ export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
                 {/* Header row */}
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex-1 min-w-0 pr-2">
-                    <h2 className="text-base font-semibold text-foreground truncate group-hover:text-accent transition-colors">
+                    <h2 className="text-lg font-bold text-foreground truncate group-hover:text-accent transition-colors">
                       {brand.name}
                     </h2>
                     <div className="flex items-center gap-1.5 mt-1 flex-wrap">
-                      <span className="text-xs text-muted">{categoryLabels[brand.category]}</span>
+                      <span className="text-sm text-muted">{categoryLabels[brand.category]}</span>
                       {(brand.dataSource === "fdd_verified" || brand.dataSource === "state_filing") && (
                         <span className="text-[10px] font-semibold text-success bg-success/10 px-1.5 py-0.5 rounded-full">FDD ✓</span>
                       )}
-                      {brand.hasItem19 && (
-                        <span className="text-[10px] font-semibold text-accent bg-accent/10 px-1.5 py-0.5 rounded-full">Item 19</span>
+                      {brand.hasItem19 ? (
+                        <span className="text-[10px] font-semibold text-accent bg-accent/10 px-1.5 py-0.5 rounded-full">Item 19 ✓</span>
+                      ) : (
+                        <span className="text-[10px] font-semibold text-muted/60 bg-surface border border-border/50 px-1.5 py-0.5 rounded-full">No Item 19</span>
                       )}
                     </div>
                   </div>
                   {/* Score */}
                   <div className="flex flex-col items-center shrink-0 gap-0.5">
-                    <span className={`text-2xl font-bold tabular-nums ${scoreTextColor(overall)}`}>{overall}</span>
-                    <span className="text-[9px] text-muted uppercase tracking-wider">score</span>
+                    <span className={`text-3xl font-bold tabular-nums ${scoreTextColor(overall)}`}>{overall}</span>
+                    <span className="text-[10px] text-muted uppercase tracking-wider">score</span>
                     <WatchButton slug={brand.slug} name={brand.name} snapshotScore={overall} snapshotRevenue={brand.item19?.grossRevenueAvg} variant="icon" />
                   </div>
                 </div>
@@ -439,31 +441,31 @@ export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
                 </div>
 
                 {/* Metrics grid */}
-                <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+                <div className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
                   <div>
-                    <span className="text-muted">Investment</span>
-                    <p className="font-medium text-foreground mt-0.5">
+                    <span className="text-xs text-muted uppercase tracking-wider">Investment</span>
+                    <p className="font-semibold text-foreground mt-1">
                       {brand.totalInvestmentLow > 0
                         ? formatInvestmentRange(brand.totalInvestmentLow, brand.totalInvestmentHigh)
-                        : <span className="text-muted italic">Not disclosed</span>}
+                        : <span className="text-muted font-normal italic">Not disclosed</span>}
                     </p>
                   </div>
                   <div>
-                    <span className="text-muted">Avg Revenue</span>
-                    <p className={`font-medium mt-0.5 ${avgRevenue ? "text-success" : "text-muted"}`}>
+                    <span className="text-xs text-muted uppercase tracking-wider">Avg Revenue</span>
+                    <p className={`font-semibold mt-1 ${avgRevenue ? "text-success" : "text-muted"}`}>
                       {avgRevenue ? `$${(avgRevenue / 1000).toFixed(0)}K` : "—"}
                     </p>
                   </div>
                   <div>
-                    <span className="text-muted">Total Units</span>
-                    <p className="font-medium text-foreground mt-0.5">
-                      {brand.totalUnits > 0 ? brand.totalUnits.toLocaleString() : <span className="text-muted italic">—</span>}
+                    <span className="text-xs text-muted uppercase tracking-wider">Total Units</span>
+                    <p className="font-semibold text-foreground mt-1">
+                      {brand.totalUnits > 0 ? brand.totalUnits.toLocaleString() : <span className="text-muted font-normal italic">—</span>}
                     </p>
                   </div>
                   <div>
-                    <span className="text-muted">Royalty</span>
-                    <p className="font-medium text-foreground mt-0.5">
-                      {brand.royaltyRate || <span className="text-muted italic">—</span>}
+                    <span className="text-xs text-muted uppercase tracking-wider">Royalty</span>
+                    <p className="font-semibold text-foreground mt-1">
+                      {brand.royaltyRate || <span className="text-muted font-normal italic">—</span>}
                     </p>
                   </div>
                 </div>
@@ -472,13 +474,13 @@ export default function BrandsClient({ brands }: { brands: FranchiseBrand[] }) {
                 {(criticalFlags > 0 || totalFlags > 0 || brand.item21?.goingConcernWarning) && (
                   <div className="mt-3 pt-3 border-t border-border flex items-center gap-2 flex-wrap">
                     {brand.item21?.goingConcernWarning && (
-                      <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-danger/15 text-danger">⚠ Going Concern</span>
+                      <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-danger/15 text-danger">⚠ Going Concern</span>
                     )}
                     {criticalFlags > 0 && (
-                      <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-danger/15 text-danger">⚠ {criticalFlags} critical flag{criticalFlags !== 1 ? "s" : ""}</span>
+                      <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-danger/15 text-danger">⚠ {criticalFlags} critical flag{criticalFlags !== 1 ? "s" : ""}</span>
                     )}
                     {totalFlags > 0 && criticalFlags === 0 && (
-                      <span className="text-[10px] text-muted">{totalFlags} flag{totalFlags !== 1 ? "s" : ""}</span>
+                      <span className="text-xs text-muted">{totalFlags} flag{totalFlags !== 1 ? "s" : ""}</span>
                     )}
                   </div>
                 )}
