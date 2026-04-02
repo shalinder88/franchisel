@@ -1,15 +1,13 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getBrandBySlug, brands } from "@/data/brands";
+import { getBrandBySlug } from "@/data/brands";
 import { computeDownsideEconomics, computeCompositeScores, computeManagementSignal, computeTerritoryRisk, computeSupplierRisk } from "@/lib/diligence";
 import { formatCurrency, formatInvestmentRange } from "@/lib/types";
 import WatchButton from "@/components/WatchButton";
 import PrintButton from "@/components/PrintButton";
 import type { Metadata } from "next";
 
-export function generateStaticParams() {
-  return brands.map((b) => ({ slug: b.slug }));
-}
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({
   params,

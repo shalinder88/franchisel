@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getBrandBySlug, brands } from "@/data/brands";
+import { getBrandBySlug } from "@/data/brands";
 import {
   generateMemo,
   computeDownsideEconomics,
@@ -21,9 +21,7 @@ import PrintButton from "./PrintButton";
 import WatchButton from "@/components/WatchButton";
 import type { Metadata } from "next";
 
-export function generateStaticParams() {
-  return brands.map((b) => ({ slug: b.slug }));
-}
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({
   params,

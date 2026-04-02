@@ -37,10 +37,8 @@ import {
 import { BrandDataDisclaimer, DataSourceBadge } from "@/components/DataDisclaimer";
 import WatchButton from "@/components/WatchButton";
 
-/* ── Static generation ── */
-export function generateStaticParams() {
-  return brands.map((b) => ({ slug: b.slug }));
-}
+/* ── Dynamic rendering — too many brands to pre-render (causes Vercel 80MB limit) ── */
+export const dynamic = 'force-dynamic';
 
 /* ── Dynamic metadata ── */
 export async function generateMetadata({
