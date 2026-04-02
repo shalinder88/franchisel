@@ -538,7 +538,7 @@ export default async function BrandPage({
                     {prodScores.coverageStatus === "economics-not-disclosed"
                       ? "Item 19 not included in FDD (voluntary per FTC)"
                       : prodScores.coverageStatus === "economics-disclosed-not-normalized"
-                      ? "Item 19 exists in FDD — data extraction pending"
+                      ? "Item 19 filed — figures not available in our database"
                       : "Not in covered-source corpus"}
                   </p>
                 </>
@@ -754,7 +754,7 @@ export default async function BrandPage({
                   <p className="text-sm text-muted mt-1">
                     {brand.hasItem19 === false
                       ? "This franchisor chose not to include a Financial Performance Representation in their FDD. Item 19 is voluntary per FTC rules — its absence does not indicate poor economics."
-                      : "Item 19 revenue data has not yet been normalized from our covered-source corpus. The franchisor may disclose financial performance in filings we have not yet processed."}
+                      : "This franchisor filed an Item 19 in their FDD, but the figures are not currently available in our database. This does not reflect the quality of the disclosure."}
                   </p>
                   <p className="text-xs text-muted mt-2">
                     Coverage status: {coverageStatusLabel(prodScores.coverageStatus)}

@@ -36,7 +36,7 @@ export default function HomePage() {
     .sort((a, b) => b.totalUnits - a.totalUnits)
     .slice(0, 6);
   const recentlyAdded = [...brands]
-    .filter(b => b.totalInvestmentLow > 0 || b.totalUnits > 0)
+    .filter(b => b.totalInvestmentLow > 0 && b.totalUnits > 0)
     .sort((a, b) => (b.lastUpdated > a.lastUpdated ? 1 : -1))
     .slice(0, 6);
   const brandsWithYoY = brands

@@ -98,13 +98,13 @@ function analyzeItem19(brand: FranchiseBrand): DiligenceMemo["item19Analysis"] {
           ? "This franchisor chose not to include a Financial Performance Representation. " +
             "Item 19 is voluntary per FTC rules. This does not indicate bad economics — " +
             "it means revenue projections cannot be sourced from the disclosure document."
-          : "Item 19 exists in this FDD but the figures have not yet been extracted into our database. " +
-            "Data extraction is pending — check back or contact us to prioritize this brand.",
+          : "This franchisor filed an Item 19, but the figures are not currently available in our database. " +
+            "This reflects a data coverage gap — not a judgment on the quality of the disclosure.",
       sampleQuality: "none",
       impliedRoiYears: null,
       citations: [brand.hasItem19 === false
         ? "Item 19 — not included in filed FDD (voluntary per FTC Franchise Rule)"
-        : "Item 19 — filed, extraction pending"],
+        : "Item 19 — filed, figures not available in database"],
     };
   }
 
@@ -1150,8 +1150,11 @@ export function getItem19ComparabilityFlags(brand: FranchiseBrand): Item19Compar
   const flags: Item19ComparabilityFlag[] = [];
   const i19 = brand.item19;
 
-  if (!brand.hasItem19 || !i19?.grossRevenueAvg) {
-    return [{ severity: "warning", label: "No Item 19", detail: "Item 19 not available in covered-source corpus. Absence should not be read as proof of poor economics — Item 19 is voluntary per FTC rules." }];
+  if (brand.hasItem19 === false) {
+    return [{ severity: "warning", label: "No Item 19", detail: "This franchisor did not include a Financial Performance Representation in their FDD. Item 19 is voluntary per FTC rules — absence does not indicate poor economics." }];
+  }
+  if (!i19?.grossRevenueAvg) {
+    return [{ severity: "info", label: "Item 19 Filed — Figures Not Available", detail: "This franchisor filed an Item 19, but the figures are not currently in our database. This flag reflects a data coverage gap, not a judgment on the disclosure." }];
   }
 
   // 1. Revenue type (expanded taxonomy)
