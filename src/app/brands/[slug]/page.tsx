@@ -372,80 +372,80 @@ export default async function BrandPage({
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Total Investment */}
             <div className="rounded-xl border border-border bg-background p-5">
-              <p className="text-xs text-muted uppercase tracking-wider mb-1">Total Investment</p>
+              <p className="text-sm text-muted uppercase tracking-wider mb-1">Total Investment</p>
               {effectiveGovVerified ? (
                 <>
-                  <p className="text-lg font-semibold text-foreground">
+                  <p className="text-xl font-bold text-foreground">
                     {formatInvestmentRange(brand.totalInvestmentLow, brand.totalInvestmentHigh)}
                   </p>
-                  <p className="text-xs text-muted mt-1">Initial fee: {formatCurrency(brand.initialFranchiseFee)}</p>
+                  <p className="text-sm text-muted mt-1">Initial fee: {formatCurrency(brand.initialFranchiseFee)}</p>
                 </>
               ) : (
                 <>
-                  <p className="text-lg font-semibold text-muted">Verification pending</p>
-                  <p className="text-xs text-muted mt-1">Gov FDD source only</p>
+                  <p className="text-xl font-bold text-muted">Verification pending</p>
+                  <p className="text-sm text-muted mt-1">Gov FDD source only</p>
                 </>
               )}
             </div>
 
             {/* Average Revenue */}
             <div className="rounded-xl border border-border bg-background p-5">
-              <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg Revenue (Item 19)</p>
+              <p className="text-sm text-muted uppercase tracking-wider mb-1">Avg Revenue (Item 19)</p>
               {effectiveGovVerified ? (
                 brand.hasItem19 && brand.item19?.grossRevenueAvg ? (
                   <>
-                    <p className="text-lg font-semibold text-foreground">
+                    <p className="text-xl font-bold text-foreground">
                       {formatCurrency(brand.item19.grossRevenueAvg)}
                     </p>
-                    <p className="text-xs text-muted mt-1">{brand.item19.revenueType === "net" ? "Net" : "Gross"} revenue, {brand.fddYear} FDD</p>
+                    <p className="text-sm text-muted mt-1">{brand.item19.revenueType === "net" ? "Net" : "Gross"} revenue, {brand.fddYear} FDD</p>
                   </>
                 ) : (
                   <>
-                    <p className="text-lg font-semibold text-muted">Not Available</p>
-                    <p className="text-xs text-muted mt-1">{coverageStatusLabel(prodScores.coverageStatus)}</p>
+                    <p className="text-xl font-bold text-muted">Not Available</p>
+                    <p className="text-sm text-muted mt-1">{coverageStatusLabel(prodScores.coverageStatus)}</p>
                   </>
                 )
               ) : (
                 <>
-                  <p className="text-lg font-semibold text-muted">Verification pending</p>
-                  <p className="text-xs text-muted mt-1">Gov FDD source only</p>
+                  <p className="text-xl font-bold text-muted">Verification pending</p>
+                  <p className="text-sm text-muted mt-1">Gov FDD source only</p>
                 </>
               )}
             </div>
 
             {/* Royalty */}
             <div className="rounded-xl border border-border bg-background p-5">
-              <p className="text-xs text-muted uppercase tracking-wider mb-1">Royalty Rate</p>
+              <p className="text-sm text-muted uppercase tracking-wider mb-1">Royalty Rate</p>
               {effectiveGovVerified ? (
                 <>
-                  <p className="text-lg font-semibold text-foreground">{brand.royaltyRate}</p>
-                  <p className="text-xs text-muted mt-1">{brand.fddYear} FDD</p>
+                  <p className="text-xl font-bold text-foreground">{brand.royaltyRate}</p>
+                  <p className="text-sm text-muted mt-1">{brand.fddYear} FDD</p>
                 </>
               ) : (
                 <>
-                  <p className="text-lg font-semibold text-muted">Verification pending</p>
-                  <p className="text-xs text-muted mt-1">Gov FDD source only</p>
+                  <p className="text-xl font-bold text-muted">Verification pending</p>
+                  <p className="text-sm text-muted mt-1">Gov FDD source only</p>
                 </>
               )}
             </div>
 
             {/* Total Units */}
             <div className="rounded-xl border border-border bg-background p-5">
-              <p className="text-xs text-muted uppercase tracking-wider mb-1">Total Units</p>
+              <p className="text-sm text-muted uppercase tracking-wider mb-1">Total Units</p>
               {effectiveGovVerified ? (
                 <>
-                  <p className="text-lg font-semibold text-foreground">
+                  <p className="text-xl font-bold text-foreground">
                     {brand.totalUnits.toLocaleString()}
                   </p>
-                  <p className="text-xs text-muted mt-1">
+                  <p className="text-sm text-muted mt-1">
                     {brand.franchisedUnits.toLocaleString()} franchised &middot;{" "}
                     {brand.companyOwnedUnits.toLocaleString()} company
                   </p>
                 </>
               ) : (
                 <>
-                  <p className="text-lg font-semibold text-muted">Verification pending</p>
-                  <p className="text-xs text-muted mt-1">Gov FDD source only</p>
+                  <p className="text-xl font-bold text-muted">Verification pending</p>
+                  <p className="text-sm text-muted mt-1">Gov FDD source only</p>
                 </>
               )}
             </div>
@@ -455,7 +455,7 @@ export default async function BrandPage({
         {/* ── 2. Production Scores ── */}
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-1">Diligence Scores</h2>
-          <p className="text-xs text-muted mb-4">
+          <p className="text-sm text-muted mb-4">
             Computed from government-filed FDD data. Each score is 0–100. Methodology is public and citation-backed.
           </p>
 
