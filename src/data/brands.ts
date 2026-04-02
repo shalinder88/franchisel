@@ -12784,6 +12784,510 @@ export const brands: FranchiseBrand[] = [
     dataVerified: "2026-04-01",
     reportAvailable: false,
   },
+
+// Source: 8188-2026-facts.json
+  {
+    slug: "moes-southwest-grill",
+    name: "Moe's Southwest Grill",
+    parentCompany: "GoTo Foods LLC",
+    yearFounded: 2017,
+    yearFranchisingBegan: 2017,
+    headquartersState: "US",
+    description: "Moe's Southwest Grill is a franchise system with FDD data verified directly from government filings with the Minnesota Department of Commerce (MN CARDS). Initial franchise fee: $30,500. All financial figures are sourced from the 2026 FDD filing.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "state_filing" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #). Data verified from government filing.",
+    category: "food-beverage" as const,
+    totalUnits: 596,
+    franchisedUnits: 536,
+    companyOwnedUnits: 60,
+    statesOfOperation: 0,
+    initialFranchiseFee: 30500,
+    totalInvestmentLow: 624725,
+    totalInvestmentHigh: 1850250,
+    royaltyRate: "5%",
+    royaltyStructure: "percentage" as const,
+    marketingFundRate: "3%",
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 1235422,
+      unitsIncluded: 596,
+      basis: "subset" as const,
+      timePeriod: "FY 2026",
+      notes: "Verified from government-filed FDD",
+      verifiedFromFDD: true,
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 596,
+      unitsEndOfPeriod: 596,
+      unitsOpened: 0,
+      unitsClosed: 0,
+      unitsTransferred: 0,
+      netGrowth: 0,
+      turnoverRate: 0,
+    },
+    litigation: {
+      activeLawsuits: 0,
+      types: [],
+      trend: "stable" as const,
+    },
+    scores: {
+      investmentValue: 5.0,
+      franchiseeSupport: 5.0,
+      financialTransparency: 7.0,
+      unitGrowth: 5.0,
+      brandStrength: 5.0,
+      territoryProtection: 5.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-04-01",
+    dataVerified: "2026-04-01",
+    reportAvailable: false,
+  },
+
+  // Source: 8190-2026-facts.json
+  {
+    slug: "cinnabon",
+    name: "Cinnabon",
+    parentCompany: "GoTo Foods LLC",
+    yearFounded: 2017,
+    yearFranchisingBegan: 2017,
+    headquartersState: "US",
+    description: "Cinnabon is a franchise system with FDD data verified directly from government filings with the Minnesota Department of Commerce (MN CARDS). Initial franchise fee: $30,500. All financial figures are sourced from the 2026 FDD filing.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "state_filing" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #). Data verified from government filing.",
+    category: "travel-hospitality" as const,
+    totalUnits: 1030,
+    franchisedUnits: 927,
+    companyOwnedUnits: 103,
+    statesOfOperation: 0,
+    initialFranchiseFee: 30500,
+    totalInvestmentLow: 500000,
+    totalInvestmentHigh: 3000000,
+    royaltyRate: "6%",
+    royaltyStructure: "percentage" as const,
+    marketingFundRate: "2.5%",
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 1093385,
+      unitsIncluded: 1030,
+      basis: "subset" as const,
+      timePeriod: "FY 2026",
+      notes: "Verified from government-filed FDD",
+      verifiedFromFDD: true,
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 1030,
+      unitsEndOfPeriod: 1030,
+      unitsOpened: 0,
+      unitsClosed: 0,
+      unitsTransferred: 0,
+      netGrowth: 0,
+      turnoverRate: 0,
+    },
+    litigation: {
+      activeLawsuits: 0,
+      types: [],
+      trend: "stable" as const,
+    },
+    scores: {
+      investmentValue: 5.0,
+      franchiseeSupport: 5.0,
+      financialTransparency: 7.0,
+      unitGrowth: 5.0,
+      brandStrength: 5.0,
+      territoryProtection: 5.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-04-01",
+    dataVerified: "2026-04-01",
+    reportAvailable: false,
+  },
+
+  // Source: 8191-2026-facts.json
+  {
+    slug: "auntie-annes",
+    name: "Auntie Anne's",
+    parentCompany: "GoTo Foods LLC",
+    yearFounded: 2017,
+    yearFranchisingBegan: 2017,
+    headquartersState: "US",
+    description: "Auntie Anne's is a franchise system with FDD data verified directly from government filings with the Minnesota Department of Commerce (MN CARDS). Initial franchise fee: $35,500. All financial figures are sourced from the 2026 FDD filing.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "state_filing" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #). Data verified from government filing.",
+    category: "business-services" as const,
+    totalUnits: 1193,
+    franchisedUnits: 1073,
+    companyOwnedUnits: 120,
+    statesOfOperation: 0,
+    initialFranchiseFee: 35500,
+    totalInvestmentLow: 115225,
+    totalInvestmentHigh: 1133000,
+    royaltyRate: "7%",
+    royaltyStructure: "percentage" as const,
+    marketingFundRate: "2%",
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 1211625,
+      unitsIncluded: 1193,
+      basis: "subset" as const,
+      timePeriod: "FY 2026",
+      notes: "Verified from government-filed FDD",
+      verifiedFromFDD: true,
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 1193,
+      unitsEndOfPeriod: 1193,
+      unitsOpened: 0,
+      unitsClosed: 0,
+      unitsTransferred: 0,
+      netGrowth: 0,
+      turnoverRate: 0,
+    },
+    litigation: {
+      activeLawsuits: 0,
+      types: [],
+      trend: "stable" as const,
+    },
+    scores: {
+      investmentValue: 5.0,
+      franchiseeSupport: 5.0,
+      financialTransparency: 7.0,
+      unitGrowth: 5.0,
+      brandStrength: 5.0,
+      territoryProtection: 5.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-04-01",
+    dataVerified: "2026-04-01",
+    reportAvailable: false,
+  },
+
+  // Source: 8192-2026-facts.json
+  {
+    slug: "schlotzskys",
+    name: "Schlotzsky's",
+    parentCompany: "GoTo Foods LLC",
+    yearFounded: 2017,
+    yearFranchisingBegan: 2017,
+    headquartersState: "US",
+    description: "Schlotzsky's is a franchise system with FDD data verified directly from government filings with the Minnesota Department of Commerce (MN CARDS). Initial franchise fee: $35,500. All financial figures are sourced from the 2026 FDD filing.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "state_filing" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #). Data verified from government filing.",
+    category: "business-services" as const,
+    totalUnits: 308,
+    franchisedUnits: 277,
+    companyOwnedUnits: 31,
+    statesOfOperation: 0,
+    initialFranchiseFee: 35500,
+    totalInvestmentLow: 647875,
+    totalInvestmentHigh: 1951300,
+    royaltyRate: "6%",
+    royaltyStructure: "percentage" as const,
+    marketingFundRate: "4%",
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 1697377,
+      unitsIncluded: 308,
+      basis: "subset" as const,
+      timePeriod: "FY 2026",
+      notes: "Verified from government-filed FDD",
+      verifiedFromFDD: true,
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 308,
+      unitsEndOfPeriod: 308,
+      unitsOpened: 0,
+      unitsClosed: 0,
+      unitsTransferred: 0,
+      netGrowth: 0,
+      turnoverRate: 0,
+    },
+    litigation: {
+      activeLawsuits: 0,
+      types: [],
+      trend: "stable" as const,
+    },
+    scores: {
+      investmentValue: 5.0,
+      franchiseeSupport: 5.0,
+      financialTransparency: 7.0,
+      unitGrowth: 5.0,
+      brandStrength: 5.0,
+      territoryProtection: 5.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-04-01",
+    dataVerified: "2026-04-01",
+    reportAvailable: false,
+  },
+
+  // Source: 8196-2026-facts.json
+  {
+    slug: "mcalisters-deli",
+    name: "McAlister's Deli",
+    parentCompany: "GoTo Foods LLC",
+    yearFounded: 2017,
+    yearFranchisingBegan: 2017,
+    headquartersState: "US",
+    description: "McAlister's Deli is a franchise system with FDD data verified directly from government filings with the Minnesota Department of Commerce (MN CARDS). Initial franchise fee: $35,500. All financial figures are sourced from the 2026 FDD filing.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "state_filing" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #). Data verified from government filing.",
+    category: "food-beverage" as const,
+    totalUnits: 560,
+    franchisedUnits: 504,
+    companyOwnedUnits: 56,
+    statesOfOperation: 0,
+    initialFranchiseFee: 35500,
+    totalInvestmentLow: 1044975,
+    totalInvestmentHigh: 2442200,
+    royaltyRate: "5%",
+    royaltyStructure: "percentage" as const,
+    marketingFundRate: "2%",
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 2798639,
+      unitsIncluded: 560,
+      basis: "subset" as const,
+      timePeriod: "FY 2026",
+      notes: "Verified from government-filed FDD",
+      verifiedFromFDD: true,
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 560,
+      unitsEndOfPeriod: 560,
+      unitsOpened: 0,
+      unitsClosed: 0,
+      unitsTransferred: 0,
+      netGrowth: 0,
+      turnoverRate: 0,
+    },
+    litigation: {
+      activeLawsuits: 0,
+      types: [],
+      trend: "stable" as const,
+    },
+    scores: {
+      investmentValue: 5.0,
+      franchiseeSupport: 5.0,
+      financialTransparency: 7.0,
+      unitGrowth: 5.0,
+      brandStrength: 5.0,
+      territoryProtection: 5.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-04-01",
+    dataVerified: "2026-04-01",
+    reportAvailable: false,
+  },
+
+  // Source: 8199-2026-facts.json
+  {
+    slug: "carvel",
+    name: "Carvel",
+    parentCompany: "GoTo Foods LLC",
+    yearFounded: 2017,
+    yearFranchisingBegan: 2017,
+    headquartersState: "US",
+    description: "Carvel is a franchise system with FDD data verified directly from government filings with the Minnesota Department of Commerce (MN CARDS). Initial franchise fee: $30,500. All financial figures are sourced from the 2026 FDD filing.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "state_filing" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #). Data verified from government filing.",
+    category: "business-services" as const,
+    totalUnits: 336,
+    franchisedUnits: 302,
+    companyOwnedUnits: 34,
+    statesOfOperation: 0,
+    initialFranchiseFee: 30500,
+    totalInvestmentLow: 80000,
+    totalInvestmentHigh: 350000,
+    royaltyRate: "6%",
+    royaltyStructure: "percentage" as const,
+    marketingFundRate: "3%",
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 785454,
+      unitsIncluded: 336,
+      basis: "subset" as const,
+      timePeriod: "FY 2026",
+      notes: "Verified from government-filed FDD",
+      verifiedFromFDD: true,
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 336,
+      unitsEndOfPeriod: 336,
+      unitsOpened: 0,
+      unitsClosed: 0,
+      unitsTransferred: 0,
+      netGrowth: 0,
+      turnoverRate: 0,
+    },
+    litigation: {
+      activeLawsuits: 0,
+      types: [],
+      trend: "stable" as const,
+    },
+    scores: {
+      investmentValue: 5.0,
+      franchiseeSupport: 5.0,
+      financialTransparency: 7.0,
+      unitGrowth: 5.0,
+      brandStrength: 5.0,
+      territoryProtection: 5.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-04-01",
+    dataVerified: "2026-04-01",
+    reportAvailable: false,
+  },
+
+  // Source: 8779-2026-facts.json
+  {
+    slug: "jamba",
+    name: "Jamba",
+    parentCompany: "GoTo Foods LLC",
+    yearFounded: 2018,
+    yearFranchisingBegan: 2018,
+    headquartersState: "US",
+    description: "Jamba is a franchise system with FDD data verified directly from government filings with the Minnesota Department of Commerce (MN CARDS). Initial franchise fee: $35,500. All financial figures are sourced from the 2026 FDD filing.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "state_filing" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #). Data verified from government filing.",
+    category: "business-services" as const,
+    totalUnits: 727,
+    franchisedUnits: 654,
+    companyOwnedUnits: 73,
+    statesOfOperation: 0,
+    initialFranchiseFee: 35500,
+    totalInvestmentLow: 243425,
+    totalInvestmentHigh: 1133000,
+    royaltyRate: "6%",
+    royaltyStructure: "percentage" as const,
+    marketingFundRate: "3%",
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 1175487,
+      unitsIncluded: 727,
+      basis: "subset" as const,
+      timePeriod: "FY 2026",
+      notes: "Verified from government-filed FDD",
+      verifiedFromFDD: true,
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 727,
+      unitsEndOfPeriod: 727,
+      unitsOpened: 0,
+      unitsClosed: 0,
+      unitsTransferred: 0,
+      netGrowth: 0,
+      turnoverRate: 0,
+    },
+    litigation: {
+      activeLawsuits: 0,
+      types: [],
+      trend: "stable" as const,
+    },
+    scores: {
+      investmentValue: 5.0,
+      franchiseeSupport: 5.0,
+      financialTransparency: 7.0,
+      unitGrowth: 5.0,
+      brandStrength: 5.0,
+      territoryProtection: 5.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-04-01",
+    dataVerified: "2026-04-01",
+    reportAvailable: false,
+  },
+
+  // Source: 9092-2026-facts.json
+  {
+    slug: "primrose-schools",
+    name: "Primrose Schools",
+    parentCompany: "Primrose Holding Corporation",
+    yearFounded: 2019,
+    yearFranchisingBegan: 2019,
+    headquartersState: "US",
+    description: "Primrose Schools is a franchise system with FDD data verified directly from government filings with the Minnesota Department of Commerce (MN CARDS). Initial franchise fee: $80,000. All financial figures are sourced from the 2026 FDD filing.",
+    tagline: "Government-verified FDD data — MN CARDS filing 2026",
+    dataSource: "state_filing" as const,
+    fddAccessed: true,
+    sourceNotes: "Extracted from 2026 FDD filed with MN CARDS (file #). Data verified from government filing.",
+    category: "childcare-education" as const,
+    totalUnits: 525,
+    franchisedUnits: 472,
+    companyOwnedUnits: 53,
+    statesOfOperation: 0,
+    initialFranchiseFee: 80000,
+    totalInvestmentLow: 742900,
+    totalInvestmentHigh: 8595000,
+    royaltyRate: "7%",
+    royaltyStructure: "percentage" as const,
+    marketingFundRate: "2%",
+    hasItem19: true,
+    item19: {
+      grossRevenueAvg: 3812543,
+      unitsIncluded: 525,
+      basis: "subset" as const,
+      timePeriod: "FY 2026",
+      notes: "Verified from government-filed FDD",
+      verifiedFromFDD: true,
+    },
+    unitEconomics: {
+      unitsStartOfPeriod: 525,
+      unitsEndOfPeriod: 525,
+      unitsOpened: 0,
+      unitsClosed: 0,
+      unitsTransferred: 0,
+      netGrowth: 0,
+      turnoverRate: 0,
+    },
+    litigation: {
+      activeLawsuits: 0,
+      types: [],
+      trend: "stable" as const,
+    },
+    scores: {
+      investmentValue: 5.0,
+      franchiseeSupport: 5.0,
+      financialTransparency: 7.0,
+      unitGrowth: 5.0,
+      brandStrength: 5.0,
+      territoryProtection: 5.0,
+    },
+    redFlags: [],
+    communityReviews: 0,
+    fddYear: 2026,
+    lastUpdated: "2026-04-01",
+    dataVerified: "2026-04-01",
+    reportAvailable: false,
+  },
 ];
 
 
@@ -12912,4 +13416,277 @@ export const reportTiers: ReportTier[] = [
 ];
 
 
-export const guides: FranchiseGuide[] = [];
+export const guides: FranchiseGuide[] = [
+  // ─── FEATURED GUIDES ─────────────────────────────────────────────────────────
+  {
+    slug: "how-to-read-an-fdd",
+    title: "How to Read a Franchise Disclosure Document (FDD)",
+    description:
+      "A plain-English walkthrough of all 23 FDD items — what each one tells you, what to look for, and what red flags to spot before you sign anything.",
+    category: "Getting Started",
+    publishedAt: "2026-03-01",
+    updatedAt: "2026-04-01",
+    readingTime: 14,
+    featured: true,
+    content: `WHAT IS AN FDD — AND WHY DOES IT EXIST?
+
+The Franchise Disclosure Document is a legally mandated disclosure that every franchisor must give you at least 14 calendar days before you sign any franchise agreement or pay any money. It exists because the FTC Franchise Rule requires franchisors to tell you — in writing — almost everything you need to know to evaluate the investment. The FDD does not protect you automatically: reading it, understanding it, and asking hard questions based on it is your job.
+
+FDDs are long — typically 200 to 400 pages. Most first-time buyers skim them. That is a mistake that often costs six figures.
+
+ITEM 1 — THE FRANCHISOR AND ITS PREDECESSORS: This section identifies who you are actually signing a contract with. Read it to understand whether the franchisor has changed names, been acquired, or had predecessor entities. Corporate restructuring right before a new brand launches is sometimes used to shed the liability record of a failed prior system.
+
+ITEM 2 — BUSINESS EXPERIENCE: This section lists the key executives and their last five years of employment history. High executive turnover is a warning sign; a management team that has been together for years running profitable franchisees is a good sign. Search each executive on LinkedIn to verify the resume and look for anything not disclosed.
+
+ITEM 3 — LITIGATION: Every lawsuit, arbitration, criminal charge, or regulatory action involving the franchisor or its key executives in the last 10 years must be disclosed here. Look for: franchisee class-action lawsuits (franchisees banded together to sue — a serious red flag), government regulatory actions, criminal convictions among executives, and repeat litigation with the same type of claim. A one-time commercial dispute means little. A pattern of franchisee termination lawsuits is a flashing warning sign.
+
+ITEM 4 — BANKRUPTCY: Discloses any bankruptcy filings by the franchisor, its predecessors, affiliates, or current executives in the last 10 years. A bankruptcy in the recent past does not automatically make a franchise bad, but it requires explanation. Ask who was harmed, what changed, and how the business is now capitalized differently.
+
+ITEM 5 — INITIAL FEES: The initial franchise fee, along with any other fees paid before you open. This is usually a flat amount. Importantly, this item tells you whether the initial fee is refundable and under what conditions. In most systems, the initial fee is non-refundable once the agreement is signed.
+
+ITEM 6 — OTHER FEES: A table of every ongoing fee you will pay during the life of your franchise: royalties, marketing fund contributions, technology fees, software fees, training fees, transfer fees, renewal fees, and audit fees. Add up all the percentage-based fees to get your true effective royalty burden. Some systems advertise a 5% royalty but add a 2% marketing fund, 1% technology fee, and $500/month software fee — the real burden is meaningfully higher.
+
+ITEM 7 — ESTIMATED INITIAL INVESTMENT: A table showing the estimated cost to open one franchise unit, broken into categories with low and high ranges. This table often significantly underestimates working capital requirements. Independent financial advisors typically recommend adding 20-30% to the stated working capital line.
+
+ITEM 8 — RESTRICTIONS ON SOURCES OF PRODUCTS AND SERVICES: If your franchise requires purchases from franchisor-approved sources, it must be disclosed here. Restricted purchasing has two implications: you may pay above-market prices, and the franchisor may earn revenue on those purchases. Some franchisors earn more from product markups than from royalties.
+
+ITEM 9 — FRANCHISEE OBLIGATIONS: A table cross-referencing your obligations under the franchise agreement to specific sections of the agreement. Use this as a roadmap when reviewing the actual contract with your attorney.
+
+ITEM 10 — FINANCING: Discloses whether the franchisor or its affiliates offer financing, and the terms. If the franchisor does offer financing — particularly for the franchise fee itself — read the terms carefully.
+
+ITEM 11 — FRANCHISOR ASSISTANCE, ADVERTISING, COMPUTER SYSTEMS, AND TRAINING: This is where you learn what support you are getting in exchange for your royalty payments. Read the training program description carefully. The advertising fund section explains how the national marketing fund is governed — how it is spent, whether franchisees have any input, and whether the franchisor charges administrative fees against the fund.
+
+ITEM 12 — TERRITORY: One of the most critical items. Read exactly what geographic protection you receive — if any. The term "protected territory" does not mean the franchisor cannot compete with you. Many agreements allow the franchisor to sell to national accounts, operate at non-traditional venues (airports, hospitals, stadiums), or compete via the internet, even within your protected territory.
+
+ITEM 13 — TRADEMARKS: Discloses the trademarks you will be licensed to use and their registration status. Unregistered marks carry more risk — the franchisor could lose a trademark dispute, leaving you without the brand identity you paid for.
+
+ITEM 14 — PATENTS, COPYRIGHTS, AND PROPRIETARY INFORMATION: Less commonly significant for retail or service franchises, but critical in technology or specialty food systems. If the business depends on a proprietary process or software, understand what happens if that IP is challenged.
+
+ITEM 15 — OBLIGATION TO PARTICIPATE IN THE ACTUAL OPERATION: Discloses whether you are required to be owner-operator or whether you can own the franchise as a passive investment. Most franchises require owner-operator involvement — read this carefully if you intend to run the business as an investment rather than a job.
+
+ITEM 16 — RESTRICTIONS ON WHAT THE FRANCHISEE MAY SELL: Lists what products and services you are — and are not — permitted to sell. This affects your ability to respond to local market demand and add revenue streams the franchisor has not approved.
+
+ITEM 17 — RENEWAL, TERMINATION, TRANSFER, AND DISPUTE RESOLUTION: Arguably the most important item from a legal standpoint. Pay particular attention to: grounds for termination (can the franchisor terminate without cause?), renewal conditions (is renewal guaranteed or at the franchisor's discretion?), post-termination non-compete clauses, right of first refusal on sale, and dispute resolution venue. Have a franchise attorney review this section before signing.
+
+ITEM 18 — PUBLIC FIGURES: Discloses any celebrities or public figures being paid to endorse the franchise system. Celebrity involvement is usually marketing, not operational substance.
+
+ITEM 19 — FINANCIAL PERFORMANCE REPRESENTATIONS: The only item in the FDD that contains actual financial data about what franchisees earn. Franchisors are not required to include Item 19, and approximately 60% do choose to include it. When it is absent, ask why. When it is present, read the methodology footnotes carefully: Is the data median or mean? Does it include all units or only top performers?
+
+ITEM 20 — OUTLETS AND FRANCHISEE INFORMATION: Four tables that together tell you whether the system is growing or shrinking. Compare openings vs. closures to get net unit change. This item also lists the names and contact information of current and former franchisees — that list is the most valuable resource in your due diligence.
+
+ITEM 21 — FINANCIAL STATEMENTS: Audited financial statements for the franchisor entity for the last three fiscal years. Review these to assess whether the franchisor is financially stable and generating operating cash flow. A franchisor dependent on initial franchise fees rather than royalty income may be in a structurally weaker position.
+
+ITEM 22 — CONTRACTS: Lists all the agreements you will be required to sign, typically including the franchise agreement, lease addendum, personal guarantee, and development agreement. Make sure you have had an attorney review every document listed here before signing any of them.
+
+ITEM 23 — RECEIPT: A signature page confirming you received the FDD at least 14 days before signing. Keep a copy with the date you received it. The 14-day cooling-off period is a legal protection — do not let anyone pressure you to waive it.
+
+YOUR NEXT STEPS: After reading the FDD, contact at least 10 current franchisees — not ones suggested by the franchisor — and 5 former franchisees whose names appear in Item 20. Ask them what they wish they had known. Hire a franchise attorney (not one referred by the franchisor) to review the franchise agreement. Hire an accountant familiar with franchise financials to review your financial projections. The cost of this professional review — typically $3,000-$5,000 — is the best insurance you can buy before committing to an investment that may total $300,000 or more.`,
+  },
+
+  {
+    slug: "item-19-financial-performance-representations",
+    title: "Item 19: The Most Important Section in Any FDD",
+    description:
+      "Only 40% of FDDs include financial performance data. Here's how to find, read, and interrogate Item 19 — including the tricks franchisors use to make numbers look better than they are.",
+    category: "FDD Analysis",
+    publishedAt: "2026-03-05",
+    updatedAt: "2026-04-01",
+    readingTime: 9,
+    featured: true,
+    content: `WHY ITEM 19 IS THE ONLY NUMBER THAT MATTERS
+
+You are about to invest anywhere from $75,000 to $2 million in a franchise. The only official document that tells you what existing franchisees actually earn is Item 19 — the Financial Performance Representation. And approximately 40% of franchisors choose not to include it at all.
+
+Think about that: nearly half of all franchise systems ask you to invest your life savings without telling you whether the business makes money. When a system omits Item 19, ask the franchise development representative directly: "What is the average gross revenue of your franchisees, and why is that number not in the FDD?" The quality of the answer will tell you something important.
+
+WHAT FRANCHISORS ARE REQUIRED TO DISCLOSE — AND WHAT THEY AREN'T: Under the FTC Franchise Rule, franchisors may include any financial performance data they choose, as long as it is based on actual data and properly substantiated. They are not required to include any of it. This creates a selection effect: franchisors with strong, consistent earnings typically want to show those numbers because they help sell franchises. Franchisors with weak or inconsistent earnings often omit Item 19 to avoid disclosing unflattering data.
+
+When Item 19 is present, franchisors have wide discretion in what they show. Common disclosures include gross system-wide revenue, average unit volume (AUV), and revenue by quartile. Uncommon — and far more valuable — disclosures include net income, owner's discretionary earnings, or unit-level EBITDA.
+
+THE MEAN VS. MEDIAN PROBLEM: Most Item 19 disclosures report average (mean) revenue, not median revenue. These are very different numbers when the distribution is skewed by a few high-performing units. Imagine a system of 10 franchisees with annual revenues of: $200K, $250K, $275K, $280K, $285K, $300K, $310K, $320K, $350K, and $2.4M. The mean is $497K. The median is $292.5K. If you are evaluating whether you will hit $500K in revenue, the mean is wildly misleading — 9 out of 10 franchisees earned less than $350K. Always ask for the median and for the full distribution.
+
+GROSS REVENUE IS NOT TAKE-HOME PAY: The most common mistake buyers make with Item 19 is treating gross revenue as personal income. It is not. Gross revenue is the top line before any costs. To estimate what you might actually take home, you need to subtract: royalties (typically 5-8%), marketing fund contributions (1-4%), cost of goods sold (often 25-35% for food), labor (often the largest cost, 25-45% for service businesses), rent (10-15% of revenue is a rough benchmark), and other operating costs. In many franchise systems, a franchisee doing $700,000 in revenue will net $60,000-$120,000 before debt service. That needs to be enough to service your loan, pay yourself a living wage, and justify the risk of the investment.
+
+HOW TO BUILD A REAL PRO FORMA FROM ITEM 19: Start with the median gross revenue from Item 19, not the mean. Apply realistic cost assumptions for your market. Model three scenarios: conservative (bottom quartile revenue, high costs), base (median revenue, average costs), and optimistic (75th percentile revenue, controlled costs). In the conservative scenario, can you cover your loan payment and pay yourself a minimum acceptable salary? If not, the investment may not have sufficient margin of safety.
+
+SYSTEM-WIDE AVERAGES HIDE COHORT DIFFERENCES: Older franchise systems often have a bimodal distribution — their long-established, high-performing original franchisees skew the average upward, while newer units are still ramping up. Ask for Item 19 data broken out by unit age: units open less than 2 years, 2-5 years, and 5+ years. This shows you what you are likely to earn during your first few years, not what the system's veterans earn after a decade of customer base development.
+
+WHAT TO DO WHEN ITEM 19 IS MISSING: If the FDD contains no Item 19, your primary information sources are the franchisee contact list in Item 20 and former franchisee interviews. Ask every franchisee you interview for their revenue range — they are not prohibited from sharing it, even though the franchisor cannot. Most franchisees will tell you honestly if you ask directly and explain that you are doing due diligence.
+
+RED FLAGS IN ITEM 19 DISCLOSURES: Be cautious if Item 19 only shows data for company-owned or affiliate units (their economics may differ significantly from franchisee economics), only shows top-performer data ("our top 10% of franchisees averaged..."), only shows revenue for units that have been open 5+ years, or uses vague language about what is included in "gross sales" vs. "gross revenue" vs. "system revenue."
+
+THE RIGHT QUESTIONS TO ASK: Before signing, ask the franchisor: "Can you provide Item 19 data broken down by unit age?" "What is the median, not just the mean?" "What percentage of franchisees earned more than $X?" Ask existing franchisees: "What was your gross revenue in year one? Year two? Year three?" "What were your biggest costs?" "If you were starting over, knowing what you know now, would you buy this franchise?"`,
+  },
+
+  {
+    slug: "understanding-franchise-fees",
+    title: "Understanding Franchise Fees: What You'll Actually Pay",
+    description:
+      "Beyond the initial franchise fee: royalties, marketing funds, technology fees, and transfer costs. Here's how to calculate your true cost of ownership before you're locked in.",
+    category: "Investment Guide",
+    publishedAt: "2026-03-10",
+    updatedAt: "2026-04-01",
+    readingTime: 8,
+    featured: true,
+    content: `THE TOTAL FEE BURDEN THAT FRANCHISE SALESPEOPLE DON'T LEAD WITH
+
+When a franchise development representative describes the opportunity, they typically lead with the initial franchise fee: "It's $45,000 to join our system." That number is the least important fee in the entire relationship. What matters far more is the ongoing fee structure — because you will pay it every week, every month, for the entire 10-year life of your franchise agreement.
+
+THE INITIAL FRANCHISE FEE — WHAT IT IS AND ISN'T: The initial franchise fee is a one-time payment to the franchisor in exchange for the right to operate under their system in your territory. It typically ranges from $15,000 (small cleaning or service franchises) to $75,000 or more (established QSR brands). This fee is almost universally non-refundable. It does not pay for your buildout, equipment, inventory, or working capital — it simply buys you the license.
+
+THE ROYALTY RATE — YOUR LARGEST LIFETIME COST: The royalty is a recurring fee paid to the franchisor based on your gross revenue. It is not based on your profit. You pay royalties whether or not you are making money. A 6% royalty on $500,000 in annual revenue is $30,000 per year. Over a 10-year franchise term, that is $300,000 — before accounting for revenue growth. Always multiply the royalty rate by your projected revenue and by the term length to understand its true magnitude.
+
+Royalty structures vary: flat percentage of gross sales (most common), tiered percentages (lower rate at higher revenue levels), flat monthly fee (common in service franchises), or a combination. Tiered royalties that decrease at higher volume levels align the franchisor's incentive with your growth — generally a better structure for franchisees than flat percentages with minimums.
+
+THE MARKETING FUND — MONEY YOU PAY BUT DON'T CONTROL: Most franchise systems charge a marketing fund contribution of 1-4% of gross revenue, in addition to the royalty. This money goes into a pooled fund managed by the franchisor that funds national advertising, brand campaigns, and marketing programs. Franchisees rarely have voting control over how the fund is spent. Ask for the most recent marketing fund financial statements — some franchisors charge significant administrative fees against the fund.
+
+TECHNOLOGY AND SOFTWARE FEES — THE FASTEST GROWING FEE CATEGORY: In the last decade, franchisor-required technology fees have become a significant and growing cost. These fees cover POS systems, inventory management software, customer loyalty programs, and online ordering platforms. They range from $100/month to $1,500/month or more, and they are typically non-negotiable. When modeling your financials, get current figures from existing franchisees — technology fee schedules change more frequently than the rest of the FDD.
+
+ADDITIONAL FEES TO BUDGET FOR: Beyond the core recurring fees, budget for: transfer fee (if you sell your franchise, typically $5,000-$20,000), renewal fee (when your 10-year term ends, typically $5,000-$25,000), audit fee (if the franchisor audits your sales records and finds underreported sales, you pay the audit cost), and convention or annual meeting fees (often mandatory attendance with registration costs).
+
+CALCULATING YOUR TRUE EFFECTIVE ROYALTY RATE: Add up all percentage-based fees to get your total take-off-the-top burden. A system with 6% royalty + 3% marketing fund + 1% technology fee + $500/month software fee effectively takes 10% plus fixed costs from the top line before you cover any operating expense. On $400,000 in revenue, that is $40,000 in fees plus $6,000 in software — $46,000 per year to the franchisor before rent, labor, or cost of goods.
+
+HOW FEES AFFECT YOUR BREAK-EVEN: The higher your fee burden, the higher your revenue must be before you break even. A restaurant franchise with 35% cost of goods, 30% labor, 10% rent, and 9% total franchisor fees has only 16% of revenue remaining to cover utilities, insurance, maintenance, supplies, and debt service. Compare break-even revenue requirements across systems in the same category. The system with the lowest total fee burden, all else equal, gives you more room to survive downturns and unexpected costs.
+
+WHAT TO NEGOTIATE (AND WHAT YOU CAN'T): The initial franchise fee is sometimes negotiable for veterans, multi-unit developers, or buyers of existing units. The ongoing royalty rate and marketing fund contribution are almost never negotiable in established systems. What you can sometimes negotiate: lease terms, build-out specifications, and training logistics. If the fee structure does not work in your financial model, no amount of optimism should override the math.`,
+  },
+
+  // ─── FDD ANALYSIS GUIDES ─────────────────────────────────────────────────────
+  {
+    slug: "item-20-franchise-closure-rates",
+    title: "Item 20: How to Evaluate Franchise Closure Rates",
+    description:
+      "Item 20 contains four tables that reveal whether a franchise system is growing or dying. Here's what the numbers mean and how to calculate the real closure rate.",
+    category: "FDD Analysis",
+    publishedAt: "2026-03-12",
+    updatedAt: "2026-04-01",
+    readingTime: 7,
+    content: `ITEM 20 IS THE SYSTEM'S VITAL SIGNS
+
+If Item 19 tells you what you might earn, Item 20 tells you whether the business model is actually working — at scale, across hundreds or thousands of franchisees, over multiple years. It contains four tables: transfers, openings, terminations and non-renewals, and projected new openings. Read these tables together, not in isolation.
+
+THE FOUR TABLES AND WHAT EACH MEANS: Table 1 shows transfers — existing franchisee-to-franchisee sales of operating units. A high transfer rate can mean franchisees are profitable enough to attract buyers; it can also mean franchisees are desperate to exit. Context matters. Table 2 shows new openings by state for the last three fiscal years. Table 3 is the most important: it breaks out closures by cause — terminations (franchisor-initiated), non-renewals (franchisee chose not to renew), reacquired by franchisor, ceased operations, and other. Table 4 shows projected new openings for the next year — a franchisor forecast, not a guarantee.
+
+HOW TO CALCULATE NET UNIT GROWTH: The single most important number you can derive from Item 20 is the net unit change over the last three years. Take total new openings minus total permanent closures (terminations + non-renewals + ceased operations) for each year. If a system opened 60 units and closed 55 in the same year, it is essentially flat — despite claims about aggressive growth. Systems with consistently negative net unit growth are shrinking. A shrinking system means declining royalty revenue for the franchisor, which means less money for support, marketing, and R&D.
+
+WHAT HIGH TERMINATION RATES ACTUALLY MEAN: Franchisor-initiated terminations may indicate: the franchisor aggressively enforces standards (not inherently bad), franchisee economics are so poor that many cannot survive (very bad), the franchisor is using terminations to reacquire units for resale, or the franchise agreement's default provisions are so broad that termination is easy even for technical violations. Interview former franchisees who were terminated — their perspective is more informative than the official record.
+
+NON-RENEWALS ARE AN UNDERRATED SIGNAL: When a franchisee whose agreement expires chooses not to renew — even when they could — it means they evaluated the economics and decided the business was not worth continuing. Non-renewals are voluntary exits by people who know the system from the inside better than any prospective buyer. A high non-renewal rate is one of the clearest signals that franchisee profitability may be insufficient to justify another 10-year term.
+
+COMPARE ACROSS YEARS — TRENDS MATTER MORE THAN SNAPSHOTS: Item 20 covers three fiscal years. Look at whether the trend is improving or deteriorating. A system with 10 terminations three years ago, 15 two years ago, and 22 last year is on a worsening trajectory. Single-year snapshots can be misleading; the direction of change matters.
+
+THE FRANCHISEE CONTACT LIST — YOUR MOST VALUABLE ASSET: At the end of Item 20, every current franchisee (name, address, phone number) and every franchisee who left the system in the last three years must be listed. Call at least 10 current franchisees — picked randomly, not selected by the franchisor — and at least 5 former franchisees. Former franchisees, particularly those who were terminated or chose not to renew, will often be candid about what went wrong. Ask them directly: "Would you do it again? What would you tell someone considering buying into this system today?"`,
+  },
+
+  {
+    slug: "red-flags-in-item-3-litigation",
+    title: "Red Flags in Item 3: How to Spot Problem Franchisors Through Litigation History",
+    description:
+      "Not all lawsuits are created equal. Here's how to read Item 3 to identify dangerous patterns — franchisee class actions, regulatory enforcement, and serial litigation that signal a troubled system.",
+    category: "FDD Analysis",
+    publishedAt: "2026-03-15",
+    updatedAt: "2026-04-01",
+    readingTime: 6,
+    content: `WHY LITIGATION HISTORY IS A LEADING INDICATOR
+
+Franchise systems in trouble rarely fail overnight. They typically deteriorate over years, and that deterioration usually shows up in litigation before it shows up in financial statements. Item 3 of the FDD requires disclosure of every lawsuit, arbitration, regulatory action, and criminal conviction involving the franchisor or its key executives over the last 10 years. Read it carefully — and then read it again looking for patterns.
+
+THE DIFFERENCE BETWEEN ROUTINE DISPUTES AND RED FLAGS: Large franchise systems operating hundreds of units will inevitably face occasional lease disputes, supplier disagreements, or landlord conflicts. What concerns experienced franchise attorneys are: franchisee class-action lawsuits, regulatory enforcement actions by state attorneys general or the FTC, criminal convictions of executives, and multiple lawsuits with the same type of claim pattern.
+
+FRANCHISEE CLASS ACTIONS — THE MOST SERIOUS RED FLAG: When franchisees pool together to sue their franchisor collectively, it means the problem is systemic — not an isolated dispute with one difficult franchisee. Class actions are expensive to organize; franchisees pursue them because the harm is widespread enough to justify collective action. Common causes: misrepresentation of earnings expectations during the sales process, encroachment, failure to deliver promised marketing support, and required purchases at above-market prices. If Item 3 discloses a class action, research the outcome, when it settled, and for how much. Then call franchisees who were part of the class.
+
+REGULATORY ENFORCEMENT ACTIONS: State attorneys general and the FTC can take action against franchisors for fraud, misrepresentation, or registration violations. These actions are serious because regulatory agencies have investigated the franchisor, found probable cause of wrongdoing, and have enforcement authority. A cease-and-desist from a state AG or an FTC consent order is a red flag of the highest order — especially if it involved misrepresentation of earnings expectations, failure to disclose required information, or selling franchises in states where registration requirements were not met.
+
+EXECUTIVE CRIMINAL HISTORY: The FDD must disclose felony convictions of any person listed in Item 2 within the last 10 years. White-collar crime — fraud, embezzlement, securities violations — is directly relevant to a franchise relationship. You are trusting this company with your financial future.
+
+PATTERN RECOGNITION — THE KEY ANALYTICAL SKILL: One lawsuit about a lease dispute means very little. Four lawsuits alleging the same thing — that the franchisor misrepresented Item 19 earnings data to induce franchisees to buy — means everything. When reading Item 3, look for: same type of claim repeating across different years or plaintiffs, same plaintiff jurisdiction, and cases that were settled confidentially (usually means there was something worth settling).
+
+WHAT IS NOT IN ITEM 3 — AND HOW TO FIND IT: Item 3 does not capture: cases that settled before formal filing, individual arbitration proceedings (often confidential), and regulatory investigations that have not yet resulted in formal action. To supplement your Item 3 review, search PACER (federal court records) for the franchisor's legal name, search state court databases in the franchisor's home state, and search the FTC's public complaint database. Reddit and franchisee forums often surface complaints that never made it to court.`,
+  },
+
+  // ─── DUE DILIGENCE GUIDES ────────────────────────────────────────────────────
+  {
+    slug: "franchise-due-diligence-checklist",
+    title: "Franchise Due Diligence Checklist: 50 Questions Before You Sign",
+    description:
+      "A structured checklist for evaluating any franchise — organized by FDD section, franchisee interviews, and financial analysis. Use this before handing over any money.",
+    category: "Due Diligence",
+    publishedAt: "2026-03-18",
+    updatedAt: "2026-04-01",
+    readingTime: 11,
+    content: `HOW TO USE THIS CHECKLIST
+
+Franchise due diligence takes 60 to 90 days if done properly. This checklist is organized into five phases: FDD review, franchisee interviews, financial modeling, legal review, and the final decision. Complete each phase before moving to the next. The goal is not to check boxes — it is to develop enough conviction (or concern) to make a confident, informed decision.
+
+PHASE 1 — FDD REVIEW (Questions 1-15): (1) Is Item 19 present? If not, ask the franchisor why. (2) Does Item 19 show median revenue, or only mean? Request the full distribution. (3) What is the effective total fee burden? Add royalty + marketing fund + technology fees. (4) Does Item 12 provide meaningful territorial exclusivity, or are there significant carve-outs? (5) How many franchisor-initiated terminations occurred in each of the last three years? What is the trend? (6) What is the net unit growth rate (openings minus closures) for each of the last three years? (7) Does Item 3 disclose any franchisee class-action lawsuits, regulatory enforcement actions, or executive criminal history? (8) What are the post-termination non-compete restrictions in Item 17? Duration, geographic scope, and activities restricted? (9) Does the franchisor have the right of first refusal on any sale of your franchise? (10) What grounds for termination are listed in Item 17? Can the franchisor terminate without cause? (11) What is the renewal process and fee — is renewal guaranteed or at the franchisor's discretion? (12) What venue and governing law apply to dispute resolution? Is arbitration required in the franchisor's home state? (13) Are there minimum sales requirements? What happens if you miss them? (14) What does Item 21 say about the franchisor's financial health? (15) What does Item 11 commit the franchisor to provide in terms of ongoing training and support?
+
+PHASE 2 — FRANCHISEE INTERVIEWS (Questions 16-30): Call a minimum of 10 current franchisees (selected randomly from the Item 20 list, not suggested by the franchisor) and 5 former franchisees. (16) How long have you been with the system? (17) What was your gross revenue in year one? Year two? Year three? (18) What are your biggest operating costs? Which ones surprised you? (19) Does the franchisor's Item 19 disclosure reflect your experience? (20) Have you experienced encroachment from other franchisees or from the franchisor? (21) How responsive is your franchise support representative? (22) Is the marketing fund being spent effectively? (23) Are required purchases through approved suppliers priced above market? (24) Have you received any default notices from the franchisor? (25) What do you know now that you wish you had known before buying? (26) Would you do it again? (27) Are there active franchisee associations that represent franchisee interests? (28) Is the franchisor considering system-wide changes that would affect your costs? (29) To former franchisees: why did you leave the system? Was it voluntary? (30) To former franchisees: what happened to your customers and investment after you left?
+
+PHASE 3 — FINANCIAL MODELING (Questions 31-40): Build a financial model before hiring an attorney, so you know whether the numbers can ever work. (31) What is the median gross revenue from Item 19 or franchisee interviews? Use this as your base case. (32) What is the 25th percentile revenue? This is your downside scenario. (33) What are the realistic COGS for your market? Get competitive quotes, not estimates. (34) What are the realistic labor costs for your market? (35) What are your fixed costs: lease, insurance, utilities, required subscriptions? (36) After all costs and total franchisor fees, what does your net income look like in the base and downside scenarios? (37) What is the total capital required (Item 7 plus a 20-30% working capital buffer)? (38) If financing a portion, what is the annual debt service, and can the business cover it in the base scenario? (39) How many years until you recover your total cash investment? (40) What is your exit strategy, and what would a buyer reasonably pay for your unit?
+
+PHASE 4 — LEGAL REVIEW (Questions 41-47): Hire a franchise attorney — not one referred by the franchisor, not a general business attorney. (41) Has your attorney reviewed the franchise agreement, not just the FDD? (42) Has your attorney flagged the most dangerous terms in Item 17? (43) Are there terms your attorney recommends attempting to negotiate? (44) Has your attorney reviewed the lease and confirmed that the lease term aligns with the franchise term? (45) Has your attorney confirmed that all required state registrations are current? (46) Are there any pending legal actions your attorney found that were not fully disclosed? (47) Has your attorney reviewed the personal guarantee provisions — what assets are exposed?
+
+PHASE 5 — FINAL DECISION FRAMEWORK (Questions 48-50): (48) Do the financials work in a downside scenario, or only in an optimistic one? If the business only works when everything goes right, the margin of safety is insufficient. (49) Is this the right business for your skills, lifestyle, and risk tolerance? (50) If everything you learned about this franchise was made public in a newspaper article, would a reasonable person say you made a smart, well-informed decision? If yes, proceed. If not, keep asking questions until you can answer yes, or walk away.`,
+  },
+
+  {
+    slug: "territory-protection-item-12",
+    title: "Territory Protection in Franchising: What Item 12 Really Means",
+    description:
+      "\"Exclusive territory\" rarely means what you think it means. Here's how to read Item 12 to understand what the franchisor can — and cannot — do in your market.",
+    category: "Due Diligence",
+    publishedAt: "2026-03-20",
+    updatedAt: "2026-04-01",
+    readingTime: 6,
+    content: `THE MOST MISUNDERSTOOD ITEM IN THE FDD
+
+Franchise salespeople frequently emphasize that you will receive a "protected territory" or "exclusive territory." These terms sound reassuring. They are not guarantees of what you think they are. Item 12 of the FDD defines exactly what your territorial rights include — and the carve-outs to those rights are often as important as the protections themselves.
+
+TYPES OF TERRITORIAL PROTECTIONS: Franchise agreements typically offer one of three territorial structures. An exclusive territory means no other franchisee or company-operated unit will open within your defined area. A protected territory is similar but may have more carve-outs. A right of first refusal means the franchisor cannot open another unit in your area without first offering you the opportunity to open it. Some agreements offer no territorial protection at all — a non-exclusive arrangement where you simply operate a franchise in a location with no geographic buffer.
+
+THE STANDARD CARVE-OUTS THAT HOLLOW OUT EXCLUSIVITY: Even a genuine exclusive territory typically contains carve-outs that limit its practical value. The most common: non-traditional venues (airports, hospitals, stadiums, military bases, and college campuses are often excluded — captive-audience locations are typically carved out of territorial protection), national or key accounts (the franchisor may service large national customers that overlap with your geography), alternative channels (online ordering and delivery services may be operated by the franchisor without geographic restriction), and future brands or concepts (if the franchisor develops a new format, your exclusivity may not cover it).
+
+ENCROACHMENT — THE PRACTICE THAT CAUSES THE MOST DISPUTES: Encroachment occurs when the franchisor or another franchisee opens a new unit close enough to your location to materially harm your sales. Even when territorial exclusivity exists on paper, encroachment can happen if a new franchisee opens just outside your territorial boundary, or if the franchisor expands its delivery services that compete with your in-unit sales. Ask franchisees in the system specifically: "Has encroachment been an issue? Has the franchisor opened new locations that affected your sales?"
+
+HOW TERRITORIES ARE DEFINED: Territory definitions matter enormously. A territory defined by a radius is easy to visualize but imprecise about population. A territory defined by ZIP codes is more precise and easier to monitor. A territory defined by population is the most meaningful for demand-sensitive businesses. Understand exactly how your territory is drawn and what population it covers. The same 3-mile radius in a dense urban neighborhood versus a suburban area can mean the difference between 100,000 people and 8,000 — but the royalty structure is identical.
+
+WHAT TO DO IN YOUR TERRITORY REVIEW: Get a map of your proposed territory with boundaries clearly marked. Ask the franchisor how many other franchise units are within driving distance. Ask about any planned unit openings in adjacent territories. Research the population, household income, and demographic profile of your territory independently — do not rely solely on the franchisor's data.
+
+WHAT HAPPENS TO YOUR TERRITORY IF THE SYSTEM IS SOLD: Franchise agreements typically survive an acquisition — the new franchisor assumes the existing agreements. But territorial rights and enforcement practices can change significantly under new ownership. A private equity buyer may prioritize unit growth over franchisee exclusivity rights. Review the Item 17 provisions on transfers and assignments to understand what approval rights you have over a sale of the franchise system.`,
+  },
+
+  // ─── GETTING STARTED GUIDES ──────────────────────────────────────────────────
+  {
+    slug: "first-time-franchise-buyer-roadmap",
+    title: "First-Time Franchise Buyer's Roadmap: 9 Steps from Discovery to Signing",
+    description:
+      "A step-by-step guide to the franchise acquisition process — what happens when, what decisions you face at each stage, and where first-time buyers most commonly make expensive mistakes.",
+    category: "Getting Started",
+    publishedAt: "2026-03-25",
+    updatedAt: "2026-04-01",
+    readingTime: 10,
+    content: `THE FRANCHISE BUYING PROCESS IS DESIGNED FOR SELLERS, NOT BUYERS
+
+The franchise development process — the sequence of steps from initial inquiry to agreement signing — is carefully engineered by franchisors to build momentum, establish emotional investment, and reduce friction in the path to a signed contract. Understanding each step and what is actually happening from the franchisor's perspective will help you make a clear-eyed decision rather than one driven by excitement and sunk cost.
+
+STEP 1 — SELF-ASSESSMENT BEFORE EXPLORATION: Before contacting any franchisor, honestly answer these questions: How much liquid capital can I invest without jeopardizing my family's financial security? What is the minimum annual personal income I need this business to generate? How many hours per week am I willing to work, and am I comfortable being on-site? Do I have management experience? Starting with clear answers helps you filter the franchise universe rather than being sold into a category that does not match your life. The rule of thumb: only invest money you could lose entirely and still be financially stable.
+
+STEP 2 — RESEARCH BEFORE CONTACT: Identify categories of franchising that match your interests, investment range, and operator profile. Research specific brands within those categories before making any inquiry. Read their FDDs if available — many state regulators make FDDs publicly available. Look for franchisee discussions on Reddit and online forums. Do this research before you become a lead in the franchisor's sales pipeline, because once you submit an inquiry, you will begin receiving structured sales outreach designed to advance you to the next stage.
+
+STEP 3 — INITIAL INQUIRY AND THE FRANCHISE DEVELOPMENT PROCESS: When you contact a franchisor, you enter their franchise development pipeline. You will typically be assigned a franchise development representative (FDR) — compensated based on signed franchise agreements. They are not neutral advisors. Their job is to qualify you as a buyer and advance you through the process. This is not inherently dishonest — it is simply important to understand the incentive structure you are dealing with.
+
+STEP 4 — FDD RECEIPT AND THE 14-DAY RULE: By law, the franchisor must deliver the FDD at least 14 calendar days before you sign any agreement or pay any money. Receiving the FDD starts the clock. Do not let anyone encourage you to sign before 14 days have passed — doing so would violate the FTC Franchise Rule and may give you legal recourse if things go wrong. The moment you receive the FDD, begin reading it yourself — before the FDR's guided walkthrough, which is a sales call.
+
+STEP 5 — THE DISCOVERY DAY: Most franchisors host a "Discovery Day" — an in-person event at their headquarters where prospective franchisees meet the executive team and tour the operation. Discovery Days are part education, part sales event. Go with specific questions prepared, and note what questions receive vague or deflected answers. Discovery Days are usually scheduled after you have already expressed significant interest — you often have emotional momentum by the time you attend. Maintain analytical distance.
+
+STEP 6 — FRANCHISEE VALIDATION — YOUR MOST IMPORTANT STEP: Before making any final decision, call franchisees. The Item 20 contact list contains every current and recently departed franchisee. Call 10 current franchisees picked at random — not from a validation list provided by the franchisor — and at least 5 former franchisees. Former franchisees are especially valuable because they have nothing to protect. Key questions: revenue range by year, biggest surprises, whether the FDD accurately represented the business, and whether they would recommend the system.
+
+STEP 7 — FINANCIAL MODELING AND PROFESSIONAL ADVISORS: Build your financial model before hiring advisors so you know what questions to ask. Use median revenue from Item 19 or franchisee interviews, real cost data from franchisee conversations, and your actual local market costs. Run three scenarios: conservative, base, and optimistic. Share this model with a CPA experienced in franchise analysis. Hire a franchise attorney — not a general business attorney, not one referred by the franchisor — to review the franchise agreement. Budget $2,000-$5,000 for legal review.
+
+STEP 8 — NEGOTIATION AND FINAL QUESTIONS: After legal review, your attorney may identify terms worth attempting to negotiate. Most franchisors will not change core economics (royalty, marketing fund), but some will negotiate on territory size, opening schedule, or initial fee (for veterans or multi-unit buyers). Ask the franchisor for anything they have not yet provided: franchisee satisfaction surveys, marketing fund financials, system-wide revenue data.
+
+STEP 9 — THE DECISION: Review everything — FDD, franchisee interviews, financial model, legal review — and make a binary decision: sign or walk away. Do not sign if: your downside financial model shows the business cannot cover your loan payments and living expenses, franchisees expressed serious concerns about the system, your attorney found terms you find unacceptable, or you feel pressure to sign quickly. Walking away after 90 days of due diligence is a victory — you saved yourself from a potentially catastrophic mistake.
+
+A FINAL WORD ON FRANCHISE BROKERS: Many first-time buyers find franchises through franchise brokers — intermediaries compensated by franchisors, typically 40-50% of the initial franchise fee, paid only when you sign. A broker who places you in a franchise that fails earns the same commission as one who places you in a franchise that thrives. If you work with a broker, understand their incentive structure and supplement their recommendations with your own independent research.`,
+  },
+];
