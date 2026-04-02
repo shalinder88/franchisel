@@ -94,18 +94,19 @@ tr.table-row-hover {
   transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 tr.table-row-hover:hover {
-  background: var(--surface) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  background: var(--surface-alt) !important;
+  box-shadow: 0 0 0 1px rgba(6, 182, 212, 0.08) inset;
   transform: translateY(-1px);
 }
 
-/* Card hover — Apple subtle lift */
+/* Card hover — cyan glow on dark */
 .hover-glow {
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, background 0.2s ease;
 }
 .hover-glow:hover {
   border-color: var(--accent);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(6, 182, 212, 0.1);
+  background: var(--surface-alt) !important;
+  box-shadow: 0 0 0 1px rgba(6, 182, 212, 0.2), 0 8px 24px rgba(6, 182, 212, 0.08);
   transform: translateY(-2px);
 }
 
@@ -175,7 +176,7 @@ tr.table-row-hover:hover {
 }
 .hover-pricing:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(6, 182, 212, 0.1);
+  box-shadow: 0 0 0 1px rgba(6, 182, 212, 0.25), 0 8px 24px rgba(6, 182, 212, 0.1);
   border-color: var(--accent) !important;
 }
 
@@ -184,7 +185,7 @@ tr.table-row-hover:hover {
 }
 .hover-lift:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(6, 182, 212, 0.08);
 }
 
 td.hover-cell {
