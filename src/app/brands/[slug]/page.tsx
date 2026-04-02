@@ -36,6 +36,11 @@ import {
 } from "@/lib/diligence";
 import { BrandDataDisclaimer, DataSourceBadge } from "@/components/DataDisclaimer";
 import WatchButton from "@/components/WatchButton";
+import UnitGrowthChart from "@/components/UnitGrowthChart";
+import DataCoverageWidget from "@/components/DataCoverageWidget";
+import CommunitySourceBadge from "@/components/CommunitySourceBadge";
+import CommunitySubmitForm from "@/components/CommunitySubmitForm";
+import { getCommunityProfile } from "@/data/community";
 
 /* ── Dynamic rendering — too many brands to pre-render (causes Vercel 80MB limit) ── */
 export const dynamic = 'force-dynamic';
@@ -249,6 +254,7 @@ export default async function BrandPage({
           fddYear={brand.fddYear}
           fddAccessed={brand.fddAccessed}
           sourceNotes={brand.sourceNotes}
+          coreStatsComplete={brand.totalInvestmentLow > 0 || brand.totalInvestmentHigh > 0 || brand.totalUnits > 0}
         />
       </div>
 
@@ -572,6 +578,9 @@ export default async function BrandPage({
           </p>
         </section>
 
+        {/* ── 2b. Data Coverage ── */}
+        <DataCoverageWidget brand={brand} />
+
         {/* ── 3. Red Flags ── */}
         {brand.redFlags.length > 0 && (
           <section>
@@ -682,12 +691,14 @@ export default async function BrandPage({
                       </td>
                     </tr>
                   )}
+                  {brand.item19.unitsIncluded > 0 && (
                   <tr className="table-row-hover border-b border-border">
                     <td className="px-5 py-3 text-muted font-medium">Units Included</td>
                     <td className="px-5 py-3 text-foreground font-semibold text-right">
                       {brand.item19.unitsIncluded.toLocaleString()}
                     </td>
                   </tr>
+                  )}
                   <tr className="table-row-hover border-b border-border">
                     <td className="px-5 py-3 text-muted font-medium">Basis</td>
                     <td className="px-5 py-3 text-foreground text-right capitalize">
@@ -1621,66 +1632,166 @@ export default async function BrandPage({
         )}
 
         {/* ── 8. Community Data ── */}
-        <section>
-          <h2 className="text-xl font-semibold text-foreground mb-4">Community Intelligence</h2>
-          <div className="rounded-xl border border-border bg-background p-6">
-            {brand.communityReviews > 0 ? (
-              <>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
-                  {brand.communityAvgSatisfaction != null && (
-                    <div className="text-center">
-                      <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg Satisfaction</p>
-                      <p className={`text-3xl font-bold ${scoreTextColor(brand.communityAvgSatisfaction)}`}>
-                        {brand.communityAvgSatisfaction}/10
-                      </p>
+        {(() => {
+          const communityProfile = getCommunityProfile(brand.slug);
+          const hasSourced = communityProfile && (communityProfile.sentiment.length > 0 || communityProfile.news.length > 0);
+          return (
+          <section>
+            <div className="flex items-center gap-3 mb-3">
+              <h2 className="text-xl font-semibold text-foreground">Community</h2>
+              <span className="px-2 py-0.5 rounded-full bg-warning/10 border border-warning/20 text-warning text-[10px] font-semibold">Not FDD data</span>
+            </div>
+
+            {/* Public sourced data */}
+            {hasSourced && (
+              <div className="rounded-xl border border-border bg-background p-5 mb-4 space-y-3">
+                <p className="text-xs font-semibold text-muted uppercase tracking-widest">Public Sources</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {communityProfile!.sentiment.map((entry, i) => (
+                    <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-surface">
+                      {entry.rating !== null && (
+                        <div className="shrink-0 text-center min-w-[36px]">
+                          <p className="text-lg font-bold text-foreground leading-none">{entry.rating}</p>
+                          <p className="text-[10px] text-muted">/5</p>
+                        </div>
+                      )}
+                      <div className="flex-1 min-w-0 space-y-1.5">
+                        <p className="text-xs text-foreground leading-snug">{entry.excerpt}</p>
+                        <CommunitySourceBadge source={entry.source} />
+                      </div>
                     </div>
-                  )}
-                  {brand.communityAvgFirstYearRevenue != null && (
-                    <div className="text-center">
-                      <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg First-Year Revenue</p>
-                      <p className="text-3xl font-bold text-foreground">
-                        {formatCurrency(brand.communityAvgFirstYearRevenue)}
-                      </p>
+                  ))}
+                  {communityProfile!.news.map((entry, i) => (
+                    <div key={i} className="p-3 rounded-lg bg-surface space-y-1.5">
+                      <p className="text-xs font-medium text-foreground">{entry.headline}</p>
+                      <p className="text-[11px] text-muted">{entry.summary}</p>
+                      <CommunitySourceBadge source={entry.source} />
                     </div>
-                  )}
-                  <div className="text-center">
-                    <p className="text-xs text-muted uppercase tracking-wider mb-1">Reviews</p>
-                    <p className="text-3xl font-bold text-accent">{brand.communityReviews}</p>
-                  </div>
+                  ))}
                 </div>
-                <div className="border-t border-border pt-4 text-center">
-                  <p className="text-sm text-muted mb-3">
-                    Are you a {brand.name} franchisee? Share your experience anonymously.
-                  </p>
-                  <a
-                    href={`mailto:submit@franchisel.com?subject=${encodeURIComponent(`Franchisee Review: ${brand.name}`)}`}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white text-sm font-medium rounded-full hover:brightness-110 transition-all"
-                  >
-                    Submit Your Review
-                  </a>
-                </div>
-              </>
-            ) : (
-              <div className="text-center py-4">
-                <p className="text-sm text-muted mb-4">
-                  No community data yet. If you are a current or former {brand.name} franchisee,
-                  your anonymous submission helps future buyers make informed decisions.
-                </p>
-                <a
-                  href={`mailto:submit@franchisel.com?subject=${encodeURIComponent(`Franchisee Review: ${brand.name}`)}`}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white text-sm font-medium rounded-full hover:brightness-110 transition-all"
-                >
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-                  </svg>
-                  Submit Your Experience
-                </a>
               </div>
             )}
+
+            {/* Owner submissions */}
+            <div className="rounded-xl border border-border bg-background p-5">
+              {brand.communityReviews > 0 ? (
+                <>
+                  <p className="text-xs font-semibold text-muted uppercase tracking-widest mb-4">Anonymous Owner Submissions</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+                    {brand.communityAvgSatisfaction != null && (
+                      <div className="text-center">
+                        <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg Satisfaction</p>
+                        <p className={`text-3xl font-bold ${scoreTextColor(brand.communityAvgSatisfaction)}`}>
+                          {brand.communityAvgSatisfaction}/10
+                        </p>
+                      </div>
+                    )}
+                    {brand.communityAvgFirstYearRevenue != null && (
+                      <div className="text-center">
+                        <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg First-Year Revenue</p>
+                        <p className="text-3xl font-bold text-foreground">{formatCurrency(brand.communityAvgFirstYearRevenue)}</p>
+                      </div>
+                    )}
+                    <div className="text-center">
+                      <p className="text-xs text-muted uppercase tracking-wider mb-1">Submissions</p>
+                      <p className="text-3xl font-bold text-accent">{brand.communityReviews}</p>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <p className="text-xs font-semibold text-muted uppercase tracking-widest mb-4">Anonymous Owner Submissions</p>
+              )}
+              <div className="border-t border-border pt-4">
+                <p className="text-sm text-muted mb-4">
+                  {brand.communityReviews > 0
+                    ? `Are you a ${brand.name} franchisee? Add your anonymous data.`
+                    : `No owner submissions yet for ${brand.name}. Be the first — your data helps future buyers.`}
+                </p>
+                <CommunitySubmitForm defaultBrandSlug={brand.slug} defaultBrandName={brand.name} />
+              </div>
+            </div>
+          </section>
+          );
+        })()}
+
+        {/* ── 8a. Filing Year Changes (YoY diff) ── */}
+        {effectiveGovVerified && (brand.item19Prior?.grossRevenueAvg || (brand.unitEconomics?.yearlyNetGrowth && brand.unitEconomics.yearlyNetGrowth.length >= 2)) && (
+        <section>
+          <h2 className="text-xl font-semibold text-foreground mb-1">Filing Year Changes</h2>
+          <p className="text-xs text-muted mb-4">Year-over-year comparison across multiple FDD filings. Source: government-filed disclosures.</p>
+          <div className="space-y-3">
+
+            {/* YoY Revenue diff */}
+            {brand.item19Prior?.grossRevenueAvg && brand.item19 && brand.item19.grossRevenueAvg && (() => {
+              const curr = brand.item19.grossRevenueAvg!;
+              const prior = brand.item19Prior!.grossRevenueAvg!;
+              const pct = ((curr - prior) / prior) * 100;
+              const isUp = pct >= 0;
+              const absPct = Math.abs(pct);
+              return (
+                <div className={`rounded-xl border p-5 ${isUp ? "border-success/20 bg-success/5" : "border-danger/20 bg-danger/5"}`}>
+                  <p className="text-xs font-semibold text-muted uppercase tracking-wider mb-3">Avg Revenue — Item 19 (Year-over-Year)</p>
+                  <div className="flex items-center gap-4 flex-wrap">
+                    <div className="text-center">
+                      <p className="text-[11px] text-muted uppercase tracking-wider mb-0.5">{brand.item19Prior?.fddYear ?? "Prior"} FDD</p>
+                      <p className="text-xl font-bold text-foreground">${(prior / 1000).toFixed(0)}K</p>
+                    </div>
+                    <div className={`text-3xl font-bold ${isUp ? "text-success" : "text-danger"}`}>
+                      {isUp ? "↑" : "↓"}
+                    </div>
+                    <div className="text-center">
+                      <p className="text-[11px] text-muted uppercase tracking-wider mb-0.5">{brand.fddYear ?? "Current"} FDD</p>
+                      <p className="text-xl font-bold text-foreground">${(curr / 1000).toFixed(0)}K</p>
+                    </div>
+                    <div className={`ml-auto rounded-lg px-4 py-2 ${isUp ? "bg-success/10 border border-success/20" : "bg-danger/10 border border-danger/20"}`}>
+                      <p className={`text-2xl font-bold ${isUp ? "text-success" : "text-danger"}`}>
+                        {isUp ? "+" : "−"}{absPct.toFixed(1)}%
+                      </p>
+                      <p className="text-xs text-muted text-center">year-over-year</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
+
+            {/* Unit growth bar chart */}
+            {brand.unitEconomics?.yearlyNetGrowth && brand.unitEconomics.yearlyNetGrowth.length >= 2 && (() => {
+              const data = brand.unitEconomics!.yearlyNetGrowth!;
+              const latest = data[data.length - 1];
+              const trend = data.slice(-1)[0].net > data[0].net ? "improving" : data.slice(-1)[0].net < data[0].net ? "declining" : "stable";
+              return (
+                <div className="rounded-xl border border-border bg-background p-5">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <p className="text-xs font-semibold text-muted uppercase tracking-wider">Net Unit Growth — Item 20 (Multi-Year)</p>
+                      <p className="text-xs text-muted mt-0.5">Green = system grew · Red = system shrank · Each bar = one filing year</p>
+                    </div>
+                    <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${
+                      trend === "improving" ? "text-success bg-success/10 border-success/20" :
+                      trend === "declining" ? "text-danger bg-danger/10 border-danger/20" :
+                      "text-muted bg-surface border-border"
+                    }`}>
+                      {trend === "improving" ? "↑ Trend improving" : trend === "declining" ? "↓ Trend declining" : "→ Stable"}
+                    </span>
+                  </div>
+                  <div className="flex items-end gap-3">
+                    <UnitGrowthChart data={data} height={80} />
+                    <div className="text-right ml-auto shrink-0">
+                      <p className="text-xs text-muted uppercase tracking-wider">Most recent</p>
+                      <p className={`text-2xl font-bold ${latest.net > 0 ? "text-success" : latest.net < 0 ? "text-danger" : "text-muted"}`}>
+                        {latest.net > 0 ? "+" : ""}{latest.net}
+                      </p>
+                      <p className="text-xs text-muted">net units {latest.year}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
           </div>
         </section>
+        )}
 
-        {/* ── 8a. Trends & Deterioration Signals ── */}
+        {/* ── 8b. Trends & Deterioration Signals ── */}
         {effectiveGovVerified && deteriorationReport.signals.length > 0 && (
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-1">Trends &amp; Change Signals</h2>

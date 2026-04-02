@@ -34,12 +34,10 @@ export default function DisclosurePage() {
         <div className="border border-accent/20 rounded-xl p-5 bg-accent-light">
           <h2 className="text-sm font-semibold text-foreground mb-2">Summary</h2>
           <p className="text-sm text-muted leading-relaxed">
-            Franchisel earns revenue primarily from buyer-paid reports and platform features.
-            We may in the future earn referral fees when users contact a franchisor through our
-            platform. Any such commercial relationships will be disclosed here in full.
-            They will not and cannot influence our editorial scoring, analysis, red flag
-            assessments, or any other editorial content. Our scoring methodology is applied
-            identically to all franchise brands regardless of any commercial relationship.
+            Franchisel earns revenue from buyer-paid reports and platform subscriptions.
+            We do not earn referral fees, commissions, or any compensation from franchisors —
+            for any purpose. We serve buyers, not franchisors. Our scoring methodology is applied
+            identically to all brands regardless of any commercial relationship.
           </p>
         </div>
 
@@ -74,12 +72,8 @@ export default function DisclosurePage() {
                   desc: "Prospective franchise buyers can purchase Standard, Premium, and Executive tier reports that provide deeper analysis than what is available on free brand profiles. Report purchases are the primary revenue source for Franchisel and align our financial incentives with delivering value to buyers.",
                 },
                 {
-                  title: "Referral Fees — Report Purchases (Planned)",
-                  desc: "In certain cases, Franchisel may earn a referral fee when a user purchases a due diligence report accessed through a referral link from a partner site. As of March 2026, no such arrangements are active. Report content, including all scores and analysis, will be identical regardless of how the purchase originates.",
-                },
-                {
-                  title: "Referral Fees — Franchisor Contact (Planned)",
-                  desc: "In the future, when a user contacts a franchisor through a designated link on our platform, we may earn a referral fee. As of March 2026, no such arrangements exist. If and when they do, the fee will be for the referral only — never for favorable editorial coverage. This disclosure will be updated accordingly.",
+                  title: "No Franchisor Referral Fees",
+                  desc: "Franchisel does not earn referral fees, commissions, placement fees, or any other compensation from franchisors — for any reason, at any time. No franchisor pays for inclusion, favorable placement, or user referrals. This is a permanent policy, not a temporary status.",
                 },
                 {
                   title: "Premium Platform Features",
@@ -95,15 +89,14 @@ export default function DisclosurePage() {
           </div>
         </section>
 
-        {/* What referral fees never influence */}
+        {/* What commercial relationships never influence */}
         <section>
           <h2 className="text-lg font-semibold text-foreground mb-3">
-            What Referral Fees Never Influence
+            What Commercial Relationships Never Influence
           </h2>
           <div className="border border-border rounded-xl p-6 bg-surface-alt">
             <p className="text-sm text-muted leading-relaxed mb-4">
-              The existence of a referral relationship with any franchise brand has absolutely
-              no effect on the following:
+              No commercial relationship — including report partner affiliates — influences the following:
             </p>
             <ul className="space-y-2.5">
               {[

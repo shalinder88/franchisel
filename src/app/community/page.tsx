@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { brands, getTotalCommunityReviews } from "@/data/brands";
-import { computeProductionScores } from "@/lib/diligence";
+import { communityData } from "@/data/community";
+import CommunitySourceBadge from "@/components/CommunitySourceBadge";
+import CommunitySubmitForm from "@/components/CommunitySubmitForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -111,6 +113,76 @@ export default function CommunityPage() {
           </a>
         </div>
       </section>
+
+      {/* ── PUBLIC SOURCES section ── */}
+      {communityData.length > 0 && (
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="flex items-center gap-3 mb-6">
+          <div>
+            <h2 className="text-xl font-bold text-foreground">Public Sources</h2>
+            <p className="text-sm text-muted mt-0.5">
+              Publicly available surveys, reviews, and news — with direct source links. Not from FDDs.
+            </p>
+          </div>
+          <div className="ml-auto shrink-0 px-2.5 py-1 rounded-full bg-warning/10 border border-warning/20 text-warning text-[11px] font-semibold">
+            Not FDD data
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          {communityData.map((profile) => (
+            <div key={profile.brandSlug} className="rounded-xl border border-border bg-background overflow-hidden">
+              <div className="px-5 py-3 border-b border-border flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <Link href={`/brands/${profile.brandSlug}`} className="font-semibold text-foreground hover:text-accent transition-colors text-sm">
+                    {profile.brandName}
+                  </Link>
+                  <span className="text-[10px] text-muted">Updated {profile.lastUpdated}</span>
+                </div>
+                <Link href={`/brands/${profile.brandSlug}`} className="text-xs text-accent hover:underline shrink-0">
+                  FDD Data →
+                </Link>
+              </div>
+
+              <div className="p-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {profile.sentiment.map((entry, i) => (
+                  <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-surface">
+                    {entry.rating !== null && (
+                      <div className="shrink-0 text-center min-w-[40px]">
+                        <p className="text-xl font-bold text-foreground leading-none">{entry.rating}</p>
+                        <p className="text-[10px] text-muted">/5</p>
+                      </div>
+                    )}
+                    <div className="flex-1 min-w-0 space-y-1.5">
+                      <p className="text-xs text-foreground leading-snug">{entry.excerpt}</p>
+                      {entry.sampleSize && (
+                        <p className="text-[10px] text-muted">{entry.sampleSize.toLocaleString()} responses</p>
+                      )}
+                      <CommunitySourceBadge source={entry.source} />
+                    </div>
+                  </div>
+                ))}
+                {profile.news.map((entry, i) => (
+                  <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-surface">
+                    <div className="flex-1 min-w-0 space-y-1.5">
+                      <p className="text-xs font-medium text-foreground">{entry.headline}</p>
+                      <p className="text-[11px] text-muted">{entry.summary}</p>
+                      <div className="flex items-center gap-2">
+                        <CommunitySourceBadge source={entry.source} />
+                        <span className={`text-[10px] px-1.5 py-0.5 rounded font-medium ${
+                          entry.sentiment === "positive" ? "text-success bg-success/10" :
+                          entry.sentiment === "negative" ? "text-danger bg-danger/10" : "text-muted bg-surface"
+                        }`}>{entry.sentiment}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      )}
 
       {/* ── How Verification Works ── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -329,76 +401,7 @@ export default function CommunityPage() {
           </div>
 
           <div className="border border-border rounded-2xl bg-background p-6 sm:p-8">
-            <div className="space-y-5">
-              {/* Brand select */}
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-1.5">Franchise Brand</label>
-                <select className="w-full px-4 py-2.5 border border-border rounded-xl bg-background text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
-                  <option value="">Select your franchise brand</option>
-                  {brands.map((b) => (
-                    <option key={b.slug} value={b.slug}>{b.name}</option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Investment */}
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-1.5">Total Investment (actual)</label>
-                <input
-                  type="text"
-                  placeholder="e.g. $350,000"
-                  className="w-full px-4 py-2.5 border border-border rounded-xl bg-background text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
-                />
-              </div>
-
-              {/* Revenue */}
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-1.5">First-Year Gross Revenue</label>
-                <input
-                  type="text"
-                  placeholder="e.g. $800,000"
-                  className="w-full px-4 py-2.5 border border-border rounded-xl bg-background text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
-                />
-              </div>
-
-              {/* Satisfaction */}
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-1.5">Overall Satisfaction (1-10)</label>
-                <input
-                  type="number"
-                  min={1}
-                  max={10}
-                  placeholder="8"
-                  className="w-full px-4 py-2.5 border border-border rounded-xl bg-background text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
-                />
-              </div>
-
-              {/* Would do again */}
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-1.5">Would you do it again?</label>
-                <div className="flex gap-3">
-                  {["Yes", "No", "Unsure"].map((opt) => (
-                    <label key={opt} className="flex items-center gap-2 px-4 py-2.5 border border-border rounded-xl cursor-pointer hover:bg-surface transition-colors">
-                      <input type="radio" name="would-do-again" value={opt.toLowerCase()} className="accent-accent" />
-                      <span className="text-sm text-foreground">{opt}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-
-              {/* Submit */}
-              <a
-                href="mailto:submit@franchisel.com?subject=Anonymous%20Franchisee%20Review%20Submission"
-                className="w-full py-3 bg-accent text-white text-sm font-semibold rounded-xl hover:brightness-110 transition-all block text-center"
-              >
-                Submit Anonymous Review
-              </a>
-
-              <p className="text-[11px] text-muted text-center leading-relaxed">
-                By submitting, you confirm you are or were a franchise owner/operator. Your submission will be
-                verified against FDD Item 20 franchisee lists. No personally identifiable information is stored.
-              </p>
-            </div>
+            <CommunitySubmitForm />
           </div>
 
           {/* Non-disparagement notice */}

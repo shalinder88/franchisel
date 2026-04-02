@@ -5,6 +5,7 @@ import type { FranchiseBrand } from "@/lib/types";
 import type { Metadata } from "next";
 import { computeProductionScores } from "@/lib/diligence";
 import BrandSelector from "@/components/BrandSelector";
+import PrintButton from "@/components/PrintButton";
 
 export const metadata: Metadata = {
   title: "Compare Franchise Brands",
@@ -732,8 +733,7 @@ export default async function ComparePage({
             Compare Franchise Brands
           </h1>
           <p className="mt-4 text-lg text-muted max-w-2xl mx-auto leading-relaxed">
-            Side-by-side comparisons of investment costs, revenue potential, unit growth, and franchisee
-            satisfaction — all sourced from actual Franchise Disclosure Documents.
+            Side-by-side comparisons of investment costs, revenue potential, and unit growth — all sourced from actual Franchise Disclosure Documents.
           </p>
         </div>
       </section>
@@ -741,16 +741,29 @@ export default async function ComparePage({
       {/* ── Full comparison view (when both brands selected) ── */}
       {hasCustomComparison ? (
         <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center justify-between mb-6 print:hidden">
             <Link href="/compare" className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
               Back to Compare
             </Link>
-            <BrandSelector
-              brands={brandOptions}
-              initialA={slugA}
-              initialB={slugB}
-            />
+            <div className="flex items-center gap-3">
+              <PrintButton />
+              <BrandSelector
+                brands={brandOptions}
+                initialA={slugA}
+                initialB={slugB}
+              />
+            </div>
+          </div>
+          {/* Print-only header */}
+          <div className="hidden print:block mb-8 pb-6 border-b border-gray-300">
+            <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Franchise Comparison — Franchisel</p>
+            <h1 className="text-2xl font-bold text-black">
+              {activeBrandA?.name} vs. {activeBrandB?.name}
+            </h1>
+            <p className="text-sm text-gray-500 mt-1">
+              Source: Government-filed Franchise Disclosure Documents · Generated {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })} · franchisel.com
+            </p>
           </div>
           <DynamicComparison brandA={activeBrandA} brandB={activeBrandB} />
         </section>

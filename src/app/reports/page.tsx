@@ -430,7 +430,7 @@ export default function ReportsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-2xl font-bold text-foreground mb-2">Reports Available For</h2>
           <p className="text-sm text-muted mb-8">
-            Reports are available for all <strong className="text-foreground">{brands.filter((b) => b.totalUnits > 0).length}</strong> brands in our directory with FDD data on file. A selection of commonly requested brands:
+            Our directory covers <strong className="text-foreground">{brands.length.toLocaleString()}</strong> franchise brands total. Reports are available for the <strong className="text-foreground">{brands.filter((b) => b.totalUnits > 0).length}</strong> brands where we have extracted Item 20 unit count data from the FDD filing — the minimum needed for a meaningful diligence report. A selection of commonly requested brands:
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

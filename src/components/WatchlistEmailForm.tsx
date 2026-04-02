@@ -14,9 +14,18 @@ export default function WatchlistEmailForm() {
   const [submitted, setSubmitted] = useState(false);
   const [showBrandInput, setShowBrandInput] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email) return;
+    try {
+      await fetch("/api/watchlist-signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, brands }),
+      });
+    } catch {
+      // still show success — don't block UX on network errors
+    }
     setSubmitted(true);
   }
 

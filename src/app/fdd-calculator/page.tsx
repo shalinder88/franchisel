@@ -338,7 +338,7 @@ export default function FddCalculatorPage() {
 
         {/* Presets */}
         <div className="flex flex-wrap gap-2 mb-6">
-          <span className="text-xs text-muted self-center">Quick presets:</span>
+          <span className="text-xs text-muted self-center">Example inputs — replace with your own research:</span>
           {PRESETS.map((p) => (
             <button
               key={p.name}
@@ -438,7 +438,7 @@ export default function FddCalculatorPage() {
           <div className="space-y-4 lg:sticky lg:top-20 lg:self-start">
             {/* Income statement card */}
             <div className="border border-border rounded-xl p-5 bg-background">
-              <h2 className="text-sm font-semibold text-foreground mb-3">Estimated P&L</h2>
+              <h2 className="text-sm font-semibold text-foreground mb-3">Scenario P&L</h2>
 
               <ResultRow label="Gross Revenue" value={fmt(results.grossRevenue)} />
 
@@ -531,7 +531,7 @@ export default function FddCalculatorPage() {
             <div className="rounded-xl border border-accent/20 bg-accent-light p-4 text-sm">
               <p className="font-semibold text-foreground mb-1">Want verified FDD numbers?</p>
               <p className="text-xs text-muted mb-3">
-                Compare verified franchise data across 400+ brands — fees, revenue, closure rates,
+                Compare verified franchise data across 2,474 brands — fees, revenue, closure rates,
                 all sourced from government filings.
               </p>
               <Link

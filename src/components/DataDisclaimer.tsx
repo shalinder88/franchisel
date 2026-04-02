@@ -68,26 +68,32 @@ export function BrandDataDisclaimer({
   fddYear,
   fddAccessed,
   sourceNotes,
+  coreStatsComplete,
 }: {
   brandName: string;
   dataSource: DataSource;
   fddYear: number;
   fddAccessed?: boolean;
   sourceNotes?: string;
+  /** Pass false when investment AND unit count are both 0 — triggers "Partial" label */
+  coreStatsComplete?: boolean;
 }) {
   const isEstimate = dataSource === "industry_estimate";
+  const isPartial = coreStatsComplete === false && !isEstimate;
 
   return (
     <div
       className={`rounded-lg border p-4 text-xs leading-relaxed ${
         isEstimate
           ? "bg-amber-50 border-amber-200 text-amber-900"
+          : isPartial
+          ? "bg-yellow-50 border-yellow-200 text-yellow-900"
           : "bg-green-50 border-green-200 text-green-900"
       }`}
     >
       <div className="flex items-start gap-2">
         <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          {isEstimate ? (
+          {isEstimate || isPartial ? (
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
           ) : (
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -95,9 +101,18 @@ export function BrandDataDisclaimer({
         </svg>
         <div>
           <p className="font-semibold mb-1">
-            {isEstimate ? "Data Verification Status: Estimated" : "Data Verification Status: Verified"}
+            {isEstimate
+              ? "Data Verification Status: Estimated"
+              : isPartial
+              ? "Data Verification Status: Verified Source — Incomplete Data"
+              : "Data Verification Status: Verified"}
           </p>
-          {isEstimate ? (
+          {isPartial ? (
+            <p>
+              The FDD source for {brandName} has been verified (government filing), but <strong>core financial figures were not extracted</strong> from this filing — investment range and unit counts are not available. The filing may use non-standard disclosure formats. Request the FDD directly from the franchisor for complete figures.
+              {sourceNotes ? ` ${sourceNotes}` : ""}
+            </p>
+          ) : isEstimate ? (
             <p>
               Financial figures for {brandName} shown on this page are <strong>industry estimates</strong> based
               on publicly available information including franchisor websites, press releases, and industry
