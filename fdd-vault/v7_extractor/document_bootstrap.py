@@ -141,26 +141,32 @@ def build_bootstrap(page_reads: List[PageRead]) -> Dict[str, Any]:
 
     # ══ Page offset calibration ══
     # FDD page numbers != PDF page numbers. Detect offset from TOC + actual content.
+    # General rule: DON'T apply offset in bootstrap. Let the item_locator handle it.
+    # Bootstrap stores the raw TOC page numbers. The locator has its own offset
+    # calculation that's proven (Papa Johns 23/23).
+    # Only store the detected offset for informational purposes.
     fdd_to_pdf_offset = 0
     if toc_map:
-        # Find Item 1's TOC page number and actual PDF page
-        toc_item1_page = toc_map.get(1)
-        if toc_item1_page:
-            # Search for "Item 1" heading in the PDF to find actual page
+        # Detect offset by finding Item 1 or first available item heading
+        calibration_items = [1, 3, 5, 7, 19, 20]
+        for cal_item in calibration_items:
+            toc_page = toc_map.get(cal_item)
+            if not toc_page:
+                continue
+            item_pattern = re.compile(
+                rf'(?:^|\n)\s*(?:ITEM|Item)\s+{cal_item}\b',
+                re.MULTILINE
+            )
             for pr in page_reads:
-                if re.search(r'(?:^|\n)\s*(?:ITEM|Item)\s+1[\s:\n]', pr.text[:200]):
-                    # Found it — compute offset
-                    fdd_to_pdf_offset = pr.page_num - toc_item1_page
-                    break
-
-        # Apply offset to all TOC entries
-        if fdd_to_pdf_offset != 0:
-            calibrated_map: Dict[int, int] = {}
-            for n, p in toc_map.items():
-                calibrated_p = p + fdd_to_pdf_offset
-                if 1 <= calibrated_p <= len(page_reads):
-                    calibrated_map[n] = calibrated_p
-            toc_map = calibrated_map
+                if item_pattern.search(pr.text[:500]):
+                    computed_offset = pr.page_num - toc_page
+                    if -2 <= computed_offset <= 20:
+                        fdd_to_pdf_offset = computed_offset
+                        break
+            if fdd_to_pdf_offset != 0:
+                break
+    # NOTE: Do NOT apply offset to toc_map here. The item_locator has its own
+    # offset logic that handles this correctly. Applying it twice causes regression.
 
     # ══ Exhibit map ══
     # General rule: Exhibit list formats vary. Must handle:

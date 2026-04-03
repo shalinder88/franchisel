@@ -309,34 +309,37 @@ def locate_all_items(page_reads: List[PageRead],
             pass  # layout enhancement is optional, not required
 
     # ── Handle multi-item pages (intra-page segmentation) ──
-    # General rule: Multiple items can start on the same page.
-    # McDonald's has Items 4+5+6 all on page 18.
-    # When items share a page, they share it — don't bump to next page.
-    # Mark them as sharing so the segmenter can split text within the page.
+    # General rule: Multiple items can start on the same page ONLY when
+    # the TOC explicitly says they share a page (same TOC page number).
+    # Content-matched items should NOT share pages — force document order.
     sorted_items = sorted(locations.keys())
 
-    # Group items by start page
-    page_groups: Dict[int, List[int]] = {}
+    # Identify TOC-confirmed shared pages
+    toc_shared_pages: Dict[int, List[int]] = {}
     for item_num in sorted_items:
-        page_idx = locations[item_num]["start_page_idx"]
-        if page_idx not in page_groups:
-            page_groups[page_idx] = []
-        page_groups[page_idx].append(item_num)
+        toc_page = toc_map.get(item_num) or toc_map.get(str(item_num))
+        if toc_page:
+            toc_idx = toc_page + offset - 1
+            if toc_idx not in toc_shared_pages:
+                toc_shared_pages[toc_idx] = []
+            toc_shared_pages[toc_idx].append(item_num)
 
-    # Mark shared-page items
-    for page_idx, items_on_page in page_groups.items():
+    # Only mark as shared if TOC confirms multiple items on the same page
+    for page_idx, items_on_page in toc_shared_pages.items():
         if len(items_on_page) > 1:
             for item_num in items_on_page:
-                locations[item_num]["shares_page_with"] = [n for n in items_on_page if n != item_num]
-                locations[item_num]["needs_intra_page_split"] = True
+                if item_num in locations:
+                    locations[item_num]["shares_page_with"] = [n for n in items_on_page if n != item_num]
+                    locations[item_num]["needs_intra_page_split"] = True
+                    locations[item_num]["start_page_idx"] = page_idx  # snap to TOC page
+                    locations[item_num]["start_page_num"] = page_idx + 1
 
-    # Enforce document order — but allow shared pages
+    # Enforce document order — allow TOC-confirmed shared pages only
     prev_page = -1
     for item_num in sorted_items:
         loc = locations[item_num]
-        shares = loc.get("shares_page_with", [])
-        if loc["start_page_idx"] < prev_page and not shares:
-            # Out of order AND not sharing a page — adjust
+        is_toc_shared = loc.get("needs_intra_page_split", False)
+        if loc["start_page_idx"] <= prev_page and not is_toc_shared:
             loc["start_page_idx"] = prev_page + 1
             loc["start_page_num"] = loc["start_page_idx"] + 1
             loc["locator_method"] += "_adjusted"
