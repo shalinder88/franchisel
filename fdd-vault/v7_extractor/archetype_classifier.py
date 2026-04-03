@@ -26,6 +26,14 @@ Archetypes:
   - automotive: Oil change, car wash, tire
   - real_estate: Property management, brokerage
   - pet_services: Grooming, boarding, daycare
+  - drive_thru_beverage: Drive-thru coffee/beverage (Ziggi's, Dutch Bros)
+  - boutique_interval_fitness: Boutique studio/interval (F45, Orangetheory)
+  - full_size_fitness: Full gym with EFT membership (Planet Fitness, Anytime)
+  - home_care_referral: Home care / caregiver placement / referral agency
+  - preschool_education: Preschool / education / curriculum
+  - youth_sports: Youth sports / area-developer network (i9 Sports)
+  - beauty_appointment: Beauty / salon / appointment-driven (Great Clips, Drybar)
+  - b2b_gifting: B2B gifting / fulfillment / software-dependent
   - other: Unclassified
 """
 
@@ -35,7 +43,7 @@ from typing import Dict, Any, Optional
 
 ARCHETYPE_SIGNALS = {
     "qsr_restaurant": {
-        "keywords": [r"restaurant|pizza|burger|chicken|sandwich|taco|sub|wing|coffee|donut|bakery|cafe",
+        "keywords": [r"restaurant|pizza|burger|chicken|sandwich|taco|sub|wing|donut|bakery",
                      r"drive.thru|drive.through|dine.in|carry.out|delivery|quick.service|fast.casual"],
         "fee_shape": "percentage_of_gross_sales",
         "expected_item19": "gross_sales_or_net_sales",
@@ -109,6 +117,64 @@ ARCHETYPE_SIGNALS = {
         "fee_shape": "percentage_of_gross_revenue",
         "expected_item19": "gross_revenue",
         "expected_item20": "location_count",
+    },
+    "drive_thru_beverage": {
+        "keywords": [r"drive[\-\s]thr(?:u|ough).*(?:coffee|beverage|drink)",
+                     r"coffee.*(?:drive|stand|kiosk)", r"espresso|latte|smoothie"],
+        "fee_shape": "percentage_of_gross_sales",
+        "expected_item19": "gross_sales",
+        "expected_item20": "location_count",
+    },
+    "boutique_interval_fitness": {
+        "keywords": [r"(?:boutique|interval|HIIT|circuit|functional)\s+(?:fitness|training|studio)",
+                     r"(?:45|30|60)[\-\s]minute\s+(?:workout|class|session)"],
+        "fee_shape": "percentage_of_gross_sales",
+        "expected_item19": "gross_sales_studio_level",
+        "expected_item20": "studio_count",
+    },
+    "full_size_fitness": {
+        "keywords": [r"(?:24[\-\s]hour|24/7)\s+(?:fitness|gym|access)",
+                     r"(?:membership|EFT|electronic\s+fund\s+transfer).*(?:gym|fitness)",
+                     r"(?:cardio|weight|strength)\s+(?:equipment|training)"],
+        "fee_shape": "percentage_of_gross_sales_or_eft",
+        "expected_item19": "membership_revenue",
+        "expected_item20": "center_count",
+    },
+    "home_care_referral": {
+        "keywords": [r"home\s+(?:care|health|companion)", r"caregiver|nurse|aide",
+                     r"referral\s+agency|placement|staffing.*(?:care|health)"],
+        "fee_shape": "percentage_of_collected_revenue",
+        "expected_item19": "collected_revenue",
+        "expected_item20": "territory_based",
+    },
+    "preschool_education": {
+        "keywords": [r"preschool|pre[\-\s]school|early\s+learning|daycare|child\s+care",
+                     r"(?:STEM|STEAM|Montessori|curriculum)\s+(?:program|center|school)"],
+        "fee_shape": "percentage_of_gross_revenue",
+        "expected_item19": "tuition_enrollment_revenue",
+        "expected_item20": "center_count",
+    },
+    "youth_sports": {
+        "keywords": [r"youth\s+(?:sports|athletics|league)", r"(?:flag\s+)?football|soccer|baseball|basketball",
+                     r"area\s+developer.*(?:sports|athletic)"],
+        "fee_shape": "percentage_of_gross_revenue",
+        "expected_item19": "registration_revenue",
+        "expected_item20": "territory_based",
+    },
+    "beauty_appointment": {
+        "keywords": [r"salon|barber|hair\s+(?:cut|style|care)|beauty|blow\s*(?:dry|out)",
+                     r"wax(?:ing)?|nail|manicure|pedicure|lash|brow",
+                     r"appointment|walk[\-\s]in|gift\s+card"],
+        "fee_shape": "percentage_of_gross_sales",
+        "expected_item19": "gross_sales_per_location",
+        "expected_item20": "salon_count",
+    },
+    "b2b_gifting": {
+        "keywords": [r"(?:corporate|business)\s+(?:gift|gifting)", r"fulfillment|packaging|shipping",
+                     r"(?:B2B|business[\-\s]to[\-\s]business)\s+(?:service|platform)"],
+        "fee_shape": "percentage_of_gross_revenue",
+        "expected_item19": "revenue_or_billings",
+        "expected_item20": "territory_based",
     },
 }
 

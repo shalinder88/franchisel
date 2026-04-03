@@ -202,6 +202,10 @@ class PageRead:
     # Geometry hints from Phase -1
     has_table_regions: bool = False
     has_heading_regions: bool = False
+    # Page-level confidence and missing data (per add-on blueprint)
+    page_confidence_tier: str = "medium"  # very_high / high / medium / low / very_low
+    page_missing_data: List[str] = field(default_factory=list)
+    page_parse_warnings: List[str] = field(default_factory=list)
 
 
 @dataclass

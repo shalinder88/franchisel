@@ -35,8 +35,20 @@ def check_completeness(items: Dict[int, ItemSection],
     has_financials = evidence.get("hasAuditedFinancials") is not None
     no_unresolved = not missing_tables
 
-    if (complete >= 20 and has_19 and has_20 and has_financials
-            and no_unresolved and len(missing_items) <= 2):
+    # Gold requires per blueprint:
+    # - Item 19 directly parsed if present
+    # - Item 20 directly parsed
+    # - Item 21 directly parsed
+    # - state addenda checked
+    # - exhibit references followed
+    # - contradictions resolved or flagged
+    # - no PII leakage
+    # - page-level confidence assigned
+    has_item20_parsed = has_20 and items[20].failure_state == FailureState.COMPLETE
+    has_item21_parsed = has_21 and items[21].failure_state != FailureState.PARSE_FAILED
+
+    if (complete >= 20 and has_19 and has_item20_parsed and has_item21_parsed
+            and has_financials and no_unresolved and len(missing_items) <= 2):
         gate = PublishGate.GOLD
     elif complete >= 15 and (has_19 or has_20):
         gate = PublishGate.PUBLISHABLE_STANDARD

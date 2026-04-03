@@ -43,6 +43,10 @@ from .reviewer_queues import build_reviewer_queues
 from .qa.model_classification_checks import check_model_classification
 from .assemblers.visual_ready_builder import build_all_visuals
 from .assemblers.memo_output_builder import build_all_memos
+from .document_classifier import classify_document
+from .brand_extension_registry import build_extension_plan
+from .document_graph import DocumentGraph
+from .reviewer_pass import build_reviewer_outputs
 from .normalizers.engine_builder import build_all_engines
 from .qa.pii_checks import check_pii_all_items
 from .qa.completeness_checks import check_completeness
@@ -95,6 +99,15 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     print(f"  Exhibits: {list(bootstrap['exhibitMap'].keys())}")
 
     # ════════════════════════════════════════════════════════════════
+    # DOCUMENT CLASSIFICATION (before archetype)
+    # ════════════════════════════════════════════════════════════════
+    print(f"\n--- Document classification ---")
+    doc_class = classify_document(bootstrap)
+    print(f"  Type: {doc_class['document_type']} | Offering: {doc_class['offering_type']}")
+    if doc_class['special_structure_flags']:
+        print(f"  Flags: {doc_class['special_structure_flags']}")
+
+    # ════════════════════════════════════════════════════════════════
     # ARCHETYPE CLASSIFICATION (before extraction)
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Archetype classification ---")
@@ -102,6 +115,9 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     print(f"  Archetype: {archetype['archetype']} (confidence: {archetype['confidence']})")
     print(f"  Expected fee shape: {archetype.get('expected_fee_shape', '?')}")
     print(f"  Expected Item 19: {archetype.get('expected_item19', '?')}")
+    extension_plan = build_extension_plan(archetype)
+    if extension_plan["required_extensions"]:
+        print(f"  Extensions: {extension_plan['required_extensions']}")
 
     # ════════════════════════════════════════════════════════════════
     # PHASE 2: SECTION SEGMENTATION
@@ -243,6 +259,13 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     model_checks = check_model_classification(archetype, evidence.to_dict(), engines)
     reviewer = build_reviewer_queues(items, exhibits, evidence.to_dict(), archetype, coverage)
 
+    # Build document graph
+    doc_graph = DocumentGraph()
+    doc_graph.build_from_extraction(items, exhibits, all_cross_refs)
+
+    # Build reviewer pass outputs
+    reviewer_outputs = build_reviewer_outputs(items, evidence.to_dict(), coverage, engines)
+
     # Count reviewer issues
     total_review_tasks = sum(len(q) for q in reviewer.values())
     if total_review_tasks > 0:
@@ -316,13 +339,17 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         },
         "brand": brand,
         "brand_tagged": brand_tagged,
+        "document_classification": doc_class,
         "archetype": archetype,
+        "extension_plan": extension_plan,
         "document_package": doc_package,
+        "document_graph": doc_graph.to_dict(),
         "visuals": visuals,
         "memos": memos,
         "confidence": confidence_summary,
         "model_checks": model_checks,
         "reviewer_queues": {k: v for k, v in reviewer.items() if v},
+        "reviewer_pass": reviewer_outputs,
     }
 
     return result

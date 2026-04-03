@@ -36,6 +36,32 @@ Do NOT hardcode these into the extractor runtime.
 - Spousal liability
 - Item 19 excludes non-traditional restaurants
 
+### Drive-Thru Beverage
+- **Ziggi's Coffee**: Drive-thru coffee model, 93 units, growing
+
+### Youth Sports
+- **i9 Sports**: Area-developer network, 264 units, territory-based
+
+### B2B / Gifting
+- **Cookie Advantage**: B2B gifting model, 23 units
+
+### Home Care
+- **Hallmark Homecare**: Referral/placement agency, 36 units, all franchised
+- **Home Halo**: 2 units (0 franchised, 2 company), zero franchisees
+
+### Education
+- **Ivybrook Academy**: Preschool/education, 40 units
+
+### QSR (Additional)
+- **Cupbop**: Korean BBQ, 50 units (24 franchised, 26 company)
+- **Grabbagreen**: Healthy QSR, 4 units, system shrinking
+
+### Beauty / Salon
+- **Drybar**: Blow-dry bar, 176 units, all franchised
+
+### Fitness (Additional)
+- **Sweat440**: Boutique fitness, 22 units (17 franchised, 5 company)
+
 ## Key Cross-Archetype Rules
 1. Items 11-16 are NOT filler — kill switches hide there
 2. Special-risks page seeds the kill-switch engine before Item 1
