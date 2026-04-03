@@ -83,20 +83,31 @@ def build_all_engines(items: Dict[int, ItemSection],
 
     # ── Item 7: Investment Engine ──
     i7 = parsed_items.get(7, {})
-    # Parser returns nested: total_investment.value.{low, high} or {amount}
-    total_inv = i7.get("total_investment", {})
-    total_val = total_inv.get("value") if isinstance(total_inv, dict) else None
+    # Parser returns line_items.value as list of dicts, each with is_total flag
+    # Pick the FIRST total row (standard format) as primary, store all variants
+    line_items_data = i7.get("line_items", {})
+    all_items = line_items_data.get("value", []) if isinstance(line_items_data, dict) else []
+    total_rows = [li for li in all_items if li.get("is_total") and li.get("amount")]
+
     inv_low = None
     inv_high = None
-    if isinstance(total_val, dict):
-        inv_low = total_val.get("low")
-        inv_high = total_val.get("high")
-        if not inv_low and total_val.get("amount"):
-            inv_low = total_val["amount"]
-            inv_high = total_val["amount"]
-    # Convert to int if float
-    if inv_low: inv_low = int(inv_low)
-    if inv_high: inv_high = int(inv_high)
+    all_totals = []
+
+    for tr in total_rows:
+        amt = tr.get("amount", {})
+        lo = amt.get("low")
+        hi = amt.get("high")
+        single = amt.get("amount")
+        if lo and hi:
+            all_totals.append({"low": int(lo), "high": int(hi), "name": tr.get("name", "")})
+        elif single:
+            all_totals.append({"low": int(single), "high": int(single), "name": tr.get("name", "")})
+
+    # Primary: pick the total with the HIGHEST range (standard format is usually the largest)
+    if all_totals:
+        primary = max(all_totals, key=lambda t: t["high"])
+        inv_low = primary["low"]
+        inv_high = primary["high"]
 
     line_items = i7.get("line_items", {})
     line_items_val = line_items.get("value", []) if isinstance(line_items, dict) else []
@@ -104,13 +115,12 @@ def build_all_engines(items: Dict[int, ItemSection],
     engines["initial_investment_engine"] = {
         "investment_low": inv_low,
         "investment_high": inv_high,
-        "line_items": line_items_val,
+        "all_totals": all_totals,
+        "line_items": all_items,
         "format_variants": i7.get("format_variants", {}).get("value", []) if isinstance(i7.get("format_variants"), dict) else [],
     }
     if inv_low:
-        prov = total_inv.get("provenance") if isinstance(total_inv, dict) else None
-        evidence.set("totalInvestmentLow", inv_low, EvidenceState.PRESENT,
-                     Provenance(source_page=prov.get("source_page") if prov else None) if prov else None)
+        evidence.set("totalInvestmentLow", inv_low, EvidenceState.PRESENT)
         evidence.set("totalInvestmentHigh", inv_high, EvidenceState.PRESENT)
 
     # ── Item 8: Supplier Engine ──
@@ -142,11 +152,34 @@ def build_all_engines(items: Dict[int, ItemSection],
 
     # ── Item 20: Outlet Engine ──
     i20 = parsed_items.get(20, {})
-    engines["item20_engine"] = i20
-    if i20.get("total_end"):
-        evidence.set("totalUnits", i20["total_end"], EvidenceState.PRESENT)
-        evidence.set("franchisedUnits", i20.get("franchised_end", 0), EvidenceState.PRESENT)
-        evidence.set("companyOwnedUnits", i20.get("co_end", 0), EvidenceState.PRESENT)
+    # Parser returns nested: total_outlets.value, total_franchised.value, etc.
+    def _i20_val(key):
+        entry = i20.get(key, {})
+        return entry.get("value") if isinstance(entry, dict) else entry
+
+    total_outlets = _i20_val("total_outlets")
+    total_franchised = _i20_val("total_franchised")
+    total_co = _i20_val("total_company_owned")
+
+    # If total not found, is zero, or is less than its components, compute it
+    computed_total = (total_franchised or 0) + (total_co or 0)
+    if not total_outlets or total_outlets < computed_total:
+        total_outlets = computed_total
+
+    engines["item20_engine"] = {
+        "total_end": total_outlets,
+        "franchised_end": total_franchised,
+        "co_end": total_co,
+        "net_growth": (total_outlets or 0) - (_i20_val("total_outlets") or 0),  # placeholder
+        "raw_parsed": {k: v for k, v in i20.items() if k != "outlet_tables"},
+    }
+
+    if total_outlets:
+        evidence.set("totalUnits", total_outlets, EvidenceState.PRESENT)
+    if total_franchised:
+        evidence.set("franchisedUnits", total_franchised, EvidenceState.PRESENT)
+    if total_co:
+        evidence.set("companyOwnedUnits", total_co, EvidenceState.PRESENT)
 
     # ── Item 21 + Exhibits: Financial Statement Engine ──
     fin = exhibit_data.get("financials", {})

@@ -101,6 +101,9 @@ def parse_item20(section: ItemSection) -> Dict[str, Any]:
                 "provenance": tprov,
             }
 
+        # Track current type group across rows (Franchised / Company-Owned / Total)
+        current_type_group = None
+
         for row in table.rows:
             if not row or not any(cell.strip() for cell in row):
                 continue
@@ -119,33 +122,52 @@ def parse_item20(section: ItemSection) -> Dict[str, Any]:
 
             table_data["rows"].append(row_data)
 
-            # --- Extract key metrics from row labels ---
-            label_lower = row[0].lower().strip() if row else ""
+            # --- Track type group changes ---
+            label = row[0].strip().lower() if row else ""
+            if "franchised" in label and "total" not in label:
+                current_type_group = "franchised"
+            elif "company" in label or "affiliate" in label:
+                current_type_group = "company"
+            elif "total" in label and "franchised" not in label and "company" not in label:
+                current_type_group = "total"
+
+            # For rows with empty label, inherit the current type group
+            if not label or label.isspace():
+                label = current_type_group or ""
+
+            label_lower = label
+
             # Use the last value (most recent year) for key metrics
+            # Look for the 2024 row specifically
+            is_2024 = any("2024" in str(c) for c in row)
             last_val = None
             for v in reversed(values):
-                if v is not None:
+                if v is not None and v > 0 and not (2000 <= v <= 2030):
                     last_val = v
                     break
 
-            if last_val is not None:
-                if re.search(r'\btotal\b.*\bfranchis', label_lower) or label_lower == "franchised":
-                    if "end" in label_lower or "total" in label_lower:
-                        result["total_franchised"] = {
-                            "value": last_val,
-                            "state": EvidenceState.PRESENT.value,
-                            "provenance": tprov,
-                        }
-                elif re.search(r'\btotal\b.*\bcompany', label_lower) or label_lower == "company-owned":
-                    if "end" in label_lower or "total" in label_lower:
-                        result["total_company_owned"] = {
-                            "value": last_val,
-                            "state": EvidenceState.PRESENT.value,
-                            "provenance": tprov,
-                        }
-                elif re.search(r'^total\b', label_lower) and "franchis" not in label_lower and "company" not in label_lower:
+            if last_val is not None and is_2024:
+                # For 2024 rows, use current_type_group to determine what we're counting
+                # The NASAA table has values: [year, start, end, net_change]
+                # For end-of-period count, use second numeric value (end column)
+                vals_no_year = [v for v in values if v is not None and not (2000 <= v <= 2030)]
+                end_val = vals_no_year[1] if len(vals_no_year) >= 2 else (vals_no_year[0] if vals_no_year else None)
+
+                if current_type_group == "franchised" and end_val:
+                    result["total_franchised"] = {
+                        "value": end_val,
+                        "state": EvidenceState.PRESENT.value,
+                        "provenance": tprov,
+                    }
+                elif current_type_group == "company" and end_val:
+                    result["total_company_owned"] = {
+                        "value": end_val,
+                        "state": EvidenceState.PRESENT.value,
+                        "provenance": tprov,
+                    }
+                elif current_type_group == "total" and end_val:
                     result["total_outlets"] = {
-                        "value": last_val,
+                        "value": end_val,
                         "state": EvidenceState.PRESENT.value,
                         "provenance": tprov,
                     }
