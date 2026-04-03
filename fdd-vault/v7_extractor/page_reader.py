@@ -20,48 +20,15 @@ from .page_classifier import classify_page
 
 
 def detect_item_headings(text: str, page_num: int) -> List[Dict]:
-    """Detect ITEM X headings on a page.
+    """DISABLED — Item locator uses TOC-anchored + content reading, not heading regex.
 
-    Returns list of {item_num, position, is_real, title}.
+    This function is kept as a stub for backward compatibility.
+    Heading detection via regex is NOT the primary path.
+    The item_locator.py uses TOC page numbers + content matching instead.
 
-    Filtering rules:
-    - TOC entries (dots + page numbers) are excluded
-    - Cross-references mid-sentence are excluded
-    - Only headings where ITEM X starts the line and is followed by a title are real
+    Returns empty list. Heading regex is QA-only (Phase 6).
     """
-    headings = []
-    for m in re.finditer(r'(?:^|\n)\s*(?:ITEM|Item)\s+(\d+)\s*[:\.\s\n]', text, re.MULTILINE):
-        item_num = int(m.group(1))
-        if not (1 <= item_num <= 23):
-            continue
-
-        after = text[m.end():m.end() + 200]
-        first_line = after.split('\n')[0].strip() if after else ""
-
-        # Filter: TOC entry (trailing dots + page number)
-        if re.search(r'[\.\…]{3,}\s*\d+', first_line):
-            continue
-        if re.match(r'^[\.\…\s\d]+$', first_line):
-            continue
-
-        # Filter: cross-reference (followed by lowercase prose, not a title)
-        if first_line and first_line[0].islower():
-            continue
-
-        # Filter: mid-sentence mention (preceded by substantial text on same line)
-        line_start = text.rfind('\n', max(0, m.start() - 200), m.start())
-        before_on_line = text[line_start + 1:m.start()].strip() if line_start >= 0 else ""
-        if len(before_on_line) > 20 and not re.match(r'^[-–—\s\d\.]*$', before_on_line):
-            continue
-
-        headings.append({
-            "item_num": item_num,
-            "position": m.start(),
-            "title": first_line[:80],
-            "page": page_num,
-        })
-
-    return headings
+    return []
 
 
 def detect_cross_references(text: str, page_num: int) -> List[CrossReference]:

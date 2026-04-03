@@ -1,288 +1,262 @@
 """
-Item Locator Service
+Item Locator Service — TOC-Anchored Primary
 
-Replaces strict sequential heading detection with a 4-level hierarchy:
+The locator finds item sections by READING, not by regex.
 
-  Level 1: TOC anchor — parse TOC, jump to predicted page, search local window
-  Level 2: Heading graph — score all candidates by typography, isolation, distance from TOC
-  Level 3: Content confirmation — verify section content matches expected item type
-  Level 4: Text fallback — find_actual_item() style, only if Levels 1-3 fail
+Primary path: TOC-anchored
+  1. Bootstrap parses TOC → item page numbers
+  2. Calculate PDF page offset (FDD page 1 ≠ PDF page 1)
+  3. Jump to predicted PDF page for each item
+  4. Read that page — confirm by content signals
+  5. Walk forward if needed to find exact start
 
-The locator builds an ITEM INDEX first, then the section segmenter uses that
-index to extract in order. Finding items and extracting them are decoupled.
+Secondary path: Sequential reading
+  For items NOT in TOC, read pages in order between known items.
+  When content changes from one item's signals to another's, that's the boundary.
 
-Output per item:
-  {
-    "item_number": 19,
-    "start_page_idx": 57,  # 0-indexed
-    "locator_method": "toc_anchor+heading_confirmed",
-    "confidence": 0.95,
-    "content_confirmed": True,
-    "needs_review": False
-  }
+NO regex heading detection. Content confirmation only.
+Regex is disabled here — it belongs in QA Phase 6 only.
 """
 
-import re
 from typing import List, Dict, Optional, Tuple
-from .models import PageRead, PageType, US_STATES
+from .models import PageRead, PageType
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# ITEM CONTENT SIGNATURES
-# Used for Level 3: content confirmation
-# Each item has keywords that MUST appear in its section and anti-keywords that
-# indicate the section belongs to a DIFFERENT item
+# ITEM CONTENT SIGNATURES — used for content confirmation, not heading detection
 # ══════════════════════════════════════════════════════════════════════════════
 
-ITEM_SIGNATURES = {
-    1: {"kw": [r"(?:formed|incorporated|organized)", r"parent|predecessor|affiliate",
-               r"began (?:offering|franchising)"],
-        "anti": [r"Royalty fee", r"% of Gross"]},
-    3: {"kw": [r"(?:v\.|vs\.)", r"Case No\.", r"no litigation.*(?:required|disclosed)"],
-        "anti": [r"Royalty", r"Systemwide Outlet"]},
-    4: {"kw": [r"bankrupt", r"Chapter (?:7|11)", r"no bankruptcy.*(?:required|disclosed)"],
-        "anti": [r"Royalty", r"Systemwide Outlet"]},
-    5: {"kw": [r"Initial Franchise Fee", r"Development Fee", r"non-refundable", r"lump sum"],
-        "anti": [r"Royalty.*(?:weekly|monthly)", r"Systemwide Outlet"]},
-    6: {"kw": [r"Royalty|Continuing.*Fee", r"Advertising|Ad Fund|Marketing|Brand Fund",
-               r"Transfer Fee", r"% of (?:Gross|Net)", r"Late.*(?:Fee|Charge)"],
-        "anti": [r"Systemwide Outlet", r"financial performance"]},
-    7: {"kw": [r"ESTIMATED INITIAL INVESTMENT", r"Leasehold", r"Equipment", r"TOTAL"],
-        "anti": [r"Royalty.*weekly", r"Systemwide Outlet"]},
-    8: {"kw": [r"approved supplier|designated supplier", r"sole.*source",
-               r"rebate|commission", r"required.*purchase"],
-        "anti": [r"Systemwide Outlet", r"financial performance"]},
-    9: {"kw": [r"Obligation", r"Section in.*Agreement"],
-        "anti": [r"Systemwide Outlet"]},
-    10: {"kw": [r"(?:do not|does not).*(?:offer|provide).*financ", r"guarantee.*note",
-                r"SBA|Small Business", r"interest rate"],
-         "anti": [r"Systemwide Outlet", r"Royalty"]},
-    11: {"kw": [r"training|Training Program", r"site selection", r"advertising.*(?:fund|program)",
-                r"computer|software|POS", r"Operations Manual"],
-         "anti": [r"Systemwide Outlet"]},
-    12: {"kw": [r"(?:exclusive|protected).*(?:territory|area)", r"radius|mile",
-                r"non-exclusive", r"Development Area"],
-         "anti": [r"Systemwide Outlet", r"Royalty"]},
-    13: {"kw": [r"Registration No\.", r"USPTO", r"Principal Register", r"trademark|service mark"],
-         "anti": [r"Royalty", r"Systemwide Outlet"]},
-    14: {"kw": [r"patent|copyright|proprietary|trade secret|confidential"],
-         "anti": [r"Systemwide Outlet"]},
-    15: {"kw": [r"full.?time|best efforts|personal.*supervision", r"Managing Owner|Operating Principal"],
-         "anti": [r"Systemwide Outlet"]},
-    16: {"kw": [r"(?:only|must).*(?:offer|sell).*authorized", r"add.*delete"],
-         "anti": [r"Systemwide Outlet"]},
-    17: {"kw": [r"Length of.*term", r"Renewal|extension", r"Termination.*cause",
-                r"Transfer", r"Non-compet", r"Dispute.*resolution", r"Choice of (?:forum|law)"],
-         "anti": [r"Systemwide Outlet", r"financial performance"]},
-    18: {"kw": [r"public figure", r"does not use.*public"],
-         "anti": [r"Royalty", r"Systemwide Outlet", r"\$[\d,]{5,}"]},
-    19: {"kw": [r"Financial Performance", r"\$[\d,]{4,}",
-                r"(?:sold|earned).*amount.*differ", r"Average|Median", r"EBITDA|Gross.*(?:Sales|Revenue)"],
-         "anti": [r"Systemwide Outlet Summary", r"Opened.*(?:Outlet|Restaurant).*Terminated"]},
-    20: {"kw": [r"Systemwide.*(?:Outlet|Summary)", r"Outlets? at.*(?:Start|End)",
-                r"(?:Opened|Terminated|Non-Renewed|Reacquired|Ceased|Transfer)",
-                r"Franchised|Company.?Owned"],
-         "anti": [r"\$[\d,]{5,}", r"EBITDA", r"Average.*Revenue"]},
-    21: {"kw": [r"Financial Statement", r"Exhibit\s+[A-Z]", r"audited", r"fiscal year"],
-         "anti": [r"Systemwide Outlet", r"EBITDA"]},
-    22: {"kw": [r"Exhibit\s+[A-Z]", r"Agreement", r"attached.*exhibit"],
-         "anti": [r"Systemwide Outlet", r"EBITDA"]},
-    23: {"kw": [r"Receipt", r"detach|return", r"acknowledg"],
-         "anti": [r"Royalty", r"EBITDA"]},
+ITEM_CONTENT = {
+    1: {"signals": ["formed", "incorporated", "organized", "parent", "predecessor",
+                     "affiliate", "began offering", "began franchising"],
+        "anti": ["% of gross", "systemwide outlet"]},
+    2: {"signals": ["business experience", "served as", "officer", "director",
+                     "employment history"],
+        "anti": ["royalty", "systemwide outlet"]},
+    3: {"signals": ["litigation", "v.", "case no", "filed", "settlement",
+                     "no litigation"],
+        "anti": ["royalty", "systemwide outlet"]},
+    4: {"signals": ["bankruptcy", "chapter 7", "chapter 11", "no bankruptcy"],
+        "anti": ["royalty"]},
+    5: {"signals": ["initial franchise fee", "initial fee", "development fee",
+                     "non-refundable", "lump sum"],
+        "anti": ["% of gross", "systemwide outlet"]},
+    6: {"signals": ["royalty", "advertising", "ad fund", "% of gross", "% of net",
+                     "transfer fee", "late fee", "other fees"],
+        "anti": ["systemwide outlet", "estimated initial investment"]},
+    7: {"signals": ["estimated initial investment", "your estimated",
+                     "leasehold", "equipment", "total"],
+        "anti": ["systemwide outlet"]},
+    8: {"signals": ["approved supplier", "designated supplier", "required purchase",
+                     "sole source", "rebate", "commission"],
+        "anti": ["systemwide outlet"]},
+    9: {"signals": ["obligation", "section in agreement", "franchisee's obligations"],
+        "anti": ["systemwide outlet"]},
+    10: {"signals": ["financing", "do not offer financing", "guarantee", "sba",
+                      "small business", "interest rate"],
+         "anti": ["systemwide outlet"]},
+    11: {"signals": ["training", "site selection", "advertising program", "computer",
+                      "software", "operations manual", "opening assistance"],
+         "anti": ["systemwide outlet"]},
+    12: {"signals": ["exclusive territory", "protected area", "territory",
+                      "radius", "mile", "non-exclusive", "development area"],
+         "anti": ["systemwide outlet"]},
+    13: {"signals": ["trademark", "service mark", "registration no", "uspto",
+                      "principal register"],
+         "anti": ["systemwide outlet"]},
+    14: {"signals": ["patent", "copyright", "proprietary", "trade secret",
+                      "confidential"],
+         "anti": ["systemwide outlet"]},
+    15: {"signals": ["full-time", "full time", "personal supervision",
+                      "managing owner", "operating principal", "obligation to participate"],
+         "anti": ["systemwide outlet"]},
+    16: {"signals": ["restrictions on what", "authorized products", "may sell",
+                      "only those products"],
+         "anti": ["systemwide outlet"]},
+    17: {"signals": ["renewal", "termination", "transfer", "non-compete",
+                      "dispute resolution", "choice of forum", "choice of law",
+                      "length of term", "term of franchise"],
+         "anti": ["systemwide outlet", "financial performance"]},
+    18: {"signals": ["public figure", "do not use"],
+         "anti": ["royalty", "systemwide outlet"]},
+    19: {"signals": ["financial performance", "average", "median", "gross sales",
+                      "gross revenue", "ebitda", "sold these amounts"],
+         "anti": ["systemwide outlet summary", "outlets at start"]},
+    20: {"signals": ["systemwide outlet", "outlets at start", "outlets at end",
+                      "opened", "terminated", "non-renewed", "reacquired",
+                      "ceased operations", "franchised", "company-owned"],
+         "anti": ["ebitda", "average revenue"]},
+    21: {"signals": ["financial statement", "audited", "fiscal year", "exhibit"],
+         "anti": ["systemwide outlet"]},
+    22: {"signals": ["contracts", "agreement", "exhibit", "attached"],
+         "anti": ["systemwide outlet"]},
+    23: {"signals": ["receipt", "detach", "return", "acknowledg"],
+         "anti": ["royalty"]},
 }
 
 
-def _score_content(text: str, item_num: int) -> Tuple[int, int]:
-    """Score how well text matches expected content for an item.
-    Returns (keyword_hits, anti_hits)."""
-    sig = ITEM_SIGNATURES.get(item_num)
-    if not sig:
+def _content_match(text: str, item_num: int) -> Tuple[int, int]:
+    """Score how well page text matches expected content for an item.
+    Uses simple word matching — NO regex.
+    Returns (signal_hits, anti_hits).
+    """
+    content = ITEM_CONTENT.get(item_num)
+    if not content:
         return (0, 0)
-    sample = text[:6000]
-    kw_hits = sum(1 for kw in sig["kw"] if re.search(kw, sample, re.I))
-    anti_hits = sum(1 for ak in sig["anti"] if re.search(ak, sample[:3000], re.I))
-    return (kw_hits, anti_hits)
+    text_lower = text[:8000].lower()
+    signal_hits = sum(1 for s in content["signals"] if s in text_lower)
+    anti_hits = sum(1 for a in content["anti"] if a in text_lower[:4000])
+    return (signal_hits, anti_hits)
 
 
-def _is_real_heading(text: str, match_start: int, match_end: int) -> bool:
-    """Determine if an ITEM X match is a real heading vs a cross-reference or TOC entry."""
-    after = text[match_end:match_end + 200]
-    first_line = after.split('\n')[0].strip() if after else ""
+def _calculate_toc_offset(page_reads: List[PageRead], toc_map: Dict[int, int]) -> int:
+    """Calculate the offset between FDD page numbers and PDF page numbers.
 
-    # TOC: trailing dots + page number
-    if re.search(r'[\.\…]{3,}\s*\d+', first_line):
-        return False
-    if re.match(r'^[\.\…\s\d]+$', first_line):
-        return False
+    FDDs often have front matter (cover, TOC, state notices) before page 1.
+    If TOC says Item 10 is on "page 31" but that's actually PDF page 36,
+    the offset is 5.
 
-    # Cross-ref: followed by lowercase prose (not a title)
-    if first_line and first_line[0].islower():
-        return False
+    Strategy: find a page with a clear page number footer like "- 31 -"
+    and compare it to the PDF page index.
+    """
+    import re
 
-    # Cross-ref: preceded by substantial same-line text
-    line_start = text.rfind('\n', max(0, match_start - 200), match_start)
-    before = text[line_start + 1:match_start].strip() if line_start >= 0 else ""
-    if len(before) > 20 and not re.match(r'^[-–—\s\d\.]*$', before):
-        return False
+    # Try to find page number footers in the first 50 pages
+    for pr in page_reads[:50]:
+        # Look for "- N -" pattern (common FDD footer)
+        m = re.search(r'[-–]\s*(\d+)\s*[-–]\s*$', pr.text.strip(), re.MULTILINE)
+        if m:
+            fdd_page = int(m.group(1))
+            pdf_page = pr.page_num
+            offset = pdf_page - fdd_page
+            if 0 <= offset <= 20:  # reasonable offset
+                return offset
 
-    # Cross-ref: followed by NASAA table row marker "(q)", "(s)"
-    if re.match(r'^\s*\([a-z]\)', first_line):
-        return False
+    # Fallback: try to match TOC entries to actual content
+    # If TOC says Item 17 is on page 60 and we find Item 17 content near PDF page 65,
+    # offset is 5
+    for item_num, toc_page in sorted(toc_map.items()):
+        # Search pages near toc_page for content that matches this item
+        for offset_guess in range(0, 15):
+            pdf_page_idx = toc_page + offset_guess - 1
+            if 0 <= pdf_page_idx < len(page_reads):
+                hits, antis = _content_match(page_reads[pdf_page_idx].text, item_num)
+                if hits >= 2 and antis == 0:
+                    return offset_guess
+            # Also try negative offset (front matter is shorter than expected)
+            pdf_page_idx = toc_page - offset_guess - 1
+            if 0 <= pdf_page_idx < len(page_reads):
+                hits, antis = _content_match(page_reads[pdf_page_idx].text, item_num)
+                if hits >= 2 and antis == 0:
+                    return -offset_guess
 
-    return True
+    return 0  # no offset detected
 
-
-# ══════════════════════════════════════════════════════════════════════════════
-# MAIN LOCATOR
-# ══════════════════════════════════════════════════════════════════════════════
 
 def locate_all_items(page_reads: List[PageRead],
                      toc_map: Dict[int, int]) -> Dict[int, Dict]:
-    """Build an item index using the 4-level locator hierarchy.
+    """Build an item index. TOC-anchored primary. No regex heading detection.
 
-    Returns dict: item_num → location info
+    Level 1: TOC anchor — use TOC page numbers + offset, confirm by reading content
+    Level 2: Sequential reading — for items not in TOC, read between known items
     """
     total_pages = len(page_reads)
     locations: Dict[int, Dict] = {}
 
-    # ── Collect ALL heading candidates across all pages ──
-    all_candidates: Dict[int, List[Dict]] = {}
-    for pr in page_reads:
-        # Skip bootstrap pages for heading detection
-        if pr.page_type in (PageType.COVER, PageType.HOW_TO_USE, PageType.TOC,
-                            PageType.STATE_NOTICE, PageType.EXHIBIT_LIST,
-                            PageType.SPECIAL_RISKS):
-            continue
-
-        for m in re.finditer(r'(?:^|\n)\s*(?:ITEM|Item)\s+(\d+)\s*[:\.\s\n]', pr.text, re.MULTILINE):
-            item_num = int(m.group(1))
-            if not (1 <= item_num <= 23):
-                continue
-            if not _is_real_heading(pr.text, m.start(), m.end()):
-                continue
-
-            if item_num not in all_candidates:
-                all_candidates[item_num] = []
-            all_candidates[item_num].append({
-                "page_idx": pr.page_num - 1,
-                "page_num": pr.page_num,
-                "position": m.start(),
-            })
+    # ── Calculate TOC offset ──
+    offset = _calculate_toc_offset(page_reads, toc_map)
 
     # ── Level 1: TOC-anchored localization ──
+    # For each item in the TOC, jump to predicted page and confirm by content
     for item_num in range(1, 24):
         toc_page = toc_map.get(item_num) or toc_map.get(str(item_num))
         if not toc_page:
             continue
 
-        candidates = all_candidates.get(item_num, [])
-        best = None
-        best_dist = 999
+        # Predicted PDF page
+        predicted_idx = toc_page + offset - 1
 
-        for cand in candidates:
-            # Calculate page offset: FDD page numbers often differ from PDF page numbers
-            # Allow a generous window
-            dist = abs(cand["page_num"] - toc_page)
-            if dist <= 10 and dist < best_dist:
-                best_dist = dist
-                best = cand
-
-        if best:
-            # Verify content matches
-            page_text = page_reads[best["page_idx"]].text
-            # Also read next 2 pages for context
-            context_text = page_text
-            for extra in range(1, min(3, total_pages - best["page_idx"])):
-                context_text += "\n" + page_reads[best["page_idx"] + extra].text
-            kw_hits, anti_hits = _score_content(context_text, item_num)
-            content_ok = kw_hits >= 1 and anti_hits == 0
-
-            locations[item_num] = {
-                "start_page_idx": best["page_idx"],
-                "start_page_num": best["page_num"],
-                "locator_method": "toc_anchor" + ("+content_confirmed" if content_ok else ""),
-                "confidence": 0.95 if content_ok else 0.75,
-                "content_confirmed": content_ok,
-                "needs_review": not content_ok,
-            }
-
-    # ── Level 2: Heading graph (for items not found by TOC) ──
-    for item_num in range(1, 24):
-        if item_num in locations:
-            continue
-
-        candidates = all_candidates.get(item_num, [])
-        if not candidates:
-            continue
-
-        # Score each candidate
-        best = None
-        best_score = -999
-        for cand in candidates:
-            # Skip very early pages (front matter)
-            if cand["page_idx"] < total_pages * 0.03:
+        # Search in a window around the predicted page
+        best_idx = None
+        best_score = -1
+        for delta in range(-3, 6):
+            check_idx = predicted_idx + delta
+            if check_idx < 0 or check_idx >= total_pages:
+                continue
+            # Skip bootstrap pages
+            if page_reads[check_idx].page_type in (PageType.COVER, PageType.HOW_TO_USE,
+                                                     PageType.TOC, PageType.STATE_NOTICE,
+                                                     PageType.EXHIBIT_LIST, PageType.SPECIAL_RISKS):
                 continue
 
-            page_text = page_reads[cand["page_idx"]].text
-            context_text = page_text
-            for extra in range(1, min(3, total_pages - cand["page_idx"])):
-                context_text += "\n" + page_reads[cand["page_idx"] + extra].text
+            hits, antis = _content_match(page_reads[check_idx].text, item_num)
+            # Also check next page (some items start mid-page)
+            if check_idx + 1 < total_pages:
+                h2, a2 = _content_match(page_reads[check_idx + 1].text, item_num)
+                hits += h2
+                antis += a2
 
-            kw_hits, anti_hits = _score_content(context_text, item_num)
-            score = kw_hits * 10 - anti_hits * 20
-
+            score = hits - antis * 3
             if score > best_score:
                 best_score = score
-                best = cand
+                best_idx = check_idx
 
-        if best and best_score >= 0:
+        if best_idx is not None and best_score >= 1:
             locations[item_num] = {
-                "start_page_idx": best["page_idx"],
-                "start_page_num": best["page_num"],
-                "locator_method": "heading_graph",
-                "confidence": 0.80 if best_score >= 10 else 0.60,
-                "content_confirmed": best_score >= 10,
-                "needs_review": best_score < 10,
+                "start_page_idx": best_idx,
+                "start_page_num": best_idx + 1,
+                "locator_method": "toc_anchor",
+                "confidence": 0.95 if best_score >= 3 else 0.75,
+                "content_confirmed": best_score >= 2,
+                "needs_review": best_score < 2,
             }
 
-    # ── Level 3: Content scan (for items still not found) ──
-    # Search pages between known items for content that matches
+    # ── Level 2: Sequential gap filling ──
+    # For items NOT in TOC, find them in the gaps between known items
+    # by reading page content sequentially
+    sorted_found = sorted(locations.keys())
+
     for item_num in range(1, 24):
         if item_num in locations:
             continue
 
-        # Determine search range from neighboring found items
-        prev_end = 0
-        next_start = total_pages
-        for found_num in sorted(locations.keys()):
+        # Find the gap this item should be in
+        prev_item_end = 0
+        next_item_start = total_pages
+        for found_num in sorted_found:
             if found_num < item_num:
-                prev_end = max(prev_end, locations[found_num]["start_page_idx"])
+                prev_item_end = locations[found_num]["start_page_idx"]
             elif found_num > item_num:
-                next_start = min(next_start, locations[found_num]["start_page_idx"])
+                next_item_start = locations[found_num]["start_page_idx"]
                 break
 
-        best_page = None
+        # Read pages in the gap, looking for content that matches this item
+        best_idx = None
         best_score = -1
-        for pi in range(prev_end, min(next_start, total_pages)):
-            page_text = page_reads[pi].text
-            kw_hits, anti_hits = _score_content(page_text, item_num)
-            if kw_hits >= 2 and anti_hits == 0 and kw_hits > best_score:
-                best_score = kw_hits
-                best_page = pi
+        for pi in range(max(0, prev_item_end), min(next_item_start, total_pages)):
+            # Skip bootstrap pages
+            if page_reads[pi].page_type in (PageType.COVER, PageType.HOW_TO_USE,
+                                             PageType.TOC, PageType.STATE_NOTICE,
+                                             PageType.EXHIBIT_LIST, PageType.SPECIAL_RISKS):
+                continue
 
-        if best_page is not None:
+            hits, antis = _content_match(page_reads[pi].text, item_num)
+            score = hits - antis * 3
+            if score > best_score and score >= 1:
+                best_score = score
+                best_idx = pi
+
+        if best_idx is not None:
             locations[item_num] = {
-                "start_page_idx": best_page,
-                "start_page_num": best_page + 1,
-                "locator_method": "content_scan",
-                "confidence": 0.50,
-                "content_confirmed": True,
+                "start_page_idx": best_idx,
+                "start_page_num": best_idx + 1,
+                "locator_method": "content_reading",
+                "confidence": 0.60 if best_score >= 2 else 0.40,
+                "content_confirmed": best_score >= 2,
                 "needs_review": True,
             }
 
     # ── Enforce document order ──
-    # Items must appear in order in the PDF. If an item's page is before its
-    # predecessor, something is wrong — adjust.
     sorted_items = sorted(locations.keys())
     prev_page = -1
     for item_num in sorted_items:
@@ -302,8 +276,6 @@ def locate_all_items(page_reads: List[PageRead],
             locations[item_num]["end_page_idx"] = locations[next_item]["start_page_idx"] - 1
         else:
             locations[item_num]["end_page_idx"] = total_pages - 1
-
-        # Safety: end >= start
         if locations[item_num]["end_page_idx"] < locations[item_num]["start_page_idx"]:
             locations[item_num]["end_page_idx"] = locations[item_num]["start_page_idx"]
 
