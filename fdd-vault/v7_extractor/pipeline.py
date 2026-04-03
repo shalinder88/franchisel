@@ -49,6 +49,9 @@ from .brand_extension_registry import build_extension_plan
 from .document_graph import DocumentGraph
 from .reviewer_pass import build_reviewer_outputs
 from .roadmap_reconciliation import reconcile_roadmap
+from .reader_pass import run_reader_pass
+from .reader_engine_reconciler import reconcile as reconcile_reader_engine
+from .completion_audit import run_completion_audit
 from .normalizers.engine_builder import build_all_engines
 from .qa.pii_checks import check_pii_all_items
 from .qa.completeness_checks import check_completeness
@@ -189,12 +192,37 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # PHASE 5: ITEM PARSING → ENGINE NORMALIZATION
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 5: Item parsing + engine normalization ---")
+    # Lane B: Normalization engines
     parsed_items = {}
     for item_num, section in items.items():
         parsed_items[item_num] = parse_item(section)
 
     evidence = EvidenceStore()
     engines = build_all_engines(items, parsed_items, exhibit_data, evidence)
+
+    # ════════════════════════════════════════════════════════════════
+    # LANE A: READER/DISCOVERY PASS
+    # Runs after items are segmented and tables extracted.
+    # Reads the document like a human analyst.
+    # ════════════════════════════════════════════════════════════════
+    print(f"\n--- Lane A: Reader/discovery pass ---")
+    reader_output = run_reader_pass(page_reads, items, bootstrap)
+    print(f"  Brand: {reader_output['brand_memory'].get('brand_name', '?')[:50]}")
+    print(f"  Ledger: {reader_output['ledger'].get('resolved', 0)}/{reader_output['ledger'].get('total', 0)} resolved")
+    print(f"  Facts: {reader_output['fact_store'].get('total_facts', 0)} discovered, {reader_output['fact_store'].get('uncaptured', 0)} uncaptured")
+    print(f"  Exhibits: {reader_output['exhibit_tracker'].get('parsed', 0)}/{reader_output['exhibit_tracker'].get('total', 0)} parsed")
+
+    # ════════════════════════════════════════════════════════════════
+    # LANE C: RECONCILIATION
+    # Compares discovery findings against engine outputs
+    # ════════════════════════════════════════════════════════════════
+    print(f"\n--- Lane C: Reconciliation ---")
+    recon = reconcile_reader_engine(reader_output, engines, evidence.to_dict())
+    print(f"  Aligned: {recon['aligned_count']}")
+    print(f"  Discovery-only: {recon['discovery_only_count']}")
+    print(f"  Engine-only: {recon['engine_only_count']}")
+    if recon['material_disagreement']:
+        print(f"  ⚠️ MATERIAL DISAGREEMENT between reader and engine lanes")
 
     # ════════════════════════════════════════════════════════════════
     # PHASE 6: QA SWEEP
@@ -249,6 +277,16 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         sev = af["severity"]
         icon = "❌" if sev == "critical" else "⚠️" if sev == "warning" else "ℹ️"
         print(f"  {icon} {af['type']}: {af['detail']}")
+
+    # ════════════════════════════════════════════════════════════════
+    # COMPLETION AUDIT — end-of-run verification
+    # ════════════════════════════════════════════════════════════════
+    print(f"\n  Completion audit...")
+    audit = run_completion_audit(reader_output, recon, evidence.to_dict(), items)
+    print(f"  Audit: {audit['pass_count']}/{audit['total_checks']} checks passed | Result: {audit['audit_result']}")
+    for check in audit["checks"]:
+        if not check["passed"]:
+            print(f"    ❌ {check['check']}: {check['detail']}")
 
     # ════════════════════════════════════════════════════════════════
     # PHASE 7: ASSEMBLY
@@ -359,6 +397,9 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         "model_checks": model_checks,
         "reviewer_queues": {k: v for k, v in reviewer.items() if v},
         "reviewer_pass": reviewer_outputs,
+        "reader_discovery": reader_output,
+        "reconciliation": recon,
+        "completion_audit": audit,
     }
 
     return result
