@@ -28,6 +28,7 @@ from .page_reader import read_all_pages
 from .table_importer import import_tables_for_items
 from .note_linker import link_all_notes
 from .section_segmenter import segment_items
+from .item_coverage import assess_item_coverage
 from .cross_reference_engine import collect_all_cross_refs, resolve_cross_refs
 from .exhibit_locator import locate_exhibits
 from .exhibit_parser import parse_all_exhibits
@@ -139,6 +140,14 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # PHASE 6: QA SWEEP
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 6: QA sweep ---")
+
+    # Item coverage assessment
+    coverage = assess_item_coverage(items)
+    for n in range(1, 24):
+        state = coverage.get(n, "not_found")
+        if state != "complete":
+            print(f"  Item {n:2d}: {state}")
+
     pii_violations = check_pii_all_items(items)
     full_text = "\n".join(p.text for p in page_reads)
     completeness = check_completeness(items, evidence.to_dict())
@@ -146,6 +155,12 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     contradictions = check_contradictions(evidence.to_dict(), bootstrap, items)
 
     all_cross_refs = collect_all_cross_refs(items)
+
+    # Item 20 hard-block: if not found, cannot exceed review_needed
+    if 20 not in items or coverage.get(20) == "not_found":
+        if completeness["publish_gate"] in ("gold_publishable", "publishable_standard"):
+            completeness["publish_gate"] = "review_needed"
+            print(f"  ⚠️ Item 20 missing — publish gate downgraded to review_needed")
 
     print(f"  Items: {23 - len(completeness['missing_items'])}/23")
     print(f"  Missing: {completeness['missing_items']}")
@@ -216,6 +231,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         "evidence": evidence.to_dict(),
         "qa": {
             "completeness": completeness,
+            "item_coverage": coverage,
             "pii_violations": pii_violations,
             "regex_findings": regex_findings,
             "contradictions": contradictions,

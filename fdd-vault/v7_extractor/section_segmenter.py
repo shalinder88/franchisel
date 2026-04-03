@@ -1,149 +1,78 @@
 """
 Section Segmenter — Layer 2
 
-Groups pages into Items 1-23 sections by reading in order.
+Groups pages into Items 1-23 sections.
 
-The segmenter reads sequentially through page reads.
-When an item heading is detected on a page, the reader transitions to that item.
-Items appear in order (1-23) in an FDD — the segmenter enforces this.
+Uses the item_locator service to build an item index FIRST,
+then assembles sections by collecting pages within each item's boundaries.
 
-Section location hierarchy:
-  Primary: TOC-anchored with heading verification on target page
-  Secondary: Sequential heading detection (reading in order)
-  Tertiary: Manual review flag for missing items
+Finding items and extracting them are DECOUPLED:
+  1. item_locator.locate_all_items() builds the index
+  2. This module assembles ItemSection objects from the index
 
 A section includes:
-  - the pages inside the item
-  - continuation tables
-  - notes/footnotes tied to those tables
+  - the pages inside the item boundaries
+  - text accumulated from those pages
   - cross-references found on those pages
+  - red flags found on those pages
+  - tables and notes are populated LATER by table_importer and note_linker
 """
 
-import re
 from typing import List, Dict, Optional
-from .models import (PageRead, PageType, ItemSection, CrossReference,
-                     FailureState, TABLE_REQUIRED_ITEMS)
-
-
-# Page types that are bootstrap/exhibit — NOT item content
-SKIP_PAGE_TYPES = {
-    PageType.COVER, PageType.HOW_TO_USE, PageType.TOC,
-    PageType.STATE_NOTICE, PageType.EXHIBIT_LIST, PageType.SPECIAL_RISKS,
-}
+from .models import PageRead, ItemSection, CrossReference, FailureState
+from .item_locator import locate_all_items
 
 
 def segment_items(page_reads: List[PageRead],
                   toc_map: Optional[Dict[int, int]] = None) -> Dict[int, ItemSection]:
     """Segment page reads into Item 1-23 sections.
 
-    Reads sequentially. When an item heading is detected on a page,
-    the reader transitions to that item. Items must go forward (no backwards).
-
-    Uses TOC map for verification but heading detection is primary.
+    Uses item_locator to find boundaries, then collects pages for each item.
     """
     toc_map = toc_map or {}
+
+    # Step 1: Build item index using the locator service
+    item_index = locate_all_items(page_reads, toc_map)
+
+    # Step 2: Assemble sections from index
     items: Dict[int, ItemSection] = {}
-    current_item: Optional[int] = None
-    current_pages: List[PageRead] = []
 
-    for pr in page_reads:
-        # Skip bootstrap pages entirely for item heading detection
-        if pr.page_type in SKIP_PAGE_TYPES:
+    for item_num, loc in item_index.items():
+        start_idx = loc["start_page_idx"]
+        end_idx = loc.get("end_page_idx", start_idx)
+
+        # Collect pages for this item
+        section_pages = []
+        for pi in range(start_idx, min(end_idx + 1, len(page_reads))):
+            section_pages.append(page_reads[pi])
+
+        if not section_pages:
             continue
 
-        # Check for item heading transitions on this page
-        new_item_detected = False
-        for heading in pr.item_headings:
-            detected_num = heading["item_num"]
+        # Build section
+        text = "\n".join(p.text for p in section_pages)
+        if len(text) > 60000:
+            text = text[:60000]
 
-            # Items must go forward — no backwards transitions
-            if current_item is not None and detected_num <= current_item:
-                continue
+        cross_refs = []
+        red_flags = []
+        for p in section_pages:
+            for ptr in p.unresolved_pointers:
+                ptr.source_item = item_num
+                cross_refs.append(ptr)
+            red_flags.extend(p.red_flags)
 
-            # Valid transition: save current item, start new one
-            if current_item is not None and current_pages:
-                items[current_item] = _build_section(current_item, current_pages)
-
-            current_item = detected_num
-            current_pages = [pr]
-            new_item_detected = True
-            break  # only process first valid heading per page
-
-        if not new_item_detected and current_item is not None:
-            # No new heading — accumulate for current item
-            current_pages.append(pr)
-
-    # Save last item
-    if current_item is not None and current_pages:
-        items[current_item] = _build_section(current_item, current_pages)
-
-    # ── Use TOC to detect items we missed ──
-    # If TOC says Item X starts on page P, and we didn't detect it,
-    # look for it in the page reads near that page
-    for item_num, toc_page in toc_map.items():
-        if item_num in items:
-            continue
-
-        # Find the page range where this item should be
-        # (between previous found item and next found item)
-        prev_item_end = 0
-        next_item_start = len(page_reads)
-        for found_num, found_section in items.items():
-            if found_num < item_num:
-                prev_item_end = max(prev_item_end, found_section.end_page)
-            elif found_num > item_num:
-                next_item_start = min(next_item_start, found_section.start_page)
-
-        # Look for item heading near TOC target page
-        for pr in page_reads:
-            if not (prev_item_end <= pr.page_num <= next_item_start):
-                continue
-            for heading in pr.item_headings:
-                if heading["item_num"] == item_num:
-                    # Found it — but we need to build its section
-                    # Collect pages from this heading to the next item
-                    section_pages = []
-                    collecting = False
-                    for pr2 in page_reads:
-                        if pr2.page_num == pr.page_num:
-                            collecting = True
-                        if collecting:
-                            # Stop at next item's start
-                            if pr2.page_num >= next_item_start and pr2.page_num != pr.page_num:
-                                break
-                            section_pages.append(pr2)
-                    if section_pages:
-                        items[item_num] = _build_section(item_num, section_pages)
-                    break
-            if item_num in items:
-                break
+        items[item_num] = ItemSection(
+            item_num=item_num,
+            start_page=section_pages[0].page_num,
+            end_page=section_pages[-1].page_num,
+            pages=section_pages,
+            text=text,
+            text_length=len(text),
+            cross_refs=cross_refs,
+            red_flags=red_flags,
+            page_count=len(section_pages),
+            # tables and notes populated later
+        )
 
     return items
-
-
-def _build_section(item_num: int, page_reads: List[PageRead]) -> ItemSection:
-    """Build an ItemSection from accumulated page reads."""
-    text = "\n".join(p.text for p in page_reads)
-    if len(text) > 60000:
-        text = text[:60000]
-
-    cross_refs = []
-    red_flags = []
-    for p in page_reads:
-        for ptr in p.unresolved_pointers:
-            ptr.source_item = item_num
-            cross_refs.append(ptr)
-        red_flags.extend(p.red_flags)
-
-    return ItemSection(
-        item_num=item_num,
-        start_page=page_reads[0].page_num,
-        end_page=page_reads[-1].page_num,
-        pages=page_reads,
-        text=text,
-        text_length=len(text),
-        cross_refs=cross_refs,
-        red_flags=red_flags,
-        page_count=len(page_reads),
-        # tables and notes are populated later by table_importer and note_linker
-    )
