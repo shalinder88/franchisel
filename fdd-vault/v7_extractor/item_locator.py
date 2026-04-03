@@ -261,6 +261,23 @@ def locate_all_items(page_reads: List[PageRead],
                 best_score = score
                 best_idx = pi
 
+        # If gap is too narrow, check if the next item's page has an "Item N" heading
+        # General rule: multiple items can share a page even when NOT in the TOC.
+        # Look for "Item N" heading text on adjacent pages.
+        if best_idx is None or best_score < 1:
+            import re as _re
+            check_pages = set()
+            if next_item_start < total_pages:
+                check_pages.add(next_item_start)
+            if prev_item_end < total_pages:
+                check_pages.add(prev_item_end)
+            for pi in check_pages:
+                page_text = page_reads[pi].text[:2000]
+                if _re.search(rf'(?:^|\n)\s*(?:ITEM|Item)\s+{item_num}\b', page_text):
+                    best_idx = pi
+                    best_score = 2
+                    break
+
         if best_idx is not None:
             locations[item_num] = {
                 "start_page_idx": best_idx,

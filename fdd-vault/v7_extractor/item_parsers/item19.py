@@ -152,6 +152,23 @@ def parse_item19(section: ItemSection) -> Dict[str, Any]:
         if avg_revenue and in_franchised_section:
             break  # Found franchised average — stop searching tables
 
+    # Fallback: extract average from prose text if tables didn't have it
+    # General rule: McDonald's and some brands state average in narrative, not table rows.
+    # "The average annual sales volume...was $4,002,000"
+    if not avg_revenue:
+        avg_patterns = [
+            r'average\s+(?:annual\s+)?(?:gross\s+)?sales\s+volume.*?was\s+\$\s*([\d,]+)',
+            r'average\s+(?:annual\s+)?(?:net\s+)?(?:royalty\s+)?sales.*?(?:was|of)\s+\$\s*([\d,]+)',
+            r'average\s+(?:annual\s+)?(?:unit\s+)?(?:volume|revenue).*?(?:was|of)\s+\$\s*([\d,]+)',
+        ]
+        for pattern in avg_patterns:
+            m = re.search(pattern, text_lower)
+            if m:
+                val = float(m.group(1).replace(",", ""))
+                if val >= 10000:
+                    avg_revenue = int(val)
+                    break
+
     if avg_revenue:
         result["average_revenue"] = {
             "value": avg_revenue,

@@ -69,9 +69,21 @@ def classify_fee_row(label: str, amount_text: str = "") -> Tuple[str, float]:
 
 def extract_rate_from_amount(amount_text: str) -> Optional[str]:
     """Extract a percentage rate from an amount cell.
-    Returns string like '6%' or '5.5%' or None.
+    Returns string like '6%' or '5.5%' or '4% or 5%' for compound rates.
+
+    General rule: some brands have dual rates (e.g., McDonald's "4% or 5%").
+    Extract all valid rates and join with "or" if multiple found.
     """
-    m = re.search(r'(\d+(?:\.\d+)?)\s*%', str(amount_text))
+    text = str(amount_text)
+    # Check for compound rate pattern first: "X% or Y%"
+    compound = re.search(r'(\d+(?:\.\d+)?)\s*%\s+or\s+(\d+(?:\.\d+)?)\s*%', text)
+    if compound:
+        v1, v2 = float(compound.group(1)), float(compound.group(2))
+        if 0.1 <= v1 <= 50 and 0.1 <= v2 <= 50:
+            return f"{compound.group(1)}% or {compound.group(2)}%"
+
+    # Single rate
+    m = re.search(r'(\d+(?:\.\d+)?)\s*%', text)
     if m:
         val = float(m.group(1))
         if 0.1 <= val <= 50:

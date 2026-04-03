@@ -159,9 +159,29 @@ def build_all_engines(items: Dict[int, ItemSection],
         elif single:
             all_totals.append({"low": int(single), "high": int(single), "name": name})
 
-    # Pick the standard/largest total as primary
+    # Pick primary investment: standard/traditional format first, then largest
+    # General rule: multi-format brands have multiple TOTAL rows. Rank by format role:
+    #   1. standard/traditional (primary offering)
+    #   2. largest range (if no format info available)
+    #   3. first TOTAL row found
     if all_totals:
-        primary = max(all_totals, key=lambda t: t["high"])
+        # Look for standard/traditional format first
+        standard_names = ["standard", "traditional", ""]  # empty name = likely the first/primary table
+        primary = None
+        for name_match in standard_names:
+            for t in all_totals:
+                t_name = t.get("name", "").lower()
+                if name_match and name_match in t_name:
+                    primary = t
+                    break
+                elif not name_match and not t_name:
+                    primary = t
+                    break
+            if primary:
+                break
+        # Fallback: pick largest range
+        if not primary:
+            primary = max(all_totals, key=lambda t: t["high"])
         inv_low = primary["low"]
         inv_high = primary["high"]
 

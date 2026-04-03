@@ -246,4 +246,57 @@ def parse_item20(section: ItemSection) -> Dict[str, Any]:
             "provenance": prov_base,
         }
 
+    # ── FALLBACK: Systemwide summary from text if not in tables ──
+    # General rule: McDonald's and other FDDs may have the systemwide outlet
+    # summary table on a page that the segmenter assigned to a different item.
+    # If we have state-by-state data but no systemwide totals, search the section
+    # text for total counts.
+    if result["total_franchised"]["state"] != EvidenceState.PRESENT.value:
+        text = section.text
+        # Look for patterns like "12,887" near "franchised" in the text
+        # or "Outlet Type...Year...Franchised...2024...12,772...12,887"
+        for m in re.finditer(
+            r'(?:franchised|franchise[d]?\s+outlet).*?(?:20(?:22|23|24))\D+(\d[\d,]+)\D+(\d[\d,]+)',
+            text, re.I | re.DOTALL
+        ):
+            start_val = _parse_int(m.group(1))
+            end_val = _parse_int(m.group(2))
+            if end_val and end_val > 100:
+                result["total_franchised"] = {
+                    "value": end_val,
+                    "state": EvidenceState.PRESENT.value,
+                    "provenance": prov_base,
+                }
+                break
+
+    if result["total_company_owned"]["state"] != EvidenceState.PRESENT.value:
+        for m in re.finditer(
+            r'(?:company[- ]?owned|mcop).*?(?:20(?:22|23|24))\D+(\d[\d,]+)\D+(\d[\d,]+)',
+            section.text, re.I | re.DOTALL
+        ):
+            start_val = _parse_int(m.group(1))
+            end_val = _parse_int(m.group(2))
+            if end_val and end_val > 10:
+                result["total_company_owned"] = {
+                    "value": end_val,
+                    "state": EvidenceState.PRESENT.value,
+                    "provenance": prov_base,
+                }
+                break
+
+    if result["total_outlets"]["state"] != EvidenceState.PRESENT.value:
+        for m in re.finditer(
+            r'(?:total\s+outlet).*?(?:20(?:22|23|24))\D+(\d[\d,]+)\D+(\d[\d,]+)',
+            section.text, re.I | re.DOTALL
+        ):
+            start_val = _parse_int(m.group(1))
+            end_val = _parse_int(m.group(2))
+            if end_val and end_val > 100:
+                result["total_outlets"] = {
+                    "value": end_val,
+                    "state": EvidenceState.PRESENT.value,
+                    "provenance": prov_base,
+                }
+                break
+
     return result
