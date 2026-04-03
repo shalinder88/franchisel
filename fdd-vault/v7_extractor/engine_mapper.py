@@ -72,15 +72,20 @@ def map_fee_table(fee_rows: List[List[str]]) -> Dict[str, Any]:
 
     Rule: a row cannot populate multiple fee fields.
     """
+    if not isinstance(fee_rows, list):
+        return {}
+
     result: Dict[str, Any] = {}
     mapped_rows = []
     unresolved_rows = []
 
     for row in fee_rows:
-        if not row or not any(row):
+        if not isinstance(row, list) or len(row) < 2:
+            continue
+        if not any(str(c).strip() for c in row):
             continue
 
-        label = row[0] if row else ""
+        label = str(row[0]) if row else ""
         amount = row[1] if len(row) > 1 else ""
         timing = row[2] if len(row) > 2 else ""
         notes = row[3] if len(row) > 3 else ""
