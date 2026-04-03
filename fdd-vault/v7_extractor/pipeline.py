@@ -23,6 +23,7 @@ from typing import Dict, Any
 
 from .models import EvidenceStore, FailureState, TABLE_REQUIRED_ITEMS
 from .document_normalizer import normalize_document
+from .layout_index import index_document_layout
 from .document_bootstrap import build_bootstrap
 from .page_reader import read_all_pages
 from .table_importer import import_tables_for_items
@@ -78,6 +79,10 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     print(f"  Headings: {len(geometry['heading_candidates'])}")
     print(f"  Table regions: {geometry['pages_with_tables']}")
 
+    # Build layout index (block/span geometry for heading candidates)
+    layout_idx = index_document_layout(doc)
+    print(f"  Layout: {len(layout_idx.heading_candidates)} heading candidates, {len(layout_idx.table_regions)} table regions")
+
     # ════════════════════════════════════════════════════════════════
     # PHASE 1: PAGE READING + CLASSIFICATION
     # ════════════════════════════════════════════════════════════════
@@ -124,7 +129,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # PHASE 2: SECTION SEGMENTATION
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 2: Section segmentation ---")
-    items = segment_items(page_reads, bootstrap.get("tocMap"), geometry)
+    items = segment_items(page_reads, bootstrap.get("tocMap"), layout_idx)
     for n in range(1, 24):
         s = items.get(n)
         if s:
