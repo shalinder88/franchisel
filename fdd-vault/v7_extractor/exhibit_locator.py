@@ -86,20 +86,74 @@ def locate_exhibits(page_reads: List[PageRead],
 
     # Find exhibit page boundaries
     # Scan all pages for "EXHIBIT X" headings
+    # General rule: Extract the FULL heading text, not just the code.
+    # "EXHIBIT O: FINANCIAL STATEMENTS" → code=O, heading_text="Financial Statements"
+    exhibit_heading_re = re.compile(
+        r'(?:^|\n)\s*EXHIBIT\s+["\']?([A-Z](?:-?\d)?)["\']?'
+        r'(?:\s*[-–—:]\s*(.+?))?'  # optional separator + description
+        r'(?:\n|$)',
+        re.MULTILINE
+    )
     for pr in page_reads:
-        for m in re.finditer(r'(?:^|\n)\s*EXHIBIT\s+["\']?([A-Z](?:-?\d)?)["\']?', pr.text, re.MULTILINE):
+        for m in exhibit_heading_re.finditer(pr.text):
             code = m.group(1)
+            heading_text = m.group(2) or ""
+
             if code in exhibits and exhibits[code].start_page == 0:
                 exhibits[code].start_page = pr.page_num
+                # If we now have heading text, try to improve role classification
+                if heading_text.strip() and exhibits[code].role == ExhibitRole.OTHER:
+                    new_role = classify_exhibit_role(heading_text)
+                    if new_role != ExhibitRole.OTHER:
+                        exhibits[code].role = new_role
+                        exhibits[code].raw_name = heading_text.strip()
             elif code not in exhibits:
-                # Exhibit not in the bootstrap map — create a new one
+                role = classify_exhibit_role(heading_text) if heading_text else ExhibitRole.OTHER
                 exhibits[code] = ExhibitObject(
                     exhibit_id=f"exhibit_{code}",
                     code=code,
-                    raw_name=f"Exhibit {code}",
-                    role=ExhibitRole.OTHER,
+                    raw_name=heading_text.strip() or f"Exhibit {code}",
+                    role=role,
                     start_page=pr.page_num,
                 )
+
+        # Fallback: broader heading detection for exhibits without separator
+        # Catches "EXHIBIT O\nFINANCIAL STATEMENTS" (two lines)
+        for m in re.finditer(r'(?:^|\n)\s*EXHIBIT\s+([A-Z](?:-?\d)?)\s*\n\s*(.+)', pr.text, re.MULTILINE):
+            code = m.group(1)
+            next_line = m.group(2).strip()
+            if code in exhibits and exhibits[code].role == ExhibitRole.OTHER and next_line:
+                new_role = classify_exhibit_role(next_line)
+                if new_role != ExhibitRole.OTHER:
+                    exhibits[code].role = new_role
+                    exhibits[code].raw_name = next_line
+
+    # Content-based role recovery: if exhibit is still "other", check its page content
+    # General rule: don't rely solely on headings. Check what the pages actually contain.
+    for code, ex in exhibits.items():
+        if ex.role == ExhibitRole.OTHER and ex.start_page > 0:
+            # Check first few pages of the exhibit for financial content
+            for pr in page_reads:
+                if pr.page_num < ex.start_page or pr.page_num > min(ex.start_page + 3, ex.end_page or ex.start_page + 3):
+                    continue
+                text_lower = pr.text.lower()
+                if any(kw in text_lower for kw in ["balance sheet", "income statement",
+                       "statement of operations", "statement of financial position",
+                       "auditor", "independent auditor", "audit report",
+                       "total assets", "total liabilities", "net income",
+                       "cash flow", "stockholder"]):
+                    ex.role = ExhibitRole.FINANCIALS
+                    if not ex.raw_name or ex.raw_name == f"Exhibit {code}":
+                        ex.raw_name = "Financial Statements (content-detected)"
+                    break
+                elif any(kw in text_lower for kw in ["franchise agreement",
+                        "franchisor and franchisee", "grant of franchise"]):
+                    ex.role = ExhibitRole.FRANCHISE_AGREEMENT
+                    break
+                elif any(kw in text_lower for kw in ["state-specific", "state addend",
+                        "additional disclosures"]):
+                    ex.role = ExhibitRole.STATE_ADDENDA_FDD
+                    break
 
     # Set end pages: each exhibit ends where the next exhibit starts
     sorted_exhibits = sorted(exhibits.values(), key=lambda e: e.start_page if e.start_page else 9999)

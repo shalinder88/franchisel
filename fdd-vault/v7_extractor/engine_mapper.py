@@ -33,23 +33,38 @@ FEE_LABEL_MAP = {
 }
 
 
-def classify_fee_row(label: str) -> Tuple[str, float]:
+def classify_fee_row(label: str, amount_text: str = "") -> Tuple[str, float]:
     """Classify a fee row label into a canonical fee type.
 
     Returns (fee_type, confidence).
     fee_type is one of: royalty, ad_fund, technology, transfer, renewal,
                         late_payment, audit, liquidated_damages, other
+
+    General rule: check label first. If label is empty, check amount text
+    for fee type signals (e.g., "% of Net Sales" → royalty).
     """
     label_lower = label.lower().strip()
-    if not label_lower:
-        return ("other", 0.0)
 
-    for fee_type, patterns in FEE_LABEL_MAP.items():
-        for pattern in patterns:
-            if re.search(pattern, label_lower, re.I):
-                return (fee_type, 0.9)
+    # Check label first (high confidence)
+    if label_lower:
+        for fee_type, patterns in FEE_LABEL_MAP.items():
+            for pattern in patterns:
+                if re.search(pattern, label_lower, re.I):
+                    return (fee_type, 0.9)
+        return ("other", 0.3)
 
-    return ("other", 0.3)
+    # Empty label — check amount text for fee type signals (medium confidence)
+    amount_lower = amount_text.lower().strip()
+    if amount_lower:
+        for fee_type, patterns in FEE_LABEL_MAP.items():
+            for pattern in patterns:
+                if re.search(pattern, amount_lower, re.I):
+                    return (fee_type, 0.6)
+        # Additional amount-text patterns: "X% of Net Sales" is a strong royalty signal
+        if re.search(r'\d+%\s+of\s+(?:net|gross)\s+sales', amount_lower):
+            return ("royalty", 0.5)
+
+    return ("other", 0.0)
 
 
 def extract_rate_from_amount(amount_text: str) -> Optional[str]:
@@ -78,6 +93,7 @@ def map_fee_table(fee_rows: List[List[str]]) -> Dict[str, Any]:
     result: Dict[str, Any] = {}
     mapped_rows = []
     unresolved_rows = []
+    last_fee_type = "other"  # For label inheritance across empty-label rows
 
     for row in fee_rows:
         if not isinstance(row, list) or len(row) < 2:
@@ -86,11 +102,19 @@ def map_fee_table(fee_rows: List[List[str]]) -> Dict[str, Any]:
             continue
 
         label = str(row[0]) if row else ""
-        amount = row[1] if len(row) > 1 else ""
+        amount = str(row[1]) if len(row) > 1 else ""
         timing = row[2] if len(row) > 2 else ""
         notes = row[3] if len(row) > 3 else ""
 
-        fee_type, confidence = classify_fee_row(label)
+        fee_type, confidence = classify_fee_row(label, amount)
+
+        # Label inheritance: empty-label rows inherit from most recent labeled row
+        if not label.strip() and fee_type == "other" and last_fee_type != "other":
+            fee_type = last_fee_type
+            confidence = max(confidence, 0.4)  # inherited, lower confidence
+        if label.strip():
+            last_fee_type = fee_type
+
         rate = extract_rate_from_amount(amount)
 
         row_mapped = {

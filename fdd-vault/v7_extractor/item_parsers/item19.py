@@ -116,6 +116,49 @@ def parse_item19(section: ItemSection) -> Dict[str, Any]:
             "provenance": prov_base,
         }
 
+    # --- EXTRACT average_revenue from FPR table rows ---
+    # General rule: look for "Average" rows in FPR tables.
+    # The "Total" column (last non-empty value) in the franchised-stores section
+    # gives the system-wide average revenue figure.
+    avg_revenue = None
+    avg_revenue_prov = None
+    for tbl in fpr_tables:
+        in_franchised_section = False
+        for row_data in tbl.get("rows", []):
+            cells = row_data.get("raw_cells", [])
+            row_text = " ".join(cells).lower()
+
+            # Track whether we're in the franchised stores section
+            if "franchised" in row_text and "store" in row_text:
+                in_franchised_section = True
+            elif "corporate" in row_text and "store" in row_text:
+                in_franchised_section = False
+
+            # Look for average revenue row
+            if re.search(r'average\s+net\s+(?:royalty\s+)?sales', row_text) or \
+               re.search(r'average\s+(?:gross\s+)?sales', row_text) or \
+               re.search(r'average\s+(?:net\s+)?revenue', row_text):
+                dollars = row_data.get("dollar_amounts", [])
+                if dollars:
+                    # Last dollar amount is the "Total" column
+                    candidate = dollars[-1]
+                    if candidate >= 10000:  # sanity check: revenue should be meaningful
+                        # Prefer franchised-section average over all-stores average
+                        if in_franchised_section or avg_revenue is None:
+                            avg_revenue = int(candidate)
+                            avg_revenue_prov = tbl.get("provenance")
+                        if in_franchised_section:
+                            break  # Found franchised average — stop
+        if avg_revenue and in_franchised_section:
+            break  # Found franchised average — stop searching tables
+
+    if avg_revenue:
+        result["average_revenue"] = {
+            "value": avg_revenue,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": avg_revenue_prov or prov_base,
+        }
+
     # --- TEXT reading: every line matters ---
 
     # Universal disclaimer

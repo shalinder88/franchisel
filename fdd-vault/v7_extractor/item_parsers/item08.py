@@ -105,10 +105,10 @@ def parse_item08(section: ItemSection) -> Dict[str, Any]:
         }
         severity_score += 1
 
-    # Required purchase percentages
+    # Required purchase percentages — also catch "up to X%" and "represent X%"
     pct_patterns = [
-        (r'(?:approximately|about|estimated)?\s*(\d{1,3})\s*%\s*(?:of\s+)?(?:your\s+)?(?:total\s+)?(?:initial|setup|start)', "setup_required_purchase_pct"),
-        (r'(?:approximately|about|estimated)?\s*(\d{1,3})\s*%\s*(?:of\s+)?(?:your\s+)?(?:total\s+)?(?:ongoing|continuing|annual|overall)', "ongoing_required_purchase_pct"),
+        (r'(?:approximately|about|estimated|up\s+to)?\s*(\d{1,3})\s*%\s*(?:of\s+)?(?:your\s+)?(?:total\s+)?(?:initial|setup|start)', "setup_required_purchase_pct"),
+        (r'(?:approximately|about|estimated|up\s+to|represent)?\s*(\d{1,3})\s*%\s*(?:of\s+)?(?:your\s+)?(?:total\s+)?(?:ongoing|continuing|annual|overall|purchases)', "ongoing_required_purchase_pct"),
     ]
     for pattern, field in pct_patterns:
         m = re.search(pattern, text_lower)
@@ -118,6 +118,61 @@ def parse_item08(section: ItemSection) -> Dict[str, Any]:
                 "state": EvidenceState.PRESENT.value,
                 "provenance": prov_base,
             }
+
+    # ── NARRATIVE SUPPLIER EXTRACTION ──
+    # Item 8 is often narrative-only. Extract specific supplier names and obligations from prose.
+    named_suppliers: List[Dict[str, Any]] = []
+
+    # Pattern: "our affiliate [Name]" or "[Name] distributes" or "from [Name]"
+    affiliate_patterns = [
+        r'(?:our\s+affiliate[,]?\s+)([A-Z][A-Za-z\s\',]+(?:Inc\.|LLC|Ltd\.|Corp\.))',
+        r'(?:from\s+)([A-Z][A-Za-z\s\',]+(?:Inc\.|LLC|Ltd\.|Corp\.))',
+        r'(?:through\s+)([A-Z][A-Za-z\s\',]+(?:Inc\.|LLC|Ltd\.|Corp\.))',
+    ]
+    seen_suppliers = set()
+    for pattern in affiliate_patterns:
+        for m in re.finditer(pattern, section.text):
+            name = m.group(1).strip().rstrip(',. ')
+            if name and len(name) > 3 and name not in seen_suppliers:
+                seen_suppliers.add(name)
+                named_suppliers.append({
+                    "name": name,
+                    "type": "affiliate" if "affiliate" in section.text[max(0,m.start()-30):m.start()].lower() else "designated",
+                    "source_page": section.start_page,
+                })
+
+    if named_suppliers:
+        result["named_suppliers"] = {
+            "value": named_suppliers,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # Revenue from suppliers/affiliates
+    rev_match = re.search(r'(?:revenue\s+received|we\s+(?:or\s+our\s+affiliates\s+)?received)\s*\$\s*([\d,.]+)\s*(million|billion)?', text_lower)
+    if rev_match:
+        val = float(rev_match.group(1).replace(",", ""))
+        if rev_match.group(2) == "million":
+            val *= 1_000_000
+        elif rev_match.group(2) == "billion":
+            val *= 1_000_000_000
+        result["affiliate_revenue"] = {
+            "value": int(val),
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # Specific required products
+    required_products: List[str] = []
+    for m in re.finditer(r'(?:require(?:d)?\s+(?:that\s+)?you\s+purchase|must\s+purchase|only\s+from)\s+([^.]+)', text_lower):
+        products_text = m.group(1).strip()[:150]
+        required_products.append(products_text)
+    if required_products:
+        result["required_products"] = {
+            "value": required_products,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
 
     # Lock-in severity score (0-10)
     severity_score = min(severity_score, 10)

@@ -60,6 +60,11 @@ from .qa.contradiction_checks import check_contradictions, double_authenticate_p
 from .table_continuity import merge_all_continuations
 from .display_tier_tagger import tag_display_tiers
 from .assemblers.brand_json import assemble_brand_json
+from .fact_state_registry import FactStateRegistry
+from .fact_resolver import build_fact_registry, check_cross_field_sanity
+from .unmodeled_fact_store import UnmodeledFactStore
+from .recheck_orchestrator import identify_recheck_targets, run_rechecks
+from .consumption_registry import build_consumption_registry
 
 
 def extract_fdd(pdf_path: str) -> Dict[str, Any]:
@@ -289,6 +294,102 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
             print(f"    ❌ {check['check']}: {check['detail']}")
 
     # ════════════════════════════════════════════════════════════════
+    # SELF-AUDITING CONTROL SYSTEM
+    # Fact competition, sanity checks, recheck orchestration
+    # Goal: impossible to fail silently
+    # ════════════════════════════════════════════════════════════════
+    print(f"\n--- Self-audit: fact resolution + sanity checks ---")
+
+    # Build fact registry — competing candidates, precedence winner
+    fact_registry = build_fact_registry(engines, bootstrap, evidence, state_overrides)
+    fact_summary = fact_registry.summary()
+    print(f"  Facts resolved: {fact_summary['total_facts']}")
+    if fact_summary['conflicts']:
+        for c in fact_summary['conflicts']:
+            print(f"  ⚠️ CONFLICT: {c['field']} = {c['value']} ({c['reason']})")
+    if fact_summary['suspected_wrong']:
+        for sw in fact_summary['suspected_wrong']:
+            print(f"  ❌ SANITY FAIL: {sw['field']} = {sw['value']} — {sw['detail']}")
+    if fact_summary['abstentions']:
+        print(f"  🔇 Abstentions: {fact_summary['abstentions']}")
+
+    # Cross-field sanity checks (impossible-value detection)
+    cross_violations = check_cross_field_sanity(fact_registry)
+    for v in cross_violations:
+        icon = "❌" if v["severity"] == "stop_ship" else "⚠️"
+        print(f"  {icon} {v['rule']}: {v['detail']}")
+
+    # Build unmodeled fact store — preserve important reader discoveries
+    unmodeled_store = UnmodeledFactStore()
+    # Auto-classify important facts from reader discovery
+    reader_facts = reader_output.get("fact_store", {}).get("facts", [])
+    if isinstance(reader_facts, list):
+        for fact in reader_facts:
+            if isinstance(fact, dict):
+                text = fact.get("text", fact.get("fact_text", ""))
+                page = fact.get("source_page", 0)
+                item = fact.get("source_item")
+                if text:
+                    unmodeled_store.auto_classify(text, page, item)
+
+    # Silent-drop detection: exhibits found but not parsed
+    for code, ex in exhibits.items():
+        if ex.start_page > 0:
+            unmodeled_store.register_object_seen("exhibit", code, f"page {ex.start_page}")
+            if ex.parsed:
+                unmodeled_store.register_object_consumed(code)
+    dropped = unmodeled_store.get_dropped_objects()
+    if dropped:
+        print(f"  🔍 Silent drops: {len(dropped)} objects seen but not consumed")
+        for d in dropped[:5]:
+            print(f"    {d['type']} {d['id']} @ {d['source']}")
+
+    unmodeled_summary = unmodeled_store.summary()
+    if unmodeled_summary["total_unmodeled"] > 0:
+        print(f"  Unmodeled facts: {unmodeled_summary['total_unmodeled']} | Domains: {unmodeled_summary['unmodeled_domains']}")
+
+    # Recheck orchestrator — contradiction-triggered rereads
+    recheck_targets = identify_recheck_targets(fact_registry, evidence.to_dict(), items, engines)
+    recheck_results = {"total_rechecks": 0, "resolved": 0, "unresolved": 0, "results": []}
+    if recheck_targets:
+        print(f"\n  Recheck: {len(recheck_targets)} targets identified")
+        recheck_results = run_rechecks(recheck_targets, items, fact_registry)
+        print(f"  Recheck: {recheck_results['resolved']}/{recheck_results['total_rechecks']} resolved")
+        for rr in recheck_results.get("results", []):
+            if not rr.get("resolved"):
+                print(f"    ⚠️ {rr['field']}: {rr['trigger']}")
+
+    # ════════════════════════════════════════════════════════════════
+    # CONSUMPTION REGISTRY — mandatory object accountability
+    # ════════════════════════════════════════════════════════════════
+    print(f"\n--- Consumption registry ---")
+    consumption = build_consumption_registry(bootstrap, items, exhibits)
+
+    # Mark exhibits consumed by Lane B (engines)
+    if exhibit_data.get("financials"):
+        consumption.mark_used_by_B("exhibit_O") if "exhibit_O" in consumption._records else None
+    for code, ex in exhibits.items():
+        oid = f"exhibit_{code}"
+        if ex.parsed:
+            consumption.mark_used_by_A(oid)
+            consumption.mark_used_by_B(oid)
+
+    consumption_summary = consumption.summary()
+    blockers = consumption_summary.get("publish_blockers", [])
+    unconsumed = consumption_summary.get("unconsumed", [])
+
+    print(f"  Required objects: {consumption_summary['total_required']}")
+    print(f"  Status: {consumption_summary['status_counts']}")
+    if unconsumed:
+        print(f"  ⚠️ Unconsumed: {len(unconsumed)}")
+        for u in unconsumed[:5]:
+            print(f"    {u['type']:10s} {u['id']:25s} | {u['status']:25s} | required by: {u['required_by']}")
+    if blockers:
+        print(f"  ❌ PUBLISH BLOCKERS: {len(blockers)}")
+        for b in blockers:
+            print(f"    {b['type']:10s} {b['id']:25s} | {b['status']}")
+
+    # ════════════════════════════════════════════════════════════════
     # PHASE 7: ASSEMBLY
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 7: Assembly ---")
@@ -400,6 +501,40 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         "reader_discovery": reader_output,
         "reconciliation": recon,
         "completion_audit": audit,
+        "fact_registry": fact_registry.to_dict(),
+        "fact_summary": fact_summary,
+        "cross_field_violations": cross_violations,
+        "unmodeled_facts": unmodeled_store.to_list(),
+        "unmodeled_summary": unmodeled_summary,
+        "silent_drops": [{"type": d["type"], "id": d["id"], "source": d["source"]}
+                         for d in dropped],
+        "recheck_results": recheck_results,
+        "consumption_registry": consumption.to_dict(),
+        "consumption_summary": consumption_summary,
+        "lane_contributions": {
+            "lane_A": {
+                "facts_captured": len(reader_facts) if isinstance(reader_facts, list) else 0,
+                "exhibits_consumed": sum(1 for ex in exhibits.values() if ex.parsed),
+                "ledger_resolved": reader_output.get("ledger", {}).get("resolved", 0),
+                "items_read": sum(1 for im in reader_output.get("item_memories", {}).values()
+                                 if isinstance(im, dict) and im.get("state") == "read"),
+            },
+            "lane_B": {
+                "fields_normalized": len([k for k, v in evidence.to_dict().items()
+                                         if isinstance(v, dict) and v.get("state") == "present"]),
+                "engines_populated": len([k for k, v in engines.items()
+                                         if isinstance(v, dict) and v]),
+            },
+            "gaps": {
+                "A_found_B_missed": recon.get("discovery_only_count", 0),
+                "B_found_A_unsupported": recon.get("engine_only_count", 0),
+                "located_not_parsed": len([u for u in unconsumed
+                                          if u.get("status") == "located_not_parsed"]),
+                "parsed_not_used": len([u for u in unconsumed
+                                       if u.get("status") == "parsed_not_used"]),
+                "publish_blockers": len(blockers),
+            },
+        },
     }
 
     return result

@@ -129,6 +129,19 @@ def parse_item06(section: ItemSection) -> Dict[str, Any]:
 
             all_fee_rows.append(fee_row)
 
+    # --- LABEL INHERITANCE: rows with empty labels inherit from most recent labeled row ---
+    # General rule: In fee tables, multi-format entries split across rows.
+    # "Royalty" label in one row, format variants (Traditional–5%, Non-Traditional–5%)
+    # in subsequent rows with empty label cells.
+    last_label_type = "other"
+    for fr in all_fee_rows:
+        label = fr.get("type_label", "").strip()
+        if label:
+            last_label_type = fr["fee_type"]
+        elif fr["fee_type"] == "other" and last_label_type != "other":
+            # Empty label row — inherit from most recent labeled row
+            fr["fee_type"] = last_label_type
+
     if all_fee_rows:
         result["fee_rows"] = {
             "value": all_fee_rows,

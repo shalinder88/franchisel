@@ -142,6 +142,165 @@ def parse_financial_exhibit(exhibit: ExhibitObject,
     return data
 
 
+def parse_agreement_exhibit(exhibit: ExhibitObject,
+                            page_reads: List[PageRead]) -> Dict[str, Any]:
+    """Parse an agreement exhibit — extract key clauses.
+
+    Handles: franchise agreement, development agreement, lease rider,
+    supplier agreement, advertising agreement, equipment lease, ACH, financing.
+    """
+    pages = [p for p in page_reads
+             if exhibit.start_page <= p.page_num <= exhibit.end_page]
+    if not pages:
+        return {"role": exhibit.role.value, "start_page": exhibit.start_page, "consumed": True}
+
+    text = "\n".join(p.text for p in pages[:40])
+    text_lower = text.lower()
+    data: Dict[str, Any] = {
+        "role": exhibit.role.value,
+        "start_page": exhibit.start_page,
+        "end_page": exhibit.end_page,
+        "page_count": len(pages),
+        "consumed": True,
+        "clauses_found": [],
+    }
+
+    # Extract key clause domains
+    CLAUSE_PATTERNS = [
+        (r"term\s+(?:of\s+)?(?:this\s+)?agreement.*?(\d+)\s*(?:year|yr)", "term", "economics"),
+        (r"(?:right\s+of\s+first\s+refusal|first\s+refusal)", "right_of_first_refusal", "control"),
+        (r"(?:non[- ]?compete|covenant\s+not\s+to\s+compete)", "non_compete", "risk"),
+        (r"(?:personal|individual)\s+guarant", "personal_guaranty", "risk"),
+        (r"spousal\s+guarant", "spousal_guaranty", "risk"),
+        (r"(?:cross[- ]?default)", "cross_default", "risk"),
+        (r"(?:liquidated|stipulated)\s+damage", "liquidated_damages", "risk"),
+        (r"(?:mandatory|binding)\s+(?:arbitration|mediation)", "mandatory_arbitration", "control"),
+        (r"(?:exclusive|protected)\s+territory", "exclusive_territory", "control"),
+        (r"(?:transfer|assignment).*?(?:approval|consent)", "transfer_restrictions", "control"),
+        (r"(?:renewal|extension)\s+(?:of|for)\s+(?:this\s+)?(?:agreement|term)", "renewal_terms", "economics"),
+        (r"(?:terminat(?:ion|e)).*?(?:cause|default|breach)", "termination_for_cause", "risk"),
+        (r"(?:terminat(?:ion|e)).*?without\s+cause", "termination_without_cause", "risk"),
+        (r"(?:remodel|renovation|upgrade)\s+(?:requirement|obligation)", "remodel_obligation", "economics"),
+        (r"(?:minimum\s+(?:sales|revenue|performance))", "minimum_performance", "risk"),
+        (r"(?:indemnif(?:y|ication))", "indemnification", "risk"),
+        (r"(?:insurance\s+(?:requirement|coverage|policy))", "insurance_requirements", "economics"),
+        (r"(?:venue|jurisdiction|governing\s+law)", "venue_jurisdiction", "control"),
+    ]
+
+    for pattern, clause_name, category in CLAUSE_PATTERNS:
+        if re.search(pattern, text_lower):
+            data["clauses_found"].append({
+                "clause": clause_name,
+                "category": category,
+            })
+
+    return data
+
+
+def parse_guaranty_exhibit(exhibit: ExhibitObject,
+                           page_reads: List[PageRead]) -> Dict[str, Any]:
+    """Parse a guaranty exhibit — extract guaranty scope and terms."""
+    pages = [p for p in page_reads
+             if exhibit.start_page <= p.page_num <= exhibit.end_page]
+    text = "\n".join(p.text for p in pages[:10])
+    text_lower = text.lower()
+
+    data: Dict[str, Any] = {
+        "role": exhibit.role.value,
+        "start_page": exhibit.start_page,
+        "consumed": True,
+        "guaranty_type": "personal",
+        "spousal_included": "spousal" in text_lower or "spouse" in text_lower,
+        "scope": "all_obligations" if "all obligations" in text_lower else "partial",
+    }
+    return data
+
+
+def parse_manual_toc_exhibit(exhibit: ExhibitObject,
+                             page_reads: List[PageRead]) -> Dict[str, Any]:
+    """Parse a manual TOC exhibit — count sections and extract topics."""
+    pages = [p for p in page_reads
+             if exhibit.start_page <= p.page_num <= exhibit.end_page]
+    text = "\n".join(p.text for p in pages[:10])
+
+    sections = re.findall(r'(?:^|\n)\s*(?:Section|Chapter|Part)\s+\d+', text, re.I)
+    topics = re.findall(r'(?:^|\n)\s*(?:\d+\.?\s+)?([A-Z][a-z]+(?:\s+[A-Za-z]+){1,5})', text)
+
+    return {
+        "role": "manual_toc",
+        "start_page": exhibit.start_page,
+        "consumed": True,
+        "page_count": len(pages),
+        "section_count": len(sections),
+        "topic_sample": [t.strip() for t in topics[:20]],
+    }
+
+
+def parse_list_exhibit(exhibit: ExhibitObject,
+                       page_reads: List[PageRead]) -> Dict[str, Any]:
+    """Parse a franchisee/developer list exhibit.
+
+    Note: PII content (names, addresses, phones) is tracked but not exported.
+    """
+    pages = [p for p in page_reads
+             if exhibit.start_page <= p.page_num <= exhibit.end_page]
+    text = "\n".join(p.text for p in pages)
+
+    # Count entries by looking for state names or city/state patterns
+    state_pattern = re.compile(r'\b([A-Z]{2})\s+\d{5}\b')  # state + zip
+    state_matches = state_pattern.findall(text)
+
+    return {
+        "role": exhibit.role.value,
+        "start_page": exhibit.start_page,
+        "consumed": True,
+        "page_count": len(pages),
+        "pii_blocked": True,
+        "estimated_entries": len(state_matches) if state_matches else None,
+        "states_represented": sorted(set(state_matches)) if state_matches else [],
+    }
+
+
+def parse_unknown_exhibit(exhibit: ExhibitObject,
+                          page_reads: List[PageRead]) -> Dict[str, Any]:
+    """Parse an unknown/other exhibit — basic content analysis.
+
+    No exhibit type should be silently skipped. This catch-all
+    extracts enough to understand what the exhibit contains.
+    """
+    pages = [p for p in page_reads
+             if exhibit.start_page <= p.page_num <= exhibit.end_page]
+    if not pages:
+        return {"role": "other", "start_page": exhibit.start_page, "consumed": True}
+
+    text = "\n".join(p.text for p in pages[:5])
+    text_lower = text.lower()
+
+    # Detect content type from first few pages
+    content_signals = []
+    if any(kw in text_lower for kw in ["financial statement", "balance sheet", "auditor"]):
+        content_signals.append("financial_content")
+    if any(kw in text_lower for kw in ["franchise agreement", "grant of franchise"]):
+        content_signals.append("agreement_content")
+    if any(kw in text_lower for kw in ["state addend", "additional disclosure"]):
+        content_signals.append("state_addenda_content")
+    if any(kw in text_lower for kw in ["receipt", "acknowledge"]):
+        content_signals.append("receipt_content")
+    if re.search(r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b', text):
+        content_signals.append("contains_phone_numbers")
+    if "@" in text and "." in text:
+        content_signals.append("contains_emails")
+
+    return {
+        "role": "other",
+        "start_page": exhibit.start_page,
+        "consumed": True,
+        "page_count": len(pages),
+        "content_signals": content_signals,
+        "first_100_chars": text[:100].strip(),
+    }
+
+
 def parse_all_exhibits(exhibits: Dict[str, ExhibitObject],
                        page_reads: List[PageRead]) -> Dict[str, Any]:
     """Parse all exhibits in priority order.
@@ -183,14 +342,58 @@ def parse_all_exhibits(exhibits: Dict[str, ExhibitObject],
             if data:
                 results["financials"] = data
 
-        # Other exhibit types: mark as parsed with basic data
-        # Full parsing for agreements, addenda, etc. will be added in future iterations
-        elif exhibit.role in (ExhibitRole.FRANCHISE_AGREEMENT, ExhibitRole.DEVELOPMENT_AGREEMENT):
+        elif exhibit.role in (ExhibitRole.FRANCHISE_AGREEMENT, ExhibitRole.DEVELOPMENT_AGREEMENT,
+                              ExhibitRole.NONTRADITIONAL_AGREEMENT, ExhibitRole.SMALLTOWN_AGREEMENT):
+            data = parse_agreement_exhibit(exhibit, page_reads)
             exhibit.parsed = True
-            results[exhibit.code] = {"role": exhibit.role.value, "start_page": exhibit.start_page}
+            results[exhibit.code] = data
 
         elif exhibit.role in (ExhibitRole.STATE_ADDENDA_FDD, ExhibitRole.STATE_ADDENDA_AGREEMENT):
             exhibit.parsed = True
-            results[exhibit.code] = {"role": exhibit.role.value, "start_page": exhibit.start_page}
+            results[exhibit.code] = {"role": exhibit.role.value, "start_page": exhibit.start_page,
+                                     "page_count": (exhibit.end_page - exhibit.start_page + 1) if exhibit.end_page else 0}
+
+        elif exhibit.role == ExhibitRole.GUARANTY:
+            data = parse_guaranty_exhibit(exhibit, page_reads)
+            exhibit.parsed = True
+            results[exhibit.code] = data
+
+        elif exhibit.role in (ExhibitRole.SUPPLIER_AGREEMENT,):
+            data = parse_agreement_exhibit(exhibit, page_reads)
+            exhibit.parsed = True
+            results[exhibit.code] = data
+
+        elif exhibit.role in (ExhibitRole.ADVERTISING_AGREEMENT,):
+            data = parse_agreement_exhibit(exhibit, page_reads)
+            exhibit.parsed = True
+            results[exhibit.code] = data
+
+        elif exhibit.role == ExhibitRole.MANUAL_TOC:
+            data = parse_manual_toc_exhibit(exhibit, page_reads)
+            exhibit.parsed = True
+            results[exhibit.code] = data
+
+        elif exhibit.role in (ExhibitRole.FRANCHISEE_LIST, ExhibitRole.FORMER_FRANCHISEE_LIST,
+                              ExhibitRole.UNOPENED_UNITS_LIST, ExhibitRole.ITEM20_SUPPORT):
+            data = parse_list_exhibit(exhibit, page_reads)
+            exhibit.parsed = True
+            results[exhibit.code] = data
+
+        elif exhibit.role == ExhibitRole.RECEIPT:
+            exhibit.parsed = True
+            results[exhibit.code] = {"role": "receipt", "start_page": exhibit.start_page,
+                                     "consumed": True, "pii_blocked": True}
+
+        elif exhibit.role in (ExhibitRole.LEASE_RIDER, ExhibitRole.EQUIPMENT_LEASE,
+                              ExhibitRole.PAYMENT_ACH, ExhibitRole.FINANCING_DOC):
+            data = parse_agreement_exhibit(exhibit, page_reads)
+            exhibit.parsed = True
+            results[exhibit.code] = data
+
+        else:
+            # Catch-all: no exhibit type should be silently skipped
+            data = parse_unknown_exhibit(exhibit, page_reads)
+            exhibit.parsed = True
+            results[exhibit.code] = data
 
     return results

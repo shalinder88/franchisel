@@ -87,6 +87,15 @@ def build_all_engines(items: Dict[int, ItemSection],
     i5 = parsed_items.get(5, {})
     initial_fee = _pv(i5.get("initial_fee"))
     dev_fee = _pv(i5.get("development_fee"))
+
+    # Fallback: parser produces "franchise_fee" with {low, high} or {amount}
+    if not initial_fee:
+        ff = _pv(i5.get("franchise_fee"))
+        if isinstance(ff, dict):
+            initial_fee = int(ff.get("high") or ff.get("amount") or 0) or None
+        elif isinstance(ff, (int, float)) and ff > 0:
+            initial_fee = int(ff)
+
     engines["initial_fee_engine"] = {
         "initial_franchise_fee": initial_fee,
         "development_fee": dev_fee,

@@ -120,13 +120,17 @@ def build_bootstrap(page_reads: List[PageRead]) -> Dict[str, Any]:
     # ══ Exhibit map ══
     exhibit_map: Dict[str, str] = {}
     exhibit_text = "\n".join(p.text for p in exhibit_list_pages) if exhibit_list_pages else bootstrap_text
-    for m in re.finditer(r'(?:EXHIBIT|Exhibit)\s+["\']?([A-Z](?:-?\d)?)["\']?\s*[-–—]\s*(.+?)(?:\n|$)', exhibit_text):
-        exhibit_map[m.group(1)] = m.group(2).strip()[:100]
+    for m in re.finditer(r'(?:EXHIBIT|Exhibit)\s+["\']?([A-Z](?:-?\d)?)["\']?\s*[-–—:]\s*(.+?)(?:\n|$)', exhibit_text):
+        desc = m.group(2).strip()[:100]
+        # Reject false positives: descriptions that are too short, numeric, or look like TOC artifacts
+        if len(desc) >= 3 and not re.match(r'^\d+\.?\s*[A-Z]?$', desc):
+            exhibit_map[m.group(1)] = desc
     # Also scan how-to-use page for exhibit references
     for hp in howto_pages:
         for m in re.finditer(r'Exhibit\s+["\']?([A-Z](?:-?\d)?)["\']?\s*[-–—:]\s*(.+?)(?:\n|$)', hp.text):
-            if m.group(1) not in exhibit_map:
-                exhibit_map[m.group(1)] = m.group(2).strip()[:100]
+            desc = m.group(2).strip()[:100]
+            if m.group(1) not in exhibit_map and len(desc) >= 3 and not re.match(r'^\d+\.?\s*[A-Z]?$', desc):
+                exhibit_map[m.group(1)] = desc
 
     # ══ State notices ══
     state_notice_present = len(state_pages) > 0

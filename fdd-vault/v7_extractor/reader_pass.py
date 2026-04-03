@@ -162,68 +162,154 @@ def run_reader_pass(page_reads: List[PageRead],
             # Capture important facts based on content
             text_lower = pr.text[:3000].lower()
 
-            # Economics facts
-            if item_num in (5, 6, 7):
-                dollar_amounts = re.findall(r'\$[\d,]+', pr.text[:5000])
-                if dollar_amounts:
+            # ── SPECIFIC FACT EXTRACTION ──
+            # Lane A is the lead extractor. Capture specific facts with text, not signals.
+
+            # Item 5: Initial fees — capture specific fee amounts
+            if item_num == 5:
+                for m in re.finditer(r'(?:franchise\s+fee|development\s+fee|initial\s+fee)[^.]*\$\s*([\d,]+(?:\.\d{2})?)[^.]*', text_lower):
                     fact_store.add(
-                        f"Dollar amounts on page {pr.page_num}: {len(dollar_amounts)} found",
-                        why_important=f"Item {item_num} economics page",
-                        source_page=pr.page_num,
-                        source_item=item_num,
-                        importance=0.7,
-                        category="economics",
+                        m.group(0).strip()[:200],
+                        why_important="Initial fee amount — candidate for initialFranchiseFee",
+                        source_page=pr.page_num, source_item=5,
+                        importance=0.9, category="economics",
                     )
 
-            # Item 19 special handling
-            if item_num == 19:
-                if any(kw in text_lower for kw in ["average", "median", "ebitda", "gross sales"]):
+            # Item 6: Ongoing fees — capture royalty, ad fund, specific rates
+            if item_num == 6:
+                for m in re.finditer(r'((?:royalt|continuing\s+fee|ad\s+fund|marketing\s+fund|advertising|technology|transfer|renewal)[^.]*?\d+(?:\.\d+)?%[^.]*)', text_lower):
                     fact_store.add(
-                        f"FPR data signals on page {pr.page_num}",
-                        why_important="Item 19 performance data detected",
-                        source_page=pr.page_num,
-                        source_item=19,
-                        importance=0.9,
-                        category="performance",
-                    )
-                # Check for bold disclaimer
-                if "sold these amounts" in text_lower or "results may differ" in text_lower:
-                    fact_store.add(
-                        f"FPR disclaimer on page {pr.page_num}",
-                        why_important="Universal FPR disclaimer — confirms FPR data exists",
-                        source_page=pr.page_num,
-                        source_item=19,
-                        importance=0.8,
-                        category="performance",
+                        m.group(1).strip()[:200],
+                        why_important="Ongoing fee rate — candidate for royaltyRate/marketingFundRate",
+                        source_page=pr.page_num, source_item=6,
+                        importance=0.9, category="economics",
                     )
 
-            # Item 20 facts
-            if item_num == 20:
-                if any(kw in text_lower for kw in ["systemwide", "outlets at start", "franchised"]):
+            # Item 7: Investment — capture total row, format variants
+            if item_num == 7:
+                for m in re.finditer(r'((?:total|estimated\s+(?:initial\s+)?investment)[^.]*\$[\d,]+[^.]*)', text_lower):
                     fact_store.add(
-                        f"Outlet data on page {pr.page_num}",
-                        why_important="Item 20 system trend data",
-                        source_page=pr.page_num,
-                        source_item=20,
-                        importance=0.8,
-                        category="performance",
+                        m.group(1).strip()[:200],
+                        why_important="Investment total — candidate for totalInvestmentLow/High",
+                        source_page=pr.page_num, source_item=7,
+                        importance=0.9, category="economics",
                     )
-
-            # Kill-switch signals in Items 11-17
-            if 11 <= item_num <= 17:
-                kill_signals = ["mandatory minimum", "sales performance", "development default",
-                                "immediate termination", "cross-default", "debranding",
-                                "non-compete", "spousal", "personal guaranty"]
-                for sig in kill_signals:
-                    if sig in text_lower:
+                # Format variant detection
+                for variant in ["non-traditional", "nontraditional", "small-town", "small town",
+                                "express", "kiosk", "satellite", "non traditional"]:
+                    if variant in text_lower:
                         fact_store.add(
-                            f"Kill-switch signal: '{sig}' on page {pr.page_num}",
-                            why_important=f"Potential kill switch in Item {item_num}",
-                            source_page=pr.page_num,
-                            source_item=item_num,
-                            importance=0.8,
-                            category="risk",
+                            f"Format variant '{variant}' on page {pr.page_num}",
+                            why_important="Multiple offering formats affect investment ranges",
+                            source_page=pr.page_num, source_item=7,
+                            importance=0.7, category="economics",
                         )
+
+            # Item 8: Supplier restrictions — capture specific obligations
+            if item_num == 8:
+                for pattern, desc in [
+                    (r'(must\s+purchas[^.]+(?:from\s+us|from\s+approved|designated)[^.]*)', "Mandatory purchase restriction"),
+                    (r'((?:sole|exclusive)\s+(?:source|supplier|distributor)[^.]*)', "Exclusive supplier designation"),
+                    (r'((?:approved|designated)\s+(?:supplier|vendor)[^.]*)', "Approved supplier requirement"),
+                ]:
+                    for m in re.finditer(pattern, text_lower):
+                        fact_store.add(
+                            m.group(1).strip()[:200],
+                            why_important=desc,
+                            source_page=pr.page_num, source_item=8,
+                            importance=0.7, category="control",
+                        )
+
+            # Items 11-17: Kill-switch and control clause extraction
+            if 11 <= item_num <= 17:
+                KILL_PATTERNS = [
+                    (r'(mandatory\s+minimum[^.]*)', "Mandatory minimum requirement — termination trigger"),
+                    (r'((?:sales|revenue)\s+performance\s+(?:requirement|standard|benchmark)[^.]*)', "Sales performance requirement"),
+                    (r'(immediate\s+terminat[^.]*)', "Immediate termination trigger"),
+                    (r'(cross[- ]?default[^.]*)', "Cross-default — one breach kills all agreements"),
+                    (r'(non[- ]?compete[^.]*(?:\d+)\s*(?:year|mile|month)[^.]*)', "Non-compete clause with scope"),
+                    (r'(spousal\s+guarant[^.]*)', "Spousal guaranty — extends liability to spouse"),
+                    (r'(personal\s+guarant[^.]*)', "Personal guaranty — individual asset exposure"),
+                    (r'(right\s+of\s+first\s+refusal[^.]*)', "ROFR — restricts exit options"),
+                    (r'((?:remodel|renovation)\s+(?:requirement|obligation)[^.]*)', "Mandatory remodel obligation"),
+                    (r'(liquidated\s+damage[^.]*)', "Liquidated damages — preset termination penalty"),
+                    (r'(debranding[^.]*)', "Debranding requirement"),
+                    (r'(cure\s+period[^.]*\d+\s*(?:day|business\s+day)[^.]*)', "Cure period specification"),
+                ]
+                for pattern, why in KILL_PATTERNS:
+                    for m in re.finditer(pattern, text_lower):
+                        fact_store.add(
+                            m.group(1).strip()[:200],
+                            why_important=why,
+                            source_page=pr.page_num, source_item=item_num,
+                            importance=0.85, category="risk",
+                        )
+
+            # Item 19: FPR — capture specific performance data
+            if item_num == 19:
+                # Capture average/median dollar amounts
+                for m in re.finditer(r'((?:average|median)[^.]*\$\s*[\d,]+[^.]*)', text_lower):
+                    fact_store.add(
+                        m.group(1).strip()[:200],
+                        why_important="FPR performance figure — candidate for item19_avgRevenue",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.95, category="performance",
+                    )
+                # Disclaimers
+                if "sold these amounts" in text_lower or "results may differ" in text_lower:
+                    # Find the actual disclaimer sentence
+                    for m in re.finditer(r'([^.]*(?:sold these amounts|results may differ)[^.]*\.)', text_lower):
+                        fact_store.add(
+                            m.group(1).strip()[:200],
+                            why_important="Universal FPR disclaimer — confirms FPR data exists",
+                            source_page=pr.page_num, source_item=19,
+                            importance=0.8, category="performance",
+                        )
+                        break
+                # Population definition
+                for m in re.finditer(r'((?:based on|includes|represents|consisted of)[^.]*(?:outlet|unit|store|restaurant|franchise)s?[^.]*\.)', text_lower):
+                    fact_store.add(
+                        m.group(1).strip()[:200],
+                        why_important="FPR population definition — who's included/excluded",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.8, category="performance",
+                    )
+
+            # Item 20: Outlet data — capture specific counts
+            if item_num == 20:
+                # Look for specific unit counts
+                for m in re.finditer(r'((?:total|systemwide|franchised|company)[^.]*(?:\d{2,5})\s*(?:outlet|unit|store|restaurant|location|franchise)s?[^.]*)', text_lower):
+                    fact_store.add(
+                        m.group(1).strip()[:200],
+                        why_important="Outlet count data — candidate for totalUnits/franchisedUnits",
+                        source_page=pr.page_num, source_item=20,
+                        importance=0.8, category="performance",
+                    )
+
+            # Item 21: Financial statements — capture auditor reference
+            if item_num == 21:
+                for m in re.finditer(r'((?:exhibit\s+[a-z])[^.]*(?:audited\s+financial|financial\s+statement)[^.]*)', text_lower):
+                    fact_store.add(
+                        m.group(1).strip()[:200],
+                        why_important="Item 21 financial exhibit reference — must follow through",
+                        source_page=pr.page_num, source_item=21,
+                        importance=0.9, category="document",
+                    )
+
+            # Any item: unusual but important clauses
+            UNUSUAL_PATTERNS = [
+                (r'((?:in\s+addition\s+to|notwithstanding)[^.]*(?:fee|payment|obligation)[^.]*\.)', "Additional fee/obligation clause", "economics"),
+                (r'((?:we\s+(?:may|reserve|retain)\s+the\s+right)[^.]*(?:terminat|modif|chang|amend)[^.]*\.)', "Franchisor reservation of rights", "control"),
+                (r'((?:you\s+(?:must|shall|are\s+required))[^.]*(?:at\s+your\s+(?:own\s+)?(?:expense|cost))[^.]*\.)', "Franchisee expense obligation", "economics"),
+            ]
+            for pattern, why, cat in UNUSUAL_PATTERNS:
+                for m in re.finditer(pattern, text_lower):
+                    fact_store.add(
+                        m.group(1).strip()[:200],
+                        why_important=why,
+                        source_page=pr.page_num, source_item=item_num,
+                        importance=0.6, category=cat,
+                    )
 
             # Page summary
             first_line = pr.text.strip().split('\n')[0][:80] if pr.text.strip() else ""
