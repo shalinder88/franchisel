@@ -24,7 +24,8 @@ from .item_locator import locate_all_items
 
 
 def segment_items(page_reads: List[PageRead],
-                  toc_map: Optional[Dict[int, int]] = None) -> Dict[int, ItemSection]:
+                  toc_map: Optional[Dict[int, int]] = None,
+                  geometry: Optional[Dict] = None) -> Dict[int, ItemSection]:
     """Segment page reads into Item 1-23 sections.
 
     Uses item_locator to find boundaries, then collects pages for each item.
@@ -32,7 +33,7 @@ def segment_items(page_reads: List[PageRead],
     toc_map = toc_map or {}
 
     # Step 1: Build item index using the locator service
-    item_index = locate_all_items(page_reads, toc_map)
+    item_index = locate_all_items(page_reads, toc_map, geometry)
 
     # Step 2: Assemble sections from index
     items: Dict[int, ItemSection] = {}

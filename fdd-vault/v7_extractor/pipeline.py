@@ -47,6 +47,7 @@ from .document_classifier import classify_document
 from .brand_extension_registry import build_extension_plan
 from .document_graph import DocumentGraph
 from .reviewer_pass import build_reviewer_outputs
+from .roadmap_reconciliation import reconcile_roadmap
 from .normalizers.engine_builder import build_all_engines
 from .qa.pii_checks import check_pii_all_items
 from .qa.completeness_checks import check_completeness
@@ -123,7 +124,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # PHASE 2: SECTION SEGMENTATION
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 2: Section segmentation ---")
-    items = segment_items(page_reads, bootstrap.get("tocMap"))
+    items = segment_items(page_reads, bootstrap.get("tocMap"), geometry)
     for n in range(1, 24):
         s = items.get(n)
         if s:
@@ -336,6 +337,9 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
             "cross_ref_count": len(all_cross_refs),
             "cross_ref_blocking": xref_blocking,
             "double_authentication": auth_findings,
+            "roadmap_reconciliation": reconcile_roadmap(
+                bootstrap.get("tocMap", {}), items, items, evidence.to_dict(), coverage
+            ),
         },
         "brand": brand,
         "brand_tagged": brand_tagged,
