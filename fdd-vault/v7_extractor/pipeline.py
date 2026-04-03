@@ -35,6 +35,14 @@ from .exhibit_parser import parse_all_exhibits
 from .exhibit_role_parser import assign_precedence, get_processing_order, summarize_exhibit_roles
 from .state_override_parser import parse_state_addenda
 from .item_parsers import parse_item
+from .archetype_classifier import classify_archetype
+from .content_confirmer import confirm_section_content
+from .document_package_engine import build_document_package
+from .confidence_engine import compute_overall_confidence
+from .reviewer_queues import build_reviewer_queues
+from .qa.model_classification_checks import check_model_classification
+from .assemblers.visual_ready_builder import build_all_visuals
+from .assemblers.memo_output_builder import build_all_memos
 from .normalizers.engine_builder import build_all_engines
 from .qa.pii_checks import check_pii_all_items
 from .qa.completeness_checks import check_completeness
@@ -87,6 +95,15 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     print(f"  Exhibits: {list(bootstrap['exhibitMap'].keys())}")
 
     # ════════════════════════════════════════════════════════════════
+    # ARCHETYPE CLASSIFICATION (before extraction)
+    # ════════════════════════════════════════════════════════════════
+    print(f"\n--- Archetype classification ---")
+    archetype = classify_archetype(bootstrap)
+    print(f"  Archetype: {archetype['archetype']} (confidence: {archetype['confidence']})")
+    print(f"  Expected fee shape: {archetype.get('expected_fee_shape', '?')}")
+    print(f"  Expected Item 19: {archetype.get('expected_item19', '?')}")
+
+    # ════════════════════════════════════════════════════════════════
     # PHASE 2: SECTION SEGMENTATION
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 2: Section segmentation ---")
@@ -94,7 +111,13 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     for n in range(1, 24):
         s = items.get(n)
         if s:
-            print(f"  Item {n:2d}: pages {s.start_page:>3}-{s.end_page:>3} | {s.text_length:6,} chars | {s.page_count} pages")
+            # Content confirmation for critical items
+            if n in (5, 6, 7, 18, 19, 20, 21):
+                conf = confirm_section_content(n, s.text)
+                conf_str = " ✓" if conf["confirmed"] else f" ⚠️{conf['reason'][:40]}"
+            else:
+                conf_str = ""
+            print(f"  Item {n:2d}: pages {s.start_page:>3}-{s.end_page:>3} | {s.text_length:6,} chars | {s.page_count} pages{conf_str}")
         else:
             print(f"  Item {n:2d}: NOT FOUND")
 
@@ -212,6 +235,23 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     brand = assemble_brand_json(engines, bootstrap, evidence, completeness)
     brand_tagged = tag_display_tiers(brand)
 
+    # Build document package, visuals, memos, confidence, reviewer queues
+    doc_package = build_document_package(items, exhibits)
+    visuals = build_all_visuals(engines)
+    memos = build_all_memos(engines, evidence.to_dict(), coverage)
+    confidence_summary = compute_overall_confidence(evidence)
+    model_checks = check_model_classification(archetype, evidence.to_dict(), engines)
+    reviewer = build_reviewer_queues(items, exhibits, evidence.to_dict(), archetype, coverage)
+
+    # Count reviewer issues
+    total_review_tasks = sum(len(q) for q in reviewer.values())
+    if total_review_tasks > 0:
+        print(f"  Reviewer tasks: {total_review_tasks}")
+        for qname, tasks in reviewer.items():
+            if tasks:
+                print(f"    {qname}: {len(tasks)}")
+
+    print(f"  Confidence: {confidence_summary['overall_label']} (score: {confidence_summary['overall_score']})")
     print(f"  Entity: {brand['parentCompany'][:50]}")
     print(f"  Units: {brand['totalUnits']} (F:{brand['franchisedUnits']}, CO:{brand['companyOwnedUnits']})")
     if brand.get('initialFranchiseFee'):
@@ -276,6 +316,13 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         },
         "brand": brand,
         "brand_tagged": brand_tagged,
+        "archetype": archetype,
+        "document_package": doc_package,
+        "visuals": visuals,
+        "memos": memos,
+        "confidence": confidence_summary,
+        "model_checks": model_checks,
+        "reviewer_queues": {k: v for k, v in reviewer.items() if v},
     }
 
     return result
