@@ -26,6 +26,7 @@ Engines:
 
 from typing import Dict, Any, List, Optional
 from ..models import ItemSection, EvidenceStore, EvidenceState, Provenance
+from ..engine_mapper import map_fee_table
 
 
 def build_all_engines(items: Dict[int, ItemSection],
@@ -54,20 +55,30 @@ def build_all_engines(items: Dict[int, ItemSection],
                      i5.get("provenance"))
 
     # ── Item 6: Ongoing Fee Engine ──
+    # Use engine_mapper for row-level disambiguation (prevents royalty/ad double-count)
     i6 = parsed_items.get(6, {})
+    fee_rows_raw = i6.get("fee_rows", [])
+    fee_mapped = map_fee_table(fee_rows_raw) if fee_rows_raw else {}
+
+    # engine_mapper produces disambiguated fields — use those over raw parser output
+    royalty = fee_mapped.get("royalty_rate") or i6.get("royalty_rate")
+    ad_fund = fee_mapped.get("ad_fund_rate") or i6.get("ad_fund_rate")
+
     engines["ongoing_fee_engine"] = {
-        "royalty_rate": i6.get("royalty_rate"),
-        "ad_fund_rate": i6.get("ad_fund_rate"),
-        "technology_fee": i6.get("technology_fee"),
-        "transfer_fee": i6.get("transfer_fee"),
-        "renewal_fee": i6.get("renewal_fee"),
-        "fee_table": i6.get("fee_rows", []),
+        "royalty_rate": royalty,
+        "ad_fund_rate": ad_fund,
+        "technology_fee": fee_mapped.get("technology_fee_rate") or i6.get("technology_fee"),
+        "transfer_fee": fee_mapped.get("transfer_fee") or i6.get("transfer_fee"),
+        "renewal_fee": fee_mapped.get("renewal_fee") or i6.get("renewal_fee"),
+        "fee_table": fee_rows_raw,
+        "mapped_rows": fee_mapped.get("_mapped_rows", []),
+        "unresolved_rows": fee_mapped.get("_unresolved_rows", []),
     }
-    if i6.get("royalty_rate"):
-        evidence.set("royaltyRate", i6["royalty_rate"], EvidenceState.PRESENT,
+    if royalty:
+        evidence.set("royaltyRate", royalty, EvidenceState.PRESENT,
                      i6.get("provenance"))
-    if i6.get("ad_fund_rate"):
-        evidence.set("marketingFundRate", i6["ad_fund_rate"], EvidenceState.PRESENT,
+    if ad_fund:
+        evidence.set("marketingFundRate", ad_fund, EvidenceState.PRESENT,
                      i6.get("provenance"))
 
     # ── Item 7: Investment Engine ──

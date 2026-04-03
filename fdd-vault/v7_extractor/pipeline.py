@@ -29,9 +29,10 @@ from .table_importer import import_tables_for_items
 from .note_linker import link_all_notes
 from .section_segmenter import segment_items
 from .item_coverage import assess_item_coverage
-from .cross_reference_engine import collect_all_cross_refs, resolve_cross_refs
+from .cross_reference_engine import collect_all_cross_refs, resolve_cross_refs, check_publish_blocking
 from .exhibit_locator import locate_exhibits
 from .exhibit_parser import parse_all_exhibits
+from .exhibit_role_parser import assign_precedence, get_processing_order, summarize_exhibit_roles
 from .state_override_parser import parse_state_addenda
 from .item_parsers import parse_item
 from .normalizers.engine_builder import build_all_engines
@@ -114,13 +115,19 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 4: Exhibit parsing ---")
     exhibits = locate_exhibits(page_reads, bootstrap.get("exhibitMap", {}))
+    assign_precedence(exhibits)  # Set precedence levels before parsing
+    processing_order = get_processing_order(exhibits)
     exhibit_data = parse_all_exhibits(exhibits, page_reads)
     state_overrides = parse_state_addenda(exhibits, page_reads)
-    for code, ex in exhibits.items():
-        if ex.parsed:
-            print(f"  Exhibit {code}: {ex.role.value} | pages {ex.start_page}-{ex.end_page}")
+    exhibit_summary = summarize_exhibit_roles(exhibits)
+    for code in processing_order:
+        ex = exhibits[code]
+        status = "PARSED" if ex.parsed else "located" if ex.start_page > 0 else "not_found"
+        print(f"  Exhibit {code}: {ex.role.value} | p{ex.precedence_level} | {status}")
     if state_overrides:
         print(f"  State overrides: {len(state_overrides)}")
+    if exhibit_summary["unparsed_critical"]:
+        print(f"  ⚠️ Unparsed critical exhibits: {exhibit_summary['unparsed_critical']}")
 
     # Close doc — all data extracted
     doc.close()
@@ -155,6 +162,14 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     contradictions = check_contradictions(evidence.to_dict(), bootstrap, items)
 
     all_cross_refs = collect_all_cross_refs(items)
+    resolve_cross_refs(all_cross_refs, items, exhibits)
+    xref_blocking = check_publish_blocking(all_cross_refs)
+
+    # Cross-reference blocking: if critical refs unresolved, cap at review_needed
+    if xref_blocking["blocks_gold"]:
+        if completeness["publish_gate"] == "gold_publishable":
+            completeness["publish_gate"] = "publishable_standard"
+            print(f"  ⚠️ Unresolved cross-refs — publish gate downgraded")
 
     # Item 20 hard-block: if not found, cannot exceed review_needed
     if 20 not in items or coverage.get(20) == "not_found":
@@ -225,6 +240,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
             "parsed": ex.parsed,
         } for code, ex in exhibits.items()},
         "exhibit_data": exhibit_data,
+        "exhibit_summary": exhibit_summary,
         "state_overrides": [{"state": o.state, "domain": o.clause_domain,
                              "text": o.override_text[:200]} for o in state_overrides],
         "engines": {k: v for k, v in engines.items() if not isinstance(v, dict) or v},
@@ -236,6 +252,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
             "regex_findings": regex_findings,
             "contradictions": contradictions,
             "cross_ref_count": len(all_cross_refs),
+            "cross_ref_blocking": xref_blocking,
         },
         "brand": brand,
     }

@@ -242,4 +242,26 @@ def import_tables_for_items(doc, page_reads, items: dict) -> List[TableObject]:
         if item_num in items:
             items[item_num].tables.extend(page_tables)
 
+    # ── Enforce failure states ──
+    # Rule: 0 tables in Items 5, 6, 7, 19, 20, 21 is a failure state,
+    # not proof the table is absent. Flag it explicitly.
+    from .models import FailureState
+    TABLE_MUST_HAVE = {5, 6, 7, 19, 20, 21}
+    for item_num, section in items.items():
+        if item_num in TABLE_MUST_HAVE:
+            if len(section.tables) == 0:
+                section.failure_state = FailureState.TABLE_MISSED
+            elif section.text_length > 0:
+                section.failure_state = FailureState.COMPLETE
+        elif item_num in TABLE_EXPECTED_ITEMS:
+            if len(section.tables) > 0:
+                section.failure_state = FailureState.COMPLETE
+            elif section.text_length > 0:
+                section.failure_state = FailureState.PRESENT_NO_TABLE
+        else:
+            if section.text_length > 0:
+                section.failure_state = FailureState.COMPLETE
+            else:
+                section.failure_state = FailureState.NO_DATA
+
     return all_tables
