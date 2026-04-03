@@ -33,7 +33,7 @@ def segment_items(page_reads: List[PageRead],
     toc_map = toc_map or {}
 
     # Step 1: Build item index using the locator service
-    item_index = locate_all_items(page_reads, toc_map, geometry)
+    item_index = locate_all_items(page_reads, toc_map)
 
     # Step 2: Assemble sections from index
     items: Dict[int, ItemSection] = {}
