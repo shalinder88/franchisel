@@ -34,6 +34,10 @@ def run_regex_sweep(items: Dict[int, ItemSection],
     """
     findings = []
 
+    def _ev(key):
+        entry = evidence.get(key)
+        return entry.get("value") if isinstance(entry, dict) else entry
+
     # ── Check for uncaptured revenue data ──
     if 19 in items:
         i19_text = items[19].text
@@ -45,7 +49,7 @@ def run_regex_sweep(items: Dict[int, ItemSection],
                     dollar_vals.append(v)
             except ValueError:
                 pass
-        if len(dollar_vals) >= 3 and not evidence.get("hasItem19"):
+        if len(dollar_vals) >= 3 and not _ev("hasItem19"):
             findings.append({
                 "type": "missed_fpr_data",
                 "item": 19,
@@ -58,7 +62,7 @@ def run_regex_sweep(items: Dict[int, ItemSection],
         has_sold = bool(re.search(
             r'(?:sold|earned).*?(?:amount|result).*?(?:differ|assurance)',
             items[19].text, re.I))
-        if has_sold and not evidence.get("hasItem19"):
+        if has_sold and not _ev("hasItem19"):
             findings.append({
                 "type": "missed_fpr_disclaimer",
                 "item": 19,
@@ -67,7 +71,7 @@ def run_regex_sweep(items: Dict[int, ItemSection],
             })
 
     # ── Check for missing royalty ──
-    if 6 in items and not evidence.get("royaltyRate"):
+    if 6 in items and not _ev("royaltyRate"):
         m = re.search(r'(?:Royalty|Continuing).*?(\d+(?:\.\d+)?)\s*%', items[6].text[:5000], re.I)
         if m:
             findings.append({
@@ -79,7 +83,7 @@ def run_regex_sweep(items: Dict[int, ItemSection],
             })
 
     # ── Check for missing investment total ──
-    if 7 in items and not evidence.get("totalInvestmentLow"):
+    if 7 in items and not _ev("totalInvestmentLow"):
         m = re.search(r'TOTAL.*?\$\s*([\d,]+).*?(?:to|\-)\s*\$\s*([\d,]+)', items[7].text, re.I)
         if m:
             findings.append({
@@ -92,7 +96,7 @@ def run_regex_sweep(items: Dict[int, ItemSection],
             })
 
     # ── Check for missing initial fee ──
-    if 5 in items and not evidence.get("initialFranchiseFee"):
+    if 5 in items and not _ev("initialFranchiseFee"):
         m = re.search(r'(?:initial\s+)?(?:franchise|establishment)\s+fee.*?\$\s*([\d,]+)', items[5].text, re.I)
         if m:
             findings.append({
@@ -114,7 +118,7 @@ def run_regex_sweep(items: Dict[int, ItemSection],
         })
 
     # ── Check for cure-period language ──
-    if 17 in items and not evidence.get("curePeriodDays"):
+    if 17 in items and not _ev("curePeriodDays"):
         m = re.search(r'(\d+)\s*(?:calendar\s+)?days?\s*(?:to\s+)?cure', items[17].text, re.I)
         if m:
             findings.append({
@@ -126,7 +130,7 @@ def run_regex_sweep(items: Dict[int, ItemSection],
             })
 
     # ── Check for venue language ──
-    if 17 in items and not evidence.get("disputeVenue"):
+    if 17 in items and not _ev("disputeVenue"):
         m = re.search(r'(?:in\s+)?(\w+(?:\s+\w+)?\s+County,\s+[A-Z][a-z]+)', items[17].text)
         if m:
             findings.append({

@@ -30,10 +30,17 @@ def check_contradictions(evidence: Dict,
     """
     findings = []
 
+    # Helper to get value from evidence dict entries
+    def _ev(key):
+        entry = evidence.get(key)
+        if isinstance(entry, dict):
+            return entry.get("value")
+        return entry
+
     # ── Cover investment vs Item 7 investment ──
     cover_inv = bootstrap.get("investmentRange", [])
-    item7_low = evidence.get("totalInvestmentLow")
-    item7_high = evidence.get("totalInvestmentHigh")
+    item7_low = _ev("totalInvestmentLow")
+    item7_high = _ev("totalInvestmentHigh")
     if cover_inv and len(cover_inv) >= 2 and item7_low:
         if abs(cover_inv[0] - item7_low) > item7_low * 0.3:
             findings.append({
@@ -43,8 +50,8 @@ def check_contradictions(evidence: Dict,
             })
 
     # ── Item 19 populations vs Item 20 outlet counts ──
-    i19_units = evidence.get("item19_unitsIncluded")
-    total_units = evidence.get("totalUnits")
+    i19_units = _ev("item19_unitsIncluded")
+    total_units = _ev("totalUnits")
     if i19_units and total_units and i19_units > total_units * 1.2:
         findings.append({
             "type": "unit_count_mismatch",
@@ -58,7 +65,7 @@ def check_contradictions(evidence: Dict,
         'financial' in desc.lower() or 'statement' in desc.lower()
         for desc in exhibit_map.values()
     )
-    has_parsed_financials = evidence.get("hasAuditedFinancials") is not None
+    has_parsed_financials = _ev("hasAuditedFinancials") is not None
     if has_financial_exhibit_in_map and not has_parsed_financials:
         findings.append({
             "type": "financial_exhibit_not_parsed",
@@ -68,13 +75,13 @@ def check_contradictions(evidence: Dict,
 
     # ── Special risks vs kill-switch engine ──
     special_risks = bootstrap.get("specialRisks", [])
-    if "spousal_liability" in special_risks and not evidence.get("spousalGuaranty"):
+    if "spousal_liability" in special_risks and not _ev("spousalGuaranty"):
         findings.append({
             "type": "risk_not_captured",
             "detail": "Special-risks page flags spousal liability but kill-switch engine has no spousal guaranty field",
             "severity": "info",
         })
-    if "mandatory_minimum" in special_risks and not evidence.get("minimumPayments"):
+    if "mandatory_minimum" in special_risks and not _ev("minimumPayments"):
         findings.append({
             "type": "risk_not_captured",
             "detail": "Special-risks page flags mandatory minimum but kill-switch engine has no minimum payment field",
@@ -131,9 +138,13 @@ def double_authenticate_pages_1_2(bootstrap: Dict,
             "severity": "warning",
         })
 
+    def _ev(key):
+        entry = evidence.get(key)
+        return entry.get("value") if isinstance(entry, dict) else entry
+
     # ── Investment range found? ──
     cover_inv = bootstrap.get("investmentRange", [])
-    item7_low = evidence.get("totalInvestmentLow")
+    item7_low = _ev("totalInvestmentLow")
     if cover_inv and not item7_low:
         findings.append({
             "type": "investment_not_extracted",
@@ -144,7 +155,7 @@ def double_authenticate_pages_1_2(bootstrap: Dict,
     # ── Financial exhibit path followed? ──
     exhibit_map = bootstrap.get("exhibitMap", {})
     has_fin_ref = any('financial' in v.lower() or 'statement' in v.lower() for v in exhibit_map.values())
-    has_fin_data = evidence.get("hasAuditedFinancials")
+    has_fin_data = _ev("hasAuditedFinancials")
     if has_fin_ref and not has_fin_data:
         findings.append({
             "type": "financial_path_not_followed",
@@ -162,7 +173,7 @@ def double_authenticate_pages_1_2(bootstrap: Dict,
             })
 
     # ── Unit count consistency ──
-    total_units = evidence.get("totalUnits", 0)
+    total_units = _ev("totalUnits") or 0
     if total_units == 0 and 20 in items:
         findings.append({
             "type": "zero_units_with_item20",

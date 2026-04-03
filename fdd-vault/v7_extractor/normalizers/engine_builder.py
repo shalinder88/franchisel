@@ -83,14 +83,35 @@ def build_all_engines(items: Dict[int, ItemSection],
 
     # ── Item 7: Investment Engine ──
     i7 = parsed_items.get(7, {})
+    # Parser returns nested: total_investment.value.{low, high} or {amount}
+    total_inv = i7.get("total_investment", {})
+    total_val = total_inv.get("value") if isinstance(total_inv, dict) else None
+    inv_low = None
+    inv_high = None
+    if isinstance(total_val, dict):
+        inv_low = total_val.get("low")
+        inv_high = total_val.get("high")
+        if not inv_low and total_val.get("amount"):
+            inv_low = total_val["amount"]
+            inv_high = total_val["amount"]
+    # Convert to int if float
+    if inv_low: inv_low = int(inv_low)
+    if inv_high: inv_high = int(inv_high)
+
+    line_items = i7.get("line_items", {})
+    line_items_val = line_items.get("value", []) if isinstance(line_items, dict) else []
+
     engines["initial_investment_engine"] = {
-        "investment_low": i7.get("investment_low"),
-        "investment_high": i7.get("investment_high"),
-        "line_items": i7.get("investment_rows", []),
+        "investment_low": inv_low,
+        "investment_high": inv_high,
+        "line_items": line_items_val,
+        "format_variants": i7.get("format_variants", {}).get("value", []) if isinstance(i7.get("format_variants"), dict) else [],
     }
-    if i7.get("investment_low"):
-        evidence.set("totalInvestmentLow", i7["investment_low"], EvidenceState.PRESENT)
-        evidence.set("totalInvestmentHigh", i7["investment_high"], EvidenceState.PRESENT)
+    if inv_low:
+        prov = total_inv.get("provenance") if isinstance(total_inv, dict) else None
+        evidence.set("totalInvestmentLow", inv_low, EvidenceState.PRESENT,
+                     Provenance(source_page=prov.get("source_page") if prov else None) if prov else None)
+        evidence.set("totalInvestmentHigh", inv_high, EvidenceState.PRESENT)
 
     # ── Item 8: Supplier Engine ──
     i8 = parsed_items.get(8, {})
