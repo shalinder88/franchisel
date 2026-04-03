@@ -1,0 +1,83 @@
+{
+  "brand": "Papa John's Pizza",
+  "must_not_miss": [
+    {
+      "fact": "Total units: 3,291 (F:2,752, CO:539)",
+      "source": "Item 20, Table No. 1, 2024 row",
+      "severity": "fatal",
+      "miss_class": "table_detection_miss"
+    },
+    {
+      "fact": "Standard investment: $261,165-$853,365",
+      "source": "Item 7, page 24, TOTAL row",
+      "severity": "fatal",
+      "miss_class": "engine_mapping_miss"
+    },
+    {
+      "fact": "Non-traditional investment: $111,000-$403,915",
+      "source": "Item 7, page 26, TOTAL row",
+      "severity": "major",
+      "miss_class": "table_detection_miss"
+    },
+    {
+      "fact": "Royalty: 5% of Net Sales",
+      "source": "Item 6, fee table, Royalty row",
+      "severity": "fatal",
+      "miss_class": "engine_mapping_miss"
+    },
+    {
+      "fact": "National Marketing Fund: 2% of Net Sales",
+      "source": "Item 6, fee table, Marketing row",
+      "severity": "major",
+      "miss_class": "engine_mapping_miss"
+    },
+    {
+      "fact": "Item 19 FPR present with tables",
+      "source": "Item 19, pages 73-80",
+      "severity": "fatal",
+      "miss_class": "discovery_lane_miss"
+    },
+    {
+      "fact": "Average Net Royalty Sales: $1,122,575 (franchised)",
+      "source": "Item 19, Table 2, Total column",
+      "severity": "fatal",
+      "miss_class": "table_detection_miss"
+    },
+    {
+      "fact": "Initial term: 10 years",
+      "source": "Item 17, NASAA table, row a",
+      "severity": "major",
+      "miss_class": "table_detection_miss"
+    },
+    {
+      "fact": "Non-compete: 2 years, 10 miles",
+      "source": "Item 17, NASAA table, row r",
+      "severity": "major",
+      "miss_class": "table_detection_miss"
+    },
+    {
+      "fact": "Dispute venue: Jefferson County, Kentucky",
+      "source": "Item 17, NASAA table, row v",
+      "severity": "major",
+      "miss_class": "table_detection_miss"
+    },
+    {
+      "fact": "Financial statements audited (Exhibit O)",
+      "source": "Item 21 + Exhibit O",
+      "severity": "fatal",
+      "miss_class": "exhibit_followthrough_miss"
+    },
+    {
+      "fact": "Three offering paths: Standard, Non-Traditional, Small-Town",
+      "source": "Cover page + Item 7",
+      "severity": "major",
+      "miss_class": "discovery_lane_miss"
+    },
+    {
+      "fact": "Development agreement required even for single unit",
+      "source": "Item 5",
+      "severity": "major",
+      "miss_class": "importance_scoring_miss"
+    }
+  ]
+}

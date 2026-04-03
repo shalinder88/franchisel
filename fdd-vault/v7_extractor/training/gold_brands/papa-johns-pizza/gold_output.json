@@ -1,0 +1,43 @@
+{
+  "source_pdf": "638092-2025-Papa-Johns-Pizza.pdf",
+  "brand": "Papa John's Pizza",
+  "archetype": "qsr_restaurant",
+  "entity": "Papa John's Franchising, LLC",
+
+  "totalUnits": 3291,
+  "franchisedUnits": 2752,
+  "companyOwnedUnits": 539,
+
+  "initialFranchiseFee": 25000,
+  "totalInvestmentLow": 261165,
+  "totalInvestmentHigh": 853365,
+
+  "royaltyRate": "5%",
+  "marketingFundRate": "2%",
+
+  "hasItem19": true,
+  "item19_avgRevenue": 1122575,
+  "item19_revenueType": "net_royalty_sales",
+  "item19_unitsIncluded": 2365,
+
+  "item17": {
+    "initialTermYears": 10,
+    "renewalTermYears": 10,
+    "curePeriodDays": 30,
+    "hasNonCompete": true,
+    "nonCompeteYears": 2,
+    "nonCompeteMiles": 10,
+    "mandatoryArbitration": true,
+    "disputeVenue": "Jefferson County, Kentucky"
+  },
+
+  "item21": {
+    "hasAuditedFinancials": true,
+    "financialExhibit": "O"
+  },
+
+  "offeringPaths": ["standard", "non_traditional", "small_format", "development"],
+  "specialRisks": ["out_of_state_dispute"],
+
+  "notes": "Three format variants in Item 7. Development agreement required even for single unit. PJ Food Service for distribution. Capital Delivery for financing."
+}
