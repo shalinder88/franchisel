@@ -1,0 +1,133 @@
+"""
+Engine Builder — Phase 5 Normalization
+
+Converts parsed item data into the Layer B normalized engines.
+These are the universal backbone that reports and comparisons build from.
+
+Engines:
+  - initial_fee_engine (from Item 5)
+  - ongoing_fee_engine (from Item 6)
+  - initial_investment_engine (from Item 7)
+  - supplier_restrictions_engine (from Item 8)
+  - site_and_territory_engine (from Item 12)
+  - training_support_engine (from Item 11)
+  - technology_requirements_engine (from Item 11)
+  - owner_participation_engine (from Item 15)
+  - contract_burden_engine (from Item 17)
+  - kill_switch_engine (from Items 8, 11, 12, 15, 17)
+  - litigation_engine (from Item 3)
+  - bankruptcy_engine (from Item 4)
+  - item19_engine (from Item 19)
+  - item20_engine (from Item 20)
+  - financial_statement_engine (from Item 21 + exhibits)
+  - document_package_engine (from Items 22-23)
+  - state_override_engine (from state addenda)
+"""
+
+from typing import Dict, Any, List, Optional
+from ..models import ItemSection, EvidenceStore, EvidenceState, Provenance
+
+
+def build_all_engines(items: Dict[int, ItemSection],
+                      parsed_items: Dict[int, Dict],
+                      exhibit_data: Dict[str, Any],
+                      evidence: EvidenceStore) -> Dict[str, Any]:
+    """Build all Layer B engines from parsed item data.
+
+    parsed_items: dict of item_num → parsed data from item_parsers
+    exhibit_data: parsed exhibit results
+    evidence: the EvidenceStore to populate
+
+    Returns dict of engine_name → engine data.
+    """
+    engines = {}
+
+    # ── Item 5: Initial Fee Engine ──
+    i5 = parsed_items.get(5, {})
+    engines["initial_fee_engine"] = {
+        "initial_franchise_fee": i5.get("initial_fee"),
+        "development_fee": i5.get("development_fee"),
+        "fee_table": i5.get("fee_rows", []),
+    }
+    if i5.get("initial_fee"):
+        evidence.set("initialFranchiseFee", i5["initial_fee"], EvidenceState.PRESENT,
+                     i5.get("provenance"))
+
+    # ── Item 6: Ongoing Fee Engine ──
+    i6 = parsed_items.get(6, {})
+    engines["ongoing_fee_engine"] = {
+        "royalty_rate": i6.get("royalty_rate"),
+        "ad_fund_rate": i6.get("ad_fund_rate"),
+        "technology_fee": i6.get("technology_fee"),
+        "transfer_fee": i6.get("transfer_fee"),
+        "renewal_fee": i6.get("renewal_fee"),
+        "fee_table": i6.get("fee_rows", []),
+    }
+    if i6.get("royalty_rate"):
+        evidence.set("royaltyRate", i6["royalty_rate"], EvidenceState.PRESENT,
+                     i6.get("provenance"))
+    if i6.get("ad_fund_rate"):
+        evidence.set("marketingFundRate", i6["ad_fund_rate"], EvidenceState.PRESENT,
+                     i6.get("provenance"))
+
+    # ── Item 7: Investment Engine ──
+    i7 = parsed_items.get(7, {})
+    engines["initial_investment_engine"] = {
+        "investment_low": i7.get("investment_low"),
+        "investment_high": i7.get("investment_high"),
+        "line_items": i7.get("investment_rows", []),
+    }
+    if i7.get("investment_low"):
+        evidence.set("totalInvestmentLow", i7["investment_low"], EvidenceState.PRESENT)
+        evidence.set("totalInvestmentHigh", i7["investment_high"], EvidenceState.PRESENT)
+
+    # ── Item 8: Supplier Engine ──
+    i8 = parsed_items.get(8, {})
+    engines["supplier_restrictions_engine"] = i8
+
+    # ── Item 17: Contract/Kill-Switch Engine ──
+    i17 = parsed_items.get(17, {})
+    engines["contract_burden_engine"] = i17
+    engines["kill_switch_engine"] = {
+        "minimum_payments": i17.get("minimum_payments"),
+        "sales_performance_requirement": i17.get("sales_performance"),
+        "cure_period_days": i17.get("cure_period_days"),
+        "immediate_termination_triggers": i17.get("immediate_termination"),
+        "cross_default": i17.get("cross_default"),
+        "noncompete_years": i17.get("noncompete_years"),
+        "noncompete_miles": i17.get("noncompete_miles"),
+        "spousal_guaranty": i17.get("spousal_guaranty"),
+        "venue": i17.get("dispute_venue"),
+    }
+
+    # ── Item 19: FPR Engine ──
+    i19 = parsed_items.get(19, {})
+    engines["item19_engine"] = i19
+    evidence.set("hasItem19", i19.get("has_fpr", False),
+                 EvidenceState.PRESENT if "has_fpr" in i19 else EvidenceState.NOT_FOUND)
+    if i19.get("average_revenue"):
+        evidence.set("item19_avgRevenue", i19["average_revenue"], EvidenceState.PRESENT)
+
+    # ── Item 20: Outlet Engine ──
+    i20 = parsed_items.get(20, {})
+    engines["item20_engine"] = i20
+    if i20.get("total_end"):
+        evidence.set("totalUnits", i20["total_end"], EvidenceState.PRESENT)
+        evidence.set("franchisedUnits", i20.get("franchised_end", 0), EvidenceState.PRESENT)
+        evidence.set("companyOwnedUnits", i20.get("co_end", 0), EvidenceState.PRESENT)
+
+    # ── Item 21 + Exhibits: Financial Statement Engine ──
+    fin = exhibit_data.get("financials", {})
+    engines["financial_statement_engine"] = fin
+    if fin.get("hasAuditedFinancials"):
+        evidence.set("hasAuditedFinancials", True, EvidenceState.PRESENT)
+
+    # ── Other engines ──
+    engines["litigation_engine"] = parsed_items.get(3, {})
+    engines["bankruptcy_engine"] = parsed_items.get(4, {})
+    engines["territory_engine"] = parsed_items.get(12, {})
+    engines["training_support_engine"] = parsed_items.get(11, {})
+    engines["owner_participation_engine"] = parsed_items.get(15, {})
+    engines["document_package_engine"] = parsed_items.get(22, {})
+
+    return engines
