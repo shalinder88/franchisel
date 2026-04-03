@@ -2,121 +2,133 @@
 Content Confirmer
 
 Validates that a located section actually contains the expected content
-for its claimed item number.
+for its claimed item number. This is the MAIN confidence source.
 
-Uses the item-content definitions to distinguish:
+Uses item-content definitions to distinguish:
   Item 18 from 19 (18 = 1-2 lines, 19 = money)
   Item 19 from 20 (19 = revenue/EBITDA, 20 = locations/states)
   Item 5 from 6 from 7 (5 = lump sum, 6 = % of gross, 7 = TOTAL investment)
 
-This is a confirmation layer, not a locator. The item_locator finds candidates;
-this module confirms or rejects them.
+Outputs:
+  confirmed: bool
+  confidence: float (0-1)
+  content_score: int (number of positive signals)
+  matched_signals: list of matched signal words
+  contradictory_signals: list of matched anti-signals
+  confirmation_basis: str (explanation)
 """
 
-import re
-from typing import Dict, Any, Optional, Tuple
+from typing import Dict, Any, List
 
 
-# Content signals per item (what MUST be present, what MUST NOT be present)
-CONTENT_RULES = {
+# Content signals per item — simple word matching, NO regex
+# These are what each item's content should contain
+ITEM_SIGNALS = {
     5: {
-        "must_have": [r"(?:initial|franchise|establishment)\s+fee", r"(?:lump\s+sum|non[\-\s]refundable)"],
-        "must_not_have": [r"% of (?:Gross|Net)\s+Sales", r"Systemwide Outlet"],
-        "min_length": 300,
+        "positive": ["initial franchise fee", "initial fee", "development fee", "non-refundable", "lump sum"],
+        "negative": ["% of gross sales", "systemwide outlet"],
+        "min_length": 300, "max_length": 999999,
     },
     6: {
-        "must_have": [r"(?:Royalty|Continuing)", r"(?:% of|percent)"],
-        "must_not_have": [r"ESTIMATED INITIAL INVESTMENT", r"Systemwide Outlet"],
-        "min_length": 500,
+        "positive": ["royalty", "advertising", "ad fund", "% of gross", "% of net", "transfer fee", "other fees"],
+        "negative": ["estimated initial investment", "systemwide outlet"],
+        "min_length": 500, "max_length": 999999,
     },
     7: {
-        "must_have": [r"ESTIMATED INITIAL INVESTMENT|YOUR ESTIMATED", r"TOTAL"],
-        "must_not_have": [r"Systemwide Outlet"],
-        "min_length": 1000,
+        "positive": ["estimated initial investment", "your estimated", "leasehold", "equipment", "total"],
+        "negative": ["systemwide outlet"],
+        "min_length": 1000, "max_length": 999999,
     },
     18: {
-        "must_have": [r"public figure"],
-        "must_not_have": [r"\$[\d,]{4,}", r"Average|Median", r"EBITDA", r"Systemwide"],
-        "max_length": 3000,
+        "positive": ["public figure"],
+        "negative": ["average", "median", "ebitda", "systemwide"],
+        "min_length": 0, "max_length": 5000,
     },
     19: {
-        "must_have": [r"(?:Financial Performance|financial performance)", r"\$[\d,]{4,}"],
-        "must_not_have": [r"Systemwide Outlet Summary", r"(?:Opened|Terminated).*(?:Outlet|Restaurant)"],
-        "min_length": 400,
+        "positive": ["financial performance", "average", "median", "gross sales", "gross revenue", "ebitda"],
+        "negative": ["systemwide outlet summary", "outlets at start"],
+        "min_length": 400, "max_length": 999999,
     },
     20: {
-        "must_have": [r"(?:Systemwide|System[\-\s]wide).*(?:Outlet|Summary|Studio|Restaurant)",
-                      r"(?:Franchised|Company[\-\s]Owned)"],
-        "must_not_have": [r"EBITDA", r"Average.*Revenue.*\$"],
-        "min_length": 1000,
+        "positive": ["systemwide outlet", "outlets at start", "outlets at end", "opened", "terminated", "franchised", "company-owned"],
+        "negative": ["ebitda", "average revenue"],
+        "min_length": 1000, "max_length": 999999,
     },
     21: {
-        "must_have": [r"(?:Financial Statement|Exhibit\s+[A-Z]|audited)"],
-        "must_not_have": [r"Systemwide Outlet", r"EBITDA"],
-        "max_length": 5000,
+        "positive": ["financial statement", "audited", "fiscal year", "exhibit"],
+        "negative": ["systemwide outlet"],
+        "min_length": 0, "max_length": 8000,
     },
 }
 
 
 def confirm_section_content(item_num: int, text: str) -> Dict[str, Any]:
-    """Confirm whether text matches expected content for the given item number.
+    """Confirm whether text matches expected content for the given item.
 
-    Returns:
-      confirmed: bool — does the content match?
-      confidence: float — how confident (0.0 to 1.0)
-      must_have_hits: int — how many required patterns found
-      must_not_have_hits: int — how many forbidden patterns found
-      reason: str — explanation
+    Returns rich confirmation with matched/contradictory signals and score.
     """
-    rules = CONTENT_RULES.get(item_num)
-    if not rules:
-        return {"confirmed": True, "confidence": 0.5, "reason": "no rules defined"}
+    signals = ITEM_SIGNALS.get(item_num)
+    if not signals:
+        # No specific rules — accept with moderate confidence
+        return {
+            "confirmed": True,
+            "confidence": 0.5,
+            "content_score": 0,
+            "matched_signals": [],
+            "contradictory_signals": [],
+            "confirmation_basis": "no_rules_defined",
+        }
 
-    sample = text[:8000]
-    must_have = rules.get("must_have", [])
-    must_not = rules.get("must_not_have", [])
-    min_len = rules.get("min_length", 0)
-    max_len = rules.get("max_length", 999999)
-
-    # Check must-have patterns
-    mh_hits = sum(1 for p in must_have if re.search(p, sample, re.I))
-    mh_total = len(must_have)
-
-    # Check must-not-have patterns
-    mn_hits = sum(1 for p in must_not if re.search(p, sample[:3000], re.I))
-
-    # Check length
+    text_lower = text[:8000].lower()
     text_len = len(text.strip())
+
+    # Match positive signals
+    matched = [s for s in signals["positive"] if s in text_lower]
+    content_score = len(matched)
+
+    # Match negative signals
+    contradictory = [s for s in signals["negative"] if s in text_lower[:4000]]
+
+    # Length check
+    min_len = signals.get("min_length", 0)
+    max_len = signals.get("max_length", 999999)
     length_ok = min_len <= text_len <= max_len
 
-    # Score
-    if mh_total > 0:
-        mh_ratio = mh_hits / mh_total
+    # Scoring
+    total_positive = len(signals["positive"])
+    if total_positive > 0:
+        match_ratio = content_score / total_positive
     else:
-        mh_ratio = 1.0
+        match_ratio = 1.0
 
-    if mn_hits > 0:
+    # Determine confirmation
+    if len(contradictory) > 0 and content_score < 2:
         confirmed = False
         confidence = 0.2
-        reason = f"Anti-patterns found ({mn_hits}), content may belong to wrong item"
-    elif mh_ratio >= 0.5 and length_ok:
+        basis = f"contradictory_signals: {contradictory}"
+    elif match_ratio >= 0.4 and length_ok and len(contradictory) == 0:
         confirmed = True
-        confidence = min(1.0, 0.5 + mh_ratio * 0.5)
-        reason = f"Content matches: {mh_hits}/{mh_total} must-have patterns, length ok"
-    elif mh_ratio >= 0.5:
+        confidence = min(1.0, 0.5 + match_ratio * 0.5)
+        basis = f"matched {content_score}/{total_positive} signals, length ok"
+    elif match_ratio >= 0.4 and len(contradictory) == 0:
         confirmed = True
         confidence = 0.6
-        reason = f"Content matches but length unusual ({text_len})"
+        basis = f"matched {content_score}/{total_positive} signals, length unusual ({text_len})"
+    elif content_score >= 1 and len(contradictory) == 0:
+        confirmed = True
+        confidence = 0.4
+        basis = f"weak match: {content_score}/{total_positive} signals"
     else:
         confirmed = False
-        confidence = 0.3
-        reason = f"Only {mh_hits}/{mh_total} must-have patterns found"
+        confidence = 0.2
+        basis = f"only {content_score}/{total_positive} signals, {len(contradictory)} contradictory"
 
     return {
         "confirmed": confirmed,
         "confidence": round(confidence, 2),
-        "must_have_hits": mh_hits,
-        "must_not_have_hits": mn_hits,
+        "content_score": content_score,
+        "matched_signals": matched,
+        "contradictory_signals": contradictory,
+        "confirmation_basis": basis,
         "text_length": text_len,
-        "reason": reason,
     }

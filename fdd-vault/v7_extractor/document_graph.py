@@ -13,6 +13,7 @@ This makes exhibit-following and provenance cleaner than a loose queue.
 
 from typing import Dict, List, Any, Optional
 from .models import CrossReference, ItemSection, ExhibitObject
+from .cross_reference_mention import CrossReferenceMention
 
 
 class DocumentGraph:
@@ -43,6 +44,25 @@ class DocumentGraph:
             "end_page": exhibit.end_page,
             "parsed": exhibit.parsed,
         }
+
+    def add_cross_reference_mention(self, mention: CrossReferenceMention):
+        """Add a cross-reference mention as a graph edge (NOT a section start)."""
+        source = f"item_{mention.source_item}" if mention.source_item else "unknown"
+        if mention.mentioned_item:
+            target = f"item_{mention.mentioned_item}"
+        elif mention.mentioned_exhibit:
+            target = f"exhibit_{mention.mentioned_exhibit}"
+        else:
+            target = "unknown"
+
+        self.edges.append({
+            "source": source,
+            "target": target,
+            "label": mention.text,
+            "source_page": mention.source_page,
+            "status": "cross_reference_mention",
+            "is_section_start": False,  # explicitly NOT a section start
+        })
 
     def add_edge(self, cross_ref: CrossReference):
         """Add a cross-reference as an edge."""

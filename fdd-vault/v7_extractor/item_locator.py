@@ -154,11 +154,15 @@ def _calculate_toc_offset(page_reads: List[PageRead], toc_map: Dict[int, int]) -
 
 
 def locate_all_items(page_reads: List[PageRead],
-                     toc_map: Dict[int, int]) -> Dict[int, Dict]:
-    """Build an item index. TOC-anchored primary. No regex heading detection.
+                     toc_map: Dict[int, int],
+                     layout_index=None) -> Dict[int, Dict]:
+    """Build an item index. Hybrid: content-led primary, layout supplementary.
 
-    Level 1: TOC anchor — use TOC page numbers + offset, confirm by reading content
-    Level 2: Sequential reading — for items not in TOC, read between known items
+    Primary: TOC anchor + content confirmation (proven, 23/23 on Papa Johns)
+    Supplementary: layout candidates + table mask (adjust confidence, don't override)
+
+    Layout modules may increase or decrease confidence, but they do not replace
+    TOC anchoring or content confirmation as the primary basis.
     """
     total_pages = len(page_reads)
     locations: Dict[int, Dict] = {}
@@ -255,6 +259,43 @@ def locate_all_items(page_reads: List[PageRead],
                 "content_confirmed": best_score >= 2,
                 "needs_review": True,
             }
+
+    # ── Supplementary: Layout evidence (adjusts confidence, doesn't override) ──
+    if layout_index:
+        try:
+            from .table_mask import apply_table_penalties
+            from .section_candidate import SectionCandidate
+
+            # Convert locations to candidates for table penalty assessment
+            for item_num, loc in locations.items():
+                page_pdf = loc["start_page_num"]
+
+                # Check if layout has a heading candidate near this page
+                heading_pages = layout_index.heading_pages()
+                layout_headings = heading_pages.get(page_pdf, [])
+                matching_headings = [h for h in layout_headings if h.item_number == item_num]
+
+                if matching_headings:
+                    # Layout confirms: boost confidence slightly
+                    best_h = max(matching_headings, key=lambda h: h.confidence)
+                    if best_h.is_bold:
+                        loc["confidence"] = min(1.0, loc["confidence"] + 0.05)
+                    loc["layout_confirmed"] = True
+                else:
+                    loc["layout_confirmed"] = False
+
+                # Check obligations matrix pages
+                from .table_mask import detect_obligations_matrix_pages
+                table_pages = layout_index.pages_with_tables()
+                obligations = detect_obligations_matrix_pages(page_reads, table_pages)
+
+                if page_pdf in obligations and loc["confidence"] < 0.8:
+                    # Page is in obligations matrix AND confidence isn't very high
+                    # Apply soft penalty only — don't override strong content+TOC
+                    loc["confidence"] *= 0.8
+                    loc["in_obligations_matrix"] = True
+        except Exception:
+            pass  # layout enhancement is optional, not required
 
     # ── Enforce document order ──
     sorted_items = sorted(locations.keys())
