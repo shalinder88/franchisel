@@ -39,7 +39,9 @@ from .normalizers.engine_builder import build_all_engines
 from .qa.pii_checks import check_pii_all_items
 from .qa.completeness_checks import check_completeness
 from .qa.regex_sweep import run_regex_sweep
-from .qa.contradiction_checks import check_contradictions
+from .qa.contradiction_checks import check_contradictions, double_authenticate_pages_1_2
+from .table_continuity import merge_all_continuations
+from .display_tier_tagger import tag_display_tiers
 from .assemblers.brand_json import assemble_brand_json
 
 
@@ -109,6 +111,12 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
 
     print(f"\n  Linking notes...")
     link_all_notes(page_reads, items)
+
+    print(f"\n  Merging split tables...")
+    merge_all_continuations(items)
+    # Recount after merging
+    merged_table_count = sum(len(s.tables) for s in items.values())
+    print(f"  Tables after merge: {merged_table_count}")
 
     # ════════════════════════════════════════════════════════════════
     # PHASE 4: EXHIBIT LOCATION + PARSING
@@ -188,10 +196,21 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     print(f"  Gate: {completeness['publish_gate']}")
 
     # ════════════════════════════════════════════════════════════════
+    # PAGES 1-2 DOUBLE AUTHENTICATION
+    # ════════════════════════════════════════════════════════════════
+    print(f"\n  Double-authenticating pages 1-2...")
+    auth_findings = double_authenticate_pages_1_2(bootstrap, evidence.to_dict(), items)
+    for af in auth_findings:
+        sev = af["severity"]
+        icon = "❌" if sev == "critical" else "⚠️" if sev == "warning" else "ℹ️"
+        print(f"  {icon} {af['type']}: {af['detail']}")
+
+    # ════════════════════════════════════════════════════════════════
     # PHASE 7: ASSEMBLY
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 7: Assembly ---")
     brand = assemble_brand_json(engines, bootstrap, evidence, completeness)
+    brand_tagged = tag_display_tiers(brand)
 
     print(f"  Entity: {brand['parentCompany'][:50]}")
     print(f"  Units: {brand['totalUnits']} (F:{brand['franchisedUnits']}, CO:{brand['companyOwnedUnits']})")
@@ -253,8 +272,10 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
             "contradictions": contradictions,
             "cross_ref_count": len(all_cross_refs),
             "cross_ref_blocking": xref_blocking,
+            "double_authentication": auth_findings,
         },
         "brand": brand,
+        "brand_tagged": brand_tagged,
     }
 
     return result
