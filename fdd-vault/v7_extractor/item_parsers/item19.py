@@ -154,7 +154,7 @@ def parse_item19(section: ItemSection) -> Dict[str, Any]:
 
     # Fallback: extract average from prose text if tables didn't have it
     # General rule: McDonald's and some brands state average in narrative, not table rows.
-    # "The average annual sales volume...was $4,002,000"
+    # Text may span multiple lines: "average annual sales volume...was\n$4,002,000"
     if not avg_revenue:
         avg_patterns = [
             r'average\s+(?:annual\s+)?(?:gross\s+)?sales\s+volume.*?was\s+\$\s*([\d,]+)',
@@ -162,7 +162,8 @@ def parse_item19(section: ItemSection) -> Dict[str, Any]:
             r'average\s+(?:annual\s+)?(?:unit\s+)?(?:volume|revenue).*?(?:was|of)\s+\$\s*([\d,]+)',
         ]
         for pattern in avg_patterns:
-            m = re.search(pattern, text_lower)
+            # Use DOTALL to match across newlines
+            m = re.search(pattern, text_lower, re.DOTALL)
             if m:
                 val = float(m.group(1).replace(",", ""))
                 if val >= 10000:

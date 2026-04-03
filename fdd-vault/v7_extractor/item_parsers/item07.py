@@ -12,11 +12,24 @@ from ..models import ItemSection, Provenance, EvidenceState, TableMethod
 
 
 def _parse_dollar_range(text: str) -> Dict[str, Any]:
-    """Parse '$X to $Y' or '$X - $Y' ranges."""
+    """Parse '$X to $Y' or '$X - $Y' ranges.
+
+    General rule: when a cell contains multiple ranges concatenated
+    (e.g., "$1,471,000 to $2,728,000 $1,014,500 to $1,793,500"),
+    extract the FIRST complete range. This is the primary format.
+    """
+    # First try to find explicit "X to Y" pattern
+    m = re.search(r'\$\s*([\d,]+(?:\.\d{2})?)\s*(?:to|-)\s*\$\s*([\d,]+(?:\.\d{2})?)', text)
+    if m:
+        lo = float(m.group(1).replace(",", ""))
+        hi = float(m.group(2).replace(",", ""))
+        return {"low": min(lo, hi), "high": max(lo, hi)}
+
+    # Fallback: all dollar amounts
     amounts = re.findall(r'\$\s*([\d,]+(?:\.\d{2})?)', text)
     cleaned = [float(a.replace(",", "")) for a in amounts]
     if len(cleaned) >= 2:
-        return {"low": min(cleaned), "high": max(cleaned)}
+        return {"low": min(cleaned[:2]), "high": max(cleaned[:2])}
     elif len(cleaned) == 1:
         return {"amount": cleaned[0]}
     return {}

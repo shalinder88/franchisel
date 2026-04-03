@@ -61,6 +61,7 @@ from .table_continuity import merge_all_continuations
 from .display_tier_tagger import tag_display_tiers
 from .assemblers.brand_json import assemble_brand_json
 from .roadmap_validator import validate_roadmap
+from .training.learning_manager import write_full_learning, generate_learning_report
 from .fact_state_registry import FactStateRegistry
 from .fact_resolver import build_fact_registry, check_cross_field_sanity
 from .unmodeled_fact_store import UnmodeledFactStore
@@ -550,5 +551,19 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
             },
         },
     }
+
+    # ═════════��══════════════════════════════════════════════════════
+    # LEARNING WRITEBACK — persist what this brand taught
+    # Hard rule: no brand run is finished unless learning is written.
+    # ════════���═══════════════════════════════════════════════════════
+    brand_slug = bootstrap.get("entity", "unknown").lower().replace(" ", "-").replace("'", "").replace(",", "")[:40]
+    try:
+        learning_report = write_full_learning(brand_slug, result)
+        print(f"\n--- Learning written for {brand_slug} ---")
+        print(f"  Lane A: {learning_report.get('lane_a', {}).get('facts_captured', 0)} facts")
+        print(f"  Lane B: {learning_report.get('lane_b', {}).get('fields_normalized', 0)} fields")
+        print(f"  Recon: aligned={learning_report.get('reconciliation', {}).get('aligned', 0)}")
+    except Exception as e:
+        print(f"\n  ⚠️ Learning writeback failed: {str(e)[:100]}")
 
     return result

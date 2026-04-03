@@ -106,8 +106,21 @@ def build_all_engines(items: Dict[int, ItemSection],
 
     # ── Item 6: Ongoing Fee Engine ──
     # Unwrap ALL parser envelopes first. Never pass envelopes to brand output.
+    # General rule: when Items 5+6 share a page, Item 5's fee_rows may contain
+    # ongoing fees (royalty, rent) that belong to Item 6. Check both.
     i6 = parsed_items.get(6, {})
     fee_rows_raw = _plist(i6.get("fee_rows"))
+
+    # Fallback: check Item 5 fee_rows for ongoing fee types (royalty, rent, ad fund)
+    if not fee_rows_raw:
+        i5_rows = _plist(i5.get("fee_rows"))
+        for row in i5_rows:
+            raw = row.get("raw_cells", []) if isinstance(row, dict) else row
+            if isinstance(raw, list):
+                row_text = " ".join(str(c) for c in raw).lower()
+                if any(kw in row_text for kw in ["royalt", "% of gross", "% of net", "rent", "advertis", "marketing"]):
+                    fee_rows_raw.append(row)
+
     fee_rows_clean = _coerce_fee_rows(fee_rows_raw)
 
     # Run through engine_mapper for disambiguation
@@ -245,6 +258,44 @@ def build_all_engines(items: Dict[int, ItemSection],
     elif franchised_end or co_end:
         total_end = (franchised_end or 0) + (co_end or 0)
         total_basis = "derived_from_components"
+
+    # General rule: Systemwide outlet summary may be on a page assigned to Item 19
+    # when Items 19 and 20 are adjacent. If Item 20 has no systemwide total,
+    # check Item 19's parsed data for outlet tables.
+    if not total_end or total_end < 100:
+        i19_data = parsed_items.get(19, {})
+        fpr_tables = _plist(i19_data.get("fpr_tables"))
+        for tbl in fpr_tables:
+            if not isinstance(tbl, dict):
+                continue
+            cols = tbl.get("columns", [])
+            cols_text = " ".join(str(c) for c in cols).lower()
+            # Look for outlet-type table accidentally in Item 19
+            if "outlet" in cols_text or "net change" in cols_text:
+                for row_data in tbl.get("rows", []):
+                    cells = row_data.get("raw_cells", [])
+                    row_text = " ".join(str(c) for c in cells).lower()
+                    dollars = row_data.get("dollar_amounts", [])
+                    # Look for franchised/company/total rows with 2024 year
+                    if "2024" in row_text:
+                        vals = [v for v in (row_data.get("values") or []) if v and v > 0 and not (2000 <= v <= 2030)]
+                        if not vals and cells:
+                            import re as _re
+                            vals = [int(m.replace(",", "")) for m in _re.findall(r'(\d[\d,]+)', " ".join(str(c) for c in cells)) if m.replace(",", "").isdigit() and int(m.replace(",", "")) > 10 and not (2000 <= int(m.replace(",", "")) <= 2030)]
+                        end_val = vals[1] if len(vals) >= 2 else (vals[0] if vals else None)
+                        if end_val and end_val > 100:
+                            if "franchised" in row_text and not franchised_end:
+                                franchised_end = end_val
+                            elif "company" in row_text and not co_end:
+                                co_end = end_val
+                            elif "total" in row_text and not total_end:
+                                total_end = end_val
+                                total_basis = "cross_item_recovery"
+
+        # Recompute total if components found
+        if not total_end and (franchised_end or co_end):
+            total_end = (franchised_end or 0) + (co_end or 0)
+            total_basis = "derived_from_components"
 
     engines["item20_engine"] = {
         "total_end": total_end,

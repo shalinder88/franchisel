@@ -153,18 +153,28 @@ def parse_item05(section: ItemSection) -> Dict[str, Any]:
             "provenance": prov_base,
         }
 
-    # Fallback: if no table found, try to get franchise fee from text
+    # Fallback: if no table-based franchise fee found, try text extraction
+    # General rule: "$45,000 lump sum initial franchise fee" (amount BEFORE label)
+    # OR "initial franchise fee of $45,000" (amount AFTER label)
     if result["franchise_fee"]["state"] == EvidenceState.NOT_FOUND.value:
-        ff_match = re.search(
+        ff_patterns = [
+            # Amount before label: "pay a $45,000 ... franchise fee"
+            r'\$\s*([\d,]+(?:\.\d{2})?)\s+(?:lump\s+sum\s+)?(?:initial\s+)?franchise\s+fee',
+            # Label before amount: "franchise fee ... $45,000"
             r'(?:initial\s+)?franchise\s+fee.*?\$\s*([\d,]+(?:\.\d{2})?)',
-            text_lower
-        )
-        if ff_match:
-            amt = float(ff_match.group(1).replace(",", ""))
-            result["franchise_fee"] = {
-                "value": {"amount": amt},
-                "state": EvidenceState.PRESENT.value,
-                "provenance": prov_base,
-            }
+            # Generic: "initial fee of $X"
+            r'initial\s+fee\s+(?:of\s+)?\$\s*([\d,]+(?:\.\d{2})?)',
+        ]
+        for pattern in ff_patterns:
+            ff_match = re.search(pattern, text_lower, re.DOTALL)
+            if ff_match:
+                amt = float(ff_match.group(1).replace(",", ""))
+                if amt >= 100:  # sanity: must be at least $100
+                    result["franchise_fee"] = {
+                        "value": {"amount": amt},
+                        "state": EvidenceState.PRESENT.value,
+                        "provenance": prov_base,
+                    }
+                    break
 
     return result
