@@ -1,0 +1,83 @@
+{
+  "brand": "McDonald's",
+  "must_not_miss": [
+    {
+      "fact": "Total units: 13,559 (F:12,887, CO:672) as of 2024",
+      "source": "Item 20, Systemwide Outlet Summary, 2024 row",
+      "severity": "fatal",
+      "miss_class": "table_detection_miss"
+    },
+    {
+      "fact": "Traditional investment: $1,471,000-$2,728,000",
+      "source": "Item 7, Traditional format TOTAL row",
+      "severity": "fatal",
+      "miss_class": "engine_mapping_miss"
+    },
+    {
+      "fact": "Royalty: 4% or 5% of Gross Sales (dual rate)",
+      "source": "Item 6, service fee row",
+      "severity": "fatal",
+      "miss_class": "engine_mapping_miss"
+    },
+    {
+      "fact": "Advertising: not less than 4% of Gross Sales (OPNAD)",
+      "source": "Item 6, advertising contribution row",
+      "severity": "major",
+      "miss_class": "engine_mapping_miss"
+    },
+    {
+      "fact": "Initial franchise fee: $45,000",
+      "source": "Item 5, traditional franchise fee",
+      "severity": "fatal",
+      "miss_class": "normalization_miss"
+    },
+    {
+      "fact": "Rent-based model: base rent + percentage rent (8.5% or higher of Gross Sales)",
+      "source": "Item 6, rent structure",
+      "severity": "fatal",
+      "miss_class": "engine_mapping_miss"
+    },
+    {
+      "fact": "Item 19: avg gross sales $4,002,000 for 12,572 traditional restaurants",
+      "source": "Item 19, Table 1, All Traditional segment",
+      "severity": "fatal",
+      "miss_class": "table_detection_miss"
+    },
+    {
+      "fact": "No contractual renewal right — New Term Policy (Exhibit K) instead",
+      "source": "Item 17, Renewal section",
+      "severity": "major",
+      "miss_class": "discovery_lane_miss"
+    },
+    {
+      "fact": "Non-compete: 18 months, 10 miles after termination",
+      "source": "Item 17, post-term obligations",
+      "severity": "major",
+      "miss_class": "engine_mapping_miss"
+    },
+    {
+      "fact": "McDonald's controls real estate — franchisee leases from McDonald's",
+      "source": "Item 1 + Item 6 rent structure + Item 11",
+      "severity": "fatal",
+      "miss_class": "discovery_lane_miss"
+    },
+    {
+      "fact": "5 offering formats: Traditional, Satellite, STO, STR, BFL",
+      "source": "Item 1 + Item 7",
+      "severity": "major",
+      "miss_class": "discovery_lane_miss"
+    },
+    {
+      "fact": "Financial statements audited by Ernst & Young LLP (Exhibit A)",
+      "source": "Item 21 + Exhibit A",
+      "severity": "fatal",
+      "miss_class": "exhibit_followthrough_miss"
+    },
+    {
+      "fact": "System is 95% franchised, 5% McOpCo",
+      "source": "Item 1 system composition",
+      "severity": "major",
+      "miss_class": "discovery_lane_miss"
+    }
+  ]
+}

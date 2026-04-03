@@ -168,7 +168,18 @@ def locate_all_items(page_reads: List[PageRead],
     locations: Dict[int, Dict] = {}
 
     # ── Calculate TOC offset ──
-    offset = _calculate_toc_offset(page_reads, toc_map)
+    # If bootstrap already calibrated the TOC map (fddToPdfOffset applied),
+    # toc_map values are already PDF page numbers. Check by seeing if
+    # Item 1's TOC value is close to where we'd expect the first item.
+    max_toc = max(toc_map.values()) if toc_map else 0
+    min_toc = min(toc_map.values()) if toc_map else 0
+
+    # Heuristic: if all TOC values are reasonable PDF page numbers (>= 5, <= total),
+    # assume bootstrap already calibrated them. Otherwise calculate offset.
+    if toc_map and min_toc >= 5 and max_toc <= total_pages:
+        offset = 0  # TOC already in PDF page numbers (bootstrap calibrated)
+    else:
+        offset = _calculate_toc_offset(page_reads, toc_map)
 
     # ── Level 1: TOC-anchored localization ──
     # For each item in the TOC, jump to predicted page and confirm by content
@@ -177,7 +188,7 @@ def locate_all_items(page_reads: List[PageRead],
         if not toc_page:
             continue
 
-        # Predicted PDF page
+        # Predicted PDF page (toc_page may be 1-indexed PDF page or FDD page)
         predicted_idx = toc_page + offset - 1
 
         # Search in a window around the predicted page
@@ -297,26 +308,58 @@ def locate_all_items(page_reads: List[PageRead],
         except Exception:
             pass  # layout enhancement is optional, not required
 
-    # ── Enforce document order ──
+    # ── Handle multi-item pages (intra-page segmentation) ──
+    # General rule: Multiple items can start on the same page.
+    # McDonald's has Items 4+5+6 all on page 18.
+    # When items share a page, they share it — don't bump to next page.
+    # Mark them as sharing so the segmenter can split text within the page.
     sorted_items = sorted(locations.keys())
+
+    # Group items by start page
+    page_groups: Dict[int, List[int]] = {}
+    for item_num in sorted_items:
+        page_idx = locations[item_num]["start_page_idx"]
+        if page_idx not in page_groups:
+            page_groups[page_idx] = []
+        page_groups[page_idx].append(item_num)
+
+    # Mark shared-page items
+    for page_idx, items_on_page in page_groups.items():
+        if len(items_on_page) > 1:
+            for item_num in items_on_page:
+                locations[item_num]["shares_page_with"] = [n for n in items_on_page if n != item_num]
+                locations[item_num]["needs_intra_page_split"] = True
+
+    # Enforce document order — but allow shared pages
     prev_page = -1
     for item_num in sorted_items:
         loc = locations[item_num]
-        if loc["start_page_idx"] <= prev_page:
+        shares = loc.get("shares_page_with", [])
+        if loc["start_page_idx"] < prev_page and not shares:
+            # Out of order AND not sharing a page — adjust
             loc["start_page_idx"] = prev_page + 1
             loc["start_page_num"] = loc["start_page_idx"] + 1
             loc["locator_method"] += "_adjusted"
             loc["confidence"] = min(loc["confidence"], 0.40)
             loc["needs_review"] = True
-        prev_page = loc["start_page_idx"]
+        if loc["start_page_idx"] > prev_page:
+            prev_page = loc["start_page_idx"]
 
     # ── Set end pages ──
     for i, item_num in enumerate(sorted_items):
         if i + 1 < len(sorted_items):
             next_item = sorted_items[i + 1]
-            locations[item_num]["end_page_idx"] = locations[next_item]["start_page_idx"] - 1
+            next_start = locations[next_item]["start_page_idx"]
+            my_start = locations[item_num]["start_page_idx"]
+
+            if next_start == my_start:
+                # Shared page — both items end on the same page they start
+                locations[item_num]["end_page_idx"] = my_start
+            else:
+                locations[item_num]["end_page_idx"] = next_start - 1
         else:
             locations[item_num]["end_page_idx"] = total_pages - 1
+
         if locations[item_num]["end_page_idx"] < locations[item_num]["start_page_idx"]:
             locations[item_num]["end_page_idx"] = locations[item_num]["start_page_idx"]
 

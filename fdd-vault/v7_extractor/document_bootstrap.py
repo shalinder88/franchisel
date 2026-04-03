@@ -109,23 +109,89 @@ def build_bootstrap(page_reads: List[PageRead]) -> Dict[str, Any]:
             risk_flags.append(rn)
 
     # ══ TOC map ══
+    # General rule: TOC formats vary. Must handle:
+    #   "Item 1  Description ..... 5"  (Papa Johns style)
+    #   "1. The Franchisor...  1"       (McDonald's style)
+    #   "  1. Description .... 10"      (numbered dotted list)
     toc_map: Dict[int, int] = {}
     toc_text = "\n".join(p.text for p in toc_pages) if toc_pages else bootstrap_text
+
+    # Pattern 1: "Item N ... page" with dots
     for m in re.finditer(r'(?:ITEM|Item)\s+(\d+).*?\.{2,}\s*(\d+)', toc_text):
         n = int(m.group(1))
         p = int(m.group(2))
-        if 1 <= n <= 23 and 1 <= p <= len(page_reads):
+        if 1 <= n <= 23:
             toc_map[n] = p
 
+    # Pattern 2: "N. Description ... page" (numbered list without "Item")
+    if not toc_map:
+        for m in re.finditer(r'(?:^|\n)\s*(\d{1,2})\.\s+[A-Z][^.]*?\.{2,}\s*(\d+)', toc_text):
+            n = int(m.group(1))
+            p = int(m.group(2))
+            if 1 <= n <= 23:
+                toc_map[n] = p
+
+    # Pattern 3: "Item N\n Description" with page on separate line or after whitespace
+    if not toc_map:
+        for m in re.finditer(r'(?:ITEM|Item)\s+(\d+)\b.*?(?:\s{3,}|\t)(\d+)\s*$', toc_text, re.MULTILINE):
+            n = int(m.group(1))
+            p = int(m.group(2))
+            if 1 <= n <= 23:
+                toc_map[n] = p
+
+    # ══ Page offset calibration ══
+    # FDD page numbers != PDF page numbers. Detect offset from TOC + actual content.
+    fdd_to_pdf_offset = 0
+    if toc_map:
+        # Find Item 1's TOC page number and actual PDF page
+        toc_item1_page = toc_map.get(1)
+        if toc_item1_page:
+            # Search for "Item 1" heading in the PDF to find actual page
+            for pr in page_reads:
+                if re.search(r'(?:^|\n)\s*(?:ITEM|Item)\s+1[\s:\n]', pr.text[:200]):
+                    # Found it — compute offset
+                    fdd_to_pdf_offset = pr.page_num - toc_item1_page
+                    break
+
+        # Apply offset to all TOC entries
+        if fdd_to_pdf_offset != 0:
+            calibrated_map: Dict[int, int] = {}
+            for n, p in toc_map.items():
+                calibrated_p = p + fdd_to_pdf_offset
+                if 1 <= calibrated_p <= len(page_reads):
+                    calibrated_map[n] = calibrated_p
+            toc_map = calibrated_map
+
     # ══ Exhibit map ══
+    # General rule: Exhibit list formats vary. Must handle:
+    #   "Exhibit A – Financial Statements"  (Papa Johns style)
+    #   "A. Financial Statements"           (McDonald's style)
+    #   "A  Financial Statements"           (tabular layout)
     exhibit_map: Dict[str, str] = {}
-    exhibit_text = "\n".join(p.text for p in exhibit_list_pages) if exhibit_list_pages else bootstrap_text
+    exhibit_text = "\n".join(p.text for p in exhibit_list_pages) if exhibit_list_pages else ""
+    # Also include TOC pages since some FDDs list exhibits on the TOC continuation
+    if not exhibit_text:
+        exhibit_text = "\n".join(p.text for p in toc_pages) if toc_pages else bootstrap_text
+
+    # Pattern 1: "Exhibit A – Description" (with separator)
     for m in re.finditer(r'(?:EXHIBIT|Exhibit)\s+["\']?([A-Z](?:-?\d)?)["\']?\s*[-–—:]\s*(.+?)(?:\n|$)', exhibit_text):
         desc = m.group(2).strip()[:100]
-        # Reject false positives: descriptions that are too short, numeric, or look like TOC artifacts
         if len(desc) >= 3 and not re.match(r'^\d+\.?\s*[A-Z]?$', desc):
             exhibit_map[m.group(1)] = desc
-    # Also scan how-to-use page for exhibit references
+
+    # Pattern 2: "A. Description" (bare lettered list)
+    if not exhibit_map:
+        # Look for exhibit section header first
+        exhibit_section = re.search(r'(?:Exhibit|EXHIBIT)s?\s*\n((?:.*\n){1,40})', exhibit_text)
+        if exhibit_section:
+            section_text = exhibit_section.group(1)
+            for m in re.finditer(r'(?:^|\n)\s*([A-Z](?:-?\d)?)\.\s+(.+?)(?:\n|$)', section_text):
+                code = m.group(1)
+                desc = m.group(2).strip()[:100]
+                if len(desc) >= 3 and code not in exhibit_map:
+                    exhibit_map[code] = desc
+
+    # Pattern 3: Scan how-to-use pages
     for hp in howto_pages:
         for m in re.finditer(r'Exhibit\s+["\']?([A-Z](?:-?\d)?)["\']?\s*[-–—:]\s*(.+?)(?:\n|$)', hp.text):
             desc = m.group(2).strip()[:100]
@@ -152,6 +218,7 @@ def build_bootstrap(page_reads: List[PageRead]) -> Dict[str, Any]:
         "specialRisks": risk_flags,
         "tocMap": toc_map,
         "exhibitMap": exhibit_map,
+        "fddToPdfOffset": fdd_to_pdf_offset,
         "stateNoticePresent": state_notice_present,
         "stateNotices": list(set(state_names_noticed)),
     }

@@ -14,9 +14,11 @@ from ..models import ItemSection, Provenance, EvidenceState, TableMethod
 
 def _parse_int(text: str) -> Optional[int]:
     """Parse an integer from text, handling commas."""
-    m = re.search(r'([\d,]+)', text.strip())
+    m = re.search(r'(\d[\d,]*)', text.strip())
     if m:
-        return int(m.group(1).replace(",", ""))
+        cleaned = m.group(1).replace(",", "")
+        if cleaned:
+            return int(cleaned)
     return None
 
 

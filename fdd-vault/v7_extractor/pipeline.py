@@ -60,6 +60,7 @@ from .qa.contradiction_checks import check_contradictions, double_authenticate_p
 from .table_continuity import merge_all_continuations
 from .display_tier_tagger import tag_display_tiers
 from .assemblers.brand_json import assemble_brand_json
+from .roadmap_validator import validate_roadmap
 from .fact_state_registry import FactStateRegistry
 from .fact_resolver import build_fact_registry, check_cross_field_sanity
 from .unmodeled_fact_store import UnmodeledFactStore
@@ -134,6 +135,18 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         print(f"  Extensions: {extension_plan['required_extensions']}")
 
     # ════════════════════════════════════════════════════════════════
+    # ROADMAP VALIDATION — pre-segmentation gate
+    # ════════════════════════════════════════════════════════════════
+    print(f"\n--- Roadmap validation ---")
+    roadmap = validate_roadmap(bootstrap, total_pages)
+    print(f"  TOC: {roadmap['toc_status']} ({roadmap['toc_items_found']} items)")
+    print(f"  Exhibits: {roadmap['exhibit_list_status']} ({roadmap['exhibit_count']} exhibits)")
+    print(f"  Page offset: {roadmap['page_offset']} ({roadmap['page_offset_status']})")
+    print(f"  Trust: {roadmap['segmentation_trust']}")
+    for w in roadmap["warnings"]:
+        print(f"  ⚠️ {w}")
+
+    # ════════════════════════════════════════════════════════════════
     # PHASE 2: SECTION SEGMENTATION
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 2: Section segmentation ---")
@@ -144,7 +157,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
             # Content confirmation for critical items
             if n in (5, 6, 7, 18, 19, 20, 21):
                 conf = confirm_section_content(n, s.text)
-                conf_str = " ✓" if conf["confirmed"] else f" ⚠️{conf['reason'][:40]}"
+                conf_str = " ✓" if conf["confirmed"] else f" ⚠️{conf.get('confirmation_basis', conf.get('reason', ''))[:40]}"
             else:
                 conf_str = ""
             print(f"  Item {n:2d}: pages {s.start_page:>3}-{s.end_page:>3} | {s.text_length:6,} chars | {s.page_count} pages{conf_str}")
@@ -489,6 +502,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         "brand_tagged": brand_tagged,
         "document_classification": doc_class,
         "archetype": archetype,
+        "roadmap_validation": roadmap,
         "extension_plan": extension_plan,
         "document_package": doc_package,
         "document_graph": doc_graph.to_dict(),

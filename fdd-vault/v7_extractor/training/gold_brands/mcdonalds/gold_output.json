@@ -1,0 +1,46 @@
+{
+  "source_pdf": "638437-2025-McDonalds.pdf",
+  "brand": "McDonald's",
+  "archetype": "qsr_fast_food",
+  "entity": "McDonald's USA, LLC",
+
+  "totalUnits": 13559,
+  "franchisedUnits": 12887,
+  "companyOwnedUnits": 672,
+
+  "initialFranchiseFee": 45000,
+  "totalInvestmentLow": 1471000,
+  "totalInvestmentHigh": 2728000,
+
+  "royaltyRate": "4% or 5%",
+  "marketingFundRate": "4%",
+
+  "hasItem19": true,
+  "item19_avgRevenue": 4002000,
+  "item19_revenueType": "gross_sales",
+  "item19_unitsIncluded": 12572,
+
+  "item17": {
+    "initialTermYears": 20,
+    "renewalTermYears": null,
+    "renewalRight": false,
+    "newTermPolicy": true,
+    "curePeriodDays": 30,
+    "hasNonCompete": true,
+    "nonCompeteYears": 1.5,
+    "nonCompeteMiles": 10,
+    "mandatoryArbitration": null,
+    "disputeVenue": null
+  },
+
+  "item21": {
+    "hasAuditedFinancials": true,
+    "auditorName": "Ernst & Young LLP",
+    "financialExhibit": "A"
+  },
+
+  "offeringPaths": ["traditional", "satellite", "STO", "STR", "BFL"],
+  "specialRisks": ["out_of_state_dispute"],
+
+  "notes": "Rent-based model: franchisee pays rent to McDonald's (land+building), not typical royalty-only structure. Royalty is 4% for existing franchisees, 5% for new. No contractual renewal right — New Term Policy instead. McDonald's controls real estate. 95% franchised. Avg revenue $4M+."
+}

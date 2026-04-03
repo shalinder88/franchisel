@@ -41,6 +41,16 @@ def segment_items(page_reads: List[PageRead],
     # Step 2: Assemble sections from index
     items: Dict[int, ItemSection] = {}
 
+    # Identify shared pages for intra-page splitting
+    import re
+    shared_page_groups: Dict[int, List[int]] = {}
+    for item_num, loc in item_index.items():
+        if loc.get("needs_intra_page_split"):
+            page_idx = loc["start_page_idx"]
+            if page_idx not in shared_page_groups:
+                shared_page_groups[page_idx] = []
+            shared_page_groups[page_idx].append(item_num)
+
     for item_num, loc in item_index.items():
         start_idx = loc["start_page_idx"]
         end_idx = loc.get("end_page_idx", start_idx)
@@ -53,8 +63,24 @@ def segment_items(page_reads: List[PageRead],
         if not section_pages:
             continue
 
-        # Build section
+        # Build section text
         text = "\n".join(p.text for p in section_pages)
+
+        # ── Intra-page splitting ──
+        # When multiple items share a page, split text by "Item N" headings
+        if loc.get("needs_intra_page_split") and start_idx in shared_page_groups:
+            items_on_page = sorted(shared_page_groups[start_idx])
+            page_text = section_pages[0].text if section_pages else ""
+
+            # Find this item's text within the shared page
+            split_text = _split_shared_page(page_text, item_num, items_on_page)
+            if split_text is not None:
+                # Use only the split portion for shared page, plus any additional pages
+                if len(section_pages) > 1:
+                    text = split_text + "\n" + "\n".join(p.text for p in section_pages[1:])
+                else:
+                    text = split_text
+
         if len(text) > 60000:
             text = text[:60000]
 
@@ -80,3 +106,38 @@ def segment_items(page_reads: List[PageRead],
         )
 
     return items
+
+
+def _split_shared_page(page_text: str, target_item: int,
+                       items_on_page: List[int]) -> Optional[str]:
+    """Split a shared page's text to extract only the target item's portion.
+
+    Looks for "Item N" headings within the page text.
+    Returns the text belonging to target_item, or None if splitting fails.
+    """
+    import re
+
+    # Find all "Item N" heading positions in the text
+    heading_positions = []
+    for m in re.finditer(r'(?:^|\n)\s*(?:ITEM|Item)\s+(\d+)\b', page_text):
+        num = int(m.group(1))
+        if num in items_on_page:
+            heading_positions.append((num, m.start()))
+
+    if not heading_positions:
+        return None  # can't split — no headings found
+
+    # Sort by position
+    heading_positions.sort(key=lambda x: x[1])
+
+    # Find the target item's text range
+    for i, (num, pos) in enumerate(heading_positions):
+        if num == target_item:
+            start = pos
+            if i + 1 < len(heading_positions):
+                end = heading_positions[i + 1][1]
+            else:
+                end = len(page_text)
+            return page_text[start:end]
+
+    return None  # target item not found in headings
