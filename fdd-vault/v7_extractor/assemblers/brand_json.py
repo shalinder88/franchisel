@@ -23,7 +23,12 @@ def assemble_brand_json(engines: Dict[str, Any],
     fin = engines.get("financial_statement_engine", {})
 
     return {
-        "parentCompany": bootstrap.get("entity", ""),
+        # Identity — evidence first, bootstrap fallback
+        "entity": bootstrap.get("entity", ""),
+        "parentCompany": evidence.get("parentCompany") or None,
+        "entityType": evidence.get("entityType") or None,
+        "yearEstablished": evidence.get("yearEstablished") or None,
+        "publiclyTraded": evidence.get("publiclyTraded") or None,
         "description": bootstrap.get("description", ""),
         "issuanceDate": bootstrap.get("issueDate", ""),
         "amendmentDate": bootstrap.get("amendmentDate", ""),
@@ -42,11 +47,35 @@ def assemble_brand_json(engines: Dict[str, Any],
 
         "hasItem19": evidence.get("hasItem19") or False,
         "item19_avgRevenue": evidence.get("item19_avgRevenue"),
+        "medianGrossSales": evidence.get("medianGrossSales"),
+        "fprUnitCount": evidence.get("fprUnitCount"),
+
+        # Control and risk scalars from A→B
+        "exclusiveTerritory": evidence.get("exclusiveTerritory"),
+        "encroachmentRisk": evidence.get("encroachmentRisk"),
+        "operationsManual": evidence.get("operationsManual"),
+        "renewalAvailable": evidence.get("renewalAvailable"),
+        "personalGuaranty": evidence.get("personalGuaranty"),
+        "nonCompete": evidence.get("nonCompete"),
+        "financingAvailable": evidence.get("financingAvailable"),
+        "supplierRevenue": evidence.get("supplierRevenue"),
+
+        # Enriched objects
+        "systemComposition": evidence.get("systemComposition"),
+        "royaltyBasis": evidence.get("royaltyBasis"),
+        "royaltyDetails": evidence.get("royaltyDetails"),
+        "rentStructure": evidence.get("rentStructure"),
+        "costStructure": evidence.get("costStructure"),
+
+        # Derived facts (multi-source synthetics with provenance)
+        "totalRecurringEstimate": evidence.get("totalRecurringEstimate"),
+        "biggestCost": evidence.get("biggestCost"),
+        "netChange": evidence.get("netChange"),
 
         "unitEconomics": engines.get("item20_engine", {}),
 
         "item17": {
-            "initialTermYears": i17.get("initial_term_years"),
+            "initialTermYears": i17.get("initial_term_years") or evidence.get("initialTermYears"),
             "renewalTermYears": i17.get("renewal_term_years"),
             "curePeriodDays": i17.get("cure_period_days"),
             "hasNonCompete": i17.get("has_noncompete"),

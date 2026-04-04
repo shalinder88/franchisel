@@ -188,6 +188,13 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                     source_page=start_page, source_item=item_num,
                     importance=0.85, category="control",
                 )
+        # Encroachment: franchisor right to open/establish competing units
+        if item_num == 12 and re.search(r'(?:we|franchisor)\s+(?:may|can|ha(?:s|ve)\s+the\s+right|reserve).*?(?:establish|operate|open|develop|franchise)', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="Franchisor may establish competing units — encroachment risk",
+                source_page=start_page, source_item=item_num,
+                importance=0.9, category="risk",
+            )
 
         # ── RENEWAL AND TERM ──
         if any(kw in sent_lower for kw in ['renew', 'new term', 'extension', 'term of']):
@@ -248,11 +255,18 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                 )
 
         # ── TRAINING AND SUPPORT ──
-        if item_num == 11 and any(kw in sent_lower for kw in ['training', 'hamburger university', 'operations manual', 'field support']):
+        if item_num == 11 and any(kw in sent_lower for kw in ['training', 'hamburger university', 'field support']):
             fact_store.add(
                 sent_stripped[:300], why_important="Training or support provision",
                 source_page=start_page, source_item=item_num,
                 importance=0.6, category="control",
+            )
+        # Operations manual — broader capture (Items 11, 8, 17)
+        if item_num in (8, 11, 17) and re.search(r'(?:operations?\s+(?:and\s+training\s+)?manual|o\s*&\s*t\s+manual|confidential\s+manual)', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="Operations manual reference",
+                source_page=start_page, source_item=item_num,
+                importance=0.75, category="control",
             )
 
         # ── SUPPLIER RESTRICTIONS ──
@@ -261,6 +275,13 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                 sent_stripped[:300], why_important="Supplier restriction",
                 source_page=start_page, source_item=item_num,
                 importance=0.7, category="control",
+            )
+        # Supplier revenue — capture revenue/rebate received from suppliers (Item 8)
+        if item_num == 8 and re.search(r'(?:revenue|received|rebate|commission|payment).*?\$[\d,.]+', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="Revenue received from suppliers or affiliates",
+                source_page=start_page, source_item=item_num,
+                importance=0.8, category="economics",
             )
 
         # ── LITIGATION ──
@@ -280,7 +301,8 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
             )
 
         # ── ENTITY AND IDENTITY ──
-        if item_num == 1:
+        # Item 1 text often spills into Item 2 pages (page-level segmentation boundary)
+        if item_num in (1, 2):
             if any(kw in sent_lower for kw in ['incorporated', 'organized', 'formed', 'subsidiary', 'parent', 'predecessor']):
                 fact_store.add(
                     sent_stripped[:300], why_important="Entity identity or corporate structure",
@@ -292,6 +314,21 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                     sent_stripped[:300], why_important="Publicly traded status",
                     source_page=start_page, source_item=item_num,
                     importance=0.8, category="identity",
+                )
+            # Entity type: "We are a Delaware limited liability company" / "organized as a corporation"
+            if re.search(r'(?:we\s+are\s+a\s+|is\s+a\s+)(?:\w+\s+)?(?:limited\s+liability\s+company|corporation|llc)', sent_lower) or \
+               re.search(r'(?:organized|formed|incorporated)\s+(?:as\s+)?(?:a\s+)?(?:limited\s+liability|corporation|llc)', sent_lower):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Entity type and state of formation",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.75, category="identity",
+                )
+            # Year established: "In 1955, ... began granting franchises", "began franchising in 1955"
+            if re.search(r'(?:19|20)\d{2}', sent_stripped) and any(kw in sent_lower for kw in ['began', 'started', 'commenced', 'since', 'first franchi', 'has been franchi', 'established', 'granting franchise']):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Year franchise system established",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.75, category="identity",
                 )
 
         # ── EXHIBIT REFERENCES ──

@@ -109,32 +109,81 @@ def score_narrow_gold(gold_output: Dict, brand_output: Dict) -> Dict[str, Any]:
 
 # Map from manual gold item keys to where Killbill stores the data
 ITEM_ENGINE_MAP = {
-    "item1": {"engine": None, "brand_fields": ["parentCompany", "offeringPaths", "specialRisks"]},
+    "item1": {"engine": None, "brand_fields": [
+        "entity", "parentCompany", "entityType", "yearEstablished", "publiclyTraded",
+        "offeringPaths", "specialRisks", "systemComposition", "description",
+    ]},
     "item2": {"engine": None},
     "item3": {"engine": "litigation_engine"},
     "item4": {"engine": "bankruptcy_engine"},
-    "item5": {"engine": "initial_fee_engine"},
-    "item6": {"engine": "ongoing_fee_engine"},
-    "item7": {"engine": "initial_investment_engine"},
-    "item8": {"engine": "supplier_restrictions_engine"},
-    "item10": {"engine": None},
-    "item11": {"engine": "training_support_engine"},
-    "item12": {"engine": "territory_engine"},
+    "item5": {"engine": "initial_fee_engine", "brand_fields": [
+        "initialFranchiseFee", "refundable",
+    ]},
+    "item6": {"engine": "ongoing_fee_engine", "brand_fields": [
+        "royaltyRate", "marketingFundRate", "royaltyBasis", "royaltyDetails",
+        "rentStructure", "totalRecurringEstimate",
+    ]},
+    "item7": {"engine": "initial_investment_engine", "brand_fields": [
+        "totalInvestmentLow", "totalInvestmentHigh", "biggestCost",
+    ]},
+    "item8": {"engine": "supplier_restrictions_engine", "brand_fields": [
+        "supplierRevenue",
+    ]},
+    "item10": {"engine": None, "brand_fields": ["financingAvailable"]},
+    "item11": {"engine": "training_support_engine", "brand_fields": [
+        "operationsManual",
+    ]},
+    "item12": {"engine": "territory_engine", "brand_fields": [
+        "exclusiveTerritory", "encroachmentRisk",
+    ]},
     "item15": {"engine": "owner_participation_engine"},
     "item16": {"engine": None},
     "item17": {"engine": "contract_burden_engine", "also": "kill_switch_engine",
-               "brand_fields": ["item17"]},
+               "brand_fields": ["item17", "nonCompete", "personalGuaranty",
+                                "renewalAvailable", "crossDefault"]},
     "item18": {"engine": None},
     "item19": {"engine": "item19_engine",
-               "brand_fields": ["hasItem19", "item19_avgRevenue"]},
+               "brand_fields": ["hasItem19", "item19_avgRevenue", "medianGrossSales",
+                                "fprUnitCount", "costStructure"]},
     "item20": {"engine": "item20_engine",
-               "brand_fields": ["totalUnits", "franchisedUnits", "companyOwnedUnits"]},
+               "brand_fields": ["totalUnits", "franchisedUnits", "companyOwnedUnits",
+                                "netChange"]},
     "item21": {"engine": "financial_statement_engine",
                "brand_fields": ["item21"]},
 }
 
 # Fields to skip (meta, notes, confidence — not extraction targets)
 SKIP_FIELDS = {"confidence", "notes", "trend"}
+
+# Alias map: gold field name → brand/engine field name
+# Used when gold uses different naming than the extractor
+FIELD_ALIASES = {
+    "franchisorLegalName": "entity",
+    "yearFranchiseEstablished": "yearEstablished",
+    "yearFirstFranchised": "yearEstablished",
+    "businessDescription": "description",
+    "exclusiveTerritory": "exclusiveTerritory",
+    "franchisorMayCompete": "franchisorMayCompete",
+    "disclosesFinancialPerformance": "hasItem19",
+    "hasBankruptcy": "hasBankruptcy",
+    "noBankruptcyDisclosed": "noBankruptcyDisclosed",
+    "hasLitigation": "hasLitigation",
+    "ownerOperatorRequired": "ownerOperator",
+    "productRestrictions": "productRestrictions",
+    "hasPublicFigure": "hasPublicFigure",
+    "hasAuditedFinancials": "hasAuditedFinancials",
+    "auditorName": "auditorName",
+    "hasRequiredPurchases": "hasRequiredPurchases",
+    "operationsManual": "operationsManual",
+    "operationsManualName": "operationsManual",
+    "feeIsUniform": "feeIsUniform",
+    "refundable": "refundable",
+    "contractBurdenScore": "contractBurdenScore",
+    "lockInScore": "lockInScore",
+    "territoryProtectionScore": "territoryProtectionScore",
+    "channelConflictScore": "channelConflictScore",
+    "managementQualityScore": "managementQualityScore",
+}
 
 
 def score_manual_gold(manual_gold: Dict, extraction: Dict) -> Dict[str, Any]:
@@ -175,10 +224,13 @@ def score_manual_gold(manual_gold: Dict, extraction: Dict) -> Dict[str, Any]:
 
         # Merge brand-level fields
         for bf in mapping.get("brand_fields", []):
-            val = brand.get(bf)
-            if isinstance(val, dict):
+            if bf not in brand:
+                continue
+            val = brand[bf]
+            if isinstance(val, dict) and bf not in ("item17",):
+                # For nested dicts, merge into extractor_data (but not item17 which is special)
                 extractor_data.update(val)
-            elif val is not None:
+            if val is not None:
                 extractor_data[bf] = val
 
         # Score this item
@@ -191,12 +243,16 @@ def score_manual_gold(manual_gold: Dict, extraction: Dict) -> Dict[str, Any]:
                 continue
 
             item_total += 1
+            # Try alias if direct key not found
+            alias_key = FIELD_ALIASES.get(key, key)
             ext_val = extractor_data.get(key)
+            if ext_val is None and alias_key != key:
+                ext_val = extractor_data.get(alias_key)
 
             # Check if extractor has this field (any non-empty value)
+            # Note: False IS a valid extraction result (e.g., exclusiveTerritory=False)
             has_value = (ext_val is not None and ext_val != "" and
-                        ext_val != {} and ext_val != [] and
-                        ext_val is not False)
+                        ext_val != {} and ext_val != [])
 
             if has_value:
                 item_found += 1

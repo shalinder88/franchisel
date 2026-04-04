@@ -63,7 +63,7 @@ from .assemblers.brand_json import assemble_brand_json
 from .roadmap_validator import validate_roadmap
 from .training.learning_manager import write_full_learning, generate_learning_report
 from .fact_ontology import classify_all_facts, fact_coverage_report
-from .a_to_b_ingestion import ingest_typed_facts_into_evidence
+from .a_to_b_ingestion import ingest_typed_facts_into_evidence, compute_derived_facts
 from .table_router import route_all_tables, get_tables_for_item, TableContentType
 from .fact_state_registry import FactStateRegistry
 from .fact_resolver import build_fact_registry, check_cross_field_sanity
@@ -298,6 +298,16 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         print(f"  → {item['field']}: {item['value'][:40]} (from Lane A)")
 
     # ════════════════════════════════════════════════════════════════
+    # DERIVED FACTS: Multi-source synthetics from evidence
+    # ════════════════════════════════════════════════════════════════
+    derived = compute_derived_facts(evidence, engines)
+    if derived["derived_count"] > 0:
+        print(f"\n--- Derived facts ---")
+        print(f"  Computed: {derived['derived_count']}")
+        for d in derived["details"]:
+            print(f"  → {d['field']}: {d['value'][:50]} (from {', '.join(d['sources'][:3])})")
+
+    # ════════════════════════════════════════════════════════════════
     # LANE C: RECONCILIATION
     # Compares discovery findings against engine outputs
     # ════════════════════════════════════════════════════════════════
@@ -500,7 +510,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
                 print(f"    {qname}: {len(tasks)}")
 
     print(f"  Confidence: {confidence_summary['overall_label']} (score: {confidence_summary['overall_score']})")
-    print(f"  Entity: {brand['parentCompany'][:50]}")
+    print(f"  Entity: {(brand.get('entity') or '')[:50]}")
     print(f"  Units: {brand['totalUnits']} (F:{brand['franchisedUnits']}, CO:{brand['companyOwnedUnits']})")
     if brand.get('initialFranchiseFee'):
         print(f"  Fee: ${brand['initialFranchiseFee']:,}")

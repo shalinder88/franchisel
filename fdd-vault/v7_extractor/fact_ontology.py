@@ -290,8 +290,18 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
     },
     "year_established": {
         "family": FactFamily.IDENTITY, "tier": FactTier.TIER_2,
-        "engine_field": "yearEstablished", "source_items": [1],
-        "signals": [r'(?:began|started|commenced|since)\s+(?:franchis|offer).*?(\d{4})'],
+        "engine_field": "yearEstablished", "source_items": [1, 2],
+        "signals": [r'(?:began|started|commenced|since)\s+(?:franchis|offer|granting)',
+                    r'(?:established|has\s+been\s+franchis)',
+                    r'first\s+franchise',
+                    r'(?:19|20)\d{2}.*?(?:began|started|granting\s+franchise)'],
+    },
+    "entity_type": {
+        "family": FactFamily.IDENTITY, "tier": FactTier.TIER_2,
+        "engine_field": "entityType", "source_items": [1, 2],
+        "signals": [r'(?:we\s+are|is)\s+a\s+(?:\w+\s+)?(?:limited\s+liability|corporation|llc)',
+                    r'(?:organized|formed|incorporated)\s+(?:as\s+)?(?:a\s+)?(?:limited|corporation|llc)',
+                    r'(?:delaware|nevada|california|kentucky|new\s+york|florida)\s+(?:limited\s+liability|corporation|llc)'],
     },
 
     # === TIER 2: LITIGATION ===
