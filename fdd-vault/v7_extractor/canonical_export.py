@@ -792,6 +792,70 @@ def build_canonical_export(extraction_result: Dict[str, Any]) -> Dict[str, Any]:
     return export
 
 
+def build_provenance_audit(extraction_result: Dict[str, Any]) -> Dict[str, Any]:
+    """Build a provenance audit showing HOW each canonical field was filled.
+
+    Returns per-field:
+      fill_mode: surfaced_from_engine / captured_by_reader / derived / bootstrap / missing
+      source_lane: A, B, derived, bootstrap, or None
+      source_item: which FDD item the fact came from (if known)
+      non_null: True if the canonical field has a value
+
+    Use this to separate genuine extraction from canonical plumbing.
+    """
+    export = build_canonical_export(extraction_result)
+    brand = extraction_result.get("brand", {})
+    evidence_raw = extraction_result.get("evidence", {})
+    engines = extraction_result.get("engines", {})
+    ingestion = extraction_result.get("a_to_b_ingestion", {})
+
+    # Build ingested-field set (came from Lane A)
+    ingested_fields = set()
+    for item in ingestion.get("details", {}).get("ingested", []):
+        ingested_fields.add(item.get("field"))
+
+    audit = {}
+    counts = {"surfaced_from_engine": 0, "captured_by_reader": 0,
+              "derived": 0, "bootstrap": 0, "missing": 0}
+
+    for field_name, spec in FIELD_REGISTRY.items():
+        val = export.get(field_name)
+        has_value = val is not None and val != "" and val != {} and val != []
+        source = spec["source"]
+
+        if not has_value:
+            fill_mode = "missing"
+        elif source == "derived":
+            fill_mode = "derived"
+        elif source == "bootstrap":
+            fill_mode = "bootstrap"
+        elif source == "engine":
+            fill_mode = "surfaced_from_engine"
+        elif source in ("evidence", "evidence_or_engine"):
+            runtime_key = spec.get("runtime_key", field_name)
+            if runtime_key in ingested_fields or field_name in ingested_fields:
+                fill_mode = "captured_by_reader"  # Came through A→B from Lane A
+            else:
+                # Check if it was in Lane B engine originally
+                fill_mode = "surfaced_from_engine"
+        else:
+            fill_mode = "surfaced_from_engine"
+
+        audit[field_name] = {
+            "fill_mode": fill_mode,
+            "non_null": has_value,
+            "source": source,
+        }
+        counts[fill_mode] = counts.get(fill_mode, 0) + 1
+
+    return {
+        "audit": audit,
+        "counts": counts,
+        "total": len(FIELD_REGISTRY),
+        "non_null": sum(1 for a in audit.values() if a["non_null"]),
+    }
+
+
 def _resolve_engine_field(field_name: str, engines: Dict, brand: Dict) -> Any:
     """Resolve a single engine-sourced field."""
     eng19 = engines.get("item19_engine", {})
