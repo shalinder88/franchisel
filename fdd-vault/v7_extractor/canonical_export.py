@@ -545,6 +545,70 @@ FIELD_REGISTRY = {
         "null_means": "not_extracted",
         "gold_aliases": ["operationsManual"],
     },
+    # ── Support / Item 11 depth ──
+    "item11_preOpeningAssistance": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.training_support_engine.pre_opening_support non-empty",
+        "null_means": "not_extracted",
+        "gold_aliases": ["preOpeningAssistance"],
+    },
+    "item11_siteSelectionHelp": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.training_support_engine.site_selection",
+        "null_means": "not_extracted",
+        "gold_aliases": ["siteSelectionHelp"],
+    },
+    "item11_buildoutAssistance": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "derived from pre_opening_support containing buildout",
+        "null_means": "not_extracted",
+        "gold_aliases": ["buildoutAssistance"],
+    },
+    "item11_fieldSupport": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item11_fieldSupport",
+        "null_means": "not_extracted",
+        "gold_aliases": ["fieldSupport"],
+    },
+    "item11_advertisingCouncil": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item11_advertisingCouncil",
+        "null_means": "not_extracted",
+        "gold_aliases": ["advertisingCouncil"],
+    },
+    "item11_advertisingFundTransparency": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item11_advertisingFundTransparency",
+        "null_means": "not_extracted",
+        "gold_aliases": ["advertisingFundTransparency"],
+    },
+    "item11_nationalAdFund": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item11_nationalAdFund (fund name)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["nationalAdFund"],
+    },
+    "item11_technologyPlatform": {
+        "type": "Optional[str]",
+        "source": "engine",
+        "source_detail": "engine.training_support_engine.mandatory_systems joined",
+        "null_means": "not_extracted",
+        "gold_aliases": ["technologyPlatform"],
+    },
+    "item11_operationsManualConfidential": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item11_operationsManualConfidential",
+        "null_means": "not_extracted",
+        "gold_aliases": ["operationsManualConfidential"],
+    },
     "mandatoryRemodel": {
         "type": "Optional[bool]",
         "source": "evidence",
@@ -786,6 +850,21 @@ def _resolve_engine_field(field_name: str, engines: Dict, brand: Dict) -> Any:
         return str(val) if val is not None else None
     elif field_name == "item8_lockInScore":
         return eng8.get("lock_in_severity")
+
+    # Item 11 support engine fields
+    eng11 = engines.get("training_support_engine", {})
+    if field_name == "item11_preOpeningAssistance":
+        pre = eng11.get("pre_opening_support", [])
+        return bool(pre) if pre is not None else None
+    elif field_name == "item11_siteSelectionHelp":
+        ss = eng11.get("site_selection")
+        return ss is not None and ss != "none"
+    elif field_name == "item11_buildoutAssistance":
+        pre = eng11.get("pre_opening_support", [])
+        return any("buildout" in str(p) for p in pre) if pre else None
+    elif field_name == "item11_technologyPlatform":
+        sys_list = eng11.get("mandatory_systems", [])
+        return ", ".join(sys_list) if sys_list else None
 
     return brand.get(field_name)
 

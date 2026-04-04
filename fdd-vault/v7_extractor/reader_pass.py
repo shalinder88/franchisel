@@ -289,6 +289,38 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                 source_page=start_page, source_item=item_num,
                 importance=0.75, category="control",
             )
+        # Support depth: field support / regional offices
+        if item_num == 11 and re.search(r'(?:field\s+(?:support|consult|staff|office|represent)|regional\s+(?:office|manager|staff))', sent_lower):
+            fact_store.add(sent_stripped[:300],
+                why_important="FPR_FIELD:item11_fieldSupport",
+                source_page=start_page, source_item=item_num,
+                importance=0.7, category="control")
+        # Support depth: advertising cooperative / council
+        if item_num == 11 and re.search(r'(?:cooperativ|co.?op)\s+(?:advertis|marketing)', sent_lower):
+            fact_store.add(sent_stripped[:300],
+                why_important="FPR_FIELD:item11_advertisingCouncil",
+                source_page=start_page, source_item=item_num,
+                importance=0.7, category="economics")
+        # Support depth: national ad fund name (OPNAD, brand fund, etc.)
+        if item_num == 11 and re.search(r'(?:opnad|national\s+(?:advertis|marketing)\s+fund|brand\s+fund)', sent_lower):
+            m_fund = re.search(r'(opnad|national\s+(?:advertis|marketing)\s+fund|brand\s+fund)', sent_lower)
+            if m_fund:
+                fact_store.add(f"National ad fund: {m_fund.group(1).upper()}",
+                    why_important="FPR_FIELD:item11_nationalAdFund",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.7, category="economics")
+        # Support depth: ad fund transparency (same basis, audited, etc.)
+        if item_num == 11 and re.search(r'(?:same\s+basis|franchisee\s+and\s+(?:company|mcopco).*?(?:same|equal)|audit\w*\s+(?:the|our)\s+(?:fund|advertis))', sent_lower):
+            fact_store.add(sent_stripped[:300],
+                why_important="FPR_FIELD:item11_advertisingFundTransparency",
+                source_page=start_page, source_item=item_num,
+                importance=0.7, category="economics")
+        # Support depth: manual confidentiality
+        if item_num in (8, 11) and re.search(r'(?:confidential|proprietary|trade\s+secret).*?(?:manual|information|system)', sent_lower):
+            fact_store.add(sent_stripped[:300],
+                why_important="FPR_FIELD:item11_operationsManualConfidential",
+                source_page=start_page, source_item=item_num,
+                importance=0.7, category="control")
 
         # ── SUPPLIER RESTRICTIONS ──
         if item_num == 8 and any(kw in sent_lower for kw in ['approved supplier', 'designated supplier', 'must purchase', 'sole source', 'proprietary']):

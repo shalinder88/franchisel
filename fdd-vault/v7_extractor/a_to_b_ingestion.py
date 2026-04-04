@@ -64,6 +64,13 @@ INGESTION_POLICY = {
     "supplierRevenue": "fill",
     "refundable": "fill",
 
+    # ── Support / Item 11 depth scalars: fill-only ──
+    "item11_fieldSupport": "fill",
+    "item11_advertisingCouncil": "fill",
+    "item11_advertisingFundTransparency": "fill",
+    "item11_nationalAdFund": "fill",
+    "item11_operationsManualConfidential": "fill",
+
     # ── Item 19 depth scalars: fill-only ──
     "item19_reportingPeriod": "fill",
     "item19_measurementYear": "fill",
@@ -701,6 +708,35 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
                 for prefix in ['Ultimate parent: ', 'Publicly traded: ']:
                     txt = txt.replace(prefix, '')
                 return txt.strip()
+        return None
+
+    # ── Support / Item 11 depth fields ──
+    elif field == "item11_fieldSupport":
+        if re.search(r'(?:field\s+(?:support|consult|staff|office)|regional\s+(?:office|manager))', text_lower):
+            return True
+        return None
+
+    elif field == "item11_advertisingCouncil":
+        if re.search(r'(?:cooperativ|co.?op)\s+(?:advertis|marketing)', text_lower):
+            return True
+        return None
+
+    elif field == "item11_nationalAdFund":
+        m = re.search(r'national\s+ad\s+fund:\s+(.+)', text_lower)
+        if m:
+            return m.group(1).strip().upper()
+        if re.search(r'opnad', text_lower):
+            return "OPNAD"
+        return None
+
+    elif field == "item11_advertisingFundTransparency":
+        if re.search(r'(?:same\s+basis|franchisee\s+and\s+(?:company|mcopco).*?(?:same|equal))', text_lower):
+            return True
+        return None
+
+    elif field == "item11_operationsManualConfidential":
+        if re.search(r'(?:confidential|proprietary|trade\s+secret).*?(?:manual|information)', text_lower):
+            return True
         return None
 
     elif field == "mandatoryRemodel":
