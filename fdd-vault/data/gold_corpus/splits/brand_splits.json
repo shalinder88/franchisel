@@ -1,0 +1,38 @@
+{
+  "stress": {
+    "note": "Hard benchmark. Do not train from. Only test robustness.",
+    "brands": [
+      "mcdonalds"
+    ]
+  },
+  "development": {
+    "note": "10 brands for building extraction rules. Most training happens here.",
+    "brands": [
+      "chick-fil-a",
+      "jersey-mike-s",
+      "great-clips",
+      "planet-fitness",
+      "servpro",
+      "sweat440",
+      "ivybrook-academy",
+      "cupbop",
+      "home-halo",
+      "drybar"
+    ]
+  },
+  "tuning": {
+    "note": "3 brands for parameter tuning. Not for initial rule creation.",
+    "brands": [
+      "ziggis-coffee",
+      "i9-sports",
+      "hallmark-homecare"
+    ]
+  },
+  "holdout": {
+    "note": "2 brands never seen during development. Only for final evaluation.",
+    "brands": [
+      "cookie-advantage",
+      "grabbagreen"
+    ]
+  }
+}
