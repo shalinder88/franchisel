@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "fddId": "637974-2025",
+    "brandName": "Grabbagreen",
+    "franchisorLegalName": "MTY Franchising USA, Inc. dba Grabbagreen",
+    "fddYear": 2025,
+    "issuanceDate": "March 28, 2025",
+    "extractedDate": "2026-04-04",
+    "extractedBy": "human_verified_3pass",
+    "stateOfFiling": "Wisconsin",
+    "archetype": "healthy_fast_casual_under_multiband_platform",
+    "extractionTier": "gold",
+    "passesCompleted": 3,
+    "confidence": "high"
+  },
+
+  "item1": {
+    "franchisorLegalName": "MTY Franchising USA, Inc. dba Grabbagreen",
+    "entityType": "Tennessee corporation (survivor of 2019 merger)",
+    "principalAddress": "9311 E Via De Ventura, Scottsdale, AZ 85258",
+    "parentCompany": "MTY Franchising Inc. (MTY Canada)",
+    "ultimateParent": "MTY Food Group, Inc. (TSX listed)",
+    "publiclyTraded": true,
+    "publicExchange": "Toronto Stock Exchange",
+    "predecessors": [
+      {"name": "Grabbagreen Franchising, LLC", "role": "original_franchisor", "franchisingSince": "April 2015"},
+      {"name": "Eat Clean Holdings, LLC", "role": "prior_owner"},
+      {"name": "The Extreme Pita Franchising USA, Inc.", "role": "pre_merger_entity"}
+    ],
+    "affiliates": [
+      {"name": "Kahala Management, L.L.C.", "role": "administrative_support", "services": "admin, legal, accounting, sales, POS support, real estate, marketing"},
+      {"name": "Neptune Equipment Services, LLC", "role": "approved_supplier", "products": "equipment, menu boards, signage, smallwares"},
+      {"name": "MTY Food Group, Inc.", "role": "ultimate_parent"},
+      {"name": "MTY Franchising Inc.", "role": "direct_parent"}
+    ],
+    "affiliateConceptCount": "50+",
+    "businessDescription": "Quick service restaurants selling healthy food, juice, smoothies, and related products",
+    "yearFranchiseEstablished": 2015,
+    "yearCurrentFranchisorAcquired": 2018,
+    "systemComposition": {"franchisedUnits": 4, "companyOwnedUnits": 0, "asOfDate": "November 30, 2024"},
+    "specialRisks": ["spousal_liability"]
+  },
+
+  "item3": {
+    "hasLitigation": true,
+    "litigationType": "affiliate_franchisor_vs_franchisee",
+    "recentCases": [
+      {"type": "breach_of_contract", "state": "Illinois", "party": "Kahala Franchising vs franchisee"},
+      {"type": "forcible_entry_and_detainer", "state": "Iowa", "party": "Kahala Franchising vs franchisee"}
+    ],
+    "litigationNote": "Substantial legacy and affiliate litigation history. Cases are affiliate-level (Kahala Franchising), not brand-level operating metrics.",
+    "confidence": "high"
+  },
+
+  "item4": {
+    "hasBankruptcy": false,
+    "noBankruptcyDisclosed": true,
+    "confidence": "high"
+  },
+
+  "item5": {
+    "initialFranchiseFee": 30000,
+    "feeStructure": {
+      "firstTraditional": 30000,
+      "subsequentTraditional": 20000,
+      "firstNonTraditional": 7500,
+      "subsequentNonTraditional": 5000,
+      "militaryDiscount": "20%",
+      "nonprofitDiscount": "20% for 501(c)(3)"
+    },
+    "productLicenseFee": {"low": 2500, "high": 5000, "note": "optional"},
+    "refundable": false,
+    "feeIsUniform": false,
+    "confidence": "high"
+  },
+
+  "item6": {
+    "royaltyRate": "6% of weekly gross sales",
+    "royaltyMinimum": {"traditional": "$400/week", "nonTraditional": "none"},
+    "royaltyBasis": "Gross Sales",
+    "dualFormula": true,
+    "dualFormulaNote": "Greater of 6% of weekly gross sales OR $400/week for traditional units",
+    "advertisingFundRate": "1% of gross sales",
+    "advertisingFundAudited": false,
+    "advertisingFundNote": "No obligation to spend in franchisee market area. Held in general accounts.",
+    "stateSurcharge": {"amount": "up to $10/week", "currentStates": ["New York"]},
+    "breachingRoyalty": "Greater of 3x fixed royalty or up to 18% of gross sales for at least 14 days",
+    "otherFees": [
+      {"name": "Renewal fee", "amount": "50% of then-current initial franchise fee"},
+      {"name": "Transfer fee (full)", "amount": 10000},
+      {"name": "Relocation fee", "amount": 500},
+      {"name": "Document administration fee", "amount": 500},
+      {"name": "Annual meeting registration", "amount": "up to $1,000"},
+      {"name": "Late report fee", "amount": "$100 per report"},
+      {"name": "Late payment fee", "amount": "$50 plus default-rate interest"},
+      {"name": "Data polling fee", "amount": "up to $75/month"},
+      {"name": "Management fee (if franchisor assumes)", "amount": "6% of gross sales plus direct costs"}
+    ],
+    "confidence": "high"
+  },
+
+  "item7": {
+    "totalInvestmentLow": 283500,
+    "totalInvestmentHigh": 626575,
+    "nonTraditionalInvestmentLow": 225500,
+    "nonTraditionalInvestmentHigh": 489075,
+    "investmentNote": "Does not include real estate costs and/or rent except initial security deposit",
+    "depositoryAccount": 3000,
+    "dataFees": "up to $75/month",
+    "additionalFundsFirstThreeMonths": {"low": 15000, "high": 20000},
+    "confidence": "high"
+  },
+
+  "item8": {
+    "hasRequiredPurchases": true,
+    "requirementType": "approved_suppliers_only",
+    "franchisorIsDirectSupplier": false,
+    "franchisorIsDirectSupplierNote": "MTY USA says it is not a supplier",
+    "affiliateSuppliers": [
+      {"name": "Neptune Equipment Services, LLC", "products": "equipment, menu boards, furniture, wall graphics, smallwares"},
+      {"name": "Kahala Management, L.L.C.", "services": "POS help-desk phone support (sole approved provider)"}
+    ],
+    "newProductRolloutWindow": "60 days",
+    "operationalVendorsFreeChoice": true,
+    "operationalVendorNote": "Exterminators, refrigeration service, refuse removal can be chosen freely",
+    "confidence": "high"
+  },
+
+  "item12": {
+    "exclusiveTerritory": false,
+    "territoryType": "nonexclusive_with_protected_area_and_reserved_rights",
+    "protectedAreaExists": true,
+    "protectedAreaROFR": true,
+    "protectedAreaNote": "Franchise agreement says non-exclusive, no territorial protection. But Item 12 uses 'Protected Territory' language and gives ROFR. Franchisor reserves all rights including other concepts, other channels, selling to customers anywhere including protected territory.",
+    "franchisorMayCompete": true,
+    "franchisorCompeteDetails": "May place other Grabbagreen units, other concepts, other channels, sell goods/services anywhere including protected territory",
+    "onlineSalesReserved": true,
+    "onlineSalesDetails": "Franchisee may not sell through internet or alternative channels except through approved franchise system website",
+    "encroachmentRisk": "high",
+    "encroachmentNote": "Despite 'protected territory' language, franchisor retains broad reserved rights making protection largely nominal",
+    "confidence": "high"
+  },
+
+  "item17": {
+    "term": {
+      "initialTermYears": 10,
+      "termNote": "10 years if franchisee owns property or leases directly. Sublease term if subleasing from MTY/affiliate."
+    },
+    "renewal": {
+      "renewalAvailable": true,
+      "renewalCount": 1,
+      "renewalTermYears": 5,
+      "renewalConditions": "Not in default, meets conditions",
+      "materiallyDifferentTermsOnRenewal": true,
+      "renewalNote": "Renewal agreement can contain materially different terms including higher royalty and advertising fees"
+    },
+    "transfer": {
+      "transferAllowed": true,
+      "franchisorApprovalRequired": true,
+      "rightOfFirstRefusal": true
+    },
+    "nonCompete": {
+      "duringTerm": true,
+      "postTermYears": 2,
+      "postTermMiles": 10,
+      "postTermNote": "No competing business for 2 years within 10 miles of another Grabbagreen restaurant"
+    },
+    "personalGuaranty": true,
+    "spousalGuaranty": true,
+    "spousalGuarantyNote": "Spouse must sign Guaranty of Franchise Agreement and Non-Disclosure/Non-Competition Agreement",
+    "confidence": "high"
+  },
+
+  "item19": {
+    "hasItem19": false,
+    "disclosesFinancialPerformance": false,
+    "fprNote": "Franchisor does not make representations about future financial performance or past performance of company-owned or franchised outlets",
+    "confidence": "high"
+  },
+
+  "item20": {
+    "totalUnits": 4,
+    "franchisedUnits": 4,
+    "companyOwnedUnits": 0,
+    "projectedNewFranchised": 0,
+    "projectedNewCompanyOwned": 0,
+    "signedNotOpened": 0,
+    "systemTrajectory": "stagnant_very_small",
+    "systemNote": "Only 4 open franchised units. Zero projected openings. Non-expanding system.",
+    "confidentialityWarning": "Some current/former franchisees may have signed clauses restricting open discussion of experience",
+    "confidence": "high"
+  },
+
+  "item21": {
+    "hasAuditedFinancials": true,
+    "financialExhibit": "V",
+    "materialLeaseNote": "Material operating lease liabilities and expected sublease income. System uses affiliate-held master leases and subleases.",
+    "confidence": "high"
+  },
+
+  "stateAddenda": {
+    "maryland": {
+      "materialChange": true,
+      "feesDeferredUntilPreOpeningComplete": true,
+      "advertisingAccountingRight": true,
+      "disputeRightsModified": true,
+      "note": "All initial fees and payments deferred until franchisor completes pre-opening obligations"
+    },
+    "indiana": {
+      "materialChange": true,
+      "antiWaiverProtections": true,
+      "forumLawModified": true,
+      "waitingPeriod": "10 days before signing or payment"
+    }
+  },
+
+  "extractorLearnings": {
+    "universalRules": [
+      "fprAvailable=false must hard-stop any revenue/profit fill from Item 19",
+      "Territory needs richer state than boolean: nonexclusive_with_protected_area_and_reserved_rights",
+      "Royalty must support dual formula: % of sales plus minimum weekly floor",
+      "Fee model must support state surcharge, breaching royalty, annual meeting debit, data polling, document admin, relocation, renewal, transfer fees",
+      "Supplier model must split franchisor-not-supplier from affiliate-suppliers",
+      "State addenda must be first-class because Maryland materially changes payment timing",
+      "Item 20 should capture projected_openings=zero which is buyer-relevant",
+      "Guarantee logic must capture spousal signature and entity-owner guaranties"
+    ]
+  }
+}
