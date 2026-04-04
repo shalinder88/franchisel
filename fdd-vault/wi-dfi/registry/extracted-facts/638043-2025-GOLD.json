@@ -1,0 +1,422 @@
+{
+  "meta": {
+    "fddId": "638043-2025",
+    "brandName": "Cupbop",
+    "franchisorLegalName": "Cupbop Franchise, LLC",
+    "fddYear": 2025,
+    "issuanceDate": "March 26, 2025",
+    "extractedDate": "2026-04-04",
+    "extractedBy": "human_verified_4pass",
+    "stateOfFiling": "Wisconsin",
+    "archetype": "fast_casual_korean_bbq",
+    "extractionTier": "gold",
+    "passesCompleted": 4,
+    "confidence": "high",
+    "unresolvedItems": ["item20_tables_1_4_full", "item19_first_table_full_notes", "some_2024_balance_sheet_ocr"]
+  },
+
+  "item1": {
+    "franchisorLegalName": "Cupbop Franchise, LLC",
+    "entityType": "Utah limited liability company",
+    "entityHistory": "Formed November 14, 2014, converted to LLC effective December 31, 2016",
+    "principalAddress": null,
+    "parentCompanies": ["Gold Light Holdings LLC", "MAK Holdings LLC"],
+    "publiclyTraded": false,
+    "entityFormationYear": 2014,
+    "yearFranchiseEstablished": 2017,
+    "affiliateOperatingRoots": 2013,
+    "firstStorefrontViaAffiliate": "May 2016",
+    "nonTraditionalVenues": "food courts, arenas, stadiums since March 2014",
+    "predecessors": [],
+    "affiliates": [
+      {"name": "Cupbop Co.", "role": "parent_affiliate_licensor_supplier", "products": "proprietary sauces, marinades, proteins, branded paper products", "licensesMarksToFranchisor": true},
+      {"name": "Gold Light Holdings LLC", "role": "parent_entity"},
+      {"name": "MAK Holdings LLC", "role": "parent_entity"}
+    ],
+    "businessDescription": "Korean-style barbecue rice cups, salads, chicken wings, potstickers, and related food/beverage. Physical storefront and mobile food truck formats. Typically strip centers or free-standing sites with carry-out, catering, some on-premises dining.",
+    "businessModelType": "fast_casual_storefront_plus_food_truck",
+    "typicalSize": "1,200-2,000 sq ft",
+    "concessionVenues": ["Vivint Smart Home Arena", "Rice-Eccles Stadium", "LaVell Edwards Stadium"],
+    "leadership": [
+      {"name": "Junghun Song", "title": "Founder/CEO", "since": 2013},
+      {"name": "Dok Kwon", "title": "COO", "since": 2019},
+      {"name": "Yeiri Kim", "title": "Marketing", "since": "early years"},
+      {"name": "Mike Penn", "title": "Franchise Operations/Development", "since": null}
+    ],
+    "founderLed": true,
+    "specialRisks": ["out_of_state_dispute_utah", "supplier_control_heavy", "sales_performance_required"],
+    "michiganNotice": true,
+    "confidence": "high"
+  },
+
+  "item3": {
+    "hasLitigation": true,
+    "unresolvedNote": "Item 3 content not fully surfaced",
+    "confidence": "medium"
+  },
+
+  "item4": {
+    "hasBankruptcy": false,
+    "noBankruptcyDisclosed": true,
+    "priorPassNote": "Prior lightweight pass marked hasBankruptcy=true, corrected",
+    "confidence": "medium"
+  },
+
+  "item5": {
+    "initialFranchiseFee": 40000,
+    "additionalRestaurantFee": 30000,
+    "areaDevelopmentMinimum": 2,
+    "areaDevelopmentFeeRange": {"low": 160000, "high": 610000, "note": "for 5-20 restaurants"},
+    "openingInventoryFromAffiliate": {"low": 1250, "high": 2000, "source": "Cupbop Co."},
+    "refundable": false,
+    "refundNote": "Fully earned and non-refundable",
+    "feeIsUniform": false,
+    "confidence": "high"
+  },
+
+  "item6": {
+    "royaltyRate": "6% of monthly Gross Sales",
+    "royaltyBasis": "Gross Sales",
+    "royaltyPayment": "monthly by 10th of following month",
+    "advertisingFund": {"current": "2% of monthly Gross Sales", "maximum": "4.5%"},
+    "advertisingCooperative": {"current": "not assessed", "maximum": "2%"},
+    "advertisingCapTotal": "6.5% of Gross Sales (local + fund + cooperative combined)",
+    "autoDebit": true,
+    "autoDebitEstimation": "120% of last royalty and fund if franchisee fails to report",
+    "grossSalesDefinition": {
+      "includes": ["all restaurant revenue", "off-premise/catering/delivery", "gift card redemption revenue"],
+      "excludes": ["taxes", "refunds", "gift card sales/issuance"],
+      "giftCardProgram": "mandatory participation in designated programs"
+    },
+    "localAdvertising": {"current": "~0.5% of Gross Sales", "note": "can increase"},
+    "advertisingSplit2024": {"production": "31%", "placement": "29%", "administration": "40%"},
+    "otherFees": [
+      {"name": "Extra/repeat training", "amount": "variable"},
+      {"name": "Additional assistance", "amount": "daily rates"},
+      {"name": "Successor franchise fee (renewal)", "amount": 10000},
+      {"name": "Transfer fee", "amount": 10000, "developmentRights": "additional per undeveloped right"},
+      {"name": "Relocation fee", "amount": 10000},
+      {"name": "Annual meeting fee", "amount": "up to $2,500"},
+      {"name": "Noncompliance fees", "amount": "variable"},
+      {"name": "Late fees/interest", "amount": "variable"},
+      {"name": "Audit costs", "amount": "variable"},
+      {"name": "Management fee (step-in)", "amount": "variable"},
+      {"name": "Indemnification", "amount": "as incurred"},
+      {"name": "De-identification costs", "amount": "as incurred"}
+    ],
+    "confidence": "high"
+  },
+
+  "item7": {
+    "totalInvestmentLow": 296400,
+    "totalInvestmentHigh": 664400,
+    "toFranchisor": {"low": 41250, "high": 42000},
+    "lineItems": [
+      {"item": "Initial franchise fee", "low": 40000, "high": 40000},
+      {"item": "Training travel/living", "low": 1000, "high": 5000},
+      {"item": "Real estate/rent/security", "low": 5000, "high": 15000},
+      {"item": "Leasehold improvements/furniture/fixtures/equipment", "low": 180000, "high": 475000},
+      {"item": "Grand opening advertising", "low": 10000, "high": 10000},
+      {"item": "Opening inventory/supplies", "low": 13000, "high": 15000},
+      {"item": "POS system", "low": 2500, "high": 5000},
+      {"item": "Accounting software (QuickBooks Online)", "low": 200, "high": 1000},
+      {"item": "Office equipment/supplies", "low": 3000, "high": 5000},
+      {"item": "Signage", "low": 10000, "high": 16000},
+      {"item": "Utilities/deposits", "low": 1500, "high": 6500},
+      {"item": "Licenses/permits", "low": 500, "high": 1500},
+      {"item": "Insurance", "low": 400, "high": 600},
+      {"item": "Dues/subscriptions", "low": 300, "high": 800},
+      {"item": "Professional fees", "low": 2000, "high": 5000},
+      {"item": "Additional funds (3 months)", "low": 27000, "high": 63000}
+    ],
+    "requiredAccountingSoftware": "QuickBooks Online (in place 60 days before opening)",
+    "grandOpeningTiming": "first 90-120 days after opening",
+    "financingOffered": false,
+    "confidence": "high"
+  },
+
+  "item8": {
+    "hasRequiredPurchases": true,
+    "requirementType": "heavy_franchisor_and_affiliate_control",
+    "restrictionIntensity": "high",
+    "proprietaryProducts": {
+      "supplier": "Cupbop Co. (affiliate)",
+      "products": "proprietary sauces, marinades, proteins, branded paper products"
+    },
+    "otherRequiredFromApproved": ["food items", "non-food items", "branded/packaged items", "equipment", "systems"],
+    "supplierApprovalProcess": {
+      "requirements": ["samples", "specs", "financials", "references", "site inspections/testing"],
+      "reviewFee": "tied to reasonable cost"
+    },
+    "supplierEconomics": {
+      "franchisorMayProfit": true,
+      "franchisorRevenue2024": 2030000,
+      "franchisorProductSaleRevenue": 0,
+      "affiliateRevenueFromFranchisees2024": 36920
+    },
+    "insuranceBurden": {
+      "propertyInsurance": true,
+      "generalLiability": "$2,000,000 per occurrence / $2,000,000 aggregate per location",
+      "businessInterruption": "up to 12 months",
+      "workersComp": true,
+      "employerLiability": true,
+      "canChangeRequirements": true
+    },
+    "confidence": "high"
+  },
+
+  "item10": {
+    "offersDirectFinancing": false,
+    "offersIndirectFinancing": false,
+    "confidence": "high"
+  },
+
+  "item11": {
+    "preOpeningAssistance": true,
+    "preOpeningSupport": ["site criteria", "site review", "lease approval", "buildout standards/specs", "food product specs", "manuals/standards access", "grand opening guidance", "training"],
+    "postOpeningSupport": {
+      "firstRestaurant": "~24 hours representative support",
+      "secondRestaurant": "~16 hours",
+      "thirdAndLater": "~8 hours",
+      "ongoing": "recommendations, manual updates, optional additional training"
+    },
+    "trainingProgram": {
+      "duration": "~14 days",
+      "classroomHours": 20.5,
+      "onTheJobHours": 95,
+      "totalHours": 115.5,
+      "includedAttendees": 2,
+      "subjects": ["system orientation", "customer service", "payroll/royalty/fund/admin", "POS and delivery systems", "vendors and equipment", "recipe and food safety", "store maintenance", "cleaning", "opening/closing", "ordering", "inventory/storage"]
+    },
+    "siteTimeline": {"estimated": "6-9 months", "siteApprovalDeadline": "120 days", "openingDeadline": "16 months", "consequence": "default/termination"},
+    "operationsManual": true,
+    "operationsManualExhibit": "E",
+    "requiredAccountingSoftware": "QuickBooks Online",
+    "confidence": "high"
+  },
+
+  "item12": {
+    "exclusiveTerritory": false,
+    "territoryType": "protected_area_not_exclusive",
+    "protectedAreaExists": true,
+    "protectedAreaNote": "Restaurants granted protected territory around authorized location, size varies by population density. Cupbop will not place another Cupbop restaurant inside during term.",
+    "nonExclusiveNote": "Franchisee does not receive exclusive territory. May face competition from other franchisees, company-owned outlets, or other channels.",
+    "onlineDeliveryReserved": true,
+    "onlineDeliveryNote": "Protected territory does not give rights to online delivery orders. May be fulfilled by Cupbop, affiliates, another franchisee, or approved delivery provider.",
+    "cateringLimits": "Limited to protected territory and possibly adjacent approved area not intruding on another franchisee",
+    "nonTraditionalVenuesReserved": true,
+    "franchisorMayCompete": true,
+    "encroachmentRisk": "moderate_to_high",
+    "salesPerformanceRequirement": {
+      "threshold": "50% of trailing 12-month national restaurant average",
+      "startsAfter": "year 2",
+      "failurePeriod": "2 years",
+      "consequence": "default, franchisor may terminate",
+      "note": "Converts territory into performance-contingent right"
+    },
+    "confidence": "high"
+  },
+
+  "item17": {
+    "nonCurableDefaults": [
+      "Failure to secure approved site within 120 days",
+      "Failure to open within 16 months",
+      "Opening before written approval",
+      "Failure to complete training",
+      "Abandonment",
+      "Unapproved transfers",
+      "Material misrepresentations",
+      "Felony convictions",
+      "Dishonest or unethical conduct",
+      "Unauthorized use/disclosure of manuals or confidential information",
+      "Failure to pay taxes",
+      "Understating Gross Sales",
+      "Violating employee recruiting/hiring restrictions",
+      "Repeated defaults",
+      "Bankruptcy/receivership",
+      "Anti-terrorism law violations",
+      "Defaults under other agreements with Cupbop or affiliates"
+    ],
+    "postTerminationObligations": ["pay outstanding amounts", "de-identify premises", "assign phone numbers", "return confidential information", "possible liquidated damages"],
+    "renewal": {
+      "type": "successor_franchise",
+      "noticeWindow": "180-220 days before expiration",
+      "conditions": ["not in default", "possibly remodel/relocate to current standards", "sign then-current agreements (may differ materially)", "sign general releases"],
+      "fee": 10000,
+      "franchisorConsent": "will not unreasonably withhold if conditions met"
+    },
+    "transfer": {
+      "transferAllowed": true,
+      "franchisorApprovalRequired": true,
+      "conditions": ["full compliance", "all amounts paid", "reports/financials submitted", "transferee assumption", "then-current agreement", "upgrade to current standards", "training completion"],
+      "fee": 10000,
+      "developmentRightsAdditionalFee": "per undeveloped restaurant right"
+    },
+    "guaranty": {
+      "threshold": "5% or more equity",
+      "scope": "individual, joint, and several liability",
+      "defensesWaived": true,
+      "governingLaw": "Utah"
+    },
+    "nonCompete": {
+      "duringTerm": true,
+      "postTermYears": 2,
+      "postTermRadius": "20 miles from premises AND 20 miles from any other Cupbop restaurant in operation or under construction",
+      "scope": "managers and certain owner-level individuals"
+    },
+    "confidence": "high"
+  },
+
+  "item19": {
+    "hasItem19": true,
+    "disclosesFinancialPerformance": true,
+    "table1_companyOwned": {
+      "restaurants": 26,
+      "excludes": "2 under 1 year, 1 seasonal university location",
+      "overallAvg": 794003,
+      "overallMedian": 731325,
+      "overallHigh": 1585417,
+      "overallLow": 458400,
+      "metOrExceededAvgPct": 38.4,
+      "metOrExceededMedianPct": 50.0,
+      "tiers": [
+        {"range": ">$925K", "stores": 7, "avg": 1112921, "median": 1040690, "high": 1585417, "low": 926046},
+        {"range": "$725-925K", "stores": 7, "avg": 804118, "median": 783687, "high": 885524, "low": 729126},
+        {"range": "$600-725K", "stores": 6, "avg": 667435, "median": 665948, "high": 723350, "low": 612422},
+        {"range": "<$600K", "stores": 6, "avg": 536699, "median": 546570, "high": 575285, "low": 458400}
+      ]
+    },
+    "table2_franchised": {
+      "restaurants": 24,
+      "excludes": "6 under 1 year, 3 closed before Dec 31 2024",
+      "overallAvg": 658208,
+      "overallMedian": 669260,
+      "overallHigh": 1142310,
+      "overallLow": 347132,
+      "metOrExceededAvgPct": 54.2,
+      "metOrExceededMedianPct": 50.0,
+      "tiers": [
+        {"range": ">$885K", "stores": 6, "avg": 940911, "median": 917963, "high": 1142310, "low": 832590},
+        {"range": "$725-885K", "stores": 6, "avg": 738251, "median": 738543, "high": 818983, "low": 676993},
+        {"range": "$550-725K", "stores": 6, "avg": 552707, "median": 555049, "high": 661528, "low": 452409},
+        {"range": "<$550K", "stores": 6, "avg": 400962, "median": 408782, "high": 434138, "low": 347132}
+      ]
+    },
+    "table3_combined": {
+      "restaurants": 50,
+      "overallAvg": 728821,
+      "overallMedian": 710250,
+      "overallHigh": 1585417,
+      "overallLow": 347132,
+      "metOrExceededAvgPct": 48.0,
+      "metOrExceededMedianPct": 50.0,
+      "tiers": [
+        {"range": ">$885K", "stores": 13, "avg": 1042333, "median": 961307, "high": 1585417, "low": 885524},
+        {"range": "$700-885K", "stores": 12, "avg": 775819, "median": 775256, "high": 849197, "low": 723350},
+        {"range": "$550-700K", "stores": 13, "avg": 631223, "median": 639790, "high": 697151, "low": 555360},
+        {"range": "<$550K", "stores": 12, "avg": 447918, "median": 443273, "high": 537780, "low": 347132}
+      ]
+    },
+    "metricType": "gross_revenue_only",
+    "noExpenseData": true,
+    "confidence": "high"
+  },
+
+  "item20": {
+    "table5_projectedOpenings": {
+      "signedNotOpened": 0,
+      "projectedNewFranchised": 5,
+      "projectedNewCompanyOwned": 9,
+      "projectionStates": ["Alaska", "Arizona", "California", "Colorado", "Idaho", "Montana", "New Mexico", "North Carolina", "Texas"]
+    },
+    "closures": {
+      "terminatedCancelledCeased": 3,
+      "note": "3 franchisees had outlet terminated, cancelled, or otherwise ceased in most recent fiscal year"
+    },
+    "confidentialityClauses": {
+      "exist": true,
+      "note": "In past 3 years franchisees required to sign agreements with confidentiality clauses. Some may be restricted in how openly they discuss system experience."
+    },
+    "concessionVenuesReserved": ["Vivint Smart Home Arena", "Rice-Eccles Stadium", "LaVell Edwards Stadium"],
+    "unresolvedNote": "Full Item 20 Tables 1-4 not surfaced cleanly. Table 5 and narrative notes captured.",
+    "confidence": "medium"
+  },
+
+  "item21": {
+    "hasAuditedFinancials": true,
+    "auditorName": "Forvis Mazars, LLP",
+    "auditorOpinion": "unqualified",
+    "financialExhibit": "B",
+    "balanceSheet2024": {
+      "cash": 25150,
+      "accountsReceivable": 246291,
+      "totalCurrentAssets": 500760,
+      "ppAndENet": 23269,
+      "relatedPartyReceivable": 133826,
+      "totalAssets": 657855,
+      "totalLiabilities": 168503,
+      "membersEquity": 489352,
+      "ocrNote": "Some line items have light OCR risk"
+    },
+    "incomeStatement2023_2022": {
+      "revenue2023": 1862000,
+      "revenue2022": 1408000,
+      "netIncome2023": 781293,
+      "netIncome2022": 872758
+    },
+    "financialStrengthNote": "Small but profitable franchisor. Revenue growing. Positive equity. Related-party receivable present but not alarming at this scale.",
+    "confidence": "high"
+  },
+
+  "exhibits": {
+    "A": {"name": "State administrators/agents", "status": "identified"},
+    "B": {"name": "Financial statements", "status": "parsed"},
+    "C": {"name": "Franchise agreement", "status": "partially_parsed", "attachments": ["protected territory exhibit", "opening acknowledgment", "entity ownership addendum", "lease addendum", "direct payment authorization", "general release", "NDA/noncompete", "guaranty"]},
+    "D": {"name": "Area development agreement", "status": "identified", "attachments": ["development area schedule"]},
+    "E": {"name": "Operations manual TOC", "status": "needs_parsing"},
+    "F": {"name": "Current and former franchisee list", "status": "needs_parsing"},
+    "G": {"name": "State-specific addenda", "status": "partially_parsed"},
+    "H": {"name": "State effective dates", "status": "identified"},
+    "I": {"name": "Receipt", "status": "identified"}
+  },
+
+  "stateAddenda": {
+    "california": {
+      "utahForumMayBeUnenforceable": true,
+      "postTermNoncompeteMayBeUnenforceable": true,
+      "personalGuarantyMaritalAssetWarning": true
+    },
+    "michigan": {
+      "preExhibitNotice": true,
+      "unfairProvisionsVoided": true
+    },
+    "minnesota": {
+      "terminationProtection": "90-day termination / 60-day cure",
+      "nonrenewalProtection": "180-day notice",
+      "transferConsentReasonable": true
+    },
+    "washington": {
+      "noWaiverOverlay": true,
+      "noRegulatorGag": true
+    }
+  },
+
+  "extractorLearnings": {
+    "universalRules": [
+      "Cupbop is both storefront and food truck — must support dual format",
+      "Area Development Agreement with minimum 2 restaurants is separate from single-unit economics",
+      "Territory is protected-area-not-exclusive with online delivery, catering, and non-traditional venue carveouts",
+      "Sales performance threshold (50% of national trailing average starting year 2) converts territory to performance-contingent right",
+      "Auto-debit with 120% estimation on missed reporting is a real control mechanism",
+      "Affiliate Cupbop Co. as licensor AND proprietary product supplier is a dual relationship",
+      "Item 19 with company-owned vs franchised vs combined tables needs structured multi-table objects",
+      "Company-owned avg ($794K) vs franchised avg ($658K) = 21% gap — similar to McDonald's McOpCo gap pattern",
+      "3 franchised closures among 24 qualifying = 12.5% closure rate — material for small system",
+      "Confidentiality clauses restricting franchisee discussion of experience affects diligence quality",
+      "Concession venue rights reserved outside franchise grant — concession revenue not franchisee revenue",
+      "Successor franchise concept (not automatic renewal) with materially different terms possible",
+      "20-mile noncompete radius from premises AND from any other Cupbop restaurant is aggressive for a small system",
+      "5% equity threshold for guaranty is lower than many systems"
+    ]
+  }
+}
