@@ -581,7 +581,7 @@ def run_reader_pass(page_reads: List[PageRead],
                         tracker.trigger(code, item_num, pr.page_num)
 
             # Capture important facts based on content
-            text_lower = pr.text[:3000].lower()
+            text_lower = pr.text[:5000].lower()
 
             # ── SPECIFIC FACT EXTRACTION ──
             # Lane A is the lead extractor. Capture specific facts with text, not signals.
@@ -643,7 +643,7 @@ def run_reader_pass(page_reads: List[PageRead],
 
                 # ── Structured Item 8 field extraction ──
                 # Cooperative
-                if re.search(r'(?:no|not|do\s+not)\s+(?:have\s+)?(?:any\s+)?(?:purchasing|distribution)\s+cooperativ', text_lower):
+                if re.search(r'(?:have\s+no|no|not|do\s+not\s+have)\s+(?:any\s+)?(?:purchasing|distribution)(?:\s+or\s+(?:purchasing|distribution))?\s+cooperativ', text_lower):
                     fact_store.add("Supplier: no purchasing cooperative",
                         why_important="FPR_FIELD:item8_purchaseCooperative",
                         source_page=pr.page_num, source_item=8,
@@ -653,19 +653,40 @@ def run_reader_pass(page_reads: List[PageRead],
                         why_important="FPR_FIELD:item8_purchaseCooperative",
                         source_page=pr.page_num, source_item=8,
                         importance=0.7, category="control")
-                # Proprietary products
-                if re.search(r'(?:proprietary|secret|confidential)\s+(?:product|recipe|formula|specification|ingredient)', text_lower):
+                # Proprietary products / specifications
+                if re.search(r'(?:proprietary|secret|confidential)\s+(?:product|recipe|formula|specification|ingredient|information)', text_lower):
                     fact_store.add("Supplier: proprietary products/specifications",
                         why_important="FPR_FIELD:item8_proprietaryProducts",
                         source_page=pr.page_num, source_item=8,
                         importance=0.7, category="control")
+                # Specifications-only flag
+                if re.search(r'(?:specifications?\s+only|meet\s+(?:our\s+)?specifications?\s+(?:but|and)\s+(?:may|can)\s+(?:purchase|buy|source))', text_lower):
+                    fact_store.add("Supplier: specifications-only sourcing",
+                        why_important="FPR_FIELD:item8_specificationsOnly",
+                        source_page=pr.page_num, source_item=8,
+                        importance=0.7, category="control")
                 # Insurance requirements
-                if re.search(r'(?:insurance|insured)\s+(?:requir|must|minimum|coverage)', text_lower):
-                    # Capture the full sentence
-                    m_ins = re.search(r'([^.]*(?:insurance|insured)\s+(?:requir|must|minimum|coverage)[^.]*\.)', text_lower)
+                if re.search(r'insurance\s+(?:source|compan|carrier|requir|must|polic)', text_lower):
+                    m_ins = re.search(r'([^.]*insurance[^.]*(?:requir|must|approved|specif|minimum|coverage|policy|licensed)[^.]*\.)', text_lower)
                     if m_ins:
                         fact_store.add(m_ins.group(1).strip()[:200],
                             why_important="FPR_FIELD:item8_insuranceRequirements",
+                            source_page=pr.page_num, source_item=8,
+                            importance=0.7, category="economics")
+                # Alternative supplier approval process
+                if re.search(r'(?:alternative|other|additional)\s+(?:supplier|vendor|source).*?(?:approv|request|submit|process)', text_lower):
+                    m_alt = re.search(r'([^.]*(?:alternative|other|additional)\s+(?:supplier|vendor|source)[^.]*(?:approv|request|submit|process)[^.]*\.)', text_lower)
+                    if m_alt:
+                        fact_store.add(m_alt.group(1).strip()[:200],
+                            why_important="FPR_FIELD:item8_alternativeSupplierProcess",
+                            source_page=pr.page_num, source_item=8,
+                            importance=0.7, category="control")
+                # Technology funds / negotiate with suppliers
+                if re.search(r'(?:technology\s+fund|negotiate\s+with\s+supplier|payment.*?from\s+supplier)', text_lower):
+                    m_tech = re.search(r'([^.]*(?:technology\s+fund|negotiate\s+with\s+supplier|payment.*?from\s+supplier)[^.]*\.)', text_lower)
+                    if m_tech:
+                        fact_store.add(m_tech.group(1).strip()[:200],
+                            why_important="FPR_FIELD:item8_technologyFundsNote",
                             source_page=pr.page_num, source_item=8,
                             importance=0.7, category="economics")
 

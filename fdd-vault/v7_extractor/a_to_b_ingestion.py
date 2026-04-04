@@ -103,6 +103,9 @@ INGESTION_POLICY = {
     "item8_purchaseCooperative": "fill",
     "item8_proprietaryProducts": "fill",
     "item8_insuranceRequirements": "fill",
+    "item8_specificationsOnly": "fill",
+    "item8_alternativeSupplierProcess": "fill",
+    "item8_technologyFundsNote": "fill",
 
     # ── Structured objects: enrich-only ──
     "royaltyDetails": "enrich",
@@ -543,7 +546,14 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
 
     # ── Item 8 depth fields ──
     elif field == "item8_purchaseCooperative":
-        if re.search(r'no\s+(?:purchasing|distribution)\s+cooperativ', text_lower):
+        # Check tagged fact text directly
+        for fact in facts:
+            ft = fact.get('fact_text', '').lower()
+            if 'no purchasing cooperative' in ft or 'no purchasing or distribution cooperative' in ft:
+                return False
+            if 'has purchasing cooperative' in ft:
+                return True
+        if re.search(r'(?:have\s+no|no)\s+(?:purchasing|distribution)', text_lower):
             return False
         if re.search(r'(?:purchasing|distribution)\s+cooperativ', text_lower):
             return True
@@ -555,9 +565,29 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
         return None
 
     elif field == "item8_insuranceRequirements":
+        for fact in facts:
+            if 'FPR_FIELD:item8_insuranceRequirements' in fact.get('why_important', ''):
+                return fact.get('fact_text', '').strip()[:200]
         m = re.search(r'([^.]*(?:insurance|insured)\s+(?:requir|must|minimum|coverage)[^.]*\.)', text_lower)
         if m:
             return m.group(1).strip()[:200]
+        return None
+
+    elif field == "item8_specificationsOnly":
+        if re.search(r'specifications?\s+only', text_lower):
+            return True
+        return False  # Default: not specifications-only
+
+    elif field == "item8_alternativeSupplierProcess":
+        for fact in facts:
+            if 'FPR_FIELD:item8_alternativeSupplierProcess' in fact.get('why_important', ''):
+                return fact.get('fact_text', '').strip()[:200]
+        return None
+
+    elif field == "item8_technologyFundsNote":
+        for fact in facts:
+            if 'FPR_FIELD:item8_technologyFundsNote' in fact.get('why_important', ''):
+                return fact.get('fact_text', '').strip()[:200]
         return None
 
     # ── Territory / Item 12 depth fields ──

@@ -279,6 +279,27 @@ FIELD_REGISTRY = {
         "null_means": "not_extracted",
         "gold_aliases": ["insuranceRequirements"],
     },
+    "item8_specificationsOnly": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item8_specificationsOnly",
+        "null_means": "not_extracted",
+        "gold_aliases": ["specificationsOnly"],
+    },
+    "item8_alternativeSupplierProcess": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item8_alternativeSupplierProcess (text from reader)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["alternativeSupplierProcess"],
+    },
+    "item8_technologyFundsNote": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item8_technologyFundsNote (text from reader)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["technologyFundsNote"],
+    },
 
     # ── Performance ──
     "hasItem19": {
