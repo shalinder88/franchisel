@@ -573,6 +573,35 @@ FIELD_REGISTRY = {
         "null_means": "not_extracted",
         "gold_aliases": [],
     },
+    # ── Financing / Item 10 depth ──
+    "item10_offersDirectFinancing": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item10_offersDirectFinancing",
+        "null_means": "not_extracted",
+        "gold_aliases": ["offersDirectFinancing"],
+    },
+    "item10_typicallyNoFinancing": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item10_typicallyNoFinancing",
+        "null_means": "not_extracted",
+        "gold_aliases": ["typicallyNoFinancing"],
+    },
+    "item10_guaranteedLoanProgram": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item10_guaranteedLoanProgram",
+        "null_means": "not_extracted",
+        "gold_aliases": ["guaranteedLoanProgram"],
+    },
+    "item10_guaranteeFee": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item10_guaranteeFee (text)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["guaranteeFee"],
+    },
     "operationsManual": {
         "type": "Optional[bool]",
         "source": "evidence",
@@ -939,6 +968,7 @@ def build_canonical_export(extraction_result: Dict[str, Any]) -> Dict[str, Any]:
     _compute_item19_derived(export)
     _compute_territory_derived(export)
     _compute_outlet_derived(export, extraction_result)
+    _compute_financing_derived(export)
 
     return export
 
@@ -1344,6 +1374,13 @@ def _parse_int(val) -> Optional[int]:
         return int(s)
     except (ValueError, TypeError):
         return None
+
+
+def _compute_financing_derived(export: Dict) -> None:
+    """Post-pass: derive financing fields from related evidence."""
+    typically_no = export.get("item10_typicallyNoFinancing")
+    if typically_no is True and export.get("item10_offersDirectFinancing") is None:
+        export["item10_offersDirectFinancing"] = False
 
 
 def _compute_territory_derived(export: Dict) -> None:

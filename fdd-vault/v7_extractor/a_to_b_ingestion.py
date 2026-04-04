@@ -64,6 +64,12 @@ INGESTION_POLICY = {
     "supplierRevenue": "fill",
     "refundable": "fill",
 
+    # ── Financing / Item 10 depth scalars: fill-only ──
+    "item10_offersDirectFinancing": "fill",
+    "item10_typicallyNoFinancing": "fill",
+    "item10_guaranteedLoanProgram": "fill",
+    "item10_guaranteeFee": "fill",
+
     # ── Support / Item 11 depth scalars: fill-only ──
     "item11_fieldSupport": "fill",
     "item11_advertisingCouncil": "fill",
@@ -757,6 +763,33 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
         return None
 
     # ── Support / Item 11 depth fields ──
+    # ── Financing / Item 10 depth fields ──
+    elif field == "item10_offersDirectFinancing":
+        if re.search(r'(?:no\s+financing|does\s+not\s+(?:offer|provide|arrange)\s+(?:any\s+)?financ|typically.*?no\s+financing)', text_lower):
+            return False
+        if re.search(r'(?:we|franchisor)\s+(?:offer|provide|arrange|make)\s+(?:direct\s+)?financ', text_lower):
+            return True
+        return None
+
+    elif field == "item10_typicallyNoFinancing":
+        if re.search(r'(?:no\s+financing|typically.*?no\s+financing|does\s+not\s+(?:offer|provide))', text_lower):
+            return True
+        return None
+
+    elif field == "item10_guaranteedLoanProgram":
+        if re.search(r'(?:guarantee\w*\s+(?:loan|financ)|loan\s+guarantee)', text_lower):
+            return True
+        return None
+
+    elif field == "item10_guaranteeFee":
+        for fact in facts:
+            if 'FPR_FIELD:item10_guaranteeFee' in fact.get('why_important', ''):
+                return fact.get('fact_text', '').strip()[:200]
+        m = re.search(r'(\d+\.?\d*\s*%[^.]*(?:outstand|balance|loan|guarantee)[^.]*)', text_lower)
+        if m:
+            return m.group(1).strip()[:200]
+        return None
+
     elif field == "item11_fieldSupport":
         if re.search(r'(?:field\s+(?:support|consult|staff|office)|regional\s+(?:office|manager))', text_lower):
             return True

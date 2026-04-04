@@ -511,6 +511,24 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                     source_page=start_page, source_item=item_num,
                     importance=0.7, category="economics",
                 )
+            # No direct financing / typically no financing
+            if re.search(r'(?:no\s+financing|typically.*?no\s+financing|does\s+not\s+(?:offer|provide|arrange)\s+(?:any\s+)?financ)', sent_lower):
+                fact_store.add(sent_stripped[:300],
+                    why_important="FPR_FIELD:item10_typicallyNoFinancing",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.7, category="economics")
+            # Guaranteed loan program
+            if re.search(r'(?:guarantee\w*\s+(?:loan|financ)|loan\s+guarantee)', sent_lower):
+                fact_store.add(sent_stripped[:300],
+                    why_important="FPR_FIELD:item10_guaranteedLoanProgram",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.7, category="economics")
+            # Guarantee fee
+            if re.search(r'(?:guarantee\s+fee|fee.*?(?:\d+\.?\d*)\s*%.*?(?:outstand|balance|loan))', sent_lower):
+                fact_store.add(sent_stripped[:300],
+                    why_important="FPR_FIELD:item10_guaranteeFee",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.7, category="economics")
 
 
 def run_reader_pass(page_reads: List[PageRead],
