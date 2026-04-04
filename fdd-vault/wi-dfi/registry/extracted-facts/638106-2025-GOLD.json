@@ -1,0 +1,426 @@
+{
+  "meta": {
+    "fddId": "638106-2025",
+    "brandName": "Hallmark Homecare",
+    "franchisorLegalName": "Hallmark Homecare, LLC",
+    "fddYear": 2025,
+    "issuanceDate": "March 31, 2025",
+    "extractedDate": "2026-04-04",
+    "extractedBy": "human_verified_4pass",
+    "stateOfFiling": "Wisconsin",
+    "archetype": "referral_agency_homecare",
+    "extractionTier": "gold",
+    "passesCompleted": 4,
+    "confidence": "high",
+    "unresolvedItems": ["item20_outlet_tables", "exhibit_A_franchisees", "exhibit_B_full_financials", "exhibit_E_manual_toc", "exhibit_H_general_release"]
+  },
+
+  "item1": {
+    "franchisorLegalName": "Hallmark Homecare, LLC",
+    "entityType": "Nevada limited liability company",
+    "principalAddress": "774 Mays Blvd, Suite 10-297, Incline Village, Nevada 89451",
+    "parentCompany": "Hallmark Homecare, Inc. (HHI)",
+    "parentEntityType": "Nevada corporation",
+    "parentGuaranteesPerformance": true,
+    "publiclyTraded": false,
+    "entityFormationYear": 2022,
+    "yearFranchiseEstablished": 2023,
+    "predecessorFranchisingYears": "2019-2022 (under HHI)",
+    "predecessors": [
+      {"name": "Hallmark Homecare, Inc. (HHI)", "role": "parent_and_predecessor", "incorporated": "October 31, 2011", "franchisedFrom": 2019, "franchisedTo": 2022}
+    ],
+    "affiliates": [
+      {"name": "The Dentist's Choice, Inc. (TDC)", "role": "unrelated_affiliate", "business": "dental handpiece repair franchises", "units": 150, "asOfDate": "December 31, 2022", "ownership": "Steve and Nona Everhart", "providesProductsToHallmark": false}
+    ],
+    "businessDescription": "Domestic referral agency providing caregiver placement services for elderly and others seeking in-home non-medical care and companionship",
+    "businessModelType": "referral_placement_not_employer",
+    "serviceTypes": ["Client Liaison Services", "Caregiver Fulfillment Services"],
+    "specialRisks": ["out_of_state_dispute_nevada", "mandatory_minimum_payments", "sales_performance_required"],
+    "leadership": {
+      "founders": "Steve and Nona Everhart",
+      "founderLed": true
+    },
+    "stateNotices": {
+      "michigan": {
+        "preExhibitNotice": true,
+        "provisions": ["out-of-state litigation void", "refusal-to-renew protections", "transfer restrictions except good cause"]
+      }
+    },
+    "trademarks": [
+      {"name": "Hallmark Homecare", "regNo": "4,133,058", "regDate": "April 24, 2012"},
+      {"name": "Hallmark Homecare", "regNo": "4,357,692", "regDate": "June 25, 2013"}
+    ],
+    "confidence": "high"
+  },
+
+  "item3": {
+    "hasLitigation": false,
+    "noLitigationDisclosed": true,
+    "confidence": "high"
+  },
+
+  "item4": {
+    "hasBankruptcy": false,
+    "noBankruptcyDisclosed": true,
+    "confidence": "high"
+  },
+
+  "item5": {
+    "initialFranchiseFee": 59500,
+    "feeStructure": {
+      "territory1": 59500,
+      "territory2_additional": 40000,
+      "territory2_cumulative": 99500,
+      "territory3_additional": 35000,
+      "territory3_cumulative": 134500,
+      "territory4_additional": 35000,
+      "territory4_cumulative": 169500,
+      "territory5_additional": 35000,
+      "territory5_cumulative": 204500,
+      "excessPopulationSurcharge": "$0.20 per person above 250,000",
+      "veteranDiscount": "$5,000 off total"
+    },
+    "multiTerritoryPricing": true,
+    "refundable": false,
+    "refundNote": "Fully earned when paid and non-refundable under any circumstances",
+    "feeIsUniform": false,
+    "confidence": "high"
+  },
+
+  "item6": {
+    "royaltyRate": "6% of Gross Sales",
+    "royaltyMinimum": "$500 x number of protected territories per month",
+    "royaltyFormula": "Greater of 6% of Gross Sales or $500 x territory count",
+    "dualFormula": true,
+    "marketingFeeRate": "1% of Gross Sales",
+    "marketingFeeMinimum": "$150 x number of protected territories per month",
+    "marketingFeeFormula": "Greater of 1% of Gross Sales or $150 x territory count",
+    "royaltyBasis": "Gross Sales",
+    "paymentTiming": "Monthly by 15th, based on preceding month",
+    "grossSalesDefinition": {
+      "includes": ["all revenue from franchised business", "amounts billed/invoiced to clients", "Placement Commissions from franchisor", "other business-related revenue"],
+      "excludes": ["sales tax remitted to taxing authorities"],
+      "notExcluded": ["payment provider fees", "bank/credit card fees"]
+    },
+    "otherFees": [
+      {"name": "Extra Level 2 trainee", "amount": "$1,500 per trainee"},
+      {"name": "Supplemental training/meetings", "amount": "under $1,000 per attendee"},
+      {"name": "Transfer fee", "amount": 10000},
+      {"name": "Late payment interest", "amount": "lesser of 1.5%/month or highest legal commercial rate"},
+      {"name": "Audit costs", "amount": "if reports missing or gross sales understated by 5%+"},
+      {"name": "Indemnification", "amount": "as incurred"},
+      {"name": "Enforcement expenses", "amount": "prevailing party attorneys' fees"}
+    ],
+    "feeCollection": "EFT/ACH",
+    "feesNonRefundable": true,
+    "confidence": "high"
+  },
+
+  "item7": {
+    "totalInvestmentLow": 109500,
+    "totalInvestmentHigh": 134500,
+    "multiTerritoryInvestmentLow": 149500,
+    "multiTerritoryInvestmentHigh": 279500,
+    "lineItems": [
+      {"item": "Franchise fee", "low": 59500, "high": 59500},
+      {"item": "Equipment and supplies", "low": 1500, "high": 4000},
+      {"item": "Initial marketing", "low": 2500, "high": 6000},
+      {"item": "Travel and living during training", "low": 1500, "high": 2000},
+      {"item": "Miscellaneous opening costs", "low": 1000, "high": 2000},
+      {"item": "Professional fees", "low": 500, "high": 2500},
+      {"item": "Insurance", "low": 3000, "high": 3500},
+      {"item": "Additional funds (3 months)", "low": 40000, "high": 55000}
+    ],
+    "operatesFromHomeOffice": true,
+    "rentNotIncluded": true,
+    "employeeWagesNotIncluded": true,
+    "employeeWagesNote": "Franchisor does not anticipate employees during first few months",
+    "financingOffered": false,
+    "confidence": "high"
+  },
+
+  "item8": {
+    "hasRequiredPurchases": true,
+    "requirementType": "systems_insurance_compliance_only",
+    "restrictionIntensity": "narrow",
+    "requiredFromApprovedSources": ["insurance", "operations systems (back-office software, intranet, telephone, accounting)", "background checks"],
+    "franchisorIsDirectSupplier": false,
+    "affiliateSuppliersExist": false,
+    "soleVendorInsurance": true,
+    "soleVendorInsuranceNote": "Specific designated insurance agency as sole approved vendor due to familiarity with business and industry",
+    "alternativeSuppliersNotIntended": true,
+    "alternativeSuppliersNote": "Franchisor does not intend to approve alternative suppliers for insurance, operations systems, or background checks",
+    "pctPurchasesUnderSpecsOpening": "less than 10%",
+    "pctPurchasesUnderSpecsOperating": "less than 10%",
+    "franchisorRevenueFromPurchases": 0,
+    "supplierPaymentsToFranchisor": 0,
+    "purchaseCooperative": false,
+    "negotiatedPurchaseArrangements": false,
+    "insuranceBurden": {
+      "generalLiability": "$1,000,000 per occurrence / $3,000,000 aggregate",
+      "damageToPremises": "$100,000",
+      "personalInjury": "$1,000,000",
+      "professionalLiability": "$1,000,000 per occurrence / $3,000,000 aggregate",
+      "hiredNonOwnedAuto": "$500,000",
+      "workersCompOrEquivalent": true,
+      "commercialCrimeBonding": true,
+      "additionalInsured": true,
+      "primaryNonContributory": true,
+      "increaseOn60DaysNotice": true
+    },
+    "confidence": "high"
+  },
+
+  "item9": {
+    "obligationsMatrixPresent": true,
+    "keyRoutings": {
+      "territorialDevelopmentAndSalesQuotas": "FA Section 2.4 / Item 12",
+      "ongoingPurchases": "FA Sections 8.2(b), 8.6 / Item 8",
+      "insurance": "FA Section 8.6 / Items 6, 7, 8",
+      "transfer": "FA Section 13 / Items 6, 17",
+      "renewal": "FA Section 1.3 / Item 17",
+      "postTermination": "FA Section 15 / Item 17",
+      "restrictiveCovenant": "FA Sections 12.2, 15.4 / Item 17",
+      "disputeResolution": "FA Section 17 / Item 17"
+    },
+    "confidence": "high"
+  },
+
+  "item10": {
+    "offersDirectFinancing": false,
+    "offersIndirectFinancing": false,
+    "guaranteesNotes": false,
+    "confidence": "high"
+  },
+
+  "item11": {
+    "preOpeningAssistance": true,
+    "preOpeningSupport": [
+      "Training materials/resources",
+      "Level 1 and Level 2 Training Programs",
+      "Equipment/supplies/software guidance",
+      "Required @hallmarkhomecare.com email",
+      "Intranet/resource portal credentials",
+      "Pre-opening promotional planning"
+    ],
+    "typicalTimeToOpen": "45 days",
+    "mustOpenWithin": "90 days following signing",
+    "openingConditions": "Training completion and evidence of insurance",
+    "trainingProgram": {
+      "level1": {
+        "name": "Level 1",
+        "completionDeadline": "45 days after agreement date",
+        "format": "self-paced plus virtual cohort",
+        "virtualCohortSessions": 5,
+        "virtualClassroomHours": 7.5,
+        "subjects": ["sales/positioning", "recruiting systems (2 parts)", "referral relationships", "networking/marketing"],
+        "additionalComponents": ["QuickBooks setup", "bank accounts", "operating software", "Google", "DocuSign", "Indeed"]
+      },
+      "level2": {
+        "name": "Level 2",
+        "completionDeadline": "90 days after agreement date",
+        "format": "4 days in-person",
+        "location": "Irvine, California",
+        "inPersonClassroomHours": 24,
+        "subjects": [
+          {"topic": "Sales/marketing/networking", "hours": 6},
+          {"topic": "Compliance and operating a referral agency", "hours": 3},
+          {"topic": "Client inquiries", "hours": 2},
+          {"topic": "Client interview/liaison services", "hours": 4},
+          {"topic": "Caregiver search/recruitment", "hours": 2},
+          {"topic": "Liaison relationship management", "hours": 1},
+          {"topic": "Case studies/role play", "hours": 4},
+          {"topic": "Planning/strategizing", "hours": 2}
+        ]
+      },
+      "totalTrainingHours": 50.5
+    },
+    "ongoingSupport": ["training material updates", "individual/group guidance", "system-wide programs", "innovations testing", "coaching for lead gen and caregiver recruitment", "phone/email support during business hours"],
+    "placementCommission": {
+      "rate": "40%",
+      "basis": "one-time placement fee Hallmark receives for out-of-territory referrals",
+      "hourlyConversion": "calculated one-time equivalent for hourly engagements",
+      "paymentTiming": "within 30 days after Hallmark receives client payment"
+    },
+    "operationsManual": true,
+    "confidence": "high"
+  },
+
+  "item12": {
+    "exclusiveTerritory": true,
+    "territoryType": "exclusive_hallmark_office_with_broad_reserved_rights",
+    "territoryBasis": "contiguous zip codes, typically capped at 250,000 population",
+    "multiTerritoryAvailable": true,
+    "maxTerritories": 5,
+    "protectionScope": "Hallmark will not operate or grant another Hallmark business office in territory, will not authorize other Hallmark businesses to market/provide services inside territory",
+    "reservedRights": [
+      "Conduct any business under any name anywhere outside territory",
+      "Establish other businesses under other marks inside or outside territory",
+      "Advertise using Marks anywhere including inside territory",
+      "Market to potential caregivers inside or outside territory",
+      "Acquire/merge with competing home care businesses and keep under another name or convert",
+      "Make sales in protected territory under different marks"
+    ],
+    "franchisorMayCompete": true,
+    "franchisorCompeteNote": "May compete via alternative brands, acquisitions, and non-Hallmark-branded operations even inside territory",
+    "onlineSalesReserved": false,
+    "encroachmentRisk": "moderate",
+    "encroachmentNote": "Exclusive for Hallmark brand within territory but broad alternative-brand/acquisition reserved rights create real competitive risk",
+    "minimumSalesRequirement": {
+      "months12to23": {"quarterlyMinimum": "$125,000 x territory count (max 2 territories counted)"},
+      "month24onward": {"quarterlyMinimum": "$250,000 x territory count (max 3 territories counted)"},
+      "failureConsequences": [
+        "One quarter failure: franchisor-approved business plan required",
+        "Three consecutive quarter failures: material default",
+        "On uncured default: territory reduction or termination of territories"
+      ]
+    },
+    "crossTerritoryRules": {
+      "noSolicitingOutside": true,
+      "mustReferOutsideLeads": true,
+      "materialOutsideServicing": "must purchase rights to that territory"
+    },
+    "confidence": "high"
+  },
+
+  "item17": {
+    "term": {
+      "initialTermYears": 10
+    },
+    "personalGuaranty": true,
+    "guarantyScope": "jointly and severally liable for all obligations, binds to dispute-resolution, extends to renewals/extensions/modifications",
+    "employeeNoncompeteExhibit": "G",
+    "employeeNoncompeteNote": "Nondisclosure and Noncompete Agreement for management employees/individuals — locks down knowledge at employee level",
+    "confidence": "high",
+    "unresolvedNote": "Full Item 17 summary table not fully surfaced in this pass"
+  },
+
+  "item19": {
+    "hasItem19": true,
+    "disclosesFinancialPerformance": true,
+    "representedFranchises": [
+      {
+        "profileId": 1,
+        "kpis": {
+          "grossProfitPct": 39,
+          "avgClientsPerMonth": 37,
+          "avgRevenuePerClientPerMonth": 3582,
+          "avgBillableHoursPerWeekPerClient": 28,
+          "avgBillableRatePerHour": 30,
+          "caregiverPayRatePerHour": 18,
+          "grossProfitPerHour": 12
+        },
+        "incomeStatement": {
+          "grossSales": 1012290,
+          "costOfSales": 653260,
+          "grossProfit": 359030,
+          "totalOperatingExpenses": 141788,
+          "revenuesLessExpenses": 217242,
+          "revenuesLessExpensesPct": 21.46
+        }
+      },
+      {
+        "profileId": 2,
+        "kpis": {
+          "grossProfitPct": 35,
+          "avgClientsPerMonth": 11,
+          "avgRevenuePerClientPerMonth": 8013,
+          "avgBillableHoursPerWeekPerClient": 65,
+          "avgBillableRatePerHour": 29,
+          "caregiverPayRatePerHour": 19,
+          "grossProfitPerHour": 10
+        },
+        "incomeStatement": {
+          "grossSales": 617797,
+          "costOfSales": 405276,
+          "grossProfit": 212521,
+          "totalOperatingExpenses": 138142,
+          "revenuesLessExpenses": 74379,
+          "revenuesLessExpensesPct": 12.04
+        }
+      }
+    ],
+    "multiProfile": true,
+    "multiProfileNote": "Two represented franchises with materially different operating profiles — different client counts, revenue/client, hours, margins",
+    "confidence": "high"
+  },
+
+  "item20": {
+    "unresolvedReason": "Item 20 outlet tables not surfaced in file search. TOC confirms Item 20 at page 36.",
+    "confidence": "low"
+  },
+
+  "item21": {
+    "hasAuditedFinancials": true,
+    "financialExhibit": "B",
+    "netPropertyAndEquipment": 12390,
+    "asOfDate": "December 31, 2024",
+    "relatedPartyBorrowing": {"amount": 90000, "interestRate": 0, "repaymentTerms": "no definite repayment"},
+    "relatedPartyRent2024": 84000,
+    "subsequentEventsEvaluatedThrough": "January 31, 2025",
+    "financialStrengthNote": "Young system with related-party funding and rent support — relevant for support-capacity analysis",
+    "confidence": "high"
+  },
+
+  "exhibits": {
+    "A": {"name": "Current/former franchisees", "status": "needs_parsing"},
+    "B": {"name": "Financial statements", "status": "partially_parsed"},
+    "C": {"name": "Franchise agreement", "status": "partially_parsed"},
+    "D": {"name": "State administrators/agencies for service", "status": "identified"},
+    "E": {"name": "Manuals table of contents", "status": "needs_parsing"},
+    "F": {"name": "State-specific additional disclosures and riders", "status": "partially_parsed"},
+    "G": {"name": "Nondisclosure and noncompete agreements", "status": "identified"},
+    "H": {"name": "General release", "status": "needs_parsing"}
+  },
+
+  "stateAddenda": {
+    "northDakota": {
+      "materialChange": true,
+      "feesDeferredUntilOpeningComplete": true,
+      "noncompeteWeakened": true,
+      "litigationInState": "to extent required by law"
+    },
+    "rhodeIsland": {
+      "materialChange": true,
+      "outOfStateForumVoided": true
+    },
+    "virginia": {
+      "materialChange": true,
+      "cancellationRequiresReasonableCause": true
+    },
+    "washington": {
+      "materialChange": true,
+      "stateFranchiseStatutePrevails": true
+    },
+    "michigan": {
+      "preExhibitNotice": true,
+      "materialChange": true,
+      "outOfStateLitigationVoid": true,
+      "renewalProtections": true,
+      "transferProtections": true
+    }
+  },
+
+  "sellerDisclosure": {
+    "sellerAddress": "Hallmark Homecare, 774 Mays Blvd, Suite 10-297, Incline Village, NV 89451",
+    "additionalSeller": "FranchiseFastlane.com, Omaha, Nebraska",
+    "waitingPeriodModifications": ["Iowa", "New York", "Michigan"]
+  },
+
+  "extractorLearnings": {
+    "universalRules": [
+      "Franchise fee as tiered multi-territory schedule is not a single scalar",
+      "Royalty and marketing as greater-of percentage or territory-count minimums is a structured fee object",
+      "Territory can be exclusive for brand but non-exclusive for alternative brands/acquisitions — needs rich model",
+      "Minimum sales thresholds with escalation and territory-reduction penalty are core contract burden",
+      "Item 19 with multi-profile FPR objects should not flatten to one summary metric",
+      "Item 8 for service businesses may be systems/insurance/compliance control, not food/supply purchasing",
+      "Training captured from Level 1 and Level 2 tables, not flattened to 'training provided'",
+      "Guaranty at employee/manager level (Exhibit G) is separate from franchisee guaranty",
+      "Item 20 must remain explicitly unresolved when tables not surfaced — do not infer counts",
+      "Related-party funding ($90K loan, $84K rent) in Item 21 is relevant for financial-strength analysis",
+      "Placement commission (40% of out-of-territory referrals) belongs in fee/revenue model",
+      "State addenda with fee deferral (North Dakota) materially change economics"
+    ]
+  }
+}
