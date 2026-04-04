@@ -781,6 +781,34 @@ FIELD_REGISTRY = {
         "null_means": "not_extracted",
         "gold_aliases": [],
     },
+    "item21_hasAuditedFinancials": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.financial_statement_engine.hasAuditedFinancials",
+        "null_means": "not_extracted",
+        "gold_aliases": ["hasAuditedFinancials"],
+    },
+    "item21_auditorTier": {
+        "type": "Optional[str]",
+        "source": "engine",
+        "source_detail": "derived from auditorName (big4/national/regional/local)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["auditorTier"],
+    },
+    "item21_goingConcernWarning": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.financial_statement_engine.goingConcernWarning",
+        "null_means": "not_extracted",
+        "gold_aliases": ["goingConcernWarning"],
+    },
+    "item21_financialStrengthSignal": {
+        "type": "Optional[str]",
+        "source": "engine",
+        "source_detail": "engine.financial_statement_engine.financialStrengthSignal",
+        "null_means": "not_extracted",
+        "gold_aliases": ["financialStrengthSignal"],
+    },
     "franchisorRevenue": {
         "type": "Optional[Any]",
         "source": "evidence",
@@ -1002,6 +1030,26 @@ def _resolve_engine_field(field_name: str, engines: Dict, brand: Dict) -> Any:
         return str(val) if val is not None else None
     elif field_name == "item8_lockInScore":
         return eng8.get("lock_in_severity")
+
+    # Item 21 financial engine fields
+    if field_name == "item21_hasAuditedFinancials":
+        return fin.get("hasAuditedFinancials")
+    elif field_name == "item21_auditorTier":
+        auditor = fin.get("auditorName", "")
+        if not auditor:
+            return None
+        BIG4 = ["ernst & young", "deloitte", "kpmg", "pricewaterhousecoopers", "pwc"]
+        NATIONAL = ["bdo", "grant thornton", "rsm", "moss adams", "crowe"]
+        a_lower = auditor.lower()
+        if any(b in a_lower for b in BIG4):
+            return "big4"
+        if any(n in a_lower for n in NATIONAL):
+            return "national"
+        return "regional"
+    elif field_name == "item21_goingConcernWarning":
+        return fin.get("goingConcernWarning")
+    elif field_name == "item21_financialStrengthSignal":
+        return fin.get("financialStrengthSignal")
 
     # Item 17 contract engine — compose structured dicts
     eng17 = engines.get("contract_burden_engine", {})
