@@ -645,4 +645,24 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     except Exception as e:
         print(f"\n  ⚠️ Learning writeback failed: {str(e)[:100]}")
 
+    # ════════════════════════════════════════════════════════════════
+    # LIVE OBJECT BUNDLE — for 32-worker architecture
+    # These are the actual parsed objects, NOT serialized metadata.
+    # Workers need these to access .text, .tables, .cross_refs, etc.
+    # This bundle is attached to the result but NOT serialized to JSON.
+    # ════════════════════════════════════════════════════════════════
+    result["_live_objects"] = {
+        "items": items,                    # Dict[int, ItemSection] — live objects
+        "exhibits": exhibits,              # Dict[str, ExhibitObject] — live objects
+        "page_reads": page_reads,          # List[PageRead] — live objects
+        "all_tables": all_tables,          # List[TableObject] — live objects
+        "state_overrides": state_overrides,  # List[StateOverride] — live objects
+        "evidence_store": evidence,        # EvidenceStore — live object
+        "geometry": geometry,              # Dict from Phase -1
+        "layout_idx": layout_idx,          # LayoutIndex from Phase -1
+        "archetype": archetype,            # Dict
+        "classified_facts": classified_facts,  # List[Dict]
+        "fact_registry": fact_registry,    # FactStateRegistry
+    }
+
     return result

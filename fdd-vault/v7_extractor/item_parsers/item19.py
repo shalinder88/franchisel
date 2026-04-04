@@ -50,7 +50,40 @@ def parse_item19(section: ItemSection) -> Dict[str, Any]:
     text_lower = text.lower()
     prov_base = {"source_page": section.start_page}
 
-    # --- Check for no-FPR disclosure ---
+    # --- Patch D: Three-layer FPR detection ---
+    # Layer 1 — positive evidence (tables with $/averages/medians)
+    # Layer 2 — no-FPR disclaimer (only if no positive evidence)
+    # Layer 3 — contradiction handling (both exist → conflict, do not wipe)
+
+    # Layer 1: Check for positive FPR evidence FIRST
+    has_positive_evidence = False
+    positive_signals = []
+
+    # Check tables for dollar amounts
+    for table in section.tables:
+        for row in table.rows:
+            row_text = " ".join(row) if row else ""
+            if re.search(r'\$\s*[\d,]{4,}', row_text):  # Dollar amounts >= $1,000
+                has_positive_evidence = True
+                positive_signals.append("table_with_dollar_amounts")
+                break
+        if has_positive_evidence:
+            break
+
+    # Check text for FPR language
+    fpr_positive_patterns = [
+        r'(?:average|median)\s+(?:annual\s+)?(?:gross\s+)?(?:net\s+)?(?:sales|revenue|volume)',
+        r'(?:financial\s+performance\s+representation)',
+        r'(?:historical\s+(?:sales|performance|revenue))',
+        r'(?:the\s+following\s+table|table\s+(?:below|above))\s+(?:shows?|presents?|sets?\s+forth)',
+    ]
+    for pattern in fpr_positive_patterns:
+        if re.search(pattern, text_lower):
+            has_positive_evidence = True
+            positive_signals.append(f"text_match:{pattern[:30]}")
+
+    # Layer 2: Check for no-FPR disclaimer
+    has_no_fpr_disclaimer = False
     no_fpr_patterns = [
         r'(?:we|franchisor)\s+(?:do|does)\s+not\s+make\s+(?:any\s+)?(?:financial\s+performance\s+representation|earnings\s+claim)',
         r'no\s+financial\s+performance\s+representation',
@@ -58,18 +91,55 @@ def parse_item19(section: ItemSection) -> Dict[str, Any]:
     ]
     for pattern in no_fpr_patterns:
         if re.search(pattern, text_lower):
+            has_no_fpr_disclaimer = True
+            break
+
+    # Layer 3: Resolve
+    if has_positive_evidence and has_no_fpr_disclaimer:
+        # Contradiction: both exist. Positive evidence wins but flag conflict.
+        result["has_fpr"] = {
+            "value": True,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+        result["fpr_contradiction"] = {
+            "value": {
+                "positive_signals": positive_signals,
+                "disclaimer_present": True,
+                "resolution": "positive_evidence_wins",
+            },
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+    elif has_positive_evidence:
+        result["has_fpr"] = {
+            "value": True,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+    elif has_no_fpr_disclaimer:
+        # Only declare no-FPR if there is NO positive evidence
+        result["has_fpr"] = {
+            "value": False,
+            "state": EvidenceState.EXPLICITLY_ABSENT.value,
+            "provenance": prov_base,
+        }
+        return result
+    else:
+        # No strong signal either way — check table count
+        if len(section.tables) > 0:
+            result["has_fpr"] = {
+                "value": True,
+                "state": EvidenceState.PRESENT.value,
+                "provenance": prov_base,
+            }
+        else:
             result["has_fpr"] = {
                 "value": False,
-                "state": EvidenceState.EXPLICITLY_ABSENT.value,
+                "state": EvidenceState.NOT_FOUND.value,
                 "provenance": prov_base,
             }
             return result
-
-    result["has_fpr"] = {
-        "value": True,
-        "state": EvidenceState.PRESENT.value,
-        "provenance": prov_base,
-    }
 
     # --- TABLES FIRST: import EVERY table ---
     fpr_tables: List[Dict[str, Any]] = []

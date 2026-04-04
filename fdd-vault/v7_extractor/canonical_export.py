@@ -145,14 +145,14 @@ FIELD_REGISTRY = {
         "source": "evidence",
         "source_detail": "evidence.totalInvestmentLow (blocked from A→B)",
         "null_means": "not_extracted",
-        "gold_aliases": ["totalLow", "totalInvestmentLow", "low"],
+        "gold_aliases": ["totalLow", "totalInvestmentLow", "low", "investmentLow"],
     },
     "totalInvestmentHigh": {
         "type": "Optional[int]",
         "source": "evidence",
         "source_detail": "evidence.totalInvestmentHigh (blocked from A→B)",
         "null_means": "not_extracted",
-        "gold_aliases": ["totalHigh", "totalInvestmentHigh", "high"],
+        "gold_aliases": ["totalHigh", "totalInvestmentHigh", "high", "investmentHigh"],
     },
     "royaltyRate": {
         "type": "Optional[str]",
@@ -863,7 +863,15 @@ FIELD_REGISTRY = {
         "gold_aliases": ["churnData"],
     },
 
-    # ── Financials (from engine) ──
+    # ── Item 3: Litigation ──
+    "item3_hasLitigation": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.litigation_engine.has_litigation",
+        "null_means": "not_extracted",
+        "gold_aliases": ["hasLitigation"],
+    },
+
     # ── Item 4: Bankruptcy ──
     "item4_hasBankruptcy": {
         "type": "Optional[bool]",
