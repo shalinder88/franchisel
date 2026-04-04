@@ -308,6 +308,17 @@ class TeachingLoop:
                             actual = extracted_fields[canonical_name]
                             break
 
+            # Path 4: Gold path-based matching (e.g., item19.table3_combined.overallAvg)
+            if actual is None:
+                gold_path = gold_entry.get("path", "")
+                if gold_path and gold_path in extracted_fields:
+                    actual = extracted_fields[gold_path]
+                # Also try path.field composite
+                if actual is None and gold_path:
+                    composite = f"{gold_path}.{field}"
+                    if composite in extracted_fields:
+                        actual = extracted_fields[composite]
+
             if actual is not None:
                 if self._values_match(gold_value, actual.get("value")):
                     hits.append({

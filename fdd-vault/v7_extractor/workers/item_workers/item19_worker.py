@@ -204,141 +204,67 @@ class Item19Worker(ItemWorkerBase):
         )
 
     def _run_deep_fpr_parser(self, section, text: str) -> List[str]:
-        """Run the deep FPR parser and emit canonical facts."""
-        from ..item19_deep_parser import parse_fpr_tables_deep
+        """Run the deep FPR parser — combined-table precedence + tier extraction."""
+        from ..fpr_deep_parser import parse_fpr_tables_deep
 
         tables = section.tables if hasattr(section, 'tables') else []
         deep = parse_fpr_tables_deep(tables, text)
 
         fact_ids = []
 
-        if not deep.get("hasItem19"):
+        if not deep.get("has_fpr"):
             return fact_ids
 
-        # Emit richData
-        if deep.get("richData"):
+        # Emit richData if multiple tables with tiers
+        if deep.get("tier_count", 0) > 0:
             fid = self.emit(
                 fact_type="richData",
                 fact_payload={"value": True},
-                source_zone=SourceZone.TABLE,
-                source_item=19,
+                source_zone=SourceZone.TABLE, source_item=19,
                 source_pages=[section.start_page],
-                family="performance",
-                importance=Importance.CORE,
-                confidence=0.9,
+                family="performance", importance=Importance.CORE, confidence=0.9,
             )
             fact_ids.append(fid)
 
-        # Emit each parsed FPR table as a structured object
-        for tbl in deep.get("tables", []):
-            table_id = tbl.get("table_id", "")
-            cohort = tbl.get("cohort_type", "all")
-
-            # Overall stats — emit as individual canonical facts
-            for metric in ["overallAvg", "overallMedian", "overallHigh", "overallLow"]:
-                val = tbl.get(metric)
-                if val is not None:
-                    fid = self.emit(
-                        fact_type=metric,
-                        fact_payload={"value": val, "table": table_id, "cohort": cohort},
-                        source_zone=SourceZone.TABLE,
-                        source_item=19,
-                        source_pages=[section.start_page],
-                        family="performance",
-                        importance=Importance.CORE,
-                        confidence=0.85,
-                    )
-                    fact_ids.append(fid)
-
-            # Restaurant count
-            if tbl.get("restaurants"):
+        # Emit top-level overall from the COMBINED table (precedence rule)
+        top = deep.get("top_level", {})
+        for metric in ["restaurants", "overallAvg", "overallMedian", "overallHigh", "overallLow",
+                        "metOrExceededAvgPct", "metOrExceededMedianPct"]:
+            val = top.get(metric)
+            if val is not None:
                 fid = self.emit(
-                    fact_type="restaurants",
-                    fact_payload={"value": tbl["restaurants"], "table": table_id, "cohort": cohort},
-                    source_zone=SourceZone.TABLE,
-                    source_item=19,
+                    fact_type=metric,
+                    fact_payload={"value": val, "source_table_type": top.get("source_table_type", "")},
+                    source_zone=SourceZone.TABLE, source_item=19,
                     source_pages=[section.start_page],
-                    family="performance",
-                    importance=Importance.CORE,
-                    confidence=0.85,
+                    family="performance", importance=Importance.CORE, confidence=0.9,
                 )
                 fact_ids.append(fid)
 
-            # Attainment percentages
-            for metric in ["metOrExceededAvgPct", "metOrExceededMedianPct"]:
-                val = tbl.get(metric)
-                if val is not None:
-                    fid = self.emit(
-                        fact_type=metric,
-                        fact_payload={"value": val, "table": table_id, "cohort": cohort},
-                        source_zone=SourceZone.TABLE,
-                        source_item=19,
-                        source_pages=[section.start_page],
-                        family="performance",
-                        importance=Importance.CORE,
-                        confidence=0.85,
-                    )
-                    fact_ids.append(fid)
-
-            # Exclusions
-            if tbl.get("excludes"):
-                fid = self.emit(
-                    fact_type="excludes",
-                    fact_payload={"value": tbl["excludes"], "table": table_id, "cohort": cohort},
-                    source_zone=SourceZone.TABLE,
-                    source_item=19,
-                    source_pages=[section.start_page],
-                    family="performance",
-                    importance=Importance.SECONDARY,
-                    confidence=0.75,
-                )
-                fact_ids.append(fid)
-
-            # Tiers
-            for tier_idx, tier in enumerate(tbl.get("tiers", [])):
-                fid = self.emit(
-                    fact_type=f"fpr_tier",
-                    fact_payload={
-                        "table": table_id,
-                        "cohort": cohort,
-                        "tier_index": tier_idx,
-                        **tier,
-                    },
-                    source_zone=SourceZone.TABLE,
-                    source_item=19,
-                    source_pages=[section.start_page],
-                    object_type=ObjectType.TABLE_ROW,
-                    family="performance",
-                    importance=Importance.CORE,
-                    confidence=0.8,
-                )
-                fact_ids.append(fid)
-
-            # Full table object for reconciliation
+        # Emit all flat paths for gold scoring
+        for path, val in deep.get("flat_paths", {}).items():
+            if path == "hasItem19":
+                continue  # Already emitted by V7
             fid = self.emit(
-                fact_type="fpr_table_object",
-                fact_payload=tbl,
-                source_zone=SourceZone.TABLE,
-                source_item=19,
+                fact_type=path,
+                fact_payload={"value": val},
+                source_zone=SourceZone.TABLE, source_item=19,
                 source_pages=[section.start_page],
-                object_type=ObjectType.COMPOSITE,
                 family="performance",
-                importance=Importance.CORE,
+                importance=Importance.CORE if "overall" in path or "tiers" in path else Importance.SECONDARY,
                 confidence=0.85,
             )
             fact_ids.append(fid)
 
-        # Metric definition
-        if deep.get("metric_definition"):
+        # Emit per-table structured objects
+        for tbl in deep.get("tables", []):
             fid = self.emit(
-                fact_type="fpr_metric_definition",
-                fact_payload={"value": deep["metric_definition"]},
-                source_zone=SourceZone.TABLE,
-                source_item=19,
+                fact_type="fpr_table_object",
+                fact_payload=tbl,
+                source_zone=SourceZone.TABLE, source_item=19,
                 source_pages=[section.start_page],
-                family="performance",
-                importance=Importance.SECONDARY,
-                confidence=0.8,
+                object_type=ObjectType.COMPOSITE,
+                family="performance", importance=Importance.CORE, confidence=0.85,
             )
             fact_ids.append(fid)
 

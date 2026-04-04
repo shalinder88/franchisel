@@ -173,6 +173,29 @@ def build_all_engines(items: Dict[int, ItemSection],
         elif single:
             all_totals.append({"low": int(single), "high": int(single), "name": name})
 
+    # Sprint 1.3: If Item 7 parser found no totals, scan ALL items for investment tables
+    # This handles cross-item spill (e.g., Cupbop where investment table lands in Item 6)
+    if not all_totals:
+        import re
+        for item_num_scan, section_scan in items.items():
+            if not hasattr(section_scan, 'tables'):
+                continue
+            for table_scan in section_scan.tables:
+                for row_scan in (table_scan.rows if hasattr(table_scan, 'rows') else []):
+                    row_text_scan = " ".join(row_scan).lower() if row_scan else ""
+                    if "total" in row_text_scan:
+                        amounts_scan = re.findall(r'\$\s*([\d,]+)', " ".join(row_scan))
+                        cleaned_scan = [float(a.replace(",", "")) for a in amounts_scan]
+                        if len(cleaned_scan) >= 2:
+                            lo_scan = min(cleaned_scan)
+                            hi_scan = max(cleaned_scan)
+                            if lo_scan >= 50000 and hi_scan >= 100000:  # Sanity: must be investment-sized
+                                all_totals.append({
+                                    "low": int(lo_scan), "high": int(hi_scan),
+                                    "name": row_scan[0].strip() if row_scan else "TOTAL",
+                                    "source_item": item_num_scan,
+                                })
+
     # Pick primary investment: standard/traditional format first, then largest
     # General rule: multi-format brands have multiple TOTAL rows. Rank by format role:
     #   1. standard/traditional (primary offering)
@@ -300,5 +323,48 @@ def build_all_engines(items: Dict[int, ItemSection],
                                     (15, "owner_participation_engine"), (22, "document_package_engine")]:
         raw = parsed_items.get(item_num, {})
         engines[engine_name] = {k: _pv(v) for k, v in raw.items() if k != "item"}
+
+    # ── Sprint 1.4: Derive hasLitigation and hasBankruptcy booleans ──
+    lit_engine = engines.get("litigation_engine", {})
+    # Item 3 parser emits 'no_litigation' (True = no litigation disclosed)
+    no_lit = lit_engine.get("no_litigation")
+    has_lit = not no_lit if no_lit is not None else None
+    # Also check if any case data exists
+    if has_lit is None:
+        has_cases = any(k for k in lit_engine if k in ("cases", "settlements", "case_count", "regulatory_action"))
+        has_lit = has_cases if has_cases else None
+    # Check Item 3 text length — if substantial text, likely has litigation
+    i3_section = items.get(3)
+    if has_lit is None and i3_section:
+        i3_text_len = i3_section.text_length if hasattr(i3_section, 'text_length') else 0
+        if i3_text_len > 500:
+            has_lit = True
+        elif i3_text_len > 0:
+            import re
+            i3_text = i3_section.text if hasattr(i3_section, 'text') else ""
+            if re.search(r'\bv\.\b|case\s+no|filed\s+(?:in\s+)?20\d{2}', i3_text.lower()):
+                has_lit = True
+            else:
+                has_lit = False
+
+    if has_lit is not None:
+        evidence.set("hasLitigation", has_lit, EvidenceState.PRESENT)
+        engines["litigation_engine"]["hasLitigation"] = has_lit
+
+    bk_engine = engines.get("bankruptcy_engine", {})
+    no_bk = bk_engine.get("no_bankruptcy")
+    has_bk = not no_bk if no_bk is not None else None
+    if has_bk is None:
+        i4_section = items.get(4)
+        if i4_section:
+            i4_text = (i4_section.text if hasattr(i4_section, 'text') else "").lower()
+            if "no person" in i4_text and "bankrupt" in i4_text:
+                has_bk = False
+            elif "chapter" in i4_text or "bankrupt" in i4_text:
+                has_bk = True
+
+    if has_bk is not None:
+        evidence.set("hasBankruptcy", has_bk, EvidenceState.PRESENT)
+        engines["bankruptcy_engine"]["hasBankruptcy"] = has_bk
 
     return engines

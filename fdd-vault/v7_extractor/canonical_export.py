@@ -1288,9 +1288,23 @@ def _resolve_engine_field(field_name: str, engines: Dict, brand: Dict) -> Any:
     elif field_name == "item8_lockInScore":
         return eng8.get("lock_in_severity")
 
+    # Item 3 litigation engine
+    eng3 = engines.get("litigation_engine", {})
+    if field_name == "item3_hasLitigation":
+        # Sprint 1.4: direct boolean from engine
+        hl = eng3.get("hasLitigation")
+        if hl is not None:
+            return hl
+        # Fallback: check brand
+        return brand.get("hasLitigation")
+
     # Item 4 bankruptcy engine
     eng4 = engines.get("bankruptcy_engine", {})
     if field_name == "item4_hasBankruptcy":
+        # Sprint 1.4: direct boolean first
+        hb = eng4.get("hasBankruptcy")
+        if hb is not None:
+            return hb
         nb = eng4.get("no_bankruptcy")
         return not nb if nb is not None else None
     elif field_name == "item4_noBankruptcyDisclosed":
