@@ -27,7 +27,10 @@ def assemble_brand_json(engines: Dict[str, Any],
         "entity": bootstrap.get("entity", ""),
         "parentCompany": evidence.get("parentCompany") or None,
         "entityType": evidence.get("entityType") or None,
+        # Year fields — split schema. A→B stores best-guess in yearEstablished.
+        # Canonical export maps these to franchiseSystemStartYear / entityFormationYear.
         "yearEstablished": evidence.get("yearEstablished") or None,
+        "entityFormationYear": evidence.get("entityFormationYear") or None,
         "publiclyTraded": evidence.get("publiclyTraded") or None,
         "description": bootstrap.get("description", ""),
         "issuanceDate": bootstrap.get("issueDate", ""),

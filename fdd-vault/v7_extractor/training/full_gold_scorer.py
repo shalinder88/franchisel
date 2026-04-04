@@ -1,32 +1,26 @@
 """
 Full Gold Scorer — Three-Scoreboard Comparison System
 
-A brand passes only when ALL three scoreboards meet threshold:
-
-Scoreboard A: Narrow gold fields (10 key economics fields)
-  - smoke test only
-  - must be 100% to pass
-
-Scoreboard B: Manual-gold parity (full manual extraction)
-  - the real target
-  - every fact classified as: found_by_A_and_B / found_by_A / found_by_B / missed / conflict
-  - threshold: 60% for "progressing", 80% for "good", 95% for "gold"
-
-Scoreboard C: Source consumption
-  - tables/exhibits/pages consumed vs required
-  - must have 0 publish blockers to pass
+Scoreboard A: Narrow gold (10 key economics fields) — smoke test, must be 100%
+Scoreboard B: Manual-gold parity — scored against canonical export only
+Scoreboard C: Source consumption — tables/exhibits/pages consumed vs required
 
 Rule: No brand is "done" until all three pass.
+
+IMPORTANT: Scoreboard B reads ONLY from canonical_export.build_canonical_export().
+It never digs through engines, evidence, or brand internals.
+Alias resolution comes from canonical_export.build_reverse_alias_map().
 """
 
 import json
 import os
 from typing import Dict, List, Any, Optional, Tuple
 
+from ..canonical_export import build_canonical_export, build_reverse_alias_map
+
 
 def load_manual_gold(brand_slug: str) -> Optional[Dict]:
     """Load the full manual gold extraction for a brand."""
-    # Try multiple locations
     paths = [
         f"wi-dfi/registry/extracted-facts/{brand_slug}-GOLD.json",
         f"v7_extractor/training/gold_brands/{brand_slug}/manual_gold.json",
@@ -38,55 +32,24 @@ def load_manual_gold(brand_slug: str) -> Optional[Dict]:
     return None
 
 
-def _count_leaf_values(obj, depth=0) -> int:
-    """Count leaf values in nested structure."""
-    if isinstance(obj, dict):
-        return sum(_count_leaf_values(v, depth + 1) for v in obj.values())
-    elif isinstance(obj, list):
-        return sum(_count_leaf_values(v, depth + 1) for v in obj) if obj else 1
-    return 1
-
-
-def _extract_flat_fields(obj, prefix="") -> Dict[str, Any]:
-    """Flatten a nested dict into dot-notation keys."""
-    flat = {}
-    if isinstance(obj, dict):
-        for k, v in obj.items():
-            key = f"{prefix}.{k}" if prefix else k
-            if isinstance(v, (dict, list)):
-                flat.update(_extract_flat_fields(v, key))
-            else:
-                flat[key] = v
-    elif isinstance(obj, list):
-        for i, v in enumerate(obj):
-            key = f"{prefix}[{i}]"
-            if isinstance(v, (dict, list)):
-                flat.update(_extract_flat_fields(v, key))
-            else:
-                flat[key] = v
-    else:
-        flat[prefix] = obj
-    return flat
-
-
 # ══════════════════════════════════════════════════════════════════════════════
 # SCOREBOARD A: Narrow Gold (10 key fields)
 # ══════════════════════════════════════════════════════════════════════════════
 
-def score_narrow_gold(gold_output: Dict, brand_output: Dict) -> Dict[str, Any]:
-    """Score against the 10 narrow gold fields."""
-    key_fields = [
-        "totalUnits", "franchisedUnits", "companyOwnedUnits",
-        "totalInvestmentLow", "totalInvestmentHigh",
-        "royaltyRate", "marketingFundRate",
-        "initialFranchiseFee", "hasItem19", "item19_avgRevenue",
-    ]
+NARROW_GOLD_FIELDS = [
+    "totalUnits", "franchisedUnits", "companyOwnedUnits",
+    "totalInvestmentLow", "totalInvestmentHigh",
+    "royaltyRate", "marketingFundRate",
+    "initialFranchiseFee", "hasItem19", "item19_avgRevenue",
+]
 
+def score_narrow_gold(gold_output: Dict, canonical: Dict) -> Dict[str, Any]:
+    """Score against the 10 narrow gold fields using canonical export."""
     matches = 0
     misses = []
-    for field in key_fields:
+    for field in NARROW_GOLD_FIELDS:
         gold_val = gold_output.get(field)
-        actual_val = brand_output.get(field)
+        actual_val = canonical.get(field)
         if gold_val is not None and str(gold_val) == str(actual_val):
             matches += 1
         elif gold_val is not None:
@@ -94,111 +57,35 @@ def score_narrow_gold(gold_output: Dict, brand_output: Dict) -> Dict[str, Any]:
 
     return {
         "scoreboard": "A_narrow_gold",
-        "total_fields": len(key_fields),
+        "total_fields": len(NARROW_GOLD_FIELDS),
         "matches": matches,
         "misses": len(misses),
-        "pct": round(matches / len(key_fields) * 100, 1),
+        "pct": round(matches / len(NARROW_GOLD_FIELDS) * 100, 1),
         "pass": len(misses) == 0,
         "miss_details": misses,
     }
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SCOREBOARD B: Manual-Gold Parity (full extraction)
+# SCOREBOARD B: Manual-Gold Parity (canonical export only)
 # ══════════════════════════════════════════════════════════════════════════════
 
-# Map from manual gold item keys to where Killbill stores the data
-ITEM_ENGINE_MAP = {
-    "item1": {"engine": None, "brand_fields": [
-        "entity", "parentCompany", "entityType", "yearEstablished", "publiclyTraded",
-        "offeringPaths", "specialRisks", "systemComposition", "description",
-    ]},
-    "item2": {"engine": None},
-    "item3": {"engine": "litigation_engine"},
-    "item4": {"engine": "bankruptcy_engine"},
-    "item5": {"engine": "initial_fee_engine", "brand_fields": [
-        "initialFranchiseFee", "refundable",
-    ]},
-    "item6": {"engine": "ongoing_fee_engine", "brand_fields": [
-        "royaltyRate", "marketingFundRate", "royaltyBasis", "royaltyDetails",
-        "rentStructure", "totalRecurringEstimate",
-    ]},
-    "item7": {"engine": "initial_investment_engine", "brand_fields": [
-        "totalInvestmentLow", "totalInvestmentHigh", "biggestCost",
-    ]},
-    "item8": {"engine": "supplier_restrictions_engine", "brand_fields": [
-        "supplierRevenue",
-    ]},
-    "item10": {"engine": None, "brand_fields": ["financingAvailable"]},
-    "item11": {"engine": "training_support_engine", "brand_fields": [
-        "operationsManual",
-    ]},
-    "item12": {"engine": "territory_engine", "brand_fields": [
-        "exclusiveTerritory", "encroachmentRisk",
-    ]},
-    "item15": {"engine": "owner_participation_engine"},
-    "item16": {"engine": None},
-    "item17": {"engine": "contract_burden_engine", "also": "kill_switch_engine",
-               "brand_fields": ["item17", "nonCompete", "personalGuaranty",
-                                "renewalAvailable", "crossDefault"]},
-    "item18": {"engine": None},
-    "item19": {"engine": "item19_engine",
-               "brand_fields": ["hasItem19", "item19_avgRevenue", "medianGrossSales",
-                                "fprUnitCount", "costStructure"]},
-    "item20": {"engine": "item20_engine",
-               "brand_fields": ["totalUnits", "franchisedUnits", "companyOwnedUnits",
-                                "netChange"]},
-    "item21": {"engine": "financial_statement_engine",
-               "brand_fields": ["item21"]},
-}
-
-# Fields to skip (meta, notes, confidence — not extraction targets)
-SKIP_FIELDS = {"confidence", "notes", "trend"}
-
-# Alias map: gold field name → brand/engine field name
-# Used when gold uses different naming than the extractor
-FIELD_ALIASES = {
-    "franchisorLegalName": "entity",
-    "yearFranchiseEstablished": "yearEstablished",
-    "yearFirstFranchised": "yearEstablished",
-    "businessDescription": "description",
-    "exclusiveTerritory": "exclusiveTerritory",
-    "franchisorMayCompete": "franchisorMayCompete",
-    "disclosesFinancialPerformance": "hasItem19",
-    "hasBankruptcy": "hasBankruptcy",
-    "noBankruptcyDisclosed": "noBankruptcyDisclosed",
-    "hasLitigation": "hasLitigation",
-    "ownerOperatorRequired": "ownerOperator",
-    "productRestrictions": "productRestrictions",
-    "hasPublicFigure": "hasPublicFigure",
-    "hasAuditedFinancials": "hasAuditedFinancials",
-    "auditorName": "auditorName",
-    "hasRequiredPurchases": "hasRequiredPurchases",
-    "operationsManual": "operationsManual",
-    "operationsManualName": "operationsManual",
-    "feeIsUniform": "feeIsUniform",
-    "refundable": "refundable",
-    "contractBurdenScore": "contractBurdenScore",
-    "lockInScore": "lockInScore",
-    "territoryProtectionScore": "territoryProtectionScore",
-    "channelConflictScore": "channelConflictScore",
-    "managementQualityScore": "managementQualityScore",
-}
+# Fields in manual gold that are meta/provenance, not extraction targets
+SKIP_FIELDS = {"confidence", "notes", "trend", "extractionConfidence",
+               "confidenceNote", "sampleQuality"}
 
 
-def score_manual_gold(manual_gold: Dict, extraction: Dict) -> Dict[str, Any]:
-    """Score against the full manual gold extraction.
+def score_manual_gold(manual_gold: Dict, canonical: Dict) -> Dict[str, Any]:
+    """Score against the full manual gold using canonical export ONLY.
 
-    For each item in the manual gold, check how many fields the extractor captured.
+    For each gold field: look up in canonical export via alias map.
+    No engine digging. No evidence fishing. Just lookup.
     """
-    brand = extraction.get("brand", {})
-    engines = extraction.get("engines", {})
-    reader_facts = extraction.get("reader_discovery", {}).get("fact_store", {}).get("facts", [])
+    alias_map = build_reverse_alias_map()
 
     item_scores = {}
     total_gold = 0
     total_found = 0
-    total_missed = 0
     all_gaps = []
 
     for item_key in sorted(manual_gold.keys()):
@@ -209,31 +96,6 @@ def score_manual_gold(manual_gold: Dict, extraction: Dict) -> Dict[str, Any]:
         if not isinstance(gold_data, dict):
             continue
 
-        # Get extractor data for this item
-        mapping = ITEM_ENGINE_MAP.get(item_key, {})
-        extractor_data = {}
-
-        # Merge engine data
-        eng_name = mapping.get("engine")
-        if eng_name and eng_name in engines:
-            extractor_data.update(engines[eng_name])
-
-        also_eng = mapping.get("also")
-        if also_eng and also_eng in engines:
-            extractor_data.update(engines[also_eng])
-
-        # Merge brand-level fields
-        for bf in mapping.get("brand_fields", []):
-            if bf not in brand:
-                continue
-            val = brand[bf]
-            if isinstance(val, dict) and bf not in ("item17",):
-                # For nested dicts, merge into extractor_data (but not item17 which is special)
-                extractor_data.update(val)
-            if val is not None:
-                extractor_data[bf] = val
-
-        # Score this item
         item_found = 0
         item_total = 0
         item_gaps = []
@@ -243,14 +105,16 @@ def score_manual_gold(manual_gold: Dict, extraction: Dict) -> Dict[str, Any]:
                 continue
 
             item_total += 1
-            # Try alias if direct key not found
-            alias_key = FIELD_ALIASES.get(key, key)
-            ext_val = extractor_data.get(key)
-            if ext_val is None and alias_key != key:
-                ext_val = extractor_data.get(alias_key)
 
-            # Check if extractor has this field (any non-empty value)
-            # Note: False IS a valid extraction result (e.g., exclusiveTerritory=False)
+            # Resolve through alias map → canonical field name
+            canonical_key = alias_map.get(key, key)
+            ext_val = canonical.get(canonical_key)
+
+            # Also try direct key if alias didn't resolve differently
+            if ext_val is None and canonical_key == key:
+                ext_val = canonical.get(key)
+
+            # False IS a valid value. Only None, "", {}, [] are "not found".
             has_value = (ext_val is not None and ext_val != "" and
                         ext_val != {} and ext_val != [])
 
@@ -261,8 +125,9 @@ def score_manual_gold(manual_gold: Dict, extraction: Dict) -> Dict[str, Any]:
                 item_gaps.append({
                     "item": item_key,
                     "field": key,
+                    "canonical_key": canonical_key if canonical_key != key else None,
                     "gold_value": gold_preview,
-                    "extractor_value": str(ext_val)[:40] if ext_val is not None else "NOT EXTRACTED",
+                    "extractor_value": str(ext_val)[:40] if ext_val is not None else "NOT_IN_CANONICAL",
                 })
 
         item_scores[item_key] = {
@@ -274,58 +139,31 @@ def score_manual_gold(manual_gold: Dict, extraction: Dict) -> Dict[str, Any]:
 
         total_gold += item_total
         total_found += item_found
-        total_missed += len(item_gaps)
         all_gaps.extend(item_gaps)
 
-    # Classify gaps by failure family
+    # Classify gaps by item family
     families = {}
+    FAMILY_MAP = {
+        "item1": "identity", "item2": "leadership", "item3": "litigation",
+        "item4": "bankruptcy", "item5": "initial_fees", "item6": "fee_details",
+        "item7": "investment", "item8": "supplier", "item10": "financing",
+        "item11": "support", "item12": "territory", "item15": "participation",
+        "item16": "product", "item17": "contract_terms", "item18": "public_figure",
+        "item19": "item19_depth", "item20": "outlets", "item21": "financials",
+    }
     for gap in all_gaps:
-        item = gap["item"]
-        if item in ("item17",):
-            family = "contract_terms"
-        elif item in ("item19",):
-            family = "item19_depth"
-        elif item in ("item12",):
-            family = "territory"
-        elif item in ("item6",) and "rent" in gap["field"].lower():
-            family = "rent_structure"
-        elif item in ("item6",):
-            family = "fee_details"
-        elif item in ("item8",):
-            family = "supplier"
-        elif item in ("item2",):
-            family = "leadership"
-        elif item in ("item3",):
-            family = "litigation"
-        elif item in ("item1",):
-            family = "identity"
-        elif item in ("item7",):
-            family = "investment"
-        else:
-            family = "other"
+        family = FAMILY_MAP.get(gap["item"], "other")
+        families.setdefault(family, []).append(gap)
 
-        if family not in families:
-            families[family] = []
-        families[family].append(gap)
-
-    # Determine grade
     pct = round(total_found / max(total_gold, 1) * 100, 1)
-    if pct >= 95:
-        grade = "gold"
-    elif pct >= 80:
-        grade = "good"
-    elif pct >= 60:
-        grade = "progressing"
-    elif pct >= 30:
-        grade = "early"
-    else:
-        grade = "baseline"
+    grade = ("gold" if pct >= 95 else "good" if pct >= 80 else
+             "progressing" if pct >= 60 else "early" if pct >= 30 else "baseline")
 
     return {
         "scoreboard": "B_manual_gold_parity",
         "total_gold_fields": total_gold,
         "found": total_found,
-        "missed": total_missed,
+        "missed": total_gold - total_found,
         "pct": pct,
         "grade": grade,
         "pass": pct >= 60,
@@ -361,13 +199,17 @@ def run_full_scoring(brand_slug: str,
                      narrow_gold: Dict,
                      extraction: Dict,
                      manual_gold_path: Optional[str] = None) -> Dict[str, Any]:
-    """Run all three scoreboards."""
-    brand = extraction.get("brand", {})
+    """Run all three scoreboards.
 
-    # Scoreboard A
-    score_a = score_narrow_gold(narrow_gold, brand)
+    Builds canonical export ONCE, then all scoreboards read from it.
+    """
+    # Build canonical export — the ONLY truth layer
+    canonical = build_canonical_export(extraction)
 
-    # Scoreboard B
+    # Scoreboard A: narrow gold
+    score_a = score_narrow_gold(narrow_gold, canonical)
+
+    # Scoreboard B: manual-gold parity
     manual_gold = None
     if manual_gold_path and os.path.exists(manual_gold_path):
         with open(manual_gold_path) as f:
@@ -375,16 +217,17 @@ def run_full_scoring(brand_slug: str,
     if not manual_gold:
         manual_gold = load_manual_gold(brand_slug)
 
-    score_b = score_manual_gold(manual_gold, extraction) if manual_gold else {
+    score_b = score_manual_gold(manual_gold, canonical) if manual_gold else {
         "scoreboard": "B_manual_gold_parity",
         "status": "no_manual_gold_available",
     }
 
-    # Scoreboard C
+    # Scoreboard C: source consumption
     score_c = score_consumption(extraction)
 
-    # Overall
-    all_pass = score_a.get("pass", False) and score_b.get("pass", False) and score_c.get("pass", False)
+    all_pass = (score_a.get("pass", False) and
+                score_b.get("pass", False) and
+                score_c.get("pass", False))
 
     return {
         "brand": brand_slug,
@@ -392,4 +235,7 @@ def run_full_scoring(brand_slug: str,
         "scoreboard_A": score_a,
         "scoreboard_B": score_b,
         "scoreboard_C": score_c,
+        "canonical_field_count": len(canonical),
+        "canonical_non_null": sum(1 for v in canonical.values()
+                                  if v is not None and v != "" and v != {} and v != []),
     }
