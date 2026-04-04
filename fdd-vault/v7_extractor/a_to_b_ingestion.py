@@ -76,6 +76,12 @@ INGESTION_POLICY = {
     "item19_sampleCoveragePct": "fill",
     "item19_comparability": "fill",
 
+    # ── Identity depth scalars: fill-only ──
+    "franchiseSystemName": "fill",
+    "stateOfIncorporation": "fill",
+    "principalAddress": "fill",
+    "ultimateParent": "fill",
+
     # ── Territory / Item 12 depth scalars: fill-only ──
     "item12_onlineSalesReserved": "fill",
     "item12_nationalAccountsReserved": "fill",
@@ -661,9 +667,40 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
             return "Net Sales"
         return None
 
-    elif field == "franchisorMayCompete":
+    elif field == "franchisorMayCompete" and "item12" in str([f.get("source_item") for f in facts]):
         if re.search(r'(?:we|franchisor)\s+(?:may|can|has\s+the\s+right|reserve).*?(?:establish|operate|open|develop|franchise)', text_lower):
             return True
+        return None
+
+    # ── Identity depth fields ──
+    elif field == "stateOfIncorporation":
+        m = re.search(r'state\s+of\s+incorporation:\s+(\w+)', text_lower)
+        if m:
+            return m.group(1).title()
+        m = re.search(r'(delaware|nevada|california|kentucky|new\s+york|florida|georgia|texas|illinois)', text_lower)
+        if m:
+            return m.group(1).strip().title()
+        return None
+
+    elif field == "principalAddress":
+        for fact in facts:
+            if 'FPR_FIELD:principalAddress' in fact.get('why_important', ''):
+                return fact.get('fact_text', '').strip()[:200]
+        return None
+
+    elif field == "franchiseSystemName":
+        m = re.search(r'franchise\s+system\s+name:\s+(.+)', text_lower)
+        if m:
+            return m.group(1).strip().title()
+        return None
+
+    elif field == "ultimateParent":
+        for fact in facts:
+            if 'FPR_FIELD:ultimateParent' in fact.get('why_important', ''):
+                txt = fact.get('fact_text', '')
+                for prefix in ['Ultimate parent: ', 'Publicly traded: ']:
+                    txt = txt.replace(prefix, '')
+                return txt.strip()
         return None
 
     elif field == "mandatoryRemodel":

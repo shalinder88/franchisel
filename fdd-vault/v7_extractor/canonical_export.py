@@ -76,6 +76,35 @@ FIELD_REGISTRY = {
         "null_means": "not_extracted",
         "gold_aliases": ["businessDescription"],
     },
+    # ── Identity depth ──
+    "franchiseSystemName": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.franchiseSystemName (short brand name)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["franchiseSystemName"],
+    },
+    "stateOfIncorporation": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.stateOfIncorporation",
+        "null_means": "not_extracted",
+        "gold_aliases": ["stateOfIncorporation"],
+    },
+    "principalAddress": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.principalAddress",
+        "null_means": "not_extracted",
+        "gold_aliases": ["principalAddress"],
+    },
+    "ultimateParent": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.ultimateParent (parent + ticker if public)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["ultimateParent"],
+    },
 
     # ── Units ──
     "totalUnits": {

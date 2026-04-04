@@ -351,6 +351,48 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                     source_page=start_page, source_item=item_num,
                     importance=0.75, category="identity",
                 )
+            # State of incorporation: "We are a Delaware limited liability company"
+            m_state = re.search(r'(?:we\s+are\s+a\s+|is\s+a\s+)((?:delaware|nevada|california|kentucky|new\s+york|florida|georgia|texas|illinois|virginia|north\s+carolina|colorado|maryland|ohio|michigan|minnesota|indiana)\s+(?:limited\s+liability\s+company|corporation|llc))', sent_lower)
+            if m_state:
+                state_name = m_state.group(1).split()[0].title()
+                fact_store.add(
+                    f"State of incorporation: {state_name}",
+                    why_important="FPR_FIELD:stateOfIncorporation",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.7, category="identity",
+                )
+            # Principal address: "principal place of business is X"
+            m_addr = re.search(r'(?:principal\s+(?:place\s+of\s+business|office|address)\s+(?:is|at)\s+)([\d][^.]+)', sent_lower)
+            if m_addr:
+                fact_store.add(
+                    m_addr.group(1).strip()[:200],
+                    why_important="FPR_FIELD:principalAddress",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.6, category="identity",
+                )
+            # Franchise system name: "referred to... as 'McDonald's'" or brand name from "we" statements
+            m_name = re.search(r'(?:referred\s+to\s+(?:in\s+this|herein)\s+[^"]*[""]\s*)([\w\s\']+?)(?:[""]\s*[,.])', sent_lower)
+            if m_name:
+                fact_store.add(
+                    f"Franchise system name: {m_name.group(1).strip()}",
+                    why_important="FPR_FIELD:franchiseSystemName",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.7, category="identity",
+                )
+            # Publicly traded with ticker
+            m_ticker = re.search(r'(?:nyse|nasdaq)\s*:\s*([A-Z]+)', sent_stripped)
+            if m_ticker and re.search(r'(?:parent|predecessor|corporation)', sent_lower):
+                parent_name = None
+                m_parent = re.search(r'([\w\s\'.]+?(?:Corporation|International|Inc))', sent_stripped)
+                if m_parent:
+                    parent_name = m_parent.group(1).strip()
+                ticker = m_ticker.group(1)
+                fact_store.add(
+                    f"Ultimate parent: {parent_name} ({m_ticker.group(0)})" if parent_name else f"Publicly traded: {m_ticker.group(0)}",
+                    why_important="FPR_FIELD:ultimateParent",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.8, category="identity",
+                )
 
         # ── EXHIBIT REFERENCES ──
         if re.search(r'exhibit\s+[a-z]', sent_lower) and any(kw in sent_lower for kw in ['attached', 'included', 'see exhibit', 'set forth']):
