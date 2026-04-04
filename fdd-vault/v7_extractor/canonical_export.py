@@ -503,6 +503,20 @@ FIELD_REGISTRY = {
         "null_means": "not_extracted",
         "gold_aliases": ["multiUnitDevelopmentRights"],
     },
+    "item12_territoryDetails": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item12_territoryDetails (summary text from reader)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["territoryDetails"],
+    },
+    "item12_encroachmentNote": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item12_encroachmentNote (from reader)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["encroachmentNote"],
+    },
     "renewalAvailable": {
         "type": "Optional[bool]",
         "source": "evidence",

@@ -176,12 +176,19 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
 
         # ── TERRITORY AND COMPETITION ──
         if item_num == 12 or any(kw in sent_lower for kw in ['exclusive', 'territory', 'protected area', 'encroach']):
-            if any(kw in sent_lower for kw in ['no exclusive', 'not exclusive', 'no territory', 'no protected', 'non-exclusive']):
+            if any(kw in sent_lower for kw in ['no exclusive', 'not exclusive', 'no territory', 'no protected', 'non-exclusive', 'will not receive']):
                 fact_store.add(
                     sent_stripped[:300], why_important="NO territory protection — critical risk factor",
                     source_page=start_page, source_item=item_num,
                     importance=0.95, category="risk",
                 )
+                # Also tag as territory detail
+                if item_num == 12:
+                    fact_store.add(
+                        sent_stripped[:300], why_important="FPR_FIELD:item12_territoryDetails",
+                        source_page=start_page, source_item=item_num,
+                        importance=0.85, category="control",
+                    )
             elif 'exclusive' in sent_lower:
                 fact_store.add(
                     sent_stripped[:300], why_important="Territory/exclusivity statement",
@@ -189,32 +196,40 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                     importance=0.85, category="control",
                 )
         # Encroachment: franchisor right to open/establish competing units
-        if item_num == 12 and re.search(r'(?:we|franchisor)\s+(?:may|can|ha(?:s|ve)\s+the\s+right|reserve).*?(?:establish|operate|open|develop|franchise)', sent_lower):
+        if item_num == 12 and re.search(r'(?:we|franchisor|mcdonald)\S*\s+(?:may|can|ha(?:s|ve)\s+the\s+right|reserve).*?(?:establish|operate|open|develop|franchise|alter|compete)', sent_lower):
             fact_store.add(
-                sent_stripped[:300], why_important="Franchisor may establish competing units — encroachment risk",
+                sent_stripped[:300], why_important="FPR_FIELD:item12_encroachmentNote",
                 source_page=start_page, source_item=item_num,
                 importance=0.9, category="risk",
             )
-        # Territory depth: online/digital sales reserved
-        if item_num == 12 and re.search(r'(?:online|digital|internet|delivery|e.?commerce).*?(?:reserv|retain|control|order)', sent_lower):
+        # Territory depth: online/digital/channel reserved rights
+        if item_num == 12 and re.search(r'(?:reserves?\s+the\s+right.*?(?:channel|mark|trademark)|(?:online|digital|internet|delivery|e.?commerce).*?(?:reserv|retain|control))', sent_lower):
             fact_store.add(
                 sent_stripped[:300], why_important="FPR_FIELD:item12_onlineSalesReserved",
                 source_page=start_page, source_item=item_num,
                 importance=0.8, category="control",
             )
-        # Territory depth: national/house accounts reserved
-        if item_num == 12 and re.search(r'(?:national\s+account|house\s+account|institutional)', sent_lower):
-            fact_store.add(
-                sent_stripped[:300], why_important="FPR_FIELD:item12_nationalAccountsReserved",
-                source_page=start_page, source_item=item_num,
-                importance=0.8, category="control",
-            )
-        # Territory depth: multi-unit development
-        if item_num == 12 and re.search(r'(?:no\s+right|not\s+entitl|does\s+not\s+grant).*?(?:additional|multi|more)\s+(?:franchise|restaurant|unit)', sent_lower):
+        # Territory depth: no right to additional franchises / no multi-unit / policies not contractual
+        if item_num == 12 and (re.search(r'(?:no\s+right|not\s+entitl|does\s+not\s+grant).*?(?:additional|multi|more)\s+(?:franchise|restaurant|unit|location)', sent_lower) or
+                               re.search(r'(?:not\s+part\s+of\s+the\s+franchise\s+agreement|do\s+not\s+involve\s+any\s+contract\s+right)', sent_lower)):
             fact_store.add(
                 sent_stripped[:300], why_important="FPR_FIELD:item12_multiUnitDevelopmentRights",
                 source_page=start_page, source_item=item_num,
                 importance=0.8, category="control",
+            )
+        # Territory depth: performance requirement / no minimum sales
+        if item_num == 12 and re.search(r'(?:no\s+(?:minimum|required)\s+(?:sales|performance|revenue)|performance\s+(?:requirement|standard|quota))', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="FPR_FIELD:item12_performanceRequirement",
+                source_page=start_page, source_item=item_num,
+                importance=0.7, category="control",
+            )
+        # Territory depth: relocation
+        if item_num == 12 and re.search(r'(?:relocat|move\s+(?:your|the)\s+(?:restaurant|franchise|location))', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="FPR_FIELD:item12_relocationRights",
+                source_page=start_page, source_item=item_num,
+                importance=0.7, category="control",
             )
 
         # ── RENEWAL AND TERM ──

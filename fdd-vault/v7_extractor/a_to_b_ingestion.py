@@ -96,6 +96,8 @@ INGESTION_POLICY = {
     "item12_performanceRequirement": "fill",
     "item12_multiUnitDevelopmentRights": "fill",
     "franchisorMayCompete": "fill",
+    "item12_territoryDetails": "fill",
+    "item12_encroachmentNote": "fill",
 
     # ── Item 8 depth scalars: fill-only ──
     "item8_purchaseCooperative": "fill",
@@ -560,7 +562,7 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
 
     # ── Territory / Item 12 depth fields ──
     elif field == "item12_onlineSalesReserved":
-        if re.search(r'(?:online|digital|internet|e.?commerce|delivery).*?(?:reserv|retain|control|we\s+(?:may|can))', text_lower):
+        if re.search(r'(?:reserves?\s+the\s+right.*?(?:channel|mark|sell|goods|e.?commerce)|(?:online|digital|delivery).*?(?:reserv|retain|control))', text_lower):
             return True
         return None
 
@@ -584,7 +586,9 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
         return None
 
     elif field == "item12_multiUnitDevelopmentRights":
-        if re.search(r'(?:no|not|does\s+not)\s+(?:right|option|entitl).*?(?:additional|multi|multiple|more)\s+(?:franchise|unit|restaurant)', text_lower):
+        if re.search(r'(?:no\s+right|not\s+entitl|does\s+not\s+grant).*?(?:additional|multi|more)', text_lower):
+            return False
+        if re.search(r'(?:not\s+part\s+of\s+the\s+franchise\s+agreement|do\s+not\s+involve\s+any\s+contract\s+right)', text_lower):
             return False
         if re.search(r'(?:development\s+agreement|area\s+development|multi.?unit)', text_lower):
             return True
@@ -672,6 +676,18 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
             return "Gross Sales"
         elif re.search(r'(?:of|on)\s+net\s+sales', text_lower):
             return "Net Sales"
+        return None
+
+    elif field == "item12_territoryDetails":
+        for fact in facts:
+            if 'FPR_FIELD:item12_territoryDetails' in fact.get('why_important', ''):
+                return fact.get('fact_text', '').strip()[:200]
+        return None
+
+    elif field == "item12_encroachmentNote":
+        for fact in facts:
+            if 'FPR_FIELD:item12_encroachmentNote' in fact.get('why_important', ''):
+                return fact.get('fact_text', '').strip()[:200]
         return None
 
     elif field == "franchisorMayCompete" and "item12" in str([f.get("source_item") for f in facts]):
