@@ -110,8 +110,11 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
     # === TIER 1: CONTRACT / RENEWAL / TERMINATION ===
     "initial_term": {
         "family": FactFamily.CONTROL, "tier": FactTier.TIER_1,
-        "engine_field": "initialTermYears", "source_items": [17],
-        "signals": [r'(?:initial|franchise)\s+term.*?\d+\s*year', r'\d+\s*year\s*(?:term|franchise)'],
+        "engine_field": "initialTermYears", "source_items": [1, 17],
+        "signals": [r'(?:initial|franchise)\s+term.*?\d+\s*year', r'\d+\s*year\s*(?:term|franchise)',
+                    r'term\s+of\s+(?:the\s+)?franchise.*?\d+\s*year',
+                    r'term.*?(?:is|of)\s+(?:usually\s+)?\d+\s*year',
+                    r'(?:sto|str|bfl|satellite|traditional).*?\d+\s*year'],
     },
     "renewal_right": {
         "family": FactFamily.RISK, "tier": FactTier.TIER_1,
@@ -127,7 +130,9 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
     "non_compete": {
         "family": FactFamily.RISK, "tier": FactTier.TIER_1,
         "engine_field": "nonCompete", "source_items": [17],
-        "signals": [r'non.?compet.*?\d+\s*(?:month|year|mile)', r'\d+\s*(?:month|year).*?(?:mile|radius)'],
+        "signals": [r'non.?compet.*?\d+\s*(?:month|year|mile)', r'\d+\s*(?:month|year).*?(?:mile|radius)',
+                    r'(?:compet|similar\s+business).*?(?:\d+\s*(?:month|year)|radius)',
+                    r'covenant\s+not\s+to\s+compete'],
     },
     "transfer_restriction": {
         "family": FactFamily.CONTROL, "tier": FactTier.TIER_1,
@@ -136,13 +141,16 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
     },
     "personal_guaranty": {
         "family": FactFamily.RISK, "tier": FactTier.TIER_1,
-        "engine_field": "personalGuaranty", "source_items": [17, 10],
-        "signals": [r'personal\s+guarant', r'spousal\s+guarant', r'personally\s+liable'],
+        "engine_field": "personalGuaranty", "source_items": [9, 10, 17],
+        "signals": [r'personal\s+guarant', r'spousal\s+guarant', r'personally\s+liable',
+                    r'joint\s+and\s+several', r'indemnif'],
     },
     "mandatory_remodel": {
         "family": FactFamily.ECONOMICS, "tier": FactTier.TIER_1,
-        "engine_field": "mandatoryRemodel", "source_items": [17, 11],
-        "signals": [r'(?:remodel|renovati|refurbish).*?(?:requir|oblig|must|shall)'],
+        "engine_field": "mandatoryRemodel", "source_items": [9, 11, 17],
+        "signals": [r'(?:remodel|renovati|refurbish).*?(?:requir|oblig|must|shall)',
+                    r'(?:maintenance|appearance).*?(?:requir|standard)',
+                    r'(?:requir|must).*?(?:remodel|renovati|refurbish|upgrade)'],
     },
 
     # === TIER 1: TERRITORY ===
@@ -162,17 +170,22 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
     "fpr_average_revenue": {
         "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_1,
         "engine_field": "item19_avgRevenue", "source_items": [19],
-        "signals": [r'average.*?(?:sales|revenue).*?\$[\d,]+'],
+        "signals": [r'average.*?(?:sales|revenue).*?\$[\d,]+',
+                    r'average\s+(?:annual\s+)?(?:gross\s+)?sales\s+volume',
+                    r'\$[\d,]+.*?average'],
     },
     "fpr_median_revenue": {
         "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_1,
         "engine_field": "medianGrossSales", "source_items": [19],
-        "signals": [r'median.*?(?:sales|revenue).*?\$[\d,]+'],
+        "signals": [r'median.*?(?:sales|revenue).*?\$[\d,]+',
+                    r'median\s+(?:annual\s+)?(?:gross\s+)?sales',
+                    r'\$[\d,]+.*?median'],
     },
     "fpr_unit_count": {
         "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_1,
         "engine_field": "fprUnitCount", "source_items": [19],
-        "signals": [r'\d[\d,]+\s+(?:restaurant|outlet|unit|store|location)s?\s+(?:open|operat)'],
+        "signals": [r'\d[\d,]+\s+(?:domestic\s+)?(?:traditional\s+)?(?:restaurant|outlet|unit|store|location)s?\s+(?:open|operat)',
+                    r'(?:restaurant|outlet|unit|store)s?\s+open.*?(?:at\s+least|as\s+of)'],
     },
     "fpr_cost_structure": {
         "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_1,
@@ -201,12 +214,17 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
     "auditor": {
         "family": FactFamily.IDENTITY, "tier": FactTier.TIER_1,
         "engine_field": "auditorName", "source_items": [21],
-        "signals": [r'(?:audited|independent\s+auditor|ernst\s+&\s+young|deloitte|kpmg|pwc)'],
+        "signals": [r'(?:audited|independent\s+auditor|independent\s+registered)',
+                    r'(?:ernst\s+&\s+young|deloitte|kpmg|pwc|pricewaterhouse|bdo|grant\s+thornton|rsm)',
+                    r'financial\s+statement.*?(?:exhibit|attached)'],
     },
     "franchisor_revenue": {
         "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_1,
-        "engine_field": "franchisorRevenue", "source_items": [21, 8],
-        "signals": [r'(?:total\s+)?revenue.*?\$[\d,.]+\s*(?:million|billion)', r'(?:revenue|income).*?\$[\d,]+'],
+        "engine_field": "franchisorRevenue", "source_items": [8, 21],
+        "signals": [r'(?:total\s+)?revenue.*?\$[\d,.]+\s*(?:million|billion)',
+                    r'(?:revenue|income).*?\$[\d,]+',
+                    r'\$[\d,.]+\s*(?:million|billion).*?revenue',
+                    r'revenue\s+(?:received|from\s+franchisee)'],
     },
 
     # === TIER 2: SUPPLIER / SUPPORT ===
@@ -245,7 +263,9 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
     "cross_default_loan": {
         "family": FactFamily.RISK, "tier": FactTier.TIER_1,
         "engine_field": "crossDefault", "source_items": [10, 17],
-        "signals": [r'cross.?default', r'default.*?(?:loan|franchise\s+agreement)'],
+        "signals": [r'cross.?default', r'default.*?(?:loan|franchise\s+agreement)',
+                    r'default\s+under.*?(?:also|constitute|deemed)',
+                    r'(?:loan|financing).*?(?:default|breach).*?(?:franchise|agreement)'],
     },
 
     # === TIER 2: IDENTITY ===
@@ -280,6 +300,82 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
         "family": FactFamily.RISK, "tier": FactTier.TIER_2,
         "engine_field": "settlements", "source_items": [3],
         "signals": [r'(?:settle|resolution|judgment|paid|award).*?\$[\d,]+'],
+    },
+
+    # === NEW TYPES FROM UNTYPED BUCKET ===
+    "insurance_requirement": {
+        "family": FactFamily.ECONOMICS, "tier": FactTier.TIER_2,
+        "engine_field": "insuranceRequirements", "source_items": [8, 11, 17],
+        "signals": [r'(?:insurance|insur\w+)\s+(?:requir|must|minimum|coverage|policy)',
+                    r'(?:a\.?\s*m\.?\s*best|financial\s+(?:size|rating))'],
+    },
+    "operations_manual": {
+        "family": FactFamily.CONTROL, "tier": FactTier.TIER_2,
+        "engine_field": "operationsManual", "source_items": [11],
+        "signals": [r'(?:operations?\s+(?:and\s+training\s+)?manual|o\s*&\s*t\s+manual)',
+                    r'(?:confidential|proprietary).*?manual'],
+    },
+    "death_disability_succession": {
+        "family": FactFamily.CONTROL, "tier": FactTier.TIER_2,
+        "engine_field": "deathDisability", "source_items": [17],
+        "signals": [r'(?:death|disability|incapacit).*?(?:assign|transfer|spouse|heir)',
+                    r'(?:spouse|heir|estate).*?(?:death|disability)'],
+    },
+    "product_restriction": {
+        "family": FactFamily.CONTROL, "tier": FactTier.TIER_2,
+        "engine_field": "productRestrictions", "source_items": [16],
+        "signals": [r'(?:only\s+(?:products?|items?)\s+(?:authorized|approved))',
+                    r'(?:may\s+sell\s+only|authorized\s+products?)'],
+    },
+    "owner_operator_requirement": {
+        "family": FactFamily.CONTROL, "tier": FactTier.TIER_2,
+        "engine_field": "ownerOperator", "source_items": [15],
+        "signals": [r'(?:full.?time|best\s+efforts|personal.*?supervision|owner.?operator)',
+                    r'(?:absentee.*?(?:not|prohibit)|must\s+(?:devote|dedicate))'],
+    },
+    "confidentiality_restriction": {
+        "family": FactFamily.CONTROL, "tier": FactTier.TIER_2,
+        "engine_field": "confidentialityRestrictions", "source_items": [14, 17],
+        "signals": [r'(?:confidential|trade\s+secret|proprietary).*?(?:restrict|not\s+disclose|prohibit)',
+                    r'(?:not\s+disclose|must\s+(?:not|keep)).*?(?:confidential|secret)'],
+    },
+    "dispute_resolution": {
+        "family": FactFamily.CONTROL, "tier": FactTier.TIER_2,
+        "engine_field": "disputeResolution", "source_items": [17],
+        "signals": [r'(?:choice\s+of\s+(?:law|forum)|governing\s+law|jurisdiction)',
+                    r'(?:illinois|kentucky|state\s+of).*?(?:law|forum|jurisdiction)',
+                    r'(?:mediat|arbitrat).*?(?:not\s+(?:required|mandatory)|common\s+practice)'],
+    },
+    "technology_system_requirement": {
+        "family": FactFamily.ECONOMICS, "tier": FactTier.TIER_2,
+        "engine_field": "technologySystems", "source_items": [6, 11],
+        "signals": [r'(?:store\s+systems?|pos\s+system|cashless|kiosk|digital\s+menu)',
+                    r'(?:technology|software|hardware).*?\$[\d,]+',
+                    r'\$[\d,]+.*?(?:technology|software|system)'],
+    },
+    "franchisor_affiliate_entity": {
+        "family": FactFamily.IDENTITY, "tier": FactTier.TIER_2,
+        "engine_field": "affiliates", "source_items": [1],
+        "signals": [r'(?:affiliate|subsidiary|related\s+(?:entity|company))',
+                    r'(?:wholly.?owned|parent\s+company|predecessor)'],
+    },
+    "business_description": {
+        "family": FactFamily.IDENTITY, "tier": FactTier.TIER_2,
+        "engine_field": "businessDescription", "source_items": [1],
+        "signals": [r'(?:quick\s+service|fast\s+food|restaurant\s+franchise|limited\s+menu)',
+                    r'(?:operate|franchise).*?(?:system|restaurant|business).*?(?:of|that)'],
+    },
+    "offering_format": {
+        "family": FactFamily.IDENTITY, "tier": FactTier.TIER_2,
+        "engine_field": "offeringFormats", "source_items": [1, 5, 7],
+        "signals": [r'(?:traditional|satellite|sto|str|bfl|non.?traditional|small.?town|express|kiosk)',
+                    r'(?:format|type\s+of\s+(?:restaurant|franchise|outlet))'],
+    },
+    "state_risk_disclosure": {
+        "family": FactFamily.RISK, "tier": FactTier.TIER_2,
+        "engine_field": "stateRisks", "source_items": [1],
+        "signals": [r'(?:out.?of.?state|michigan|california|illinois).*?(?:dispute|resolution|law)',
+                    r'(?:state\s+(?:risk|specific|cover\s+page))'],
     },
 }
 
