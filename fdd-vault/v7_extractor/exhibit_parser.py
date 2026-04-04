@@ -52,14 +52,26 @@ def parse_financial_exhibit(exhibit: ExhibitObject,
         (r"CohnReznick(?:\s+LLP)?", "CohnReznick"),
         (r"Baker\s+Tilly(?:\s+US)?(?:\s+LLP)?", "Baker Tilly"),
         (r"Plante\s+(?:&\s+)?Moran", "Plante Moran"),
+        (r"Marcum(?:\s+LLP)?", "Marcum"),
+        (r"Wipfli(?:\s+LLP)?", "Wipfli"),
+        (r"Eide\s+Bailly(?:\s+LLP)?", "Eide Bailly"),
+        (r"Armanino(?:\s+LLP)?", "Armanino"),
+        (r"Forvis\s+Mazars|FORVIS|Dixon\s+Hughes\s+Goodman", "Forvis Mazars"),
+        (r"Carr\s+Riggs\s+(?:&\s+)?Ingram|CRI\b", "Carr Riggs & Ingram"),
+        (r"Citrin\s+Cooperman", "Citrin Cooperman"),
+        (r"Weaver(?:\s+and\s+Tidwell)?(?:\s+LLP)?", "Weaver"),
+        (r"Withum(?:\s+Smith\s+(?:&\s+)?Brown)?", "Withum"),
+        (r"Cherry\s+Bekaert(?:\s+LLP)?", "Cherry Bekaert"),
     ]
     for pattern, name in AUDITORS:
-        if re.search(pattern, text[:8000], re.I):
+        if re.search(pattern, text[:12000], re.I):
             data["auditorName"] = name
             data["hasAuditedFinancials"] = True
             break
     if "hasAuditedFinancials" not in data:
-        if re.search(r"independent\s+(?:registered\s+public\s+)?(?:accounting\s+firm|auditor)", text[:5000], re.I):
+        if re.search(r"independent\s+(?:registered\s+public\s+)?(?:accounting\s+firm|auditor|accountant)", text[:8000], re.I):
+            data["hasAuditedFinancials"] = True
+        elif re.search(r"(?:balance\s+sheet|statements?\s+of\s+(?:financial\s+position|operations|income))", text[:8000], re.I):
             data["hasAuditedFinancials"] = True
 
     # ── Opinion ──
@@ -396,4 +408,116 @@ def parse_all_exhibits(exhibits: Dict[str, ExhibitObject],
             exhibit.parsed = True
             results[exhibit.code] = data
 
+    # Fallback: if no financial exhibit found, scan all pages for auditor/financial signals
+    if "financials" not in results:
+        fin_data = _scan_all_pages_for_financials(page_reads)
+        if fin_data:
+            results["financials"] = fin_data
+
     return results
+
+
+def _scan_all_pages_for_financials(page_reads: List[PageRead]) -> Dict[str, Any]:
+    """Scan all pages for financial statement signals when no labeled exhibit found.
+
+    Looks for auditor signatures, balance sheet / income statement labels, and
+    key financial figures. Used as fallback for brands that don't label their
+    financial exhibit correctly.
+    """
+    # Scan pages likely to contain financial statements (last third of doc typically)
+    n = len(page_reads)
+    scan_pages = page_reads[max(0, n // 2):]  # scan second half of document
+    if not scan_pages:
+        return {}
+
+    data: Dict[str, Any] = {}
+
+    AUDITORS = [
+        (r"Deloitte\s*(?:&\s*Touche)?(?:\s+LLP)?", "Deloitte"),
+        (r"PricewaterhouseCoopers|PwC", "PricewaterhouseCoopers"),
+        (r"KPMG(?:\s+LLP)?", "KPMG"),
+        (r"Ernst\s*&\s*Young|EY\b", "Ernst & Young"),
+        (r"BDO\s*(?:USA)?(?:\s+LLP)?", "BDO"),
+        (r"Grant\s+Thornton(?:\s+LLP)?", "Grant Thornton"),
+        (r"RSM\s+US(?:\s+LLP)?", "RSM"),
+        (r"Moss\s+Adams(?:\s+LLP)?", "Moss Adams"),
+        (r"CohnReznick(?:\s+LLP)?", "CohnReznick"),
+        (r"Baker\s+Tilly(?:\s+US)?(?:\s+LLP)?", "Baker Tilly"),
+        (r"Plante\s+(?:&\s+)?Moran", "Plante Moran"),
+        (r"Marcum(?:\s+LLP)?", "Marcum"),
+        (r"Wipfli(?:\s+LLP)?", "Wipfli"),
+        (r"Eide\s+Bailly(?:\s+LLP)?", "Eide Bailly"),
+        (r"Armanino(?:\s+LLP)?", "Armanino"),
+        (r"Forvis\s+Mazars|FORVIS|Dixon\s+Hughes\s+Goodman", "Forvis Mazars"),
+        (r"Carr\s+Riggs\s+(?:&\s+)?Ingram|CRI\b", "Carr Riggs & Ingram"),
+        (r"Citrin\s+Cooperman", "Citrin Cooperman"),
+        (r"Weaver(?:\s+and\s+Tidwell)?(?:\s+LLP)?", "Weaver"),
+        (r"Withum(?:\s+Smith\s+(?:&\s+)?Brown)?", "Withum"),
+    ]
+
+    # Find pages with auditor or financial statement keywords
+    fin_pages = []
+    for pr in scan_pages:
+        txt = pr.text[:3000]
+        for pattern, name in AUDITORS:
+            if re.search(pattern, txt, re.I):
+                data["auditorName"] = name
+                data["hasAuditedFinancials"] = True
+                fin_pages.append(pr)
+                break
+        if not fin_pages:
+            if re.search(r"(?:balance\s+sheet|statements?\s+of\s+(?:financial\s+position|operations|income)|"
+                         r"independent\s+(?:auditor|accountant))", txt, re.I):
+                data["hasAuditedFinancials"] = True
+                fin_pages.append(pr)
+
+    if not fin_pages:
+        return {}
+
+    # Extract financial figures from found pages
+    combined = "\n".join(pr.text for pr in fin_pages[:10])
+
+    def _find_amount(pattern, window=500):
+        m = re.search(pattern, combined, re.I)
+        if not m:
+            return None
+        for snippet in [combined[m.end():m.end()+window], combined[max(0,m.start()-100):m.start()]]:
+            am = re.search(r"\$?\s*([\d,]+(?:\.\d+)?)\s*(million|billion|thousand|M|B|K)?", snippet, re.I)
+            if am and am.group(1):
+                raw_str = am.group(1).replace(",", "").strip()
+                if not raw_str:
+                    continue
+                raw = float(raw_str)
+                if am.group(2):
+                    mult = {"million":1e6,"billion":1e9,"thousand":1e3,"m":1e6,"b":1e9,"k":1e3}
+                    raw *= mult.get(am.group(2).lower(), 1)
+                return int(raw) if raw >= 1000 else None
+        return None
+
+    rev = _find_amount(r"(?:total\s+)?(?:net\s+)?revenues?")
+    if rev and rev > 100000:
+        data["franchisorRevenue"] = rev
+    assets = _find_amount(r"total\s+assets")
+    if assets and assets > 10000:
+        data["franchisorTotalAssets"] = assets
+    liab = _find_amount(r"total\s+liabilities")
+    if liab:
+        data["franchisorTotalLiabilities"] = liab
+    ni = _find_amount(r"net\s+(?:income|loss)")
+    if ni is not None:
+        data["franchisorNetIncome"] = ni
+
+    if re.search(r"present\s+fairly.*?in\s+all\s+material\s+respects|in\s+our\s+opinion.*fairly", combined, re.I):
+        data["auditorOpinion"] = "clean"
+
+    data["goingConcernWarning"] = bool(re.search(
+        r"substantial\s+doubt.{0,80}(?:going\s+concern|ability\s+to\s+continue)", combined, re.I))
+
+    if data.get("goingConcernWarning") or data.get("auditorOpinion") in ("adverse", "disclaimer"):
+        data["financialStrengthSignal"] = "weak"
+    elif data.get("auditorOpinion") == "clean":
+        data["financialStrengthSignal"] = "strong"
+    else:
+        data["financialStrengthSignal"] = "adequate"
+
+    return data

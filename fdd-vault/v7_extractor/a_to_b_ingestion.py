@@ -14,7 +14,7 @@ It checks what A found that B missed, and fills the gaps.
 """
 
 import re
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 from .models import EvidenceStore, EvidenceState
 from .fact_ontology import FACT_TYPES, FactTier
 
@@ -286,6 +286,15 @@ def ingest_typed_facts_into_evidence(classified_facts: List[Dict],
                 "fact_count": len(facts),
             })
 
+    # ── Global FPR scan: extract avg/median from ALL reader facts ──
+    # This catches brands where item 19 section is mis-segmented.
+    # Runs only if avg/median not already populated by item19 parser.
+    _global_fpr_scan(classified_facts, evidence)
+
+    # ── Global initial fee scan: extract franchise fee from ALL facts ──
+    # Fallback for brands where item 5 has no tables and text parser misses.
+    _global_initial_fee_scan(classified_facts, evidence)
+
     return {
         "ingested": len(ingested),
         "confirmed": len(confirmed),
@@ -297,6 +306,169 @@ def ingest_typed_facts_into_evidence(classified_facts: List[Dict],
             "skipped": skipped,
         },
     }
+
+
+def _global_initial_fee_scan(classified_facts: List[Dict], evidence: EvidenceStore) -> None:
+    """Scan ALL reader facts for initial franchise fee when item5 tables failed.
+
+    Covers: no-table item5 sections, narrative-only FDDs, establishment fee brands.
+    Only fills gaps — won't overwrite values set by item5 parser or engine_builder.
+    """
+    if evidence.get("initialFranchiseFee") is not None:
+        return  # Lane B already has it
+
+    # Collect item5-context and fee-relevant text from ALL facts
+    fee_texts = []
+    for fact in classified_facts:
+        src_item = fact.get("source_item")
+        txt = fact.get("fact_text", "")
+        why = fact.get("why_important", "")
+        if not txt:
+            continue
+        if (src_item == 5
+                or "franchise fee" in txt.lower()
+                or "establishment fee" in txt.lower()
+                or "initial fee" in txt.lower()
+                or "franchise_fee" in why.lower()):
+            fee_texts.append(txt)
+
+    combined = " ".join(fee_texts).lower()
+    if not combined:
+        return
+
+    # Patterns ordered: most specific first
+    fee_patterns = [
+        # "Initial Franchise Fee: $34,900" or "Initial Franchise Fee — $34,900"
+        r'initial\s+(?:franchise|establishment)\s+fee\s*[:–\-]\s*\$\s*([\d,]+(?:\.\d{2})?)',
+        # "$X initial franchise fee"
+        r'\$\s*([\d,]+(?:\.\d{2})?)\s+(?:lump\s+sum\s+)?initial\s+(?:franchise|establishment)\s+fee',
+        # "initial franchise fee of $X"
+        r'initial\s+(?:franchise|establishment)\s+fee\s+(?:is\s+)?(?:of\s+)?\$\s*([\d,]+(?:\.\d{2})?)',
+        # "franchise fee ... $X" (fee before amount, close match)
+        r'(?:franchise|establishment)\s+fee[^$]{0,150}?\$\s*([\d,]+(?:\.\d{2})?)',
+        # "establishment fee of $X" (F45-style)
+        r'establishment\s+fee\s+(?:of\s+)?\$\s*([\d,]+(?:\.\d{2})?)',
+    ]
+    for pat in fee_patterns:
+        m = re.search(pat, combined)
+        if m:
+            val = float(m.group(1).replace(",", ""))
+            # Plausible franchise fee: $5k-$500k
+            if 5000 <= val <= 500000:
+                evidence.set("initialFranchiseFee", int(val), EvidenceState.PRESENT)
+                return
+
+
+def _global_fpr_scan(classified_facts: List[Dict], evidence: EvidenceStore) -> None:
+    """Scan ALL reader facts for FPR average/median/high/low revenue.
+
+    Works even when item 19 section is mis-segmented. Only fills gaps —
+    won't overwrite values already extracted by the item19 parser.
+    """
+    already_has_avg = evidence.get("item19_avgRevenue") is not None
+    already_has_median = evidence.get("medianGrossSales") is not None
+    already_has_high = evidence.get("item19_highRevenue") is not None
+    already_has_low = evidence.get("item19_lowRevenue") is not None
+    already_has_count = evidence.get("fprUnitCount") is not None
+
+    # Collect all text from performance-tagged or item19-context facts
+    perf_texts = []
+    for fact in classified_facts:
+        why = fact.get("why_important", "")
+        src_item = fact.get("source_item")
+        txt = fact.get("fact_text", "")
+        if not txt:
+            continue
+        if (src_item == 19 or "FPR" in why or "performance" in why.lower()
+                or "average" in txt.lower() or "median" in txt.lower()):
+            perf_texts.append(txt)
+
+    combined = " ".join(perf_texts)
+    combined_lower = combined.lower()
+
+    def _parse_dollar(text: str) -> Optional[int]:
+        m = re.search(r'\$\s*([\d,]+(?:\.\d{2})?)', text)
+        if m:
+            val = float(m.group(1).replace(",", ""))
+            return int(val) if val >= 1000 else None
+        return None
+
+    # Average revenue patterns (broad — catches "Average Yearly Total Sales: $399,179")
+    if not already_has_avg:
+        avg_patterns = [
+            r'average\s+(?:yearly\s+)?(?:total\s+)?(?:annual\s+)?(?:gross\s+)?(?:net\s+)?'
+            r'(?:service\s+)?(?:royalty\s+)?(?:unit\s+)?(?:sales|revenue|volume|eft|sales\s+volume)'
+            r'[:\s,]+(?:was\s+)?(?:of\s+)?\$\s*([\d,]+)',
+            r'average\s+(?:annual\s+)?(?:net\s+)?sales\s+(?:was|of|:)\s*\$\s*([\d,]+)',
+            r'average\s+(?:auv|auw|ats)\s*[:\$]*\s*([\d,]+)',
+        ]
+        for pat in avg_patterns:
+            m = re.search(pat, combined_lower, re.DOTALL)
+            if m:
+                val = float(m.group(1).replace(",", ""))
+                if val >= 10000:
+                    evidence.set("item19_avgRevenue", int(val), EvidenceState.PRESENT)
+                    break
+
+    # Median revenue patterns
+    if not already_has_median:
+        med_patterns = [
+            r'median\s+(?:yearly\s+)?(?:total\s+)?(?:annual\s+)?(?:gross\s+)?(?:net\s+)?'
+            r'(?:service\s+)?(?:total\s+)?(?:sales|revenue|volume|eft)'
+            r'[:\s,]+(?:was\s+)?(?:of\s+)?\$\s*([\d,]+)',
+            r'median\s+(?:annual\s+)?(?:net\s+)?sales\s+(?:was|of|:)\s*\$\s*([\d,]+)',
+        ]
+        for pat in med_patterns:
+            m = re.search(pat, combined_lower, re.DOTALL)
+            if m:
+                val = float(m.group(1).replace(",", ""))
+                if val >= 10000:
+                    evidence.set("medianGrossSales", int(val), EvidenceState.PRESENT)
+                    break
+
+    # Highest unit revenue
+    if not already_has_high:
+        high_patterns = [
+            r'(?:highest|maximum|top)\s+(?:performing\s+)?(?:unit|restaurant|location|store|salon|outlet)'
+            r'\s+(?:had|achieved|earned|reported|with)?\s*\$\s*([\d,]+)',
+            r'(?:high|highest|maximum)\s+[:\s]*\$\s*([\d,]+)',
+        ]
+        for pat in high_patterns:
+            m = re.search(pat, combined_lower)
+            if m:
+                val = float(m.group(1).replace(",", ""))
+                if val >= 10000:
+                    evidence.set("item19_highRevenue", int(val), EvidenceState.PRESENT)
+                    break
+
+    # Lowest unit revenue
+    if not already_has_low:
+        low_patterns = [
+            r'(?:lowest|minimum|bottom)\s+(?:performing\s+)?(?:unit|restaurant|location|store|salon|outlet)'
+            r'\s+(?:had|achieved|earned|reported|with)?\s*\$\s*([\d,]+)',
+        ]
+        for pat in low_patterns:
+            m = re.search(pat, combined_lower)
+            if m:
+                val = float(m.group(1).replace(",", ""))
+                if val >= 1000:
+                    evidence.set("item19_lowRevenue", int(val), EvidenceState.PRESENT)
+                    break
+
+    # FPR unit count from performance text
+    if not already_has_count:
+        count_patterns = [
+            r'(\d[\d,]+)\s+(?:domestic\s+)?(?:traditional\s+)?(?:franchised?\s+)?'
+            r'(?:salons?|restaurants?|outlets?|units?|stores?|locations?|clubs?)\s+'
+            r'(?:that\s+)?(?:open|operat|eligible|includ|report)',
+        ]
+        for pat in count_patterns:
+            m = re.search(pat, combined_lower)
+            if m:
+                count = int(m.group(1).replace(",", ""))
+                if count >= 10:
+                    evidence.set("fprUnitCount", count, EvidenceState.PRESENT)
+                    break
 
 
 def compute_derived_facts(evidence: EvidenceStore, engines: Dict[str, Any]) -> Dict[str, Any]:

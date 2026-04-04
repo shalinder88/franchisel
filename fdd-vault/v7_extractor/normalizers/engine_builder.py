@@ -234,10 +234,22 @@ def build_all_engines(items: Dict[int, ItemSection],
     i19 = parsed_items.get(19, {})
     has_fpr = _pv(i19.get("has_fpr"), False)
     avg_rev = _pv(i19.get("average_revenue"))
+    median_rev = _pv(i19.get("median_revenue"))
+    high_rev = _pv(i19.get("highest_unit_revenue"))
+    low_rev = _pv(i19.get("lowest_unit_revenue"))
+    fpr_unit_count = _pv(i19.get("fpr_unit_count"))
     engines["item19_engine"] = {k: _pv(v) for k, v in i19.items() if k != "item"}
     evidence.set("hasItem19", has_fpr, EvidenceState.PRESENT if "has_fpr" in i19 else EvidenceState.NOT_FOUND)
     if avg_rev:
         evidence.set("item19_avgRevenue", avg_rev, EvidenceState.PRESENT)
+    if median_rev:
+        evidence.set("medianGrossSales", median_rev, EvidenceState.PRESENT)
+    if high_rev:
+        evidence.set("item19_highRevenue", high_rev, EvidenceState.PRESENT)
+    if low_rev:
+        evidence.set("item19_lowRevenue", low_rev, EvidenceState.PRESENT)
+    if fpr_unit_count:
+        evidence.set("fprUnitCount", fpr_unit_count, EvidenceState.PRESENT)
 
     # ── Item 20: Outlet Engine ──
     i20 = parsed_items.get(20, {})

@@ -153,23 +153,35 @@ def parse_item05(section: ItemSection) -> Dict[str, Any]:
             "provenance": prov_base,
         }
 
-    # Fallback: if no table-based franchise fee found, try text extraction
-    # General rule: "$45,000 lump sum initial franchise fee" (amount BEFORE label)
-    # OR "initial franchise fee of $45,000" (amount AFTER label)
+    # Fallback: if no table-based franchise fee found, try text extraction.
+    # Covers multiple formats:
+    #   - "initial franchise fee of $X" / "franchise fee ... $X" (label before amount)
+    #   - "$X ... franchise fee" (amount before label)
+    #   - "establishment fee of $X" (F45, some fitness brands use this term)
+    #   - Colon-separated: "Initial Franchise Fee: $X,XXX"
+    #   - "pay us $X" as the primary payment in item 5 context
     if result["franchise_fee"]["state"] == EvidenceState.NOT_FOUND.value:
+        # Use original case text for dollar extraction (text_lower loses nothing for $amounts)
         ff_patterns = [
+            # Colon/dash style: "Initial Franchise Fee: $34,900"
+            r'(?:initial\s+)?(?:franchise|establishment)\s+fee\s*[:–-]\s*\$\s*([\d,]+(?:\.\d{2})?)',
             # Amount before label: "pay a $45,000 ... franchise fee"
-            r'\$\s*([\d,]+(?:\.\d{2})?)\s+(?:lump\s+sum\s+)?(?:initial\s+)?franchise\s+fee',
-            # Label before amount: "franchise fee ... $45,000"
-            r'(?:initial\s+)?franchise\s+fee.*?\$\s*([\d,]+(?:\.\d{2})?)',
+            r'\$\s*([\d,]+(?:\.\d{2})?)\s+(?:lump\s+sum\s+)?(?:initial\s+)?(?:franchise|establishment)\s+fee',
+            # Label before amount (non-greedy, within 200 chars): "franchise fee ... $45,000"
+            r'(?:initial\s+)?franchise\s+fee[^$]{0,200}?\$\s*([\d,]+(?:\.\d{2})?)',
+            # Establishment fee (e.g. F45: "establishment fee of $60,000")
+            r'establishment\s+fee[^$]{0,200}?\$\s*([\d,]+(?:\.\d{2})?)',
             # Generic: "initial fee of $X"
             r'initial\s+fee\s+(?:of\s+)?\$\s*([\d,]+(?:\.\d{2})?)',
+            # Narrative: "you will pay us $X" where X is a large round number (fallback for item 5 context)
+            r'you\s+(?:will\s+)?(?:must\s+)?pay\s+(?:us\s+)?(?:a\s+)?\$\s*([\d,]+(?:\.\d{2})?)',
         ]
         for pattern in ff_patterns:
-            ff_match = re.search(pattern, text_lower, re.DOTALL)
+            ff_match = re.search(pattern, text_lower, re.IGNORECASE)
             if ff_match:
                 amt = float(ff_match.group(1).replace(",", ""))
-                if amt >= 100:  # sanity: must be at least $100
+                # Sanity: must be a plausible franchise fee ($5k-$500k)
+                if 5000 <= amt <= 500000:
                     result["franchise_fee"] = {
                         "value": {"amount": amt},
                         "state": EvidenceState.PRESENT.value,

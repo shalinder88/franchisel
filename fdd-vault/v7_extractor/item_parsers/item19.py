@@ -160,10 +160,16 @@ def parse_item19(section: ItemSection) -> Dict[str, Any]:
             r'average\s+(?:annual\s+)?(?:gross\s+)?sales\s+volume.*?was\s+\$\s*([\d,]+)',
             r'average\s+(?:annual\s+)?(?:net\s+)?(?:royalty\s+)?sales.*?(?:was|of)\s+\$\s*([\d,]+)',
             r'average\s+(?:annual\s+)?(?:unit\s+)?(?:volume|revenue).*?(?:was|of)\s+\$\s*([\d,]+)',
+            # Broader: "Average Yearly Total Sales: $399,179" or "Average Total Sales of $399,179"
+            r'average\s+(?:yearly\s+)?(?:total\s+)?(?:service\s+)?(?:sales|revenue|eft|volume)'
+            r'\s*[:\-]\s*\$\s*([\d,]+)',
+            r'average\s+(?:total\s+)?(?:service\s+)?(?:sales|revenue|eft|volume)\s+(?:of|was|is)\s+\$\s*([\d,]+)',
+            # Table header style: "Average" row with dollar cell
+            r'(?:^|\n)\s*average[^$\n]{0,50}\$\s*([\d,]+)',
         ]
         for pattern in avg_patterns:
             # Use DOTALL to match across newlines
-            m = re.search(pattern, text_lower, re.DOTALL)
+            m = re.search(pattern, text_lower, re.DOTALL | re.MULTILINE)
             if m:
                 val = float(m.group(1).replace(",", ""))
                 if val >= 10000:
@@ -179,16 +185,22 @@ def parse_item19(section: ItemSection) -> Dict[str, Any]:
 
     # --- EXTRACT median, unit count, high/low from prose ---
     # General rule: FPR text often states these in narrative form
-    median_match = re.search(
-        r'median\s+(?:annual\s+)?(?:gross\s+)?(?:sales|revenue).*?(?:was|of)\s+\$\s*([\d,]+)',
-        text_lower, re.DOTALL
-    )
-    if median_match:
-        result["median_revenue"] = {
-            "value": int(median_match.group(1).replace(",", "")),
-            "state": EvidenceState.PRESENT.value,
-            "provenance": prov_base,
-        }
+    median_patterns = [
+        r'median\s+(?:annual\s+)?(?:gross\s+)?(?:total\s+)?(?:service\s+)?'
+        r'(?:sales|revenue|eft|volume).*?(?:was|of)\s+\$\s*([\d,]+)',
+        r'median\s+(?:total\s+)?(?:service\s+)?(?:sales|revenue|eft|volume)'
+        r'\s*[:\-]\s*\$\s*([\d,]+)',
+        r'(?:^|\n)\s*median[^$\n]{0,50}\$\s*([\d,]+)',
+    ]
+    for mpat in median_patterns:
+        median_match = re.search(mpat, text_lower, re.DOTALL | re.MULTILINE)
+        if median_match:
+            result["median_revenue"] = {
+                "value": int(median_match.group(1).replace(",", "")),
+                "state": EvidenceState.PRESENT.value,
+                "provenance": prov_base,
+            }
+            break
 
     # Unit count
     unit_match = re.search(

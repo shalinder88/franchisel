@@ -59,7 +59,8 @@ FIELD_REGISTRY = {
         "source_detail": "evidence.yearEstablished (predecessor-priority extraction)",
         "runtime_key": "yearEstablished",  # brand/evidence uses this name
         "null_means": "not_extracted",
-        "gold_aliases": ["yearFranchiseEstablished", "yearFirstFranchised"],
+        "gold_aliases": ["yearFranchiseEstablished", "yearFirstFranchised",
+                         "franchisingSince", "franchisedSince", "firstFranchised"],
     },
     "entityFormationYear": {
         "type": "Optional[int]",
@@ -135,42 +136,51 @@ FIELD_REGISTRY = {
         "source": "evidence",
         "source_detail": "evidence.initialFranchiseFee",
         "null_means": "not_extracted",
-        "gold_aliases": [],
+        "gold_aliases": ["initialFranchiseFee", "franchiseFee", "initialFee",
+                         "establishmentFee", "initialFranchise", "standardPurchasePrice",
+                         "franchiseFeeAmount"],
     },
     "totalInvestmentLow": {
         "type": "Optional[int]",
         "source": "evidence",
         "source_detail": "evidence.totalInvestmentLow (blocked from A→B)",
         "null_means": "not_extracted",
-        "gold_aliases": [],
+        "gold_aliases": ["totalLow", "totalInvestmentLow", "low"],
     },
     "totalInvestmentHigh": {
         "type": "Optional[int]",
         "source": "evidence",
         "source_detail": "evidence.totalInvestmentHigh (blocked from A→B)",
         "null_means": "not_extracted",
-        "gold_aliases": [],
+        "gold_aliases": ["totalHigh", "totalInvestmentHigh", "high"],
     },
     "royaltyRate": {
         "type": "Optional[str]",
         "source": "evidence",
         "source_detail": "evidence.royaltyRate (blocked from A→B, confirm-only)",
         "null_means": "not_extracted",
-        "gold_aliases": [],
+        "gold_aliases": ["rate", "royaltyRate", "serviceFeeRate"],
     },
     "marketingFundRate": {
         "type": "Optional[str]",
         "source": "evidence",
         "source_detail": "evidence.marketingFundRate (blocked from A→B, confirm-only)",
         "null_means": "not_extracted",
-        "gold_aliases": ["advertisingFundRate"],
+        "gold_aliases": ["advertisingFundRate", "adFundRate", "brandFundRate"],
     },
     "royaltyBasis": {
         "type": "Optional[str]",
         "source": "evidence",
         "source_detail": "evidence.royaltyBasis",
         "null_means": "not_extracted",
-        "gold_aliases": ["royaltyBasis"],
+        "gold_aliases": ["royaltyBasis", "basis", "grossSalesDefinition"],
+    },
+    "royaltyFrequency": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.royaltyFrequency (payment frequency)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["frequency", "royaltyFrequency", "paymentFrequency"],
     },
     "refundable": {
         "type": "Optional[bool]",
@@ -307,28 +317,51 @@ FIELD_REGISTRY = {
         "source": "evidence",
         "source_detail": "evidence.hasItem19 (blocked from A→B)",
         "null_means": "not_extracted",
-        "gold_aliases": ["disclosesFinancialPerformance"],
+        "gold_aliases": ["disclosesFinancialPerformance", "hasItem19"],
     },
     "item19_avgRevenue": {
         "type": "Optional[int]",
         "source": "evidence",
         "source_detail": "evidence.item19_avgRevenue",
         "null_means": "not_extracted",
-        "gold_aliases": [],
+        "gold_aliases": ["avg", "avgRevenue", "averageRevenue", "avgEFT", "avgAnnualRevenue",
+                         "annualRevenue", "monthlyAvg", "averageAnnualRevenue",
+                         "averageNetSales", "averageGrossSales", "totalAvgAnnualRevenue",
+                         "avgAnnualGrossSales", "averageAnnualGrossSales"],
     },
     "medianGrossSales": {
         "type": "Optional[int]",
         "source": "evidence",
         "source_detail": "evidence.medianGrossSales",
         "null_means": "not_extracted",
-        "gold_aliases": [],
+        "gold_aliases": ["median", "medianRevenue", "medianEFT", "medianAnnualRevenue",
+                         "medianGrossSales", "medianNetSales", "medianAnnualGrossSales"],
     },
     "fprUnitCount": {
         "type": "Optional[int]",
         "source": "evidence",
         "source_detail": "evidence.fprUnitCount",
         "null_means": "not_extracted",
-        "gold_aliases": [],
+        "gold_aliases": ["includedClubs", "includedUnits", "includedStores",
+                         "totalClubs", "fprUnitCount", "storesIncluded",
+                         "unitsIncluded", "includedStudios", "studiosIncluded",
+                         "reportingPopulation"],
+    },
+    "item19_highRevenue": {
+        "type": "Optional[int]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_highRevenue (highest unit)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["highEFT", "highRevenue", "highestRevenue", "maxRevenue",
+                         "maximum", "highestUnit", "highestAnnualRevenue"],
+    },
+    "item19_lowRevenue": {
+        "type": "Optional[int]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_lowRevenue (lowest unit)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["lowEFT", "lowRevenue", "lowestRevenue", "minRevenue",
+                         "minimum", "lowestUnit", "lowestAnnualRevenue"],
     },
 
     # ── Item 19 depth ──
@@ -950,7 +983,7 @@ FIELD_REGISTRY = {
         "source": "engine",
         "source_detail": "engine.financial_statement_engine.auditorOpinion",
         "null_means": "not_extracted",
-        "gold_aliases": [],
+        "gold_aliases": ["auditOpinion", "auditorOpinion", "auditConclusion"],
     },
     "item21_hasAuditedFinancials": {
         "type": "Optional[bool]",
@@ -985,7 +1018,51 @@ FIELD_REGISTRY = {
         "source": "evidence",
         "source_detail": "evidence.franchisorRevenue",
         "null_means": "not_extracted",
-        "gold_aliases": [],
+        "gold_aliases": ["totalRevenue", "totalRevenues", "franchisorRevenue",
+                         "totalNetRevenue", "netRevenue"],
+    },
+    "item21_netIncome": {
+        "type": "Optional[Any]",
+        "source": "engine",
+        "source_detail": "engine.financial_statement_engine.franchisorNetIncome",
+        "null_means": "not_extracted",
+        "gold_aliases": ["netIncome", "franchisorNetIncome", "netEarnings"],
+    },
+    "item21_totalAssets": {
+        "type": "Optional[Any]",
+        "source": "engine",
+        "source_detail": "engine.financial_statement_engine.franchisorTotalAssets",
+        "null_means": "not_extracted",
+        "gold_aliases": ["totalAssets", "franchisorTotalAssets"],
+    },
+    "item21_totalLiabilities": {
+        "type": "Optional[Any]",
+        "source": "engine",
+        "source_detail": "engine.financial_statement_engine.franchisorTotalLiabilities",
+        "null_means": "not_extracted",
+        "gold_aliases": ["totalLiabilities", "franchisorTotalLiabilities"],
+    },
+    "item21_equity": {
+        "type": "Optional[Any]",
+        "source": "engine",
+        "source_detail": "engine.financial_statement_engine.franchisorEquity",
+        "null_means": "not_extracted",
+        "gold_aliases": ["totalEquity", "membersEquity", "stockholdersEquity",
+                         "totalMembersEquity", "franchisorEquity"],
+    },
+    "item21_cashAndEquivalents": {
+        "type": "Optional[Any]",
+        "source": "engine",
+        "source_detail": "engine.financial_statement_engine.franchisorCashAndEquivalents",
+        "null_means": "not_extracted",
+        "gold_aliases": ["cashAndEquivalents", "franchisorCashAndEquivalents"],
+    },
+    "item21_inThousands": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.financial_statement_engine.inThousands",
+        "null_means": "not_extracted",
+        "gold_aliases": ["inThousands"],
     },
 
     # ── Document ──
@@ -1219,7 +1296,19 @@ def _resolve_engine_field(field_name: str, engines: Dict, brand: Dict) -> Any:
         return eng15.get("absentee_allowed")
 
     # Item 21 financial engine fields
-    if field_name == "item21_hasAuditedFinancials":
+    if field_name == "item21_netIncome":
+        return fin.get("franchisorNetIncome")
+    elif field_name == "item21_totalAssets":
+        return fin.get("franchisorTotalAssets")
+    elif field_name == "item21_totalLiabilities":
+        return fin.get("franchisorTotalLiabilities")
+    elif field_name == "item21_equity":
+        return fin.get("franchisorEquity")
+    elif field_name == "item21_cashAndEquivalents":
+        return fin.get("franchisorCashAndEquivalents")
+    elif field_name == "item21_inThousands":
+        return fin.get("inThousands")
+    elif field_name == "item21_hasAuditedFinancials":
         return fin.get("hasAuditedFinancials")
     elif field_name == "item21_auditorTier":
         auditor = fin.get("auditorName", "")
