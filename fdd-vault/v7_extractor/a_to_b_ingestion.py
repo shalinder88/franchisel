@@ -64,6 +64,12 @@ INGESTION_POLICY = {
     "supplierRevenue": "fill",
     "refundable": "fill",
 
+    # ── Small item scalars: fill-only ──
+    "item5_feeIsUniform": "fill",
+    "item5_refundConditions": "fill",
+    "item16_productRestrictions": "fill",
+    "item18_hasPublicFigure": "fill",
+
     # ── Financing / Item 10 depth scalars: fill-only ──
     "item10_offersDirectFinancing": "fill",
     "item10_typicallyNoFinancing": "fill",
@@ -763,6 +769,36 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
         return None
 
     # ── Support / Item 11 depth fields ──
+    # ── Small item scalar fields ──
+    elif field == "item5_feeIsUniform":
+        for fact in facts:
+            ft = fact.get('fact_text', '').lower()
+            if 'fee is uniform' in ft or 'same' in ft:
+                return True
+            if 'fee varies' in ft or 'different' in ft or 'range' in ft:
+                return False
+        return None
+
+    elif field == "item5_refundConditions":
+        for fact in facts:
+            if 'FPR_FIELD:item5_refundConditions' in fact.get('why_important', ''):
+                return fact.get('fact_text', '').strip()[:200]
+        return None
+
+    elif field == "item16_productRestrictions":
+        if re.search(r'(?:only\s+product|authorized|approved|may\s+(?:only\s+)?sell)', text_lower):
+            return True
+        return None
+
+    elif field == "item18_hasPublicFigure":
+        for fact in facts:
+            ft = fact.get('fact_text', '').lower()
+            if 'no public figure' in ft or 'does not use' in ft:
+                return False
+            if 'uses public figure' in ft or 'celebrity' in ft:
+                return True
+        return None
+
     # ── Financing / Item 10 depth fields ──
     elif field == "item10_offersDirectFinancing":
         if re.search(r'(?:no\s+financing|does\s+not\s+(?:offer|provide|arrange)\s+(?:any\s+)?financ|typically.*?no\s+financing)', text_lower):

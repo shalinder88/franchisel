@@ -503,6 +503,32 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                     importance=0.8, category="performance",
                 )
 
+        # ── ITEM 5: Fee uniformity and refund conditions ──
+        if item_num == 5:
+            if re.search(r'(?:same|uniform|identical)\s+(?:initial\s+)?(?:franchise\s+)?fee', sent_lower):
+                fact_store.add("Fee is uniform", why_important="FPR_FIELD:item5_feeIsUniform",
+                    source_page=start_page, source_item=5, importance=0.7, category="economics")
+            elif re.search(r'(?:varies|different|range|depend)', sent_lower) and 'fee' in sent_lower:
+                fact_store.add("Fee varies", why_important="FPR_FIELD:item5_feeIsUniform",
+                    source_page=start_page, source_item=5, importance=0.7, category="economics")
+            if re.search(r'(?:refund|non.?refundable|not\s+refund)', sent_lower):
+                fact_store.add(sent_stripped[:200], why_important="FPR_FIELD:item5_refundConditions",
+                    source_page=start_page, source_item=5, importance=0.7, category="economics")
+
+        # ── ITEM 16: Product restrictions ──
+        if item_num == 16 and re.search(r'(?:only\s+(?:product|item|good|service)s?\s+(?:authorized|approved)|may\s+(?:only\s+)?sell)', sent_lower):
+            fact_store.add("Product restrictions apply", why_important="FPR_FIELD:item16_productRestrictions",
+                source_page=start_page, source_item=16, importance=0.7, category="control")
+
+        # ── ITEM 18: Public figure ──
+        if item_num == 18:
+            if re.search(r'(?:does\s+not\s+use|no\s+public\s+figure|not\s+(?:us|employ)\w*\s+(?:any\s+)?public)', sent_lower):
+                fact_store.add("No public figure", why_important="FPR_FIELD:item18_hasPublicFigure",
+                    source_page=start_page, source_item=18, importance=0.6, category="identity")
+            elif re.search(r'(?:public\s+figure|celebrity|endors)', sent_lower):
+                fact_store.add("Uses public figure", why_important="FPR_FIELD:item18_hasPublicFigure",
+                    source_page=start_page, source_item=18, importance=0.6, category="identity")
+
         # ── FINANCING ──
         if item_num == 10:
             if any(kw in sent_lower for kw in ['financ', 'loan', 'guarantee', 'interest rate', 'collateral', 'sba']):

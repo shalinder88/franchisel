@@ -831,6 +831,68 @@ FIELD_REGISTRY = {
     },
 
     # ── Financials (from engine) ──
+    # ── Item 4: Bankruptcy ──
+    "item4_hasBankruptcy": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.bankruptcy_engine.no_bankruptcy (inverted)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["hasBankruptcy"],
+    },
+    "item4_noBankruptcyDisclosed": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.bankruptcy_engine.no_bankruptcy",
+        "null_means": "not_extracted",
+        "gold_aliases": ["noBankruptcyDisclosed"],
+    },
+    # ── Item 5: Initial fees depth ──
+    "item5_feeIsUniform": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item5_feeIsUniform",
+        "null_means": "not_extracted",
+        "gold_aliases": ["feeIsUniform"],
+    },
+    "item5_refundConditions": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item5_refundConditions (text from reader)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["refundConditions"],
+    },
+    # ── Item 15: Participation ──
+    "item15_ownerOperatorRequired": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.owner_participation_engine.full_time_required",
+        "null_means": "not_extracted",
+        "gold_aliases": ["ownerOperatorRequired"],
+    },
+    "item15_absenteeOwnershipAllowed": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.owner_participation_engine.absentee_allowed",
+        "null_means": "not_extracted",
+        "gold_aliases": ["absenteeOwnershipAllowed"],
+    },
+    # ── Item 16: Product restrictions ──
+    "item16_productRestrictions": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item16_productRestrictions",
+        "null_means": "not_extracted",
+        "gold_aliases": ["productRestrictions"],
+    },
+    # ── Item 18: Public figure ──
+    "item18_hasPublicFigure": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item18_hasPublicFigure",
+        "null_means": "not_extracted",
+        "gold_aliases": ["hasPublicFigure"],
+    },
+
     "auditorName": {
         "type": "Optional[str]",
         "source": "engine",
@@ -1095,6 +1157,21 @@ def _resolve_engine_field(field_name: str, engines: Dict, brand: Dict) -> Any:
         return str(val) if val is not None else None
     elif field_name == "item8_lockInScore":
         return eng8.get("lock_in_severity")
+
+    # Item 4 bankruptcy engine
+    eng4 = engines.get("bankruptcy_engine", {})
+    if field_name == "item4_hasBankruptcy":
+        nb = eng4.get("no_bankruptcy")
+        return not nb if nb is not None else None
+    elif field_name == "item4_noBankruptcyDisclosed":
+        return eng4.get("no_bankruptcy")
+
+    # Item 15 owner participation engine
+    eng15 = engines.get("owner_participation_engine", {})
+    if field_name == "item15_ownerOperatorRequired":
+        return eng15.get("full_time_required")
+    elif field_name == "item15_absenteeOwnershipAllowed":
+        return eng15.get("absentee_allowed")
 
     # Item 21 financial engine fields
     if field_name == "item21_hasAuditedFinancials":
