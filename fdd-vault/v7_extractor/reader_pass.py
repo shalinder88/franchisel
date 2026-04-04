@@ -92,6 +92,250 @@ class ItemMemory:
         }
 
 
+def _deep_read_item(item_num: int, text: str, start_page: int,
+                    fact_store: ImportantFactStore) -> None:
+    """Deep-read an item's text and extract every important fact.
+
+    This is how Lane A learns. It reads like a human analyst:
+    - Every sentence with a dollar amount, percentage, or obligation
+    - Every restriction, requirement, prohibition
+    - Every right the franchisor reserves
+    - Every risk factor, penalty, or termination trigger
+    - Every reference to exhibits, policies, agreements
+    - Every factual assertion about the system
+
+    General rule: extract the SENTENCE, not the keyword.
+    """
+    if not text or len(text) < 20:
+        return
+
+    text_lower = text.lower()
+    # Split into sentences (approximate)
+    sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z])', text[:30000])
+
+    for sent in sentences:
+        sent_stripped = sent.strip()
+        if len(sent_stripped) < 15 or len(sent_stripped) > 500:
+            continue
+        sent_lower = sent_stripped.lower()
+
+        # ── ECONOMICS: dollar amounts, percentages, rates ──
+        has_dollar = '$' in sent_stripped
+        has_percent = '%' in sent_stripped
+        has_economics = has_dollar or has_percent
+
+        if has_economics:
+            # Classify what kind of economic fact
+            if any(kw in sent_lower for kw in ['fee', 'royalt', 'rent', 'payment', 'contribution', 'charge']):
+                category = "economics"
+                importance = 0.85
+                why = "Fee or payment obligation"
+            elif any(kw in sent_lower for kw in ['invest', 'cost', 'expense', 'total']):
+                category = "economics"
+                importance = 0.8
+                why = "Investment or cost figure"
+            elif any(kw in sent_lower for kw in ['sales', 'revenue', 'income', 'profit', 'average', 'median']):
+                category = "performance"
+                importance = 0.9
+                why = "Performance/revenue figure"
+            else:
+                category = "economics"
+                importance = 0.6
+                why = "Contains dollar or percentage"
+
+            fact_store.add(
+                sent_stripped[:300], why_important=why,
+                source_page=start_page, source_item=item_num,
+                importance=importance, category=category,
+            )
+
+        # ── OBLIGATIONS: what the franchisee must/shall do ──
+        if re.search(r'\b(?:you\s+(?:must|shall|are\s+required|will\s+be\s+required|are\s+obligated))\b', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="Franchisee obligation",
+                source_page=start_page, source_item=item_num,
+                importance=0.8, category="control",
+            )
+
+        # ── PROHIBITIONS: what the franchisee cannot do ──
+        if re.search(r'\b(?:you\s+(?:may\s+not|cannot|shall\s+not|are\s+(?:not\s+)?(?:permitted|allowed|authorized)))\b', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="Franchisee prohibition",
+                source_page=start_page, source_item=item_num,
+                importance=0.8, category="control",
+            )
+
+        # ── FRANCHISOR RIGHTS: what the franchisor reserves ─��
+        if re.search(r'\b(?:we\s+(?:may|can|have\s+the\s+right|reserve|retain)|(?:franchisor|mcdonald|papa\s+john).*?(?:may|right|sole\s+discretion))\b', sent_lower):
+            if any(kw in sent_lower for kw in ['terminat', 'modify', 'change', 'alter', 'increase', 'reduce', 'restrict', 'approve', 'deny', 'refuse']):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Franchisor reserved right (may affect franchisee)",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.75, category="control",
+                )
+
+        # ── TERRITORY AND COMPETITION ──
+        if item_num == 12 or any(kw in sent_lower for kw in ['exclusive', 'territory', 'protected area', 'encroach']):
+            if any(kw in sent_lower for kw in ['no exclusive', 'not exclusive', 'no territory', 'no protected', 'non-exclusive']):
+                fact_store.add(
+                    sent_stripped[:300], why_important="NO territory protection — critical risk factor",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.95, category="risk",
+                )
+            elif 'exclusive' in sent_lower:
+                fact_store.add(
+                    sent_stripped[:300], why_important="Territory/exclusivity statement",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.85, category="control",
+                )
+
+        # ── RENEWAL AND TERM ──
+        if any(kw in sent_lower for kw in ['renew', 'new term', 'extension', 'term of']):
+            if any(kw in sent_lower for kw in ['no right', 'not right', 'no contractual', 'not guaranteed', 'not renew', 'no renewal']):
+                fact_store.add(
+                    sent_stripped[:300], why_important="NO renewal right — critical contract fact",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.95, category="risk",
+                )
+            elif re.search(r'\d+\s*(?:year|yr)', sent_lower):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Term/renewal duration",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.8, category="control",
+                )
+
+        # ── TERMINATION AND DEFAULT ──
+        if any(kw in sent_lower for kw in ['terminat', 'default', 'cure period', 'non-curable']):
+            fact_store.add(
+                sent_stripped[:300], why_important="Termination/default provision",
+                source_page=start_page, source_item=item_num,
+                importance=0.85, category="risk",
+            )
+
+        # ── TRANSFER RESTRICTIONS ──
+        if any(kw in sent_lower for kw in ['transfer', 'assign', 'right of first refusal', 'sell your']):
+            if any(kw in sent_lower for kw in ['consent', 'approval', 'condition', 'restrict', 'rofr', 'first refusal']):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Transfer restriction or condition",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.8, category="control",
+                )
+
+        # ── NON-COMPETE ──
+        if any(kw in sent_lower for kw in ['non-compet', 'compete', 'competing', 'similar business']):
+            if re.search(r'\d+\s*(?:month|year|mile)', sent_lower):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Non-compete scope (duration/radius)",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.9, category="risk",
+                )
+
+        # ── GUARANTY AND LIABILITY ──
+        if any(kw in sent_lower for kw in ['personal guarant', 'spousal guarant', 'personally liable', 'joint and several', 'indemnif']):
+            fact_store.add(
+                sent_stripped[:300], why_important="Personal liability or guaranty requirement",
+                source_page=start_page, source_item=item_num,
+                importance=0.9, category="risk",
+            )
+
+        # ── RENT AND REAL ESTATE ──
+        if any(kw in sent_lower for kw in ['rent', 'lease', 'real estate', 'occupancy']):
+            if any(kw in sent_lower for kw in ['pay', 'owe', 'base rent', 'percentage rent', 'pass through', 'monthly']):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Rent/lease obligation (may be major ongoing cost)",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.85, category="economics",
+                )
+
+        # ── TRAINING AND SUPPORT ──
+        if item_num == 11 and any(kw in sent_lower for kw in ['training', 'hamburger university', 'operations manual', 'field support']):
+            fact_store.add(
+                sent_stripped[:300], why_important="Training or support provision",
+                source_page=start_page, source_item=item_num,
+                importance=0.6, category="control",
+            )
+
+        # ── SUPPLIER RESTRICTIONS ──
+        if item_num == 8 and any(kw in sent_lower for kw in ['approved supplier', 'designated supplier', 'must purchase', 'sole source', 'proprietary']):
+            fact_store.add(
+                sent_stripped[:300], why_important="Supplier restriction",
+                source_page=start_page, source_item=item_num,
+                importance=0.7, category="control",
+            )
+
+        # ── LITIGATION ──
+        if item_num == 3 and any(kw in sent_lower for kw in ['v.', 'case no', 'filed', 'settled', 'class action', 'damages', 'judgment']):
+            fact_store.add(
+                sent_stripped[:300], why_important="Litigation case or settlement",
+                source_page=start_page, source_item=item_num,
+                importance=0.7, category="risk",
+            )
+
+        # ── SYSTEM COMPOSITION ──
+        if re.search(r'\d+\s*%\s*(?:of\s+)?(?:all\s+)?(?:restaurant|outlet|unit|franchise|location)s?\s+(?:are\s+)?(?:franchise|owned)', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="System composition (franchised vs company-owned ratio)",
+                source_page=start_page, source_item=item_num,
+                importance=0.85, category="performance",
+            )
+
+        # ── ENTITY AND IDENTITY ──
+        if item_num == 1:
+            if any(kw in sent_lower for kw in ['incorporated', 'organized', 'formed', 'subsidiary', 'parent', 'predecessor']):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Entity identity or corporate structure",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.7, category="identity",
+                )
+            if re.search(r'(?:nyse|nasdaq|publicly\s+traded|stock\s+exchange)', sent_lower):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Publicly traded status",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.8, category="identity",
+                )
+
+        # ── EXHIBIT REFERENCES ──
+        if re.search(r'exhibit\s+[a-z]', sent_lower) and any(kw in sent_lower for kw in ['attached', 'included', 'see exhibit', 'set forth']):
+            fact_store.add(
+                sent_stripped[:300], why_important="Exhibit cross-reference",
+                source_page=start_page, source_item=item_num,
+                importance=0.5, category="document",
+            )
+
+        # ── ITEM 19 PERFORMANCE DATA ──
+        if item_num == 19:
+            if any(kw in sent_lower for kw in ['average', 'median', 'highest', 'lowest', 'above', 'below', 'exceed']):
+                fact_store.add(
+                    sent_stripped[:300], why_important="FPR performance metric",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.9, category="performance",
+                )
+            if any(kw in sent_lower for kw in ['cost of', 'operating expense', 'gross profit', 'labor', 'occupancy']):
+                fact_store.add(
+                    sent_stripped[:300], why_important="FPR cost structure data",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.85, category="performance",
+                )
+
+        # ── ITEM 20 OUTLET DATA ──
+        if item_num == 20:
+            if re.search(r'\d+\s*(?:outlet|unit|store|restaurant|location|franchise)s?', sent_lower):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Outlet count or trend data",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.8, category="performance",
+                )
+
+        # ── FINANCING ──
+        if item_num == 10:
+            if any(kw in sent_lower for kw in ['financ', 'loan', 'guarantee', 'interest rate', 'collateral', 'sba']):
+                fact_store.add(
+                    sent_stripped[:300], why_important="Financing terms or availability",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.7, category="economics",
+                )
+
+
 def run_reader_pass(page_reads: List[PageRead],
                     items: Dict[int, ItemSection],
                     bootstrap: Dict[str, Any]) -> Dict[str, Any]:
@@ -321,6 +565,11 @@ def run_reader_pass(page_reads: List[PageRead],
                 "summary": first_line,
                 "content_match": match_score,
             })
+
+        # ── DEEP READING: Extract every important fact from this item ──
+        # Lane A reads like a human analyst, not a keyword scanner.
+        # For each item, read the full text and extract structured findings.
+        _deep_read_item(item_num, section.text, section.start_page, fact_store)
 
         # Item-level completion
         if im.tables_found > 0 or im.content_match_score >= 2:
