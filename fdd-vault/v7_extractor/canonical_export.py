@@ -609,6 +609,56 @@ FIELD_REGISTRY = {
         "null_means": "not_extracted",
         "gold_aliases": ["operationsManualConfidential"],
     },
+    # ── Contract terms / Item 17 depth ──
+    "item17_term": {
+        "type": "Optional[dict]",
+        "source": "engine",
+        "source_detail": "composed from contract_burden_engine term fields",
+        "null_means": "not_extracted",
+        "gold_aliases": ["term"],
+    },
+    "item17_renewal": {
+        "type": "Optional[dict]",
+        "source": "engine",
+        "source_detail": "composed from contract_burden_engine renewal fields",
+        "null_means": "not_extracted",
+        "gold_aliases": ["renewal"],
+    },
+    "item17_termination": {
+        "type": "Optional[dict]",
+        "source": "engine",
+        "source_detail": "composed from contract_burden_engine termination fields",
+        "null_means": "not_extracted",
+        "gold_aliases": ["termination"],
+    },
+    "item17_transfer": {
+        "type": "Optional[dict]",
+        "source": "engine",
+        "source_detail": "composed from contract_burden_engine transfer fields",
+        "null_means": "not_extracted",
+        "gold_aliases": ["transfer"],
+    },
+    "item17_dispute": {
+        "type": "Optional[dict]",
+        "source": "engine",
+        "source_detail": "composed from contract_burden_engine dispute fields",
+        "null_means": "not_extracted",
+        "gold_aliases": ["dispute"],
+    },
+    "item17_additionalBurdens": {
+        "type": "Optional[dict]",
+        "source": "engine",
+        "source_detail": "composed from contract_burden_engine burden fields",
+        "null_means": "not_extracted",
+        "gold_aliases": ["additionalBurdens"],
+    },
+    "item17_contractBurdenScore": {
+        "type": "Optional[int]",
+        "source": "evidence",
+        "source_detail": "evidence.item17_contractBurdenScore",
+        "null_means": "not_extracted",
+        "gold_aliases": ["contractBurdenScore"],
+    },
     "mandatoryRemodel": {
         "type": "Optional[bool]",
         "source": "evidence",
@@ -914,6 +964,68 @@ def _resolve_engine_field(field_name: str, engines: Dict, brand: Dict) -> Any:
         return str(val) if val is not None else None
     elif field_name == "item8_lockInScore":
         return eng8.get("lock_in_severity")
+
+    # Item 17 contract engine — compose structured dicts
+    eng17 = engines.get("contract_burden_engine", {})
+    if field_name == "item17_term":
+        ity = eng17.get("initial_term_years")
+        if ity:
+            return {"initialTermYears": ity}
+        return None
+    elif field_name == "item17_renewal":
+        ra = eng17.get("renewal_available")
+        ntp = eng17.get("new_term_policy")
+        if ra is not None or ntp is not None:
+            return {
+                "renewalAvailable": ra,
+                "newTermPolicy": ntp,
+                "renewalTermYears": eng17.get("renewal_term_years"),
+            }
+        return None
+    elif field_name == "item17_termination":
+        triggers = eng17.get("termination_triggers", [])
+        cure = eng17.get("cure_period_days")
+        if triggers or cure:
+            return {
+                "franchisorCanTerminateWithCause": bool(triggers),
+                "terminationTriggers": triggers,
+                "curePeriodDays": cure,
+            }
+        return None
+    elif field_name == "item17_transfer":
+        rofr = eng17.get("rofr")
+        fee = eng17.get("transfer_fee")
+        if rofr is not None or fee is not None:
+            return {
+                "transferAllowed": True,
+                "franchisorApprovalRequired": True,
+                "rightOfFirstRefusal": rofr,
+                "transferFee": fee,
+            }
+        return None
+    elif field_name == "item17_dispute":
+        arb = eng17.get("mandatory_arbitration")
+        med = eng17.get("mandatory_mediation")
+        law = eng17.get("governing_law")
+        if arb is not None or med is not None or law is not None:
+            return {
+                "mandatoryArbitration": arb,
+                "mandatoryMediation": med,
+                "choiceOfLaw": law,
+                "juryTrialWaiver": eng17.get("jury_waiver"),
+                "classActionWaiver": eng17.get("class_action_waiver"),
+            }
+        return None
+    elif field_name == "item17_additionalBurdens":
+        pg = eng17.get("personal_guaranty")
+        sg = eng17.get("spouse_guaranty")
+        if pg is not None or sg is not None:
+            return {
+                "personalGuaranty": pg,
+                "spouseGuaranty": sg,
+                "crossDefault": eng17.get("cross_default"),
+            }
+        return None
 
     # Item 11 support engine fields
     eng11 = engines.get("training_support_engine", {})
