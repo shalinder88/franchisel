@@ -1,0 +1,361 @@
+{
+  "meta": {
+    "fddId": "637989-2025",
+    "brandName": "Drybar",
+    "franchisorLegalName": "DB Franchise, LLC",
+    "fddYear": 2025,
+    "issuanceDate": "March 27, 2025, amended January 23, 2026",
+    "extractedDate": "2026-04-04",
+    "extractedBy": "human_verified_4pass",
+    "stateOfFiling": "Wisconsin",
+    "archetype": "upscale_blowout_beauty_services",
+    "extractionTier": "gold",
+    "passesCompleted": 4,
+    "confidence": "high",
+    "unresolvedItems": ["item12_territory", "item17_summary_table", "item19_fpr_tables", "item20_full_outlet_tables", "exhibit_D1_D2_D3", "state_addenda_full"]
+  },
+
+  "item1": {
+    "franchisorLegalName": "DB Franchise, LLC",
+    "entityType": "Delaware limited liability company",
+    "principalAddress": "1890 Wynkoop Street, Unit 1, Denver, Colorado 80202",
+    "parentCompany": "Pomp Holdings, LLC",
+    "parentParent": "Steele Pomp Investment, LLC",
+    "upstreamEntities": "Transom entities",
+    "publiclyTraded": false,
+    "entityFormationYear": 2021,
+    "currentFranchisorStartYear": 2021,
+    "predecessorFranchiseSystemStartYear": 2012,
+    "conceptOriginYear": 2008,
+    "firstShopOpened": "February 2010, Brentwood, California",
+    "acquisitionDate": "February 8, 2021",
+    "acquisitionFrom": ["Drybar Holdings LLC", "Drybar Franchising LLC"],
+    "predecessors": [
+      {"name": "Drybar Holdings LLC", "role": "prior_owner"},
+      {"name": "Drybar Franchising LLC", "role": "predecessor_franchisor", "franchisingSince": "April 2012"}
+    ],
+    "affiliates": [
+      {"name": "DBGC, LLC", "role": "gift_card_affiliate"},
+      {"name": "WAVE (Wellness and Vitality Exchange, LLC)", "role": "distributor", "products": "products and equipment"},
+      {"name": "WellBiz Brands, Inc.", "role": "management_services_provider"},
+      {"name": "Amazing Lash Studio", "role": "affiliated_franchise_system", "units": 201, "asOfDate": "December 31, 2024"},
+      {"name": "Elements Massage", "role": "affiliated_franchise_system", "units": "240 US + 1 Canada"},
+      {"name": "Fitness Together", "role": "affiliated_franchise_system", "units": 93},
+      {"name": "Radiant Waxing", "role": "affiliated_franchise_system", "units": 59}
+    ],
+    "businessDescription": "Upscale blow-dry hairstyling services franchise in spa-like setting. No haircuts or coloring. Traditional shops 1,100-2,200 sq ft, 8-12 chairs. Non-traditional formats in hotels/clubs with fewer chairs. Off-site services at residences, hotels, private events, offices.",
+    "businessModelType": "retail_beauty_services_blowout_only",
+    "systemSize": {"franchisedUS": 176, "franchisedUK": 6, "franchisedSaudiArabia": 1, "asOfDate": "December 31, 2024", "statesOperating": 38},
+    "leadership": [
+      {"name": "Amanda Clark", "title": "CEO/Manager", "since": "March 2024"},
+      {"name": "Ankin Laysha", "title": "COO", "since": "March 2023"},
+      {"name": "Kristin Brink", "title": "CFO", "since": "January 2025"},
+      {"name": "Elyse Blouin", "title": "CMO", "since": "August 2024"},
+      {"name": "Amanda Clayton Millikan", "title": "VP Real Estate & Construction", "since": "December 2024"},
+      {"name": "James Franks", "title": "VP Head of Franchise Growth", "since": "March 2025"}
+    ],
+    "leadershipNote": "Relatively new operating bench — most executives joined 2023-2025",
+    "specialRisks": ["out_of_state_dispute_denver", "supplier_control_heavy", "spousal_liability", "short_operating_history_current_entity"],
+    "regulatoryBurden": ["cosmetology/blowout licensing", "health and sanitation", "environmental", "building codes", "food/alcohol if offered", "employment law", "PCI/cardholder data"],
+    "confidence": "high"
+  },
+
+  "item3": {
+    "hasLitigation": true,
+    "unresolvedNote": "Item 3 content not fully surfaced in this pass",
+    "confidence": "medium"
+  },
+
+  "item4": {
+    "hasBankruptcy": false,
+    "noBankruptcyDisclosed": true,
+    "priorPassNote": "Prior lightweight pass marked hasBankruptcy=true, corrected — no bankruptcy disclosure found",
+    "confidence": "medium"
+  },
+
+  "item5": {
+    "initialFranchiseFee": 50000,
+    "actualFeesReceived2024": {"low": 25000, "high": 50000, "note": "Signals selective discounting in practice"},
+    "areaDevelopmentFeeSchedule": {
+      "twoShops": 100000,
+      "threeToFivePerShop": 35000,
+      "sixToNinePerShop": 30000,
+      "tenPlusPerShop": 25000,
+      "typicalDeveloper": "3-5 shops, $105,000-$175,000"
+    },
+    "areaDevelopmentNote": "Development fee paid upfront, replaces separate initial franchise fee for later shops under ADA",
+    "militaryDiscount": "20% off initial franchise fee (51%+ ownership, veterans/active-duty)",
+    "minorityDiscount": "20% off initial franchise fee (51%+ ownership, Black/Hispanic/Asian/Pacific Islander/American Indian/Alaska Native)",
+    "discountStacking": false,
+    "preOpeningPayments": [
+      {"item": "Initial Opening Package (WAVE)", "amount": "$50,000-$55,000"},
+      {"item": "Additional training attendees", "amount": "$500/attendee plus costs"},
+      {"item": "Software set-up fee", "amount": 499},
+      {"item": "Gift card program set-up", "amount": 75},
+      {"item": "Technology fee (2 months pre-opening)", "amount": "$775/month"},
+      {"item": "Architect exception request", "amount": 2500},
+      {"item": "Extra site feasibility analyses", "amount": "$250 each after 1+2 included"},
+      {"item": "Signage exception request", "amount": 1500},
+      {"item": "Search territory change", "amount": 1000},
+      {"item": "Grand Opening Spend Requirement", "amount": 20000, "refundable": false},
+      {"item": "Manager training (optional)", "amount": "$500/day/attendee plus costs"}
+    ],
+    "refundable": false,
+    "refundNote": "Fully earned when paid, non-refundable",
+    "feeIsUniform": false,
+    "confidence": "high"
+  },
+
+  "item6": {
+    "royaltyRate": "7% of Gross Receipts",
+    "royaltyBasis": "Gross Receipts",
+    "brandMarketingFund": "2% of Gross Receipts (can increase to 4%)",
+    "localAdvertisingFee": "$2,000/month",
+    "localSpendAmount": "2% of Gross Receipts on approved local marketing",
+    "technologyFee": "$775/month",
+    "layeredFeeNote": "System has percentage royalty + percentage brand fund + fixed monthly local ad fee + percentage local spend + fixed monthly tech fee",
+    "grossReceiptsDefinition": {
+      "includes": ["all revenue from operations", "cash/credit/debit/check/ACH/barter", "memberships", "merchandise/products/services on and off premises", "gift card sales/redemptions", "business interruption insurance proceeds"],
+      "excludes": ["taxes paid to taxing authorities", "refunds to clients", "tips paid to employees"]
+    },
+    "otherFees": [
+      {"name": "Annual conference", "amount": "$500/person (min 1 attendee)"},
+      {"name": "Successor franchise fee (renewal)", "amount": "25% of then-current Initial Franchise Fee"},
+      {"name": "Transfer fee (franchise agreement)", "amount": "50% of then-current Initial Franchise Fee"},
+      {"name": "Transfer fee (small ownership interest)", "amount": 2500},
+      {"name": "Transfer fee (area development)", "amount": 2500, "note": "development rights cannot be transferred"},
+      {"name": "Transfer fee deposit", "amount": 5000},
+      {"name": "Replacement/remedial training", "amount": "$500/attendee plus costs"},
+      {"name": "Additional/special training", "amount": "$500/day/trainer or attendee plus costs"},
+      {"name": "Shop Educator program", "amount": "$500/day/attendee plus costs (currently not charged for initial)"},
+      {"name": "Default fee", "amount": "$250-$2,500"},
+      {"name": "Dishonored ACH/check", "amount": 150},
+      {"name": "Late interest", "amount": "1.5%/month or highest lawful commercial rate"},
+      {"name": "Management fee (abandonment/default/termination)", "amount": "up to $7,500/month plus direct costs"},
+      {"name": "Relocation fee", "amount": 10000},
+      {"name": "Audit underpayment", "amount": "shortfall + interest + franchisor costs if understatement >= 2%"},
+      {"name": "In-house legal", "amount": "$400/hour attorneys, $150/hour paralegals"}
+    ],
+    "liquidatedDamages": {
+      "formula": "(average monthly royalties + brand fund + other fees from prior 12 months) x lesser of 24 months or remaining term, discounted at 8% present value",
+      "severity": "high",
+      "note": "Much more aggressive than simple unpaid-balance clause"
+    },
+    "paymentControl": {
+      "method": "ACH auto-debit",
+      "estimationRight": "If cannot access data and franchisee fails to report, may estimate and debit 110% of average of last 3 applicable payments"
+    },
+    "confidence": "high"
+  },
+
+  "item7": {
+    "totalInvestmentLow": 409979,
+    "totalInvestmentHigh": 1029249,
+    "developmentExample": {"shops": 3, "low": 464979, "high": 1084249, "devFee": 105000},
+    "lineItems": [
+      {"item": "Initial Franchise Fee", "low": 50000, "high": 50000},
+      {"item": "Deposits", "low": 1500, "high": 9000},
+      {"item": "Leasehold Improvements", "low": 81500, "high": 493500},
+      {"item": "Cabinetry/Millwork/Furniture/Décor", "low": 66000, "high": 130500},
+      {"item": "Initial Opening Package", "low": 50000, "high": 55000},
+      {"item": "Initial Software Set-Up and Technology Fees", "low": 2124, "high": 2124},
+      {"item": "Computer System & A/V Technology", "low": 22000, "high": 33000},
+      {"item": "Training Program and Other Training Expenses", "low": 9600, "high": 11000},
+      {"item": "Architect/Engineer/Drawings", "low": 8300, "high": 23000},
+      {"item": "Grand Opening Spend Requirement", "low": 20000, "high": 20000},
+      {"item": "Signage and Graphics", "low": 6800, "high": 24000},
+      {"item": "Office and Business Supplies", "low": 3300, "high": 8720},
+      {"item": "Business Licenses and Permits", "low": 525, "high": 17325},
+      {"item": "Insurance initial payment", "low": 1350, "high": 1550},
+      {"item": "Professional Fees", "low": 1980, "high": 13530},
+      {"item": "Additional Funds (3 months)", "low": 85000, "high": 137000}
+    ],
+    "typicalMonthlyLease": "$4,000-$7,500",
+    "tenantImprovementAllowance": "$0-$138,050",
+    "medianLeaseholdImprovement2024": 288156,
+    "financingOffered": false,
+    "confidence": "high"
+  },
+
+  "item8": {
+    "hasRequiredPurchases": true,
+    "requirementType": "heavy_franchisor_and_affiliate_control",
+    "restrictionIntensity": "high",
+    "requiredFromApprovedSources": [
+      "most supplies and all inventory (through WAVE)",
+      "Private Label Products and Back Bar Products (Helen of Troy via WAVE)",
+      "wall decorations, display frames, stylist chairs, wash stations",
+      "music systems and music libraries",
+      "client-facing media/TV systems and clearinghouse/licensing",
+      "POS hardware and booking/software systems",
+      "architects, engineering, design vendors",
+      "signs, fixtures, furniture, operating assets",
+      "digital marketing, insurance, gift cards, stationery, packaging, branded apparel, PR"
+    ],
+    "keyAffiliateSuppliers": [
+      {"name": "WAVE (Wellness and Vitality Exchange, LLC)", "role": "distributor", "products": "products, equipment, Initial Opening Package"},
+      {"name": "DBGC, LLC", "role": "gift_card_affiliate"},
+      {"name": "Helen of Troy Limited", "role": "private_label_products_via_WAVE"}
+    ],
+    "initialOpeningPackage": {"source": "WAVE", "amount": "$50,000-$55,000"},
+    "supplierControlConclusion": "Material franchisor/affiliate capture of product stack, design stack, gift card stack, opening package, and technology stack",
+    "confidence": "high"
+  },
+
+  "item11": {
+    "preOpeningAssistance": true,
+    "trainingProgram": {
+      "classroomHours": 34,
+      "onTheJobHours": 24,
+      "inShopImmersion": true,
+      "immersionCovers": ["receiving a service", "front desk operations", "check-in/check-out", "service path", "service recovery", "lead management", "inventory management", "maintenance", "cleaning", "sanitation"]
+    },
+    "requiredAttendees": "Franchisee or Operating Partner plus Designated Manager if applicable",
+    "shopEducator": {
+      "mandatory": true,
+      "hireDeadline": "8 weeks before opening",
+      "completionDeadline": "4 weeks before opening",
+      "programHours": "40-80 hours depending on experience",
+      "currentFee": "$500/day/attendee plus costs (not currently charged for initial)",
+      "replacementRequired": true
+    },
+    "stylistTraining": {
+      "hoursBeforeFloorReady": "15-25 hours with Shop Educator",
+      "assessmentRequired": true,
+      "assessmentType": "technical and brand-standard",
+      "recommendedPreOpeningTimeline": "2-3 weeks off-site, additional in-shop starting 5 days before opening"
+    },
+    "operationsManual": true,
+    "operationsManualExhibit": "I",
+    "confidence": "high"
+  },
+
+  "item12": {
+    "exclusiveTerritory": "unresolved",
+    "unresolvedReason": "Item 12 territory text not surfaced in retrieved chunks. TOC confirms Item 12 at page 43.",
+    "confidence": "low"
+  },
+
+  "item17": {
+    "unresolvedReason": "Item 17 summary table not surfaced in retrieved chunks. TOC confirms Item 17 at page 52.",
+    "disputeResolution": {"forum": "Denver, Colorado", "method": "arbitration and/or litigation"},
+    "personalGuaranty": true,
+    "spousalGuaranty": true,
+    "liquidatedDamages": {
+      "formula": "(average monthly royalties + brand fund + other fees from prior 12 months) x lesser of 24 months or remaining term, discounted at 8% present value",
+      "severity": "high"
+    },
+    "confidence": "medium"
+  },
+
+  "item19": {
+    "hasItem19": true,
+    "disclosesFinancialPerformance": true,
+    "priorPassData": {
+      "qualifyingShops": 146,
+      "excludedShops": 13,
+      "allShops": {"count": 146, "avgRevenue": 855793, "topShop": 1841474, "bottomShop": 474723},
+      "oneYearPlus": {"count": 125, "avgRevenue": 904197},
+      "threeYearsPlus": {"avgRevenue": 946147},
+      "fiveYearsPlus": {"avgRevenue": 1017847}
+    },
+    "maturitySegmented": true,
+    "additionalMetrics": ["new client trial rates", "conversion percentages", "member counts"],
+    "keyInsight": "Revenue increases with maturity: $856K all → $904K 1yr+ → $946K 3yr+ → $1,018K 5yr+. Top shop $1.84M, bottom $475K.",
+    "unresolvedNote": "Full Item 19 tables not surfaced in this pass — prior pass data preserved above",
+    "confidence": "medium"
+  },
+
+  "item20": {
+    "totalUnits": 176,
+    "franchisedUS": 176,
+    "franchisedUK": 6,
+    "franchisedSaudiArabia": 1,
+    "asOfDate": "December 31, 2024",
+    "unresolvedNote": "Full Item 20 outlet tables not surfaced. Only Item 1 system-size statement available.",
+    "confidence": "medium"
+  },
+
+  "item21": {
+    "hasAuditedFinancials": true,
+    "financialExhibit": "E",
+    "financialEntityName": "Steele Pomp Investment, LLC and subsidiaries",
+    "totalRevenue2024": 29343002,
+    "netIncome2024": 1732996,
+    "managementServicesReimbursement": {"2024": 4778994, "2023": 3321778, "2022": 2187689, "provider": "WBZ Investments"},
+    "dueToAffiliate2024": 547795,
+    "acquisitionDetails": {
+      "closingDate": "February 8, 2021",
+      "cashConsideration": 13961116,
+      "contingentConsideration": 1400000,
+      "totalConsideration": 15361116,
+      "franchiseAgreementsAcquired": {"value": 9500000, "operatingStudios": 141, "sellerOperated": 87},
+      "goodwill": 7199712,
+      "earnoutSettlement2022": 6778609,
+      "earnoutMaxPossible": 20000000,
+      "giftCardLiabilitiesAssumed": 1923762,
+      "lossContractLiability": 1500000
+    },
+    "notesReceivable2024": {
+      "fromFranchisees": 214902,
+      "fromMember": 1552963,
+      "total": 1767865,
+      "franchiseeInterestRate": "11%-12%",
+      "collateral": "franchise agreements and personal assets"
+    },
+    "vendorDiscount": {
+      "received2023": 1402182,
+      "amortized2024": 396000,
+      "remaining2024": 1006182,
+      "period": "2024-2028",
+      "note": "Prepaid vendor discount from one product vendor for estimated product purchases"
+    },
+    "guaranteeOfPerformance": {
+      "guarantor": "Steele Pomp Investment, LLC",
+      "scope": "absolutely and unconditionally guarantees DB Franchise duties and obligations under franchise registrations and franchise agreement forms",
+      "duration": "until obligations satisfied or liability discharged"
+    },
+    "financialStrengthNote": "Revenue $29.3M, net income $1.7M. Heavy management-services reimbursement to affiliate WBZ ($4.8M in 2024). Acquisition carried $7.2M goodwill. Parent guarantee provides additional support.",
+    "confidence": "high"
+  },
+
+  "exhibits": {
+    "A": {"name": "State addenda and agreement riders", "status": "partially_parsed"},
+    "B": {"name": "Franchise agreement and exhibits", "status": "identified"},
+    "C": {"name": "Area development agreement and exhibits", "status": "identified"},
+    "D1": {"name": "Current franchisees", "status": "needs_parsing"},
+    "D2": {"name": "Former franchisees", "status": "needs_parsing"},
+    "D3": {"name": "Sold-but-not-opened", "status": "needs_parsing"},
+    "E": {"name": "Financial statements", "status": "partially_parsed"},
+    "F": {"name": "State agencies", "status": "identified"},
+    "G": {"name": "Transfer consent + sample release", "status": "identified"},
+    "H": {"name": "Renewal addendum + sample release", "status": "identified"},
+    "I": {"name": "Operations manual TOC", "status": "needs_parsing"},
+    "J": {"name": "State effective dates", "status": "identified"},
+    "K": {"name": "Receipts", "status": "identified"}
+  },
+
+  "stateAddenda": {
+    "michigan": {
+      "preExhibitNotice": true,
+      "unfairProvisionsVoided": true
+    }
+  },
+
+  "extractorLearnings": {
+    "universalRules": [
+      "Separate brand history (concept 2008, first shop 2010) from predecessor franchising (2012) from current entity (2021) — at least 3-4 year fields needed",
+      "Dual sales model (single-shop + Area Development Agreement) requires parallel fee and investment objects",
+      "Layered fee stack: percentage royalty + percentage brand fund + fixed local ad + percentage local spend + fixed tech fee — cannot flatten to one rate",
+      "WAVE/DBGC/Helen of Troy are material supplier/control objects, not background affiliate names",
+      "Shop Educator is a mandatory operational role with hiring/training deadlines — not a footnote",
+      "Stylist training system (15-25h, assessment-gated) is core operations for beauty concepts",
+      "Financial-statement-level signals (acquisition price allocation, vendor discounts, management-services reimbursement, franchisee notes receivable) are material for diligence",
+      "Parent guarantee of performance is one of the most important exhibit-level facts",
+      "Liquidated damages discounted at 8% present value is more aggressive than simple formulas",
+      "ACH estimation right (110% of average) on missed reporting is strong centralized payment control",
+      "Items 12, 17, 19, 20 should remain explicitly unresolved when text not surfaced — do not fill from prior pass data alone",
+      "Median build-out cost ($288K) anchors otherwise huge investment range ($410K-$1.03M)"
+    ]
+  }
+}
