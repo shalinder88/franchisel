@@ -1,0 +1,431 @@
+{
+  "meta": {
+    "fddId": "637976-2025",
+    "brandName": "Ivybrook Academy",
+    "franchisorLegalName": "Ivybrook Franchising, LLC",
+    "fddYear": 2025,
+    "issuanceDate": "March 28, 2025 (amended September 15, 2025)",
+    "extractedDate": "2026-04-04",
+    "extractedBy": "human_verified_4pass",
+    "stateOfFiling": "Wisconsin",
+    "archetype": "childrens_education_preschool",
+    "extractionTier": "gold",
+    "passesCompleted": 4,
+    "confidence": "high",
+    "unresolvedItems": ["item17_full_comparison_chart", "item19_tables_2A_2B_partial_rows", "item20_state_table_full", "item21_financials_quantitative"]
+  },
+
+  "item1": {
+    "franchisorLegalName": "Ivybrook Franchising, LLC",
+    "entityType": "North Carolina limited liability company",
+    "principalAddress": "9801 Suzanne Court, Weddington, NC 28173",
+    "parentCompany": "Ivybrook OpCo LLC",
+    "parentParent": "Ivybrook HoldCo, LLC",
+    "ultimateParent": "Crux I Ivybrook (Aggregator), LP",
+    "acquisitionDate": "August 29, 2025",
+    "publiclyTraded": false,
+    "entityFormationYear": 2015,
+    "yearFranchiseEstablished": 2015,
+    "neverOperatedLocationItself": true,
+    "predecessors": [],
+    "affiliates": [
+      {"name": "McWilliams Education Services, LLC", "role": "affiliate_operator", "location": "Weddington, North Carolina", "since": 2007},
+      {"name": "Catapult Industries, LLC", "role": "software_developer", "product": "The Student Hub (required school management and payment processing platform)"}
+    ],
+    "businessDescription": "Half-day preschool with optional private kindergarten. Learning, enrichment, and socialization for ages 1-6. Summer camp sessions. Proprietary curriculum, design, decor, software.",
+    "businessModelType": "education_preschool_half_day",
+    "regulatoryBurden": ["licensing", "facility rules", "ratios", "background checks", "personnel credentials", "abuse reporting", "food requirements", "labor rules", "ADA", "private kindergarten rules"],
+    "requiredAccreditations": ["NAEYC (after 2 years)", "BBB"],
+    "specialRisks": ["out_of_state_dispute_north_carolina", "financial_condition_concern", "supplier_control_heavy", "significant_unopened_franchises"],
+    "confidence": "high"
+  },
+
+  "item3": {
+    "hasLitigation": true,
+    "unresolvedNote": "Item 3 content not fully surfaced",
+    "confidence": "medium"
+  },
+
+  "item4": {
+    "hasBankruptcy": false,
+    "noBankruptcyDisclosed": true,
+    "priorPassNote": "Prior pass marked hasBankruptcy=true, corrected",
+    "confidence": "medium"
+  },
+
+  "item5": {
+    "initialFranchiseFee": 50000,
+    "realEstateCoordinationFee": 10000,
+    "trainingOpeningSupportFee": 15000,
+    "decorPackage": 7500,
+    "decorPackageTiming": "~90 days before opening",
+    "mudaSecondSchool": 35000,
+    "mudaThirdSchool": 25000,
+    "transferTrainingFee": 10000,
+    "refundable": false,
+    "feeIsUniform": true,
+    "totalPreOpeningToFranchisor": 82500,
+    "mudaTotalToFranchisor": 117500,
+    "confidence": "high"
+  },
+
+  "item6": {
+    "royaltyRate": "7% of Gross Revenue",
+    "royaltyBasis": "Gross Revenue",
+    "royaltyPayment": "monthly by 6th day",
+    "brandDevelopmentFund": {"current": "1% of Gross Revenue", "expected2026": "2%"},
+    "localMarketingExpenditure": "1% of Gross Revenue annually",
+    "marketingCooperative": {"current": "none", "maximum": "2% of Gross Revenues"},
+    "technologyFee": "$250/month",
+    "grossRevenueDefinition": {
+      "includes": ["all revenue from franchised business", "business interruption insurance proceeds"],
+      "excludes": ["customer refunds", "sales/equivalent taxes", "certain remittances", "chargeback fees", "supplier rebates"]
+    },
+    "otherFees": [
+      {"name": "Third-party supplier pass-through plus markup", "amount": "variable"},
+      {"name": "Noncompliance cure costs + 10% admin fee", "amount": "variable"},
+      {"name": "Customer complaint resolution reimbursement", "amount": "variable"},
+      {"name": "Audit expenses", "amount": "$1,500-$5,000"},
+      {"name": "Inspection fee", "amount": "$750 plus costs"},
+      {"name": "Late fees/interest", "amount": "1.5%/month or legal max"},
+      {"name": "Supplier/product approval fee", "amount": 500},
+      {"name": "Transfer fee", "amount": 10000},
+      {"name": "Transfer training fee", "amount": 10000},
+      {"name": "Renewal fee", "amount": "greater of $10,000 or 10% of then-current initial franchise fee"},
+      {"name": "Replacement School Administrator training", "amount": "$500/week"},
+      {"name": "Additional training/assistance", "amount": "$500/day plus expenses"},
+      {"name": "Conference fee", "amount": "per person, variable"},
+      {"name": "Holdover fee", "amount": "greater of $1,000 or 150% of weekly royalty, per week"},
+      {"name": "Non-compliance fee", "amount": "up to $1,000/week plus costs"},
+      {"name": "Late reporting fine", "amount": "up to $1,000/incident"},
+      {"name": "Unauthorized transfer damages", "amount": 25000}
+    ],
+    "liquidatedDamages": {
+      "formula": "average monthly royalty for 12 months before termination x months remaining in term (ignoring waivers/reductions)",
+      "severity": "high"
+    },
+    "paymentMethod": "electronic debit or franchisor-determined method",
+    "feesNonRefundable": true,
+    "confidence": "high"
+  },
+
+  "item7": {
+    "totalInvestmentLow": 540700,
+    "totalInvestmentHigh": 869860,
+    "mudaInvestmentLow": 575700,
+    "mudaInvestmentHigh": 929860,
+    "toFranchisor": 82500,
+    "mudaToFranchisor": 117500,
+    "lineItems": [
+      {"item": "Initial Franchise Fee", "low": 50000, "high": 50000},
+      {"item": "Training & Opening Support Fee", "low": 15000, "high": 15000},
+      {"item": "Real Estate and Facility Coordination Fee", "low": 10000, "high": 10000},
+      {"item": "Construction/Leasehold Improvements", "low": 277300, "high": 518860},
+      {"item": "Furniture/Fixtures/Classroom Equipment/Decor", "low": 75000, "high": 105000},
+      {"item": "Outdoor Classroom/playground equipment", "low": 10000, "high": 25000},
+      {"item": "Signage", "low": 8000, "high": 14000},
+      {"item": "Computer Hardware and Software", "low": 1000, "high": 2500},
+      {"item": "Rent Deposit", "low": 15000, "high": 25000},
+      {"item": "Utility Deposits", "low": 1000, "high": 2500},
+      {"item": "Insurance Deposits and Premiums", "low": 3000, "high": 5000},
+      {"item": "Pre-opening Travel Expense", "low": 400, "high": 2000},
+      {"item": "Grand Opening Advertising", "low": 20000, "high": 25000},
+      {"item": "Professional Fees", "low": 25000, "high": 35000},
+      {"item": "Additional Funds (3 months)", "low": 30000, "high": 35000}
+    ],
+    "buildoutAssumptions": {
+      "sqft": 6000,
+      "tiAllowance": "$40/sq ft assumed (not guaranteed)",
+      "existingHVACPlumbingElectrical": true,
+      "grandOpeningMinimum": 20000,
+      "grandOpeningManagedBy": "approved supplier"
+    },
+    "mudaAdditionalFees": "$35,000-$60,000 for 2nd and 3rd school franchise fees",
+    "financingOffered": false,
+    "confidence": "high"
+  },
+
+  "item8": {
+    "hasRequiredPurchases": true,
+    "requirementType": "heavy_franchisor_and_affiliate_control",
+    "restrictionIntensity": "high",
+    "pctPurchasesUnderSpecsOpening": "70-90%",
+    "pctPurchasesUnderSpecsOperating": "70-90%",
+    "requiredFromApprovedSources": ["real estate/lease terms", "The Student Hub (Catapult)", "furniture", "signage", "decor", "marked items", "architect", "construction management company", "marketing supplier", "branded supplies"],
+    "affiliateSuppliers": [
+      {"name": "Catapult Industries, LLC", "product": "The Student Hub", "exclusive": true, "revenue2024": 36000}
+    ],
+    "franchisorCreditsFromSuppliers2024": 33821,
+    "franchisorTotalRevenue2024": 2171363,
+    "supplierApprovalProcess": {"fee": 500, "responseWindow": "30 days"},
+    "realEstateAgentDisclosure": "Co-founder is licensed real estate agent, may receive referral fee/commission",
+    "insuranceBurden": {
+      "allRiskProperty": true,
+      "workersComp": true,
+      "employerLiability": "$100,000",
+      "comprehensiveLiability": "$2,000,000 per occurrence",
+      "additionalInsured": true,
+      "subrogationWaiver": true
+    },
+    "requiredMemberships": ["NAEYC", "NAREA", "BBB accreditation"],
+    "confidence": "high"
+  },
+
+  "item10": {
+    "offersDirectFinancing": false,
+    "offersIndirectFinancing": false,
+    "guaranteesNotes": false,
+    "confidence": "high"
+  },
+
+  "item11": {
+    "preOpeningAssistance": true,
+    "preOpeningSupport": ["real estate broker identification", "location review", "one site visit at franchisor expense", "LOI review", "layout/configuration advice", "manual access", "training program"],
+    "siteAcceptanceTimeline": "30 days after submission",
+    "siteDeadline": "6 months after signing or franchisor may terminate",
+    "timeToOpen": "6-18 months",
+    "openingDeadline": "18 months or franchisor may terminate",
+    "requiredArchitectAndContractor": true,
+    "trainingProgram": {
+      "totalClassroomHours": 80,
+      "onTheJobHours": 0,
+      "phases": [
+        {"name": "Phase 1: Business Startup and Real Estate", "hours": 12},
+        {"name": "Phase 2: Marketing/Enrollment/Operations", "hours": 24},
+        {"name": "Phase 3: Ivybrook University/School Setup", "hours": 44}
+      ],
+      "delivery": "online learning portal + in-person at Charlotte",
+      "additionalRequirement": "2 weeks in-person training at approved training school before opening",
+      "maxTrainees": 3,
+      "requiredTrainees": ["at least one owner", "School Administrator"],
+      "trainingLeaders": ["Daniela McElhaney (15+ years Ivybrook, 20+ years education)", "Katherine Bell (15+ years Ivybrook, 20+ years education)"]
+    },
+    "postOpeningSupport": ["product/service authorization", "curriculum designation", "manual modifications", "pricing guidance", "standard chart of accounts", "phone/email/newsletter guidance", "Brand Fund administration", "discretionary site visits/training/marketing/technology"],
+    "operationsManual": true,
+    "operationsManualExhibit": "I",
+    "confidence": "high"
+  },
+
+  "item12": {
+    "exclusiveTerritory": false,
+    "territoryType": "site_selected_protection_with_major_carveouts",
+    "designatedAreaVsTerritory": {
+      "designatedArea": "for site selection only, no exclusivity or protection",
+      "finalTerritory": "set once site accepted"
+    },
+    "territorySize": "lesser of population 125,000 or 3-mile radius (unless mutually agreed otherwise)",
+    "protectionScope": "Franchisor will not establish or license another Ivybrook Academy school within Territory during term",
+    "reservedRights": [
+      "Use marks and system outside territory",
+      "Use different marks/channels to sell goods/services through non-brick-and-mortar means",
+      "Acquire or operate any other business of any kind anywhere including within territory",
+      "Direct advertising anywhere including within territory"
+    ],
+    "franchiseeRestrictions": ["no mail/computer/telemarketing/internet sales outside location except approved", "no advertising/marketing outside territory without approval"],
+    "franchisorMayCompete": true,
+    "encroachmentRisk": "moderate",
+    "confidence": "high"
+  },
+
+  "item15": {
+    "ownerParticipationRequired": true,
+    "ceoRequired": true,
+    "ceoMinOwnership": "10%",
+    "ceoWeeklyHoursFirstYear": 20,
+    "schoolAdministratorRequired": true,
+    "schoolAdministratorHours": "40 hours/week on site",
+    "ceoAndAdminCanBeSamePerson": true,
+    "restrictiveCovenantRequired": true,
+    "adminLicensureRequired": true,
+    "confidence": "high"
+  },
+
+  "item17": {
+    "disputeResolution": {
+      "mediation": true,
+      "arbitration": true,
+      "forum": "North Carolina",
+      "individualBasisOnly": true,
+      "governingLaw": "Federal Arbitration Act",
+      "arbitratorQualification": "10+ years franchise-law experience",
+      "injunctiveReliefCarveout": true,
+      "injunctiveReliefNoBond": true,
+      "classActionWaiver": true
+    },
+    "unlimitedGuaranty": {
+      "exhibit": "F",
+      "scope": "full and timely performance + all royalties and sums",
+      "personallyBound": ["non-compete", "non-solicitation", "dispute resolution", "indemnification"],
+      "waivesNotice": true,
+      "directEnforcement": true
+    },
+    "postTermination": {
+      "deIdentifyDeadline": "10 days",
+      "returnItems": ["decor", "curriculum", "materials", "equipment", "supplies", "system-indicative items"],
+      "removeMarks": true,
+      "customerRefunds": "pro-rata refunds on franchisor direction, or pay franchisor equivalent within 30 days",
+      "franchisorMayEnter": true,
+      "franchisorMayEnterNote": "may enter site and perform de-identification without trespass liability"
+    },
+    "rightToAcquireBusiness": {
+      "trigger": "expiration, non-renewal, or termination",
+      "valuation": "fair market value",
+      "noticeDeadline": "60 days after expiration/termination",
+      "paymentDeadline": "60 days after notice or valuation"
+    },
+    "leaseRider": {
+      "franchisorCanLease": true,
+      "landlordCooperationRequired": true,
+      "deIdentificationCooperation": true
+    },
+    "renewalFee": "greater of $10,000 or 10% of then-current initial franchise fee",
+    "transferFee": 10000,
+    "unauthorizedTransferDamages": 25000,
+    "confidence": "high",
+    "unresolvedNote": "Full Item 17 comparison chart not surfaced"
+  },
+
+  "item19": {
+    "hasItem19": true,
+    "disclosesFinancialPerformance": true,
+    "population": "40 schools total, 24 franchisee-owned (2+ years) and 1 affiliate-owned included",
+    "enrollmentRange": "180 to 250 students per school",
+    "table1_revenueStreams": {
+      "tuitionMonthly": {
+        "1day": {"low": 250, "high": 365},
+        "2day": {"low": 335, "high": 510},
+        "3day": {"low": 435, "high": 675},
+        "4day": {"low": 500, "high": 770},
+        "5day": {"low": 575, "high": 890}
+      },
+      "registrationFee": {"low": 150, "high": 250},
+      "summerCampWeekly": {"low": 185, "high": 235},
+      "summerCampRegistration": {"low": 50, "high": 75}
+    },
+    "table2A_affiliateEBITDA": {
+      "description": "Single affiliate-owned school, 7 classrooms, Jan-Dec 2024",
+      "grossRevenue": 1487947,
+      "totalExpense": 1031561,
+      "ebitda": 456386,
+      "ebitdaMargin": 30.7,
+      "keyExpenses": {"labor": 601069, "rent": 192000, "royaltyFee": 89277, "brandFund": 14879}
+    },
+    "table2B_franchisee2YearsPlus": {
+      "description": "24 franchisee-owned schools, open 2+ years",
+      "schools": 24,
+      "avgGrossRevenue": 858259,
+      "medianGrossRevenue": 838581,
+      "totalExpenseAvg": 698857,
+      "totalExpenseMedian": 680098,
+      "ebitdaAvg": 159401,
+      "ebitdaMedian": 152479,
+      "ebitdaAvgPct": 19,
+      "keyExpenseAvg": {"labor": 353533, "rent": 174686, "royaltyFee": 46730, "brandFund": 7852}
+    },
+    "table2C_franchisee3YearsPlus": {
+      "description": "18 franchisee-owned schools, open 3+ years",
+      "schools": 18,
+      "avgGrossRevenue": 967875,
+      "medianGrossRevenue": 886446,
+      "totalExpenseAvg": 754338,
+      "totalExpenseMedian": 746467,
+      "ebitdaAvg": 213536,
+      "ebitdaMedian": 181514,
+      "ebitdaAvgPct": 22,
+      "keyExpenseAvg": {"labor": 389175, "rent": 174817, "royaltyFee": 52608, "brandFund": 8706}
+    },
+    "table3_revenueByClassroomCount": {
+      "description": "19 franchisee schools, 3+ years, grouped by classroom count",
+      "data": [
+        {"classrooms": 5, "schools": 4, "avgGrossRevenue": 845440, "medianGrossRevenue": 876696},
+        {"classrooms": 6, "schools": 13, "avgGrossRevenue": 1074164, "medianGrossRevenue": 866446},
+        {"classrooms": 7, "schools": 2, "avgGrossRevenue": 1318980, "medianGrossRevenue": 1318980}
+      ]
+    },
+    "fprNotes": {
+      "labor": "all staff/payroll but NOT owners' salaries/benefits",
+      "ebitda": "gross revenue minus total expenses, excludes interest/taxes/depreciation/amortization",
+      "grossRevenue": "tuition, grant revenue, product sales, less sales taxes"
+    },
+    "confidence": "high"
+  },
+
+  "item20": {
+    "systemwideOutletSummary": [
+      {"year": 2022, "franchisedStart": 17, "franchisedEnd": 26, "companyStart": 1, "companyEnd": 1, "totalStart": 18, "totalEnd": 27},
+      {"year": 2023, "franchisedStart": 26, "franchisedEnd": 33, "companyStart": 1, "companyEnd": 1, "totalStart": 27, "totalEnd": 34},
+      {"year": 2024, "franchisedStart": 33, "franchisedEnd": 40, "companyStart": 1, "companyEnd": 1, "totalStart": 34, "totalEnd": 41}
+    ],
+    "transfersByYear": {"2022": 0, "2023": 0, "2024": 0},
+    "companyOwnedOperator": "McWilliams Education Service, LLC",
+    "totalUnits": 41,
+    "franchisedUnits": 40,
+    "companyOwnedUnits": 1,
+    "systemTrajectory": "steadily_growing",
+    "significantUnopenedFranchises": true,
+    "significantUnopenedNote": "Special risks page warns significant number of signed agreements for unopened outlets — exact count not surfaced",
+    "unresolvedNote": "Full state-by-state table only partially surfaced",
+    "confidence": "high"
+  },
+
+  "item21": {
+    "hasAuditedFinancials": true,
+    "financialExhibit": "J",
+    "financialConditionConcern": true,
+    "financialConditionNote": "Front-end risk disclosure says financial condition calls into question ability to provide services and support",
+    "franchisorRevenue2024": 2171363,
+    "quantitativeStatementsNote": "Full balance sheet and income statement lines not surfaced cleanly in this pass",
+    "confidence": "medium"
+  },
+
+  "exhibits": {
+    "A": {"name": "Franchise Agreement", "status": "identified"},
+    "B": {"name": "Multi-State Addenda", "status": "partially_parsed"},
+    "C": {"name": "Multi-Unit Development Agreement", "status": "identified"},
+    "D": {"name": "State Administrators", "status": "identified"},
+    "E": {"name": "State Agents for Service of Process", "status": "identified"},
+    "F": {"name": "Unlimited Guaranty", "status": "parsed"},
+    "G": {"name": "General Release", "status": "identified"},
+    "H": {"name": "Nondisclosure/Non-Solicitation/Noncompete", "status": "identified"},
+    "I": {"name": "Manual TOC", "status": "needs_parsing"},
+    "J": {"name": "Financial Statements", "status": "needs_parsing"},
+    "K": {"name": "Current Franchisees", "status": "needs_parsing"},
+    "L": {"name": "Franchisee Disclosure Questionnaire", "status": "identified"},
+    "M": {"name": "Receipts", "status": "identified"}
+  },
+
+  "stateAddenda": {
+    "virginia": {
+      "cancellationRequiresReasonableCause": true,
+      "noWaiverOfFranchiseeRights": true,
+      "questionnairesDoNotDisclaimReliance": true
+    },
+    "michigan": {
+      "preExhibitNotice": true,
+      "outOfStateDisputeLimited": true,
+      "transferRefusalLimited": true,
+      "terminationRequiresGoodCause": true,
+      "nonrenewalCompensation": true
+    }
+  },
+
+  "extractorLearnings": {
+    "universalRules": [
+      "Half-day preschool is NOT generic childcare — different regulatory and economic profile",
+      "Post-acquisition ownership stack (OpCo/HoldCo/Aggregator) needs multi-level parent capture",
+      "Required accreditations (NAEYC, BBB) are operational obligations, not optional quality badges",
+      "Affiliate software platform (The Student Hub) as exclusive required system is material control",
+      "Fee stack: 7% royalty + 1% brand fund (rising to 2%) + 1% local + possible 2% co-op + $250/month tech = heavy",
+      "Liquidated damages formula ignoring fee waivers/reductions is more aggressive than standard",
+      "Holdover fee (150% of weekly royalty) for month-to-month operations is unusual",
+      "Territory = site-selected protection, not area exclusivity — lesser of 125K pop or 3-mile radius",
+      "Unlimited guaranty binding guarantors to non-compete/non-solicitation/dispute resolution is very aggressive",
+      "Post-termination: 10-day de-identify, customer refund obligation, franchisor may enter without trespass",
+      "Right to acquire business at FMV after termination/expiration is a strong franchisor option",
+      "Lease rider giving franchisor/designee ability to take over lease is material control",
+      "Item 19 with EBITDA by maturity and classroom count is one of the richest FPR structures in the corpus",
+      "Real estate agent disclosure (co-founder may receive commission) should be captured",
+      "Significant unopened franchises flagged as front-end risk — pipeline vs open count distinction matters"
+    ]
+  }
+}
