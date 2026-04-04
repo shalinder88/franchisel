@@ -119,6 +119,19 @@ INGESTION_POLICY = {
     "item8_alternativeSupplierProcess": "fill",
     "item8_technologyFundsNote": "fill",
 
+    # ── Commonly skipped fields: add fill policies ──
+    "businessDescription": "fill",
+    "offeringFormats": "fill",
+    "supplierRestrictions": "fill",
+    "trainingProgram": "fill",
+    "disputeResolution": "fill",
+    "deathDisability": "fill",
+    "ownerOperator": "fill",
+    "productRestrictions": "fill",
+    "stateRisks": "fill",
+    "insuranceRequirements": "fill",
+    "technologySystems": "fill",
+
     # ── Structured objects: enrich-only ──
     "royaltyDetails": "enrich",
     "royaltyBasis": "enrich",
@@ -940,6 +953,72 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
             val = int(m.group(1).replace(",", ""))
             if val >= 10000:  # Supplier revenue should be substantial
                 return val
+        return None
+
+    # ── Commonly skipped fields: simple extraction ──
+    elif field == "businessDescription":
+        # Take the first substantial text about the business
+        for fact in facts:
+            ft = fact.get('fact_text', '')
+            if len(ft) > 30:
+                return ft[:200]
+        return None
+
+    elif field == "offeringFormats":
+        formats = set()
+        for fact in facts:
+            ft = fact.get('fact_text', '').lower()
+            for fmt in ['traditional', 'non-traditional', 'nontraditional', 'satellite', 'express',
+                        'kiosk', 'drive thru', 'drive-thru', 'food truck', 'mobile', 'cafe', 'endcap']:
+                if fmt in ft:
+                    formats.add(fmt)
+        return list(formats) if formats else None
+
+    elif field == "supplierRestrictions":
+        if re.search(r'(?:approved|designated)\s+supplier|must\s+purchase', text_lower):
+            return True
+        return None
+
+    elif field == "trainingProgram":
+        # Extract training hours if mentioned
+        m = re.search(r'(\d+)\s*(?:hours?\s+of\s+)?(?:classroom|training)', text_lower)
+        if m:
+            return f"{m.group(1)} hours"
+        if re.search(r'(?:training\s+program|initial\s+training)', text_lower):
+            return True
+        return None
+
+    elif field == "disputeResolution":
+        # Extract forum/method
+        for state in ['florida', 'colorado', 'north carolina', 'utah', 'nevada', 'oklahoma', 'illinois', 'kentucky']:
+            if state in text_lower and re.search(r'(?:arbitrat|mediat|litigat|forum|venue)', text_lower):
+                return state.title()
+        return None
+
+    elif field == "ownerOperator":
+        if re.search(r'(?:full.?time|best\s+efforts|personal.*?supervis|owner.?operator|managing\s+owner)', text_lower):
+            return True
+        return None
+
+    elif field == "productRestrictions":
+        if re.search(r'(?:only\s+(?:product|item)s?\s+(?:authorized|approved)|may\s+(?:only\s+)?sell)', text_lower):
+            return True
+        return None
+
+    elif field == "stateRisks":
+        risks = []
+        if re.search(r'out.?of.?state', text_lower):
+            risks.append('out_of_state_dispute')
+        if re.search(r'spousal', text_lower):
+            risks.append('spousal_liability')
+        return risks if risks else None
+
+    elif field in ("insuranceRequirements", "technologySystems", "deathDisability"):
+        # Generic text capture for these fields
+        for fact in facts:
+            ft = fact.get('fact_text', '')
+            if len(ft) > 20:
+                return ft[:200]
         return None
 
     # Generic: try to extract a dollar amount

@@ -893,6 +893,51 @@ FIELD_REGISTRY = {
         "gold_aliases": ["hasPublicFigure"],
     },
 
+    # ── Common extraction fields (previously not in canonical) ──
+    "businessDescription_extracted": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.businessDescription (from A→B fill)",
+        "runtime_key": "businessDescription",
+        "null_means": "not_extracted",
+        "gold_aliases": ["businessDescription"],
+    },
+    "offeringFormats": {
+        "type": "Optional[list]",
+        "source": "evidence",
+        "source_detail": "evidence.offeringFormats",
+        "null_means": "not_extracted",
+        "gold_aliases": ["offeringFormats"],
+    },
+    "supplierRestrictions": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.supplierRestrictions",
+        "null_means": "not_extracted",
+        "gold_aliases": ["supplierRestrictions", "hasRequiredPurchases"],
+    },
+    "trainingProgram": {
+        "type": "Optional[Any]",
+        "source": "evidence",
+        "source_detail": "evidence.trainingProgram",
+        "null_means": "not_extracted",
+        "gold_aliases": ["trainingProgram"],
+    },
+    "disputeResolution": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.disputeResolution (forum state)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["disputeResolution"],
+    },
+    "ownerOperator": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.ownerOperator",
+        "null_means": "not_extracted",
+        "gold_aliases": ["ownerOperator", "ownerOperatorRequired"],
+    },
+
     "auditorName": {
         "type": "Optional[str]",
         "source": "engine",
