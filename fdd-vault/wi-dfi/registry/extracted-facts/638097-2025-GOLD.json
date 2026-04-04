@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "fddId": "638097-2025",
+    "brandName": "Ziggis Coffee",
+    "franchisorLegalName": "Ziggi's Coffee Franchise, LLC",
+    "fddYear": 2025,
+    "issuanceDate": "March 31, 2025",
+    "extractedDate": "2026-04-04",
+    "extractedBy": "human_verified_4pass",
+    "stateOfFiling": "Wisconsin",
+    "archetype": "specialty_beverage_drive_thru_cafe",
+    "extractionTier": "gold",
+    "passesCompleted": 4,
+    "confidence": "high",
+    "unresolvedItems": ["item12_single_unit_territory", "item17_full_chart", "item19_tables_ABCDE_values", "state_addenda_full", "spouse_guaranty_form"]
+  },
+
+  "item1": {
+    "franchisorLegalName": "Ziggi's Coffee Franchise, LLC",
+    "entityType": "Colorado limited liability company",
+    "principalAddress": "241 Welker Avenue, Mead, Colorado 80542",
+    "parentCompanies": ["Round Ball Ventures LLC", "Crux Investments LLC"],
+    "parentNote": "May be deemed parent companies based on ownership",
+    "publiclyTraded": false,
+    "entityFormationYear": 2016,
+    "yearFranchiseEstablished": 2016,
+    "firstFranchisedStoreOpened": 2017,
+    "prefranchiseOperatingRoots": 2004,
+    "predecessors": [
+      {"name": "BEC Longmont, Inc.", "role": "predecessor_and_affiliate", "incorporated": "August 11, 2004", "business": "operated coffee retail businesses, developed licensed methods"}
+    ],
+    "affiliates": [
+      {"name": "High Grounds Coffee Equipment Sales and Service LLC", "role": "sole_approved_supplier", "products": "espresso machines purchase and servicing"},
+      {"name": "BEC Longmont, Inc.", "role": "affiliate_operator"},
+      {"name": "Ziggi Ventures, LLC", "role": "affiliate_operator"},
+      {"name": "Ziggi's Colorado Mills, Inc.", "role": "affiliate_operator"},
+      {"name": "Ziggi's Belle Creek, LLC", "role": "affiliate_operator"}
+    ],
+    "businessDescription": "Retail coffee shop selling gourmet specialty coffee, espresso, tea, fruit smoothies, dirty soda drinks, energy drinks, sandwiches, wraps, packaged coffee, and merchandise",
+    "storeFormats": [
+      {"type": "Drive Thru", "sqft": "500-865", "seating": false},
+      {"type": "Café with Drive Thru (freestanding)", "sqft": "1,500-2,000", "seating": "30-40 customers"},
+      {"type": "Café with Drive Thru (endcap)", "sqft": "~1,700", "seating": true}
+    ],
+    "discontinuedFormats": ["Walk-in café only (no drive-thru)"],
+    "multiUnitStructures": {
+      "threePak": "3 franchise agreements signed at once",
+      "ninePak": "typically 3 initial franchise agreements + Development Agreement for remaining 6"
+    },
+    "systemSize": {
+      "totalOutlets2024": 100,
+      "franchisedOutlets2024": 93,
+      "companyOwned2024": 7,
+      "unopenedWithAgreements": 209,
+      "totalOpenOrUnderDevelopment": 301,
+      "asOfDate": "December 31, 2024"
+    },
+    "specialRisks": ["out_of_state_dispute_colorado", "financial_condition_concern", "minimum_inventory_7500", "spousal_liability"],
+    "confidence": "high"
+  },
+
+  "item3": {
+    "hasLitigation": false,
+    "noLitigationDisclosed": true,
+    "confidence": "high"
+  },
+
+  "item4": {
+    "hasBankruptcy": false,
+    "noBankruptcyDisclosed": true,
+    "confidence": "high"
+  },
+
+  "item5": {
+    "initialFranchiseFee": 40000,
+    "feeStructure": {
+      "singleUnit": 40000,
+      "threePak": {"perUnit": 30000, "total": 90000, "additionalOverSingle": 50000},
+      "ninePak": {
+        "initialShopsPerUnit": 25000,
+        "initialShopsCount": 3,
+        "developmentFeePerShop": 25000,
+        "developmentShopsCount": 6,
+        "totalNineShops": 225000,
+        "additionalOverSingle": 185000
+      }
+    },
+    "launchFee": 10000,
+    "launchFeeTimingMultiUnit": "10 days after signing lease/purchase agreement for that location",
+    "preOpeningPurchases": [
+      {"item": "Shirts/aprons/caps/gift cards/loyalty cards", "amount": "$2,000-$3,000"},
+      {"item": "Espresso machine(s) from High Grounds", "amount": "$60,000-$66,000"},
+      {"item": "Opening Marketing Expense", "amount": "$20,000-$25,000", "toFranchisor": "$7,500-$15,000"}
+    ],
+    "refundable": false,
+    "refundNote": "Fully earned and non-refundable",
+    "feeIsUniform": false,
+    "financingOffered": false,
+    "confidence": "high"
+  },
+
+  "item6": {
+    "royaltyRate": "6% of actual Gross Sales",
+    "royaltyBasis": "Gross Sales",
+    "royaltyPayment": "weekly on Monday based on prior week",
+    "marketingAndTechnologyFee": {
+      "current": "1% of actual Gross Sales",
+      "maximum": "2%",
+      "payment": "weekly"
+    },
+    "localAdvertising": {
+      "current": "none",
+      "maximum": "1% of Gross Sales",
+      "note": "Franchisor may later require local advertising spend"
+    },
+    "regionalAdvertising": {
+      "current": "none",
+      "note": "May be established, may absorb part of marketing/tech fee or local ad spend"
+    },
+    "technologyAndMonitoringFees": [
+      {"name": "POS support/maintenance", "amount": "$105-$220/month"},
+      {"name": "LMS license", "amount": "$101/month"},
+      {"name": "Loyalty program", "amount": "$149/month + $0.03/transaction + $150 setup"},
+      {"name": "Mystery shopper", "amount": "$38/visit, at least monthly, more if scores missed"},
+      {"name": "Additional meeting fee", "amount": "up to $750/attendee/meeting"}
+    ],
+    "grossSalesDefinition": {
+      "includes": ["all sales of products/services through shop", "cash and credit", "compliant and non-compliant sales", "on-site and off-site", "fair market value of barter", "gift card redemption value"],
+      "excludes": ["gift card/certificate sales (but franchisor may change this treatment)"],
+      "note": "Gift card accounting treatment subject to change on notice"
+    },
+    "otherFees": [
+      {"name": "Transfer fee", "amount": 10000, "developmentRightsTransfer": "$5,000 per undeveloped right"},
+      {"name": "Transferee training", "amount": 10000},
+      {"name": "Successor franchise (renewal)", "amount": "40% of then-current initial franchise fee"},
+      {"name": "Relocation fee", "amount": "25% of then-current initial franchise fee"},
+      {"name": "Site acquisition extension", "amount": "$500 each, up to 4 x 90-day extensions"},
+      {"name": "Management fee (default/abandonment)", "amount": "5% of Gross Sales plus direct costs"},
+      {"name": "Noncompliance service charge", "amount": "$500 per event"},
+      {"name": "Late payment interest", "amount": "lesser of 1.5%/month or highest lawful rate"},
+      {"name": "Late filing charge", "amount": 50},
+      {"name": "Act of Deception audit charge", "amount": 25000, "note": "Immediately upon notice if Act of Deception found"}
+    ],
+    "damagesFormula": {
+      "formula": "average weekly royalty from prior 52 weeks x weeks from termination to original expiration",
+      "severity": "high",
+      "note": "Effectively accelerates all future royalties on termination"
+    },
+    "confidence": "high"
+  },
+
+  "item7": {
+    "investmentByFormat": {
+      "driveThru": {"low": 581500, "high": 1759500},
+      "freestandingCafeWithDriveThru": {"low": 650000, "high": 2093000},
+      "endcapCafeWithDriveThru": {"low": 587000, "high": 1148000}
+    },
+    "multiUnitAdditional": {
+      "threePak": 50000,
+      "ninePak": 185000
+    },
+    "keyLineItemsDriveThru": [
+      {"item": "Building/site work", "low": 0, "high": 500000, "each": true},
+      {"item": "Architecture/engineering", "low": 55000, "high": 90000},
+      {"item": "Initial equipment package", "low": 325000, "high": 375000},
+      {"item": "Sign package", "low": 45000, "high": 55000},
+      {"item": "Additional funds (3 months)", "low": 30000, "high": 50000}
+    ],
+    "keyLineItemsFreestanding": [
+      {"item": "Equipment package", "low": 400000, "high": 450000},
+      {"item": "Tenant improvements", "low": 0, "high": 300000},
+      {"item": "Sign package", "low": 35000, "high": 45000}
+    ],
+    "keyLineItemsEndcap": [
+      {"item": "Tenant improvements", "low": 0, "high": 400000},
+      {"item": "Security deposit/rent", "low": 5000, "high": 15000},
+      {"item": "Equipment package", "low": 375000, "high": 450000}
+    ],
+    "notes": {
+      "lowEndAssumption": "Build-to-suit lease where landlord bears much of construction cost",
+      "endcapRentBasis": "~1,700 sq ft in/around Denver",
+      "openingMarketingDuration": "~4 months starting ~2 weeks before opening",
+      "equipmentPackageIncludes": "required POS equipment + espresso machine from High Grounds"
+    },
+    "financingOffered": false,
+    "confidence": "high"
+  },
+
+  "item8": {
+    "hasRequiredPurchases": true,
+    "requirementType": "franchisor_specifications_plus_affiliate_sole_supplier",
+    "restrictionIntensity": "moderate_to_high",
+    "affiliateSoleSupplier": {
+      "name": "High Grounds Coffee Equipment Sales and Service LLC",
+      "products": "espresso machines purchase and servicing",
+      "isSoleApproved": true
+    },
+    "requiredFromApprovedSources": ["store layout/design", "inventory mix", "ordering/storage procedures", "uniforms", "supplies", "forms", "marketing materials", "POS system", "espresso machines"],
+    "minimumInventoryRequirement": "$7,500 of different coffees",
+    "initialInventoryEstimate": 40000,
+    "posSystem": {
+      "hardware": "Revel iPad POS System with Zebra drink-label printer",
+      "cost": "$6,500-$9,500",
+      "annualMaintenance": "$1,200-$2,700",
+      "backOffice": "internet-capable, QuickBooks Online compatible"
+    },
+    "lmsLicense": "$101/month",
+    "leaseApprovalRequired": true,
+    "confidence": "high"
+  },
+
+  "item10": {
+    "offersDirectFinancing": false,
+    "offersIndirectFinancing": false,
+    "confidence": "high"
+  },
+
+  "item11": {
+    "preOpeningAssistance": true,
+    "preOpeningSupport": ["workflow design and equipment specs", "architectural/construction document review", "lease review and approval", "products/equipment/branded goods availability", "suggested/min/max pricing"],
+    "trainingProgram": {
+      "classroomHours": 27,
+      "onTheJobHours": 40,
+      "location": "operating Ziggi's store or training facility in Mead, Colorado",
+      "onlineOption": "some classroom content may be provided online",
+      "subjects": ["general store operations", "procedures", "registers/customer service", "headsets/outside ordering", "drinks", "daily manager tasks", "scheduling", "metrics", "pars and waste", "inventory", "leadership", "internal/external feedback"]
+    },
+    "requiredTrainees": {
+      "owner": "classroom owner training portion",
+      "designatedManager": "on-the-job and classroom manager training",
+      "additionalManager": "one other management-level employee"
+    },
+    "operationsManual": true,
+    "operationsManualAttachment": "G",
+    "openingMarketingProgram": {"amount": "$20,000-$25,000", "duration": "~4 months"},
+    "reportingRequirements": {
+      "daily": "POS summary reports",
+      "monthly": "income statements within 15 days",
+      "annual": "statements within 90 days",
+      "dataOwnership": "franchisor claims ownership and broad use rights including for future FPR",
+      "recordRetention": "at least 5 years",
+      "auditScope": "may extend to affiliated parties and owners"
+    },
+    "confidence": "high"
+  },
+
+  "item12": {
+    "developmentAgreementTerritory": {
+      "exclusiveTerritory": false,
+      "note": "Under Development Agreement, franchisee does not receive exclusive territory. May face competition from other franchisees, franchisor-owned outlets, other channels, or competing brands franchisor controls."
+    },
+    "singleUnitTerritory": {
+      "exclusiveTerritory": "unresolved",
+      "unresolvedReason": "Full Item 12 single-shop territory text not surfaced cleanly"
+    },
+    "confidence": "medium"
+  },
+
+  "item17": {
+    "unresolvedNote": "Full Item 17 chart not surfaced in this pass",
+    "damagesFormula": {
+      "formula": "average weekly royalty from prior 52 weeks x weeks from termination to original expiration",
+      "severity": "high"
+    },
+    "personalGuaranty": true,
+    "spousalGuaranty": true,
+    "spousalGuarantyNote": "Special risks page confirms spousal liability; exact guaranty form not surfaced",
+    "confidence": "medium"
+  },
+
+  "item19": {
+    "hasItem19": true,
+    "disclosesFinancialPerformance": true,
+    "metricTypes": ["Actual Gross Sales", "Gross Profits (sales minus COGS and labor)"],
+    "tableStructure": {
+      "tablesAB": "affiliate-owned shops that operated entire 2024 calendar year",
+      "tablesCD": "franchisee-owned shops that operated entire 2024 calendar year",
+      "tableE": "all shops (affiliate + franchisee) that operated at any time 2019-2024, including partial years"
+    },
+    "affiliatePopulation": {
+      "totalAffiliateShops": 7,
+      "excluded": 1,
+      "tableA_driveThru": 4,
+      "tableB_cafeWithDriveThru": 2
+    },
+    "franchiseePopulation": {
+      "totalFranchiseeShops2024": 93,
+      "excluded": 1,
+      "tableC_driveThru": 40,
+      "tableD_cafeWithDriveThru": 29,
+      "openedDuring2024Excluded": 25,
+      "closedDuring2024": 3,
+      "closedAndOpenedWithin2024": 2
+    },
+    "longitudinalOutletCounts": {
+      "2019": 14, "2020": 20, "2021": 37, "2022": 57, "2023": 71, "2024": 93
+    },
+    "priorPassAffiliateData": [
+      {"shop": "A", "totalSales": 1188136, "format": "Drive Thru"},
+      {"shop": "B", "totalSales": 1136240, "format": "Drive Thru"},
+      {"shop": "C", "totalSales": 1284014, "format": "Drive Thru"},
+      {"shop": "D", "totalSales": 877335, "format": "Drive Thru"}
+    ],
+    "averageAffiliateSales": 1121431,
+    "dataVerification": "reported by affiliates and franchisees, not audited or verified",
+    "confidence": "high",
+    "unresolvedNote": "Full table A-E values not surfaced in this pass — affiliate data from prior pass preserved"
+  },
+
+  "item20": {
+    "systemwideOutletSummary": [
+      {"year": 2022, "franchisedStart": 37, "franchisedEnd": 57, "companyStart": 8, "companyEnd": 8, "totalStart": 45, "totalEnd": 65},
+      {"year": 2023, "franchisedStart": 57, "franchisedEnd": 71, "companyStart": 8, "companyEnd": 7, "totalStart": 65, "totalEnd": 78},
+      {"year": 2024, "franchisedStart": 71, "franchisedEnd": 93, "companyStart": 7, "companyEnd": 7, "totalStart": 78, "totalEnd": 100}
+    ],
+    "transfersByYear": {"2022": 1, "2023": 0, "2024": 8},
+    "transfer2024Detail": {"Arizona": 1, "Colorado": 7},
+    "churnExamples": {
+      "California": "2 terminations in 2023, recovered with 2 openings in 2024",
+      "Maine": "1 opening + 1 termination in 2024",
+      "Wyoming": "closed store but still has other opened locations — did not leave system"
+    },
+    "growthState": "Colorado: 39 (2022) → 44 (2023) → 51 (2024)",
+    "systemTrajectory": "rapidly_expanding",
+    "systemNote": "Growth driven almost entirely by franchise expansion. 209 unopened with agreements = large committed pipeline.",
+    "totalUnits": 100,
+    "franchisedUnits": 93,
+    "companyOwnedUnits": 7,
+    "confidence": "high"
+  },
+
+  "item21": {
+    "hasAuditedFinancials": true,
+    "auditorName": "Brock and Company CPAs",
+    "auditorOpinion": "unqualified",
+    "financialExhibit": "J",
+    "financialConditionConcern": true,
+    "financialConditionNote": "Front-end risk disclosure says financial condition 'calls into question' ability to provide support",
+    "revenueBreakdown2024": {
+      "royaltyFees": 3740000,
+      "rebates": 1270000,
+      "franchiseFees": 1060000,
+      "marketingAndTechFees": 709000,
+      "conferenceAndSponsorships": 372000,
+      "productSales": 91000,
+      "totalRevenue": 6863113
+    },
+    "operatingExpenses2024": 7260000,
+    "netLoss2024": -225473,
+    "netLoss2023": -1124527,
+    "netLoss2022": -1090515,
+    "membersDeficit2024": -5120000,
+    "pipelineNote": "301 units open or under development (90 franchisee-owned + 2 fee-waived + 209 unopened with agreements)",
+    "financialStrengthNote": "Audited but reporting net losses all 3 years and negative members equity. Revenue growing ($6.86M) but not yet profitable. Large pipeline may change economics.",
+    "confidence": "high"
+  },
+
+  "exhibits": {
+    "A": {"name": "Franchise Agreement", "status": "identified"},
+    "B": {"name": "Multi-Unit Development Agreement", "status": "identified"},
+    "C": {"name": "Nondisclosure and Noncompetition Agreement", "status": "identified"},
+    "D": {"name": "Statement of Prospective Franchisee", "status": "identified", "note": "anti-extra-representation questionnaire"},
+    "E": {"name": "Conditional Assignment of Lease", "status": "identified"},
+    "F": {"name": "General Release", "status": "identified"},
+    "G": {"name": "Operations Manual TOC", "status": "needs_parsing"},
+    "H": {"name": "Current franchisees", "status": "needs_parsing"},
+    "I": {"name": "Former franchisees / left system", "status": "partially_parsed"},
+    "J": {"name": "Financial statements", "status": "parsed"},
+    "K": {"name": "State agencies/agents for service", "status": "identified"},
+    "L": {"name": "State addendum", "status": "partially_parsed"}
+  },
+
+  "stateAddenda": {
+    "michigan": {
+      "preExhibitNotice": true,
+      "unfairProvisionsVoided": true
+    },
+    "washington": {
+      "questionnairesCannotWaiveRights": true,
+      "nonsolicitation_restrictions_unenforceable": true
+    }
+  },
+
+  "formerFranchisees": {
+    "statesWithExits": ["Arizona", "Colorado", "Maine", "New Hampshire", "Wyoming"],
+    "transfersVsFailures": "Several entries marked as transfers, not classic failed exits",
+    "wyomingNote": "One entry closed store but still has other opened locations — did not leave system"
+  },
+
+  "extractorLearnings": {
+    "universalRules": [
+      "Multi-format coffee franchise needs separate investment objects per format (Drive Thru vs Café vs Endcap)",
+      "Multi-unit fee structures (3-Pak, 9-Pak) need parallel fee objects, not single scalar",
+      "Launch fee per franchise is separate from initial franchise fee — both must be captured",
+      "Affiliate sole supplier (High Grounds for espresso machines) is material and should be first-class",
+      "Minimum inventory requirement ($7,500 coffees) is both working-capital reality and contractual control point",
+      "Item 19 with separate affiliate and franchisee populations by store format needs structured table objects",
+      "Item 19 longitudinal outlet counts (2019-2024) tie FPR to system growth — preserve as metadata",
+      "Item 20 open units (100) vs open-or-under-development pipeline (301) are different but both buyer-relevant",
+      "Financial condition concern + audited financials showing net losses + large pipeline = preserve all three signals",
+      "Act of Deception audit charge ($25,000) is an unusually punitive enforcement mechanism",
+      "Damages formula (average weekly royalty x weeks to expiration) effectively accelerates all future royalties",
+      "Gift card accounting treatment 'subject to change on notice' is a revenue-base risk worth flagging",
+      "Development Agreement territory explicitly non-exclusive even if single-unit territory may differ — capture both layers",
+      "Former franchisee list distinguishes transfers from failures — not every exit is a system departure"
+    ]
+  }
+}
