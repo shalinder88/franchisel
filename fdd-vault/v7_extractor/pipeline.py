@@ -62,6 +62,7 @@ from .display_tier_tagger import tag_display_tiers
 from .assemblers.brand_json import assemble_brand_json
 from .roadmap_validator import validate_roadmap
 from .training.learning_manager import write_full_learning, generate_learning_report
+from .table_router import route_all_tables, get_tables_for_item, TableContentType
 from .fact_state_registry import FactStateRegistry
 from .fact_resolver import build_fact_registry, check_cross_field_sanity
 from .unmodeled_fact_store import UnmodeledFactStore
@@ -105,6 +106,15 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # ════════════════════════════════════════════════════════════════
     # PHASE 0: BOOTSTRAP
     # ════════════════════════════════════════════════════════════════
+    # ── Load prior learning ──
+    from .training.learning_manager import load_structural_rules, load_lane_a_memory, load_lane_b_memory
+    prior_rules = load_structural_rules()
+    prior_lane_a = load_lane_a_memory()
+    prior_lane_b = load_lane_b_memory()
+    brands_learned = prior_lane_a.get("brand_count", 0)
+    if brands_learned > 0:
+        print(f"\n  Loaded learning from {brands_learned} prior brands")
+
     print(f"\n--- Phase 0: Bootstrap ---")
     bootstrap = build_bootstrap(page_reads)
     print(f"  Entity: {bootstrap['entity'][:60]}")
@@ -184,6 +194,36 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # Recount after merging
     merged_table_count = sum(len(s.tables) for s in items.values())
     print(f"  Tables after merge: {merged_table_count}")
+
+    # ── Table routing: classify by content type, not page assignment ──
+    routed_tables = route_all_tables(all_tables, items)
+    route_counts = {k: len(v) for k, v in routed_tables.items() if v}
+    if route_counts:
+        print(f"  Table routing: {route_counts}")
+
+    # Inject content-routed tables into item sections
+    # General rule: if Item 20 has no outlet_summary table in its section,
+    # but one exists elsewhere, inject it.
+    outlet_tables = get_tables_for_item(routed_tables, 20, [TableContentType.OUTLET_SUMMARY])
+    if outlet_tables:
+        i20_section = items.get(20)
+        if i20_section:
+            existing_ids = {t.table_id for t in i20_section.tables}
+            for ot in outlet_tables:
+                if ot.table_id not in existing_ids:
+                    i20_section.tables.append(ot)
+                    print(f"  → Injected outlet_summary table {ot.table_id} into Item 20")
+
+    # Similarly for fee tables into Item 6
+    fee_tables = get_tables_for_item(routed_tables, 6, [TableContentType.FEE_TABLE])
+    if fee_tables:
+        i6_section = items.get(6)
+        if i6_section:
+            existing_ids = {t.table_id for t in i6_section.tables}
+            for ft in fee_tables:
+                if ft.table_id not in existing_ids:
+                    i6_section.tables.append(ft)
+                    print(f"  → Injected fee_table {ft.table_id} into Item 6")
 
     # ════════════════════════════════════════════════════════════════
     # PHASE 4: EXHIBIT LOCATION + PARSING
