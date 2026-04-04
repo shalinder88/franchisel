@@ -283,9 +283,10 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
         "signals": [r'(?:nyse|nasdaq|publicly\s+traded|stock\s+exchange)'],
     },
     "system_composition": {
-        "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_2,
+        "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_1,
         "engine_field": "systemComposition", "source_items": [1, 20],
-        "signals": [r'\d+\s*%\s*(?:of\s+)?(?:all\s+)?(?:restaurant|outlet|unit)s?\s+(?:are\s+)?franchise'],
+        "signals": [r'\d+\s*%\s*(?:of\s+)?(?:all\s+)?(?:(?:u\.?s\.?\s+)?restaurant|outlet|unit)s?\s+(?:are\s+)?franchise',
+                    r'(?:about|approximately|currently)\s+\d+\s*%.*?franchise'],
     },
     "year_established": {
         "family": FactFamily.IDENTITY, "tier": FactTier.TIER_2,
@@ -405,9 +406,9 @@ def classify_fact(fact_text: str, source_item: int) -> Tuple[Optional[str], Dict
     best_score = 0
 
     for fact_type, spec in FACT_TYPES.items():
-        # Source item match boosts score
+        # Source item match boosts score significantly
         item_match = source_item in spec.get("source_items", [])
-        base_bonus = 2 if item_match else 0
+        base_bonus = 4 if item_match else 0  # Strong item-match bonus
 
         # Signal pattern matching
         signal_hits = 0

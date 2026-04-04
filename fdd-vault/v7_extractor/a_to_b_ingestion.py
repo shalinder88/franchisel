@@ -46,6 +46,9 @@ INGESTION_POLICY = {
     "medianGrossSales": "fill_only",
     "item19_avgRevenue": "fill_only",
 
+    "supplierRevenue": "fill_only",
+    "refundable": "fill_only",
+
     # Enrich-only: add detail to object, don't create standalone scalar
     "royaltyDetails": "enrich_only",
     "royaltyBasis": "enrich_only",
