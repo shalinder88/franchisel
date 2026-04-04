@@ -76,6 +76,19 @@ INGESTION_POLICY = {
     "item19_sampleCoveragePct": "fill",
     "item19_comparability": "fill",
 
+    # ── Territory / Item 12 depth scalars: fill-only ──
+    "item12_onlineSalesReserved": "fill",
+    "item12_nationalAccountsReserved": "fill",
+    "item12_relocationRights": "fill",
+    "item12_performanceRequirement": "fill",
+    "item12_multiUnitDevelopmentRights": "fill",
+    "franchisorMayCompete": "fill",
+
+    # ── Item 8 depth scalars: fill-only ──
+    "item8_purchaseCooperative": "fill",
+    "item8_proprietaryProducts": "fill",
+    "item8_insuranceRequirements": "fill",
+
     # ── Structured objects: enrich-only ──
     "royaltyDetails": "enrich",
     "royaltyBasis": "enrich",
@@ -511,6 +524,62 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
         return None
 
     elif field == "item19_comparability":
+        return None
+
+    # ── Item 8 depth fields ──
+    elif field == "item8_purchaseCooperative":
+        if re.search(r'no\s+(?:purchasing|distribution)\s+cooperativ', text_lower):
+            return False
+        if re.search(r'(?:purchasing|distribution)\s+cooperativ', text_lower):
+            return True
+        return None
+
+    elif field == "item8_proprietaryProducts":
+        if re.search(r'(?:proprietary|secret|confidential)\s+(?:product|recipe|formula|specification)', text_lower):
+            return True
+        return None
+
+    elif field == "item8_insuranceRequirements":
+        m = re.search(r'([^.]*(?:insurance|insured)\s+(?:requir|must|minimum|coverage)[^.]*\.)', text_lower)
+        if m:
+            return m.group(1).strip()[:200]
+        return None
+
+    # ── Territory / Item 12 depth fields ──
+    elif field == "item12_onlineSalesReserved":
+        if re.search(r'(?:online|digital|internet|e.?commerce|delivery).*?(?:reserv|retain|control|we\s+(?:may|can))', text_lower):
+            return True
+        return None
+
+    elif field == "item12_nationalAccountsReserved":
+        if re.search(r'(?:national\s+account|house\s+account|institutional).*?(?:reserv|retain|we\s+(?:may|can))', text_lower):
+            return True
+        return None
+
+    elif field == "item12_relocationRights":
+        if re.search(r'(?:no|not|without).*?(?:relocat|move\s+(?:your|the)\s+(?:restaurant|franchise))', text_lower):
+            return False
+        if re.search(r'(?:may|right\s+to)\s+(?:relocat|move)', text_lower):
+            return True
+        return None
+
+    elif field == "item12_performanceRequirement":
+        if re.search(r'(?:no|not)\s+(?:minimum|performance|sales)\s+(?:requirement|standard|quota)', text_lower):
+            return False
+        if re.search(r'(?:minimum|performance|sales)\s+(?:requirement|standard|quota)', text_lower):
+            return True
+        return None
+
+    elif field == "item12_multiUnitDevelopmentRights":
+        if re.search(r'(?:no|not|does\s+not)\s+(?:right|option|entitl).*?(?:additional|multi|multiple|more)\s+(?:franchise|unit|restaurant)', text_lower):
+            return False
+        if re.search(r'(?:development\s+agreement|area\s+development|multi.?unit)', text_lower):
+            return True
+        return None
+
+    elif field == "franchisorMayCompete":
+        if re.search(r'(?:we|franchisor)\s+(?:may|can|has\s+the\s+right|reserve).*?(?:establish|operate|open|develop|franchise)', text_lower):
+            return True
         return None
 
     elif field == "royaltyDetails":

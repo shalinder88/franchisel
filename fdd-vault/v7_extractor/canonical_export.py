@@ -158,6 +158,99 @@ FIELD_REGISTRY = {
         "gold_aliases": [],
     },
 
+    # ── Supplier / Item 8 depth ──
+    "item8_hasRequiredPurchases": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.supplier_restrictions_engine (approved or required or sole)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["hasRequiredPurchases"],
+    },
+    "item8_requirementType": {
+        "type": "Optional[str]",
+        "source": "engine",
+        "source_detail": "engine.supplier_restrictions_engine → derived from flags",
+        "null_means": "not_extracted",
+        "gold_aliases": ["requirementType"],
+    },
+    "item8_franchisorIsDirectSupplier": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.supplier_restrictions_engine.affiliate_supplier",
+        "null_means": "not_extracted",
+        "gold_aliases": ["franchisorIsDirectSupplier"],
+    },
+    "item8_franchisorReceivesRevenue": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.supplier_restrictions_engine.rebates_commissions",
+        "null_means": "not_extracted",
+        "gold_aliases": ["franchisorReceivesRevenue"],
+    },
+    "item8_approvedSupplierList": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "engine.supplier_restrictions_engine.approved_supplier",
+        "null_means": "not_extracted",
+        "gold_aliases": ["approvedSupplierList"],
+    },
+    "item8_proprietaryProducts": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item8_proprietaryProducts",
+        "null_means": "not_extracted",
+        "gold_aliases": ["proprietaryProducts"],
+    },
+    "item8_purchaseCooperative": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item8_purchaseCooperative",
+        "null_means": "not_extracted",
+        "gold_aliases": ["purchaseCooperative"],
+    },
+    "item8_requiredPurchasePctEstablishment": {
+        "type": "Optional[str]",
+        "source": "engine",
+        "source_detail": "engine.supplier_restrictions_engine.setup_required_purchase_pct",
+        "null_means": "not_extracted",
+        "gold_aliases": ["requiredPurchasePctEstablishment"],
+    },
+    "item8_requiredPurchasePctOperating": {
+        "type": "Optional[Any]",
+        "source": "engine",
+        "source_detail": "engine.supplier_restrictions_engine.ongoing_required_purchase_pct",
+        "null_means": "not_extracted",
+        "gold_aliases": ["requiredPurchasePctOperating"],
+    },
+    "item8_lockInScore": {
+        "type": "Optional[int]",
+        "source": "engine",
+        "source_detail": "engine.supplier_restrictions_engine.lock_in_severity",
+        "null_means": "not_extracted",
+        "gold_aliases": ["lockInScore"],
+    },
+    "item8_proprietaryProducts": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item8_proprietaryProducts (from FPR_FIELD tag)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["proprietaryProducts"],
+    },
+    "item8_purchaseCooperative": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item8_purchaseCooperative (from FPR_FIELD tag)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["purchaseCooperative"],
+    },
+    "item8_insuranceRequirements": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item8_insuranceRequirements (from FPR_FIELD tag)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["insuranceRequirements"],
+    },
+
     # ── Performance ──
     "hasItem19": {
         "type": "bool",
@@ -330,6 +423,56 @@ FIELD_REGISTRY = {
         "source_detail": "evidence.encroachmentRisk (enum: none/limited/conditional/high)",
         "null_means": "not_extracted",
         "gold_aliases": ["encroachmentRisk"],
+    },
+    # ── Territory / Item 12 depth ──
+    "item12_territoryType": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "derived from exclusiveTerritory (none/exclusive/protected/designated)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["territoryType"],
+    },
+    "item12_franchisorMayCompete": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.franchisorMayCompete",
+        "null_means": "not_extracted",
+        "gold_aliases": ["franchisorMayCompete"],
+    },
+    "item12_onlineSalesReserved": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item12_onlineSalesReserved",
+        "null_means": "not_extracted",
+        "gold_aliases": ["onlineSalesReserved"],
+    },
+    "item12_nationalAccountsReserved": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item12_nationalAccountsReserved",
+        "null_means": "not_extracted",
+        "gold_aliases": ["nationalAccountsReserved"],
+    },
+    "item12_relocationRights": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item12_relocationRights",
+        "null_means": "not_extracted",
+        "gold_aliases": ["relocationRights"],
+    },
+    "item12_performanceRequirement": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item12_performanceRequirement",
+        "null_means": "not_extracted",
+        "gold_aliases": ["performanceRequirement"],
+    },
+    "item12_multiUnitDevelopmentRights": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item12_multiUnitDevelopmentRights",
+        "null_means": "not_extracted",
+        "gold_aliases": ["multiUnitDevelopmentRights"],
     },
     "renewalAvailable": {
         "type": "Optional[bool]",
@@ -549,8 +692,9 @@ def build_canonical_export(extraction_result: Dict[str, Any]) -> Dict[str, Any]:
         else:
             export[field_name] = br(field_name)
 
-    # Post-pass: compute Item 19 derived fields
+    # Post-pass: compute derived fields
     _compute_item19_derived(export)
+    _compute_territory_derived(export)
 
     return export
 
@@ -585,6 +729,35 @@ def _resolve_engine_field(field_name: str, engines: Dict, brand: Dict) -> Any:
     elif field_name == "item19_exclusions":
         excl = eng19.get("exclusions", [])
         return excl if excl else None
+
+    # Item 8 supplier engine fields
+    eng8 = engines.get("supplier_restrictions_engine", {})
+    if field_name == "item8_hasRequiredPurchases":
+        return eng8.get("approved_supplier") or eng8.get("required_supplier") or eng8.get("sole_supplier") or None
+    elif field_name == "item8_requirementType":
+        if eng8.get("sole_supplier"):
+            return "sole_source"
+        if eng8.get("required_supplier"):
+            return "required_suppliers"
+        if eng8.get("approved_supplier"):
+            return "approved_suppliers_only"
+        return None
+    elif field_name == "item8_franchisorIsDirectSupplier":
+        # affiliate_supplier means franchisor/affiliate sells to franchisees
+        return eng8.get("affiliate_supplier")
+    elif field_name == "item8_franchisorReceivesRevenue":
+        return eng8.get("rebates_commissions")
+    elif field_name == "item8_approvedSupplierList":
+        return eng8.get("approved_supplier")
+    elif field_name == "item8_requiredPurchasePctEstablishment":
+        val = eng8.get("setup_required_purchase_pct")
+        return str(val) if val is not None else None
+    elif field_name == "item8_requiredPurchasePctOperating":
+        val = eng8.get("ongoing_required_purchase_pct")
+        return str(val) if val is not None else None
+    elif field_name == "item8_lockInScore":
+        return eng8.get("lock_in_severity")
+
     return brand.get(field_name)
 
 
@@ -618,6 +791,21 @@ def _compute_item19_derived(export: Dict) -> None:
             "usingHighInvestment": ratio_high,
             "assessment": assessment,
         }
+
+
+def _compute_territory_derived(export: Dict) -> None:
+    """Post-pass: derive territory type from exclusiveTerritory."""
+    excl = export.get("exclusiveTerritory")
+    if excl is False:
+        export["item12_territoryType"] = "none"
+    elif excl is True:
+        export["item12_territoryType"] = "exclusive"
+    # franchisorMayCompete from evidence
+    fmc = export.get("item12_franchisorMayCompete")
+    if fmc is None:
+        # If we have evidence of no exclusive territory, franchisor likely may compete
+        if excl is False:
+            export["item12_franchisorMayCompete"] = True
 
 
 def build_reverse_alias_map() -> Dict[str, str]:

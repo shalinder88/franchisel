@@ -195,6 +195,27 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                 source_page=start_page, source_item=item_num,
                 importance=0.9, category="risk",
             )
+        # Territory depth: online/digital sales reserved
+        if item_num == 12 and re.search(r'(?:online|digital|internet|delivery|e.?commerce).*?(?:reserv|retain|control|order)', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="FPR_FIELD:item12_onlineSalesReserved",
+                source_page=start_page, source_item=item_num,
+                importance=0.8, category="control",
+            )
+        # Territory depth: national/house accounts reserved
+        if item_num == 12 and re.search(r'(?:national\s+account|house\s+account|institutional)', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="FPR_FIELD:item12_nationalAccountsReserved",
+                source_page=start_page, source_item=item_num,
+                importance=0.8, category="control",
+            )
+        # Territory depth: multi-unit development
+        if item_num == 12 and re.search(r'(?:no\s+right|not\s+entitl|does\s+not\s+grant).*?(?:additional|multi|more)\s+(?:franchise|restaurant|unit)', sent_lower):
+            fact_store.add(
+                sent_stripped[:300], why_important="FPR_FIELD:item12_multiUnitDevelopmentRights",
+                source_page=start_page, source_item=item_num,
+                importance=0.8, category="control",
+            )
 
         # ── RENEWAL AND TERM ──
         if any(kw in sent_lower for kw in ['renew', 'new term', 'extension', 'term of']):
@@ -530,6 +551,34 @@ def run_reader_pass(page_reads: List[PageRead],
                             source_page=pr.page_num, source_item=8,
                             importance=0.7, category="control",
                         )
+
+                # ── Structured Item 8 field extraction ──
+                # Cooperative
+                if re.search(r'(?:no|not|do\s+not)\s+(?:have\s+)?(?:any\s+)?(?:purchasing|distribution)\s+cooperativ', text_lower):
+                    fact_store.add("Supplier: no purchasing cooperative",
+                        why_important="FPR_FIELD:item8_purchaseCooperative",
+                        source_page=pr.page_num, source_item=8,
+                        importance=0.7, category="control")
+                elif re.search(r'(?:purchasing|distribution)\s+cooperativ', text_lower):
+                    fact_store.add("Supplier: has purchasing cooperative",
+                        why_important="FPR_FIELD:item8_purchaseCooperative",
+                        source_page=pr.page_num, source_item=8,
+                        importance=0.7, category="control")
+                # Proprietary products
+                if re.search(r'(?:proprietary|secret|confidential)\s+(?:product|recipe|formula|specification|ingredient)', text_lower):
+                    fact_store.add("Supplier: proprietary products/specifications",
+                        why_important="FPR_FIELD:item8_proprietaryProducts",
+                        source_page=pr.page_num, source_item=8,
+                        importance=0.7, category="control")
+                # Insurance requirements
+                if re.search(r'(?:insurance|insured)\s+(?:requir|must|minimum|coverage)', text_lower):
+                    # Capture the full sentence
+                    m_ins = re.search(r'([^.]*(?:insurance|insured)\s+(?:requir|must|minimum|coverage)[^.]*\.)', text_lower)
+                    if m_ins:
+                        fact_store.add(m_ins.group(1).strip()[:200],
+                            why_important="FPR_FIELD:item8_insuranceRequirements",
+                            source_page=pr.page_num, source_item=8,
+                            importance=0.7, category="economics")
 
             # Items 11-17: Kill-switch and control clause extraction
             if 11 <= item_num <= 17:
