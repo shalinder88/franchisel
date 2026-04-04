@@ -48,6 +48,12 @@ class ImportantFactStore:
             source_item: Optional[int] = None, importance: float = 0.5,
             category: str = "general", linked_table: Optional[str] = None,
             linked_exhibit: Optional[str] = None):
+        # Hard rule: Item 0 is reserved for front matter only.
+        # Facts created while processing Items 1-23 must carry explicit item number.
+        # Missing item provenance is a write-time validation, not a silent fallback.
+        if source_item is not None and not (0 <= source_item <= 23):
+            source_item = None  # invalid item number, don't silently accept
+
         self.facts.append(ImportantFact(
             fact_text=fact_text,
             why_important=why_important,
@@ -87,12 +93,13 @@ class ImportantFactStore:
             "high_importance_uncaptured": len(self.high_importance_uncaptured()),
             "facts": [
                 {
-                    "text": f.fact_text[:200],
-                    "page": f.source_page,
-                    "item": f.source_item,
-                    "importance": f.importance_score,
-                    "category": f.category,
-                    "captured": f.engine_captured,
+                    "fact_text": f.fact_text[:300],
+                    "why_important": f.why_important[:200],
+                    "source_page": f.source_page,
+                    "source_item": f.source_item,
+                    "importance_score": f.importance_score,
+                    "fact_category": f.category,
+                    "engine_captured": f.engine_captured,
                     "engine_field": f.engine_field,
                 }
                 for f in self.facts
