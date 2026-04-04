@@ -136,7 +136,8 @@ def parse_item01(section: ItemSection) -> Dict[str, Any]:
 
     # Offering variants
     variant_keywords = ["standard", "non-traditional", "non traditional", "small box",
-                        "express", "satellite", "kiosk", "mobile", "food truck"]
+                        "express", "satellite", "kiosk", "mobile", "food truck",
+                        "small town", "sto", "str", "bfl"]
     found_variants = []
     for kw in variant_keywords:
         if kw in text:
@@ -144,6 +145,38 @@ def parse_item01(section: ItemSection) -> Dict[str, Any]:
     if found_variants:
         result["offering_variants"] = {
             "value": list(set(found_variants)),
+            "state": EvidenceState.PRESENT.value,
+            "provenance": {"source_page": section.start_page},
+        }
+
+    # Entity type (LLC, corporation, etc.)
+    orig_text = section.text
+    for pattern in [
+        r'(?:a|an)\s+(Delaware|[A-Z][a-z]+)\s+(limited\s+liability\s+company|corporation|partnership)',
+        r'(?:organized\s+as\s+a)\s+([\w\s]+(?:company|corporation|partnership))',
+    ]:
+        m = re.search(pattern, orig_text)
+        if m:
+            result["entity_type"] = {
+                "value": m.group(0).strip()[:100],
+                "state": EvidenceState.PRESENT.value,
+                "provenance": {"source_page": section.start_page},
+            }
+            break
+
+    # Publicly traded
+    if re.search(r'(?:NYSE|NASDAQ|publicly\s+traded|stock\s+exchange|ticker\s+symbol)', orig_text, re.I):
+        result["publicly_traded"] = {
+            "value": True,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": {"source_page": section.start_page},
+        }
+
+    # System composition (X% franchised)
+    comp_match = re.search(r'(?:approximately|about|currently)?\s*(\d+)\s*%\s*(?:of\s+)?(?:all\s+)?(?:(?:U\.?S\.?\s+)?restaurant|outlet|unit|franchise|location)s?\s+(?:are\s+)?(?:franchise|owned\s+by\s+franchise)', text)
+    if comp_match:
+        result["system_composition"] = {
+            "value": {"franchised_pct": int(comp_match.group(1))},
             "state": EvidenceState.PRESENT.value,
             "provenance": {"source_page": section.start_page},
         }

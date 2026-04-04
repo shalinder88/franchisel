@@ -69,16 +69,32 @@ def parse_item12(section: ItemSection) -> Dict[str, Any]:
             break
 
     # Exclusivity
+    # General rule: check NEGATIVE patterns FIRST ("no exclusive", "not exclusive",
+    # "no protected", "no territory"). McDonald's grants NO exclusive territory.
     if result["exclusivity"]["state"] == EvidenceState.NOT_FOUND.value:
-        if re.search(r'exclusive\s+(?:territory|area|market|right)', text_lower):
+        no_territory_patterns = [
+            r'(?:no|not|do\s+not|does\s+not|will\s+not)\s+(?:grant|receive|have|get)\s+(?:any\s+)?(?:exclusive|protected)\s+(?:territory|area)',
+            r'(?:no|not)\s+(?:exclusive|protected)\s+(?:territory|area)',
+            r'non[- ]?exclusive',
+            r'(?:no|not)\s+(?:grant|provide|receive)\s+(?:a\s+)?territory',
+            r'you\s+(?:will\s+not|do\s+not)\s+(?:receive|have|get)\s+(?:any\s+)?(?:territory|protected)',
+        ]
+        is_no_territory = any(re.search(p, text_lower) for p in no_territory_patterns)
+
+        if is_no_territory:
             result["exclusivity"] = {
-                "value": "exclusive",
+                "value": "none",
                 "state": EvidenceState.PRESENT.value,
                 "provenance": prov_base,
             }
-        elif re.search(r'non[- ]?exclusive|no\s+exclusive', text_lower):
+            result["territory_type"] = {
+                "value": {"type": "none"},
+                "state": EvidenceState.PRESENT.value,
+                "provenance": prov_base,
+            }
+        elif re.search(r'exclusive\s+(?:territory|area|market|right)', text_lower):
             result["exclusivity"] = {
-                "value": "non_exclusive",
+                "value": "exclusive",
                 "state": EvidenceState.PRESENT.value,
                 "provenance": prov_base,
             }
@@ -88,6 +104,29 @@ def parse_item12(section: ItemSection) -> Dict[str, Any]:
                 "state": EvidenceState.PRESENT.value,
                 "provenance": prov_base,
             }
+
+    # Franchisor right to compete
+    if re.search(r'(?:we|franchisor)\s+(?:may|can|has\s+the\s+right|reserve)', text_lower) and \
+       re.search(r'(?:establish|operate|open|develop|franchise)', text_lower):
+        result["franchisor_may_compete"] = {
+            "value": True,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # Encroachment risk assessment
+    if result["exclusivity"].get("value") == "none":
+        result["encroachment_risk"] = {
+            "value": "high",
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+    elif result["exclusivity"].get("value") in ("exclusive", "protected"):
+        result["encroachment_risk"] = {
+            "value": "low",
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
 
     # Reserved rights
     reserved = []

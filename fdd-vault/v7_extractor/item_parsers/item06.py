@@ -203,4 +203,73 @@ def parse_item06(section: ItemSection) -> Dict[str, Any]:
                     "provenance": fr["provenance"],
                 }
 
+    # ── RENT STRUCTURE (critical for McDonald's-type brands) ──
+    # General rule: some franchisors lease real estate to franchisees.
+    # Rent is a major ongoing fee — often larger than royalty.
+    text_lower = section.text.lower()
+    has_rent = False
+    rent_components = []
+
+    for fr in all_fee_rows:
+        label = fr.get("type_label", "").lower()
+        amount = fr.get("amount_raw", "").lower()
+        if "rent" in label:
+            has_rent = True
+            if "base" in label or "base" in amount:
+                rent_components.append({"type": "base_rent", "raw": fr.get("amount_raw", "")[:200]})
+            elif "pass" in label or "pass" in amount:
+                rent_components.append({"type": "pass_thru_rent", "raw": fr.get("amount_raw", "")[:200]})
+            elif "percent" in label or "percent" in amount or "%" in amount:
+                rent_components.append({"type": "percentage_rent", "raw": fr.get("amount_raw", "")[:200]})
+            else:
+                rent_components.append({"type": "rent", "raw": fr.get("amount_raw", "")[:200]})
+
+    # Also check text for rent
+    if not has_rent:
+        if re.search(r'\brent\b.*?(?:payable|monthly|annual)', text_lower):
+            has_rent = True
+        elif re.search(r'(?:lease|leased).*?(?:from\s+us|from\s+franchisor)', text_lower):
+            has_rent = True
+
+    if has_rent:
+        result["rent_structure"] = {
+            "value": {
+                "has_rent": True,
+                "rent_is_major_fee": len(rent_components) >= 2 or re.search(r'(?:major|significant|substantial)\s+(?:portion|component|part)', text_lower) is not None,
+                "components": rent_components,
+            },
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # ── ROYALTY BASIS (Gross Sales / Net Sales) ──
+    if re.search(r'(?:royalt|service\s+fee).*?(?:of|on)\s+(?:gross\s+sales)', text_lower):
+        result["royalty_basis"] = {
+            "value": "Gross Sales",
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+    elif re.search(r'(?:royalt|service\s+fee).*?(?:of|on)\s+(?:net\s+sales)', text_lower):
+        result["royalty_basis"] = {
+            "value": "Net Sales",
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # ── TECHNOLOGY FEES from fee rows ──
+    tech_fees = []
+    for fr in all_fee_rows:
+        ft = fr.get("fee_type", "")
+        if ft == "technology":
+            tech_fees.append({
+                "name": fr.get("type_label", ""),
+                "amount": fr.get("amount_raw", ""),
+            })
+    if tech_fees:
+        result["technology_fees"] = {
+            "value": tech_fees,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
     return result

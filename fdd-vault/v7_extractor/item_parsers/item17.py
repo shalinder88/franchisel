@@ -154,12 +154,42 @@ def parse_item17(section: ItemSection) -> Dict[str, Any]:
             if "renew" in provision_lower or "extension" in provision_lower:
                 years = _extract_years(summary_text)
                 count_match = re.search(r'(\d+)\s*(?:additional|successive|renewal)', summary_lower)
-                if years:
+
+                # Detect NO renewal right — critical for McDonald's-type brands
+                no_renewal_patterns = [
+                    r'no\s+(?:contractual\s+)?(?:right|option)\s+to\s+(?:renew|extend)',
+                    r'(?:not|no)\s+(?:a\s+)?(?:renew|renewal|extension)',
+                    r'renewal\s+(?:is\s+)?not\s+(?:guaranteed|automatic|assured)',
+                    r'new\s+term\s+(?:policy|agreement)',
+                    r'(?:subject\s+to|at)\s+(?:our|franchisor)',
+                ]
+                is_no_renewal = any(re.search(p, summary_lower) for p in no_renewal_patterns)
+
+                if is_no_renewal:
+                    result["renewal_available"] = {
+                        "value": False,
+                        "state": EvidenceState.PRESENT.value,
+                        "provenance": tprov,
+                    }
+                    # Check for New Term Policy
+                    if "new term" in summary_lower:
+                        result["new_term_policy"] = {
+                            "value": True,
+                            "state": EvidenceState.PRESENT.value,
+                            "provenance": tprov,
+                        }
+                elif years:
                     result["renewal_term_years"] = {
                         "value": years,
                         "state": EvidenceState.PRESENT.value,
                         "provenance": tprov,
                     }
+                    result["renewal_available"] = {
+                        "value": True,
+                        "state": EvidenceState.PRESENT.value,
+                        "provenance": tprov,
+                    }
+
                 if count_match:
                     result["renewal_count"] = {
                         "value": int(count_match.group(1)),
@@ -176,10 +206,17 @@ def parse_item17(section: ItemSection) -> Dict[str, Any]:
             # Non-compete post-term
             if "non-compet" in combined and ("after" in combined or "post" in combined or contract_row.get("nasaa_letter") == "o"):
                 years = _extract_years(summary_text)
+                months = _extract_months(summary_text)
                 miles = _extract_miles(summary_text)
                 if years:
                     result["non_compete_post_term_duration"] = {
                         "value": {"years": years},
+                        "state": EvidenceState.PRESENT.value,
+                        "provenance": tprov,
+                    }
+                elif months:
+                    result["non_compete_post_term_duration"] = {
+                        "value": {"months": months},
                         "state": EvidenceState.PRESENT.value,
                         "provenance": tprov,
                     }
@@ -265,7 +302,9 @@ def parse_item17(section: ItemSection) -> Dict[str, Any]:
     # --- TEXT fallback for fields not found in tables ---
 
     # Cure period
-    cure_match = re.search(r'(\d+)\s*(?:day|calendar day).*?(?:cure|remedy|correct)', text_lower)
+    cure_match = re.search(r'(\d+)\s*(?:day|calendar day|business day).*?(?:cure|remedy|correct)', text_lower)
+    if not cure_match:
+        cure_match = re.search(r'(?:cure|remedy|correct).*?(\d+)\s*(?:day|calendar day)', text_lower)
     if cure_match:
         result["cure_period_days"] = {
             "value": int(cure_match.group(1)),
@@ -282,8 +321,86 @@ def parse_item17(section: ItemSection) -> Dict[str, Any]:
         }
 
     # Spouse guaranty
-    if re.search(r'spouse.*(?:guarant|sign|execute|join)', text_lower):
+    if re.search(r'spous(?:e|al).*(?:guarant|sign|execute|join|required)', text_lower):
         result["spouse_guaranty"] = {
+            "value": True,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # Personal guaranty
+    if re.search(r'personal(?:ly)?\s+(?:guarant|liable|liabilit)', text_lower):
+        result["personal_guaranty"] = {
+            "value": True,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # Mandatory remodel
+    if re.search(r'(?:remodel|renovati|refurbish|upgrade).*?(?:requir|oblig|must|shall)', text_lower) or \
+       re.search(r'(?:requir|oblig|must|shall).*?(?:remodel|renovati|refurbish|upgrade)', text_lower):
+        result["mandatory_remodel"] = {
+            "value": True,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # Termination triggers from text
+    triggers = []
+    TRIGGER_PATTERNS = [
+        (r'(?:terminat\w+|default).*?(?:bankrupt|insolv)', "bankruptcy"),
+        (r'(?:terminat\w+|default).*?(?:non[- ]?payment|fail.*?pay)', "non_payment"),
+        (r'(?:terminat\w+|default).*?(?:abandon|desert)', "abandonment"),
+        (r'(?:terminat\w+|default).*?(?:conviction|felon)', "conviction"),
+        (r'(?:terminat\w+|default).*?(?:misrepresent|fraud)', "misrepresentation"),
+        (r'(?:terminat\w+|default).*?(?:health|safety|sanitation)', "health_safety"),
+        (r'(?:terminat\w+|default).*?(?:transfer|assign).*?(?:without|unauthorized)', "unauthorized_transfer"),
+        (r'(?:terminat\w+|default).*?(?:trademark|brand).*?(?:misuse|violat)', "trademark_misuse"),
+        (r'(?:terminat\w+|default).*?(?:under[- ]?report|misstat)', "underreporting"),
+        (r'(?:repeated|material).*?(?:breach|default|violat)', "repeated_breach"),
+    ]
+    for pattern, trigger_type in TRIGGER_PATTERNS:
+        if re.search(pattern, text_lower, re.DOTALL):
+            triggers.append(trigger_type)
+    if triggers:
+        result["termination_triggers"] = {
+            "value": triggers,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # Renewal from text (fallback for when table doesn't have clear row)
+    if result.get("renewal_available", {}).get("state") != EvidenceState.PRESENT.value:
+        no_renewal = re.search(
+            r'(?:no\s+(?:contractual\s+)?(?:right|option)\s+to\s+(?:renew|extend)'
+            r'|(?:not|no)\s+(?:right\s+to\s+)?(?:renew|renewal|extension)'
+            r'|renewal\s+(?:is\s+)?not\s+(?:guaranteed|automatic))',
+            text_lower
+        )
+        if no_renewal:
+            result["renewal_available"] = {
+                "value": False,
+                "state": EvidenceState.PRESENT.value,
+                "provenance": prov_base,
+            }
+        elif re.search(r'(?:may|right\s+to)\s+(?:renew|extend)', text_lower):
+            result["renewal_available"] = {
+                "value": True,
+                "state": EvidenceState.PRESENT.value,
+                "provenance": prov_base,
+            }
+
+    # Indemnification
+    if re.search(r'indemnif', text_lower):
+        result["indemnification"] = {
+            "value": True,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # Confidentiality restrictions
+    if re.search(r'confidential.*(?:restrict|prohibit|not\s+disclose)', text_lower):
+        result["confidentiality_restrictions"] = {
             "value": True,
             "state": EvidenceState.PRESENT.value,
             "provenance": prov_base,

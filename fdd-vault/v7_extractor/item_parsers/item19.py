@@ -177,6 +177,83 @@ def parse_item19(section: ItemSection) -> Dict[str, Any]:
             "provenance": avg_revenue_prov or prov_base,
         }
 
+    # --- EXTRACT median, unit count, high/low from prose ---
+    # General rule: FPR text often states these in narrative form
+    median_match = re.search(
+        r'median\s+(?:annual\s+)?(?:gross\s+)?(?:sales|revenue).*?(?:was|of)\s+\$\s*([\d,]+)',
+        text_lower, re.DOTALL
+    )
+    if median_match:
+        result["median_revenue"] = {
+            "value": int(median_match.group(1).replace(",", "")),
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # Unit count
+    unit_match = re.search(
+        r'(\d[\d,]+)\s+(?:domestic\s+)?(?:traditional\s+)?(?:franchise[d]?\s+)?'
+        r'(?:mcdonald|restaurant|outlet|unit|store|location)s?\s+'
+        r'(?:open|operat)',
+        text_lower
+    )
+    if unit_match:
+        count = int(unit_match.group(1).replace(",", ""))
+        if count >= 100:
+            result["fpr_unit_count"] = {
+                "value": count,
+                "state": EvidenceState.PRESENT.value,
+                "provenance": prov_base,
+            }
+
+    # Highest/lowest unit
+    high_match = re.search(r'(?:highest|maximum|top)\s+.*?\$\s*([\d,]+)', text_lower)
+    if high_match:
+        val = int(high_match.group(1).replace(",", ""))
+        if val > 100000:
+            result["highest_unit_revenue"] = {
+                "value": val,
+                "state": EvidenceState.PRESENT.value,
+                "provenance": prov_base,
+            }
+
+    low_match = re.search(r'(?:lowest|minimum|bottom)\s+.*?\$\s*([\d,]+)', text_lower)
+    if low_match:
+        val = int(low_match.group(1).replace(",", ""))
+        if val > 10000:
+            result["lowest_unit_revenue"] = {
+                "value": val,
+                "state": EvidenceState.PRESENT.value,
+                "provenance": prov_base,
+            }
+
+    # Sample coverage
+    coverage_match = re.search(r'(?:represent|compris|includ)\w*\s+(?:approximately\s+)?(\d+)\s*%', text_lower)
+    if coverage_match:
+        result["sample_coverage_pct"] = {
+            "value": int(coverage_match.group(1)),
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
+    # Cost structure indicators
+    cost_patterns = [
+        (r'cost\s+of\s+(?:sales|goods)', "cost_of_sales"),
+        (r'(?:crew|labor)\s+cost', "labor_cost"),
+        (r'occupancy\s+cost', "occupancy_cost"),
+        (r'operating\s+(?:expense|income)', "operating_expenses"),
+    ]
+    cost_types_found = []
+    for pattern, cost_type in cost_patterns:
+        if re.search(pattern, text_lower):
+            cost_types_found.append(cost_type)
+    if cost_types_found:
+        result["cost_structure_disclosed"] = {
+            "value": cost_types_found,
+            "state": EvidenceState.PRESENT.value,
+            "provenance": prov_base,
+        }
+
     # --- TEXT reading: every line matters ---
 
     # Universal disclaimer
