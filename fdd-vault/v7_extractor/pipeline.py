@@ -63,6 +63,7 @@ from .assemblers.brand_json import assemble_brand_json
 from .roadmap_validator import validate_roadmap
 from .training.learning_manager import write_full_learning, generate_learning_report
 from .fact_ontology import classify_all_facts, fact_coverage_report
+from .a_to_b_ingestion import ingest_typed_facts_into_evidence
 from .table_router import route_all_tables, get_tables_for_item, TableContentType
 from .fact_state_registry import FactStateRegistry
 from .fact_resolver import build_fact_registry, check_cross_field_sanity
@@ -285,6 +286,16 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     if coverage['tier1_missing']:
         print(f"  Tier 1 missing: {coverage['tier1_missing'][:8]}")
     print(f"  By family: {coverage['by_family']}")
+
+    # ════════════════════════════════════════════════════════════════
+    # A→B INGESTION: Wire typed Lane A facts into Lane B evidence
+    # Rule: Lane A leads. Only fills gaps Lane B missed.
+    # ════════════════════════════════════════════════════════════════
+    print(f"\n--- A→B ingestion ---")
+    ingestion = ingest_typed_facts_into_evidence(classified_facts, evidence, engines)
+    print(f"  Ingested: {ingestion['ingested']} | Confirmed: {ingestion['confirmed']} | Skipped: {ingestion['skipped']}")
+    for item in ingestion.get("details", {}).get("ingested", []):
+        print(f"  → {item['field']}: {item['value'][:40]} (from Lane A)")
 
     # ════════════════════════════════════════════════════════════════
     # LANE C: RECONCILIATION
@@ -579,8 +590,9 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         "silent_drops": [{"type": d["type"], "id": d["id"], "source": d["source"]}
                          for d in dropped],
         "recheck_results": recheck_results,
-        "classified_facts": classified_facts,
+        "classified_facts": classified_facts[:100],  # cap for JSON size
         "fact_coverage": coverage,
+        "a_to_b_ingestion": ingestion,
         "consumption_registry": consumption.to_dict(),
         "consumption_summary": consumption_summary,
         "lane_contributions": {

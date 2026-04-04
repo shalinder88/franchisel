@@ -64,7 +64,10 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
     "royalty_conditions": {
         "family": FactFamily.ECONOMICS, "tier": FactTier.TIER_1,
         "engine_field": "royaltyDetails", "source_items": [6],
-        "signals": [r'royalt\w*.*?(?:applies|continue|depend|circumstance)', r'(?:4%|5%).*?(?:applies|continue)'],
+        "signals": [r'royalt\w*.*?(?:applies|continue|depend|circumstance|scenario|following)',
+                    r'(?:4%|5%).*?(?:applies|continue|will\s+(?:apply|continue))',
+                    r'(?:on\s+and\s+after|after)\s+(?:january|february|march).*?(?:royalt|rate)',
+                    r'royalt\w*\s+of\s+\d+%\s+of\s+gross\s+sales\s+(?:applies|will\s+continue)'],
     },
     "advertising_fund_rate": {
         "family": FactFamily.ECONOMICS, "tier": FactTier.TIER_1,
@@ -393,10 +396,7 @@ def classify_fact(fact_text: str, source_item: int) -> Tuple[Optional[str], Dict
     for fact_type, spec in FACT_TYPES.items():
         # Source item match boosts score
         item_match = source_item in spec.get("source_items", [])
-        if not item_match and source_item not in spec.get("source_items", []):
-            base_bonus = 0
-        else:
-            base_bonus = 2
+        base_bonus = 2 if item_match else 0
 
         # Signal pattern matching
         signal_hits = 0
@@ -404,7 +404,11 @@ def classify_fact(fact_text: str, source_item: int) -> Tuple[Optional[str], Dict
             if re.search(pattern, text_lower):
                 signal_hits += 1
 
-        score = signal_hits + base_bonus
+        # More specific types (more signals matched) should win over general
+        # Also: longer type names tend to be more specific
+        specificity_bonus = min(signal_hits * 0.5, 2.0)
+        score = signal_hits + base_bonus + specificity_bonus
+
         if score > best_score and signal_hits > 0:
             best_score = score
             best_type = fact_type
