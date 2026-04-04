@@ -729,6 +729,43 @@ FIELD_REGISTRY = {
         "gold_aliases": [],
     },
 
+    # ── Outlets / Item 20 depth ──
+    "item20_systemwideOutletSummary": {
+        "type": "Optional[list]",
+        "source": "derived",
+        "source_detail": "parsed from outlet_summary table (year-by-year start/end/net change)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["systemwideOutletSummary"],
+    },
+    "item20_transfersByYear": {
+        "type": "Optional[dict]",
+        "source": "derived",
+        "source_detail": "aggregated from transfer tables",
+        "null_means": "not_extracted",
+        "gold_aliases": ["transfersByYear"],
+    },
+    "item20_topTransferStates": {
+        "type": "Optional[list]",
+        "source": "derived",
+        "source_detail": "top states from transfer tables sorted by count",
+        "null_means": "not_extracted",
+        "gold_aliases": ["topTransferStates2024"],
+    },
+    "item20_unitEconomics": {
+        "type": "Optional[dict]",
+        "source": "derived",
+        "source_detail": "composed from outlet summary + evidence fields",
+        "null_means": "not_extracted",
+        "gold_aliases": ["unitEconomics"],
+    },
+    "item20_churnData": {
+        "type": "Optional[dict]",
+        "source": "derived",
+        "source_detail": "composed from outlet detail tables",
+        "null_means": "not_extracted",
+        "gold_aliases": ["churnData"],
+    },
+
     # ── Financials (from engine) ──
     "auditorName": {
         "type": "Optional[str]",
@@ -838,6 +875,7 @@ def build_canonical_export(extraction_result: Dict[str, Any]) -> Dict[str, Any]:
     # Post-pass: compute derived fields
     _compute_item19_derived(export)
     _compute_territory_derived(export)
+    _compute_outlet_derived(export, extraction_result)
 
     return export
 
@@ -1075,6 +1113,154 @@ def _compute_item19_derived(export: Dict) -> None:
             "usingHighInvestment": ratio_high,
             "assessment": assessment,
         }
+
+
+def _compute_outlet_derived(export: Dict, extraction_result: Dict) -> None:
+    """Post-pass: parse outlet tables into structured objects."""
+    import re
+    tables = extraction_result.get("table_registry", [])
+    if not isinstance(tables, list):
+        return
+
+    # Find outlet summary table (has columns: Outlet Type, Year, Start, End, Net Change)
+    outlet_summary_table = None
+    transfer_tables = []
+    for t in tables:
+        if not isinstance(t, dict):
+            continue
+        cols = t.get("columns", [])
+        cols_lower = " ".join(str(c).lower() for c in cols)
+        if "outlet type" in cols_lower and "net change" in cols_lower:
+            outlet_summary_table = t
+        elif "number of transfers" in cols_lower:
+            transfer_tables.append(t)
+
+    # Parse outlet summary → systemwideOutletSummary
+    if outlet_summary_table:
+        rows = outlet_summary_table.get("rows", [])
+        summary = []
+        current_type = ""
+        year_data = {}
+        for row in rows:
+            cells = row.get("cells", row) if isinstance(row, dict) else row
+            if not isinstance(cells, list) or len(cells) < 5:
+                continue
+            otype = str(cells[0]).strip()
+            if otype:
+                current_type = otype.lower()
+            year = str(cells[1]).strip()
+            start = _parse_int(cells[2])
+            end = _parse_int(cells[3])
+            nc = _parse_int(cells[4])
+
+            if not year or start is None:
+                continue
+
+            if year not in year_data:
+                year_data[year] = {"year": int(year) if year.isdigit() else year}
+
+            if "franchise" in current_type:
+                year_data[year]["franchisedStart"] = start
+                year_data[year]["franchisedEnd"] = end
+                year_data[year]["franchisedNetChange"] = nc
+            elif "company" in current_type:
+                year_data[year]["companyStart"] = start
+                year_data[year]["companyEnd"] = end
+                year_data[year]["companyNetChange"] = nc
+            elif "total" in current_type:
+                year_data[year]["totalStart"] = start
+                year_data[year]["totalEnd"] = end
+                year_data[year]["totalNetChange"] = nc
+
+        if year_data:
+            summary = sorted(year_data.values(), key=lambda x: x.get("year", 0))
+            export["item20_systemwideOutletSummary"] = summary
+
+            # Derive unitEconomics from the latest year
+            latest = summary[-1] if summary else {}
+            total_end = latest.get("totalEnd")
+            f_end = latest.get("franchisedEnd")
+            c_end = latest.get("companyEnd")
+            nc = latest.get("totalNetChange")
+
+            if total_end:
+                ue = {
+                    "unitsEndOfPeriod": total_end,
+                    "franchisedUnits": f_end,
+                    "companyOwnedUnits": c_end,
+                    "franchisedPct": round(f_end / total_end * 100, 1) if f_end and total_end else None,
+                    "netGrowth2024": nc,
+                }
+                # 3-year trend
+                if len(summary) >= 3:
+                    first = summary[0]
+                    total_start = first.get("totalStart")
+                    if total_start:
+                        ue["threeYearNetGrowth"] = total_end - total_start
+                        ue["threeYearGrowthRate"] = round((total_end - total_start) / total_start * 100, 2)
+                    # Trajectory
+                    changes = [y.get("totalNetChange", 0) for y in summary]
+                    if all(c > 0 for c in changes if c is not None):
+                        ue["systemTrajectory"] = "growing"
+                    elif all(c < 0 for c in changes if c is not None):
+                        ue["systemTrajectory"] = "declining"
+                    else:
+                        ue["systemTrajectory"] = "stable_growing" if nc and nc > 0 else "stable"
+                export["item20_unitEconomics"] = ue
+
+            # Also update netChange derived fact
+            if nc is not None and export.get("netChange") is None:
+                export["netChange"] = {"netChange": nc, "provenance": ["outlet_summary_table"]}
+
+    # Parse transfer tables → transfersByYear + topTransferStates
+    if transfer_tables:
+        transfers_by_state_year = {}
+        current_state = ""
+        for t in transfer_tables:
+            for row in t.get("rows", []):
+                cells = row.get("cells", row) if isinstance(row, dict) else row
+                if not isinstance(cells, list) or len(cells) < 3:
+                    continue
+                state = str(cells[0]).strip()
+                if state:
+                    current_state = state
+                year = str(cells[1]).strip()
+                count = _parse_int(cells[2])
+                if not year or count is None:
+                    continue
+                key = (current_state, year)
+                transfers_by_state_year[key] = count
+
+        if transfers_by_state_year:
+            # Aggregate by year
+            by_year = {}
+            for (state, year), count in transfers_by_state_year.items():
+                by_year[year] = by_year.get(year, 0) + count
+            export["item20_transfersByYear"] = by_year
+
+            # Top states for most recent year
+            years = sorted(by_year.keys())
+            latest_year = years[-1] if years else None
+            if latest_year:
+                state_counts = {}
+                for (state, year), count in transfers_by_state_year.items():
+                    if year == latest_year:
+                        state_counts[state] = count
+                top_states = sorted(state_counts.items(), key=lambda x: -x[1])[:7]
+                export["item20_topTransferStates"] = [
+                    {"state": s, "count": c} for s, c in top_states
+                ]
+
+
+def _parse_int(val) -> Optional[int]:
+    """Parse an integer from table cell, handling commas and +/- signs."""
+    if val is None:
+        return None
+    s = str(val).strip().replace(",", "").replace("+", "")
+    try:
+        return int(s)
+    except (ValueError, TypeError):
+        return None
 
 
 def _compute_territory_derived(export: Dict) -> None:
