@@ -64,6 +64,18 @@ INGESTION_POLICY = {
     "supplierRevenue": "fill",
     "refundable": "fill",
 
+    # ── Item 19 depth scalars: fill-only ──
+    "item19_reportingPeriod": "fill",
+    "item19_measurementYear": "fill",
+    "item19_basis": "fill",
+    "item19_basisDetail": "fill",
+    "item19_includesCompanyUnits": "fill",
+    "item19_includesFranchisedUnits": "fill",
+    "item19_separateSegments": "fill",
+    "item19_expenseCoverage": "fill",
+    "item19_sampleCoveragePct": "fill",
+    "item19_comparability": "fill",
+
     # ── Structured objects: enrich-only ──
     "royaltyDetails": "enrich",
     "royaltyBasis": "enrich",
@@ -115,13 +127,22 @@ def ingest_typed_facts_into_evidence(classified_facts: List[Dict],
         if entry.get("state") == "present" and entry.get("value") is not None:
             existing_fields.add(field_name)
 
-    # Group typed Tier 1 facts by engine_field
+    # Pre-pass: extract FPR_FIELD-tagged facts (reader-assigned, bypasses ontology)
+    for fact in classified_facts:
+        why = fact.get("why_important", "")
+        if why.startswith("FPR_FIELD:"):
+            field_tag = why.split(":", 1)[1]
+            fact["engine_field"] = field_tag
+            fact["typed"] = True
+            fact["fact_tier"] = 2
+
+    # Group typed Tier 1/2 facts by engine_field
     by_field: Dict[str, List[Dict]] = {}
     for fact in classified_facts:
         if not fact.get("typed"):
             continue
         tier = fact.get("fact_tier", 3)
-        if tier > 2:  # Tier 1 and Tier 2
+        if tier > 2:
             continue
         engine_field = fact.get("engine_field")
         if not engine_field:
@@ -412,6 +433,84 @@ def _extract_value_from_facts(field: str, facts: List[Dict]) -> Optional[Any]:
 
     elif field in ("terminationTriggers", "transferConditions"):
         # These are list-type values — already captured by Lane B parsers
+        return None
+
+    # ── Item 19 depth fields ──
+    elif field == "item19_reportingPeriod":
+        # Tagged facts: "FPR reporting period: Calendar Year 2024"
+        m = re.search(r'fpr\s+reporting\s+period:\s+(.+)', text_lower)
+        if m:
+            return m.group(1).strip().title()
+        m = re.search(r'(?:calendar\s+year|fiscal\s+year)\s+(20\d{2})', text_lower)
+        if m:
+            return f"Calendar Year {m.group(1)}"
+        return None
+
+    elif field == "item19_measurementYear":
+        # Tagged facts: "FPR measurement year: 2024"
+        m = re.search(r'fpr\s+measurement\s+year:\s+(\d{4})', text_lower)
+        if m:
+            return int(m.group(1))
+        m = re.search(r'(?:as\s+of\s+december\s+31,?\s+|during\s+|calendar\s+year\s+)(20\d{2})', text_lower)
+        if m:
+            return int(m.group(1))
+        return None
+
+    elif field == "item19_basis":
+        if re.search(r'open\w*\s+(?:at\s+least\s+)?1\s+year', text_lower):
+            return "open_over_1yr"
+        if re.search(r'open\w*\s+(?:at\s+least\s+)?(?:12|a\s+full)\s+month', text_lower):
+            return "open_over_1yr"
+        return None
+
+    elif field == "item19_basisDetail":
+        m = re.search(r'((?:open|operat)\w*\s+(?:at\s+least|for\s+at\s+least|a\s+full)[^.]+\.)', text_lower)
+        if m:
+            return m.group(1).strip()[:200]
+        return None
+
+    elif field == "item19_includesCompanyUnits":
+        if re.search(r'(?:includes\s+company|company.?owned|mcopco)', text_lower):
+            return True
+        if re.search(r'(?:does\s+not\s+include|exclud).*?(?:company|mcopco)', text_lower):
+            return False
+        return None
+
+    elif field == "item19_includesFranchisedUnits":
+        if re.search(r'(?:includes\s+franchis|franchis\w+\s+.*?(?:restaurant|unit|included))', text_lower):
+            return True
+        return None
+
+    elif field == "item19_separateSegments":
+        # Tagged facts contain "FPR segment:" from reader
+        if re.search(r'fpr\s+segment:', text_lower):
+            return True
+        has_franchised = bool(re.search(r'(?:franchise\w+)\s+.*?(?:restaurant|outlet)s?\s+open', text_lower))
+        has_company = bool(re.search(r'(?:company.?owned|mcopco)\s+.*?(?:restaurant|outlet)s?\s+open', text_lower))
+        if has_franchised and has_company:
+            return True
+        return None
+
+    elif field == "item19_expenseCoverage":
+        if re.search(r'before\s+occupancy', text_lower):
+            return "partial_opex"
+        if re.search(r'(?:operating\s+income|net\s+income)', text_lower):
+            return "partial_opex"
+        if re.search(r'cost\s+of\s+sales.*?(?:pro\s+forma|disclosed|statement)', text_lower):
+            return "partial_opex"
+        return None
+
+    elif field == "item19_sampleCoveragePct":
+        # Tagged: "FPR sample coverage: 96%"
+        m = re.search(r'fpr\s+sample\s+coverage:\s+(\d+)', text_lower)
+        if m:
+            return int(m.group(1))
+        m = re.search(r'(?:approximately\s+)?(\d+)\s*%\s+had\s+annual\s+sales', text_lower)
+        if m:
+            return int(m.group(1))
+        return None
+
+    elif field == "item19_comparability":
         return None
 
     elif field == "royaltyDetails":

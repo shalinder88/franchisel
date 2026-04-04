@@ -200,6 +200,41 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
         "engine_field": "fprSegments", "source_items": [19],
         "signals": [r'(?:franchised|company.?owned|mcopco|all\s+(?:traditional|domestic))'],
     },
+    "fpr_reporting_period": {
+        "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_2,
+        "engine_field": "item19_reportingPeriod", "source_items": [19],
+        "signals": [r'(?:as\s+of|during|calendar\s+year|fiscal\s+year)\s+(?:december\s+31,?\s+)?20\d{2}',
+                    r'(?:year\s+ended|year\s+ending)\s+(?:december|january|june|march)'],
+    },
+    "fpr_basis": {
+        "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_2,
+        "engine_field": "item19_basis", "source_items": [19],
+        "signals": [r'(?:open|operat)\w*\s+(?:at\s+least|for\s+at\s+least)\s+(?:1\s+year|12\s+month)',
+                    r'(?:open|operat)\w*\s+(?:a\s+full\s+)?(?:12|24|36)\s+month'],
+    },
+    "fpr_sample_coverage": {
+        "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_2,
+        "engine_field": "item19_sampleCoveragePct", "source_items": [19],
+        "signals": [r'(?:approximately\s+)?\d+\s*%\s*(?:had|of\s+(?:all|domestic|traditional))'],
+    },
+    "fpr_expense_coverage": {
+        "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_2,
+        "engine_field": "item19_expenseCoverage", "source_items": [19],
+        "signals": [r'(?:before\s+occupancy|operating\s+income|cost\s+of\s+sales.*?pro\s+forma)',
+                    r'(?:does\s+not\s+include|exclud).*?(?:rent|royalt|occupancy)'],
+    },
+    "fpr_includes_company_units": {
+        "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_2,
+        "engine_field": "item19_includesCompanyUnits", "source_items": [19],
+        "signals": [r'(?:company.?owned|mcopco|franchisor.?owned).*?(?:restaurant|outlet|unit|included)',
+                    r'(?:does\s+not\s+include|exclud).*?(?:company|mcopco|franchisor)'],
+    },
+    "fpr_separate_segments": {
+        "family": FactFamily.PERFORMANCE, "tier": FactTier.TIER_2,
+        "engine_field": "item19_separateSegments", "source_items": [19],
+        "signals": [r'(?:franchised|company.?owned|mcopco).*?\d[\d,]+\s+(?:domestic|traditional)',
+                    r'(?:separately|broken\s+out|by\s+(?:segment|type|category))'],
+    },
 
     # === TIER 1: OUTLETS (Item 20) ===
     "total_units": {

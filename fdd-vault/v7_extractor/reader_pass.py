@@ -353,6 +353,36 @@ def _deep_read_item(item_num: int, text: str, start_page: int,
                     source_page=start_page, source_item=item_num,
                     importance=0.85, category="performance",
                 )
+            # Reporting period / measurement year: "as of December 31, 2024", "during 2024", "Calendar Year 2024"
+            if re.search(r'(?:as\s+of|during|calendar\s+year|fiscal\s+year)\s+(?:december\s+31,?\s+)?20\d{2}', sent_lower):
+                fact_store.add(
+                    sent_stripped[:300], why_important="FPR reporting period / measurement year",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.8, category="performance",
+                )
+            # Basis: "open at least 1 year", "operated for at least 12 months"
+            if re.search(r'(?:open|operat)\w*\s+(?:at\s+least|for\s+at\s+least|a\s+full)\s+(?:1\s+year|12\s+month|\d+\s+month)', sent_lower):
+                fact_store.add(
+                    sent_stripped[:300], why_important="FPR population basis (inclusion criteria)",
+                    source_page=start_page, source_item=item_num,
+                    importance=0.85, category="performance",
+                )
+            # Segment identification: "franchised", "company-owned", "McOpCo", "all traditional"
+            if re.search(r'(?:franchised|company.?owned|mcopco|all\s+(?:traditional|domestic))\s+.*?(?:restaurant|outlet|unit|location)s?', sent_lower):
+                if re.search(r'\d[\d,]*\s+(?:domestic|traditional|franchised|company)', sent_lower):
+                    fact_store.add(
+                        sent_stripped[:300], why_important="FPR segment with unit count",
+                        source_page=start_page, source_item=item_num,
+                        importance=0.9, category="performance",
+                    )
+            # Expense coverage: "operating income before occupancy", "cost of sales"
+            if any(kw in sent_lower for kw in ['before occupancy', 'operating income', 'cost of sales', 'total cost', 'gross profit']):
+                if any(kw in sent_lower for kw in ['pro forma', 'statement', 'derived', 'based upon']):
+                    fact_store.add(
+                        sent_stripped[:300], why_important="FPR expense coverage scope",
+                        source_page=start_page, source_item=item_num,
+                        importance=0.85, category="performance",
+                    )
 
         # ── ITEM 20 OUTLET DATA ──
         if item_num == 20:
@@ -526,8 +556,88 @@ def run_reader_pass(page_reads: List[PageRead],
                             importance=0.85, category="risk",
                         )
 
-            # Item 19: FPR — capture specific performance data
+            # Item 19: FPR — structured field extraction
             if item_num == 19:
+                # ── Measurement year: "as of December 31, 2024" ──
+                m_year = re.search(r'(?:as\s+of\s+december\s+31,?\s+|during\s+|calendar\s+year\s+)(20\d{2})', text_lower)
+                if m_year:
+                    year_val = m_year.group(1)
+                    fact_store.add(
+                        f"FPR measurement year: {year_val}",
+                        why_important="FPR_FIELD:item19_measurementYear",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.85, category="performance",
+                    )
+                    fact_store.add(
+                        f"FPR reporting period: Calendar Year {year_val}",
+                        why_important="FPR_FIELD:item19_reportingPeriod",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.85, category="performance",
+                    )
+
+                # ── Basis: "open at least 1 year" ──
+                m_basis = re.search(r'((?:open|operat)\w*\s+(?:at\s+least\s+|for\s+at\s+least\s+)?(?:1\s+year|12\s+month|a\s+full\s+year)[^.]*(?:as\s+of[^.]+)?\.)', text_lower)
+                if m_basis:
+                    fact_store.add(
+                        m_basis.group(1).strip()[:200],
+                        why_important="FPR_FIELD:item19_basis",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.85, category="performance",
+                    )
+
+                # ── Segment detection with unit counts ──
+                for seg_m in re.finditer(r'(?:approximately\s+)?([\d,]+)\s+domestic\s+traditional\s+(franchised\s+|mcopco\s+|)?(?:mcdonald|papa|restaurant|outlet)', text_lower):
+                    seg_type = seg_m.group(2).strip() if seg_m.group(2) else "all"
+                    unit_count = seg_m.group(1).replace(",", "")
+                    fact_store.add(
+                        f"FPR segment: {seg_type} units={unit_count}",
+                        why_important="FPR_FIELD:item19_separateSegments",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.9, category="performance",
+                    )
+
+                # ── Sample coverage: "approximately 96% had annual sales" ──
+                m_cov = re.search(r'(?:approximately\s+)?(\d+)\s*%\s+had\s+annual\s+sales', text_lower)
+                if m_cov:
+                    fact_store.add(
+                        f"FPR sample coverage: {m_cov.group(1)}%",
+                        why_important="FPR_FIELD:item19_sampleCoveragePct",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.85, category="performance",
+                    )
+
+                # ── Expense coverage: "operating income before occupancy" ──
+                if re.search(r'(?:operating\s+(?:income|results?)\s+before\s+occupancy)', text_lower):
+                    fact_store.add(
+                        "FPR expense coverage: operating income before occupancy costs",
+                        why_important="FPR_FIELD:item19_expenseCoverage",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.85, category="performance",
+                    )
+                elif re.search(r'(?:cost\s+of\s+sales|gross\s+profit)', text_lower) and re.search(r'(?:pro\s+forma|statement)', text_lower):
+                    fact_store.add(
+                        "FPR expense coverage: cost of sales and gross profit disclosed",
+                        why_important="FPR_FIELD:item19_expenseCoverage",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.85, category="performance",
+                    )
+
+                # ── Includes company units / franchised ──
+                if re.search(r'(?:company.?owned|mcopco)\s+.*?(?:\d[\d,]+|restaurant)', text_lower):
+                    fact_store.add(
+                        "FPR includes company-owned units",
+                        why_important="FPR_FIELD:item19_includesCompanyUnits",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.8, category="performance",
+                    )
+                if re.search(r'(?:franchise\w+)\s+.*?(?:\d[\d,]+\s+(?:domestic|traditional)|restaurant)', text_lower):
+                    fact_store.add(
+                        "FPR includes franchised units",
+                        why_important="FPR_FIELD:item19_includesFranchisedUnits",
+                        source_page=pr.page_num, source_item=19,
+                        importance=0.8, category="performance",
+                    )
+
                 # Capture average/median dollar amounts
                 for m in re.finditer(r'((?:average|median)[^.]*\$\s*[\d,]+[^.]*)', text_lower):
                     fact_store.add(

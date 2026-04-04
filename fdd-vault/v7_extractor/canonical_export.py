@@ -188,6 +188,134 @@ FIELD_REGISTRY = {
         "gold_aliases": [],
     },
 
+    # ── Item 19 depth ──
+    "item19_presentation": {
+        "type": "Optional[str]",
+        "source": "engine",
+        "source_detail": "engine.item19_engine (derived from fpr_tables count)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["presentation"],
+    },
+    "item19_tableCount": {
+        "type": "Optional[int]",
+        "source": "engine",
+        "source_detail": "engine.item19_engine.fpr_tables length",
+        "null_means": "not_extracted",
+        "gold_aliases": ["tableCount"],
+    },
+    "item19_metricType": {
+        "type": "Optional[str]",
+        "source": "engine",
+        "source_detail": "engine.item19_engine.metrics_reported → combined label",
+        "null_means": "not_extracted",
+        "gold_aliases": ["metricType"],
+    },
+    "item19_reportingPeriod": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_reportingPeriod",
+        "null_means": "not_extracted",
+        "gold_aliases": ["reportingPeriod"],
+    },
+    "item19_measurementYear": {
+        "type": "Optional[int]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_measurementYear",
+        "null_means": "not_extracted",
+        "gold_aliases": ["measurementYear"],
+    },
+    "item19_basis": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_basis",
+        "null_means": "not_extracted",
+        "gold_aliases": ["basis"],
+    },
+    "item19_basisDetail": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_basisDetail",
+        "null_means": "not_extracted",
+        "gold_aliases": ["basisDetail"],
+    },
+    "item19_includesCompanyUnits": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_includesCompanyUnits",
+        "null_means": "not_extracted",
+        "gold_aliases": ["includesCompanyUnits"],
+    },
+    "item19_includesFranchisedUnits": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_includesFranchisedUnits",
+        "null_means": "not_extracted",
+        "gold_aliases": ["includesFranchisedUnits"],
+    },
+    "item19_separateSegments": {
+        "type": "Optional[bool]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_separateSegments",
+        "null_means": "not_extracted",
+        "gold_aliases": ["separateSegments"],
+    },
+    "item19_expensesIncluded": {
+        "type": "Optional[bool]",
+        "source": "engine",
+        "source_detail": "derived from cost_structure_disclosed non-empty",
+        "null_means": "not_extracted",
+        "gold_aliases": ["expensesIncluded"],
+    },
+    "item19_expenseCoverage": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_expenseCoverage (enum: none/partial_opex/full_pnl)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["expenseCoverage"],
+    },
+    "item19_exclusions": {
+        "type": "Optional[list]",
+        "source": "engine",
+        "source_detail": "engine.item19_engine.exclusions",
+        "null_means": "not_extracted",
+        "gold_aliases": ["exclusions"],
+    },
+    "item19_sampleCoveragePct": {
+        "type": "Optional[int]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_sampleCoveragePct",
+        "null_means": "not_extracted",
+        "gold_aliases": ["sampleCoveragePct"],
+    },
+    "item19_distributionSkew": {
+        "type": "Optional[dict]",
+        "source": "derived",
+        "source_detail": "computed from item19_avgRevenue / medianGrossSales",
+        "null_means": "insufficient_source_data",
+        "gold_aliases": ["distributionSkew"],
+    },
+    "item19_companyVsFranchiseeGap": {
+        "type": "Optional[dict]",
+        "source": "derived",
+        "source_detail": "computed from segment averages",
+        "null_means": "insufficient_source_data",
+        "gold_aliases": ["companyVsFranchiseeGap"],
+    },
+    "item19_investmentToRevenueRatio": {
+        "type": "Optional[dict]",
+        "source": "derived",
+        "source_detail": "computed from totalInvestment / medianGrossSales",
+        "null_means": "insufficient_source_data",
+        "gold_aliases": ["investmentToRevenueRatio"],
+    },
+    "item19_comparability": {
+        "type": "Optional[str]",
+        "source": "evidence",
+        "source_detail": "evidence.item19_comparability (enum: full/limited/weak)",
+        "null_means": "not_extracted",
+        "gold_aliases": ["comparability"],
+    },
+
     # ── Contract / Control ──
     "exclusiveTerritory": {
         "type": "Optional[bool]",
@@ -407,12 +535,7 @@ def build_canonical_export(extraction_result: Dict[str, Any]) -> Dict[str, Any]:
             export[field_name] = val
 
         elif source == "engine":
-            if field_name == "auditorName":
-                val = eng("financial_statement_engine", "auditorName")
-            elif field_name == "auditorOpinion":
-                val = eng("financial_statement_engine", "auditorOpinion")
-            else:
-                val = br(field_name)
+            val = _resolve_engine_field(field_name, engines, brand)
             export[field_name] = val
 
         elif source == "bootstrap":
@@ -420,12 +543,81 @@ def build_canonical_export(extraction_result: Dict[str, Any]) -> Dict[str, Any]:
             export[field_name] = val
 
         elif source == "derived":
+            # Derived fields resolved after all others
             export[field_name] = br(field_name)
 
         else:
             export[field_name] = br(field_name)
 
+    # Post-pass: compute Item 19 derived fields
+    _compute_item19_derived(export)
+
     return export
+
+
+def _resolve_engine_field(field_name: str, engines: Dict, brand: Dict) -> Any:
+    """Resolve a single engine-sourced field."""
+    eng19 = engines.get("item19_engine", {})
+    fin = engines.get("financial_statement_engine", {})
+
+    if field_name == "auditorName":
+        return fin.get("auditorName")
+    elif field_name == "auditorOpinion":
+        return fin.get("auditorOpinion")
+    elif field_name == "item19_presentation":
+        tables = eng19.get("fpr_tables", [])
+        if len(tables) > 1:
+            return "multi_table"
+        elif len(tables) == 1:
+            return "single_table"
+        return None
+    elif field_name == "item19_tableCount":
+        tables = eng19.get("fpr_tables", [])
+        return len(tables) if tables else None
+    elif field_name == "item19_metricType":
+        metrics = eng19.get("metrics_reported", [])
+        if not metrics:
+            return None
+        return "_and_".join(sorted(metrics))
+    elif field_name == "item19_expensesIncluded":
+        cost = eng19.get("cost_structure_disclosed", [])
+        return bool(cost) if cost is not None else None
+    elif field_name == "item19_exclusions":
+        excl = eng19.get("exclusions", [])
+        return excl if excl else None
+    return brand.get(field_name)
+
+
+def _compute_item19_derived(export: Dict) -> None:
+    """Post-pass: compute Item 19 derived fields from other canonical fields."""
+    avg = export.get("item19_avgRevenue")
+    med = export.get("medianGrossSales")
+    inv_low = export.get("totalInvestmentLow")
+    inv_high = export.get("totalInvestmentHigh")
+
+    # distributionSkew
+    if avg and med and med > 0:
+        ratio = round(avg / med, 3)
+        assessment = ("minimal" if ratio < 1.05 else
+                      "moderate" if ratio < 1.15 else "significant")
+        export["item19_distributionSkew"] = {
+            "average": avg,
+            "median": med,
+            "skewRatio": ratio,
+            "skewAssessment": assessment,
+        }
+
+    # investmentToRevenueRatio
+    if med and med > 0 and inv_high:
+        ratio_high = round(inv_high / med, 2)
+        ratio_low = round(inv_low / med, 2) if inv_low else None
+        assessment = ("strong" if ratio_high < 1.0 else
+                      "moderate" if ratio_high < 2.0 else "heavy")
+        export["item19_investmentToRevenueRatio"] = {
+            "usingMedianFranchised": ratio_low,
+            "usingHighInvestment": ratio_high,
+            "assessment": assessment,
+        }
 
 
 def build_reverse_alias_map() -> Dict[str, str]:
