@@ -374,6 +374,17 @@ FACT_TYPES: Dict[str, Dict[str, Any]] = {
         "signals": [r'(?:traditional|satellite|sto|str|bfl|non.?traditional|small.?town|express|kiosk)',
                     r'(?:format|type\s+of\s+(?:restaurant|franchise|outlet))'],
     },
+    "franchisor_may_compete": {
+        "family": FactFamily.RISK, "tier": FactTier.TIER_1,
+        "engine_field": "franchisorMayCompete", "source_items": [12],
+        "signals": [r'(?:we|franchisor)\s+(?:may|can|has\s+the\s+right|reserve).*?(?:establish|operate|open|develop)',
+                    r'(?:no|not).*?(?:exclusive|protected).*?(?:territory|area)'],
+    },
+    "fee_refundable": {
+        "family": FactFamily.ECONOMICS, "tier": FactTier.TIER_2,
+        "engine_field": "refundable", "source_items": [5],
+        "signals": [r'(?:refund|non.?refundable|return)', r'(?:fee|amount).*?(?:refund|return)'],
+    },
     "state_risk_disclosure": {
         "family": FactFamily.RISK, "tier": FactTier.TIER_2,
         "engine_field": "stateRisks", "source_items": [1],
