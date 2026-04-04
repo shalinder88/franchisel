@@ -62,6 +62,7 @@ from .display_tier_tagger import tag_display_tiers
 from .assemblers.brand_json import assemble_brand_json
 from .roadmap_validator import validate_roadmap
 from .training.learning_manager import write_full_learning, generate_learning_report
+from .fact_ontology import classify_all_facts, fact_coverage_report
 from .table_router import route_all_tables, get_tables_for_item, TableContentType
 from .fact_state_registry import FactStateRegistry
 from .fact_resolver import build_fact_registry, check_cross_field_sanity
@@ -270,6 +271,20 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     print(f"  Ledger: {reader_output['ledger'].get('resolved', 0)}/{reader_output['ledger'].get('total', 0)} resolved")
     print(f"  Facts: {reader_output['fact_store'].get('total_facts', 0)} discovered, {reader_output['fact_store'].get('uncaptured', 0)} uncaptured")
     print(f"  Exhibits: {reader_output['exhibit_tracker'].get('parsed', 0)}/{reader_output['exhibit_tracker'].get('total', 0)} parsed")
+
+    # ════════════════════════════════════════════════════════════════
+    # FACT ONTOLOGY CLASSIFICATION
+    # Classify all Lane A facts into typed, ranked, bindable facts
+    # ════════════════════════════════════════════════════════════════
+    reader_facts = reader_output.get("fact_store", {}).get("facts", [])
+    classified_facts = classify_all_facts(reader_facts)
+    coverage = fact_coverage_report(classified_facts)
+    print(f"\n--- Fact ontology ---")
+    print(f"  Total: {coverage['total_facts']} | Typed: {coverage['typed']} ({coverage['typed_pct']}%) | Untyped: {coverage['untyped']}")
+    print(f"  Tier 1: {coverage['tier1_coverage']}")
+    if coverage['tier1_missing']:
+        print(f"  Tier 1 missing: {coverage['tier1_missing'][:8]}")
+    print(f"  By family: {coverage['by_family']}")
 
     # ════════════════════════════════════════════════════════════════
     # LANE C: RECONCILIATION
@@ -564,6 +579,8 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         "silent_drops": [{"type": d["type"], "id": d["id"], "source": d["source"]}
                          for d in dropped],
         "recheck_results": recheck_results,
+        "classified_facts": classified_facts,
+        "fact_coverage": coverage,
         "consumption_registry": consumption.to_dict(),
         "consumption_summary": consumption_summary,
         "lane_contributions": {
