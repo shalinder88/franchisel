@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "fddId": "637906-2025",
+    "brandName": "Cookie Advantage",
+    "franchisorLegalName": "Cookie Advantage, Inc.",
+    "fddYear": 2025,
+    "issuanceDate": "March 24, 2025",
+    "extractedDate": "2026-04-04",
+    "extractedBy": "human_verified_3pass",
+    "stateOfFiling": "Wisconsin",
+    "archetype": "b2b_cookie_marketing_fulfillment_bakery",
+    "extractionTier": "gold",
+    "passesCompleted": 3,
+    "confidence": "high",
+    "unresolvedItems": ["item12_territory", "item19_full", "item20_tables", "item21_financials", "exhibit_F", "exhibit_G", "exhibit_H"]
+  },
+
+  "item1": {
+    "franchisorLegalName": "Cookie Advantage, Inc.",
+    "entityType": "Oklahoma corporation",
+    "principalAddress": "7 North Armstrong, Bixby, Oklahoma 74008",
+    "parentCompany": null,
+    "parentNote": "No predecessors and no parent entities",
+    "publiclyTraded": false,
+    "entityFormationYear": 2001,
+    "yearFranchiseEstablished": 2002,
+    "predecessors": [],
+    "affiliates": [
+      {
+        "name": "KDKC, Inc.",
+        "role": "sole_approved_supplier",
+        "products": "packaging supplies, shipping boxes, custom software",
+        "sharedAddress": true,
+        "operatesSimilarBusinesses": 6,
+        "states": ["Alabama (2021)", "Florida (2021)", "Nevada (2023)", "Oklahoma (1998, 2024)", "Texas (2024)"],
+        "hasNotOfferedFranchises": true
+      }
+    ],
+    "businessDescription": "Customer-appreciation/follow-up cookie gifting program. Franchisees sell to business customers, prepare/bake/package cookies for mailing via USPS with customized messages/logos. Operates from approved retail location (Bakery) in specified geographic area.",
+    "businessModelType": "b2b_gifting_bakery_hybrid",
+    "specialRisks": ["out_of_state_dispute", "spousal_liability", "mandatory_minimum_payments"],
+    "leadership": {
+      "principals": [
+        {"name": "Duane Carns", "title": "Co-founder, President, Director", "since": 2001},
+        {"name": "Kim Carns", "title": "Co-founder, VP, Secretary, Treasurer, Director", "since": 2001}
+      ],
+      "founderLed": true
+    },
+    "stateNotices": {
+      "michigan": {
+        "preExhibitNotice": true,
+        "provisions": ["out-of-state litigation/arbitration void", "refusal to renew requires compensation in some cases", "refusal to permit transfer except for good cause"]
+      }
+    },
+    "confidence": "high"
+  },
+
+  "item3": {
+    "hasLitigation": false,
+    "noLitigationDisclosed": true,
+    "confidence": "high"
+  },
+
+  "item4": {
+    "hasBankruptcy": false,
+    "noBankruptcyDisclosed": true,
+    "confidence": "high"
+  },
+
+  "item5": {
+    "initialFranchiseFee": 34900,
+    "initialPackagingPurchase": 2500,
+    "initialPackagingPurchaseNote": "Purchased from affiliate KDKC, uniform, non-refundable",
+    "refundable": false,
+    "refundNote": "Fully earned and non-refundable under any circumstances",
+    "feeIsUniform": true,
+    "stateDeferralNote": "Some states impose fee deferral — see Exhibit G",
+    "confidence": "high"
+  },
+
+  "item6": {
+    "royaltyRate": "6% of Gross Revenue per month",
+    "royaltyMinimum": {
+      "months1to12": "none",
+      "month13onward": "$800/month",
+      "formula": "Greater of 6% of Gross Revenue or $800/month beginning month 13"
+    },
+    "royaltyBasis": "Gross Revenue",
+    "phaseChange": true,
+    "phaseChangeNote": "First 12 months = 6% only. Month 13 onward = max(6%, $800/month minimum)",
+    "grossRevenueDefinition": {
+      "includes": ["all products/services revenue", "business interruption insurance proceeds", "full redemption value of gift certificates/coupons even if third-party sellers retain fees"],
+      "excludes": ["taxes collected and paid over", "customer refunds", "valid discounts/coupons/credits"],
+      "notExcluded": ["credit card fees", "returned checks", "bad debt reserves"]
+    },
+    "technologyFee": "$100/month (due one month in advance with royalty)",
+    "technologyFeeCovers": "custom software, website hosting, other services",
+    "technologyFeeEscalation": "Can increase for updated software, added technology, upgrades, third-party vendor increases",
+    "otherFees": [
+      {"name": "Unauthorized advertising fee", "amount": 500},
+      {"name": "Audit cost", "amount": "cost plus understatement plus legal/accounting plus 1.5%/month late fee"},
+      {"name": "Transfer fee", "amount": 2900, "note": "$1,000 non-refundable deposit"},
+      {"name": "Payment service fee", "amount": "up to 4%"},
+      {"name": "Additional training/assistance", "amount": "$250/day plus expenses"},
+      {"name": "Late payment fee", "amount": "lesser of 1.5%/month or lawful maximum"},
+      {"name": "Returned check/NSF fee", "amount": 100},
+      {"name": "Renewal fee", "amount": 2900},
+      {"name": "Conference fee", "amount": "then-current rate, even if not attending"},
+      {"name": "Manual replacement fee", "amount": 500},
+      {"name": "Supplier/product evaluation fee", "amount": "$100-$500"},
+      {"name": "Customer issue resolution", "amount": "reimbursement of costs"},
+      {"name": "Late report fee", "amount": "$100/month plus interest"},
+      {"name": "Management fee", "amount": "$500/day plus costs"},
+      {"name": "Broker fees on transfer", "amount": "actual commissions/finder's fees"}
+    ],
+    "feeAdjustmentPolicy": {
+      "cpiAdjustment": true,
+      "cpiThreshold": "5% CPI increase",
+      "maxAdjustmentsPerYear": 1,
+      "noticeRequired": "60 days",
+      "paymentMethod": "EFT/ACH"
+    },
+    "confidence": "high"
+  },
+
+  "item7": {
+    "totalInvestmentLow": 92550,
+    "totalInvestmentHigh": 171250,
+    "toFranchisor": 37400,
+    "lineItems": [
+      {"item": "Initial franchise fee", "low": 34900, "high": 34900},
+      {"item": "Equipment", "low": 24950, "high": 80000, "note": "Low=used, High=new"},
+      {"item": "Three months' lease", "low": 1800, "high": 4500},
+      {"item": "Utility/security deposits", "low": 600, "high": 1500},
+      {"item": "Leasehold improvements", "low": 2000, "high": 3000},
+      {"item": "Licenses/permits", "low": 500, "high": 1000},
+      {"item": "Computer hardware/software", "low": 2500, "high": 4000},
+      {"item": "Initial inventory", "low": 10000, "high": 12000},
+      {"item": "Packaging", "low": 2500, "high": 2500, "note": "From affiliate KDKC"},
+      {"item": "Advertising", "low": 1500, "high": 3000, "note": "Optional"},
+      {"item": "Professional fees", "low": 250, "high": 2500},
+      {"item": "Insurance", "low": 250, "high": 750},
+      {"item": "Travel/initial training", "low": 800, "high": 1600},
+      {"item": "Additional funds (3 months)", "low": 5000, "high": 10000, "note": "High recommended if opening in Q4 for Christmas"},
+      {"item": "Miscellaneous", "low": 5000, "high": 10000}
+    ],
+    "bakerySize": "1,000-1,200 sq ft",
+    "bakeryLocationType": "retail strip malls",
+    "financingOffered": false,
+    "confidence": "high"
+  },
+
+  "item8": {
+    "hasRequiredPurchases": true,
+    "requirementType": "franchisor_specifications",
+    "pctPurchasesUnderSpecsOpening": "40-50%",
+    "pctPurchasesUnderSpecsOperating": "80-90%",
+    "franchisorIsDirectSupplier": false,
+    "affiliateIsSoleSupplier": true,
+    "affiliateSupplierDetails": {
+      "name": "KDKC, Inc.",
+      "products": "Packaging supplies, shipping boxes, Cookie Advantage Business Software",
+      "isSoleApproved": true,
+      "mayExpandProducts": true
+    },
+    "affiliateSupplierRevenue2024": 177913.82,
+    "franchisorRevenue2024FromPurchases": 0,
+    "purchaseCooperative": false,
+    "purchaseCooperativeNote": "None as of issuance, but franchisor may negotiate alternative arrangements",
+    "newSupplierApprovalProcess": {
+      "method": "Submit samples and written justification",
+      "requiredResponseTime": "60 days",
+      "typicalResponseTime": "7 days",
+      "evaluationFee": "$100-$500",
+      "revocationPossible": true
+    },
+    "rebatesFromSuppliers": {
+      "franchisorMayReceive": true,
+      "noCap": true,
+      "note": "No cap on maximum rebates franchisor may receive from suppliers based on franchisee purchases"
+    },
+    "negotiatedPricing": ["mug and tumbler supplier"],
+    "insuranceBurden": {
+      "coverage": ["liability", "casualty", "workers comp/unemployment/employer liability", "business interruption (min 6 months)", "employment practices liability", "data theft", "umbrella liability"],
+      "limits": "$1,000,000/$3,000,000",
+      "additionalInsured": true,
+      "primaryNonContributory": true,
+      "subrogationWaiver": true
+    },
+    "technologyBurden": {
+      "customSoftwareRequired": true,
+      "additionalSoftwarePossible": true,
+      "additionalFeesPossible": true
+    },
+    "confidence": "high"
+  },
+
+  "item9": {
+    "obligationsMatrixPresent": true,
+    "keyRoutings": {
+      "siteSelection": "FA Sections 2.3, 3",
+      "fees": "FA Sections 6, 8.3, 9.4, 11.1, 11.2, 13.2, 14.4, 14.6, 16.10, 17.8, 17.19",
+      "renewal": "FA Section 2.4",
+      "transfer": "FA Section 14",
+      "nonCompete": "FA Sections 9, 16.5",
+      "disputeResolution": "FA Section 17.9"
+    },
+    "confidence": "high"
+  },
+
+  "item10": {
+    "offersDirectFinancing": false,
+    "offersIndirectFinancing": false,
+    "guaranteesNotes": false,
+    "confidence": "high"
+  },
+
+  "item11": {
+    "preOpeningAssistance": true,
+    "preOpeningSupport": [
+      "Territory designation",
+      "Site approval support",
+      "Design/image specs",
+      "Required operating assets and suppliers identification",
+      "One copy of operations manual",
+      "Initial training",
+      "~4 days pre-opening training at bakery"
+    ],
+    "operationsManual": true,
+    "operationsManualPages": 205,
+    "operationsManualExhibit": "E",
+    "typicalTimeToOpen": "60-90 days",
+    "mustOpenWithin": "90 days or risk termination",
+    "confidence": "high"
+  },
+
+  "item12": {
+    "exclusiveTerritory": "unresolved",
+    "territoryDesignated": true,
+    "territoryNote": "Franchise tied to specified geographic area/territory. Franchisor designates territory before opening. Full Item 12 protection/competition language not surfaced — do not force boolean from partial text.",
+    "unresolvedReason": "Item 12 territorial protection and competition language not fully surfaced in retrieved text",
+    "confidence": "low"
+  },
+
+  "item17": {
+    "nonCurableDefaults": [
+      "Misrepresentation in acquiring franchise",
+      "3+ NSF/returned checks in one calendar year",
+      "Failure to open on time",
+      "Failure to use required supplies/tools",
+      "Failure to complete training",
+      "Abandonment",
+      "Unapproved transfers",
+      "Failure to maintain insurance",
+      "Unauthorized disclosure of manual/confidential information",
+      "Repeated defaults even if cured",
+      "Bankruptcy-type events",
+      "Failure to submit reports on 3 occasions in 12 months"
+    ],
+    "postTerminationObligations": [
+      "Pay outstanding amounts including balance of royalties from termination through scheduled expiration",
+      "De-identify and remodel bakery",
+      "Remove marks and trade dress",
+      "Hand over customer files including sensitive customer/payment information",
+      "Comply with non-competes"
+    ],
+    "futureRoyaltiesThroughExpiration": true,
+    "futureRoyaltiesNote": "On termination, franchisee must pay balance of royalties from termination through scheduled expiration — major burden",
+    "transfer": {
+      "franchisorCanAssignFreely": true,
+      "franchiseeTransferBroadlyDefined": true,
+      "transferDefinitionIncludes": ["franchise agreement", "business assets", "rights to profits/losses/capital appreciation", "certain ownership-interest transfers"]
+    },
+    "confidence": "high"
+  },
+
+  "item19": {
+    "hasItem19": "unresolved",
+    "unresolvedReason": "Item 19 not fully surfaced in retrieved text. Prior lightweight extraction found dollar amounts ($369K, $261K, $1.23M, $50K) suggesting FPR data may exist, but cannot confirm without direct reading.",
+    "priorExtractionNote": "Earlier lightweight pass found hasItem19=true with 4 dollar amounts. Needs verification from PDF.",
+    "confidence": "low"
+  },
+
+  "item20": {
+    "unresolvedReason": "Item 20 outlet tables not surfaced in retrieved text",
+    "confidence": "low"
+  },
+
+  "item21": {
+    "hasAuditedFinancials": "unresolved",
+    "financialExhibit": "B",
+    "unresolvedReason": "Item 21 financial statements not surfaced in retrieved text",
+    "confidence": "low"
+  },
+
+  "exhibits": {
+    "A": {"name": "State administrators/agents for service", "status": "identified"},
+    "B": {"name": "Financial statements", "status": "needs_parsing"},
+    "C": {"name": "Franchise agreement", "status": "needs_parsing"},
+    "D": {"name": "Franchise disclosure questionnaire", "status": "identified"},
+    "E": {"name": "Confidential operations manual TOC", "status": "identified"},
+    "F": {"name": "Current and former franchisees", "status": "needs_parsing"},
+    "G": {"name": "State addenda and agreement riders", "status": "needs_parsing"},
+    "H": {"name": "Contracts for use with the franchise", "status": "needs_parsing"},
+    "I": {"name": "State effective dates", "status": "identified"},
+    "J": {"name": "Receipt", "status": "parsed"}
+  },
+
+  "stateAddenda": {
+    "michigan": {
+      "preExhibitNotice": true,
+      "materialChange": true,
+      "provisions": [
+        "Out-of-state litigation/arbitration void",
+        "Refusal to renew requires compensation in some cases",
+        "Refusal to permit transfer except for good cause"
+      ]
+    }
+  },
+
+  "extractorLearnings": {
+    "universalRules": [
+      "Royalty must support phase-change formula: months 1-12 = flat %, month 13+ = max(%, minimum floor)",
+      "Initial investment should separate franchise fee from affiliate-paid initial purchases (packaging)",
+      "Fee model must support CPI adjustment with threshold, max adjustments/year, and notice period",
+      "Gross revenue definition matters: business interruption insurance proceeds and full gift certificate value are unusual inclusions",
+      "Affiliate-as-sole-supplier with clean revenue disclosure ($177,913.82) is a teaching example for supplier economics",
+      "Item 8 percent-of-purchases under specs (40-50% opening, 80-90% operating) is a structured teaching pair",
+      "Future royalties through scheduled expiration after termination is a major burden — do not miss",
+      "Territory should remain unresolved when Item 12 text not fully surfaced — never force boolean from partial read",
+      "Unresolved items with confidence=low are first-class records, not gaps to hide",
+      "Item 9 obligations matrix is a routing map for clause harvesting — consume it"
+    ]
+  }
+}
