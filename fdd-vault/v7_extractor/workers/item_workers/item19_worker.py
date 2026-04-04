@@ -28,6 +28,10 @@ class Item19Worker(ItemWorkerBase):
         # ── Create tickets for assist work (heavy worker delegation) ──
         self._create_help_tickets(section, parsed)
 
+        # ── DEEP FPR PARSER — full cohort/tier extraction ──
+        deep_ids = self._run_deep_fpr_parser(section, text)
+        fact_ids.extend(deep_ids)
+
         # ── FPR format classification ──
         fpr_format = "unknown"
         if parsed.get("has_fpr", {}).get("value") is False:
@@ -198,3 +202,144 @@ class Item19Worker(ItemWorkerBase):
             source_item=19,
             context={"cross_items": [6, 20]},
         )
+
+    def _run_deep_fpr_parser(self, section, text: str) -> List[str]:
+        """Run the deep FPR parser and emit canonical facts."""
+        from ..item19_deep_parser import parse_fpr_tables_deep
+
+        tables = section.tables if hasattr(section, 'tables') else []
+        deep = parse_fpr_tables_deep(tables, text)
+
+        fact_ids = []
+
+        if not deep.get("hasItem19"):
+            return fact_ids
+
+        # Emit richData
+        if deep.get("richData"):
+            fid = self.emit(
+                fact_type="richData",
+                fact_payload={"value": True},
+                source_zone=SourceZone.TABLE,
+                source_item=19,
+                source_pages=[section.start_page],
+                family="performance",
+                importance=Importance.CORE,
+                confidence=0.9,
+            )
+            fact_ids.append(fid)
+
+        # Emit each parsed FPR table as a structured object
+        for tbl in deep.get("tables", []):
+            table_id = tbl.get("table_id", "")
+            cohort = tbl.get("cohort_type", "all")
+
+            # Overall stats — emit as individual canonical facts
+            for metric in ["overallAvg", "overallMedian", "overallHigh", "overallLow"]:
+                val = tbl.get(metric)
+                if val is not None:
+                    fid = self.emit(
+                        fact_type=metric,
+                        fact_payload={"value": val, "table": table_id, "cohort": cohort},
+                        source_zone=SourceZone.TABLE,
+                        source_item=19,
+                        source_pages=[section.start_page],
+                        family="performance",
+                        importance=Importance.CORE,
+                        confidence=0.85,
+                    )
+                    fact_ids.append(fid)
+
+            # Restaurant count
+            if tbl.get("restaurants"):
+                fid = self.emit(
+                    fact_type="restaurants",
+                    fact_payload={"value": tbl["restaurants"], "table": table_id, "cohort": cohort},
+                    source_zone=SourceZone.TABLE,
+                    source_item=19,
+                    source_pages=[section.start_page],
+                    family="performance",
+                    importance=Importance.CORE,
+                    confidence=0.85,
+                )
+                fact_ids.append(fid)
+
+            # Attainment percentages
+            for metric in ["metOrExceededAvgPct", "metOrExceededMedianPct"]:
+                val = tbl.get(metric)
+                if val is not None:
+                    fid = self.emit(
+                        fact_type=metric,
+                        fact_payload={"value": val, "table": table_id, "cohort": cohort},
+                        source_zone=SourceZone.TABLE,
+                        source_item=19,
+                        source_pages=[section.start_page],
+                        family="performance",
+                        importance=Importance.CORE,
+                        confidence=0.85,
+                    )
+                    fact_ids.append(fid)
+
+            # Exclusions
+            if tbl.get("excludes"):
+                fid = self.emit(
+                    fact_type="excludes",
+                    fact_payload={"value": tbl["excludes"], "table": table_id, "cohort": cohort},
+                    source_zone=SourceZone.TABLE,
+                    source_item=19,
+                    source_pages=[section.start_page],
+                    family="performance",
+                    importance=Importance.SECONDARY,
+                    confidence=0.75,
+                )
+                fact_ids.append(fid)
+
+            # Tiers
+            for tier_idx, tier in enumerate(tbl.get("tiers", [])):
+                fid = self.emit(
+                    fact_type=f"fpr_tier",
+                    fact_payload={
+                        "table": table_id,
+                        "cohort": cohort,
+                        "tier_index": tier_idx,
+                        **tier,
+                    },
+                    source_zone=SourceZone.TABLE,
+                    source_item=19,
+                    source_pages=[section.start_page],
+                    object_type=ObjectType.TABLE_ROW,
+                    family="performance",
+                    importance=Importance.CORE,
+                    confidence=0.8,
+                )
+                fact_ids.append(fid)
+
+            # Full table object for reconciliation
+            fid = self.emit(
+                fact_type="fpr_table_object",
+                fact_payload=tbl,
+                source_zone=SourceZone.TABLE,
+                source_item=19,
+                source_pages=[section.start_page],
+                object_type=ObjectType.COMPOSITE,
+                family="performance",
+                importance=Importance.CORE,
+                confidence=0.85,
+            )
+            fact_ids.append(fid)
+
+        # Metric definition
+        if deep.get("metric_definition"):
+            fid = self.emit(
+                fact_type="fpr_metric_definition",
+                fact_payload={"value": deep["metric_definition"]},
+                source_zone=SourceZone.TABLE,
+                source_item=19,
+                source_pages=[section.start_page],
+                family="performance",
+                importance=Importance.SECONDARY,
+                confidence=0.8,
+            )
+            fact_ids.append(fid)
+
+        return fact_ids

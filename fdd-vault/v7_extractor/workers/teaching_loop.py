@@ -274,6 +274,11 @@ class TeachingLoop:
                 if k not in extracted_fields:
                     extracted_fields[k] = v
 
+        # Layer 4: Deep FPR table objects — flatten into gold-compatible fields
+        # Gold uses paths like "item19.table3_combined.overallAvg"
+        # Workers emit fpr_table_object facts with nested data
+        self._flatten_fpr_tables_into_fields(fact_packets, extracted_fields)
+
         # Compare — canonical-first with alias resolution
         hits = []
         misses = []
@@ -416,6 +421,62 @@ class TeachingLoop:
             "top_misses": misses[:20],
             "structural_rules_added": self.rulebook.summary()["total_rules"],
         }
+
+    def _flatten_fpr_tables_into_fields(self, packets: List,
+                                          extracted_fields: Dict):
+        """Flatten deep FPR table objects into gold-compatible fields.
+
+        Gold uses paths like:
+          item19.table1_companyOwned.overallAvg = 794003
+          item19.table2_franchised.tiers[0].avg = 940911
+          item19.table3_combined.restaurants = 50
+
+        Worker emits fpr_table_object with nested structure.
+        This flattens that into matchable fields.
+        """
+        for p in packets:
+            if not isinstance(p, dict):
+                continue
+            if p.get("fact_type") != "fpr_table_object":
+                continue
+
+            payload = p.get("fact_payload", {})
+            table_id = payload.get("table_id", "")
+            worker = p.get("emitted_by", "")
+
+            # Flatten top-level metrics
+            for metric in ["overallAvg", "overallMedian", "overallHigh", "overallLow",
+                           "restaurants", "metOrExceededAvgPct", "metOrExceededMedianPct",
+                           "excludes"]:
+                val = payload.get(metric)
+                if val is not None:
+                    # Store under both the table-specific key and the generic key
+                    key = f"{metric}"
+                    if key not in extracted_fields:
+                        extracted_fields[key] = {"value": val, "worker": worker}
+
+            # Flatten tiers
+            for tier_idx, tier in enumerate(payload.get("tiers", [])):
+                for tier_metric in ["range", "stores", "avg", "median", "high", "low"]:
+                    val = tier.get(tier_metric)
+                    if val is not None:
+                        key = tier_metric
+                        if key not in extracted_fields:
+                            extracted_fields[key] = {"value": val, "worker": worker}
+
+        # Also flatten individual metric facts (overallAvg, restaurants, etc.)
+        for p in packets:
+            if not isinstance(p, dict):
+                continue
+            ft = p.get("fact_type", "")
+            if ft in ("overallAvg", "overallMedian", "overallHigh", "overallLow",
+                       "restaurants", "metOrExceededAvgPct", "metOrExceededMedianPct",
+                       "excludes", "richData"):
+                payload = p.get("fact_payload", {})
+                val = payload.get("value")
+                worker = p.get("emitted_by", "")
+                if val is not None and ft not in extracted_fields:
+                    extracted_fields[ft] = {"value": val, "worker": worker}
 
     def _flatten_packets(self, packets: List) -> Dict[str, Dict]:
         """Flatten fact packets into field → value mapping."""
