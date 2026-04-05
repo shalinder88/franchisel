@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "recovery_type": "contract_burden_depth",
+    "source_document": "Exhibit B — Franchise Agreement (Traditional)",
+    "source_pages": [73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90],
+    "supplemental_sources": ["Item 6 notes", "Item 8", "Item 10 (Exhibit N)", "Item 11", "Operator's Lease (Exhibit G)"],
+    "extraction_date": "2026-04-05"
+  },
+  "financial_obligations": [
+    {
+      "clause_id": "FA_8a",
+      "section": "Section 8(a) — Royalty",
+      "obligation": "Monthly royalty equal to [4% or 5%] of Gross Sales, due on or before 10th day of following month.",
+      "source_page": 77,
+      "burden_type": "recurring_fee"
+    },
+    {
+      "clause_id": "FA_8c",
+      "section": "Section 8(c) — Interest on Delinquencies",
+      "obligation": "Past-due amounts accrue interest at the highest rate allowed by law, or if no maximum, 15% per annum. Calculated on monthly compounding basis, actual days/365.",
+      "source_page": 77,
+      "burden_type": "penalty"
+    },
+    {
+      "clause_id": "FA_9",
+      "section": "Section 9 — Initial Fee",
+      "obligation": "$45,000 initial franchise fee. Earned by McDonald's upon restaurant completion. Refundable only if construction not completed within 1 year.",
+      "source_page": 77,
+      "burden_type": "initial_fee"
+    },
+    {
+      "clause_id": "FA_5",
+      "section": "Section 5 — Advertising",
+      "obligation": "Minimum 4% of Gross Sales annually for advertising and promotion. OPNAD and local cooperative contributions credited against this minimum.",
+      "source_page": 76,
+      "burden_type": "recurring_fee"
+    },
+    {
+      "clause_id": "FA_1f",
+      "section": "Section 1(f) — Single Financial Arrangement",
+      "obligation": "All payments (royalty, rent, fees) constitute a single financial arrangement reflecting the value of the franchise grant. Cannot be disaggregated to argue any individual component is excessive.",
+      "source_page": 74,
+      "burden_type": "contract_architecture"
+    },
+    {
+      "clause_id": "FA_12j",
+      "section": "Section 12(j) — Prompt Payment of Invoices",
+      "obligation": "Must make prompt payment of all invoices from suppliers for fixtures, signs, equipment, food, and paper supplies.",
+      "source_page": 80,
+      "burden_type": "payment_obligation"
+    },
+    {
+      "clause_id": "FA_12k",
+      "section": "Section 12(k) — Compliance with Laws",
+      "obligation": "Must comply at own expense with all federal, state, and local laws, ordinances, and regulations affecting restaurant operation.",
+      "source_page": 80,
+      "burden_type": "compliance_burden"
+    },
+    {
+      "clause_id": "FA_17",
+      "section": "Section 17 — Insurance",
+      "obligation": "Must acquire and maintain: (a) Workers' Comp as prescribed by law + Employer's Liability $100K/$500K/$100K; (b) Commercial general liability $5M per occurrence / $5M aggregate in McDonald's-approved form; (c) All insurance required under Lease. All policies must name McDonald's as additional insured. If franchisee fails, McDonald's may purchase insurance and add premiums to monthly rent. Insurer must be rated A+ or A by AM Best, Financial Size Category ≥ IX.",
+      "source_page": 82,
+      "burden_type": "insurance_obligation"
+    },
+    {
+      "clause_id": "FA_23",
+      "section": "Section 23 — Cost of Enforcement",
+      "obligation": "If McDonald's sues to enforce franchise terms, franchisee must pay McDonald's reasonable attorneys' fees, court costs, and litigation expenses in addition to any judgment.",
+      "source_page": 85,
+      "burden_type": "fee_shifting"
+    },
+    {
+      "clause_id": "FA_24",
+      "section": "Section 24 — Indemnification",
+      "obligation": "Franchisee must indemnify and hold McDonald's harmless against all judgments, settlements, penalties, attorneys' fees, costs, and expenses from any claim arising from franchisee's acts/omissions, employee/agent acts, or acts occurring on restaurant premises. At McDonald's election, franchisee must also defend McDonald's.",
+      "source_page": 85,
+      "burden_type": "indemnification"
+    }
+  ],
+  "eft_auto_debit_mechanics": [
+    {
+      "clause_id": "FA_8b",
+      "section": "Section 8(b) — Method of Payment",
+      "obligation": "Franchisee must at all times participate in McDonald's automatic debit/credit transfer program as specified from time to time. Must execute and deliver documents necessary to establish and maintain the program.",
+      "source_page": 77,
+      "burden_type": "mandatory_eft",
+      "note": "This is a blanket EFT authorization covering all amounts due under the franchise. McDonald's can unilaterally change the program specifications."
+    }
+  ],
+  "data_ownership_and_access": [
+    {
+      "clause_id": "FA_10_reports",
+      "section": "Section 10 — Reports",
+      "obligation": "Monthly statement of all receipts due by 11:00 AM CST on first business day of each month. Monthly operating statement and statistical report due by 25th. Must keep records for at least 3 years. Must deliver additional financial/operating reports as McDonald's may reasonably request. Annual P&L and balance sheet (GAAP) within 90 days of fiscal year end. If requested, must be certified by CPA. Must cause accountant/CPA to consult with McDonald's concerning statements.",
+      "source_page": [77, 78],
+      "burden_type": "reporting_obligation"
+    },
+    {
+      "clause_id": "FA_10_audit",
+      "section": "Section 10 — Inspection/Audit Rights",
+      "obligation": "McDonald's has right to inspect and/or audit franchisee's accounts, books, records, and tax returns at all reasonable times. If audit reveals understatement of ≥2% of Gross Sales, franchisee bears cost of inspection/audit.",
+      "source_page": 78,
+      "burden_type": "audit_right"
+    },
+    {
+      "clause_id": "ITEM11_data_access",
+      "section": "Item 11 — Computer Systems (POS data)",
+      "obligation": "Transaction-level information (sales, transactions, product mix) stored on franchisee's server and transmitted to McDonald's servers. McDonald's has independent access to this information with no contractual limits on its right to access.",
+      "source_page": 32,
+      "burden_type": "data_access_unlimited"
+    },
+    {
+      "clause_id": "ITEM11_cashless_data",
+      "section": "Item 11 — Cashless System",
+      "obligation": "McDonald's has independent access to aggregated transaction-level information, plus number and dollar amount of specific cashless and gift card transactions.",
+      "source_page": 33,
+      "burden_type": "data_access_unlimited"
+    }
+  ],
+  "system_change_exposure": [
+    {
+      "clause_id": "FA_1d",
+      "section": "Section 1(d) — System Modification Rights",
+      "obligation": "Franchise provisions interpreted to give effect to system conformity through strict adherence to McDonald's standards and policies 'as they exist now and as they may be from time to time modified.' McDonald's has unilateral right to change the entire system.",
+      "source_page": 74,
+      "burden_type": "system_change_unilateral"
+    },
+    {
+      "clause_id": "FA_4",
+      "section": "Section 4 — Manuals",
+      "obligation": "Franchisee must promptly adopt and use exclusively the formulas, methods, and policies in business manuals, 'now and as they may be modified from time to time.' Manuals incorporated by reference as modified.",
+      "source_page": 75,
+      "burden_type": "manual_change_unilateral"
+    },
+    {
+      "clause_id": "FA_12b_c_d",
+      "section": "Sections 12(b), 12(c), 12(d) — Equipment/Building Standards",
+      "obligation": "Must purchase equipment per specifications initially designated and as changed. Must keep restaurant constructed/equipped per blueprints/plans as reasonably changed from time to time. No building conversion, alterations, or additions without prior written consent.",
+      "source_page": 79,
+      "burden_type": "physical_plant_control"
+    },
+    {
+      "clause_id": "ITEM11_upgrade",
+      "section": "Item 11 — Store Systems Upgrades",
+      "obligation": "May be required to update/upgrade Store Systems periodically. No contractual limitations on frequency or cost. Significant system changes require one-time fee.",
+      "source_page": [32, 33],
+      "burden_type": "tech_upgrade_unlimited"
+    }
+  ],
+  "remodel_rebuild_obligations": [
+    {
+      "clause_id": "FA_12a_e",
+      "section": "Sections 12(a), 12(e) — Maintenance and Repair",
+      "obligation": "Maintain building, fixtures, equipment, signage, seating, decor, and parking area in good, clean, wholesome condition/repair, well lighted, in compliance with designated standards as prescribed from time to time. Must make repairs/replacements for damage, wear and tear, or to maintain conformity to blueprints/plans.",
+      "source_page": 79,
+      "burden_type": "ongoing_maintenance"
+    },
+    {
+      "clause_id": "ITEM6_relocation",
+      "section": "Item 6 — Relocation Contribution",
+      "obligation": "$50,000 contribution required if restaurant relocated to new site.",
+      "source_page": 19,
+      "burden_type": "relocation_fee"
+    },
+    {
+      "clause_id": "ITEM6_coinvest",
+      "section": "Item 6, note 4 — Co-Investment Policy",
+      "obligation": "Optional co-investment available for rent reduction. Generally not less than $30,000 per 0.25% reduction. In addition to Item 7 initial investment. May not use building/leasehold improvements as collateral.",
+      "source_page": [22, 23],
+      "burden_type": "optional_additional_investment"
+    }
+  ],
+  "transfer_and_appraisal_mechanics": [
+    {
+      "clause_id": "FA_15c",
+      "section": "Section 15(c) — First Option to Purchase",
+      "obligation": "Franchisee must give McDonald's 20 days' written notice of intent to sell/transfer, including name/address of proposed purchaser and all terms. McDonald's has 10 days to exercise first option to purchase on same terms. If not exercised and sale doesn't close, option persists for subsequent offers.",
+      "source_page": 81,
+      "burden_type": "right_of_first_refusal"
+    },
+    {
+      "clause_id": "FA_20b",
+      "section": "Section 20(b) — Purchase on Breach Termination",
+      "obligation": "Upon termination for breach, McDonald's may purchase franchisee's furniture, fixtures, signs, equipment, other property, and leasehold improvements at fair market value within 30 days. No payment for intangible assets.",
+      "source_page": 84,
+      "burden_type": "fmv_purchase_no_intangibles"
+    },
+    {
+      "clause_id": "FA_20c",
+      "section": "Section 20(c) — Purchase on Expiration",
+      "obligation": "Upon term expiration or eminent domain, McDonald's may purchase same assets at fair market value with 30 days' written notice. No payment for intangible assets. Franchisee cannot remove property within 60 days prior.",
+      "source_page": 84,
+      "burden_type": "fmv_purchase_no_intangibles"
+    },
+    {
+      "clause_id": "FA_15a",
+      "section": "Section 15(a) — Death/Disability Purchase Option",
+      "obligation": "If McDonald's manages restaurant for 12 months after death/disability without disposition to acceptable party, McDonald's may purchase at fair market value (cash or its common stock at McDonald's option).",
+      "source_page": 80,
+      "burden_type": "fmv_purchase_death_disability"
+    },
+    {
+      "clause_id": "FA_15d_royalty",
+      "section": "Section 15(d) — Royalty Adjustment on Transfer",
+      "obligation": "Upon any transfer under 15(d), royalty automatically adjusts to then-prevailing percentage required under new franchises for similar restaurants.",
+      "source_page": 81,
+      "burden_type": "royalty_reset_on_transfer"
+    },
+    {
+      "clause_id": "FA_15d_liability",
+      "section": "Section 15(d) — Continuing Liability After Transfer",
+      "obligation": "Franchisee and each transferor remain personally liable for all obligations for full term or shorter period at McDonald's sole discretion.",
+      "source_page": 81,
+      "burden_type": "continuing_personal_liability"
+    }
+  ],
+  "entity_and_guarantor_requirements": [
+    {
+      "clause_id": "FA_1e",
+      "section": "Section 1(e) — Ownership and Equity Requirements",
+      "obligation": "Franchisee must actually own complete equity interest in franchise and restaurant profits. Must maintain such interest during term. Must provide evidence as McDonald's requests.",
+      "source_page": 74,
+      "burden_type": "equity_ownership_requirement"
+    },
+    {
+      "clause_id": "FA_15b",
+      "section": "Section 15(b) — Assignment to Corporation",
+      "obligation": "May assign to corporation only if shares wholly owned and controlled by franchisee, subject to McDonald's-prescribed Stockholders Agreement. Corporate name cannot include McDonald's names/trademarks.",
+      "source_page": [80, 81],
+      "burden_type": "entity_structure_control"
+    },
+    {
+      "clause_id": "ITEM10_guaranty",
+      "section": "Item 10 / Exhibit N — Unlimited Guaranty",
+      "obligation": "For Bank of America guaranteed loans: personal guarantee from franchisee and spouse required. Guarantor waives jury trial rights. Default on loan = default under Franchise Agreement. Operator Assistance Program Agreement requires waiver of all claims against McDonald's.",
+      "source_page": [30, 208],
+      "burden_type": "personal_guarantee_spousal"
+    }
+  ],
+  "lien_and_security_interest": [
+    {
+      "clause_id": "ITEM10_collateral",
+      "section": "Item 10 / Exhibit N — Security Agreement",
+      "obligation": "Loans secured by restaurant equipment, seating, signage, decor, and inventory. Under co-investment policy, franchisee may not use building or leasehold improvements as collateral for own lender financing.",
+      "source_page": [30, 22],
+      "burden_type": "security_interest"
+    }
+  ],
+  "operations_and_hours": [
+    {
+      "clause_id": "FA_12g",
+      "section": "Section 12(g) — Operating Hours",
+      "obligation": "Must operate 7 days per week throughout the year, at least 7:00 AM to 11:00 PM (or other hours prescribed by McDonald's from time to time), except when untenantable. Must maintain sufficient supplies and employ adequate personnel for maximum capacity and efficiency.",
+      "source_page": 79,
+      "burden_type": "mandatory_hours"
+    },
+    {
+      "clause_id": "FA_13",
+      "section": "Section 13 — Best Efforts / Full Time",
+      "obligation": "Must diligently and fully exploit franchise rights by personally devoting full time and best efforts. Must keep free from conflicting enterprises or activities detrimental to restaurant.",
+      "source_page": 80,
+      "burden_type": "personal_devotion"
+    }
+  ],
+  "estoppel_and_acknowledgment": [
+    {
+      "clause_id": "FA_28",
+      "section": "Section 28 — Acknowledgments",
+      "obligation": "Franchisee acknowledges: (a) no promise of renewal or new franchise; (b) has read, understands, and consulted attorney; (c) no representation of future profitability; (d) has investigated existing franchisees; (e) no exclusive/protected territory; (f) franchise supersedes all other agreements (but does not disclaim FDD representations); (g) McDonald's/affiliates sole owner of trademarks; (h) no future franchise promises; (i) no other representations beyond franchise and FDD; (j) offered personally, non-transferable.",
+      "source_page": [86, 87],
+      "burden_type": "estoppel_acknowledgments",
+      "state_modifications": "HI, MD, MN: acknowledgments 28(b),(c),(d) deleted. All registration states: anti-waiver rider added preventing waiver of state franchise law claims or disclaiming reliance."
+    }
+  ],
+  "governing_law_and_enforcement": [
+    {
+      "clause_id": "FA_27",
+      "section": "Section 27 — Governing Laws",
+      "obligation": "Illinois law governs. State riders modify for: MD (MD franchise law for MD claims), MN (MN statute chapter 80C preserved), ND (ND law for ND franchise investment law claims), WA (WA Act prevails on conflict).",
+      "source_page": [86, 88, 89],
+      "burden_type": "choice_of_law"
+    },
+    {
+      "clause_id": "FA_25",
+      "section": "Section 25 — Severability",
+      "obligation": "If any material provision stricken or declared invalid, McDonald's reserves right to terminate the franchise.",
+      "source_page": 85,
+      "burden_type": "severability_termination_right"
+    }
+  ]
+}

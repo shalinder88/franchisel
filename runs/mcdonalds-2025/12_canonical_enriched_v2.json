@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "fdd_id": "638437-2025",
+    "brand": "McDonald's",
+    "franchisor_legal_name": "McDonald's USA, LLC",
+    "enrichment_version": "v2",
+    "enrichment_layers": ["item21_financial_structure_detail", "item21_statement_detail", "item6_fee_detail", "financial_note_depth_promoted", "contract_burden_depth_promoted"],
+    "source_retries": ["retry_R02_financial_detail.json", "RT_depth_financial_notes.json", "RT_depth_contract_burdens.json", "RT_depth_promotion_audit.json"]
+  },
+  "item21_financial_structure_detail": {
+    "property_and_equipment": {
+      "in_millions": true,
+      "land": {"2024": 4167.2, "2023": 4144.4},
+      "buildings_owned_land": {"2024": 12096.1, "2023": 11704.5},
+      "buildings_leased_land": {"2024": 5666.7, "2023": 5259.7},
+      "equipment_signs_seating": {"2024": 923.6, "2023": 978.7},
+      "other": {"2024": 67.5, "2023": 73.5},
+      "total_cost": {"2024": 22921.1, "2023": 22160.8},
+      "accumulated_depreciation": {"2024": -9840.7, "2023": -9232.8},
+      "net": {"2024": 13080.4, "2023": 12928.0},
+      "depreciation_expense": {"2024": 869.7, "2023": 864.9, "2022": 833.0},
+      "capex": {"2024": 1055.2, "2023": 962.5, "2022": 860.0}
+    },
+    "lease_maturity_schedule": {
+      "in_millions": true,
+      "operating": {
+        "2025": 433.5, "2026": 411.6, "2027": 405.6, "2028": 395.7, "2029": 382.8, "thereafter": 5519.0,
+        "total_payments": 7548.2, "imputed_interest": -2286.1, "present_value": 5262.1
+      },
+      "finance": {
+        "2025": 40.5, "2026": 41.6, "2027": 42.2, "2028": 42.7, "2029": 43.3, "thereafter": 1243.7,
+        "total_payments": 1454.0, "imputed_interest": -671.2, "present_value": 782.8
+      },
+      "total": {
+        "total_payments": 9002.2, "imputed_interest": -2957.3, "present_value": 6044.9
+      }
+    },
+    "goodwill": {"2024": 1498.7, "2023": 1480.0},
+    "lease_rou_assets": {"2024": 5841.4, "2023": 5837.5},
+    "restructuring": {
+      "initiative": "Accelerating the Organization",
+      "total_charges_since_inception": 63.6,
+      "charges_2024": 1.2,
+      "accrued_balance_2024": 4.4
+    }
+  },
+  "item21_statement_detail": {
+    "income_statement": {
+      "in_millions": true,
+      "revenue_breakout": {
+        "company_owned_sales": {"2024": 3196.9, "2023": 3220.5, "2022": 2835.8},
+        "franchised_restaurant_revenues": {"2024": 7210.6, "2023": 7163.4, "2022": 6584.7},
+        "other_revenues": {"2024": 223.3, "2023": 184.5, "2022": 167.9},
+        "total": {"2024": 10630.8, "2023": 10568.4, "2022": 9588.4}
+      },
+      "expense_breakout": {
+        "company_food_paper": {"2024": 925.7, "2023": 955.2, "2022": 850.3},
+        "company_payroll_benefits": {"2024": 1107.5, "2023": 1055.0, "2022": 942.6},
+        "company_occupancy_other": {"2024": 746.5, "2023": 721.8, "2022": 613.5},
+        "franchised_occupancy": {"2024": 1294.1, "2023": 1286.2, "2022": 1244.1},
+        "sga": {"2024": 654.2, "2023": 660.9, "2022": 692.1},
+        "other_operating_net": {"2024": 7.2, "2023": 72.3, "2022": 31.6},
+        "other_restaurant_expenses": {"2024": 162.6, "2023": 122.6, "2022": 117.5}
+      },
+      "operating_income_before_parent_royalty": {"2024": 5733.0, "2023": 5694.4, "2022": 5096.7},
+      "parent_royalty": {"2024": 1069.4, "2023": 1062.7, "2022": 975.8},
+      "operating_income": {"2024": 4663.6, "2023": 4631.7, "2022": 4120.9},
+      "net_income": {"2024": 3461.6, "2023": 3394.4, "2022": 3095.7}
+    },
+    "balance_sheet_summary": {
+      "in_millions": true,
+      "total_current_assets": {"2024": 878.6, "2023": 950.0},
+      "total_other_assets": {"2024": 8236.3, "2023": 8246.1},
+      "net_property_equipment": {"2024": 13080.4, "2023": 12928.0},
+      "total_assets": {"2024": 22195.3, "2023": 22124.1},
+      "total_current_liabilities": {"2024": 4054.4, "2023": 3979.6},
+      "long_term_lease_liability": {"2024": 5849.0, "2023": 5838.9},
+      "deferred_income_taxes": {"2024": 1416.7, "2023": 1405.2},
+      "other_long_term_liabilities": {"2024": 653.2, "2023": 678.4},
+      "members_equity": {"2024": 10222.0, "2023": 10222.0}
+    },
+    "cash_flow_summary": {
+      "in_millions": true,
+      "cash_from_operations": {"2024": 4552.4, "2023": 4567.6, "2022": 4663.8},
+      "cash_used_investing": {"2024": -1060.7, "2023": -1129.0, "2022": -1542.6},
+      "cash_used_financing": {"2024": -3499.6, "2023": -3425.1, "2022": -3122.7},
+      "dividends_to_parent": {"2024": -3461.6, "2023": -3394.4, "2022": -3095.7}
+    },
+    "rent_expense": {
+      "in_millions": true,
+      "company_owned": {"2024": 23.3, "2023": 22.8, "2022": 22.5},
+      "franchised": {"2024": 540.5, "2023": 537.2, "2022": 529.4},
+      "other": {"2024": 29.2, "2023": 35.0, "2022": 33.2},
+      "total": {"2024": 593.0, "2023": 595.0, "2022": 585.1},
+      "pct_rents_excess_franchised": {"2024": 101.9, "2023": 98.9, "2022": 89.1}
+    },
+    "income_tax": {
+      "effective_rate": {"2024": "23.2%", "2023": "24.0%", "2022": "23.6%"},
+      "unrecognized_tax_benefits": {"2024": 75.8, "2023": 70.6}
+    }
+  },
+  "item6_fee_detail": {
+    "technology_fees_mandatory": [
+      {"name": "Sesame (POS)", "annual": 1133, "one_time": 2600},
+      {"name": "Global Mobile App / Digital Capabilities", "annual": 664, "one_time": null},
+      {"name": "McDelivery POS Integration", "annual": 620, "one_time": null},
+      {"name": "Self-Ordering Kiosk", "annual": 558, "one_time": 1500},
+      {"name": "eProduction", "annual": 47, "one_time": null},
+      {"name": "Back Office Integration", "annual": 545, "one_time": null},
+      {"name": "Payments and Fraud Management", "annual": 740, "one_time": null},
+      {"name": "Employee Engagement Platforms", "annual": 385, "one_time": null},
+      {"name": "Deployment, OTP, Execution and Support", "annual": 2529, "one_time": null},
+      {"name": "Restaurant Network Management, Access and Security", "annual": 1134, "one_time": null},
+      {"name": "Restaurant Hardware, Data Movement, Management, Monitoring", "annual": 951, "one_time": null},
+      {"name": "Restaurant File Maintenance (RFM)", "annual": 690, "one_time": null},
+      {"name": "Microsoft License Subscription", "annual": 707, "one_time": null},
+      {"name": "GRNT", "annual": 185, "one_time": null},
+      {"name": "Edge", "annual": 435, "one_time": 120},
+      {"name": "Store Mail", "annual": 56.40, "one_time": null},
+      {"name": "DMB 2.0", "annual": null, "one_time": 264}
+    ],
+    "technology_fees_optional": [
+      {"name": "Hand-Held Order Taker (HHOT)", "annual": 50, "one_time": 500},
+      {"name": "People Data Warehouse (PDW) Reporting", "annual": 167, "one_time": null},
+      {"name": "McD Connect", "annual": 250, "one_time": null},
+      {"name": "Restaurant Employee Experience Survey", "annual": 62, "one_time": null},
+      {"name": "Pricing Engine", "annual": 264, "one_time": null}
+    ],
+    "mandatory_annual_total": 11379.40,
+    "optional_annual_total": 793,
+    "one_time_total_mandatory": 4484,
+    "one_time_total_optional": 500,
+    "sto_str_rent_schedule": {
+      "effective_date": "May 28, 2014",
+      "tiers": [
+        {"min_cost": 0, "max_cost": 640000, "sto_pct": 9.5, "str_pct": 9.0},
+        {"min_cost": 640001, "max_cost": 670000, "sto_pct": 9.75, "str_pct": 9.25},
+        {"min_cost": 670001, "max_cost": 700000, "sto_pct": 10.0, "str_pct": 9.5},
+        {"min_cost": 700001, "max_cost": 730000, "sto_pct": 10.25, "str_pct": 9.75},
+        {"min_cost": 730001, "max_cost": 760000, "sto_pct": 10.5, "str_pct": 10.0},
+        {"min_cost": 760001, "max_cost": 820000, "sto_pct": 10.75, "str_pct": 10.25},
+        {"min_cost": 820001, "max_cost": 880000, "sto_pct": 11.0, "str_pct": 10.5},
+        {"min_cost": 880001, "max_cost": 940000, "sto_pct": 11.25, "str_pct": 10.75},
+        {"min_cost": 940001, "max_cost": 1000000, "sto_pct": 11.5, "str_pct": 11.0},
+        {"min_cost": 1000001, "max_cost": null, "sto_pct": null, "str_pct": null, "note": "Case by case"}
+      ]
+    },
+    "walmart_rent": {
+      "type": "Fixed Percentage Rent",
+      "range": "14%–15.5% of Gross Sales"
+    }
+  },
+  "financial_note_depth_promoted": {
+    "franchise_revenue_disaggregation_millions": {
+      "rents": {"2024": 5170.7, "2023": 5140.3, "2022": 4724.0},
+      "royalties": {"2024": 2014.5, "2023": 1998.1, "2022": 1837.5},
+      "initial_fees": {"2024": 25.4, "2023": 25.0, "2022": 23.2}
+    },
+    "future_rent_receivable_from_franchisees_total_millions": 14159.0,
+    "ip_royalty_to_parent": "2% of all restaurant sales",
+    "subsequent_event_feb_2025": "$2.4B intercompany debt converted to equity",
+    "advertising_actuals_company_owned_millions": {"2024": 94.9, "2023": 92.0, "2022": 84.0},
+    "advertising_production_sga_millions": {"2024": 84.6, "2023": 36.7, "2022": 45.4},
+    "depreciation_policy": {"buildings": "up to 40 years", "equipment": "3-12 years", "software": "3-10 years"},
+    "impairment_test_frequency": "Annually in Q4 and on trigger",
+    "impairment_grouping": "Field office level",
+    "vie_conclusion": "Consolidation not appropriate for cooperatives or franchisee relationships",
+    "receivable_writeoff_policy": "Not separately disclosed as standalone note; bad debt reserves included in asset dispositions line",
+    "item19_sample_size_fdd_inconsistency": {"page_43": 11332, "page_44": 11322, "note": "Minor FDD typographical error"}
+  },
+  "contract_burden_depth_promoted": {
+    "eft_auto_debit": "Mandatory participation in McDonald's auto-debit/credit program. McDonald's controls program specifications.",
+    "default_interest": "15% per annum or highest legal rate; monthly compounding, actual/365",
+    "operating_hours": "7 days/week, minimum 7:00 AM–11:00 PM or as prescribed by McDonald's",
+    "system_change_unilateral": "McDonald's may modify entire system, O&T Manual, equipment specs, building blueprints, technology — no frequency or cost limitations",
+    "indemnification_scope": "Full indemnify and hold harmless for all claims from franchisee/employee/agent acts or premises-based acts; must defend at McDonald's election",
+    "fee_shifting": "Franchisee pays McDonald's reasonable attorneys' fees, court costs, expenses on enforcement",
+    "severability_termination": "If material provision stricken/invalid, McDonald's may terminate franchise",
+    "insurance_requirements": {"gl": "$5M/$5M", "wc": "$100K/$500K/$100K", "insurer_rating": "AM Best A+/A, Financial Size ≥IX", "mcdonalds_additional_insured": true},
+    "single_financial_arrangement_doctrine": "All payments (royalty, rent, fees) constitute single arrangement — cannot disaggregate to challenge individual component",
+    "fmv_no_intangibles_all_scenarios": true,
+    "royalty_reset_on_15d_transfer": "Automatic adjustment to then-prevailing rate for new franchises",
+    "continuing_personal_liability_post_transfer": "Full term or shorter period at McDonald's sole discretion",
+    "equity_ownership": "Must own 100% equity interest. Must furnish evidence on request.",
+    "corporation_assignment": "Must be wholly owned/controlled. Must use McDonald's-prescribed Stockholders Agreement. Corporate name cannot include McDonald's names/trademarks.",
+    "acknowledgments_section_28": "10 items: no renewal promise, no profitability representation, no exclusive territory, franchise supersedes all other agreements, no other representations. State riders delete 28(b)(c)(d) for HI/MD. Anti-waiver rider for all registration states."
+  }
+}

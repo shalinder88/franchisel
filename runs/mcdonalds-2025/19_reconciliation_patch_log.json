@@ -1,0 +1,72 @@
+[
+  {
+    "field_name": "contract_burden_summary.consolidation_waiver",
+    "old_value": null,
+    "new_value": "Guarantor may not seek to consolidate any action in which jury trial has been waived with any other action in which jury trial cannot be or has not been waived.",
+    "change_type": "field_added",
+    "reason": "Regression recovery: gold had consolidationWaiver=true. Verified in Exhibit N, Unlimited Guaranty Section 18, page 213. Directly surfaced clause within jury trial waiver paragraph.",
+    "supporting_pdf_pages": [213],
+    "supporting_prior_or_gold_source": "normalized_gold.jsonl: financing.moduleF_financing.guaranteedLoanProgram.consolidationWaiver = true",
+    "confidence": "high"
+  },
+  {
+    "field_name": "total_recurring_fee_estimates.minimum_pct_of_gross_sales",
+    "old_value": null,
+    "new_value": "~14%+ (4-5% royalty + 4% advertising + minimum 6% percentage rent)",
+    "change_type": "derived_field_added",
+    "reason": "Regression recovery: gold had totalRecurringFeeEstimate.totalMinimumPctOfGross = '14%+'. Computed from extracted Item 6 data: 4-5% royalty + 4% ad minimum + 6% minimum percentage rent.",
+    "supporting_pdf_pages": [18, 19, 21],
+    "supporting_prior_or_gold_source": "normalized_gold.jsonl: fee_details.item6.totalRecurringFeeEstimate.totalMinimumPctOfGross = '14%+ (royalty + ad fund + minimum percentage rent)'",
+    "confidence": "medium"
+  },
+  {
+    "field_name": "total_recurring_fee_estimates.typical_pct_of_gross_sales_including_rent",
+    "old_value": null,
+    "new_value": "~20-30%+ (royalty + advertising + typical percentage rent + base rent component)",
+    "change_type": "derived_field_added",
+    "reason": "Regression recovery: gold had totalRecurringFeeEstimate.totalTypicalPctOfGross = '20-30%+ including rent'. Derived from Item 6 data and Item 19 effective rent range (0%-33.33%).",
+    "supporting_pdf_pages": [18, 19, 21, 45],
+    "supporting_prior_or_gold_source": "normalized_gold.jsonl: fee_details.item6.totalRecurringFeeEstimate.totalTypicalPctOfGross = '20-30%+ including rent'",
+    "confidence": "medium"
+  },
+  {
+    "field_name": "gold_error: item6.otherFees[3].rate (Interest on Late Payments)",
+    "old_value": "SOFR + 5% (gold)",
+    "new_value": "15% per annum or highest legal rate (franchise agreement Section 8(c))",
+    "change_type": "gold_source_error_identified",
+    "reason": "Adjudicated: gold says SOFR+5% for late payment interest. FDD Franchise Agreement Section 8(c), page 77, clearly states '15% per annum' or highest legal rate with monthly compounding. SOFR+5% appears nowhere in the FDD. Gold-source error.",
+    "supporting_pdf_pages": [77],
+    "supporting_prior_or_gold_source": "normalized_gold.jsonl: fee_details.item6.otherFees[3].rate = 'SOFR + 5%'",
+    "confidence": "high"
+  },
+  {
+    "field_name": "gold_error: item6.otherFees[4] (Insufficient Funds / Rejected Payment $200)",
+    "old_value": "$200 per occurrence (gold)",
+    "new_value": "Not disclosed in FDD",
+    "change_type": "gold_source_error_identified",
+    "reason": "Adjudicated: Full-text search of all 389 pages found no $200 insufficient funds fee line item in Item 6 or anywhere else. Gold-source error — fee not directly surfaced in this FDD.",
+    "supporting_pdf_pages": [],
+    "supporting_prior_or_gold_source": "normalized_gold.jsonl: fee_details.item6.otherFees[4].amount = 200",
+    "confidence": "high"
+  },
+  {
+    "field_name": "gold_error: item6.otherFees[5] (Transfer Fee)",
+    "old_value": "varies (gold)",
+    "new_value": "Not a separate fee in FDD — royalty reset on transfer is the economic consequence",
+    "change_type": "gold_source_error_identified",
+    "reason": "Adjudicated: No 'Transfer Fee' line item in Item 6 fee table or franchise agreement. Gold likely confused royalty reset provision (Section 15(d)) with a separate fee. Gold-source error.",
+    "supporting_pdf_pages": [81],
+    "supporting_prior_or_gold_source": "normalized_gold.jsonl: fee_details.item6.otherFees[5].name = 'Transfer Fee'",
+    "confidence": "high"
+  },
+  {
+    "field_name": "gold_stale: item3.pendingCaseCount",
+    "old_value": "6 (gold)",
+    "new_value": "7+ (current run)",
+    "change_type": "gold_stale_data",
+    "reason": "Gold was extracted before the February 2026 amendment which added Le v. McDonald's (McRib case, filed Dec 23, 2025). Current run includes all 7 named pending cases from the amended FDD.",
+    "supporting_pdf_pages": [14],
+    "supporting_prior_or_gold_source": "normalized_gold.jsonl: litigation.item3.pendingCaseCount = 6",
+    "confidence": "high"
+  }
+]

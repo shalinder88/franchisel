@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "recovery_type": "narrative_to_canonical_promotion_audit",
+    "extraction_date": "2026-04-05",
+    "method": "Compared 02_reader_report.md and 08_final_report.md against 09_final_canonical.json. Identified facts stated in narrative but not structured in canonical."
+  },
+  "promotions": [
+    {
+      "field": "identity.trademark_owner",
+      "narrative_source": "02_reader_report.md Pass 2, Item 13",
+      "fact": "Trademarks owned by Restaurant Brands, LLC (affiliate). Licensed to McDonald's USA, LLC for 20-year terms with automatic renewals.",
+      "pdf_source": "Item 13, pages 37-38",
+      "status": "promoted_to_canonical"
+    },
+    {
+      "field": "identity.president",
+      "narrative_source": "Not in narrative; directly surfaced in PDF Item 2, page 10",
+      "fact": "Director and President: Joe Erlinger (since April 22, 2002)",
+      "pdf_source": "Item 2, page 10",
+      "status": "promoted_to_canonical"
+    },
+    {
+      "field": "item19_performance_summary.sample_size_pro_forma",
+      "narrative_source": "02_reader_report.md Pass 5",
+      "fact": "Pro forma based on 11,332 independent franchisee traditional restaurants (stated as 11,332 but also referenced as 11,322 on p.44 — appears to be minor inconsistency in FDD itself)",
+      "pdf_source": "Item 19, pages 43-44",
+      "status": "promoted_to_canonical",
+      "note": "Page 43 says 11,332; page 44 says 11,322. Preserving both references as FDD inconsistency."
+    },
+    {
+      "field": "recurring_fees.interest_on_delinquencies",
+      "narrative_source": "Not in narrative; surfaced in franchise agreement Section 8(c)",
+      "fact": "Past-due amounts: interest at highest rate allowed by law or 15% per annum (monthly compounding, actual/365)",
+      "pdf_source": "Exhibit B, Section 8(c), page 77",
+      "status": "promoted_to_canonical"
+    },
+    {
+      "field": "item21_auditor_guaranty_financial_summary.franchise_revenue_disaggregation",
+      "narrative_source": "Not in narrative; surfaced in financial notes page 66",
+      "fact": "Franchised revenue split: Rents $5,170.7M / Royalties $2,014.5M / Initial fees $25.4M (2024)",
+      "pdf_source": "Exhibit A financial notes, page 66",
+      "status": "promoted_to_canonical"
+    },
+    {
+      "field": "item21_auditor_guaranty_financial_summary.future_rent_receivable_from_franchisees",
+      "narrative_source": "Not in narrative; surfaced in financial notes page 66",
+      "fact": "Future gross minimum rent payments due from franchisees: $14,159.0M total ($8,349.0M owned sites + $5,810.0M leased sites)",
+      "pdf_source": "Exhibit A financial notes, page 66",
+      "status": "promoted_to_canonical"
+    },
+    {
+      "field": "item21_auditor_guaranty_financial_summary.subsequent_event",
+      "narrative_source": "Not in narrative; surfaced in financial notes page 72",
+      "fact": "On February 17, 2025, $2.4B of intercompany payable arrangements with McDonald's Corporation matured and were converted to equity. No longer an obligation.",
+      "pdf_source": "Exhibit A financial notes, page 72",
+      "status": "promoted_to_canonical"
+    },
+    {
+      "field": "item21_auditor_guaranty_financial_summary.related_party_ip_royalty",
+      "narrative_source": "Not in narrative; surfaced in financial notes page 71",
+      "fact": "Company pays McDonald's Corporation a royalty equal to 2% of company-owned and franchised restaurant sales for IP license rights.",
+      "pdf_source": "Exhibit A financial notes, page 71",
+      "status": "promoted_to_canonical"
+    },
+    {
+      "field": "contract_burden.mandatory_eft",
+      "narrative_source": "08_final_report.md mentions technology burden but not EFT mechanics",
+      "fact": "Franchisee must at all times participate in McDonald's automatic debit/credit transfer program. McDonald's can change program specifications unilaterally.",
+      "pdf_source": "Exhibit B, Section 8(b), page 77",
+      "status": "promoted_to_canonical"
+    },
+    {
+      "field": "contract_burden.operating_hours",
+      "narrative_source": "Not in narrative; surfaced in franchise agreement Section 12(g)",
+      "fact": "Must operate 7 days/week, at least 7:00 AM to 11:00 PM (or other hours prescribed by McDonald's). Must maintain sufficient supplies and employ adequate personnel for maximum capacity.",
+      "pdf_source": "Exhibit B, Section 12(g), page 79",
+      "status": "promoted_to_canonical"
+    },
+    {
+      "field": "contract_burden.severability_termination_right",
+      "narrative_source": "Not in narrative; surfaced in franchise agreement Section 25",
+      "fact": "If any material provision of franchise is stricken or declared invalid, McDonald's reserves right to terminate the franchise.",
+      "pdf_source": "Exhibit B, Section 25, page 85",
+      "status": "promoted_to_canonical"
+    },
+    {
+      "field": "item15_operator_participation_detail",
+      "narrative_source": "02_reader_report.md mentions full time best efforts",
+      "fact": "Must personally devote full time and best efforts. Must live in locality. Must own entire equity interest. Must keep free from conflicting enterprises.",
+      "pdf_source": "Exhibit B, Sections 1(e) and 13, pages 74, 80",
+      "status": "promoted_to_canonical"
+    }
+  ],
+  "already_structured_correctly": [
+    "All identity fields",
+    "All fee fields (royalty, rent, advertising, technology)",
+    "All initial investment fields",
+    "Item 19 sales distribution and pro forma data",
+    "Item 20 outlet tables and organizations",
+    "Item 21 financial statements (income, balance, cash flow)",
+    "Territory/noncompete/transfer/termination",
+    "Litigation summary (pending and concluded)",
+    "Financing terms",
+    "State addenda"
+  ],
+  "fdd_internal_inconsistency_noted": {
+    "field": "Item 19 pro forma sample size",
+    "page_43_value": "11,332",
+    "page_44_value": "11,322",
+    "resolution": "Both values preserved. Likely minor typographical error in FDD. Does not materially affect pro forma results."
+  }
+}

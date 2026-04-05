@@ -1,0 +1,95 @@
+{
+  "task_id": "R02",
+  "task_name": "Financial Statement Lease Maturity and Property Detail",
+  "source_pages": [66, 67, 68],
+  "property_and_equipment_detail": {
+    "as_of": "December 31, 2024",
+    "in_millions": true,
+    "components": [
+      {"category": "Land", "2024": 4167.2, "2023": 4144.4},
+      {"category": "Buildings and improvements on owned land", "2024": 12096.1, "2023": 11704.5},
+      {"category": "Buildings and improvements on leased land", "2024": 5666.7, "2023": 5259.7},
+      {"category": "Equipment, signs and seating", "2024": 923.6, "2023": 978.7},
+      {"category": "Other", "2024": 67.5, "2023": 73.5},
+      {"category": "Property and equipment, at cost", "2024": 22921.1, "2023": 22160.8},
+      {"category": "Accumulated depreciation and amortization", "2024": -9840.7, "2023": -9232.8},
+      {"category": "Net property and equipment", "2024": 13080.4, "2023": 12928.0}
+    ],
+    "depreciation_expense": {
+      "2024": 869.7,
+      "2023": 864.9,
+      "2022": 833.0
+    },
+    "note": "McDonald's has retained legal title to certain property and equipment assets, which are in turn used by the Company in accordance with extended intercompany agreements."
+  },
+  "lease_maturity_schedule": {
+    "as_of": "December 31, 2024",
+    "in_millions": true,
+    "maturities": [
+      {"year": "2025", "operating": 433.5, "finance": 40.5, "total": 474.0},
+      {"year": "2026", "operating": 411.6, "finance": 41.6, "total": 453.2},
+      {"year": "2027", "operating": 405.6, "finance": 42.2, "total": 447.8},
+      {"year": "2028", "operating": 395.7, "finance": 42.7, "total": 438.4},
+      {"year": "2029", "operating": 382.8, "finance": 43.3, "total": 426.1},
+      {"year": "Thereafter", "operating": 5519.0, "finance": 1243.7, "total": 6762.7}
+    ],
+    "total_lease_payments": {"operating": 7548.2, "finance": 1454.0, "total": 9002.2},
+    "imputed_interest": {"operating": -2286.1, "finance": -671.2, "total": -2957.3},
+    "present_value_lease_liability": {"operating": 5262.1, "finance": 782.8, "total": 6044.9},
+    "note": "Total lease payments include option periods that are reasonably assured of being exercised."
+  },
+  "rent_expense_detail": {
+    "in_millions": true,
+    "by_category": [
+      {"category": "Company-owned and operated restaurants", "2024": 23.3, "2023": 22.8, "2022": 22.5},
+      {"category": "Franchised restaurants", "2024": 540.5, "2023": 537.2, "2022": 529.4},
+      {"category": "Other", "2024": 29.2, "2023": 35.0, "2022": 33.2},
+      {"category": "Total rent expense", "2024": 593.0, "2023": 595.0, "2022": 585.1}
+    ],
+    "percent_rents_in_excess_franchised": {
+      "2024": 101.9,
+      "2023": 98.9,
+      "2022": 89.1
+    }
+  },
+  "restaurant_count_from_notes": {
+    "as_of": "December 31, 2024",
+    "franchised": 12886,
+    "company_owned": 671,
+    "total": 13557,
+    "note": "Slight discrepancy vs Item 20 (13,559 total) likely due to timing differences between financial statement close and FDD outlet count methodology."
+  },
+  "restructuring_detail": {
+    "initiative": "Accelerating the Organization (announced January 2023)",
+    "total_charges_since_inception": 63.6,
+    "charges_2024": 1.2,
+    "accrued_balance_dec_2024": {
+      "employee_termination_benefits": 3.3,
+      "costs_to_terminate_contracts": 3.2,
+      "professional_services_and_other": -2.1,
+      "total": 4.4
+    }
+  },
+  "other_operating_income_expense": {
+    "in_millions": true,
+    "2024": {
+      "gains_on_sales_restaurant_businesses": -46.7,
+      "asset_dispositions_other_expense_net": 60.8,
+      "other_charges_gains": -6.9,
+      "total": 7.2
+    },
+    "2023": {
+      "gains_on_sales_restaurant_businesses": -29.3,
+      "asset_dispositions_other_expense_net": 30.2,
+      "other_charges_gains": 71.4,
+      "total": 72.3
+    }
+  },
+  "income_tax_detail": {
+    "effective_rate_2024": "23.2%",
+    "effective_rate_2023": "24.0%",
+    "effective_rate_2022": "23.6%",
+    "unrecognized_tax_benefits_2024": 75.8,
+    "unrecognized_tax_benefits_2023": 70.6
+  }
+}

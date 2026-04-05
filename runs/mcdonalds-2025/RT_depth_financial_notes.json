@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "recovery_type": "financial_note_depth",
+    "source_pages": [63, 64, 65, 66, 67, 68, 69, 70, 71, 72],
+    "extraction_date": "2026-04-05"
+  },
+  "accounting_policies": {
+    "revenue_recognition": {
+      "company_owned_sales": "Recognized on a cash basis at time of underlying sale, net of sales tax and other sales-related taxes.",
+      "royalty_revenues": "Based on percent of sales, recognized at time underlying sales occur.",
+      "rental_income": "Minimum rent recognized straight-line over franchise term (generally 20 years). Variable rent based on percent of sales recognized at time underlying sales occur.",
+      "initial_fees": "Recognized as performance obligation satisfied over franchise term (generally 20 years).",
+      "technology_revenues": "Company determined it is the principal in technology platform arrangements. Revenue presented on gross basis. Recognized as goods/services transferred to franchisee. Related expenses in Other restaurant expenses.",
+      "brand_licensing": "Based on percent of sales, recognized at time underlying sales occur.",
+      "franchise_revenue_disaggregation_millions": {
+        "rents": {"2024": 5170.7, "2023": 5140.3, "2022": 4724.0},
+        "royalties": {"2024": 2014.5, "2023": 1998.1, "2022": 1837.5},
+        "initial_fees": {"2024": 25.4, "2023": 25.0, "2022": 23.2},
+        "total": {"2024": 7210.6, "2023": 7163.4, "2022": 6584.7}
+      },
+      "franchise_consideration_allocation": "Allocated among lease component (rental income), non-lease components (royalty income, initial fee income). Based on mix of observable and estimated standalone selling prices.",
+      "source_pages": [63, 64, 66]
+    },
+    "depreciation_method_and_useful_lives": {
+      "method": "Straight-line",
+      "buildings": "Up to 40 years",
+      "leasehold_improvements": "Lesser of useful life or lease term (which generally includes certain option periods)",
+      "equipment": "3 to 12 years",
+      "capitalized_software": "3 to 10 years (customer-facing shorter, back office/corporate longer)",
+      "note": "Company periodically reviews lives relative to physical, economic, and industry factors. May shorten if planned use or technology changes.",
+      "source_pages": [64]
+    },
+    "impairment_policy": {
+      "long_lived_assets": "Reviewed annually in Q4 and whenever events/circumstances indicate carrying amount may not be recoverable. Assets initially grouped at field office level. If indicator exists, undiscounted future cash flows of each individual restaurant compared to carrying value. If impaired, loss measured by excess of carrying amount over fair value (discounted future cash flows).",
+      "held_for_disposal": "Loss recognized when management/Board committed to disposal plan, assets available, disposal probable within 12 months, and net proceeds expected below net book value. Generally related to closed restaurants.",
+      "goodwill": "Tested in Q4 annually or whenever indicators exist. Fair value of reporting unit (US market, Level 3 DCF) compared to carrying amount. Qualitative assessment performed in current period — no indicators identified. Historically, goodwill impairment has not significantly impacted financials.",
+      "capitalized_software": "Reviewed whenever events/circumstances indicate carrying amount may not be recoverable. No material impairment identified 2022–2024.",
+      "source_pages": [65]
+    },
+    "receivable_and_writeoff_policy": {
+      "value": "Not separately disclosed as a standalone policy note. Asset dispositions and other expense, net includes 'reserves for bad debts' as one component among several in Other Operating Income/Expense (p.68). No specific allowance for doubtful accounts methodology disclosed in notes.",
+      "source_pages": [68],
+      "status": "not_separately_disclosed"
+    },
+    "consolidation_and_vie": {
+      "consolidation": "Consolidated financial statements include accounts of the Company and its subsidiaries.",
+      "vie_evaluation": "Company evaluates business relationships (franchisees, JV partners, suppliers, advertising cooperatives) for variable interest entities on ongoing basis. Generally qualify for scope exception under VIE consolidation guidance. Concluded consolidation not appropriate for periods presented.",
+      "advertising_cooperatives": "Company is not the primary beneficiary of advertising cooperatives. Does not have power through voting/similar rights to direct activities that most significantly impact economic performance. Consolidation not appropriate.",
+      "source_pages": [63, 65]
+    },
+    "estimates_in_financial_statements": {
+      "value": "Preparation of GAAP financial statements requires management estimates and assumptions affecting reported amounts. Actual results could differ from estimates.",
+      "source_pages": [63]
+    },
+    "recent_accounting_pronouncements": [
+      {
+        "asu": "ASU 2023-09",
+        "topic": "Income Taxes (Topic 740): Improvements to Income Tax Disclosures",
+        "effective": "Fiscal years beginning after December 15, 2024",
+        "impact": "Currently determining impact on financial statement disclosures"
+      },
+      {
+        "asu": "ASU 2024-03",
+        "topic": "Income Statement Expense Disaggregation Disclosures (Subtopic 220-40)",
+        "effective": "Fiscal years beginning after December 15, 2026; interim periods after December 15, 2027",
+        "impact": "Currently determining impact on financial statement disclosures"
+      }
+    ],
+    "leasing_policy": {
+      "lessee_accounting": "ROU asset and lease liability reflect present value of estimated future minimum lease payments over lease term (including options reasonably certain of exercise), discounted using rate implicit in lease or collateralized incremental borrowing rate.",
+      "short_term_leases": "Initial term ≤12 months (primarily office equipment) not included in ROU/liability; recognized straight-line over term.",
+      "non_lease_component_election": "Elected not to separate non-lease components from lease components. Impact immaterial, generally limited to company-owned locations.",
+      "renewal_options": "Considered reasonably certain if associated asset lives exceed initial lease term and sales performance remains strong. Included in ROU/liability even though not yet exercised.",
+      "weighted_avg_remaining_term_operating": "17 years",
+      "weighted_avg_remaining_term_finance": "28 years",
+      "weighted_avg_discount_rate_operating": "4.4%",
+      "weighted_avg_discount_rate_finance": "4.1%",
+      "annual_total_lease_payments": "Approximately $0.6 billion per year for 2022–2024",
+      "source_pages": [64, 67]
+    },
+    "capitalized_software_balances_millions": {
+      "2024": 71.9,
+      "2023": 91.7,
+      "2022": 104.6,
+      "note": "Included in Miscellaneous other assets on balance sheet. Declining balance suggests amortization outpacing new capitalization.",
+      "source_pages": [64]
+    }
+  },
+  "tax_note_detail": {
+    "provision_split_millions": {
+      "current": {
+        "us_federal": {"2024": 853.9, "2023": 939.7, "2022": 795.5},
+        "us_state": {"2024": 179.4, "2023": 148.8, "2022": 181.9},
+        "total_current": {"2024": 1033.3, "2023": 1088.5, "2022": 977.4}
+      },
+      "deferred": {
+        "us_federal": {"2024": 18.4, "2023": -9.7, "2022": 23.2},
+        "us_state": {"2024": -6.8, "2023": -8.0, "2022": -33.9},
+        "total_deferred": {"2024": 11.6, "2023": -17.7, "2022": -10.7}
+      },
+      "total_provision": {"2024": 1044.9, "2023": 1070.8, "2022": 966.7}
+    },
+    "effective_rate_reconciliation": {
+      "statutory_federal_rate": "21.0%",
+      "state_income_taxes_net": {"2024": "3.0%", "2023": "2.3%", "2022": "2.8%"},
+      "deferred_liability_remeasurement": {"2024": "0.0%", "2023": "0.0%", "2022": "0.0%"},
+      "other_net": {"2024": "-0.8%", "2023": "0.7%", "2022": "-0.2%"},
+      "effective_rate": {"2024": "23.2%", "2023": "24.0%", "2022": "23.6%"}
+    },
+    "deferred_tax_detail_millions": {
+      "liabilities": {
+        "property_and_equipment": {"2024": 1356.0, "2023": 1370.6},
+        "intangible_goodwill": {"2024": 272.7, "2023": 280.4},
+        "lease_rou_asset": {"2024": 1400.4, "2023": 1415.7},
+        "other": {"2024": 26.0, "2023": 11.8},
+        "total": {"2024": 3055.1, "2023": 3078.5}
+      },
+      "assets_before_valuation": {
+        "employee_benefit_plans": {"2024": -56.4, "2023": -61.8},
+        "deferred_revenue": {"2024": -78.7, "2023": -79.0},
+        "operating_loss_carryforwards": {"2024": -2.0, "2023": -1.0},
+        "lease_liability": {"2024": -1449.9, "2023": -1463.2},
+        "other": {"2024": -52.6, "2023": -69.4},
+        "total": {"2024": -1639.6, "2023": -1674.4}
+      },
+      "valuation_allowance": {"2024": 1.2, "2023": 1.1},
+      "net_deferred_tax_liability": {"2024": 1416.7, "2023": 1405.2}
+    },
+    "uncertain_tax_positions": {
+      "gross_unrecognized_benefits_millions": {"2024": 75.8, "2023": 70.6},
+      "amount_favorable_to_effective_rate_if_resolved": 59.9,
+      "reconciliation_millions": {
+        "beginning_balance": {"2024": 70.6, "2023": 100.8},
+        "decreases_prior_years": {"2024": -5.0, "2023": -19.3},
+        "increases_prior_years": {"2024": 7.4, "2023": 0.8},
+        "increases_current_year": {"2024": 10.2, "2023": 6.8},
+        "settlements": {"2024": -7.4, "2023": -18.5},
+        "lapsing_statutes": {"2024": 0, "2023": 0},
+        "ending_balance": {"2024": 75.8, "2023": 70.6}
+      },
+      "balance_sheet_classification_millions": {
+        "current_liabilities": {"2024": 23.3, "2023": 17.4},
+        "other_long_term_liabilities": "remainder"
+      },
+      "possible_decrease_next_12_months": 23.3,
+      "possible_favorable_rate_impact": 18.4,
+      "source": "Completion of audits in multiple jurisdictions and statute expirations"
+    },
+    "examination_periods": {
+      "value": "With few exceptions, not subject to US federal, state, and local income tax examinations for years before 2009.",
+      "source_pages": [71]
+    },
+    "interest_and_penalties_millions": {
+      "accrued_interest": {"2024": 25.7, "2023": 20.8},
+      "accrued_penalties": {"2024": 0, "2023": 0},
+      "recognized_expense_benefit": {"2024": 4.8, "2023": -3.9, "2022": 1.7},
+      "note": "Included in provision for income taxes."
+    },
+    "filing_basis": "Earnings included in McDonald's consolidated US federal return. State returns may be combined or separate depending on state law. Provision recorded on separate-return basis; settlements via intercompany accounts.",
+    "source_pages": [65, 70, 71]
+  },
+  "advertising_expense_actuals_millions": {
+    "cooperative_contributions_company_owned": {
+      "2024": 94.9,
+      "2023": 92.0,
+      "2022": 84.0,
+      "note": "Contributions to advertising cooperatives based on percent of sales, included in operating expenses of company-owned restaurants."
+    },
+    "production_and_marketing_sga": {
+      "2024": 84.6,
+      "2023": 36.7,
+      "2022": 45.4,
+      "note": "Radio/TV production costs (expensed when first aired) and other marketing-related expenses, included in SG&A."
+    },
+    "note": "Significant additional advertising costs incurred by franchisees through cooperative contributions are NOT consolidated — Company is not primary beneficiary of cooperatives.",
+    "source_pages": [65]
+  },
+  "other_material_notes": {
+    "goodwill_acquisition_detail_2024": {
+      "net_tangible_assets_acquired_millions": 10,
+      "identifiable_intangible_assets_millions": 110,
+      "goodwill_recorded_millions": 20,
+      "purpose": "Expand company-owned footprint in key growth areas and support strategic franchising initiatives.",
+      "note": "Goodwill from franchise-to-company acquisitions. If sold within 24 months, entire goodwill written off. If sold beyond 24 months, goodwill allocated by relative fair value.",
+      "source_pages": [65]
+    },
+    "related_party_transactions": {
+      "ip_royalty_to_parent": {
+        "rate": "2% of company-owned and franchised restaurant sales",
+        "amount_millions": {"2024": 1069.4, "2023": 1062.7, "2022": 975.8}
+      },
+      "dividends_to_parent_millions": {"2024": 3461.6, "2023": 3394.4, "2022": 3095.7},
+      "intercompany_payable_arrangements": {
+        "line_of_credit_millions": {"2024": 2400.0, "2023": 3400.0},
+        "outstanding_amount_millions": {"2024": 2400.0, "2023": 2400.0},
+        "interest_rate": "12-month swap rate + 1%",
+        "maturity": "February 17, 2025",
+        "interest_expense_millions": {"2024": 159.1, "2023": 165.9, "2022": 59.4}
+      },
+      "parent_revolver_to_company": {
+        "amount_millions": 675.0,
+        "draws": "None during 2024",
+        "outstanding": "None at Dec 31, 2024 and 2023"
+      },
+      "net_intercompany_payable_millions": {"2024": 910.6, "2023": 697.0},
+      "allocated_expenses_from_parent": "Legal, share-based compensation, other SG&A — allocated ratably. Certain administrative functions provided without charge (not reflected in results).",
+      "source_pages": [71]
+    },
+    "subsequent_events": {
+      "date": "February 17, 2025",
+      "event": "The $2.4 billion of payable arrangements with McDonald's Corporation matured and were converted to equity. No longer represents an obligation.",
+      "source_pages": [72]
+    },
+    "employee_benefit_plans": {
+      "plan_type": "401(k) with employer match + unfunded nonqualified supplemental plans",
+      "401k_investment_limit_mcd_stock": "20% of total account balance",
+      "nonqualified_plan_liabilities_millions": {"2024": 151.1, "2023": 162.6},
+      "total_benefit_costs_millions": {"2024": 28.6, "2023": 21.2, "2022": 21.4},
+      "hedging": "McDonald's on behalf of Company enters derivative contracts to hedge market-driven changes in nonqualified plan liabilities.",
+      "source_pages": [71]
+    },
+    "contingencies": {
+      "value": "Company subject to proceedings, lawsuits, and claims in ordinary course. Does not believe any matter currently reviewed will have material adverse effect on financial condition or results of operations.",
+      "source_pages": [68]
+    },
+    "future_minimum_rent_receivable_from_franchisees_millions": {
+      "owned_sites": {"2025": 857.7, "2026": 820.0, "2027": 786.4, "2028": 748.3, "2029": 695.7, "thereafter": 4440.9, "total": 8349.0},
+      "leased_sites": {"2025": 603.7, "2026": 575.9, "2027": 550.8, "2028": 518.2, "2029": 483.5, "thereafter": 3077.9, "total": 5810.0},
+      "combined_total": {"2025": 1461.4, "2026": 1395.9, "2027": 1337.2, "2028": 1266.5, "2029": 1179.2, "thereafter": 7518.8, "total": 14159.0},
+      "net_property_under_franchise_arrangements_billions": 11.5,
+      "land_under_franchise_arrangements_billions": 3.9,
+      "accumulated_depreciation_billions": 8.4,
+      "source_pages": [66]
+    }
+  }
+}
