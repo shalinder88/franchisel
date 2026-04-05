@@ -70,6 +70,7 @@ from .fact_resolver import build_fact_registry, check_cross_field_sanity
 from .unmodeled_fact_store import UnmodeledFactStore
 from .recheck_orchestrator import identify_recheck_targets, run_rechecks
 from .consumption_registry import build_consumption_registry
+from .run_log import ExtractionRunLog
 
 
 def extract_fdd(pdf_path: str) -> Dict[str, Any]:
@@ -81,12 +82,16 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     filename = os.path.basename(pdf_path)
     total_pages = doc.page_count
 
+    # ── Extraction run log ──
+    run_log = ExtractionRunLog(pdf_path)
+
     print(f"Reading {filename}: {total_pages} pages")
 
     # ════════════════════════════════════════════════════════════════
     # PHASE -1: DOCUMENT NORMALIZATION
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase -1: Document normalization ---")
+    run_log.phase_start("phase_-1_normalization")
     geometry = normalize_document(doc)
     print(f"  Pages: {geometry['total_pages']}")
     print(f"  Headings: {len(geometry['heading_candidates'])}")
@@ -95,15 +100,23 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # Build layout index (block/span geometry for heading candidates)
     layout_idx = index_document_layout(doc)
     print(f"  Layout: {len(layout_idx.heading_candidates)} heading candidates, {len(layout_idx.table_regions)} table regions")
+    run_log.phase_end("phase_-1_normalization", {
+        "pages": geometry["total_pages"],
+        "headings": len(geometry["heading_candidates"]),
+        "table_regions": geometry["pages_with_tables"],
+    })
 
     # ════════════════════════════════════════════════════════════════
     # PHASE 1: PAGE READING + CLASSIFICATION
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 1: Reading all {total_pages} pages ---")
+    run_log.phase_start("phase_1_reading")
     page_reads = read_all_pages(doc, geometry)
     from collections import Counter
     type_counts = Counter(p.page_type.value for p in page_reads)
     print(f"  Page types: {dict(type_counts)}")
+    run_log.touch_pages("phase_1_reading", list(range(1, total_pages + 1)))
+    run_log.phase_end("phase_1_reading", {"page_types": dict(type_counts)})
 
     # ════════════════════════════════════════════════════════════════
     # PHASE 0: BOOTSTRAP
@@ -118,6 +131,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         print(f"\n  Loaded learning from {brands_learned} prior brands")
 
     print(f"\n--- Phase 0: Bootstrap ---")
+    run_log.phase_start("phase_0_bootstrap")
     bootstrap = build_bootstrap(page_reads)
     print(f"  Entity: {bootstrap['entity'][:60]}")
     print(f"  Issue: {bootstrap['issueDate']}")
@@ -125,6 +139,11 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     print(f"  Risks: {bootstrap['specialRisks']}")
     print(f"  TOC: {sorted(bootstrap['tocMap'].keys())}")
     print(f"  Exhibits: {list(bootstrap['exhibitMap'].keys())}")
+    run_log.phase_end("phase_0_bootstrap", {
+        "entity": bootstrap["entity"][:60],
+        "toc_items": len(bootstrap.get("tocMap", {})),
+        "exhibits": len(bootstrap.get("exhibitMap", {})),
+    })
 
     # ════════════════════════════════════════════════════════════════
     # DOCUMENT CLASSIFICATION (before archetype)
@@ -163,6 +182,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # PHASE 2: SECTION SEGMENTATION
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 2: Section segmentation ---")
+    run_log.phase_start("phase_2_segmentation")
     items = segment_items(page_reads, bootstrap.get("tocMap"), layout_idx)
     for n in range(1, 24):
         s = items.get(n)
@@ -177,12 +197,28 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         else:
             print(f"  Item {n:2d}: NOT FOUND")
 
+    # Record segmentation in run_log
+    for n, s in items.items():
+        run_log.touch_pages("phase_2_segmentation", list(range(s.start_page, s.end_page + 1)))
+    run_log.phase_end("phase_2_segmentation", {
+        "items_found": len(items),
+        "items_missing": [n for n in range(1, 24) if n not in items],
+    })
+
     # ════════════════════════════════════════════════════════════════
     # PHASE 3: TABLE EXTRACTION + NOTE LINKING
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 3: Table extraction ---")
+    run_log.phase_start("phase_3_tables")
     all_tables = import_tables_for_items(doc, page_reads, items)
     print(f"  Tables: {len(all_tables)}, Rows: {sum(t.row_count for t in all_tables)}")
+    # Record each table as an emitted object
+    for t in all_tables:
+        run_log.object_emitted(
+            "TableObject", t.table_id, "phase_3_tables",
+            source_pages=[t.source_page],
+            fields=[f"item_{t.source_item}_table" if t.source_item else "unassigned_table"],
+        )
     for n in sorted(items.keys()):
         s = items[n]
         if s.tables:
@@ -227,10 +263,17 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
                     i6_section.tables.append(ft)
                     print(f"  → Injected fee_table {ft.table_id} into Item 6")
 
+    run_log.phase_end("phase_3_tables", {
+        "tables_found": len(all_tables),
+        "total_rows": sum(t.row_count for t in all_tables),
+        "tables_after_merge": merged_table_count,
+    })
+
     # ════════════════════════════════════════════════════════════════
     # PHASE 4: EXHIBIT LOCATION + PARSING
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 4: Exhibit parsing ---")
+    run_log.phase_start("phase_4_exhibits")
     exhibits = locate_exhibits(page_reads, bootstrap.get("exhibitMap", {}))
     assign_precedence(exhibits)  # Set precedence levels before parsing
     processing_order = get_processing_order(exhibits)
@@ -245,6 +288,19 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
         print(f"  State overrides: {len(state_overrides)}")
     if exhibit_summary["unparsed_critical"]:
         print(f"  ⚠️ Unparsed critical exhibits: {exhibit_summary['unparsed_critical']}")
+    # Record each exhibit as an emitted object
+    for code, ex in exhibits.items():
+        pages = list(range(ex.start_page, ex.end_page + 1)) if ex.start_page > 0 else []
+        run_log.object_emitted(
+            "ExhibitObject", f"exhibit_{code}", "phase_4_exhibits",
+            source_pages=pages,
+            fields=[ex.role.value],
+        )
+    run_log.phase_end("phase_4_exhibits", {
+        "exhibits_located": sum(1 for ex in exhibits.values() if ex.start_page > 0),
+        "exhibits_parsed": sum(1 for ex in exhibits.values() if ex.parsed),
+        "state_overrides": len(state_overrides),
+    })
 
     # Close doc — all data extracted
     doc.close()
@@ -253,13 +309,34 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # PHASE 5: ITEM PARSING → ENGINE NORMALIZATION
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 5: Item parsing + engine normalization ---")
+    run_log.phase_start("phase_5_parsing")
     # Lane B: Normalization engines
     parsed_items = {}
     for item_num, section in items.items():
         parsed_items[item_num] = parse_item(section)
+        # Record parser event
+        s = section
+        run_log.parser_fired(
+            parser_name=f"item_parsers.item{item_num:02d}",
+            item_num=item_num,
+            pages=list(range(s.start_page, s.end_page + 1)),
+            objects_emitted=[f"parsed_item_{item_num}"],
+        )
 
     evidence = EvidenceStore()
     engines = build_all_engines(items, parsed_items, exhibit_data, evidence)
+    # Record engines as emitted objects
+    for engine_name, engine_data in engines.items():
+        if isinstance(engine_data, dict) and engine_data:
+            run_log.object_emitted(
+                "Engine", f"engine_{engine_name}", "phase_5_parsing",
+                fields=list(engine_data.keys())[:20],
+            )
+    run_log.phase_end("phase_5_parsing", {
+        "items_parsed": len(parsed_items),
+        "engines_built": len([k for k, v in engines.items() if isinstance(v, dict) and v]),
+        "evidence_fields": len(evidence.to_dict()),
+    })
 
     # ════════════════════════════════════════════════════════════════
     # LANE A: READER/DISCOVERY PASS
@@ -267,11 +344,17 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # Reads the document like a human analyst.
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Lane A: Reader/discovery pass ---")
+    run_log.phase_start("lane_a_reader")
     reader_output = run_reader_pass(page_reads, items, bootstrap)
     print(f"  Brand: {reader_output['brand_memory'].get('brand_name', '?')[:50]}")
     print(f"  Ledger: {reader_output['ledger'].get('resolved', 0)}/{reader_output['ledger'].get('total', 0)} resolved")
     print(f"  Facts: {reader_output['fact_store'].get('total_facts', 0)} discovered, {reader_output['fact_store'].get('uncaptured', 0)} uncaptured")
     print(f"  Exhibits: {reader_output['exhibit_tracker'].get('parsed', 0)}/{reader_output['exhibit_tracker'].get('total', 0)} parsed")
+
+    run_log.phase_end("lane_a_reader", {
+        "facts_captured": reader_output.get("fact_store", {}).get("total_facts", 0),
+        "ledger_resolved": reader_output.get("ledger", {}).get("resolved", 0),
+    })
 
     # ════════════════════════════════════════════════════════════════
     # FACT ONTOLOGY CLASSIFICATION
@@ -323,6 +406,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # PHASE 6: QA SWEEP
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 6: QA sweep ---")
+    run_log.phase_start("phase_6_qa")
 
     # Item coverage assessment
     coverage = assess_item_coverage(items)
@@ -382,6 +466,13 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     for check in audit["checks"]:
         if not check["passed"]:
             print(f"    ❌ {check['check']}: {check['detail']}")
+
+    run_log.phase_end("phase_6_qa", {
+        "pii_violations": len(pii_violations),
+        "contradictions": len(contradictions),
+        "regex_findings": len(regex_findings),
+        "publish_gate": completeness["publish_gate"],
+    })
 
     # ════════════════════════════════════════════════════════════════
     # SELF-AUDITING CONTROL SYSTEM
@@ -483,6 +574,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     # PHASE 7: ASSEMBLY
     # ════════════════════════════════════════════════════════════════
     print(f"\n--- Phase 7: Assembly ---")
+    run_log.phase_start("phase_7_assembly")
     brand = assemble_brand_json(engines, bootstrap, evidence, completeness)
     brand_tagged = tag_display_tiers(brand)
 
@@ -523,6 +615,28 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
     i21 = brand.get('item21', {})
     print(f"  Auditor: {i21.get('auditorName','?')} | Opinion: {i21.get('auditorOpinion','?')} | Strength: {i21.get('financialStrengthSignal','?')}")
     print(f"  Gate: {brand['publishGate']}")
+
+    # ── Run log: mark survived objects ──
+    # Tables that ended up in item sections used by engines = survived
+    for n, s in items.items():
+        for t in s.tables:
+            run_log.mark_survived(t.table_id)
+    # Exhibits that were parsed = survived
+    for code, ex in exhibits.items():
+        if ex.parsed:
+            run_log.mark_survived(f"exhibit_{code}")
+    # Engines that produced evidence fields = survived
+    for engine_name, engine_data in engines.items():
+        if isinstance(engine_data, dict) and engine_data:
+            run_log.mark_survived(f"engine_{engine_name}")
+
+    run_log.phase_end("phase_7_assembly", {
+        "brand_fields": len([k for k, v in brand.items() if v is not None]),
+        "publish_gate": brand.get("publishGate", "unknown"),
+    })
+
+    # Finalize run log
+    run_log.finalize(total_pages=total_pages)
 
     # ════════════════════════════════════════════════════════════════
     # BUILD RESULT
@@ -629,6 +743,7 @@ def extract_fdd(pdf_path: str) -> Dict[str, Any]:
                 "publish_blockers": len(blockers),
             },
         },
+        "run_log": run_log.to_dict(),
     }
 
     # ═════════��══════════════════════════════════════════════════════
