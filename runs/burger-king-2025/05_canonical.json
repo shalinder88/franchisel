@@ -1,0 +1,1041 @@
+{
+  "meta": {
+    "brand": "Burger King",
+    "filing_id": "637918",
+    "fdd_date": "03/2025, as amended 01/2026",
+    "source_file": "fdd-vault/wi-dfi/archive/637918-2025-Burger-King.pdf",
+    "source_registry": "WI DFI",
+    "total_pdf_pages": 1057,
+    "extraction_date": "2026-04-05",
+    "source_artifacts": [
+      "01_source_map.md",
+      "02_reader_report.md",
+      "03_tables.json",
+      "04_exhibits.json"
+    ]
+  },
+
+  "franchisor_identity": {
+    "legal_name": {
+      "value": "Burger King Company LLC",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Franchisor",
+      "source_pages": [1, 10],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "entity_type": {
+      "value": "Florida limited liability company",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Franchisor",
+      "source_pages": [10],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "formation_date": {
+      "value": "February 4, 2022",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Franchisor",
+      "source_pages": [10],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "principal_address": {
+      "value": "5707 Blue Lagoon Drive, Miami, Florida 33126",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Franchisor",
+      "source_pages": [1, 10],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "phone": {
+      "value": "(305) 378-7128",
+      "source_object": "01_source_map.md",
+      "source_section": "Cover page",
+      "source_pages": [1],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "predecessor": {
+      "value": "Burger King Corporation (founded 1954, dissolved December 2022)",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Franchisor",
+      "source_pages": [10],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "parent_entity": {
+      "value": "Restaurant Brands International Limited Partnership (RBILP), controlled by Restaurant Brands International Inc. (RBI)",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Franchisor",
+      "source_pages": [10, 11],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "parent_other_brands": {
+      "value": ["Tim Hortons", "Popeyes", "Firehouse Subs"],
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Franchisor",
+      "source_pages": [11, 12, 13, 14],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "franchising_since": {
+      "value": "September 2022 (as BKC LLC); 1954 as predecessor BK Corporation",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Franchisor",
+      "source_pages": [10],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "system_size_worldwide": {
+      "value": "19,732 restaurants as of 12/31/2024",
+      "source_object": "02_reader_report.md",
+      "source_section": "A. Executive Snapshot",
+      "source_pages": [14],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "system_size_us": {
+      "value": "6,701 (5,524 franchised + 1,177 company-owned) as of 12/31/2024",
+      "source_object": "03_tables.json",
+      "source_section": "T20-01",
+      "source_pages": [112],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+
+  "issuance_date": {
+    "value": "03/2025, as amended 01/2026",
+    "source_object": "01_source_map.md",
+    "source_section": "Header",
+    "source_pages": [1],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+
+  "formats": {
+    "types": [
+      {
+        "name": "Traditional Freestanding",
+        "investment_low": "$2,049,200",
+        "investment_high": "$4,705,600",
+        "source_table": "T07-01"
+      },
+      {
+        "name": "Co-Brand",
+        "investment_low": "$896,200",
+        "investment_high": "$1,682,800",
+        "source_table": "T07-02"
+      },
+      {
+        "name": "In-Line / End Cap",
+        "investment_low": "$944,800",
+        "investment_high": "$1,942,800",
+        "source_table": "T07-03"
+      },
+      {
+        "name": "Mall Food Court",
+        "investment_low": "$655,720",
+        "investment_high": "$1,131,700",
+        "source_table": "T07-04"
+      },
+      {
+        "name": "Indoor MRS (Modular Retail System)",
+        "investment_low": "$348,400",
+        "investment_high": "$789,100",
+        "source_table": "T07-05"
+      },
+      {
+        "name": "Big-Box",
+        "investment_low": "$564,600",
+        "investment_high": "$979,100",
+        "source_table": "T07-06"
+      }
+    ],
+    "source_object": "03_tables.json",
+    "source_section": "T07-01 through T07-06",
+    "source_pages": [48, 49, 50, 51, 52],
+    "confidence": "high",
+    "status": "surfaced",
+    "notes": "All ranges exclude real estate acquisition costs. Traditional includes optional 2-story playground ($0-$245,000)."
+  },
+
+  "development_structure": {
+    "entry_paths": [
+      {
+        "name": "Target Reservation Agreement (TRA)",
+        "deposit": "$5,000",
+        "term": "Typically 1-1.5 years",
+        "exclusivity": "None",
+        "exhibit": "C1"
+      },
+      {
+        "name": "Multiple Target Reservation Agreement (MTRA)",
+        "deposit": "$10,000 per committed opening",
+        "term": "Typically 2-3 years",
+        "exclusivity": "None",
+        "exhibit": "C2"
+      },
+      {
+        "name": "Development Agreement",
+        "deposit": "$50,000 per committed restaurant (prepaid franchise fee)",
+        "term": "As agreed",
+        "exclusivity": "None (geographic Territory granted but not exclusive)",
+        "exhibit": "M1"
+      },
+      {
+        "name": "Carrols Refranchise Program",
+        "deposit": "5% of total purchase price",
+        "term": "N/A (acquisition of existing restaurants)",
+        "exclusivity": "None",
+        "exhibit": "F1/F2/F3"
+      },
+      {
+        "name": "Crown Your Career Program",
+        "deposit": "Purchase price (may be financed by BKC)",
+        "term": "N/A (BKC employee path to ownership)",
+        "exclusivity": "None",
+        "exhibit": "Z1/Z2/Z3/Z4"
+      }
+    ],
+    "source_object": "02_reader_report.md",
+    "source_section": "B. Pass 1 — Development Structure",
+    "source_pages": [29, 30, 31, 32, 33],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+
+  "initial_fees": {
+    "franchise_fee_standard": {
+      "value": "$50,000 for 20-year term",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Item 5",
+      "source_pages": [29],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "franchise_fee_minimum": {
+      "value": "$15,000 (prorated for shorter terms)",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Item 5",
+      "source_pages": [29],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "application_fee_individual": {
+      "value": "$250 per applicant",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [29, 35],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "application_fee_entity": {
+      "value": "Up to $5,000 per Entity",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [29, 35],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "training_fee": {
+      "value": "$7,500 per trainee",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [32, 35],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "tra_deposit": {
+      "value": "$5,000",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Item 5",
+      "source_pages": [31],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "mtra_deposit": {
+      "value": "$10,000 per committed opening",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Item 5",
+      "source_pages": [31],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "development_agreement_prepayment": {
+      "value": "$50,000 per committed restaurant",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Item 5",
+      "source_pages": [32],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "refundability": {
+      "value": "All fees nonrefundable except: TRA/MTRA deposit refundable if BKC proposes Target Area development and franchisee declines; Carrols deposit refundable within 30 days",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Item 5",
+      "source_pages": [33, 30],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+
+  "recurring_fees": {
+    "royalty": {
+      "value": "4.5% of monthly Gross Sales",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [34],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "advertising_contribution": {
+      "value": "Up to 4.5% of monthly Gross Sales (set at 4.5% as of 1/1/2025)",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [34],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "investment_spending_local_marketing": {
+      "value": "Up to 2.0% of Gross Sales (determined by DMA franchisees)",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [35],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "digital_services_fee": {
+      "value": "$110/restaurant/month + 1% monthly digital sales; capped at $4,500/restaurant/year",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [36],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "bk_university_training_material": {
+      "value": "$700 annually per Restaurant",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [36],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "service_desk_fee": {
+      "value": "$750-$1,200 per year per Restaurant",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [34],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "burger_king_foundation": {
+      "value": "$1,000 per Restaurant per year",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [38],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "gift_card_transaction_fee": {
+      "value": "Setup $40/restaurant; ~1.8% of redeemed sales",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [36],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "late_charges": {
+      "value": "18% per annum or max legal rate",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [34],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "combined_mandatory_minimum": {
+      "value": "9.0% of Gross Sales (royalty 4.5% + advertising 4.5%) before rent, digital, local marketing, and other assessments",
+      "source_object": "02_reader_report.md",
+      "source_section": "A. Executive Snapshot",
+      "source_pages": null,
+      "confidence": "high",
+      "status": "surfaced",
+      "notes": "Derived from Item 6 table. Actual combined burden is higher when including digital services fee, investment spending, BK University, service desk, and foundation contributions."
+    },
+    "royalty_reduction_programs": {
+      "value": "Multiple programs reduce royalty: 2024 DIP (2.5%→4.5% over 6 years), Development Agreement (A/B grade: 2.5% reduction Year 1, declining), RTF2 (4.5%-6.0% elected). D/F operators get no reductions.",
+      "source_object": "03_tables.json",
+      "source_section": "T06-02, T06-03, T06-04",
+      "source_pages": [39, 41, 42],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "remodel_penalty_surcharge": {
+      "value": "+3.0% royalty surcharge on all Gross Sales for missed remodel deadlines under RTF2, RTF1, or Midterm Remodel Forbearance",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Item 6",
+      "source_pages": [40, 41],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+
+  "training_burden": {
+    "required_before_opening": {
+      "value": "Yes — franchisee or appropriate individual(s) must complete BKC training program before opening",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 11",
+      "source_pages": [63, 66],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "training_location": {
+      "value": "Miami, FL or other BKC-designated locations; In-Restaurant Training at authorized Training Restaurants",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 11",
+      "source_pages": [66],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "training_fee": {
+      "value": "$7,500 per trainee",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [32, 35],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "servsafe_required": {
+      "value": "Yes — Operating Partner/Managing Owner, restaurant manager, and Managing Director must complete ServSafe before opening",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 11",
+      "source_pages": [67],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "training_table_with_subjects_and_hours": {
+      "value": null,
+      "source_object": "01_source_map.md",
+      "source_section": "Notable Observations #1",
+      "source_pages": [66, 67],
+      "confidence": "high",
+      "status": "missing",
+      "notes": "No formal training program table with Subject/Hours/Classroom columns was found in Item 11. Training described narratively only."
+    }
+  },
+
+  "tech_burden": {
+    "pos_and_kiosks": {
+      "value": "Franchisee must purchase own POS, inventory control, and freestanding kiosks. Estimated $20,000-$25,000.",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 11",
+      "source_pages": [48, 54],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "digital_menu_boards": {
+      "value": "Required. Sole-source supplier. If no outdoor digital menu board, must pay $200-$300/month for static menu board kit.",
+      "source_object": "03_tables.json",
+      "source_section": "T06-01",
+      "source_pages": [36, 55],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "digital_app_services": {
+      "value": "Mandatory Digital App Services Agreement (Exhibit V). BKC is sole supplier of ordering/delivery/loyalty platforms. Fee: $110/mo + 1% digital sales, capped $4,500/yr.",
+      "source_object": "04_exhibits.json",
+      "source_section": "EX-V",
+      "source_pages": [942, 956],
+      "confidence": "high",
+      "status": "partial",
+      "notes": "Agreement existence and fee confirmed. Full operative terms in Exhibit V not directly surfaced."
+    },
+    "network_services": {
+      "value": "Sole-source supplier. Required for all restaurants.",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 8",
+      "source_pages": [55],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "loyalty_program": {
+      "value": "Mandatory participation in Royal Perks Loyalty Program via BKC technology platforms. Customers earn/redeem Crowns at all locations.",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 16",
+      "source_pages": [81],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "delivery_platforms": {
+      "value": "Must offer delivery via BKC-approved third-party aggregators (e.g., Uber Eats) in serviced areas. All providers must be BKC-approved.",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 8",
+      "source_pages": [55, 81],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+
+  "supplier_control_economics": {
+    "approved_supplier_share_establishment": {
+      "value": "Approximately 65-90% of establishment costs",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 8",
+      "source_pages": [55],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "approved_supplier_share_operations": {
+      "value": "Approximately 30-60% of non-occupancy operating expenses",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 8",
+      "source_pages": [55],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "sole_source_items": {
+      "value": ["Network services", "Digital menu boards", "Gift Card services", "Cashless payments processing", "Quality assurance inspection services", "Technology platforms for ordering/delivery/loyalty (BK app/website)"],
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 8",
+      "source_pages": [55],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "bkc_revenue_from_franchisee_purchases": {
+      "value": "Approximately $227 million in 2024 (~16% of BKC total revenues of ~$1.427 billion)",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 8",
+      "source_pages": [57],
+      "confidence": "high",
+      "status": "surfaced",
+      "notes": "From unaudited internal BKC statements, not RBI consolidated."
+    },
+    "supplier_rebates_to_ad_fund": {
+      "value": "~8.4% of consolidated advertising fund revenue in 2024",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 8",
+      "source_pages": [57],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "purchasing_cooperative": {
+      "value": "RSI (Restaurant Services Inc.) — not-for-profit independent cooperative. 21-member Board (18 franchisees, 1 BKC, 1 minority, 1 independent). Issues patronage dividends.",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 8",
+      "source_pages": [57],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "officer_stock_holdings_in_suppliers": {
+      "value": "BKC officers own publicly traded shares in General Mills, Johnson & Johnson, Kraft Heinz, and PepsiCo (all approved suppliers)",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 8",
+      "source_pages": [57],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+
+  "territory_structure": {
+    "exclusive_territory_granted": {
+      "value": "No. Explicitly stated: 'You will not receive an exclusive territory.'",
+      "source_object": "02_reader_report.md",
+      "source_section": "D. Pass 3 — Item 12",
+      "source_pages": [72, 73],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "franchise_agreement_territory": {
+      "value": "Single location only. No area, territory, or protected customer base.",
+      "source_object": "02_reader_report.md",
+      "source_section": "D. Pass 3 — Item 12",
+      "source_pages": [73],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "development_agreement_territory": {
+      "value": "Geographic Territory granted but not exclusive. BKC may still develop or franchise other restaurants in the Territory.",
+      "source_object": "02_reader_report.md",
+      "source_section": "D. Pass 3 — Item 12",
+      "source_pages": [72],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "alternative_distribution_channels": {
+      "value": "BKC reserves all rights to sell BK branded products via grocery, convenience, internet, direct marketing, or any other channel in any territory. No compensation to franchisee.",
+      "source_object": "02_reader_report.md",
+      "source_section": "D. Pass 3 — Item 12",
+      "source_pages": [73],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "affiliate_brand_competition": {
+      "value": "Tim Hortons, Popeyes, and Firehouse Subs may operate in same markets. BKC not responsible for resolving inter-brand conflicts.",
+      "source_object": "02_reader_report.md",
+      "source_section": "D. Pass 3 — Item 12",
+      "source_pages": [74],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "relocation_right": {
+      "value": "No right to relocate without BKC's prior written approval",
+      "source_object": "02_reader_report.md",
+      "source_section": "D. Pass 3 — Item 12",
+      "source_pages": [72],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+
+  "noncompete": {
+    "during_term": {
+      "value": "May not own, operate, or have any interest in any other hamburger business. May not use BK System, marks, or trade secrets outside BK operations.",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [86],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "during_term_cyc_enhancement": {
+      "value": "Crown Your Career: no other business activity until later of 5th anniversary or loan repayment",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [86],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "post_term": {
+      "value": "1 year after termination/expiration, within 2 miles of the restaurant — no ownership, operation, or interest in any hamburger business",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [87],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "corporate_addendum_exception": {
+      "value": "Certain Contract Feeder franchisees under Corporate Addendum may operate competing fast-food businesses under limited conditions",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [80, 87],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+
+  "term_renewal_transfer_default_termination": {
+    "term": {
+      "value": "20 years for freestanding traditional. May be shorter for non-traditional or where property control is shorter.",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [82],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "renewal": {
+      "value": "No right of renewal. Option for successor FA (up to 20 years) conditioned on: compliance, property control, current requirements met, BKC approval, general release, signing then-current FA (terms may materially differ), successor fee, building upgrades, inspections. No successor for Big-Box or Delivery Restaurants.",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [82],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "transfer_conditions": {
+      "value": "BKC consent required. Buyer approved, training complete, all monies current, transfer fee ($2,000 + $500/additional), new franchisee training fee ($7,500), assignment of existing FA or signing then-current FA, general release by seller, inspection, current image compliance.",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [85],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "right_of_first_refusal": {
+      "value": "BKC and designee have right to purchase restaurant or any interest on same terms as third-party offer",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [86],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "termination_by_franchisee": {
+      "value": "No contractual right; only as permitted by applicable state law",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [82],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "termination_by_bkc_without_cause": {
+      "value": "Not applicable",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [82],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "curable_defaults": {
+      "value": {
+        "5_days": "Operational, quality, health/sanitation standards; sale of unapproved products; abandonment; insurance",
+        "10_days": "Non-payment of royalty or advertising fees",
+        "30_days": "Late reports; unapproved equipment/uniforms/decor; maintenance failures; failure to remodel; deleterious behavior; unsatisfied judgment; failure to restore; non-compliance with OP/MO/MD requirements",
+        "60_days": "Failure to pay bills; failure to comply with any other FA, lease, or related agreement provision",
+        "180_days": "Failure to meet minimum financial criteria per BKC financial policy"
+      },
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [83],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "non_curable_defaults": {
+      "value": "Bankruptcy; conviction of indictable offense (>1yr) or fraud; unfair competition; false statements; understatement of Gross Sales; failure to close for health/safety; unauthorized transfer; repeated breaches after notice; delivery aggregator termination (Delivery Restaurants); RTF program default",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [84],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "cross_defaults": {
+      "value": "CYC: default under any BK FA = default under all CYC agreements. Carrols Refranchise: default under any lease or agreement for any BK Restaurant in the refranchising transaction = default under this FA.",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [83, 84, 85],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "post_termination_obligations": {
+      "value": "Cease trademark use; de-identify restaurant; pay all amounts due including royalties and advertising for remainder of term; return MOD Manual and proprietary information",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [85],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "forum": {
+      "value": "US District Court for Southern District of Florida, or state court in Miami-Dade County, FL (subject to state law)",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [87],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "governing_law": {
+      "value": "Florida law (subject to state law)",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [87],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "death_or_disability": {
+      "value": "Heir must be approved or sell within 12 months. BKC option to operate/manage in interim.",
+      "source_object": "02_reader_report.md",
+      "source_section": "E. Pass 4 — Item 17",
+      "source_pages": [86],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "liquidated_damages": {
+      "value": null,
+      "source_object": null,
+      "source_section": null,
+      "source_pages": null,
+      "confidence": "low",
+      "status": "missing",
+      "notes": "Item 17 summary does not reference liquidated damages. Post-termination royalty/advertising obligation for remainder of term may function similarly. Full FA text (Exhibits D1/D2) not reviewed."
+    }
+  },
+
+  "item_18_public_figures": {
+    "value": "BKC does not use any public figures to promote or recommend its franchise.",
+    "source_object": "02_reader_report.md",
+    "source_section": "F. Pass 5 — Item 18",
+    "source_pages": [97],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+
+  "item_19_performance_summary": {
+    "section_a_sales_distributions": {
+      "period": "January 1, 2024 – December 31, 2024",
+      "traditional_franchisee_owned": {
+        "count": 4774,
+        "average_gross_sales": "$1,658,463",
+        "median_gross_sales": "$1,561,502",
+        "pct_at_or_above_average": "43%",
+        "high": "$5,833,717",
+        "low": "$271,485"
+      },
+      "traditional_company_owned": {
+        "count": 1063,
+        "average_gross_sales": "$1,730,667",
+        "median_gross_sales": "$1,638,579",
+        "pct_at_or_above_average": "43%",
+        "high": "$4,430,058",
+        "low": "$629,239"
+      },
+      "traditional_consolidated": {
+        "count": 5837,
+        "average_gross_sales": "$1,671,613",
+        "median_gross_sales": "$1,579,183"
+      },
+      "non_traditional_franchisee_owned": {
+        "count": 741,
+        "average_gross_sales": "$1,321,324",
+        "median_gross_sales": "$1,155,563",
+        "pct_at_or_above_average": "39%",
+        "high": "$7,387,029",
+        "low": "$208,320"
+      },
+      "fuel_co_branded": {
+        "full_size": {"count": 59, "average": "$1,446,035", "median": "$1,362,734"},
+        "large": {"count": 135, "average": "$1,256,658", "median": "$1,150,439"},
+        "small": {"count": 34, "average": "$1,281,881", "median": "$1,183,684"},
+        "kiosk": {"count": 83, "average": "$973,531", "median": "$883,223"}
+      },
+      "source_object": "03_tables.json",
+      "source_section": "T19-01 through T19-04",
+      "source_pages": [99, 100, 101, 102, 103],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "section_b_remodel_uplift": {
+      "sample_size": 893,
+      "sample_definition": "Traditional Restaurants, CAPEX $650,000+, remodeled to Modern Image between 1/1/2018 and 12/31/2023",
+      "overall_average_sales_uplift": "12.3%",
+      "overall_median_sales_uplift": "10.7%",
+      "overall_average_traffic_uplift": "11.1%",
+      "by_scope": {
+        "full": {"count": 840, "avg_sales_uplift": "11.4%"},
+        "scrape_rebuild": {"count": 53, "avg_sales_uplift": "26.1%"}
+      },
+      "by_dt_conversion": {
+        "no_conversion": {"count": 577, "avg_sales_uplift": "10.3%"},
+        "conversion_to_double_dt": {"count": 316, "avg_sales_uplift": "15.8%"}
+      },
+      "multi_year_persistence": {
+        "year_1_avg": "12.3%",
+        "year_2_avg": "12.6%",
+        "year_3_avg": "13.4%",
+        "note": "Uplift persists and slightly increases over 3 years"
+      },
+      "source_object": "03_tables.json",
+      "source_section": "T19-05 through T19-10",
+      "source_pages": [104, 105, 106, 107, 108, 109, 110],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "cost_data_disclosed": {
+      "value": "No. Sales figures do not reflect costs of sales, operating expenses, or other costs. No income, profit, or cost data disclosed.",
+      "source_object": "02_reader_report.md",
+      "source_section": "F. Pass 5 — Item 19",
+      "source_pages": [98, 111],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+
+  "item_20_outlet_summary": {
+    "systemwide_2024": {
+      "franchised_start": 6640,
+      "franchised_end": 5524,
+      "company_owned_start": 138,
+      "company_owned_end": 1177,
+      "total_end": 6701,
+      "net_change": -77
+    },
+    "franchise_outlets_2024": {
+      "opened": 63,
+      "terminations": 0,
+      "non_renewals": 49,
+      "reacquired_by_franchisor": 1061,
+      "ceased_other": 69
+    },
+    "company_owned_2024": {
+      "opened": 1,
+      "reacquired_from_franchisee": 1061,
+      "closed": 12,
+      "sold_to_franchisee": 11
+    },
+    "projected_openings_next_year": {
+      "franchised": 48,
+      "company_owned": 2,
+      "signed_not_opened": 0
+    },
+    "transfers_2024": 254,
+    "carrols_acquisition_note": "On May 16, 2024, RBI acquired Carrols Restaurant Group (1,023 restaurants). This single transaction accounts for nearly all 2024 reacquisitions and makes year-over-year comparisons misleading without context.",
+    "ceased_operations_count_exhibit_o3": 1433,
+    "franchisee_gag_clause": "Some current and former franchisees signed provisions restricting their ability to speak openly about their experience in the last three fiscal years.",
+    "independent_franchisee_association": "National Franchisee Association (NFA), Kennesaw, GA",
+    "source_object": "03_tables.json",
+    "source_section": "T20-01 through T20-05",
+    "source_pages": [112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+
+  "item_21_financial_statements": {
+    "auditor": {
+      "value": "KPMG LLP",
+      "source_object": "01_source_map.md",
+      "source_section": "Section 7 — Exhibit Q Detail",
+      "source_pages": [805, 807],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "audit_opinion": {
+      "value": "Clean opinion on both financial statements and internal controls for RBI and RBILP",
+      "source_object": "02_reader_report.md",
+      "source_section": "F. Pass 5 — Item 21",
+      "source_pages": [805, 807, 855, 857],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "guarantor_structure": {
+      "value": "RBILP guarantees BKC obligations for franchisees in CA, IL, MD, ND, RI, VA, WA. RBI guarantees for all other states.",
+      "source_object": "02_reader_report.md",
+      "source_section": "F. Pass 5 — Item 21",
+      "source_pages": [127],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "financial_entity": {
+      "value": "Restaurant Brands International Inc. (RBI) and Restaurant Brands International Limited Partnership (RBILP) — consolidated across all four brands. No standalone BKC financials.",
+      "source_object": "02_reader_report.md",
+      "source_section": "F. Pass 5 — Item 21",
+      "source_pages": [127, 808],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "rbi_highlights": {
+      "total_revenue_2024": "$8,406M",
+      "income_from_operations_2024": "$2,419M",
+      "net_income_2024": "$1,445M",
+      "total_assets_2024": "$24,632M",
+      "long_term_debt_2024": "$13,455M",
+      "total_equity_2024": "$4,843M",
+      "cash_2024": "$1,334M",
+      "operating_cash_flow_2024": "$1,503M",
+      "source_table": "T21-01, T21-02, T21-03"
+    },
+    "source_object": "03_tables.json",
+    "source_section": "T21-01, T21-02, T21-03",
+    "source_pages": [808, 809, 812],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+
+  "key_exhibits": [
+    {"exhibit": "D1/D2", "title": "Franchise Agreements (Individual and Entity)", "priority": "critical", "surfaced": "partial"},
+    {"exhibit": "G1", "title": "Lease/Sublease Agreement (BKL)", "priority": "critical", "surfaced": "partial"},
+    {"exhibit": "M1", "title": "Development Agreement", "priority": "critical", "surfaced": "partial"},
+    {"exhibit": "Q", "title": "Financial Statements + Guarantees (RBI/RBILP)", "priority": "critical", "surfaced": "partial"},
+    {"exhibit": "X1", "title": "Reclaim the Flame 2 Master Program Agreement", "priority": "critical", "surfaced": "partial"},
+    {"exhibit": "Y1", "title": "Fuel the Flame Co-Investment Agreement", "priority": "critical", "surfaced": "partial"},
+    {"exhibit": "V", "title": "Digital App Services Agreement", "priority": "high", "surfaced": "no"},
+    {"exhibit": "O1/O2/O3", "title": "Franchisee and Location Lists", "priority": "high", "surfaced": "partial"},
+    {"exhibit": "P", "title": "State-Specific Addenda (7-11 states)", "priority": "high", "surfaced": "partial"},
+    {"exhibit": "F2/F3", "title": "Carrols Refranchise APA and Addendum", "priority": "high", "surfaced": "partial"},
+    {"exhibit": "Z1-Z4", "title": "Crown Your Career Program (FA addenda, note, security)", "priority": "high", "surfaced": "partial"}
+  ],
+
+  "unresolveds": [
+    {
+      "id": "UNR-01",
+      "description": "No training program table found in Item 11. Training described narratively. Possible that a formal table exists in Exhibits D1/D2 or Exhibit U (MOD Manual TOC).",
+      "source_object": "01_source_map.md",
+      "source_section": "Notable Observations #1",
+      "impact": "Cannot independently verify training hours, subjects, or classroom/on-the-job split.",
+      "status": "missing"
+    },
+    {
+      "id": "UNR-02",
+      "description": "Item 19 references Modern Image vs Legacy Image comparison within Section A sales distributions (page 99), but no separate table for this comparison was located. The comparison may be embedded in the narrative rather than a standalone table.",
+      "source_object": "01_source_map.md",
+      "source_section": "Notable Observations / Section 4 Item 19",
+      "impact": "Cannot confirm whether Modern Image restaurants outperform Legacy Image in current AUV.",
+      "status": "missing"
+    },
+    {
+      "id": "UNR-03",
+      "description": "Guarantee of Performance documents (RBI and RBILP) are referenced in Item 21 as 'included at Exhibit Q' but no separately-headed guarantee pages were found in the Exhibit Q scan. They may be interleaved with or follow the financial statement notes.",
+      "source_object": "01_source_map.md",
+      "source_section": "Section 7 — Exhibit Q Detail, Note",
+      "impact": "Guarantee text and scope not independently verified beyond Item 21 description.",
+      "status": "partial"
+    },
+    {
+      "id": "UNR-04",
+      "description": "Items 2, 3, and 4 (Business Experience, Litigation, Bankruptcy) were not read in detail. Item 3 spans 8 pages (20-27) and appears to contain substantial litigation history.",
+      "source_object": "02_reader_report.md",
+      "source_section": "G. Not Directly Surfaced",
+      "impact": "Cannot assess litigation risk, key management backgrounds, or bankruptcy history.",
+      "status": "missing"
+    },
+    {
+      "id": "UNR-05",
+      "description": "BKC standalone revenue figure ($1.427 billion) appears in Item 8 from unaudited internal financial statements, but no standalone BKC financial statements are included in the FDD. The relationship between this figure and the consolidated RBI figures is not reconciled.",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 8",
+      "impact": "Cannot isolate BKC-specific financial performance from the RBI consolidated statements.",
+      "status": "partial"
+    },
+    {
+      "id": "UNR-06",
+      "description": "Full operative text of Franchise Agreements (D1: 48 pages, D2: 42 pages), Lease/Sublease (G1: 41 pages), and Development Agreement (M1: 24 pages) was not read. Item 17 summaries were used instead.",
+      "source_object": "02_reader_report.md",
+      "source_section": "G. Not Directly Surfaced",
+      "impact": "Specific contract provisions, defined terms, and detailed mechanics may differ from Item 17 summaries.",
+      "status": "partial"
+    },
+    {
+      "id": "UNR-07",
+      "description": "Fuel the Flame 4-Wall EBITDA benchmark ($230,000) referenced in Item 6 is 'as calculated by BKC in accordance with the terms of such agreement.' The actual calculation methodology is in Exhibit Y1 which was not read.",
+      "source_object": "02_reader_report.md",
+      "source_section": "B. Pass 1 — Item 6",
+      "impact": "Cannot verify how 4-Wall EBITDA is defined or what costs are included/excluded.",
+      "status": "partial"
+    },
+    {
+      "id": "UNR-08",
+      "description": "Value Menu pricing restriction: BKC can set maximum prices on Value Menu items. Specific current Value Menu items and maximum prices are not disclosed in the FDD Items reviewed.",
+      "source_object": "02_reader_report.md",
+      "source_section": "C. Pass 2 — Item 16",
+      "impact": "Cannot assess margin impact of Value Menu pricing caps.",
+      "status": "missing"
+    }
+  ],
+
+  "contradictions": [
+    {
+      "id": "CON-01",
+      "description": "Item 7 cover page states total investment range as '$348,400 to $4,705,600' but this spans all facility types (Big-Box low to Traditional Freestanding high). The cover page does not clarify this is a multi-format range, which could mislead a reader into thinking a single format has this range.",
+      "field_a": "Cover page total investment: $348,400 to $4,705,600",
+      "field_b": "Item 7 tables show 6 distinct formats with non-overlapping ranges",
+      "source_a": "PDF page 1",
+      "source_b": "03_tables.json T07-01 through T07-06",
+      "resolution": "Not a true contradiction — the cover page range is the combined min/max across all formats. But the presentation without format context is potentially misleading.",
+      "status": "noted"
+    },
+    {
+      "id": "CON-02",
+      "description": "Item 20 Table 3 total for 2024 shows 'Reacquired by Franchisor: 1,061' but Item 20 Table 4 also shows 'Reacquired from Franchisee: 1,061.' The Carrols acquisition asterisk note says '1,023 franchised Restaurants' became company-owned. The difference between 1,061 and 1,023 (38 units) is unexplained — it may represent additional non-Carrols reacquisitions or timing differences.",
+      "field_a": "Carrols acquisition: 1,023 restaurants (per asterisk note)",
+      "field_b": "Reacquired column total: 1,061 (per Tables 3 and 4)",
+      "source_a": "03_tables.json T20-01 note",
+      "source_b": "03_tables.json T20-03, T20-04",
+      "resolution": "Not resolved. The 38-unit gap may represent pre-Carrols or non-Carrols reacquisitions in 2024 (e.g., Utah 17 in 2023, Montana 12 in 2023 were pre-Carrols). Some of the 2024 reacquisitions outside Carrols states are likely separate transactions.",
+      "status": "unresolved"
+    },
+    {
+      "id": "CON-03",
+      "description": "Item 6 Footnote 2 states 'Base Fee means the greater of 4.5% of Gross Sales or the then-current standard (undiscounted) royalty fee required for new franchisees.' This implies the standard royalty could exceed 4.5% in the future, even though 4.5% is presented as the standard rate throughout the FDD.",
+      "field_a": "Current standard royalty: 4.5%",
+      "field_b": "Base Fee definition allows for future increase above 4.5%",
+      "source_a": "03_tables.json T06-01",
+      "source_b": "02_reader_report.md Item 6 Footnote 2",
+      "resolution": "Not a contradiction but a forward-looking risk. The Base Fee definition creates a mechanism for the effective royalty floor to increase without amending the Franchise Agreement.",
+      "status": "noted"
+    }
+  ]
+}
