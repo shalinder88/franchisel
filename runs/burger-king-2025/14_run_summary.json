@@ -1,0 +1,121 @@
+{
+  "brand": "Burger King",
+  "filing_id": "637918",
+  "fdd_date": "03/2025, as amended 01/2026",
+  "extraction_date": "2026-04-05",
+  "pdf_pages": 1057,
+  "pages_read_estimate": 416,
+  "runtime_measurement_status": "not_instrumented",
+  "interactive_runtime_seconds": null,
+  "automated_runtime_seconds": null,
+  "tables_count": 32,
+  "table_rows_count": 334,
+  "table_notes_count": 110,
+  "exhibits_mapped_count": 55,
+  "exhibits_deep_read_count": 6,
+  "exhibits_deep_read_list": [
+    "D1",
+    "D2",
+    "V",
+    "X1",
+    "Y1",
+    "O1"
+  ],
+  "state_addenda_count": 9,
+  "state_addenda_list": [
+    "CA",
+    "HI",
+    "IL",
+    "MD",
+    "MN",
+    "NY",
+    "ND",
+    "RI",
+    "WA"
+  ],
+  "litigation_count": 19,
+  "litigation_breakdown": {
+    "pending": 10,
+    "franchisor_initiated": 1,
+    "concluded": 8
+  },
+  "franchisee_entities_count": 604,
+  "canonical_families_count": 30,
+  "evidence_grounded_fields_count": 118,
+  "evidence_grounded_fields_by_status": {
+    "surfaced": 114,
+    "missing": 3,
+    "partial": 1
+  },
+  "retry_tasks_generated_count": 10,
+  "retries_executed_count": 10,
+  "item19_complete": true,
+  "item20_complete": true,
+  "item21_complete": true,
+  "high_risk_extraction_omissions_remaining_count": 2,
+  "high_risk_extraction_omissions_remaining": [
+    "Exhibit G1 \u2014 Lease/Sublease Agreement (41 pages, proxied via Item 6/17)",
+    "Exhibit M1 \u2014 Development Agreement (24 pages, proxied via Item 17)"
+  ],
+  "high_risk_business_risk_flags_count": 6,
+  "high_risk_business_risk_flags": [
+    "RTF2 mandatory remodel with +3.0% royalty surcharge",
+    "No exclusive territory at any level",
+    "9.0% combined royalty + advertising floor",
+    "US system contracting (-77 net units in 2024)",
+    "BKC owns all POS/ordering/digital data and profits from third-party sales",
+    "Arrington no-hire class action approaching mediation"
+  ],
+  "unresolved_count": 6,
+  "contradictions_count": 3,
+  "base_composite_score": 9.1,
+  "enriched_v1_composite_score": null,
+  "enriched_v2_composite_score": null,
+  "final_score_version": "base",
+  "production_usable": true,
+  "production_blockers_remaining": 0,
+  "production_blockers_closed": [
+    "Franchise Agreement D1/D2 (90 pages) \u2014 fully read",
+    "Digital Services Agreement V (15 pages) \u2014 fully read",
+    "Franchisee list O1 (62 pages) \u2014 extracted with concentration analysis"
+  ],
+  "deployment": {
+    "target": "franchisel.com",
+    "method": "git push to main, Vercel auto-deploy",
+    "commit": "94b2d47",
+    "branch": "main",
+    "brand_slug": "burger-king",
+    "pages_generated": [
+      "/brands/burger-king",
+      "/brands/burger-king/diligence",
+      "/brands/burger-king/memo",
+      "/brands/burger-king/lender-pack"
+    ]
+  },
+  "output_files": {
+    "count": 19,
+    "total_bytes": 365840,
+    "directory": "runs/burger-king-2025/",
+    "files": [
+      "01_source_map.md",
+      "02_reader_report.md",
+      "03_tables.json",
+      "04_exhibits.json",
+      "05_canonical.json",
+      "06_coverage_audit.md",
+      "07_retry_tasks.md",
+      "08_final_report.md",
+      "08_retry_litigation.md",
+      "09_final_canonical.json",
+      "09_retry_management_bankruptcy.md",
+      "10_retry_state_addenda.md",
+      "10_scorecard.md",
+      "11_fa_deep_read.md",
+      "11_retry_guarantee_and_remaining.md",
+      "12_digital_services.md",
+      "12_retry_rtf2.md",
+      "13_franchisee_list.json",
+      "13_retry_fuel_the_flame.md"
+    ]
+  }
+}
