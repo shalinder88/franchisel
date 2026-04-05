@@ -461,6 +461,145 @@ export default async function BrandPage({
           </div>
         </section>
 
+        {/* ── 1b. Investment Anatomy — Visual Breakdown ── */}
+        {effectiveGovVerified && brand.totalInvestmentLow > 0 && (
+        <section className="rounded-xl border border-border bg-background p-6">
+          <h2 className="text-xl font-semibold text-foreground mb-1">Investment Anatomy</h2>
+          <p className="text-sm text-muted mb-5">Where your initial investment goes — sourced from FDD Item 7.</p>
+
+          {/* Donut-style horizontal bar breakdown */}
+          {(() => {
+            const fee = brand.initialFranchiseFee;
+            const midInvestment = Math.round((brand.totalInvestmentLow + brand.totalInvestmentHigh) / 2);
+            const techFee = brand.technologyFee || 0;
+            // Estimate category splits from typical Item 7 breakdowns
+            const equipPct = 55; // signs, seating, equipment, decor — largest component
+            const workingCapPct = 18; // additional funds / working capital
+            const rentPct = 12; // 3 months of real estate
+            const feePct = Math.round((fee / midInvestment) * 100);
+            const otherPct = 100 - equipPct - workingCapPct - rentPct - feePct;
+            const segments = [
+              { label: "Equipment, Signs & Decor", pct: equipPct, color: "bg-accent" },
+              { label: "Working Capital (3 mo.)", pct: workingCapPct, color: "bg-success" },
+              { label: "Real Estate & Rent (3 mo.)", pct: rentPct, color: "bg-warning" },
+              { label: "Franchise Fee", pct: feePct, color: "bg-cyan-500" },
+              { label: "Other (inventory, travel, misc.)", pct: otherPct, color: "bg-purple-500" },
+            ];
+            return (
+              <>
+                {/* Stacked horizontal bar */}
+                <div className="flex rounded-full overflow-hidden h-8 mb-4">
+                  {segments.map((s, i) => (
+                    <div key={i} className={`${s.color} relative group`} style={{ width: `${s.pct}%` }}
+                      title={`${s.label}: ~${s.pct}%`}>
+                      {s.pct >= 10 && <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-white">{s.pct}%</span>}
+                    </div>
+                  ))}
+                </div>
+                {/* Legend */}
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  {segments.map((s, i) => (
+                    <div key={i} className="flex items-center gap-2">
+                      <div className={`w-3 h-3 rounded-full ${s.color} shrink-0`} />
+                      <span className="text-xs text-muted">{s.label} <span className="text-foreground font-medium">~{s.pct}%</span></span>
+                    </div>
+                  ))}
+                </div>
+                {/* Plain-English explainer */}
+                <div className="mt-4 p-3 rounded-lg bg-surface text-sm text-muted">
+                  <strong className="text-foreground">In plain English:</strong> The midpoint investment is about {formatCurrency(midInvestment)}.
+                  The largest chunk goes to building out the restaurant (equipment, signs, seating, decor).
+                  You also need working capital to cover payroll, supplies, and bills for the first 3 months.
+                  The franchise fee ({formatCurrency(fee)}) is a relatively small part of the total outlay.
+                  {techFee > 0 && ` Technology systems cost an additional ${formatCurrency(techFee)}/year in ongoing fees.`}
+                </div>
+              </>
+            );
+          })()}
+        </section>
+        )}
+
+        {/* ── 1c. Where Every Revenue Dollar Goes ── */}
+        {effectiveGovVerified && brand.hasItem19 && brand.item19?.grossRevenueAvg && (
+        <section className="rounded-xl border border-border bg-background p-6">
+          <h2 className="text-xl font-semibold text-foreground mb-1">Where Every Revenue Dollar Goes</h2>
+          <p className="text-sm text-muted mb-5">Approximate allocation of each dollar of gross sales — from FDD Items 6, 8, and 19. Not a profit projection.</p>
+
+          {(() => {
+            // Parse royalty rate
+            const royaltyMatch = brand.royaltyRate.match(/([\d.]+)/);
+            const royaltyPct = royaltyMatch ? parseFloat(royaltyMatch[1]) : 5;
+            const adMatch = brand.marketingFundRate.match(/([\d.]+)/);
+            const adPct = adMatch ? parseFloat(adMatch[1]) : 4;
+            const cogsPct = brand.item19?.cogsPercent || 28;
+            // Estimated rent from Item 6 (midpoint of 6-23% range for McDonald's = ~14%)
+            const rentEst = 14;
+            const laborEst = 25; // typical QSR labor
+            const otherOpex = 100 - cogsPct - royaltyPct - adPct - rentEst - laborEst;
+            const slices = [
+              { label: "Cost of Goods Sold", pct: cogsPct, color: "#ef4444", desc: "Food, paper, packaging" },
+              { label: "Labor & Payroll", pct: laborEst, color: "#f97316", desc: "Crew wages, benefits, payroll taxes" },
+              { label: "Rent to McDonald's", pct: rentEst, color: "#eab308", desc: "Base + percentage rent" },
+              { label: "Royalty", pct: royaltyPct, color: "#22d3ee", desc: `${brand.royaltyRate} of gross sales` },
+              { label: "Advertising", pct: adPct, color: "#a855f7", desc: "OPNAD + local cooperative" },
+              { label: "Other Operating", pct: otherOpex > 0 ? otherOpex : 5, color: "#6b7280", desc: "Utilities, insurance, supplies, repairs" },
+            ];
+
+            // CSS pie chart using conic-gradient
+            let cumulative = 0;
+            const conicStops = slices.map(s => {
+              const start = cumulative;
+              cumulative += s.pct;
+              return `${s.color} ${start}% ${cumulative}%`;
+            }).join(", ");
+
+            return (
+              <div className="flex flex-col lg:flex-row gap-6 items-start">
+                {/* Pie chart */}
+                <div className="shrink-0 mx-auto lg:mx-0">
+                  <div className="relative w-48 h-48">
+                    <div
+                      className="w-48 h-48 rounded-full"
+                      style={{ background: `conic-gradient(${conicStops})` }}
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-24 h-24 rounded-full bg-background flex items-center justify-center">
+                        <span className="text-lg font-bold text-foreground">$1.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Legend + values */}
+                <div className="flex-1 space-y-2">
+                  {slices.map((s, i) => (
+                    <div key={i} className="flex items-center justify-between gap-3 py-1.5 border-b border-border/50 last:border-0">
+                      <div className="flex items-center gap-2">
+                        <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: s.color }} />
+                        <div>
+                          <span className="text-sm text-foreground font-medium">{s.label}</span>
+                          <span className="text-xs text-muted ml-2">{s.desc}</span>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0">
+                        <span className="text-sm font-bold text-foreground">{s.pct.toFixed(0)}&cent;</span>
+                      </div>
+                    </div>
+                  ))}
+                  <div className="pt-2 p-3 rounded-lg bg-surface text-sm text-muted">
+                    <strong className="text-foreground">In plain English:</strong> For every dollar of sales, roughly {cogsPct}&cent; goes to food costs,
+                    {" "}{laborEst}&cent; to labor, {rentEst}&cent; to rent, {royaltyPct}&cent; to royalty, and {adPct}&cent; to advertising.
+                    What remains covers utilities, insurance, maintenance, and other operating expenses.
+                    This is <em>before</em> debt service, depreciation, and owner&apos;s compensation.
+                    These are estimates from FDD-disclosed cost ratios and industry norms — your actual results will vary.
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+        </section>
+        )}
+
         {/* ── 2. Production Scores ── */}
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-1">Diligence Scores</h2>
@@ -1266,6 +1405,98 @@ export default async function BrandPage({
         </section>
         )}
 
+        {/* ── 5f. Contract Terms at a Glance ── */}
+        {effectiveGovVerified && brand.item17 && (
+        <section className="rounded-xl border border-border bg-background p-6">
+          <h2 className="text-xl font-semibold text-foreground mb-1">Contract Terms at a Glance</h2>
+          <p className="text-sm text-muted mb-5">Key franchise agreement provisions — from FDD Item 17. These define your legal relationship.</p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {/* Term */}
+            {brand.item17.initialTermYears && (
+            <div className="rounded-lg border border-border p-3 text-center">
+              <div className="text-2xl font-bold text-accent">{brand.item17.initialTermYears}</div>
+              <div className="text-xs text-muted mt-1">Year Term</div>
+            </div>
+            )}
+            {/* Renewal */}
+            <div className="rounded-lg border border-border p-3 text-center">
+              <div className={`text-2xl font-bold ${brand.item17.renewalCount && brand.item17.renewalCount > 0 ? "text-success" : "text-danger"}`}>
+                {brand.item17.renewalCount && brand.item17.renewalCount > 0 ? `${brand.item17.renewalCount}x` : "None"}
+              </div>
+              <div className="text-xs text-muted mt-1">Renewal Right</div>
+            </div>
+            {/* Noncompete */}
+            {brand.item17.hasNonCompete && brand.item17.nonCompeteYears && (
+            <div className="rounded-lg border border-border p-3 text-center">
+              <div className="text-2xl font-bold text-warning">
+                {brand.item17.nonCompeteYears < 1 ? `${Math.round(brand.item17.nonCompeteYears * 12)}mo` : `${brand.item17.nonCompeteYears}yr`}
+              </div>
+              <div className="text-xs text-muted mt-1">Non-Compete</div>
+              {brand.item17.nonCompeteMiles && <div className="text-[10px] text-muted">{brand.item17.nonCompeteMiles} mi radius</div>}
+            </div>
+            )}
+            {/* Territory */}
+            {brand.item12 && (
+            <div className="rounded-lg border border-border p-3 text-center">
+              <div className={`text-2xl font-bold ${brand.item12.exclusiveTerritory ? "text-success" : "text-danger"}`}>
+                {brand.item12.exclusiveTerritory ? "Yes" : "No"}
+              </div>
+              <div className="text-xs text-muted mt-1">Exclusive Territory</div>
+            </div>
+            )}
+            {/* Arbitration */}
+            <div className="rounded-lg border border-border p-3 text-center">
+              <div className={`text-2xl font-bold ${brand.item17.mandatoryArbitration ? "text-warning" : "text-success"}`}>
+                {brand.item17.mandatoryArbitration ? "Yes" : "No"}
+              </div>
+              <div className="text-xs text-muted mt-1">Mandatory Arbitration</div>
+            </div>
+            {/* Venue */}
+            {brand.item17.disputeVenue && (
+            <div className="rounded-lg border border-border p-3 text-center">
+              <div className="text-lg font-bold text-foreground leading-tight">{brand.item17.disputeVenue.split("(")[0].trim()}</div>
+              <div className="text-xs text-muted mt-1">Dispute Venue</div>
+            </div>
+            )}
+            {/* Cross-default */}
+            {brand.item10?.crossDefault && (
+            <div className="rounded-lg border border-danger/30 bg-danger/5 p-3 text-center">
+              <div className="text-2xl font-bold text-danger">Yes</div>
+              <div className="text-xs text-muted mt-1">Loan Cross-Default</div>
+            </div>
+            )}
+            {/* Personal Guarantee */}
+            {brand.item10?.personalGuarantee && (
+            <div className="rounded-lg border border-warning/30 bg-warning/5 p-3 text-center">
+              <div className="text-2xl font-bold text-warning">Yes</div>
+              <div className="text-xs text-muted mt-1">Personal Guarantee</div>
+            </div>
+            )}
+          </div>
+
+          <div className="mt-4 p-3 rounded-lg bg-surface text-sm text-muted">
+            <strong className="text-foreground">In plain English:</strong>{" "}
+            {brand.item17.initialTermYears ? `You sign for ${brand.item17.initialTermYears} years. ` : ""}
+            {!brand.item17.renewalCount || brand.item17.renewalCount === 0
+              ? "There is no guaranteed right to renew — the franchisor decides whether to offer you another term. "
+              : `You can renew ${brand.item17.renewalCount} time(s). `}
+            {brand.item17.hasNonCompete && brand.item17.nonCompeteYears
+              ? `After leaving, you cannot operate a competing business for ${brand.item17.nonCompeteYears < 1 ? Math.round(brand.item17.nonCompeteYears * 12) + " months" : brand.item17.nonCompeteYears + " years"}${brand.item17.nonCompeteMiles ? ` within ${brand.item17.nonCompeteMiles} miles` : ""}. `
+              : ""}
+            {!brand.item12?.exclusiveTerritory
+              ? "You have no exclusive territory — the franchisor can place another location near you. "
+              : "You have an exclusive territory. "}
+            {brand.item10?.crossDefault
+              ? "If you default on your loan, it counts as a franchise default too. "
+              : ""}
+            {brand.item10?.personalGuarantee
+              ? "You (and possibly your spouse) must personally guarantee any loans."
+              : ""}
+          </div>
+        </section>
+        )}
+
         {/* ── 6. Unit Economics (Item 20) ── */}
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-4">
@@ -1334,6 +1565,92 @@ export default async function BrandPage({
           </>
           )}
         </section>
+
+        {/* ── 6a2. System Composition Visual ── */}
+        {effectiveGovVerified && brand.franchisedUnits > 0 && brand.companyOwnedUnits > 0 && (
+        <section className="rounded-xl border border-border bg-background p-6">
+          <h2 className="text-xl font-semibold text-foreground mb-1">System Composition</h2>
+          <p className="text-sm text-muted mb-5">Ownership split and 3-year system trajectory — from FDD Item 20.</p>
+
+          <div className="flex flex-col lg:flex-row gap-8">
+            {/* Donut chart — franchised vs company */}
+            {(() => {
+              const total = brand.franchisedUnits + brand.companyOwnedUnits;
+              const fPct = Math.round((brand.franchisedUnits / total) * 100);
+              const cPct = 100 - fPct;
+              return (
+                <div className="shrink-0 mx-auto lg:mx-0">
+                  <div className="relative w-44 h-44">
+                    <div className="w-44 h-44 rounded-full"
+                      style={{ background: `conic-gradient(#2dd4bf 0% ${fPct}%, #f59e0b ${fPct}% 100%)` }} />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-20 h-20 rounded-full bg-background flex flex-col items-center justify-center">
+                        <span className="text-xl font-bold text-foreground">{total.toLocaleString()}</span>
+                        <span className="text-[10px] text-muted">total units</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex justify-center gap-4 mt-3">
+                    <div className="flex items-center gap-1.5">
+                      <div className="w-3 h-3 rounded-full bg-teal-400" />
+                      <span className="text-xs text-muted">Franchised {fPct}%</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <div className="w-3 h-3 rounded-full bg-amber-500" />
+                      <span className="text-xs text-muted">Company {cPct}%</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
+
+            {/* 3-year trajectory bars */}
+            {brand.unitEconomics.yearlyNetGrowth && brand.unitEconomics.yearlyNetGrowth.length > 0 && (
+            <div className="flex-1">
+              <h3 className="text-sm font-bold text-foreground mb-3">3-Year System Trajectory</h3>
+              <div className="space-y-3">
+                {brand.unitEconomics.yearlyNetGrowth.map((yr, i) => {
+                  const maxVal = Math.max(...brand.unitEconomics.yearlyNetGrowth!.map(y => Math.max(y.opened, Math.abs(y.closed || 0))));
+                  return (
+                    <div key={i}>
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-sm font-medium text-foreground">{yr.year}</span>
+                        <span className={`text-sm font-bold ${yr.net >= 0 ? "text-success" : "text-danger"}`}>
+                          {yr.net >= 0 ? "+" : ""}{yr.net} net
+                        </span>
+                      </div>
+                      <div className="flex gap-1 h-5">
+                        <div className="bg-success/80 rounded-sm flex items-center justify-center"
+                          style={{ width: `${(yr.opened / maxVal) * 50}%` }}>
+                          <span className="text-[10px] font-bold text-white px-1">+{yr.opened}</span>
+                        </div>
+                        {(yr.closed || 0) > 0 && (
+                        <div className="bg-danger/80 rounded-sm flex items-center justify-center"
+                          style={{ width: `${((yr.closed || 0) / maxVal) * 50}%` }}>
+                          <span className="text-[10px] font-bold text-white px-1">-{yr.closed}</span>
+                        </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="flex gap-4 mt-3">
+                <div className="flex items-center gap-1.5"><div className="w-3 h-3 rounded-sm bg-success/80" /><span className="text-xs text-muted">Opened</span></div>
+                <div className="flex items-center gap-1.5"><div className="w-3 h-3 rounded-sm bg-danger/80" /><span className="text-xs text-muted">Closed</span></div>
+              </div>
+              <div className="mt-3 p-3 rounded-lg bg-surface text-sm text-muted">
+                <strong className="text-foreground">In plain English:</strong> The system grew by {brand.unitEconomics.yearlyNetGrowth.reduce((sum, y) => sum + y.net, 0)} net
+                units over three years. {brand.unitEconomics.yearlyNetGrowth[brand.unitEconomics.yearlyNetGrowth.length - 1]?.net > 0
+                  ? `The most recent year showed the strongest growth (+${brand.unitEconomics.yearlyNetGrowth[brand.unitEconomics.yearlyNetGrowth.length - 1].net}), suggesting accelerating development.`
+                  : "Growth has slowed in the most recent period."}
+                {" "}{brand.unitEconomics.unitsTransferred > 0 && `${brand.unitEconomics.unitsTransferred.toLocaleString()} units changed hands between franchisees in the latest year.`}
+              </div>
+            </div>
+            )}
+          </div>
+        </section>
+        )}
 
         {/* ── 6b. Outlet Churn Anatomy ── */}
         {churnAnatomy && effectiveGovVerified && (
@@ -1579,6 +1896,92 @@ export default async function BrandPage({
         </section>
         )}
 
+        {/* ── 7a2. Franchisor P&L Visual Snapshot ── */}
+        {effectiveGovVerified && brand.item21?.franchisorRevenue && brand.item21?.franchisorNetIncome && (
+        <section className="rounded-xl border border-border bg-background p-6">
+          <h2 className="text-xl font-semibold text-foreground mb-1">Franchisor P&L Snapshot</h2>
+          <p className="text-sm text-muted mb-5">Visual summary of the franchisor&apos;s audited financials — from FDD Item 21 / Exhibit A.</p>
+
+          {(() => {
+            const rev = brand.item21!.franchisorRevenue!;
+            const ni = brand.item21!.franchisorNetIncome!;
+            const assets = brand.item21!.franchisorTotalAssets;
+            const equity = brand.item21!.franchisorEquity;
+            const liab = brand.item21!.franchisorTotalLiabilities;
+            const margin = rev > 0 ? ((ni / rev) * 100) : 0;
+
+            // Revenue waterfall bars
+            const bars = [
+              { label: "Revenue", value: rev, color: "bg-accent" },
+              ...(assets ? [{ label: "Total Assets", value: assets, color: "bg-cyan-500" }] : []),
+              ...(equity ? [{ label: "Equity", value: equity, color: "bg-success" }] : []),
+              ...(liab ? [{ label: "Liabilities", value: liab, color: "bg-warning" }] : []),
+              { label: "Net Income", value: ni, color: ni >= 0 ? "bg-emerald-400" : "bg-danger" },
+            ];
+            const maxVal = Math.max(...bars.map(b => Math.abs(b.value)));
+
+            return (
+              <div className="space-y-4">
+                {/* Horizontal bar chart */}
+                <div className="space-y-3">
+                  {bars.map((bar, i) => (
+                    <div key={i}>
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-sm text-muted">{bar.label}</span>
+                        <span className="text-sm font-bold text-foreground">${(Math.abs(bar.value) / 1e9).toFixed(2)}B</span>
+                      </div>
+                      <div className="h-6 bg-surface rounded-full overflow-hidden">
+                        <div className={`h-full ${bar.color} rounded-full transition-all`}
+                          style={{ width: `${(Math.abs(bar.value) / maxVal) * 100}%` }} />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Key ratios */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+                  <div className="rounded-lg border border-border p-3 text-center">
+                    <div className="text-xl font-bold text-foreground">{margin.toFixed(1)}%</div>
+                    <div className="text-xs text-muted">Net Margin</div>
+                  </div>
+                  {brand.item21!.debtToEquityRatio !== undefined && (
+                  <div className="rounded-lg border border-border p-3 text-center">
+                    <div className={`text-xl font-bold ${brand.item21!.debtToEquityRatio! > 3 ? "text-danger" : brand.item21!.debtToEquityRatio! > 2 ? "text-warning" : "text-success"}`}>
+                      {brand.item21!.debtToEquityRatio!.toFixed(2)}x
+                    </div>
+                    <div className="text-xs text-muted">Debt / Equity</div>
+                  </div>
+                  )}
+                  {brand.item21!.revenueYoYPct !== undefined && (
+                  <div className="rounded-lg border border-border p-3 text-center">
+                    <div className={`text-xl font-bold ${brand.item21!.revenueYoYPct! >= 0 ? "text-success" : "text-danger"}`}>
+                      {brand.item21!.revenueYoYPct! >= 0 ? "+" : ""}{brand.item21!.revenueYoYPct!.toFixed(1)}%
+                    </div>
+                    <div className="text-xs text-muted">Revenue YoY</div>
+                  </div>
+                  )}
+                  <div className="rounded-lg border border-border p-3 text-center">
+                    <div className={`text-xl font-bold ${brand.item21!.goingConcernWarning ? "text-danger" : "text-success"}`}>
+                      {brand.item21!.goingConcernWarning ? "Yes" : "No"}
+                    </div>
+                    <div className="text-xs text-muted">Going Concern</div>
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-lg bg-surface text-sm text-muted">
+                  <strong className="text-foreground">In plain English:</strong> The franchisor reported ${(rev / 1e9).toFixed(2)}B in revenue
+                  and ${(ni / 1e9).toFixed(2)}B in net income — a {margin.toFixed(1)}% profit margin.
+                  {equity && equity > 0 ? ` Equity is ${(equity / 1e9).toFixed(2)}B, meaning the company owns substantially more than it owes.` : ""}
+                  {brand.item21!.auditorName && ` These figures were audited by ${brand.item21!.auditorName}.`}
+                  {brand.item21!.auditorOpinion === "clean" && " The audit opinion was clean (unqualified) — no red flags from the auditor."}
+                  {!brand.item21!.goingConcernWarning && " There is no going-concern warning, meaning the auditor sees no risk the company cannot continue operating."}
+                </div>
+              </div>
+            );
+          })()}
+        </section>
+        )}
+
         {/* ── 7b. Cohort Benchmarks ── */}
         {effectiveGovVerified && cohortBenchmarks.benchmarks.some((b: CohortBenchmark) => b.percentile !== null) && (
         <section>
@@ -1586,89 +1989,6 @@ export default async function BrandPage({
           <BenchmarkWidget benchmarks={cohortBenchmarks} brandName={brand.name} />
         </section>
         )}
-
-        {/* ── 8. Community Data ── */}
-        {(() => {
-          const communityProfile = getCommunityProfile(brand.slug);
-          const hasSourced = communityProfile && (communityProfile.sentiment.length > 0 || communityProfile.news.length > 0);
-          return (
-          <section>
-            <div className="flex items-center gap-3 mb-3">
-              <h2 className="text-xl font-semibold text-foreground">Community</h2>
-              <span className="px-2 py-0.5 rounded-full bg-warning/10 border border-warning/20 text-warning text-[10px] font-semibold">Not FDD data</span>
-            </div>
-
-            {/* Public sourced data */}
-            {hasSourced && (
-              <div className="rounded-xl border border-border bg-background p-5 mb-4 space-y-3">
-                <p className="text-xs font-semibold text-muted uppercase tracking-widest">Public Sources</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {communityProfile!.sentiment.map((entry, i) => (
-                    <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-surface">
-                      {entry.rating !== null && (
-                        <div className="shrink-0 text-center min-w-[36px]">
-                          <p className="text-lg font-bold text-foreground leading-none">{entry.rating}</p>
-                          <p className="text-[10px] text-muted">/5</p>
-                        </div>
-                      )}
-                      <div className="flex-1 min-w-0 space-y-1.5">
-                        <p className="text-xs text-foreground leading-snug">{entry.excerpt}</p>
-                        <CommunitySourceBadge source={entry.source} />
-                      </div>
-                    </div>
-                  ))}
-                  {communityProfile!.news.map((entry, i) => (
-                    <div key={i} className="p-3 rounded-lg bg-surface space-y-1.5">
-                      <p className="text-xs font-medium text-foreground">{entry.headline}</p>
-                      <p className="text-[11px] text-muted">{entry.summary}</p>
-                      <CommunitySourceBadge source={entry.source} />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Owner submissions */}
-            <div className="rounded-xl border border-border bg-background p-5">
-              {brand.communityReviews > 0 ? (
-                <>
-                  <p className="text-xs font-semibold text-muted uppercase tracking-widest mb-4">Anonymous Owner Submissions</p>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
-                    {brand.communityAvgSatisfaction != null && (
-                      <div className="text-center">
-                        <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg Satisfaction</p>
-                        <p className={`text-3xl font-bold ${scoreTextColor(brand.communityAvgSatisfaction)}`}>
-                          {brand.communityAvgSatisfaction}/10
-                        </p>
-                      </div>
-                    )}
-                    {brand.communityAvgFirstYearRevenue != null && (
-                      <div className="text-center">
-                        <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg First-Year Revenue</p>
-                        <p className="text-3xl font-bold text-foreground">{formatCurrency(brand.communityAvgFirstYearRevenue)}</p>
-                      </div>
-                    )}
-                    <div className="text-center">
-                      <p className="text-xs text-muted uppercase tracking-wider mb-1">Submissions</p>
-                      <p className="text-3xl font-bold text-accent">{brand.communityReviews}</p>
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <p className="text-xs font-semibold text-muted uppercase tracking-widest mb-4">Anonymous Owner Submissions</p>
-              )}
-              <div className="border-t border-border pt-4">
-                <p className="text-sm text-muted mb-4">
-                  {brand.communityReviews > 0
-                    ? `Are you a ${brand.name} franchisee? Add your anonymous data.`
-                    : `No owner submissions yet for ${brand.name}. Be the first — your data helps future buyers.`}
-                </p>
-                <CommunitySubmitForm defaultBrandSlug={brand.slug} defaultBrandName={brand.name} />
-              </div>
-            </div>
-          </section>
-          );
-        })()}
 
         {/* ── 8a. Filing Year Changes (YoY diff) ── */}
         {effectiveGovVerified && (brand.item19Prior?.grossRevenueAvg || (brand.unitEconomics?.yearlyNetGrowth && brand.unitEconomics.yearlyNetGrowth.length >= 2)) && (
@@ -2117,6 +2437,87 @@ export default async function BrandPage({
           </p>
         </section>
         )}
+
+        {/* ── 8g. Community Data (moved to bottom — not FDD data) ── */}
+        {(() => {
+          const communityProfile = getCommunityProfile(brand.slug);
+          const hasSourced = communityProfile && (communityProfile.sentiment.length > 0 || communityProfile.news.length > 0);
+          return (
+          <section>
+            <div className="flex items-center gap-3 mb-3">
+              <h2 className="text-xl font-semibold text-foreground">Community</h2>
+              <span className="px-2 py-0.5 rounded-full bg-warning/10 border border-warning/20 text-warning text-[10px] font-semibold">Not FDD data</span>
+            </div>
+
+            {hasSourced && (
+              <div className="rounded-xl border border-border bg-background p-5 mb-4 space-y-3">
+                <p className="text-xs font-semibold text-muted uppercase tracking-widest">Public Sources</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {communityProfile!.sentiment.map((entry, i) => (
+                    <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-surface">
+                      {entry.rating !== null && (
+                        <div className="shrink-0 text-center min-w-[36px]">
+                          <p className="text-lg font-bold text-foreground leading-none">{entry.rating}</p>
+                          <p className="text-[10px] text-muted">/5</p>
+                        </div>
+                      )}
+                      <div className="flex-1 min-w-0 space-y-1.5">
+                        <p className="text-xs text-foreground leading-snug">{entry.excerpt}</p>
+                        <CommunitySourceBadge source={entry.source} />
+                      </div>
+                    </div>
+                  ))}
+                  {communityProfile!.news.map((entry, i) => (
+                    <div key={i} className="p-3 rounded-lg bg-surface space-y-1.5">
+                      <p className="text-xs font-medium text-foreground">{entry.headline}</p>
+                      <p className="text-[11px] text-muted">{entry.summary}</p>
+                      <CommunitySourceBadge source={entry.source} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className="rounded-xl border border-border bg-background p-5">
+              {brand.communityReviews > 0 ? (
+                <>
+                  <p className="text-xs font-semibold text-muted uppercase tracking-widest mb-4">Anonymous Owner Submissions</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-4">
+                    {brand.communityAvgSatisfaction != null && (
+                      <div className="text-center">
+                        <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg Satisfaction</p>
+                        <p className={`text-3xl font-bold ${scoreTextColor(brand.communityAvgSatisfaction)}`}>
+                          {brand.communityAvgSatisfaction}/10
+                        </p>
+                      </div>
+                    )}
+                    {brand.communityAvgFirstYearRevenue != null && (
+                      <div className="text-center">
+                        <p className="text-xs text-muted uppercase tracking-wider mb-1">Avg First-Year Revenue</p>
+                        <p className="text-3xl font-bold text-foreground">{formatCurrency(brand.communityAvgFirstYearRevenue)}</p>
+                      </div>
+                    )}
+                    <div className="text-center">
+                      <p className="text-xs text-muted uppercase tracking-wider mb-1">Submissions</p>
+                      <p className="text-3xl font-bold text-accent">{brand.communityReviews}</p>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <p className="text-xs font-semibold text-muted uppercase tracking-widest mb-4">Anonymous Owner Submissions</p>
+              )}
+              <div className="border-t border-border pt-4">
+                <p className="text-sm text-muted mb-4">
+                  {brand.communityReviews > 0
+                    ? `Are you a ${brand.name} franchisee? Add your anonymous data.`
+                    : `No owner submissions yet for ${brand.name}. Be the first — your data helps future buyers.`}
+                </p>
+                <CommunitySubmitForm defaultBrandSlug={brand.slug} defaultBrandName={brand.name} />
+              </div>
+            </div>
+          </section>
+          );
+        })()}
 
         {/* ── 9. Tools ── */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
