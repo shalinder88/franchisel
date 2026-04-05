@@ -36,15 +36,21 @@
   "high_risk_business_risk_flags": [
     "Securitization-driven corporate structure (franchisor is SPV)",
     "Uncapped technology modification rights",
-    "Post-term non-compete extends 10 miles from ANY Qdoba restaurant"
+    "Post-term non-compete extends 5 miles from ANY Qdoba restaurant"
   ],
   "unresolved_count": 4,
   "contradictions_count": 1,
   "base_composite_score": 8.8,
   "enriched_v1_composite_score": 9.1,
   "enriched_v2_composite_score": 9.3,
-  "final_score_version": "enriched_v2",
+  "post_regression_score": 9.6,
+  "final_score_version": "enriched_v2_reconciled",
   "production_usable": true,
+  "regression_recovery_applied": true,
+  "regression_tasks_count": 3,
+  "conflict_adjudication_complete": true,
+  "fields_corrected": ["noncompete_radius_10to5mi", "transfer_fee_25Kto5K", "item18_public_figure", "dispute_resolution_arb_to_mediation", "supplier_economics"],
+  "fields_added": ["vetfran_discount", "noncompete_state_overrides_6", "forum_state_overrides_6", "supply_chain_fee", "customer_fund_fee", "qrc_revenue_from_franchisees"],
   "files_generated": [
     "01_source_map.md",
     "02_reader_report.md",
@@ -65,6 +71,9 @@
     "14_run_summary.json",
     "15_publish_gate.md",
     "retry_item20_full_tables.json",
-    "retry_item21.md"
+    "retry_item21.md",
+    "15_regression_check.md",
+    "16_regression_recovery_tasks.md",
+    "17_conflict_adjudication.md"
   ]
 }

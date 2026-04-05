@@ -25,7 +25,7 @@ Key risk factors identified: out-of-state dispute resolution (California), spous
 - Royalty: 5% of Gross Sales (traditional FA); 3% (License Agreement).
 - Marketing Fund: 4.5% of Gross Sales (traditional); 1.75% (License). Maximum 6% requires majority system vote. In FY2025, combined marketing/local advertising was 4.0%; increased to 4.5% effective September 29, 2025.
 - Technology Fee: $250 per restaurant per period (13 periods/year) plus 0.21% of Gross Sales. Subject to modification with 90 days notice.
-- Transfer Fee: $25,000 (traditional), $10,000 (non-traditional/license).
+- Transfer Fee: up to $5,000, .
 - Renewal Fee: $10,000.
 - Audit Fee: Cost of audit if underreported by 3%+ of Gross Sales.
 - Learning Management System: $24–$40 per restaurant per month.
@@ -42,7 +42,7 @@ Key risk factors identified: out-of-state dispute resolution (California), spous
 
 ## C. Pass 2 — Supplier Control, Operating Control, Technology Burden, Reporting Burden
 
-**Supplier control:** Franchisees must purchase food products, paper, packaging, supplies, fixtures, equipment, and computer systems meeting Qdoba's specifications from approved suppliers or meet approved specifications. Qdoba may itself be an approved supplier. The franchisor did not receive any revenue from products and services purchased or leased by franchisees in the most recent fiscal year (per Item 8 disclosure).
+**Supplier control:** Franchisees must purchase food products, paper, packaging, supplies, fixtures, equipment, and computer systems meeting Qdoba's specifications from approved suppliers or meet approved specifications. Qdoba may itself be an approved supplier. QRC collects a Supply Chain Fee of $0.25 per case ($1,304,194 total in FY2025) and a Customer Fund Fee of $0.03 per case (~$85,000 remaining at FY2025 end). QRC's total revenue from all required franchisee purchases and leases (IT fees, supply chain fees, sublease rent, advertising contributions) was $50,845,000 in FY2025, or 13.2% of QRC's total revenue. Required purchases estimated at 50-90% of establishing costs and ~40% of ongoing operating costs. Certain suppliers also provide marketing allowances and rebates based on volume.
 
 Alternative suppliers may be requested but franchisee bears cost of Qdoba's evaluation and approval process, including travel, lodging, and meals.
 
@@ -76,13 +76,13 @@ Alternative suppliers may be requested but franchisee bears cost of Qdoba's eval
 
 **Renewal:** One renewal for 10 years. Conditions: 6–18 months advance notice, not in default, meet current standards, sign then-current form of FA (which may have materially different terms), pay $10,000 renewal fee, remodel if required, sign general release.
 
-**Transfer:** Permitted with franchisor consent (not unreasonably withheld). Conditions include: transferee meets qualifications, transferee signs then-current FA, $25,000 transfer fee, training completion, general release, right of first refusal for franchisor.
+**Transfer:** Permitted with franchisor consent (not unreasonably withheld). Conditions include: transferee meets qualifications, transferee signs then-current FA, up to $5,000 transfer fee, training completion, general release, right of first refusal for franchisor.
 
 **Termination by franchisor:** Immediate for: bankruptcy/insolvency, abandonment, material misrepresentation, criminal conviction, imminent danger to public health/safety, repeated defaults (3+ in 12 months). With 30-day cure for other material defaults. With 60-day cure for failure to meet performance standards.
 
-**Non-compete:** During term: no competing Mexican food restaurant. Post-term: 2 years within 10 miles of any Qdoba restaurant (including former restaurant). Post-transfer: 2 years within 10 miles.
+**Non-compete:** During term: no competing Mexican food restaurant. Post-term: 2 years within 5 miles of any Qdoba restaurant (including former restaurant). Post-transfer: 2 years within 5 miles.
 
-**Dispute resolution:** Mediation first, then binding arbitration in San Diego, California (JAMS rules). Waiver of jury trial and punitive damages.
+**Dispute resolution:** Nonbinding mediation first, then litigation in San Diego, California. Subject to state law.
 
 **Governing law:** California.
 
@@ -90,7 +90,7 @@ Alternative suppliers may be requested but franchisee bears cost of Qdoba's eval
 
 ## F. Pass 5 — Items 18–23, Exhibits, Unresolveds
 
-**Item 18 — Public Figures:** John Cywinski, CEO of QRC, is listed as a public figure who uses his name and likeness to promote the sale of franchises. He has no ownership interest in the franchise system but is a director of certain affiliated entities.
+**Item 18 — Public Figures:** The FDD states: "We do not currently use any public figure to promote our franchise." No public figures disclosed.
 
 **Item 19 — Financial Performance Representations:**
 - Chart 1: Same-store sales for 390 franchised restaurants open all three fiscal years. Average net sales grew from $1,559,142 (FY2023) to $1,682,890 (FY2024) to $1,766,860 (FY2025). Year-over-year growth: 5.6%, 7.9%, 5.0%.

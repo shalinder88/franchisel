@@ -24,13 +24,15 @@
 
 | Metric | Value |
 |--------|-------|
-| **A. Overall score** | **9.3 / 10** |
+| **A. Overall score** | **9.6 / 10** |
 | **B. Production-usable** | **Yes** |
-| **C. What still blocks production quality** | Funding Holdco financial statement line items remain partially decoded due to CID font encoding. This is a structural limitation of the PDF, not an extraction gap. Qdoba Corp financials provide alternative visibility. No other material blockers. |
+| **C. What still blocks production quality** | No material blockers. Funding Holdco CID encoding resolved via merged prior-run decode. All critical legal field errors (noncompete, transfer fee, dispute resolution, Item 18, supplier economics) corrected via regression recovery. |
 
 ## Scoring Notes
 
-- Enriched canonical (v1 and v2) used for scoring.
-- The CID encoding issue on Funding Holdco financials is the only material limitation. All other FDD items and exhibits are fully or substantially extracted.
+- Enriched canonical (v1 and v2) used for scoring, post-regression-recovery.
+- Five critical/high-severity regressions from initial extraction corrected: noncompete radius (10→5 mi), transfer fee ($25K→up to $5K), Item 18 public figure (true→false), dispute resolution (arbitration→mediation+litigation), supplier economics (no revenue→$50.8M/13.2%).
+- VetFran discount ($10K), noncompete state overrides (6 states), and forum state overrides (6 states) restored to canonical.
 - Item 19 EBITDA data is the strongest FPR disclosure seen in this extraction pipeline (full P&L with notes).
 - Zero terminations across 3 years is a notable positive signal for the franchise system.
+- Regression check, recovery, and conflict adjudication complete (see files 15-17).

@@ -98,8 +98,8 @@ Two sets of audited statements by Deloitte & Touche LLP, both with clean opinion
 ## 6. Contract Burden
 
 - **Term:** 10 years, 1 renewal for 10 years
-- **Non-compete:** During term + 2 years post-term within 10 miles of ANY Qdoba
-- **Dispute resolution:** Mediation → binding arbitration, San Diego CA (JAMS)
+- **Non-compete:** During term + 2 years post-term within 5 miles of ANY Qdoba
+- **Dispute resolution:** Nonbinding mediation → litigation, San Diego CA
 - **Governing law:** California (modified by state addenda for 11 states)
 - **Guaranty:** Personal guarantee required from entity owners and spouses
 - **Security interest:** First-priority security interest in franchise assets
