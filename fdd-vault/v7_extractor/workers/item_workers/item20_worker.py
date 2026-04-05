@@ -1,10 +1,18 @@
 """
 Worker 22: Item 20 — Outlets and Franchisee Information
 
-Extracts: outlet history tables, transfers, closures, reacquisitions,
-sold-not-opened, projected openings, current/former franchisee exhibit references.
+Sprint 2: Deep outlet parser with table family splitting.
 
-Gold rule: Item 20 is almost a separate job. Every outlet table and note matters.
+Table families parsed separately:
+  - systemwide_summary: Franchised/Company/Total by year
+  - franchised_state: state-level franchised detail
+  - company_state: state-level company-owned detail
+  - transfers: separate from closures/terminations
+  - projected_openings: separate from signed-not-opened
+  - franchisee_lists: exhibit linkage
+
+Year-aware: detects years, maps latest-year to canonical fields.
+Transfers separate from closures. Reacquisitions separate from terminations.
 """
 
 from typing import Any, Dict, List
@@ -22,7 +30,6 @@ class Item20Worker(ItemWorkerBase):
     def extract_facts(self, section, parsed: Dict) -> List[str]:
         fact_ids = []
         text = section.text if hasattr(section, 'text') else ""
-        text_lower = text.lower()
 
         # ── Delegate sub-tasks ──
         from ..ticket_broker import TicketType, TicketPriority
@@ -30,94 +37,159 @@ class Item20Worker(ItemWorkerBase):
         if tables:
             self.request_help(
                 TicketType.EXTRACT_OUTLET_ROWS,
-                f"Extract and classify all outlet table rows across {len(tables)} tables",
+                f"Extract outlet rows across {len(tables)} tables",
                 priority=TicketPriority.HIGH, source_item=20,
-                context={"table_count": len(tables)},
             )
             self.request_help(
                 TicketType.VALIDATE_TOTALS,
-                "Validate outlet table totals: franchised + company = systemwide",
+                "Validate outlet totals: franchised + company = systemwide",
                 priority=TicketPriority.NORMAL, source_item=20,
             )
         self.request_help(
             TicketType.EXTRACT_FRANCHISEE_LIST,
-            "Parse current/former franchisee list exhibits referenced by Item 20",
+            "Parse current/former franchisee list exhibits",
             priority=TicketPriority.NORMAL, source_item=20,
         )
 
-        # ── Outlet table rows (every row is important) ──
-        for table in (section.tables if hasattr(section, 'tables') else []):
-            for row_idx, row in enumerate(table.rows):
-                if not row or not any(cell.strip() for cell in row):
-                    continue
-                row_text = " ".join(row).lower()
+        # ── DEEP OUTLET PARSER ──
+        deep_ids = self._run_deep_outlet_parser(section, text)
+        fact_ids.extend(deep_ids)
 
-                # Classify row type
-                row_type = "data"
-                if any(kw in row_text for kw in ["total", "systemwide"]):
-                    row_type = "total"
-                elif any(kw in row_text for kw in ["transfer", "assignment"]):
-                    row_type = "transfer"
-                elif any(kw in row_text for kw in ["terminat", "cancel", "non-renew"]):
-                    row_type = "termination"
-                elif any(kw in row_text for kw in ["ceas", "close", "reacquir"]):
-                    row_type = "closure"
-                elif any(kw in row_text for kw in ["open", "new"]):
-                    row_type = "opening"
+        return fact_ids
 
+    def _run_deep_outlet_parser(self, section, text: str) -> List[str]:
+        """Run the deep outlet parser and emit canonical facts."""
+        from ..outlet_deep_parser import parse_outlet_tables_deep
+
+        tables = section.tables if hasattr(section, 'tables') else []
+        exhibits = self.context.get("exhibits", {})
+        all_items = self.context.get("items", {})
+
+        deep = parse_outlet_tables_deep(tables, text, exhibits, all_items)
+
+        fact_ids = []
+
+        if not deep.get("hasItem20"):
+            return fact_ids
+
+        # ── Emit hasItem20 ──
+        fid = self.emit(
+            fact_type="hasItem20",
+            fact_payload={"value": True},
+            source_zone=SourceZone.TABLE, source_item=20,
+            source_pages=[section.start_page],
+            family="performance", importance=Importance.CORE, confidence=0.95,
+        )
+        fact_ids.append(fid)
+
+        # ── Emit top-level canonical fields ──
+        canonical = deep.get("canonical", {})
+        for field, value in canonical.items():
+            if value is not None:
                 fid = self.emit(
-                    fact_type="outlet_table_row",
-                    fact_payload={
-                        "row_idx": row_idx,
-                        "row_type": row_type,
-                        "cells": row,
-                        "table_title": table.title,
-                    },
-                    source_zone=SourceZone.TABLE,
-                    source_item=20,
-                    source_pages=[table.source_page],
-                    source_table_id=table.table_id,
-                    object_type=ObjectType.OUTLET_RECORD,
+                    fact_type=field,
+                    fact_payload={"value": value},
+                    source_zone=SourceZone.TABLE, source_item=20,
+                    source_pages=[section.start_page],
                     family="performance",
-                    importance=Importance.CORE if row_type in ("total", "closure", "termination") else Importance.SECONDARY,
-                    confidence=0.85,
+                    importance=Importance.CORE if field.startswith("current") else Importance.SECONDARY,
+                    confidence=0.9,
                 )
                 fact_ids.append(fid)
 
-        # ── Projected openings ──
-        proj_match = re.search(
-            r'(?:project\w*|estimat\w*|plan\w*)\s+(?:to\s+)?(?:open|add)\s+(?:approximately\s+)?(\d+)',
-            text_lower
-        )
-        if proj_match:
+        # ── Emit systemwide summary (structured yearly data) ──
+        systemwide = deep.get("systemwide", {})
+        for outlet_type in ["franchised", "companyOwned", "total"]:
+            type_data = systemwide.get(outlet_type, {})
+            for year, entry in type_data.items():
+                if not isinstance(year, int):
+                    continue
+                fid = self.emit(
+                    fact_type=f"item20.systemwide.{outlet_type}.{year}",
+                    fact_payload={"year": year, "outletType": outlet_type, **entry},
+                    source_zone=SourceZone.TABLE, source_item=20,
+                    source_pages=[section.start_page],
+                    object_type=ObjectType.OUTLET_RECORD,
+                    family="performance", importance=Importance.CORE, confidence=0.9,
+                )
+                fact_ids.append(fid)
+
+        # ── Emit transfers separately ──
+        transfers = deep.get("transfers", {})
+        if transfers.get("totals"):
             fid = self.emit(
-                fact_type="projected_openings",
-                fact_payload={"count": int(proj_match.group(1))},
-                source_zone=SourceZone.ITEM,
-                source_item=20,
+                fact_type="item20.transfers",
+                fact_payload=transfers,
+                source_zone=SourceZone.TABLE, source_item=20,
                 source_pages=[section.start_page],
-                family="performance",
-                importance=Importance.SECONDARY,
-                confidence=0.75,
-                raw_evidence=proj_match.group(0)[:200],
+                object_type=ObjectType.COMPOSITE,
+                family="performance", importance=Importance.SECONDARY, confidence=0.85,
             )
             fact_ids.append(fid)
 
-        # ── Franchisee list references ──
-        if re.search(r'(?:exhibit|attachment)\s+\w+\s+(?:contain|list|identif)', text_lower):
-            for m in re.finditer(r'(?:exhibit|attachment)\s+(\w+)', text_lower):
-                code = m.group(1).upper()
-                fid = self.emit(
-                    fact_type="franchisee_list_reference",
-                    fact_payload={"exhibit_code": code},
-                    source_zone=SourceZone.ITEM,
-                    source_item=20,
-                    source_pages=[section.start_page],
-                    family="document",
-                    importance=Importance.SECONDARY,
-                    confidence=0.7,
-                    raw_evidence=m.group(0)[:200],
-                )
-                fact_ids.append(fid)
+        # ── Emit state-level totals for franchised ──
+        fran_state = deep.get("franchisedState", {})
+        if fran_state.get("totals"):
+            for year, entry in fran_state["totals"].items():
+                if isinstance(year, int):
+                    fid = self.emit(
+                        fact_type=f"item20.franchisedState.total.{year}",
+                        fact_payload={"year": year, **entry},
+                        source_zone=SourceZone.TABLE, source_item=20,
+                        source_pages=[section.start_page],
+                        object_type=ObjectType.OUTLET_RECORD,
+                        family="performance", importance=Importance.SECONDARY, confidence=0.85,
+                    )
+                    fact_ids.append(fid)
+
+        # ── Emit state-level totals for company-owned ──
+        comp_state = deep.get("companyOwnedState", {})
+        if comp_state.get("totals"):
+            for year, entry in comp_state["totals"].items():
+                if isinstance(year, int):
+                    fid = self.emit(
+                        fact_type=f"item20.companyOwnedState.total.{year}",
+                        fact_payload={"year": year, **entry},
+                        source_zone=SourceZone.TABLE, source_item=20,
+                        source_pages=[section.start_page],
+                        object_type=ObjectType.OUTLET_RECORD,
+                        family="performance", importance=Importance.SECONDARY, confidence=0.85,
+                    )
+                    fact_ids.append(fid)
+
+        # ── Emit projected openings ──
+        projected = deep.get("projected", {})
+        if projected:
+            fid = self.emit(
+                fact_type="item20.projected",
+                fact_payload=projected,
+                source_zone=SourceZone.ITEM, source_item=20,
+                source_pages=[section.start_page],
+                family="performance", importance=Importance.SECONDARY, confidence=0.75,
+            )
+            fact_ids.append(fid)
+
+        # ── Emit franchisee list linkage ──
+        fl = deep.get("franchiseeLists", {})
+        if fl.get("hasFranchiseeListCurrent") or fl.get("hasFranchiseeListFormer"):
+            fid = self.emit(
+                fact_type="item20.franchiseeLists",
+                fact_payload=fl,
+                source_zone=SourceZone.ITEM, source_item=20,
+                source_pages=[section.start_page],
+                family="document", importance=Importance.SECONDARY, confidence=0.8,
+            )
+            fact_ids.append(fid)
+
+        # ── Full structured object for reconciliation ──
+        fid = self.emit(
+            fact_type="item20_full_object",
+            fact_payload=deep,
+            source_zone=SourceZone.TABLE, source_item=20,
+            source_pages=[section.start_page],
+            object_type=ObjectType.COMPOSITE,
+            family="performance", importance=Importance.CORE, confidence=0.85,
+        )
+        fact_ids.append(fid)
 
         return fact_ids

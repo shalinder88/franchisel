@@ -22,7 +22,7 @@ def assemble_brand_json(engines: Dict[str, Any],
     i17 = engines.get("contract_burden_engine", {})
     fin = engines.get("financial_statement_engine", {})
 
-    return {
+    brand = {
         # Identity — evidence first, bootstrap fallback
         "entity": bootstrap.get("entity", ""),
         "parentCompany": evidence.get("parentCompany") or None,
@@ -108,6 +108,16 @@ def assemble_brand_json(engines: Dict[str, Any],
         "supplierControl": engines.get("supplier_restrictions_engine", {}),
         "territory": engines.get("territory_engine", {}),
 
+        # Sprint 2: Item 20 canonical outlet fields
+        "hasItem20": True,
+
         "publishGate": qa_results.get("publish_gate", "draft"),
         "evidenceSummary": evidence.summary(),
     }
+
+    # Sprint 2: Add outlet counts referencing the brand dict itself
+    brand["currentFranchisedOutlets"] = brand.get("franchisedUnits")
+    brand["currentCompanyOwnedOutlets"] = brand.get("companyOwnedUnits")
+    brand["currentTotalOutlets"] = brand.get("totalUnits")
+
+    return brand
