@@ -155,19 +155,20 @@ def parse_item20(section: ItemSection) -> Dict[str, Any]:
                 vals_no_year = [v for v in values if v is not None and not (2000 <= v <= 2030)]
                 end_val = vals_no_year[1] if len(vals_no_year) >= 2 else (vals_no_year[0] if vals_no_year else None)
 
-                if current_type_group == "franchised" and end_val:
+                # Sprint 3.3: Use 'is not None' not truthiness — 0 outlets is valid
+                if current_type_group == "franchised" and end_val is not None:
                     result["total_franchised"] = {
                         "value": end_val,
                         "state": EvidenceState.PRESENT.value,
                         "provenance": tprov,
                     }
-                elif current_type_group == "company" and end_val:
+                elif current_type_group == "company" and end_val is not None:
                     result["total_company_owned"] = {
                         "value": end_val,
                         "state": EvidenceState.PRESENT.value,
                         "provenance": tprov,
                     }
-                elif current_type_group == "total" and end_val:
+                elif current_type_group == "total" and end_val is not None:
                     result["total_outlets"] = {
                         "value": end_val,
                         "state": EvidenceState.PRESENT.value,
@@ -261,7 +262,8 @@ def parse_item20(section: ItemSection) -> Dict[str, Any]:
         ):
             start_val = _parse_int(m.group(1))
             end_val = _parse_int(m.group(2))
-            if end_val and end_val > 100:
+            # Sprint 3.3: Reject year-sized numbers (2000-2030)
+            if end_val and end_val > 100 and not (2000 <= end_val <= 2030):
                 result["total_franchised"] = {
                     "value": end_val,
                     "state": EvidenceState.PRESENT.value,

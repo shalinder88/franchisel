@@ -363,8 +363,12 @@ def build_all_engines(items: Dict[int, ItemSection],
             elif "chapter" in i4_text or "bankrupt" in i4_text:
                 has_bk = True
 
-    if has_bk is not None:
-        evidence.set("hasBankruptcy", has_bk, EvidenceState.PRESENT)
-        engines["bankruptcy_engine"]["hasBankruptcy"] = has_bk
+    # Sprint 3.4: Default hasBankruptcy to False when no evidence of bankruptcy
+    # Most FDDs without explicit Item 4 still have no bankruptcy
+    if has_bk is None:
+        has_bk = False  # Safe default — bankruptcy would be explicitly disclosed
+
+    evidence.set("hasBankruptcy", has_bk, EvidenceState.PRESENT)
+    engines["bankruptcy_engine"]["hasBankruptcy"] = has_bk
 
     return engines

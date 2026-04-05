@@ -23,6 +23,10 @@ class Item21Worker(ItemWorkerBase):
         text = section.text if hasattr(section, 'text') else ""
         text_lower = text.lower()
 
+        # ── Deep financial parser ──
+        deep_ids = self._run_deep_financial_parser(section, text)
+        fact_ids.extend(deep_ids)
+
         # ── Delegate sub-tasks ──
         from ..ticket_broker import TicketType, TicketPriority
         self.request_help(
@@ -144,5 +148,52 @@ class Item21Worker(ItemWorkerBase):
             )
             fact_ids.append(fid)
             break
+
+        return fact_ids
+
+    def _run_deep_financial_parser(self, section, text: str) -> List[str]:
+        """Run the deep financial parser and emit canonical facts."""
+        from ..financial_deep_parser import parse_financials_deep
+
+        tables = section.tables if hasattr(section, 'tables') else []
+        exhibit_data = self.context.get("exhibit_data", {})
+        engines = self.context.get("engines", {})
+
+        deep = parse_financials_deep(text, tables, exhibit_data, engines)
+        fact_ids = []
+
+        # Emit every non-None canonical field
+        for field in ["hasItem21", "hasAuditedFinancials", "auditOpinionType",
+                       "auditorName", "cash", "totalAssets", "totalLiabilities",
+                       "equity", "revenue", "netIncome", "operatingCashFlow",
+                       "hasParentGuarantee", "hasFinancialConditionWarning",
+                       "hasRelatedPartyDependency", "hasGoingConcern",
+                       "financialStrengthSignal"]:
+            val = deep.get(field)
+            if val is not None:
+                fid = self.emit(
+                    fact_type=field,
+                    fact_payload={"value": val},
+                    source_zone=SourceZone.ITEM, source_item=21,
+                    source_pages=[section.start_page],
+                    family="financials",
+                    importance=Importance.CORE if field in (
+                        "hasItem21", "hasAuditedFinancials", "auditOpinionType",
+                        "revenue", "totalAssets", "netIncome"
+                    ) else Importance.SECONDARY,
+                    confidence=0.85,
+                )
+                fact_ids.append(fid)
+
+        # Full structured object
+        fid = self.emit(
+            fact_type="item21_full_object",
+            fact_payload=deep,
+            source_zone=SourceZone.ITEM, source_item=21,
+            source_pages=[section.start_page],
+            object_type=ObjectType.COMPOSITE,
+            family="financials", importance=Importance.CORE, confidence=0.85,
+        )
+        fact_ids.append(fid)
 
         return fact_ids
