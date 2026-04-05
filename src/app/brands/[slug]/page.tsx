@@ -461,6 +461,69 @@ export default async function BrandPage({
           </div>
         </section>
 
+        {/* ── Franchise Overview (moved up — identity info first) ── */}
+        <section>
+          <h2 className="text-xl font-semibold text-foreground mb-4">Franchise Overview</h2>
+          <div className="rounded-xl border border-border bg-background overflow-hidden">
+            <table className="w-full text-sm">
+              <tbody>
+                <tr className="table-row-hover border-b border-border">
+                  <td className="px-5 py-3 text-muted font-medium">Parent Company</td>
+                  <td className="px-5 py-3 text-foreground text-right">{brand.parentCompany}</td>
+                </tr>
+                <tr className="table-row-hover border-b border-border">
+                  <td className="px-5 py-3 text-muted font-medium">Year Founded</td>
+                  <td className="px-5 py-3 text-foreground text-right">{brand.yearFounded > 0 ? brand.yearFounded : "—"}</td>
+                </tr>
+                <tr className="table-row-hover border-b border-border">
+                  <td className="px-5 py-3 text-muted font-medium">Franchising Since</td>
+                  <td className="px-5 py-3 text-foreground text-right">{brand.yearFranchisingBegan > 0 ? brand.yearFranchisingBegan : "—"}</td>
+                </tr>
+                <tr className="table-row-hover border-b border-border">
+                  <td className="px-5 py-3 text-muted font-medium">Headquarters</td>
+                  <td className="px-5 py-3 text-foreground text-right">{brand.headquartersState}</td>
+                </tr>
+                <tr className="table-row-hover border-b border-border">
+                  <td className="px-5 py-3 text-muted font-medium">Category</td>
+                  <td className="px-5 py-3 text-foreground text-right">
+                    <Link href={`/category/${brand.category}`} className="text-accent hover:underline">
+                      {categoryLabels[brand.category]}
+                    </Link>
+                    {brand.subcategory && <span className="text-muted ml-1">· {brand.subcategory}</span>}
+                  </td>
+                </tr>
+                {(brand.statesOfOperation ?? 0) > 0 && (
+                <tr className="table-row-hover border-b border-border">
+                  <td className="px-5 py-3 text-muted font-medium">States of Operation</td>
+                  <td className="px-5 py-3 text-foreground text-right">{brand.statesOfOperation}</td>
+                </tr>
+                )}
+                <tr className="table-row-hover">
+                  <td className="px-5 py-3 text-muted font-medium">FDD Year</td>
+                  <td className="px-5 py-3 text-foreground text-right">{brand.fddYear}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* ════════════════════════════════════════════════════════════════
+            GROUP B — MONEY: What You Pay, What You Make
+           ════════════════════════════════════════════════════════════════ */}
+        <div className="border-t border-accent/30 pt-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+              <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-foreground">Money: What You Pay, What You Make</h3>
+              <p className="text-xs text-muted">Investment costs, ongoing fees, and disclosed revenue — FDD Items 5, 6, 7, and 19</p>
+            </div>
+          </div>
+        </div>
+
         {/* ── 1b. Investment Anatomy — Visual Breakdown ── */}
         {effectiveGovVerified && brand.totalInvestmentLow > 0 && (
         <section className="rounded-xl border border-border bg-background p-6">
@@ -721,64 +784,6 @@ export default async function BrandPage({
         {/* ── 2b. Data Coverage ── */}
         <DataCoverageWidget brand={brand} />
 
-        {/* ── 3. Red Flags ── */}
-        {brand.redFlags.length > 0 && (
-          <section>
-            <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-xl font-semibold text-foreground">Red Flags</h2>
-              <span className="text-xs text-muted bg-surface px-2.5 py-0.5 rounded-full border border-border">
-                {brand.redFlags.length} identified
-              </span>
-            </div>
-            <>
-            <div className="space-y-3">
-              {brand.redFlags.map((flag, i) => {
-                const s = severityStyles(flag.severity);
-                return (
-                  <div
-                    key={i}
-                    className={`rounded-xl border ${s.border} ${s.bg} p-5 ${
-                      flag.severity === "critical" ? "animate-red-flag" : ""
-                    }`}
-                  >
-                    <div className="flex items-start gap-3">
-                      <div className="mt-0.5">
-                        {flag.severity === "critical" ? (
-                          <svg className={`w-5 h-5 ${s.text}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
-                          </svg>
-                        ) : flag.severity === "warning" ? (
-                          <svg className={`w-5 h-5 ${s.text}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
-                          </svg>
-                        ) : (
-                          <svg className={`w-5 h-5 ${s.text}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-                          </svg>
-                        )}
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className={`text-xs font-semibold uppercase tracking-wider ${s.text}`}>
-                            {s.label}
-                          </span>
-                          <span className="text-xs text-muted">{flag.category}</span>
-                          {flag.fddReference && (
-                            <span className="text-xs text-muted font-mono">({flag.fddReference})</span>
-                          )}
-                        </div>
-                        <h3 className="text-sm font-semibold text-foreground">{flag.title}</h3>
-                        <p className="text-sm text-muted mt-1 leading-relaxed">{flag.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            </>
-          </section>
-        )}
-
         {/* ── 4. Item 19 Financial Data ── */}
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-4">
@@ -999,6 +1004,23 @@ export default async function BrandPage({
           </div>
           )}
         </section>
+
+        {/* ════════════════════════════════════════════════════════════════
+            GROUP C — OPERATIONS: The Rules You Live By
+           ════════════════════════════════════════════════════════════════ */}
+        <div className="border-t border-accent/30 pt-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center">
+              <svg className="w-5 h-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-foreground">Operations: The Rules You Live By</h3>
+              <p className="text-xs text-muted">Contract terms, territory, suppliers, training, and financing — FDD Items 8, 10, 11, 12, 17</p>
+            </div>
+          </div>
+        </div>
 
         {/* ── 5b. Supplier & Required Purchases (Item 8) ── */}
         {effectiveGovVerified && brand.item8 && (brand.item8.hasRequiredPurchases || brand.item8.franchisorReceivesSupplierRevenue) && (
@@ -1405,6 +1427,129 @@ export default async function BrandPage({
         </section>
         )}
 
+        {/* ── Management Quality (moved into Operations group) ── */}
+        {brand.managementData && mgmtSignal.level !== "unknown" && (
+        <section className={`rounded-xl border p-6 ${
+          mgmtSignal.level === "strong" ? "border-success/25 bg-success/5" :
+          mgmtSignal.level === "weak"   ? "border-warning/25 bg-warning/5" :
+          "border-border bg-surface"
+        }`}>
+          <h2 className="text-base font-bold text-foreground mb-4">
+            Management Quality — Item 2 (Business Experience)
+          </h2>
+          <div className="flex items-start gap-4 mb-4">
+            <div className={`text-3xl font-black tabular-nums ${
+              mgmtSignal.level === "strong" ? "text-success" :
+              mgmtSignal.level === "weak"   ? "text-warning" : "text-foreground"
+            }`}>
+              {mgmtSignal.score ?? "—"}<span className="text-base font-normal text-muted">/10</span>
+            </div>
+            <div>
+              <p className={`text-sm font-semibold ${
+                mgmtSignal.level === "strong" ? "text-success" :
+                mgmtSignal.level === "weak"   ? "text-warning" : "text-foreground"
+              }`}>{mgmtSignal.label}</p>
+              <p className="text-xs text-muted mt-0.5">{mgmtSignal.rationale}</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {brand.managementData.execCount != null && (
+              <div className="rounded-lg bg-background border border-border p-3 text-center">
+                <p className="text-2xl font-bold text-foreground">{brand.managementData.execCount}</p>
+                <p className="text-[10px] text-muted uppercase tracking-wide mt-0.5">Senior Execs</p>
+              </div>
+            )}
+            {brand.managementData.hasFranchiseExp != null && (
+              <div className={`rounded-lg border p-3 text-center ${brand.managementData.hasFranchiseExp ? "border-success/30 bg-success/5" : "border-border bg-background"}`}>
+                <p className={`text-sm font-bold ${brand.managementData.hasFranchiseExp ? "text-success" : "text-muted"}`}>
+                  {brand.managementData.hasFranchiseExp ? "✓ Yes" : "✗ No"}
+                </p>
+                <p className="text-[10px] text-muted uppercase tracking-wide mt-0.5">Franchise Exp.</p>
+              </div>
+            )}
+            {brand.managementData.hasStableLeadership != null && (
+              <div className={`rounded-lg border p-3 text-center ${brand.managementData.hasStableLeadership ? "border-success/30 bg-success/5" : "border-border bg-background"}`}>
+                <p className={`text-sm font-bold ${brand.managementData.hasStableLeadership ? "text-success" : "text-muted"}`}>
+                  {brand.managementData.hasStableLeadership ? "✓ Yes" : "✗ No"}
+                </p>
+                <p className="text-[10px] text-muted uppercase tracking-wide mt-0.5">Stable Leadership</p>
+              </div>
+            )}
+            {brand.managementData.hasLeadershipChanges != null && (
+              <div className={`rounded-lg border p-3 text-center ${brand.managementData.hasLeadershipChanges ? "border-warning/30 bg-warning/5" : "border-border bg-background"}`}>
+                <p className={`text-sm font-bold ${brand.managementData.hasLeadershipChanges ? "text-warning" : "text-muted"}`}>
+                  {brand.managementData.hasLeadershipChanges ? "△ Yes" : "✓ No"}
+                </p>
+                <p className="text-[10px] text-muted uppercase tracking-wide mt-0.5">Recent Changes</p>
+              </div>
+            )}
+          </div>
+          <p className="text-[10px] text-muted mt-3">
+            Source: FDD Item 2 (Business Experience) · Extraction confidence: {brand.managementData.extractionConfidence ?? "medium"}
+          </p>
+        </section>
+        )}
+
+        {/* ── Support Quality (moved into Operations group) ── */}
+        {brand.item11 && supportQuality.level !== "unknown" && (
+        <section className={`rounded-xl border p-5 ${
+          supportQuality.level === "strong"   ? "border-success/30 bg-success/3" :
+          supportQuality.level === "minimal"  ? "border-warning/25 bg-warning/5" :
+          "border-border bg-background"
+        }`}>
+          <div className="flex items-start justify-between gap-4 mb-4">
+            <div>
+              <h2 className="text-base font-bold text-foreground">Franchisor Support — Item 11</h2>
+              <p className="text-xs text-muted mt-1">Training program, field support &amp; ongoing resources</p>
+            </div>
+            <div className="text-right shrink-0">
+              <div className={`text-2xl font-bold ${
+                supportQuality.level === "strong"  ? "text-success" :
+                supportQuality.level === "minimal" ? "text-warning" : "text-accent"
+              }`}>{supportQuality.score}/10</div>
+              <div className="text-xs text-muted">Support Score</div>
+            </div>
+          </div>
+          <div className={`rounded-lg border px-4 py-3 mb-4 ${
+            supportQuality.level === "strong"  ? "border-success/30 bg-success/5 text-success" :
+            supportQuality.level === "minimal" ? "border-warning/30 bg-warning/5 text-warning" :
+            "border-accent/30 bg-accent/5 text-accent"
+          }`}>
+            <p className="text-sm font-medium">{supportQuality.label}</p>
+            <p className="text-xs mt-1 opacity-90">{supportQuality.rationale}</p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
+            {brand.item11.totalTrainingHours != null && (
+              <div className="rounded-lg bg-surface p-3">
+                <span className="text-xs text-muted block mb-1">Total Training</span>
+                <span className="font-bold text-foreground text-lg">{brand.item11.totalTrainingHours}h</span>
+              </div>
+            )}
+            {brand.item11.classroomHours != null && (
+              <div className="rounded-lg bg-surface p-3">
+                <span className="text-xs text-muted block mb-1">Classroom</span>
+                <span className="font-bold text-foreground text-lg">{brand.item11.classroomHours}h</span>
+              </div>
+            )}
+            {brand.item11.ojtHours != null && (
+              <div className="rounded-lg bg-surface p-3">
+                <span className="text-xs text-muted block mb-1">On-the-Job</span>
+                <span className="font-bold text-foreground text-lg">{brand.item11.ojtHours}h</span>
+              </div>
+            )}
+            {brand.item11.hasFieldSupport != null && (
+              <div className="rounded-lg bg-surface p-3">
+                <span className="text-xs text-muted block mb-1">Field Support</span>
+                <span className={`font-medium ${brand.item11.hasFieldSupport ? "text-success" : "text-muted"}`}>
+                  {brand.item11.hasFieldSupport ? "Yes" : "No"}
+                </span>
+              </div>
+            )}
+          </div>
+          <p className="text-[10px] text-muted mt-3">Source: FDD Item 11</p>
+        </section>
+        )}
+
         {/* ── 5f. Contract Terms at a Glance ── */}
         {effectiveGovVerified && brand.item17 && (
         <section className="rounded-xl border border-border bg-background p-6">
@@ -1496,6 +1641,23 @@ export default async function BrandPage({
           </div>
         </section>
         )}
+
+        {/* ════════════════════════════════════════════════════════════════
+            GROUP D — SYSTEM HEALTH: Is It Growing or Shrinking?
+           ════════════════════════════════════════════════════════════════ */}
+        <div className="border-t border-accent/30 pt-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-lg bg-success/10 flex items-center justify-center">
+              <svg className="w-5 h-5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-foreground">System Health: Is It Growing or Shrinking?</h3>
+              <p className="text-xs text-muted">Unit openings, closures, transfers, and geographic spread — FDD Item 20</p>
+            </div>
+          </div>
+        </div>
 
         {/* ── 6. Unit Economics (Item 20) ── */}
         <section>
@@ -1740,6 +1902,23 @@ export default async function BrandPage({
           </>
         </section>
         )}
+
+        {/* ════════════════════════════════════════════════════════════════
+            GROUP E — FRANCHISOR STRENGTH: Can They Support You?
+           ════════════════════════════════════════════════════════════════ */}
+        <div className="border-t border-accent/30 pt-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center">
+              <svg className="w-5 h-5 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-foreground">Franchisor Strength: Can They Support You?</h3>
+              <p className="text-xs text-muted">Financial health, litigation history, and audited statements — FDD Items 3, 4, 21</p>
+            </div>
+          </div>
+        </div>
 
         {/* ── 7. Litigation Summary (Item 3) ── */}
         <section>
@@ -2140,6 +2319,50 @@ export default async function BrandPage({
         </section>
         )}
 
+        {/* ════════════════════════════════════════════════════════════════
+            GROUP F — BUYER PREP: What to Watch For
+           ════════════════════════════════════════════════════════════════ */}
+        <div className="border-t border-accent/30 pt-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-lg bg-warning/10 flex items-center justify-center">
+              <svg className="w-5 h-5 text-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-foreground">Buyer Prep: What to Watch For</h3>
+              <p className="text-xs text-muted">Key risk areas, questions for existing franchisees, and community insights</p>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Red Flags (compact — toned down) ── */}
+        {brand.redFlags.length > 0 && (
+          <section className="rounded-xl border border-border bg-background p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <h2 className="text-base font-semibold text-foreground">Key Risk Areas</h2>
+              <span className="text-[10px] text-muted bg-surface px-2 py-0.5 rounded-full border border-border">
+                {brand.redFlags.length} from FDD
+              </span>
+            </div>
+            <div className="space-y-2">
+              {brand.redFlags.map((flag, i) => {
+                const s = severityStyles(flag.severity);
+                return (
+                  <div key={i} className={`flex items-start gap-3 p-3 rounded-lg ${s.bg} border ${s.border}`}>
+                    <span className={`text-[10px] font-bold uppercase ${s.text} shrink-0 mt-0.5 w-16`}>{s.label}</span>
+                    <div className="flex-1 min-w-0">
+                      <span className="text-sm font-medium text-foreground">{flag.title}</span>
+                      {flag.fddReference && <span className="text-[10px] text-muted ml-2">({flag.fddReference})</span>}
+                      <p className="text-xs text-muted mt-0.5 leading-relaxed">{flag.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
         {/* ── 8b. Franchisee Interview Prep ── */}
         {effectiveGovVerified && interviewQuestions.length > 0 && (
         <section>
@@ -2283,158 +2506,6 @@ export default async function BrandPage({
               ℹ Per-state breakdown will be available after Item 20 state-table extraction completes for this brand.
             </p>
           )}
-        </section>
-        )}
-
-        {/* ── 8d. Management Quality (Item 2) ── */}
-        {brand.managementData && mgmtSignal.level !== "unknown" && (
-        <section className={`rounded-xl border p-6 ${
-          mgmtSignal.level === "strong" ? "border-success/25 bg-success/5" :
-          mgmtSignal.level === "weak"   ? "border-warning/25 bg-warning/5" :
-          "border-border bg-surface"
-        }`}>
-          <h2 className="text-base font-bold text-foreground mb-4">
-            Management Quality — Item 2 (Business Experience)
-          </h2>
-          <div className="flex items-start gap-4 mb-4">
-            <div className={`text-3xl font-black tabular-nums ${
-              mgmtSignal.level === "strong" ? "text-success" :
-              mgmtSignal.level === "weak"   ? "text-warning" : "text-foreground"
-            }`}>
-              {mgmtSignal.score ?? "—"}<span className="text-base font-normal text-muted">/10</span>
-            </div>
-            <div>
-              <p className={`text-sm font-semibold ${
-                mgmtSignal.level === "strong" ? "text-success" :
-                mgmtSignal.level === "weak"   ? "text-warning" : "text-foreground"
-              }`}>{mgmtSignal.label}</p>
-              <p className="text-xs text-muted mt-0.5">{mgmtSignal.rationale}</p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {brand.managementData.execCount != null && (
-              <div className="rounded-lg bg-background border border-border p-3 text-center">
-                <p className="text-2xl font-bold text-foreground">{brand.managementData.execCount}</p>
-                <p className="text-[10px] text-muted uppercase tracking-wide mt-0.5">Senior Execs</p>
-              </div>
-            )}
-            {brand.managementData.hasFranchiseExp != null && (
-              <div className={`rounded-lg border p-3 text-center ${brand.managementData.hasFranchiseExp ? "border-success/30 bg-success/5" : "border-border bg-background"}`}>
-                <p className={`text-sm font-bold ${brand.managementData.hasFranchiseExp ? "text-success" : "text-muted"}`}>
-                  {brand.managementData.hasFranchiseExp ? "✓ Yes" : "✗ No"}
-                </p>
-                <p className="text-[10px] text-muted uppercase tracking-wide mt-0.5">Franchise Exp.</p>
-              </div>
-            )}
-            {brand.managementData.hasStableLeadership != null && (
-              <div className={`rounded-lg border p-3 text-center ${brand.managementData.hasStableLeadership ? "border-success/30 bg-success/5" : "border-border bg-background"}`}>
-                <p className={`text-sm font-bold ${brand.managementData.hasStableLeadership ? "text-success" : "text-muted"}`}>
-                  {brand.managementData.hasStableLeadership ? "✓ Yes" : "✗ No"}
-                </p>
-                <p className="text-[10px] text-muted uppercase tracking-wide mt-0.5">Stable Leadership</p>
-              </div>
-            )}
-            {brand.managementData.hasLeadershipChanges != null && (
-              <div className={`rounded-lg border p-3 text-center ${brand.managementData.hasLeadershipChanges ? "border-warning/30 bg-warning/5" : "border-border bg-background"}`}>
-                <p className={`text-sm font-bold ${brand.managementData.hasLeadershipChanges ? "text-warning" : "text-muted"}`}>
-                  {brand.managementData.hasLeadershipChanges ? "△ Yes" : "✓ No"}
-                </p>
-                <p className="text-[10px] text-muted uppercase tracking-wide mt-0.5">Recent Changes</p>
-              </div>
-            )}
-          </div>
-          <p className="text-[10px] text-muted mt-3">
-            Source: FDD Item 2 (Business Experience) · Extracted via pattern matching ·
-            Confidence: {brand.managementData.extractionConfidence ?? "medium"}
-          </p>
-        </section>
-        )}
-
-        {/* ── 8e. Support Quality (Item 11) ── */}
-        {brand.item11 && supportQuality.level !== "unknown" && (
-        <section className={`rounded-xl border p-5 ${
-          supportQuality.level === "strong"   ? "border-success/30 bg-success/3" :
-          supportQuality.level === "minimal"  ? "border-warning/25 bg-warning/5" :
-          "border-border bg-background"
-        }`}>
-          <div className="flex items-start justify-between gap-4 mb-4">
-            <div>
-              <h2 className="text-xl font-semibold text-foreground">
-                Franchisor Support — Item 11
-              </h2>
-              <p className="text-sm text-muted mt-1">Training program, field support &amp; ongoing resources</p>
-            </div>
-            <div className="text-right shrink-0">
-              <div className={`text-2xl font-bold ${
-                supportQuality.level === "strong"  ? "text-success" :
-                supportQuality.level === "minimal" ? "text-warning" : "text-accent"
-              }`}>{supportQuality.score}/10</div>
-              <div className="text-xs text-muted">Support Score</div>
-            </div>
-          </div>
-          <div className={`rounded-lg border px-4 py-3 mb-4 ${
-            supportQuality.level === "strong"  ? "border-success/30 bg-success/5 text-success" :
-            supportQuality.level === "minimal" ? "border-warning/30 bg-warning/5 text-warning" :
-            "border-accent/30 bg-accent/5 text-accent"
-          }`}>
-            <p className="text-sm font-medium">{supportQuality.label}</p>
-            <p className="text-sm mt-1 opacity-90">{supportQuality.rationale}</p>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
-            {brand.item11.totalTrainingHours != null && (
-              <div className="rounded-lg bg-surface p-3">
-                <span className="text-xs text-muted block mb-1">Total Training Hrs</span>
-                <span className="font-medium text-foreground">{brand.item11.totalTrainingHours}h</span>
-              </div>
-            )}
-            {brand.item11.classroomHours != null && (
-              <div className="rounded-lg bg-surface p-3">
-                <span className="text-xs text-muted block mb-1">Classroom</span>
-                <span className="font-medium text-foreground">{brand.item11.classroomHours}h</span>
-              </div>
-            )}
-            {brand.item11.ojtHours != null && (
-              <div className="rounded-lg bg-surface p-3">
-                <span className="text-xs text-muted block mb-1">OJT / Hands-On</span>
-                <span className="font-medium text-foreground">{brand.item11.ojtHours}h</span>
-              </div>
-            )}
-            {brand.item11.hasFieldSupport != null && (
-              <div className="rounded-lg bg-surface p-3">
-                <span className="text-xs text-muted block mb-1">Field Support</span>
-                <span className={`font-medium ${brand.item11.hasFieldSupport ? "text-success" : "text-muted"}`}>
-                  {brand.item11.hasFieldSupport ? "Yes ✓" : "Not disclosed"}
-                </span>
-              </div>
-            )}
-            {brand.item11.hasOngoingTraining != null && (
-              <div className="rounded-lg bg-surface p-3">
-                <span className="text-xs text-muted block mb-1">Ongoing Training</span>
-                <span className={`font-medium ${brand.item11.hasOngoingTraining ? "text-success" : "text-muted"}`}>
-                  {brand.item11.hasOngoingTraining ? "Yes ✓" : "Not disclosed"}
-                </span>
-              </div>
-            )}
-            {brand.item11.hasAnnualConference != null && (
-              <div className="rounded-lg bg-surface p-3">
-                <span className="text-xs text-muted block mb-1">Annual Conference</span>
-                <span className={`font-medium ${brand.item11.hasAnnualConference ? "text-success" : "text-muted"}`}>
-                  {brand.item11.hasAnnualConference ? "Yes ✓" : "Not disclosed"}
-                </span>
-              </div>
-            )}
-            {brand.item11.hasTechnologySystem != null && (
-              <div className="rounded-lg bg-surface p-3">
-                <span className="text-xs text-muted block mb-1">Technology System</span>
-                <span className={`font-medium ${brand.item11.hasTechnologySystem ? "text-success" : "text-muted"}`}>
-                  {brand.item11.hasTechnologySystem ? "Provided ✓" : "Not disclosed"}
-                </span>
-              </div>
-            )}
-          </div>
-          <p className="text-[10px] text-muted mt-3">
-            Source: FDD Item 11 (Franchisor's Assistance, Advertising, Computer Systems, and Training)
-          </p>
         </section>
         )}
 
@@ -2699,52 +2770,6 @@ export default async function BrandPage({
                 Get Executive Report
               </a>
             </div>
-          </div>
-        </section>
-
-        {/* ── 10. Franchise Overview ── */}
-        <section>
-          <h2 className="text-xl font-semibold text-foreground mb-4">Franchise Overview</h2>
-          <div className="rounded-xl border border-border bg-background overflow-hidden">
-            <table className="w-full text-sm">
-              <tbody>
-                <tr className="table-row-hover border-b border-border">
-                  <td className="px-5 py-3 text-muted font-medium">Parent Company</td>
-                  <td className="px-5 py-3 text-foreground text-right">{brand.parentCompany}</td>
-                </tr>
-                <tr className="table-row-hover border-b border-border">
-                  <td className="px-5 py-3 text-muted font-medium">Year Founded</td>
-                  <td className="px-5 py-3 text-foreground text-right">{brand.yearFounded > 0 ? brand.yearFounded : "—"}</td>
-                </tr>
-                <tr className="table-row-hover border-b border-border">
-                  <td className="px-5 py-3 text-muted font-medium">Franchising Since</td>
-                  <td className="px-5 py-3 text-foreground text-right">{brand.yearFranchisingBegan > 0 ? brand.yearFranchisingBegan : "—"}</td>
-                </tr>
-                <tr className="table-row-hover border-b border-border">
-                  <td className="px-5 py-3 text-muted font-medium">Headquarters</td>
-                  <td className="px-5 py-3 text-foreground text-right">{brand.headquartersState}</td>
-                </tr>
-                <tr className="table-row-hover border-b border-border">
-                  <td className="px-5 py-3 text-muted font-medium">Category</td>
-                  <td className="px-5 py-3 text-foreground text-right">
-                    <Link href={`/category/${brand.category}`} className="text-accent hover:underline">
-                      {categoryLabels[brand.category]}
-                    </Link>
-                    {brand.subcategory && <span className="text-muted ml-1">· {brand.subcategory}</span>}
-                  </td>
-                </tr>
-                {(brand.statesOfOperation ?? 0) > 0 && (
-                <tr className="table-row-hover border-b border-border">
-                  <td className="px-5 py-3 text-muted font-medium">States of Operation</td>
-                  <td className="px-5 py-3 text-foreground text-right">{brand.statesOfOperation}</td>
-                </tr>
-                )}
-                <tr className="table-row-hover">
-                  <td className="px-5 py-3 text-muted font-medium">FDD Year</td>
-                  <td className="px-5 py-3 text-foreground text-right">{brand.fddYear}</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </section>
 
