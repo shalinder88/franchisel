@@ -1,0 +1,268 @@
+{
+  "exhibit": "O1",
+  "title": "Franchised Restaurants as of December 31, 2024",
+  "list_type": "current_franchised",
+  "format_description": "Tabular layout with columns: Franchisee (entity name or surname), Address (street), City, State (2-letter), Zip (5-digit or ZIP+4), Telephone Number, Rest. No. (restaurant number). Entries are sorted alphabetically by state, then by city within each state. Header row 'EXHIBIT O1 / FRANCHISED RESTAURANTS / AS OF DECEMBER 31, 2024' repeated on each page. Some franchisee names include asterisks (e.g., 'GPS Hospitality Partners IV, LLC*') -- asterisk meaning not disclosed in the extracted pages. Spelling note: header misspells 'Telephone' as 'Telepone'.",
+  "page_range": "Pages 592-653 (PDF index 591-652), with page 592 being a blank title page",
+  "total_count_estimate": 5532,
+  "estimation_method": "Regex-counted entries with pattern [2-letter state code] followed by [5-digit zip] across all 61 data pages (index 592-652). Approximately 90 entries per page.",
+  "concentration_signals": {
+    "top_20_states": {
+      "TX": 575,
+      "CA": 483,
+      "FL": 408,
+      "GA": 267,
+      "IL": 253,
+      "NY": 230,
+      "PA": 208,
+      "MI": 189,
+      "OH": 176,
+      "AZ": 171,
+      "NJ": 156,
+      "LA": 127,
+      "MA": 117,
+      "WA": 114,
+      "WI": 112,
+      "AL": 111,
+      "MO": 108,
+      "VA": 105,
+      "CO": 102,
+      "MN": 96
+    },
+    "total_states_represented": 53,
+    "notes": "53 includes DC, PR, VI or similar non-state codes. TX+CA+FL alone represent ~27% of all locations."
+  },
+  "sample_entries": [
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "ALABASTER",
+      "state": "AL",
+      "zip": "35007-8802",
+      "phone": "(205) 620-0120",
+      "restaurant_no": "10327"
+    },
+    {
+      "entity_name": "Schuster",
+      "city": "ALEXANDER CITY",
+      "state": "AL",
+      "zip": "35010-3365",
+      "phone": "(256) 329-2317",
+      "restaurant_no": "5691"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "ANDALUSIA",
+      "state": "AL",
+      "zip": "36420-5203",
+      "phone": "(334) 582-1558",
+      "restaurant_no": "11481"
+    },
+    {
+      "entity_name": "Schuster",
+      "city": "ANNISTON",
+      "state": "AL",
+      "zip": "36201-3853",
+      "phone": "(256) 237-4161",
+      "restaurant_no": "1260"
+    },
+    {
+      "entity_name": "Schuster",
+      "city": "ANNISTON",
+      "state": "AL",
+      "zip": "36207",
+      "phone": "(256) 403-6298",
+      "restaurant_no": "25319"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "ATMORE",
+      "state": "AL",
+      "zip": "36502-2448",
+      "phone": "(251) 321-0167",
+      "restaurant_no": "12520"
+    },
+    {
+      "entity_name": "Schuster",
+      "city": "AUBURN",
+      "state": "AL",
+      "zip": "36832-5872",
+      "phone": "(334) 466-8961",
+      "restaurant_no": "15169"
+    },
+    {
+      "entity_name": "GPS Hospitality Partners IV, LLC*",
+      "city": "BAY MINETTE",
+      "state": "AL",
+      "zip": "36507",
+      "phone": "(601) 286-8084",
+      "restaurant_no": "9447"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "BESSEMER",
+      "state": "AL",
+      "zip": "35022-5200",
+      "phone": "(205) 481-2508",
+      "restaurant_no": "9834"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "BESSEMER",
+      "state": "AL",
+      "zip": "35022-7301",
+      "phone": "(205) 566-4887",
+      "restaurant_no": "17003"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "BESSEMER",
+      "state": "AL",
+      "zip": "35023-2360",
+      "phone": "(205) 436-8202",
+      "restaurant_no": "19958"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "BIRMINGHAM",
+      "state": "AL",
+      "zip": "35209-0000",
+      "phone": "(205) 201-4450",
+      "restaurant_no": "461"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "BIRMINGHAM",
+      "state": "AL",
+      "zip": "35233-1602",
+      "phone": "(205) 593-4419",
+      "restaurant_no": "1069"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "BIRMINGHAM",
+      "state": "AL",
+      "zip": "35208-4711",
+      "phone": "(205) 201-4505",
+      "restaurant_no": "12003"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "BIRMINGHAM",
+      "state": "AL",
+      "zip": "35204-4606",
+      "phone": "(205) 201-4508",
+      "restaurant_no": "12427"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "BIRMINGHAM",
+      "state": "AL",
+      "zip": "35233-3422",
+      "phone": "(205) 337-3172",
+      "restaurant_no": "17389"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "BIRMINGHAM",
+      "state": "AL",
+      "zip": "35214",
+      "phone": "(205) 538-5111",
+      "restaurant_no": "22834"
+    },
+    {
+      "entity_name": "Host Int'l, Inc",
+      "city": "BIRMINGHAM",
+      "state": "AL",
+      "zip": "35212",
+      "phone": "(205) 478-8353",
+      "restaurant_no": "30297"
+    },
+    {
+      "entity_name": "Sago Hospitality, LLC",
+      "city": "BIRMINGHAM",
+      "state": "AL",
+      "zip": "35217-2326",
+      "phone": "(205) 808-9889",
+      "restaurant_no": "5120"
+    },
+    {
+      "entity_name": "Sago Hospitality, LLC",
+      "city": "BIRMINGHAM",
+      "state": "AL",
+      "zip": "35215-8311",
+      "phone": "(205) 838-8470",
+      "restaurant_no": "5501"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "BREWTON",
+      "state": "AL",
+      "zip": "36426-1117",
+      "phone": "(251) 314-1976",
+      "restaurant_no": "7564"
+    },
+    {
+      "entity_name": "Bulldog Restaurants, LLC",
+      "city": "CALERA",
+      "state": "AL",
+      "zip": "35040",
+      "phone": "(205) 690-8578",
+      "restaurant_no": "21983"
+    },
+    {
+      "entity_name": "Sago Hospitality, LLC",
+      "city": "CHELSEA",
+      "state": "AL",
+      "zip": "35043-8312",
+      "phone": "(205) 678-9900",
+      "restaurant_no": "18098"
+    },
+    {
+      "entity_name": "Schuster",
+      "city": "CHILDERSBURG",
+      "state": "AL",
+      "zip": "35044-3038",
+      "phone": "(256) 378-7620",
+      "restaurant_no": "12124"
+    },
+    {
+      "entity_name": "Schuster",
+      "city": "CLANTON",
+      "state": "AL",
+      "zip": "35045-8791",
+      "phone": "(205) 755-4156",
+      "restaurant_no": "6903"
+    }
+  ],
+  "notable_franchisee_entities": [
+    "GPS Hospitality Partners IV, LLC / GPS Hospitality, LLC -- appears across AL, GA, AR and other states; large multi-unit operator",
+    "Bulldog Restaurants, LLC -- dominant in central/southern AL",
+    "Schuster -- appears throughout AL, GA",
+    "Kraf, Inc. -- large AZ operator",
+    "Barnett Jacobs Restaurants LLC / Barnett Jacobs Enterprises, LLC -- large AZ operator",
+    "Velarde -- dominant WI operator (appears on nearly every WI entry)",
+    "Northeast Foods, LLC -- dominant MA operator",
+    "Ambrosia QSR Burger, LLC -- dominant WA operator",
+    "Army Air Force Exchange Services -- appears in military locations across multiple states",
+    "Host Int'l, Inc -- airport locations",
+    "TA Operating LLC -- travel center locations",
+    "Flis Enterprises, Inc. -- AR operator",
+    "Kingdom Restaurants, LLC -- SC coastal operator",
+    "APPLEGREEN SOUTH CAROLINA (FTG), LLC -- SC operator",
+    "Carolina Franchise Holding, LLC -- SC/GA operator",
+    "Rackson Restaurants, LLC -- NY (Bronx) operator"
+  ],
+  "confidentiality_signals": "No explicit confidentiality or gag-clause language observed within the Exhibit O1 list pages themselves. The list header contains no speech-limitation notices. However, the Digital Services Agreement (Exhibit V) contains extensive confidentiality provisions (Section 6) requiring Franchisee to protect Confidential Information and restricting dissemination, with Provider entitled to equitable relief for breaches.",
+  "ceased_operations_exhibit": {
+    "exhibit": "O3",
+    "title": "Franchisees That Have Ceased Operations as of December 31, 2024",
+    "page_range": "Pages 676+ (PDF index 675+), with page 676 being a blank title page",
+    "format_description": "Tabular layout with columns: Franchisee Name, City, State, Phone #. Notably LESS detail than O1 -- no street address, no zip code, no restaurant number. Sorted alphabetically by state, then city.",
+    "observations": [
+      "Premier Kings, Inc. and Premier Kings of North Alabama, LLC dominate the AL ceased-operations entries -- these appear to be a large operator that exited the system",
+      "Sidhu also appears frequently in AL ceased operations",
+      "Many ceased-operation entries share the same phone number (334) 649-1122 across different franchisee names and cities, suggesting a corporate contact number for a defunct multi-unit operator",
+      "Nashville Quality, LLC appears with ceased locations in AL (Decatur, Oneonta, Russellville)"
+    ]
+  }
+}
