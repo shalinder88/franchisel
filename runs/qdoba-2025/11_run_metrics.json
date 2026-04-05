@@ -1,0 +1,132 @@
+{
+  "brand": "Qdoba Mexican Eats",
+  "fdd_id": "640022",
+  "fdd_date": "2025-12-09",
+  "pdf": "640022-2025-Qdoba-Qdoba-Mexican-Eats-Qdoba-Mexican-Grill.pdf",
+  "pdf_pages": 437,
+  "canonical_scored": "09_final_canonical.json",
+  "scored_at": "2026-04-04",
+
+  "interactive_runtime_seconds": null,
+  "automated_runtime_seconds": null,
+  "runtime_measurement_status": "not_measured_interactive_run",
+
+  "panel_a_score": 100.0,
+  "panel_b_score": 41.2,
+  "panel_c_score_if_available": 55.0,
+  "base_composite_score": 61.6,
+  "enriched_v1_composite_score": 71.2,
+  "enriched_v2_composite_score": 72.8,
+  "final_score_version": "enriched_v2",
+
+  "enriched_score_detail": {
+    "v1_canonical": "11_canonical_enriched.json",
+    "v1_panel_b": 60.3,
+    "v1_scorecard": "12_scorecard_enriched.json",
+    "v2_canonical": "12_canonical_enriched_v2.json",
+    "v2_panel_b": 63.5,
+    "v2_scorecard": "13_scorecard_enriched_v2.json",
+    "note": "Post-run enrichment passes only; no new PDF reads in either pass"
+  },
+
+  "retry_tasks_generated_count": 3,
+  "retries_executed_count": 3,
+
+  "retry_manifest": [
+    {
+      "task": 1,
+      "name": "Item 21 / Exhibit A financial statement extraction",
+      "output_file": "retry_item21.md",
+      "priority": "HIGH",
+      "executed": true,
+      "outcome": "All 4 primary financial statements decoded via CID font mapping (balance sheet, income statement, member's equity rollforward, cash flows). Notes to financial statements (pp 83-95+) decoded but not fully structured. Qdoba Corporation separate financials located but not decoded."
+    },
+    {
+      "task": 2,
+      "name": "Exhibit H state-specific addenda extraction",
+      "output_file": "retry_state_addenda.md",
+      "priority": "HIGH",
+      "executed": true,
+      "outcome": "All 10 registration states extracted in full: CA, HI, IL, MI, MN, NY, ND, RI, VA, WA. Material overrides to noncompete, interest rate cap, forum selection, cure periods, general release scope, and governing law captured for each state."
+    },
+    {
+      "task": 3,
+      "name": "Item 20 Tables 3-4 full JSON structuring",
+      "output_file": "retry_item20_full_tables.json",
+      "priority": "LOW",
+      "executed": true,
+      "outcome": "Table 3 (franchised outlets by state, all 3 fiscal years) and Table 4 (company-owned outlets by state) fully structured as JSON. All 5 Item 20 tables now complete."
+    }
+  ],
+
+  "item19_complete": true,
+  "item20_complete": true,
+  "item21_complete": false,
+
+  "high_risk_extraction_omissions_remaining_count": 0,
+  "high_risk_business_risk_flags_count": 2,
+
+  "extraction_omission_detail": {
+    "original_high_count": 2,
+    "resolved_by_retry": 2,
+    "resolved": [
+      "Financial statement numerical content (Exhibit A) — resolved by retry_item21.md",
+      "State-Specific Addenda (Exhibit H) — resolved by retry_state_addenda.md"
+    ],
+    "remaining_medium_omissions": [
+      "Franchise Agreement operative text (Exhibit E-1) — not read; Item 17 summary used as proxy",
+      "General Release scope (Exhibit J) — not read; state addenda limitations noted",
+      "Financial statement notes (pp 83-95+) — decoded but not fully structured (located_not_parsed)",
+      "Qdoba Corporation separate financial statements — located but not decoded (located_not_parsed)"
+    ],
+    "remaining_low_omissions": [
+      "Franchisee list (Exhibit D) — not read; reference call list not extractable"
+    ]
+  },
+
+  "business_risk_flags": [
+    "QRC performs franchisor support services but is not contractually obligated to franchisees and does not guarantee the franchise agreement directly; structural separation between obligated entity (Qdoba Franchisor LLC) and performing entity (QRC)",
+    "November 2023 securitization transferred franchise agreements and IP to an SPE — impact on franchisee rights in a franchisor default or restructuring scenario not addressed in the Items text"
+  ],
+
+  "unresolved_count": 10,
+  "unresolved_by_severity": {
+    "high": 2,
+    "medium": 6,
+    "low": 2
+  },
+
+  "contradictions_count": 1,
+  "contradictions_detail": [
+    "Item 19 Chart 2 (464 restaurants, avg $1,697,254) vs Chart 3 (397 restaurants, avg $1,661,277) — different sample sizes and trailing periods; documented as non-contradiction with resolution note"
+  ],
+
+  "coverage_summary": {
+    "items_fully_covered": [
+      "cover", "item1", "item2", "item3", "item4", "item5", "item6",
+      "item7", "item8", "item9", "item10", "item11", "item12", "item13",
+      "item14", "item15", "item16", "item17", "item18", "item19",
+      "item20", "item22", "item23"
+    ],
+    "items_partially_covered": ["item21"],
+    "items_not_covered": [],
+    "item21_partial_reason": "Primary financial statements decoded (4 statements). Notes to financial statements and Qdoba Corporation separate financials remain located_not_parsed."
+  },
+
+  "manual_correction_time_minutes": null,
+
+  "pipeline_execution_mode": "interactive",
+  "pipeline_controller_status": "failed",
+  "pipeline_controller_error": "claude CLI not found — all 8 pipeline steps errored immediately; run_log.json records total_duration_s: 0.02 (controller overhead only)",
+
+  "notes": [
+    "runtime: pipeline controller (run_log.json) failed before executing any steps — 'claude CLI not found'. Extraction was performed interactively across multiple Claude Code sessions. No wall-clock time captured for either interactive or automated runtime.",
+    "base_composite_score (61.6) reflects 09_final_canonical.json scored against 640022-2025-Qdoba-GOLD.json. enriched_v1 (71.2) and enriched_v2 (72.8) reflect post-run promotion passes without re-reading the PDF.",
+    "item19_complete is true: fully covered in base extraction per 06_coverage_audit.md Section A; no retry generated or executed for Item 19.",
+    "item20_complete is true: retry_item20_full_tables.json added Tables 3-4 (all state-level rows, all years); all 5 Item 20 tables now complete.",
+    "item21_complete is false: 4 primary statements decoded via CID font mapping; notes (pp 83-95+) and Qdoba Corporation separate financials remain located_not_parsed.",
+    "high_risk_extraction_omissions_remaining_count is 0: both original HIGH extraction gaps (financials, state addenda) resolved by retries.",
+    "high_risk_business_risk_flags_count is 2: QRC structural separation and securitization SPE impact — these are preserved analytical risks in the canonical unresolveds, not extraction failures.",
+    "unresolved_count of 10 sourced from canonical unresolveds array (2 high / 6 medium / 2 low). contradictions_count of 1 sourced from canonical contradictions array."
+  ]
+}

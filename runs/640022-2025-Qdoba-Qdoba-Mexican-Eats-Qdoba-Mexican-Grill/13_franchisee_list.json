@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "source": "Exhibit D — List of Current Franchised Locations and Former Franchisees",
+    "as_of_date": "September 28, 2025",
+    "page_range": "132-163",
+    "list_types": ["current_franchised_locations", "former_franchisees", "signed_not_opened"]
+  },
+  "current_franchised_locations": {
+    "total_count": 652,
+    "page_range": "132-160",
+    "sample_entities": [
+      {"rest_no": "1704", "entity": "QSR, LLC", "city": "Birmingham", "state": "Alabama", "phone": "(205) 202-2517"},
+      {"rest_no": "1716", "entity": "Flavors West, LLC", "city": "Anchorage", "state": "Alaska", "phone": "(907) 339-9611"},
+      {"rest_no": "1740", "entity": "Burrito Concepts, LLC", "city": "Fayetteville", "state": "Arkansas", "phone": "(479) 444-6009"},
+      {"rest_no": "1758", "entity": "Cali Queso Corporation", "city": "Walnut Creek", "state": "California", "phone": "(925) 430-2624"},
+      {"rest_no": "1765", "entity": "Tres Rouge Burros, LLC", "city": "Colorado Springs", "state": "Colorado", "phone": "(719) 264-6185"}
+    ],
+    "concentration_signals": {
+      "multi_unit_operators_observed": [
+        {"entity": "Flavors West, LLC", "states_observed": ["Alaska", "Colorado"], "estimated_units": "10+"},
+        {"entity": "Tres Rouge Burros, LLC", "states_observed": ["Colorado"], "estimated_units": "5+"},
+        {"entity": "Burrito Concepts, LLC", "states_observed": ["Arkansas"], "estimated_units": "3+"},
+        {"entity": "Army and Air Force Exchange Service", "states_observed": ["Alabama", "Arizona", "California", "multiple"], "estimated_units": "10+", "note": "Non-traditional military locations"},
+        {"entity": "Sodexo Operations, LLC", "states_observed": ["Arizona", "California", "Colorado", "multiple"], "estimated_units": "10+", "note": "Non-traditional university/institutional locations"},
+        {"entity": "ARAMARK Food & Support Services Group, Inc", "states_observed": ["Arizona", "Colorado", "multiple"], "estimated_units": "5+", "note": "Non-traditional institutional locations"},
+        {"entity": "North Fork Fresh Mex, LLC", "states_observed": ["Missouri", "Indiana", "Kentucky", "multiple"], "estimated_units": "30+", "note": "Major multi-unit operator"},
+        {"entity": "Shore Front, LLC", "states_observed": ["Arizona", "California"], "estimated_units": "3+"},
+        {"entity": "SSP America, Inc.", "states_observed": ["California"], "estimated_units": "1+", "note": "Airport locations"},
+        {"entity": "QSR, LLC", "states_observed": ["Alabama", "multiple"], "estimated_units": "5+"}
+      ],
+      "note": "Full entity-level concentration analysis requires parsing all 29 pages of current locations. The above reflects entities observed in the first few pages of Exhibit D."
+    },
+    "non_traditional_operators_observed": [
+      "Army and Air Force Exchange Service",
+      "Sodexo Operations, LLC",
+      "ARAMARK Food & Support Services Group, Inc",
+      "Compass Group USA, Inc",
+      "SSP America, Inc.",
+      "Cal Poly Pomona"
+    ]
+  },
+  "former_franchisees": {
+    "page_range": "161-162",
+    "store_transfers_franchise_to_company": [
+      {"entity": "VNP Ventures, Inc", "address": "100 Peterson Plank Rd, #42, Jersey City, NJ 07307", "stores": ["#2070 Hoboken NJ", "#2126 Denville NJ", "#2225 Westfield NJ", "#2701 Morristown NJ"], "count": 4},
+      {"entity": "PGD Holdings, LLC", "address": "8077 Valhalla Dr, Delray Beach, FL 33446", "stores": ["#3089 Pembroke Pines FL", "#3128 Davie FL", "#3160 North Miami Beach FL", "#3161 Delray Beach FL"], "count": 4}
+    ],
+    "store_transfers_franchisee_to_franchisee": [
+      {"entity": "Brooks Hospitality LLC", "address": "408 Mill St, Coraopolis, PA 15108", "stores": ["#2166 Pittsburgh PA"], "count": 1},
+      {"entity": "Sodexo Operations LLC", "address": "9801 Washington Blvd, Gaithersburg, MD 20878", "stores": ["#1938 Los Angeles CA"], "count": 1},
+      {"entity": "QCarolina Restaurants, LLC", "address": "207 Regency Executive, Ste 160, Charlotte, NC 28217", "stores": ["#2072 Charlotte NC", "#2084 Matthews NC", "#2161 Charlotte NC", "#2215 Apex NC", "#2569 Matthews NC", "#2589 Gastonia NC", "#2612 Knightdale NC", "#2627 Charlotte NC", "#2996 Charlotte NC"], "count": 9}
+    ],
+    "store_closures_franchise": [
+      {"store": "#2203", "closed_date": "11/25/2024", "city": "Raleigh", "state": "NC", "operator": "QCarolina Restaurants, LLC"},
+      {"store": "#3121", "closed_date": "12/23/2024", "city": "Hammond", "state": "LA", "operator": "Set2Win Enterprises, LLC"},
+      {"store": "#2032", "closed_date": "12/27/2024", "city": "Indianapolis", "state": "IN", "operator": "North Fork Fresh Mex, LLC"},
+      {"store": "#2472", "closed_date": "12/28/2024", "city": "Nampa", "state": "ID", "operator": "Rojo Caliente Idaho, Inc"},
+      {"store": "#2827", "closed_date": "1/1/2025", "city": "Jersey City", "state": "NJ", "operator": "TIG Queso, LLC"},
+      {"store": "#1959", "closed_date": "1/10/2025", "city": "Highland Heights", "state": "KY", "operator": "Compass Group USA, Inc"},
+      {"store": "#3225", "closed_date": "2/16/2025", "city": "Irvine", "state": "CA", "operator": "Shore Front LLC"},
+      {"store": "#2999", "closed_date": "4/28/2025", "city": "Louisville", "state": "KY", "operator": "North Fork Fresh Mex, LLC"},
+      {"store": "#2117", "closed_date": "6/16/2025", "city": "Lexington", "state": "KY", "operator": "North Fork Fresh Mex, LLC"}
+    ],
+    "total_closures_fy2025": 9
+  },
+  "signed_not_opened": {
+    "page_range": "163",
+    "count": 14,
+    "locations": [
+      {"store": "#3080", "city": "Vestal", "state": "New York"},
+      {"store": "#3147", "city": "Hoover", "state": "Alabama"},
+      {"store": "#3347", "city": "Washington", "state": "DC"},
+      {"store": "#3338", "city": "MacDill", "state": "Florida"},
+      {"store": "#3216", "city": "Nampa", "state": "Idaho"},
+      {"store": "#3199", "city": "South Bend", "state": "Indiana"},
+      {"store": "#3305", "city": "Michigan City", "state": "Indiana"},
+      {"store": "#3266", "city": "Franklin", "state": "Indiana"},
+      {"store": "#3286", "city": "Danville", "state": "Kentucky"},
+      {"store": "#3346", "city": "Marshall", "state": "Missouri"},
+      {"store": "#3287", "city": "Jefferson City", "state": "Missouri"},
+      {"store": "#3244", "city": "Hamilton", "state": "New Jersey"},
+      {"store": "#3284", "city": "Humble", "state": "Texas"},
+      {"store": "#3205", "city": "Roanoke", "state": "Virginia"}
+    ]
+  },
+  "franchisees_not_communicated_10_weeks": {
+    "value": "None",
+    "source_page": 163
+  }
+}

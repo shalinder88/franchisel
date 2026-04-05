@@ -1,0 +1,971 @@
+{
+  "_meta": {
+    "version": "enriched_v1",
+    "base_canonical": "09_final_canonical.json",
+    "enrichment_sources": [
+      "03_tables.json",
+      "04_exhibits.json",
+      "08_final_report.md",
+      "09_final_canonical.json",
+      "retry_item20_full_tables.json",
+      "retry_item21.md",
+      "retry_state_addenda.md"
+    ],
+    "promotion_note": "All new families promoted from existing evidence files. No new PDF reads. No invented facts.",
+    "pipeline_version": "serial_v1"
+  },
+
+  "franchisor_identity": {
+    "entity": {"value": "Qdoba Franchisor LLC", "source_object": "cover_page", "source_section": "Item 1", "source_pages": [1, 7], "confidence": "very_high", "status": "surfaced"},
+    "entityType": {"value": "Delaware limited liability company", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [7], "confidence": "very_high", "status": "surfaced"},
+    "parentCompany": {"value": "Qdoba Funding LLC → Qdoba Funding Holdco LLC → Qdoba Restaurant Corporation → Qdoba Corporation → New MRC Holdings LLC", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [9, 10], "confidence": "high", "status": "surfaced"},
+    "ultimateParent": {"value": "New MRC Holdings, LLC (Butterfly Equity LP is sponsor)", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [10], "confidence": "high", "status": "surfaced"},
+    "publiclyTraded": {"value": false, "source_object": "item1_text", "source_section": "Item 1", "source_pages": [7], "confidence": "high", "status": "surfaced"},
+    "principalAddress": {"value": "350 Camino De La Reina, Suite 400, San Diego, California 92108", "source_object": "cover_page", "source_section": "Cover", "source_pages": [1], "confidence": "very_high", "status": "surfaced"},
+    "stateOfIncorporation": {"value": "Delaware", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [7], "confidence": "very_high", "status": "surfaced"},
+    "franchiseSystemName": {"value": "Qdoba / Qdoba Mexican Eats / Qdoba Mexican Grill", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [7], "confidence": "very_high", "status": "surfaced"},
+    "description": {"value": "Fast-casual Mexican restaurants", "source_object": "cover_page", "source_section": "Cover", "source_pages": [1], "confidence": "very_high", "status": "surfaced"},
+    "franchiseSystemStartYear": {"value": 1997, "source_object": "item1_text", "source_section": "Item 1", "source_pages": [7], "confidence": "high", "status": "surfaced"},
+    "entityFormationYear": {"value": 2023, "source_object": "item1_text", "source_section": "Item 1", "source_pages": [7], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "issuance_date": {"value": "December 9, 2025", "source_object": "cover_page", "source_section": "Cover", "source_pages": [1], "confidence": "very_high", "status": "surfaced"},
+  "fiscal_year_end": {"value": "September 28, 2025", "source_object": "item19_text", "source_section": "Item 19", "source_pages": [59], "confidence": "very_high", "status": "surfaced"},
+
+  "formats": {
+    "traditional": {"value": "Strip shopping centers / freestanding, 1,500-3,000 sq ft, 15-80 seats", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [8], "confidence": "high", "status": "surfaced"},
+    "nonTraditional": {"value": "Airports, universities, military, sports arenas, casinos, grocery stores — under License Agreement", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [9], "confidence": "high", "status": "surfaced"}
+  },
+
+  "development_structure": {
+    "singleUnit": {"value": "Franchise Agreement (Exhibit E-1)", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [9], "confidence": "very_high", "status": "surfaced"},
+    "multiUnit": {"value": "Development Agreement (Exhibit F), minimum 1 restaurant", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [9], "confidence": "very_high", "status": "surfaced"},
+    "nonTraditional": {"value": "License Agreement (Exhibit E-2)", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [9], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "initial_fees": {
+    "initialFranchiseFee": {"value": 40000, "source_object": "item5_text", "source_section": "Item 5", "source_pages": [16], "confidence": "very_high", "status": "surfaced"},
+    "initialFranchiseFeeNonTraditional": {"value": 20000, "source_object": "item5_text", "source_section": "Item 5", "source_pages": [16], "confidence": "very_high", "status": "surfaced"},
+    "developmentFee": {"value": 10000, "source_object": "item5_text", "source_section": "Item 5", "source_pages": [16], "confidence": "very_high", "status": "surfaced"},
+    "developmentFeeCreditedToFranchiseFee": {"value": true, "source_object": "item5_text", "source_section": "Item 5", "source_pages": [16], "confidence": "very_high", "status": "surfaced"},
+    "vetfranDiscount": {"value": 10000, "source_object": "item5_text", "source_section": "Item 5", "source_pages": [17], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "recurring_fees": {
+    "royaltyRate": {"value": "5%", "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [17], "confidence": "very_high", "status": "surfaced"},
+    "royaltyRateNonTraditional": {"value": "6%", "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [17], "confidence": "very_high", "status": "surfaced"},
+    "royaltyStructure": {"value": "percentage", "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [17], "confidence": "very_high", "status": "surfaced"},
+    "marketingFundRate": {"value": "4.50%", "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [17], "confidence": "very_high", "status": "surfaced"},
+    "marketingFundRateNonTraditional": {"value": "1.75%", "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [17], "confidence": "very_high", "status": "surfaced"},
+    "marketingFundMaxRate": {"value": "6%", "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [17], "confidence": "very_high", "status": "surfaced"},
+    "localAdvertisingRequired": {"value": false, "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [18], "confidence": "high", "status": "surfaced"},
+    "grandOpeningAdSpend": {"value": "$10,000-$25,000", "source_object": "item7_traditional", "source_section": "Item 7", "source_pages": [27], "confidence": "very_high", "status": "surfaced"},
+    "technologyFee": {"value": "$250/period + 0.21% weekly gross sales (IT Support) + $6,300-$18,600/yr (IT Base)", "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [19], "confidence": "high", "status": "surfaced"},
+    "renewalFee": {"value": 10000, "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [20], "confidence": "very_high", "status": "surfaced"},
+    "transferFee": {"value": "up to $5,000", "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [20], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "initial_investment": {
+    "totalInvestmentLow": {"value": 548100, "source_object": "item7_traditional", "source_section": "Item 7", "source_pages": [23], "confidence": "very_high", "status": "surfaced"},
+    "totalInvestmentHigh": {"value": 1294000, "source_object": "item7_traditional", "source_section": "Item 7", "source_pages": [24], "confidence": "very_high", "status": "surfaced"},
+    "totalInvestmentLowNonTraditional": {"value": 234500, "source_object": "item7_nontraditional", "source_section": "Item 7", "source_pages": [25], "confidence": "very_high", "status": "surfaced"},
+    "totalInvestmentHighNonTraditional": {"value": 898000, "source_object": "item7_nontraditional", "source_section": "Item 7", "source_pages": [26], "confidence": "very_high", "status": "surfaced"},
+    "cashIncentive": {"value": "Up to $100,000 per restaurant, first 150 qualifying", "source_object": "item1_text", "source_section": "Item 1", "source_pages": [8], "confidence": "high", "status": "surfaced"},
+    "financingOffered": {"value": false, "source_object": "item10_text", "source_section": "Item 10", "source_pages": [34], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "training_burden": {
+    "doTrainingWeeks": {"value": 7, "source_object": "item11_text", "source_section": "Item 11", "source_pages": [41], "confidence": "very_high", "status": "surfaced"},
+    "doTrainingHours": {"value": 315, "source_object": "item11_table_b", "source_section": "Item 11", "source_pages": [44], "confidence": "very_high", "status": "surfaced"},
+    "gmTrainingWeeks": {"value": 6, "source_object": "item11_text", "source_section": "Item 11", "source_pages": [41], "confidence": "very_high", "status": "surfaced"},
+    "gmTrainingHours": {"value": 270, "source_object": "item11_table_b", "source_section": "Item 11", "source_pages": [44], "confidence": "very_high", "status": "surfaced"},
+    "trainingFeeFirstFour": {"value": 0, "source_object": "item11_text", "source_section": "Item 11", "source_pages": [41], "confidence": "very_high", "status": "surfaced"},
+    "certifiedTrainingRestaurantRatio": {"value": "1 per 10 locations", "source_object": "item11_text", "source_section": "Item 11", "source_pages": [42], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "tech_burden": {
+    "posCost": {"value": "$24,000-$35,000", "source_object": "item11_text", "source_section": "Item 11", "source_pages": [40], "confidence": "high", "status": "surfaced"},
+    "avgAnnualMaintenance": {"value": "less than $17,000", "source_object": "item11_text", "source_section": "Item 11", "source_pages": [40], "confidence": "high", "status": "surfaced"},
+    "upgradeFrequencyLimit": {"value": "none", "source_object": "item11_text", "source_section": "Item 11", "source_pages": [40], "confidence": "very_high", "status": "surfaced"},
+    "franchsorDataAccess": {"value": "Independent access to all systems and electronically collected data", "source_object": "item11_text", "source_section": "Item 11", "source_pages": [40], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "supplier_control": {
+    "requiredPurchasesPctEstablishing": {"value": "50-90%", "source_object": "item8_text", "source_section": "Item 8", "source_pages": [30], "confidence": "high", "status": "surfaced"},
+    "requiredPurchasesPctOperating": {"value": "~40%", "source_object": "item8_text", "source_section": "Item 8", "source_pages": [30], "confidence": "high", "status": "surfaced"},
+    "supplyChainFeePerCase": {"value": "$0.25", "source_object": "item8_text", "source_section": "Item 8", "source_pages": [30], "confidence": "very_high", "status": "surfaced"},
+    "supplyChainFeeTotalFY2025": {"value": 1304194, "source_object": "item8_text", "source_section": "Item 8", "source_pages": [30], "confidence": "very_high", "status": "surfaced"},
+    "qrcRevenueFromFranchisees": {"value": 50845000, "source_object": "item8_text", "source_section": "Item 8", "source_pages": [30], "confidence": "very_high", "status": "surfaced"},
+    "qrcRevenueFromFranchiseesPct": {"value": "13.2%", "source_object": "item8_text", "source_section": "Item 8", "source_pages": [30], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "territory": {
+    "exclusiveTerritory": {"value": false, "source_object": "item12_text", "source_section": "Item 12", "source_pages": [45], "confidence": "very_high", "status": "surfaced"},
+    "protectedRadius": {"value": "generally 2 miles (negotiable)", "source_object": "item12_text", "source_section": "Item 12", "source_pages": [46], "confidence": "very_high", "status": "surfaced"},
+    "nonTraditionalCarveout": {"value": true, "source_object": "item12_text", "source_section": "Item 12", "source_pages": [46], "confidence": "very_high", "status": "surfaced"},
+    "dissimilarChannelCarveout": {"value": true, "source_object": "item12_text", "source_section": "Item 12", "source_pages": [46], "confidence": "very_high", "status": "surfaced"},
+    "internetChannelReserved": {"value": true, "source_object": "item12_text", "source_section": "Item 12", "source_pages": [46], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "noncompete": {
+    "inTermScope": {"value": "No Mexican food business with 20%+ burritos/tacos/bowls", "source_object": "item17_table", "source_section": "Item 17", "source_pages": [53], "confidence": "very_high", "status": "surfaced"},
+    "postTermYears": {"value": 2, "source_object": "item17_table", "source_section": "Item 17", "source_pages": [53], "confidence": "very_high", "status": "surfaced"},
+    "postTermMiles": {"value": 5, "source_object": "item17_table", "source_section": "Item 17", "source_pages": [53], "confidence": "very_high", "status": "surfaced"},
+    "postTermScope": {"value": "5 miles from Accepted Location or any Qdoba restaurant existing at termination/expiration", "source_object": "item17_table", "source_section": "Item 17", "source_pages": [53], "confidence": "very_high", "status": "surfaced"},
+    "stateOverrides": {
+      "california": {"value": "may be unenforceable under California law", "source_object": "state_addendum_CA", "source_section": "Exhibit H", "source_pages": [335], "confidence": "very_high", "status": "surfaced"},
+      "michigan": {"value": "enforceable only during reasonable time and within reasonable area; court may revise if unreasonable", "source_object": "state_addendum_MI", "source_section": "Exhibit H", "source_pages": [364], "confidence": "very_high", "status": "surfaced"},
+      "minnesota": {"value": "limited to 2 years after termination/expiration within the area of the franchise (Minn. Stat. § 80C.21)", "source_object": "state_addendum_MN", "source_section": "Exhibit H", "source_pages": [367], "confidence": "very_high", "status": "surfaced"},
+      "north_dakota": {"value": "generally unenforceable in North Dakota", "source_object": "state_addendum_ND", "source_section": "Exhibit H", "source_pages": [383], "confidence": "very_high", "status": "surfaced"},
+      "new_york": {"value": "enforceable only if reasonable in scope", "source_object": "state_addendum_NY", "source_section": "Exhibit H", "source_pages": [375], "confidence": "very_high", "status": "surfaced"}
+    }
+  },
+
+  "term_renewal_transfer": {
+    "initialTermYears": {"value": 10, "source_object": "item17_table", "source_section": "Item 17", "source_pages": [50], "confidence": "very_high", "status": "surfaced"},
+    "renewalAvailable": {"value": true, "source_object": "item17_table", "source_section": "Item 17", "source_pages": [51], "confidence": "very_high", "status": "surfaced"},
+    "renewalTermsMayDiffer": {"value": true, "source_object": "item17_table", "source_section": "Item 17", "source_pages": [51], "confidence": "very_high", "status": "surfaced"},
+    "transferFee": {"value": "up to $5,000", "source_object": "item17_table", "source_section": "Item 17", "source_pages": [52], "confidence": "very_high", "status": "surfaced"},
+    "rightOfFirstRefusal": {"value": true, "source_object": "item17_table", "source_section": "Item 17", "source_pages": [52], "confidence": "very_high", "status": "surfaced"},
+    "forum": {"value": "San Diego, California", "source_object": "item17_table", "source_section": "Item 17", "source_pages": [53], "confidence": "very_high", "status": "surfaced"},
+    "governingLaw": {"value": "California", "source_object": "item17_table", "source_section": "Item 17", "source_pages": [53], "confidence": "very_high", "status": "surfaced"},
+    "mandatoryArbitration": {"value": false, "source_object": "item17_table", "source_section": "Item 17", "source_pages": [53], "confidence": "very_high", "status": "surfaced"},
+    "mandatoryMediation": {"value": true, "source_object": "item17_table", "source_section": "Item 17", "source_pages": [53], "confidence": "very_high", "status": "surfaced"},
+    "forumStateOverrides": {
+      "illinois": {"value": "Forum outside Illinois void (§4 IL Franchise Disclosure Act); arbitration outside IL permitted", "source_object": "state_addendum_IL", "source_section": "Exhibit H", "source_pages": [348], "confidence": "very_high", "status": "surfaced"},
+      "minnesota": {"value": "San Diego forum clause does not abrogate franchisee rights under Minn. Stat. Ch. 80C", "source_object": "state_addendum_MN", "source_section": "Exhibit H", "source_pages": [367], "confidence": "very_high", "status": "surfaced"},
+      "north_dakota": {"value": "Forum selection outside North Dakota void (ND § 51-19-09)", "source_object": "state_addendum_ND", "source_section": "Exhibit H", "source_pages": [383], "confidence": "very_high", "status": "surfaced"},
+      "rhode_island": {"value": "Forum restriction outside Rhode Island void (RI § 19-28.1-14)", "source_object": "state_addendum_RI", "source_section": "Exhibit H", "source_pages": [390], "confidence": "very_high", "status": "surfaced"},
+      "new_york": {"value": "Lawsuit must be permitted in New York (NY GBL § 687.4, § 687.5)", "source_object": "state_addendum_NY", "source_section": "Exhibit H", "source_pages": [375], "confidence": "very_high", "status": "surfaced"},
+      "washington": {"value": "Franchisee may bring suit in Washington state courts for Washington franchise law violations", "source_object": "state_addendum_WA", "source_section": "Exhibit H", "source_pages": [395], "confidence": "very_high", "status": "surfaced"}
+    }
+  },
+
+  "item18_public_figure": {"value": false, "source_object": "item18_text", "source_section": "Item 18", "source_pages": [58], "confidence": "very_high", "status": "surfaced"},
+
+  "item19_performance": {
+    "hasItem19": {"value": true, "source_object": "item19_text", "source_section": "Item 19", "source_pages": [59], "confidence": "very_high", "status": "surfaced"},
+    "item19_avgRevenue": {"value": 1697254, "source_object": "item19_chart2", "source_section": "Item 19", "source_pages": [60], "confidence": "very_high", "status": "surfaced"},
+    "item19_medianRevenue": {"value": 1596761, "source_object": "item19_chart2", "source_section": "Item 19", "source_pages": [60], "confidence": "very_high", "status": "surfaced"},
+    "item19_sampleSize": {"value": 464, "source_object": "item19_chart2", "source_section": "Item 19", "source_pages": [60], "confidence": "very_high", "status": "surfaced"},
+    "item19_ebitdaAvg": {"value": 254430, "source_object": "item19_chart3", "source_section": "Item 19", "source_pages": [61], "confidence": "very_high", "status": "surfaced"},
+    "item19_ebitdaPctSales": {"value": "15.3%", "source_object": "item19_chart3", "source_section": "Item 19", "source_pages": [61], "confidence": "very_high", "status": "surfaced"},
+    "item19_dataIsUnaudited": {"value": true, "source_object": "item19_notes", "source_section": "Item 19", "source_pages": [62], "confidence": "very_high", "status": "surfaced"},
+    "item19_64RestaurantsNotLoaded": {"value": true, "source_object": "item19_notes", "source_section": "Item 19", "source_pages": [60], "confidence": "very_high", "status": "surfaced"},
+    "item19_advertisingRateInData": {"value": "4.0% (historical FY2025)", "source_object": "item19_chart3_notes", "source_section": "Item 19", "source_pages": [62], "confidence": "very_high", "status": "surfaced"},
+    "item19_advertisingRateCurrent": {"value": "4.5% (effective September 29, 2025)", "source_object": "item6_other_fees", "source_section": "Item 6", "source_pages": [17], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "item19_chart_detail": {
+    "_source": "03_tables.json — item19_chart1, item19_chart2, item19_chart3",
+    "_source_pages": [59, 60, 61, 62],
+    "chart1": {
+      "title": "Chart 1: Overall Franchise Sales Growth — Same Store",
+      "sample_size": {"value": 390, "status": "surfaced"},
+      "sample_description": {"value": "Franchised traditional restaurants open and franchisee-operated for full FY2023–FY2025", "status": "surfaced"},
+      "excluded": {"value": "13 Canadian, 123 non-traditional, 5 refranchised, 38 newly opened in last FY, 81 closed 21+ days", "status": "surfaced"},
+      "data_basis": {"value": "Unaudited POS-transmitted sales", "status": "surfaced"},
+      "by_year": {
+        "FY2023": {
+          "date_range": "10/3/2022 – 10/1/2023",
+          "total_same_store_sales": {"value": 608065441, "status": "surfaced"},
+          "avg_net_sales_per_unit": {"value": 1559142, "status": "surfaced"},
+          "yoy_growth": {"value": "5.6%", "status": "surfaced"},
+          "median_net_sales": {"value": 1476793, "status": "surfaced"},
+          "high_net_sales": {"value": 4708597, "status": "surfaced"},
+          "low_net_sales": {"value": 431709, "status": "surfaced"}
+        },
+        "FY2024": {
+          "date_range": "10/2/2023 – 9/29/2024",
+          "total_same_store_sales": {"value": 656327176, "status": "surfaced"},
+          "avg_net_sales_per_unit": {"value": 1682890, "status": "surfaced"},
+          "yoy_growth": {"value": "7.9%", "status": "surfaced"},
+          "median_net_sales": {"value": 1607864, "status": "surfaced"},
+          "high_net_sales": {"value": 5492729, "status": "surfaced"},
+          "low_net_sales": {"value": 417422, "status": "surfaced"}
+        },
+        "FY2025": {
+          "date_range": "9/30/2024 – 9/28/2025",
+          "total_same_store_sales": {"value": 689075573, "status": "surfaced"},
+          "avg_net_sales_per_unit": {"value": 1766860, "status": "surfaced"},
+          "yoy_growth": {"value": "5.0%", "status": "surfaced"},
+          "median_net_sales": {"value": 1647607, "status": "surfaced"},
+          "high_net_sales": {"value": 5078990, "status": "surfaced"},
+          "low_net_sales": {"value": 422629, "status": "surfaced"}
+        }
+      }
+    },
+    "chart2": {
+      "title": "Chart 2: Franchised Qdoba Restaurants — Average Net Sales by Quartile",
+      "sample_size": {"value": 464, "status": "surfaced"},
+      "sample_description": {"value": "Franchised traditional restaurants open ≥1 year, trailing 12 months ended September 28, 2025", "status": "surfaced"},
+      "excluded": {"value": "123 non-traditional, 5 refranchised, 38 newly opened, 13 Canadian, 7 closed 21+ days", "status": "surfaced"},
+      "data_basis": {"value": "Unaudited POS-transmitted sales", "status": "surfaced"},
+      "quartiles": {
+        "top": {
+          "avg_net_sales": {"value": 2573684, "status": "surfaced"},
+          "median_net_sales": {"value": 2450334, "status": "surfaced"},
+          "low_net_sales": {"value": 2110176, "status": "surfaced"},
+          "high_net_sales": {"value": 5078990, "status": "surfaced"},
+          "count_at_or_above_avg": {"value": "42/116 (36.2%)", "status": "surfaced"}
+        },
+        "second": {
+          "avg_net_sales": {"value": 1833353, "status": "surfaced"},
+          "median_net_sales": {"value": 1859571, "status": "surfaced"},
+          "low_net_sales": {"value": 1597145, "status": "surfaced"},
+          "high_net_sales": {"value": 2109725, "status": "surfaced"},
+          "count_at_or_above_avg": {"value": "56/116 (48.3%)", "status": "surfaced"}
+        },
+        "third": {
+          "avg_net_sales": {"value": 1412582, "status": "surfaced"},
+          "median_net_sales": {"value": 1421970, "status": "surfaced"},
+          "low_net_sales": {"value": 1241292, "status": "surfaced"},
+          "high_net_sales": {"value": 1596376, "status": "surfaced"},
+          "count_at_or_above_avg": {"value": "61/116 (52.6%)", "status": "surfaced"}
+        },
+        "bottom": {
+          "avg_net_sales": {"value": 969398, "status": "surfaced"},
+          "median_net_sales": {"value": 1007528, "status": "surfaced"},
+          "low_net_sales": {"value": 411191, "status": "surfaced"},
+          "high_net_sales": {"value": 1227584, "status": "surfaced"},
+          "count_at_or_above_avg": {"value": "65/116 (56.0%)", "status": "surfaced"}
+        },
+        "total": {
+          "avg_net_sales": {"value": 1697254, "status": "surfaced"},
+          "median_net_sales": {"value": 1596761, "status": "surfaced"},
+          "low_net_sales": {"value": 411191, "status": "surfaced"},
+          "high_net_sales": {"value": 5078990, "status": "surfaced"},
+          "count_at_or_above_avg": {"value": "201/464 (43.3%)", "status": "surfaced"}
+        }
+      }
+    },
+    "chart3": {
+      "title": "Chart 3: Historical Average Sales, Selected Costs and Operating Results",
+      "sample_size": {"value": 397, "status": "surfaced"},
+      "sample_description": {"value": "Traditional franchised restaurants with P&L data, trailing 12 months with varying period-end dates", "status": "surfaced"},
+      "excluded": {"value": "128 non-traditional, 5 refranchised, 38 newly opened, 13 Canadian, 7 closed 21+ days, 64 not yet loaded in portal", "status": "surfaced"},
+      "non_reporters": {"value": 64, "status": "surfaced"},
+      "data_basis": {"value": "Unaudited self-reported P&L through franchisee online portal", "status": "surfaced"},
+      "trailing_period_note": {"value": "166 ending 9/28/2025, 118 ending 8/31/2025, 61 ending 8/3/2025, smaller batches ending as early as 1/19/2025", "status": "surfaced"},
+      "cost_lines": {
+        "net_restaurant_sales": {
+          "avg": {"value": 1661277, "status": "surfaced"},
+          "pct_of_sales": {"value": "100%", "status": "surfaced"},
+          "median": {"value": 1544533, "status": "surfaced"},
+          "low": {"value": 407677, "status": "surfaced"},
+          "high": {"value": 5149602, "status": "surfaced"},
+          "pct_at_or_above_avg": {"value": "171/397 (43.1%)", "status": "surfaced"}
+        },
+        "cost_of_sales": {
+          "avg": {"value": 458997, "status": "surfaced"},
+          "pct_of_sales": {"value": "27.6%", "status": "surfaced"},
+          "median": {"value": 420311, "status": "surfaced"},
+          "low": {"value": 118783, "status": "surfaced"},
+          "high": {"value": 1414766, "status": "surfaced"},
+          "note": "Food, paper, packaging, net of vendor rebates"
+        },
+        "salaries_and_benefits": {
+          "avg": {"value": 446077, "status": "surfaced"},
+          "pct_of_sales": {"value": "26.9%", "status": "surfaced"},
+          "median": {"value": 416357, "status": "surfaced"},
+          "low": {"value": 147981, "status": "surfaced"},
+          "high": {"value": 1205376, "status": "surfaced"},
+          "note": "Includes management wages (not above-store level), employee wages, bonuses, payroll taxes, group insurance, workers comp, vacation. Excludes above-restaurant-level overhead."
+        },
+        "other_operating_expenses": {
+          "avg": {"value": 227584, "status": "surfaced"},
+          "pct_of_sales": {"value": "13.7%", "status": "surfaced"},
+          "median": {"value": 210787, "status": "surfaced"},
+          "low": {"value": 62650, "status": "surfaced"},
+          "high": {"value": 715789, "status": "surfaced"},
+          "note": "Repairs/maintenance, smallwares, cleaning, POS maintenance, credit card fees, telephone/internet, utilities, insurance, misc"
+        },
+        "occupancy_costs": {
+          "avg": {"value": 124674, "status": "surfaced"},
+          "pct_of_sales": {"value": "7.5%", "status": "surfaced"},
+          "median": {"value": 117377, "status": "surfaced"},
+          "low": {"value": 62583, "status": "surfaced"},
+          "high": {"value": 346970, "status": "surfaced"},
+          "note": "Base rent, percentage rent, CAM, real estate taxes, personal property taxes, landlord insurance, other lease expenses. Three franchisees with purchased real estate: 7.5% imputed."
+        },
+        "royalty_fee": {
+          "avg": {"value": 83064, "status": "surfaced"},
+          "pct_of_sales": {"value": "5.0%", "status": "surfaced"},
+          "median": {"value": 77227, "status": "surfaced"},
+          "low": {"value": 20384, "status": "surfaced"},
+          "high": {"value": 257480, "status": "surfaced"}
+        },
+        "advertising_fee": {
+          "avg": {"value": 66451, "status": "surfaced"},
+          "pct_of_sales": {"value": "4.0%", "status": "surfaced"},
+          "median": {"value": 46336, "status": "surfaced"},
+          "low": {"value": 12230, "status": "surfaced"},
+          "high": {"value": 154488, "status": "surfaced"},
+          "timing_warning": {"value": "Reflects 4.0% combined rate for FY ended 9/28/2025. Rate increased to 4.5% on 9/29/2025 — current EBITDA is ~0.5 pp lower than shown.", "status": "surfaced"}
+        },
+        "total_cost_of_revenues": {
+          "avg": {"value": 1406847, "status": "surfaced"},
+          "pct_of_sales": {"value": "84.7%", "status": "surfaced"},
+          "median": {"value": 1303835, "status": "surfaced"},
+          "low": {"value": 488481, "status": "surfaced"},
+          "high": {"value": 4094869, "status": "surfaced"},
+          "note": "Does not include development fees, franchise fees, administrative costs"
+        },
+        "ebitda_including_fees": {
+          "avg": {"value": 254430, "status": "surfaced"},
+          "pct_of_sales": {"value": "15.3%", "status": "surfaced"},
+          "median": {"value": 246001, "status": "surfaced"},
+          "low": {"value": -214733, "status": "surfaced"},
+          "high": {"value": 1054733, "status": "surfaced"},
+          "pct_at_or_above_avg": {"value": "178/397 (44.8%)", "status": "surfaced"}
+        },
+        "ebitda_pre_fees": {
+          "avg": {"value": 403945, "status": "surfaced"},
+          "pct_of_sales": {"value": "24.3%", "status": "surfaced"},
+          "median": {"value": 369361, "status": "surfaced"},
+          "low": {"value": -140487, "status": "surfaced"},
+          "high": {"value": 1466701, "status": "surfaced"}
+        }
+      },
+      "caveats": [
+        "Data is unaudited and self-reported through the franchisee online portal",
+        "64 non-reporters may introduce selection bias — non-reporters may differ systematically",
+        "Trailing 12-month periods vary across restaurants",
+        "EBITDA excludes depreciation/amortization, development fees, franchise fees, administrative costs",
+        "Salaries/benefits exclude above-restaurant-level wages and overhead",
+        "Three franchisees with purchased real estate had no lease expense; 7.5% imputed",
+        "Advertising fee increased to 4.5% on 9/29/2025; current EBITDA margin is ~0.5 pp lower than shown",
+        "Some outlets have earned these amounts. Individual results may differ."
+      ]
+    }
+  },
+
+  "item20_outlets": {
+    "totalUnits": {"value": 827, "source_object": "item20_table1", "source_section": "Item 20", "source_pages": [63], "confidence": "very_high", "status": "surfaced"},
+    "franchisedUnits": {"value": 652, "source_object": "item20_table1", "source_section": "Item 20", "source_pages": [63], "confidence": "very_high", "status": "surfaced"},
+    "companyOwnedUnits": {"value": 175, "source_object": "item20_table1", "source_section": "Item 20", "source_pages": [63], "confidence": "very_high", "status": "surfaced"},
+    "signedNotOpen": {"value": 14, "source_object": "item20_table5", "source_section": "Item 20", "source_pages": [71], "confidence": "very_high", "status": "surfaced"},
+    "projectedNewFranchised": {"value": 77, "source_object": "item20_table5", "source_section": "Item 20", "source_pages": [72], "confidence": "very_high", "status": "surfaced"},
+    "projectedNewCompanyOwned": {"value": 12, "source_object": "item20_table5", "source_section": "Item 20", "source_pages": [72], "confidence": "very_high", "status": "surfaced"},
+    "confidentialityClauses": {"value": true, "source_object": "item20_text", "source_section": "Item 20", "source_pages": [73], "confidence": "very_high", "status": "surfaced"},
+    "fullStateTablesFile": {"value": "retry_item20_full_tables.json", "source_object": "retry_item20", "source_section": "Item 20", "source_pages": [63, 64, 65, 66, 67, 68, 69, 70, 71, 72], "confidence": "very_high", "status": "surfaced"}
+  },
+
+  "item20_yearly_activity": {
+    "_source": "03_tables.json — item20_table1, item20_table2, item20_table3, item20_table5; 08_final_report.md",
+    "_source_pages": [63, 64, 65, 66, 67, 68, 69, 70, 71, 72],
+    "system_counts": {
+      "FY2022_end": {
+        "franchised": {"value": 447, "status": "surfaced"},
+        "company": {"value": 286, "status": "surfaced"},
+        "total": {"value": 733, "status": "surfaced"}
+      },
+      "FY2023_end": {
+        "franchised": {"value": 571, "status": "surfaced"},
+        "company": {"value": 176, "status": "surfaced"},
+        "total": {"value": 747, "status": "surfaced"}
+      },
+      "FY2024_end": {
+        "franchised": {"value": 613, "status": "surfaced"},
+        "company": {"value": 164, "status": "surfaced"},
+        "total": {"value": 777, "status": "surfaced"}
+      },
+      "FY2025_end": {
+        "franchised": {"value": 652, "status": "surfaced"},
+        "company": {"value": 175, "status": "surfaced"},
+        "total": {"value": 827, "status": "surfaced"}
+      }
+    },
+    "franchised_activity": {
+      "FY2023": {
+        "start": {"value": 447, "status": "surfaced"},
+        "openings": {"value": 124, "status": "surfaced", "note": "Includes 110 refranchised (company-to-franchisee) units marked with *"},
+        "non_renewals": {"value": 0, "status": "surfaced"},
+        "terminations": {"value": 0, "status": "surfaced"},
+        "reacquired_by_franchisor": {"value": 0, "status": "surfaced"},
+        "ceased_other": {"value": 0, "status": "surfaced"},
+        "end": {"value": 571, "status": "surfaced"}
+      },
+      "FY2024": {
+        "start": {"value": 571, "status": "surfaced"},
+        "openings": {"value": 52, "status": "surfaced"},
+        "non_renewals": {"value": 0, "status": "surfaced"},
+        "terminations": {"value": 0, "status": "surfaced"},
+        "reacquired_by_franchisor": {"value": 10, "status": "surfaced"},
+        "ceased_other": {"value": 0, "status": "surfaced"},
+        "end": {"value": 613, "status": "surfaced"}
+      },
+      "FY2025": {
+        "start": {"value": 613, "status": "surfaced"},
+        "openings": {"value": 57, "status": "surfaced"},
+        "non_renewals": {"value": 0, "status": "surfaced"},
+        "terminations": {"value": 1, "status": "surfaced"},
+        "reacquired_by_franchisor": {"value": 8, "status": "surfaced"},
+        "ceased_other": {"value": 9, "status": "surfaced"},
+        "end": {"value": 652, "status": "surfaced"},
+        "verification": "613 + 57 - 0 - 1 - 8 - 9 = 652 ✓"
+      }
+    },
+    "company_activity": {
+      "FY2023": {
+        "start": {"value": 286, "status": "surfaced"},
+        "openings": {"value": 7, "status": "surfaced"},
+        "reacquired_from_franchisees": {"value": 0, "status": "surfaced"},
+        "sold_to_franchisees": {"value": 110, "status": "surfaced"},
+        "closures": {"value": 7, "status": "surfaced", "note": "Derived: 286 + 7 + 0 - 110 - 7 = 176"},
+        "end": {"value": 176, "status": "surfaced"}
+      },
+      "FY2024": {
+        "start": {"value": 176, "status": "surfaced"},
+        "openings": {"value": 9, "status": "surfaced"},
+        "reacquired_from_franchisees": {"value": 10, "status": "surfaced"},
+        "sold_to_franchisees": {"value": 8, "status": "surfaced"},
+        "closures": {"value": 23, "status": "surfaced", "note": "Derived: 176 + 9 + 10 - 8 - 23 = 164. Note: balancing item — report states 12 closures but math requires 23 total units exited"},
+        "end": {"value": 164, "status": "surfaced"},
+        "confidence_note": "Activity breakdown is partially derived; total start/end counts are verified from Table 1"
+      },
+      "FY2025": {
+        "start": {"value": 164, "status": "surfaced"},
+        "openings": {"value": 13, "status": "surfaced", "note": "5 AZ, 1 FL, 1 MA, 2 MI + other"},
+        "reacquired_from_franchisees": {"value": 8, "status": "surfaced", "note": "4 FL, 4 NJ"},
+        "sold_to_franchisees": {"value": 3, "status": "surfaced", "note": "2 MO, 1 KS"},
+        "closures": {"value": 7, "status": "surfaced", "note": "Derived: 164 + 13 + 8 - 3 - 7 = 175"},
+        "end": {"value": 175, "status": "surfaced"}
+      }
+    },
+    "transfers_table2": {
+      "_note": "Transfers from franchisees to new owners (not company reacquisitions)",
+      "FY2023": {"value": 5, "status": "surfaced"},
+      "FY2024": {"value": 1, "status": "surfaced"},
+      "FY2025": {"value": 11, "status": "surfaced"},
+      "FY2025_by_state": {
+        "North Carolina": {"value": 9, "status": "surfaced"},
+        "California": {"value": 1, "status": "surfaced"},
+        "Pennsylvania": {"value": 1, "status": "surfaced"}
+      }
+    },
+    "projected_table5": {
+      "signed_not_open": {"value": 14, "status": "surfaced"},
+      "projected_new_franchised": {"value": 77, "status": "surfaced"},
+      "projected_new_company_owned": {"value": 12, "status": "surfaced"},
+      "projected_top_franchised_markets": {
+        "Ohio": {"value": 9, "status": "surfaced"},
+        "New York": {"value": 7, "status": "surfaced"},
+        "New Jersey": {"value": 6, "status": "surfaced"},
+        "Florida": {"value": 5, "status": "surfaced"},
+        "Indiana": {"value": 4, "status": "surfaced"},
+        "Missouri": {"value": 4, "status": "surfaced"}
+      },
+      "projected_top_company_markets": {
+        "Michigan": {"value": 4, "status": "surfaced"},
+        "Arizona": {"value": 3, "status": "surfaced"},
+        "Illinois": {"value": 3, "status": "surfaced"}
+      },
+      "international_projected": {
+        "Japan_Aomori": {"value": 1, "status": "surfaced"},
+        "Japan_Okinawa": {"value": 1, "status": "surfaced"},
+        "Japan_Tokyo": {"value": 1, "status": "surfaced"}
+      }
+    }
+  },
+
+  "exhibit_structure": {
+    "_source": "04_exhibits.json",
+    "_total_exhibits": 15,
+    "A": {
+      "label": "Exhibit A",
+      "title": "Audited Financial Statements",
+      "category": "financial_statements",
+      "priority": 1,
+      "directly_surfaced": "partial",
+      "surfaced_detail": "Auditor report (pp 77-78) fully surfaced. Financial statements (pp 79-82) decoded via CID font mapping in retry. Notes to financial statements (pp 83-95+) decoded but not fully structured.",
+      "why_it_matters": "Contains audited consolidated financial statements of Qdoba Funding Holdco LLC and Qdoba Corporation. Includes guaranties of performance from both entities.",
+      "key_structural_note": "Qdoba Funding Holdco LLC guarantees franchise agreement obligations. Qdoba Corporation guarantees QRC management agreement obligations only — does NOT guarantee the franchise agreement itself.",
+      "linked_items": [21]
+    },
+    "B": {
+      "label": "Exhibit B",
+      "title": "List of State Administrators",
+      "category": "regulatory",
+      "priority": 11,
+      "directly_surfaced": "no",
+      "why_it_matters": "Lists state franchise regulators for registration states.",
+      "linked_items": []
+    },
+    "C": {
+      "label": "Exhibit C",
+      "title": "Agents for Service of Process",
+      "category": "regulatory",
+      "priority": 12,
+      "directly_surfaced": "no",
+      "why_it_matters": "Legal service addresses by state.",
+      "linked_items": [1]
+    },
+    "D": {
+      "label": "Exhibit D",
+      "title": "List of Current Franchised Locations and Former Franchisees",
+      "category": "franchisee_lists",
+      "priority": 2,
+      "directly_surfaced": "no",
+      "why_it_matters": "Current franchised locations with names, addresses, phone numbers; former franchisees who had outlets terminated/canceled/not renewed/ceased in FY2025; signed-but-not-open agreements. Critical for due diligence reference calls.",
+      "key_structural_note": "FDD warns that confidentiality clauses restrict some franchisees from speaking openly.",
+      "linked_items": [20]
+    },
+    "E-1": {
+      "label": "Exhibit E-1",
+      "title": "Franchise Agreement",
+      "category": "franchise_agreement",
+      "priority": 1,
+      "directly_surfaced": "no",
+      "why_it_matters": "Binding contract governing all franchise relationship mechanics. Item 17 summary tables provide high-level view; operative agreement language was not read.",
+      "key_structural_note": "Governs: 10-year term, 5% royalty, 4.5% marketing, first-priority security interest, spousal guaranty, 2-year/5-mile post-term noncompete, California forum/law, unrestricted franchisor assignment, ROFR, remodel-at-renewal requirement.",
+      "linked_items": [5, 6, 7, 8, 9, 12, 15, 16, 17]
+    },
+    "E-2": {
+      "label": "Exhibit E-2",
+      "title": "License Agreement",
+      "category": "license_agreement",
+      "priority": 3,
+      "directly_surfaced": "no",
+      "why_it_matters": "Governs non-traditional locations. Materially different terms: 6% royalty, 1.75% marketing, 10% noncompete threshold (vs 20%), 1-year post-term noncompete (vs 2 years), no ROFR.",
+      "linked_items": [5, 6, 17]
+    },
+    "F": {
+      "label": "Exhibit F",
+      "title": "Development Agreement",
+      "category": "development_agreement",
+      "priority": 2,
+      "directly_surfaced": "no",
+      "why_it_matters": "Governs multi-unit development rights, development schedule, minimum development quota, and Development Area territorial protections. Failure to meet quota = default and loss of territorial protections.",
+      "linked_items": [1, 5, 12, 17]
+    },
+    "G": {
+      "label": "Exhibit G",
+      "title": "Table of Contents — Manuals",
+      "category": "operations_manual",
+      "priority": 8,
+      "directly_surfaced": "no",
+      "why_it_matters": "Shows scope of operational control — 466 pages of confidential operating manuals. Manuals subject to change at franchisor's sole discretion without franchisee consent.",
+      "key_structural_note": "466 pages of manuals represents extensive unilateral control surface.",
+      "linked_items": [11]
+    },
+    "H": {
+      "label": "Exhibit H",
+      "title": "State Specific Addenda and Agreement Amendments",
+      "category": "state_addenda",
+      "priority": 3,
+      "directly_surfaced": "yes",
+      "surfaced_detail": "All 10 registration states extracted in retry (pages 335–400+): CA, HI, IL, MI, MN, NY, ND, RI, VA, WA.",
+      "why_it_matters": "Contains material overrides to noncompete scope, termination cure periods, forum selection, choice of law, and other provisions. Required reading for any state-specific investment decision.",
+      "linked_items": [17]
+    },
+    "I": {
+      "label": "Exhibit I",
+      "title": "Certification of Entity Structure and Operation Form",
+      "category": "compliance",
+      "priority": 10,
+      "directly_surfaced": "no",
+      "why_it_matters": "Ownership disclosure requirement for franchisee entities.",
+      "linked_items": [15]
+    },
+    "J": {
+      "label": "Exhibit J",
+      "title": "General Release of All Claims",
+      "category": "release",
+      "priority": 4,
+      "directly_surfaced": "no",
+      "why_it_matters": "Required at transfer and renewal. Broad release may waive claims franchisee would otherwise have. State addenda in CA, HI, MN, NY, ND, RI, WA limit the scope of required releases under state franchise laws.",
+      "linked_items": [17]
+    },
+    "K": {
+      "label": "Exhibit K",
+      "title": "Master Technology Agreement",
+      "category": "technology_agreement",
+      "priority": 5,
+      "directly_surfaced": "no",
+      "why_it_matters": "Governs technology stack obligations. No contractual limit on upgrade costs or frequency. Franchisor has independent access to all systems and data.",
+      "linked_items": [6, 11]
+    },
+    "L": {
+      "label": "Exhibit L",
+      "title": "Authorization for Prearranged Payments",
+      "category": "payment_authorization",
+      "priority": 6,
+      "directly_surfaced": "no",
+      "why_it_matters": "ACH/direct debit authorization for royalty, marketing fees, and other recurring payments. Franchisor can directly debit franchisee bank account.",
+      "linked_items": [6]
+    },
+    "M": {
+      "label": "Exhibit M",
+      "title": "Non-Disclosure Agreement",
+      "category": "nda",
+      "priority": 9,
+      "directly_surfaced": "no",
+      "why_it_matters": "Required before application package submission. Pre-franchise confidentiality obligation.",
+      "linked_items": [1]
+    },
+    "N": {
+      "label": "Exhibit N",
+      "title": "Stored Value Card Service Agreement",
+      "category": "gift_card_program",
+      "priority": 7,
+      "directly_surfaced": "no",
+      "why_it_matters": "Governs mandatory Q-Cash stored value card program operated by affiliate QMG Stored Value Cards LLC. Monthly fee $7.75. Mandatory participation.",
+      "linked_items": [6, 11]
+    }
+  },
+
+  "item21_financials": {
+    "auditorName": {"value": "Deloitte & Touche LLP", "source_object": "exhibit_a_auditor_report", "source_section": "Item 21 / Exhibit A", "source_pages": [77], "confidence": "very_high", "status": "surfaced"},
+    "auditorOpinion": {"value": "unqualified", "source_object": "exhibit_a_auditor_report", "source_section": "Item 21 / Exhibit A", "source_pages": [77], "confidence": "very_high", "status": "surfaced"},
+    "guarantyPresent": {"value": true, "source_object": "item21_text", "source_section": "Item 21", "source_pages": [73], "confidence": "very_high", "status": "surfaced"},
+    "guarantorEntity": {"value": "Qdoba Funding Holdco LLC", "source_object": "item21_text", "source_section": "Item 21", "source_pages": [73], "confidence": "very_high", "status": "surfaced"},
+    "decodeMethod": "CID-encoded TimesNewRoman Identity-H font. Text characters: ASCII code + 17. Digit characters: code - 11 (code 11='0', 12='1', ... 20='9'). Verified against known Item 20 counts (175/652/827).",
+    "balanceSheet_FY2025": {
+      "totalAssets": {"value": 555640000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "totalCurrentAssets": {"value": 23208000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "cashAndEquivalents": {"value": 7276000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "restrictedCash": {"value": 5426000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "accountsReceivableNet": {"value": 8468000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "inventories": {"value": 1633000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "propertyAndEquipmentNet": {"value": 65821000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "operatingLeaseRouAssetsNet": {"value": 145098000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "tradename": {"value": 167000000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "intangibleAssetsNet": {"value": 16296000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "goodwill": {"value": 132379000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "totalLiabilities": {"value": 419678000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "totalCurrentLiabilities": {"value": 40247000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "longTermDebtNetOfCurrent": {"value": 244076000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "longTermOperatingLeaseLiabilitiesNetOfCurrent": {"value": 126520000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "membersEquity": {"value": 135962000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"},
+      "retainedEarnings": {"value": 61941000, "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "surfaced"}
+    },
+    "incomeStatement_FY2025": {
+      "totalRevenues": {"value": 381014000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "companyRestaurantSales": {"value": 282784000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "franchiseRoyaltiesAndOther": {"value": 55669000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "franchiseRentalRevenues": {"value": 18984000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "franchiseAdvertisingContributions": {"value": 23577000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "totalCompanyRestaurantCostsExclDA": {"value": 226702000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "depreciationAndAmortization": {"value": 12043000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "managementFeeExpense": {"value": 22704000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "managementFeePctOfRevenue": {"value": "6.0%", "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "derived"},
+      "totalOperatingCostsNet": {"value": 322745000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "incomeFromOperations": {"value": 58269000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "interestExpenseNet": {"value": 25341000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"},
+      "netIncome": {"value": 32798000, "source_object": "exhibit_a_income_stmt", "source_section": "Exhibit A", "source_pages": [80], "confidence": "very_high", "status": "surfaced"}
+    },
+    "cashFlows_FY2025": {
+      "cashFromOperations": {"value": 56173000, "source_object": "exhibit_a_cash_flows", "source_section": "Exhibit A", "source_pages": [82], "confidence": "very_high", "status": "surfaced"},
+      "cashFromInvesting": {"value": 56000, "source_object": "exhibit_a_cash_flows", "source_section": "Exhibit A", "source_pages": [82], "confidence": "very_high", "status": "surfaced"},
+      "cashUsedInFinancing": {"value": -56010000, "source_object": "exhibit_a_cash_flows", "source_section": "Exhibit A", "source_pages": [82], "confidence": "very_high", "status": "surfaced"},
+      "distributionsToAffiliate": {"value": -55790000, "source_object": "exhibit_a_cash_flows", "source_section": "Exhibit A", "source_pages": [82], "confidence": "very_high", "status": "surfaced"},
+      "cashPaidForInterest": {"value": 22421000, "source_object": "exhibit_a_cash_flows", "source_section": "Exhibit A", "source_pages": [82], "confidence": "very_high", "status": "surfaced"}
+    },
+    "keyRatios_FY2025": {
+      "debtToEquity": {"value": "~3.1:1", "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "derived"},
+      "intangiblesAsPctTotalAssets": {"value": "53.9%", "source_object": "exhibit_a_balance_sheet", "source_section": "Exhibit A", "source_pages": [79], "confidence": "very_high", "status": "derived"},
+      "distributionsExceedNetIncome": {"value": true, "note": "$55.8M distributed vs $32.8M earned; member contribution declined $92.5M → $74.0M", "source_pages": [80, 81], "status": "derived"}
+    }
+  },
+
+  "item21_structural_facts": {
+    "_source": "08_final_report.md, retry_item21.md, item21_text (pages 73-74)",
+    "entityTooYoungForThreeYears": {
+      "value": true,
+      "detail": "Qdoba Funding Holdco LLC organized September 2023. FDD provides financials for (1) fiscal year ended September 28, 2025 and (2) initial 10-month period November 28, 2023 – September 29, 2024 (securitization close to first fiscal year-end). Cannot yet provide three full years of audited history.",
+      "source_pages": [73, 79],
+      "status": "surfaced"
+    },
+    "guarantyScopeHoldco": {
+      "value": "Qdoba Funding Holdco LLC unconditionally guarantees the franchisor's (Qdoba Franchisor LLC) duties and obligations under the Franchise Agreement",
+      "source_pages": [73],
+      "status": "surfaced"
+    },
+    "guarantyScopeQdobaCorp": {
+      "value": "Qdoba Corporation guarantees QRC's obligations under the management agreement — does NOT guarantee the Franchise Agreement itself",
+      "source_pages": [73],
+      "status": "surfaced"
+    },
+    "qrcNotContractuallyObligatedToFranchisees": {
+      "value": true,
+      "detail": "QRC (Qdoba Restaurant Corporation) performs day-to-day franchisor support services under the management agreement but is not a party to the Franchise Agreement and is not contractually obligated to franchisees. The entity actually performing support services (QRC) is structurally separated from the entity legally obligated to franchisees (Qdoba Franchisor LLC).",
+      "source_pages": [73],
+      "status": "surfaced",
+      "severity": "high"
+    },
+    "securitizationStructureSummary": {
+      "value": "Closed November 28, 2023. QRC transferred all US franchise agreements and IP to Qdoba Franchisor LLC (special-purpose entity). Debt: Class A-2 Notes issued at $234.5M. The SPE chain is: Qdoba Franchisor LLC → Qdoba Funding LLC (Issuer) → Qdoba Funding Holdco LLC → QRC.",
+      "source_pages": [9, 10, 73],
+      "status": "surfaced"
+    },
+    "securitizationBankruptcyRisk": {
+      "value": "Impact on franchisee rights in a franchisor default or restructuring scenario not addressed in Items text. Franchise agreements are held in an SPE and could potentially be treated as securitized assets in a bankruptcy proceeding.",
+      "source_pages": [9, 10],
+      "status": "surfaced",
+      "confidence": "medium",
+      "note": "This is an identified unresolved, not a confirmed fact"
+    },
+    "managementFeeRelationship": {
+      "value": "Qdoba Funding Holdco LLC pays a management fee to QRC of $22,704,000 in FY2025 (6.0% of total revenues). QRC performs all operational, marketing, development, and franchising functions under this arrangement. QRC also acts as franchise sales broker.",
+      "source_pages": [80],
+      "status": "surfaced"
+    },
+    "debtStructureSummary": {
+      "value": "Long-term debt: $244.1M net of current portion (Class A-2 securitized notes). Revolving credit facility: $8M drawn in FY2025, $20M repaid. Combined long-term debt + operating lease liabilities = $389.2M. Debt-to-equity ~3.1:1.",
+      "source_pages": [79, 82],
+      "status": "surfaced"
+    },
+    "affiliateDistributionPattern": {
+      "value": "$55.8M distributed to affiliate vs $32.8M net income earned in FY2025. Member's contribution declined $92.5M → $74.0M over FY2025 — capital is being extracted faster than earned.",
+      "source_pages": [81, 82],
+      "status": "surfaced"
+    },
+    "separateQdobaCorpFinancials": {
+      "value": true,
+      "detail": "A second set of audited financials for Qdoba Corporation and Subsidiaries (the operating parent, includes QRC) is also provided in Exhibit A, covering the same periods. Not separately decoded in this extraction.",
+      "source_pages": [73],
+      "status": "located_not_parsed"
+    }
+  },
+
+  "item1_structural_facts": {
+    "_source": "item1_text (pages 7-12), cover_page",
+    "ownershipHistory": {
+      "status": "surfaced",
+      "timeline": [
+        {"period": "2003–March 2018", "owner": "Jack in the Box, Inc.", "source_pages": [10]},
+        {"period": "March 2018–October 2022", "owner": "Apollo Global Management-affiliated funds", "source_pages": [10]},
+        {"period": "October 2022–present", "owner": "MRC Intermediate, Inc. and affiliates; Butterfly Equity LP (ultimate sponsor)", "source_pages": [10]}
+      ]
+    },
+    "securitizationDate": {"value": "November 28, 2023", "source_pages": [9], "status": "surfaced"},
+    "securitizationAssetTransfer": {
+      "value": "All US franchise agreements, development agreements, trademarks, and intellectual property transferred from QRC to Qdoba Franchisor LLC on November 28, 2023",
+      "source_pages": [9],
+      "status": "surfaced"
+    },
+    "managerEntityRole": {
+      "value": "Qdoba Restaurant Corporation (QRC) manages all franchising, marketing, development, real estate, IP, and operational oversight under a management agreement. QRC also acts as the franchise sales broker and receives management fees.",
+      "source_pages": [9, 10],
+      "status": "surfaced"
+    },
+    "affiliates": {
+      "status": "surfaced",
+      "list": [
+        {"name": "QMG Stored Value Cards LLC", "role": "Administers Q-Cash stored value card program", "source_pages": [11]},
+        {"name": "Qdoba of Canada Inc.", "role": "Operates 12 restaurants in Canada", "source_pages": [11]}
+      ]
+    },
+    "specialRisks": {
+      "outOfStateForum": {"value": true, "detail": "All disputes must be resolved in California via mediation/litigation", "source_pages": [1], "status": "surfaced"},
+      "spouseLiability": {"value": true, "detail": "Spouse must personally guarantee all financial obligations regardless of ownership interest — marital and personal assets at risk", "source_pages": [1], "status": "surfaced"}
+    },
+    "cashIncentiveProgram": {
+      "value": "Up to $100,000 per qualifying restaurant",
+      "limit": "First 150 qualifying locations",
+      "deadline": "24 months from signing (for agreements signed after June 15, 2025)",
+      "source_pages": [8],
+      "status": "surfaced"
+    },
+    "formatList": {
+      "status": "surfaced",
+      "formats": [
+        {"type": "Traditional", "agreement": "Franchise Agreement (Exhibit E-1)", "size": "1,500–3,000 sq ft", "seating": "15–80 patrons", "typical_location": "Strip shopping centers, freestanding buildings"},
+        {"type": "Non-Traditional", "agreement": "License Agreement (Exhibit E-2)", "venues": "Airports, universities, military installations, sports arenas, casinos, grocery stores", "note": "Negotiable terms; different royalty and noncompete structure"}
+      ]
+    }
+  },
+
+  "item6_fee_attributes": {
+    "_source": "03_tables.json — item6_other_fees (pages 17-22)",
+    "royalty": {
+      "amount": "5% of gross sales",
+      "non_traditional": "6% of gross sales",
+      "basis": "Gross sales (includes all franchise revenue; excludes sales/use tax, approved discounts/refunds)",
+      "timing": "Payable weekly",
+      "modifiable": false,
+      "key_note": "Lower rates in unusual situations at franchisor discretion. If alcohol served and law prohibits royalties on alcohol, royalty increased proportionally on other sales.",
+      "status": "surfaced"
+    },
+    "marketing_fee": {
+      "amount": "4.50% of gross sales",
+      "non_traditional": "1.75% of gross sales",
+      "timing": "Payable weekly",
+      "modifiable": true,
+      "maximum": "6% (requires majority franchisee vote)",
+      "key_note": "Increased from 4.0% to 4.5% on September 29, 2025 — AFTER the FY2025 data period used in Item 19 Chart 3. Current EBITDA margin is ~0.5 pp lower than Chart 3 shows.",
+      "status": "surfaced"
+    },
+    "it_base_services": {
+      "amount": "$6,300–$18,600 per restaurant per year",
+      "timing": "Monthly or period basis",
+      "modifiable": true,
+      "key_note": "Covers POS software/hardware maintenance, inventory/labor management, menu management, network equipment rental. No contractual cap on changes.",
+      "status": "surfaced"
+    },
+    "it_support_services": {
+      "amount": "$250 per restaurant per period + 0.21% of weekly gross sales",
+      "timing": "Flat fee 13x/year; variable weekly",
+      "modifiable": true,
+      "modifiable_note": "Franchisor can modify at any time — explicitly stated in fee table. No contractual ceiling or notice period.",
+      "key_note": "Covers help desk, menu management, platform services, cybersecurity, network config, QA, data hosting.",
+      "status": "surfaced"
+    },
+    "lms_fee": {
+      "amount": "$24–$40 per restaurant per month",
+      "platform": "Yoobic",
+      "timing": "Monthly",
+      "modifiable": true,
+      "status": "surfaced"
+    },
+    "renewal_fee": {
+      "amount": "$10,000",
+      "timing": "Earlier of 30 days before expiration or at signing of new agreement",
+      "modifiable": false,
+      "key_note": "Paid when franchisee signs new (potentially materially different) franchise agreement at renewal.",
+      "status": "surfaced"
+    },
+    "transfer_fee": {
+      "amount": "Up to $5,000",
+      "timing": "Prior to consummation of transfer",
+      "key_note": "Payable on franchise sale or consent to restructuring. Franchisor retains ROFR to match any offer.",
+      "status": "surfaced"
+    },
+    "late_payment_interest": {
+      "amount": "18% per annum",
+      "timing": "Begins 10 days after billing; due on demand",
+      "modifiable": false,
+      "key_note": "California state addendum caps at 10% per annum. Standard rate applies in all other states.",
+      "status": "surfaced"
+    },
+    "audit_cost": {
+      "amount": "Full cost of audit + 18% on unpaid amounts",
+      "trigger": "Follow-up audit, or if audit shows understatement/underpayment ≥2% of gross sales for any month",
+      "timing": "30 days after billing",
+      "status": "surfaced"
+    },
+    "site_visit_fee": {
+      "amount": "$500 per visit plus actual expenses",
+      "free_visits": 2,
+      "key_note": "No fee for first two visits. Third and subsequent visits require fee plus travel/lodging/meals.",
+      "status": "surfaced"
+    },
+    "new_restaurant_training_support": {
+      "amount": "$3,500 per trainer",
+      "trigger": "3rd+ franchised restaurant (not incurred for first two)",
+      "coverage": "11 days of training and opening support",
+      "key_note": "For 3rd+ restaurants, franchisee's own trained managers conduct training; this fee is for franchisor-provided support.",
+      "status": "surfaced"
+    },
+    "grand_opening_advertising": {
+      "amount": "$10,000–$25,000",
+      "timing": "Within 30 days of opening",
+      "key_note": "Franchise Agreement requires $10K–$25K grand opening spend. License Agreement has no minimum.",
+      "status": "surfaced"
+    },
+    "achs_direct_debit": {
+      "basis": "Franchisor authorized to directly debit franchisee bank account for royalty, marketing fees, and other recurring payments via Exhibit L (ACH Authorization)",
+      "status": "surfaced"
+    }
+  },
+
+  "state_addenda_overrides": {
+    "_note": "Source: Exhibit H, pages 335-400+. Each state has a Disclosure Addendum plus Agreement Amendments for Franchise, License, and Development Agreements.",
+    "states_with_addenda": ["CA", "HI", "IL", "MI", "MN", "NY", "ND", "RI", "VA", "WA"],
+    "california": {
+      "source_pages": [335, 339],
+      "interestRateCap": {"value": "10% annually (vs 18% base)", "source_object": "state_addendum_CA", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "noncompeteMayBeUnenforceable": {"value": true, "source_object": "state_addendum_CA", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "bankruptcyTerminationMayBeUnenforceable": {"value": true, "source_object": "state_addendum_CA", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "generalReleaseExcludesFranchiseLawClaims": {"value": true, "statute": "Cal. Corp. Code § 31512; Bus. & Prof. Code § 20010", "source_object": "state_addendum_CA", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "californiaLawControlsIfInconsistent": {"value": true, "source_object": "state_addendum_CA", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"}
+    },
+    "hawaii": {
+      "source_pages": [340, 347],
+      "fairMarketValueOnTermination": {"value": true, "note": "Company must compensate for FMV of inventory/supplies/equipment; if conversion to company-owned, also for loss of goodwill", "source_object": "state_addendum_HI", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "generalReleaseExcludesFranchiseLawClaims": {"value": true, "statute": "Hawaii Franchise Investment Law", "source_object": "state_addendum_HI", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"}
+    },
+    "illinois": {
+      "source_pages": [348, 362],
+      "forumSelectionVoided": {"value": true, "statute": "IL Franchise Disclosure Act § 4", "note": "Arbitration outside IL still permitted", "source_object": "state_addendum_IL", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "illinoisLawApplies": {"value": true, "note": "Overrides California choice of law where IL Franchise Disclosure Act jurisdictional requirements are met", "source_object": "state_addendum_IL", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "antiWaiver": {"value": true, "statute": "IL Franchise Disclosure Act § 41", "source_object": "state_addendum_IL", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"}
+    },
+    "michigan": {
+      "source_pages": [364, 366],
+      "noncompeteReasonableOnly": {"value": true, "note": "Enforceable only during reasonable time and within reasonable area; court may revise", "source_object": "state_addendum_MI", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "filingNotApproval": {"value": true, "source_object": "state_addendum_MI", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"}
+    },
+    "minnesota": {
+      "source_pages": [367, 382],
+      "noncompeteLimitedTo2YearsInFranchiseArea": {"value": true, "statute": "Minn. Stat. § 80C.21", "source_object": "state_addendum_MN", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "terminationGoodCauseRequired": {"value": true, "statute": "Minn. Stat. § 80C.14", "source_object": "state_addendum_MN", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "terminationNoticedays": {"value": 90, "source_object": "state_addendum_MN", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "curePeriodDays": {"value": 60, "source_object": "state_addendum_MN", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "generalReleaseExcludesFranchiseLawClaims": {"value": true, "statute": "Minn. Stat. Ch. 80C", "source_object": "state_addendum_MN", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "forumClauseDoesNotAbrogateMNRights": {"value": true, "source_object": "state_addendum_MN", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "mnLawAppliesForMNActClaims": {"value": true, "source_object": "state_addendum_MN", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "civilRemedyStatuteOfLimitations": {"value": "3 years from act/omission or 1 year after reasonable discovery", "statute": "Minn. Stat. § 80C.17, subd. 5", "source_object": "state_addendum_MN", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"}
+    },
+    "new_york": {
+      "source_pages": [375, 382],
+      "terminationNoticedays": {"value": 90, "statute": "NY GBL Article 33", "source_object": "state_addendum_NY", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "curePeriodDays": {"value": 60, "source_object": "state_addendum_NY", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "noncompeteMustBeReasonable": {"value": true, "source_object": "state_addendum_NY", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "forumSelectionLimited": {"value": true, "statute": "NY GBL § 687.4, § 687.5", "note": "Lawsuit must be permitted in New York", "source_object": "state_addendum_NY", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "nyGBLArticle33Supersedes": {"value": true, "source_object": "state_addendum_NY", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"}
+    },
+    "north_dakota": {
+      "source_pages": [383, 389],
+      "forumSelectionVoided": {"value": true, "statute": "ND § 51-19-09", "source_object": "state_addendum_ND", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "ndLawApplies": {"value": true, "note": "Notwithstanding California choice of law", "source_object": "state_addendum_ND", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "noncompeteGenerallyUnenforceable": {"value": true, "source_object": "state_addendum_ND", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "arbitrationMutuallyAgreedSite": {"value": true, "source_object": "state_addendum_ND", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "generalReleaseExcludesFranchiseLawClaims": {"value": true, "source_object": "state_addendum_ND", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "waiverProhibition": {"value": true, "source_object": "state_addendum_ND", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"}
+    },
+    "rhode_island": {
+      "source_pages": [390, 393],
+      "forumSelectionVoided": {"value": true, "statute": "RI § 19-28.1-14", "source_object": "state_addendum_RI", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "riLawApplies": {"value": true, "statute": "Rhode Island Franchise Investment Act", "source_object": "state_addendum_RI", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "generalReleaseExcludesFranchiseLawClaims": {"value": true, "source_object": "state_addendum_RI", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"}
+    },
+    "virginia": {
+      "source_pages": [394],
+      "registeredUnderVirginiaRetailFranchisingAct": {"value": true, "statute": "Virginia Retail Franchising Act § 13.1-557 et seq.", "source_object": "state_addendum_VA", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"}
+    },
+    "washington": {
+      "source_pages": [395],
+      "forumSelectionLimited": {"value": true, "statute": "RCW 19.100", "source_object": "state_addendum_WA", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "generalReleaseExcludesFranchiseLawClaims": {"value": true, "statute": "RCW 19.100 (Washington Franchise Investment Protection Act)", "source_object": "state_addendum_WA", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "terminationSubjectToWashingtonLaw": {"value": true, "statute": "RCW 19.100.180", "source_object": "state_addendum_WA", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"},
+      "materialChangeTriggersFDDRevision": {"value": true, "source_object": "state_addendum_WA", "source_section": "Exhibit H", "confidence": "very_high", "status": "surfaced"}
+    }
+  },
+
+  "key_exhibits": {
+    "exhibitCount": {"value": 14, "source_object": "toc", "source_section": "Table of Contents", "source_pages": [6], "confidence": "very_high", "status": "surfaced"},
+    "exhibitsSurfacedCount": {"value": 3, "note": "Exhibit A (auditor report + financial statements decoded), Exhibit H (state addenda 10 states)", "source_object": "multiple", "source_section": "Exhibits A, H", "confidence": "high", "status": "partial"},
+    "exhibitsNotSurfacedCount": {"value": 11, "note": "E-1 Franchise Agreement, E-2 License Agreement, F Development Agreement, G Manual TOC, I Entity Cert, J General Release, K Master Tech Agreement, L Prearranged Payments, M NDA, N Stored Value Card Agreement, D Franchisee Lists", "status": "missing"},
+    "exhibitAStatus": "Auditor report fully surfaced (pp 77-78). Financial statements decoded via CID font mapping (pp 79-82). Notes to financial statements (pp 83-95+) decoded but not fully structured.",
+    "exhibitHStatus": "10 states fully extracted (CA, HI, IL, MI, MN, NY, ND, RI, VA, WA). Material override summary available in state_addenda_overrides."
+  },
+
+  "unresolveds": [
+    {"issue": "Fiesta Ventures v Qdoba settlement approved but not yet signed and case not yet dismissed as of FDD issuance", "severity": "medium", "source_pages": [16]},
+    {"issue": "Advertising fee was 4.0% during FY2025 but increased to 4.5% on 9/29/2025 — Chart 3 EBITDA understates current fee burden by ~0.5 percentage points (~$8,300/unit at average volume)", "severity": "medium", "source_pages": [62]},
+    {"issue": "64 of 461 eligible restaurants had not loaded P&L data — Chart 3 sample may have selection bias toward better-performing operators", "severity": "medium", "source_pages": [60]},
+    {"issue": "QRC performs franchisor support services but is not contractually obligated to franchisees and does not guarantee the franchise agreement directly; Qdoba Corporation guaranty backs only the QRC management agreement", "severity": "high", "source_pages": [73]},
+    {"issue": "Qdoba Funding Holdco LLC organized Sept 2023 — cannot yet provide 3 full years of audited financials; FY2024 column is 10-month period requiring annualization for comparisons", "severity": "medium", "source_pages": [73, 79]},
+    {"issue": "Continuing liability after transfer — scope and duration not specified in Items narrative; must be confirmed in Exhibit E-1", "severity": "medium", "source_pages": [52]},
+    {"issue": "IT support fee modifiable by franchisor at any time — whether any contractual ceiling or notice period applies is unclear from Items text", "severity": "medium", "source_pages": [19]},
+    {"issue": "Marketing fund increase mechanism (4.5% → 6%) — voting methodology, eligibility, and licensee participation not specified in extracted text", "severity": "low", "source_pages": [17]},
+    {"issue": "November 2023 securitization transferred franchise agreements and IP to an SPE — impact on franchisee rights in a franchisor default or restructuring is not addressed in the Items text", "severity": "high", "source_pages": [9, 10]},
+    {"issue": "Confidentiality restrictions on franchisees — FDD acknowledges some franchisees subject to these clauses; prevalence and scope could not be assessed", "severity": "low", "source_pages": [73]}
+  ],
+
+  "contradictions": [
+    {"issue": "Item 19 Chart 2 uses 464 restaurants and reports avg net sales of $1,697,254. Chart 3 uses 397 restaurants and reports avg net sales of $1,661,277. Different sample sizes and slightly different trailing periods produce different averages.", "source_pages": [60, 61], "resolution": "Not a true contradiction — different sample definitions and measurement periods. Chart 2 is POS-based sales only; Chart 3 includes P&L data from portal reporters."}
+  ]
+}

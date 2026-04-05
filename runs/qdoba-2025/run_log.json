@@ -1,0 +1,84 @@
+{
+  "pdf": "640022-2025-Qdoba-Qdoba-Mexican-Eats-Qdoba-Mexican-Grill.pdf",
+  "pdf_path": "/Users/shelly/Downloads/franchiese/fdd-vault/wi-dfi/archive/640022-2025-Qdoba-Qdoba-Mexican-Eats-Qdoba-Mexican-Grill.pdf",
+  "outdir": "/Users/shelly/Downloads/franchiese/runs/qdoba-2025",
+  "started": "2026-04-04T22:24:40",
+  "steps": [
+    {
+      "step": "00_setup",
+      "prompt_file": "step0_setup.md",
+      "output_file": null,
+      "status": "error",
+      "duration_s": 0,
+      "error": "claude CLI not found. Install Claude Code first."
+    },
+    {
+      "step": "01_source_map",
+      "prompt_file": "step1_source_map.md",
+      "output_file": "01_source_map.md",
+      "status": "error",
+      "duration_s": 0,
+      "error": "claude CLI not found. Install Claude Code first."
+    },
+    {
+      "step": "02_reader_report",
+      "prompt_file": "step2_reader_report.md",
+      "output_file": "02_reader_report.md",
+      "status": "error",
+      "duration_s": 0,
+      "error": "claude CLI not found. Install Claude Code first."
+    },
+    {
+      "step": "03_tables",
+      "prompt_file": "step3_tables.md",
+      "output_file": "03_tables.json",
+      "status": "error",
+      "duration_s": 0,
+      "error": "claude CLI not found. Install Claude Code first."
+    },
+    {
+      "step": "04_exhibits",
+      "prompt_file": "step4_exhibits.md",
+      "output_file": "04_exhibits.json",
+      "status": "error",
+      "duration_s": 0,
+      "error": "claude CLI not found. Install Claude Code first."
+    },
+    {
+      "step": "05_canonical",
+      "prompt_file": "step5_canonical.md",
+      "output_file": "05_canonical.json",
+      "status": "error",
+      "duration_s": 0,
+      "error": "claude CLI not found. Install Claude Code first."
+    },
+    {
+      "step": "06_coverage_audit",
+      "prompt_file": "step6_coverage_audit.md",
+      "output_file": "06_coverage_audit.md",
+      "status": "error",
+      "duration_s": 0,
+      "error": "claude CLI not found. Install Claude Code first."
+    },
+    {
+      "step": "07_retry_tasks",
+      "prompt_file": "step7_retry_tasks.md",
+      "output_file": "07_retry_tasks.md",
+      "status": "error",
+      "duration_s": 0,
+      "error": "claude CLI not found. Install Claude Code first."
+    }
+  ],
+  "total_duration_s": 0.02,
+  "files_created": [],
+  "files_missing": [
+    "01_source_map.md",
+    "02_reader_report.md",
+    "03_tables.json",
+    "04_exhibits.json",
+    "05_canonical.json",
+    "06_coverage_audit.md",
+    "07_retry_tasks.md"
+  ],
+  "finished": "2026-04-04T22:24:40"
+}
