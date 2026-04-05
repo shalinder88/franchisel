@@ -1,0 +1,172 @@
+[
+  {
+    "field_name": "fa_operative_provisions.data_ownership",
+    "old_value": null,
+    "new_value": "RFC has at all times the right to retrieve information from franchisee computer system. All information is exclusive property of RFC.",
+    "change_type": "added",
+    "reason": "Regression R1: FA deep read recovered operative provision not captured in initial pipeline run",
+    "supporting_pdf_pages": [98, 99],
+    "supporting_prior_or_gold_source": "Pipeline benchmark (CFA) demonstrated FA deep read capability",
+    "confidence": "high"
+  },
+  {
+    "field_name": "fa_operative_provisions.computer_upgrade_cost_cap",
+    "old_value": null,
+    "new_value": "$10,000 cap if franchisee spent $10K+ in previous 5 years",
+    "change_type": "added",
+    "reason": "Regression R1: Material cost cap not captured in initial run",
+    "supporting_pdf_pages": [98, 99],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "fa_operative_provisions.insurance_requirements",
+    "old_value": null,
+    "new_value": "5 coverage types required; RFC as additional insured; waiver of subrogation; 30-day cancellation notice; minimums in Operations Manual",
+    "change_type": "added",
+    "reason": "Regression R1: Insurance requirements exist in FA but were not structured. CFA benchmark has structured insurance_requirements field.",
+    "supporting_pdf_pages": [105, 106],
+    "supporting_prior_or_gold_source": "CFA canonical has insurance_requirements field",
+    "confidence": "high"
+  },
+  {
+    "field_name": "fa_operative_provisions.gift_card_provisions",
+    "old_value": null,
+    "new_value": "Must purchase through RFC; may not produce own gift certificates or cards",
+    "change_type": "added",
+    "reason": "Regression R1: Gift card restriction is a material franchisee burden",
+    "supporting_pdf_pages": [107],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "fa_operative_provisions.system_modification_rights",
+    "old_value": null,
+    "new_value": "RFC may change/modify System; franchisee must accept and fund changes",
+    "change_type": "added",
+    "reason": "Regression R1: System modification is a material operational risk",
+    "supporting_pdf_pages": [107],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "fa_operative_provisions.eft_provisions",
+    "old_value": null,
+    "new_value": "RFC may require EFT for all fees; franchisee must authorize direct debits; RFC may debit based on computer system data",
+    "change_type": "added",
+    "reason": "Regression R1: EFT/direct debit authorization is a material financial control provision",
+    "supporting_pdf_pages": [109],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "fa_operative_provisions.remodel_obligations",
+    "old_value": null,
+    "new_value": "At least once during term; not required during last 4 years; 10-day deficiency cure; 30-day fire/casualty initiation",
+    "change_type": "added",
+    "reason": "Regression R1: Remodel obligation with 4-year restriction is unique and material",
+    "supporting_pdf_pages": [100, 101],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "fa_operative_provisions.security_interest_ucc",
+    "old_value": null,
+    "new_value": "First lien on all franchisee property; UCC secured party remedies; subordination available for bank financing",
+    "change_type": "added",
+    "reason": "Regression R1: UCC security interest is a significant legal burden — franchisor holds first lien on all assets",
+    "supporting_pdf_pages": [134, 135],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "fa_operative_provisions.payment_application",
+    "old_value": null,
+    "new_value": "RFC has sole discretion to apply payments to any past due indebtedness",
+    "change_type": "added",
+    "reason": "Regression R1: Payment application discretion is a material financial control",
+    "supporting_pdf_pages": [109],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "fa_operative_provisions.credit_card_acceptance",
+    "old_value": null,
+    "new_value": "Must accept full range of credit/debit cards, check verification, and EFT systems as RFC designates",
+    "change_type": "added",
+    "reason": "Regression R1: Payment method compliance requirement",
+    "supporting_pdf_pages": [99],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "advertising_expense_actuals",
+    "old_value": null,
+    "new_value": {"2024": 270344, "2023": 229359, "2022": 152565},
+    "change_type": "added",
+    "reason": "Regression R2: Ad expenses differ from ad fees collected — RFC spent slightly more than collected each year. Material signal for ad fund deployment.",
+    "supporting_pdf_pages": [64],
+    "supporting_prior_or_gold_source": "Pipeline benchmark — CFA has advertising expenses in FS notes",
+    "confidence": "high"
+  },
+  {
+    "field_name": "vie_election",
+    "old_value": null,
+    "new_value": "RFC elected not to consolidate Hester family entities per ASU 2018-17",
+    "change_type": "added",
+    "reason": "Regression R3: Material accounting choice — financial statements exclude 7 affiliate-owned restaurants",
+    "supporting_pdf_pages": [64],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "note4_tax_provision_detail",
+    "old_value": "Totals only (27632, 25585, 6000)",
+    "new_value": {"2024": {"current": 28632, "deferred": -1000}, "2023": {"current": 22585, "deferred": 3000}, "2022": {"current": 4700, "deferred": 1300}},
+    "change_type": "enriched",
+    "reason": "Regression R4: Current/deferred tax split adds depth to financial analysis",
+    "supporting_pdf_pages": [66],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "accounting_policies",
+    "old_value": null,
+    "new_value": "6 policies structured: depreciation (straight-line 5-7yr), receivables (no allowance), impairment (none), subsequent events (through 3/6/25), revenue recognition (detailed), royalty reduction accounting (credit to future balance)",
+    "change_type": "added",
+    "reason": "Regression R2: Standard depth the pipeline should achieve for FS notes",
+    "supporting_pdf_pages": [63, 64],
+    "supporting_prior_or_gold_source": "Pipeline benchmark",
+    "confidence": "high"
+  },
+  {
+    "field_name": "tech_burden.data_access_adjudicated",
+    "old_value": "Conflicting — 'RFC does not have access' (p.32) vs 'dedicated line' (p.31)",
+    "new_value": "RFC has full data access rights per FA Sect. IX.D. Item 11 p.32 statement contradicted by operative FA language.",
+    "change_type": "adjudicated",
+    "reason": "Conflict C2: FA controls over FDD narrative. Adjudicated per 17_conflict_adjudication.md",
+    "supporting_pdf_pages": [31, 32, 98, 99],
+    "supporting_prior_or_gold_source": "FA deep read (RR-01)",
+    "confidence": "high"
+  },
+  {
+    "field_name": "noncompete.post_term",
+    "old_value": "Conflicting — FA 5 miles vs FDA 50 miles",
+    "new_value": "FA 5 miles governs operating franchisees; FDA 50 miles governs pre-franchise applicants. Different agreement types.",
+    "change_type": "adjudicated",
+    "reason": "Conflict C1: Different-agreement-type distinction. Adjudicated per 17_conflict_adjudication.md",
+    "supporting_pdf_pages": [45, 46, 122, 157],
+    "supporting_prior_or_gold_source": "Source pages re-read for adjudication",
+    "confidence": "high"
+  },
+  {
+    "field_name": "recurring_fees.royalty.conditional_reduction",
+    "old_value": "Retroactively reduced to 3.5%; RFC refunds excess within 30 days",
+    "new_value": "Retroactively reduced to 3.5%. FDD says 'refund within 30 days'; FS Note says 'credits to franchisees' balance owed in the future'. Both preserved.",
+    "change_type": "adjudicated",
+    "reason": "Conflict C3: Contractual vs. accounting treatment distinction. Adjudicated per 17_conflict_adjudication.md",
+    "supporting_pdf_pages": [15, 64],
+    "supporting_prior_or_gold_source": "Source pages re-read for adjudication",
+    "confidence": "high"
+  }
+]

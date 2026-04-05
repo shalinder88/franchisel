@@ -1,0 +1,175 @@
+{
+  "task_id": "RT-03",
+  "task_name": "Franchisee list structured extraction",
+  "source_pages": [50, 51, 52, 53],
+  "extraction_date": "2025-04-05",
+  "total_franchisee_entities": 20,
+  "states": ["Wisconsin", "Minnesota"],
+  "franchisees": [
+    {
+      "entity_name": "RMDT, LLC",
+      "address": "226408 Rib Mountain Drive, Wausau, Wisconsin 54401",
+      "contact": "Tia Engebrecht",
+      "phone": "(715) 212-7649",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "JJAM, LLC",
+      "address": "135 Division Street N., Stevens Point, Wisconsin 54481",
+      "contact": "Melissa Slack",
+      "phone": "(715) 342-8885",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "TRH Whitewater, Inc.",
+      "address": "1210 West Main Street, Whitewater, Wisconsin 53190",
+      "contact": "David Apgar",
+      "phone": "(262) 473-2105",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "R&P Restaurants II, LLC",
+      "address": "7600 West Capitol Drive, Milwaukee, Wisconsin 53222",
+      "contact": "Heyden Penkert",
+      "phone": "(414) 465-0452",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "Brymat, LLC",
+      "address": "2295 Westowne Avenue, Oshkosh, Wisconsin 54904",
+      "contact": "Luke Geoffrion",
+      "phone": "(920) 235-2626",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "Mad Rock LLC",
+      "address": "2010 West Silvermail Road, Pewaukee, Wisconsin 53072",
+      "contact": "Darin Hogy and Morten Sunde",
+      "phone": "(262) 513-8100",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "C & R Investments of Wood County",
+      "address": "1841 Eighth Street South, Wisconsin Rapids, Wisconsin 54494",
+      "contact": "Craig and Rachelle Hanson",
+      "phone": "(715) 712-1200",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "R&P Restaurants, LLC",
+      "address": "8300 West Brown Deer Road, Milwaukee, Wisconsin 53223",
+      "contact": "Heyden Penkert",
+      "phone": "(414) 355-5222",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "HP Restaurants, LLC",
+      "address": "15455 West Howard Avenue, New Berlin, Wisconsin 53151",
+      "contact": "Heyden Penkert",
+      "phone": "(262) 786-7000",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "MODA Inc.",
+      "address": "6631 Washington Avenue, Racine, Wisconsin 53406",
+      "contact": "Darin Hogy and Morten Sunde",
+      "phone": "(262) 886-1984",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "SDJJ Agostino, LLC",
+      "address": "7540 Brooklyn Boulevard, Brooklyn Park, Minnesota 55443",
+      "contact": "Stacey Agostino",
+      "phone": "(763) 560-5451",
+      "state": "Minnesota"
+    },
+    {
+      "entity_name": "Derkster Enterprises, LLC",
+      "address": "4800 Golf Road #226, Eau Claire, Wisconsin 54701",
+      "contact": "Regi Derks",
+      "phone": "(715) 210-7742",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "NTIZZA, LLC",
+      "address": "3740 South Taylor Drive, Sheboygan, Wisconsin 53081",
+      "contact": "John Degnitz",
+      "phone": "(920) 783-6639",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "K&L Restaurants, LLC",
+      "address": "774 West Johnson Street, Fond du Lac, Wisconsin 54904",
+      "contact": "Luke Geoffrion",
+      "phone": "(920) 922-6100",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "Reggie Rococo Enterprises, LLC",
+      "address": "W3178 Van Roy Road, Appleton, Wisconsin 54914",
+      "contact": "Regi Dirks",
+      "phone": "(920) 832-3992",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "TMart Operations I, LLC",
+      "address": "N1551 Sunset Drive, Lodi, Wisconsin 53555",
+      "contact": "Jeremy Alsaker",
+      "phone": "(608) 292-4505",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "Midwest Pizza, LLC",
+      "address": "2828 Prairie Lakes Drive, #108, Sun Prairie, Wisconsin 53590",
+      "contact": "Pam Zeller and Jim Voeck",
+      "phone": "(608) 825-2555",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "Three Rivers Rockys, LLC",
+      "addresses": [
+        "1239 Crossing Meadows Drive, Onalaska, Wisconsin 54650",
+        "4905 Hwy V, DeForest, Wisconsin 53532",
+        "1618 West Beltline Highway, Madison, Wisconsin 53713",
+        "40 Copeland Avenue, Suite 112, LaCrosse, Wisconsin 54603"
+      ],
+      "contact": "Stacey Agostino and Jasin Ellenz",
+      "phones": ["(608) 251-0304", "(608) 784-0300", "(608) 784-3374"],
+      "state": "Wisconsin",
+      "note": "Multi-unit operator with 4 locations listed under same entity. Addresses and phone numbers span multiple locations."
+    },
+    {
+      "entity_name": "Krockcoco, LLC",
+      "address": "4301 West Wisconsin Avenue, #624, Appleton, Wisconsin 54913",
+      "contact": "Kris Dewing",
+      "phone": "(920) 830-9969",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "True Legacy Hospitality LLC",
+      "address": "4556 Monona Drive, Madison, Wisconsin 53716",
+      "contact": "Jose Zavala and Yudit Zavala",
+      "phone": "(608) 221-3818",
+      "state": "Wisconsin"
+    },
+    {
+      "entity_name": "Castle Roc LLC",
+      "address": "7952 Tree Lane, Madison, Wisconsin 53717",
+      "contact": "Victoria Schloss and Talina Schloss",
+      "phone": "(608) 829-1444",
+      "state": "Wisconsin"
+    }
+  ],
+  "multi_unit_operators": [
+    {"contact": "Heyden Penkert", "entities": ["R&P Restaurants II, LLC", "R&P Restaurants, LLC", "HP Restaurants, LLC"], "unit_count": 3},
+    {"contact": "Stacey Agostino", "entities": ["SDJJ Agostino, LLC", "Three Rivers Rockys, LLC"], "unit_count": "5+ (1 MN + 4 WI)"},
+    {"contact": "Darin Hogy and Morten Sunde", "entities": ["Mad Rock LLC", "MODA Inc."], "unit_count": 2},
+    {"contact": "Luke Geoffrion", "entities": ["Brymat, LLC", "K&L Restaurants, LLC"], "unit_count": 2},
+    {"contact": "Regi Derks/Dirks", "entities": ["Derkster Enterprises, LLC", "Reggie Rococo Enterprises, LLC"], "unit_count": 2, "note": "Name appears as both 'Derks' and 'Dirks' in the FDD — likely same person, OCR variation or dual spelling"}
+  ],
+  "former_franchisees": {
+    "value": "None",
+    "source_page": 53,
+    "note": "No franchisees terminated, cancelled, not renewed, or ceased in most recently completed fiscal year. No franchisees out of communication within 10 weeks of application date."
+  }
+}

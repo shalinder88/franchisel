@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "brand": "Rocky Rococo Pizza and Pasta",
+    "franchisor_legal_name": "Rococo Franchise Corporation",
+    "fdd_issuance_date": "2025-04-24",
+    "fiscal_year_end": "2024-12-30",
+    "state_filed": "Wisconsin",
+    "filing_number": "638785-2025",
+    "extraction_version": "v1_canonical"
+  },
+  "franchisor_identity": {
+    "legal_name": {"value": "Rococo Franchise Corporation", "source_object": "Item 1", "source_pages": [9], "confidence": "high", "status": "surfaced"},
+    "state_of_incorporation": {"value": "Wisconsin", "source_object": "Item 1", "source_pages": [9], "confidence": "high", "status": "surfaced"},
+    "date_of_incorporation": {"value": "1995-06-13", "source_object": "Item 1", "source_pages": [9], "confidence": "high", "status": "surfaced"},
+    "principal_address": {"value": "105 East Wisconsin Avenue, Oconomowoc, Wisconsin 53066", "source_object": "Item 1", "source_pages": [9], "confidence": "high", "status": "surfaced"},
+    "phone": {"value": "(262) 569-5580", "source_object": "cover", "source_pages": [1], "confidence": "high", "status": "surfaced"},
+    "agent_for_service": {"value": "Commissioner of Securities, 101 East Wilson Street, P.O. Box 1768, Madison, Wisconsin 53701-1768", "source_object": "Item 1", "source_pages": [9], "confidence": "high", "status": "surfaced"},
+    "franchising_since": {"value": 1995, "source_object": "Item 1", "source_pages": [9], "confidence": "high", "status": "surfaced"},
+    "predecessor": {"value": "Rocky Rococo Corporation (offered franchises 1982–1987)", "source_object": "Item 1", "source_pages": [9], "confidence": "high", "status": "surfaced"},
+    "affiliates": {
+      "value": [
+        "Rocky Rococo Corporation — owns trademark rights, licensor",
+        "Pizza Rococo, Inc. — owns/operates 1 restaurant (since 1992)",
+        "TRH Restaurants, Inc. — owns/operates 1 restaurant (since 1994)",
+        "Airport Pizza Roc, Inc. — owns/operates 2 restaurants (since 2003)",
+        "TRH Restaurants II, Inc. — owns/operates 2 restaurants (since 2007)",
+        "TRH Restaurants III, Inc. — owns/operates 1 restaurant (since 2021)"
+      ],
+      "source_object": "Item 1",
+      "source_pages": [9, 10, 11],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+  "issuance_date": {"value": "2025-04-24", "source_object": "cover/p.2", "source_pages": [2], "confidence": "high", "status": "surfaced"},
+  "registered_states": {
+    "value": ["Illinois", "Indiana", "Michigan", "Minnesota", "Wisconsin"],
+    "effective_dates": {"IL": "2025-04-24", "IN": "2025-04-24", "MI": "2025-04-24", "MN": "2025-04-24", "WI": "2025-04-24"},
+    "source_object": "state_effective_dates",
+    "source_pages": [7],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+  "formats": {
+    "value": ["Enclosed malls with seating", "Enclosed mall food courts", "Strip-center malls", "Storefronts", "Free-standing buildings", "Campus locations"],
+    "size_range": "900–3,800 sq ft",
+    "source_object": "Items 7, 11",
+    "source_pages": [20, 26],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+  "development_structure": {
+    "value": "Single-unit franchise. No multi-unit development agreement disclosed. Multi-unit ownership exists in practice.",
+    "source_object": "Items 1, 12, 20",
+    "source_pages": [9, 38, 50],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+  "initial_fees": {
+    "initial_franchise_fee": {"value": "$25,000 (first unit); $17,500 (second unit)", "source_object": "Item 5", "source_pages": [13], "confidence": "high", "status": "surfaced"},
+    "franchise_deposit": {"value": "$12,500 (first unit); $10,000 (second unit)", "source_object": "Item 5", "source_pages": [13], "confidence": "high", "status": "surfaced"},
+    "transfer_fee_at_entry": {"value": "$12,500 (50% of then-current fee)", "source_object": "Note 3 to financial statements", "source_pages": [64], "confidence": "high", "status": "surfaced"},
+    "refundability": {"value": "Non-refundable after 10 days. Deposit refundable if no site found within 180 days (unless terminated for cause).", "source_object": "Items 5, FDA", "source_pages": [13, 153], "confidence": "high", "status": "surfaced"}
+  },
+  "recurring_fees": {
+    "royalty": {
+      "value": "5% of gross sales weekly",
+      "conditional_reduction": "Retroactively reduced to 3.5% if annual sales below $425,000 (52-week year) or $433,173 (53-week year)",
+      "source_object": "Item 6, Note 1",
+      "source_pages": [14, 15],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "marketing_fund": {"value": "Up to 0.75% of gross sales weekly", "source_object": "Item 6, Note 2", "source_pages": [14, 15], "confidence": "high", "status": "surfaced"},
+    "local_advertising": {
+      "value": "Up to 3.5% of gross sales (tiered: 1.5% no electronic, 2.5% radio, 3.5% TV)",
+      "current_status": "Local Ad Fund not currently being collected; franchisee must independently spend the applicable percentage",
+      "source_object": "Item 6, Note 3",
+      "source_pages": [14, 15, 16, 29, 30],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "transfer_fee": {"value": "50% of then-current initial franchise fee", "source_object": "Item 6, Note 4", "source_pages": [14, 16], "confidence": "high", "status": "surfaced"},
+    "renewal_fee": {"value": "None", "source_object": "Item 17", "source_pages": [43], "confidence": "high", "status": "surfaced"}
+  },
+  "supplier_control_economics": {
+    "designated_suppliers": {"value": "Only one: national soft drink supplier designated by RFC", "source_object": "Item 8", "source_pages": [21, 22], "confidence": "high", "status": "surfaced"},
+    "franchisor_revenue_from_purchases": {"value": "None. RFC and affiliates derive no revenue or material consideration from franchisee purchases.", "source_object": "Item 8", "source_pages": [22], "confidence": "high", "status": "surfaced"},
+    "purchasing_freedom": {"value": "100% of items (except designated soft drink) may be purchased from supplier of franchisee's choosing", "source_object": "Item 8", "source_pages": [22], "confidence": "high", "status": "surfaced"},
+    "spec_compliance": {"value": "All ingredients must conform to RFC recipes. Products, supplies, packaging must meet RFC specifications.", "source_object": "Item 8", "source_pages": [22], "confidence": "high", "status": "surfaced"}
+  },
+  "training_burden": {
+    "initial_training": {
+      "duration": "10 weeks (5 days/week, 8–10 hours/day)",
+      "location": "Mayfair Mall, Wauwatosa, Wisconsin",
+      "type": "100% on-the-job (0 classroom hours)",
+      "mandatory": true,
+      "source_object": "Item 11, training table",
+      "source_pages": [36, 37],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "additional_ojt": {
+      "duration": "Up to 20 weeks at affiliate restaurants",
+      "mandatory": false,
+      "source_object": "Item 11",
+      "source_pages": [36],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "opening_assistance": {
+      "duration": "5 business days (3 days before opening)",
+      "cost": "RFC covers first 5 days; franchisee pays for any extension",
+      "source_object": "Item 11",
+      "source_pages": [36, 37],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "franchisee_cost_burden": {"value": "Franchisee bears all transportation, lodging, meals, wages, employee benefits for training.", "source_object": "Item 11", "source_pages": [37], "confidence": "high", "status": "surfaced"}
+  },
+  "tech_burden": {
+    "pos_system": {"value": "RFC may specify computer hardware and POS system (~$10,000)", "source_object": "Item 11", "source_pages": [31], "confidence": "high", "status": "surfaced"},
+    "dedicated_line": {"value": "Franchisee must establish and maintain a dedicated line for RFC to access computer system", "source_object": "Item 11", "source_pages": [31], "confidence": "high", "status": "surfaced"},
+    "website": {"value": "RFC develops and maintains website. Franchisee may not create separate website.", "source_object": "Item 11", "source_pages": [27], "confidence": "high", "status": "surfaced"},
+    "upgrades": {"value": "RFC may require upgrades; cannot estimate frequency or cost. Cost may not be fully amortizable over remaining term.", "source_object": "Item 11", "source_pages": [31], "confidence": "high", "status": "surfaced"},
+    "access_contradiction": {
+      "value": "Item 11 states RFC does not have access to computer information (p.32) but also requires dedicated access line (p.31)",
+      "source_object": "Item 11",
+      "source_pages": [31, 32],
+      "confidence": "medium",
+      "status": "conflicting"
+    }
+  },
+  "territory_structure": {
+    "type": {"value": "1-mile radius exclusive territory around franchised location", "source_object": "Item 12", "source_pages": [38], "confidence": "high", "status": "surfaced"},
+    "carveouts": {
+      "value": [
+        "Major regional shopping mall locations (500K+ sq ft, 2+ dept store anchors) do not receive 1-mile protection",
+        "A mall within franchisee's 1-mile radius is not a violation",
+        "Central business district locations (RFC's sole judgment) receive no 1-mile protection"
+      ],
+      "source_object": "Item 12",
+      "source_pages": [38],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "not_exclusive_disclaimer": {"value": "You will not receive an exclusive territory. You may face competition from other franchisees, from outlets that RFC owns, or from other channels of distribution or competitive brands that RFC controls.", "source_object": "Item 12", "source_pages": [39], "confidence": "high", "status": "surfaced"},
+    "continuation_conditions": {"value": "Not dependent on sales volume, market penetration, or any other contingency. Cannot be altered without written consent of both parties.", "source_object": "Item 12", "source_pages": [38], "confidence": "high", "status": "surfaced"},
+    "right_of_first_refusal_for_additional": {"value": "No option, right of first refusal, or similar right to acquire additional franchises within territory or contiguous territories.", "source_object": "Item 12", "source_pages": [39], "confidence": "high", "status": "surfaced"}
+  },
+  "term_renewal_transfer_default_termination": {
+    "initial_term": {"value": "15 years", "source_object": "Item 17, FA Sect. II.A", "source_pages": [43], "confidence": "high", "status": "surfaced"},
+    "renewal_term": {"value": "15 years (one renewal)", "source_object": "Item 17, FA Sect. II.B", "source_pages": [43], "confidence": "high", "status": "surfaced"},
+    "renewal_conditions": {"value": "Good standing, execute then-current FA (may contain materially different terms), general release, remodel, retraining. No renewal fee.", "source_object": "Item 17", "source_pages": [43], "confidence": "high", "status": "surfaced"},
+    "transfer_conditions": {"value": "RFC approval required (not unreasonably withheld). Transfer fee 50% of current initial fee. New franchisee qualifies, accounts current, release signed, remodel, training, noncompete.", "source_object": "Item 17, FA Sect. XVIII", "source_pages": [44, 45, 126, 127], "confidence": "high", "status": "surfaced"},
+    "termination_by_franchisor": {"value": "Only with cause. Curable: 60 days (10 days for non-payment). Non-curable: immediate for bankruptcy, abandonment, criminal misconduct, material misrepresentation, etc.", "source_object": "Item 17, FA Sect. XV", "source_pages": [44], "confidence": "high", "status": "surfaced"},
+    "termination_by_franchisee": {"value": "No provision in FA. FDA only: if unable to acquire site within 180 days.", "source_object": "Item 17", "source_pages": [44], "confidence": "high", "status": "surfaced"},
+    "post_termination": {"value": "De-identification, payment of amounts due, covenant not to compete.", "source_object": "Item 17, FA Sect. XVI", "source_pages": [45, 121, 122], "confidence": "high", "status": "surfaced"},
+    "franchisor_purchase_option": {"value": "RFC may elect within 60 days of termination/expiration to purchase all tangible assets at fair market value.", "source_object": "FA Sect. XVI.E", "source_pages": [123, 124], "confidence": "high", "status": "surfaced"},
+    "right_of_first_refusal": {"value": "RFC can match any offer for the franchise business.", "source_object": "Item 17, FA Sect. XVIII.G", "source_pages": [45, 132], "confidence": "high", "status": "surfaced"},
+    "death_disability": {"value": "Estate must apply to continue or transfer within 6 months. No transfer fee for estate continuation.", "source_object": "Item 17, FA Sect. XVIII.E", "source_pages": [45, 130], "confidence": "high", "status": "surfaced"}
+  },
+  "noncompete": {
+    "during_term": {"value": "No involvement in competing business anywhere", "source_object": "Item 17, FA Sect. XIV.A", "source_pages": [45], "confidence": "high", "status": "surfaced"},
+    "post_term_fa": {"value": "1 year within 5 miles of designated area or 5 miles of any system location", "source_object": "Item 17, FA Sect. XVI.D", "source_pages": [45, 46, 122], "confidence": "high", "status": "surfaced"},
+    "post_term_fda": {"value": "1 year within 50 miles of designated area or 50 miles of any system location", "source_object": "Item 17, FDA Sect. 5", "source_pages": [46, 157], "confidence": "high", "status": "surfaced"},
+    "discrepancy_note": "FA and FDA noncompete radii differ by 10x (5 miles vs 50 miles). Both are disclosed. Subject to state law.",
+    "status": "conflicting"
+  },
+  "dispute_resolution": {
+    "method": {"value": "Binding arbitration via American Arbitration Association at its office nearest RFC", "source_object": "Item 17, FA Sect. XXX", "source_pages": [46, 47], "confidence": "high", "status": "surfaced"},
+    "exception": {"value": "Legality of WI Franchise Investment Law and WI Fair Dealership Act not subject to arbitration", "source_object": "Item 17", "source_pages": [47], "confidence": "high", "status": "surfaced"},
+    "jury_waiver": {"value": "Each party irrevocably waives trial by jury", "source_object": "FA Sect. XXX", "source_pages": [141], "confidence": "high", "status": "surfaced"},
+    "claims_limitation": {"value": "All claims barred unless commenced within 1 year", "source_object": "FA Sect. XXX", "source_pages": [141], "confidence": "high", "status": "surfaced"},
+    "damages_waiver": {"value": "Both parties waive punitive/exemplary damages. Franchisee waives money damages for unreasonable withholding of consent.", "source_object": "FA Sect. XXX", "source_pages": [141], "confidence": "high", "status": "surfaced"},
+    "choice_of_law": {"value": "Wisconsin", "source_object": "Item 17, FA Sect. XXVII", "source_pages": [46], "confidence": "high", "status": "surfaced"}
+  },
+  "litigation_summary": {
+    "value": "No litigation required to be disclosed",
+    "source_object": "Item 3",
+    "source_pages": [12],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+  "bankruptcy_flag": {
+    "value": "No bankruptcy required to be disclosed",
+    "source_object": "Item 4",
+    "source_pages": [12],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+  "item18_public_figure_flag": {
+    "value": "RFC does not use any public figures to promote its franchise",
+    "source_object": "Item 18",
+    "source_pages": [47],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+  "item19_performance_summary": {
+    "value": "No financial performance representation made. RFC does not make any representations about franchisee future financial performance or past financial performance of company-owned or franchised outlets.",
+    "source_object": "Item 19",
+    "source_pages": [47],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+  "item20_outlet_summary": {
+    "total_outlets_end_2024": {"value": 31, "source_object": "Item 20", "source_pages": [48], "confidence": "high", "status": "surfaced"},
+    "franchised_end_2024": {"value": 24, "source_object": "Item 20", "source_pages": [48], "confidence": "high", "status": "surfaced"},
+    "company_owned_end_2024": {"value": 7, "source_object": "Item 20", "source_pages": [48], "confidence": "high", "status": "surfaced"},
+    "predecessor_franchised_end_2024": {"value": 0, "source_object": "Item 20", "source_pages": [48], "confidence": "high", "status": "surfaced"},
+    "states": {"value": ["Wisconsin", "Minnesota"], "source_object": "Item 20", "source_pages": [49], "confidence": "high", "status": "surfaced"},
+    "transfers_2024": {"value": 1, "source_object": "Item 20", "source_pages": [48], "confidence": "high", "status": "surfaced"},
+    "terminations_2024": {"value": 0, "source_object": "Item 20", "source_pages": [49], "confidence": "high", "status": "surfaced"},
+    "projected_new_franchised_2025": {"value": 3, "source_object": "Item 20", "source_pages": [50], "confidence": "high", "status": "surfaced"},
+    "signed_not_opened": {"value": 0, "source_object": "Item 20", "source_pages": [50], "confidence": "high", "status": "surfaced"},
+    "former_franchisees": {"value": "None", "source_object": "Item 20", "source_pages": [53], "confidence": "high", "status": "surfaced"},
+    "confidentiality_clauses": {"value": "No franchisees have signed confidentiality clauses during the last 3 fiscal years", "source_object": "Item 20", "source_pages": [54], "confidence": "high", "status": "surfaced"},
+    "franchisee_organizations": {"value": "None (no franchisor-created or independent)", "source_object": "Item 20", "source_pages": [54], "confidence": "high", "status": "surfaced"},
+    "franchisee_count": {"value": 20, "note": "20 distinct franchisee entities listed across WI and MN", "source_object": "Item 20", "source_pages": [50, 51, 52, 53], "confidence": "high", "status": "surfaced"}
+  },
+  "item21_auditor_guaranty_financial_summary": {
+    "auditor": {"value": "Vrakas, S.C., Brookfield, Wisconsin", "source_object": "Exhibit FIN", "source_pages": [58], "confidence": "high", "status": "surfaced"},
+    "audit_opinion": {"value": "Clean unqualified opinion", "source_object": "Exhibit FIN", "source_pages": [58], "confidence": "high", "status": "surfaced"},
+    "audit_date": {"value": "2025-03-06", "source_object": "Exhibit FIN", "source_pages": [59], "confidence": "high", "status": "surfaced"},
+    "guaranty": {"value": "Owner's Guarantee and Assumption of Franchisee's Obligations embedded in Exhibit FA (pp.146–147). Personal, unconditional guarantee by all owners.", "source_object": "Exhibit FA", "source_pages": [146, 147], "confidence": "high", "status": "surfaced"},
+    "total_revenue_2024": {"value": 1382868, "source_object": "Exhibit FIN", "source_pages": [61], "confidence": "high", "status": "surfaced"},
+    "net_income_2024": {"value": 70626, "source_object": "Exhibit FIN", "source_pages": [61], "confidence": "high", "status": "surfaced"},
+    "total_assets_2024": {"value": 766410, "source_object": "Exhibit FIN", "source_pages": [60], "confidence": "high", "status": "surfaced"},
+    "cash_2024": {"value": 669550, "source_object": "Exhibit FIN", "source_pages": [60], "confidence": "high", "status": "surfaced"},
+    "total_equity_2024": {"value": 446700, "source_object": "Exhibit FIN", "source_pages": [60], "confidence": "high", "status": "surfaced"},
+    "debt": {"value": "None", "source_object": "Exhibit FIN", "source_pages": [60], "confidence": "high", "status": "surfaced"},
+    "going_concern": {"value": "No going concern issues", "source_object": "Exhibit FIN", "source_pages": [58], "confidence": "high", "status": "surfaced"},
+    "related_party_fees": {"value": "$167,977 (2024) for management/consulting to related parties", "source_object": "Note 5 to FS", "source_pages": [67], "confidence": "high", "status": "surfaced"},
+    "related_party_facility": {"value": "RFC operates from facility leased by related party at no charge", "source_object": "Note 5 to FS", "source_pages": [67], "confidence": "high", "status": "surfaced"}
+  },
+  "key_exhibits": [
+    {"label": "Exhibit FIN", "title": "Financial Statements", "pages": "55–68", "status": "surfaced"},
+    {"label": "Exhibit FA", "title": "Franchise Agreement", "pages": "69–150", "status": "surfaced"},
+    {"label": "Exhibit FDA", "title": "Franchise Deposit Agreement", "pages": "151–159", "status": "surfaced"},
+    {"label": "Exhibit CAL", "title": "Collateral Assignment of Lease", "pages": "160–163", "status": "surfaced"},
+    {"label": "Exhibit ST", "title": "State Agency Information", "pages": "164–165", "status": "surfaced"}
+  ],
+  "management_team": {
+    "value": [
+      {"name": "Thomas R. Hester", "title": "Co-Chief Executive Officer and Director", "since": "January 2020", "prior_role": "President, Treasurer and Director (1995–2020)"},
+      {"name": "Sharon R. Hester", "title": "Co-Chief Executive Officer", "since": "January 2020", "prior_role": "Vice-President and Secretary (1995–2020)"},
+      {"name": "Thomas R. Hester III", "title": "President and Director", "since": "January 2020", "prior_role": "Vice-President (1999–2020), Director of Marketing (2011–2020)"},
+      {"name": "Amy R. Bartley", "title": "Secretary, Director of Marketing, and Director", "since": "January 2020"},
+      {"name": "Earl W. Rambo", "title": "Operations and Training Director", "since": "May 2006 (Training), July 2013 (Operations)"},
+      {"name": "Kurt J. Kimball", "title": "Controller", "since": "April 17, 2000"}
+    ],
+    "source_object": "Item 2",
+    "source_pages": [11, 12],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+  "special_risks": {
+    "value": ["Out-of-state dispute resolution via AAA at office nearest RFC home office"],
+    "source_object": "Special Risks page",
+    "source_pages": [5],
+    "confidence": "high",
+    "status": "surfaced"
+  },
+  "unresolveds": [
+    {
+      "issue": "State-specific addenda missing",
+      "detail": "The state cover page (p.6) and 'What You Need to Know' section reference state-specific addenda, but no state addenda exhibits are listed in the TOC or found in the document. The FDD is registered in 5 states (IL, IN, MI, MN, WI). Whether addenda exist and were omitted from this filing, or whether the boilerplate language is vestigial, is not determinable from this document alone.",
+      "source_pages": [4, 6],
+      "severity": "medium"
+    },
+    {
+      "issue": "Computer access contradiction",
+      "detail": "Item 11 states RFC does not have access to franchisee computer information (p.32) but requires franchisees to establish a dedicated line for RFC to access the computer system (p.31).",
+      "source_pages": [31, 32],
+      "severity": "low"
+    },
+    {
+      "issue": "Noncompete radius discrepancy between FA and FDA",
+      "detail": "FA noncompete is 1 year within 5 miles. FDA noncompete is 1 year within 50 miles. Both are disclosed but the 10x discrepancy is unusual and may create enforcement questions.",
+      "source_pages": [45, 46, 157],
+      "severity": "medium"
+    },
+    {
+      "issue": "Territory exclusivity tension",
+      "detail": "Item 12 grants a 1-mile radius protection but also explicitly disclaims exclusive territory. The reconciliation (protection from same-brand units vs. broader commercial exclusivity) is implicit, not explicitly stated.",
+      "source_pages": [38, 39],
+      "severity": "low"
+    }
+  ],
+  "contradictions": [
+    {
+      "field": "territory_exclusivity",
+      "value_a": "1-mile radius protection during term",
+      "value_b": "You will not receive an exclusive territory",
+      "source_a": "Item 12, p.38",
+      "source_b": "Item 12, p.39",
+      "resolution": "Reconcilable: 1-mile protection prevents new same-brand units only; not exclusive in broader commercial sense"
+    },
+    {
+      "field": "computer_access",
+      "value_a": "RFC does not have access to your computer information",
+      "value_b": "Franchisee must establish dedicated line for RFC to access computer system",
+      "source_a": "Item 11, p.32",
+      "source_b": "Item 11, p.31",
+      "resolution": "Possibly distinguishing current access vs. right to access; language creates tension"
+    },
+    {
+      "field": "noncompete_radius",
+      "value_a": "5 miles (FA)",
+      "value_b": "50 miles (FDA)",
+      "source_a": "Item 17, FA Sect. XVI.D",
+      "source_b": "Item 17, FDA Sect. 5",
+      "resolution": "Both disclosed; FA governs the operating franchise, FDA governs the pre-site-selection period"
+    }
+  ]
+}

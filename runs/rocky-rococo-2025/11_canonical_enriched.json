@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "brand": "Rocky Rococo Pizza and Pasta",
+    "franchisor_legal_name": "Rococo Franchise Corporation",
+    "fdd_issuance_date": "2025-04-24",
+    "fiscal_year_end": "2024-12-30",
+    "filing_number": "638785-2025",
+    "extraction_version": "enriched_v1"
+  },
+  "item19_chart_detail": {
+    "fpr_election": "no_fpr",
+    "has_item19_tables": false,
+    "has_item19_notes": false,
+    "item19_text": "RFC does not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets.",
+    "existing_outlet_exception": "If purchasing an existing outlet, RFC may provide actual records of that outlet.",
+    "source_pages": [47],
+    "derived_metrics": null,
+    "note": "No Item 19 financial performance data available for this brand."
+  },
+  "item20_yearly_activity": {
+    "years": [2022, 2023, 2024],
+    "franchised": {
+      "2022": {"start": 19, "opened_or_transferred": 0, "terminations": 1, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 18, "net_change": -1},
+      "2023": {"start": 18, "opened_or_transferred": 4, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 21, "net_change": 3},
+      "2024": {"start": 21, "opened_or_transferred": 4, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 24, "net_change": 3}
+    },
+    "company_owned": {
+      "2022": {"start": 8, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 8, "net_change": 0},
+      "2023": {"start": 8, "opened": 0, "reacquired": 0, "closed": 0, "sold": 1, "end": 7, "net_change": -1},
+      "2024": {"start": 7, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 7, "net_change": 0}
+    },
+    "predecessor_franchised": {
+      "2022": {"start": 7, "transferred_to_franchisee": 1, "end": 6, "net_change": -1},
+      "2023": {"start": 6, "transferred_to_franchisee": 3, "end": 3, "net_change": -3},
+      "2024": {"start": 3, "transferred_to_franchisee": 3, "end": 0, "net_change": -3}
+    },
+    "total": {
+      "2022": {"start": 34, "end": 32, "net_change": -2},
+      "2023": {"start": 32, "end": 31, "net_change": -1},
+      "2024": {"start": 31, "end": 31, "net_change": 0}
+    },
+    "transfers_between_franchisees": {
+      "2022": 1,
+      "2023": 1,
+      "2024": 1
+    },
+    "projected_openings": {
+      "2025": {"franchised": {"WI": 2, "MN": 1, "total": 3}, "company_owned": 0, "signed_not_opened": 0}
+    },
+    "state_breakdown": {
+      "Wisconsin": {"franchised_2024": 23, "company_owned_2024": 7, "total_2024": 30},
+      "Minnesota": {"franchised_2024": 1, "company_owned_2024": 0, "total_2024": 1}
+    },
+    "source_pages": [48, 49, 50, 65, 66],
+    "confidence": "high"
+  },
+  "exhibit_structure": {
+    "total_exhibits": 5,
+    "exhibits": [
+      {"label": "Exhibit FIN", "title": "Financial Statements", "pages": "55-68", "page_count": 14, "category": "financial_statements", "priority": 1},
+      {"label": "Exhibit FA", "title": "Franchise Agreement", "pages": "69-150", "page_count": 82, "category": "franchise_agreement", "priority": 1, "sub_components": ["Owner's Guarantee (pp.146-147)", "SBA Addendum (pp.148-150)"]},
+      {"label": "Exhibit FDA", "title": "Franchise Deposit Agreement", "pages": "151-159", "page_count": 9, "category": "development_agreement", "priority": 2},
+      {"label": "Exhibit CAL", "title": "Collateral Assignment of Lease", "pages": "160-163", "page_count": 4, "category": "collateral_agreement", "priority": 3},
+      {"label": "Exhibit ST", "title": "State Agency Information", "pages": "164-165", "page_count": 2, "category": "state_information", "priority": 4}
+    ],
+    "missing_common_exhibits": [
+      "State-specific addenda (referenced but absent)",
+      "Technology/digital services agreement (none exists)",
+      "General release form (referenced but not separately exhibited)",
+      "Operations manual (TOC disclosed in Item 11; manual not exhibited)"
+    ],
+    "source_pages": [8, 54],
+    "confidence": "high"
+  },
+  "item21_structural_facts": {
+    "auditor_name": "Vrakas, S.C.",
+    "auditor_location": "Brookfield, Wisconsin",
+    "audit_report_date": "2025-03-06",
+    "audit_opinion_type": "unqualified_clean",
+    "fiscal_year_type": "52_53_week",
+    "fiscal_year_end_day": "last Monday in December",
+    "years_audited": ["2024", "2023", "2022"],
+    "gaap_compliance": true,
+    "going_concern_flag": false,
+    "guaranty_type": "personal_unconditional",
+    "guaranty_scope": "All owners/shareholders/partners of franchisee entity guarantee all monetary and non-monetary obligations",
+    "guaranty_pages": [146, 147],
+    "financial_health_indicators": {
+      "cash_trend": "increasing (464K → 521K → 670K)",
+      "revenue_trend": "increasing (900K → 1.15M → 1.38M)",
+      "net_income_trend": "increasing (15K → 65K → 71K)",
+      "debt_level": "zero",
+      "equity_trend": "increasing (311K → 376K → 447K)",
+      "current_ratio_2024": 2.39,
+      "related_party_dependency": "moderate (management fees + rent-free facility)"
+    },
+    "source_pages": [55, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 146, 147],
+    "confidence": "high"
+  },
+  "item1_structural_facts": {
+    "entity_type": "Wisconsin corporation",
+    "incorporation_date": "1995-06-13",
+    "purpose": "Establishing a franchise system specializing in pizza and pasta",
+    "is_subsidiary": false,
+    "has_affiliates_offering_franchises": false,
+    "predecessor_name": "Rocky Rococo Corporation",
+    "predecessor_franchising_years": "1982-1987",
+    "trademark_owner": "Rocky Rococo Corporation",
+    "trademark_license_type": "Intellectual Property License Agreement (perpetual)",
+    "affiliate_count": 5,
+    "affiliate_owned_restaurants": 7,
+    "affiliate_entities": [
+      {"name": "Rocky Rococo Corporation", "role": "trademark_owner_licensor", "restaurants": 0},
+      {"name": "Pizza Rococo, Inc.", "role": "operator", "restaurants": 1, "since": "1992", "provides_goods": true, "at_no_profit": true},
+      {"name": "TRH Restaurants, Inc.", "role": "operator", "restaurants": 1, "since": "1994"},
+      {"name": "Airport Pizza Roc, Inc.", "role": "operator", "restaurants": 2, "since": "2003"},
+      {"name": "TRH Restaurants II, Inc.", "role": "operator", "restaurants": 2, "since": "2007"},
+      {"name": "TRH Restaurants III, Inc.", "role": "operator", "restaurants": 1, "since": "2021"}
+    ],
+    "concept_description": "Restaurant specializing in pan style pizza and pasta dishes",
+    "general_market": "Persons ages 5 to 70",
+    "seasonality": "Not seasonal",
+    "competition_description": "Full-service, carry-out and delivery restaurants specializing in pizza and pasta (national/regional chains), other restaurant types, grocery stores selling pizza",
+    "source_pages": [1, 9, 10, 11],
+    "confidence": "high"
+  },
+  "item6_fee_attributes": {
+    "total_fee_categories": 9,
+    "royalty": {
+      "rate": "5%",
+      "basis": "total gross sales",
+      "frequency": "weekly",
+      "conditional_reduction": {"threshold": 425000, "reduced_rate": "3.5%", "basis_period": "fiscal year", "retroactive": true},
+      "payable_to": "RFC"
+    },
+    "marketing_fund": {
+      "rate": "0.75%",
+      "rate_type": "maximum",
+      "basis": "gross sales",
+      "frequency": "weekly",
+      "fund_audited": false,
+      "fund_spend_breakdown_2024": {"marketing_advertising": "66.83%", "administration": "3.63%", "public_relations": "29.53%"},
+      "payable_to": "RFC"
+    },
+    "local_advertising": {
+      "rate_tiers": [
+        {"media_type": "no electronic", "rate": "1.5%"},
+        {"media_type": "radio", "rate": "2.5%"},
+        {"media_type": "television", "rate": "3.5%"}
+      ],
+      "rate_type": "maximum",
+      "basis": "gross sales",
+      "local_ad_fund_active": false,
+      "increase_requires_approval": "60% of participating restaurants",
+      "payable_to": "self-spent or Local Ad Fund"
+    },
+    "transfer_fee": {
+      "amount": "50% of then-current initial franchise fee",
+      "current_value_approx": 12500,
+      "payable_to": "RFC"
+    },
+    "total_ongoing_fee_range": {
+      "minimum_pct": "5.75%",
+      "maximum_pct": "9.25%",
+      "note": "Royalty 5% (or 3.5%) + Marketing 0.75% + Local Ad 0-3.5%"
+    },
+    "fee_refundability": "Non-refundable",
+    "fee_uniformity": "Uniformly imposed (except local advertising, refurbishing, insurance premiums)",
+    "source_pages": [14, 15, 16, 17, 18, 27, 28],
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "task_id": "RR-02",
+  "task_name": "Financial statement notes recovery",
+  "source": "Notes to Financial Statements, pp.63-67",
+
+  "advertising_expense_actuals": {
+    "source": "Note 1, p.64",
+    "values": {
+      "2024": 270344,
+      "2023": 229359,
+      "2022": 152565
+    },
+    "comparison_to_fees_collected": {
+      "2024": {"fees_collected": 269344, "expenses": 270344, "net": -1000, "note": "RFC spent $1,000 more than collected"},
+      "2023": {"fees_collected": 228699, "expenses": 229359, "net": -660, "note": "RFC spent $660 more than collected"},
+      "2022": {"fees_collected": 145224, "expenses": 152565, "net": -7341, "note": "RFC spent $7,341 more than collected"}
+    },
+    "included_in": "Selling, general and administrative expenses",
+    "significance": "RFC consistently spends at or slightly above the amount collected in ad fees, demonstrating full deployment of the marketing fund.",
+    "confidence": "high"
+  },
+
+  "vie_election": {
+    "source": "Note 1, p.64",
+    "standard": "ASU No. 2018-17, Consolidation — Targeted Improvements to Related Party Guidance for Variable Interest Entities (VIE)",
+    "election": "RFC elected not to apply VIE guidance to legal entities under common control",
+    "condition": "Both RFC and the evaluated entity are not public business entities",
+    "effect": "Hester family affiliate entities (Pizza Rococo Inc., TRH Restaurants Inc./II/III, Airport Pizza Roc Inc., Rocky Rococo Corporation) are NOT consolidated into RFC's financial statements despite common ownership and control",
+    "significance": "The financial statements reflect only the franchisor entity. The 7 affiliate-owned restaurants' operating results, assets, and liabilities are not included. This understates the total economic footprint of the Rocky Rococo system under Hester family control.",
+    "confidence": "high"
+  },
+
+  "accounting_policies_structured": {
+    "depreciation": {
+      "method": "Straight-line",
+      "useful_lives": "5 to 7 years",
+      "assets_covered": "Property and equipment (furniture, fixtures, equipment)",
+      "source_page": 63
+    },
+    "receivables": {
+      "measurement": "Net amount expected to be collected through allowance for credit losses",
+      "credit_risk_mitigation": "Credit checks and actively pursuing past due accounts",
+      "payment_terms": "Due by end of following week to which activity relates",
+      "finance_charges_on_past_due": false,
+      "allowance_needed": false,
+      "provisions_charged": 0,
+      "write_offs": 0,
+      "applies_to_all_3_years": true,
+      "source_page": 63
+    },
+    "long_lived_assets": {
+      "impairment_test": "Annual consideration of impairment indicators",
+      "impairment_found": false,
+      "applies_to_all_3_years": true,
+      "source_page": 64
+    },
+    "subsequent_events": {
+      "evaluation_through": "2025-03-06",
+      "source_page": 63
+    },
+    "cash_equivalents": {
+      "definition": "Highly liquid investments with original maturities of 3 months or less",
+      "fdic_risk": "Cash may exceed FDIC insurance limit at times; no losses expected",
+      "source_page": 63
+    },
+    "other_receivables": {
+      "description": "Gift cards sold online and at restaurants; funds processed through third-party processor",
+      "source_page": 63
+    },
+    "revenue_recognition": {
+      "franchise_fees": "Single performance obligation; recognized when location is opened or transferred",
+      "new_franchisee_fee": 25000,
+      "existing_franchisee_new_location_fee": 17500,
+      "transfer_fee": 12500,
+      "refundable_window": "10 days after execution",
+      "royalty_recognition": "Recognized as income in the same period in which sales occur",
+      "royalty_reduction_accounting": "If threshold not met, Company retroactively reduces to 3.5% and credits difference to franchisees' balance owed in the future",
+      "advertising_fee_recognition": "Recognized as income in same period; excess over expenses recorded as cooperative advertising fund surplus",
+      "source_page": 64
+    },
+    "related_party_entities": {
+      "standard_applied": "ASU 2018-17 (VIE alternative for non-public entities under common control)",
+      "consolidation_elected": false,
+      "source_page": 64
+    }
+  },
+
+  "note4_income_tax_detail": {
+    "source": "Note 4, p.66",
+    "tax_provision": {
+      "2024": {"current": 28632, "deferred": -1000, "total": 27632},
+      "2023": {"current": 22585, "deferred": 3000, "total": 25585},
+      "2022": {"current": 4700, "deferred": 1300, "total": 6000}
+    },
+    "deferred_tax_net": {
+      "2024": -2000,
+      "2023": -3000,
+      "2022": null,
+      "note": "2022 deferred tax assets/liabilities column garbled in OCR; net appears to be $0 or immaterial"
+    },
+    "uncertain_tax_positions": "None required to be recorded for all 3 years",
+    "statute_limitations": {
+      "federal": "No longer subject to examination for years before 2021",
+      "state": "No longer subject to examination for years before 2020"
+    },
+    "confidence": "high"
+  },
+
+  "balance_sheet_null_repairs": {
+    "source": "Balance sheet p.60, cross-referenced with user-provided clean text",
+    "repairs": [
+      {"field": "other_receivables_2022", "old_value": null, "new_value": 10140, "basis": "User-provided clean text confirms $10,140"},
+      {"field": "ffe_gross_2024", "old_value": null, "new_value": 55543, "basis": "fitz extraction showed 55,543; confirmed by user text"},
+      {"field": "accumulated_depreciation_2023", "old_value": null, "new_value": null, "basis": "Still garbled; can derive: gross 52,593 - net ~11,240 = ~41,353 but this is estimated"},
+      {"field": "net_ppe_2023", "old_value": null, "new_value": null, "basis": "Garbled in both extraction tools. Total assets 630,889 - current assets 619,649 = 11,240 implied net PP&E"}
+    ],
+    "derived_values": {
+      "net_ppe_2023": {"value": 11240, "method": "total_assets minus total_current_assets", "confidence": "medium"},
+      "accumulated_depreciation_2023": {"value": 41353, "method": "gross FF&E 52,593 minus derived net PP&E 11,240", "confidence": "medium"}
+    }
+  }
+}

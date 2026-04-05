@@ -1,0 +1,89 @@
+[
+  {
+    "exhibit_id": "EX_FA",
+    "exhibit_label": "Exhibit FA",
+    "title": "Franchise Agreement",
+    "page_start": 69,
+    "page_end": 150,
+    "category": "franchise_agreement",
+    "priority": 1,
+    "directly_surfaced": "yes",
+    "why_it_matters": "Core operating agreement defining all rights, obligations, fees, territory, term, renewal, transfer, termination, noncompete, and dispute resolution provisions. Contains 35+ sections across 72+ pages.",
+    "key_burden_or_function": "15-year term with 15-year renewal; 5% royalty (3.5% if under $425K annual sales); 1-mile territory (with carveouts); full operational control; noncompete during and 1 year post-term within 5 miles; binding arbitration via AAA; Wisconsin law governs.",
+    "linked_items": [1, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17],
+    "sub_components": [
+      {
+        "label": "Owner's Guarantee and Assumption of Franchisee's Obligations",
+        "page_start": 146,
+        "page_end": 147,
+        "function": "Personal guarantee by all owners/shareholders/partners of franchisee entity. Unconditional guarantee of all monetary and non-monetary obligations under the FA."
+      },
+      {
+        "label": "SBA Addendum to Franchise Agreement",
+        "page_start": 148,
+        "page_end": 150,
+        "function": "Standard SBA addendum for franchisees obtaining SBA-assisted financing. Addresses change of ownership, covenants against real estate restrictions, and employment control limitations. Auto-terminates when SBA no longer has interest in financing."
+      }
+    ]
+  },
+  {
+    "exhibit_id": "EX_FDA",
+    "exhibit_label": "Exhibit FDA",
+    "title": "Franchise Deposit Agreement",
+    "page_start": 151,
+    "page_end": 159,
+    "category": "development_agreement",
+    "priority": 2,
+    "directly_surfaced": "yes",
+    "why_it_matters": "Pre-franchise agreement that secures the franchise opportunity while a site is located. Defines the 180-day site-finding window, deposit structure, refund conditions, and preliminary obligations. Contains its own noncompete (50-mile radius, notably broader than the FA's 5-mile radius).",
+    "key_burden_or_function": "$12,500 deposit (credited toward franchise fee); 180-day site acquisition window; deposit refundable if no site found (unless terminated for cause); own noncompete of 1 year within 50-mile radius; confidentiality obligations begin at FDA signing.",
+    "linked_items": [5, 7, 12, 17]
+  },
+  {
+    "exhibit_id": "EX_CAL",
+    "exhibit_label": "Exhibit CAL",
+    "title": "Collateral Assignment of Lease",
+    "page_start": 160,
+    "page_end": 163,
+    "category": "collateral_agreement",
+    "priority": 5,
+    "directly_surfaced": "yes",
+    "why_it_matters": "Assigns franchisee's leasehold interest to RFC as collateral security for franchise obligations. Includes lessor consent form. Enables RFC to step into the lease on franchisee default, providing business continuity and protecting the brand.",
+    "key_burden_or_function": "Collateral assignment only (RFC has no liability unless it takes possession). RFC can cure franchisee default within 30 days of lessor notice. RFC can further assign/sublease to approved operator. Standard protection mechanism.",
+    "linked_items": [7, 11, 17]
+  },
+  {
+    "exhibit_id": "EX_FIN",
+    "exhibit_label": "Exhibit FIN",
+    "title": "Financial Statements",
+    "page_start": 55,
+    "page_end": 68,
+    "category": "financial_statements",
+    "priority": 3,
+    "directly_surfaced": "yes",
+    "why_it_matters": "Three years of audited financial statements (FY2024, FY2023, FY2022) for Rococo Franchise Corporation. Audited by Vrakas, S.C. (Brookfield, WI) with clean unqualified opinion. Critical for assessing franchisor financial health, revenue trends, and system economics.",
+    "key_burden_or_function": "Shows healthy and growing franchise entity. Total revenue $1.38M (2024), net income $70.6K, cash $669.5K, no debt. Revenue grew 53.6% over 2 years. Related-party management fees of $168K. No going concern issues.",
+    "linked_items": [21],
+    "sub_components": [
+      {"label": "Independent Auditors' Report", "page_start": 58, "page_end": 59},
+      {"label": "Balance Sheets", "page_start": 60, "page_end": 60},
+      {"label": "Statements of Operations and Retained Earnings", "page_start": 61, "page_end": 61},
+      {"label": "Statements of Cash Flows", "page_start": 62, "page_end": 62},
+      {"label": "Notes to Financial Statements", "page_start": 63, "page_end": 67},
+      {"label": "Auditor Consent Letter", "page_start": 68, "page_end": 68}
+    ]
+  },
+  {
+    "exhibit_id": "EX_ST",
+    "exhibit_label": "Exhibit ST",
+    "title": "State Agency Information",
+    "page_start": 164,
+    "page_end": 165,
+    "category": "state_information",
+    "priority": 10,
+    "directly_surfaced": "yes",
+    "why_it_matters": "Lists state regulatory agency contacts for franchise registration states: Illinois, Indiana, Michigan, Minnesota, Washington, and Wisconsin. Required for franchisee due diligence and complaint filing.",
+    "key_burden_or_function": "Reference exhibit only. No additional franchisee burden.",
+    "linked_items": [23]
+  }
+]

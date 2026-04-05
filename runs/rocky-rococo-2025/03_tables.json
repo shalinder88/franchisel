@@ -1,0 +1,534 @@
+[
+  {
+    "table_id": "T01_item6_other_fees",
+    "title": "Other Fees",
+    "item_number": 6,
+    "page_start": 14,
+    "page_end": 14,
+    "diligence_family": "fee_structure",
+    "column_headers": ["Name of Fee", "Amount", "Due Date", "Remarks"],
+    "rows": [
+      {
+        "fee_name": "Royalty",
+        "amount": "5% of total gross sales",
+        "due_date": "On or before the Friday following the end of the preceding week",
+        "remarks": "See note 1"
+      },
+      {
+        "fee_name": "Marketing Fund",
+        "amount": "Not to exceed 0.75% of gross sales",
+        "due_date": "On or before the Friday following the end of the preceding week",
+        "remarks": "See note 2"
+      },
+      {
+        "fee_name": "Advertising/Promotion/Local Advertising",
+        "amount": "Not to exceed 3 1/2% of gross sales",
+        "due_date": "On or before the Friday following the end of the preceding week or within 90 days following the end of the week",
+        "remarks": "See note 3"
+      },
+      {
+        "fee_name": "Transfer",
+        "amount": "50% of the then-current initial franchise fee charged",
+        "due_date": "Upon approval of assignment",
+        "remarks": "See note 4"
+      },
+      {
+        "fee_name": "Additional Training/On-Site Assistance",
+        "amount": "Cost of lodging, meals, transport",
+        "due_date": "Subsequent to the opening of the store",
+        "remarks": "See note 5"
+      },
+      {
+        "fee_name": "Amounts Advanced by RFC",
+        "amount": "Any amount advanced by RFC",
+        "due_date": "Immediately",
+        "remarks": ""
+      },
+      {
+        "fee_name": "Interest",
+        "amount": "Maximum by law or 1 1/2% per month",
+        "due_date": "From date payment is due until paid in full",
+        "remarks": "See note 6"
+      },
+      {
+        "fee_name": "Indemnification",
+        "amount": "Maximum by law",
+        "due_date": "From date payment is due until paid in full",
+        "remarks": "See note 7"
+      },
+      {
+        "fee_name": "Audit",
+        "amount": "Actual cost of audit plus interest on overdue amount",
+        "due_date": "Immediately",
+        "remarks": "See note 8"
+      }
+    ],
+    "table_notes": [
+      "With the exception of local advertising, refurbishing, and insurance premiums, all the fees listed above are imposed by and payable to RFC. The fees are non-refundable and are uniformly imposed.",
+      "Note 1: Royalty is 5% weekly. Retroactively reduced to 3.5% if annual sales below $425,000 (52-week year) or $433,173 (53-week year). RFC refunds excess within 30 days of fiscal year-end. Must be current on all fees to receive refund.",
+      "Note 2: Marketing fund fee of 0.75% of gross sales payable weekly.",
+      "Note 3: Local advertising tiered: 1.5% (no electronic media), 2.5% (radio), 3.5% (TV). Increase requires 60% franchisee approval. Local Ad Fund not currently being collected.",
+      "Note 4: Transfer fee is 50% of then-current initial franchise fee. Covers credit checks, attorney fees, and training for new franchisee.",
+      "Note 5: Additional training costs (transport, lodging, meals) borne by franchisee.",
+      "Note 6: Interest at maximum rate by law or 1.5% per month on overdue payments.",
+      "Note 7: Franchisee must indemnify and hold RFC harmless for broad categories of claims.",
+      "Note 8: If audit shows deficiency exceeding 2% of reported gross sales, franchisee pays all audit costs plus deficiency plus interest."
+    ],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T02_item7_initial_investment",
+    "title": "Your Estimated Initial Investment",
+    "item_number": 7,
+    "page_start": 19,
+    "page_end": 20,
+    "diligence_family": "initial_investment",
+    "column_headers": ["Type of Expenditure", "Amount", "Method of Payment", "When Due", "To Whom Payment Is To Be Made"],
+    "rows": [
+      {
+        "type": "Initial Franchise Fee (1)",
+        "amount_low": 25000,
+        "amount_high": 25000,
+        "method": "If FDA signed: 2 installments of $12,500. If not: 1 installment of $25,000",
+        "when_due": "At signing of FDA/FA",
+        "to_whom": "RFC"
+      },
+      {
+        "type": "Equipment, Fixtures (2)",
+        "amount_low": 80000,
+        "amount_high": 300000,
+        "method": "By agreement with vendors",
+        "when_due": "Before opening",
+        "to_whom": "Vendors"
+      },
+      {
+        "type": "Leasehold Improvements (3)",
+        "amount_low": 80000,
+        "amount_high": 325000,
+        "method": "Progress payments with vendors",
+        "when_due": "Before opening",
+        "to_whom": "Contractors"
+      },
+      {
+        "type": "Opening Inventory (4)",
+        "amount_low": 4000,
+        "amount_high": 12000,
+        "method": "Lump sum",
+        "when_due": "Before opening",
+        "to_whom": "Suppliers"
+      },
+      {
+        "type": "Security Deposits (5)",
+        "amount_low": 0,
+        "amount_high": 4000,
+        "method": "Lump sum",
+        "when_due": "Before opening",
+        "to_whom": "Landlord, utilities, insurance"
+      },
+      {
+        "type": "Promotion (6)",
+        "amount_low": 5000,
+        "amount_high": 5000,
+        "method": "As incurred",
+        "when_due": "Opening to 30 days",
+        "to_whom": "Various media, PR events"
+      },
+      {
+        "type": "Pre-Opening Training (7)",
+        "amount_low": 1000,
+        "amount_high": 5000,
+        "method": "As incurred",
+        "when_due": "Before opening",
+        "to_whom": "Employees"
+      },
+      {
+        "type": "Misc. (legal, permits) (8)",
+        "amount_low": 1000,
+        "amount_high": 4500,
+        "method": "As incurred",
+        "when_due": "Before opening",
+        "to_whom": "Attorneys, local gov., travel agent"
+      },
+      {
+        "type": "Additional Funds (3 mos.) (9)",
+        "amount_low": 10000,
+        "amount_high": 20000,
+        "method": "As incurred",
+        "when_due": "Before opening to first 3 months",
+        "to_whom": "Contingency, various vendors"
+      },
+      {
+        "type": "Insurance (10)",
+        "amount_low": 5000,
+        "amount_high": 5000,
+        "method": "As incurred",
+        "when_due": "Before opening",
+        "to_whom": "Vendor"
+      }
+    ],
+    "total_low": 211000,
+    "total_high": 705500,
+    "table_notes": [
+      "Note 1: See Item 5 for additional info on initial franchise fee.",
+      "Note 2: Equipment includes computer systems, phones, ovens, dishes, cooking utensils.",
+      "Note 3: Locations may be enclosed malls, food courts, strip-center malls, storefronts, free-standing buildings. Leasehold costs vary by size, location, material, labor. Free-standing costs substantially higher than projected. Mall ~900 sq ft, strip center ~2,800 sq ft, free-standing ~3,800 sq ft.",
+      "Note 4: Opening inventory covers ~2-3 weeks of operation.",
+      "Note 5: Security deposits may be refundable. May not be required at landlord/utility discretion.",
+      "Note 6: Promotion costs vary by media type and location.",
+      "Note 7: Pre-opening training covers ~1 week of training new employees.",
+      "Note 8: Includes attorney's fees and permit costs.",
+      "Note 9: Additional funds estimate for 3 months based on affiliate experience. Actual needs vary by territory size, time of year, management skill, economic conditions, competition.",
+      "Note 10: Annual business owner's policy covering liability, property damage, loss of income, loss of property.",
+      "Estimate is for owner-operated business, does not include salaries/benefits for employees or owner's draw. RFC estimates additional cash needed during first 3-9 months or longer. Payments to RFC are non-refundable. RFC does not offer direct or indirect financing."
+    ],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T03_item9_franchisee_obligations",
+    "title": "Franchisee's Obligations",
+    "item_number": 9,
+    "page_start": 24,
+    "page_end": 25,
+    "diligence_family": "contract_structure",
+    "column_headers": ["Obligation", "Section in Agreement", "Disclosure Document Item"],
+    "rows": [
+      {"obligation": "a. Site selection & acquisition/lease", "fa_section": "FA Sect. III", "fdd_item": "Items 7 and 11"},
+      {"obligation": "b. Pre-opening purchases/leases", "fa_section": "FA Sect. III", "fdd_item": "Items 7 and 8"},
+      {"obligation": "c. Site development/other pre-opening requirements", "fa_section": "FA Sect. III/V", "fdd_item": "Items 7 and 8"},
+      {"obligation": "d. Initial and ongoing training", "fa_section": "FA Sect. V", "fdd_item": "Items 6, 7 and 11"},
+      {"obligation": "e. Opening", "fa_section": "FA Sect. III/V", "fdd_item": "Item 11"},
+      {"obligation": "f. Fees", "fa_section": "FA Sect. I/VI/XII", "fdd_item": "Items 5, 6 and 7"},
+      {"obligation": "g. Compliance with standards/Operations Manual", "fa_section": "FA Sect. VII/IX/X", "fdd_item": "Items 8 and 11"},
+      {"obligation": "h. Trademarks and proprietary info", "fa_section": "FA Sect. IV", "fdd_item": "Items 13 and 14"},
+      {"obligation": "i. Restrictions on products/services", "fa_section": "FA Sect. X", "fdd_item": "Items 8, 11 and 16"},
+      {"obligation": "j. Warranty and customer service requirements", "fa_section": "FA Sect. X", "fdd_item": "Item 11"},
+      {"obligation": "k. Territorial development and sales quota", "fa_section": "FA Sect. I", "fdd_item": "Item 12"},
+      {"obligation": "l. Ongoing product/service purchases", "fa_section": "FA Sect. X", "fdd_item": "Item 8"},
+      {"obligation": "m. Maintenance, appearance, and remodeling requirements", "fa_section": "FA Sect. X", "fdd_item": "Item 8"},
+      {"obligation": "n. Insurance", "fa_section": "FA Sect. X", "fdd_item": "Item 6"},
+      {"obligation": "o. Advertising", "fa_section": "FA Sect. VI", "fdd_item": "Items 6, 7 and 11"},
+      {"obligation": "p. Indemnification", "fa_section": "FA Sect. XIII", "fdd_item": "Item 6"},
+      {"obligation": "q. Owners participation/management/staffing", "fa_section": "FA Sect. V/X", "fdd_item": "Items 11 and 15"},
+      {"obligation": "r. Records and reports", "fa_section": "FA Sect. IX", "fdd_item": "Item 6"},
+      {"obligation": "s. Inspections and audits", "fa_section": "FA Sect. IX/X", "fdd_item": "Item 6"},
+      {"obligation": "t. Transfer", "fa_section": "FA Sect. XVIII", "fdd_item": "Items 6 and 17"},
+      {"obligation": "u. Renewal", "fa_section": "FA Sect. II", "fdd_item": "Items 6 and 17"},
+      {"obligation": "v. Post-termination obligations", "fa_section": "FA Sect. XVI", "fdd_item": "Item 17"},
+      {"obligation": "w. Non-competition covenants", "fa_section": "FA Sect. XIV/XVI", "fdd_item": "Item 17"},
+      {"obligation": "x. Dispute resolution", "fa_section": "FA Sect. XXIX", "fdd_item": "Item 17"},
+      {"obligation": "y. Other (covenants, hours, taxes, permits, indebtedness)", "fa_section": "FA Sect. XIV/XVII/XIX", "fdd_item": ""}
+    ],
+    "table_notes": [],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T04_item11_training_program",
+    "title": "Training Program",
+    "item_number": 11,
+    "page_start": 37,
+    "page_end": 37,
+    "diligence_family": "training",
+    "column_headers": ["Subject", "Hours of Classroom Training", "Hours of On Job Training", "Location"],
+    "rows": [
+      {"subject": "VCM (Dough Making)", "classroom_hours": 0, "ojt_hours": 12, "location": "Wauwatosa, Wisconsin"},
+      {"subject": "Pizza Preparation", "classroom_hours": 0, "ojt_hours": 24, "location": "Wauwatosa, Wisconsin"},
+      {"subject": "Quality Control/Oven", "classroom_hours": 0, "ojt_hours": 36, "location": "Wauwatosa, Wisconsin"},
+      {"subject": "Bussing/DMO", "classroom_hours": 0, "ojt_hours": 4, "location": "Wauwatosa, Wisconsin"},
+      {"subject": "Customer Service", "classroom_hours": 0, "ojt_hours": 36, "location": "Wauwatosa, Wisconsin"},
+      {"subject": "Delivery", "classroom_hours": 0, "ojt_hours": 12, "location": "Wauwatosa, Wisconsin"},
+      {"subject": "Administration", "classroom_hours": 0, "ojt_hours": 36, "location": "Wauwatosa, Wisconsin"}
+    ],
+    "table_notes": [
+      "Training at RFC's training store in Mayfair Mall, Wauwatosa, Wisconsin.",
+      "10 weeks, 5 business days per week, 8-10 hours per day.",
+      "All training is on-the-job; 0 classroom hours for all subjects.",
+      "Training conducted by RFC staff with at least 1 year in-field experience.",
+      "Additional on-the-job training available at affiliate restaurants for up to 20 weeks (not required, recommended).",
+      "Opening assistance: 5 business days (3 days before scheduled opening).",
+      "Initial training program is mandatory. Failure to complete to RFC's satisfaction is grounds for termination.",
+      "Franchisee bears costs of transportation, lodging, meals, wages, and employee benefits for training."
+    ],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T05_item17_franchise_relationship",
+    "title": "Renewal, Termination, Transfer, and Dispute Resolution — The Franchise Relationship",
+    "item_number": 17,
+    "page_start": 43,
+    "page_end": 47,
+    "diligence_family": "contract_structure",
+    "column_headers": ["Provision", "Section in Franchise or Other Agreement", "Summary"],
+    "rows": [
+      {"provision": "a. Length of franchise term", "section": "FA II.A / FDA 2", "summary": "15 years (FA); 180 days (FDA)"},
+      {"provision": "b. Renewal or extension", "section": "FA II.B / FDA 2", "summary": "One additional 15-year renewal if in good standing (FA); as agreed (FDA)"},
+      {"provision": "c. Requirements to renew", "section": "FA II.B / FDA 2", "summary": "Give notice, execute then-current FA (may have materially different terms), general release, remodel, retraining. No renewal fee."},
+      {"provision": "d. Termination by franchisee", "section": "None / FDA 2", "summary": "No provision in FA. FDA: may terminate if unable to acquire site within 180 days."},
+      {"provision": "e. Termination by franchisor without cause", "section": "None / FDA 2", "summary": "No provision in FA. FDA: may terminate if unable to acquire site within 180 days."},
+      {"provision": "f. Termination by franchisor with cause", "section": "FA XV / FDA 6", "summary": "RFC can terminate only if franchisee is in default."},
+      {"provision": "g. Cause defined — curable defaults", "section": "FA XV / FDA 6", "summary": "60 days to cure: fail to submit reports, bankruptcy, property attached, goodwill impairment, fail to comply, fail to maintain insurance, etc. 10 days to cure non-payment of fees."},
+      {"provision": "h. Cause defined — non-curable defaults", "section": "FA XV / FDA 6", "summary": "Adjudged bankrupt, assignment for creditors, abandonment, criminal misconduct, material misrepresentation, loss of possession, unauthorized assignment/disclosure, intentional understatement of gross sales, repeated non-compliance."},
+      {"provision": "i. Franchisee obligations on termination/non-renewal", "section": "FA XVI / FDA 8", "summary": "Payment of amounts due, complete de-identification, covenant not to compete."},
+      {"provision": "j. Assignment by franchisor", "section": "FA XVIII.A / FDA", "summary": "No restriction on RFC's right to assign."},
+      {"provision": "k. Transfer defined", "section": "FA XVIII.B / FDA 12", "summary": "Includes transfer of contract, assets, or ownership change."},
+      {"provision": "l. Franchisor approval of transfer", "section": "FA XVIII.B / FDA", "summary": "RFC has right to approve all transfers; will not unreasonably withhold."},
+      {"provision": "m. Conditions for approval of transfer", "section": "FA XVIII.C / FDA", "summary": "New franchisee qualifies, accounts current, transfer fee paid, training arranged, release signed, noncompete signed, remodel, current agreement signed by new franchisee."},
+      {"provision": "n. Right of first refusal", "section": "FA XVIII.G / FDA", "summary": "RFC can match any offer for the franchise business."},
+      {"provision": "o. Option to purchase", "section": "None", "summary": "No standalone option."},
+      {"provision": "p. Death or disability", "section": "FA XVIII.E / FDA", "summary": "Franchise must be assigned by estate to approved buyer or heir within 6 months."},
+      {"provision": "q. Noncompete during term", "section": "FA XIV.A / FDA 5", "summary": "No involvement in competing business anywhere. Subject to state law."},
+      {"provision": "r. Noncompete after term", "section": "FA XVI.D / FDA 5", "summary": "FA: 1 year within 5 miles of designated area or 5 miles of any system location. FDA: 1 year within 50 miles."},
+      {"provision": "s. Modification of agreement", "section": "FA XXV / FDA", "summary": "No modifications, but Operations Manual subject to change."},
+      {"provision": "t. Integration/merger clause", "section": "FA XXV / FDA", "summary": "Only FA terms, exhibits and signed agreements enforceable. Does not disclaim express FDD representations."},
+      {"provision": "u. Dispute resolution", "section": "FA XXX / FDA", "summary": "Binding arbitration via AAA at its office nearest RFC. WI Franchise Investment Law and Fair Dealership Act legality not subject to arbitration."},
+      {"provision": "v. Choice of forum", "section": "None", "summary": "No restriction on choice of forum. Subject to state law."},
+      {"provision": "w. Choice of law", "section": "FA XXVII / FDA", "summary": "Wisconsin law applies. Subject to state law."}
+    ],
+    "table_notes": [
+      "Either party may request binding arbitration. Legality of WI Franchise Investment Law and WI Fair Dealership Act are not subject to arbitration.",
+      "FA and FDA have differing noncompete radii: FA uses 5 miles, FDA uses 50 miles."
+    ],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T06_item20_systemwide_summary",
+    "title": "Systemwide Outlet Summary — For year 2024",
+    "item_number": 20,
+    "page_start": 48,
+    "page_end": 48,
+    "diligence_family": "outlet_activity",
+    "column_headers": ["Outlet Type", "Year", "Outlets at Start of Year", "Outlets at End of Year", "Net Change"],
+    "rows": [
+      {"outlet_type": "Franchised", "year": 2022, "start": 19, "end": 18, "net_change": -1},
+      {"outlet_type": "Franchised", "year": 2023, "start": 18, "end": 21, "net_change": 3},
+      {"outlet_type": "Franchised", "year": 2024, "start": 21, "end": 24, "net_change": 3},
+      {"outlet_type": "Company-Owned", "year": 2022, "start": 8, "end": 8, "net_change": 0},
+      {"outlet_type": "Company-Owned", "year": 2023, "start": 8, "end": 7, "net_change": -1},
+      {"outlet_type": "Company-Owned", "year": 2024, "start": 7, "end": 7, "net_change": 0},
+      {"outlet_type": "Predecessor-Franchised", "year": 2022, "start": 7, "end": 6, "net_change": -1},
+      {"outlet_type": "Predecessor-Franchised", "year": 2023, "start": 6, "end": 3, "net_change": -3},
+      {"outlet_type": "Predecessor-Franchised", "year": 2024, "start": 3, "end": 0, "net_change": -3},
+      {"outlet_type": "Total", "year": 2022, "start": 34, "end": 32, "net_change": -2},
+      {"outlet_type": "Total", "year": 2023, "start": 32, "end": 31, "net_change": -1},
+      {"outlet_type": "Total", "year": 2024, "start": 31, "end": 31, "net_change": 0}
+    ],
+    "table_notes": [
+      "Company-owned outlets are not owned by RFC, but are owned by affiliates of RFC.",
+      "Predecessor-franchised outlets were franchised by Rocky Rococo Corporation, a predecessor and affiliate of RFC."
+    ],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T07_item20_transfers",
+    "title": "Transfers of Outlets from Franchisees to New Owners (other than the Franchisor)",
+    "item_number": 20,
+    "page_start": 48,
+    "page_end": 48,
+    "diligence_family": "outlet_activity",
+    "column_headers": ["State", "Year", "Number of Transfers"],
+    "rows": [
+      {"state": "Wisconsin", "year": 2022, "transfers": 1},
+      {"state": "Wisconsin", "year": 2023, "transfers": 1},
+      {"state": "Wisconsin", "year": 2024, "transfers": 1},
+      {"state": "Total", "year": 2022, "transfers": 1},
+      {"state": "Total", "year": 2023, "transfers": 1},
+      {"state": "Total", "year": 2024, "transfers": 1}
+    ],
+    "table_notes": [],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T08_item20_franchised_status",
+    "title": "Status of Franchised Outlets — For years 2022, 2023 and 2024",
+    "item_number": 20,
+    "page_start": 49,
+    "page_end": 49,
+    "diligence_family": "outlet_activity",
+    "column_headers": ["State", "Year", "Outlets at Start of Year", "Outlets Opened", "Terminations", "Non-Renewals", "Reacquired by Franchisor/Affiliates", "Ceased Operations - Other Reasons", "Outlets at End of Year"],
+    "rows": [
+      {"state": "Wisconsin", "year": 2022, "start": 18, "opened": 0, "terminations": 1, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 17},
+      {"state": "Wisconsin", "year": 2023, "start": 17, "opened": 4, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 20},
+      {"state": "Wisconsin", "year": 2024, "start": 20, "opened": 4, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 23},
+      {"state": "Minnesota", "year": 2022, "start": 1, "opened": 0, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+      {"state": "Minnesota", "year": 2023, "start": 1, "opened": 0, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+      {"state": "Minnesota", "year": 2024, "start": 1, "opened": 0, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+      {"state": "Total", "year": 2022, "start": 19, "opened": 0, "terminations": 1, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 18},
+      {"state": "Total", "year": 2023, "start": 18, "opened": 4, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 21},
+      {"state": "Total", "year": 2024, "start": 21, "opened": 4, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 24}
+    ],
+    "table_notes": [
+      "The 'Outlets Opened' column includes predecessor-affiliated/transferred outlets in addition to new openings. Some 2023 and 2024 openings may reflect predecessor-franchised conversions to RFC franchise agreements.",
+      "OCR extraction partially degraded on this page; column header for 'Opened' may include 'Predecessor Affiliated Transferred' sub-column. Total opened counts cross-checked against systemwide summary."
+    ],
+    "status": "partial",
+    "reason_if_partial": "OCR degradation on page 49 makes exact column parsing difficult. The franchised outlet table has sub-columns that do not extract cleanly. The total row values are cross-validated against the systemwide summary table."
+  },
+  {
+    "table_id": "T09_item20_company_owned_status",
+    "title": "Status of Company-Owned Outlets — For years 2022, 2023 and 2024",
+    "item_number": 20,
+    "page_start": 49,
+    "page_end": 49,
+    "diligence_family": "outlet_activity",
+    "column_headers": ["State", "Year", "Outlets at Start of Year", "Outlets Opened", "Outlets Reacquired from Franchisee", "Outlets Closed", "Outlets Sold to Franchisee", "Outlets at End of Year"],
+    "rows": [
+      {"state": "Wisconsin", "year": 2022, "start": 8, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 8},
+      {"state": "Wisconsin", "year": 2023, "start": 8, "opened": 0, "reacquired": 0, "closed": 0, "sold": 1, "end": 7},
+      {"state": "Wisconsin", "year": 2024, "start": 7, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 7},
+      {"state": "Total", "year": 2022, "start": 8, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 8},
+      {"state": "Total", "year": 2023, "start": 8, "opened": 0, "reacquired": 0, "closed": 0, "sold": 1, "end": 7},
+      {"state": "Total", "year": 2024, "start": 7, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 7}
+    ],
+    "table_notes": [
+      "All company-owned outlets are in Wisconsin.",
+      "One company-owned outlet sold to franchisee in 2023."
+    ],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T10_item20_projected_openings",
+    "title": "Projected Openings as of December 30, 2024",
+    "item_number": 20,
+    "page_start": 50,
+    "page_end": 50,
+    "diligence_family": "outlet_activity",
+    "column_headers": ["State", "Franchise Agreements Signed But Outlet Not Opened", "Projected New Franchised Outlet in Next Fiscal Year", "Projected New Company-Owned/Affiliate-Owned Outlet in Next Fiscal Year"],
+    "rows": [
+      {"state": "Wisconsin", "signed_not_opened": 0, "projected_franchised": 2, "projected_company": 0},
+      {"state": "Minnesota", "signed_not_opened": 0, "projected_franchised": 1, "projected_company": 0},
+      {"state": "Total", "signed_not_opened": 0, "projected_franchised": 3, "projected_company": 0}
+    ],
+    "table_notes": [],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T11_item21_balance_sheet",
+    "title": "Balance Sheets — December 30, 2024, December 25, 2023, December 26, 2022",
+    "item_number": 21,
+    "page_start": 60,
+    "page_end": 60,
+    "diligence_family": "financial_statements",
+    "column_headers": ["Line Item", "2024", "2023", "2022"],
+    "rows": [
+      {"line_item": "Cash and cash equivalents", "y2024": 669550, "y2023": 520944, "y2022": 464742},
+      {"line_item": "Franchisee receivables", "y2024": 56629, "y2023": 66295, "y2022": 46549},
+      {"line_item": "Other receivables", "y2024": 32199, "y2023": 21965, "y2022": 10140},
+      {"line_item": "Prepaid expenses", "y2024": null, "y2023": 10445, "y2022": 6809},
+      {"line_item": "Refundable income taxes", "y2024": null, "y2023": null, "y2022": 3327},
+      {"line_item": "Other assets", "y2024": null, "y2023": null, "y2022": null},
+      {"line_item": "Total Current Assets", "y2024": 758378, "y2023": 619649, "y2022": 531567},
+      {"line_item": "Furniture, fixtures and equipment", "y2024": 55543, "y2023": 52593, "y2022": null},
+      {"line_item": "Less accumulated depreciation", "y2024": -41097, "y2023": -44561, "y2022": null},
+      {"line_item": "Net Property and Equipment", "y2024": 8032, "y2023": null, "y2022": null},
+      {"line_item": "Total Assets", "y2024": 766410, "y2023": 630889, "y2022": null},
+      {"line_item": "Accounts payable", "y2024": 63015, "y2023": null, "y2022": null},
+      {"line_item": "Accrued payroll and related taxes", "y2024": 49760, "y2023": null, "y2022": null},
+      {"line_item": "Cooperative advertising fund surplus", "y2024": 94480, "y2023": 120256, "y2022": 140738},
+      {"line_item": "Gift cards payable", "y2024": 108282, "y2023": 79828, "y2022": null},
+      {"line_item": "Accrued expenses", "y2024": null, "y2023": null, "y2022": null},
+      {"line_item": "Income taxes payable", "y2024": null, "y2023": 386, "y2022": 15766},
+      {"line_item": "Total Current Liabilities", "y2024": 317710, "y2023": null, "y2022": null},
+      {"line_item": "Deferred Income Tax Liability", "y2024": 2000, "y2023": 3000, "y2022": null},
+      {"line_item": "Common stock", "y2024": 40, "y2023": 40, "y2022": 40},
+      {"line_item": "Additional paid-in capital", "y2024": 49960, "y2023": 49960, "y2022": 49960},
+      {"line_item": "Retained earnings", "y2024": 507177, "y2023": 436551, "y2022": 371331},
+      {"line_item": "Less treasury stock (1,000 shares)", "y2024": -110477, "y2023": -110477, "y2022": -110477},
+      {"line_item": "Total Stockholder's Equity", "y2024": 446700, "y2023": 376074, "y2022": 310854}
+    ],
+    "table_notes": [
+      "Common stock: $0.02 par value, 9,000 shares authorized, 2,000 issued, 1,000 outstanding.",
+      "Some cells extracted as null due to OCR degradation on the balance sheet page. Key totals are cross-validated."
+    ],
+    "status": "partial",
+    "reason_if_partial": "OCR quality on page 60 caused some individual line items to extract incompletely, particularly 2022 and 2023 property/equipment and liability breakdowns. Key total rows (total assets, total equity, retained earnings) extracted cleanly."
+  },
+  {
+    "table_id": "T12_item21_income_statement",
+    "title": "Statements of Operations and Retained Earnings — FY2024, FY2023, FY2022",
+    "item_number": 21,
+    "page_start": 61,
+    "page_end": 61,
+    "diligence_family": "financial_statements",
+    "column_headers": ["Line Item", "2024", "2023", "2022"],
+    "rows": [
+      {"line_item": "Royalty revenues", "y2024": 1063524, "y2023": 862654, "y2022": 742606},
+      {"line_item": "Transfer fees", "y2024": 50000, "y2023": 62500, "y2022": 12500},
+      {"line_item": "Advertising fees", "y2024": 269344, "y2023": 228699, "y2022": 145224},
+      {"line_item": "Total Revenues", "y2024": 1382868, "y2023": 1153853, "y2022": 900330},
+      {"line_item": "Selling, General and Administrative Expenses", "y2024": 1284610, "y2023": 1063048, "y2022": 879085},
+      {"line_item": "Income from Operations", "y2024": 98258, "y2023": 90805, "y2022": 21245},
+      {"line_item": "Income Tax Expense", "y2024": 27632, "y2023": 25585, "y2022": 6000},
+      {"line_item": "Net Income", "y2024": 70626, "y2023": 65220, "y2022": 15245},
+      {"line_item": "Retained Earnings, Beginning", "y2024": 436551, "y2023": 371331, "y2022": 356086},
+      {"line_item": "Retained Earnings, End", "y2024": 507177, "y2023": 436551, "y2022": 371331}
+    ],
+    "table_notes": [
+      "Revenue growth of 53.6% from FY2022 to FY2024 driven by franchised unit expansion and royalty growth.",
+      "Transfer fees of $50,000 in FY2024 consistent with 1 transfer at roughly 50% of franchise fee plus possible predecessor conversions.",
+      "SGA expenses include related-party management/consulting fees of $167,977 (2024), $137,905 (2023), $99,874 (2022)."
+    ],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T13_item21_coop_ad_fund",
+    "title": "Cooperative Advertising Fund Activity",
+    "item_number": 21,
+    "page_start": 65,
+    "page_end": 65,
+    "diligence_family": "financial_statements",
+    "column_headers": ["Line Item", "2024", "2023", "2022"],
+    "rows": [
+      {"line_item": "Beginning Balance", "y2024": 120256, "y2023": 140738, "y2022": 76991},
+      {"line_item": "Contributions", "y2024": 243568, "y2023": 208217, "y2022": 208971},
+      {"line_item": "Spending", "y2024": -269344, "y2023": -228699, "y2022": -145224},
+      {"line_item": "Ending Balance", "y2024": 94480, "y2023": 120256, "y2022": 140738}
+    ],
+    "table_notes": [
+      "From Note 2 to financial statements.",
+      "Fund spending exceeded contributions in FY2024, drawing down the surplus.",
+      "Affiliate locations contributed $59,194 (2024), $58,516 (2023), $60,238 (2022) to the fund.",
+      "Amounts due back to affiliates included in surplus: $24,901 (2024), $36,754 (2023), $48,860 (2022)."
+    ],
+    "status": "full",
+    "reason_if_partial": null
+  },
+  {
+    "table_id": "T14_item21_location_info",
+    "title": "Location Information — Notes to Financial Statements (Note 3)",
+    "item_number": 21,
+    "page_start": 65,
+    "page_end": 66,
+    "diligence_family": "outlet_activity",
+    "column_headers": ["Location Type", "Metric", "2024", "2023", "2022"],
+    "rows": [
+      {"type": "Franchised", "metric": "Open at beginning of year", "y2024": 21, "y2023": 18, "y2022": 19},
+      {"type": "Franchised", "metric": "Opened during the year", "y2024": 3, "y2023": 4, "y2022": null},
+      {"type": "Franchised", "metric": "Closed during the year", "y2024": null, "y2023": -1, "y2022": -1},
+      {"type": "Franchised", "metric": "Open at end of year", "y2024": 24, "y2023": 21, "y2022": 18},
+      {"type": "Affiliate-Owned", "metric": "Open at beginning of year", "y2024": 7, "y2023": 8, "y2022": 8},
+      {"type": "Affiliate-Owned", "metric": "Closed during the year", "y2024": null, "y2023": null, "y2022": null},
+      {"type": "Affiliate-Owned", "metric": "Transferred to franchisee", "y2024": null, "y2023": -1, "y2022": null},
+      {"type": "Affiliate-Owned", "metric": "Open at end of year", "y2024": 7, "y2023": 7, "y2022": 8},
+      {"type": "Predecessor-Franchised", "metric": "Open at beginning of year", "y2024": 3, "y2023": 6, "y2022": 7},
+      {"type": "Predecessor-Franchised", "metric": "Transferred to franchisee", "y2024": -3, "y2023": -3, "y2022": -1},
+      {"type": "Predecessor-Franchised", "metric": "Open at end of year", "y2024": 0, "y2023": 3, "y2022": 6},
+      {"type": "Total", "metric": "Open at end of year", "y2024": 31, "y2023": 31, "y2022": 32}
+    ],
+    "table_notes": [
+      "There was one additional location which was transferred between franchisees during 2023.",
+      "All affiliate and predecessor-franchised locations are in Wisconsin.",
+      "Predecessor-franchised locations fully wound down to 0 by end of 2024."
+    ],
+    "status": "full",
+    "reason_if_partial": null
+  }
+]

@@ -1,0 +1,133 @@
+{
+  "task_id": "RR-01",
+  "task_name": "FA operative provisions recovery",
+  "source": "Exhibit FA, pp.98-135",
+  "extraction_method": "specialist subagent deep read + fitz text extraction",
+
+  "data_ownership": {
+    "provision": "FA Sect. IX.D",
+    "source_pages": [98, 99],
+    "value": "RFC has at all times the right to retrieve information from any data processed on the franchisee's computer system. All information retrieved from franchisee and other franchisees is the exclusive property of RFC.",
+    "franchisee_obligation": "Must establish and maintain telephone modem/broadband connection for RFC access. Must take such action as necessary to provide access.",
+    "status": "surfaced",
+    "confidence": "high"
+  },
+
+  "computer_upgrade_cost_cap": {
+    "provision": "FA Sect. IX.D",
+    "source_pages": [98, 99],
+    "value": "RFC shall not require franchisee to upgrade the computer system if franchisee has expended at least $10,000 to computerize or upgrade during the previous 5 years.",
+    "cap_amount": 10000,
+    "cap_period_years": 5,
+    "status": "surfaced",
+    "confidence": "high"
+  },
+
+  "credit_card_acceptance": {
+    "provision": "FA Sect. IX.E",
+    "source_pages": [99],
+    "value": "Franchisee must accept full range of credit/debit cards, check verification, and electronic fund transfer systems as RFC designates.",
+    "status": "surfaced",
+    "confidence": "high"
+  },
+
+  "insurance_requirements": {
+    "provision": "FA Sect. X.I",
+    "source_pages": [105, 106],
+    "required_coverages": [
+      "Comprehensive public liability insurance",
+      "Alcoholic beverages liability (dram shop) insurance",
+      "Product liability insurance",
+      "Motor vehicle liability insurance (bodily/personal injury, death, property damage)",
+      "Property insurance — not less than 100% of full replacement cost (fire + Standard Extended Coverage Endorsement)"
+    ],
+    "key_terms": {
+      "additional_insured": "RFC must be named as additional insured on all liability policies",
+      "waiver_of_subrogation": "All policies must contain waiver of subrogation against RFC",
+      "cancellation_notice": "30 days prior written notice of termination/expiration/cancellation",
+      "annual_increase": "RFC may reasonably increase minimum liability protection annually",
+      "certificate_deadline": "Within 30 days of signing FA, no later than 3 weeks before opening",
+      "minimum_amounts": "Specified in Operations Manual, not in FA",
+      "franchisor_right_to_obtain": "If franchisee fails to maintain, RFC may obtain on franchisee's behalf at franchisee's expense"
+    },
+    "status": "surfaced",
+    "confidence": "high"
+  },
+
+  "gift_card_provisions": {
+    "provision": "FA Sect. X.K",
+    "source_pages": [107],
+    "value": "Gift certificates must be purchased through RFC and accounted for in a system-wide manner. Franchisee may not produce for sale franchisee's own gift certificates or gift cards.",
+    "status": "surfaced",
+    "confidence": "high"
+  },
+
+  "system_modification_rights": {
+    "provision": "FA Sect. XI",
+    "source_pages": [107],
+    "value": "RFC may change or modify the System including adoption of new/modified trade names, trademarks, service marks, copyrighted materials, new products, services, or techniques. Franchisee must accept and provide to the public any such changes as if part of the original agreement. Franchisee shall make such expenditures as reasonably called for. RFC will provide reasonable notice.",
+    "franchisee_restriction": "Franchisee shall not change, modify or alter the System in any way.",
+    "status": "surfaced",
+    "confidence": "high"
+  },
+
+  "electronic_funds_transfer": {
+    "provision": "FA Sect. XII.E",
+    "source_pages": [109],
+    "value": "RFC reserves the right to require EFT for all royalty, advertising fund, local ad fund contributions, and other amounts due.",
+    "reporting_deadline": "By Wednesday following the end of the preceding week, franchisee must report gross sales by telephone or electronic means",
+    "debit_authorization": "Franchisee must authorize direct debits from business bank operating account. RFC may initiate debit entries and/or credit correction entries.",
+    "funds_deadline": "Available for withdrawal by EFT no later than Friday following end of preceding week",
+    "default_debit": "If franchisee has not reported gross sales, RFC authorized to debit amount equal to fees for last reported period",
+    "computer_based_debit": "RFC may base debit on information retrieved from franchisee's computer system",
+    "underpayment_correction": "If RFC determines under-reporting or underpayment, RFC authorized to immediately initiate debit in appropriate amount plus interest",
+    "status": "surfaced",
+    "confidence": "high"
+  },
+
+  "remodel_obligations": {
+    "provision": "FA Sect. X.A",
+    "source_pages": [100, 101],
+    "ongoing_maintenance": "Maintain condition and appearance consistent with Rocky Rococo image. Replace worn/obsolete fixtures, equipment, furniture, carpeting, signs, utensils. Repair interior, exterior, parking areas. Periodic cleaning and redecorating.",
+    "deficiency_cure_period": "10 days after RFC notice. If not corrected, RFC may enter and effect maintenance at franchisee's expense.",
+    "mandatory_remodel": "At least once during the term per RFC's plans and specifications.",
+    "remodel_restriction": "RFC shall not require remodeling during the last 4 years of the initial franchise term or any renewal term.",
+    "fire_casualty": "Within 30 days initiate all repairs/reconstruction to restore to original condition. If feasible without substantial additional costs, RFC may require reconstruction to then-standard decor specifications.",
+    "status": "surfaced",
+    "confidence": "high"
+  },
+
+  "alterations_restriction": {
+    "provision": "FA Sect. X.B",
+    "source_pages": [101],
+    "value": "No alterations to premises or unapproved replacements without RFC's prior written approval. RFC may rectify unapproved alterations at franchisee's sole expense.",
+    "status": "surfaced",
+    "confidence": "high"
+  },
+
+  "security_interest_ucc": {
+    "provision": "FA Sect. XXI",
+    "source_pages": [134, 135],
+    "lien_type": "First lien on all property of franchisee",
+    "collateral_scope": [
+      "Equipment",
+      "Inventory",
+      "Trade fixtures",
+      "Leasehold improvements",
+      "All proceeds of the above"
+    ],
+    "default_remedies": "All remedies of a secured party under the Uniform Commercial Code. May require franchisee to assemble collateral. Public or private sale permitted. Surplus returned; franchisee liable for deficiency.",
+    "perfection": "Franchisee must execute and deliver financing statements (UCC filings) and other documents to establish and maintain a perfected security interest.",
+    "subordination": "Upon demand, RFC shall subordinate this lien to: (1) any bank/financial institution requiring a first lien for financing, and (2) any purchase money interest on property purchased for the business.",
+    "status": "surfaced",
+    "confidence": "high"
+  },
+
+  "payment_application": {
+    "provision": "FA Sect. XII.D",
+    "source_pages": [109],
+    "value": "RFC has sole discretion to apply any payments to any past due indebtedness.",
+    "status": "surfaced",
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "task_id": "RT-02",
+  "task_name": "Balance sheet cell repair",
+  "source_page": 60,
+  "extraction_method": "pdfplumber text strategy",
+  "balance_sheets": {
+    "as_of_dates": ["2024-12-30", "2023-12-25", "2022-12-26"],
+    "assets": {
+      "current_assets": {
+        "cash_and_cash_equivalents": {"y2024": 669550, "y2023": 520944, "y2022": 464742},
+        "franchisee_receivables": {"y2024": 56629, "y2023": 66295, "y2022": 46549},
+        "other_receivables": {"y2024": 32199, "y2023": 21965, "y2022": null, "y2022_note": "pdfplumber returned blank; likely 10,140 per fitz extract"},
+        "prepaid_expenses": {"y2024": null, "y2023": 10445, "y2022": 10140},
+        "refundable_income_taxes": {"y2024": null, "y2023": null, "y2022": 6809},
+        "other_assets": {"y2024": null, "y2023": null, "y2022": 3327},
+        "total_current_assets": {"y2024": 758378, "y2023": 619649, "y2022": 531567}
+      },
+      "property_and_equipment": {
+        "furniture_fixtures_equipment_gross": {"y2024": null, "y2023": 52593, "y2022": 55543, "y2024_note": "pdfplumber did not return 2024 gross; fitz showed 55,543 for 2024"},
+        "accumulated_depreciation": {"y2024": 44561, "y2023": null, "y2022": 41097, "y2024_note": "negative value"},
+        "net_property_and_equipment": {"y2024": 8032, "y2023": null, "y2022": 14446, "y2023_note": "pdfplumber returned garbled; likely ~8,000 range"}
+      },
+      "total_assets": {"y2024": 766410, "y2023": 630889, "y2022": 546013}
+    },
+    "liabilities": {
+      "current_liabilities": {
+        "accounts_payable": {"y2024": 63015, "y2023": 5594, "y2022": 9540, "y2023_note": "OCR shows 5,s94 → likely $5,594"},
+        "accrued_payroll_and_related_taxes": {"y2024": 49760, "y2023": 29985, "y2022": null},
+        "cooperative_advertising_fund_surplus": {"y2024": 94480, "y2023": 120256, "y2022": 140738},
+        "gift_cards_payable": {"y2024": 108282, "y2023": 79828, "y2022": 61838},
+        "accrued_expenses": {"y2024": null, "y2023": 386, "y2022": null},
+        "income_taxes_payable": {"y2024": null, "y2023": 15766, "y2022": null},
+        "total_current_liabilities": {"y2024": 317710, "y2023": 251815, "y2022": 235159}
+      },
+      "deferred_income_tax_liability": {"y2024": 2000, "y2023": 3000, "y2022": null, "y2022_note": "Per Note 4, deferred tax liability was $0 or credit in 2022"}
+    },
+    "stockholders_equity": {
+      "common_stock": {"y2024": 40, "y2023": 40, "y2022": 40},
+      "additional_paid_in_capital": {"y2024": 49960, "y2023": 49960, "y2022": 49960},
+      "retained_earnings": {"y2024": 507177, "y2023": 436551, "y2022": 371331},
+      "treasury_stock": {"y2024": -110477, "y2023": -110477, "y2022": -110477},
+      "total_stockholders_equity": {"y2024": 446700, "y2023": 376074, "y2022": 310854}
+    },
+    "total_liabilities_and_equity": {"y2024": 766410, "y2023": 630889, "y2022": 546013}
+  },
+  "repair_outcome": "pdfplumber text strategy recovered most missing cells. Remaining nulls are minor: 2022 other receivables, 2024 prepaid expenses, 2023 net PP&E (garbled), some 2022 accrued items. All key totals confirmed. The 2023 accounts payable OCR shows '5,s94' which is likely $5,594."
+}
