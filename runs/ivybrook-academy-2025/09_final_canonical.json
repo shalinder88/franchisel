@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "fdd_id": "637976-2025",
+    "brand": "Ivybrook Academy",
+    "franchisor_legal_name": "Ivybrook Franchising, LLC",
+    "state_filed": "Wisconsin (WI DFI)",
+    "extraction_date": "2026-04-06",
+    "pdf_pages": 207,
+    "doc_id": "4421206v3.RWT.30864.G56954",
+    "canonical_version": "final",
+    "retries_merged": ["RT-01", "RT-02", "RT-03"],
+    "depth_pass_merged": ["RT_depth_financial_notes", "RT_depth_contract_burdens", "RT_depth_promotion_audit"],
+    "regression_recovery_merged": ["RR-01", "RR-02", "RR-03"],
+    "regression_annotations": [
+      {"annotation_id": "RA-01", "field": "hasLitigation", "current_value": false, "gold_value": true, "pdf_source": "Item 3 p. 11 ('No litigation is required to be disclosed')", "verdict": "gold_error", "action": "Upstream gold corpus should correct hasLitigation to false for ivybrook-academy 2025"},
+      {"annotation_id": "RA-02", "field": "hasBankruptcy", "current_value": false, "gold_value": true, "pdf_source": "Item 4 p. 11 ('No bankruptcy information is required to be disclosed')", "verdict": "gold_error", "action": "Upstream gold corpus should correct hasBankruptcy to false for ivybrook-academy 2025"},
+      {"annotation_id": "RA-03", "field": "investmentHigh_convention", "current_single_unit": 869860, "gold_muda_ceiling": 929860, "pdf_source": "Cover p. 1; Item 7 T7-01 and T7-02", "verdict": "different_agreement_type", "action": "Both values now promoted as distinct canonical fields; system_wide_investment_high aligns with gold convention"}
+    ]
+  },
+  "identity": {
+    "brand_name": {"value": "Ivybrook Academy", "source_object": "cover", "source_section": "Item 1", "source_pages": [1, 8], "confidence": "high", "status": "confirmed"},
+    "franchisor_legal_name": {"value": "Ivybrook Franchising, LLC", "source_object": "cover", "source_section": "Item 1", "source_pages": [1, 8], "confidence": "high", "status": "confirmed"},
+    "franchisor_state": {"value": "North Carolina", "source_object": "Item 1", "source_section": "Item 1", "source_pages": [8], "confidence": "high", "status": "confirmed"},
+    "franchisor_entity_type": {"value": "Limited liability company", "source_object": "cover", "source_section": "Item 1", "source_pages": [1], "confidence": "high", "status": "confirmed"},
+    "formation_date": {"value": "March 26, 2015", "source_object": "Item 1", "source_section": "Item 1", "source_pages": [8], "confidence": "high", "status": "confirmed"},
+    "principal_address": {"value": "9801 Suzanne Court, Weddington, NC 28173", "source_object": "cover", "source_section": "Item 1", "source_pages": [1], "confidence": "high", "status": "confirmed"},
+    "phone": {"value": "877-550-1234", "source_object": "cover", "source_pages": [1], "confidence": "high", "status": "confirmed"},
+    "website": {"value": "www.IvybrookAcademy.com", "source_object": "cover", "source_pages": [1], "confidence": "high", "status": "confirmed"},
+    "franchise_description": {"value": "Comprehensive half-day preschool providing early learning, enrichment, and socialization. Optional private kindergarten.", "source_object": "cover", "source_section": "Item 1", "source_pages": [1, 9], "confidence": "high", "status": "confirmed"},
+    "began_franchising": {"value": "2015", "source_object": "Item 1", "source_pages": [8], "confidence": "high", "status": "confirmed"},
+    "parent_entity": {"value": "Ivybrook OpCo LLC (subsidiary of Ivybrook HoldCo LLC, subsidiary of Crux I Ivybrook (Aggregator), LP)", "source_object": "Item 1", "source_pages": [8, 9], "confidence": "high", "status": "confirmed"},
+    "pe_acquisition_date": {"value": "August 29, 2025", "source_object": "Item 1", "source_pages": [8], "confidence": "high", "status": "confirmed"},
+    "key_affiliate_catapult": {"value": "Catapult — owns and supplies The Student Hub software. Affiliate of Crux.", "source_object": "Item 1", "source_pages": [9], "confidence": "high", "status": "confirmed"}
+  },
+  "issuance_date": {
+    "fiscal_year_end": {"value": "December 31", "source_object": "Item 21", "source_pages": [53], "confidence": "high", "status": "confirmed"},
+    "fdd_issuance_year": {"value": "2025", "source_object": "cover/state_effective_dates", "source_pages": [205], "confidence": "high", "status": "confirmed"},
+    "state_effective_dates": {"value": {"Indiana": "March 28, 2025", "Minnesota": "May 9, 2025", "Illinois": "Pending", "Michigan": "Pending", "Virginia": "Pending", "Wisconsin": "Pending"}, "source_object": "state_effective_dates", "source_pages": [205], "confidence": "high", "status": "confirmed"}
+  },
+  "formats": {
+    "single_unit": {"value": true, "source_object": "Item 1", "source_pages": [9], "confidence": "high", "status": "confirmed"},
+    "multi_unit_development": {"value": true, "source_object": "Item 5/Exhibit C", "source_pages": [12, 139], "confidence": "high", "status": "confirmed"},
+    "muda_max_units": {"value": 3, "source_object": "Item 5", "source_pages": [12], "confidence": "high", "status": "confirmed"},
+    "area_development": {"value": false, "source_object": "Item 1", "confidence": "medium", "status": "not_directly_surfaced"}
+  },
+  "initial_fees": {
+    "initial_franchise_fee": {"value": "$50,000", "source_object": "Item 5", "source_pages": [11], "confidence": "high", "status": "confirmed"},
+    "real_estate_coordination_fee": {"value": "$10,000", "source_object": "Item 5", "source_pages": [11], "confidence": "high", "status": "confirmed"},
+    "training_opening_support_fee": {"value": "$15,000", "source_object": "Item 5", "source_pages": [11, 12], "confidence": "high", "status": "confirmed"},
+    "total_to_franchisor": {"value": "$82,500 (single unit); $117,500 (2-unit MUDA); $142,500 (3-unit MUDA)", "source_object": "cover/Item 5", "source_pages": [1, 11, 12], "confidence": "high", "status": "confirmed"},
+    "single_unit_investment_low": {"value": 540700, "source_object": "cover/Item 7", "source_pages": [1, 17], "confidence": "high", "status": "confirmed"},
+    "single_unit_investment_high": {"value": 869860, "source_object": "cover/Item 7", "source_pages": [1, 17], "confidence": "high", "status": "confirmed"},
+    "muda_investment_low": {"value": 575700, "source_object": "cover/Item 7", "source_pages": [1, 20], "confidence": "high", "status": "confirmed"},
+    "muda_investment_high": {"value": 929860, "source_object": "cover/Item 7", "source_pages": [1, 20], "confidence": "high", "status": "confirmed"},
+    "system_wide_investment_high": {"value": 929860, "source_object": "cover/Item 7 (MUDA ceiling)", "source_pages": [1, 20], "confidence": "high", "status": "confirmed", "note": "Highest possible across all formats; aligns with gold convention."},
+    "muda_2nd_unit_fee": {"value": "$35,000", "source_object": "Item 5", "source_pages": [12], "confidence": "high", "status": "confirmed"},
+    "muda_3rd_unit_fee": {"value": "$25,000", "source_object": "Item 5", "source_pages": [12], "confidence": "high", "status": "confirmed"},
+    "transfer_training_fee": {"value": "$10,000", "source_object": "Item 5", "source_pages": [11], "confidence": "high", "status": "confirmed"},
+    "refundable": {"value": false, "source_object": "Item 5", "source_pages": [11], "confidence": "high", "status": "confirmed"}
+  },
+  "recurring_fees": {
+    "royalty_rate": {"value": "7% of Gross Revenue", "source_object": "T6-01", "source_section": "Item 6", "source_pages": [12], "confidence": "high", "status": "confirmed"},
+    "royalty_frequency": {"value": "Monthly, by 6th day", "source_object": "T6-01", "source_pages": [12], "confidence": "high", "status": "confirmed"},
+    "brand_fund_rate": {"value": "1% of Gross Revenue (expected to increase to 2% in 2026)", "source_object": "T6-01", "source_pages": [12], "confidence": "high", "status": "confirmed"},
+    "local_marketing_minimum": {"value": "1% of Gross Revenue annually", "source_object": "T6-01", "source_pages": [12], "confidence": "high", "status": "confirmed"},
+    "technology_fee": {"value": "$250/month", "source_object": "T6-01", "source_pages": [15], "confidence": "high", "status": "confirmed"},
+    "marketing_cooperative_max": {"value": "2% of Gross Revenue (currently none)", "source_object": "T6-01", "source_pages": [13], "confidence": "high", "status": "confirmed"},
+    "total_minimum_recurring_pct": {"value": "9% of Gross Revenue (royalty 7% + brand fund 1% + local marketing 1%) plus $250/mo tech fee", "source_object": "derived from T6-01", "confidence": "high", "status": "confirmed"}
+  },
+  "supplier_control_economics": {
+    "supplier_control_level": {"value": "High — nearly all supplies, furniture, décor, software, architect, construction management, marketing from designated/approved suppliers", "source_object": "Item 8", "source_pages": [20, 21, 22], "confidence": "high", "status": "confirmed"},
+    "affiliate_supplier_student_hub": {"value": "The Student Hub (school management/payment software) exclusively supplied by affiliate Catapult", "source_object": "Item 8", "source_pages": [21], "confidence": "high", "status": "confirmed"},
+    "supplier_revenue_to_franchisor": {"value": "~$33,821 in credits from furniture and branded supply suppliers in 2024", "source_object": "Item 8", "source_pages": [22], "confidence": "high", "status": "confirmed"},
+    "ceo_real_estate_referral": {"value": "CEO Drew McWilliams is licensed real estate agent, may receive referral fee/commission", "source_object": "Item 8", "source_pages": [22], "confidence": "high", "status": "confirmed"},
+    "special_risk_flag": {"value": "Special Risk #3 flags supplier control — prices may be higher than market, reducing anticipated profit", "source_object": "special_risks", "source_pages": [4], "confidence": "high", "status": "confirmed"}
+  },
+  "training_burden": {
+    "initial_training_program": {"value": "2 weeks in-person at approved training facility (Charlotte, NC or other). Plus online/curriculum training ~2 months before opening.", "source_object": "Item 11", "source_pages": [31], "confidence": "high", "status": "confirmed"},
+    "who_must_attend": {"value": "At least one owner and School Administrator", "source_object": "Item 11", "source_pages": [31], "confidence": "high", "status": "confirmed"},
+    "training_fee": {"value": "Included in $15,000 Training & Opening Support Fee", "source_object": "Item 11", "source_pages": [31], "confidence": "high", "status": "confirmed"},
+    "travel_at_franchisee_expense": {"value": true, "source_object": "Item 11", "source_pages": [31], "confidence": "high", "status": "confirmed"},
+    "training_program_name": {"value": "Ivybrook University", "source_object": "Item 11/RT-02", "source_pages": [30], "confidence": "high", "status": "confirmed"},
+    "training_total_hours": {"value": 80, "source_object": "Item 11/RT-02", "source_pages": [30], "confidence": "high", "status": "confirmed"},
+    "training_phases": {"value": [
+      {"phase": "Phase 1: Business Startup and Real Estate", "classroom_hours": 12, "ojt_hours": 0, "location": "Online portal + Charlotte, NC"},
+      {"phase": "Phase 2: Marketing; Enrollment; Operations", "classroom_hours": 24, "ojt_hours": 0, "location": "Online portal + Charlotte, NC"},
+      {"phase": "Phase 3: Ivybrook University; School Setup", "classroom_hours": 44, "ojt_hours": 0, "location": "Online portal + Charlotte, NC"}
+    ], "source_object": "Item 11/RT-02", "source_pages": [30], "confidence": "high", "status": "confirmed"},
+    "max_trainees": {"value": 3, "source_object": "Item 11/RT-02", "source_pages": [30], "confidence": "high", "status": "confirmed"},
+    "refresher_training": {"value": "Periodic, at franchisee expense, location TBD", "source_object": "Item 11", "source_pages": [31], "confidence": "high", "status": "confirmed"},
+    "training_leaders": {"value": "Daniela McElhaney and Katherine Bell (15+ years with brand, 20+ years child education)", "source_object": "Item 11", "source_pages": [31], "confidence": "high", "status": "confirmed"}
+  },
+  "tech_burden": {
+    "required_technology": {"value": "Office computers, iPads per classroom, QuickBooks, The Student Hub (exclusive affiliate supplier), broadband internet, email, phone lines, printers", "source_object": "Item 11", "source_pages": [29, 30], "confidence": "high", "status": "confirmed"},
+    "tech_fee": {"value": "$250/month (may increase at any time)", "source_object": "T6-01", "source_pages": [15], "confidence": "high", "status": "confirmed"},
+    "franchisor_data_ownership": {"value": "All customer data, enrollment data, financial data owned by franchisor", "source_object": "Exhibit A §13.17–13.19", "source_pages": [89, 91, 92], "confidence": "high", "status": "confirmed"},
+    "unlimited_modification_rights": {"value": true, "source_object": "Item 11", "source_pages": [29], "confidence": "high", "status": "confirmed"}
+  },
+  "territory_structure": {
+    "territory_definition": {"value": "Lesser of 125,000 population or 3-mile radius around location", "source_object": "Item 12", "source_pages": [32], "confidence": "high", "status": "confirmed"},
+    "exclusive": {"value": "Partial — protected from additional Ivybrook outlets in territory, but franchisor retains significant reserved rights", "source_object": "Item 12", "source_pages": [32, 33], "confidence": "high", "status": "confirmed"},
+    "reserved_rights": {"value": "Operate outside territory, sell branded merchandise anywhere (including territory), operate under different marks, control all online sales, advertise anywhere", "source_object": "Item 12", "source_pages": [33], "confidence": "high", "status": "confirmed"},
+    "internet_sales_carveout": {"value": "Franchisor retains right to control all online sales. Will not sell courses/curriculum through internet.", "source_object": "Item 12", "source_pages": [33], "confidence": "high", "status": "confirmed"},
+    "no_compensation_for_reserved_rights": {"value": true, "source_object": "Item 12", "source_pages": [33], "confidence": "high", "status": "confirmed"},
+    "territory_modification_on_breach": {"value": "Franchisor may modify territory protections if franchisee is in breach", "source_object": "Exhibit A §16.4", "source_pages": [98], "confidence": "high", "status": "confirmed"}
+  },
+  "term_renewal_transfer_default_termination": {
+    "initial_term": {"value": "10 years", "source_object": "Item 17", "source_pages": [38], "confidence": "high", "status": "confirmed"},
+    "renewal_options": {"value": "Maximum of 2 renewal terms of 10 years each (FA §4.2 is operative; Item 17 summary under-states this — C-02 preserved)", "source_object": "FA §4.2 (operative) / Item 17 (under-stated summary)", "source_pages": [38, 63], "confidence": "high", "status": "adjudicated", "adjudication_ref": "17_conflict_adjudication.md field #3"},
+    "renewal_fee": {"value": "Greater of $10,000 or 10% of then-current initial franchise fee", "source_object": "T6-01", "source_pages": [14], "confidence": "high", "status": "confirmed"},
+    "renewal_conditions": {"value": "Timely notice, current compliance, monetary obligations satisfied, capital expenditures for uniformity, sign current FA, current training, general release", "source_object": "Item 17", "source_pages": [38, 39], "confidence": "high", "status": "confirmed"},
+    "transfer_fee": {"value": "$10,000 plus $10,000 transfer training fee (paid by transferee)", "source_object": "T6-01/Item 17", "source_pages": [14, 42], "confidence": "high", "status": "confirmed"},
+    "transfer_conditions": {"value": "Prior written consent, all obligations current, general release, transferee meets standards, signs current FA, transfer fees paid, restrictive covenants signed, training completed, insurance obtained", "source_object": "Item 17", "source_pages": [42], "confidence": "high", "status": "confirmed"},
+    "rofr": {"value": "Yes — franchisor may match any offer for franchise or ownership interest", "source_object": "Item 17", "source_pages": [43], "confidence": "high", "status": "confirmed"},
+    "termination_by_franchisee": {"value": "30 days notice if franchisor materially breaches and fails to begin cure within 90 days", "source_object": "Item 17", "source_pages": [39], "confidence": "high", "status": "confirmed"},
+    "termination_without_cause": {"value": "Not permitted", "source_object": "Item 17", "source_pages": [39], "confidence": "high", "status": "confirmed"},
+    "noncurable_defaults": {"value": "Extensive list: failure to open/train, misrepresentation, felony, unauthorized transfer, abandonment (3+ days), insolvency, repeated understatement, mark misuse, repeated violations, license loss, government citations, etc.", "source_object": "Item 17", "source_pages": [39, 40, 41], "confidence": "high", "status": "confirmed"},
+    "curable_defaults": {"value": "Insurance (10 days), payments (10 days), other (15 days)", "source_object": "Item 17", "source_pages": [39], "confidence": "high", "status": "confirmed"},
+    "liquidated_damages": {"value": "Monthly avg royalty × months remaining in term", "source_object": "T6-01", "source_pages": [16], "confidence": "high", "status": "confirmed"}
+  },
+  "noncompete": {
+    "during_term": {"value": "No competitive business (childcare, daycare, preschool) by owners and spouses", "source_object": "Item 17", "source_pages": [43, 44], "confidence": "high", "status": "confirmed"},
+    "post_term_duration": {"value": "2 years", "source_object": "Item 17/Exhibit H", "source_pages": [44, 163], "confidence": "high", "status": "confirmed"},
+    "post_term_radius": {"value": "10-mile radius of location and territory (whichever greater), plus 10-mile radius of any other Ivybrook location", "source_object": "Item 17/Exhibit H", "source_pages": [44, 163], "confidence": "high", "status": "confirmed"},
+    "non_solicitation": {"value": "2 years — no solicitation of Ivybrook customers, employees, or suppliers", "source_object": "Item 17", "source_pages": [44], "confidence": "high", "status": "confirmed"},
+    "competitive_business_definition": {"value": "Any business offering childcare, daycare, or preschool services", "source_object": "Exhibit H", "source_pages": [161], "confidence": "high", "status": "confirmed"}
+  },
+  "litigation_summary": {
+    "value": "No litigation required to be disclosed", "source_object": "Item 3", "source_pages": [11], "confidence": "high", "status": "confirmed"
+  },
+  "bankruptcy_flag": {
+    "value": "No bankruptcy information required to be disclosed", "source_object": "Item 4", "source_pages": [11], "confidence": "high", "status": "confirmed"
+  },
+  "item18_public_figure_flag": {
+    "value": "No public figures used", "source_object": "Item 18", "source_pages": [44], "confidence": "high", "status": "confirmed"
+  },
+  "item19_performance_summary": {
+    "has_fpr": {"value": true, "source_object": "Item 19", "source_pages": [44, 45], "confidence": "high", "status": "confirmed"},
+    "affiliate_school_gross_revenue": {"value": "$1,487,947", "source_object": "T19-02A", "source_pages": [46], "confidence": "high", "status": "confirmed"},
+    "affiliate_school_ebitda": {"value": "$456,386", "source_object": "T19-02A", "source_pages": [46], "confidence": "high", "status": "confirmed"},
+    "franchisee_2yr_avg_gross_revenue": {"value": "$858,259", "source_object": "T19-02BC", "source_pages": [47], "confidence": "high", "status": "confirmed"},
+    "franchisee_2yr_avg_ebitda": {"value": "$159,401 (19% of GR)", "source_object": "T19-02BC", "source_pages": [48], "confidence": "high", "status": "confirmed"},
+    "franchisee_3yr_avg_gross_revenue": {"value": "$967,875", "source_object": "T19-02BC", "source_pages": [47], "confidence": "high", "status": "confirmed"},
+    "franchisee_3yr_avg_ebitda": {"value": "$213,536 (22% of GR)", "source_object": "T19-02BC", "source_pages": [48], "confidence": "high", "status": "confirmed"},
+    "ebitda_excludes_owner_salary": {"value": true, "source_object": "Item 19 notes", "source_pages": [49], "confidence": "high", "status": "confirmed"},
+    "sample_size_2yr": {"value": 24, "source_object": "Item 19", "source_pages": [47], "confidence": "high", "status": "confirmed"},
+    "sample_size_3yr": {"value": 18, "source_object": "Item 19", "source_pages": [47], "confidence": "high", "status": "confirmed"}
+  },
+  "item20_outlet_summary": {
+    "total_outlets_end_2024": {"value": 41, "source_object": "T20-01", "source_pages": [50], "confidence": "high", "status": "confirmed"},
+    "franchised_end_2024": {"value": 40, "source_object": "T20-01", "source_pages": [50], "confidence": "high", "status": "confirmed"},
+    "company_owned_end_2024": {"value": 1, "source_object": "T20-01", "source_pages": [50], "confidence": "high", "status": "confirmed"},
+    "net_growth_2024": {"value": "+7", "source_object": "T20-01", "source_pages": [50], "confidence": "high", "status": "confirmed"},
+    "terminations_2024": {"value": 0, "source_object": "T20-03", "source_pages": [50, 52], "confidence": "high", "status": "confirmed"},
+    "non_renewals_2024": {"value": 0, "source_object": "T20-03", "source_pages": [50, 52], "confidence": "high", "status": "confirmed"},
+    "ceased_other_2024": {"value": 1, "source_object": "T20-03", "source_pages": [51], "confidence": "high", "status": "confirmed"},
+    "transfers_2024": {"value": 0, "source_object": "T20-02", "source_pages": [50], "confidence": "high", "status": "confirmed"},
+    "signed_not_opened": {"value": 42, "source_object": "T20-05", "source_pages": [52, 53], "confidence": "high", "status": "confirmed"},
+    "projected_new_franchised": {"value": 16, "source_object": "T20-05", "source_pages": [53], "confidence": "high", "status": "confirmed"},
+    "states_with_outlets": {"value": "AR, CO, FL, GA, KY, NE, NC, OH, PA, SC, TN, TX, VA", "source_object": "T20-03", "source_pages": [50, 51, 52], "confidence": "high", "status": "confirmed"}
+  },
+  "item21_summary": {
+    "auditor": {"value": "Not extractable — financial statements are scanned images", "source_object": "Exhibit J", "source_pages": [168, 197], "confidence": "low", "status": "not_directly_surfaced"},
+    "fiscal_year_end": {"value": "December 31", "source_object": "Item 21", "source_pages": [53], "confidence": "high", "status": "confirmed"},
+    "periods_covered": {"value": "FY2022, FY2023, FY2024", "source_object": "Item 21", "source_pages": [53], "confidence": "high", "status": "confirmed"},
+    "financial_condition_concern": {"value": "Special Risk #2 flags franchisor financial condition. Illinois addendum requires fee deferral due to financial condition.", "source_object": "special_risks/Exhibit B", "source_pages": [4, 133, 134], "confidence": "high", "status": "confirmed"},
+    "financial_highlights": {"value": "Not extractable — all 30 pages of Exhibit J are image-only", "source_object": "Exhibit J", "source_pages": [168, 197], "confidence": "low", "status": "not_directly_surfaced"}
+  },
+  "guaranty_summary": {
+    "type": {"value": "Unlimited personal guaranty", "source_object": "Exhibit F", "source_pages": [148], "confidence": "high", "status": "confirmed"},
+    "scope": {"value": "Joint and several. Personally bound by all FA terms including noncompete, non-solicitation, dispute resolution, indemnification.", "source_object": "Exhibit F", "source_pages": [148, 149], "confidence": "high", "status": "confirmed"},
+    "irrevocable": {"value": true, "source_object": "Exhibit F", "source_pages": [149], "confidence": "high", "status": "confirmed"}
+  },
+  "key_exhibits": {
+    "franchise_agreement": {"value": "Exhibit A (pp. 55–132)", "source_object": "04_exhibits.json", "confidence": "high", "status": "confirmed"},
+    "state_addenda": {"value": "Exhibit B (pp. 133–138)", "source_object": "04_exhibits.json", "confidence": "high", "status": "confirmed"},
+    "muda": {"value": "Exhibit C (pp. 139–143)", "source_object": "04_exhibits.json", "confidence": "high", "status": "confirmed"},
+    "guaranty": {"value": "Exhibit F (pp. 148–151)", "source_object": "04_exhibits.json", "confidence": "high", "status": "confirmed"},
+    "general_release": {"value": "Exhibit G (pp. 152–153)", "source_object": "04_exhibits.json", "confidence": "high", "status": "confirmed"},
+    "nda_nca": {"value": "Exhibit H (pp. 161–166)", "source_object": "04_exhibits.json", "confidence": "high", "status": "confirmed"},
+    "financial_statements": {"value": "Exhibit J (pp. 168–197) — image only", "source_object": "04_exhibits.json", "confidence": "high", "status": "confirmed"},
+    "franchisee_list": {"value": "Exhibit L (pp. 198–204)", "source_object": "04_exhibits.json", "confidence": "high", "status": "confirmed"}
+  },
+  "unresolveds": [
+    {
+      "id": "U-01",
+      "description": "Financial statements (Exhibit J) are 30 pages of scanned images — auditor identity, revenue, net income, total assets, total liabilities, and equity/deficit cannot be determined via text extraction",
+      "impact": "high",
+      "source_pages": [168, 197]
+    },
+    {
+      "id": "U-02",
+      "description": "Exhibit K is referenced in Item text (e.g., 'Exhibit K includes financial statements' on p. 2, 'Exhibit K list current and former franchisees' on p. 53) but actual exhibit headers show Exhibit J = Financial Statements and Exhibit L = Franchisee List. Possible labeling inconsistency or Exhibit K may refer to the same content as Exhibit L.",
+      "impact": "low",
+      "source_pages": [2, 53]
+    },
+    {
+      "id": "U-03",
+      "description": "Table 3 (Item 19) references 19 franchisee-owned schools operating 3+ years, but Table 2C references 18. The 19th may be the affiliate school counted separately or a rounding/text error.",
+      "impact": "low",
+      "source_pages": [47, 49]
+    },
+    {
+      "id": "U-04",
+      "description": "Pages 154–160 (between Exhibit G and Exhibit H) — content not clearly mapped. May be continuation of exhibits, additional state addenda, or blank pages.",
+      "impact": "low",
+      "source_pages": [154, 160]
+    },
+    {
+      "id": "U-05",
+      "description": "Brand Fund has no audited financial statement disclosed in the FDD. FDD states cooperatives must prepare annual statements but does not say Brand Fund itself is audited.",
+      "impact": "medium",
+      "source_pages": [27, 28]
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "C-01",
+      "description": "Item 19 Table 3 header says '19 franchisee-owned schools' but Table 2C says '18 franchisee-owned schools that have been open three or more years'. Possible the 19th includes the affiliate or a counting difference.",
+      "severity": "low",
+      "source_pages": [47, 49]
+    },
+    {
+      "id": "C-02",
+      "description": "Item 17 franchise relationship table says '1 additional consecutive 10-year term' for renewal. FA §4.2 says 'Franchisee's right to a successor franchise is for a maximum of two renewal terms of 10 years each.' This may mean 1 renewal as standard with a possible 2nd at franchisor discretion, or Item 17 understates the FA provision.",
+      "severity": "medium",
+      "source_pages": [38, 63]
+    }
+  ],
+  "franchisee_advisory_council": {"value": "Exists — advisory only, no operational/decision-making power. Franchisor appoints members and may change/dissolve at any time.", "source_object": "Item 11", "source_pages": [28], "confidence": "high", "status": "confirmed"},
+  "required_certifications": {"value": ["NAEYC membership and accreditation (required after 2 years)", "NAREA membership (North American Reggio Emilia Alliance)", "Better Business Bureau accreditation"], "source_object": "Item 8 / FA §13.10", "source_pages": [22, 87], "confidence": "high", "status": "confirmed"},
+  "time_to_open": {"value": "6–18 months estimated. Franchisor may terminate if not open within 18 months.", "source_object": "Item 11", "source_pages": [25], "confidence": "high", "status": "confirmed"},
+  "owner_participation": {"value": {"ceo_hours_per_week_year1": 20, "school_admin_hours_per_week": 40, "ceo_min_ownership_pct": 10, "ceo_and_admin_may_be_same_person": true}, "source_object": "Item 15", "source_pages": [37], "confidence": "high", "status": "confirmed"},
+  "gross_revenue_definition": {"value": {"includes": ["all revenue collected from all sources", "business interruption insurance proceeds"], "excludes": ["customer refunds/remittances", "chargeback fees to collection agencies", "sales/equivalent taxes collected for government", "manufacturer/supplier rebates"]}, "source_object": "FA §1 / Item 6 Note 2", "source_pages": [17, 58], "confidence": "high", "status": "confirmed"},
+  "reporting_obligations": {"value": [{"report": "Monthly Gross Revenue statement", "due": "5th calendar day of each month", "source": "FA §12.2"},{"report": "Monthly P&L", "due": "5th calendar day of each month", "source": "FA §12.3"},{"report": "Annual P&L and balance sheet", "due": "Within 30 days of year-end", "basis": "cash basis, may require CPA review/audit", "source": "FA §12.3"},{"report": "Initial investment report", "due": "Within 120 days of opening", "source": "FA §12.5"}], "source_pages": [82], "confidence": "high", "status": "confirmed"},
+  "facility_profile": {"value": {"typical_size_sqft": 6000, "enrollment_range": "180–250 students", "location_type": "Leased space on/near main thoroughfares", "ti_allowance_assumed": "$40/sq ft"}, "source_object": "Item 1 / Item 7 / Item 19", "source_pages": [9, 18, 45], "confidence": "high", "status": "confirmed"},
+  "former_franchisee_detail": {"value": {"total_former": 8, "mutual_termination_before_opening": 4, "termination_before_opening": 1, "mutual_termination": 1, "departed_system_before_opening": 1, "termination_2025": 1, "ceased_communication": 3, "ceased_communication_names": ["Gail and Steve Ostroff (Newtown, PA)", "Kashif Dhukka and Anina Momin (Houston, TX)", "Annie Starkey (Houston, TX)"]}, "source_object": "Exhibit L", "source_pages": [201], "confidence": "high", "status": "confirmed"},
+  "operations_manual_structure": {"value": [{"section": "Preface & Introduction", "pages": 32}, {"section": "Establishing My Franchise Business", "pages": 76}, {"section": "Personnel", "pages": 77}, {"section": "Administrative Procedures", "pages": 13}, {"section": "Daily Procedures", "pages": 17}, {"section": "Selling & Marketing", "pages": 27}], "total_pages": 242, "source_object": "Exhibit I", "source_pages": [167], "confidence": "high", "status": "confirmed"},
+  "standard_of_care": {"value": "No fiduciary relationship. Franchisor may act in own self-interest without obligation to act reasonably or consider impact on franchisee. No implied covenant of good faith beyond statutory minimum.", "source_object": "FA §21.2", "source_pages": [109], "confidence": "high", "status": "confirmed"},
+  "damages_limitations": {"value": {"franchisee_contract_damages_cap": "Refund of franchise fee and royalty fees", "statute_of_limitations": "1 year from occurrence", "punitive_damages_waived": true, "consequential_damages_waived_by_franchisee": true}, "source_object": "FA §23.4", "source_pages": [115], "confidence": "high", "status": "confirmed"}
+}

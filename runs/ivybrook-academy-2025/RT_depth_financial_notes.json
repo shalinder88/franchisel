@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "task": "financial_note_depth",
+    "brand": "Ivybrook Academy",
+    "fdd_id": "637976-2025",
+    "run_date": "2026-04-06",
+    "status": "not_directly_surfaced"
+  },
+  "limitation": "Exhibit J (pp. 168–197) contains 30 pages of scanned images with zero extractable text. All financial statement notes are locked inside these images. No OCR capability is available in this environment.",
+  "note1_accounting_policies": {
+    "receivable_allowance_writeoff": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"},
+    "depreciation_method_and_useful_life": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"},
+    "impairment_policy": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"},
+    "subsequent_events_date": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"},
+    "revenue_recognition_mechanics": {
+      "value": "Partially inferrable from FDD text only. FA §1 defines Gross Revenue as 'aggregate of all revenue collected from all sources in connection with the Franchised Business' including business interruption insurance proceeds, excluding refunds, sales taxes, chargeback fees, and manufacturer/supplier rebates. FA §12.3 requires franchisee financials on cash basis. Franchisor's own recognition method is not disclosed outside Exhibit J.",
+      "status": "partially_inferrable_from_fa",
+      "source_pages": [58, 82],
+      "confidence": "low"
+    },
+    "vie_consolidation_elections": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"}
+  },
+  "tax_note_detail": {
+    "current_vs_deferred_provision": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"},
+    "uncertain_tax_positions": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"},
+    "tax_examination_periods": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"}
+  },
+  "advertising_expense_actuals": {
+    "brand_fund_expenditure_breakdown": {
+      "value": {
+        "social_media_advertising": "55%",
+        "website_expenses": "30%",
+        "software_solutions": "10%",
+        "graphic_design": "3%",
+        "administrative": "2%"
+      },
+      "note": "This is from Item 11 disclosure (p. 28), not from financial statement notes. These are percentages of Brand Fund spend, not absolute dollar amounts. The Brand Fund is 1% of all franchisees' Gross Revenue. Actual dollar advertising expense from the franchisor's own income statement is not extractable.",
+      "status": "partial_from_item11",
+      "source_pages": [28]
+    },
+    "franchisor_advertising_expense_absolute": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"}
+  },
+  "other_material_notes": {
+    "going_concern": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J. However, Special Risk #2 and IL AG fee deferral strongly suggest the auditor may have issued a going concern opinion or that the financial statements show net losses or equity deficit."},
+    "deferred_revenue": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J. Franchise fees are 'deemed fully earned' per FA §3.1, suggesting immediate recognition, but the actual policy may differ per GAAP."},
+    "related_party_transactions": {
+      "value": "Partially inferrable: Catapult (affiliate) supplies Student Hub software exclusively. Franchisor received ~$33,821 in supplier credits in 2024. CEO may receive real estate referral commissions. These are disclosed in Item 8 (pp. 21-22) but detailed note disclosure is in image-only Exhibit J.",
+      "status": "partially_inferrable_from_item8",
+      "source_pages": [21, 22]
+    },
+    "debt_obligations": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"},
+    "lease_commitments": {"value": null, "status": "not_directly_surfaced", "reason": "image-only Exhibit J"}
+  }
+}

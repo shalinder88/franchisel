@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "brand": "Ivybrook Academy",
+    "fdd_id": "637976-2025",
+    "patch_date": "2026-04-06",
+    "source_tasks": ["16_regression_recovery_tasks.md", "17_conflict_adjudication.md"],
+    "files_patched": [
+      "09_final_canonical.json",
+      "11_canonical_enriched.json",
+      "12_canonical_enriched_v2.json"
+    ]
+  },
+  "patches": [
+    {
+      "patch_id": "PATCH-001",
+      "field_name": "item19_chart_detail.franchisee_2yr_plus.expenses",
+      "old_value": null,
+      "new_value": "15 expense lines with avg, median, and pct_of_gr (advertising_promotion, computer_tech, insurance, janitor_supplies, labor, professional_services, rent, cam, maintenance_landscaping, student_supplies_snacks, utilities, royalty_fee, brand_fund, other, licensing_dues)",
+      "change_type": "field_promotion",
+      "reason": "RR-01 — promote Table 2B per-expense detail from 03_tables.json T19-02BC to enriched canonical to match gold corpus path depth",
+      "supporting_pdf_pages": [47, 48],
+      "supporting_prior_or_gold_source": "normalized_gold.jsonl lines 55-95",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-002",
+      "field_name": "item19_chart_detail.franchisee_3yr_plus.expenses",
+      "old_value": null,
+      "new_value": "15 expense lines with avg, median, and pct_of_gr (same line items as 2yr cohort, 3yr values)",
+      "change_type": "field_promotion",
+      "reason": "RR-01 — promote Table 2C per-expense detail to enriched canonical to match gold corpus path depth",
+      "supporting_pdf_pages": [47, 48],
+      "supporting_prior_or_gold_source": "normalized_gold.jsonl lines 96-118",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-003",
+      "field_name": "item19_chart_detail.franchisee_2yr_plus.total_expense",
+      "old_value": null,
+      "new_value": {"avg": 698857, "median": 680098},
+      "change_type": "field_promotion",
+      "reason": "RR-01 — promote total_expense avg/median for 2yr cohort",
+      "supporting_pdf_pages": [48],
+      "supporting_prior_or_gold_source": "normalized_gold.jsonl lines 89-90",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-004",
+      "field_name": "item19_chart_detail.franchisee_3yr_plus.total_expense",
+      "old_value": null,
+      "new_value": {"avg": 754338, "median": 746467},
+      "change_type": "field_promotion",
+      "reason": "RR-01 — promote total_expense avg/median for 3yr cohort",
+      "supporting_pdf_pages": [48],
+      "supporting_prior_or_gold_source": "normalized_gold.jsonl lines 112-113",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-005",
+      "field_name": "initial_fees.single_unit_investment_low",
+      "old_value": null,
+      "new_value": 540700,
+      "change_type": "field_promotion",
+      "reason": "RR-02 — dual-format promotion (single unit low)",
+      "supporting_pdf_pages": [1, 17],
+      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 4 (investmentLow: 540700)",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-006",
+      "field_name": "initial_fees.single_unit_investment_high",
+      "old_value": null,
+      "new_value": 869860,
+      "change_type": "field_promotion",
+      "reason": "RR-02 — dual-format promotion (single unit high); resolves E-03 convention mismatch by labeling the figure explicitly",
+      "supporting_pdf_pages": [1, 17],
+      "supporting_prior_or_gold_source": "cover page 1 single-unit range",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-007",
+      "field_name": "initial_fees.muda_investment_low",
+      "old_value": null,
+      "new_value": 575700,
+      "change_type": "field_promotion",
+      "reason": "RR-02 — dual-format promotion (MUDA low)",
+      "supporting_pdf_pages": [1, 20],
+      "supporting_prior_or_gold_source": "cover page 1 MUDA range",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-008",
+      "field_name": "initial_fees.muda_investment_high",
+      "old_value": null,
+      "new_value": 929860,
+      "change_type": "field_promotion",
+      "reason": "RR-02 — dual-format promotion (MUDA high)",
+      "supporting_pdf_pages": [1, 20],
+      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 5 (investmentHigh: 929860)",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-009",
+      "field_name": "initial_fees.system_wide_investment_high",
+      "old_value": null,
+      "new_value": 929860,
+      "change_type": "conflict_resolution",
+      "reason": "RR-02 / Conflict E-03 adjudicated — aligns with gold convention of using MUDA ceiling as the system-wide investmentHigh",
+      "supporting_pdf_pages": [1, 20],
+      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 5 (investmentHigh: 929860); adjudicated in 17_conflict_adjudication.md field #12",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-010",
+      "field_name": "meta.regression_annotations[RA-01]",
+      "old_value": null,
+      "new_value": "Flag: gold hasLitigation:true is incorrect. PDF Item 3 p.11 says no litigation disclosed. Current run value (false) is correct.",
+      "change_type": "regression_annotation",
+      "reason": "RR-03 — document gold-source error for upstream correction",
+      "supporting_pdf_pages": [11],
+      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 133",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-011",
+      "field_name": "meta.regression_annotations[RA-02]",
+      "old_value": null,
+      "new_value": "Flag: gold hasBankruptcy:true is incorrect. PDF Item 4 p.11 says no bankruptcy disclosed. Current run value (false) is correct.",
+      "change_type": "regression_annotation",
+      "reason": "RR-03 — document gold-source error for upstream correction",
+      "supporting_pdf_pages": [11],
+      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 134",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-012",
+      "field_name": "meta.regression_annotations[RA-03]",
+      "old_value": null,
+      "new_value": "Annotation: investmentHigh convention mismatch resolved via dual-format promotion. Both single-unit ($869,860) and MUDA ($929,860) values now structured.",
+      "change_type": "conflict_resolution_annotation",
+      "reason": "RR-02 / RR-03 — log convention mismatch resolution",
+      "supporting_pdf_pages": [1, 17, 20],
+      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 5",
+      "confidence": "high"
+    },
+    {
+      "patch_id": "PATCH-013",
+      "field_name": "term_renewal_transfer_default_termination.renewal_options",
+      "old_value": "Item 17 table says 1 renewal of 10 years; FA §4.2 says maximum of 2 renewal terms of 10 years each — see contradiction C-02",
+      "new_value": "FA §4.2 governs: maximum of 2 renewal terms of 10 years each (Item 17 summary under-states this; see C-02 contradiction preserved)",
+      "change_type": "adjudicated_clarification",
+      "reason": "17_conflict_adjudication.md field #3 — FA §4.2 is the operative binding contract, not Item 17 summary. Resolution: use FA provision.",
+      "supporting_pdf_pages": [38, 63],
+      "supporting_prior_or_gold_source": "17_conflict_adjudication.md adjudication",
+      "confidence": "high"
+    }
+  ]
+}
