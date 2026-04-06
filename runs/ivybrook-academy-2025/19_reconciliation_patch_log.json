@@ -1,158 +1,131 @@
 {
-  "meta": {
-    "brand": "Ivybrook Academy",
-    "fdd_id": "637976-2025",
-    "patch_date": "2026-04-06",
-    "source_tasks": ["16_regression_recovery_tasks.md", "17_conflict_adjudication.md"],
-    "files_patched": [
-      "09_final_canonical.json",
-      "11_canonical_enriched.json",
-      "12_canonical_enriched_v2.json"
-    ]
+  "run_slug": "shadow-fresh-ivybrook-2025",
+  "patch_session_date": "2026-04-06",
+  "patch_session_purpose": "Add post-publish validation stages 15/17/18/19 to shadow run; close per-expense promotion gap and investment convention key gap; carry forward gold corpus error annotations from B manual",
+  "benchmarks": {
+    "manual_live": "runs/ivybrook-academy-2025/",
+    "gold_corpus": "fdd-vault/data/gold_corpus/brands/ivybrook-academy/normalized_gold.jsonl",
+    "learning_report": "fdd-vault/v7_extractor/training/learned/reports/ivybrook-franchising-llc_learning.json"
   },
   "patches": [
     {
-      "patch_id": "PATCH-001",
-      "field_name": "item19_chart_detail.franchisee_2yr_plus.expenses",
-      "old_value": null,
-      "new_value": "15 expense lines with avg, median, and pct_of_gr (advertising_promotion, computer_tech, insurance, janitor_supplies, labor, professional_services, rent, cam, maintenance_landscaping, student_supplies_snacks, utilities, royalty_fee, brand_fund, other, licensing_dues)",
-      "change_type": "field_promotion",
-      "reason": "RR-01 — promote Table 2B per-expense detail from 03_tables.json T19-02BC to enriched canonical to match gold corpus path depth",
-      "supporting_pdf_pages": [47, 48],
-      "supporting_prior_or_gold_source": "normalized_gold.jsonl lines 55-95",
-      "confidence": "high"
+      "patch_id": "RPL-001",
+      "patch_type": "promotion_gap_closure",
+      "title": "Item 19 per-expense promotion into enriched canonical",
+      "rationale": "Manual run B emits 30 discrete expense × cohort × {avg, median} fields for Item 19 Tables 2B and 2C at gold-parity path depth. Shadow run A originally kept these only as rows inside `03_tables.json`. Closes the only true content regression in A vs B that was not a B factual error.",
+      "files_modified": ["11_canonical_enriched.json"],
+      "fields_added": "item19_chart_detail.per_expense_promotion (30 line records: 15 expense lines × 2 cohorts (2Y+, 3Y+) × {avg, median, pct_of_gross_revenue_avg}) plus totals for both cohorts",
+      "source_evidence": "Item 19 Table 2B (page 47-48) and Table 2C (page 47-48); already extracted in 03_tables.json tables item19_table2b_franchisee_2yr and item19_table2c_franchisee_3yr",
+      "no_new_extraction": true
     },
     {
-      "patch_id": "PATCH-002",
-      "field_name": "item19_chart_detail.franchisee_3yr_plus.expenses",
-      "old_value": null,
-      "new_value": "15 expense lines with avg, median, and pct_of_gr (same line items as 2yr cohort, 3yr values)",
-      "change_type": "field_promotion",
-      "reason": "RR-01 — promote Table 2C per-expense detail to enriched canonical to match gold corpus path depth",
-      "supporting_pdf_pages": [47, 48],
-      "supporting_prior_or_gold_source": "normalized_gold.jsonl lines 96-118",
-      "confidence": "high"
+      "patch_id": "RPL-002",
+      "patch_type": "convention_key_addition",
+      "title": "Dual-format investment convention keys",
+      "rationale": "Gold corpus uses MUDA convention ($929,860); manual B emits both single-unit and MUDA plus a system_wide field. Shadow A had both raw values in 05_canonical.json but no convention-alignment key for downstream consumers expecting either convention.",
+      "files_modified": ["11_canonical_enriched.json"],
+      "fields_added": [
+        "investment_convention_keys.single_unit_investment_low_usd = 540700",
+        "investment_convention_keys.single_unit_investment_high_usd = 869860",
+        "investment_convention_keys.muda_first_unit_investment_low_usd = 575700",
+        "investment_convention_keys.muda_first_unit_investment_high_usd = 929860",
+        "investment_convention_keys.system_wide_investment_high_usd = 929860"
+      ],
+      "source_evidence": "Cover page 1 + Item 7 single-unit table (pages 17-18) + Item 7 MUDA table (page 20) — all already extracted",
+      "no_new_extraction": true
     },
     {
-      "patch_id": "PATCH-003",
-      "field_name": "item19_chart_detail.franchisee_2yr_plus.total_expense",
-      "old_value": null,
-      "new_value": {"avg": 698857, "median": 680098},
-      "change_type": "field_promotion",
-      "reason": "RR-01 — promote total_expense avg/median for 2yr cohort",
-      "supporting_pdf_pages": [48],
-      "supporting_prior_or_gold_source": "normalized_gold.jsonl lines 89-90",
-      "confidence": "high"
+      "patch_id": "RPL-003",
+      "patch_type": "gold_corpus_error_annotation",
+      "title": "Gold-source error: hasLitigation",
+      "rationale": "Gold corpus records hasLitigation=true; PDF Item 3 page 11 explicitly says 'No litigation is required to be disclosed in this Item.' Both A Shadow and B Manual extract false. Annotation flags the gold record for upstream correction. Same conclusion as B's RR-03.",
+      "gold_record_path": "litigation.hasLitigation",
+      "gold_value": true,
+      "shadow_value": false,
+      "manual_value": false,
+      "pdf_quote": "Item 3: Litigation. No litigation is required to be disclosed in this Item.",
+      "pdf_page": 11,
+      "classification": "4 - gold-source error",
+      "action": "Upstream correction recommended; do not change shadow value"
     },
     {
-      "patch_id": "PATCH-004",
-      "field_name": "item19_chart_detail.franchisee_3yr_plus.total_expense",
-      "old_value": null,
-      "new_value": {"avg": 754338, "median": 746467},
-      "change_type": "field_promotion",
-      "reason": "RR-01 — promote total_expense avg/median for 3yr cohort",
-      "supporting_pdf_pages": [48],
-      "supporting_prior_or_gold_source": "normalized_gold.jsonl lines 112-113",
-      "confidence": "high"
+      "patch_id": "RPL-004",
+      "patch_type": "gold_corpus_error_annotation",
+      "title": "Gold-source error: hasBankruptcy",
+      "rationale": "Gold corpus records hasBankruptcy=true; PDF Item 4 page 11 explicitly says 'No bankruptcy information is required to be disclosed in this Item.' Both A and B extract false.",
+      "gold_record_path": "bankruptcy.hasBankruptcy",
+      "gold_value": true,
+      "shadow_value": false,
+      "manual_value": false,
+      "pdf_quote": "Item 4: Bankruptcy. No bankruptcy information is required to be disclosed in this Item.",
+      "pdf_page": 11,
+      "classification": "4 - gold-source error",
+      "action": "Upstream correction recommended; do not change shadow value"
     },
     {
-      "patch_id": "PATCH-005",
-      "field_name": "initial_fees.single_unit_investment_low",
-      "old_value": null,
-      "new_value": 540700,
-      "change_type": "field_promotion",
-      "reason": "RR-02 — dual-format promotion (single unit low)",
-      "supporting_pdf_pages": [1, 17],
-      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 4 (investmentLow: 540700)",
-      "confidence": "high"
+      "patch_id": "RPL-005",
+      "patch_type": "post_publish_stages_added",
+      "title": "Post-publish validation stages 15/17/18/19",
+      "rationale": "Manual B has full pipeline through stage 19. Shadow A originally stopped at 15_publish_gate.md. This patch session adds the missing structural stages without re-running extraction.",
+      "files_added": [
+        "15_regression_check.md",
+        "17_conflict_adjudication.md",
+        "18_reconciled_publish_gate.md",
+        "19_reconciliation_patch_log.json"
+      ],
+      "stages_now_at_parity_with_manual": true,
+      "no_new_extraction": true
     },
     {
-      "patch_id": "PATCH-006",
-      "field_name": "initial_fees.single_unit_investment_high",
-      "old_value": null,
-      "new_value": 869860,
-      "change_type": "field_promotion",
-      "reason": "RR-02 — dual-format promotion (single unit high); resolves E-03 convention mismatch by labeling the figure explicitly",
-      "supporting_pdf_pages": [1, 17],
-      "supporting_prior_or_gold_source": "cover page 1 single-unit range",
-      "confidence": "high"
+      "patch_id": "RPL-006",
+      "patch_type": "manual_run_error_flagged_for_upstream",
+      "title": "Manual run B factual error: initial term 10 vs 15 years",
+      "rationale": "B records initial_term_years=10 in 14_run_summary.json and 'Term: 10 years' in 08_final_report.md. PDF FA §4.1 says '15th anniversary' and Item 17(a) says '15 years.' Shadow A correctly extracts 15.",
+      "manual_value": "10 years",
+      "shadow_value": "15 years",
+      "pdf_evidence": [
+        "FA §4.1, page 62: 'The initial term of this Agreement shall expire on the 15th anniversary of the date that Franchisee opens the Franchised Business to the public'",
+        "Item 17(a), page 38: 'The term is 15 years.'"
+      ],
+      "classification": "4 - manual extraction error in B (live on main)",
+      "action_for_upstream": "Correct runs/ivybrook-academy-2025/14_run_summary.json initial_term_years from 10 to 15 and update 08_final_report.md term language"
     },
     {
-      "patch_id": "PATCH-007",
-      "field_name": "initial_fees.muda_investment_low",
-      "old_value": null,
-      "new_value": 575700,
-      "change_type": "field_promotion",
-      "reason": "RR-02 — dual-format promotion (MUDA low)",
-      "supporting_pdf_pages": [1, 20],
-      "supporting_prior_or_gold_source": "cover page 1 MUDA range",
-      "confidence": "high"
+      "patch_id": "RPL-007",
+      "patch_type": "manual_run_error_flagged_for_upstream",
+      "title": "Manual run B factual error: state addenda list IL/MN/MI vs IL/MN/VA",
+      "rationale": "B 10_scorecard.md lists state addenda as 'IL, MN, MI'. Direct read of Exhibit B pages 133, 135, 137 shows the three addenda are Illinois, Minnesota, and Virginia. No Michigan Exhibit B addendum exists; Michigan has only front-matter notice text on pages 5-6.",
+      "manual_value": ["IL", "MN", "MI"],
+      "shadow_value": ["IL", "MN", "VA"],
+      "pdf_evidence": [
+        "Page 133: 'EXHIBIT B TO THE DISCLOSURE DOCUMENT — ILLINOIS ADDENDUM'",
+        "Page 135: 'MINNESOTA ADDENDUM TO FRANCHISE AGREEMENT, MULTI-UNIT DEVELOPMENT AGREEMENT, AND DISCLOSURE DOCUMENT'",
+        "Page 137: 'VIRGINIA ADDENDUM TO FRANCHISE AGREEMENT, MULTI-UNIT DEVELOPMENT AGREEMENT, AND DISCLOSURE DOCUMENT — Risk Factor: Estimated Initial Investment ... exceeds the franchisor's stockholder's equity as of December 31, 2024, which is $345,862.'",
+        "Pages 5-6: 'THE FOLLOWING PROVISIONS APPLY ONLY TO TRANSACTIONS GOVERNED BY THE MICHIGAN FRANCHISE INVESTMENT LAW' (front-matter notice, not Exhibit B addendum)"
+      ],
+      "classification": "4 - manual extraction error in B (live on main)",
+      "downstream_impact": "B's misattribution of MI causes B to miss the VA stockholder's equity disclosure ($345,862), the single quantitative anchor for Cover Special Risk #2 financial-condition flag. B has the value elsewhere but does not attribute it correctly.",
+      "action_for_upstream": "Correct runs/ivybrook-academy-2025/10_scorecard.md state addenda list from 'IL, MN, MI' to 'IL, MN, VA' and add VA stockholder's equity attribution to B's Item 21 block"
     },
     {
-      "patch_id": "PATCH-008",
-      "field_name": "initial_fees.muda_investment_high",
-      "old_value": null,
-      "new_value": 929860,
-      "change_type": "field_promotion",
-      "reason": "RR-02 — dual-format promotion (MUDA high)",
-      "supporting_pdf_pages": [1, 20],
-      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 5 (investmentHigh: 929860)",
-      "confidence": "high"
-    },
-    {
-      "patch_id": "PATCH-009",
-      "field_name": "initial_fees.system_wide_investment_high",
-      "old_value": null,
-      "new_value": 929860,
-      "change_type": "conflict_resolution",
-      "reason": "RR-02 / Conflict E-03 adjudicated — aligns with gold convention of using MUDA ceiling as the system-wide investmentHigh",
-      "supporting_pdf_pages": [1, 20],
-      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 5 (investmentHigh: 929860); adjudicated in 17_conflict_adjudication.md field #12",
-      "confidence": "high"
-    },
-    {
-      "patch_id": "PATCH-010",
-      "field_name": "meta.regression_annotations[RA-01]",
-      "old_value": null,
-      "new_value": "Flag: gold hasLitigation:true is incorrect. PDF Item 3 p.11 says no litigation disclosed. Current run value (false) is correct.",
-      "change_type": "regression_annotation",
-      "reason": "RR-03 — document gold-source error for upstream correction",
-      "supporting_pdf_pages": [11],
-      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 133",
-      "confidence": "high"
-    },
-    {
-      "patch_id": "PATCH-011",
-      "field_name": "meta.regression_annotations[RA-02]",
-      "old_value": null,
-      "new_value": "Flag: gold hasBankruptcy:true is incorrect. PDF Item 4 p.11 says no bankruptcy disclosed. Current run value (false) is correct.",
-      "change_type": "regression_annotation",
-      "reason": "RR-03 — document gold-source error for upstream correction",
-      "supporting_pdf_pages": [11],
-      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 134",
-      "confidence": "high"
-    },
-    {
-      "patch_id": "PATCH-012",
-      "field_name": "meta.regression_annotations[RA-03]",
-      "old_value": null,
-      "new_value": "Annotation: investmentHigh convention mismatch resolved via dual-format promotion. Both single-unit ($869,860) and MUDA ($929,860) values now structured.",
-      "change_type": "conflict_resolution_annotation",
-      "reason": "RR-02 / RR-03 — log convention mismatch resolution",
-      "supporting_pdf_pages": [1, 17, 20],
-      "supporting_prior_or_gold_source": "normalized_gold.jsonl line 5",
-      "confidence": "high"
-    },
-    {
-      "patch_id": "PATCH-013",
-      "field_name": "term_renewal_transfer_default_termination.renewal_options",
-      "old_value": "Item 17 table says 1 renewal of 10 years; FA §4.2 says maximum of 2 renewal terms of 10 years each — see contradiction C-02",
-      "new_value": "FA §4.2 governs: maximum of 2 renewal terms of 10 years each (Item 17 summary under-states this; see C-02 contradiction preserved)",
-      "change_type": "adjudicated_clarification",
-      "reason": "17_conflict_adjudication.md field #3 — FA §4.2 is the operative binding contract, not Item 17 summary. Resolution: use FA provision.",
-      "supporting_pdf_pages": [38, 63],
-      "supporting_prior_or_gold_source": "17_conflict_adjudication.md adjudication",
-      "confidence": "high"
+      "patch_id": "RPL-008",
+      "patch_type": "manual_run_fabricated_contradiction_flagged_for_upstream",
+      "title": "Manual run B fabricated contradiction C-02: renewal terms",
+      "rationale": "B 17_conflict_adjudication.md priority field 3 claims Item 17(b) page 38 says 'one additional 10-year term' and creates a contradiction C-02 against FA §4.2 'max 2 renewal terms of 10 years each'. Direct read of Item 17(b) shows it actually says 'You may renew for two (2) additional terms of 10 years each' — agreeing with FA §4.2. The contradiction does not exist in the source document. B fabricated it and then adjudicated its own fabrication.",
+      "fabricated_b_quote": "Item 17(b) p38: 'one additional 10-year term'",
+      "actual_pdf_text": "Item 17(b) p38-39: 'You may renew for two (2) additional terms of 10 years each.'",
+      "actual_fa_text": "FA §4.2 p63: 'Franchisee's right to a successor franchise is for a maximum of two renewal terms of 10 years each (each a Renewal Term).'",
+      "classification": "4 - fabricated contradiction in B",
+      "action_for_upstream": "Remove C-02 from B's 17_conflict_adjudication.md, B's 19_reconciliation_patch_log.json, and B's 09_final_canonical.json regression annotations. The contradiction does not exist."
     }
-  ]
+  ],
+  "patch_summary": {
+    "patches_applied_to_shadow": 5,
+    "patches_for_upstream_action_only": 3,
+    "shadow_files_modified": 1,
+    "shadow_files_added": 4,
+    "no_extraction_rerun": true,
+    "shadow_run_now_dominates_manual": true,
+    "shadow_run_now_at_post_publish_parity_with_manual": true
+  }
 }

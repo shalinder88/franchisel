@@ -1,319 +1,256 @@
 {
-  "meta": {
-    "task": "contract_burden_depth",
-    "brand": "Ivybrook Academy",
-    "fdd_id": "637976-2025",
-    "run_date": "2026-04-06",
-    "source_agreements": ["Exhibit A (Franchise Agreement)", "Exhibit C (MUDA)", "Exhibit F (Guaranty)", "Exhibit A Schedule 3 (Lease Rider)"]
-  },
+  "source_agreement": "Exhibit A — Franchise Agreement (pages 55–132)",
+  "source_depth_extraction_path": "PyMuPDF text layer, direct clause-level read",
   "financial_obligations": [
     {
-      "id": "CB-01",
-      "clause": "FA §3.1 — Franchise Fee",
-      "burden": "Franchise fee deemed fully earned upon execution. Nonrefundable.",
-      "source_pages": [61],
-      "risk_level": "medium"
+      "clause": "3.4 Monthly Royalty Fee",
+      "text_summary": "On or before the 6th calendar day of each month, Franchisee shall pay Royalty Fee equal to 7% of Gross Revenue for the previous month",
+      "page_ref": "62 (FA Section 3.4)",
+      "burden_type": "recurring_royalty"
     },
     {
-      "id": "CB-02",
-      "clause": "FA §3.4 — Monthly Royalty Fee",
-      "burden": "7% of Gross Revenue due by 6th calendar day of each month. Gross Revenue includes business interruption insurance proceeds.",
-      "source_pages": [61],
-      "risk_level": "high"
+      "clause": "3.5 Third Party Suppliers",
+      "text_summary": "Franchisor has right (but not obligation) to collect payment on behalf of designated third-party supplier and impose a reasonable markup or administrative charge",
+      "page_ref": "62",
+      "burden_type": "supplier_pass_through_markup"
     },
     {
-      "id": "CB-03",
-      "clause": "FA §3.6 — Technology Fee",
-      "burden": "Franchisor may collect technology fee at any point during term. May raise fee at any time. Currently $250/month. May use fee for any technology-related purpose.",
-      "source_pages": [61],
-      "risk_level": "medium"
+      "clause": "3.6 Technology Fee",
+      "text_summary": "Franchisor has right to collect a technology fee at any point of the Initial Term, may use for any technology-related purpose, and may raise fee at any time during Initial Term",
+      "page_ref": "62",
+      "burden_type": "uncapped_tech_fee_increase"
     },
     {
-      "id": "CB-04",
-      "clause": "FA §3.8 — Supplier Fees",
-      "burden": "Franchisor reserves right to charge fees for goods/services supplied by franchisor/affiliates. Sole discretion to change amounts, add/delete/modify goods and services at any time.",
-      "source_pages": [62],
-      "risk_level": "high"
+      "clause": "3.7 Conference Fee",
+      "text_summary": "Franchisor may require Franchisee, owners, CEO, and School Administrator to attend conferences and charge per-person attendance fee. Franchisee pays all travel, food, transportation, lodging. Non-attendance still charged.",
+      "page_ref": "62",
+      "burden_type": "mandatory_conference_attendance"
     },
     {
-      "id": "CB-05",
-      "clause": "FA §3.9 — Late Fees",
-      "burden": "1.5% per month on all unpaid amounts from due date. Franchisee pays all collection costs including legal fees. Not an agreement to accept late payment or extend credit.",
-      "source_pages": [62],
-      "risk_level": "medium"
+      "clause": "3.8 Supplier Fees",
+      "text_summary": "Franchisor reserves right to charge fees for goods/services supplied by Franchisor or affiliates; sole discretion to change fee amounts and add/delete/modify goods and services at any time. 90 days prior to opening, Franchisee pays then-current décor package fee",
+      "page_ref": "62",
+      "burden_type": "sole_discretion_supplier_pricing"
     },
     {
-      "id": "CB-06",
-      "clause": "FA §3.10 — Non-Compliance Fee",
-      "burden": "Up to $1,000 per week plus franchisor's costs for ongoing non-compliance. Described as estimate of internal personnel cost, not penalty. Cumulative with other remedies.",
-      "source_pages": [62],
-      "risk_level": "medium"
+      "clause": "3.9 Late Fees",
+      "text_summary": "1.5% per month (or highest state-allowed rate, whichever is lower) on all Royalty Fees, Brand Fund Contributions, and amounts due for purchases from Franchisor and affiliates. Franchisee also pays all franchisor costs to collect unpaid fees",
+      "page_ref": "62",
+      "burden_type": "late_interest_plus_collection_costs"
     },
     {
-      "id": "CB-07",
-      "clause": "FA §3.5 — Third Party Supplier Pass-Through",
-      "burden": "Franchisor may collect payment on behalf of designated suppliers and add reasonable markup or administrative charge.",
-      "source_pages": [61],
-      "risk_level": "medium"
+      "clause": "3.10 Non-Compliance Fee",
+      "text_summary": "Up to $1,000 per week plus franchisor costs and expenses for ongoing non-compliance until franchisee ceases; framed as 'reasonable estimate of franchisor's internal cost' and 'additional to all franchisor's other rights and remedies'",
+      "page_ref": "62",
+      "burden_type": "cumulative_noncompliance_fee"
     },
     {
-      "id": "CB-08",
-      "clause": "FA §17.5 — Liquidated Damages",
-      "burden": "On termination for cause: net present value of (average preceding 12 months royalty × months remaining in term). Plus all enforcement costs and attorneys' fees. Does not bar additional actual damages.",
-      "source_pages": [104],
-      "risk_level": "high"
-    },
-    {
-      "id": "CB-09",
-      "clause": "FA §4.2.1.2 — Renewal Fee",
-      "burden": "Greater of $10,000 or 10% of then-current initial franchise fee for new franchisees.",
-      "source_pages": [63],
-      "risk_level": "medium"
-    },
-    {
-      "id": "CB-10",
-      "clause": "FA §12.9 — Late Reporting Fines",
-      "burden": "Up to $1,000 per incident for failure to timely submit any required/requested information or report.",
-      "source_pages": [83],
-      "risk_level": "low"
+      "clause": "3.11 Application of Payments",
+      "text_summary": "Notwithstanding any designation by Franchisee, franchisor and affiliates have the right to apply any franchisee payment to any past-due indebtedness in any proportion or priority (Royalty, Brand Fund, purchases, or any other amount owed to franchisor or affiliates)",
+      "page_ref": "62",
+      "burden_type": "payment_application_override"
     }
   ],
-  "eft_auto_debit_mechanics": [
+  "eft_autodebit_mechanics": {
+    "clause": "3.12 Method of Payment",
+    "text_verbatim_short": "Franchisee shall pay the Royalty Fee, Brand Fund Contribution, and any other amounts owed to Franchisor or its Affiliates by pre-authorized bank draft or in such other manner as Franchisor or its Affiliates may require. Franchisor may adjust the due date of any fee or amount.",
+    "page_ref": "62",
+    "mandatory_preauthorized_bank_draft": true,
+    "franchisor_may_change_method": true,
+    "franchisor_may_adjust_due_date_unilaterally": true
+  },
+  "lien_security_interest": {
+    "explicit_security_interest_in_franchisee_assets": "Not directly surfaced in Exhibit A as extracted (no 'security interest' or UCC-1 clause encountered in Exhibit A body text). Exhibit F Unlimited Guaranty is an unlimited personal guaranty of owners' obligations rather than a collateral pledge.",
+    "franchisor_right_to_take_lease_assignment": "Yes — Item 8 body and FA lease rider require landlord to grant franchisor the right at franchisor's option and without compensation to take assignment of the lease if franchisee materially defaults under the lease or if the franchise terminates or is not renewed",
+    "page_ref": "20 (Item 8 body) and FA lease rider",
+    "set_off_right": "Franchisor and affiliates shall set off sums franchisor or its affiliates owes franchisee or its affiliates against any past-due indebtedness as franchisor deems appropriate (section 3.11 area)",
+    "set_off_page_ref": "62"
+  },
+  "data_ownership_and_access_rights": [
     {
-      "id": "CB-11",
-      "clause": "Item 6 Note 1 / FA §3",
-      "burden": "All fees payable by electronic debit or other method franchisor determines. Franchisor has right to apply payments to any past-due indebtedness regardless of franchisee's designation (FA §3.11).",
-      "source_pages": [16, 62],
-      "risk_level": "medium"
+      "clause": "13.17 Customer and Other Data",
+      "text_summary": "Franchisee maintains a data set of customer names, purchase/enrollment history, home addresses, email, phone, plus permissions/consents. Franchisee shall use Technology that franchisor designates to create, store, maintain, and share the Customer List. The Customer List shall be the property of Franchisor. Franchisor shall have the right to use the Customer List for any purposes.",
+      "page_ref": "88-89",
+      "burden_type": "franchisor_owns_customer_list"
     },
     {
-      "id": "CB-12",
-      "clause": "FA §22.11 — Set-Off Rights",
-      "burden": "Franchisor may set off sums it owes franchisee against any unpaid debts owed by franchisee to franchisor or affiliates. Payment for less than full amount will not be construed as accord and satisfaction.",
-      "source_pages": [114],
-      "risk_level": "medium"
-    }
-  ],
-  "data_ownership_access_rights": [
-    {
-      "id": "CB-13",
-      "clause": "FA §13.17 — Customer List and Franchised Business Data",
-      "burden": "All customer data, enrollment data, and all other data collected in connection with franchised business is owned exclusively by franchisor during and after term. Franchisee granted limited license to use data only while agreement is in effect and only in accordance with franchisor's standards. On termination: franchisee loses all rights to use or disclose data.",
-      "source_pages": [89],
-      "risk_level": "high"
+      "clause": "13.17/13.18 Franchised Business Data ownership",
+      "text_summary": "All data 'collectively referred to herein as Franchised Business Data is deemed to be owned by Franchisor'. Franchisee agrees to furnish Franchised Business Data to franchisor at any time franchisor requests. Franchisee must use the Technology that franchisor designates to create, store, maintain, and share the data. Franchisor grants a limited license to franchisee to use Franchised Business Data while the Agreement is in effect.",
+      "page_ref": "89",
+      "burden_type": "franchisor_owns_all_operating_data"
     },
     {
-      "id": "CB-14",
-      "clause": "FA §13.19.2 — Technology Data Access",
-      "burden": "Franchisor has right to access, monitor, and retrieve all data from franchisee's technology systems. No privacy expectation. Franchisor may obtain financial, enrollment, student, and fee reports from franchisee's technology at any time.",
-      "source_pages": [91, 92],
-      "risk_level": "high"
+      "clause": "13.18 Data Protection; Privacy",
+      "text_summary": "Franchisee shall comply with, or adopt policies consistent with, franchisor's then-current Data Protection and Security Policies as described in the Manual. Policies may govern how Franchised Business Data and Personal Information are collected, used, stored, processed, shared, or destroyed. 'Personal Information' defined as any information that can identify, locate, or contact an individual or household and any information defined as protected personal information under any Privacy Law.",
+      "page_ref": "89-90",
+      "burden_type": "manual_driven_privacy_policy_adoption"
     },
     {
-      "id": "CB-15",
-      "clause": "FA §13.13 — Email",
-      "burden": "Franchisee has no expectation of privacy in franchisor-provided email accounts or communication systems. Franchisor authorized to access such communications.",
-      "source_pages": [88],
-      "risk_level": "medium"
+      "clause": "13.19 Technology",
+      "text_summary": "Franchisor may introduce new technology requirements or modify specifications; no limits on franchisor's rights. Franchisor may sublicense technology to franchisee and charge all amounts paid to supplier based on franchisee's use plus reasonable markup. Franchisor is not obligated to provide maintenance, repair, upgrades, or updates and disclaims all liability for malfunctions, crashes, or data loss.",
+      "page_ref": "29-30 (Item 11 body)",
+      "burden_type": "uncapped_tech_requirement_change_plus_markup"
+    },
+    {
+      "clause": "12.6 / 12.7 Independent access",
+      "text_summary": "Franchisor has the right at all times to independently access franchisee technology to retrieve, analyze, and use information, including financial information, without first notifying franchisee. No contractual limits on this right, regardless of whether franchisee was required to purchase the technology.",
+      "page_ref": "29 (Item 11 body) + FA 12.6/12.7",
+      "burden_type": "franchisor_real_time_data_access"
+    },
+    {
+      "clause": "12.8 Release of Records",
+      "text_summary": "At franchisor's request, franchisee shall authorize and direct any third parties, including accounting and legal professionals, to release to franchisor all accounting and financial records arising from or relating to the operation of the Franchised Business",
+      "page_ref": "82-83",
+      "burden_type": "third_party_record_release_mandate"
     }
   ],
   "system_change_exposure": [
     {
-      "id": "CB-16",
-      "clause": "FA §10.2 — System Modifications",
-      "burden": "Franchisor has absolute right to modify system standards, specifications, and procedures. All modifications binding on franchisee. Franchisee must adopt at own expense. No limits on modification rights.",
-      "source_pages": [30],
-      "risk_level": "high"
+      "clause": "10.2 Modification of the System",
+      "text_summary": "Franchisor has the right, in its sole discretion, to change or modify the System at any time including adoption of new or modified Marks, copyrighted materials, curricula, teaching materials, computer hardware, software, equipment, inventory, supplies, or sales and marketing techniques. Franchisee shall accept and use such changes as if they were part of the Agreement as of the Effective Date. Franchisee must make such expenditures as such changes require. Franchisor acknowledges that required changes may require significant capital expenditures 'in an amount that is unknown on the Effective Date and that cannot be fully amortized over the period of time then remaining in the Initial Term.'",
+      "page_ref": "73-74",
+      "burden_type": "unlimited_unilateral_system_change"
     },
     {
-      "id": "CB-17",
-      "clause": "FA §13.19.1 — Technology Modifications",
-      "burden": "Franchisor may periodically require updates/upgrades to technology. May introduce new requirements or modify specifications without limit. If franchisor sublicenses technology, may charge franchisee all amounts plus reasonable compensation.",
-      "source_pages": [91],
-      "risk_level": "high"
+      "clause": "10.3 Variance",
+      "text_summary": "Franchisor has the right to vary standards or specifications for any franchisee based upon that franchisee's qualifications, site peculiarities, demographics, business potential, existing business practices, or any other condition franchisor deems important. (No obligation to treat franchisees uniformly on standards.)",
+      "page_ref": "74",
+      "burden_type": "variance_discretion"
+    }
+  ],
+  "remodel_rebuild_refurbish_obligations": [
+    {
+      "clause": "13.2/13.3 Refurbishment right",
+      "text_summary": "Franchisor 'reserves the right to require Franchisee to generally refurbish the Franchised Business at Franchisee's expense' to conform to building design, trade dress, color schemes, System, and presentation of the Marks consistent with then-current image for Ivybrook Academy franchises. Includes 'structural changes, installation of new materials and equipment, remodeling, redecoration, changing color schemes, and modifications and/or repairs to existing improvements.' May include replacing worn out, obsolete, or dated equipment, fixtures, furnishings.",
+      "page_ref": "85",
+      "burden_type": "open_ended_refurbishment_at_franchisee_expense"
     },
     {
-      "id": "CB-18",
-      "clause": "FA §13.12 — Curricula Changes",
-      "burden": "Franchisor may revise, change, eliminate, or replace any curriculum. Franchisee must promptly implement at own expense. May not vary or use different source without prior written approval.",
-      "source_pages": [88],
-      "risk_level": "medium"
-    }
-  ],
-  "remodel_rebuild_obligations": [
-    {
-      "id": "CB-19",
-      "clause": "FA §13.2 — Renovations and Alterations",
-      "burden": "Franchisor may require substantial renovations and alterations during initial term or renewal. If franchisee delays or refuses, franchisor may enter premises without notice and perform work at franchisee expense plus 10% administrative fee. Explicit capitalized warning that this 'MAY INVOLVE SUBSTANTIAL ADDITIONAL INVESTMENT.'",
-      "source_pages": [85],
-      "risk_level": "high"
+      "clause": "4.2.1.4 Renewal capital expenditure",
+      "text_summary": "As a condition of renewal, 'Franchisee has, at its expense, made such capital expenditures as were necessary to maintain uniformity with any Franchisor-required System modifications such that the Franchised Business reflects Franchisor's then-current standards and specifications'",
+      "page_ref": "63",
+      "burden_type": "renewal_conditioned_on_capex_uniformity"
     },
     {
-      "id": "CB-20",
-      "clause": "FA §4.2.1.4 — Renewal Capital Expenditures",
-      "burden": "As condition of renewal, franchisee must have made capital expenditures necessary to maintain uniformity with franchisor-required system modifications to current standards.",
-      "source_pages": [63],
-      "risk_level": "high"
+      "clause": "5.3 Development of Accepted Location",
+      "text_summary": "Franchisee constructs or remodels premises in accordance with franchisor's Construction Standards; franchisee solely responsible for construction; franchisee must obtain franchisor's acceptance of proposed plans; must commence construction promptly after lease execution; must maintain continuous construction until completion",
+      "page_ref": "67-68",
+      "burden_type": "pre_opening_construction_control"
     }
   ],
-  "lien_security_interest": [
+  "appraisal_fmv_mechanics": [
     {
-      "id": "CB-21",
-      "clause": "FA §17.2 — Post-Termination Purchase Option",
-      "burden": "During 60 days post-termination, franchisor has right to purchase any assets of franchised business at fair market value less amounts owed to franchisor and amounts needed to cure franchisee's third-party defaults. Franchisor may assign this option.",
-      "source_pages": [102],
-      "risk_level": "medium"
+      "clause": "17.2 Post-termination franchisor option to purchase assets",
+      "text_summary": "During 60-day period after termination, non-renewal, or expiration, franchisor may purchase any assets of the Franchised Business at fair market value",
+      "page_ref": "43 (Item 17 table)",
+      "burden_type": "post_term_fmv_option"
     },
     {
-      "id": "CB-22",
-      "clause": "FA §19 / Item 17(n) — Right of First Refusal",
-      "burden": "On any proposed sale, franchisor has 30 days to match the offer. May substitute cash for any non-cash consideration. Has 60 days to close after notice. May inspect all books and 3 years of financial records during ROFR period.",
-      "source_pages": [108],
-      "risk_level": "medium"
+      "clause": "Lease rider — rent determination by independent appraiser upon franchisor assumption",
+      "text_summary": "'If the parties are not able to agree on an independent appraiser within 45 days of the termination, non-renewal, or expiration of this Agreement, each party will select an independent [appraiser]'; rent will be determined by qualified independent appraiser; franchisee and franchisor each present proposed rent; independent appraiser selects the most commercially reasonable rent from the two proposals; appraiser's determination binding on parties",
+      "page_ref": "FA lease rider (referenced near p66)",
+      "burden_type": "appraiser_baseball_rent_arbitration"
     }
   ],
-  "appraisal_fair_market_value_transfer_mechanics": [
+  "tax_permit_indebtedness_burdens": [
     {
-      "id": "CB-23",
-      "clause": "FA §17.1.1.10 — Post-Termination Lease to Franchisor",
-      "burden": "If franchisee owns the real property, must lease to franchisor for initial 5-year term with two 5-year renewal options. If parties cannot agree on rent within 30 days, an independent appraiser selects the most commercially reasonable rent from the two proposals. Each party pays half the appraiser cost.",
-      "source_pages": [100],
-      "risk_level": "medium"
+      "clause": "Franchisee records include sales tax records and state/federal tax returns",
+      "text_summary": "Franchisee shall maintain purchase orders, invoices, payroll records, sales tax records, state and federal tax returns, bank statements, cancelled checks, deposit receipts, cash receipts and disbursements. Franchisee shall submit copies of all state sales tax returns to franchisor.",
+      "page_ref": "82 (FA 12.6 / 12.x)",
+      "burden_type": "tax_record_submission_obligation"
+    },
+    {
+      "clause": "13.6 Permits and code compliance",
+      "text_summary": "Franchisee is responsible for conforming the site to local ordinances and building codes and obtaining any required permits",
+      "page_ref": "24 (Item 11 body, referencing Section 13.6)",
+      "burden_type": "permit_compliance"
+    },
+    {
+      "clause": "Lease rider subordination",
+      "text_summary": "Lease rider provides for subordination to any mortgage, deed of trust, deed to secure debt, or similar encumbrance on the premises that the holder agrees not to disturb tenant's rights (standard SNDA language)",
+      "page_ref": "FA lease rider (referenced near p66)",
+      "burden_type": "lease_subordination"
     }
   ],
+  "estoppel_certificate_obligation": {
+    "directly_surfaced": false,
+    "search_result": "No occurrence of 'estoppel' found in Exhibit A text extraction.",
+    "note": "Estoppel certificate clause not directly surfaced in the franchise agreement body. Typical lease riders sometimes include an estoppel duty but it is not captured in the extracted text layer."
+  },
   "entity_guarantor_structure_requirements": [
     {
-      "id": "CB-24",
-      "clause": "FA §22.4 / Exhibit F — Unlimited Guaranty",
-      "burden": "All holders of legal or beneficial interest in franchisee AND their spouses/domestic partners must execute unlimited guaranty. Jointly and severally bound by ALL FA terms including noncompete, non-solicitation, dispute resolution, and indemnification. Irrevocable. Effective for full term including renewals.",
-      "source_pages": [112, 148, 149],
-      "risk_level": "high"
+      "clause": "Single-purpose entity restriction",
+      "text_summary": "Franchisee's articles of incorporation, articles of organization, or written partnership agreement shall at all times provide that Franchisee's activities are limited exclusively to the development and operation of the IVYBROOK ACADEMY Franchised Business",
+      "page_ref": "74 (approx)",
+      "burden_type": "single_purpose_entity_requirement"
     },
     {
-      "id": "CB-25",
-      "clause": "FA §24.9 — Corporate Structure Requirements",
-      "burden": "If entity: must be duly organized, qualified, activities limited exclusively to development/operation of Ivybrook business. Stock/membership certificates must bear conspicuous transfer restriction endorsement. Must maintain stop-transfer instructions.",
-      "source_pages": [119],
-      "risk_level": "medium"
+      "clause": "Stop-transfer instructions",
+      "text_summary": "If Franchisee is a corporation, Franchisee shall maintain stop-transfer instructions against the transfer on its records of any voting securities, and each stock certificate (must bear a restrictive legend)",
+      "page_ref": "74 (approx)",
+      "burden_type": "stock_transfer_restriction"
     },
     {
-      "id": "CB-26",
-      "clause": "FA §18.3 — Transfer to Controlled Entity",
-      "burden": "Controlled entity must be newly organized, activities confined exclusively to franchised business, owned 100% by franchisee. All holders must guarantee. Stock certificates must bear restriction endorsement. Articles/bylaws/operating agreements provided to franchisor.",
-      "source_pages": [106],
-      "risk_level": "medium"
+      "clause": "Ownership disclosure and notification",
+      "text_summary": "If franchisee is a corporation, limited liability company, or partnership, franchisee has provided franchisor a current list of all owners and agrees to advise franchisor of any and all changes in ownership",
+      "page_ref": "74 (approx)",
+      "burden_type": "ownership_disclosure_duty"
     },
     {
-      "id": "CB-27",
-      "clause": "FA §13.3.1 — CEO Ownership Requirement",
-      "burden": "CEO must have at least 10% ownership interest in franchisee entity.",
-      "source_pages": [85],
-      "risk_level": "low"
+      "clause": "13.3 CEO designation",
+      "text_summary": "Franchisee shall appoint a CEO (or similar title) as primary executive with decision-making authority. If franchisee is an individual, then franchisee shall be CEO. CEO must have at least 10% ownership interest. CEO must be present at the Franchised Business no less than 20 hours per week during the first year of operations, excluding vacation/sick leave.",
+      "page_ref": "85",
+      "burden_type": "ceo_equity_and_hours_requirement"
+    },
+    {
+      "clause": "Related Party joinder",
+      "text_summary": "If franchisee is an entity, franchisor may require any Related Party (including owners, members, partners, directors, officers, principals) to sign this Agreement and/or separate agreements for the purpose of binding the Related Party",
+      "page_ref": "approx 74",
+      "burden_type": "related_party_joinder_right"
+    },
+    {
+      "clause": "Exhibit F Unlimited Guaranty",
+      "text_summary": "Owners execute an Unlimited Guaranty and Assumption of Obligations — joint and several personal guaranty of all franchisee obligations under the Franchise Agreement",
+      "page_ref": "148-151 (Exhibit F)",
+      "burden_type": "unlimited_personal_guaranty"
+    },
+    {
+      "clause": "Exhibit H (two forms) NDA + noncompete",
+      "text_summary": "CEO, School Administrator, owners, and certain designated personnel sign Nondisclosure/Non-Solicitation Agreement and Nondisclosure/Non-Competition Agreement",
+      "page_ref": "155-166 (Exhibit H)",
+      "burden_type": "individual_restrictive_covenant_signatures"
     }
   ],
-  "tax_permit_indebtedness_burden": [
+  "insurance_minimums_surfaced": [
+    {"coverage": "Comprehensive general liability (bodily injury, personal injury, death, property damage)", "minimum": "$2,000,000 per occurrence or statutory minimum, whichever higher", "page_ref": "94 (FA 15.1.1.3)"},
+    {"coverage": "Workers compensation", "minimum": "Amount required by state law", "page_ref": "21 (Item 8) and FA 15.1.1.2"},
+    {"coverage": "Employer liability", "minimum": "$100,000 or statutory minimum, whichever higher", "page_ref": "94 (FA 15.1.1.2 area)"},
+    {"coverage": "All risk property insurance", "minimum": "Required (amount not specified as dollar minimum)", "page_ref": "21 (Item 8)"},
+    {"coverage": "Policy start date", "minimum": "Procure 60 days prior to Franchised Business opening date", "page_ref": "94 (FA 15.1.1)"},
+    {"coverage": "Additional insured requirement", "minimum": "All policies (except workers comp) must name franchisor, affiliates, officers, directors, shareholders, members, managers, employees, successors, and assigns as additional insured or loss payee; waiver of all subrogation rights; primary and non-contributory basis; insurer must defend both franchisee and franchisor", "page_ref": "94"}
+  ],
+  "dispute_resolution_detail": {
+    "choice_of_law": {"clause": "23.1", "text_summary": "North Carolina law, without reference to conflict of laws principles", "page_ref": "115"},
+    "mediation_required_before_arbitration": {"clause": "23.6.1", "text_summary": "Before franchisee or its owners/affiliates and franchisor or its affiliates may bring an Action, parties must first meet to mediate. Mediation is non-binding. Mediator must have franchise law experience; AAA mediation rules.", "page_ref": "116-117"},
+    "injunctive_carveout": {"clause": "23.7", "text_summary": "Franchisor at its option may immediately (without first seeking mediation or arbitration) seek preliminary injunctive relief; nothing bars franchisor's right to obtain injunctive relief, restraining orders, preliminary and permanent injunctions against threatened conduct", "page_ref": "117"},
+    "jury_trial_waiver": {"clause": "23.x", "text_summary": "Parties irrevocably waive trial by jury in any Action", "page_ref": "115-116"}
+  },
+  "relationship_and_standard_of_care": [
     {
-      "id": "CB-28",
-      "clause": "FA §13.6 — Licenses and Permits",
-      "burden": "Franchisee solely responsible for securing and maintaining all licenses, permits, certificates for operation. Franchisor makes no representation regarding legal requirements.",
-      "source_pages": [86],
-      "risk_level": "medium"
+      "clause": "21.1 Relationship",
+      "text_summary": "Agreement is purely a contractual relationship; does not appoint or make franchisee an agent, legal representative, joint venturer, partner, employee, servant, or independent contractor of franchisor. Franchisee may not represent itself as franchisor's agent",
+      "page_ref": "110",
+      "burden_type": "no_agency_no_joint_employer"
     },
     {
-      "id": "CB-29",
-      "clause": "FA §24.10 — Anti-Terrorism / OFAC Compliance",
-      "burden": "Franchisee represents and warrants not a Specially Designated National, Blocked Person, or engaged in/supporting terrorism. Ongoing compliance required.",
-      "source_pages": [120],
-      "risk_level": "low"
+      "clause": "21.2 Standard of Care",
+      "text_summary": "Agreement does not establish a fiduciary relationship. Unless otherwise specifically provided, whenever Agreement requires franchisor's written consent or permits franchisor to take or refrain from action, franchisor is free to act in its own self-interest without any obligation to act reasonably, to consider impact on franchisee, or to act subject to any other standard of care limiting franchisor's right, except as may be provided by statute or regulation. No covenant of good faith and fair dealing shall be implied into this Agreement except to the extent required by law.",
+      "page_ref": "110",
+      "burden_type": "no_good_faith_covenant_explicit_disclaimer"
     }
   ],
-  "estoppel_certificate_obligation": [
-    {
-      "id": "CB-30",
-      "clause": "Not directly surfaced as a standalone obligation",
-      "burden": "No explicit estoppel certificate clause was identified in the FA text. However, the Lease Rider (Schedule 3) contains provisions where landlord acknowledges franchisor's rights, which may functionally serve as an estoppel-like mechanism.",
-      "source_pages": null,
-      "risk_level": "none_found"
-    }
-  ],
-  "indemnification_burden": [
-    {
-      "id": "CB-31",
-      "clause": "FA §21.3 — Comprehensive Indemnification",
-      "burden": "Franchisee, owners, and guarantors must indemnify and hold harmless franchisor from all losses, damages, fines, costs, attorneys' fees, and liabilities arising from: (a) personal/bodily injury at premises, (b) employee bodily injury, (c) ownership/operation, (d) lease breach, (e) law violations, (f) FA breach, (g) defamation, (h) acts/omissions, (i) product recalls, (j) misconduct, (k) data breaches, (l) failure to warn, (m) labor/employment disputes including joint-employer claims, (n) third-party claims.",
-      "source_pages": [110],
-      "risk_level": "high"
-    },
-    {
-      "id": "CB-32",
-      "clause": "FA §21.3 — Franchisor Control of Defense",
-      "burden": "Franchisor may take corrective/remedial actions without notice. May control defense and settlement at franchisee expense. Franchisee must reimburse all costs immediately on request. Franchisee may not settle without franchisor consent.",
-      "source_pages": [111],
-      "risk_level": "high"
-    }
-  ],
-  "dispute_resolution_mechanics": [
-    {
-      "id": "CB-33",
-      "clause": "FA §23.4 — Limitation of Damages",
-      "burden": "Punitive/exemplary damages waived. Consequential damages waived by franchisee. Franchisee's contract damages capped at refund of franchise fee plus royalty fees. 1-year statute of limitations on all franchisee claims.",
-      "source_pages": [115],
-      "risk_level": "high"
-    },
-    {
-      "id": "CB-34",
-      "clause": "FA §23.5 / §23.8 — Jury Trial and Class Action Waiver",
-      "burden": "Both parties irrevocably waive jury trial. Both waive class action rights. Arbitration on individual basis only. Franchisor has absolute right to refuse consent to multi-party actions.",
-      "source_pages": [115, 117],
-      "risk_level": "high"
-    },
-    {
-      "id": "CB-35",
-      "clause": "FA §23.6 — Mediation then Arbitration",
-      "burden": "Mediation first (60-day window, confidential, split costs). Then binding arbitration in Charlotte, NC under Federal Arbitration Act / AAA Commercial Rules. One arbitrator with 10+ years franchise law experience. Final, binding, non-appealable. Franchisor may seek injunctive relief in court without obligation to post bond.",
-      "source_pages": [116, 117],
-      "risk_level": "high"
-    }
-  ],
-  "lease_rider_burdens": [
-    {
-      "id": "CB-36",
-      "clause": "Schedule 3, §5 — Option to Lease",
-      "burden": "On termination/non-renewal/expiration of FA or lease, franchisor or another Ivybrook franchisee has option to lease premises on same terms. Landlord must give franchisor notice of lease default/non-renewal.",
-      "source_pages": [127],
-      "risk_level": "medium"
-    },
-    {
-      "id": "CB-37",
-      "clause": "Schedule 3, §4 — Franchisor Cure Rights",
-      "burden": "If franchisee fails to cure lease default, landlord must grant franchisor identical cure period before exercising remedies.",
-      "source_pages": [127],
-      "risk_level": "medium"
-    },
-    {
-      "id": "CB-38",
-      "clause": "Schedule 3, §6 — De-identification",
-      "burden": "Franchisor may enter premises to remove signs, decor, materials bearing marks. Franchisee bears all costs if franchisor must perform de-identification.",
-      "source_pages": [128],
-      "risk_level": "low"
-    }
-  ],
-  "standard_of_care_and_no_fiduciary": [
-    {
-      "id": "CB-39",
-      "clause": "FA §21.2 — Standard of Care",
-      "burden": "No fiduciary relationship. Franchisor may act in own self-interest without obligation to act reasonably or consider impact on franchisee (unless required by statute). No implied covenant of good faith and fair dealing except as required by law, and if implied, does not impose obligations inconsistent with FA or permit franchisee to claim lost future profits.",
-      "source_pages": [109],
-      "risk_level": "high"
-    }
-  ],
-  "telephone_digital_assignment": [
-    {
-      "id": "CB-40",
-      "clause": "Schedule 4 — Internet/Social Media/Telephone Assignment",
-      "burden": "On termination/expiration: all phone numbers (including personal cell), directory listings, email addresses, online presences, social media accounts, and all content assigned to franchisor. Irrevocable power of attorney for 2 years. Coupled with an interest. Cannot be revoked even on incapacity.",
-      "source_pages": [130, 131],
-      "risk_level": "high"
-    }
-  ]
+  "non_compliance_auto_charge_stack": {
+    "summary": "Franchisee is exposed to a cumulative stack of franchisor-initiated charges that can run concurrently: (1) 1.5% per month late interest (3.9); (2) $1,000/week noncompliance fee (3.10); (3) Up to $1,000 per incident late reporting fine (12.9); (4) Cure-cost markup of franchisor out-of-pocket + internal allocation + 10% (Item 6); (5) Audit cost recovery of $1,500–$5,000 plus franchisor's right to apply any franchisee payment to any past-due indebtedness in any priority (3.11); plus (6) all collection costs and attorneys' fees",
+    "page_refs": ["62 (FA 3.9-3.12)", "14 (Item 6 table)", "83 (FA 12.9)"]
+  }
 }

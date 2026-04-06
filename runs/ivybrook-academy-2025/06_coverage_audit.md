@@ -1,64 +1,65 @@
-# Coverage Audit — Ivybrook Academy FDD (637976-2025)
+# 06 Coverage Audit — Ivybrook Academy 2025 (Shadow Fresh)
 
-## A. Covered Completely
+## A. Covered completely
 
-- **Front matter and special risks:** Cover page, How to Use, Special Risks (4 risks identified), Michigan provisions — all fully extracted.
-- **Items 1–4:** Identity, business experience, litigation (none), bankruptcy (none) — fully extracted.
-- **Item 5 — Initial fees:** All fee types, amounts, refund policies, MUDA fees — complete.
-- **Item 6 — Other fees:** Full 25+ row fee table with all notes. Gross Revenue definition. All fee attributes captured.
-- **Item 7 — Initial investment:** Both single-unit and MUDA tables with all 13 notes — complete.
-- **Item 8 — Supplier control:** Designated suppliers, affiliate supplier (Catapult/Student Hub), approval process, rebate disclosure — complete.
-- **Item 9 — Franchisee obligations:** Table fully extracted.
-- **Item 10 — Financing:** No financing — confirmed.
-- **Item 12 — Territory:** Definition, protected rights, reserved rights, channel restrictions, encroachment carveouts — complete.
-- **Item 13 — Trademarks:** Registered marks, no infringement, no pending proceedings — complete.
-- **Item 14 — IP:** 7 copyright registrations, innovation assignment, confidentiality — complete.
-- **Item 15 — Owner participation:** CEO 20hrs/week first year, School Administrator 40hrs/week, 10% ownership requirement — complete.
-- **Item 17 — Legal burden:** Full franchise relationship table (provisions a–w). Term, renewal, termination, transfer, noncompete, dispute resolution — all complete.
-- **Item 18 — Public figures:** No public figures — confirmed.
-- **Item 19 — All material tables and notes:** Table 1 (revenue streams), Table 2A (affiliate EBITDA), Table 2B/2C (franchisee EBITDA 2yr+/3yr+), Table 3 (revenue by classroom) — all complete with notes.
-- **Item 20 — Outlet tables:** Tables 1–5 all fully extracted. Systemwide summary, transfers, franchised status, company-owned status, projected openings — all complete.
-- **Item 22 — Contracts:** Contract list identified.
-- **Item 23 — Receipt:** Reference confirmed.
-- **Exhibits A (FA), B (Addenda), C (MUDA), D (Admins), E (Agents), F (Guaranty), G (Release), H (NDA/NCA), I (Manual TOC), L (Franchisee list), M (Receipt):** All extracted at appropriate depth.
-- **State addenda:** Illinois (fee deferral, governing law, venue), Minnesota (termination notice, trademark protection, release, jury trial), Michigan (front matter) — complete.
-- **Franchisee lists:** Open schools, not-yet-opened, former franchisees, ceased communication — all extracted.
-- **Guaranty:** Unlimited personal guaranty — fully extracted.
+- Front matter: cover page, Special Risks (4 risks), "How to Use" Q&A, "What You Need to Know About Franchising Generally", Michigan front-matter cover provisions, Table of Contents.
+- Item 1: franchisor identity, formation, affiliates, Crux/HoldCo/OpCo acquisition on August 29, 2025, Catapult affiliate technology role.
+- Item 2: executive biographies (Drew McWilliams, Jennifer McWilliams, Daniela McElhaney, Katherine Bell, Amy Cowan, Jason Barclay).
+- Item 3 Litigation: directly surfaced — none.
+- Item 4 Bankruptcy: directly surfaced — none.
+- Item 5: initial fee stack (franchise fee, second-unit fee, third-unit fee, transfer training fee, real estate coordination, training & opening support, décor package) and MUDA mechanics.
+- Item 6: full Other Fees table with 29 distinct fee lines, Notes 1 and 2.
+- Item 7: single-unit investment table with all 15 line items and Notes 1–13; MUDA investment table; totals.
+- Item 8: supplier control 70%–90% range, exclusive franchisor/affiliate suppliers, designated supplier categories, approved supplier process and $500 fee, 2024 supplier rebates ($33,821) and Catapult revenue ($36,000), insider real estate conflict, mandatory NAEYC/NAREA/BBB memberships.
+- Item 9: cross-reference obligations table.
+- Item 10: no financing — directly surfaced.
+- Item 11: pre-opening obligations, timeline to open (6–18 months with termination right at 18), during-operation obligations, optional support, Brand Fund description and % of spend table, Franchisee Advisory Council, advertising cooperative, technology description and data-access right, manual description, training program table.
+- Item 12: territory size rule (lesser of 125,000 population or 3-mile radius), exclusivity language, all franchisor reserved rights, channel restrictions on franchisee.
+- Item 13: trademark registrations table.
+- Item 14: copyright registrations table, trade secret/confidentiality framework, Innovations assignment clause, Customer List ownership clause.
+- Item 15: CEO 20 hrs/week in year 1, 10% minimum ownership; School Administrator 40 hrs/week on-premises; NDA/noncompete signing requirement.
+- Item 16: brick-and-mortar only; no internet/mail/telemarketing; franchisor right to set required products, new products, prices.
+- Item 17: complete relationship provisions table a through w, including detailed curable and non-curable default enumeration, post-term obligations, ROFR, death/disability, in-term and post-term noncompete, dispute resolution.
+- Item 18: no public figures — directly surfaced.
+- Item 19: all five tables (1, 2A, 2B, 2C, 3) with all line items, notes 1–6, sample definitions, and benchmarking statements.
+- Item 20: all five tables (system-wide summary, transfers, state-by-state status, company-owned status, projected openings), with physical Exhibit L (franchisee list, schools not yet opened, former franchisees, ceased-communication franchisees) directly surfaced.
+- Item 22: contracts list.
+- Item 23: receipt pointer.
+- Exhibits A–I (except J): directly surfaced in extracted text including Franchise Agreement body, state addenda (IL, MN, VA), MUDA + Ohio rider, state administrators list, state agents list, Unlimited Guaranty, General Release, two Exhibit H agreements, Brand Standards Manual TOC cover page.
+- State Effective Dates page.
+- Exhibit M Receipt form.
 
-## B. Covered Partially
+## B. Covered partially
 
-- **Item 11 — Training/technology burden:** Narrative content fully extracted. Training program table (if one exists as a structured table) was not clearly delineated in the text extraction — the training description is narrative rather than tabular. Brand Fund expenditure breakdown table extracted. Technology requirements fully described. This is partial only because a formal training program table (hours/subjects) may exist but was not surfaced as a structured table.
-- **Item 16 — Restrictions on what franchisee may sell:** Content extracted from p. 38 but the section is brief and primarily references the manual. Sufficient for canonical purposes.
-- **Pages 154–160:** Not mapped — may contain additional exhibit content between Exhibit G and Exhibit H.
+- **Item 21 Financial Statements**: item body is surfaced (one line, pointer to Exhibit J, FY end December, periods 2022–2024). Balance sheet, income statement, cash flow, equity statement, and auditor identity are not directly surfaced. Partial indirect coverage via Virginia addendum (stockholder's equity $345,862 at 12/31/2024) and Item 8 (2024 total revenue $2,171,363).
+- **Exhibit I Operations Manual TOC**: cover page is directly surfaced but the detailed section-by-section page count list referenced in Item 11 body is not enumerated in the extracted text.
+- **Item 19 cohort-size reconciliation**: two contradictory statements (18 vs 19 schools for the 3Y+ cohort). Preserved as contradiction.
 
-## C. Not Covered
+## C. Not covered
 
-- **Exhibit J — Financial statements (pp. 168–197):** 30 pages of scanned images. No text extractable. Auditor identity, financial highlights (revenue, net income, total assets, total liabilities, equity/deficit), going concern language, notes to financial statements — all unknown.
-- **Training program table:** If a formal table with subjects, hours, instructors, and locations exists within Item 11, it was not extracted as a structured table.
+- **Exhibit J content (pages 168–197)**: the entire 30-page audited financial statement section is image-only in this text extraction. No line items, notes to statements, auditor firm name, audit opinion, signature date, going-concern disclosure, subsequent events (including possible reference to the Aug 29, 2025 acquisition), or statement of cash flows are directly surfaced.
+- **Detailed Brand Standards Manual TOC** (page counts per section) referenced in Item 11 body.
 
-## D. Contradictions and Unresolveds Preserved Correctly
+## D. Contradictions and unresolveds preserved correctly
 
-- **C-01:** Table 3 (Item 19) says 19 schools vs Table 2C says 18 — preserved in contradictions.
-- **U-01:** Financial statements image-only — preserved.
-- **U-02:** Exhibit K labeling inconsistency — preserved.
-- **U-03:** 19 vs 18 school count — preserved.
-- **U-04:** Pages 154–160 unmapped — preserved.
-- **U-05:** Brand Fund audit status — preserved.
+All five preserved contradictions are captured in both `05_canonical.json` (contradictions list) and `02_reader_report.md` notes:
 
-All contradictions and unresolveds are correctly documented in canonical v1.
+1. Exhibit K vs Exhibit L labeling inconsistency across TOC, body, How-to-Use, and physical headers.
+2. Item 19 Table 2C = 18 schools vs Table 3 narrative = 19 schools (3Y+ cohort).
+3. Gross Revenue definitional difference between Item 6 Note 2 and Item 19 Note 3.
+4. How-to-Use Q&A references "Exhibit K" for financial statements, contradicting Item 21 body and TOC which place financials in Exhibit J.
+5. Item 11 stale reference to 2024 training calendar in a September 2025 amended document.
 
-## E. Highest-Risk Omissions
+## E. Highest-risk omissions
 
-1. **Financial statements (Exhibit J) — HIGH RISK.** The franchisor's own Special Risk #2 flags financial condition concerns. The Illinois Attorney General imposed a fee deferral requirement specifically due to financial condition. Without extractable financial statement data, we cannot assess revenue trends, net income/loss, total assets vs liabilities, members' equity position, going concern language, or auditor opinion. This is the single most material gap.
+1. **Exhibit J audited financial statements** — the cover page flags the franchisor's financial condition as a Special Risk, the Illinois addendum imposes fee deferral "due to our financial condition", the Virginia addendum discloses stockholder's equity below estimated initial investment, and an August 2025 PE acquisition was disclosed in Item 1. These signals make the actual content of Exhibit J (auditor identity, going-concern language, cash position, subsequent-events note) materially important for diligence, yet Exhibit J is image-only in this extraction.
+2. **State addenda scope gap** — only IL, MN, VA addenda are present; the FDD is filed in Wisconsin but has no Wisconsin-specific addendum even though WI is listed as Pending on the State Effective Dates page. This limits diligence for any prospect in WI, IN, or MI despite those states appearing in registration or Indiana being effective March 28, 2025.
+3. **Operations manual TOC section-by-section detail** — referenced as included in Exhibit I but not surfaced in a structured form.
 
-2. **Training program table — LOW RISK.** The narrative description of training is adequate for canonical purposes. A structured table would add precision but is not material.
+## F. Targeted retry tasks needed
 
-3. **Pages 154–160 content — LOW RISK.** Likely blank or continuation pages. Not material unless they contain additional state addenda or exhibit content not otherwise captured.
+- Retry 1: Page-render / OCR Exhibit J financial statements pages 168–197 to surface balance sheet, income statement, cash flow, equity statement, auditor identity, audit opinion text, and any going-concern or subsequent-events language.
+- Retry 2: Page-render Exhibit I (page 167) if the TOC of the Brand Standards Manual contains a section list with page counts not captured in text extraction.
+- Retry 3 (confirmation only): confirm the Exhibit K vs Exhibit L physical header labeling by re-reading pages 198–204 — already directly surfaced, no further action needed unless rendered output provides more clarity.
 
-## F. Targeted Retry Tasks Needed
-
-1. **Financial statement deep read** — Attempt to extract any text from Exhibit J pages using alternative methods or document the limitation definitively. If image-only is confirmed, note auditor and key figures as not_directly_surfaced.
-
-2. **Item 11 training table recovery** — Check if a structured training program table exists in the Item 11 section.
-
-3. **Pages 154–160 recovery** — Verify content of unmapped pages.
+No litigation, management/bankruptcy, guaranty chain, franchisee list, digital services, or broken-table retries are needed because all of those families are directly surfaced and internally consistent. Exhibit F (guaranty) and Exhibit H (restrictive covenants) are both directly surfaced.

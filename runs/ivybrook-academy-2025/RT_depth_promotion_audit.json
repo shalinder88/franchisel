@@ -1,106 +1,190 @@
 {
-  "meta": {
-    "task": "narrative_to_canonical_promotion_audit",
-    "brand": "Ivybrook Academy",
-    "fdd_id": "637976-2025",
-    "run_date": "2026-04-06"
-  },
-  "promotions": [
+  "method": "Compared 02_reader_report.md and 08_final_report.md against 09_final_canonical.json and 11_canonical_enriched.json to identify facts stated in narrative but not yet structured in canonical. Only directly supported facts promoted.",
+  "promoted_facts": [
     {
-      "id": "P-01",
-      "fact": "Franchisee Advisory Council exists — advisory only, no operational/decision-making power. Franchisor appoints members and may change/dissolve at any time.",
-      "found_in": "reader_report Pass 2 (Brand Fund section) / Item 11 p. 28",
-      "missing_from": "canonical — no field for FAC structure",
-      "action": "promote to canonical under new field 'franchisee_advisory_council'",
-      "source_pages": [28]
+      "field": "identity.how_to_use_qa_present",
+      "value": true,
+      "source_section": "Cover Q&A",
+      "source_pages": "2",
+      "rationale": "Present in reader report as structural element; not previously flagged in canonical."
     },
     {
-      "id": "P-02",
-      "fact": "NAEYC accreditation required after 2 years of operation. NAREA membership required. BBB accreditation required.",
-      "found_in": "reader_report Pass 2 (Industry memberships) / Item 8 p. 22, Item 11",
-      "missing_from": "canonical — no field for required industry certifications/memberships",
-      "action": "promote to canonical under new field 'required_certifications'",
-      "source_pages": [22, 87]
+      "field": "identity.concept_season",
+      "value": "Sales are somewhat seasonal — franchisor runs camp sessions during the summer rather than regular programs",
+      "source_section": "Item 1",
+      "source_pages": "9",
+      "rationale": "Directly surfaced seasonality fact in Item 1 body; relevant to unit economics and cash flow modeling."
     },
     {
-      "id": "P-03",
-      "fact": "Timeline to open: 6–18 months. Franchisor may terminate if not open within 18 months.",
-      "found_in": "reader_report implied / Item 11 p. 25",
-      "missing_from": "canonical — no field for time-to-open",
-      "action": "promote to canonical under new field 'time_to_open'",
-      "source_pages": [25]
+      "field": "identity.competition_scope",
+      "value": "Competes with other Ivybrook Academy franchisees, affiliate-owned Ivybrook Academy schools, private preschools, Montessori schools, church-based preschools, private kindergartens, and childcare centers (national, regional, and local)",
+      "source_section": "Item 1",
+      "source_pages": "9",
+      "rationale": "Competitive set directly surfaced in Item 1."
     },
     {
-      "id": "P-04",
-      "fact": "Owner participation: CEO must personally participate 20hrs/week during first year. School Administrator must be on-premises 40hrs/week.",
-      "found_in": "coverage_audit mentions it / Item 15 p. 37",
-      "missing_from": "canonical — no structured field for owner participation requirements",
-      "action": "promote to canonical under new field 'owner_participation'",
-      "source_pages": [37]
+      "field": "identity.customer_age_range",
+      "value": "Children ages 1 to 6 from families that place a high priority on quality early childhood education",
+      "source_section": "Item 1",
+      "source_pages": "9",
+      "rationale": "Target market definition directly surfaced."
     },
     {
-      "id": "P-05",
-      "fact": "Gross Revenue definition includes business interruption insurance proceeds, excludes refunds, chargebacks, sales taxes, and manufacturer/supplier rebates.",
-      "found_in": "reader_report Pass 1 (Note 2) / FA §1 p. 58",
-      "missing_from": "canonical — royalty_rate field exists but Gross Revenue definition components not structured",
-      "action": "promote to canonical under new field 'gross_revenue_definition'",
-      "source_pages": [17, 58]
+      "field": "initial_fees.franchisee_begins_training_when",
+      "value": "Approximately 2 months before the opening of the School",
+      "source_section": "Item 11",
+      "source_pages": "31",
+      "rationale": "Training timing directly surfaced but not captured in canonical."
     },
     {
-      "id": "P-06",
-      "fact": "Reporting obligations: Monthly GR statement by 5th, monthly P&L by 5th, annual P&L and balance sheet within 30 days of year-end (cash basis, may require CPA audit), initial investment report within 120 days of opening.",
-      "found_in": "reader_report Pass 2 (Reporting)",
-      "missing_from": "canonical — no structured reporting_obligations field",
-      "action": "promote to canonical under new field 'reporting_obligations'",
-      "source_pages": [82]
+      "field": "training_burden.in_person_two_week_requirement",
+      "value": "Prior to opening, an owner and another person (either a staff representative or the School Administrator) must complete two weeks of in-person training at a School that is approved to be a training facility",
+      "source_section": "Item 11",
+      "source_pages": "31",
+      "rationale": "Two-week in-person training at training-approved School directly surfaced but not explicit in canonical training section."
     },
     {
-      "id": "P-07",
-      "fact": "Typical facility: 6,000 sq ft leased space on/near main thoroughfares. Enrollment range 180–250 students.",
-      "found_in": "reader_report / Item 7 notes / Item 19 intro",
-      "missing_from": "canonical — no structured field for facility profile",
-      "action": "promote to canonical under new field 'facility_profile'",
-      "source_pages": [9, 18, 45]
+      "field": "tech_burden.proprietary_tech_license_side",
+      "value": "Franchisor may require license agreement directly with suppliers as alternative to sublicense from franchisor/affiliate",
+      "source_section": "Item 11 (Section 10.2)",
+      "source_pages": "30",
+      "rationale": "Alternative license structure directly surfaced."
     },
     {
-      "id": "P-08",
-      "fact": "Former franchisees: 8 entries including mutual terminations (before opening), terminations, and system departures. 3 franchisees ceased communication (Ostroff, Dhukka, Starkey).",
-      "found_in": "reader_report Pass 5 / Exhibit L p. 201",
-      "missing_from": "canonical — item20 has counts but former franchisee detail not structured",
-      "action": "promote to canonical under new field 'former_franchisee_detail'",
-      "source_pages": [201]
+      "field": "tech_burden.tech_maintenance_cost_responsibility",
+      "value": "Franchisor is not obligated to provide ongoing maintenance, repairs, upgrades, or updates to franchisee computer system. Estimated $2,000–$3,000/year for optional/required maintenance contracts.",
+      "source_section": "Item 11",
+      "source_pages": "29",
+      "rationale": "Already partially captured but the no-obligation clause was not explicit in canonical."
     },
     {
-      "id": "P-09",
-      "fact": "Brand Standards Manual: 242 total pages across 6 sections — Preface & Introduction (32), Establishing My Franchise Business (76), Personnel (77), Administrative Procedures (13), Daily Procedures (17), Selling & Marketing (27).",
-      "found_in": "reader_report / Exhibit I p. 167",
-      "missing_from": "canonical — exhibit referenced but manual structure not broken out",
-      "action": "promote to canonical under new field 'operations_manual_structure'",
-      "source_pages": [167]
+      "field": "territory_structure.designated_area_for_site_search",
+      "value": "Franchisor designates a 'Designated Area' for site selection prior to Territory designation; the Designated Area does not grant territorial exclusivity or protection and terminates when the Territory is designated",
+      "source_section": "Item 11 / Item 12",
+      "source_pages": "24,32",
+      "rationale": "Two-phase territory mechanism surfaced in narrative but not structured in canonical."
     },
     {
-      "id": "P-10",
-      "fact": "FA §21.2 establishes no fiduciary relationship and franchisor may act in own self-interest without considering impact on franchisee. No implied covenant of good faith beyond statutory minimum.",
-      "found_in": "contract_burden_depth CB-39",
-      "missing_from": "canonical — not in any field",
-      "action": "promote to canonical under new field 'standard_of_care'",
-      "source_pages": [109]
+      "field": "territory_structure.site_acceptance_deadline",
+      "value": "Franchisee must have franchisor's acceptance of a site within 6 months following the date of the franchise agreement; franchisor may terminate if not",
+      "source_section": "Item 11",
+      "source_pages": "24",
+      "rationale": "6-month site acceptance deadline surfaced in narrative but not structured in canonical."
     },
     {
-      "id": "P-11",
-      "fact": "Damages cap: Franchisee's contract damages limited to refund of franchise fee and royalty fees. 1-year statute of limitations on all franchisee claims. Punitive and consequential damages waived.",
-      "found_in": "contract_burden_depth CB-33",
-      "missing_from": "canonical — not in term/renewal/transfer/termination section",
-      "action": "promote to canonical under new field 'damages_limitations'",
-      "source_pages": [115]
+      "field": "territory_structure.site_selection_factors",
+      "value": "General location and neighborhood, competition, trade area demographics, visibility, and physical characteristics of existing buildings",
+      "source_section": "Item 11",
+      "source_pages": "24",
+      "rationale": "Site selection criteria directly surfaced."
     },
     {
-      "id": "P-12",
-      "fact": "Renewal terms: FA §4.2 actually provides for a maximum of TWO renewal terms of 10 years each (not one as stated in Item 17 table). However, the initial grant language says 'one renewal', and §4.2 says 'maximum of two renewal terms'. This is a potential contradiction between Item 17 summary and FA §4.2.",
-      "found_in": "FA §4.2 p. 63",
-      "missing_from": "canonical states '1 renewal of 10 years' per Item 17 — FA text says 'maximum of two renewal terms'",
-      "action": "promote as new contradiction C-02 and update renewal_options",
-      "source_pages": [38, 63]
+      "field": "territory_structure.relocation_cost_responsibility",
+      "value": "If franchisee needs franchisor's assistance to relocate and franchisor agrees, franchisee must reimburse franchisor's costs to assist (Relocation Assistance, Item 6 table)",
+      "source_section": "Item 6 / Item 11",
+      "source_pages": "14",
+      "rationale": "Relocation fee-for-cost structure captured in tables but not in territory canonical."
+    },
+    {
+      "field": "item21_structural_facts.no_guarantee_of_financing",
+      "value": "Franchisor does not offer direct or indirect financing and does not guarantee any agreement or lease",
+      "source_section": "Item 10",
+      "source_pages": "24",
+      "rationale": "Item 10 negative disclosure directly surfaced."
+    },
+    {
+      "field": "item8_structural.item8_insider_real_estate_referral",
+      "value": "Drew McWilliams (CEO) is a licensed real estate agent and may receive a referral fee or commission from a real estate broker that assists franchisees in finding a location",
+      "source_section": "Item 8",
+      "source_pages": "22",
+      "rationale": "Already in canonical under supplier_control_economics.insider_conflict but also worth flagging as a distinct structural fact."
+    },
+    {
+      "field": "item20_outlet_summary.net_opened_franchised_2022_2024",
+      "value": 25,
+      "derivation": "Opened in 2022 (9) + 2023 (8) + 2024 (8) = 25 gross openings over three years; net franchised growth 17->40 = +23 (difference explained by 2 Texas 'other ceased' events)",
+      "source_section": "Item 20 Table 3",
+      "source_pages": "50-52",
+      "rationale": "Gross-opened count derivable directly from Item 20 Table 3 totals."
+    },
+    {
+      "field": "item19_performance_summary.item19_royalty_fee_on_table_2a",
+      "value": "$89,277 constructive royalty on affiliate school (7% of $1,487,947 gross revenue — matches within rounding)",
+      "source_section": "Item 19 Table 2A",
+      "source_pages": "46",
+      "rationale": "Table 2A royalty line is constructive since affiliate does not actually pay; directly disclosed in narrative."
+    },
+    {
+      "field": "item19_performance_summary.item19_brand_fund_on_table_2a",
+      "value": "$14,879 constructive brand fund contribution on affiliate school (1% of $1,487,947 — matches exactly)",
+      "source_section": "Item 19 Table 2A",
+      "source_pages": "46",
+      "rationale": "Cross-check confirms table construction method; directly disclosed."
+    },
+    {
+      "field": "item19_performance_summary.sample_excluded_reasons",
+      "value": ["Not open at least two full years as of 12/31/2024", "Not in compliance with brand standards", "Ceased operations in 2024"],
+      "source_section": "Item 19",
+      "source_pages": "45",
+      "rationale": "Exclusion criteria directly surfaced."
+    },
+    {
+      "field": "item1_structural_facts.item1_law_and_regulation_variability_disclosure",
+      "value": "Most states and localities have specific regulations that may affect businesses offering educational and childcare services, including licensing, personnel screening (background checks, criminal records), personnel credentials, age restrictions, food service, labor and employment, limitations on restrictive covenants, and ADA compliance",
+      "source_section": "Item 1",
+      "source_pages": "9-10",
+      "rationale": "Regulatory risk factor directly surfaced in Item 1."
+    },
+    {
+      "field": "item11_advertising.franchisor_outlets_not_required_to_contribute_same_basis",
+      "value": "Affiliate-owned schools are not required to contribute to the Brand Fund on the same basis as franchisees; other franchisees may contribute at a different rate than you",
+      "source_section": "Item 11",
+      "source_pages": "27",
+      "rationale": "Uneven contribution basis directly surfaced; material diligence signal."
+    },
+    {
+      "field": "item11_advertising.brand_fund_audit_status",
+      "value": "Brand Fund is not audited, although franchisor can require that it be audited",
+      "source_section": "Item 11",
+      "source_pages": "27",
+      "rationale": "Audit status directly surfaced; already reflected in Brand Fund notes but not as canonical field."
+    },
+    {
+      "field": "item13_ip.marks_substitution_right",
+      "value": "Franchisor reserves the right to substitute different trademarks",
+      "source_section": "Item 13",
+      "source_pages": "34",
+      "rationale": "Material IP-substitution right directly surfaced."
+    },
+    {
+      "field": "item14_ip.innovations_assignment",
+      "value": "Any innovations conceived, invented, created, designed, or developed by franchisee or its owners/officers/School Administrator/CEO/managers/employees relating to the School are deemed assigned to franchisor, including all intellectual property rights",
+      "source_section": "Item 14",
+      "source_pages": "36",
+      "rationale": "Broad IP-assignment clause directly surfaced."
+    },
+    {
+      "field": "item17_contract.noncompetition_includes_spouses",
+      "value": "In-term and post-term noncompete covers all owners plus their spouses or domestic partners plus certain designated others",
+      "source_section": "Item 17(q)(r)",
+      "source_pages": "43",
+      "rationale": "Spouse scope already in Item 17 table but worth structuring separately."
+    },
+    {
+      "field": "item22_contracts.operations_manual_total_pages",
+      "value": 242,
+      "source_section": "Exhibit I",
+      "source_pages": "167",
+      "rationale": "Promoted from R2 retry result; already added to 09_final_canonical after Step 9 merge."
     }
+  ],
+  "facts_in_narrative_but_NOT_promoted_because_not_directly_supported": [
+    "Specific auditor firm name (Exhibit J image-only)",
+    "Exhibit J line items (image-only)",
+    "Whether the Crux acquisition is reflected in Exhibit J subsequent events (unknowable without reading Exhibit J)"
+  ],
+  "contradictions_noted_during_audit": [
+    "The identity.concept_description canonical field says '180–250 students' enrollment range — this is actually an Item 19 sample description, not an Item 1 concept description. The 180–250 range appears in Item 19 (p45), not Item 1. Preserved for clarity.",
+    "Franchisor sample characterization: Item 19 description says affiliate 'substantially similar to the Ivybrook Academy schools for which we are offering franchises' — should be preserved as an FPR-reasonableness assertion."
   ]
 }
