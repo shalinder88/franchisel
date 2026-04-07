@@ -1,0 +1,81 @@
+{
+  "enrichment_version": "v1",
+  "base_canonical_ref": "09_final_canonical.json",
+  "added_fields": {
+    "item19_chart_detail": {
+      "section_a_traditional_consolidated_distribution": {
+        "above_1_9M_pct": 29.1,
+        "1_7_to_1_9M_pct": 11.9,
+        "1_5_to_1_7M_pct": 15.5,
+        "1_3_to_1_5M_pct": 15.7,
+        "1_1_to_1_3M_pct": 14.2,
+        "0_9_to_1_1M_pct": 8.8,
+        "0_7_to_0_9M_pct": 4.1,
+        "below_0_7M_pct": 0.7
+      },
+      "section_a_nontraditional_franchisee_distribution": {
+        "above_1_9M_pct": 13.6,
+        "1_7_to_1_9M_pct": 6.5,
+        "1_5_to_1_7M_pct": 8.5,
+        "1_3_to_1_5M_pct": 11.9,
+        "1_1_to_1_3M_pct": 14.4,
+        "0_9_to_1_1M_pct": 15.3,
+        "0_7_to_0_9M_pct": 13.9,
+        "below_0_7M_pct": 15.9,
+        "bottom_quartile_aggregated_below_0_9M_pct": 29.8
+      },
+      "section_b_remodel_uplift_by_pre_remodel_sales": {
+        "below_0_7M": {"n": 8, "avg_uplift_pct": 17.0, "median_uplift_pct": 14.0, "avg_traffic_pct": 18.5},
+        "0_7_to_0_9M": {"n": 31, "avg_uplift_pct": 12.1, "median_uplift_pct": 13.3, "avg_traffic_pct": 10.5},
+        "0_9_to_1_1M": {"n": 92, "avg_uplift_pct": 20.3, "median_uplift_pct": 20.8, "avg_traffic_pct": 18.0},
+        "1_1_to_1_3M": {"n": 138, "avg_uplift_pct": 14.1, "median_uplift_pct": 13.0, "avg_traffic_pct": 12.4},
+        "1_3_to_1_5M": {"n": 181, "avg_uplift_pct": 10.5, "median_uplift_pct": 8.2, "avg_traffic_pct": 9.2},
+        "1_5_to_1_7M": {"n": 133, "avg_uplift_pct": 11.9, "median_uplift_pct": 11.4, "avg_traffic_pct": 11.0},
+        "1_7_to_1_9M": {"n": 112, "avg_uplift_pct": 11.5, "median_uplift_pct": 9.9, "avg_traffic_pct": 10.8},
+        "above_1_9M": {"n": 198, "avg_uplift_pct": 9.5, "median_uplift_pct": 9.4, "avg_traffic_pct": 8.9}
+      }
+    },
+    "item20_yearly_activity": {
+      "franchised_2022_to_2024": [-61, -352, -1116],
+      "company_owned_2022_to_2024": [-1, 88, 1039],
+      "carrols_acquisition_isolated_franchised_organic_change_2024": -93
+    },
+    "exhibit_structure": {
+      "exhibit_letters_count": 26,
+      "sub_exhibits_count_approx": 50,
+      "states_with_addenda_count": 11,
+      "states_with_addenda": ["CA", "HI", "IL", "MD", "MN", "NY", "ND", "RI", "SD", "VA", "WA"]
+    },
+    "item21_structural_facts": {
+      "auditor_tenure_years": 36,
+      "audit_opinion_type": "unqualified",
+      "consolidated_entity_audited": ["RBI", "RBILP"],
+      "bkc_standalone_audited": false,
+      "critical_audit_matters_count": 2,
+      "rbi_2024_revenue_growth_pct": 19.7,
+      "rbi_2024_net_income_change_pct": -15.9,
+      "rbi_2024_goodwill_plus_intangibles_pct_of_assets": 68.6
+    },
+    "item1_structural_facts": {
+      "franchisor_age_years": 4,
+      "predecessor_age_years": 68,
+      "internal_reorganization_year": 2022,
+      "international_franchised_total_eoy_2024": 12874
+    },
+    "item6_fee_attributes": {
+      "max_recurring_pct_of_gross_sales_excluding_rent": 11.0,
+      "royalty_pct": 4.5,
+      "advertising_pct": 4.5,
+      "investment_spending_max_pct": 2.0,
+      "digital_services_per_month_usd": 110,
+      "digital_services_pct_of_digital_sales": 1.0,
+      "digital_services_annual_cap_usd": 4500,
+      "bk_university_annual_usd": 700,
+      "bk_foundation_annual_usd": 1000,
+      "fuel_the_flame_4wall_ebitda_threshold_usd": 230000,
+      "fuel_the_flame_threshold_year": 2026,
+      "rtf2_failed_remodel_royalty_addon_pct": 3.0,
+      "incentive_program_count_active_or_referenced": 9
+    }
+  }
+}

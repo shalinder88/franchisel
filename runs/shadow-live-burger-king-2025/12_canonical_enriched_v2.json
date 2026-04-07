@@ -1,0 +1,113 @@
+{
+  "enrichment_version": "v2",
+  "base_canonical_ref": "11_canonical_enriched.json",
+  "added_fields": {
+    "item21_financial_structure_detail": {
+      "rbi_consolidated_2024_balance_sheet_usd_millions": {
+        "cash_and_equivalents": 1334,
+        "receivables_net": 698,
+        "inventories_net": 142,
+        "prepaids_and_other_current": 108,
+        "total_current_assets": 2282,
+        "ppe_net": 2236,
+        "operating_lease_assets_net": 1852,
+        "intangible_assets_net": 10922,
+        "goodwill": 5986,
+        "other_assets_net": 1354,
+        "total_assets": 24632,
+        "ap_and_drafts": 765,
+        "other_accrued": 1141,
+        "gift_card_liability": 236,
+        "current_portion_ltd_finance_leases": 222,
+        "total_current_liabilities": 2364
+      },
+      "rbi_consolidated_income_3yr_usd_millions": {
+        "supply_chain_sales": [2583, 2679, 2708],
+        "company_restaurant_sales": [236, 271, 1592],
+        "franchise_and_property_revenues": [2661, 2903, 2919],
+        "advertising_revenues": [1025, 1169, 1187],
+        "total_revenues": [6505, 7022, 8406],
+        "income_from_operations": [1898, 2051, 2419],
+        "interest_expense_net": [533, 582, 577],
+        "loss_on_early_extinguishment": [0, 16, 33],
+        "income_before_taxes": [1365, 1453, 1809],
+        "income_tax_expense": [-117, -265, 364],
+        "net_income": [1482, 1718, 1445],
+        "net_income_attributable_to_common": [1008, 1190, 1021],
+        "diluted_eps": [3.25, 3.76, 3.18]
+      },
+      "rbi_2024_revenue_mix_pct": {
+        "supply_chain_pct": 32.2,
+        "company_restaurant_pct": 18.9,
+        "franchise_property_pct": 34.7,
+        "advertising_pct": 14.1
+      }
+    },
+    "item21_statement_detail": {
+      "kpmg_audit_office": "Miami, Florida",
+      "kpmg_auditor_since": 1989,
+      "audit_report_date": "2025-02-21",
+      "icfr_unqualified": true,
+      "icfr_excluded_carrols": true,
+      "carrols_acquisition_date": "2024-05-16",
+      "carrols_total_assets_usd_millions": 1988,
+      "carrols_total_revenues_usd_millions": 1171,
+      "carrols_op_lease_assets_usd_millions": 705,
+      "carrols_op_lease_liabilities_usd_millions": 684,
+      "carrols_reacquired_franchise_rights_usd_millions": 363,
+      "firehouse_brand_intangible_usd_millions": 816,
+      "guarantor_default": "RBI",
+      "guarantor_states_rbilp": ["CA", "IL", "MD", "ND", "RI", "VA", "WA"],
+      "ca_addendum_unaudited_bkc_balance_sheet": true
+    },
+    "item6_fee_detail": {
+      "fa_d1_section_19_noncompete": {
+        "during_term_no_other_hamburger_business": true,
+        "post_term_duration_years": 1,
+        "post_term_radius_miles": 2,
+        "post_term_anchor": "the Premises",
+        "verbatim_source_pages": [220]
+      },
+      "dev_agmt_art_vii_noncompete": {
+        "post_term_duration_years": 1,
+        "post_term_radius_miles": 2,
+        "post_term_anchor": "any of your Burger King restaurants (multi-unit aggregate)"
+      },
+      "rent_bkl_detail": {
+        "min_annual_rent_pct_of_capitalized_costs": 10,
+        "rent_escalation_pct_per_5yr": 12,
+        "percentage_rent_low_pct": 8.5,
+        "percentage_rent_threshold_monthly_gross_sales_usd": 133333.33,
+        "percentage_rent_high_pct_above_threshold": 10,
+        "leased_property_rent_uplift_pct": 125
+      },
+      "multi_unit_dip_2024_royalty_schedule_pct_yr_1_to_6_plus": [2.5, 3.0, 3.5, 3.5, 4.0, 4.5],
+      "multi_unit_dip_2024_advertising_schedule_pct_yr_1_to_6_plus": [2.0, 2.5, 3.0, 3.0, 3.5, "Base Fee"],
+      "rtf2_successor_royalty_options_pct": [4.5, 5.0, 5.5, 6.0]
+    },
+    "item11_clause_confirmations": {
+      "media_floor_pct": 65,
+      "is_program_participation_supermajority_pct": 66.7,
+      "mod_manual_unilateral_change_right": true,
+      "ops_manual_pages_approx": 639,
+      "loyalty_program_name": "ROYAL PERKS",
+      "loyalty_currency": "Crowns",
+      "training_director": "Greg Moscetti (since June 2025)",
+      "background_check_fee_low_usd": 395,
+      "background_check_fee_high_usd": 15000
+    },
+    "item17_summary": {
+      "fa_term_years": 20,
+      "successor_terms_may_be_materially_different": true,
+      "no_successor_for_big_box_or_delivery": true,
+      "cross_default_cyc": true,
+      "cross_default_carrols": true,
+      "cross_default_rtf": true,
+      "rofr": true,
+      "death_disability_cure_months": 12,
+      "transfer_consent_during_first_5yr_cyc": "may withhold for any reason",
+      "transfer_consent_until_remodel_complete_carrols": "may withhold for any reason",
+      "general_release_required": true
+    }
+  }
+}

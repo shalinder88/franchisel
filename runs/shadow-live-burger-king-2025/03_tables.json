@@ -1,0 +1,340 @@
+{
+  "run_id": "shadow-live-burger-king-2025",
+  "tables": [
+    {
+      "id": "item1_affiliates_bk_intl",
+      "item": 1,
+      "source_pages": [11, 12],
+      "title": "BK International Affiliates and Restaurant Counts (12/31/2024)",
+      "columns": ["Affiliate", "Address", "Franchising Start Date", "Restaurant Count"],
+      "rows": [
+        ["Burger King Europe GmbH (BK Europe)", "Dammstrasse 23, 6300 Zug, Switzerland", "April 2006", "Franchised: 6,065"],
+        ["BK AsiaPac, Pte. Ltd. (BK APac) and affiliate", "8 Cross Street, Manulife Tower #28-01 to 07, Singapore 048424", "April 2006", "Franchised: 1,851 (BK APac affiliate acquired 1,188 in Feb 2025)"],
+        ["BK APAC IP GmbH (BKA IP)", "Inseliquai 12A, 6005 Luzern, Switzerland", "December 2023", "Franchised: 2,345"],
+        ["BK LAC IP GmbH (BKL IP)", "Inseliquai 12A, 6005 Luzern, Switzerland", "December 2023", "Franchised: 2,232"],
+        ["BK Canada Service ULC (BK Canada)", "130 King Street West, Ste 300, Toronto, Ontario M5X 1E1", "April 2016", "Franchised: 381"]
+      ],
+      "table_notes": "Other than these 5 affiliates, no BK affiliates offer franchises or provide products under BK Marks. Carrols LLC is a US affiliate that operates BK restaurants and may sell to franchisees under Carrols Refranchise Program but does not offer franchises."
+    },
+    {
+      "id": "item5_initial_fees",
+      "item": 5,
+      "source_pages": [29, 30, 31, 32, 33],
+      "title": "Initial Fees",
+      "columns": ["Fee", "Amount", "Notes"],
+      "rows": [
+        ["Application Fee", "$250 per individual / $5,000 per Entity", "Nonrefundable"],
+        ["Standard Franchise Fee (20-yr term)", "$50,000", "Prorated for shorter terms; minimum $15,000"],
+        ["MTRA Deposit", "$10,000 per Restaurant committed", "Credited against initial franchise fee on opening"],
+        ["TRA Deposit", "$5,000 per Restaurant committed", "Credited against initial franchise fee on opening"],
+        ["Development Agreement Prepayment", "$50,000 per Restaurant committed", "Credited against franchise fees as developed"],
+        ["Training Fee (per trainee)", "$7,500", "Payable before training begins"],
+        ["New franchisee training fee on transfer", "$7,500", "Payable on transfer to non-franchisee buyer"],
+        ["Reclaim the Flame 2 successor franchise fee (RTF2 program)", "$2,500/year per additional year purchased", "Term must total 20 years from remodel deadline"],
+        ["DIP A/B Grade reduced FA fee", "$25,000", "Restaurants opened by Dev Agmt grade A or B"],
+        ["DIP D/F Grade FA fee", "Base Fee (greater of $50,000 or current standard)", "Restaurants opened by Dev Agmt grade D or F"]
+      ],
+      "table_notes": "All fees nonrefundable except as expressly noted. Reclaim the Flame 2 Master Program Agreement, Crown Your Career Program, Carrols Refranchise Program (Term Sheet 5% Purchase Price Deposit) all governed by separate agreements. Two-year Multi-Unit New Development Incentive Program (2024) requires MTRA signed by 1/31/2024 for reduced royalty/ad rates."
+    },
+    {
+      "id": "item6_other_fees",
+      "item": 6,
+      "source_pages": [34, 35, 36, 37, 38, 39],
+      "title": "Other Fees (Item 6)",
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty", "4.5% of monthly Gross Sales", "10th day of next month", "Reduced under Multi-Unit DIP Y1-Y5: 2.5/3.0/3.5/3.5/4.0; FSS A/B reductions under Dev Agmt"],
+        ["Advertising", "Up to 4.5% of monthly Gross Sales", "10th day of next month", "Currently 4.5% as of 1/1/2025; Fuel the Flame program: 4.5% through 12/31/2026, then 4.0% if 4-Wall EBITDA <$230K"],
+        ["Rent (BKL)", "Varies; 10% of capitalized site costs vs % Gross Sales; +12% every 5 yrs", "1st of each month", "Plus percentage rent: 8.5% on monthly GS up to $133,333.33, 10% above"],
+        ["Building Improvement Payments (BKL)", "$500/month", "1st of each month", "Held by us for building improvement reimbursement"],
+        ["Service Desk Fee", "$750-$1,200/year per Restaurant", "On demand", "If centralized IT support provided"],
+        ["Late charges/interest", "Lesser of 18% per annum or max legal rate", "On demand", ""],
+        ["Crown Your Career late charges", "Promissory Note rate + 2%", "On demand", ""],
+        ["Stamp Tax (FL)", "$0.35 per $100", "On demand", "If we provide financing"],
+        ["Transfer of Interests", "$2,000 first Restaurant + $500 each additional + $175 weekend/holiday", "On sale/transfer", "Plus $2,000 Intercreditor Agreement fee"],
+        ["Application Fee", "$250 individual / up to $5,000 Entity", "On submission", ""],
+        ["Training Fees", "$7,500 per trainee", "Before training", ""],
+        ["Entity/LLC Fee", "Up to $5,000 per Entity + up to $1,000 per Restaurant transferred", "On conversion / submission", ""],
+        ["Franchise Extension Fee", "$2,500 annually", "On extension signing", "We are not obligated to extend or renew"],
+        ["Investment Spending (marketing)", "Up to 2.0% of Gross Sales", "10th of next month", "DMA-determined; Majority Clause provisions"],
+        ["Sales Transfer Study", "$3,000-$8,000 per Restaurant", "On vendor demand", ""],
+        ["Sales Impact Contribution", "Varies", "As agreed", "When development dispute arises"],
+        ["Gift Card Services", "$40/Restaurant set-up + ~1.8% transaction fee", "Paid via supplier", "BK Crown Card mandatory"],
+        ["BK University / Support & Training Material", "$700 annually per Restaurant", "On demand", ""],
+        ["Digital Services Fee", "$110/Restaurant/month + 1% of monthly digital sales (cap $4,500/yr)", "10th of next month", "Mobile app, website, third-party platforms; sole supplier BKC"],
+        ["Static Menu Board Kit", "$200-$300/month", "Monthly on demand", "If no outdoor digital menu board installed"],
+        ["Misc Reimbursements/Purchases/Services", "Varies (up to $25,000/person)", "As agreed", ""],
+        ["Follow-Up Walk-Thru", "$1,500", "On demand", "Failed remodel verification"],
+        ["One Time Cure Fee", "TRA: $10,000; MTRA: balance of FA fee × Restaurants not developed", "On schedule failure", ""],
+        ["Deferred Remodel Default Payments", "Royalty +1.5% to +3% (to 6.0% or 7.5%)", "Monthly", "If failed prior incentive remodel"],
+        ["Audit Expenses", "Cost of audit", "15 days after report", "If GS understated > 2%"],
+        ["Indemnity", "Losses + expenses incurred", "On demand", ""],
+        ["Costs and Attorneys' Fees", "Varies", "Immediately on notice", "+ $2,500 arbitration deposit"],
+        ["Background Check Fee", "$395-$15,000", "On demand", "$395 US, $500 Canada, $1,000-$15,000 international"],
+        ["Burger King Foundation", "$1,000 per Restaurant per year", "On demand", "Mandatory in-restaurant fundraise"],
+        ["Development Agreement Brand Damage Fee", "Remaining balance of prepaid franchise fees", "On demand", "If we terminate Dev Agmt"],
+        ["Development Agreement Indirect Tax", "Tax/duty/levy amount", "On demand", ""],
+        ["Product Testing/Inspections/Approval", "Up to $5,000", "On demand", "For new supplier approvals"],
+        ["Third-Party Food Safety/Brand Inspections", "Cost of inspection", "On demand", "If you fail or score non-passing"],
+        ["Resale Fee (Carrols Refranchise)", "$10,000 per Restaurant", "30 days after closing", ""],
+        ["Sublease Fee (Carrols Refranchise)", "Varies", "30 days after closing", "Reimbursement of landlord consent fees"]
+      ],
+      "table_notes": "Royalty/ad reductions detailed in Notes 2-3. Multi-Unit New Dev Incentive royalty schedule yr1-6+: 2.5%/3.0%/3.5%/3.5%/4.0%/4.5%. Reclaim the Flame 2 successor royalty options: 4.5%/5.0%/5.5%/6.0%. Failed RTF2 remodel: +3.0% royalty. Crown Your Career remodel: +1%-5%. BKE/BKS supplier ownership: officers own General Mills, J&J, Kraft Heinz, PepsiCo (Item 8)."
+    },
+    {
+      "id": "item7_initial_investment_traditional",
+      "item": 7,
+      "source_pages": [48],
+      "title": "Estimated Initial Investment — Traditional Freestanding Facility",
+      "columns": ["Expenditure", "Low", "High"],
+      "rows": [
+        ["Franchise Fee", "$50,000", "$50,000"],
+        ["New Franchisee Training Fee, Travel & Living", "$7,500", "$25,000"],
+        ["Real Property / Occupancy Charge", "$300,000", "$1,500,000"],
+        ["Civil & Architectural Drawings / Professional Fees", "$50,000", "$100,000"],
+        ["Zoning Expenses", "$5,000", "$40,000"],
+        ["Improvements / Construction", "$1,000,000", "$1,800,000"],
+        ["Landscaping", "$25,000", "$60,000"],
+        ["Equipment", "$250,600", "$304,600"],
+        ["Décor Package", "$48,000", "$95,000"],
+        ["Signage & Drive Thru", "$150,000", "$230,000"],
+        ["Pre-Opening Wages", "$67,100", "$72,500"],
+        ["Opening Inventory", "$6,400", "$12,800"],
+        ["Cash, Inventory Control & Order Taking System", "$20,000", "$25,000"],
+        ["Insurance", "$14,000", "$25,000"],
+        ["Working Capital / Additional Funds", "$45,000", "$90,000"],
+        ["Business Licenses, Utility Deposits, Lease Deposits", "$10,000", "$30,000"],
+        ["2-Story Interior Playground (optional)", "$0", "$245,000"],
+        ["BK University / Support & Training Material", "$600", "$700"],
+        ["TOTAL", "$2,049,200", "$4,705,600"]
+      ],
+      "table_notes": "All payments non-refundable. Working capital covers 3 months of start-up. Double Drive Thru required for all facility types except food courts, in-lines, indoor MRS, Big Box Retail. Real estate range $250K-$2M for unimproved freestanding land."
+    },
+    {
+      "id": "item7_initial_investment_nontraditional",
+      "item": 7,
+      "source_pages": [49, 50, 51, 52],
+      "title": "Estimated Initial Investment — Non-Traditional Facility Types",
+      "columns": ["Facility Type", "Total Low", "Total High"],
+      "rows": [
+        ["Co-Brand", "$896,200", "$1,682,800"],
+        ["In-Line / End Cap", "$944,800", "$1,942,800"],
+        ["Mall Food Court", "$655,720", "$1,131,700"],
+        ["Indoor MRS", "$348,400", "$789,100"],
+        ["Big-Box", "$564,600", "$979,100"]
+      ],
+      "table_notes": "Indoor MRS low ($348,400) is the absolute system minimum (matches cover page disclosure). Franchise fee for non-traditional ranges $15,000-$50,000 depending on facility type and term."
+    },
+    {
+      "id": "item8_supplier_economics",
+      "item": 8,
+      "source_pages": [56, 57],
+      "title": "Item 8 — Required Purchase Economics",
+      "columns": ["Metric", "Value"],
+      "rows": [
+        ["% of costs to establish a Restaurant from approved/specification suppliers", "65% to 90%"],
+        ["% of non-occupancy operating expenses from approved/specification suppliers", "30% to 60%"],
+        ["BKC revenues from required franchisee purchases/leases (FY2024)", "~$227 million"],
+        ["BKC total revenues (FY2024, unaudited internal)", "~$1.427 billion"],
+        ["Required-purchase revenue as % of total BKC revenues", "~16%"],
+        ["Supplier rebates contributed to ad fund as % of consolidated fund revenue (FY2024)", "~8.4%"]
+      ],
+      "table_notes": "RSI (Restaurant Services Inc.) is the not-for-profit independent purchasing co-op with 21-member Board (18 franchisee, 1 minority franchisee, 1 BKC, 1 independent). BKC officers own publicly traded shares of General Mills, J&J, Kraft Heinz, PepsiCo."
+    },
+    {
+      "id": "item11_advertising_fund_breakdown_2024",
+      "item": 11,
+      "source_pages": [70],
+      "title": "Advertising Fund Expenditures Fiscal 2024",
+      "columns": ["Category", "Consolidated %"],
+      "rows": [
+        ["Working Media", "79.22%"],
+        ["Production", "3.72%"],
+        ["Agency Fees", "6.60%"],
+        ["Point of Purchase Materials", "1.04%"],
+        ["Other (research, PR, brand delivery, competitive positioning, promotion development)", "9.42%"],
+        ["TOTAL", "100.00%"]
+      ],
+      "table_notes": "Franchise Agreement minimum: 65% on working media. Annual audited statements available to franchisees on request. NFA/FAC consultative role; FAC has audit right but no decision authority."
+    },
+    {
+      "id": "item11_training_program",
+      "item": 11,
+      "source_pages": [66, 67],
+      "title": "Training Program",
+      "columns": ["Subject", "Classroom/Online Hours", "On-Job Hours", "Location"],
+      "rows": [
+        ["New Franchisee Training (Brand Orientation, BKC Shift Cert, BK University Team Member, Foundations Shift Control)", "Up to 20 hours", "Up to 320 hours", "Training Restaurant / Online / Classroom"]
+      ],
+      "table_notes": "Mandatory before opening for Operating Partner/Managing Owner/Managing Director. ServSafe also required. $7,500 per trainee. IL requires classroom (no online cert). MOD Manual ~639 pages (Exhibit U). POS configuration: $20,000-$25,000 per Restaurant; ongoing software/maintenance $2,000-$4,000/yr; network $220-$450/month. Director of training: Greg Moscetti (since June 2025)."
+    },
+    {
+      "id": "item19_section_a_traditional_nontraditional",
+      "item": 19,
+      "source_pages": [99, 100],
+      "title": "Item 19 Section A — Sales Distributions Traditional & Non-Traditional (FY2024)",
+      "columns": ["Annual Sales Range", "Trad Consolidated", "Trad Company-Owned", "Trad Franchisee-Owned", "Non-Trad Franchisee-Owned"],
+      "rows": [
+        ["Above $1.9M", "29.1%", "31.3%", "28.6%", "13.6%"],
+        ["$1.7M-$1.9M", "11.9%", "13.6%", "11.5%", "6.5%"],
+        ["$1.5M-$1.7M", "15.5%", "18.6%", "14.8%", "8.5%"],
+        ["$1.3M-$1.5M", "15.7%", "15.8%", "15.7%", "11.9%"],
+        ["$1.1M-$1.3M", "14.2%", "13.1%", "14.5%", "14.4%"],
+        ["$0.9M-$1.1M", "8.8%", "5.0%", "9.6%", "15.3%"],
+        ["$0.7M-$0.9M", "4.1%", "2.5%", "4.4%", "13.9%"],
+        ["Below $0.7M", "0.7%", "0.1%", "0.9%", "15.9%"],
+        ["Average Sales", "$1,671,613", "$1,730,667", "$1,658,463", "$1,321,324"],
+        ["#/% Meeting or Exceeding Average", "2,503 / 43%", "453 / 43%", "2,050 / 43%", "288 / 39%"],
+        ["Median Sales", "$1,579,183", "$1,638,579", "$1,561,502", "$1,155,563"],
+        ["High Annual Sales", "$5,833,717", "$4,430,058", "$5,833,717", "$7,387,029"],
+        ["Low Annual Sales", "$271,485", "$629,239", "$271,485", "$208,320"]
+      ],
+      "table_notes": "Sample: 5,837 of 6,229 Traditional (4,774 franchised + 1,063 company); 775 of 874 Non-Traditional (741 franchised + 34 company). Excluded: 76 company + 161 franchised temporarily closed; 1 company + 109 franchised permanently closed; 2 company + 43 franchised opened in 2024. Operating range 1-70 years. Bottom-quartile Non-Traditional risk: 29.8% below $0.9M (15.9% below $0.7M)."
+    },
+    {
+      "id": "item19_section_a_fuel_cobranded",
+      "item": 19,
+      "source_pages": [101, 102, 103],
+      "title": "Item 19 Section A — Fuel Co-Branded Sales Distributions (FY2024)",
+      "columns": ["Category", "# Restaurants", "Avg Sales", "Median", "High", "Low"],
+      "rows": [
+        ["Full Size (≥2300 sf, 50-70 seats)", "59", "$1,446,035", "$1,362,734", "$2,720,903", "$594,316"],
+        ["Large (1500-2300 sf, 40-65 seats)", "135", "$1,256,658", "$1,150,439", "$3,511,921", "$303,213"],
+        ["Small (1200-1500 sf, 30-40 seats)", "34", "$1,281,881", "$1,183,684", "$2,891,810", "$592,161"],
+        ["Kiosk (200-1200 sf, 0-30 seats)", "83", "$973,531", "$883,223", "$2,437,687", "$234,399"]
+      ],
+      "table_notes": "All Fuel Co-Branded reported are franchisee-owned. 320 of 320 open full year. Excludes truck stops and gas stations at travel plazas on interstate highways."
+    },
+    {
+      "id": "item19_section_b_remodel_uplift",
+      "item": 19,
+      "source_pages": [105, 106, 107, 108, 109, 110],
+      "title": "Item 19 Section B — Remodel Sales/Traffic Uplift",
+      "columns": ["Cohort", "# Restaurants", "Avg Sales Uplift %", "Median Sales Uplift %", "Avg Traffic Uplift %"],
+      "rows": [
+        ["All Remodels (Full + Scrape & Rebuild)", "893", "12.3%", "10.7%", "11.1%"],
+        ["Full Remodel only", "840", "11.4%", "9.9%", "10.3%"],
+        ["Scrape & Rebuild", "53", "26.1%", "21.2%", "24.5%"],
+        ["No DT Conversion", "577", "10.3%", "9.7%", "9.4%"],
+        ["Conversion to Double DT", "316", "15.8%", "13.3%", "14.3%"],
+        ["Legacy → Modern Image", "705", "13.2%", "12.3%", "11.9%"],
+        ["20/20 Light → Modern Image", "177", "9.3%", "7.4%", "8.6%"],
+        ["Pre-remodel <$0.7M", "8", "17.0%", "14.0%", "18.5%"],
+        ["Pre-remodel $0.7M-$0.9M", "31", "12.1%", "13.3%", "10.5%"],
+        ["Pre-remodel $0.9M-$1.1M", "92", "20.3%", "20.8%", "18.0%"],
+        ["Pre-remodel $1.1M-$1.3M", "138", "14.1%", "13.0%", "12.4%"],
+        ["Pre-remodel $1.3M-$1.5M", "181", "10.5%", "8.2%", "9.2%"],
+        ["Pre-remodel $1.5M-$1.7M", "133", "11.9%", "11.4%", "11.0%"],
+        ["Pre-remodel $1.7M-$1.9M", "112", "11.5%", "9.9%", "10.8%"],
+        ["Pre-remodel >$1.9M", "198", "9.5%", "9.4%", "8.9%"],
+        ["Multi-year (3+ years post): Year 1", "629", "11.7%", "10.6%", null],
+        ["Multi-year (3+ years post): Year 2", "629", "12.3%", "12.0%", null],
+        ["Multi-year (3+ years post): Year 3", "629", "13.4%", "13.5%", null],
+        ["RTF Enrolled Full Remodel", "95", "14.7%", "11.7%", "14.0%"],
+        ["RTF Enrolled Scrape & Rebuild", "23", "26.5%", "14.0%", "23.2%"]
+      ],
+      "table_notes": "930 Traditional remodels with CAPEX ≥ $650K Jan 2018-Dec 2023; 893 in sample. Compared vs Control Restaurants (other Traditional in same DMA, similar seasonality, opened before 2016). Modern Image = Garden Grill, Pavilion, Sizzle. NOT a profit metric — sales uplift only."
+    },
+    {
+      "id": "item20_systemwide_outlet_summary",
+      "item": 20,
+      "source_pages": [112],
+      "title": "Item 20 Table 1 — Systemwide Outlet Summary",
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "7,053", "6,992", "-61"],
+        ["Franchised", "2023", "6,992", "6,640", "-352"],
+        ["Franchised", "2024", "6,640", "5,524", "-1,116"],
+        ["Company-Owned", "2022", "51", "50", "-1"],
+        ["Company-Owned", "2023", "50", "138", "+88"],
+        ["Company-Owned", "2024", "138", "1,177", "+1,039"],
+        ["Total Outlets", "2022", "7,104", "7,042", "-62"],
+        ["Total Outlets", "2023", "7,042", "6,778", "-264"],
+        ["Total Outlets", "2024", "6,778", "6,701", "-77"]
+      ],
+      "table_notes": "5/16/2024 RBI acquired Carrols Restaurant Group, Inc.: 1,023 franchised → company-owned. Net U.S. system contraction over 3 years: -403 outlets (5.7%). Franchisee count contraction is structural (Carrols reacquisition) plus organic ceasing-operations decline."
+    },
+    {
+      "id": "item20_table5_projected_openings",
+      "item": 20,
+      "source_pages": [124, 125, 126],
+      "title": "Item 20 Table 5 — Projected Openings Next Fiscal Year",
+      "columns": ["Metric", "Total US"],
+      "rows": [
+        ["Franchise Agreements Signed But Outlets Not Opened", "0"],
+        ["Projected New Franchised Outlets in Next Fiscal Year", "48"],
+        ["Projected New Company-Owned Outlets in Next Fiscal Year", "2"]
+      ],
+      "table_notes": "Per state breakdown: TX 6, NY 5, GA 4, NJ 4, PA 4, CA 3, AZ 2, FL 2, ID 2, IN 2, OK 2, UT 2, VA 2, MI 2 (company-owned), and 1 each in: AR, HI, KS, KY, MD, NM, NV, OR. Zero projected openings in many states."
+    },
+    {
+      "id": "item20_franchisee_lists",
+      "item": 20,
+      "source_pages": [126],
+      "title": "Item 20 — Exhibit O cross-reference",
+      "columns": ["Exhibit", "Content"],
+      "rows": [
+        ["O1", "List of US franchised Restaurants as of 12/31/2024 (pp 592-653)"],
+        ["O2", "List of BKC-owned Restaurants as of 12/31/2024 (pp 654-675)"],
+        ["O3", "List of Franchisees ceased operations / no communication within 10 weeks of issuance (pp 676-705) — count: 1,433"]
+      ],
+      "table_notes": "O3 count of 1,433 ceased/silent franchisees is a SIGNIFICANT churn indicator. NFA (National Franchisee Association) requested inclusion."
+    },
+    {
+      "id": "item21_rbi_balance_sheet",
+      "item": 21,
+      "source_pages": [808],
+      "title": "Item 21 — RBI Consolidated Balance Sheet (in $ millions)",
+      "columns": ["Line Item", "12/31/2024", "12/31/2023"],
+      "rows": [
+        ["Cash and cash equivalents", "$1,334", "$1,139"],
+        ["Accounts and notes receivable, net", "$698", "$749"],
+        ["Inventories, net", "$142", "$166"],
+        ["Prepaids and other current assets", "$108", "$119"],
+        ["TOTAL CURRENT ASSETS", "$2,282", "$2,173"],
+        ["Property and equipment, net", "$2,236", "$1,952"],
+        ["Operating lease assets, net", "$1,852", "$1,122"],
+        ["Intangible assets, net", "$10,922", "$11,107"],
+        ["Goodwill", "$5,986", "$5,775"],
+        ["Other assets, net", "$1,354", "$1,262"],
+        ["TOTAL ASSETS", "$24,632", "$23,391"],
+        ["Accounts and drafts payable", "$765", "$790"],
+        ["Other accrued liabilities", "$1,141", "$1,005"],
+        ["Gift card liability", "$236", "$248"],
+        ["Current portion of long-term debt and finance leases", "$222", "$101"],
+        ["TOTAL CURRENT LIABILITIES", "$2,364", "$2,144"]
+      ],
+      "table_notes": "RBI consolidates BKC, Tim Hortons, Popeyes, Firehouse Subs. Carrols acquisition (5/16/2024) added $705M operating lease assets, $684M operating lease liabilities, $363M reacquired franchise rights, $1,988M Carrols total assets, $1,171M Carrols total revenues. Firehouse Subs brand intangible: $816M (critical audit matter for impairment)."
+    },
+    {
+      "id": "item21_rbi_income_statement",
+      "item": 21,
+      "source_pages": [809],
+      "title": "Item 21 — RBI Consolidated Income Statement (in $ millions)",
+      "columns": ["Line Item", "FY2024", "FY2023", "FY2022"],
+      "rows": [
+        ["Supply chain sales", "$2,708", "$2,679", "$2,583"],
+        ["Company restaurant sales", "$1,592", "$271", "$236"],
+        ["Franchise and property revenues", "$2,919", "$2,903", "$2,661"],
+        ["Advertising revenues and other services", "$1,187", "$1,169", "$1,025"],
+        ["TOTAL REVENUES", "$8,406", "$7,022", "$6,505"],
+        ["Supply chain cost of sales", "$2,180", "$2,193", "$2,093"],
+        ["Company restaurant expenses", "$1,328", "$242", "$219"],
+        ["Franchise and property expenses", "$544", "$512", "$518"],
+        ["Advertising expenses and other services", "$1,330", "$1,273", "$1,077"],
+        ["G&A expenses", "$733", "$704", "$631"],
+        ["Income from operations", "$2,419", "$2,051", "$1,898"],
+        ["Interest expense, net", "$577", "$582", "$533"],
+        ["Loss on early extinguishment of debt", "$33", "$16", "$0"],
+        ["Income before income taxes", "$1,809", "$1,453", "$1,365"],
+        ["Income tax expense (benefit)", "$364", "($265)", "($117)"],
+        ["Net income", "$1,445", "$1,718", "$1,482"],
+        ["Net income attributable to common shareholders", "$1,021", "$1,190", "$1,008"]
+      ],
+      "table_notes": "RBI consolidated, not BKC standalone. Diluted EPS: $3.18 (2024) vs $3.76 (2023). Carrols acquisition drove jump in company restaurant sales from $271M to $1,592M."
+    }
+  ],
+  "totals": {
+    "tables_count": 16
+  }
+}

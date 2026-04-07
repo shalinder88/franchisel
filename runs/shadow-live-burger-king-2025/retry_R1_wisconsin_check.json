@@ -1,0 +1,13 @@
+{
+  "retry_id": "R1",
+  "task": "Verify presence/absence of Wisconsin-specific addendum in WI 637918 filing",
+  "method": "grep _pagetext/*.txt for 'Wisconsin'/'WISCONSIN'; enumerate state addenda in Exhibit P (pp 706-801)",
+  "result": {
+    "wisconsin_addendum_present": false,
+    "wisconsin_mentions_pages": [138, 653, 786, 1055],
+    "state_addenda_present": ["CA", "HI", "IL", "MD", "MN", "NY", "ND", "RI", "SD", "VA", "WA"],
+    "interpretation": "BK is registered in WI per HI addendum's state list (p786), but no state-specific Wisconsin addendum is included in Exhibit P. WI registration is satisfied via filing only, not via per-state contract overrides."
+  },
+  "status": "executed",
+  "blocking": false
+}
