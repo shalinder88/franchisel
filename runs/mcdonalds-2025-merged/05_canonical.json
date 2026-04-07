@@ -1,0 +1,936 @@
+{
+  "meta": {
+    "fdd_id": "638437-2025",
+    "brand": "McDonald's",
+    "franchisor_legal_name": "McDonald's USA, LLC",
+    "state_filed": "Wisconsin (WI-DFI)",
+    "extraction_date": "2026-04-05",
+    "canonical_version": "v1",
+    "pdf_pages": 389
+  },
+  "identity": {
+    "brand_name": {
+      "value": "McDonald's",
+      "source_object": "cover",
+      "source_section": "Cover page",
+      "source_pages": [1],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "franchisor_legal_name": {
+      "value": "McDonald's USA, LLC",
+      "source_object": "item1",
+      "source_section": "Item 1",
+      "source_pages": [9],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "franchisor_entity_type": {
+      "value": "Delaware limited liability company",
+      "source_object": "item1",
+      "source_section": "Item 1",
+      "source_pages": [9],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "parent_company": {
+      "value": "McDonald's Corporation (Delaware corporation)",
+      "source_object": "item1",
+      "source_section": "Item 1",
+      "source_pages": [9],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "principal_address": {
+      "value": "110 N. Carpenter Street, Chicago, Illinois 60607",
+      "source_object": "cover",
+      "source_section": "Cover page",
+      "source_pages": [1],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "phone": {
+      "value": "(630) 623-3000",
+      "source_object": "cover",
+      "source_section": "Cover page",
+      "source_pages": [1],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "website": {
+      "value": "www.mcdonalds.com",
+      "source_object": "cover",
+      "source_section": "Cover page",
+      "source_pages": [1],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "business_description": {
+      "value": "Quick service restaurant offering limited menu of value-priced foods using the McDonald's System",
+      "source_object": "cover",
+      "source_section": "Cover page",
+      "source_pages": [1],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "franchise_seller": {
+      "value": "McDonald's USA, LLC and Brad Bogan",
+      "source_object": "receipt",
+      "source_section": "Receipt",
+      "source_pages": [388],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "franchising_since": {
+      "value": "1955 (predecessor McDonald's Corporation)",
+      "source_object": "item1",
+      "source_section": "Item 1",
+      "source_pages": [10],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "percent_franchised_us": {
+      "value": "~95%",
+      "source_object": "item1",
+      "source_section": "Item 1",
+      "source_pages": [9],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "issuance_date": {
+    "value": "May 1, 2025, as amended February 1, 2026",
+    "source_object": "cover",
+    "source_section": "Cover page",
+    "source_pages": [1],
+    "confidence": "high",
+    "status": "confirmed"
+  },
+  "formats": {
+    "traditional": {
+      "value": "Full-menu freestanding/storefront/food court restaurants; 20-year term",
+      "source_object": "item1",
+      "source_section": "Item 1",
+      "source_pages": [9],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "satellite": {
+      "value": "Walmart, airports, universities, malls, hospitals, strip centers; term varies; scaled-down menu possible",
+      "source_object": "item1",
+      "source_section": "Item 1",
+      "source_pages": [9],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "small_town_oil": {
+      "value": "Full-menu restaurants sharing building with fuel station/convenience store; 10-year term",
+      "source_object": "item1",
+      "source_section": "Item 1",
+      "source_pages": [9],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "small_town_retail": {
+      "value": "Anchoring small retail center in rural communities; 10-year term",
+      "source_object": "item1",
+      "source_section": "Item 1",
+      "source_pages": [9],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "bfl": {
+      "value": "Business Facilities Lease; 3-year term with conditional option to purchase after year 1",
+      "source_object": "item1",
+      "source_section": "Item 1",
+      "source_pages": [9, 10],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "development_structure": {
+    "site_selection": {
+      "value": "McDonald's selects site, negotiates purchase or lease. Franchisee does not select or approve sites.",
+      "source_object": "item11",
+      "source_section": "Item 11 — Site Selection",
+      "source_pages": [33],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "real_estate_model": {
+      "value": "McDonald's owns or leases real estate, constructs building, subleases to franchisee via Operator's Lease",
+      "source_object": "item11",
+      "source_section": "Item 11",
+      "source_pages": [30, 33],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "initial_fees": {
+    "traditional_franchise_fee": {
+      "value": "$45,000",
+      "source_object": "T01_item5_initial_fees",
+      "source_section": "Item 5",
+      "source_pages": [18],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "sto_str_franchise_fee": {
+      "value": "$22,500",
+      "source_object": "T01_item5_initial_fees",
+      "source_section": "Item 5",
+      "source_pages": [18],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "satellite_franchise_fee": {
+      "value": "$500 (non-Walmart); $0 (Walmart)",
+      "source_object": "T01_item5_initial_fees",
+      "source_section": "Item 5",
+      "source_pages": [18],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "total_initial_investment_traditional": {
+      "value": "$1,471,000 to $2,728,000",
+      "source_object": "T04_item7_initial_investment",
+      "source_section": "Item 7",
+      "source_pages": [25],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "total_initial_investment_sto_str": {
+      "value": "$1,014,500 to $1,793,500",
+      "source_object": "T04_item7_initial_investment",
+      "source_section": "Item 7",
+      "source_pages": [25],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "total_initial_investment_satellite": {
+      "value": "$525,000 to $1,193,500",
+      "source_object": "T04_item7_initial_investment",
+      "source_section": "Item 7",
+      "source_pages": [25],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "store_systems_cost": {
+      "value": "$150,000 to $250,000",
+      "source_object": "item11",
+      "source_section": "Item 11 — Computer Systems",
+      "source_pages": [32],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "recurring_fees": {
+    "royalty": {
+      "value": "4% or 5% of Gross Sales",
+      "detail": "5% for new restaurants, McOpCo sales, ROFR transactions from Jan 1, 2024. 4% continues for existing franchisee transactions on existing restaurants.",
+      "source_object": "T02_item6_other_fees",
+      "source_section": "Item 6",
+      "source_pages": [18, 21],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "rent_percentage": {
+      "value": "Generally 6%–23% of Gross Sales for new/relocated traditional (opening on/after Jan 14, 2026); escalates to minimum 11.50% by year 8",
+      "source_object": "T02_item6_other_fees",
+      "source_section": "Item 6, note 3",
+      "source_pages": [21, 22],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "rent_base": {
+      "value": "Monthly Base Rent based on McDonald's investment in land/building acquisition and development, with finance factor applied",
+      "source_object": "T02_item6_other_fees",
+      "source_section": "Item 6, note 3",
+      "source_pages": [21],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "rent_pass_thru": {
+      "value": "Landlord rent escalations passed through to franchisee; no finance factor applied",
+      "source_object": "T02_item6_other_fees",
+      "source_section": "Item 6, note 3",
+      "source_pages": [21],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "advertising_minimum": {
+      "value": "Not less than 4% of Gross Sales annually",
+      "source_object": "T02_item6_other_fees",
+      "source_section": "Item 6",
+      "source_pages": [19],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "opnad_rate": {
+      "value": "Currently 2.25% of sales",
+      "source_object": "item11",
+      "source_section": "Item 11 — Advertising Programs",
+      "source_pages": [32],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "technology_fees_annual_total_estimate": {
+      "value": "Approximately $11,000+ per year (mandatory fees only)",
+      "detail": "Sum of Sesame $1,133, Mobile App $664, McDelivery $620, Kiosk $558, eProduction $47, Back Office $545, Payments $740, Employee Engagement $385, Deployment $2,529, Network $1,134, Hardware $951, RFM $690, Microsoft $707, GRNT $185, Edge $435, Store Mail $56.40. Optional fees (HHOT $50, PDW $167, McD Connect $250, Survey $62, Pricing $264) add up to $793.",
+      "source_object": "T02_item6_other_fees",
+      "source_section": "Item 6",
+      "source_pages": [19, 20, 21],
+      "confidence": "medium",
+      "status": "derived_from_individual_fees"
+    }
+  },
+  "supplier_control_economics": {
+    "required_purchase_establishment": {
+      "value": "Approximately 90%–95% of total purchases",
+      "source_object": "item8",
+      "source_section": "Item 8",
+      "source_pages": [28],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "required_purchase_operations": {
+      "value": "Approximately 55%–65% of overall purchases",
+      "source_object": "item8",
+      "source_section": "Item 8",
+      "source_pages": [28],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "franchisor_revenue_from_franchisees": {
+      "value": "$7.21 billion (68% of total revenue)",
+      "source_object": "item8",
+      "source_section": "Item 8",
+      "source_pages": [28],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "rebates_incentives_received": {
+      "value": "$39,008,767 in loan guarantee service fees, cashless incentives, and beverage supplier rebates (2024)",
+      "source_object": "item8",
+      "source_section": "Item 8",
+      "source_pages": [28],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "training_burden": {
+    "program_name": {
+      "value": "Candidate Development Program",
+      "source_object": "item11",
+      "source_section": "Item 11 — Training",
+      "source_pages": [34],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "duration": {
+      "value": "6 months to 2 years",
+      "source_object": "item11",
+      "source_section": "Item 11 — Training",
+      "source_pages": [34],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "location": {
+      "value": "Hamburger University (Chicago, IL), field office training centers, restaurant locations, online/virtual",
+      "source_object": "T05_item11_training",
+      "source_section": "Item 11 — Training Program table",
+      "source_pages": [35, 36],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "cost_to_franchisee": {
+      "value": "Travel, living, compensation expenses. No fee for core training at field office centers. Fees may apply for ongoing training.",
+      "source_object": "item11",
+      "source_section": "Item 11 — Training",
+      "source_pages": [34, 35],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "must_complete_before_signing": {
+      "value": true,
+      "source_object": "item11",
+      "source_section": "Item 11 — Training",
+      "source_pages": [34],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "tech_burden": {
+    "pos_system": {
+      "value": "Sesame (proprietary to McDonald's predecessor)",
+      "source_object": "item11",
+      "source_section": "Item 11 — Computer Systems",
+      "source_pages": [32],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "data_access": {
+      "value": "McDonald's has independent access to transaction-level data with no contractual limits",
+      "source_object": "item11",
+      "source_section": "Item 11 — Computer Systems",
+      "source_pages": [32],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "upgrade_obligations": {
+      "value": "No contractual limitations on frequency or cost of upgrades/updates",
+      "source_object": "item11",
+      "source_section": "Item 11 — Computer Systems",
+      "source_pages": [33],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "territory_structure": {
+    "exclusive_territory": {
+      "value": false,
+      "source_object": "item12",
+      "source_section": "Item 12",
+      "source_pages": [37],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "territory_description": {
+      "value": "Limited grant at specific address only. No exclusive grant, no protected territory. McDonald's may establish competing outlets, use Marks in any channel of distribution (e.g., McCafe in supermarkets/e-commerce).",
+      "source_object": "item12",
+      "source_section": "Item 12",
+      "source_pages": [37],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "encroachment_risk": {
+      "value": "Significant. McDonald's explicitly reserves right to develop restaurants that may alter customer trading patterns and affect sales of existing franchisee locations.",
+      "source_object": "item12",
+      "source_section": "Item 12",
+      "source_pages": [37],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "term_renewal_transfer_default_termination": {
+    "term_traditional": {
+      "value": "Generally 20 years",
+      "source_object": "T15_item17_franchise_relationship",
+      "source_section": "Item 17",
+      "source_pages": [39],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "term_sto_str": {
+      "value": "Generally 10 years",
+      "source_object": "T15_item17_franchise_relationship",
+      "source_section": "Item 17",
+      "source_pages": [39],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "term_satellite": {
+      "value": "Varies depending on location",
+      "source_object": "T15_item17_franchise_relationship",
+      "source_section": "Item 17",
+      "source_pages": [39],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "term_bfl": {
+      "value": "Generally 3 years with conditional option to extend to 20 years",
+      "source_object": "T15_item17_franchise_relationship",
+      "source_section": "Item 17",
+      "source_pages": [39, 42],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "renewal_right": {
+      "value": "No right to renew or extend",
+      "source_object": "T15_item17_franchise_relationship",
+      "source_section": "Item 17",
+      "source_pages": [40],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "new_term_policy": {
+      "value": "Discretionary; not part of Franchise Agreement; subject to change at McDonald's sole discretion (Exhibit K, effective Jan 1, 2025)",
+      "source_object": "EX_K",
+      "source_section": "Exhibit K",
+      "source_pages": [191, 192],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "transfer_conditions": {
+      "value": "Requires McDonald's approval. New franchisee qualifies, royalty increases to current fee, full liability assumed, transferor remains liable, no current breach. ROFR: McDonald's can match any offer.",
+      "source_object": "T15_item17_franchise_relationship",
+      "source_section": "Item 17",
+      "source_pages": [41],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "termination_for_cause": {
+      "value": "Non-curable defaults: failure to maintain standards, bankruptcy, non-payment >30 days, judgment >$5K for >30 days, loss of possession, franchise restriction violation, unauthorized products/transfer, denying access, misrepresentation, reputational damage, felony, intentional sales under-reporting, repeated breaches.",
+      "source_object": "T15_item17_franchise_relationship",
+      "source_section": "Item 17",
+      "source_pages": [40],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "post_termination_obligations": {
+      "value": "Within 30 days at McDonald's request: sell furniture/fixtures/signs/equipment at FMV (no intangible assets payment), return manuals, cease using McDonald's System/trademarks.",
+      "source_object": "T15_item17_franchise_relationship",
+      "source_section": "Item 17",
+      "source_pages": [40],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "noncompete": {
+    "during_term": {
+      "value": "No involvement in competing or similar business",
+      "source_object": "T15_item17_franchise_relationship",
+      "source_section": "Item 17",
+      "source_pages": [41],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "post_term": {
+      "value": "18 months, 10-mile radius (including after assignment or sale)",
+      "source_object": "T15_item17_franchise_relationship",
+      "source_section": "Item 17",
+      "source_pages": [41],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "litigation_summary": {
+    "pending_cases_count": {
+      "value": "7+ named cases plus numerous additional labor/joint-employer lawsuits",
+      "source_object": "item3",
+      "source_section": "Item 3",
+      "source_pages": [12, 13, 14],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "key_pending_cases": {
+      "value": [
+        "Deslandes v. McDonald's — no-poach class action (2017, survived Supreme Court cert denial)",
+        "Turner v. McDonald's — no-poach (2019)",
+        "Crawford v. McDonald's — racial discrimination by 77 former Black franchisees (2020)",
+        "Kytch v. McDonald's — ice cream machine device (2022)",
+        "Michell v. McDonald's — Hispanic franchisee discrimination (2024)",
+        "Williams v. McDonald's — E. coli class action from Quarter Pounder outbreak (2024)",
+        "Le v. McDonald's — McRib deceptive marketing (2025)"
+      ],
+      "source_object": "item3",
+      "source_section": "Item 3 — Pending Cases",
+      "source_pages": [12, 13, 14],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "concluded_cases_notable_settlements": {
+      "value": [
+        "Lentini — age discrimination, $22M (6 franchises purchased)",
+        "Washington — racial discrimination, $33.5M (13 franchises purchased)",
+        "Tavarua — ROFR dispute, $15.6M (8 franchises)",
+        "AA&S Food (Puerto Rico) — Law 75, $15.78M (23 franchises)",
+        "Byrd — racial discrimination, $6.5M (4 franchises)",
+        "Quijano (Puerto Rico) — $6.32M (10 franchises)",
+        "Ochoa — labor joint-employer, $3.75M"
+      ],
+      "source_object": "item3",
+      "source_section": "Item 3 — Concluded Cases",
+      "source_pages": [14, 15, 16, 17],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "bankruptcy_flag": {
+    "value": "None to disclose",
+    "source_object": "item4",
+    "source_section": "Item 4",
+    "source_pages": [18],
+    "confidence": "high",
+    "status": "confirmed"
+  },
+  "item18_public_figure_flag": {
+    "value": "McDonald's does not use any public figure to promote the franchise",
+    "source_object": "item18",
+    "source_section": "Item 18",
+    "source_pages": [42],
+    "confidence": "high",
+    "status": "confirmed"
+  },
+  "item19_performance_summary": {
+    "fpr_provided": {
+      "value": true,
+      "source_object": "item19",
+      "source_section": "Item 19",
+      "source_pages": [43],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "avg_sales_all_traditional": {
+      "value": "$4,002,000",
+      "source_object": "T07_item19_sales_summary",
+      "source_section": "Item 19",
+      "source_pages": [43],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "median_sales_all_traditional": {
+      "value": "$3,838,000",
+      "source_object": "T07_item19_sales_summary",
+      "source_section": "Item 19",
+      "source_pages": [43],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "avg_sales_franchised": {
+      "value": "$3,966,000",
+      "source_object": "T07_item19_sales_summary",
+      "source_section": "Item 19",
+      "source_pages": [43],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "median_sales_franchised": {
+      "value": "$3,797,000",
+      "source_object": "T07_item19_sales_summary",
+      "source_section": "Item 19",
+      "source_pages": [43],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "avg_sales_mcopco": {
+      "value": "$4,793,000",
+      "source_object": "T07_item19_sales_summary",
+      "source_section": "Item 19",
+      "source_pages": [43],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "pro_forma_oiboc_at_3m": {
+      "value": "$734,000 (24.5%)",
+      "source_object": "T06_item19_performance",
+      "source_section": "Item 19",
+      "source_pages": [44],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "pro_forma_oiboc_at_3_2m": {
+      "value": "$812,000 (25.4%)",
+      "source_object": "T06_item19_performance",
+      "source_section": "Item 19",
+      "source_pages": [44],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "pro_forma_oiboc_at_3_4m": {
+      "value": "$879,000 (25.9%)",
+      "source_object": "T06_item19_performance",
+      "source_section": "Item 19",
+      "source_pages": [44],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "cost_of_sales_pct": {
+      "value": "28.1%–28.3%",
+      "source_object": "T06_item19_performance",
+      "source_section": "Item 19",
+      "source_pages": [44],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "effective_rent_range": {
+      "value": "0.00% to 33.33% of Gross Sales",
+      "source_object": "item19",
+      "source_section": "Item 19, Note 3",
+      "source_pages": [45],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "item20_outlet_summary": {
+    "total_outlets_end_2024": {
+      "value": 13559,
+      "source_object": "T08_item20_table1_systemwide",
+      "source_section": "Item 20, Table 1",
+      "source_pages": [45],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "franchised_end_2024": {
+      "value": 12887,
+      "source_object": "T08_item20_table1_systemwide",
+      "source_section": "Item 20, Table 1",
+      "source_pages": [45],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "company_owned_end_2024": {
+      "value": 672,
+      "source_object": "T08_item20_table1_systemwide",
+      "source_section": "Item 20, Table 1",
+      "source_pages": [45],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "net_change_2024": {
+      "value": "+102",
+      "source_object": "T08_item20_table1_systemwide",
+      "source_section": "Item 20, Table 1",
+      "source_pages": [45],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "franchised_opened_2024": {
+      "value": 167,
+      "source_object": "T10_item20_table3_franchised_totals",
+      "source_section": "Item 20, Table 3",
+      "source_pages": [55],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "franchised_terminations_2024": {
+      "value": 29,
+      "source_object": "T10_item20_table3_franchised_totals",
+      "source_section": "Item 20, Table 3",
+      "source_pages": [55],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "franchised_non_renewals_2024": {
+      "value": 15,
+      "source_object": "T10_item20_table3_franchised_totals",
+      "source_section": "Item 20, Table 3",
+      "source_pages": [55],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "transfers_2024": {
+      "value": 843,
+      "source_object": "T09_item20_table2_transfers_total",
+      "source_section": "Item 20, Table 2",
+      "source_pages": [49],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "projected_openings_next_year": {
+      "value": "195 (181 franchised + 14 company-owned)",
+      "source_object": "T12_item20_table5_projected",
+      "source_section": "Item 20, Table 5",
+      "source_pages": [55],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "ceased_franchisees_count": {
+      "value": 113,
+      "source_object": "EX_S",
+      "source_section": "Exhibit S",
+      "source_pages": [381],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "franchisee_organizations": {
+      "value": "6 endorsed (NFLA, AMOA, MHOA, NBMOA, WON, OPN) + 1 independent (NOA)",
+      "source_object": "item20",
+      "source_section": "Item 20",
+      "source_pages": [55, 56],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "gag_clause_flag": {
+      "value": "In some instances, current and former franchisees sign provisions restricting their ability to speak openly about their experience with McDonald's.",
+      "source_object": "item20",
+      "source_section": "Item 20",
+      "source_pages": [55],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "item21_auditor_guaranty_financial_summary": {
+    "auditor": {
+      "value": "Ernst & Young LLP",
+      "source_object": "EX_A",
+      "source_section": "Exhibit A — Auditor Report",
+      "source_pages": [58],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "audit_report_date": {
+      "value": "March 14, 2025",
+      "source_object": "EX_A",
+      "source_section": "Exhibit A — Auditor Report",
+      "source_pages": [58],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "audit_opinion": {
+      "value": "Unqualified (clean opinion)",
+      "source_object": "EX_A",
+      "source_section": "Exhibit A — Auditor Report",
+      "source_pages": [58],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "going_concern": {
+      "value": false,
+      "source_object": "EX_A",
+      "source_section": "Exhibit A — Auditor Report",
+      "source_pages": [58],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "total_revenue_2024": {
+      "value": "$10,630.8 million",
+      "source_object": "T13_item21_income_statement",
+      "source_section": "Exhibit A — Income Statement",
+      "source_pages": [59],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "net_income_2024": {
+      "value": "$3,461.6 million",
+      "source_object": "T13_item21_income_statement",
+      "source_section": "Exhibit A — Income Statement",
+      "source_pages": [59],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "total_assets_2024": {
+      "value": "$22,195.3 million",
+      "source_object": "T14_item21_balance_sheet",
+      "source_section": "Exhibit A — Balance Sheet",
+      "source_pages": [60],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "members_equity_2024": {
+      "value": "$10,222.0 million",
+      "source_object": "T14_item21_balance_sheet",
+      "source_section": "Exhibit A — Balance Sheet",
+      "source_pages": [60],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "guaranty_structure": {
+      "value": "McDonald's Corporation (parent/predecessor) may guarantee loans from Bank of America, N.A. Guarantee fee 1.50% of average outstanding balance. Personal guarantee from franchisee and spouse required.",
+      "source_object": "item10",
+      "source_section": "Item 10",
+      "source_pages": [30],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  },
+  "key_exhibits": {
+    "value": "20 exhibits (A–T). Three franchise agreement forms (Traditional, Satellite, Walmart). Operator's Lease (Exhibit G, 33 pages). Loan documents with Unlimited Guaranty (Exhibit N, 35 pages). Franchisee list (Exhibit R, 144 pages). State addenda (Exhibit T).",
+    "source_object": "04_exhibits.json",
+    "source_section": "Exhibits index",
+    "source_pages": [8],
+    "confidence": "high",
+    "status": "confirmed"
+  },
+  "unresolveds": [
+    {
+      "issue": "Specific percentage rent rates for individual locations are not disclosed; described only as generally 6%–23%",
+      "source": "Item 6, note 3",
+      "severity": "medium"
+    },
+    {
+      "issue": "Co-investment cost per Quarter described as 'generally not less than $30,000' but precise calculation methodology uses standardized approach blending investment tiers and 8th-year Percentage Rent",
+      "source": "Item 6, note 4",
+      "severity": "low"
+    },
+    {
+      "issue": "BFL and Satellite rent structures determined on case-by-case basis; no standardized schedule disclosed",
+      "source": "Item 6, notes 6 and 8",
+      "severity": "medium"
+    },
+    {
+      "issue": "Internal development policies that affect new restaurant siting near existing franchisees are explicitly stated as not part of the Franchise Agreement and not creating contract rights",
+      "source": "Item 12",
+      "severity": "high"
+    },
+    {
+      "issue": "Some current and former franchisees have signed provisions restricting their ability to speak openly about their experience with McDonald's",
+      "source": "Item 20",
+      "severity": "medium"
+    }
+  ],
+  "contradictions": [
+    {
+      "issue": "Item 19 pro forma statements use 4% royalty rate, but new franchisees from Jan 1, 2024 pay 5% royalty. The pro forma data is based on the existing 11,332 franchisee restaurants that were paying the legacy 4% rate.",
+      "sources": ["Item 6 note 2", "Item 19"],
+      "severity": "high",
+      "note": "This is not a true contradiction but a material gap: prospective franchisees using 5% royalty should reduce the pro forma OIBOC by approximately 1% of sales (i.e., ~$30K–$34K at the pro forma sales levels)."
+    }
+  ],
+  "special_risks": {
+    "value": "Out-of-state dispute resolution in Illinois",
+    "source_object": "special_risks",
+    "source_section": "Special Risks page",
+    "source_pages": [4],
+    "confidence": "high",
+    "status": "confirmed"
+  },
+  "choice_of_law": {
+    "value": "Illinois (with specific exceptions)",
+    "source_object": "T15_item17_franchise_relationship",
+    "source_section": "Item 17",
+    "source_pages": [41],
+    "confidence": "high",
+    "status": "confirmed"
+  },
+  "financing": {
+    "guaranteed_lending": {
+      "value": "McDonald's Corporation may guarantee loans from Bank of America, N.A.",
+      "source_object": "item10",
+      "source_section": "Item 10",
+      "source_pages": [30],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "loan_rate": {
+      "value": "Term SOFR + 0.10% (SOFR adjustment) + 3.00% (APR 7.42% as of March 17, 2025)",
+      "source_object": "item10",
+      "source_section": "Item 10",
+      "source_pages": [30],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "loan_terms": {
+      "value": "3–5 year terms, 7-year amortization, no prepayment penalty",
+      "source_object": "item10",
+      "source_section": "Item 10",
+      "source_pages": [30],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "collateral": {
+      "value": "Restaurant equipment, seating, signage, decor, and inventory",
+      "source_object": "item10",
+      "source_section": "Item 10",
+      "source_pages": [30],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "personal_guarantee": {
+      "value": "Required from franchisee and spouse",
+      "source_object": "item10",
+      "source_section": "Item 10",
+      "source_pages": [30],
+      "confidence": "high",
+      "status": "confirmed"
+    },
+    "loan_default_cross_default": {
+      "value": "Default on loan is default under Franchise Agreement",
+      "source_object": "item10",
+      "source_section": "Item 10",
+      "source_pages": [30],
+      "confidence": "high",
+      "status": "confirmed"
+    }
+  }
+}

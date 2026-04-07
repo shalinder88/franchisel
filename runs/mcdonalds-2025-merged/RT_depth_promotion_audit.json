@@ -1,0 +1,205 @@
+{
+  "purpose": "Compare 02_reader_report.md and 08_final_report.md against 09_final_canonical.json. Identify facts that are in narrative but not structured in canonical, and promote them. Plus add the new facts surfaced by RT_depth_financial_notes.json and RT_depth_contract_burdens.json.",
+  "promotions": [
+    {
+      "field_path": "litigation_summary.recurring_settlement_buyout_pattern",
+      "from": "02_reader_report.md Pass 4 / 08_final_report.md Key surfaced facts",
+      "value": "McDonald's has settled multiple discrimination/age claims by repurchasing the franchisee's restaurants — pattern visible in Item 3: Lentini (NJ, age) $22M / 6 restaurants; Washington (OH, race) $33.5M / 13 restaurants; Byrd (IL, race) $6.5M / 4 restaurants; Tavarua (CA, ROFR) $15.6M / 8 franchises; AA&S Puerto Rico (Law 75) $15.78M / 23 franchises; Quijano Puerto Rico (Law 75) $6.32M / 10 franchises. Cumulative ≈ $99.7M across these 6 buyout-style settlements.",
+      "evidence_pages": [12, 13, 14, 15, 16, 17, 18]
+    },
+    {
+      "field_path": "item_21_financial_summary.parent_ip_royalty_rate_pct",
+      "from": "RT_depth_financial_notes.json related_party_transactions",
+      "value": 0.02,
+      "value_label": "2% of company-owned and franchised restaurant sales — paid by McDonald's USA, LLC to McDonald's Corporation under the IP license; royalty expense $1,069.4M (2024), $1,062.7M (2023), $975.8M (2022)",
+      "evidence_pages": [71]
+    },
+    {
+      "field_path": "item_21_financial_summary.intercompany_payables_to_parent_dec31_2024_usd_millions",
+      "from": "RT_depth_financial_notes.json related_party_transactions",
+      "value": 2400.0,
+      "value_label": "$1.5B + $0.9B intercompany lines of credit at 12-month swap + 1%, both fully drawn at Dec 31 2024 and 2023; matured Feb 17 2025",
+      "evidence_pages": [71]
+    },
+    {
+      "field_path": "item_21_financial_summary.subsequent_event",
+      "from": "RT_depth_financial_notes.json subsequent_events",
+      "value": "On February 17, 2025, the $2.4B of payable arrangements with McDonald's matured and were converted to equity; this no longer represents an obligation for the Company.",
+      "evidence_pages": [72]
+    },
+    {
+      "field_path": "item_21_financial_summary.tax_examination_window",
+      "from": "RT_depth_financial_notes.json income_taxes_note",
+      "value": "With few exceptions, no longer subject to U.S. federal, state, and local income tax examinations for years before 2009.",
+      "evidence_pages": [71]
+    },
+    {
+      "field_path": "item_21_financial_summary.unrecognized_tax_benefits_dec31_2024_usd_millions",
+      "from": "RT_depth_financial_notes.json income_taxes_note",
+      "value": 75.8,
+      "evidence_pages": [70]
+    },
+    {
+      "field_path": "item_21_financial_summary.effective_tax_rate_2024",
+      "from": "RT_depth_financial_notes.json income_taxes_note",
+      "value": 0.232,
+      "evidence_pages": [70]
+    },
+    {
+      "field_path": "item_21_financial_summary.future_minimum_rent_receivable_from_franchisees_total_usd_millions",
+      "from": "RT_depth_financial_notes.json franchise_arrangements_in_notes",
+      "value": 14159.0,
+      "value_label": "$14.16B undiscounted future minimum rent due from franchisees ($1.46B in 2025; $7.52B thereafter)",
+      "evidence_pages": [66]
+    },
+    {
+      "field_path": "item_21_financial_summary.lease_weighted_average_remaining_term_years_operating",
+      "from": "RT_depth_financial_notes.json leasing_arrangements_in_notes",
+      "value": 17,
+      "evidence_pages": [67]
+    },
+    {
+      "field_path": "item_21_financial_summary.lease_weighted_average_remaining_term_years_finance",
+      "from": "RT_depth_financial_notes.json leasing_arrangements_in_notes",
+      "value": 28,
+      "evidence_pages": [67]
+    },
+    {
+      "field_path": "item_21_financial_summary.advertising_costs_actual_company_owned_2024_usd_millions",
+      "from": "RT_depth_financial_notes.json advertising_costs",
+      "value": 94.9,
+      "evidence_pages": [65]
+    },
+    {
+      "field_path": "item_21_financial_summary.depreciation_useful_lives",
+      "from": "RT_depth_financial_notes.json property_and_equipment",
+      "value": {"buildings_years": "up to 40", "leasehold_improvements": "lesser of useful life or lease term", "equipment_years": "3 to 12", "capitalized_software_years": "3 to 10"},
+      "evidence_pages": [64]
+    },
+    {
+      "field_path": "item_21_financial_summary.long_lived_asset_impairment_grouping",
+      "from": "RT_depth_financial_notes.json long_lived_assets_impairment_policy",
+      "value": "Restaurant assets initially grouped at the field office level (not individual restaurant) for the annual fourth-quarter impairment review.",
+      "evidence_pages": [65]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.gross_sales_credit_sale_timing",
+      "from": "RT_depth_contract_burdens.json gross_sales_definition_detail",
+      "value": "Each charge or credit sale is treated as a sale at the FULL price in the month during which it is made, irrespective of when payment is actually received — accelerates royalty recognition for credit sales.",
+      "evidence_pages": [76]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.gross_sales_includes_orders_filled_elsewhere",
+      "from": "RT_depth_contract_burdens.json gross_sales_definition_detail",
+      "value": "Includes 'amounts of all orders taken or received at the Restaurant whether such orders be filled from the Restaurant or elsewhere' — captures delivery and other off-site fulfillment if originated at the restaurant.",
+      "evidence_pages": [76]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.delinquency_interest_rate_pct",
+      "from": "RT_depth_contract_burdens.json financial_obligations 8(c)",
+      "value": 0.15,
+      "value_label": "15% per annum (or highest rate allowed by law if greater), monthly compounded, on past-due amounts owed to McDonald's",
+      "evidence_pages": [77]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.eft_mandatory",
+      "from": "RT_depth_contract_burdens.json eft_auto_debit_mechanics",
+      "value": true,
+      "value_label": "FA Section 8(b) requires franchisee to participate in McDonald's automatic debit/credit transfer program at all times for all amounts due, and to execute and deliver such documents and instruments as necessary",
+      "evidence_pages": [77]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.attorneys_fees_recovery",
+      "from": "RT_depth_contract_burdens.json financial_obligations 23",
+      "value": "FA Section 23: McDonald's recovers reasonable attorneys' fees plus court costs and expenses of litigation when McDonald's institutes any enforcement action.",
+      "evidence_pages": [87]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.indemnification_obligation",
+      "from": "RT_depth_contract_burdens.json indemnification",
+      "value": "FA Section 24: Broad franchisee indemnity covering judgments, settlements, penalties, attorneys' fees, court costs and other expenses for any claim related to franchisee acts/omissions or any act on the Restaurant premises; franchisee defends McDonald's at McDonald's election.",
+      "evidence_pages": [87]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.fmv_purchase_option_on_termination",
+      "from": "RT_depth_contract_burdens.json appraisal_or_fair_market_value_transfer_mechanics",
+      "value": "FA Section 20(b)/(c): McDonald's has a 30-day FMV purchase option after termination on breach (with a 30-day no-removal freeze), and a pre-expiration 60-day no-removal window plus FMV purchase option on expiration or eminent domain — no payment for intangible assets in either case.",
+      "evidence_pages": [86]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.rofr_mechanics",
+      "from": "RT_depth_contract_burdens.json appraisal_or_fair_market_value_transfer_mechanics 15(c)",
+      "value": "FA Section 15(c): Franchisee must give McDonald's at least 20 days' prior written notice of intent to sell or transfer (with proposed purchaser identity and all offer terms); McDonald's has 10 days to elect to match; if McDonald's declines and the proposed sale doesn't close, the continuing first option applies to any subsequent offer.",
+      "evidence_pages": [83]
+    },
+    {
+      "field_path": "noncompete.in_term_includes_landlord",
+      "from": "RT_depth_contract_burdens.json non_compete_detail 11(a)",
+      "value": "FA Section 11(a) in-term non-compete explicitly extends to 'becoming a landlord for' any similar restaurant business — not merely to operating one. Public-company stock exception is <2%.",
+      "evidence_pages": [79]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.operating_hours_floor",
+      "from": "RT_depth_contract_burdens.json system_change_exposure 12(g)",
+      "value": "FA Section 12(g): 7 days per week, minimum 7:00 a.m.–11:00 p.m. (or such other hours as McDonald's may from time to time prescribe).",
+      "evidence_pages": [80]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.material_breach_judgment_threshold_usd",
+      "from": "RT_depth_contract_burdens.json tax_permit_or_indebtedness_burden 18(d)",
+      "value": 5000,
+      "evidence_pages": [85]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.public_conduct_political_carveout",
+      "from": "RT_depth_contract_burdens.json termination_default_supplement 18(o)",
+      "value": "FA Section 18(o) public-conduct material breach explicitly carves out 'legitimate political activity (including testifying, lobbying, or otherwise attempting to influence legislation).'",
+      "evidence_pages": [86]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.transferor_continuing_liability",
+      "from": "RT_depth_contract_burdens.json entity_or_guarantor_structure_requirement 15(d)",
+      "value": "FA Section 15(d): Transferring franchisee remains personally liable for all affirmative obligations for the full term (or shorter period at McDonald's sole discretion). Royalty resets automatically to then-prevailing rate.",
+      "evidence_pages": [83]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.insurance_minimums",
+      "from": "RT_depth_contract_burdens.json insurance_requirements_detail",
+      "value": {"WC_EL_limits_usd": "100,000 / 500,000 / 100,000", "CGL_limits_usd": "5,000,000 per occurrence / 5,000,000 aggregate", "carrier_rating_min": "A.M. Best Financial Size Category ≥ IX, Policyholders Rating A+ or A", "cancellation_notice_days": 30, "additional_insureds": "McDonald's and any party McDonald's designates"},
+      "evidence_pages": [82]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.cpa_audit_certification_obligation",
+      "from": "RT_depth_contract_burdens.json data_ownership_or_data_access_rights / financial_obligations",
+      "value": "FA Section 10: Annual P&L and balance sheet within 90 days of fiscal year close, GAAP, certifiable by CPA at McDonald's request, with franchisee bearing the CPA consultation cost. Audit threshold for franchisee bearing audit cost is 2% of Gross Sales understatement.",
+      "evidence_pages": [78]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.daily_and_monthly_reporting_cadence",
+      "from": "RT_depth_contract_burdens.json data_ownership_or_data_access_rights",
+      "value": "FA Section 10: Daily statement of receipts due by 11:00 a.m. CST first business day of each month; monthly operating statement and statistical report by 25th; 3-year retention; additional reports as McDonald's reasonably requests.",
+      "evidence_pages": [78]
+    },
+    {
+      "field_path": "term_renewal_transfer_default_termination.entity_assignment_constraint",
+      "from": "RT_depth_contract_burdens.json entity_or_guarantor_structure_requirement 15(b)",
+      "value": "FA Section 15(b): Franchisee may assign to a wholly-owned and controlled corporation; the corporate name may not include any McDonald's name or trademark; subsequent share transfers must comply with 15(a) and 15(d).",
+      "evidence_pages": [83]
+    }
+  ],
+  "facts_already_in_canonical_no_action": [
+    "5%/4% royalty bifurcation",
+    "$45,000 / $22,500 / $500 initial fees",
+    "Item 7 totals and Note 11 contradiction",
+    "Item 19 cohort and pro-forma figures",
+    "Item 20 system totals and 2024 outlet movements",
+    "8 pending litigation cases",
+    "no bankruptcy / no public figures",
+    "Exhibit T addenda inventory",
+    "Exhibit S 113 names",
+    "auditor / clean opinion / 2024 income statement totals",
+    "no exclusive territory",
+    "18-month / 10-mile non-compete (post-term)"
+  ],
+  "facts_added_to_canonical_via_this_pass": "See `field_path` entries in `promotions` above. Promoted into 09_final_canonical.json under item_21_financial_summary and term_renewal_transfer_default_termination keys, and noncompete.in_term_includes_landlord."
+}
