@@ -1,0 +1,85 @@
+{
+  "$extends": "11_canonical_enriched.json",
+  "enrichment_version": "v2",
+  "patches_from_a2": ["RT_depth_financial_notes.json", "RT_depth_contract_burdens.json", "RT_depth_promotion_audit.json", "RT_depth_state_addenda_promotion.json"],
+  "unresolveds_ref": "see 09_final_canonical.json.unresolveds (9 items)",
+  "contradictions_ref": "see 09_final_canonical.json.contradictions (0 items)",
+  "state_addenda_overrides_ref": "see 09_final_canonical.json.state_addenda_overrides",
+  "item21_financial_structure_detail": {
+    "balance_sheet": {
+      "fy2024": {
+        "current_assets": {"cash": 251150, "accounts_receivable": 246291, "other_current": 3319, "total": 500760},
+        "ppe": {"furniture_equipment": 17042, "website_development": 35642, "accumulated_depreciation": -29415, "net": 23269},
+        "noncurrent_other": {"accounts_receivable_related_party": 133826},
+        "total_assets": 657855,
+        "current_liabilities": {"accounts_payable_accruals": 26219, "accounts_payable_related_party": 11430, "contract_liabilities_current": 37500, "total": 75149},
+        "noncurrent_liabilities": {"contract_liabilities_long_term": 562354},
+        "total_liabilities": 636503,
+        "members_equity": 21352,
+        "total_liab_and_equity": 657855
+      },
+      "fy2023": {
+        "current_assets": {"cash": 17066, "accounts_receivable": 329181, "other_current": 0, "total": 346247},
+        "ppe": {"furniture_equipment": 17637, "website_development": 17642, "accumulated_depreciation": -25351, "net": 9928},
+        "noncurrent_other": {"accounts_receivable_related_party": 892586},
+        "total_assets": 1248761,
+        "current_liabilities": {"accounts_payable_accruals": 36841, "accounts_payable_related_party": 10556, "contract_liabilities_current": 31250, "total": 78647},
+        "noncurrent_liabilities": {"contract_liabilities_long_term": 277832},
+        "total_liabilities": 356480,
+        "members_equity": 892301
+      }
+    },
+    "income_statement": {
+      "fy2024": {"revenues": 2027743, "sga": 902734, "depreciation": 94064, "total_opex": 996798, "income_from_operations": 1030945, "other_expenses": -5287, "net_income": 1025658, "operating_margin_pct": 50.8},
+      "fy2023": {"revenues": 1861859, "sga": 1069133, "depreciation": 5767, "total_opex": 1074900, "income_from_operations": 786959, "other_expenses": -5666, "net_income": 781293, "operating_margin_pct": 42.3}
+    },
+    "cash_flow": {
+      "fy2024": {"net_income": 1025658, "depreciation": 94064, "ar_change": 82890, "ar_related_party_change": 758760, "other_current_change": -3319, "ap_change": -10622, "ap_related_party_change": 874, "contract_liab_change": 289791, "operating": 2148096, "investing": -17405, "financing_distributions": -1896607, "financing_total": -1896607, "net_change_in_cash": 234084, "beginning_cash": 17066, "ending_cash": 251150},
+      "fy2023": {"net_income": 781293, "depreciation": 5767, "ar_change": -244, "ar_related_party_change": -541006, "other_current_change": 0, "ap_change": 36091, "ap_related_party_change": 10284, "contract_liab_change": 35001, "operating": 327186, "investing": -596, "financing_distributions": -357331, "financing_total": -357331, "net_change_in_cash": -30741, "beginning_cash": 47807, "ending_cash": 17066}
+    },
+    "members_equity_walk": {
+      "fy2024": {"beginning": 892301, "net_income": 1025658, "distributions": -1896607, "ending": 21352},
+      "fy2023": {"beginning": 468339, "net_income": 781293, "distributions": -357331, "ending": 892301}
+    }
+  },
+  "item21_statement_detail": {
+    "revenue_growth_pct": 8.9,
+    "net_income_growth_pct": 31.3,
+    "sga_change_pct": -15.6,
+    "depreciation_jump_factor": 16.3,
+    "depreciation_jump_likely_cause": "addition of $18,000 to website development asset and accelerated depreciation policy change or one-time write-down",
+    "operating_cash_flow_quality": "low — $758,760 (35.3%) of operating cash flow in FY2024 came from one-time related-party A/R collection",
+    "operating_cash_flow_excluding_related_party_collection": 1389336,
+    "free_cash_flow": 2130691,
+    "distribution_coverage_ratio": 0.541,
+    "interpretation": "Cash flow more than covered distributions, but at the cost of nearly draining members' equity. The transfer is not a dividend out of earnings — it is a recapitalization-style payout funded partly by collecting receivables from the parent."
+  },
+  "item6_fee_detail": {
+    "ongoing_fee_categories": [
+      {"name": "Royalty", "type": "percent_of_gross_sales", "current_pct": 6.0, "max_pct": 6.0, "billing": "monthly", "due_day_of_month": 10},
+      {"name": "Ad Fund", "type": "percent_of_gross_sales", "current_pct": 2.0, "max_pct": 4.5, "billing": "monthly", "due_day_of_month": 10},
+      {"name": "Local Advertising", "type": "percent_of_gross_sales", "current_pct": 0.5, "max_pct": 1.0, "billing": "ongoing"},
+      {"name": "Cooperative", "type": "percent_of_gross_sales", "current_pct": 0.0, "max_pct": 2.0, "billing": "as_required"}
+    ],
+    "advertising_total_cap_basis": "cumulative cap on local + ad fund + coop = 6.5% of Gross Sales",
+    "event_driven_fees": [
+      {"name": "Successor", "amount": 10000, "trigger": "FA renewal"},
+      {"name": "Transfer", "amount": 10000, "trigger": "transfer of ownership", "waiver_condition": "entity-controlled transfer"},
+      {"name": "Relocation", "amount": 10000, "trigger": "site relocation"},
+      {"name": "Liquidated Damages", "amount": "24 months royalty lookback", "trigger": "termination with cause or franchisee termination without cause"}
+    ],
+    "compliance_fees": [
+      {"name": "Non-compliance", "amount": 500, "per": "occurrence", "continuing_per_day": 500},
+      {"name": "Unauthorized advertising", "amount": 1000, "per": "occurrence"},
+      {"name": "Late fee", "amount": "10% of past due"},
+      {"name": "Interest", "amount": "min(18%/yr, max legal)"},
+      {"name": "Audit", "amount": "actual cost", "trigger": "if Gross Sales understatement >3% or reports missing"}
+    ],
+    "training_fees": [
+      {"name": "Additional initial trainee", "amount_current": 1500, "amount_max": 4000, "per_person": true},
+      {"name": "Expelled re-attendee", "amount_current": 2000, "per_person": true},
+      {"name": "Training facility day rate", "amount_current": 400, "amount_max": 800, "per_day": true, "location": "training facility"},
+      {"name": "Restaurant training day rate", "amount_current": 600, "amount_max": 800, "per_day": true, "location": "franchisee restaurant"}
+    ]
+  }
+}

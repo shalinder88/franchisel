@@ -1,0 +1,82 @@
+{
+  "$extends": "05_canonical.json",
+  "patches_from": ["RT_depth_promotion_audit.json", "RT_depth_state_addenda_promotion.json"],
+  "promoted_facts_count": 13,
+
+  "item21_financials_patch": {
+    "marketing_income_share_of_revenue_pct": 41,
+    "marketing_income_2024_estimated": 828000,
+    "advertising_expense_2024": 285153,
+    "advertising_expense_2023": 378598,
+    "marketing_fund_net_retained_2024_estimated": 543000,
+    "ptet_payments_2024": 79245,
+    "ptet_payments_2023": 42132,
+    "distributions_pure_profit_extraction_2024_estimated": 1817362,
+    "revenue_recognition_policy": "ASC 606; ~50% of initial franchise fee at opening + training, ~50% straight-line over 10-year contract life; royalties recognized monthly under sales-based exception",
+    "depreciation_useful_lives_years": {"website_development": 3, "furniture_fixtures": 3},
+    "customer_concentration_flag": "majority of A/R from one customer in both FY2024 and FY2023",
+    "subsequent_events_evaluation_date": "2025-03-24",
+    "subsequent_events_disclosed": false,
+    "deferred_franchise_fees_yoy_growth_pct": 93.8,
+    "no_credit_losses_or_impairments": true,
+    "auditor_report_dates": ["2025-03-24", "2024-05-31"],
+    "income_tax_structure": "LLC member elected to be taxed as a corporation; no federal/state provision in entity statements; PTET paid at entity level on member's behalf"
+  },
+
+  "item11_assistance_patch": {
+    "marketing_fund_net_retained_2024_estimated": 543000
+  },
+
+  "item20_outlets_patch": {
+    "uncounted_concession_locations": ["Vivint Smart Home Arena", "Rice-Eccles Stadium", "LaVell Edwards Stadium"]
+  },
+
+  "leadership_patch": {
+    "related_party_governance_flag": "Two of three master franchisees are also Cupbop directors: Kevin Santiago (Gold Bowl LLC, ~26 units) and Yong Min Kim (Cupbop Oklahoma, 3 units)"
+  },
+
+  "item17_relationship_patch": {
+    "guaranty_unlimited_personal": true,
+    "guaranty_basis": "FA Exhibit H — unconditional, joint and several, primary and independent of franchisee liability; explicit waiver of statute of limitations and right to require pursuit of others; covers all 5%+ owners",
+    "guaranty_evidence_pages": [143, 144]
+  },
+
+  "unresolveds": [
+    {"id": "U1", "description": "Operating cash flow includes a $758,760 one-time related-party A/R collection (35.3% of operating cash flow). Sustainability of FY2024 operating cash flow without that swing is unclear.", "severity": "medium", "source": "Item 21 cash flow page 61"},
+    {"id": "U2", "description": "Going-concern question: $21,352 of equity supports $636,503 of liabilities. Parent commitment to fund the franchising entity is undisclosed.", "severity": "medium", "source": "Item 21 balance sheet page 58"},
+    {"id": "U3", "description": "Cross-default scope: noncurable default lists 'any default under any other agreement with franchisor or affiliates.' Whether this includes franchisee obligations to affiliated supplier (Cupbop Co.) is unspecified.", "severity": "medium", "source": "Item 17 page 38"},
+    {"id": "U4", "description": "Transfer ROFR mechanics not specified — how is 'matching offer' valued, what timeline.", "severity": "low", "source": "FA §13E pointer only"},
+    {"id": "U5", "description": "FMV determination methodology on franchisor purchase option not specified", "severity": "low", "source": "FA §16E pointer only"},
+    {"id": "U6", "description": "3 Las Vegas Gold Bowl closures in 2024 — market vs operator cause undisclosed", "severity": "low", "source": "Item 20 / Exhibit F"},
+    {"id": "U7", "description": "Marketing fund 40% admin overhead — peer benchmark comparison not in FDD", "severity": "low", "source": "Item 11 page 29"},
+    {"id": "U8", "description": "Customer concentration: majority of A/R from one customer (likely related party); identity not disclosed", "severity": "medium", "source": "Note 1 Concentrations of Risk, page 64"},
+    {"id": "U9", "description": "All state effective dates (10 listed states) marked PENDING — none of the listed registration states is actually effective for sale at issuance date", "severity": "high", "source": "Exhibit H page 199"}
+  ],
+
+  "contradictions": [],
+
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Illinois", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "California": {"noncompete": "may not be enforceable", "forum_selection": "Utah arbitration may not be enforceable; CA BPC §20040.5 controls", "governing_law": "Utah law may not apply; CA Franchise Investment Law and Franchise Relations Act control", "termination": "BPC §§20000–20043 control; bankruptcy termination may not be enforceable"},
+    "Minnesota": {"forum_selection": "litigation outside MN cannot be required; jury trial waiver invalid", "ld_unenforceable": true, "termination_notice": "90-day notice + 60-day cure", "non_renewal_notice": "180 days", "general_release": "cannot be required (Rule 2860.4400(D))", "transfer": "consent cannot be unreasonably withheld (80C.14)", "anti_fraud": "no acknowledgement waives claims including fraud-in-inducement", "interest_NSF": "$30 cap (§604.113)"},
+    "New York": {"disclosure_amendment": "NY-mandated cover-page language; expanded Item 3 attestations re felony/antitrust/securities/fraud"},
+    "Washington": {"governing_law": "WFIPA (RCW 19.100) prevails", "forum_selection": "WA arbitration site; WA litigation venue available", "general_release": "void except via post-effectiveness negotiated settlement with independent counsel (RCW 19.100.220(2)); also void on renewal/transfer", "limitations_jury": "limitations and jury waiver protected", "transfer_fee": "actual-cost only", "termination": "franchisee may terminate under any state-law-permitted grounds", "buy_back": "during-term franchisor purchase clauses limited"},
+    "Illinois": {"status": "addendum located pp 173–175; clause text not extracted in test run"},
+    "Maryland": {"status": "addendum located pp 176–178; clause text not extracted in test run"},
+    "North Dakota": {"status": "addendum located p 185; clause text not extracted in test run"},
+    "Rhode Island": {"status": "addendum located p 186; clause text not extracted in test run"},
+    "Virginia": {"status": "addendum located p 187; clause text not extracted in test run"},
+    "summary_table": {
+      "noncompete_limited": ["California"],
+      "forum_selection_voided": ["California", "Minnesota", "Washington"],
+      "governing_law_overridden": ["California", "Washington"],
+      "general_release_unenforceable": ["Minnesota", "Washington"],
+      "termination_protections": ["California", "Minnesota", "Washington"],
+      "anti_fraud": ["Minnesota", "New York"],
+      "transfer_fee_actual_cost_only": ["Washington"],
+      "jury_trial_protected": ["Minnesota", "Washington"],
+      "ld_unenforceable": ["Minnesota"]
+    },
+    "states_enumerated_but_not_clause_extracted": ["Illinois", "Maryland", "North Dakota", "Rhode Island", "Virginia"]
+  }
+}

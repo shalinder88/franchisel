@@ -1,0 +1,112 @@
+{
+  "depth_pass": "1_financial_notes",
+  "source_pages": [62, 63, 64, 65, 66],
+  "notes": {
+    "note_1_nature_of_operations": {
+      "entity_history": "Organized 2014-11-14 as Utah corporation; converted to Utah LLC 2016-12-31",
+      "business": "Franchise company for Cupbop Co.; grants franchisees the right to operate physical storefront and/or mobile food truck under Cupbop name and marks",
+      "evidence_pages": [62]
+    },
+    "use_of_estimates": {
+      "key_estimates": ["allowances for credit losses on accounts receivable"],
+      "note": "Current economic environment increases uncertainty; pervasive throughout statements",
+      "evidence_pages": [62]
+    },
+    "accounts_receivable_policy": {
+      "terms": "30 days net; past 120 days = delinquent; interest accrues until past one year then ceases",
+      "credit_loss_expense_2024": 0,
+      "credit_loss_expense_2023": 0,
+      "evidence_pages": [62]
+    },
+    "contract_liabilities_policy": {
+      "definition": "Obligation to transfer goods/services where consideration already received; primarily deferred franchise fee revenues",
+      "evidence_pages": [62]
+    },
+    "ppe_policy": {
+      "method": "Straight-line depreciation",
+      "useful_lives": {"website_development_years": 3, "furniture_and_fixtures_years": 3},
+      "evidence_pages": [62]
+    },
+    "long_lived_asset_impairment_policy": {
+      "trigger": "Events or circumstances indicating carrying amount may not be recoverable",
+      "test": "Undiscounted estimated cash flows vs carrying amount; impairment loss = excess of carrying over fair value",
+      "impairment_recorded_2024": 0,
+      "evidence_pages": [63]
+    },
+    "members_equity_structure": {
+      "classes": 1,
+      "wholly_owned_by": "Cupbop Co.",
+      "evidence_pages": [63]
+    },
+    "revenue_recognition": {
+      "framework": "ASC 606",
+      "initial_franchise_fees": "Approximately 50% recognized upon franchise opening and completion of related training; remaining 50% recognized straight-line over expected 10-year contract life",
+      "if_location_closes_early": "Remaining unearned revenue recognized into income at time of closure",
+      "royalties": "6% of monthly gross sales recognized monthly under sales-based royalty exception",
+      "renewal_fees": "Recognized as income when renewal agreement becomes effective",
+      "portfolio_approach_election": true,
+      "sales_tax_excluded_from_revenue": true,
+      "evidence_pages": [63, 65, 66]
+    },
+    "income_taxes_policy": {
+      "structure": "LLC member elected to be taxed as a C-corp under IRC; income/loss reported to individual member",
+      "federal_state_provision_in_statements": "none — passes to member",
+      "ptet_election": "Pass-through entity tax (PTET) paid at entity level on behalf of member in Utah",
+      "ptet_treatment": "Accounted for as distribution to member for financial-statement purposes; deducted on federal return",
+      "ptet_payments_2024": 79245,
+      "ptet_payments_2023": 42132,
+      "ptet_included_in_distributions": true,
+      "evidence_pages": [63]
+    },
+    "advertising_policy": {
+      "expense_basis": "expensed as incurred",
+      "advertising_expense_2024": 285153,
+      "advertising_expense_2023": 378598,
+      "marketing_income_2024": 828000,
+      "marketing_income_2023": 733000,
+      "marketing_pct_of_revenue_2024": 41,
+      "marketing_pct_of_revenue_2023": 39,
+      "evidence_pages": [64]
+    },
+    "concentrations_of_risk": {
+      "credit_risk": "Trade A/R",
+      "customer_concentration": "Majority of A/R from one customer in both FY2024 and FY2023",
+      "evidence_pages": [64]
+    },
+    "note_2_related_party_transactions": {
+      "ar_from_parent_2024": 133826,
+      "ar_from_parent_2023": 892586,
+      "basis": "Marketing revenues earned by Company before cash received by parent; due on demand; non-interest-bearing",
+      "ap_to_parent_2024": 11430,
+      "ap_to_parent_2023": 10556,
+      "ap_basis": "Prior-year company expenses paid by parent; non-interest-bearing; due on demand",
+      "evidence_pages": [64]
+    },
+    "note_3_revenue_from_contracts": {
+      "primary_source": "franchise fees and royalties",
+      "model": "ASC 606 five-step",
+      "deferred_franchise_fees_beginning_2024": 309063,
+      "deferred_franchise_fees_ending_2024": 598854,
+      "deferred_franchise_fees_growth_pct": 93.8,
+      "ar_beginning_2024": 329181,
+      "ar_ending_2024": 246291,
+      "evidence_pages": [65]
+    },
+    "note_4_subsequent_events": {
+      "evaluation_date": "2025-03-24",
+      "events_disclosed": "none",
+      "evidence_pages": [66]
+    }
+  },
+  "key_facts_promotable_to_canonical": [
+    "marketing_income_pct_of_revenue_2024 = 41% — meaning marketing fund accounting flows nearly half of total franchisor revenue (royalties + FFE comprise the other ~59%)",
+    "advertising_expense_2024 = $285,153 vs marketing_income_2024 ~$828,000 — net marketing fund surplus of ~$543,000 retained or used for non-direct-advertising purposes (consistent with the 40% admin allocation in Item 11)",
+    "ptet_payments_2024 = $79,245 included in distributions — recharacterizes the headline distribution figure",
+    "deferred_franchise_fees_growth = 93.8% YoY — strong forward-bookings signal",
+    "useful_life_3_years for both website development and furniture/fixtures",
+    "0 impairments and 0 credit losses in 2024 and 2023",
+    "majority of A/R from one customer (concentration risk)",
+    "no subsequent events disclosed (evaluation through 2025-03-24)",
+    "initial franchise fee revenue recognition: ~50% at opening + training, 50% straight-line over 10-year contract life"
+  ]
+}

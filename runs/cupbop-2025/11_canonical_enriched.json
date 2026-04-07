@@ -1,0 +1,91 @@
+{
+  "$extends": "09_final_canonical.json",
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "table1_company": {
+      "n": 26, "metric": "Gross Revenues", "fy": 2024,
+      "bands": [
+        {"label": ">$925K", "n": 7, "avg": 1112921, "median": 1040690, "high": 1585417, "low": 926046, "share_pct": 26.9},
+        {"label": "$725K-$925K", "n": 7, "avg": 804118, "median": 783687, "high": 885524, "low": 729126, "share_pct": 26.9},
+        {"label": "$600K-$725K", "n": 6, "avg": 667435, "median": 665948, "high": 723350, "low": 612422, "share_pct": 23.1},
+        {"label": "<$600K", "n": 6, "avg": 536699, "median": 546570, "high": 575285, "low": 458400, "share_pct": 23.1}
+      ],
+      "above_avg_pct": 38.4, "above_median_pct": 50.0,
+      "exclusions": ["2 newly-opened company-owned <1 full CY", "1 seasonal location at Utah Valley University"]
+    },
+    "table2_franchised": {
+      "n": 24, "metric": "Gross Revenues", "fy": 2024,
+      "bands": [
+        {"label": ">$885K", "n": 6, "avg": 940911, "median": 917963, "high": 1142310, "low": 832590, "share_pct": 25.0},
+        {"label": "$725K-$885K", "n": 6, "avg": 738251, "median": 738543, "high": 818983, "low": 676993, "share_pct": 25.0},
+        {"label": "$550K-$725K", "n": 6, "avg": 552707, "median": 555049, "high": 661528, "low": 452409, "share_pct": 25.0},
+        {"label": "<$550K", "n": 6, "avg": 400962, "median": 408782, "high": 434138, "low": 347132, "share_pct": 25.0}
+      ],
+      "above_avg_pct": 54.2, "above_median_pct": 50.0,
+      "exclusions": ["6 franchised <1 full CY", "3 closed pre-2024-12-31"]
+    },
+    "table3_all": {
+      "n": 50, "metric": "Gross Revenues", "fy": 2024,
+      "bands": [
+        {"label": ">$885K", "n": 13, "avg": 1042333, "median": 961307, "high": 1585417, "low": 885524, "share_pct": 26.0},
+        {"label": "$700K-$885K", "n": 12, "avg": 775819, "median": 775256, "high": 849197, "low": 723350, "share_pct": 24.0},
+        {"label": "$550K-$700K", "n": 13, "avg": 631223, "median": 639790, "high": 697151, "low": 555360, "share_pct": 26.0},
+        {"label": "<$550K", "n": 12, "avg": 447918, "median": 443273, "high": 537780, "low": 347132, "share_pct": 24.0}
+      ],
+      "above_avg_pct": 48.0, "above_median_pct": 50.0
+    },
+    "company_vs_franchise_gap_dollars": 135795,
+    "company_vs_franchise_gap_pct": 20.6
+  },
+  "item20_yearly_activity": {
+    "states_with_franchised_outlets_2024": ["Arizona", "Idaho", "Nevada", "Oklahoma", "Texas", "Utah"],
+    "states_with_company_outlets_2024": ["Colorado", "Utah"],
+    "year_over_year": [
+      {"year": 2022, "franchised_net": 10, "company_net": 6, "total_net": 16},
+      {"year": 2023, "franchised_net": 8, "company_net": 1, "total_net": 9},
+      {"year": 2024, "franchised_net": 3, "company_net": 2, "total_net": 5}
+    ],
+    "growth_deceleration_2024": true,
+    "first_franchised_closures_year": 2024,
+    "closures_2024_count": 3,
+    "closures_2024_concentration": "all 3 in Las Vegas, NV (Gold Bowl LLC)"
+  },
+  "exhibit_structure": {
+    "fa_subexhibits_count": 8,
+    "ada_subexhibits_count": 2,
+    "state_addenda_count": 9,
+    "registration_states_pending_count": 10
+  },
+  "item21_structural_facts": {
+    "scope": "entity-only",
+    "consolidation_status": "not consolidated with parent Cupbop Co.",
+    "auditor": "Forvis Mazars LLP",
+    "opinion": "unqualified",
+    "going_concern_flagged_in_report": false,
+    "going_concern_concern_implied_by_data": true,
+    "fy2024_payout_ratio_pct": 184.9,
+    "fy2024_equity_change_pct": -97.6,
+    "fy2024_deferred_franchise_fees_total": 599854,
+    "fy2024_related_party_AR": 133826
+  },
+  "item1_structural_facts": {
+    "parent_count": 3,
+    "predecessor_present": true,
+    "license_from_parent": "2020-12-15 License Agreement; Cupbop Co. owns trademarks",
+    "first_franchise_year": 2017,
+    "founder_year": 2013
+  },
+  "item6_fee_attributes": {
+    "royalty_pct": 6.0,
+    "ad_fund_current_pct": 2.0,
+    "ad_fund_max_pct": 4.5,
+    "advertising_total_cap_pct": 6.5,
+    "ld_basis": "24-month royalty lookback",
+    "interest_max_pct": 18.0,
+    "transfer_fee": 10000,
+    "successor_fee": 10000,
+    "audit_understatement_threshold_pct": 3.0,
+    "noncompliance_per_occurrence": 500,
+    "noncompliance_per_day": 500
+  }
+}

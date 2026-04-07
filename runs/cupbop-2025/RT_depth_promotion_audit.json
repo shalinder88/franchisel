@@ -1,0 +1,85 @@
+{
+  "depth_pass": "3_promotion_audit",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "Marketing income comprises ~41% of total franchisor revenue (FY2024 ~$828K of $2,027,743)",
+      "source": "Note 1 Advertising note, page 64",
+      "promoted_to": "item21_financials.marketing_income_share_of_revenue_pct"
+    },
+    {
+      "id": "P2",
+      "fact": "Advertising expense $285,153 vs marketing income ~$828,000 → ~$543K net retained / surplus from marketing fund (consistent with 40% admin allocation in Item 11)",
+      "source": "Note 1 Advertising, page 64",
+      "promoted_to": "item11_assistance.marketing_fund_net_retained_2024_estimated"
+    },
+    {
+      "id": "P3",
+      "fact": "PTET payments $79,245 (2024) and $42,132 (2023) are included in distributions for accounting purposes — meaning the headline distribution figure overstates pure profit-extraction by ~$79K",
+      "source": "Note 1 Income Taxes, page 63",
+      "promoted_to": "item21_financials.distributions_pure_profit_extraction_2024"
+    },
+    {
+      "id": "P4",
+      "fact": "Initial franchise fee revenue recognition: ~50% at franchise opening + completion of training; ~50% straight-line over 10-year contract life. If location closes early, remaining unearned revenue is recognized into income at closure.",
+      "source": "Note 1 Revenue Recognition, page 63",
+      "promoted_to": "item21_financials.revenue_recognition_policy"
+    },
+    {
+      "id": "P5",
+      "fact": "Useful life: 3 years for both website development and furniture/fixtures",
+      "source": "Note 1 PP&E, page 62",
+      "promoted_to": "item21_financials.depreciation_useful_lives_years"
+    },
+    {
+      "id": "P6",
+      "fact": "Customer concentration: majority of accounts receivable from one customer in both FY2024 and FY2023",
+      "source": "Note 1 Concentrations of Risk, page 64",
+      "promoted_to": "item21_financials.customer_concentration_flag"
+    },
+    {
+      "id": "P7",
+      "fact": "Subsequent events evaluated through 2025-03-24 — no events disclosed",
+      "source": "Note 4 Subsequent Events, page 66",
+      "promoted_to": "item21_financials.subsequent_events_evaluation_date"
+    },
+    {
+      "id": "P8",
+      "fact": "Deferred franchise fees grew 93.8% YoY (from $309,063 to $598,854) — strong forward-bookings signal",
+      "source": "Note 3 Contract Balances, page 65",
+      "promoted_to": "item21_financials.deferred_franchise_fees_yoy_growth_pct"
+    },
+    {
+      "id": "P9",
+      "fact": "Two of three master franchisees are also Cupbop directors: Kevin Santiago (Gold Bowl LLC, ~26 units) and Yong Min Kim (Cupbop Oklahoma, 3 units)",
+      "source": "Item 2 + Exhibit F franchisee list, pages 10 + 167–168",
+      "promoted_to": "leadership.related_party_governance_flag"
+    },
+    {
+      "id": "P10",
+      "fact": "Cupbop Co. concessions at Vivint Smart Home Arena, Rice-Eccles Stadium, and LaVell Edwards Stadium are NOT counted in Item 20 outlet tables",
+      "source": "Item 20 Notes to Tables Note 2, page 47",
+      "promoted_to": "item20_outlets.uncounted_concession_locations"
+    },
+    {
+      "id": "P11",
+      "fact": "0 credit losses and 0 impairments recorded in FY2024 and FY2023",
+      "source": "Note 1 A/R policy + Long-Lived Asset Impairment, pages 62–63",
+      "promoted_to": "item21_financials.no_credit_losses_or_impairments"
+    },
+    {
+      "id": "P12",
+      "fact": "Auditor consent dated 2025-03-26 references both 2025-03-24 and 2024-05-31 audit reports",
+      "source": "Auditor's Consent, page 53",
+      "promoted_to": "item21_financials.auditor_report_dates"
+    },
+    {
+      "id": "P13",
+      "fact": "FA Guaranty (Exhibit H) is unconditional, joint-and-several, primary and independent of franchisee liability, with explicit waiver of statute of limitations and right to require pursuit of others",
+      "source": "FA Exhibit H Guaranty, pages 143–144",
+      "promoted_to": "item17_relationship.guaranty_unlimited_personal"
+    }
+  ],
+  "promotion_count": 13,
+  "patches_applied_to": ["09_final_canonical.json (via composition with 12_canonical_enriched_v2.json)", "12_canonical_enriched_v2.json"]
+}

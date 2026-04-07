@@ -1,0 +1,329 @@
+{
+  "tables": [
+    {
+      "table_id": "item6_other_fees",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [11, 12, 13, 14],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks/Note"],
+      "rows": [
+        ["Royalty Fee", "6% of monthly Gross Sales", "10th day of each month", "Note 1"],
+        ["Advertising Fund", "Up to 4.5% of monthly Gross Sales (currently 2%)", "10th day of each month", "Note 2; Item 11"],
+        ["Cooperative Advertising Program", "Up to 2% of Gross Sales (currently not assessed)", "As required by coop", "Item 11"],
+        ["Additional/New/Repeat Initial Training", "Up to $4,000/person; currently $1,500/person ($2,000 expelled re-attendee)", "Prior to training", "Note 3"],
+        ["Additional Training or Assistance", "Up to $800/day; $400/day at training facility, $600/day at restaurant", "Prior to training", ""],
+        ["Successor Franchise", "$10,000", "Upon successor FA execution", ""],
+        ["Transfer Fee", "$10,000 (subject to state law)", "Before completion of transfer", "Note 4 (waived for entity-controlled)"],
+        ["Product and Service Purchases", "Cost of items ordered", "As incurred", "Note 5; Item 8"],
+        ["Testing", "Variable, depends on circumstances", "When billed", "New product/supplier inspection"],
+        ["Relocation", "Currently $10,000", "As incurred", ""],
+        ["Computer Systems/Maintenance/Support", "Not currently assessed", "As incurred", "Note 6"],
+        ["Annual Franchisee Meeting", "Up to $2,500", "When billed", "Note 7"],
+        ["Regional Advisory Council", "Council assessments", "When billed", "Varies"],
+        ["Audit", "Costs incurred", "15 days after report", "Note 8 — only if reports missing or Gross Sales understated >3%"],
+        ["Interest", "Lesser of 18%/yr or max legal", "When billed", "Overdue amounts"],
+        ["Non-Compliance", "$500/occurrence + $500/day continuing", "When billed", "Note 9"],
+        ["Unauthorized Advertising Fee", "$1,000/occurrence", "When billed", ""],
+        ["Late Fee", "10% of past-due amount", "When billed", ""],
+        ["Management Fee", "$500/person/day + costs", "When billed", "Note 10 — franchisor takeover after death/disability/default"],
+        ["Indemnification", "Variable", "As incurred", "Note 11"],
+        ["Liquidated Damages", "Sum of prior 24 months of royalties (or remaining term if shorter) + taxes", "Within 15 days of termination", "Note 12"],
+        ["Customer Complaint Reimbursement", "Out-of-pocket cost", "As incurred", ""],
+        ["Insurance Reimbursement", "Out-of-pocket cost", "As incurred", ""],
+        ["Tax Reimbursement", "Out-of-pocket cost (gross-up)", "As incurred", "Note 13"],
+        ["De-identification", "Out-of-pocket cost", "As billed", "Note 14"],
+        ["Attorneys' Fees and Costs", "Reasonable amounts", "As incurred", "If franchisor prevails"]
+      ],
+      "table_notes": [
+        "All fees collected by and payable to franchisor; franchisor may vary frequency/method.",
+        "Royalties non-refundable; other fees refundable at franchisor discretion.",
+        "Cumulative cap on local + ad fund + co-op = 6.5% of Gross Sales (per Item 11)."
+      ]
+    },
+    {
+      "table_id": "item7_initial_investment_single_unit",
+      "item": 7,
+      "title": "Estimated Initial Investment — single Cupbop Restaurant",
+      "source_pages": [17, 18, 19, 20],
+      "columns": ["Type of Expenditure", "Amount Low", "Amount High", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Franchise Fee", 40000, 40000, "Upon execution of FA", "Franchisor"],
+        ["Training Expenses (initial training)", 1000, 5000, "When training conducted", "Travel/airline/hotel/Cupbop Co."],
+        ["Real Estate / Rent", 5000, 15000, "When incurred", "Landlord"],
+        ["Leasehold Improvements, FF&E", 180000, 475000, "As incurred", "Contractors"],
+        ["Grand Opening Advertising", 10000, 10000, "As incurred", "Vendors"],
+        ["Opening Inventory / Supplies", 13000, 15000, "As incurred", "Vendors / Cupbop Co."],
+        ["Point of Sale System", 2500, 5000, "As incurred", "Vendors"],
+        ["Accounting Software (QuickBooks)", 200, 1000, "As incurred", "Vendors / franchisor"],
+        ["Office Equipment and Supplies", 3000, 5000, "As incurred", "Vendors"],
+        ["Signage", 10000, 16000, "As incurred", "Vendors"],
+        ["Utility Deposits and Payments", 1500, 6500, "As incurred", "Landlord/utilities"],
+        ["Business Licenses and Permits", 500, 1500, "As incurred", "City/county/state"],
+        ["Insurance", 400, 600, "As agreed", "Vendors"],
+        ["Dues and Subscriptions", 300, 800, "As incurred", "Agencies"],
+        ["Professional Fees", 2000, 5000, "As incurred", "Attorneys/accountants"],
+        ["Additional Funds — 3 months", 27000, 63000, "As incurred", "Various"]
+      ],
+      "totals": {"low": 296400, "high": 664400, "to_franchisor_or_affiliate_low": 41250, "to_franchisor_or_affiliate_high": 42000},
+      "table_notes": [
+        "Estimates based on franchisor experience operating company-owned units.",
+        "1,200–2,000 sq ft typical footprint.",
+        "Grand opening minimum spend $10,000 within 90–120 days of opening."
+      ]
+    },
+    {
+      "table_id": "item7_ada_development_fee",
+      "item": 7,
+      "title": "Estimated Initial Investment — Area Development Agreement",
+      "source_pages": [20, 21],
+      "columns": ["Type", "Amount Low", "Amount High", "Notes"],
+      "rows": [["Development Fee", 160000, 610000, "$40K first restaurant + $30K each additional; 5–20 restaurants typical"]],
+      "totals": {"low": 160000, "high": 610000}
+    },
+    {
+      "table_id": "item11_training_program",
+      "item": 11,
+      "title": "Training Program",
+      "source_pages": [31],
+      "columns": ["Subject", "Classroom Hours", "OJT Hours", "Location"],
+      "rows": [
+        ["Orientation/History/Customer Service/Korean Culture/Mission/Values", 1.5, 0, "Draper, UT office"],
+        ["Documents/Payroll/Royalty/Leadership", 3, 0, "Draper, UT office"],
+        ["Fees/Events/Marketing/Accounting/HR", 4, 0, "Draper, UT office"],
+        ["POS/3rd-Party Delivery/Manager Packet/Inspections/Vendors", 5, 5, "Draper, UT and/or Cupbop locations"],
+        ["Sauce/Allergens/Nutrition/Food Safety/Recipes/Maintenance", 5, 10, "Draper, UT and/or Cupbop locations"],
+        ["Opening: Prep/Cooking/Inventory/Cleaning", 1, 40, "Draper, UT and/or Cupbop locations"],
+        ["Closing: Procedures/Orders/Storage", 1, 40, "Draper, UT and/or Cupbop locations"]
+      ],
+      "totals": {"classroom_hours": 20.5, "ojt_hours": 95, "total_hours": 115.5}
+    },
+    {
+      "table_id": "item19_table1_company_owned",
+      "item": 19,
+      "title": "Item 19 Table 1 — Company-Owned Restaurants (CY2024, n=26, ≥1 full year)",
+      "source_pages": [42, 43],
+      "columns": ["Gross Revenue Band", "# Stores", "Avg Gross Revenue", "Median", "High", "Low"],
+      "rows": [
+        ["Greater than $925K", 7, 1112921, 1040690, 1585417, 926046],
+        ["$725K–$925K", 7, 804118, 783687, 885524, 729126],
+        ["$600K–$725K", 6, 667435, 665948, 723350, 612422],
+        ["Less than $600K", 6, 536699, 546570, 575285, 458400],
+        ["TOTAL", 26, 794003, 731325, 1585417, 458400]
+      ],
+      "table_notes": [
+        "Excludes 2 newly-opened company-owned restaurants (<1 full CY).",
+        "Excludes 1 seasonal location at Utah Valley University.",
+        "10 of 26 (38.4%) at-or-above average; 13 of 26 (50.0%) at-or-above median."
+      ]
+    },
+    {
+      "table_id": "item19_table2_franchised",
+      "item": 19,
+      "title": "Item 19 Table 2 — Franchised Restaurants (CY2024, n=24, ≥1 full year)",
+      "source_pages": [43],
+      "columns": ["Gross Revenue Band", "# Stores", "Avg Gross Revenue", "Median", "High", "Low"],
+      "rows": [
+        ["Greater than $885K", 6, 940911, 917963, 1142310, 832590],
+        ["$725K–$885K", 6, 738251, 738543, 818983, 676993],
+        ["$550K–$725K", 6, 552707, 555049, 661528, 452409],
+        ["Less than $550K", 6, 400962, 408782, 434138, 347132],
+        ["TOTAL", 24, 658208, 669260, 1142310, 347132]
+      ],
+      "table_notes": [
+        "Excludes 6 franchise restaurants <1 full CY.",
+        "Excludes 3 franchised locations that closed before 2024-12-31.",
+        "13 of 24 (54.2%) at-or-above average; 12 of 24 (50.0%) at-or-above median."
+      ]
+    },
+    {
+      "table_id": "item19_table3_all",
+      "item": 19,
+      "title": "Item 19 Table 3 — All Restaurants combined (CY2024, n=50)",
+      "source_pages": [44],
+      "columns": ["Gross Revenue Band", "# Stores", "Avg Gross Revenue", "Median", "High", "Low"],
+      "rows": [
+        ["Greater than $885K", 13, 1042333, 961307, 1585417, 885524],
+        ["$700K–$885K", 12, 775819, 775256, 849197, 723350],
+        ["$550K–$700K", 13, 631223, 639790, 697151, 555360],
+        ["Less than $550K", 12, 447918, 443273, 537780, 347132],
+        ["TOTAL", 50, 728821, 710250, 1585417, 347132]
+      ],
+      "table_notes": [
+        "24 of 50 (48.0%) at-or-above average; 25 of 50 (50.0%) at-or-above median.",
+        "Gross Revenues exclude sales/use taxes."
+      ]
+    },
+    {
+      "table_id": "item20_table1_system_summary",
+      "item": 20,
+      "title": "System-Wide Restaurant Summary FY2022–FY2024",
+      "source_pages": [45],
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        ["Franchised", 2022, 9, 19, 10],
+        ["Franchised", 2023, 19, 27, 8],
+        ["Franchised", 2024, 27, 30, 3],
+        ["Company-Owned", 2022, 20, 26, 6],
+        ["Company-Owned", 2023, 26, 27, 1],
+        ["Company-Owned", 2024, 27, 29, 2],
+        ["Total", 2022, 29, 45, 16],
+        ["Total", 2023, 44, 54, 9],
+        ["Total", 2024, 54, 59, 5]
+      ]
+    },
+    {
+      "table_id": "item20_table2_transfers",
+      "item": 20,
+      "title": "Transfers FY2022–FY2024",
+      "source_pages": [45],
+      "rows": [["Total", 2022, 0], ["Total", 2023, 0], ["Total", 2024, 0]]
+    },
+    {
+      "table_id": "item20_table3_franchised_status",
+      "item": 20,
+      "title": "Franchise Restaurant Status by State FY2022–FY2024",
+      "source_pages": [45, 46],
+      "columns": ["State", "Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        ["Arizona", 2022, 2, 4, 0, 0, 0, 0, 6],
+        ["Arizona", 2023, 6, 2, 0, 0, 0, 0, 8],
+        ["Arizona", 2024, 8, 2, 0, 0, 0, 0, 10],
+        ["Idaho", 2022, 5, 2, 0, 0, 0, 0, 7],
+        ["Idaho", 2023, 7, 0, 0, 0, 0, 0, 7],
+        ["Idaho", 2024, 7, 2, 0, 0, 0, 0, 9],
+        ["Nevada", 2022, 2, 3, 0, 0, 0, 0, 5],
+        ["Nevada", 2023, 5, 0, 0, 0, 0, 0, 5],
+        ["Nevada", 2024, 5, 0, 0, 0, 0, 3, 2],
+        ["Oklahoma", 2022, 0, 0, 0, 0, 0, 0, 0],
+        ["Oklahoma", 2023, 0, 3, 0, 0, 0, 0, 3],
+        ["Oklahoma", 2024, 3, 0, 0, 0, 0, 0, 3],
+        ["Texas", 2022, 0, 0, 0, 0, 0, 0, 0],
+        ["Texas", 2023, 0, 2, 0, 0, 0, 0, 2],
+        ["Texas", 2024, 2, 0, 0, 0, 0, 0, 2],
+        ["Utah", 2022, 0, 1, 0, 0, 0, 0, 1],
+        ["Utah", 2023, 1, 1, 0, 0, 0, 0, 2],
+        ["Utah", 2024, 2, 2, 0, 0, 0, 0, 4],
+        ["Total", 2022, 9, 10, 0, 0, 0, 0, 19],
+        ["Total", 2023, 19, 8, 0, 0, 0, 0, 27],
+        ["Total", 2024, 27, 6, 0, 0, 0, 3, 30]
+      ]
+    },
+    {
+      "table_id": "item20_table4_company_status",
+      "item": 20,
+      "title": "Company-Owned Status by State FY2022–FY2024",
+      "source_pages": [46, 47],
+      "rows": [
+        ["Colorado", 2022, 3, 0, 0, 0, 0, 3],
+        ["Colorado", 2023, 3, 0, 0, 0, 0, 3],
+        ["Colorado", 2024, 3, 0, 0, 0, 0, 3],
+        ["Oklahoma", 2022, 0, 2, 0, 0, 0, 2],
+        ["Oklahoma", 2023, 2, 0, 0, 0, 2, 0],
+        ["Oklahoma", 2024, 0, 0, 0, 0, 0, 0],
+        ["Utah", 2022, 17, 4, 0, 0, 0, 21],
+        ["Utah", 2023, 21, 3, 0, 0, 0, 24],
+        ["Utah", 2024, 24, 2, 0, 0, 0, 26],
+        ["Totals", 2022, 20, 6, 0, 0, 0, 26],
+        ["Totals", 2023, 26, 3, 0, 0, 2, 27],
+        ["Totals", 2024, 27, 2, 0, 0, 0, 29]
+      ]
+    },
+    {
+      "table_id": "item20_table5_projected",
+      "item": 20,
+      "title": "Projected Openings as of 2024-12-31",
+      "source_pages": [47],
+      "columns": ["State", "Signed Not Opened", "Projected New Franchised FY2025", "Projected New Company FY2025"],
+      "rows": [
+        ["Alaska", 0, 0, 1],
+        ["Arizona", 0, 0, 2],
+        ["California", 0, 1, 1],
+        ["Colorado", 0, 0, 1],
+        ["Idaho", 0, 1, 0],
+        ["Montana", 0, 1, 0],
+        ["New Mexico", 0, 0, 1],
+        ["North Carolina", 0, 0, 1],
+        ["Texas", 0, 2, 2],
+        ["Total", 0, 5, 9]
+      ]
+    },
+    {
+      "table_id": "item21_balance_sheet",
+      "item": 21,
+      "title": "Balance Sheet — Cupbop Franchise, LLC (entity-only)",
+      "source_pages": [58],
+      "columns": ["Line Item", "FY2024", "FY2023"],
+      "rows": [
+        ["Cash", 251150, 17066],
+        ["Accounts receivable", 246291, 329181],
+        ["Other current assets", 3319, 0],
+        ["Total current assets", 500760, 346247],
+        ["Furniture and equipment", 17042, 17637],
+        ["Website development", 35642, 17642],
+        ["Accumulated depreciation", -29415, -25351],
+        ["PP&E net", 23269, 9928],
+        ["Accounts receivable - related party", 133826, 892586],
+        ["Total assets", 657855, 1248761],
+        ["Accounts payable and accrued expenses", 26219, 36841],
+        ["Accounts payable - related party", 11430, 10556],
+        ["Contract liabilities current", 37500, 31250],
+        ["Total current liabilities", 75149, 78647],
+        ["Contract liabilities long-term", 562354, 277832],
+        ["Total liabilities", 636503, 356480],
+        ["Member's equity", 21352, 892301],
+        ["Total liabilities and member's equity", 657855, 1248761]
+      ]
+    },
+    {
+      "table_id": "item21_income_statement",
+      "item": 21,
+      "title": "Income Statement — Cupbop Franchise, LLC (entity-only)",
+      "source_pages": [59],
+      "columns": ["Line Item", "FY2024", "FY2023"],
+      "rows": [
+        ["Revenues", 2027743, 1861859],
+        ["Selling, general and administrative", 902734, 1069133],
+        ["Depreciation expense", 94064, 5767],
+        ["Total operating expenses", 996798, 1074900],
+        ["Income from operations", 1030945, 786959],
+        ["Other expenses", -5287, -5666],
+        ["Net income", 1025658, 781293]
+      ]
+    },
+    {
+      "table_id": "item21_cash_flow",
+      "item": 21,
+      "title": "Cash Flow Statement — Cupbop Franchise, LLC",
+      "source_pages": [61],
+      "rows": [
+        ["Net income", 1025658, 781293],
+        ["Depreciation", 94064, 5767],
+        ["Change in A/R", 82890, -244],
+        ["Change in A/R related party", 758760, -541006],
+        ["Change in other current assets", -3319, 0],
+        ["Change in A/P and accruals", -10622, 36091],
+        ["Change in A/P related party", 874, 10284],
+        ["Change in contract liabilities", 289791, 35001],
+        ["Net cash from operating", 2148096, 327186],
+        ["Net cash used in investing", -17405, -596],
+        ["Distributions paid", -1896607, -357331],
+        ["Net cash used in financing", -1896607, -357331],
+        ["Change in cash", 234084, -30741],
+        ["Cash beginning of year", 17066, 47807],
+        ["Cash end of year", 251150, 17066]
+      ]
+    },
+    {
+      "table_id": "item21_member_equity",
+      "item": 21,
+      "title": "Statement of Member's Equity",
+      "source_pages": [60],
+      "rows": [
+        ["Beginning balance FY2024", 892301],
+        ["Net income FY2024", 1025658],
+        ["Distributions FY2024", -1896607],
+        ["Ending balance FY2024", 21352]
+      ]
+    }
+  ]
+}

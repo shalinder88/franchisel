@@ -1,0 +1,178 @@
+{
+  "depth_pass": "2_contract_burdens",
+  "scope_note": "FA body pp 80–126 read at item-mapping depth only in this test run; all clause references below are anchored to Item 17 cross-walk evidence (pp 36–42) plus the Guaranty exhibit (pp 143–144). Full clause-by-clause FA extraction deferred to a non-test run.",
+  "fa_grant_and_term": {
+    "term_years": 10,
+    "starts_from": "opening date",
+    "fa_section": "1D",
+    "renewal_term_years": 10,
+    "renewal_notice_window": "180–220 days before expiration",
+    "renewal_conditions": ["maintain possession of premises", "remodel to current standards", "pay successor fee $10,000", "sign then-current FA which 'may be materially different'"],
+    "evidence_pages": [36, 37]
+  },
+  "fee_obligations": {
+    "royalty": "6% monthly Gross Sales due 10th of next month, FA §3",
+    "ad_fund": "currently 2%, up to 4.5% of Gross Sales, FA §10",
+    "local_advertising": "0.5% min, up to 1%, FA §10",
+    "successor_fee": 10000,
+    "transfer_fee": 10000,
+    "relocation_fee": 10000,
+    "non_compliance_fee": "$500/occurrence + $500/day continuing",
+    "auto_debit_authorization_required": true,
+    "evidence_pages": [11, 12, 13, 14, 15]
+  },
+  "site_construction_obligations": {
+    "site_clock_days": 120,
+    "opening_clock_months": 16,
+    "lease_addendum_required": true,
+    "franchisor_lease_approval_required": true,
+    "ada_compliance_franchisee_responsibility": true,
+    "general_contractor_franchisor_approval_required": true,
+    "evidence_pages": [22, 27]
+  },
+  "training_operational_obligations": {
+    "initial_training_days": 14,
+    "total_hours": 115.5,
+    "must_complete_before_opening": true,
+    "replacement_gm_window_days": 90,
+    "ongoing_training_at_franchisor_discretion": true,
+    "evidence_pages": [30, 31]
+  },
+  "termination_triggers_and_cure": {
+    "curable_defaults": [
+      {"category": "health/safety/sanitation", "cure_days": 3},
+      {"category": "monetary / insurance lapse", "cure_days": 10},
+      {"category": "third-party monetary", "cure_days": 30},
+      {"category": "lost premises (relocation)", "cure_days": 90}
+    ],
+    "noncurable_defaults": [
+      "120-day site failure",
+      "16-month opening failure",
+      "opening without written approval",
+      "training failure",
+      "abandonment",
+      "unapproved transfer",
+      "material misrepresentation/omission",
+      "felony conviction",
+      "dishonest/unethical conduct",
+      "manual or Confidential Information disclosure",
+      "tax payment failure",
+      "Gross Sales understatement",
+      "recruiting/hiring restriction violation",
+      "repeated defaults",
+      "bankruptcy/insolvency/trustee/receiver appointment",
+      "anti-terrorism law violation",
+      "cross-default — any default under any other agreement with franchisor or affiliates"
+    ],
+    "fa_section": "15B",
+    "ada_noncurable": [
+      "insolvency / assignment for benefit of creditors",
+      "failure to comply with Development Schedule",
+      "misrepresentation",
+      "felony conviction",
+      "unauthorized transfer or termination of any agreement",
+      "unauthorized trademark use or IP disclosure",
+      "failure 3 times in a year to pay financial obligations",
+      "failure 3 times in a calendar year to comply with ADA even if cured",
+      "cross-default"
+    ],
+    "evidence_pages": [37, 38, 39]
+  },
+  "transfer_restrictions": {
+    "fa_section": "13",
+    "transfer_fee": 10000,
+    "transfer_fee_waived_for_entity_control": true,
+    "franchisor_consent_standard": "not unreasonably withheld",
+    "transferee_must_assume_obligations": true,
+    "transferee_must_sign_then_current_fa": true,
+    "transferee_must_complete_training": true,
+    "right_of_first_refusal": true,
+    "rofr_section": "13E",
+    "rofr_basis": "match any offer received for assets or ownership interest",
+    "evidence_pages": [39, 40]
+  },
+  "death_disability": {
+    "appoint_replacement_within_days": 180,
+    "fa_section": "13D",
+    "evidence_pages": [40]
+  },
+  "non_compete_during_term": {
+    "fa_section": "8",
+    "scope": "no diversion of business; no ownership of or services for competing business; no employee interference",
+    "evidence_pages": [40]
+  },
+  "non_compete_post_term": {
+    "fa_section": "16D",
+    "duration_years": 2,
+    "premises_blocked": true,
+    "radius_miles": 20,
+    "radius_basis": "20 miles from any Cupbop Restaurant existing, operating, or under construction at termination",
+    "characterization": "broader than typical — most franchise systems use the franchisee's own premises radius only; this clause references ANY Cupbop, creating a near-total geographic block in dense Cupbop markets (UT/AZ/ID)",
+    "evidence_pages": [41]
+  },
+  "guaranty": {
+    "exhibit": "FA Exhibit H",
+    "guarantor_class": "all owners with at least 5% equity",
+    "structure": "unconditional, individual, joint and several",
+    "scope": "full, complete, timely payment AND performance of every term, covenant, condition of FA",
+    "covers_modifications": true,
+    "covers_assignments": true,
+    "survives_franchisee_insolvency": true,
+    "primary_and_independent_of_franchisee_liability": true,
+    "guarantor_waives_statute_of_limitations": true,
+    "guarantor_waives_right_to_require_pursuit_of_other_persons_or_security": true,
+    "guarantor_pays_collection_attorneys_fees": true,
+    "spousal_consent_required": "not specified in pages read",
+    "characterization": "Effectively unlimited personal guaranty by all 5%+ owners with full waiver of standard guarantor defenses",
+    "evidence_pages": [143, 144]
+  },
+  "liquidated_damages": {
+    "trigger": "termination by franchisor with cause OR franchisee termination without cause",
+    "formula": "sum of accrued royalties for prior 24 full calendar months + applicable taxes",
+    "fallback_if_remaining_term_short": "number of previous months reduced to remaining term months",
+    "due_within_days": 30,
+    "evidence_pages": [16]
+  },
+  "venue_and_dispute_resolution": {
+    "fa_arbitration_section": "18D",
+    "fa_venue_section": "18B",
+    "fa_choice_of_law_section": "18A",
+    "mediation_first": true,
+    "mediation_location": "Salt Lake County, Utah",
+    "arbitration_required_under_ada": true,
+    "ada_arbitration_section": "10A",
+    "litigation_venue": "Salt Lake County, Utah",
+    "choice_of_law": "Utah",
+    "subject_to_state_law_overrides": true,
+    "evidence_pages": [41, 42]
+  },
+  "insurance_requirements": {
+    "general_liability_per_occurrence": 2000000,
+    "general_liability_aggregate": 2000000,
+    "umbrella_allowed": 1000000,
+    "additional_insured_required": "Cupbop Franchise, LLC and affiliates",
+    "waiver_of_subrogation_required": true,
+    "business_interruption": "ALS or 12-month loss-of-income",
+    "workers_compensation_required": true,
+    "employer_liability": 1000000,
+    "franchisor_can_change_coverage_at_will": true,
+    "evidence_pages": [22]
+  },
+  "indemnification": {
+    "fa_section": "17",
+    "scope": "indemnify and hold harmless franchisor and affiliates for unauthorized mark use, law violations, restaurant operation, FA breach",
+    "evidence_pages": [25]
+  },
+  "force_majeure": {
+    "found": "not in pages read",
+    "evidence_pages": []
+  },
+  "distinctive_or_unusual_clauses": [
+    {"clause": "Non-compete radius 20 miles from ANY Cupbop", "why_distinctive": "Most concepts use franchisee's own premises radius. This clause makes post-term reentry into UT/AZ/ID effectively impossible."},
+    {"clause": "Cross-default: any default under any other agreement with franchisor or affiliates triggers noncurable default", "why_distinctive": "Combined with the parent-supplier relationship (Cupbop Co. supplies sauces/proteins), a payment dispute with the supplier could become an FA termination event."},
+    {"clause": "Sales performance kill switch (50% of trailing-12-month national average over 2 years)", "why_distinctive": "Most concepts use absolute revenue targets or quartile thresholds; the moving national-average benchmark means a franchisee can default by underperforming relative to a system-wide rising tide even if their absolute sales are stable."},
+    {"clause": "Renewal FA 'may be materially different'", "why_distinctive": "Open-ended future-burden risk. New royalty rates, new fees, new territory restrictions could all be imposed at renewal."},
+    {"clause": "Franchisor option to purchase at FMV upon termination/expiration", "why_distinctive": "Combined with right of first refusal on transfers, franchisor controls exit liquidity in both directions."},
+    {"clause": "Confidentiality clauses on franchisees that 'may restrict ability to speak openly'", "why_distinctive": "Disclosed in Item 20; reduces value of franchisee references in due diligence."}
+  ]
+}
