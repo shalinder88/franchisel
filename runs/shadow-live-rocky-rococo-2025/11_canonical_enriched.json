@@ -1,0 +1,52 @@
+{
+  "enrichment_version": "v1",
+  "base": "09_final_canonical.json",
+  "item19_enrichment": {
+    "type": "negative_disclosure",
+    "charts": [],
+    "population_counts": null,
+    "averages": null,
+    "medians": null,
+    "ranges": null,
+    "quartiles": null,
+    "ebitda": null,
+    "caveats": "Franchisor expressly does not make any representation and does not authorize employees/representatives to make any. Only existing-outlet records may be provided to prospective buyers purchasing that specific outlet."
+  },
+  "item20_yearly_activity": {
+    "2024": {"franchised_opened": 0, "franchised_closed": 0, "franchised_transfers_in_from_predecessor": 4, "franchised_end": 24, "company_end": 7, "predecessor_end": 0, "total_end": 31, "transfers_between_franchisees": 1},
+    "2023": {"franchised_opened": 4, "franchised_closed": 0, "franchised_end": 21, "company_end": 7, "predecessor_end": 3, "total_end": 31, "transfers_between_franchisees": 1, "affiliate_sold_to_franchisee": 1},
+    "2022": {"franchised_opened": 0, "franchised_closed": 0, "franchised_transfers_in_from_predecessor": 1, "franchised_end": 18, "company_end": 8, "predecessor_end": 6, "total_end": 32, "transfers_between_franchisees": 1}
+  },
+  "exhibit_structure": {
+    "FIN": {"audited": true, "auditor": "Vrakas, S.C.", "opinion": "unqualified", "fiscal_years": 3},
+    "FA": {"sections": "I-XXX", "extracted": false},
+    "FDA": {"extracted": false},
+    "CAL": {"extracted": false},
+    "ST": {"state_agencies_listed": ["IL", "IN", "MI", "MN", "WA", "WI"], "extracted": true}
+  },
+  "item21_structural_facts": {
+    "no_long_term_debt": true,
+    "no_going_concern": true,
+    "related_party_facility_zero_rent": true,
+    "related_party_mgmt_fees_fy2024_usd": 167977,
+    "cash_ratio_approx_fy2024": 2.11,
+    "equity_growth_3yr_usd": 135846,
+    "revenue_cagr_2022_to_2024_pct": 24.0
+  },
+  "item1_structural_facts": {
+    "entity_type": "Wisconsin C corporation",
+    "incorporation_date": "1995-06-13",
+    "affiliates_operating_stores_count": 5,
+    "affiliates_operating_stores_unit_total": 7,
+    "predecessor_active_period": "1982-1987"
+  },
+  "item6_fee_attributes": {
+    "royalty_has_step_down": true,
+    "step_down_threshold_usd": 425000,
+    "step_down_rate_pct": 3.5,
+    "marketing_fund_audited": false,
+    "marketing_fund_can_pay_rfc_staff_salaries": true,
+    "indemnification_capped": false,
+    "audit_cost_shift_trigger_pct": 2.0
+  }
+}

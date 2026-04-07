@@ -1,0 +1,227 @@
+{
+  "tables": [
+    {
+      "id": "item6_other_fees",
+      "item": 6,
+      "source_pages": [14, 15, 16, 17, 18],
+      "columns": ["Name of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty", "5% of gross sales (retro step-down to 3.5% if gross sales < $425,000/13-period FY or < $433,173/53-week FY)", "On or before Friday following end of preceding week", "Note 1"],
+        ["Marketing Fund", "Not to exceed 0.75% of gross sales", "On or before Friday following end of preceding week", "Note 2; currently collected"],
+        ["Advertising/Promotion/Local Advertising", "Not to exceed 3.5% of gross sales", "Weekly or within 90 days of end of week", "Note 3; tiered by media (1.5%/2.5%/3.5%); NOT currently collected"],
+        ["Transfer", "50% of then-current initial franchise fee", "Upon approval of assignment", "Note 4"],
+        ["Additional Training / On-Site Assistance", "Cost of lodging, meals, transport", "Subsequent to opening", "Note 5"],
+        ["Amounts Advanced by RFC", "Any amount advanced by RFC", "Immediately", null],
+        ["Interest", "Max allowed by law or 1.5% per month", "From date payment due until paid", "Note 6"],
+        ["Indemnification", "Max allowed by law", "From date payment due until paid", "Note 7"],
+        ["Audit", "Actual cost of audit plus interest on overdue amount", "Immediately (if deficiency > 2% of reported gross sales)", "Note 8"]
+      ],
+      "table_notes": "All fees imposed by and payable to RFC except local advertising, refurbishing, insurance premiums. Uniformly imposed. Royalty refund paid within 30 days of FY end if franchisee is current.",
+      "provenance": "Item 6 table pages 14-15 with Notes 1-8 on pages 15-18"
+    },
+    {
+      "id": "item7_initial_investment",
+      "item": 7,
+      "source_pages": [19, 20, 21],
+      "columns": ["Type of Expenditure", "Low ($)", "High ($)", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Franchise Fee", 25000, 25000, "Lump or 2x$12,500 installments", "At FDA/FA signing", "RFC"],
+        ["Equipment, Fixtures", 80000, 300000, "By agreement with vendors", "Before opening", "Vendors"],
+        ["Leasehold Improvements", 80000, 325000, "Progress payments", "Before opening", "Contractors"],
+        ["Opening Inventory", 4000, 12000, "Lump sum", "Before opening", "Suppliers"],
+        ["Security Deposits", 0, 4000, "Lump sum", "Before opening", "Landlord, utilities, insurance"],
+        ["Promotion (grand opening)", 5000, 5000, "As incurred", "Opening to 30 days", "Various media/PR"],
+        ["Pre-Opening Training", 1000, 5000, "As incurred", "Before opening", "Employees"],
+        ["Misc. (legal, permits)", 1000, 4500, "As incurred", "Before opening", "Attorneys, local gov, travel agent"],
+        ["Additional Funds (3 mos.)", 10000, 20000, "As incurred", "Before opening to first 3 months", "Contingency / various vendors"],
+        ["Insurance", 5000, 5000, "As incurred", "Before opening", "Vendor"],
+        ["TOTAL", 211000, 705500, null, null, null]
+      ],
+      "table_notes": "Free-standing footprint cost 'substantially higher' and not projected. Enclosed mall ~900 sf; strip center ~2,800 sf; free-standing ~3,800 sf. Additional funds estimate assumes owner-operated, excludes owner draw; RFC warns cash infusion may be needed 3-9+ months.",
+      "provenance": "Item 7 table pages 19-20, notes 1-10 pages 20-21"
+    },
+    {
+      "id": "item11_training_matrix",
+      "item": 11,
+      "source_pages": [36, 37],
+      "columns": ["Subject", "Classroom Hours", "OJT Hours", "Location"],
+      "rows": [
+        ["VCM (Dough Making)", 0, 12, "Wauwatosa, WI"],
+        ["Pizza Preparation", 0, 24, "Wauwatosa, WI"],
+        ["Quality Control/Oven", 0, 36, "Wauwatosa, WI"],
+        ["Bussing/DMO", 0, 4, "Wauwatosa, WI"],
+        ["Customer Service", 0, 36, "Wauwatosa, WI"],
+        ["Delivery", 0, 12, "Wauwatosa, WI"],
+        ["Administration", 0, 36, "Wauwatosa, WI"]
+      ],
+      "table_notes": "10-week pre-opening formal training at Mayfair Mall, Wauwatosa, WI, 5 days/week, 8-10 hrs/day. Optional up to 20 additional weeks OJT at affiliate restaurants during construction. All costs borne by RFC except franchisee's travel/lodging/meals. Plus 5 business days opening assistance.",
+      "provenance": "Item 11 training program table p.37"
+    },
+    {
+      "id": "item20_systemwide_summary",
+      "item": 20,
+      "source_pages": [48],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        ["Franchised", 2022, 19, 18, -1],
+        ["Franchised", 2023, 18, 21, 3],
+        ["Franchised", 2024, 21, 24, 3],
+        ["Company-Owned (affiliate)", 2022, 8, 8, 0],
+        ["Company-Owned (affiliate)", 2023, 8, 7, -1],
+        ["Company-Owned (affiliate)", 2024, 7, 7, 0],
+        ["Predecessor-Franchised", 2022, 7, 6, -1],
+        ["Predecessor-Franchised", 2023, 6, 3, -3],
+        ["Predecessor-Franchised", 2024, 3, 0, -3],
+        ["Total", 2022, 34, 32, -2],
+        ["Total", 2023, 32, 31, -1],
+        ["Total", 2024, 31, 31, 0]
+      ],
+      "table_notes": "Company-owned outlets are owned by affiliates of RFC (not RFC directly). Predecessor-franchised outlets were franchised by Rocky Rococo Corporation. Net total unchanged 2024 as predecessor-to-franchised transfers balanced growth.",
+      "provenance": "Item 20 systemwide summary p.48"
+    },
+    {
+      "id": "item20_transfers",
+      "item": 20,
+      "source_pages": [48],
+      "columns": ["State", "Year", "Transfers"],
+      "rows": [
+        ["Wisconsin", 2022, 1],
+        ["Wisconsin", 2023, 1],
+        ["Wisconsin", 2024, 1]
+      ],
+      "table_notes": "All transfers from franchisees to new owners (not franchisor).",
+      "provenance": "Item 20 transfers table p.48"
+    },
+    {
+      "id": "item20_franchised_status",
+      "item": 20,
+      "source_pages": [49],
+      "columns": ["State", "Year", "Start", "Opened", "Transfers/Predecessor", "Terminations", "Non-Renewals", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        ["Wisconsin", 2022, 18, 0, 1, 0, 0, 0, 0, 17],
+        ["Wisconsin", 2023, 17, 4, 0, 0, 0, 0, 0, 20],
+        ["Wisconsin", 2024, 20, 0, 4, 0, 0, 0, 0, 23],
+        ["Minnesota", 2022, 1, 0, 0, 0, 0, 0, 0, 1],
+        ["Minnesota", 2023, 1, 0, 0, 0, 0, 0, 0, 1],
+        ["Minnesota", 2024, 1, 0, 0, 0, 0, 0, 0, 1],
+        ["Total", 2022, 19, 0, 1, 0, 0, 0, 0, 18],
+        ["Total", 2023, 18, 4, 0, 0, 0, 0, 0, 21],
+        ["Total", 2024, 21, 0, 4, 0, 0, 0, 0, 24]
+      ],
+      "table_notes": "Zero terminations, non-renewals, reacquisitions, or ceased-other across all 3 years. 2023 growth driven by 4 new openings in Wisconsin. 2024 growth came entirely from predecessor-franchised transfer-ins (not new openings).",
+      "provenance": "Item 20 status of franchised outlets p.49"
+    },
+    {
+      "id": "item20_company_status",
+      "item": 20,
+      "source_pages": [49],
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired from Franchisee", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        ["Wisconsin", 2022, 8, 0, 0, 0, 0, 8],
+        ["Wisconsin", 2023, 8, 0, 0, 0, 1, 7],
+        ["Wisconsin", 2024, 7, 0, 0, 0, 0, 7],
+        ["Total", 2022, 8, 0, 0, 0, 0, 8],
+        ["Total", 2023, 8, 0, 0, 0, 1, 7],
+        ["Total", 2024, 7, 0, 0, 0, 0, 7]
+      ],
+      "table_notes": "Owned by affiliates of RFC. One affiliate store sold to a franchisee in 2023.",
+      "provenance": "Item 20 status of company-owned outlets p.49"
+    },
+    {
+      "id": "item20_projected_openings",
+      "item": 20,
+      "source_pages": [50],
+      "columns": ["State", "Signed FAs / Outlet Not Opened", "Projected New Franchised Next FY", "Projected New Company/Affiliate Next FY"],
+      "rows": [
+        ["Wisconsin", 0, 2, 0],
+        ["Minnesota", 0, 1, 0],
+        ["Total", 0, 3, 0]
+      ],
+      "table_notes": "As of December 30, 2024.",
+      "provenance": "Item 20 projected openings p.50"
+    },
+    {
+      "id": "item21_balance_sheet",
+      "item": 21,
+      "source_pages": [60],
+      "columns": ["Line", "FY2024 ($)", "FY2023 ($)", "FY2022 ($)"],
+      "rows": [
+        ["Cash and cash equivalents", 669550, 520944, 464742],
+        ["Franchisee receivables", 56629, 66295, 46549],
+        ["Other receivables", 32199, 21965, 10140],
+        ["Prepaid expenses", null, 10445, 6809],
+        ["Refundable income taxes", null, null, 3327],
+        ["Other assets", null, null, null],
+        ["Total current assets", 758378, 619649, 531567],
+        ["Net property and equipment", 8032, 5594, 29985],
+        ["TOTAL ASSETS", 766410, 630889, 546013],
+        ["Accounts payable", 63015, 9540, 14446],
+        ["Accrued payroll and related taxes", 49760, null, null],
+        ["Cooperative advertising fund surplus", 94480, 120256, 140738],
+        ["Gift cards payable", 108282, 79828, 61838],
+        ["Accrued expenses", null, 386, null],
+        ["Income taxes payable", null, 15766, null],
+        ["Total current liabilities", 317710, 251815, 235159],
+        ["Deferred income tax liability", 2000, 3000, null],
+        ["Common stock ($.02 par)", 40, 40, 40],
+        ["Additional paid-in capital", 49960, 49960, 49960],
+        ["Retained earnings", 507177, 436551, 371331],
+        ["Treasury stock (1,000 shares at cost)", -110477, -110477, -110477],
+        ["Total stockholder's equity", 446700, 376074, 310854],
+        ["TOTAL LIABILITIES AND EQUITY", 766410, 630889, 546013]
+      ],
+      "table_notes": "Audited by Vrakas, S.C. (Brookfield, WI), report dated March 6, 2025. Clean opinion. Fiscal year ends last Monday in December (52-53 week). Some intermediate line items partially OCR'd and may be approximations.",
+      "provenance": "Exhibit FIN balance sheets p.60"
+    },
+    {
+      "id": "item21_income_statement",
+      "item": 21,
+      "source_pages": [61],
+      "columns": ["Line", "FY2024 ($)", "FY2023 ($)", "FY2022 ($)"],
+      "rows": [
+        ["Royalty revenues", 1063524, 1063048, 742606],
+        ["Transfer fees", 50000, 12500, 12500],
+        ["Advertising fees", 269344, 208217, 145224],
+        ["Total revenues", 1382868, 1284610, 900330],
+        ["Selling, general and administrative expenses", 1284610, 1153853, 879085],
+        ["Income from operations", 98258, 90805, 21245],
+        ["Income tax expense", 27632, 25585, 6000],
+        ["Net income", 70626, 65220, 15245]
+      ],
+      "table_notes": "Royalty revenue essentially flat 2023→2024 despite 3 new stores — consistent with retroactive 3.5% rollback for stores below the $425k threshold. Strong jump 2022→2023 on sales recovery.",
+      "provenance": "Exhibit FIN statements of operations p.61"
+    },
+    {
+      "id": "item21_cash_flows",
+      "item": 21,
+      "source_pages": [62],
+      "columns": ["Line", "FY2024 ($)", "FY2023 ($)", "FY2022 ($)"],
+      "rows": [
+        ["Net income", 70626, 65220, 15245],
+        ["Depreciation", 3208, 3206, 1592],
+        ["Net cash from operating activities", 148606, 56202, -16038],
+        ["Net cash from investing activities (PP&E purchases)", 0, 0, -24681],
+        ["Net change in cash", 148606, 56202, -40719],
+        ["Cash beginning of year", 520944, 464742, 505461],
+        ["Cash end of year", 669550, 520944, 464742],
+        ["Income taxes paid", 42166, null, 9031]
+      ],
+      "table_notes": "Operating cash flow turned strongly positive 2023 after 2022 negative year. FY2024 operating cash flow $148,606.",
+      "provenance": "Exhibit FIN statements of cash flows p.62"
+    },
+    {
+      "id": "item21_marketing_fund_activity",
+      "item": 21,
+      "source_pages": [65],
+      "columns": ["Line", "FY2024 ($)", "FY2023 ($)", "FY2022 ($)"],
+      "rows": [
+        ["Beginning balance", 120256, 140738, 76991],
+        ["Contributions", 243568, 208217, 208971],
+        ["Spending", -269344, -228699, -145224],
+        ["Ending balance", 94480, 120256, 140738]
+      ],
+      "table_notes": "Marketing Fund is a contract liability on the balance sheet. Spent 66.83% of income on marketing/advertising, 3.63% on administration, 29.53% on PR in FY2024. Fund is unaudited; only an unaudited annual statement is prepared.",
+      "provenance": "Exhibit FIN Note 2 p.65"
+    }
+  ]
+}

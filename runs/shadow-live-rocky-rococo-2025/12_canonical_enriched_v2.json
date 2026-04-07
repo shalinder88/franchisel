@@ -1,0 +1,61 @@
+{
+  "enrichment_version": "v2",
+  "base": "11_canonical_enriched.json",
+  "item21_financial_structure_detail": {
+    "revenue_composition_fy2024": {
+      "royalty_pct_of_total": 76.9,
+      "advertising_fees_pct_of_total": 19.5,
+      "transfer_fees_pct_of_total": 3.6
+    },
+    "sga_as_pct_of_revenue_fy2024": 92.9,
+    "operating_margin_pct_fy2024": 7.1,
+    "net_margin_pct_fy2024": 5.1,
+    "return_on_equity_fy2024": 15.8,
+    "cash_as_pct_of_assets_fy2024": 87.4,
+    "marketing_fund_liability_fy2024_usd": 94480,
+    "gift_card_float_fy2024_usd": 108282
+  },
+  "item21_statement_detail": {
+    "balance_sheet_line_items_fy2024": {
+      "cash": 669550,
+      "franchisee_receivables": 56629,
+      "other_receivables": 32199,
+      "total_current_assets": 758378,
+      "net_ppe": 8032,
+      "total_assets": 766410,
+      "accounts_payable": 63015,
+      "accrued_payroll": 49760,
+      "coop_ad_fund_surplus": 94480,
+      "gift_cards_payable": 108282,
+      "total_current_liabilities": 317710,
+      "deferred_tax_liab": 2000,
+      "common_stock": 40,
+      "apic": 49960,
+      "retained_earnings": 507177,
+      "treasury_stock": -110477,
+      "total_equity": 446700
+    }
+  },
+  "item6_fee_detail": {
+    "royalty_step_down_logic": {
+      "fiscal_year_format": "52 or 53 weeks, last Monday in December",
+      "threshold_52week_usd": 425000,
+      "threshold_53week_usd": 433173,
+      "reduced_rate_pct": 3.5,
+      "refund_window_days": 30,
+      "refund_contingent_on_current_accounts": true
+    },
+    "local_ad_fund_logic": {
+      "currently_active": false,
+      "reinstatement_notice_days": 30,
+      "tiers_by_media": {"none": 1.5, "radio": 2.5, "tv": 3.5},
+      "franchisee_vote_required_to_increase_max_pct": 60
+    },
+    "grand_opening_advertising_min_usd": 5000,
+    "grand_opening_window_days": "30 days pre to 30 days post",
+    "interest_rate_default_monthly_pct": 1.5
+  },
+  "unresolveds_count": 8,
+  "contradictions_count": 3,
+  "state_addenda_overrides": {"states_with_addenda": [], "note": "No state addenda exhibit in filing"}
+}

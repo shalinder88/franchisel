@@ -1,0 +1,33 @@
+{
+  "patches_applied": [
+    {
+      "id": "R1",
+      "target": "09_final_canonical.json -> item17_renewal_termination_transfer_dispute",
+      "added": {"fa_section_pages": {"term_renewal": 69, "noncompete_post_term": 122, "computer_data_ownership": [98,99], "insurance": [105,106], "gift_cards": 107}},
+      "source": "runs/rocky-rococo-2025/RR-01_fa_operative_provisions.json"
+    },
+    {
+      "id": "R2",
+      "target": "09_final_canonical.json -> contradictions",
+      "added": {"id": "C4", "description": "Item 12: 1-mile radius protection vs 'you will not receive an exclusive territory' statement", "items_involved": [12], "resolution_status": "reconciled - 1-mile is same-brand non-encroachment zone; exclusivity disclaimer refers to channels/brands"},
+      "source": "runs/rocky-rococo-2025/09_final_canonical.json contradictions"
+    },
+    {
+      "id": "R3",
+      "target": "RT_depth_contract_burdens.json -> guaranty",
+      "added": {"guaranty_title": "Owner's Guarantee and Assumption of Franchisee's Obligations", "spousal": "not specified in FDD summary", "unlimited": "presumed, per FA form", "source": "runs/rocky-rococo-2025/09_final_canonical.json item21 guaranty"},
+      "source": "prior run"
+    },
+    {
+      "id": "R4",
+      "target": "09_final_canonical.json -> item17 dispute_resolution",
+      "added": {"jury_waiver": true, "source_pages_prior": "FA Sect. XXX"},
+      "source": "prior run"
+    },
+    {
+      "id": "R5",
+      "target": "unresolveds U1 / contradictions C1",
+      "action": "See 17_conflict_adjudication.md — explained (FA post-operation vs FDA pre-operation sequencing) but remains a buyer-beware unresolved legal-field conflict."
+    }
+  ]
+}

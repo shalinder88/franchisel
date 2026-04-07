@@ -1,0 +1,107 @@
+{
+  "source": "Item 17 table (pp.42-46) + Items 6, 11, 12 cross-references; Exhibit FA sections I-XXX referenced but not line-extracted beyond Item 17's 22-row table",
+  "grant_and_term": {
+    "grant": "Right to operate a single Restaurant at an approved Location in a specified Territory (FA Sect. I.A)",
+    "term_years": 15,
+    "renewal_years": 15,
+    "renewal_fee": 0,
+    "renewal_conditions": ["Good standing", "Sign then-current FA with possibly materially different terms", "Execute General Release", "Remodel restaurant", "Attend and complete re-training"]
+  },
+  "fees_and_payments": {
+    "initial_franchise_fee_usd": 25000,
+    "second_store_initial_fee_usd": 17500,
+    "royalty_pct": 5.0,
+    "royalty_stepdown_pct": 3.5,
+    "royalty_stepdown_threshold_13period_usd": 425000,
+    "royalty_stepdown_threshold_53week_usd": 433173,
+    "marketing_fund_pct_max": 0.75,
+    "local_ad_fund_pct_max": 3.5,
+    "local_ad_fund_tiered": true,
+    "grand_opening_advertising_min_usd": 5000,
+    "transfer_fee_pct_of_initial_fee": 50,
+    "computer_system_initial_cost_usd": 10000,
+    "interest_default_monthly_pct": 1.5,
+    "audit_cost_shift_trigger_pct": 2.0
+  },
+  "site_and_construction": {
+    "site_search_window_days_fda": 180,
+    "site_approval_window_days": 30,
+    "footprints_sqft": {"enclosed_mall": 900, "strip_center": 2800, "free_standing": 3800},
+    "rfc_provides_prototype_plans": true,
+    "rfc_provides_approved_supplier_list_for_fixtures_equipment_furniture_signs": true,
+    "rfc_installs_equipment": false,
+    "franchisee_must_deliver_signed_lease_within_days": 15,
+    "collateral_lease_assignment_possible": true
+  },
+  "training_and_operations": {
+    "formal_training_weeks": 10,
+    "formal_training_days_per_week": 5,
+    "formal_training_hours_per_day": "8-10",
+    "training_location": "Mayfair Mall, Wauwatosa, WI",
+    "optional_ojt_weeks_up_to": 20,
+    "opening_assistance_business_days": 5,
+    "initial_training_mandatory": true,
+    "failure_to_complete_training": "Grounds for termination at RFC's option",
+    "on_site_supervision": "On-site manager with full time/best efforts required; owner not required to be on-site but recommended"
+  },
+  "termination": {
+    "franchisee_termination": "None except FDA 180-day site window",
+    "franchisor_termination_without_cause": "None except FDA 180-day site window",
+    "curable_defaults_cure_period_days": 60,
+    "non_payment_cure_period_days": 10,
+    "non_curable_defaults": ["bankruptcy adjudication", "assignment for creditors", "abandonment", "criminal misconduct", "failure to comply", "material misrepresentation", "loss of possession", "unauthorized assignment", "unauthorized disclosure", "failure to maintain mandatory standards", "intentional understatement of gross sales", "repeated non-compliance"]
+  },
+  "transfer": {
+    "franchisor_approval_required": true,
+    "approval_standard": "not unreasonably withheld",
+    "transferee_conditions": ["qualifies", "accounts current", "transfer fee", "training", "release signed", "noncompete signed", "remodel", "current-form FA signed"],
+    "rofr": true,
+    "death_disability_window_months": 6
+  },
+  "default_and_cross_default": {
+    "cross_default": "Default under Franchise Agreement constitutes default under FDA; lease default is a curable FA default"
+  },
+  "noncompete": {
+    "during_term": "No involvement in any competing business anywhere (subject to state law) — FA Sect. XIV.A",
+    "post_term_fa": {"years": 1, "radius_miles": 5, "scope": "Designated area and any other System location"},
+    "post_term_fda": {"years": 1, "radius_miles": 50, "scope": "Designated area and any other System location"},
+    "contradiction_flag": "FA 5-mile vs FDA 50-mile post-term variant — unresolved"
+  },
+  "guaranty": {
+    "personal_guaranty_detail": "Not line-extracted from FA; not explicitly disclosed in Item 17",
+    "spousal_guaranty": null,
+    "unlimited": null
+  },
+  "liquidated_damages": {
+    "disclosed_in_item17": false,
+    "indemnification_in_lieu": "Uncapped indemnification with 11 subparts (Item 6 Note 7)"
+  },
+  "venue_and_dispute_resolution": {
+    "arbitration": true,
+    "administrator": "American Arbitration Association",
+    "venue": "AAA office nearest RFC's headquarters",
+    "governing_law": "Wisconsin",
+    "choice_of_forum_restriction": false,
+    "non_arbitrable_claims": ["Wisconsin Franchise Investment Law", "Wisconsin Fair Dealership Act (as amended by AB 218, Ch. 171, 1977 Wisconsin Laws)"]
+  },
+  "insurance": {
+    "required": "Franchisee must maintain insurance; details in FA not individually extracted; Item 6 lists insurance as annual expense",
+    "min_amounts_disclosed_in_item17": false
+  },
+  "indemnification": {
+    "cap": null,
+    "scope_subparts_count": 11,
+    "covers_rfc_negligence": true,
+    "source_pages": [17, 18]
+  },
+  "force_majeure": {"disclosed_in_item17": false},
+  "unusual_clauses": [
+    "Royalty retroactive step-down from 5% to 3.5% if annual gross sales fall below $425,000 — unusual for pizza QSR",
+    "RFC may use Marketing Fund money for its own staff salaries and administrative overhead",
+    "Marketing Fund is explicitly unaudited",
+    "Non-arbitrable carveout for Wisconsin Fair Dealership Act preserves franchisee's statutory relationship-law rights",
+    "1-mile territory with mall and CBD carveouts — franchisor can place a mall Rocky Rococo inside another franchisee's 1-mile zone",
+    "FA 5-mile vs FDA 50-mile post-term noncompete contradiction",
+    "Zero-rent related-party facility lease to the franchisor is a material unquantified subsidy"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "promoted_facts": [
+    {"fact": "Item 19 FPR is a negative disclosure with explicit contact (Thomas R. Hester III)", "source": "02_reader_report.md §F; p.47", "canonical_path": "item19_fpr.contact_for_unauthorized_claims", "already_present": true},
+    {"fact": "Zero-rent related party facility lease", "source": "02_reader_report.md §H; Note 5 p.67", "canonical_path": "item21_financials.related_party_transactions.facility_leased_by_related_party", "already_present": true},
+    {"fact": "Marketing Fund can pay RFC staff salaries and administrative overhead", "source": "02_reader_report.md §C; p.28", "canonical_path": "item11_training_and_assistance.marketing_fund_can_pay_rfc_staff_salaries", "already_present_in_enriched": true},
+    {"fact": "Item 11 paragraph stating RFC has no access to franchisee computer info contradicts RFC's retrieval rights in prior paragraph", "source": "02_reader_report.md §C; p.31-32", "canonical_path": "contradictions", "promoted": true},
+    {"fact": "Wisconsin Fair Dealership Act non-arbitrable carveout explicitly preserves franchisee's statutory relationship-law rights", "source": "02_reader_report.md §E; pp.46-47", "canonical_path": "item17_renewal_termination_transfer_dispute.dispute_resolution.non_arbitrable_claims", "already_present": true},
+    {"fact": "Franchisee entity count 27 vs outlet count 24 reconciles via multi-unit operators", "source": "02_reader_report.md §F; pp.50-53", "canonical_path": "item20_outlets.note_on_count_reconciliation", "already_present": true},
+    {"fact": "5,000 sqft+ mall carveout eliminates 1-mile territory protection in both directions", "source": "02_reader_report.md §D; p.38", "canonical_path": "item12_territory.carveouts", "already_present": true}
+  ],
+  "count_already_present": 6,
+  "count_newly_promoted": 1,
+  "notes": "Canonical was built directly from the same pagetext pass, so promotion audit yields primarily confirmations rather than new facts. The one promoted item is the Item 11 RFC-data-access contradiction, which has been added to the contradictions family below."
+}
