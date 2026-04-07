@@ -1,0 +1,60 @@
+{
+  "pass": "depth_1_financial_notes",
+  "source_exhibit": "J (pp 168-197)",
+  "text_layer_extractable": false,
+  "extraction_method": "text layer empty on Exhibit J pages; no vision OCR available in this run",
+  "facts_recovered_from_other_locations": [
+    {
+      "fact": "Franchisor stockholder's equity as of December 31, 2024 = $345,862",
+      "source": "Exhibit B — Virginia Addendum, Risk Factor section",
+      "source_pages": [137],
+      "significance": "High. The single-unit investment range ($540,700–$869,860) EXCEEDS stockholder's equity by a factor of ~1.6x to ~2.5x. This directly corroborates the Franchisor's cover-page Special Risk #2 ('Financial Condition') and the Illinois initial-fee deferral requirement.",
+      "confidence": "high"
+    },
+    {
+      "fact": "Franchisor total revenue 2024 = $2,171,363",
+      "source": "Item 8 narrative",
+      "source_pages": [22],
+      "significance": "Size of franchisor operating entity. Rebates from suppliers ($33,821) represented <2% of total revenue.",
+      "confidence": "high"
+    },
+    {
+      "fact": "Catapult (affiliate) received ~$36,000 in 2024 from franchisees' Student Hub purchases",
+      "source": "Item 8 narrative",
+      "source_pages": [22],
+      "significance": "Related-party revenue captured.",
+      "confidence": "high"
+    },
+    {
+      "fact": "Fiscal year ends December 31",
+      "source": "Item 21",
+      "source_pages": [53],
+      "confidence": "high"
+    },
+    {
+      "fact": "Audited statements cover FYE 12/31/2022, 12/31/2023, 12/31/2024",
+      "source": "Item 21",
+      "source_pages": [53],
+      "confidence": "high"
+    }
+  ],
+  "notes_not_recovered_due_to_image_only_exhibit_j": [
+    "Auditor name",
+    "Opinion type (unqualified / qualified / going-concern)",
+    "Balance sheet line items beyond stockholder's equity",
+    "Full income statement and cash flow",
+    "Revenue recognition policy",
+    "Depreciation/amortization methods and useful lives",
+    "Impairment policy and charges",
+    "Income tax provision detail (current vs deferred, rate reconciliation)",
+    "Lease accounting (operating vs finance, ROU assets, maturity schedule)",
+    "Variable interest entities",
+    "Subsequent events (including Crux acquisition, which closed 2025-08-29)",
+    "Complete related party transactions footnote",
+    "Advertising fund accounting",
+    "Distributions to members/owners",
+    "Leverage ratios"
+  ],
+  "unresolved_severity": "high",
+  "recommended_retry": "Vision OCR on Exhibit J (pp 168-197) OR benchmark pull from prior run runs/ivybrook-academy-2025/"
+}

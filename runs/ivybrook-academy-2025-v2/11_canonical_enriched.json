@@ -1,0 +1,69 @@
+{
+  "base": "05_canonical.json",
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "tables_structured": 5,
+    "chart_types": ["revenue_range", "single_unit_ebitda", "cohort_ebitda_avg_median", "cohort_ebitda_avg_median", "gr_by_classroom_count"],
+    "cost_stack_pct_gr_2_years_avg": {
+      "labor": 41, "rent": 20, "royalty": 6, "student_books_supplies_snacks": 2, "janitorial": 2, "insurance": 2, "advertising": 2, "utilities": 2, "brand_fund": 1, "maintenance_landscaping": 1, "cam": 1, "professional_services": 1, "computer_tech": "<1", "other": "<1", "licensing_dues": "<1"
+    },
+    "labor_plus_rent_pct_gr": 61,
+    "matched_or_exceeded_pct": {
+      "t2b_avg_gr": 46, "t2b_median_gr": 54, "t2b_avg_ebitda": 46, "t2b_median_ebitda": 50,
+      "t2c_avg_gr": 44, "t2c_median_gr": 50, "t2c_avg_ebitda": 39, "t2c_median_ebitda": 50
+    },
+    "outlier_flag_affiliate": {
+      "n_franchisees_matched_affiliate_gr": 0,
+      "n_franchisees_matched_affiliate_ebitda": 2,
+      "n_pool": 24
+    }
+  },
+  "item20_yearly_activity": {
+    "franchised": {"2022": {"start": 17, "opened": 9, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 26}, "2023": {"start": 26, "opened": 8, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 1, "end": 33}, "2024": {"start": 33, "opened": 8, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 1, "end": 40}},
+    "company": {"2022": {"start": 1, "end": 1}, "2023": {"start": 1, "end": 1}, "2024": {"start": 1, "end": 1}},
+    "state_footprint_end_2024": {"NC": 8, "SC": 6, "TX": 5, "CO": 3, "FL": 4, "GA": 4, "OH": 3, "TN": 2, "KY": 1, "NE": 1, "PA": 1, "VA": 1, "AR": 1},
+    "ceased_other_reasons_detail": [{"year": 2023, "state": "TX", "n": 1}, {"year": 2024, "state": "TX", "n": 1}]
+  },
+  "exhibit_structure": {
+    "letters_present": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "L", "M"],
+    "letter_missing": "K",
+    "exhibit_j_text_layer_empty": true,
+    "exhibit_j_requires_ocr": true,
+    "manual_total_pages": 242
+  },
+  "item21_structural_facts": {
+    "fiscal_year_end": "12-31",
+    "years_audited": ["2022", "2023", "2024"],
+    "exhibit_letter": "J",
+    "text_extractable": false,
+    "self_flagged_financial_condition_special_risk": true,
+    "illinois_initial_fee_deferral_due_to_financial_condition": true
+  },
+  "item1_structural_facts": {
+    "formation_state": "North Carolina",
+    "formation_date": "2015-03-26",
+    "sole_business_franchising_since_2015": true,
+    "pe_acquisition_closed": "2025-08-29",
+    "pe_parent": "Crux I Ivybrook (Aggregator), LP",
+    "pe_parent_address": "3838 Oak Lawn Ave # 1500, Dallas, TX 75219",
+    "delaware_holdco_stack": true,
+    "founder_retained_interest": true,
+    "affiliates_under_common_control": ["McWilliams Education Services, LLC (operates Weddington NC school)", "Catapult Industries, LLC (owns Student Hub software)"]
+  },
+  "item6_fee_attributes": {
+    "royalty_pct_gr": 7,
+    "brand_fund_pct_gr_current": 1,
+    "brand_fund_pct_gr_planned_2026": 2,
+    "local_marketing_pct_gr_min": 1,
+    "marketing_coop_pct_gr_max": 2,
+    "tech_fee_usd_monthly": 250,
+    "renewal_fee_rule": "max($10,000, 10% of then-current initial franchise fee)",
+    "liquidated_damages_rule": "avg_monthly_royalty_trailing_12 * months_remaining_in_term",
+    "holdover_operation_fee_rule": "max($1,000, 150% of weekly royalty) per week, capped at then-current initial franchise fee",
+    "noncompliance_fee_cap_usd_per_week": 1000,
+    "unauthorized_transfer_damages_usd": 25000,
+    "supplier_approval_fee_usd": 500,
+    "inspection_fee_usd": 750,
+    "late_fee_pct_per_month": 1.5
+  }
+}

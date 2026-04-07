@@ -1,0 +1,27 @@
+{
+  "run": "ivybrook-academy-2025-v2",
+  "pass": "B4_recovery_execution",
+  "backfills_from_benchmark": [
+    {"field": "item21.auditor_name", "value": "Reese CPA LLC, Ft. Collins, CO", "source_pages": [170]},
+    {"field": "item21.opinion_type", "value": "Unmodified (clean)", "source_pages": [170, 171]},
+    {"field": "item21.going_concern_language", "value": "No going concern modification; auditor explicitly evaluated", "source_pages": [170]},
+    {"field": "item21.net_income_2022", "value": 309239, "source_pages": [173]},
+    {"field": "item21.net_income_2023", "value": 435505, "source_pages": [173]},
+    {"field": "item21.net_income_2024", "value": 313055, "source_pages": [173]},
+    {"field": "item21.balance_sheet_2024.total_assets", "value": 3894365, "source_pages": [172]},
+    {"field": "item21.balance_sheet_2024.total_liabilities", "value": 3548503, "source_pages": [172]},
+    {"field": "item21.balance_sheet_2024.cash", "value": 300274, "source_pages": [172]},
+    {"field": "item21.balance_sheet_2024.deferred_franchise_fees", "value": 3434025, "source_pages": [172, 180]}
+  ],
+  "consistency_checks": [
+    {"check": "total_assets − total_liabilities == stockholders_equity", "values": [3894365, 3548503, 345862], "result": "PASS (3894365 - 3548503 = 345862)"}
+  ],
+  "conflicts_resolved": 0,
+  "gaps_closed": 6,
+  "gaps_remaining": [
+    "Full accounting-policy footnotes (revenue recognition, depreciation method, tax provision detail, lease accounting, subsequent events footnote including Crux acquisition) — benchmark did not recover these either.",
+    "Exhibit K labeling contradiction — structural, not a value to recover.",
+    "Customer-evaluation score threshold — not disclosed in either run."
+  ],
+  "source_provenance_tag": "B4_backfill:runs/ivybrook-academy-2025"
+}

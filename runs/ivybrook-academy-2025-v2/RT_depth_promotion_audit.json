@@ -1,0 +1,102 @@
+{
+  "pass": "depth_3_promotion_audit",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "Franchisor stockholder's equity at 2024-12-31 = $345,862",
+      "source_narrative_location": "Not in 02_reader_report.md (A1 missed it) — newly recovered from Virginia addendum in A2",
+      "source_pdf_pages": [137],
+      "promote_to_canonical_key": "item21_financial_statements.stockholders_equity_2024_usd",
+      "confidence": "high",
+      "significance": "Directly quantifies the financial-condition Special Risk. Investment range exceeds equity."
+    },
+    {
+      "id": "P2",
+      "fact": "Minnesota mandates 90-day termination notice with 60-day cure window and 180-day non-renewal notice (per Minn. Stat. §80C.14)",
+      "source_narrative_location": "Exhibit B Minnesota addendum §2",
+      "source_pdf_pages": [135],
+      "promote_to_canonical_key": "state_addenda_overrides.minnesota.termination_notice",
+      "confidence": "high"
+    },
+    {
+      "id": "P3",
+      "fact": "Minnesota voids forum-selection clause requiring out-of-state litigation (§80C.21 / Rule 2860.4400J); may still allow out-of-state mediation/arbitration",
+      "source_narrative_location": "Exhibit B Minnesota addendum §1",
+      "source_pdf_pages": [135],
+      "promote_to_canonical_key": "state_addenda_overrides.minnesota.forum_selection",
+      "confidence": "high"
+    },
+    {
+      "id": "P4",
+      "fact": "Minnesota prohibits requiring a release of Minnesota Franchises Act claims as a condition of renewal or assignment",
+      "source_narrative_location": "Exhibit B Minnesota addendum §4",
+      "source_pdf_pages": [135],
+      "promote_to_canonical_key": "state_addenda_overrides.minnesota.general_release",
+      "confidence": "high"
+    },
+    {
+      "id": "P5",
+      "fact": "Minnesota anti-waiver: franchisee cannot be required to waive compliance with §§80C.01–80C.22",
+      "source_narrative_location": "Exhibit B Minnesota addendum §5",
+      "source_pdf_pages": [135],
+      "promote_to_canonical_key": "state_addenda_overrides.minnesota.anti_waiver",
+      "confidence": "high"
+    },
+    {
+      "id": "P6",
+      "fact": "Virginia: termination only for 'reasonable cause' per §13.1-564; any contractual default ground not constituting reasonable cause is unenforceable",
+      "source_narrative_location": "Exhibit B Virginia addendum, Item 17(h) statement",
+      "source_pdf_pages": [137],
+      "promote_to_canonical_key": "state_addenda_overrides.virginia.termination_standard",
+      "confidence": "high"
+    },
+    {
+      "id": "P7",
+      "fact": "Virginia: undue-influence restriction — any provision inducing surrender of franchisee rights is unenforceable",
+      "source_narrative_location": "Exhibit B Virginia addendum",
+      "source_pdf_pages": [137],
+      "promote_to_canonical_key": "state_addenda_overrides.virginia.undue_influence",
+      "confidence": "high"
+    },
+    {
+      "id": "P8",
+      "fact": "Virginia anti-waiver: no questionnaire/acknowledgment can waive state franchise law claims or disclaim reliance on franchisor statements",
+      "source_narrative_location": "Exhibit B Virginia addendum",
+      "source_pdf_pages": [137],
+      "promote_to_canonical_key": "state_addenda_overrides.virginia.anti_waiver",
+      "confidence": "high"
+    },
+    {
+      "id": "P9",
+      "fact": "Illinois: initial franchise and development fee deferral until franchisor has satisfied pre-opening obligations AND franchisee has commenced operations, imposed by Illinois AG due to franchisor's financial condition",
+      "source_narrative_location": "Exhibit B Illinois addendum",
+      "source_pdf_pages": [133],
+      "promote_to_canonical_key": "state_addenda_overrides.illinois.fee_deferral",
+      "confidence": "high"
+    },
+    {
+      "id": "P10",
+      "fact": "Illinois: forum-selection voided per §4 of Illinois Franchise Disclosure Act (except mediation/arbitration may be out of state); IL law governs",
+      "source_narrative_location": "Exhibit B Illinois addendum",
+      "source_pdf_pages": [133, 134],
+      "promote_to_canonical_key": "state_addenda_overrides.illinois.forum_and_governing_law",
+      "confidence": "high"
+    },
+    {
+      "id": "P11",
+      "fact": "Illinois anti-waiver per §41 — condition voiding any waiver of IL FDA compliance",
+      "source_narrative_location": "Exhibit B Illinois addendum",
+      "source_pdf_pages": [134],
+      "promote_to_canonical_key": "state_addenda_overrides.illinois.anti_waiver",
+      "confidence": "high"
+    },
+    {
+      "id": "P12",
+      "fact": "Minnesota §80C.12(1)(g) Item 13: franchisor must protect franchisee's mark usage rights and indemnify against infringement claims",
+      "source_narrative_location": "Exhibit B Minnesota addendum §3",
+      "source_pdf_pages": [135],
+      "promote_to_canonical_key": "state_addenda_overrides.minnesota.trademark_protection",
+      "confidence": "high"
+    }
+  ]
+}

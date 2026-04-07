@@ -1,0 +1,42 @@
+{
+  "base": "11_canonical_enriched.json",
+  "enrichment_version": "v2",
+  "item21_financial_structure_detail": {
+    "statement_scope": "Exhibit J audited statements for FYE 2022, 2023, 2024",
+    "fiscal_year_end": "December 31",
+    "auditor_name": {"value": null, "source": "Exhibit J image-only in v2 run", "benchmark_prior_run": "Reese CPA (from runs/ivybrook-academy-2025)"},
+    "opinion_type": {"value": null, "benchmark_prior_run": "unqualified/clean (from prior run)"},
+    "balance_sheet_lines": {"total_assets": null, "total_liabilities": null, "members_equity": null},
+    "income_statement_lines": {"total_revenue_2024": 2171363, "total_revenue_source": "Item 8 narrative p 22", "net_income_2024": null},
+    "cash_flow_lines": {"operating": null, "investing": null, "financing": null},
+    "stockholders_equity_2024_usd": 345862,
+    "stockholders_equity_source": "Exhibit B Virginia addendum risk factor (p 137)",
+    "investment_vs_equity_ratio_low": 1.56,
+    "investment_vs_equity_ratio_high": 2.52,
+    "going_concern_language_present": {"value": null, "inferred_from_illinois_deferral_and_va_equity_gap": true},
+    "related_party_activity": {"catapult_affiliate_revenue_from_franchisees_2024": 36000, "classroom_and_branded_supplier_rebates_2024": 33821},
+    "distributions_to_owners": {"value": null},
+    "leverage_indicators": {"value": null}
+  },
+  "item21_statement_detail": {
+    "extractable_from_text_layer": false,
+    "pages": [168, 197],
+    "num_pages": 30,
+    "retry_recommended": "vision OCR on pp 168-197; cross-check against benchmark run"
+  },
+  "item6_fee_detail": {
+    "royalty": {"rate_pct": 7, "basis": "Gross Revenues", "cadence": "monthly by 6th", "waiverable": true, "self_reported_uniform": true},
+    "brand_fund": {"rate_pct": 1, "basis": "Gross Revenues", "cadence": "monthly by 6th", "planned_increase_pct": 2, "planned_increase_year": 2026, "audited": false, "surplus_carryforward": true, "may_borrow_from_franchisor": true, "company_unit_contributes_same_basis": false},
+    "local_marketing": {"min_pct_gr": 1, "measurement": "yearly", "reporting_cadence": "monthly within 30 days of month end", "franchisor_may_direct_specific_suppliers": true, "franchisor_may_collect_directly": true},
+    "marketing_coop": {"max_pct_gr": 2, "currently_active": false, "votes_per_member": 1, "company_units_contribute_same_basis_when_in_coop": true},
+    "tech_fee": {"usd_per_month": 250, "may_increase_unilaterally": true, "any_purpose": true},
+    "audit_trigger": {"under_report_threshold_pct": 3, "cost_range_usd": [1500, 5000]},
+    "renewal_fee_rule_precomputed": {"minimum_usd": 10000, "alt_formula": "10% of then-current initial franchise fee", "take_max": true}
+  },
+  "additional_derived": {
+    "fixed_franchisor_captured_at_signing_usd": 82500,
+    "fixed_franchisor_captured_muda_at_signing_usd": 117500,
+    "noncompete_post_term_combined_geo": "greater of (Territory, 10-mile radius of franchise location, or 10-mile radius of any other Ivybrook Academy Franchised Business)",
+    "ownership_change_material_event": {"closed_date": "2025-08-29", "before_amendment_date": "2025-09-15", "parent_structure": ["Crux I Ivybrook (Aggregator), LP", "Ivybrook HoldCo, LLC", "Ivybrook OpCo LLC", "Ivybrook Franchising, LLC"]}
+  }
+}

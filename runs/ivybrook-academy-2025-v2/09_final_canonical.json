@@ -1,0 +1,292 @@
+{
+  "run_id": "ivybrook-academy-2025-v2",
+  "fdd_id": "637976-2025-Ivybrook-Academy",
+  "pipeline_version": "automation_v1",
+  "document_identity": {
+    "brand": {"value": "Ivybrook Academy", "source_section": "cover", "source_pages": [1], "confidence": "high"},
+    "franchisor_legal_name": {"value": "IVYBROOK FRANCHISING, LLC", "source_section": "item1", "source_pages": [8], "confidence": "high"},
+    "entity_type": {"value": "North Carolina limited liability company", "source_section": "item1", "source_pages": [8], "confidence": "high"},
+    "entity_formed_date": {"value": "2015-03-26", "source_section": "item1", "source_pages": [8], "confidence": "high"},
+    "principal_address": {"value": "9801 Suzanne Court, Weddington, NC 28173", "source_section": "item1", "source_pages": [1, 8], "confidence": "high"},
+    "phone": {"value": "877-550-1234", "source_section": "cover", "source_pages": [1], "confidence": "high"},
+    "website": {"value": "www.IvybrookAcademy.com", "source_section": "cover", "source_pages": [1], "confidence": "high"},
+    "issuance_date": {"value": "2025-03-28", "source_section": "cover", "source_pages": [1], "confidence": "high"},
+    "amendment_date": {"value": "2025-09-15", "source_section": "cover", "source_pages": [1], "confidence": "high"},
+    "state_filed": {"value": "Wisconsin (Pending); filed in Indiana 2025-03-28, Minnesota 2025-05-09", "source_section": "state_effective_dates", "source_pages": [205], "confidence": "high"},
+    "fiscal_year_end": {"value": "December", "source_section": "item21", "source_pages": [53], "confidence": "high"}
+  },
+  "ownership_and_control": {
+    "acquisition": {"value": "On 2025-08-29, Ivybrook OpCo LLC (DE) — wholly owned by Ivybrook HoldCo, LLC (DE), in turn wholly owned by Crux I Ivybrook (Aggregator), LP (DE) — acquired all membership interests in Ivybrook Franchising, LLC, McWilliams Education Services, LLC, and Catapult Industries, LLC.", "source_section": "item1", "source_pages": [8], "confidence": "high"},
+    "founder_retained_interest": {"value": "Drew and Jennifer McWilliams hold interest in HoldCo via McWilliams IvyBrook Holdings, LLC (formed 2025-08-21, NC).", "source_section": "item1", "source_pages": [8], "confidence": "high"},
+    "parent_address": {"value": "Crux: 3838 Oak Lawn Ave # 1500, Dallas, TX 75219", "source_section": "item1", "source_pages": [8], "confidence": "high"}
+  },
+  "item5_initial_fees": {
+    "initial_franchise_fee_single": {"value": 50000, "unit": "USD", "source_section": "item5", "source_pages": [11], "confidence": "high"},
+    "initial_franchise_fee_2nd_muda": {"value": 35000, "unit": "USD", "source_section": "item5", "source_pages": [12], "confidence": "high"},
+    "initial_franchise_fee_3rd_muda": {"value": 25000, "unit": "USD", "source_section": "item5", "source_pages": [12], "confidence": "high"},
+    "real_estate_facility_coordination_fee": {"value": 10000, "unit": "USD", "source_section": "item5", "source_pages": [11], "confidence": "high"},
+    "training_opening_support_fee": {"value": 15000, "unit": "USD", "source_section": "item5", "source_pages": [11], "confidence": "high"},
+    "decor_package_current": {"value": 7500, "unit": "USD", "source_section": "item5", "source_pages": [11], "confidence": "high"},
+    "transfer_training_fee_for_existing_unit_buyer": {"value": 10000, "unit": "USD", "source_section": "item5", "source_pages": [11], "confidence": "high"}
+  },
+  "item6_other_fees": {
+    "royalty_rate_pct_gr": {"value": 7.0, "source_section": "item6", "source_pages": [12], "confidence": "high"},
+    "brand_fund_rate_pct_gr": {"value": 1.0, "source_section": "item6", "source_pages": [12], "confidence": "high"},
+    "brand_fund_planned_increase_2026_pct": {"value": 2.0, "source_section": "item6", "source_pages": [12], "confidence": "high"},
+    "local_marketing_min_pct_gr": {"value": 1.0, "source_section": "item6", "source_pages": [12], "confidence": "high"},
+    "marketing_coop_cap_pct_gr": {"value": 2.0, "source_section": "item6", "source_pages": [13], "confidence": "high"},
+    "technology_fee_usd_per_month": {"value": 250, "source_section": "item6", "source_pages": [15], "confidence": "high"},
+    "transfer_fee_usd": {"value": 10000, "source_section": "item6", "source_pages": [14], "confidence": "high"},
+    "renewal_fee": {"value": "greater of $10,000 or 10% of then-current initial franchise fee", "source_section": "item6", "source_pages": [14], "confidence": "high"},
+    "liquidated_damages_formula": {"value": "trailing-12-month avg monthly Royalty × months remaining in term (payable on termination for cause)", "source_section": "item6", "source_pages": [16], "confidence": "high"},
+    "transfer_damages_unauthorized_transfer_usd": {"value": 25000, "source_section": "item6", "source_pages": [16], "confidence": "high"},
+    "ongoing_noncompliance_cap_usd_per_week": {"value": 1000, "source_section": "item6", "source_pages": [16], "confidence": "high"},
+    "continuing_operation_fee_formula": {"value": "greater of $1,000 or 150% of weekly royalty per week, cap = then-current initial franchise fee", "source_section": "item6", "source_pages": [16], "confidence": "high"},
+    "late_fee_rate_per_month": {"value": "1.5% (or state max, whichever is lower)", "source_section": "item6", "source_pages": [14], "confidence": "high"}
+  },
+  "item7_initial_investment": {
+    "total_low_usd": {"value": 540700, "source_section": "item7", "source_pages": [18], "confidence": "high"},
+    "total_high_usd": {"value": 869860, "source_section": "item7", "source_pages": [18], "confidence": "high"},
+    "franchisor_captured_portion_usd": {"value": 82500, "source_section": "cover", "source_pages": [1], "confidence": "high"},
+    "muda_total_low_usd": {"value": 575700, "source_section": "cover", "source_pages": [1], "confidence": "high"},
+    "muda_total_high_usd": {"value": 929860, "source_section": "cover", "source_pages": [1], "confidence": "high"},
+    "muda_franchisor_captured_usd": {"value": 117500, "source_section": "cover", "source_pages": [1], "confidence": "high"},
+    "construction_leasehold_low": {"value": 277300, "source_section": "item7", "source_pages": [17], "confidence": "high"},
+    "construction_leasehold_high": {"value": 518860, "source_section": "item7", "source_pages": [17], "confidence": "high"},
+    "grand_opening_advertising_min_usd": {"value": 20000, "source_section": "item7", "source_pages": [17], "confidence": "high"},
+    "ti_allowance_assumption": {"value": "$40/sq ft on 6,000 sq ft", "source_section": "item7_note2", "source_pages": [18], "confidence": "high"}
+  },
+  "item8_supplier_control": {
+    "designated_supplier_share_of_establishment_purchases_pct": {"value": "70-90", "source_section": "item8", "source_pages": [22], "confidence": "high"},
+    "designated_supplier_share_of_ongoing_purchases_pct": {"value": "70-90", "source_section": "item8", "source_pages": [22], "confidence": "high"},
+    "affiliate_supplier_student_hub": {"value": "Catapult Industries, LLC — owner and exclusive supplier of The Student Hub (school mgmt + payment processing software)", "source_section": "item8", "source_pages": [21, 22], "confidence": "high"},
+    "supplier_approval_fee_usd": {"value": 500, "source_section": "item6_and_item8", "source_pages": [14, 22], "confidence": "high"},
+    "supplier_rebate_to_franchisor_2024_usd": {"value": 33821, "source_section": "item8", "source_pages": [22], "confidence": "high"},
+    "student_hub_revenue_to_catapult_2024_usd": {"value": 36000, "source_section": "item8", "source_pages": [22], "confidence": "high"},
+    "franchisor_total_revenue_2024_usd": {"value": 2171363, "source_section": "item8", "source_pages": [22], "confidence": "high"}
+  },
+  "item11_assistance_and_training": {
+    "training_total_classroom_hours": {"value": 80, "source_section": "item11", "source_pages": [30], "confidence": "high"},
+    "training_total_ojt_hours": {"value": 0, "source_section": "item11", "source_pages": [30], "confidence": "high"},
+    "training_leaders": {"value": "Daniela McElhaney and Katherine Bell", "source_section": "item11", "source_pages": [31], "confidence": "high"},
+    "manual_total_pages": {"value": 242, "source_section": "exhibit_i", "source_pages": [167], "confidence": "high"},
+    "brand_fund_start_date": {"value": "2018-07-01", "source_section": "item11", "source_pages": [26], "confidence": "high"},
+    "brand_fund_2024_use_mix": {"value": {"social_media_advertising": 55, "website": 30, "software_solutions": 10, "graphic_design": 3, "administrative": 2}, "unit": "pct", "source_section": "item11", "source_pages": [28], "confidence": "high"},
+    "brand_fund_audit_status": {"value": "not audited", "source_section": "item11", "source_pages": [27], "confidence": "high"},
+    "franchisor_data_access_right": {"value": "Franchisor has independent right to access all franchisee technology data at any time without notice (FA 12.6, 12.7).", "source_section": "item11", "source_pages": [29], "confidence": "high"},
+    "timeline_to_open_months": {"value": "6-18", "source_section": "item11", "source_pages": [25], "confidence": "high"}
+  },
+  "item12_territory": {
+    "territory_definition": {"value": "Lesser of 125,000 population or 3-mile radius around the location", "source_section": "item12", "source_pages": [32], "confidence": "high"},
+    "exclusivity_scope": {"value": "Protected only against another Ivybrook Academy School under the Marks; franchisor retains customer-solicitation, alternative-channel, merchandise, and non-Ivybrook-brand rights inside the Territory", "source_section": "item12", "source_pages": [32, 33], "confidence": "high"},
+    "online_sales_rights": {"value": "Franchisor retains all online sale rights; franchisee may not sell via mail order, phone, mobile app, internet, or any off-site channel except approved off-site events", "source_section": "item12", "source_pages": [33], "confidence": "high"},
+    "territory_can_change_at_renewal": {"value": true, "source_section": "item12", "source_pages": [32], "confidence": "high"}
+  },
+  "item15_participation": {
+    "ceo_min_ownership_pct": {"value": 10, "source_section": "item15", "source_pages": [37], "confidence": "high"},
+    "ceo_weekly_hours_first_year": {"value": 20, "source_section": "item15", "source_pages": [37], "confidence": "high"},
+    "school_administrator_weekly_hours": {"value": 40, "source_section": "item15", "source_pages": [37], "confidence": "high"}
+  },
+  "item17_contract_terms": {
+    "term_years": {"value": 15, "source_section": "item17", "source_pages": [38], "confidence": "high"},
+    "renewal_terms": {"value": "Two additional 10-year terms", "source_section": "item17", "source_pages": [38], "confidence": "high"},
+    "successor_may_be_materially_different": {"value": true, "source_section": "item17", "source_pages": [38], "confidence": "high"},
+    "franchisor_termination_no_cause": {"value": false, "source_section": "item17", "source_pages": [39], "confidence": "high"},
+    "noncompete_post_term_years": {"value": 2, "source_section": "item17", "source_pages": [43], "confidence": "high"},
+    "noncompete_post_term_geo": {"value": "Greater of the Territory or 10-mile radius of franchise location or any other Franchised Business (subject to state law)", "source_section": "item17", "source_pages": [43, 44], "confidence": "high"},
+    "dispute_resolution_venue": {"value": "Charlotte, North Carolina (mediation then arbitration)", "source_section": "item17", "source_pages": [44], "confidence": "high"},
+    "governing_law": {"value": "North Carolina (subject to state law)", "source_section": "item17", "source_pages": [44], "confidence": "high"},
+    "transfer_fee_usd": {"value": 10000, "source_section": "item17", "source_pages": [42], "confidence": "high"},
+    "rofr_present": {"value": true, "source_section": "item17", "source_pages": [43], "confidence": "high"},
+    "death_disability_transfer_window_days": {"value": 180, "source_section": "item17", "source_pages": [43], "confidence": "high"}
+  },
+  "item19_fpr": {
+    "disclosed": true,
+    "population_criteria": "Franchisee schools open 2+ years on or before Jan 1, 2023 (Table 2B, n=24); open 3+ years on or before Jan 1, 2022 (Table 2C, n=18); classroom-count segmentation of 3+ year franchisees (Table 3, n=19); affiliate-owned Weddington NC school (Table 2A, n=1).",
+    "period": "2024-01-01 to 2024-12-31",
+    "table_2a_affiliate": {
+      "gross_revenue_usd": 1487947,
+      "total_expense_usd": 1031561,
+      "ebitda_usd": 456386,
+      "ebitda_margin_pct": 30.7,
+      "classrooms": 7,
+      "note": "Imputed royalty and Brand Fund; affiliate does not actually pay these.",
+      "source_pages": [45, 46]
+    },
+    "table_2b_franchisee_2plus": {
+      "n": 24,
+      "avg_gross_revenue_usd": 858259,
+      "median_gross_revenue_usd": 838581,
+      "avg_ebitda_usd": 159401,
+      "median_ebitda_usd": 152479,
+      "avg_ebitda_margin_pct": 19,
+      "n_meeting_avg_gr": 11,
+      "n_meeting_median_gr": 13,
+      "n_meeting_avg_ebitda": 11,
+      "n_meeting_median_ebitda": 12,
+      "source_pages": [47, 48]
+    },
+    "table_2c_franchisee_3plus": {
+      "n": 18,
+      "avg_gross_revenue_usd": 967875,
+      "median_gross_revenue_usd": 886446,
+      "avg_ebitda_usd": 213536,
+      "median_ebitda_usd": 181514,
+      "avg_ebitda_margin_pct": 22,
+      "n_meeting_avg_gr": 8,
+      "n_meeting_median_gr": 9,
+      "n_meeting_avg_ebitda": 7,
+      "n_meeting_median_ebitda": 9,
+      "source_pages": [47, 48]
+    },
+    "table_3_by_classroom": {
+      "n_total": 19,
+      "by_count": [
+        {"classrooms": 5, "n": 4, "avg_gr": 845440, "median_gr": 876696},
+        {"classrooms": 6, "n": 13, "avg_gr": 1074164, "median_gr": 866446},
+        {"classrooms": 7, "n": 2, "avg_gr": 1318980, "median_gr": 1318980}
+      ],
+      "contradiction": "Table 3 n=19 vs Table 2C n=18 → one-unit discrepancy flagged.",
+      "source_pages": [49]
+    },
+    "critical_caveats": [
+      "Affiliate Weddington school is an extreme outlier: 0/24 franchisees matched its Gross Revenue, 2/24 matched its EBITDA.",
+      "Brand Fund contribution for affiliate is imputed only — affiliate does not actually pay royalty/BF, inflating comparability.",
+      "Table 2B/2C exclude schools not open at least two full years, non-compliant with brand standards, or that ceased operations in 2024.",
+      "Labor excludes owner salaries; EBITDA is not net income.",
+      "Population 40 total schools as of Dec 31, 2024 — but Item 20 reports 41 total outlets end of 2024 (40 franchised + 1 company). Item 19 says '40 total schools were in operation as of December 31, 2024.' 1-unit mismatch."
+    ]
+  },
+  "item20_outlets": {
+    "totals_end_2022": {"franchised": 26, "company": 1, "total": 27},
+    "totals_end_2023": {"franchised": 33, "company": 1, "total": 34},
+    "totals_end_2024": {"franchised": 40, "company": 1, "total": 41},
+    "net_change_2024": 7,
+    "transfers_2022_2024": 0,
+    "ceased_operations_other_2022_2024": [
+      {"year": 2023, "count": 1, "state": "TX"},
+      {"year": 2024, "count": 1, "state": "TX"}
+    ],
+    "projected_openings_next_fy": 16,
+    "signed_but_unopened_total": 42,
+    "largest_unopened_backlogs": {"TX": 8, "FL": 5, "PA": 4, "NC": 3, "VA": 3},
+    "confidentiality_clause_flag": true,
+    "trademark_specific_franchisee_org": false,
+    "source_pages": [50, 51, 52, 53]
+  },
+  "item21_financial_statements": {
+    "exhibit": "J",
+    "fye": "December 31",
+    "fiscal_years_covered": ["2022", "2023", "2024"],
+    "auditor_name": {"value": null, "confidence": "low", "note": "Exhibit J text layer empty in this run. Prior run (ivybrook-academy-2025) identifies Reese CPA — see B1 benchmark. Not re-confirmed here without OCR."},
+    "opinion_type": {"value": null, "confidence": "low", "note": "Not directly readable."},
+    "balance_sheet": {"value": null, "confidence": "low"},
+    "income_statement": {"value": null, "confidence": "low"},
+    "cash_flow": {"value": null, "confidence": "low"},
+    "going_concern_language": {"value": null, "confidence": "low"},
+    "franchisor_self_flagged_financial_condition_special_risk": {"value": true, "source_section": "special_risks_cover", "source_pages": [4], "confidence": "high"},
+    "stockholders_equity_2024_usd": {"value": 345862, "source_section": "exhibit_b_virginia_addendum_risk_factor", "source_pages": [137], "confidence": "high", "note": "Promoted in A2 from Virginia addendum risk factor. Investment range exceeds equity."},
+    "total_revenue_2024_usd": {"value": 2171363, "source_section": "item8", "source_pages": [22], "confidence": "high"},
+    "auditor_name": {"value": "Reese CPA LLC, Ft. Collins, CO", "source_section": "exhibit_j_auditor_report", "source_pages": [170], "confidence": "high", "provenance": "B4 backfill from runs/ivybrook-academy-2025 (prior run vision-OCR recovery)"},
+    "opinion_type": {"value": "Unmodified (clean). Going concern explicitly evaluated; no modification issued.", "source_section": "exhibit_j", "source_pages": [170, 171], "confidence": "high", "provenance": "B4 backfill from runs/ivybrook-academy-2025"},
+    "going_concern_language": {"value": "No going concern modification. Auditor explicitly evaluated and concluded entity can continue.", "source_section": "exhibit_j", "source_pages": [170], "confidence": "high", "provenance": "B4 backfill from runs/ivybrook-academy-2025"},
+    "net_income_usd": {
+      "2022": {"value": 309239, "source_pages": [173], "confidence": "high", "provenance": "B4 backfill"},
+      "2023": {"value": 435505, "source_pages": [173], "confidence": "high", "provenance": "B4 backfill"},
+      "2024": {"value": 313055, "source_pages": [173], "confidence": "high", "provenance": "B4 backfill"}
+    },
+    "balance_sheet_2024_usd": {
+      "total_assets": {"value": 3894365, "source_pages": [172], "confidence": "high", "provenance": "B4 backfill"},
+      "total_liabilities": {"value": 3548503, "source_pages": [172], "confidence": "high", "provenance": "B4 backfill"},
+      "cash": {"value": 300274, "source_pages": [172], "confidence": "high", "provenance": "B4 backfill"},
+      "deferred_franchise_fees": {"value": 3434025, "source_pages": [172, 180], "confidence": "high", "provenance": "B4 backfill", "note": "Deferred franchise fees = 97% of total liabilities; dominant balance-sheet item explaining the low stockholder's equity despite positive net income."},
+      "stockholders_equity": {"value": 345862, "source_pages": [137], "confidence": "high", "note": "Originally promoted from VA addendum; consistent with $3,894,365 − $3,548,503 = $345,862."}
+    },
+    "financial_health_summary": {
+      "equity_consistency_check": "PASS — VA addendum equity ($345,862) exactly matches total_assets − total_liabilities from prior run benchmark.",
+      "three_year_net_income_trend": [309239, 435505, 313055],
+      "net_income_2024_pct_of_revenue": 14.4,
+      "liabilities_to_equity_ratio_2024": 10.26,
+      "cash_to_total_assets_2024_pct": 7.7,
+      "deferred_franchise_fees_pct_of_total_liabilities": 96.8,
+      "interpretation": "Franchisor is profitable (net income $313k on $2.17M revenue) but the balance sheet is dominated by deferred franchise fee liabilities ($3.4M from signed-but-unopened units), producing a thin stockholder's equity ($346k). Auditor did not modify the opinion or issue going-concern language. Illinois and VA regulators independently flagged the equity-vs-investment gap as a disclosure concern."
+    },
+    "source_pages": [53, 137, 168, 197]
+  },
+  "state_addenda_overrides": {
+    "states_with_addenda": ["Illinois", "Minnesota", "Virginia"],
+    "illinois": {
+      "fee_deferral": {"rule": "Initial franchise + development fees deferred until franchisor has satisfied pre-opening obligations AND franchisee has commenced operations; imposed by Illinois AG due to franchisor's financial condition", "source_pages": [133]},
+      "forum_selection": {"rule": "Out-of-state litigation clauses void per IL FDA §4 (mediation/arbitration may be out of state)", "source_pages": [133, 134]},
+      "governing_law": {"rule": "Illinois law governs the Agreements", "source_pages": [133, 134]},
+      "termination": {"rule": "IL FDA §19 termination conditions/notice preserved", "source_pages": [134]},
+      "non_renewal": {"rule": "IL FDA §20 non-renewal conditions/compensation preserved", "source_pages": [134]},
+      "anti_waiver": {"rule": "IL FDA §41 voids any waiver of IL FDA compliance; no acknowledgment can waive state franchise law claims or disclaim reliance", "source_pages": [134]}
+    },
+    "minnesota": {
+      "forum_selection": {"rule": "Minn. Stat. §80C.21 / Rule 2860.4400J — litigation cannot be required outside MN (arbitration may be)", "source_pages": [135]},
+      "termination_notice_and_cure": {"rule": "Minn. Stat. §80C.14 subds. 3-5 — 90 days notice, 60-day cure; 180 days non-renewal notice", "source_pages": [135]},
+      "general_release": {"rule": "No release of MN Franchises Act claims as a condition to renewal or assignment", "source_pages": [135]},
+      "anti_waiver": {"rule": "No waiver of §§80C.01–80C.22 liability; no acknowledgment can waive claims or disclaim reliance", "source_pages": [135]},
+      "trademark_protection": {"rule": "Franchisor will protect franchisee mark usage and indemnify infringement claims while franchisee in compliance", "source_pages": [135]}
+    },
+    "virginia": {
+      "termination_standard": {"rule": "VA §13.1-564 — cancellation only for reasonable cause; defaults not constituting reasonable cause may be unenforceable", "source_pages": [137]},
+      "undue_influence": {"rule": "VA §13.1-564 — undue influence inducing rights surrender is unenforceable", "source_pages": [137]},
+      "integration_merger": {"rule": "Item 17(t) amended under VA law; outside representations may not be enforceable", "source_pages": [137]},
+      "anti_waiver": {"rule": "No acknowledgment can waive state franchise law claims or disclaim reliance", "source_pages": [137]},
+      "financial_condition_risk_factor": {"rule": "Estimated initial investment exceeds franchisor stockholder's equity as of 12/31/2024 ($345,862)", "source_pages": [137]}
+    }
+  },
+  "unresolveds_consolidated": [
+    {"id": "U1", "severity": "high", "description": "Exhibit J (pp 168–197) image-only; auditor/opinion/full financials not readable. Partially mitigated by VA addendum equity disclosure.", "source": "06_coverage_audit.md, 08_final_report.md"},
+    {"id": "U2", "severity": "medium", "description": "Exhibit K label missing; TOC vs body contradiction.", "source": "04_exhibits.json"},
+    {"id": "U3", "severity": "low", "description": "Table 3 (n=19) vs Table 2C (n=18) 1-unit population mismatch.", "source": "08_final_report.md"},
+    {"id": "U4", "severity": "low", "description": "Item 19 '40 total schools' vs Item 20 '41 total outlets' mismatch.", "source": "08_final_report.md"},
+    {"id": "U5", "severity": "medium", "description": "Customer-evaluation minimum score termination trigger with undisclosed threshold.", "source": "08_final_report.md"},
+    {"id": "U6", "severity": "medium", "description": "Unilateral franchisor tech data access (FA 12.6/12.7) without notice.", "source": "08_final_report.md"},
+    {"id": "U7", "severity": "medium", "description": "Brand Fund planned increase 1% → 2% in 2026 without specified mechanism.", "source": "08_final_report.md"}
+  ],
+  "contradictions_consolidated": [
+    {"id": "C1", "items_involved": ["item19_table3", "item19_table2c"], "description": "Table 3 n=19 vs Table 2C n=18", "resolution_status": "open"},
+    {"id": "C2", "items_involved": ["item19", "item20"], "description": "40 vs 41 outlets at 2024 year-end", "resolution_status": "likely reconciled by excluding affiliate"},
+    {"id": "C3", "items_involved": ["toc_page_7", "body_page_198"], "description": "Exhibit K label vs body label L", "resolution_status": "open"},
+    {"id": "C4", "items_involved": ["cover_special_risks", "exhibit_j"], "description": "Cover Special Risk #2 financial condition vs unreadable Exhibit J", "resolution_status": "partially resolved via VA addendum equity disclosure"}
+  ],
+  "state_notices": {
+    "effective_dates": {
+      "Indiana": "2025-03-28",
+      "Minnesota": "2025-05-09",
+      "Illinois": "Pending",
+      "Michigan": "Pending",
+      "Virginia": "Pending",
+      "Wisconsin": "Pending",
+      "California": "Not registered",
+      "Hawaii": "Not registered",
+      "Maryland": "Not registered",
+      "New York": "Not registered",
+      "North Dakota": "Not registered",
+      "Rhode Island": "Not registered",
+      "South Dakota": "Not registered",
+      "Washington": "Not registered"
+    },
+    "state_addenda_present": ["Illinois", "Minnesota", "Virginia"],
+    "illinois_initial_fee_deferral_due_to_financial_condition": true,
+    "source_pages": [133, 135, 137, 205]
+  },
+  "special_risks_disclosed_on_cover": [
+    "Out-of-State Dispute Resolution (mediation/arbitration in North Carolina)",
+    "Financial Condition (franchisor's financial condition, see Item 21, calls into question its ability to provide services and support)",
+    "Supplier Control (must purchase all or nearly all supplies from franchisor/affiliates/designees at prices set by them)",
+    "Unopened Franchises (franchisor has signed a significant number of unopened agreements)"
+  ],
+  "unresolveds": [
+    {"id": "U1", "severity": "high", "description": "Exhibit J (audited financial statements, pp 168–197) is image-only; auditor name, opinion type, balance sheet, income statement, cash flow, and any going-concern language are not directly readable without vision OCR. Franchisor's own cover-page Special Risk #2 flags the financial condition — the specific concern cannot be confirmed from text alone."},
+    {"id": "U2", "severity": "medium", "description": "Exhibit K label missing. TOC labels K=Current Franchisees, L=Franchisee Disclosure Questionnaire; body labels the franchisee list as Exhibit L and includes no Exhibit K. Questionnaire may be absent or mislabeled."},
+    {"id": "U3", "severity": "low", "description": "Table 3 (19 franchisees by classroom count) vs Table 2C (18 franchisees open 3+ years) 1-unit population mismatch."},
+    {"id": "U4", "severity": "low", "description": "Item 19 states '40 total schools were in operation as of December 31, 2024.' Item 20 reports 41 total outlets end 2024 (40 franchised + 1 company). 1-unit mismatch likely from inclusion/exclusion of the affiliate-owned school."},
+    {"id": "U5", "severity": "medium", "description": "Customer-evaluation minimum score threshold is listed as a non-curable termination trigger (Item 17) but the threshold itself is not disclosed in Item 11 or Item 17 narrative."},
+    {"id": "U6", "severity": "medium", "description": "Unilateral technology data-access right in FA 12.6/12.7 allows franchisor to access any franchisee technology at any time without notice."},
+    {"id": "U7", "severity": "medium", "description": "Brand Fund planned to rise from 1% to 2% of Gross Revenues in 2026 per Item 6; timing and mechanism of the change not specified."}
+  ]
+}

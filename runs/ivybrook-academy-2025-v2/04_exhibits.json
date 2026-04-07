@@ -1,0 +1,24 @@
+{
+  "run": "ivybrook-academy-2025-v2",
+  "exhibits": [
+    {"letter": "A", "name": "Franchise Agreement", "category": "contract", "priority": "high", "pages": [55, 132], "notes": "Full FA body including Lease Rider and Internet/Social Media/Telephone Assignment."},
+    {"letter": "B", "name": "Multi-State Addenda", "category": "state_addenda", "priority": "high", "pages": [133, 138], "notes": "Includes Illinois, Minnesota, and Virginia addenda. Illinois imposes initial-fee deferral due to franchisor's financial condition."},
+    {"letter": "C", "name": "Multi-Unit Development Agreement", "category": "contract", "priority": "high", "pages": [139, 143]},
+    {"letter": "D", "name": "List of State Administrators", "category": "regulatory", "priority": "low", "pages": [144, 145]},
+    {"letter": "E", "name": "Agents for Service of Process", "category": "regulatory", "priority": "low", "pages": [146, 147]},
+    {"letter": "F", "name": "Unlimited Guaranty and Assumption of Obligations", "category": "contract", "priority": "high", "pages": [148, 151], "notes": "Owner personal guaranty."},
+    {"letter": "G", "name": "Form of General Release", "category": "contract", "priority": "medium", "pages": [152, 154]},
+    {"letter": "H", "name": "Nondisclosure, Non-Solicitation and Noncompete Agreement", "category": "contract", "priority": "high", "pages": [155, 166], "notes": "Referenced in Item 15 as mandatory for CEO/School Administrator and other designated individuals."},
+    {"letter": "I", "name": "Table of Contents of Confidential Brand Standards Manual", "category": "operations", "priority": "medium", "pages": [167, 167], "notes": "242 total pages across six sections (Preface/Intro 32; Establishing Franchise Business 76; Personnel 77; Admin Procedures 13; Daily Procedures 17; Selling & Marketing 27)."},
+    {"letter": "J", "name": "Financial Statements", "category": "financial", "priority": "critical", "pages": [168, 197], "notes": "Text layer empty beyond exhibit headers. IMAGE-ONLY — requires vision OCR to recover balance sheet, income statement, cash flow, auditor name, opinion type, going-concern language. NOT RECOVERED in this automation run."},
+    {"letter": "K", "name": "Current Franchisees (per TOC)", "category": "franchisee_list", "priority": "high", "pages": null, "notes": "NOT PRESENT as a labeled exhibit in the body. TOC lists K = 'Current Franchisees' but body labels the franchisee list as EXHIBIT L. Material labeling contradiction."},
+    {"letter": "L", "name": "Current and Former Franchisees (per body label)", "category": "franchisee_list", "priority": "high", "pages": [198, 204], "notes": "Body label is 'EXHIBIT L — CURRENT AND FORMER FRANCHISEES', but TOC labels this as K. Contains current-franchisees list (as of Jan 1, 2025), schools not yet opened, and former franchisees sections. PII; not re-emitted."},
+    {"letter": "(unlabeled)", "name": "State Effective Dates page", "category": "regulatory", "priority": "medium", "pages": [205, 205], "notes": "Lists registration/effective status per state. CA/HI/MD/NY/ND/RI/SD/WA 'Not registered'; IL/MI/VA/WI 'Pending'; IN Mar 28, 2025; MN May 9, 2025."},
+    {"letter": "M", "name": "Receipts", "category": "receipts", "priority": "low", "pages": [206, 207]}
+  ],
+  "exhibit_label_integrity": {
+    "status": "contradiction",
+    "description": "TOC (p7) lists exhibits A through M and names K as 'Current Franchisees' and L as 'Franchisee Disclosure Questionnaire'. Body labels the current-franchisee list as EXHIBIT L and contains no exhibit labeled K. The Questionnaire exhibit is not labeled in the body. State-effective-dates page (205) is not labeled as any exhibit.",
+    "severity": "medium"
+  }
+}

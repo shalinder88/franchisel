@@ -1,0 +1,302 @@
+{
+  "run": "ivybrook-academy-2025-v2",
+  "tables": [
+    {
+      "table_id": "item5_initial_fees_summary",
+      "item": 5,
+      "source_pages": [11, 12],
+      "columns": ["fee_name", "amount_single", "amount_muda_2nd", "amount_muda_3rd", "due", "refundable"],
+      "rows": [
+        {"fee_name": "Initial Franchise Fee", "amount_single": "$50,000", "amount_muda_2nd": "$35,000", "amount_muda_3rd": "$25,000", "due": "At signing of FA or MUDA", "refundable": false},
+        {"fee_name": "Transfer Training Fee (existing unit purchase)", "amount_single": "$10,000", "due": "At signing of FA", "refundable": false},
+        {"fee_name": "Real Estate and Facility Coordination Fee", "amount_single": "$10,000", "due": "At signing of FA", "refundable": false},
+        {"fee_name": "Training & Opening Support Fee", "amount_single": "$15,000", "due": "At signing of lease/purchase contract", "refundable": false},
+        {"fee_name": "Décor Package", "amount_single": "$7,500", "due": "~90 days before opening", "refundable": false}
+      ],
+      "table_notes": "All fees uniformly applied in last fiscal year. Décor package price subject to supplier pricing increases if opening delayed beyond fiscal year."
+    },
+    {
+      "table_id": "item6_other_fees",
+      "item": 6,
+      "source_pages": [12, 13, 14, 15, 16],
+      "columns": ["fee_name", "amount", "due_date", "remarks"],
+      "rows": [
+        {"fee_name": "Royalty Fee", "amount": "7% of Gross Revenue", "due_date": "Monthly by 6th", "remarks": "Paid directly from GR"},
+        {"fee_name": "Brand Development Fund Contribution", "amount": "1% of Gross Revenue", "due_date": "Monthly by 6th", "remarks": "Franchisor expects to raise to 2% in 2026"},
+        {"fee_name": "Local Marketing Expenditure", "amount": "≥1% of Gross Revenues", "due_date": "Measured yearly, reported monthly", "remarks": "Franchisor may require specific suppliers or collect directly"},
+        {"fee_name": "Marketing Cooperative", "amount": "Up to 2% of Gross Revenues (currently none)", "due_date": "Monthly by 6th", "remarks": "One vote per member including company units"},
+        {"fee_name": "Third-Party Suppliers", "amount": "Cost pass-through plus admin charge", "due_date": "Varies", "remarks": "Currently none"},
+        {"fee_name": "Products and Services", "amount": "Varies", "due_date": "As incurred", "remarks": "Franchisor/affiliates reserve right to be exclusive supplier"},
+        {"fee_name": "Noncompliance Cure Costs and Fee", "amount": "Out-of-pocket + internal allocation + 10%", "due_date": "When billed", "remarks": "For insurance, refurbishing, etc."},
+        {"fee_name": "Customer Complaint Resolution", "amount": "Franchisor expenses", "due_date": "Upon demand", "remarks": "Any action franchisor deems appropriate"},
+        {"fee_name": "Audit Expenses", "amount": "$1,500 - $5,000 approx", "due_date": "Upon demand", "remarks": "Triggered by report failures or >3% monthly underreporting"},
+        {"fee_name": "Inspection Fee", "amount": "$750 + out-of-pocket", "due_date": "Upon demand", "remarks": "Triggered by customer/government complaint"},
+        {"fee_name": "Late Fees and Interest", "amount": "1.5%/month or state max", "due_date": "Upon demand", "remarks": "Applies to understated audits too"},
+        {"fee_name": "Approval of Products, Services, or Suppliers", "amount": "$500", "due_date": "Time of evaluation", "remarks": "Requester-pays model"},
+        {"fee_name": "Transfer Fee", "amount": "$10,000", "due_date": "At transfer", "remarks": ""},
+        {"fee_name": "Transfer Training Fee", "amount": "$10,000", "due_date": "At transfer", "remarks": "Payable by transferee"},
+        {"fee_name": "Renewal Fee", "amount": "Greater of $10,000 or 10% of then-current initial franchise fee", "due_date": "Upon renewal", "remarks": "Per 10-year renewal term"},
+        {"fee_name": "Relocation Assistance", "amount": "Not specified / cost reimbursement", "due_date": "Time of assistance", "remarks": ""},
+        {"fee_name": "Substitute/New School Administrator Training", "amount": "$500/week (current)", "due_date": "Time of training", "remarks": "Ivybrook University or similar"},
+        {"fee_name": "Additional Operations Assistance/Training", "amount": "$500/day + expenses (current)", "due_date": "Time of assistance", "remarks": ""},
+        {"fee_name": "Cost of Enforcement", "amount": "All costs + reasonable attorneys' fees", "due_date": "Upon demand", "remarks": ""},
+        {"fee_name": "Damages", "amount": "All cost/loss/expense + fees", "due_date": "Upon demand", "remarks": ""},
+        {"fee_name": "Indemnification", "amount": "Unlimited", "due_date": "Upon demand", "remarks": "Broad scope for third-party claims"},
+        {"fee_name": "Technology Fee", "amount": "$250/month (may increase)", "due_date": "Monthly", "remarks": "Any technology purpose; unilateral increase right"},
+        {"fee_name": "Conference Fee", "amount": "Then-current per person", "due_date": "As incurred", "remarks": "Attendance required; no-show still charged"},
+        {"fee_name": "Continuing Operation Fee", "amount": "Greater of $1,000 or 150% of weekly royalty per week", "due_date": "As incurred", "remarks": "Holdover after FA expiration; cap = then-current initial fee"},
+        {"fee_name": "Non-Compliance Fee", "amount": "Up to $1,000/week + costs", "due_date": "As incurred", "remarks": "For ongoing non-compliance"},
+        {"fee_name": "Late Reporting Fine", "amount": "Up to $1,000 per incident", "due_date": "As incurred", "remarks": ""},
+        {"fee_name": "Liquidated Damages", "amount": "Trailing-12-month avg monthly Royalty × months remaining in term", "due_date": "Within 15 days of termination", "remarks": "Payable on termination for cause"},
+        {"fee_name": "Transfer Damages", "amount": "$25,000", "due_date": "Within 15 days of demand", "remarks": "Unauthorized transfer"},
+        {"fee_name": "System Modifications", "amount": "All costs", "due_date": "As required", "remarks": "Equipment/software changes pass-through"}
+      ],
+      "table_notes": "Note 1: all fees payable to franchisor, all non-refundable, all by EFT. Note 2: Gross Revenues excludes customer refunds and taxes."
+    },
+    {
+      "table_id": "item7_initial_investment_single_unit",
+      "item": 7,
+      "source_pages": [17, 18, 19, 20],
+      "columns": ["category", "low", "high", "when_due", "payee"],
+      "rows": [
+        {"category": "Initial Franchise Fee", "low": 50000, "high": 50000, "when_due": "At FA signing", "payee": "Franchisor"},
+        {"category": "Training & Opening Support Fee", "low": 15000, "high": 15000, "when_due": "At FA signing", "payee": "Franchisor"},
+        {"category": "Real Estate and Facility Coordination Fee", "low": 10000, "high": 10000, "when_due": "At FA signing", "payee": "Franchisor"},
+        {"category": "Construction, Leasehold Improvements", "low": 277300, "high": 518860, "when_due": "As incurred/billed", "payee": "Contractors"},
+        {"category": "Furniture, Fixtures, Classroom Equipment, Décor", "low": 75000, "high": 105000, "when_due": "Upon ordering", "payee": "Suppliers/franchisor"},
+        {"category": "Outdoor Classroom (playground)", "low": 10000, "high": 25000, "when_due": "Upon ordering", "payee": "Suppliers"},
+        {"category": "Signage (int/ext)", "low": 8000, "high": 14000, "when_due": "Upon ordering", "payee": "Suppliers"},
+        {"category": "Computer Hardware/Software", "low": 1000, "high": 2500, "when_due": "Upon ordering", "payee": "Suppliers"},
+        {"category": "Rent Deposit", "low": 15000, "high": 25000, "when_due": "Lease signing", "payee": "Landlord"},
+        {"category": "Utility Deposits", "low": 1000, "high": 2500, "when_due": "Upon ordering", "payee": "Utilities"},
+        {"category": "Insurance Deposits and Premiums", "low": 3000, "high": 5000, "when_due": "Upon ordering", "payee": "Insurer"},
+        {"category": "Pre-opening Travel Expense", "low": 400, "high": 2000, "when_due": "When incurred", "payee": "Travel"},
+        {"category": "Grand Opening Advertising", "low": 20000, "high": 25000, "when_due": "As incurred", "payee": "Approved marketing supplier"},
+        {"category": "Professional Fees", "low": 25000, "high": 35000, "when_due": "As incurred", "payee": "Architect / construction mgr / attorneys / accountants"},
+        {"category": "Additional Funds — 3 Months", "low": 30000, "high": 35000, "when_due": "Varies", "payee": "Varies"},
+        {"category": "TOTAL", "low": 540700, "high": 869860}
+      ],
+      "table_notes": "Note 2 assumes $40/sq ft TI allowance on 6,000 sq ft; does not include build or purchase of real estate. Note 7 assumes free rent until open. Note 11: minimum $20,000 pre-open marketing paid to franchisor-approved supplier. Note 13: 3-month cash reserve excludes debt service."
+    },
+    {
+      "table_id": "item7_muda_addon",
+      "item": 7,
+      "source_pages": [20],
+      "columns": ["category", "low", "high"],
+      "rows": [
+        {"category": "Additional initial franchise fees (MUDA)", "low": 35000, "high": 60000}
+      ],
+      "table_notes": "$35,000 for 2nd school + $25,000 for 3rd school; additionally $10,000 RE&FC and $15,000 Training & Opening Support per added unit, payable at each added unit's FA signing."
+    },
+    {
+      "table_id": "item11_training_program",
+      "item": 11,
+      "source_pages": [30, 31],
+      "columns": ["phase", "hours_classroom", "hours_ojt", "location"],
+      "rows": [
+        {"phase": "Business Startup and Real Estate", "hours_classroom": 12, "hours_ojt": 0, "location": "Online portal + Charlotte, NC"},
+        {"phase": "Marketing; Enrollment; Operations", "hours_classroom": 24, "hours_ojt": 0, "location": "Online portal + Charlotte, NC"},
+        {"phase": "Ivybrook University; School Setup", "hours_classroom": 44, "hours_ojt": 0, "location": "Online portal + Charlotte, NC"},
+        {"phase": "TOTAL", "hours_classroom": 80, "hours_ojt": 0, "location": ""}
+      ],
+      "table_notes": "Led by Daniela McElhaney and Katherine Bell. Trains up to 3 people under the Training & Opening Support Fee; additional attendees at franchisee expense. Also requires two weeks in-person at an approved training facility before opening."
+    },
+    {
+      "table_id": "item11_brand_fund_use_2024",
+      "item": 11,
+      "source_pages": [27, 28],
+      "columns": ["category", "percent_2024"],
+      "rows": [
+        {"category": "Software Solutions", "percent_2024": 10},
+        {"category": "Social Media Advertising (Production and Placement)", "percent_2024": 55},
+        {"category": "Administrative Expenses and Other", "percent_2024": 2},
+        {"category": "Graphic Design", "percent_2024": 3},
+        {"category": "Website Expenses", "percent_2024": 30},
+        {"category": "Total", "percent_2024": 100}
+      ],
+      "table_notes": "Brand Fund is not audited. Company-owned outlets not required to contribute on the same basis. Brand Fund started July 1, 2018."
+    },
+    {
+      "table_id": "item19_table1_revenue_ranges",
+      "item": 19,
+      "source_pages": [45],
+      "columns": ["row", "low", "high", "unit"],
+      "rows": [
+        {"row": "Tuition — 1 day/week", "low": 250, "high": 365, "unit": "$/month"},
+        {"row": "Tuition — 2 days/week", "low": 335, "high": 510, "unit": "$/month"},
+        {"row": "Tuition — 3 days/week", "low": 435, "high": 675, "unit": "$/month"},
+        {"row": "Tuition — 4 days/week", "low": 500, "high": 770, "unit": "$/month"},
+        {"row": "Tuition — 5 days/week", "low": 575, "high": 890, "unit": "$/month"},
+        {"row": "Academic Year Registration Fee", "low": 150, "high": 250, "unit": "$/year"},
+        {"row": "Summer Camp weekly", "low": 185, "high": 235, "unit": "$/week"},
+        {"row": "Summer Camp Registration Fee", "low": 50, "high": 75, "unit": "$/year"}
+      ],
+      "table_notes": "2024; compiled from 24 franchisee-owned schools in Table 2B plus one affiliate-owned school in Table 2A. Each franchisee sets its own tuition."
+    },
+    {
+      "table_id": "item19_table2a_affiliate_ebitda",
+      "item": 19,
+      "source_pages": [45, 46],
+      "population": {"schools": 1, "type": "affiliate-owned", "location": "Weddington, NC", "classrooms": 7, "period": "Jan 1 – Dec 31, 2024"},
+      "columns": ["line_item", "amount_usd"],
+      "rows": [
+        {"line_item": "Gross Revenues", "amount_usd": 1487947},
+        {"line_item": "Advertising and Promotion", "amount_usd": 6494},
+        {"line_item": "Computer/Technology Expenses", "amount_usd": 10836},
+        {"line_item": "Insurance Expense", "amount_usd": 13010},
+        {"line_item": "Janitor, Consumables & Office Supplies", "amount_usd": 23499},
+        {"line_item": "Labor Expenses", "amount_usd": 601069},
+        {"line_item": "Professional Services", "amount_usd": 11050},
+        {"line_item": "Rent", "amount_usd": 192000},
+        {"line_item": "Common Area Maintenance", "amount_usd": 3972},
+        {"line_item": "Maintenance & Landscaping", "amount_usd": 21584},
+        {"line_item": "Student books, Supplies, and Snacks", "amount_usd": 20349},
+        {"line_item": "Utilities", "amount_usd": 20026},
+        {"line_item": "Royalty Fee (imputed)", "amount_usd": 89277},
+        {"line_item": "Brand Fund Contributions (imputed)", "amount_usd": 14879},
+        {"line_item": "Other Expenses", "amount_usd": 2500},
+        {"line_item": "Licensing, Dues and Subscriptions", "amount_usd": 1016},
+        {"line_item": "Total Expense", "amount_usd": 1031561},
+        {"line_item": "EBITDA", "amount_usd": 456386}
+      ],
+      "table_notes": "Affiliate (McWilliams Education Services, LLC) does NOT actually pay royalty or brand fund; amounts imputed as if it did. 0 of 24 Table 2B franchisees matched affiliate Gross Revenues; 2 matched affiliate EBITDA."
+    },
+    {
+      "table_id": "item19_table2b_2years_plus",
+      "item": 19,
+      "source_pages": [47, 48],
+      "population": {"schools": 24, "criterion": "franchisee-owned, open on or before Jan 1, 2023", "period": "Jan 1 – Dec 31, 2024"},
+      "columns": ["line_item", "avg_usd", "avg_pct_gr", "median_usd"],
+      "rows": [
+        {"line_item": "Gross Revenues", "avg_usd": 858259, "avg_pct_gr": 100, "median_usd": 838581},
+        {"line_item": "Advertising and Promotion", "avg_usd": 16922, "avg_pct_gr": 2, "median_usd": 20667},
+        {"line_item": "Computer/Technology Expenses", "avg_usd": 3227, "avg_pct_gr": null, "median_usd": 2053, "pct_note": "<1%"},
+        {"line_item": "Insurance Expense", "avg_usd": 13004, "avg_pct_gr": 2, "median_usd": 10918},
+        {"line_item": "Janitor, Consumables & Office Supplies", "avg_usd": 19511, "avg_pct_gr": 2, "median_usd": 19460},
+        {"line_item": "Labor Expenses", "avg_usd": 353533, "avg_pct_gr": 41, "median_usd": 360132},
+        {"line_item": "Professional Services", "avg_usd": 4816, "avg_pct_gr": 1, "median_usd": 3873},
+        {"line_item": "Rent", "avg_usd": 174686, "avg_pct_gr": 20, "median_usd": 184179},
+        {"line_item": "Common Area Maintenance", "avg_usd": 9869, "avg_pct_gr": 1, "median_usd": 2583},
+        {"line_item": "Maintenance & Landscaping", "avg_usd": 7384, "avg_pct_gr": 1, "median_usd": 4986},
+        {"line_item": "Student books, Supplies, and Snacks", "avg_usd": 21035, "avg_pct_gr": 2, "median_usd": 20748},
+        {"line_item": "Utilities", "avg_usd": 14730, "avg_pct_gr": 2, "median_usd": 15390},
+        {"line_item": "Royalty Fee", "avg_usd": 46730, "avg_pct_gr": 6, "median_usd": 47396},
+        {"line_item": "Brand Fund Contributions", "avg_usd": 7852, "avg_pct_gr": 1, "median_usd": 7231},
+        {"line_item": "Other Expenses", "avg_usd": 3314, "avg_pct_gr": null, "median_usd": 1145, "pct_note": "<1%"},
+        {"line_item": "Licensing, Dues and Subscriptions", "avg_usd": 2062, "avg_pct_gr": null, "median_usd": 985, "pct_note": "<1%"},
+        {"line_item": "Total Expense", "avg_usd": 698857, "median_usd": 680098},
+        {"line_item": "EBITDA", "avg_usd": 159401, "avg_pct_gr": 19, "median_usd": 152479}
+      ],
+      "distribution_counts": {
+        "franchisees_meeting_or_exceeding_average_gr": 11,
+        "franchisees_meeting_or_exceeding_median_gr": 13,
+        "franchisees_meeting_or_exceeding_average_ebitda": 11,
+        "franchisees_meeting_or_exceeding_median_ebitda": 12
+      },
+      "table_notes": "Labor excludes owner salaries and benefits. Other Expenses includes inspections, security, licenses, décor, gifts, and company events."
+    },
+    {
+      "table_id": "item19_table2c_3years_plus",
+      "item": 19,
+      "source_pages": [47, 48],
+      "population": {"schools": 18, "criterion": "franchisee-owned, open on or before Jan 1, 2022", "period": "Jan 1 – Dec 31, 2024"},
+      "columns": ["line_item", "avg_usd", "avg_pct_gr", "median_usd"],
+      "rows": [
+        {"line_item": "Gross Revenues", "avg_usd": 967875, "avg_pct_gr": 100, "median_usd": 886446},
+        {"line_item": "Advertising and Promotion", "avg_usd": 17860, "avg_pct_gr": 2, "median_usd": 20667},
+        {"line_item": "Computer/Technology Expenses", "avg_usd": 3832, "avg_pct_gr": null, "median_usd": 2870, "pct_note": "<1%"},
+        {"line_item": "Insurance Expense", "avg_usd": 14004, "avg_pct_gr": 1, "median_usd": 11318},
+        {"line_item": "Janitor, Consumables & Office Supplies", "avg_usd": 21145, "avg_pct_gr": 2, "median_usd": 19460},
+        {"line_item": "Labor Expenses", "avg_usd": 389175, "avg_pct_gr": 40, "median_usd": 373244},
+        {"line_item": "Professional Services", "avg_usd": 5237, "avg_pct_gr": 1, "median_usd": 4056},
+        {"line_item": "Rent", "avg_usd": 174817, "avg_pct_gr": 18, "median_usd": 177118},
+        {"line_item": "Common Area Maintenance", "avg_usd": 10469, "avg_pct_gr": 1, "median_usd": 3849},
+        {"line_item": "Maintenance & Landscaping", "avg_usd": 9469, "avg_pct_gr": 1, "median_usd": 7157},
+        {"line_item": "Student books, Supplies, and Snacks", "avg_usd": 24304, "avg_pct_gr": 3, "median_usd": 26695},
+        {"line_item": "Utilities", "avg_usd": 16420, "avg_pct_gr": 2, "median_usd": 17597},
+        {"line_item": "Royalty Fee", "avg_usd": 52608, "avg_pct_gr": 6, "median_usd": 52099},
+        {"line_item": "Brand Fund Contributions", "avg_usd": 8706, "avg_pct_gr": 1, "median_usd": 9091},
+        {"line_item": "Other Expenses", "avg_usd": 3781, "avg_pct_gr": null, "median_usd": 468, "pct_note": "<1%"},
+        {"line_item": "Licensing, Dues and Subscriptions", "avg_usd": 2510, "avg_pct_gr": null, "median_usd": 992, "pct_note": "<1%"},
+        {"line_item": "Total Expense", "avg_usd": 754338, "median_usd": 746467},
+        {"line_item": "EBITDA", "avg_usd": 213536, "avg_pct_gr": 22, "median_usd": 181514}
+      ],
+      "distribution_counts": {
+        "franchisees_meeting_or_exceeding_average_gr": 8,
+        "franchisees_meeting_or_exceeding_median_gr": 9,
+        "franchisees_meeting_or_exceeding_average_ebitda": 7,
+        "franchisees_meeting_or_exceeding_median_ebitda": 9
+      }
+    },
+    {
+      "table_id": "item19_table3_gr_by_classroom_count",
+      "item": 19,
+      "source_pages": [49],
+      "population": {"schools": 19, "criterion": "franchisee-owned, open 3+ years, segmented by classroom count", "period": "Jan 1 – Dec 31, 2024"},
+      "columns": ["classroom_count", "n", "avg_gr", "median_gr"],
+      "rows": [
+        {"classroom_count": 5, "n": 4, "avg_gr": 845440, "median_gr": 876696},
+        {"classroom_count": 6, "n": 13, "avg_gr": 1074164, "median_gr": 866446},
+        {"classroom_count": 7, "n": 2, "avg_gr": 1318980, "median_gr": 1318980}
+      ],
+      "table_notes": "Affiliate-owned school is 7 classrooms (results in Table 2A). Population count 19 = 4+13+2 conflicts with Table 2C population 18 by 1 unit."
+    },
+    {
+      "table_id": "item20_table1_systemwide_summary",
+      "item": 20,
+      "source_pages": [50],
+      "columns": ["outlet_type", "year", "start", "end", "net_change"],
+      "rows": [
+        {"outlet_type": "Franchised", "year": 2022, "start": 17, "end": 26, "net_change": 9},
+        {"outlet_type": "Franchised", "year": 2023, "start": 26, "end": 33, "net_change": 7},
+        {"outlet_type": "Franchised", "year": 2024, "start": 33, "end": 40, "net_change": 7},
+        {"outlet_type": "Company-Owned", "year": 2022, "start": 1, "end": 1, "net_change": 0},
+        {"outlet_type": "Company-Owned", "year": 2023, "start": 1, "end": 1, "net_change": 0},
+        {"outlet_type": "Company-Owned", "year": 2024, "start": 1, "end": 1, "net_change": 0},
+        {"outlet_type": "Total", "year": 2022, "start": 18, "end": 27, "net_change": 9},
+        {"outlet_type": "Total", "year": 2023, "start": 27, "end": 34, "net_change": 7},
+        {"outlet_type": "Total", "year": 2024, "start": 34, "end": 41, "net_change": 7}
+      ]
+    },
+    {
+      "table_id": "item20_table2_transfers",
+      "item": 20,
+      "source_pages": [50],
+      "rows": [
+        {"year": 2022, "transfers": 0},
+        {"year": 2023, "transfers": 0},
+        {"year": 2024, "transfers": 0}
+      ]
+    },
+    {
+      "table_id": "item20_table5_projected_openings",
+      "item": 20,
+      "source_pages": [52, 53],
+      "columns": ["state", "signed_not_open", "projected_new_franchised_next_fy", "projected_new_company_next_fy"],
+      "rows": [
+        {"state": "Arkansas", "signed_not_open": 1, "projected_new_franchised_next_fy": 0, "projected_new_company_next_fy": 0},
+        {"state": "Arizona", "signed_not_open": 1, "projected_new_franchised_next_fy": 1, "projected_new_company_next_fy": 0},
+        {"state": "Colorado", "signed_not_open": 2, "projected_new_franchised_next_fy": 1, "projected_new_company_next_fy": 0},
+        {"state": "Florida", "signed_not_open": 5, "projected_new_franchised_next_fy": 2, "projected_new_company_next_fy": 0},
+        {"state": "Georgia", "signed_not_open": 2, "projected_new_franchised_next_fy": 1, "projected_new_company_next_fy": 0},
+        {"state": "Illinois", "signed_not_open": 1, "projected_new_franchised_next_fy": 0, "projected_new_company_next_fy": 0},
+        {"state": "Louisiana", "signed_not_open": 1, "projected_new_franchised_next_fy": 0, "projected_new_company_next_fy": 0},
+        {"state": "Michigan", "signed_not_open": 1, "projected_new_franchised_next_fy": 1, "projected_new_company_next_fy": 0},
+        {"state": "Minnesota", "signed_not_open": 1, "projected_new_franchised_next_fy": 1, "projected_new_company_next_fy": 0},
+        {"state": "Nebraska", "signed_not_open": 1, "projected_new_franchised_next_fy": 0, "projected_new_company_next_fy": 0},
+        {"state": "New Hampshire", "signed_not_open": 1, "projected_new_franchised_next_fy": 1, "projected_new_company_next_fy": 0},
+        {"state": "New Jersey", "signed_not_open": 1, "projected_new_franchised_next_fy": 0, "projected_new_company_next_fy": 0},
+        {"state": "North Carolina", "signed_not_open": 3, "projected_new_franchised_next_fy": 1, "projected_new_company_next_fy": 0},
+        {"state": "Ohio", "signed_not_open": 1, "projected_new_franchised_next_fy": 0, "projected_new_company_next_fy": 0},
+        {"state": "Oregon", "signed_not_open": 2, "projected_new_franchised_next_fy": 1, "projected_new_company_next_fy": 0},
+        {"state": "Pennsylvania", "signed_not_open": 4, "projected_new_franchised_next_fy": 2, "projected_new_company_next_fy": 0},
+        {"state": "South Carolina", "signed_not_open": 1, "projected_new_franchised_next_fy": 0, "projected_new_company_next_fy": 0},
+        {"state": "Tennessee", "signed_not_open": 1, "projected_new_franchised_next_fy": 0, "projected_new_company_next_fy": 0},
+        {"state": "Texas", "signed_not_open": 8, "projected_new_franchised_next_fy": 2, "projected_new_company_next_fy": 0},
+        {"state": "Utah", "signed_not_open": 1, "projected_new_franchised_next_fy": 1, "projected_new_company_next_fy": 0},
+        {"state": "Virginia", "signed_not_open": 3, "projected_new_franchised_next_fy": 1, "projected_new_company_next_fy": 0},
+        {"state": "TOTAL", "signed_not_open": 42, "projected_new_franchised_next_fy": 16, "projected_new_company_next_fy": 0}
+      ]
+    }
+  ]
+}

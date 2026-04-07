@@ -1,0 +1,139 @@
+{
+  "pass": "depth_4_state_addenda_promotion",
+  "states_with_addenda_in_exhibit_b": ["Illinois", "Minnesota", "Virginia"],
+  "overrides": [
+    {
+      "state": "Illinois",
+      "affected_family": "fee_structure_deferral",
+      "override_summary": "Franchisor must defer collection of initial franchise fee and development fee until it has satisfied all pre-opening obligations AND franchisee has commenced operations. Imposed by IL AG specifically due to franchisor's financial condition.",
+      "why_it_matters": "Removes upfront fee risk for Illinois franchisees and independently corroborates the cover-page Financial Condition Special Risk.",
+      "source_pages": [133]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "forum_selection",
+      "override_summary": "Per IL FDA §4, forum-selection clauses requiring out-of-state litigation are void. Mediation/arbitration may still be held out of state.",
+      "why_it_matters": "Illinois franchisees keep litigation rights in-state even though the base FA requires NC venue.",
+      "source_pages": [133, 134]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "governing_law",
+      "override_summary": "Illinois law governs the Agreements.",
+      "why_it_matters": "Overrides NC governing-law clause.",
+      "source_pages": [133, 134]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "termination",
+      "override_summary": "Termination conditions and notice requirements under IL FDA §19 are preserved.",
+      "why_it_matters": "Statutory cure and notice protections for IL franchisees.",
+      "source_pages": [134]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "non_renewal",
+      "override_summary": "Non-renewal conditions and compensation requirements per IL FDA §20 preserved.",
+      "why_it_matters": "Statutory non-renewal rights override FA silence/limits.",
+      "source_pages": [134]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "anti_waiver",
+      "override_summary": "Per §41, any provision waiving IL FDA compliance or any other IL law is void. No questionnaire/acknowledgment can waive state franchise law claims or disclaim reliance.",
+      "why_it_matters": "Protects franchisee from contractual waiver and inducement disclaimers.",
+      "source_pages": [134]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "Per Minn. Stat. §80C.21 and Rule 2860.4400J, litigation cannot be required outside Minnesota. Mediation/arbitration may still be held out of state.",
+      "why_it_matters": "Minnesota franchisees retain in-state litigation rights.",
+      "source_pages": [135]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination_notice_and_cure",
+      "override_summary": "Per §80C.14 Subds. 3-5, franchisee must be given 90 days' notice of termination with 60 days to cure, and 180 days' notice for non-renewal (subject to specified exceptions).",
+      "why_it_matters": "Overrides FA termination cure windows; materially longer protection than base FA.",
+      "source_pages": [135]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Franchisor cannot require a release of Minnesota Franchises Act claims as a condition to renewal or assignment.",
+      "why_it_matters": "Preserves franchisee's statutory claim rights even through FA transfer/renewal cycle.",
+      "source_pages": [135]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "anti_waiver",
+      "override_summary": "Franchisor cannot require franchisee to assent to any release, assignment, novation, or waiver that relieves any person from §§80C.01–80C.22 liability (except voluntary settlement). No acknowledgment can waive state franchise law claims or disclaim reliance.",
+      "why_it_matters": "Blocks contractual waivers of Minnesota franchise law claims.",
+      "source_pages": [135]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "trademark_protection",
+      "override_summary": "Item 13 amended: franchisor will protect franchisee's rights to use the marks and indemnify franchisee against any loss/costs/expense from infringement claims while franchisee is in compliance.",
+      "why_it_matters": "Adds franchisor indemnification for mark infringement that base FA does not provide.",
+      "source_pages": [135]
+    },
+    {
+      "state": "Virginia",
+      "affected_family": "termination_standard",
+      "override_summary": "Per §13.1-564 of the Virginia Retail Franchising Act, franchisor cannot cancel without reasonable cause. Any default ground in the FA that does not constitute reasonable cause may be unenforceable.",
+      "why_it_matters": "Virginia franchisees get a statutory reasonable-cause standard over the FA's extensive default list.",
+      "source_pages": [137]
+    },
+    {
+      "state": "Virginia",
+      "affected_family": "undue_influence",
+      "override_summary": "Per §13.1-564, franchisor cannot use undue influence to induce franchisee to surrender any right. Any such provision is unenforceable.",
+      "why_it_matters": "Shields franchisees from pressure to waive statutory rights.",
+      "source_pages": [137]
+    },
+    {
+      "state": "Virginia",
+      "affected_family": "integration_merger",
+      "override_summary": "Item 17(t) amended: only terms of FA and related written agreements are binding subject to VA law; representations outside the FDD and FA may not be enforceable.",
+      "why_it_matters": "Refines FA integration clause under VA law.",
+      "source_pages": [137]
+    },
+    {
+      "state": "Virginia",
+      "affected_family": "anti_waiver",
+      "override_summary": "No questionnaire/acknowledgment can waive state franchise law claims or disclaim reliance on franchisor statements.",
+      "why_it_matters": "Protects VA franchisees' anti-fraud claim rights.",
+      "source_pages": [137]
+    },
+    {
+      "state": "Virginia",
+      "affected_family": "financial_condition_risk_disclosure",
+      "override_summary": "Virginia addendum Risk Factor: estimated initial investment ($540,700–$869,860) exceeds franchisor's stockholder's equity as of 12/31/2024 ($345,862).",
+      "why_it_matters": "HIGHEST-IMPACT promoted fact in A2. Quantifies the franchisor Financial Condition Special Risk. Equity < single unit minimum investment — franchisor would be balance-sheet-unable to self-fund a franchisee support event.",
+      "source_pages": [137]
+    }
+  ],
+  "summary_table": {
+    "override_families": [
+      "forum_selection",
+      "governing_law",
+      "termination_standard",
+      "termination_notice_and_cure",
+      "non_renewal",
+      "general_release",
+      "anti_waiver",
+      "fee_structure_deferral",
+      "trademark_protection",
+      "undue_influence",
+      "integration_merger",
+      "financial_condition_risk_disclosure"
+    ],
+    "matrix": {
+      "Illinois": ["forum_selection", "governing_law", "termination", "non_renewal", "anti_waiver", "fee_structure_deferral"],
+      "Minnesota": ["forum_selection", "termination_notice_and_cure", "general_release", "anti_waiver", "trademark_protection"],
+      "Virginia": ["termination_standard", "undue_influence", "integration_merger", "anti_waiver", "financial_condition_risk_disclosure"]
+    }
+  }
+}

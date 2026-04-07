@@ -1,0 +1,137 @@
+{
+  "pass": "depth_2_contract_burdens",
+  "source_exhibit": "A — Franchise Agreement (pp 55-132) + Exhibit C MUDA (pp 139-143) + Exhibit F Guaranty (pp 148-151)",
+  "fa_section_index": [
+    {"section": 1, "title": "Definitions", "pages_approx": [56]},
+    {"section": 2, "title": "Grant of Franchise and Accepted Location", "pages_approx": [56, 57]},
+    {"section": 3, "title": "Fees", "pages_approx": [58]},
+    {"section": 4, "title": "Term and Renewal", "pages_approx": [60]},
+    {"section": 5, "title": "Accepted Location", "pages_approx": [56]},
+    {"section": 6, "title": "Proprietary Marks", "pages_approx": [60]},
+    {"section": 7, "title": "Trade Secrets and Other Confidential Information", "pages_approx": [70]},
+    {"section": 8, "title": "Training and Assistance", "pages_approx": [73]},
+    {"section": 9, "title": "Confidential Brand Standards Manual", "pages_approx": [74]},
+    {"section": 10, "title": "Franchise System", "pages_approx": [75]},
+    {"section": 11, "title": "Advertising and Promotional Activities", "pages_approx": [76]},
+    {"section": 12, "title": "Accounting, Records and Reporting Obligations", "pages_approx": [79]},
+    {"section": 13, "title": "Standards of Operation", "pages_approx": [81]},
+    {"section": 14, "title": "Franchisor Additional Operations Assistance", "pages_approx": [90]},
+    {"section": 15, "title": "Insurance", "pages_approx": [91]},
+    {"section": 16, "title": "Default and Termination", "pages_approx": [92]},
+    {"section": 17, "title": "Rights and Duties upon Expiration, Nonrenewal, or Termination", "pages_approx": [97]},
+    {"section": 18, "title": "Transferability of Interest", "pages_approx": [102]},
+    {"section": 19, "title": "Right of First Refusal", "pages_approx": [106]},
+    {"section": 20, "title": "Beneficial Owners of Franchisee", "pages_approx": [106]},
+    {"section": 21, "title": "Relationship and Indemnification", "pages_approx": [107]},
+    {"section": 22, "title": "General Conditions and Provisions", "pages_approx": [109]},
+    {"section": 23, "title": "Dispute Resolution", "pages_approx": [112]},
+    {"section": 24, "title": "Acknowledgements", "pages_approx": [115]}
+  ],
+  "burden_clauses": {
+    "grant_and_term": {
+      "term_years": 15,
+      "renewal_terms": [10, 10],
+      "successor_may_be_materially_different": true,
+      "source": "FA §4; Item 17 table a-c"
+    },
+    "fees_and_payments": {
+      "royalty_pct_gr": 7,
+      "brand_fund_pct_gr": 1,
+      "brand_fund_planned_2026_pct": 2,
+      "tech_fee_usd_monthly": 250,
+      "renewal_fee_rule": "max($10,000, 10% of then-current initial franchise fee)",
+      "payment_method": "EFT",
+      "source": "FA §3, §11; Item 6"
+    },
+    "site_selection_and_construction": {
+      "site_acceptance_required": true,
+      "site_acceptance_window_months": 6,
+      "must_use_approved_architect_and_construction_manager": true,
+      "lease_assignment_on_default_right": true,
+      "lease_rider_required": true,
+      "source": "FA §2, §5, §13; Item 11"
+    },
+    "training_and_operational_obligations": {
+      "pre_open_training_hours": 80,
+      "owner_ceo_min_ownership_pct": 10,
+      "ceo_onsite_min_weekly_hours_first_year": 20,
+      "school_admin_onsite_weekly_hours": 40,
+      "naeyc_membership_required": true,
+      "nayec_accreditation_after_years": 2,
+      "narea_membership_required": true,
+      "bbb_accreditation_required": true,
+      "source": "FA §8, §13; Item 11, Item 15"
+    },
+    "termination_triggers_and_cure": {
+      "no_cause_termination_by_franchisor": false,
+      "curable_default_types": ["failure to maintain insurance", "failure to pay", "Manual/spec noncompliance"],
+      "noncurable_default_types_summary": "See Item 17 table — includes failure to open, felony, bankruptcy, ≥2 reporting failures in 12 months, ≥2 law violations, customer-evaluation score failure, license loss, 3-day abandonment, unauthorized transfer, etc.",
+      "franchisee_termination_cure_window_franchisor_breach_days": 90,
+      "franchisee_notice_days": 30,
+      "source": "FA §16; Item 17"
+    },
+    "transfer_restrictions": {
+      "written_consent_required": true,
+      "rofr_present": true,
+      "transfer_fee_usd": 10000,
+      "transfer_training_fee_usd": 10000,
+      "unauthorized_transfer_damages_usd": 25000,
+      "general_release_required": true,
+      "transferee_signs_then_current_fa": true,
+      "death_disability_transfer_window_days": 180,
+      "source": "FA §18, §19, §20; Item 17; Item 6"
+    },
+    "noncompete": {
+      "during_term_scope": "diversion + competitive ownership or employment (owners + spouses/domestic partners)",
+      "post_term_years": 2,
+      "post_term_geo": "greater of Territory, 10-mile radius of franchise location, or 10-mile radius of any other Ivybrook Academy Franchised Business",
+      "state_law_override": true,
+      "source": "FA §7.3, §17.3; Item 17 q, r"
+    },
+    "guaranty_scope": {
+      "personal_guaranty_required": true,
+      "spousal_guaranty_implied_for_noncompete": true,
+      "unlimited_indemnification": true,
+      "exhibit": "F",
+      "source": "Exhibit F; FA §21"
+    },
+    "liquidated_damages": {
+      "formula": "trailing 12-month average monthly Royalty × months remaining in term",
+      "trigger": "termination for cause",
+      "due_within_days": 15,
+      "source": "Item 6; FA §16/17"
+    },
+    "venue_and_dispute_resolution": {
+      "mediation_venue": "Charlotte, NC",
+      "arbitration_venue": "Charlotte, NC",
+      "litigation_venue": "Charlotte, NC",
+      "governing_law": "North Carolina",
+      "exception": "subject to state law overrides (IL, MN, VA)",
+      "source": "FA §23; Item 17 u, v, w"
+    },
+    "insurance": {
+      "all_risk_property": true,
+      "workers_comp_per_state": true,
+      "employer_liability_min_usd": 100000,
+      "commercial_general_liability_per_occurrence_usd": 2000000,
+      "franchisor_additional_insured": true,
+      "subrogation_waiver": true,
+      "source": "FA §15; Item 8"
+    },
+    "indemnification": {
+      "scope": "broad — indemnifies franchisor and related parties for third-party claims and franchisee operations",
+      "owner_and_guarantor_joint": true,
+      "source": "FA §21; Item 6"
+    },
+    "force_majeure": {"not_captured_in_body_items": true, "source_section_in_fa_pages_approx": [109, 110]},
+    "distinctive_clauses": [
+      "Unilateral right of franchisor to access all franchisee technology data at any time without notice (FA §12.6, §12.7).",
+      "Customer-evaluation minimum score is a non-curable termination trigger without disclosed threshold.",
+      "Continuing Operation Fee in holdover: greater of $1,000 or 150% of weekly royalty per week, capped at then-current initial franchise fee.",
+      "Brand Fund may borrow from franchisor; not audited; company units not on same contribution basis.",
+      "Innovations clause auto-assigns franchisee inventions/curriculum/software to franchisor without separate compensation.",
+      "Customer List is franchisor property; must be turned over on demand and at termination.",
+      "Franchisor may substitute trademarks at franchisee expense."
+    ]
+  }
+}
