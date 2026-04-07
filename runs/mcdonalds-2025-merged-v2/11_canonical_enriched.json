@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "fdd_id": "638437-2025",
+    "brand": "McDonald's",
+    "franchisor_legal_name": "McDonald's USA, LLC",
+    "enrichment_version": "v1",
+    "enrichment_layers": ["item19_chart_detail", "item20_yearly_activity", "exhibit_structure", "item21_structural_facts", "item1_structural_facts", "item6_fee_attributes", "financial_note_depth", "contract_burden_depth"]
+  },
+  "item19_chart_detail": {
+    "sales_distribution": {
+      "all_traditional": {
+        "count": 12572,
+        "average": 4002000,
+        "median": 3838000,
+        "high": 19680000,
+        "low": 914000,
+        "pct_above_3m": 79,
+        "pct_above_3_2m": 72,
+        "pct_above_3_4m": 65
+      },
+      "franchised_only": {
+        "count": 12023,
+        "average": 3966000,
+        "median": 3797000,
+        "high": 19680000,
+        "low": 914000,
+        "pct_above_3m": 78,
+        "pct_above_3_2m": 71,
+        "pct_above_3_4m": 64
+      },
+      "mcopco_only": {
+        "count": 549,
+        "average": 4793000,
+        "median": 4612000,
+        "high": 10030000,
+        "low": 1820000,
+        "pct_above_3m": 96,
+        "pct_above_3_2m": 94,
+        "pct_above_3_4m": 89
+      }
+    },
+    "pro_forma_detail": {
+      "sample_size": 11332,
+      "sample_description": "Independent franchisee traditional restaurants open/operated at least 1 year, excluding McOpCo, Satellites, and restaurants that changed owners in 2024",
+      "royalty_rate_used": "4%",
+      "scenarios": [
+        {
+          "sales_level": 3000000,
+          "cost_of_sales": 850000,
+          "cost_of_sales_pct": 28.3,
+          "gross_profit": 2149000,
+          "gross_profit_pct": 71.6,
+          "other_operating_expenses": 1415000,
+          "other_operating_expenses_pct": 47.2,
+          "oiboc": 734000,
+          "oiboc_pct": 24.5,
+          "pct_restaurants_exceeding": 76
+        },
+        {
+          "sales_level": 3200000,
+          "cost_of_sales": 901000,
+          "cost_of_sales_pct": 28.2,
+          "gross_profit": 2301000,
+          "gross_profit_pct": 71.9,
+          "other_operating_expenses": 1469000,
+          "other_operating_expenses_pct": 46.5,
+          "oiboc": 812000,
+          "oiboc_pct": 25.4,
+          "pct_restaurants_exceeding": 69
+        },
+        {
+          "sales_level": 3400000,
+          "cost_of_sales": 954000,
+          "cost_of_sales_pct": 28.1,
+          "gross_profit": 2446000,
+          "gross_profit_pct": 71.9,
+          "other_operating_expenses": 1567000,
+          "other_operating_expenses_pct": 46.1,
+          "oiboc": 879000,
+          "oiboc_pct": 25.9,
+          "pct_restaurants_exceeding": 62
+        }
+      ],
+      "effective_rent_range_pct": {"low": 0.0, "high": 33.33}
+    }
+  },
+  "item20_yearly_activity": {
+    "systemwide": {
+      "2022": {"start": 13436, "end": 13455, "net_change": 19},
+      "2023": {"start": 13455, "end": 13457, "net_change": 2},
+      "2024": {"start": 13457, "end": 13559, "net_change": 102}
+    },
+    "franchised": {
+      "2022": {"start": 12775, "opened": 84, "terminations": 30, "non_renewals": 18, "reacquired": 47, "ceased_other": 0, "end": 12764},
+      "2023": {"start": 12764, "opened": 128, "terminations": 73, "non_renewals": 33, "reacquired": 13, "ceased_other": 1, "end": 12772},
+      "2024": {"start": 12772, "opened": 167, "terminations": 29, "non_renewals": 15, "reacquired": 8, "ceased_other": 0, "end": 12887}
+    },
+    "company_owned": {
+      "2022": {"start": 661, "opened": 2, "reacquired_from_franchisee": 49, "closed": 3, "sold_to_franchisee": 18, "end": 691},
+      "2023": {"start": 691, "opened": 3, "reacquired_from_franchisee": 13, "closed": 4, "sold_to_franchisee": 20, "end": 685},
+      "2024": {"start": 685, "opened": 14, "reacquired_from_franchisee": 8, "closed": 3, "sold_to_franchisee": 32, "end": 672}
+    },
+    "transfers": {
+      "2022": 1169,
+      "2023": 672,
+      "2024": 843
+    },
+    "projected_openings": {
+      "franchised": 181,
+      "company_owned": 14,
+      "total": 195,
+      "signed_not_opened": 0
+    },
+    "ceased_franchisees_exhibit_s": 113,
+    "franchisee_organizations": {
+      "endorsed": ["NFLA", "AMOA", "MHOA", "NBMOA", "WON", "OPN"],
+      "independent": ["NOA"]
+    }
+  },
+  "exhibit_structure": {
+    "total_exhibits": 20,
+    "exhibit_list": [
+      {"label": "A", "title": "Financial Statements", "pages": "58-72", "category": "financial_statements"},
+      {"label": "B", "title": "Franchise Agreement (Traditional)", "pages": "73-90", "category": "franchise_agreement"},
+      {"label": "C", "title": "Franchise Agreement (Satellite)", "pages": "91-108", "category": "franchise_agreement"},
+      {"label": "D", "title": "Franchise Agreement (Walmart)", "pages": "109-126", "category": "franchise_agreement"},
+      {"label": "E", "title": "New Restaurant Rider", "pages": "127-129", "category": "rider"},
+      {"label": "F", "title": "BFL Rider", "pages": "130-132", "category": "rider"},
+      {"label": "G", "title": "Operator's Lease", "pages": "133-165", "category": "lease"},
+      {"label": "H", "title": "Assignment to an Entity", "pages": "166-171", "category": "assignment"},
+      {"label": "I", "title": "Assignment Agreement", "pages": "172-179", "category": "assignment"},
+      {"label": "J", "title": "Candidate Agreements", "pages": "180-190", "category": "pre_franchise"},
+      {"label": "K", "title": "McDonald's New Term Policy", "pages": "191-192", "category": "policy"},
+      {"label": "L", "title": "McDonald's Growth Policy", "pages": "193", "category": "policy"},
+      {"label": "M", "title": "New Term Offer Letter", "pages": "194-195", "category": "template"},
+      {"label": "N", "title": "Loan and Related Documents", "pages": "196-230", "category": "financing"},
+      {"label": "O", "title": "List of Agents for Service of Process", "pages": "231-233", "category": "administrative"},
+      {"label": "P", "title": "State Administrators", "pages": "234-235", "category": "administrative"},
+      {"label": "Q", "title": "McDonald's Affiliates", "pages": "236", "category": "entity_structure"},
+      {"label": "R", "title": "List of Franchised Restaurants", "pages": "237-380", "category": "franchisee_list"},
+      {"label": "S", "title": "Franchisees Who Ceased Doing Business", "pages": "381-382", "category": "franchisee_list"},
+      {"label": "T", "title": "State Specific Addenda", "pages": "383-387", "category": "state_addenda"}
+    ]
+  },
+  "item21_structural_facts": {
+    "auditor": "Ernst & Young LLP",
+    "audit_date": "March 14, 2025",
+    "opinion": "unqualified",
+    "going_concern": false,
+    "fiscal_year_end": "December 31",
+    "financial_entity": "McDonald's USA, LLC (consolidated)",
+    "parent": "McDonald's Corporation",
+    "years_covered": [2022, 2023, 2024],
+    "statements_included": ["income_statement", "balance_sheet", "cash_flows", "members_equity", "notes"],
+    "key_financials": {
+      "total_revenue": {"2024": 10630.8, "2023": 10568.4, "2022": 9588.4},
+      "net_income": {"2024": 3461.6, "2023": 3394.4, "2022": 3095.7},
+      "total_assets": {"2024": 22195.3, "2023": 22124.1},
+      "members_equity": {"2024": 10222.0, "2023": 10222.0},
+      "cash": {"2024": 34.6, "2023": 42.5}
+    }
+  },
+  "item1_structural_facts": {
+    "entity_type": "Delaware limited liability company",
+    "parent": "McDonald's Corporation (Delaware corporation)",
+    "predecessor": "McDonald's Corporation",
+    "franchising_since": 1955,
+    "current_entity_formed": 2004,
+    "assets_transferred": 2005,
+    "business_type": "Quick service restaurant",
+    "percent_franchised": 95,
+    "percent_company_owned": 5,
+    "formats": ["Traditional", "Satellite", "STO", "STR", "BFL"],
+    "trademark_owner": "Restaurant Brands, LLC (affiliate)",
+    "franchise_seller": "McDonald's USA, LLC and Brad Bogan",
+    "president": "Joe Erlinger (since April 22, 2002)",
+    "trademark_owner": "Restaurant Brands, LLC (affiliate)"
+  },
+  "financial_note_depth": {
+    "revenue_recognition": {
+      "company_sales": "Cash basis at time of sale, net of sales tax",
+      "royalties": "Percent of sales, recognized at time underlying sales occur",
+      "minimum_rent": "Straight-line over franchise term (generally 20 years)",
+      "variable_rent": "Percent of sales, recognized at time underlying sales occur",
+      "initial_fees": "Over franchise term (generally 20 years) as performance obligation satisfied",
+      "technology_platform": "Gross basis (company is principal). Recognized as goods/services transferred."
+    },
+    "depreciation": {
+      "method": "Straight-line",
+      "buildings": "Up to 40 years",
+      "leasehold_improvements": "Lesser of useful life or lease term (including certain option periods)",
+      "equipment": "3-12 years",
+      "capitalized_software": "3-10 years"
+    },
+    "franchise_revenue_disaggregation_millions": {
+      "rents": {"2024": 5170.7, "2023": 5140.3, "2022": 4724.0},
+      "royalties": {"2024": 2014.5, "2023": 1998.1, "2022": 1837.5},
+      "initial_fees": {"2024": 25.4, "2023": 25.0, "2022": 23.2}
+    },
+    "future_rent_receivable_millions": {
+      "owned_sites_total": 8349.0,
+      "leased_sites_total": 5810.0,
+      "combined_total": 14159.0
+    },
+    "ip_royalty_to_parent_rate": "2% of company-owned and franchised restaurant sales",
+    "subsequent_event": "$2.4B intercompany payable converted to equity February 17, 2025",
+    "advertising_actuals_millions": {
+      "cooperative_contributions_company_owned": {"2024": 94.9, "2023": 92.0, "2022": 84.0},
+      "production_marketing_sga": {"2024": 84.6, "2023": 36.7, "2022": 45.4}
+    },
+    "tax_uncertain_positions_millions": {"2024": 75.8, "2023": 70.6},
+    "tax_examination_open_from": 2009,
+    "tax_interest_accrued_millions": {"2024": 25.7, "2023": 20.8}
+  },
+  "contract_burden_depth": {
+    "mandatory_eft": true,
+    "default_interest_rate": "15% per annum or highest legal rate, monthly compounding",
+    "fee_shifting": "Franchisee pays McDonald's attorneys fees and costs on enforcement",
+    "indemnification": "Full indemnification and hold harmless; defend at McDonald's election",
+    "system_change_exposure": "Unilateral right to modify entire system, manuals, specs, equipment, technology — no caps",
+    "operating_hours_minimum": "7 days/week, 7:00 AM–11:00 PM or as prescribed",
+    "insurance_gl_minimum": "$5M per occurrence / $5M aggregate",
+    "insurance_wc_minimum": "$100K/$500K/$100K",
+    "fmv_purchase_no_intangibles": true,
+    "royalty_reset_on_transfer": true,
+    "continuing_liability_post_transfer": true,
+    "severability_termination_right": true,
+    "operator_full_time_best_efforts": true,
+    "equity_ownership_100_pct_required": true
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": {"new_restaurants": "5%", "existing_legacy": "4%", "transition_date": "January 1, 2024"},
+    "rent_model": "Base + Pass Thru + Percentage (real-estate-driven)",
+    "percentage_rent_range_new_traditional": "6%–23%",
+    "percentage_rent_minimum_year_8": "11.50%",
+    "advertising_minimum": "4% of Gross Sales",
+    "opnad_current_rate": "2.25% of sales",
+    "tech_fee_mandatory_annual_estimate": 11000,
+    "tech_fee_optional_annual_estimate": 793,
+    "tech_fee_one_time_estimate": 4984,
+    "co_investment_available": true,
+    "co_investment_min_cost_per_quarter_pct": 30000,
+    "relocation_contribution": 50000,
+    "audit_fee_trigger": "2% understatement of Gross Sales"
+  },
+  "merged_recovery_enrichments": {
+    "note": "These fields are promoted from the shadow run's depth pass and recovery patch (RT_depth_*, RR-01, RR-01b, RR-02, RR-03). Labeled explicitly to distinguish from OLD-run enrichments above.",
+    "guaranty_consolidation_waiver_present": true,
+    "guaranty_consolidation_waiver_source": "Exhibit N Unlimited Guaranty Section 18, page 213",
+    "guarantor_enforcement_interest_rate_pct_floor": 0.18,
+    "guarantor_enforcement_interest_rate_alt": "Lender Prime Rate + 4% (whichever is higher), capped at usury max",
+    "guarantor_enforcement_interest_rate_source": "Exhibit N Unlimited Guaranty Section 2, page 208",
+    "leadership_roster_count_structured": 37,
+    "concluded_litigation_rows_structured": 19,
+    "pending_litigation_convention": "7 federal + 1 collection (Pestonjee Sri Lanka)",
+    "late_payment_rate_disambiguation": {
+      "fa_section_8c_pct": 0.15,
+      "item_10_boa_loan_rate": "Term SOFR + adjustment + 3% (APR 7.42% as of 3/17/2025)",
+      "exhibit_n_section_2_rate": "18% or Prime + 4%"
+    },
+    "contradictions_preserved": 5,
+    "contradictions_list": [
+      "Item 19 pro-forma basis 11,332 vs percentile sentence 11,322 (10-restaurant intra-item gap)",
+      "Item 20 Table 1 (12,887 franchised + 672 company-owned) vs Financial-Statement Note 1 table (12,886 + 671)",
+      "Item 7 disclosed investment high end vs Note 11 disclosure of 9 of 31 McOpCo refranchise sales exceeding it (by up to $2,035,816)",
+      "Item 19 pro-forma uses 4% legacy royalty cohort while post-2024 new entrants pay 5%",
+      "Item 8 Cashless-not-proprietary vs Sesame-proprietary framing inconsistency"
+    ]
+  },
+  "interpretive_derived_metrics": {
+    "note": "Preserved from OLD run, clearly labeled as derived (not directly extracted from PDF).",
+    "contract_burden_score": 30,
+    "contract_burden_score_source": "OLD run derived metric (interpretive, not PDF-grounded)",
+    "total_recurring_fee_estimate_min_pct_of_gross": "14%+",
+    "total_recurring_fee_estimate_typical_pct_of_gross": "20-30%+",
+    "total_recurring_fee_source": "OLD run derived metric (royalty + advertising + percentage rent + tech fees, interpretive)"
+  }
+}

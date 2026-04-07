@@ -1,0 +1,41 @@
+{
+  "reconciliation_basis": "runs/mcdonalds-2025-merged (prior benchmark)",
+  "conflict_adjudication_required": false,
+  "patches_applied": [
+    {
+      "id": "RR-1",
+      "type": "add_unresolved",
+      "target_files": ["09_final_canonical.json", "12_canonical_enriched_v2.json"],
+      "key_added": "unresolveds[U-06]",
+      "description": "BoA guarantee-program loan loss/default rates and franchisee uptake not disclosed",
+      "carried_forward_from": "mcdonalds-2025-merged U-4",
+      "status": "applied"
+    },
+    {
+      "id": "RR-2",
+      "type": "add_contradiction",
+      "target_files": ["09_final_canonical.json", "12_canonical_enriched_v2.json"],
+      "key_added": "contradictions[C-05]",
+      "description": "Item 19 pro forma 4% royalty vs post-2024 new franchisees 5% — 1pp understatement of royalty drag",
+      "carried_forward_from": "mcdonalds-2025-merged C-4",
+      "status": "applied"
+    },
+    {
+      "id": "RR-3",
+      "type": "add_contradiction",
+      "target_files": ["09_final_canonical.json", "12_canonical_enriched_v2.json"],
+      "key_added": "contradictions[C-06]",
+      "description": "Item 20 Table 1 vs Exhibit A year-end 2024 franchised count (12,887 vs 12,886)",
+      "carried_forward_from": "mcdonalds-2025-merged C-2",
+      "status": "applied"
+    }
+  ],
+  "no_value_changes": true,
+  "reason_no_value_changes": "Every numeric field spot-checked in B1 matched exactly across prior and new runs. All recoveries are additive surfacing improvements, not corrections.",
+  "post_reconciliation_unresolveds_count": 6,
+  "post_reconciliation_contradictions_count": 6,
+  "post_reconciliation_canonical_file_paths": [
+    "runs/shadow-live-mcdonalds-2025-v2/09_final_canonical.json",
+    "runs/shadow-live-mcdonalds-2025-v2/12_canonical_enriched_v2.json"
+  ]
+}

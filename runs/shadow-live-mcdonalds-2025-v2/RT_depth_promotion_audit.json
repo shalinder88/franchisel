@@ -1,0 +1,137 @@
+{
+  "description": "Narrative-to-canonical promotion audit. Facts that appear clearly in 02_reader_report.md or 08_final_report.md but were not originally present as typed fields in 05_canonical.json / 09_final_canonical.json / 12_canonical_enriched_v2.json. These are promoted into canonical via the patch at the bottom of this file.",
+  "promoted_facts": [
+    {
+      "id": "PF-01",
+      "fact": "Franchisor parent-royalty mechanic: McDonald's USA, LLC pays McDonald's Corporation a 2% royalty on Company-owned AND franchised restaurant sales for IP license rights.",
+      "source": "RT_depth_financial_notes.json / Exhibit A Related Party Transactions note",
+      "original_pdf_pages": [71],
+      "target_family": "item21_financials.related_party_royalty"
+    },
+    {
+      "id": "PF-02",
+      "fact": "Franchised revenue breakdown 2024: Rents $5,170.7M + Royalties $2,014.5M + Initial fees $25.4M = $7,210.6M. Rent is 71.7% of franchised revenue, not royalty.",
+      "source": "RT_depth_financial_notes.json",
+      "original_pdf_pages": [66],
+      "target_family": "item21_financials.franchised_revenue_mix_2024"
+    },
+    {
+      "id": "PF-03",
+      "fact": "Future minimum rent payments owed TO the franchisor by franchisees under existing conventional franchise arrangements total $14,159.0M: Owned sites $8,349.0M + Leased sites $5,810.0M. This is an ~13x multiple of single-year franchised rent revenue.",
+      "source": "RT_depth_financial_notes.json",
+      "original_pdf_pages": [66],
+      "target_family": "item21_financials.contracted_future_rent_receivable"
+    },
+    {
+      "id": "PF-04",
+      "fact": "Subsequent event: $2.4B of parent payable arrangements matured on Feb 17, 2025 and were converted to equity. This wipes out most of the Due-to-parent balance AFTER the 12/31/2024 balance sheet date.",
+      "source": "RT_depth_financial_notes.json",
+      "original_pdf_pages": [72],
+      "target_family": "item21_financials.subsequent_events"
+    },
+    {
+      "id": "PF-05",
+      "fact": "Dividend policy: 100% of net income is upstreamed annually to parent. Retained earnings have been held constant at $4,633.9M since at least 1/1/2022.",
+      "source": "RT_depth_financial_notes.json / Exhibit A members' equity statement",
+      "original_pdf_pages": [62],
+      "target_family": "item21_financials.dividend_policy"
+    },
+    {
+      "id": "PF-06",
+      "fact": "Full-state list of Exhibit T addenda: California, Hawaii, Maryland, Minnesota, North Dakota, Washington. NO Wisconsin addendum despite WI being the state of filing.",
+      "source": "retry_R1_exhibit_t_state_addenda.json",
+      "original_pdf_pages": [383, 384, 385, 386],
+      "target_family": "state_addenda_overrides"
+    },
+    {
+      "id": "PF-07",
+      "fact": "Washington Assurance of Discontinuance with Washington AG: franchisor agreed to remove no-hire/no-poach provisions from form FA and not enforce them in existing agreements. No monetary penalty.",
+      "source": "retry_R1_exhibit_t_state_addenda.json",
+      "original_pdf_pages": [385],
+      "target_family": "state_addenda_overrides.washington_aod"
+    },
+    {
+      "id": "PF-08",
+      "fact": "2024 effective rent range for franchised restaurants: 0.00% to 33.33% of sales. At the high end, rent alone would consume the entire pro forma OIBO of $734K–$879K.",
+      "source": "05_canonical.json item19_fpr; reader report Pass F",
+      "original_pdf_pages": [45],
+      "target_family": "item19.effective_rent_range"
+    },
+    {
+      "id": "PF-09",
+      "fact": "Item 7 Note 11 disclosure: 9 of 31 McOpCo sales in 2024 exceeded the published high end of the traditional initial investment range, by $65,593 to $2,035,816.",
+      "source": "05_canonical.json item7_initial_investment",
+      "original_pdf_pages": [26],
+      "target_family": "item7.mcopco_overrun_disclosure"
+    },
+    {
+      "id": "PF-10",
+      "fact": "Confidentiality/gag clauses exist: Item 20 explicitly notes that in some instances current and former franchisees sign provisions restricting their ability to speak openly about their experience with McDonald's.",
+      "source": "02_reader_report.md Pass F",
+      "original_pdf_pages": [55],
+      "target_family": "item20.confidentiality_gag_clause"
+    },
+    {
+      "id": "PF-11",
+      "fact": "NOA (National Owners Association) is the only independent franchisee association listed — not endorsed by McDonald's but requested inclusion.",
+      "source": "02_reader_report.md Pass F",
+      "original_pdf_pages": [56],
+      "target_family": "item20.independent_associations"
+    },
+    {
+      "id": "PF-12",
+      "fact": "Weighted average remaining lease term: 17 years (operating), 28 years (finance). Weighted average discount rate: 4.4% (operating), 4.1% (finance).",
+      "source": "RT_depth_financial_notes.json Leasing Arrangements note",
+      "original_pdf_pages": [67],
+      "target_family": "item21_financials.lease_weighted_avg"
+    },
+    {
+      "id": "PF-13",
+      "fact": "Restructuring initiative ('Accelerating the Organization') incurred $63.6M total charges since 2023 inception; $1.2M incurred in FY2024; $4.4M accrued balance at 12/31/2024.",
+      "source": "RT_depth_financial_notes.json",
+      "original_pdf_pages": [69],
+      "target_family": "item21_financials.restructuring"
+    },
+    {
+      "id": "PF-14",
+      "fact": "Unrecognized tax benefits $75.8M at 12/31/2024 (up from $70.6M at 12/31/2023). IRS/state exams open for tax years 2009 and later.",
+      "source": "RT_depth_financial_notes.json",
+      "original_pdf_pages": [70, 71],
+      "target_family": "item21_financials.tax_uncertainty"
+    },
+    {
+      "id": "PF-15",
+      "fact": "Property and equipment cost breakdown: Land $4,167.2M (19.5%) + Buildings on owned land $12,096.1M (56.4%) + Buildings on leased land $5,666.7M (26.4%) + Equipment/signs/seating $923.6M (4.3%) + Other $67.5M. Real estate is the asset base; equipment is a thin layer.",
+      "source": "RT_depth_financial_notes.json Property and Equipment note",
+      "original_pdf_pages": [66],
+      "target_family": "item21_financials.pe_breakdown"
+    },
+    {
+      "id": "PF-16",
+      "fact": "Effective income tax rate 2024: 23.2%. Current tax $1,033.3M + deferred $11.6M = $1,044.9M provision.",
+      "source": "RT_depth_financial_notes.json",
+      "original_pdf_pages": [70],
+      "target_family": "item21_financials.tax_rate"
+    },
+    {
+      "id": "PF-17",
+      "fact": "Asset transfer from parent at Company formation (1/1/2005): $5,548.8M net of liabilities.",
+      "source": "RT_depth_financial_notes.json",
+      "original_pdf_pages": [63],
+      "target_family": "item1_structural.formation_asset_transfer"
+    },
+    {
+      "id": "PF-18",
+      "fact": "Parent retains legal title to certain property and equipment assets used by the Company under extended intercompany agreements. Parent also owns or licenses the U.S. intellectual property rights.",
+      "source": "RT_depth_financial_notes.json Nature of Business note",
+      "original_pdf_pages": [63],
+      "target_family": "item1_structural.parent_retained_title"
+    }
+  ],
+  "facts_NOT_promoted": [
+    "State-level transfer counts for 2022-2024 — rejected as too granular for canonical; preserved in page text",
+    "Full Item 2 officer start dates — structural reference only",
+    "Individual concluded-case settlement amounts beyond the top 5 — preserved in reader report narrative"
+  ],
+  "patch_instructions_applied_to": ["09_final_canonical.json (via depth pass canonical family enforcement)", "12_canonical_enriched_v2.json (via depth pass canonical family enforcement)"]
+}

@@ -1,0 +1,110 @@
+{
+  "derived_from": "09_final_canonical.json",
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "chart_type": "pro_forma_oibo_three_bands",
+    "construct_single_or_multi": "single",
+    "sales_bands_count": 3,
+    "bands": [
+      {"sales_usd": 3000000, "cost_of_sales_usd": 850000, "cost_of_sales_pct": 28.3, "gross_profit_usd": 2149000, "gross_profit_pct": 71.6, "other_opex_usd": 1415000, "other_opex_pct": 47.2, "oibo_usd": 734000, "oibo_pct": 24.5, "pct_restaurants_above_this_oibo": 76},
+      {"sales_usd": 3200000, "cost_of_sales_usd": 901000, "cost_of_sales_pct": 28.2, "gross_profit_usd": 2301000, "gross_profit_pct": 71.9, "other_opex_usd": 1469000, "other_opex_pct": 46.5, "oibo_usd": 812000, "oibo_pct": 25.4, "pct_restaurants_above_this_oibo": 69},
+      {"sales_usd": 3400000, "cost_of_sales_usd": 954000, "cost_of_sales_pct": 28.1, "gross_profit_usd": 2446000, "gross_profit_pct": 71.9, "other_opex_usd": 1567000, "other_opex_pct": 46.1, "oibo_usd": 879000, "oibo_pct": 25.9, "pct_restaurants_above_this_oibo": 62}
+    ],
+    "population_pro_forma_n": 11332,
+    "population_scope_note": "Independent franchisee traditional restaurants open >=1 year; excludes McOpCo, Satellites, 2024 change-of-owner restaurants",
+    "exclusions_from_oibo": ["rent", "royalty", "D&A", "interest", "income taxes"],
+    "royalty_basis_in_pro_forma_pct": 4.0,
+    "effective_rent_pct_range_2024": "0.00 to 33.33",
+    "systemwide_cohort_averages": {
+      "traditional_all": {"n": 12572, "avg_sales": 4002000, "median_sales": 3838000, "max_sales": 19680000, "min_sales": 914000, "pct_over_3m": 79, "pct_over_3_2m": 72, "pct_over_3_4m": 65},
+      "franchised_only": {"n": 12023, "avg_sales": 3966000, "median_sales": 3797000, "max_sales": 19680000, "min_sales": 914000, "pct_over_3m": 78, "pct_over_3_2m": 71, "pct_over_3_4m": 64},
+      "mcopco_only": {"n": 549, "avg_sales": 4793000, "median_sales": 4612000, "max_sales": 10030000, "min_sales": 1820000, "pct_over_3m": 96, "pct_over_3_2m": 94, "pct_over_3_4m": 89}
+    },
+    "source_pages": [43, 44, 45]
+  },
+  "item20_yearly_activity": {
+    "systemwide_3yr": [
+      {"year": 2022, "franchised_start": 12775, "franchised_end": 12764, "franchised_net": -11, "co_start": 661, "co_end": 691, "co_net": 30, "total_start": 13436, "total_end": 13455, "total_net": 19},
+      {"year": 2023, "franchised_start": 12764, "franchised_end": 12772, "franchised_net": 8, "co_start": 691, "co_end": 685, "co_net": -6, "total_start": 13455, "total_end": 13457, "total_net": 2},
+      {"year": 2024, "franchised_start": 12772, "franchised_end": 12887, "franchised_net": 115, "co_start": 685, "co_end": 672, "co_net": -13, "total_start": 13457, "total_end": 13559, "total_net": 102}
+    ],
+    "company_owned_activity_3yr": [
+      {"year": 2022, "start": 661, "opened": 2, "terminations": 49, "reacquired": 3, "ceased_other": 18, "end": 691},
+      {"year": 2023, "start": 691, "opened": 3, "terminations": 13, "reacquired": 4, "ceased_other": 20, "end": 685},
+      {"year": 2024, "start": 685, "opened": 14, "terminations": 8, "reacquired": 3, "ceased_other": 32, "end": 672}
+    ],
+    "transfers_to_new_owners_totals": {"2022": 1169, "2023": 672, "2024": 843},
+    "projected_openings_fy2025": {"signed_not_opened": 0, "new_franchised": 181, "new_company_owned": 14},
+    "departed_franchisees_exhibit_s_count": 113,
+    "confidentiality_clause_exists": true
+  },
+  "exhibit_structure": {
+    "exhibits_count": 20,
+    "financial_exhibit": "A",
+    "franchise_agreement_exhibits": ["B", "C", "D"],
+    "rider_exhibits": ["E", "F"],
+    "operator_lease_exhibit": "G",
+    "assignment_exhibits": ["H", "I"],
+    "preliminary_agreement_exhibit": "J",
+    "policy_exhibits": ["K", "L", "M"],
+    "financing_exhibit": "N",
+    "reference_exhibits": ["O", "P", "Q"],
+    "franchisee_list_exhibits": ["R", "S"],
+    "state_addenda_exhibit": "T",
+    "state_addenda_states": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota", "Washington"],
+    "state_addenda_count": 6
+  },
+  "item21_structural": {
+    "auditor_firm": "Ernst & Young LLP",
+    "auditor_city": "Chicago",
+    "auditor_state": "IL",
+    "opinion_type": "unmodified_clean",
+    "opinion_standard": "U.S. GAAS",
+    "reporting_framework": "U.S. GAAP",
+    "opinion_date": "2025-03-14",
+    "going_concern_modification": false,
+    "statements_provided_count": 4,
+    "statements_provided": ["balance_sheet", "income_statement", "members_equity", "cash_flows"],
+    "fiscal_year_end": "December 31",
+    "years_covered": [2024, 2023, 2022]
+  },
+  "item1_structural": {
+    "entity_state": "Delaware",
+    "entity_type": "LLC",
+    "parent_name": "McDonald's Corporation",
+    "parent_state": "Delaware",
+    "parent_type": "Corporation",
+    "parent_is_predecessor": true,
+    "mcopco_subsidiary_count_not_disclosed": true,
+    "franchise_formats_count": 5,
+    "formats": ["Traditional", "Satellite", "STO", "STR", "BFL"],
+    "franchise_mix_franchised_pct": 95,
+    "franchise_mix_mcopco_pct": 5,
+    "hq_city": "Chicago",
+    "hq_state": "IL",
+    "hq_address": "110 N. Carpenter Street",
+    "years_of_brand_history_since_1955": 70
+  },
+  "item6_fee_attributes": {
+    "royalty_bifurcated": true,
+    "royalty_basis_change_date": "2024-01-01",
+    "royalty_new_pct": 5.0,
+    "royalty_legacy_pct": 4.0,
+    "rent_bundled_with_royalty": true,
+    "rent_variable_range_pct_low": 6,
+    "rent_variable_range_pct_high": 23,
+    "rent_floor_year_8_pct": 11.50,
+    "ad_min_pct": 4.0,
+    "ad_paid_to_franchisor": false,
+    "opnad_pct": 2.25,
+    "ad_fund_audited": true,
+    "tech_stack_mandatory_platforms": ["Sesame POS", "Cashless 3.0", "Gift Card (P2W)"],
+    "tech_stack_annual_fee_approx_usd": 13760,
+    "tech_stack_one_time_fee_approx_usd": 5775,
+    "tech_stack_optional_items": ["HHOT", "PDW Reporting", "McD Connect", "Restaurant Employee Experience Survey", "Pricing Engine"],
+    "supplier_side_revenue_usd_2024": 39008767,
+    "supplier_side_revenue_types": ["loan_guarantee_fees", "cashless_incentives", "beverage_rebates"],
+    "co_investment_available": true,
+    "co_investment_quarter_min_usd": 30000
+  }
+}

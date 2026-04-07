@@ -1,0 +1,138 @@
+{
+  "source": "Item 17 Franchise Agreement + Operator's Lease provision tables (Item 17, pages 39–42); Item 6 rent mechanics (pages 18–24); Item 10 BOA financing (page 30); Item 11 training (pages 33–36); Item 8 supply (pages 26–28). Exhibit B (traditional Franchise Agreement) itself not independently parsed; burden language captured from the FDD's own summaries plus cited sections.",
+  "grant_and_term": {
+    "grant_scope": "Limited right to use McDonald's System at one specific address — no territory, no development rights, no brand-extension rights",
+    "term_traditional_years": 20,
+    "term_sto_str_years": 10,
+    "term_bfl_years": 3,
+    "term_bfl_conditional_extension_years": 20,
+    "term_satellite": "varies",
+    "fa_section_term": "Section 2"
+  },
+  "fee_and_payment_obligations": {
+    "royalty_pct_new": 5.0,
+    "royalty_pct_legacy": 4.0,
+    "rent_structure": "Monthly Base + Pass Thru + Percentage Rent; Percentage Rent 6%–23% (11.50% floor from year 8)",
+    "advertising_floor_pct": 4.0,
+    "technology_stack_mandatory": true,
+    "fa_sections": ["8(a)", "9"],
+    "operators_lease_sections": ["3.01(A)", "3.01(B)"],
+    "auto_draft_rent_and_royalty": true
+  },
+  "site_selection_and_construction": {
+    "site_selected_by": "franchisor exclusively",
+    "franchisee_role": "cannot select or approve site; cannot sign FA until site selected",
+    "construction_by": "franchisor or its contractors",
+    "fa_sections_site": ["1(a)", "1(b)", "12(b)", "12(c)", "12(d)"],
+    "operators_lease_sections_site": ["2.01", "2.04", "2.06"]
+  },
+  "training_and_operational_obligations": {
+    "training_must_complete_before_signing_fa": true,
+    "compensation_during_training": false,
+    "preliminary_agreement_exhibit": "J",
+    "operational_obligations": ["compliance with O&T Manual", "adherence to McDonald's System", "maintain condition and cleanliness", "provide monthly financial statements via FFS", "accept periodic operations visits and inspections"],
+    "fa_sections_training": ["3", "4", "6"],
+    "fa_sections_operations": ["1(c)", "1(d)", "4", "12"],
+    "operators_lease_ops": ["2.06", "2.08", "4.02", "4.03", "6.05"]
+  },
+  "termination_triggers_by_franchisor": {
+    "fa_sections": ["18", "19"],
+    "material_breach_list": [
+      "failure to maintain restaurant in good, clean, wholesome manner per McDonald's standards",
+      "bankruptcy",
+      "any amount owing to franchisor unpaid >30 days",
+      "unsatisfied judgment >$5,000 against you for >30 days",
+      "loss of right of possession of restaurant",
+      "violation of franchise restrictions",
+      "knowing sale of foods other than those approved or failing McDonald's standards",
+      "transfer of franchise without McDonald's prior consent",
+      "franchisor denied access to restaurant",
+      "failure to make prompt payment of undisputed invoices",
+      "misrepresentation relating to ownership or acquisition of franchise",
+      "conduct that damages McDonald's reputation",
+      "conviction of a felony",
+      "intentional under-reporting of Gross Sales",
+      "repeated other breaches"
+    ],
+    "curable_defaults_general": "not enumerated in FA summary; 10-day cure applies under Operator's Lease §7.04 for defaults other than payment/reporting/abandonment",
+    "noncurable_defaults": "per §§18, 19 — several triggers above are structurally non-curable",
+    "termination_by_franchisee": "Not Applicable"
+  },
+  "transfer_restrictions": {
+    "fa_sections": ["15", "19"],
+    "definition": "Any direct, indirect, or contingent transfer of any interest in the franchise",
+    "franchisor_consent_required": true,
+    "royalty_stepup_on_transfer": "new transferee pays current (5%) royalty except for legacy exceptions",
+    "transferee_assumes_full_unconditional_liability": true,
+    "transferor_personally_liable_for_remainder_of_term": true,
+    "no_current_breach_required": true,
+    "franchisor_rofr": {"section": "15(c)", "scope": "match any offer"},
+    "death_disability_option_section": "15(a)",
+    "death_disability_option_trigger": "franchisor has managed restaurant for 1 year after death/disability",
+    "spouse_training_window_months": 18
+  },
+  "default_and_cross_default_provisions": {
+    "boa_loan_default_triggers_fa_default": true,
+    "source": "Item 10 — default on BOA-program loan is considered a default under the Franchise Agreement; franchisee must then sign Operator Assistance Program Agreement (Exhibit N)",
+    "operator_assistance_program_waiver": "waives all claims against McDonald's"
+  },
+  "noncompete": {
+    "in_term_section": "11",
+    "in_term_scope": "no involvement in any competing or similar business",
+    "post_term_section": "11",
+    "post_term_duration_months": 18,
+    "post_term_radius_miles": 10,
+    "post_term_applies_after_assignment_or_sale": true,
+    "state_overrides": {
+      "north_dakota": "generally unenforceable per Exhibit T",
+      "washington": "no-poach provisions removed per Washington AG Assurance of Discontinuance"
+    }
+  },
+  "guaranty_scope": {
+    "personal_guaranty_required_for_boa_loans": true,
+    "spousal_guaranty_required_for_boa_loans": true,
+    "jury_trial_waived": true,
+    "class_consolidation_waived": true,
+    "source": "Item 10"
+  },
+  "liquidated_damages": "Not explicitly summarized in Item 17. Termination remedy is franchisor's option to purchase FF&E at fair market value (no payment for intangibles) per §20.",
+  "venue_and_dispute_resolution": {
+    "dispute_resolution_summary": "Marked 'Not Applicable' in Item 17(u/v/w) for Franchise Agreement and Operator's Lease",
+    "special_risks_page": "Requires resolution of disputes — mediation, arbitration and/or litigation — only in Illinois",
+    "governing_law": "Illinois (FA §27; Operator's Lease §8.06)",
+    "state_overrides": {
+      "hawaii": "anti-waiver language: no acknowledgement may waive claims under applicable state franchise law or disclaim reliance on franchisor statements",
+      "maryland": "MD-law claims may be brought in MD subject to arbitration/FAA; 3-year limitations period",
+      "minnesota": "Minn. Stat. 80C.14 notice periods supersede (90 days termination/60 cure; 180 days non-renewal; reasonable transfer consent)",
+      "north_dakota": "ND law governs ND Franchise Investment Law claims",
+      "washington": "RCW 19.100.180 / WA FIPA supremacy where Act applies"
+    }
+  },
+  "insurance_requirements": {
+    "carrier_rating_minimum": "A+ or A per A.M. Best",
+    "carrier_size_minimum": "IX per A.M. Best",
+    "fa_section": "17",
+    "operators_lease_section": "6"
+  },
+  "indemnification_obligations": {
+    "fa_section": "24",
+    "operators_lease_section": "7.02",
+    "scope": "Franchisee indemnifies franchisor; no reciprocal franchisor defense of franchisee on trademark or copyright claims"
+  },
+  "force_majeure": {
+    "disclosed_in_fa_summary": false,
+    "item_11_references": "Restaurant opening may be delayed by weather, delayed delivery/installation, labor disputes, governmental regulation, or other causes beyond franchisor's reasonable control. Franchisee cannot open for business until FA executed and initial fee paid."
+  },
+  "distinctive_or_unusual_clauses": [
+    "Franchisor owns or head-leases the real estate and mandates the Operator's Lease as part of the franchise. This is not typical of most QSR franchise systems — McDonald's is as much a landlord as a franchisor.",
+    "Due-to-parent inter-company balance ($3.31B) and 2% parent royalty expense create a structural upstream of nearly all net income to the parent. The Company's retained earnings are held constant at $4.63B year over year.",
+    "Sesame POS is the mandatory platform and is owned by the parent (McDonald's Corporation), not McDonald's USA, LLC.",
+    "Monthly financial statement reporting obligation (FFS) goes beyond typical QSR disclosure — full balance sheet + G&A + debt summary + per-restaurant P&L.",
+    "Confidentiality clause in Item 20 explicitly acknowledges that some franchisees are contractually restricted from speaking openly about their experience.",
+    "Franchisor holds uncapped independent access to transaction-level POS and cashless data — no contractual limit on use.",
+    "In-term non-compete broadly prohibits any involvement in any competing or similar business — not just ownership but any involvement.",
+    "Co-investment 'Quarters' mechanism allows rent reduction in 0.25% increments at $30K per Quarter; a unique McDonald's-specific rent-sharing feature.",
+    "Item 7 Note 11 discloses that 9 of 31 2024 McOpCo sales exceeded the published initial investment high end by up to $2.04M — explicit franchisor acknowledgement that the published range understates reality for the upper half of refranchising.",
+    "Washington AOD is a rare disclosed state AG enforcement action on no-poach."
+  ]
+}

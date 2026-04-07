@@ -1,0 +1,137 @@
+{
+  "derived_from": "11_canonical_enriched.json",
+  "enrichment_version": "v2",
+  "item21_financial_structure": {
+    "total_assets_usd_millions": 22195.3,
+    "total_liabilities_usd_millions": 11973.3,
+    "total_equity_usd_millions": 10222.0,
+    "debt_to_equity_ratio": 1.17,
+    "current_ratio": 0.217,
+    "quick_ratio": 0.200,
+    "cash_pct_of_assets": 0.16,
+    "net_pp_e_pct_of_assets": 58.9,
+    "rou_assets_pct_of_assets": 26.3,
+    "real_estate_total_pct_of_assets": 85.2,
+    "goodwill_pct_of_assets": 6.8,
+    "total_lease_liability_usd_millions": 6044.9,
+    "total_lease_liability_pct_of_assets": 27.2,
+    "due_to_parent_current_usd_millions": 3310.6,
+    "due_to_parent_pct_of_current_liabilities": 81.7,
+    "royalty_to_parent_expense_usd_millions_fy24": 1069.4,
+    "royalty_to_parent_expense_pct_of_franchised_revenue": 14.8,
+    "retained_earnings_change_yoy_usd_millions": 0.0,
+    "retained_earnings_flat_flag": true,
+    "members_equity_flat_flag": true,
+    "related_party_exposure_severity": "material",
+    "going_concern_modification": false,
+    "consolidation_scope": "McDonald's USA, LLC consolidated (includes McOpCo subsidiaries)"
+  },
+  "item21_statement_detail": {
+    "revenue_mix_fy24": {
+      "company_owned_sales_usd_millions": 3196.9,
+      "company_owned_sales_pct": 30.1,
+      "franchised_revenue_usd_millions": 7210.6,
+      "franchised_revenue_pct": 67.8,
+      "other_revenue_usd_millions": 223.3,
+      "other_revenue_pct": 2.1
+    },
+    "operating_margin_fy24": {
+      "operating_income_usd_millions": 4663.6,
+      "operating_margin_pct": 43.9,
+      "operating_income_before_royalty_to_parent_usd_millions": 5733.0,
+      "operating_margin_pre_royalty_pct": 53.9
+    },
+    "profitability_trend": {
+      "fy2022_net_income": 3095.7,
+      "fy2023_net_income": 3394.4,
+      "fy2024_net_income": 3461.6,
+      "cagr_2022_2024_pct": 5.74
+    },
+    "leverage_indicators": {
+      "interest_expense_net_usd_millions": 159.1,
+      "interest_coverage_ratio": 29.3,
+      "long_term_lease_liability_usd_millions": 5849.0
+    },
+    "capex_proxy": {
+      "property_and_equipment_at_cost_change_fy24_usd_millions": 760.3,
+      "accumulated_depreciation_change_fy24_usd_millions": 607.9
+    }
+  },
+  "item6_fee_detail": {
+    "royalty_5pct_scenarios": [
+      "franchisee opens new restaurant",
+      "franchisee purchases from McOpCo sale",
+      "franchisor exercises ROFR then resells"
+    ],
+    "royalty_4pct_scenarios_existing": [
+      "family restaurant transactions / ownership transfers",
+      "existing franchisees sign new-term agreements on existing restaurants",
+      "existing franchisees complete sale to another franchisee",
+      "rebuild of existing restaurant location"
+    ],
+    "rent_components": [
+      {"component": "Monthly Base Rent", "basis": "franchisor total investment in land + building × finance factor (plus monthly rent paid to third-party landlord if leased)"},
+      {"component": "Pass Thru Rent", "basis": "lease escalations from head landlord; no finance factor"},
+      {"component": "Percentage Rent", "basis": "percentage of Gross Sales (generally 6%–23%); min 11.50% from year 8; total change over term capped at 3.5 pts absolute"}
+    ],
+    "percentage_rent_floor_new_term_pct": 8.50,
+    "percentage_rent_increase_triggers_new_term": [
+      "franchisor additional institutional investment (rebuilds, relocations, major remodels)",
+      "expiring temporary financial-assistance reductions",
+      "separate prior agreement scheduling Percentage Rent increases"
+    ],
+    "co_investment_quarter_unit_pct": 0.25,
+    "co_investment_cost_per_quarter_min_usd": 30000,
+    "co_investment_financing_permitted_years": 10,
+    "co_investment_collateral_restriction": "Franchisee may not use building or leasehold improvements as loan collateral; franchisor retains title",
+    "technology_fee_count_annual": 22,
+    "technology_fee_count_one_time": 7,
+    "technology_fee_count_optional": 5,
+    "technology_fee_total_required_annual_usd_approx": 12920,
+    "technology_fee_total_optional_annual_usd_approx": 793
+  },
+  "a2_depth_additions": {
+    "cash_flow_fy24_millions": {"net_income": 3461.6, "ops": 4552.4, "investing": -1060.7, "financing": -3499.6, "dividends_to_parent": -3461.6, "capex": -1055.2, "cash_eoy": 34.6},
+    "franchised_revenue_breakdown_fy24_millions": {"rents": 5170.7, "royalties": 2014.5, "initial_fees": 25.4, "total": 7210.6},
+    "contracted_future_rent_receivable": {"2025": 1461.4, "2026": 1395.9, "2027": 1337.2, "2028": 1266.5, "2029": 1179.2, "thereafter": 7518.8, "total_millions": 14159.0},
+    "lease_maturity_present_value_millions": {"operating": 5262.1, "finance": 782.8, "total": 6044.9},
+    "related_party_royalty_mechanic": {"rate_pct": 2.0, "basis": "Company-owned + franchised restaurant sales"},
+    "dividend_to_parent_policy": "100% of net income upstreamed annually",
+    "subsequent_event_2025_02_17": "$2.4B parent payable converted to equity",
+    "effective_tax_rate_fy24_pct": 23.2,
+    "lease_weighted_avg_remaining_years": {"operating": 17, "finance": 28},
+    "lease_weighted_avg_discount_rate_pct": {"operating": 4.4, "finance": 4.1}
+  },
+  "unresolveds": [
+    {"id": "U-02", "description": "Exhibits B/C/D Franchise Agreement forms not independently parsed beyond Item 17 summaries", "severity": "medium"},
+    {"id": "U-03", "description": "Exhibit S departed franchisee identities not captured (count = 113)", "severity": "low"},
+    {"id": "U-04", "description": "Item 20 Table 3 state-level franchised status not row-normalized", "severity": "low"},
+    {"id": "U-05", "description": "Item 2 officer start dates not normalized", "severity": "low"},
+    {"id": "U-06", "description": "BoA guarantee-program loan loss/default rates and franchisee uptake not disclosed in FDD", "severity": "low", "carried_forward_from": "mcdonalds-2025-merged U-4"}
+  ],
+  "contradictions": [
+    {"id": "C-01", "description": "Item 19 sample count typo: 11,332 vs 11,322", "items_involved": [19], "resolution_status": "flagged_immaterial"},
+    {"id": "C-02", "description": "Item 7 range vs Note 11 McOpCo overruns (9 of 31 exceeded high end)", "items_involved": [7], "resolution_status": "disclosed_in_source"},
+    {"id": "C-03", "description": "Retained earnings flat despite multi-billion net income — resolved via 100% upstream dividend policy disclosed in Exhibit A", "items_involved": [21], "resolution_status": "resolved_in_a2"},
+    {"id": "C-04", "description": "Item 20 Table 1 franchised 2022 start (12,775) vs Exhibit A Nature of Business note (12,751)", "items_involved": [20, 21], "resolution_status": "flagged_immaterial"},
+    {"id": "C-05", "description": "Item 19 pro forma covered 4% royalty cohort; post-2024 new franchisees pay 5% — pro forma understates royalty drag by ~1pp of sales", "items_involved": [6, 19], "resolution_status": "flagged_disclosed_in_source"},
+    {"id": "C-06", "description": "Item 20 Table 1 2024 franchised end (12,887) vs Exhibit A note 2024 (12,886) — 1-outlet gap", "items_involved": [20, 21], "resolution_status": "flagged_immaterial"}
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota", "Washington"],
+    "wisconsin_addendum_present": false,
+    "override_family_matrix": {
+      "forum_selection_voided_or_limited": ["Maryland"],
+      "governing_law_overridden": ["North Dakota", "Washington (for WA FIPA claims)"],
+      "post_term_noncompete_limited_or_unenforceable": ["North Dakota"],
+      "no_poach_unenforceable": ["Washington (per AOD)"],
+      "general_release_excludes_state_claims": ["Hawaii", "Maryland"],
+      "termination_notice_cure_required": ["Minnesota"],
+      "transfer_consent_reasonableness_required": ["Minnesota"],
+      "anti_waiver_anti_fraud_protection": ["Hawaii"],
+      "relationship_law_supremacy": ["Washington"],
+      "operational_compliance_cost_shift": ["California"]
+    },
+    "source": "RT_depth_state_addenda_promotion.json"
+  }
+}
