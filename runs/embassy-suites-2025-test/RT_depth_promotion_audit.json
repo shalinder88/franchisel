@@ -1,0 +1,18 @@
+{
+  "base": "02_reader_report.md → 09_final_canonical.json",
+  "promoted_facts": [
+    {"fact": "Graduate brand franchise contracts acquired May 2024 as asset acquisition for ~$85M, 15-year amortization", "source": "Exhibit C Notes 3 & 4, p 124", "added_to": "financials_hfh_llc_exhibit_c.key_observations + item21_statement_detail"},
+    {"fact": "HFH is disregarded entity for US federal income tax; no US federal tax provision at HFH level", "source": "Exhibit C Note 6, p 125", "added_to": "financials_hfh_llc_exhibit_c.notes"},
+    {"fact": "All HFH assets pledged as collateral for Hilton parent debt (2025-2033 maturities)", "source": "Exhibit C Note 7, p 125", "added_to": "financials_hfh_llc_exhibit_c.notes"},
+    {"fact": "HFH licenses IP from Hilton affiliate on ROYALTY-FREE basis", "source": "Exhibit C Note 1, p 122", "added_to": "financials_hfh_llc_exhibit_c.notes"},
+    {"fact": "Contract acquisition cost amortization reduces royalty fee revenue ($16.1M in 2024)", "source": "Exhibit C Note 2, p 123 and Note 4, p 124", "added_to": "financials_hfh_llc_exhibit_c.notes"},
+    {"fact": "HSM late payment interest rate 18.5%/yr compounded daily", "source": "Item 5 Note 5, p 26", "added_to": "item5_initial_fees (new key)"},
+    {"fact": "Interim remedies include software disable and reservation diversion prior to termination", "source": "Item 17 §13.3 summary, p 71", "added_to": "item17_contract_mechanics.interim_remedies"},
+    {"fact": "16 enumerated non-curable default grounds (FA §13.2)", "source": "Item 17, pp 72-74", "added_to": "item17_contract_mechanics.non_curable_grounds"},
+    {"fact": "Construction start deadline 16 months, complete 36 months from application approval", "source": "Item 11 p 59", "added_to": "item11_training_support"},
+    {"fact": "Eforea spa must open within 12 months of Spa Amendment", "source": "Item 11 p 59", "added_to": "item11_training_support"},
+    {"fact": "11 states with J-1 addenda (CA, HI, IL, MD, MI, MN, NY, ND, RI, VA, WA)", "source": "Exhibit J-1, pp 266-274", "added_to": "state_addenda_overrides (new top-level family)"},
+    {"fact": "Exhibit D-1 State Addenda to Franchise Agreement at pp 183-196 (not deep-read; pending)", "source": "Source map", "added_to": "unresolveds"}
+  ],
+  "promoted_count": 12
+}

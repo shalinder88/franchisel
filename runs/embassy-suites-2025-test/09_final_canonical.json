@@ -1,0 +1,223 @@
+{
+  "schema_version": "canonical_v1_final",
+  "pipeline_version": "automation_v1",
+  "filing_id": "638053-2025",
+  "brand": "Embassy Suites by Hilton",
+  "updated_from": "05_canonical.json + retry_R1.json",
+  "document_identity": {
+    "franchisor_legal_name": "Hilton Franchise Holding LLC",
+    "franchisor_entity_type": "Delaware Limited Liability Company",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "ultimate_parent": "Hilton Worldwide Holdings Inc.",
+    "ultimate_parent_ticker": "NYSE: HLT",
+    "predecessors": ["Embassy Suites Franchise LLC (2007-2015)", "Promus Hotels Inc. (1995-2007)", "HHC and predecessors (1984-1995)"],
+    "principal_address": "7930 Jones Branch Drive, Suite 1100, McLean, VA 22102",
+    "phone": "703-883-1000",
+    "state_filed": "WI",
+    "issuance_date": "2025-03-30",
+    "pdf_pages": 305
+  },
+  "industry": {"sector": "hotel_lodging", "segment": "upper_upscale_all_suite", "prototype_suites": 176},
+  "fees": {
+    "initial": {
+      "franchise_application_new_development": 100000,
+      "franchise_application_coo": 200000,
+      "franchise_application_relicensing": 100000,
+      "per_room_over_250": 400,
+      "pip_fee": 10000,
+      "onq_computer_system": [70576, 151184],
+      "training": [5000, 17500],
+      "opening_process_services": 6000,
+      "eforea_spa_initial": 25000
+    },
+    "recurring_percent_of_grr": {
+      "royalty_y1": 3.5,
+      "royalty_y2": 4.5,
+      "royalty_y3_plus": 5.5,
+      "royalty_coo_relicensing": 5.5,
+      "program_fee": 4.0,
+      "hilton_honors": 4.3,
+      "effective_mature_burden_pct": 13.8
+    },
+    "monthly_royalty_modifications_2024": 6,
+    "program_fee_max_increase_over_term_pct": 1.0,
+    "monthly_spa_royalty_pct_gross_spa_revenue": 2.0
+  },
+  "initial_investment": {
+    "prototype_suites": 176,
+    "total_low": 50082670,
+    "total_high": 82170820,
+    "affiliate_portion_max": 326179,
+    "excludes": ["real_estate", "market_study", "insurance", "interest"]
+  },
+  "contract_terms": {
+    "term_years_new_construction": 23,
+    "term_years_conversion": [10, 20],
+    "renewal_right": false,
+    "re_licensing_materially_different_terms": true,
+    "construction_start_deadline_months": 16,
+    "construction_complete_deadline_months": 36,
+    "post_term_noncompete": false,
+    "in_term_noncompete": true,
+    "exclusive_territory": false,
+    "restricted_area_optional": true,
+    "restricted_area_extends_full_term_going_forward": false,
+    "cross_brand_protection": false,
+    "liquidated_damages": "greater of Hotel Avg Monthly Royalty or System Avg Monthly Royalty × remaining months",
+    "choice_of_law": "New York",
+    "arbitration": false,
+    "arbitration_puerto_rico_only": true,
+    "venue": ["EDVA Alexandria", "Fairfax County VA", "New York NY"],
+    "rofr": false,
+    "option_to_purchase": false
+  },
+  "system_data": {
+    "total_us_hotels_2024": 258,
+    "franchised_hotels_2024": 237,
+    "company_owned_hotels_2024": 0,
+    "three_year_net_change": [1, 1, 1],
+    "three_year_terminations": [0, 0, 3],
+    "three_year_non_renewals": [0, 0, 0],
+    "three_year_transfers": [9, 5, 14],
+    "signed_unopened_fas_2024": 29,
+    "projected_new_franchised_2025": 3,
+    "eforea_spas_franchised": 2,
+    "eforea_spas_company_managed": 3,
+    "confidentiality_clause_flag": true,
+    "independent_franchisee_association": false
+  },
+  "fpr_item19": {
+    "fpr_provided": true,
+    "comparable_hotels": 220,
+    "comparable_company_managed": 32,
+    "comparable_franchisee_managed": 188,
+    "avg_room_rate_2024": 184.12,
+    "median_room_rate_2024": 171.32,
+    "room_rate_range_2024": [109.57, 375.87],
+    "avg_occupancy_2024_pct": 74.4,
+    "median_occupancy_2024_pct": 75.3,
+    "occupancy_range_2024_pct": [47.9, 95.6],
+    "avg_occupancy_index_2024": 111.8,
+    "avg_revpar_index_2024": 121.7,
+    "fm_meeting_avg_room_rate_2024_pct": 30.9,
+    "fm_meeting_avg_occupancy_2024_pct": 53.7,
+    "cost_disclosure": false,
+    "profit_disclosure": false,
+    "new_generation_comparable": 47,
+    "new_gen_avg_room_rate_2024": 205.12,
+    "new_gen_avg_occupancy_2024_pct": 76.9
+  },
+  "financials_hfh_llc_exhibit_c": {
+    "auditor": "Cherry Bekaert",
+    "audit_opinion": "unqualified",
+    "audit_opinion_date": "2025-03-18",
+    "going_concern_flag": false,
+    "units": "USD thousands",
+    "2024": {
+      "total_revenues": 1502069,
+      "franchise_royalty_fees": 1434453,
+      "franchise_sales_and_coo_fees": 49340,
+      "franchise_termination_fees_and_other": 18276,
+      "total_expenses": 11353,
+      "operating_income": 1490716,
+      "net_income": 1487571,
+      "operating_margin_pct": 99.24,
+      "net_margin_pct": 99.04,
+      "total_assets": 1269897,
+      "total_liabilities": 692892,
+      "total_members_equity": 577005,
+      "cash_end": 317,
+      "distribution_to_hilton_affiliates": -1500000,
+      "net_cash_from_operating": 1516760,
+      "other_receivables_due_from_hilton_affiliates": 703943,
+      "deferred_revenues_non_current": 517282
+    },
+    "2023": {
+      "total_revenues": 1376897,
+      "net_income": 1372281,
+      "total_assets": 1183147,
+      "total_members_equity": 616454,
+      "distribution_to_hilton_affiliates": -1400000
+    },
+    "2022": {
+      "total_revenues": 1229465,
+      "net_income": 1233442,
+      "distribution_to_hilton_affiliates": -1550000
+    },
+    "key_observations": [
+      "Revenue CAGR 2022-2024: ~10.6%",
+      "Net margin ~99% (pure royalty pass-through entity)",
+      "~$4.45B distributed to Hilton affiliates over 3 years",
+      "56% of 2024 total assets are other receivables due from Hilton affiliates",
+      "Franchise contracts intangible grew +65% YoY (2024 vs 2023) — significant new contract acquisition",
+      "Cash end of 2024: $317K (nominal; liquidity flows through affiliates)",
+      "Related-party structure dominant — very low standalone credit independence signal",
+      "Leverage/equity: liabilities $692.9M / equity $577M ~ 1.2x"
+    ]
+  },
+  "litigation": {
+    "pending_count": 5,
+    "concluded_3yr_count": 4,
+    "active_antitrust_class_actions": 4,
+    "pending_list": [
+      "AAAA Property Partners v HFH (M.D.Fla.)",
+      "In re Extended Stay Hotel Antitrust Litigation (N.D.Cal., Sherman §1, IDeaS)",
+      "Hanson Dai v SAS Institute (N.D.Cal., Sherman §1, IDeaS)",
+      "Segal v Amadeus (N.D.Ill., Sherman §1)",
+      "Portillo v CoStar/STR (W.D.Wash., Sherman §1, STR)"
+    ]
+  },
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "state_addenda_count": 11,
+    "source_exhibit": "J-1",
+    "source_pages": [266, 274],
+    "see_also": "RT_depth_state_addenda_promotion.json",
+    "override_families_matrix": {
+      "forum_selection": ["California", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+      "governing_law": ["California", "Illinois", "New York", "North Dakota", "Rhode Island", "Washington"],
+      "liquidated_damages": ["California", "Minnesota", "North Dakota"],
+      "termination_cause_notice_cure": ["California", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "Virginia", "Washington"],
+      "general_release_carveout": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington"],
+      "non_renewal_fmv_compensation": ["Michigan", "Minnesota"],
+      "post_term_noncompete": ["Washington"],
+      "transfer_restrictions": ["Michigan", "Washington"],
+      "anti_waiver": ["Maryland", "Michigan"],
+      "bankruptcy_termination": ["Maryland", "Rhode Island"],
+      "trademark_indemnification": ["Illinois", "Minnesota"],
+      "franchisee_association_right": ["Michigan"],
+      "jury_trial_waiver": ["Minnesota", "North Dakota"]
+    }
+  },
+  "graduate_brand_acquisition": {
+    "date": "2024-05",
+    "accounting_treatment": "asset acquisition",
+    "recorded_value_usd_thousands": 85304,
+    "useful_life_years": 15,
+    "source_section": "Exhibit C Notes 3 and 4",
+    "source_pages": [124]
+  },
+  "hfh_tax_status": {
+    "disregarded_entity_us_federal": true,
+    "source_pages": [125]
+  },
+  "hfh_asset_pledge_as_collateral": {
+    "pledged_for_hilton_debt": true,
+    "debt_maturity_range": "2025-2033",
+    "source_pages": [125]
+  },
+  "hfh_ip_license_terms": {
+    "from_affiliate": true,
+    "royalty_free": true,
+    "source_pages": [122]
+  },
+  "unresolveds": [
+    {"severity": "high", "issue": "4 active Sherman §1 class actions (IDeaS, STR, Amadeus, Extended Stay); exposure unquantified"},
+    {"severity": "high", "issue": "Restricted Area Provision will NOT be extended for full FA term going forward (forward-looking territorial reduction)"},
+    {"severity": "medium", "issue": "No Item 19 cost or profit disclosure"},
+    {"severity": "medium", "issue": "Franchisee-managed hotels materially underperform company-managed on room rate (30.9% vs 53.1%)"},
+    {"severity": "medium", "issue": "Franchisee confidentiality clause flag — not all former franchisees can freely speak"},
+    {"severity": "low", "issue": "Exhibit D-1 State Addenda to Franchise Agreement (pp 183-196) not deep-read in this run; J-1 DD addenda fully structured via A2 depth pass 4"}
+  ],
+  "contradictions": []
+}

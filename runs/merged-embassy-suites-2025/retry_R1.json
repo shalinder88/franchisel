@@ -1,0 +1,132 @@
+{
+  "retry_id": "R1",
+  "description": "Exhibit C Hilton Franchise Holding LLC audited financial statements",
+  "source_pages": [119, 120, 121],
+  "units": "USD thousands",
+  "auditor": "Cherry Bekaert",
+  "audit_opinion": "unqualified",
+  "audit_opinion_date": "2025-03-18",
+  "balance_sheet": {
+    "2024": {
+      "current_assets": {
+        "cash": 317,
+        "accounts_receivable_net": 135970,
+        "due_from_hilton_affiliates_franchise_deposits": 18498,
+        "financing_receivables_net": 11438,
+        "other_receivables_due_from_hilton_affiliates": 703943,
+        "other": 2346,
+        "total_current_assets": 872512
+      },
+      "non_current_assets": {
+        "franchise_contracts_net": 392748,
+        "financing_receivables_net": 4626,
+        "other": 11,
+        "total_non_current_assets": 397385
+      },
+      "total_assets": 1269897,
+      "current_liabilities": {
+        "franchise_deposits": 18498,
+        "current_intercompany_payables": 89994,
+        "current_portion_deferred_revenues": 41598,
+        "current_franchise_contract_acquisition_costs_payable": 17120,
+        "other": 400,
+        "total_current_liabilities": 167610
+      },
+      "non_current_liabilities": {
+        "deferred_revenues": 517282,
+        "franchise_contract_acquisition_costs_payable": 8000,
+        "other": 0
+      },
+      "total_liabilities": 692892,
+      "members_equity": {
+        "contributed_capital": 310000,
+        "retained_earnings": 528936,
+        "due_from_hilton_affiliates": -261959,
+        "accumulated_other_comprehensive_income": 28,
+        "total_members_equity": 577005
+      },
+      "total_liabilities_and_equity": 1269897
+    },
+    "2023": {
+      "total_current_assets": 940470,
+      "total_non_current_assets": 242677,
+      "total_assets": 1183147,
+      "total_current_liabilities": 66132,
+      "total_liabilities": 566693,
+      "total_members_equity": 616454,
+      "cash": 5348,
+      "accounts_receivable_net": 127999,
+      "other_receivables_due_from_hilton_affiliates": 768478,
+      "deferred_revenues_non_current": 486418
+    }
+  },
+  "income_statement": {
+    "2024": {
+      "franchise_royalty_fees": 1434453,
+      "franchise_sales_and_coo_fees": 49340,
+      "franchise_termination_fees_and_other": 18276,
+      "total_revenues": 1502069,
+      "operating_expenses": 1354,
+      "provision_for_credit_losses": 6248,
+      "amortization_expense": 3751,
+      "total_expenses": 11353,
+      "operating_income": 1490716,
+      "non_operating_income_net": -2733,
+      "income_before_taxes": 1487983,
+      "foreign_tax_expense": -412,
+      "net_income": 1487571,
+      "comprehensive_income": 1487599,
+      "operating_margin_pct": 99.24,
+      "net_margin_pct": 99.04
+    },
+    "2023": {
+      "franchise_royalty_fees": 1331169,
+      "franchise_sales_and_coo_fees": 43294,
+      "franchise_termination_fees_and_other": 2434,
+      "total_revenues": 1376897,
+      "total_expenses": 5705,
+      "operating_income": 1371192,
+      "net_income": 1372281
+    },
+    "2022": {
+      "franchise_royalty_fees": 1184827,
+      "franchise_sales_and_coo_fees": 39881,
+      "franchise_termination_fees_and_other": 4757,
+      "total_revenues": 1229465,
+      "total_expenses": -1544,
+      "operating_income": 1231009,
+      "net_income": 1233442
+    }
+  },
+  "equity_rollforward": {
+    "2024": {
+      "beginning": 616454,
+      "comprehensive_income": 1487599,
+      "distribution_to_hilton_affiliates": -1500000,
+      "increase_in_due_from_hilton_affiliates": -27048,
+      "ending": 577005
+    },
+    "2023": {"beginning": 662063, "distribution_to_hilton_affiliates": -1400000, "ending": 616454},
+    "2022": {"beginning": 998579, "distribution_to_hilton_affiliates": -1550000, "ending": 662063}
+  },
+  "cash_flow_2024": {
+    "net_cash_from_operating": 1516760,
+    "net_cash_from_investing": -80050,
+    "net_cash_from_financing": -1441744,
+    "net_change_in_cash": -5031,
+    "cash_beginning": 5348,
+    "cash_end": 317
+  },
+  "key_observations": [
+    "HFH is a pass-through royalty cash machine: 2024 royalty revenue $1.43B, net income $1.49B, net margin 99.04%",
+    "Nearly all income distributed up: $1.50B distributed to Hilton affiliates in 2024 ($1.40B in 2023, $1.55B in 2022)",
+    "Operating expenses trivial ($11.4M against $1.5B revenue); HFH bears almost no operating cost",
+    "Cash balance kept nominal ($317K at year end 2024); liquidity flows through affiliates",
+    "Related-party exposure: $703.9M 'other receivables due from Hilton affiliates' on 2024 B/S (56% of total assets)",
+    "Deferred revenues (NC) of $517M — long-tail franchise fee recognition",
+    "Franchise contracts intangible grew materially: $238.5M → $392.7M (+$154.2M, +65% YoY) suggesting significant contract acquisition",
+    "Total liabilities $692.9M vs. total members equity $577.0M (leverage proxy moderate, but equity depressed by distributions)",
+    "All three years (2022-2024) highly profitable with minimal expense base",
+    "No going-concern flag"
+  ]
+}

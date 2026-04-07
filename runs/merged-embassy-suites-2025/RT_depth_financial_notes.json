@@ -1,0 +1,97 @@
+{
+  "source_pages": [122, 123, 124, 125, 126],
+  "notes": [
+    {
+      "note_id": "Note 1",
+      "title": "Organization",
+      "content": "Delaware LLC formed Sept 12 2007, began operations Oct 11 2007. Wholly owned by Hilton Domestic Operating Company Inc. Franchises Hilton brands in US, US territories, and Thailand for contracts executed/amended after Oct 24 2007. Licenses IP from a wholly-owned affiliate of Hilton on a ROYALTY-FREE basis, then sublicenses to third-party hotel owners."
+    },
+    {
+      "note_id": "Note 2",
+      "title": "Basis of Presentation and Significant Accounting Policies",
+      "accounting_policies": {
+        "basis": "GAAP; use of estimates",
+        "revenue_recognition": "Franchise royalty fees treated as variable consideration tied to a series of distinct services over time; recognized as hotel room sales occur. No estimate of unsatisfied performance obligations (sales-based royalty exception).",
+        "franchise_sales_and_coo_fees": "Fixed consideration; recognized over the term of the franchise contract (NOT upfront). Does not include a significant financing component.",
+        "franchise_termination_fees": "Recognized in period payment received due to collection uncertainty.",
+        "accounts_receivable": "Expected credit losses based on historical collection, nature of instrument, and forecasted conditions.",
+        "franchise_contracts_capitalization": "Consideration paid to incentivize owners and other incremental costs capitalized as 'franchise contracts, net'. Amortized straight-line over contract term (generally 10-20 years, including franchisor-option extensions). Amortization begins at hotel opening or contract execution, whichever later.",
+        "amortization_treatment": "Contract acquisition cost amortization recognized as REDUCTION of franchise royalty fees; cost-to-obtain amortization recognized in amortization expense.",
+        "impairment_policy": "Undiscounted cash flow test if indicators exist; impairment loss allocated pro-rata within asset group.",
+        "fair_value_hierarchy": "Three-level (Level 1/2/3); did not elect fair value option for any financial assets/liabilities.",
+        "acquisitions_policy": "Distinguish business combinations vs asset acquisitions based on inputs/processes/outputs and fair-value concentration test. Asset acquisitions: cost allocated to individual assets; no goodwill recognized."
+      }
+    },
+    {
+      "note_id": "Note 3",
+      "title": "Acquisition",
+      "content": "May 2024 — acquired Graduate franchise contracts (part of Hilton's acquisition of Graduate brand). Accounted as an asset acquisition. Recorded franchise contract intangible assets at ~$85 million. Amortized over 15-year estimated useful life. Not material to 2024 operating results.",
+      "acquired_intangible_value_usd_thousands": 85000,
+      "useful_life_years": 15
+    },
+    {
+      "note_id": "Note 4",
+      "title": "Franchise Contracts",
+      "2024_breakdown_usd_thousands": {
+        "contract_acquisition_costs_gross": 376063,
+        "contract_acquisition_costs_accumulated_amortization": -69820,
+        "contract_acquisition_costs_net": 306243,
+        "franchise_contract_intangible_assets_gross": 85304,
+        "franchise_contract_intangible_assets_accumulated_amortization": -3317,
+        "franchise_contract_intangible_assets_net": 81987,
+        "costs_to_obtain_contracts_gross": 7259,
+        "costs_to_obtain_contracts_accumulated_amortization": -2741,
+        "costs_to_obtain_contracts_net": 4518,
+        "total_net": 392748
+      },
+      "2023_breakdown_usd_thousands": {
+        "contract_acquisition_costs_gross": 287958,
+        "contract_acquisition_costs_net": 233584,
+        "total_net": 238533
+      },
+      "amortization_reducing_royalty_fees_3yr_usd_thousands": [11972, 12897, 16053],
+      "amortization_expense_line_3yr_usd_thousands": [410, 414, 3751]
+    },
+    {
+      "note_id": "Note 5",
+      "title": "Fair Value Measurements",
+      "content": "Fair values estimated to equal carrying values as of 2024-12-31 and 2023-12-31."
+    },
+    {
+      "note_id": "Note 6",
+      "title": "Income Taxes",
+      "content": "HFH is a DISREGARDED ENTITY for US income tax purposes — all taxable income/expense flows to Hilton parent. US federal income tax provision NOT recorded at HFH level. Foreign tax expense ($412K 2024, $128K 2023, $70K 2022) relates to US territory withholding on franchise payments to foreign-domiciled entities.",
+      "disregarded_entity": true,
+      "foreign_tax_3yr_usd_thousands": [70, 128, 412]
+    },
+    {
+      "note_id": "Note 7",
+      "title": "Commitments and Contingencies",
+      "content": "HFH is guarantor on Hilton debt maturing 2025-2033. ALL HFH assets and franchise contracts PLEDGED as collateral for these debt agreements. No guarantee liability recorded due to parent-subsidiary relationship. Ordinary-course litigation disclosed; management expects no material adverse effect.",
+      "debt_guarantee_exposure": true,
+      "asset_pledge_collateral": true,
+      "debt_maturity_range": "2025-2033"
+    },
+    {
+      "note_id": "Note 8",
+      "title": "Related Party Transactions",
+      "content": "Intercompany balances managed via Hilton's centralized cash management. Franchise deposits collected via Hilton affiliate lockbox to which HFH has NO access. Settlements with distributions pattern: 2022 $1.55B, 2023 $1.4B, 2024 $1.5B — settlements presented as operating activities and distributions as financing. Graduate acquisition paid by affiliate; HFH recorded short-term intercompany note, settled Feb 2024 with accrued interest. Operator agreement with Hilton affiliate (no compensation provided in any of the 3 years).",
+      "centralized_cash_management": true,
+      "lockbox_access": false,
+      "distributions_3yr_usd_billions": [1.55, 1.4, 1.5]
+    },
+    {
+      "note_id": "Note 9",
+      "title": "Subsequent Events",
+      "content": "Evaluated through March 18, 2025 (date of audit opinion). (Original text includes a typo '2024' — likely 2025 per audit report date.) No material subsequent events disclosed."
+    }
+  ],
+  "key_policy_observations": [
+    "Disregarded entity for US income tax — no HFH-level federal tax provision",
+    "All HFH assets pledged as collateral for Hilton parent debt (2025-2033) — material encumbrance",
+    "Royalty-free IP license from Hilton affiliate (inter-company cost not reflected in HFH P&L)",
+    "Centralized cash management; HFH has no access to franchise deposit lockbox",
+    "Graduate brand acquisition in May 2024 added $85M franchise contract intangible, 15-year amortization",
+    "Amortization of contract acquisition costs reduces royalty fee revenue ($16.1M in 2024, up from $12.9M 2023)"
+  ]
+}

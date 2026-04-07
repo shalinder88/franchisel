@@ -1,0 +1,148 @@
+{
+  "schema_version": "canonical_enriched_v2",
+  "base": "11_canonical_enriched.json",
+  "item21_financial_structure_detail": {
+    "entity": "Hilton Franchise Holding LLC",
+    "entity_type": "pure royalty pass-through",
+    "revenue_quality": "recurring",
+    "net_margin_3yr": [100.3, 99.7, 99.0],
+    "revenue_3yr": [1229465, 1376897, 1502069],
+    "revenue_3yr_cagr_pct": 10.56,
+    "net_income_3yr": [1233442, 1372281, 1487571],
+    "distributions_to_affiliates_3yr": [-1550000, -1400000, -1500000],
+    "total_distributions_3yr": -4450000,
+    "distribution_payout_ratio_3yr_pct": [125.7, 102.0, 100.8],
+    "cash_end_3yr": [99, 5348, 317],
+    "related_party_asset_pct_2024": 55.4,
+    "franchise_contracts_intangible_growth_yoy_pct": 64.6,
+    "leverage_ratio_liabilities_to_equity_2024": 1.20,
+    "standalone_credit_independence_low": true,
+    "going_concern_flag": false,
+    "auditor": "Cherry Bekaert",
+    "audit_date": "2025-03-18"
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "cash": 317,
+      "accounts_receivable_net": 135970,
+      "due_from_hilton_affiliates_franchise_deposits": 18498,
+      "financing_receivables_current_net": 11438,
+      "other_receivables_due_from_hilton_affiliates": 703943,
+      "other_current": 2346,
+      "total_current_assets": 872512,
+      "franchise_contracts_net": 392748,
+      "financing_receivables_non_current_net": 4626,
+      "other_non_current": 11,
+      "total_non_current_assets": 397385,
+      "total_assets": 1269897,
+      "franchise_deposits": 18498,
+      "current_intercompany_payables": 89994,
+      "current_deferred_revenues": 41598,
+      "current_franchise_contract_acquisition_costs_payable": 17120,
+      "other_current_liabilities": 400,
+      "total_current_liabilities": 167610,
+      "deferred_revenues_non_current": 517282,
+      "franchise_contract_acquisition_costs_payable_non_current": 8000,
+      "total_liabilities": 692892,
+      "contributed_capital": 310000,
+      "retained_earnings": 528936,
+      "due_from_hilton_affiliates_in_equity": -261959,
+      "accumulated_other_comprehensive_income": 28,
+      "total_members_equity": 577005
+    },
+    "income_statement_2024": {
+      "franchise_royalty_fees": 1434453,
+      "franchise_sales_and_coo_fees": 49340,
+      "franchise_termination_fees_and_other": 18276,
+      "total_revenues": 1502069,
+      "operating_expenses": 1354,
+      "provision_for_credit_losses": 6248,
+      "amortization_expense": 3751,
+      "total_expenses": 11353,
+      "operating_income": 1490716,
+      "non_operating_income_loss_net": -2733,
+      "income_before_taxes": 1487983,
+      "foreign_tax_expense": -412,
+      "net_income": 1487571,
+      "comprehensive_income": 1487599
+    },
+    "cash_flow_2024": {
+      "net_cash_from_operating": 1516760,
+      "acquisition_of_franchise_contract_intangibles": -85304,
+      "payments_received_on_financing_receivables": 5254,
+      "net_cash_from_investing": -80050,
+      "issuance_of_short_term_note": 85304,
+      "distribution_to_hilton_affiliates": -1500000,
+      "increase_in_due_from_hilton_affiliates": -27048,
+      "net_cash_from_financing": -1441744,
+      "net_change_in_cash": -5031
+    }
+  },
+  "item6_fee_detail": {
+    "total_distinct_fee_lines_extracted": 32,
+    "royalty_fee_is_tiered_ramp": true,
+    "royalty_fee_effective_for_mature_hotel_pct": 5.5,
+    "base_ongoing_pct_grr_sum": 13.8,
+    "base_ongoing_pct_grr_components": {
+      "royalty_mature": 5.5,
+      "program_fee": 4.0,
+      "hilton_honors": 4.3
+    },
+    "event_driven_risk_fees": {
+      "brand_non_compliance_per_room_low": 65,
+      "brand_non_compliance_per_room_high": 145,
+      "brand_non_compliance_cap_6mo": 50000,
+      "stay_score_failure_pct_grr_annual": 0.5,
+      "service_quality_improvement_low_per_6mo": 20000,
+      "service_quality_improvement_high_per_6mo": 50000,
+      "plans_designs_late_per_90days": 5000,
+      "pip_renovation_failure_per_6mo": 10000
+    },
+    "auto_enrolled_opt_out_programs_count": 4,
+    "centralized_payment_programs_count": 4,
+    "training_fees_mandatory": true,
+    "brand_conference_annual_required": true,
+    "brand_conference_per_attendee": 2500,
+    "guest_assistance_program_max_handling_fee": 300,
+    "hsm_procurement_markup_pct_range": [4, 10]
+  },
+  "state_addenda_overrides": {
+    "states_with_addenda_count": 11,
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "see_also": "RT_depth_state_addenda_promotion.json",
+    "aggregate_override_counts": {
+      "forum_selection": 7,
+      "governing_law": 6,
+      "liquidated_damages": 3,
+      "termination": 8,
+      "general_release": 10,
+      "non_renewal_fmv_compensation": 2,
+      "post_term_noncompete": 1,
+      "transfer_restrictions": 2
+    }
+  },
+  "financial_notes_depth": {
+    "notes_extracted_count": 9,
+    "material_observations": [
+      "HFH is disregarded entity for US federal tax (Note 6)",
+      "All HFH assets pledged as collateral for Hilton parent debt 2025-2033 (Note 7)",
+      "Royalty-free IP license from Hilton affiliate (Note 1)",
+      "Graduate brand acquisition May 2024, $85.3M intangible, 15-year amortization (Notes 3 & 4)",
+      "Franchise contract amortization reducing royalty revenue: $12.0M/$12.9M/$16.1M (2022/2023/2024)",
+      "Disregarded entity / no US federal tax provision at HFH level",
+      "Centralized cash management — no access to franchise deposit lockbox (Note 8)"
+    ]
+  },
+  "contract_burden_depth": {
+    "clauses_summarized_count": 48,
+    "non_curable_default_grounds_count": 16,
+    "distinctive_clauses": [
+      "Re-licensing on 'materially different terms'",
+      "Restricted Area will NOT extend full FA term going forward",
+      "No cross-brand protection (other Hilton brands not excluded from encroachment)",
+      "Interim remedies include software disable and reservation diversion prior to termination",
+      "HSM late-payment interest 18.5%/yr compounded daily",
+      "All HFH assets pledged as collateral for parent debt"
+    ]
+  }
+}

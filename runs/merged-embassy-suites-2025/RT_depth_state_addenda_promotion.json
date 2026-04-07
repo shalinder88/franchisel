@@ -1,0 +1,133 @@
+{
+  "source_exhibit": "J-1",
+  "source_pages": [266, 267, 268, 269, 270, 271, 272, 273, 274],
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+  "state_addenda_count": 11,
+  "note": "Also see Exhibit D-1 State Addenda to Franchise Agreement (pp 183-196) which was not deeply transcribed in this run.",
+  "per_state": {
+    "California": {
+      "source_pages": [267],
+      "overrides": [
+        {"affected_family": "damages", "override_summary": "Liquidated damages clauses may be unenforceable under CA Civil Code §1671", "why_it_matters": "Franchisor's liquidated damages formula may not hold in CA; exposure capped or litigated.", "items_affected": ["6", "9", "17(d)", "17(e)", "17(i)"]},
+        {"affected_family": "termination", "override_summary": "CA Bus & Prof Code §§20000-20043 govern termination and non-renewal rights", "items_affected": ["17(b)", "17(c)", "17(d)", "17(e)", "17(f)", "17(g)", "17(h)", "17(i)", "17(w)"]},
+        {"affected_family": "governing_law", "override_summary": "NY choice-of-law may not be enforceable under CA law", "items_affected": ["17(w)"]},
+        {"affected_family": "forum_selection", "override_summary": "Fairfax County VA venue may not be enforceable under CA law", "items_affected": ["17(v)"]},
+        {"affected_family": "general_release", "override_summary": "CA Corp Code §31512 voids waivers under CA Franchise Investment Law; Bus & Prof Code §20010 voids waivers under Franchise Relations Act", "items_affected": ["17(c)", "17(m)"]},
+        {"affected_family": "modification_disclosure", "override_summary": "CA Corp Code §31125 requires disclosure document before material modification"}
+      ]
+    },
+    "Hawaii": {
+      "source_pages": [267, 268],
+      "overrides": [
+        {"affected_family": "general_release", "override_summary": "General release does not relieve franchisor from HI franchise-law liability"}
+      ]
+    },
+    "Illinois": {
+      "source_pages": [268],
+      "overrides": [
+        {"affected_family": "trademarks", "override_summary": "Item 13: franchisor does not own Marks — affiliate owns them and licenses/sublicenses"},
+        {"affected_family": "termination", "override_summary": "Termination and non-renewal rights affected by IL law 815 ILCS 705/19 and 705/20"},
+        {"affected_family": "governing_law", "override_summary": "Governing law, jurisdiction, venue, choice of law, and jury waiver do not constitute waiver of IL Franchise Disclosure Act rights", "items_affected": ["17(v)", "17(w)"]},
+        {"affected_family": "general_release", "override_summary": "IL §41 voids waivers of IL Act compliance (does not prevent settlements or FAA arbitration)"}
+      ]
+    },
+    "Maryland": {
+      "source_pages": [268, 269],
+      "overrides": [
+        {"affected_family": "termination", "override_summary": "MD law may supersede FA on termination and renewal", "items_affected": ["17(b)", "17(c)", "17(d)", "17(e)", "17(f)", "17(g)", "17(h)", "17(i)"]},
+        {"affected_family": "bankruptcy_termination", "override_summary": "Bankruptcy-triggered termination may not be enforceable under federal bankruptcy law", "items_affected": ["17(h)"]},
+        {"affected_family": "forum_selection", "override_summary": "May sue in MD for claims under MD Franchise Registration and Disclosure Law; 3-year statute of limitations from grant", "items_affected": ["17(v)"]},
+        {"affected_family": "general_release", "override_summary": "General Release (FA §16.8) does not release franchisor from MD Franchise Registration and Disclosure Law liability", "items_affected": ["17(w)"]},
+        {"affected_family": "anti_waiver", "override_summary": "No statement, questionnaire, or acknowledgment signed by franchisee waives claims under state franchise law including fraud in inducement"}
+      ]
+    },
+    "Michigan": {
+      "source_pages": [269, 270],
+      "overrides": [
+        {"affected_family": "franchisee_association", "override_summary": "Prohibition on joining franchisee association is VOID"},
+        {"affected_family": "anti_waiver", "override_summary": "Requirement that franchisee assent to release/assignment/novation/waiver/estoppel depriving rights is VOID"},
+        {"affected_family": "termination", "override_summary": "Termination requires good cause (failure to comply and failure to cure after written notice with reasonable opportunity ≤30 days)"},
+        {"affected_family": "non_renewal_compensation", "override_summary": "Non-renewal without fair compensation for FMV of inventory/supplies/equipment/fixtures/furnishings is VOID if term <5 years AND franchisee prohibited from continuing similar business in same area OR did not receive 6 months notice"},
+        {"affected_family": "non_renewal_equal_terms", "override_summary": "Refusal to renew on terms generally available to other franchisees of same class is VOID (does not require a renewal provision)"},
+        {"affected_family": "forum_selection", "override_summary": "Arbitration or litigation outside MI is VOID (except by post-dispute agreement)"},
+        {"affected_family": "transfer", "override_summary": "Refusal to permit transfer except for good cause is VOID (does not prevent ROFR); good cause enumerated"},
+        {"affected_family": "resell_restrictions", "override_summary": "Requirement to resell to franchisor items not uniquely identified with franchisor is VOID (ROFR permitted)"},
+        {"affected_family": "assignment_by_franchisor", "override_summary": "Franchisor's right to transfer obligations without ensuring fulfillment is VOID"}
+      ]
+    },
+    "Minnesota": {
+      "source_pages": [270, 271],
+      "overrides": [
+        {"affected_family": "trademark_indemnification", "override_summary": "MN law requires franchisor indemnification against third-party trademark infringement claims (subject to 10-day notice and tender of defense)"},
+        {"affected_family": "termination", "override_summary": "MN Stat §80C.14 subd 3-5: 90 days notice of termination (60 days to cure) and 180 days notice for non-renewal", "items_affected": ["17(b)", "17(c)", "17(d)", "17(e)", "17(f)", "17(g)", "17(h)", "17(i)"]},
+        {"affected_family": "general_release", "override_summary": "General release does not relieve franchisor from MN Franchise Investment Law liability", "items_affected": ["17(a)", "17(m)"]},
+        {"affected_family": "damages", "override_summary": "MN Rule 2860.4400J prohibits requiring consent to liquidated damages", "items_affected": ["17(i)"]},
+        {"affected_family": "forum_selection", "override_summary": "MN Stat §80C.21 and MN Rule 2860.4400J prohibit requiring out-of-state litigation, jury trial waiver, liquidated damages, termination penalties, or judgment notes", "items_affected": ["17(i)", "17(v)", "17(w)"]}
+      ]
+    },
+    "New York": {
+      "source_pages": [271, 272],
+      "overrides": [
+        {"affected_family": "item3_disclosure", "override_summary": "Additional Item 3 disclosures required re: pending actions, convictions, and injunctive orders"},
+        {"affected_family": "item4_disclosure", "override_summary": "Additional Item 4 bankruptcy disclosures for 10-year lookback on franchisor and Item 2 persons"},
+        {"affected_family": "termination_by_franchisee", "override_summary": "Franchisee may terminate on any grounds available by law"},
+        {"affected_family": "assignment_by_franchisor", "override_summary": "Franchisor will not assign except to assignee willing and able to assume obligations"},
+        {"affected_family": "governing_law", "override_summary": "NY law governs any cause of action arising under NY Franchises Law; NY General Business Law Article 33 §§680-695 may supersede inconsistent FA provisions"},
+        {"affected_family": "general_release", "override_summary": "General release requirements on renewal/transfer may not be enforceable under NY law"},
+        {"affected_family": "injunctive_relief", "override_summary": "Franchisor's injunctive relief only after proper proofs and authority grant"}
+      ]
+    },
+    "North Dakota": {
+      "source_pages": [272],
+      "overrides": [
+        {"affected_family": "damages", "override_summary": "Liquidated damages provisions DELETED in entirety", "items_affected": ["17(i)"]},
+        {"affected_family": "governing_law", "override_summary": "ND law supersedes NY law and other FA provisions in conflict; FA governed by ND law", "items_affected": ["17(w)"]},
+        {"affected_family": "forum_selection", "override_summary": "Provisions designating jurisdiction/venue outside ND are DELETED", "items_affected": ["17(v)"]},
+        {"affected_family": "jury_trial_waiver", "override_summary": "Jury trial waiver DELETED", "items_affected": ["17(w)"]},
+        {"affected_family": "general_release", "override_summary": "Release language does not relieve franchisor from ND Franchise Disclosure Act liability", "items_affected": ["17(c)", "17(m)"]}
+      ]
+    },
+    "Rhode Island": {
+      "source_pages": [272, 273],
+      "overrides": [
+        {"affected_family": "bankruptcy_termination", "override_summary": "Termination on bankruptcy may not be enforceable under federal bankruptcy law", "items_affected": ["17(h)"]},
+        {"affected_family": "general_release", "override_summary": "Release on transfer/renewal does not apply to RI Franchise Investment Act claims", "items_affected": ["17(c)", "17(m)"]},
+        {"affected_family": "forum_selection", "override_summary": "Provisions restricting jurisdiction/venue outside RI or requiring non-RI governing law are VOID as to RI Franchise Investment Act claims", "items_affected": ["17(u)", "17(v)", "17(w)"]}
+      ]
+    },
+    "Virginia": {
+      "source_pages": [273],
+      "overrides": [
+        {"affected_family": "termination", "override_summary": "Per VA Retail Franchising Act §13.1-564, termination without reasonable cause is unlawful; FA default grounds that do not constitute 'reasonable cause' may not be enforceable", "items_affected": ["17(h)"]}
+      ]
+    },
+    "Washington": {
+      "source_pages": [273, 274],
+      "overrides": [
+        {"affected_family": "termination", "override_summary": "RCW 19.100.180 may supersede FA on termination and renewal"},
+        {"affected_family": "general_release", "override_summary": "Release/waiver does not include WA Franchise Investment Protection Act rights except when in negotiated settlement with independent counsel"},
+        {"affected_family": "governing_law", "override_summary": "In conflict of laws, WA Franchise Investment Protection Act (Chapter 19.100 RCW) prevails"},
+        {"affected_family": "transfer_fees", "override_summary": "Transfer fees collectable only to extent of reasonable actual/estimated costs"},
+        {"affected_family": "forum_selection", "override_summary": "Arbitration/mediation must be in WA or mutually agreed; franchisee may bring action in WA"},
+        {"affected_family": "noncompete", "override_summary": "Noncompete VOID against employees earning <$100K/yr (annualized) and independent contractors earning <$250K/yr (annualized) per RCW 49.62.020 and 49.62.030"},
+        {"affected_family": "no_poaching", "override_summary": "RCW 49.62.060: franchisor cannot restrict franchisee from soliciting/hiring employees of same-franchisor franchisees or of the franchisor"}
+      ]
+    }
+  },
+  "summary_override_matrix": {
+    "forum_selection": ["California", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+    "governing_law": ["California", "Illinois", "New York", "North Dakota", "Rhode Island", "Washington"],
+    "damages_liquidated": ["California", "Minnesota", "North Dakota"],
+    "termination": ["California", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "Virginia", "Washington"],
+    "general_release": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington"],
+    "non_renewal_compensation": ["Michigan", "Minnesota"],
+    "noncompete": ["Washington"],
+    "transfer": ["Michigan", "Washington"],
+    "anti_waiver": ["Maryland", "Michigan"],
+    "bankruptcy_termination": ["Maryland", "Rhode Island"],
+    "trademark": ["Illinois", "Minnesota"],
+    "franchisee_association": ["Michigan"],
+    "jury_trial": ["Minnesota", "North Dakota"],
+    "item3_item4_disclosure": ["New York"]
+  }
+}

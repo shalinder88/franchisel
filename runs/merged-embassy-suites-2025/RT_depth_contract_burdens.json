@@ -1,0 +1,116 @@
+{
+  "source": "Item 17 table (pp 69-79) + Item 5/6/12 + HITS Agreement references + Spa Amendment references",
+  "note": "Full clause-by-clause FA read from Exhibit D pp 127-182 not transcribed in this test run. Item 17 table provides the authoritative franchisor-prepared clause map. The below is the curated burden inventory derived from Item 17 plus Items 5, 6, 8, 11, 12.",
+  "grant_and_term": {
+    "license_scope": "non-exclusive right to use System at a specified location",
+    "term_new_construction_years": 23,
+    "term_conversion_years_range": [10, 20],
+    "term_coo": "remaining term of prior FA or as agreed",
+    "renewal_right": false,
+    "re_licensing_discretionary_materially_different": true,
+    "hits_agreement_concurrent": true,
+    "spa_amendment_concurrent": true
+  },
+  "fee_and_payment_obligations": {
+    "royalty_pct_grr": {"y1": 3.5, "y2": 4.5, "y3_plus": 5.5, "coo_flat": 5.5},
+    "program_fee_pct_grr": 4.0,
+    "hilton_honors_pct_guest_folio": 4.3,
+    "liquidated_damages": "greater of Hotel's Avg Monthly Royalty or System's Avg Monthly Royalty, × remaining months",
+    "non_compliance_fee_per_room": [65, 145],
+    "non_compliance_cap_6mo": 50000,
+    "interest_on_late_payments_hsm": "18.5%/year compounded daily",
+    "program_fee_max_increase_pct": 1.0
+  },
+  "site_construction": {
+    "construction_start_deadline_months": 16,
+    "construction_complete_deadline_months": 36,
+    "extension_fee_per_request": 10000,
+    "automatic_rolling_extensions_days": 30,
+    "eforea_spa_open_deadline_months": 12
+  },
+  "training_operational": {
+    "gm_training_deadline_days": 90,
+    "sales_training_deadline_days": 90,
+    "brand_conference_required_annual": true,
+    "brand_conference_per_attendee": 2500,
+    "mandatory_tech_stack": ["OnQ", "HPMS/PEP", "Guest Internet StayConnected", "GRO", "Delphi", "Connected Room", "Digital Floor Plan", "Digital Key", "Hilton Opening Transition Tool"],
+    "onq_refresh_cycle_years_max": 3
+  },
+  "termination_triggers": {
+    "curable_payment_default_cure_days": 10,
+    "curable_other_breach_cure_days": 30,
+    "non_curable_grounds_count": 16,
+    "non_curable_grounds": [
+      "repeat breach within 24 months",
+      "3 material default notices in 12 months",
+      "insolvency/inability to pay debts/general assignment for benefit of creditors",
+      "bankruptcy petition voluntary or involuntary entered",
+      "loss of possession of hotel or hotel site",
+      "5 consecutive closed days",
+      "contesting Hilton ownership of marks",
+      "conduct adversely affecting reputation",
+      "concealing revenues/false reporting/fraud",
+      "unapproved transfer",
+      "sanctioned person",
+      "adverse gaming regulation impact",
+      "guarantor breach",
+      "threat to public health/safety",
+      "becoming a Competitor",
+      "termination of other Your Hotel Agreements"
+    ],
+    "interim_remedies_available": ["reservation suspension", "website delist", "divert reservations to other Network Hotels", "disable software", "admin/intervention fees", "revoke fee discounts"]
+  },
+  "transfer_provisions": {
+    "permitted_transfers_no_consent": ["public equity", "<50% private holding without control change", "intra institutional investment fund"],
+    "permitted_transfers_with_notice_consent_fee": ["affiliate", "family member/trust", "death (to family)", ">50% private equity accumulated since Effective Date"],
+    "change_of_ownership_transfer": {
+      "notice_days": 60,
+      "transferee_meets_current_standards": true,
+      "pays_franchise_app_fee": true,
+      "signs_current_form_fa": true,
+      "possible_pip_fee": true,
+      "transferee_cannot_be": ["Sanctioned Person", "Competitor"]
+    },
+    "rofr": false,
+    "option_to_purchase": false
+  },
+  "default_cross_default": {
+    "cross_default_your_hotel_agreements": true,
+    "cross_default_hits_agreement": true,
+    "cross_default_spa_amendment": true
+  },
+  "noncompete": {
+    "in_term_scope": "cannot own/license a competing hotel brand; minority Competitor interest OK sometimes; may be franchisee/manager of Competitor",
+    "post_term": "none",
+    "spa_concurrent": "while operating eforea spa, no other spa in/adjacent to/associated with hotel"
+  },
+  "guaranty": {
+    "source_exhibit": "E",
+    "page_range": [205, 209],
+    "scope_unverified_in_this_run": true,
+    "note": "Clause-level guaranty scope (personal/spousal/unlimited) not transcribed in this test run"
+  },
+  "insurance": {
+    "source_section": "Item 7 Note 14",
+    "content": "Must maintain minimum levels/types per Manual. Must name additional insureds per Manual. Must carry endorsements and notice requirements per Manual."
+  },
+  "indemnification": {
+    "source": "Item 17 transfer notice requirements reference indemnification for securities offerings and COO; full indemnification scope not transcribed"
+  },
+  "force_majeure": {
+    "present": true,
+    "source": "Item 17 §11 casualty; §13.2(6) 5-day closure exception for force majeure"
+  },
+  "distinctive_unusual_clauses": [
+    "Re-licensing 'materially different terms' — explicit no-continuity-right language",
+    "Restricted Area Provision will NOT be extended for full FA term going forward (explicit forward-looking narrowing)",
+    "Noncompete across Hilton brand family (cross-brand) not protected — Embassy Suites franchisees can face intra-Hilton encroachment (HGI, DT, Homewood)",
+    "Liquidated damages formula uses greater of Hotel or System Avg Monthly Royalty × remaining months",
+    "Interim remedies allow Hilton to disable software and divert reservations BEFORE termination",
+    "HSM 18.5%/yr compounded daily on late payments (Item 5 Note 5)",
+    "Non-curable default on 'becoming a Competitor'",
+    "Non-curable default on public-health/safety threats",
+    "All HFH assets pledged as collateral for Hilton parent debt (Note 7 to financials)"
+  ],
+  "clause_count_approximate": 48
+}

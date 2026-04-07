@@ -1,0 +1,109 @@
+{
+  "schema_version": "canonical_enriched_v1",
+  "base": "09_final_canonical.json",
+  "item19_enriched": {
+    "chart_families": [
+      {
+        "name": "Room Rate - All Comparable",
+        "population": 220,
+        "cm_count": 32,
+        "fm_count": 188,
+        "2024_avg": 184.12,
+        "2024_median": 171.32,
+        "2024_range_low": 109.57,
+        "2024_range_high": 375.87,
+        "fm_pct_meeting_avg": 30.9,
+        "fm_pct_meeting_median": 46.3
+      },
+      {
+        "name": "Occupancy - All Comparable",
+        "population": 220,
+        "2024_avg_pct": 74.4,
+        "2024_median_pct": 75.3,
+        "2024_range_low_pct": 47.9,
+        "2024_range_high_pct": 95.6,
+        "fm_pct_meeting_avg": 53.7
+      },
+      {
+        "name": "Occupancy Index (STR)",
+        "population": 220,
+        "2024_avg": 111.8,
+        "2024_median": 111.5,
+        "2024_range_low": 71.9,
+        "2024_range_high": 159.9,
+        "fm_pct_meeting_avg": 50.5
+      },
+      {
+        "name": "RevPAR Index (STR)",
+        "population": 220,
+        "2024_avg": 121.7,
+        "2024_median": 124.0,
+        "2024_range_low": 47.1,
+        "2024_range_high": 206.7,
+        "fm_pct_meeting_avg": 55.3
+      },
+      {
+        "name": "New Generation (post-2015)",
+        "population": 47,
+        "cm_count": 3,
+        "fm_count": 44,
+        "2024_avg_room_rate": 205.12,
+        "2024_median_room_rate": 184.62,
+        "2024_range_low_room_rate": 142.80,
+        "2024_range_high_room_rate": 308.91,
+        "2024_avg_occupancy_pct": 76.9,
+        "2024_median_occupancy_pct": 76.6,
+        "fm_pct_meeting_avg_room_rate": 29.5,
+        "fm_pct_meeting_avg_occupancy": 45.5
+      }
+    ],
+    "fpr_type": "revenue_and_occupancy_only",
+    "cost_disclosure": false,
+    "profit_disclosure": false,
+    "franchisor_computed_model_absent": true
+  },
+  "item20_yearly_activity": {
+    "2022": {"start": 234, "opened": 5, "terminations": 0, "non_renewals": 0, "ceased_other": -4, "end": 235},
+    "2023": {"start": 235, "opened": 4, "terminations": 0, "non_renewals": 0, "ceased_other": -3, "end": 236},
+    "2024": {"start": 236, "opened": 4, "terminations": 3, "non_renewals": 0, "ceased_other": 0, "end": 237},
+    "termination_2024_states": ["Colorado", "Michigan", "Texas"],
+    "transfers_by_year": [9, 5, 14],
+    "transfer_acceleration_2024": true,
+    "first_termination_year_in_window": 2024
+  },
+  "exhibit_structure": {
+    "exhibit_count": 18,
+    "high_priority": ["A", "B", "C", "D", "D-1", "E", "G", "J-1", "M"],
+    "state_addenda_present": ["D-1", "I", "J-1", "L"]
+  },
+  "item21_structural": {
+    "auditor": "Cherry Bekaert",
+    "audit_opinion": "unqualified",
+    "audit_date": "2025-03-18",
+    "going_concern": false,
+    "fiscal_year_end": "December 31",
+    "statements": ["Balance Sheets 2024, 2023", "Statements of Comprehensive Income and Member's Equity 2024, 2023, 2022", "Statements of Cash Flows 2024, 2023, 2022", "Notes"]
+  },
+  "item1_structural": {
+    "franchisor_age_years_at_issuance": 18,
+    "us_brand_years": 10,
+    "predecessor_chain_depth": 3,
+    "ultimate_public_parent": true,
+    "ticker": "HLT",
+    "hilton_brand_count_us": 18
+  },
+  "item6_fee_attributes": {
+    "royalty_ramp_type": "tiered_3year",
+    "royalty_ramp_levels": [3.5, 4.5, 5.5],
+    "program_fee_type": "percent_grr_adjustable",
+    "program_fee_rate": 4.0,
+    "program_fee_cap_increase": 1.0,
+    "loyalty_program_fee_pct": 4.3,
+    "has_guest_assistance_fees": true,
+    "has_non_compliance_fee_system": true,
+    "has_quality_improvement_program": true,
+    "has_liquidated_damages": true,
+    "has_centralized_payment_programs": true,
+    "auto_enrolled_programs": ["Hilton Advance", "Group Preferred Partnership", "Hilton For Business", "Event Planner Bonus"]
+  }
+}
