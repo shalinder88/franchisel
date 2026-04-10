@@ -10,50 +10,58 @@ export default function EvidenceAccordion({
 }) {
   return (
     <SectionShell id="evidence" eyebrow="Show your work" headline="Source evidence">
-      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 divide-y divide-border/30">
-        {evidence.sections.map((s) => (
+      {/* Drawer count badge */}
+      <div className="mb-5">
+        <span className="inline-flex items-center gap-1.5 rounded-full border border-white/[0.06] px-3 py-1.5 text-[10px] text-muted/40 font-medium">
+          {evidence.sections.length} FDD sections extracted
+        </span>
+      </div>
+
+      <div className="rounded-2xl border border-white/[0.06] bg-surface/80 shadow-xl shadow-black/20 overflow-hidden divide-y divide-white/[0.03]">
+        {evidence.sections.map((s, si) => (
           <details key={s.title} className="group">
-            <summary className="flex items-center justify-between gap-4 cursor-pointer px-5 py-4 list-none hover:bg-white/[0.02] transition-all duration-200">
-              <span className="text-sm font-medium text-foreground">{s.title}</span>
+            <summary className="flex items-center gap-4 cursor-pointer px-5 sm:px-6 py-4 list-none hover:bg-white/[0.015] transition-all duration-200">
+              <span className="text-muted/20 tabular-nums text-[11px] font-bold w-5 text-right shrink-0">
+                {String(si + 1).padStart(2, "0")}
+              </span>
+              <span className="text-[13px] font-medium text-foreground/70 flex-1">{s.title}</span>
+              <span className="text-[10px] text-muted/25 tabular-nums shrink-0">{s.items.length} items</span>
               <svg
-                className="w-4 h-4 text-muted shrink-0 transition-transform duration-200 group-open:rotate-180"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
+                className="w-4 h-4 text-muted/30 shrink-0 transition-transform duration-200 group-open:rotate-180"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
-            <div className="px-5 pb-5">
-              <ul className="divide-y divide-border/40">
+            <div className="px-5 sm:px-6 pb-5">
+              <div className="divide-y divide-white/[0.03]">
                 {s.items.map((it, i) => (
-                  <li key={i} className="py-3 grid grid-cols-1 md:grid-cols-[180px_1fr_auto] gap-2">
-                    <div className="text-[11px] text-muted font-medium">{it.label}</div>
-                    <div className="text-sm text-foreground/80 leading-relaxed">{it.detail}</div>
+                  <div key={i} className="py-3 grid grid-cols-1 md:grid-cols-[160px_1fr_auto] gap-2">
+                    <div className="text-[10px] text-muted/40 font-medium">{it.label}</div>
+                    <div className="text-[13px] text-foreground/65 leading-relaxed">{it.detail}</div>
                     {it.sourceRef && (
-                      <div className="text-[10px] text-muted/60 text-right md:whitespace-nowrap tabular-nums">
+                      <div className="text-[10px] text-muted/25 text-right md:whitespace-nowrap tabular-nums">
                         {it.sourceRef}
                       </div>
                     )}
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </details>
         ))}
       </div>
 
-      {/* Provenance — clean, no internal run paths */}
-      <div className="mt-5 flex flex-wrap items-center gap-2 text-[10px] text-muted/60">
-        <span className="rounded border border-border px-2 py-0.5">
+      {/* Provenance — minimal elegant badge row */}
+      <div className="mt-6 flex flex-wrap items-center gap-1.5">
+        <span className="rounded-full border border-white/[0.05] bg-surface/50 px-3 py-1 text-[10px] text-muted/30 font-medium">
           {provenance.franchisorLegalName}
         </span>
-        <span className="rounded border border-border px-2 py-0.5">
+        <span className="rounded-full border border-white/[0.05] bg-surface/50 px-3 py-1 text-[10px] text-muted/30 font-medium">
           FDD {provenance.filingYear}
         </span>
-        <span className="rounded border border-border px-2 py-0.5">
-          File {provenance.fddId}
+        <span className="rounded-full border border-white/[0.05] bg-surface/50 px-3 py-1 text-[10px] text-muted/30 font-mono">
+          {provenance.fddId}
         </span>
       </div>
     </SectionShell>

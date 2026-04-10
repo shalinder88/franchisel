@@ -47,10 +47,10 @@ export default function GuidedSummary({
             <button
               key={card.id}
               onClick={() => setSelected(isActive ? null : card.id)}
-              className={`rounded-xl border p-4 text-left transition-all duration-200
+              className={`rounded-2xl border p-5 text-left transition-all duration-200
                 ${isActive
-                  ? `${SEV_BG[sev]} ring-1 ring-inset ring-white/5 shadow-lg shadow-black/20`
-                  : "border-border/40 bg-surface hover:bg-surface-alt hover:border-border"
+                  ? `${SEV_BG[sev]} ring-1 ring-inset ring-white/5 shadow-xl shadow-black/30 scale-[1.02]`
+                  : "border-white/[0.06] bg-surface/60 hover:bg-surface/80 hover:shadow-lg hover:shadow-black/15 hover:scale-[1.01]"
                 }`}
             >
               <div className="text-2xl mb-3">{ICONS[card.id] ?? "◆"}</div>

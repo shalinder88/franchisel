@@ -12,13 +12,13 @@ const FAMILY_META: Record<string, { label: string; icon: string }> = {
   transfer: { label: "Transfer & resale", icon: "🔄" },
   renewal: { label: "Renewal", icon: "📅" },
   termination: { label: "Termination", icon: "⛔" },
-  post_term: { label: "Post-term obligations", icon: "🚫" },
+  post_term: { label: "Post-term", icon: "🚫" },
 }
 
-const SEV_BAR: Record<string, { color: string; text: string; label: string }> = {
-  high: { color: "bg-danger/60", text: "text-danger", label: "HIGH" },
-  caution: { color: "bg-warning/50", text: "text-warning", label: "CAUT" },
-  neutral: { color: "bg-accent/30", text: "text-accent", label: "LOW" },
+const SEV: Record<string, { bar: string; text: string; label: string; bg: string }> = {
+  high: { bar: "from-danger/30 to-danger/70", text: "text-danger", label: "HIGH", bg: "bg-danger/8" },
+  caution: { bar: "from-warning/25 to-warning/60", text: "text-warning", label: "CAUT", bg: "bg-warning/5" },
+  neutral: { bar: "from-accent/15 to-accent/40", text: "text-accent", label: "LOW", bg: "" },
 }
 
 export default function ContractBurdenBlock({
@@ -35,61 +35,67 @@ export default function ContractBurdenBlock({
   return (
     <SectionShell id="contract" eyebrow="The contract" headline="What you give up">
       {/* Severity count summary */}
-      <div className="flex gap-2 mb-5">
+      <div className="flex gap-2 mb-6">
         {highCount > 0 && (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-danger/8 border border-danger/20 px-3 py-1 text-[10px] text-danger font-medium">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-danger/8 border border-danger/15 px-3 py-1.5 text-[10px] text-danger font-semibold">
+            <span className="h-1.5 w-1.5 rounded-full bg-danger" />
             {highCount} high burden
           </span>
         )}
         {cautionCount > 0 && (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-warning/8 border border-warning/20 px-3 py-1 text-[10px] text-warning font-medium">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-warning/5 border border-warning/15 px-3 py-1.5 text-[10px] text-warning font-semibold">
+            <span className="h-1.5 w-1.5 rounded-full bg-warning" />
             {cautionCount} caution
           </span>
         )}
       </div>
 
-      {/* ── Severity bar chart with icons ── */}
-      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 overflow-hidden">
-        <div className="px-5 pt-5 pb-3 space-y-3">
+      {/* ── Signature severity chart ── */}
+      <div className="rounded-2xl border border-white/[0.06] bg-surface/80 shadow-xl shadow-black/20 overflow-hidden">
+        {/* Bar chart area */}
+        <div className="p-6 sm:p-8 space-y-3">
           {families.map((f, i) => {
-            const bar = SEV_BAR[f.severity] ?? SEV_BAR.neutral
+            const sev = SEV[f.severity] ?? SEV.neutral
             const meta = FAMILY_META[f.family] ?? { label: f.family, icon: "·" }
             const pct = severityToPercent(f.severity)
             return (
-              <div key={f.family} className="grid grid-cols-[24px_140px_1fr_48px] sm:grid-cols-[28px_180px_1fr_56px] items-center gap-2">
-                <span className="text-sm text-center">{meta.icon}</span>
-                <span className="text-[11px] font-medium text-foreground/80 truncate">{meta.label}</span>
-                <div className="h-5 bg-surface-alt rounded overflow-hidden">
+              <div key={f.family} className={`rounded-xl p-3 ${sev.bg} transition-colors`}>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-base">{meta.icon}</span>
+                  <span className="text-xs font-semibold text-foreground/80 flex-1">{meta.label}</span>
+                  <span className={`text-[9px] uppercase tracking-[0.2em] font-bold ${sev.text}`}>
+                    {sev.label}
+                  </span>
+                </div>
+                <div className="h-3 bg-surface-alt/60 rounded-lg overflow-hidden">
                   <div
-                    className={`h-full ${bar.color} rounded`}
-                    style={{ width: `${pct}%`, animation: `fill-bar 0.6s ease-out ${i * 80}ms both` }}
+                    className={`h-full bg-gradient-to-r ${sev.bar} rounded-lg`}
+                    style={{ width: `${pct}%`, animation: `fill-bar 0.7s ease-out ${i * 100}ms both` }}
                   />
                 </div>
-                <span className={`text-[9px] uppercase tracking-widest font-bold text-right ${bar.text}`}>
-                  {bar.label}
-                </span>
               </div>
             )
           })}
         </div>
 
         {/* Expandable detail rows */}
-        <div className="border-t border-border/30 divide-y divide-border/20">
+        <div className="border-t border-white/[0.04] divide-y divide-white/[0.03]">
           {families.map((f) => {
             const meta = FAMILY_META[f.family] ?? { label: f.family, icon: "·" }
+            const sev = SEV[f.severity] ?? SEV.neutral
             return (
               <ExpandableRow
                 key={f.family}
                 severity={f.severity}
                 title={meta.label}
-                badge={SEV_BAR[f.severity]?.label}
-                badgeColor={SEV_BAR[f.severity]?.text}
+                badge={sev.label}
+                badgeColor={sev.text}
               >
-                <p className="text-sm text-foreground/75 leading-relaxed">{f.summary}</p>
+                <p className="text-sm text-foreground/70 leading-relaxed">{f.summary}</p>
                 {f.evidencePoints.length > 0 && (
                   <div className="mt-3 flex flex-wrap gap-1.5">
                     {f.evidencePoints.map((e, i) => (
-                      <span key={i} className="text-[10px] text-muted/60 rounded border border-border/40 px-2 py-0.5">
+                      <span key={i} className="text-[10px] text-muted/40 rounded-full border border-white/[0.06] px-2 py-0.5">
                         {e}
                       </span>
                     ))}
