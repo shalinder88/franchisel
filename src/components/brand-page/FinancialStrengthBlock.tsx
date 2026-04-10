@@ -33,7 +33,7 @@ export default function FinancialStrengthBlock({
     <SectionShell
       id="financial-strength"
       eyebrow="Franchisor health"
-      headline="Can this franchisor support the system?"
+      headline="Franchisor financials"
     >
       {/* Health signal strip */}
       <div className="flex h-1.5 rounded-full overflow-hidden bg-surface-alt mb-6">

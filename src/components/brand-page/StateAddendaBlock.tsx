@@ -19,7 +19,7 @@ export default function StateAddendaBlock({
     <SectionShell
       id="state-addenda"
       eyebrow="State by state"
-      headline="The contract changes depending on where you operate"
+      headline="State-by-state overrides"
     >
       {/* State tile strip — instant visual read */}
       <div className="flex flex-wrap gap-2 mb-6">
