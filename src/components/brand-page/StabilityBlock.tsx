@@ -19,29 +19,26 @@ export default function StabilityBlock({
 
   return (
     <SectionShell id="stability" eyebrow="The system" headline="Is it growing?">
-      {/* ── Trend summary cards ── */}
-      <div className="grid grid-cols-3 gap-2 mb-5">
-        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-4 text-center">
-          <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Total units</div>
-          <div className="mt-1 text-2xl font-extrabold text-foreground tabular-nums">
-            {mix.reduce((a, m) => a + m.value, 0).toLocaleString()}
-          </div>
-        </div>
-        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-4 text-center">
+      {/* ── Trend summary — 2 cards only (total units already in hero) ── */}
+      <div className="grid grid-cols-2 gap-3 mb-5">
+        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-5 text-center">
           <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Net growth {latestYear?.year}</div>
-          <div className="mt-1 text-2xl font-extrabold tabular-nums text-success">
+          <div className="mt-1.5 text-3xl font-black tabular-nums text-success tracking-tight">
             +{latestNet}
           </div>
           {prevNet !== null && (
-            <div className="mt-0.5 text-[10px] text-muted/50">
+            <div className="mt-1 text-[10px] text-muted/40">
               vs {prevNet >= 0 ? "+" : ""}{prevNet} prior year
             </div>
           )}
         </div>
-        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-4 text-center">
+        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-5 text-center">
           <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Transfers {latestYear?.year}</div>
-          <div className="mt-1 text-2xl font-extrabold text-foreground tabular-nums">
+          <div className="mt-1.5 text-3xl font-black text-foreground tabular-nums tracking-tight">
             {(latestYear?.transfers ?? 0).toLocaleString()}
+          </div>
+          <div className="mt-1 text-[10px] text-muted/40">
+            units changed hands
           </div>
         </div>
       </div>

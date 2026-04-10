@@ -35,15 +35,12 @@ export default function StateAddendaBlock({
             </div>
           )
         })}
-        {/* No-addendum states as muted tiles */}
-        {addenda.statesWithoutAddendum?.map((s) => (
-          <div
-            key={s}
-            className="w-12 h-10 rounded-lg border border-border/40 bg-surface-alt flex items-center justify-center text-[10px] text-muted/60 font-medium"
-          >
-            {stateAbbreviation(s.replace(/\s*\(.*$/, ""))}
-          </div>
-        ))}
+        {/* No-addendum count — compact, not tiles */}
+        {addenda.statesWithoutAddendum && addenda.statesWithoutAddendum.length > 0 && (
+          <span className="self-center text-[10px] text-muted/30 ml-1">
+            +{addenda.statesWithoutAddendum.length} no override
+          </span>
+        )}
       </div>
 
       {/* Expandable detail rows */}

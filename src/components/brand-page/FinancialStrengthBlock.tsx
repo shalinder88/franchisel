@@ -8,81 +8,61 @@ const SIGNAL: Record<string, string> = {
   caution: "bg-warning/40",
   neutral: "bg-success/30",
 }
-const ICON: Record<string, string> = {
-  Auditor: "🔍",
-  "Audit opinion": "✓",
-  "Going concern doubt": "✓",
-  "Total revenue 2024": "📊",
-  "Net income 2024": "💵",
-  "Total assets 2024": "🏦",
-  "Members' equity 2024": "📐",
-  "Intercompany payable to parent": "🔄",
-  "IP royalty paid to parent": "⚠",
-}
+
+// Audit-related labels that get merged into a single status badge
+const AUDIT_LABELS = new Set(["Auditor", "Audit opinion", "Going concern doubt"])
 
 export default function FinancialStrengthBlock({
   financial,
 }: {
   financial: BrandPageModel["financialStrength"]
 }) {
-  // Group into primary (first 3-4 with severity) and secondary
-  const primary = financial.highlights.filter((h) => h.severity)
-  const secondary = financial.highlights.filter((h) => !h.severity)
+  const auditItems = financial.highlights.filter((h) => AUDIT_LABELS.has(h.label))
+  const metricItems = financial.highlights.filter((h) => !AUDIT_LABELS.has(h.label))
+
+  // Build audit status line
+  const auditorName = auditItems.find((h) => h.label === "Auditor")?.value ?? ""
+  const opinion = auditItems.find((h) => h.label === "Audit opinion")?.value ?? ""
+  const concern = auditItems.find((h) => h.label === "Going concern doubt")?.value ?? ""
 
   return (
-    <SectionShell
-      id="financial-strength"
-      eyebrow="Franchisor health"
-      headline="Franchisor financials"
-    >
+    <SectionShell id="financial-strength" eyebrow="Franchisor health" headline="Franchisor financials">
+      {/* Audit status — single compact line instead of 3 cards */}
+      {auditItems.length > 0 && (
+        <div className="flex items-center gap-3 flex-wrap mb-5">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-success/20 bg-success/5 px-3 py-1.5 text-[10px] text-success/90 font-medium">
+            <span className="h-1.5 w-1.5 rounded-full bg-success" />
+            Clean audit
+          </span>
+          <span className="text-[11px] text-muted/40">
+            {auditorName} · {opinion} · {concern}
+          </span>
+        </div>
+      )}
+
       {/* Health signal strip */}
-      <div className="flex h-1.5 rounded-full overflow-hidden bg-surface-alt mb-6">
-        {financial.highlights.map((h, i) => (
+      <div className="flex h-1.5 rounded-full overflow-hidden bg-surface-alt/60 mb-5">
+        {metricItems.map((h, i) => (
           <div key={i} className={`flex-1 ${SIGNAL[h.severity ?? "neutral"]}`} />
         ))}
       </div>
 
-      {/* Primary health cards — icon-led with visual weight */}
-      {primary.length > 0 && (
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-          {primary.map((h) => {
-            const card = (
-              <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-4 hover:bg-surface-alt/60 transition-colors">
-                <div className="text-lg mb-2">{ICON[h.label] ?? "◆"}</div>
-                <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">{h.label}</div>
-                <div className="mt-1 text-sm font-bold text-foreground tabular-nums">{h.value}</div>
-              </div>
-            )
-            return h.note ? (
-              <HoverTooltip key={h.label} content={h.note} position="bottom">{card}</HoverTooltip>
-            ) : (
-              <div key={h.label}>{card}</div>
-            )
-          })}
-        </div>
-      )}
-
-      {/* Secondary metrics — compact row */}
-      {secondary.length > 0 && (
-        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 divide-y divide-border/30">
-          {secondary.map((h) => {
-            const row = (
-              <div className="flex items-center justify-between px-5 py-3 hover:bg-surface-alt/40 transition-colors">
-                <div className="flex items-center gap-2">
-                  <span className="text-sm">{ICON[h.label] ?? "·"}</span>
-                  <span className="text-xs text-foreground/70">{h.label}</span>
-                </div>
-                <span className="text-sm font-semibold text-foreground tabular-nums">{h.value}</span>
-              </div>
-            )
-            return h.note ? (
-              <HoverTooltip key={h.label} content={h.note} position="bottom">{row}</HoverTooltip>
-            ) : (
-              <div key={h.label}>{row}</div>
-            )
-          })}
-        </div>
-      )}
+      {/* Metric cards — only non-audit items */}
+      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 divide-y divide-border/20">
+        {metricItems.map((h) => {
+          const row = (
+            <div className="flex items-center justify-between px-5 py-3.5 hover:bg-white/[0.02] transition-all duration-200">
+              <span className="text-xs text-foreground/60">{h.label}</span>
+              <span className="text-sm font-bold text-foreground tabular-nums">{h.value}</span>
+            </div>
+          )
+          return h.note ? (
+            <HoverTooltip key={h.label} content={h.note} position="bottom">{row}</HoverTooltip>
+          ) : (
+            <div key={h.label}>{row}</div>
+          )
+        })}
+      </div>
     </SectionShell>
   )
 }

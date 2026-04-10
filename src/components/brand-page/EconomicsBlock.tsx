@@ -44,31 +44,6 @@ export default function EconomicsBlock({
 
   return (
     <SectionShell id="economics" eyebrow="The money" headline="What you pay">
-      {/* ── Three-column visual summary cards ── */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
-        <div className="rounded-xl border border-white/[0.06] bg-surface/80 p-5 shadow-lg shadow-black/10">
-          <div className="text-[9px] uppercase tracking-[0.15em] text-muted/70">To get in</div>
-          <div className="mt-2 text-2xl font-extrabold text-foreground tabular-nums tracking-tight">
-            {formatUsdRange(investment.rangeLow, investment.rangeHigh)}
-          </div>
-          <div className="mt-1 text-[10px] text-muted/50">Traditional format · Item 7</div>
-        </div>
-        <div className="rounded-xl border border-white/[0.06] bg-surface/80 p-5 shadow-lg shadow-black/10">
-          <div className="text-[9px] uppercase tracking-[0.15em] text-muted/70">Ongoing extraction</div>
-          <div className="mt-2 text-2xl font-extrabold text-foreground tabular-nums tracking-tight">
-            ~{feeSegments.reduce((a, s) => a + s.pct, 0).toFixed(0)}%+
-          </div>
-          <div className="mt-1 text-[10px] text-muted/50">of Gross Sales · recurring</div>
-        </div>
-        <div className="rounded-xl border border-white/[0.06] bg-surface/80 p-5 shadow-lg shadow-black/10">
-          <div className="text-[9px] uppercase tracking-[0.15em] text-muted/70">Avg. unit revenue</div>
-          <div className="mt-2 text-2xl font-extrabold text-foreground tabular-nums tracking-tight">
-            {item19.headlineMetric ?? "—"}
-          </div>
-          <div className="mt-1 text-[10px] text-muted/50">{item19.sampleSize?.split("(")[0].trim() ?? "Item 19"}</div>
-        </div>
-      </div>
-
       {/* ── Investment anatomy ── */}
       <div className="rounded-xl border border-white/[0.06] bg-surface/80 p-6 shadow-lg shadow-black/10">
         <div className="flex items-baseline justify-between gap-4 flex-wrap mb-5">
