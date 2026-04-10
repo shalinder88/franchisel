@@ -1,10 +1,26 @@
+"use client"
+import { useState } from "react"
 import type { BrandPageModel, Severity } from "@/lib/brand-page-model"
 import SectionShell from "./SectionShell"
+import { firstSentence } from "@/lib/brand-pages/mappers"
 
-function edge(severity: Severity | undefined): string {
-  if (severity === "high") return "border-l-danger"
-  if (severity === "caution") return "border-l-warning"
-  return "border-l-accent"
+const ICONS: Record<string, string> = {
+  "cost-to-enter": "💰",
+  "revenue-quality": "📊",
+  stability: "📈",
+  contract: "📋",
+  fit: "👤",
+}
+
+const SEV_BG: Record<string, string> = {
+  high: "border-danger/30 bg-danger/5",
+  caution: "border-warning/25 bg-warning/4",
+  neutral: "border-accent/20 bg-accent/4",
+}
+const SEV_BADGE: Record<string, { text: string; color: string }> = {
+  high: { text: "HIGH", color: "text-danger bg-danger/10" },
+  caution: { text: "CAUTION", color: "text-warning bg-warning/10" },
+  neutral: { text: "OK", color: "text-accent bg-accent/10" },
 }
 
 export default function GuidedSummary({
@@ -12,28 +28,58 @@ export default function GuidedSummary({
 }: {
   items: BrandPageModel["guidedSummary"]
 }) {
+  const [selected, setSelected] = useState<string | null>(null)
+  const active = items.find((c) => c.id === selected)
+
   return (
     <SectionShell
       id="guided-summary"
-      eyebrow="Before you read further"
+      eyebrow="At a glance"
       headline="Five things to know first"
-      takeaway="Each card is a conclusion. The rest of this page is the evidence."
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {items.map((card) => (
-          <div
-            key={card.id}
-            className={`rounded-lg bg-surface border border-border border-l-4 ${edge(card.severity)} p-5`}
-          >
-            <div className="text-[11px] uppercase tracking-widest text-muted">{card.title}</div>
-            <p className="mt-2 text-sm text-foreground leading-relaxed">{card.verdict}</p>
-            <p className="mt-3 text-xs text-foreground/60 leading-relaxed">
-              <span className="text-muted">Why it matters — </span>
-              {card.whyItMatters}
-            </p>
-          </div>
-        ))}
+      {/* ── Icon tile grid — the primary visual ── */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+        {items.map((card) => {
+          const sev = card.severity ?? "neutral"
+          const badge = SEV_BADGE[sev]
+          const isActive = selected === card.id
+          return (
+            <button
+              key={card.id}
+              onClick={() => setSelected(isActive ? null : card.id)}
+              className={`rounded-xl border p-4 text-left transition-all duration-200
+                ${isActive
+                  ? `${SEV_BG[sev]} ring-1 ring-inset ring-white/5 shadow-lg shadow-black/20`
+                  : "border-border/40 bg-surface hover:bg-surface-alt hover:border-border"
+                }`}
+            >
+              <div className="text-2xl mb-3">{ICONS[card.id] ?? "◆"}</div>
+              <div className="text-xs font-semibold text-foreground leading-snug mb-2">
+                {card.title}
+              </div>
+              <span className={`inline-block text-[9px] font-bold uppercase tracking-widest rounded-full px-2 py-0.5 ${badge.color}`}>
+                {badge.text}
+              </span>
+            </button>
+          )
+        })}
       </div>
+
+      {/* ── Expanded detail for selected tile ── */}
+      {active && (
+        <div className="mt-4 rounded-xl border border-border/40 bg-surface p-5 animate-fade-up">
+          <div className="flex items-start gap-3">
+            <span className="text-2xl">{ICONS[active.id] ?? "◆"}</span>
+            <div className="flex-1 min-w-0">
+              <div className="text-sm font-semibold text-foreground">{active.title}</div>
+              <p className="mt-2 text-sm text-foreground/75 leading-relaxed">{active.verdict}</p>
+              <p className="mt-2 text-xs text-muted leading-relaxed">
+                <span className="text-foreground/40 font-medium">Why it matters</span> — {active.whyItMatters}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </SectionShell>
   )
 }

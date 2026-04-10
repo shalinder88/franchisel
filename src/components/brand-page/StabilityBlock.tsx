@@ -9,94 +9,94 @@ export default function StabilityBlock({
 }) {
   const mix = ownershipShares(stability.ownershipMix)
   const movement = stability.annualMovement
+  const maxGrowth = Math.max(1, ...movement.map((y) => Math.max(y.openings ?? 0, y.closures ?? 0)))
 
-  // Scale openings + closures only — transfers are shown separately so they
-  // don't crush the growth-signal bars.
-  const maxGrowth = Math.max(
-    1,
-    ...movement.map((y) => Math.max(y.openings ?? 0, y.closures ?? 0)),
-  )
+  // Net growth trend
+  const latestYear = movement[movement.length - 1]
+  const prevYear = movement.length > 1 ? movement[movement.length - 2] : null
+  const latestNet = (latestYear?.openings ?? 0) - (latestYear?.closures ?? 0)
+  const prevNet = prevYear ? (prevYear.openings ?? 0) - (prevYear.closures ?? 0) : null
 
   return (
-    <SectionShell
-      id="stability"
-      eyebrow="The system"
-      headline="Is this network growing, shrinking, or churning?"
-      takeaway="Three years of openings, closures, and transfers tell you whether operators are entering, staying, or leaving."
-    >
-      {/* Ownership mix split bar */}
-      <div className="rounded-lg border border-border bg-surface p-6">
-        <div className="flex items-baseline justify-between gap-4">
-          <h3 className="text-sm font-semibold text-foreground">Ownership mix</h3>
-          <div className="text-xs text-muted tabular-nums">
-            {mix.reduce((acc, m) => acc + m.value, 0).toLocaleString()} units
+    <SectionShell id="stability" eyebrow="The system" headline="Is it growing?">
+      {/* ── Trend summary cards ── */}
+      <div className="grid grid-cols-3 gap-2 mb-5">
+        <div className="rounded-xl border border-border/40 bg-surface p-4 text-center">
+          <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Total units</div>
+          <div className="mt-1 text-2xl font-extrabold text-foreground tabular-nums">
+            {mix.reduce((a, m) => a + m.value, 0).toLocaleString()}
           </div>
         </div>
-        <div className="mt-4 flex h-8 rounded overflow-hidden border border-border">
+        <div className="rounded-xl border border-border/40 bg-surface p-4 text-center">
+          <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Net growth {latestYear?.year}</div>
+          <div className="mt-1 text-2xl font-extrabold tabular-nums text-success">
+            +{latestNet}
+          </div>
+          {prevNet !== null && (
+            <div className="mt-0.5 text-[10px] text-muted/50">
+              vs {prevNet >= 0 ? "+" : ""}{prevNet} prior year
+            </div>
+          )}
+        </div>
+        <div className="rounded-xl border border-border/40 bg-surface p-4 text-center">
+          <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Transfers {latestYear?.year}</div>
+          <div className="mt-1 text-2xl font-extrabold text-foreground tabular-nums">
+            {(latestYear?.transfers ?? 0).toLocaleString()}
+          </div>
+        </div>
+      </div>
+
+      {/* ── Ownership split bar ── */}
+      <div className="rounded-xl border border-border/40 bg-surface p-5 mb-4">
+        <div className="flex items-center justify-between text-[11px] text-foreground/60 mb-2">
+          {mix.map((m, i) => (
+            <span key={m.label} className="flex items-center gap-1.5">
+              <span className={`h-2 w-2 rounded-sm ${i === 0 ? "bg-accent/70" : "bg-muted/40"}`} />
+              {m.label} <span className="text-muted tabular-nums">{(m.pct * 100).toFixed(0)}%</span>
+            </span>
+          ))}
+        </div>
+        <div className="flex h-6 rounded-lg overflow-hidden border border-border/30">
           {mix.map((m, i) => (
             <div
               key={m.label}
-              className={i === 0 ? "bg-accent/70" : "bg-muted/40"}
+              className={i === 0 ? "bg-accent/60" : "bg-muted/30"}
               style={{ width: `${m.pct * 100}%` }}
-              title={`${m.label}: ${m.value.toLocaleString()} (${(m.pct * 100).toFixed(1)}%)`}
             />
-          ))}
-        </div>
-        <div className="mt-3 flex flex-wrap gap-4 text-xs text-foreground/80">
-          {mix.map((m, i) => (
-            <div key={m.label} className="flex items-center gap-2">
-              <span
-                aria-hidden
-                className={`h-2 w-2 rounded-sm ${i === 0 ? "bg-accent/70" : "bg-muted/40"}`}
-              />
-              <span>
-                {m.label}{" "}
-                <span className="text-muted tabular-nums">
-                  {m.value.toLocaleString()} · {(m.pct * 100).toFixed(1)}%
-                </span>
-              </span>
-            </div>
           ))}
         </div>
       </div>
 
-      {/* Openings vs closures — paired bars per year */}
-      <div className="mt-6 rounded-lg border border-border bg-surface p-6">
-        <div className="flex items-baseline justify-between gap-4">
-          <h3 className="text-sm font-semibold text-foreground">Openings vs. closures</h3>
-          <div className="text-xs text-muted">3-year window</div>
+      {/* ── Openings vs closures — horizontal paired bars ── */}
+      <div className="rounded-xl border border-border/40 bg-surface p-5">
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-xs font-semibold text-foreground uppercase tracking-wider">Openings vs. closures</h3>
+          <div className="flex gap-3 text-[10px] text-foreground/50">
+            <span className="flex items-center gap-1"><span className="h-1.5 w-1.5 rounded-full bg-success/70" />Opened</span>
+            <span className="flex items-center gap-1"><span className="h-1.5 w-1.5 rounded-full bg-danger/60" />Closed</span>
+          </div>
         </div>
-        <div className="mt-6 space-y-5">
+        <div className="space-y-4">
           {movement.map((y) => {
             const open = y.openings ?? 0
             const closed = y.closures ?? 0
-            const openW = (open / maxGrowth) * 100
-            const closedW = (closed / maxGrowth) * 100
             return (
               <div key={y.year}>
-                <div className="flex items-baseline justify-between text-xs mb-2">
-                  <span className="text-foreground tabular-nums font-medium">{y.year}</span>
-                  <span className="text-muted tabular-nums">
-                    net {open - closed >= 0 ? "+" : ""}{open - closed}
-                  </span>
+                <div className="flex items-baseline justify-between text-[11px] mb-1.5">
+                  <span className="text-foreground font-medium tabular-nums">{y.year}</span>
+                  <span className="text-muted/60 tabular-nums">net {open - closed >= 0 ? "+" : ""}{open - closed}</span>
                 </div>
-                <div className="space-y-1.5">
-                  <div className="flex items-center gap-3">
-                    <span className="text-[11px] text-muted w-16 text-right tabular-nums">+{open}</span>
-                    <div className="flex-1 h-3 bg-surface-alt rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-success/70 rounded-full"
-                        style={{ width: `${openW}%` }}
-                      />
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] text-muted/50 w-10 text-right tabular-nums">+{open}</span>
+                    <div className="flex-1 h-2.5 bg-surface-alt rounded-full overflow-hidden">
+                      <div className="h-full bg-success/60 rounded-full" style={{ width: `${(open / maxGrowth) * 100}%` }} />
                     </div>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <span className="text-[11px] text-muted w-16 text-right tabular-nums">–{closed}</span>
-                    <div className="flex-1 h-3 bg-surface-alt rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-danger/60 rounded-full"
-                        style={{ width: `${closedW}%` }}
-                      />
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] text-muted/50 w-10 text-right tabular-nums">–{closed}</span>
+                    <div className="flex-1 h-2.5 bg-surface-alt rounded-full overflow-hidden">
+                      <div className="h-full bg-danger/50 rounded-full" style={{ width: `${(closed / maxGrowth) * 100}%` }} />
                     </div>
                   </div>
                 </div>
@@ -104,51 +104,7 @@ export default function StabilityBlock({
             )
           })}
         </div>
-        <div className="mt-5 flex flex-wrap gap-4 text-[11px] text-foreground/75">
-          <Legend color="bg-success/70" label="Openings" />
-          <Legend color="bg-danger/60" label="Closures / terminations / non-renewals" />
-        </div>
       </div>
-
-      {/* Transfers — separate, simple row so they don't crush the growth chart */}
-      {movement.some((y) => (y.transfers ?? 0) > 0) ? (
-        <div className="mt-6 rounded-lg border border-border bg-surface p-6">
-          <div className="flex items-baseline justify-between gap-4">
-            <h3 className="text-sm font-semibold text-foreground">Ownership transfers</h3>
-            <div className="text-xs text-muted">Existing units that changed hands</div>
-          </div>
-          <div className="mt-4 flex gap-4">
-            {movement.map((y) => {
-              const xfer = y.transfers ?? 0
-              return (
-                <div key={y.year} className="flex-1 rounded bg-surface-alt px-4 py-3 text-center">
-                  <div className="text-[11px] text-muted">{y.year}</div>
-                  <div className="mt-1 text-lg font-semibold text-foreground tabular-nums">
-                    {xfer.toLocaleString()}
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      ) : null}
-
-      {stability.takeaways.length > 0 ? (
-        <ul className="mt-5 space-y-1.5 text-xs text-foreground/70">
-          {stability.takeaways.map((t, i) => (
-            <li key={i}>— {t}</li>
-          ))}
-        </ul>
-      ) : null}
     </SectionShell>
-  )
-}
-
-function Legend({ color, label }: { color: string; label: string }) {
-  return (
-    <div className="flex items-center gap-2">
-      <span aria-hidden className={`h-2 w-2 rounded-sm ${color}`} />
-      <span>{label}</span>
-    </div>
   )
 }

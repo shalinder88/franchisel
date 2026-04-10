@@ -35,7 +35,7 @@ export default function BrandPage({ model }: { model: BrandPageModel }) {
             <span className="text-foreground/70">{model.hero.brandName}</span>
           </nav>
 
-          <Hero hero={model.hero} />
+          <Hero hero={model.hero} summaryItems={model.guidedSummary} />
           <GuidedSummary items={model.guidedSummary} />
           <EconomicsBlock economics={model.economics} />
           <StabilityBlock stability={model.systemStability} />
