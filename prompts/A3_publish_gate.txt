@@ -1,0 +1,218 @@
+You are running the publish gate for an FDD extraction.
+
+Run directory: {run_dir}
+Brand: {brand}
+
+## Context
+
+A1 (main extraction) and A2 (depth passes) are complete. The run directory contains
+all core files plus RT_depth_financial_notes.json, RT_depth_contract_burdens.json,
+RT_depth_promotion_audit.json, and RT_depth_state_addenda_promotion.json.
+
+## Your task
+
+Evaluate whether this extraction is publish-ready. Write `15_publish_gate.md`.
+
+### Checklist — assess each item
+
+1. **Item 19 completeness**
+   - If FPR provided: are ALL tables, notes, population counts, exclusion rules extracted?
+   - If no FPR: is the no-FPR statement extracted verbatim?
+   - Is the substantiation availability statement captured?
+
+2. **Item 20 completeness**
+   - Are all 5 standard tables present (systemwide, transfers, franchised status, company-owned status, projected openings)?
+   - Do total rows balance?
+   - Is the franchisee list exhibit count captured?
+   - Is the gag clause flag set?
+
+3. **Item 21 sufficiency**
+   - Is the auditor identified?
+   - Are income statement, balance sheet, and cash flow extracted?
+   - Are notes to financial statements covered (via depth pass)?
+   - Is going-concern status set?
+
+4. **State addenda sufficiency**
+   - Are all state-specific addenda identified and extracted?
+   - If none exist, is the absence confirmed?
+   - CRITICAL: If state addenda exist (check 04_exhibits.json and RT_depth_state_addenda_promotion.json),
+     are they STRUCTURED into `state_addenda_overrides` in 09_final_canonical.json?
+     Merely cataloging exhibits is NOT sufficient. Override families (forum, noncompete,
+     termination, governing law, release, damages) must be structured per-state.
+   - If state addenda were surfaced but not structured into canonical, this is verdict 3.
+
+5. **Key exhibit sufficiency**
+   - Are all exhibits listed in Item 22 accounted for in 04_exhibits.json?
+   - Are financial exhibits, franchise agreements, and guaranty exhibits deep-read?
+
+6. **Unresolveds and contradictions assessment**
+   - Read 06_coverage_audit.md and 08_final_report.md.
+   - Do they contain unresolveds, open questions, or contradictions?
+   - If yes: are these preserved as structured families (`unresolveds`, `contradictions`)
+     in 09_final_canonical.json? Check for top-level keys.
+   - CRITICAL: If the audit/report lists unresolveds but canonical has NO `unresolveds`
+     key, this is a material gap. Same for contradictions.
+   - Are all unresolveds genuine business-risk flags (not extraction gaps)?
+   - If any unresolved is an extraction gap, it must be sent to A4 for focused recovery.
+
+7. **Final report depth**
+   - Read 08_final_report.md. Is it a full diligence report or just a concise metrics summary?
+   - REQUIRED sections: executive snapshot, fees/investment, supplier/operations/tech,
+     territory, contract burden/legal, Item 19 detail, Item 20 detail, Item 21 detail,
+     unresolveds, contradictions, final coverage note.
+   - If 08_final_report.md is under 100 lines, it is almost certainly too thin.
+   - If unresolveds section is missing, this is verdict 3.
+   - If contradictions section is missing, this is verdict 3.
+   - If state addenda exist (check 04_exhibits.json) but are not discussed in the
+     final report, this is verdict 3.
+   - If Item 21 financial statements were extracted but the final report has no
+     financial statement summary section, this is verdict 3.
+
+8. **Score gate**
+   - Read 10_scorecard.md. Is the overall grade A or B?
+   - Are all required items covered?
+   - Are canonical fields populated with evidence grounding?
+
+### Verdict
+
+Write one of:
+- **1 — Publish-ready**: No material gaps. All items covered. Evidence grounded.
+- **2 — Publish with caveats**: Minor gaps documented but not buyer-misleading.
+- **3 — Needs recovery**: Material gaps exist. List them. These become A4 tasks.
+
+If verdict is 3, list the specific recovery tasks needed at the bottom of the file
+so A4 knows exactly what to do.
+
+### Format
+
+Write `15_publish_gate.md` to the run directory with:
+- Verdict at the top
+- Rationale
+- Item-by-item assessment
+- Recovery passes needed (if verdict is 3)
+- The mandatory sections below (ALL of them, regardless of verdict)
+
+### Mandatory sections (required for every run, every verdict)
+
+1. **Strongest parts of the run**
+   - At least 5 bullets.
+   - Each bullet must name exact pages, sections, tables, or exhibits
+     (e.g. "Item 19 Table 3 p.84", "Exhibit F franchise agreement §12.4",
+     "Item 20 systemwide table p.91"). Generic praise is not acceptable.
+
+2. **Weakest remaining parts of the run**
+   - At least 5 bullets when applicable (fewer only if genuinely none remain).
+   - Each bullet must identify the exact exhibit / item / family and explain
+     why it is not yet A-grade.
+   - For every claimed weakness, name the exact source pages or sections it
+     refers to.
+
+3. **Where a prior or manual run may still be stronger**
+   - Required even if the verdict is 1.
+   - Must be concrete (specific field, exhibit, table, or interpretation),
+     not generic hedging like "a human might catch nuance".
+
+4. **Optional max-3 follow-up roadmap**
+   - At most 3 targeted recovery tasks, even when the verdict is publish-ready.
+   - For each task give the target output filename
+     (e.g. `RT_depth_item19_notes.json`, `RT_recover_exhibit_J.md`).
+
+5. **Unresolved taxonomy**
+   - Classify every unresolved from 06_coverage_audit.md / 08_final_report.md /
+     canonical `unresolveds` into exactly one of:
+     - document-internal inconsistencies
+     - business-risk flags
+     - extraction-depth gaps
+   - List them under those three headings. Empty buckets are allowed but
+     must be shown explicitly.
+
+6. **Buyer-trust assessment**
+   - One short paragraph (not a checklist) explaining whether a serious buyer
+     would trust this run as-is, and why.
+
+7. **Source-grounding rule**
+   - Every weakness, gap, or "prior run stronger" claim above must cite
+     exact source pages or section identifiers. Unsourced claims are not
+     acceptable in this gate.
+
+## Franchise Agreement exhibit clause-walk policy
+
+If a surfaced Franchise Agreement exhibit (or variant franchise agreement
+with potentially different economics or default mechanics) was left
+`labeled_only` or was not directly clause-walked by A2, the gate MUST
+make an explicit, reasoned verdict decision for that exhibit:
+
+**Verdict 2 is allowed ONLY when ALL of the following are true:**
+  - The franchise agreement's key operative burdens (term, fees, transfer,
+    termination, noncompete, default, guaranty, venue) are adequately
+    covered elsewhere in the canonical — typically via Item 17 chart
+    cross-references, A2 contract-burden depth pass, or other extracted
+    exhibits.
+  - The missing clause walk does not leave a material buyer-facing gap
+    (e.g., unusual liquidated-damages formula, personal-guaranty scope,
+    cross-default trigger, or death/disability provision that is not
+    captured anywhere else in the run).
+  - The gate documents exactly which burdens are covered and where,
+    and which (if any) remain thin despite the missing walk.
+
+**Verdict 3 is required when ANY of the following are true:**
+  - Key operative burdens (especially guaranty scope, liquidated damages,
+    cross-default, or death/disability) are not covered anywhere in the
+    run files.
+  - The franchise agreement pages are surfaced in 01_source_map.md /
+    04_exhibits.json but were never directly read by A1 or A2.
+  - The gate cannot confirm, from run files alone, that the missing
+    clause walk leaves no material gap.
+
+In either case, the gate MUST include a dedicated subsection in
+`15_publish_gate.md` titled **"Franchise Agreement clause-walk
+assessment"** that states:
+  - Which franchise agreement exhibit(s) were surfaced
+  - Their page ranges (from 04_exhibits.json)
+  - Whether they were clause-walked or left labeled_only
+  - The explicit verdict decision (verdict 2 with rationale, or verdict 3
+    with recovery tasks)
+  - Exact sources for every claim
+
+## Deferred surfaced exhibit policy
+
+This policy applies to ALL surfaced key operative exhibits — franchise
+agreements, area development agreements, guaranty exhibits, lease or
+sublease exhibits, financing exhibits, and any other exhibit whose
+operative clauses affect economics, legal burden, transfer/default rights,
+post-term restrictions, lease burden, financing burden, or state-specific
+override effects.
+
+(The franchise agreement clause-walk policy above is a specific instance
+of this general policy and remains in force unchanged.)
+
+If a surfaced key exhibit is not directly clause-walked, the gate MUST
+do one of the following explicitly:
+
+**Verdict 2 is allowed ONLY when ALL of the following are true:**
+  - The missing exhibit walk is named as an extraction-depth gap with
+    the exact exhibit name and exact unread or under-read page ranges.
+  - The gate provides an explicit buyer-trust rationale explaining why
+    the gap does not materially weaken confidence for a serious buyer.
+
+**Verdict 3 is required when:**
+  - The missing exhibit walk would materially weaken confidence in
+    economics, legal burden, transfer/default rights, post-term
+    restrictions, lease burden, financing burden, or state-specific
+    override effects.
+
+**Clarification — labeled_only with materially equivalent substance:**
+A surfaced exhibit left `labeled_only` is not automatically a verdict-3
+failure if the run has already recovered materially equivalent operative
+substance from body cross-reference tables or directly surfaced parallel
+sections. However, the gate must say that explicitly and explain what
+remains missing.
+
+**Required line in 15_publish_gate.md:**
+The gate MUST include exactly one of the following lines verbatim:
+  - "Deferred surfaced exhibit policy applied: verdict 2 allowed with explicit rationale"
+  - "Deferred surfaced exhibit policy triggered verdict 3."
+
+## Rules
+- Do not read the PDF. Use only the run directory files.
+- Do not invent assessments. Base everything on what the files actually contain.

@@ -1,0 +1,407 @@
+You are running the fixed depth pass for an FDD extraction.
+
+PDF path: {pdf_path}
+Run directory: {run_dir}
+Brand: {brand}
+
+## Context
+
+A1 (main extraction steps 1-7) is complete. The run directory contains:
+01_source_map.md, 02_reader_report.md, 03_tables.json, 04_exhibits.json,
+05_canonical.json, 06_coverage_audit.md, 07_retry_tasks.md,
+08_final_report.md, 09_final_canonical.json, 10_scorecard.md,
+11_canonical_enriched.json, 12_canonical_enriched_v2.json, 14_run_summary.json
+
+## Your task — four fixed depth passes + canonical family enforcement
+
+You MUST execute all four depth passes below. These are not optional.
+Do NOT use subagents. You are the single reader.
+
+### Depth Pass 1: Financial note depth
+Read Item 21 financial statements and all notes to the financial statements in the PDF.
+Extract every accounting policy and material note:
+  - Revenue recognition policy
+  - Depreciation/amortization methods and useful lives
+  - Impairment policy and any charges
+  - Income tax provision detail (current vs deferred, rate reconciliation)
+  - Lease accounting (operating vs finance, ROU assets, maturity schedule)
+  - Variable interest entities (VIE) if present
+  - Subsequent events
+  - Related party transactions
+  - Advertising fund accounting
+  - Any other material notes
+
+Write `RT_depth_financial_notes.json` to the run directory.
+
+#### Item 21 targeted image fallback (only if needed)
+
+If the Item 21 financial-statement pages have been surfaced (you know the page
+range from 01_source_map.md / 04_exhibits.json) but key statement or opinion
+facts are still missing after normal text extraction — for example the auditor
+name, the opinion paragraph, or balance-sheet / income-statement headline rows
+do not appear in the extracted text — run a targeted image fallback.
+
+Strict scope rules:
+- Do NOT OCR the whole PDF.
+- Do NOT broad-reread the whole PDF.
+- Target ONLY the already-surfaced Item 21 statement/opinion pages
+  (auditor letter pages + the balance sheet, income statement, and any
+  directly-referenced subsequent-events page). No other pages.
+- Recover ONLY the following fields, and only if directly visible on those
+  targeted pages:
+    - auditor (firm name)
+    - opinion type (unqualified / qualified / adverse / disclaimer)
+    - going-concern language if present (verbatim short quote)
+    - balance sheet headline lines (total assets, total liabilities,
+      total equity, and any clearly labeled subtotal lines)
+    - income statement headline lines (total revenue, total expenses,
+      operating income/loss, net income/loss)
+    - deferred franchise fees, or similarly material liability lines if
+      directly visible
+    - obvious subsequent-event lines if directly visible
+- Do not infer, reconstruct, or compute figures. If a line is not directly
+  legible on a targeted page, leave it null and mark it unresolved.
+
+Write the recovered fields to `RT_depth_item21_image_fallback.json` with
+per-field page provenance and a top-level `method: "targeted_image_fallback"`
+marker. Merge the recovered facts into `09_final_canonical.json` and
+`12_canonical_enriched_v2.json` under the existing Item 21 family.
+
+Whether or not the fallback runs, the run summary and scorecard MUST state
+explicitly which method was used for Item 21:
+- In `14_run_summary.json`, set
+  `run_metrics.item21_extraction_method` to either
+  `"normal_text_extraction"` or `"targeted_image_fallback"`.
+- In `10_scorecard.md`, add a one-line note in the Item 21 section stating
+  the same: "Item 21 method: normal text extraction" OR
+  "Item 21 method: targeted image fallback (pages X–Y)".
+
+### Depth Pass 2: Contract burden depth
+Read the franchise agreement exhibit (and any development agreement, guaranty, or lease rider exhibits).
+Walk the agreement clause by clause and extract all burden language:
+  - Grant and term provisions
+  - Fee and payment obligations
+  - Site selection and construction requirements
+  - Training and operational obligations
+  - Termination triggers and cure periods
+  - Transfer restrictions and conditions
+  - Default and cross-default provisions
+  - Noncompete scope and duration
+  - Guaranty scope (personal, spousal, unlimited)
+  - Liquidated damages
+  - Venue and dispute resolution
+  - Insurance requirements
+  - Indemnification obligations
+  - Force majeure
+  - Any distinctive or unusual clauses
+
+Write `RT_depth_contract_burdens.json` to the run directory.
+
+### Depth Pass 3: Narrative-to-canonical promotion audit
+Read 02_reader_report.md and compare against 09_final_canonical.json.
+Identify facts that are clearly stated in the reader report narrative but are NOT yet
+present in the canonical JSON. These are facts that the reading pass found but the
+canonical builder did not pick up.
+
+For each promotable fact:
+  - State the fact
+  - Cite the source (reader report section + original PDF page)
+  - Add it to the canonical
+
+Patch `09_final_canonical.json` with the promoted facts.
+Update `12_canonical_enriched_v2.json` with the promoted facts.
+Update `10_scorecard.md` to reflect the depth passes.
+Update `14_run_summary.json` run_metrics with depth pass counts.
+
+Write `RT_depth_promotion_audit.json` to the run directory listing all promoted facts.
+
+### Depth Pass 4: State addenda structured promotion
+Read the PDF's state addenda section (typically Exhibit H or similar).
+Read 04_exhibits.json to find the exhibit letter, page ranges, and states listed.
+Read 08_final_report.md and 06_coverage_audit.md for any already-surfaced state addenda content.
+
+For EACH state with an addendum, extract material overrides into structured form.
+Each override entry must have:
+  - state: the state name
+  - affected_family: which canonical family is overridden (e.g. "noncompete", "forum_selection", "termination", "renewal", "notice_cure", "general_release", "damages", "governing_law", "interest_rate")
+  - override_summary: what the state addendum changes
+  - why_it_matters: why a prospective franchisee in that state should care
+  - source_pages: PDF page numbers
+
+Focus on these override families:
+  - Forum selection voided or limited
+  - Choice of law overridden
+  - Post-term noncompete limited or unenforceable
+  - General release excludes state franchise law claims
+  - Termination good cause / notice period / cure period requirements
+  - Interest rate caps
+  - Fair market value compensation on termination
+  - Anti-fraud / anti-waiver protections
+
+Write `RT_depth_state_addenda_promotion.json` to the run directory.
+
+Also build a summary table at the end:
+  - Rows: override families
+  - Columns: states affected
+  - This becomes the `state_addenda_overrides` family in canonical.
+
+### Mandatory canonical family enforcement
+
+After all four depth passes, you MUST ensure that `09_final_canonical.json` and
+`12_canonical_enriched_v2.json` contain ALL of the following top-level families
+when the source material supports them:
+
+1. **`unresolveds`** — Read `06_coverage_audit.md` and `08_final_report.md`.
+   Extract every unresolved item, contradiction, open question, or pending issue.
+   Each entry must have: id, description, severity (high/medium/low), source.
+   If the audit/report explicitly lists unresolveds or open items, they MUST appear
+   in canonical. Do NOT silently drop them.
+
+2. **`contradictions`** — Read `06_coverage_audit.md` and `08_final_report.md`.
+   Extract any contradictions between items, between FDD text and tables,
+   or between different sections. Each entry must have: id, description,
+   items_involved, resolution_status.
+
+3. **`state_addenda_overrides`** — Promote the structured overrides from
+   `RT_depth_state_addenda_promotion.json` into canonical. Include:
+   - `states_with_addenda`: list of state names
+   - One key per state with its override entries
+   - A summary table of override families x states
+
+Patch `09_final_canonical.json` and `12_canonical_enriched_v2.json` to include
+these families. Update `14_run_summary.json` run_metrics with depth pass 4 counts.
+Update `10_scorecard.md` to reflect the state addenda depth pass.
+
+## Mandatory targeted depth blocks
+
+These blocks run AFTER the four depth passes above, but before the final
+file updates. They are mandatory whenever the family is directly surfaced in
+the PDF AND was left partial by A1. They do not replace the passes above —
+they deepen them into explicit, structured, per-family RT files.
+
+Scope discipline (applies to every block in this section):
+- Do NOT broad-reread the whole PDF.
+- Do NOT OCR the whole PDF.
+- Use targeted page reads only, driven by 01_source_map.md, 04_exhibits.json,
+  and the A1 coverage audit.
+- Use OCR only inline, page-by-page, for materially needed image-only or
+  text-empty pages.
+- Do not leave a directly surfaced high-value family at headline level if it
+  can be deepened from the already-surfaced pages.
+
+### Targeted Depth Block 1 — Item 21 note walk
+File: `RT_depth_item21_notes.json`
+
+Walk the surfaced financial-statement note pages (NOT the whole PDF). Capture:
+- note families present (list, with page ranges)
+- accounting policy mechanics (revenue recognition, depreciation, impairment,
+  advertising fund, deferred franchise fees, etc.)
+- lease / rent / receivable / ROU structure (operating vs finance, ROU assets,
+  lease liabilities, maturity schedule if surfaced)
+- parent / affiliate payable-receivable structure
+- royalty or related-party payment structure
+- tax-rate or tax-footnote structure (current vs deferred, rate reconciliation)
+- subsequent-event lines
+- any other directly surfaced line that materially changes economics,
+  accounting interpretation, or buyer risk
+
+Do NOT stop at statement headlines if note pages are directly surfaced.
+Every captured item carries per-field source_pages.
+
+### Targeted Depth Block 2 — Key exhibit clause walk
+File: `RT_depth_key_exhibits.json`
+
+For each directly surfaced material exhibit, walk operative clauses rather
+than charting only. Prioritize (in order):
+- franchise agreement
+- lease or occupancy exhibit
+- new term / successor term exhibit
+- growth / development exhibit
+- loan-doc / financing exhibit
+- franchisee-list exhibit
+- state addenda exhibit
+
+For each exhibit capture a list of clause entries with:
+- clause_family
+- obligation / restriction / right
+- trigger
+- duration
+- money or formula if present
+- exceptions / carveouts
+- exact source_pages
+
+Surfaced key exhibits should be directly clause-walked whenever materially
+needed. If a surfaced exhibit is deferred rather than clause-walked, A2
+MUST record the following in the exhibit's entry in `RT_depth_key_exhibits.json`:
+  - exact exhibit name
+  - exact page range not directly walked
+  - why the family was deferred (specific rationale, not generic)
+  - what operative substance was already recovered elsewhere (e.g., from
+    Item 17 chart, A2 contract-burden depth pass, or body cross-references),
+    if any
+  - what remains missing despite the deferral
+
+This deferral information MUST be promoted into:
+  - `10_scorecard.md` — as a named extraction-depth gap
+  - `14_run_summary.json` — in run_metrics, listing deferred exhibits
+  - `08_final_report.md` — in the weaknesses or open-items section
+so that the A3 publish gate has explicit visibility into every deferred
+surfaced exhibit.
+
+### Targeted Depth Block 3 — Item 20 completion
+File: `RT_depth_item20_tables.json`
+
+If multiple Item 20 tables are directly surfaced, extract ALL of them — not
+just Table 1 and not just a sample. Capture for each table:
+- yearly activity
+- transfers
+- closures (terminations, nonrenewals, ceased operations, reacquired)
+- projected openings
+- status splits (franchised vs company-owned, by state if surfaced)
+- table notes (every note under every table)
+- source_pages per table
+
+### Targeted Depth Block 4 — Thin-family thickening
+File: `RT_depth_thin_items.json`
+
+If A1 left Item 2 or Items 9–16 or Item 18 thin, promote those families to
+materially useful depth. Capture:
+- Item 2: full leadership / officers / directors roster with role and tenure
+- Items 9, 10, 11, 12, 13, 14, 15, 16: one structured burden block per item
+  with operative obligations, restrictions, rights, and triggers
+- Item 18: public figures / endorsements / limitations with scope and any
+  disclosed compensation
+
+Every entry carries source_pages.
+
+### Post-block updates
+After the four targeted depth blocks, update:
+- `08_final_report.md`           — absorb the new depth into the narrative
+- `09_final_canonical.json`      — promote structured facts from all RT files
+- `11_canonical_enriched.json`   — reflect depth in enrichment v1
+- `12_canonical_enriched_v2.json` — reflect depth in enrichment v2
+- `10_scorecard.md`              — reflect depth pass deltas
+- `14_run_summary.json`          — update run_metrics with per-block counts
+
+## Mandatory exhibit-and-tail-notes recovery rule
+
+If a material exhibit or financial-note family is directly surfaced (its pages
+are known from 01_source_map.md / 04_exhibits.json) but A1 left it only
+labeled, sampled, or summarized indirectly, A2 MUST perform a targeted direct
+page walk of that source before stopping.
+
+This rule applies especially when the current extraction relies on:
+- Item 17 chart cross-references instead of directly reading agreement pages
+- Item 10 summaries instead of directly reading loan / security / ACH documents
+- a partial financial-note walk that stops before the tail-end note pages
+- exhibit labels without operative clause extraction
+
+Prioritize these directly surfaced families when present, in this order:
+1. tail-end Item 21 note pages after the first surfaced notes
+2. Franchise Agreement clause body
+3. variant franchise agreements with potentially different economics or
+   default mechanics
+4. Operator's Lease section walk
+5. Loan / promissory / security / ACH / OAPA documents
+6. New Term Policy
+7. Growth Policy
+
+Create or update:
+- `RT_depth_item21_notes.json` (for tail-end note recovery)
+- `RT_depth_key_exhibits.json` (for exhibit clause-body recovery)
+
+For each targeted recovery entry, capture:
+- exact exhibit or note family
+- exact page range read
+- clause or note family captured
+- operative burden / right / restriction / money term / trigger / exception
+  if present
+- reason it matters economically, legally, or structurally
+
+Hard rules for this recovery block:
+- A2 may NOT rely on Item 10 or Item 17 summaries as a substitute for directly
+  reading surfaced exhibit pages when those pages are available.
+- If a material exhibit is surfaced and not directly read, `14_run_summary.json`
+  and `10_scorecard.md` MUST state this explicitly, naming the exhibit and the
+  surfaced page range that was skipped and why.
+
+## Mandatory Item 19 cohort-comparability rule
+
+If Item 19 uses a pro-forma, illustrative, or comparable cohort whose
+restaurants operated under a DIFFERENT royalty rate, fee tier, advertising
+fund contribution, technology fee, or other material economic burden than the
+terms offered to current new franchisees, A2 MUST surface this as a
+high-severity contradiction or comparability warning.
+
+Required extraction steps:
+
+1. **Identify the historical cohort economics.**
+   Read Item 19 and any accompanying footnotes or caveats. Extract the
+   royalty rate, advertising fund rate, technology fee, and any other
+   fee component used in the pro-forma / cohort computation. Record exact
+   source pages and the verbatim caveat language (≤30 words per quote).
+
+2. **Identify the current new-franchisee economics.**
+   Read Item 6 (fee table) and Item 5 (initial franchise fee / ongoing fees)
+   for the royalty rate, advertising fund rate, technology fee, and any other
+   fee component that current new franchisees are required to pay. Record
+   exact source pages.
+
+3. **Compute the basis-point difference.**
+   When the cohort rate and the current rate are both directly disclosed,
+   compute the difference in basis points (e.g., 4.00% vs 5.00% = 100 bps).
+   If not directly supported, note "not computable — rates not both disclosed"
+   and skip the computation. Do NOT invent rates.
+
+4. **Compute approximate dollar overstatement or understatement.**
+   When both rates and Item 19 disclosed sales tiers (e.g., average gross
+   sales, median gross sales, or quartile breakpoints) are directly
+   supported, compute the approximate annual dollar impact at each disclosed
+   tier.
+   Example (McDonald's-style): if the pro-forma uses a 4% royalty but
+   current new franchisees pay 5%, and the disclosed average gross sales
+   are $X, the approximate OIBOC overstatement is X × 0.01.
+   If sales tiers are not disclosed or rates are not both disclosed, note
+   "not computable" and skip. Do NOT invent sales figures.
+
+5. **Save the finding.**
+   Create a structured entry with:
+     - id: "item19_cohort_comparability_warning"
+     - severity: "high"
+     - cohort_royalty_rate: number or null
+     - cohort_ad_fund_rate: number or null
+     - cohort_tech_fee: number or null
+     - current_royalty_rate: number or null
+     - current_ad_fund_rate: number or null
+     - current_tech_fee: number or null
+     - basis_point_difference: number or null
+     - dollar_impact_by_tier: array of {tier_label, tier_sales, annual_impact}
+       or null
+     - source_pages_item19: array of page numbers
+     - source_pages_item6: array of page numbers
+     - reasoning: string explaining the comparability gap
+     - quote_fragments: array of short verbatim references (≤30 words each)
+
+   Add this entry to:
+   - `contradictions` family in `09_final_canonical.json`
+   - `contradictions` family in `12_canonical_enriched_v2.json`
+   - `unresolveds` family (as an open-question entry) in both canonical files
+   - Section K (Contradictions) of `08_final_report.md`
+   - Section F (Item 19) of `08_final_report.md` with full narrative
+
+   Write the raw finding to `RT_depth_item19_cohort_comparability.json`.
+
+If Item 19 does not exist, or the cohort uses the same fee structure as
+current new franchisees, skip this rule and note in the scorecard:
+"Item 19 cohort comparability: no discrepancy found (or Item 19 not present)."
+
+## Rules
+- One PDF only. Do not read other PDFs.
+- Do not invent data. Only extract what the PDF actually says.
+- Every extracted field must have page-level provenance.
+- Do not broad-reread the whole PDF.
+- Do not OCR the whole PDF.
+- Use targeted page reads only.
+- Use OCR only inline for materially needed image-only or text-empty pages.
+- Do not leave a directly surfaced high-value family at headline level if it
+  can be deepened from the surfaced pages.
