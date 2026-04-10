@@ -46,21 +46,21 @@ export default function EconomicsBlock({
     <SectionShell id="economics" eyebrow="The money" headline="What you pay">
       {/* ── Three-column visual summary cards ── */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
-        <div className="rounded-xl border border-border/40 bg-surface p-5">
+        <div className="rounded-xl border border-white/[0.06] bg-surface/80 p-5 shadow-lg shadow-black/10">
           <div className="text-[9px] uppercase tracking-[0.15em] text-muted/70">To get in</div>
           <div className="mt-2 text-2xl font-extrabold text-foreground tabular-nums tracking-tight">
             {formatUsdRange(investment.rangeLow, investment.rangeHigh)}
           </div>
           <div className="mt-1 text-[10px] text-muted/50">Traditional format · Item 7</div>
         </div>
-        <div className="rounded-xl border border-border/40 bg-surface p-5">
+        <div className="rounded-xl border border-white/[0.06] bg-surface/80 p-5 shadow-lg shadow-black/10">
           <div className="text-[9px] uppercase tracking-[0.15em] text-muted/70">Ongoing extraction</div>
           <div className="mt-2 text-2xl font-extrabold text-foreground tabular-nums tracking-tight">
             ~{feeSegments.reduce((a, s) => a + s.pct, 0).toFixed(0)}%+
           </div>
           <div className="mt-1 text-[10px] text-muted/50">of Gross Sales · recurring</div>
         </div>
-        <div className="rounded-xl border border-border/40 bg-surface p-5">
+        <div className="rounded-xl border border-white/[0.06] bg-surface/80 p-5 shadow-lg shadow-black/10">
           <div className="text-[9px] uppercase tracking-[0.15em] text-muted/70">Avg. unit revenue</div>
           <div className="mt-2 text-2xl font-extrabold text-foreground tabular-nums tracking-tight">
             {item19.headlineMetric ?? "—"}
@@ -70,7 +70,7 @@ export default function EconomicsBlock({
       </div>
 
       {/* ── Investment anatomy ── */}
-      <div className="rounded-xl border border-border/40 bg-surface p-6">
+      <div className="rounded-xl border border-white/[0.06] bg-surface/80 p-6 shadow-lg shadow-black/10">
         <div className="flex items-baseline justify-between gap-4 flex-wrap mb-5">
           <h3 className="text-xs font-semibold text-foreground uppercase tracking-wider">Investment by format</h3>
         </div>
@@ -95,12 +95,12 @@ export default function EconomicsBlock({
       </div>
 
       {/* ── Fee extraction stack ── */}
-      <div className="mt-4 rounded-xl border border-border/40 bg-surface p-6">
+      <div className="mt-4 rounded-xl border border-white/[0.06] bg-surface/80 p-6 shadow-lg shadow-black/10">
         <FeeStackBar segments={feeSegments} conditionalItems={conditionalItems} />
       </div>
 
       {/* ── Item 19 revenue trust ── */}
-      <div className="mt-4 rounded-xl border border-border/40 bg-surface p-6">
+      <div className="mt-4 rounded-xl border border-white/[0.06] bg-surface/80 p-6 shadow-lg shadow-black/10">
         <div className="flex items-center justify-between gap-4 flex-wrap mb-4">
           <h3 className="text-xs font-semibold text-foreground uppercase tracking-wider">Revenue data quality</h3>
           <div className="flex gap-1.5">

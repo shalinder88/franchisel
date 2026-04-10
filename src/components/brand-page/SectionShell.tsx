@@ -8,17 +8,20 @@ type Props = {
 }
 
 /**
- * Section wrapper — visual-first. Eyebrow + headline only.
- * No takeaway paragraph — the visual speaks first, text supports.
+ * Section wrapper — visual-first, editorial feel.
+ * Eyebrow + headline. Visual transition between sections.
  */
 export default function SectionShell({ id, eyebrow, headline, children }: Props) {
   return (
-    <section id={id} className="scroll-mt-24 border-t border-border/60 pt-14 pb-6">
-      <div className="mb-8">
-        <div className="text-[10px] uppercase tracking-[0.2em] text-accent font-medium mb-2">
+    <section id={id} className="scroll-mt-24 pt-16 pb-8">
+      {/* Section divider — subtle gradient line */}
+      <div className="mb-10 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+      <div className="mb-10">
+        <div className="text-[10px] uppercase tracking-[0.25em] text-accent/80 font-semibold mb-2.5">
           {eyebrow}
         </div>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-foreground tracking-tight leading-tight">
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight leading-[1.1]">
           {headline}
         </h2>
       </div>

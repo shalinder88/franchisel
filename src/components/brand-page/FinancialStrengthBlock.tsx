@@ -47,7 +47,7 @@ export default function FinancialStrengthBlock({
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
           {primary.map((h) => {
             const card = (
-              <div className="rounded-xl border border-border/40 bg-surface p-4 hover:bg-surface-alt/60 transition-colors">
+              <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-4 hover:bg-surface-alt/60 transition-colors">
                 <div className="text-lg mb-2">{ICON[h.label] ?? "◆"}</div>
                 <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">{h.label}</div>
                 <div className="mt-1 text-sm font-bold text-foreground tabular-nums">{h.value}</div>
@@ -64,7 +64,7 @@ export default function FinancialStrengthBlock({
 
       {/* Secondary metrics — compact row */}
       {secondary.length > 0 && (
-        <div className="rounded-xl border border-border/40 bg-surface divide-y divide-border/30">
+        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 divide-y divide-border/30">
           {secondary.map((h) => {
             const row = (
               <div className="flex items-center justify-between px-5 py-3 hover:bg-surface-alt/40 transition-colors">

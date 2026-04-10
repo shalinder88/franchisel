@@ -67,7 +67,7 @@ export default function GuidedSummary({
 
       {/* ── Expanded detail for selected tile ── */}
       {active && (
-        <div className="mt-4 rounded-xl border border-border/40 bg-surface p-5 animate-fade-up">
+        <div className="mt-4 rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-5 animate-fade-up">
           <div className="flex items-start gap-3">
             <span className="text-2xl">{ICONS[active.id] ?? "◆"}</span>
             <div className="flex-1 min-w-0">

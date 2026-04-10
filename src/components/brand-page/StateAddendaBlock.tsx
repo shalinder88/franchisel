@@ -47,7 +47,7 @@ export default function StateAddendaBlock({
       </div>
 
       {/* Expandable detail rows */}
-      <div className="rounded-xl border border-border bg-surface divide-y divide-border/60">
+      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 divide-y divide-border/60">
         {addenda.entries.map((e) => (
           <ExpandableRow
             key={e.state}

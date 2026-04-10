@@ -49,7 +49,7 @@ export default function ContractBurdenBlock({
       </div>
 
       {/* ── Severity bar chart with icons ── */}
-      <div className="rounded-xl border border-border/40 bg-surface overflow-hidden">
+      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 overflow-hidden">
         <div className="px-5 pt-5 pb-3 space-y-3">
           {families.map((f, i) => {
             const bar = SEV_BAR[f.severity] ?? SEV_BAR.neutral

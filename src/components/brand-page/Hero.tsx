@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import type { BrandPageModel, Severity } from "@/lib/brand-page-model"
+import type { BrandPageModel } from "@/lib/brand-page-model"
 import { truncateToLabel } from "@/lib/brand-pages/mappers"
 
 type Props = {
@@ -18,65 +18,69 @@ export default function Hero({ hero, summaryItems }: Props) {
   const [expandedChip, setExpandedChip] = useState<number | null>(null)
 
   return (
-    <section id="hero" className="scroll-mt-24 pt-4 pb-14">
-      {/* Top line */}
-      <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-muted font-medium">
-        <span>{hero.category}</span>
-        <span className="text-border">·</span>
-        <span>FDD {hero.filingYear}</span>
+    <section id="hero" className="scroll-mt-24 hero-mesh -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 pt-12 pb-16 rounded-b-3xl mb-4">
+      {/* Category pill */}
+      <div className="flex items-center gap-2.5">
+        <span className="inline-flex items-center rounded-full border border-border/40 bg-surface/60 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-muted backdrop-blur-sm">
+          {hero.category}
+        </span>
+        <span className="text-[10px] text-muted/40">·</span>
+        <span className="text-[10px] uppercase tracking-[0.2em] text-muted/50">FDD {hero.filingYear}</span>
       </div>
 
-      {/* Brand name — cinematic */}
-      <h1 className="mt-2 text-5xl sm:text-7xl font-extrabold text-foreground tracking-tighter leading-none">
+      {/* Brand name */}
+      <h1 className="mt-5 text-6xl sm:text-8xl font-black text-foreground tracking-tighter leading-[0.9]">
         {hero.brandName}
       </h1>
 
-      {/* Verification + severity ribbon in one row */}
-      <div className="mt-5 flex items-center gap-4 flex-wrap">
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-border/60 px-3 py-1 text-[10px] text-muted">
+      {/* Verification + ribbon */}
+      <div className="mt-6 flex items-center gap-4 flex-wrap">
+        <span className="inline-flex items-center gap-2 rounded-full border border-success/20 bg-success/5 px-3.5 py-1.5 text-[10px] text-success/90 font-medium backdrop-blur-sm">
           <span className="h-1.5 w-1.5 rounded-full bg-success animate-pulse" />
-          Gov-filed FDD verified
+          Government-filed FDD verified
         </span>
         {summaryItems && summaryItems.length > 0 && (
-          <div className="flex h-1.5 rounded-full overflow-hidden bg-surface-alt flex-1 min-w-[120px] max-w-[200px]">
+          <div className="flex h-2 rounded-full overflow-hidden bg-surface-alt/60 flex-1 min-w-[100px] max-w-[180px] shadow-inner">
             {summaryItems.map((s) => (
-              <div
-                key={s.id}
-                className={`flex-1 ${SEV_COLOR[s.severity ?? "neutral"]}`}
-              />
+              <div key={s.id} className={`flex-1 ${SEV_COLOR[s.severity ?? "neutral"]}`} />
             ))}
           </div>
         )}
       </div>
 
-      {/* ── Premium metric strip ── */}
-      <div className="mt-8 grid grid-cols-3 lg:grid-cols-6 gap-px bg-border/30 rounded-2xl overflow-hidden border border-border/40">
+      {/* Metric strip — premium glass effect */}
+      <div className="mt-10 grid grid-cols-3 lg:grid-cols-6 gap-px rounded-2xl overflow-hidden border border-white/[0.06] shadow-2xl shadow-black/40">
         {hero.keyMetrics.map((m) => (
-          <div key={m.label} className="bg-surface p-5 hover:bg-surface-alt/60 transition-colors">
-            <div className="text-[9px] uppercase tracking-[0.15em] text-muted/70 leading-tight">{m.label}</div>
-            <div className="mt-2 text-2xl sm:text-3xl font-extrabold text-foreground tabular-nums tracking-tight leading-none">
+          <div
+            key={m.label}
+            className="bg-surface/80 backdrop-blur-sm p-5 lg:p-6 hover:bg-surface-alt/80 transition-all duration-300"
+          >
+            <div className="text-[9px] uppercase tracking-[0.18em] text-muted/50 leading-tight">
+              {m.label}
+            </div>
+            <div className="mt-2.5 text-2xl sm:text-3xl font-black text-foreground tabular-nums tracking-tight leading-none">
               {m.value}
             </div>
             {m.sublabel && (
-              <div className="mt-1.5 text-[10px] text-muted/50">{m.sublabel}</div>
+              <div className="mt-2 text-[10px] text-muted/40 leading-tight">{m.sublabel}</div>
             )}
           </div>
         ))}
       </div>
 
-      {/* ── Verdict chip row — replaces paragraphs ── */}
-      <div className="mt-6 flex flex-wrap gap-1.5">
+      {/* Verdict chips */}
+      <div className="mt-8 flex flex-wrap gap-1.5">
         {hero.positives.map((p, i) => (
           <button
             key={`p${i}`}
             onClick={() => setExpandedChip(expandedChip === i ? null : i)}
-            className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11px] transition-all
+            className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11px] transition-all duration-200 backdrop-blur-sm
               ${expandedChip === i
-                ? "border-success/40 bg-success/8 text-foreground shadow-sm shadow-success/10"
-                : "border-border/50 text-foreground/60 hover:border-success/25"
+                ? "border-success/30 bg-success/10 text-foreground/90 shadow-md shadow-success/10"
+                : "border-white/[0.06] text-foreground/50 hover:border-success/20 hover:text-foreground/70"
               }`}
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-success/80 shrink-0" />
+            <span className="h-1.5 w-1.5 rounded-full bg-success/70 shrink-0" />
             {truncateToLabel(p)}
           </button>
         ))}
@@ -86,22 +90,22 @@ export default function Hero({ hero, summaryItems }: Props) {
             <button
               key={`c${i}`}
               onClick={() => setExpandedChip(expandedChip === idx ? null : idx)}
-              className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11px] transition-all
+              className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11px] transition-all duration-200 backdrop-blur-sm
                 ${expandedChip === idx
-                  ? "border-warning/40 bg-warning/8 text-foreground shadow-sm shadow-warning/10"
-                  : "border-border/50 text-foreground/60 hover:border-warning/25"
+                  ? "border-warning/30 bg-warning/10 text-foreground/90 shadow-md shadow-warning/10"
+                  : "border-white/[0.06] text-foreground/50 hover:border-warning/20 hover:text-foreground/70"
                 }`}
             >
-              <span className="h-1.5 w-1.5 rounded-full bg-warning/80 shrink-0" />
+              <span className="h-1.5 w-1.5 rounded-full bg-warning/70 shrink-0" />
               {truncateToLabel(c)}
             </button>
           )
         })}
       </div>
 
-      {/* Expanded detail — only shows for selected chip */}
+      {/* Expanded chip detail */}
       {expandedChip !== null && (
-        <div className="mt-3 rounded-xl border border-border/40 bg-surface px-5 py-4 text-sm text-foreground/75 leading-relaxed animate-fade-up max-w-2xl">
+        <div className="mt-3 rounded-xl border border-white/[0.06] bg-surface/80 backdrop-blur-md px-5 py-4 text-sm text-foreground/70 leading-relaxed animate-fade-up max-w-2xl shadow-lg shadow-black/20">
           {expandedChip < hero.positives.length
             ? hero.positives[expandedChip]
             : hero.cautions[expandedChip - hero.positives.length]}

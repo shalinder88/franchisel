@@ -10,10 +10,10 @@ export default function EvidenceAccordion({
 }) {
   return (
     <SectionShell id="evidence" eyebrow="Show your work" headline="Source evidence">
-      <div className="rounded-xl border border-border bg-surface divide-y divide-border/60">
+      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 divide-y divide-border/30">
         {evidence.sections.map((s) => (
           <details key={s.title} className="group">
-            <summary className="flex items-center justify-between gap-4 cursor-pointer px-5 py-4 list-none hover:bg-surface-alt/50 transition-colors">
+            <summary className="flex items-center justify-between gap-4 cursor-pointer px-5 py-4 list-none hover:bg-white/[0.02] transition-all duration-200">
               <span className="text-sm font-medium text-foreground">{s.title}</span>
               <svg
                 className="w-4 h-4 text-muted shrink-0 transition-transform duration-200 group-open:rotate-180"

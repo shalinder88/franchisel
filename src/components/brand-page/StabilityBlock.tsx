@@ -21,13 +21,13 @@ export default function StabilityBlock({
     <SectionShell id="stability" eyebrow="The system" headline="Is it growing?">
       {/* ── Trend summary cards ── */}
       <div className="grid grid-cols-3 gap-2 mb-5">
-        <div className="rounded-xl border border-border/40 bg-surface p-4 text-center">
+        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-4 text-center">
           <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Total units</div>
           <div className="mt-1 text-2xl font-extrabold text-foreground tabular-nums">
             {mix.reduce((a, m) => a + m.value, 0).toLocaleString()}
           </div>
         </div>
-        <div className="rounded-xl border border-border/40 bg-surface p-4 text-center">
+        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-4 text-center">
           <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Net growth {latestYear?.year}</div>
           <div className="mt-1 text-2xl font-extrabold tabular-nums text-success">
             +{latestNet}
@@ -38,7 +38,7 @@ export default function StabilityBlock({
             </div>
           )}
         </div>
-        <div className="rounded-xl border border-border/40 bg-surface p-4 text-center">
+        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-4 text-center">
           <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Transfers {latestYear?.year}</div>
           <div className="mt-1 text-2xl font-extrabold text-foreground tabular-nums">
             {(latestYear?.transfers ?? 0).toLocaleString()}
@@ -47,7 +47,7 @@ export default function StabilityBlock({
       </div>
 
       {/* ── Ownership split bar ── */}
-      <div className="rounded-xl border border-border/40 bg-surface p-5 mb-4">
+      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-5 mb-4">
         <div className="flex items-center justify-between text-[11px] text-foreground/60 mb-2">
           {mix.map((m, i) => (
             <span key={m.label} className="flex items-center gap-1.5">
@@ -68,7 +68,7 @@ export default function StabilityBlock({
       </div>
 
       {/* ── Openings vs closures — horizontal paired bars ── */}
-      <div className="rounded-xl border border-border/40 bg-surface p-5">
+      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-5">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-xs font-semibold text-foreground uppercase tracking-wider">Openings vs. closures</h3>
           <div className="flex gap-3 text-[10px] text-foreground/50">
