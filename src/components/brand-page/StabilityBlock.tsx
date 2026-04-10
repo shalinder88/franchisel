@@ -21,30 +21,30 @@ export default function StabilityBlock({
     <SectionShell id="stability" eyebrow="The system" headline="Is it growing?">
       {/* ── Trend summary — 2 cards only (total units already in hero) ── */}
       <div className="grid grid-cols-2 gap-3 mb-5">
-        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-5 text-center">
-          <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Net growth {latestYear?.year}</div>
+        <div className="rounded-xl border border-border bg-surface shadow-lg shadow-black/10 p-5 text-center">
+          <div className="text-[9px] uppercase tracking-[0.15em] text-foreground/50">Net growth {latestYear?.year}</div>
           <div className="mt-1.5 text-3xl font-black tabular-nums text-success tracking-tight">
             +{latestNet}
           </div>
           {prevNet !== null && (
-            <div className="mt-1 text-[10px] text-muted/40">
+            <div className="mt-1 text-[10px] text-foreground/50">
               vs {prevNet >= 0 ? "+" : ""}{prevNet} prior year
             </div>
           )}
         </div>
-        <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-5 text-center">
-          <div className="text-[9px] uppercase tracking-[0.15em] text-muted/60">Transfers {latestYear?.year}</div>
+        <div className="rounded-xl border border-border bg-surface shadow-lg shadow-black/10 p-5 text-center">
+          <div className="text-[9px] uppercase tracking-[0.15em] text-foreground/50">Transfers {latestYear?.year}</div>
           <div className="mt-1.5 text-3xl font-black text-foreground tabular-nums tracking-tight">
             {(latestYear?.transfers ?? 0).toLocaleString()}
           </div>
-          <div className="mt-1 text-[10px] text-muted/40">
+          <div className="mt-1 text-[10px] text-foreground/50">
             units changed hands
           </div>
         </div>
       </div>
 
       {/* ── Ownership split bar ── */}
-      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-5 mb-4">
+      <div className="rounded-xl border border-border bg-surface shadow-lg shadow-black/10 p-5 mb-4">
         <div className="flex items-center justify-between text-[11px] text-foreground/60 mb-2">
           {mix.map((m, i) => (
             <span key={m.label} className="flex items-center gap-1.5">
@@ -65,7 +65,7 @@ export default function StabilityBlock({
       </div>
 
       {/* ── Openings vs closures — horizontal paired bars ── */}
-      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-5">
+      <div className="rounded-xl border border-border bg-surface shadow-lg shadow-black/10 p-5">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-xs font-semibold text-foreground uppercase tracking-wider">Openings vs. closures</h3>
           <div className="flex gap-3 text-[10px] text-foreground/50">
@@ -81,17 +81,17 @@ export default function StabilityBlock({
               <div key={y.year}>
                 <div className="flex items-baseline justify-between text-[11px] mb-1.5">
                   <span className="text-foreground font-medium tabular-nums">{y.year}</span>
-                  <span className="text-muted/60 tabular-nums">net {open - closed >= 0 ? "+" : ""}{open - closed}</span>
+                  <span className="text-foreground/50 tabular-nums">net {open - closed >= 0 ? "+" : ""}{open - closed}</span>
                 </div>
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] text-muted/50 w-10 text-right tabular-nums">+{open}</span>
+                    <span className="text-[10px] text-foreground/50 w-10 text-right tabular-nums">+{open}</span>
                     <div className="flex-1 h-2.5 bg-surface-alt rounded-full overflow-hidden">
                       <div className="h-full bg-success/60 rounded-full" style={{ width: `${(open / maxGrowth) * 100}%` }} />
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] text-muted/50 w-10 text-right tabular-nums">–{closed}</span>
+                    <span className="text-[10px] text-foreground/50 w-10 text-right tabular-nums">–{closed}</span>
                     <div className="flex-1 h-2.5 bg-surface-alt rounded-full overflow-hidden">
                       <div className="h-full bg-danger/50 rounded-full" style={{ width: `${(closed / maxGrowth) * 100}%` }} />
                     </div>

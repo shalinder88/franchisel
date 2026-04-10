@@ -37,14 +37,14 @@ export default function StateAddendaBlock({
         })}
         {/* No-addendum count — compact, not tiles */}
         {addenda.statesWithoutAddendum && addenda.statesWithoutAddendum.length > 0 && (
-          <span className="self-center text-[10px] text-muted/30 ml-1">
+          <span className="self-center text-[10px] text-foreground/50 ml-1">
             +{addenda.statesWithoutAddendum.length} no override
           </span>
         )}
       </div>
 
       {/* Expandable detail rows */}
-      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 divide-y divide-border/60">
+      <div className="rounded-xl border border-border bg-surface shadow-lg shadow-black/10 divide-y divide-border/60">
         {addenda.entries.map((e) => (
           <ExpandableRow
             key={e.state}
@@ -57,7 +57,7 @@ export default function StateAddendaBlock({
               <span className="text-foreground/50 font-medium">Why it matters</span> — {e.whyItMatters}
             </p>
             {e.sourcePages && e.sourcePages.length > 0 && (
-              <div className="mt-2 text-[10px] text-muted/60 tabular-nums">
+              <div className="mt-2 text-[10px] text-foreground/50 tabular-nums">
                 Exhibit T · p. {e.sourcePages.join(", ")}
               </div>
             )}

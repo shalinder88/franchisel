@@ -62,7 +62,7 @@ export default function RedFlagList({
               <button
                 type="button"
                 onClick={() => setExpanded(isOpen ? null : i)}
-                className="w-full flex items-center gap-3 px-5 py-4 text-left hover:bg-white/[0.01] transition-colors"
+                className="w-full flex items-center gap-3 px-5 py-4 text-left hover:bg-surface-alt transition-colors"
               >
                 <span className="text-xl shrink-0">{icon}</span>
                 <span className="text-sm font-semibold text-foreground flex-1">{f.title}</span>
@@ -70,7 +70,7 @@ export default function RedFlagList({
                   {isHigh ? "HIGH" : "CAUTION"}
                 </span>
                 <svg
-                  className={`w-4 h-4 text-muted/40 shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+                  className={`w-4 h-4 text-foreground/50 shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
                   fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -79,8 +79,8 @@ export default function RedFlagList({
               {isOpen && (
                 <div className="px-5 pb-5 pt-0 animate-fade-up">
                   <p className="text-sm text-foreground/65 leading-relaxed">{f.summary}</p>
-                  <p className="mt-2 text-xs text-muted/50 leading-relaxed">
-                    <span className="text-foreground/30 font-medium">Impact</span> — {f.whyItMatters}
+                  <p className="mt-2 text-xs text-foreground/50 leading-relaxed">
+                    <span className="text-foreground/40 font-medium">Impact</span> — {f.whyItMatters}
                   </p>
                   {f.linkedSectionId && (
                     <a href={`#${f.linkedSectionId}`} className="mt-2 inline-block text-[10px] text-accent/60 hover:text-accent transition-colors">

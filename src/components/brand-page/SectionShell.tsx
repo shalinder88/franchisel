@@ -7,18 +7,14 @@ type Props = {
   children: ReactNode
 }
 
-/**
- * Section wrapper — visual-first, editorial feel.
- * Eyebrow + headline. Visual transition between sections.
- */
 export default function SectionShell({ id, eyebrow, headline, children }: Props) {
   return (
     <section id={id} className="scroll-mt-24 pt-16 pb-8">
-      {/* Section divider — subtle gradient line */}
-      <div className="mb-10 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+      {/* Section divider */}
+      <div className="mb-10 h-px bg-gradient-to-r from-transparent via-border-strong to-transparent" />
 
       <div className="mb-10">
-        <div className="text-[10px] uppercase tracking-[0.25em] text-accent/80 font-semibold mb-2.5">
+        <div className="text-[11px] uppercase tracking-[0.2em] text-accent font-bold mb-2">
           {eyebrow}
         </div>
         <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight leading-[1.1]">

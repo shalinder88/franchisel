@@ -34,7 +34,7 @@ export default function FinancialStrengthBlock({
             <span className="h-1.5 w-1.5 rounded-full bg-success" />
             Clean audit
           </span>
-          <span className="text-[11px] text-muted/40">
+          <span className="text-[11px] text-foreground/50">
             {auditorName} · {opinion} · {concern}
           </span>
         </div>
@@ -48,10 +48,10 @@ export default function FinancialStrengthBlock({
       </div>
 
       {/* Metric cards — only non-audit items */}
-      <div className="rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 divide-y divide-border/20">
+      <div className="rounded-xl border border-border bg-surface shadow-lg shadow-black/10 divide-y divide-border/20">
         {metricItems.map((h) => {
           const row = (
-            <div className="flex items-center justify-between px-5 py-3.5 hover:bg-white/[0.02] transition-all duration-200">
+            <div className="flex items-center justify-between px-5 py-3.5 hover:bg-surface-alt transition-all duration-200">
               <span className="text-xs text-foreground/60">{h.label}</span>
               <span className="text-sm font-bold text-foreground tabular-nums">{h.value}</span>
             </div>

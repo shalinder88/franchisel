@@ -50,7 +50,7 @@ export default function GuidedSummary({
               className={`rounded-2xl border p-5 text-left transition-all duration-200
                 ${isActive
                   ? `${SEV_BG[sev]} ring-1 ring-inset ring-white/5 shadow-xl shadow-black/30 scale-[1.02]`
-                  : "border-white/[0.06] bg-surface/60 hover:bg-surface/80 hover:shadow-lg hover:shadow-black/15 hover:scale-[1.01]"
+                  : "border-border bg-surface hover:bg-surface hover:shadow-lg hover:shadow-black/15 hover:scale-[1.01]"
                 }`}
             >
               <div className="text-2xl mb-3">{ICONS[card.id] ?? "◆"}</div>
@@ -67,14 +67,14 @@ export default function GuidedSummary({
 
       {/* ── Expanded detail for selected tile ── */}
       {active && (
-        <div className="mt-4 rounded-xl border border-white/[0.06] bg-surface/80 shadow-lg shadow-black/10 p-5 animate-fade-up">
+        <div className="mt-4 rounded-xl border border-border bg-surface shadow-lg shadow-black/10 p-5 animate-fade-up">
           <div className="flex items-start gap-3">
             <span className="text-2xl">{ICONS[active.id] ?? "◆"}</span>
             <div className="flex-1 min-w-0">
               <div className="text-sm font-semibold text-foreground">{active.title}</div>
               <p className="mt-2 text-sm text-foreground/75 leading-relaxed">{active.verdict}</p>
               <p className="mt-2 text-xs text-muted leading-relaxed">
-                <span className="text-foreground/40 font-medium">Why it matters</span> — {active.whyItMatters}
+                <span className="text-foreground/50 font-medium">Why it matters</span> — {active.whyItMatters}
               </p>
             </div>
           </div>

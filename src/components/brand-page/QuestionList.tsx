@@ -54,7 +54,7 @@ export default function QuestionList({
                             : "text-foreground/60 hover:bg-surface-alt/40 hover:text-foreground/80"
                           }`}
                       >
-                        <span className="text-muted/30 font-bold tabular-nums shrink-0 w-4 text-right">
+                        <span className="text-foreground/50 font-bold tabular-nums shrink-0 w-4 text-right">
                           {q.globalIdx + 1}
                         </span>
                         <span className="flex-1 min-w-0 truncate">
@@ -71,7 +71,7 @@ export default function QuestionList({
                         <div className="px-3 pb-3 pt-1 animate-fade-up">
                           <p className="text-[13px] text-foreground/80 leading-relaxed">{q.question}</p>
                           <HoverTooltip content={q.basedOn}>
-                            <span className="mt-1.5 inline-flex items-center gap-1 text-[10px] text-muted/40 cursor-default hover:text-muted transition-colors">
+                            <span className="mt-1.5 inline-flex items-center gap-1 text-[10px] text-foreground/50 cursor-default hover:text-muted transition-colors">
                               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                 <circle cx="12" cy="12" r="10" />
                                 <path d="M12 16v-4M12 8h.01" />
