@@ -1,0 +1,226 @@
+{
+  "extraction_date": "2026-04-09",
+  "brand": "McDonald's",
+  "exhibits": [
+    {
+      "letter": "A",
+      "name": "Financial Statements",
+      "category": "financial",
+      "priority": "critical",
+      "page_range": [58, 72],
+      "clause_walk_status": "complete",
+      "material_clause_count": 14,
+      "operative_terms_extracted": ["auditor_opinion", "income_statement", "balance_sheet", "cash_flow", "equity_statement", "accounting_policies", "revenue_recognition", "property_equipment", "leasing", "goodwill", "income_taxes", "employee_benefits", "related_party", "subsequent_events"],
+      "why_not_complete": null
+    },
+    {
+      "letter": "B",
+      "name": "Franchise Agreement (Traditional)",
+      "category": "franchise_agreement",
+      "priority": "critical",
+      "page_range": [73, 90],
+      "clause_walk_status": "partial",
+      "material_clause_count": 12,
+      "operative_terms_extracted": ["nature_scope", "grant_term", "royalty", "initial_fee", "reports", "restrictions_noncompete", "compliance", "assignment_transfer", "insurance", "material_breach", "other_breaches", "effect_of_termination"],
+      "why_not_complete": "Key sections (1, 2, 8-11, 13, 15, 17-20, 24-27) directly read. Remaining sections (3-7, 12, 14, 16, 21-23, 28) not individually walked. A2 depth pass required for full clause walk. Pages 74-78 not directly read."
+    },
+    {
+      "letter": "C",
+      "name": "Franchise Agreement (Satellite)",
+      "category": "franchise_agreement",
+      "priority": "medium",
+      "page_range": [91, 108],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Satellite franchise agreement identified but not directly read. Key terms differ (variable term, different fee structure). A2 depth pass recommended for variant economics. Pages 91-108."
+    },
+    {
+      "letter": "D",
+      "name": "Franchise Agreement (Walmart)",
+      "category": "franchise_agreement",
+      "priority": "low",
+      "page_range": [109, 126],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Walmart franchise agreement identified but not directly read. Niche format. Pages 109-126."
+    },
+    {
+      "letter": "E",
+      "name": "New Restaurant Rider",
+      "category": "contract_rider",
+      "priority": "medium",
+      "page_range": [127, 129],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "New Restaurant Rider identified but not directly read. Pages 127-129."
+    },
+    {
+      "letter": "F",
+      "name": "BFL Rider",
+      "category": "contract_rider",
+      "priority": "medium",
+      "page_range": [130, 132],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "BFL Rider identified but not directly read. Contains option-to-purchase terms referenced in Item 6 and Item 10. Pages 130-132."
+    },
+    {
+      "letter": "G",
+      "name": "Operator's Lease",
+      "category": "lease",
+      "priority": "critical",
+      "page_range": [133, 165],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Operator's Lease is Exhibit A to Franchise Agreement. 33 pages. Key terms partially recovered via Item 6 notes and Item 17 table. Full clause walk deferred to A2. Pages 133-165."
+    },
+    {
+      "letter": "H",
+      "name": "Assignment to an Entity",
+      "category": "assignment",
+      "priority": "medium",
+      "page_range": [166, 171],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Assignment to an Entity form identified. Pages 166-171."
+    },
+    {
+      "letter": "I",
+      "name": "Assignment Agreement",
+      "category": "assignment",
+      "priority": "medium",
+      "page_range": [172, 177],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Assignment Agreement form identified. Pages 172-177."
+    },
+    {
+      "letter": "J",
+      "name": "Candidate Agreements (Preliminary Agreement)",
+      "category": "pre_franchise",
+      "priority": "medium",
+      "page_range": [180, 190],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Candidate/Preliminary Agreement identified. Key terms summarized in Item 11. Pages 180-190."
+    },
+    {
+      "letter": "K",
+      "name": "McDonald's New Term Policy",
+      "category": "policy",
+      "priority": "critical",
+      "page_range": [191, 192],
+      "clause_walk_status": "complete",
+      "material_clause_count": 5,
+      "operative_terms_extracted": ["new_term_process", "nfs_requirement", "year16_application", "year17_recommendation", "new_term_committee", "conditions", "alternative_offer"],
+      "why_not_complete": null
+    },
+    {
+      "letter": "L",
+      "name": "McDonald's Growth Policy",
+      "category": "policy",
+      "priority": "high",
+      "page_range": [193, 193],
+      "clause_walk_status": "complete",
+      "material_clause_count": 3,
+      "operative_terms_extracted": ["nfs_threshold", "business_acquisition_plan", "approval_criteria"],
+      "why_not_complete": null
+    },
+    {
+      "letter": "M",
+      "name": "New Term Offer Letter",
+      "category": "template",
+      "priority": "medium",
+      "page_range": [194, 195],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Template letter. Pages 194-195."
+    },
+    {
+      "letter": "N",
+      "name": "Loan and Related Documents",
+      "category": "financing",
+      "priority": "high",
+      "page_range": [196, 230],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Loan documents (35 pages) identified. Key terms extracted from Item 10 (Bank of America, SOFR+3.10%, personal guarantee, jury waiver, cross-default). Direct clause walk not completed. Pages 196-230."
+    },
+    {
+      "letter": "O",
+      "name": "List of Agents for Service of Process",
+      "category": "regulatory",
+      "priority": "low",
+      "page_range": [231, 233],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "List exhibit. Pages 231-233."
+    },
+    {
+      "letter": "P",
+      "name": "State Administrators",
+      "category": "regulatory",
+      "priority": "low",
+      "page_range": [234, 235],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "List exhibit. Pages 234-235."
+    },
+    {
+      "letter": "Q",
+      "name": "McDonald's Affiliates",
+      "category": "reference",
+      "priority": "low",
+      "page_range": [236, 236],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "List of international affiliates. Page 236."
+    },
+    {
+      "letter": "R",
+      "name": "List of Franchised Restaurants",
+      "category": "franchisee_list",
+      "priority": "high",
+      "page_range": [237, 380],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "144 pages of franchisee restaurant listings. Data only. Pages 237-380."
+    },
+    {
+      "letter": "S",
+      "name": "List of Franchisees Who Ceased",
+      "category": "franchisee_list",
+      "priority": "high",
+      "page_range": [381, 382],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "113 franchisees who ceased. Pages 381-382."
+    },
+    {
+      "letter": "T",
+      "name": "State Specific Addenda",
+      "category": "state_addenda",
+      "priority": "critical",
+      "page_range": [383, 387],
+      "clause_walk_status": "complete",
+      "material_clause_count": 6,
+      "operative_terms_extracted": ["california_fast_food_act", "hawaii_filing_anti_waiver", "maryland_release_forum_law_claims", "minnesota_notice_cure_transfer", "north_dakota_noncompete_unenforceable", "washington_franchise_act_aod"],
+      "why_not_complete": null
+    }
+  ]
+}

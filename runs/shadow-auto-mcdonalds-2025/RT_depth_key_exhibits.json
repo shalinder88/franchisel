@@ -1,0 +1,75 @@
+{
+  "depth_block": "key_exhibit_clause_walk",
+  "extraction_date": "2026-04-09",
+  "exhibits_walked": [
+    {
+      "exhibit": "B — Franchise Agreement (Traditional)",
+      "page_range": [73, 90],
+      "clause_walk_status": "complete",
+      "clause_count": 30,
+      "operative_clauses": [
+        {"clause_family": "grant_and_term", "obligation": "Right to operate at specific location using McDonald's System", "trigger": "Execution of agreement", "duration": "As stated (generally 20 years)", "source_pages": [73, 74, 75]},
+        {"clause_family": "royalty", "obligation": "Monthly percentage of Gross Sales", "trigger": "Monthly sales", "duration": "Full term", "money": "Percentage as specified in agreement", "source_pages": [76]},
+        {"clause_family": "advertising", "obligation": "Minimum 4% of Gross Sales annually", "trigger": "Calendar year", "duration": "Full term", "source_pages": [75, 76]},
+        {"clause_family": "noncompete_during", "obligation": "No involvement in competing restaurant business", "trigger": "Term of franchise", "duration": "Full term", "exceptions": "<2% public stock", "source_pages": [78]},
+        {"clause_family": "noncompete_post", "obligation": "No competing business within 10 miles", "trigger": "Termination or sale", "duration": "18 months", "exceptions": "<2% public stock", "source_pages": [78]},
+        {"clause_family": "transfer_rofr", "obligation": "20 days notice; McDonald's 10-day option to match", "trigger": "Proposed sale/transfer", "source_pages": [81]},
+        {"clause_family": "transfer_conditions", "obligation": "Transferee qualifies, assumes liability, original remains liable, royalty adjusts", "trigger": "Transfer", "source_pages": [81]},
+        {"clause_family": "termination", "obligation": "17 material breach triggers (non-curable)", "trigger": "Any enumerated breach", "source_pages": [83, 84]},
+        {"clause_family": "insurance", "obligation": "Workers comp + $5M CGL + lease requirements. A+/A Best rating, FSC ≥IX.", "trigger": "Possession of premises", "duration": "Full term", "source_pages": [82]},
+        {"clause_family": "indemnification", "obligation": "Full indemnification and hold harmless. May require defense.", "trigger": "Any claim from restaurant operations", "duration": "Full term", "source_pages": [85]},
+        {"clause_family": "governing_law", "obligation": "Illinois law", "source_pages": [86]},
+        {"clause_family": "cost_of_enforcement", "obligation": "McDonald's entitled to attorneys' fees if it prevails", "source_pages": [85]}
+      ]
+    },
+    {
+      "exhibit": "G — Operator's Lease",
+      "page_range": [133, 165],
+      "clause_walk_status": "partial",
+      "clause_count": 8,
+      "operative_clauses": [
+        {"clause_family": "rent", "obligation": "Base + Pass Thru + Percentage Rent per schedule", "source_pages": [133, 134]},
+        {"clause_family": "taxes", "obligation": "Tenant pays all real estate taxes and assessments", "source_pages": [134]},
+        {"clause_family": "maintenance", "obligation": "Tenant responsible for all maintenance and repair", "source_pages": [134]},
+        {"clause_family": "default", "obligation": "Extensive triggers: non-payment, breach of FA, abandonment, bankruptcy. Landlord may re-enter and repossess.", "source_pages": [145]},
+        {"clause_family": "liquidated_damages", "obligation": "Present value of remaining rent over term", "source_pages": [145]},
+        {"clause_family": "holding_over", "obligation": "Double rent as liquidated damages", "source_pages": [145]},
+        {"clause_family": "condemnation", "obligation": "Landlord controls proceeds", "source_pages": [155]},
+        {"clause_family": "governing_law", "obligation": "Illinois law", "source_pages": [134]}
+      ],
+      "deferred_pages": "Pages 135-144, 146-154, 156-165 not individually walked",
+      "why_deferred": "Key operative provisions (rent, default, liquidated damages, holding over) captured from walked pages plus Item 6/17 cross-references. Remaining pages contain standard lease provisions (utilities detail, insurance detail, fixtures, recording, miscellaneous) that add procedural detail but no material economic surprises.",
+      "what_recovered_elsewhere": "Rent structure from Item 6 footnotes. Default triggers from Item 17 table. Insurance from FA Section 17.",
+      "what_remains_missing": "Detailed lease repair/replacement provisions (Art 6.05). Subordination/non-disturbance detail (Art 7.11). Specific condemnation allocation formulas."
+    },
+    {
+      "exhibit": "K — McDonald's New Term Policy",
+      "page_range": [191, 192],
+      "clause_walk_status": "complete",
+      "clause_count": 5,
+      "operative_clauses": [
+        {"clause_family": "eligibility", "obligation": "Must consistently meet National Franchising Standards", "source_pages": [191]},
+        {"clause_family": "timeline", "obligation": "Year 16: apply. Year 17: recommendation. New Term Committee decides.", "source_pages": [191]},
+        {"clause_family": "conditions", "obligation": "Continued NFS compliance, available real estate tenure, economic viability. May include reinvestment, rebuilds, relocations.", "source_pages": [191]},
+        {"clause_family": "terms", "obligation": "Current FA form, same royalty, new initial fee, rent per current policy", "source_pages": [191, 192]},
+        {"clause_family": "alternative", "obligation": "If not offered: may sell to qualified buyer who gets new term offer", "source_pages": [192]}
+      ]
+    },
+    {
+      "exhibit": "L — McDonald's Growth Policy",
+      "page_range": [193, 193],
+      "clause_walk_status": "complete",
+      "clause_count": 3,
+      "operative_clauses": [
+        {"clause_family": "eligibility", "obligation": "Must meet all NFS. Meeting NFS is not assurance of approval.", "source_pages": [193]},
+        {"clause_family": "process", "obligation": "Business Acquisition Plan required 10 days before contract. OPT financial projections required.", "source_pages": [193]},
+        {"clause_family": "approval_criteria", "obligation": "Experience, financial, character, full-time ability, locality, equity, conflicts. Plus FA compliance, financial screens, lending guidelines.", "source_pages": [193]}
+      ]
+    }
+  ],
+  "deferred_exhibits": [
+    {"exhibit": "C — Franchise Agreement (Satellite)", "page_range": [91, 108], "reason": "Variant format for non-traditional locations. Core terms similar to Exhibit B with variable term and different fee structure. Not directly walked because main economic burden is captured via Item 5/6/7 disclosures for Satellite format."},
+    {"exhibit": "D — Franchise Agreement (Walmart)", "page_range": [109, 126], "reason": "Specialized Walmart format. No initial franchise fee. Different rent structure. Not directly walked due to niche applicability."},
+    {"exhibit": "N — Loan and Related Documents", "page_range": [196, 230], "reason": "35 pages. Key terms fully captured from Item 10 (Bank of America, SOFR+3.10%, personal/spousal guarantee, jury waiver, cross-default, OAPA). Direct clause walk would add procedural detail but no material economic changes."}
+  ]
+}

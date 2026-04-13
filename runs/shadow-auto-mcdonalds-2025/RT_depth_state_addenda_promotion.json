@@ -1,0 +1,39 @@
+{
+  "depth_pass": "state_addenda_structured_promotion",
+  "extraction_date": "2026-04-09",
+  "source_pages": [383, 384, 385, 386, 387, 88, 89, 90],
+  "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota", "Washington"],
+  "overrides": [
+    {"state": "California", "affected_family": "labor_compliance", "override_summary": "Disclosure re: CA Fast Food Act (AB 1228). Compliance is solely franchisee's responsibility. McDonald's provides no training, assistance, or fees related to the Act.", "why_it_matters": "California franchisees face higher minimum wage and employment standards under the Fast Food Act; McDonald's does not share this cost.", "source_pages": [383]},
+    {"state": "Hawaii", "affected_family": "anti_waiver", "override_summary": "No acknowledgement or questionnaire waives claims under state franchise law or disclaims reliance on franchisor statements.", "why_it_matters": "Protects Hawaii franchisees' right to bring fraud-in-the-inducement claims despite Franchise Agreement acknowledgments.", "source_pages": [383, 384, 88]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "Release required for renewal/transfer will not apply to liability under Maryland Franchise Registration and Disclosure Law.", "why_it_matters": "Maryland franchisees cannot be required to waive franchise law protections as condition of renewal or transfer.", "source_pages": [384, 88, 89]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law. McDonald's will enforce to extent enforceable.", "why_it_matters": "Limits franchisor's termination power in bankruptcy situations for Maryland franchisees.", "source_pages": [384]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Franchisee may bring MD Franchise Registration and Disclosure Law claims in Maryland, subject to arbitration obligations.", "why_it_matters": "Maryland franchisees can litigate franchise law claims locally rather than in Illinois.", "source_pages": [384]},
+    {"state": "Maryland", "affected_family": "governing_law", "override_summary": "Maryland law applies to claims arising under Maryland Franchise Registration and Disclosure Law.", "why_it_matters": "Overrides Illinois choice-of-law for MD franchise law claims.", "source_pages": [384, 88]},
+    {"state": "Maryland", "affected_family": "statute_of_limitations", "override_summary": "Claims under Maryland Franchise Registration and Disclosure Law must be brought within 3 years after grant of franchise.", "why_it_matters": "Establishes specific deadline for MD franchise law claims.", "source_pages": [384]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days' notice of termination (with 60 days to cure). 180 days' notice for non-renewal. Per MN Stat. 80C.14.", "why_it_matters": "Significantly extends notice and cure periods for Minnesota franchisees beyond the Franchise Agreement's terms.", "source_pages": [385, 89]},
+    {"state": "Minnesota", "affected_family": "transfer", "override_summary": "Consent to transfer will not be unreasonably withheld.", "why_it_matters": "Provides Minnesota franchisees stronger transfer protections than the base agreement.", "source_pages": [385, 89]},
+    {"state": "Minnesota", "affected_family": "anti_waiver", "override_summary": "Nothing in Franchise Agreement or FDD shall abrogate or reduce any MN Chapter 80C rights.", "why_it_matters": "Broad protection preserving all Minnesota franchise law rights.", "source_pages": [385, 89]},
+    {"state": "Minnesota", "affected_family": "trademark_protection", "override_summary": "McDonald's protects franchisees against claims of infringement or unfair competition from authorized use of marks.", "why_it_matters": "Adds affirmative trademark protection obligation not in base agreement.", "source_pages": [384, 89]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Post-term noncompete covenants generally considered unenforceable in North Dakota. McDonald's will seek to enforce to extent allowed.", "why_it_matters": "North Dakota franchisees may not be bound by the 18-month/10-mile noncompete.", "source_pages": [385, 89]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "North Dakota law governs claims arising under North Dakota Franchise Investment Law.", "why_it_matters": "Overrides Illinois choice-of-law for ND franchise claims.", "source_pages": [385, 89]},
+    {"state": "Washington", "affected_family": "general_override", "override_summary": "Washington Franchise Investment Protection Act prevails over inconsistent FDD/agreement provisions.", "why_it_matters": "Broad protection for Washington franchisees — state law trumps contract terms.", "source_pages": [385, 89, 90]},
+    {"state": "Washington", "affected_family": "anti_waiver", "override_summary": "Release or waiver cannot include rights under the Act except in negotiated settlement with independent counsel.", "why_it_matters": "Strong waiver protection for Washington franchisees.", "source_pages": [89, 90]},
+    {"state": "Washington", "affected_family": "no_poach", "override_summary": "Assurance of Discontinuance (AOD) with WA Attorney General: McDonald's agreed to remove no-poach employee restrictions and not enforce existing ones in Washington.", "why_it_matters": "Washington franchisees and their employees are free from no-poach restrictions that may still apply in other states.", "source_pages": [385]}
+  ],
+  "summary_table": {
+    "override_families": ["anti_waiver", "forum_selection", "governing_law", "general_release", "termination", "transfer", "noncompete", "no_poach", "labor_compliance", "trademark_protection"],
+    "states_affected": {
+      "anti_waiver": ["Hawaii", "Maryland", "Minnesota", "Washington"],
+      "forum_selection": ["Maryland"],
+      "governing_law": ["Maryland", "North Dakota"],
+      "general_release": ["Maryland"],
+      "termination": ["Maryland", "Minnesota"],
+      "transfer": ["Minnesota"],
+      "noncompete": ["North Dakota"],
+      "no_poach": ["Washington"],
+      "labor_compliance": ["California"],
+      "trademark_protection": ["Minnesota"]
+    }
+  }
+}

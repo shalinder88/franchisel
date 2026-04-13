@@ -1,0 +1,284 @@
+{
+  "extraction_date": "2026-04-09",
+  "pipeline_version": "automation_v1",
+  "brand": "McDonald's",
+  "fdd_id": "638437-2025",
+  "franchisor_legal_name": "McDonald's USA, LLC",
+  "franchisor_state": "Delaware",
+  "franchisor_address": "110 N. Carpenter Street, Chicago, IL 60607",
+  "parent_company": "McDonald's Corporation",
+  "issuance_date": "2025-05-01",
+  "amendment_date": "2026-02-01",
+  "state_filed": "Wisconsin",
+  "business_type": "Quick service restaurant, limited menu, value-priced foods",
+  "franchise_since": 1955,
+  "initial_franchise_fee": {
+    "traditional": 45000,
+    "sto_str": 22500,
+    "satellite": 500,
+    "satellite_walmart": 0,
+    "bfl": 45000,
+    "source_section": "Item 5",
+    "source_pages": [18],
+    "confidence": "high"
+  },
+  "royalty_rate": {
+    "new_post_2024": "5% of Gross Sales",
+    "legacy": "4% of Gross Sales",
+    "note": "5% for new restaurants, McOpCo sales, ROFR resales post-Jan 1 2024. 4% continues for family transfers, new terms on existing, franchisee sales, rebuilds.",
+    "source_section": "Item 6",
+    "source_pages": [18, 21],
+    "confidence": "high"
+  },
+  "advertising_fee": {
+    "minimum": "4% of Gross Sales",
+    "opnad_rate": "2.25% of sales",
+    "payable_to": "Not McDonald's — OPNAD and local cooperatives",
+    "source_section": "Item 6",
+    "source_pages": [19, 31, 32],
+    "confidence": "high"
+  },
+  "rent_structure": {
+    "new_traditional": {
+      "percentage_rent_range": "6% to 23% of Gross Sales",
+      "minimum_year_8": "11.50%",
+      "max_increase_over_term": "3.50% from year-1 baseline",
+      "base_rent": "Based on McDonald's investment, varies",
+      "pass_thru_rent": "For leased locations, rent escalations passed through"
+    },
+    "effective_rent_range_2024": "0.00% to 33.33%",
+    "source_section": "Item 6",
+    "source_pages": [18, 21, 22, 23],
+    "confidence": "high"
+  },
+  "technology_fees_annual_aggregate": {
+    "estimated_mandatory": 10400,
+    "estimated_with_optional": 11100,
+    "source_section": "Item 6",
+    "source_pages": [19, 20, 21],
+    "confidence": "medium"
+  },
+  "total_investment": {
+    "traditional_low": 1471000,
+    "traditional_high": 2728000,
+    "sto_str_low": 1014500,
+    "sto_str_high": 1793500,
+    "satellite_low": 525000,
+    "satellite_high": 1193500,
+    "source_section": "Item 7",
+    "source_pages": [25, 26],
+    "confidence": "high"
+  },
+  "term": {
+    "traditional": "20 years",
+    "sto_str": "10 years",
+    "bfl": "3 years",
+    "satellite": "varies",
+    "source_section": "Item 17",
+    "source_pages": [40],
+    "confidence": "high"
+  },
+  "renewal": {
+    "right_to_renew": false,
+    "mechanism": "Discretionary new term at McDonald's sole discretion via New Term Policy (Exhibit K). Applied in year 16-17. Not a contract right.",
+    "new_term_policy_effective": "January 1, 2025",
+    "source_section": "Item 17, Exhibit K",
+    "source_pages": [40, 191, 192],
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": "No involvement in competing or similar restaurant business",
+    "post_term_duration": "18 months",
+    "post_term_radius": "10 miles",
+    "exception": "<2% ownership in publicly traded company",
+    "state_override_north_dakota": "Generally unenforceable per ND addendum",
+    "source_section": "Item 17, Franchise Agreement Section 11",
+    "source_pages": [41, 78],
+    "confidence": "high"
+  },
+  "territory": {
+    "exclusive": false,
+    "protected": false,
+    "description": "No exclusive territory. McDonald's may establish competing outlets. Reserves right to all channels of distribution.",
+    "source_section": "Item 12",
+    "source_pages": [37],
+    "confidence": "high"
+  },
+  "transfer": {
+    "requires_consent": true,
+    "rofr": true,
+    "rofr_period_days": 10,
+    "royalty_adjusts_on_transfer": true,
+    "original_remains_liable": true,
+    "source_section": "Item 17, FA Section 15",
+    "source_pages": [41, 80, 81],
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "arbitration_required": false,
+    "mediation_required": false,
+    "governing_law": "Illinois",
+    "choice_of_forum": "Not specified (except state addenda)",
+    "source_section": "Item 17",
+    "source_pages": [41, 42],
+    "confidence": "high"
+  },
+  "financing": {
+    "offered_by_franchisor": false,
+    "guaranteed_loans": true,
+    "lender": "Bank of America, N.A.",
+    "rate": "Term SOFR + 0.10% + 3.00%",
+    "apr_as_of_march_2025": "7.42%",
+    "term_range": "3-5 years, 7-year amortization",
+    "personal_guarantee": true,
+    "spousal_guarantee": true,
+    "jury_waiver": true,
+    "cross_default": true,
+    "guarantee_fee": "1.50% of average outstanding balance",
+    "source_section": "Item 10",
+    "source_pages": [30],
+    "confidence": "high"
+  },
+  "training": {
+    "program_name": "Candidate Development Program",
+    "duration": "6 months to 2 years",
+    "key_facility": "Hamburger University, Chicago, IL",
+    "leading_great_restaurants_class": "32 hours / 4 days at HU",
+    "no_compensation_during_training": true,
+    "must_complete_before_signing": true,
+    "head_of_training": "Bethany Tate Cornell, SVP/Chief Learning & Development Officer (since Nov 2020)",
+    "source_section": "Item 11",
+    "source_pages": [34, 35, 36],
+    "confidence": "high"
+  },
+  "item19": {
+    "fpr_provided": true,
+    "population_all_traditional": 12572,
+    "average_sales_all": 4002000,
+    "median_sales_all": 3838000,
+    "sales_range_low": 914000,
+    "sales_range_high": 19680000,
+    "population_franchised": 12023,
+    "average_sales_franchised": 3966000,
+    "median_sales_franchised": 3797000,
+    "population_mcopco": 549,
+    "average_sales_mcopco": 4793000,
+    "median_sales_mcopco": 4612000,
+    "pro_forma_population": 11332,
+    "pro_forma_tiers": [
+      {"tier": "$3M", "oiboc": 734000, "oiboc_pct": "24.5%", "pct_above": "76%"},
+      {"tier": "$3.2M", "oiboc": 812000, "oiboc_pct": "25.4%", "pct_above": "69%"},
+      {"tier": "$3.4M", "oiboc": 879000, "oiboc_pct": "25.9%", "pct_above": "62%"}
+    ],
+    "oiboc_excludes": ["rent", "royalty", "D&A", "interest", "income_taxes"],
+    "cohort_royalty_rate": 0.04,
+    "current_new_franchisee_royalty_rate": 0.05,
+    "cohort_comparability_warning": true,
+    "substantiation_available": true,
+    "source_section": "Item 19",
+    "source_pages": [43, 44, 45],
+    "confidence": "high"
+  },
+  "item20": {
+    "systemwide_end_2024": 13559,
+    "franchised_end_2024": 12887,
+    "company_owned_end_2024": 672,
+    "net_change_2024": 102,
+    "transfers_2024": 843,
+    "terminations_2024": 29,
+    "non_renewals_2024": 15,
+    "projected_openings_franchised": 181,
+    "projected_openings_company": 14,
+    "gag_clause_flag": true,
+    "gag_clause_quote": "current and former franchisees sign provisions restricting their ability to speak openly about their experience",
+    "gag_clause_source_pages": [55],
+    "exhibit_s_count": 113,
+    "franchise_organizations": ["NFLA", "AMOA", "MHOA", "NBMOA", "WON", "OPN", "NOA (independent)"],
+    "source_section": "Item 20",
+    "source_pages": [45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56],
+    "confidence": "high"
+  },
+  "item21": {
+    "auditor": "Ernst & Young LLP",
+    "opinion_type": "unqualified",
+    "opinion_date": "2025-03-14",
+    "going_concern": false,
+    "total_revenue_2024": 10630.8,
+    "net_income_2024": 3461.6,
+    "total_assets_2024": 22195.3,
+    "total_equity_2024": 10222.0,
+    "total_liabilities_2024": 11973.3,
+    "cash_2024": 34.6,
+    "net_ppe_2024": 13080.4,
+    "goodwill_2024": 1498.7,
+    "lease_rou_2024": 5841.4,
+    "due_to_parent_current_2024": 3310.6,
+    "long_term_lease_liability_2024": 5849.0,
+    "deferred_income_taxes_2024": 1416.7,
+    "dividends_to_parent_2024": 3461.6,
+    "royalty_to_parent_2024": 1069.4,
+    "intercompany_payable_2024": 2400.0,
+    "subsequent_event": "$2.4B intercompany payable converted to equity February 17, 2025",
+    "units": "millions",
+    "source_section": "Item 21, Exhibit A",
+    "source_pages": [56, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72],
+    "confidence": "high"
+  },
+  "state_addenda": {
+    "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota", "Washington"],
+    "source_section": "Exhibit T",
+    "source_pages": [383, 384, 385, 386, 387],
+    "confidence": "high"
+  },
+  "litigation": {
+    "pending_cases_count": 7,
+    "concluded_cases_count": 12,
+    "joint_employer_suits": "numerous",
+    "largest_concluded_settlement": {"amount": 33500000, "case": "Washington v. McDonald's", "type": "racial discrimination"},
+    "source_section": "Item 3",
+    "source_pages": [12, 13, 14, 15, 16, 17],
+    "confidence": "high"
+  },
+  "special_risks": [
+    {
+      "risk": "Out-of-state dispute resolution (Illinois venue)",
+      "source_pages": [4]
+    }
+  ],
+  "item2_leadership_roster": [
+    {"name": "Joe Erlinger", "role": "Director and President", "start_date": "2002-04-22", "source_pages": [10]},
+    {"name": "Ian Borden", "role": "Director", "start_date": "1994-07-25", "source_pages": [10]},
+    {"name": "Angela K. Steele", "role": "Director", "start_date": "2011-05-09", "source_pages": [10]},
+    {"name": "Mason Smoot", "role": "U.S. Chief Restaurant Operations Officer", "start_date": "1994-03-01", "source_pages": [10]},
+    {"name": "Tom Dillon", "role": "U.S. Chief Finance Officer", "start_date": "2009-02-02", "source_pages": [10]},
+    {"name": "Myra Doria", "role": "U.S. President National Field Operations", "start_date": "1996-01-01", "source_pages": [10]},
+    {"name": "Brad Bogan", "role": "U.S. VP Franchising Strategy", "start_date": "2019-06-17", "source_pages": [10]}
+  ],
+  "unresolveds": [
+    {
+      "id": "UNR-001",
+      "description": "Item 19 pro forma uses 4% royalty but current new franchisees pay 5%. Dollar impact at each sales tier not quantified.",
+      "severity": "high",
+      "source": "Item 19, Item 6"
+    },
+    {
+      "id": "UNR-002",
+      "description": "Franchise Agreement Exhibits C (Satellite) and D (Walmart) not clause-walked. Variant economics and terms may differ materially from Traditional.",
+      "severity": "medium",
+      "source": "Exhibits C, D"
+    },
+    {
+      "id": "UNR-003",
+      "description": "Operator's Lease (Exhibit G, 33 pages) not directly clause-walked. Rent calculation mechanics, maintenance obligations, default triggers only partially recovered via Item 6/17.",
+      "severity": "medium",
+      "source": "Exhibit G"
+    },
+    {
+      "id": "UNR-004",
+      "description": "Loan Documents (Exhibit N, 35 pages) not directly clause-walked. Cross-default, collateral, prepayment terms only partially recovered via Item 10.",
+      "severity": "low",
+      "source": "Exhibit N"
+    }
+  ],
+  "contradictions": []
+}
