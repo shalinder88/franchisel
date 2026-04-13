@@ -1,0 +1,154 @@
+{
+  "extraction_date": "2026-04-09",
+  "brand": "Anago Cleaning Systems",
+  "exhibits": [
+    {
+      "letter": "A",
+      "name": "Anago Subfranchise Rights Agreement",
+      "category": "franchise_agreement",
+      "priority": "critical",
+      "page_range_pdf": [85, 241],
+      "page_count_approx": 157,
+      "clause_walk_status": "partial",
+      "material_clause_count": 22,
+      "operative_terms_extracted": [
+        "term_length", "renewal_conditions", "termination_for_cause", "non_curable_defaults",
+        "curable_defaults", "transfer_conditions", "right_of_first_refusal", "death_disability",
+        "non_competition_during_term", "non_competition_post_term", "dispute_resolution",
+        "choice_of_law", "choice_of_forum", "indemnification", "modification", "integration",
+        "franchisor_assignment", "area_definition", "royalty_fee", "administrative_support_fee",
+        "billing_collection", "obligations_on_termination"
+      ],
+      "why_not_complete": "Key operative terms extracted via Item 17 table (22 provisions). Full clause-by-clause walk of all 16 articles + 8 sub-exhibits not completed in A1 due to length (157 pages). Sub-exhibits include Unit Franchise Agreement, Personal Guaranty, Security Agreement, Collateral Assignments. Pages 85-241.",
+      "sub_exhibits": [
+        {"number": "I", "name": "Form of Anago Unit Franchise Agreement", "pages_approx": [149, 214]},
+        {"number": "II", "name": "List of Computer Hardware", "pages_approx": [215, 215]},
+        {"number": "III", "name": "Personal Guaranty", "pages_approx": [216, 217]},
+        {"number": "IV", "name": "Assignment & Assumption Agreement", "pages_approx": [218, 219]},
+        {"number": "V", "name": "Collateral Assignment of Client Accounts", "pages_approx": [220, 222]},
+        {"number": "VI", "name": "Conditional Assignment of Telephone Numbers", "pages_approx": [223, 224]},
+        {"number": "VII", "name": "Security Agreement", "pages_approx": [238, 241]},
+        {"number": "VIII", "name": "Collateral Assignment of Lease Agreement", "pages_approx": [225, 237]}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "State Administrators/Agents for Service of Process",
+      "category": "regulatory",
+      "priority": "low",
+      "page_range_pdf": [242, 244],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Standard regulatory listing; no operative terms to extract."
+    },
+    {
+      "letter": "C",
+      "name": "Deposit Agreement",
+      "category": "financial_agreement",
+      "priority": "medium",
+      "page_range_pdf": [245, 246],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Governs pre-agreement deposit and refund conditions. Not clause-walked in A1. Pages 245-246."
+    },
+    {
+      "letter": "D",
+      "name": "NBDS License Agreement",
+      "category": "technology_agreement",
+      "priority": "medium",
+      "page_range_pdf": [247, 254],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "8-page software license for proprietary NBDS system. Key terms partially captured in Item 11 (fee: $550/mo, franchisor access to data). Full clause walk not completed. Pages 247-254."
+    },
+    {
+      "letter": "E",
+      "name": "List of Franchisor's Subfranchises",
+      "category": "franchisee_list",
+      "priority": "critical",
+      "page_range_pdf": [255, 262],
+      "clause_walk_status": "complete",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["current_domestic_subfranchisors", "signed_not_operational", "former_subfranchisors", "international_subfranchisors"],
+      "why_not_complete": null,
+      "franchisee_count": {
+        "current_domestic": 44,
+        "signed_not_operational": 1,
+        "former_domestic": 4,
+        "current_international": 3,
+        "former_international": 0
+      }
+    },
+    {
+      "letter": "F",
+      "name": "Financial Statements and Guaranty of Performance",
+      "category": "financial_statements",
+      "priority": "critical",
+      "page_range_pdf": [67, 83],
+      "clause_walk_status": "complete",
+      "material_clause_count": 16,
+      "operative_terms_extracted": [
+        "auditor_opinion", "balance_sheet", "income_statement", "cash_flows",
+        "stockholders_equity", "note_a_consolidation", "note_b_ebitda",
+        "note_c_notes_receivable", "note_d_investments", "note_e_intangible",
+        "note_f_property_equipment", "note_g_line_of_credit", "note_h_deferred_comp",
+        "note_i_common_stock", "note_j_treasury_stock", "note_k_lease",
+        "note_l_income_taxes", "note_m_royalties", "note_n_sale_ehlb",
+        "note_o_concentrations", "note_p_subsequent_events"
+      ],
+      "why_not_complete": null
+    },
+    {
+      "letter": "G",
+      "name": "Table of Contents for Anago Manuals",
+      "category": "operations",
+      "priority": "low",
+      "page_range_pdf": [263, 274],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["manual_page_count"],
+      "why_not_complete": "TOC listing only; 811 total manual pages. No operative terms to extract."
+    },
+    {
+      "letter": "H",
+      "name": "State Specific Riders",
+      "category": "state_addenda",
+      "priority": "high",
+      "page_range_pdf": [275, 298],
+      "clause_walk_status": "complete",
+      "material_clause_count": 8,
+      "operative_terms_extracted": [
+        "california_overrides", "illinois_overrides", "maryland_overrides",
+        "michigan_overrides", "minnesota_overrides", "new_york_overrides",
+        "virginia_overrides", "washington_overrides"
+      ],
+      "why_not_complete": null,
+      "states_with_addenda": ["CA", "IL", "MD", "MI", "MN", "NY", "VA", "WA"]
+    },
+    {
+      "letter": "I",
+      "name": "State Riders (Receipts)",
+      "category": "regulatory",
+      "priority": "low",
+      "page_range_pdf": [299, 300],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Receipt forms. No operative terms."
+    },
+    {
+      "letter": "J",
+      "name": "Acknowledgment of Receipt",
+      "category": "administrative",
+      "priority": "low",
+      "page_range_pdf": [84, 84],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Standard receipt acknowledgment form."
+    }
+  ]
+}

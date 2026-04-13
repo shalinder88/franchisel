@@ -1,0 +1,59 @@
+{
+  "depth_block": "key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "Exhibit A — Subfranchise Rights Agreement",
+      "page_range": [85, 148],
+      "clause_walk_status": "complete",
+      "clause_count": 28,
+      "detail": "Full clause walk completed in A2 Depth Pass 2. See RT_depth_contract_burdens.json for all 28 operative clauses including 7 distinctive/unusual provisions."
+    },
+    {
+      "exhibit": "Exhibit H — State Specific Riders",
+      "page_range": [275, 298],
+      "clause_walk_status": "complete",
+      "clause_count": 23,
+      "detail": "Full structured override extraction. See RT_depth_state_addenda_promotion.json for 23 override entries across 8 states."
+    },
+    {
+      "exhibit": "Exhibit E — Franchisee List",
+      "page_range": [255, 262],
+      "clause_walk_status": "complete",
+      "clause_count": 0,
+      "detail": "Full roster extracted in A1: 44 current domestic + 1 signed not operational + 4 former + 3 international."
+    },
+    {
+      "exhibit": "Exhibit F — Financial Statements",
+      "page_range": [67, 83],
+      "clause_walk_status": "complete",
+      "clause_count": 0,
+      "detail": "Full financial statement walk including all 16 notes. See RT_depth_financial_notes.json."
+    }
+  ],
+  "exhibits_deferred": [
+    {
+      "exhibit": "Exhibit A Sub-exhibit I — Unit Franchise Agreement",
+      "page_range": [149, 214],
+      "clause_walk_status": "deferred",
+      "why_deferred": "65-page agreement governing the downstream Unit Franchise relationship (between subfranchisor and unit franchisee). Material for understanding the subfranchisor's obligations to its downstream franchisees but not directly governing the buyer's relationship with AFI. Key operative terms for the buyer are in the Subfranchise Rights Agreement.",
+      "what_recovered_elsewhere": "Key billing/collection mechanics from the Unit Franchise Agreement are referenced in Item 11 and Article 2.4 of the Subfranchise Rights Agreement. Franchisor's third-party beneficiary status captured from Section 2.5(d).",
+      "what_remains_missing": "Full unit franchise fee structure, unit-level obligations, unit-level termination triggers, unit-level territory provisions"
+    },
+    {
+      "exhibit": "Exhibit D — NBDS License Agreement",
+      "page_range": [247, 254],
+      "clause_walk_status": "deferred",
+      "why_deferred": "8-page software license. Fee and access terms captured via Item 11 and Item 6. Full clause walk would add data ownership, modification rights, and termination provisions.",
+      "what_recovered_elsewhere": "Fee: $550/month. Franchisor has full electronic access to all NBDS data. NBDS is sole-source. Failure to use NBDS = material breach (Section 2.3(b) of Subfranchise Rights Agreement).",
+      "what_remains_missing": "Data portability on termination, IP ownership of unit-level data, specific termination/modification provisions"
+    },
+    {
+      "exhibit": "Exhibit C — Deposit Agreement",
+      "page_range": [245, 246],
+      "clause_walk_status": "deferred",
+      "why_deferred": "2-page pre-agreement deposit mechanics. Key refund terms summarized in Item 5. Low priority.",
+      "what_recovered_elsewhere": "Refund within 30 days if franchise not offered or prospect doesn't execute.",
+      "what_remains_missing": "Specific deduction mechanics from deposit"
+    }
+  ]
+}
