@@ -282,6 +282,44 @@ disclosed. Supporting evidence metadata must include:
 This field must appear in `05_canonical.json`, `09_final_canonical.json`,
 and in the final report Section G — Item 20.
 
+### Rule 13 — Canonical decomposition
+
+`05_canonical.json` and `09_final_canonical.json` must have a SEPARATE
+top-level key for EVERY FDD item that is directly surfaced (Items 1–23).
+Do NOT lump multiple items under a single key. Specifically:
+
+  - Item 6: use separate keys for `item6_royalty`, `item6_rent`,
+    `item6_advertising`, and `item6_technology_fees` (not one merged
+    `item6_fees` key).
+  - Item 17: use separate keys for `item17_renewal`, `item17_termination`,
+    `item17_transfer`, `item17_noncompete`, `item17_dispute_resolution`,
+    and `item17_death_disability` (not one merged `item17_contract` key).
+  - Items 9–16: each item gets its own top-level key
+    (`item9_obligations`, `item10_financing`, `item11_training`,
+    `item12_territory`, `item13_trademarks`, `item14_patents`,
+    `item15_participation`, `item16_product_restrictions`).
+
+The canonical MUST also include these families as top-level keys when
+the source material supports them:
+  - `unresolveds`  — array extracted from 06_coverage_audit.md / reader
+    report. Every unresolved needs id, description, severity, source.
+  - `contradictions` — array of any identified discrepancies.
+  - `special_risks` — array from the Special Risks page.
+  - `item22_contracts_listed` — array of exhibit letters referenced.
+
+Target: at least 40 top-level keys for any FDD of 200+ pages.
+Fewer than 25 top-level keys is a defect.
+
+### Rule 14 — Enriched v2 completeness
+
+`12_canonical_enriched_v2.json` must be a COMPLETE, self-contained document.
+It must contain ALL fields from `09_final_canonical.json` PLUS all enrichment
+layers. It must NOT use a `_base` reference to another file. A downstream
+consumer must be able to read v2 alone without needing any other file.
+
+`11_canonical_enriched.json` (v1) must likewise be self-contained, not a
+delta. It must contain all canonical fields plus its own enrichment layers.
+
 ### OUTPUT DEPTH FLOOR — REQUIRED
 
 These rules set a minimum depth for key output files. They do not change
@@ -298,6 +336,19 @@ structure.
      Item 7 investment components, key fee stacks from Item 6, Item 19 tier
      summaries, Item 20 totals).
    - Do not optimize for compactness.
+   - Section minimums (non-negotiable for FDDs of 200+ pages):
+     - Section B (Fees/Investment): min 80 lines — rebuild fee tables inline,
+       discuss each fee component as prose paragraphs
+     - Section C (Supplier/Operations): min 60 lines — training detail,
+       technology stack, supplier approval process
+     - Section E (Contract): min 50 lines — clause-by-clause termination
+       triggers, transfer conditions, noncompete scope
+     - Section G (Item 20): min 50 lines — trajectory narrative, transfer
+       trends, state-level highlights
+     - Section H (Item 21): min 70 lines — full financial statement walk
+       as narrative paragraphs, not just tables
+     - Section I (State Addenda): min 40 lines — each state with
+       override detail and why-it-matters
 
 2. `11_canonical_enriched.json`
    - Must not be a copy of `09_final_canonical.json`.
@@ -339,6 +390,13 @@ structure.
    - Do not leave known facts trapped only in the reader report or final report.
    - If a fact is extracted and supported, it should usually exist in canonical
      form.
+   - After writing `02_reader_report.md`, re-read it top to bottom. For every
+     structured fact (numbers, dates, names, fees, terms, counts, percentages),
+     verify it exists in the canonical JSON. If not, add it.
+   - Target: canonical should be at least 20 KB for a 200+ page FDD, at least
+     30 KB for a 300+ page FDD. Below these thresholds is a depth defect.
+   - The full Item 2 leadership roster must appear as a structured array in
+     canonical — every officer/director, not just the first 5–7.
 
 5. `RT_depth_item21_notes.json`
    - Must not be a pointer or stub file.

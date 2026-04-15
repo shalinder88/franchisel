@@ -1,0 +1,325 @@
+{
+  "_enrichment_version": "v2",
+  "_base": "11_canonical_enriched.json",
+  "_enrichment_layers": ["item1", "item3_litigation", "item6_fee_detail", "item7_total_investment", "item8_supplier_restrictions", "item9_obligations", "item10_financing", "item11_training", "item12_territory", "item17_termination", "item17_transfer", "item19_chart_detail", "item20_yearly_activity", "item21_structural_facts", "item21_financial_structure_detail", "item21_note_families", "contract_burden_depth"],
+
+  "item1": {
+    "franchisor": "McDonald's USA, LLC",
+    "entity_type": "Delaware LLC",
+    "formed": 2004,
+    "predecessor": "McDonald's Corporation",
+    "predecessor_franchising_since": 1955,
+    "asset_transfer_year": 2005,
+    "parent": "McDonald's Corporation",
+    "parent_entity_type": "Delaware corporation",
+    "principal_address": "110 N. Carpenter Street, Chicago, IL 60607",
+    "restaurant_types": {
+      "traditional": {"term_years": 20, "menu": "full", "pct_of_system": 95},
+      "satellite": {"term_years": "varies", "menu": "scaled-down", "locations": "strip centers, airports, universities, shopping malls, hospitals"},
+      "sto": {"term_years": 10, "menu": "full", "description": "fuel station/convenience store facilities"},
+      "str": {"term_years": 10, "menu": "full", "description": "small retail center in rural communities"},
+      "bfl": {"term_years": 3, "description": "business facilities lease with purchase option"}
+    },
+    "franchise_agreement_exhibits": ["B (Traditional)", "C (Satellite)", "D (Walmart)"],
+    "international_affiliates": "Disclosed in Exhibit Q; offer McDonald's franchises outside US"
+  },
+
+  "item3_litigation": {
+    "pending_count": 8,
+    "concluded_count": 12,
+    "pending_cases": [
+      {"name": "Deslandes v. McDonald's", "case_no": "1:17-cv-04857", "court": "N.D. Illinois", "filed": "2017-06-28", "type": "antitrust/no-poach", "status": "Remanded after 7th Circuit reversal; SCOTUS denied cert", "plaintiff": "Former franchisee employee"},
+      {"name": "Turner v. McDonald's", "case_no": "1:19-cv-05524", "court": "N.D. Illinois", "filed": "2019-08-15", "type": "antitrust/no-poach", "status": "Remanded after 7th Circuit reversal; SCOTUS denied cert", "plaintiff": "Former employee"},
+      {"name": "Crawford v. McDonald's", "case_no": "1:20-cv-05132", "court": "N.D. Illinois", "filed": "2020-08-31", "type": "race discrimination", "status": "Multiple amended complaints; motion to dismiss pending", "plaintiffs": 77},
+      {"name": "Kytch v. McDonald's Corp", "case_no": "1:22-cv-00279", "court": "N.D. California (transferred)", "filed": "2022-03-01", "type": "false advertising/trade libel", "status": "Partially dismissed; discovery ongoing"},
+      {"name": "Michell v. McDonald's", "case_no": "1:24-cv-03442", "court": "E.D. New York", "filed": "2024-05-09", "type": "discrimination/franchise dispute", "status": "Partially dismissed; counterclaim filed"},
+      {"name": "Williams v. McDonald's", "case_no": "1:24-cv-11275", "court": "N.D. Illinois", "filed": "2024-10-31", "type": "E. coli class action", "status": "Motion to dismiss pending"},
+      {"name": "Le v. McDonald's Corp", "case_no": "1:2-cv-15609", "court": "N.D. Illinois", "filed": "2025-12-23", "type": "deceptive marketing (McRib)", "status": "Newly filed"},
+      {"name": "Joint employer lawsuits (multiple)", "type": "labor/employment", "status": "Ongoing; McDonald's disputes joint employer allegations"}
+    ],
+    "largest_settlements": [
+      {"case": "Washington v. McDonald's", "amount": 33500000, "year": "concluded", "detail": "13 franchises purchased; race discrimination"},
+      {"case": "Lentini v. McDonald's", "amount": 22000000, "detail": "6 franchises; age discrimination"},
+      {"case": "AA&S v. McDonald's (Puerto Rico)", "amount": 15780655, "detail": "23 franchises; Law 75 dispute"},
+      {"case": "Tavarua v. McDonald's", "amount": 15600000, "detail": "8 franchises; ROFR dispute"},
+      {"case": "Byrd v. McDonald's", "amount": 6500000, "detail": "4 franchises; race discrimination"},
+      {"case": "Quijano (Puerto Rico)", "amount": 6319344, "detail": "10 franchises; Law 75 dispute"},
+      {"case": "Ochoa v. McDonald's", "amount": 3750000, "detail": "Labor settlement; joint employer"},
+      {"case": "Bramante v. McDonald's Canada", "amount": 1440000, "currency": "CAD", "detail": "Happy Meal toys; consumer class action"}
+    ]
+  },
+
+  "item6_fee_detail": {
+    "royalty": {
+      "rate_new": 0.05,
+      "rate_legacy": 0.04,
+      "transition_date": "2024-01-01",
+      "new_rate_triggers": ["new restaurant", "McOpCo sale", "ROFR exercise"],
+      "legacy_rate_triggers": ["family transaction", "new term on existing", "franchisee-to-franchisee sale", "rebuild"]
+    },
+    "rent_traditional": {
+      "components": ["base_rent", "pass_thru_rent", "percentage_rent"],
+      "percentage_rent_range": {"low": 0.06, "high": 0.23},
+      "percentage_rent_minimum_year_8": 0.115,
+      "max_increase_over_term": 0.035,
+      "new_term_policy": "Not lower than previous term; may increase to 8.50% minimum"
+    },
+    "rent_sto_str": {
+      "percentage_rent_tiers": [
+        {"development_cost_low": 0, "development_cost_high": 640000, "sto_pct": 9.5, "str_pct": 9.0},
+        {"development_cost_low": 640001, "development_cost_high": 670000, "sto_pct": 9.75, "str_pct": 9.25},
+        {"development_cost_low": 670001, "development_cost_high": 700000, "sto_pct": 10.0, "str_pct": 9.5},
+        {"development_cost_low": 700001, "development_cost_high": 730000, "sto_pct": 10.25, "str_pct": 9.75},
+        {"development_cost_low": 730001, "development_cost_high": 760000, "sto_pct": 10.5, "str_pct": 10.0},
+        {"development_cost_low": 760001, "development_cost_high": 820000, "sto_pct": 10.75, "str_pct": 10.25},
+        {"development_cost_low": 820001, "development_cost_high": 880000, "sto_pct": 11.0, "str_pct": 10.5},
+        {"development_cost_low": 880001, "development_cost_high": 940000, "sto_pct": 11.25, "str_pct": 10.75},
+        {"development_cost_low": 940001, "development_cost_high": 1000000, "sto_pct": 11.5, "str_pct": 11.0},
+        {"development_cost_low": 1000001, "development_cost_high": null, "note": "Case by case"}
+      ]
+    },
+    "co_investment": {
+      "available": true,
+      "increment": 0.0025,
+      "cost_per_quarter": "~$30,000+",
+      "option_1_floor": 0.115,
+      "option_2_floor": 0.125,
+      "option_2_refund": "Partial refund if year-3 sales below year-1 projection"
+    },
+    "technology_fees_mandatory_annual": {
+      "sesame_pos": 1133,
+      "global_mobile_app": 664,
+      "mcdelivery_pos": 620,
+      "self_ordering_kiosk": 558,
+      "eproduction": 47,
+      "back_office": 545,
+      "payments_fraud": 740,
+      "employee_engagement": 385,
+      "deployment_otp": 2529,
+      "network_management": 1134,
+      "hardware_data": 951,
+      "rfm": 690,
+      "microsoft_license": 707,
+      "grnt": 185,
+      "edge": 435,
+      "store_mail": 56,
+      "estimated_total_mandatory": 11379
+    }
+  },
+
+  "item7_total_investment": {
+    "traditional": {"low": 1471000, "high": 2728000},
+    "sto_str": {"low": 1014500, "high": 1793500},
+    "satellite": {"low": 525000, "high": 1193500},
+    "store_systems_included": {"low": 150000, "high": 250000},
+    "mcopco_overages_2024": {
+      "count": 9,
+      "out_of": 31,
+      "amounts": [65593, 168053, 388069, 532141, 582364, 1373068, 1459004, 1559604, 2035816]
+    }
+  },
+
+  "item8_supplier_restrictions": {
+    "establishment_required_pct": {"low": 90, "high": 95},
+    "operating_required_pct": {"low": 55, "high": 65},
+    "rebates_2024": 39008767,
+    "franchisee_revenue_2024": 7210000000,
+    "total_revenue_2024": 10630000000,
+    "franchisee_revenue_pct": 67.8,
+    "approval_criteria": ["manufacturing_capability", "confidentiality", "production_delivery", "ownership_integrity", "financial_soundness", "legal_compliance"]
+  },
+
+  "item9_obligations": {
+    "obligation_count": 24,
+    "key_obligations": {
+      "site_selection": "McDonald's selects; franchisee does not select or approve",
+      "training": "6 months to 2 years; must complete before signing FA",
+      "operations_manual": "Must follow all standards; manual subject to change",
+      "reporting": "Monthly financial statements via FFS; transaction data transmitted to McDonald's"
+    }
+  },
+
+  "item10_financing": {
+    "direct_financing": false,
+    "guaranteed_loans": {
+      "lender": "Bank of America, N.A.",
+      "guarantor": "McDonald's Corporation",
+      "guarantee_fee": "1.50% of average outstanding balance",
+      "interest_rate": "Term SOFR + 0.10% + 3.00%",
+      "apr_as_of_march_2025": "7.42%",
+      "term_years": "3 to 5",
+      "amortization_years": 7,
+      "security": "Restaurant equipment, seating, signage, decor, inventory",
+      "personal_guarantee": true,
+      "spouse_guarantee": true,
+      "jury_waiver": true,
+      "default_consequence": "Default under Franchise Agreement",
+      "operator_assistance_program": "Must sign; includes waiver of all claims against McDonald's"
+    }
+  },
+
+  "item11_training": {
+    "program_name": "Candidate Development Program",
+    "duration": "6 months to 2 years",
+    "culminating_course": "Leading Great Restaurants Class (4 days at Hamburger University, Chicago)",
+    "must_complete_before": "Signing Franchise Agreement",
+    "franchisee_bears": "Travel, living, compensation costs",
+    "mcdonalds_bears": "Training center maintenance, staff, materials",
+    "head_of_learning": "Bethany Tate Cornell, SVP and Chief Learning & Development Officer (since Nov 2020)",
+    "computer_systems_cost": "150000-250000",
+    "no_contractual_limits_on_upgrades": true
+  },
+
+  "item12_territory": {
+    "exclusive": false,
+    "protected": false,
+    "franchisor_may_compete": true,
+    "alternative_channels": true,
+    "channel_examples": ["McCafe supermarket", "e-commerce"],
+    "internal_policies_not_contract_rights": true
+  },
+
+  "item17_termination": {
+    "termination_by_franchisor": "with cause only",
+    "non_curable_defaults": [
+      "Failure to maintain restaurant standards",
+      "Bankruptcy",
+      "Non-payment > 30 days",
+      "Judgment > $5,000 outstanding > 30 days",
+      "Loss of possession",
+      "Franchise restriction violation",
+      "Sale of unapproved/non-conforming foods",
+      "Unauthorized transfer",
+      "Denied access",
+      "Unpaid undisputed invoices",
+      "Misrepresentation",
+      "Conduct damaging reputation",
+      "Felony conviction",
+      "Intentional under-reporting of sales",
+      "Repeated breaches"
+    ],
+    "post_termination": "30 days to sell FF&E at FMV; no payment for intangibles; cease all system/mark use"
+  },
+
+  "item17_transfer": {
+    "requires_approval": true,
+    "conditions": [
+      "New franchisee qualifies",
+      "Royalty increases to current rate",
+      "New franchisee assumes full liability",
+      "Original franchisee remains personally liable",
+      "No current breach"
+    ],
+    "rofr": true,
+    "death_disability": "Assign to approved purchaser or qualified family; 18-month training accommodation for spouse"
+  },
+
+  "item21_financial_structure_detail": {
+    "revenue_composition_2024_millions": {
+      "company_restaurant_sales": 3196.9,
+      "franchised_rents": 5170.7,
+      "franchised_royalties": 2014.5,
+      "franchised_initial_fees": 25.4,
+      "other_revenues": 223.3,
+      "total": 10630.8
+    },
+    "cost_structure_2024_millions": {
+      "food_paper": 925.7,
+      "payroll_benefits": 1107.5,
+      "occupancy_other_operating": 746.5,
+      "franchised_occupancy": 1294.1,
+      "sga": 654.2,
+      "other_operating": 7.2,
+      "other_restaurant": 162.6,
+      "royalty_to_parent": 1069.4,
+      "interest": 159.1,
+      "income_taxes": 1044.9
+    },
+    "property_equipment_detail_2024_millions": {
+      "land": 4167.2,
+      "buildings_owned_land": 12096.1,
+      "buildings_leased_land": 5666.7,
+      "equipment_signs_seating": 923.6,
+      "other": 67.5,
+      "total_at_cost": 22921.1,
+      "accumulated_da": 9840.7,
+      "net": 13080.4,
+      "da_expense_2024": 869.7
+    },
+    "lease_portfolio_2024_millions": {
+      "operating_rou": 4821.4,
+      "finance_rou": 1020.0,
+      "total_rou": 5841.4,
+      "operating_liability": 5262.1,
+      "finance_liability": 782.8,
+      "total_liability": 6044.9,
+      "total_future_payments": 9002.2,
+      "imputed_interest": 2957.3,
+      "rent_expense_2024": 593.0,
+      "avg_operating_lease_term_years": 17,
+      "avg_finance_lease_term_years": 28
+    },
+    "franchise_receivables_2024_millions": {
+      "future_minimum_rent_owned": 8349.0,
+      "future_minimum_rent_leased": 5810.0,
+      "total_future_minimum_rent": 14159.0,
+      "net_franchise_pe": 11500,
+      "franchise_land": 3900
+    }
+  },
+
+  "item21_note_families": [
+    {"note": "Nature of Business", "key_facts": ["Wholly-owned sub of McDonald's Corp", "Jan 2005 asset contribution $5.55B", "95% franchised, 5% McOpCo"], "pages": [63]},
+    {"note": "Revenue Recognition", "key_facts": ["Sales: cash basis", "Royalties: % of sales at time of sale", "Rent: minimum straight-line + variable %", "Initial fees: over 20-year term", "Technology: gross basis, principal"], "pages": [63, 64]},
+    {"note": "Property and Equipment", "key_facts": ["At cost $22.9B", "D&A $9.8B", "Net $13.1B", "Buildings up to 40 yrs", "Equipment 3-12 yrs"], "pages": [64, 66]},
+    {"note": "Franchise Arrangements", "key_facts": ["Rents $5.17B", "Royalties $2.01B", "Initial fees $25.4M", "Future min rent $14.2B", "20-year standard term"], "pages": [66, 67]},
+    {"note": "Leasing", "key_facts": ["ROU $5.84B", "Liability $6.04B", "Future payments $9.0B", "17yr avg operating", "28yr avg finance"], "pages": [67, 68]},
+    {"note": "Contingencies", "key_facts": ["No material adverse effect expected"], "pages": [68]},
+    {"note": "Other Operating", "key_facts": ["Restaurant sale gains $46.7M", "Asset dispositions $60.8M", "Net $7.2M"], "pages": [68]},
+    {"note": "Accelerating the Organization", "key_facts": ["$63.6M cumulative restructuring", "$4.4M remaining accrual", "$1.2M in 2024"], "pages": [69]},
+    {"note": "Income Taxes", "key_facts": ["Effective rate 23.2%", "UTB $75.8M", "Deferred tax liability $1,416.7M"], "pages": [70]},
+    {"note": "Employee Benefits", "key_facts": ["401(k) + nonqualified", "Unfunded liability $151.1M", "Total cost $28.6M"], "pages": [71]},
+    {"note": "Related Party", "key_facts": ["2% royalty to parent $1,069.4M", "Dividends $3,461.6M", "Intercompany debt $2.4B at swap+1%", "Interest $159.1M", "Net payable $910.6M", "Admin costs not charged"], "pages": [71]},
+    {"note": "Subsequent Events", "key_facts": ["$2.4B debt converted to equity Feb 17, 2025"], "pages": [72]},
+    {"note": "Goodwill", "key_facts": ["$1,498.7M", "Primarily from franchisee restaurant purchases", "2024: $10M tangible + $110M intangible + $20M goodwill"], "pages": [65]},
+    {"note": "Capitalized Software", "key_facts": ["$71.9M net", "3-10 year useful life"], "pages": [64]}
+  ],
+
+  "contract_burden_depth": {
+    "renewal": {
+      "right_to_renew": false,
+      "new_term_policy": "Discretionary, not a contract right, subject to change",
+      "rent_at_renewal": "Not lower than previous; may increase to 8.50% minimum",
+      "materially_different_risk": true
+    },
+    "non_compete": {
+      "during_term": "No involvement in competing or similar business",
+      "post_term_duration_months": 18,
+      "post_term_radius_miles": 10,
+      "includes_after_assignment": true,
+      "nd_override": "Generally unenforceable in North Dakota"
+    },
+    "transfer": {
+      "approval_required": true,
+      "rofr": true,
+      "personal_liability_continues": true,
+      "royalty_increases_to_current": true
+    },
+    "dispute_resolution": {
+      "arbitration_required": false,
+      "mediation": "Common practice, not required",
+      "governing_law": "Illinois",
+      "venue": "Not specified in FA, but Special Risks page notes Illinois",
+      "state_overrides": {
+        "maryland": "May bring MD Franchise Law claims in MD",
+        "minnesota": "MN law governs MN franchisee rights",
+        "north_dakota": "ND law governs ND Franchise Law claims"
+      }
+    },
+    "gag_clause": {
+      "present": true,
+      "scope": "Current and former franchisees may have signed restricting provisions",
+      "source_pages": [55]
+    }
+  }
+}

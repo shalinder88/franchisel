@@ -1,0 +1,103 @@
+{
+  "depth_pass": "A2_depth_pass_4_state_addenda",
+  "states_with_addenda": ["California", "Maryland", "Minnesota", "North Dakota", "Washington"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "employment_standards",
+      "override_summary": "Fast Food Act (AB 1228) may set health, safety, and employment standards including minimum wages, working hours, working conditions. Franchisor provides no training/assistance/fees related to Act compliance.",
+      "why_it_matters": "California franchisees bear sole responsibility for compliance with potentially higher labor costs under the Fast Food Act. No franchisor support for implementation.",
+      "source_pages": [383]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "Any release required for renewal or transfer will not apply to liability under the Maryland Franchise Registration and Disclosure Law.",
+      "why_it_matters": "Maryland franchisees retain right to pursue claims under state franchise law regardless of general releases signed at renewal or transfer.",
+      "source_pages": [384]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "termination",
+      "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law, but franchisor will enforce to extent enforceable.",
+      "why_it_matters": "Bankruptcy/insolvency termination trigger may be limited by federal bankruptcy protections for Maryland franchisees.",
+      "source_pages": [384]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may bring action in Maryland for claims arising under Maryland Franchise Registration and Disclosure Law.",
+      "why_it_matters": "Maryland franchisees are not forced to litigate Maryland franchise law claims in Illinois.",
+      "source_pages": [384]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "statute_of_limitations",
+      "override_summary": "Claims under Maryland Franchise Registration and Disclosure Law must be brought within 3 years after grant of franchise.",
+      "why_it_matters": "3-year limitations period from franchise grant; shorter than some general statutes.",
+      "source_pages": [384]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination_notice",
+      "override_summary": "Franchisor must give 90 days' notice of termination with 60 days to cure (except in specified cases).",
+      "why_it_matters": "Minnesota franchisees get substantially more termination protection than the general FA provides (which has no specified cure period for Section 18 material breaches).",
+      "source_pages": [385]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "non_renewal_notice",
+      "override_summary": "Franchisor must give 180 days' notice of non-renewal.",
+      "why_it_matters": "Minnesota franchisees get 6 months' advance warning before non-renewal, providing time to arrange orderly exit or sale.",
+      "source_pages": [385]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "transfer",
+      "override_summary": "Consent to transfer will not be unreasonably withheld.",
+      "why_it_matters": "Minnesota law limits franchisor discretion to block transfers, strengthening franchisee exit flexibility.",
+      "source_pages": [385]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "noncompete",
+      "override_summary": "Non-competition covenants are generally unenforceable in North Dakota. Franchisor will seek to enforce to extent enforceable.",
+      "why_it_matters": "North Dakota franchisees may operate competing businesses during and after the franchise term without legal exposure from the non-compete.",
+      "source_pages": [385]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "governing_law",
+      "override_summary": "North Dakota law will govern claims arising under the North Dakota Franchise Investment Law.",
+      "why_it_matters": "ND franchise law claims governed by ND law, not Illinois law.",
+      "source_pages": [385]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "governing_law",
+      "override_summary": "If Washington Franchise Investment Protection Act applies, its provisions prevail over inconsistent FDD/agreement terms.",
+      "why_it_matters": "Washington state franchise law overrides conflicting agreement provisions for WA franchisees.",
+      "source_pages": [385]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "no_poach",
+      "override_summary": "Assurance of Discontinuance with WA Attorney General: removed no-poach provision from franchise agreement, will not enforce existing provisions, requested WA franchisees amend agreements. No fines or penalties.",
+      "why_it_matters": "Washington specifically addressed the no-poach issue that is the subject of Deslandes and Turner pending antitrust litigation. WA franchisees' employees can move freely between McDonald's locations.",
+      "source_pages": [385, 386]
+    }
+  ],
+  "summary_table": {
+    "forum_selection": ["Maryland"],
+    "governing_law": ["Maryland", "North Dakota", "Washington"],
+    "noncompete": ["North Dakota"],
+    "general_release": ["Maryland"],
+    "termination_notice_cure": ["Minnesota"],
+    "non_renewal_notice": ["Minnesota"],
+    "transfer_reasonableness": ["Minnesota"],
+    "employment_standards": ["California"],
+    "no_poach": ["Washington"],
+    "statute_of_limitations": ["Maryland"],
+    "bankruptcy_termination_limit": ["Maryland"]
+  }
+}

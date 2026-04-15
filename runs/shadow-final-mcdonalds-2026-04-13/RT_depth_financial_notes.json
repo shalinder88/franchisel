@@ -1,0 +1,128 @@
+{
+  "depth_pass": "A2_depth_pass_1_financial_notes",
+  "item21_extraction_method": "normal_text_extraction",
+  "source_pages": [58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72],
+  "auditor": "Ernst & Young LLP",
+  "opinion_type": "unqualified",
+  "opinion_date": "2025-03-14",
+  "note_families": [
+    {
+      "family": "revenue_recognition",
+      "pages": [63, 64],
+      "policy": "Sales: cash basis at time of sale net of sales tax. Royalties: percent of sales at time underlying sales occur. Rent: minimum straight-line over franchise term + variable percent at time sales occur. Initial fees: over 20-year franchise term as performance obligation satisfied. Technology: gross basis (principal). Brand licensing: percent of sales.",
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "depreciation_amortization",
+      "pages": [64],
+      "policy": "Straight-line method. Buildings: up to 40 years. Leasehold improvements: lesser of useful life or lease term (includes option periods). Equipment: 3 to 12 years. Capitalized software: 3 to 10 years.",
+      "amounts_2024_millions": {"property_equipment_da": 869.7, "total_da": 980.0},
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "impairment",
+      "pages": [65],
+      "policy": "Annual fourth quarter review + event-driven. Initially grouped at field office level. If indicator exists, undiscounted future cash flows vs carrying value for individual restaurants. If impaired, discounted cash flows for fair value. Held for disposal: recognized when plan committed and disposal probable within 12 months.",
+      "charges": "No material impairment charges identified for 2024, 2023, 2022.",
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "income_taxes",
+      "pages": [70, 71],
+      "policy": "Separate-return basis. Included in McDonald's consolidated federal return. State returns may be combined or separate. Deferred assets/liabilities for temporary differences.",
+      "provision_2024_millions": {"current_federal": 853.9, "current_state": 179.4, "deferred_federal": 18.4, "deferred_state": -6.8, "total": 1044.9},
+      "effective_rate": 23.2,
+      "statutory_rate": 21.0,
+      "state_income_tax_rate_net": 3.0,
+      "unrecognized_tax_benefits_millions": 75.8,
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "leasing",
+      "pages": [64, 67, 68],
+      "policy": "Lessee in significant real estate portfolio. Ground leases (lease land, own building) + improved leases (lease land and buildings). ROU and liability at PV of estimated future minimum lease payments. Discount rate: collateralized incremental borrowing rate. Elected not to separate non-lease components.",
+      "rou_2024_millions": {"operating": 4821.4, "finance": 1020.0, "total": 5841.4},
+      "liability_2024_millions": {"operating_current": 187.0, "operating_noncurrent": 5075.1, "finance_current": 8.9, "finance_noncurrent": 773.9, "total": 6044.9},
+      "maturity_schedule_total_millions": 9002.2,
+      "imputed_interest_millions": 2957.3,
+      "weighted_avg_remaining_term": {"operating_years": 17, "finance_years": 28},
+      "discount_rate": {"operating_pct": 4.4, "finance_pct": 4.1},
+      "rent_expense_2024_millions": 593.0,
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "variable_interest_entities",
+      "pages": [63],
+      "policy": "Ongoing evaluation of franchisees, JV partners, suppliers, advertising cooperatives. Generally qualify for scope exception. Consolidation not appropriate for periods presented.",
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "subsequent_events",
+      "pages": [72],
+      "events": ["$2.4B payable arrangements with McDonald's Corp matured Feb 17, 2025 and converted to equity"],
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "related_party_transactions",
+      "pages": [71],
+      "royalty_to_parent": {"rate": "2% of company-owned + franchised sales", "2024_millions": 1069.4},
+      "dividends_to_parent_2024_millions": 3461.6,
+      "intercompany_debt_2024_millions": 2400.0,
+      "interest_rate": "12-month swap rate + 1%",
+      "interest_expense_2024_millions": 159.1,
+      "net_intercompany_payable_2024_millions": 910.6,
+      "admin_costs_not_charged": true,
+      "revolver_from_company_to_parent": {"available": 675.0, "drawn": 0},
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "advertising_fund",
+      "pages": [65],
+      "policy": "Company advertising costs are contributions to cooperatives based on percent of sales. Cooperatives are independent; McDonald's not primary beneficiary; consolidation not appropriate.",
+      "company_owned_ad_cost_2024_millions": 94.9,
+      "production_marketing_sga_2024_millions": 84.6,
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "goodwill",
+      "pages": [65],
+      "balance_2024_millions": 1498.7,
+      "policy": "Excess of cost over net tangible and identifiable intangible assets. Assigned to US market reporting unit. Primarily from franchisee restaurant purchases. Annual fourth quarter impairment test. Qualitative assessment performed; no impairment identified.",
+      "2024_acquisitions": {"net_tangible_millions": 10, "identifiable_intangible_millions": 110, "goodwill_millions": 20},
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "employee_benefits",
+      "pages": [71],
+      "plans": ["401(k) with employer match", "Nonqualified supplemental benefit plans"],
+      "unfunded_nonqualified_liability_2024_millions": 151.1,
+      "total_cost_2024_millions": 28.6,
+      "hedging": "Derivative contracts to hedge nonqualified plan liabilities",
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "restructuring",
+      "pages": [69],
+      "initiative": "Accelerating the Organization (Jan 2023)",
+      "cumulative_charges_millions": 63.6,
+      "2024_charges_millions": 1.2,
+      "accrued_balance_2024_millions": 4.4,
+      "expected_payout": "Within 12 months",
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "contingencies",
+      "pages": [68],
+      "policy": "Ordinary course proceedings. Required accrual after analysis. No material adverse effect expected on financial condition or results.",
+      "extraction_method": "text_layer"
+    },
+    {
+      "family": "capitalized_software",
+      "pages": [64],
+      "balance_net_2024_millions": 71.9,
+      "useful_life_years": "3 to 10",
+      "impairment": "No indicators identified 2024, 2023, 2022",
+      "extraction_method": "text_layer"
+    }
+  ]
+}
