@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { brands, categories } from "@/data/brands";
+import { brands as allBrands, categories, isIndexableBrand } from "@/data/brands";
+
+// Hide placeholder slugs (e.g. "-wi637909") that have no resolved brand name —
+// they are un-rankable and pollute the directory.
+const brands = allBrands.filter(isIndexableBrand);
 import {
   formatInvestmentRange,
   categoryLabels,

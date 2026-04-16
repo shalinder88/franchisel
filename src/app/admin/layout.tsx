@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AdminCookieSetter } from "./AdminCookieSetter";
 
 export const metadata = {
-  title: "Admin | Franchisel",
+  title: "Admin",
   robots: { index: false, follow: false },
 };
 

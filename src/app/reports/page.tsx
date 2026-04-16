@@ -4,7 +4,7 @@ import { brands } from "@/data/brands";
 import PricingSection from "@/components/PricingSection";
 
 export const metadata: Metadata = {
-  title: "Franchise Due Diligence Reports | Franchisel",
+  title: "Franchise Due Diligence Reports",
   description:
     "Independent franchise due diligence reports from $29. Full FDD analysis, Item 19 deep dive, red flag registry, category benchmarks, and interview prep — all sourced from government-filed FDDs.",
 };

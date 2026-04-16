@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Page Not Found | Franchisel",
+  title: "Page Not Found",
   description: "The page you're looking for doesn't exist. Browse our franchise directory, read our guides, or compare brands.",
 };
 

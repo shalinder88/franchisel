@@ -7,7 +7,7 @@ import WatchButton from "@/components/WatchButton";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Rocky Rococo Pizza and Pasta Franchise · 2025 FDD Deep Dive · franchiese",
+  title: "Rocky Rococo Pizza and Pasta Franchise — 2025 FDD Deep Dive",
   description:
     "The most complete Rocky Rococo Pizza and Pasta franchise analysis on the internet. 167-page 2025 WI DFI filing #638785 fully extracted. Fee stack, contract burdens, financial health, and the FA-vs-FDA noncompete trap.",
 };
@@ -554,7 +554,7 @@ export default function RockyRococoPage() {
         <div className="max-w-7xl mx-auto px-6 py-10">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-8 w-1 rounded bg-accent" />
-            <h2 className="text-2xl font-bold text-foreground">Extraction provenance</h2>
+            <h2 className="text-2xl font-bold text-foreground">Sources &amp; coverage</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
             <div className="rounded-xl border border-border bg-surface p-4">
@@ -563,9 +563,9 @@ export default function RockyRococoPage() {
               <div className="text-xs text-muted mt-1">167-page PDF, issued April 24, 2025</div>
             </div>
             <div className="rounded-xl border border-border bg-surface p-4">
-              <div className="text-[10px] uppercase tracking-wider text-muted mb-1">Pipeline</div>
-              <div className="text-foreground font-medium">automation_v1 (shadow-live)</div>
-              <div className="text-xs text-muted mt-1">A1 → A2 (4 depth passes) → A3 → B1–B5 → merged publish</div>
+              <div className="text-[10px] uppercase tracking-wider text-muted mb-1">What we covered</div>
+              <div className="text-foreground font-medium">All 23 FDD items · every exhibit</div>
+              <div className="text-xs text-muted mt-1">Includes a four-pass review of fee detail, financial notes, contract burdens, and territory language.</div>
             </div>
             <div className="rounded-xl border border-border bg-surface p-4">
               <div className="text-[10px] uppercase tracking-wider text-muted mb-1">Coverage</div>
@@ -585,7 +585,7 @@ export default function RockyRococoPage() {
             <div className="rounded-xl border border-border bg-surface p-4">
               <div className="text-[10px] uppercase tracking-wider text-muted mb-1">Last refresh</div>
               <div className="text-foreground font-medium">2026-04-07</div>
-              <div className="text-xs text-muted mt-1">runs/shadow-live-rocky-rococo-2025/</div>
+              <div className="text-xs text-muted mt-1">Reviewed against the filed 2025 FDD</div>
             </div>
           </div>
         </div>

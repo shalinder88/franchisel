@@ -40,16 +40,16 @@ export async function generateMetadata({
   const { slug } = await params;
   const category = categories.find((c) => c.slug === slug);
   if (!category) {
-    return { title: "Category Not Found — Franchisel" };
+    return { title: "Category Not Found" };
   }
   const categoryBrands = brands.filter((b) => b.category === slug);
   const desc = `Browse ${categoryBrands.length} ${category.name.toLowerCase()} franchise brands. Compare investment costs, FDD scores, red flags, and community reviews.`;
   return {
-    title: `${category.name} Franchises — Franchisel`,
+    title: `${category.name} Franchises`,
     description: desc,
     alternates: { canonical: `https://franchisel.com/category/${slug}` },
     openGraph: {
-      title: `${category.name} Franchises — Franchisel`,
+      title: `${category.name} Franchises`,
       description: desc,
       url: `https://franchisel.com/category/${slug}`,
     },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Advertiser Disclosure — Franchisel",
+  title: "Advertiser Disclosure",
   description:
     "Franchisel advertiser disclosure. How we earn revenue, what referral relationships exist, and the firm separation between commercial arrangements and our editorial analysis.",
 };

@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const brand = getBrandBySlug(slug);
   if (!brand) return { title: "Not Found" };
   return {
-    title: `${brand.name} — Filing Year Changes | Franchisel`,
+    title: `${brand.name} — Filing Year Changes`,
     description: `Year-over-year FDD filing changes for ${brand.name}: revenue trends, unit growth, fee changes. Sourced from government-filed FDDs.`,
     robots: { index: false },
   };

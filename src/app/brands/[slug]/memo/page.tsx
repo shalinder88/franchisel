@@ -20,7 +20,7 @@ export async function generateMetadata({
   const brand = getBrandBySlug(slug);
   if (!brand) return { title: "Not Found" };
   return {
-    title: `${brand.name} — Buyer Memo | Franchisel`,
+    title: `${brand.name} — Buyer Memo`,
     description: `One-page buyer memo for ${brand.name}: investment snapshot, revenue, red flags, and questions to ask — sourced from the ${brand.fddYear} FDD.`,
     robots: { index: false },
   };

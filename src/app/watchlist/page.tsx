@@ -17,7 +17,7 @@ const popularBrands = [
 ];
 
 export const metadata: Metadata = {
-  title: "Franchise Watchlist — Track Brands & Get FDD Alerts | Franchisel",
+  title: "Franchise Watchlist — Track Brands & Get FDD Alerts",
   description:
     "Save franchise brands to your watchlist and get alerted when FDD data changes, unit counts shift, or litigation increases. Free email alerts for serious franchise buyers.",
 };

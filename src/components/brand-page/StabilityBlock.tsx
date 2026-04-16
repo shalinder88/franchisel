@@ -22,13 +22,13 @@ export default function StabilityBlock({
       {/* ── Trend summary — 2 cards only (total units already in hero) ── */}
       <div className="grid grid-cols-2 gap-3 mb-5">
         <div className="rounded-xl border border-border bg-surface shadow-lg shadow-black/10 p-5 text-center">
-          <div className="text-[9px] uppercase tracking-[0.15em] text-foreground/50">Net growth {latestYear?.year}</div>
+          <div className="text-[9px] uppercase tracking-[0.15em] text-foreground/50">Opened &minus; closed {latestYear?.year}</div>
           <div className="mt-1.5 text-3xl font-black tabular-nums text-success tracking-tight">
             +{latestNet}
           </div>
           {prevNet !== null && (
             <div className="mt-1 text-[10px] text-foreground/50">
-              vs {prevNet >= 0 ? "+" : ""}{prevNet} prior year
+              vs {prevNet >= 0 ? "+" : ""}{prevNet} prior year &middot; gross of transfers
             </div>
           )}
         </div>

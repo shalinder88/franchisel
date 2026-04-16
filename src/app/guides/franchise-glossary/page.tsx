@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Franchise Glossary — 60+ Terms Defined | Franchisel",
+  title: "Franchise Glossary — 60+ Terms Defined",
   description:
     "Plain-English definitions of every key franchise term — from FDD Item 19 to royalty structures to post-term non-competes. 60+ terms every buyer must know before signing.",
   alternates: { canonical: "https://franchisel.com/guides/franchise-glossary" },

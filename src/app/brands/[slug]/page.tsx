@@ -43,8 +43,18 @@ import CommunitySubmitForm from "@/components/CommunitySubmitForm";
 import { getCommunityProfile } from "@/data/community";
 import BenchmarkWidget from "@/components/BenchmarkWidget";
 
-/* ── Dynamic rendering — too many brands to pre-render (causes Vercel 80MB limit) ── */
-export const dynamic = 'force-dynamic';
+/* ── ISR: render on first hit, cache for 24h, refresh in the background.
+     Avoids the Vercel 80MB build bundle limit by pre-rendering nothing at build
+     time, while still giving crawlers cached, fast HTML responses. Long-tail
+     brand slugs render on demand and are cached for the next visitor. ── */
+export const revalidate = 86400;
+export const dynamicParams = true;
+export async function generateStaticParams() {
+  // Intentionally empty: every named brand renders on first request via ISR.
+  // To pre-render specific high-traffic brands at build time, return their
+  // slugs here, e.g. [{ slug: "mcdonalds" }, { slug: "subway" }].
+  return [];
+}
 
 /* ── Dynamic metadata ── */
 export async function generateMetadata({
@@ -58,8 +68,8 @@ export async function generateMetadata({
 
   const isVerified = brand.dataSource === "fdd_verified" || brand.dataSource === "state_filing";
   const metaTitle = isVerified
-    ? `${brand.name} Franchise — FDD Data, Fees & Item 19 | Franchisel`
-    : `${brand.name} Franchise Overview | Franchisel`;
+    ? `${brand.name} Franchise — FDD Data, Fees & Item 19`
+    : `${brand.name} Franchise Overview`;
   const metaDesc = isVerified
     ? `${brand.name} franchise data sourced from ${brand.fddYear} government-filed FDD. Investment: ${formatInvestmentRange(brand.totalInvestmentLow, brand.totalInvestmentHigh)}. Item 19 revenue data, fee structure, and unit growth analysis.`
     : `${brand.name} franchise overview. ${brand.description.slice(0, 120)}... Government FDD data pending.`;

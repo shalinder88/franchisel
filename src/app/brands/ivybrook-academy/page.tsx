@@ -7,7 +7,7 @@ import WatchButton from "@/components/WatchButton";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Ivybrook Academy Franchise · 2025 FDD Deep Dive · franchiese",
+  title: "Ivybrook Academy Franchise — 2025 FDD Deep Dive",
   description:
     "The most complete Ivybrook Academy franchise analysis on the internet. 207-page 2025 FDD fully extracted including image-only Exhibit J financials. Unit economics, contract burdens, financial health, and 8 red flags.",
 };
@@ -368,7 +368,7 @@ export default function IvybrookPage() {
                 Reggio Emilia–aligned half-day preschool franchise · 41 outlets across 13 states · founded 2007, franchising since 2015 · headquartered Weddington, NC
               </p>
               <p className="text-sm text-muted mt-4 max-w-3xl leading-relaxed">
-                The most complete Ivybrook Academy analysis on the internet. Built from the full 207-page 2025 FDD (file #637976, filed with WI DFI; issued March 28, 2025; amended September 15, 2025), including the image-only Exhibit J financial statements recovered via vision OCR. Acquired August 29, 2025 by Crux I Ivybrook (Aggregator), LP — a Dallas-based PE aggregator.
+                Built from the full 207-page 2025 FDD (file #637976, filed with WI DFI; issued March 28, 2025; amended September 15, 2025), including the complete Exhibit J financial statements — auditor opinion, balance sheet, income statement, cash flows, and all 7 notes. Acquired August 29, 2025 by Crux I Ivybrook (Aggregator), LP — a Dallas-based PE aggregator.
               </p>
 
               <div className="flex flex-wrap gap-2 mt-5">
@@ -526,13 +526,13 @@ export default function IvybrookPage() {
         </div>
       </section>
 
-      {/* FINANCIALS — newly recovered from image-only Exhibit J */}
+      {/* FINANCIALS — Item 21 / Exhibit J */}
       <section id="financials" className="bg-surface-alt border-y border-border">
         <div className="max-w-7xl mx-auto px-6 py-10">
           <div className="flex items-center gap-3 mb-6 flex-wrap">
             <div className="h-8 w-1 rounded bg-accent" />
             <h2 className="text-2xl font-bold text-foreground">Franchisor financials · Item 21 / Exhibit J</h2>
-            <span className="px-2 py-0.5 text-[10px] uppercase tracking-wider rounded bg-success-light text-success border border-success/20">Vision OCR recovered</span>
+            <span className="px-2 py-0.5 text-[10px] uppercase tracking-wider rounded bg-success-light text-success border border-success/20">Full Exhibit J covered</span>
             <span className="px-2 py-0.5 text-[10px] uppercase tracking-wider rounded bg-cyan-light text-cyan border border-cyan/20">Auditor: Reese CPA LLC</span>
             <span className="px-2 py-0.5 text-[10px] uppercase tracking-wider rounded bg-success-light text-success border border-success/20">Clean opinion · no going concern</span>
           </div>
@@ -877,7 +877,7 @@ export default function IvybrookPage() {
         <div className="max-w-7xl mx-auto px-6 py-10">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-8 w-1 rounded bg-warning" />
-            <h2 className="text-2xl font-bold text-foreground">Document-level contradictions preserved</h2>
+            <h2 className="text-2xl font-bold text-foreground">Contradictions in this filing</h2>
             <span className="px-2 py-0.5 text-[10px] uppercase tracking-wider rounded bg-warning-light text-warning border border-warning/20">5 surfaced + 3 from financial notes</span>
           </div>
 
@@ -932,7 +932,7 @@ export default function IvybrookPage() {
         <div className="max-w-7xl mx-auto px-6 py-10">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-8 w-1 rounded bg-cyan" />
-            <h2 className="text-2xl font-bold text-foreground">Extraction provenance</h2>
+            <h2 className="text-2xl font-bold text-foreground">Sources &amp; coverage</h2>
             <span className="px-2 py-0.5 text-[10px] uppercase tracking-wider rounded bg-cyan-light text-cyan border border-cyan/20">Full transparency</span>
           </div>
 
@@ -950,12 +950,12 @@ export default function IvybrookPage() {
             </div>
 
             <div className="rounded-2xl border border-border bg-surface p-5">
-              <div className="text-xs uppercase tracking-wider text-muted">Pipeline</div>
+              <div className="text-xs uppercase tracking-wider text-muted">What we covered</div>
               <div className="mt-2 text-sm text-foreground leading-relaxed">
-                13-step shadow extraction → depth pass (financial notes / contract burdens / promotion audit) → publish gate → reconciliation pass (regression check / conflict adjudication / reconciled gate / patch log) → RP1 vision-OCR Exhibit J recovery
+                Full walk of all 23 FDD items, every exhibit (including the image-only Exhibit J financial statements), all 14 state addenda, a clause-level contract burden inventory, and a cross-check of franchisor promotional materials against filed disclosures.
               </div>
               <div className="mt-3 text-xs text-muted">
-                Render cascade: <span className="text-foreground">pdftoppm</span> if available → <span className="text-foreground">fitz pixmap @ 200 DPI</span> → <span className="text-foreground">multimodal vision OCR</span>
+                Findings are sourced to the filed 2025 FDD and labelled with the originating item or exhibit.
               </div>
             </div>
 
@@ -964,7 +964,7 @@ export default function IvybrookPage() {
               <div className="mt-3 grid grid-cols-2 gap-3">
                 <div>
                   <div className="text-xl font-bold text-foreground">~165</div>
-                  <div className="text-[10px] text-muted">canonical fields</div>
+                  <div className="text-[10px] text-muted">data fields tracked</div>
                 </div>
                 <div>
                   <div className="text-xl font-bold text-foreground">19</div>
@@ -984,17 +984,17 @@ export default function IvybrookPage() {
                 </div>
                 <div>
                   <div className="text-xl font-bold text-warning">8</div>
-                  <div className="text-[10px] text-muted">contradictions preserved</div>
+                  <div className="text-[10px] text-muted">contradictions flagged</div>
                 </div>
               </div>
-              <div className="mt-3 text-xs text-success font-semibold">99.5% weighted coverage</div>
+              <div className="mt-3 text-xs text-success font-semibold">All 23 FDD items covered</div>
             </div>
           </div>
 
           <div className="mt-5 rounded-xl border border-cyan/20 bg-cyan/5 p-4">
-            <div className="text-xs uppercase tracking-wider text-cyan mb-2">Vision OCR breakthrough · Exhibit J</div>
+            <div className="text-xs uppercase tracking-wider text-cyan mb-2">Exhibit J — full financial statements</div>
             <div className="text-sm text-foreground leading-relaxed">
-              Exhibit J (financial statements, pages 168–197) was scanned-image only in the FDD text layer — no statement content extractable via standard PyMuPDF. The render cascade rendered all 30 pages to PNG via fitz pixmap @ 200 DPI, then the multimodal Read tool's vision capability OCR'd each page directly. <span className="font-semibold text-foreground">This recovered the auditor identity (Reese CPA LLC), the unmodified clean opinion, the full balance sheet, income statement, statement of changes in members' equity, statement of cash flows, and all 7 notes to financial statements</span> — closing what had been the single largest gap in the extraction.
+              Exhibit J runs pages 168–197 of the 2025 FDD and contains Ivybrook&apos;s audited financial statements. <span className="font-semibold text-foreground">Auditor: Reese CPA LLC. Opinion: unmodified (clean).</span> The exhibit includes the full balance sheet, income statement, statement of changes in members&apos; equity, statement of cash flows, and all 7 notes to the financial statements — covered in the analysis above.
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Free, independent guides to franchise due diligence, FDD analysis, and investment evaluation. Written for buyers, not franchisors.",
   alternates: { canonical: "https://franchisel.com/guides" },
   openGraph: {
-    title: "Franchise Due Diligence Guides — Franchisel",
+    title: "Franchise Due Diligence Guides",
     description:
       "Free, independent guides to franchise due diligence, FDD analysis, and investment evaluation. Written for buyers, not franchisors.",
     url: "https://franchisel.com/guides",

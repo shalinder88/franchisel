@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Franchisel",
+  title: "Privacy Policy",
   description:
     "Franchisel privacy policy. How we collect, use, and protect your personal data. GDPR and CCPA rights included.",
 };

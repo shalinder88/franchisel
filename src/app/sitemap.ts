@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
-import { brands } from "@/data/brands";
+import { getIndexableBrands } from "@/data/brands";
 import { guides, categories } from "@/data/brands";
 
 const BASE_URL = "https://franchisel.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const brandUrls = brands.map((b) => ({
+  const brandUrls = getIndexableBrands().map((b) => ({
     url: `${BASE_URL}/brands/${b.slug}`,
     lastModified: new Date(b.lastUpdated),
     changeFrequency: "monthly" as const,
