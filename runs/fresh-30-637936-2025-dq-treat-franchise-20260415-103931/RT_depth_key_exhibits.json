@@ -1,0 +1,45 @@
+{
+  "targeted_depth_block": "2_key_exhibits",
+  "extraction_date": "2026-04-16",
+  "exhibits_walked": [
+    {
+      "exhibit": "B",
+      "name": "Operating Agreement with Undertaking and Guarantee",
+      "page_range": [82, 143],
+      "status": "partially_clause_walked",
+      "clauses_extracted": [
+        {"clause_family": "term_and_renewal", "obligation": "15-year term, one renewal", "trigger": "Written notice 3-6 months before expiration", "duration": "Shorter of 15 years or remaining lease term", "source_pages": [95]},
+        {"clause_family": "fees", "obligation": "5% CLF + up to 6% SPF + 18% interest on overdue + $50 late fees", "trigger": "Monthly on 10th", "source_pages": [105]},
+        {"clause_family": "electronic_funds_transfer", "obligation": "Must authorize EFT; Company designates amount", "trigger": "Signing", "source_pages": [105]},
+        {"clause_family": "supplier_control", "obligation": "Must use only approved products; Company can designate single source", "trigger": "Ongoing", "source_pages": [95]},
+        {"clause_family": "epos_technology", "obligation": "Must purchase, install, maintain EPOS from designated sources; must pay for all updates; no limit on upgrade frequency/cost", "trigger": "Ongoing", "source_pages": [96]},
+        {"clause_family": "health_sanitation", "obligation": "Maintain highest health/sanitary classification", "trigger": "Ongoing", "source_pages": [96]},
+        {"clause_family": "transfer", "obligation": "Consent required; $6,000 fee; ROFR; general release; sign then-current agreement", "trigger": "Any transfer event", "source_pages": [112]},
+        {"clause_family": "termination", "obligation": "Cure periods: 24h/10d/30d; termination fee 2× CLF", "trigger": "Default events", "source_pages": [118, 120]},
+        {"clause_family": "post_term", "obligation": "Stop marks; pay amounts; purchase option at appraised value; 1-year noncompete", "trigger": "Expiration or termination", "source_pages": [120, 121]},
+        {"clause_family": "personal_guarantee", "obligation": "All owners; joint and several; full performance; unlimited; survives bankruptcy", "trigger": "Signing", "source_pages": [129]},
+        {"clause_family": "dispute_resolution", "obligation": "Arbitration in Minneapolis; injunctive relief; jury trial waiver; prevailing party fees", "trigger": "Any dispute", "source_pages": [118]},
+        {"clause_family": "force_majeure", "obligation": "Neither party liable for delays from acts of God, strikes, embargoes, government orders", "trigger": "Force majeure event", "source_pages": [125]},
+        {"clause_family": "limitations_on_claims", "obligation": "1 year from discovery or 2 years from act (whichever earlier); exceptions for underreporting, indemnification, trademark", "trigger": "Any claim", "source_pages": [121]},
+        {"clause_family": "punitive_damages_waiver", "obligation": "Both parties waive exemplary/punitive damages", "trigger": "Any dispute", "source_pages": [125]}
+      ],
+      "deferred_sections": {
+        "exhibit_name": "Operating Agreement — remaining sections",
+        "page_range_not_walked": "Pages 86-94, 97-104, 106-111, 113-117, 119, 122-124, 130-143",
+        "why_deferred": "Key operative burdens (term, fees, transfer, termination, noncompete, guarantee, dispute resolution, force majeure) are already covered through targeted page reads and Item 17 cross-references. Remaining sections cover operational details (site development §5, operations standards §6, training §7, advertising §8, reporting §9) which are substantively covered in FDD Items 7, 8, 11, 15, 16.",
+        "substance_recovered_elsewhere": "Item 17 chart provides comprehensive summary of all key franchise relationship provisions. A2 contract burden depth pass directly read §§4, 6.5-6.7, 9.6-9.7, 10.5, 11, 12, 13, 14, 15, 16, plus Undertaking and Guarantee.",
+        "remaining_missing": "Detailed site development provisions (§5), modernization timing (§5.5), detailed insurance minimums (§10.3), detailed confidentiality provisions (§6.12). These are operational rather than buyer-critical economic or legal provisions."
+      }
+    }
+  ],
+  "exhibits_deferred": [
+    {"exhibit": "C", "name": "Conversion Addenda", "page_range": [144, 148], "reason": "Applies only to conversion franchisees. Key fee terms (CLF/SPF rates) already surfaced in Item 6 footnotes.", "substance_elsewhere": "Item 6 footnotes 2-3"},
+    {"exhibit": "D", "name": "Franchise Application", "page_range": [149, 161], "reason": "Application form — no operative economic or legal provisions."},
+    {"exhibit": "E", "name": "Third-Party EPOS Agreements", "page_range": [162, 286], "reason": "124 pages of vendor participation agreements. Key vendor terms (costs, mandatory vendors) surfaced in Items 8 and 11. Individual contract terms (data rights, termination penalties, auto-renewal) not directly walked.", "substance_elsewhere": "Items 8, 11, and A2 technology clause summary", "remaining_missing": "Individual vendor termination penalties, auto-renewal terms, data retention/rights, liability caps"},
+    {"exhibit": "F", "name": "Design Services Agreement", "page_range": [287, 296], "reason": "Development-phase agreement. Key cost surfaced in Item 7.", "substance_elsewhere": "Item 7 footnote 9"},
+    {"exhibit": "G", "name": "Construction Consultation Agreement", "page_range": [297, 301], "reason": "Development-phase agreement. Key cost surfaced in Item 7.", "substance_elsewhere": "Item 7 footnote 8"},
+    {"exhibit": "H", "name": "Manuals TOC", "page_range": [302, 307], "reason": "Informational only — table of contents for confidential operations manual."},
+    {"exhibit": "I", "name": "Current Franchisee List", "page_range": [308, 349], "reason": "Contact information list. Not an operative exhibit."},
+    {"exhibit": "J", "name": "Former Franchisee List", "page_range": [350, 356], "reason": "Contact information list. Count (30) already captured in Item 20."}
+  ]
+}

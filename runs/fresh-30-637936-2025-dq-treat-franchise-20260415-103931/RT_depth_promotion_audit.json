@@ -1,0 +1,15 @@
+{
+  "depth_pass": "3_promotion_audit",
+  "extraction_date": "2026-04-16",
+  "promoted_facts": [
+    {"fact": "Transfer fee in Operating Agreement is $5,500 (Section 11.3(E)(1)), with escalation to $6,000 effective Jan 1, 2025. FDD Item 6 states $6,000.", "source_reader_report": "Pass E", "source_pdf_pages": [112, 22], "canonical_field": "transfer.transfer_fee", "action": "Confirm $6,000 is current as of issuance date. No change needed."},
+    {"fact": "ADQ management fee on sales promotion funds is 7% — but only on SPF payments up to 3% of gross sales. No management fee on SPF above 3%.", "source_reader_report": "Pass C (Item 11)", "source_pdf_pages": [39, 40], "canonical_field": "advertising_fee.management_fee", "action": "Already in canonical. Confirm detail promoted."},
+    {"fact": "1/7 of total ADQ management fees credited back to NMF budget as voluntary corporate contribution.", "source_reader_report": "Pass C (Item 11)", "source_pdf_pages": [40], "canonical_field": "advertising_fee.voluntary_contribution", "action": "Promoted to enriched v1."},
+    {"fact": "USCI margin commitment is permanent and would survive divestiture to buyer (unless buyer is a cooperative that votes for different structure).", "source_reader_report": "Pass C (Item 8)", "source_pdf_pages": [33], "canonical_field": "supply_chain.margin_commitment_permanence", "action": "Add to canonical."},
+    {"fact": "Personal guarantee scope is unlimited — joint and several, all owners, full performance guarantee, includes payment of enforcement costs, not diminished by bankruptcy.", "source_reader_report": "Operating Agreement read", "source_pdf_pages": [129], "canonical_field": "guarantee_scope", "action": "Add to canonical."},
+    {"fact": "Limitations on claims: 1 year from discovery or 2 years from act, whichever is earlier. Exception for underreporting, indemnification, and trademark claims.", "source_reader_report": "Operating Agreement read", "source_pdf_pages": [121], "canonical_field": "limitations_on_claims", "action": "Add to canonical."},
+    {"fact": "Company purchase option on termination/expiration: may deduct termination fee from purchase price of restaurant assets.", "source_reader_report": "Operating Agreement read", "source_pdf_pages": [120], "canonical_field": "termination.purchase_option_deduction", "action": "Add to canonical."},
+    {"fact": "Maryland financial assurance: initial fees deferred until opening.", "source_reader_report": "Pass F (State Addenda)", "source_pdf_pages": [73], "canonical_field": "state_addenda_overrides.maryland", "action": "Promote to canonical."},
+    {"fact": "Franchisee incentive programs: remodel/technology/new store incentives amortized 3-7 years. Unamortized portion expensed on location closure.", "source_reader_report": "Financial notes", "source_pdf_pages": [371], "canonical_field": "franchisee_incentives", "action": "Add to canonical."}
+  ]
+}

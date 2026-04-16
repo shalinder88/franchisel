@@ -1,0 +1,79 @@
+{
+  "depth_pass": "1_financial_notes",
+  "extraction_date": "2026-04-16",
+  "source_pages": [365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375],
+  "notes_identified": [
+    {"note": 1, "family": "nature_of_business", "summary": "IDQ is a wholly owned subsidiary of Berkshire Hathaway. ~7,700 retail restaurants. Operated 2 DQ restaurants on Dec 31, 2024.", "source_pages": [365]},
+    {"note": 2, "family": "significant_accounting_policies", "policies": [
+      {"policy": "cash_equivalents", "detail": "Short-term investments with original maturity ≤90 days. At cost ≈ fair value.", "source_pages": [365]},
+      {"policy": "accounts_receivable", "detail": "Service fees, franchise sales fees, advertising fees from franchisees, gift card receivables. Net of allowance for expected credit losses ($1,501K in 2024, $903K in 2023).", "source_pages": [365]},
+      {"policy": "cash_pooling", "detail": "Centralized cash management with BH Finance LLC (Berkshire). Day-to-day borrowing max $10M, no limit on invested amounts. Loans to Company at SOFR. Auto-renewal Dec 31 annually with 90-day notice.", "source_pages": [365]},
+      {"policy": "inventories", "detail": "Marketing material for resale. Lower of cost (FIFO) or NRV.", "source_pages": [365]},
+      {"policy": "property_and_equipment", "detail": "Historical cost, straight-line depreciation. Equipment 3-10 years, leasehold improvements shorter of 20 years or lease term, buildings 15-40 years.", "source_pages": [365, 366]},
+      {"policy": "impairment_long_lived", "detail": "Reviewed when events indicate. Compare carrying value to undiscounted cash flows. No impairments recorded in 2022-2024.", "source_pages": [366]},
+      {"policy": "goodwill_and_intangibles", "detail": "Per ASC 350 and ASC 805. Tested annually. No impairments in 2022-2024. Software amortized 3-7 years.", "source_pages": [366]},
+      {"policy": "leases", "detail": "ASC 842. ROU assets and lease liabilities for leases >1 year. Measured using risk-free rate.", "source_pages": [366]},
+      {"policy": "committed_advertising", "detail": "Company acts as AGENT of advertising funds — records net on balance sheet. When liability: unspent amounts from franchisees. Franchise Advertising Committees approve budgets.", "source_pages": [366]},
+      {"policy": "revenue_recognition", "detail": "Service fees (royalties): recognized as usage occurs (sales at franchised locations). Supply chain fees: point in time when products sold. New store development: when obligations fulfilled (restaurant opened). Management fees: % of committed advertising. Deferred franchise income for licensing rights recognized over contract term.", "source_pages": [367]},
+      {"policy": "income_taxes", "detail": "Included in Berkshire consolidated federal return. Prepared on separate company basis with modifications. ASC 740 asset/liability method. Valuation allowance: $3.7M for disallowed franchise rights amortization (1970-1991).", "source_pages": [367, 368]},
+      {"policy": "gift_card_liabilities", "detail": "Cash receipts = current liability. Reduced on redemption. Breakage recognized proportionally to redemptions as contribution to Committed Advertising less management fees.", "source_pages": [368]},
+      {"policy": "retained_deficit", "detail": "Dividends to Berkshire in excess of net income have resulted in retained deficit.", "source_pages": [369]}
+    ], "source_pages": [365, 366, 367, 368, 369]},
+    {"note": 3, "family": "property_and_equipment", "detail": {
+      "land_2024": 1408, "buildings_2024": 1969, "leasehold_improvements_2024": 7351,
+      "equipment_2024": 7557, "vehicles_2024": 4522, "construction_in_process_2024": 5,
+      "total_at_cost_2024": 22812, "accumulated_depreciation_2024": 11909, "net_2024": 10903,
+      "depreciation_expense_2024": 2341, "depreciation_expense_2023": 2378, "depreciation_expense_2022": 2275
+    }, "source_pages": [369]},
+    {"note": 4, "family": "goodwill_and_intangibles", "detail": {
+      "goodwill_net_2024": 92023, "goodwill_accumulated_impairment": 1200,
+      "indefinite_lived_territorial_franchise_rights_2024": 73275,
+      "definite_lived_software_cost_2024": 13619, "definite_lived_software_amort_2024": 4496, "definite_lived_software_net_2024": 9123,
+      "amortization_expense_2024": 1462, "amortization_expense_2023": 973, "amortization_expense_2022": 585,
+      "estimated_future_amortization": {"2025": 1899, "2026": 1570, "2027": 1509, "2028": 1498, "2029": 1334, "thereafter": 1313}
+    }, "source_pages": [369, 370]},
+    {"note": 5, "family": "other_assets", "detail": {
+      "deferred_compensation_2024": 27222, "deferred_incentives_2024": 6080, "notes_receivable_2024": 92,
+      "total_2024": 33412,
+      "deferred_compensation_plan": "Rabbi trust with mutual funds (Level 1 fair value). Enables US officers to defer cash compensation. No company contributions in 2022-2024.",
+      "franchisee_incentives": "Programs for remodels, technology investments, new stores. Incentive = lesser of % of capital costs or dollar limit. Amortized 3-7 years."
+    }, "source_pages": [371]},
+    {"note": 6, "family": "other_liabilities", "detail": {
+      "current": {"accrued_salaries_benefits_2024": 21255, "charity_donations_2024": 6902, "deposits_2024": 8098, "accrued_remodel_incentives_2024": 196, "other_2024": 438, "total_2024": 36889},
+      "long_term": {"deferred_compensation_2024": 27222, "incentive_compensation_2024": 12755, "accrued_remodel_incentives_2024": 173, "other_2024": 5, "total_2024": 40155}
+    }, "source_pages": [371, 372]},
+    {"note": 7, "family": "income_taxes", "detail": {
+      "current_us_federal_2024": 15192, "current_state_2024": 4443, "current_foreign_2024": 11322, "total_current_2024": 30957,
+      "deferred_us_federal_2024": 391, "deferred_state_2024": 85, "deferred_foreign_2024": -161, "total_deferred_2024": 315,
+      "total_provision_2024": 31272,
+      "effective_tax_rate_2024": 24.21, "effective_tax_rate_2023": 24.20, "effective_tax_rate_2022": 24.20,
+      "us_statutory_rate": 21.00, "state_net_of_federal_2024": 2.77, "foreign_2024": 0.58,
+      "undistributed_foreign_earnings_2024": 8800,
+      "valuation_allowance": 3700,
+      "unrecognized_tax_benefits": 0,
+      "open_tax_years_federal": "2012-2024", "open_tax_years_state": "2014-2024"
+    }, "source_pages": [372, 373]},
+    {"note": 8, "family": "leases", "detail": {
+      "description": "Administrative facilities, equipment, one retail restaurant. Most require executory costs. Many have renewal options. Restaurant lease: greater of base rent or % of gross sales.",
+      "maturity_schedule": {"2025": 1192, "2026": 1216, "2027": 1235, "2028": 1180, "2029": 1308, "thereafter": 2941, "total_payments": 9072, "imputed_interest": -763, "operating_lease_liabilities": 8309},
+      "weighted_avg_term_2024": 6.8, "weighted_avg_term_2023": 7.7, "weighted_avg_term_2022": 8.6,
+      "discount_rate": 2.38,
+      "operating_lease_cost_2024": 981, "short_term_lease_cost_2024": 15, "variable_lease_cost_2024": 734, "total_lease_cost_2024": 1730
+    }, "source_pages": [373, 374]},
+    {"note": 9, "family": "employee_benefits", "detail": {
+      "plan_type": "Retirement savings plan (401k-type). 1-35% of base pay.",
+      "match_2024": "100% of first 2% + 50% of next 4% = max 4%",
+      "match_2023_2022": "100% of first 1% + 50% of next 5% = max 3.5%",
+      "company_contribution_2024": 1857, "company_contribution_2023": 1520, "company_contribution_2022": 1411
+    }, "source_pages": [374]},
+    {"note": 10, "family": "contingencies", "detail": "Various legal proceedings in ordinary course. Management believes ultimate disposition will not have material effect.", "source_pages": [374]},
+    {"note": 11, "family": "related_party_transactions", "detail": {
+      "cash_pooling_receivable_2024": 44600, "cash_pooling_receivable_2023": 55800,
+      "interest_from_bh_finance_2024": 2600, "interest_from_bh_finance_2023": 2600, "interest_from_bh_finance_2022": 600,
+      "dividends_to_berkshire_2024": 110000, "dividends_to_berkshire_2023": 110000, "dividends_to_berkshire_2022": 85000,
+      "revenue_from_affiliates_2024": 300, "revenue_from_affiliates_2023": 400, "revenue_from_affiliates_2022": 500
+    }, "source_pages": [375]},
+    {"note": 12, "family": "subsequent_events", "detail": "No subsequent events noted through February 7, 2025.", "source_pages": [375]}
+  ],
+  "unit": "thousands_usd"
+}

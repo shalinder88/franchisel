@@ -1,0 +1,25 @@
+{
+  "targeted_depth_block": "3_item20_completion",
+  "extraction_date": "2026-04-16",
+  "tables_extracted": [
+    {"table": "Direct-Licensed Systemwide Summary", "years": [2022, 2023, 2024], "type": "systemwide", "source_pages": [57], "status": "complete"},
+    {"table": "Direct-Licensed Transfers by State", "years": [2022, 2023, 2024], "type": "transfers", "source_pages": [58, 59], "status": "complete", "states_with_transfers": 25},
+    {"table": "Direct-Licensed Status of Franchised by State", "years": [2022, 2023, 2024], "type": "franchised_status", "source_pages": [59, 60, 61, 62], "status": "complete", "states_listed": 37},
+    {"table": "Direct-Licensed Company-Owned Status", "years": [2022, 2023, 2024], "type": "company_owned_status", "source_pages": [63], "status": "complete", "all_zeros": true},
+    {"table": "Direct-Licensed Projected Openings", "as_of": "2024-12-31", "type": "projected_openings", "source_pages": [63], "status": "complete"},
+    {"table": "Subfranchised Systemwide Summary", "years": [2022, 2023, 2024], "type": "systemwide", "source_pages": [63], "status": "complete"},
+    {"table": "Subfranchised Transfers by State", "years": [2022, 2023, 2024], "type": "transfers", "source_pages": [64], "status": "complete", "states_with_transfers": 9},
+    {"table": "Subfranchised Status of Franchised by State", "years": [2022, 2023, 2024], "type": "franchised_status", "source_pages": [65, 66], "status": "complete", "states_listed": 17},
+    {"table": "Subfranchised Company-Owned Status", "years": [2022, 2023, 2024], "type": "company_owned_status", "source_pages": [66], "status": "complete", "all_zeros": true},
+    {"table": "Subfranchised Projected Openings", "as_of": "2024-12-31", "type": "projected_openings", "source_pages": [67], "status": "complete", "note": "Territory operators not required to provide projected openings"}
+  ],
+  "total_tables": 10,
+  "notes": [
+    "Direct-licensed status table totals show slight discrepancies with systemwide table (e.g., 785 vs 789 for 2023 start). Concept conversion footnotes partially explain.",
+    "Subfranchised 2022 systemwide start (289) differs from status table start (389). Large jump likely reflects reclassification.",
+    "All company-owned tables show zero across all years and metrics.",
+    "Transfer activity is robust: 43→39→47 (direct) and 18→21→27 (subfranchised).",
+    "Direct-licensed: only 1 agreement signed but not opened (NM). Zero projected new openings.",
+    "Subfranchised: territory operators not contractually required to report projected openings."
+  ]
+}

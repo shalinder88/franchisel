@@ -1,0 +1,326 @@
+{
+  "extraction_date": "2026-04-16",
+  "filing_id": "637936-2025",
+  "brand": "DQ Treat",
+  "franchisor": {
+    "legal_name": "American Dairy Queen Corporation",
+    "state_of_incorporation": "Delaware",
+    "year_incorporated": 1962,
+    "principal_address": "8000 Tower, Suite 700, 8331 Norman Center Drive, Bloomington, MN 55437",
+    "parent": "International Dairy Queen, Inc. (IDQ)",
+    "ultimate_parent": "Berkshire Hathaway Inc.",
+    "source_section": "Item 1",
+    "source_pages": [9, 10],
+    "confidence": "high"
+  },
+  "issuance_date": {
+    "value": "2025-03-27",
+    "amended": "2026-01-29",
+    "source_section": "Cover Page",
+    "source_pages": [1],
+    "confidence": "high"
+  },
+  "concept": {
+    "description": "DQ Treat — quick-service retail selling DQ soft-serve, treat products, beverages, and limited approved food items",
+    "location_types": ["Street (freestanding/strip mall, <500K sqft GLA, 1000-1800 sqft)", "Captive-venue (malls/airports/hospitals, 500K+ sqft GLA, 600-1400 sqft)"],
+    "source_section": "Item 1",
+    "source_pages": [9],
+    "confidence": "high"
+  },
+  "initial_franchise_fee": {
+    "amount": 25000,
+    "deposit": 10000,
+    "deposit_refundable": false,
+    "balance_refundable_conditions": "4 specified conditions: withdraw before construction, training failure, no site within 90 days, no construction within 180 days",
+    "reduced_fee_available": true,
+    "no_fee_for": ["conversions", "relocations", "OJ conversions"],
+    "source_section": "Item 5",
+    "source_pages": [20],
+    "confidence": "high"
+  },
+  "royalty": {
+    "rate": "5% of Gross Sales",
+    "payment_frequency": "Monthly (10th of each month)",
+    "gross_sales_definition": "Total revenues and receipts from all products sold, cash/credit/gift card, including non-DQ branded, excluding sales taxes and gift card sale revenue",
+    "exceptions": "May be reduced for specialty captive-venue locations. Conversions and relocations may have different rates.",
+    "source_section": "Item 6",
+    "source_pages": [21],
+    "confidence": "high"
+  },
+  "advertising_fee": {
+    "rate": "5%-6% of Gross Sales (most products); up to 6% for Orange Julius branded",
+    "current_oj_rate_street": "5%",
+    "current_oj_rate_captive": "1.25%",
+    "payment_frequency": "Monthly (10th of each month)",
+    "management_fee": "7% of SPF payments (not on SPF above 3%)",
+    "source_section": "Item 6, Item 11",
+    "source_pages": [21, 39],
+    "confidence": "high"
+  },
+  "total_investment": {
+    "captive_venue_low": 549100,
+    "captive_venue_high": 1057700,
+    "street_low": 848450,
+    "street_high": 1604700,
+    "excludes_land": true,
+    "land_cost_estimate": "$250,000-$620,000+ (Street locations)",
+    "source_section": "Item 7",
+    "source_pages": [25, 26],
+    "confidence": "high"
+  },
+  "term": {
+    "initial_years": 15,
+    "renewal_terms": 1,
+    "renewal_years": "Shorter of 15 years or remaining lease term",
+    "materially_different_on_renewal": true,
+    "renewal_conditions": "3-6 months notice; sign then-current agreement; modernize; good standing; right to premises; pay renewal fee; sign release",
+    "source_section": "Item 17",
+    "source_pages": [53, 54],
+    "confidence": "high"
+  },
+  "territory": {
+    "exclusive": false,
+    "type": "Site-only franchise",
+    "minimum_area": false,
+    "encroachment_risk": "ADQ and affiliates may compete in your area. Territory operators not bound by ADQ site clearance guidelines.",
+    "source_section": "Item 12",
+    "source_pages": [48, 49, 50],
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": "No involvement in QSR serving hamburgers (no alcohol) or business with >10% revenue from ice cream/yogurt/frozen custard/fruit beverages/soft-serve/frozen treats",
+    "post_term_duration": "1 year",
+    "post_term_radius": "500 meters of authorized location (Street) or same building/venue (Captive-venue)",
+    "state_overrides": ["California: may not be enforceable", "North Dakota: enforceable only under certain conditions", "Washington: void if employee earns <$100K"],
+    "source_section": "Item 17",
+    "source_pages": [56],
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "arbitration": true,
+    "arbitration_venue": "Minneapolis, MN or mutually agreed place",
+    "litigation_venue": "Federal District Court for District of Minnesota or Hennepin County District Court, Minneapolis",
+    "governing_law": "Law of state where authorized location is situated",
+    "state_overrides": ["California: venue restrictions may not apply", "Illinois: venue outside IL void (except arbitration)", "Minnesota: no out-of-state litigation, no jury waiver", "North Dakota: arbitration at nearest AAA office", "Rhode Island: forum restriction void for RI Act claims", "Washington: arbitration in WA or mutually agreed place"],
+    "source_section": "Item 17",
+    "source_pages": [56],
+    "confidence": "high"
+  },
+  "termination": {
+    "by_franchisee": "For material breach after 30-day notice; effective 60 days after notice",
+    "by_franchisor_cure_periods": {
+      "24_hours": "Defaults impairing goodwill or public health/safety",
+      "10_days": "Failure to provide reports or pay amounts due",
+      "30_days": "All other curable defaults"
+    },
+    "non_curable": "Loss of premises, failure to reopen, abandonment, insolvency, conviction, intentional underreporting, 3rd default in 12 months, OFAC designation",
+    "termination_fee": "2x last 12 months continuing license fee (or prorated formulas)",
+    "source_section": "Item 17",
+    "source_pages": [54, 55],
+    "confidence": "high"
+  },
+  "transfer": {
+    "consent_required": true,
+    "not_unreasonably_withheld": true,
+    "transfer_fee": 6000,
+    "transfer_fee_escalation": "Increases $500 every 5 years starting Jan 1, 2030",
+    "right_of_first_refusal": true,
+    "conditions": "Transferee qualifies, fee paid, amounts owed paid, compliance, guarantee, release, training, sign then-current agreement (materially different possible), facility improvements",
+    "source_section": "Item 17",
+    "source_pages": [55],
+    "confidence": "high"
+  },
+  "item19_fpr": {
+    "fpr_provided": false,
+    "verbatim_no_fpr": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets.",
+    "source_section": "Item 19",
+    "source_pages": [57],
+    "confidence": "high"
+  },
+  "item20_outlets": {
+    "direct_licensed_end_2024": 727,
+    "company_owned_end_2024": 0,
+    "subfranchised_end_2024": 358,
+    "total_system_end_2024": 1085,
+    "net_change_direct_3yr": -101,
+    "gag_clause": true,
+    "gag_clause_verbatim": "In some instances, during the last three fiscal years, current and former franchisees have signed provisions restricting their ability to speak openly about their experience with ADQ.",
+    "former_franchisees_count": 30,
+    "projected_openings": 0,
+    "agreements_signed_not_opened": 1,
+    "source_section": "Item 20",
+    "source_pages": [57, 67],
+    "confidence": "high"
+  },
+  "item21_financials": {
+    "entity": "International Dairy Queen, Inc. (IDQ) — consolidated",
+    "auditor": "Deloitte & Touche LLP",
+    "opinion": "Unqualified (clean)",
+    "going_concern": false,
+    "audit_date": "2025-02-07",
+    "guarantee_of_performance": true,
+    "guarantee_entity": "International Dairy Queen, Inc.",
+    "total_assets_2024": 355906,
+    "total_liabilities_2024": 275596,
+    "stockholder_equity_2024": 80310,
+    "retained_deficit_2024": -68411,
+    "total_revenue_2024": 257641,
+    "net_income_2024": 97875,
+    "operating_income_2024": 126010,
+    "dividends_2024": 110000,
+    "cash_from_operations_2024": 105613,
+    "source_section": "Item 21, Exhibit K",
+    "source_pages": [68, 359, 361, 362, 363, 364],
+    "confidence": "high"
+  },
+  "training": {
+    "total_hours": 174,
+    "classroom_hours": 32,
+    "ojt_hours": 142,
+    "phases": 3,
+    "cost_per_person": 3600,
+    "mtra_cost": 200,
+    "servsafe_cost": "200-400",
+    "phase_3_location": "Minneapolis, MN",
+    "required_attendees": "Designated manager + 1 assistant manager (first location); designated manager only (ARD)",
+    "source_section": "Item 11",
+    "source_pages": [45, 46, 47],
+    "confidence": "high"
+  },
+  "technology": {
+    "epos_vendor": "ParTech, Inc.",
+    "epos_initial_cost": "$20,800-$25,700",
+    "epos_monthly_software": "$370-$413",
+    "epos_warranty_monthly": "$46-$118",
+    "payment_processor": "Fiserv (formerly FirstData)",
+    "payment_processing_rate": "2%-5% per transaction",
+    "encryption_vendor": "Verifone",
+    "encryption_monthly": "$10/terminal",
+    "mobile_ordering": "Olo Inc. (0.25% per transaction fee)",
+    "loyalty": "Punchh Inc.",
+    "firewall": "Acumera ($51/month)",
+    "gift_cards": "ValueLink/DQGC (3% of redemptions)",
+    "digital_menu": "Cineplex Digital Media Inc.",
+    "source_section": "Item 8, Item 11",
+    "source_pages": [31, 43, 44],
+    "confidence": "high"
+  },
+  "supply_chain": {
+    "entity": "Unified Supply Chain, Inc. (USCI), IDQ subsidiary",
+    "margin_commitment": "Maximum average 1.5% for 2025 (permanently capped)",
+    "revenue_from_suppliers_2024": 40325880,
+    "pct_of_total_revenue": "16%",
+    "cost_to_establish_pct": "80%-90% of establishment cost (excl. land) from ADQ-specified purchases",
+    "cost_to_operate_pct": "25%-35% of operating cost from ADQ-specified purchases",
+    "independent_audit": true,
+    "source_section": "Item 8",
+    "source_pages": [33, 34, 35],
+    "confidence": "high"
+  },
+  "litigation": {
+    "pending_cases": [
+      {
+        "case": "Project Lonestar, Inc. vs. ADQ",
+        "court": "N.D. Texas",
+        "filed": "2025-02-11",
+        "claims": "Breach of contract, interference, fraud related to transfer process",
+        "status": "Pending",
+        "source_pages": [16]
+      }
+    ],
+    "settled_cases_count": 3,
+    "franchise_relationship_actions_fy2024": "None required to be disclosed",
+    "source_section": "Item 3",
+    "source_pages": [16, 17, 18, 19],
+    "confidence": "high"
+  },
+  "bankruptcy": {
+    "disclosed": false,
+    "source_section": "Item 4",
+    "source_pages": [19],
+    "confidence": "high"
+  },
+  "public_figures": {
+    "used": false,
+    "source_section": "Item 18",
+    "source_pages": [56],
+    "confidence": "high"
+  },
+  "state_addenda": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "source_pages": [69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79],
+    "confidence": "high"
+  },
+  "guarantee_scope": {
+    "type": "unlimited_personal",
+    "who_signs": "ALL owners of business entity",
+    "scope": "Joint and several guarantee of full performance of every obligation under the operating agreement",
+    "includes": ["payment of all amounts", "performance of all covenants", "dispute resolution provisions", "jury trial waiver", "enforcement costs"],
+    "waivers": ["notice of demand", "protest and notice of default", "right to require exhaustion of remedies against licensee"],
+    "survives": "Insolvency, bankruptcy, or reorganization of licensee",
+    "source_section": "Exhibit B — Undertaking and Guarantee",
+    "source_pages": [129],
+    "confidence": "high"
+  },
+  "limitations_on_claims": {
+    "general": "Earlier of: applicable statute of limitations, 1 year from discovery, or 2 years from first act/omission",
+    "exceptions": "Underreporting Gross Sales, indemnification, and trademark claims — subject only to applicable statutes",
+    "source_section": "Operating Agreement Section 14.8",
+    "source_pages": [121],
+    "confidence": "high"
+  },
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "california": {
+      "damages": "Liquidated damages may be unenforceable (Civil Code §1671)",
+      "noncompete": "Post-term noncompete may not be enforceable",
+      "forum_selection": "Arbitration venue subject to CA law",
+      "general_release": "Cannot waive Franchise Investment Law or Franchise Relations Act rights"
+    },
+    "hawaii": {"general_release": "Anti-waiver provision"},
+    "illinois": {
+      "governing_law": "Illinois law governs",
+      "forum_selection": "Venue outside IL void (except arbitration)",
+      "general_release": "Release violating IL Franchise Disclosure Act void"
+    },
+    "maryland": {
+      "initial_fees": "Deferred until opening (financial assurance required)",
+      "termination": "Bankruptcy termination may not be enforceable",
+      "forum_selection": "Claims may be brought in Maryland",
+      "general_release": "Release does not apply to MD franchise law liability"
+    },
+    "minnesota": {
+      "damages": "No liquidated damages or termination penalties",
+      "forum_selection": "No out-of-state litigation, no jury trial waiver",
+      "notice_cure": "90 days termination notice / 60 days cure; 180 days nonrenewal notice",
+      "general_release": "Cannot waive MN franchise law rights"
+    },
+    "north_dakota": {
+      "damages": "Termination fee provision DELETED IN ITS ENTIRETY",
+      "noncompete": "Enforceable only under certain conditions",
+      "forum_selection": "Arbitration at nearest AAA office (not Minneapolis)"
+    },
+    "rhode_island": {"forum_selection": "Forum restriction outside RI void for RI Act claims"},
+    "virginia": {"termination": "Termination without reasonable cause unlawful"},
+    "washington": {
+      "governing_law": "WA Franchise Investment Protection Act prevails",
+      "forum_selection": "Arbitration/mediation in WA",
+      "general_release": "Cannot waive WA Act rights except with independent counsel",
+      "transfer": "Transfer fees must reflect actual costs",
+      "noncompete": "Void if employee earns <$100K; no-poach void"
+    },
+    "source_pages": [69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79],
+    "confidence": "high"
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "TOC lists Texas in state addenda but no Texas addendum found in document body. Maryland present but not in TOC.", "severity": "medium", "source": "Page 7 (TOC) vs pages 69-79 (body)"},
+    {"id": "U2", "description": "Only IDQ consolidated financials provided, not ADQ standalone. Buyers cannot evaluate ADQ's standalone financial health.", "severity": "medium", "source": "Page 68 (Item 21), page 72 (IL addendum)"},
+    {"id": "U3", "description": "No FPR — ADQ does not disclose financial performance data. Buyers must rely on independent research.", "severity": "high", "source": "Page 57 (Item 19)"},
+    {"id": "U4", "description": "Item 20 systemwide table start-of-year differs from status table start-of-year (789 vs 785 for 2023). Partially explained by concept conversion footnotes.", "severity": "low", "source": "Pages 57-62"},
+    {"id": "U5", "description": "Subfranchised 2022 systemwide start (289) vs status table start (389) discrepancy. Unexplained — likely reclassification.", "severity": "low", "source": "Pages 63, 65"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "TOC lists Texas in state addenda; body contains Maryland instead. Document assembly error.", "items_involved": ["TOC (page 7)", "State addenda (pages 69-79)"], "resolution_status": "Unresolved"},
+    {"id": "C2", "description": "Item 20 systemwide vs status table start-of-year figures differ (789 vs 785 for 2023). Concept conversion footnotes partially explain but do not fully reconcile.", "items_involved": ["Item 20 systemwide (page 57)", "Item 20 status (pages 60-62)"], "resolution_status": "Partially resolved"}
+  ]
+}

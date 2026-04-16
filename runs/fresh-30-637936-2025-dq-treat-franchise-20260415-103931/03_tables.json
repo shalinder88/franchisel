@@ -1,0 +1,349 @@
+{
+  "extraction_date": "2026-04-16",
+  "brand": "DQ Treat",
+  "filing_id": "637936-2025",
+  "tables": [
+    {
+      "id": "T5-1",
+      "item": 5,
+      "title": "Initial Fees Summary",
+      "source_pages": [20],
+      "columns": ["Fee", "Amount", "Refundability"],
+      "rows": [
+        {"Fee": "Initial Franchise Fee", "Amount": "$25,000", "Refundability": "Partially refundable — $10,000 deposit non-refundable; balance refundable under 4 specified conditions"},
+        {"Fee": "MTRA Fee", "Amount": "$200 per attendee per attempt", "Refundability": "Non-refundable (may be applied to next MTRA if cancelled >1 business day before)"}
+      ],
+      "table_notes": ["No initial franchise fee for conversions, relocations, or OJ conversions. Reduced fee may apply for reopened locations, certain captive-venues, and qualifying multi-unit operators."]
+    },
+    {
+      "id": "T6-1",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [21, 22, 23, 24],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Type of Fee": "Continuing License Fee", "Amount": "5% of Gross Sales", "Due Date": "10th of each month", "Remarks": "May be reduced for specialty captive-venue locations. Conversions/relocations may have different rates."},
+        {"Type of Fee": "Sales Promotion Program Fee", "Amount": "Up to 6% of Gross Sales (OJ branded); 5%-6% of Gross Sales (all other)", "Due Date": "10th of each month", "Remarks": "ADQ determines percentage within range. 90 days notice of changes. Street OJ: 5%; Captive-venue OJ: 1.25%."},
+        {"Type of Fee": "Lease-Required Sales Promotion Fees", "Amount": "Varies", "Due Date": "When due", "Remarks": "Additional to SPF per lease requirements."},
+        {"Type of Fee": "Transfer Fee", "Amount": "$6,000", "Due Date": "With transfer application", "Remarks": "Increases $500 every 5 years starting Jan 1, 2030. Refundable if ADQ refuses or exercises ROFR (less actual costs)."},
+        {"Type of Fee": "Renewal Fee", "Amount": "$1,000 × years of renewal term (max $10,000)", "Due Date": "At time of renewal", "Remarks": "Partial year counts as full year."},
+        {"Type of Fee": "Audit and Recordkeeping Costs", "Amount": "CLF% + SPF% × understated Gross Sales + audit costs", "Due Date": "After audit revealing ≥3% understatement", "Remarks": "Includes salaries, accountant fees, attorney fees, copying, travel, meals, lodging. Plus costs of any additional audits within 2 years."},
+        {"Type of Fee": "Termination Fee", "Amount": "2× last 12 months CLF (or prorated formulas)", "Due Date": "Upon termination", "Remarks": "Applies on default termination. Three calculation methods depending on operating history."},
+        {"Type of Fee": "Interest Expenses", "Amount": "18% per annum or max legal rate", "Due Date": "When due", "Remarks": "On past-due payments."},
+        {"Type of Fee": "Late Fees", "Amount": "$50 per delinquent report or payment", "Due Date": "When due", "Remarks": "Per occurrence."},
+        {"Type of Fee": "Additional Training Fees", "Amount": "Varies", "Due Date": "When incurred", "Remarks": "For replacement managers."},
+        {"Type of Fee": "Gift Card Program Fees", "Amount": "3% of total gift card redemptions", "Due Date": "When incurred", "Remarks": "~$200/year/location. Shared cost model with NMF."},
+        {"Type of Fee": "Costs and Attorneys' Fees", "Amount": "Varies", "Due Date": "When incurred", "Remarks": "For enforcement of franchise agreement."},
+        {"Type of Fee": "Training Materials", "Amount": "$150-$500", "Due Date": "As materials provided", "Remarks": "Periodic required purchase."},
+        {"Type of Fee": "Training Cancellation/Substitution Fee", "Amount": "$100-$1,000", "Due Date": "Upon cancellation or substitution", "Remarks": "$150 (phase 1-2, >14 days); $750 (phase 1-2, ≤14 days); $1,000 (phase 3, ≤21 days). Substitution: $200."}
+      ],
+      "table_notes": [
+        "(1) Except where otherwise noted, all fees are payable to ADQ or its affiliates, uniformly imposed, and nonrefundable.",
+        "(2) Conversion and relocation franchisees may have different CLF rates. Pre-April 2007 renewal with 6% CLF: remains at 6% until modernization complete, then 5%.",
+        "(3) Conversion SPF rates vary: soft-serve only conversion 3%, NSF conversion ≥2.5%. Relocation phases in: years 1-5 carry over, years 6-10 ≥3.5-4%, year 11+ standard 5-6%.",
+        "(4) See Item 11 for training details and Item 7 footnote 5.",
+        "(5) Late payers may be required to remit via weekly payment program. ADQ may pay franchisee's debts and demand immediate reimbursement."
+      ]
+    },
+    {
+      "id": "T7-1",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [25, 26],
+      "columns": ["Type of Expenditure", "Amount Captive-Venue", "Amount Street", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"Type of Expenditure": "Initial Franchise Fee", "Amount Captive-Venue": "$25,000", "Amount Street": "$25,000", "Method of Payment": "Lump sum", "When Due": "When submit application", "To Whom": "ADQ"},
+        {"Type of Expenditure": "Initial Training Fees and Costs", "Amount Captive-Venue": "$400-$8,400", "Amount Street": "$750-$8,400", "Method of Payment": "Lump sum", "When Due": "Prior to training", "To Whom": "ADQ or third party"},
+        {"Type of Expenditure": "Travel and Living Expenses for Training", "Amount Captive-Venue": "$5,200-$17,300", "Amount Street": "$5,200-$17,300", "Method of Payment": "Lump sum", "When Due": "As incurred", "To Whom": "Transportation, hotels, restaurants"},
+        {"Type of Expenditure": "Building, Construction, Leasehold Improvements", "Amount Captive-Venue": "$235,000-$470,000", "Amount Street": "$390,000-$870,000", "Method of Payment": "As incurred", "When Due": "Prior to opening", "To Whom": "Landlord, third party suppliers, contractors"},
+        {"Type of Expenditure": "Prepaid Rent and Security Deposit", "Amount Captive-Venue": "$2,500-$5,500", "Amount Street": "$2,500-$5,500", "Method of Payment": "Lump sum", "When Due": "Prior to opening", "To Whom": "Landlord"},
+        {"Type of Expenditure": "Construction Consultation Services", "Amount Captive-Venue": "$0-$5,000", "Amount Street": "$0-$7,500", "Method of Payment": "Lump sum", "When Due": "Prior to consultation", "To Whom": "ADQ"},
+        {"Type of Expenditure": "Building Plans, Design Intent Plans, Arch Seal", "Amount Captive-Venue": "$7,000-$20,000", "Amount Street": "$10,000-$50,000", "Method of Payment": "Lump sum", "When Due": "As incurred", "To Whom": "ADQ or third party"},
+        {"Type of Expenditure": "Equipment (incl signs, POS)", "Amount Captive-Venue": "$220,000-$360,000", "Amount Street": "$360,000-$420,000", "Method of Payment": "Lump sum or financed", "When Due": "Usually upon order", "To Whom": "Third party suppliers"},
+        {"Type of Expenditure": "Training Inventory", "Amount Captive-Venue": "$3,000-$6,000", "Amount Street": "$4,000-$8,000", "Method of Payment": "Lump sum", "When Due": "Prior to opening", "To Whom": "Third party suppliers"},
+        {"Type of Expenditure": "Opening Inventory", "Amount Captive-Venue": "$6,000-$10,000", "Amount Street": "$6,000-$15,000", "Method of Payment": "Lump sum", "When Due": "Prior to opening", "To Whom": "Third party suppliers"},
+        {"Type of Expenditure": "Utility Deposits, Licenses, Gov't Charges", "Amount Captive-Venue": "$3,000-$7,500", "Amount Street": "$3,000-$15,000", "Method of Payment": "Lump sum", "When Due": "Prior to opening", "To Whom": "Third party, municipality"},
+        {"Type of Expenditure": "Attorneys' Fees", "Amount Captive-Venue": "$1,000-$8,000", "Amount Street": "$1,000-$8,000", "Method of Payment": "Lump sum", "When Due": "As incurred", "To Whom": "Attorney"},
+        {"Type of Expenditure": "Additional Funds (3 months)", "Amount Captive-Venue": "$41,000-$115,000", "Amount Street": "$41,000-$155,000", "Method of Payment": "As incurred", "When Due": "Prior to opening and as incurred", "To Whom": "ADQ, affiliates, employees, third party"},
+        {"Type of Expenditure": "TOTAL", "Amount Captive-Venue": "$549,100-$1,057,700", "Amount Street": "$848,450-$1,604,700", "Method of Payment": "", "When Due": "", "To Whom": ""}
+      ],
+      "table_notes": [
+        "Land costs NOT included. Street location land generally $250,000-$620,000+.",
+        "Lending institutions typically require 20% equity on leasehold improvements, 25% on equipment.",
+        "Conversion franchisees may not incur all expenses. Costs vary by building condition and type.",
+        "ADQ cautions to allow for inflation, discretionary expenditures, fluctuating interest rates, and local market conditions."
+      ]
+    },
+    {
+      "id": "T9-1",
+      "item": 9,
+      "title": "Franchisee's Obligations",
+      "source_pages": [36, 37],
+      "columns": ["Obligation", "Section in Agreement", "Disclosure Document Item"],
+      "rows": [
+        {"Obligation": "Site selection and acquisition/lease", "Section in Agreement": "Section 2.1, 5.1, 5.6", "Disclosure Document Item": "Items 5, 7, 11"},
+        {"Obligation": "Pre-opening purchase/leases", "Section in Agreement": "Section 6.1-6.5, 6.15", "Disclosure Document Item": "Items 5, 7, 8, 11"},
+        {"Obligation": "Site development and pre-opening", "Section in Agreement": "Section 2.2, 5.1", "Disclosure Document Item": "Items 5, 7, 11"},
+        {"Obligation": "Initial and ongoing training", "Section in Agreement": "Section 2.2, 7.1-7.8, 11.3", "Disclosure Document Item": "Items 5, 11"},
+        {"Obligation": "Fees", "Section in Agreement": "Section 9.1-9.7", "Disclosure Document Item": "Items 5, 6, 7"},
+        {"Obligation": "Compliance with standards/Operating Manual", "Section in Agreement": "Section 6", "Disclosure Document Item": "Items 11, 16"},
+        {"Obligation": "Trademarks and proprietary info", "Section in Agreement": "Section 3, 6.3, 6.12", "Disclosure Document Item": "Items 13, 14"},
+        {"Obligation": "Product/service restrictions", "Section in Agreement": "Section 6", "Disclosure Document Item": "Items 8, 11, 16"},
+        {"Obligation": "Ongoing product/service purchases", "Section in Agreement": "Section 6", "Disclosure Document Item": "Items 8, 11"},
+        {"Obligation": "Insurance", "Section in Agreement": "Section 10.3", "Disclosure Document Item": "Items 5, 6, 8"},
+        {"Obligation": "Advertising", "Section in Agreement": "Section 8, 9.3", "Disclosure Document Item": "Items 5, 6, 7, 11"},
+        {"Obligation": "Indemnification", "Section in Agreement": "Section 10.2", "Disclosure Document Item": "None"},
+        {"Obligation": "Owner participation/management/staffing", "Section in Agreement": "Section 7", "Disclosure Document Item": "Items 11, 15"},
+        {"Obligation": "Records and reports", "Section in Agreement": "Section 9.8, 9.9", "Disclosure Document Item": "Item 6"},
+        {"Obligation": "Inspections and audits", "Section in Agreement": "Section 6.8, 9.10", "Disclosure Document Item": "Item 6"},
+        {"Obligation": "Transfer", "Section in Agreement": "Section 11", "Disclosure Document Item": "Items 6, 17"},
+        {"Obligation": "Renewal", "Section in Agreement": "Section 4.3", "Disclosure Document Item": "Item 17"},
+        {"Obligation": "Post-termination obligations", "Section in Agreement": "Section 14", "Disclosure Document Item": "Item 17"},
+        {"Obligation": "Non-competition covenants", "Section in Agreement": "Section 10.5, 14.6", "Disclosure Document Item": "Item 17"},
+        {"Obligation": "Dispute resolution", "Section in Agreement": "Section 3.5, 12, 15.8-15.10", "Disclosure Document Item": "Item 17"}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "T11-1",
+      "item": 11,
+      "title": "Training Program",
+      "source_pages": [46],
+      "columns": ["Subject", "Classroom Hours", "OJT Hours", "Location"],
+      "rows": [
+        {"Subject": "Store Operations (product, equipment, shift positions work experience)", "Classroom Hours": 0, "OJT Hours": 32, "Location": "At a DQ location"},
+        {"Subject": "Customer Service", "Classroom Hours": 0, "OJT Hours": 2, "Location": "At a DQ location"},
+        {"Subject": "Store Operations (shift positions, managing shifts, mgmt modules)", "Classroom Hours": 0, "OJT Hours": 92, "Location": "At a DQ location"},
+        {"Subject": "Sanitation", "Classroom Hours": 0, "OJT Hours": 2, "Location": "At a DQ location"},
+        {"Subject": "Safety", "Classroom Hours": 0, "OJT Hours": 2, "Location": "At a DQ location"},
+        {"Subject": "Marketing", "Classroom Hours": 0, "OJT Hours": 2, "Location": "At a DQ location"},
+        {"Subject": "Financial Management (cash mgmt, recordkeeping)", "Classroom Hours": 0, "OJT Hours": 2, "Location": "At a DQ location"},
+        {"Subject": "Register/Back Office System", "Classroom Hours": 0, "OJT Hours": 8, "Location": "At a DQ location"},
+        {"Subject": "Facility Management (service profit chain, DQ Capability Model)", "Classroom Hours": 3, "OJT Hours": 0, "Location": "Classroom in Minneapolis, MN"},
+        {"Subject": "Human Resource Management", "Classroom Hours": 7, "OJT Hours": 0, "Location": "Classroom in Minneapolis, MN"},
+        {"Subject": "Customer Service/PRIDE/Speed of Service/Local Marketing", "Classroom Hours": 4, "OJT Hours": 0, "Location": "Classroom in Minneapolis, MN"},
+        {"Subject": "Situational Leadership", "Classroom Hours": 8, "OJT Hours": 0, "Location": "Classroom in Minneapolis, MN"},
+        {"Subject": "Goals/Change Management/Time Management", "Classroom Hours": 4, "OJT Hours": 0, "Location": "Classroom in Minneapolis, MN"},
+        {"Subject": "Financial Management (COGS, recordkeeping, labor, controllables)", "Classroom Hours": 6, "OJT Hours": 0, "Location": "Classroom in Minneapolis, MN"},
+        {"Subject": "TOTAL", "Classroom Hours": 32, "OJT Hours": 142, "Location": ""}
+      ],
+      "table_notes": [
+        "Phases 1 and 2 (~2.5 weeks, must complete within 6 months before opening) at ADQ-certified DQ locations.",
+        "Phase 3 (4 days) in Minneapolis, MN or other designated location. May be conducted online/virtually in certain circumstances.",
+        "Materials: reference packets, workbooks, demos, reviews, lectures, exams, skill assessments. Laptop with internet required for in-store training.",
+        "Training staff: Director of Training + 7 field training consultants (8-40 years experience) + 20-40 restaurant training specialists."
+      ]
+    },
+    {
+      "id": "T11-2",
+      "item": 11,
+      "title": "DQ Sales Promotion Fund Spending Breakdown (FY2024)",
+      "source_pages": [42],
+      "columns": ["Category", "Percentage"],
+      "rows": [
+        {"Category": "Production", "Percentage": "19.7%"},
+        {"Category": "Media Placement", "Percentage": "66.8%"},
+        {"Category": "Administrative Expenses", "Percentage": "4.3%"},
+        {"Category": "Other (audits, CMN, POS items, research, advisory council expenses)", "Percentage": "9.1%"},
+        {"Category": "TOTAL", "Percentage": "100.0%"}
+      ],
+      "table_notes": ["Percentages vary if calculated at individual restaurant level, by area, or by type of DQ business."]
+    },
+    {
+      "id": "T11-3",
+      "item": 11,
+      "title": "Orange Julius Sales Promotion Fund Spending (FY2024)",
+      "source_pages": [43],
+      "columns": ["Category", "Percentage"],
+      "rows": [
+        {"Category": "Production", "Percentage": "46.1%"},
+        {"Category": "Media Placement", "Percentage": "26.2%"},
+        {"Category": "Administrative Expenses", "Percentage": "27.1%"},
+        {"Category": "Other", "Percentage": "0.6%"},
+        {"Category": "TOTAL", "Percentage": "100.0%"}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "T17-1",
+      "item": 17,
+      "title": "The Franchise Relationship — Renewal, Termination, Transfer, Dispute Resolution",
+      "source_pages": [53, 54, 55, 56],
+      "columns": ["Provision", "Section", "Summary"],
+      "rows": [
+        {"Provision": "Length of term", "Section": "4.1", "Summary": "15 years (new); lesser of 15 years or remaining term (transfer); renewal term from expiring agreement (renewal)"},
+        {"Provision": "Renewal", "Section": "4.3", "Summary": "One additional term: shorter of 15 years or remaining lease term"},
+        {"Provision": "Renewal requirements", "Section": "4.3", "Summary": "Notice 3-6 months before; sign then-current agreement (may differ materially, higher fees); modernize; good standing; right to premises; pay renewal fee; sign release"},
+        {"Provision": "Termination by franchisee", "Section": "13.3", "Summary": "For material breach after 30-day notice to cure; effective 60 days after notice"},
+        {"Provision": "Termination by franchisor with cause", "Section": "13.2", "Summary": "If franchisee defaults"},
+        {"Provision": "Curable defaults", "Section": "13.1, 13.2(A-B)", "Summary": "24 hours (goodwill/health/safety); 10 days (reports/payments); 30 days (all other)"},
+        {"Provision": "Non-curable defaults", "Section": "13.1, 13.2(C)", "Summary": "Lose premises, failure to reopen, abandonment, insolvency, conviction, intentional underreporting, 3rd default in 12 months, OFAC designation"},
+        {"Provision": "Obligations on termination", "Section": "13.2(D), 14", "Summary": "Stop using marks; pay amounts due; comply with noncompete; maintain confidentiality; pay termination fee"},
+        {"Provision": "Assignment by franchisor", "Section": "11.6", "Summary": "No restriction"},
+        {"Provision": "Transfer defined", "Section": "11.2", "Summary": "Restaurant, assets, revenues, ownership interest, or management agreement"},
+        {"Provision": "Franchisor approval of transfer", "Section": "11.1, 11.4", "Summary": "Consent required; not unreasonably withheld if all requirements met"},
+        {"Provision": "Transfer conditions", "Section": "11.3", "Summary": "Transferee qualifies; pay $6,000 fee; amounts paid; compliance; guarantee; release; training; sign then-current agreement (may differ materially); facility improvements; post-term obligations"},
+        {"Provision": "Right of first refusal", "Section": "11.3(B)", "Summary": "ADQ can match offer to purchase; appraiser sets price in insolvency"},
+        {"Provision": "Purchase option", "Section": "14.5", "Summary": "On termination/expiration, ADQ may purchase restaurant assets; appraiser determines price"},
+        {"Provision": "Death or disability", "Section": "11.2", "Summary": "Must comply with all transfer requirements"},
+        {"Provision": "In-term noncompete", "Section": "10.5", "Summary": "No involvement in QSR serving hamburgers (no alcohol) or business with >10% revenue from ice cream/yogurt/frozen custard/fruit beverages/soft-serve/frozen treats"},
+        {"Provision": "Post-term noncompete", "Section": "14.6", "Summary": "1 year after termination/expiration; within 500 meters (Street) or same building/venue (Captive-venue)"},
+        {"Provision": "Modification", "Section": "6.1, 6.11, 15.4", "Summary": "Must be signed by both parties; but ADQ can change menu, Operations Manual, and trademarks unilaterally"},
+        {"Provision": "Integration/merger", "Section": "15.2", "Summary": "Franchise agreement + addenda + application = sole agreement (subject to state law). Does not disclaim FDD representations."},
+        {"Provision": "Arbitration", "Section": "12", "Summary": "Most disputes: arbitration in Minneapolis, MN or mutually agreed place (subject to state law)"},
+        {"Provision": "Choice of forum", "Section": "15.9", "Summary": "Federal District Court for District of MN or Hennepin County District Court, Minneapolis (subject to state law)"},
+        {"Provision": "Choice of law", "Section": "15.8", "Summary": "Law of state where authorized location is situated"}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "T19-1",
+      "item": 19,
+      "title": "Financial Performance Representations",
+      "source_pages": [57],
+      "columns": [],
+      "rows": [],
+      "table_notes": ["NO FPR. ADQ does not make any financial performance representations. No tables, no revenue data, no cost data disclosed."]
+    },
+    {
+      "id": "T20-1",
+      "item": 20,
+      "title": "Direct-Licensed Outlets Systemwide Summary (2022-2024)",
+      "source_pages": [57],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": 2022, "Start of Year": 828, "End of Year": 789, "Net Change": -39},
+        {"Outlet Type": "Franchised", "Year": 2023, "Start of Year": 789, "End of Year": 751, "Net Change": -38},
+        {"Outlet Type": "Franchised", "Year": 2024, "Start of Year": 751, "End of Year": 727, "Net Change": -24},
+        {"Outlet Type": "Company-Owned", "Year": 2022, "Start of Year": 0, "End of Year": 0, "Net Change": 0},
+        {"Outlet Type": "Company-Owned", "Year": 2023, "Start of Year": 0, "End of Year": 0, "Net Change": 0},
+        {"Outlet Type": "Company-Owned", "Year": 2024, "Start of Year": 0, "End of Year": 0, "Net Change": 0}
+      ],
+      "table_notes": ["Includes DQ Treat, Dairy Queen/Limited Brazier, and DQ soft-serve only locations. Does not include subfranchised territory operator outlets or other franchise programs."]
+    },
+    {
+      "id": "T20-2",
+      "item": 20,
+      "title": "Direct-Licensed Outlets — Status of Franchised Outlets (2022-2024) Totals",
+      "source_pages": [60, 61, 62],
+      "columns": ["Year", "Start", "Opened", "Terminated", "Non-Renewed", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        {"Year": 2022, "Start": 828, "Opened": 0, "Terminated": 31, "Non-Renewed": 12, "Reacquired": 0, "Ceased Other": 0, "End": 785},
+        {"Year": 2023, "Start": 785, "Opened": 2, "Terminated": 28, "Non-Renewed": 7, "Reacquired": 0, "Ceased Other": 4, "End": 748},
+        {"Year": 2024, "Start": 748, "Opened": 0, "Terminated": 15, "Non-Renewed": 5, "Reacquired": 0, "Ceased Other": 1, "End": 727}
+      ],
+      "table_notes": [
+        "Conversions from another DQ concept or territory operator acquisitions counted as openings: 0 (2022), 0 (2023), 3 (2024).",
+        "Conversions to another DQ concept or territory operator acquisitions counted as closings: 0 (2022), 4 (2023), 2 (2024).",
+        "Note: Start-of-year in status table (785 for 2023) differs from systemwide table (789) — likely due to mid-year reclassification adjustments."
+      ]
+    },
+    {
+      "id": "T20-3",
+      "item": 20,
+      "title": "Direct-Licensed Outlets — Transfers (2022-2024) Totals",
+      "source_pages": [58, 59],
+      "columns": ["Year", "Number of Transfers"],
+      "rows": [
+        {"Year": 2022, "Number of Transfers": 43},
+        {"Year": 2023, "Number of Transfers": 39},
+        {"Year": 2024, "Number of Transfers": 47}
+      ],
+      "table_notes": ["Detailed state-by-state breakdown available in source pages."]
+    },
+    {
+      "id": "T20-4",
+      "item": 20,
+      "title": "Direct-Licensed Outlets — Company-Owned Status (2022-2024)",
+      "source_pages": [63],
+      "columns": ["Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        {"Year": 2022, "Start": 0, "Opened": 0, "Reacquired": 0, "Closed": 0, "Sold to Franchisee": 0, "End": 0},
+        {"Year": 2023, "Start": 0, "Opened": 0, "Reacquired": 0, "Closed": 0, "Sold to Franchisee": 0, "End": 0},
+        {"Year": 2024, "Start": 0, "Opened": 0, "Reacquired": 0, "Closed": 0, "Sold to Franchisee": 0, "End": 0}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "T20-5",
+      "item": 20,
+      "title": "Direct-Licensed Outlets — Projected Openings as of Dec 31, 2024",
+      "source_pages": [63],
+      "columns": ["State", "Agreements Signed Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        {"State": "New Mexico", "Agreements Signed Not Opened": 1, "Projected New Franchised": 0, "Projected New Company-Owned": 0},
+        {"State": "Total", "Agreements Signed Not Opened": 1, "Projected New Franchised": 0, "Projected New Company-Owned": 0}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "T20-6",
+      "item": 20,
+      "title": "Subfranchised Territory Operator Outlets — Systemwide Summary (2022-2024)",
+      "source_pages": [63],
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": 2022, "Start": 289, "End": 376, "Net Change": 87},
+        {"Outlet Type": "Franchised", "Year": 2023, "Start": 376, "End": 371, "Net Change": -5},
+        {"Outlet Type": "Franchised", "Year": 2024, "Start": 371, "End": 358, "Net Change": -13},
+        {"Outlet Type": "Company-Owned", "Year": 2022, "Start": 0, "End": 0, "Net Change": 0},
+        {"Outlet Type": "Company-Owned", "Year": 2023, "Start": 0, "End": 0, "Net Change": 0},
+        {"Outlet Type": "Company-Owned", "Year": 2024, "Start": 0, "End": 0, "Net Change": 0}
+      ],
+      "table_notes": ["Information provided by territory operators, not independently verified by ADQ."]
+    },
+    {
+      "id": "T20-7",
+      "item": 20,
+      "title": "Subfranchised Territory Operator Outlets — Status of Franchised (2022-2024) Totals",
+      "source_pages": [65, 66],
+      "columns": ["Year", "Start", "Opened", "Terminated", "Non-Renewed", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        {"Year": 2022, "Start": 389, "Opened": 1, "Terminated": 9, "Non-Renewed": 0, "Reacquired": 0, "Ceased Other": 5, "End": 376},
+        {"Year": 2023, "Start": 376, "Opened": 2, "Terminated": 4, "Non-Renewed": 1, "Reacquired": 1, "Ceased Other": 1, "End": 371},
+        {"Year": 2024, "Start": 371, "Opened": 2, "Terminated": 10, "Non-Renewed": 1, "Reacquired": 4, "Ceased Other": 0, "End": 358}
+      ],
+      "table_notes": [
+        "Conversions: 0 in all years for openings. Closings: 1 (2022), 1 (2023), 0 (2024) were concept conversions.",
+        "Note: Systemwide start in 2022 is 289, but status table shows 389. This discrepancy is unexplained."
+      ]
+    },
+    {
+      "id": "T21-1",
+      "item": 21,
+      "title": "IDQ Consolidated Balance Sheet (Dec 31, 2024 and 2023)",
+      "source_pages": [361],
+      "columns": ["Line Item", "2024 ($K)", "2023 ($K)"],
+      "rows": [
+        {"Line Item": "Cash and cash equivalents", "2024 ($K)": 27271, "2023 ($K)": 27032},
+        {"Line Item": "Notes and accounts receivable (net)", "2024 ($K)": 50352, "2023 ($K)": 50742},
+        {"Line Item": "Cash pooling receivable from affiliate", "2024 ($K)": 44559, "2023 ($K)": 55807},
+        {"Line Item": "Total current assets", "2024 ($K)": 132080, "2023 ($K)": 137595},
+        {"Line Item": "Property and equipment (net)", "2024 ($K)": 10903, "2023 ($K)": 12309},
+        {"Line Item": "Goodwill", "2024 ($K)": 92023, "2023 ($K)": 92214},
+        {"Line Item": "Intangibles (net)", "2024 ($K)": 82398, "2023 ($K)": 80049},
+        {"Line Item": "Total assets", "2024 ($K)": 355906, "2023 ($K)": 360513},
+        {"Line Item": "Total current liabilities", "2024 ($K)": 207460, "2023 ($K)": 196917},
+        {"Line Item": "Total liabilities", "2024 ($K)": 275596, "2023 ($K)": 267137},
+        {"Line Item": "Retained deficit", "2024 ($K)": -68411, "2023 ($K)": -56286},
+        {"Line Item": "Total stockholder's equity", "2024 ($K)": 80310, "2023 ($K)": 93376}
+      ],
+      "table_notes": ["In thousands. IDQ consolidated (parent of ADQ). IDQ unconditionally guarantees ADQ's obligations."]
+    },
+    {
+      "id": "T21-2",
+      "item": 21,
+      "title": "IDQ Consolidated Income Statement (2022-2024)",
+      "source_pages": [362],
+      "columns": ["Line Item", "2024 ($K)", "2023 ($K)", "2022 ($K)"],
+      "rows": [
+        {"Line Item": "Service fees", "2024 ($K)": 198627, "2023 ($K)": 188908, "2022 ($K)": 173116},
+        {"Line Item": "Total revenues", "2024 ($K)": 257641, "2023 ($K)": 248261, "2022 ($K)": 236937},
+        {"Line Item": "Total costs and expenses", "2024 ($K)": 131631, "2023 ($K)": 127777, "2022 ($K)": 121027},
+        {"Line Item": "Operating income", "2024 ($K)": 126010, "2023 ($K)": 120484, "2022 ($K)": 115910},
+        {"Line Item": "Net income", "2024 ($K)": 97875, "2023 ($K)": 93884, "2022 ($K)": 88819}
+      ],
+      "table_notes": ["In thousands. All three years show steady revenue and income growth. Service fees (royalties) are the dominant revenue line."]
+    }
+  ]
+}

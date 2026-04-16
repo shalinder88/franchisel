@@ -1,0 +1,134 @@
+{
+  "extraction_date": "2026-04-16",
+  "filing_id": "637936-2025",
+  "brand": "DQ Treat",
+  "enrichment_version": "v2",
+  "item21_financial_structure_detail": {
+    "cash_and_equivalents_2024": 27271,
+    "cash_pooling_receivable_2024": 44559,
+    "accounts_receivable_net_2024": 50352,
+    "goodwill_2024": 92023,
+    "intangibles_net_2024": 82398,
+    "operating_lease_assets_2024": 5090,
+    "total_assets_2024": 355906,
+    "accounts_payable_2024": 27026,
+    "committed_advertising_2024": 39844,
+    "unredeemed_gift_card_liabilities_2024": 102697,
+    "deferred_franchise_income_2024": 3024,
+    "deferred_income_taxes_net_2024": 17652,
+    "operating_lease_liabilities_current_2024": 1004,
+    "operating_lease_liabilities_long_term_2024": 7305,
+    "total_liabilities_2024": 275596,
+    "paid_in_capital_2024": 152197,
+    "retained_deficit_2024": -68411,
+    "total_equity_2024": 80310,
+    "unit": "thousands_usd"
+  },
+  "item21_statement_detail": {
+    "income_statement": {
+      "service_fees_2024": 198627,
+      "service_fees_2023": 188908,
+      "service_fees_2022": 173116,
+      "other_fees_and_franchise_sales_2024": 45681,
+      "sales_advertising_kits_2024": 9446,
+      "sales_company_owned_2024": 3633,
+      "total_revenue_2024": 257641,
+      "total_revenue_2023": 248261,
+      "total_revenue_2022": 236937,
+      "sga_2024": 115600,
+      "total_costs_2024": 131631,
+      "operating_income_2024": 126010,
+      "net_interest_income_2024": 3137,
+      "income_before_taxes_2024": 129147,
+      "provision_for_taxes_2024": 31272,
+      "net_income_2024": 97875,
+      "net_income_2023": 93884,
+      "net_income_2022": 88819
+    },
+    "cash_flows": {
+      "operating_2024": 105613,
+      "operating_2023": 123935,
+      "operating_2022": 84038,
+      "depreciation_amortization_2024": 3803,
+      "capex_2024": -4888,
+      "cash_pooling_net_2024": 11248,
+      "dividends_2024": -110000,
+      "dividends_2023": -110000,
+      "dividends_2022": -85000,
+      "cash_taxes_paid_2024": 37288,
+      "ending_cash_2024": 27271
+    },
+    "equity": {
+      "paid_in_capital_all_years": 152197,
+      "retained_deficit_2024": -68411,
+      "retained_deficit_2023": -56286,
+      "retained_deficit_2022": -40170,
+      "accumulated_oci_2024": -3476,
+      "dividends_2024": 110000,
+      "dividends_2023": 110000,
+      "dividends_2022": 85000
+    },
+    "unit": "thousands_usd"
+  },
+  "item6_fee_detail": {
+    "continuing_license_fee": {
+      "rate": "5% of Gross Sales",
+      "frequency": "Monthly (10th)",
+      "conversion_soft_serve": "Carry over from existing agreement for DQ soft-serve products; 5% on all other",
+      "conversion_nsf": "Same as existing for soft-serve; exempt on food for first 36 months, then 5% of Food Sales minus Base Food Sales",
+      "relocation_years_1_5": "Carry over from existing agreement",
+      "relocation_years_6_10": "Mid-point between existing and 5%",
+      "relocation_year_11_plus": "5% of Gross Sales",
+      "pre_april_2007_renewal": "Remains at 6% until modernization, then 5%",
+      "captive_venue_reduction": "May be reduced for specialty captive-venue locations",
+      "source_pages": [21, 24]
+    },
+    "sales_promotion_fee": {
+      "rate_other_products": "5%-6% of Gross Sales",
+      "rate_oj_branded": "Up to 6% of Gross Sales",
+      "current_oj_street": "5%",
+      "current_oj_captive": "1.25%",
+      "management_fee": "7% of SPF payments (not on SPF above 3% of gross sales)",
+      "voluntary_contribution": "1/7 of total management fees credited to NMF budget",
+      "source_pages": [21, 39]
+    },
+    "termination_fee": {
+      "formula_1": "2× last 12 months CLF",
+      "formula_2": "If <12 months operating: 24× average monthly CLF when open",
+      "formula_3": "If <24 months remaining: remaining months × average monthly CLF for last 12 months",
+      "applies_to": "Default termination",
+      "does_not_apply": "If initial franchise fee refunded under Item 5 conditions",
+      "north_dakota_override": "Deleted in its entirety",
+      "california_override": "May be unenforceable (Civil Code §1671)",
+      "minnesota_override": "Prohibited (Minn. Rule 2860.4400J)",
+      "source_pages": [22, 69, 74, 75]
+    }
+  },
+  "related_party_transactions": {
+    "cash_pooling": {
+      "counterparty": "BH Finance LLC (Berkshire subsidiary)",
+      "receivable_2024": 44559,
+      "receivable_2023": 55807,
+      "interest_income_2024": 2600,
+      "interest_income_2023": 2600,
+      "interest_income_2022": 600,
+      "terms": "Day-to-day borrowing max $10M; no limit on invested amounts. SOFR rate for borrowing. Automatic annual renewal with 90-day termination notice."
+    },
+    "dividends_to_berkshire": {
+      "2024": 110000,
+      "2023": 110000,
+      "2022": 85000
+    },
+    "revenue_from_affiliates": {
+      "2024": 300,
+      "2023": 400,
+      "2022": 500
+    },
+    "unit": "thousands_usd",
+    "source_pages": [375]
+  },
+  "subsequent_events": {
+    "events": "None noted through February 7, 2025",
+    "source_pages": [375]
+  }
+}

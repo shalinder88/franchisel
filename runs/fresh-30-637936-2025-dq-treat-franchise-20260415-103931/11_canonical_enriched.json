@@ -1,0 +1,75 @@
+{
+  "extraction_date": "2026-04-16",
+  "filing_id": "637936-2025",
+  "brand": "DQ Treat",
+  "enrichment_version": "v1",
+  "item19_detail": {
+    "fpr_provided": false,
+    "no_fpr_verbatim": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets.",
+    "substantiation_contact": "Shelly H. O'Callaghan, EVP & General Counsel, (952) 830-0308",
+    "source_pages": [57]
+  },
+  "item20_yearly_activity": {
+    "direct_licensed": {
+      "2022": {"start": 828, "opened": 0, "terminated": 31, "non_renewed": 12, "reacquired": 0, "ceased_other": 0, "end": 789, "transfers": 43},
+      "2023": {"start": 789, "opened": 2, "terminated": 28, "non_renewed": 7, "reacquired": 0, "ceased_other": 4, "end": 751, "transfers": 39},
+      "2024": {"start": 751, "opened": 0, "terminated": 15, "non_renewed": 5, "reacquired": 0, "ceased_other": 1, "end": 727, "transfers": 47}
+    },
+    "subfranchised": {
+      "2022": {"start": 389, "opened": 1, "terminated": 9, "non_renewed": 0, "reacquired": 0, "ceased_other": 5, "end": 376, "transfers": 18},
+      "2023": {"start": 376, "opened": 2, "terminated": 4, "non_renewed": 1, "reacquired": 1, "ceased_other": 1, "end": 371, "transfers": 21},
+      "2024": {"start": 371, "opened": 2, "terminated": 10, "non_renewed": 1, "reacquired": 4, "ceased_other": 0, "end": 358, "transfers": 27}
+    },
+    "source_pages": [57, 58, 59, 60, 61, 62, 63, 64, 65, 66]
+  },
+  "exhibit_structure": {
+    "exhibits": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
+    "exhibit_b_page_count": 62,
+    "exhibit_e_page_count": 124,
+    "exhibit_k_page_count": 20,
+    "state_addenda_in_body": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "state_addenda_in_exhibit_b": ["Illinois", "Minnesota", "North Dakota", "Washington"]
+  },
+  "item21_structural_facts": {
+    "entity": "International Dairy Queen, Inc. (IDQ) consolidated",
+    "auditor": "Deloitte & Touche LLP",
+    "opinion": "Unqualified",
+    "going_concern": false,
+    "audit_date": "2025-02-07",
+    "guarantee": true,
+    "guarantee_entity": "International Dairy Queen, Inc.",
+    "guarantee_signer": "Genevieve Beck, VP & Assistant General Counsel",
+    "guarantee_date": "2025-03-27",
+    "fiscal_year_end": "December 31",
+    "years_covered": [2022, 2023, 2024],
+    "statements_included": ["balance_sheet", "income_statement", "equity", "cash_flows", "notes"],
+    "notes_count": 12,
+    "source_pages": [357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 375, 376]
+  },
+  "item1_structural_facts": {
+    "franchisor_legal_name": "American Dairy Queen Corporation",
+    "state_of_incorporation": "Delaware",
+    "year_incorporated": 1962,
+    "parent": "International Dairy Queen, Inc. (IDQ)",
+    "ultimate_parent": "Berkshire Hathaway Inc.",
+    "affiliates": ["Unified Supply Chain, Inc. (USCI)", "DQF, Inc.", "DQGC, Inc.", "Dairy Queen Canada Inc. (DQC)", "DQ Training Restaurants, LLC (DQTR)"],
+    "location_types": ["Street", "Captive-venue"],
+    "conversion_program": true,
+    "relocation_policy": true,
+    "source_pages": [9, 10, 11]
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": 0.05,
+    "royalty_type": "percentage_of_gross_sales",
+    "advertising_rate_min": 0.05,
+    "advertising_rate_max": 0.06,
+    "total_ongoing_pct_min": 0.10,
+    "total_ongoing_pct_max": 0.11,
+    "transfer_fee": 6000,
+    "renewal_fee_formula": "$1,000 × years (max $10,000)",
+    "termination_fee_formula": "2× last 12 months CLF",
+    "interest_rate": 0.18,
+    "late_fee": 50,
+    "source_pages": [21, 22, 23, 24]
+  }
+}

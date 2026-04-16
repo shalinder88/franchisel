@@ -1,0 +1,53 @@
+{
+  "targeted_depth_block": "1_item21_notes",
+  "method": "normal_text_extraction",
+  "source_pages": [365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375],
+  "note_families_present": [
+    {"family": "nature_of_business", "note": 1, "pages": [365]},
+    {"family": "significant_accounting_policies", "note": 2, "pages": [365, 366, 367, 368, 369]},
+    {"family": "property_and_equipment", "note": 3, "pages": [369]},
+    {"family": "goodwill_and_intangibles", "note": 4, "pages": [369, 370]},
+    {"family": "other_assets", "note": 5, "pages": [371]},
+    {"family": "other_liabilities", "note": 6, "pages": [371, 372]},
+    {"family": "income_taxes", "note": 7, "pages": [372, 373]},
+    {"family": "leases", "note": 8, "pages": [373, 374]},
+    {"family": "employee_benefits", "note": 9, "pages": [374]},
+    {"family": "contingencies", "note": 10, "pages": [374]},
+    {"family": "related_party_transactions", "note": 11, "pages": [375]},
+    {"family": "subsequent_events", "note": 12, "pages": [375]}
+  ],
+  "accounting_policy_mechanics": {
+    "revenue_recognition": "Service fees recognized as usage occurs (sales at franchised locations). Supply chain fees at point of sale. New store development when obligations fulfilled (restaurant opened). Management fees as % of committed advertising. Deferred franchise income over contract term.",
+    "depreciation": "Straight-line. Equipment 3-10 years, leasehold improvements shorter of 20 years or lease term, buildings 15-40 years.",
+    "impairment": "Reviewed when events indicate. Compare to undiscounted cash flows. No impairments recorded 2022-2024.",
+    "advertising_fund": "Company acts as AGENT. Records net on balance sheet. Franchise Advertising Committees approve budgets.",
+    "deferred_franchise_fees": "Deferred franchise income: $3,024K (2024), $2,816K (2023). Recognized over contractual term for continuing licensing rights.",
+    "gift_card_breakage": "Recognized proportionally to redemptions as contribution to Committed Advertising less management fees."
+  },
+  "lease_structure": {
+    "type": "Operating leases only (no finance leases disclosed)",
+    "assets": "Administrative facilities, equipment, one retail restaurant",
+    "rou_assets_2024": 5090,
+    "current_lease_liabilities_2024": 1004,
+    "long_term_lease_liabilities_2024": 7305,
+    "total_lease_liabilities_2024": 8309,
+    "weighted_avg_term_2024": 6.8,
+    "discount_rate": 2.38,
+    "maturity_schedule": {"2025": 1192, "2026": 1216, "2027": 1235, "2028": 1180, "2029": 1308, "thereafter": 2941, "total": 9072, "imputed_interest": -763}
+  },
+  "parent_affiliate_structure": {
+    "cash_pooling_counterparty": "BH Finance LLC (Berkshire subsidiary)",
+    "cash_pooling_receivable_2024": 44559,
+    "dividend_payable_pattern": "Annual dividends to Berkshire exceeding net income",
+    "revenue_from_affiliates": "Minimal ($0.3M in 2024)"
+  },
+  "tax_structure": {
+    "effective_rate_2024": 24.21,
+    "statutory_rate": 21.00,
+    "filed_in_berkshire_consolidated": true,
+    "valuation_allowance": 3700,
+    "undistributed_foreign_earnings": 8800,
+    "no_unrecognized_tax_benefits": true
+  },
+  "subsequent_events": "None noted through February 7, 2025"
+}
