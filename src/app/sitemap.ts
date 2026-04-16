@@ -5,12 +5,24 @@ import { guides, categories } from "@/data/brands";
 const BASE_URL = "https://franchisel.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const brandUrls = getIndexableBrands().map((b) => ({
+  const indexable = getIndexableBrands();
+  const brandUrls = indexable.map((b) => ({
     url: `${BASE_URL}/brands/${b.slug}`,
     lastModified: new Date(b.lastUpdated),
     changeFrequency: "monthly" as const,
     priority: 0.9,
   }));
+
+  // Per-brand year-over-year filing-change pages, only for brands that
+  // actually have prior-year data to compare against.
+  const diffUrls = indexable
+    .filter((b) => typeof b.item19Prior?.grossRevenueAvg === "number")
+    .map((b) => ({
+      url: `${BASE_URL}/brands/${b.slug}/diff`,
+      lastModified: new Date(b.lastUpdated),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
 
   const guideUrls = guides.map((g) => ({
     url: `${BASE_URL}/guides/${g.slug}`,
@@ -36,6 +48,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/compare`, lastModified: staticDate, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/tools/contradiction-finder`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
     { url: `${BASE_URL}/tools/fee-stack`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
+    { url: `${BASE_URL}/tools/item-19-quality`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
+    { url: `${BASE_URL}/tools/filing-changes`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
     { url: `${BASE_URL}/reports`, lastModified: staticDate, changeFrequency: "weekly", priority: 0.85 },
     { url: `${BASE_URL}/community`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.75 },
     { url: `${BASE_URL}/watchlist`, lastModified: staticDate, changeFrequency: "weekly", priority: 0.6 },
@@ -50,6 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/privacy`, lastModified: staticDate, changeFrequency: "yearly", priority: 0.2 },
     { url: `${BASE_URL}/terms`, lastModified: staticDate, changeFrequency: "yearly", priority: 0.2 },
     ...brandUrls,
+    ...diffUrls,
     ...guideUrls,
     ...categoryUrls,
   ];

@@ -13,9 +13,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const brand = getBrandBySlug(slug);
   if (!brand) return { title: "Not Found" };
   return {
-    title: `${brand.name} — Filing Year Changes`,
+    title: `${brand.name} \u2014 Filing Year Changes`,
     description: `Year-over-year FDD filing changes for ${brand.name}: revenue trends, unit growth, fee changes. Sourced from government-filed FDDs.`,
-    robots: { index: false },
+    alternates: { canonical: `https://franchisel.com/brands/${slug}/diff` },
   };
 }
 
