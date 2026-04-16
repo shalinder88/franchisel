@@ -1,0 +1,73 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_date": "2026-04-15",
+  "brand": "Motto by Hilton",
+  "filing_id": "638064-2025",
+  "promotions": [
+    {
+      "id": "P1",
+      "fact": "Jury trial waiver and punitive damages waiver in Franchise Agreement Section 17.0",
+      "source_reader_report": "Pass E - Contract Burden",
+      "source_pdf_page": 150,
+      "promoted_to": "dispute_resolution.jury_waiver",
+      "status": "promoted"
+    },
+    {
+      "id": "P2",
+      "fact": "General release required at transfer/re-licensing (Section 16.8), with state overrides in MD, MN, NY, ND, RI, WA",
+      "source_reader_report": "Pass E - Contract Burden",
+      "source_pdf_page": 148,
+      "promoted_to": "contract_terms.general_release",
+      "status": "promoted"
+    },
+    {
+      "id": "P3",
+      "fact": "Interest rate on overdue amounts is 18% per annum (FA Section 16.15), vs. 1.5%/month (Item 6 service charges)",
+      "source_reader_report": "Pass B - Fees",
+      "source_pdf_page": 149,
+      "promoted_to": "ongoing_fees.interest_rate_fa",
+      "status": "promoted"
+    },
+    {
+      "id": "P4",
+      "fact": "Economic conditions not a defense to breach (FA Section 16.10)",
+      "source_reader_report": "Pass E - Contract Burden",
+      "source_pdf_page": 148,
+      "promoted_to": "contract_terms.economic_conditions_not_defense",
+      "status": "promoted"
+    },
+    {
+      "id": "P5",
+      "fact": "Franchisor has independent access to all data in required systems with no contractual limitations (FA Section 10.4)",
+      "source_reader_report": "Pass C - Technology",
+      "source_pdf_page": 133,
+      "promoted_to": "technology.data_access",
+      "status": "promoted"
+    },
+    {
+      "id": "P6",
+      "fact": "Confidentiality of negotiated terms (FA Section 16.18) — any modifications to standard terms are confidential",
+      "source_reader_report": "Not in reader report - found in depth pass",
+      "source_pdf_page": 150,
+      "promoted_to": "contract_terms.confidentiality_of_modifications",
+      "status": "promoted"
+    },
+    {
+      "id": "P7",
+      "fact": "Open hotels list: Bentonville AR, Washington DC, NYC Chelsea, NYC Times Square, Philadelphia Rittenhouse Square",
+      "source_reader_report": "Pass F - Item 20",
+      "source_pdf_pages": [93],
+      "promoted_to": "item_20.hotel_locations",
+      "status": "promoted"
+    },
+    {
+      "id": "P8",
+      "fact": "Graduate brand franchise contract intangible assets will be amortized over 15-year useful life",
+      "source_reader_report": "Pass H - Item 21",
+      "source_pdf_page": 108,
+      "promoted_to": "item_21.graduate_amortization_period",
+      "status": "promoted"
+    }
+  ],
+  "promotion_count": 8
+}

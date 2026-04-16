@@ -1,0 +1,166 @@
+{
+  "depth_pass": "state_addenda",
+  "states_with_addenda": ["California", "Hawaii", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Virginia"],
+  "multi_state_provision": {
+    "applies_to": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+    "provision": "No waiver or disclaimer of reliance — no statement/questionnaire/acknowledgement may waive claims under state franchise law (including fraud in inducement) or disclaim reliance on franchisor statements",
+    "source_pages": [356]
+  },
+  "state_riders_to_franchise_agreement": ["Maryland", "Minnesota", "North Dakota", "Rhode Island"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "financial_disclosure",
+      "override_summary": "Item 21 amended to include Hyatt Franchising, L.L.C.'s unaudited balance sheet",
+      "why_it_matters": "California requires franchisor-level financial statement, not just parent company",
+      "source_pages": [356]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "Release required at renewal/transfer does not apply to liability under Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "Preserves franchisee's right to bring claims under MD franchise law even after signing renewal/transfer release",
+      "source_pages": [359, 365]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "termination",
+      "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law",
+      "why_it_matters": "Non-curable insolvency default has limited enforceability",
+      "source_pages": [360]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may bring action in Maryland for claims under MD Franchise Law, unless preempted by FAA",
+      "why_it_matters": "Allows Maryland franchisee to litigate state franchise claims locally rather than in Illinois",
+      "source_pages": [360, 365]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "governing_law",
+      "override_summary": "Maryland law applies to claims under Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "Overrides Illinois choice of law for state franchise law claims",
+      "source_pages": [360, 365]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "limitations_of_claims",
+      "override_summary": "Claims under Maryland Franchise Law must be brought within 3 years after grant of franchise",
+      "why_it_matters": "Establishes specific statute of limitations for Maryland franchise claims",
+      "source_pages": [365]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination",
+      "override_summary": "90 days' notice of termination (with 60 days to cure) and 180 days' notice for non-renewal required under Minn. Stat. §80C.14",
+      "why_it_matters": "Significantly longer notice/cure periods than FA provides — protects franchisee from rapid termination",
+      "source_pages": [361]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Release at renewal/transfer does not apply to extent prohibited by Minn. Rule 2860.4400D",
+      "why_it_matters": "Preserves franchisee's rights under Minnesota franchise law",
+      "source_pages": [362]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "damages",
+      "override_summary": "Minn. Rule 2860.4400J prohibits waiving jury trial, forum/remedies, liquidated damages, termination penalties, judgment notes",
+      "why_it_matters": "Liquidated damages provision may be unenforceable in Minnesota",
+      "source_pages": [362]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "Minn. Stat. 80C.21 prohibits requiring litigation outside Minnesota",
+      "why_it_matters": "Overrides Illinois venue requirement for Minnesota franchisees",
+      "source_pages": [362]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "damages",
+      "override_summary": "ND Commissioner determined termination/liquidated damages unfair under Section 51-19-09 of ND Franchise Investment Law",
+      "why_it_matters": "Liquidated damages provision explicitly challenged by state regulator; enforceability unclear",
+      "source_pages": [362]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "general_release",
+      "override_summary": "Release does not apply to claims under North Dakota Franchise Investment Law",
+      "why_it_matters": "Preserves ND franchise law claims",
+      "source_pages": [362]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration at mutually agreed site (not automatically Chicago) to extent required by ND law",
+      "why_it_matters": "May allow North Dakota franchisee to arbitrate closer to home",
+      "source_pages": [363]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "governing_law",
+      "override_summary": "North Dakota law applies to extent required by law",
+      "why_it_matters": "Overrides Illinois choice of law",
+      "source_pages": [363]
+    },
+    {
+      "state": "Rhode Island",
+      "affected_family": "forum_selection",
+      "override_summary": "Forum restriction to outside Rhode Island is void for claims under RI Franchise Investment Act §19-28.1-14",
+      "why_it_matters": "Rhode Island franchisees can bring state franchise claims in RI courts",
+      "source_pages": [363, 364]
+    },
+    {
+      "state": "Rhode Island",
+      "affected_family": "governing_law",
+      "override_summary": "Illinois law applies except as required by RI Franchise Investment Act",
+      "why_it_matters": "RI franchise law applies to state franchise claims",
+      "source_pages": [364]
+    },
+    {
+      "state": "Virginia",
+      "affected_family": "termination",
+      "override_summary": "Under VA Retail Franchising Act §13.1-564, unlawful to cancel franchise without reasonable cause. Grounds that don't constitute reasonable cause may not be enforceable.",
+      "why_it_matters": "Some non-curable default grounds may be unenforceable in Virginia if not deemed 'reasonable cause'",
+      "source_pages": [364]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "termination",
+      "override_summary": "Cannot terminate prior to term except for good cause (with 30-day cure). Front matter provisions (pages 5-6) void certain unfair provisions.",
+      "why_it_matters": "Michigan law provides strong termination protections, but franchisor intends to enforce arbitration despite Michigan paragraph (f)",
+      "source_pages": [5, 6]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "forum_selection",
+      "override_summary": "Michigan law prohibits requiring arbitration/litigation outside the state (paragraph (f)). BUT franchisor explicitly states intention to enforce arbitration provision as written despite this.",
+      "why_it_matters": "Direct conflict between Michigan franchise law and FA. Franchisor's stated intent to enforce despite state law creates uncertainty.",
+      "source_pages": [5, 6]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "renewal",
+      "override_summary": "Cannot refuse renewal without fair compensation if term <5 years and franchisee prohibited from continuing same business",
+      "why_it_matters": "Applies only if term <5 years (not typical for 20-year JdV FA) and post-term restrictions exist (none here)",
+      "source_pages": [5]
+    }
+  ],
+  "summary_table": {
+    "rows": ["forum_selection", "governing_law", "general_release", "termination", "damages", "renewal", "financial_disclosure", "limitations_of_claims", "anti_waiver"],
+    "states_affected": {
+      "forum_selection": ["Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island"],
+      "governing_law": ["Maryland", "North Dakota", "Rhode Island"],
+      "general_release": ["Maryland", "Minnesota", "North Dakota"],
+      "termination": ["Maryland", "Michigan", "Minnesota", "Virginia"],
+      "damages": ["Minnesota", "North Dakota"],
+      "renewal": ["Michigan"],
+      "financial_disclosure": ["California"],
+      "limitations_of_claims": ["Maryland"],
+      "anti_waiver": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"]
+    }
+  }
+}

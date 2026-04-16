@@ -1,0 +1,68 @@
+{
+  "enrichment_version": "v1",
+  "extraction_date": "2026-04-15",
+  "filing_id": "638057-2025",
+  "brand": "Hilton Garden Inn",
+  "item19_chart_detail": {
+    "charts": [
+      {"id": "room_rate_all", "title": "Room Rate - All Comparable Hotels", "type": "comparison_table", "years": [2023, 2024], "population": 630},
+      {"id": "occupancy_all", "title": "Occupancy - All Comparable Hotels", "type": "comparison_table", "years": [2023, 2024], "population": 630},
+      {"id": "occ_index", "title": "Occupancy Index - All Comparable Hotels", "type": "comparison_table", "years": [2023, 2024], "population": 628, "notes": "2 FM excluded 2023, 1 FM excluded 2024"},
+      {"id": "revpar_index", "title": "RevPAR Index - All Comparable Hotels", "type": "comparison_table", "years": [2023, 2024], "population": 628},
+      {"id": "room_rate_newgen", "title": "Room Rate - New Gen Comparable Hotels", "type": "comparison_table", "years": [2023, 2024], "population": 198},
+      {"id": "occ_newgen", "title": "Occupancy - New Gen Comparable Hotels", "type": "comparison_table", "years": [2023, 2024], "population": 198}
+    ],
+    "data_source": "Hilton (room rate, occupancy) and STR (indices)",
+    "no_ebitda_disclosure": true
+  },
+  "item20_yearly_activity": {
+    "2022": {"start": 732, "opened": 11, "terminations": 1, "non_renewals": 0, "end": 743, "transfers": 45},
+    "2023": {"start": 743, "opened": 7, "terminations": 3, "non_renewals": 0, "end": 747, "transfers": 36},
+    "2024": {"start": 747, "opened": 6, "terminations": 3, "non_renewals": 2, "end": 750, "transfers": 21}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 18,
+    "total_pages_exhibits": 231,
+    "contract_exhibits": ["D", "D-2", "D-3", "E", "F", "G", "K"],
+    "state_addenda_exhibits": ["D-1", "J-1"],
+    "financial_exhibit": "C",
+    "franchisee_list_exhibits": ["A", "B"]
+  },
+  "item21_structural_facts": {
+    "entity_type": "Pass-through royalty vehicle (LLC, disregarded for US tax)",
+    "auditor": "Cherry Bekaert",
+    "opinion": "Unqualified/Clean",
+    "going_concern": false,
+    "fiscal_year_end": "December 31",
+    "years_covered": [2022, 2023, 2024],
+    "key_ratios": {
+      "operating_margin_2024": 0.992,
+      "revenue_growth_2024": 0.091,
+      "debt_to_equity": "N/A (no direct debt; parent guarantee exists)",
+      "current_ratio_2024": 5.21
+    }
+  },
+  "item1_structural_facts": {
+    "formed": "September 2007",
+    "began_offering": "March 30, 2015",
+    "predecessor": "Hilton Garden Inns Franchise LLC (Oct 2007-Mar 2015)",
+    "brands_offered_by_franchisor": 17,
+    "international_affiliates": 4,
+    "restaurant_brands": "Optional (StiR Creative Collective, launched 2024)",
+    "sister_brands": ["Hilton", "Canopy", "Conrad", "Curio", "DoubleTree", "Embassy", "Graduate", "Hampton", "Home2", "Homewood", "LivSmart Studios", "LXR", "Motto", "NoMad", "Signia", "Spark", "Tapestry", "Tempo", "Tru", "Waldorf Astoria"]
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage",
+    "royalty_base": "Gross Rooms Revenue",
+    "royalty_rate": 0.055,
+    "program_fee_rate": 0.04,
+    "program_fee_max": 0.05,
+    "royalty_negotiable": true,
+    "royalty_modifications_2024": 23,
+    "program_fee_modifications_2024": 1,
+    "technology_fees_mandatory": true,
+    "loyalty_program_mandatory": true,
+    "loyalty_fee_rate": 0.036,
+    "late_payment_rate": 0.015
+  }
+}

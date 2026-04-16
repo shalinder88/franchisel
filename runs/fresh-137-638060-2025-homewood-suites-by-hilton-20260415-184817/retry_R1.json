@@ -1,0 +1,13 @@
+{
+  "retry_id": "R1",
+  "target": "Connected Room maintenance fee verification",
+  "severity": "medium",
+  "source_pages": [27, 54],
+  "finding": "Item 6 table states '$564 to $860 per guest room per month' but Item 11 (p.54) clarifies the annualized cost is '$6,768 to $10,320 per year' per hotel. This is a per-hotel monthly fee that varies by hotel size, not a per-room charge.",
+  "resolution": "Connected Room maintenance = $564–$860/month per hotel. Canonical updated.",
+  "canonical_update": {
+    "field": "ongoing_fees.technology_fee_breakdown.connected_room_maintenance",
+    "old_value": "$564–$860/room/month",
+    "new_value": "$564–$860/month per hotel ($6,768–$10,320/year)"
+  }
+}

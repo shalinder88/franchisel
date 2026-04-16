@@ -1,0 +1,54 @@
+{
+  "depth_pass": "3_promotion_audit",
+  "promotable_facts": [
+    {
+      "fact": "Canadian subsidiary has 90 franchised outlets as of 2024 (unchanged from 2023); 1 franchise sold in Canada in 2024",
+      "source_reader_report": "Not in reader report — found in financial notes (Note 10)",
+      "source_page": 344,
+      "promoted_to": "system_size.canada_outlets_ye2024"
+    },
+    {
+      "fact": "Revenue recognized at a point in time was $195,915 (2024); over time was $7,132,971 (2024)",
+      "source_reader_report": "Not in reader report — found in financial notes (Note 11)",
+      "source_page": 344,
+      "promoted_to": "financials.revenue_timing"
+    },
+    {
+      "fact": "PPP loan balance of $362,133 still outstanding at 0.98% interest; eligible for forgiveness under CARES Act",
+      "source_reader_report": "Not in reader report — found in Note 8",
+      "source_page": 343,
+      "promoted_to": "financials.long_term_debt"
+    },
+    {
+      "fact": "Contract liabilities increased 60% year-over-year ($408K prospect deposits vs $256K) suggesting pipeline activity despite zero openings",
+      "source_reader_report": "Not in reader report — found in Note 7",
+      "source_page": 342,
+      "promoted_to": "financials.contract_liabilities_detail"
+    },
+    {
+      "fact": "Franchisee notes receivable bear interest at 8-12% annually with 12-60 month terms",
+      "source_reader_report": "Not in reader report — found in Note 2",
+      "source_page": 339,
+      "promoted_to": "financials.franchisee_notes_receivable"
+    },
+    {
+      "fact": "Credit loss expense was $432,977 in 2024 (up from $188,132 in 2023) — 130% increase suggesting deteriorating franchisee payment performance",
+      "source_reader_report": "Partially noted in financial statements section but not flagged as a risk",
+      "source_page": 333,
+      "promoted_to": "financials.credit_loss_expense"
+    },
+    {
+      "fact": "Zero impairments of subleased assets in 2024 or 2023",
+      "source_reader_report": "Not in reader report",
+      "source_page": 341,
+      "promoted_to": "financials.sublease_impairments"
+    },
+    {
+      "fact": "2009 Walmart MLA allows Walmart to terminate lease as a result of relocation, remodeling, or change in business strategy at its sole discretion",
+      "source_reader_report": "Covered in Item 12 section but not prominently flagged",
+      "source_page": 55,
+      "promoted_to": "risk_flags.walmart_business_strategy_termination"
+    }
+  ],
+  "total_promoted": 8
+}

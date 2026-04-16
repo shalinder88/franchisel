@@ -1,0 +1,91 @@
+{
+  "depth_pass": "promotion_audit",
+  "extraction_date": "2026-04-15",
+  "brand": "Jazzercise",
+  "fdd_id": "637934-2025",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "Rebate program pays 10%–35% of continuing franchise fees; $1,226,336 in 2024",
+      "reader_report_section": "Pass B: Item 6 notes",
+      "source_pdf_page": 93,
+      "canonical_family": "fees.rebate_program",
+      "action": "Already present in canonical"
+    },
+    {
+      "id": "P2",
+      "fact": "Franchisor earned $605,956 net from insurance program in 2024 (~3% of total revenue)",
+      "reader_report_section": "Pass C: Supplier Control",
+      "source_pdf_page": 32,
+      "canonical_family": "supplier_control.franchisor_revenue_from_insurance",
+      "action": "Already present in canonical"
+    },
+    {
+      "id": "P3",
+      "fact": "No exemplary/punitive damages — mutual waiver in FA",
+      "reader_report_section": "Pass E: Contract Burden",
+      "source_pdf_page": 142,
+      "canonical_family": "dispute_resolution",
+      "action": "Promoted to canonical — added no_exemplary_damages field"
+    },
+    {
+      "id": "P4",
+      "fact": "Statute of limitations: 1 year from discovery (subject to state law)",
+      "reader_report_section": "Pass E: Contract Burden (FA §16N)",
+      "source_pdf_page": 143,
+      "canonical_family": "dispute_resolution",
+      "action": "Promoted to canonical — added statute_of_limitations field"
+    },
+    {
+      "id": "P5",
+      "fact": "Force majeure: max 6 months postponement; does not affect payment obligations",
+      "reader_report_section": "Pass E: Contract Burden (FA §16A)",
+      "source_pdf_page": 142,
+      "canonical_family": "contract_burdens",
+      "action": "New family added to canonical"
+    },
+    {
+      "id": "P6",
+      "fact": "Spousal acknowledgement required (FA Exhibit B) but no personal guaranty",
+      "reader_report_section": "Depth Pass 2: Contract Burdens",
+      "source_pdf_page": 143,
+      "canonical_family": "contract_burdens",
+      "action": "Promoted to canonical — added guaranty field"
+    },
+    {
+      "id": "P7",
+      "fact": "Social media policy violation is a non-curable default — can result in immediate termination",
+      "reader_report_section": "Pass E: Item 17 non-curable defaults",
+      "source_pdf_page": 56,
+      "canonical_family": "termination",
+      "action": "Already in termination section but promoted as distinctive clause"
+    },
+    {
+      "id": "P8",
+      "fact": "On Demand revenue declining: $4.32M (2022) → $4.13M (2023) → $3.67M (2024)",
+      "reader_report_section": "Pass F: Item 21 financial observations",
+      "source_pdf_page": 92,
+      "canonical_family": "item21.revenue_detail",
+      "action": "Already present in enriched v2"
+    },
+    {
+      "id": "P9",
+      "fact": "Revel Dance Fitness is a separate dance fitness program operated by Jazzercise under different trademark — potential competitive risk",
+      "reader_report_section": "Pass D: Territory — Revel Dance Fitness",
+      "source_pdf_page": 47,
+      "canonical_family": "territory.alternative_channels",
+      "action": "Already present in canonical"
+    },
+    {
+      "id": "P10",
+      "fact": "Cross-default/cross-termination: termination of any other Jazzercise agreement triggers default",
+      "reader_report_section": "Depth Pass 2: Contract Burdens",
+      "source_pdf_page": 131,
+      "canonical_family": "termination",
+      "action": "Promoted to canonical — added cross_default field"
+    }
+  ],
+  "promoted_count": 4,
+  "already_present_count": 6,
+  "total_checked": 10
+}

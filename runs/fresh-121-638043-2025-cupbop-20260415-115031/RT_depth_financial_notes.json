@@ -1,0 +1,149 @@
+{
+  "depth_pass": "financial_notes",
+  "source_pages": [55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79],
+  "auditor": "Forvis Mazars, LLP",
+  "auditor_address": "250 E. 200 S., Suite 1200, Salt Lake City, UT 84111",
+  "report_dates": {
+    "fy2024_2023": "March 24, 2025",
+    "fy2023_2022": "May 31, 2024"
+  },
+  "opinion_type": "Unqualified (clean) for all periods",
+  "going_concern": false,
+  "accounting_policies": {
+    "revenue_recognition": {
+      "standard": "ASC 606",
+      "franchise_fees": {
+        "initial_recognition": "~50% upon franchise opening and completion of training",
+        "remaining_recognition": "Straight-line over 10-year expected agreement life",
+        "early_closure": "Remaining unamortized amount recognized immediately upon location closure",
+        "pre_opening_basis": "Pre-opening training and services are individually distinct from ongoing services"
+      },
+      "royalties": {
+        "rate": "6% of monthly gross sales",
+        "recognition": "Monthly, using narrow exception for sales-based/usage-based royalties under ASC 606",
+        "timing": "Recognized based on sales reports from franchisees"
+      },
+      "renewal_fees": "Recognized when renewal agreement becomes effective",
+      "portfolio_approach": "Elected — reasonably expected not to differ materially from individual contract approach",
+      "tax_exclusion_election": "Revenue presented net of sales taxes (amounts collected on behalf of third parties excluded)",
+      "source_pages": [56, 57, 58, 64, 65]
+    },
+    "depreciation_amortization": {
+      "method": "Straight-line",
+      "useful_lives": {
+        "website_development": "3 years",
+        "furniture_and_fixtures": "3 years"
+      },
+      "source_pages": [55, 62]
+    },
+    "accounts_receivable": {
+      "stated_at": "Amount billed plus accrued unpaid interest",
+      "allowance": "Based on review of outstanding receivables, historical collection info, economic conditions",
+      "delinquent_threshold": "120 days past due",
+      "interest_cessation": "After 1 year past due; resumes when no longer classified delinquent",
+      "credit_loss_expense": "None incurred in 2024 or 2023 or 2022",
+      "source_pages": [55, 62]
+    },
+    "contract_liabilities": {
+      "nature": "Obligation to transfer goods/services when consideration already received",
+      "composition": "Primarily deferred franchise fee revenues",
+      "balances": {
+        "end_2024": 598854,
+        "end_2023": 309063,
+        "end_2022": 274062,
+        "end_2021": 89271
+      },
+      "source_pages": [55, 58, 65]
+    },
+    "long_lived_asset_impairment": {
+      "policy": "Evaluate recoverability when events/circumstances indicate carrying amount may not be recoverable. If undiscounted future cash flows < carrying amount, adjust to fair value.",
+      "impairment_recognized": "None in 2024, 2023, or 2022",
+      "source_pages": [56, 63]
+    },
+    "use_of_estimates": {
+      "description": "Required under GAAP. Key estimates include allowances for credit losses.",
+      "source_pages": [55, 62]
+    }
+  },
+  "income_tax_provision": {
+    "entity_type": "Single-member LLC",
+    "tax_treatment": "Pass-through — taxable income reported to individual member",
+    "federal_provision": "None — income flows through to member",
+    "state_ptet": {
+      "elected": true,
+      "state": "Utah",
+      "accounting_treatment": "Recorded as distribution to member (not tax expense)",
+      "federal_treatment": "Deducted on Company's federal return, reducing taxable income allocated to member",
+      "ptet_payments_2024": 79245,
+      "ptet_payments_2023": 42132,
+      "ptet_payments_2022": 0
+    },
+    "source_pages": [56, 63]
+  },
+  "lease_accounting": {
+    "disclosed": false,
+    "notes": "No lease assets or liabilities disclosed. The franchise entity does not appear to hold leases — it operates from its parent's facilities. Franchisees lease their own premises."
+  },
+  "variable_interest_entities": {
+    "disclosed": false
+  },
+  "subsequent_events": {
+    "fy2024": {
+      "evaluated_through": "March 24, 2025",
+      "events_disclosed": "None",
+      "source_pages": [59]
+    },
+    "fy2023": {
+      "evaluated_through": "May 31, 2024",
+      "events_disclosed": "None",
+      "source_pages": [72]
+    }
+  },
+  "related_party_transactions": {
+    "receivable_from_parent": {
+      "nature": "Marketing revenues earned by franchisor for which cash was received by parent Cupbop Co.",
+      "terms": "Due on demand, non-interest bearing",
+      "balance_2024": 133826,
+      "balance_2023": 892586,
+      "balance_2022": 351580,
+      "source_pages": [57, 64]
+    },
+    "payable_to_parent": {
+      "nature": "Prior year expenses paid by parent company on behalf of franchisor",
+      "terms": "Non-interest bearing, due on demand",
+      "balance_2024": 11430,
+      "balance_2023": 10556,
+      "balance_2022": 272,
+      "source_pages": [57, 64]
+    }
+  },
+  "advertising_fund_accounting": {
+    "advertising_expenses_2024": 285153,
+    "advertising_expenses_2023": 378598,
+    "advertising_expenses_2022": 306387,
+    "marketing_income_2024": 828000,
+    "marketing_income_pct_2024": 0.41,
+    "marketing_income_2023": 733000,
+    "marketing_income_pct_2023": 0.39,
+    "accounting_treatment": "Advertising costs expensed as incurred; included in SG&A",
+    "source_pages": [57, 63]
+  },
+  "concentration_risk": {
+    "description": "Majority of accounts receivable from one customer",
+    "years_affected": ["2024", "2023", "2022"],
+    "source_pages": [57, 64]
+  },
+  "accounting_standard_changes": {
+    "asu_2016_13_cecl": {
+      "adopted": "January 1, 2023",
+      "topic": "326 — Financial Instruments - Credit Losses",
+      "impact": "No material effect on financial statements",
+      "source_pages": [64]
+    }
+  },
+  "members_equity": {
+    "classes": 1,
+    "description": "One class of member's equity; wholly-owned subsidiary of Cupbop Co.",
+    "source_pages": [56]
+  }
+}

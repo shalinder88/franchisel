@@ -1,0 +1,155 @@
+{
+  "depth_pass": "contract_burdens",
+  "extraction_date": "2026-04-15",
+  "brand": "Hilton Garden Inn",
+  "filing_id": "638057-2025",
+  "source_pages_fa": [146, 201],
+  "source_pages_hits": [246, 268],
+  "source_pages_guaranty": [239],
+  "grant_and_term": {
+    "license_type": "Non-exclusive license to use System at specified location",
+    "term_new_construction": "22 years from Effective Date",
+    "term_conversion": "10-20 years from Opening Date",
+    "term_coo": "Remaining term or negotiated",
+    "renewable": false,
+    "re_licensing": "At franchisor's sole discretion; must sign then-current FA with potentially materially different terms",
+    "source": "FA §3, Addendum"
+  },
+  "fee_and_payment_obligations": {
+    "monthly_royalty": "5.5% of GRR, payable by 15th of following month",
+    "monthly_program": "4% of GRR (may increase up to +1%), payable by 15th of following month",
+    "grr_definition": "All revenues from guest room sales including loyalty redemptions, bundled breakfast, mandatory guest fees, no-shows; excludes taxes",
+    "electronic_funds_transfer": "Franchisor may require wire/ACH for all payments",
+    "offset_right": "Franchisor may reduce any payment/credit by amounts franchisee owes",
+    "interest_on_overdue": "18% per annum (or max lawful rate if lower)",
+    "late_payment_service_charge": "1.5% per month",
+    "source": "FA §8, Addendum"
+  },
+  "site_selection_and_construction": {
+    "site_selection_assistance": false,
+    "architect_approval_required": true,
+    "plans_approval_required": true,
+    "ada_certification_required": true,
+    "construction_start_deadline_new": "15 months from approval",
+    "construction_completion_deadline_new": "30 months from approval",
+    "auto_extensions": "30-day rolling extensions for New Dev/Conversion until 60-day notice given",
+    "extension_fee": "$10,000 per request",
+    "unauthorized_opening_penalty": "$5,000 per day",
+    "source": "FA §§5.1.15, 5.1.16, 5.1.17, 6.1-6.4"
+  },
+  "training_and_operational_obligations": {
+    "gm_training_required": true,
+    "brand_conference_required": "Biennial; GM + Director of Sales",
+    "management_company_approval": "Required; franchisor may reject",
+    "management_company_replacement": "90 days if resigned/terminated/unsuitable",
+    "staffing_control": "Franchisee is independent contractor; franchisor does not direct personnel",
+    "24_7_operation": true,
+    "quality_assurance_inspections": true,
+    "service_quality_improvement_program": "Mandatory if below minimum standards for 6+ months",
+    "source": "FA §§4.1, 5.1.5, 5.1.25, 7.0, 7.1"
+  },
+  "termination_triggers_and_cure": {
+    "curable_defaults": [
+      {"trigger": "Failure to pay", "cure_period": "At least 10 days", "source": "FA §13.1(1)"},
+      {"trigger": "Failure to start/complete hotel work", "cure_period": "At least 10 days", "source": "FA §13.1(2)"},
+      {"trigger": "Failure to maintain insurance", "cure_period": "At least 10 days", "source": "FA §13.1(3)"},
+      {"trigger": "Failure to comply with any FA provision/Manual/Standard", "cure_period": "At least 30 days", "source": "FA §13.1(4)"}
+    ],
+    "non_curable_defaults": [
+      "Repeated same non-compliance within 24 months (FA §13.2(1))",
+      "3 default notices in 12 months (FA §13.2(2))",
+      "Failure to pay debts/insolvency/general assignment (FA §13.2(3))",
+      "Bankruptcy filing/adjudication/receivership (FA §13.2(4))",
+      "Loss of possession of hotel/site (FA §13.2(5))",
+      "Failure to operate 5+ consecutive days (non-force majeure) (FA §13.2(6))",
+      "Contesting System/Marks ownership (FA §13.2(7))",
+      "Adverse conduct to reputation (FA §13.2(8))",
+      "Revenue concealment/false records (FA §13.2(9))",
+      "Unauthorized transfer (FA §13.2(10))",
+      "Becoming Sanctioned Person (FA §13.2(11))",
+      "Gaming license issues (FA §13.2(12))",
+      "Guarantor breach (FA §13.2(13))",
+      "Public health/safety threat (FA §13.2(14))",
+      "Becoming a Competitor (FA §13.2(15))",
+      "Any Hotel Agreement terminated for breach (FA §13.2(16))"
+    ],
+    "interim_remedies": [
+      "Suspension from Reservation Service",
+      "Removal from directories/advertising",
+      "Diversion of reservations to other hotels",
+      "Software disabling",
+      "Non-compliance fees and intervention fees",
+      "Revocation of financial accommodations"
+    ]
+  },
+  "transfer_restrictions": {
+    "permitted_transfers_no_consent": ["Public equity", "Private <50% (no control change)", "Institutional funds (same asset manager)"],
+    "permitted_transfers_with_consent": ["Affiliates", "Family/trusts", "Death transfers", "Private >50% cumulative change"],
+    "permitted_transfer_fee": "$5,500",
+    "coo_transfers": {"fee": "$200,000", "notice": "60 days", "conditions": "Meet current standards, sign then-current FA, PIP compliance"},
+    "prohibited_transferees": ["Sanctioned Persons", "Competitors"],
+    "mortgage_pledge": "Permitted without consent if sole borrower and single-hotel collateral; otherwise requires consent and lender comfort letter ($3,500 fee)"
+  },
+  "default_and_cross_default": {
+    "cross_default": "Termination of any Hotel Agreement for franchisee breach triggers FA termination (FA §13.2(16))",
+    "hits_cross_default": "HITS Agreement terminates when FA terminates",
+    "guarantee_enforcement": "Franchisor may require third-party guaranty after default notice as cure condition"
+  },
+  "noncompete": {
+    "during_term": "Cannot be franchisor/licensor of competing brand; CAN be franchisee/manager of competing brand",
+    "post_term": "None",
+    "competitor_definition": "Any individual/entity that owns/is licensor/franchisor of a Competing Brand (a brand competing with System in franchisor's sole judgment)"
+  },
+  "guaranty_scope": {
+    "personal_guaranty": true,
+    "spousal_guaranty": "May be required",
+    "unlimited": "Assumes and agrees to discharge certain of Franchisee's obligations (scope determined per application review)",
+    "third_party_guaranty": "May be required for lender comfort letters or after default notice",
+    "form": "Exhibit E"
+  },
+  "liquidated_damages": {
+    "pre_opening_formula": "System's Average Monthly Royalty × 60 (if hotel not built and then competitor hotel at site within 1 year; or if after Hotel Work begins but before opening)",
+    "post_opening_first_2yr": "Greater of Hotel's or System's Average Monthly Royalty × 60",
+    "post_opening_after_2yr": "Hotel's Average Monthly Royalty × 60",
+    "last_60_months": "Hotel's Average Monthly Royalty × remaining months",
+    "measurement_period": "Hotel's: 24-month lookback; System's: 12-month per-room average × approved rooms",
+    "exclusions": "Temporary financial accommodations and Business Interruptions excluded from averages",
+    "source": "FA §§6.4.4, 13.4"
+  },
+  "venue_and_dispute_resolution": {
+    "governing_law": "New York (without choice-of-law principles)",
+    "venue": "US District Court ED Virginia (Alexandria) or Fairfax County VA state court; franchisor may also sue at hotel location",
+    "arbitration": "None (except Puerto Rico — AAA/JAMS in Fairfax County; seat in NY)",
+    "jury_trial_waiver": true,
+    "punitive_damages_waiver": true,
+    "waiver_section": "FA §17.0",
+    "source": "FA §§16.2, 17.0"
+  },
+  "insurance_requirements": {
+    "specified_in": "Manual (not enumerated in FDD/FA)",
+    "minimum_ratings": "Specified in Manual",
+    "additional_insureds": "Specified in Manual",
+    "franchisor_remedy": "May obtain insurance on franchisee's behalf if not maintained; franchisee pays actual amount"
+  },
+  "indemnification": {
+    "scope": "Franchisee must indemnify franchisor, Hilton Worldwide, all subsidiaries/affiliates, officers, directors, employees, agents, successors, assigns",
+    "triggers": "Any claimed occurrence at Hotel; any claim, demand, tax, penalty, judicial/administrative proceeding",
+    "includes": "Attorneys' fees, court costs, all expenses",
+    "must_defend": true,
+    "source": "FA §14"
+  },
+  "force_majeure": {
+    "recognized": true,
+    "casualty_rebuild": "18 months to reopen after casualty-related closure",
+    "election_not_to_rebuild": "Franchisor may terminate; LD released if no competing hotel at site within 3 years",
+    "source": "FA §§11.1, 11.2"
+  },
+  "distinctive_clauses": {
+    "general_release": "Required on re-licensing and transfer (FA §16.8); subject to state addenda limitations",
+    "confidentiality_of_negotiated_terms": "FA §16.18 — terms negotiated between parties are confidential",
+    "economic_conditions_not_defense": "FA §16.10 — economic conditions are not a defense to obligations",
+    "sanctions_and_anti_bribery": "Extensive representations (FA §16.13) — cannot be Sanctioned Person, cannot make improper payments, must cooperate with investigations",
+    "attorney_in_fact": "Franchisee appoints franchisor as exclusive attorney-in-fact for trademark dispute prosecution/defense (FA §9.4.2)",
+    "restricted_area_template": "FA Addendum contains optional Restricted Area provision — mile radius or described area, with numerous carve-outs for other brands, chains of 4+ hotels, gaming, timeshare, etc."
+  }
+}

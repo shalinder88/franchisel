@@ -1,0 +1,201 @@
+{
+  "depth_pass": "state_addenda_structured",
+  "states_with_addenda": ["California", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "Virginia", "Washington"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "forum_selection",
+      "override_summary": "Litigation involving CA franchise must be brought in CA state or federal courts, not Georgia",
+      "why_it_matters": "CA franchisees can litigate locally instead of traveling to Georgia",
+      "source_pages": [134, 135]
+    },
+    {
+      "state": "California",
+      "affected_family": "noncompete",
+      "override_summary": "Post-term noncompete covenant may not be enforceable under California law",
+      "why_it_matters": "CA franchisees may be free to operate a competing business after termination",
+      "source_pages": [134]
+    },
+    {
+      "state": "California",
+      "affected_family": "general_release",
+      "override_summary": "General release upon renewal/transfer cannot waive rights under CA Franchise Investment Law (Corp Code §31512) or Franchise Relations Act (B&P §20010)",
+      "why_it_matters": "CA franchisees retain statutory claims even after signing a general release",
+      "source_pages": [135]
+    },
+    {
+      "state": "California",
+      "affected_family": "governing_law",
+      "override_summary": "Georgia choice of law provision may not be enforceable under California law",
+      "why_it_matters": "CA law may apply instead of Georgia law for CA franchisees",
+      "source_pages": [134]
+    },
+    {
+      "state": "California",
+      "affected_family": "interest_rate",
+      "override_summary": "Highest interest rate permitted by law in California is 10% annually",
+      "why_it_matters": "Late payment interest capped at 10% vs. potentially higher 18%/year (1.5%/month) in standard agreement",
+      "source_pages": [135]
+    },
+    {
+      "state": "California",
+      "affected_family": "damages",
+      "override_summary": "Liquidated damage clause in FA §11.3 may be unenforceable under Civil Code §1671",
+      "why_it_matters": "CA franchisees may not be bound by liquidated damages provisions",
+      "source_pages": [135]
+    },
+    {
+      "state": "California",
+      "affected_family": "anti_waiver",
+      "override_summary": "No statement or questionnaire can waive claims under state franchise law or disclaim reliance on franchisor statements",
+      "why_it_matters": "Protects CA franchisees from being bound by pre-signing acknowledgments",
+      "source_pages": [135]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "governing_law",
+      "override_summary": "Illinois law governs the franchise agreements",
+      "why_it_matters": "Georgia law is overridden for IL franchisees",
+      "source_pages": [138]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "forum_selection",
+      "override_summary": "Venue designation outside Illinois is void (except arbitration may be outside IL)",
+      "why_it_matters": "IL franchisees cannot be forced to litigate in Georgia, though arbitration may still be in Georgia",
+      "source_pages": [138]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "anti_waiver",
+      "override_summary": "No waiver of compliance with Illinois Franchise Disclosure Act or other IL law",
+      "why_it_matters": "IL franchisees retain all statutory protections",
+      "source_pages": [138]
+    },
+    {
+      "state": "Indiana",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration location provision deleted — arbitration will not be required outside Indiana (to extent IN law applies)",
+      "why_it_matters": "IN franchisees may arbitrate in Indiana",
+      "source_pages": [139, 140]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "General release required for renewal/sale/transfer does not apply to any liability under Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "MD franchisees retain rights to sue under MD franchise law even after signing release",
+      "source_pages": [141]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may bring lawsuit in Maryland for claims under MD Franchise Law",
+      "why_it_matters": "MD franchisees can sue locally for MD franchise law claims",
+      "source_pages": [141]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "termination",
+      "override_summary": "Termination upon bankruptcy may not be enforceable under federal bankruptcy law",
+      "why_it_matters": "Automatic termination for bankruptcy may be void",
+      "source_pages": [141]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "noncompete",
+      "override_summary": "Post-term noncompete unenforceable under Michigan Franchise Investment Law",
+      "why_it_matters": "MI franchisees are free to compete after termination",
+      "source_pages": [143]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "general_release",
+      "override_summary": "Release requirement upon renewal or transfer is void under MI law",
+      "why_it_matters": "MI franchisees cannot be required to sign general release",
+      "source_pages": [143]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisor prohibited from requiring litigation outside Minnesota",
+      "why_it_matters": "MN franchisees can litigate and arbitrate in Minnesota",
+      "source_pages": [145]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "damages",
+      "override_summary": "Franchisor cannot require consent to liquidated damages, termination penalties, or judgment notes",
+      "why_it_matters": "MN franchisees protected from liquidated damages and penalty clauses",
+      "source_pages": [145]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Release does not apply to claims under Minnesota Franchise Act",
+      "why_it_matters": "MN franchisees retain statutory claims despite release",
+      "source_pages": [145]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination",
+      "override_summary": "MN law requires 90 days notice of termination (60 days to cure) and 180 days notice for nonrenewal",
+      "why_it_matters": "Extended cure and notice periods beyond what FA may provide",
+      "source_pages": [145]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "governing_law",
+      "override_summary": "Washington Franchise Investment Protection Act prevails in event of conflict",
+      "why_it_matters": "WA law overrides Georgia law for WA franchisees",
+      "source_pages": [152]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration/mediation must be in Washington or mutually agreed location. Litigation may be brought in Washington.",
+      "why_it_matters": "WA franchisees not required to travel to Georgia",
+      "source_pages": [152]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "general_release",
+      "override_summary": "Release/waiver void unless executed pursuant to negotiated settlement after agreement in effect with independent counsel (RCW 19.100.220(2)). Void for renewal/transfer releases.",
+      "why_it_matters": "WA franchisees cannot be required to sign general release for renewal or transfer",
+      "source_pages": [152]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "noncompete",
+      "override_summary": "Noncompete void for employees earning under $100K/year (adjusted for inflation) and independent contractors under $250K/year per RCW 49.62. Any conflicting FA provision void in WA.",
+      "why_it_matters": "WA significantly limits enforcement of noncompete provisions based on income thresholds",
+      "source_pages": [154]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "termination",
+      "override_summary": "Franchisee may terminate under any grounds permitted by WA state law. Franchisor Bill of Rights (RCW 19.100.180) may supersede FA provisions on termination and renewal.",
+      "why_it_matters": "WA provides additional franchisee termination rights beyond what FA allows",
+      "source_pages": [152, 153]
+    },
+    {
+      "state": "Virginia",
+      "affected_family": "forum_selection",
+      "override_summary": "Virginia-specific addendum adds risk disclosures and modifies certain FA provisions",
+      "why_it_matters": "VA franchisees receive additional disclosures",
+      "source_pages": [150, 151]
+    }
+  ],
+  "summary_table": {
+    "override_families": ["forum_selection", "governing_law", "noncompete", "general_release", "termination", "damages", "interest_rate", "anti_waiver"],
+    "states_by_family": {
+      "forum_selection": ["California", "Illinois", "Indiana", "Maryland", "Minnesota", "Washington"],
+      "governing_law": ["California", "Illinois", "Washington"],
+      "noncompete": ["California", "Michigan", "Washington"],
+      "general_release": ["California", "Maryland", "Michigan", "Minnesota", "Washington"],
+      "termination": ["Maryland", "Minnesota", "Washington"],
+      "damages": ["California", "Minnesota"],
+      "interest_rate": ["California"],
+      "anti_waiver": ["California", "Illinois", "Minnesota"]
+    }
+  }
+}

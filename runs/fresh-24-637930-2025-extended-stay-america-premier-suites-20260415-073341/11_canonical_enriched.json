@@ -1,0 +1,86 @@
+{
+  "enrichment_version": "v1",
+  "extraction_date": "2026-04-15",
+  "item19_chart_detail": {
+    "table_19_1": {
+      "title": "Brand Hotel Operating Metrics (2024)",
+      "population": 41,
+      "metrics": {
+        "occupancy": {"average": 0.774, "median": 0.794, "pct_at_or_above": 0.56, "count_at_or_above": 23},
+        "adr": {"average": 93.84, "median": 93.16, "pct_at_or_above": 0.49, "count_at_or_above": 20},
+        "revpar": {"average": 72.60, "median": 72.34, "pct_at_or_above": 0.49, "count_at_or_above": 20},
+        "esocc": {"average": 0.548, "median": 0.570, "pct_at_or_above": 0.61, "count_at_or_above": 25}
+      }
+    },
+    "table_19_2": {
+      "title": "Reservation Channel Mix (2024)",
+      "channels": {
+        "esa_com": 0.257, "call_center": 0.249, "ota": 0.223,
+        "property_direct": 0.210, "gds": 0.049, "opaque": 0.011
+      }
+    },
+    "table_19_3": {
+      "title": "Length of Stay (2024)",
+      "segments": {"0_6_nights": 0.291, "7_29_nights": 0.242, "30_plus_nights": 0.468}
+    },
+    "table_19_4": {
+      "title": "B2B 7+ Night Revenue (2024)",
+      "b2b_7_plus": {"average": 0.910, "median": 0.907, "pct_at_or_above": 0.49, "count_at_or_above": 20}
+    }
+  },
+  "item20_yearly_activity": {
+    "franchised": {
+      "2022": {"start": 0, "opened": 3, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 3},
+      "2023": {"start": 3, "opened": 6, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 9},
+      "2024": {"start": 9, "opened": 8, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 17}
+    },
+    "company_owned": {
+      "2022": {"start": 25, "opened": 0, "closed": 0, "sold": 0, "end": 25},
+      "2023": {"start": 25, "opened": 7, "closed": 0, "sold": 0, "end": 32},
+      "2024": {"start": 32, "opened": 0, "closed": 0, "sold": 0, "end": 32}
+    },
+    "projected": {"fa_signed_not_opened": 41, "projected_new_franchised": 12, "projected_new_company": 0}
+  },
+  "exhibit_structure": {
+    "exhibits": [
+      {"letter": "A", "name": "Franchise Agreement", "pages": [69, 132], "category": "contract"},
+      {"letter": "B", "name": "Development Agreement", "pages": [133, 160], "category": "contract"},
+      {"letter": "C", "name": "Hotel Technology Agreement", "pages": [161, 196], "category": "contract"},
+      {"letter": "D", "name": "Financial Statements", "pages": [197, 225], "category": "financial"},
+      {"letter": "E", "name": "Brand Standards TOC", "pages": [226, 228], "category": "operational"},
+      {"letter": "F", "name": "State Agencies", "pages": [229, 231], "category": "regulatory"},
+      {"letter": "G", "name": "State Addenda + Riders", "pages": [232, 288], "category": "regulatory"},
+      {"letter": "H", "name": "Franchisee Guaranty", "pages": [289, 291], "category": "contract"},
+      {"letter": "I", "name": "General Release", "pages": [292, 296], "category": "contract"},
+      {"letter": "J", "name": "List of Franchisees", "pages": [297, 300], "category": "franchisee_list"}
+    ]
+  },
+  "item21_structural_facts": {
+    "auditor": "Deloitte & Touche LLP",
+    "opinion": "Unqualified with emphasis of matter",
+    "emphasis_matter": "Related party transactions with affiliated entities",
+    "going_concern": false,
+    "entity_type": "LLC",
+    "tax_status": "Not subject to federal income tax",
+    "report_date": "2025-03-24",
+    "subsequent_events": "None noted through March 24, 2025"
+  },
+  "item1_structural_facts": {
+    "business_type": "Extended stay and transient guest lodging",
+    "hotel_prototype": "125 rooms, 4 stories, 2+ acres",
+    "programs": ["Single-unit franchise", "Multi-unit development"],
+    "market_description": "Highly competitive lodging industry; extended stay segment",
+    "target_guest": "Self-sufficient, value-conscious guests; business travelers, leisure, temporary work, relocation",
+    "amenities": "Fully furnished rooms, in-room kitchens, complimentary breakfast, free WiFi, flat screen TVs, on-site guest laundry"
+  },
+  "item6_fee_attributes": {
+    "royalty_fixed": true,
+    "ssf_pooled": true,
+    "ssf_other_brands": ["Extended Stay America Suites", "Extended Stay America Select Suites"],
+    "interest_rate": "1.5% per month",
+    "late_payment_accrues_from": "Original due date",
+    "digital_marketing_new_2025": true,
+    "technology_pass_throughs": true,
+    "grr_definition": "Revenues from guestroom use/occupancy including barter, loyalty redemptions, mandatory guest fees, BI proceeds; excluding taxes, vending, laundry"
+  }
+}

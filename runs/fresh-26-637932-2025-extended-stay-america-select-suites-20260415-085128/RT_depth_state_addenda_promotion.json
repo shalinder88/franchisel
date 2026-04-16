@@ -1,0 +1,51 @@
+{
+  "depth_pass": "state_addenda_structured_promotion",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637932-2025",
+  "source_pages_pdf": [202, 244],
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {"state": "California", "affected_family": "interest_rate", "override_summary": "Maximum allowable interest rate capped at 10% per annum (vs. 1.5%/month = 18%/yr in FA)", "why_it_matters": "Significantly reduces late payment penalty exposure for CA franchisees", "source_pages": [204]},
+    {"state": "California", "affected_family": "damages", "override_summary": "Liquidated damages clause may be unenforceable under CA Civil Code Section 1671", "why_it_matters": "Termination damages calculation may not be enforceable in CA; franchisor would need to prove actual damages", "source_pages": [204]},
+    {"state": "California", "affected_family": "governing_law", "override_summary": "NC governing law provision might not be enforceable under CA law", "why_it_matters": "CA franchisees may be able to apply CA law which provides stronger franchisee protections", "source_pages": [204]},
+    {"state": "California", "affected_family": "general_release", "override_summary": "General release may be void under CA Corp Code 31512 (waiver of franchise law rights) and Bus & Prof Code 20010", "why_it_matters": "CA franchisees may not be required to sign a binding general release upon transfer, preserving their statutory claims", "source_pages": [204]},
+    {"state": "California", "affected_family": "anti_waiver", "override_summary": "No statement/questionnaire/acknowledgment shall waive claims under state franchise law or disclaim reliance on franchisor statements", "why_it_matters": "Protects CA franchisees from inadvertently waiving fraud/misrepresentation claims", "source_pages": [203]},
+    {"state": "Hawaii", "affected_family": "anti_waiver", "override_summary": "No exemptions under Hawaii franchise law", "why_it_matters": "Full HI franchise law protections apply", "source_pages": [205]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Illinois law governs the agreements; IL Franchise Disclosure Act controls", "why_it_matters": "IL law replaces NC law, providing IL-specific franchisee protections including registration requirements", "source_pages": [206]},
+    {"state": "Indiana", "affected_family": "governing_law", "override_summary": "Indiana franchise laws govern the FA and all related agreements", "why_it_matters": "IN franchisee protections under IC 23-2-2.7 apply", "source_pages": [207]},
+    {"state": "Indiana", "affected_family": "forum_selection", "override_summary": "Arbitration must take place in Indiana", "why_it_matters": "IN franchisees not required to travel to NC for dispute resolution", "source_pages": [207]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Franchisee may bring suit in Maryland", "why_it_matters": "MD franchisees have home-state litigation option", "source_pages": [208]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General release limited to claims with specifically enumerated exceptions under MD Franchise Registration and Disclosure Law", "why_it_matters": "MD franchisees retain statutory franchise law claims despite release", "source_pages": [208, 223]},
+    {"state": "Minnesota", "affected_family": "governing_law", "override_summary": "MN law governs; MN Statute 80C controls", "why_it_matters": "Strong MN franchisee protections apply including registration requirements", "source_pages": [208, 226]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Venue must be in Minnesota", "why_it_matters": "MN franchisees not required to travel to NC", "source_pages": [226]},
+    {"state": "Minnesota", "affected_family": "notice_cure", "override_summary": "90-day termination notice required; 60-day cure period", "why_it_matters": "Significantly extends cure period from FA's 30 days to 60 days, and adds 90-day advance termination notice", "source_pages": [226]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "No general release inconsistent with MN law", "why_it_matters": "Protects MN franchisees from waiving statutory rights", "source_pages": [226]},
+    {"state": "New York", "affected_family": "governing_law", "override_summary": "NY General Business Law Article 33 controls", "why_it_matters": "NY franchise law protections apply", "source_pages": [211, 230]},
+    {"state": "New York", "affected_family": "forum_selection", "override_summary": "NY venue available for disputes", "why_it_matters": "NY franchisees have home-state option", "source_pages": [230]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "ND law applies", "why_it_matters": "ND franchise law protections apply", "source_pages": [213, 232]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Covenants not to compete generally unenforceable in ND", "why_it_matters": "Moot for this FDD (no noncompete exists), but confirms ND's anti-noncompete stance", "source_pages": [232]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "ND venue must be available; arbitration site must include ND option", "why_it_matters": "ND franchisees not required to travel to NC", "source_pages": [232]},
+    {"state": "North Dakota", "affected_family": "damages", "override_summary": "Jury trial waiver may not be enforceable", "why_it_matters": "ND franchisees may retain right to jury trial despite FA waiver", "source_pages": [232]},
+    {"state": "Rhode Island", "affected_family": "anti_waiver", "override_summary": "RI Franchise Investment Act protections apply", "why_it_matters": "Full RI franchise law protections", "source_pages": [214, 235]},
+    {"state": "Virginia", "affected_family": "anti_waiver", "override_summary": "VA Retail Franchising Act disclosures", "why_it_matters": "VA statutory protections apply", "source_pages": [215, 237]},
+    {"state": "Washington", "affected_family": "governing_law", "override_summary": "WA Franchise Investment Protection Act governs", "why_it_matters": "WA law provides strong franchisee protections", "source_pages": [217, 238]},
+    {"state": "Washington", "affected_family": "forum_selection", "override_summary": "WA venue available for arbitration/litigation", "why_it_matters": "WA franchisees not required to travel to NC", "source_pages": [238]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "No release provision that is unfair", "why_it_matters": "Protects WA franchisees from overreaching release requirements", "source_pages": [238]},
+    {"state": "Wisconsin", "affected_family": "governing_law", "override_summary": "WI Fair Dealership Law (Ch. 135) controls", "why_it_matters": "Good cause required for termination; strong franchisee protections under WI law", "source_pages": [242]},
+    {"state": "Wisconsin", "affected_family": "termination", "override_summary": "Good cause required for termination under WI Fair Dealership Law", "why_it_matters": "Franchisor cannot terminate without good cause in WI, providing significant protection", "source_pages": [242]},
+    {"state": "Wisconsin", "affected_family": "notice_cure", "override_summary": "90-day notice and 60-day cure period required", "why_it_matters": "Extended cure period protects WI franchisees from rapid termination", "source_pages": [242]}
+  ],
+  "summary_table": {
+    "override_families": {
+      "governing_law": ["CA", "IL", "IN", "MD", "MN", "NY", "ND", "WA", "WI"],
+      "forum_selection": ["IN", "MD", "MN", "NY", "ND", "WA"],
+      "general_release": ["CA", "MD", "MN", "WA"],
+      "notice_cure": ["MN", "WI"],
+      "termination": ["WI"],
+      "damages": ["CA", "ND"],
+      "interest_rate": ["CA"],
+      "noncompete": ["ND"],
+      "anti_waiver": ["CA", "HI", "RI", "VA"]
+    }
+  }
+}

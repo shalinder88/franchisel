@@ -1,0 +1,163 @@
+{
+  "_enrichment_version": "v2",
+  "_base": "11_canonical_enriched.json",
+  "item21_financial_structure_detail": {
+    "entity": "Hilton Franchise Holding LLC",
+    "member": "Hilton Domestic Operating Company Inc.",
+    "contributed_capital": 310000000,
+    "centralized_cash_management": true,
+    "cash_controlled_by_entity": false,
+    "intercompany_balance_dominant": true,
+    "intercompany_receivable_2024": 703943000,
+    "intercompany_receivable_pct_of_assets": 0.555,
+    "debt_guarantor": true,
+    "debt_maturity_range": "2025–2033",
+    "collateral_pledged": "All assets and franchise contracts",
+    "operator_agreement_with_affiliate": true,
+    "operator_compensation_paid": 0,
+    "graduate_acquisition_funding": "Short-term intercompany note ($85.3M), settled February 2024"
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "cash": 317000,
+      "accounts_receivable_net": 135970000,
+      "ar_allowance": 10411000,
+      "affiliate_receivable_franchise_deposits": 18498000,
+      "financing_receivables_current_net": 11438000,
+      "financing_receivables_current_allowance": 3375000,
+      "other_receivables_affiliates": 703943000,
+      "other_current": 2346000,
+      "total_current_assets": 872512000,
+      "franchise_contracts_net": 392748000,
+      "franchise_contracts_gross": 468626000,
+      "franchise_contracts_accumulated_amort": 75878000,
+      "contract_acquisition_costs_net": 306243000,
+      "franchise_intangibles_acquired_net": 81987000,
+      "costs_to_obtain_net": 4518000,
+      "total_non_current_assets": 397385000,
+      "total_assets": 1269897000,
+      "franchise_deposits": 18498000,
+      "current_intercompany_payables": 89994000,
+      "current_deferred_revenues": 41598000,
+      "total_current_liabilities": 167610000,
+      "non_current_deferred_revenues": 517282000,
+      "total_liabilities": 692892000,
+      "contributed_capital": 310000000,
+      "retained_earnings": 528936000,
+      "due_from_affiliates_equity": -261959000,
+      "accumulated_oci": 28000,
+      "total_members_equity": 577005000
+    },
+    "income_2024": {
+      "franchise_royalty_fees": 1434453000,
+      "franchise_sales_coo_fees": 49340000,
+      "franchise_termination_fees_other": 18276000,
+      "total_revenues": 1502069000,
+      "operating_expenses": 1354000,
+      "provision_credit_losses": 6248000,
+      "amortization_expense": 3751000,
+      "total_expenses": 11353000,
+      "operating_income": 1490716000,
+      "non_operating_income_loss": -2733000,
+      "income_before_taxes": 1487983000,
+      "foreign_tax_expense": -412000,
+      "net_income": 1487571000,
+      "comprehensive_income": 1487599000,
+      "distribution_to_affiliates": -1500000000
+    },
+    "income_2023": {
+      "total_revenues": 1376897000,
+      "net_income": 1372281000,
+      "distribution_to_affiliates": -1400000000
+    },
+    "income_2022": {
+      "total_revenues": 1229465000,
+      "net_income": 1233442000,
+      "distribution_to_affiliates": -1550000000
+    },
+    "cash_flows_2024": {
+      "net_cash_operating": 1516760000,
+      "franchise_intangible_acquisition": -85304000,
+      "net_cash_investing": -80050000,
+      "short_term_note_issuance": 85304000,
+      "distributions": -1500000000,
+      "net_cash_financing": -1441744000,
+      "cash_end": 317000
+    }
+  },
+  "item6_fee_detail": {
+    "fee_categories": {
+      "core_recurring": {
+        "count": 4,
+        "items": ["Monthly Royalty (5% GRR)", "Monthly Program Fee (4% GRR)", "Hilton Honors (4.3% folio)", "Hilton Advance (1.35% Digital Direct)"]
+      },
+      "technology": {
+        "count": 6,
+        "items": ["OnQ Connectivity", "HW/SW Maintenance", "Connected Room", "OnQ Email", "Delphi", "OnQ Interface/Additional Rooms"]
+      },
+      "distribution_commission": {
+        "count": 12,
+        "items": ["Travel Clubs", "Hilton Advance", "Group Preferred Partnership", "Hilton Honors Event Planner Bonus", "Hilton For Business", "Online Group Event Booking", "Centralized Payments (4 sub-programs)", "Add-On Program", "Consortia/TMC/SMB (3 linked programs)", "US Government Travel", "ResMax"]
+      },
+      "quality_compliance": {
+        "count": 6,
+        "items": ["Brand Non-Compliance Fee", "Brand Non-Compliance Re-Eval", "Brand Non-Compliance Special Audit", "PIP/Renovation Failure", "Stay Score Failure", "Service Quality Improvement Program"]
+      },
+      "transfer_licensing": {
+        "count": 5,
+        "items": ["COO Application Fee", "Permitted Transfer Processing", "Re-licensing Application", "Lender Comfort Letter", "Public Offering Processing"]
+      },
+      "remedies_damages": {
+        "count": 8,
+        "items": ["Actual Damages", "Audit Deficiency", "Default Remedies", "Indemnification", "Insurance", "Liquidated Damages (4 tiers)", "Service Charges", "Identity/Sales Non-Compliance"]
+      },
+      "training_conference": {
+        "count": 4,
+        "items": ["Brand Conference", "GM/Commercial/Sales Leader Training", "Hilton Core Sales Skills", "Other Training Programs"]
+      },
+      "miscellaneous": {
+        "count": 5,
+        "items": ["Consultation/Service Fees", "Procurement/Services Fees", "Room Addition Fee", "PIP Fee", "RMCC"]
+      }
+    },
+    "total_fee_line_items": 50,
+    "mandatory_fees": ["Royalty", "Program Fee", "Hilton Honors", "Hilton Advance", "Technology fees", "Brand Conference"],
+    "optional_fees": ["Group Preferred Partnership", "Hilton For Business", "Online Group Event Booking", "Consortia/TMC/SMB", "US Government Travel", "ResMax", "RMCC (except expedited openings)"]
+  },
+  "depth_pass_promotions": {
+    "jury_trial_waiver": true,
+    "punitive_damages_waiver": true,
+    "attorneys_fees_prevailing_party": true,
+    "interest_rate_per_annum": "18% or maximum lawful rate",
+    "confidentiality_of_negotiated_terms": true,
+    "general_release_required_for_amendments": true,
+    "ftc_exemption_threshold": "$1,469,600",
+    "chain_code": "GU",
+    "fb_consultant_approval_required": true,
+    "total_promoted_facts": 9
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "FS Note 9 date typo (March 18, 2024 → likely 2025)", "severity": "low", "source": "page 110"},
+    {"id": "U2", "description": "34 vs 32 outlet count (2 not yet opened)", "severity": "low", "source": "page 89"},
+    {"id": "U3", "description": "Graduate-specific financials not separately disclosed", "severity": "medium", "source": "Exhibit C"},
+    {"id": "U4", "description": "Program fee spending not audited/disclosed", "severity": "medium", "source": "Item 6 Note 2"},
+    {"id": "U5", "description": "No actual Graduate investment data (estimates only)", "severity": "medium", "source": "Item 7 Note 21"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "32 vs 34 outlets", "items_involved": ["Item 20 T3", "Item 20 footnote"], "resolution": "RESOLVED"},
+    {"id": "C2", "description": "FS Note 9 date anomaly", "items_involved": ["Note 9", "FS dates"], "resolution": "UNRESOLVED (typo)"}
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "North Dakota", "New York", "Puerto Rico", "Rhode Island", "Virginia", "Washington"],
+    "override_families_by_state": {
+      "forum_selection": ["California", "Maryland", "Michigan"],
+      "governing_law": ["California", "Illinois"],
+      "termination": ["California", "Maryland", "Michigan"],
+      "renewal": ["Michigan"],
+      "general_release": ["California", "Hawaii", "Maryland", "Michigan"],
+      "anti_waiver": ["Illinois", "Maryland"],
+      "damages": ["California"],
+      "transfer": ["Michigan"]
+    }
+  }
+}

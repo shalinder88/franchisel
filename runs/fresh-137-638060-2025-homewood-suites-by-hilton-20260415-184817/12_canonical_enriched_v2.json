@@ -1,0 +1,114 @@
+{
+  "enrichment_version": "v2",
+  "fdd_id": "638060-2025",
+  "brand": "Homewood Suites by Hilton",
+  "item21_financial_structure_detail": {
+    "entity_nature": "Wholly owned subsidiary of Hilton Domestic Operating Company Inc.; disregarded entity for US tax",
+    "ip_licensing": "Licenses IP (brand names, trademarks, service marks) from Hilton International Holding LLC (HIH) on a royalty-free basis",
+    "cash_management": "Centralized cash management by Hilton — not controlled by this entity. Intercompany receivable settled periodically with simultaneous distributions.",
+    "asset_pledge": "All assets and franchise contracts pledged as collateral for Hilton's debt obligations (maturing 2025-2033). No guarantee liability recorded.",
+    "going_concern_status": "Entity holds $317K cash at year-end; not a standalone going concern. Entirely dependent on Hilton Worldwide structure.",
+    "operator_agreement": "Has operator agreement with Hilton affiliate for franchise services; no compensation paid in 2022, 2023, or 2024."
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "total_assets": 1269897,
+      "cash": 317,
+      "accounts_receivable_net": 135970,
+      "ar_allowance": 10411,
+      "intercompany_receivable_franchise_deposits": 18498,
+      "financing_receivables_current_net": 11438,
+      "other_receivables_hilton_affiliates": 703943,
+      "total_current_assets": 872512,
+      "franchise_contracts_net": 392748,
+      "franchise_contracts_gross": 468626,
+      "franchise_contracts_accumulated_amort": 75878,
+      "contract_acquisition_costs_net": 306243,
+      "graduate_intangible_net": 81987,
+      "costs_to_obtain_contracts_net": 4518,
+      "total_liabilities": 692892,
+      "franchise_deposits": 18498,
+      "current_intercompany_payables": 89994,
+      "deferred_revenues_current": 41598,
+      "deferred_revenues_noncurrent": 517282,
+      "deferred_revenues_total": 558880,
+      "contributed_capital": 310000,
+      "retained_earnings": 528936,
+      "due_from_hilton_affiliates_equity": -261959,
+      "total_equity": 577005
+    },
+    "income_2024": {
+      "franchise_royalty_fees": 1434453,
+      "franchise_sales_coo_fees": 49340,
+      "franchise_termination_fees_other": 18276,
+      "total_revenue": 1502069,
+      "operating_expenses": 1354,
+      "provision_credit_losses": 6248,
+      "amortization_expense": 3751,
+      "total_expenses": 11353,
+      "operating_income": 1490716,
+      "non_operating_loss": -2733,
+      "income_before_taxes": 1487983,
+      "foreign_tax_expense": -412,
+      "net_income": 1487571
+    },
+    "income_2023": {
+      "total_revenue": 1376897,
+      "net_income": 1372281
+    },
+    "income_2022": {
+      "total_revenue": 1229465,
+      "net_income": 1233442
+    },
+    "cash_flow_2024": {
+      "operating_activities": 1516760,
+      "investing_activities": -80050,
+      "financing_activities": -1441744,
+      "net_change_cash": -5031,
+      "distributions_to_parent": -1500000
+    },
+    "amortization_detail_2024": {
+      "contract_acquisition_costs_amort": 16053,
+      "other_amort_expense": 3751,
+      "total_amortization": 19804
+    }
+  },
+  "item6_fee_detail": {
+    "royalty_fee_graduated_schedule": [
+      {"period": "Year 1 (New Dev/Conversion)", "rate": "3.5% GRR"},
+      {"period": "Year 2 (New Dev/Conversion)", "rate": "4.5% GRR"},
+      {"period": "Year 3+ (New Dev/Conversion)", "rate": "5.5% GRR"},
+      {"period": "All years (COO/Re-licensing)", "rate": "5.5% GRR"}
+    ],
+    "program_fee": {"base_rate": "3.5% GRR", "max_ceiling": "4.5% GRR", "covers": ["advertising", "marketing", "reservation systems", "quality assurance", "technology", "admin overhead"]},
+    "hilton_honors": {"rate": "2.5% of eligible guest folio", "mandatory": true, "waived_for": "on-property enrollments"},
+    "technology_fees": [
+      {"system": "OnQ Connectivity", "amount": "$400–$600/month", "frequency": "monthly"},
+      {"system": "OnQ Hardware/Software Maintenance", "amount": "$1,321–$2,714/month", "frequency": "monthly"},
+      {"system": "Connected Room Maintenance", "amount": "$564–$860/month per hotel", "frequency": "monthly"},
+      {"system": "OnQ Email", "amount": "$7.92/user/month + $12.50/month mobile", "frequency": "quarterly"},
+      {"system": "Delphi Sales/Events", "amount": "$858/user/year", "frequency": "annual"}
+    ],
+    "quality_assurance_fees": [
+      {"fee": "Brand Non-Compliance", "amount": "$65–$145/approved room", "cap": "$50,000 per 6-month period"},
+      {"fee": "Re-Evaluation", "amount": "Up to $4,500", "cap": null},
+      {"fee": "Special Audit", "amount": "$5,500", "cap": null},
+      {"fee": "PIP/Renovation Failure", "amount": "$10,000 every 6 months", "cap": null},
+      {"fee": "Stay Score Failure", "amount": "Up to $300/room or 0.5% GRR annually", "cap": null},
+      {"fee": "Service Quality Improvement", "amount": "$20,000–$50,000 per 6-month period", "cap": null},
+      {"fee": "Plans/Designs Late", "amount": "$5,000 every 90 days", "cap": null}
+    ],
+    "liquidated_damages": [
+      {"scenario": "Pre-opening termination", "formula": "System's Avg Monthly Royalty × 60"},
+      {"scenario": "Post-opening, first 2 years", "formula": "Greater of Hotel's or System's Avg Monthly Royalty × 60"},
+      {"scenario": "Post-opening, after 2 years", "formula": "Hotel's Avg Monthly Royalty × 60"},
+      {"scenario": "Last 60 months", "formula": "Hotel's Avg Monthly Royalty × remaining months"}
+    ],
+    "distribution_fees_notable": [
+      {"program": "Hilton Advance", "rate": "1.35% of Digital Direct Revenue (max $30/stay)"},
+      {"program": "Hilton For Business", "rate": "Up to 3% GRR per eligible stay (optional, auto-enrolled)"},
+      {"program": "ResMax", "rate": "5.4%–5.9% of consumed revenue (optional except in certain cases)"},
+      {"program": "RMCC", "rate": "$615–$15,709/month (optional except in certain cases)"}
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "depth_pass": "contract_burdens",
+  "fdd_id": "638056-2025",
+  "source_exhibit": "Exhibit D (Franchise Agreement), pp. 219-274",
+  "source_guaranty": "Exhibit E (Guaranty), pp. 292-296",
+  "burdens": {
+    "grant_and_term": {
+      "grant": "Non-exclusive license to use System at specified location under Hampton Brand",
+      "term_new_construction": "22 years from Effective Date (midnight, last day of month)",
+      "term_conversion": "10 to 20 years from Opening Date",
+      "term_coo": "Remaining term or as approved",
+      "hits_agreement": "Concurrent with FA, terminates with FA",
+      "no_renewal_right": true,
+      "relicensing_at_discretion": true,
+      "source_pages": [219, 220, 225]
+    },
+    "fee_obligations": {
+      "monthly_royalty": "6% of GRR, due 15th of following month",
+      "monthly_program_fee": "4% of GRR, may increase by up to 1% over term",
+      "calculation_method": "Uniform System of Accounts for the Lodging Industry or as specified in Manual",
+      "payment_method": "Wire transfer or electronic funds transfer required if franchisor elects",
+      "service_charges": "1.5%/month or highest legal rate on overdue payments",
+      "business_interruption": "Monthly fees based on forecasted GRR agreed with insurer",
+      "source_pages": [240, 241]
+    },
+    "construction_obligations": {
+      "new_dev_start_deadline": "15 months from application approval",
+      "new_dev_completion_deadline": "27 months from application approval",
+      "ada_compliance": "Architect/professional must certify compliance with ADA",
+      "plans_approval": "Required before proceeding with construction",
+      "ada_survey": "May be required within 30 days of request",
+      "opening_authorization": "Required before opening; may be withheld for non-ADA-compliance",
+      "source_pages": [228, 229, 230]
+    },
+    "operational_obligations": {
+      "24_7_operation": "Must operate 24 hours/day every day unless franchisor permits otherwise",
+      "standards_compliance": "Must comply with Manual/Standards at all times; subject to change",
+      "management_company": "Must be approved; if unsuitable, replace within 90 days",
+      "reporting": "Daily, monthly, quarterly, annual operating statements and other reports as required",
+      "quality_assurance": "Subject to periodic inspections, Stay Score assessments, and QA audits",
+      "insurance": "Must maintain minimum levels specified in Manual; franchisor named as additional insured",
+      "source_pages": [230, 240, 241]
+    },
+    "termination_triggers": {
+      "curable_defaults": [
+        {"trigger": "Failure to pay", "cure_period": "at least 10 days"},
+        {"trigger": "Failure to commence/complete Hotel Work", "cure_period": "at least 10 days"},
+        {"trigger": "Failure to maintain insurance", "cure_period": "at least 10 days"},
+        {"trigger": "Failure to comply with FA/Manual/Standards", "cure_period": "at least 30 days"}
+      ],
+      "non_curable_defaults": [
+        "Pattern of non-compliance (same breach twice in 24 months)",
+        "3 notices of material default in 12 months",
+        "Bankruptcy/insolvency",
+        "Loss of possession of hotel",
+        "Failure to operate for 5+ consecutive days",
+        "Contesting marks ownership",
+        "Conduct likely to adversely affect reputation",
+        "Fraud/concealed revenues",
+        "Unauthorized transfer",
+        "Becoming Sanctioned Person or Competitor",
+        "Public health/safety threat",
+        "Guarantor breach",
+        "Related Hotel Agreement terminated for breach"
+      ],
+      "interim_remedies": [
+        "Suspend from Reservation Service",
+        "Remove from directories/advertising",
+        "Divert reservations to other hotels",
+        "Disable software",
+        "Charge intervention/administration fees",
+        "Revoke financial accommodations"
+      ],
+      "source_pages": [248, 249, 250, 251]
+    },
+    "transfer_restrictions": {
+      "permitted_without_consent": "Public equity, private <50% with no control change, institutional fund with same asset manager",
+      "permitted_with_consent": "Affiliates, family, death, cumulative >50% private change — 60-day notice + $5,500 fee",
+      "change_of_ownership": "60-day notice + $200,000 fee + current-form FA + PIP + transferee must meet all requirements",
+      "restrictions": "No transfer to Competitor or Sanctioned Person",
+      "source_pages": [257, 258, 259, 260]
+    },
+    "noncompete": {
+      "during_term": "Cannot be licensor/franchisor of competing brand. May be franchisee or manage competitor property.",
+      "post_term": "None",
+      "competitor_definition": "Any entity that owns/licenses/franchises a Competing Brand, regardless of scale",
+      "source_pages": [260, 261]
+    },
+    "guaranty_scope": {
+      "type": "Personal, unconditional, irrevocable",
+      "scope": "Full payment of all sums owed + performance of all obligations under FA and related agreements",
+      "joint_and_several": true,
+      "waivers": "Waives right to require action against franchisee first, subrogation rights, exhaustion of remedies, notices and defenses",
+      "indemnification": "Guarantor must defend, protect, and indemnify franchisor from any actions arising from disputes between guarantors",
+      "spousal": "May include spouse of owner at franchisor's determination",
+      "source_pages": [292, 293, 294]
+    },
+    "liquidated_damages": {
+      "pre_opening_no_hotel_work": "System's Avg Monthly Royalty × 60 (if build/operate another hotel at site within 1 year)",
+      "post_opening_under_2yr": "Greater of Hotel's or System's Avg Monthly Royalty × 60",
+      "post_opening_2yr_plus": "Hotel's Avg Monthly Royalty × 60",
+      "last_60_months": "Hotel's Avg Monthly Royalty × remaining months",
+      "acknowledged_as": "Reasonable estimate of minimum compensation, not a penalty",
+      "source_pages": [250, 251]
+    },
+    "dispute_resolution": {
+      "venue": "E.D. Virginia (Alexandria) or Fairfax County, VA state court; fallback New York",
+      "governing_law": "New York (without choice-of-law principles), except Lanham Act",
+      "puerto_rico": "Arbitration (AAA/JAMS, Federal Rules of Civil Procedure)",
+      "waiver_of_jury_trial": "Standard FA may include (subject to state addenda)",
+      "source_pages": [264, 265]
+    },
+    "insurance_requirements": {
+      "specification": "Per Manual — minimum levels and types, specified insurer ratings, franchisor named as additional insured",
+      "failure_remedy": "Franchisor may obtain and maintain insurance at franchisee's expense",
+      "source_pages": [235]
+    },
+    "indemnification": {
+      "scope": "Franchisee must defend, hold harmless, and indemnify franchisor, Hilton Worldwide, and all affiliates' officers, directors, employees, agents",
+      "coverage": "Any claimed occurrence at hotel, any actions arising from franchise relationship",
+      "includes": "Attorneys' fees and court costs",
+      "source_pages": [252]
+    },
+    "force_majeure": {
+      "hotel_closure": "If casualty requires closing, franchisee may repair/rebuild per Standards; must reopen within 18 months",
+      "election_not_to_repair": "Franchisor may terminate without liquidated damages if franchisee does not own/operate competing hotel at site within 3 years",
+      "failure_to_operate_5_days": "Non-curable default unless due to Force Majeure with reasonable mitigation steps",
+      "source_pages": [247, 249]
+    },
+    "distinctive_clauses": [
+      "HITS Agreement runs concurrent — separate technology agreement with HSS that auto-terminates with FA",
+      "Development Incentive Note — contingent liability, repayable on early termination/transfer, decreasing ratably",
+      "Shared Facilities Addendum — required if hotel shares facilities with non-System hotel",
+      "No right of first refusal (for Hampton brand); Right of First Offer exists for Hilton/Conrad brands only",
+      "All assets pledged as collateral for Hilton parent debt (Note 7 of financial statements)",
+      "Operator agreement with Hilton affiliate exists but no compensation paid"
+    ]
+  }
+}

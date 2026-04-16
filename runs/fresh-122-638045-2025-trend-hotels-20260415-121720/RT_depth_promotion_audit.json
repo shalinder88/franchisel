@@ -1,0 +1,65 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_id": "638045-2025",
+  "promoted_facts": [
+    {
+      "fact": "MPHOA sold 112 total My Place franchises as of 12/31/2023; sold 2 in 2024, 16 in 2023, 20 in 2022",
+      "reader_report_section": "Pass A, bullet 4; Pass B, Item 1",
+      "pdf_page": [11, 96],
+      "canonical_field": "parent_system_size",
+      "action": "Added franchises_sold_2024: 2 and total_franchises_sold_through_2023: 112 to parent_system_size"
+    },
+    {
+      "fact": "Typical conversion time approximately 60 days from signing franchise agreement",
+      "reader_report_section": "Pass C, Item 11",
+      "pdf_page": [38],
+      "canonical_field": "operations.typical_conversion_time",
+      "action": "Not yet in canonical — promoted"
+    },
+    {
+      "fact": "No Trend hotels have opened as of issuance date (June 2020 to March 2025 = nearly 5 years)",
+      "reader_report_section": "Pass A, bullet 2",
+      "pdf_page": [11],
+      "canonical_field": "system_size.notes",
+      "action": "Already noted — confirmed"
+    },
+    {
+      "fact": "MPHOA franchisor revenue from required purchases was $0 for Trend in 2024 (all MP Technology revenue was from My Place franchisees)",
+      "reader_report_section": "Pass C, Item 8",
+      "pdf_page": [28],
+      "canonical_field": "supplier_restrictions",
+      "action": "Added note: MPHOA revenue from Trend required purchases was $0 in 2024"
+    },
+    {
+      "fact": "Washington AOD details: MPHOA agreed to remove no-hire provision and notify franchisees",
+      "reader_report_section": "Pass E, Litigation History",
+      "pdf_page": [77],
+      "canonical_field": "litigation.details",
+      "action": "Already captured — confirmed"
+    },
+    {
+      "fact": "All state effective dates show 'Pending' for all 14 states",
+      "reader_report_section": "Not in reader report — discovered during depth pass",
+      "pdf_page": [156],
+      "canonical_field": "state_effective_dates",
+      "action": "New fact — all state registrations pending as of issuance date"
+    },
+    {
+      "fact": "Guaranty is joint and several, unconditional, requires spousal signature, survives death and bankruptcy",
+      "reader_report_section": "Not fully detailed in reader report",
+      "pdf_page": [152, 153],
+      "canonical_field": "personal_guaranty",
+      "action": "Enhanced guaranty scope in canonical with joint_and_several, spousal, survives_death, survives_bankruptcy"
+    },
+    {
+      "fact": "Area development agreements offered but no area developers at close of fiscal year",
+      "reader_report_section": "Pass F, Exhibit D",
+      "pdf_page": [83],
+      "canonical_field": "item20_outlet_data",
+      "action": "Added area_development_offered: true, area_developers_count: 0"
+    }
+  ],
+  "promoted_count": 8,
+  "already_captured_count": 2,
+  "new_promotions_count": 6
+}

@@ -1,0 +1,146 @@
+{
+  "depth_pass": "state_addenda_promotion",
+  "source": "Exhibit J-1, pages 244–253; also pages 5–6 (Michigan pre-FDD), page 4 (special risks)",
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "North Dakota", "New York", "Puerto Rico", "Rhode Island", "Virginia", "Washington"],
+  "state_addenda_applicable_per_fa_toc": ["CA", "HI", "IL", "MD", "MN", "ND", "NY", "PR", "RI", "VA", "WA"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "damages",
+      "override_summary": "Liquidated damages clauses may be unenforceable under California Civil Code §1671",
+      "why_it_matters": "Franchisor's liquidated damages on termination may not be enforceable in California, potentially reducing financial exposure on early termination",
+      "source_pages": [244]
+    },
+    {
+      "state": "California",
+      "affected_family": "termination",
+      "override_summary": "California Business and Professions Code §§20000-20043 provide franchisee rights concerning termination or non-renewal. If FA is inconsistent with the law, the law controls.",
+      "why_it_matters": "California franchisees have statutory protections on termination/non-renewal that override the franchise agreement",
+      "source_pages": [244]
+    },
+    {
+      "state": "California",
+      "affected_family": "governing_law",
+      "override_summary": "New York governing law provision may not be enforceable under California law",
+      "why_it_matters": "California law may apply instead of New York law for California franchisees",
+      "source_pages": [244]
+    },
+    {
+      "state": "California",
+      "affected_family": "forum_selection",
+      "override_summary": "Virginia venue requirement may not be enforceable under California law",
+      "why_it_matters": "California franchisees may be able to litigate in California rather than Virginia",
+      "source_pages": [244]
+    },
+    {
+      "state": "California",
+      "affected_family": "general_release",
+      "override_summary": "CA Corporations Code §31512 voids waiver of rights under Franchise Investment Law. CA B&P Code §20010 voids waiver under Franchise Relations Act.",
+      "why_it_matters": "General release required for renewal/transfer cannot waive California franchise law rights",
+      "source_pages": [244]
+    },
+    {
+      "state": "California",
+      "affected_family": "termination",
+      "override_summary": "Termination upon bankruptcy may not be enforceable under federal bankruptcy law",
+      "why_it_matters": "Bankruptcy filing may not trigger automatic franchise termination",
+      "source_pages": [244]
+    },
+    {
+      "state": "Hawaii",
+      "affected_family": "general_release",
+      "override_summary": "General release language shall not relieve franchisor from liability imposed by Hawaii franchise laws",
+      "why_it_matters": "Hawaii franchisees retain all statutory franchise law claims regardless of general release",
+      "source_pages": [244]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "governing_law",
+      "override_summary": "Illinois Franchise Disclosure Act governs the franchise agreement for IL licensees. Governing law, jurisdiction, venue, choice of law, jury waiver provisions cannot waive rights under IL FDA.",
+      "why_it_matters": "Illinois law takes precedence over New York governing law for Illinois franchisees. Illinois franchise law rights cannot be waived.",
+      "source_pages": [245]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "anti_waiver",
+      "override_summary": "IL FDA §41: Any provision purporting to bind franchisee to waive compliance with IL law is void. Does not prevent settlement agreements or arbitration under Title 9 USC.",
+      "why_it_matters": "Illinois franchisees cannot be forced to waive compliance with any Illinois law",
+      "source_pages": [245]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "termination",
+      "override_summary": "Laws of Maryland may supersede the Franchise Agreement on termination and renewal",
+      "why_it_matters": "Maryland termination/renewal protections override the franchise agreement",
+      "source_pages": [245, 246]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may sue in Maryland for claims arising under Maryland Franchise Registration and Disclosure Law. 3-year limitation period from grant of franchise.",
+      "why_it_matters": "Maryland franchisees can litigate Maryland franchise law claims in Maryland courts",
+      "source_pages": [246]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "General release shall not release franchisor from liability under Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "Maryland franchise law claims survive any general release",
+      "source_pages": [246]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "anti_waiver",
+      "override_summary": "No statement, questionnaire, or acknowledgment can waive franchise law claims (including fraud in inducement) or disclaim reliance on franchisor statements. Supersedes any other document.",
+      "why_it_matters": "Strongest anti-waiver protection — franchisee can always claim reliance on franchisor representations",
+      "source_pages": [246]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "termination",
+      "override_summary": "Termination before expiration only for 'good cause' — includes failure to comply with lawful provisions after notice and up to 30 days to cure",
+      "why_it_matters": "Michigan requires good cause for termination and mandatory 30-day cure period",
+      "source_pages": [246]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "renewal",
+      "override_summary": "Cannot refuse to renew without fair compensation (repurchase at FMV) for inventory, supplies, equipment, fixtures, furnishings. Applies if term <5 years and franchisee prohibited from continuing similar business.",
+      "why_it_matters": "Graduate's 23-year term likely makes this provision inapplicable, but Michigan franchisees should verify",
+      "source_pages": [246]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "forum_selection",
+      "override_summary": "Provision requiring arbitration or litigation outside Michigan is void (unless franchisee agrees at time of arbitration)",
+      "why_it_matters": "Michigan franchisees cannot be forced to litigate in Virginia — litigation must be available in Michigan",
+      "source_pages": [246]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "transfer",
+      "override_summary": "Cannot refuse to permit transfer except for good cause (failure to meet qualifications, competitor, unwillingness to comply, unpaid debts/uncured defaults)",
+      "why_it_matters": "Michigan limits franchisor's discretion to block transfers",
+      "source_pages": [246]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "general_release",
+      "override_summary": "Cannot require franchisee to assent to release, waiver, or estoppel that deprives franchisee of Michigan franchise law rights (but may settle claims after entering FA)",
+      "why_it_matters": "Michigan franchise law rights cannot be waived through general release",
+      "source_pages": [246]
+    }
+  ],
+  "summary_table": {
+    "override_families": {
+      "forum_selection": ["California", "Maryland", "Michigan"],
+      "governing_law": ["California", "Illinois"],
+      "termination": ["California", "Maryland", "Michigan"],
+      "renewal": ["Michigan"],
+      "general_release": ["California", "Hawaii", "Maryland", "Michigan"],
+      "anti_waiver": ["Illinois", "Maryland"],
+      "damages": ["California"],
+      "transfer": ["Michigan"]
+    }
+  }
+}

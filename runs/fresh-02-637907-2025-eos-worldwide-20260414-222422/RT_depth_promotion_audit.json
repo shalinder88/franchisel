@@ -1,0 +1,67 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_date": "2026-04-14",
+  "promotable_facts": [
+    {
+      "id": "P1",
+      "fact": "Franchisor derived $3,309,031 from required purchases in 2024 (13.9% of $23,813,492 total revenue). This does not include Boot Camp revenue.",
+      "source": "Reader report Pass C / Item 8, page 31",
+      "promoted_to": "item8_supplier_revenue in canonical"
+    },
+    {
+      "id": "P2",
+      "fact": "Franchisee can terminate franchise at any time with 60 days notice OR with 10 days notice before registering for Boot Camp",
+      "source": "Reader report Pass E / Item 17, page 55",
+      "promoted_to": "termination.by_franchisee in canonical — added 10-day pre-Boot Camp option"
+    },
+    {
+      "id": "P3",
+      "fact": "EOS One Referral Program provides tier-based referral rates: Professional 10%, Certified 15%, Expert 20%",
+      "source": "Reader report Pass C / Item 11, page 35",
+      "promoted_to": "new field: eos_one_referral_rates in canonical"
+    },
+    {
+      "id": "P4",
+      "fact": "Advertising expense: $1,051,000 (2024), $873,000 (2023) — from financial statement notes",
+      "source": "Reader report / Financial notes, page 172",
+      "promoted_to": "item21_financials.advertising_expense in canonical"
+    },
+    {
+      "id": "P5",
+      "fact": "Warm lead referral revenue is deferred and recognized monthly pro rata over ~45 months. Franchise fee revenue is similarly deferred over ~45 months.",
+      "source": "Financial notes depth pass, page 172",
+      "promoted_to": "item21_financials.revenue_recognition_detail in canonical"
+    },
+    {
+      "id": "P6",
+      "fact": "Note purchase agreement balance grew from ~$2.4M (2022) to ~$15.7M (2023) to ~$17.9M (2024) — 7.4x increase in 2 years",
+      "source": "Financial notes depth pass, pages 173, 185",
+      "promoted_to": "item21_financials.related_party_transactions.note_purchase_trend in canonical"
+    },
+    {
+      "id": "P7",
+      "fact": "Franchise Agreement contains AI Usage clause (Section 8.6) — terms in Operations Manual",
+      "source": "Reader report Pass D / FA TOC page 99",
+      "promoted_to": "distinctive_contract_clauses in canonical"
+    },
+    {
+      "id": "P8",
+      "fact": "3-Default Rule: 3+ defaults in any term, even if cured, is non-curable termination event",
+      "source": "Contract depth pass / FA Section 17.2(ix), page 123",
+      "promoted_to": "termination.non_curable_defaults detail in canonical"
+    },
+    {
+      "id": "P9",
+      "fact": "Competing business definition is extremely broad — includes anywhere in the world, any non-EOS business operating system, any outsourced entrepreneurial coaching",
+      "source": "Contract depth pass / FA Section 16.5, pages 119-120",
+      "promoted_to": "noncompete.competing_business_definition in canonical"
+    },
+    {
+      "id": "P10",
+      "fact": "Franchisor may seek injunctive relief without bond ($1,000 if court requires one)",
+      "source": "Contract depth pass / FA Section 20.6, page 130",
+      "promoted_to": "dispute_resolution.injunctive_relief in canonical"
+    }
+  ],
+  "total_promoted": 10
+}

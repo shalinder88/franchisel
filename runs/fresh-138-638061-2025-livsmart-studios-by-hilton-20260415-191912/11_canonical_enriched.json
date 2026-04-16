@@ -1,0 +1,76 @@
+{
+  "_enrichment_version": "v1",
+  "_base": "09_final_canonical.json",
+  "item19_detail": {
+    "fpr_provided": false,
+    "fpr_type": "none",
+    "statement_verbatim": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets. We also do not authorize our employees or representatives to make any such representations either orally or in writing.",
+    "substantiation_available": false,
+    "contact_for_unauthorized_reps": "William Fortier, SVP-Development-Americas, 7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102, 703-883-1000",
+    "source_pages": [84, 85]
+  },
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 0, "franchised_end": 0, "company_start": 0, "company_end": 0, "transfers": 0, "terminations": 0, "openings": 0},
+    "2023": {"franchised_start": 0, "franchised_end": 0, "company_start": 0, "company_end": 0, "transfers": 0, "terminations": 0, "openings": 0},
+    "2024": {"franchised_start": 0, "franchised_end": 0, "company_start": 0, "company_end": 0, "transfers": 0, "terminations": 0, "openings": 0},
+    "pipeline": {
+      "signed_not_opened": 73,
+      "projected_franchised_next_year": 2,
+      "projected_company_next_year": 0,
+      "states_with_agreements": 23,
+      "top_state": "Texas",
+      "top_state_count": 16
+    }
+  },
+  "exhibit_structure": {
+    "total_exhibits": 17,
+    "exhibits_with_state_addenda": ["D-1", "J-1"],
+    "financial_exhibit": "C",
+    "franchise_agreement_exhibit": "D",
+    "guaranty_exhibit": "E",
+    "hits_agreement_exhibit": "G",
+    "receipt_exhibit": "N",
+    "states_with_fa_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "New York", "North Dakota", "Puerto Rico", "Rhode Island", "Virginia", "Washington"],
+    "states_with_fdd_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"]
+  },
+  "item21_structural_facts": {
+    "entity_type": "Delaware LLC, disregarded for US income tax purposes",
+    "auditor": "Cherry Bekaert LLP",
+    "opinion": "Unqualified",
+    "going_concern": false,
+    "years_audited": 3,
+    "parent_entity": "Hilton Domestic Operating Company Inc.",
+    "centralized_cash_management": true,
+    "debt_guarantee": true,
+    "debt_guarantee_detail": "Unconditionally guarantees Hilton debt maturing 2025-2033; all assets pledged",
+    "graduate_acquisition_2024": true,
+    "graduate_acquisition_amount": 85000000,
+    "distributions_pattern": "Annual distributions of substantially all net income to parent"
+  },
+  "item1_structural_facts": {
+    "formed_date": "September 2007",
+    "brand_launch_date": "2023-05-23",
+    "brand_rebrand_date": "2024-01-09",
+    "original_brand_name": "Project H3 by Hilton",
+    "total_hilton_brands": 20,
+    "international_affiliates": 4,
+    "key_subsidiaries": ["Hilton Reservations Worldwide LLC", "Hilton Supply Management LLC", "Hilton Honors Worldwide LLC", "Hilton Systems Solutions LLC"],
+    "segment": "Midscale Extended-Stay",
+    "market_description": "Business travelers, families, vacationers, extended-stay needs"
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": "6%",
+    "royalty_base": "Gross Rooms Revenue",
+    "royalty_negotiable": true,
+    "royalty_negotiated_count_2024": 29,
+    "program_fee_rate_compliant": "2.0%",
+    "program_fee_rate_noncompliant": "2.5%",
+    "program_fee_max_increase": "1% above current over term",
+    "hilton_honors_rate": "2%",
+    "late_payment_rate": "1.5% per month",
+    "total_ongoing_fee_categories": 38,
+    "ld_pre_opening_formula": "$10,000 x approved guest rooms",
+    "ld_post_opening_formula": "Greater of 60x avg monthly royalty or $10,000 x rooms",
+    "ld_late_term_formula": "Avg monthly royalty x remaining months"
+  }
+}

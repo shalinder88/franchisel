@@ -1,0 +1,99 @@
+{
+  "enrichment_version": "v2",
+  "extraction_id": "638045-2025",
+  "brand": "Trend Hotels and Suites by My Place",
+  "item21_financial_structure_detail": {
+    "entity_type": "LLC (pass-through)",
+    "membership": {
+      "class_a": {"type": "voting", "units": 9600, "equity_2024": -1755172},
+      "class_b": {"type": "non-voting", "units": 400, "equity_2024": 2560354}
+    },
+    "total_equity_2024": 805182,
+    "distributions_exceed_income": true,
+    "distributions_2024": 654541,
+    "net_income_2024": 998429,
+    "debt_to_equity_ratio": 0.017,
+    "current_ratio_2024": 2.60,
+    "working_capital_2024": 2369688
+  },
+  "item21_statement_detail": {
+    "revenue_composition_2024": {
+      "royalty_fees": {"amount": 4415862, "pct": 46.2},
+      "marketing_fees": {"amount": 2655616, "pct": 27.8},
+      "loyalty_program_fees": {"amount": 1100657, "pct": 11.5},
+      "conference_fees": {"amount": 497795, "pct": 5.2},
+      "other_income": {"amount": 475715, "pct": 5.0},
+      "franchise_fees": {"amount": 204690, "pct": 2.1},
+      "training_fees": {"amount": 132000, "pct": 1.4},
+      "franchise_website_fees": {"amount": 71747, "pct": 0.8}
+    },
+    "expense_highlights_2024": {
+      "salaries_and_payroll": 3557395,
+      "marketing_and_programs": 991435,
+      "travel_total": 726342,
+      "meetings_conferences": 543493,
+      "rent_leases": 535798,
+      "computer_technology": 334517,
+      "professional_fees": 294438,
+      "depreciation": 120339
+    },
+    "operating_margin_2024": "10.4%",
+    "operating_margin_2023": "2.3%",
+    "operating_margin_2022": "12.5%",
+    "revenue_recognition": {
+      "at_point_in_time_2024": 1105510,
+      "over_time_2024": 8448572
+    },
+    "deferred_revenue_composition_2024": {
+      "franchise_fees": 3069516,
+      "loyalty_program": 414656,
+      "training_fees": 18500,
+      "total": 3502672
+    },
+    "related_party_revenue_2024": 2512049,
+    "related_party_revenue_pct": 26.3,
+    "related_party_expenses_2024": 1750422
+  },
+  "item6_fee_detail": {
+    "fees": [
+      {"name": "Royalty", "type": "percentage", "rate": "5% (steady state)", "basis": "GRR", "frequency": "monthly", "ramp": true},
+      {"name": "Marketing & Reservation Fund", "type": "percentage", "rate": "2.5%", "basis": "GRR", "frequency": "monthly"},
+      {"name": "Revenue Intelligence Service", "type": "percentage", "rate": "1%", "basis": "GRR", "frequency": "monthly", "changeable": true},
+      {"name": "Guest Loyalty Program", "type": "percentage", "rate": "1%", "basis": "GRR", "frequency": "monthly", "changeable": true},
+      {"name": "Technology Subscription", "type": "fixed", "amount_monthly": 1204, "frequency": "monthly", "variable_by": "rooms/computers"},
+      {"name": "Website Fee", "type": "fixed", "amount_annual": 1000, "frequency": "annual"},
+      {"name": "Initial Franchise Fee", "type": "one-time", "amount": 45000},
+      {"name": "Application Fee", "type": "one-time", "amount": 2500, "credited": true},
+      {"name": "Training Fee", "type": "one-time", "amount": 10000},
+      {"name": "Transfer Fee", "type": "event", "formula": "50% of then-current franchise fee"},
+      {"name": "Renewal Fee", "type": "event", "formula": "then-current application fee + franchise fee"},
+      {"name": "Retraining", "type": "event", "amount": 4125},
+      {"name": "Reinspection", "type": "event", "amount": 2500},
+      {"name": "Approved Supplier Review", "type": "event", "amount_cap": 1000},
+      {"name": "Change of Opening Date", "type": "event", "amount": 5000},
+      {"name": "Securities Offering", "type": "event", "formula": "50% of then-current franchise fee"},
+      {"name": "Late Fee", "type": "penalty", "amount": 200, "per": "occurrence"},
+      {"name": "Dishonored Check", "type": "penalty", "amount": 60},
+      {"name": "Interest", "type": "penalty", "rate": "highest allowed by law"},
+      {"name": "Liquidated Damages (pre-approval)", "type": "penalty", "amount_daily": 1000},
+      {"name": "Liquidated Damages (premature termination)", "type": "penalty", "formula": "36-month fee projection"},
+      {"name": "Audit Cost", "type": "event", "formula": "cost + underpayment + interest", "trigger": "2%+ underpayment"},
+      {"name": "Indemnification", "type": "event", "amount": "as incurred"},
+      {"name": "Damages", "type": "event", "amount": "unspecified"}
+    ],
+    "total_fee_types": 24
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Zero operating Trend hotels — all estimates theoretical", "severity": "high", "source": "Items 1, 7, 20"},
+    {"id": "U2", "description": "Brand viability unknown — zero outlets in nearly 5 years since launch", "severity": "high", "source": "Items 1, 20"},
+    {"id": "U3", "description": "Marketing fund shared with My Place, not audited, $430K shortfall", "severity": "medium", "source": "Item 11"},
+    {"id": "U4", "description": "My Place Hotels may be franchised within Trend PA, no conflict resolution", "severity": "medium", "source": "Item 12"},
+    {"id": "U5", "description": "Related party concentration ~26% of revenue", "severity": "medium", "source": "Note 4"},
+    {"id": "U6", "description": "NY addendum investment figure inconsistent with Item 7", "severity": "medium", "source": "Exhibit C (NY), Item 7"},
+    {"id": "U7", "description": "Item 3 cross-reference only — litigation scope unclear", "severity": "low", "source": "Item 3"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "NY addendum investment ($5.68M-$6.95M) vs Item 7 ($272.5K-$2.95M)", "items_involved": ["Item 7", "Exhibit C (NY)"], "resolution_status": "unresolved"},
+    {"id": "C2", "description": "FA 'non-renewable' vs Item 17 'option to renew' terminology", "items_involved": ["Item 17(c)", "FA Section 3(A)", "FA Section 3(C)"], "resolution_status": "resolved — extension not renewal"}
+  ]
+}

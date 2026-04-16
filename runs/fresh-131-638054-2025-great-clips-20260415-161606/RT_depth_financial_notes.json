@@ -1,0 +1,249 @@
+{
+  "depth_pass": "financial_notes",
+  "source_pages": [175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186],
+  "auditor": {
+    "name": "Not identified in text layer (Minneapolis, MN-based firm)",
+    "opinion": "Unqualified (clean)",
+    "audit_date": "2025-03-26",
+    "going_concern": false,
+    "note": "Auditor name likely in image/letterhead on pages 168-169. Text layer does not capture it."
+  },
+  "accounting_policies": {
+    "revenue_recognition": {
+      "standard": "ASC 606 (Topic 606)",
+      "continuing_franchise_fees": "Recognized as underlying franchisee sales occur (6% royalty)",
+      "initial_franchise_fees": "Deferred upon collection, amortized over 12 years (estimated franchise agreement life)",
+      "ad_fund_contributions": "Recognized when underlying franchisee sales occur (5%)",
+      "salon_development_sales": "Recorded net (agent relationship). Gross sales: $16.3M (2024), $13.9M (2023), $12.0M (2022)",
+      "source_pages": [178]
+    },
+    "depreciation_amortization": {
+      "method": "Straight-line for financial reporting",
+      "useful_lives": {
+        "transportation_equipment": "5-20 years",
+        "computer_equipment_software": "3-5 years",
+        "leasehold_improvements": "Shorter of useful life or lease term (5-10 years)",
+        "equipment": "3-7 years"
+      },
+      "depreciation_expense_2024": 3915763,
+      "depreciation_expense_2023": 3298193,
+      "depreciation_expense_2022": 3031124,
+      "source_pages": [176]
+    },
+    "impairment": {
+      "policy": "Review long-lived assets whenever events or changes in circumstances indicate carrying amount may not be recoverable. Compare carrying amount to future net cash flows.",
+      "impairment_charges_2024": 0,
+      "impairment_charges_2023": 0,
+      "impairment_charges_2022": 0,
+      "note": "No triggering events identified in any year",
+      "source_pages": [177]
+    },
+    "income_taxes": {
+      "entity_type": "C corporation (converted from S corp effective January 1, 2019)",
+      "method": "Asset and liability method",
+      "effective_rate_2024": "25%",
+      "effective_rate_2023": "25%",
+      "effective_rate_2022": "25%",
+      "rate_difference_from_statutory": "Primarily due to state taxes and permanent differences",
+      "current_expense_2024": 8456151,
+      "deferred_expense_2024": -1913256,
+      "total_income_tax_2024": 6542895,
+      "deferred_tax_asset_2024": 5267196,
+      "valuation_allowance_2024": 0,
+      "valuation_allowance_2023": 105000,
+      "unrecognized_tax_benefits": 0,
+      "source_pages": [179, 185]
+    },
+    "lease_accounting": {
+      "standard": "ASC 842 (Topic 842)",
+      "adopted": "2022-01-01",
+      "policy_elections": [
+        "Short-term lease exemption (< 12 months)",
+        "Risk-free discount rate for all leases (U.S. Treasury)",
+        "Combined lease and non-lease components"
+      ],
+      "rou_assets_2024": 4157428,
+      "rou_assets_2023": 5976540,
+      "total_lease_liabilities_2024": 5370000,
+      "weighted_avg_remaining_term_years": 4.5,
+      "weighted_avg_discount_rate": "1.9%",
+      "operating_lease_cost_2024": 1902000,
+      "variable_lease_cost_2024": 941000,
+      "total_lease_cost_2024": 2843000,
+      "future_payments": {
+        "2025": 1501000,
+        "2026": 1100000,
+        "2027": 1058000,
+        "2028": 1075000,
+        "2029": 986000,
+        "total": 5720000,
+        "imputed_interest": 350000,
+        "present_value": 5370000
+      },
+      "adoption_impact": "ROU assets $11.5M, lease liabilities $13.9M at Jan 1, 2022. Cumulative effect adjustment of ~$450K to accumulated deficit.",
+      "source_pages": [176, 177, 180, 181]
+    }
+  },
+  "material_notes": {
+    "goodwill": {
+      "gross_value": 4569158,
+      "origin": "Acquisition of two regional franchisees",
+      "amortization_period": "10 years (straight-line)",
+      "fully_amortized": true,
+      "fully_amortized_date": "2024",
+      "net_book_value_2024": 0,
+      "net_book_value_2023": 484790,
+      "impairment_testing": "Entity level, only upon triggering events",
+      "no_triggering_events": true,
+      "source_pages": [177, 181]
+    },
+    "ad_fund": {
+      "restricted_cash_2024": 20560695,
+      "other_current_assets_2024": 12505167,
+      "total_ad_fund_assets_2024": 33065862,
+      "admin_fee_paid_to_gc_2024": 4348000,
+      "admin_fee_paid_to_gc_2023": 4165000,
+      "trade_receivables_from_ad_fund_2024": 707000,
+      "canadian_cash_in_ad_fund_2024": 5411000,
+      "source_pages": [175, 179, 180]
+    },
+    "deferred_compensation": {
+      "total_liability_2024": 4508428,
+      "plan_1_salary_bonus_deferral": {
+        "max_deferral": 100000,
+        "interest_calculation": "Company weighted-average cost of capital",
+        "distribution_triggers": ["termination", "death", "unforeseen emergency", "change in control"],
+        "liability_2024": 2064000,
+        "expense_2024": 143000
+      },
+      "plan_2_long_term_incentive": {
+        "adopted": "2023-04-10",
+        "type": "Cash incentive, 3-year performance goals",
+        "goals": ["Growth in new salons", "Customer counts", "Company cash flows"],
+        "cash_flow_requirement": "Must be met or no bonus paid",
+        "payment_timing": "3 years after determination",
+        "liability_2024": 908000,
+        "expense_2024": 467000
+      },
+      "plan_3_terminated": {
+        "terminated": "2023-02-16",
+        "valuation_date": "2022-12-31",
+        "fully_vested": true,
+        "paid_in_2024": 3106000,
+        "remaining_due_2025": 1537000,
+        "liability_2024": 1537000
+      },
+      "source_pages": [182]
+    },
+    "financing_arrangements": {
+      "term_note": {
+        "balance_2024": 8000000,
+        "effective_rate": "5.93%",
+        "basis": "Prime or SOFR + applicable margin",
+        "maturity": "August 2027",
+        "payments": "Quarterly principal and interest"
+      },
+      "subordinated_shareholder_notes": {
+        "balance_2024": 6754731,
+        "rate": "8.50%",
+        "maturity": "December 2027",
+        "payments": "Quarterly principal and interest",
+        "subordination": "Subordinated to all other debt"
+      },
+      "rloc": {
+        "capacity": 35000000,
+        "outstanding": 0,
+        "maturity": "August 2027"
+      },
+      "covenants": [
+        "Restrictions on dividends",
+        "Limitations on stock redemption",
+        "Minimum interest coverage ratio",
+        "Minimum debt service coverage ratio",
+        "Maximum leverage ratio"
+      ],
+      "collateral": "Substantially all business assets",
+      "expected_principal_payments": {"2025": 3250000, "2026": 3750000, "2027": 7755000},
+      "source_pages": [182, 183]
+    },
+    "lease_guarantees": {
+      "count": 249,
+      "combined_annual_rentals": 8994000,
+      "expiration_range": "2025-2035",
+      "liability_reserve_2024": 1277000,
+      "liability_reserve_2023": 973000,
+      "source_pages": [183]
+    },
+    "commitments_and_contingencies": {
+      "sponsorship_commitments": {
+        "nhl_2025": 3800000,
+        "nhl_2026": 3800000,
+        "ncaa_2025": 9982000,
+        "ncaa_2026": 10346000,
+        "espn_2025": 1000000,
+        "espn_2026": 930000,
+        "total_2025": 14782000,
+        "total_2026": 15076000
+      },
+      "other_legal": "Subject to various legal proceedings in normal course. Management believes no material adverse effect.",
+      "source_pages": [184]
+    },
+    "shareholders_equity": {
+      "stock_valuation": "EBITDA multiple consistent with most recent arm's-length sales",
+      "redemption_agreements": "All employee shareholders have purchase/redemption agreements",
+      "redemption_trigger": "Termination (as defined) — employee may require company to purchase at fair value",
+      "minimum_holding_period": "6 months and 1 day",
+      "source_pages": [184]
+    },
+    "related_party": {
+      "description": "Board members directly or through immediate family own/operate franchise locations",
+      "salons_2024": 23,
+      "franchise_fee_revenue_2024": 647000,
+      "accounts_receivable_2024": 42000,
+      "unearned_initial_franchise_fees_2024": 116000,
+      "source_pages": [186]
+    },
+    "employee_benefit_plan": {
+      "type": "401(k) with safe harbor match",
+      "employee_contribution_limit": "100% of earnings up to IRS maximum",
+      "employer_match": "100% of first 2% + 50% of next 4%",
+      "employer_contributions_2024": 1040000,
+      "employer_contributions_2023": 1048000,
+      "employer_contributions_2022": 890000,
+      "source_pages": [186]
+    },
+    "subsequent_events": {
+      "evaluated_through": "2025-03-26",
+      "material_events": "None disclosed",
+      "source_pages": [179]
+    },
+    "foreign_currency": {
+      "functional_currency": "US Dollar",
+      "foreign_operations": "Canada",
+      "canadian_cash_2024": 7346000,
+      "translation_method": "Balance sheet at year-end rates; income/expense at average rates",
+      "translation_adjustments": "Recorded in OCI",
+      "conversion_rate_for_fpr": 0.73,
+      "source_pages": [179]
+    },
+    "cash_and_cash_equivalents": {
+      "definition": "Highly liquid investments with original maturities of 90 days or less",
+      "stated_at": "Cost (approximates fair value)",
+      "fdic_coverage": 250000,
+      "cdic_coverage": "CAD 100,000",
+      "source_pages": [175]
+    },
+    "employee_retention_credit": {
+      "amount": 3985000,
+      "year_recognized": 2022,
+      "outstanding_receivable_2024": 1480000,
+      "note": "Under CARES Act. Receivable included in trade receivables.",
+      "source_pages": [178]
+    },
+    "ppp_loan": {
+      "forgiveness_amount": 2017258,
+      "year_recognized": 2022,
+      "source_pages": [171]
+    }
+  }
+}

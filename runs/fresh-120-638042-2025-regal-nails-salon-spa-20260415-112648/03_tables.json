@@ -1,0 +1,295 @@
+{
+  "tables": [
+    {
+      "id": "T01",
+      "item": "5",
+      "title": "Fees Payable to Franchisor or Affiliate Before Opening",
+      "source_pages": [14],
+      "columns": ["Fee", "Amount"],
+      "rows": [
+        ["Application Fee", "$250"],
+        ["Snow White Package", "$150,000 - $545,000"],
+        ["Full First and Last Month's Monthly Fee", "$1,000 - $30,000"],
+        ["Security Deposit", "$1,000 - $32,400"],
+        ["Pro-Rata Monthly Fee", "$0 - $14,517"],
+        ["Monthly Utility Charge and/or CAM", "$200 - $1,200"],
+        ["Pro-Rata Insurance", "$1,000 - $8,000"],
+        ["Insurance Handling Fee", "$50"],
+        ["Rental Tax", "$0 - $800"],
+        ["Additional Furniture, Fixtures and Equipment", "$0 - $27,249"],
+        ["Sales Taxes", "$3,000 - $5,000"],
+        ["Total", "$156,500 - $664,466"]
+      ],
+      "table_notes": ["Initial Franchise Fee ($25,000) and Confirmation Fee ($45,000) are credited against Snow White Package cost."]
+    },
+    {
+      "id": "T02",
+      "item": "5",
+      "title": "Snow White Package Prices for 2025 Grand Openings (US and PR)",
+      "source_pages": [15],
+      "columns": ["Type", "Square Feet Ranges", "Price"],
+      "rows": [
+        ["WM Snow White Package (Most Areas)", "0-450 to 901-1200", "$150,000"],
+        ["WM Snow White Package (High Cost Areas)", "0-450 to 901-1200", "$200,000"],
+        ["Non-WM Snow White Package (Most Areas)", "0-450 to 901-1200", "$250,000"],
+        ["Non-WM Snow White Package (High Cost Areas)", "0-450 to 901-1200", "$300,000"]
+      ],
+      "table_notes": [
+        "Note 1: Most Areas range $150,000-$250,000",
+        "Note 2: High Cost Areas include AK, AZ, CA, CT, FL, HI, MA (65mi Boston), NH, NJ, NV, NY (85mi NYC), OR, RI, TX (45mi Houston/Dallas), VT, WA, PR. Range $200,000-$300,000",
+        "Note 3: Existing Locations up to $30,000 more",
+        "Note 4: Exclusive Brand Add-on up to $20,000 more",
+        "Note 5: Additional Government/Municipal/Impact Fees up to $40,000 more",
+        "Note 6: Additional Construction Costs up to $150,000 more",
+        "Note 7: Additional Review Costs up to $5,000 more",
+        "Monthly Fee range: $500 to $15,000 (includes franchise fee, base rent, rental tax if party tenant)",
+        "Annual 8% increase after 2025; Monthly Fee may increase by 25% after 2025"
+      ]
+    },
+    {
+      "id": "T03",
+      "item": "6",
+      "title": "Other Fees Table",
+      "source_pages": [20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Monthly Fee", "$500 to $15,000", "First week of each month, in advance", "Via ACH. Low end if not party tenant; high end includes franchise fee + rent + rental tax"],
+        ["Percentage Rent (party tenant)", "Variable, by landlord formula", "January for prior year", "Walmart: 6.5% of Gross Sales above natural breakpoint"],
+        ["Monthly Utility/CAM (party tenant)", "$200 to $1,200/mo", "Last week of each month", "Includes property insurance/tax charged by landlord"],
+        ["CGL and PL Insurance", "$1,000 to $8,000/yr", "Annually", "Through approved group carrier. Gulf of Mexico higher."],
+        ["Insurance Handling Charge", "$50", "Annually", "For placing and obtaining coverage"],
+        ["System Advertising Fund", "Currently $0; future $25-$500/mo", "Periodic", "Not yet formed"],
+        ["Advertising Cooperative", "Currently $0; future min $10/mo", "Per cooperative", "Not yet formed"],
+        ["NSF/Returned Item", "$100/item + 12% interest/yr", "30 days from invoice", "Bank charges also passed through"],
+        ["POS Subscription Fee", "$14-$100/mo", "Monthly", "Optional unless required in future"],
+        ["Expansion Fee", "$2,500", "On signing expansion agreement", "Plus costs $25,000-$40,000"],
+        ["Successor Franchise Fee", "$500", "Before signing successor agreement", "May change at time of renewal"],
+        ["Transfer Fee", "$1,000 ($500 to own entity)", "Before transfer", "Waived on death/disability"],
+        ["Inspection Fines", "$25-$500/deficiency", "30 days of demand", "Per COM standards"],
+        ["Failure to Open (WM Grand Opening)", "$10,000 + $300/day", "On demand", "New/relocated/expanded WM stores only"],
+        ["Failure to Open within 120 days", "$10,000 + $300/day", "On demand", "Already operating WM stores"],
+        ["Failure to Operate per Agreement", "$200 first + $500 each add'l", "On demand", "More than 2 incidents may lead to eviction"],
+        ["Failure to Maintain Premises", "Cost of repairs + 10% admin + interest", "On demand", "Including lighting, plumbing, sewer"],
+        ["Failure to Repair on Vacating", "Min $15,000 + $100/day", "On demand", "Security Deposit applied"],
+        ["Failure to Maintain Insurance", "Cost + 10% admin + interest", "On demand", "Franchisor may obtain for you"],
+        ["Insurance Maintenance Admin Fee", "Up to $100/yr", "Annually", "If franchisor discontinues program"],
+        ["Lien Removal", "Cost + 15% interest/yr min", "On demand", "Additional rent"],
+        ["Late Charges (Walmart)", "1.5%/month", "On demand", "Interest on late payments"],
+        ["Late Fees on Invoices", "$100 + 12%/yr compounded monthly", "On demand", "On amounts 30+ days past due"],
+        ["Audit Costs", "Actual + underpayment", "On demand", "Only if >2% reporting error"],
+        ["Administrative Fee", "$500/report", "On demand", "Per required report not received"],
+        ["Indemnification", "Actual costs", "On demand", ""],
+        ["Collection", "Actual costs (15%-40%)", "On demand", "Plus court costs"],
+        ["Taxes", "$3,000-$5,000", "When due", "Taxes on goods/services/fees"],
+        ["Customer Complaint Resolution", "Actual costs", "On demand", "Including gift certificates"],
+        ["Walmart Imposed Fees", "Varies; insurance ~$0.10/sqft/yr", "Before opening + annually", "Party tenant WM only"],
+        ["White Box Fee", "$25,000", "Upon notice", "Failure to return in white box condition"],
+        ["Holdover (consent)", "150% of Monthly Fee", "Monthly in advance", "Month-to-month extension"],
+        ["Holdover (no consent)", "300% of Monthly Fee + legal costs", "Monthly in advance", "Plus all legal fees"],
+        ["Liquidated Damages", "All remaining Monthly Fees + Utility/CAM", "At termination", "Discounted to PV using prime rate"]
+      ],
+      "table_notes": [
+        "All fees non-refundable except limited Item 5 refund provisions",
+        "All payments via ACH electronic funds transfer",
+        "California max interest rate: 10% annually"
+      ]
+    },
+    {
+      "id": "T04",
+      "item": "7",
+      "title": "Estimated Initial Investment",
+      "source_pages": [31, 32, 33],
+      "columns": ["Expenditure", "Amount", "Method", "When Due", "Payee"],
+      "rows": [
+        ["Snow White Package", "$150,000 - $545,000", "Lump Sum/Installments", "Per Item 5 schedule", "Us"],
+        ["Pro-rata CGL/PL Insurance", "$1,000 - $8,000/yr", "Lump Sum/Annually", "Before opening + Feb annually", "Us"],
+        ["First + Last Month's Monthly Fee", "$1,000 - $30,000", "Before opening", "Before opening", "Us"],
+        ["2nd-3rd Month's Monthly Fee", "$1,000 - $30,000", "Monthly", "First of month in advance", "Us"],
+        ["Rental Tax", "$0 - $2,400", "As negotiated", "As negotiated", "Us or Landlord"],
+        ["Pro-Rata Monthly Fee", "$0 - $14,517", "Lump Sum", "Before opening", "Us"],
+        ["Monthly Utility/CAM", "$600 - $3,600", "Before opening + monthly", "Before opening", "Us/Utility/Landlord"],
+        ["Security Deposit", "$1,400 - $32,400", "Lump Sum", "Before opening", "Us"],
+        ["POS Subscription (3mo)", "$72 - $300", "Monthly", "Per vendor arrangement", "POS vendor"],
+        ["Merchant Services/POS Hardware", "$750 - $1,500", "Lump Sum", "Per vendor arrangement", "Equipment vendor"],
+        ["Workers Comp/Employer Liability Insurance", "$300 - $1,000", "As arranged", "Before opening", "Insurance carriers"],
+        ["Licenses/Permits/Certificates", "$200 - $600", "As incurred", "Before opening", "State/local authorities"],
+        ["Optional Additional Equipment", "$0 - $27,249", "As incurred", "Before opening", "Us or affiliates"],
+        ["Travel & Living (Training)", "$700 - $3,000", "As incurred", "Before opening", "Transport/Hotel"],
+        ["Miscellaneous Opening Costs", "$400 - $800", "As incurred", "As incurred", "Suppliers/utilities"],
+        ["Additional Funds (3 months)", "$12,000 - $15,000", "As incurred", "As incurred", "Employees/Suppliers"],
+        ["Sales/License Taxes", "$3,000 - $5,000", "Lump Sum", "Upon purchase", "Us/State & Local"],
+        ["Application Fee", "$250", "Lump Sum", "Upon submission", "Us"],
+        ["Insurance Handling Charge", "$50", "Lump Sum", "With insurance premium", "Us"],
+        ["TOTAL", "$172,722 - $720,666", "", "", ""]
+      ],
+      "table_notes": [
+        "Covers opening costs and first 3 months of operation",
+        "Low end: 400 sq ft salon, no supplemental purchases, no rental tax, opening on 1st of month",
+        "High end: 1500 sq ft salon, $27,249 supplemental, max pro-rata rent",
+        "No financing offered other than Item 10 sublease arrangement",
+        "Recommended minimum 800 sq ft; franchisor reserves right to not approve <800 sq ft"
+      ]
+    },
+    {
+      "id": "T05",
+      "item": "11",
+      "title": "Training Program",
+      "source_pages": [56, 57],
+      "columns": ["Subject", "Classroom Hours", "OJT Hours", "Location"],
+      "rows": [
+        ["Day 1: Registration/Continental Breakfast", "1", "0", "Baton Rouge, LA"],
+        ["Day 1: Introduction, Staff & Guests", "0.5", "0", "Baton Rouge, LA"],
+        ["Day 1: Leadership Program", "2", "0", "Baton Rouge, LA"],
+        ["Day 1: Lunch with Staff", "1", "0", "Baton Rouge, LA"],
+        ["Day 1: Marketing", "1", "0", "Baton Rouge, LA"],
+        ["Day 1: Renewals and Remodel", "3", "0", "Baton Rouge, LA"],
+        ["Day 2: Welcome and Review", "1", "0", "Baton Rouge, LA"],
+        ["Day 2: Merchant Services Vendor", "1.5", "0", "Baton Rouge, LA"],
+        ["Day 2: General Discussion (Services/Products)", "4", "0", "Baton Rouge, LA"],
+        ["Day 2: Lunch with Staff", "1", "0", "Baton Rouge, LA"],
+        ["Day 3: Welcome and Review", "1", "0", "Baton Rouge, LA"],
+        ["Day 3: Insurance Program", "1.5", "0", "Baton Rouge, LA"],
+        ["Day 3: General Discussion", "2", "0", "Baton Rouge, LA"],
+        ["Day 3: Lunch with Staff", "1", "0", "Baton Rouge, LA"],
+        ["Day 3: Training Certificate Distribution", "1", "0", "Baton Rouge, LA"]
+      ],
+      "table_notes": [
+        "Primary instructor: Quy T. Ton (CEO)",
+        "Bi-monthly schedule except November and December",
+        "Must complete before Grand Opening",
+        "Must attend at least 8 weeks before opening/renewal",
+        "Zero on-the-job training hours"
+      ]
+    },
+    {
+      "id": "T06",
+      "item": "20",
+      "title": "Table 1: Systemwide Outlet Summary (2022-2024)",
+      "source_pages": [82],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "596", "584", "-12"],
+        ["Franchised", "2023", "584", "564", "-20"],
+        ["Franchised", "2024", "564", "537", "-27"],
+        ["Company-Owned", "2022", "1", "1", "0"],
+        ["Company-Owned", "2023", "1", "1", "0"],
+        ["Company-Owned", "2024", "1", "1", "0"],
+        ["Total", "2022", "597", "585", "-12"],
+        ["Total", "2023", "585", "565", "-20"],
+        ["Total", "2024", "565", "538", "-27"]
+      ],
+      "table_notes": ["System declining steadily; 59 net units lost over 3 years"]
+    },
+    {
+      "id": "T07",
+      "item": "20",
+      "title": "Table 3: Status of Franchised Outlets Summary (US + PR, 2022-2024)",
+      "source_pages": [87, 88, 89, 90, 91, 92],
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Ops", "End"],
+      "rows": [
+        ["2022", "596", "2", "1", "9", "0", "4", "584"],
+        ["2023", "584", "1", "2", "16", "0", "3", "564"],
+        ["2024", "564", "0", "4", "21", "0", "2", "537"]
+      ],
+      "table_notes": [
+        "Non-renewals accelerating: 9→16→21",
+        "Zero new openings in 2024",
+        "Puerto Rico: 7 outlets unchanged all 3 years",
+        "Largest states by outlet count (YE 2024): FL 92, TX 73, GA 38, NC 21, OK 17, AZ 16, OH 16, VA 16, NV 15, SC 13, CO 13"
+      ]
+    },
+    {
+      "id": "T08",
+      "item": "20",
+      "title": "Table 5: Projected Openings as of Dec 31, 2024",
+      "source_pages": [93],
+      "columns": ["State", "Signed Not Opened", "Projected New Franchised", "Projected New Co-Owned"],
+      "rows": [
+        ["Arizona", "3", "0", "0"],
+        ["Florida", "4", "0", "0"],
+        ["Georgia", "1", "0", "0"],
+        ["New Jersey", "1", "0", "0"],
+        ["North Carolina", "4", "0", "0"],
+        ["Ohio", "1", "0", "0"],
+        ["Total", "14", "0", "0"]
+      ],
+      "table_notes": ["14 agreements signed but not opened; zero projected new outlets in next fiscal year"]
+    },
+    {
+      "id": "T09",
+      "item": "21",
+      "title": "Consolidated Balance Sheet (Dec 31, 2024 and 2023)",
+      "source_pages": [330],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        ["Cash and cash equivalents", "$8,411,558", "$7,314,574"],
+        ["Accounts and other receivables, net", "$511,187", "$942,639"],
+        ["Notes receivable (current)", "$2,235,575", "$1,200,298"],
+        ["Notes receivable - member (current)", "$875,000", "$875,000"],
+        ["Total current assets", "$12,112,466", "$10,455,011"],
+        ["Property and equipment, net", "$742,427", "$789,550"],
+        ["Operating right-of-use assets", "$42,532,471", "$45,389,062"],
+        ["Due from affiliates, non-current", "$3,353,088", "$3,333,052"],
+        ["Notes receivable - member, non-current", "$1,690,000", "$1,940,000"],
+        ["Total assets", "$62,710,475", "$64,865,911"],
+        ["Accounts payable and accrued expenses", "$332,632", "$321,269"],
+        ["Operating lease liabilities - current", "$14,997,551", "$17,702,437"],
+        ["Total current liabilities", "$16,409,245", "$18,721,629"],
+        ["Operating lease liabilities - noncurrent", "$27,548,046", "$27,688,636"],
+        ["Franchisee security deposits", "$2,925,957", "$3,086,155"],
+        ["Total liabilities", "$48,433,840", "$51,091,777"],
+        ["Members' equity", "$14,334,258", "$13,889,657"],
+        ["Total equity", "$14,276,635", "$13,774,134"],
+        ["Total liabilities and equity", "$62,710,475", "$64,865,911"]
+      ],
+      "table_notes": [
+        "Operating lease liabilities ($42.5M) dominate balance sheet — sublease portfolio",
+        "Notes receivable to member/related party total $6.47M"
+      ]
+    },
+    {
+      "id": "T10",
+      "item": "21",
+      "title": "Consolidated Statements of Operations (FY2024 and FY2023)",
+      "source_pages": [331],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        ["Revenues", "$24,805,653", "$25,588,690"],
+        ["Cost of revenues", "$17,744,752", "$18,873,571"],
+        ["Gross profit", "$7,060,901", "$6,715,119"],
+        ["Operating expenses", "$4,527,273", "$4,327,622"],
+        ["Income from operations", "$2,533,628", "$2,387,497"],
+        ["Non-operating income (expense)", "($383,368)", "($106,492)"],
+        ["Net income before taxes", "$2,150,260", "$2,281,005"],
+        ["Income tax expense", "($12,162)", "($18,425)"],
+        ["Consolidated net income", "$2,138,098", "$2,262,580"],
+        ["Consolidated comprehensive income", "$2,078,451", "$2,263,460"]
+      ],
+      "table_notes": [
+        "Revenue down 3.1% YoY reflecting system contraction",
+        "Gross margin improved to 28.5% from 26.2%",
+        "Non-operating loss increased significantly ($383K vs $107K) — includes subsidiary disposal losses"
+      ]
+    },
+    {
+      "id": "T11",
+      "item": "21",
+      "title": "Revenue Breakdown (Supplemental, Unaudited)",
+      "source_pages": [350],
+      "columns": ["Revenue Source", "2024", "2023"],
+      "rows": [
+        ["Franchise sales", "$160,362", "$539,118"],
+        ["Monthly franchise fees", "$7,034,941", "$6,813,771"],
+        ["Franchisee subleases", "$17,476,767", "$18,175,674"],
+        ["Transfer and renewal fees", "$98,030", "$48,714"],
+        ["Other", "$35,553", "$11,413"],
+        ["Total revenues", "$24,805,653", "$25,588,690"]
+      ],
+      "table_notes": [
+        "Sublease income is 70.5% of total revenue — dominant revenue stream",
+        "Franchise sales dropped 70% reflecting near-zero new openings",
+        "Supplemental schedule is NOT audited"
+      ]
+    }
+  ]
+}

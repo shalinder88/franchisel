@@ -1,0 +1,139 @@
+{
+  "_enrichment_version": "v2",
+  "_base": "09_final_canonical.json",
+  "item19_chart_detail": {
+    "fpr1_occupancy_adr_revpar": {
+      "franchised": {"count": 20, "avg_occ": 0.733, "avg_adr": 221.52, "avg_revpar": 162.49, "occ_high": 0.928, "occ_low": 0.461, "occ_median": 0.728, "adr_high": 312.00, "adr_low": 126.34, "adr_median": 219.55, "revpar_high": 276.96, "revpar_low": 79.59, "revpar_median": 150.45, "pct_exceeding_avg_revpar": 0.40},
+      "owned_managed": {"count": 12, "avg_occ": 0.739, "avg_adr": 273.13, "avg_revpar": 201.94, "occ_high": 0.905, "occ_low": 0.468, "occ_median": 0.726, "revpar_high": 437.60, "revpar_low": 100.06, "revpar_median": 209.11},
+      "all": {"count": 32, "avg_occ": 0.736, "avg_adr": 240.92, "avg_revpar": 177.24}
+    },
+    "fpr2_smith_travel": {
+      "franchised": {"occ_index": 103.5, "rate_index": 95.2, "revpar_index": 98.2, "occ_index_high": 129.0, "occ_index_low": 82.6, "rate_index_high": 112.6, "rate_index_low": 78.7, "revpar_index_high": 122.6, "revpar_index_low": 67.8},
+      "owned_managed": {"occ_index": 104.8, "rate_index": 101.6, "revpar_index": 106.8},
+      "all": {"occ_index": 104.0, "rate_index": 97.6, "revpar_index": 101.4}
+    },
+    "fpr3_woh": {
+      "franchised": {"pct_revenue": 0.567, "pct_room_nights": 0.476, "avg_room_nights": 26707, "revenue_high": 0.746, "revenue_low": 0.336, "revenue_median": 0.549},
+      "all": {"pct_revenue": 0.566, "pct_room_nights": 0.487, "avg_room_nights": 27816}
+    },
+    "channel_mix": {
+      "franchised": {"direct": 0.569, "indirect": 0.431},
+      "all": {"direct": 0.581, "indirect": 0.419}
+    }
+  },
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 19, "franchised_end": 20, "franchised_opened": 1, "franchised_terminated": 0, "franchised_non_renewed": 0, "co_start": 10, "co_end": 10, "transfers": 1},
+    "2023": {"franchised_start": 20, "franchised_end": 20, "franchised_opened": 0, "franchised_terminated": 0, "franchised_non_renewed": 0, "co_start": 10, "co_end": 11, "transfers": 1},
+    "2024": {"franchised_start": 20, "franchised_end": 21, "franchised_opened": 1, "franchised_terminated": 0, "franchised_non_renewed": 0, "co_start": 11, "co_end": 11, "transfers": 1}
+  },
+  "exhibit_structure": {
+    "A1": {"type": "financial", "pages": 74, "contents": "Audited consolidated FS (Hyatt Hotels Corp)"},
+    "A2": {"type": "financial", "pages": 2, "contents": "Form 8-K"},
+    "B": {"type": "application", "pages": 9},
+    "C": {"type": "contract", "pages": 81, "contents": "Franchise Agreement + exhibits + guaranty"},
+    "D": {"type": "operations", "pages": 29, "contents": "Design and Construction Standards"},
+    "E": {"type": "regulatory", "pages": 5},
+    "F": {"type": "operations", "pages": 5, "contents": "System Standards TOC (3,641 pages)"},
+    "G": {"type": "contract", "pages": 5, "contents": "Confidentiality Agreement"},
+    "H": {"type": "franchisee_data", "pages": 5, "contents": "Franchisee list"},
+    "I": {"type": "franchisee_data", "pages": 5, "contents": "Former franchisee list"},
+    "J": {"type": "contract", "pages": 10, "contents": "Hosting Services Agreement"},
+    "K": {"type": "contract", "pages": 5, "contents": "Comfort Letter"},
+    "L": {"type": "contract", "pages": 26, "contents": "Central Hotel Services Master Agreement + program schedules"},
+    "M": {"type": "state_addenda", "pages": 23, "contents": "State disclosures + riders + release form"}
+  },
+  "item21_structural_facts": {
+    "auditor": "Deloitte & Touche LLP",
+    "opinion_type": "Unqualified (clean)",
+    "going_concern": false,
+    "critical_audit_matter": "Deferred revenue related to loyalty program ($1.333B liability)",
+    "total_revenue_2024": 6648000000,
+    "net_income_2024": 1296000000,
+    "total_assets_2024": 13324000000,
+    "total_equity_2024": 3826000000,
+    "cash_2024": 1011000000,
+    "long_term_debt_2024": 3326000000,
+    "performance_guarantee": true,
+    "guarantee_type": "Absolute and unconditional by Hyatt Hotels Corporation"
+  },
+  "item1_structural_facts": {
+    "franchisor_entity": "Hyatt Franchising, L.L.C.",
+    "entity_type": "Delaware LLC",
+    "parent": "Hyatt Hotels Corporation",
+    "parent_public": true,
+    "parent_ticker": "H",
+    "parent_exchange": "NYSE",
+    "franchising_since": "2015-02",
+    "affiliates_providing_services": ["Hyatt Corporation", "Rosemont Project Management, L.L.C."],
+    "affiliate_franchise_entities": ["Hyatt Franchising Canada Corp.", "Hyatt International EAME LLC", "Hyatt Place Franchising L.L.C.", "Hyatt Place Canada Corp.", "Hyatt House Franchising L.L.C.", "Hyatt House Canada Inc.", "Hyatt Franchising Latin America L.L.C.", "Hyatt do Brasil Participacoes Ltda.", "Hyatt International Asia Pacific Ltd."]
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage",
+    "royalty_base": "Gross Rooms Revenue",
+    "royalty_rate": 0.05,
+    "royalty_reduction_available": "First 1-3 years",
+    "commercial_services_fixed": 448,
+    "commercial_services_fixed_unit": "per room per year",
+    "commercial_services_pct": 0.03,
+    "commercial_services_pct_base": "Gross Rooms Revenue",
+    "woh_assessment_rate": 0.045,
+    "woh_assessment_base": "Eligible revenue from WOH members",
+    "digital_acquisition_rate": 0.0135,
+    "digital_acquisition_base": "GRR through Digital Channels",
+    "total_revenue_linked_fees_estimate": "12%+ of GRR (before per-room and per-reservation charges)"
+  },
+  "item21_financial_structure_detail": {
+    "reimbursed_costs_revenue_2024": 3352000000,
+    "reimbursed_costs_expense_2024": 3457000000,
+    "reimbursed_costs_net_2024": -105000000,
+    "loyalty_program_liability": 1333000000,
+    "goodwill_net_2024": 2541000000,
+    "goodwill_impairments_2024": 163000000,
+    "property_impairments_2024": 21000000,
+    "total_impairments_2024": 213000000,
+    "re_sales_gains_2024": 1245000000,
+    "stock_repurchases_2024": 1190000000,
+    "dividends_2024": 60000000,
+    "financing_receivables_gross_2024": 445000000,
+    "operating_lease_rou_2024": 328000000
+  },
+  "item21_statement_detail": {
+    "income_statement_3yr": {
+      "2024": {"total_revenue": 6648, "net_fees": 1030, "franchise_other_fees": 458, "owned_leased_rev": 1174, "net_income": 1296, "eps_diluted": 12.65},
+      "2023": {"total_revenue": 6667, "net_fees": 923, "franchise_other_fees": 364, "owned_leased_rev": 1339, "net_income": 220, "eps_diluted": 2.05},
+      "2022": {"total_revenue": 5891, "net_fees": 777, "franchise_other_fees": 297, "owned_leased_rev": 1235, "net_income": 455, "eps_diluted": 4.09}
+    },
+    "balance_sheet_2yr": {
+      "2024": {"cash": 1011, "total_current_assets": 2733, "total_assets": 13324, "current_ltb_maturities": 456, "long_term_debt": 3326, "total_liabilities": 9498, "stockholders_equity": 3547, "total_equity": 3826},
+      "2023": {"cash": 881, "total_current_assets": 2130, "total_assets": 12833, "long_term_debt": 2305, "total_liabilities": 9266, "stockholders_equity": 3564, "total_equity": 3567}
+    },
+    "cash_flow_2024": {"operating": 633, "capex": -170, "re_sales_proceeds": 1421, "debt_proceeds": 1424, "debt_repayments": -750, "stock_repurchases": -1190, "dividends": -60}
+  },
+  "item6_fee_detail": {
+    "music_system_monthly": 18.95,
+    "pre_opening_marketing_minimum_per_room": 500,
+    "upsell_commission_rate": 0.05,
+    "cooperative_advertising_required": false,
+    "franchisee_advertising_councils": false,
+    "no_periodic_accounting_of_csf_spending": true
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Item 19 ADR statistics denominator anomaly", "severity": "low", "source": "Item 19, PDF page 83"},
+    {"id": "U2", "description": "AOP Term individually negotiated — no guaranteed duration", "severity": "medium", "source": "Item 12, PDF pages 64-65"},
+    {"id": "U3", "description": "Guarantor Monetary Threshold amounts in Exhibit B-1 (not in FDD body)", "severity": "low", "source": "Item 15, PDF page 73"},
+    {"id": "U4", "description": "Insurance requirements in FA/System Standards only", "severity": "low", "source": "Items 8-9"}
+  ],
+  "contradictions": [],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+    "override_families": {
+      "forum_selection": ["Michigan", "Maryland", "Minnesota", "North Dakota", "Rhode Island"],
+      "governing_law": ["North Dakota", "Rhode Island"],
+      "termination": ["Michigan", "Minnesota", "Virginia"],
+      "renewal": ["Michigan"],
+      "general_release": ["Michigan", "Maryland", "Minnesota", "North Dakota"],
+      "damages": ["Minnesota", "North Dakota"],
+      "transfer": ["Michigan"]
+    }
+  }
+}

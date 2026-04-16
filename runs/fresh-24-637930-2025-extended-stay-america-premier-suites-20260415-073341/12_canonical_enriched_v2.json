@@ -1,0 +1,116 @@
+{
+  "enrichment_version": "v2",
+  "extraction_date": "2026-04-15",
+  "item21_financial_structure": {
+    "balance_sheet_2024": {
+      "total_assets": 19178,
+      "current_assets": 11580,
+      "cash": 9170,
+      "accounts_receivable": 1911,
+      "intangible_assets_net": 5371,
+      "contract_acquisition_costs": 2227,
+      "total_liabilities": 10983,
+      "current_liabilities": 3783,
+      "due_to_affiliates": 2770,
+      "deferred_revenue_total": 4842,
+      "members_capital": 8195
+    },
+    "income_statement_2024": {
+      "franchise_fees": 9391,
+      "system_service_fees": 10888,
+      "direct_reimbursements": 3057,
+      "other_revenues": 2482,
+      "total_revenues": 25818,
+      "system_service_expenses": 12188,
+      "direct_reimbursable_expenses": 3057,
+      "ga_expenses": 7697,
+      "trademark_license": 429,
+      "amortization": 910,
+      "total_expenses": 24281,
+      "net_income": 1537
+    },
+    "cash_flow_2024": {
+      "operating_cash_flow": 1155,
+      "investing_cash_flow": -522,
+      "financing_cash_flow": 0,
+      "net_change": 633,
+      "ending_cash": 9170
+    },
+    "all_in_thousands": true
+  },
+  "item21_statement_detail": {
+    "intangible_assets": {
+      "franchise_agreements": {"gross": 4900, "accum_amort": 1286, "net": 3614, "useful_life": "10 years remaining"},
+      "software_licenses": {"gross": 2356, "accum_amort": 599, "net": 1757, "useful_life": "3 years remaining"},
+      "total_net": 5371
+    },
+    "future_amortization": {
+      "2025": 933, "2026": 933, "2027": 933, "2028": 410, "2029": 363, "thereafter": 1799
+    },
+    "related_party_costs": {
+      "esa_management_overhead": 6600,
+      "esa_management_system_services": 3800,
+      "trademark_license_fee": 429,
+      "trademark_license_rate": "5% of franchise royalties",
+      "due_to_manager": 2700,
+      "due_to_branding": 100,
+      "due_to_esh_reit": 0
+    },
+    "contract_liabilities": {
+      "beginning": 4478,
+      "ending": 4842,
+      "recognized_in_period": 824
+    },
+    "brand_launch_accrual": {
+      "description": "ESA Select Suites brand launch payments to existing franchisees",
+      "original_amount": 2500,
+      "remaining": 1600,
+      "current_portion": 300,
+      "noncurrent_portion": 1300
+    },
+    "franchised_hotel_count": {
+      "2024": {"total": 129, "rooms": 13351, "premier_suites": 17, "premier_rooms": 1941},
+      "2023": {"total": 114, "rooms": 11836, "premier_suites": 9, "premier_rooms": 984}
+    }
+  },
+  "item6_fee_detail": {
+    "initial_fees": [
+      {"name": "Initial Franchise Fee", "amount": "$50,000", "refundable": false},
+      {"name": "Development Fee", "amount": "$50,000 × # hotels", "refundable": false},
+      {"name": "PIP Fee", "amount": "$2,000", "refundable": false, "credited_to_iff": true},
+      {"name": "Extension Fee", "amount": "$5,000", "refundable": false},
+      {"name": "GM Certification", "amount": "$1,900/person", "refundable": false},
+      {"name": "New Owner Orientation", "amount": "$1,900/person", "refundable": false},
+      {"name": "Pre-Opening Onsite", "amount": "$2,500", "refundable": false},
+      {"name": "Project Management", "amount": "$5,000 + third-party", "refundable": false},
+      {"name": "IT Certification", "amount": "$2,000-$5,000", "refundable": false},
+      {"name": "Construction Site Visits", "amount": "$6,000 (new) / $2,000/visit (conv)", "refundable": false},
+      {"name": "IT Site Visits", "amount": "$2,000/visit", "refundable": false}
+    ],
+    "ongoing_fees": [
+      {"name": "Royalty", "rate": "5.5%", "basis": "GRR"},
+      {"name": "System Services", "rate": "4.5%", "basis": "GRR"},
+      {"name": "Digital Marketing Commission", "rate": "5%", "basis": "Paid-digital GRR"},
+      {"name": "Agoda Marketing Fee", "rate": "0.6%", "basis": "GRR per Agoda booking"},
+      {"name": "PMS License", "amount": "$2.20/room/month"},
+      {"name": "PMS Hosting", "amount": "$1.00/room/month"},
+      {"name": "PMS Support", "amount": "$0.67/room/month"},
+      {"name": "AHLA Dues", "amount": "$3.00/room/year"},
+      {"name": "Annual Conference", "amount": "$1,200/attendee"}
+    ],
+    "penalty_fees": [
+      {"name": "Pre-opening unauthorized open", "amount": "$5,000/day"},
+      {"name": "QA Re-inspection", "amount": "Up to $1,000 + expenses"},
+      {"name": "Remedial Training", "amount": "$4,000-$6,500"},
+      {"name": "Guest Complaint Fee", "amount": "$150 + guest comp"},
+      {"name": "Non-compliance (tech)", "amount": "$500/month"},
+      {"name": "Interest", "rate": "1.5%/month"}
+    ],
+    "liquidated_damages": [
+      {"scenario": "Pre-opening termination", "formula": "rooms × $3,000"},
+      {"scenario": "Post-opening, before 1st year end", "formula": "avg monthly royalty × 60"},
+      {"scenario": "After 1st year, >5 yrs remaining", "formula": "5 × prior-year annual royalty"},
+      {"scenario": "<5 yrs remaining", "formula": "remaining days × avg daily royalty"}
+    ]
+  }
+}

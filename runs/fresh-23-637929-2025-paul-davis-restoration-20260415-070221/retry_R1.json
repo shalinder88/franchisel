@@ -1,0 +1,69 @@
+{
+  "retry_id": "R1",
+  "task": "State Addenda Material Overrides",
+  "status": "completed",
+  "source_pages": [202, 231],
+  "states_parsed": 14,
+  "overrides": {
+    "CA": {
+      "liquidated_damages": "May be unenforceable under CA Civil Code §1671",
+      "non_compete_post_term": "May not be enforceable under CA law",
+      "termination": "CA Bus. & Prof. Code §§20000-20043 governs; law controls over FA",
+      "general_release": "Void under CA Civil Code §1542",
+      "financing": "Must comply with CA Finance Lenders Law"
+    },
+    "HI": {
+      "general_release": "Must exclude claims under Hawaii Franchise Investment Law"
+    },
+    "IL": {
+      "governing_law": "Illinois law governs the FA",
+      "venue": "Venue outside IL void (but arbitration outside IL permitted)",
+      "waiver": "Cannot waive compliance with IL Franchise Disclosure Act"
+    },
+    "IN": {
+      "governing_law": "Indiana Deceptive Franchise Practices Act and Franchise Disclosure Law apply"
+    },
+    "MD": {
+      "fee_refund": "Provisions for refund within first year",
+      "general_release": "Does not release from MD law liability"
+    },
+    "MI": {
+      "non_renewal": "Must compensate fair market value; 180 days notice for non-renewal"
+    },
+    "MN": {
+      "liquidated_damages": "Replaced with 'actual damages'",
+      "termination_notice": "90 days notice of termination (60 days to cure)",
+      "non_renewal_notice": "180 days notice for non-renewal",
+      "venue": "Litigation cannot be required outside Minnesota",
+      "general_release": "Cannot be required at renewal/extension"
+    },
+    "NY": {
+      "termination_by_franchisee": "May terminate upon any grounds available by law (overrides Item 17(d))"
+    },
+    "ND": {
+      "arbitration_venue": "Venue outside ND may not be enforceable",
+      "liquidated_damages": "Not required to consent",
+      "non_compete": "Unreasonable if unenforceable in ND"
+    },
+    "RI": {
+      "venue": "Must comply with §19-28.1-14 of RI Franchise Investment Act"
+    },
+    "SD": {
+      "governing_law": "SD law governs; inconsistent provisions void"
+    },
+    "VA": {
+      "fees": "Not more than disclosed under VA Retail Franchising Act",
+      "termination": "Notice provisions governed by VA law"
+    },
+    "WA": {
+      "termination_renewal": "RCW 19.100.180 may supersede FA",
+      "arbitration_venue": "Must be in WA, mutually agreed, or determined by arbitrator",
+      "conflict_of_laws": "WA Franchise Investment Protection Act prevails",
+      "release": "Void except in negotiated settlement with independent counsel",
+      "transfer_fees": "Collectable only to extent reflecting reasonable costs"
+    },
+    "WI": {
+      "governing_law": "Wisconsin Fair Dealership Law (ch. 135) governs and supersedes inconsistent FA provisions"
+    }
+  }
+}

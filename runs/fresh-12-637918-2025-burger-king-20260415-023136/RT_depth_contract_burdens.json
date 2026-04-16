@@ -1,0 +1,143 @@
+{
+  "depth_pass": "contract_burdens",
+  "fdd_id": "637918-2025",
+  "agreement": "Franchise Agreement (Individual/Owner-Operator) — Exhibit D1",
+  "source_pages_range": "190-220 (approx)",
+
+  "grant_and_term": {
+    "grant": "Non-exclusive franchise to use BK System and Marks at specified location only",
+    "term": "Set on Key Contract Data page (typically 20 years)",
+    "territory": "None. 'This franchise is for the specified location only and does not in any way grant or imply any area, market or territorial rights proprietary to Franchisee.'",
+    "renewal": "'Franchisee accepts this franchise with the full and complete understanding that the franchise grant contains no promise or assurance of renewal.'",
+    "source_pages": [190]
+  },
+
+  "fee_and_payment_obligations": {
+    "royalty": "4.5% of monthly Gross Sales, due 10th of next month",
+    "advertising_contribution": "Up to 4.5% of Gross Sales, same schedule",
+    "gross_sales_definition": "All sums charged for goods, merchandise or services sold at or from the Restaurant, including premiums, excluding sales taxes",
+    "late_charge": "Maximum rate allowed by FL law or 18% per annum",
+    "payment_method": "Direct monthly withdrawal from bank account or electronic payment",
+    "investment_spending": "Up to 2% of Gross Sales if DMA majority clause applies (66.7% threshold)",
+    "digital_services_fee": "$110/mo + 1% digital sales (cap $4,500/yr)",
+    "audit_right": "BKC may audit; if understatement >2%, franchisee pays audit cost",
+    "advertising_fund_audit": "Franchisee Association may audit once annually; BKC pays if misappropriation or >3% discrepancy",
+    "source_pages": [200]
+  },
+
+  "site_selection_and_construction": {
+    "site_selection": "Franchisee finds site within Target Area designated by BKC; BKC approves",
+    "construction": "Must construct per BKC-approved plans and specs; all costs borne by franchisee",
+    "property_control": "BKC does not help negotiate lease; franchisee must obtain all permits",
+    "ada_compliance": "Architect certification of ADA compliance required",
+    "source_pages": [190, 400]
+  },
+
+  "training_and_operational": {
+    "pre_opening_training": "Up to 20 hours classroom + 320 hours in-restaurant; $7,500/trainee",
+    "servsafe_required": true,
+    "ongoing_training": "May be required; $7,500/person",
+    "hours_of_operation": "Minimum 6AM-12AM Mon-Sat, 7AM-12AM Sun, 52 weeks/year (Thanksgiving/Christmas optional if majority of competitors closed)",
+    "food_safety_incident_reporting": "Written notice to BKC within 24 hours of any investigation, violation, failing score, closure or critical violation",
+    "menu_compliance": "Only approved items; all specs per MOD Manual",
+    "delivery_required": "If delivery aggregator services area",
+    "loyalty_program": "Royal Perks mandatory",
+    "source_pages": [195]
+  },
+
+  "termination_triggers_and_cure": {
+    "curable_5_days": ["operational/quality/health/sanitation standards", "unapproved products", "abandonment", "insurance failure"],
+    "curable_10_days": ["non-payment of royalty/advertising"],
+    "curable_30_days": ["late reports", "unapproved equipment/uniforms/decor", "maintenance/remodel failure", "bad behavior", "unsatisfied judgment", "building damage restoration", "non-compliance with laws", "MO/OP/MD requirements"],
+    "curable_60_days": ["failure to pay bills", "other FA/lease/agreement defaults"],
+    "curable_180_days": ["failure to meet minimum financial criteria"],
+    "non_curable": ["bankruptcy", "criminal conviction (>1yr, fraud, moral turpitude)", "unfair competition", "false statements", "gross sales understatement", "failure to close for health/safety", "unauthorized transfer", "repeated breaches after notice", "delivery aggregator agreement termination (Delivery Restaurants)"],
+    "source_pages": [83, 84]
+  },
+
+  "transfer_restrictions": {
+    "consent_required": true,
+    "conditions": ["buyer approved", "all training completed", "all monies current", "transfer fee paid ($2K + $500/additional)", "signing current FA or assignment", "general release by seller", "restaurant inspected", "brought to current image"],
+    "right_of_first_refusal": "BKC and designee have ROFR on same terms as third-party offer",
+    "void_transfers": "Any transfer without ROFR offer is void and of no force",
+    "crown_your_career_restriction": "Transfer may be withheld for any reason during first 5 years",
+    "source_pages": [215]
+  },
+
+  "default_and_cross_default": {
+    "cross_default_scope": "Default under any BK franchise agreement, lease, Crown Your Career agreement, Carrols Refranchise agreement, Reclaim the Flame agreement, or any other BKC agreement constitutes default under all agreements",
+    "financial_ratio_defaults_da": "Debt/EBITDA or (Debt+Rent)/EBITDAR exceeding agreed ratios",
+    "fss_grade_default_da": "Receiving 'F' grade in any FSS metric",
+    "source_pages": [84, 85]
+  },
+
+  "noncompete": {
+    "during_term": "No ownership, operation, or interest in any other hamburger business",
+    "post_term": "1 year within 2 miles of restaurant, no hamburger business",
+    "ai_restriction": "May not use trade secrets for ML, AI training, or generative AI input without prior approval",
+    "contract_feeder_exception": "Corporate Addendum Contract Feeders may operate competing fast-food under limited conditions",
+    "source_pages": [87, 78]
+  },
+
+  "guaranty_scope": {
+    "individual_fa": "Individuals personally liable; Operating Partner must retain 50% equity",
+    "entity_fa": "Managing Owner + other Owners sign personal guaranty. Guaranty is joint and several, waives all defenses and notices.",
+    "llc_assignment": "If assigned to LLC, individuals retain personal liability",
+    "crown_your_career": "Spouse/partner must sign personal guarantee of all obligations",
+    "spousal_guaranty": true,
+    "unlimited_liability": true,
+    "source_pages": [190, 210]
+  },
+
+  "liquidated_damages": {
+    "post_termination_royalty": "Royalties and advertising contributions for remainder of term on termination",
+    "bkl_default": "Full rent and charges for balance of lease term",
+    "da_brand_damage_fee": "Remaining prepaid franchise fees if DA terminated before expiration",
+    "deferred_remodel_default": "Royalty increases to 6.0% or 7.5% until remodel completed",
+    "source_pages": [85, 38]
+  },
+
+  "venue_and_dispute_resolution": {
+    "forum": "U.S. District Court S.D. Florida or 11th Judicial Court, Miami-Dade County",
+    "governing_law": "Florida law",
+    "mediation": "Mandatory non-binding for development disputes only",
+    "arbitration": "None mandatory; voluntary for development disputes at franchisee election",
+    "jury_waiver": "Yes (Crown Your Career Security Agreement, Promissory Note)",
+    "bkl_condemnation": "Arbitration in Miami-Dade County",
+    "source_pages": [87]
+  },
+
+  "insurance_requirements": {
+    "cgl": "$2M per occurrence; aggregate varies by portfolio size (1-10: $2M, 11-50: $5M, 51+: $10M)",
+    "auto_liability": "$1M combined primary and excess",
+    "all_risk_property": "Full replacement cost",
+    "boiler_machinery": "Full replacement cost",
+    "workers_comp": "As required by applicable law",
+    "business_interruption": "At least 12-month indemnity period",
+    "source_pages": [55, 56]
+  },
+
+  "indemnification": {
+    "scope": "Franchisee must indemnify and reimburse BKC for all costs, judgments, losses from third-party claims relating to restaurant operation, including misappropriation claims under Services Agreement",
+    "enforcement_costs": "Must reimburse BKC for costs of enforcing agreements if franchisee defaults or sues (unless franchisee found compliant)",
+    "source_pages": [37]
+  },
+
+  "force_majeure": {
+    "explicit_provision": "Not identified as separate clause in FA",
+    "government_restrictions": "Item 1 notes state/federal regulations allow government to restrict travel and/or require business closure during emergencies",
+    "source_pages": [17]
+  },
+
+  "distinctive_clauses": {
+    "data_ownership": "BKC is sole owner of all data generated by Additional Digital Systems. BKC may provide data to third parties and retain all net profits from data monetization.",
+    "ai_trade_secret_restriction": "May not use trade secrets for ML, AI model training, or input into generative AI platforms without prior approval. Must opt out of allowing any AI provider to use trade secrets.",
+    "successor_4_year_notice": "Must give written notice of intent to seek successor FA during the 4th year prior to expiration",
+    "successor_general_release": "Execution of general release of BKC in satisfactory form required for successor FA",
+    "successor_current_image": "Must remodel to current image 3 months to 3 years before Term expiration",
+    "value_menu_price_cap": "BKC can set maximum prices on Value Menu items",
+    "delivery_waiver": "Delivery Restaurant franchisees waive all rights to dispute development of another restaurant",
+    "bk_foundation_mandatory": "$1,000/year/restaurant purchase or in-restaurant fundraising",
+    "source_pages": [195, 78, 215]
+  }
+}

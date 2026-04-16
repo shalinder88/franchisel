@@ -1,0 +1,166 @@
+{
+  "depth_pass": "contract_burdens",
+  "source_pages": [110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 76, 77, 78, 79, 80, 81, 82, 83, 84],
+  "provisions": {
+    "grant_and_term": {
+      "grant": "Non-exclusive license to use the System at a specified location under the Brand",
+      "term_new_construction": "22 years from Effective Date",
+      "term_conversion": "10-20 years from Opening Date",
+      "term_coo": "Remaining term or as approved",
+      "renewal": "None. Non-renewable. Re-licensing at sole discretion.",
+      "source_pages": [76]
+    },
+    "fee_and_payment": {
+      "monthly_royalty": "6% of Gross Rooms Revenue",
+      "monthly_program_fee": "2.0% GRR (compliant) / 2.5% (non-compliant)",
+      "payment_method": "Wire transfer or electronic funds transfer required",
+      "set_off_right": "Franchisor may reduce any payment/credit by amounts owed by franchisee or affiliates",
+      "grr_definition": "All revenue from guest room sales/rental, loyalty point redemptions, breakfast if included, mandatory guest fees, late cancellation, no-show revenue, credit transactions — less rebates/overcharges, excluding taxes",
+      "source_pages": [27, 28, 36]
+    },
+    "site_selection_and_construction": {
+      "site_selection": "Franchisor not obligated to assist with locating/purchasing/leasing site",
+      "architect_approval": "Must obtain prior written consent for architect, designer, contractor, major subs",
+      "plans_approval": "Must obtain approval of all plans, layouts, specifications; cannot start construction until approved; no changes without advance consent",
+      "ada_compliance": "Architect must certify plans comply with accessibility laws; ADA consultant may be required",
+      "construction_start_deadline_new": "Within 15 months of application approval (with rolling 30-day auto-extensions)",
+      "construction_extension_fee": "$10,000",
+      "source_pages": [52, 53]
+    },
+    "training_obligations": {
+      "required_programs": 14,
+      "gm_training": "GM and commercial leaders must complete training within 90 days of start",
+      "replacement_training": "Replacements must complete training; hotel cannot go >90 days without qualified person",
+      "certification_required": "OnQ Rate & Inventory: 80% minimum score; up to 3 staff certified",
+      "annual_compliance": "Diversity, harassment prevention, human trafficking, cyber security, health & safety",
+      "source_pages": [58, 59, 60]
+    },
+    "termination_triggers": {
+      "curable_with_10_days": ["Payment default", "Construction deadline miss", "Insurance lapse"],
+      "curable_with_30_days": ["Any other provision breach", "Representation/warranty breach"],
+      "non_curable_immediate": [
+        "Pattern of non-compliance within 24 months",
+        "3 default notices in 12 months",
+        "Insolvency/bankruptcy/assignment for creditors",
+        "Loss of hotel possession",
+        "5+ consecutive days non-operation (unless Force Majeure)",
+        "Contesting System/Marks ownership",
+        "Reputation-damaging conduct",
+        "False books/records/reports",
+        "Unauthorized transfer",
+        "Sanctioned person status",
+        "Guarantor breach",
+        "Public health/safety threat",
+        "Becoming a Competitor",
+        "Termination of any Hotel Agreement",
+        "Failure to construct after withdrawal of Shared Facilities consent"
+      ],
+      "interim_remedies": [
+        "Suspend from Reservation Service",
+        "Remove from directories/advertising",
+        "Divert reservations",
+        "Disable software",
+        "Charge intervention/admin fees",
+        "Revoke financial accommodations"
+      ],
+      "source_pages": [77, 78, 79, 80]
+    },
+    "transfer_restrictions": {
+      "general_rule": "All transfers prohibited unless expressly permitted",
+      "permitted_without_consent": ["Publicly traded equity", "Private minority (<50%, no control change)", "Institutional fund transfers (same asset manager)"],
+      "permitted_with_consent": ["To affiliates", "To family/trust", "On death", ">50% cumulative private transfer"],
+      "change_of_ownership": "Requires 60 days notice, new FA, PIP, $100,000 fee, transferee qualifications",
+      "no_transfer_to": ["Competitors", "Sanctioned persons"],
+      "public_offering": "60 days advance notice, $5,000 processing fee, indemnification",
+      "mortgages": "Generally allowed without consent if sole borrower and single-hotel collateral; otherwise requires consent",
+      "source_pages": [81, 82, 83]
+    },
+    "default_and_cross_default": {
+      "cross_default": "Termination of any Hotel Agreement (HITS, etc.) based on franchisee breach is non-curable ground for FA termination",
+      "guarantor_breach": "Non-curable ground for termination",
+      "lender_default_escalation": "Franchisor may require third-party guaranty as condition of curing payment default",
+      "source_pages": [78, 80]
+    },
+    "noncompete": {
+      "during_term": "Cannot own/license/franchise a Competing Brand",
+      "post_term": "None",
+      "management_company": "Cannot be exclusive manager of a Competitor",
+      "competitor_definition": "Any entity that owns/licenses/franchises a competing hotel brand, regardless of number of hotels",
+      "exceptions": ["Franchisee of Competitor OK", "Non-exclusive manager OK", "Minority owner OK (if no officer/director/employee role and no control)"],
+      "source_pages": [74, 83]
+    },
+    "guaranty": {
+      "type": "Personal, joint and several, continuing",
+      "who_signs": "Determined case-by-case based on financial review; may include spouse",
+      "scope": "Certain Franchisee obligations under FA",
+      "additional_triggers": ["Default notice", "Lender comfort letter request", "Cross-collateralized loans"],
+      "source_pages": [74, 183]
+    },
+    "liquidated_damages": {
+      "pre_opening_no_work": "$10,000 x approved guest rooms (if franchisee/guarantor enters another hotel agreement at site within 1 year)",
+      "pre_opening_after_work": "$10,000 x approved guest rooms (unless excused by Force Majeure)",
+      "post_opening_before_2yr": "Greater of: 60x avg monthly royalty OR $10,000 x rooms",
+      "post_opening_after_2yr_before_last_60mo": "60x avg monthly royalty",
+      "last_60_months": "Avg monthly royalty x remaining months",
+      "unauthorized_opening": "$5,000/day",
+      "avg_monthly_royalty_calculation": "If 24+ months operating: total royalty for prior 24 months / 24. If <24 months: total royalty from opening / months operating. Excludes temporary accommodations and Business Interruptions.",
+      "source_pages": [33, 34]
+    },
+    "venue_and_dispute": {
+      "governing_law": "New York (without choice of law principles)",
+      "venue": "ED VA (Alexandria) or Fairfax County, VA state court; NY backup",
+      "franchisor_alternate_venue": "May sue where hotel is located",
+      "puerto_rico": "Mandatory AAA/JAMS arbitration; venue Fairfax County, VA; seat New York",
+      "jury_waiver": true,
+      "punitive_damages_waiver": true,
+      "general_release": "Required on transfer and re-licensing (Section 16.8)",
+      "source_pages": [83, 84]
+    },
+    "insurance": {
+      "required": "Minimum levels and types per Manual",
+      "insurer_ratings": "Must meet minimum ratings specified in Manual",
+      "additional_insureds": "Parties specified in Manual",
+      "franchisor_right": "If franchisee fails to obtain/maintain, franchisor may obtain at franchisee's expense",
+      "source_pages": [33]
+    },
+    "indemnification": {
+      "scope": "Franchisee must defend, indemnify, and hold harmless franchisor, Hilton Worldwide, subsidiaries, affiliates, and their officers, directors, employees, agents, successors, assigns",
+      "covers": "All claims, demands, taxes, penalties, judicial/administrative proceedings arising from claimed occurrences at Hotel",
+      "includes": "Attorneys' fees and court costs",
+      "source_pages": [33]
+    },
+    "force_majeure": {
+      "recognized": "Yes — events of Force Majeure excuse certain obligations (e.g., 5-day non-operation, construction delays)",
+      "franchisee_obligation": "Must take reasonable steps to minimize impact",
+      "casualty_rebuild_deadline": "18 months to reopen after closing",
+      "source_pages": [77]
+    },
+    "distinctive_clauses": [
+      {
+        "clause": "No renewal right",
+        "significance": "Franchise is explicitly non-renewable. Re-licensing at sole discretion with potentially materially different terms. Franchisee has no continuity guarantee after 22-year investment.",
+        "source_page": 76
+      },
+      {
+        "clause": "Unregistered primary trademark",
+        "significance": "Brand's principal marks not federally registered. Less legal protection. Potential rebranding risk at franchisee's expense.",
+        "source_page": 4
+      },
+      {
+        "clause": "All assets pledged as Hilton debt collateral",
+        "significance": "Franchisor entity's franchise contracts and assets collateralize Hilton corporate debt. Structural subordination risk.",
+        "source_page": 107
+      },
+      {
+        "clause": "Competitor definition during term",
+        "significance": "Franchisee cannot own or be franchisor/licensor of any competing hotel brand during term, even a single-hotel brand. Broad restriction.",
+        "source_page": 74
+      },
+      {
+        "clause": "Extended-stay minimum stay restrictions",
+        "significance": "Franchisor may restrict minimum length of stay for reservations and implement inventory management standards. Controls on revenue strategy.",
+        "source_page": 74
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "depth_pass": "promotion_audit",
+  "extraction_date": "2026-04-14",
+  "filing_id": "637909-2025",
+  "brand": "Delah Coffee",
+  "promoted_facts": [
+    {
+      "fact": "Formation date discrepancy: Financial statement Note 1 says Oct 17, 2024; Item 1 says Oct 21, 2024",
+      "reader_report_section": "Pass F (Item 21)",
+      "source_pdf_pages": [71, 8],
+      "canonical_field": "observations",
+      "action": "Added to unresolveds as UNRESOLVED-006"
+    },
+    {
+      "fact": "Operations Manual is 166 pages across 3 parts",
+      "reader_report_section": "Pass C (Item 11)",
+      "source_pdf_pages": [25, 63],
+      "canonical_field": "operations_manual",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "Computer system maintenance $500-$1,000/year, no franchisor obligation to maintain",
+      "reader_report_section": "Pass C (Item 11)",
+      "source_pdf_pages": [30],
+      "canonical_field": "technology_maintenance",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "Force majeure does NOT excuse payment obligations; max 6-month excuse period",
+      "reader_report_section": "Contract burden depth pass",
+      "source_pdf_pages": [138],
+      "canonical_field": "force_majeure",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "Withholding payments is expressly unlawful under FA Art. 5.F",
+      "reader_report_section": "Contract burden depth pass",
+      "source_pdf_pages": [102],
+      "canonical_field": "payment_obligations",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "Claims limitation: 2 years from act or 1 year from discovery, whichever first",
+      "reader_report_section": "Contract burden depth pass",
+      "source_pdf_pages": [141],
+      "canonical_field": "dispute_resolution",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "Michigan escrow provision relevant: franchisor net worth < $100,000 triggers escrow right",
+      "reader_report_section": "Pass I (State Addenda)",
+      "source_pdf_pages": [212],
+      "canonical_field": "state_addenda_overrides",
+      "action": "Flagged for state addenda depth pass"
+    }
+  ],
+  "promotion_count": 7
+}

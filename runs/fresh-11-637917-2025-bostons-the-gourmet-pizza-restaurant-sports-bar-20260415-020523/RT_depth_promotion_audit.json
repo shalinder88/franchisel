@@ -1,0 +1,72 @@
+{
+  "extraction_date": "2026-04-15",
+  "filing_id": "637917-2025",
+  "depth_pass": "promotion_audit",
+  "promoted_facts": [
+    {
+      "fact": "Franchisee termination right requires 60-day cure period (vs. 30-day for franchisor defaults)",
+      "source_reader_report": "Section E — Contract Burden",
+      "source_pdf_page": 114,
+      "canonical_family": "termination",
+      "promoted_to": "termination.franchisee_cure_period_days"
+    },
+    {
+      "fact": "Terminated development agreement income: $42K (2024), $100K (2023), $50K (2022) recognized when dev agreements terminated/modified",
+      "source_reader_report": "Section F — Item 19",
+      "source_pdf_page": 73,
+      "canonical_family": "item21",
+      "promoted_to": "item21.terminated_dev_agreement_income"
+    },
+    {
+      "fact": "Supplier rebate revenue declined from $1,165K (2023) to $980K (2024) — 15.9% decrease",
+      "source_reader_report": "Section H — Item 21",
+      "source_pdf_page": 74,
+      "canonical_family": "supplier_restrictions",
+      "promoted_to": "supplier_restrictions.rebate_revenue_trend"
+    },
+    {
+      "fact": "Office lease expires March 2029; annual expense ~$75K; total future minimum payments $351K",
+      "source_reader_report": "Section H — Item 21",
+      "source_pdf_page": 76,
+      "canonical_family": "item21",
+      "promoted_to": "item21.lease_detail"
+    },
+    {
+      "fact": "Contract liabilities of $1,233,076 represent deferred franchise fee revenue to be recognized over franchise terms; $916K scheduled beyond 2029",
+      "source_reader_report": "Financial notes",
+      "source_pdf_page": 73,
+      "canonical_family": "item21",
+      "promoted_to": "item21.contract_liabilities_detail"
+    },
+    {
+      "fact": "Related party management services fee earned from outside-US franchisor: $265K (2024), $245K (2023), $117K (2022) — growing revenue stream",
+      "source_reader_report": "Section H — Item 21",
+      "source_pdf_page": 75,
+      "canonical_family": "item21",
+      "promoted_to": "item21.related_party_management_fees"
+    },
+    {
+      "fact": "All fixed assets depreciated over 3-year useful life — very aggressive depreciation schedule",
+      "source_reader_report": "Financial notes",
+      "source_pdf_page": 75,
+      "canonical_family": "item21",
+      "promoted_to": "item21.depreciation_policy"
+    },
+    {
+      "fact": "FDIC insurance exposure: cash balances at times exceeded insured limits",
+      "source_reader_report": "Financial notes",
+      "source_pdf_page": 71,
+      "canonical_family": "item21",
+      "promoted_to": "item21.fdic_exposure"
+    }
+  ],
+  "facts_already_in_canonical": [
+    "Going concern status",
+    "Partners' capital deficit",
+    "Fee deferral states",
+    "Total revenue and net income",
+    "Auditor identification",
+    "Partner distributions"
+  ],
+  "total_promoted": 8
+}

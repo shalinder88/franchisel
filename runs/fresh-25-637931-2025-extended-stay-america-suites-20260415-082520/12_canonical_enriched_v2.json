@@ -1,0 +1,167 @@
+{
+  "enrichment_version": "v2",
+  "enrichment_date": "2026-04-15",
+  "item21_financial_structure": {
+    "revenue_streams": {
+      "franchise_fees": {"description": "Initial fees + ongoing royalties (5.5% of GRR)", "fy2024_k": 9391, "fy2023_k": 7124, "growth_pct": 31.8},
+      "system_service_fees": {"description": "4.5% of GRR for system services", "fy2024_k": 10888, "fy2023_k": 8619, "growth_pct": 26.3},
+      "direct_reimbursements": {"description": "Dollar-for-dollar reservation/distribution cost reimbursement", "fy2024_k": 3057, "fy2023_k": 2372},
+      "other_revenues": {"description": "QA/admin fees, contract termination fees", "fy2024_k": 2482, "fy2023_k": 324, "note": "2024 includes $2.1M contract termination fees"}
+    },
+    "expense_structure": {
+      "system_service_expenses": {"fy2024_k": 12188, "fy2023_k": 10560, "note": "Exceeds SSF collected by $1.3M in 2024"},
+      "direct_reimbursable": {"fy2024_k": 3057, "fy2023_k": 2372, "note": "Matches direct reimbursement revenue"},
+      "general_and_admin": {"fy2024_k": 7697, "fy2023_k": 6929, "note": "Includes $6.6M related party overhead reimbursement"},
+      "trademark_license": {"fy2024_k": 429, "fy2023_k": 351, "note": "5% of franchise royalties to Strategies Branding"},
+      "amortization": {"fy2024_k": 910, "fy2023_k": 399, "note": "Franchise agreements (20yr) and software licenses"}
+    },
+    "ssf_economics": {
+      "collected_k": 10888,
+      "spent_k": 12188,
+      "deficit_k": 1300,
+      "franchisee_marketing_spend_k": 5326,
+      "marketing_pct_of_grr": 0.024,
+      "note": "Franchisor subsidizes system services from other revenue; franchisees' SSF payments do not fully cover system service costs"
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "cash": 9170,
+      "accounts_receivable": 1911,
+      "intangible_assets_net": 5371,
+      "contract_acquisition_costs": 2227,
+      "total_assets": 19178,
+      "accounts_payable": 881,
+      "due_to_affiliates": 2770,
+      "deferred_revenue_current": 132,
+      "deferred_revenue_noncurrent": 4710,
+      "accrued_liabilities_noncurrent": 2490,
+      "total_liabilities": 10983,
+      "members_capital": 8195
+    },
+    "cash_flow_2024": {
+      "net_income": 1537,
+      "cash_from_operations": 1155,
+      "cash_for_investing": -522,
+      "cash_from_financing": 0,
+      "net_change_in_cash": 633,
+      "ending_cash": 9170
+    },
+    "intangible_assets_2024": {
+      "franchise_agreements": {"gross": 4900, "accum_amort": 1286, "net": 3614, "remaining_life_years": 10},
+      "software_licenses": {"gross": 2356, "accum_amort": 599, "net": 1757, "remaining_life_years": 3},
+      "total_net": 5371,
+      "future_amortization": {"2025": 933, "2026": 933, "2027": 933, "2028": 410, "2029": 363, "thereafter": 1799}
+    },
+    "contract_liabilities": {
+      "beginning_balance_k": 4478,
+      "ending_balance_k": 4842,
+      "recognized_in_period_k": 824,
+      "note": "Deferred initial franchise fees amortized over ~20 year contract terms"
+    },
+    "related_party_detail": {
+      "esa_management_overhead_k": 6600,
+      "esa_management_system_services_k": 3800,
+      "esa_management_due_k": 2700,
+      "strategies_branding_license_k": 429,
+      "strategies_branding_due_k": 100,
+      "esh_reit_due_k": 0,
+      "note": "Related party transactions are fundamental to understanding financials per auditor emphasis"
+    },
+    "brand_launch_expenses": {
+      "total_incurred_2022_k": 2500,
+      "remaining_accrued_2024_k": 1600,
+      "current_portion_k": 300,
+      "noncurrent_portion_k": 1300,
+      "description": "Payments to existing franchisees for area-of-protection exemptions for ESA Select Suites launch"
+    }
+  },
+  "item6_fee_detail": {
+    "fee_count": 35,
+    "ongoing_fees_as_pct_grr": {
+      "royalty": 0.055,
+      "system_services": 0.045,
+      "total_base": 0.100,
+      "digital_marketing_on_paid_channels": 0.05,
+      "agoda_on_agoda_bookings": 0.006
+    },
+    "technology_monthly_per_room": {
+      "pms_license": 2.20,
+      "pms_hosting": 1.00,
+      "pms_support": 0.67,
+      "total_pms": 3.87,
+      "hsia_phone_tv": "4-7",
+      "telecom": "2.42-4.03 (hotel-level, not per room)"
+    },
+    "illustrative_annual_fee_burden_124_room": {
+      "assumptions": "RevPAR $46.85 (franchised avg), 124 rooms, 365 days",
+      "annual_grr_estimate": 2120206,
+      "royalty_estimate": 116611,
+      "ssf_estimate": 95409,
+      "pms_annual": 5757,
+      "conference": 1200,
+      "ahla": 372,
+      "total_base_fees_estimate": 219349,
+      "note": "Does not include booking commissions, digital marketing commission, or event-driven fees. Actual GRR will vary."
+    }
+  },
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "override_families": {
+      "interest_rate_cap": {"California": "10% per annum"},
+      "forum_selection": {
+        "California": "NC venue may not apply",
+        "Illinois": "venue outside IL void (arbitration outside IL permitted)",
+        "Indiana": "NC venue may not be enforceable",
+        "Maryland": "may sue in MD for MD law claims",
+        "Minnesota": "cannot require out-of-state litigation",
+        "North Dakota": "may bring action in ND",
+        "Rhode Island": "venue outside RI void for RI claims",
+        "Washington": "arbitration/mediation must be in WA or mutual agreement"
+      },
+      "governing_law": {
+        "Illinois": "Illinois law governs",
+        "Indiana": "Indiana franchise laws govern",
+        "Minnesota": "MN franchise act applies",
+        "North Dakota": "ND law applies except as otherwise required",
+        "Washington": "WA Franchise Investment Protection Act prevails in conflicts"
+      },
+      "general_release": {
+        "California": "excludes CA Franchise Investment Law and Franchise Relations Act",
+        "Indiana": "excludes IN Deceptive Franchise Practices Law",
+        "Maryland": "excludes MD Franchise Registration and Disclosure Law",
+        "Minnesota": "excludes MN Franchise Act",
+        "North Dakota": "excludes ND Franchise Investment Law",
+        "Washington": "excludes WA Franchise Investment Protection Act"
+      },
+      "termination_cure": {
+        "Minnesota": "90 days notice / 60 days to cure; 180 days non-renewal notice",
+        "Virginia": "reasonable cause required per VA Retail Franchising Act"
+      },
+      "liquidated_damages": {
+        "California": "may be unenforceable under Civil Code Section 1671",
+        "North Dakota": "held unfair, unjust, inequitable"
+      },
+      "noncompete": {
+        "Washington": "void unless employee earns >$100K/yr or contractor >$250K/yr; no-poach provisions void"
+      },
+      "jury_waiver": {
+        "Minnesota": "cannot require jury waiver",
+        "North Dakota": "cannot require jury waiver"
+      },
+      "statute_of_limitations": {
+        "Maryland": "3 years from grant of franchise"
+      },
+      "anti_waiver": {
+        "California": true,
+        "Illinois": true,
+        "Indiana": true,
+        "Maryland": true,
+        "Minnesota": true,
+        "North Dakota": true,
+        "Virginia": true,
+        "Washington": true
+      }
+    }
+  }
+}

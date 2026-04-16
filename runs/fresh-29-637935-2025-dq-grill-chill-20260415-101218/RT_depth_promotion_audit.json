@@ -1,0 +1,78 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637935-2025",
+  "promoted_facts": [
+    {
+      "fact": "ADQ's new COO Arthur D'Elia joined March 17, 2025, previously served as Domino's EVP International (May 2022-Oct 2024)",
+      "source_reader_report": "Pass B, Item 2",
+      "source_pdf_pages": [15],
+      "canonical_field": "key_personnel.coo",
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "fact": "Deferred compensation plan: $27.2M in rabbi trust mutual funds; no company contributions 2022-2024",
+      "source_reader_report": "Not in reader report — from financial notes depth pass",
+      "source_pdf_pages": [503],
+      "canonical_field": "item21_financials.deferred_compensation",
+      "action": "Added to 12_canonical_enriched_v2.json"
+    },
+    {
+      "fact": "Franchise incentive programs: $6.1M deferred incentives for franchisee remodels/tech/new builds, amortized 3-7 years",
+      "source_reader_report": "Not in reader report — from financial notes depth pass",
+      "source_pdf_pages": [503],
+      "canonical_field": "item21_financials.franchise_incentives",
+      "action": "Added to 12_canonical_enriched_v2.json"
+    },
+    {
+      "fact": "Maryland fee deferral: MD Securities Commissioner required initial fees deferred until outlet opens",
+      "source_reader_report": "Pass F, State Addenda",
+      "source_pdf_pages": [89],
+      "canonical_field": "state_addenda_overrides.maryland.fee_deferral",
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "fact": "North Dakota termination fee entirely deleted by state addendum",
+      "source_reader_report": "Pass F, State Addenda",
+      "source_pdf_pages": [91],
+      "canonical_field": "state_addenda_overrides.north_dakota.termination_fee",
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "fact": "Washington noncompete void for employees earning <$100K/yr annualized and independent contractors <$250K/yr",
+      "source_reader_report": "Retry R2",
+      "source_pdf_pages": [93],
+      "canonical_field": "state_addenda_overrides.washington.noncompete",
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "fact": "Washington no-poach: franchisor cannot restrict franchisee from soliciting/hiring employees of other franchisees or franchisor",
+      "source_reader_report": "Retry R2",
+      "source_pdf_pages": [94],
+      "canonical_field": "state_addenda_overrides.washington.no_poach",
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "fact": "Confidentiality clauses restrict some former franchisees from speaking about their experience",
+      "source_reader_report": "Pass F, Item 20",
+      "source_pdf_pages": [82],
+      "canonical_field": "item_20_notes.confidentiality_clauses",
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "fact": "IDQ effective tax rate 24.21% (2024), consistent across 2022-2024",
+      "source_reader_report": "Financial notes depth pass",
+      "source_pdf_pages": [504],
+      "canonical_field": "item21_financials.effective_tax_rate",
+      "action": "Added to 12_canonical_enriched_v2.json"
+    },
+    {
+      "fact": "Independent franchisee organizations: DQOA (Chanhassen, MN), DQOC (Chanhassen, MN), Texas DQ Operators' Council (Bedford, TX)",
+      "source_reader_report": "Pass F, Item 20",
+      "source_pdf_pages": [83],
+      "canonical_field": "franchisee_organizations",
+      "action": "Added to 09_final_canonical.json"
+    }
+  ],
+  "total_promoted": 10
+}

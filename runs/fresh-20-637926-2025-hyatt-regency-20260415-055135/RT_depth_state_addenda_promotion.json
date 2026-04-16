@@ -1,0 +1,144 @@
+{
+  "depth_pass": "state_addenda_structured_promotion",
+  "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota"],
+  "source_pages_pdf": [363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379],
+  "no_waiver_disclaimer_states": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "financial_disclosure",
+      "override_summary": "Franchisor entity (Hyatt Franchising, L.L.C.) unaudited balance sheet as of 12/31/2024 added to Item 21",
+      "why_it_matters": "California requires franchisor-entity financials in addition to parent financials, providing transparency into the actual contracting entity's financial health",
+      "source_pages": [364, 365, 366]
+    },
+    {
+      "state": "Hawaii",
+      "affected_family": "general_disclosure",
+      "override_summary": "Standard Hawaii franchise investment law disclosure. Filing does not constitute approval or recommendation. 7-day disclosure period. No waiver of reliance provision.",
+      "why_it_matters": "Hawaii imposes minimum disclosure timing (7 days) and protects against waiver of franchise law claims",
+      "source_pages": [367]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "Any release required as condition of renewal or transfer does not apply to liability under Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "Maryland franchisees retain right to pursue claims under state franchise law even after signing a release at renewal/transfer",
+      "source_pages": [367, 371]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "termination",
+      "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law but franchisor will enforce to extent enforceable",
+      "why_it_matters": "Limits franchisor's ability to terminate on insolvency grounds in Maryland",
+      "source_pages": [368]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may bring claims arising under Maryland Franchise Law in Maryland courts (subject to arbitration obligation), unless preempted by Federal Arbitration Act",
+      "why_it_matters": "Maryland franchisees need not travel to Chicago for Maryland Franchise Law claims",
+      "source_pages": [368, 371]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "governing_law",
+      "override_summary": "Maryland law applies to claims arising under Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "Overrides Illinois choice of law for Maryland-specific franchise law claims",
+      "source_pages": [368, 371]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "limitations_period",
+      "override_summary": "Claims under Maryland Franchise Law must be brought within 3 years after grant of franchise",
+      "why_it_matters": "Establishes specific limitations period for Maryland franchise claims",
+      "source_pages": [368, 371]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination",
+      "override_summary": "Franchisee must receive 90 days' notice of termination (with 60 days to cure) and 180 days' notice of non-renewal, per Minn. Stat. 80C.14",
+      "why_it_matters": "Significantly longer notice periods than standard FA provisions (which range from 24 hours to 30 days for most defaults)",
+      "source_pages": [368, 374]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Any release as condition of renewal/transfer does not apply to extent prohibited by Minn. Rule 2860.4400D",
+      "why_it_matters": "Minnesota franchisees retain right to pursue claims under Minnesota franchise law",
+      "source_pages": [368, 374]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "damages",
+      "override_summary": "Minn. Rule Part 2860.4400J prohibits waiver of jury trial, waiver of procedure/forum/remedies, and consent to liquidated damages/termination penalties. Franchisor will enforce to extent law allows.",
+      "why_it_matters": "Minnesota law may make the liquidated damages provisions unenforceable and preserves jury trial rights",
+      "source_pages": [369, 374, 375]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "Minn. Stat. 80C.21 prohibits requiring litigation outside Minnesota. Franchisee retains right to submit matters to Minnesota courts (subject to arbitration obligation).",
+      "why_it_matters": "Minnesota franchisees need not litigate in Illinois",
+      "source_pages": [369, 374]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "limitations_period",
+      "override_summary": "No action under Minn. Stat. 80C.17 more than 3 years after cause of action accrues",
+      "why_it_matters": "Minnesota-specific limitations period",
+      "source_pages": [375]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "damages",
+      "override_summary": "Commissioner has determined termination/liquidated damages to be unfair, unjust and inequitable within Section 51-19-09 of ND Franchise Investment Law. Parties will enforce to extent law allows.",
+      "why_it_matters": "Liquidated damages provisions may be unenforceable in North Dakota — a critical protection for a $73M+ investment",
+      "source_pages": [369, 377]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "general_release",
+      "override_summary": "Any release does not apply to extent prohibited by applicable law for claims under ND Franchise Investment Law",
+      "why_it_matters": "North Dakota franchisees retain franchise law claims",
+      "source_pages": [369, 377]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration at mutually agreed site (not necessarily Chicago). Franchisee may bring action in North Dakota courts (subject to arbitration).",
+      "why_it_matters": "Significant relief from Chicago venue requirement",
+      "source_pages": [370, 377, 378]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "governing_law",
+      "override_summary": "North Dakota law applies to the extent required by ND Franchise Investment Law",
+      "why_it_matters": "Overrides Illinois choice of law",
+      "source_pages": [370, 377]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "damages",
+      "override_summary": "Waiver of punitive damages and jury trial may not be enforceable under ND Franchise Investment Law",
+      "why_it_matters": "Preserves jury trial and punitive damages rights",
+      "source_pages": [378]
+    }
+  ],
+  "summary_table": {
+    "override_families": ["general_release", "forum_selection", "governing_law", "termination", "damages", "limitations_period", "financial_disclosure", "general_disclosure"],
+    "states_affected": {
+      "general_release": ["Maryland", "Minnesota", "North Dakota"],
+      "forum_selection": ["Maryland", "Minnesota", "North Dakota"],
+      "governing_law": ["Maryland", "North Dakota"],
+      "termination": ["Maryland", "Minnesota"],
+      "damages": ["Minnesota", "North Dakota"],
+      "limitations_period": ["Maryland", "Minnesota"],
+      "financial_disclosure": ["California"],
+      "general_disclosure": ["Hawaii"]
+    }
+  },
+  "riders_provided": {
+    "franchise_agreement_riders": ["Maryland", "Minnesota", "North Dakota"],
+    "confidentiality_agreement_riders": ["Maryland", "Minnesota", "North Dakota"]
+  }
+}

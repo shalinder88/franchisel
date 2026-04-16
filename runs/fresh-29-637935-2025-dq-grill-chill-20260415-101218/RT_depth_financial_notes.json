@@ -1,0 +1,187 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637935-2025",
+  "source_pages": [491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507],
+  "auditor": "Deloitte & Touche LLP",
+  "opinion_type": "clean_unqualified",
+  "opinion_date": "2025-02-07",
+  "accounting_policies": {
+    "basis_of_presentation": "GAAP, consolidated including all affiliates after elimination of intercompany balances. Fiscal year ends December 31.",
+    "cash_equivalents": "Short-term investments with original maturity ≤90 days, recorded at cost (approximates fair value)",
+    "receivables": "Net of allowance for expected credit losses ($1,501K in 2024, $903K in 2023). Allowance based on delinquencies, aging, industry trends, historical experience.",
+    "cash_pooling": "Centralized cash management with BH Finance LLC (Berkshire subsidiary). Day-to-day borrowing not to exceed $10M; no limit on invested amounts. Borrowing rate: one-month SOFR. Investment rate: set by BH Finance. Auto-renews annually Dec 31 (90 days notice to terminate).",
+    "inventories": "Lower of cost (FIFO) or net realizable value. Primarily marketing material.",
+    "property_equipment": {
+      "method": "Straight-line",
+      "useful_lives": {
+        "equipment": "3-10 years",
+        "leasehold_improvements": "Shorter of 20 years or remaining lease term",
+        "buildings": "15-40 years"
+      },
+      "depreciation_2024": 2341000,
+      "depreciation_2023": 2378000,
+      "depreciation_2022": 2275000
+    },
+    "recoverability_long_lived": "Reviewed whenever events indicate carrying value may not be recoverable. Compared to undiscounted future cash flows. No impairments recorded 2022-2024.",
+    "goodwill_intangibles": {
+      "method": "ASC 350 / ASC 805. Annual impairment test as of Dec 31 at reporting unit level. Discounted cash flow analysis.",
+      "accumulated_impairment": 1200000,
+      "no_impairment_2022_2024": true,
+      "franchise_rights_pre_2005": "Classified as goodwill",
+      "franchise_rights_post_2005": "Recognized as intangible apart from goodwill",
+      "software_amortization": "3-7 years"
+    },
+    "revenue_recognition": {
+      "general": "Revenue recognized when good/service transferred to customer. Substantially all at point in time.",
+      "service_fees": "Continuing license fees based on franchised location sales. Recognized as usage of license occurs.",
+      "other_fees": "Supply chain fees at point of sale; new store development at restaurant opening; transfer/termination fees when services performed; sales promotion management fees as percentage of committed advertising.",
+      "deferred_franchise_income": "Renewal and new store licensing rights recognized over contractual term. $3,024K (2024), $2,816K (2023)."
+    },
+    "leases": "ASC 842. ROU assets and liabilities for leases >1 year. Operating lease liabilities measured using risk-free rate.",
+    "committed_advertising": "Company acts as AGENT of advertising funds. Receipts/disbursements recorded NET on balance sheet. Liability position = unexpended franchisee funds.",
+    "income_taxes": {
+      "method": "Asset and liability method (ASC 740). Included in Berkshire consolidated federal return but prepared on separate company basis.",
+      "effective_rate_2024": 24.21,
+      "effective_rate_2023": 24.20,
+      "effective_rate_2022": 24.20,
+      "current_provision_2024": 30957000,
+      "deferred_provision_2024": 315000,
+      "unrepatriated_foreign_earnings_2024": 8800000,
+      "valuation_allowance": 3700000,
+      "unrecognized_tax_benefits": 0,
+      "open_tax_years_federal": "2012-2024",
+      "open_tax_years_state": "Generally 2014-2024"
+    },
+    "gift_card_liabilities": "Cash receipts classified as current liability. Reduced on redemption through reimbursement to franchisees. Breakage recognized proportionally to redemptions; credited to Committed Advertising less management fees.",
+    "foreign_currency": "Canadian subsidiaries measured in local currency. Assets/liabilities at period-end rates; income/expense at average monthly rates. Translation adjustments in AOCI.",
+    "use_of_estimates": "Significant estimates: service fee accruals, tax contingencies, allowance for credit losses."
+  },
+  "material_notes": {
+    "property_and_equipment": {
+      "source_page": 501,
+      "total_cost_2024": 22812000,
+      "accumulated_depreciation_2024": 11909000,
+      "net_2024": 10903000,
+      "components": {
+        "land": 1408000,
+        "buildings": 1969000,
+        "leasehold_improvements": 7351000,
+        "equipment": 7557000,
+        "vehicles": 4522000,
+        "construction_in_process": 5000
+      }
+    },
+    "goodwill_and_intangibles": {
+      "source_pages": [501, 502],
+      "goodwill_net_2024": 92023000,
+      "goodwill_net_2023": 92214000,
+      "goodwill_change": "Foreign currency translation ($191K decrease)",
+      "intangibles_2024": {
+        "territorial_franchise_rights_indefinite": 73275000,
+        "software_definite": {"cost": 13619000, "accumulated_amort": 4496000, "net": 9123000}
+      },
+      "amortization_2024": 1462000,
+      "future_amortization": {"2025": 1899000, "2026": 1570000, "2027": 1509000, "2028": 1498000, "2029": 1334000, "thereafter": 1313000}
+    },
+    "other_assets": {
+      "source_page": 503,
+      "deferred_compensation": 27222000,
+      "deferred_incentives": 6080000,
+      "notes": "Deferred compensation plan enables officers to defer cash comp into mutual funds in rabbi trust (Level 1 fair value). No company contributions 2022-2024. Deferred incentives for franchisee remodels/tech/new builds, amortized 3-7 years."
+    },
+    "other_current_liabilities": {
+      "source_page": 503,
+      "accrued_salaries_benefits": 21255000,
+      "charity_donations": 6902000,
+      "deposits": 8098000,
+      "accrued_remodel_incentives": 196000
+    },
+    "other_long_term_liabilities": {
+      "source_page": 504,
+      "deferred_compensation": 27222000,
+      "incentive_compensation": 12755000,
+      "accrued_remodel_incentives": 173000
+    },
+    "income_tax_detail": {
+      "source_pages": [504, 505],
+      "provision_breakdown_2024": {
+        "current_federal": 15192000,
+        "current_state": 4443000,
+        "current_foreign": 11322000,
+        "deferred_federal": 391000,
+        "deferred_state": 85000,
+        "deferred_foreign": -161000
+      },
+      "rate_reconciliation_2024": {
+        "statutory_rate": 21.00,
+        "state_net_of_federal": 2.77,
+        "foreign": 0.58,
+        "other_net": -0.14,
+        "effective_rate": 24.21
+      },
+      "deferred_tax_assets_2024": {
+        "employee_benefits": 11722000,
+        "receivable_allowances": 290000,
+        "operating_lease_liability": 1907000,
+        "deferred_revenue": 641000,
+        "capitalized_rd": 1279000,
+        "total": 15839000
+      },
+      "deferred_tax_liabilities_2024": {
+        "goodwill_intangibles": 27871000,
+        "fixed_assets": 3256000,
+        "operating_lease_assets": 1160000,
+        "other": 1204000,
+        "total": 33491000
+      },
+      "net_deferred_tax_liability_2024": 17652000
+    },
+    "leases": {
+      "source_pages": [505, 506],
+      "description": "Leases for admin facilities, equipment, and one retail restaurant. Most require payment of executory costs. Restaurant lease: greater of base rent or % of gross sales.",
+      "maturity_schedule": {
+        "2025": 1192000,
+        "2026": 1216000,
+        "2027": 1235000,
+        "2028": 1180000,
+        "2029": 1308000,
+        "thereafter": 2941000,
+        "total_payments": 9072000,
+        "imputed_interest": -763000,
+        "operating_lease_liabilities": 8309000
+      },
+      "weighted_avg_term_2024": "6.8 years",
+      "weighted_avg_discount_rate": "2.38%",
+      "lease_cost_2024": {"operating": 981000, "short_term": 15000, "variable": 734000, "total": 1730000}
+    },
+    "employee_benefit_plans": {
+      "source_page": 506,
+      "retirement_savings_plan": "Substantially all permanent FT employees eligible. Employee contribution: 1%-35% of base pay (IRS limits). 2024 company match: 100% of first 2% + 50% of next 4% = max 4%. Prior years: max 3.5%.",
+      "company_contribution_2024": 1857000,
+      "company_contribution_2023": 1520000,
+      "company_contribution_2022": 1411000
+    },
+    "contingencies": {
+      "source_page": 506,
+      "statement": "Company involved in various legal proceedings in ordinary course of business. Management opinion: ultimate disposition will not have material effect on financial position or results."
+    },
+    "related_party_transactions": {
+      "source_page": 507,
+      "cash_pooling_receivable_2024": 44600000,
+      "cash_pooling_receivable_2023": 55800000,
+      "interest_income_from_bh_finance_2024": 2600000,
+      "interest_income_from_bh_finance_2023": 2600000,
+      "interest_income_from_bh_finance_2022": 600000,
+      "dividends_to_berkshire_2024": 110000000,
+      "dividends_to_berkshire_2023": 110000000,
+      "dividends_to_berkshire_2022": 85000000,
+      "supply_chain_fees_from_berkshire_affiliates_2024": 300000
+    },
+    "subsequent_events": {
+      "source_page": 507,
+      "evaluation_date": "2025-02-07",
+      "finding": "No subsequent events noted"
+    }
+  }
+}

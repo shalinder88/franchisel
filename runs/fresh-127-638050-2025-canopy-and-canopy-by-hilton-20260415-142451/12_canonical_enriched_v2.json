@@ -1,0 +1,83 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "Canopy by Hilton",
+  "filing_id": "638050-2025",
+  "enrichment_version": "v2",
+  "item21_financial_structure_detail": {
+    "entity_purpose": "Single-purpose franchise holding and royalty collection vehicle",
+    "revenue_composition_2024": {
+      "franchise_royalty_fees": 1434453000,
+      "franchise_sales_coo_fees": 49340000,
+      "franchise_termination_fees_other": 18276000,
+      "total": 1502069000
+    },
+    "expense_composition_2024": {
+      "operating_expenses": 1354000,
+      "provision_for_credit_losses": 6248000,
+      "amortization_expense": 3751000,
+      "total": 11353000
+    },
+    "operating_margin_pct": 99.2,
+    "asset_composition_2024": {
+      "cash": 317000,
+      "accounts_receivable_net": 135970000,
+      "affiliate_receivables_franchise_deposits": 18498000,
+      "affiliate_receivables_other": 703943000,
+      "financing_receivables_total": 16064000,
+      "franchise_contracts_net": 392748000,
+      "other": 2357000,
+      "total": 1269897000
+    },
+    "liability_composition_2024": {
+      "franchise_deposits": 18498000,
+      "intercompany_payables": 89994000,
+      "deferred_revenues_total": 558880000,
+      "fa_acquisition_costs_payable": 25120000,
+      "other": 400000,
+      "total": 692892000
+    },
+    "equity_2024": {
+      "contributed_capital": 310000000,
+      "retained_earnings": 528936000,
+      "due_from_affiliates": -261959000,
+      "aoci": 28000,
+      "total": 577005000
+    },
+    "distributions_3yr": [1500000000, 1400000000, 1550000000],
+    "source_pages": [105, 106, 107]
+  },
+  "item21_statement_detail": {
+    "revenue_recognition": "IP license — series of distinct services over time; variable consideration (royalty fees) allocated to distinct services; fixed consideration (sales/COO fees) allocated based on standalone selling prices and recognized over contract term",
+    "franchise_contracts_accounting": "Contract acquisition costs capitalized and amortized straight-line over contract term (10-20 years); amortization reduces royalty fee revenue. Graduate brand intangibles acquired at ~$85M with 15-year useful life.",
+    "franchise_deposits": "Collected at application; reclassified to deferred revenues when non-refundable; recognized over contract term",
+    "credit_losses": "Based on historical collection activity, instrument nature, and business conditions. Allowance: $10.4M (AR) + $3.8M (financing receivables) at Dec 31, 2024",
+    "income_taxes": "Disregarded entity for US tax purposes; all items flow to Hilton Worldwide consolidated return. Foreign tax expense relates to territorial franchise fee withholding.",
+    "subsequent_events": "Evaluated through March 18, 2024 (likely typo for 2025). No material subsequent events disclosed.",
+    "commitments_contingencies": "Guarantees certain Hilton debt (2025-2033); all assets pledged. Routine litigation expected not material.",
+    "source_pages": [108, 109, 110, 111, 112]
+  },
+  "item6_fee_detail": {
+    "fee_categories": {
+      "ongoing_revenue_based": ["Monthly Royalty (5% GRR)", "Monthly Program Fee (4% GRR)", "Hilton Honors (4.3% eligible folio)", "Hilton Advance (1.35% digital direct revenue)", "Hilton For Business (up to 3% GRR)", "Stay Score Failure (up to 0.5% GRR)"],
+      "ongoing_fixed_monthly": ["OnQ Connectivity ($400-$600)", "HW/SW Maintenance ($1,995-$5,689)", "Connected Room ($805-$1,170)", "OnQ Email ($7.92/user + $12.50 mobile)"],
+      "ongoing_fixed_annual": ["Delphi ($858/user)", "Restaurant Brand Annual ($14,500)"],
+      "per_transaction": ["Guest Assistance CSG ($200-$300)", "Travel Clubs ($0.30/room + 10%)", "Group Preferred ($1.80/night + commission)", "Centralized Payments (various)"],
+      "compliance_penalties": ["Brand Non-Compliance ($65-$145/room, max $50K/6mo)", "Re-Evaluation (up to $4,500)", "Special Audit ($5,500)", "PIP Failure ($16,000/6mo)", "Plans Late ($8,000/90 days)", "SQIP ($20K-$50K/6mo)", "ISD Non-Compliance ($500)", "FastPay Non-Compliance ($500-$3,000)"],
+      "event_driven": ["Room Addition ($400/room)", "COO Application ($150,000)", "Permitted Transfer ($5,500)", "Re-licensing ($85,000)", "Lender Comfort ($3,500/$1,500)", "Public Offering ($5,000)", "Extension Fee ($10,000)"],
+      "damages": ["Liquidated Damages (System/Hotel Avg Monthly Royalty × up to 60)", "Actual Damages (varies)", "Overdue Service Charges (1.5%/month)", "Unauthorized Opening ($5,000/day)"]
+    },
+    "source_pages": [28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Restricted Area negotiability — no standard formula, minimum area, or typical scope disclosed", "severity": "medium", "source": "Item 12, pp. 69-70"},
+    {"id": "U2", "description": "Management fee for affiliate management — 'will be established by mutual agreement' with no range disclosed", "severity": "low", "source": "Item 6, p. 34"},
+    {"id": "U3", "description": "PIP requirements for conversions — determined project-by-project, no standard template", "severity": "medium", "source": "Items 5, 7"},
+    {"id": "U4", "description": "Insurance requirements — per confidential Manual, not disclosed in FDD", "severity": "low", "source": "Item 7, Note 14"},
+    {"id": "U5", "description": "Restaurant Brand concept specifics — deferred to Exhibit J-2", "severity": "low", "source": "Item 1, pp. 14-15"},
+    {"id": "U6", "description": "Note 9 subsequent events date discrepancy — states 'March 18, 2024' for FY2024 financials, likely should be 2025", "severity": "low", "source": "Exhibit C, p. 112"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "Special risks states no federal registration for 'Canopy' principal mark, but Item 13 lists Registration 7552571 dated Oct 29, 2024", "items_involved": ["Special Risks p.4", "Item 13 p.72"], "resolution_status": "unresolved"},
+    {"id": "C2", "description": "Note 9 subsequent events evaluation date 'March 18, 2024' appears to be typographical error for 'March 18, 2025'", "items_involved": ["Exhibit C Note 9 p.112"], "resolution_status": "likely_typo"}
+  ]
+}

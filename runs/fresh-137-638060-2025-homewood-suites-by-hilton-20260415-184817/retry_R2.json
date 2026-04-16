@@ -1,0 +1,21 @@
+{
+  "retry_id": "R2",
+  "target": "Exhibit J-1 State Addenda — full extraction",
+  "severity": "medium",
+  "source_pages": [272, 273, 274, 275, 276, 277, 278, 279],
+  "states_with_addenda": [
+    "California", "Hawaii", "Illinois", "Maryland", "Michigan",
+    "Minnesota", "New York", "North Dakota", "Rhode Island",
+    "Virginia", "Washington"
+  ],
+  "material_overrides": {
+    "California": ["Liquidated damages may be unenforceable", "Venue limitation may not be enforceable", "General release does not waive Franchise Investment Law rights"],
+    "Illinois": ["Termination/renewal governed by Illinois law", "Venue/governing law/jury waiver do not override IL Franchise Disclosure Act"],
+    "Maryland": ["State law may supersede on termination/renewal", "May sue in Maryland for MD Franchise Law claims", "3-year statute of limitations"],
+    "Michigan": ["Termination only for good cause (30-day cure)", "Must fairly compensate on non-renewal (if term <5 years)", "Out-of-state litigation prohibited"],
+    "Minnesota": ["90-day termination notice / 60-day cure required", "180-day non-renewal notice", "Liquidated damages prohibited", "Out-of-state litigation prohibited", "Jury trial waiver prohibited"],
+    "New York": ["NY law governs NY Franchise Law causes of action", "General release in renewal/transfer may not be enforceable"],
+    "North Dakota": ["ALL liquidated damages deleted", "ND law supersedes", "Out-of-state venue deleted", "Jury trial waiver deleted"],
+    "Washington": ["Release waiver only effective post-negotiated settlement with counsel", "Noncompete void if employee <$100K or contractor <$250K", "No-poach restrictions void"]
+  }
+}

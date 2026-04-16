@@ -1,0 +1,117 @@
+{
+  "depth_pass": "financial_notes",
+  "entity": "Hyatt Hotels Corporation",
+  "source_pages": [94, 95, 102, 103, 104, 105, 109, 112, 113, 115, 118, 119, 133, 134, 137, 140, 141, 142, 143, 144, 150, 151, 155, 158],
+  "auditor": "Deloitte & Touche LLP",
+  "audit_opinion": "Unqualified",
+  "auditor_since": 2003,
+  "critical_audit_matters": [
+    {
+      "matter": "Deferred Revenue Related to Loyalty Program",
+      "amount_M": 1333,
+      "description": "Actuarially determined liability based on anticipated timing of future point redemptions including breakage estimate",
+      "why_critical": "Subjectivity of breakage assumption required actuarial specialists"
+    },
+    {
+      "matter": "Goodwill Impairment",
+      "amount_M": 110,
+      "description": "Reporting unit within management and franchising segment carrying value exceeded fair value",
+      "why_critical": "Significant assumptions in projected future cash flows, discount rate, capitalization rate"
+    }
+  ],
+  "accounting_policies": {
+    "revenue_recognition": {
+      "policy": "Revenue recognized when control transferred to customer",
+      "franchise_fees": "Initial franchise fees combined with royalty fees, deferred and recognized over expected customer life (typically initial term)",
+      "royalty_fees": "Sales-based fees recognized over time as services rendered, payable monthly",
+      "system_wide_services": "Fund model — assessment fee billed monthly, combined with IP access as single performance obligation; break-even intent over time",
+      "loyalty_program": "Assessment fees deferred until member redeems points; single performance obligation combining program administration and award redemptions",
+      "source_pages": [104, 105, 106, 107, 108]
+    },
+    "depreciation": {
+      "method": "Straight-line",
+      "useful_lives": {
+        "buildings_and_improvements": "10-50 years",
+        "leasehold_improvements": "Shorter of lease term or useful life",
+        "furniture_and_equipment": "3-20 years",
+        "computers": "3-7 years"
+      },
+      "intangible_amortization": {
+        "management_franchise_intangibles": "4-31 years",
+        "customer_relationships": "4-12 years",
+        "other": "Varies"
+      },
+      "impairment_policy": "Quarterly assessment; undiscounted cash flow test; if carrying value exceeds projected undiscounted cash flows, fair value determined via DCF, appraisals, or broker valuations",
+      "source_pages": [112]
+    },
+    "income_taxes": {
+      "approach": "Asset/liability method; deferred taxes for temporary differences",
+      "uncertain_tax_positions": "Accrued interest and penalties recognized as income tax expense",
+      "IRS_matter": "Estimated additional income tax payment of $280M for years 2012-2024 including $46M estimated interest",
+      "Mexico_assessment": "Additional corporate income tax assumed through prior acquisition",
+      "deferred_tax_valuation_allowance": {"2024": 90, "2023": 253, "2022": 262},
+      "effective_tax_rate_2024_note": "17.1% vs 21% statutory (elevated gains on real estate sales at favorable rates)",
+      "source_pages": [115, 140, 141, 142, 143, 144, 158]
+    },
+    "leases": {
+      "lessee_types": "Land, buildings, office space, equipment",
+      "measurement": "IBR-based present value; no implicit rates in leases",
+      "rou_assets_2024_M": 328,
+      "current_lease_liabilities_M": 33,
+      "long_term_lease_liabilities_M": 245,
+      "finance_leases": "Insignificant",
+      "source_pages": [113, 133, 134]
+    },
+    "variable_interest_entities": {
+      "policy": "Consolidated when primary beneficiary (power to direct + obligation to absorb losses/right to receive benefits)",
+      "key_vie": "Entity owning Unlimited Vacation Club business — VIE in which Hyatt holds variable interest but is NOT primary beneficiary",
+      "source_pages": [109, 119, 120]
+    }
+  },
+  "subsequent_events": {
+    "form_8k_march_2025": {
+      "event": "$1B Senior Notes issuance",
+      "notes_2028": {"rate": "5.050%", "principal_M": 500},
+      "notes_2032": {"rate": "5.750%", "principal_M": 500},
+      "purpose": "Fund Playa Hotels & Resorts acquisition",
+      "source_pages": [159, 160, 161]
+    }
+  },
+  "related_party_transactions": {
+    "legal_services": {
+      "description": "Partner in law firm is brother-in-law of Executive Chairman",
+      "fees_2024_M": 23,
+      "fees_2023_M": 15,
+      "fees_2022_M": 14,
+      "payable_M": 2
+    },
+    "equity_method_investments": {
+      "description": "Investments in entities that own/operate/manage/franchise properties",
+      "fee_revenues_2024_M": 83,
+      "due_from_entities_2024_M": 112,
+      "ownership_range": "20% to 50%"
+    },
+    "source_pages": [150]
+  },
+  "debt_structure": {
+    "long_term_debt_2024_M": 3326,
+    "current_maturities_M": 456,
+    "key_instruments": "Multiple series of Senior Notes",
+    "new_issuance_2025": "$1B (5.050% 2028 and 5.750% 2032)",
+    "source_pages": [137, 138, 139]
+  },
+  "segment_information": {
+    "reportable_segments": ["Management and franchising", "Owned and leased", "Distribution"],
+    "realignment": "Segments realigned in 2024 to align with business strategy",
+    "source_pages": [151, 152, 153, 154, 155]
+  },
+  "loyalty_program_accounting": {
+    "name": "World of Hyatt",
+    "deferred_revenue_M": 1333,
+    "funds_in_segregated_accounts": true,
+    "invested_in_fixed_income": true,
+    "independently_audited": true,
+    "breakeven_intent": true,
+    "source_pages": [104, 105, 106]
+  }
+}

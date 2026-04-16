@@ -1,0 +1,256 @@
+{
+  "extraction_metadata": {
+    "brand": "LivSmart Studios by Hilton",
+    "filing_id": "638061-2025",
+    "extraction_date": "2026-04-15"
+  },
+  "tables": [
+    {
+      "table_id": "T5-1",
+      "source_item": "Item 5",
+      "title": "Initial Fees",
+      "source_pages": [22, 23, 24, 25, 26],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Franchise Application Fee - New Development or Conversion", "amount": "$100,000", "due_date": "With Application", "remarks": "See Note 1"},
+        {"type": "Franchise Application Fee - Change of Ownership", "amount": "$100,000", "due_date": "With Application", "remarks": "See Note 1"},
+        {"type": "Franchise Application Fee - Re-licensing", "amount": "$100,000", "due_date": "With Application", "remarks": "See Note 1"},
+        {"type": "Property Improvement Plan (PIP) Fee", "amount": "$10,000", "due_date": "Before PIP inspection is scheduled", "remarks": "Conversion, COO, Re-licensing. May be waived."},
+        {"type": "Construction or Renovation Work Extension Fee", "amount": "$10,000", "due_date": "With written request for extension", "remarks": "See Note 2"},
+        {"type": "OnQ Computer System Fees - Hardware, Software & Installation", "amount": "$38,236 to $94,017", "due_date": "As agreed", "remarks": "See Note 3"},
+        {"type": "Other Initial Start Up Fees", "amount": "$5,100", "due_date": "As incurred, on or before opening", "remarks": "GRO, Digital Floor Plan, Hilton Opening Transition Tool"},
+        {"type": "Training Program Fees", "amount": "$5,000 to $15,000", "due_date": "As agreed", "remarks": "See Item 11"},
+        {"type": "Opening Process Services Fee", "amount": "$6,000", "due_date": "Before opening", "remarks": "Pre-opening services"},
+        {"type": "Procurement and Services Fees", "amount": "4% to 10% of project cost", "due_date": "As agreed", "remarks": "If franchisor/affiliates furnish hotel"},
+        {"type": "Miscellaneous Services", "amount": "As agreed", "due_date": "As agreed", "remarks": "Optional and mandatory additional services"}
+      ],
+      "table_notes": [
+        "Note 1: Application fee non-refundable once approved; $7,500 processing fee retained if withdrawn/denied. Reduced in 29 instances in 2024 (range $0-$100,000).",
+        "Note 2: New Development must start construction within 15 months; automatic 30-day rolling extensions for New Development/Conversion unless 60 days notice given.",
+        "Note 3: Required systems include OnQ, Guest Internet Access, GRO, Delphi, Connected Room, Digital Floor Plan, Digital Key, Digital Payment, Hilton Opening Transition Tool.",
+        "Note 4: HSM procurement fees 4-10% plus product cost, freight, tax. Late payment interest 18.5%/year compounded daily."
+      ]
+    },
+    {
+      "table_id": "T6-1",
+      "source_item": "Item 6",
+      "title": "Other Fees (Ongoing)",
+      "source_pages": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "row_count": 38,
+      "key_rows": [
+        {"type": "Monthly Royalty Fee", "amount": "6% of Gross Rooms Revenue", "due_date": "Monthly by 15th", "remarks": "See Note 1. Modified in 29 instances in 2024."},
+        {"type": "Monthly Program Fee", "amount": "2.0% to 2.5% of GRR", "due_date": "Monthly by 15th", "remarks": "2.0% if compliant, 2.5% if non-compliant. May increase up to 1% above current rate over term."},
+        {"type": "Hilton Honors", "amount": "2% of total eligible guest folio", "due_date": "10 days after billing", "remarks": "Waived for certain on-property enrollments."},
+        {"type": "Hilton Advance Program", "amount": "1.35% of eligible Digital Direct Revenue, max $30/stay", "due_date": "Within 15 days or 12th business day", "remarks": "Lower-funnel digital marketing"},
+        {"type": "ResMax Program", "amount": "5.4% to 5.9% of consumed revenue, 3-night max", "due_date": "As required", "remarks": "Required. Auto-transfers reservation calls."},
+        {"type": "Liquidated Damages - Post-Opening Termination", "amount": "Greater of 60x avg monthly royalty or $10,000 x rooms", "due_date": "On demand", "remarks": "If terminated on/after opening but before 2nd anniversary"},
+        {"type": "Service Charges for Overdue Payments", "amount": "1.5% per month", "due_date": "On demand", "remarks": "Or highest percentage permissible by law"}
+      ],
+      "table_notes": [
+        "Note 1: GRR includes all revenue from guest room sales, loyalty point redemptions, breakfast if included, mandatory guest fees, late cancellation fees, no-show revenue.",
+        "Note 2: Standard Monthly Program Fee is 2.5% but reduced to 2.0% while in compliance. May not exceed current rate plus 1% over term.",
+        "Note 3: Quality assurance fees evolve from prior 'QA Evaluation' terminology. Multiple fees may apply simultaneously. PIP/Renovation Failure and SQIP fees are additional.",
+        "Note 5: Sales/distribution programs may be added/removed/modified at any time.",
+        "Note 6: Must participate in Hilton Honors and honor all discount/promotional programs.",
+        "Note 8: Average Monthly Royalty Fees calculated on 24-month basis, excluding temporary accommodations and Business Interruptions."
+      ]
+    },
+    {
+      "table_id": "T7-1",
+      "source_item": "Item 7",
+      "title": "Estimated Initial Investment - LivSmart Studios by Hilton (121 Guest Rooms)",
+      "source_pages": [39, 40, 41, 42, 43],
+      "columns": ["Type of Expenditure", "Amount", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Franchise Application Fee", "amount_low": 100000, "amount_high": 100000, "to_whom": "Us"},
+        {"type": "Property Improvement Plan", "amount_low": 0, "amount_high": 10000, "to_whom": "Us"},
+        {"type": "Market Study", "amount_low": null, "amount_high": null, "to_whom": "Supplier"},
+        {"type": "Environmental Assessment", "amount_low": null, "amount_high": null, "to_whom": "Supplier"},
+        {"type": "Real Property", "amount_low": null, "amount_high": null, "to_whom": "Supplier"},
+        {"type": "Construction and Leasehold Improvements", "amount_low": 11000000, "amount_high": 15000000, "to_whom": "Suppliers"},
+        {"type": "Design and Engineering Fees", "amount_low": 440000, "amount_high": 600000, "to_whom": "Suppliers"},
+        {"type": "Furniture, Fixtures and Equipment", "amount_low": 1500000, "amount_high": 2000000, "to_whom": "Suppliers"},
+        {"type": "Inventory and Operating Equipment", "amount_low": 175000, "amount_high": 350000, "to_whom": "Suppliers"},
+        {"type": "Signage", "amount_low": 20000, "amount_high": 75000, "to_whom": "Supplier"},
+        {"type": "Computer Hardware and Software Systems", "amount_low": 43331, "amount_high": 99112, "to_whom": "Us or Supplier"},
+        {"type": "Guest Internet Access System", "amount_low": 58107, "amount_high": 84918, "to_whom": "Supplier"},
+        {"type": "Connected Room System", "amount_low": 28905, "amount_high": 34545, "to_whom": "Supplier"},
+        {"type": "Digital Payment System", "amount_low": 750, "amount_high": 1500, "to_whom": "Supplier"},
+        {"type": "Required Pre-Opening Training", "amount_low": 5000, "amount_high": 15000, "to_whom": "Us and Suppliers"},
+        {"type": "ADA Consultant Fee", "amount_low": 2500, "amount_high": 10000, "to_whom": "Supplier"},
+        {"type": "Construction/Renovation Extension Fees", "amount_low": 0, "amount_high": 10000, "to_whom": "Us"},
+        {"type": "Insurance", "amount_low": null, "amount_high": null, "to_whom": "Agent/Insurer"},
+        {"type": "Organizational Expenses", "amount_low": 50000, "amount_high": 126587, "to_whom": "Accountant/Attorney"},
+        {"type": "Permits and Licenses", "amount_low": 165000, "amount_high": 225000, "to_whom": "Government Agencies"},
+        {"type": "Miscellaneous Pre-Opening and PM Expenses", "amount_low": 330000, "amount_high": 450000, "to_whom": "Suppliers"},
+        {"type": "Contingencies", "amount_low": 1100000, "amount_high": 1500000, "to_whom": "Suppliers"},
+        {"type": "Additional Funds (3 months)", "amount_low": 400000, "amount_high": 800000, "to_whom": "Suppliers"},
+        {"type": "Other Required Pre-opening Services Fees", "amount_low": 6000, "amount_high": 6000, "to_whom": "Us"}
+      ],
+      "total_low": 15424593,
+      "total_high": 21497662,
+      "table_notes": [
+        "Excludes real property costs, market studies, insurance, interest.",
+        "Does not separately identify conversion/re-licensing/COO costs.",
+        "Based on Hilton's 60+ years of experience in lodging business.",
+        "Prototype: 121-room new construction extended-stay hotel.",
+        "Contingencies = ~10% of construction/renovation costs.",
+        "Additional Funds covers 3 months of initial operating expenses including payroll."
+      ]
+    },
+    {
+      "table_id": "T20-1",
+      "source_item": "Item 20",
+      "title": "Table No. 1 - Systemwide Hotel Summary (2022-2024)",
+      "source_pages": [85],
+      "data": {
+        "franchised": {"2022_start": 0, "2022_end": 0, "2023_start": 0, "2023_end": 0, "2024_start": 0, "2024_end": 0},
+        "company_owned": {"2022_start": 0, "2022_end": 0, "2023_start": 0, "2023_end": 0, "2024_start": 0, "2024_end": 0},
+        "total": {"2022_start": 0, "2022_end": 0, "2023_start": 0, "2023_end": 0, "2024_start": 0, "2024_end": 0}
+      }
+    },
+    {
+      "table_id": "T20-2",
+      "source_item": "Item 20",
+      "title": "Table No. 2 - Transfers of Franchised Hotels (2022-2024)",
+      "source_pages": [85],
+      "data": {"2022": 0, "2023": 0, "2024": 0}
+    },
+    {
+      "table_id": "T20-3",
+      "source_item": "Item 20",
+      "title": "Table No. 3 - Status of Franchised Hotels (2022-2024)",
+      "source_pages": [85],
+      "data": {
+        "all_states": {
+          "2022": {"start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+          "2023": {"start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+          "2024": {"start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0}
+        }
+      }
+    },
+    {
+      "table_id": "T20-4",
+      "source_item": "Item 20",
+      "title": "Table No. 4 - Status of Company-Owned Hotels (2022-2024)",
+      "source_pages": [86],
+      "data": {
+        "all_states": {
+          "2022": {"start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+          "2023": {"start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+          "2024": {"start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0}
+        }
+      }
+    },
+    {
+      "table_id": "T20-5",
+      "source_item": "Item 20",
+      "title": "Table No. 5 - Projected Openings as of December 31, 2024",
+      "source_pages": [86, 87],
+      "columns": ["State", "FA Signed Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "summary": {
+        "total_signed_not_opened": 73,
+        "total_projected_franchised": 2,
+        "total_projected_company_owned": 0,
+        "top_states": [
+          {"state": "Texas", "signed": 16},
+          {"state": "Georgia", "signed": 8},
+          {"state": "Alabama", "signed": 6},
+          {"state": "Virginia", "signed": 5},
+          {"state": "Indiana", "signed": 4, "projected": 1},
+          {"state": "South Carolina", "signed": 4},
+          {"state": "California", "signed": 3},
+          {"state": "North Carolina", "signed": 3},
+          {"state": "Tennessee", "signed": 3, "projected": 1}
+        ]
+      },
+      "table_notes": [
+        "No FA for LivSmart Studios signed in 2023. All pre-2024 agreements signed under 'Project H3 by Hilton' temporary name.",
+        "All numbers as of December 31 for each year."
+      ]
+    },
+    {
+      "table_id": "T21-BS",
+      "source_item": "Item 21 / Exhibit C",
+      "title": "Balance Sheets (in thousands)",
+      "source_pages": [101],
+      "as_of": ["2024-12-31", "2023-12-31"],
+      "data": {
+        "total_current_assets": {"2024": 872512, "2023": 940470},
+        "total_non_current_assets": {"2024": 397385, "2023": 242677},
+        "total_assets": {"2024": 1269897, "2023": 1183147},
+        "total_current_liabilities": {"2024": 167610, "2023": 66132},
+        "total_liabilities": {"2024": 692892, "2023": 566693},
+        "total_members_equity": {"2024": 577005, "2023": 616454},
+        "key_items": {
+          "cash": {"2024": 317, "2023": 5348},
+          "accounts_receivable_net": {"2024": 135970, "2023": 127999},
+          "other_receivables_from_hilton_affiliates": {"2024": 703943, "2023": 768478},
+          "franchise_contracts_net": {"2024": 392748, "2023": 238533},
+          "deferred_revenues_current": {"2024": 41598, "2023": 37811},
+          "deferred_revenues_noncurrent": {"2024": 517282, "2023": 486418},
+          "contributed_capital": {"2024": 310000, "2023": 310000},
+          "retained_earnings": {"2024": 528936, "2023": 541365},
+          "due_from_hilton_affiliates_equity": {"2024": -261959, "2023": -234911}
+        }
+      }
+    },
+    {
+      "table_id": "T21-IS",
+      "source_item": "Item 21 / Exhibit C",
+      "title": "Statements of Comprehensive Income (in thousands)",
+      "source_pages": [102],
+      "periods": ["2024", "2023", "2022"],
+      "data": {
+        "franchise_royalty_fees": {"2024": 1434453, "2023": 1331169, "2022": 1184827},
+        "franchise_sales_and_coo_fees": {"2024": 49340, "2023": 43294, "2022": 39881},
+        "franchise_termination_fees_and_other": {"2024": 18276, "2023": 2434, "2022": 4757},
+        "total_revenues": {"2024": 1502069, "2023": 1376897, "2022": 1229465},
+        "operating_expenses": {"2024": 1354, "2023": 861, "2022": 529},
+        "provision_for_credit_losses": {"2024": 6248, "2023": 4430, "2022": -2483},
+        "amortization_expense": {"2024": 3751, "2023": 414, "2022": 410},
+        "total_expenses": {"2024": 11353, "2023": 5705, "2022": -1544},
+        "operating_income": {"2024": 1490716, "2023": 1371192, "2022": 1231009},
+        "net_income": {"2024": 1487571, "2023": 1372281, "2022": 1233442},
+        "distributions_to_parent": {"2024": 1500000, "2023": 1400000, "2022": 1550000}
+      }
+    },
+    {
+      "table_id": "T21-CF",
+      "source_item": "Item 21 / Exhibit C",
+      "title": "Statements of Cash Flows (in thousands)",
+      "source_pages": [103],
+      "periods": ["2024", "2023", "2022"],
+      "data": {
+        "net_cash_from_operations": {"2024": 1516760, "2023": 1423109, "2022": 1569887},
+        "net_cash_from_investing": {"2024": -80050, "2023": 0, "2022": 0},
+        "net_cash_from_financing": {"2024": -1441744, "2023": -1417891, "2022": -1569964},
+        "cash_end_of_year": {"2024": 317, "2023": 5348, "2022": 99}
+      }
+    },
+    {
+      "table_id": "T11-TRAINING",
+      "source_item": "Item 11",
+      "title": "Training Program",
+      "source_pages": [58, 59, 60],
+      "columns": ["Subject", "Hours Classroom", "Hours OJT", "Location"],
+      "rows": [
+        {"subject": "Brand Conference", "hours_classroom": "Varies", "hours_ojt": 0, "location": "Varies", "notes": "Up to $2,500/attendee, annual, required for GM and DoS"},
+        {"subject": "GM/Commercial/Sales Leader Training", "hours_classroom": "Up to 18", "hours_ojt": 0, "location": "Virtual", "notes": "Up to $1,200/attendee, within 90 days of start"},
+        {"subject": "HPMS Training", "hours_classroom": "1-5", "hours_ojt": 0, "location": "Online", "notes": "No fee, mandatory for all HPMS users"},
+        {"subject": "OnQ Rate & Inventory / GRO Training", "hours_classroom": 5, "hours_ojt": 0, "location": "Online", "notes": "No fee, 80% min score, up to 3 staff certified"},
+        {"subject": "Hilton Honors Training", "hours_classroom": 1, "hours_ojt": 0, "location": "Online", "notes": "No fee, mandatory for key personnel"},
+        {"subject": "Hilton Core Sales Skills", "hours_classroom": 24, "hours_ojt": 0, "location": "Virtual", "notes": "Up to $600/attendee, Foundations (6-wk) or Accelerated (2-wk)"},
+        {"subject": "ADA Training", "hours_classroom": "Varies", "hours_ojt": 0, "location": "Online", "notes": "No fee"},
+        {"subject": "Annual Compliance Training", "hours_classroom": "2-3", "hours_ojt": 0, "location": "Online or On-site", "notes": "$25-$50/person/topic for vendor-provided"},
+        {"subject": "Pre-Opening Training Resources", "hours_classroom": "Varies", "hours_ojt": 0, "location": "On-site", "notes": "No fee"},
+        {"subject": "Owner Orientation", "hours_classroom": 16, "hours_ojt": 0, "location": "Virtual", "notes": "No fee, required for first-time franchisees"},
+        {"subject": "New to Hospitality Owner Education", "hours_classroom": 20, "hours_ojt": 0, "location": "Virtual", "notes": "Up to $2,500/participant"},
+        {"subject": "Brand Learning Programs", "hours_classroom": 20, "hours_ojt": 4, "location": "Online and On-site", "notes": "No fee, mandatory for all staff"},
+        {"subject": "Industry Education", "hours_classroom": 20, "hours_ojt": 0, "location": "Virtual", "notes": "No fee, mandatory for owners"},
+        {"subject": "RISE Support", "hours_classroom": 1, "hours_ojt": 0, "location": "Online", "notes": "No fee, within 14 days of GM start"}
+      ]
+    }
+  ]
+}

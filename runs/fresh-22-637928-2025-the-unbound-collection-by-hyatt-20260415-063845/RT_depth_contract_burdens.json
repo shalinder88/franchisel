@@ -1,0 +1,176 @@
+{
+  "depth_pass": 2,
+  "title": "Contract Burden Depth",
+  "extraction_date": "2026-04-15",
+  "source_exhibit": "Exhibit C — Franchise Agreement",
+  "source_pages": [177, 266],
+  "agreement_pages": 90,
+  "burdens": {
+    "grant_and_term": {
+      "term": "20 years from 1st day of opening month",
+      "successor": "10 years on then-current terms (may be materially different)",
+      "term_extension_for_casualty": true,
+      "source_section": "1.2, 13.1"
+    },
+    "fee_obligations": {
+      "royalty": "7% of GRR from Channel Bookings, monthly",
+      "system_services_charges": "As determined by Hyatt Group",
+      "electronic_payment": "Required via EFT per System Standards",
+      "bank_change_notification": "Required before changing bank/institution",
+      "source_section": "Article 6, 3.3"
+    },
+    "site_and_construction": {
+      "site_approval_required": true,
+      "plan_approval_required": true,
+      "no_material_changes_without_consent": true,
+      "design_construction_standards_compliance": true,
+      "pip_compliance_for_conversions": true,
+      "opening_deadline_new": "24 months after signing FA",
+      "opening_deadline_conversion": "6 months after signing FA",
+      "extension_fee": "$10,000",
+      "capital_reserve": "5% of total operating revenue monthly",
+      "periodic_renovation_required": true,
+      "source_section": "2.1-2.6, 4.6, 4.7"
+    },
+    "training_obligations": {
+      "owner_briefing_mandatory": true,
+      "orientation_mandatory": true,
+      "gmu_mandatory": true,
+      "operations_training_mandatory": true,
+      "replacement_training_mandatory": true,
+      "supplemental_training_at_franchisor_discretion": true,
+      "all_costs_borne_by_franchisee": true,
+      "source_section": "3.1, 3.4"
+    },
+    "operational_obligations": {
+      "system_standards_compliance": "3,641 pages of standards, continuously updated",
+      "technology_system_compliance": true,
+      "unlimited_franchisor_data_access": true,
+      "approved_management_company_required": true,
+      "core_management_full_time_at_hotel": true,
+      "fb_operations_plan_approval": true,
+      "spa_operator_approval": true,
+      "quality_assurance_participation": true,
+      "loyalty_program_participation": true,
+      "insurance_requirements": "Per System Standards and Article 9",
+      "financial_reporting": "Per Article 7",
+      "source_section": "3.2, 4.1-4.8, Article 7, Article 9"
+    },
+    "termination_triggers": {
+      "curable": {
+        "public_health_safety": "24 hours to shut down",
+        "payment_insurance_failures": "10 days",
+        "tax_development_compliance": "30 days",
+        "guarantor_threshold": "60 days"
+      },
+      "non_curable": [
+        "Bankruptcy/insolvency",
+        "Judgment exceeding $100,000",
+        "Cease operations or lose possession",
+        "Contest IP ownership or attempt registration",
+        "Unauthorized transfer",
+        "Felony conviction",
+        "Actions reflecting adversely on franchisor/marks",
+        "False books or reports",
+        "Unauthorized disclosure of Confidential Information",
+        "Violation of law (including trade restrictions, anti-corruption)",
+        "Repeated defaults (3 defaults within 12 months)"
+      ],
+      "suspension_rights": "Upon default, franchisor may suspend CRS/GDS/ADS, remove from advertising, suspend fee reductions, refuse support",
+      "source_section": "15.1-15.3"
+    },
+    "transfer_restrictions": {
+      "approval_required_for": "FA, Hotel assets, Controlling Ownership Interests",
+      "conditions": [
+        "Transferee qualifies",
+        "All amounts paid",
+        "Training completed",
+        "Sign then-current agreement (may be materially different)",
+        "General release",
+        "Renovate/remodel/expand",
+        "Acceptable capital structure"
+      ],
+      "no_public_offerings": "Neither franchisee nor Controlling Owner may conduct public offering",
+      "right_of_first_offer": "Only if Exhibit C signed (strategic markets)",
+      "source_section": "12.2-12.9, Exhibit C"
+    },
+    "default_and_cross_default": {
+      "cross_default_provision": "Consequential Termination applies if 3+ Hyatt FAs terminated for default",
+      "consequential_multiplier": "150%",
+      "source_section": "Article 10, Note 5"
+    },
+    "noncompete": {
+      "during_term": "No formal covenant; may not be Competing Brand Owner (5+ hotel brand)",
+      "post_term": "None",
+      "must_refer_guests_to_hyatt_network": true,
+      "no_diverting_business": true,
+      "source_section": "4.2, 4.10, 4.11"
+    },
+    "guaranty": {
+      "scope": "Personal guarantee by Controlling Ownership Interest holders",
+      "type": "All obligations under FA — monetary and non-monetary",
+      "guarantor_monetary_threshold": true,
+      "threshold_increases_by_cpi_annually": true,
+      "annual_financial_reporting_required": true,
+      "source_section": "12.1, Guaranty"
+    },
+    "liquidated_damages": {
+      "formula": "Min(60, remaining months) x (3.5% + 7%) x Average Monthly Revenue",
+      "consequential_termination": "150% of standard formula",
+      "condemnation_termination": "No damages if Termination Agreement signed (with 24-month claw-back)",
+      "casualty_termination": "Optional if cost exceeds Damage Threshold; damages = lesser of formula or Net Recovery",
+      "source_section": "Article 10, 16.5"
+    },
+    "dispute_resolution": {
+      "arbitration": "Mandatory, within 10 miles of Hyatt's principal address (Chicago)",
+      "governing_law": "Illinois (subject to FAA and state overrides)",
+      "waiver_of_punitive_damages": true,
+      "waiver_of_jury_trial": true,
+      "limitation_of_claims": "1 year from discovery (subject to state overrides)",
+      "source_section": "14.1-14.6"
+    },
+    "insurance_requirements": {
+      "specified_in": "Article 9 and System Standards",
+      "failure_penalty": "Franchisor may obtain insurance and charge premiums + $200/room/year fee",
+      "source_section": "Article 9"
+    },
+    "indemnification": {
+      "franchisee_indemnifies_franchisor": "All claims from application, development, operation, breach, and proportionate share of multi-hotel defenses",
+      "failure_to_open_on_time": "Indemnify for canceled reservations and related costs",
+      "source_section": "8.3, 2.5"
+    },
+    "force_majeure": {
+      "present": true,
+      "affects_liquidated_damages_calculation": true,
+      "affects_average_monthly_revenue_determination": true,
+      "source_section": "Article 10"
+    },
+    "distinctive_clauses": [
+      {
+        "clause": "Hotel retains own Tradename",
+        "description": "Hotel operates under franchisee's own tradename with Unbound Collection by Hyatt affiliation — unique 'soft brand' structure",
+        "source_section": "1.1, 11.1"
+      },
+      {
+        "clause": "Guest Information is franchisor's property",
+        "description": "All guest information during term is franchisor's property. Franchisor has unlimited PMS access. Post-term: franchisee may use Hotel-generated guest info stored in PMS.",
+        "source_section": "11.5"
+      },
+      {
+        "clause": "Innovations belong to franchisor",
+        "description": "All innovations relating to Brand Hotels based on Hotel System elements are works-made-for-hire owned by franchisor.",
+        "source_section": "11.6"
+      },
+      {
+        "clause": "Competing Brand Owner prohibition (not traditional noncompete)",
+        "description": "Not a traditional noncompete — franchisee may own/operate other hotel brands. But neither franchisee nor management company may be a Competing Brand Owner.",
+        "source_section": "4.11"
+      },
+      {
+        "clause": "Revenue Manager certification",
+        "description": "Revenue manager must be certified within 90 days, may manage max 20 Brand Hotels, must have authorized system access.",
+        "source_section": "Item 15/4.6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "638049-2025",
+  "brand": "Novus Glass",
+  "tables": [
+    {
+      "table_id": "T5_initial_fees",
+      "item": 5,
+      "title": "Initial Fees Summary",
+      "source_pages": [15, 16, 17, 18],
+      "columns": ["Fee Type", "Amount", "Notes"],
+      "rows": [
+        ["Initial Franchise Fee", "$10,500", "Military discount $1,000; ProColor $2,500; NAPA 5-yr $7,000; 2nd franchise diff territory $5,250; waived 2nd same territory"],
+        ["Re-Franchise Fee", "$4,000 ($2,500 NAPA 5-yr)", "At re-franchise; $2,500 for additional simultaneous re-franchises"],
+        ["Initial Training Fee", "$14,000 ($10,000 ProColor)", "Covers 2 persons; extra person $2,000 per program"],
+        ["Vehicle Lease Initial", "$3,800-$4,100", "Includes $2,500 deposit + 1st payment"],
+        ["Vehicle Shipping", "$800-$1,700", "If delivery to market needed"],
+        ["Equipment Packages", "$13,500-$25,500", "Repair bridge, replacement tools, glass repair, vehicle office"],
+        ["Software Package", "$3,000", "First year POS + accounting license"],
+        ["Franchise ID Package", "$2,700-$4,200", "3 uniforms + basic printing"],
+        ["Marketing Start-Up", "$7,000 ($4,000 ProColor)", "Direct mail, fleet list, search marketing, website"],
+        ["Software Conversion", "$350", "Re-franchise only; if converting software"],
+        ["Area Development Fee", "$10,500 x # units", "Credited against individual franchise fees"]
+      ],
+      "table_notes": [
+        "All fees nonrefundable",
+        "AGSC-certified technician credit: $2,000 less $500 testing fee"
+      ]
+    },
+    {
+      "table_id": "T6_other_fees",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [19, 20, 21, 22, 23, 24],
+      "columns": ["Fee Type", "Amount", "When Due", "Remarks"],
+      "rows": [
+        ["Royalty Fees", "6% of Gross Revenues or Minimum Monthly ($350 mo 4-6, $500 mo 7+)", "Monthly (min on 1st, balance on 10th)", "MSO credit program available for multi-store operators"],
+        ["Marketing Contributions", "2% of Gross Revenues", "Monthly", "Paid to franchisor marketing fund"],
+        ["Local Advertising", "4% of Gross Revenues minimum", "As incurred", "Paid to local suppliers, not franchisor unless underspent"],
+        ["Vehicle Lease", "$1,300-$1,600/month", "Monthly (1st payment on delivery, then 10th)", "Includes $100 admin fee + taxes; 60-month term"],
+        ["Vehicle Shipping/Delivery", "$800-$1,700 one-time", "On delivery/return", "If delivery outside market needed"],
+        ["Vehicle Maintenance", "Actual costs", "On demand", "Franchisor may elect to have repairs done"],
+        ["Vehicle Default Fees", "Varies", "On demand", "Termination value = PV of all future payments"],
+        ["Unpaid Fines/Liens on Vehicle", "Varies + 15% admin fee", "On demand", "Franchisor may pay and charge back"],
+        ["Website Fees", "$100/hr (first 2), $65/hr after", "As incurred", "Only for non-standard additions"],
+        ["Email Fees", "$6.30-$9.18/month per account", "Monthly", "At least 1 required"],
+        ["Audit Reimbursement", "Actual costs", "Within 5 days of invoice", "Only if understatement >$500/12 months"],
+        ["Meetings", "$1,000-$1,500 per person", "On demand", "2 meetings/year; plus travel/lodging/food"],
+        ["Other Training", "$0-$5,000", "At training time", "$5,000 for replacement employee training"],
+        ["NOVUS Success Team", "Up to $1,000/week + travel", "On completion", "Business coaching at franchisor discretion"],
+        ["EDI Transaction", "Up to $2/transaction", "Monthly", "Insurance/TPA electronic notifications"],
+        ["Branding Non-Compliance", "Up to $500/month", "Monthly", "Until signage/brand standards met"],
+        ["TAG Network", "$300 initial + $15-$25/referral", "As incurred", "Claims referral service (affiliate operated)"],
+        ["Fixed/Mobile Conversion", "$250", "Before conversion", ""],
+        ["Transfer Fee", "$7,500 ($5,000 existing franchisee; $5,000 NAPA 5-yr)", "Before transfer", "Plus training fee for transferee if not existing"],
+        ["Re-Franchise Fee", "$4,000 ($2,500 NAPA 5-yr)", "At re-franchise", "$2,500 for additional simultaneous re-franchises"],
+        ["Territory Modification", "$2,500", "Within 10 days of approval", "Only if franchisee requests change"],
+        ["POS Software License", "$300-$350/month (5 users)", "Monthly (10th)", "Additional users $25-$30/mo each"],
+        ["Shop Onboarding Fee", "$300-$350 per location", "As incurred", "Software implementation/update"],
+        ["NAGS License", "$700-$950/user/year", "Monthly (10th)", "Required for POS software"],
+        ["Liquidated Damages", "60 months x avg monthly GR", "Immediately", "Only on abandonment termination"],
+        ["Interest on Late Payments", "1.5%/month or legal max", "On demand", "On all past due amounts"],
+        ["NSF Charge", "$100", "On demand", "Subject to state law"],
+        ["Late Report/Non-Access Fee", "$100 (up to 25% annual increase)", "On demand", "For late Gross Revenues reports or withholding data access"],
+        ["Supplier Approval", "$250 minimum or actual cost", "On demand", "To test quality of alternate suppliers"]
+      ],
+      "table_notes": [
+        "(1) All fees payable to and collected by Novus; all nonrefundable; uniformly imposed",
+        "(2) Minimum Monthly Royalty begins month 4 at $350, increases to $500 month 7; conversion businesses start at $500",
+        "(3) Gross Revenues = total gross dollar sales excluding sales/use/receipts taxes",
+        "(4) Additional $200/month royalty if operate past term without re-franchising",
+        "(5) Must authorize direct bank transfer for royalty and marketing",
+        "(6) MSO Royalty Credit Program for 2+ retail locations; can be modified/discontinued at any time",
+        "(7) Local advertising cooperative may be required if 2+ franchisees in market",
+        "(8) Vehicle Leasing Program mandatory; sublease from Mondofix USA/Doering Leasing; delay addendum available at sole discretion",
+        "(9) Vehicle shipping both ways; delay addendum eliminates initial vehicle payments to franchisor",
+        "(10) Vehicle default: termination value = PV of all payments at 3.5% discount + estimated residual; plus collections costs",
+        "(11) Meeting non-attendance billed retroactively",
+        "(12) Replacement employee training: $5,000 per training; incomplete training: additional $500",
+        "(13) Re-franchise of multiple: $4,000 first + $2,500 each additional",
+        "(14) Software add-ons: QuickBooks integration $250-$350/location; Tech Route Direct $50-$60/user/mo; mobile app $20-$35/user/mo; MS Office $20-$25/user/mo"
+      ]
+    },
+    {
+      "table_id": "T7_retail_investment",
+      "item": 7,
+      "title": "Estimated Initial Investment — Leased Retail Location Franchise",
+      "source_pages": [28],
+      "columns": ["Type of Expenditure", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Franchise Fee", "$10,500", "$10,500", "Lump Sum", "Upon Signing", "Novus"],
+        ["Initial Training Fee", "$14,000", "$14,000", "Lump Sum", "Upon Signing", "Novus"],
+        ["Training Travel (2 persons)", "$3,000", "$9,000", "Lump Sum", "On Pay Days", "Employees/Suppliers"],
+        ["First Month Rent", "$1,000", "$4,200", "Lump Sum", "Before Start", "Landlord"],
+        ["Leasehold Improvements", "$2,500", "$40,000", "Lump Sum", "Before Start", "Suppliers"],
+        ["Furniture and Fixtures", "$0", "$25,000", "As Incurred", "Before Start", "Suppliers"],
+        ["Exterior Building Signage", "$5,000", "$10,000", "Lump Sum", "Within 30 Days", "Suppliers"],
+        ["Vehicle", "$3,800", "$50,000", "Lump Sum", "Before Start", "Novus/Suppliers"],
+        ["Vehicle Shipping/Delivery", "$0", "$1,700", "Lump Sum", "Upon Delivery", "Novus"],
+        ["Equipment Packages", "$13,500", "$25,500", "Lump Sum", "Upon Signing", "Novus"],
+        ["Additional Tools and Supplies", "$1,000", "$2,500", "Lump Sum", "Before Start", "Suppliers"],
+        ["Inventory and Supplies", "$0", "$10,000", "Lump Sum", "Before Start", "Novus/Suppliers"],
+        ["Software Package", "$3,000", "$3,000", "Lump Sum", "Before Start", "Novus"],
+        ["Calibration Package", "$0", "$11,990", "Lump Sum", "Before Start", "Supplier"],
+        ["Franchise ID Package", "$2,700", "$4,200", "Lump Sum", "Upon Signing", "Novus"],
+        ["Initial Marketing Start-Up", "$7,000", "$7,000", "Lump Sum", "Upon Signing", "Novus"],
+        ["Initial Advertising Campaign", "$0", "$5,000", "As Incurred", "Initial 3 Months", "Suppliers"],
+        ["Insurance Premiums", "$6,000", "$10,000", "Lump Sum", "Before Start", "Insurance Co"],
+        ["Professional Fees", "$0", "$3,000", "As Incurred", "As Incurred", "Supplier"],
+        ["Security Deposits", "$0", "$3,000", "Lump Sum", "Before Start", "Landlord"],
+        ["Additional Funds (3 Months)", "$17,000", "$35,000", "As Incurred", "Initial 3 Months", "Various"],
+        ["TOTAL", "$90,000", "$284,590", "", "", ""]
+      ],
+      "table_notes": [
+        "All payments nonrefundable",
+        "High end vehicle assumes purchase ($50K new); low end assumes lease ($3,800)",
+        "High end leasehold assumes new buildout; low end assumes conversion",
+        "Additional funds include 2 months rent, 2 months vehicle payments, employee wages, operating costs, potential lump-sum vehicle tax"
+      ]
+    },
+    {
+      "table_id": "T7_mobile_investment",
+      "item": 7,
+      "title": "Estimated Initial Investment — Mobile Franchise",
+      "source_pages": [29],
+      "columns": ["Type of Expenditure", "Low", "High"],
+      "rows": [
+        ["Initial Franchise Fee", "$10,500", "$10,500"],
+        ["Initial Training Fee", "$14,000", "$14,000"],
+        ["Training Travel (2 persons)", "$3,000", "$9,000"],
+        ["Vehicle", "$3,800", "$50,000"],
+        ["Vehicle Shipping/Delivery", "$0", "$1,700"],
+        ["Equipment Packages", "$13,500", "$13,500"],
+        ["Additional Tools and Supplies", "$1,000", "$2,500"],
+        ["Inventory and Supplies", "$0", "$5,000"],
+        ["Software Package", "$3,000", "$3,000"],
+        ["Calibration Package", "$0", "$11,990"],
+        ["Franchise ID Package", "$2,700", "$4,200"],
+        ["Initial Marketing Start-Up", "$7,000", "$7,000"],
+        ["Initial Advertising Campaign", "$0", "$5,000"],
+        ["Insurance Premiums", "$6,000", "$10,000"],
+        ["Professional Fees", "$0", "$3,000"],
+        ["Additional Funds (3 Months)", "$5,000", "$19,000"],
+        ["TOTAL", "$69,500", "$169,390"]
+      ],
+      "table_notes": [
+        "All payments nonrefundable",
+        "No rent, leasehold improvements, furniture/fixtures, signage, or security deposits (mobile concept)"
+      ]
+    },
+    {
+      "table_id": "T19_mobile_1unit_distribution",
+      "item": 19,
+      "title": "Table 1(a): 33 Franchisees with 1 Mobile Repair and Replacement Franchise — Gross Sales Distribution",
+      "source_pages": [66],
+      "columns": ["12 Month Gross Sales Range", "Number of Franchise Owners", "Percentage"],
+      "rows": [
+        ["$100,000 or less", "6", "18.2%"],
+        ["$100,001 to $200,000", "6", "18.2%"],
+        ["$200,001 to $300,000", "5", "15.2%"],
+        ["$300,001 to $400,000", "1", "3.0%"],
+        ["More than $400,000", "15", "45.5%"]
+      ],
+      "table_notes": [
+        "Period: January 1 - December 31, 2024",
+        "33 franchisees included; excludes 2 who closed during 2024, 3 who opened during 2024, 1 who did not operate full year, 4 who had not provided complete figures"
+      ]
+    },
+    {
+      "table_id": "T19_mobile_1unit_summary",
+      "item": 19,
+      "title": "Table 1(b): Mobile 1-Unit Summary Statistics",
+      "source_pages": [66],
+      "columns": ["Metric", "Amount", "Number At/Above", "Percentage At/Above"],
+      "rows": [
+        ["Average Reported Gross Sales", "$427,168", "11", "33.3%"],
+        ["Median Reported Gross Sales", "$276,856", "17", "51.5%"]
+      ],
+      "table_notes": [
+        "Highest: $1,773,255; Lowest: $0",
+        "Gross Sales only — no cost data disclosed"
+      ]
+    },
+    {
+      "table_id": "T19_mobile_2unit",
+      "item": 19,
+      "title": "Table 2: 1 Franchisee with 2 Mobile Franchises",
+      "source_pages": [67],
+      "columns": ["Metric", "Amount", "Number At/Above", "Percentage At/Above"],
+      "rows": [
+        ["Average Reported Gross Sales", "$731,007", "1", "100.0%"],
+        ["Median Reported Gross Sales", "$731,007", "1", "100.0%"]
+      ],
+      "table_notes": [
+        "Only 1 franchisee in this category; combined total of both franchises",
+        "Highest and Lowest both $731,007"
+      ]
+    },
+    {
+      "table_id": "T19_retail_1unit_distribution",
+      "item": 19,
+      "title": "Table 3(a): 21 Franchisees with 1 Retail Location — Gross Sales Distribution",
+      "source_pages": [67, 68],
+      "columns": ["12 Month Gross Sales Range", "Number of Franchise Owners", "Percentage"],
+      "rows": [
+        ["$200,000 or less", "1", "4.8%"],
+        ["$200,001 to $300,000", "2", "9.5%"],
+        ["$300,001 to $500,000", "4", "19.0%"],
+        ["$500,001 to $1,000,000", "8", "38.1%"],
+        ["More than $1,000,000", "6", "28.6%"]
+      ],
+      "table_notes": [
+        "Period: January 1 - December 31, 2024",
+        "21 franchisees included; excludes 3 who opened during 2024, 7 who had not provided complete figures",
+        "3 of 21 also operated 5 mobile franchises; mobile data combined with retail"
+      ]
+    },
+    {
+      "table_id": "T19_retail_1unit_summary",
+      "item": 19,
+      "title": "Table 3(b): Retail 1-Unit Summary Statistics",
+      "source_pages": [68],
+      "columns": ["Metric", "Amount", "Number At/Above", "Percentage At/Above"],
+      "rows": [
+        ["Average Reported Gross Sales", "$791,251", "10", "47.6%"],
+        ["Median Reported Gross Sales", "$702,787", "10", "47.6%"]
+      ],
+      "table_notes": [
+        "Highest: $1,695,714; Lowest: $68,157"
+      ]
+    },
+    {
+      "table_id": "T19_retail_2unit",
+      "item": 19,
+      "title": "Table 4: 12 Franchisees with 2 Retail Locations",
+      "source_pages": [68, 69],
+      "columns": ["Metric", "Amount", "Number At/Above", "Percentage At/Above"],
+      "rows": [
+        ["Average Reported Gross Sales", "$1,501,431", "5", "41.7%"],
+        ["Median Reported Gross Sales", "$1,338,360", "6", "50.0%"]
+      ],
+      "table_notes": [
+        "Combined total of both retail locations per franchisee",
+        "Highest: $2,541,791; Lowest: $881,445",
+        "2 of 12 also operated 5 mobile franchises; mobile data combined"
+      ]
+    },
+    {
+      "table_id": "T20_systemwide_summary",
+      "item": 20,
+      "title": "Table 1A: Systemwide Outlet Summary 2022-2024",
+      "source_pages": [70],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "151", "148", "-3"],
+        ["Franchised", "2023", "148", "125", "-23"],
+        ["Franchised", "2024", "125", "128", "+3"],
+        ["Company-Owned", "2022", "2", "2", "0"],
+        ["Company-Owned", "2023", "2", "0", "-2"],
+        ["Company-Owned", "2024", "0", "0", "0"],
+        ["Total", "2022", "153", "150", "-3"],
+        ["Total", "2023", "150", "125", "-25"],
+        ["Total", "2024", "125", "128", "+3"]
+      ],
+      "table_notes": [
+        "All numbers as of December 31",
+        "2022 and 2023 include bolt-on licensees",
+        "None had signed Area Development Agreements"
+      ]
+    },
+    {
+      "table_id": "T20_systemwide_with_speedy",
+      "item": 20,
+      "title": "Table 1B: Systemwide Including Speedy Auto Glass Affiliate",
+      "source_pages": [70],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "151", "148", "-3"],
+        ["Franchised", "2023", "148", "125", "-23"],
+        ["Franchised", "2024", "125", "128", "+3"],
+        ["Company-Owned", "2022", "27", "27", "0"],
+        ["Company-Owned", "2023", "27", "28", "+1"],
+        ["Company-Owned", "2024", "28", "27", "-1"],
+        ["Total", "2022", "178", "175", "-3"],
+        ["Total", "2023", "175", "153", "-23"],
+        ["Total", "2024", "153", "155", "+2"]
+      ],
+      "table_notes": [
+        "Includes Speedy Auto Glass locations owned by affiliate",
+        "Speedy Washington locations converted from Novus in 2023"
+      ]
+    },
+    {
+      "table_id": "T20_transfers",
+      "item": 20,
+      "title": "Table 2: Transfers of Outlets 2022-2024",
+      "source_pages": [71],
+      "columns": ["State", "2022", "2023", "2024"],
+      "rows": [
+        ["Alabama", "1", "0", "0"],
+        ["Arizona", "0", "1", "0"],
+        ["Colorado", "1", "0", "1"],
+        ["Indiana", "0", "1", "0"],
+        ["Nebraska", "0", "0", "2"],
+        ["Nevada", "0", "1", "0"],
+        ["Texas", "0", "0", "1"],
+        ["Wyoming", "2", "0", "0"],
+        ["Totals", "4", "3", "4"]
+      ],
+      "table_notes": ["No activity in states not listed"]
+    },
+    {
+      "table_id": "T20_projected_openings",
+      "item": 20,
+      "title": "Table 5: Projected New Franchised Outlets as of 12/31/2024",
+      "source_pages": [76],
+      "columns": ["State", "Signed Not Opened", "Projected New Franchised 2025", "Projected Company-Owned 2025"],
+      "rows": [
+        ["California", "0", "2", "0"],
+        ["Illinois", "0", "1", "0"],
+        ["Pennsylvania", "0", "1", "0"],
+        ["Missouri", "0", "1", "0"],
+        ["Tennessee", "0", "1", "0"],
+        ["Texas", "1", "2", "0"],
+        ["Totals", "1", "8", "0"]
+      ],
+      "table_notes": ["8 new franchised outlets expected in 2025"]
+    },
+    {
+      "table_id": "T21_balance_sheet",
+      "item": 21,
+      "title": "Balance Sheet — FY2024 vs FY2023",
+      "source_pages": [98],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        ["Cash", "$920,901", "$1,496,253"],
+        ["Cash in trust", "$13,088", "$43,780"],
+        ["Accounts receivable (net)", "$612,854", "$552,336"],
+        ["AR - Company under common control", "$420", "$3,970"],
+        ["AR - Parent company", "$100,000", "$0"],
+        ["Prepaid expenses", "$143,517", "$161,245"],
+        ["Total current assets", "$1,790,780", "$2,257,584"],
+        ["Advances to company under common control", "$518,728", "$1,033,233"],
+        ["Advances to parent company", "$283,449", "$0"],
+        ["Rights", "$300,000", "$300,000"],
+        ["Right-of-use assets", "$226,233", "$0"],
+        ["Deferred income tax asset", "$119,924", "$219,385"],
+        ["Total assets", "$3,239,114", "$3,810,202"],
+        ["AP and accrued liabilities", "$273,777", "$389,274"],
+        ["AP - Ultimate parent company", "$131,885", "$195,430"],
+        ["Amounts to remit to franchisees", "$13,088", "$43,780"],
+        ["Advances from parent company", "$0", "$546,457"],
+        ["Deferred revenue", "$1,265,333", "$1,736,307"],
+        ["Current lease liabilities", "$77,461", "$0"],
+        ["Total current liabilities", "$1,761,544", "$2,911,248"],
+        ["Deferred revenue (non-current)", "$109,400", "$79,550"],
+        ["Lease liabilities (non-current)", "$148,772", "$0"],
+        ["Total liabilities", "$2,019,716", "$2,990,798"],
+        ["Net investment from parent", "$532,753", "$432,753"],
+        ["Retained earnings", "$686,645", "$386,651"],
+        ["Total net membership interest", "$1,219,398", "$819,404"]
+      ],
+      "table_notes": [
+        "Audited by Ernst & Young",
+        "AR allowance for expected credit losses: $311,654 (2024), $283,658 (2023)",
+        "Rights ($300K) represent exclusive area developer rights for US, not amortized (indefinite life)"
+      ]
+    },
+    {
+      "table_id": "T21_income_statement",
+      "item": 21,
+      "title": "Statement of Comprehensive Income — FY2024 vs FY2023",
+      "source_pages": [99],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        ["Royalties", "$3,134,301", "$3,317,951"],
+        ["Contributions from franchisees", "$1,953,364", "$1,208,685"],
+        ["Allowances/discounts from vendors", "$1,166,274", "$1,106,192"],
+        ["Product sales", "$97,693", "$106,436"],
+        ["Sublease income from franchisees", "$39,243", "$0"],
+        ["Other revenues", "$51,400", "$97,066"],
+        ["Total revenue", "$6,442,275", "$5,836,330"],
+        ["Direct operating expenses", "$2,988,440", "$2,355,705"],
+        ["Selling and administrative expenses", "$2,265,492", "$1,828,798"],
+        ["Cost of products sold", "$82,765", "$91,499"],
+        ["Total expenses", "$5,336,697", "$4,276,002"],
+        ["Income before income taxes", "$1,105,578", "$1,560,328"],
+        ["Income tax expense", "$305,584", "$364,661"],
+        ["Net income", "$799,994", "$1,195,667"],
+        ["Distributions to parent", "($500,000)", "($1,400,000)"],
+        ["Retained earnings (end)", "$686,645", "$386,651"]
+      ],
+      "table_notes": [
+        "Royalty revenue declined 5.5% YoY despite unit growth — reflects lower Gross Revenues or timing",
+        "Contributions from franchisees up 61.6% YoY — likely one-time fees from new/re-franchising activity",
+        "Advertising costs: $1,114,487 (2024) vs $629,115 (2023)"
+      ]
+    },
+    {
+      "table_id": "T21_cash_flow",
+      "item": 21,
+      "title": "Statement of Cash Flows — FY2024 vs FY2023",
+      "source_pages": [100],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        ["Net income", "$799,994", "$1,195,667"],
+        ["Deferred income tax", "$99,461", "($141,586)"],
+        ["Net change in cash in trust", "$30,692", "($15,397)"],
+        ["Change in accounts receivable", "($156,968)", "$135,369"],
+        ["Change in prepaid expenses", "$17,728", "($38,870)"],
+        ["Change in AP and accrued liabilities", "($179,042)", "($84,638)"],
+        ["Change in amounts to remit to franchisees", "($30,692)", "$15,397"],
+        ["Change in deferred revenue", "($441,124)", "$328,287"],
+        ["Cash from operating activities", "$140,049", "$1,394,229"],
+        ["Increase in parent investment", "$100,000", "$0"],
+        ["Distributions to parent", "($500,000)", "($1,400,000)"],
+        ["Net change in parent advances", "($829,906)", "$203,641"],
+        ["Net change in common control advances", "$514,505", "$104,650"],
+        ["Cash from financing activities", "($715,401)", "($1,091,709)"],
+        ["Cash beginning of year", "$1,496,253", "$1,193,733"],
+        ["Net change in cash", "($575,352)", "$302,520"],
+        ["Cash end of year", "$920,901", "$1,496,253"]
+      ],
+      "table_notes": [
+        "Operating cash flow dropped significantly: $140K (2024) vs $1.39M (2023)",
+        "Deferred revenue declined $441K — prior year initial fees being recognized",
+        "Advances to parent company: new $283K in 2024 (was $0 in 2023)",
+        "Advances to common control entity reduced from $1.03M to $519K"
+      ]
+    },
+    {
+      "table_id": "T11_training",
+      "item": 11,
+      "title": "Training Program Summary",
+      "source_pages": [43],
+      "columns": ["Subject", "Classroom Hours", "On-the-Job Hours", "Location"],
+      "rows": [
+        ["Business Operations", "4", "0", "Online"],
+        ["Sales Skills Training", "4", "0", "Online"],
+        ["Business Management", "4", "0", "Online"],
+        ["Advertising and Marketing", "18-22", "0", "Online and Webinar"],
+        ["Glass Repair Training", "20-22", "2-4", "St. Paul, MN"],
+        ["Glass Replacement Training", "6-10", "54-58", "Regional Training Centers or St. Paul, MN"],
+        ["Customer Service Training", "6 (+4 online)", "6", "Regional Training Centers or St. Paul, MN"]
+      ],
+      "table_notes": [
+        "Regional Training Centers: Concord CA, Atmore AL, Newton IA, Longmont CO",
+        "Total estimated: 62-72 classroom hours + 62-68 on-the-job hours",
+        "Trainers: Gary Neves (30+ years glass experience, franchisee since 2014), Andrew Kwang (5-year franchisee, expanded 1 to 3 locations)",
+        "Marketing training: Cameron Mitchell (10+ years advertising/marketing experience)",
+        "Franchisor may substitute OJT for classroom; may offer training electronically"
+      ]
+    },
+    {
+      "table_id": "T11_marketing_fund_spend",
+      "item": 11,
+      "title": "Marketing Fund Expenditures FY2024",
+      "source_pages": [46],
+      "columns": ["Category", "Percent"],
+      "rows": [
+        ["Advertising Placements", "44%"],
+        ["Trade Show and Events", "29%"],
+        ["Online Marketing Program Maintenance/Customer Service/Tracking", "18%"],
+        ["General Administration", "4%"],
+        ["Reputation Management", "3%"],
+        ["Social Media Campaigns", "2%"]
+      ],
+      "table_notes": [
+        "Marketing Fund is NOT audited",
+        "Report available to franchisees on request within 120 days of year-end",
+        "Fund administered by franchisor; advisory council of 5 franchisees"
+      ]
+    }
+  ]
+}

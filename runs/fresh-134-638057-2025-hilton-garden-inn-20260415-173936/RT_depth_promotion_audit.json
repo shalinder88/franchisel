@@ -1,0 +1,65 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_date": "2026-04-15",
+  "brand": "Hilton Garden Inn",
+  "filing_id": "638057-2025",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "Jury trial waiver AND punitive damages waiver are explicit in FA §17.0",
+      "source_reader_report": "Pass E, Dispute Resolution section noted 'Not explicitly stated in standard FA'",
+      "source_pdf_page": 150,
+      "promoted_to": "dispute_resolution.jury_trial_waiver and dispute_resolution.punitive_damages_waiver in canonical",
+      "action": "Corrected canonical — jury trial waiver IS present in FA §17.0"
+    },
+    {
+      "id": "P2",
+      "fact": "Interest rate on overdue amounts is 18% per annum (FA §16.15), separate from the 1.5%/month service charge",
+      "source_reader_report": "Pass B, Item 6 table mentions 1.5%/month late payment",
+      "source_pdf_page": 195,
+      "promoted_to": "ongoing_fees.interest_rate_overdue in canonical",
+      "action": "Added 18% per annum interest rate to canonical"
+    },
+    {
+      "id": "P3",
+      "fact": "Attorneys' fees: prevailing party entitled to recover reasonable fees, expert fees, court costs (FA §16.14)",
+      "source_reader_report": "Not explicitly captured in canonical",
+      "source_pdf_page": 195,
+      "promoted_to": "dispute_resolution.attorneys_fees in canonical",
+      "action": "Added attorneys' fees provision to canonical"
+    },
+    {
+      "id": "P4",
+      "fact": "Restricted Area template in FA Addendum includes detailed carve-outs: other brands, 4+ hotel chains, gaming, timeshare, existing hotels",
+      "source_reader_report": "Pass D noted 'may be negotiated' but did not detail carve-outs",
+      "source_pdf_page": 198,
+      "promoted_to": "territory.restricted_area_carveouts in canonical",
+      "action": "Added detailed Restricted Area carve-out language to canonical"
+    },
+    {
+      "id": "P5",
+      "fact": "Confidentiality of negotiated terms clause (FA §16.18) — terms negotiated between parties are confidential",
+      "source_reader_report": "Not captured",
+      "source_pdf_page": 150,
+      "promoted_to": "contract_terms.confidentiality_of_negotiated_terms in canonical",
+      "action": "Added to canonical"
+    },
+    {
+      "id": "P6",
+      "fact": "Attorney-in-fact appointment: franchisee appoints franchisor as exclusive attorney-in-fact for all trademark disputes (FA §9.4.2)",
+      "source_reader_report": "Not captured",
+      "source_pdf_page": 185,
+      "promoted_to": "trademark.attorney_in_fact_appointment in canonical",
+      "action": "Added to canonical"
+    },
+    {
+      "id": "P7",
+      "fact": "Revenue Management Software (GRO/IDeaS) pricing recommendations are NOT mandatory — franchisee not required to adopt them",
+      "source_reader_report": "Pass C noted GRO system but did not highlight opt-out",
+      "source_pdf_page": 56,
+      "promoted_to": "supplier_control.gro_pricing_not_mandatory in canonical",
+      "action": "Added to canonical — important given pending antitrust litigation"
+    }
+  ],
+  "total_promoted": 7
+}

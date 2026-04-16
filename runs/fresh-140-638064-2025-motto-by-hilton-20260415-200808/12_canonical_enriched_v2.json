@@ -1,0 +1,108 @@
+{
+  "enrichment_version": "v2",
+  "extraction_date": "2026-04-15",
+  "filing_id": "638064-2025",
+  "brand": "Motto by Hilton",
+  "item21_financial_structure": {
+    "revenue_recognition": "Franchise royalty fees recognized as services provided (sales-based royalty). Sales/COO fees recognized over contract term. Termination fees recognized on receipt.",
+    "operating_margin_2024": 99.2,
+    "operating_margin_2023": 99.6,
+    "revenue_growth_yoy_2024": 9.1,
+    "revenue_growth_yoy_2023": 12.0,
+    "cash_position_2024": 317000,
+    "intercompany_receivables_2024": 703943000,
+    "deferred_revenue_total_2024": 558880000,
+    "franchise_contracts_net_2024": 392748000,
+    "allowance_credit_losses_ar_2024": 10411000,
+    "allowance_credit_losses_ar_2023": 7339000,
+    "distribution_pattern": "Nearly all earnings distributed to parent annually ($1.5B in 2024)"
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "cash": 317,
+      "accounts_receivable_net": 135970,
+      "intercompany_receivables_current": 703943,
+      "total_current_assets": 872512,
+      "franchise_contracts_net": 392748,
+      "total_assets": 1269897,
+      "franchise_deposits": 18498,
+      "current_intercompany_payables": 89994,
+      "deferred_revenue_current": 41598,
+      "total_current_liabilities": 167610,
+      "deferred_revenue_noncurrent": 517282,
+      "total_liabilities": 692892,
+      "contributed_capital": 310000,
+      "retained_earnings": 528936,
+      "members_equity": 577005
+    },
+    "income_statement_2024": {
+      "franchise_royalty_fees": 1434453,
+      "franchise_sales_coo_fees": 49340,
+      "termination_fees_other": 18276,
+      "total_revenue": 1502069,
+      "operating_expenses": 1354,
+      "credit_loss_provision": 6248,
+      "amortization": 3751,
+      "total_expenses": 11353,
+      "operating_income": 1490716,
+      "net_income": 1487571
+    },
+    "cash_flow_2024": {
+      "operating_cash_flow": 1516760,
+      "investing_cash_flow": -80050,
+      "financing_cash_flow": -1441744,
+      "distributions": -1500000,
+      "ending_cash": 317
+    },
+    "units": "thousands USD"
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Marketing fund not separately audited", "severity": "medium", "source": "Item 6 Note 2, p. 38"},
+    {"id": "U2", "description": "No FPR despite $19M-$91M investment", "severity": "medium", "source": "Item 19, p. 88"},
+    {"id": "U3", "description": "Early-stage brand risk (5 hotels after 6+ years)", "severity": "medium", "source": "Item 20, pp. 88-90"},
+    {"id": "U4", "description": "Entity guarantees Hilton parent debt; all assets pledged", "severity": "high", "source": "Note 7, p. 109"},
+    {"id": "U5", "description": "New brand boilerplate in Item 7 Note 22 despite operating hotels", "severity": "low", "source": "p. 44"},
+    {"id": "U6", "description": "Subsequent events date typo (2024 vs 2025)", "severity": "low", "source": "Note 9, p. 109"},
+    {"id": "U7", "description": "Gag clause limits due diligence with tiny system", "severity": "medium", "source": "Item 20, p. 90"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "New brand boilerplate vs 6+ years operating", "items_involved": ["Item 7", "Item 1"], "resolution_status": "Likely outdated boilerplate"},
+    {"id": "C2", "description": "Subsequent events date discrepancy", "items_involved": ["Note 9", "Cover"], "resolution_status": "Presumed typo"}
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Puerto Rico", "Rhode Island", "Virginia", "Washington"],
+    "forum_selection_voided": ["Michigan", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+    "liquidated_damages_voided": ["Minnesota", "North Dakota"],
+    "general_release_limited": ["Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington"],
+    "noncompete_limited": ["Washington"],
+    "termination_protections": ["Maryland", "Michigan", "Minnesota", "New York", "Virginia", "Washington"]
+  },
+  "item6_fee_detail": {
+    "technology_fees": [
+      {"name": "OnQ Connectivity", "monthly_low": 400, "monthly_high": 600, "type": "required"},
+      {"name": "Hardware/Software Maintenance", "monthly_low": 1932, "monthly_high": 5625, "type": "required"},
+      {"name": "OnQ Email", "monthly_per_user": 7.92, "mobile_monthly": 12.50, "type": "required", "min_accounts": 3},
+      {"name": "Connected Room Maintenance", "monthly_low": 718, "monthly_high": 1058, "type": "required"},
+      {"name": "Delphi System", "annual_per_user": 858, "type": "required"}
+    ],
+    "quality_assurance_fees": [
+      {"name": "Brand Non-Compliance Fee", "per_room_low": 65, "per_room_high": 145, "cap_6month": 50000},
+      {"name": "Brand Non-Compliance Re-Evaluation", "max": 4500},
+      {"name": "Special Audit Fee", "amount": 5500},
+      {"name": "Plans and Designs Late Fee", "amount": 8000, "frequency": "every 90 days"},
+      {"name": "PIP/Renovation Failure Fee", "amount": 16000, "frequency": "every 6 months"},
+      {"name": "Stay Score Failure", "per_room_max": 300, "or_grr_percent": 0.5},
+      {"name": "Service Quality Improvement", "low_6month": 20000, "high_6month": 50000}
+    ],
+    "distribution_program_fees": [
+      {"name": "Hilton Honors", "rate": "4.3%", "basis": "eligible guest folio", "type": "required"},
+      {"name": "Hilton Advance", "rate": "1.35%", "basis": "Digital Direct Revenue", "cap": "$30/stay", "type": "required"},
+      {"name": "ResMax", "rate": "5.4%-5.9%", "basis": "consumed revenue", "type": "required"},
+      {"name": "Travel Clubs", "rate": "$0.30/room + 10% commission", "type": "required"},
+      {"name": "Group Preferred Partnership", "rate": "Up to $1.80/room night + commission", "type": "optional"},
+      {"name": "Online Group Event Booking", "rate": "Up to 2% of Booked Reservation Charges", "type": "optional"},
+      {"name": "Consortia Program", "rate": "Up to $3.00/room night + 10% commission", "type": "optional"},
+      {"name": "Hilton For Business", "rate": "Up to 3% GRR per eligible stay", "type": "optional"}
+    ]
+  }
+}

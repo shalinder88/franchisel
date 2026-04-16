@@ -1,0 +1,149 @@
+{
+  "document_identity": {
+    "fdd_id": "637910-2025",
+    "brand": "Sweat440",
+    "franchisor_legal_name": "Sweat440 Franchise Systems, LLC",
+    "state_filed": "Wisconsin",
+    "issuance_date": "2025-03-11",
+    "pdf_pages": 177,
+    "confidence": "high"
+  },
+  "franchisor": {
+    "legal_name": "Sweat440 Franchise Systems, LLC",
+    "entity_type": "Florida limited liability company",
+    "formation_date": "2018-11",
+    "principal_address": "1919 Purdy Avenue, Miami Beach, Florida 33139",
+    "phone": "888-507-9328",
+    "parent": "Brickhouse Athletics, LLC",
+    "affiliates": ["LeadTeam, LLC"],
+    "franchising_since": "2019-07"
+  },
+  "fees": {
+    "initial_franchise_fee": 60000,
+    "royalty_rate": "7%",
+    "royalty_minimum_weekly": 350,
+    "brand_fund_monthly": 420,
+    "local_advertising_monthly_min": 1200,
+    "marketing_management_monthly": 1200,
+    "software_license_monthly": 695,
+    "call_center_monthly": 1800,
+    "successor_fee": 10000,
+    "minimum_monthly_fixed_burden": 6832
+  },
+  "investment": {
+    "single_unit_low": 284900,
+    "single_unit_high": 667900,
+    "two_pack_mud_low": 553400,
+    "two_pack_mud_high": 1320800
+  },
+  "territory": {
+    "protected_territory": "Lesser of 3-mile radius or 50,000 people",
+    "exclusive": true,
+    "significant_reserved_rights": true
+  },
+  "contract_terms": {
+    "initial_term_years": 10,
+    "renewal_terms": "2 x 5-year",
+    "materially_different_terms_risk": true,
+    "non_compete_post_term_years": 2,
+    "non_compete_radius_miles": 15,
+    "venue": "Florida",
+    "governing_law": "Florida",
+    "jury_trial_waiver": true,
+    "punitive_damages_waiver": true
+  },
+  "item19": {
+    "has_fpr": true,
+    "parts": 5,
+    "studios_reported_revenue": 17,
+    "revenue_low": 137328,
+    "revenue_high": 1452077,
+    "revenue_mean": 718239,
+    "revenue_median": 670576,
+    "franchisee_only_mean": 607744,
+    "franchisee_only_median": 540846,
+    "parent_studio_adj_ebitda": {"south_beach": 526396, "miami_brickell": 581331},
+    "parent_studio_adj_ebitda_margin": {"south_beach": 0.406, "miami_brickell": 0.400},
+    "member_count_range": {"low": 108, "high": 790},
+    "pricing_range": "$89-$249/month unlimited"
+  },
+  "item20": {
+    "total_studios_end_2024": 22,
+    "franchised_end_2024": 17,
+    "company_owned_end_2024": 5,
+    "signed_not_open": 32,
+    "terminations_2024": 1,
+    "net_growth_2024": 4,
+    "confidentiality_clause": false
+  },
+  "item21": {
+    "auditor_location": "Melville, New York",
+    "opinion": "unqualified",
+    "total_assets": 343364,
+    "total_liabilities": 951702,
+    "members_deficit": -608338,
+    "cash": 51869,
+    "total_revenue": 1360392,
+    "net_loss": -59056,
+    "deferred_revenues": 871468,
+    "member_distributions": -415000,
+    "management_agreement_expense": 985736
+  },
+  "special_risks": [
+    "Out-of-state dispute resolution (FL)",
+    "Short operating history",
+    "Financial condition concerns",
+    "Mandatory minimum payments",
+    "Significant unopened franchises"
+  ],
+  "fees_promoted": {
+    "music_streaming_monthly": 147,
+    "royalty_trigger": "Begins at earlier of studio opening or opening deadline",
+    "minimum_monthly_fixed_burden_revised": 7279
+  },
+  "contract_terms_promoted": {
+    "reciprocity_policy": "Must accept members from any SWEAT440 studio at reduced rates with no reimbursement",
+    "quality_audit_thresholds": {"default_below": 90, "termination_if_below_90_twice_in_12_months": true},
+    "limitation_of_actions": "Claims must be commenced within 1 year of discovery",
+    "franchisee_internet_restriction": "Cannot conduct business or advertise on Internet without written authorization"
+  },
+  "investment_promoted": {
+    "development_timeline_months": "5-12 typical",
+    "opening_deadline_days": 300,
+    "pre_opening_sales_requirement": true
+  },
+  "unresolveds": [
+    {"id": "U01", "description": "Auditor firm name not captured from text layer (on letterhead image pages 55-56)", "severity": "low", "source": "Item 21 / Exhibit A"},
+    {"id": "U02", "description": "Tennessee company-owned studio table shows closure but FDD notes relocation", "severity": "low", "source": "Item 20 Table 4 / page 50"},
+    {"id": "U03", "description": "Franchise fees receivable net of $945K fees and $756K commissions to same party — identity of party and commission arrangement unclear", "severity": "medium", "source": "Note 2 to financials / page 63"},
+    {"id": "U04", "description": "Parent studio salary/payroll (14-16% of revenue) appears low and may not reflect franchisee reality", "severity": "medium", "source": "Item 19 Part 2 / page 43"},
+    {"id": "U05", "description": "28 of 32 signed-not-open agreements from one NJ operator — extreme pipeline concentration risk with no disclosed progress or capitalization info", "severity": "high", "source": "Item 20 Table 5 + Exhibit D / pages 50, 146"}
+  ],
+  "contradictions": [
+    {"id": "C01", "description": "Note 4 shows 21 franchised outlets vs Item 20 showing 17 — likely officer-owned studios counted differently in financial vs FDD reporting", "items_involved": ["Note 4 (page 64)", "Item 20 (page 48)"], "resolution_status": "explained — different counting conventions"},
+    {"id": "C02", "description": "Company-owned Table 4 shows TN going from 1 to 0 in 2024 but Table 1 shows 5→5 total — TN relocation accounts for discrepancy", "items_involved": ["Item 20 Table 1", "Item 20 Table 4"], "resolution_status": "partially resolved — relocation noted in footnote"},
+    {"id": "C03", "description": "14-month fiscal period (2024) not comparable to 12-month prior years; Item 19 uses calendar year while Item 21 uses fiscal year", "items_involved": ["Item 19", "Item 21"], "resolution_status": "noted — different reporting periods"},
+    {"id": "C04", "description": "Training described as 3-5 days but table totals 48 hours requiring minimum 5-6 days", "items_involved": ["Item 11 narrative", "Item 11 training table"], "resolution_status": "minor inconsistency — 5 days realistic minimum"}
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Illinois", "Maryland", "Minnesota", "New York", "Virginia", "Washington"],
+    "override_summary": {
+      "forum_selection": ["Illinois", "Maryland", "Minnesota"],
+      "governing_law": ["California", "Illinois", "New York", "Washington"],
+      "noncompete": ["California"],
+      "general_release": ["California", "Maryland", "Minnesota", "New York"],
+      "termination": ["California", "Virginia", "Washington"],
+      "notice_cure": ["Minnesota"],
+      "damages": ["Minnesota", "Washington"],
+      "fee_deferral": ["Minnesota", "Virginia"],
+      "fair_pricing": ["Washington"],
+      "buyback": ["Washington"],
+      "indemnification": ["Minnesota"],
+      "anti_waiver": ["California", "Illinois", "Washington"],
+      "limitation_of_actions": ["Maryland"]
+    }
+  },
+  "state_addenda": ["California", "Illinois", "Maryland", "Minnesota", "New York", "Virginia", "Washington"],
+  "retries_applied": ["R1 (Item 20 Table 4)", "R3 (Item 19 statistics)"],
+  "depth_passes_applied": ["financial_notes", "contract_burdens", "narrative_promotion (8 facts)", "state_addenda_structured (27 overrides)"]
+}

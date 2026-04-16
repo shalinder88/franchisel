@@ -1,0 +1,340 @@
+{
+  "meta": {
+    "fdd_id": "638056-2025",
+    "brand": "Hampton Inn / Hampton Inn & Suites",
+    "franchisor_legal_name": "Hilton Franchise Holding LLC",
+    "parent_company": "Hilton Worldwide Holdings Inc.",
+    "parent_ticker": "HLT",
+    "state_filed": "WI",
+    "issuance_date": "2025-03-30",
+    "extraction_date": "2026-04-15",
+    "pdf_pages": 390,
+    "pipeline_version": "automation_v1"
+  },
+  "item1_entity": {
+    "franchisor_name": "Hilton Franchise Holding LLC",
+    "entity_type": "Delaware Limited Liability Company",
+    "formed": "2007-09",
+    "address": "7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102",
+    "phone": "703-883-1000",
+    "parent_chain": [
+      "Hilton Domestic Operating Company Inc. (Delaware corporation, formed 2016-07-12)",
+      "Hilton Worldwide Holdings Inc. (Delaware corporation, formed 2010-03-18, NYSE: HLT)"
+    ],
+    "predecessors": [
+      {"name": "Hampton Inns Franchise LLC", "period": "2007-10 to 2015-03"},
+      {"name": "Promus Hotel Systems, Inc.", "period": "1995-05 to 2007-10"}
+    ],
+    "first_franchised": {"hampton_inn": 1983, "hampton_inn_and_suites": 1993},
+    "segment": "upper midscale",
+    "ceo": "Christopher J. Nassetta",
+    "cfo": "Kevin J. Jacobs",
+    "key_affiliates": [
+      "Hilton Reservations Worldwide LLC (reservation services)",
+      "Hilton Supply Management LLC (procurement)",
+      "Hilton Honors Worldwide LLC (loyalty)",
+      "Hilton Systems Solutions LLC (IT/OnQ)"
+    ],
+    "other_brands_offered": "Hilton, Canopy, Conrad, Curio, DoubleTree, Embassy, Graduate, Hilton Garden Inn, Home2, Homewood, LivSmart Studios, LXR, Motto, NoMad, Signia, Spark, Tapestry, Tempo, Tru, Waldorf Astoria",
+    "source_section": "Item 1",
+    "source_pages": [9, 10, 11, 12, 13, 14],
+    "confidence": "high"
+  },
+  "item3_litigation": {
+    "pending_actions": [
+      "AAAA Property Partners v. HFH (M.D. Fla.) — breach of contract from franchise termination",
+      "In re Extended Stay Hotel Antitrust Litigation (N.D. Cal.) — class action, IDeaS price-fixing",
+      "Dai v. SAS Institute/IDeaS (N.D. Cal.) — class action, IDeaS price-fixing",
+      "Segal v. Amadeus (N.D. Ill.) — class action, Amadeus data exchange",
+      "Portillo v. CoStar/STR (W.D. Wash.) — class action, STR competitive data exchange"
+    ],
+    "concluded_actions_material": [
+      "State of Texas v. Hilton — $2.1M settlement (Jan 2025), mandatory guest fee disclosure",
+      "State of Nebraska v. Hilton — $300K settlement (Feb 2024), mandatory guest fee disclosure",
+      "Portland Hotel Ownership v. HFH — dismissed with mutual releases (Jul 2022)",
+      "San Pedro Inn v. HFH — settled (Sep 2020), Hampton termination",
+      "Hawaii resort fee class action — $178K settlement (Aug 2015)"
+    ],
+    "collection_suits_2024": "None",
+    "source_section": "Item 3",
+    "source_pages": [18, 19, 20, 21],
+    "confidence": "high"
+  },
+  "item4_bankruptcy": {
+    "disclosed": false,
+    "source_section": "Item 4",
+    "source_pages": [22],
+    "confidence": "high"
+  },
+  "item5_initial_fees": {
+    "franchise_application_fee_new": "$100,000 plus $400/room over 150",
+    "franchise_application_fee_coo": "$200,000",
+    "franchise_application_fee_relicensing": "$100,000",
+    "pip_fee": "$10,000",
+    "onq_computer_system": "$27,590 to $83,959",
+    "training_fees": "$5,000 to $17,500",
+    "opening_process_services": "$6,000",
+    "other_startup_fees": "$5,100",
+    "processing_fee_non_refundable": "$7,500",
+    "procurement_services_fee": "4% to 10% of project cost",
+    "source_section": "Item 5",
+    "source_pages": [22, 23, 24, 25],
+    "confidence": "high"
+  },
+  "item6_ongoing_fees": {
+    "royalty_rate": "6% of Gross Rooms Revenue",
+    "program_fee_rate": "4% of Gross Rooms Revenue",
+    "program_fee_cap": "current rate + 1% of GRR over the term",
+    "total_minimum_ongoing_pct": "10% of GRR (royalty + program)",
+    "hilton_honors_fee": "4.9% of total eligible guest folio",
+    "hilton_advance": "1.35% of Digital Direct Revenue (max $30/stay)",
+    "technology_monthly": {
+      "onq_connectivity": "$400 to $600/month",
+      "hw_maintenance": "$1,114 to $2,568/month",
+      "connected_room": "$417 to $779/month"
+    },
+    "brand_conference": "$2,500/attendee (GM + DOS required, annual)",
+    "quality_assurance_fees": {
+      "non_compliance": "$65 to $145/room per consecutive fail (max $50,000 per 6-month period)",
+      "re_evaluation": "up to $4,500",
+      "special_audit": "$5,500",
+      "pip_renovation_failure": "$10,000 every 6 months",
+      "stay_score_failure": "up to $300/room or 0.5% GRR annually",
+      "service_quality_improvement": "$20,000 to $50,000 per 6-month period"
+    },
+    "liquidated_damages": {
+      "pre_opening": "System's Avg Monthly Royalty × 60",
+      "post_opening_under_2yr": "Greater of Hotel's or System's Avg Monthly Royalty × 60",
+      "post_opening_over_2yr": "Hotel's Avg Monthly Royalty × 60",
+      "last_60_months": "Hotel's Avg Monthly Royalty × remaining months"
+    },
+    "late_payment_interest": "1.5% per month",
+    "transfer_fees": {
+      "coo_application": "$200,000",
+      "permitted_transfer": "$5,500",
+      "relicensing_application": "$100,000"
+    },
+    "royalty_modifications_2024": 66,
+    "program_fee_modifications_2024": 6,
+    "source_section": "Item 6",
+    "source_pages": [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38],
+    "confidence": "high"
+  },
+  "item7_investment": {
+    "hampton_inn_89_rooms": {
+      "total_low": 15218226,
+      "total_high": 22193244,
+      "construction_low": 11139759,
+      "construction_high": 16090763,
+      "ffe_low": 1228796,
+      "ffe_high": 1746184,
+      "excludes": "real property, market studies, insurance, interest"
+    },
+    "hampton_inn_suites_113_rooms": {
+      "total_low": 17723268,
+      "total_high": 25958214,
+      "construction_low": 12929796,
+      "construction_high": 18676372,
+      "ffe_low": 1493027,
+      "ffe_high": 2121669,
+      "excludes": "real property, market studies, insurance, interest"
+    },
+    "source_section": "Item 7",
+    "source_pages": [39, 40, 41, 42, 43],
+    "confidence": "high"
+  },
+  "item8_supplier_restrictions": {
+    "mandatory_purchases": [
+      "OnQ/HPMS software from HSS (proprietary)",
+      "Exterior signage from licensed vendor",
+      "Brand-specific/trademark items from approved suppliers"
+    ],
+    "optional_procurement": "HSM procurement available but not required for most items",
+    "hsm_procurement_fee": "4% to 10% of project cost",
+    "hsm_revenues_2024": {
+      "rebates": 19614010,
+      "admin_fees": 38697912,
+      "sales": 8763692
+    },
+    "hilton_affiliate_revenues_from_franchisees_2024": 1101161898,
+    "supplier_approval_timeline": "60 to 90 days",
+    "source_section": "Item 8",
+    "source_pages": [44, 45, 46, 47],
+    "confidence": "high"
+  },
+  "item10_financing": {
+    "direct_financing": false,
+    "development_incentive": true,
+    "development_incentive_details": "Contingent liability, disbursed after opening, repayable amount decreases ratably over term, no interest unless repayment triggered and unpaid (1.5%/month)",
+    "source_section": "Item 10",
+    "source_pages": [50, 51],
+    "confidence": "high"
+  },
+  "item11_training": {
+    "programs": [
+      {"name": "GM/Commercial/Sales Leader Training", "cost": "up to $1,200", "format": "virtual", "duration": "within 90 days of start"},
+      {"name": "HPMS Training", "cost": "no fee", "format": "role-based, mandatory", "duration": "before opening"},
+      {"name": "OnQ Rate & Inventory / GRO", "cost": "no fee", "format": "web-based, self-paced", "duration": "before opening, 80% pass required"},
+      {"name": "Hilton Honors Training", "cost": "no fee", "format": "online via Hilton University", "duration": "before opening or within 14-45 days of start"},
+      {"name": "Hilton Core Sales Skills", "cost": "up to $600/attendee", "format": "blended learning", "duration": "6 weeks (Foundations) or 2 weeks (Accelerated)"},
+      {"name": "Annual Compliance Training", "cost": "$25-$50/person/topic (vendor)", "format": "varies", "duration": "annual"},
+      {"name": "Brand Conference", "cost": "$2,500/attendee", "format": "in-person", "duration": "annual, GM + DOS required"}
+    ],
+    "source_section": "Item 11",
+    "source_pages": [51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63],
+    "confidence": "high"
+  },
+  "item12_territory": {
+    "exclusive_territory": false,
+    "protected_area_standard": false,
+    "restricted_area_negotiable": true,
+    "restricted_area_notes": "May be negotiated, at franchisor's sole discretion. Usually shorter than term. Only applies to Hampton Brand, not other Hilton brands.",
+    "franchisor_competition_rights": "Unrestricted right to own, operate, franchise, license competitive lodging under any brands (except Hampton within Restricted Area, if any). May acquire competitors.",
+    "relocation": false,
+    "right_of_first_refusal_additional": false,
+    "source_section": "Item 12",
+    "source_pages": [64, 65, 66],
+    "confidence": "high"
+  },
+  "item17_contract": {
+    "term": {
+      "new_construction": "22 years from Effective Date",
+      "conversion": "10 to 20 years from Opening Date",
+      "change_of_ownership": "remaining term or as approved"
+    },
+    "renewal": {
+      "right_to_renew": false,
+      "relicensing_at_discretion": true,
+      "materially_different_terms": true
+    },
+    "termination_by_franchisee": "Not authorized. Material breach + liquidated damages.",
+    "non_compete_during_term": "Cannot be licensor/franchisor of competing brand",
+    "non_compete_post_term": "None",
+    "dispute_resolution": {
+      "venue": "E.D. Virginia (Alexandria) or Fairfax County, VA; fallback New York",
+      "puerto_rico": "Arbitration (AAA/JAMS)",
+      "governing_law": "New York"
+    },
+    "death_disability": "Transfer to immediate family within 1 year, subject to qualifications",
+    "source_section": "Item 17",
+    "source_pages": [74, 75, 76, 77, 78, 79, 80, 81],
+    "confidence": "high"
+  },
+  "item19_financial_performance": {
+    "makes_representations": true,
+    "disclosure_type": "historical room rates, occupancy, and indices",
+    "total_hotels_us": 2368,
+    "comparable_hotels": 1960,
+    "company_managed_comparable": 15,
+    "franchisee_managed_comparable": 1945,
+    "hampton_inn": {
+      "avg_room_rate_2024": 145.82,
+      "median_room_rate_2024": 136.40,
+      "rate_range_low_2024": 77.60,
+      "rate_range_high_2024": 315.97,
+      "pct_franchisee_above_avg_rate_2024": 33.0
+    },
+    "hampton_inn_suites": {
+      "avg_room_rate_2024": 152.19,
+      "median_room_rate_2024": 145.67,
+      "rate_range_low_2024": 86.35,
+      "rate_range_high_2024": 285.65,
+      "pct_franchisee_above_avg_rate_2024": 38.3
+    },
+    "combined": {
+      "avg_occupancy_2024": 71.7,
+      "median_occupancy_2024": 71.9,
+      "occupancy_range_low_2024": 30.5,
+      "occupancy_range_high_2024": 96.6,
+      "avg_occupancy_index_2024": 109.8,
+      "median_occupancy_index_2024": 110.1,
+      "avg_revpar_index_2024": 121.0,
+      "median_revpar_index_2024": 122.7,
+      "revpar_index_range_low_2024": 39.5,
+      "revpar_index_range_high_2024": 334.4
+    },
+    "cost_buildup_disclosed": false,
+    "ebitda_disclosed": false,
+    "source_section": "Item 19",
+    "source_pages": [82, 83, 84, 85, 86],
+    "confidence": "high"
+  },
+  "item20_outlets": {
+    "hampton_inn": {
+      "end_2024": 1345,
+      "end_2023": 1346,
+      "end_2022": 1331,
+      "opened_2024": 13,
+      "terminated_2024": 8,
+      "non_renewed_2024": 4,
+      "transfers_2024": 65,
+      "pipeline_signed_not_opened": 167,
+      "projected_new_next_fy": 25
+    },
+    "hampton_inn_suites": {
+      "end_2024": 1024,
+      "end_2023": 1015,
+      "end_2022": 1002,
+      "opened_2024": 12,
+      "terminated_2024": 0,
+      "non_renewed_2024": 2,
+      "transfers_2024": "estimated ~48",
+      "pipeline_signed_not_opened": 138,
+      "projected_new_next_fy": 27
+    },
+    "company_owned": 0,
+    "confidentiality_clause": true,
+    "source_section": "Item 20",
+    "source_pages": [86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100],
+    "confidence": "high"
+  },
+  "item21_financials": {
+    "auditor": "CBH",
+    "auditor_location": "Tysons Corner, Virginia",
+    "opinion": "unqualified (clean)",
+    "fiscal_year_end": "December 31",
+    "balance_sheet_2024": {
+      "total_assets": 1269897,
+      "cash": 317,
+      "accounts_receivable": 135970,
+      "intercompany_receivable": 703943,
+      "franchise_contracts_net": 392748,
+      "total_liabilities": 692892,
+      "deferred_revenues_total": 558880,
+      "members_equity": 577005,
+      "contributed_capital": 310000,
+      "retained_earnings": 528936
+    },
+    "income_2024": {
+      "franchise_royalty_fees": 1434453,
+      "total_revenues": 1502069,
+      "total_expenses": 11353,
+      "operating_income": 1490716,
+      "net_income": 1487571
+    },
+    "income_2023": {
+      "total_revenues": 1376897,
+      "net_income": 1372281
+    },
+    "income_2022": {
+      "total_revenues": 1229465,
+      "net_income": 1233442
+    },
+    "distributions_2024": 1500000,
+    "distributions_2023": 1400000,
+    "distributions_2022": 1550000,
+    "key_observations": [
+      "Asset-light pure franchise fee conduit entity",
+      "99%+ operating margin",
+      "Virtually all net income distributed to parent",
+      "Minimal cash on hand ($317K)",
+      "Large intercompany receivable ($703.9M from Hilton affiliates)",
+      "Growing franchise royalty fees: +11.3% (2023), +7.8% (2024)",
+      "Deferred revenues growing (~$559M) from upfront franchise fees"
+    ],
+    "units": "thousands (USD)",
+    "source_section": "Item 21 / Exhibit C",
+    "source_pages": [100, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218],
+    "confidence": "high"
+  }
+}

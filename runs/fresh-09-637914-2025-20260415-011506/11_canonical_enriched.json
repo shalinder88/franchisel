@@ -1,0 +1,83 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637914-2025",
+  "brand": "Iron Valley Real Estate",
+  "enrichment_version": "v1",
+  "item_19_detail": {
+    "fpr_provided": false,
+    "charts": [],
+    "tables": [],
+    "notes": "Standard no-FPR statement. No tables, charts, or financial performance data provided."
+  },
+  "item_20_yearly_activity": {
+    "franchised": {
+      "2022": {"start": 22, "opened": 8, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 30},
+      "2023": {"start": 30, "opened": 7, "terminated": 1, "non_renewed": 0, "reacquired": 0, "ceased": 1, "end": 35},
+      "2024": {"start": 35, "opened": 9, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 44}
+    },
+    "company_owned": {
+      "2022": {"start": 8, "opened": 0, "reacquired": 0, "closed": 1, "sold": 0, "end": 7},
+      "2023": {"start": 7, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 7},
+      "2024": {"start": 7, "opened": 1, "reacquired": 0, "closed": 0, "sold": 0, "end": 8}
+    },
+    "projected": {"new_franchised": 9, "new_company": 0, "expansion_states": ["New Jersey", "New York", "South Carolina"]}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 8,
+    "exhibits": [
+      {"letter": "A-1", "name": "Franchise Agreement", "pages": 44, "category": "contract"},
+      {"letter": "A-2", "name": "Area Development and Royalty Share Agreement", "pages": 10, "category": "contract"},
+      {"letter": "B", "name": "Financial Statements", "pages": 33, "category": "financial"},
+      {"letter": "C", "name": "List of Franchise Outlets", "pages": 4, "category": "franchisee_list"},
+      {"letter": "D", "name": "List of Terminated Franchises", "pages": 2, "category": "franchisee_list"},
+      {"letter": "E", "name": "State Franchise Administrators", "pages": 3, "category": "regulatory"},
+      {"letter": "F", "name": "State Specific Addenda", "pages": 13, "category": "state_addenda"},
+      {"letter": "G", "name": "State Effective Dates", "pages": 2, "category": "regulatory"},
+      {"letter": "H", "name": "Receipts", "pages": 3, "category": "receipt"}
+    ]
+  },
+  "item_21_structural_facts": {
+    "auditor": "Schild & Co., Inc.",
+    "opinion_type": "Unqualified (clean)",
+    "going_concern": false,
+    "entity_tax_status": "LLC taxed as S-corp (pass-through)",
+    "accounting_standards": ["ASC 606 (Revenue Recognition)", "ASC 842 (Leases)", "ASC 326 (CECL)"],
+    "retirement_plan": "401(k) with ADP safe harbor match",
+    "no_debt": true,
+    "single_lease": "HQ at Hershey, PA — 5-year term, $5K/month, 2% annual increase, expires April 2027",
+    "revenue_mix_2024": {
+      "royalties": {"amount": 1233567, "pct": 70.1},
+      "technology_fees": {"amount": 410076, "pct": 23.3},
+      "franchise_fees": {"amount": 87748, "pct": 5.0},
+      "marketing_fees": {"amount": 25850, "pct": 1.5},
+      "product_sales": {"amount": 1429, "pct": 0.1}
+    }
+  },
+  "item_1_structural_facts": {
+    "concept_origin": "Annville Group, LLC, Lebanon, PA, 2013",
+    "began_franchising": "2018-09",
+    "no_parent": true,
+    "no_predecessor": true,
+    "franchisor_does_not_operate": true,
+    "company_offices_by_affiliates": true,
+    "competitors": ["Realty One Group", "United Real Estate", "Equity Real Estate"],
+    "agent_recruitment_critical": true,
+    "industry": "Residential and commercial real estate brokerage"
+  },
+  "item_6_fee_attributes": {
+    "royalty_type": "per_transaction",
+    "royalty_is_revenue_percentage": false,
+    "marketing_fund_audited": false,
+    "marketing_admin_fee_pct": 15,
+    "marketing_collected_2024": 25850,
+    "marketing_spent_2024": 129866,
+    "cpi_adjustable_fees": ["royalty", "marketing", "agent_website_fee", "renewal_fee", "transfer_fee", "training_fee", "interim_manager", "supplier_review_fee"],
+    "interest_rate_pct": 18,
+    "late_penalty_pct": 5,
+    "lost_royalty_recovery_tiers": [
+      {"period": "<1 year", "multiplier": "300% or $20,000 minimum"},
+      {"period": "1-2 years", "multiplier": "200%"},
+      {"period": "2-3 years", "multiplier": "150%"}
+    ]
+  }
+}

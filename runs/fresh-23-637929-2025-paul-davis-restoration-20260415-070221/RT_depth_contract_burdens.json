@@ -1,0 +1,177 @@
+{
+  "depth_pass": "contract_burdens",
+  "source": "Exhibit C (Franchise Agreement), pages 138-190",
+  "fa_articles_count": 32,
+  "burdens": {
+    "grant_and_term": {
+      "article": "Articles 1, 5",
+      "initial_term": "5 years",
+      "renewal_term": "5 years",
+      "renewal_conditions": "90-180 day notice; sign then-current FA (may have materially different terms); equipment to current standards; minimum sales (greater of national median or $6.00 × population) for each of prior 2 years; minimum royalty compliance; $5,000 fee; execute within 90 days of presentation",
+      "materially_different_terms_risk": true,
+      "burden_level": "High — short term, renewal at franchisor's then-current terms"
+    },
+    "fees_and_payment": {
+      "article": "Articles 2, 3",
+      "royalty": "4% of Gross Sales (broadly defined to include subcontractor revenue)",
+      "minimum_royalty": "Escalating from $1/person to $6/person × population × 4%, CPI-adjusted",
+      "smp_fee": "$500/month + 0.75% of invoiced GS",
+      "guarantee_fund": "0.5% of GS until $25K target",
+      "indemnity_fund": "0.10%-0.04% tiered",
+      "technology_fees": "Extensive — RMS $525/mo, Xactimate, MS 365, QB, call center, etc.",
+      "late_fee": "1.5% per month",
+      "cross_default": "Default on promissory note = default on FA",
+      "burden_level": "High — complex multi-layered fee structure"
+    },
+    "site_selection": {
+      "article": "Article 4",
+      "requirements": "Must maintain commercial office in territory. No buildout. No site approval by PDRI.",
+      "burden_level": "Low"
+    },
+    "training_obligations": {
+      "article": "Article 8",
+      "initial": "330 hours mandatory (224 classroom + 106 OJT). Must complete to PDRI satisfaction.",
+      "ongoing": "May be required to attend additional training upon reaching $1M cumulative GS or at Launch/RBC request",
+      "recertification": "PDRI reserves right to implement 3-5 day recertification every 3 years",
+      "jca_training": "Mandatory for Job Cost Accountant",
+      "estimate_review": "PDRI reviews all estimates during initial 8-week operating period",
+      "burden_level": "Medium-High — extensive initial training, ongoing requirements"
+    },
+    "operational_obligations": {
+      "article": "Articles 6, 9, 10",
+      "operations_manual": "Must comply. Changes require Council vote but PDRI can modify standards/specs unilaterally.",
+      "software": "Must use designated Common Software (RMS), Xactimate/Symbility, QuickBooks, Qvinci, MS 365, Matterport, etc.",
+      "reporting": "Required financial reporting via Qvinci; franchise-specific compilation by CPA",
+      "inspections": "PDRI may inspect/audit (Article 6)",
+      "pci_compliance": "Required PCI DSS compliance",
+      "ai_restrictions": "Trade secrets cannot be entered into public/open AI models",
+      "burden_level": "High — extensive technology, reporting, and compliance obligations"
+    },
+    "termination_triggers": {
+      "article": "Article 17",
+      "curable_defaults_cure_period": "15 days (unless state law requires longer)",
+      "curable_defaults": ["Nonpayment of fees", "Failure to pay suppliers", "Operations Manual non-compliance", "Failure to maintain licenses/permits"],
+      "non_curable_defaults": ["Failure to timely begin operations", "Material/repeated GS misrepresentation", "Insolvency", "Unapproved transfer", "Felony conviction", "3+ defaults in rolling 12 months", "Abandonment (including 2+ months no reported sales)", "Confidential info disclosure", "Non-renewal of FA"],
+      "franchisor_without_cause": "Not applicable",
+      "franchisee_termination": "Not applicable (except NY addendum grants termination on any legal grounds)",
+      "burden_level": "High — broad non-curable default list, short cure period"
+    },
+    "transfer_restrictions": {
+      "article": "Article 20",
+      "approval_required": true,
+      "criteria": "Same as new franchisees",
+      "transfer_fee": "$10,000 majority / $5,000 minority",
+      "resale_fee": "2.5% of sale price, capped at $40,000",
+      "right_of_first_refusal": "PDRI on same terms as third-party offer",
+      "transferee_must_sign_new_fa": true,
+      "option_to_purchase_on_termination": "Fair market value",
+      "burden_level": "High — multiple fees, ROFR, new FA requirement"
+    },
+    "cross_default": {
+      "article": "Articles 2, 17",
+      "promissory_note": "Default on note = automatic FA default",
+      "sale_of_interest": "Triggers note acceleration",
+      "burden_level": "High"
+    },
+    "noncompete": {
+      "article": "Article 22",
+      "during_term": "Cannot participate in competing business, disrupt PDRI/affiliate employment, divert business",
+      "post_term_duration": "2 years",
+      "post_term_scope": "Within protected territory AND other PDRI territories; no contact of former suppliers/customers for competitive purposes",
+      "employee_noncompete": "All employees with Trade Secret access + immediate family must sign Confidentiality and Non-Compete Agreement",
+      "state_overrides": {
+        "CA": "Post-term non-compete may not be enforceable",
+        "ND": "May be unreasonable/unenforceable"
+      },
+      "burden_level": "High — broad geographic scope extending beyond own territory"
+    },
+    "guaranty": {
+      "article": "Article 22 / Exhibit B to FA",
+      "personal_guaranty": "All shareholders/partners/members must personally guarantee all monetary obligations",
+      "spousal_acknowledgment": "Spouse must execute acknowledgment binding to non-compete, non-disclosure, and dispute resolution",
+      "unlimited_guaranty": true,
+      "burden_level": "High — unlimited personal guaranty plus spousal binding"
+    },
+    "liquidated_damages": {
+      "article": "Not explicitly disclosed as separate clause",
+      "state_overrides": {
+        "CA": "May be unenforceable under §1671",
+        "MN": "Replaced with 'actual damages'",
+        "ND": "Not required to consent"
+      },
+      "burden_level": "Medium — subject to state overrides"
+    },
+    "venue_and_dispute": {
+      "article": "Article 23",
+      "method": "Binding arbitration — PDRI internal system (arbitrators are franchisees)",
+      "forum": "Selected by Arbitration Committee (not parties)",
+      "governing_law": "Florida (subject to state law)",
+      "no_court_litigation": "Subject to state law, disputes may not be litigated in court",
+      "state_overrides": {
+        "IL": "Venue outside IL void (arbitration outside IL permitted)",
+        "MN": "Litigation cannot be required outside MN",
+        "WA": "Arbitration must be in WA",
+        "ND": "Venue outside ND may not be enforceable"
+      },
+      "burden_level": "Medium — internal peer arbitration is unusual but potentially more franchisee-friendly than franchisor-selected arbitrators"
+    },
+    "insurance": {
+      "article": "Article 12",
+      "required_policies": [
+        "Workers Comp (all employees)",
+        "Employers Liability ($500K each/aggregate)",
+        "Commercial GL ($1M/$2M)",
+        "Contractors Pollution Liability ($1M)",
+        "Business Auto ($1M)",
+        "Umbrella ($4M each/aggregate)",
+        "Bailee ($250K)",
+        "Cyber/Tech E&O ($1M/$2M)",
+        "Wage/Hour defense ($100K)",
+        "General casualty (replacement value)"
+      ],
+      "pdri_as_additional_insured": true,
+      "primary_over_pdri": true,
+      "30_day_cancellation_notice": true,
+      "failure_is_material_breach": true,
+      "complex_loss_additional_coverage": "May be required for jobs exceeding $500K",
+      "burden_level": "High — extensive coverage requirements"
+    },
+    "indemnification": {
+      "article": "Article 13",
+      "scope": "Franchisee indemnifies PDRI",
+      "burden_level": "Standard"
+    },
+    "force_majeure": {
+      "article": "Not identified as explicit separate clause",
+      "note": "COVID-era reference in Item 1 states services were 'deemed essential' and businesses remained open throughout 2022",
+      "burden_level": "Low — no explicit force majeure provision identified"
+    },
+    "distinctive_clauses": [
+      {
+        "clause": "Franchise Councils / Operations Manual governance",
+        "description": "Changes to Operations Manual require District/General Council vote (majority of franchisees). This gives franchisees collective voice in operations standards — unusual.",
+        "article": "Articles 6, 10"
+      },
+      {
+        "clause": "Internal peer arbitration",
+        "description": "Arbitrators are franchisees, not third-party neutrals. Forum selected by Arbitration Committee (also franchisees).",
+        "article": "Article 23"
+      },
+      {
+        "clause": "Guarantee Fund / Completion Services, Inc.",
+        "description": "Franchisee-owned corporation (Completion Services, Inc.) manages guarantee fund and indemnity fund. Unique cooperative structure.",
+        "article": "Article 3"
+      },
+      {
+        "clause": "AI restrictions on trade secrets",
+        "description": "Prohibited from entering trade secrets into public/open AI models or any AI model that uses such info for training.",
+        "article": "Article 22 / Item 14"
+      },
+      {
+        "clause": "Abandonment = 2 months no reported sales",
+        "description": "Failure to report sales for 2+ months constitutes abandonment — non-curable default.",
+        "article": "Article 17"
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "depth_pass": "1_financial_notes",
+  "filing_id": "637919-2025",
+  "brand": "Taco Cabana",
+  "date": "2026-04-15",
+  "financial_statement_periods": [
+    "Year ended September 29, 2024",
+    "Period from January 17, 2023 (Inception) to September 30, 2023"
+  ],
+  "accounting_policies": {
+    "basis_of_presentation": {
+      "description": "Financial statements prepared in accordance with GAAP. Includes all adjustments consisting of normal recurring accruals.",
+      "source_pages": [151]
+    },
+    "use_of_estimates": {
+      "description": "Management makes estimates and assumptions affecting reported amounts and disclosure of contingent assets. Actual results could differ significantly.",
+      "source_pages": [151]
+    },
+    "cash_and_equivalents": {
+      "description": "Highly liquid instruments with original maturity of 90 days or less. No cash equivalents held as of either period end.",
+      "source_pages": [151]
+    },
+    "accounts_receivable": {
+      "description": "Consists mainly of royalty and advertising fund revenues from franchisees. No reserve for doubtful accounts as of September 29, 2024.",
+      "source_pages": [151]
+    },
+    "revenue_recognition": {
+      "standard": "ASC Topic 606",
+      "description": "Royalty and advertising fees recognized when food items are delivered to or carried out by customers. Royalties up to 4% and advertising up to 1% per FY2023 notes (discrepancy with FDD body rates of 5% and 3%).",
+      "payment_terms": "Generally due and collected within 7 days of prior week-end date.",
+      "source_pages": [152]
+    },
+    "franchise_agreements_intangible": {
+      "description": "Franchise agreements transferred from related party, determined to have finite life, amortized straight-line over 10 years.",
+      "gross_value": 150709,
+      "accumulated_amortization": 13336,
+      "net_value": 137373,
+      "annual_amortization": 20000,
+      "source_pages": [151, 153, 154]
+    },
+    "advertising_fund_accounting": {
+      "description": "Contributions recognized as revenue. Expenditures included in advertising expense. Excess contributions over expenditures recorded as accrued expense. No profit recognized. Timing differences may affect net income.",
+      "fy2024_contributions": 154051,
+      "fy2024_expenditures": 154051,
+      "fy2024_balance": 0,
+      "source_pages": [153, 154]
+    },
+    "income_taxes": {
+      "election": "S-corporation for Federal and state purposes",
+      "federal_tax": "None — income passes through to stockholders",
+      "state_tax": "California 1.5% surtax on taxable income",
+      "uncertain_tax_positions": "None identified. Follows guidance on uncertain tax positions (more-likely-than-not threshold). No liability recorded.",
+      "tax_years_open": "2023 and forward for both Federal and states",
+      "source_pages": [152]
+    },
+    "general_and_administrative": {
+      "description": "Consists primarily of professional services.",
+      "fy2024_amount": 181715,
+      "fy2023_amount": 5250,
+      "source_pages": [153]
+    },
+    "fair_value_measurements": {
+      "description": "Financial instruments include cash, accounts receivable, and receivables from related party. Fair value does not differ materially from carrying values.",
+      "source_pages": [152]
+    },
+    "concentration_of_credit_risk": {
+      "description": "Cash balances in excess of FDIC limits. Each of the 6 franchisees constitutes more than 10% of revenues and receivables. Loss of any franchisee would significantly impact operations.",
+      "source_pages": [152]
+    },
+    "recent_accounting_pronouncements": {
+      "description": "Adopted ASU 2016-13 (CECL) on January 17, 2023 using modified retrospective method. No reserve necessary. No impact to financial statements.",
+      "source_pages": [153]
+    }
+  },
+  "material_notes": {
+    "related_party_transactions": {
+      "description": "Company does business with related party entity under common control. Advances funds on short-term basis based on liquidity needs. No set repayment schedule, no interest. Presented as contra-equity.",
+      "fy2024_advances": 757261,
+      "fy2024_repayments": 183518,
+      "reclassification_to_equity": -423034,
+      "franchise_agreements_transferred": 150709,
+      "shared_services": "Receives management, administrative, and operational services from affiliate. No expense recorded.",
+      "source_pages": [154, 155]
+    },
+    "subsequent_events": {
+      "description": "In December 2024, advanced $500,000 to related party. In January 2025, advanced additional $200,000 to same related party.",
+      "evaluation_date": "February 20, 2025",
+      "total_post_period_advances": 700000,
+      "source_pages": [155]
+    },
+    "stockholders_equity": {
+      "shares_authorized": 100,
+      "shares_outstanding": 100,
+      "par_value": "no par value",
+      "parent_contribution": 500000,
+      "contribution_date": "April 12, 2023",
+      "dividends": "None to date",
+      "source_pages": [154]
+    },
+    "franchise_agreements_amortization_schedule": {
+      "2025": 20000,
+      "2026": 20000,
+      "2027": 20000,
+      "2028": 20000,
+      "2029": 20000,
+      "thereafter": 37373,
+      "total": 137373,
+      "source_pages": [154]
+    }
+  },
+  "items_not_present": {
+    "depreciation_of_tangible_assets": "No tangible depreciable assets held",
+    "impairment": "No impairment charges or policy described (no long-lived tangible assets)",
+    "lease_accounting": "No leases held by franchisor entity",
+    "variable_interest_entities": "None",
+    "long_term_debt": "None",
+    "going_concern": "Not raised in auditor report or notes",
+    "contingencies": "None disclosed",
+    "force_majeure": "Not addressed in financial notes"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "enrichment_version": "v1",
+  "base_file": "09_final_canonical.json",
+  "enrichments": {
+    "item19_detail": {
+      "fpr_provided": false,
+      "no_fpr_verbatim": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets. We also do not authorize our employees or representatives to make any such representations either orally or in writing.",
+      "substantiation_statement": "If you receive any other financial performance information or projections of your future income, you should report it to our management by contacting William Fortier, Senior Vice President-Development-Americas, 7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102, 703-883-1000, the Federal Trade Commission, and the appropriate state regulatory agencies.",
+      "charts": [],
+      "tables": []
+    },
+    "item20_yearly_activity": {
+      "2022": {"franchised_start": 3, "franchised_end": 3, "opened": 0, "terminated": 0, "transfers": 0},
+      "2023": {"franchised_start": 3, "franchised_end": 3, "opened": 0, "terminated": 0, "transfers": 0},
+      "2024": {"franchised_start": 3, "franchised_end": 4, "opened": 0, "terminated": 0, "transfers": 0, "ceased_other_plus": 1}
+    },
+    "exhibit_structure": {
+      "total_exhibits": 17,
+      "exhibit_letters": ["A", "B", "C", "D", "D-1", "D-2", "E", "F", "F-1", "G", "H", "I", "J-1", "J-2", "K", "L", "M"],
+      "critical_exhibits": ["C", "D", "D-1", "J-1"],
+      "franchise_agreement_pages": [108, 163],
+      "financial_statements_pages": [95, 107]
+    },
+    "item21_structural_facts": {
+      "auditor": "Cherry Bekaert LLP",
+      "opinion_type": "Unqualified",
+      "going_concern": false,
+      "fiscal_year_end": "December 31",
+      "statements_included": ["Balance Sheet", "Statement of Comprehensive Income and Member's Equity", "Statement of Cash Flows"],
+      "years_covered": [2022, 2023, 2024],
+      "notes_count": 9,
+      "note_topics": ["Organization", "Accounting Policies", "Acquisition", "Franchise Contracts", "Fair Value", "Income Taxes", "Commitments/Contingencies", "Related Party", "Subsequent Events"],
+      "entity_scope": "All Hilton brands franchised in US, not just LXR"
+    },
+    "item1_structural_facts": {
+      "formed": "September 2007",
+      "lxr_franchisor_since": "2018-09-14",
+      "sister_brands_count": 20,
+      "sister_brands": ["Hilton", "Canopy", "Conrad", "Curio", "DoubleTree", "Embassy", "Graduate", "Hampton", "HGI", "Home2", "Homewood", "LivSmart", "Motto", "NoMad", "Signia", "Spark", "Tapestry", "Tempo", "Tru", "Waldorf Astoria"],
+      "international_affiliates": 4,
+      "key_service_affiliates": [
+        {"name": "Hilton Reservations Worldwide LLC", "service": "Reservation Service", "address": "15305 N Dallas Pkwy, Suite 600, Addison TX 75001"},
+        {"name": "Hilton Supply Management LLC (HSM)", "service": "Procurement", "note": "Negotiates with manufacturers/suppliers for FF&E and supplies"},
+        {"name": "Hilton Honors Worldwide LLC", "service": "Loyalty program"},
+        {"name": "Hilton Systems Solutions LLC (HSS)", "service": "IT hardware/software/support"}
+      ]
+    },
+    "item6_fee_attributes": {
+      "royalty_fixed": true,
+      "program_fee_max_increase": "1% GRR over term",
+      "grr_includes_resort_fees": true,
+      "grr_includes_loyalty_redemptions": true,
+      "grr_includes_no_show": true,
+      "late_payment_rate": "1.5%/month",
+      "hsm_procurement_fee_range": "4%-10%",
+      "hsm_late_payment_rate": "18.5%/year compounded daily",
+      "termination_fee_formula": "avg_monthly_royalty x 60 (or $25K x rooms if higher, for first 2 years)"
+    }
+  }
+}

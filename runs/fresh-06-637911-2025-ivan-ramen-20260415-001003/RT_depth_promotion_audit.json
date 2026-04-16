@@ -1,0 +1,81 @@
+{
+  "depth_pass": "3_promotion_audit",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637911-2025",
+  "brand": "Ivan Ramen",
+  "promoted_facts": [
+    {
+      "fact": "Force majeure provision allows franchisor to terminate after 180 days of continued delay, on 30 days notice",
+      "reader_report_section": "Not in reader report (found in Depth Pass 2 from FA Article 20)",
+      "source_pages": [128],
+      "canonical_family": "contract_terms",
+      "field_added": "force_majeure"
+    },
+    {
+      "fact": "Franchise Agreement cross-default: failure to cure under any agreement between franchisee and franchisor (including other FAs, ADA, lease, promissory note) is a non-curable default",
+      "reader_report_section": "Pass E (Item 17 non-curable default hh)",
+      "source_pages": [49],
+      "canonical_family": "contract_terms",
+      "field_added": "cross_default"
+    },
+    {
+      "fact": "Franchisee's exclusive remedy for unreasonable withholding of consent is specific performance or declaratory judgment — no money damages",
+      "reader_report_section": "Not in reader report (found in Depth Pass 2 from FA Section 21.03)",
+      "source_pages": [128],
+      "canonical_family": "contract_terms",
+      "field_added": "withholding_consent_exclusive_remedy"
+    },
+    {
+      "fact": "Franchisee must irrevocably license to franchisor all IP, products, programs, advertising materials developed for the business",
+      "reader_report_section": "Pass C (Item 14)",
+      "source_pages": [42],
+      "canonical_family": "contract_terms",
+      "field_added": "ip_license_back"
+    },
+    {
+      "fact": "Three states (IL, MD, ND) have imposed fee deferral requirements due to franchisor's financial condition",
+      "reader_report_section": "Not in original reader report (found in Retry R2 state addenda)",
+      "source_pages": [323, 325, 333],
+      "canonical_family": "state_addenda",
+      "field_added": "fee_deferral_states (already present)"
+    },
+    {
+      "fact": "Prior period adjustment in FY2023 of +$4,000 (nature not specified)",
+      "reader_report_section": "Not in reader report (found in Depth Pass 1 from 2023 equity statement)",
+      "source_pages": [292],
+      "canonical_family": "financial_statements",
+      "field_added": "fy2023_prior_period_adjustment"
+    },
+    {
+      "fact": "Las Vegas franchise has 5% royalty rate on prior month's generated revenue (vs. standard 5% of Gross Revenues)",
+      "reader_report_section": "Pass F (from financial statement Note 6)",
+      "source_pages": [285],
+      "canonical_family": "fees",
+      "field_added": "las_vegas_reduced_terms"
+    },
+    {
+      "fact": "Social media and website prohibition: franchisee cannot maintain own online presence without revocable written approval",
+      "reader_report_section": "Pass C (Item 11, Websites/Social Media)",
+      "source_pages": [31],
+      "canonical_family": "contract_terms",
+      "field_added": "social_media_prohibition"
+    },
+    {
+      "fact": "2023 cash flow statement shows $4,000 financing activity classified as prior period adjustment",
+      "reader_report_section": "Not in reader report",
+      "source_pages": [293],
+      "canonical_family": "financial_statements",
+      "field_added": "fy2023_cash_flow_financing"
+    },
+    {
+      "fact": "Wisconsin Fair Dealership Act requires 90-day notice for termination and 60-day cure period",
+      "reader_report_section": "Not in original reader report (found in Retry R2 state addenda)",
+      "source_pages": [339],
+      "canonical_family": "state_addenda",
+      "field_added": "wisconsin_cure_period"
+    }
+  ],
+  "total_promotions": 10,
+  "already_in_canonical": 4,
+  "new_to_canonical": 6
+}

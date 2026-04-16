@@ -1,0 +1,69 @@
+{
+  "enrichment_version": "v1",
+  "base": "09_final_canonical.json",
+  "item19_chart_detail": {
+    "has_fpr": false,
+    "charts": [],
+    "notes": "Franchisor makes no financial performance representations"
+  },
+  "item20_yearly_activity": {
+    "2022": {"start": 597, "end": 585, "opened": 2, "terminations": 1, "non_renewals": 9, "reacquired": 0, "ceased": 4, "transfers": 37},
+    "2023": {"start": 585, "end": 565, "opened": 1, "terminations": 2, "non_renewals": 16, "reacquired": 0, "ceased": 3, "transfers": 53},
+    "2024": {"start": 565, "end": 538, "opened": 0, "terminations": 4, "non_renewals": 21, "reacquired": 0, "ceased": 2, "transfers": 45}
+  },
+  "item20_top_states_ye2024": [
+    {"state": "Florida", "outlets": 92},
+    {"state": "Texas", "outlets": 73},
+    {"state": "Georgia", "outlets": 38},
+    {"state": "North Carolina", "outlets": 21},
+    {"state": "Oklahoma", "outlets": 17},
+    {"state": "Arizona", "outlets": 16},
+    {"state": "Ohio", "outlets": 16},
+    {"state": "Virginia", "outlets": 16},
+    {"state": "Nevada", "outlets": 15},
+    {"state": "South Carolina", "outlets": 13},
+    {"state": "Colorado", "outlets": 13}
+  ],
+  "exhibit_structure": {
+    "total_exhibits": 16,
+    "high_priority": ["A (Franchise Agreement)", "C-1 (Walmart MLA)", "E (State Addenda)", "H (Financial Statements)", "I (Current Franchisees)", "J (Former Franchisees)"],
+    "financial_exhibits": ["H"],
+    "contract_exhibits": ["A", "C-1", "C-2", "C-3", "C-4", "C-5"],
+    "regulatory_exhibits": ["D", "E", "K"]
+  },
+  "item21_structural_facts": {
+    "auditor": "Kolder, Slaven & Company, LLC",
+    "audit_location": "Lafayette, Louisiana",
+    "opinion": "Clean (unqualified)",
+    "consolidated": true,
+    "subsidiaries": ["Regal Nails, Canada, ULC (wholly-owned)", "RNSDS, LLC (wholly-owned)", "RN Downtown, LLC (wholly-owned)", "Lumigarnet of Miami, LLC (partially-owned)", "RGEU Limited (disposed 2024)", "RNS & GV MEX (disposed 2024)"],
+    "going_concern": false,
+    "supplemental_schedules_audited": false
+  },
+  "item1_structural_facts": {
+    "entity_type": "LLC",
+    "state_of_formation": "Nevada",
+    "formation_date": "2005-09-30",
+    "no_parent_companies": true,
+    "predecessor_count": 1,
+    "affiliate_count": 2,
+    "company_owned_outlets": 1,
+    "primary_location_type": "Walmart (inside stores)",
+    "master_lease_agreement": "2009 Walmart MLA (no defined term)",
+    "initial_sublease_term": "60-66 months",
+    "renewal_options": "Up to 2 consecutive 3-year terms (mutual agreement)"
+  },
+  "item6_fee_attributes": {
+    "total_fee_categories": 32,
+    "bundled_royalty": true,
+    "royalty_separately_stated": false,
+    "ad_fund_active": false,
+    "ad_fund_reserved": true,
+    "ad_cooperative_active": false,
+    "technology_fee_required": false,
+    "technology_fee_optional": true,
+    "liquidated_damages_on_termination": true,
+    "holdover_penalty": true,
+    "white_box_fee": 25000
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "enrichment_version": "v2",
+  "item21_financial_structure_detail": {
+    "entity_structure": "Single-member LLC, wholly owned by Cupbop Co.",
+    "tax_treatment": "Pass-through; state PTET elected in Utah",
+    "ptet_payments_2024": 79245,
+    "ptet_payments_2023": 42132,
+    "ptet_payments_2022": 0,
+    "revenue_recognition_policy": {
+      "initial_franchise_fees": "~50% recognized upon franchise opening and completion of training; remainder recognized straight-line over 10-year agreement life. If location closes before 10 years, remaining unamortized amount recognized immediately.",
+      "royalties": "Sales-based royalty recognized monthly per narrow exception to variable consideration criteria (ASC 606)",
+      "renewal_fees": "Recognized when renewal agreement becomes effective"
+    },
+    "contract_liabilities_detail": {
+      "beginning_2024": 309063,
+      "end_2024": 598854,
+      "change": 289791,
+      "nature": "Deferred franchise fees — unamortized portion of initial fees to be recognized over remaining contract lives"
+    },
+    "related_party_detail": {
+      "receivable_from_parent_2024": 133826,
+      "receivable_from_parent_2023": 892586,
+      "nature": "Marketing revenues earned by franchisor for which cash was received by parent Cupbop Co.",
+      "terms": "Due on demand, non-interest bearing",
+      "payable_to_parent_2024": 11430,
+      "payable_to_parent_2023": 10556,
+      "payable_nature": "Prior year expenses paid by parent on behalf of franchisor"
+    },
+    "concentration_risk": "Majority of accounts receivable from one customer",
+    "credit_loss_expense": "None incurred in 2024 or 2023",
+    "subsequent_events": "Evaluated through March 24, 2025 — none disclosed",
+    "accounting_standards_adopted": "ASU 2016-13 (CECL) adopted Jan 1, 2023 — no material effect"
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "2024": {
+        "cash": 251150,
+        "accounts_receivable": 246291,
+        "other_current_assets": 3319,
+        "total_current_assets": 500760,
+        "furniture_and_equipment_gross": 17042,
+        "website_development_gross": 35642,
+        "accumulated_depreciation": -29415,
+        "net_ppe": 23269,
+        "related_party_receivable": 133826,
+        "total_assets": 657855,
+        "accounts_payable": 26219,
+        "related_party_payable": 11430,
+        "contract_liabilities_current": 37500,
+        "total_current_liabilities": 75149,
+        "contract_liabilities_noncurrent": 561354,
+        "total_liabilities": 636503,
+        "members_equity": 21352
+      },
+      "2023": {
+        "cash": 17066,
+        "accounts_receivable": 329181,
+        "total_current_assets": 346247,
+        "net_ppe": 9928,
+        "related_party_receivable": 892586,
+        "total_assets": 1248761,
+        "total_current_liabilities": 78647,
+        "contract_liabilities_noncurrent": 277813,
+        "total_liabilities": 356460,
+        "members_equity": 892301
+      },
+      "2022": {
+        "cash": 47807,
+        "accounts_receivable": 328937,
+        "total_current_assets": 376744,
+        "net_ppe": 15099,
+        "related_party_receivable": 351580,
+        "total_assets": 743423,
+        "total_current_liabilities": 21022,
+        "contract_liabilities_noncurrent": 254062,
+        "total_liabilities": 275084,
+        "members_equity": 468339
+      }
+    },
+    "income_statement": {
+      "2024": {"revenue": 2027743, "sga": 992734, "depreciation": 4064, "total_opex": 996798, "operating_income": 1030945, "other_expenses": -5287, "net_income": 1025658},
+      "2023": {"revenue": 1861859, "sga": 1069133, "depreciation": 5767, "total_opex": 1074900, "operating_income": 786959, "other_expenses": -5666, "net_income": 781293},
+      "2022": {"revenue": 1407785, "sga": 526369, "depreciation": 8241, "total_opex": 534609, "operating_income": 873176, "other_expenses": -418, "net_income": 872758}
+    },
+    "equity_statement": {
+      "2024": {"beginning": 892301, "net_income": 1025658, "distributions": -1896607, "ending": 21352},
+      "2023": {"beginning": 468339, "net_income": 781293, "distributions": -357331, "ending": 892301},
+      "2022": {"beginning": 547396, "net_income": 872758, "distributions": -951815, "ending": 468339}
+    },
+    "cash_flow": {
+      "2024": {"operating": 2148096, "investing": -17405, "financing": -1896607, "net_change": 234084},
+      "2023": {"operating": 327186, "investing": -596, "financing": -357331, "net_change": -30741},
+      "2022": {"operating": 776429, "investing": 0, "financing": -951815, "net_change": -175386}
+    }
+  },
+  "item6_fee_detail": {
+    "royalty": {
+      "rate": 0.06,
+      "basis": "Gross Sales",
+      "frequency": "Monthly",
+      "due_date": "10th of each month for prior calendar month",
+      "collection_method": "Auto-debit from business checking account"
+    },
+    "advertising_fund": {
+      "current_rate": 0.02,
+      "max_rate": 0.045,
+      "basis": "Gross Sales",
+      "2024_spending_breakdown": {"production": 0.31, "placement": 0.29, "administrative": 0.40},
+      "audit": "No independent audit required; unaudited statement available on written request",
+      "company_contribution": "Same rate as franchisees"
+    },
+    "local_advertising": {
+      "current_min_rate": 0.005,
+      "max_rate": 0.01,
+      "grand_opening_minimum": 10000,
+      "grand_opening_period": "90-120 days from opening"
+    },
+    "cooperative_advertising": {
+      "max_rate": 0.02,
+      "currently_assessed": false,
+      "cap_with_all_advertising": 0.065
+    },
+    "successor_fee": 10000,
+    "transfer_fee": {"amount": 10000, "exception": "No fee if transferee is entity you control"},
+    "training_fees": {
+      "initial_included_free": 2,
+      "additional_person": 1500,
+      "expelled_re_attendee": 2000,
+      "additional_training_at_hq": 400,
+      "additional_training_at_restaurant": 600,
+      "max_per_person_per_day": 800
+    },
+    "non_compliance": {"per_occurrence": 500, "per_day_continuing": 500},
+    "unauthorized_advertising": 1000,
+    "late_fee_rate": 0.10,
+    "interest_rate": "Lesser of 18% per annum or legal maximum",
+    "liquidated_damages": {
+      "formula": "Sum of accrued royalties during prior 24 full calendar months",
+      "adjustment": "If remaining term < 24 months, reduced to remaining months",
+      "due_within_days": 15,
+      "trigger": "Franchisor termination with cause OR franchisee termination without cause"
+    },
+    "management_fee": {"per_person_per_day": 500, "plus": "direct out-of-pocket costs and expenses"},
+    "relocation_fee": 10000,
+    "annual_meeting_fee": {"max": 2500}
+  }
+}

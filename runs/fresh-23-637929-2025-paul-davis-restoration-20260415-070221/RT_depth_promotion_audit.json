@@ -1,0 +1,42 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "facts_reviewed": "02_reader_report.md vs 09_final_canonical.json",
+  "promoted_facts": [
+    {
+      "fact": "PDRI derived $5,827,294 (9.33% of $62,442,294 total revenue) from required franchisee purchases/leases in FY2024",
+      "source": "Pass C / Item 8, PDF page 29",
+      "promoted_to": "09_final_canonical.json → franchisor_identity.required_purchase_revenue"
+    },
+    {
+      "fact": "SMP spending breakdown: 61.7% Business Dev/Field Marketing Staff, 15.8% Production, 9.7% Media, 7.3% PR, 3.7% Training, 1.5% Quality, 0.4% Admin",
+      "source": "Pass C / Item 11, PDF page 40",
+      "promoted_to": "09_final_canonical.json → fees.smp_spending_breakdown"
+    },
+    {
+      "fact": "FS Brands, Inc. is 97.18% owned by FS Property Services (U.S.) Inc., which is indirectly 100% owned by FirstService Corporation",
+      "source": "Financial notes Note 1, PDF page 98",
+      "promoted_to": "09_final_canonical.json → franchisor_identity.parent_ownership_pct"
+    },
+    {
+      "fact": "PDRI acquires franchises via PDO Holdings (80%+ of 22 franchises) and PDR Holdings (≤50.1% of 31 franchises) — total 53 affiliate-owned franchises operating under FAs",
+      "source": "Pass A / Item 1, PDF page 10",
+      "promoted_to": "09_final_canonical.json → system_size.affiliate_owned_franchises"
+    },
+    {
+      "fact": "Paul Davis Franchise Owner's Association (FOA) — Brady Chuckel, NEC President, requested inclusion in FDD",
+      "source": "Pass F / Item 20, PDF page 72",
+      "promoted_to": "09_final_canonical.json → system_size.franchisee_organization"
+    },
+    {
+      "fact": "Typical office space: 3K office + 8K industrial (11K sqft). Typical rent $5K-$15K/month",
+      "source": "Pass B / Item 7 Note 2, PDF page 26",
+      "promoted_to": "09_final_canonical.json → initial_investment.typical_office_specs"
+    },
+    {
+      "fact": "Van requirement: 3/4-ton extended van ($50K-$91K new). Optional vehicle mount $15K-$30K",
+      "source": "Pass B / Item 7 Note 5, PDF pages 26-27",
+      "promoted_to": "09_final_canonical.json → initial_investment.vehicle_requirements"
+    }
+  ],
+  "total_promoted": 7
+}

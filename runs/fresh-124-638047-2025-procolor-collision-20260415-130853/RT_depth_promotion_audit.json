@@ -1,0 +1,67 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "Franchisor reserves right to discount Monthly Franchise Fee for certain markets and multi-unit operators (FA Section 7.3)",
+      "source": "FA Section 7.3, page 125",
+      "target_field": "fees.royalty.discount_right",
+      "status": "promoted"
+    },
+    {
+      "fact": "All IP improvements/suggestions automatically assigned to franchisor without compensation (FA Section 9.6)",
+      "source": "FA Section 9.6, page 126-127",
+      "target_field": "key_contract_provisions.ip_assignment",
+      "status": "promoted"
+    },
+    {
+      "fact": "Conversion example: $1.8M Annual Base Volume → $150K Monthly Base Volume; on $170K sales: $2,250 base + $600 growth = $2,850 Monthly Franchise Fee",
+      "source": "FA Section 7.1.2.5, page 124",
+      "target_field": "fees.royalty.conversion.example",
+      "status": "promoted"
+    },
+    {
+      "fact": "Insurer eligibility breach = immediate termination without cure (FA Section 12.5)",
+      "source": "FA Section 12.5, pages 129-130",
+      "target_field": "termination.insurer_eligibility_termination",
+      "status": "promoted"
+    },
+    {
+      "fact": "No subcontracting of services except to other ProColor franchisees (FA Section 12.3)",
+      "source": "FA Section 12.3, page 129",
+      "target_field": "key_contract_provisions.no_subcontracting",
+      "status": "promoted"
+    },
+    {
+      "fact": "Franchisor maintains fraud/misappropriation insurance on Insurers Account benefiting franchisees (FA Section 10.3)",
+      "source": "FA Section 10.3, page 127",
+      "target_field": "key_contract_provisions.insurers_account_insurance",
+      "status": "promoted"
+    },
+    {
+      "fact": "Books and records must be retained for 6 years (FA Section 8.1)",
+      "source": "FA Section 8.1, page 125",
+      "target_field": "key_contract_provisions.record_retention_years",
+      "status": "promoted"
+    },
+    {
+      "fact": "Franchisee may not withhold payments on grounds of franchisor non-performance (FA Section 29.13)",
+      "source": "FA Section 29.13, page 155",
+      "target_field": "key_contract_provisions.no_withholding",
+      "status": "promoted"
+    },
+    {
+      "fact": "Franchisor retains ALL supplier discounts, rebates, commissions, and is entitled to markup/profit on sales to franchisee (FA Section 13.4)",
+      "source": "FA Section 13.4, page 131",
+      "target_field": "key_contract_provisions.supplier_benefit_retention",
+      "status": "promoted"
+    },
+    {
+      "fact": "Going concern language present in 2023 financials: company depended on parent financial support; removed in 2024 financials",
+      "source": "Reader Report Pass A bullet 8, Exhibit E pages 109, 97",
+      "target_field": "item_21_financial_health.going_concern",
+      "status": "already_present"
+    }
+  ],
+  "total_promotions": 9,
+  "already_present": 1
+}

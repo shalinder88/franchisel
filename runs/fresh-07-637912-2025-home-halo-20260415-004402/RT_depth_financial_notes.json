@@ -1,0 +1,64 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-15",
+  "source_pages": [65, 66, 67],
+  "auditor": "Roos & McNabb CPA's, PC",
+  "opinion": "Unqualified (clean)",
+  "going_concern": false,
+  "accounting_policies": {
+    "basis_of_accounting": "Accrual basis — revenues recognized when earned, expenses when obligation incurred",
+    "revenue_recognition": {
+      "standard": "ASC Topic 606 (Revenue from Contracts with Customers)",
+      "franchise_royalties": "Recognized monthly when earned and deemed collectible",
+      "initial_franchise_fees": "Deferred until franchisee opens for business (performance obligations satisfied). Deferred revenue at Dec 31, 2024: $0",
+      "practical_expedient": "ASU Franchisors (Subtopic 952-606) — pre-opening services as single performance obligation"
+    },
+    "cash_equivalents": "Highly liquid investments with original maturities ≤3 months",
+    "accounts_receivable": "Stated at amount expected to collect; direct write-off method for bad debts; $0 bad debts for FY2024",
+    "property_equipment": {
+      "basis": "Stated at cost",
+      "depreciation_method": "Straight-line",
+      "useful_lives": "3 to 10 years",
+      "status_at_dec_31_2024": "No fixed assets owned"
+    },
+    "advertising_costs": "Expensed as incurred",
+    "income_taxes": {
+      "entity_type": "LLC — income/loss allocated to members/shareholders, no federal/state provision at entity level",
+      "local_taxes": "None for FY2024",
+      "uncertain_tax_positions": "Evaluated per ASC 740-10; no liability required at Dec 31, 2024",
+      "examination_period": "3 years after filing deadline"
+    },
+    "concentrations_of_credit_risk": "Cash in bank/deposit accounts may exceed FDIC limits; no losses experienced",
+    "use_of_estimates": "Required under GAAP; significant estimates include allowances for doubtful accounts, losses on contracts in process, percentage of completion",
+    "fair_value": {
+      "standard": "ASC Topic 820",
+      "approach": "Active market approach",
+      "levels_used": "Level 1 (quoted prices), Level 2 (observable), Level 3 (unobservable)"
+    },
+    "lease_accounting": {
+      "standard": "ASC 842 (adopted effective March 31, 2024)",
+      "status": "No lease agreements in place at Dec 31, 2024",
+      "rou_assets": 0,
+      "lease_liabilities": 0
+    }
+  },
+  "material_notes": {
+    "note1_business_activity": "Formed in Delaware. Principal purpose: offer and sell franchises providing non-medical at-home care services.",
+    "note2_accounting_policies": "See accounting_policies above",
+    "note3_initial_franchise_fee_revenue": "Deferred until franchisee opens. $0 deferred at Dec 31, 2024.",
+    "note4_subsequent_events": "Evaluated through January 27, 2025. Nothing requiring disclosure."
+  },
+  "items_not_present": [
+    "No impairment policy disclosed (no assets to impair)",
+    "No variable interest entities (VIE)",
+    "No related party transaction note (though revenue is 100% from affiliate)",
+    "No advertising fund accounting note (BDF had $0 collections in FY2024)",
+    "No debt/borrowing disclosures (zero liabilities)",
+    "No contingent liabilities"
+  ],
+  "observations": [
+    "Notable absence: No related party transaction disclosure despite 100% of revenue ($55,013) coming from the Iowa affiliate. This is a potential disclosure gap.",
+    "The Statement of Income line 'Amortization & Depreciation' shows $1,414 but the Balance Sheet and Cash Flow show $0 fixed assets and $0 depreciation. This is a minor inconsistency — the $1,414 may relate to startup cost amortization or an immaterial timing difference.",
+    "Entity has no physical assets, no leases, no receivables, no payables — it is essentially a cash-only entity supported by one affiliate's royalty payments."
+  ]
+}

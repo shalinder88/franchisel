@@ -1,0 +1,218 @@
+{
+  "extraction_date": "2026-04-15",
+  "filing_id": "638064-2025",
+  "brand": "Motto by Hilton",
+  "franchisor": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "entity_type": "Delaware LLC",
+    "formed": "September 2007",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "ultimate_parent": "Hilton Worldwide Holdings Inc.",
+    "ticker": "HLT",
+    "exchange": "NYSE",
+    "address": "7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102",
+    "phone": "703-883-1000",
+    "source_section": "Item 1",
+    "source_pages": [9, 10],
+    "confidence": "high"
+  },
+  "brand_info": {
+    "brand_name": "Motto by Hilton",
+    "brand_launch_date": "September 14, 2018",
+    "brand_type": "Compact urban lifestyle hotel",
+    "other_brands_count": "20+",
+    "restaurant_brands_available": true,
+    "source_section": "Item 1",
+    "source_pages": [9, 10],
+    "confidence": "high"
+  },
+  "issuance": {
+    "date": "March 30, 2025",
+    "state_filed": "Wisconsin (WI-DFI)",
+    "source_section": "Cover",
+    "source_pages": [1],
+    "confidence": "high"
+  },
+  "initial_fees": {
+    "franchise_application_fee_new": {"amount": 100000, "currency": "USD", "refundable": false, "notes": "Non-refundable after approval; $7,500 processing fee on withdrawal"},
+    "franchise_application_fee_coo": {"amount": 150000, "currency": "USD", "refundable": false},
+    "franchise_application_fee_relicensing": {"amount": 100000, "currency": "USD", "refundable": false},
+    "pip_fee": {"amount": 10000, "currency": "USD", "notes": "For conversion/COO/re-licensing"},
+    "onq_system_initial": {"low": 99050, "high": 219800, "currency": "USD"},
+    "other_startup_fees": {"amount": 5100, "currency": "USD"},
+    "restaurant_brand_initial_fee": {"amount": 47500, "currency": "USD", "notes": "Optional, per brand"},
+    "training_fees": {"low": 5000, "high": 17500, "currency": "USD"},
+    "opening_services_fee": {"amount": 20000, "currency": "USD"},
+    "source_section": "Item 5",
+    "source_pages": [23, 24],
+    "confidence": "high"
+  },
+  "ongoing_fees": {
+    "royalty": {"rate": "5%", "basis": "Gross Rooms Revenue", "notes": "First 10 approved: 3%/4%/5% ramp"},
+    "program_fee": {"rate": "4%", "basis": "Gross Rooms Revenue", "notes": "May increase up to 1% over term"},
+    "hilton_honors": {"rate": "4.3%", "basis": "Eligible guest folio", "notes": "Waived for on-property enrollments"},
+    "hilton_advance": {"rate": "1.35%", "basis": "Digital Direct Revenue", "cap": "$30/stay"},
+    "onq_connectivity": {"low_monthly": 400, "high_monthly": 600},
+    "hw_sw_maintenance": {"low_monthly": 1932, "high_monthly": 5625},
+    "connected_room_maintenance": {"low_monthly": 718, "high_monthly": 1058},
+    "brand_conference": {"amount_per_attendee": 2500, "notes": "GM + director of sales required annually"},
+    "source_section": "Item 6",
+    "source_pages": [24, 25, 26, 27, 28, 29],
+    "confidence": "high"
+  },
+  "investment": {
+    "prototype_rooms": 175,
+    "total_low": 19235559,
+    "total_high": 90960697,
+    "excludes": ["real estate", "market studies", "insurance", "interest"],
+    "construction_low": 8800000,
+    "construction_high": 65625000,
+    "ffe_low": 5950000,
+    "ffe_high": 8925000,
+    "additional_funds_low": 800000,
+    "additional_funds_high": 1200000,
+    "additional_funds_months": 3,
+    "source_section": "Item 7",
+    "source_pages": [40, 41, 42],
+    "confidence": "high"
+  },
+  "territory": {
+    "exclusive": false,
+    "protected_territory": false,
+    "restricted_area_provision_available": true,
+    "restricted_area_notes": "Optional, time-limited, does not cover other Hilton brands, gaming, timeshare, or acquired chains",
+    "encroachment_rights": "Franchisor may own/operate/franchise any business (including competing brands) anywhere, anytime",
+    "source_section": "Item 12",
+    "source_pages": [68, 69, 70],
+    "confidence": "high"
+  },
+  "term": {
+    "new_construction_years": 22,
+    "conversion_years": "10-20",
+    "coo_term": "Remaining term or as agreed",
+    "renewal_right": false,
+    "renewal_notes": "No right to renew. Re-licensing at franchisor's sole discretion with potentially materially different terms.",
+    "source_section": "Item 17",
+    "source_pages": [78],
+    "confidence": "high"
+  },
+  "termination": {
+    "by_franchisee": "Not authorized; unilateral termination = material breach + liquidated damages",
+    "by_franchisor_without_cause": "Condemnation or casualty only",
+    "curable_defaults": ["Payment (10-day cure)", "Construction deadline (10-day cure)", "Insurance (10-day cure)", "Other FA violations (30-day cure)"],
+    "non_curable_defaults": ["Repeated same violation in 24 months", "3 default notices in 12 months", "Bankruptcy/insolvency", "Loss of possession", "5 consecutive days non-operation", "Contesting System ownership", "Conduct adverse to reputation", "Fraud", "Unauthorized transfer", "Sanctions violation", "Guarantor breach", "Public health threat", "Becoming Competitor", "Cross-default"],
+    "source_section": "Item 17",
+    "source_pages": [79, 80, 81, 82],
+    "confidence": "high"
+  },
+  "transfer": {
+    "permitted_transfer_fee": 5500,
+    "coo_application_fee": 150000,
+    "conditions": "Must meet current qualifications, sign current FA, PIP compliance, not Competitor/Sanctioned Person",
+    "death_disability": "Transfer to immediate family within 1 year, must meet requirements",
+    "source_section": "Item 17",
+    "source_pages": [83, 84, 85],
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": "Cannot be licensor/franchisor of competing brand. May own minority interest, be franchisee, or manage for Competitor under conditions.",
+    "post_term": "None",
+    "source_section": "Item 17",
+    "source_pages": [86],
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "venue": "U.S. District Court E.D. Virginia (Alexandria) or Fairfax County VA state court or New York NY",
+    "franchisor_venue": "May sue where hotel is located",
+    "governing_law": "New York",
+    "arbitration": "None, except Puerto Rico (AAA/JAMS)",
+    "mediation": "Not required",
+    "source_section": "Item 17",
+    "source_pages": [87],
+    "confidence": "high"
+  },
+  "liquidated_damages": {
+    "pre_opening_site_reuse": "$13,000 per approved room",
+    "post_opening_before_2yr": "Greater of (60 x average monthly royalty) or ($13,000 x rooms)",
+    "post_opening_after_2yr": "60 x average monthly royalty",
+    "last_60_months": "Average monthly royalty x remaining months",
+    "source_section": "Item 6",
+    "source_pages": [34],
+    "confidence": "high"
+  },
+  "item_19": {
+    "fpr_provided": false,
+    "statement": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets.",
+    "substantiation_contact": "William Fortier, SVP-Development-Americas",
+    "source_section": "Item 19",
+    "source_pages": [88],
+    "confidence": "high"
+  },
+  "item_20": {
+    "total_franchised_end_2024": 5,
+    "total_company_owned_end_2024": 0,
+    "total_system_end_2024": 5,
+    "net_change_2024": 1,
+    "net_change_2023": 1,
+    "signed_not_opened": 8,
+    "projected_new_next_year": 1,
+    "transfers_2024": 0,
+    "terminations_2024": 0,
+    "gag_clause": true,
+    "gag_clause_text": "During the last 3 fiscal years, some current and former franchisees have signed provisions restricting their ability to speak about their experience with us.",
+    "franchisee_organization": false,
+    "source_section": "Item 20",
+    "source_pages": [88, 89, 90],
+    "confidence": "high"
+  },
+  "item_21": {
+    "auditor": "Cherry Bekaert (CBH)",
+    "opinion_type": "Unmodified (clean)",
+    "going_concern": false,
+    "entity_note": "Hilton Franchise Holding LLC — all Hilton brands consolidated, not just Motto",
+    "revenue_2024": 1502069000,
+    "revenue_2023": 1376897000,
+    "revenue_2022": 1229465000,
+    "net_income_2024": 1487571000,
+    "net_income_2023": 1372281000,
+    "net_income_2022": 1233442000,
+    "total_assets_2024": 1269897000,
+    "total_liabilities_2024": 692892000,
+    "members_equity_2024": 577005000,
+    "distribution_to_parent_2024": 1500000000,
+    "debt_guarantee": "Unconditionally guarantees certain Hilton debt obligations maturing 2025-2033; all assets and franchise contracts pledged as collateral",
+    "graduate_acquisition": "May 2024, ~$85M franchise contract intangible assets",
+    "tax_status": "Disregarded entity for US income tax; taxes at Hilton parent level",
+    "source_section": "Item 21 / Exhibit C",
+    "source_pages": [90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109],
+    "confidence": "high"
+  },
+  "litigation": {
+    "pending": [
+      {"case": "AAAA Property Partners LLC v. Hilton Franchise Holding LLC", "court": "M.D. Fla.", "filed": "January 24, 2025", "type": "breach of contract", "status": "pending, not served"},
+      {"case": "In re Extended Stay Hotel Antitrust Litigation", "court": "N.D. Cal.", "filed": "July 24, 2024", "type": "antitrust class action", "status": "pending"}
+    ],
+    "settled": [
+      {"case": "Soule v. Hilton Worldwide", "court": "Hawaii", "filed": "October 17, 2013", "type": "resort fee class action", "status": "settled August 2015", "amount": "$178,000 + vouchers"}
+    ],
+    "historical": [
+      {"case": "US v. Hilton Hotels Corp", "court": "D. Or.", "filed": "May 12, 1970", "type": "antitrust", "status": "consent judgment November 29, 1971"}
+    ],
+    "collection_suits_2024": "None",
+    "source_section": "Item 3",
+    "source_pages": [19, 20, 21, 22],
+    "confidence": "high"
+  },
+  "bankruptcy": {
+    "disclosed": false,
+    "source_section": "Item 4",
+    "source_pages": [22],
+    "confidence": "high"
+  },
+  "public_figures": {
+    "used": false,
+    "source_section": "Item 18",
+    "source_pages": [88],
+    "confidence": "high"
+  }
+}

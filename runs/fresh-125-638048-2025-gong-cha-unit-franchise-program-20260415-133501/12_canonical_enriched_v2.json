@@ -1,0 +1,170 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "Gong cha",
+  "fdd_id": "638048-2025",
+  "enrichment_version": "v2",
+  "item21_financial_structure": {
+    "entity_type": "Single-member LLC",
+    "tax_treatment": "Disregarded entity — all income/loss reported on parent's return",
+    "parent": "Gong cha Americas, Inc. (GCA)",
+    "capitalization": {
+      "initial_member_contribution": 500000,
+      "contribution_date": "2023",
+      "no_subsequent_contributions": true
+    },
+    "asset_composition": {
+      "cash_pct_of_assets": 26.0,
+      "receivables_pct_of_assets": 20.6,
+      "related_party_pct_of_assets": 26.9,
+      "intangibles_pct_of_assets": 26.2,
+      "notes": "Over 50% of assets are related-party receivables and intangible assets from common control transaction"
+    },
+    "liability_composition": {
+      "deferred_revenue_pct_of_liabilities": 45.0,
+      "brand_marketing_payable_pct": 23.0,
+      "franchisee_deposits_pct": 27.2,
+      "trade_payables_pct": 4.8,
+      "notes": "No debt. Liabilities are primarily operational (deferred revenue, franchise deposits, marketing fund payable)"
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "2024": {
+        "cash": 565896,
+        "accounts_receivable": 447326,
+        "other_current_assets": 6215,
+        "total_current_assets": 1019437,
+        "due_from_related_parties": 584984,
+        "intangible_assets_net": 568360,
+        "total_assets": 2172781,
+        "accounts_payable_accrued": 55774,
+        "brand_marketing_fund_payable": 265697,
+        "franchise_deposits_current": 100000,
+        "deferred_revenues_current": 86860,
+        "total_current_liabilities": 508331,
+        "franchise_deposits_lt": 215000,
+        "deferred_revenues_lt": 433965,
+        "total_liabilities": 1157296,
+        "members_equity": 1015485
+      },
+      "2023": {
+        "cash": 60611,
+        "accounts_receivable": 368576,
+        "total_current_assets": 429187,
+        "due_from_related_parties": 635343,
+        "intangible_assets_net": 670208,
+        "total_assets": 1734738,
+        "accounts_payable_accrued": 131286,
+        "brand_marketing_fund_payable": 83811,
+        "deferred_revenues_current": 174565,
+        "total_current_liabilities": 389662,
+        "franchise_deposits_lt": 365000,
+        "deferred_revenues_lt": 325893,
+        "total_liabilities": 1080555,
+        "members_equity": 654183
+      }
+    },
+    "income_statement": {
+      "2024": {
+        "franchise_fees_and_royalties": 1558968,
+        "brand_marketing_fund": 1045184,
+        "fees_from_other_services": 1496590,
+        "total_revenues": 4100742,
+        "operating_expenses": 3739440,
+        "income_from_operations": 361302,
+        "interest_income": 0,
+        "net_income": 361302
+      },
+      "2023": {
+        "franchise_fees_and_royalties": 858977,
+        "brand_marketing_fund": 789324,
+        "fees_from_other_services": 1245279,
+        "total_revenues": 2893580,
+        "operating_expenses": 2754456,
+        "income_from_operations": 139124,
+        "interest_income": 15059,
+        "net_income": 154183
+      }
+    },
+    "cash_flow": {
+      "2024": {
+        "net_cash_from_operations": 505285,
+        "investing_activities": 0,
+        "financing_activities": 0,
+        "net_change_in_cash": 505285,
+        "cash_ending": 565896
+      },
+      "2023": {
+        "net_cash_from_operations": -756487,
+        "investing_activities": 317098,
+        "financing_activities": 500000,
+        "net_change_in_cash": 60611,
+        "cash_ending": 60611
+      }
+    },
+    "unaudited_stub_feb2025": {
+      "total_revenue": 681992,
+      "operating_expenses": 614043,
+      "net_income": 67949,
+      "cash_ending": 309659,
+      "total_assets": 1995043,
+      "members_equity": 1083437
+    }
+  },
+  "item6_fee_detail": {
+    "ongoing_fees": [
+      {"fee": "Royalty", "rate": "6%", "basis": "weekly Net Sales", "frequency": "weekly", "mandatory": true},
+      {"fee": "Brand Marketing", "rate": "1% (can increase to 2%)", "basis": "weekly Net Sales", "frequency": "weekly", "mandatory": true},
+      {"fee": "Regional Marketing", "rate": "up to 2%", "basis": "Net Sales", "frequency": "as directed", "mandatory": "if coop established"},
+      {"fee": "Local Advertising", "rate": "up to 2%", "basis": "Net Sales", "frequency": "monthly", "mandatory": "as designated"},
+      {"fee": "Technology SaaS (POS)", "amount": "$295/month", "mandatory": true},
+      {"fee": "Technology SaaS (beverage maker)", "amount": "$313/year (from year 2)", "mandatory": true},
+      {"fee": "Health & Safety Audits", "amount": "$200-$400 each, up to 4/year", "mandatory": true}
+    ],
+    "event_driven_fees": [
+      {"fee": "Renewal Fee", "amount": "50% of then-current standard IFF", "trigger": "renewal"},
+      {"fee": "Transfer Fee", "amount": "50% of then-current standard IFF + $5,000 (ADA)", "trigger": "transfer"},
+      {"fee": "Relocation Fee", "amount": "50% of IFF + costs", "trigger": "relocation"},
+      {"fee": "Late Payment", "amount": "5% of overdue amount", "trigger": "late payment"},
+      {"fee": "Interest", "amount": "1.5%/month or state max", "trigger": "overdue amounts"},
+      {"fee": "Prohibited Product", "amount": "$250/day", "trigger": "unapproved product"},
+      {"fee": "Audit", "amount": "cost of audit", "trigger": "understatement ≥3%"},
+      {"fee": "H&S Revisit Penalty 1", "amount": "$500", "trigger": "fail 1st revisit"},
+      {"fee": "H&S Revisit Penalty 2", "amount": "$11,000", "trigger": "fail 2nd revisit"}
+    ],
+    "aggregate_advertising_cap": "4% of Net Sales (can exceed if coop votes to increase)"
+  },
+  "revenue_disaggregation": {
+    "2024": {
+      "point_in_time": {
+        "franchise_fees": 56600,
+        "royalties": 1021325,
+        "brand_marketing_fund": 1045184,
+        "fees_from_other_services": 1496590,
+        "subtotal": 3619699
+      },
+      "over_time": {
+        "franchise_fees": 481043
+      },
+      "total": 4100742
+    },
+    "source_pages": [130]
+  },
+  "intangible_assets": {
+    "franchise_relationships": {"carrying": 691511, "accum_amort": 158433, "net": 533078, "useful_life_years": 10},
+    "master_franchise_agreements": {"carrying": 46597, "accum_amort": 11315, "net": 35282, "useful_life_years": 10},
+    "total_net": 568360,
+    "annual_amortization": 101849,
+    "source_pages": [133, 134]
+  },
+  "deferred_revenue_schedule": {
+    "2025": 86860,
+    "2026": 66186,
+    "2027": 56811,
+    "2028": 47436,
+    "2029": 47436,
+    "thereafter": 216096,
+    "total": 520825,
+    "source_pages": [131]
+  }
+}

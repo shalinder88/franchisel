@@ -1,0 +1,169 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637932-2025",
+  "enrichment_version": "v2",
+  "item21_financial_structure_detail": {
+    "entity_legal_form": "Delaware LLC",
+    "tax_status": "Pass-through (not subject to federal income taxes)",
+    "sole_member": "ESH Hospitality Strategies LLC",
+    "auditor": "Deloitte & Touche LLP",
+    "audit_report_date": "2025-03-24",
+    "accounting_standards": "US GAAP",
+    "emphasis_of_matter": "Significant related party transactions with affiliated entities",
+    "going_concern_doubt": false,
+    "no_external_debt": true,
+    "related_party_relationships": [
+      {"entity": "ESH Hospitality Strategies LLC", "relationship": "Sole member/parent"},
+      {"entity": "ESH Strategies Branding LLC", "relationship": "Trademark licensor (5% of franchise royalties)"},
+      {"entity": "ESA Management LLC", "relationship": "Manager of owned/some franchised hotels"},
+      {"entity": "ESH Hospitality, Inc. (ESH REIT)", "relationship": "Hotel owner; disbursements on behalf of Company"}
+    ]
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "2024": {
+        "cash": 9170,
+        "accounts_receivable": 1911,
+        "total_current_assets": 11580,
+        "intangible_assets_net": 5371,
+        "contract_acquisition_costs": 2227,
+        "total_assets": 19178,
+        "due_to_affiliates": 2770,
+        "total_current_liabilities": 3783,
+        "deferred_revenue_total": 4842,
+        "total_liabilities": 10983,
+        "members_capital": 8195,
+        "current_ratio": 3.06,
+        "debt_to_equity": 1.34
+      },
+      "2023": {
+        "cash": 8537,
+        "accounts_receivable": 2423,
+        "total_current_assets": 11530,
+        "intangible_assets_net": 6028,
+        "contract_acquisition_costs": 2292,
+        "total_assets": 20153,
+        "due_to_affiliates": 4776,
+        "total_current_liabilities": 6082,
+        "deferred_revenue_total": 4478,
+        "total_liabilities": 13582,
+        "members_capital": 6571,
+        "current_ratio": 1.90,
+        "debt_to_equity": 2.07
+      }
+    },
+    "income_statement": {
+      "2024": {
+        "franchise_fees": 9391,
+        "system_service_fees": 10888,
+        "direct_reimbursements": 3057,
+        "other_revenues": 2482,
+        "total_revenues": 25818,
+        "system_service_expenses": 12188,
+        "direct_reimbursable_expenses": 3057,
+        "ga_expenses": 7697,
+        "trademark_license": 429,
+        "amortization": 910,
+        "total_expenses": 24281,
+        "net_income": 1537,
+        "operating_margin_pct": 5.95,
+        "revenue_growth_pct": 40.0,
+        "ssf_expense_vs_revenue_gap": -1300,
+        "contract_termination_fees_in_other": 2100
+      },
+      "2023": {
+        "franchise_fees": 7124,
+        "system_service_fees": 8619,
+        "direct_reimbursements": 2372,
+        "other_revenues": 324,
+        "total_revenues": 18439,
+        "system_service_expenses": 10560,
+        "direct_reimbursable_expenses": 2372,
+        "ga_expenses": 6929,
+        "trademark_license": 351,
+        "amortization": 399,
+        "total_expenses": 20611,
+        "net_income": -2172,
+        "operating_margin_pct": -11.78,
+        "ssf_expense_vs_revenue_gap": -1941
+      }
+    },
+    "cash_flow": {
+      "2024": {
+        "operating_cash_flow": 1155,
+        "investing_cash_flow": -522,
+        "financing_cash_flow": 0,
+        "net_change_in_cash": 633,
+        "ending_cash": 9170
+      },
+      "2023": {
+        "operating_cash_flow": 1913,
+        "investing_cash_flow": -89,
+        "financing_cash_flow": 3000,
+        "net_change_in_cash": 4824,
+        "ending_cash": 8537
+      }
+    },
+    "members_capital_changes": {
+      "balance_2022": 5393,
+      "net_loss_2023": -2172,
+      "contributions_2023": 3350,
+      "balance_2023": 6571,
+      "net_income_2024": 1537,
+      "contributions_2024": 87,
+      "balance_2024": 8195
+    },
+    "all_amounts_in_thousands": true
+  },
+  "item6_fee_detail": {
+    "grr_definition": {
+      "includes": [
+        "Room revenues (barter and credit, before commissions/discounts)",
+        "Loyalty program point redemptions",
+        "Mandatory guest fees",
+        "Group booking rebates/commissions",
+        "Business interruption insurance proceeds",
+        "Guaranteed no-show revenue",
+        "Cancellation fees",
+        "Miscellaneous fees charged to all guests"
+      ],
+      "excludes": [
+        "Sales/room/other taxes collected for transmittal",
+        "Vending revenue",
+        "Laundry exchange revenue",
+        "Laundry machine revenue"
+      ],
+      "accounting_standard": "USALI 11th Revised Edition (2014)"
+    },
+    "ssf_spending_2024": {
+      "total_spent": 5326228,
+      "as_pct_of_franchisee_grr": 2.4,
+      "allocation": {
+        "digital_marketing_internet_advertising": 0.72,
+        "administrative_fees": 0.17,
+        "other_marketing_seo": 0.11
+      },
+      "pooled_across_brands": true,
+      "no_proportionality_obligation": true,
+      "no_periodic_accounting_provided": true
+    },
+    "liquidated_damages_formula": {
+      "pre_opening": "rooms x $3,000",
+      "first_operating_year": "avg_monthly_royalty x 60",
+      "after_first_year_more_than_5_remaining": "5 x prior_12_month_royalty",
+      "less_than_5_remaining": "remaining_days x avg_daily_royalty",
+      "note": "Full contractual rates used even if temporary reductions were granted",
+      "casualty_condemnation": "Same formula applies; also pays portion of insurance proceeds"
+    },
+    "example_annual_fees_123_room_hotel": {
+      "assumed_revpar": 42.30,
+      "assumed_annual_grr": 1899472,
+      "royalty_5_5_pct": 104471,
+      "ssf_4_5_pct": 85476,
+      "pms_fees_annual": 5710,
+      "subtotal_core": 195657,
+      "digital_marketing_commission_estimate": "Additional 5% on paid digital portion of GRR (varies)",
+      "note": "Does not include booking commissions, Agoda fee, conference, AHLA, or other event-driven fees"
+    }
+  }
+}

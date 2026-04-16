@@ -1,0 +1,99 @@
+{
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "table1_all_salons": {
+      "population": 4147,
+      "service_sales_avg": 388522,
+      "service_sales_median": 371729,
+      "product_sales_avg": 10657,
+      "product_sales_median": 8925,
+      "total_sales_avg": 399179,
+      "total_sales_median": 382316,
+      "total_sales_low": 37920,
+      "total_sales_high": 1099873,
+      "pct_at_or_above_avg": 44.78
+    },
+    "table2_reporting_salons": {
+      "population": 2175,
+      "total_sales_avg": 413389,
+      "total_sales_median": 393907,
+      "operating_cash_flow_avg": 82637,
+      "operating_cash_flow_median": 75851,
+      "operating_cash_flow_high": 412669,
+      "operating_cash_flow_low": -116986,
+      "expense_breakdown": {
+        "labor_pct": 48.92,
+        "occupancy_pct": 10.83,
+        "products_pct": 1.75,
+        "franchise_fees_pct": 6.03,
+        "advertising_pct": 5.32,
+        "other_pct": 7.16,
+        "total_expenses_pct": 80.01
+      }
+    },
+    "table3_by_range": [
+      {"range": "<$250K", "count": 196, "avg_sales": 208509, "cash_flow_pct": -1.74, "cash_flow_dollars": -3635},
+      {"range": "$250-300K", "count": 258, "avg_sales": 276787, "cash_flow_pct": 7.90, "cash_flow_dollars": 21875},
+      {"range": "$300-350K", "count": 335, "avg_sales": 324702, "cash_flow_pct": 14.30, "cash_flow_dollars": 46424},
+      {"range": "$350-400K", "count": 342, "avg_sales": 375725, "cash_flow_pct": 18.51, "cash_flow_dollars": 69565},
+      {"range": "$400-450K", "count": 291, "avg_sales": 424099, "cash_flow_pct": 20.52, "cash_flow_dollars": 87014},
+      {"range": "$450-500K", "count": 241, "avg_sales": 474295, "cash_flow_pct": 23.06, "cash_flow_dollars": 109367},
+      {"range": "$500-600K", "count": 289, "avg_sales": 544879, "cash_flow_pct": 25.77, "cash_flow_dollars": 140420},
+      {"range": ">$600K", "count": 223, "avg_sales": 692295, "cash_flow_pct": 27.98, "cash_flow_dollars": 193727}
+    ]
+  },
+  "item20_yearly_activity": {
+    "2024": {"opened": 115, "terminated": 4, "non_renewed": 1, "reacquired": 0, "ceased_other": 98, "net_change": 12, "transfers": 207},
+    "2023": {"opened": 98, "terminated": 3, "non_renewed": 6, "reacquired": 0, "ceased_other": 89, "net_change": 0, "transfers": 164},
+    "2022": {"opened": 116, "terminated": 4, "non_renewed": 4, "reacquired": 0, "ceased_other": 128, "net_change": -20, "transfers": 325}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 19,
+    "exhibit_letters": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S"],
+    "critical_exhibits": ["E", "F", "P"],
+    "state_addenda_states": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Wisconsin"]
+  },
+  "item21_structural_facts": {
+    "auditor_location": "Minneapolis, Minnesota",
+    "audit_date": "2025-03-26",
+    "opinion_type": "Unqualified",
+    "going_concern": false,
+    "c_corporation": true,
+    "converted_from_s_corp": "2019-01-01",
+    "fiscal_year_end": "December 31",
+    "accounting_basis": "US GAAP",
+    "depreciation_method": "Straight-line",
+    "goodwill_fully_amortized": true,
+    "lease_standard": "ASC 842",
+    "revenue_recognition": "ASC 606",
+    "initial_fee_amortization_period_years": 12
+  },
+  "item1_structural_facts": {
+    "entity_type": "Corporation",
+    "state_of_incorporation": "Minnesota",
+    "incorporation_date": "1982-07-12",
+    "franchising_since": 1983,
+    "no_predecessors": true,
+    "no_affiliates": true,
+    "business_description": "Specialized retailer of haircare and personal grooming services and products",
+    "salon_type": "Shopping center locations primarily",
+    "programs_offered": ["Single Franchise Agreement", "Three Star Program", "Master Development Agreement"]
+  },
+  "item6_fee_attributes": {
+    "total_ongoing_royalty_rate": 0.11,
+    "royalty_rate": 0.06,
+    "ad_fund_rate": 0.05,
+    "payment_frequency": "biweekly",
+    "payment_method": "ACH automatic withdrawal",
+    "late_charge_rate": 0.14,
+    "renewal_fee": 1750,
+    "assignment_fee": 1500,
+    "tech_annual_per_salon": {
+      "pos_software": 3000,
+      "managed_services": 227.88,
+      "training": 200,
+      "recruiting_tech": 750,
+      "mobile_device_mgmt": 54
+    }
+  }
+}

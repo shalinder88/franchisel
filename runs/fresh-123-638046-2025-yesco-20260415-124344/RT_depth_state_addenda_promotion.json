@@ -1,0 +1,56 @@
+{
+  "depth_pass": "state_addenda_structured_promotion",
+  "extraction_date": "2026-04-15",
+  "states_with_addenda": ["Illinois", "Indiana", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Wisconsin"],
+  "overrides": [
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Venue must be in Illinois; cannot designate outside IL", "why_it_matters": "IL franchisees can litigate locally instead of traveling to Utah", "source_pages": [163]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Illinois law governs the Franchise Agreement", "why_it_matters": "IL franchise protections apply instead of Utah law", "source_pages": [163]},
+    {"state": "Illinois", "affected_family": "termination", "override_summary": "Termination/non-renewal rights per IL Franchise Disclosure Act Sections 19-20", "why_it_matters": "Additional protections beyond franchise agreement terms", "source_pages": [163]},
+    {"state": "Illinois", "affected_family": "damages", "override_summary": "Statute of limitations (Section 18.11) deleted entirely", "why_it_matters": "IL statute of limitations applies instead of 1-year contractual limit", "source_pages": [164]},
+    {"state": "Illinois", "affected_family": "general_release", "override_summary": "Anti-waiver provision; no waiver of IL franchise law claims", "why_it_matters": "Cannot be forced to waive IL franchise law rights", "source_pages": [163]},
+
+    {"state": "Indiana", "affected_family": "general_release", "override_summary": "Release cannot waive Indiana franchise law rights", "why_it_matters": "IN franchise law protections preserved", "source_pages": [165]},
+    {"state": "Indiana", "affected_family": "damages", "override_summary": "Jury trial waiver and litigation limitations not enforceable in IN", "why_it_matters": "Right to jury trial preserved for IN franchisees", "source_pages": [165]},
+
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General release on renewal/transfer excludes MD Franchise Law liability", "why_it_matters": "Cannot be forced to release MD franchise law claims on renewal or transfer", "source_pages": [167]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Any MD franchise claims may be brought in Federal District Court in Maryland", "why_it_matters": "MD franchisees can sue in MD for MD franchise law claims", "source_pages": [167]},
+    {"state": "Maryland", "affected_family": "damages", "override_summary": "3-year statute of limitations for MD franchise claims", "why_it_matters": "3 years instead of 1-year contractual limit", "source_pages": [168]},
+
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Cannot require litigation outside Minnesota", "why_it_matters": "MN franchisees can litigate locally", "source_pages": [169, 170]},
+    {"state": "Minnesota", "affected_family": "damages", "override_summary": "No jury trial waiver; no liquidated damages; no termination penalties; 3-year SOL", "why_it_matters": "Broad protections against one-sided contract provisions", "source_pages": [169]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days notice of termination (60 cure); 180 days notice of non-renewal", "why_it_matters": "Significantly more time to cure or prepare for non-renewal than base agreement", "source_pages": [169]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Cannot require release of MN franchise law claims on renewal or assignment", "why_it_matters": "MN franchise law rights preserved through renewal/transfer", "source_pages": [169]},
+    {"state": "Minnesota", "affected_family": "noncompete", "override_summary": "Subject to MN franchise law protections (MN Stat 80C)", "why_it_matters": "MN law limits enforceability", "source_pages": [170]},
+
+    {"state": "New York", "affected_family": "general_release", "override_summary": "Article 33 of General Business Law rights preserved; anti-waiver provision", "why_it_matters": "NY franchise law protections cannot be waived", "source_pages": [173, 174]},
+    {"state": "New York", "affected_family": "termination", "override_summary": "Franchisee may terminate on any grounds available by law", "why_it_matters": "Broader termination rights than base agreement", "source_pages": [174]},
+
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Post-term covenants not to compete generally unenforceable in ND", "why_it_matters": "ND franchisees can compete after termination", "source_pages": [176]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Cannot require litigation, arbitration, or mediation outside ND", "why_it_matters": "All dispute resolution must be accessible in ND", "source_pages": [176]},
+    {"state": "North Dakota", "affected_family": "damages", "override_summary": "No punitive damages waiver; no jury trial waiver; no liquidated damages; no limitation of claims; prevailing party attorney fees", "why_it_matters": "Most comprehensive franchisee protections of any state", "source_pages": [176, 177]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "ND law governs franchise claims; ND statute of limitations applies", "why_it_matters": "ND franchise law applies instead of Utah law for franchise claims", "source_pages": [176]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "Cannot require general release upon renewal", "why_it_matters": "Renewal cannot be conditioned on releasing past claims", "source_pages": [176]},
+
+    {"state": "Rhode Island", "affected_family": "forum_selection", "override_summary": "Venue restriction void for RI franchise law claims", "why_it_matters": "RI franchisees can litigate locally for RI franchise claims", "source_pages": [179]},
+    {"state": "Rhode Island", "affected_family": "governing_law", "override_summary": "Choice of law restriction void for RI franchise law claims", "why_it_matters": "RI franchise law applies instead of Utah law", "source_pages": [179]},
+
+    {"state": "Virginia", "affected_family": "termination", "override_summary": "Cancellation without reasonable cause is unlawful per VA Retail Franchising Act", "why_it_matters": "Additional termination protection", "source_pages": [181]},
+
+    {"state": "Wisconsin", "affected_family": "termination", "override_summary": "90 days written notice (60 cure); 10 days cure for nonpayment", "why_it_matters": "More cure time than base agreement", "source_pages": [182, 183]},
+    {"state": "Wisconsin", "affected_family": "governing_law", "override_summary": "WI Fair Dealership Law supersedes any inconsistent franchise agreement provisions", "why_it_matters": "WI law provides overriding protections", "source_pages": [183]}
+  ],
+  "summary_table": {
+    "override_families": {
+      "forum_selection": ["Illinois", "Maryland", "Minnesota", "North Dakota", "Rhode Island"],
+      "governing_law": ["Illinois", "North Dakota", "Rhode Island", "Wisconsin"],
+      "noncompete": ["Minnesota", "North Dakota"],
+      "general_release": ["Illinois", "Indiana", "Maryland", "Minnesota", "New York", "North Dakota"],
+      "termination": ["Illinois", "Minnesota", "New York", "Virginia", "Wisconsin"],
+      "notice_cure": ["Minnesota", "Wisconsin"],
+      "damages": ["Illinois", "Indiana", "Maryland", "Minnesota", "North Dakota"],
+      "interest_rate": []
+    },
+    "states_count": 9,
+    "total_overrides": 27
+  }
+}

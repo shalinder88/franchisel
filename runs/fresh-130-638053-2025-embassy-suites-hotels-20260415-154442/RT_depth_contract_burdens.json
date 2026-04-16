@@ -1,0 +1,143 @@
+{
+  "depth_pass": "contract_burdens",
+  "source": "Exhibit D — Franchise Agreement (pages 127-182)",
+  "burdens": {
+    "grant_and_term": {
+      "grant": "Non-exclusive license to use System at specified location (§2.1)",
+      "reserved_rights": "Franchisor reserves all rights not expressly granted (§2.2)",
+      "restricted_area": "Optional, negotiated (§2.3)",
+      "term_new": "23 years from Effective Date",
+      "term_conversion": "10-20 years from Opening Date",
+      "no_renewal": true,
+      "source_pages": [130]
+    },
+    "fee_obligations": {
+      "monthly_royalty": "3.5%/4.5%/5.5% GRR ramp (new dev); 5.5% flat (COO/relic) (§8.1)",
+      "monthly_program_fee": "4% GRR, adjustable up to +1% over term (§8.1)",
+      "calculation": "Per Uniform System of Accounts for Lodging Industry (§8.2)",
+      "other_fees": "Per Item 6 schedule (§8.3)",
+      "taxes": "Franchisee pays any sales/use/gross receipts tax on franchisor's fee receipts (§8.4)",
+      "set_off": "Franchisor may reduce any payment to franchisee by amounts owed (§8.7)",
+      "guaranty": "Required from principals/spouses as determined (§8.6)",
+      "source_pages": [130]
+    },
+    "construction_requirements": {
+      "necessary_consents": "Must get approval of architect, designer, GC, major subs (§6.1.1)",
+      "plan_approval": "Must get approval of plans/specs before starting construction (§6.1.2-6.1.4)",
+      "commencement": "New dev: 16 months from application approval; Conv: per PIP (§6.3)",
+      "completion": "New dev: 36 months from approval; Conv: per PIP (§6.3)",
+      "opening": "Must receive written authorization before opening (§6.4)",
+      "unauthorized_opening": "$5,000/day liquidated damages (§6.4.4)",
+      "refurbishment": "Must comply with FRCM renovation schedules and Standards changes (§6.6)",
+      "source_pages": [130, 131]
+    },
+    "training_obligations": {
+      "required": "GM and key personnel must complete all required training programs (§4.1, 5.1.5)",
+      "replacement": "Replacements must complete training within 90 days (§4.1)",
+      "source_pages": [130]
+    },
+    "operational_obligations": {
+      "standards_compliance": "Must comply with Standards/Manual at all times (§5.1)",
+      "24_7_operation": "Must operate 24/7 except as permitted (§5.1)",
+      "management_approval": "Management (self or Management Company) must be approved (§7.0)",
+      "reservation_service": "Must use Hilton Reservation Service exclusively for outgoing referrals",
+      "hilton_honors": "Must participate in all required loyalty programs",
+      "advertising": "All marketing materials require pre-approval",
+      "data_ownership": "All hotel/guest data is franchisor property (§10.4)",
+      "privacy": "Must comply with all applicable privacy laws (§10.5)",
+      "source_pages": [130, 131]
+    },
+    "termination_triggers": {
+      "curable_10_day": ["Payment defaults", "Insurance defaults", "Construction deadline defaults"],
+      "curable_30_day": ["Any other FA breach"],
+      "non_curable_16_grounds": [
+        "Repeat non-compliance within 24 months",
+        "3 default notices in 12 months",
+        "Insolvency/failure to pay debts",
+        "Bankruptcy filing",
+        "Loss of possession",
+        "5+ day cessation",
+        "Contesting marks/system ownership",
+        "Conduct adversely affecting reputation",
+        "Concealing revenues/false records",
+        "Unauthorized transfer",
+        "Sanctioned Person status",
+        "Gaming license disclosure issues",
+        "Guarantor breach",
+        "Public health/safety threat",
+        "Becoming a Competitor",
+        "Termination of any Hotel Agreement"
+      ],
+      "source_pages": [131]
+    },
+    "transfer_restrictions": {
+      "permitted_without_notice": "Publicly traded equity, <50% private equity (no control change), institutional fund transfers (§12.2.1.1)",
+      "permitted_with_notice": "Affiliate, family, trust, death, >50% cumulative equity change — 60 days notice + consent + $5,500 (§12.2.1.2)",
+      "change_of_ownership": "$200,000 fee, 60 days notice, full compliance, transferee meets new-franchisee standards, signs current FA (§12.2.2)",
+      "prohibited_to": "Competitors, Sanctioned Persons",
+      "source_pages": [131]
+    },
+    "noncompete": {
+      "during_term": "No ownership/licensing of competing brand; may be franchisee or manage competitor; may own minority interest (§5.1.29)",
+      "post_term": "None (§ — not applicable)",
+      "source_pages": [131]
+    },
+    "guaranty_scope": {
+      "type": "Personal guaranty from required principals",
+      "scope": "Certain obligations under FA (determined after financial review)",
+      "spousal": "May include spouse of owner",
+      "third_party": "May require third-party guaranty as condition of lender comfort letter or cure of default",
+      "exhibit": "Exhibit E",
+      "source_pages": [130]
+    },
+    "liquidated_damages": {
+      "pre_opening": "System's Avg Monthly Royalty × 60 (§13.4)",
+      "post_opening_first_2_yrs": "Greater of Hotel's or System's Avg Monthly Royalty × 60 (§13.4)",
+      "post_opening_after_2_yrs": "Hotel's Avg Monthly Royalty × 60 (§13.4)",
+      "last_60_months": "Hotel's Avg Monthly Royalty × remaining months (§13.4)",
+      "actual_damages_alternative": "Under special circumstances, franchisor may elect actual damages instead (§13.5)",
+      "unauthorized_opening": "$5,000/day (§6.4.4)",
+      "source_pages": [131]
+    },
+    "venue_and_dispute_resolution": {
+      "governing_law": "New York (§16.2.1)",
+      "venue": "ED Virginia (Alexandria) or state court in Fairfax County, VA or NYC; franchisor may sue where hotel is located (§16.2.2)",
+      "jury_waiver": "Both parties waive jury trial (§17.1)",
+      "punitive_damages_waiver": "Both parties waive punitive/exemplary damages (§17.2)",
+      "arbitration": "None (except Puerto Rico: AAA/JAMS) (§16.2.2)",
+      "source_pages": [131, 167]
+    },
+    "indemnification": {
+      "scope": "Franchisee must defend, indemnify, hold harmless franchisor, Hilton Worldwide, all affiliates, subsidiaries, officers, directors, employees, agents, successors, assigns (§14)",
+      "trigger": "Any action, claim, demand, proceeding arising from hotel operations",
+      "notice": "5 days written notice of any action (§14.3)",
+      "survival": "Survives termination/expiration (§14.5)",
+      "separate_counsel": "Franchisor may obtain separate counsel at franchisee expense if interests conflict (§14.4)",
+      "no_mitigation_required": "Indemnified parties need not seek recovery from third parties (§14.4)",
+      "source_pages": [162]
+    },
+    "general_release": {
+      "scope": "On execution of FA, franchisee releases franchisor from all claims existing before Effective Date (§16.8)",
+      "exception": "Claims related to representations in FDD",
+      "survival": "Survives termination",
+      "source_page": 164
+    },
+    "force_majeure": {
+      "provision": "Events of Force Majeure may excuse failure to operate for 5+ consecutive days (§13.2(6))",
+      "casualty": "Hotel must reopen within 18 months after casualty-caused closure; extensions negotiable (§11.2)",
+      "condemnation": "Franchisor may terminate; no liquidated damages (§11.1)",
+      "no_term_extension": "Force majeure or casualty does not extend the Term (§11.3)",
+      "source_pages": [131]
+    },
+    "distinctive_clauses": {
+      "jury_waiver": "Mutual jury trial waiver (§17.1)",
+      "punitive_damages_waiver": "Mutual waiver of punitive/exemplary damages (§17.2)",
+      "economic_conditions_not_defense": "Economic downturn or financial inability is not a defense to breach (§16.10)",
+      "confidentiality_of_negotiated_terms": "Franchisee may not disclose negotiated terms without consent; violation is default (§16.18)",
+      "consent_limited_remedy": "Franchisee may not claim money damages for unreasonably withheld consent; sole remedy is specific performance (§16.6.2)",
+      "exemption_acknowledgment": "Franchisee acknowledges investment exceeds $1,469,600 FTC exemption threshold (§18)",
+      "collateral_pledge": "All HFH assets and franchise contracts pledged as collateral for Hilton's debt (Note 7 of financial statements)",
+      "source_pages": [164, 165, 167]
+    }
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "depth_pass": "1_financial_notes",
+  "brand": "Regal Nails, Salon & Spa",
+  "notes": [
+    {
+      "note_number": "1",
+      "title": "Summary of Operations and Significant Accounting Policies",
+      "source_pages": [334, 335, 336, 337, 338, 339],
+      "sub_policies": {
+        "A_business_operations": "Franchises right to operate full-service nail salons; majority of locations sublet in Walmart stores",
+        "B_consolidation": "FASB ASC 810; all significant intercompany eliminated",
+        "C_basis": "Accrual basis, US GAAP",
+        "D_cash_equivalents": "Cash and highly liquid investments with maturity ≤3 months",
+        "E_accounts_notes_receivable": "Stated at expected collectible amount; allowance based on historical credit rates. Allowance for doubtful accounts: $361,213 (2024), $385,000 (2023). Past due receivables: $807,681 (2024), $883,800 (2023). Notes receivable allowance: $0 (2024), $28,390 (2023)",
+        "F_property_equipment": "Cost basis, straight-line depreciation. Building/improvements 15-30 years; Equipment/furniture 3-7 years; Vehicles 3-7 years",
+        "G_intangible_assets": "FASB ASC 350; franchise agreements and acquired intangibles at cost, straight-line amortization 60-180 months",
+        "H_contract_liabilities": "Payments received before performance obligation satisfaction. Prospect deposits (initial, site, confirmation) liquidated on revenue recognition or refunded. Security deposits refunded or applied at termination. No contract assets as of 2024 or 2023",
+        "I_revenue_recognition": "ASU 2014-09 (Topic 606). Franchise license = separate performance obligation (right to use). Monthly franchise fees: straight-line over contract life. Goods/charges: point in time when control transfers. License renewals: recognized no earlier than renewal period beginning. Sublease income: Topic 842, recognized over lease term. Incremental costs of obtaining contract: expensed as incurred (practical expedient)",
+        "J_income_taxes": "LLC treated as partnership/S-corp for US tax — income passes through to members. Foreign subsidiaries (Canada, UK, Mexico) subject to local taxes. Income tax expense: $12,162 (2024), $18,425 (2023). No uncertain tax positions.",
+        "K_foreign_currency": "Functional currency = local currency. Translation: assets/liabilities at period-end rate, equity at historical, income at average. Translation adjustments: ($7,450) and $13,274. Transaction losses: $58,808 and $10,292 in non-operating expenses",
+        "L_reclassifications": "Certain 2023 reclassifications for comparability; no material change to equity or net income",
+        "M_use_of_estimates": "Standard GAAP requirement",
+        "N_compensated_absences": "Personal days based on years of service; not cumulative; unused days paid at termination. Balance: $0 at both year-ends",
+        "O_advertising": "Expensed as incurred. $215,010 (2024), $48,747 (2023)"
+      }
+    },
+    {
+      "note_number": "2",
+      "title": "Notes Receivable",
+      "source_pages": [339, 340],
+      "detail": {
+        "franchisee_notes": {"current": 70075, "non_current": 24488, "rate": "8-12%", "terms": "12-60 months"},
+        "employee_notes": {"current": 15500},
+        "related_party_notes": {"current": 2150000, "non_current": 1750000},
+        "total_2024": 4010063,
+        "total_2023": 3625085,
+        "maturity_2025": 2235575,
+        "maturity_2026": 924488,
+        "maturity_2027": 850000
+      }
+    },
+    {
+      "note_number": "3",
+      "title": "Due from Affiliates",
+      "source_pages": [340],
+      "detail": {
+        "current": {"CDJ_Ventures": 26190, "HCD_Anti_Aging": 12234, "RXBA": 0},
+        "non_current": {"Regal_Nails_LLC": 734584, "Alfalfa_Nail_Supply": 2618504},
+        "total_2024": 3391512
+      }
+    },
+    {
+      "note_number": "4",
+      "title": "Property and Equipment",
+      "source_pages": [341],
+      "detail": {
+        "building_improvements": 1061668,
+        "equipment_furniture": 627824,
+        "land_improvements": 62413,
+        "vehicles": 46319,
+        "gross": 1798224,
+        "accumulated_depreciation": 1055797,
+        "net": 742427,
+        "depreciation_in_opex_2024": 44268,
+        "depreciation_in_non_opex_2024": 16886
+      }
+    },
+    {
+      "note_number": "5",
+      "title": "Operating ROU Assets and Subleased Assets",
+      "source_pages": [341],
+      "detail": {
+        "rou_assets_gross": 55610662,
+        "rou_accumulated_amortization": 13078191,
+        "rou_net_2024": 42532471,
+        "assets_subleased_net_2024": 42041387,
+        "impairments_2024": 0,
+        "impairments_2023": 0
+      }
+    },
+    {
+      "note_number": "6",
+      "title": "Intangible Assets",
+      "source_pages": [342],
+      "detail": {
+        "franchisee_contracts_purchased": 424000,
+        "trademark_costs": 22287,
+        "software_ip": 319099,
+        "organization_costs": 58071,
+        "gross": 823457,
+        "accumulated_amortization": 762617,
+        "net_2024": 60840,
+        "amortization_2024": 22398
+      }
+    },
+    {
+      "note_number": "7",
+      "title": "Contract Liabilities",
+      "source_pages": [342],
+      "detail": {
+        "prospect_deposits_current": {"initial": 98889, "site": 165833, "confirmation": 144027, "total": 408749},
+        "franchise_fees_current": 35500,
+        "total_current": 444249,
+        "franchise_fees_long_term": 1316582,
+        "total_2024": 1760831
+      }
+    },
+    {
+      "note_number": "8",
+      "title": "Long-Term Debt",
+      "source_pages": [343],
+      "detail": {
+        "ppp_loan": {"original": "unknown", "balance_2024": 362133, "rate": "0.98%", "monthly_payment": 27000, "maturity": "March 2031", "type": "SBA PPP Section 1106 CARES Act"},
+        "uk_loan": {"balance_2024": 0, "balance_2023": 21528, "rate": "2.5%", "note": "UK Business Interruption Program, paid off in 2024"},
+        "total_2024": 362133,
+        "current_maturities": 128123,
+        "long_term_net": 234010
+      }
+    },
+    {
+      "note_number": "9",
+      "title": "Franchisee Security Deposits",
+      "source_pages": [343],
+      "detail": {"balance_2024": 2925957, "balance_2023": 3086155, "nature": "Refundable, equal to 2 months rent at sublease inception"}
+    },
+    {
+      "note_number": "10",
+      "title": "Franchise Information",
+      "source_pages": [344],
+      "detail": {
+        "franchises_sold_2024": {"us": 0, "canada": 1},
+        "franchises_sold_2023": {"us": 0, "canada": 4},
+        "outlets_in_operation_2024": {"us": 538, "canada": 90},
+        "outlets_in_operation_2023": {"us": 567, "canada": 90}
+      }
+    },
+    {
+      "note_number": "11",
+      "title": "Timing of Revenue Recognition",
+      "source_pages": [344],
+      "detail": {
+        "point_in_time_2024": 195915,
+        "over_time_2024": 7132971,
+        "point_in_time_2023": 550531,
+        "over_time_2023": 6862485
+      }
+    },
+    {
+      "note_number": "12",
+      "title": "Operating Leases and Subleases",
+      "source_pages": [345, 346],
+      "detail": {
+        "primary_landlord": "Walmart Stores, Inc.",
+        "initial_term": "5 years with 2x 3-year renewals",
+        "monthly_payments_range": "$1,000 to $5,862",
+        "expiration_range": "Jan 2025 through Dec 2029",
+        "company_salon_payments": "$2,875 to $10,051",
+        "weighted_avg_term_years": 2.13,
+        "weighted_avg_discount_rate": "2.44%",
+        "total_undiscounted_payments": 46231727,
+        "total_operating_lease_liabilities": 42545597,
+        "present_value_adjustment": 3686130,
+        "sublease_income_2024": 17476767,
+        "lease_cost_2024": {"operating": 17558731, "short_term": 61848, "variable": 75079, "total": 17695658}
+      }
+    },
+    {
+      "note_number": "13",
+      "title": "Pension Plan",
+      "source_pages": [346],
+      "detail": {"type": "401(k) defined contribution", "match": "4% safe harbor", "contributions_2024": 115763, "contributions_2023": 87457}
+    },
+    {
+      "note_number": "14",
+      "title": "Commitments and Contingencies",
+      "source_pages": [346],
+      "detail": {
+        "lawsuits": "Several from normal course — all categorized as remote or insured. No probable losses identified.",
+        "guarantor_exposure_2024": 44718,
+        "guarantor_exposure_2023": 179586
+      }
+    },
+    {
+      "note_number": "15",
+      "title": "Related Party Transactions",
+      "source_pages": [347],
+      "detail": {
+        "office_lease": {"landlord": "Charlie's Properties, LLC", "annual_rent": 60000, "basis": "Month-to-month", "affiliation": "Common ownership"},
+        "boat_lease": {"landlord": "QTT Properties, LLC", "annual_rent_2023": 42000, "terminated": "July 2023", "affiliation": "Common ownership"},
+        "notes_to_owner": {"count": 2, "balance_2024": 2565000, "interest_income_2024": 60275},
+        "notes_to_president": {"count": 11, "balance_2024": 3900000, "interest_income_2024": 91470, "rates": "1.02% to 4.73%"},
+        "alfalfa_payments_in_cogs_2024": 94662,
+        "alfalfa_payments_in_opex_2024": 164523
+      }
+    },
+    {
+      "note_number": "16",
+      "title": "Concentrations",
+      "source_pages": [348],
+      "detail": {
+        "cash_concentration": "FDIC insured to $250K; CDIC to C$100K. Uninsured: $5.17M US + C$1.23M Canada",
+        "geographic_concentration": {"canada_revenue_2024": 3093978, "canada_pct": "12.5%"}
+      }
+    },
+    {
+      "note_number": "17",
+      "title": "Disposal of Subsidiaries",
+      "source_pages": [348],
+      "detail": {
+        "rgeu_limited": {"location": "UK", "loss": 142154, "net_income_before_minority_2024": 102152},
+        "regal_nails_mexico": {"location": "Mexico", "loss": 81172, "net_income_before_minority_2024": 0},
+        "total_disposal_loss": 223326
+      }
+    },
+    {
+      "note_number": "18",
+      "title": "Subsequent Events",
+      "source_pages": [348],
+      "detail": "Evaluated through March 28, 2025 (financial statement available date). No subsequent events disclosed."
+    }
+  ]
+}

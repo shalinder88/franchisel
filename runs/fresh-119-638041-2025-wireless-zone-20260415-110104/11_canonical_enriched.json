@@ -1,0 +1,114 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "638041-2025",
+  "brand": "Wireless Zone",
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "annual_2024": {
+      "population": 703,
+      "quintiles": [
+        {"quintile": 1, "stores": 140, "avg_gr": 3421496, "median_gr": 3127671, "avg_gp": 1030284, "median_gp": 926455, "margin": 0.30, "avg_acts_upgrades": 2892, "gr_high": 7143829, "gr_low": 2146354, "gp_high": 1928827, "gp_low": 759667},
+        {"quintile": 2, "stores": 140, "avg_gr": 2210924, "median_gr": 2206646, "avg_gp": 657661, "median_gp": 639967, "margin": 0.30, "avg_acts_upgrades": 1899, "gr_high": 2927616, "gr_low": 1585018, "gp_high": 759513, "gp_low": 580992},
+        {"quintile": 3, "stores": 141, "avg_gr": 1741647, "median_gr": 1725481, "avg_gp": 509350, "median_gp": 503118, "margin": 0.29, "avg_acts_upgrades": 1484, "gr_high": 2938110, "gr_low": 1235135, "gp_high": 579758, "gp_low": 445764},
+        {"quintile": 4, "stores": 141, "avg_gr": 1312505, "median_gr": 1293816, "avg_gp": 381998, "median_gp": 378158, "margin": 0.29, "avg_acts_upgrades": 1104, "gr_high": 2053659, "gr_low": 940356, "gp_high": 445216, "gp_low": 323285},
+        {"quintile": 5, "stores": 141, "avg_gr": 837716, "median_gr": 857190, "avg_gp": 243825, "median_gp": 255247, "margin": 0.29, "avg_acts_upgrades": 708, "gr_high": 1271960, "gr_low": 130557, "gp_high": 323255, "gp_low": 36967}
+      ],
+      "overall_median": {"gr": 1725481, "gp": 502319, "margin": 0.29, "acts_upgrades": 1459}
+    },
+    "activations_upgrades_monthly": {
+      "population": 703,
+      "avg_activations": 53,
+      "median_activations": 47,
+      "pct_at_above_avg_activations": 0.39,
+      "avg_upgrades": 81,
+      "median_upgrades": 73,
+      "pct_at_above_avg_upgrades": 0.44,
+      "avg_transactions": 135,
+      "median_transactions": 120,
+      "pct_at_above_avg_transactions": 0.42
+    },
+    "top_bottom_10pct": {
+      "top_10": {"stores": 70, "avg_activations": 121, "median_activations": 114, "avg_upgrades": 179, "median_upgrades": 164, "avg_transactions": 288, "median_transactions": 262},
+      "bottom_10": {"stores": 70, "avg_activations": 18, "median_activations": 20, "avg_upgrades": 24, "median_upgrades": 27, "avg_transactions": 46, "median_transactions": 49}
+    },
+    "calculation_change": {
+      "change_date": "2024-11-01",
+      "former_name": "Former Calculation",
+      "current_name": "Current Calculation",
+      "key_changes": [
+        "Non-Return Chargebacks removed from Allowable Costs",
+        "Gross Revenue now includes certain incentives and 100% of Residuals (was 50%)",
+        "Commissions based on published Commission Schedule (was price list)",
+        "Chargebacks definition expanded to include all Provider charge-backs"
+      ]
+    }
+  },
+  "item20_yearly_activity": {
+    "wz_franchised": {
+      "2022": {"start": 428, "opened": 29, "terminated": 11, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 447, "transfers": 61},
+      "2023": {"start": 447, "opened": 283, "terminated": 9, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 720, "transfers": 19},
+      "2024": {"start": 720, "opened": 42, "terminated": 17, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 745, "transfers": 77}
+    },
+    "tcc_company_owned": {
+      "2022": {"start": 500, "end": 502, "net": 2},
+      "2023": {"start": 502, "end": 495, "net": -7},
+      "2024": {"start": 495, "end": 515, "net": 20}
+    },
+    "projected_2025": {"fa_signed_not_open": 34, "projected_new_franchised": "48-83", "projected_tcc": "20-30"}
+  },
+  "exhibit_structure": {
+    "exhibits": [
+      {"letter": "A", "name": "State Administrators/Agents", "pages_pdf": "80-82"},
+      {"letter": "B", "name": "Franchise Agreement", "pages_pdf": "83-159"},
+      {"letter": "C", "name": "Transfer Agreement", "pages_pdf": "160"},
+      {"letter": "D", "name": "Ascentium EFA", "pages_pdf": "161-170"},
+      {"letter": "E", "name": "Data Protection Addendum", "pages_pdf": "171-177"},
+      {"letter": "F", "name": "Operations Manual TOC", "pages_pdf": "178-186"},
+      {"letter": "G", "name": "Roster of Franchisees", "pages_pdf": "187-206"},
+      {"letter": "H", "name": "Financial Statements", "pages_pdf": "207-219"},
+      {"letter": "I", "name": "State Addenda", "pages_pdf": "220-262"},
+      {"letter": "J", "name": "Disclosure Questionnaire", "pages_pdf": "263-265"}
+    ]
+  },
+  "item21_structural_facts": {
+    "auditor_opinion": "Unqualified",
+    "auditor_report_date": "2025-03-25",
+    "consolidated": true,
+    "years": [2024, 2023, 2022],
+    "gaap": "US GAAP",
+    "going_concern": false,
+    "entity_type_for_tax": "Disregarded entity (single-member LLC)",
+    "goodwill": 24566694,
+    "goodwill_impairment_tested": "Annual (ASU 2021-03 alternative)",
+    "intangible_assets": {"trade_name": 2400000, "franchise_distribution_network": 31907374, "amortization_annual": 2287158, "useful_life_years": 15}
+  },
+  "item1_structural_facts": {
+    "franchisor_name": "Wireless Zone LLC",
+    "state_formation": "Connecticut",
+    "entity_type": "LLC",
+    "original_name": "Automotive Technologies, Inc.",
+    "original_entity_type": "Connecticut corporation",
+    "conversion_date": "October 2016",
+    "franchising_since": 1989,
+    "original_mark": "The Car Phone Store",
+    "current_mark_since": 1995,
+    "parent_chain": ["PYITE, LLC", "Round Room, LLC", "Round Room Holdings, Inc."],
+    "ceo": "Scott Moorehead",
+    "ceo_since": "October 2016"
+  },
+  "item6_fee_attributes": {
+    "royalty_basis": "Gross Profit",
+    "royalty_type": "Sliding scale",
+    "royalty_range": "9%-22%",
+    "royalty_collection_method": "Deducted from Provider Commissions/Residuals before payout",
+    "ad_fund": false,
+    "technology_monthly_total_est": "$383-$533",
+    "foundation_contribution_per_transaction": 0.25,
+    "renewal_fee": 1000,
+    "transfer_fee_current": 1000,
+    "transfer_fee_max": 5000,
+    "interest_rate_monthly": 0.015,
+    "ip_infringement_daily": 1000,
+    "non_compete_violation": 100000
+  }
+}

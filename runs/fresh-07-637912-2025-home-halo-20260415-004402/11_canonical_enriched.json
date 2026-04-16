@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "filing_id": "637912-2025",
+    "brand": "Home Halo",
+    "enrichment_version": "v1",
+    "enrichment_date": "2026-04-15"
+  },
+  "item19_chart_detail": {
+    "table2_financial_data": {
+      "outlet": "Urbandale, Iowa",
+      "territory_equivalent": 2,
+      "years": {
+        "2023": {
+          "gross_sales": 456373,
+          "direct_labor_costs": 219725,
+          "direct_labor_pct": 48.15,
+          "direct_gross_profit": 236648,
+          "dgp_pct": 51.85,
+          "disclosed_expenses": {
+            "marketing": 1189,
+            "insurance": 4227,
+            "rent": 5700,
+            "supplies": 4051,
+            "caregiver_mileage": 27460,
+            "care_mgmt_system": 3264,
+            "phone": 913,
+            "total": 46804
+          },
+          "dgp_after_disclosed": 189844,
+          "franchise_adjustments": {
+            "royalty_5pct": 22819,
+            "bdf_2pct": 9127,
+            "tech_fee": 3000,
+            "local_marketing": 22811,
+            "contact_center": null,
+            "total": 57757
+          },
+          "dgp_final": 132087,
+          "dgp_final_pct": 28.93
+        },
+        "2024": {
+          "gross_sales": 970528,
+          "direct_labor_costs": 500350,
+          "direct_labor_pct": 51.55,
+          "direct_gross_profit": 470178,
+          "dgp_pct": 48.45,
+          "disclosed_expenses": {
+            "marketing": 18553,
+            "insurance": 6884,
+            "rent": 9300,
+            "supplies": 3404,
+            "caregiver_mileage": 55142,
+            "care_mgmt_system": 7731,
+            "phone": 800,
+            "total": 101814
+          },
+          "dgp_after_disclosed": 368364,
+          "franchise_adjustments": {
+            "royalty_5pct": 48526,
+            "bdf_2pct": 19411,
+            "tech_fee": 3000,
+            "local_marketing": 19411,
+            "contact_center": null,
+            "total": 90348
+          },
+          "dgp_final": 278016,
+          "dgp_final_pct": 28.65
+        }
+      }
+    },
+    "table3_operational_data": {
+      "2023": {"unique_customers": 39, "hours_per_caregiver_week": 16, "hours_per_client_week": 8, "total_care_hours": 7054},
+      "2024": {"unique_customers": 96, "hours_per_caregiver_week": 16, "hours_per_client_week": 8, "total_care_hours": 14797}
+    }
+  },
+  "item20_yearly_activity": {
+    "systemwide": {
+      "2022": {"franchised_end": 0, "company_end": 1, "total_end": 1},
+      "2023": {"franchised_end": 0, "company_end": 1, "total_end": 1},
+      "2024": {"franchised_end": 0, "company_end": 2, "total_end": 2}
+    },
+    "company_owned_by_state": {
+      "Iowa": {"2022": 1, "2023": 1, "2024": 1},
+      "New_Mexico": {"2022": 0, "2023": 0, "2024": 1}
+    },
+    "projected": {"franchised": 3, "company_owned": 2}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 10,
+    "exhibits": {
+      "A": {"pages": [48, 50], "type": "regulatory"},
+      "B": {"pages": [51, 52], "type": "regulatory"},
+      "C": {"pages": [53, 54], "type": "operations"},
+      "D": {"pages": [55, 67], "type": "financial"},
+      "E": {"pages": [68, 168], "type": "contract"},
+      "F": {"pages": [169, 169], "type": "franchisee_info", "count": 0},
+      "G": {"pages": [170, 170], "type": "franchisee_info", "count": 0},
+      "H": {"pages": [171, 202], "type": "state_addenda", "states_count": 13},
+      "I": {"pages": [203, 204], "type": "regulatory"},
+      "J": {"pages": [205, 207], "type": "receipt"}
+    }
+  },
+  "item21_structural_facts": {
+    "auditor": "Roos & McNabb CPA's, PC",
+    "opinion": "Unqualified",
+    "going_concern": false,
+    "years_available": 1,
+    "entity_age_at_statement": "Less than 1 year (formed March 2024)",
+    "total_assets": 29513,
+    "total_liabilities": 0,
+    "net_income": 24668,
+    "revenue_source": "100% from Iowa affiliate royalties"
+  },
+  "item1_structural_facts": {
+    "entity_type": "Delaware LLC",
+    "formation_date": "2024-03-14",
+    "franchising_since": "2024-04-16",
+    "affiliate_count": 5,
+    "operating_affiliates": 2,
+    "pending_affiliates": 2,
+    "ip_affiliate": 1,
+    "sole_principal": "Daniel Deak",
+    "predecessors": "None"
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage_with_minimum",
+    "royalty_rate": 0.05,
+    "royalty_minimum_escalating": true,
+    "royalty_minimum_final": 1010,
+    "bdf_rate": 0.02,
+    "local_marketing_rate": 0.02,
+    "local_marketing_minimum_per_territory": 1000,
+    "technology_fee_current": 250,
+    "technology_fee_max": 750,
+    "contact_center_max_rate": 0.03,
+    "contact_center_active": false,
+    "interest_rate": 0.18,
+    "transfer_fee_existing": 10000,
+    "transfer_fee_new": 20000,
+    "renewal_fee_minimum": 7500
+  }
+}

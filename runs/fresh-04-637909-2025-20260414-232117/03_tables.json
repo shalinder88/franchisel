@@ -1,0 +1,316 @@
+{
+  "extraction_date": "2026-04-14",
+  "brand": "Delah Coffee",
+  "filing_id": "637909-2025",
+  "tables": [
+    {
+      "table_id": "item6_other_fees",
+      "source_item": 6,
+      "source_pages": [12, 13, 14],
+      "title": "Other Fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Royalty", "amount": "4.5% of Gross Sales", "due_date": "Weekly as designated", "remarks": "ACH auto-debit"},
+        {"type": "Brand Development Fund", "amount": "Up to 2% of Gross Sales, currently not assessed", "due_date": "Weekly as designated", "remarks": "ACH auto-debit"},
+        {"type": "Franchisee Directed Local Marketing", "amount": "1% of Gross Sales", "due_date": "Monthly as incurred", "remarks": "Pre-approved marketing within designated territory"},
+        {"type": "Technology", "amount": "Up to $500/month, currently not assessed", "due_date": "Monthly as designated", "remarks": "ACH auto-debit"},
+        {"type": "Local and Regional Advertising Cooperatives", "amount": "Per cooperative, currently not assessed, not exceeding local marketing", "due_date": "As established by cooperative", "remarks": "Counts toward local marketing requirement"},
+        {"type": "Annual Conference Attendance Fee", "amount": "Not greater than $1,500", "due_date": "When invoiced, before conference", "remarks": "Annual System conference"},
+        {"type": "Additional Employee Initial Training", "amount": "$300/person/day", "due_date": "When invoiced, prior to training", "remarks": "For additional individuals beyond Managing Owner + 1 manager"},
+        {"type": "Supplemental On-Site Training", "amount": "$300/day/trainer + expenses", "due_date": "When invoiced, prior to training", "remarks": "If requested or required"},
+        {"type": "Interest", "amount": "18% per annum from due date", "due_date": "On demand", "remarks": "On overdue amounts; cannot exceed legal rate (CA max 10%)"},
+        {"type": "Reporting Non-Compliance", "amount": "$150/occurrence", "due_date": "14 days of invoice", "remarks": "Failure to submit reports"},
+        {"type": "Operations Non-Compliance", "amount": "$450 to $1,000/occurrence", "due_date": "14 days of invoice", "remarks": "Failure to comply with operational standards"},
+        {"type": "Payment Non-Compliance", "amount": "$150/occurrence", "due_date": "14 days of invoice", "remarks": "Failure to timely pay fees"},
+        {"type": "Audit", "amount": "Cost of audit", "due_date": "On demand", "remarks": "If 2%+ underreporting found"},
+        {"type": "Quality Assurance Audit", "amount": "Actual costs", "due_date": "As invoiced", "remarks": "Mystery shopper, periodic inspections"},
+        {"type": "Collections", "amount": "Actual fees, costs, expenses", "due_date": "On demand", "remarks": "Enforcement and collection costs"},
+        {"type": "NSF Check/Failed EFT", "amount": "5% of amount or $50, whichever greater", "due_date": "On demand", "remarks": "Or maximum allowed by law"},
+        {"type": "Non-Compliance", "amount": "Actual fees, costs, expenses", "due_date": "On demand", "remarks": "Breach costs"},
+        {"type": "Supplier Evaluation", "amount": "Actual costs", "due_date": "14 days of invoice", "remarks": "Review of unapproved supplier"},
+        {"type": "Management Service", "amount": "Actual costs", "due_date": "As invoiced", "remarks": "If franchisor manages shop due to franchisee failure"},
+        {"type": "Transfer", "amount": "$10,000", "due_date": "On demand", "remarks": "Upon approved transfer"},
+        {"type": "Renewal", "amount": "$5,000", "due_date": "On signing renewal FA", "remarks": "Upon approved renewal"}
+      ],
+      "table_notes": [
+        "Note 1: All fees uniformly imposed, recurring, non-refundable, payable via ACH auto-debit",
+        "Note 2: Royalty 4.5% of weekly Gross Sales; if tax imposed, franchisee must compensate",
+        "Note 3: Gross Sales includes all revenue from shop, territory, and related business",
+        "Note 4: BDF up to 2%, currently not assessed, reserve right to implement",
+        "Note 5: Local marketing 1% monthly, pre-approved, within designated territory",
+        "Note 6: Technology fee up to $500/mo, currently not assessed, for system technology costs",
+        "Note 7: Ad cooperative may be established if 2+ shops in area; one vote per shop, 25% quorum"
+      ]
+    },
+    {
+      "table_id": "item7_table_a_franchise_agreement",
+      "source_item": 7,
+      "source_pages": [15, 16],
+      "title": "Estimated Initial Investment — Franchise Agreement (Single Unit)",
+      "columns": ["Type of Expenditure", "Amount Low", "Amount High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Initial Franchise Fee", "low": 35000, "high": 35000, "method": "Lump sum", "when": "When FA signed", "to_whom": "Us"},
+        {"type": "Construction and Leasehold Improvements", "low": 110000, "high": 175000, "method": "As arranged", "when": "As incurred", "to_whom": "Contractors, suppliers, landlord"},
+        {"type": "Lease Deposits and Rent (3 Mo)", "low": 8000, "high": 16000, "method": "As arranged", "when": "As incurred", "to_whom": "Landlord"},
+        {"type": "Furniture, Fixtures and Equipment", "low": 65000, "high": 95000, "method": "As arranged", "when": "As incurred", "to_whom": "Suppliers"},
+        {"type": "Signage", "low": 4500, "high": 12000, "method": "As arranged", "when": "As incurred", "to_whom": "Suppliers"},
+        {"type": "Computer, Software, POS", "low": 3000, "high": 3500, "method": "As arranged", "when": "As incurred", "to_whom": "Suppliers"},
+        {"type": "Grand Opening Marketing", "low": 1800, "high": 2500, "method": "As arranged", "when": "As incurred", "to_whom": "Suppliers"},
+        {"type": "Initial Inventory", "low": 15000, "high": 20000, "method": "As arranged", "when": "As incurred", "to_whom": "Us, suppliers"},
+        {"type": "Utility Deposits", "low": 1000, "high": 2000, "method": "As arranged", "when": "As incurred", "to_whom": "Suppliers"},
+        {"type": "Insurance Deposits (3 Mo)", "low": 2000, "high": 4500, "method": "As arranged", "when": "As incurred", "to_whom": "Insurers"},
+        {"type": "Travel for Initial Training", "low": 2500, "high": 6000, "method": "As arranged", "when": "As incurred", "to_whom": "Airlines, hotels, restaurants"},
+        {"type": "Professional Fees", "low": 18500, "high": 30000, "method": "As arranged", "when": "As incurred", "to_whom": "Attorneys, accountants, architects"},
+        {"type": "Licenses and Permits", "low": 1000, "high": 2500, "method": "As arranged", "when": "As incurred", "to_whom": "Government"},
+        {"type": "Additional Funds (3 Mo)", "low": 15000, "high": 20000, "method": "As arranged", "when": "As incurred", "to_whom": "Us, employees, suppliers, landlord"}
+      ],
+      "total": {"low": 282300, "high": 424000},
+      "table_notes": [
+        "Note 1: IFF $35,000, non-refundable, no financing",
+        "Note 2: Construction assumes 1,900-2,500 sq ft, enhanced shell condition, no structural modifications",
+        "Note 3: Lease deposits + 3 months rent for 1,900-2,500 sq ft",
+        "Note 4: FF&E varies by quality, location, sq footage; excludes transport/setup",
+        "Note 5: Interior and exterior signage per brand specs",
+        "Note 6: Toast POS, tablets, computer system per Item 11",
+        "Note 7: Minimum $1,800 grand opening marketing",
+        "Note 8: Opening inventory includes $7,000-$14,000 from franchisor/affiliates",
+        "Note 9: Utility deposits (gas, electric, water, sewer, internet)",
+        "Note 10: Insurance deposits + 3 months installment",
+        "Note 11: Travel/accommodation for initial training",
+        "Note 12: Legal, accounting, architectural, engineering services",
+        "Note 13: Basic business permits and licenses",
+        "Note 14: Additional 3-month operating expenses; does not include owner compensation, interest, or financing",
+        "Note 15: Based on affiliate experience; actual costs may vary"
+      ]
+    },
+    {
+      "table_id": "item7_table_b_muda",
+      "source_item": 7,
+      "source_pages": [18],
+      "title": "Estimated Initial Investment — Multi-Unit Development Agreement",
+      "columns": ["Type of Expenditure", "Amount Low", "Amount High"],
+      "rows": [
+        {"type": "Development Area Fee", "low": 60000, "high": 120000},
+        {"type": "Estimated Initial Investment (1 Shop)", "low": 282300, "high": 424000}
+      ],
+      "total": {"low": 342300, "high": 544400},
+      "table_notes": [
+        "Note 1: Dev Area Fee $30,000 per additional shop (min 3, max 5); plus $35,000 IFF for first shop",
+        "Note 2: Per Table A",
+        "Note 3: Estimate for one shop only; each additional shop incurs same investment"
+      ]
+    },
+    {
+      "table_id": "item19_table1_outlet_summary",
+      "source_item": 19,
+      "source_pages": [47],
+      "title": "Table 1 — Company Owned Outlet Summary",
+      "columns": ["Outlet", "Description"],
+      "rows": [
+        {"outlet": "San Francisco #1 - Fourth Street", "description": "Opened June 2022, 370 4th St SF CA 94107, corner store retail, ~1,800 sq ft, 34 seats. Operational 2023 & 2024."},
+        {"outlet": "Oakland W. Grand Ave.", "description": "Opened Feb 2023, 420 W Grand Ave Oakland 95612, commercial complex, ~1,780 sq ft, 32 seats. Operational 2024."},
+        {"outlet": "Berkeley Euclid Ave.", "description": "Opened Sept 2023, 1807 Euclid Ave Berkeley CA 94709, one-story retail next to UC Berkeley, ~1,860 sq ft, 40 seats. Operational 2024."},
+        {"outlet": "San Francisco #2 - Sansome", "description": "Opened July 2024, 450 Sansome St SF CA 94111, ground floor of 15-story office bldg, ~2,100 sq ft, 42 seats. New 2024, data not disclosed."}
+      ],
+      "table_notes": ["Data only disclosed for outlets qualifying as Operational Company Owned Outlets"]
+    },
+    {
+      "table_id": "item19_table2_sf1",
+      "source_item": 19,
+      "source_pages": [48],
+      "title": "Table 2 — San Francisco #1 Fourth Street: Gross Sales and Disclosed Expenses",
+      "columns": ["Metric", "2023 Total", "2023 %", "2024 Total", "2024 %"],
+      "rows": [
+        {"metric": "Total Gross Sales", "2023_total": 1122970, "2023_pct": "100.00%", "2024_total": 1140063, "2024_pct": "100.00%"},
+        {"metric": "Food Cost", "2023_total": -306856, "2023_pct": "27.33%", "2024_total": -307324, "2024_pct": "26.96%"},
+        {"metric": "Paper Goods Cost", "2023_total": -13200, "2023_pct": "1.18%", "2024_total": -12980, "2024_pct": "1.14%"},
+        {"metric": "Direct Labor Cost", "2023_total": -395345, "2023_pct": "35.21%", "2024_total": -387187, "2024_pct": "33.96%"},
+        {"metric": "Direct Gross Profit", "2023_total": 407570, "2023_pct": "36.29%", "2024_total": 432572, "2024_pct": "37.94%"},
+        {"metric": "Rent", "2023_total": -71400, "2023_pct": "6.36%", "2024_total": -71400, "2024_pct": "6.26%"},
+        {"metric": "Credit Card Transaction Fees", "2023_total": -5856, "2023_pct": "0.52%", "2024_total": -5856, "2024_pct": "0.51%"},
+        {"metric": "Utilities", "2023_total": -37600, "2023_pct": "3.35%", "2024_total": -39900, "2024_pct": "3.50%"},
+        {"metric": "Marketing and Advertising", "2023_total": -8400, "2023_pct": "0.75%", "2024_total": -8400, "2024_pct": "0.74%"},
+        {"metric": "DGP Less Disclosed Expenses", "2023_total": 284314, "2023_pct": "25.32%", "2024_total": 307016, "2024_pct": "26.93%"},
+        {"metric": "Royalty Fee (4.5%)", "2023_total": -50533, "2023_pct": "4.50%", "2024_total": -51303, "2024_pct": "4.50%"},
+        {"metric": "Brand Development Fund Fee", "2023_total": 0, "2023_pct": "0.00%", "2024_total": 0, "2024_pct": "0.00%"},
+        {"metric": "Technology Fee", "2023_total": 0, "2023_pct": "0.00%", "2024_total": 0, "2024_pct": "0.00%"},
+        {"metric": "Local Marketing Adjustment", "2023_total": -2830, "2023_pct": "0.25%", "2024_total": -3001, "2024_pct": "0.26%"},
+        {"metric": "DGP Less All Adjustments", "2023_total": 230951, "2023_pct": "20.57%", "2024_total": 252712, "2024_pct": "22.17%"}
+      ],
+      "table_notes": [
+        "% represents percentage of total Gross Sales",
+        "Royalty Fee 4.5% of Gross Sales",
+        "BDF currently not assessed, up to 2%",
+        "Technology Fee currently not assessed, up to $500/mo",
+        "Local Marketing: 1% minimum; adjustment reflects difference between requirement and actual spend for 2023 and 2024"
+      ]
+    },
+    {
+      "table_id": "item19_table3_oakland",
+      "source_item": 19,
+      "source_pages": [49],
+      "title": "Table 3 — Oakland W. Grand Ave.: Gross Sales and Disclosed Expenses",
+      "columns": ["Metric", "2024 Total", "2024 %"],
+      "rows": [
+        {"metric": "Total Gross Sales", "2024_total": 834648, "2024_pct": "100.00%"},
+        {"metric": "Food Cost", "2024_total": -225315, "2024_pct": "27.00%"},
+        {"metric": "Paper Goods Cost", "2024_total": -9680, "2024_pct": "1.16%"},
+        {"metric": "Direct Labor Cost", "2024_total": -221400, "2024_pct": "26.53%"},
+        {"metric": "Direct Gross Profit", "2024_total": 378253, "2024_pct": "45.32%"},
+        {"metric": "Rent", "2024_total": -95040, "2024_pct": "11.39%"},
+        {"metric": "Credit Card Transaction Fees", "2024_total": -5495, "2024_pct": "0.66%"},
+        {"metric": "Utilities", "2024_total": -42000, "2024_pct": "5.03%"},
+        {"metric": "Marketing and Advertising", "2024_total": -8400, "2024_pct": "1.01%"},
+        {"metric": "DGP Less Disclosed Expenses", "2024_total": 227318, "2024_pct": "27.24%"},
+        {"metric": "Royalty Fee (4.5%)", "2024_total": -37559, "2024_pct": "4.50%"},
+        {"metric": "BDF/Tech Fee", "2024_total": 0, "2024_pct": "0.00%"},
+        {"metric": "Local Marketing Adjustment", "2024_total": 0, "2024_pct": "N/A"},
+        {"metric": "DGP Less All Adjustments", "2024_total": 189759, "2024_pct": "22.74%"}
+      ],
+      "table_notes": [
+        "No local marketing adjustment because outlet spent more than 1% on marketing",
+        "BDF and Technology Fee currently not assessed"
+      ]
+    },
+    {
+      "table_id": "item19_table4_berkeley",
+      "source_item": 19,
+      "source_pages": [50],
+      "title": "Table 4 — Berkeley Euclid Ave.: Gross Sales and Disclosed Expenses",
+      "columns": ["Metric", "2024 Total", "2024 %"],
+      "rows": [
+        {"metric": "Total Gross Sales", "2024_total": 557339, "2024_pct": "100.00%"},
+        {"metric": "Food Cost", "2024_total": -150481, "2024_pct": "27.00%"},
+        {"metric": "Paper Goods Cost", "2024_total": -6186, "2024_pct": "1.11%"},
+        {"metric": "Direct Labor Cost", "2024_total": -174000, "2024_pct": "31.22%"},
+        {"metric": "Direct Gross Profit", "2024_total": 226672, "2024_pct": "40.67%"},
+        {"metric": "Rent", "2024_total": -42000, "2024_pct": "7.54%"},
+        {"metric": "Credit Card Transaction Fees", "2024_total": -5484, "2024_pct": "0.98%"},
+        {"metric": "Utilities", "2024_total": -30840, "2024_pct": "5.53%"},
+        {"metric": "Marketing and Advertising", "2024_total": -8400, "2024_pct": "1.51%"},
+        {"metric": "DGP Less Disclosed Expenses", "2024_total": 139948, "2024_pct": "25.11%"},
+        {"metric": "Royalty Fee (4.5%)", "2024_total": -25080, "2024_pct": "4.50%"},
+        {"metric": "BDF/Tech Fee", "2024_total": 0, "2024_pct": "0.00%"},
+        {"metric": "Local Marketing Adjustment", "2024_total": 0, "2024_pct": "N/A"},
+        {"metric": "DGP Less All Adjustments", "2024_total": 114868, "2024_pct": "20.61%"}
+      ],
+      "table_notes": [
+        "No local marketing adjustment because outlet spent more than 1% on marketing",
+        "BDF and Technology Fee currently not assessed"
+      ]
+    },
+    {
+      "table_id": "item20_table1_systemwide",
+      "source_item": 20,
+      "source_pages": [51],
+      "title": "Table 1 — Systemwide Outlet Summary (2022–2024)",
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 0, "end": 0, "net": 0},
+        {"type": "Franchised", "year": 2023, "start": 0, "end": 0, "net": 0},
+        {"type": "Franchised", "year": 2024, "start": 0, "end": 0, "net": 0},
+        {"type": "Company-Owned", "year": 2022, "start": 0, "end": 1, "net": 1},
+        {"type": "Company-Owned", "year": 2023, "start": 1, "end": 3, "net": 2},
+        {"type": "Company-Owned", "year": 2024, "start": 3, "end": 4, "net": 1},
+        {"type": "Total", "year": 2022, "start": 0, "end": 1, "net": 1},
+        {"type": "Total", "year": 2023, "start": 1, "end": 3, "net": 2},
+        {"type": "Total", "year": 2024, "start": 3, "end": 4, "net": 1}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_table2_transfers",
+      "source_item": 20,
+      "source_pages": [51],
+      "title": "Table 2 — Transfers (2022–2024)",
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        {"state": "None", "year": 2022, "transfers": 0},
+        {"state": "None", "year": 2023, "transfers": 0},
+        {"state": "None", "year": 2024, "transfers": 0}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_table3_franchised_status",
+      "source_item": 20,
+      "source_pages": [52],
+      "title": "Table 3 — Status of Franchised Outlets (2022–2024)",
+      "columns": ["State", "Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        {"state": "Illinois", "year": 2022, "start": 0, "opened": 0, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+        {"state": "Illinois", "year": 2023, "start": 0, "opened": 0, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+        {"state": "Illinois", "year": 2024, "start": 0, "opened": 0, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 0}
+      ],
+      "table_notes": ["Illinois listed but all activity is zero — reflects signed agreement but no opened outlets"]
+    },
+    {
+      "table_id": "item20_table4_company_owned",
+      "source_item": 20,
+      "source_pages": [52],
+      "title": "Table 4 — Status of Company-Owned Outlets (2022–2024)",
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        {"state": "California", "year": 2022, "start": 0, "opened": 1, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+        {"state": "California", "year": 2023, "start": 1, "opened": 2, "reacquired": 0, "closed": 0, "sold": 0, "end": 3},
+        {"state": "California", "year": 2024, "start": 3, "opened": 1, "reacquired": 0, "closed": 0, "sold": 0, "end": 4}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_table5_projected",
+      "source_item": 20,
+      "source_pages": [52],
+      "title": "Table 5 — Projected Openings (as of Dec 31, 2024)",
+      "columns": ["State", "FA Signed Not Open", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        {"state": "California", "signed_not_open": 1, "projected_franchise": 4, "projected_company": 0},
+        {"state": "Illinois", "signed_not_open": 1, "projected_franchise": 1, "projected_company": 0},
+        {"state": "New York", "signed_not_open": 0, "projected_franchise": 1, "projected_company": 0},
+        {"state": "North Carolina", "signed_not_open": 0, "projected_franchise": 1, "projected_company": 0},
+        {"state": "Texas", "signed_not_open": 0, "projected_franchise": 1, "projected_company": 0},
+        {"state": "Washington", "signed_not_open": 0, "projected_franchise": 1, "projected_company": 0}
+      ],
+      "totals": {"signed_not_open": 2, "projected_franchise": 9, "projected_company": 0},
+      "table_notes": []
+    },
+    {
+      "table_id": "item11_training_program",
+      "source_item": 11,
+      "source_pages": [30],
+      "title": "Training Program",
+      "columns": ["Subject", "Classroom Hours", "On-the-Job Hours", "Location"],
+      "rows": [
+        {"subject": "Orientation, History, Understanding Delah Coffee", "classroom": 3, "otj": 0, "location": "Pleasanton or San Francisco, CA"},
+        {"subject": "Marketing, Advertising, Customer Service", "classroom": 4, "otj": 0, "location": "San Francisco, CA"},
+        {"subject": "Food Safety and Store Visit Report", "classroom": 0, "otj": 10, "location": "San Francisco, CA"},
+        {"subject": "Opening and Closing", "classroom": 0, "otj": 2, "location": "San Francisco, CA"},
+        {"subject": "In Store Training and Inventory", "classroom": 0, "otj": 40, "location": "San Francisco, CA"},
+        {"subject": "Leadership Skill/Maintenance", "classroom": 0, "otj": 5, "location": "San Francisco, CA"},
+        {"subject": "In Store Training", "classroom": 0, "otj": 16, "location": "San Francisco, CA"}
+      ],
+      "totals": {"classroom": 7, "otj": 73, "total": 80},
+      "table_notes": ["Trainer: Omar Jahamee", "Duration: approximately 2 weeks", "Frequency: at least quarterly"]
+    },
+    {
+      "table_id": "item21_balance_sheet",
+      "source_item": 21,
+      "source_pages": [70],
+      "title": "Balance Sheet — January 02, 2025",
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        {"item": "Cash and cash equivalents", "amount": 500},
+        {"item": "Total Current Assets", "amount": 500},
+        {"item": "Total Liabilities", "amount": 0},
+        {"item": "Members' Equity", "amount": 500},
+        {"item": "Total Liabilities and Members' Equity", "amount": 500}
+      ],
+      "table_notes": [
+        "Balance sheet only — no income statement or cash flow (company had no operations as of audit date)",
+        "Auditor: Metwally CPA PLLC, Bedford TX",
+        "Audit date: January 13, 2025",
+        "Opinion: Unqualified (clean)"
+      ]
+    }
+  ]
+}

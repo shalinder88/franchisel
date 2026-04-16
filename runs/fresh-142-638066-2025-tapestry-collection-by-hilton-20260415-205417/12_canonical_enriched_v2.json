@@ -1,0 +1,87 @@
+{
+  "enrichment_version": "v2",
+  "item21_financial_structure_detail": {
+    "entity_name": "Hilton Franchise Holding LLC",
+    "entity_covers": "All Hilton brand franchises in US (not just Tapestry)",
+    "parent_chain": "HFH LLC → Hilton Domestic Operating Company Inc. → Hilton Worldwide Holdings Inc. (NYSE: HLT)",
+    "tax_status": "Disregarded entity for US income tax — all taxable income flows to Hilton",
+    "operator_agreement": "Operator agreement with Hilton affiliate, no compensation paid 2022-2024",
+    "cash_management": "Centralized through Hilton — minimal independent cash ($317K at 12/31/2024)",
+    "intercompany_receivable": "$703.9M due from Hilton affiliates (current), settled through periodic distributions",
+    "distribution_pattern": "$1.5B (2024), $1.4B (2023), $1.55B (2022) — cash extraction roughly equals net income",
+    "collateral_pledge": "All assets and franchise contracts pledged for Hilton debt (maturing 2025-2033)",
+    "graduate_acquisition": {
+      "date": "May 2024",
+      "amount": "$85M franchise contract intangible",
+      "accounting": "Asset acquisition (not business combination)",
+      "amortization": "15-year estimated useful life",
+      "financing": "Short-term intercompany note, settled February 2024 with accrued interest"
+    }
+  },
+  "item21_statement_detail": {
+    "revenue_breakdown_2024": {
+      "franchise_royalty_fees": 1434453,
+      "franchise_sales_coo_fees": 49340,
+      "termination_fees_other": 18276,
+      "total_revenue": 1502069
+    },
+    "revenue_growth": {
+      "2022_to_2023": "12.0%",
+      "2023_to_2024": "9.1%",
+      "2022_to_2024": "22.2%"
+    },
+    "expense_breakdown_2024": {
+      "operating_expenses": 1354,
+      "provision_credit_losses": 6248,
+      "amortization": 3751,
+      "total_expenses": 11353
+    },
+    "profitability_2024": {
+      "operating_income": 1490716,
+      "operating_margin": "99.2%",
+      "net_income": 1487571,
+      "net_margin": "99.0%"
+    },
+    "balance_sheet_highlights_2024": {
+      "total_assets": 1269897,
+      "total_liabilities": 692892,
+      "members_equity": 577005,
+      "debt_to_equity": "1.20x",
+      "current_ratio": "5.21x",
+      "accounts_receivable_net": 135970,
+      "allowance_for_credit_losses": 10411,
+      "deferred_revenues_total": 558880,
+      "franchise_contracts_net": 392748
+    },
+    "cash_flow_2024": {
+      "operating": 1516760,
+      "investing": -80050,
+      "financing": -1441744,
+      "net_change": -5031
+    },
+    "credit_loss_allowance": {
+      "ar_allowance_2024": 10411,
+      "ar_allowance_2023": 7339,
+      "financing_current_allowance_2024": 3375,
+      "financing_noncurrent_allowance_2024": 412
+    }
+  },
+  "item6_fee_detail": {
+    "fee_categories": {
+      "base_recurring": ["Monthly Royalty Fee (5% GRR)", "Monthly Program Fee (4% GRR)"],
+      "loyalty_program": ["Hilton Honors (4.3% eligible folio)", "Hilton Honors Event Planner Bonus"],
+      "technology": ["OnQ Connectivity", "Hardware/Software Maintenance", "Connected Room Maintenance", "Delphi", "OnQ Email"],
+      "distribution": ["Third-Party Reservation Charges", "FastPay", "TPCP", "Unlimited Rewards", "Hilton Advance Program"],
+      "sales_programs": ["Travel Clubs", "Group Preferred Partnership", "Hilton For Business", "Online Group Event Booking", "Consortia", "TMC Programs", "US Government Travel", "ResMax", "Add-On Program"],
+      "quality_assurance": ["Brand Non-Compliance Fee", "Re-Evaluation Fee", "Special Audit Fee", "PIP/Renovation Failure Fee", "Stay Score Failure Fee", "Service Quality Improvement Program", "Plans & Designs Late Fee"],
+      "training": ["Brand Conference", "GM/Commercial/Sales Leader Training", "Hilton Core Sales Skills", "Other Training Programs"],
+      "transfers": ["Change of Ownership Application Fee", "Permitted Transfer Processing Fee", "Re-licensing Application Fee", "Lender Comfort Letter Fee", "Public Offering/Private Placement Fee"],
+      "remedies": ["Liquidated Damages (multiple tiers)", "Actual Damages", "Audit Deficiency", "Default Remedies", "Indemnification", "Insurance", "Unauthorized Opening", "Service Charges for Overdue Payments", "Identity/Sales/Distribution Non-Compliance", "FastPay Non-Compliance"],
+      "optional_brands": ["Restaurant Brands Annual Fee ($14,500/brand)", "Eforea Spa Royalty (2% Gross Spa Revenue)"],
+      "other": ["Room Addition Fee", "PIP Fee", "Consultation and Service Fees", "Management Fees", "Taxes", "Procurement and Services Fees"]
+    },
+    "total_fee_count": 50,
+    "mandatory_base_percentage": "9% GRR (royalty + program)",
+    "de_facto_mandatory": "Hilton Honors 4.3% (required participation)"
+  }
+}

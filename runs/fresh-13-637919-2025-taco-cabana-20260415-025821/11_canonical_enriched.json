@@ -1,0 +1,92 @@
+{
+  "enrichment_version": "v1",
+  "filing_id": "637919-2025",
+  "brand": "Taco Cabana",
+  "enrichment_date": "2026-04-15",
+  "item19_chart_detail": {
+    "quartile_table": {
+      "segments": [
+        {"label": "Top 25%", "count": 36, "avg_gross_sales": 2071533, "cogs_pct": 28.3, "labor_pct": 28.6, "combined_prime_cost_pct": 56.9},
+        {"label": "Top 50%", "count": 75, "avg_gross_sales": 1829182, "cogs_pct": 28.3, "labor_pct": 29.7, "combined_prime_cost_pct": 58.0},
+        {"label": "Top 75%", "count": 108, "avg_gross_sales": 1658419, "cogs_pct": 28.4, "labor_pct": 30.5, "combined_prime_cost_pct": 58.9},
+        {"label": "All", "count": 143, "avg_gross_sales": 1490385, "cogs_pct": 28.6, "labor_pct": 31.5, "combined_prime_cost_pct": 60.1}
+      ],
+      "implied_bottom_quartile": {
+        "count": 35,
+        "implied_avg_gross_sales": "~$940,000 (calculated)",
+        "note": "Bottom quartile average implied from all-unit vs. top-75% differential"
+      }
+    },
+    "high_median_low": {
+      "high": {"gross_sales": 3462583, "cogs_pct": 28.1, "labor_pct": 21.8},
+      "median": {"gross_sales": 1451946, "cogs_pct": 26.7, "labor_pct": 30.5},
+      "low": {"gross_sales": 503729, "cogs_pct": 31.1, "labor_pct": 54.1},
+      "average": {"gross_sales": 1490385, "cogs_pct": 28.6, "labor_pct": 31.5}
+    },
+    "data_source": "Company-operated (parent entity), unaudited",
+    "population": 143,
+    "period": "Oct 1, 2023 - Sep 30, 2024",
+    "ebitda_disclosed": false,
+    "rent_disclosed": false,
+    "franchisee_data_available": false
+  },
+  "item20_yearly_activity": {
+    "franchised": {
+      "fy2022": {"start": 6, "opened": 0, "closed": 0, "end": 6},
+      "fy2023": {"start": 6, "opened": 0, "closed": 0, "end": 6},
+      "fy2024": {"start": 6, "opened": 0, "closed": 0, "end": 6}
+    },
+    "company": {
+      "fy2022": {"start": 142, "opened": 2, "closed": 1, "end": 143},
+      "fy2023": {"start": 143, "opened": 0, "closed": 0, "end": 143},
+      "fy2024": {"start": 143, "opened": 1, "closed": 4, "end": 140}
+    },
+    "total_fy2024_end": 146,
+    "three_year_trend": "flat_to_declining",
+    "franchise_growth_3yr": 0
+  },
+  "exhibit_structure": {
+    "A": {"type": "regulatory", "pages": "56-60"},
+    "B": {"type": "contract", "pages": "61-~79", "name": "Development Agreement"},
+    "C": {"type": "contract", "pages": "~80-~139", "name": "Franchise Agreement"},
+    "D": {"type": "operations", "pages": "140-141", "name": "Manual Table of Contents"},
+    "E": {"type": "financial", "pages": "142-167", "name": "Financial Statements"},
+    "F": {"type": "regulatory", "pages": "175-196", "name": "State Addenda"},
+    "G": {"type": "franchisee_data", "pages": "197", "name": "Current Franchisees"},
+    "H": {"type": "franchisee_data", "pages": "198", "name": "Former Franchisees (NONE)"},
+    "I": {"type": "regulatory", "pages": "199-200", "name": "State Effective Dates"}
+  },
+  "item21_structural_facts": {
+    "audited_periods": 2,
+    "fy2024_year_end": "September 29, 2024",
+    "fy2023_period": "January 17, 2023 (Inception) to September 30, 2023",
+    "opening_balance_sheet": "April 12, 2023",
+    "opinion_type": "unmodified",
+    "entity_type": "S-corporation",
+    "parent_entity": "Taco Cabana, Inc."
+  },
+  "item1_structural_facts": {
+    "franchisor_formed": "January 17, 2023",
+    "franchisor_state": "Texas",
+    "parent_formed": "November 11, 1991",
+    "parent_state": "Delaware",
+    "ip_holder": "Texas Taco Cabana, L.P.",
+    "affiliates": ["Texas Taco Cabana, L.P.", "NTG Franchising, LLC"],
+    "concept_type": "fast_casual_mexican",
+    "sq_ft_range": "2,500-3,200",
+    "franchising_since": "March 2023"
+  },
+  "item6_fee_attributes": {
+    "royalty_pct": 5.0,
+    "royalty_frequency": "weekly",
+    "brand_fund_pct": 3.0,
+    "local_marketing_pct": 1.0,
+    "total_pct_fees": 9.0,
+    "technology_fee_monthly": 1840,
+    "technology_fee_annual": 22080,
+    "transfer_fee": 10000,
+    "eft_mandatory": true,
+    "interest_rate_max": 18.0,
+    "late_fee": 100
+  }
+}

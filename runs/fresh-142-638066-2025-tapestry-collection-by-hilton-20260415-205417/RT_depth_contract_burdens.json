@@ -1,0 +1,146 @@
+{
+  "depth_pass": "contract_burdens",
+  "source": "Items 5-17, Exhibit D (Franchise Agreement), Exhibit E (Guaranty), Exhibit G (HITS)",
+  "burdens": {
+    "grant_and_term": {
+      "grant": "Non-exclusive license to use System at specified location under Tapestry brand",
+      "term_new_dev": "23 years from Effective Date",
+      "term_conversion": "10 to 20 years from Opening Date",
+      "term_coo": "Remaining term or as approved",
+      "non_renewable": true,
+      "relicensing": "At franchisor's sole discretion, potentially materially different terms",
+      "source_pages": [82]
+    },
+    "fee_obligations": {
+      "royalty": "5% GRR monthly",
+      "program_fee": "4% GRR monthly (may increase up to +1% over term)",
+      "spa_royalty": "2% Gross Spa Revenue (if eforea)",
+      "hilton_honors": "4.3% eligible folio",
+      "tech_monthly": "$3,802 to $8,810 (OnQ connectivity + maintenance + Connected Room)",
+      "late_payment": "1.5%/month or max by law",
+      "payment_method": "May require wire transfer/electronic funds transfer at franchisee's cost",
+      "set_off": "Franchisor may reduce any payment by amounts franchisee owes",
+      "source_pages": [29, 30, 31, 32, 33, 34, 37]
+    },
+    "construction_requirements": {
+      "new_dev_start": "Within 16 months of approval",
+      "new_dev_complete": "Within 36 months of approval",
+      "conversion": "PIP-specific deadlines",
+      "architect_approval": "Must obtain franchisor's prior written consent for architect, designer, GC, major subs",
+      "plans_approval": "May not start construction until plans approved; no changes without advance consent",
+      "ada_compliance": "Architect must certify ADA compliance before and after construction",
+      "opening_authorization": "At franchisor's sole business discretion",
+      "unauthorized_opening_penalty": "$5,000/day",
+      "source_pages": [49, 50, 57, 58, 71]
+    },
+    "training_obligations": {
+      "pre_opening": "GM and key personnel must complete required training programs",
+      "ongoing": "Brand Conference annually, replacement personnel must complete training, compliance training annual",
+      "cost_burden": "Franchisee pays all course fees, travel, lodging, food expenses for attendees",
+      "trainer_expenses": "Franchisee may also pay trainer travel/lodging for on-site programs",
+      "failure_to_complete": "May delay hotel opening",
+      "source_pages": [55, 56, 57, 58]
+    },
+    "operational_obligations": {
+      "24_7_operation": true,
+      "management_company": "Must be approved by franchisor; 90 days to replace if lost",
+      "quality_assurance": "Periodic inspections, Stay Score assessments, Service Quality Improvement Program",
+      "frcm_renovations": "Required renovation cycles per Standards",
+      "reservation_service": "Must use exclusively for outgoing referrals",
+      "hilton_honors_participation": "Mandatory",
+      "advertising_approval": "All materials require prior franchisor approval",
+      "no_cross_marketing": "Prohibited with non-System/Network hotels",
+      "no_customer_list_use": "Without franchisor approval",
+      "rate_setting": "Franchisor may suggest rates; may require rate parity across channels",
+      "source_pages": [59, 60, 61, 72, 73, 79, 80]
+    },
+    "termination_triggers": {
+      "curable_10_days": ["payment default", "construction deadline missed", "insurance not maintained"],
+      "curable_30_days": ["other FA provision breach", "breach of representation/warranty"],
+      "non_curable_immediate": [
+        "repeated non-compliance within 24 months",
+        "3 material defaults in 12 months",
+        "bankruptcy/insolvency",
+        "loss of possession",
+        "5 consecutive days non-operation (except force majeure)",
+        "contesting System/Marks ownership",
+        "conduct adversely affecting reputation",
+        "false records/concealing revenue",
+        "unauthorized transfer",
+        "becoming Sanctioned Person",
+        "becoming Competitor",
+        "guarantor breach",
+        "public health/safety threat",
+        "other Hotel Agreement terminated"
+      ],
+      "interim_remedies": ["Reservation Service suspension", "directory removal", "software disabling", "fee accommodation revocation", "reservation diversion"],
+      "source_pages": [84, 85, 86]
+    },
+    "transfer_restrictions": {
+      "permitted_no_notice": ["publicly traded equity", "private <50% no control change", "institutional fund no manager change"],
+      "permitted_with_consent": ["affiliate transfer", "family/trust", "death", "private >50% changed since Effective Date"],
+      "permitted_fee": "$5,500",
+      "coo_transfer": {
+        "fee": "$150,000",
+        "requirements": ["60 days notice", "new application", "new FA (then-current form)", "PIP", "background check", "no default", "all amounts paid", "indemnification"],
+        "prohibited_transferees": ["Competitor", "Sanctioned Person"]
+      },
+      "no_right_of_first_refusal_by_franchisor": true,
+      "no_option_to_purchase_by_franchisor": true,
+      "source_pages": [88, 89, 90]
+    },
+    "noncompete": {
+      "during_term": "May not own/license/franchise Competing Brand. May be franchisee of Competing Brand. May manage (unless exclusive manager). Affiliates bound.",
+      "post_term": "None",
+      "competitor_definition": "Any entity owning/licensing/franchising a brand competing with System in franchisor's sole judgment",
+      "source_pages": [79, 80, 91]
+    },
+    "guaranty": {
+      "scope": "Required guarantors (may include spouse) assume and agree to discharge certain franchisee obligations",
+      "third_party_guaranty": "May be required for lender comfort letters, certain loans, or upon default notice",
+      "source_pages": [80]
+    },
+    "liquidated_damages": {
+      "pre_opening": "System's Average Monthly Royalty × 60 (if site used for another hotel within 1 year, or after Hotel Work begins but before opening)",
+      "post_opening_first_2_years": "Greater of Hotel's or System's Average Monthly Royalty × 60",
+      "post_opening_after_2_years": "Hotel's Average Monthly Royalty × 60",
+      "last_60_months": "Hotel's Average Monthly Royalty × remaining months",
+      "unauthorized_opening": "$5,000/day + costs",
+      "calculation_notes": "Excludes temporary financial accommodations and business interruptions from measurement period",
+      "source_pages": [36, 37]
+    },
+    "dispute_resolution": {
+      "venue": "E.D. Virginia (Alexandria) or Fairfax County, VA or NY, NY",
+      "franchisor_may_sue_at_hotel": true,
+      "governing_law": "New York (without choice of law principles)",
+      "arbitration": "None except Puerto Rico",
+      "source_pages": [91, 92]
+    },
+    "insurance": {
+      "requirement": "Must maintain minimum levels and types specified in Manual",
+      "insurer_ratings": "Minimum ratings specified",
+      "additional_insureds": "Parties specified in Manual",
+      "if_franchisee_fails": "Franchisor may obtain insurance at franchisee's expense",
+      "amounts_not_disclosed": "Vary widely by location, size, coverage type — cannot be estimated",
+      "source_pages": [46]
+    },
+    "indemnification": {
+      "scope": "Must defend, indemnify, hold harmless franchisor, Hilton Worldwide, subsidiaries, affiliates, officers, directors, employees, agents, successors, assigns",
+      "trigger": "Any claim, demand, tax, penalty, or proceeding arising from claimed occurrence at Hotel",
+      "source_pages": [36]
+    },
+    "force_majeure": {
+      "casualty": "Must inform franchisor immediately if Hotel damaged by fire, casualty, or force majeure. If closing required, may repair/rebuild within 18 months. If not, franchisor may terminate.",
+      "5_day_rule": "Failure to operate 5 consecutive days is non-curable default, unless due to Force Majeure and reasonable steps taken",
+      "source_pages": [83, 85]
+    },
+    "distinctive_clauses": {
+      "non_renewable_term": "Explicitly: 'This Agreement confers on you absolutely no rights of license renewal or extension whatsoever following the Expiration Date.'",
+      "data_ownership": "All guest data, hotel information, and information from reservations/loyalty programs is franchisor's property",
+      "no_domain_names": "Franchisee may not register, own, or maintain any domain names or sites relating to System/Brand",
+      "mandatory_guest_fee_consent": "May not charge any Mandatory Guest Fee without franchisor consent",
+      "competitor_management_company": "If Management Company becomes Competitor, 90 days to replace",
+      "marketing_materials_ownership": "Any marketing materials franchisee develops and franchisor approves may be used by other System hotels without compensation"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "depth_pass": "promotion_audit",
+  "brand": "Caption by Hyatt",
+  "filing_id": "637920-2025",
+  "promoted_facts": [
+    {
+      "fact": "Total ongoing percentage fee estimate is approximately 13.85% of GRR (5% royalty + 3.5% commercial services + 4% loyalty + 1.35% digital acquisition) before fixed fees",
+      "source_reader_report": "Pass B, Fee Stack",
+      "source_pdf_pages": [21, 25, 26, 30],
+      "target_canonical_field": "item6_fee_attributes.total_percentage_load_estimate",
+      "action": "Already in enriched canonical v1"
+    },
+    {
+      "fact": "Hyatt Hotels Corporation has 1,442 hotels comprising 347,301 rooms in 79 countries as of Dec 31, 2024",
+      "source_reader_report": "Pass A, bullet 2",
+      "source_pdf_pages": [99],
+      "target_canonical_field": "document_identity.parent_portfolio",
+      "action": "Promoted to canonical"
+    },
+    {
+      "fact": "Franchise and other fees revenue growing: $297M (2022) → $364M (2023) → $458M (2024)",
+      "source_reader_report": "Pass F, Item 21",
+      "source_pdf_pages": [92],
+      "target_canonical_field": "item21_financial_structure.franchise_fee_revenue_trend",
+      "action": "Already in enriched canonical v2"
+    },
+    {
+      "fact": "System Standards comprise 3,334 pages",
+      "source_reader_report": "Pass C, Item 11",
+      "source_pdf_pages": [43, 265],
+      "target_canonical_field": "supplier_restrictions.system_standards_pages",
+      "action": "Promoted to canonical"
+    },
+    {
+      "fact": "Pre-opening marketing minimum spend: $500 × number of guest rooms",
+      "source_reader_report": "Pass C, Item 11",
+      "source_pdf_pages": [41],
+      "target_canonical_field": "fees.initial_fees.pre_opening_marketing_minimum",
+      "action": "Promoted to canonical"
+    },
+    {
+      "fact": "Michigan front matter notice: franchisor intends to enforce arbitration provision despite Michigan law potentially voiding out-of-state arbitration",
+      "source_reader_report": "Pass A, bullet 12",
+      "source_pdf_pages": [6],
+      "target_canonical_field": "dispute_resolution.michigan_arbitration_note",
+      "action": "Promoted to canonical"
+    },
+    {
+      "fact": "Franchisor receivables allowance of $6.82M against gross receivables of ~$14.9M — 46% allowance rate suggesting collection challenges across broader Hyatt franchise portfolio",
+      "source_reader_report": "Pass F, Item 21",
+      "source_pdf_pages": [325],
+      "target_canonical_field": "franchisor_balance_sheet_detail.receivables_allowance_note",
+      "action": "Already in enriched canonical v2"
+    }
+  ],
+  "total_promoted": 4,
+  "total_already_present": 3
+}

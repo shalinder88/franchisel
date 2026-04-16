@@ -1,0 +1,144 @@
+{
+  "enrichment_version": "v2",
+  "base": "11_canonical_enriched.json",
+  "item21_financial_structure": {
+    "revenue_composition_2024": {
+      "franchise_fees": 796494,
+      "royalty_revenues": 3206450,
+      "total": 4002944,
+      "franchise_fee_pct": 19.9,
+      "royalty_pct": 80.1
+    },
+    "expense_composition_2024": {
+      "selling": 195725,
+      "advertising": 987,
+      "general_and_administrative": 1505550,
+      "affiliate_allocations": 0,
+      "amortization": 3808,
+      "total": 1706070
+    },
+    "margin_analysis": {
+      "operating_margin_2024": 57.4,
+      "operating_margin_2023": 44.6,
+      "operating_margin_2022": 43.0,
+      "net_margin_2024": 42.5,
+      "net_margin_2023": 33.6,
+      "net_margin_2022": 32.9
+    },
+    "affiliate_loan_trajectory": {
+      "2022": 4487423,
+      "2023": 5768892,
+      "2024": 7470740,
+      "annual_increase_2023": 1281469,
+      "annual_increase_2024": 1701848,
+      "pct_of_total_assets_2024": 78.4
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "cash": 652733,
+      "franchise_royalties_receivable_net": 290772,
+      "allowance_for_doubtful_accounts": 7821,
+      "initial_franchise_fees_receivable": 110000,
+      "other_receivables": 44500,
+      "notes_receivable_current": 104244,
+      "notes_receivable_long_term": 800210,
+      "prepaid_expenses_current": 44799,
+      "prepaid_expenses_long_term": 14335,
+      "loan_receivable_from_affiliate": 7470740,
+      "total_current_assets": 1247048,
+      "total_assets": 9532333,
+      "trade_accounts_payable": 524,
+      "accrued_expenses": 304892,
+      "contract_liabilities_current": 200244,
+      "contract_liabilities_long_term": 856710,
+      "total_current_liabilities": 505660,
+      "total_liabilities": 1362370,
+      "members_equity": 8169963
+    },
+    "income_statement_2024": {
+      "franchise_fees": 796494,
+      "royalty_revenues": 3206450,
+      "total_revenues": 4002944,
+      "selling": 195725,
+      "advertising": 987,
+      "general_and_administrative": 1505550,
+      "affiliate_allocations": 0,
+      "amortization": 3808,
+      "total_expenses": 1706070,
+      "operating_income": 2296874,
+      "interest_income": 15229,
+      "interest_expense": -553,
+      "other": -28572,
+      "profit_sharing_contribution": -38654,
+      "net_income_before_taxes": 2244324,
+      "income_tax_provision": -541526,
+      "net_income": 1702798
+    },
+    "cash_flow_2024": {
+      "net_cash_from_operations": 1537618,
+      "net_cash_from_investing": 117516,
+      "net_cash_from_financing": -1701848,
+      "net_change_in_cash": -46714,
+      "cash_end": 652733
+    }
+  },
+  "item6_fee_detail": {
+    "fees": [
+      {"name": "Royalty", "type": "ongoing", "amount": "Greater of $1,000 or 6% of GR/month", "frequency": "monthly"},
+      {"name": "Tiered Royalty", "type": "ongoing", "amount": "6%/4%/2% tiered (Early Renewal only)", "frequency": "monthly"},
+      {"name": "Grand Opening", "type": "one_time", "amount": "$1,000", "frequency": "once"},
+      {"name": "National Advertising Fee", "type": "ongoing", "amount": "Up to 3% of GR", "frequency": "monthly", "status": "not_currently_active"},
+      {"name": "Local Advertising Fee", "type": "ongoing", "amount": "2% of GR/year (may increase to 3%)", "frequency": "annual"},
+      {"name": "National Lead Admin Fee", "type": "event", "amount": "Up to 6% of National Lead amounts", "frequency": "as_incurred"},
+      {"name": "Audit Fee", "type": "event", "amount": "$3,000-$5,000", "trigger": "GR understated by 2%+"},
+      {"name": "Transfer Fee", "type": "event", "amount": "Greater of $5,000 or 4% of last year GR", "frequency": "at_transfer"},
+      {"name": "Successor Franchise Fee", "type": "event", "amount": "$15,000", "frequency": "at_renewal"},
+      {"name": "Late Fees", "type": "event", "amount": "1.5%/month + $50/day", "frequency": "per_occurrence"},
+      {"name": "Insurance Admin", "type": "event", "amount": "Premium + 15%", "trigger": "franchisor_procures"},
+      {"name": "Default/Indemnity", "type": "event", "amount": "All costs", "frequency": "on_demand"},
+      {"name": "Additional Training", "type": "event", "amount": "$800/day + travel", "frequency": "as_requested"},
+      {"name": "Management Services", "type": "event", "amount": "5-10% monthly GR + 15% admin", "trigger": "no_trained_manager"},
+      {"name": "YESCO Software", "type": "ongoing", "amount": "Free first 10 users; $100/user/month additional", "frequency": "monthly"},
+      {"name": "Data Storage", "type": "ongoing", "amount": "$0.25/GB/month", "frequency": "monthly"},
+      {"name": "Email Subscription", "type": "ongoing", "amount": "$150/user/year", "frequency": "annual", "status": "currently_free"},
+      {"name": "Website Fee", "type": "ongoing", "amount": "$20/month", "frequency": "monthly", "optional": true},
+      {"name": "Territory Encroachment", "type": "event", "amount": "Varies (disgorgement + admin)", "frequency": "per_violation"}
+    ],
+    "total_fee_types": 19
+  },
+  "contract_balances": {
+    "contract_receivables": {"2024": 400772, "2023": 290848, "2022": 258984, "2021": 244423},
+    "contract_liabilities": {"2024": 1056954, "2023": 1090948, "2022": 591873, "2021": 379700},
+    "notes": "Contract liabilities include nonrefundable collections for area development plans not yet formalized and convention sponsorships."
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Loan to YESCO Administration LLC ($7.47M, 78% of assets) — no repayment schedule", "severity": "high", "source": "Exhibit F Note 6"},
+    {"id": "U2", "description": "Bottom quartile avg GR ($188K) below annual TSQ ($250K)", "severity": "high", "source": "Items 12, 19"},
+    {"id": "U3", "description": "National Advertising Fund not active — may be established at up to 3% on 30 days notice", "severity": "medium", "source": "Items 6, 11"},
+    {"id": "U4", "description": "Servizio mark not federally registered", "severity": "medium", "source": "Item 13"},
+    {"id": "U5", "description": "Renewal may require materially different terms", "severity": "medium", "source": "Item 17"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "Royalty revenue declined 4.9% despite stable outlet count", "items_involved": ["Item 20", "Item 21"], "resolution_status": "Unresolved"}
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["Illinois", "Indiana", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Wisconsin"],
+    "override_family_summary": {
+      "forum_selection": ["Illinois", "Maryland", "Minnesota", "North Dakota", "Rhode Island"],
+      "governing_law": ["Illinois", "North Dakota", "Rhode Island", "Wisconsin"],
+      "noncompete": ["Minnesota", "North Dakota"],
+      "general_release": ["Illinois", "Indiana", "Maryland", "Minnesota", "New York", "North Dakota"],
+      "termination": ["Illinois", "Minnesota", "New York", "Virginia", "Wisconsin"],
+      "damages": ["Illinois", "Indiana", "Maryland", "Minnesota", "North Dakota"]
+    },
+    "total_overrides": 27
+  },
+  "depth_pass_metrics": {
+    "financial_notes_extracted": 10,
+    "contract_burden_clauses": 19,
+    "promoted_facts": 5,
+    "state_addenda_overrides": 27,
+    "states_structured": 9
+  }
+}

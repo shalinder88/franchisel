@@ -1,0 +1,94 @@
+{
+  "enrichment_version": "v1",
+  "fdd_id": "637918-2025",
+  "brand": "Burger King",
+
+  "item19_chart_detail": {
+    "traditional_sales_distribution": {
+      "period": "2024-01-01 to 2024-12-31",
+      "segments": {
+        "consolidated": {"count": 5837, "avg": 1671613, "median": 1579183, "pct_above_avg": 43},
+        "company_owned": {"count": 1063, "avg": 1730667, "median": 1638579, "pct_above_avg": 43},
+        "franchised": {"count": 4774, "avg": 1658463, "median": 1561502, "pct_above_avg": 43}
+      },
+      "distribution_bands": [
+        {"range": "Above $1.9M", "consolidated_pct": 29.1, "co_owned_pct": 31.3, "franchised_pct": 28.6},
+        {"range": "$1.7M-$1.9M", "consolidated_pct": 11.9, "co_owned_pct": 13.6, "franchised_pct": 11.5},
+        {"range": "$1.5M-$1.7M", "consolidated_pct": 15.5, "co_owned_pct": 18.6, "franchised_pct": 14.8},
+        {"range": "$1.3M-$1.5M", "consolidated_pct": 15.7, "co_owned_pct": 15.8, "franchised_pct": 15.7},
+        {"range": "$1.1M-$1.3M", "consolidated_pct": 14.2, "co_owned_pct": 13.1, "franchised_pct": 14.5},
+        {"range": "$0.9M-$1.1M", "consolidated_pct": 8.8, "co_owned_pct": 5.0, "franchised_pct": 9.6},
+        {"range": "$0.7M-$0.9M", "consolidated_pct": 4.1, "co_owned_pct": 2.5, "franchised_pct": 4.4},
+        {"range": "Below $0.7M", "consolidated_pct": 0.7, "co_owned_pct": 0.1, "franchised_pct": 0.9}
+      ]
+    },
+    "remodel_uplift_by_scope": {
+      "full": {"count": 840, "avg_sales_uplift": 11.4, "median_sales_uplift": 9.9, "avg_traffic_uplift": 10.3},
+      "scrape_rebuild": {"count": 53, "avg_sales_uplift": 26.1, "median_sales_uplift": 21.2, "avg_traffic_uplift": 24.5}
+    },
+    "remodel_uplift_by_dt_conversion": {
+      "no_conversion": {"count": 577, "avg_sales_uplift": 10.3},
+      "sdt_to_double_dt": {"count": 316, "avg_sales_uplift": 15.8}
+    },
+    "multiyear_uplift": {
+      "year1_avg": 12.3,
+      "year2_avg": 12.6,
+      "year3_avg": 13.4
+    }
+  },
+
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 7053, "franchised_end": 6992, "opened": 80, "terminated": 0, "non_renewed": 8, "reacquired": 0, "ceased_other": 132},
+    "2023": {"franchised_start": 6992, "franchised_end": 6640, "opened": 61, "terminated": 0, "non_renewed": 55, "reacquired": 88, "ceased_other": 270},
+    "2024": {"franchised_start": 6640, "franchised_end": 5524, "opened": 63, "terminated": 0, "non_renewed": 49, "reacquired": 1061, "ceased_other": 69}
+  },
+
+  "exhibit_structure": {
+    "total_exhibits": 54,
+    "letter_groups": 26,
+    "high_priority": ["D1", "D2", "G1", "M1", "P", "Q"],
+    "financial_statements_exhibit": "Q",
+    "state_addenda_exhibit": "P",
+    "franchisee_list_exhibit": "O1",
+    "ceased_operations_exhibit": "O3"
+  },
+
+  "item21_structural_facts": {
+    "auditor": "KPMG LLP",
+    "opinion_type": "Unqualified",
+    "guarantor_type": "Performance guarantee",
+    "guarantor_certain_states": "RBILP",
+    "guarantor_other_states": "RBI",
+    "total_assets_M": 24632,
+    "total_debt_M": 13677,
+    "net_income_M": 1445,
+    "leverage_ratio": "5.7x"
+  },
+
+  "item1_structural_facts": {
+    "founding_year": 1954,
+    "current_entity_formed": "2022-02-04",
+    "predecessor_dissolved": "2022-12",
+    "parent_rbi_type": "Canadian public company",
+    "largest_voting_block": "3G (~26%)",
+    "sister_brands": ["Tim Hortons", "Popeyes", "Firehouse Subs"],
+    "carrols_acquisition_date": "2024-05-16",
+    "carrols_restaurants_acquired": 1023,
+    "crown_your_career_program": true,
+    "development_agreement_available": true
+  },
+
+  "item6_fee_attributes": {
+    "royalty_rate": 4.5,
+    "advertising_rate": 4.5,
+    "digital_services_monthly": 110,
+    "digital_services_pct": 1.0,
+    "digital_services_annual_cap": 4500,
+    "investment_spending_max": 2.0,
+    "total_base_fee_pct": 9.0,
+    "total_with_digital_and_is_max_pct": "11%+",
+    "transfer_fee_first": 2000,
+    "transfer_fee_additional": 500,
+    "late_charge_rate": "18% per annum"
+  }
+}

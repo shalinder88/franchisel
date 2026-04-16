@@ -1,0 +1,54 @@
+{
+  "depth_pass": "promotion_audit",
+  "facts_promoted": [
+    {
+      "fact": "Hilton Advance Purchase Program: optional, 4.5% fee on advance payments, includes digital payment option (Google Pay, Apple Pay) via Adyen",
+      "reader_report_section": "Pass C",
+      "source_page": 68,
+      "promoted_to": "fees.advance_purchase_program"
+    },
+    {
+      "fact": "Strategic Partnerships with SLH, AutoCamp, Evermore Resort, Field Station — these are 'Other Businesses' that may operate in franchisee's area including Restricted Area",
+      "reader_report_section": "Pass D",
+      "source_page": [66, 70],
+      "promoted_to": "territory.strategic_partnerships"
+    },
+    {
+      "fact": "RMCC revenue management support is mandatory for first-time luxury franchise owners (Category 2 Premier Level 2, minimum 12 months, $4,179-$15,709/month)",
+      "reader_report_section": "Pass C",
+      "source_page": [37, 40],
+      "promoted_to": "fees.rmcc_mandatory"
+    },
+    {
+      "fact": "HSM revenues from all-brand franchisees in 2024: $19.6M rebates, $8.8M goods/services, $38.7M admin fees",
+      "reader_report_section": "Pass C",
+      "source_page": [46, 47],
+      "promoted_to": "supplier_economics.hsm_revenues_2024"
+    },
+    {
+      "fact": "Hilton affiliate holds non-controlling equity interest in Groups360 LLC (group events vendor); may receive pro-rata distributions",
+      "reader_report_section": "Pass C",
+      "source_page": 47,
+      "promoted_to": "supplier_economics.groups360_equity"
+    },
+    {
+      "fact": "Restaurant Brands (StiR Creative Collective): 8 brands available under other Hilton brands but NOT offered for LXR",
+      "reader_report_section": "Pass F",
+      "source_page": [258, 259],
+      "promoted_to": "brand_description.restaurant_brands_excluded"
+    },
+    {
+      "fact": "Condemnation/casualty termination: No termination fee if (a) condemnation, or (b) casualty where franchisee elects not to rebuild AND does not operate competing hotel at site within 3 years",
+      "reader_report_section": "Pass E",
+      "source_page": [79, 80],
+      "promoted_to": "termination.condemnation_casualty_relief"
+    },
+    {
+      "fact": "Anti-corruption clause: Development incentive may not be used for Improper Payments or violations of Anti-Corruption Laws; franchisor has inspection rights",
+      "reader_report_section": "Pass E",
+      "source_page": 150,
+      "promoted_to": "compliance.anti_corruption"
+    }
+  ],
+  "total_promoted": 8
+}

@@ -1,0 +1,45 @@
+{
+  "depth_pass": "promotion_audit",
+  "description": "Facts in reader report narrative not yet in canonical JSON",
+  "promoted_facts": [
+    {
+      "fact": "Franchise Agreement liquidated damages formula uses $25,000 per room (not $10,000 as stated in Item 6 of FDD)",
+      "source": "FA Section 13.4, page 155 of PDF",
+      "reader_report_section": "Pass E",
+      "promoted_to": "termination.liquidated_damages.post_opening_before_2yr",
+      "note": "FA and FDD may differ — FA text uses $25K x rooms for pre-2yr period; FDD Item 6 says $10K x rooms. The FA prevails as binding contract."
+    },
+    {
+      "fact": "Actual damages (in lieu of liquidated damages) triggered if 7+ Brand FAs terminate within 12 months due to franchisee/affiliate breach",
+      "source": "FA Section 13.5.1, page 155 of PDF",
+      "reader_report_section": "Pass E",
+      "promoted_to": "termination.actual_damages_triggers"
+    },
+    {
+      "fact": "General release on renewal/transfer covers all claims 'without limitation' through Effective Date (Section 16.8)",
+      "source": "FA Section 16.8, page 160 of PDF",
+      "reader_report_section": "Pass E",
+      "promoted_to": "dispute_resolution.general_release"
+    },
+    {
+      "fact": "Monthly Program Fee compliance discount: 0.5% reduction (3.0% vs 3.5%) confirmed in FA Addendum for PE (Spark) brand code",
+      "source": "FA Addendum, page 175 of PDF",
+      "reader_report_section": "Pass B",
+      "promoted_to": "ongoing_fees.program_fee_compliance_confirmed"
+    },
+    {
+      "fact": "Competitor definition for Spark (PE) is scoped to 'economy hotel market segment' per STR classification",
+      "source": "FA Section 5.1.29, page 140 of PDF",
+      "reader_report_section": "Pass E",
+      "promoted_to": "noncompete.segment_scope"
+    },
+    {
+      "fact": "Economic conditions not a defense to breach (Section 16.10)",
+      "source": "FA Section 16.10, page 160 of PDF",
+      "reader_report_section": "Pass E",
+      "promoted_to": "contract_terms.economic_conditions_defense"
+    }
+  ],
+  "canonical_patches_applied": true,
+  "note": "Patches applied to 09_final_canonical.json and 12_canonical_enriched_v2.json"
+}

@@ -1,0 +1,284 @@
+{
+  "fdd_id": "638058-2025",
+  "brand": "Hilton Hotels & Resorts",
+  "extraction_date": "2026-04-15",
+  "tables": [
+    {
+      "id": "T5_initial_fees",
+      "item": 5,
+      "title": "Initial Fees",
+      "source_pages": [23, 24, 25, 26, 27],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Franchise Application Fee — New Dev/Conversion", "amount": "$85,000 + $400/room over 250", "due_date": "With Application", "remarks": "See Note 1"},
+        {"type": "Franchise Application Fee — Change of Ownership", "amount": "$150,000", "due_date": "With Application", "remarks": "See Note 1"},
+        {"type": "Franchise Application Fee — Re-licensing", "amount": "$85,000", "due_date": "With Application", "remarks": "See Note 1"},
+        {"type": "PIP Fee", "amount": "$10,000", "due_date": "Before PIP inspection", "remarks": "For Conversion/COO/Re-licensing"},
+        {"type": "Construction/Renovation Extension Fee", "amount": "$10,000", "due_date": "With written request", "remarks": "See Note 2"},
+        {"type": "OnQ Computer System — Hardware/Software/Installation", "amount": "$103,500 to $310,800", "due_date": "As agreed", "remarks": "See Note 3"},
+        {"type": "OnQ FBPP Fee (initial)", "amount": "0.35%–0.45% GRR (REIT), 0.45%–0.75% GRR (non-REIT)", "due_date": "Monthly by 15th", "remarks": "See Note 3"},
+        {"type": "Other Initial Start Up Fees", "amount": "$6,500", "due_date": "Before opening", "remarks": "GRO, Digital Floor Plan, Opening Transition Tool"},
+        {"type": "Eforea Spa Initial Fee", "amount": "$25,000", "due_date": "When signing Spa Amendment", "remarks": "See Note 4"},
+        {"type": "Restaurant Brand Initial Fee", "amount": "$47,500 ($95,000 for Junction)", "due_date": "When signing Amendment", "remarks": "Optional; per brand selected"},
+        {"type": "Training Program Fees", "amount": "$5,000 to $20,000", "due_date": "As agreed", "remarks": "Plus wages/travel/lodging of attendees"},
+        {"type": "Opening Process Services Fee", "amount": "$20,000", "due_date": "Before opening", "remarks": "Pre-opening services"},
+        {"type": "RMCC Pre-Opening Support", "amount": "$4,059 to $8,880", "due_date": "Within 10 days of billing", "remarks": "Required if expedited opening ≤150 days"},
+        {"type": "Procurement and Services Fees", "amount": "4%–10% of project cost", "due_date": "As agreed", "remarks": "If franchisor/affiliates furnish/equip hotel"}
+      ],
+      "table_notes": [
+        "Note 1: Refundable less $7,500 processing fee if denied/withdrawn before approval. In 2024: $75K-$85K (new dev), $0-$150K (COO), $0-$85K (re-licensing).",
+        "Note 2: Auto 30-day rolling extensions for new dev/conversion unless 60-day notice to stop.",
+        "Note 3: FBPP covers hardware, software, maintenance, support. REIT rate lower but excludes hardware.",
+        "Note 4: Spa fee nonrefundable. Eforea is recommended but not required.",
+        "Note 5: Restaurant Brands optional. Fee per brand selected.",
+        "Note 6: HSM procurement fee 4%–10% plus product cost, freight, taxes."
+      ]
+    },
+    {
+      "id": "T6_other_fees",
+      "item": 6,
+      "title": "Other Fees (Key Recurring Fees)",
+      "source_pages": [28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Monthly Royalty Fee", "amount": "5% of GRR", "due_date": "Monthly by 15th", "remarks": "See Note 1"},
+        {"type": "Monthly F&B Fee", "amount": "3% of GFBR", "due_date": "Monthly by 15th", "remarks": "See Note 1"},
+        {"type": "Monthly Spa Royalty", "amount": "2% of GSR", "due_date": "Monthly by 15th", "remarks": "If Eforea Spa Amendment in effect"},
+        {"type": "Monthly Program Fee", "amount": "4% of GRR", "due_date": "Monthly by 15th", "remarks": "Max current+1% GRR over term"},
+        {"type": "OnQ FBPP", "amount": "0.35%–0.75% GRR", "due_date": "Monthly by 15th", "remarks": "REIT 0.35%–0.45%"},
+        {"type": "Hilton Honors", "amount": "4.3% eligible guest folio", "due_date": "10 days after billing", "remarks": "Waived for on-property enrollments"},
+        {"type": "Hilton Advance Program", "amount": "1.35% Digital Direct Revenue (max $30/stay)", "due_date": "Within 15 days", "remarks": "Lower-funnel marketing"},
+        {"type": "Guest Assistance — Diamond", "amount": "$300/transaction", "due_date": "Within 48 hours", "remarks": "Gold: $250, Others: $200"},
+        {"type": "Brand Non-Compliance Fee", "amount": "$65–$145/room (max $50K/6mo)", "due_date": "Within 10 days", "remarks": "Per consecutive Unacceptable grade"},
+        {"type": "Stay Score Failure Fee", "amount": "Up to $300/room or 0.5% GRR annually", "due_date": "Within 10 days", "remarks": "Assessed at least 2x/year"},
+        {"type": "Service Quality Improvement Program", "amount": "$20,000–$50,000/6mo", "due_date": "Within 10 days", "remarks": "If below minimum quality for 6+ months"},
+        {"type": "Brand Conference", "amount": "$2,500/attendee", "due_date": "Before attendance", "remarks": "Annual; GM and Dir of Sales required"},
+        {"type": "Liquidated Damages — Post-Opening Pre-2yr", "amount": "Greater of Hotel or System avg monthly royalty × 60", "due_date": "On demand", "remarks": "See Note 9"},
+        {"type": "Liquidated Damages — Post-2yr Pre-last-60mo", "amount": "Hotel avg monthly royalty × 60", "due_date": "On demand", "remarks": "See Note 9"},
+        {"type": "Late Payment", "amount": "1.5%/month or max legal rate", "due_date": "On demand", "remarks": "On any overdue payment"},
+        {"type": "COO Application Fee", "amount": "$150,000", "due_date": "With Application", "remarks": "For transfers not qualifying as Permitted"},
+        {"type": "Restaurant Brands Annual Fee", "amount": "$14,500 ($19,500 Junction)", "due_date": "Annually by Jan 15", "remarks": "Per brand selected"}
+      ],
+      "table_notes": [
+        "GRR = Gross Rooms Revenue (includes loyalty redemptions, mandatory guest fees, no-show revenue, less rebates/overcharges, excl. taxes).",
+        "GFBR = Gross Food and Beverage Revenue. GSR = Gross Spa Revenue.",
+        "Royalty modified in 11 instances in 2024.",
+        "Program Fee cannot exceed current rate + 1% GRR over term. Funds reservation service, directories, advertising, QA, tech.",
+        "Numerous additional distribution/sales fees: AAA ($0.30/room+10% commission), Consortia (up to $3.00/night+10%), TMC programs, US Government programs, ResMax (5.4%–5.9%), RMCC (varies by category), FastPay, Groups360, etc."
+      ]
+    },
+    {
+      "id": "T7_initial_investment",
+      "item": 7,
+      "title": "Estimated Initial Investment — Hilton (300 Rooms)",
+      "source_pages": [42, 43, 44, 45],
+      "columns": ["Type of Expenditure", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Franchise Application Fee", "low": "$105,000", "high": "$105,000", "to_whom": "Us"},
+        {"type": "PIP", "low": "$0", "high": "$10,000", "to_whom": "Us"},
+        {"type": "Construction & Leasehold Improvements", "low": "$25,410,000", "high": "$145,200,000", "to_whom": "Suppliers"},
+        {"type": "Designer & Engineering Fees", "low": "$924,000", "high": "$5,530,000", "to_whom": "Suppliers"},
+        {"type": "FF&E", "low": "$15,000,000", "high": "$22,500,000", "to_whom": "Suppliers"},
+        {"type": "Inventory & Operating Equipment", "low": "$2,000,000", "high": "$3,500,000", "to_whom": "Suppliers"},
+        {"type": "Signage", "low": "$25,000", "high": "$75,000", "to_whom": "Supplier"},
+        {"type": "Computer Hardware/Software Systems", "low": "$109,995", "high": "$317,295", "to_whom": "Us or Supplier"},
+        {"type": "Guest Internet Access", "low": "$134,388", "high": "$197,556", "to_whom": "Supplier"},
+        {"type": "Connected Room System", "low": "$65,600", "high": "$78,400", "to_whom": "Supplier"},
+        {"type": "Delphi Sales & Events", "low": "$900", "high": "$41,000", "to_whom": "Supplier"},
+        {"type": "Required Pre-Opening Training", "low": "$5,000", "high": "$20,000", "to_whom": "Us and Suppliers"},
+        {"type": "ADA Consultant Fee", "low": "$2,500", "high": "$15,000", "to_whom": "Supplier"},
+        {"type": "Construction/Renovation Extension Fees", "low": "$0", "high": "$10,000", "to_whom": "Us"},
+        {"type": "Insurance", "low": "Varies", "high": "Varies", "to_whom": "Agent/Insurer"},
+        {"type": "Organizational Expense", "low": "$75,000", "high": "$285,104", "to_whom": "Accountant/Attorney"},
+        {"type": "Permits & Licenses", "low": "$346,500", "high": "$1,980,000", "to_whom": "Government"},
+        {"type": "Misc Pre-Opening & Project Mgmt", "low": "$1,500,000", "high": "$3,960,000", "to_whom": "Suppliers"},
+        {"type": "Contingencies", "low": "$2,310,000", "high": "$13,200,000", "to_whom": "Suppliers"},
+        {"type": "Additional Funds (3 months)", "low": "$1,600,000", "high": "$2,200,000", "to_whom": "Suppliers"},
+        {"type": "Eforea Spa Initial Fee", "low": "$0", "high": "$25,000", "to_whom": "Us"},
+        {"type": "Eforea Spa Implementation", "low": "$0", "high": "$4,950,000", "to_whom": "Suppliers"},
+        {"type": "Restaurant Brand Initial Fee", "low": "$47,500", "high": "$95,000", "to_whom": "Us"},
+        {"type": "Other Required Pre-Opening Services Fees", "low": "$24,059", "high": "$28,880", "to_whom": "Us"},
+        {"type": "TOTAL", "low": "$49,685,442", "high": "$204,323,235", "to_whom": "Various"}
+      ],
+      "table_notes": [
+        "Excludes real estate, market studies, insurance premiums, interest, and conversion/COO/re-licensing improvements.",
+        "Based on 300-room prototype including food & beverage and recreational facilities.",
+        "Contingencies = at least 10% of construction costs.",
+        "Additional Funds cover 3 months operating expenses after opening."
+      ]
+    },
+    {
+      "id": "T19_room_rate",
+      "item": 19,
+      "title": "Room Rate — Comparable Hotels",
+      "source_pages": [91],
+      "columns": ["Metric", "2023", "2024"],
+      "rows": [
+        {"metric": "Average Room Rate", "2023": "$207.33", "2024": "$209.86"},
+        {"metric": "Median Room Rate", "2023": "$183.16", "2024": "$188.04"},
+        {"metric": "Company-Managed met/exceeded Average", "2023": "26/55.3%", "2024": "27/57.4%"},
+        {"metric": "Company-Managed met/exceeded Median", "2023": "35/74.5%", "2024": "36/76.6%"},
+        {"metric": "Franchisee-Managed met/exceeded Average", "2023": "42/27.5%", "2024": "38/24.8%"},
+        {"metric": "Franchisee-Managed met/exceeded Median", "2023": "65/42.5%", "2024": "64/41.8%"}
+      ],
+      "table_notes": ["Range 2024: $112.15 to $645.25. Range 2023: $93.59 to $598.01.", "199 Comparable Hotels of 242 total (46 company-managed, 153 franchisee-managed)."]
+    },
+    {
+      "id": "T19_occupancy",
+      "item": 19,
+      "title": "Occupancy — Comparable Hotels",
+      "source_pages": [91],
+      "columns": ["Metric", "2023", "2024"],
+      "rows": [
+        {"metric": "Average Occupancy", "2023": "69.2%", "2024": "69.5%"},
+        {"metric": "Median Occupancy", "2023": "68.5%", "2024": "69.5%"},
+        {"metric": "Company-Managed met/exceeded Average", "2023": "18/38.3%", "2024": "24/51.1%"},
+        {"metric": "Company-Managed met/exceeded Median", "2023": "20/42.6%", "2024": "23/48.9%"},
+        {"metric": "Franchisee-Managed met/exceeded Average", "2023": "75/49.0%", "2024": "78/51.0%"},
+        {"metric": "Franchisee-Managed met/exceeded Median", "2023": "80/52.3%", "2024": "77/50.3%"}
+      ],
+      "table_notes": ["Range 2024: 38.4% to 98.4%. Range 2023: 41.9% to 95.1%."]
+    },
+    {
+      "id": "T19_occ_index",
+      "item": 19,
+      "title": "Occupancy Index — Comparable Hotels",
+      "source_pages": [92],
+      "columns": ["Metric", "2023", "2024"],
+      "rows": [
+        {"metric": "Average Occupancy Index", "2023": "105.0", "2024": "104.1"},
+        {"metric": "Median Occupancy Index", "2023": "106.0", "2024": "105.8"},
+        {"metric": "Company-Managed met/exceeded Average", "2023": "26/55.3%", "2024": "26/55.3%"},
+        {"metric": "Company-Managed met/exceeded Median", "2023": "23/48.9%", "2024": "22/46.8%"},
+        {"metric": "Franchisee-Managed met/exceeded Average", "2023": "80/52.6%", "2024": "86/56.6%"},
+        {"metric": "Franchisee-Managed met/exceeded Median", "2023": "77/50.7%", "2024": "78/51.3%"}
+      ],
+      "table_notes": ["Range 2024: 56.6 to 155.6. Excludes 1 franchisee-managed hotel with insufficient data.", "Index of 100 = fair share of demand."]
+    },
+    {
+      "id": "T19_revpar_index",
+      "item": 19,
+      "title": "RevPAR Index — Comparable Hotels",
+      "source_pages": [93],
+      "columns": ["Metric", "2023", "2024"],
+      "rows": [
+        {"metric": "Average RevPAR Index", "2023": "106.0", "2024": "104.7"},
+        {"metric": "Median RevPAR Index", "2023": "108.6", "2024": "107.9"},
+        {"metric": "Company-Managed met/exceeded Average", "2023": "26/55.3%", "2024": "26/55.3%"},
+        {"metric": "Company-Managed met/exceeded Median", "2023": "22/46.8%", "2024": "20/42.6%"},
+        {"metric": "Franchisee-Managed met/exceeded Average", "2023": "87/57.2%", "2024": "89/58.6%"},
+        {"metric": "Franchisee-Managed met/exceeded Median", "2023": "78/51.3%", "2024": "80/52.6%"}
+      ],
+      "table_notes": ["Range 2024: 52.1 to 282.1. Excludes 1 franchisee-managed hotel with insufficient data."]
+    },
+    {
+      "id": "T20_systemwide",
+      "item": 20,
+      "title": "Table 1 — Systemwide Hotel Summary",
+      "source_pages": [94],
+      "columns": ["Hotel Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": "2022", "start": 188, "end": 188, "net": 0},
+        {"type": "Franchised", "year": "2023", "start": 188, "end": 189, "net": 1},
+        {"type": "Franchised", "year": "2024", "start": 189, "end": 187, "net": -2},
+        {"type": "Company-Owned", "year": "2022", "start": 0, "end": 0, "net": 0},
+        {"type": "Company-Owned", "year": "2023", "start": 0, "end": 0, "net": 0},
+        {"type": "Company-Owned", "year": "2024", "start": 0, "end": 0, "net": 0}
+      ],
+      "table_notes": ["All numbers as of December 31. Includes 9 Hilton Suites hotels."]
+    },
+    {
+      "id": "T20_transfers",
+      "item": 20,
+      "title": "Table 2 — Transfers of Franchised Hotels",
+      "source_pages": [94, 95],
+      "columns": ["State", "2022", "2023", "2024"],
+      "rows": [
+        {"state": "Arizona", "2022": 0, "2023": 0, "2024": 1},
+        {"state": "Illinois", "2022": 2, "2023": 0, "2024": 0},
+        {"state": "Louisiana", "2022": 1, "2023": 0, "2024": 0},
+        {"state": "Maryland", "2022": 0, "2023": 0, "2024": 1},
+        {"state": "Massachusetts", "2022": 0, "2023": 0, "2024": 1},
+        {"state": "New York", "2022": 0, "2023": 1, "2024": 0},
+        {"state": "North Carolina", "2022": 0, "2023": 1, "2024": 0},
+        {"state": "Texas", "2022": 1, "2023": 0, "2024": 0},
+        {"state": "Total", "2022": 4, "2023": 2, "2024": 3}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "T20_franchised_status",
+      "item": 20,
+      "title": "Table 3 — Status of Franchised Hotels (Totals)",
+      "source_pages": [95, 96, 97],
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Ops", "End"],
+      "rows": [
+        {"year": "2022", "start": 188, "opened": 4, "terminations": 2, "non_renewals": 0, "reacquired": 0, "ceased_ops": -2, "end": 188},
+        {"year": "2023", "start": 188, "opened": 0, "terminations": 1, "non_renewals": 1, "reacquired": 0, "ceased_ops": 3, "end": 189},
+        {"year": "2024", "start": 189, "opened": 4, "terminations": 3, "non_renewals": 0, "reacquired": 0, "ceased_ops": -3, "end": 187}
+      ],
+      "table_notes": ["Full state-level detail available in PDF pages 95-97. Net change in 'Ceased Ops' column includes adjustments."]
+    },
+    {
+      "id": "T20_projected",
+      "item": 20,
+      "title": "Table 5 — Projected Openings as of Dec 31, 2024",
+      "source_pages": [97, 98],
+      "columns": ["State", "FAs Signed Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        {"state": "California", "signed": 2, "projected_franchised": 1, "projected_company": 0},
+        {"state": "Florida", "signed": 2, "projected_franchised": 1, "projected_company": 0},
+        {"state": "Georgia", "signed": 2, "projected_franchised": 0, "projected_company": 0},
+        {"state": "New Jersey", "signed": 1, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Virginia", "signed": 2, "projected_franchised": 1, "projected_company": 0},
+        {"state": "Puerto Rico", "signed": 2, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Total", "signed": 11, "projected_franchised": 3, "projected_company": 0}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "T21_balance_sheet",
+      "item": 21,
+      "title": "Balance Sheet (in thousands)",
+      "source_pages": [117],
+      "columns": ["Line Item", "Dec 31 2024", "Dec 31 2023"],
+      "rows": [
+        {"item": "Cash", "2024": "$317", "2023": "$5,348"},
+        {"item": "Accounts receivable, net", "2024": "$135,970", "2023": "$127,999"},
+        {"item": "Other receivables due from Hilton affiliates", "2024": "$703,943", "2023": "$768,478"},
+        {"item": "Total current assets", "2024": "$872,512", "2023": "$940,470"},
+        {"item": "Franchise contracts, net", "2024": "$392,748", "2023": "$238,533"},
+        {"item": "Total assets", "2024": "$1,269,897", "2023": "$1,183,147"},
+        {"item": "Franchise deposits", "2024": "$18,498", "2023": "$18,885"},
+        {"item": "Deferred revenues (total)", "2024": "$558,880", "2023": "$524,229"},
+        {"item": "Total liabilities", "2024": "$692,892", "2023": "$566,693"},
+        {"item": "Contributed capital", "2024": "$310,000", "2023": "$310,000"},
+        {"item": "Retained earnings", "2024": "$528,936", "2023": "$541,365"},
+        {"item": "Due from Hilton affiliates (equity)", "2024": "($261,959)", "2023": "($234,911)"},
+        {"item": "Total member's equity", "2024": "$577,005", "2023": "$616,454"}
+      ],
+      "table_notes": ["Allowance for credit losses on AR: $10,411K (2024), $7,339K (2023)."]
+    },
+    {
+      "id": "T21_income",
+      "item": 21,
+      "title": "Statements of Comprehensive Income (in thousands)",
+      "source_pages": [118],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"item": "Franchise royalty fees", "2024": "$1,434,453", "2023": "$1,331,169", "2022": "$1,184,827"},
+        {"item": "Franchise sales & COO fees", "2024": "$49,340", "2023": "$43,294", "2022": "$39,881"},
+        {"item": "Franchise termination fees & other", "2024": "$18,276", "2023": "$2,434", "2022": "$4,757"},
+        {"item": "Total revenues", "2024": "$1,502,069", "2023": "$1,376,897", "2022": "$1,229,465"},
+        {"item": "Operating expenses", "2024": "$1,354", "2023": "$861", "2022": "$529"},
+        {"item": "Provision for credit losses", "2024": "$6,248", "2023": "$4,430", "2022": "($2,483)"},
+        {"item": "Amortization expense", "2024": "$3,751", "2023": "$414", "2022": "$410"},
+        {"item": "Total expenses", "2024": "$11,353", "2023": "$5,705", "2022": "($1,544)"},
+        {"item": "Operating income", "2024": "$1,490,716", "2023": "$1,371,192", "2022": "$1,231,009"},
+        {"item": "Net income", "2024": "$1,487,571", "2023": "$1,372,281", "2022": "$1,233,442"},
+        {"item": "Distribution to parent", "2024": "($1,500,000)", "2023": "($1,400,000)", "2022": "($1,550,000)"}
+      ],
+      "table_notes": ["Entity is tax-disregarded for US purposes. All income flows to Hilton parent.", "Amortization increase in 2024 due to Graduate brand acquisition ($85M intangible)."]
+    }
+  ]
+}

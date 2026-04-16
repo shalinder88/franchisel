@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "filing_id": "637920-2025",
+    "brand": "Caption by Hyatt",
+    "enrichment_version": "v2",
+    "extraction_date": "2026-04-15"
+  },
+  "item21_financial_structure": {
+    "parent_company": "Hyatt Hotels Corporation",
+    "fiscal_year_end": "December 31",
+    "reporting_currency": "USD (millions)",
+    "asset_light_strategy": true,
+    "asset_light_note": "Hyatt sold $1.4B in real estate in 2024; shifting toward management/franchising model",
+    "total_brands": "25+",
+    "franchise_fee_revenue_trend": {"2022": 297, "2023": 364, "2024": 458, "unit": "$M"},
+    "net_fees_trend": {"2022": 777, "2023": 923, "2024": 1030, "unit": "$M"},
+    "debt_to_equity_ratio_2024": 0.99,
+    "share_repurchase_2024": 1190,
+    "dividends_2024": 60
+  },
+  "item21_statement_detail": {
+    "income_statement": {
+      "total_revenues": {"2024": 6648, "2023": 6667, "2022": 5891},
+      "net_income": {"2024": 1296, "2023": 220, "2022": 455},
+      "eps_diluted": {"2024": 12.65, "2023": 2.05, "2022": 4.09},
+      "depreciation_amortization": {"2024": 333, "2023": 397, "2022": 426},
+      "interest_expense": {"2024": 180, "2023": 145, "2022": 150},
+      "asset_impairments": {"2024": 213, "2023": 30, "2022": 38},
+      "real_estate_gains": {"2024": 1245, "2023": 18, "2022": 263}
+    },
+    "balance_sheet": {
+      "cash": {"2024": 1011, "2023": 881},
+      "total_current_assets": {"2024": 2733, "2023": 2130},
+      "property_equipment_net": {"2024": 1689, "2023": 2340},
+      "goodwill": {"2024": 2541, "2023": 3205},
+      "intangibles_net": {"2024": 2167, "2023": 1670},
+      "total_assets": {"2024": 13324, "2023": 12833},
+      "long_term_debt": {"2024": 3326, "2023": 2305},
+      "total_liabilities": {"2024": 9498, "2023": 9266},
+      "total_equity": {"2024": 3826, "2023": 3567}
+    },
+    "cash_flow": {
+      "operating": {"2024": 633, "2023": 800, "2022": 674},
+      "capex": {"2024": -170, "2023": -198, "2022": -201},
+      "acquisitions": {"2024": -609, "2023": -175, "2022": -174},
+      "real_estate_proceeds": {"2024": 1421, "2023": -10, "2022": 625}
+    }
+  },
+  "item6_fee_detail": {
+    "mandatory_services_detail": {
+      "commercial_services_components": [
+        "Brand-wide marketing, advertising, PR, guest satisfaction",
+        "Base GPGS (centralized reservations, care professionals)",
+        "Revenue management technology and advisory",
+        "Group sales support (large accounts, Consortia)",
+        "Sales and catering system services",
+        "PMS services (Opera, web-in/web-out, hosting)",
+        "Digital product tech (Hyatt.com, mobile app)",
+        "Other tech (e-learning, email, HyattConnect, SharePoint, IAM, ServiceNow, in-room tech)"
+      ],
+      "gds_note": "~$8.50/reservation average, at cost without markup",
+      "mandatory_contracts_examples": ["Avendra credit card agreements", "Music license agreements", "Telecommunications agreements"],
+      "upsell_commission": "5% of Upsell Revenue (difference between upgraded and original rate)"
+    },
+    "non_mandatory_services_detail": {
+      "field_marketing_tiers": {"tier_1": "$996/month", "tier_2": "$1,867/month", "tier_3": "$2,747/month"},
+      "revenue_management_tiers": {"tactical": "$1,000/month", "essential": "$1,000-$2,000/month", "premium": "$1,750-$3,500/month"},
+      "central_sales_ranges": {
+        "group_sales": "$1,750-$6,300/month",
+        "lead_specialist": "$1,000-$5,000/month",
+        "transient_sales": "$1,600-$3,200/month",
+        "central_dos": "$5,050-$7,600/month",
+        "admin_support": "$2,000-$2,500/month"
+      },
+      "gpgs_addon": "$3.50-$16/interaction",
+      "digital_ancillary": "$1,250/month + 5% commission on net bookings",
+      "hsf_booking_fees": {
+        "group": "6% (3% with intermediary) of Group Contract Revenue, cap $30,000",
+        "transient": "3% of GRR per room night",
+        "referrals": "1% of GRR per room night"
+      }
+    },
+    "quality_assurance_detail": {
+      "fip_stage_1": "$5,000",
+      "fip_stage_2": "$15,000",
+      "fip_stage_3": "$20,000",
+      "bpp_annual": "$45,000",
+      "reduction_eligible": "Up to 100% based on improvement",
+      "fip_stage_duration": "6 months each"
+    }
+  },
+  "franchisor_balance_sheet_detail": {
+    "cash": 112484,
+    "receivables_net": 8065116,
+    "receivables_allowance": 6821037,
+    "total_current_assets": 8177600,
+    "franchise_agreement_assets": 144822971,
+    "franchise_agreement_intangibles_net": 5680345,
+    "deferred_tax_assets": 609930,
+    "total_assets": 159290846,
+    "accounts_payable_accrued": 95719,
+    "current_contract_liabilities": 329024,
+    "long_term_contract_liabilities": 10337886,
+    "total_liabilities": 10762629,
+    "members_equity": 148528217,
+    "unaudited": true,
+    "note": "Franchise agreement assets ($144.8M) likely represent key money and franchise incentives to attract new franchisees. Receivables allowance of $6.8M against $14.9M gross receivables suggests some collection issues across the broader Hyatt franchise portfolio."
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "No FPR data available. Zero financial performance information for a $28M-$88M investment.", "severity": "high", "source": "Item 19, p81"},
+    {"id": "U2", "description": "AOP Term is deal-specific; typically 3 years after opening.", "severity": "medium", "source": "Item 12, p65"},
+    {"id": "U3", "description": "Guarantor Monetary Threshold amounts not disclosed.", "severity": "medium", "source": "Item 15, pp65-66"},
+    {"id": "U4", "description": "Competing Brand Owner 5-hotel threshold could restrict management company options.", "severity": "medium", "source": "Item 15, p64"},
+    {"id": "U5", "description": "No cap on renovation/upgrade frequency or cost.", "severity": "medium", "source": "Item 8, p44"},
+    {"id": "U6", "description": "Franchisor balance sheet shows $144.8M franchise agreement assets (key money).", "severity": "low", "source": "p325"},
+    {"id": "U7", "description": "Michigan arbitration enforcement uncertainty.", "severity": "medium", "source": "pp5-6"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "Table 3 vs Exhibit G franchise count — resolved (3 signed not opened).", "items_involved": ["Item 20", "Exhibit G"], "resolution_status": "Resolved"},
+    {"id": "C2", "description": "No supplier rebates vs. Non-Mandatory Services profit — noted, different categories.", "items_involved": ["Item 6", "Item 8"], "resolution_status": "Noted"}
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["Hawaii", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island"],
+    "total_overrides": 21,
+    "override_families": ["forum_selection", "governing_law", "general_release", "termination", "damages", "renewal"],
+    "states_by_family": {
+      "forum_selection": ["Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island"],
+      "governing_law": ["Maryland", "North Dakota", "Rhode Island"],
+      "general_release": ["Hawaii", "Maryland", "Michigan", "Minnesota", "North Dakota"],
+      "termination": ["Maryland", "Michigan", "Minnesota"],
+      "damages": ["Minnesota", "North Dakota"],
+      "renewal": ["Michigan"]
+    }
+  }
+}

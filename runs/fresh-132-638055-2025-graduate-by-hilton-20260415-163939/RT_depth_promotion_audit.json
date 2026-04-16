@@ -1,0 +1,69 @@
+{
+  "depth_pass": "promotion_audit",
+  "promoted_facts": [
+    {
+      "fact": "Jury trial waiver — both parties waive right to trial by jury (FA §17.1)",
+      "reader_report_section": "Pass E (Contract Burden)",
+      "original_pdf_page": 151,
+      "canonical_family": "dispute_resolution",
+      "action": "Added jury_trial_waiver: true to dispute_resolution in canonical"
+    },
+    {
+      "fact": "Punitive damages waiver — both parties waive right to punitive/exemplary damages (FA §17.2)",
+      "reader_report_section": "Pass E (Contract Burden)",
+      "original_pdf_page": 151,
+      "canonical_family": "dispute_resolution",
+      "action": "Added punitive_damages_waiver: true to dispute_resolution in canonical"
+    },
+    {
+      "fact": "Interest rate on overdue amounts: 18% per annum (FA §16.15), vs. 1.5%/month in FDD Item 6",
+      "reader_report_section": "Pass B (Item 6)",
+      "original_pdf_page": 150,
+      "canonical_family": "fees",
+      "action": "Added interest_rate_per_annum: '18% or maximum lawful rate' to fees in canonical"
+    },
+    {
+      "fact": "Prevailing party entitled to recover attorneys' fees and costs (FA §16.14)",
+      "reader_report_section": "Pass E (Contract Burden)",
+      "original_pdf_page": 150,
+      "canonical_family": "dispute_resolution",
+      "action": "Added attorneys_fees_prevailing_party: true to dispute_resolution in canonical"
+    },
+    {
+      "fact": "Confidentiality of negotiated terms — disclosure is a default (FA §16.18)",
+      "reader_report_section": "Not previously in canonical",
+      "original_pdf_page": 151,
+      "canonical_family": "contract_terms",
+      "action": "Added confidentiality_of_negotiated_terms: true to contract_terms in canonical"
+    },
+    {
+      "fact": "Exemption acknowledgment — franchise sale exceeds $1,469,600 threshold (FA §18.0)",
+      "reader_report_section": "Not previously in canonical",
+      "original_pdf_page": 151,
+      "canonical_family": "contract_terms",
+      "action": "Added ftc_exemption_threshold: '$1,469,600' to contract_terms in canonical"
+    },
+    {
+      "fact": "Food and Beverage Consultant must be approved by franchisor — distinctive to Graduate brand",
+      "reader_report_section": "Pass C (Item 8)",
+      "original_pdf_page": 47,
+      "canonical_family": "brand_overview",
+      "action": "Added fb_consultant_approval_required: true to brand_overview in canonical"
+    },
+    {
+      "fact": "Franchisor may condition any amendment or waiver on franchisee executing an estoppel and general release of claims (FA §16.8)",
+      "reader_report_section": "Not previously in canonical",
+      "original_pdf_page": 148,
+      "canonical_family": "contract_terms",
+      "action": "Added general_release_required_for_amendments: true to contract_terms in canonical"
+    },
+    {
+      "fact": "Graduate brand code is 'GU' in the reservation system",
+      "reader_report_section": "Not previously in canonical",
+      "original_pdf_page": 112,
+      "canonical_family": "brand_overview",
+      "action": "Added chain_code: 'GU' to brand_overview in canonical"
+    }
+  ],
+  "total_promoted": 9
+}

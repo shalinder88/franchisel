@@ -1,0 +1,115 @@
+{
+  "enrichment_version": "v2",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637911-2025",
+  "brand": "Ivan Ramen",
+  "item21_financial_structure_detail": {
+    "entity_type_history": [
+      {"period": "July 2021 - December 2023", "type": "Multi-member LLC (partnership taxation)"},
+      {"period": "January 2024 - present", "type": "Single-member LLC (disregarded entity, 100% owned by Ivan Ramen Holdings Co. LLC)"}
+    ],
+    "capitalization_source": "Member contributions (no external debt)",
+    "revenue_model": "Franchise fees (initial + continuing royalty + brand fund + tech fee); proprietary product sales (reserved, not yet active)",
+    "key_related_party_relationships": [
+      {
+        "entity": "Ivan Ramen IP Holdings LLC",
+        "relationship": "IP licensor",
+        "terms": "10% of franchisor's gross revenues (reduced to maintain $100K net income floor)",
+        "status": "Immaterial due to near-zero revenues"
+      },
+      {
+        "entity": "Ivan Ramen USA LLC",
+        "relationship": "Operating affiliate (1 restaurant)",
+        "financial": "Due from: $25,848 (no terms, no interest)"
+      },
+      {
+        "entity": "Ivan Ramen Holdings Co. LLC",
+        "relationship": "100% parent (since 1/1/2024)",
+        "financial": "Due from: $1,200 (no terms, no interest)"
+      }
+    ],
+    "cash_trajectory": {
+      "2022_end": 209531,
+      "2023_end": 139242,
+      "2024_end": 5992,
+      "2025_subsequent": "120000 capital contribution in February 2025",
+      "burn_rate_2024": 133250,
+      "operating_burn_2024": 63904,
+      "investing_outflow_2024": 69346
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "current_assets": {"cash": 5992},
+      "other_assets": {"due_from_related_parties": 27048},
+      "total_assets": 33040,
+      "current_liabilities": {"accrued_expenses": 12000},
+      "other_liabilities": {"unearned_revenue": 20000},
+      "total_liabilities": 32000,
+      "members_equity": 1040
+    },
+    "income_statement_2024": {
+      "franchise_fee_revenue": 5000,
+      "total_revenue": 5000,
+      "general_and_administrative": 81856,
+      "operating_loss": -76856,
+      "net_loss": -76856
+    },
+    "cash_flow_2024": {
+      "operating": {
+        "net_loss": -76856,
+        "decrease_accounts_payable": -4648,
+        "decrease_accrued_expenses": -2400,
+        "increase_unearned_revenue": 20000,
+        "net_cash_used": -63904
+      },
+      "investing": {
+        "due_from_related_parties": -69346,
+        "net_cash_used": -69346
+      },
+      "net_decrease": -133250
+    },
+    "equity_changes_2024": {
+      "beginning_equity": 84666,
+      "prior_period_adjustment": -6770,
+      "net_loss": -76856,
+      "ending_equity": 1040
+    },
+    "notes_highlights": [
+      "Note 1: Formed July 12, 2021 (states DE LLC, but Item 1 states NY LLC — discrepancy)",
+      "Note 3: Prior period adjustment of ($6,770) for incorrectly capitalized organization costs",
+      "Note 5: $25,848 due from Ivan Ramen USA LLC; $1,200 due from Holdings; no terms/interest",
+      "Note 6: UK license (Sept 2023, £1 + 5%); Las Vegas franchise (March 2024, $25,000 + 5%)",
+      "Note 7: $120,000 capital contribution in February 2025"
+    ]
+  },
+  "item6_fee_detail": {
+    "fees_by_category": {
+      "ongoing_percentage_fees": [
+        {"name": "Continuing Royalty", "rate": "5%", "basis": "Gross Revenues", "status": "active"},
+        {"name": "System Brand Contribution", "rate": "up to 1.5%", "basis": "Gross Revenues", "status": "not yet established"},
+        {"name": "System Technology Fee", "rate": "up to 1.0%", "basis": "Gross Revenues", "status": "reserved, currently 0%"}
+      ],
+      "ongoing_fixed_fees": [
+        {"name": "Proprietary Products", "amount_monthly": 7333, "status": "active"}
+      ],
+      "one_time_fees": [
+        {"name": "Initial Franchise Fee", "amount": 35000},
+        {"name": "Successor Term Fee", "amount": 35000},
+        {"name": "Transfer Fee (FA)", "amount": 10000},
+        {"name": "Transfer Fee (ADA)", "amount": 10000}
+      ],
+      "contingent_fees": [
+        {"name": "Testing Fee", "range": "1000-1500", "trigger": "Alternative supplier request"},
+        {"name": "Additional Training", "amount": 2500, "unit": "per person", "trigger": "Additional/subsequent trainees"},
+        {"name": "On-Site Training", "amount": 2500, "unit": "per day", "trigger": "Franchisee request"},
+        {"name": "Relocation Analysis", "max": 5000, "trigger": "Relocation request"},
+        {"name": "Securities Review", "min": 10000, "trigger": "Proposed securities offering"},
+        {"name": "Audit Expenses", "trigger": "Gross Revenue understatement ≥2%"},
+        {"name": "Management Fee", "formula": "max(2x salary, 10% weekly GR)", "trigger": "Death/disability"},
+        {"name": "Late Charge", "rate": "3% of overdue", "additional": "$50/month for late financials"},
+        {"name": "Insurance Reimbursement", "range": "55000-65000/year", "trigger": "Failure to maintain coverage"}
+      ]
+    }
+  }
+}

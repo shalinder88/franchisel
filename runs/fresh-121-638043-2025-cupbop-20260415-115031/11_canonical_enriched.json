@@ -1,0 +1,98 @@
+{
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "tables_count": 3,
+    "period": "Calendar year 2024",
+    "data_type": "Revenue only (Gross Revenue)",
+    "company_owned_population": {"total_eligible": 29, "included": 26, "excluded_under_1yr": 2, "excluded_seasonal": 1},
+    "franchise_population": {"total_eligible": 33, "included": 24, "excluded_under_1yr": 6, "excluded_closed": 3},
+    "combined_population": {"included": 50},
+    "quartile_distribution": {
+      "company_owned": {
+        "Q1_low": {"range": "<$600K", "count": 6, "avg": 536699, "median": 546570},
+        "Q2": {"range": "$600K-$725K", "count": 6, "avg": 667435, "median": 665948},
+        "Q3": {"range": "$725K-$925K", "count": 7, "avg": 804118, "median": 783687},
+        "Q4_high": {"range": ">$925K", "count": 7, "avg": 1112921, "median": 1040690}
+      },
+      "franchise": {
+        "Q1_low": {"range": "<$550K", "count": 6, "avg": 400962, "median": 408782},
+        "Q2": {"range": "$550K-$725K", "count": 6, "avg": 552707, "median": 555049},
+        "Q3": {"range": "$725K-$885K", "count": 6, "avg": 738251, "median": 738543},
+        "Q4_high": {"range": ">$885K", "count": 6, "avg": 940911, "median": 917963}
+      },
+      "combined": {
+        "Q1_low": {"range": "<$550K", "count": 12, "avg": 447918, "median": 443273},
+        "Q2": {"range": "$550K-$700K", "count": 13, "avg": 631223, "median": 639790},
+        "Q3": {"range": "$700K-$885K", "count": 12, "avg": 775819, "median": 775256},
+        "Q4_high": {"range": ">$885K", "count": 13, "avg": 1042333, "median": 961307}
+      }
+    },
+    "key_observations": [
+      "Franchise units average 17% less than company-owned ($658K vs $794K)",
+      "Bottom-quartile franchise average ($401K) raises unit viability concerns",
+      "Top company-owned unit ($1.585M) is 39% higher than top franchise unit ($1.142M)",
+      "No cost or profit data disclosed"
+    ]
+  },
+  "item20_yearly_activity": {
+    "franchise_openings": {"2022": 10, "2023": 8, "2024": 6},
+    "franchise_closures": {"2022": 0, "2023": 0, "2024": 3},
+    "franchise_net": {"2022": 10, "2023": 8, "2024": 3},
+    "company_openings": {"2022": 6, "2023": 3, "2024": 2},
+    "company_closures": {"2022": 0, "2023": 0, "2024": 0},
+    "company_sold_to_franchisees": {"2022": 0, "2023": 2, "2024": 0},
+    "transfers": {"2022": 0, "2023": 0, "2024": 0},
+    "franchise_states_end_2024": {
+      "Arizona": 10, "Idaho": 9, "Utah": 4, "Oklahoma": 3, "Nevada": 2, "Texas": 2
+    },
+    "company_states_end_2024": {"Utah": 26, "Colorado": 3},
+    "projected_next_year": {
+      "franchise": {"California": 1, "Idaho": 1, "Montana": 1, "Texas": 2, "total": 5},
+      "company": {"Alaska": 1, "Arizona": 2, "California": 1, "Colorado": 1, "New Mexico": 1, "North Carolina": 1, "Texas": 2, "total": 9}
+    }
+  },
+  "exhibit_structure": {
+    "exhibits": [
+      {"letter": "A", "name": "State Administrators", "pages": "50-51", "page_count": 2},
+      {"letter": "B", "name": "Financial Statements", "pages": "52-79", "page_count": 28},
+      {"letter": "C", "name": "Franchise Agreement", "pages": "80-137", "page_count": 58, "sub_exhibits": ["A: Protected Territory", "B: Acknowledgement of Opening", "C: Entity Ownership", "D: Lease Addendum", "E: Direct Payment Auth", "F: General Release", "G: Non-Disclosure/Non-Compete", "H: Guaranty"]},
+      {"letter": "D", "name": "Area Development Agreement", "pages": "138-157", "page_count": 20, "sub_exhibits": ["A: Dev. Area and Schedule", "B: Entity Information"]},
+      {"letter": "E", "name": "Operations Manual TOC", "pages": "152-155", "page_count": 4, "manual_pages": 108},
+      {"letter": "F", "name": "Franchisee List", "pages": "158-162", "page_count": 5, "pii_blocked": true},
+      {"letter": "G", "name": "State Specific Addenda", "pages": "163-191", "page_count": 29, "states": 13},
+      {"letter": "H", "name": "State Effective Dates", "pages": "199", "page_count": 1},
+      {"letter": "I", "name": "Receipt Page", "pages": "200-202", "page_count": 3}
+    ]
+  },
+  "item21_structural_facts": {
+    "auditor": "Forvis Mazars, LLP",
+    "auditor_location": "Salt Lake City, Utah",
+    "opinion_type": "Clean (unqualified)",
+    "report_dates": ["March 24, 2025", "May 31, 2024"],
+    "fiscal_year_end": "December 31",
+    "entity_type_for_tax": "LLC (pass-through, state PTET elected)",
+    "revenue_sources": "Franchise fees and royalties",
+    "revenue_recognition": "Initial franchise fees: ~50% recognized upon opening, remainder over 10-year contract life. Royalties: recognized monthly based on sales reports.",
+    "depreciation_method": "Straight-line, 3 years for all asset classes"
+  },
+  "item1_structural_facts": {
+    "entity_formed": "2014-11-14",
+    "entity_type": "Utah LLC (converted from corporation Dec 2016)",
+    "franchising_since": "March 2017",
+    "parent_relationship": "Wholly owned subsidiary of Cupbop Co. since Jan 2021",
+    "ip_license": "License Agreement dated December 15, 2020 from Cupbop Co.",
+    "food_truck_operations_since": "May 2013",
+    "first_storefront": "May 2016",
+    "non_traditional_venues_since": "March 2014"
+  },
+  "item6_fee_attributes": {
+    "auto_debit_required": true,
+    "gross_sales_definition_broad": true,
+    "gross_sales_includes": ["all revenue", "catering/delivery charges", "gift cards", "business interruption insurance proceeds"],
+    "gross_sales_excludes": ["sales/use taxes", "documented refunds/credits"],
+    "late_reporting_penalty": "120% of last royalty + late fee + interest",
+    "liquidated_damages_formula": "Sum of prior 24 months royalties (or remaining term if less)",
+    "tax_gross_up": true,
+    "fee_uniformity": "uniformly imposed"
+  }
+}

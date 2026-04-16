@@ -1,0 +1,155 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-15",
+  "source_pages": [195, 196, 197, 198, 199],
+  "auditor": "HBME, LLC",
+  "auditor_address": "559 West 500 South, Bountiful, UT 84010",
+  "audit_date": "2025-03-28",
+  "accounting_policies": {
+    "revenue_recognition": {
+      "method": "Revenue recognized when earned and due per franchise agreements",
+      "initial_fees": "Recognized when substantially all initial services are performed, generally upon execution of franchise agreement",
+      "royalties": "Recognized as earned, with provision for estimated uncollectible amounts",
+      "renewal_fees": "Recognized as contract liability when renewal agreement becomes effective, then recognized ratably over renewal period",
+      "basis": "Majority of revenue recognition is based on goods or services transferred over time (ASC 606)",
+      "source_pages": [196, 197]
+    },
+    "depreciation_amortization": {
+      "method": "Straight-line over estimated useful life",
+      "amounts": {"2024": 3808, "2023": 6952, "2022": 3588},
+      "notes": "Minimal fixed assets — company is asset-light",
+      "source_pages": [195]
+    },
+    "cash_equivalents": {
+      "definition": "Money market accounts with maturity at acquisition of less than 90 days",
+      "source_pages": [195]
+    },
+    "receivables": {
+      "method": "Recorded at invoiced amount; allowance based on management assessment of collectibility",
+      "allowance_2024": 7821,
+      "allowance_2023": 8070,
+      "allowance_2022": 0,
+      "bad_debt_expense_2024": 7821,
+      "write_offs_net_2024": -8070,
+      "notes": "Company does not accrue interest on uncollectible receivables. Does not sell receivables.",
+      "source_pages": [195, 198]
+    },
+    "contract_liabilities": {
+      "description": "Nonrefundable collections for area development plans not yet formalized, convention sponsorships, and other contract obligations",
+      "balances": {"2024": 1056954, "2023": 1090948, "2022": 591873, "2021": 379700},
+      "classification": {"current_2024": 200244, "long_term_2024": 856710},
+      "notes": "Revenue recognized when related service is rendered",
+      "source_pages": [196]
+    },
+    "income_taxes": {
+      "method": "Allocated share of parent YESCO's consolidated tax return",
+      "treatment": "Company is single-member LLC included in YESCO consolidated return",
+      "allocation_basis": "Company's share of pre-tax income or loss",
+      "provision_2024": 541526,
+      "provision_2023": 412407,
+      "provision_2022": 377431,
+      "effective_rate_2024": 24.1,
+      "examination_status": "YESCO not subject to federal/state examination for years before 2021",
+      "notes": "Company does not pay income taxes directly",
+      "source_pages": [196]
+    },
+    "leases": {
+      "standard": "ASC 842 (ASU 2016-02)",
+      "status": "No leases qualify under this standard",
+      "rou_assets": 0,
+      "lease_liability": 0,
+      "source_pages": [197]
+    },
+    "use_of_estimates": {
+      "present": true,
+      "description": "Estimates and assumptions regarding reported amounts of assets/liabilities, contingent assets/liabilities, and revenue/expenses",
+      "source_pages": [196]
+    },
+    "advertising_costs": {
+      "method": "Expensed as incurred",
+      "amounts": {"2024": 987, "2023": 3333, "2022": 8197},
+      "source_pages": [196]
+    },
+    "fair_value": {
+      "instruments": "Cash, accounts receivable, accounts payable, advances",
+      "method": "Carrying amounts approximate fair value due to short-term maturities",
+      "source_pages": [196]
+    }
+  },
+  "material_notes": {
+    "note_2_franchising": {
+      "description": "Franchise agreement terms and revenue recognition for franchise operations",
+      "initial_fee_typical": 50000,
+      "area_development_range": "25000-50000",
+      "royalty_rate": "6% of sales, $1,000 monthly minimum",
+      "renewal_fee_recognition": "Contract liability, ratably over renewal period",
+      "direct_costs": "Charged to G&A as incurred; renewal costs may be capitalized to prepaid",
+      "yesco_national_service": "Division of YESCO LLC serving national customers through centralized coordination",
+      "outlet_counts": {
+        "company_owned_2024": 42,
+        "franchised_2024": 57,
+        "franchised_sold_2024": 1,
+        "franchised_reacquired_2024": 0,
+        "franchised_terminated_ceased_2024": 1
+      },
+      "source_pages": [197, 198]
+    },
+    "note_3_initial_fees_receivable": {
+      "balance_2024": 110000,
+      "balance_2023": 0,
+      "balance_2022": 0,
+      "notes": "New in 2024. No special financing. Expected collection early 2025. No past due or nonaccrual.",
+      "source_pages": [198]
+    },
+    "note_4_receivables_allowance": {
+      "beginning_balance_2024": 8070,
+      "additions_2024": 7821,
+      "write_offs_net_2024": -8070,
+      "ending_balance_2024": 7821,
+      "source_pages": [198]
+    },
+    "note_5_employee_benefits": {
+      "plan_type": "401(k) profit sharing retirement plan and trust",
+      "sponsor": "Parent company YESCO",
+      "eligibility": "Age 20.5+, 6 months service",
+      "contributions": {"2024": 38654, "2023": 36795, "2022": 24655},
+      "notes": "Contributions are discretionary",
+      "source_pages": [199]
+    },
+    "note_6_related_party": {
+      "counterparty": "YESCO Administration LLC",
+      "instrument": "Loan receivable, non-interest bearing",
+      "balances": {"2024": 7470740, "2023": 5768892, "2022": 4487423},
+      "purpose": "Affiliate acts as agent in paying bills and collecting some receivables of the Company",
+      "repayment_terms": "Not disclosed",
+      "annual_growth": {"2023": 1281469, "2024": 1701848},
+      "risk_assessment": "Represents 78% of total assets. No repayment schedule. Growing approximately $1.5M/year. Material concentration risk.",
+      "source_pages": [199]
+    },
+    "note_7_commitments_contingencies": {
+      "description": "Normal course of business litigation",
+      "management_assessment": "Not expected to have material impact on financial position, results, or liquidity",
+      "source_pages": [199]
+    },
+    "note_8_concentrations_credit_risk": {
+      "institution_location": "Salt Lake City, Utah",
+      "fdic_limit": 250000,
+      "uninsured_balances": {"2024": 304818, "2023": 354816, "2022": 372925},
+      "source_pages": [199]
+    },
+    "note_9_contract_balances": {
+      "contract_receivables": {"2024": 400772, "2023": 290848, "2022": 258984, "2021": 244423},
+      "contract_liabilities": {"2024": 1056954, "2023": 1090948, "2022": 591873, "2021": 379700},
+      "source_pages": [199]
+    },
+    "note_10_subsequent_events": {
+      "evaluation_date": "2025-03-28",
+      "events_disclosed": "None",
+      "source_pages": [199]
+    }
+  },
+  "impairment_policy": "Not explicitly stated — minimal fixed assets",
+  "variable_interest_entities": "None disclosed",
+  "going_concern": false,
+  "subsequent_events": "Evaluated through March 28, 2025; none disclosed"
+}

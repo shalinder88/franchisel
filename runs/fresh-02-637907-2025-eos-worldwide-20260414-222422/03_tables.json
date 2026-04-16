@@ -1,0 +1,324 @@
+{
+  "extraction_date": "2026-04-14",
+  "fdd_id": "637907-2025",
+  "brand": "EOS Worldwide",
+  "tables": [
+    {
+      "table_id": "T5-1",
+      "item": 5,
+      "title": "Initial Fees Summary",
+      "source_pages": [14, 15, 16],
+      "columns": ["Fee", "Amount", "Notes"],
+      "rows": [
+        {"Fee": "Initial Franchise Fee", "Amount": "$5,000", "Notes": "Nonrefundable. $2,500 for rejoining within 5 years. AUD $5,000 / £5,000 for international"},
+        {"Fee": "Boot Camp Fee", "Amount": "$45,000", "Notes": "Nonrefundable. Paid at signing. International rates lower"},
+        {"Fee": "Start-Up Inventory", "Amount": "$1,500–$3,200", "Notes": "Training binders and materials. Nonrefundable"},
+        {"Fee": "Monthly Membership Fee (pre-operations)", "Amount": "$1,395–$5,580", "Notes": "Begins first day of scheduled Boot Camp month. 1-4 months"}
+      ],
+      "table_notes": ["All initial fees are uniformly imposed for all new franchisees. Franchisor may waive or reduce on case-by-case basis."]
+    },
+    {
+      "table_id": "T6-1",
+      "item": 6,
+      "title": "Other Fees Table",
+      "source_pages": [17, 18, 19, 20, 21, 22],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Type of Fee": "Monthly Membership Fee", "Amount": "$1,395 (Professional/Legacy/Emeritus), $1,495 (Certified), $1,695 (Expert)", "Due Date": "1st day of month for scheduled Boot Camp", "Remarks": "Flat fee in lieu of royalty. May increase up to $200/year"},
+        {"Type of Fee": "Brand Development Fund", "Amount": "Currently none. Up to $100/mo if established", "Due Date": "TBD", "Remarks": "60 days notice to implement. Cap $100/mo increase/year"},
+        {"Type of Fee": "Local/Regional Advertising Cooperative", "Amount": "Currently none", "Due Date": "TBD", "Remarks": "Would be limited to 1% of average gross session revenues"},
+        {"Type of Fee": "Warm Leads Fee", "Amount": "50% of initial session fee, min $1,500", "Due Date": "14 days after session", "Remarks": "Optional program participation"},
+        {"Type of Fee": "Speaking Referral Fee", "Amount": "25% of gross revenue", "Due Date": "14 days after session", "Remarks": "For franchisor-referred speaking engagements"},
+        {"Type of Fee": "Technology Fee", "Amount": "Currently none. Up to $100/mo if established", "Due Date": "TBD", "Remarks": "30 days notice. Cap $100/mo increase/year"},
+        {"Type of Fee": "Additional Training Fees", "Amount": "$995–$10,000", "Due Date": "Prior to attending", "Remarks": "Optional, plus travel costs"},
+        {"Type of Fee": "Mandatory Remedial Training", "Amount": "$995–$10,000", "Due Date": "Prior to attending", "Remarks": "Required for breaches or performance issues"},
+        {"Type of Fee": "QCE Fee (beyond included)", "Amount": "$1,000 per additional QCE", "Due Date": "Upon registration", "Remarks": "1 QCE/quarter included in membership. Late fee $250, cancellation fees apply"},
+        {"Type of Fee": "Annual EOS Conference Fee", "Amount": "$0–$2,500", "Due Date": "Upon registration", "Remarks": "Based on number of clients attending (3-5: full fee, 6-9: half, 10+: free)"},
+        {"Type of Fee": "Renewal Fee", "Amount": "Currently none", "Due Date": "N/A", "Remarks": "May be established; won't apply to current FA renewal"},
+        {"Type of Fee": "Transfer Fee", "Amount": "$5,000", "Due Date": "At time of transfer", "Remarks": "May be waived for death/disability/family. Waived for internal equity transfers"},
+        {"Type of Fee": "Accounting/Audit Fee", "Amount": "Cost and expenses", "Due Date": "When incurred", "Remarks": "Triggered if underreporting found"},
+        {"Type of Fee": "Interest on Overdue Amounts", "Amount": "1.5%/month or max by law", "Due Date": "30 days after due date", "Remarks": "Accrues until paid in full"},
+        {"Type of Fee": "Management Fee", "Amount": "Franchisor costs including wages, travel", "Due Date": "On demand from business proceeds", "Remarks": "Step-in management for default, death, disability"},
+        {"Type of Fee": "Insurance Reimbursement", "Amount": "Premium + up to 20%", "Due Date": "When incurred", "Remarks": "If franchisee fails to maintain required insurance"},
+        {"Type of Fee": "Indemnification", "Amount": "Varies", "Due Date": "Date incurred", "Remarks": "For liability from franchisee operations"},
+        {"Type of Fee": "Costs of Enforcement", "Amount": "Varies", "Due Date": "Date incurred", "Remarks": "Franchisor legal costs for enforcing franchisee obligations"},
+        {"Type of Fee": "Non-compliance Cure", "Amount": "Out-of-pocket + 10%", "Due Date": "When billed", "Remarks": "Franchisor cures default on franchisee's behalf"},
+        {"Type of Fee": "ACH/CC Administration", "Amount": "Up to $50/incident; up to 4% CC surcharge", "Due Date": "As incurred", "Remarks": "Declined payments, account changes"},
+        {"Type of Fee": "Additional Email Accounts", "Amount": "$18/mo (2nd), $25/mo (3+)", "Due Date": "As incurred", "Remarks": "1st admin email included in membership"},
+        {"Type of Fee": "Reimbursement of Taxes", "Amount": "Varies", "Due Date": "As incurred", "Remarks": "Sales/use taxes passed through"},
+        {"Type of Fee": "Practice Management+", "Amount": "$195–$495/month", "Due Date": "Monthly in advance", "Remarks": "Optional CRM upgrade. Pricing by number of active clients"}
+      ],
+      "table_notes": [
+        "Note 1: All fees are non-refundable unless otherwise stated.",
+        "Note 2: Monthly Membership Fee is flat in lieu of traditional royalty. Can increase up to $200/year.",
+        "Note 3: Brand Development Fund may be established with 60 days notice.",
+        "Note 5: Warm Leads Program participation is optional.",
+        "Note 8: QCEs — minimum attendance required for tier maintenance.",
+        "Note 10: Transfer fee waived for family/internal equity transfers under conditions.",
+        "Note 14: Practice Management included in membership; Practice Management+ is upgrade."
+      ]
+    },
+    {
+      "table_id": "T7-1",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [25, 26, 27],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"Type of Expenditure": "Initial Franchise Fee", "Low": "$5,000", "High": "$5,000", "Method of Payment": "Lump Sum", "When Due": "At signing", "To Whom": "Us"},
+        {"Type of Expenditure": "Required Boot Camp Training", "Low": "$45,000", "High": "$45,000", "Method of Payment": "Lump Sum", "When Due": "At signing", "To Whom": "Us"},
+        {"Type of Expenditure": "Additional Costs Boot Camp/QCEs", "Low": "$1,000", "High": "$10,000", "Method of Payment": "As Arranged", "When Due": "As Arranged", "To Whom": "Vendors"},
+        {"Type of Expenditure": "Opening/Start-Up Inventory", "Low": "$1,500", "High": "$3,200", "Method of Payment": "As Arranged", "When Due": "Prior to Operations", "To Whom": "Us, EOS OpCo, Approved Suppliers"},
+        {"Type of Expenditure": "Computer Technology Hardware", "Low": "$2,000", "High": "$10,000", "Method of Payment": "As Arranged", "When Due": "As Arranged", "To Whom": "Vendors"},
+        {"Type of Expenditure": "Initial Marketing", "Low": "$1,000", "High": "$5,000", "Method of Payment": "As Arranged", "When Due": "As Arranged", "To Whom": "Vendors"},
+        {"Type of Expenditure": "Insurance", "Low": "$1,500", "High": "$4,000", "Method of Payment": "As Arranged", "When Due": "As Arranged", "To Whom": "Insurance Carriers"},
+        {"Type of Expenditure": "Miscellaneous 1st Year Expenses", "Low": "$1,650", "High": "$5,250", "Method of Payment": "As Arranged", "When Due": "As Arranged", "To Whom": "Vendors"},
+        {"Type of Expenditure": "Accounting and Professional Fees", "Low": "$1,000", "High": "$3,000", "Method of Payment": "As Arranged", "When Due": "As Arranged", "To Whom": "Advisors"},
+        {"Type of Expenditure": "Monthly Membership Fees (First 6 Months)", "Low": "$1,395", "High": "$5,580", "Method of Payment": "Monthly", "When Due": "As Needed", "To Whom": "Us"},
+        {"Type of Expenditure": "Additional Funds (First 6 Months)", "Low": "$0", "High": "$54,630", "Method of Payment": "As Arranged", "When Due": "As Needed", "To Whom": "Various"},
+        {"Type of Expenditure": "TOTAL", "Low": "$61,045", "High": "$150,660", "Method of Payment": "", "When Due": "", "To Whom": ""}
+      ],
+      "table_notes": [
+        "Note 1: None of the expenses are refundable unless otherwise indicated.",
+        "Note 3: Boot Camp fee of $45,000 for US. May be waived/reduced for returning Implementers.",
+        "Note 7: Initial Marketing includes up to 200 Traction books at $16.00 each.",
+        "Note 8: Insurance includes CGL and E&O.",
+        "Note 12: Additional funds assume no rent/lease for office space.",
+        "Note 13: No financing offered. SBA Franchise Registry eligible."
+      ]
+    },
+    {
+      "table_id": "T19-1",
+      "item": 19,
+      "title": "Annual Session Revenue Performance (Feb 2024–Jan 2025, US Only)",
+      "source_pages": [61, 62],
+      "columns": ["Metric", "Professional", "Certified", "Expert", "System Wide"],
+      "rows": [
+        {"Metric": "# of Operational Franchisees", "Professional": "111", "Certified": "254", "Expert": "103", "System Wide": "468"},
+        {"Metric": "Lowest Session Revenue (Annual)", "Professional": "$20,000", "Certified": "$132,500", "Expert": "$219,000", "System Wide": "$20,000"},
+        {"Metric": "Highest Session Revenue (Annual)", "Professional": "$488,750", "Certified": "$1,014,000", "Expert": "$1,583,500", "System Wide": "$1,583,500"},
+        {"Metric": "Average Session Revenue (Annual)", "Professional": "$162,542", "Certified": "$413,902", "Expert": "$704,649", "System Wide": "$418,274"},
+        {"Metric": "# Above Average", "Professional": "55", "Certified": "104", "Expert": "43", "System Wide": "196"},
+        {"Metric": "% Above Average", "Professional": "49.55%", "Certified": "40.94%", "Expert": "41.75%", "System Wide": "41.88%"},
+        {"Metric": "Median Session Revenue (Annual)", "Professional": "$161,648", "Certified": "$389,250", "Expert": "$666,750", "System Wide": "$367,975"},
+        {"Metric": "Shortest Tenure (months)", "Professional": "14", "Certified": "14", "Expert": "33", "System Wide": "14"},
+        {"Metric": "Longest Tenure (months)", "Professional": "135", "Certified": "223", "Expert": "189", "System Wide": "223"},
+        {"Metric": "Average Tenure Since Boot Camp (months)", "Professional": "32", "Certified": "43", "Expert": "99", "System Wide": "52"},
+        {"Metric": "Median Tenure (months)", "Professional": "23", "Certified": "38", "Expert": "93", "System Wide": "41"},
+        {"Metric": "Lowest Average Per Session Fee", "Professional": "$2,813", "Certified": "$3,215", "Expert": "$3,622", "System Wide": "$2,813"},
+        {"Metric": "Highest Average Per Session Fee", "Professional": "$7,909", "Certified": "$10,463", "Expert": "$13,176", "System Wide": "$13,176"},
+        {"Metric": "Average Per Session Fee", "Professional": "$4,995", "Certified": "$5,706", "Expert": "$7,176", "System Wide": "$5,861"},
+        {"Metric": "Median Per Session Fee", "Professional": "$4,928", "Certified": "$5,537", "Expert": "$6,987", "System Wide": "$5,679"},
+        {"Metric": "Lowest Session Days (Annual)", "Professional": "5", "Certified": "18", "Expert": "39", "System Wide": "5"},
+        {"Metric": "Highest Session Days (Annual)", "Professional": "65.5", "Certified": "143", "Expert": "171", "System Wide": "171"},
+        {"Metric": "Average Session Days (Annual)", "Professional": "33", "Certified": "72", "Expert": "98", "System Wide": "68"},
+        {"Metric": "Median Session Days (Annual)", "Professional": "33", "Certified": "67", "Expert": "98", "System Wide": "65"}
+      ],
+      "table_notes": [
+        "Operational = completed Boot Camp 12+ months before reporting period start.",
+        "Excludes 2 Emeritus, 3 corporate employee operators, 262 newer franchisees, 47 terminated during period.",
+        "One Certified franchisee reclassified from Professional for reporting purposes.",
+        "Median = data point in center of all data points.",
+        "Self-reported quarterly data. Revenue only — no cost/expense data."
+      ]
+    },
+    {
+      "table_id": "T19-2",
+      "item": 19,
+      "title": "400K System Historical Performance (3+ Year Franchisees, US Only)",
+      "source_pages": [62, 63, 64],
+      "columns": ["Metric", "Professional", "Certified", "Expert", "System Wide"],
+      "rows": [
+        {"Metric": "# EOS Implementers (3+ years)", "Professional": "52", "Certified": "195", "Expert": "103", "System Wide": "350"},
+        {"Metric": "$400K achieved within 1st 3 years", "Professional": "2 (3.85%)", "Certified": "66 (34.02%)", "Expert": "55 (53.40%)", "System Wide": "123 (35.24%)"},
+        {"Metric": "$100K achieved within 1st 3 years", "Professional": "47 (90.38%)", "Certified": "189 (97.42%)", "Expert": "97 (94.17%)", "System Wide": "333 (95.42%)"},
+        {"Metric": "$200K achieved within 1st 3 years", "Professional": "19 (36.54%)", "Certified": "164 (84.54%)", "Expert": "88 (85.44%)", "System Wide": "271 (77.65%)"},
+        {"Metric": "$300K achieved within 1st 3 years", "Professional": "4 (7.69%)", "Certified": "119 (61.34%)", "Expert": "74 (71.84%)", "System Wide": "197 (56.45%)"},
+        {"Metric": "Average 12-month peak within 1st 3 years", "Professional": "$182,526", "Certified": "$354,736", "Expert": "$425,381", "System Wide": "$349,927"},
+        {"Metric": "Median 12-month peak within 1st 3 years", "Professional": "$172,666", "Certified": "$367,375", "Expert": "$415,500", "System Wide": "$326,000"},
+        {"Metric": "$400K achieved lifetime", "Professional": "4 (7.69%)", "Certified": "113 (57.95%)", "Expert": "102 (99.03%)", "System Wide": "219 (62.22%)"},
+        {"Metric": "$1M achieved lifetime", "Professional": "0 (0%)", "Certified": "1 (0.51%)", "Expert": "18 (17.48%)", "System Wide": "19 (5.40%)"},
+        {"Metric": "Highest lifetime 12-month peak", "Professional": "$713,500", "Certified": "$1,181,500", "Expert": "$1,603,500", "System Wide": "$1,603,500"},
+        {"Metric": "Average lifetime 12-month peak", "Professional": "$228,661", "Certified": "$467,669", "Expert": "$798,157", "System Wide": "$529,417"},
+        {"Metric": "Median lifetime 12-month peak", "Professional": "$198,750", "Certified": "$428,250", "Expert": "$759,000", "System Wide": "$506,775"}
+      ],
+      "table_notes": [
+        "Includes all Professional, Certified, and Expert Implementers with 3+ years since Boot Camp.",
+        "Excludes 2 Emeritus, 3 corporate employees.",
+        "Excludes founder Gino Wickman from first-3-year metrics (did not track revenue separately).",
+        "Includes pre-franchise membership model data back to 2008.",
+        "Excludes terminated franchisees — survivorship bias."
+      ]
+    },
+    {
+      "table_id": "T20-1",
+      "item": 20,
+      "title": "Systemwide Outlet Summary (US)",
+      "source_pages": [65],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": "2022", "Start of Year": "389", "End of Year": "525", "Net Change": "+136"},
+        {"Outlet Type": "Franchised", "Year": "2023", "Start of Year": "525", "End of Year": "662", "Net Change": "+137"},
+        {"Outlet Type": "Franchised", "Year": "2024", "Start of Year": "662", "End of Year": "732", "Net Change": "+60"},
+        {"Outlet Type": "Company-Owned", "Year": "2022", "Start of Year": "0", "End of Year": "0", "Net Change": "0"},
+        {"Outlet Type": "Company-Owned", "Year": "2023", "Start of Year": "0", "End of Year": "0", "Net Change": "0"},
+        {"Outlet Type": "Company-Owned", "Year": "2024", "Start of Year": "0", "End of Year": "0", "Net Change": "0"}
+      ],
+      "table_notes": [
+        "Note 1: Gino Wickman and corporate employee Implementer businesses are not company-owned.",
+        "Note 2: Outlets = franchisees that have completed Boot Camp as of end of referenced year."
+      ]
+    },
+    {
+      "table_id": "T20-2",
+      "item": 20,
+      "title": "Transfers of Outlets (US)",
+      "source_pages": [66],
+      "columns": ["Year", "Number of Transfers"],
+      "rows": [
+        {"Year": "2022", "Number of Transfers": "0"},
+        {"Year": "2023", "Number of Transfers": "0"},
+        {"Year": "2024", "Number of Transfers": "0"}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T20-3",
+      "item": 20,
+      "title": "Status of Franchised Outlets — Totals (US)",
+      "source_pages": [66, 67, 68, 69, 70, 71],
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Ops Other", "End"],
+      "rows": [
+        {"Year": "2022", "Start": "389", "Opened": "150", "Terminations": "1", "Non-Renewals": "0", "Reacquired": "0", "Ceased Ops Other": "13", "End": "525"},
+        {"Year": "2023", "Start": "525", "Opened": "160", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Ops Other": "23", "End": "662"},
+        {"Year": "2024", "Start": "662", "Opened": "122", "Terminations": "3", "Non-Renewals": "0", "Reacquired": "0", "Ceased Ops Other": "49", "End": "732"}
+      ],
+      "table_notes": [
+        "Note 1: Based on principal address of franchisee. 3 relocations in 2024 (CA→NC, ME→AZ, KY→FL) counted as ceased + opened.",
+        "Note 2: All 'Ceased Operations Other Reasons' exercised 60-day voluntary termination rights.",
+        "Note 3: Outlets = franchisees that completed Boot Camp as of end of year."
+      ]
+    },
+    {
+      "table_id": "T20-5",
+      "item": 20,
+      "title": "Projected Openings (as of Dec 31, 2024)",
+      "source_pages": [72, 73],
+      "columns": ["Category", "Count"],
+      "rows": [
+        {"Category": "Franchise Agreements Signed But Not Opened", "Count": "5"},
+        {"Category": "Projected New Franchised Outlets Next FY", "Count": "76"},
+        {"Category": "Projected New Company-Owned Next FY", "Count": "0"}
+      ],
+      "table_notes": [
+        "'Signed But Not Opened' = signed FA but not completed Boot Camp as of Dec 31, 2024."
+      ]
+    },
+    {
+      "table_id": "T21-BS",
+      "item": 21,
+      "title": "Balance Sheets (Dec 31, 2024 and 2023)",
+      "source_pages": [167],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"Line Item": "Cash", "2024": "$233,339", "2023": "$1,260,748"},
+        {"Line Item": "Due from affiliates", "2024": "$5,710,569", "2023": "$2,436,390"},
+        {"Line Item": "Total assets", "2024": "$5,943,908", "2023": "$3,697,138"},
+        {"Line Item": "Deferred revenue", "2024": "$1,801,403", "2023": "$2,277,196"},
+        {"Line Item": "Total liabilities", "2024": "$1,801,403", "2023": "$2,277,196"},
+        {"Line Item": "Member's equity", "2024": "$4,142,505", "2023": "$1,419,942"},
+        {"Line Item": "Total liabilities and member's equity", "2024": "$5,943,908", "2023": "$3,697,138"}
+      ],
+      "table_notes": ["Entity has no fixed assets, no long-term debt, no inventory. Assets are virtually 100% intercompany receivables + cash."]
+    },
+    {
+      "table_id": "T21-IS",
+      "item": 21,
+      "title": "Statements of Operations (Years Ended Dec 31, 2024 and 2023)",
+      "source_pages": [168],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"Line Item": "Memberships/subscriptions", "2024": "$12,779,658", "2023": "$10,446,384"},
+        {"Line Item": "Boot Camp", "2024": "$5,567,565", "2023": "$5,140,657"},
+        {"Line Item": "Events", "2024": "$175,798", "2023": "$196,800"},
+        {"Line Item": "Store income", "2024": "$3,309,031", "2023": "$3,044,704"},
+        {"Line Item": "Warm lead referral", "2024": "$1,343,637", "2023": "$1,064,593"},
+        {"Line Item": "Franchise fees", "2024": "$618,901", "2023": "$580,494"},
+        {"Line Item": "Other revenues", "2024": "$17,902", "2023": "$14,959"},
+        {"Line Item": "Total revenues", "2024": "$23,813,492", "2023": "$20,988,591"},
+        {"Line Item": "Cost of revenues", "2024": "$5,490,931", "2023": "$4,162,212"},
+        {"Line Item": "Gross profit", "2024": "$18,322,561", "2023": "$16,826,379"},
+        {"Line Item": "General and administrative expenses", "2024": "$14,431,334", "2023": "$14,303,404"},
+        {"Line Item": "Operating income", "2024": "$3,891,227", "2023": "$2,522,975"},
+        {"Line Item": "Interest expense", "2024": "($1,168,664)", "2023": "($1,176,544)"},
+        {"Line Item": "Net income", "2024": "$2,722,563", "2023": "$1,346,431"}
+      ],
+      "table_notes": [
+        "Revenue primarily from: memberships (54%), Boot Camp (23%), store income (14%), warm lead referral (6%), franchise fees (3%).",
+        "Gross margin: 77% (2024), 80% (2023).",
+        "Operating margin: 16% (2024), 12% (2023).",
+        "Net margin: 11% (2024), 6% (2023).",
+        "Interest expense of ~$1.17M is on note purchase agreement with affiliates."
+      ]
+    },
+    {
+      "table_id": "T21-CF",
+      "item": 21,
+      "title": "Statements of Cash Flows (Years Ended Dec 31, 2024 and 2023)",
+      "source_pages": [170],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"Line Item": "Net income", "2024": "$2,722,563", "2023": "$1,346,431"},
+        {"Line Item": "Due from affiliates change", "2024": "($3,274,179)", "2023": "($1,016,647)"},
+        {"Line Item": "Deferred revenue change", "2024": "($475,793)", "2023": "$926,157"},
+        {"Line Item": "Net cash from operating", "2024": "($1,027,409)", "2023": "$1,255,941"},
+        {"Line Item": "Member distribution", "2024": "$0", "2023": "($715,000)"},
+        {"Line Item": "Net cash from financing", "2024": "$0", "2023": "($715,000)"},
+        {"Line Item": "Net change in cash", "2024": "($1,027,409)", "2023": "$540,941"},
+        {"Line Item": "Beginning cash", "2024": "$1,260,748", "2023": "$719,807"},
+        {"Line Item": "Ending cash", "2024": "$233,339", "2023": "$1,260,748"},
+        {"Line Item": "Interest paid (supplemental)", "2024": "$1,168,664", "2023": "$1,176,544"}
+      ],
+      "table_notes": [
+        "Operating cash flow turned negative in 2024 due to $3.3M increase in intercompany receivables.",
+        "All interest paid in cash — no interest capitalized.",
+        "No capital expenditures (asset-light model)."
+      ]
+    },
+    {
+      "table_id": "T21-EQ",
+      "item": 21,
+      "title": "Statements of Member's Equity (Dec 31, 2024 and 2023)",
+      "source_pages": [169],
+      "columns": ["Item", "Member's Deficit", "Retained Earnings", "Member's Equity"],
+      "rows": [
+        {"Item": "Balance Dec 31, 2022", "Member's Deficit": "($3,000,000)", "Retained Earnings": "$3,788,511", "Member's Equity": "$788,511"},
+        {"Item": "Net income 2023", "Member's Deficit": "", "Retained Earnings": "$1,346,431", "Member's Equity": "$1,346,431"},
+        {"Item": "Member distribution 2023", "Member's Deficit": "($715,000)", "Retained Earnings": "", "Member's Equity": "($715,000)"},
+        {"Item": "Balance Dec 31, 2023", "Member's Deficit": "($3,715,000)", "Retained Earnings": "$5,134,942", "Member's Equity": "$1,419,942"},
+        {"Item": "Net income 2024", "Member's Deficit": "", "Retained Earnings": "$2,722,563", "Member's Equity": "$2,722,563"},
+        {"Item": "Balance Dec 31, 2024", "Member's Deficit": "($3,716,000)", "Retained Earnings": "$7,857,505", "Member's Equity": "$4,142,505"}
+      ],
+      "table_notes": [
+        "Member's deficit of $3.716M reflects cumulative distributions exceeding contributed capital.",
+        "Note: $1 increase in member's deficit in 2024 (from $3,715,000 to $3,716,000) — appears immaterial."
+      ]
+    },
+    {
+      "table_id": "T12-1",
+      "item": 12,
+      "title": "Tier Comparison Table",
+      "source_pages": [45],
+      "columns": ["Feature", "Professional", "Certified", "Expert", "Legacy", "Emeritus"],
+      "rows": [
+        {"Feature": "Flat Monthly Fee", "Professional": "$1,395/month", "Certified": "$1,495/month", "Expert": "$1,695/month", "Legacy": "$1,395/month", "Emeritus": "$1,395/month"},
+        {"Feature": "Can Own/Lead Firm", "Professional": "No", "Certified": "Yes", "Expert": "Yes", "Legacy": "Yes", "Emeritus": "Yes"},
+        {"Feature": "Can Join Speaker's Bureau", "Professional": "No", "Certified": "Yes", "Expert": "Yes", "Legacy": "Yes", "Emeritus": "Yes"},
+        {"Feature": "EOS Workshop", "Professional": "No", "Certified": "Yes", "Expert": "Yes", "Legacy": "Yes", "Emeritus": "No"},
+        {"Feature": "Great Boss Facilitator", "Professional": "No", "Certified": "No", "Expert": "Yes", "Legacy": "No", "Emeritus": "Yes"},
+        {"Feature": "Part-Time (session limit)", "Professional": "No", "Certified": "No", "Expert": "No", "Legacy": "Yes", "Emeritus": "Yes"}
+      ],
+      "table_notes": ["Effective May 1, 2025. Criteria/designations may be updated under the Franchise Agreement."]
+    }
+  ]
+}

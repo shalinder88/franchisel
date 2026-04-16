@@ -1,0 +1,102 @@
+{
+  "depth_pass": 1,
+  "title": "Financial Note Depth",
+  "extraction_date": "2026-04-15",
+  "source_pages": [96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 110, 115, 130, 145, 150, 160],
+  "auditor": "Deloitte & Touche LLP",
+  "opinion": "Unqualified (clean)",
+  "critical_audit_matters": [
+    {
+      "matter": "Deferred Revenue Related to the Loyalty Program",
+      "amount": 1333000000,
+      "description": "Actuarially determined based on anticipated timing of future point redemptions including breakage estimate. Changes in breakage assumption could materially change liability.",
+      "source_pages": [96, 97]
+    }
+  ],
+  "accounting_policies": {
+    "revenue_recognition": {
+      "description": "Revenues recognized when control of product/service transfers to customer. Management fees: percentage of gross revenues (base) and hotel profitability (incentive). Franchise fees: initial fee plus ongoing royalty as % of gross room revenues. Output method used for over-time performance obligations.",
+      "key_money_treatment": "Recorded in other assets and amortized to contra revenue over expected customer life (initial term of management/franchise agreement).",
+      "source_pages": [106]
+    },
+    "depreciation_amortization": {
+      "total_2024": 333000000,
+      "total_2023": 397000000,
+      "total_2022": 426000000,
+      "note": "Declining due to asset dispositions/asset-light strategy",
+      "source_pages": [98]
+    },
+    "impairments": {
+      "amount_2024": 213000000,
+      "amount_2023": 30000000,
+      "amount_2022": 38000000,
+      "note": "2024 spike driven by specific property impairments. ROU assets assessed quarterly.",
+      "source_pages": [98, 115]
+    },
+    "lease_accounting": {
+      "operating_lease_rou_assets_2024": 328000000,
+      "current_operating_lease_liabilities_2024": 33000000,
+      "long_term_operating_lease_liabilities_2024": 245000000,
+      "total_operating_lease_liabilities": 278000000,
+      "extensions": "1 to 25 years",
+      "ibr_methodology": "Estimated based on currency risk, credit risk, recent debt issuances, and publicly available data",
+      "source_pages": [100, 115]
+    },
+    "income_taxes": {
+      "provision_2024": 267000000,
+      "provision_2023": 90000000,
+      "effective_tax_rate_note": "2024 provision higher due to real estate sale gains",
+      "deferred_tax_assets_2024": 466000000,
+      "unrecognized_tax_benefits_2024": 366000000,
+      "accrued_interest_penalties_2024": 103000000,
+      "loyalty_program_tax_matter": "IRS asserting loyalty program contributions are taxable income. Tax Court ruled $12M net taxable income for 2009-2011. Company appealed. If upheld, estimated tax for 2012-2024 is $280M including $46M interest.",
+      "mexico_tax_assessment": "$18M tax liability recorded",
+      "source_pages": [145]
+    },
+    "loyalty_program": {
+      "deferred_revenue_2024": 1333000000,
+      "methodology": "Actuarially determined based on anticipated timing of future point redemptions including breakage estimate",
+      "segregated_accounts": true,
+      "independent_audit": "Annual audit by independent accounting firm",
+      "source_pages": [29, 96]
+    },
+    "acquisitions_2024": {
+      "standard_international": {
+        "date": "2024-10-01",
+        "cash_paid": 148000000,
+        "contingent_consideration": 108000000,
+        "total_consideration": 259000000,
+        "goodwill": 86000000,
+        "indefinite_lived_intangibles": 96000000,
+        "management_franchise_intangibles": 84000000,
+        "brands_acquired": ["The Standard", "Bunkhouse Hotels", "The Manner"],
+        "transaction_costs": 10000000,
+        "source_pages": [130]
+      }
+    },
+    "stock_based_compensation": {
+      "total_2024": 64000000,
+      "total_2023": 75000000,
+      "components": {"SARs": 15000000, "RSUs": 34000000, "PSUs": 15000000},
+      "source_pages": [150]
+    },
+    "variable_interest_entities": {
+      "present": true,
+      "note": "VIE model used for consolidation where applicable. Specific VIE disclosures in financial statements.",
+      "source_pages": [106]
+    },
+    "subsequent_events": {
+      "form_8k_march_2025": "Issuance of $500M 5.050% Senior Notes due 2028; Playa Hotels tender offer",
+      "source_pages": [161, 162, 163]
+    },
+    "related_party_transactions": {
+      "note": "Hyatt Corporation provides Mandatory Services to franchisees. Rosemont provides optional purchasing. World of Hyatt loyalty program administered by Hyatt Corporation. 2024 supplier rebates from franchisee purchases: $7,917 (offset against System Services Costs).",
+      "source_pages": [11, 36, 44]
+    },
+    "advertising_fund_accounting": {
+      "no_separate_fund": true,
+      "note": "Commercial Services Fee (3.5% GRR) covers brand-wide marketing. No periodic accounting provided. Franchisor may spend more or less than collected in any year but will use all funds for Commercial Services.",
+      "source_pages": [33, 44]
+    }
+  }
+}

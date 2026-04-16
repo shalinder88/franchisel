@@ -1,0 +1,344 @@
+{
+  "extraction_metadata": {
+    "filing_id": "637919-2025",
+    "brand": "Taco Cabana",
+    "extraction_date": "2026-04-15",
+    "table_count": 14
+  },
+  "tables": [
+    {
+      "table_id": "T01_item5_initial_fees",
+      "item": 5,
+      "title": "Initial Fees Summary",
+      "source_pages": [10, 11],
+      "columns": ["Fee Type", "Amount", "Refundable"],
+      "rows": [
+        {"Fee Type": "Initial Franchise Fee (standalone)", "Amount": "$45,000", "Refundable": "No"},
+        {"Fee Type": "Initial Franchise Fee (DA, first unit)", "Amount": "$45,000", "Refundable": "No"},
+        {"Fee Type": "Development Franchise Fee (DA, subsequent)", "Amount": "$35,000", "Refundable": "No"},
+        {"Fee Type": "Development Fee (DA, per subsequent unit)", "Amount": "$10,000", "Refundable": "No"}
+      ],
+      "table_notes": [
+        "All fees fully earned when signed. Not refundable for any reason.",
+        "During FY ending Sep 30, 2024, no Initial Franchise Fees or Development Fees were collected."
+      ],
+      "provenance": "Item 5, PDF pages 10-11"
+    },
+    {
+      "table_id": "T02_item6_other_fees",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [11, 12, 13, 14, 15],
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Fee Type": "Royalty", "Amount": "5% of Gross Sales", "Due Date": "Weekly", "Remarks": "EFT required"},
+        {"Fee Type": "Additional Training", "Amount": "$250/day/trainer", "Due Date": "As incurred", "Remarks": "Plus travel/living expenses"},
+        {"Fee Type": "Refresher Training", "Amount": "$250/day/trainer", "Due Date": "As incurred", "Remarks": "Plus travel/living expenses"},
+        {"Fee Type": "Additional Assistance", "Amount": "$500/day/franchisor employee", "Due Date": "As incurred", "Remarks": "Plus travel"},
+        {"Fee Type": "National Brand Fund", "Amount": "3% of Gross Sales", "Due Date": "Weekly", "Remarks": "Unaudited; as of issuance date no monies collected"},
+        {"Fee Type": "Local Marketing Fund", "Amount": "1% of Gross Sales", "Due Date": "As incurred", "Remarks": "Pre-approval required"},
+        {"Fee Type": "Point of Sale Materials", "Amount": "Our cost", "Due Date": "As incurred", "Remarks": "Optional; if developed outside Brand Fund"},
+        {"Fee Type": "Transfer Fee (DA)", "Amount": "$10,000 per undeveloped location", "Due Date": "On submission", "Remarks": "Not required for convenience-of-ownership transfer"},
+        {"Fee Type": "Transfer Fee (FA)", "Amount": "$10,000", "Due Date": "On submission", "Remarks": "Not required for convenience-of-ownership transfer"},
+        {"Fee Type": "Training Facility Certification", "Amount": "Currently no fee (reserved)", "Due Date": "Upon demand", "Remarks": "Required if DA >5 units"},
+        {"Fee Type": "Audit and Inspection Costs", "Amount": "Full cost", "Due Date": "Upon demand", "Remarks": "Only if failure to report or >2% understatement"},
+        {"Fee Type": "Indemnification", "Amount": "Actual losses", "Due Date": "As incurred", "Remarks": "Broad indemnification"},
+        {"Fee Type": "Attorneys' Fees and Costs", "Amount": "All costs", "Due Date": "As incurred", "Remarks": "Enforcement costs"},
+        {"Fee Type": "Interest", "Amount": "Lesser of max rate or 18%/year", "Due Date": "On late payment", "Remarks": "Plus $100 late fee"},
+        {"Fee Type": "Late Fee", "Amount": "$100", "Due Date": "At discretion", "Remarks": "Per late payment"},
+        {"Fee Type": "Collection Costs", "Amount": "All costs", "Due Date": "Upon demand", "Remarks": "Including collection agency commissions"},
+        {"Fee Type": "Technology Fee", "Amount": "$1,840/month", "Due Date": "Monthly", "Remarks": "Adjustable with 30 days notice"},
+        {"Fee Type": "800 Number/Secret Shopper", "Amount": "All costs", "Due Date": "As incurred", "Remarks": "If implemented"},
+        {"Fee Type": "Non-Cash Payment System", "Amount": "All costs", "Due Date": "As incurred", "Remarks": "Credit/debit cards required"},
+        {"Fee Type": "Market Research and Testing", "Amount": "Proportionate cost", "Due Date": "As incurred", "Remarks": "Must cooperate at own expense"},
+        {"Fee Type": "New Product/Supplier Testing", "Amount": "Reasonable fee (not exceeding actual cost)", "Due Date": "Within 30 days of invoice", "Remarks": "Whether or not approved"},
+        {"Fee Type": "Reimbursement of Insurance Costs", "Amount": "Cost plus reasonable fee", "Due Date": "Upon demand", "Remarks": "Only if franchisee fails to obtain"},
+        {"Fee Type": "Relocation", "Amount": "Reasonable expenses", "Due Date": "Upon demand", "Remarks": "Relocation requires prior written consent"},
+        {"Fee Type": "Taxes", "Amount": "Reimbursement", "Due Date": "Within 30 days of invoice", "Remarks": "Taxes imposed on franchisor by reason of franchising"},
+        {"Fee Type": "Successor Franchise Fee", "Amount": "Then-current IFF for new franchisees", "Due Date": "At signing of successor agreement", "Remarks": ""},
+        {"Fee Type": "QA Audit Costs", "Amount": "All costs", "Due Date": "Within 10 days of invoice", "Remarks": "If fail QA audit"},
+        {"Fee Type": "POS System Updates", "Amount": "$0-$5,000/year", "Due Date": "As incurred", "Remarks": ""}
+      ],
+      "table_notes": [
+        "Note 1: All fees imposed by and payable to Taco Cabana, not refundable. Uniformly imposed.",
+        "Note 2: EFT program mandatory. Pre-authorized bank draft required.",
+        "Note 3: Gross Sales includes all revenue except sales tax, refunds, equipment sales, promo discounts, employee meal discounts.",
+        "Note 4: Fiscal Period = calendar week."
+      ],
+      "provenance": "Item 6, PDF pages 11-15"
+    },
+    {
+      "table_id": "T03_item7_single_unit",
+      "item": 7,
+      "title": "Estimated Initial Investment — Single Unit",
+      "source_pages": [16, 17],
+      "columns": ["Expenditure", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        {"Expenditure": "Initial Franchise Fee", "Low": "$35,000", "High": "$45,000", "Method": "Lump Sum/Check", "When Due": "At signing", "To Whom": "Us"},
+        {"Expenditure": "Grand Opening Advertising", "Low": "$10,000", "High": "$10,000", "Method": "As Arranged", "When Due": "As Arranged", "To Whom": "Us or Vendors"},
+        {"Expenditure": "Real Estate", "Low": "$25,000", "High": "$150,000", "Method": "As Arranged", "When Due": "Before Opening", "To Whom": "Landlord, Lender"},
+        {"Expenditure": "Construction/Leasehold Improvements", "Low": "$635,000", "High": "$1,685,000", "Method": "See Note 6", "When Due": "Before Opening", "To Whom": "Construction Company"},
+        {"Expenditure": "Travel and Living While Training", "Low": "$9,500", "High": "$14,000", "Method": "As Arranged", "When Due": "Before Training", "To Whom": "Airlines, Hotels, Restaurants"},
+        {"Expenditure": "FF&E", "Low": "$274,000", "High": "$322,000", "Method": "As Arranged", "When Due": "As Ordered", "To Whom": "Suppliers"},
+        {"Expenditure": "Signage", "Low": "$60,000", "High": "$155,000", "Method": "As Arranged", "When Due": "As Ordered", "To Whom": "Supplier"},
+        {"Expenditure": "Initial Inventory", "Low": "$25,000", "High": "$30,000", "Method": "As Arranged", "When Due": "Before Opening", "To Whom": "Suppliers"},
+        {"Expenditure": "Miscellaneous Opening Costs", "Low": "$100,000", "High": "$180,000", "Method": "As Arranged", "When Due": "Before Opening", "To Whom": "Suppliers, Utilities, etc."},
+        {"Expenditure": "POS System", "Low": "$18,000", "High": "$50,000", "Method": "As Arranged", "When Due": "As Arranged", "To Whom": "Supplier"},
+        {"Expenditure": "Additional Funds (3 months)", "Low": "$75,000", "High": "$135,000", "Method": "As Arranged", "When Due": "As Incurred", "To Whom": "Employees, Suppliers, Utilities, Landlord, Lender"}
+      ],
+      "total": {"Low": "$1,266,500", "High": "$2,776,200"},
+      "table_notes": [
+        "Does not include land acquisition costs.",
+        "IFF is $45,000 standalone; $35,000 for subsequent units under DA.",
+        "Construction based on 2,500-3,200 sq ft building shell in typical retail center.",
+        "Additional Funds estimate for 3 months operating expenses excluding advertising/royalty payments.",
+        "ITP training: no tuition for up to 4 attendees; franchisee pays all travel/living."
+      ],
+      "provenance": "Item 7, PDF pages 16-17"
+    },
+    {
+      "table_id": "T04_item7_development_agreement",
+      "item": 7,
+      "title": "Estimated Initial Investment — Development Agreement (5-unit, first open)",
+      "source_pages": [18, 19, 20],
+      "columns": ["Expenditure", "Low", "High"],
+      "rows": [
+        {"Expenditure": "Initial Franchise Fee", "Low": "$35,000", "High": "$45,000"},
+        {"Expenditure": "Development Fee", "Low": "$40,000", "High": "$40,000"},
+        {"Expenditure": "Grand Opening Advertising", "Low": "$10,000", "High": "$10,000"},
+        {"Expenditure": "Real Estate", "Low": "$25,000", "High": "$150,000"},
+        {"Expenditure": "Construction/Leasehold Improvements", "Low": "$900,000", "High": "$1,750,000"},
+        {"Expenditure": "Travel and Living While Training", "Low": "$9,500", "High": "$14,000"},
+        {"Expenditure": "FF&E", "Low": "$30,000", "High": "$150,000"},
+        {"Expenditure": "Signage", "Low": "$60,000", "High": "$130,000"},
+        {"Expenditure": "Initial Inventory", "Low": "$25,000", "High": "$30,000"},
+        {"Expenditure": "Misc. Opening Costs", "Low": "$100,000", "High": "$180,000"},
+        {"Expenditure": "POS System", "Low": "$25,000", "High": "$50,000"},
+        {"Expenditure": "Additional Funds (3 months)", "Low": "$75,000", "High": "$135,000"}
+      ],
+      "total": {"Low": "$1,334,500", "High": "$2,684,000"},
+      "table_notes": [
+        "Assumes 5-unit DA with first restaurant opening.",
+        "Development Fee = $10,000 x 4 subsequent units = $40,000.",
+        "Does not include land acquisition costs."
+      ],
+      "provenance": "Item 7, PDF pages 18-20"
+    },
+    {
+      "table_id": "T05_item9_obligations",
+      "item": 9,
+      "title": "Franchisee's Obligations Cross-Reference",
+      "source_pages": [23, 24],
+      "columns": ["Obligation", "FA Section", "DA Section", "FDD Item"],
+      "rows": [
+        {"Obligation": "Site selection and acquisition/lease", "FA Section": "3, 4", "DA Section": "5, 6", "FDD Item": "7, 11"},
+        {"Obligation": "Pre-opening purchases/leases", "FA Section": "3, 4, 5.2, 12.12", "DA Section": "5, 6", "FDD Item": "5, 7, 8"},
+        {"Obligation": "Site development", "FA Section": "3, 5", "DA Section": "3, 5", "FDD Item": "7, 11"},
+        {"Obligation": "Initial and ongoing training", "FA Section": "9", "DA Section": "5.6", "FDD Item": "6, 7, 11"},
+        {"Obligation": "Opening", "FA Section": "5.2, 5.3, 10.1, 10.2", "DA Section": "N/A", "FDD Item": "11"},
+        {"Obligation": "Fees", "FA Section": "3.2, 3.3, 5.3.2, 6, 8, 9, 10.2, Exhibit A", "DA Section": "4, 5.2, 5.3, 5.5, Exhibit A", "FDD Item": "5, 6"},
+        {"Obligation": "Compliance with standards/Manual", "FA Section": "11, 12", "DA Section": "N/A", "FDD Item": "8, 11, 14"},
+        {"Obligation": "Trademarks and proprietary info", "FA Section": "8.8, 13, 18", "DA Section": "11.1", "FDD Item": "13, 14"},
+        {"Obligation": "Product/service restrictions", "FA Section": "12.3, 12.6", "DA Section": "N/A", "FDD Item": "16"},
+        {"Obligation": "Warranty/customer service", "FA Section": "12.9, 12.10, 12.11", "DA Section": "N/A", "FDD Item": "11"},
+        {"Obligation": "Territory development/sales quotas", "FA Section": "1.2", "DA Section": "1.1, 2, 3, Exhibit A", "FDD Item": "12"},
+        {"Obligation": "Ongoing purchases", "FA Section": "12.3, 12.6", "DA Section": "N/A", "FDD Item": "8"},
+        {"Obligation": "Maintenance/remodeling", "FA Section": "12.7, 12.8", "DA Section": "N/A", "FDD Item": "11"},
+        {"Obligation": "Insurance", "FA Section": "12.12", "DA Section": "5.5, 14.2", "FDD Item": "6, 7, 8"},
+        {"Obligation": "Advertising", "FA Section": "8", "DA Section": "N/A", "FDD Item": "6, 11"},
+        {"Obligation": "Indemnification", "FA Section": "23", "DA Section": "14", "FDD Item": "6"},
+        {"Obligation": "Owner participation/staffing", "FA Section": "12.10, 12.11", "DA Section": "7", "FDD Item": "11, 15"},
+        {"Obligation": "Records and reports", "FA Section": "6.5, 7", "DA Section": "N/A", "FDD Item": "6"},
+        {"Obligation": "Inspections and audits", "FA Section": "5.1, 5.2.2, 7.4, 12.6.5, 12.13", "DA Section": "N/A", "FDD Item": "6, 8, 11"},
+        {"Obligation": "Transfer", "FA Section": "15, 16", "DA Section": "8, 9", "FDD Item": "6, 17"},
+        {"Obligation": "Renewal", "FA Section": "2.2", "DA Section": "N/A", "FDD Item": "17"},
+        {"Obligation": "Post-termination obligations", "FA Section": "20", "DA Section": "12.4", "FDD Item": "17"},
+        {"Obligation": "Non-competition covenants", "FA Section": "18", "DA Section": "11", "FDD Item": "17"},
+        {"Obligation": "Dispute resolution", "FA Section": "28", "DA Section": "19", "FDD Item": "17"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 9, PDF pages 23-24"
+    },
+    {
+      "table_id": "T06_item11_training",
+      "item": 11,
+      "title": "Training Program (ITP)",
+      "source_pages": [31, 32, 33],
+      "columns": ["Subject", "Classroom Hours", "OJT Hours", "Location"],
+      "rows": [
+        {"Subject": "Team Member Onboarding (Kitchen Basics, Hospitality, Credit Card Security, etc.)", "Classroom Hours": 1, "OJT Hours": 4, "Location": "In restaurant"},
+        {"Subject": "Team Member Alcohol Certification", "Classroom Hours": 2, "OJT Hours": 0, "Location": "In restaurant"},
+        {"Subject": "Team Member Food Handler Certification", "Classroom Hours": 1, "OJT Hours": 0, "Location": "In restaurant"},
+        {"Subject": "Team Member Cold Prep", "Classroom Hours": 2, "OJT Hours": 24, "Location": "In restaurant"},
+        {"Subject": "Team Member Hot Prep", "Classroom Hours": 2, "OJT Hours": 24, "Location": "In restaurant"},
+        {"Subject": "Team Member Grill", "Classroom Hours": 3, "OJT Hours": 24, "Location": "In restaurant"},
+        {"Subject": "Team Member Fryer", "Classroom Hours": 1, "OJT Hours": 18, "Location": "In restaurant"},
+        {"Subject": "Team Member Line Server", "Classroom Hours": 2, "OJT Hours": 40, "Location": "In restaurant"},
+        {"Subject": "Team Member Cashier", "Classroom Hours": 2, "OJT Hours": 40, "Location": "In restaurant"},
+        {"Subject": "Team Member Tortillas", "Classroom Hours": 1, "OJT Hours": 1, "Location": "In restaurant"},
+        {"Subject": "Team Member Cleaning", "Classroom Hours": 1, "OJT Hours": 18, "Location": "In restaurant"},
+        {"Subject": "Team Member Receiving and Storage", "Classroom Hours": 1, "OJT Hours": 18, "Location": "In restaurant"},
+        {"Subject": "Food Protection Management (ServSafe/ANSI)", "Classroom Hours": 8, "OJT Hours": 0, "Location": "In restaurant"},
+        {"Subject": "Shift Leader Training Program", "Classroom Hours": 16, "OJT Hours": 40, "Location": "In restaurant/virtual/classroom"},
+        {"Subject": "General Manager Training Program", "Classroom Hours": 32, "OJT Hours": 80, "Location": "In restaurant/virtual/classroom"},
+        {"Subject": "Franchise Operator Training Activities", "Classroom Hours": 0, "OJT Hours": 80, "Location": "In restaurant/virtual/classroom/Corp Office"},
+        {"Subject": "Other Training (New Products, Equipment, Initiatives)", "Classroom Hours": 4, "OJT Hours": 4, "Location": "In restaurant"}
+      ],
+      "total": {"Classroom Hours": 79, "OJT Hours": 415},
+      "table_notes": [
+        "ITP length: 7-10 weeks, up to 16 weeks before opening.",
+        "Required attendees: Operating Principal + GM + 2 designated managerial personnel.",
+        "No tuition for first 3 individuals.",
+        "Trainer: David Davila (7+ years experience).",
+        "Location: San Antonio, TX (or designated training facility).",
+        "Prerequisites: Food safety certification + alcohol safety training."
+      ],
+      "provenance": "Item 11, PDF pages 31-33"
+    },
+    {
+      "table_id": "T07_item19_quartile",
+      "item": 19,
+      "title": "Average Performance by Quartile — FY Ending September 30, 2024",
+      "source_pages": [52],
+      "columns": ["Segment", "Locations", "Gross Sales", "COGS", "COGS %", "Labor", "Labor %"],
+      "rows": [
+        {"Segment": "Top 25%", "Locations": 36, "Gross Sales": "$2,071,533", "COGS": "$586,785", "COGS %": "28.3%", "Labor": "$592,265", "Labor %": "28.6%"},
+        {"Segment": "Top 50%", "Locations": 75, "Gross Sales": "$1,829,182", "COGS": "$516,898", "COGS %": "28.3%", "Labor": "$543,988", "Labor %": "29.7%"},
+        {"Segment": "Top 75%", "Locations": 108, "Gross Sales": "$1,658,419", "COGS": "$470,474", "COGS %": "28.4%", "Labor": "$508,293", "Labor %": "30.5%"},
+        {"Segment": "All", "Locations": 143, "Gross Sales": "$1,490,385", "COGS": "$425,681", "COGS %": "28.6%", "Labor": "$469,568", "Labor %": "31.5%"}
+      ],
+      "table_notes": [
+        "All 143 units are company-operated (parent entity). All open 12+ months.",
+        "Reporting period: Oct 1, 2023 - Sep 30, 2024.",
+        "Data is unaudited.",
+        "6 franchised units excluded — none provided financial data.",
+        "No rent, occupancy, G&A, or other operating expenses disclosed."
+      ],
+      "provenance": "Item 19, PDF page 52"
+    },
+    {
+      "table_id": "T08_item19_high_median_low",
+      "item": 19,
+      "title": "High, Median, Low Unit Performance — FY Ending September 30, 2024",
+      "source_pages": [52],
+      "columns": ["Metric", "High", "Median", "Low", "Average"],
+      "rows": [
+        {"Metric": "Gross Sales", "High": "$3,462,583", "Median": "$1,451,946", "Low": "$503,729", "Average": "$1,490,385"},
+        {"Metric": "COGS", "High": "$971,604", "Median": "$388,041", "Low": "$156,546", "Average": "$425,681"},
+        {"Metric": "COGS %", "High": "28.1%", "Median": "26.7%", "Low": "31.1%", "Average": "28.6%"},
+        {"Metric": "Labor", "High": "$753,310", "Median": "$442,472", "Low": "$272,416", "Average": "$469,568"},
+        {"Metric": "Labor %", "High": "21.8%", "Median": "30.5%", "Low": "54.1%", "Average": "31.5%"}
+      ],
+      "table_notes": [
+        "Same population and caveats as quartile table above.",
+        "Low-end unit at $503,729 with 54.1% labor cost is deeply unprofitable at unit level.",
+        "High-to-low spread is approximately 6.9x."
+      ],
+      "provenance": "Item 19, PDF page 52"
+    },
+    {
+      "table_id": "T09_item20_systemwide",
+      "item": 20,
+      "title": "Table 1 — Systemwide Outlet Summary FY2022-2024",
+      "source_pages": [53],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": "2022", "Start of Year": 6, "End of Year": 6, "Net Change": 0},
+        {"Outlet Type": "Franchised", "Year": "2023", "Start of Year": 6, "End of Year": 6, "Net Change": 0},
+        {"Outlet Type": "Franchised", "Year": "2024", "Start of Year": 6, "End of Year": 6, "Net Change": 0},
+        {"Outlet Type": "Company-Owned", "Year": "2022", "Start of Year": 142, "End of Year": 143, "Net Change": 1},
+        {"Outlet Type": "Company-Owned", "Year": "2023", "Start of Year": 143, "End of Year": 143, "Net Change": 0},
+        {"Outlet Type": "Company-Owned", "Year": "2024", "Start of Year": 143, "End of Year": 140, "Net Change": -3},
+        {"Outlet Type": "Total", "Year": "2022", "Start of Year": 148, "End of Year": 149, "Net Change": 1},
+        {"Outlet Type": "Total", "Year": "2023", "Start of Year": 149, "End of Year": 149, "Net Change": 0},
+        {"Outlet Type": "Total", "Year": "2024", "Start of Year": 149, "End of Year": 146, "Net Change": -3}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF page 53"
+    },
+    {
+      "table_id": "T10_item20_transfers",
+      "item": 20,
+      "title": "Table 2 — Transfers FY2022-2024",
+      "source_pages": [53],
+      "columns": ["State", "Year", "Transfers"],
+      "rows": [
+        {"State": "All States", "Year": "2022", "Transfers": 0},
+        {"State": "All States", "Year": "2023", "Transfers": 0},
+        {"State": "All States", "Year": "2024", "Transfers": 0}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF page 53"
+    },
+    {
+      "table_id": "T11_item20_franchised_status",
+      "item": 20,
+      "title": "Table 3 — Status of Franchised Outlets FY2022-2024",
+      "source_pages": [54],
+      "columns": ["State", "Year", "Start", "Opened", "Terminations", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        {"State": "New Mexico", "Year": "2022", "Start": 6, "Opened": 0, "Terminations": 0, "Reacquired": 0, "Ceased Other": 0, "End": 6},
+        {"State": "New Mexico", "Year": "2023", "Start": 6, "Opened": 0, "Terminations": 0, "Reacquired": 0, "Ceased Other": 0, "End": 6},
+        {"State": "New Mexico", "Year": "2024", "Start": 6, "Opened": 0, "Terminations": 0, "Reacquired": 0, "Ceased Other": 0, "End": 6}
+      ],
+      "table_notes": [
+        "No confidentiality agreements restricting franchisees from speaking openly.",
+        "No terminated, canceled, or voluntarily ceased franchisees.",
+        "No franchisee organizations exist."
+      ],
+      "provenance": "Item 20, PDF page 54"
+    },
+    {
+      "table_id": "T12_item20_company_status",
+      "item": 20,
+      "title": "Table 4 — Status of Company-Owned Outlets FY2022-2024",
+      "source_pages": [54],
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisees", "End"],
+      "rows": [
+        {"State": "Texas", "Year": "2022", "Start": 142, "Opened": 2, "Reacquired": 0, "Closed": 1, "Sold to Franchisees": 0, "End": 143},
+        {"State": "Texas", "Year": "2023", "Start": 143, "Opened": 0, "Reacquired": 0, "Closed": 0, "Sold to Franchisees": 0, "End": 143},
+        {"State": "Texas", "Year": "2024", "Start": 143, "Opened": 1, "Reacquired": 0, "Closed": 4, "Sold to Franchisees": 0, "End": 140}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF page 54"
+    },
+    {
+      "table_id": "T13_item20_projected",
+      "item": 20,
+      "title": "Table 5 — Projected Openings as of October 1, 2024",
+      "source_pages": [54],
+      "columns": ["State", "Signed Not Opened", "Projected Franchise", "Projected Company"],
+      "rows": [
+        {"State": "Texas", "Signed Not Opened": 0, "Projected Franchise": 0, "Projected Company": 1}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF page 54"
+    },
+    {
+      "table_id": "T14_item21_balance_sheet",
+      "item": 21,
+      "title": "Balance Sheet — September 29, 2024 and September 30, 2023",
+      "source_pages": [147],
+      "columns": ["Line Item", "FY2024", "FY2023"],
+      "rows": [
+        {"Line Item": "Cash", "FY2024": "$562,937", "FY2023": "$500,000"},
+        {"Line Item": "Accounts Receivable", "FY2024": "$84,803", "FY2023": "$0"},
+        {"Line Item": "Total Current Assets", "FY2024": "$647,740", "FY2023": "$500,000"},
+        {"Line Item": "Intangible Assets, Net", "FY2024": "$137,373", "FY2023": "$0"},
+        {"Line Item": "Total Assets", "FY2024": "$785,113", "FY2023": "$500,000"},
+        {"Line Item": "Accounts Payable and Accrued Liabilities", "FY2024": "$0", "FY2023": "$5,250"},
+        {"Line Item": "Total Liabilities", "FY2024": "$0", "FY2023": "$5,250"},
+        {"Line Item": "Additional Paid-in Capital", "FY2024": "$500,000", "FY2023": "$500,000"},
+        {"Line Item": "Retained Earnings (Accumulated Deficit)", "FY2024": "$285,113", "FY2023": "($5,250)"},
+        {"Line Item": "Total Stockholder's Equity", "FY2024": "$785,113", "FY2023": "$494,750"},
+        {"Line Item": "Total Liabilities and Equity", "FY2024": "$785,113", "FY2023": "$500,000"}
+      ],
+      "table_notes": [
+        "Common stock: 100 shares, no par value.",
+        "Intangible assets = franchise agreements transferred from related party, amortized over 10 years.",
+        "S-corporation election — no federal corporate tax."
+      ],
+      "provenance": "Exhibit E, PDF page 147"
+    }
+  ]
+}

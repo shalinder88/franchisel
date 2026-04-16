@@ -1,0 +1,66 @@
+{
+  "enrichment_version": "v2",
+  "fdd_id": "638056-2025",
+  "brand": "Hampton Inn / Hampton Inn & Suites",
+  "item21_financial_structure_detail": {
+    "parent_chain": "Hilton Franchise Holding LLC → Hilton Domestic Operating Company Inc. → Hilton Worldwide Holdings Inc. (NYSE: HLT)",
+    "entity_purpose": "Single-purpose franchise IP licensing and fee collection",
+    "ip_source": "Licensed royalty-free from Hilton International Holding LLC (HIH)",
+    "revenue_recognition": "Royalty fees recognized as services provided (variable consideration, sales-based royalty). Upfront fees deferred over franchise contract term.",
+    "deferred_revenue_nature": "Franchise application, sales, and COO fees recognized over contract life (10-22 years). Growing balance reflects healthy pipeline.",
+    "intercompany_dynamics": "Franchisor collects fees from franchisees, remits to Hilton parent via retained earnings distributions. Large receivable ($703.9M) from Hilton affiliates represents operational cash managed at parent level."
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "largest_asset": "Other receivables due from Hilton affiliates ($703.9M, 55.4% of total assets)",
+      "second_largest_asset": "Franchise contracts, net ($392.7M) — franchise contract intangible assets acquired in 2024",
+      "largest_liability": "Deferred revenues ($558.9M, 80.7% of total liabilities)",
+      "equity_structure": "Contributed capital $310M + retained earnings $528.9M - due from affiliates ($262.0M) = $577.0M",
+      "leverage": "No external debt. All liabilities are operational (deferred revenue, franchise deposits, intercompany payables).",
+      "cash_minimal": "$317K — entity does not maintain significant cash; liquidity is at parent level"
+    },
+    "income_statement": {
+      "revenue_growth_2023": 12.0,
+      "revenue_growth_2024": 9.1,
+      "operating_margin_2024": 99.2,
+      "expense_composition": "Provision for credit losses ($6.2M), amortization ($3.8M), and operating expenses ($1.4M). Virtually no SG&A — all management functions performed by Hilton parent.",
+      "termination_fee_spike_2024": "$18.3M vs. $2.4M in 2023 — significant increase, possibly reflecting enforcement activity or portfolio cleanup"
+    },
+    "cash_flow": {
+      "operating_cash_2024": "$1,516.8M — virtually all revenue converts to operating cash",
+      "investing_2024": "($80.1M) — acquisition of franchise contract intangible assets (new in 2024)",
+      "financing_2024": "($1,441.7M) — dominated by $1.5B distribution to Hilton affiliates + $85.3M short-term note issuance",
+      "free_cash_flow_2024": "$1,436.7M (operating cash less investing)"
+    }
+  },
+  "item6_fee_detail": {
+    "base_fee_load": {
+      "royalty": {"rate": 0.06, "base": "Gross Rooms Revenue", "type": "percentage"},
+      "program_fee": {"rate": 0.04, "base": "Gross Rooms Revenue", "type": "percentage", "cap": "current + 1% over term"},
+      "combined_base": 0.10
+    },
+    "loyalty_fee": {
+      "hilton_honors": {"rate": 0.049, "base": "eligible guest folio", "waiver": "on-property enrollment"},
+      "hilton_advance": {"rate": 0.0135, "base": "Digital Direct Revenue", "cap_per_stay": 30}
+    },
+    "technology_monthly_range": {
+      "low": 1931,
+      "high": 3947,
+      "components": ["OnQ connectivity", "HW maintenance", "Connected Room maintenance"]
+    },
+    "quality_assurance_annual_exposure": {
+      "maximum_non_compliance": 100000,
+      "maximum_sqip": 100000,
+      "maximum_stay_score": "varies by room count",
+      "maximum_combined_note": "Multiple QA fees can apply simultaneously. Total exposure can be material for underperforming hotels."
+    },
+    "liquidated_damages_examples": {
+      "scenario_89_room_hi": {
+        "assumed_grr_per_room_month": 4000,
+        "monthly_royalty": 21360,
+        "liquidated_damages_60x": 1281600,
+        "note": "Illustrative only — based on assumed GRR of ~$4,000/room/month (occupancy ~72% × $155 ADR ÷ 30 × 89 rooms × 6%)"
+      }
+    }
+  }
+}

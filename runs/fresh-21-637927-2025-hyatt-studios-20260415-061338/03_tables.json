@@ -1,0 +1,304 @@
+{
+  "extraction_metadata": {
+    "brand": "Hyatt Studios",
+    "filing_id": "637927-2025",
+    "extraction_date": "2026-04-15",
+    "total_tables": 14
+  },
+  "tables": [
+    {
+      "table_id": "T01",
+      "source_item": "Item 6",
+      "source_pages": [21, 22, 23, 24],
+      "title": "Fees Under the Franchise Agreement and Development Rights Agreement",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Royalty Fee", "amount": "5% of Gross Rooms Revenue", "due_date": "10th of each month (Payment Day)", "remarks": "May be reduced for years 1-3 of new construction"},
+        {"fee": "Cooperative advertising", "amount": "As Cooperative determines", "due_date": "As Cooperative determines", "remarks": "Only if franchisee participates"},
+        {"fee": "World of Hyatt assessment", "amount": "2% of eligible revenue (1% for on-property enrollment)", "due_date": "Monthly", "remarks": "Could increase if costs increase"},
+        {"fee": "Comfort letter fee", "amount": "$2,500", "due_date": "As incurred", "remarks": "Per comfort letter"},
+        {"fee": "Quality assurance/FIP/BPP", "amount": "FIP: $5,000-$20,000/stage; BPP: $45,000/year", "due_date": "As incurred", "remarks": "Non-compliance only; up to 100% reduction for improvement"},
+        {"fee": "On-site QA inspections", "amount": "$1,500-$2,000/annual; $2,000 re-inspection", "due_date": "As incurred", "remarks": "Must reverse folio charge for inspection company"},
+        {"fee": "Additional training", "amount": "$950/trainer/day + expenses", "due_date": "As incurred", "remarks": "If requested or required"},
+        {"fee": "PMS subscription", "amount": "$3.90/room/month", "due_date": "Monthly", "remarks": "Vendor pass-through, subject to increase"},
+        {"fee": "Training tools and materials", "amount": "$3.64/room/year", "due_date": "Annually", "remarks": ""},
+        {"fee": "Owner convention", "amount": "$2,000-$5,000/attendee", "due_date": "As incurred", "remarks": "Annual or biennial plus travel"},
+        {"fee": "Leadership summit", "amount": "$3,000-$6,000/attendee", "due_date": "As incurred", "remarks": "~Every 4 years plus travel"},
+        {"fee": "Application fee for new rooms", "amount": "Greater of $5,000 or $500 × new rooms", "due_date": "As incurred", "remarks": "Only if adding rooms during term"},
+        {"fee": "GM University", "amount": "$2,700/new GM", "due_date": "As incurred", "remarks": "New/promoted GMs plus travel"},
+        {"fee": "Operator approval/re-entry", "amount": "$10,000-$20,000", "due_date": "Before screening", "remarks": "New management companies only"},
+        {"fee": "Transfer fee", "amount": "Change of ownership application fee ($100,000)", "due_date": "With transfer application", "remarks": "Refundable $7,500 if disapproved"},
+        {"fee": "Review of offering materials", "amount": "$5,000", "due_date": "When submitting", "remarks": "Only for ownership interest offerings"},
+        {"fee": "PIP fee (conversion/successor)", "amount": "$5,000", "due_date": "With franchise application", "remarks": ""},
+        {"fee": "Royalty fee upon termination", "amount": "$5,000/day + costs", "due_date": "As incurred", "remarks": "If fail to de-identify after termination"},
+        {"fee": "Liquidated damages", "amount": "See Note 6", "due_date": "15 days after termination", "remarks": "Greater of $4,000/room or up to 36 months × 8% revenue; 150% for Consequential Termination"},
+        {"fee": "Audit expenses", "amount": "Cost of audit", "due_date": "As incurred", "remarks": "Only if 3%+ understatement or willful underpayment"},
+        {"fee": "Late fee and interest", "amount": "$225 + 1.5%/month", "due_date": "As incurred", "remarks": "On amounts 7+ days late"},
+        {"fee": "Indemnification", "amount": "Varies", "due_date": "As incurred", "remarks": ""},
+        {"fee": "Testing new product/supplier", "amount": "$20,000", "due_date": "As incurred", "remarks": "If requesting approval"},
+        {"fee": "Designer approval fees", "amount": "$2,000-$10,000", "due_date": "As incurred", "remarks": "Renovation design firm approval"},
+        {"fee": "Insurance", "amount": "Premiums + $200/room/year", "due_date": "As incurred", "remarks": "Only if franchisee fails to maintain"},
+        {"fee": "DRA application fees", "amount": "$50,000 + $500/room over 125", "due_date": "With franchise applications", "remarks": "For each Brand Hotel under DRA"}
+      ],
+      "table_notes": "Except for transfer fee, all fees non-refundable. We might negotiate some fees for strategic market development."
+    },
+    {
+      "table_id": "T02",
+      "source_item": "Item 6",
+      "source_pages": [27, 28],
+      "title": "Mandatory Services Fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Commercial Services Fee", "amount": "3% of Gross Rooms Revenue", "due_date": "Payment Day", "remarks": "Marketing, reservations, revenue mgmt, tech"},
+        {"fee": "Digital Acquisition Fee", "amount": "1.35% of GRR through Digital Channels", "due_date": "Payment Day", "remarks": "Could increase"},
+        {"fee": "GDS/other reservation services", "amount": "~$8.50/reservation", "due_date": "Payment Day", "remarks": "Pass-through at cost"},
+        {"fee": "Mandatory Contracts", "amount": "$1,500-$7,500/month", "due_date": "Payment Day", "remarks": "Credit cards, music, telecom"},
+        {"fee": "Other corporate services", "amount": "$500-$5,000/month", "due_date": "Payment Day", "remarks": "Group sales, evaluations, etc."}
+      ],
+      "table_notes": "Amounts are estimates and may change. Hyatt Group determines charges on equitable, non-discriminatory basis for similarly situated hotels."
+    },
+    {
+      "table_id": "T03",
+      "source_item": "Item 6",
+      "source_pages": [28, 29],
+      "title": "Non-Mandatory Services Fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Hyatt Studios Services subscription", "amount": "$1,900/month Basic; $2,950/month High", "due_date": "Within 30 days of invoice", "remarks": "Mandatory first 2 years, optional after"},
+        {"fee": "Purchasing services", "amount": "Varies", "due_date": "As incurred", "remarks": "Optional Rosemont"},
+        {"fee": "Optional corporate services", "amount": "Actual costs", "due_date": "As incurred", "remarks": "Temporary staffing"},
+        {"fee": "Other related party transactions", "amount": "Varies", "due_date": "As incurred", "remarks": "Inter-hotel services"},
+        {"fee": "Optional technology services", "amount": "Varies", "due_date": "As incurred", "remarks": "POS, accounting, procurement"},
+        {"fee": "HSF national sales booking fees", "amount": "6%/3%/1% of applicable revenue", "due_date": "As incurred", "remarks": "Optional; only on accepted bookings; $30K cap on group"}
+      ],
+      "table_notes": ""
+    },
+    {
+      "table_id": "T04",
+      "source_item": "Item 7",
+      "source_pages": [36, 37, 38, 39],
+      "title": "Estimated Initial Investment — Franchise Agreement",
+      "columns": ["Type of Expenditure", "Amount Low", "Amount High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"expenditure": "Application fee", "low": 50000, "high": 100000, "method": "Lump sum", "when_due": "Upon signing application", "to_whom": "Franchisor"},
+        {"expenditure": "Comfort letter fee", "low": 0, "high": 2500, "method": "Lump sum", "when_due": "When lender signs", "to_whom": "Franchisor"},
+        {"expenditure": "Alternative Design Services Review", "low": 0, "high": 30000, "method": "As agreed", "when_due": "As incurred", "to_whom": "Franchisor"},
+        {"expenditure": "Extension of opening deadline", "low": 0, "high": 5000, "method": "As agreed", "when_due": "When requested", "to_whom": "Franchisor"},
+        {"expenditure": "IT Project Management + expenses", "low": 50635, "high": 52180, "method": "As agreed", "when_due": "Before opening", "to_whom": "Franchisor"},
+        {"expenditure": "Signage", "low": 41319, "high": 53715, "method": "As agreed", "when_due": "As incurred", "to_whom": "Suppliers"},
+        {"expenditure": "Telecom/security/tech systems", "low": 350000, "high": 450000, "method": "As agreed", "when_due": "As incurred", "to_whom": "Suppliers & Hyatt Corp"},
+        {"expenditure": "Architecture and design", "low": 0, "high": 722150, "method": "As agreed", "when_due": "As incurred", "to_whom": "Professionals"},
+        {"expenditure": "Construction/improvements", "low": 9873000, "high": 16198000, "method": "As agreed", "when_due": "As incurred", "to_whom": "General contractor, suppliers"},
+        {"expenditure": "FF&E", "low": 818010, "high": 1820000, "method": "As agreed", "when_due": "As incurred", "to_whom": "Suppliers"},
+        {"expenditure": "OS&E", "low": 255510, "high": 520390, "method": "As agreed", "when_due": "As incurred", "to_whom": "Suppliers"},
+        {"expenditure": "General & admin buildout", "low": 305000, "high": 485000, "method": "As agreed", "when_due": "As incurred", "to_whom": "Third parties"},
+        {"expenditure": "Hyatt Studios services (pre-opening)", "low": 11400, "high": 17700, "method": "As agreed", "when_due": "Monthly", "to_whom": "Franchisor"},
+        {"expenditure": "Pre-opening marketing", "low": 45000, "high": 200000, "method": "As agreed", "when_due": "Before opening", "to_whom": "Franchisor & third parties"},
+        {"expenditure": "Liquor license", "low": 0, "high": 300000, "method": "As agreed", "when_due": "As incurred", "to_whom": "Government/previous holder"},
+        {"expenditure": "Operator approval fees", "low": 0, "high": 22500, "method": "As agreed", "when_due": "Before screening", "to_whom": "Franchisor"},
+        {"expenditure": "PIP fee", "low": 0, "high": 5000, "method": "As agreed", "when_due": "Conversion only", "to_whom": "Franchisor"},
+        {"expenditure": "Training (to franchisor)", "low": 12932, "high": 29172, "method": "As agreed", "when_due": "As incurred", "to_whom": "Franchisor"},
+        {"expenditure": "Training (own costs)", "low": 10300, "high": 20600, "method": "As agreed", "when_due": "As incurred", "to_whom": "Suppliers"},
+        {"expenditure": "Additional optional training", "low": 0, "high": 150000, "method": "As agreed", "when_due": "As incurred", "to_whom": "Franchisor"},
+        {"expenditure": "Fire/life safety consultation", "low": 15000, "high": 30000, "method": "As agreed", "when_due": "As incurred", "to_whom": "Suppliers"},
+        {"expenditure": "Miscellaneous pre-opening", "low": 150000, "high": 250000, "method": "As agreed", "when_due": "As incurred", "to_whom": "Various"},
+        {"expenditure": "Additional funds (3 months)", "low": 200000, "high": 400000, "method": "As agreed", "when_due": "As incurred", "to_whom": "Various"}
+      ],
+      "total_low": 12188106,
+      "total_high": 21863907,
+      "table_notes": "For new, full-size Brand Hotel with 90-130 guest rooms. Excludes real estate costs. Excludes finance charges, interest, debt service. Based on affiliates' experience developing hotels since 1957."
+    },
+    {
+      "table_id": "T05",
+      "source_item": "Item 7",
+      "source_pages": [40],
+      "title": "Estimated Initial Investment — Development Rights Agreement",
+      "columns": ["Type of Expenditure", "Amount Low", "Amount High"],
+      "rows": [
+        {"expenditure": "Development Fee", "low": 100000, "high": 100000},
+        {"expenditure": "Additional funds (3 months)", "low": 0, "high": 250000}
+      ],
+      "total_low": 100000,
+      "total_high": 350000,
+      "table_notes": "DRA typically covers 4-15 Brand Hotels. $50,000 of Development Fee applied to first 2 Franchise Application fees."
+    },
+    {
+      "table_id": "T06",
+      "source_item": "Item 20",
+      "source_pages": [86],
+      "title": "Systemwide Outlet Summary (Table No. 1)",
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 0, "end": 0, "net_change": 0},
+        {"type": "Franchised", "year": 2023, "start": 0, "end": 0, "net_change": 0},
+        {"type": "Franchised", "year": 2024, "start": 0, "end": 0, "net_change": 0},
+        {"type": "Company-Owned", "year": 2022, "start": 0, "end": 0, "net_change": 0},
+        {"type": "Company-Owned", "year": 2023, "start": 0, "end": 0, "net_change": 0},
+        {"type": "Company-Owned", "year": 2024, "start": 0, "end": 0, "net_change": 0}
+      ],
+      "table_notes": "Zero operating outlets across all three years. Brand began offering franchises May 2023."
+    },
+    {
+      "table_id": "T07",
+      "source_item": "Item 20",
+      "source_pages": [86],
+      "title": "Transfers of Outlets (Table No. 2)",
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        {"state": "All States", "year": 2022, "transfers": 0},
+        {"state": "All States", "year": 2023, "transfers": 0},
+        {"state": "All States", "year": 2024, "transfers": 0}
+      ],
+      "table_notes": ""
+    },
+    {
+      "table_id": "T08",
+      "source_item": "Item 20",
+      "source_pages": [87],
+      "title": "Status of Franchised Outlets (Table No. 3)",
+      "columns": ["State", "Year", "Start", "Opened", "Terminated", "Non-Renewed", "Reacquired", "Ceased Ops", "Other", "End"],
+      "rows": [
+        {"state": "All States", "year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_ops": 0, "other": 0, "end": 0},
+        {"state": "All States", "year": 2023, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_ops": 0, "other": 0, "end": 0},
+        {"state": "All States", "year": 2024, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_ops": 0, "other": 0, "end": 0}
+      ],
+      "table_notes": "Table header says 2021-2023 but data covers 2022-2024 based on context. All values are zero."
+    },
+    {
+      "table_id": "T09",
+      "source_item": "Item 20",
+      "source_pages": [87],
+      "title": "Status of Company-Owned Outlets (Table No. 4)",
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired from Franchisee", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        {"state": "All States", "year": 2022, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+        {"state": "All States", "year": 2023, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+        {"state": "All States", "year": 2024, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0}
+      ],
+      "table_notes": ""
+    },
+    {
+      "table_id": "T10",
+      "source_item": "Item 20",
+      "source_pages": [88],
+      "title": "Projected Openings as of December 31, 2024 (Table No. 5)",
+      "columns": ["State", "FA Signed But Not Open", "Projected Franchised Next FY", "Projected Company-Owned Next FY"],
+      "rows": [
+        {"state": "Alabama", "signed_not_open": 4, "projected_franchised": 2, "projected_company": 0},
+        {"state": "Arkansas", "signed_not_open": 1, "projected_franchised": 0, "projected_company": 0},
+        {"state": "California", "signed_not_open": 4, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Colorado", "signed_not_open": 1, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Florida", "signed_not_open": 3, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Georgia", "signed_not_open": 1, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Illinois", "signed_not_open": 2, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Indiana", "signed_not_open": 2, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Kentucky", "signed_not_open": 1, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Maine", "signed_not_open": 1, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Mississippi", "signed_not_open": 3, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Montana", "signed_not_open": 1, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Ohio", "signed_not_open": 1, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Pennsylvania", "signed_not_open": 4, "projected_franchised": 0, "projected_company": 0},
+        {"state": "South Carolina", "signed_not_open": 2, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Tennessee", "signed_not_open": 4, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Texas", "signed_not_open": 3, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Utah", "signed_not_open": 2, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Virginia", "signed_not_open": 4, "projected_franchised": 0, "projected_company": 0},
+        {"state": "Washington", "signed_not_open": 1, "projected_franchised": 0, "projected_company": 0}
+      ],
+      "total_signed_not_open": 45,
+      "total_projected_franchised": 2,
+      "total_projected_company": 0,
+      "table_notes": "All 45 agreements are signed but no hotels were open as of December 31, 2024."
+    },
+    {
+      "table_id": "T11",
+      "source_item": "Item 21 / Exhibit A-1",
+      "source_pages": [96],
+      "title": "Consolidated Statements of Income — Hyatt Hotels Corporation",
+      "columns": ["Line Item", "2024 ($M)", "2023 ($M)", "2022 ($M)"],
+      "rows": [
+        {"item": "Base management fees", "y2024": 399, "y2023": 374, "y2022": 319},
+        {"item": "Incentive management fees", "y2024": 242, "y2023": 232, "y2022": 192},
+        {"item": "Franchise and other fees", "y2024": 458, "y2023": 364, "y2022": 297},
+        {"item": "Gross fees", "y2024": 1099, "y2023": 970, "y2022": 808},
+        {"item": "Contra revenue", "y2024": -69, "y2023": -47, "y2022": -31},
+        {"item": "Net fees", "y2024": 1030, "y2023": 923, "y2022": 777},
+        {"item": "Owned and leased revenue", "y2024": 1174, "y2023": 1339, "y2022": 1235},
+        {"item": "Distribution revenue", "y2024": 1023, "y2023": 1047, "y2022": 986},
+        {"item": "Other revenues", "y2024": 69, "y2023": 300, "y2022": 273},
+        {"item": "Revenues for reimbursed costs", "y2024": 3352, "y2023": 3058, "y2022": 2620},
+        {"item": "Total revenues", "y2024": 6648, "y2023": 6667, "y2022": 5891},
+        {"item": "Total direct and G&A expenses", "y2024": 6274, "y2023": 6378, "y2022": 5499},
+        {"item": "Gains on sales of real estate", "y2024": 1245, "y2023": 18, "y2022": 263},
+        {"item": "Asset impairments", "y2024": -213, "y2023": -30, "y2022": -38},
+        {"item": "Interest expense", "y2024": -180, "y2023": -145, "y2022": -150},
+        {"item": "Income before taxes", "y2024": 1563, "y2023": 310, "y2022": 363},
+        {"item": "Net income", "y2024": 1296, "y2023": 220, "y2022": 455},
+        {"item": "EPS Basic", "y2024": 12.99, "y2023": 2.10, "y2022": 4.17},
+        {"item": "EPS Diluted", "y2024": 12.65, "y2023": 2.05, "y2022": 4.09}
+      ],
+      "table_notes": "2024 net income elevated by $1,245M in real estate gains. Depreciation/amortization $333M (2024). $110M goodwill impairment included in asset impairments."
+    },
+    {
+      "table_id": "T12",
+      "source_item": "Item 21 / Exhibit A-1",
+      "source_pages": [98],
+      "title": "Consolidated Balance Sheet — Hyatt Hotels Corporation",
+      "columns": ["Line Item", "Dec 31 2024 ($M)", "Dec 31 2023 ($M)"],
+      "rows": [
+        {"item": "Cash and cash equivalents", "y2024": 1011, "y2023": 881},
+        {"item": "Total current assets", "y2024": 2733, "y2023": 2130},
+        {"item": "Property and equipment, net", "y2024": 1689, "y2023": 2340},
+        {"item": "Goodwill", "y2024": 2541, "y2023": 3205},
+        {"item": "Intangibles, net", "y2024": 2167, "y2023": 1670},
+        {"item": "Deferred tax assets", "y2024": 466, "y2023": 358},
+        {"item": "Other assets", "y2024": 2843, "y2023": 2477},
+        {"item": "TOTAL ASSETS", "y2024": 13324, "y2023": 12833},
+        {"item": "Current maturities of LT debt", "y2024": 456, "y2023": 751},
+        {"item": "Total current liabilities", "y2024": 3274, "y2023": 3578},
+        {"item": "Long-term debt", "y2024": 3326, "y2023": 2305},
+        {"item": "Total liabilities", "y2024": 9498, "y2023": 9266},
+        {"item": "Total stockholders' equity", "y2024": 3547, "y2023": 3564},
+        {"item": "Noncontrolling interests", "y2024": 279, "y2023": 3},
+        {"item": "Total equity", "y2024": 3826, "y2023": 3567},
+        {"item": "TOTAL LIABILITIES AND EQUITY", "y2024": 13324, "y2023": 12833}
+      ],
+      "table_notes": "Goodwill decreased from $3,205M to $2,541M (includes $110M impairment). LT debt increased from $2,305M to $3,326M. Retained earnings $3,815M. AOCI -$269M."
+    },
+    {
+      "table_id": "T13",
+      "source_item": "Item 21 / Exhibit A-1",
+      "source_pages": [99, 100],
+      "title": "Consolidated Statements of Cash Flows — Hyatt Hotels Corporation",
+      "columns": ["Line Item", "2024 ($M)", "2023 ($M)", "2022 ($M)"],
+      "rows": [
+        {"item": "Net cash from operating activities", "y2024": 633, "y2023": 800, "y2022": 674},
+        {"item": "Net cash from investing activities", "y2024": 81, "y2023": -365, "y2022": 416},
+        {"item": "Net cash from financing activities", "y2024": -618, "y2023": -578, "y2022": -1106},
+        {"item": "Repurchases of common stock", "y2024": -1190, "y2023": -453, "y2022": -369},
+        {"item": "Dividends paid", "y2024": -60, "y2023": -47, "y2022": 0},
+        {"item": "Cash end of year", "y2024": 1015, "y2023": 919, "y2022": 1067}
+      ],
+      "table_notes": "Significant real estate sales proceeds in 2024 ($1,421M). Share repurchases accelerated ($1,190M in 2024). New debt issuance $1,424M in 2024."
+    },
+    {
+      "table_id": "T14",
+      "source_item": "Item 11",
+      "source_pages": [50, 51, 52, 53, 54, 55, 56, 57],
+      "title": "Training Programs Summary",
+      "columns": ["Program", "Classroom Hours", "OJT Hours", "Audience", "Location"],
+      "rows": [
+        {"program": "Owner Briefing", "classroom": "8", "ojt": "0", "audience": "Managing owner/senior ops officer", "location": "Chicago or virtual"},
+        {"program": "FMU", "classroom": "15-17", "ojt": "0", "audience": "Management company", "location": "Online/virtual"},
+        {"program": "Owner/Operator Orientation", "classroom": "16", "ojt": "0", "audience": "Managing owner + senior ops officer", "location": "Chicago, Hyatt hotel, or virtual"},
+        {"program": "GMU", "classroom": "53-58", "ojt": "0", "audience": "General manager", "location": "eLearning, virtual, Chicago"},
+        {"program": "Operations Training", "classroom": "47-79", "ojt": "40-76", "audience": "Core Management + staff", "location": "Hotel, Chicago, virtual"},
+        {"program": "Sales/Events/Revenue Mgmt", "classroom": "136.5", "ojt": "0", "audience": "Sales leaders, revenue managers", "location": "Virtual, eLearning"},
+        {"program": "Other Personnel", "classroom": "17-34", "ojt": "15-36", "audience": "Various", "location": "Hotel"},
+        {"program": "Required Other Personnel", "classroom": "12-29", "ojt": "1-6", "audience": "All employees", "location": "eLearning, Hotel"},
+        {"program": "Pre-Opening Brand Training", "classroom": "N/A", "ojt": "7+ nights on-site", "audience": "Hotel staff", "location": "Hotel"}
+      ],
+      "table_notes": "All initial training is mandatory except optional courses. Sales/Events/Revenue is the most intensive single program at 136.5 classroom hours."
+    }
+  ]
+}

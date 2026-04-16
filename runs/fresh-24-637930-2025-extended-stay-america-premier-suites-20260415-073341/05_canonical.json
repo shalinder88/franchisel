@@ -1,0 +1,263 @@
+{
+  "extraction_date": "2026-04-15",
+  "pipeline_version": "automation_v1",
+  "document_identity": {
+    "filing_id": "637930-2025",
+    "brand": "Extended Stay America Premier Suites",
+    "franchisor_legal_name": "ESH Strategies Franchise LLC",
+    "franchisor_state_of_formation": "Delaware",
+    "franchisor_address": "13024 Ballantyne Corporate Place, Suite 1000, Charlotte, NC 28277",
+    "franchisor_phone": "(844) 542-4148",
+    "franchisor_email": "franchise@esa.com",
+    "franchisor_website": "www.franchise.extendedstayamerica.com",
+    "issuance_date": "2025-03-27",
+    "fiscal_year_end": "December 31",
+    "state_filed": "Wisconsin",
+    "source_pages": [1],
+    "confidence": "high"
+  },
+  "entity_structure": {
+    "franchisor": "ESH Strategies Franchise LLC",
+    "parent_chain": [
+      "ESH Hospitality Strategies LLC",
+      "Eagle Strategies Holdings LLC"
+    ],
+    "ultimate_owners": ["Starwood Capital Group (SCG)", "Blackstone Inc. (BX)"],
+    "key_affiliates": [
+      {"name": "ESH Hospitality, Inc.", "role": "Hotel owner/operator (572 hotels)"},
+      {"name": "ESA Management LLC", "role": "Hotel manager"},
+      {"name": "ESH Strategies Branding LLC", "role": "Trademark owner"}
+    ],
+    "predecessor": "None",
+    "franchisor_formed": "2010-09-16",
+    "franchising_since": "2017-08 (ESA brand); 2021-03 (Premier Suites brand)",
+    "franchisor_never_operated_brand_hotels": true,
+    "source_pages": [9, 10, 11, 12],
+    "confidence": "high"
+  },
+  "franchise_term": {
+    "initial_term_years": 20,
+    "term_notes": "20 years for new-build; variable for conversions based on age/condition/location",
+    "renewal_right": false,
+    "renewal_notes": "No right to renew or extend",
+    "source_section": "Item 17(a),(b),(c)",
+    "source_pages": [52],
+    "confidence": "high"
+  },
+  "fees": {
+    "initial_franchise_fee": {
+      "amount": 50000,
+      "currency": "USD",
+      "refundable": false,
+      "negotiable": true,
+      "negotiable_notes": "May negotiate based on multi-hotel, market, property size, prior relationship. Prior year: $40,000.",
+      "source_pages": [16],
+      "confidence": "high"
+    },
+    "royalty": {
+      "rate": "5.5%",
+      "basis": "Gross Room Revenue",
+      "due": "15th of following month",
+      "source_pages": [18],
+      "confidence": "high"
+    },
+    "system_services_fee": {
+      "rate": "4.5%",
+      "basis": "Gross Room Revenue",
+      "due": "15th of following month",
+      "pooled_with_other_brands": true,
+      "source_pages": [18],
+      "confidence": "high"
+    },
+    "total_ongoing_rate": "10.0% of GRR (before digital marketing commission and booking fees)",
+    "digital_marketing_commission": {
+      "rate": "5%",
+      "basis": "GRR from paid digital channels",
+      "effective": "Beginning of 2025",
+      "source_pages": [20],
+      "confidence": "high"
+    },
+    "ad_fund": {
+      "type": "System Services Fee (not separate fund)",
+      "2024_spending": 5326228,
+      "2024_spending_pct_of_grr": "2.4%",
+      "breakdown": "72% digital marketing, 17% admin, 11% other marketing/SEO",
+      "source_pages": [42],
+      "confidence": "high"
+    },
+    "source_section": "Items 5, 6",
+    "confidence": "high"
+  },
+  "initial_investment": {
+    "new_construction": {
+      "rooms": 125,
+      "low": 10058979,
+      "high": 15123386,
+      "excludes_real_property": true,
+      "to_franchisor_low": 66350,
+      "to_franchisor_high": 87850,
+      "source_pages": [26, 27, 28, 29],
+      "confidence": "high"
+    },
+    "conversion": {
+      "rooms": 100,
+      "low": 322659,
+      "high": 5590465,
+      "excludes_real_property": true,
+      "to_franchisor_low": 60350,
+      "to_franchisor_high": 83850,
+      "source_pages": [29, 30, 31, 32],
+      "confidence": "high"
+    }
+  },
+  "item19": {
+    "fpr_provided": true,
+    "population": 41,
+    "population_description": "32 company-owned + 9 franchised Brand Hotels operating full 12 months ending 12/31/2024",
+    "combined_data": true,
+    "combined_reason": "Franchise sample (9) too small; results 'not materially different' from owned",
+    "metrics": {
+      "occupancy": {"average": "77.4%", "median": "79.4%", "pct_at_or_above": "56%"},
+      "adr": {"average": "$93.84", "median": "$93.16", "pct_at_or_above": "49%"},
+      "revpar": {"average": "$72.60", "median": "$72.34", "pct_at_or_above": "49%"},
+      "extended_stay_occupancy": {"average": "54.8%", "median": "57.0%", "pct_at_or_above": "61%"}
+    },
+    "cost_data_disclosed": false,
+    "ebitda_disclosed": false,
+    "substantiation_available": true,
+    "source_pages": [60, 61, 62, 63],
+    "confidence": "high"
+  },
+  "item20": {
+    "system_size_current_year_end": 49,
+    "franchised_current": 17,
+    "company_owned_current": 32,
+    "net_change_franchised_2024": 8,
+    "net_change_company_2024": 0,
+    "terminations_2024": 0,
+    "non_renewals_2024": 0,
+    "transfers_2024": 0,
+    "projected_openings_franchised": 12,
+    "projected_openings_company": 0,
+    "fa_signed_not_opened": 41,
+    "confidentiality_clause": false,
+    "trademark_specific_org": false,
+    "source_pages": [63, 64, 65, 66, 67],
+    "confidence": "high"
+  },
+  "item21": {
+    "auditor": "Not identified in text layer (signature likely image-based)",
+    "opinion_type": "Unqualified with emphasis of matter (related party transactions)",
+    "going_concern": false,
+    "fiscal_years_covered": ["2024", "2023", "2022"],
+    "entity_type": "LLC (not subject to federal income tax)",
+    "key_financials_2024": {
+      "total_revenue": 25818000,
+      "franchise_fees": 9391000,
+      "system_service_fees": 10888000,
+      "total_expenses": 24281000,
+      "net_income": 1537000,
+      "total_assets": 19178000,
+      "total_liabilities": 10983000,
+      "members_capital": 8195000,
+      "cash": 9170000
+    },
+    "key_financials_2023": {
+      "total_revenue": 18439000,
+      "net_loss": -2172000,
+      "total_assets": 20153000,
+      "cash": 8537000
+    },
+    "source_pages": [197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211],
+    "confidence": "high"
+  },
+  "territory": {
+    "exclusive": false,
+    "territory_may_be_granted": true,
+    "protection_scope": "Brand only (Extended Stay America Premier Suites)",
+    "sister_brand_competition_allowed": true,
+    "sister_brands": ["Extended Stay America Suites", "Extended Stay America Select Suites"],
+    "reserved_rights": "Franchisor may own/build/franchise Network Hotels in territory under different brands. May operate in territory 6 months before FA expiration. Existing Brand Hotels grandfathered.",
+    "relocation_right": false,
+    "source_pages": [45, 46, 47],
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": false,
+    "post_term": false,
+    "source_pages": [58],
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "method": "Arbitration (except indemnification, equitable relief, enforcement of awards)",
+    "venue": "Charlotte, North Carolina",
+    "governing_law": "North Carolina",
+    "jury_trial_waiver": true,
+    "source_pages": [59],
+    "confidence": "high"
+  },
+  "transfer": {
+    "consent_required": true,
+    "transfer_fee": "Then-current initial franchise fee",
+    "general_release_required": true,
+    "new_agreement_required": true,
+    "new_agreement_may_differ": true,
+    "right_of_first_refusal": false,
+    "right_of_first_offer": "Only for strategic markets (Exhibit F)",
+    "source_pages": [56, 57],
+    "confidence": "high"
+  },
+  "termination": {
+    "cure_period_monetary": "10 days",
+    "cure_period_non_monetary": "30 days",
+    "liquidated_damages": true,
+    "liquidated_damages_detail": "Pre-opening: rooms × $3,000. Post-opening varies by time remaining.",
+    "source_pages": [53, 54, 21, 22],
+    "confidence": "high"
+  },
+  "training": {
+    "programs": [
+      {"name": "New Owner Orientation", "hours": 12, "location": "Charlotte, NC", "fee": "$1,900/person"},
+      {"name": "GM Certification", "hours": "12-14", "location": "Online or Charlotte, NC", "fee": "$1,900/person"},
+      {"name": "Pre-Opening Onsite Training", "hours": 12, "location": "Hotel", "fee": "$2,500"},
+      {"name": "Service Culture Training", "hours": 1, "location": "Online", "fee": "Free"}
+    ],
+    "source_pages": [43],
+    "confidence": "high"
+  },
+  "litigation": {
+    "pending": [
+      {
+        "case": "In re Extended Stay Hotel Antitrust Litigation, Case No. 24-cv-6324",
+        "type": "Antitrust class action",
+        "allegations": "Sherman Act violations via IDeaS revenue management algorithm for room rate setting",
+        "status": "Pending in N.D. Cal.; motion to dismiss stayed pending Dai decision",
+        "source_pages": [14, 15]
+      }
+    ],
+    "prior": [
+      {
+        "case": "Brittian v. ESA Management LLC et al., 3:22-cv-00663 (W.D.N.C.)",
+        "type": "Class action — guest refund practices",
+        "outcome": "Settled July 2024 for $100,000",
+        "source_pages": [15, 16]
+      }
+    ],
+    "confidence": "high"
+  },
+  "insurance_requirements": {
+    "general_liability": "$10,000,000 per occurrence",
+    "auto_liability": "$10,000,000 per occurrence",
+    "workers_comp": "State requirements",
+    "employers_liability": "$5,000,000 per occurrence; $1,000,000 per accident/disease/employee",
+    "property": "Full replacement cost",
+    "business_interruption": "12 months including fees to franchisor",
+    "cyber_liability": "$3,000,000 per occurrence",
+    "employment_practices": "$1,000,000 per occurrence",
+    "earthquake_flood": "75% replacement if in hazard area",
+    "terrorism": "Full replacement + lost profits",
+    "am_best_rating": "A- or better, size VII+",
+    "source_pages": [33],
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "depth_pass": 3,
+  "title": "Narrative-to-Canonical Promotion Audit",
+  "extraction_date": "2026-04-15",
+  "promoted_facts": [
+    {
+      "fact": "Contact person for FDD format requests: Rebecca Smetters (rebecca.smetters@hyatt.com), (312) 780-5828",
+      "source": "Reader report Pass A / Cover page p1",
+      "promoted_to": "document_identity.contact_person, contact_email, contact_phone"
+    },
+    {
+      "fact": "Franchised hotels received $2,208,810 MORE in loyalty reimbursements than they paid in loyalty fees during 2024",
+      "source": "Reader report Pass C / Item 8, p44",
+      "promoted_to": "fees.loyalty_program_fee.net_benefit_note"
+    },
+    {
+      "fact": "84.9% of reservations were for 1-4 nights; only 0.1% for 30+ nights (transient-dominant business)",
+      "source": "Reader report Pass F / Item 19, p80-81",
+      "promoted_to": "item19.reservation_length_distribution"
+    },
+    {
+      "fact": "System Standards comprise 3,641 pages as of issuance date",
+      "source": "Reader report Pass C / Item 11, p51",
+      "promoted_to": "training.system_standards_page_count"
+    },
+    {
+      "fact": "Pre-opening marketing minimum: $500 per guest room",
+      "source": "Reader report Pass C / Item 11, p49",
+      "promoted_to": "fees.pre_opening_marketing_minimum"
+    },
+    {
+      "fact": "New-build opening timeline: 24-36 months after Application Fee; conversion: 3-24 months",
+      "source": "Reader report Pass C / Item 11, p54-55",
+      "promoted_to": "investment.opening_timeline"
+    },
+    {
+      "fact": "Brand Hotels will typically be in primary markets in urban, densely-populated locations, on 1-3 acres",
+      "source": "Reader report Pass B / Item 7 Note 12, p40",
+      "promoted_to": "investment.typical_market"
+    },
+    {
+      "fact": "Controlling Ownership Interest definition: 50%+ of investment capital/equity/profits OR effective management control",
+      "source": "Reader report Pass E / Item 15, p73",
+      "promoted_to": "transfer.controlling_ownership_definition"
+    },
+    {
+      "fact": "Head of Americas Development contact for unauthorized FPR reporting: Daniel Hansen, (312) 750-1234",
+      "source": "Reader report Pass F / Item 19, p86",
+      "promoted_to": "item19.unauthorized_fpr_contact"
+    },
+    {
+      "fact": "Hyatt Hotels Corporation portfolio: 1,442 hotels, 347,301 rooms, 79 countries as of 12/31/2024",
+      "source": "Financial notes p105 / Note 1",
+      "promoted_to": "document_identity.parent_portfolio"
+    }
+  ],
+  "promotion_count": 10,
+  "note": "All promoted facts have been patched into 09_final_canonical.json and 12_canonical_enriched_v2.json"
+}

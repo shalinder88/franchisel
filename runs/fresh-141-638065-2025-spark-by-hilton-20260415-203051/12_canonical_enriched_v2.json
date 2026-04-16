@@ -1,0 +1,62 @@
+{
+  "enrichment_version": "v2",
+  "base": "11_canonical_enriched.json",
+  "enrichments": {
+    "item21_financial_structure": {
+      "revenue_composition_2024": {
+        "franchise_royalty_fees_pct": 95.5,
+        "franchise_sales_coo_fees_pct": 3.3,
+        "termination_fees_other_pct": 1.2
+      },
+      "expense_ratio_2024": 0.76,
+      "operating_margin_2024": 99.24,
+      "net_margin_2024": 99.04,
+      "asset_composition_2024": {
+        "intercompany_receivables_pct": 55.4,
+        "franchise_contracts_pct": 30.9,
+        "accounts_receivable_pct": 10.7,
+        "cash_pct": 0.025
+      },
+      "leverage": {
+        "total_debt": 0,
+        "debt_to_equity": 0,
+        "note": "Entity has no external debt. Total liabilities are franchise deposits, deferred revenue, and intercompany payables."
+      },
+      "distributions_3yr": {
+        "2024": 1500000,
+        "2023": 1400000,
+        "2022": 1550000,
+        "total_3yr": 4450000,
+        "note": "All values in thousands. Distributions exceed net income in 2024 by $12.4M, funded from retained earnings."
+      }
+    },
+    "item21_statement_detail": {
+      "balance_sheet_2024": {
+        "current_assets_k": 872512,
+        "non_current_assets_k": 397385,
+        "current_liabilities_k": 167610,
+        "non_current_liabilities_k": 525282,
+        "working_capital_k": 704902,
+        "current_ratio": 5.21
+      },
+      "income_statement_2024": {
+        "revenue_growth_yoy_pct": 9.1,
+        "royalty_revenue_growth_yoy_pct": 7.8,
+        "provision_for_credit_losses_k": 6248,
+        "credit_loss_as_pct_of_receivables": 0.71
+      },
+      "cash_flow_2024": {
+        "free_cash_flow_k": 1436710,
+        "capex_k": 80050,
+        "fcf_to_revenue_pct": 95.7
+      }
+    },
+    "item6_fee_detail": {
+      "technology_fees_monthly_range": {"low": 2837, "high": 6520},
+      "technology_fees_annual_range": {"low": 34044, "high": 78240},
+      "total_ongoing_pct_of_grr_estimate": "~10.5-12% including Hilton Honors, distribution programs, and technology fees",
+      "quality_assurance_max_annual": "$100,000 (Brand Non-Compliance $50K/6mo + Service Quality $50K/6mo)",
+      "distribution_programs_annual_estimate": "Variable, depends on booking volume and program participation"
+    }
+  }
+}

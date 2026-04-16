@@ -1,0 +1,114 @@
+{
+  "enrichment_version": "v1",
+  "fdd_id": "638052-2025",
+  "brand": "DoubleTree by Hilton",
+  "item19_chart_detail": {
+    "charts_count": 4,
+    "charts": [
+      {
+        "name": "Room Rate",
+        "years": [2023, 2024],
+        "population": 304,
+        "avg_2024": 159.30,
+        "median_2024": 149.23,
+        "range_low_2024": 96.32,
+        "range_high_2024": 294.93,
+        "pct_franchisee_above_avg_2024": 32.4,
+        "pct_company_above_avg_2024": 69.6
+      },
+      {
+        "name": "Occupancy",
+        "years": [2023, 2024],
+        "population": 304,
+        "avg_2024": 69.0,
+        "median_2024": 68.4,
+        "range_low_2024": 39.4,
+        "range_high_2024": 99.1
+      },
+      {
+        "name": "Occupancy Index",
+        "years": [2023, 2024],
+        "population": 302,
+        "avg_2024": 104.8,
+        "median_2024": 105.4,
+        "range_low_2024": 64.3,
+        "range_high_2024": 163.5,
+        "index_interpretation": "100 = fair share of competitive set demand"
+      },
+      {
+        "name": "RevPAR Index",
+        "years": [2023, 2024],
+        "population": 302,
+        "avg_2024": 104.6,
+        "median_2024": 106.8,
+        "range_low_2024": 54.0,
+        "range_high_2024": 230.2,
+        "index_interpretation": "100 = fair share of competitive set RevPAR"
+      }
+    ],
+    "cost_buildup_disclosed": false,
+    "ebitda_disclosed": false,
+    "source_pages": [94, 95, 96, 97]
+  },
+  "item20_yearly_activity": {
+    "years": {
+      "2022": {"start": 345, "end": 354, "net": 9, "transfers": 21},
+      "2023": {"start": 354, "end": 361, "net": 7, "transfers": 16},
+      "2024": {"start": 361, "end": 359, "net": -2, "transfers": 11}
+    },
+    "projected_openings": 21,
+    "pipeline": 31,
+    "company_owned": 0,
+    "source_pages": [98, 99, 100, 101, 102, 103]
+  },
+  "exhibit_structure": {
+    "total_exhibits": 20,
+    "exhibits_found": 18,
+    "exhibits_not_found": ["D-4", "H-3"],
+    "financial_statements_exhibit": "C",
+    "franchise_agreement_exhibit": "D",
+    "state_addenda_exhibits": ["D-1", "J-1"],
+    "franchisee_list_exhibits": ["A", "B"]
+  },
+  "item21_structural_facts": {
+    "entity": "Hilton Franchise Holding LLC",
+    "auditor": "Cherry Bekaert",
+    "opinion": "Unqualified (clean)",
+    "years": [2024, 2023, 2022],
+    "statements": ["Balance Sheet", "Statement of Comprehensive Income and Member's Equity", "Statement of Cash Flows"],
+    "notes_count": 9,
+    "key_note_topics": [
+      "Organization",
+      "Basis of Presentation and Accounting Policies",
+      "Acquisition (Graduate brand)",
+      "Franchise Contracts",
+      "Fair Value Measurements",
+      "Income Taxes",
+      "Commitments and Contingencies",
+      "Related Party Transactions",
+      "Subsequent Events"
+    ]
+  },
+  "item1_structural_facts": {
+    "franchisor_formed": "September 2007",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "ultimate_parent": "Hilton Worldwide Holdings Inc. (NYSE: HLT)",
+    "predecessors": [
+      {"entity": "Doubletree Franchise LLC", "period": "Oct 2007 - Mar 2015"},
+      {"entity": "Doubletree Hotel Systems Inc.", "period": "Feb 1989 - Oct 2007"}
+    ],
+    "sibling_brands": 20,
+    "international_affiliates": 4
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": "5% GRR",
+    "program_fee_rate": "4% GRR",
+    "program_fee_max_increase": "+1% over term",
+    "hilton_honors_rate": "4.3% of eligible folio",
+    "total_core_fee_burden_pct": "13.3%+ of GRR (before technology, distribution, QA fees)",
+    "tech_fees_monthly_range": "$3,800-$9,000+",
+    "liquidated_damages_formula": "Up to 60x avg monthly royalty",
+    "late_payment_rate": "1.5%/month",
+    "negotiation_evidence": "21 royalty fee reductions in 2024"
+  }
+}

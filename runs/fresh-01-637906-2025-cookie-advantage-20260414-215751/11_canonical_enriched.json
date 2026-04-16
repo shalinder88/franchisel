@@ -1,0 +1,108 @@
+{
+  "extraction_date": "2026-04-14",
+  "fdd_id": "637906-2025",
+  "brand": "Cookie Advantage",
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "chart_type": "single_table",
+    "reporting_period": "Calendar year 2024",
+    "population": {
+      "count": 17,
+      "description": "All 17 Franchised Outlets",
+      "exclusions": "None — all franchised outlets included",
+      "company_owned_included": false
+    },
+    "metrics": {
+      "average_gross_revenue": 369522.44,
+      "median_gross_revenue": 260925.10,
+      "highest_gross_revenue": 1231277.89,
+      "lowest_gross_revenue": 50197.90,
+      "met_or_exceeded_average": {"count": 4, "pct": 24},
+      "range_ratio": 24.5,
+      "average_to_median_ratio": 1.42,
+      "skew_direction": "right"
+    },
+    "cost_data": null,
+    "ebitda_data": null,
+    "gross_revenue_definition": "Total revenue from sale of goods/services less sales tax, discounts, allowances, returns",
+    "substantiation_available": true,
+    "caveats": [
+      "Does not reflect costs of sales, operating expenses, or other costs",
+      "Numbers not audited",
+      "No assurance of matching performance",
+      "Company-owned outlet data not included"
+    ]
+  },
+  "item20_yearly_activity": {
+    "2022": {
+      "franchised": {"start": 19, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 19},
+      "company_owned": {"start": 3, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 3},
+      "transfers": 0
+    },
+    "2023": {
+      "franchised": {"start": 19, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 19},
+      "company_owned": {"start": 3, "opened": 1, "reacquired": 0, "closed": 0, "sold": 0, "end": 4},
+      "transfers": 1
+    },
+    "2024": {
+      "franchised": {"start": 19, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 2, "ceased_other": 0, "end": 17},
+      "company_owned": {"start": 4, "opened": 0, "reacquired": 2, "closed": 0, "sold": 0, "end": 6},
+      "transfers": 2
+    },
+    "projected_2025": {
+      "franchised_new": 5,
+      "company_new": 0,
+      "signed_not_opened": 0
+    },
+    "states_with_franchised_outlets_2024": ["AR", "CO", "IA/NE/ND/SD", "IL", "KS", "MN", "MO", "NC", "TN", "TX", "UT", "WI"],
+    "states_with_company_outlets_2024": ["AL", "FL", "NV", "OK", "TX"]
+  },
+  "exhibit_structure": {
+    "total_exhibits": 10,
+    "exhibits_with_sub_items": [
+      {"letter": "H", "sub_count": 6, "sub_items": ["H-1 General Release", "H-2 System Protection Agreement", "H-3 Confidentiality Agreement", "H-4 Sample Assignment Approval", "H-5 Lease Addendum", "H-6 ACH Authorization"]}
+    ]
+  },
+  "item21_structural_facts": {
+    "entity_type": "S-corporation",
+    "auditor": "Morse & Co.",
+    "auditor_location": "Tulsa, Oklahoma",
+    "opinion_type": "unqualified",
+    "going_concern": false,
+    "fiscal_year_end": "December 31",
+    "years_audited": ["2024", "2023", "2022"],
+    "financial_statement_pages_type": "scanned_images",
+    "rendering_method": "pdftoppm_300dpi",
+    "notes_count": 5
+  },
+  "item1_structural_facts": {
+    "entity_type": "Oklahoma corporation",
+    "formed": "2001-10-15",
+    "franchising_since": "2002-01",
+    "operates_outlets": false,
+    "affiliates_count": 1,
+    "affiliate_operates_outlets": true,
+    "affiliate_outlet_count": 6,
+    "predecessors": 0,
+    "parents": 0,
+    "principals_count": 2
+  },
+  "item6_fee_attributes": {
+    "total_fee_types": 19,
+    "has_royalty_minimum": true,
+    "royalty_minimum_amount": 800,
+    "royalty_minimum_period": "monthly",
+    "royalty_minimum_starts": "month 13",
+    "has_advertising_fund": false,
+    "has_technology_fee": true,
+    "technology_fee_amount": 100,
+    "technology_fee_period": "monthly",
+    "has_cpi_adjustment": true,
+    "cpi_threshold_pct": 5,
+    "cpi_max_adjustments_per_year": 1,
+    "cpi_notice_days": 60,
+    "payment_method": "EFT/ACH",
+    "transfer_fee": 2900,
+    "renewal_fee": 2900
+  }
+}

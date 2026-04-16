@@ -1,0 +1,269 @@
+{
+  "extraction_date": "2026-04-14",
+  "pipeline_version": "automation_v1",
+  "filing_id": "637909-2025",
+  "brand": "Delah Coffee",
+  "franchisor_legal_name": "Delah Coffee Franchising, LLC",
+  "franchisor_state_of_formation": "California",
+  "franchisor_entity_type": "LLC",
+  "franchisor_formation_date": "2024-10-21",
+  "franchisor_address": "7075 Commerce Circle, Pleasanton, California 94588",
+  "franchisor_phone": "510-688-3333",
+  "franchisor_email": "franchise@delahcoffee.com",
+  "franchisor_website": "www.delahcoffee.com",
+  "issuance_date": "2025-03-11",
+  "state_filed": "WI",
+  "fiscal_year_end": "December 31",
+  "began_franchising": "2025-03-11",
+  "franchise_description": "Coffee shop featuring traditional Yemeni coffee, teas, cakes, and other menu items. On-premises dining, carryout, catering, and delivery.",
+  "shop_size_sqft": {"low": 1900, "high": 2500, "source_item": 7, "source_pages": [16]},
+  "principals": [
+    {"name": "Majed Jahamee", "title": "CEO", "since": "2024-10-21", "source_item": 2, "source_pages": [10]},
+    {"name": "Omar Jahamee", "title": "District Manager and Franchisee Trainer", "since": "2024-10-21", "source_item": 2, "source_pages": [10]}
+  ],
+  "affiliates": [
+    {"name": "Delah Coffee IP, LLC", "role": "Trademark owner", "formation_date": "2024-10-21", "source_item": 1, "source_pages": [9]},
+    {"name": "Delah Wholesale Inc.", "role": "Supplier (coffees, teas, cups, bags, sleeves, ingredients)", "formation_date": "2024-04-26", "source_item": 1, "source_pages": [9]},
+    {"name": "Adenii Imports Inc.", "role": "Supplier (evaporated milk)", "formation_date": "2024-08-15", "source_item": 1, "source_pages": [9]},
+    {"name": "Delah Coffee Inc.", "role": "Operates SF#1 and Oakland shops", "formation_date": "2021-08-19", "source_item": 1, "source_pages": [9]},
+    {"name": "Delah Imports Inc.", "role": "Operates SF#2 shop", "formation_date": "2024-02-20", "source_item": 1, "source_pages": [10]}
+  ],
+  "litigation": {"disclosed": false, "source_item": 3, "source_pages": [11]},
+  "bankruptcy": {"disclosed": false, "source_item": 4, "source_pages": [11]},
+  "initial_franchise_fee": {
+    "amount": 35000,
+    "refundable": false,
+    "source_item": 5,
+    "source_pages": [11],
+    "confidence": "high"
+  },
+  "development_area_fee": {
+    "amount_per_additional_shop": 30000,
+    "min_shops": 3,
+    "max_shops": 5,
+    "source_item": 5,
+    "source_pages": [11],
+    "confidence": "high"
+  },
+  "opening_inventory_from_franchisor": {"low": 7000, "high": 14000, "source_item": 5, "source_pages": [11]},
+  "royalty": {
+    "rate": "4.5%",
+    "basis": "Gross Sales",
+    "frequency": "weekly",
+    "payment_method": "ACH auto-debit",
+    "source_item": 6,
+    "source_pages": [12],
+    "confidence": "high"
+  },
+  "brand_development_fund": {
+    "rate": "up to 2%",
+    "basis": "Gross Sales",
+    "currently_assessed": false,
+    "source_item": 6,
+    "source_pages": [12, 15],
+    "confidence": "high"
+  },
+  "local_marketing": {
+    "rate": "1%",
+    "basis": "Gross Sales",
+    "frequency": "monthly",
+    "source_item": 6,
+    "source_pages": [12],
+    "confidence": "high"
+  },
+  "technology_fee": {
+    "amount": "up to $500/month",
+    "currently_assessed": false,
+    "source_item": 6,
+    "source_pages": [12],
+    "confidence": "high"
+  },
+  "transfer_fee": {"amount": 10000, "source_item": 6, "source_pages": [14]},
+  "renewal_fee": {"amount": 5000, "source_item": 6, "source_pages": [14]},
+  "interest_rate": {"rate": "18%", "note": "CA max 10% per state addendum", "source_item": 6, "source_pages": [12]},
+  "initial_investment_single_unit": {
+    "low": 282300,
+    "high": 424000,
+    "source_item": 7,
+    "source_pages": [15, 16],
+    "confidence": "high"
+  },
+  "initial_investment_multi_unit": {
+    "low": 342300,
+    "high": 544400,
+    "note": "Cover page states $544,000; Table B shows $544,400",
+    "source_item": 7,
+    "source_pages": [18],
+    "confidence": "medium"
+  },
+  "source_restricted_purchases": {
+    "establishment_pct": "approximately 80%",
+    "ongoing_pct": "approximately 75%",
+    "source_item": 8,
+    "source_pages": [19],
+    "confidence": "high"
+  },
+  "financing_offered": false,
+  "term_years": {
+    "initial": 10,
+    "renewal": 10,
+    "renewal_count": 1,
+    "source_item": 17,
+    "source_pages": [37],
+    "confidence": "high"
+  },
+  "renewal_conditions": {
+    "notice_days": 180,
+    "general_release_required": true,
+    "sign_then_current_fa": true,
+    "may_be_materially_different": true,
+    "remodel_required": true,
+    "source_item": 17,
+    "source_pages": [37],
+    "confidence": "high"
+  },
+  "noncompete_during_term": {
+    "scope": "No competitive business",
+    "source_item": 17,
+    "source_pages": [40],
+    "confidence": "high"
+  },
+  "noncompete_post_term": {
+    "duration_months": 24,
+    "geographic_scope": "Designated Territory + 25-mile radius + 10-mile radius of any other shop",
+    "tolled_during_noncompliance": true,
+    "source_item": 15,
+    "source_pages": [36],
+    "confidence": "high"
+  },
+  "personal_guaranty": {
+    "required": true,
+    "spousal_guaranty": true,
+    "scope": "All obligations under FA",
+    "source_item": 15,
+    "source_pages": [36],
+    "confidence": "high"
+  },
+  "territory": {
+    "exclusive": false,
+    "type": "Designated Territory",
+    "size": "Smaller of 5-mile radius or 30,000 population",
+    "reserved_rights_extensive": true,
+    "captive_market_carveout": true,
+    "alternative_channels_carveout": true,
+    "source_item": 12,
+    "source_pages": [31, 32, 33],
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "method": "Non-binding mediation then binding arbitration",
+    "venue": "Alameda County, California",
+    "governing_law": "California",
+    "waiver_of_jury_trial": true,
+    "waiver_of_punitive_damages": true,
+    "no_class_action": true,
+    "source_item": 17,
+    "source_pages": [41],
+    "confidence": "high"
+  },
+  "trademarks": {
+    "federally_registered": false,
+    "applications_pending": true,
+    "serial_numbers": ["97524534", "97524668"],
+    "application_date": "2022-07-28",
+    "opposition_pending": true,
+    "opposition_details": "Notice of Opposition filed Oct 19, 2023 by 'Dellah Coffee & Brunch House' (Serial No. 97553214); Answers filed Nov 24, 2023",
+    "owned_by": "Delah Coffee IP, LLC",
+    "license_term_years": 20,
+    "source_item": 13,
+    "source_pages": [33, 34],
+    "confidence": "high"
+  },
+  "training": {
+    "total_hours": 80,
+    "classroom_hours": 7,
+    "on_the_job_hours": 73,
+    "duration": "approximately 2 weeks",
+    "location": "Pleasanton and San Francisco, CA",
+    "trainer": "Omar Jahamee",
+    "no_additional_fee_for_owner_plus_one": true,
+    "additional_trainee_fee": "$300/person/day",
+    "source_item": 11,
+    "source_pages": [30],
+    "confidence": "high"
+  },
+  "time_to_open": {
+    "estimate_months": {"low": 6, "high": 9},
+    "deadline_months": 10,
+    "site_selection_deadline_days": 120,
+    "source_item": 11,
+    "source_pages": [26],
+    "confidence": "high"
+  },
+  "item19_fpr": {
+    "fpr_provided": true,
+    "basis": "Company-owned outlets only",
+    "outlet_count_in_data": 3,
+    "total_outlets": 4,
+    "excluded_outlets": ["SF#2 Sansome (new in 2024)"],
+    "gross_sales_range": {"low": 557339, "high": 1140063},
+    "dgp_after_fees_pct_range": {"low": "20.57%", "high": "22.74%"},
+    "substantiation_available": true,
+    "not_gaap": true,
+    "not_audited": true,
+    "source_item": 19,
+    "source_pages": [45, 46, 47, 48, 49, 50],
+    "confidence": "high"
+  },
+  "item20_outlets": {
+    "franchised_end_2024": 0,
+    "company_owned_end_2024": 4,
+    "total_end_2024": 4,
+    "fa_signed_not_open": 2,
+    "projected_new_franchised": 9,
+    "no_confidentiality_clauses": true,
+    "gag_clause": false,
+    "source_item": 20,
+    "source_pages": [51, 52, 53],
+    "confidence": "high"
+  },
+  "item21_financial_statements": {
+    "auditor": "Metwally CPA PLLC",
+    "auditor_location": "Bedford, Texas",
+    "opinion_type": "unqualified",
+    "statement_date": "2025-01-02",
+    "audit_report_date": "2025-01-13",
+    "balance_sheet_only": true,
+    "income_statement": false,
+    "cash_flow_statement": false,
+    "going_concern": false,
+    "total_assets": 500,
+    "total_liabilities": 0,
+    "members_equity": 500,
+    "reason_limited_statements": "Company formed Oct 2024, less than 3 years franchising",
+    "source_item": 21,
+    "source_pages": [53, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73],
+    "confidence": "high"
+  },
+  "special_risks": [
+    {"risk": "Out-of-state dispute resolution (California)", "source_pages": [4]},
+    {"risk": "Spousal liability — spouse guarantees all financial obligations", "source_pages": [4]},
+    {"risk": "Short operating history — early stage development", "source_pages": [4]},
+    {"risk": "Financial support — franchisor's financial condition calls into question ability to provide services", "source_pages": [4]},
+    {"risk": "Mandatory minimum payments — royalty/ad fund regardless of sales", "source_pages": [4]},
+    {"risk": "Unregistered trademark — primary trademark not federally registered", "source_pages": [4]}
+  ],
+  "insurance_requirements": {
+    "property": "100% of property value, special form, $5,000 max deductible",
+    "cgl": "$1M per occurrence / $2M aggregate",
+    "workers_comp": "Statutory limits / $1M employer liability",
+    "auto": "$1M combined single limit",
+    "business_interruption": "12 months net income + continuing expenses + royalty",
+    "umbrella": "$1M",
+    "cyber": "$1M",
+    "epl": "$2M with $100K wage/hour sublimit",
+    "source_item": 8,
+    "source_pages": [21, 22],
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "depth_pass": "financial_notes",
+  "entity": "Hyatt Hotels Corporation",
+  "fiscal_year": 2024,
+  "source_pages_pdf": [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 115, 120, 130, 140, 150, 160],
+  "auditor": "Deloitte & Touche LLP",
+  "auditor_since": 2003,
+  "opinion": "Unqualified",
+  "opinion_date": "2025-02-13",
+  "critical_audit_matters": [
+    {
+      "matter": "Deferred Revenue Related to Loyalty Program",
+      "amount_millions": 1333,
+      "description": "Actuarially determined based on anticipated timing of future point redemptions including breakage estimate for points that will not be redeemed. Changes in breakage assumptions could materially change the liability.",
+      "audit_response": "Tested controls, tested underlying data (points earned/redeemed), developed independent actuarial estimates."
+    },
+    {
+      "matter": "Goodwill Impairment",
+      "amount_millions": 110,
+      "reporting_unit": "Management and franchising segment",
+      "reporting_unit_goodwill": 1116,
+      "total_goodwill": 2541,
+      "description": "Carrying value of reporting unit exceeded fair value. Weighted methodology using discounted future cash flow and guideline public companies method.",
+      "audit_response": "Tested controls, evaluated projected future cash flows vs historical results and analyst reports, involved fair value specialists for discount/capitalization rates."
+    }
+  ],
+  "accounting_policies": {
+    "revenue_recognition": "Performance obligations satisfied over time using output method based on observable outputs. Hotel revenues and operating profits indicate value derived by third-party owners and franchisees. Royalty fees treated as sales-based royalties.",
+    "depreciation_amortization": {
+      "method": "Not explicitly stated in excerpt; D&A was $333M (2024), $397M (2023), $426M (2022) — declining as asset-light strategy reduces property base",
+      "property_equipment_net_2024": 1689,
+      "property_equipment_net_2023": 2340
+    },
+    "lease_accounting": {
+      "policy": "Primarily operating leases for land, buildings, office space, equipment. ROU assets assessed for impairment quarterly.",
+      "rou_assets_2024": 328,
+      "rou_assets_2023": 369,
+      "current_lease_liabilities_2024": 33,
+      "long_term_lease_liabilities_2024": 245,
+      "extension_options": "1-25 years; included when reasonably certain to exercise",
+      "ibr_basis": "Estimated using currency risk, credit risk, recent debt issuances, comparable instruments"
+    },
+    "impairment_policy": {
+      "goodwill": "Evaluated annually in Q4. $110M impairment in 2024 in management and franchising reporting unit.",
+      "asset_impairments_total_2024": 213,
+      "asset_impairments_total_2023": 30,
+      "asset_impairments_total_2022": 38
+    },
+    "loyalty_program": {
+      "name": "World of Hyatt",
+      "deferred_revenue_2024": 1333,
+      "description": "Funds collected deposited in segregated accounts, invested in fixed income securities. Annual independent audit. Assessment currently 4.5% of eligible revenue.",
+      "change_in_deferred_loyalty_2024": 203,
+      "change_in_deferred_loyalty_2023": 202
+    }
+  },
+  "income_tax": {
+    "provision_2024": 267,
+    "provision_2023": 90,
+    "benefit_2022": -92,
+    "deferred_tax_assets_2024": 466,
+    "deferred_tax_assets_2023": 358,
+    "unrecognized_tax_benefits_2024": 366,
+    "unrecognized_tax_benefits_2023": 301,
+    "unrecognized_tax_benefits_2022": 253,
+    "impact_on_effective_rate_if_recognized": 137,
+    "cash_paid_for_income_taxes_2024": 160
+  },
+  "debt": {
+    "current_maturities_2024": 456,
+    "long_term_debt_2024": 3326,
+    "total_debt_2024": 3782,
+    "total_debt_2023": 3056,
+    "new_debt_issued_2024": 1424,
+    "repayments_2024": 750,
+    "cash_paid_for_interest_2024": 167
+  },
+  "subsequent_events": {
+    "noted": "Form 8-K filed March 26, 2025 included as Exhibit A-2. Specific subsequent events not detailed in available excerpt."
+  },
+  "related_party_transactions": {
+    "franchisor_entity_balance_sheet": {
+      "total_assets": 159290846,
+      "member_equity": 148528217,
+      "total_liabilities": 10762629,
+      "franchise_agreement_assets": 144822971
+    },
+    "key_affiliate_services": "Hyatt Corporation provides most Mandatory and Non-Mandatory Services. Rosemont provides optional purchasing. Revenue from franchisee services (excl Commercial Services Fee): $2,577,599. Supplier rebates: $336,271 (offset against System Services Costs). Franchisee loyalty surplus: $7,393,115."
+  },
+  "shareholder_returns": {
+    "stock_repurchases_2024": 1190,
+    "stock_repurchases_2023": 453,
+    "stock_repurchases_2022": 369,
+    "dividends_per_share_2024": 0.15,
+    "dividends_paid_2024": 60,
+    "shares_outstanding_end_2024": {
+      "class_a": 42613090,
+      "class_b": 53531579
+    }
+  },
+  "organization": {
+    "total_hotels_worldwide": 1442,
+    "total_rooms_worldwide": 347301,
+    "us_hotels": 721,
+    "us_rooms": 159829,
+    "all_inclusive_resorts": 149,
+    "countries": 79,
+    "segment_realignment": "Realigned operating segments in 2024 to align with business strategy and leadership changes"
+  },
+  "acquisitions_and_dispositions": {
+    "acquisitions_net_2024": 609,
+    "acquisitions_net_2023": 175,
+    "real_estate_gains_2024": 1245,
+    "real_estate_gains_2023": 18,
+    "capital_expenditures_2024": 170,
+    "asset_light_strategy": "Significant real estate dispositions ($1.245B in gains) and declining property/equipment ($2.340B to $1.689B) indicate continued asset-light pivot."
+  }
+}

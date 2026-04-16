@@ -1,0 +1,54 @@
+{
+  "depth_pass": "4_state_addenda_promotion",
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota"],
+  "overrides": [
+    {"state": "California", "affected_family": "fee_deferral", "override_summary": "All initial fees deferred until pre-opening obligations completed and franchisee open for business", "why_it_matters": "Franchisee does not bear full financial risk until franchisor performs; protects against inadequate capitalization", "source_pages": [289, 291]},
+    {"state": "California", "affected_family": "noncompete", "override_summary": "Post-term noncompete may not be enforceable under CA law", "why_it_matters": "CA franchisees may be able to operate similar business after termination without restriction", "source_pages": [289]},
+    {"state": "California", "affected_family": "governing_law", "override_summary": "Louisiana governing law provision may not be enforceable under CA law", "why_it_matters": "CA courts may apply CA law instead of LA law to franchise disputes", "source_pages": [289]},
+    {"state": "California", "affected_family": "interest_rate", "override_summary": "Maximum interest rate 10% annually", "why_it_matters": "12% compounding rate in FA may be capped at 10% for CA franchisees", "source_pages": [289]},
+    {"state": "California", "affected_family": "anti_waiver", "override_summary": "No waiver of claims under state franchise law, including fraud in the inducement", "why_it_matters": "Integration/merger clause cannot bar franchisee from asserting state law claims", "source_pages": [289, 291]},
+    {"state": "California", "affected_family": "termination", "override_summary": "Bankruptcy termination provision may not be enforceable under federal bankruptcy law", "why_it_matters": "Bankruptcy filing alone may not trigger termination for CA franchisees", "source_pages": [289]},
+
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Illinois law governs the franchise agreement", "why_it_matters": "IL law supersedes LA law for IL franchisees — different legal standards apply", "source_pages": [295]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Venue designation outside Illinois is void per IL Franchise Disclosure Act Section 4", "why_it_matters": "IL franchisee can litigate in IL rather than traveling to LA", "source_pages": [295]},
+    {"state": "Illinois", "affected_family": "financial_condition", "override_summary": "Separately flags franchisor financial condition concern per Item 21", "why_it_matters": "IL regulator independently determined financial condition is a material risk", "source_pages": [295]},
+    {"state": "Illinois", "affected_family": "anti_waiver", "override_summary": "Any condition purporting to waive compliance with IL franchise law is void", "why_it_matters": "Broad anti-waiver protection for IL franchisees", "source_pages": [295]},
+
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General release on renewal/transfer does not apply to claims under MD Franchise Registration and Disclosure Law", "why_it_matters": "MD franchisees preserve MD franchise law claims even when signing release at renewal/transfer", "source_pages": [300]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Franchisee may sue in Maryland for MD franchise law claims", "why_it_matters": "MD franchisees can bring claims locally rather than in LA", "source_pages": [300]},
+    {"state": "Maryland", "affected_family": "damages", "override_summary": "Claims under MD law must be brought within 3 years of franchise grant", "why_it_matters": "3-year statute of limitations overrides 1-year contractual limit", "source_pages": [300]},
+    {"state": "Maryland", "affected_family": "anti_waiver", "override_summary": "Release, estoppel, or waiver provisions do not apply to MD franchise law liability", "why_it_matters": "MD franchise law protections cannot be waived in franchise documents", "source_pages": [300]},
+
+    {"state": "Minnesota", "affected_family": "notice_cure", "override_summary": "90 days termination notice with 60 days to cure; 180 days non-renewal notice", "why_it_matters": "MN franchisees get substantially longer cure period than 14-day contractual provision", "source_pages": [303]},
+    {"state": "Minnesota", "affected_family": "noncompete", "override_summary": "Franchisor must protect franchisee's right to use marks and indemnify against infringement claims", "why_it_matters": "MN creates affirmative franchisor obligation that does not exist in base FA", "source_pages": [303]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "No release relieves franchisor from MN franchise law liability", "why_it_matters": "MN franchisees preserve all MN franchise law claims", "source_pages": [303]},
+    {"state": "Minnesota", "affected_family": "damages", "override_summary": "Liquidated damages provision (Section 37 H.3) deleted entirely", "why_it_matters": "MN franchisees not liable for remaining-term Monthly Fees on early termination", "source_pages": [303]},
+
+    {"state": "New York", "affected_family": "general_release", "override_summary": "Rights under NY GBL Article 33 preserved through releases (GBL 687.4, 687.5 non-waiver)", "why_it_matters": "NY franchise law claims survive release at renewal/transfer", "source_pages": [305]},
+    {"state": "New York", "affected_family": "anti_waiver", "override_summary": "Injunction provisions modified to 'may seek' rather than automatic consent", "why_it_matters": "NY franchisees retain right to contest injunction applications", "source_pages": [305]},
+
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "ND law supersedes LA law where conflicting", "why_it_matters": "ND law governs franchise disputes for ND franchisees", "source_pages": [307]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "All venue designations outside ND deleted", "why_it_matters": "ND franchisees cannot be forced to litigate in LA", "source_pages": [307]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "General release not required on renewal", "why_it_matters": "ND franchisees renew without waiving past claims", "source_pages": [307]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Noncompetes generally considered unenforceable per ND Century Code Section 9-08-06", "why_it_matters": "ND franchisees may operate similar business after termination", "source_pages": [307]},
+    {"state": "North Dakota", "affected_family": "damages", "override_summary": "Liquidated damages, jury waiver, and punitive damages waiver all deleted; statute of limitations per ND law", "why_it_matters": "ND franchisees retain full damages rights, jury trial, and statutory limitation periods", "source_pages": [307, 308]},
+
+    {"state": "Michigan", "affected_family": "termination", "override_summary": "Good cause required for termination with 30-day cure period; fair compensation on non-renewal", "why_it_matters": "MI law provides substantial termination/non-renewal protections beyond base FA", "source_pages": [5, 6]},
+    {"state": "Michigan", "affected_family": "forum_selection", "override_summary": "Provision requiring arbitration/litigation outside MI is void", "why_it_matters": "MI franchisees cannot be forced out of state for dispute resolution", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "transfer", "override_summary": "Cannot refuse transfer except for good cause", "why_it_matters": "Franchisor consent to transfer must be based on reasonable criteria", "source_pages": [5, 6]}
+  ],
+  "summary_table": {
+    "override_families": {
+      "forum_selection": ["Illinois", "Maryland", "Michigan", "North Dakota"],
+      "governing_law": ["California", "Illinois", "North Dakota"],
+      "noncompete_limited": ["California", "North Dakota"],
+      "general_release_excluded": ["Maryland", "Minnesota", "New York", "North Dakota"],
+      "termination_protections": ["California", "Michigan", "Minnesota"],
+      "damages_limited": ["Minnesota", "North Dakota"],
+      "interest_rate_cap": ["California"],
+      "fee_deferral": ["California"],
+      "anti_waiver": ["California", "Illinois", "Maryland", "Minnesota", "New York"],
+      "financial_condition_flag": ["Illinois"]
+    }
+  }
+}

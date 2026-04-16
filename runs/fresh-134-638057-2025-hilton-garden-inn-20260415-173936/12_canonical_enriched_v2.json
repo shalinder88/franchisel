@@ -1,0 +1,101 @@
+{
+  "enrichment_version": "v2",
+  "extraction_date": "2026-04-15",
+  "filing_id": "638057-2025",
+  "brand": "Hilton Garden Inn",
+  "item21_financial_structure": {
+    "entity_purpose": "Franchise royalty pass-through vehicle",
+    "parent_relationship": "Wholly owned subsidiary of Hilton Domestic Operating Company Inc.",
+    "tax_treatment": "Disregarded entity for US income tax purposes; taxable income included in Hilton Worldwide consolidated return",
+    "cash_management": "Hilton centralized cash management system; entity has no independent cash management",
+    "intercompany_balances": {
+      "other_receivables_from_affiliates_2024": 703943000,
+      "due_from_affiliates_equity_2024": -261959000,
+      "current_intercompany_payables_2024": 89994000,
+      "franchise_deposits_held_by_affiliates_2024": 18498000
+    },
+    "distributions_pattern": {
+      "2024": 1500000000,
+      "2023": 1400000000,
+      "2022": 1550000000,
+      "note": "Distributions consistently exceed or approach net income; retained earnings declining"
+    },
+    "debt_guarantees": {
+      "guaranteed_debt": "Certain Hilton parent debt maturing 2025-2033",
+      "collateral_pledged": "All assets and franchise contracts",
+      "guarantee_amount": "Not quantified in financial statements"
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "total_assets_2024": 1269897000,
+      "total_liabilities_2024": 692892000,
+      "members_equity_2024": 577005000,
+      "cash_2024": 317000,
+      "accounts_receivable_net_2024": 135970000,
+      "allowance_credit_losses_ar_2024": 10411000,
+      "franchise_contracts_net_2024": 392748000,
+      "deferred_revenues_total_2024": 558880000,
+      "contributed_capital_2024": 310000000,
+      "retained_earnings_2024": 528936000
+    },
+    "income_statement": {
+      "total_revenue_2024": 1502069000,
+      "franchise_royalty_fees_2024": 1434453000,
+      "franchise_sales_coo_fees_2024": 49340000,
+      "termination_fees_2024": 18276000,
+      "total_expenses_2024": 11353000,
+      "operating_income_2024": 1490716000,
+      "net_income_2024": 1487571000,
+      "operating_margin_2024": 0.992
+    },
+    "cash_flow": {
+      "operating_cash_flow_2024": 1516760000,
+      "investing_cash_flow_2024": -80050000,
+      "financing_cash_flow_2024": -1441744000,
+      "distributions_2024": -1500000000,
+      "graduate_acquisition_2024": -85304000
+    },
+    "key_notes": {
+      "note1_organization": "DE LLC, formed Sep 2007, began Oct 2007. Wholly owned by Hilton Domestic Operating Company Inc.",
+      "note2_revenue_recognition": "IP license recognized over time as series of distinct services. Royalty fees recognized as services provided. Sales/COO fees recognized over contract term. Termination fees recognized when received.",
+      "note3_acquisition": "Graduate brand franchise contracts acquired May 2024 for ~$85M as asset acquisition. 15-year useful life.",
+      "note4_franchise_contracts": "Net carrying value $392.7M (2024). Contract acquisition costs $306.2M; Graduate intangibles $82.0M; costs to obtain $4.5M. Amortized straight-line over 10-20 year terms.",
+      "note5_fair_value": "Fair values of financial assets/liabilities estimated equal to carrying values.",
+      "note6_income_taxes": "Disregarded entity; no US income tax provision. Foreign tax expense $412K (2024) — US territory franchise licensing taxes.",
+      "note7_commitments": "Unconditional and irrevocable guarantee of certain Hilton parent debt (maturing 2025-2033). All assets pledged as collateral.",
+      "note8_related_party": "Settlements with Hilton affiliates: $1.5B (2024). Operator agreement with affiliate — no compensation paid. Short-term note payable for Graduate acquisition settled Feb 2024.",
+      "note9_subsequent_events": "Evaluated through March 18, 2025 (note text says 2024 — apparent typo). No material subsequent events."
+    }
+  },
+  "item6_fee_detail": {
+    "base_fees": {
+      "royalty": {"rate": 0.055, "base": "GRR", "frequency": "monthly"},
+      "program": {"rate": 0.04, "base": "GRR", "frequency": "monthly", "max_increase": 0.01}
+    },
+    "loyalty_fees": {
+      "hilton_honors": {"rate": 0.036, "base": "eligible guest folio", "mandatory": true},
+      "hilton_advance": {"rate": 0.0135, "base": "Digital Direct Revenue", "cap": 30, "mandatory": true}
+    },
+    "technology_fees": {
+      "onq_connectivity": {"low": 400, "high": 600, "frequency": "monthly"},
+      "hw_sw_maintenance": {"low": 1143, "high": 2916, "frequency": "monthly"},
+      "connected_room": {"low": 567, "high": 864, "frequency": "monthly"},
+      "delphi": {"amount": 858, "unit": "per user per year"},
+      "onq_email": {"amount": 7.92, "unit": "per user per month"}
+    },
+    "quality_fees": {
+      "non_compliance": {"low": 65, "high": 145, "unit": "per room", "cap": 50000, "cap_period": "6 months"},
+      "re_evaluation": {"max": 4500},
+      "special_audit": {"amount": 5500},
+      "stay_score_failure": {"max_per_room": 300, "alt_rate": 0.005, "frequency": "assessed 2x/year minimum"},
+      "service_quality_improvement": {"low": 20000, "high": 50000, "period": "6 months"}
+    },
+    "liquidated_damages": {
+      "pre_opening": "System Average Monthly Royalty × 60",
+      "post_opening_first_2yr": "Greater of Hotel's or System's Average Monthly Royalty × 60",
+      "post_opening_after_2yr": "Hotel's Average Monthly Royalty × 60",
+      "last_60_months": "Hotel's Average Monthly Royalty × remaining months"
+    }
+  }
+}

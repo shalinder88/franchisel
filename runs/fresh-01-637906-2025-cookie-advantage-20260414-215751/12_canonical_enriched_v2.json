@@ -1,0 +1,118 @@
+{
+  "extraction_date": "2026-04-14",
+  "fdd_id": "637906-2025",
+  "brand": "Cookie Advantage",
+  "enrichment_version": "v2",
+  "item21_financial_structure": {
+    "balance_sheet_structure": {
+      "current_assets": ["Cash and cash equivalents", "Franchise receivables"],
+      "noncurrent_assets": ["Reacquired franchise rights, net"],
+      "current_liabilities": ["Advances from affiliate"],
+      "noncurrent_liabilities": [],
+      "equity_components": ["Common stock", "Additional paid-in capital", "Retained earnings"],
+      "has_debt": false,
+      "has_lease_liabilities": false,
+      "has_deferred_revenue": false
+    },
+    "income_statement_structure": {
+      "revenue_lines": ["Franchise royalties", "Renewal fees", "Franchise transfer fees"],
+      "expense_lines": ["Administrative fee", "General and administrative"],
+      "has_depreciation": false,
+      "has_interest_expense": false,
+      "has_income_tax": false,
+      "tax_status": "S-corporation — no income tax provision"
+    },
+    "cash_flow_structure": {
+      "operating_adjustments": ["Amortization", "Change in franchise receivables"],
+      "investing_activities": [],
+      "financing_activities": ["Advances from affiliate", "Stockholder distributions"],
+      "has_capex": false,
+      "has_debt_activity": false
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "2024": {
+        "cash": 49330, "franchise_receivables": 78867, "total_current_assets": 128197,
+        "reacquired_franchise_rights_net": 19999, "total_assets": 148196,
+        "advances_from_affiliate": 69472, "total_liabilities": 69472,
+        "common_stock": 100, "apic": 900, "retained_earnings": 77724,
+        "total_equity": 78724
+      },
+      "2023": {
+        "cash": 53263, "franchise_receivables": 66883, "total_current_assets": 120146,
+        "reacquired_franchise_rights_net": 21666, "total_assets": 141812,
+        "advances_from_affiliate": 73718, "total_liabilities": 73718,
+        "common_stock": 100, "apic": 900, "retained_earnings": 67094,
+        "total_equity": 68094
+      }
+    },
+    "income_statement": {
+      "2024": {"franchise_royalties": 537435, "renewal_fees": 5800, "transfer_fees": 5800, "total_revenue": 549035, "admin_fee": 488555, "ga_expense": 36850, "total_expense": 525405, "net_income": 23630},
+      "2023": {"franchise_royalties": 510163, "renewal_fees": 11600, "transfer_fees": 0, "total_revenue": 521763, "admin_fee": 459151, "ga_expense": 31593, "total_expense": 490744, "net_income": 31019},
+      "2022": {"franchise_royalties": 449109, "renewal_fees": 8850, "transfer_fees": 0, "total_revenue": 457959, "admin_fee": 420000, "ga_expense": 25002, "total_expense": 445002, "net_income": 12957}
+    },
+    "cash_flows": {
+      "2024": {"operating": 13313, "investing": 0, "financing": -17246, "net_change": -3933, "cash_begin": 53263, "cash_end": 49330},
+      "2023": {"operating": 40120, "investing": 0, "financing": -32825, "net_change": 7295, "cash_begin": 45968, "cash_end": 53263},
+      "2022": {"operating": 10777, "investing": 0, "financing": 11130, "net_change": 21907, "cash_begin": 24061, "cash_end": 45968}
+    },
+    "stockholders_equity_detail": {
+      "2021_end": {"shares": 10000, "stock": 100, "apic": 900, "retained": 44118, "total": 45118},
+      "2022_end": {"shares": 10000, "stock": 100, "apic": 900, "retained": 56075, "total": 57075, "net_income": 12957, "distributions": -1000},
+      "2023_end": {"shares": 10000, "stock": 100, "apic": 900, "retained": 67094, "total": 68094, "net_income": 31019, "distributions": -20000},
+      "2024_end": {"shares": 10000, "stock": 100, "apic": 900, "retained": 77724, "total": 78724, "net_income": 23630, "distributions": -13000}
+    }
+  },
+  "item6_fee_detail": {
+    "fees": [
+      {"name": "Royalty", "type": "ongoing", "basis": "percentage_with_minimum", "rate_pct": 6, "minimum": 800, "minimum_period": "monthly", "minimum_starts_month": 13, "frequency": "monthly", "due_day": 15},
+      {"name": "Technology Fee", "type": "ongoing", "basis": "flat", "amount": 100, "frequency": "monthly", "adjustable": true},
+      {"name": "Transfer Fee", "type": "event", "basis": "flat", "amount": 2900, "deposit": 1000, "waiver": "entity/family transfers"},
+      {"name": "Renewal Fee", "type": "event", "basis": "flat", "amount": 2900},
+      {"name": "Unauthorized Advertising Fee", "type": "penalty", "basis": "flat", "amount": 500, "per": "occurrence"},
+      {"name": "Audit", "type": "event", "basis": "cost_plus", "estimate_low": 1000, "estimate_high": 15000, "interest_rate_monthly_pct": 1.5, "trigger": "understatement >2% or missing reports"},
+      {"name": "Additional Training", "type": "event", "basis": "daily_rate", "rate": 250, "plus_expenses": true},
+      {"name": "Late Payment Fee", "type": "penalty", "basis": "percentage", "rate_monthly_pct": 1.5, "cap": "max allowed by law"},
+      {"name": "Indemnification", "type": "event", "basis": "variable"},
+      {"name": "Professional Fees", "type": "event", "basis": "variable"},
+      {"name": "NSF/Returned Check", "type": "penalty", "basis": "flat", "amount": 100, "per": "occurrence", "state_override_mn": 30},
+      {"name": "Conference Fee", "type": "event", "basis": "flat", "amount": "then-current (not currently charged)", "mandatory_attendance": true},
+      {"name": "Manual Replacement", "type": "event", "basis": "flat", "amount": 500},
+      {"name": "Supplier/Product Evaluation", "type": "event", "basis": "cost_plus", "estimate_low": 100, "estimate_high": 500},
+      {"name": "Customer Issue Resolution", "type": "event", "basis": "variable"},
+      {"name": "Late Report Fee", "type": "penalty", "basis": "flat_plus_interest", "monthly_fee": 100, "interest_rate_monthly_pct": 1.5},
+      {"name": "Management Fee", "type": "event", "basis": "daily_rate", "rate": 500, "plus_costs": true, "trigger": "breach, absence, termination, death, disability"},
+      {"name": "Broker Fees", "type": "event", "basis": "actual_cost"},
+      {"name": "Payment Service Fee", "type": "event", "basis": "percentage", "max_pct": 4, "trigger": "credit card payment"}
+    ]
+  },
+  "related_party_transactions": {
+    "affiliate": "KDKC, Inc.",
+    "relationship": "Common ownership — Duane and Kim Carns own both entities",
+    "transactions": [
+      {
+        "type": "Administrative/Management fee",
+        "direction": "CAI pays KDKC",
+        "2024": 488555, "2023": 459151, "2022": 420000,
+        "description": "Office and production facilities, all business and day-to-day operations performed by KDKC employees",
+        "pct_of_revenue_2024": 89,
+        "source_pages": [53, 59]
+      },
+      {
+        "type": "Advances from affiliate",
+        "direction": "KDKC advances to CAI",
+        "balance_2024": 69472, "balance_2023": 73718,
+        "terms": "Unsecured, non-interest bearing, no specific repayment terms",
+        "source_pages": [52, 59]
+      },
+      {
+        "type": "Packaging and software sales to franchisees",
+        "direction": "KDKC sells to franchisees",
+        "2024_revenue": 177913.82,
+        "products": "Packaging supplies, shipping boxes, Cookie Advantage Business Software",
+        "source_pages": [19]
+      }
+    ]
+  }
+}

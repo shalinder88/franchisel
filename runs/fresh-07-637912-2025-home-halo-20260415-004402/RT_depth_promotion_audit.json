@@ -1,0 +1,57 @@
+{
+  "depth_pass": "promotion_audit",
+  "extraction_date": "2026-04-15",
+  "reader_report_reviewed": "02_reader_report.md",
+  "canonical_reviewed": "09_final_canonical.json",
+  "promoted_facts": [
+    {
+      "fact": "Franchise Agreement Article 5.D. explicitly caps Contact Center Fee at 3% of Gross Sales (not 5% as stated in Item 19 footnote)",
+      "source": "Reader report Section E / Franchise Agreement Article 5.D. (page 95)",
+      "promoted_to": "item6_ongoing_fees.contact_center_fa_cap",
+      "value": "3% per Article 5.D."
+    },
+    {
+      "fact": "Competitive Business definition includes home healthcare (skilled care, nursing, therapy) in addition to non-medical care — noncompete scope is broader than FDD summary suggests",
+      "source": "Reader report Section E / Franchise Agreement definitions (page 75)",
+      "promoted_to": "noncompete.competitive_business_scope",
+      "value": "Includes non-medical at-home care AND home healthcare/skilled nursing/therapy"
+    },
+    {
+      "fact": "Jury trial waiver and class action waiver both present in Franchise Agreement",
+      "source": "Franchise Agreement Article 18.G. (pages 133–135)",
+      "promoted_to": "dispute_resolution.jury_waiver and dispute_resolution.class_action_waiver",
+      "value": true
+    },
+    {
+      "fact": "Limitations period for claims: 1 year from discovery or 2 years from act/omission, whichever is earlier (except franchisor payment, restrictive covenant, and IP claims)",
+      "source": "Franchise Agreement Article 18.I. (page 135)",
+      "promoted_to": "dispute_resolution.limitations_period",
+      "value": "1 year from discovery or 2 years from act/omission"
+    },
+    {
+      "fact": "Three-or-more cured defaults triggers non-curable termination (ratchet provision)",
+      "source": "Reader report Section E / Franchise Agreement Article 16.A.(1) (page 124)",
+      "promoted_to": "item17_renewal_termination.ratchet_provision",
+      "value": "3+ curable defaults even if cured = non-curable default"
+    },
+    {
+      "fact": "Franchisor has direct live access to all Business Management System Data at all times",
+      "source": "Franchise Agreement definitions/Article 3.F. (pages 75, 87)",
+      "promoted_to": "item11_training.data_access",
+      "value": "Franchisor has direct live access and storage-based access to all BMS data"
+    },
+    {
+      "fact": "Income statement shows $1,414 in Amortization & Depreciation but balance sheet shows $0 fixed assets and $0 accumulated depreciation — minor inconsistency in financial statements",
+      "source": "Exhibit D pages 61–62",
+      "promoted_to": "item21_financial_statements.observations",
+      "value": "Added as financial observation"
+    },
+    {
+      "fact": "No related party transaction note in financial statements despite 100% of revenue from affiliate",
+      "source": "Exhibit D pages 65–67",
+      "promoted_to": "item21_financial_statements.observations",
+      "value": "Added as potential disclosure gap"
+    }
+  ],
+  "total_promoted": 8
+}

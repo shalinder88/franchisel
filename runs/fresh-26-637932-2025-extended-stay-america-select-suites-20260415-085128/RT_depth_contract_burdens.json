@@ -1,0 +1,157 @@
+{
+  "depth_pass": "contract_burdens",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637932-2025",
+  "source_pages_pdf": [67, 129],
+  "agreements_reviewed": ["Franchise Agreement (Exhibit A)", "Hotel Technology Agreement (Exhibit B)", "Franchisee Guaranty (Exhibit I)"],
+  "burdens": {
+    "grant_and_term": {
+      "grant": "Non-exclusive right to use System and operate one Hotel as Brand Hotel at approved Site",
+      "term": "20 years for new-build from Opening Date; conversion term at franchisor's discretion",
+      "renewal": "NONE — no right to renew or extend",
+      "hotel_technology_agreement": "Initial 3-year term, auto 1-year renewals, coterminous with FA",
+      "source_pages": [72, 73]
+    },
+    "fee_obligations": {
+      "initial_franchise_fee": "$50,000 (non-refundable)",
+      "royalty": "5.5% of GRR, due 15th of following month",
+      "system_services_fee": "4.5% of GRR, due 15th of following month",
+      "other_fees": "See Item 6 table — 37+ fee categories",
+      "interest_on_late_payments": "1.5%/month or maximum permitted by law",
+      "payment_method": "Electronic funds transfer/direct debit required",
+      "source_pages": [74, 75]
+    },
+    "site_selection_and_construction": {
+      "site_approval": "Franchisee selects, franchisor approves within 60 days (deemed disapproved if no response)",
+      "plans_and_designs": "Must be approved before construction/renovation begins",
+      "construction_commencement": "Must begin by date in Exhibit A",
+      "construction_completion": "Must complete by date in Exhibit A",
+      "extensions": "$5,000 per 90-day extension (rolling basis)",
+      "site_visits": "3 mandatory during construction ($6,000), 2 for IT ($2,000-$4,000)",
+      "pre_opening_inspection": "Final inspection required before opening authorization",
+      "opening_without_authorization": "$5,000/day liquidated damages",
+      "source_pages": [75, 76, 77]
+    },
+    "training_obligations": {
+      "new_owner_orientation": "Mandatory for 1 principal within 6 months (new build) / 3 months (conversion)",
+      "gm_certification": "Mandatory before opening (new build) or within 60 days (conversion/transfer/new hire)",
+      "pre_opening_onsite": "Mandatory (waivable for experienced operators)",
+      "service_culture": "Mandatory for all associates within 90 days of hire",
+      "remedial_training": "If QA inspection fails ($4,000-$7,500)",
+      "human_trafficking": "Annual awareness training (self-provided), certification required",
+      "source_pages": [78, 79, 44, 45]
+    },
+    "operational_obligations": {
+      "management": "Either franchisee or approved Management Company must manage",
+      "general_manager": "Full-time, qualified GM required; must complete GM Certification",
+      "standards_compliance": "Must comply with Standards (124 pages), which may be unilaterally changed",
+      "reservation_service": "Must use designated Reservation Service exclusively; honor all confirmed reservations with priority",
+      "loyalty_programs": "Must participate in all required programs",
+      "pricing": "Franchisee sets own rates BUT franchisor may prohibit billing practices, require channel consistency, impose other pricing requirements",
+      "accounting": "May require specific administrative/bookkeeping/accounting/inventory procedures",
+      "reporting": "Periodic financial reports required",
+      "insurance": "Extensive coverage requirements (see Item 8)",
+      "no_dual_branding": "May not affiliate Hotel with another franchise system, reservation service, brand, or trademark",
+      "no_internet_marketing": "May not use internet or social media to advertise/market without franchisor consent",
+      "source_pages": [79, 80, 81, 82, 83]
+    },
+    "termination_triggers": {
+      "curable_defaults": {
+        "cure_period": "30 days (10 days for monetary defaults)",
+        "examples": "Most defaults including operational non-compliance, reporting failures"
+      },
+      "non_curable_immediate": [
+        "Bankruptcy/liquidation",
+        "Cease operating under Brand",
+        "Lose possession of Hotel",
+        "Contest ownership of Marks",
+        "Violate proprietary rights",
+        "Unauthorized use of Marks/Confidential Information",
+        "Felony conviction",
+        "False records submission",
+        "Adverse action against System",
+        "Hotel/construction threat to public safety",
+        "3 defaults in 12 months",
+        "2 similar defaults in 6 months",
+        "Breach insurance/indemnification/data privacy/safety provisions"
+      ],
+      "by_franchisee": "Only if Hotel damaged beyond coverage limits or per state law",
+      "source_pages": [97, 98, 99]
+    },
+    "transfer_restrictions": {
+      "all_transfers_require_approval": true,
+      "exceptions": "Certain non-control-change transfers require notice but not consent (Section 14.7)",
+      "conditions": [
+        "Satisfy all monetary obligations",
+        "Pay PIP fee",
+        "Transferee updates hotel to current Standards",
+        "General release by franchisee and owners",
+        "Transferee submits new application + pays then-current initial franchise fee as transfer fee",
+        "Transferee meets current ownership criteria",
+        "Transferee enters then-current FA (may have materially different terms)"
+      ],
+      "death_disability": "Must transfer within required timeframe; may terminate if not completed",
+      "source_pages": [93, 94, 95, 96]
+    },
+    "cross_default": {
+      "description": "Default under any agreement with franchisor or any affiliate constitutes a default that could affect territory protection and trigger termination",
+      "source_pages": [46, 97]
+    },
+    "noncompete": {
+      "during_term": "NONE",
+      "post_term": "NONE",
+      "source_pages": [56]
+    },
+    "guaranty": {
+      "scope": "Personal guaranty required if franchisee is an entity. Owners must guarantee. If Hotel owned by different entity, Hotel owner must sign guaranty.",
+      "spousal_liability": "Spouse must sign guaranty making them liable for all financial obligations (special risk #3)",
+      "unlimited": true,
+      "source_pages": [37, 4, 245]
+    },
+    "liquidated_damages": {
+      "pre_opening": "Rooms x $3,000",
+      "first_operating_year": "Average monthly royalty x 60",
+      "after_first_year_more_than_5_remaining": "5 x prior 12-month royalty",
+      "less_than_5_remaining": "Remaining days x average daily royalty",
+      "full_rates_used": "Even if temporary reduction was granted",
+      "casualty_condemnation": "Same formula applies + portion of insurance proceeds",
+      "source_pages": [100, 101]
+    },
+    "dispute_resolution": {
+      "arbitration": "Mandatory for most disputes (AAA, JAMS, or NAF)",
+      "exceptions": "Indemnification claims, injunctive/equitable relief, enforcement of arbitral awards",
+      "venue": "Charlotte, NC (franchisor headquarters)",
+      "governing_law": "North Carolina",
+      "fallback": "If NC law makes provision unenforceable and Hotel outside NC, law of Hotel's state applies",
+      "arbitrator_powers": "Final and binding; may not amend FA; may award damages, specific performance, legal fees; may NOT award punitive/consequential/exemplary damages",
+      "source_pages": [104, 105]
+    },
+    "waivers": {
+      "punitive_damages": "Waived to fullest extent permitted by law — limited to actual damages",
+      "jury_trial": "Irrevocably waived",
+      "class_actions": "Waived — neither party may litigate/arbitrate as representative of class",
+      "source_pages": [105]
+    },
+    "indemnification": {
+      "scope": "Broad — franchisee must indemnify franchisor for all liabilities arising from: data loss/compromise, failure to comply with data protection/privacy, any franchisee actions, defaults, claims against franchisee or affiliates, any damages related to Hotel/Site/FA",
+      "attorneys_fees": "Included",
+      "survival": "Survives termination/expiration",
+      "source_pages": [101, 102]
+    },
+    "force_majeure": {
+      "provision": "Section 20.4 of FA",
+      "description": "Standard force majeure clause",
+      "source_pages": [107]
+    },
+    "distinctive_clauses": {
+      "business_judgment_deference": "Section 18.3 — where franchisor exercises business judgment, no mediator/judge/trier of fact shall substitute their judgment for franchisor's. Very strong deference clause.",
+      "no_third_party_beneficiary": "Section 20.5 — no third parties have rights under the FA",
+      "right_of_first_offer": "Exhibit F (optional, only for strategic markets) — franchisor's right of first offer, not refusal",
+      "tenants_in_common": "Section 5.22 — provisions for TIC ownership structures",
+      "corrupt_practices": "Section 20.8 — representations re Anti-Corruption Laws, FCPA, UK Bribery Act",
+      "sanctioned_persons": "Section 20.9 — representations re OFAC compliance, anti-terrorism",
+      "suspension_interim_remedies": "Section 15.3 — franchisor may suspend rather than terminate, imposing interim remedies",
+      "source_pages": [103, 106, 107, 108]
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "depth_pass": "4_state_addenda",
+  "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota"],
+  "general_no_waiver_states": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "financial_disclosure",
+      "override_summary": "Requires unaudited balance sheet of franchisor entity (not just parent consolidated)",
+      "why_it_matters": "Provides transparency into actual franchisor entity's financial position, which is a $50.5M licensing vehicle backed by parent guarantee",
+      "source_pages": [363, 364, 365]
+    },
+    {
+      "state": "Hawaii",
+      "affected_family": "general_disclosure",
+      "override_summary": "Standard Hawaii franchise investment law filing notice; 7-day delivery requirement; no-waiver provision",
+      "why_it_matters": "Ensures franchisee receives FDD at least 7 days before signing any agreement or making payment",
+      "source_pages": [366]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "Any release required as condition of renewal/transfer does not apply to claims under Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "Preserves franchisee's right to bring claims under MD law even after signing a release",
+      "source_pages": [366, 370]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may bring action in Maryland for claims arising under MD Franchise Law (subject to arbitration obligation, unless preempted by FAA)",
+      "why_it_matters": "Gives Maryland franchisees home-state forum option for state franchise law claims",
+      "source_pages": [367, 370]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "governing_law",
+      "override_summary": "Maryland law applies to claims arising under MD Franchise Registration and Disclosure Law",
+      "why_it_matters": "Overrides Illinois choice-of-law for MD state franchise law claims",
+      "source_pages": [367, 370]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "damages",
+      "override_summary": "3-year limitations period for claims under MD Franchise Registration and Disclosure Law from grant of franchise",
+      "why_it_matters": "Sets specific statute of limitations for MD franchise law claims",
+      "source_pages": [367]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "anti_waiver",
+      "override_summary": "Acknowledgements in FA do not waive or disclaim reliance on franchisor statements or waive MD Franchise Law claims",
+      "why_it_matters": "Prevents franchisor from using integration/merger clause to block state law claims",
+      "source_pages": [370]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination",
+      "override_summary": "90 days' notice of termination (with 60 days to cure) required under Minn. Stat. §80C.14",
+      "why_it_matters": "Significantly extends cure period beyond FA's standard 10-30 day periods for Minnesota franchisees",
+      "source_pages": [367, 373]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "renewal",
+      "override_summary": "180 days' notice required for non-renewal under Minn. Stat. §80C.14",
+      "why_it_matters": "Gives Minnesota franchisee 6 months' advance notice before franchise non-renewal",
+      "source_pages": [367, 373]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Any release as condition of renewal/transfer does not apply to extent prohibited by MN Rule 2860.4400D",
+      "why_it_matters": "Preserves Minnesota franchisee's right to bring claims under state law",
+      "source_pages": [367, 373]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "damages",
+      "override_summary": "MN Rule Part 2860.4400J prohibits requiring liquidated damages, termination penalties, or judgment notes. Franchisor will enforce to extent law allows.",
+      "why_it_matters": "May limit or eliminate franchisor's ability to collect liquidated damages formula in Minnesota",
+      "source_pages": [368, 373]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "MN Stat. §80C.21 prohibits requiring litigation outside Minnesota. Franchisee retains right to submit to MN court jurisdiction (subject to arbitration).",
+      "why_it_matters": "Overrides Chicago, IL forum selection for Minnesota franchisees",
+      "source_pages": [368, 373]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "damages",
+      "override_summary": "Waiver of punitive damages (FA Section 14.5) deleted if required by Minnesota Franchises Law",
+      "why_it_matters": "Preserves Minnesota franchisee's right to seek punitive damages",
+      "source_pages": [373]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "damages",
+      "override_summary": "Commissioner determined termination/liquidated damages to be unfair under ND Franchise Investment Law Section 51-19-09. Parties enforce to extent law allows.",
+      "why_it_matters": "May severely limit or eliminate liquidated damages in North Dakota",
+      "source_pages": [368, 376]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "general_release",
+      "override_summary": "Any release does not apply to extent prohibited by law for claims under ND Franchise Investment Law",
+      "why_it_matters": "Preserves North Dakota franchisee's state law claims",
+      "source_pages": [376]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration at mutually agreed site if required by ND Franchise Investment Law (unless preempted by FAA)",
+      "why_it_matters": "Potentially overrides Chicago, IL arbitration location for ND franchisees",
+      "source_pages": [368, 376]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "governing_law",
+      "override_summary": "North Dakota law applies to the agreement to extent required by ND Franchise Investment Law",
+      "why_it_matters": "Overrides Illinois choice-of-law for ND state law issues",
+      "source_pages": [376]
+    }
+  ],
+  "summary_table": {
+    "override_families": ["general_release", "forum_selection", "governing_law", "termination", "renewal", "damages", "anti_waiver", "financial_disclosure"],
+    "matrix": {
+      "general_release": ["Maryland", "Minnesota", "North Dakota"],
+      "forum_selection": ["Maryland", "Minnesota", "North Dakota"],
+      "governing_law": ["Maryland", "North Dakota"],
+      "termination": ["Minnesota"],
+      "renewal": ["Minnesota"],
+      "damages": ["Minnesota", "North Dakota"],
+      "anti_waiver": ["Maryland"],
+      "financial_disclosure": ["California"]
+    }
+  }
+}

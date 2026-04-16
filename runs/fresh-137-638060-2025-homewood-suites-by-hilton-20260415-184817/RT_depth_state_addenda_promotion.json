@@ -1,0 +1,71 @@
+{
+  "depth_pass": "4_state_addenda_structured_promotion",
+  "source_pages": [272, 273, 274, 275, 276, 277, 278, 279],
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+  "overrides": [
+    {"state": "California", "affected_family": "damages", "override_summary": "Liquidated damages clauses may be unenforceable under CA Civil Code §1671", "why_it_matters": "CA franchisees may not owe liquidated damages on termination", "source_pages": [272]},
+    {"state": "California", "affected_family": "termination", "override_summary": "CA Bus. & Prof. Code §§20000-20043 provide termination/non-renewal rights that supersede FA", "why_it_matters": "California law may require good cause for termination and provide additional protections", "source_pages": [272]},
+    {"state": "California", "affected_family": "forum_selection", "override_summary": "Virginia venue requirement may not be enforceable under CA law", "why_it_matters": "CA franchisee may be able to litigate in California", "source_pages": [272]},
+    {"state": "California", "affected_family": "governing_law", "override_summary": "NY governing law provision may not be enforceable under CA law", "why_it_matters": "California law may apply instead of New York law", "source_pages": [272]},
+    {"state": "California", "affected_family": "general_release", "override_summary": "Release does not waive rights under CA Franchise Investment Law or Franchise Relations Act", "why_it_matters": "CA franchisees retain all statutory rights despite signing releases", "source_pages": [272]},
+
+    {"state": "Hawaii", "affected_family": "general_release", "override_summary": "General release does not relieve franchisor from liability under Hawaii franchise law", "why_it_matters": "Hawaii statutory claims survive any release", "source_pages": [272]},
+
+    {"state": "Illinois", "affected_family": "termination", "override_summary": "Termination/non-renewal rights affected by Illinois law (815 ILCS 705/19-20)", "why_it_matters": "Illinois may require additional protections before termination", "source_pages": [273]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Venue/governing law/jury waiver do not waive IL Franchise Disclosure Act rights", "why_it_matters": "IL franchisees retain all IL Franchise Disclosure Act protections", "source_pages": [273]},
+    {"state": "Illinois", "affected_family": "anti_waiver", "override_summary": "Any provision waiving compliance with IL Act is void; settlements and general releases are still permitted", "why_it_matters": "Cannot waive IL franchise law protections", "source_pages": [273]},
+
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "MD law may supersede FA on termination and renewal", "why_it_matters": "Maryland may require additional protections and notice periods", "source_pages": [273]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "May sue in Maryland for MD Franchise Registration and Disclosure Law claims (3-year SOL)", "why_it_matters": "MD franchisee can bring claims in Maryland courts", "source_pages": [274]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "Release does not relieve franchisor from MD Franchise Law liability", "why_it_matters": "MD statutory claims survive releases", "source_pages": [274]},
+    {"state": "Maryland", "affected_family": "anti_waiver", "override_summary": "No questionnaire or acknowledgment waives claims under MD franchise law, including fraud in inducement", "why_it_matters": "Cannot disclaim reliance on franchisor statements", "source_pages": [274]},
+
+    {"state": "Michigan", "affected_family": "termination", "override_summary": "Termination only for good cause; franchisee must receive 30-day cure opportunity", "why_it_matters": "MI law provides strong termination protections", "source_pages": [274, 275]},
+    {"state": "Michigan", "affected_family": "renewal", "override_summary": "Must fairly compensate on non-renewal (if term <5 years); must renew on terms generally available to similar franchisees", "why_it_matters": "Protects against unfair non-renewal terms (though 22-year term exceeds 5-year threshold)", "source_pages": [274]},
+    {"state": "Michigan", "affected_family": "forum_selection", "override_summary": "Out-of-state arbitration or litigation prohibited", "why_it_matters": "MI franchisees litigate in Michigan", "source_pages": [274]},
+    {"state": "Michigan", "affected_family": "transfer", "override_summary": "Cannot refuse transfer without good cause", "why_it_matters": "Transfer refusal limited to reasonable grounds", "source_pages": [275]},
+
+    {"state": "Minnesota", "affected_family": "notice_cure", "override_summary": "90-day termination notice with 60-day cure; 180-day non-renewal notice required", "why_it_matters": "Significantly longer notice periods than FA's 10-30 day cure periods", "source_pages": [276]},
+    {"state": "Minnesota", "affected_family": "damages", "override_summary": "Liquidated damages prohibited (MN Rule 2860.4400J)", "why_it_matters": "MN franchisees cannot be required to pay liquidated damages on termination", "source_pages": [276]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Out-of-state litigation prohibited; jury trial waiver prohibited", "why_it_matters": "MN franchisees keep right to MN court and jury trial", "source_pages": [276]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Release does not relieve franchisor from MN Franchise Investment Law liability", "why_it_matters": "MN statutory claims survive releases", "source_pages": [276]},
+
+    {"state": "New York", "affected_family": "governing_law", "override_summary": "NY Franchise Law governs NY Franchise Law causes of action", "why_it_matters": "NY franchise law protections always available to NY franchisees", "source_pages": [277]},
+    {"state": "New York", "affected_family": "termination", "override_summary": "Franchisee may terminate on any grounds available by law", "why_it_matters": "NY franchisees have broader termination rights", "source_pages": [277]},
+    {"state": "New York", "affected_family": "general_release", "override_summary": "General release in renewal/transfer may not be enforceable under NY law", "why_it_matters": "Releases at renewal/transfer potentially unenforceable", "source_pages": [277]},
+
+    {"state": "North Dakota", "affected_family": "damages", "override_summary": "ALL liquidated damages provisions deleted in their entirety", "why_it_matters": "ND franchisees owe no liquidated damages whatsoever", "source_pages": [277]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "ND law supersedes; FA governed by ND law", "why_it_matters": "NY governing law replaced by ND law", "source_pages": [277]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "All out-of-state venue provisions deleted", "why_it_matters": "Litigation stays in ND", "source_pages": [277]},
+    {"state": "North Dakota", "affected_family": "jury_waiver", "override_summary": "Jury trial waiver deleted", "why_it_matters": "ND franchisees retain jury trial right", "source_pages": [277]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "Release does not relieve franchisor from ND Franchise Disclosure Act liability", "why_it_matters": "ND statutory claims survive releases", "source_pages": [277]},
+
+    {"state": "Rhode Island", "affected_family": "termination", "override_summary": "Bankruptcy termination may not be enforceable under federal bankruptcy law", "why_it_matters": "Bankruptcy as termination trigger may be voided", "source_pages": [277]},
+    {"state": "Rhode Island", "affected_family": "general_release", "override_summary": "Release does not apply to RI Franchise Investment Act claims", "why_it_matters": "RI statutory claims survive releases", "source_pages": [278]},
+    {"state": "Rhode Island", "affected_family": "forum_selection", "override_summary": "Out-of-state venue/governing law provisions void for RI Franchise Investment Act claims", "why_it_matters": "RI franchisees can litigate in RI under RI law", "source_pages": [278]},
+
+    {"state": "Virginia", "affected_family": "termination", "override_summary": "Unlawful to cancel franchise without reasonable cause per VA Retail Franchising Act §13.1-564", "why_it_matters": "VA requires reasonable cause for cancellation", "source_pages": [278]},
+
+    {"state": "Washington", "affected_family": "termination", "override_summary": "WA law (RCW 19.100.180) may supersede FA on termination/renewal", "why_it_matters": "WA provides additional termination/renewal protections", "source_pages": [278]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "Release waiver only effective post-negotiated settlement with independent counsel", "why_it_matters": "Pre-negotiation releases are ineffective in WA", "source_pages": [278]},
+    {"state": "Washington", "affected_family": "forum_selection", "override_summary": "Arbitration/litigation in WA for WA-purchased franchises", "why_it_matters": "WA franchisees litigate in Washington", "source_pages": [278]},
+    {"state": "Washington", "affected_family": "noncompete", "override_summary": "Noncompete void if employee earns <$100K/year or independent contractor earns <$250K/year; no-poach restrictions void", "why_it_matters": "WA limits noncompete enforceability and prohibits no-poach clauses", "source_pages": [278, 279]},
+    {"state": "Washington", "affected_family": "transfer", "override_summary": "Transfer fees limited to reasonable estimated or actual costs", "why_it_matters": "WA caps transfer fees at cost recovery", "source_pages": [278]}
+  ],
+  "summary_table": {
+    "rows": ["forum_selection", "governing_law", "damages", "termination", "renewal", "general_release", "noncompete", "transfer", "jury_waiver", "anti_waiver", "notice_cure"],
+    "matrix": {
+      "forum_selection": ["California", "Illinois", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+      "governing_law": ["California", "North Dakota", "New York"],
+      "damages": ["California", "Minnesota", "North Dakota"],
+      "termination": ["California", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "Rhode Island", "Virginia", "Washington"],
+      "renewal": ["Michigan"],
+      "general_release": ["California", "Hawaii", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington"],
+      "noncompete": ["Washington"],
+      "transfer": ["Michigan", "Washington"],
+      "jury_waiver": ["Minnesota", "North Dakota"],
+      "anti_waiver": ["Illinois", "Maryland"],
+      "notice_cure": ["Minnesota"]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "enrichment_version": "v1",
+  "extraction_date": "2026-04-15",
+  "filing_id": "638064-2025",
+  "brand": "Motto by Hilton",
+  "item19_detail": {
+    "fpr_provided": false,
+    "no_fpr_verbatim": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets. We also do not authorize our employees or representatives to make any such representations either orally or in writing.",
+    "substantiation_contact": {
+      "name": "William Fortier",
+      "title": "Senior Vice President-Development-Americas",
+      "address": "7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102",
+      "phone": "703-883-1000"
+    },
+    "charts": [],
+    "tables": [],
+    "source_pages": [88]
+  },
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 3, "franchised_end": 3, "opened": 0, "terminated": 0, "transfers": 0, "company_start": 0, "company_end": 0},
+    "2023": {"franchised_start": 3, "franchised_end": 4, "opened": 1, "terminated": 0, "transfers": 1, "company_start": 0, "company_end": 0},
+    "2024": {"franchised_start": 4, "franchised_end": 5, "opened": 1, "terminated": 0, "transfers": 0, "company_start": 0, "company_end": 0},
+    "pipeline": {
+      "signed_not_opened": 8,
+      "projected_next_year_franchised": 1,
+      "projected_next_year_company": 0,
+      "states": {"Arkansas": 1, "California": 1, "Georgia": 3, "New York": 1, "Ohio": 1, "Tennessee": 1}
+    },
+    "franchisee_list_count": 13,
+    "source_pages": [88, 89, 90, 92, 93, 94]
+  },
+  "exhibit_structure": {
+    "total_exhibits": 18,
+    "contract_exhibits": ["D", "D-1", "D-2", "D-3", "E", "G", "K"],
+    "financial_exhibits": ["C"],
+    "franchisee_list_exhibits": ["A", "B"],
+    "state_addenda_exhibits": ["D-1", "J-1"],
+    "states_with_fdd_addenda": ["Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "states_with_fa_addenda": ["Maryland", "Michigan", "Minnesota", "New York", "Puerto Rico", "Virginia", "Washington"]
+  },
+  "item21_structural": {
+    "auditor": "Cherry Bekaert (CBH)",
+    "opinion": "Unmodified",
+    "going_concern": false,
+    "periods_covered": ["2024", "2023", "2022"],
+    "entity_scope": "All Hilton brands consolidated",
+    "notes_count": 9,
+    "notes_topics": ["Organization", "Basis of Presentation and Accounting Policies", "Acquisition (Graduate)", "Franchise Contracts", "Fair Value Measurements", "Income Taxes", "Commitments and Contingencies", "Related Party Transactions", "Subsequent Events"],
+    "debt_guarantee": true,
+    "graduate_acquisition_2024": true,
+    "disregarded_entity_for_tax": true
+  },
+  "item1_structural": {
+    "franchisor_legal_name": "Hilton Franchise Holding LLC",
+    "entity_type": "Delaware LLC",
+    "formed_date": "September 2007",
+    "brand_franchise_start": "September 14, 2018",
+    "parent_chain": ["Hilton Franchise Holding LLC", "Hilton Domestic Operating Company Inc.", "Hilton Worldwide Holdings Inc."],
+    "other_brands": ["Hilton", "Canopy", "Conrad", "Curio", "DoubleTree", "Embassy", "Graduate", "Hampton", "Hilton Garden Inn", "Home2", "Homewood", "LivSmart Studios", "LXR", "NoMad", "Signia", "Spark", "Tapestry", "Tempo", "Tru", "Waldorf Astoria"],
+    "international_affiliates": ["HWF (England/Wales)", "HWML (England/Wales)", "HEMS (China)", "HBOP (Brazil)"]
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage",
+    "royalty_rate": 5.0,
+    "royalty_basis": "GRR",
+    "royalty_has_ramp": true,
+    "program_fee_type": "percentage",
+    "program_fee_rate": 4.0,
+    "program_fee_basis": "GRR",
+    "program_fee_variable": true,
+    "total_base_fee_rate": 9.0,
+    "technology_fees_monthly_low": 3050,
+    "technology_fees_monthly_high": 7283,
+    "loyalty_program_fee_rate": 4.3,
+    "transfer_fee_coo": 150000,
+    "transfer_fee_permitted": 5500,
+    "liquidated_damages_present": true,
+    "late_payment_rate_monthly": 1.5
+  }
+}

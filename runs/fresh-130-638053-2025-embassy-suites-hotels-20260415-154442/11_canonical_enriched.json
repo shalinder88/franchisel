@@ -1,0 +1,77 @@
+{
+  "_enrichment_version": "v1",
+  "_base": "09_final_canonical.json",
+  "item19_chart_detail": {
+    "charts_count": 8,
+    "charts": [
+      {"id": "room_rate_all", "title": "Room Rate — All Comparable Hotels", "years": ["2023", "2024"], "population": 220, "company_managed": 32, "franchisee_managed": 188},
+      {"id": "occupancy_all", "title": "Occupancy — All Comparable Hotels", "years": ["2023", "2024"], "population": 220},
+      {"id": "occ_index", "title": "Occupancy Index — All Comparable Hotels", "years": ["2023", "2024"], "population": 218, "note": "2 franchisee hotels excluded 2023"},
+      {"id": "revpar_index", "title": "RevPAR Index — All Comparable Hotels", "years": ["2023", "2024"], "population": 218},
+      {"id": "room_rate_new_gen", "title": "Room Rate — New Generation Comparable Hotels", "years": ["2023", "2024"], "population": 47},
+      {"id": "occupancy_new_gen", "title": "Occupancy — New Generation Comparable Hotels", "years": ["2023", "2024"], "population": 47}
+    ],
+    "disclosure_scope": "Room rate, occupancy, competitive indices only. No cost, profit, EBITDA, or RevPAR dollar figures.",
+    "comparable_definition": "Active and operating ≥1 full year as of period end; open Jan 1 prior year; no brand/ownership change; no substantial damage/cap projects; no substantial room count change"
+  },
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 234, "opened": 5, "terminated": 0, "non_renewed": 0, "ceased_other": -4, "franchised_end": 235, "company_owned": 0, "transfers": 9},
+    "2023": {"franchised_start": 235, "opened": 4, "terminated": 0, "non_renewed": 0, "ceased_other": -3, "franchised_end": 236, "company_owned": 0, "transfers": 5},
+    "2024": {"franchised_start": 236, "opened": 4, "terminated": 3, "non_renewed": 0, "ceased_other": 0, "franchised_end": 237, "company_owned": 0, "transfers": 14}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 17,
+    "total_exhibit_pages": 208,
+    "key_exhibits": {
+      "A": {"type": "franchisee_list", "pages": 13, "hotels_listed": 237},
+      "B": {"type": "former_franchisee_list", "pages": 3},
+      "C": {"type": "financial_statements", "pages": 13, "auditor": "Cherry Bekaert LLP", "opinion": "unqualified"},
+      "D": {"type": "franchise_agreement", "pages": 56},
+      "D-1": {"type": "state_addenda_fa", "pages": 14},
+      "G": {"type": "hits_agreement", "pages": 27},
+      "J-1": {"type": "state_addenda_fdd", "pages": 10, "page_range": "266-275"}
+    }
+  },
+  "item21_structural_facts": {
+    "entity_type": "Single-member LLC (pass-through)",
+    "fiscal_year_end": "December 31",
+    "reporting_basis": "US GAAP",
+    "auditor": "Cherry Bekaert LLP",
+    "years_audited": [2022, 2023, 2024],
+    "going_concern": false,
+    "revenue_composition": {
+      "royalty_fees_pct": "95.5%",
+      "sales_coo_fees_pct": "3.3%",
+      "termination_other_pct": "1.2%"
+    }
+  },
+  "item1_structural_facts": {
+    "formation_date": "September 2007",
+    "formation_state": "Delaware",
+    "entity_type": "LLC",
+    "parent_chain": ["Hilton Domestic Operating Company Inc. (DE corp, formed Jul 2016)", "Hilton Worldwide Holdings Inc. (NYSE: HLT, DE corp, formed Mar 2010)"],
+    "predecessor_chain": ["Embassy Suites Franchise LLC (Oct 2007-Mar 2015)", "Promus Hotels, Inc. (May 1995-Oct 2007)"],
+    "brand_since": "March 1984 (via predecessors)",
+    "franchisor_since": "March 30, 2015",
+    "other_brands_count": "20+",
+    "international_affiliates": ["HWF (UK)", "HWML (UK)", "HEMS (China)", "HBOP (Brazil)"],
+    "service_affiliates": {
+      "reservations": "Hilton Reservations Worldwide, L.L.C.",
+      "procurement": "Hilton Supply Management LLC",
+      "loyalty": "Hilton Honors Worldwide LLC",
+      "it_systems": "Hilton Systems Solutions, LLC"
+    }
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage_of_grr",
+    "royalty_ramp": true,
+    "royalty_ramp_detail": "3.5% Y1 / 4.5% Y2 / 5.5% remainder (new dev/conv only)",
+    "program_fee_adjustable": true,
+    "program_fee_cap": "current + 1% GRR over term",
+    "liquidated_damages_formula": "60x average monthly royalty",
+    "late_payment_rate": "1.5% per month",
+    "royalty_modifications_2024": 6,
+    "qa_penalty_cap": "$50,000 per 6-month period (Brand Non-Compliance)",
+    "service_quality_improvement_cap": "$50,000 per 6-month period + vendor costs"
+  }
+}

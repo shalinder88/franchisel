@@ -1,0 +1,65 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "Hyatt Hotels Corporation portfolio: 1,442 hotels, 347,301 rooms, 79 countries as of Dec 31, 2024",
+      "source": "Reader report Pass A, bullet 2 + financial notes Note 1",
+      "source_pages": [106],
+      "promoted_to": "document_identity.parent_portfolio"
+    },
+    {
+      "fact": "Operating cash flow $633M (2024), $800M (2023), $674M (2022)",
+      "source": "Financial notes depth pass - cash flow statement",
+      "source_pages": [102],
+      "promoted_to": "item21_financial_statements.parent_financials.operating_cash_flow"
+    },
+    {
+      "fact": "Share repurchases of $1,190M in 2024 ($453M in 2023, $369M in 2022)",
+      "source": "Financial notes depth pass - cash flow and equity statements",
+      "source_pages": [103, 105],
+      "promoted_to": "item21_financial_statements.parent_financials.share_repurchases_2024_mm"
+    },
+    {
+      "fact": "Dividends declared at $0.15 per share",
+      "source": "Financial notes depth pass - equity statement",
+      "source_pages": [105],
+      "promoted_to": "item21_financial_statements.parent_financials.dividends_per_share"
+    },
+    {
+      "fact": "Key money payments to customers: $153M (2024), $132M (2023), $165M (2022) — amortized to contra revenue over customer life",
+      "source": "Financial notes depth pass",
+      "source_pages": [102, 108],
+      "promoted_to": "item21_financial_statements.parent_financials.key_money_payments"
+    },
+    {
+      "fact": "Revenue recognition: Initial franchise fees deferred and recognized over initial franchise agreement term",
+      "source": "Financial notes depth pass - Note 2",
+      "source_pages": [108],
+      "promoted_to": "item21_financial_statements.parent_financials.revenue_recognition_policy"
+    },
+    {
+      "fact": "System-wide services operated under fund model, intended to break-even over time",
+      "source": "Financial notes depth pass - Note 2",
+      "source_pages": [109],
+      "promoted_to": "item21_financial_statements.parent_financials.system_services_accounting"
+    },
+    {
+      "fact": "Reservation length distribution: 82.8% for 1-4 nights, 13.9% for 5-11 nights, 2.4% for 12-29 nights, 0.9% for 30+ nights",
+      "source": "Reader report Pass F, Item 19",
+      "source_pages": [82],
+      "promoted_to": "item19_financial_performance.reservation_length_distribution"
+    },
+    {
+      "fact": "2024 acquisitions net of cash: $609M",
+      "source": "Financial notes depth pass - cash flow",
+      "source_pages": [103],
+      "promoted_to": "item21_financial_statements.parent_financials.acquisitions_2024_mm"
+    },
+    {
+      "fact": "Pre-existing Two Roads contracts may result in some Participating Hotels paying less for same System Services",
+      "source": "Reader report Pass C, Item 6 notes",
+      "source_pages": [25, 26],
+      "promoted_to": "fees.notes"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "fdd_id": "638058-2025",
+  "brand": "Hilton Hotels & Resorts",
+  "enrichment_version": "v1",
+  "item19_detail": {
+    "fpr_provided": true,
+    "comparable_hotels": 199,
+    "total_system_hotels": 242,
+    "non_comparable_excluded": 43,
+    "company_managed": 46,
+    "franchisee_managed": 153,
+    "charts": [
+      {
+        "id": "room_rate",
+        "title": "Room Rate",
+        "years": ["2023", "2024"],
+        "average": {"2023": "$207.33", "2024": "$209.86"},
+        "median": {"2023": "$183.16", "2024": "$188.04"},
+        "range": {"2023": "$93.59–$598.01", "2024": "$112.15–$645.25"},
+        "pct_company_above_avg": {"2023": "55.3%", "2024": "57.4%"},
+        "pct_franchisee_above_avg": {"2023": "27.5%", "2024": "24.8%"},
+        "pct_company_above_median": {"2023": "74.5%", "2024": "76.6%"},
+        "pct_franchisee_above_median": {"2023": "42.5%", "2024": "41.8%"}
+      },
+      {
+        "id": "occupancy",
+        "title": "Occupancy",
+        "years": ["2023", "2024"],
+        "average": {"2023": "69.2%", "2024": "69.5%"},
+        "median": {"2023": "68.5%", "2024": "69.5%"},
+        "range": {"2023": "41.9%–95.1%", "2024": "38.4%–98.4%"},
+        "pct_company_above_avg": {"2023": "38.3%", "2024": "51.1%"},
+        "pct_franchisee_above_avg": {"2023": "49.0%", "2024": "51.0%"}
+      },
+      {
+        "id": "occupancy_index",
+        "title": "Occupancy Index",
+        "years": ["2023", "2024"],
+        "average": {"2023": "105.0", "2024": "104.1"},
+        "median": {"2023": "106.0", "2024": "105.8"},
+        "range": {"2023": "72.1–153.5", "2024": "56.6–155.6"},
+        "note": "100 = fair share. Excludes 1 hotel with insufficient data."
+      },
+      {
+        "id": "revpar_index",
+        "title": "RevPAR Index",
+        "years": ["2023", "2024"],
+        "average": {"2023": "106.0", "2024": "104.7"},
+        "median": {"2023": "108.6", "2024": "107.9"},
+        "range": {"2023": "64.7–325.4", "2024": "52.1–282.1"},
+        "note": "100 = fair share. Excludes 1 hotel with insufficient data."
+      }
+    ],
+    "cost_data_disclosed": false,
+    "ebitda_disclosed": false
+  },
+  "item20_yearly_activity": {
+    "2024": {"start": 189, "opened": 4, "terminations": 3, "non_renewals": 0, "transfers": 3, "end": 187},
+    "2023": {"start": 188, "opened": 0, "terminations": 1, "non_renewals": 1, "transfers": 2, "end": 189},
+    "2022": {"start": 188, "opened": 4, "terminations": 2, "non_renewals": 0, "transfers": 4, "end": 188}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 20,
+    "critical": ["C (Financial Statements)", "D (Franchise Agreement)", "J-1 (State Addenda to FDD)"],
+    "high": ["A (Franchisee List)", "B (Former Franchisees)", "D-1 (State Addenda to FA)", "E (Guaranty)", "G (HITS Agreement)"],
+    "medium": ["D-2 (Dev Incentive Note)", "F (Application)", "K (Lender Comfort)"],
+    "low": ["D-3 (Spa)", "D-4 (Restaurant)", "H-1/2/3 (Manual TOCs)", "I (State Admin)", "J-2 (Restaurant Addendum)", "L (Effective Dates)", "M (Receipts)"]
+  },
+  "item21_structural": {
+    "auditor": "Cherry Bekaert",
+    "opinion": "Unqualified (clean)",
+    "going_concern": false,
+    "fiscal_year_end": "December 31",
+    "years_covered": [2022, 2023, 2024],
+    "entity_type": "Delaware LLC, disregarded entity for US tax",
+    "parent_subsidiary_cash_management": true,
+    "debt_guarantee": true,
+    "debt_maturity_range": "2025–2033"
+  },
+  "item1_structural": {
+    "formation_date": "September 2007",
+    "operations_start": "March 30, 2015",
+    "brand_history_since": 1946,
+    "total_hilton_brands": 20,
+    "international_affiliates": 4,
+    "service_affiliates": ["Hilton Reservations Worldwide", "Hilton Supply Management", "Hilton Honors Worldwide", "Hilton Systems Solutions"]
+  },
+  "item6_fee_attributes": {
+    "royalty_negotiable": true,
+    "royalty_modifications_2024": 11,
+    "program_fee_cap": "Current rate + 1% GRR over term",
+    "total_estimated_core_fee_burden": "16.75%–17.05% of GRR",
+    "liquidated_damages_formula": "Up to 60× average monthly royalty",
+    "late_payment_rate": "1.5%/month or max legal rate"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "depth_pass": "contract_burdens",
+  "extraction_date": "2026-04-15",
+  "source_exhibit": "Exhibit C — Franchise Agreement",
+  "source_pages": [173, 175, 190, 200, 210, 220],
+  "fa_structure": {
+    "articles": [
+      "I — Grant of Franchise, Term and Area of Protection (Sections 1.1-1.5)",
+      "II — Development and Opening of the Hotel (Sections 2.1-2.8)",
+      "III — Training, Guidance and Assistance (Sections 3.1-3.5)",
+      "IV — Operation of the Hotel (Sections 4.1-4.12)",
+      "V — Advertising and Marketing (Sections 5.1-5.4)",
+      "VI — Fees (Article VI)",
+      "VII — Reports and Auditing (Sections 7.1-7.5)",
+      "VIII — Indemnification (Sections 8.1-8.5)",
+      "IX — Insurance",
+      "X — Condemnation and Damage (Sections 10.1-10.2)",
+      "XI — Proprietary Rights (Sections 11.1-11.6)",
+      "XII — Transfer (Sections 12.1-12.10)",
+      "XIII — Successor Franchise Right (Sections 13.1-13.3)",
+      "XIV — Dispute Resolution (Sections 14.1-14.6)",
+      "XV — Termination (Sections 15.1-15.3)",
+      "XVI — Post-Termination Obligations",
+      "XVII — Guaranty and Assumption",
+      "XVIII — General Provisions (Sections 18.1-18.9)",
+      "XIX — Acknowledgements"
+    ]
+  },
+  "burden_analysis": {
+    "grant_and_term": {
+      "term": "20 years from first day of month Hotel opens",
+      "successor_term": "10 years on then-current terms (may be materially different)",
+      "no_successor_franchise_fee_charged": true,
+      "successor_notice_window": "18-21 months before expiration",
+      "pip_fee_with_successor_notice": true,
+      "burden_level": "moderate",
+      "source_pages": [175, 210]
+    },
+    "fee_and_payment_obligations": {
+      "royalty": "7% of GRR from Channel Bookings, due 10th of each month",
+      "commercial_services": "3.5% of GRR",
+      "world_of_hyatt": "4.5% of eligible loyalty revenue",
+      "digital_acquisition": "1.35% of GRR from digital channels",
+      "gds_reservation": "~$8.50/reservation",
+      "mandatory_contracts": "$1,500-$25,000/month",
+      "other_corporate": "$500-$15,000/month",
+      "electronic_payment_required": true,
+      "payment_via_eft": true,
+      "cannot_change_bank_without_notice": true,
+      "burden_level": "high",
+      "source_pages": [21, 22, 23, 24, 25, 26, 27]
+    },
+    "site_selection_and_construction": {
+      "site_must_be_approved_before_fa_signing": true,
+      "no_site_selection_assistance_provided": true,
+      "design_construction_standards_compliance": "mandatory",
+      "plan_approval_required": true,
+      "no_changes_without_approval": true,
+      "pip_required_for_conversions": true,
+      "opening_deadline": "24 months (new) or 6 months (conversion) after FA signing",
+      "extension_fee": "$10,000",
+      "burden_level": "high",
+      "source_pages": [175, 190]
+    },
+    "training_and_operational_obligations": {
+      "7_part_mandatory_training": true,
+      "total_hours_range": "290-420 classroom + 56-118 OJT",
+      "ongoing_replacement_training": "90 days for Core Management",
+      "gm_vacancy_standards": "Interim GM must complete GMU if no permanent GM within 6 months",
+      "revenue_manager_certification": "90 days, max 20 Brand Hotels",
+      "core_management_full_time": true,
+      "owner_conventions_required": true,
+      "burden_level": "high",
+      "source_pages": [48, 49, 50, 51, 52, 53, 54, 55, 56]
+    },
+    "termination_triggers_and_cure_periods": {
+      "24_hour_cure": "Serious threat to public health/safety",
+      "10_day_cure": "Insurance/payment/real estate document failures",
+      "30_day_cure": "Development deadlines, provider payments, related agreements, other defaults",
+      "60_day_cure": "Guarantor Monetary Threshold failure",
+      "non_curable": [
+        "Bankruptcy events",
+        "Failure to discharge $100K+ judgments",
+        "Ceasing operations or losing possession",
+        "Contesting IP ownership or attempting to register",
+        "Unauthorized transfer",
+        "Felony conviction",
+        "Actions reflecting adversely on franchisor/marks",
+        "False books/reports",
+        "Unauthorized CI disclosure",
+        "Law violations (including trade restrictions)",
+        "Repeated defaults (3+ within 24 months)"
+      ],
+      "suspension_remedies": "May suspend CRS/GDS/ADS, remove from advertising/website, suspend fee reductions, refuse support",
+      "burden_level": "high",
+      "source_pages": [76, 77, 78]
+    },
+    "transfer_restrictions": {
+      "all_transfers_require_approval": true,
+      "non_controlling_transfers_exempt": "If not Competing Brand Owner, not sanctioned, no CI creation, notice within 30 days",
+      "transfer_fee": "Then-current Application Fee",
+      "transferee_must_qualify": true,
+      "must_sign_then_current_or_assumed_agreement": true,
+      "franchisee_remains_liable": true,
+      "must_sign_releases": "If state law allows",
+      "no_public_offerings": true,
+      "death_disability": "6 months to transfer",
+      "burden_level": "high",
+      "source_pages": [78, 79, 80]
+    },
+    "noncompete_scope": {
+      "during_term": "Not a formal noncompete, but cannot be Competing Brand Owner (entity that franchises/owns brand with 5+ competing hotels, manages exclusively for such brand, or affiliate thereof)",
+      "post_term": "No post-term noncompete",
+      "management_company_restriction": "Same — cannot be Competing Brand Owner",
+      "burden_level": "moderate",
+      "source_pages": [80]
+    },
+    "guaranty_scope": {
+      "who_must_sign": "One or more owners of Controlling Ownership Interest that franchisor specifies",
+      "scope": "All obligations — monetary and non-monetary, including confidentiality and arbitration",
+      "personal_guaranty": true,
+      "spousal_guaranty": "Not explicitly stated but Controlling Ownership Interest definition is broad",
+      "unlimited": "Yes — guaranty covers all FA obligations without limitation",
+      "guarantor_monetary_threshold": "Minimum net worth + minimum liquidity, increasing annually by CPI",
+      "annual_financial_reporting": true,
+      "burden_level": "very high",
+      "source_pages": [73, 190]
+    },
+    "liquidated_damages": {
+      "formula": "Lesser of 60 or remaining months × (Average Monthly Revenue × 3.5% + Average Monthly Revenue from Channel Bookings × 7%)",
+      "consequential_termination_multiplier": "150% (transfer to Competitor or 3+ cross-defaults)",
+      "casualty_termination": "Lesser of formula damages or Net Recovery",
+      "condemnation_exception": "Termination Agreement may waive damages, but if new hotel built within AOP within 24 months, must pay $6,500/room",
+      "burden_level": "very high",
+      "source_pages": [23, 24, 32]
+    },
+    "venue_and_dispute_resolution": {
+      "method": "Mandatory arbitration",
+      "location": "Within 10 miles of franchisor's principal business address (currently Chicago, IL)",
+      "governing_law": "Illinois (subject to FAA, federal law, state overrides)",
+      "prevailing_party_fees": true,
+      "burden_level": "moderate to high (franchisee must litigate away from home)",
+      "source_pages": [80, 81]
+    },
+    "insurance_requirements": {
+      "franchisor_and_affiliates_named_as_additional_insureds": true,
+      "30_days_notice_of_cancellation": true,
+      "certificate_within_10_days": true,
+      "franchisor_may_procure_if_franchisee_fails": true,
+      "fee_for_franchisor_procurement": "$200/room/year",
+      "f_and_b_operator_must_also_comply": true,
+      "franchisor_may_update_requirements": true,
+      "burden_level": "moderate",
+      "source_pages": [200]
+    },
+    "indemnification": {
+      "franchisee_indemnifies_franchisor_for": "All claims from application, Hotel development/operation, failure to open on time, breach, and proportionate share of defending actions involving Hotel and other Hyatt Network Hotels",
+      "survival": "Continues after expiration/termination",
+      "no_mitigation_required": "Indemnified party need not seek recovery from insurer or third party",
+      "not_limited_by_insurance": true,
+      "burden_level": "high",
+      "source_pages": [200]
+    },
+    "force_majeure": {
+      "excuses_performance": "Yes — delays extend or excuse performance",
+      "does_not_excuse_payments": "Payments of amounts due under FA not excused by Force Majeure",
+      "burden_level": "moderate",
+      "source_pages": [220]
+    },
+    "distinctive_clauses": [
+      {
+        "clause": "Right of First Offer (Exhibit C to FA)",
+        "description": "Franchisor has right of first offer on Hotel transfers or Controlling Ownership Interest transfers, but only in strategic markets franchisor designates and only if Exhibit C is signed",
+        "source_pages": [175, 80]
+      },
+      {
+        "clause": "CapEx Account (Section 4.7)",
+        "description": "5% of total operating revenue monthly into separate capital reserve account; funds used only for approved capital expenditures and upgrades",
+        "source_pages": [190]
+      },
+      {
+        "clause": "Guarantor Monetary Threshold with CPI Escalation",
+        "description": "Minimum net worth and liquidity requirements that automatically increase annually by CPI, with annual financial statement verification",
+        "source_pages": [73]
+      },
+      {
+        "clause": "Tradename Ownership",
+        "description": "Franchisee owns the Hotel's tradename but must not use it for any other hotel/resort/lodging facility other than the Hotel or another Brand Hotel during FA term",
+        "source_pages": [68]
+      },
+      {
+        "clause": "Royalty on Channel Bookings Only",
+        "description": "7% royalty applies only to Channel Bookings (direct + branded channels), not to OTA bookings. Unique structure that incentivizes direct bookings.",
+        "source_pages": [21, 29, 30]
+      },
+      {
+        "clause": "Consequential Termination 150% Multiplier",
+        "description": "Liquidated damages increase to 150% if termination involves transfer to Competitor or 3+ cross-defaults with Hyatt affiliates",
+        "source_pages": [32]
+      }
+    ]
+  }
+}

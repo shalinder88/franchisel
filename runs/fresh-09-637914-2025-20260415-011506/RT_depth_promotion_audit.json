@@ -1,0 +1,81 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637914-2025",
+  "brand": "Iron Valley Real Estate",
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "EFT failure is material default — franchise agreement requires ACH payment and classifies EFT non-compliance as material breach",
+      "reader_report_section": "Pass E / Contract Burden",
+      "source_pdf_page": 57,
+      "promoted_to": "09_final_canonical.json → ongoing_fees",
+      "field_added": "eft_required: true, eft_failure_is_material_default: true"
+    },
+    {
+      "fact": "Guarantee covers spousal liability — PEOs and their spouses must sign the Guarantee of Franchise Agreement",
+      "reader_report_section": "Pass E / Contract Burden",
+      "source_pdf_page": 91,
+      "promoted_to": "09_final_canonical.json → transfer.guarantee",
+      "field_added": "guarantee_spousal: true, guarantee_scope: 'absolute, unconditional, joint and several'"
+    },
+    {
+      "fact": "Abandonment defined as 5 consecutive business days of cessation — or repeated pattern of inactivity",
+      "reader_report_section": "Pass E / Termination",
+      "source_pdf_page": 52,
+      "promoted_to": "09_final_canonical.json → termination",
+      "field_added": "abandonment_days: 5, abandonment_includes_pattern: true"
+    },
+    {
+      "fact": "Technology transition: kvCORE (through May 2025) being replaced by Burrow (beginning May 2025)",
+      "reader_report_section": "Pass C / Technology",
+      "source_pdf_page": 33,
+      "promoted_to": "09_final_canonical.json → training",
+      "field_added": "tech_transition: 'kvCORE → Burrow (May 2025)'"
+    },
+    {
+      "fact": "SkySlope required for transaction management",
+      "reader_report_section": "Pass C / Technology",
+      "source_pdf_page": 33,
+      "promoted_to": "12_canonical_enriched_v2.json → item_6_fee_detail.technology_costs",
+      "field_added": "skyslope_required: true"
+    },
+    {
+      "fact": "Cross-default provision — termination of one FA may trigger default of all agreements between franchisee and franchisor",
+      "reader_report_section": "Pass E / Termination",
+      "source_pdf_page": 77,
+      "promoted_to": "09_final_canonical.json → termination",
+      "field_added": "cross_default: true"
+    },
+    {
+      "fact": "Franchisor spent $129,866 on marketing in 2024 but only collected $25,850 in marketing fees — subsidizing the fund by $104,016",
+      "reader_report_section": "Pass C / Marketing Fund",
+      "source_pdf_page": 29,
+      "promoted_to": "12_canonical_enriched_v2.json → item_6_fee_detail.marketing_fund",
+      "field_added": "franchisor_subsidized: true, subsidy_amount_2024: 104016"
+    },
+    {
+      "fact": "Franchise sellers identified: Adam S. Gamble, Robert Cleapor, Corey Kaplan — no franchise brokers used",
+      "reader_report_section": "Pass F / Exhibits",
+      "source_pdf_page": 164,
+      "promoted_to": "09_final_canonical.json → document_identity",
+      "field_added": "franchise_sellers: ['Adam S. Gamble', 'Robert Cleapor', 'Corey Kaplan'], franchise_brokers: false"
+    },
+    {
+      "fact": "Revenue from franchisee purchases in 2024 totaled $12,275.92 (Markful $3,857.45, Travel Champs $8,352.97, Unique $65.50)",
+      "reader_report_section": "Pass C / Supplier Control",
+      "source_pdf_page": 24,
+      "promoted_to": "09_final_canonical.json → ongoing_fees",
+      "field_added": "franchisor_rebate_revenue_2024: 12275.92"
+    },
+    {
+      "fact": "Registered in WI only as of issuance date. CA, MD, MI, NY, VA, WA all 'Pending'",
+      "reader_report_section": "Pass F / Exhibits",
+      "source_pdf_page": 161,
+      "promoted_to": "09_final_canonical.json → document_identity",
+      "field_added": "registration_effective: {'Wisconsin': '2025-03-24'}, registration_pending: ['California', 'Maryland', 'Michigan', 'New York', 'Virginia', 'Washington']"
+    }
+  ],
+  "total_promoted": 10,
+  "canonical_patched": true,
+  "enriched_v2_patched": true
+}

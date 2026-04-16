@@ -1,0 +1,117 @@
+{
+  "enrichment_version": "v1",
+  "enrichment_date": "2026-04-15",
+  "item19_chart_detail": {
+    "fpr1_occupancy_adr_revpar": {
+      "franchised": {
+        "count": 9,
+        "avg_occupancy": 0.631,
+        "avg_adr": 245.47,
+        "avg_revpar": 154.84,
+        "high_occupancy": 0.859,
+        "low_occupancy": 0.079,
+        "median_occupancy": 0.667,
+        "pct_above_avg_occupancy": 0.778,
+        "high_adr": 396.28,
+        "low_adr": 152.22,
+        "median_adr": 222.03,
+        "pct_above_avg_adr": 0.444,
+        "high_revpar": 261.39,
+        "low_revpar": 17.78,
+        "median_revpar": 150.15,
+        "pct_above_avg_revpar": 0.556
+      },
+      "owned_managed": {
+        "count": 8,
+        "avg_occupancy": 0.554,
+        "avg_adr": 391.53,
+        "avg_revpar": 217.11,
+        "high_occupancy": 0.782,
+        "low_occupancy": 0.102,
+        "median_occupancy": 0.693,
+        "high_adr": 1050.08,
+        "low_adr": 221.27,
+        "median_adr": 377.06,
+        "high_revpar": 481.88,
+        "low_revpar": 27.53,
+        "median_revpar": 270.56
+      },
+      "all": {
+        "count": 17,
+        "avg_occupancy": 0.600,
+        "avg_adr": 300.61,
+        "avg_revpar": 180.26,
+        "median_occupancy": 0.683,
+        "median_adr": 271.31,
+        "median_revpar": 187.84
+      }
+    },
+    "fpr2_smith_travel_indices": {
+      "franchised": {"occ_index": 93.9, "rate_index": 97.4, "revpar_index": 92.5},
+      "owned_managed": {"occ_index": 95.8, "rate_index": 100.3, "revpar_index": 98.2},
+      "all": {"occ_index": 94.8, "rate_index": 98.8, "revpar_index": 95.2}
+    },
+    "fpr3_woh_contribution": {
+      "franchised": {"pct_revenue": 0.533, "pct_room_nights": 0.483, "avg_room_nights": 21017},
+      "owned_managed": {"pct_revenue": 0.404, "pct_room_nights": 0.555, "avg_room_nights": 18291},
+      "all": {"pct_revenue": 0.459, "pct_room_nights": 0.472, "avg_room_nights": 19805}
+    },
+    "channel_mix": {
+      "franchised": {"direct": 0.607, "indirect": 0.393},
+      "owned_managed": {"direct": 0.692, "indirect": 0.308},
+      "all": {"direct": 0.649, "indirect": 0.351}
+    }
+  },
+  "item20_yearly_activity": {
+    "franchised": {
+      "2022": {"start": 4, "opened": 2, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 6},
+      "2023": {"start": 6, "opened": 2, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 8},
+      "2024": {"start": 8, "opened": 2, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 10}
+    },
+    "company_owned": {
+      "2022": {"start": 7, "opened": 0, "closed": 0, "sold_to_franchisee": 0, "end": 7},
+      "2023": {"start": 7, "opened": 2, "closed": 0, "sold_to_franchisee": 1, "end": 8},
+      "2024": {"start": 8, "opened": 0, "closed": 0, "sold_to_franchisee": 0, "end": 8}
+    },
+    "projected": {"fa_signed_not_open": 4, "franchised_next_fy": 1, "company_owned_next_fy": 1}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 13,
+    "exhibits": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"],
+    "critical": ["A", "C", "M"],
+    "high_priority": ["H", "I"],
+    "financial_statements_pages": 76,
+    "franchise_agreement_pages": 90,
+    "state_addenda_pages": 23
+  },
+  "item21_structural_facts": {
+    "financial_entity": "Hyatt Hotels Corporation (parent consolidated)",
+    "auditor": "Deloitte & Touche LLP",
+    "opinion": "Unqualified (clean)",
+    "going_concern": false,
+    "guarantee": "Absolute and unconditional by Hyatt Hotels Corporation",
+    "critical_audit_matters": ["Deferred revenue related to loyalty program ($1,333M)"],
+    "form_8k_events": ["$500M Senior Notes due 2028", "Playa Hotels tender offer"]
+  },
+  "item1_structural_facts": {
+    "entity_type": "LLC",
+    "formation_state": "Delaware",
+    "converted_from": "Hyatt Franchise Corporation",
+    "parent": "Hyatt Hotels Corporation",
+    "parent_publicly_traded": true,
+    "key_affiliates": ["Hyatt Corporation", "Rosemont Project Management, L.L.C."],
+    "international_affiliates": ["Hyatt Franchising Canada Corp", "Hyatt International EAME LLC", "Hyatt Place Franchising LLC", "Hyatt House Franchising LLC", "Hyatt Franchising Latin America LLC", "Hyatt do Brasil Participacoes Ltda", "Hyatt International Asia Pacific Ltd"],
+    "franchise_history": "Unbound Collection since June 2016; various Hyatt brands since December 1994"
+  },
+  "item6_fee_attributes": {
+    "royalty_basis": "Channel Bookings only (excludes OTA)",
+    "royalty_reduction_available": "First 1-3 years for new-build hotels",
+    "mandatory_services_markup": false,
+    "non_mandatory_services_markup": true,
+    "loyalty_program_net_benefit_to_franchisees": true,
+    "loyalty_rebate_excess_2024": 2208810,
+    "supplier_rebates_2024": 7917,
+    "affiliate_revenue_from_franchisees_2024": 509228,
+    "capital_reserve_pct": 0.05
+  }
+}

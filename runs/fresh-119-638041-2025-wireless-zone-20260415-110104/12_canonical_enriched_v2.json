@@ -1,0 +1,106 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "638041-2025",
+  "brand": "Wireless Zone",
+  "enrichment_version": "v2",
+  "item21_financial_structure": {
+    "parent_debt": {
+      "facility_type": "Credit agreement (syndicate of banks)",
+      "aggregate_commitment": 420000000,
+      "revolving_line_limit": 150000000,
+      "term_loan_original": 270000000,
+      "term_loan_outstanding_2024": 239625000,
+      "term_loan_outstanding_2023": 253125000,
+      "term_loan_outstanding_2022": 266625000,
+      "interest_rate_2024": "5.91% (base or daily simple SOFR + 0.10% spread + applicable margin)",
+      "maturity": "September 2027",
+      "quarterly_payment": 3375000,
+      "escalation": "Quarterly payments escalate annually starting September 2025",
+      "excess_cash_flow_sweep": "50% of excess cash flow if leverage ratio exceeded",
+      "security": "Substantially all Borrowers' assets",
+      "guarantor": "Round Room Holdings, Inc.",
+      "letters_of_credit_outstanding": 0,
+      "revolving_borrowings_outstanding": 0,
+      "maturities": {"2025": 16875000, "2026": 23625000, "2027": 199125000}
+    },
+    "related_party_transactions": {
+      "shared_expense_allocation": {"2024": 17387697, "2023": 11770975, "2022": 9563952},
+      "receivable_from_round_room": {"2024": 39127737, "2023": 30000672, "2022": 0},
+      "distributions_of_related_party_receivable": {"2024": 39385924, "2023": 30149084, "2022": 41188138},
+      "related_party_interest_expense": {"2024": 3105750, "2023": 2457654, "2022": 1832264},
+      "notes": "Distributions to Round Room are non-cash — related party receivables from TCC (affiliate under common control) are distributed to Round Room at year-end."
+    },
+    "equity_trajectory": {
+      "contributed_capital": 59523067,
+      "accumulated_deficit_2024": -46786405,
+      "accumulated_deficit_2023": -42349951,
+      "accumulated_deficit_2022": -39662863,
+      "accumulated_deficit_2021": -26531733,
+      "members_equity_2024": 12736662,
+      "members_equity_2023": 17173116,
+      "members_equity_2022": 19860204,
+      "members_equity_2021": 32991334,
+      "trend": "Declining equity due to distributions exceeding net income in every year"
+    }
+  },
+  "item21_statement_detail": {
+    "income_statement": {
+      "revenue_breakdown": {
+        "commissions": {"2024": 292334146, "2023": 198255874, "2022": 170485228},
+        "wholesale_and_royalties": {"2024": 994722216, "2023": 713062795, "2022": 655190474},
+        "residuals": {"2024": 4265251, "2023": 4419152, "2022": 4671634},
+        "franchise_fees": {"2024": 252566, "2023": 227397, "2022": 150500}
+      },
+      "cost_breakdown": {
+        "merchandise": {"2024": 931948791, "2023": 666595456, "2022": 613829133},
+        "commissions_and_residuals": {"2024": 292876604, "2023": 195288514, "2022": 163633686}
+      },
+      "operating_metrics": {
+        "gross_profit": {"2024": 66748784, "2023": 54081248, "2022": 53035017},
+        "gross_margin_pct": {"2024": 5.17, "2023": 5.90, "2022": 6.39},
+        "sga": {"2024": 29380899, "2023": 25004508, "2022": 22633897},
+        "sga_pct_revenue": {"2024": 2.27, "2023": 2.73, "2022": 2.73},
+        "operating_income": {"2024": 37367885, "2023": 29076740, "2022": 30401120},
+        "operating_margin_pct": {"2024": 2.89, "2023": 3.17, "2022": 3.66},
+        "net_income": {"2024": 34949470, "2023": 27461996, "2022": 28057008},
+        "net_margin_pct": {"2024": 2.71, "2023": 3.00, "2022": 3.38}
+      }
+    },
+    "balance_sheet": {
+      "current_assets": {"2024": 310964149, "2023": 275921664, "2022": 155627025},
+      "total_assets": {"2024": 351937102, "2023": 319563725, "2022": 201938192},
+      "current_liabilities": {"2024": 339200440, "2023": 302390609, "2022": 182077988},
+      "total_liabilities": {"2024": 339200440, "2023": 302390609, "2022": 182077988},
+      "working_capital": {"2024": -28236291, "2023": -26468945, "2022": -26450963},
+      "debt_to_equity": {"2024": 26.64, "2023": 17.61, "2022": 9.17},
+      "notes": "All liabilities are current. No long-term debt directly on WZ LLC's books (debt is at Round Room parent level)."
+    },
+    "cash_flow": {
+      "operating": {"2024": 48886101, "2023": 61054594, "2022": 41411414},
+      "investing": {"2024": 0, "2023": 0, "2022": -31240},
+      "financing": {"2024": -48512989, "2023": -60149756, "2022": -41188138},
+      "net_change": {"2024": 373112, "2023": 904838, "2022": 192036},
+      "notes": "Financing outflows are entirely related-party advances to Round Room. Operating cash flow is strong but fully consumed by upstream transfers."
+    },
+    "concentrations": {
+      "inventory_vendors_2_pct": "94%",
+      "accounts_payable_1_vendor_pct": "82%",
+      "revenue_from_provider_pct": "23%",
+      "commissions_receivable_single_provider": true
+    }
+  },
+  "item6_fee_detail": {
+    "royalty_brackets": [
+      {"gp_range": "$0-$5,000", "rate": "22%"},
+      {"gp_range": "Each additional $5,000", "rate": "Decreasing"},
+      {"gp_range": "Above $100,000", "rate": "9%"}
+    ],
+    "gross_profit_definition": {
+      "gross_revenue_includes": ["Device/product/accessory/service sales", "Commissions", "Residuals", "Device trade-ins", "Customer fees", "Other Provider/supplier/vendor payments"],
+      "gross_revenue_excludes": ["Certain incentives/short-term sales program compensation", "Market development funds", "Co-op advertising funds"],
+      "allowable_cost_includes": ["Cost of approved devices/products/accessories/goods/services per published price schedule", "Fees charged by franchisor/Provider/suppliers/vendors", "Chargebacks (deactivation chargebacks, fraud chargebacks, agent funded rebates)"]
+    },
+    "commission_payment_timing": "1st business day of 2nd month following month earned (e.g., December commissions paid ~February 1)",
+    "collection_mechanism": "Royalties and fees deducted from Commissions/Residuals before payout. Deficiency auto-drafted from bank account. All amounts due by 10th of month."
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "Canopy by Hilton",
+  "depth_pass": "1_financial_notes",
+  "source_pages": [108, 109, 110, 111, 112],
+  "notes_extracted": [
+    {
+      "note_number": 1,
+      "title": "Organization",
+      "content": "HFH LLC is a Delaware LLC formed Sept 12, 2007, began operations Oct 11, 2007. Wholly owned subsidiary of Hilton Domestic Operating Company Inc., whose equity is indirectly held by Hilton Worldwide Holdings Inc. Franchisor of Hilton family of brands within US, US territories, and Thailand for franchise contracts executed or amended after Oct 24, 2007. Licenses IP from wholly owned Hilton affiliate on royalty-free basis and sublicenses to third-party hotel owners.",
+      "source_pages": [108]
+    },
+    {
+      "note_number": 2,
+      "title": "Basis of Presentation and Summary of Significant Accounting Policies",
+      "sub_policies": {
+        "revenue_recognition": {
+          "primary_obligation": "IP license granting right to access brand IP, reservations systems, and PMS — treated as series of distinct services transferred over time",
+          "variable_consideration": "Franchise royalty fees — recognized as hotel room sales occur (sales-based royalty fees)",
+          "fixed_consideration": "Sales/COO fees — allocated based on standalone selling prices, recognized over contract term",
+          "revenue_types": ["Franchise royalty fees (% of monthly GRR)", "Franchise sales and COO fees (fixed, collected upfront, recognized over term)", "Franchise termination fees (recognized when received, no further service)"],
+          "contract_acquisition_cost_amortization": "Reduces franchise royalty fees"
+        },
+        "accounts_receivable_and_financing_receivables": {
+          "ar_composition": "Amounts due from hotel owners under franchise contracts",
+          "financing_receivables": "Loans made to certain franchised hotel owners",
+          "credit_loss_methodology": "Based on historical collection activity, instrument nature, current and forecasted business conditions",
+          "allowances_2024": {"ar_allowance": 10411000, "financing_current_allowance": 3375000, "financing_noncurrent_allowance": 412000}
+        },
+        "franchise_contracts": {
+          "capitalization": "Contract acquisition costs (incentives paid to hotel owners) and incremental costs to obtain contracts",
+          "amortization_method": "Straight-line over contract term (10-20 years, including extension periods at franchisor's sole option)",
+          "amortization_start": "Opening date of hotel or contract execution date, whichever is later",
+          "impairment_testing": "Evaluated for indicators; if indicators exist, undiscounted cash flow analysis performed",
+          "acquisition_intangibles": "Graduate brand franchise contracts: $85.3M gross, 15-year useful life"
+        },
+        "franchise_deposits": "Collected at application, recorded as current liability until non-refundable, then reclassified to deferred revenues",
+        "contract_liabilities": "Non-refundable advance consideration recognized over contract term; presented as deferred revenues",
+        "fair_value_measurements": "Three-level hierarchy (Level 1-3). Fair values of financial assets/liabilities estimated equal to carrying values as of Dec 31, 2024 and 2023.",
+        "acquisitions": "Transactions evaluated as business combination vs. asset acquisition. Graduate acquisition treated as asset acquisition — cost allocated to individual assets based on relative fair values, no goodwill recognized."
+      },
+      "source_pages": [108, 109, 110]
+    },
+    {
+      "note_number": 3,
+      "title": "Acquisition",
+      "content": "In May 2024, completed acquisition of Graduate franchise contracts as part of Hilton's larger Graduate brand acquisition. Treated as asset acquisition. Recorded ~$85M in franchise contract intangible assets. 15-year useful life. Amortized to depreciation and amortization expense. Not material impact on 2024 operating results for period from acquisition to Dec 31, 2024.",
+      "source_pages": [110]
+    },
+    {
+      "note_number": 4,
+      "title": "Franchise Contracts",
+      "content": {
+        "2024_detail": {
+          "contract_acquisition_costs": {"gross": 376063000, "accumulated_amort": 69820000, "net": 306243000},
+          "acquired_intangibles": {"gross": 85304000, "accumulated_amort": 3317000, "net": 81987000},
+          "costs_to_obtain": {"gross": 7259000, "accumulated_amort": 2741000, "net": 4518000},
+          "total": {"gross": 468626000, "accumulated_amort": 75878000, "net": 392748000}
+        },
+        "2023_detail": {
+          "contract_acquisition_costs": {"gross": 287958000, "accumulated_amort": 54374000, "net": 233584000},
+          "costs_to_obtain": {"gross": 7256000, "accumulated_amort": 2307000, "net": 4949000},
+          "total": {"gross": 295214000, "accumulated_amort": 56681000, "net": 238533000}
+        },
+        "amortization_2024": {"reducing_royalty_fees": 16053000, "amortization_expense": 3751000},
+        "amortization_2023": {"reducing_royalty_fees": 12897000, "amortization_expense": 414000},
+        "amortization_2022": {"reducing_royalty_fees": 11972000, "amortization_expense": 410000}
+      },
+      "source_pages": [110, 111]
+    },
+    {
+      "note_number": 5,
+      "title": "Fair Value Measurements",
+      "content": "Fair values of financial assets and liabilities estimated to be equal to carrying values as of Dec 31, 2024 and 2023.",
+      "source_pages": [111]
+    },
+    {
+      "note_number": 6,
+      "title": "Income Taxes",
+      "content": "Certain US territories require taxation of franchise licensing payments to foreign-domiciled entities (including US entities). Rates vary by jurisdiction. Franchisee responsible for withholding. Presented as foreign tax expense. No US income tax provision — entity is disregarded for US tax purposes, all items included in Hilton Worldwide's taxable income.",
+      "source_pages": [111]
+    },
+    {
+      "note_number": 7,
+      "title": "Commitments and Contingencies",
+      "content": "Unconditionally and irrevocably guarantees certain Hilton debt obligations maturing 2025-2033. All assets and franchise contracts pledged as collateral. No guarantee liability recorded due to parent-subsidiary relationship. Routine litigation expected not material.",
+      "source_pages": [111]
+    },
+    {
+      "note_number": 8,
+      "title": "Related Party Transactions",
+      "content": "Intercompany balances result from Hilton centralized cash management (not controlled by HFH LLC). Franchise deposits collected by affiliates into lockbox. Other receivables from affiliates settled periodically with simultaneous distributions of retained earnings. In 2024: settled $1.5B receivables, distributed $1.5B. 2023: $1.4B. 2022: $1.55B. Graduate acquisition funded by affiliate — short-term note payable recorded as current intercompany payables, settled February 2024 (sic — likely 2025). Operator agreement with affiliate entitles affiliate to reasonable fee; no compensation provided in 2022-2024.",
+      "source_pages": [111, 112]
+    },
+    {
+      "note_number": 9,
+      "title": "Subsequent Events",
+      "content": "Evaluated through March 18, 2024 (likely typographical error for March 18, 2025). No material subsequent events disclosed.",
+      "source_pages": [112]
+    }
+  ],
+  "key_observations": [
+    "Entity is a pure royalty pass-through — 99.2% operating margin",
+    "All cash management controlled by parent; entity has minimal independent liquidity ($317K cash)",
+    "Massive affiliate receivables ($704M) represent 55% of total assets — dependent on Hilton settlement cycle",
+    "Deferred revenues ($559M) represent long-tail backlog of upfront franchise fees",
+    "Graduate acquisition ($85M) was the only investing activity in 3 years",
+    "Debt guarantee creates systemic risk: all assets pledged for Hilton parent debt",
+    "No impairment charges on franchise contracts — indicates strong portfolio health",
+    "Credit loss provision increasing: $6.2M (2024) vs $4.4M (2023) vs -$2.5M recovery (2022)"
+  ]
+}

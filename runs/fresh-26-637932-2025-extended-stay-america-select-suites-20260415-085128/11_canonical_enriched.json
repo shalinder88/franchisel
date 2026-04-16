@@ -1,0 +1,114 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637932-2025",
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "tables_count": 4,
+    "table_19_1": {
+      "title": "Operating Metrics",
+      "metrics": ["Occupancy", "ADR", "RevPAR", "EsOcc"],
+      "population": 127,
+      "data_period": "Full year 2024",
+      "averages": {"occupancy": 0.757, "adr": 55.89, "revpar": 42.30, "esocc": 0.675},
+      "medians": {"occupancy": 0.765, "adr": 55.44, "revpar": 42.52, "esocc": 0.683},
+      "pct_at_or_above_avg": {"occupancy": 0.56, "adr": 0.49, "revpar": 0.51, "esocc": 0.52},
+      "count_at_or_above_avg": {"occupancy": 71, "adr": 62, "revpar": 65, "esocc": 66}
+    },
+    "table_19_2": {
+      "title": "Reservation Channel Contribution",
+      "channels": {
+        "call_center": 0.312,
+        "esa_com": 0.303,
+        "property_direct": 0.286,
+        "ota": 0.087,
+        "gds": 0.007,
+        "opaque": 0.005
+      },
+      "franchisor_controlled_pct": 0.615
+    },
+    "table_19_3": {
+      "title": "Length of Stay",
+      "distribution": {
+        "0_6_nights": 0.108,
+        "7_29_nights": 0.187,
+        "30_plus_nights": 0.705
+      },
+      "extended_stay_7plus_pct": 0.892
+    },
+    "table_19_4": {
+      "title": "B2B 7+ Night Revenue",
+      "average": 0.953,
+      "median": 0.955
+    },
+    "cost_data_available": false,
+    "ebitda_available": false
+  },
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 0, "franchised_end": 0, "company_start": 0, "company_end": 87, "total_end": 87},
+    "2023": {"franchised_start": 0, "franchised_end": 1, "company_start": 87, "company_end": 130, "total_end": 131},
+    "2024": {"franchised_start": 1, "franchised_end": 5, "company_start": 130, "company_end": 206, "total_end": 211},
+    "rebranding_activity": {
+      "2023": "43 hotels rebranded from ESA Suites to ESA Select Suites",
+      "2024": "80 hotels rebranded from ESA Suites to ESA Select Suites; 2 rebranded back"
+    },
+    "pending_franchisee_sales": {
+      "count": 22,
+      "states": {"AR": 5, "NE": 1, "TN": 3, "TX": 13},
+      "expected_year": 2025
+    }
+  },
+  "exhibit_structure": {
+    "total_exhibits": 11,
+    "exhibits": [
+      {"letter": "A", "name": "Franchise Agreement", "pages": 63, "category": "contract"},
+      {"letter": "B", "name": "Hotel Technology Agreement", "pages": 37, "category": "contract"},
+      {"letter": "C", "name": "Financial Statements", "pages": 31, "category": "financial"},
+      {"letter": "D", "name": "Current Franchisee List", "pages": 1, "category": "franchisee_list"},
+      {"letter": "E", "name": "Former Franchisee List", "pages": 1, "category": "franchisee_list"},
+      {"letter": "F", "name": "Brand Standards TOC", "pages": 2, "category": "standards"},
+      {"letter": "G", "name": "State Agencies", "pages": 2, "category": "regulatory"},
+      {"letter": "H", "name": "State Addenda/Riders", "pages": 43, "category": "regulatory"},
+      {"letter": "I", "name": "Franchisee Guaranty", "pages": 3, "category": "contract"},
+      {"letter": "J", "name": "General Release", "pages": 5, "category": "contract"},
+      {"letter": "K", "name": "Asset Purchase Agreement", "pages": 87, "category": "contract"}
+    ]
+  },
+  "item21_structural_facts": {
+    "auditor": "Deloitte & Touche LLP",
+    "auditor_location": "Charlotte, NC",
+    "opinion_type": "Unqualified with Emphasis of Matter",
+    "entity_type": "LLC (pass-through, not subject to federal income tax)",
+    "fiscal_year_end": "December 31",
+    "statements_provided": ["Balance Sheet", "Statement of Operations", "Changes in Member's Capital", "Cash Flows"],
+    "two_year_sets": true,
+    "years_covered": [2022, 2023, 2024]
+  },
+  "item1_structural_facts": {
+    "entity_type": "Delaware LLC",
+    "formation_date": "2010-09-16",
+    "began_operations": "early 2016",
+    "began_franchising_select_suites": "2022-09",
+    "related_brands_franchised": ["ESA Suites (Aug 2017)", "ESA Premier Suites (Mar 2021)", "ESA Select Suites (Sep 2022)"],
+    "pe_backed": true,
+    "pe_owners": ["Starwood Capital Group", "Blackstone"],
+    "predecessor_required": false,
+    "hotel_concept": "Extended stay, value-tier, no breakfast, kitchenware available for purchase, free WiFi, on-site laundry"
+  },
+  "item6_fee_attributes": {
+    "total_fee_categories": 37,
+    "core_ongoing_fees": [
+      {"name": "Royalty", "rate": "5.5%", "basis": "GRR"},
+      {"name": "System Services Fee", "rate": "4.5%", "basis": "GRR"}
+    ],
+    "additional_ongoing_fees": [
+      {"name": "Digital Marketing Commission", "rate": "5%", "basis": "Paid digital GRR", "status": "starting 2025"},
+      {"name": "Agoda Marketing Fee", "rate": "0.6%", "basis": "Agoda GRR"},
+      {"name": "PMS License", "rate": "$2.20/room/month"},
+      {"name": "PMS Hosting", "rate": "$1.00/room/month"},
+      {"name": "PMS Support", "rate": "$0.67/room/month"}
+    ],
+    "fee_escalation_cap": "10% per year (for fees with escalation clauses)",
+    "electronic_funds_transfer_required": true,
+    "interest_on_late_payments": "1.5%/month"
+  }
+}

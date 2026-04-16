@@ -1,0 +1,131 @@
+{
+  "depth_pass": "state_addenda_promotion",
+  "fdd_id": "637918-2025",
+  "exhibit": "P",
+  "states_with_addenda": ["CA", "HI", "IL", "IN", "MD", "MI", "MN", "NY", "ND", "RI", "SD", "VA", "WA", "WI"],
+
+  "overrides": [
+    {
+      "state": "Michigan",
+      "affected_family": "termination",
+      "override_summary": "Termination only for good cause; 30-day cure minimum. Franchisee cannot be required to assent to release of rights under MI Franchise Investment Act.",
+      "why_it_matters": "Michigan franchisees have stronger termination protections than the FA provides.",
+      "source_pages": [5, 6]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "renewal",
+      "override_summary": "Franchisor may not refuse to renew without fairly compensating franchisee by repurchase or FMV of inventory, supplies, equipment, fixtures.",
+      "why_it_matters": "Protects franchisee investment on non-renewal, which the FA does not provide.",
+      "source_pages": [5]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "forum_selection",
+      "override_summary": "Cannot require arbitration or litigation outside Michigan.",
+      "why_it_matters": "Overrides Florida forum selection clause.",
+      "source_pages": [5]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "transfer",
+      "override_summary": "Cannot refuse transfer without good cause.",
+      "why_it_matters": "Limits BKC's discretion to block transfers.",
+      "source_pages": [5, 6]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination",
+      "override_summary": "90 days notice of termination with 60 days to cure. 180 days notice of non-renewal.",
+      "why_it_matters": "Significantly longer notice and cure periods than FA's 5-60 day cure windows.",
+      "source_pages": [760, 775]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "Cannot require litigation outside Minnesota. Cannot require liquidated damages, termination penalties, or judgment notes.",
+      "why_it_matters": "Overrides Florida forum and limits punitive fee provisions.",
+      "source_pages": [760]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Cannot require release of rights under MN Franchise Act (Sections 80C.01-80C.22).",
+      "why_it_matters": "Successor FA general release requirement may not waive MN franchise law claims.",
+      "source_pages": [760]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "transfer",
+      "override_summary": "Consent to transfer may not be unreasonably withheld.",
+      "why_it_matters": "Limits BKC's sole discretion on transfer approval.",
+      "source_pages": [760]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "anti_waiver",
+      "override_summary": "No questionnaire or acknowledgment can waive franchise law claims or disclaim reliance on franchisor statements.",
+      "why_it_matters": "Protects franchisee from pre-sale waivers.",
+      "source_pages": [760]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "noncompete",
+      "override_summary": "Noncompete void unless employee earnings >$100K/year; IC >$250K/year (adjusted for inflation). Nonsolicitation restrictions between franchisees prohibited.",
+      "why_it_matters": "Post-term noncompete may be unenforceable for most restaurant employees in WA.",
+      "source_pages": [765, 780]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "damages",
+      "override_summary": "Treble damages available under RCW 19.100.190. Waiver of exemplary/punitive damages void.",
+      "why_it_matters": "Franchisee has potential for significant damages in WA that cannot be waived.",
+      "source_pages": [765, 780]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "indemnification",
+      "override_summary": "Franchisee has no obligation to indemnify franchisor for losses caused by franchisor's negligence, willful misconduct, strict liability, or fraud.",
+      "why_it_matters": "Narrows the broad indemnification clause in the FA.",
+      "source_pages": [765, 780]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "governing_law",
+      "override_summary": "Good faith dealing required (RCW 19.100.180(1)) — overrides 'reasonable business judgment' standard.",
+      "why_it_matters": "Higher standard of conduct required from BKC in WA.",
+      "source_pages": [765]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "anti_waiver",
+      "override_summary": "No questionnaire or acknowledgment can waive franchise law claims. Cannot prohibit communicating with regulators.",
+      "why_it_matters": "Full anti-waiver and anti-gag protection.",
+      "source_pages": [765, 780]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "fair_pricing",
+      "override_summary": "Cannot require purchase/rental of products at more than fair and reasonable price (RCW 19.100.180(2)(d)).",
+      "why_it_matters": "Potential challenge to sole supplier/approved supplier pricing.",
+      "source_pages": [765]
+    }
+  ],
+
+  "summary_table": {
+    "override_families": {
+      "forum_selection": ["MI", "MN"],
+      "termination": ["MI", "MN"],
+      "renewal": ["MI"],
+      "transfer": ["MI", "MN"],
+      "noncompete": ["WA"],
+      "damages": ["WA"],
+      "indemnification": ["WA"],
+      "general_release": ["MN"],
+      "anti_waiver": ["MN", "WA"],
+      "governing_law": ["WA"],
+      "fair_pricing": ["WA"]
+    },
+    "note": "Only MI (front matter), MN, and WA state addenda were read in full. CA, HI, IL, IN, MD, NY, ND, RI, SD, VA, WI addenda exist but were not individually extracted due to document volume. Expected to contain similar franchise-protective overrides."
+  }
+}

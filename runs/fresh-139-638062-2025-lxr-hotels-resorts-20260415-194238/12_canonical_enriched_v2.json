@@ -1,0 +1,98 @@
+{
+  "enrichment_version": "v2",
+  "base_file": "11_canonical_enriched.json",
+  "enrichments": {
+    "item21_financial_structure": {
+      "entity_type": "Single-member LLC (disregarded entity for US tax)",
+      "parent_relationship": "Wholly owned subsidiary, centralized cash management",
+      "cash_management": "Hilton centralized system; entity has no independent access to lockbox account for franchise deposits",
+      "distribution_policy": "Annual distributions to parent: $1.5B (2024), $1.4B (2023), $1.55B (2022)",
+      "asset_pledge": "All assets and franchise contracts pledged as collateral for Hilton parent debt (matures 2025-2033)",
+      "revenue_recognition": "IP license royalties recognized as sales-based royalties over contract term; application fees recognized over contract term as deferred revenue",
+      "intercompany_receivable_2024": "$703,943,000",
+      "franchise_contract_intangibles_2024": "$392,748,000",
+      "deferred_revenue_total_2024": "$558,880,000"
+    },
+    "item21_statement_detail": {
+      "balance_sheet_2024": {
+        "cash": 317,
+        "accounts_receivable_net": 135970,
+        "intercompany_receivable": 703943,
+        "franchise_contracts_net": 392748,
+        "total_assets": 1269897,
+        "deferred_revenue_current": 41598,
+        "deferred_revenue_noncurrent": 517282,
+        "total_liabilities": 692892,
+        "contributed_capital": 310000,
+        "retained_earnings": 528936,
+        "total_equity": 577005
+      },
+      "income_2024": {
+        "franchise_royalty_fees": 1434453,
+        "franchise_sales_coo_fees": 49340,
+        "termination_fees_other": 18276,
+        "total_revenue": 1502069,
+        "operating_expenses": 1354,
+        "credit_loss_provision": 6248,
+        "amortization": 3751,
+        "total_expenses": 11353,
+        "operating_income": 1490716,
+        "net_income": 1487571
+      },
+      "income_2023": {
+        "total_revenue": 1376897,
+        "net_income": 1372281
+      },
+      "income_2022": {
+        "total_revenue": 1229465,
+        "net_income": 1233442
+      },
+      "units": "thousands_usd"
+    },
+    "item6_fee_detail": {
+      "distribution_program_fees": [
+        {"name": "Travel Clubs (AAA/CAA)", "amount": "$0.30/avail room + 10% commission", "required": true},
+        {"name": "Hilton Advance Program", "amount": "1.35% digital direct revenue (max $30/stay)", "required": true},
+        {"name": "Group Preferred Partnership", "amount": "Up to $1.80/room night + commission", "required": false},
+        {"name": "Hilton Honors", "amount": "4.3% eligible guest folio", "required": true},
+        {"name": "Hilton Honors Event Planner", "amount": "$0.0025-$0.0050 per bonus point", "required": false, "note": "Auto-enrolled, opt-out available"},
+        {"name": "Hilton For Business", "amount": "Up to 3% GRR per eligible stay", "required": false, "note": "Auto-enrolled, opt-out annually"},
+        {"name": "Online Group Booking", "amount": "Up to 2% booked reservation charges + commissions", "required": false},
+        {"name": "Third-Party Reservation Charges", "amount": "Up to $5.93/stay", "required": true},
+        {"name": "FastPay", "amount": "Up to $1.40/transaction + commission", "required": true},
+        {"name": "TPCP", "amount": "$0.18/transaction + up to 10% commission", "required": true},
+        {"name": "Unlimited Rewards", "amount": "$0.71-$2.13/stay (standard); $1.42-$3.84 (Double Dollars)", "required": true},
+        {"name": "Consortia", "amount": "Up to $3.00/night + up to 10% commission", "required": false, "note": "Must participate in 3 programs together"},
+        {"name": "TMC Pay-On-All", "amount": "Up to $1.85/night + commission", "required": false},
+        {"name": "TMC SMB", "amount": "Up to $1.85/night + commission", "required": false},
+        {"name": "US Government Programs", "amount": "Up to $2.30/night or 1.45% consumed room revenue", "required": false},
+        {"name": "ResMax", "amount": "5.4%-5.9% consumed revenue (3 night max)", "required": false},
+        {"name": "Add-On Program", "amount": "Up to 5% of sale price", "required": false}
+      ],
+      "rmcc_categories": [
+        {"category": 1, "type": "One-Time Service", "amount": "$1,815"},
+        {"category": 2, "type": "Monthly Full Support", "amount": "$4,179-$15,709", "note": "Mandatory for first-time luxury franchise owners (12 months)"},
+        {"category": 3, "type": "Monthly Reports Only", "amount": "$1,205-$1,865"},
+        {"category": 4, "type": "Monthly Lead Management", "amount": "$999-$5,599"},
+        {"category": 5, "type": "Monthly Group Rooms Coordinator", "amount": "$835-$5,529"}
+      ],
+      "quality_assurance_fees": [
+        {"name": "Brand Non-Compliance", "amount": "$65-$145/room", "cap": "$50,000/6 months"},
+        {"name": "Re-Evaluation", "amount": "Up to $4,500"},
+        {"name": "Special Audit", "amount": "$5,500"},
+        {"name": "Plans & Designs Late", "amount": "$8,000/90 days"},
+        {"name": "PIP/Renovation Failure", "amount": "$16,000/6 months"},
+        {"name": "Stay Score Failure", "amount": "Up to $300/room or 0.5% GRR annually"},
+        {"name": "Service Quality Improvement", "amount": "$20,000-$50,000/6 months"}
+      ]
+    },
+    "depth_pass_results": {
+      "financial_notes_extracted": true,
+      "contract_burdens_extracted": true,
+      "promotion_facts_count": 8,
+      "state_addenda_overrides_count": 36,
+      "state_addenda_states_count": 12,
+      "distinctive_clauses_found": 6
+    }
+  }
+}

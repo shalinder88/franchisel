@@ -1,0 +1,83 @@
+{
+  "enrichment_version": "v1",
+  "filing_id": "637929-2025",
+  "brand": "Paul Davis Restoration, Inc.",
+  "item19_chart_detail": {
+    "table1_2plus_years": {
+      "population": "183 reporting franchises (14 with $0 consolidated)",
+      "total_gross_sales": 1099240532,
+      "median": 3976094,
+      "average": 6006779,
+      "highest": {"name": "PDR of S.E. Wisconsin", "sales": 55516949, "population": 3331742},
+      "second_highest": {"name": "PDR of Portland/Vancouver", "sales": 43488193, "population": 1502363},
+      "third_highest": {"name": "PDR of Centerville, UT", "sales": 42866262, "population": 761031},
+      "lowest_reporting": {"name": "PDR of Clackamas County, OR", "sales": 83873, "population": 458732},
+      "pct_above_average": 0.30,
+      "quartile_estimate": {
+        "note": "Consolidated reporting prevents clean quartile calculation, but observable pattern:",
+        "top_decile_threshold_estimate": "$15,000,000+",
+        "median_range": "$3,000,000–$5,000,000",
+        "bottom_quartile_threshold_estimate": "$2,000,000"
+      }
+    },
+    "table2_under_2_years": {
+      "population": "45 reporting franchises (22 with $0 or consolidated)",
+      "total_gross_sales": 79430092,
+      "median": 1006593,
+      "average": 1765113,
+      "highest": {"name": "PDR of Cleveland Metro West", "sales": 10557726, "opened": "2023-01-01"},
+      "lowest_reporting": {"name": "PDR of Mid-Hudson Valley", "sales": 6899, "opened": "2024-10-21"},
+      "note": "Many partial-year reports; median represents ~25% of mature franchise median"
+    }
+  },
+  "item20_yearly_activity": {
+    "2022": {"start": 211, "opened": 20, "terminated": 7, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 224, "transfers": 20},
+    "2023": {"start": 224, "opened": 25, "terminated": 3, "non_renewed": 1, "reacquired": 0, "ceased_other": 0, "end": 245, "transfers": 14},
+    "2024": {"start": 245, "opened": 28, "terminated": 6, "non_renewed": 1, "reacquired": 0, "ceased_other": 0, "end": 266, "transfers": 17}
+  },
+  "exhibit_structure": {
+    "A": {"name": "Franchisee List", "pages": [73, 88], "page_count": 16},
+    "B-1": {"name": "Financial Statements (PwC audit)", "pages": [89, 135], "page_count": 47},
+    "B-2": {"name": "Guarantee of Performance", "pages": [136, 137], "page_count": 2},
+    "C": {"name": "Franchise Agreement", "pages": [138, 190], "page_count": 53},
+    "D": {"name": "Commercial Program Agreement", "pages": [191, 198], "page_count": 8},
+    "E": {"name": "State Administrators", "pages": [199, 201], "page_count": 3},
+    "F": {"name": "State Addenda (14 states)", "pages": [202, 231], "page_count": 30},
+    "G": {"name": "Promissory Note", "pages": [232, 234], "page_count": 3},
+    "H": {"name": "Operations Manual TOC", "pages": [235, 236], "page_count": 2},
+    "I": {"name": "Resale Procedures", "pages": [237, 254], "page_count": 18}
+  },
+  "item21_structural_facts": {
+    "auditor": "PricewaterhouseCoopers LLP (Toronto)",
+    "opinion": "Unqualified / Clean",
+    "entity": "FS Brands, Inc. (consolidated parent)",
+    "fiscal_years_covered": ["2024", "2023", "2022"],
+    "guarantee": "FS Brands, Inc. absolutely and unconditionally guarantees PDRI obligations",
+    "no_external_debt": true,
+    "no_going_concern": true
+  },
+  "item1_structural_facts": {
+    "incorporation_state": "Florida",
+    "incorporation_year": 1967,
+    "franchising_since": 1970,
+    "parent_is_public": true,
+    "parent_public_entity": "FirstService Corporation (TSX: FSV)",
+    "affiliates_count": 7,
+    "affiliate_brands": ["California Closet Company", "CertaPro Painters", "Floorcoverings International", "Pillar To Post", "Paul Davis Restoration Canada", "Paul Davis Commercial Division", "Tele-Link Services"],
+    "company_owned_outlets": 0,
+    "special_industry_regulations": "State/local general contractor licensing required"
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage",
+    "royalty_base": "Gross Sales",
+    "royalty_rate": 0.04,
+    "has_minimum_royalty": true,
+    "minimum_royalty_escalates": true,
+    "advertising_fund_type": "cooperative_managed_by_franchisor",
+    "advertising_fund_audited": false,
+    "advertising_fund_report_available": "Upon written request",
+    "late_fee_rate": 0.015,
+    "late_fee_period": "monthly",
+    "total_recurring_fee_categories": 29
+  }
+}

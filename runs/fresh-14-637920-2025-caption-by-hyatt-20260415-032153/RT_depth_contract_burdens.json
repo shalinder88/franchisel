@@ -1,0 +1,123 @@
+{
+  "depth_pass": "contract_burdens",
+  "brand": "Caption by Hyatt",
+  "filing_id": "637920-2025",
+  "source_pages": [172, 175, 180, 200, 220, 240, 250, 255],
+  "franchise_agreement_exhibit": "C",
+  "franchise_agreement_pages": [172, 259],
+  "grant_and_term": {
+    "term": "20 years from 1st day of month hotel opens",
+    "renewal": "10-year successor franchise on then-current terms (may be materially different)",
+    "extension_for_casualty": "Term extends for period hotel is closed due to casualty",
+    "source_pages": [75]
+  },
+  "fee_obligations": {
+    "royalty": "5% of Gross Rooms Revenue",
+    "commercial_services": "3.5% of GRR",
+    "world_of_hyatt": "4% of eligible revenue (2% for on-property enrollment)",
+    "digital_acquisition": "1.35% of GRR through Digital Channels",
+    "ffe_reserve": "3%/4%/5% of GRR (years 1/2/3+)",
+    "pre_opening_marketing_minimum": "$500 × number of guest rooms",
+    "electronic_payment_required": true,
+    "source_pages": [21, 22, 25, 26, 41, 44]
+  },
+  "site_selection_and_construction": {
+    "site_selection_by": "Franchisee (franchisor approves, does not assist)",
+    "design_approval_required": true,
+    "pip_for_conversions": true,
+    "opening_deadline_new": "24 months after signing",
+    "opening_deadline_conversion": "6 months after signing",
+    "extension_fee": "$10,000",
+    "material_changes_require_approval": true,
+    "source_pages": [40, 41, 47]
+  },
+  "training_obligations": {
+    "mandatory_programs": 8,
+    "total_classroom_hours": "305-422",
+    "total_ojt_hours": "56-118",
+    "replacement_training_deadline": "90 days",
+    "gm_vacancy_max": "6 months before interim required",
+    "source_pages": [48, 49, 50, 51, 52, 53, 54, 55, 56, 57]
+  },
+  "termination_triggers": {
+    "curable": {
+      "health_safety": "24 hours",
+      "insurance_documents_payment": "10 days",
+      "taxes_development_deadlines_other": "30 days",
+      "guarantor_monetary_threshold": "60 days"
+    },
+    "non_curable": [
+      "Bankruptcy-related events",
+      "Undischarged judgments >$100,000",
+      "Cease operating or identifying Hotel with Marks",
+      "Lose possession of Hotel",
+      "Contest IP ownership or register our IP",
+      "Unauthorized transfer",
+      "Felony conviction",
+      "Actions reflecting adversely on franchisor/Marks",
+      "False books or reports",
+      "Unauthorized use/disclosure of Confidential Information",
+      "Violation of law (including trade restriction laws)",
+      "Repeated defaults"
+    ],
+    "source_pages": [77, 78]
+  },
+  "transfer_restrictions": {
+    "approval_required": true,
+    "exceptions": ["Mortgages to lenders", "Estate planning transfers", "Non-Controlling Ownership Interest transfers (with 30-day notice)"],
+    "transfer_fee": "Then-current change of ownership application fee ($150,000)",
+    "transferee_may_sign_then_current_agreement": true,
+    "general_release_required": "If state law allows",
+    "right_of_first_offer": "Only if Exhibit C signed (strategic markets)",
+    "source_pages": [79, 80]
+  },
+  "noncompete": {
+    "during_term": "No covenant; but no Competing Brand Owner",
+    "post_term": "None",
+    "competing_brand_owner_threshold": "5+ hotels globally",
+    "source_pages": [72, 63, 64]
+  },
+  "guaranty_scope": {
+    "type": "Personal, by Controlling Ownership Interest holders",
+    "covers": "All obligations — monetary and non-monetary, including confidentiality and arbitration",
+    "guarantor_monetary_threshold": "Net worth and liquidity minimums, increasing annually by CPI",
+    "annual_financial_reporting": true,
+    "source_pages": [65, 66]
+  },
+  "liquidated_damages": {
+    "formula": "min(36, remaining months) × (Avg Monthly GRR × 5% + Avg Monthly GRR × 3.5%)",
+    "consequential_termination_multiplier": 1.5,
+    "consequential_triggers": ["Transfer to Competitor", "3+ franchise agreements terminated for default"],
+    "casualty_termination": "Lesser of liquidated damages or Net Recovery",
+    "condemnation_with_termination_agreement": "No liquidated damages if signed; but $5,000/room if new select service hotel built in AOP within 24 months",
+    "source_pages": [23, 24, 25]
+  },
+  "dispute_resolution": {
+    "method": "Arbitration",
+    "venue": "Within 10 miles of franchisor's principal address (Chicago, IL)",
+    "governing_law": "Illinois (except federal law)",
+    "waiver_of_jury_trial": true,
+    "waiver_of_punitive_damages": "Referenced in state riders as potentially modified",
+    "source_pages": [80, 81]
+  },
+  "insurance_requirements": {
+    "description": "Must maintain adequate insurance in amounts franchisor periodically specifies. If franchisee fails, franchisor may obtain and charge premiums + costs + $200/room/year.",
+    "source_pages": [24]
+  },
+  "indemnification": {
+    "description": "Franchisee must indemnify franchisor and related parties for all claims arising from application, development, operation, breach, and Hotel's proportionate share of multi-hotel actions.",
+    "source_pages": [24]
+  },
+  "force_majeure": {
+    "description": "Casualty provisions address fire, flood, hurricane. If repair cost ≤ Damage Threshold (60% of market value or insurance proceeds), must repair within 4 months start / 24 months reopen. If exceeds Damage Threshold, may elect to terminate with Termination Agreement and pay lesser of liquidated damages or Net Recovery.",
+    "source_pages": [24, 25]
+  },
+  "distinctive_clauses": [
+    "Guarantor Monetary Threshold with CPI escalation — unusual minimum net worth and liquidity requirement for guarantors",
+    "Competing Brand Owner restriction — no traditional noncompete but prevents management by competing hotel brand affiliates",
+    "Right of First Offer (Exhibit C) — only in 'strategic markets' determined by franchisor",
+    "Mixed-Use Site restrictions — bars deriving >50% revenue from alcohol within 300 feet require approval",
+    "Guest Information as franchisor property during term — franchisee may retain post-term for Hotel-generated data subject to franchisor's data policies",
+    "Innovations (IP) created by franchisee are franchisor's property as work-for-hire"
+  ]
+}

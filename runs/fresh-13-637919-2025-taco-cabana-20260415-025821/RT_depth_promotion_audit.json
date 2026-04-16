@@ -1,0 +1,72 @@
+{
+  "depth_pass": "3_narrative_to_canonical_promotion",
+  "filing_id": "637919-2025",
+  "brand": "Taco Cabana",
+  "date": "2026-04-15",
+  "promoted_facts": [
+    {
+      "fact": "Jury trial waiver — both parties waive right to jury trial",
+      "reader_report_section": "Not explicitly in reader report; found in DA Section 21.11 during depth pass",
+      "source_page": 82,
+      "canonical_family": "contract_terms",
+      "field_added": "jury_waiver"
+    },
+    {
+      "fact": "No force majeure clause in either agreement",
+      "reader_report_section": "Not explicitly flagged in reader report; confirmed during contract burden depth",
+      "source_page": null,
+      "canonical_family": "contract_terms",
+      "field_added": "force_majeure"
+    },
+    {
+      "fact": "Franchisor crisis control rights — may take control of crisis situations including media, temporarily close restaurant",
+      "reader_report_section": "Not in reader report; FA Section 29.1",
+      "source_page": 128,
+      "canonical_family": "contract_terms",
+      "field_added": "crisis_control_by_franchisor"
+    },
+    {
+      "fact": "Customer data ownership — all customer data owned by franchisor",
+      "reader_report_section": "Not in reader report; FA Section 7.5",
+      "source_page": 100,
+      "canonical_family": "contract_terms",
+      "field_added": "customer_data_ownership"
+    },
+    {
+      "fact": "Shared services not priced — franchisor receives management/admin services from affiliate at no recorded cost, understating true operating expenses",
+      "reader_report_section": "Pass F, Item 21 analysis",
+      "source_page": 155,
+      "canonical_family": "item21_financial_statements",
+      "field_added": "shared_services_unpriced"
+    },
+    {
+      "fact": "Revenue concentration — each of 6 franchisees constitutes >10% of revenues. Loss of any would materially impact operations.",
+      "reader_report_section": "Pass F, Item 21 analysis",
+      "source_page": 152,
+      "canonical_family": "item21_financial_statements",
+      "field_added": "revenue_concentration_risk"
+    },
+    {
+      "fact": "Manual length: 1,095 pages",
+      "reader_report_section": "Pass C, Item 11",
+      "source_page": 25,
+      "canonical_family": "training",
+      "field_added": "manual_pages"
+    },
+    {
+      "fact": "Opening timeline: typically 15 months from signing to opening",
+      "reader_report_section": "Pass C, Item 11",
+      "source_page": 30,
+      "canonical_family": "investment",
+      "field_added": "typical_opening_timeline_months"
+    },
+    {
+      "fact": "Site selection deadline: 270 days first unit, 180 days subsequent",
+      "reader_report_section": "Pass C, Item 11",
+      "source_page": 30,
+      "canonical_family": "contract_terms",
+      "field_added": "site_selection_deadline_days"
+    }
+  ],
+  "total_promoted": 9
+}

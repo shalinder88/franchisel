@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "filing_id": "637912-2025",
+    "brand": "Home Halo",
+    "enrichment_version": "v2",
+    "enrichment_date": "2026-04-15"
+  },
+  "item21_financial_structure_detail": {
+    "accounting_basis": "Accrual",
+    "tax_status": "LLC pass-through (no federal/state income tax provision at entity level)",
+    "revenue_recognition": "ASC 606 — franchise royalties recognized monthly when earned; initial franchise fees recognized when franchisee opens",
+    "depreciation_method": "Straight-line, 3–10 year useful lives (no fixed assets at Dec 31, 2024)",
+    "bad_debt_method": "Direct write-off",
+    "lease_accounting": "Adopted ASC 842; no leases in place at Dec 31, 2024",
+    "uncertain_tax_positions": "None (ASC 740-10 evaluated)",
+    "cash_equivalents_policy": "Highly liquid investments with original maturities ≤3 months",
+    "fdic_coverage_risk": "Maintains cash in bank accounts that may exceed federally insured limits",
+    "deferred_revenue": "$0 at Dec 31, 2024 (no franchise fees received)",
+    "subsequent_events": "Evaluated through Jan 27, 2025 — nothing to disclose"
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "current_assets": {"cash": 29513, "total": 29513},
+      "fixed_assets": {"equipment": 0, "accum_depreciation": 0, "total": 0},
+      "other_assets": {"intangibles": 0, "accum_amortization": 0, "total": 0},
+      "total_assets": 29513,
+      "current_liabilities": {"accounts_payable": 0, "total": 0},
+      "total_liabilities": 0,
+      "shareholders_equity": 29513
+    },
+    "income_statement": {
+      "revenue": {
+        "initial_franchise_fees": 0,
+        "franchise_royalty_fees": 55013,
+        "total": 55013
+      },
+      "expenses": {
+        "advertising_promotion": 3590,
+        "amortization_depreciation": 1414,
+        "bank_fees_dues": 0,
+        "equipment_supplies": 0,
+        "interest_expense": 0,
+        "professional_fees": 15779,
+        "technology_software": 6682,
+        "training_development": 2000,
+        "travel_expenses": 879,
+        "total": 30344
+      },
+      "operating_income": 24668,
+      "other_income": 0,
+      "net_income": 24668
+    },
+    "equity_changes": {
+      "beginning": 0,
+      "contributions": 4845,
+      "net_income": 24668,
+      "ending": 29513
+    },
+    "cash_flow": {
+      "operating": {"net_income": 24668, "depreciation": 0, "ap_change": 0, "total": 24668},
+      "investing": {"capex": 0, "total": 0},
+      "financing": {"contributions": 4845, "draws": 0, "total": 4845},
+      "net_change": 29513,
+      "beginning": 0,
+      "ending": 29513
+    }
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Date inconsistency in Item 1 — likely typo", "severity": "low"},
+    {"id": "U2", "description": "Contact Center fee cap contradiction (3% vs 5%)", "severity": "medium"},
+    {"id": "U3", "description": "Financial viability concern — $29,513 total assets", "severity": "high"},
+    {"id": "U4", "description": "Unregistered trademarks — 3 pending applications", "severity": "high"},
+    {"id": "U5", "description": "Item 20 Table 1 net change arithmetic discrepancy", "severity": "low"},
+    {"id": "U6", "description": "No related party note despite 100% affiliate revenue", "severity": "medium"},
+    {"id": "U7", "description": "Amort/Depreciation vs balance sheet inconsistency", "severity": "low"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "Contact Center fee cap: Item 6/FA = 3%, Item 19 footnote = 5%", "items_involved": ["Item 6", "Item 19", "FA 5.D."]},
+    {"id": "C2", "description": "Iowa/NM affiliate date inconsistency in Item 1", "items_involved": ["Item 1"]}
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Connecticut", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington", "Wisconsin"],
+    "override_families": {
+      "forum_selection": ["California", "Illinois", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+      "governing_law": ["California", "New York", "North Dakota"],
+      "noncompete": ["California", "North Dakota", "Washington"],
+      "general_release": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington"],
+      "termination": ["California", "Hawaii", "Michigan", "Minnesota", "Virginia", "Wisconsin"],
+      "damages": ["Minnesota", "North Dakota", "Washington"],
+      "interest_rate": ["Minnesota"]
+    }
+  },
+  "item6_fee_detail": {
+    "royalty": {
+      "type": "greater_of_percentage_or_minimum",
+      "percentage": 0.05,
+      "out_of_territory_rate": 0.10,
+      "minimum_schedule": [
+        {"months": "1-6", "weekly_per_territory": 0},
+        {"months": "7-12", "weekly_per_territory": 144},
+        {"months": "13-24", "weekly_per_territory": 288},
+        {"months": "25-36", "weekly_per_territory": 433},
+        {"months": "37-48", "weekly_per_territory": 577},
+        {"months": "49-60", "weekly_per_territory": 721},
+        {"months": "61-72", "weekly_per_territory": 865},
+        {"months": "73+", "weekly_per_territory": 1010}
+      ],
+      "renewal_increase": "Up to 10% per annum, floor at $1,010",
+      "frequency": "weekly",
+      "payment_method": "ACH"
+    },
+    "brand_development_fund": {
+      "rate": 0.02,
+      "frequency": "weekly",
+      "segregated": false,
+      "fiduciary": false,
+      "audit": "Unaudited, available once per 12 months",
+      "company_outlets_required_to_contribute": false,
+      "fy2024_collections": 0
+    },
+    "local_marketing": {
+      "minimum_rate": 0.02,
+      "minimum_dollar_per_territory_per_month": 1000,
+      "frequency": "monthly"
+    },
+    "technology_fee": {
+      "current": 250,
+      "maximum": 750,
+      "frequency": "monthly"
+    },
+    "care_management_system": {
+      "per_client_per_month_low": 10,
+      "per_client_per_month_high": 16,
+      "monthly_minimum": 200
+    },
+    "contact_center": {
+      "maximum_rate": 0.03,
+      "currently_active": false,
+      "note": "Footnote 6 in Item 19 Table 2 states 'up to 5%' — contradicts Item 6 cap of 3%"
+    },
+    "non_compliance_fees": {
+      "customer_reviews": {"low": 250, "high": 750, "trigger": "Below 4.5/5 or 90% approval"},
+      "reporting": 150,
+      "operations": {"low": 450, "high": 1000},
+      "payment": 150
+    },
+    "transfer_fee": {
+      "to_existing_franchisee": 10000,
+      "to_new_party": 20000,
+      "if_franchisor_procures": "Up to then-current IFF"
+    },
+    "renewal_fee": {
+      "minimum": 7500,
+      "percentage_of_iff": 0.15,
+      "formula": "Greater of $7,500 or 15% of then-current IFF"
+    }
+  }
+}

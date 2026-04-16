@@ -1,0 +1,114 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-15",
+  "entity": "Hyatt Hotels Corporation",
+  "source_pages": [102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 120, 130, 150],
+  "accounting_policies": {
+    "revenue_recognition": {
+      "policy": "Revenues recognized when control of product or service transfers to customer. Key revenue streams: gross fees (base management, incentive management, franchise/other fees), owned and leased revenues, distribution revenues, other revenues, and revenues for reimbursed costs.",
+      "franchise_fees": "Initial franchise fees combined with ongoing royalty fees as single performance obligation; deferred and recognized over expected customer life (typically initial term of FA). Ongoing royalty fees recognized as sales-based royalties over time as services rendered.",
+      "system_wide_services": "Accounted for under fund model. Assessment fee billed monthly. Revenues in reimbursed costs; expenses in reimbursed costs. Franchisor is principal (has discretion over spending). Managed to break-even over time but timing differences may affect net income.",
+      "loyalty_program": "Points earned represent material right. Revenue deferred until redemption. Breakage estimate uses third-party actuaries. Franchisor is agent for managed/franchised hotels (net recognition), principal for owned/leased hotels (gross recognition).",
+      "source_pages": [102, 103, 104, 105]
+    },
+    "depreciation_amortization": {
+      "method": "Straight-line",
+      "useful_lives": {
+        "buildings_and_improvements": "10-50 years",
+        "leasehold_improvements": "Shorter of lease term or useful life",
+        "furniture_and_equipment": "3-20 years",
+        "computers": "3-7 years",
+        "management_franchise_intangibles": "4-31 years",
+        "customer_relationships": "4-12 years"
+      },
+      "depreciation_2024_millions": 333,
+      "source_pages": [110]
+    },
+    "impairment_policy": {
+      "methodology": "Quarterly assessment. Undiscounted future cash flow test first; if carrying value exceeds undiscounted CF, fair value determined via discounted CF, appraisals, or broker valuations.",
+      "goodwill_impairment_2024": "110 million (management and franchising reporting unit) + $15 million (hotel disposition-related)",
+      "total_impairments_2024_millions": 213,
+      "total_impairments_2023_millions": 30,
+      "total_impairments_2022_millions": 38,
+      "goodwill_balance_2024_millions": 2541,
+      "source_pages": [93, 110]
+    },
+    "income_taxes": {
+      "provision_2024_millions": 267,
+      "provision_2023_millions": 90,
+      "benefit_2022_millions": 92,
+      "deferred_tax_assets_2024_millions": 466,
+      "note": "Deferred income taxes of $(123)M in 2024 operating cash flow adjustments. Effective rate varies significantly due to gains/losses on real estate and impairments.",
+      "source_pages": [94, 97]
+    },
+    "lease_accounting": {
+      "operating_lease_rou_assets_2024_millions": 328,
+      "operating_lease_rou_assets_2023_millions": 369,
+      "current_operating_lease_liabilities_2024_millions": 33,
+      "long_term_operating_lease_liabilities_2024_millions": 245,
+      "total_operating_lease_liabilities_2024_millions": 278,
+      "cash_paid_for_operating_leases_2024_millions": 45,
+      "new_rou_from_leases_2024_millions": 19,
+      "source_pages": [96, 97, 99]
+    },
+    "advertising_fund_accounting": {
+      "model": "Fund model — system-wide services revenues and expenses recognized separately in reimbursed costs. Franchisor has discretion over spending (principal). Managed to break-even over time.",
+      "advertising_costs_2024_millions": 67,
+      "advertising_costs_2023_millions": 67,
+      "advertising_costs_2022_millions": 67,
+      "note": "Advertising costs generally reimbursed by owners/franchisees. Distribution segment advertising not reimbursable ($67M/year).",
+      "source_pages": [115]
+    }
+  },
+  "material_notes": {
+    "subsequent_events": "Not specifically identified in pages read. Form 8-K filed March 26, 2025 included as Exhibit A-2.",
+    "related_party_transactions": {
+      "description": "Hyatt Hotels Corporation guarantees franchisor obligations. Hyatt Corporation provides System Services. Rosemont provides optional purchasing. Key money payments to customers ($144.8M franchise agreement assets on LLC balance sheet). Co-branded credit card arrangements with JPMorgan Chase.",
+      "source_pages": [11, 12, 17, 352]
+    },
+    "variable_interest_entities": {
+      "description": "Consolidated financial statements include entities consolidated under VIE model. Specific VIE details not extracted from notes pages read.",
+      "source_pages": [102]
+    },
+    "key_money_assets": {
+      "description": "Payments to customers (key money) recorded as assets and amortized to contra revenue over expected customer life (typically initial FA term). Franchise agreement assets on LLC balance sheet: $144.8M.",
+      "contra_revenue_2024_millions": 69,
+      "contra_revenue_2023_millions": 47,
+      "contra_revenue_2022_millions": 31,
+      "source_pages": [94, 102, 352]
+    },
+    "loyalty_program_liability": {
+      "description": "Deferred revenue from loyalty program classified as current and long-term contract liabilities. Critical audit matter per Deloitte — breakage estimate involves significant judgment.",
+      "current_contract_liabilities_2024_millions": 1553,
+      "long_term_contract_liabilities_2024_millions": 843,
+      "note": "Contract liabilities include loyalty program and other deferred revenue. Not all contract liabilities relate to loyalty program.",
+      "source_pages": [93, 96, 115]
+    },
+    "real_estate_dispositions": {
+      "gains_2024_millions": 1245,
+      "gains_2023_millions": 18,
+      "gains_2022_millions": 263,
+      "proceeds_2024_millions": 1421,
+      "strategy": "Asset-light transformation — selling owned hotels, retaining management/franchise agreements. Multiple hotel dispositions described in notes.",
+      "source_pages": [94, 98, 130]
+    },
+    "share_repurchases": {
+      "repurchases_2024_millions": 1190,
+      "repurchases_2023_millions": 453,
+      "repurchases_2022_millions": 369,
+      "shares_outstanding_class_a_2024": 42613090,
+      "shares_outstanding_class_b_2024": 53531579,
+      "source_pages": [96, 98]
+    },
+    "debt": {
+      "current_maturities_2024_millions": 456,
+      "long_term_debt_2024_millions": 3326,
+      "total_debt_2024_millions": 3782,
+      "proceeds_from_debt_2024_millions": 1424,
+      "repayments_2024_millions": 750,
+      "interest_expense_2024_millions": 180,
+      "cash_paid_for_interest_2024_millions": 167,
+      "source_pages": [96, 97, 98, 99]
+    }
+  }
+}

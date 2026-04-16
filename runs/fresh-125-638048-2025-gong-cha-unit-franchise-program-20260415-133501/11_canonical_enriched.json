@@ -1,0 +1,105 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "Gong cha",
+  "fdd_id": "638048-2025",
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "chart_count": 1,
+    "charts": [
+      {
+        "chart_id": "table1_net_sales_2024",
+        "title": "Net Sales of 203 2024 Established Gong Cha Stores (Jan 1 – Dec 31, 2024)",
+        "metric": "Net Sales",
+        "period": "2024 full year",
+        "population": 203,
+        "population_type": "master_franchisee_and_subfranchisee_stores",
+        "data_source": "reports from Existing Master Franchisees and subfranchisees",
+        "independently_verified": false,
+        "has_cost_data": false,
+        "has_ebitda": false,
+        "all_stores_average": 439522,
+        "all_stores_median": 401211,
+        "all_stores_low": 72037,
+        "all_stores_high": 1119281,
+        "at_or_above_average_pct": 42.36,
+        "quartile_detail": [
+          {"quartile": 1, "count": 51, "avg": 711899, "med": 683318, "low": 538980, "high": 1119281},
+          {"quartile": 2, "count": 50, "avg": 469693, "med": 470354, "low": 402869, "high": 538067},
+          {"quartile": 3, "count": 50, "avg": 352966, "med": 349247, "low": 306352, "high": 402869},
+          {"quartile": 4, "count": 52, "avg": 227558, "med": 231250, "low": 72037, "high": 306173}
+        ]
+      }
+    ]
+  },
+  "item20_yearly_activity": {
+    "systemwide_combined": {
+      "2022": {"start": 147, "end": 187, "net": 40, "new_franchised": 42, "terminations": 1, "closures_owner": 2},
+      "2023": {"start": 187, "end": 224, "net": 37, "new_franchised": 36, "terminations": 5, "closures_owner": 1},
+      "2024": {"start": 224, "end": 229, "net": 5, "new_franchised": 20, "terminations": 6, "closures_owner": 7}
+    },
+    "franchisor_direct": {
+      "2022": {"start": 0, "end": 3, "net": 3},
+      "2023": {"start": 3, "end": 2, "net": -1},
+      "2024": {"start": 2, "end": 6, "net": 4}
+    },
+    "transfers": {"2022": 7, "2023": 6, "2024": 16}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 10,
+    "exhibits": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+    "state_addenda_exhibit": "A",
+    "financial_statements_exhibit": "F",
+    "franchise_agreement_exhibit": "G",
+    "development_agreement_exhibit": "H",
+    "general_release_exhibit": "I",
+    "questionnaire_exhibit": "J"
+  },
+  "item21_structural_facts": {
+    "entity_type": "Single-member LLC (disregarded for tax)",
+    "formation_date": "2023-01-10",
+    "auditor_location": "Melville, New York",
+    "opinion_type": "unqualified",
+    "going_concern": false,
+    "fiscal_year_end": "December 31",
+    "years_available": 2,
+    "revenue_growth_yoy": 41.7,
+    "net_income_growth_yoy": 134.3,
+    "total_asset_growth_yoy": 25.2,
+    "equity_growth_yoy": 55.2,
+    "revenue_sources": {
+      "franchise_fees_and_royalties": {"2024": 1558968, "pct": 38.0},
+      "brand_marketing_fund": {"2024": 1045184, "pct": 25.5},
+      "fees_from_other_services": {"2024": 1496590, "pct": 36.5}
+    },
+    "subsequent_events": [
+      {"date": "2025-03-26", "description": "Asset purchase agreement to acquire GCCA franchise operations for ~$3.6M"}
+    ]
+  },
+  "item1_structural_facts": {
+    "franchisor_age_years": 2,
+    "global_store_count": 2162,
+    "global_markets": 27,
+    "us_store_count": 235,
+    "us_direct_franchised": 4,
+    "us_company_owned": 2,
+    "us_subfranchised": 198,
+    "us_master_owned": 31,
+    "key_personnel_count": 8,
+    "franchise_offering_start": "2023-10",
+    "ip_license_expiry": "2033-05-01"
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": 6.0,
+    "royalty_basis": "Net Sales",
+    "royalty_frequency": "weekly",
+    "brand_marketing_rate": 1.0,
+    "brand_marketing_max": 2.0,
+    "total_advertising_obligation_max": 4.0,
+    "late_payment_rate": 5.0,
+    "interest_rate_monthly": 1.5,
+    "audit_threshold_pct": 3.0,
+    "technology_monthly_cost": 295,
+    "technology_annual_cost": 313,
+    "fee_escalation_cap": 25.0
+  }
+}

@@ -1,0 +1,493 @@
+{
+  "extraction_metadata": {
+    "filing_id": "637929-2025",
+    "brand": "Paul Davis Restoration, Inc.",
+    "extraction_date": "2026-04-15",
+    "total_tables_extracted": 16
+  },
+  "tables": [
+    {
+      "table_id": "T01_item5_franchise_fee",
+      "source_item": "Item 5",
+      "source_pages": [15, 16],
+      "title": "Franchise Fee Structure",
+      "category": "initial_fees",
+      "columns": ["Parameter", "Value"],
+      "rows": [
+        ["Fee basis", "$0.26 per person of territory population"],
+        ["Max territory population", "800,000"],
+        ["Fee range", "$65,000 to $208,000"],
+        ["Payment", "At least 50% cash; up to 50% financed (4-yr note, 7% APR)"],
+        ["VetFran discount", "25% reduction; up to 67% of reduced fee may be financed"],
+        ["Prior year fee range (2024)", "$17,147.90 to $176,698.42"]
+      ],
+      "table_notes": [
+        "PDRI uses ESRI/ARC GIS to determine territory population by zip code.",
+        "PDRI reserves the right to rescind FA during training and refund fee minus completed training portion.",
+        "Fee is non-refundable under any other circumstances."
+      ],
+      "provenance": "Extracted from Item 5 text, PDF pages 15-16"
+    },
+    {
+      "table_id": "T02_item6_fee_table",
+      "source_item": "Item 6",
+      "source_pages": [16, 17, 18, 19, 20, 21, 22, 23],
+      "title": "Other Fees",
+      "category": "ongoing_fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty Fee", "4% of Gross Sales", "Monthly (25th)", "Gross Sales includes all invoiced sales incl. subcontractor fees. Some older agreements have lower rates."],
+        ["Minimum Royalty", "Population × per-capita rate × 4%. Rate escalates: $0 (partial yr), $1 (yr1), $2 (yr2), $3 (yr3), $3.50 (yr4), $4 (yr5), $4.50 (yr6), $5 (yr7), $5.50 (yr8), $6.00 (yr9+). CPI-adjusted.", "Annual, within 30 days of notice", "Only to extent actual royalties fall below minimum"],
+        ["Guarantee Fund Contribution", "0.5% of GS (1% for resales) until $25,000 for first 500K pop + $2,000 per additional 100K", "Monthly", "Paid to Completion Services, Inc. (franchisee-owned). May be returned 2 yrs after termination if no claims."],
+        ["Indemnity Fund Fee", "0.10% on $0-$2M GS; 0.08% on $2M-$4M; 0.06% on $4M-$8M; 0.04% on $8M+", "Monthly", "Paid to Completion Services, Inc. Non-refundable."],
+        ["Computer Software Support Fee", "$75/month", "Monthly", ""],
+        ["Additional Training Fee", "$8,000/person for Full Owner School", "Before training", "Franchise fee includes training for one person"],
+        ["Call Center Fee (Lead Dispatch)", "$38-$70", "Monthly", "Variable rate = total monthly cost / claims processed"],
+        ["Call Center Fee (AnswerNet Monthly)", "$50/month", "Monthly", "Dedicated Account Manager and QA Manager"],
+        ["Call Center Fee (AnswerNet Usage)", "$1.10/call + $0.02/min transfer rate", "Monthly", ""],
+        ["QA Assist/Validate", "$15.75/claim", "Monthly", ""],
+        ["ProAssist/Engage", "$50/month", "Monthly", ""],
+        ["Joint Quality Business Review", "$50/month", "Monthly", "Conducted by PDRI representatives"],
+        ["Renewal Fee", "$5,000", "Upon renewal", "Must also meet other renewal conditions"],
+        ["Transfer Fee", "$10,000 (majority) or $5,000 (minority) + 2.5% resale fee (capped $40,000)", "Before transfer", "PDRI facilitates vetting. Broker fees $30K-$50K if using PDRI lead gen (optional)."],
+        ["Strategic Marketing Plan Fee", "$500/month + 0.75% of invoiced sales (CPI-capped)", "Monthly", "Managed by PDRI with NEC oversight"],
+        ["Bankruptcy Costs and Attorneys' Fees", "As incurred", "As incurred", "Franchisee liable for all PDRI costs in franchisee bankruptcy"],
+        ["Promissory Note Collection Costs", "As incurred", "As incurred", "If PDRI collects/enforces payment rights"],
+        ["Re-certification Training", "$8,000 (current)", "Prior to training", "Not currently required but PDRI reserves right to implement"],
+        ["Program Management Fee", "Actual cost + 20% admin (~2% of job for 2025)", "As incurred", "Review services for insurance company referral programs"],
+        ["Optional Program Fees", "Commercial: 5% of job; FAST: 1% of estimate subtotal", "As incurred", "Royalty charged on net invoice less program fees"],
+        ["Xactimate License", "Basic/Standard: up to $105/license; Pro: $149.10/license; Xactanalysis: up to $9/assignment", "Monthly", "Billed through PDRI for volume pricing"],
+        ["Symbility/Validate CoreLogic", "$15.75/claim", "Per claim", "May be required for some program work"],
+        ["Microsoft 365 License", "E1: $7; E3: $25; E5: $43; Spanning: $2.50; Power BI: $8; Project P1: $8; P3: $18; Security E3: $8; E5: $15; Visio P1: $4; P2: $12; EMS E5: $15 — per user/month", "Monthly", "Prices may change by Microsoft"],
+        ["QuickBooks Online", "$99/month (5 users)", "As incurred", "Additional licenses from Intuit"],
+        ["New Franchisee Training at Resale", "New Owner: $22,000 (Program B); Resale Owner: $15,000 (Program A); GM only: $8,000", "Before training", "If purchased from existing franchisee, no initial fee paid to PDRI"],
+        ["Dishonored Check/EFT Fee", "$100 per instance", "As incurred", ""],
+        ["Mitigate Software", "Up to $100/account/month", "Monthly", "Paid to CoreLogic"],
+        ["Common Software Fee (RMS)", "Primary: $525/month; Secondary: $300/month", "As incurred", "Paid to PDRI for CoreLogic"],
+        ["Conference Registration Fee", "Up to $1,000 (currently $540)", "Within 30 days of billing", "Charged even if you fail to attend"]
+      ],
+      "table_notes": [
+        "All fees nonrefundable and uniformly imposed unless otherwise stated.",
+        "Late payment assessed at 1.5% per month.",
+        "Note 1: Guarantee Fund, Computer Software Support, SMP, and Indemnity Fund voted into Operations Manual by Councils.",
+        "Note 2: RMS fee $525/month primary, $300/month secondary (common ownership).",
+        "Note 3: Resale fee 2.5% of sale price, capped at $40,000. Transfer fee $10K majority / $5K minority. Optional lead gen/broker fees $30K-$50K.",
+        "Note 4: Optional programs (Commercial, FAST) require additional training/admin fees. Admin fees deducted from invoice; royalty on net."
+      ],
+      "provenance": "Extracted from Item 6 fee table and Notes, PDF pages 16-23"
+    },
+    {
+      "table_id": "T03_item7_initial_investment",
+      "source_item": "Item 7",
+      "source_pages": [24, 25],
+      "title": "Estimated Initial Investment",
+      "category": "initial_investment",
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        ["Franchise Fee", "$65,000", "$208,000", "Lump sum or arranged", "50% at signing; balance financed", "PDRI"],
+        ["Real Property and Improvements", "$1,800", "$6,000", "As incurred", "Monthly", "Landlord"],
+        ["Marketing and Advertising", "$12,000", "$72,000", "As incurred", "As arranged", "Third Party Vendors"],
+        ["Equipment, Computer, Copier", "$13,000", "$30,000", "As incurred", "Before Training", "Third Party Vendors"],
+        ["Computer Software Licensing", "$7,000", "$12,000", "Lump sum or as incurred", "Before opening/billed monthly", "Third Party/PDRI"],
+        ["Office Furniture", "$2,000", "$6,000", "As incurred", "Before Opening", "Third Party Vendors"],
+        ["Branded or Compliant Vehicle", "$10,000", "$121,000", "Lump sum or arranged", "Before Opening", "Third Party Vendors"],
+        ["Equipment & Chemical Package (Start-Up Kit)", "$5,000", "$54,000", "Lump sum or arranged", "Before Training", "Third Party Vendors"],
+        ["Travel and Living While Training", "$5,000", "$7,500", "As incurred", "During Training", "Third Parties"],
+        ["Insurance", "$20,500", "$63,500", "As incurred", "Before Opening", "Insurance Companies"],
+        ["Licensing", "Variable", "Variable", "As incurred", "Variable", "Variable"],
+        ["Phone/Utility Deposits", "$1,000", "$2,900", "As incurred", "At opening", "Phone/Utility companies"],
+        ["Rent Deposit", "$5,000", "$18,000", "Lump sum", "At signing of lease", "Landlord"],
+        ["CPA Fees", "$1,000", "$2,200", "As incurred", "At startup", "CPA"],
+        ["Legal Fees", "$500", "$1,800", "Lump sum", "At incorporation", "Attorney"],
+        ["Working Capital (First 3 Months)", "$150,000", "$200,000", "As incurred", "1/3 each month", "Employees/Suppliers/PDRI"],
+        ["TOTAL", "$298,800", "$804,900", "", "", ""]
+      ],
+      "table_notes": [
+        "Based on 500,000 population base territory.",
+        "Higher range contemplates higher cost-of-living states (e.g., California) or large urban markets.",
+        "Note 1: VetFran 25% discount on franchise fee available.",
+        "Note 2: No buildout required. Typical office: strip center, light industrial (3K office + 8K industrial). Typical rent $5K-$15K/month.",
+        "Note 3: No required minimum marketing spend, but strongly recommended.",
+        "Note 4: Computer system $13K-$25K (server, 2 PCs, printer, software). Fax, copier, scanner, internet required.",
+        "Note 5: Full-size extended van required. Purchase $50K-$91K incl. decals/racks. Optional vehicle mount $15K-$30K.",
+        "Note 6: Start-up equipment from multiple PDRI-arranged suppliers. May finance with 10% down.",
+        "Note 7: Three-week training travel: airfare to Jacksonville, car rental, hotel, meals. $5K-$7.5K.",
+        "Note 8: Insurance $20.5K-$63.5K. CA/NY higher. Begin search early due to potential delays.",
+        "Note 9: Licensing varies by state/locality. Examinations and significant fees may apply.",
+        "Note 10: CPA setup $1K-$2K. May be waived as new client incentive.",
+        "Note 11: Minimum working capital $500K recommended. After Year 1: 10% of prior year sales or $500K, whichever is greater.",
+        "Note 12: Security deposit typically equals one month rent."
+      ],
+      "provenance": "Extracted from Item 7 table and notes, PDF pages 24-28"
+    },
+    {
+      "table_id": "T04_item9_obligations",
+      "source_item": "Item 9",
+      "source_pages": [31, 32],
+      "title": "Franchisee's Obligations",
+      "category": "obligations",
+      "columns": ["Obligation", "Section in Agreement", "Disclosure Document Item"],
+      "rows": [
+        ["A. Site selection and acquisition/lease", "Article 4", "Item 11"],
+        ["B. Pre-opening purchases/leases", "Article 9", "Item 11"],
+        ["C. Site development and other pre-opening requirements", "Article 6", "Item 11"],
+        ["D. Initial and ongoing training", "Article 8", "Item 11"],
+        ["E. Opening", "Article 6", "Item 11"],
+        ["F. Fees", "Article 2, 3", "Item 5, 6"],
+        ["G. Compliance with standards/operating manual", "Article 6, 10", "Item 11"],
+        ["H. Trademarks and proprietary information", "Article 1", "Item 13"],
+        ["I. Restrictions on products/services", "Article 6", "Item 8"],
+        ["J. Warranty and customer service", "Article 3, 6", "N/A"],
+        ["K. Territorial development and sales quotas", "Article 4", "Item 12"],
+        ["L. Ongoing product/service purchases", "Article 9", "Item 8"],
+        ["M. Maintenance, appearance, remodeling", "None", "N/A"],
+        ["N. Insurance", "Article 12", "Item 7"],
+        ["O. Advertising", "Article 11", "Item 6, 7"],
+        ["P. Indemnification", "Article 13", "N/A"],
+        ["Q. Owner's participation/management/staffing", "Article 6", "Item 15"],
+        ["R. Records/reports", "Article 6", "Item 21"],
+        ["S. Inspections/audits", "Article 6", "N/A"],
+        ["T. Transfer", "Article 20", "Item 6, 17"],
+        ["U. Renewal", "Article 5", "Item 6, 17"],
+        ["V. Post-termination obligations", "Article 19", "Item 17"],
+        ["W. Non-competition covenants", "Article 22", "Item 17"],
+        ["X. Dispute resolution", "Article 23", "Item 17"]
+      ],
+      "table_notes": [],
+      "provenance": "Extracted from Item 9, PDF pages 31-32"
+    },
+    {
+      "table_id": "T05_item11_training",
+      "source_item": "Item 11",
+      "source_pages": [34, 35],
+      "title": "Owner's Training Program (2025)",
+      "category": "training",
+      "columns": ["Training Topic", "Hours Classroom", "Hours OJT", "Location"],
+      "rows": [
+        ["Estimating, Project Management, Job Management (RMS) and General Operations", "73 (57 online)", "8", "Jacksonville, FL or Designated"],
+        ["The Paul Davis Brand", "6 (2 online)", "2", "Jacksonville, FL or Designated"],
+        ["IICRC WRT/ASD combo", "40", "0", "Jacksonville, FL or Designated"],
+        ["Mold Remediation", "8", "0", "Jacksonville, FL or Designated"],
+        ["Marketing and Sales", "15 (7 online)", "16", "Jacksonville, FL or Designated"],
+        ["Lead", "8", "0", "Jacksonville, FL or Designated"],
+        ["IICRC FSRT – Fire", "16", "0", "Jacksonville, FL or Designated"],
+        ["GM/FinMgmt/JCA/HR/QA", "38 (6 online)", "0", "Jacksonville, FL or Designated"],
+        ["IT Systems and Loss Document Process Training", "20 (18 online)", "0", "Jacksonville, FL or Designated"],
+        ["On-site field training (Mentor Week)", "0", "40", "Designated Franchisee location"],
+        ["On-site field Launch", "0", "40", "Franchise Location"],
+        ["TOTAL", "224", "106", ""]
+      ],
+      "table_notes": [
+        "JCA Training: 16 hours classroom + 6 hours online + 16 hours onsite during Launch Week.",
+        "Training is mandatory for all new franchisees including resales.",
+        "Program offered approximately 4 times per year.",
+        "Consists of: (i) up to 3 weeks classroom in Jacksonville, (ii) 1 week field launch at franchise, (iii) 1 week mentor at existing franchise, (iv) up to 3 weeks online pre-training, (v) optional 3-day advanced class ~6 months later."
+      ],
+      "provenance": "Extracted from Item 11 training tables, PDF pages 34-35"
+    },
+    {
+      "table_id": "T06_item11_smp_spending",
+      "source_item": "Item 11",
+      "source_pages": [40],
+      "title": "Strategic Marketing Plan Spending (FY2024)",
+      "category": "advertising",
+      "columns": ["Category", "Percentage"],
+      "rows": [
+        ["Production", "15.8%"],
+        ["Media Placement", "9.7%"],
+        ["Administrative Expenses", "0.4%"],
+        ["Business Development and Field Marketing Staff", "61.7%"],
+        ["Public Relations / Communications", "7.3%"],
+        ["Quality Surveys and Awards", "1.5%"],
+        ["Franchisee and Industry Training", "3.7%"],
+        ["TOTAL", "100%"]
+      ],
+      "table_notes": [
+        "Advertising funds not used to solicit new franchisees.",
+        "Unspent funds accrued for subsequent fiscal years.",
+        "SMP governed by General Council with NEC oversight; managed by PDRI."
+      ],
+      "provenance": "Extracted from Item 11 SMP spending breakdown, PDF page 40"
+    },
+    {
+      "table_id": "T07_item17_franchise_relationship",
+      "source_item": "Item 17",
+      "source_pages": [46, 47, 48, 49, 50],
+      "title": "Renewal, Termination, Transfer, and Dispute Resolution",
+      "category": "contract_mechanics",
+      "columns": ["Provision", "FA Section", "Summary"],
+      "rows": [
+        ["a. Length of term", "Article 5", "5 years"],
+        ["b. Renewal", "Article 5", "Additional 5 years"],
+        ["c. Requirements to renew", "Article 5", "90-180 day notice; sign then-current FA (may have materially different terms); equipment to current standards; compliance; minimum sales (greater of national median or $6.00 × population) for each of prior 2 years; pay $5,000 renewal fee; execute within 90 days"],
+        ["d. Termination by franchisee", "N/A", "Not applicable"],
+        ["e. Termination by franchisor without cause", "Article 17", "Not applicable"],
+        ["f. Termination with cause", "Article 17", "15 days to cure (unless state law requires longer): nonpayment, supplier payment failure, Operations Manual non-compliance, license/permit failures"],
+        ["g. Curable defaults", "Article 17", "15-day cure: nonpayment, supplier issues, Operations Manual, licenses/permits"],
+        ["h. Non-curable defaults", "Article 17", "No cure: failure to begin operations timely; material/repeated GS misrepresentation; insolvency; unapproved transfer; felony; 3+ defaults in 12 months; abandonment (incl. 2+ months no sales reported); confidential info disclosure; non-renewal"],
+        ["i. Obligations on termination", "Article 19", "De-identification; payment of sums due; transfer phone/domain; return materials"],
+        ["j. Assignment by franchisor", "Article 20", "No restriction; assignee must be willing/able to assume obligations"],
+        ["k. Transfer by franchisee definition", "Article 20", "Transfer of contract, assets, or any ownership change"],
+        ["l. Franchisor approval of transfer", "Article 20", "PDRI has right to approve all transfers; same criteria as new franchisees"],
+        ["m. Conditions for approval", "Article 20", "Qualified transferee; transfer fee; training; new FA at current terms; equipment upgrade; accounts settled"],
+        ["n. Right of first refusal", "Article 20", "PDRI has right on same terms as third-party offer"],
+        ["o. Option to purchase", "Article 19", "On termination, PDRI can purchase at fair market value"],
+        ["p. Death or disability", "Article 20", "Heir can inherit if approval conditions met"],
+        ["q. Non-compete during term", "Article 22", "Cannot participate in competing business, disrupt employment, or divert business"],
+        ["r. Non-compete post-term", "Article 22", "2 years within protected territory and other PDRI territories; no contact of former suppliers/customers for competitive purpose"],
+        ["s. Modification", "Article 26", "Only by mutual consent"],
+        ["t. Integration/merger", "Article 32", "Only FA terms binding; outside representations unenforceable (subject to state law)"],
+        ["u. Dispute resolution", "Article 23", "Binding arbitration under PDRI internal system (arbitrators are franchisees)"],
+        ["v. Choice of forum", "Article 23", "Arbitration; forum selected by Arbitration Committee; may not be litigated (subject to state law)"],
+        ["w. Choice of law", "Article 29", "Florida law (subject to state law)"]
+      ],
+      "table_notes": [
+        "Renewal requires signing then-current FA which may have materially different terms — significant risk.",
+        "Non-competition: 2 years post-term within own territory AND other PDRI territories.",
+        "Arbitration is internal (franchisee-operated) — unusual structure."
+      ],
+      "provenance": "Extracted from Item 17 table, PDF pages 46-50"
+    },
+    {
+      "table_id": "T08_item19_table1_summary",
+      "source_item": "Item 19",
+      "source_pages": [51, 52, 53, 54, 55, 56, 57, 58, 59],
+      "title": "2024 Gross Sales — PDR Businesses Operating 2+ Years (Summary)",
+      "category": "financial_performance",
+      "columns": ["Metric", "Value"],
+      "rows": [
+        ["Total reported gross sales", "$1,099,240,532"],
+        ["Number of franchises", "183"],
+        ["Median gross sales per franchise", "$3,976,094"],
+        ["Average gross sales per franchise", "$6,006,779"],
+        ["% attaining or surpassing average", "30% (55 of 183)"],
+        ["Highest single territory", "$55,516,949 (PDR of S.E. Wisconsin)"],
+        ["Lowest reporting territory", "$83,873 (PDR of Clackamas County, OR)"],
+        ["Territories reporting $0 (consolidated)", "14"]
+      ],
+      "table_notes": [
+        "Gross sales figures are franchisee-reported, not PDRI-audited.",
+        "Certain franchisees report multiple territories as one; zero-sales territories are consolidated.",
+        "Population figures in some entries exceed 800K max — likely multi-territory operators.",
+        "No cost or profitability data included.",
+        "12 footnotes identify consolidated reporting relationships."
+      ],
+      "provenance": "Extracted from Item 19 Table 1, PDF pages 51-59"
+    },
+    {
+      "table_id": "T09_item19_table2_summary",
+      "source_item": "Item 19",
+      "source_pages": [60, 61, 62, 63],
+      "title": "2024 Gross Sales — PDR Businesses Operating <2 Years (Summary)",
+      "category": "financial_performance",
+      "columns": ["Metric", "Value"],
+      "rows": [
+        ["Total reported gross sales", "$79,430,092"],
+        ["Number of franchises", "45"],
+        ["Median gross sales per franchise", "$1,006,593"],
+        ["Average gross sales per franchise", "$1,765,113"],
+        ["% attaining or surpassing average", "31% (14 of 45)"],
+        ["Highest", "$10,557,726 (Cleveland Metro West)"],
+        ["Lowest reporting", "$6,899 (Mid-Hudson Valley, opened Oct 2024)"],
+        ["Territories reporting $0 (consolidated/new)", "22"]
+      ],
+      "table_notes": [
+        "Many territories opened mid-2024 or later, reporting partial-year sales.",
+        "22 territories excluded from calculations (consolidated reporting or recently opened).",
+        "Letters (a)–(t) identify consolidated relationships."
+      ],
+      "provenance": "Extracted from Item 19 Table 2, PDF pages 60-63"
+    },
+    {
+      "table_id": "T10_item19_table5_resale_valuations",
+      "source_item": "Item 19",
+      "source_pages": [64],
+      "title": "Resale Valuations During 2024",
+      "category": "financial_performance",
+      "columns": ["Closing Date", "Selling Price", "Sales Prior 12 Months", "Price/Sales Ratio", "Population", "Price/Capita", "Related"],
+      "rows": [
+        ["3/5/2024", "$425,000", "$273,917", "1.55", "690,869", "$0.615", "No"],
+        ["3/28/2024", "$740,000", "$67,171", "11.02", "841,768", "$0.88", "No"],
+        ["4/2/2024", "$586,000", "$202,666", "2.89", "642,583", "$0.912", "No"],
+        ["5/31/2024", "$425,000", "$1,106,488", "0.38", "723,225", "$0.588", "No"],
+        ["7/1/2024", "$2,529,000", "$3,914,740", "0.65", "467,367", "$5.41", "No"],
+        ["7/1/2024", "$2,529,000", "$3,914,740", "0.65", "601,989", "$4.21", "No"],
+        ["7/31/2024", "$565,000", "$1,717,188", "0.33", "518,681", "$1.09", "No"],
+        ["8/28/2024", "$2,000,000", "$4,539,714", "0.44", "751,050", "$2.66", "No"],
+        ["9/12/2024", "$300,360", "$3,437,662", "0.09", "225,899", "$1.33", "No"],
+        ["10/4/2024", "$65,000", "$409,431", "0.16", "636,662", "$0.102", "No"],
+        ["11/15/2024", "$7,188,835", "$561,120", "12.82", "537,505", "$13.37", "No"],
+        ["11/15/2024", "$7,188,835", "$9,550,731", "0.75", "1,071,846", "$6.71", "No"],
+        ["11/15/2024", "$7,188,835", "$9,550,731", "0.75", "751,050", "$9.57", "No"],
+        ["11/15/2024", "$7,188,835", "$9,550,731", "0.75", "458,605", "$15.70", "No"],
+        ["11/15/2024", "$7,188,835", "$4,155,961", "1.73", "769,469", "$9.34", "No"],
+        ["11/15/2024", "$7,188,835", "$4,539,714", "1.58", "457,337", "$15.70", "No"],
+        ["12/23/2024", "$3,100,000", "$4,198,037", "0.74", "560,166", "$5.53", "No"]
+      ],
+      "table_notes": [
+        "3 sales were of combined operations reported as one transaction.",
+        "The 6 transactions on 11/15/2024 at $7,188,835 each appear to be a single multi-franchise package.",
+        "No related-party transactions disclosed.",
+        "Price-to-sales ratios range widely from 0.09 to 12.82."
+      ],
+      "provenance": "Extracted from Item 19 Table 5, PDF page 64"
+    },
+    {
+      "table_id": "T11_item20_table1_systemwide",
+      "source_item": "Item 20",
+      "source_pages": [65],
+      "title": "Systemwide Outlet Summary (2022-2024)",
+      "category": "outlet_data",
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "211", "224", "+13"],
+        ["Franchised", "2023", "224", "245", "+21"],
+        ["Franchised", "2024", "245", "266", "+21"],
+        ["Company-Owned", "2022", "0", "0", "0"],
+        ["Company-Owned", "2023", "0", "0", "0"],
+        ["Company-Owned", "2024", "0", "0", "0"],
+        ["Total", "2022", "212", "224", "+12"],
+        ["Total", "2023", "224", "245", "+21"],
+        ["Total", "2024", "245", "266", "+21"]
+      ],
+      "table_notes": [
+        "Note: 2022 Total start (212) differs from Franchised start (211) by 1 — possibly a data entry issue or Emergency Services franchise.",
+        "Strong consistent growth: +55 net franchises over 3 years."
+      ],
+      "provenance": "Extracted from Item 20 Table 1, PDF page 65"
+    },
+    {
+      "table_id": "T12_item20_table2_transfers",
+      "source_item": "Item 20",
+      "source_pages": [65, 66, 67],
+      "title": "Transfers of Outlets (2022-2024)",
+      "category": "outlet_data",
+      "columns": ["Year", "Total Transfers"],
+      "rows": [
+        ["2022", "20"],
+        ["2023", "14"],
+        ["2024", "17"]
+      ],
+      "table_notes": [
+        "Transfers occurred across 20 states in 2024.",
+        "Massachusetts had highest 2024 transfers (5)."
+      ],
+      "provenance": "Extracted from Item 20 Table 2, PDF pages 65-67"
+    },
+    {
+      "table_id": "T13_item20_table3_status_totals",
+      "source_item": "Item 20",
+      "source_pages": [67, 68, 69, 70],
+      "title": "Status of Franchised Outlets — Totals (2022-2024)",
+      "category": "outlet_data",
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        ["2022", "211", "20", "7", "0", "0", "0", "224"],
+        ["2023", "224", "25", "3", "1", "0", "0", "245"],
+        ["2024", "245", "28", "6", "1", "0", "0", "266"]
+      ],
+      "table_notes": [
+        "All franchises listed by state of office; territory may extend into multiple states.",
+        "* Some 2024 openings were conversions from Paul Davis Emergency Services franchises.",
+        "Termination rate declining relative to system size (3.3% in 2022, 1.2% in 2023, 2.3% in 2024)."
+      ],
+      "provenance": "Extracted from Item 20 Table 3, PDF pages 67-70"
+    },
+    {
+      "table_id": "T14_item20_table5_projected",
+      "source_item": "Item 20",
+      "source_pages": [70, 71],
+      "title": "Projected Openings as of December 31, 2024",
+      "category": "outlet_data",
+      "columns": ["Metric", "Value"],
+      "rows": [
+        ["Franchise Agreements signed but not opened", "6"],
+        ["Projected new franchised outlets next fiscal year", "26"],
+        ["Projected company-owned outlets next fiscal year", "0"]
+      ],
+      "table_notes": [
+        "Heavy California pipeline (10 projected).",
+        "Other states with projected openings: AR(1), FL(2), IN(1), IA(1), LA(1), MI(3), MT(1), NJ(1), NY(2), OR(1), TX(2)."
+      ],
+      "provenance": "Extracted from Item 20 Table 5, PDF pages 70-71"
+    },
+    {
+      "table_id": "T15_item21_balance_sheet",
+      "source_item": "Item 21 / Exhibit B-1",
+      "source_pages": [93, 94],
+      "title": "FS Brands, Inc. Consolidated Balance Sheet (Dec 31, 2024 vs 2023)",
+      "category": "financial_statements",
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        ["Cash and cash equivalents", "$81,752,083", "$74,395,379"],
+        ["Accounts receivable (net)", "$98,370,150", "$73,640,316"],
+        ["Inventories", "$44,747,610", "$46,944,449"],
+        ["Total current assets", "$269,431,927", "$230,477,580"],
+        ["Property and equipment", "$64,308,483", "$58,187,454"],
+        ["Intangible assets", "$35,099,730", "$39,809,871"],
+        ["Goodwill", "$137,179,959", "$135,209,812"],
+        ["Operating lease ROU asset", "$65,005,041", "$61,114,454"],
+        ["Total assets", "$591,191,911", "$544,168,844"],
+        ["Accounts payable", "$31,540,435", "$20,246,247"],
+        ["Accrued liabilities", "$69,999,391", "$70,223,561"],
+        ["Deferred revenue and deposits (current)", "$39,806,903", "$42,470,440"],
+        ["Due to ultimate parent", "$21,744,502", "$23,166,961"],
+        ["Total current liabilities", "$180,882,490", "$169,269,535"],
+        ["Total liabilities", "$281,262,019", "$262,284,061"],
+        ["Non-controlling interests", "$72,477,028", "$66,979,653"],
+        ["Common stock", "$1", "$1"],
+        ["Additional paid-in capital", "$29,529,067", "$29,529,067"],
+        ["Retained earnings", "$207,923,796", "$185,376,062"],
+        ["Total stockholders' equity", "$237,452,864", "$214,905,130"],
+        ["Total liabilities + equity + NCI", "$591,191,911", "$544,168,844"]
+      ],
+      "table_notes": [
+        "FS Brands, Inc. is the parent of PDRI — consolidated across all subsidiaries (California Closets, CertaPro, FCI, Pillar to Post, etc.).",
+        "No external long-term debt.",
+        "Goodwill $137M — significant portion of total assets.",
+        "$30M dividend paid in 2024 (first dividend in recent period)."
+      ],
+      "provenance": "Extracted from Exhibit B-1, PDF pages 93-94"
+    },
+    {
+      "table_id": "T16_item21_income_statement",
+      "source_item": "Item 21 / Exhibit B-1",
+      "source_pages": [95],
+      "title": "FS Brands, Inc. Consolidated Income Statement (FY2024 vs FY2023)",
+      "category": "financial_statements",
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        ["Royalties", "$99,791,571", "$99,564,101"],
+        ["Franchise fees", "$7,396,575", "$6,131,358"],
+        ["Merchandise sales", "$645,220,204", "$584,521,531"],
+        ["Services and other", "$97,957,315", "$91,982,256"],
+        ["Total revenue", "$850,365,665", "$782,199,246"],
+        ["Franchise operating", "$43,037,230", "$41,994,603"],
+        ["Cost of merchandise sales", "$447,715,916", "$417,539,405"],
+        ["Cost of services", "$14,386,988", "$7,575,789"],
+        ["General and administrative", "$227,676,089", "$211,319,558"],
+        ["Management fees to parent", "$7,540,176", "$6,772,822"],
+        ["Depreciation and amortization", "$27,270,896", "$29,188,378"],
+        ["Total costs and expenses", "$767,627,295", "$714,390,555"],
+        ["Income from operations", "$82,738,370", "$67,808,691"],
+        ["Interest income", "$663,746", "$0"],
+        ["Interest expense", "$0", "($257,558)"],
+        ["Income before income taxes", "$83,402,116", "$67,551,133"],
+        ["Provision for income taxes", "$23,297,857", "$17,567,609"],
+        ["Net income", "$60,104,259", "$49,983,524"],
+        ["NCI share of earnings", "($2,463,477)", "($2,982,184)"],
+        ["NCI redemption increment", "($5,093,012)", "($6,143,537)"],
+        ["Net income to common stockholders", "$52,547,770", "$40,857,803"]
+      ],
+      "table_notes": [
+        "Revenue grew 8.7% YoY ($782M to $850M).",
+        "Operating income grew 22.0% YoY ($67.8M to $82.7M).",
+        "Operating margin: 9.7% (2024) vs 8.7% (2023).",
+        "Effective tax rate: 27.9% (2024) vs 26.0% (2023).",
+        "Merchandise sales dominate revenue (75.9% of total) — reflects company-owned operations of other brands.",
+        "Management fees to parent: $7.5M (2024)."
+      ],
+      "provenance": "Extracted from Exhibit B-1, PDF page 95"
+    }
+  ]
+}

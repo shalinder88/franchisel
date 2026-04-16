@@ -1,0 +1,153 @@
+{
+  "depth_pass": "contract_burdens",
+  "extraction_date": "2026-04-14",
+  "filing_id": "637909-2025",
+  "brand": "Delah Coffee",
+  "source_pages": [74, 180],
+  "agreement": "Franchise Agreement (Exhibit E)",
+  "articles": 19,
+  "burdens": {
+    "grant_and_term": {
+      "term_years": 10,
+      "grant_type": "Non-exclusive license to develop and operate one Shop",
+      "territory_conditions": "Not exclusive; subject to Reserved Rights; Designated Territory per Schedule 1",
+      "sales_restrictions": "On-premises, carryout, delivery within territory, catering within territory only",
+      "franchisor_can_prohibit": "Soliciting customers outside territory; delivery outside territory",
+      "source_pages": [89, 90]
+    },
+    "fee_obligations": {
+      "initial_franchise_fee": 35000,
+      "royalty": "4.5% weekly",
+      "bdf": "Up to 2% weekly (currently $0)",
+      "local_marketing": "1% monthly",
+      "technology": "Up to $500/month (currently $0)",
+      "payment_non_compliance": "$150 per occurrence + 18% interest + collection costs",
+      "nsf_fee": "5% or $50 whichever greater",
+      "application_of_payments": "Franchisor sole discretion to apply payments to any indebtedness",
+      "withholding_unlawful": "Franchisee may NEVER withhold payments, even claiming franchisor non-performance",
+      "source_pages": [102, 103]
+    },
+    "site_selection_and_construction": {
+      "site_selection_deadline": "120 days to secure approved location",
+      "opening_deadline": "10 months from effective date",
+      "failure_consequence": "Termination without refund (with 30-day cure)",
+      "lease_rider_required": true,
+      "collateral_assignment_of_lease": true,
+      "source_pages": [91, 92]
+    },
+    "training_obligations": {
+      "initial_training": "2 weeks, 80 hours, mandatory for Managing Owner + 1 manager",
+      "must_complete_45_days_before_opening": true,
+      "replacement_manager_training": "Required, at franchisee cost ($300/day)",
+      "system_wide_training": "Up to 5 days/year, all costs on franchisee",
+      "failure_to_complete": "Non-curable default (termination)",
+      "source_pages": [96, 97]
+    },
+    "operational_obligations": {
+      "operations_manual_compliance": "Mandatory, subject to unilateral modification",
+      "hours_of_operation": "Franchisor-controlled",
+      "pricing": "Franchisor may set max, min, and promotional prices",
+      "approved_products_only": true,
+      "data_access": "Franchisor has independent access to all business data",
+      "digital_media": "All accounts must be assigned to franchisor",
+      "source_pages": [95, 96]
+    },
+    "termination_triggers": {
+      "non_curable_defaults": [
+        "3+ curable defaults even if cured each time",
+        "Intentional/knowing refusal to comply",
+        "Health/safety violations",
+        "Abandonment or failure to maintain lease",
+        "Material misrepresentation in application",
+        "Intentionally misleading/false records",
+        "Unauthorized transfer or attempted transfer",
+        "Disclosure of Operations Manual or confidential info",
+        "Conduct injurious to brand",
+        "Breach of Owner/Spouse Agreement",
+        "Felony conviction or plea",
+        "Dishonest/unethical conduct embarrassing to brand",
+        "Failure to complete training",
+        "Failure to protect confidential info",
+        "Misuse of Licensed Marks",
+        "Insolvency, bankruptcy, assignment for creditors",
+        "Execution levied against business; unsatisfied judgment 30 days",
+        "Dissolution",
+        "Foreclosure on equipment lien not dismissed in 60 days",
+        "Anti-terrorism law non-compliance"
+      ],
+      "curable_10_day": ["Failure to pay any fees/obligations (if not intentional)", "Failure to pay suppliers without legal justification"],
+      "curable_30_day": ["Failure to lease/develop/open/operate per standards", "Insurance lapse", "Operational non-compliance"],
+      "source_pages": [130, 131, 132]
+    },
+    "transfer_restrictions": {
+      "requires_prior_written_consent": true,
+      "consent_discretionary": true,
+      "transfer_fee": 10000,
+      "conditions": ["30-day notice", "No default", "Transferee must meet all requirements", "Transferee training", "General release", "ROFR waived", "Asset transfer", "Written approval"],
+      "rofr": "Franchisor may match any third-party offer",
+      "source_pages": [122, 123]
+    },
+    "noncompete_scope": {
+      "during_term": "No ownership, operation, management, funding, or services for any Competitive Business; no diversion of customers; 3% publicly-traded exception",
+      "post_term_duration": "24 months (tolled during non-compliance)",
+      "post_term_geography": "Restricted Territory = Designated Territory + 25-mile radius + 10-mile radius of any other Delah Coffee Shop territory",
+      "applies_to": "Franchisee, all Owners, all Spouses",
+      "source_pages": [103, 104]
+    },
+    "guaranty": {
+      "scope": "All Owners and Spouses must guarantee ALL obligations under FA",
+      "form": "Owner and Spouse Agreement and Guaranty (FA Exhibit 1)",
+      "unlimited": true,
+      "spousal": true,
+      "survives_transfer": true,
+      "source_pages": [89, 103]
+    },
+    "liquidated_damages": {
+      "explicit_clause": false,
+      "note": "FA Art. 18.J waives punitive/exemplary/consequential/speculative damages BUT carves out lost profits/fees that would have been payable absent breach. This effectively allows franchisor to claim remaining-term royalties as damages.",
+      "source_pages": [141]
+    },
+    "venue_and_dispute_resolution": {
+      "mediation": "Non-binding, AAA, Alameda County CA, within 45 days of mediator selection",
+      "arbitration": "Binding, AAA, one arbitrator, Alameda County CA, within 180 days of demand",
+      "injunctive_relief": "Franchisor may bypass mediation/arbitration for injunctive claims",
+      "consent_to_jurisdiction": "Alameda County CA courts; franchisor may also sue where business located or franchisee resides",
+      "governing_law": "California (excluding choice-of-law rules and state franchise statutes unless independently applicable)",
+      "source_pages": [139, 140, 141]
+    },
+    "insurance_requirements": {
+      "property": "100% of value, special form, $5K max deductible",
+      "cgl": "$1M/$2M",
+      "workers_comp": "Statutory/$1M",
+      "auto": "$1M",
+      "business_interruption": "12 months",
+      "umbrella": "$1M",
+      "cyber": "$1M",
+      "epl": "$2M ($100K wage/hour)",
+      "franchisor_named_insured": true,
+      "30_day_cancellation_notice": true,
+      "proof_required": "Earlier of 90 days after effective date or before training",
+      "source_pages": [110, 111]
+    },
+    "indemnification": {
+      "franchisee_indemnifies_franchisor": true,
+      "scope": "All claims arising from franchisee's operation, except franchisor's gross negligence or willful misconduct",
+      "franchisor_indemnifies_franchisee": "Only for trademark infringement if franchisee in compliance",
+      "source_pages": [116, 117, 119]
+    },
+    "force_majeure": {
+      "clause_present": true,
+      "payment_obligation_excluded": "Force majeure does NOT excuse payment of any fees including royalty and BDF",
+      "max_excuse_period": "6 months",
+      "source_pages": [138]
+    },
+    "distinctive_clauses": [
+      {"clause": "Withholding payments unlawful (Art. 5.F)", "description": "Franchisee may NEVER withhold payments even if claiming franchisor non-performance", "source_pages": [102]},
+      {"clause": "Variances (Art. 18.H)", "description": "Franchisor may grant different terms to different franchisees at sole discretion; franchisee has no right to same treatment", "source_pages": [141]},
+      {"clause": "No class action (Art. 18.O)", "description": "Both parties waive right to class action or multi-party proceedings", "source_pages": [142]},
+      {"clause": "No right to offset (Art. 18.T)", "description": "Franchisee has no right to offset any amount owed to franchisor", "source_pages": [143]},
+      {"clause": "Limitations of claims (Art. 18.I)", "description": "2-year statute from act, or 1-year from discovery, whichever first (excludes franchisor payment claims, noncompete, indemnification)", "source_pages": [141]},
+      {"clause": "Continuing obligations post-transfer (Art. 17.C)", "description": "Transfer does NOT relieve franchisee or owners/spouses of obligations", "source_pages": [137]}
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637914-2025",
+  "brand": "Iron Valley Real Estate",
+  "enrichment_version": "v2",
+  "item_21_financial_structure_detail": {
+    "balance_sheet_composition": {
+      "total_assets_2024": 545349,
+      "cash_as_pct_of_assets": 58.0,
+      "rou_asset_as_pct_of_assets": 30.8,
+      "deferred_revenue_total": 254470,
+      "deferred_revenue_as_pct_of_liabilities": 59.4,
+      "lease_liability_total": 167986,
+      "no_interest_bearing_debt": true,
+      "net_working_capital_2024": 197419
+    },
+    "profitability_trajectory": {
+      "operating_margin_2024": 9.6,
+      "operating_margin_2023": 6.3,
+      "operating_margin_2022": -10.2,
+      "revenue_cagr_2yr": 31.6,
+      "revenue_per_franchise_outlet_2024": 39970
+    },
+    "distribution_history": {
+      "2024": 35000,
+      "2023": 80400,
+      "2022": 0,
+      "note": "2023 distribution appears to be repayment of $80,400 member loan from 2022"
+    },
+    "member_equity_trajectory": {
+      "2021_end": 24497,
+      "2022_end": -60544,
+      "2023_end": -54062,
+      "2024_end": 116710,
+      "years_negative": "2022-2023"
+    }
+  },
+  "item_21_statement_detail": {
+    "income_statement_major_expenses": {
+      "payroll": {"2024": 541577, "2023": 488200, "2022": 465365},
+      "technology_provider": {"2024": 412165, "2023": 349945, "2022": 174394},
+      "legal_professional": {"2024": 139917, "2023": 97881, "2022": 61791},
+      "advertising": {"2024": 129866, "2023": 146547, "2022": 182155},
+      "office_expenses": {"2024": 113535, "2023": 58569, "2022": 61316},
+      "rent": {"2024": 84711, "2023": 74861, "2022": 54784},
+      "retirement_plan": {"2024": 59438, "2023": 38423, "2022": 67435},
+      "travel_meals": {"2024": 38715, "2023": 22822, "2022": 39679},
+      "royalty_rebates": {"2024": 34725, "2023": 2700, "2022": 0},
+      "credit_loss": {"2024": 19509, "2023": 0, "2022": 0}
+    },
+    "cash_flow_highlights": {
+      "no_interest_paid": true,
+      "no_taxes_paid": true,
+      "capex_2024": 5399,
+      "capex_2023": 2771,
+      "capex_minimal": true
+    },
+    "key_accounting_notes": {
+      "revenue_recognition": "ASC 606: Franchise fees recognized straight-line over 5-year FA term. Royalties when earned ($150/transaction side). Marketing fees when earned.",
+      "lease_accounting": "ASC 842: Single HQ lease, 5-year term, 6.67% IBR, ROU asset $167,986",
+      "cecl": "Adopted ASC 326 in 2024. No transition adjustment. $19,509 credit loss expense.",
+      "deferred_finders_fees": "Amortized over FA term. $4,100 at 12/31/2024.",
+      "related_party": "$80,400 due from members at 12/31/2022 (non-interest-bearing demand loan), repaid in 2023."
+    }
+  },
+  "item_6_fee_detail": {
+    "fee_count": 17,
+    "per_transaction_royalty": {
+      "amount_per_side": 150,
+      "illustrative_annual_at_200_sides": 30000,
+      "illustrative_effective_rate": "0.83% of gross commission on $300K property at 6% rate"
+    },
+    "marketing_fund": {
+      "audited": false,
+      "admin_fee_pct": 15,
+      "collected_2024": 25850,
+      "spent_2024": 129866,
+      "franchisor_subsidized": true,
+      "spending_allocation": "100% media placement",
+      "no_franchisee_council": true,
+      "no_cooperative": true
+    },
+    "technology_costs": {
+      "pos_per_agent_monthly": 2.60,
+      "pos_per_admin_monthly": 10,
+      "ringcentral_monthly": "73-165",
+      "office365_annual": 240,
+      "pos_replacement_cap": 5000,
+      "maintenance_annual": "500-1,000"
+    }
+  }
+}

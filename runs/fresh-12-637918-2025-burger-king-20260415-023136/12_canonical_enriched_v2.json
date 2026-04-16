@@ -1,0 +1,122 @@
+{
+  "enrichment_version": "v2",
+  "fdd_id": "637918-2025",
+  "brand": "Burger King",
+
+  "item21_financial_structure_detail": {
+    "reporting_entity": "Restaurant Brands International Inc. (consolidated)",
+    "subsidiary_of_note": "Restaurant Brands International Limited Partnership",
+    "auditor": "KPMG LLP",
+    "audit_opinion": "Unqualified",
+    "audit_date": "2025-02-21",
+    "ic_opinion": "Effective (Carrols excluded)",
+    "debt_instruments": "Senior Notes and variable rate term debt via 1011778 B.C. Unlimited Liability Company (Parent Issuer) and New Red Finance Inc. (Co-Issuer)",
+    "debt_fair_value_M": 13090,
+    "debt_principal_carrying_M": 13651,
+    "segments": ["TH", "BK", "PLK", "FHS", "INTL", "RH"],
+    "bk_segment_income_M": {"2024": 410, "2023": 386, "2022": 396},
+    "adjusted_operating_income_M": {"2024": 2402, "2023": 2200, "2022": 2084},
+    "interest_paid_M": {"2024": 785, "2023": 761, "2022": 487},
+    "income_taxes_paid_M": {"2024": 293, "2023": 290, "2022": 275},
+    "dividends_per_share": {"2024": 2.32, "2023": 2.20, "2022": 2.16},
+    "share_repurchases_M": {"2024": 0, "2023": 500, "2022": 326},
+    "advertising_expense_consolidated_M": {"2024": 1268, "2023": 1201, "2022": 1032},
+    "bad_debt_expense_M": {"2024": 24, "2023": 20, "2022": 19},
+    "depreciation_amortization_M": {"2024": 264, "2023": 191, "2022": 190}
+  },
+
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "cash": 1334,
+      "accounts_receivable_net": 698,
+      "inventories": 142,
+      "total_current_assets": 2282,
+      "property_equipment_net": 2236,
+      "operating_lease_assets": 1852,
+      "intangible_assets": 10922,
+      "goodwill": 5986,
+      "other_assets": 1354,
+      "total_assets": 24632,
+      "accounts_payable": 765,
+      "other_accrued_liabilities": 1141,
+      "gift_card_liability": 236,
+      "current_debt_finance_leases": 222,
+      "total_current_liabilities": 2364,
+      "long_term_debt": 13455,
+      "finance_leases_lt": 286,
+      "operating_lease_liabilities_lt": 1770,
+      "other_liabilities": 706,
+      "deferred_income_taxes": 1208,
+      "total_liabilities": 19789,
+      "common_shares_amount": 2357,
+      "retained_earnings": 1860,
+      "aoci": -1107,
+      "rbi_shareholders_equity": 3110,
+      "noncontrolling_interests": 1733,
+      "total_equity": 4843,
+      "shares_outstanding": 324426589
+    },
+    "income_statement_2024": {
+      "supply_chain_sales": 2708,
+      "company_restaurant_sales": 1592,
+      "franchise_property_revenues": 2919,
+      "advertising_revenues_other": 1187,
+      "total_revenues": 8406,
+      "supply_chain_cost_of_sales": 2180,
+      "company_restaurant_expenses": 1328,
+      "franchise_property_expenses": 544,
+      "advertising_expenses_other": 1330,
+      "general_administrative": 733,
+      "equity_method_income": 69,
+      "other_operating_income": 59,
+      "total_operating_costs": 5987,
+      "income_from_operations": 2419,
+      "interest_expense_net": 577,
+      "loss_early_extinguishment": 33,
+      "income_before_tax": 1809,
+      "income_tax_expense": 364,
+      "net_income": 1445,
+      "net_income_to_nci": 424,
+      "net_income_to_common": 1021,
+      "diluted_eps": 3.18
+    },
+    "cash_flow_2024": {
+      "operating": 1503,
+      "capex": -201,
+      "carrols_acquisition": -508,
+      "investing": -660,
+      "dividends_distributions": -1029,
+      "debt_proceeds": 2450,
+      "debt_repayments": -2190,
+      "financing": -625,
+      "fx_effect": -23,
+      "net_change_cash": 195,
+      "cash_end": 1334
+    }
+  },
+
+  "item6_fee_detail": {
+    "royalty_programs": [
+      {"program": "Standard", "rate": "4.5%"},
+      {"program": "2024 Multi-Unit DIP", "year1": "2.5%", "year2": "3.0%", "year3": "3.5%", "year4": "3.5%", "year5": "4.0%", "year6_plus": "4.5%"},
+      {"program": "DA (FSS A/B)", "reduction_year1": "2.5%", "reduction_year7_plus": "None"},
+      {"program": "DA (FSS D/F)", "reduction": "None"},
+      {"program": "RTF2 Remodel", "rate": "Negotiated or elected 4.5%-6.0%"},
+      {"program": "Crown Your Career (w/ BKC remodel)", "rate": "Standard + 1-5% additional"},
+      {"program": "Deferred Remodel Default", "rate": "6.0% or 7.5%"}
+    ],
+    "advertising_programs": [
+      {"program": "Standard", "rate": "4.5%"},
+      {"program": "2024 Multi-Unit DIP", "year1": "2.0%", "year2": "2.5%", "year3": "3.0%", "year4": "3.0%", "year5": "3.5%", "year6_plus": "Base Fee"},
+      {"program": "DA (FSS A/B)", "reduction_year1": "2.0%", "reduction_year7_plus": "None"},
+      {"program": "Fuel the Flame", "rate": "4.5% through Dec 2026; may revert to 4.0% if avg EBITDA <$230K"}
+    ],
+    "rent_formulas": {
+      "bkl_owned_minimum": "10% of capitalized site acquisition + construction costs",
+      "bkl_owned_escalation": "12% every 5 years",
+      "bkl_leased_minimum": "125% of BKC rent + 10% of capitalized costs",
+      "percentage_rent": "8.5% up to $133,333/mo Gross Sales, then 10% above",
+      "successor_bkl_owned": "Greater of 85% trailing 12mo rent OR 12% increase on current base"
+    }
+  }
+}

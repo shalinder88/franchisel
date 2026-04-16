@@ -1,0 +1,133 @@
+{
+  "depth_pass": "state_addenda_structured_promotion",
+  "source_pages": [214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236],
+  "states_with_addenda": ["CA", "IL", "WA", "WI"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "interest_rate",
+      "override_summary": "Maximum interest rate capped at 10% per annum (vs. 18% in standard agreement)",
+      "why_it_matters": "Reduces late payment penalty exposure for California franchisees",
+      "source_pages": [216]
+    },
+    {
+      "state": "California",
+      "affected_family": "noncompete",
+      "override_summary": "Post-term covenant not to compete might not be enforceable under California law",
+      "why_it_matters": "California franchisees may be able to open competing breakfast restaurants after leaving the system",
+      "source_pages": [216]
+    },
+    {
+      "state": "California",
+      "affected_family": "governing_law",
+      "override_summary": "Oregon governing law provision may not be enforceable under California law",
+      "why_it_matters": "California courts may apply California law rather than Oregon law to disputes",
+      "source_pages": [216]
+    },
+    {
+      "state": "California",
+      "affected_family": "damages",
+      "override_summary": "Liquidated damages clause may be unenforceable under California Civil Code Section 1671",
+      "why_it_matters": "The lost revenue damages provision (NPV of 5 years of fees) may be challenged in California",
+      "source_pages": [216]
+    },
+    {
+      "state": "California",
+      "affected_family": "general_release",
+      "override_summary": "Corporations Code §31512 and §31512.1 restrict effectiveness of general releases and disclaimers. Any provision disclaiming franchisor representations, reliance on FDD, or violations of franchise law is void and unenforceable.",
+      "why_it_matters": "California franchisees retain broader legal protections upon renewal and transfer despite release requirements",
+      "source_pages": [217]
+    },
+    {
+      "state": "California",
+      "affected_family": "termination",
+      "override_summary": "California Business and Professions Code Sections 20000-20043 provide rights concerning termination, transfer, or nonrenewal that override inconsistent agreement provisions",
+      "why_it_matters": "California franchisees have statutory protections against arbitrary termination",
+      "source_pages": [216]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "governing_law",
+      "override_summary": "Illinois law applies (replacing Oregon), except for Federal Arbitration Act and other federal laws",
+      "why_it_matters": "Illinois franchisees benefit from Illinois franchise law protections rather than Oregon law",
+      "source_pages": [217, 222, 229]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "forum_selection",
+      "override_summary": "Any provision designating jurisdiction and venue outside Illinois is void. However, arbitration may take place outside Illinois.",
+      "why_it_matters": "Illinois franchisees cannot be forced to litigate in Oregon courts, though arbitration in Oregon remains possible",
+      "source_pages": [217, 222, 229]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "termination",
+      "override_summary": "Franchisee rights upon termination and non-renewal governed by Sections 19 and 20 of the Illinois Franchise Disclosure Act",
+      "why_it_matters": "Illinois franchisees have statutory protections that override contract termination provisions",
+      "source_pages": [218]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "general_release",
+      "override_summary": "Any condition purporting to waive compliance with IFDA or any other Illinois law is void (Section 41)",
+      "why_it_matters": "General releases required at renewal/transfer cannot waive rights under Illinois law",
+      "source_pages": [218]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration/mediation site must be in Washington State (or mutually agreed location) if franchise purchased in WA. Litigation may be brought in Washington.",
+      "why_it_matters": "Washington franchisees are not required to travel to Oregon for dispute resolution",
+      "source_pages": [219, 225, 232]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "governing_law",
+      "override_summary": "Washington Franchise Investment Protection Act (FIPA) prevails in any conflict with the agreement. RCW 19.100.180 may supersede agreement regarding termination and renewal.",
+      "why_it_matters": "Washington franchise law provides potentially stronger protections than Oregon law",
+      "source_pages": [219, 225, 232]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "noncompete",
+      "override_summary": "Noncompete void and unenforceable against employees earning <$100,000/year (adjusted for inflation) and independent contractors earning <$250,000/year. No-poach provisions entirely void.",
+      "why_it_matters": "Most restaurant employees would be below the $100K threshold, effectively eliminating employee noncompetes. No-poach restrictions eliminated entirely.",
+      "source_pages": [220, 225, 232]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "general_release",
+      "override_summary": "Release or waiver may not include rights under the FIPA except when executed pursuant to a negotiated settlement with independent counsel after agreement is in effect",
+      "why_it_matters": "Standard general releases at renewal/transfer cannot waive WA franchise law rights",
+      "source_pages": [219, 225, 232]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "damages",
+      "override_summary": "Transfer fees limited to the extent they reflect reasonable estimated or actual costs in effecting a transfer",
+      "why_it_matters": "The transfer fee of 50% of then-current IFF or greater of 3%/$20K may be challenged if it exceeds actual costs",
+      "source_pages": [220, 225, 232]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "termination",
+      "override_summary": "RCW 19.100.180 may supersede agreement regarding termination and renewal. Court decisions may also supersede.",
+      "why_it_matters": "Washington law provides additional termination protections beyond what the agreement allows",
+      "source_pages": [219, 225]
+    }
+  ],
+  "summary_table": {
+    "override_families": ["forum_selection", "governing_law", "noncompete", "general_release", "termination", "interest_rate", "damages"],
+    "states_affected": {
+      "forum_selection": ["IL", "WA"],
+      "governing_law": ["CA", "IL", "WA"],
+      "noncompete": ["CA", "WA"],
+      "general_release": ["CA", "IL", "WA"],
+      "termination": ["CA", "IL", "WA"],
+      "interest_rate": ["CA"],
+      "damages": ["CA", "WA"]
+    }
+  },
+  "total_overrides": 16,
+  "canonical_patched": true
+}

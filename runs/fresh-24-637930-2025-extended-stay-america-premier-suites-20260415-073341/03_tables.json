@@ -1,0 +1,448 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "Extended Stay America Premier Suites",
+  "filing_id": "637930-2025",
+  "tables": [
+    {
+      "table_id": "T5-1",
+      "item": 5,
+      "title": "Initial Fees Summary",
+      "source_pages": [16, 17],
+      "columns": ["Fee", "Amount", "Refundable"],
+      "rows": [
+        ["Initial Franchise Fee", "$50,000", "No"],
+        ["Development Fee", "$50,000 × number of hotels (min 2)", "No"],
+        ["Pre-Opening PIP Fee", "$2,000 (credited to IFF)", "No"],
+        ["Extension Fee", "$5,000 per 90-day extension", "No"],
+        ["Pre-Opening Training (GM Cert)", "$1,900/person", "No"],
+        ["New Owner Orientation", "$1,900/person", "No"],
+        ["Pre-Opening Onsite Training", "$2,500", "No"],
+        ["Project Management Fee", "$5,000 + third-party costs", "No"],
+        ["IT Certification Fee", "$2,000-$5,000 + third-party costs", "No"],
+        ["Construction Site Visit Fee (new build)", "$6,000", "No"],
+        ["Construction Site Visit Fee (conversion)", "$2,000/visit", "No"],
+        ["IT Site Visit Fee", "$2,000/visit (up to 2)", "No"],
+        ["Pre-Opening Inspection", "At cost", "No"]
+      ],
+      "table_notes": [
+        "During prior fiscal year, franchisees paid Initial Franchise Fees of $40,000",
+        "Franchisor may negotiate IFF based on multi-hotel incentives, market, property size, existing relationship",
+        "Additional training available at $200/hour plus travel/lodging"
+      ]
+    },
+    {
+      "table_id": "T6-1",
+      "item": 6,
+      "title": "Other Fees Table",
+      "source_pages": [18, 19, 20, 21, 22, 23, 24, 25],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty", "5.5% of Gross Room Revenue", "15th of following month", ""],
+        ["System Services", "4.5% of Gross Room Revenue", "15th of following month", ""],
+        ["Project Management Fee", "$5,000 + third-party fees", "Half at HTA signing, remainder on invoice", ""],
+        ["IT Vendor Certification Fee", "$2,000-$5,000 + third-party fees", "Before evaluation", "Only if using unapproved vendor"],
+        ["Liquidated damages (pre-opening)", "$5,000/day", "Lump sum", "If opened before authorized Opening Date"],
+        ["PIP Fee", "$2,000 (may increase up to 10%/year)", "Before PIP inspection", "For inspection and PIP preparation"],
+        ["PIP Compliance Fee", "$2,000 (may increase up to 10%/year)", "At inspection", "Travel costs for PIP compliance inspection"],
+        ["Training", "Varies (increases capped at 10%/year)", "On demand", "GM Cert $1,900/person; hourly $200/hr"],
+        ["Booking and Commissions", "Varies", "Monthly", "OTA/GDS pass-throughs"],
+        ["Agoda Marketing Fee", "0.6% of GRR per Agoda booking", "On demand", "In addition to commission"],
+        ["Digital Marketing Commission", "5% of paid-digital GRR", "Monthly", "Starting 2025"],
+        ["Actual damages", "Varies", "On demand", "Certain termination circumstances"],
+        ["QA Re-Inspection Fee", "Up to $1,000 + expenses", "On demand", "If fail QA audit"],
+        ["Remedial Training Fee", "$4,000-$6,500 (may increase 10%/year)", "Before training", "If fail QA"],
+        ["Guest Complaint Fee", "$150 + guest compensation", "On demand", "If complaint not resolved within 72 hours"],
+        ["Audit", "Actual deficiency + interest", "On demand", "If underpayment found; plus audit costs"],
+        ["Default Remedies", "Reimbursement of expenses", "Case by case", "Attorneys' fees, court costs"],
+        ["Indemnification", "All liabilities/costs/attorneys' fees", "On demand", "Data breaches, third-party claims"],
+        ["Insurance", "Actual amount", "On demand", "If franchisor obtains insurance for you"],
+        ["Insurance Procurement Penalty", "Cost + other costs", "As incurred", "If you fail to maintain required insurance"],
+        ["Liquidated damages (early termination - pre-opening)", "# rooms × $3,000", "Within 10 days of termination", "After Effective Date but before Opening"],
+        ["Liquidated damages (early termination - 1st year)", "Avg monthly royalty × 60", "Within 10 days", "After Opening but before end of 1st year"],
+        ["Liquidated damages (early termination - >5 yrs remaining)", "5 × annual royalty (prior 12 months)", "Within 10 days", "After 1st year with >5 years remaining"],
+        ["Liquidated damages (early termination - <5 yrs remaining)", "Remaining days × avg daily royalty", "Within 10 days", "Less than 5 years remaining"],
+        ["Interest on Late Payments", "1.5%/month (or max by law)", "On demand", "Accrues from original due date"],
+        ["Public Offering/Private Placement", "Third-party costs", "With request", ""],
+        ["Taxes", "Actual amounts", "On demand", "If sales/use/gross receipts tax imposed"],
+        ["Comfort Letter", "$2,000 (may increase 10%/year)", "With request", "First may be free"],
+        ["Room Addition Fee", "$500/room (may increase 10%/year)", "Upon approval", ""],
+        ["Supplier Review Fee", "At cost", "Upon invoice", ""],
+        ["Consultation Services", "Hourly rate + costs", "Upon invoice", "Only if you request"],
+        ["Costs of Enforcement", "All costs including attorneys' fees", "Upon demand", ""],
+        ["Transfer Fee", "Then-current IFF", "Before transfer", ""],
+        ["Assumption Fee", "$1,500-$5,000 (may increase 10%/year)", "With notice", "Minority ownership changes"],
+        ["PMS License Fee", "$2.20/room/month", "Monthly", "Pass-through to supplier"],
+        ["PMS Hosting Fee", "$1.00/room/month", "Monthly", "Pass-through to supplier"],
+        ["PMS Support Fee", "$0.67/room/month", "Monthly", "Pass-through to supplier"],
+        ["AHLA Dues", "$3.00/room/year", "Annually", "Opt-out available by Jan 1"],
+        ["Annual Conference", "$1,200/attendee (may increase)", "Before conference", "1 attendee mandatory; capped at avg cost"],
+        ["Photography", "$950 (may increase)", "Before appointment", "If additional or updated photography needed"]
+      ],
+      "table_notes": [
+        "NOTE 1: Gross Room Revenue defined as revenues from use/occupancy of guestrooms including barter/credit, loyalty point redemptions, mandatory guest fees, group rebates, business interruption proceeds, no-show revenue, cancellation fees; excluding taxes, vending, laundry. Must use Uniform System of Accounts 11th Edition.",
+        "NOTE 2: System Services Fee used for advertising, ESA Website, reservation systems, QA, national sales, revenue management, IT, training, market research, franchisee support, administration. Pooled with other ESA brands. No obligation to spend in any specific market or year collected.",
+        "NOTE 3: Commissions/fees pass-throughs for OTA, GDS, travel agents, national accounts.",
+        "NOTE 4: Digital Marketing Commission charged on GRR from reservations via paid digital channels (search ads, metasearch, social media, affiliate marketing). Was not charged in 2024 but goes into effect beginning 2025.",
+        "NOTE 5: Liquidated damages calculated using full royalty/SSF rates even if temporary reductions were given. Condemnation/casualty events also trigger liquidated damages and insurance proceeds sharing."
+      ],
+      "provenance": "Item 6 fee table, pages 18-25 (printed pages 10-17)"
+    },
+    {
+      "table_id": "T7-1",
+      "item": 7,
+      "title": "Estimated Initial Investment — New Construction Hotel (125 rooms)",
+      "source_pages": [26, 27],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Franchise Fee", "$50,000", "$50,000", "Lump Sum", "Upon execution of FA", "Us"],
+        ["Market and Feasibility Study", "$5,000", "$10,000", "As required", "As required", "Supplier"],
+        ["Environmental Study", "$1,900", "$3,000", "As required", "Before purchase", "Supplier"],
+        ["Real Property", "Not estimated", "Not estimated", "As incurred", "As incurred", "As incurred"],
+        ["Permit, Tap, Impact Fees", "As incurred", "As incurred", "As incurred", "As incurred", "Local govt"],
+        ["Improvements", "$8,600,000", "$13,020,000", "As incurred", "As incurred", "Suppliers"],
+        ["Professional Fees", "$150,000", "$300,000", "As incurred", "As incurred", "Suppliers"],
+        ["Insurance (3 months)", "$19,600", "$70,000", "As arranged", "As arranged", "Agent/Insurer"],
+        ["Licenses", "$25", "$10,000", "As imposed", "Before opening", "Govt agencies"],
+        ["FF&E", "$640,000", "$750,000", "As arranged", "As arranged", "Suppliers"],
+        ["OS&E", "$150,000", "$230,000", "As arranged", "As arranged", "Suppliers"],
+        ["Technology and Entertainment", "$196,184", "$266,981", "As arranged", "As arranged", "Us and Suppliers"],
+        ["Pre-Opening Training", "$1,900", "$10,500", "Lump sum", "As incurred", "Us"],
+        ["Other Pre-Opening Expenses", "$55,000", "$120,000", "As incurred", "As incurred", "Suppliers"],
+        ["Extension Fees", "$0", "$5,000", "Lump sum", "With extension approval", "Us"],
+        ["Additional Funds (3 months)", "$175,000", "$250,000", "As incurred", "As incurred", "N/A"],
+        ["IT Certification Fee", "$0", "$6,000", "As arranged", "Before approval process", "Us"],
+        ["Construction Site Visit Fees", "$6,000", "$10,000", "As arranged", "As arranged", "Us"],
+        ["IT Site Visit Fees", "$2,000", "$4,000", "As arranged", "Before first visit", "Us"]
+      ],
+      "total_low": "$10,058,979",
+      "total_high": "$15,123,386",
+      "table_notes": [
+        "Based on 125-room hotel",
+        "Excludes real property costs",
+        "Excludes site work (varies widely)",
+        "Improvements based on suburban location",
+        "No financing offered by franchisor",
+        "2.0+ acres required for 125-room/4-story prototype"
+      ],
+      "provenance": "Item 7 new construction table, pages 26-29 (printed pages 18-21)"
+    },
+    {
+      "table_id": "T7-2",
+      "item": 7,
+      "title": "Estimated Initial Investment — Conversion Hotel (100 rooms)",
+      "source_pages": [29, 30, 31, 32],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Franchise Fee", "$50,000", "$50,000", "Lump Sum", "Upon execution of FA", "Us"],
+        ["Market and Feasibility Study", "$5,000", "$15,000", "As required", "As required", "Supplier"],
+        ["Environmental Study", "$0", "$3,000", "As required", "Before purchase", "Supplier"],
+        ["Real Property", "Not estimated", "Not estimated", "As incurred", "As incurred", "As incurred"],
+        ["Facility Renovation", "$100,000", "$3,800,000", "As incurred", "As incurred", "Suppliers"],
+        ["Professional Fees", "$0", "$50,000", "As incurred", "As incurred", "Suppliers"],
+        ["Insurance", "$0", "$70,000", "As arranged", "As arranged", "Agent/Insurer"],
+        ["Licenses", "$0", "$10,000", "As imposed", "Before opening", "Govt agencies"],
+        ["FF&E", "$55,000", "$750,000", "As arranged", "As arranged", "Suppliers"],
+        ["OS&E", "$20,000", "$185,484", "As arranged", "As arranged", "Suppliers"],
+        ["Technology and Entertainment", "$78,759", "$255,481", "As arranged", "As arranged", "Us and Suppliers"],
+        ["Pre-Opening Training", "$1,900", "$10,500", "Lump sum", "As incurred", "Us"],
+        ["Other Pre-Opening Expenses", "$10,000", "$120,000", "As incurred", "As incurred", "Suppliers"],
+        ["Extension Fees", "$0", "$5,000", "Lump sum", "With extension approval", "Us"],
+        ["Additional Funds (3 months)", "$0", "$250,000", "As incurred", "As incurred", "N/A"],
+        ["Construction Site Visit Fees", "$0", "$6,000", "As arranged", "As arranged", "Us"],
+        ["IT Site Visit Fees", "$2,000", "$4,000", "As arranged", "As arranged", "Us"],
+        ["IT Certification Fee", "$0", "$6,000", "As arranged", "Before approval process", "Us"]
+      ],
+      "total_low": "$322,659",
+      "total_high": "$5,590,465",
+      "table_notes": [
+        "Based on 100-room conversion of existing extended stay hotel with kitchens",
+        "Excludes real property costs",
+        "Low estimates assume existing property already owned with satisfactory insurance, licenses, etc.",
+        "Does not include cost of adding kitchens to transient hotel",
+        "No financing offered by franchisor"
+      ],
+      "provenance": "Item 7 conversion table, pages 29-32 (printed pages 21-24)"
+    },
+    {
+      "table_id": "T19-1",
+      "item": 19,
+      "title": "Brand Hotel Operating Metrics (2024)",
+      "source_pages": [60, 61],
+      "population": "41 Brand Hotels (32 owned + 9 franchised) operating full 12 months ending 12/31/2024",
+      "columns": ["Metric", "Average", "% at/exceeding", "# at/exceeding", "Median"],
+      "rows": [
+        ["Occupancy", "77.4%", "56%", "23", "79.4%"],
+        ["ADR", "$93.84", "49%", "20", "$93.16"],
+        ["RevPAR", "$72.60", "49%", "20", "$72.34"],
+        ["EsOcc", "54.8%", "61%", "25", "57.0%"]
+      ],
+      "table_notes": [
+        "Occupancy: total rooms sold / total rooms available",
+        "ADR: hotel room revenues / total rooms sold",
+        "RevPAR: ADR × occupancy",
+        "EsOcc: rooms with 7+ consecutive night guests / total rooms available",
+        "Combined owned + franchised because franchise sample (9 hotels) too small and 'not materially different'",
+        "Room rates, demand, and operating expenses vary significantly by location"
+      ],
+      "provenance": "Item 19 Table 19-1, pages 60-61"
+    },
+    {
+      "table_id": "T19-2",
+      "item": 19,
+      "title": "Brand Hotel Contribution Percentages by Reservation Channel (2024)",
+      "source_pages": [61],
+      "columns": ["Reservation Channel", "2024 Contribution"],
+      "rows": [
+        ["esa.com", "25.7%"],
+        ["Call Center", "24.9%"],
+        ["OTA", "22.3%"],
+        ["Property Direct", "21.0%"],
+        ["GDS", "4.9%"],
+        ["Opaque", "1.1%"]
+      ],
+      "table_notes": [
+        "Call Center includes calls to property forwarded to and booked by Call Center",
+        "Does not include group business or rooms booked through regional/national sales offices"
+      ],
+      "provenance": "Item 19 Table 19-2, page 61"
+    },
+    {
+      "table_id": "T19-3",
+      "item": 19,
+      "title": "Brand Hotels Length of Stay (2024)",
+      "source_pages": [62],
+      "columns": ["Consumed Room Nights", "Percentage"],
+      "rows": [
+        ["0-6 Nights", "29.1%"],
+        ["7-29 Nights", "24.2%"],
+        ["30+ Nights", "46.8%"]
+      ],
+      "table_notes": [
+        "Length of Stay = total consumed room nights for a guest stay"
+      ],
+      "provenance": "Item 19 Table 19-3, page 62"
+    },
+    {
+      "table_id": "T19-4",
+      "item": 19,
+      "title": "Brand Hotels B2B Revenue from 7+ Night Stays (2024)",
+      "source_pages": [62],
+      "population": "41 Brand Hotels",
+      "columns": ["Metric", "Average", "% at/exceeding", "# at/exceeding", "Median"],
+      "rows": [
+        ["B2B Sales (7+ Revenue %)", "91.0%", "49%", "20", "90.7%"]
+      ],
+      "table_notes": [
+        "B2B = business-to-business bookings via national sales team targeting 7+ night stays"
+      ],
+      "provenance": "Item 19 Table 19-4, page 62"
+    },
+    {
+      "table_id": "T20-1",
+      "item": 20,
+      "title": "System-wide Hotel Summary (2022-2024)",
+      "source_pages": [63],
+      "columns": ["Hotel Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "0", "3", "+3"],
+        ["Franchised", "2023", "3", "9", "+6"],
+        ["Franchised", "2024", "9", "17", "+8"],
+        ["Company-Owned", "2022", "25", "25", "0"],
+        ["Company-Owned", "2023", "25", "32", "+7"],
+        ["Company-Owned", "2024", "32", "32", "0"],
+        ["Total", "2022", "25", "28", "+3"],
+        ["Total", "2023", "28", "41", "+13"],
+        ["Total", "2024", "41", "49", "+8"]
+      ],
+      "table_notes": [
+        "2023 franchised: 2 rebranded from ESA Suites brand",
+        "2023 company-owned: 6 rebranded from ESA Suites brand"
+      ],
+      "provenance": "Item 20 Table 1, page 63"
+    },
+    {
+      "table_id": "T20-2",
+      "item": 20,
+      "title": "Transfers of Franchised Hotels (2022-2024)",
+      "source_pages": [64],
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        ["All States", "2022", "0"],
+        ["All States", "2023", "0"],
+        ["All States", "2024", "0"]
+      ],
+      "table_notes": ["All numbers as of December 31 of applicable year"],
+      "provenance": "Item 20 Table 2, page 64"
+    },
+    {
+      "table_id": "T20-3",
+      "item": 20,
+      "title": "Status of Franchised Hotels by State (2022-2024)",
+      "source_pages": [64, 65],
+      "columns": ["State", "Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased-Other", "End"],
+      "rows": [
+        ["California", "2024", "1", "0", "0", "0", "0", "0", "1"],
+        ["Colorado", "2024", "0", "1", "0", "0", "0", "0", "1"],
+        ["Florida", "2024", "0", "2", "0", "0", "0", "0", "2"],
+        ["Georgia", "2024", "1", "0", "0", "0", "0", "0", "1"],
+        ["Idaho", "2024", "1", "0", "0", "0", "0", "0", "1"],
+        ["Montana", "2024", "0", "1", "0", "0", "0", "0", "1"],
+        ["Nevada", "2024", "1", "0", "0", "0", "0", "0", "1"],
+        ["North Carolina", "2024", "0", "1", "0", "0", "0", "0", "1"],
+        ["Ohio", "2024", "1", "0", "0", "0", "0", "0", "1"],
+        ["Oregon", "2024", "0", "1", "0", "0", "0", "0", "1"],
+        ["Pennsylvania", "2024", "1", "0", "0", "0", "0", "0", "1"],
+        ["South Carolina", "2024", "1", "0", "0", "0", "0", "0", "1"],
+        ["Tennessee", "2024", "0", "1", "0", "0", "0", "0", "1"],
+        ["Virginia", "2024", "2", "1", "0", "0", "0", "0", "3"],
+        ["Total", "2024", "9", "8", "0", "0", "0", "0", "17"]
+      ],
+      "table_notes": [
+        "Zero terminations, non-renewals, reacquisitions, or ceased operations across all 3 years",
+        "2023: 2 hotels rebranded from ESA Suites (1 CA, 1 VA)"
+      ],
+      "provenance": "Item 20 Table 3, pages 64-65"
+    },
+    {
+      "table_id": "T20-4",
+      "item": 20,
+      "title": "Status of Company-Owned Hotels by State (2022-2024)",
+      "source_pages": [66],
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisees", "End"],
+      "rows": [
+        ["Arizona", "2024", "1", "0", "0", "0", "0", "1"],
+        ["California", "2024", "5", "0", "0", "0", "0", "5"],
+        ["Florida", "2024", "17", "0", "0", "0", "0", "17"],
+        ["Georgia", "2024", "2", "0", "0", "0", "0", "2"],
+        ["North Carolina", "2024", "1", "0", "0", "0", "0", "1"],
+        ["Rhode Island", "2024", "1", "0", "0", "0", "0", "1"],
+        ["South Carolina", "2024", "2", "0", "0", "0", "0", "2"],
+        ["Tennessee", "2024", "1", "0", "0", "0", "0", "1"],
+        ["Texas", "2024", "1", "0", "0", "0", "0", "1"],
+        ["Washington", "2024", "1", "0", "0", "0", "0", "1"],
+        ["Total", "2024", "32", "0", "0", "0", "0", "32"]
+      ],
+      "table_notes": [
+        "2023: 1 new construction (FL) + 6 rebranded from ESA Suites (1 CA, 5 FL)"
+      ],
+      "provenance": "Item 20 Table 4, page 66"
+    },
+    {
+      "table_id": "T20-5",
+      "item": 20,
+      "title": "Projected Openings as of December 31, 2024",
+      "source_pages": [67],
+      "columns": ["State", "FA Signed Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        ["Arizona", "3", "2", "0"],
+        ["California", "3", "0", "0"],
+        ["Colorado", "5", "3", "0"],
+        ["Connecticut", "1", "0", "0"],
+        ["Florida", "11", "3", "0"],
+        ["Georgia", "4", "0", "0"],
+        ["Indiana", "2", "0", "0"],
+        ["Illinois", "1", "0", "0"],
+        ["Mississippi", "1", "0", "0"],
+        ["South Carolina", "1", "0", "0"],
+        ["Tennessee", "2", "0", "0"],
+        ["Texas", "5", "3", "0"],
+        ["Virginia", "1", "1", "0"],
+        ["Wisconsin", "1", "0", "0"],
+        ["Total", "41", "12", "0"]
+      ],
+      "table_notes": ["States not listed have no projected openings"],
+      "provenance": "Item 20 Table 5, page 67"
+    },
+    {
+      "table_id": "T21-BS",
+      "item": 21,
+      "title": "Balance Sheets as of December 31, 2024 and 2023",
+      "source_pages": [202],
+      "columns": ["Line Item", "2024 ($K)", "2023 ($K)"],
+      "rows": [
+        ["Cash and cash equivalents", "9,170", "8,537"],
+        ["Accounts receivable", "1,911", "2,423"],
+        ["Net investment in leases (current)", "260", "358"],
+        ["Other current assets", "239", "212"],
+        ["Total current assets", "11,580", "11,530"],
+        ["Intangible assets (net)", "5,371", "6,028"],
+        ["Net investment in leases (non-current)", "0", "303"],
+        ["Contract acquisition costs", "2,227", "2,292"],
+        ["Total non-current assets", "7,598", "8,623"],
+        ["TOTAL ASSETS", "19,178", "20,153"],
+        ["Accounts payable and accrued liabilities", "881", "1,214"],
+        ["Due to affiliates", "2,770", "4,776"],
+        ["Deferred revenue (current)", "132", "92"],
+        ["Total current liabilities", "3,783", "6,082"],
+        ["Accrued liabilities (non-current)", "2,490", "3,114"],
+        ["Deferred revenue (non-current)", "4,710", "4,386"],
+        ["Total non-current liabilities", "7,200", "7,500"],
+        ["Total liabilities", "10,983", "13,582"],
+        ["Member's Capital", "8,195", "6,571"],
+        ["TOTAL LIABILITIES AND MEMBER'S CAPITAL", "19,178", "20,153"]
+      ],
+      "table_notes": [
+        "In thousands",
+        "Intangible assets net of accumulated amortization of $1,885K (2024) and $959K (2023)"
+      ],
+      "provenance": "Exhibit D, page 202 (financial statement page 3)"
+    },
+    {
+      "table_id": "T21-IS",
+      "item": 21,
+      "title": "Statements of Operations for Years Ended December 31, 2024 and 2023",
+      "source_pages": [203],
+      "columns": ["Line Item", "2024 ($K)", "2023 ($K)"],
+      "rows": [
+        ["Franchise fees", "9,391", "7,124"],
+        ["System service fees", "10,888", "8,619"],
+        ["Direct expense reimbursements", "3,057", "2,372"],
+        ["Other revenues", "2,482", "324"],
+        ["Total revenues", "25,818", "18,439"],
+        ["System service expenses", "12,188", "10,560"],
+        ["Direct reimbursable expenses", "3,057", "2,372"],
+        ["General and administrative expenses", "7,697", "6,929"],
+        ["Trademark license expenses", "429", "351"],
+        ["Amortization expense", "910", "399"],
+        ["Total operating expenses", "24,281", "20,611"],
+        ["NET INCOME (LOSS)", "1,537", "(2,172)"]
+      ],
+      "table_notes": [
+        "In thousands",
+        "Other revenues in 2024 include $2.1M in contract termination fees (vs $0.2M in 2023)"
+      ],
+      "provenance": "Exhibit D, page 203 (financial statement page 4)"
+    },
+    {
+      "table_id": "T21-CF",
+      "item": 21,
+      "title": "Statements of Cash Flows for Years Ended December 31, 2024 and 2023",
+      "source_pages": [205],
+      "columns": ["Line Item", "2024 ($K)", "2023 ($K)"],
+      "rows": [
+        ["Net income (loss)", "1,537", "(2,172)"],
+        ["Non-cash member contributions", "87", "350"],
+        ["Amortization expense", "910", "399"],
+        ["Loss on disposal of intangible assets", "13", "0"],
+        ["Accounts receivable", "512", "(717)"],
+        ["Net investment in leases", "401", "471"],
+        ["Contract acquisition costs", "65", "(962)"],
+        ["Due to affiliates", "(2,006)", "2,460"],
+        ["Other assets", "(30)", "(64)"],
+        ["Deferred revenue", "364", "2,072"],
+        ["Accounts payable and accrued liabilities", "(698)", "76"],
+        ["Net cash from operations", "1,155", "1,913"],
+        ["Payments for intangible assets", "(522)", "(89)"],
+        ["Member contributions", "0", "3,000"],
+        ["Net increase in cash", "633", "4,824"],
+        ["Cash beginning", "8,537", "3,713"],
+        ["Cash ending", "9,170", "8,537"]
+      ],
+      "table_notes": [
+        "In thousands",
+        "Non-cash investing: $355K intangible asset expenditures in AP (2024); $1,998K (2023)"
+      ],
+      "provenance": "Exhibit D, page 205 (financial statement page 6)"
+    }
+  ]
+}

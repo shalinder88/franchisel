@@ -1,0 +1,343 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637911-2025",
+  "brand": "Ivan Ramen",
+  "tables": [
+    {
+      "table_id": "T01_item6_other_fees",
+      "source_item": 6,
+      "source_pages": [10, 11, 12, 13, 14],
+      "title": "Other Fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Continuing Royalty", "amount": "5% of Gross Revenues", "due": "Monthly, 15th of next month", "remarks": "Fixed during FA term. Gross Revenues defined in FA Section 5.05."},
+        {"fee": "System Brand Contribution", "amount": "Up to 1.5% of Gross Revenues", "due": "Same as royalty", "remarks": "Fund not yet formed. Will not exceed 1.5% during term."},
+        {"fee": "System Technology Fee", "amount": "Up to 1.0% of Gross Revenues (currently 0%)", "due": "Same as royalty", "remarks": "Reserved right; currently not charged."},
+        {"fee": "Proprietary Products", "amount": "$7,333/month estimated", "due": "On order", "remarks": "Noodles $2,750/mo; dashi/specialty $1,250/mo; soup concentrates $3,333/mo."},
+        {"fee": "Proprietary Software Costs", "amount": "Currently none", "due": "TBD", "remarks": "No charge for initial license; may charge for updates."},
+        {"fee": "Testing Fee", "amount": "$1,000-$1,500", "due": "On request", "remarks": "For testing proposed alternative supplier products/services."},
+        {"fee": "Initial Training", "amount": "Included for up to 6 people; additional: $2,500/person", "due": "Before training; expenses as incurred", "remarks": "Training at NYC location; franchisee pays all travel/lodging."},
+        {"fee": "On-Site Training and Assistance", "amount": "$2,500/day", "due": "On request", "remarks": "Optional; not required to be provided."},
+        {"fee": "Insurance Reimbursement", "amount": "$55,000-$65,000/year (if franchisor pays)", "due": "As carrier requires", "remarks": "Franchisee pays insurer directly; franchisor may pay if franchisee fails."},
+        {"fee": "Relocation Analysis", "amount": "Up to $5,000", "due": "On request", "remarks": "Franchisor's reasonable costs of considering relocation request."},
+        {"fee": "Taxes", "amount": "Varies", "due": "Promptly when due", "remarks": "All taxes except franchisor's corporate income taxes."},
+        {"fee": "Advances", "amount": "Varies", "due": "On request", "remarks": "Amounts advanced to third parties on franchisee's behalf."},
+        {"fee": "Late Charge", "amount": "3% of overdue amount; $50/month for late financials", "due": "On request", "remarks": "CA max 10% annually. Formula fixed during FA term."},
+        {"fee": "Audit Expenses", "amount": "Varies", "due": "Per Note 4", "remarks": "Franchisee pays if Gross Revenue understatement ≥2%."},
+        {"fee": "Successor Term Fee", "amount": "$35,000", "due": "Before signing successor FA", "remarks": "See Item 17."},
+        {"fee": "Transfer Fee (FA)", "amount": "$10,000", "due": "Before approval", "remarks": "See Item 17."},
+        {"fee": "Transfer Fee (ADA)", "amount": "$10,000", "due": "Before approval", "remarks": "See Item 17."},
+        {"fee": "Transfer Related Costs", "amount": "Varies", "due": "When incurred", "remarks": "Investigation costs, landlord consent, etc."},
+        {"fee": "Securities Offering Review", "amount": "$10,000+", "due": "When incurred", "remarks": "Review of franchisee's proposed securities offering."},
+        {"fee": "Management Fee (Death/Disability)", "amount": "Greater of 2x salary or 10% of weekly Gross Revenue", "due": "See remarks", "remarks": "If franchisor operates business on behalf of estate; in addition to royalties."},
+        {"fee": "Indemnification", "amount": "Varies", "due": "When incurred", "remarks": "FA Section 8.10."},
+        {"fee": "Application of Funds", "amount": "Varies", "due": "When received", "remarks": "Franchisor can apply payments to oldest obligation."},
+        {"fee": "Attorneys'/Experts' Fees", "amount": "Varies", "due": "Promptly when due", "remarks": "Broad recovery in enforcement actions."}
+      ],
+      "table_notes": [
+        "All fees are nonrefundable and uniformly imposed unless otherwise stated.",
+        "Note 1: If Alcohol Restriction Law applies, increased non-alcohol percentages required to equalize fees.",
+        "Note 2: Proprietary software license included in IFF; franchisee pays for updates.",
+        "Note 3: Insurance premiums vary by location, creditworthiness, risk profile.",
+        "Note 4: If understatement ≥2%, franchisee pays audit + amounts due + interest. If ≥8%, franchisor can terminate.",
+        "Note 5: Broad attorneys' fees recovery in enforcement, third-party litigation, and default termination."
+      ]
+    },
+    {
+      "table_id": "T02_item7_single_unit",
+      "source_item": 7,
+      "source_pages": [15, 16],
+      "title": "Estimated Initial Investment — Single Ivan Ramen Restaurant",
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"item": "Initial Franchise Fee", "low": 35000, "high": 35000, "to": "Franchisor"},
+        {"item": "Training expenses", "low": 10000, "high": 15000, "to": "Airlines, hotels, etc."},
+        {"item": "Real property (lease)", "low": 60000, "high": 180000, "to": "Landlord"},
+        {"item": "Construction/leasehold improvements", "low": 500000, "high": 1100000, "to": "Supplier/landlord"},
+        {"item": "Office equipment, décor, furnishings, fixtures", "low": 75000, "high": 75000, "to": "Approved suppliers"},
+        {"item": "Computer hardware/software/POS", "low": 3600, "high": 3600, "to": "Supplier"},
+        {"item": "Inventory to begin operating", "low": 20000, "high": 27000, "to": "Supplier"},
+        {"item": "Security deposits, utility deposits, licenses, permits, prepaid", "low": 15000, "high": 25000, "to": "Agency"},
+        {"item": "Professional fees (legal, accounting)", "low": 10000, "high": 15000, "to": "Accountant/Attorney"},
+        {"item": "Uniforms", "low": 300, "high": 500, "to": "Supplier"},
+        {"item": "Signs", "low": 5000, "high": 10000, "to": "Supplier"},
+        {"item": "Insurance", "low": 55000, "high": 65000, "to": "Insurance agent"},
+        {"item": "Opening advertising", "low": 0, "high": 15000, "to": "Suppliers"},
+        {"item": "Pre-opening payroll", "low": 85600, "high": 116000, "to": "Employees"},
+        {"item": "Additional funds (3 months)", "low": 150000, "high": 300000, "to": "Employees, suppliers"}
+      ],
+      "total": {"low": 1024500, "high": 1982100},
+      "table_notes": [
+        "None of the expenses are fully refundable unless otherwise stated.",
+        "Note 2: Assumes 6 initial trainees, training in NYC.",
+        "Note 3: 2,500-3,500 sq ft; high-traffic urban; based on NYC experience.",
+        "Note 4: Construction varies; franchisor provides sample layout/specs.",
+        "Note 5: POS $3,000 start + $600/month (Toast).",
+        "Note 6: Initial inventory includes proprietary products ($6,833 estimated).",
+        "Note 13: Pre-opening payroll breakdown: Ops Manager 2mo ($65K-$75K/yr), Chef 2mo, Sous Chef 1.5mo, AGM 1mo ($50K-$60K), 22 BOH 3wk ($16-22/hr), FOH 2wk ($7.50-$15/hr).",
+        "Note 14: Additional funds exclude owner salary; covers 3 months operations."
+      ]
+    },
+    {
+      "table_id": "T03_item7_ada_multiunit",
+      "source_item": 7,
+      "source_pages": [19],
+      "title": "Estimated Initial Investment — ADA (3-10 Units)",
+      "columns": ["Type of Expenditure", "Low", "High", "To Whom"],
+      "rows": [
+        {"item": "Area Development Fee", "low": 115000, "high": 350000, "to": "Franchisor"},
+        {"item": "Professional Fees - Legal", "low": 2000, "high": 5000, "to": "Attorney/Accountant"},
+        {"item": "Additional investment for one Restaurant (minus $35K IFF credit)", "low": 989500, "high": 1947100, "to": "Various"}
+      ],
+      "total": {"low": 1106500, "high": 2302100},
+      "table_notes": [
+        "Low end: 3 units ($35K × 3 = $105K ADA fee). High end: 10 units ($35K × 10 = $350K).",
+        "ADA fee is fully earned when paid and non-refundable.",
+        "Each unit requires the full initial investment from Table T02, minus the $35K IFF credit."
+      ]
+    },
+    {
+      "table_id": "T04_item11_training",
+      "source_item": 11,
+      "source_pages": [33, 34],
+      "title": "Training Program",
+      "columns": ["Subject", "Classroom Hours", "On-the-Job Hours", "Location"],
+      "rows": [
+        {"subject": "Intro to Ramen and Ivan Ramen", "classroom": 2, "otj": 0, "location": "NYC training facility"},
+        {"subject": "Prep Training", "classroom": 0, "otj": 20, "location": "NYC training facility"},
+        {"subject": "Line Training", "classroom": 0, "otj": 20, "location": "NYC training facility"},
+        {"subject": "Ingredients", "classroom": 2, "otj": 0, "location": "NYC training facility"},
+        {"subject": "Inventory", "classroom": 2, "otj": 0, "location": "NYC training facility"},
+        {"subject": "Negi Machine", "classroom": 0, "otj": 1, "location": "NYC training facility"},
+        {"subject": "Front of House Training", "classroom": 0, "otj": 10, "location": "NYC training facility"},
+        {"subject": "Host", "classroom": 0, "otj": 8, "location": "NYC training facility"},
+        {"subject": "Server", "classroom": 0, "otj": 8, "location": "NYC training facility"},
+        {"subject": "Manager on Duty", "classroom": 0, "otj": 20, "location": "NYC training facility"},
+        {"subject": "POS Training", "classroom": 1, "otj": 0, "location": "NYC training facility"},
+        {"subject": "Business Administration/Financial Management", "classroom": 4, "otj": 0, "location": "NYC training facility"},
+        {"subject": "Human Resources", "classroom": 4, "otj": 0, "location": "NYC training facility"},
+        {"subject": "Marketing, Advertising, Promotion", "classroom": 4, "otj": 0, "location": "NYC training facility"}
+      ],
+      "totals": {"classroom": 19, "otj": 87, "total": 106},
+      "table_notes": [
+        "Program currently 5 days in length.",
+        "Conducted approximately twice per year at NYC headquarters/restaurant.",
+        "Mandatory for franchisee, Operations Manager, Trainer, and Chef.",
+        "Up to 6 people included in IFF; additional trainees $2,500/person.",
+        "Instructors: minimum 1 year field experience and 1 year in Ivan Ramen operations."
+      ]
+    },
+    {
+      "table_id": "T05_item20_systemwide_summary",
+      "source_item": 20,
+      "source_pages": [57],
+      "title": "Table No. 1 — Systemwide Outlet Summary (2022–2024)",
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 0, "end": 0, "change": 0},
+        {"type": "Franchised", "year": 2023, "start": 0, "end": 1, "change": 1},
+        {"type": "Franchised", "year": 2024, "start": 1, "end": 0, "change": -1},
+        {"type": "Company-Owned", "year": 2022, "start": 1, "end": 1, "change": 0},
+        {"type": "Company-Owned", "year": 2023, "start": 1, "end": 1, "change": 0},
+        {"type": "Company-Owned", "year": 2024, "start": 1, "end": 1, "change": 0},
+        {"type": "Total", "year": 2022, "start": 1, "end": 1, "change": 0},
+        {"type": "Total", "year": 2023, "start": 1, "end": 2, "change": 1},
+        {"type": "Total", "year": 2024, "start": 2, "end": 1, "change": -1}
+      ],
+      "table_notes": [
+        "The 2023 franchised outlet was a DoorDash ghost kitchen, not an Ivan Ramen Restaurant.",
+        "Outlets outside of U.S./territories/possessions are not counted."
+      ]
+    },
+    {
+      "table_id": "T06_item20_transfers",
+      "source_item": 20,
+      "source_pages": [57],
+      "title": "Table No. 2 — Transfers of Franchised Outlets (2022–2024)",
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        {"state": "All States", "year": 2022, "transfers": 0},
+        {"state": "All States", "year": 2023, "transfers": 0},
+        {"state": "All States", "year": 2024, "transfers": 0}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T07_item20_franchised_status",
+      "source_item": 20,
+      "source_pages": [58],
+      "title": "Table No. 3 — Status of Franchised Outlets (2022–2024)",
+      "columns": ["State", "Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased-Other", "End"],
+      "rows": [
+        {"state": "New York", "year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+        {"state": "New York", "year": 2023, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "New York", "year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 1, "end": 0}
+      ],
+      "table_notes": [
+        "If multiple events occurred affecting an outlet, table shows the event that occurred last in time.",
+        "The 2024 cessation was a DoorDash ghost kitchen that ceased operations."
+      ]
+    },
+    {
+      "table_id": "T08_item20_company_owned_status",
+      "source_item": 20,
+      "source_pages": [58],
+      "title": "Table No. 4 — Status of Company-Owned Outlets (2022–2024)",
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        {"state": "New York", "year": 2022, "start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+        {"state": "New York", "year": 2023, "start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+        {"state": "New York", "year": 2024, "start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1}
+      ],
+      "table_notes": [
+        "If multiple events occurred affecting an outlet, table shows the event that occurred last in time."
+      ]
+    },
+    {
+      "table_id": "T09_item20_projected_openings",
+      "source_item": 20,
+      "source_pages": [59],
+      "title": "Table No. 5 — Projected Openings as of December 31, 2024",
+      "columns": ["State", "Signed Not Opened", "Projected New Franchise", "Projected New Company"],
+      "rows": [
+        {"state": "Nevada", "signed_not_open": 1, "projected_franchise": 0, "projected_company": 0},
+        {"state": "New York", "signed_not_open": 0, "projected_franchise": 1, "projected_company": 0},
+        {"state": "Total", "signed_not_open": 1, "projected_franchise": 1, "projected_company": 0}
+      ],
+      "table_notes": [
+        "Nevada: Venetian Las Vegas Gaming LLC (food hall, smaller than typical, streamlined menu).",
+        "No other current US franchisees for Ivan Ramen Restaurants.",
+        "No franchisees terminated, canceled, non-renewed, transferred, or ceased in most recently completed FY.",
+        "No confidentiality clauses restricting franchisee discussions.",
+        "No trademark-specific franchisee organizations."
+      ]
+    },
+    {
+      "table_id": "T10_item21_balance_sheet_2024",
+      "source_item": 21,
+      "source_pages": [277],
+      "title": "Balance Sheet — December 31, 2024",
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        {"item": "Cash and cash equivalents", "amount": 5992},
+        {"item": "Total Current Assets", "amount": 5992},
+        {"item": "Due from related parties", "amount": 27048},
+        {"item": "Total Other Assets", "amount": 27048},
+        {"item": "Total Assets", "amount": 33040},
+        {"item": "Accrued expenses", "amount": 12000},
+        {"item": "Total Current Liabilities", "amount": 12000},
+        {"item": "Unearned revenue", "amount": 20000},
+        {"item": "Total Other Liabilities", "amount": 20000},
+        {"item": "Members' equity", "amount": 1040},
+        {"item": "Total Liabilities and Members' Equity", "amount": 33040}
+      ],
+      "table_notes": ["Audited by BMKR LLP."]
+    },
+    {
+      "table_id": "T11_item21_income_2024",
+      "source_item": 21,
+      "source_pages": [278],
+      "title": "Statement of Income — Year Ended December 31, 2024",
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        {"item": "Franchise fees revenue", "amount": 5000},
+        {"item": "Total Revenue", "amount": 5000},
+        {"item": "General and administrative expenses", "amount": 81856},
+        {"item": "Total Costs and Operating Expenses", "amount": 81856},
+        {"item": "Operating Loss", "amount": -76856},
+        {"item": "Net Loss", "amount": -76856}
+      ],
+      "table_notes": ["No interest income or expense. No income tax provision (pass-through entity)."]
+    },
+    {
+      "table_id": "T12_item21_cash_flow_2024",
+      "source_item": 21,
+      "source_pages": [280],
+      "title": "Statement of Cash Flows — Year Ended December 31, 2024",
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        {"item": "Net loss", "amount": -76856},
+        {"item": "Decrease in accounts payable", "amount": -4648},
+        {"item": "Decrease in accrued expenses", "amount": -2400},
+        {"item": "Increase in unearned revenue", "amount": 20000},
+        {"item": "Net cash used in operating activities", "amount": -63904},
+        {"item": "Due from related parties (investing)", "amount": -69346},
+        {"item": "Net cash used in investing activities", "amount": -69346},
+        {"item": "Net decrease in cash", "amount": -133250},
+        {"item": "Cash beginning of year", "amount": 139242},
+        {"item": "Cash end of year", "amount": 5992}
+      ],
+      "table_notes": [
+        "Cash decreased from $139,242 to $5,992 during 2024.",
+        "$69,346 lent to related parties (investing outflow).",
+        "$120,000 capital contribution in Feb 2025 (subsequent event)."
+      ]
+    },
+    {
+      "table_id": "T13_item21_balance_sheet_2023",
+      "source_item": 21,
+      "source_pages": [290],
+      "title": "Balance Sheet — December 31, 2023",
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        {"item": "Cash and cash equivalents", "amount": 139242},
+        {"item": "Total Current Assets", "amount": 139242},
+        {"item": "Organization costs (net)", "amount": 6770},
+        {"item": "Total Assets", "amount": 146012},
+        {"item": "Accounts payable", "amount": 4648},
+        {"item": "Accrued expenses", "amount": 14400},
+        {"item": "Due to related parties", "amount": 42298},
+        {"item": "Total Current Liabilities", "amount": 61346},
+        {"item": "Members' equity", "amount": 84666},
+        {"item": "Total Liabilities and Members' Equity", "amount": 146012}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T14_item21_income_2023",
+      "source_item": 21,
+      "source_pages": [291],
+      "title": "Statement of Income — Year Ended December 31, 2023",
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        {"item": "Total Revenue", "amount": 0},
+        {"item": "General and administrative expenses", "amount": 81337},
+        {"item": "Operating Loss", "amount": -81337},
+        {"item": "Net Loss", "amount": -81337}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T15_item21_balance_sheet_2022",
+      "source_item": 21,
+      "source_pages": [303],
+      "title": "Balance Sheet — December 31, 2022",
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        {"item": "Cash and cash equivalents", "amount": 209531},
+        {"item": "Organization costs", "amount": 6770},
+        {"item": "Total Assets", "amount": 216301},
+        {"item": "Accrued expenses", "amount": 12000},
+        {"item": "Due to related parties", "amount": 42298},
+        {"item": "Total Current Liabilities", "amount": 54298},
+        {"item": "Members' equity", "amount": 162003},
+        {"item": "Total Liabilities and Members' Equity", "amount": 216301}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T16_item21_income_2022",
+      "source_item": 21,
+      "source_pages": [304],
+      "title": "Statement of Income — Year Ended December 31, 2022",
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        {"item": "Total Revenue", "amount": 0},
+        {"item": "General and administrative expenses", "amount": 51767},
+        {"item": "Operating Loss", "amount": -51767},
+        {"item": "Net Loss", "amount": -51767}
+      ],
+      "table_notes": []
+    }
+  ]
+}

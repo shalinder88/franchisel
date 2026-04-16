@@ -1,0 +1,135 @@
+{
+  "enrichment_version": "v2",
+  "base_canonical": "11_canonical_enriched.json",
+  "enrichments": {
+    "item21_financial_structure_detail": {
+      "asset_composition": {
+        "cash_pct_of_assets": 0.151,
+        "receivables_pct_of_assets": 0.629,
+        "prepaid_commissions_pct_of_assets": 0.191,
+        "notes": "Asset base is dominated by receivables (franchise fees receivable $189K is net of $945K gross offset by $756K commissions payable). Minimal tangible assets — this is an asset-light franchisor."
+      },
+      "liability_structure": {
+        "deferred_revenue_pct_of_liabilities": 0.915,
+        "due_to_member_pct_of_liabilities": 0.058,
+        "ap_pct_of_liabilities": 0.026,
+        "notes": "Liabilities are overwhelmingly deferred franchise fees. This is structurally common for young franchise systems collecting upfront fees recognized over 10-year terms."
+      },
+      "leverage_and_solvency": {
+        "total_liabilities_to_assets": 2.77,
+        "members_deficit_to_revenue": -0.447,
+        "cash_to_monthly_opex": 0.51,
+        "notes": "Deeply negative equity. Cash covers approximately half a month of operating expenses. The franchisor depends on ongoing fee collections and/or member contributions to remain solvent."
+      },
+      "distributions_concern": {
+        "member_contributions_2024": 265000,
+        "member_distributions_2024": 415000,
+        "net_extraction": -150000,
+        "notes": "Member extracted $150K net from a company running losses and with only $52K in cash. This distribution pattern raises questions about the franchisor's financial sustainability."
+      }
+    },
+    "item21_statement_detail": {
+      "revenue_mix_2024": {
+        "royalties_pct": 0.627,
+        "technology_fees_pct": 0.163,
+        "franchise_fees_pct": 0.096,
+        "brand_fund_pct": 0.079,
+        "vendor_rebates_pct": 0.020,
+        "transfer_fees_pct": 0.012,
+        "other_pct": 0.003,
+        "notes": "Royalties dominate revenue (63%), indicating the franchisor's income is tied to studio-level performance. Franchise fees (10%) are deferred and recognized over agreement terms."
+      },
+      "expense_structure_2024": {
+        "management_agreement_pct": 0.694,
+        "advertising_pct": 0.111,
+        "other_opex_pct": 0.195,
+        "notes": "Management agreement with parent accounts for 69% of operating expenses — $985,736 of $1,419,448. This is the single largest expense and is a related-party transaction."
+      },
+      "cash_flow_analysis": {
+        "operating_cash_flow": 121143,
+        "financing_cash_flow": -150000,
+        "net_change_in_cash": -28857,
+        "deferred_revenue_impact_on_ocf": 372401,
+        "notes": "Operating cash flow was positive only because of $372K in deferred franchise fees collected. Excluding this non-recurring inflow, operating cash flow would have been approximately negative $251K."
+      },
+      "deferred_revenue_schedule": {
+        "2025": 84997,
+        "2026": 84997,
+        "2027": 84997,
+        "2028": 84997,
+        "2029": 84997,
+        "thereafter": 446483,
+        "total": 871468,
+        "from_unopened": 454218,
+        "from_opened": 417250,
+        "notes": "52% of deferred revenue ($454K) is from franchise units not yet opened. If these units fail to open, the franchisor may need to recognize this revenue differently or potentially refund fees."
+      }
+    },
+    "item6_fee_detail": {
+      "annual_minimum_fee_burden": {
+        "royalty_min": 18200,
+        "brand_fund": 5040,
+        "local_advertising": 14400,
+        "marketing_management": 14400,
+        "software_license": 8340,
+        "call_center": 21600,
+        "music_streaming": 1764,
+        "communication": 3600,
+        "total_annual_minimum": 87344,
+        "total_monthly_minimum": 7279,
+        "notes": "This represents the absolute floor of ongoing fee obligations. Variable royalty above the minimum and insurance add to this. Before rent and labor, a franchisee faces ~$87K/year in fees alone."
+      },
+      "breakeven_analysis_estimate": {
+        "minimum_monthly_fees": 7279,
+        "estimated_rent_monthly": 10000,
+        "estimated_labor_monthly": 20000,
+        "estimated_other_opex_monthly": 5000,
+        "total_estimated_monthly_opex": 42279,
+        "implied_annual_breakeven_revenue": 507348,
+        "notes": "Rough estimate using moderate assumptions for rent ($10K/mo for ~3K sqft at $40/sqft), labor ($20K/mo for ~4 staff), and other expenses. Studios below ~$507K annual revenue may struggle to break even. 7 of 17 reported studios fell below this threshold."
+      },
+      "fee_escalation_risk": {
+        "brand_fund_10yr_at_10pct": "From $420 to ~$1,089/month",
+        "marketing_mgmt_10yr_at_10pct": "From $1,200 to ~$3,112/month",
+        "local_ad_ceiling": "$2,300/month (may be reached within a few years)",
+        "software_license": "No cap; subject to change on written notice",
+        "notes": "If all escalation provisions are exercised at maximum rates, the combined monthly fee burden could increase substantially over the 10-year term."
+      }
+    },
+    "depth_pass_promotions": {
+      "facts_promoted": 8,
+      "state_addenda_overrides": 27,
+      "financial_notes_extracted": 8,
+      "contract_burdens_extracted": 14,
+      "distinctive_clauses_identified": 6
+    },
+    "unresolveds": [
+      {"id": "U01", "description": "Auditor firm name not captured from text layer", "severity": "low"},
+      {"id": "U02", "description": "TN company-owned studio table discrepancy (relocation vs closure)", "severity": "low"},
+      {"id": "U03", "description": "Franchise fees receivable netting ($945K/$756K commissions to same party)", "severity": "medium"},
+      {"id": "U04", "description": "Parent studio salary costs appear low vs franchisee reality", "severity": "medium"},
+      {"id": "U05", "description": "28 of 32 signed-not-open from one NJ operator — extreme concentration", "severity": "high"}
+    ],
+    "contradictions": [
+      {"id": "C01", "description": "Note 4 (21 franchised) vs Item 20 (17) — different counting conventions", "resolution": "explained"},
+      {"id": "C02", "description": "Table 4 TN 1→0 vs Table 1 total 5→5 — relocation", "resolution": "partially resolved"},
+      {"id": "C03", "description": "14-month fiscal vs 12-month Item 19 — different periods", "resolution": "noted"},
+      {"id": "C04", "description": "Training 3-5 days vs 48 hours (needs 5-6 days)", "resolution": "minor inconsistency"}
+    ],
+    "state_addenda_override_families": {
+      "forum_selection": ["IL", "MD", "MN"],
+      "governing_law": ["CA", "IL", "NY", "WA"],
+      "noncompete": ["CA"],
+      "general_release": ["CA", "MD", "MN", "NY"],
+      "termination": ["CA", "VA", "WA"],
+      "notice_cure": ["MN"],
+      "damages": ["MN", "WA"],
+      "fee_deferral": ["MN", "VA"],
+      "fair_pricing": ["WA"],
+      "buyback": ["WA"],
+      "indemnification": ["MN"],
+      "anti_waiver": ["CA", "IL", "WA"],
+      "limitation_of_actions": ["MD"]
+    }
+  }
+}

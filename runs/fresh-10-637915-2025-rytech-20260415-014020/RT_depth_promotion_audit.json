@@ -1,0 +1,70 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "Operations Manual is 263 pages",
+      "source": "Reader report Pass C / Item 11",
+      "pdf_page": 26,
+      "canonical_field": "operations_manual_pages",
+      "status": "already_in_canonical"
+    },
+    {
+      "fact": "Master Development Agreement exists — one master developer, $100K fee, 5-year term, 50% of initial fee and royalty share",
+      "source": "Financial statement notes (Note 2)",
+      "pdf_page": 174,
+      "canonical_field": "master_development_agreement",
+      "status": "promoted",
+      "promoted_to": "09_final_canonical.json"
+    },
+    {
+      "fact": "RyBrands management admin fees: $1,014,000 (2024), $810,000 (2023), $920,000 (2022)",
+      "source": "Financial statement notes (Note 5)",
+      "pdf_page": 176,
+      "canonical_field": "related_party_management_fees",
+      "status": "promoted",
+      "promoted_to": "09_final_canonical.json"
+    },
+    {
+      "fact": "Shared office expense with Rytech Admin Services: $120,000/year (all years)",
+      "source": "Financial statement notes (Note 5)",
+      "pdf_page": 176,
+      "canonical_field": "related_party_shared_office",
+      "status": "promoted",
+      "promoted_to": "09_final_canonical.json"
+    },
+    {
+      "fact": "Revenue recognition: Initial franchise fees recognized over 10-year term per ASC 606 (not upon signing)",
+      "source": "Financial statement notes (Note 1)",
+      "pdf_page": 172,
+      "canonical_field": "accounting_policies.revenue_recognition",
+      "status": "promoted",
+      "promoted_to": "12_canonical_enriched_v2.json"
+    },
+    {
+      "fact": "Accounts receivable allowance: $180,000 (2024, 2023), $170,000 (2022). No credit loss expense in 2024 or 2023.",
+      "source": "Financial statement notes (Note 1)",
+      "pdf_page": 173,
+      "canonical_field": "item21_financials.ar_allowance",
+      "status": "promoted",
+      "promoted_to": "12_canonical_enriched_v2.json"
+    },
+    {
+      "fact": "Irrevocable power of attorney granted to franchisor for post-termination de-identification (2-day deadline)",
+      "source": "Reader report Pass E / FA §11.3",
+      "pdf_page": 105,
+      "canonical_field": "contract_burdens.power_of_attorney",
+      "status": "promoted",
+      "promoted_to": "RT_depth_contract_burdens.json"
+    },
+    {
+      "fact": "Arbitrator cannot: stay termination effectiveness, assess punitive damages, or modify agreement. Limited discovery.",
+      "source": "FA §12.7.4",
+      "pdf_page": 110,
+      "canonical_field": "dispute_resolution.arbitrator_limitations",
+      "status": "promoted",
+      "promoted_to": "RT_depth_contract_burdens.json"
+    }
+  ],
+  "total_promoted": 6,
+  "total_already_present": 2
+}

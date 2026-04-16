@@ -1,0 +1,115 @@
+{
+  "enrichment_version": "v1",
+  "extraction_date": "2026-04-15",
+  "filing_id": "637925-2025",
+  "brand": "Hyatt Place",
+  "item19_chart_detail": {
+    "fpr_count": 3,
+    "fpr1": {
+      "title": "Occupancy Rate, Average Daily Rate and RevPAR for 2024",
+      "categories": ["Franchised Covered Hotels", "Owned/Managed Covered Hotels", "All Covered Hotels", "Franchised Urban Hotels", "Owned/Managed Urban Hotels", "All Urban Hotels"],
+      "metrics": ["Occupancy Rate", "Average Daily Rate", "RevPAR"],
+      "statistics_provided": true,
+      "statistics_include": ["High", "Low", "Median", "Number/Percentage Exceeding Average"],
+      "key_insight": "Median RevPAR ($101.75) significantly below average ($114.45) indicating right-skew. Only 36.2% exceed average."
+    },
+    "fpr2": {
+      "title": "Smith Travel Indices for 2024",
+      "source": "Smith Travel Research (independent third party)",
+      "metrics": ["Occupancy Rate Index", "Travel Rate Index", "RevPAR Index"],
+      "key_insight": "Franchised RevPAR Index 106.1 — system outperforms competitive set by 6.1%"
+    },
+    "fpr3": {
+      "title": "World of Hyatt Revenue and Occupancy for 2024",
+      "metrics": ["% Revenue from WOH", "% WOH-Occupied Room Nights", "Average # WOH-Occupied Room Nights"],
+      "key_insight": "50.7% of franchised revenue from loyalty members — significant program dependency"
+    },
+    "channel_mix": {
+      "title": "Reservation Channel Mix for 2024",
+      "direct_definition": "Electronic rooming list, GPGS contact centers, Hyatt.com/mobile app",
+      "indirect_definition": "GDS, third-party OTAs",
+      "key_insight": "60.2% direct channel — favorable for cost management"
+    }
+  },
+  "item20_yearly_activity": {
+    "franchised": {
+      "2022": {"start": 309, "opened": 2, "terminated": 4, "non_renewed": 0, "end": 309},
+      "2023": {"start": 309, "opened": 8, "terminated": 0, "non_renewed": 0, "end": 317},
+      "2024": {"start": 317, "opened": 1, "terminated": 0, "non_renewed": 0, "end": 318}
+    },
+    "company_owned": {
+      "2022": {"start": 23, "opened": 1, "closed": 0, "end": 24},
+      "2023": {"start": 24, "opened": 0, "closed": 0, "end": 24},
+      "2024": {"start": 24, "opened": 0, "closed": 0, "end": 24}
+    },
+    "pipeline": {
+      "agreements_signed_not_opened": 72,
+      "projected_franchised_2025": 7,
+      "projected_company_2025": 0,
+      "top_pipeline_states": [
+        {"state": "California", "count": 19},
+        {"state": "Texas", "count": 6},
+        {"state": "Florida", "count": 5},
+        {"state": "Tennessee", "count": 4},
+        {"state": "Arizona", "count": 3},
+        {"state": "Michigan", "count": 3},
+        {"state": "Montana", "count": 3},
+        {"state": "North Carolina", "count": 3}
+      ]
+    }
+  },
+  "exhibit_structure": {
+    "total_exhibits": 14,
+    "critical_exhibits": ["A-1", "C", "L"],
+    "contract_exhibits": ["B", "C", "F", "I", "J", "K", "L"],
+    "financial_exhibits": ["A-1", "A-2"],
+    "franchisee_data_exhibits": ["G", "H"],
+    "state_addenda_exhibit": "L"
+  },
+  "item21_structural_facts": {
+    "entity": "Hyatt Hotels Corporation",
+    "auditor": "Deloitte & Touche LLP",
+    "opinion": "Clean (unqualified)",
+    "guarantee": "Absolute and unconditional by Hyatt Hotels Corporation",
+    "publicly_traded": true,
+    "ticker": "H",
+    "exchange": "NYSE",
+    "critical_audit_matters": [
+      "Deferred revenue related to loyalty program ($1,333M liability)",
+      "Goodwill impairment ($110M charge, $1,116M remaining in reporting unit)"
+    ]
+  },
+  "item1_structural_facts": {
+    "franchise_affiliates_count": 9,
+    "franchise_affiliates": [
+      "Hyatt Franchising, L.L.C. (US full-service)",
+      "Hyatt House Franchising, L.L.C. (US extended-stay)",
+      "Hyatt Franchising Canada Corp.",
+      "Hyatt International EAME LLC",
+      "Hyatt Place Canada Corporation",
+      "Hyatt House Canada, Inc.",
+      "Hyatt Franchising Latin America, L.L.C.",
+      "Hyatt do Brasil Participações Ltda.",
+      "Hyatt International Asia Pacific, Limited"
+    ],
+    "brands_count": "25+",
+    "service_affiliates": ["Hyatt Corporation", "Rosemont Project Management, L.L.C."]
+  },
+  "item6_fee_attributes": {
+    "royalty_reducible": true,
+    "royalty_reduction_period": "First 1-3 years for new construction (negotiable)",
+    "commercial_services_fee_components": [
+      "Brand-wide marketing, advertising, PR",
+      "Base reservation services (GPGS)",
+      "Revenue management technology",
+      "Group sales support",
+      "Sales and catering systems",
+      "Property management system services",
+      "Digital product technology (Hyatt.com, mobile app)",
+      "Other technology services"
+    ],
+    "non_mandatory_services_may_become_mandatory": true,
+    "no_advertising_fund_audit": true,
+    "fee_increase_mechanism": "Costs may increase; 10% annual cap on revenue management fees only"
+  }
+}

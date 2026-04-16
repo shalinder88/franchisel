@@ -1,0 +1,88 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-15",
+  "source_pages": [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225],
+  "auditor": "Deloitte & Touche LLP",
+  "auditor_address": "650 South Tryon Street, Suite 1800, Charlotte, NC 28202",
+  "report_dates": {"fy2024_2023": "2025-03-24", "fy2023_2022": "2024-03-27"},
+  "accounting_policies": {
+    "revenue_recognition": {
+      "franchise_fees": "Initial fees deferred and recognized over expected contract life (~20 years). Ongoing royalty fees recognized over time as franchisees derive value from IP license.",
+      "system_service_fees": "Recognized over time. Combined with franchise fees as single performance obligation (series). Revenue recognized on output method — right to bill based on franchisee hotel revenues (variable consideration).",
+      "direct_reimbursements": "Recognized gross (company acts as principal). Dollar-for-dollar reimbursement.",
+      "other_revenues": "Recognized in period of transaction/event. Includes QA fees, penalties, pre-opening admin, contract termination fees ($2.1M in 2024, $0.2M in 2023)."
+    },
+    "intangible_assets": {
+      "franchise_agreements": "Amortized straight-line over 20-year estimated useful life. Gross $4.9M, net $3.6M as of 12/31/2024 (10 years remaining).",
+      "software_licenses": "Amortized straight-line over remaining non-cancellable contract term. Gross $2.4M, net $1.8M (3 years remaining). Fees may vary based on room count.",
+      "impairment": "Reviewed annually and when indicators present. No impairment charges recognized in 2024, 2023, or 2022."
+    },
+    "contract_acquisition_costs": {
+      "method": "Direct incremental costs to obtain contracts. Amortized straight-line over initial non-cancellable term or expected contract life. Included in G&A expense.",
+      "balance": "$2.2M (2024), $2.3M (2023)",
+      "impairment": "No material impairment charges"
+    },
+    "leases": {
+      "type": "Sales-type leases for IT equipment to franchisees",
+      "term": "5-year terms, fully maturing in 2025",
+      "accounting": "Net investment in leases at PV of future payments. Sales price = carrying value — no interest income recognized.",
+      "balance_2024": "$260K current, $0 non-current",
+      "maturity_schedule": {"2024": 358, "2025": 303}
+    },
+    "cash_and_equivalents": {
+      "definition": "Cash on hand, demand deposits, short-term highly liquid investments with original maturities ≤3 months",
+      "fdic_excess": "Deposits exceed $250K with non-FDIC-insured institution",
+      "credit_risk": "Company does not believe significant"
+    },
+    "accounts_receivable": {
+      "composition": "Franchise fees (royalties), system service fees, other amounts from franchisees",
+      "allowance": "Made when collection considered doubtful. Based on historical collection and business forecasts. Immaterial in 2024 and 2023."
+    },
+    "income_taxes": {
+      "status": "LLC — not subject to federal income taxes. May be subject to state and local taxes in certain jurisdictions."
+    }
+  },
+  "related_party_transactions": {
+    "esa_management_llc": {
+      "relationship": "Manager under services agreement. Non-economic co-managers are affiliates of Eagle Strategies owners.",
+      "overhead_services": {"2024": 6600, "2023": 6500, "2022": 5800, "description": "Executive mgmt, accounting, biz dev, financial analysis, training, technology"},
+      "system_services": {"2024": 3800, "2023": 3200, "description": "System services costs reimbursed"},
+      "due_to_manager": {"2024": 2700, "2023": 3000}
+    },
+    "strategies_branding_llc": {
+      "relationship": "Trademark owner, wholly-owned subsidiary of Member",
+      "license_fee": "5% of franchise royalties",
+      "expense": {"2024": 429, "2023": 351, "2022": 300},
+      "due_to": {"2024": 100, "2023": 100}
+    },
+    "esh_hospitality_inc": {
+      "relationship": "Affiliate (ESH REIT). Owners are affiliates of Eagle Strategies owners.",
+      "due_to": {"2024": 0, "2023": 1600, "2022": 100},
+      "2022_reimbursement": "Reimbursed $0.5M for brand launch franchisee payments"
+    }
+  },
+  "brand_launch_expenses": {
+    "description": "ESA Select Suites brand launch — $2.5M in payments to existing franchisees for area-of-protection exemptions",
+    "year_incurred": 2022,
+    "satisfaction_method": "Net reduction in franchise fees paid by applicable franchisees",
+    "remaining_2024": {"total": 1600, "current": 300, "noncurrent": 1300},
+    "remaining_2023": {"total": 2200, "current": 600, "noncurrent": 1600},
+    "error_note": "2022 balance sheet had $1.9M classified as current instead of non-current — immaterial, not restated"
+  },
+  "contract_liabilities": {
+    "description": "Advance consideration from initial franchise fees and system implementation fees",
+    "2024": {"beginning": 4478, "ending": 4842, "recognized": 824},
+    "2023": {"beginning": 2406, "ending": 4478, "recognized": 117},
+    "2022": {"beginning": 1108, "ending": 2406, "recognized": 247}
+  },
+  "subsequent_events": {
+    "fy2024": "None noted through March 24, 2025",
+    "fy2023": "None noted through March 27, 2024"
+  },
+  "system_hotel_counts_from_notes": {
+    "as_of_2024": {"total_franchised": 129, "total_rooms": 13351, "premier_suites": 17, "premier_rooms": 1941, "esa_suites": 107, "select_suites": 5},
+    "as_of_2023": {"total_franchised": 114, "total_rooms": 11836, "premier_suites": 9, "premier_rooms": 984, "esa_suites": 104, "select_suites": 1},
+    "as_of_2022": {"total_franchised": 96, "esa_suites": 93, "premier_suites": 3}
+  },
+  "all_amounts_in_thousands_unless_noted": true
+}

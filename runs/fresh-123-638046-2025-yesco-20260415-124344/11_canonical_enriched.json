@@ -1,0 +1,68 @@
+{
+  "enrichment_version": "v1",
+  "base": "09_final_canonical.json",
+  "item19_chart_detail": {
+    "tables_count": 7,
+    "table_1_gross_revenue_quartiles": {
+      "total_population": 50,
+      "top_quartile": {"count": 12, "avg": 2486985, "median": 1973614, "min": 1436094, "max": 4464693},
+      "second_quartile": {"count": 13, "avg": 1031269, "median": 897182, "min": 806339, "max": 1338304},
+      "third_quartile": {"count": 13, "avg": 472735, "median": 364909, "min": 328824, "max": 747576},
+      "bottom_quartile": {"count": 12, "avg": 187862, "median": 124556, "min": 92304, "max": 321136},
+      "overall": {"avg": 1033005, "median": 776958, "at_or_above_avg_pct": 38}
+    },
+    "table_2_national_service": {"national_service_gr": 7974585, "total_gr": 51891579, "pct": 15.4},
+    "table_3_time_in_business": {"overall_avg_years": 8.7, "overall_median_years": 8.8, "range": "1.0-13.8"},
+    "table_4_territories": {"overall_avg": 4.3, "overall_median": 3.0, "top_quartile_avg": 8.7, "bottom_quartile_avg": 1.6, "range": "1-15"},
+    "table_5_daily_leads": {"overall_avg": 38, "overall_median": 18, "top_quartile_avg": 104, "bottom_quartile_avg": 9},
+    "table_6_daily_sales_activities": {"overall_avg": 42, "overall_median": 14, "top_quartile_avg": 130, "bottom_quartile_avg": 10},
+    "table_7_gr_per_invoice": {"overall_avg": 1425, "overall_median": 1322, "range": "564-2617", "observation": "Consistent across quartiles — revenue differences are volume-driven"}
+  },
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 60, "franchised_end": 59, "opened": 2, "terminated": 0, "non_renewals": 0, "reacquired": 3, "ceased": 0, "transfers": 1},
+    "2023": {"franchised_start": 59, "franchised_end": 57, "opened": 1, "terminated": 0, "non_renewals": 0, "reacquired": 3, "ceased": 0, "transfers": 1},
+    "2024": {"franchised_start": 57, "franchised_end": 57, "opened": 2, "terminated": 0, "non_renewals": 1, "reacquired": 0, "ceased": 1, "transfers": 1}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 12,
+    "contract_exhibits": ["B", "D", "E", "I", "J", "K"],
+    "financial_exhibits": ["F"],
+    "regulatory_exhibits": ["A", "D", "G", "L"],
+    "operational_exhibits": ["C"],
+    "franchisee_exhibits": ["H"],
+    "states_with_addenda": ["Illinois", "Indiana", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Wisconsin"]
+  },
+  "item21_structural_facts": {
+    "auditor": "HBME, LLC",
+    "opinion": "Unqualified (clean)",
+    "going_concern": false,
+    "entity_type": "Single-member LLC (member: Young Electric Sign Company)",
+    "consolidation": "Includes YESCO Canada ULC",
+    "tax_treatment": "Allocated share of parent YESCO tax return",
+    "lease_status": "No leases (ASC 842 noted, no ROU assets)",
+    "profit_sharing": "$38,654 contributed to 401(k) plan (2024)"
+  },
+  "item1_structural_facts": {
+    "began_franchising": "March 2011 (US), February 2012 (Canada)",
+    "canada_transferred": "July 1, 2020 (asset purchase to YESCO Canada ULC)",
+    "franchise_count_us": 50,
+    "franchise_count_canada": 7,
+    "company_owned_count": 42,
+    "referral_program": true,
+    "early_renewal_program": true,
+    "standard_renewal_program": true
+  },
+  "item6_fee_attributes": {
+    "royalty_auto_debited": true,
+    "royalty_minimum_per_month": 1000,
+    "royalty_percentage": 6.0,
+    "tiered_royalty_available": true,
+    "national_ad_fund_active": false,
+    "local_ad_minimum_pct": 2.0,
+    "combined_ad_cap_pct": 3.0,
+    "transfer_fee_formula": "Greater of $5,000 or 4% of last year GR",
+    "late_fee_rate_monthly": 1.5,
+    "late_fee_per_day": 50,
+    "origination_fee_cap": 350
+  }
+}

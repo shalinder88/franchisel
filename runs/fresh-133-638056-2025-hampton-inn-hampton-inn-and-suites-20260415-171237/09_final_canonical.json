@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "fdd_id": "638056-2025",
+    "brand": "Hampton Inn / Hampton Inn & Suites",
+    "franchisor_legal_name": "Hilton Franchise Holding LLC",
+    "parent_company": "Hilton Worldwide Holdings Inc.",
+    "parent_ticker": "HLT",
+    "state_filed": "WI",
+    "issuance_date": "2025-03-30",
+    "extraction_date": "2026-04-15",
+    "pdf_pages": 390,
+    "pipeline_version": "automation_v1",
+    "retries_executed": ["R1_state_addenda"],
+    "final": true
+  },
+  "item1_entity": {
+    "franchisor_name": "Hilton Franchise Holding LLC",
+    "entity_type": "Delaware Limited Liability Company",
+    "formed": "2007-09",
+    "address": "7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102",
+    "phone": "703-883-1000",
+    "parent_chain": [
+      "Hilton Domestic Operating Company Inc. (Delaware corporation, formed 2016-07-12)",
+      "Hilton Worldwide Holdings Inc. (Delaware corporation, formed 2010-03-18, NYSE: HLT)"
+    ],
+    "predecessors": [
+      {"name": "Hampton Inns Franchise LLC", "period": "2007-10 to 2015-03"},
+      {"name": "Promus Hotel Systems, Inc.", "period": "1995-05 to 2007-10"}
+    ],
+    "first_franchised": {"hampton_inn": 1983, "hampton_inn_and_suites": 1993},
+    "segment": "upper midscale",
+    "ceo": "Christopher J. Nassetta",
+    "cfo": "Kevin J. Jacobs",
+    "source_section": "Item 1",
+    "source_pages": [9, 10, 11, 12, 13, 14],
+    "confidence": "high"
+  },
+  "item3_litigation": {
+    "pending_count": 5,
+    "pending_actions": [
+      "AAAA Property Partners v. HFH — breach of contract (franchise termination)",
+      "In re Extended Stay Hotel Antitrust (N.D. Cal.) — class action, IDeaS price-fixing",
+      "Dai v. SAS/IDeaS (N.D. Cal.) — class action, IDeaS price-fixing",
+      "Segal v. Amadeus (N.D. Ill.) — class action, data exchange",
+      "Portillo v. CoStar/STR (W.D. Wash.) — class action, competitive data exchange"
+    ],
+    "concluded_material_count": 6,
+    "bankruptcy": false,
+    "source_section": "Items 3-4",
+    "source_pages": [18, 19, 20, 21, 22],
+    "confidence": "high"
+  },
+  "item5_initial_fees": {
+    "franchise_fee_new": "$100,000 + $400/room over 150",
+    "franchise_fee_coo": "$200,000",
+    "franchise_fee_relicensing": "$100,000",
+    "processing_fee_non_refundable": "$7,500",
+    "source_section": "Item 5",
+    "source_pages": [22, 23, 24, 25],
+    "confidence": "high"
+  },
+  "item6_ongoing_fees": {
+    "royalty_rate": "6% of GRR",
+    "program_fee_rate": "4% of GRR (may increase to 5%)",
+    "hilton_honors": "4.9% of eligible folio",
+    "total_core_pct": "10%+ of GRR before loyalty and tech",
+    "liquidated_damages_formula": "Avg Monthly Royalty × 60",
+    "source_section": "Item 6",
+    "source_pages": [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38],
+    "confidence": "high"
+  },
+  "item7_investment": {
+    "hampton_inn_89_rooms": {"low": 15218226, "high": 22193244},
+    "hampton_inn_suites_113_rooms": {"low": 17723268, "high": 25958214},
+    "excludes": "real property, market studies, insurance, interest",
+    "source_section": "Item 7",
+    "source_pages": [39, 40, 41, 42, 43],
+    "confidence": "high"
+  },
+  "item12_territory": {
+    "exclusive_territory": false,
+    "protected_area_standard": false,
+    "restricted_area_negotiable": true,
+    "restricted_area_scope": "Hampton Brand only, not other Hilton brands",
+    "source_section": "Item 12",
+    "source_pages": [64, 65, 66],
+    "confidence": "high"
+  },
+  "item17_contract": {
+    "term_new_construction": "22 years",
+    "term_conversion": "10-20 years",
+    "renewal_right": false,
+    "materially_different_terms_risk": true,
+    "non_compete_post_term": false,
+    "venue": "E.D. Virginia or Fairfax County, VA; fallback NY",
+    "governing_law": "New York",
+    "source_section": "Item 17",
+    "source_pages": [74, 75, 76, 77, 78, 79, 80, 81],
+    "confidence": "high"
+  },
+  "item19_financial_performance": {
+    "makes_representations": true,
+    "total_comparable_hotels": 1960,
+    "hi_avg_rate_2024": 145.82,
+    "hs_avg_rate_2024": 152.19,
+    "combined_avg_occupancy_2024": 71.7,
+    "combined_avg_revpar_index_2024": 121.0,
+    "cost_buildup_disclosed": false,
+    "ebitda_disclosed": false,
+    "source_section": "Item 19",
+    "source_pages": [82, 83, 84, 85, 86],
+    "confidence": "high"
+  },
+  "item20_outlets": {
+    "total_end_2024": 2369,
+    "hi_end_2024": 1345,
+    "hs_end_2024": 1024,
+    "company_owned": 0,
+    "hi_net_2024": -1,
+    "hs_net_2024": 9,
+    "combined_pipeline": 305,
+    "confidentiality_clause": true,
+    "source_section": "Item 20",
+    "source_pages": [86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100],
+    "confidence": "high"
+  },
+  "item21_financials": {
+    "auditor": "CBH",
+    "opinion": "unqualified",
+    "total_revenues_2024": 1502069,
+    "net_income_2024": 1487571,
+    "total_assets_2024": 1269897,
+    "members_equity_2024": 577005,
+    "distributions_2024": 1500000,
+    "operating_margin": "99%+",
+    "units": "thousands (USD)",
+    "source_section": "Item 21 / Exhibit C",
+    "tax_status": "Disregarded entity for US income tax — no US income tax provision. All taxable income included in Hilton's computation.",
+    "acquisitions": "Graduate brand franchise contracts acquired May 2024 for ~$85M, 15-year amortization (asset acquisition).",
+    "debt_guarantee": "ALL entity assets and franchise contracts pledged as collateral for Hilton parent debt (maturing 2025-2033). Unconditional and irrevocable guarantee.",
+    "related_party": "Centralized cash management by Hilton affiliates. Franchise deposits in lockbox with no entity access. Operator agreement with Hilton affiliate (no compensation paid 2022-2024). Contract acquisition costs ($376M gross) amortized as reduction of royalty fees.",
+    "source_pages": [206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218],
+    "confidence": "high"
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Antitrust litigation (IDeaS, Amadeus, STR) — potential systemic impact on required technology and pricing", "severity": "high", "source": "Item 3, pp. 19-20"},
+    {"id": "U2", "description": "No EBITDA or cost data in Item 19 — franchisees cannot assess profitability from FDD alone", "severity": "high", "source": "Item 19, pp. 82-86"},
+    {"id": "U3", "description": "Restricted Area negotiability unknown — FDD provides no guidance on what is typically granted", "severity": "medium", "source": "Item 12, pp. 64-66"},
+    {"id": "U4", "description": "Program Fee increase ceiling ambiguity — 'current rate + 1% of GRR' interpretation unclear", "severity": "medium", "source": "Item 6, p. 36"},
+    {"id": "U5", "description": "Service Quality Improvement Program updates pending later this year", "severity": "medium", "source": "Item 11, p. 60"},
+    {"id": "U6", "description": "Technology refresh costs have no cap on frequency or cost", "severity": "medium", "source": "Items 6, 11"},
+    {"id": "U7", "description": "Confidentiality clause restricts former franchisee communication", "severity": "medium", "source": "Item 20, p. 100"},
+    {"id": "U8", "description": "Hampton Inn brand contraction — first net decrease in recent years (-1 in 2024)", "severity": "low", "source": "Item 20, p. 86"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "Total hotel count discrepancy: Item 19 states 2,368; Item 20 sums to 2,369", "items_involved": ["Item 19", "Item 20"], "resolution_status": "Minor — likely rounding or timing difference"},
+    {"id": "C2", "description": "Item 20 Table 1 vs Table 3 start-of-2022 count difference (1,313 vs 1,323 for Hampton Inn)", "items_involved": ["Item 20"], "resolution_status": "Unexplained within franchised-only scope — possibly data collection timing"},
+    {"id": "C3", "description": "Financial statements Note 9 subsequent events evaluation date reads 'March 18, 2024' but should be March 18, 2025 (matching audit opinion date)", "items_involved": ["Exhibit C Note 9"], "resolution_status": "Apparent typo in financial statements"}
+  ],
+  "state_addenda": {
+    "states_with_addenda": ["CA", "HI", "IL", "MD", "MI", "MN", "NY", "ND", "RI", "VA", "WA"],
+    "material_overrides": {
+      "north_dakota": "ALL liquidated damages deleted; ND law supersedes NY law; out-of-state venue deleted",
+      "minnesota": "Liquidated damages prohibited; 90-day termination notice; no out-of-state litigation",
+      "california": "Liquidated damages may be unenforceable; CA termination law may supersede",
+      "washington": "Transfer fees limited to actual costs; non-compete restricted by income thresholds; no-poach void",
+      "michigan": "Termination only for good cause; no out-of-state litigation; transfer denial only for good cause"
+    },
+    "source_section": "Exhibits D-1, J-1",
+    "source_pages": [275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 352, 353, 354, 355, 356, 357, 358, 359],
+    "confidence": "high"
+  }
+}

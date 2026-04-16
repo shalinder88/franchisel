@@ -1,0 +1,37 @@
+{
+  "retry_id": "R2",
+  "target": "State Addenda (7 remaining states)",
+  "source_pages": [322, 323, 324, 325, 326, 330, 331, 332, 333, 339],
+  "method": "Direct text reading",
+  "findings": {
+    "states_read": ["Hawaii", "Illinois", "Indiana", "Maryland", "New York", "North Dakota", "Wisconsin"],
+    "fee_deferral_states": ["Illinois", "Maryland", "North Dakota"],
+    "fee_deferral_reason": "Franchisor's financial condition",
+    "governing_law_overrides": {
+      "Illinois": "Illinois law governs",
+      "Indiana": "Indiana law governs",
+      "North Dakota": "North Dakota law governs"
+    },
+    "venue_overrides": {
+      "Illinois": "Forum outside IL void",
+      "North Dakota": "Venue outside ND deleted"
+    },
+    "noncompete_overrides": {
+      "California": "Post-term noncompete may not be enforceable; no-poach will not be enforced",
+      "North Dakota": "Noncompetes generally considered unenforceable (NDCC §9-08-06)"
+    },
+    "punitive_damages_waiver_deleted": ["Indiana", "North Dakota"],
+    "jury_trial_waiver_deleted": ["North Dakota"],
+    "termination_overrides": {
+      "Indiana": "Unilateral termination without good cause prohibited",
+      "Wisconsin": "90-day notice, 60-day cure (WI Fair Dealership Act Ch. 135)"
+    },
+    "release_overrides": {
+      "Hawaii": "Does not relieve from HI franchise law",
+      "Indiana": "Does not relieve from IN franchise law",
+      "Maryland": "Does not apply to MD Franchise Registration and Disclosure Law",
+      "New York": "Preserves GBL Article 33 rights",
+      "North Dakota": "Release requirement on renewal deleted entirely"
+    }
+  }
+}
