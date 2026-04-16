@@ -1,0 +1,39 @@
+{
+  "depth_pass": "state_addenda_promotion",
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+  "overrides": [
+    {"state": "California", "affected_family": "noncompete", "override_summary": "Post-term noncompete may not be enforceable under CA law", "why_it_matters": "CA franchisees may be able to operate competing businesses immediately after termination", "source_pages": [275]},
+    {"state": "California", "affected_family": "governing_law", "override_summary": "WA governing law may not be enforceable", "why_it_matters": "CA law may apply instead of WA law", "source_pages": [275]},
+    {"state": "California", "affected_family": "general_release", "override_summary": "No waiver of CA franchise law claims including fraud in inducement", "why_it_matters": "Franchisee retains right to sue under CA franchise law", "source_pages": [275]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Forum outside IL void", "why_it_matters": "IL franchisees can sue in IL, not forced to WA", "source_pages": [276]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Governing law provision void", "why_it_matters": "IL law applies", "source_pages": [276]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General release cannot cover MD Franchise Registration and Disclosure Law claims", "why_it_matters": "MD franchisees retain fraud/disclosure claims on renewal/transfer", "source_pages": [278]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "May file civil lawsuit in MD for MD law violations", "why_it_matters": "MD franchisees not forced to WA courts for state claims", "source_pages": [278]},
+    {"state": "Maryland", "affected_family": "fee_deferral", "override_summary": "ALL initial fees deferred until franchisor completes pre-opening obligations due to financial condition concerns", "why_it_matters": "CRITICAL — MD regulator has determined franchisor financial condition is questionable. Franchisees have payment protection.", "source_pages": [278]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days notice of termination (60 days to cure); 180 days notice of non-renewal", "why_it_matters": "MN franchisees get much longer cure periods than standard 30 days", "source_pages": [278]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Litigation outside MN may be prohibited", "why_it_matters": "MN franchisees may litigate in MN", "source_pages": [279]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "General release prohibited as condition of renewal", "why_it_matters": "MN franchisees retain all claims at renewal", "source_pages": [279]},
+    {"state": "Minnesota", "affected_family": "damages", "override_summary": "Cannot require liquidated damages, termination penalties, or judgment notes", "why_it_matters": "Early termination damages formula may be unenforceable in MN", "source_pages": [279]},
+    {"state": "New York", "affected_family": "general_release", "override_summary": "Release on renewal/transfer may not apply to NY General Business Law claims", "why_it_matters": "NY franchisees retain Article 33 claims", "source_pages": [280]},
+    {"state": "New York", "affected_family": "forum_selection", "override_summary": "Forum outside NY void for NY law claims", "why_it_matters": "NY franchisees can sue in NY", "source_pages": [280]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Noncompete may be unenforceable under ND Century Code §9-08-06", "why_it_matters": "ND franchisees may freely compete post-term", "source_pages": [281]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Forum outside ND void", "why_it_matters": "ND franchisees litigate in ND", "source_pages": [281]},
+    {"state": "North Dakota", "affected_family": "damages", "override_summary": "Liquidated damages and termination penalties void. Exemplary/punitive damages waiver void. Limitation of claims void.", "why_it_matters": "ND broadly limits franchisor's ability to impose penalties", "source_pages": [281]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "Governing law outside ND void", "why_it_matters": "ND law applies", "source_pages": [281]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "General release on renewal void", "why_it_matters": "ND franchisees retain claims at renewal", "source_pages": [281]},
+    {"state": "Rhode Island", "affected_family": "forum_selection", "override_summary": "Forum outside RI void for RI Franchise Investment Act claims", "why_it_matters": "RI franchisees can sue in RI", "source_pages": [282]},
+    {"state": "Virginia", "affected_family": "termination", "override_summary": "Cannot cancel franchise without reasonable cause", "why_it_matters": "VA provides additional termination protections", "source_pages": [282]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "Release cannot include WA Franchise Investment Protection Act rights unless negotiated settlement with independent counsel", "why_it_matters": "WA franchisees retain FIPA rights", "source_pages": [283]},
+    {"state": "Washington", "affected_family": "noncompete", "override_summary": "Noncompete void for employees earning <$100k/yr and contractors earning <$250k/yr (adjusted for inflation)", "why_it_matters": "Most store-level employees exempt from noncompete in WA", "source_pages": [283]},
+    {"state": "Washington", "affected_family": "forum_selection", "override_summary": "Arbitration/mediation must be in WA or mutually agreed. Franchisee may bring action in WA.", "why_it_matters": "WA franchisees protected from out-of-state forum", "source_pages": [282]}
+  ],
+  "summary_table": {
+    "forum_selection_overridden": ["Illinois", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington"],
+    "governing_law_overridden": ["California", "Illinois", "Minnesota", "North Dakota"],
+    "noncompete_limited": ["California", "North Dakota", "Washington"],
+    "general_release_restricted": ["California", "Maryland", "Minnesota", "New York", "North Dakota", "Virginia", "Washington"],
+    "termination_protections": ["Minnesota", "Virginia"],
+    "damages_limited": ["Minnesota", "North Dakota"],
+    "fee_deferral": ["Maryland"]
+  }
+}

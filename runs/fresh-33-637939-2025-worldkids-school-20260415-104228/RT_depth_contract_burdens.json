@@ -1,0 +1,40 @@
+{
+  "depth_pass": "contract_burdens",
+  "brand": "WorldKids School",
+  "source_exhibit": "Exhibit C — Franchise Agreement",
+  "source_pages": [58, 98],
+  "clauses": [
+    {"family": "grant_and_term", "section": "2.1, 4.1, 4.2", "obligation": "10-year initial term; successive 10-year renewals", "trigger": "Execution of FA", "duration": "10 years + renewals", "money": "$80,000 IFF; $5,000 renewal fee", "source_pages": [66, 69, 70]},
+    {"family": "fee_obligations", "section": "3.1-3.11", "obligation": "Franchise fee, monthly royalty (6% GR), EDTA required, late fees (1.5%/mo)", "trigger": "Monthly/ongoing", "money": "$80K IFF, 6% royalty, $500 convention, $75 NSF", "source_pages": [68, 69]},
+    {"family": "site_selection", "section": "5.1-5.4", "obligation": "Secure location within 45 days; 10-day approval; sign lease within 15 days; open within 300 days", "trigger": "FA execution", "duration": "300 days max", "source_pages": [70, 71]},
+    {"family": "training", "section": "8.1-8.4", "obligation": "Complete initial training to satisfaction; ongoing training up to 2 sessions/year at $500/person/day", "trigger": "Pre-opening; ongoing", "source_pages": [75]},
+    {"family": "operations_manual", "section": "9.1-9.3", "obligation": "Strict compliance; confidential; franchisor may modify without prior notice", "trigger": "Ongoing", "source_pages": [75]},
+    {"family": "uniformity", "section": "10.1-10.3", "obligation": "Strict compliance with all standards, specifications, procedures", "trigger": "Ongoing", "source_pages": [75]},
+    {"family": "advertising", "section": "11.1-11.4", "obligation": "2% NAF (after 12 mo); local ad (max $2K/mo, 1.5%); grand opening $4K-$8K; internet restricted", "trigger": "Monthly/ongoing", "source_pages": [76, 77]},
+    {"family": "records_reporting", "section": "12.1-12.7", "obligation": "Maintain records; monthly gross revenue reports; annual financial statements; 24-hour data access; unrestricted audit rights", "trigger": "Monthly/annual/ongoing", "source_pages": [78]},
+    {"family": "standards_of_operation", "section": "13.1-13.12", "obligation": "Authorized products/services only; approved suppliers; appearance standards; Mon-Fri 7am-6pm; best efforts", "trigger": "Ongoing", "source_pages": [79, 80, 81]},
+    {"family": "insurance", "section": "15.1-15.5", "obligation": "Procure within 10 days of Effective Date; GL $1M/$2M; Business Property $50K+; A&M $1M; WC as required; A-rated carrier; franchisor as additional insured", "trigger": "10 days from execution; ongoing", "source_pages": [82]},
+    {"family": "termination_noncurable", "section": "16.2.1", "obligation": "22 enumerated grounds for immediate termination including: failure to open, failure to train, loss of licenses >5 days, material misrepresentation, felony, abandonment (5 days), unauthorized transfer, insolvency, cross-default, 3 breaches/12 months", "trigger": "Event-based", "source_pages": [83, 84, 85]},
+    {"family": "termination_curable", "section": "16.2.2", "obligation": "Payment: 5-day cure; Insurance: 10-day cure; Other: 30-day cure", "trigger": "Notice of default", "source_pages": [85]},
+    {"family": "post_termination", "section": "17.1", "obligation": "Cease operations; cease using marks/IP; cancel assumed names (30 days); pay all sums including loss of future royalties and attorneys' fees; return all materials; assign phone numbers", "trigger": "Termination/expiration", "source_pages": [86]},
+    {"family": "noncompete_post_term", "section": "17.2", "obligation": "2 years, 25-mile radius of any WorldKids School or franchisor-owned business; no solicitation of customers/business associates", "trigger": "Termination/expiration", "duration": "2 years", "source_pages": [86, 87]},
+    {"family": "franchisor_purchase_option", "section": "17.4", "obligation": "Franchisor may purchase business assets at book value within 30 days of termination/expiration", "trigger": "Termination/expiration", "duration": "30 days", "source_pages": [87]},
+    {"family": "transfer_restrictions", "section": "18.2", "obligation": "Prior written consent required; 13 conditions; $10,000 fee; transferee signs current FA; general release; noncompete by seller; complete training", "trigger": "Any transfer attempt", "money": "$10,000", "source_pages": [88, 89]},
+    {"family": "rofr", "section": "19.1-19.3", "obligation": "Franchisor may match any bona fide offer for business or ownership interest", "trigger": "Any proposed sale", "source_pages": [90]},
+    {"family": "death_disability", "section": "18.6", "obligation": "Representative must transfer within 180 days; franchisor may manage at $500/person/day during interim", "trigger": "Death or incapacity", "duration": "180 days", "money": "$500/person/day management", "source_pages": [90]},
+    {"family": "guaranty", "section": "22.5 + Schedule 3", "obligation": "Unlimited personal guaranty by all 5%+ equity owners. Guarantors personally liable for ALL obligations.", "trigger": "FA execution", "scope": "unlimited", "source_pages": [94, 106, 107]},
+    {"family": "indemnification", "section": "21.3", "obligation": "Franchisee indemnifies franchisor for all claims arising from outlet operations", "trigger": "Any claim", "source_pages": [93]},
+    {"family": "dispute_resolution", "section": "23.1-23.12", "obligation": "WA law; WA forum; mandatory mediation then arbitration; jury waiver; class action waiver; no punitive damages; prior notice of claims; prevailing party attorneys' fees", "trigger": "Any dispute", "source_pages": [95, 96, 97]},
+    {"family": "force_majeure", "section": "22.10", "obligation": "Neither party liable for failure due to force majeure events", "trigger": "Force majeure event", "source_pages": [95]},
+    {"family": "confidentiality", "section": "7.1-7.5", "obligation": "Trade secrets and confidential information must remain confidential during and after term; NDAs required for personnel", "trigger": "Ongoing + post-term", "source_pages": [73, 74]},
+    {"family": "ip_assignment", "section": "7.2", "obligation": "All ideas/developments related to business become franchisor's property; must assist with IP rights", "trigger": "Any development", "source_pages": [73]},
+    {"family": "nda_noncompete_personnel", "section": "7.4 + Schedule 2", "obligation": "Owners, officers, directors, managers, employees may be required to sign NDA/noncompete", "trigger": "FA execution or affiliation", "source_pages": [74, 104, 105]}
+  ],
+  "distinctive_clauses": [
+    {"clause": "Loss of future royalties on termination", "section": "17.1(d)", "note": "Post-termination payment obligation includes 'loss of future Royalty Fee payments incurred by Franchisor as a result of any early termination' — this is a liquidated damages-type provision", "source_pages": [86]},
+    {"clause": "Targeted marketing prohibition", "section": "16.2.1(u)", "note": "Immediate termination for marketing outside territory — even if target area is not another franchisee's territory", "source_pages": [85]},
+    {"clause": "Business referral obligation", "section": "16.2.1(v)", "note": "Must refer business opportunities from other territories — failure is non-curable default", "source_pages": [85]},
+    {"clause": "Franchisor right to operate after default notice", "section": "16.5", "note": "Franchisor may take over operations after sending cure notice at $500/person/day", "source_pages": [85]},
+    {"clause": "Book value purchase option", "section": "17.4", "note": "Franchisor can purchase assets at book value (not fair market value) within 30 days of termination/expiration — subject to applicable state law", "source_pages": [87]}
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "targeted_depth_block": "key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "A — Franchise Agreement",
+      "pages": [39, 78],
+      "status": "FULLY CLAUSE-WALKED",
+      "note": "All 21 sections plus Guaranty and State-Specific Riders for 8 states directly read and extracted in RT_depth_contract_burdens.json"
+    },
+    {
+      "exhibit": "B-1 — Magnuson Cloud PMS Operating Manual TOC",
+      "pages": [79, 80],
+      "status": "FULLY READ",
+      "note": "Table of contents only — the 40-page manual itself is not included in the FDD"
+    },
+    {
+      "exhibit": "B-2 — Brand Standards Manual TOC",
+      "pages": [81, 82],
+      "status": "FULLY READ",
+      "note": "Table of contents only — the 12-page manual itself is not included in the FDD"
+    },
+    {
+      "exhibit": "C — Financial Statements",
+      "pages": [83, 94],
+      "status": "FULLY WALKED",
+      "note": "Auditor report, balance sheet, income statement, cash flow, all 5 notes fully extracted. Auditor name recovered via image fallback."
+    },
+    {
+      "exhibit": "E-1 — List of Current Franchisees",
+      "pages": [100, 102],
+      "status": "FULLY READ",
+      "note": "11 current franchisees captured with name, address, city, state, phone. No signed-but-not-open."
+    },
+    {
+      "exhibit": "E-2 — List of Former Franchisees",
+      "pages": [103, 104],
+      "status": "FULLY READ",
+      "note": "2 franchisees who left in FY2024 captured with footnotes."
+    },
+    {
+      "exhibit": "F — Representations Statement",
+      "pages": [105, 107],
+      "status": "FULLY READ",
+      "note": "Standard representations with state carve-outs; includes FPR question."
+    },
+    {
+      "exhibit": "G — Sample General Release",
+      "pages": [108, 111],
+      "status": "FULLY READ",
+      "clause_entries": [
+        {"clause_family": "general_release", "obligation": "Full unconditional release of all claims from beginning of time", "trigger": "Renewal, transfer, or other franchisor-consented action", "exceptions": "CA §1542 waiver; MD Franchise Law claims excluded; WA Franchise Investment Protection Act claims excluded", "source_pages": [109, 110]}
+      ]
+    },
+    {
+      "exhibit": "H — State Addenda",
+      "pages": [112, 126],
+      "status": "FULLY WALKED",
+      "note": "All 11 state addenda fully extracted in RT_depth_state_addenda_promotion.json with 41 structured override entries."
+    }
+  ],
+  "deferred_exhibits": [],
+  "note": "No exhibits were deferred. All material exhibits were directly clause-walked or fully read."
+}

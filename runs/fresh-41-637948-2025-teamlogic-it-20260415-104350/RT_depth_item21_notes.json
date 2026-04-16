@@ -1,0 +1,47 @@
+{
+  "depth_block": "item21_note_walk",
+  "source_pages": [60, 61, 62, 63, 64, 65, 66, 67],
+  "note_families_present": [
+    {"note": 1, "title": "Summary of Significant Accounting Policies", "pages": [60, 61, 62, 63, 64]},
+    {"note": 2, "title": "Revenues from Contracts with Customers", "pages": [64]},
+    {"note": 3, "title": "Concentrations, Risks, and Uncertainties", "pages": [65]},
+    {"note": 4, "title": "Restricted Cash", "pages": [65]},
+    {"note": 5, "title": "Property and Equipment", "pages": [65]},
+    {"note": 6, "title": "Provision for Income Taxes", "pages": [65, 66]},
+    {"note": 7, "title": "Commitments and Contingencies", "pages": [66]},
+    {"note": 8, "title": "Related Party Transactions", "pages": [67]},
+    {"note": 9, "title": "Employee Benefit Plan", "pages": [67]}
+  ],
+  "accounting_policies": {
+    "revenue_recognition": "ASC 606 / ASU 2021-02 practical expedient. Initial fees: recognized at opening (pre-opening services = single PO). Transfer/renewal fees: recognized over term. CFF: as franchisee sales occur. Managed services: monthly. Ad fund: as franchisee sales occur.",
+    "depreciation": "Straight-line for financial; accelerated for tax. Useful lives 3-10 years. Leasehold improvements: useful life for common-control leases; shorter of life or term for others.",
+    "impairment": "ASC 360-10. No impairment 2022-2024.",
+    "advertising_fund": "Contributions recognized as franchisee sales occur. Restricted cash maintained separately. Franchisor does not contribute.",
+    "deferred_franchise_fees": "Contract liability until pre-opening services complete. $175K (2024), $50K (2023), $180K (2022).",
+    "deferred_franchise_costs": "Sales commissions amortized over franchise term. Current: $355K; Non-current: $1,701K (2024)."
+  },
+  "lease_rent_structure": {
+    "type": "No direct leases — office leased by Parent",
+    "rent_charged": {"2024": 280000, "2023": 269000, "2022": 233000},
+    "included_in": "Management fees",
+    "building_ownership": "Building owned by parties related to Parent's owner",
+    "rou_assets": "Not applicable — no direct leases recognized by Company"
+  },
+  "parent_affiliate_structure": {
+    "due_to_parent": {"2024": 521000, "2023": 441000, "2022": 675000},
+    "management_fees": {"2024": 3310000, "2023": 3104000, "2022": 3077000},
+    "management_fee_components": "Selling, rent, payroll, admin support",
+    "allocation_basis": "Percentage of support provided by Parent",
+    "summit_marketing": {"2024": 7000, "2023": 17000, "2022": 7000},
+    "printing": {"2024": 70000, "2023": 70000, "2022": 70000},
+    "401k": {"2024": 303000, "2023": 277000, "2022": 247000}
+  },
+  "tax_structure": {
+    "federal": "QSSS — no federal tax at entity level. All items flow to parent of FSI.",
+    "state_current": {"2024": 107000, "2023": 89000, "2022": 191000},
+    "foreign_current": {"2024": 7000, "2023": 11000, "2022": 11000},
+    "deferred": "None in any period",
+    "uncertain_tax_positions": "Zero unrecognized benefit all years"
+  },
+  "subsequent_events": "Evaluated through March 24, 2025. No material events disclosed."
+}

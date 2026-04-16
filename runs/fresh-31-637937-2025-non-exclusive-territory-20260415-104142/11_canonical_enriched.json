@@ -1,0 +1,79 @@
+{
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "tables_count": 6,
+    "tables": [
+      {"id": "sales_job_size_by_group", "years": [2024, 2023], "groups": ["A", "B", "C", "D"], "metrics": ["avg_sales", "median_sales", "avg_job_size", "median_job_size"]},
+      {"id": "sales_thresholds", "years": [2024, 2023], "thresholds": ["3M+", "2M-3M", "1M-2M", "750K-1M", "500K-750K", "250K-500K"]},
+      {"id": "selling_prices_pct", "years": [2024, 2023], "metrics": ["avg_pct", "median_pct", "high_pct", "low_pct"]},
+      {"id": "seasonality", "years": [2024, 2023], "quarters": ["Q1", "Q2", "Q3", "Q4"]},
+      {"id": "2plus_inspector_summary", "years": [2024, 2023], "metrics": ["avg_sales", "median_sales"]},
+      {"id": "2plus_inspector_job_size", "years": [2024, 2023], "metrics": ["avg_job_size", "median_job_size"]}
+    ],
+    "population_2024": {"included": 293, "excluded": 8, "systemwide_included": 316, "systemwide_excluded": 10},
+    "total_systemwide_sales_2024": 85587013,
+    "average_sales_growth_2024": "12.2%",
+    "source_pages": [54, 55, 56, 57, 58, 59, 60]
+  },
+  "item20_yearly_activity": {
+    "nonexclusive": {
+      "2024": {"start": 407, "opened": 12, "terminated": 21, "non_renewed": 22, "reacquired": 0, "ceased": 0, "end": 376, "transfers": 13},
+      "2023": {"start": 436, "opened": 21, "terminated": 36, "non_renewed": 14, "reacquired": 0, "ceased": 0, "end": 407, "transfers": 23},
+      "2022": {"start": 440, "opened": 45, "terminated": 33, "non_renewed": 16, "reacquired": 0, "ceased": 0, "end": 436, "transfers": 11}
+    },
+    "exclusive": {
+      "2024": {"start": 38, "opened": 0, "terminated": 2, "non_renewed": 0, "end": 36, "transfers": 1},
+      "2023": {"start": 39, "opened": 0, "terminated": 1, "non_renewed": 0, "end": 38, "transfers": 5},
+      "2022": {"start": 45, "opened": 0, "terminated": 6, "non_renewed": 0, "end": 39, "transfers": 2}
+    },
+    "projected_openings_total": 0,
+    "source_pages": [60, 65, 70, 71, 72, 77, 82, 83, 84]
+  },
+  "exhibit_structure": {
+    "total_exhibits": 18,
+    "exhibits": ["A", "B", "C", "D", "E", "F", "G", "G-1", "G-2", "G-3", "G-4", "G-5", "H", "I", "J", "K", "L", "M", "N"],
+    "financial_exhibits": ["E", "F"],
+    "contract_exhibits": ["G", "G-1", "G-2", "G-3", "G-4", "G-5", "J"],
+    "state_addenda_exhibits": ["I", "J"],
+    "franchisee_list_exhibits": ["A", "B"]
+  },
+  "item21_structural_facts": {
+    "entity_audited": "FS Brands, Inc.",
+    "auditor": "PricewaterhouseCoopers LLP",
+    "auditor_location": "Toronto, Canada",
+    "opinion_type": "Unqualified",
+    "going_concern": false,
+    "fiscal_years": ["2024", "2023", "2022"],
+    "guarantee_of_performance": true,
+    "guarantor": "FS Brands, Inc.",
+    "parent_ownership": "97.18% owned by FS Property Services (U.S.) Inc.",
+    "ultimate_parent": "FirstService Corporation (publicly traded)"
+  },
+  "item1_structural_facts": {
+    "date_incorporated": "1994-07-11",
+    "state_incorporation": "Delaware",
+    "franchising_since": "1995-03-15",
+    "exclusive_territories_offered": "1995-2009",
+    "nonexclusive_only_since": 2009,
+    "no_predecessor": true,
+    "sister_brands": [
+      {"name": "CertaPro Painters", "us_units": 303},
+      {"name": "Paul Davis Restoration", "us_units": 245},
+      {"name": "California Closets", "us_units": 38},
+      {"name": "Floor Coverings International", "us_units": 281}
+    ],
+    "canadian_affiliate_units": 43
+  },
+  "item6_fee_attributes": {
+    "total_fee_categories": 19,
+    "percentage_fees": ["royalty_7pct", "brand_fee_4pct"],
+    "per_inspection_fees": ["it_fee_5.50", "inspection_numbers_28.50", "ptp360_3.10", "ptphomemanual_9.45"],
+    "per_booking_fees": ["ezbook_33.45_or_29.75"],
+    "fixed_monthly_fees": ["financial_reporting_30"],
+    "annual_fees": ["brand_conference_900_1200"],
+    "event_fees": ["transfer_4000", "referral_15000", "renewal_2500", "entity_transfer_1000"],
+    "minimum_royalty_escalation": [0, 582, 1164, 1746, 2328],
+    "fee_adjustment_notice": "90 days",
+    "fee_adjustment_frequency": "Max 1x per calendar year"
+  }
+}

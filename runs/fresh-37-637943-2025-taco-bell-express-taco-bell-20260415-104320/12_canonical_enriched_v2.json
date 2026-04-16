@@ -1,0 +1,122 @@
+{
+  "enrichment_version": "v2",
+  "item21_financial_structure_detail": {
+    "securitization_entities": [
+      "Taco Bell Funding, LLC (Issuer)",
+      "Taco Bell Franchisor Holdings, LLC (Franchisor Holdco)",
+      "Taco Bell Franchisor, LLC (the Company)",
+      "Taco Bell Franchise Holder 1, LLC (Franchise Holder)",
+      "Taco Bell IP Holder, LLC (IP Holder)"
+    ],
+    "cash_flow_mechanics": "All cash collections deposited into Issuer account → transferred to trustee cash accounts → used for note interest/principal payments → excess remitted to TBC",
+    "non_cash_distributions": "Franchise fees/royalties collected by Manager (TBC) on behalf of Company, deposited to Issuer account. Recorded as non-cash distributions since cash never received by Company.",
+    "management_agreement": "A&R Management Agreement (Aug 19, 2021). TBC performs all services. Management fee paid by Issuer, not Company. No expenses allocated to Company.",
+    "minimum_net_worth_requirement": "$15M (for large franchisor exemption under state franchise registration laws)",
+    "franchise_holder_relationship": "Franchise Holder holds legacy pre-2016 franchise agreements. As agreements transfer/successor, they move to the Company. Company had 6,207 units in 2024 vs 5,738 in 2022."
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "total_assets_2024": 140515,
+      "total_assets_2023": 116561,
+      "asset_composition": "100% financial assets (restricted cash, receivables, franchise incentives, intercompany). Zero property, plant, equipment.",
+      "restricted_cash_2024": 33115,
+      "accounts_receivable_2024": 57907,
+      "franchise_incentives_total_2024": 43402,
+      "total_liabilities_2024": 87252,
+      "liability_composition": "Primarily deferred franchise fees ($78.5M) and accrued franchise incentives ($8.1M). Zero debt at Company level (debt is at Issuer level).",
+      "members_equity_2024": 53263,
+      "equity_trend": "Growing: $27.8K (2021) → $29.8K (2022) → $33.1K (2023) → $53.3K (2024)"
+    },
+    "income_statement": {
+      "revenue_breakdown_2024": {
+        "franchise_and_license_fees": 663800,
+        "royalties_from_affiliates": 63536,
+        "total_revenues": 727336
+      },
+      "revenue_growth_2yr": "26.7%",
+      "revenue_cagr_2yr": "12.5%",
+      "operating_margin": "~100% (SPV structure — zero operating expenses)",
+      "affiliate_royalty_pct_of_total": "8.7%",
+      "bad_debt_expense": "Negligible — net recovery of $39K in 2024"
+    },
+    "cash_flow": {
+      "cash_from_operations_2024": 1667,
+      "note": "Operating cash flow equals interest income. All franchise cash flows are non-cash distributions to member.",
+      "cash_from_investing": 0,
+      "cash_from_financing_2024": 0,
+      "net_change_restricted_cash_2024": 1667
+    },
+    "equity_statement": {
+      "distributions_2024_total": 708885,
+      "distributions_2024_cash": 0,
+      "distributions_2024_noncash": 708885,
+      "distribution_pct_of_net_income": "97.2%",
+      "retained_earnings_trend": "Accelerating retention: $2.0K (2022) → $3.3K (2023) → $20.2K (2024)"
+    }
+  },
+  "item6_fee_detail": {
+    "royalty": {
+      "rate": "10%",
+      "base": "Gross Sales",
+      "gross_sales_exclusions": ["sales taxes", "employee meals", "overrings", "refunds to customers"],
+      "alcohol_restriction_workaround": "If state/local law restricts collection from alcohol sales, non-alcohol royalty rate increases to compensate",
+      "modification_right": "Franchisor may modify rate for atypical locations or unusual circumstances"
+    },
+    "technology_fees_breakdown": {
+      "to_franchisor_yearly": {
+        "annspire_pos": "included",
+        "boh_support": "included",
+        "erestaurant_conversion": "included",
+        "technology_support_fee": "included",
+        "customer_care": "included",
+        "recommended_ordering": "included",
+        "tkds_software": "included",
+        "tracks": "included",
+        "total_estimate": "Up to $6,500/restaurant/year"
+      },
+      "to_third_parties_yearly": {
+        "altametrics_software": "included",
+        "broadband_comcast": "included",
+        "armis_cyber_security": "included",
+        "bigfix": "included",
+        "dmb_maintenance": "included",
+        "hme_maintenance": "included",
+        "protiviti_tech_check": "included",
+        "verifone_subscription": "included",
+        "windows_office_365": "included",
+        "total_estimate": "Up to $16,600/restaurant/year"
+      },
+      "to_third_parties_onetime": {
+        "annspire_pos_esper_activation": "included",
+        "computer": "included",
+        "dmb_equipment_installation": "included",
+        "erestaurant_setup": "included",
+        "hme_timer_headset_installation": "included",
+        "kiosk_equipment_3_units": "included",
+        "line_printers_2_units": "included",
+        "onesource_tablet": "included",
+        "printer_warranty": "included",
+        "smarthub_hardware_installation": "included",
+        "tkds_equipment": "included",
+        "verifone_hardware_5_p400_2_e285": "included",
+        "total_estimate": "Up to $83,500/restaurant"
+      }
+    },
+    "transfer_fee_detail": {
+      "standard_3rd_party": {
+        "1_to_5_units": "$7,500/transfer",
+        "6_plus_units": "$1,500/unit",
+        "deposit": "50% non-refundable, due upon notice"
+      },
+      "relationship_agreement": {
+        "amount": "Greater of standard fee or $150,000",
+        "deposit": "50% non-refundable, payable with executed PSA"
+      },
+      "entity_restructure": {
+        "simple": "$2,500 total",
+        "complex_or_la_changes": "Equal to 3rd party transfer fee",
+        "unique_complex": "Higher at franchisor discretion"
+      }
+    }
+  }
+}

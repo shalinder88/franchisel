@@ -1,0 +1,67 @@
+{
+  "targeted_depth_block": "key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "G — Standard Franchise Agreement",
+      "page_range": [188, 231],
+      "status": "clause_walked",
+      "clauses": [
+        {"family": "grant_term", "obligation": "Non-exclusive franchise for home inspection", "trigger": "Execution of agreement", "duration": "5 years initial, 5 renewals of 5 years", "money": "$58,500 initial fee", "source_pages": [188, 189, 190]},
+        {"family": "fees", "obligation": "Royalty 7%, Brand Fee 4%, IT Fee, inspection numbers, EZBook, PTP360, HomeManual, Financial Reporting, Brand Conference", "trigger": "Monthly/per-inspection/annually", "duration": "Throughout term", "money": "See detailed fee schedule", "source_pages": [191, 192, 193, 194, 195]},
+        {"family": "minimum_revenue", "obligation": "Must generate $100K-$500K escalating gross revenue", "trigger": "Annual measurement", "duration": "Initial 5-year term", "money": "$100K yr1, $200K yr2, $300K yr3, $400K yr4, $500K yr5", "exceptions": "Performance plan if missed once; termination if missed 2 consecutive years", "source_pages": [199, 200]},
+        {"family": "opening", "obligation": "Open within 120 days of training completion", "trigger": "Training completion", "duration": "120 days (60-day extension possible)", "source_pages": [195, 196]},
+        {"family": "training", "obligation": "Complete Initial Training Program to franchisor's sole subjective satisfaction", "trigger": "Before opening", "duration": "~11 weeks", "money": "Included in franchise fee for franchisee; at franchisee expense for employees", "source_pages": [196, 197]},
+        {"family": "staffing", "obligation": "Add full-time inspector or marketing person within 12 months; maintain minimum 1 inspector + 1 marketing person from year 2", "trigger": "Training completion + 12 months", "duration": "Throughout term", "source_pages": [200, 201]},
+        {"family": "insurance", "obligation": "Maintain E&O, GL, auto, business property, cyber insurance at $1M/$2M levels", "trigger": "Before opening", "duration": "Throughout term and 2 years post-term (E&O)", "source_pages": [212, 213]},
+        {"family": "transfer", "obligation": "$4,000 fee + $15,000 referral + general release + new agreement", "trigger": "Transfer request", "money": "$4,000-$19,000", "exceptions": "Entity transfer to wholly-owned entity: $1,000", "source_pages": [213, 214, 215, 216, 217]},
+        {"family": "termination", "obligation": "Extensive default triggers with 10/30-day cure", "trigger": "Various defaults", "exceptions": "Non-curable defaults terminate immediately", "source_pages": [217, 218, 219, 220]},
+        {"family": "noncompete", "obligation": "No competing business during term; 2 years post-term within territory", "trigger": "Term/expiration/termination", "duration": "During term + 2 years post", "exceptions": "Subject to state law", "source_pages": [221, 222]},
+        {"family": "dispute_resolution", "obligation": "Binding arbitration in Tampa, FL under AAA rules", "trigger": "Any dispute except injunctive relief", "money": "Each party bears own costs", "exceptions": "1-year limitation period; punitive damages waived; class action waived; subject to state law", "source_pages": [227, 228, 229, 230]}
+      ]
+    },
+    {
+      "exhibit": "G-1 — Guaranty",
+      "page_range": [232, 234],
+      "status": "clause_walked",
+      "clauses": [
+        {"family": "guaranty", "obligation": "Unconditional guarantee of all franchise agreement obligations", "scope": "Joint and several", "waivers": "Right to require proceeding against franchisee first; right to exhaust security", "who": "All shareholders/members/partners", "governing_law": "Florida", "source_pages": [232, 233, 234]}
+      ]
+    },
+    {
+      "exhibit": "G-2 — Friendship Agreement",
+      "page_range": [235, 236],
+      "status": "clause_walked",
+      "clauses": [
+        {"family": "territory_rules", "obligation": "May enter neighbor's territory only if specifically asked by referral source from own territory. Must refer out-of-territory customer contacts.", "source_pages": [236]}
+      ]
+    },
+    {
+      "exhibit": "G-3 — Good Neighbor Agreement",
+      "page_range": [237, 239],
+      "status": "clause_walked",
+      "clauses": [
+        {"family": "co-opetition", "obligation": "Coordinate marketing, share opportunities, communicate regularly, honor established paid marketing relationships, avoid conflicts", "source_pages": [238, 239]}
+      ]
+    },
+    {
+      "exhibit": "G-4 — General Release",
+      "page_range": [240, 241],
+      "status": "clause_walked",
+      "clauses": [
+        {"family": "release", "obligation": "Broad release of all claims from beginning of world to date of release", "trigger": "Required at renewal and transfer", "exceptions": "Subject to state overrides (CA, IN, MD, MN, NY, ND, WA exclude statutory claims)", "source_pages": [240, 241]}
+      ]
+    },
+    {
+      "exhibit": "G-5 — Confidentiality/Non-Competition",
+      "page_range": [242, 244],
+      "status": "clause_walked",
+      "clauses": [
+        {"family": "noncompete_employee", "obligation": "No competing business during association and 2 years post within territory", "who": "All principals, managers, employees with access", "source_pages": [243, 244]},
+        {"family": "confidentiality", "obligation": "Perpetual obligation to maintain confidentiality. No copying, no disclosure, no use for others.", "source_pages": [243, 244]},
+        {"family": "non_solicitation", "obligation": "Cannot solicit or hire franchisee employees, contractors, or agents", "source_pages": [244]}
+      ]
+    }
+  ],
+  "deferred_exhibits": [],
+  "note": "All key exhibits (G, G-1 through G-5) were directly clause-walked. No exhibits were deferred."
+}

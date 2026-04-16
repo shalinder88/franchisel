@@ -1,0 +1,121 @@
+{
+  "enrichment_version": "v2",
+  "item21_financial_structure": {
+    "entity_type": "Single-member LLC (disregarded for tax)",
+    "member": "Magnuson Company, L.L.C.",
+    "capital_structure": "No debt; equity from member contributions only",
+    "member_contributions": {"2024": 0, "2023": 12600, "2022": 78839},
+    "member_distributions": {"2024": 50799, "2023": 50802, "2022": 0},
+    "distribution_to_income_ratio_2024": 0.92,
+    "cash_burn_from_inception": "Started with $100,444 (2022 beginning); now $19,493",
+    "revenue_per_outlet_2024": 23596,
+    "implied_avg_gross_room_revenue_per_outlet": 294955,
+    "management_fee_as_pct_revenue_2024": 0.49,
+    "operating_margin_2024": 0.212,
+    "asset_light": true,
+    "no_fixed_assets": true,
+    "no_intangibles_on_bs": true,
+    "no_debt": true
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "2024": {
+        "cash": 19493,
+        "accounts_receivable": 10673,
+        "prepaid": 720,
+        "total_assets": 30886,
+        "accounts_payable": 6051,
+        "members_equity": 24835,
+        "total_liabilities_and_equity": 30886,
+        "current_ratio": 5.1
+      },
+      "2023": {
+        "cash": 13794,
+        "accounts_receivable": 14221,
+        "prepaid": 0,
+        "total_assets": 28015,
+        "accounts_payable": 7458,
+        "members_equity": 20557,
+        "total_liabilities_and_equity": 28015,
+        "current_ratio": 3.8
+      }
+    },
+    "income_statement": {
+      "2024": {"continuing_fees": 259560, "franchise_fees": 0, "total_revenue": 259560, "operating_expenses": 204483, "net_income": 55077},
+      "2023": {"continuing_fees": 173198, "franchise_fees": 0, "total_revenue": 173198, "operating_expenses": 137230, "net_income": 35968},
+      "2022": {"continuing_fees": 18128, "franchise_fees": 10000, "total_revenue": 28128, "operating_expenses": 84176, "net_income": -56048}
+    },
+    "cash_flow": {
+      "2024": {"operating_cf": 56498, "financing_cf": -50799, "net_change": 5699, "ending_cash": 19493},
+      "2023": {"operating_cf": 26059, "financing_cf": -50802, "net_change": -24743, "ending_cash": 13794},
+      "2022": {"operating_cf": -61907, "financing_cf": 0, "net_change": -61907, "ending_cash": 38537}
+    },
+    "key_ratios": {
+      "revenue_growth_2024": 0.499,
+      "revenue_growth_2023": 5.156,
+      "operating_expense_ratio_2024": 0.788,
+      "net_margin_2024": 0.212,
+      "net_margin_2023": 0.208,
+      "ar_days_2024": 15,
+      "equity_to_assets_2024": 0.804
+    }
+  },
+  "item6_fee_detail": {
+    "continuing_fee": {
+      "rate_pct": 8,
+      "basis": "Gross Room Revenue",
+      "frequency": "monthly",
+      "grr_definition": "All revenues from sale/rental of Guest Rooms including breakfast, resort fees, urban fees, late cancellation fees, no-show revenue; less rebates/overcharges; excludes taxes",
+      "misreporting_penalty": "Fees calculated at 110% of 3-month average; no obligation to reimburse overpayment"
+    },
+    "gds_booking_fee": {"amount": 11.50, "unit": "per booking", "variable": true},
+    "distribution_fees": {
+      "gds_commission": "10%",
+      "other_channels": "15-20%",
+      "airbnb_monthly": {"low": 100, "high": 260},
+      "control": "Franchisor has sole right to select and manage all channels"
+    },
+    "minimum_floor": {"amount": 250, "frequency": "monthly", "escalation": "10%/year compounding with 30 days notice"},
+    "penalty_fees": [
+      {"name": "Conversion Violation", "amount": "$1,000/month"},
+      {"name": "Standards Violation", "amount": "$2,000/month"},
+      {"name": "Failed Inspection", "amount": "$2,500 + follow-up costs"},
+      {"name": "Re-booking", "amount": "200% of booking fee or alternate cost"},
+      {"name": "Insurance Certificate", "amount": "$250/month"},
+      {"name": "Re-Activation", "amount": "$750 + $25/day"},
+      {"name": "Extended Closure", "amount": "$750 + $25/day"},
+      {"name": "Inconvenience", "amount": "$2,000 (up to $5,000)"},
+      {"name": "De-Identification", "amount": "$9,995"}
+    ],
+    "termination_damages": "Continuing fees through earlier of 12 months or term expiration, calculated on trailing 12-month average (or all months if <12 months of operation)"
+  },
+  "a2_depth_additions": {
+    "auditor_recovered": "Citrin Cooperman & Company, LLP",
+    "item21_extraction_method": "targeted_image_fallback",
+    "unresolveds": [
+      {"id": "U1", "description": "Parent license termination risk: 6 months' notice without cause", "severity": "high"},
+      {"id": "U2", "description": "Affiliate Hotel competition: conflict resolution at franchisor discretion", "severity": "medium"},
+      {"id": "U3", "description": "Former franchisee confidentiality restrictions scope unclear", "severity": "medium"},
+      {"id": "U4", "description": "Formation state ambiguity: Washington vs Wyoming LLC", "severity": "low"},
+      {"id": "U5", "description": "TX outlet count OCR artifact corrected", "severity": "low"}
+    ],
+    "contradictions": [
+      {"id": "C1", "description": "TX outlet count OCR error", "resolution": "Resolved"},
+      {"id": "C2", "description": "Formation state discrepancy", "resolution": "Open"},
+      {"id": "C3", "description": "E-2 vs Table 3 TX termination timing", "resolution": "Resolved"}
+    ],
+    "state_addenda_override_families": {
+      "fee_deferral": ["CA", "IL", "MD", "MN", "ND", "SD", "WA"],
+      "general_release_limited": ["CA", "MD", "MN", "ND", "WA"],
+      "forum_selection_overridden": ["IL", "MI", "MN", "ND", "RI", "WA"],
+      "governing_law_overridden": ["CA", "IL", "RI", "WA"],
+      "damages_limited": ["CA", "MD", "MN", "ND", "WA"],
+      "termination_protections": ["MI", "MN", "NY", "VA"],
+      "transfer_protections": ["MI", "NY", "WA"],
+      "indemnification_limited": ["WA"],
+      "trademark_protection_required": ["MN"],
+      "interest_rate_capped": ["CA"],
+      "anti_waiver": ["CA", "HI", "IL", "IN", "MD", "MI", "MN", "NY", "ND", "RI", "SD", "VA", "WA", "WI"]
+    }
+  }
+}

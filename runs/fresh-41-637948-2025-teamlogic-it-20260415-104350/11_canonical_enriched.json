@@ -1,0 +1,88 @@
+{
+  "enrichment_version": "v1",
+  "base_canonical": "05_canonical.json",
+  "enrichments": {
+    "item19_chart_detail": {
+      "chart_type": "quartile_table",
+      "period": "2024",
+      "metric": "Gross Revenue",
+      "population_total": 161,
+      "population_businesses": 262,
+      "total_network_sales": 204000000,
+      "overall_average": 1267263,
+      "overall_median_estimate": 680000,
+      "multi_territory_concentration": {
+        "q1_multi": 27,
+        "q1_three_plus": 16,
+        "q2_multi": 8,
+        "q3_multi": 6,
+        "q4_multi": 3,
+        "total_multi": 44,
+        "pct_multi": 27.3
+      },
+      "top_performer": 22416140,
+      "bottom_performer": 13813,
+      "spread_ratio": 1623
+    },
+    "item20_yearly_activity": {
+      "2022": {"opened": 29, "closed_total": 6, "net": 23, "attrition_rate_pct": 2.3},
+      "2023": {"opened": 20, "closed_total": 4, "net": 16, "attrition_rate_pct": 1.4},
+      "2024": {"opened": 34, "closed_total": 5, "net": 29, "attrition_rate_pct": 1.6},
+      "3yr_total_opened": 83,
+      "3yr_total_closed": 15,
+      "3yr_net_growth": 68,
+      "3yr_cagr_pct": 8.6
+    },
+    "exhibit_structure": {
+      "total_exhibits": 11,
+      "critical": ["A", "D", "E"],
+      "high": ["E"],
+      "medium": ["C", "F", "G", "H"],
+      "low": ["B", "I", "J", "K"],
+      "total_exhibit_pages": 95,
+      "exhibit_pct_of_document": 65.5
+    },
+    "item21_structural_facts": {
+      "entity_type": "C-Corp (QSSS for tax)",
+      "auditor": "CliftonLarsonAllen LLP",
+      "opinion": "Unqualified",
+      "fiscal_year_end": "December 31",
+      "revenue_streams": 4,
+      "primary_revenue": "Continuing Franchise Fees (50.3% of total)",
+      "secondary_revenue": "Managed Services (33.5% of total)",
+      "gross_margin_pct": 86.8,
+      "net_margin_pct": 40.1,
+      "debt_to_equity": 0.30,
+      "distribution_payout_ratio": 95.9,
+      "yoy_revenue_growth_pct": 15.6,
+      "restricted_cash": 269000
+    },
+    "item1_structural_facts": {
+      "incorporated": "2004-09-01",
+      "state": "California",
+      "franchising_since": "2005-01",
+      "years_franchising": 20,
+      "parent_chain_depth": 3,
+      "affiliate_brands": 4,
+      "affiliate_total_centers": 185,
+      "operates_franchised_type": false
+    },
+    "item6_fee_attributes": {
+      "total_fee_types": 22,
+      "royalty_type": "percentage_with_floor",
+      "royalty_rate": 7.0,
+      "royalty_floor_monthly": 1000,
+      "ad_fund_rate": 1.2,
+      "ad_fund_floor_monthly": 200,
+      "local_marketing_floor_monthly": 2500,
+      "combined_minimum_monthly": 3700,
+      "combined_minimum_annual": 44400,
+      "transfer_fee": 10000,
+      "renewal_fee": 2000,
+      "has_technology_fees": true,
+      "technology_fee_range_monthly": "500-650+",
+      "has_late_fees": true,
+      "has_audit_fee": true
+    }
+  }
+}

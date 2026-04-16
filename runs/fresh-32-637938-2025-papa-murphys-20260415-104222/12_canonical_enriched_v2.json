@@ -1,0 +1,84 @@
+{
+  "_enrichment_version": "v2",
+  "_base": "11_canonical_enriched.json",
+  "item21_financial_structure": {
+    "entity": "MTY Franchising USA, Inc.",
+    "consolidated": true,
+    "subsidiaries_include": "Papa Murphy's International LLC and other MTY USA subsidiaries",
+    "guarantee": "absolute and unconditional",
+    "guarantee_scope": "all duties and obligations under franchise registration and franchise agreements"
+  },
+  "item21_statement_detail": {
+    "fy2022": {
+      "revenue_k": 263686,
+      "operating_expenses_k": 194664,
+      "depreciation_ppe_k": 2480,
+      "amortization_intangibles_k": 14631,
+      "impairment_total_k": 6228,
+      "interest_expense_k": 18135,
+      "management_fees_parent_k": 2928,
+      "income_before_tax_k": 26988,
+      "tax_expense_k": 7415,
+      "net_income_k": 19573,
+      "total_assets_k": 1182481,
+      "total_current_assets_k": 196760,
+      "total_current_liabilities_k": 398744,
+      "equity_k": 235958,
+      "cash_k": 23059,
+      "goodwill_k": 238060,
+      "intangible_assets_k": 522400,
+      "rou_assets_k": 165641,
+      "ppe_k": 54458,
+      "receivable_from_parent_k": 126323,
+      "advance_from_parent_k": 198801
+    },
+    "fy2021": {
+      "revenue_k": 216655,
+      "net_income_k": 30688,
+      "total_assets_k": 851172,
+      "equity_k": 216385
+    },
+    "fy2020": {
+      "revenue_k": 192657,
+      "net_loss_k": -36823,
+      "impairment_intangibles_goodwill_k": 62143,
+      "total_assets_k": 844907,
+      "equity_k": 185697
+    }
+  },
+  "item6_fee_detail": {
+    "one_time_fees": [
+      {"name": "Initial Franchise Fee", "amount_low": 15000, "amount_high": 25000},
+      {"name": "Transfer Fee", "amount_low": 7500, "amount_high": 25000},
+      {"name": "Successive Franchise Fee", "formula": "half of then-current"},
+      {"name": "Extension Fee", "amount": 2500},
+      {"name": "Relocation Fee", "amount": 5000},
+      {"name": "POS Change of Ownership", "amount": 500},
+      {"name": "Software License Transfer", "amount": 300},
+      {"name": "Online Ordering Transfer", "amount": 100},
+      {"name": "Document Administration", "amount": 500}
+    ],
+    "recurring_fees": [
+      {"name": "Royalty", "rate": 0.05, "basis": "Net Sales", "frequency": "weekly"},
+      {"name": "Brand Marketing Fee", "rate": 0.02, "basis": "Net Sales", "frequency": "weekly"},
+      {"name": "Local Marketing", "min_rate": 0.05, "min_dollar": 2000, "frequency": "monthly"},
+      {"name": "Online Ordering", "amount": 0.35, "unit": "per_transaction", "frequency": "weekly"},
+      {"name": "Loyalty Program", "amount": 53, "frequency": "monthly"},
+      {"name": "CRM", "amount": 10, "frequency": "monthly"},
+      {"name": "Food Service Incident", "amount": 3, "frequency": "monthly"},
+      {"name": "Store Solutions Support", "amount": 51.25, "frequency": "monthly"},
+      {"name": "Core Software Support", "amount": 114, "frequency": "monthly"},
+      {"name": "Managed Firewall", "amount_low": 30, "amount_high": 90, "frequency": "monthly"},
+      {"name": "Secure Payment Gateway", "amount": 11, "frequency": "monthly"},
+      {"name": "Internet", "amount_low": 50, "amount_high": 200, "frequency": "monthly"},
+      {"name": "Bookkeeping/Payroll", "amount_low": 0, "amount_high": 630, "frequency": "monthly"}
+    ],
+    "penalty_fees": [
+      {"name": "Non-Participation Fee", "amount": 100, "unit": "per_day"},
+      {"name": "Interest", "rate": 0.18, "unit": "annual"},
+      {"name": "Late Payment", "amount": 75},
+      {"name": "NSF", "amount": 35, "plus": "reimbursement"},
+      {"name": "Breaching Royalties", "rate": 0.15, "min_period_days": 14}
+    ]
+  }
+}

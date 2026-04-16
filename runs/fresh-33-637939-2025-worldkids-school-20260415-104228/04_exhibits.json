@@ -1,0 +1,64 @@
+{
+  "extraction_date": "2026-04-16",
+  "brand": "WorldKids School",
+  "filing_id": "637939",
+  "exhibits": [
+    {"letter": "A", "name": "List of State Administrators", "category": "regulatory", "priority": "low", "page_range": [54, 55]},
+    {"letter": "B", "name": "State Agents for Service of Process", "category": "regulatory", "priority": "low", "page_range": [56, 57]},
+    {"letter": "C", "name": "Franchise Agreement", "category": "contract", "priority": "critical", "page_range": [58, 98],
+      "schedules": [
+        {"number": 1, "name": "General Release", "page_range": [99, 100]},
+        {"number": 2, "name": "Nondisclosure and Non-Competition Agreement", "page_range": [104, 105]},
+        {"number": 3, "name": "Unlimited Guaranty and Assumption of Obligations", "page_range": [106, 107]},
+        {"number": 4, "name": "Lease Addendum", "page_range": [110, 111]},
+        {"number": 5, "name": "ACH Payment Agreement", "page_range": [112, 112]},
+        {"number": 6, "name": "Holders of Legal or Beneficial Interest; Officers; Directors", "page_range": [113, 113]},
+        {"number": 7, "name": "State Addenda to the Franchise Agreement", "page_range": [114, 122],
+          "states": ["California", "Illinois", "Maryland", "Minnesota", "North Dakota", "Rhode Island"]}
+      ]
+    },
+    {"letter": "D", "name": "Operations Manual Table of Contents", "category": "operations", "priority": "medium", "page_range": [123, 127], "notes": "Operations Manual is 65 pages total."},
+    {"letter": "E", "name": "Area Development Agreement", "category": "contract", "priority": "high", "page_range": [128, 141],
+      "appendices": [
+        {"letter": "A", "name": "Development Territory", "page_range": null},
+        {"letter": "B", "name": "Development Schedule", "page_range": null},
+        {"letter": "C", "name": "State Addenda to ADA", "page_range": [136, 141], "states": ["Washington"]}
+      ]
+    },
+    {"letter": "F", "name": "Financial Statements", "category": "financial", "priority": "critical", "page_range": [142, 162],
+      "statement_sets": [
+        {"period": "December 31, 2024", "type": "full", "page_range": [143, 153]},
+        {"period": "September 19, 2024", "type": "inception_balance_sheet", "page_range": [154, 162]}
+      ]
+    },
+    {"letter": "G-1", "name": "List of Current Franchisees", "category": "franchisee_list", "priority": "high", "page_range": [163, 163], "content": "None — no current franchisees."},
+    {"letter": "G-2", "name": "List of Former Franchisees", "category": "franchisee_list", "priority": "high", "page_range": [164, 164], "content": "None — no former franchisees."},
+    {"letter": "H", "name": "Franchisee Disclosure Questionnaire", "category": "compliance", "priority": "low", "page_range": [165, 167]},
+    {"letter": "I", "name": "State Addenda to the Disclosure Document", "category": "state_addenda", "priority": "high", "page_range": [168, 181],
+      "states": [
+        {"state": "California", "page_range": [169, 170]},
+        {"state": "Hawaii", "page_range": [171, 171]},
+        {"state": "Illinois", "page_range": [172, 172]},
+        {"state": "Maryland", "page_range": [173, 173]},
+        {"state": "Minnesota", "page_range": [174, 174]},
+        {"state": "New York", "page_range": [175, 176]},
+        {"state": "North Dakota", "page_range": [177, 177]},
+        {"state": "Rhode Island", "page_range": [178, 178]},
+        {"state": "Washington", "page_range": [179, 180]},
+        {"state": "Wisconsin", "page_range": [181, 181]}
+      ]
+    },
+    {"letter": "J", "name": "State Effective Dates", "category": "regulatory", "priority": "medium", "page_range": [182, 182],
+      "effective_dates": [
+        {"state": "California", "date": "Pending"},
+        {"state": "New York", "date": "Pending"},
+        {"state": "Washington", "date": "March 21, 2025"}
+      ]
+    },
+    {"letter": "K", "name": "Receipts", "category": "compliance", "priority": "low", "page_range": [183, 186]}
+  ],
+  "michigan_addendum_in_frontmatter": {
+    "location": "pages 6-7 (before TOC)",
+    "note": "Michigan addendum appears in front matter, not in Exhibit I"
+  }
+}

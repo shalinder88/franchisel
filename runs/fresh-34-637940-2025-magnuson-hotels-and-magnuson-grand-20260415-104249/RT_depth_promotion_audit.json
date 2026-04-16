@@ -1,0 +1,54 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion_audit",
+  "promoted_facts": [
+    {
+      "fact": "Auditor firm name: Citrin Cooperman & Company, LLP",
+      "source": "Image fallback of Exhibit C auditor report pages 86-87",
+      "target_field": "item_21.auditor",
+      "action": "Updated from 'Unknown firm (Melville, New York)' to 'Citrin Cooperman & Company, LLP'"
+    },
+    {
+      "fact": "Formation state ambiguity: Notes to financial statements state entity formed as Washington LLC; Item 1 states Wyoming LLC",
+      "source": "Reader report Pass G / Exhibit C Note 1, p.91 vs Item 1, p.8",
+      "target_field": "contradictions",
+      "action": "Added as contradiction entry"
+    },
+    {
+      "fact": "Management fee to parent represents 62% of operating expenses and 49% of total revenue in 2024",
+      "source": "Reader report Pass F / Exhibit C Note 5, p.94 and IS p.89",
+      "target_field": "item_21.related_party_mgmt_fee_pct",
+      "action": "Added as enrichment metrics"
+    },
+    {
+      "fact": "License agreement is 99-year term with zero license fee charged to date",
+      "source": "Reader report Pass F / Exhibit C Note 5, p.94",
+      "target_field": "item_21.license_agreement_term",
+      "action": "Already in enrichment — confirmed"
+    },
+    {
+      "fact": "Franchises sold deceleration: 4 (2022), 6 (2023), 2 (2024)",
+      "source": "Reader report Pass G / Exhibit C Note 3, p.93",
+      "target_field": "item_20.franchises_sold_trend",
+      "action": "Added to enrichment"
+    },
+    {
+      "fact": "Revenue recognition: franchise fees allocated to IP access recognized straight-line over agreement term; continuing fees recognized as sales occur",
+      "source": "Exhibit C Note 2, p.92-93",
+      "target_field": "item_21.revenue_recognition_policy",
+      "action": "Captured in RT_depth_financial_notes.json — confirmed in canonical"
+    },
+    {
+      "fact": "Illinois fee deferral ordered by Illinois Attorney General's Office based on financial condition (not just securities regulator)",
+      "source": "Exhibit A State Rider p.68; Exhibit H p.116",
+      "target_field": "state_addenda_overrides.IL",
+      "action": "Added to state addenda depth"
+    },
+    {
+      "fact": "California: Department has determined franchisor not adequately capitalized and must rely on franchise fees to fund operations",
+      "source": "Exhibit H p.114-115",
+      "target_field": "state_addenda_overrides.CA",
+      "action": "Added to state addenda depth — this is a more severe finding than generic fee deferral"
+    }
+  ],
+  "total_promoted": 8
+}

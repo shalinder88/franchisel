@@ -1,0 +1,53 @@
+{
+  "extraction_id": "637941-2025",
+  "depth_block": "item20_completion",
+  "tables_extracted": 5,
+  "table_1_systemwide_summary": {
+    "source_pages": [67],
+    "data": {
+      "franchised": {"2022": {"start": 1, "end": 1}, "2023": {"start": 1, "end": 1}, "2024": {"start": 1, "end": 2}},
+      "company_owned": {"2022": {"start": 1, "end": 3}, "2023": {"start": 3, "end": 3}, "2024": {"start": 3, "end": 3}},
+      "total": {"2022": {"start": 2, "end": 4}, "2023": {"start": 4, "end": 4}, "2024": {"start": 4, "end": 5}}
+    },
+    "notes": ["FY ended Dec 29, 2024", "Franchised = licensees under IPH2", "Company-owned = affiliate-operated"]
+  },
+  "table_2_transfers": {
+    "source_pages": [68],
+    "data": {"2022": 0, "2023": 0, "2024": 0}
+  },
+  "table_3_franchised_status": {
+    "source_pages": [68],
+    "states": {
+      "Nevada": {
+        "2022": {"start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        "2023": {"start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        "2024": {"start": 1, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 2}
+      }
+    },
+    "notes": ["Licensees under IPH2 in non-traditional hotel/casino locations"]
+  },
+  "table_4_company_owned_status": {
+    "source_pages": [69],
+    "states": {
+      "Florida": {
+        "2022": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+        "2023": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+        "2024": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1}
+      },
+      "New York": {
+        "2022": {"start": 0, "opened": 1, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+        "2023": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+        "2024": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1}
+      },
+      "Washington D.C.": {
+        "2022": {"start": 0, "opened": 1, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+        "2023": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+        "2024": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1}
+      }
+    }
+  },
+  "table_5_projected_openings": {
+    "source_pages": [69],
+    "data": {"fa_signed_not_opened": 0, "projected_franchised": 0, "projected_company": 0}
+  }
+}

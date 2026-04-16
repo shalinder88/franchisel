@@ -1,0 +1,147 @@
+{
+  "extraction_id": "637941-2025",
+  "brand": "Fish & Chips Gordon Ramsay",
+  "enrichment_version": "v2",
+  "item21_financial_structure_detail": {
+    "entity_name": "GRNA FC Group, LLC",
+    "entity_type": "Limited Liability Company",
+    "state_of_formation": "Delaware",
+    "formation_date": "2024-06-20",
+    "funding_date": "2025-01-30",
+    "funding_amount": 100000,
+    "funding_source": "GRNA LLC (parent)",
+    "funding_purpose": "filing initial franchise disclosure document and selling GRNA FC franchises",
+    "operational_status_at_statement_date": "not commenced operations",
+    "member_liability": "limited to capital contributions",
+    "tax_election": "LLC pass-through (not subject to federal income taxes)",
+    "fdic_insured": true,
+    "uninsured_cash": 0,
+    "subsequent_events_evaluated_through": "2025-02-26",
+    "contingent_liabilities": "none",
+    "lease_obligations": "none",
+    "outstanding_legal_proceedings": "none"
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "date": "2025-01-31",
+      "assets": {
+        "cash": 100000,
+        "total_assets": 100000
+      },
+      "liabilities": {
+        "total_liabilities": 0
+      },
+      "equity": {
+        "members_equity": 100000,
+        "total_equity": 100000
+      }
+    },
+    "income_statement": null,
+    "cash_flow_statement": null,
+    "notes": "No income statement or cash flow statement available. Entity has not commenced operations."
+  },
+  "item6_fee_detail": {
+    "fees": [
+      {
+        "name": "Royalty Fee",
+        "type": "ongoing",
+        "rate_or_amount": "5% of Restaurant Revenue",
+        "frequency": "monthly (15th)",
+        "escalation": "May increase to 8% for Menu Item Price Policy violations",
+        "refundable": false,
+        "payable_to": "Franchisor",
+        "payment_method": "EFT"
+      },
+      {
+        "name": "Brand Fund Contribution",
+        "type": "ongoing",
+        "rate_or_amount": "0.5% of Restaurant Revenue",
+        "frequency": "monthly (15th)",
+        "cap": "Combined with Local Marketing not to exceed 4%",
+        "status": "Not yet established",
+        "refundable": false,
+        "payable_to": "Franchisor",
+        "payment_method": "EFT"
+      },
+      {
+        "name": "Local Marketing Expenditure",
+        "type": "ongoing",
+        "rate_or_amount": "1% of Restaurant Revenue",
+        "frequency": "quarterly minimum",
+        "cap": "Combined with Brand Fund not to exceed 4%",
+        "unspent_treatment": "Collected by franchisor and deposited into Brand Fund",
+        "refundable": false,
+        "payable_to": "Various (agencies, media)",
+        "payment_method": "As incurred"
+      },
+      {
+        "name": "Transfer Fee (FA)",
+        "type": "event-driven",
+        "rate_or_amount": "$12,500",
+        "trigger": "Transfer of FA or ownership interests",
+        "refundable": false,
+        "payable_to": "Franchisor"
+      },
+      {
+        "name": "Renewal Fee (FA)",
+        "type": "event-driven",
+        "rate_or_amount": "$12,500 + out-of-pocket costs",
+        "trigger": "Renewal of franchise upon signing new FA",
+        "refundable": false,
+        "payable_to": "Franchisor"
+      },
+      {
+        "name": "Development Termination Fee (ADA)",
+        "type": "event-driven",
+        "rate_or_amount": "Greater of: $270,000 x undeveloped units OR avg royalty x 24 x undeveloped units",
+        "trigger": "ADA termination due to franchisee default",
+        "refundable": false,
+        "payable_to": "Franchisor"
+      },
+      {
+        "name": "Pre-Opening Royalty (FA)",
+        "type": "event-driven",
+        "rate_or_amount": "$3,000/week",
+        "trigger": "Restaurant not opened by required deadline",
+        "refundable": false,
+        "payable_to": "Franchisor"
+      },
+      {
+        "name": "Event of Default Fee (FA)",
+        "type": "event-driven",
+        "rate_or_amount": "$12,500",
+        "trigger": "Each event of default during FA term",
+        "refundable": false,
+        "payable_to": "Franchisor"
+      },
+      {
+        "name": "Liquidated Damages (FA)",
+        "type": "event-driven",
+        "rate_or_amount": "Formula-based (min $500,000)",
+        "trigger": "Termination for franchisee default",
+        "formula_detail": {
+          "scenario_1": "<3 years remaining: greater of (avg royalty x months remaining) or $500,000",
+          "scenario_2": ">=3 years and operated >=2 years: avg royalty x 24 months",
+          "scenario_3": ">=3 years and operated <2 years: system avg royalty x 24 months"
+        },
+        "refundable": false,
+        "payable_to": "Franchisor"
+      },
+      {
+        "name": "Food Safety Inspection",
+        "type": "ongoing",
+        "rate_or_amount": "$262/inspection",
+        "frequency": "quarterly",
+        "vendor": "Steritech (sole approved vendor)",
+        "payable_to": "Steritech or Franchisor as reimbursement"
+      },
+      {
+        "name": "Mystery Shopper",
+        "type": "ongoing",
+        "rate_or_amount": "$150/visit",
+        "frequency": "as designated",
+        "payable_to": "Vendor or Franchisor as reimbursement"
+      }
+    ]
+  }
+}

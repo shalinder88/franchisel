@@ -1,0 +1,43 @@
+{
+  "depth_pass": "state_addenda_structured_promotion",
+  "source_exhibit": "E",
+  "source_pages": [112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125],
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {"state": "California", "affected_family": "noncompete", "override_summary": "Non-competes upon termination/expiration are generally unenforceable in California", "why_it_matters": "CA franchisees effectively have no post-term noncompete restriction", "source_pages": [112]},
+    {"state": "California", "affected_family": "general_release", "override_summary": "CA Corp Code 31512 voids waiver of Franchise Investment Law rights; B&P Code 20010 voids waiver of Franchise Relations Act rights", "why_it_matters": "General release at renewal/transfer cannot waive CA franchise law claims", "source_pages": [112]},
+    {"state": "California", "affected_family": "termination", "override_summary": "CA B&P Code 20000-20043 provides rights concerning termination, transfer, non-renewal; law controls over inconsistent agreement provisions", "why_it_matters": "California franchisees have statutory protections on termination beyond franchise agreement", "source_pages": [112]},
+    {"state": "California", "affected_family": "forum_selection", "override_summary": "Binding arbitration in Orange County, CA. Franchisees encouraged to consult counsel re applicability of B&P 20040.5, CCP 1281, Federal Arbitration Act", "why_it_matters": "Arbitration venue stays in CA but state law may provide additional protections", "source_pages": [112]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Section 4 of Illinois Franchise Disclosure Act governs applicable law provisions", "why_it_matters": "Illinois franchise law may override California choice of law", "source_pages": [113]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Section 4 of Illinois Franchise Disclosure Act applies to jurisdiction/venue", "why_it_matters": "IL franchisees may have venue protections", "source_pages": [113]},
+    {"state": "Indiana", "affected_family": "general_release", "override_summary": "Indiana law applies to franchise agreements with IN franchisees. General release may be limited", "why_it_matters": "Indiana franchise law provides protections", "source_pages": [114]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General release upon renewal/transfer may not apply to extent prohibited by Maryland law", "why_it_matters": "MD franchisees protected from franchise law claim waivers at renewal/transfer", "source_pages": [115]},
+    {"state": "Maryland", "affected_family": "fees", "override_summary": "Franchise fees not payable until franchisee opens for business", "why_it_matters": "MD franchisees do not pay initial fee until opening — protects against pre-opening risk", "source_pages": [115]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "MN franchise law protections apply; venue may not be restricted to CA", "why_it_matters": "MN franchisees may litigate in Minnesota rather than California", "source_pages": [116]},
+    {"state": "Minnesota", "affected_family": "governing_law", "override_summary": "MN franchise law may override CA governing law provision", "why_it_matters": "Minnesota law may govern the franchise relationship for MN franchisees", "source_pages": [116]},
+    {"state": "New York", "affected_family": "general_release", "override_summary": "No waiver of NY General Business Law Article 33 claims; no disclaimer of reliance on franchisor statements", "why_it_matters": "NY franchisees protected from waiver of state franchise law claims and reliance disclaimers", "source_pages": [119, 120]},
+    {"state": "New York", "affected_family": "governing_law", "override_summary": "Article 33 of NY General Business Law rights preserved regardless of choice of law", "why_it_matters": "NY franchise law applies even if agreement specifies CA law", "source_pages": [120]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Restrictive covenants subject to Section 9-08, N.D.C.C.", "why_it_matters": "ND noncompete restrictions may be unenforceable under ND law", "source_pages": [120]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Cannot require ND franchisees to arbitrate at location remote from business site; cannot require consent to out-of-state jurisdiction", "why_it_matters": "ND franchisees may arbitrate/litigate in North Dakota, not California", "source_pages": [120]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "Franchise agreements cannot specify non-ND governing law", "why_it_matters": "ND law governs for ND franchisees, not California law", "source_pages": [120]},
+    {"state": "North Dakota", "affected_family": "damages", "override_summary": "Cannot require consent to liquidated damages or termination penalties", "why_it_matters": "ND franchisees protected from penalty clauses", "source_pages": [120]},
+    {"state": "North Dakota", "affected_family": "jury_trial", "override_summary": "Section 12.3 jury trial waiver is deleted for ND", "why_it_matters": "ND franchisees retain right to jury trial", "source_pages": [120]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "No waiver of ND franchise law claims; no disclaimer of reliance", "why_it_matters": "ND franchisees protected from franchise law claim waivers", "source_pages": [120]},
+    {"state": "Virginia", "affected_family": "general_release", "override_summary": "VA Securities Act provisions apply", "why_it_matters": "Virginia franchise law protections", "source_pages": [122]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "WA Franchise Investment Protection Act provisions apply", "why_it_matters": "Washington franchise law protections", "source_pages": [123]},
+    {"state": "Wisconsin", "affected_family": "general_release", "override_summary": "WI franchise law provisions apply", "why_it_matters": "Wisconsin franchise law protections", "source_pages": [124]}
+  ],
+  "summary_table": {
+    "families": ["noncompete", "forum_selection", "governing_law", "general_release", "termination", "damages", "jury_trial", "fees"],
+    "CA": ["noncompete", "general_release", "termination", "forum_selection"],
+    "IL": ["governing_law", "forum_selection"],
+    "IN": ["general_release"],
+    "MD": ["general_release", "fees"],
+    "MN": ["forum_selection", "governing_law"],
+    "NY": ["general_release", "governing_law"],
+    "ND": ["noncompete", "forum_selection", "governing_law", "damages", "jury_trial", "general_release"],
+    "VA": ["general_release"],
+    "WA": ["general_release"],
+    "WI": ["general_release"]
+  }
+}

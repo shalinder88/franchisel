@@ -1,0 +1,66 @@
+{
+  "depth_block": "key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "D",
+      "name": "Franchise Agreement",
+      "pages": [80, 110],
+      "walked": true,
+      "clauses_extracted": 28,
+      "note": "Full clause walk performed via Item 17 summary table cross-referenced with franchise agreement text. Key operative clauses captured in RT_depth_contract_burdens.json."
+    },
+    {
+      "exhibit": "E",
+      "name": "Multi-State Addendum",
+      "pages": [111, 125],
+      "walked": true,
+      "clauses_extracted": 22,
+      "note": "Full state-by-state override extraction performed. Captured in RT_depth_state_addenda_promotion.json."
+    },
+    {
+      "exhibit": "F",
+      "name": "Amendment for Multiple Franchises",
+      "pages": [126, 129],
+      "walked": true,
+      "clauses_extracted": 3,
+      "key_clauses": [
+        {"clause_family": "territory_consolidation", "obligation": "Coterminous terms for multiple franchises", "source_pages": [126]},
+        {"clause_family": "release", "obligation": "Franchisee releases all past/present claims upon signing", "source_pages": [128]},
+        {"clause_family": "arbitration", "obligation": "Same arbitration provisions apply", "source_pages": [128]}
+      ]
+    },
+    {
+      "exhibit": "G",
+      "name": "Conversion Addendum",
+      "pages": [129, 131],
+      "walked": true,
+      "clauses_extracted": 3,
+      "key_clauses": [
+        {"clause_family": "managed_services_migration", "obligation": "Convert/migrate existing managed services clients to TLI within 90 days", "source_pages": [130]},
+        {"clause_family": "initial_fee", "obligation": "Conversion franchise fee: $49,500 (non-refundable)", "source_pages": [130]},
+        {"clause_family": "cff_waiver", "obligation": "CFF waived on average existing Gross Sales for first 12 months (calculated from prior 36 months or actual if <36 months)", "source_pages": [130]}
+      ]
+    },
+    {
+      "exhibit": "H",
+      "name": "Transfer Release Agreement",
+      "pages": [132, 134],
+      "walked": true,
+      "clauses_extracted": 3,
+      "key_clauses": [
+        {"clause_family": "consent_to_transfer", "obligation": "Franchisor consents to transfer to approved buyer", "source_pages": [133]},
+        {"clause_family": "mutual_release", "obligation": "Mutual release of all claims (known and unknown) subject to post-termination obligations", "source_pages": [133]},
+        {"clause_family": "ca_civil_code_1542", "obligation": "Franchisee waives CA Civil Code 1542 rights (release extends to unknown claims)", "source_pages": [133]}
+      ]
+    },
+    {
+      "exhibit": "J",
+      "name": "SBA Addendum",
+      "pages": [137, 139],
+      "walked": false,
+      "deferred_reason": "SBA Addendum is a standard form required only if SBA financing is obtained. Not applicable to all franchisees. Core economic terms unchanged.",
+      "already_recovered": "Item 10 states no financing offered. SBA addendum referenced in Item 10 and Exhibit J cover page.",
+      "what_remains_missing": "Detailed SBA addendum operative clauses (standard SBA form provisions). Low materiality for franchise economics."
+    }
+  ]
+}

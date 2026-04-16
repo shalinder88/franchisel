@@ -1,0 +1,58 @@
+{
+  "method": "targeted_image_fallback",
+  "pages_targeted": [85, 86, 87],
+  "recovered_fields": {
+    "auditor": {
+      "firm_name": "Citrin Cooperman & Company, LLP",
+      "address": "225 Broadhollow Road, Suite 401, Melville, NY 11747",
+      "phone": "631.930.5000",
+      "fax": "516.349.2190",
+      "website": "citrincooperman.com",
+      "designation": "Certified Public Accountants",
+      "network_affiliation": "Moore North America, Inc. (MNA) Association, regional member of Moore Global Network Limited (MGNI)",
+      "source_page": 86,
+      "confidence": "high"
+    },
+    "opinion_type": {
+      "value": "Unqualified (clean)",
+      "verbatim": "In our opinion, the financial statements referred to above present fairly, in all material respects",
+      "source_page": 86,
+      "confidence": "high"
+    },
+    "going_concern": {
+      "present": false,
+      "note": "Auditor evaluated going concern — no going concern paragraph included",
+      "source_page": 87,
+      "confidence": "high"
+    },
+    "balance_sheet_headlines": {
+      "total_assets_2024": 30886,
+      "total_assets_2023": 28015,
+      "total_liabilities_2024": 6051,
+      "total_liabilities_2023": 7458,
+      "members_equity_2024": 24835,
+      "members_equity_2023": 20557,
+      "note": "Already captured in text extraction — confirmed via image",
+      "source_page": 88,
+      "confidence": "high"
+    },
+    "income_statement_headlines": {
+      "total_revenue_2024": 259560,
+      "total_revenue_2023": 173198,
+      "total_revenue_2022": 28128,
+      "operating_expenses_2024": 204483,
+      "net_income_2024": 55077,
+      "net_income_2023": 35968,
+      "net_loss_2022": -56048,
+      "note": "Already captured in text extraction — confirmed via image",
+      "source_page": 89,
+      "confidence": "high"
+    },
+    "deferred_franchise_fees": null,
+    "subsequent_events": {
+      "value": "None material — evaluated through March 25, 2025",
+      "source_page": 93,
+      "confidence": "high"
+    }
+  }
+}

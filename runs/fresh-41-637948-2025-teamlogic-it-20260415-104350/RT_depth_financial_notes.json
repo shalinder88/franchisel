@@ -1,0 +1,155 @@
+{
+  "depth_pass": "financial_notes",
+  "source_pages": [60, 61, 62, 63, 64, 65, 66, 67],
+  "notes": [
+    {
+      "note_number": 1,
+      "title": "Summary of Significant Accounting Policies",
+      "source_pages": [60, 61, 62, 63],
+      "sub_topics": {
+        "nature_of_operations": {
+          "detail": "Incorporated Sept 1, 2004 in California. Wholly owned subsidiary of FSI. Engaged in sale and service of IT franchises. 311 operating locations at 12/31/2024. 34 new opened in 2024, 20 in 2023, 29 in 2022. No franchisor-owned units. 8 franchisees have executed agreements but not started operations.",
+          "source_pages": [60]
+        },
+        "affiliate_companies": {
+          "detail": "FSI also owns Sir Speedy, PIP, Signal Graphics, Summit Marketing Communications. All headquartered in Mission Viejo, CA.",
+          "source_pages": [60]
+        },
+        "financial_statement_presentation": {
+          "detail": "Prepared in conformity with US GAAP. FASB ASC 810-10 Consolidation assessed — company does not possess ownership in franchise entities, does not provide financial support, did not consolidate any franchise entities.",
+          "source_pages": [60, 61]
+        },
+        "cash_and_cash_equivalents": {
+          "detail": "Includes cash on hand, in banks, and highly liquid instruments with original maturities <= 3 months.",
+          "source_pages": [61]
+        },
+        "accounts_receivable_and_allowance": {
+          "detail": "Trade receivables: CFF and managed services fees, net of allowance for credit losses. Allowance based on historical experience, current conditions, forward-looking info. Allowance: $154K (2024), $91K (2023), $10K (2022).",
+          "source_pages": [61]
+        },
+        "property_and_equipment": {
+          "detail": "Stated at cost. Depreciated over 3-10 year useful lives using straight-line for financial purposes, accelerated for tax. Leasehold improvements for common control leases amortized over useful life; others over shorter of useful life or lease term.",
+          "source_pages": [61]
+        },
+        "revenue_recognition": {
+          "detail": "Under ASC 606 / ASU 2021-02. Five-step model. Elected practical expedient to treat pre-opening services as single performance obligation. Initial/Transfer/Renewal fees recognized upon completion of pre-opening services (generally at opening). If not complete, recorded as contract liability. Transfer and renewal fees recognized over franchise term. CFF recognized as franchisee sales occur. Managed services recognized monthly. Ad fund contributions recognized as franchisee sales occur.",
+          "source_pages": [62, 63]
+        },
+        "deferred_franchise_costs": {
+          "detail": "Represent commissions that are direct costs of franchise sales. Amortized on straight-line basis over franchise term.",
+          "source_pages": [63]
+        },
+        "deferred_revenue": {
+          "detail": "Franchise fees from signed agreements where location not yet opened.",
+          "source_pages": [63]
+        },
+        "income_taxes": {
+          "detail": "QSSS election — Company and Parent treated as single entity for federal purposes. All income/deductions flow to parent of FSI. State taxes provided for jurisdictions treating company as separate or imposing franchise tax.",
+          "source_pages": [63]
+        },
+        "long_lived_assets": {
+          "detail": "FASB ASC 360-10 impairment policy. No impairment recorded for 2022, 2023, or 2024.",
+          "source_pages": [63]
+        },
+        "advertising_costs": {
+          "detail": "Non-fund advertising costs charged when incurred. Totaled $496K (2024), $438K (2023), $371K (2022). Included in SG&A.",
+          "source_pages": [63]
+        },
+        "use_of_estimates": {
+          "detail": "Standard — estimates relate to unsettled transactions. Actual may differ.",
+          "source_pages": [64]
+        },
+        "subsequent_events": {
+          "detail": "Evaluated through March 24, 2025 (date financials available to be issued). No material events disclosed.",
+          "source_pages": [64]
+        }
+      }
+    },
+    {
+      "note_number": 2,
+      "title": "Revenues from Contracts with Customers",
+      "source_pages": [64],
+      "detail": {
+        "disaggregation": "Revenue by major type shown in income statement (CFF, initial/transfer/renewal, managed services, ad fund).",
+        "contract_receivables": {
+          "2024": {"gross_ar": 1787000, "allowance": -154000, "net_ar": 1633000, "contract_liability": 175000},
+          "2023": {"gross_ar": 1470000, "allowance": -91000, "net_ar": 1379000, "contract_liability": 50000},
+          "2022": {"gross_ar": 1168000, "allowance": -10000, "net_ar": 1158000, "contract_liability": 180000},
+          "2022_jan1": {"gross_ar": 905000, "allowance": -21000, "net_ar": 884000, "contract_liability": 238000}
+        },
+        "contract_assets": "None at any period end."
+      }
+    },
+    {
+      "note_number": 3,
+      "title": "Concentrations, Risks, and Uncertainties",
+      "source_pages": [65],
+      "detail": {
+        "fdic_uninsured_cash": {"2024": 1406000, "2023": 750000, "2022": 1771000},
+        "vendor_concentration": "44% of products from 2 vendors in 2024; 27% from 1 vendor in 2023; 40% from 2 vendors in 2022. Outstanding vendor balance at 12/31/2024: $48,900; zero at 12/31/2023 and 2022."
+      }
+    },
+    {
+      "note_number": 4,
+      "title": "Restricted Cash",
+      "source_pages": [65],
+      "detail": "Restricted cash for advertising fund contributions. Balance: $269K (2024), $271K (2023), $295K (2022)."
+    },
+    {
+      "note_number": 5,
+      "title": "Property and Equipment",
+      "source_pages": [65],
+      "detail": {
+        "breakdown_2024": {"autos": 48000, "furniture_fixtures": 33000, "office_equip_software": 689000, "leasehold_improvements": 244000, "total_cost": 1014000, "accumulated_depreciation": -314000, "net": 700000},
+        "breakdown_2023": {"autos": 71000, "furniture_fixtures": 33000, "office_equip_software": 695000, "leasehold_improvements": 165000, "total_cost": 964000, "accumulated_depreciation": -241000, "net": 723000},
+        "breakdown_2022": {"autos": 71000, "furniture_fixtures": 33000, "office_equip_software": 87000, "leasehold_improvements": 165000, "total_cost": 356000, "accumulated_depreciation": -175000, "net": 181000},
+        "depreciation_expense": {"2024": 106000, "2023": 70000, "2022": 27000},
+        "related_party_leasehold": "Unamortized balance: $158K (2024), $100K (2023), $120K (2022). Remaining life: 4-7 years.",
+        "note_office_equip_jump": "Office equipment/software jumped from $87K to $695K in 2023 — significant IT investment."
+      }
+    },
+    {
+      "note_number": 6,
+      "title": "Provision for Income Taxes",
+      "source_pages": [65, 66],
+      "detail": {
+        "tax_positions": "ASC 740-10 adopted. Unrecognized tax benefit: zero for all years.",
+        "provision_breakdown": {
+          "2024": {"state_current": 107000, "foreign_current": 7000, "deferred": 0, "total": 114000},
+          "2023": {"state_current": 89000, "foreign_current": 11000, "deferred": 0, "total": 100000},
+          "2022": {"state_current": 191000, "foreign_current": 11000, "deferred": 0, "total": 202000}
+        },
+        "note": "No deferred tax provision in any year. All current. QSSS status means no federal income tax."
+      }
+    },
+    {
+      "note_number": 7,
+      "title": "Commitments and Contingencies",
+      "source_pages": [66],
+      "detail": {
+        "operating_leases": "Corporate office leased and managed by Parent. Rent: $280K (2024), $269K (2023), $233K (2022). Included in management fees.",
+        "litigation": "Routine litigation in normal course. Management does not believe pending/threatened litigation will have material adverse effect.",
+        "indemnities_guarantees": "Standard officer indemnities. Duration varies, some indefinite. No limitation on maximum potential future payments. No historical payments. No liabilities recorded."
+      }
+    },
+    {
+      "note_number": 8,
+      "title": "Related Party Transactions",
+      "source_pages": [67],
+      "detail": {
+        "parent_advances": "Due to Parent: $521K (2024), $441K (2023), $675K (2022).",
+        "office_building": "Leased and managed by Parent. Building owned by parties related to Parent's owner.",
+        "management_fees": "$3,310K (2024), $3,104K (2023), $3,077K (2022). Includes selling, rent, payroll, admin support. Allocated based on % of support provided.",
+        "summit_marketing": "$7K (2024), $17K (2023), $7K (2022). Ad agency services.",
+        "printing": "$70K each year (2022-2024). Included in SG&A.",
+        "note_on_building_ownership": "Building is owned by parties related to the owner of the Parent — potential related-party lease arrangement."
+      }
+    },
+    {
+      "note_number": 9,
+      "title": "Employee Benefit Plan",
+      "source_pages": [67],
+      "detail": "Parent sponsors 401(k) plan. Discretionary contribution at Board option. Company expense: $303K (2024), $277K (2023), $247K (2022). Included in management fees."
+    }
+  ]
+}

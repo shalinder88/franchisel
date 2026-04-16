@@ -1,0 +1,69 @@
+{
+  "depth_block": "item20_completion",
+  "tables_extracted": 5,
+  "source_pages": [33, 34, 35, 36, 37, 38, 39, 40],
+  "table1_system_summary": {
+    "title": "System-wide Outlet Summary",
+    "years": ["2022", "2023", "2024"],
+    "data": {
+      "franchised": {"2022": {"start": 243, "end": 266, "net": 23}, "2023": {"start": 266, "end": 282, "net": 16}, "2024": {"start": 282, "end": 311, "net": 29}},
+      "company_owned": {"2022": {"start": 0, "end": 0, "net": 0}, "2023": {"start": 0, "end": 0, "net": 0}, "2024": {"start": 0, "end": 0, "net": 0}},
+      "total": {"2022": {"start": 243, "end": 266, "net": 23}, "2023": {"start": 266, "end": 282, "net": 16}, "2024": {"start": 282, "end": 311, "net": 29}}
+    },
+    "table_notes": [],
+    "source_pages": [33]
+  },
+  "table2_transfers": {
+    "title": "Transfers of Outlets to New Owners",
+    "totals": {"2022": 13, "2023": 10, "2024": 6},
+    "by_state": {
+      "Arizona": {"2022": 3, "2023": 0, "2024": 3},
+      "California": {"2022": 0, "2023": 0, "2024": 0},
+      "Colorado": {"2022": 2, "2023": 6, "2024": 0},
+      "Florida": {"2022": 1, "2023": 2, "2024": 1},
+      "Illinois": {"2022": 0, "2023": 0, "2024": 0},
+      "Indiana": {"2022": 0, "2023": 0, "2024": 1},
+      "New Jersey": {"2022": 0, "2023": 1, "2024": 0},
+      "North Carolina": {"2022": 4, "2023": 0, "2024": 0},
+      "Tennessee": {"2022": 1, "2023": 1, "2024": 0},
+      "Texas": {"2022": 2, "2023": 0, "2024": 0},
+      "Wisconsin": {"2022": 0, "2023": 0, "2024": 1}
+    },
+    "table_notes": [],
+    "source_pages": [34]
+  },
+  "table3_franchised_status": {
+    "title": "Status of Franchised Outlets by State",
+    "system_totals": {
+      "us_2024": {"start": 281, "opened": 34, "terminated": 0, "non_renewed": 2, "reacquired": 0, "ceased_other": 3, "end": 310},
+      "canada_2024": {"start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+      "total_2024": {"start": 282, "opened": 34, "terminated": 0, "non_renewed": 2, "reacquired": 0, "ceased_other": 3, "end": 311}
+    },
+    "states_with_2024_openings": ["California(5)", "Colorado(3)", "Florida(1)", "Georgia(4)", "Maryland(1)", "Michigan(1)", "Minnesota(1)", "Nevada(1)", "New Jersey(1)", "New York(2)", "North Carolina(2)", "Ohio(1)", "Pennsylvania(1)", "South Carolina(1)", "Texas(7)", "Vermont(1)", "Virginia(2)"],
+    "states_with_2024_closures": {
+      "non_renewals": ["South Dakota(1)", "Texas(1)"],
+      "ceased_other": ["California(1)", "Illinois(1)", "Texas(1)"]
+    },
+    "table_notes": [
+      "Zero terminations in all 3 years (2022-2024).",
+      "Texas had strongest opening activity in 2024 with 7 new outlets.",
+      "Georgia grew from 5 to 11 outlets in 2024 (+6 net including 4 openings).",
+      "Colorado grew from 9 to 12 outlets in 2024."
+    ],
+    "source_pages": [35, 36, 37, 38, 39]
+  },
+  "table4_company_owned": {
+    "title": "Status of Company-Owned Outlets",
+    "data": "Zero company-owned outlets in all periods (2022-2024). No openings, reacquisitions, closures, or sales.",
+    "table_notes": [],
+    "source_pages": [40]
+  },
+  "table5_projected_openings": {
+    "title": "Projected Openings as of December 31, 2024",
+    "signed_not_opened": {"total": 2, "by_state": {"Colorado": 1, "Pennsylvania": 1}},
+    "projected_new_franchised_2025": {"total": 44, "by_state": {"California": 3, "Colorado": 1, "Florida": 4, "Georgia": 2, "Illinois": 3, "Iowa": 1, "Kentucky": 1, "Louisiana": 1, "Maryland": 1, "Michigan": 2, "Minnesota": 2, "Nevada": 2, "New Hampshire": 1, "New Jersey": 2, "New York": 1, "North Carolina": 2, "Ohio": 3, "Pennsylvania": 2, "Tennessee": 2, "Texas": 4, "Utah": 1, "Virginia": 2, "Washington": 1}},
+    "projected_new_company_owned_2025": 0,
+    "table_notes": ["Projected openings across 23 states.", "Largest projected: Florida(4), Texas(4), California(3), Illinois(3), Ohio(3)."],
+    "source_pages": [40]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "targeted_depth_block": "item20_completion",
+  "tables_extracted": 5,
+  "source_pages": [35, 36, 37],
+  "tables": {
+    "table_1_systemwide": {
+      "title": "Systemwide Outlet Summary for Years 2022 to 2024",
+      "data": [
+        {"type": "Franchised", "year": 2022, "start": 0, "end": 4, "net": 4},
+        {"type": "Franchised", "year": 2023, "start": 4, "end": 9, "net": 5},
+        {"type": "Franchised", "year": 2024, "start": 9, "end": 11, "net": 2},
+        {"type": "Company-Owned", "year": 2022, "start": 0, "end": 0, "net": 0},
+        {"type": "Company-Owned", "year": 2023, "start": 0, "end": 0, "net": 0},
+        {"type": "Company-Owned", "year": 2024, "start": 0, "end": 0, "net": 0}
+      ],
+      "notes": [],
+      "source_pages": [35]
+    },
+    "table_2_transfers": {
+      "title": "Transfers of Hotels to New Owners for Years 2022 to 2024",
+      "data": [
+        {"state": "All States", "year": 2022, "transfers": 0},
+        {"state": "All States", "year": 2023, "transfers": 0},
+        {"state": "All States", "year": 2024, "transfers": 0}
+      ],
+      "notes": [],
+      "source_pages": [35]
+    },
+    "table_3_franchised_status": {
+      "title": "Status of Franchised Hotels for Years 2022 to 2024",
+      "states": ["Arkansas", "Florida", "Illinois", "Kentucky", "Michigan", "Ohio", "Texas", "Utah"],
+      "data_by_state": {
+        "Arkansas": [
+          {"year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+          {"year": 2023, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+          {"year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1}
+        ],
+        "Florida": [
+          {"year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+          {"year": 2023, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+          {"year": 2024, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1}
+        ],
+        "Illinois": [
+          {"year": 2022, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+          {"year": 2023, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+          {"year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1}
+        ],
+        "Kentucky": [
+          {"year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+          {"year": 2023, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+          {"year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1}
+        ],
+        "Michigan": [
+          {"year": 2022, "start": 0, "opened": 2, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 2},
+          {"year": 2023, "start": 2, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 2},
+          {"year": 2024, "start": 2, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 3}
+        ],
+        "Ohio": [
+          {"year": 2022, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+          {"year": 2023, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+          {"year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1}
+        ],
+        "Texas": [
+          {"year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+          {"year": 2023, "start": 0, "opened": 2, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 2},
+          {"year": 2024, "start": 2, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 2, "ocr_note": "Raw text showed 21; corrected to 2 per context"}
+        ],
+        "Utah": [
+          {"year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+          {"year": 2023, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+          {"year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1}
+        ]
+      },
+      "totals": [
+        {"year": 2022, "start": 0, "opened": 4, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 4},
+        {"year": 2023, "start": 4, "opened": 5, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 9},
+        {"year": 2024, "start": 9, "opened": 2, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 11}
+      ],
+      "notes": ["1. Since the end of our most recent fiscal year, one franchisee in Texas terminated its franchise."],
+      "source_pages": [35, 36]
+    },
+    "table_4_company_owned": {
+      "title": "Status of Company-Owned Hotels for Years 2022 to 2024",
+      "data": [
+        {"state": "All States", "year": 2022, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+        {"state": "All States", "year": 2023, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+        {"state": "All States", "year": 2024, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0}
+      ],
+      "notes": [],
+      "source_pages": [36]
+    },
+    "table_5_projected": {
+      "title": "Projected Openings for 2025",
+      "data": [{"state": "All States", "fa_signed_not_open": 0, "projected_franchised": 0, "projected_company": 0}],
+      "notes": [],
+      "source_pages": [37]
+    }
+  }
+}

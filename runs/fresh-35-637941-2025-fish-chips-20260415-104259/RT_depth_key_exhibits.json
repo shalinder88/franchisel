@@ -1,0 +1,64 @@
+{
+  "extraction_id": "637941-2025",
+  "depth_block": "key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "Exhibit B — Franchise Agreement",
+      "page_range": [118, 195],
+      "walk_status": "clause-walked via RT_depth_contract_burdens.json",
+      "clauses_captured": 15,
+      "key_provisions": [
+        "10-year initial term, four 5-year renewals (Section 3)",
+        "5% royalty escalable to 8% (Section 4)",
+        "120-day site selection deadline (Section 6)",
+        "Comprehensive training requirements (Section 5)",
+        "Unlimited POS data access (Section 7)",
+        "Required approved suppliers (Section 10)",
+        "$5M umbrella insurance (Section 15)",
+        "Full indemnification (Section 23)",
+        "Noncompete: celebrity chef breadth (Section 19)",
+        "Liquidated damages min $500K (Section 21)",
+        "Right of first refusal (Section 18(f))",
+        "Franchisor purchase option on termination (Section 22)",
+        "Force majeure — 90-day limit (Section 25)",
+        "Mediation/arbitration/litigation in Dallas TX (Section 26)",
+        "Waiver of jury trial and punitive damages (Section 26)"
+      ]
+    },
+    {
+      "exhibit": "Exhibit A — Area Development Agreement",
+      "page_range": [71, 117],
+      "walk_status": "key provisions extracted via A1 Item 17 tables and A2 contract burdens",
+      "deferred_details": {
+        "exhibit_name": "Exhibit A — Area Development Agreement",
+        "page_range_not_directly_walked": "Pages 74-109 (ADA body sections 1-23)",
+        "why_deferred": "ADA operative substance was fully recovered from Item 17 ADA table (pages 57-65 of FDD), Item 12 ADA territory provisions, and Item 6 ADA-specific fees. The ADA parallels the FA in most respects.",
+        "already_recovered_from": [
+          "Item 17 ADA table — term, termination, transfer, noncompete, dispute resolution",
+          "Item 12 — Development Territory, Development Schedule, reserved rights",
+          "Item 5 — Development Fee formula",
+          "Item 6 — Development Termination Fee, Extension Fee, Transfer Fee (ADA)"
+        ],
+        "what_remains_missing": "Specific ADA section numbering for some clauses; detailed development schedule mechanics within ADA itself"
+      }
+    },
+    {
+      "exhibit": "Exhibit C — Franchisee Lists",
+      "page_range": [196, 197],
+      "walk_status": "fully extracted in A1",
+      "content": "2 licensees (Flamingo Las Vegas, Circus and Eldorado JV); no actual franchisees; no former franchisees; no transfers"
+    },
+    {
+      "exhibit": "Exhibit D — Financial Statements",
+      "page_range": [198, 204],
+      "walk_status": "fully walked in RT_depth_financial_notes.json and RT_depth_item21_notes.json",
+      "content": "Auditor report, balance sheet ($100K cash only), 3 notes"
+    },
+    {
+      "exhibit": "Exhibit G — State Specific Addenda",
+      "page_range": [211, 233],
+      "walk_status": "fully walked in RT_depth_state_addenda_promotion.json",
+      "content": "25 structured override entries across 13 states"
+    }
+  ]
+}

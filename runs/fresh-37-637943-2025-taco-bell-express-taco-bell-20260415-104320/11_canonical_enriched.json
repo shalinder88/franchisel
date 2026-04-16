@@ -1,0 +1,65 @@
+{
+  "enrichment_version": "v1",
+  "item19_detail": {
+    "fpr_made": false,
+    "charts": [],
+    "tables": [],
+    "note": "No financial performance representation of any kind. No charts, tables, averages, medians, ranges, or quartile distributions disclosed."
+  },
+  "item20_yearly_activity": {
+    "licensed": {
+      "2022": {"start": 251, "opened": 4, "terminations": 0, "non_renewals": 3, "reacquired": 0, "ceased_other": 20, "end": 232},
+      "2023": {"start": 232, "opened": 10, "terminations": 2, "non_renewals": 3, "reacquired": 0, "ceased_other": 8, "end": 229},
+      "2024": {"start": 229, "opened": 9, "terminations": 0, "non_renewals": 3, "reacquired": 0, "ceased_other": 11, "end": 224}
+    },
+    "company_owned": {
+      "2022": {"start": 7, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 7},
+      "2023": {"start": 7, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 7},
+      "2024": {"start": 7, "opened": 0, "reacquired": 7, "closed": 0, "sold": 0, "end": 14}
+    },
+    "transfers": {"2022": 1, "2023": 2, "2024": 7},
+    "projected_openings": {"licensed": 8, "company_owned": 0}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 18,
+    "exhibit_list": ["A", "B-1", "B-1.5", "B-2", "B-3", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"],
+    "high_priority": ["B-1 (License Agreement)", "F (Licensee Information)", "G (Financial Statements)", "H (State Addenda)", "K (Relationship Agreement)"],
+    "state_addenda_states": ["California", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington", "Wisconsin"]
+  },
+  "item21_structural_facts": {
+    "entity_type": "Special Purpose Vehicle (SPV) — single member LLC, disregarded for tax purposes",
+    "no_employees": true,
+    "no_operating_expenses": true,
+    "securitization_structure": true,
+    "securitization_notes_outstanding_thousands": 3743438,
+    "securitization_tranches": 5,
+    "nearest_anticipated_repayment": "May 2026 ($937.5M at 4.970%)",
+    "debt_covenant_compliance": true,
+    "dscr_above_175": true,
+    "restricted_cash_purpose": "Senior notes interest reserve",
+    "total_units_collecting_royalties": 6207,
+    "53rd_week_impact_thousands": 12800
+  },
+  "item1_structural_facts": {
+    "franchisor_formed": "2016-02-23",
+    "predecessor": "Taco Bell Corp. (TBC), formed 1962",
+    "ip_holder": "Taco Bell IP Holder, LLC (99-year license to franchisor)",
+    "ultimate_parent": "YUM! Brands, Inc.",
+    "securitization_dates": ["May 2016", "November 2018", "August 2021", "2025 planned"],
+    "manager": "TBC under Amended & Restated Management Agreement (Aug 19, 2021)",
+    "sister_brands": ["KFC", "Pizza Hut", "Habit Burger Grill"],
+    "express_first_unit": 1991,
+    "2n1_3n1_no_longer_offered": true
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": "10%",
+    "royalty_base": "Gross Sales (all payments excl. sales taxes, employee meals, overrings, refunds)",
+    "royalty_payment_frequency": "Every accounting period (by 5th business day after)",
+    "ad_fund_required": false,
+    "total_ongoing_fees_estimate": "10% royalty + $750/yr All Access + $0.19/digital transaction + $275/qtr merchandising + up to $23,100/yr technology",
+    "late_charge_rate": "18% per annum or max NY law",
+    "liquidated_damages_floor": "$100,000",
+    "successor_fee_floor": "$11,250",
+    "transfer_fee_minimum": "$7,500"
+  }
+}

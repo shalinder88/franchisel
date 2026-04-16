@@ -1,0 +1,116 @@
+{
+  "depth_pass": "1_financial_note_depth",
+  "source_pages": [125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138],
+  "auditor": {"firm": "KPMG LLP", "location": "Louisville, KY", "source_pages": [125]},
+  "opinion": {"type": "unqualified", "language": "present fairly, in all material respects", "going_concern": false, "source_pages": [125]},
+  "accounting_policies": {
+    "revenue_recognition": {
+      "standard": "ASC Topic 606",
+      "continuing_fees": "Sales-based royalty exception — recognized as restaurant sales occur. Traditional 5.5%, non-traditional 10%.",
+      "upfront_fees": "Initial, successor, and transfer fees recognized on straight-line basis over franchise agreement term",
+      "franchise_incentives": "Cash/equipment incentives capitalized, amortized as reduction in revenue over expected cash flow period",
+      "source_pages": [133, 134]
+    },
+    "fiscal_year": {
+      "policy": "Last Tuesday in December; 52 or 53 weeks",
+      "53rd_week_2024": "$12.8M added to total revenues and net income",
+      "next_53_week": 2030,
+      "source_pages": [132]
+    },
+    "restricted_cash": {
+      "policy": "Original maturities not exceeding 3 months. Held in trust account as interest reserve under indenture.",
+      "amount_2024": "$33.1M",
+      "concentration_risk": "Single financial institution, exceeds FDIC limits",
+      "source_pages": [132, 133]
+    },
+    "accounts_receivable": {
+      "policy": "Expected credit losses consider current conditions and forecasts. Aging criteria plus specified default events.",
+      "write_offs": "Insignificant in all 3 years",
+      "source_pages": [133]
+    },
+    "fair_value": {
+      "policy": "Carrying amounts approximate fair value due to short-term nature",
+      "source_pages": [133]
+    },
+    "income_taxes": {
+      "policy": "Disregarded entity for tax purposes. No income taxes at entity level. Income taxed at TBC/YUM level.",
+      "current_vs_deferred": "Not applicable — no tax provision recorded",
+      "source_pages": [134]
+    }
+  },
+  "depreciation_amortization": {
+    "applicable": false,
+    "note": "SPV has no depreciable assets. No PP&E. Franchise incentives are amortized as revenue reduction."
+  },
+  "impairment": {
+    "applicable": false,
+    "note": "No long-lived assets subject to impairment testing."
+  },
+  "lease_accounting": {
+    "applicable": false,
+    "note": "SPV has no leases. Company does not operate facilities directly."
+  },
+  "variable_interest_entities": {
+    "applicable": false
+  },
+  "related_party_transactions": {
+    "management_agreement": {
+      "description": "A&R Management Agreement (Aug 19, 2021) with TBC. TBC performs all services. Management fee paid by Issuer, not Company.",
+      "no_expenses_allocated": true,
+      "company_has_no_employees": true,
+      "source_pages": [135]
+    },
+    "master_franchise_agreements": {
+      "description": "25-year agreements with TBC and TBA. Royalty rates consistent with third-party franchisees.",
+      "affiliate_royalties_2024": "$63.5M",
+      "affiliate_royalties_2023": "$58.8M",
+      "affiliate_royalties_2022": "$55.1M",
+      "due_from_affiliates_2024": "$6.1M",
+      "source_pages": [136]
+    },
+    "due_to_affiliates": {
+      "amount_2024": "$0.6M",
+      "nature": "Reimbursement of cash refunds and incentive payments made by Manager on behalf of Company",
+      "source_pages": [136]
+    }
+  },
+  "securitization_notes": {
+    "total_outstanding_thousands": 3743438,
+    "tranches": [
+      {"issuance": "May 2016", "anticipated_repayment": "May 2026", "legal_maturity": "May 2046", "principal_thousands": 937500, "rate": "4.970%"},
+      {"issuance": "Nov 2018", "anticipated_repayment": "Nov 2028", "legal_maturity": "Nov 2048", "principal_thousands": 595313, "rate": "4.940%"},
+      {"issuance": "Aug 2021", "anticipated_repayment": "Feb 2027", "legal_maturity": "Aug 2051", "principal_thousands": 884250, "rate": "1.946%"},
+      {"issuance": "Aug 2021", "anticipated_repayment": "Feb 2029", "legal_maturity": "Aug 2051", "principal_thousands": 589500, "rate": "2.294%"},
+      {"issuance": "Aug 2021", "anticipated_repayment": "Aug 2031", "legal_maturity": "Aug 2051", "principal_thousands": 736875, "rate": "2.542%"}
+    ],
+    "security": "All assets of Securitization Entities including franchise/license agreements, royalties, US IP, trust accounts, equity interests",
+    "not_guaranteed_by": "YUM or any non-securitization YUM subsidiary",
+    "leverage_ratio_trigger": "5.0:1 triggers 1%/year amortization — NOT triggered",
+    "dscr_requirements": {"cash_reserve": "1.75:1", "rapid_amortization": "1.1:1"},
+    "compliance_status_2024": "In compliance with all covenants",
+    "rapid_amortization_events": "None triggered",
+    "source_pages": [136, 137, 138]
+  },
+  "contract_liabilities": {
+    "deferred_franchise_fees_2024": "$64.5M (unamortized upfront fees) + $14.0M (deposits for stores not opened)",
+    "deferred_franchise_fees_2023": "$64.7M + $13.4M",
+    "source_pages": [134]
+  },
+  "franchise_incentives": {
+    "total_2024": "$43.4M ($4.3M current + $39.1M long-term)",
+    "accrued_unpaid_2024": "$8.1M",
+    "purpose": "Drive new unit development or same-store sales growth",
+    "types": "Cash payments, free/subsidized equipment",
+    "accounting": "Capitalized, amortized as reduction in Franchise and license fees",
+    "source_pages": [134]
+  },
+  "subsequent_events": {
+    "evaluation_through": "2025-03-26",
+    "items_requiring_disclosure": "None",
+    "source_pages": [138]
+  },
+  "advertising_fund_accounting": {
+    "applicable": false,
+    "note": "No advertising fund contribution required for Express licensees. NAFA administered by TBC but Express licensees do not contribute."
+  }
+}

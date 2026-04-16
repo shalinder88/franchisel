@@ -1,0 +1,111 @@
+{
+  "document_identity": {
+    "filing_id": "637940",
+    "fdd_year": 2025,
+    "brand": "Magnuson Hotels and Magnuson Grand",
+    "franchisor_legal_name": "Magnuson Franchising, LLC",
+    "parent_company": "Magnuson Company, L.L.C.",
+    "entity_type": "Wyoming LLC",
+    "formation_date": "2021-03-17",
+    "franchising_since": "2022-01",
+    "address": "312 W 2nd St., Unit A4238, Casper WY 82601",
+    "phone": "866-904-1309",
+    "email": "sales@magnusonhotels.com",
+    "website": "www.magnusonhotelsworldwide.com",
+    "issuance_date": "2025-03-27",
+    "state_filed": "WI",
+    "fiscal_year_end": "December 31",
+    "source_section": "Item 1, Cover Page",
+    "source_pages": [1, 8, 9],
+    "confidence": "high"
+  },
+  "key_personnel": [
+    {"name": "Melissa Magnuson", "title": "Chair of the Board", "since": "2021-03", "source_section": "Item 2", "source_pages": [10], "confidence": "high"},
+    {"name": "Adnan Malik", "title": "Chief Executive Officer", "since": "2023-12", "source_section": "Item 2", "source_pages": [10], "confidence": "high"}
+  ],
+  "litigation": {
+    "count": 1,
+    "items": [{"description": "WA DFI consent order — franchise sales without FDD/registration", "date": "2020-11-10", "outcome": "$2,500 costs, cease and desist", "entity": "Magnuson Company, L.L.C.", "source_section": "Item 3", "source_pages": [10], "confidence": "high"}]
+  },
+  "bankruptcy": {"disclosed": false, "source_section": "Item 4", "source_pages": [10], "confidence": "high"},
+  "fees": {
+    "initial_franchise_fee": {"amount": 10000, "refundable": false, "source_section": "Item 5", "source_pages": [11], "confidence": "high"},
+    "continuing_fee": {"rate": "8%", "basis": "Gross Room Revenue", "frequency": "monthly", "source_section": "Item 6", "source_pages": [11], "confidence": "high"},
+    "gds_booking_fee": {"amount": 11.50, "unit": "per booking", "source_section": "Item 6", "source_pages": [11], "confidence": "high"},
+    "third_party_distribution_fees": {"gds_rate": "10%", "other_channel_rate": "15-20%", "source_section": "Item 6", "source_pages": [11], "confidence": "high"},
+    "airbnb_connection_fee": {"range_low": 100, "range_high": 260, "frequency": "monthly", "source_section": "Item 6", "source_pages": [11], "confidence": "high"},
+    "minimum_invoice_revenue": {"amount": 250, "frequency": "monthly", "escalation": "up to 10%/year compounding", "source_section": "Item 6", "source_pages": [12], "confidence": "high"},
+    "marketing_fund": null,
+    "transfer_fee": null,
+    "renewal_fee": null
+  },
+  "initial_investment": {"total_low": 175000, "total_high": 400000, "excludes": "Real estate, rent, security deposits, occupancy costs, existing hotel operating costs", "basis": "60 Guest Room conversion hotel", "financing_available": false, "source_section": "Item 7", "source_pages": [15, 16, 17], "confidence": "high"},
+  "territory": {"exclusive": false, "protected": false, "encroachment_protection": false, "source_section": "Item 12", "source_pages": [25], "confidence": "high"},
+  "term_and_renewal": {"initial_term_years": 5, "renewal_terms": "One additional 5-year auto-renewal", "materially_different_risk": true, "source_section": "Item 17", "source_pages": [30], "confidence": "high"},
+  "noncompete": {"during_term": false, "post_term": false, "non_disparagement": true, "non_interference": true, "source_section": "Item 17", "source_pages": [33], "confidence": "high"},
+  "dispute_resolution": {"method": "Binding arbitration (AAA)", "venue": "Within 50 miles of Casper, WY", "governing_law": "Wyoming", "jury_trial_waiver": true, "punitive_damages_waiver": true, "class_action_waiver": true, "statute_of_limitations": "1 year", "source_section": "Item 17", "source_pages": [34], "confidence": "high"},
+  "item_19": {"fpr_made": false, "source_section": "Item 19", "source_pages": [34], "confidence": "high"},
+  "item_20": {"system_size_current": 11, "company_owned": 0, "growth_trajectory": "0 → 4 → 9 → 11", "projected_openings_2025": 0, "confidentiality_clause": true, "source_section": "Item 20", "source_pages": [35, 36, 37], "confidence": "high"},
+  "item_21": {
+    "auditor": "Citrin Cooperman & Company, LLP (Melville, New York)",
+    "item21_extraction_method": "targeted_image_fallback",
+    "opinion_type": "Unqualified (clean)",
+    "total_assets_2024": 30886,
+    "total_revenue_2024": 259560,
+    "net_income_2024": 55077,
+    "cash_2024": 19493,
+    "members_equity_2024": 24835,
+    "financial_health_flag": "Special risk flag — financial condition questions franchisor ability to provide support",
+    "source_section": "Item 21, Exhibit C",
+    "source_pages": [37, 83, 94],
+    "confidence": "high"
+  },
+  "special_risks": [
+    "Dispute resolution in Wyoming",
+    "Early stage / limited operating history",
+    "Financial condition concerns",
+    "Minimum performance requirements — failure is termination cause",
+    "Spousal liability"
+  ],
+  "state_addenda": {
+    "states_with_addenda": ["CA", "HI", "IL", "IN", "MD", "MI", "MN", "NY", "ND", "RI", "SD", "VA", "WA", "WI"],
+    "fee_deferral_states": ["CA", "IL", "MD", "MN", "ND", "SD", "WA"]
+  },
+  "extraction_metadata": {
+    "retries_executed": 0,
+    "coverage_complete": true,
+    "unresolveds": 3,
+    "unresolved_items": [
+      "Auditor firm name recovered via image fallback: Citrin Cooperman & Company, LLP",
+      "TX outlet count OCR anomaly (corrected to 2 based on context)",
+      "Parent license termination risk — Magnuson Company can terminate trademark license on 6 months' notice without cause (disclosed, no mitigation detail)",
+      "Affiliate Hotel competition — parent's Affiliate Hotels compete with Branded Hotels; conflict resolution entirely at franchisor discretion",
+      "Confidentiality restrictions on former franchisees — scope unclear"
+    ]
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Parent license termination risk: Magnuson Company can terminate trademark license on 6 months' notice without cause, stripping all franchisees of brand rights. No mitigation or contingency plan disclosed.", "severity": "high", "source": "Items 1, 13; pp.8, 26"},
+    {"id": "U2", "description": "Affiliate Hotel competition: Parent operates Affiliate Hotels competing with Branded Hotels; conflict resolution entirely at franchisor discretion with no formal protocol", "severity": "medium", "source": "Item 12; p.25"},
+    {"id": "U3", "description": "Confidentiality restrictions on former franchisees — 'in some instances' sign provisions restricting ability to speak openly; scope and enforceability unclear", "severity": "medium", "source": "Item 20; p.37"},
+    {"id": "U4", "description": "Formation state ambiguity: financial statement notes say formed as Washington LLC; Item 1 says Wyoming LLC", "severity": "low", "source": "Item 1 p.8; Exhibit C Note 1 p.91"},
+    {"id": "U5", "description": "TX outlet count OCR artifact: Table 3 raw text shows '21' for Texas 2024 year-end; corrected to 2 based on all cross-references", "severity": "low", "source": "Item 20 Table 3; p.36"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "TX outlet count: Table 3 shows '21' in raw text vs. 11 systemwide in Table 1 and 2 TX properties in E-1", "items_involved": "Item 20 Tables 1/3, Exhibit E-1", "resolution_status": "Resolved — OCR error; true value is 2"},
+    {"id": "C2", "description": "Formation state: Note 1 says 'Washington limited liability company'; Item 1 says 'Wyoming limited liability company'", "items_involved": "Item 1, Exhibit C Note 1", "resolution_status": "Open — may have been redomiciled; both stated in document"},
+    {"id": "C3", "description": "E-2 lists Texarkana franchisee as 'left the system' in FY2024 but Table 3 shows zero terminations in Texas 2024; footnote says 'since the end of our most recent fiscal year'", "items_involved": "Item 20 Table 3, Exhibit E-2", "resolution_status": "Resolved — both refer to same post-FY termination; E-2 includes because FDD issued after the fact"}
+  ],
+  "state_addenda_overrides": {
+    "fee_deferral": ["CA", "IL", "MD", "MN", "ND", "SD", "WA"],
+    "general_release_limited": ["CA", "MD", "MN", "ND", "WA"],
+    "forum_selection_overridden": ["IL", "MI", "MN", "ND", "RI", "WA"],
+    "governing_law_overridden": ["CA", "IL", "RI", "WA"],
+    "damages_limited": ["CA", "MD", "MN", "ND", "WA"],
+    "termination_protections": ["MI", "MN", "NY", "VA"],
+    "transfer_protections": ["MI", "NY", "WA"],
+    "indemnification_limited": ["WA"],
+    "trademark_protection_required": ["MN"],
+    "interest_rate_capped": ["CA"],
+    "anti_waiver": ["CA", "HI", "IL", "IN", "MD", "MI", "MN", "NY", "ND", "RI", "SD", "VA", "WA", "WI"]
+  }
+}

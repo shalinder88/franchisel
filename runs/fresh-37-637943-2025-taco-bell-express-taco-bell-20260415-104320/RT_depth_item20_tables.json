@@ -1,0 +1,67 @@
+{
+  "depth_block": "3_item20_completion",
+  "tables_extracted": 5,
+  "table1_systemwide_summary": {
+    "source_pages": [57],
+    "data": {
+      "licensed": {"2022": {"start": 251, "end": 232, "net": -19}, "2023": {"start": 232, "end": 229, "net": -3}, "2024": {"start": 229, "end": 224, "net": -5}},
+      "company_owned": {"2022": {"start": 7, "end": 7, "net": 0}, "2023": {"start": 7, "end": 7, "net": 0}, "2024": {"start": 7, "end": 14, "net": 7}},
+      "total": {"2022": {"start": 258, "end": 239, "net": -19}, "2023": {"start": 239, "end": 236, "net": -3}, "2024": {"start": 236, "end": 238, "net": 2}}
+    }
+  },
+  "table2_transfers": {
+    "source_pages": [57, 58],
+    "data": {
+      "Arizona": {"2022": 0, "2023": 1, "2024": 0},
+      "California": {"2022": 0, "2023": 1, "2024": 0},
+      "Illinois": {"2022": 0, "2023": 0, "2024": 1},
+      "Kentucky": {"2022": 0, "2023": 0, "2024": 2},
+      "New York": {"2022": 1, "2023": 0, "2024": 0},
+      "Tennessee": {"2022": 0, "2023": 0, "2024": 2},
+      "Virginia": {"2022": 0, "2023": 0, "2024": 2},
+      "Total": {"2022": 1, "2023": 2, "2024": 7}
+    },
+    "notes": "Transfer activity accelerating — may indicate increased deal activity or distressed exits."
+  },
+  "table3_licensed_status_by_state": {
+    "source_pages": [58, 59, 60, 61],
+    "totals": {
+      "2022": {"start": 251, "opened": 4, "terminations": 0, "non_renewals": 3, "reacquired": 0, "ceased_other": 20, "end": 232},
+      "2023": {"start": 232, "opened": 10, "terminations": 2, "non_renewals": 3, "reacquired": 0, "ceased_other": 8, "end": 229},
+      "2024": {"start": 229, "opened": 9, "terminations": 0, "non_renewals": 3, "reacquired": 0, "ceased_other": 11, "end": 224}
+    },
+    "states_with_openings_2024": ["Arizona(0)", "California(0)", "Georgia(0)", "Illinois(1)", "Kentucky(2)", "Nevada(2)", "South Carolina(0)", "Tennessee(2)", "Virginia(2)"],
+    "states_with_closures_2024": ["Alabama(1)", "Arkansas(2)", "California(2)", "Connecticut(1)", "Florida(2-non_renewal)", "Massachusetts(1)", "Michigan(1-non_renewal)", "New Jersey(1)", "North Carolina(1)", "Oklahoma(1)", "Texas(1)"],
+    "notes": "State-level detail fully extracted across all 35 states + DC. Ceased-other is dominant closure category."
+  },
+  "table4_company_owned": {
+    "source_pages": [61, 62],
+    "data": {
+      "Florida": {"2022": {"start": 6, "end": 6}, "2023": {"start": 6, "end": 6}, "2024": {"start": 6, "end": 6}},
+      "Kentucky": {"2022": {"start": 1, "end": 1}, "2023": {"start": 1, "end": 1}, "2024": {"start": 1, "end": 1}},
+      "Texas": {"2022": {"start": 0, "end": 0}, "2023": {"start": 0, "end": 0}, "2024": {"start": 0, "reacquired": 7, "end": 7}},
+      "Total": {"2022": {"start": 7, "end": 7}, "2023": {"start": 7, "end": 7}, "2024": {"start": 7, "reacquired": 7, "end": 14}}
+    },
+    "notes": "All company-owned are multi-brand KFC/Taco Bell operated by KFC. 7 Texas reacquisitions in 2024 notable."
+  },
+  "table5_projected_openings": {
+    "source_pages": [62],
+    "data": {
+      "California": {"signed_not_opened": 0, "projected_licensed": 1, "projected_company": 0},
+      "Florida": {"signed_not_opened": 0, "projected_licensed": 1, "projected_company": 0},
+      "Georgia": {"signed_not_opened": 0, "projected_licensed": 2, "projected_company": 0},
+      "Hawaii": {"signed_not_opened": 0, "projected_licensed": 1, "projected_company": 0},
+      "Texas": {"signed_not_opened": 0, "projected_licensed": 3, "projected_company": 0},
+      "Total": {"signed_not_opened": 0, "projected_licensed": 8, "projected_company": 0}
+    },
+    "notes": "No signed-but-not-opened. All projected openings are licensed, none company-owned."
+  },
+  "table_notes_extracted": [
+    "Data only includes licenses under this offering, including multi-brand units (also listed in other brand's FDD). Does not include Traditional franchise information.",
+    "Exhibit F lists name, address, phone of licensed units as of Dec 31, 2024.",
+    "Exhibit F also lists every licensee with terminated, canceled, not renewed, or voluntarily ceased units in FY2024, or who had not communicated within 10 weeks of issuance date.",
+    "Of 12 licensees in closure/transferred section, 6 are no longer Taco Bell licensees. Other 6 continue to have open units.",
+    "No trademark-specific licensee organizations exist.",
+    "No confidentiality clauses signed with current/former licensees in last 3 fiscal years."
+  ]
+}

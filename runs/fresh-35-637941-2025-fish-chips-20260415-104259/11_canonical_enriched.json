@@ -1,0 +1,98 @@
+{
+  "extraction_id": "637941-2025",
+  "brand": "Fish & Chips Gordon Ramsay",
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "disclosed": false,
+    "charts": [],
+    "notes": "No FPR made. No charts, tables, or data disclosed."
+  },
+  "item20_yearly_activity": {
+    "franchised": {
+      "2022": {"start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+      "2023": {"start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+      "2024": {"start": 1, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 2}
+    },
+    "company_owned": {
+      "2022": {"start": 1, "opened": 2, "reacquired": 0, "closed": 0, "sold_to_franchisee": 0, "end": 3},
+      "2023": {"start": 3, "opened": 0, "reacquired": 0, "closed": 0, "sold_to_franchisee": 0, "end": 3},
+      "2024": {"start": 3, "opened": 0, "reacquired": 0, "closed": 0, "sold_to_franchisee": 0, "end": 3}
+    },
+    "transfers": {"2022": 0, "2023": 0, "2024": 0},
+    "projected": {"fa_signed_not_opened": 0, "projected_franchised": 0, "projected_company": 0},
+    "states_with_franchised": ["Nevada"],
+    "states_with_company_owned": ["Florida", "New York", "Washington D.C."]
+  },
+  "exhibit_structure": {
+    "exhibits": [
+      {"letter": "A", "name": "Area Development Agreement", "pages": 47, "type": "contract"},
+      {"letter": "B", "name": "Franchise Agreement", "pages": 78, "type": "contract"},
+      {"letter": "C", "name": "Lists of Current and Former Franchisees", "pages": 2, "type": "franchisee_list"},
+      {"letter": "D", "name": "Financial Statements", "pages": 7, "type": "financial"},
+      {"letter": "E", "name": "List of State Agencies / Agents for Service of Process", "pages": 4, "type": "regulatory"},
+      {"letter": "F", "name": "Manual Table of Contents", "pages": 1, "type": "operations"},
+      {"letter": "G", "name": "State Specific Addenda", "pages": 23, "type": "regulatory"}
+    ],
+    "total_exhibit_pages": 162
+  },
+  "item21_structural_facts": {
+    "auditor": "Grassi & Co., CPAs",
+    "auditor_location": "Melville, New York",
+    "opinion_type": "unqualified",
+    "opinion_date": "2025-02-26",
+    "statement_date": "2025-01-31",
+    "fiscal_year_end": "2024-12-29",
+    "entity_type": "LLC",
+    "tax_status": "pass-through",
+    "statements_available": ["Balance Sheet"],
+    "statements_missing": ["Income Statement", "Statement of Cash Flows", "Statement of Changes in Members' Equity"],
+    "reason": "Entity formed June 2024; not in business 3+ years; no operations commenced"
+  },
+  "item1_structural_facts": {
+    "franchisor_entity": "GRNA FC Group LLC",
+    "state_of_formation": "Delaware",
+    "formation_date": "2024-06-20",
+    "principal_address": "6191 North State Highway 161, Suite 400, Irving, TX 75038-2251",
+    "phone": "(469) 923-2727",
+    "website": "www.gordonramsayfishandchips.com",
+    "email": "stephenevans@gordonramsay.com",
+    "agent_for_service_DE": "Corporate Creations Network, Inc., 3411 Silverside Road, Tatnall Building, Suite 104, Wilmington, DE 19810",
+    "parent_entities": [
+      "GRNA Franchise Group LLC",
+      "GRNA LLC",
+      "GRNA MidCo LLC",
+      "GRNA Holdings Inc."
+    ],
+    "celebrity_owner": "Gordon Ramsay (49% of GRNA Holdings Inc.)",
+    "key_affiliates": [
+      "GRNA Street Pizza Group LLC (Street Pizza franchises)",
+      "GRNA RK Group LLC (Ramsay's Kitchen franchises)",
+      "HK Restaurant Ventures, LLC (Hell's Kitchen licenses)",
+      "GRNA IP 2 HoldCo LLC / IPH2 (multi-brand licenses in hotels/casinos)",
+      "Gordon Ramsay Restaurants Limited (UK restaurants)",
+      "GRHIL (international licenses)"
+    ],
+    "concept_type": "fast-casual restaurant",
+    "typical_size_sqft": 2000,
+    "first_restaurant_year": 2017,
+    "first_franchise_offered": "2025-02-26",
+    "liquor_license_required": true
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage",
+    "royalty_rate": 5.0,
+    "royalty_escalation": "up to 8% for Menu Item Price Policy violations",
+    "royalty_basis": "Restaurant Revenue",
+    "royalty_frequency": "monthly",
+    "brand_fund_rate": 0.5,
+    "local_marketing_rate": 1.0,
+    "combined_marketing_cap": 4.0,
+    "total_ongoing_minimum_pct": 6.5,
+    "transfer_fee": 12500,
+    "renewal_fee": 12500,
+    "event_of_default_fee": 12500,
+    "minimum_liquidated_damages": 500000,
+    "payment_method": "EFT (electronic funds transfer)",
+    "interest_rate": "lesser of 2%/month or max legal rate"
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "tables": [
+    {
+      "id": "item5_franchise_fees",
+      "item": 5,
+      "title": "Initial Fees Summary",
+      "source_pages": [27, 28],
+      "columns": ["Fee Type", "Amount", "Conditions"],
+      "rows": [
+        ["Initial Franchise Fee (first store)", "$25,000", "Nonrefundable, due at signing"],
+        ["Subsequent Franchise Fee", "$15,000", "For additional stores"],
+        ["Multiple Store Fee", "$25,000 first + $15,000 each additional", "Nonrefundable"],
+        ["Extension Fee", "$2,500", "6-month extension to open"],
+        ["Development Billing Agreement", "$144,764–$283,450", "Reimbursement to franchisor for vendor payments"]
+      ],
+      "table_notes": ["Actual range in FY2024: $0–$25,000. Military Discount, Heroes Program, and Store Manager to Ownership Transfer Program may reduce fees."],
+      "provenance": "Item 5, pp. 27–28"
+    },
+    {
+      "id": "item6_other_fees",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [29, 30, 31, 32],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty Fee", "5% of weekly Net Sales", "Weekly", "ACH; up to 15% during breach; min 14-day breach period"],
+        ["Brand Marketing Fee", "2% of weekly Net Sales", "Weekly", "ACH"],
+        ["Local Marketing/Coop", "Min of greater of 5% Net Sales or $2,000/month", "Monthly", "May be paid into Brand Marketing Fund at franchisor discretion; coops contribute up to 7.5%"],
+        ["Online Ordering Fee", "$0.35 per online transaction", "Weekly", "ACH; may increase up to 5% in 12 months"],
+        ["Marketing Kits", "$45–$500", "As incurred", "ACH"],
+        ["CRM", "$10/month", "Monthly", "Franchisor pays portion from BMF"],
+        ["Loyalty Program", "$53/month", "Monthly", "Subject to change"],
+        ["Gift Card Redemption Fee", "6.06%–13.63% of redemption", "Monthly", "May increase on 30 days notice"],
+        ["Food Service Incident Mgmt", "$3/month", "Monthly", ""],
+        ["Audit", "Cost of audit + expenses", "As incurred", "Only if understatement found"],
+        ["Insurance", "$2M GL per occurrence + $1M auto", "As incurred", "Must name franchisor as additional insured"],
+        ["Transfer Fee", "$12,500–$25,000 (first store) or $7,500–$15,000 (existing)", "At transfer", "Sliding scale by years remaining on term"],
+        ["Indemnification", "Varies", "As requested", ""],
+        ["Additional Training", "$100–$300/day", "As incurred", "Plus travel expenses"],
+        ["Franchise Conventions", "$1,000–$3,500", "As scheduled", "Plus travel; $500 for materials if not attended"],
+        ["Successive Franchise Fee", "Half of then-current Franchise Fee", "60 days before expiration", ""],
+        ["Relocation Fee", "$5,000", "Prior to relocation", ""],
+        ["Non-Participation Fee", "$100/day", "As incurred", "For failing to participate in required programs"],
+        ["Document Administration Fee", "$500", "As incurred", "For amendments"],
+        ["Interest", "1.5%/month (18% annual)", "On unpaid balances", ""],
+        ["Bookkeeping/Payroll", "$0–$630", "Monthly", "Third party vendor"],
+        ["NSF Fees", "$35 + reimbursement", "As incurred", ""],
+        ["POS Change of Ownership Fee", "$500", "At transfer", ""],
+        ["Software License Transfer Fee", "$300", "At transfer", ""],
+        ["Online Ordering Transfer Fee", "$100", "At transfer", ""],
+        ["Store Solutions Team Support", "$51.25/month", "Monthly", "Subject to annual increase"],
+        ["Core Software Support", "$114/month", "Monthly", "Subject to annual increase"],
+        ["Late Payment Fee", "$75", "As incurred", ""],
+        ["Managed Firewall", "$30–$90/month", "Monthly", "VikingCloud or NCR"],
+        ["Internet", "$50–$200/month", "Monthly", "Third party"],
+        ["Secure Payment Gateway", "$11/month", "Quarterly", "NCR Connected Payments"],
+        ["Upgrade/Refurbish", "$4,000–$50,000", "As required", "No limit on frequency or cost"],
+        ["Supplier Evaluation", "Reasonable expenses", "As requested", ""],
+        ["Step-In Costs", "Personnel/admin + 15%", "As requested", ""],
+        ["Early Termination Damages", "Formula-based", "30 days before closing", "6 months notice required; formula not divided by 2 without notice"]
+      ],
+      "table_notes": [
+        "All fees nonrefundable and uniformly imposed unless otherwise noted.",
+        "Franchisor may reduce or waive one-time or ongoing fees at discretion.",
+        "Net Sales includes all amounts earned in connection with operating the store, excluding sales tax and refunds.",
+        "Breaching Royalties (up to 15%) charged for minimum 14-day period.",
+        "Early Termination formula: (avg monthly Royalty+BMF for any consecutive 12 months in preceding 48 months) × months remaining ÷ 2."
+      ],
+      "provenance": "Item 6, pp. 29–36"
+    },
+    {
+      "id": "item7_initial_investment",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [36, 37],
+      "columns": ["Expenditure", "Low", "High", "When Payable", "To Whom"],
+      "rows": [
+        ["Initial/Subsequent Franchise Fee", "$15,000", "$25,000", "Upon Signing", "Us"],
+        ["Lease and Utilities Deposits", "$3,000", "$7,500", "As Incurred", "Landlord/Utilities"],
+        ["Leasehold Improvements", "$139,000", "$325,000", "As Incurred", "Landlord/Contractors"],
+        ["Signs", "$9,000", "$25,000", "As Incurred", "Suppliers"],
+        ["Stamped Architectural Drawings", "$7,850", "$9,350", "As Incurred", "Architect"],
+        ["As Built Survey", "$2,800", "$4,100", "As Incurred", "Suppliers"],
+        ["Opening Package (equip, supplies, POS, smallwares, etc.)", "$150,114", "$230,000", "Before Opening", "Us or Suppliers"],
+        ["Miscellaneous Dev Service Fees", "$0", "$1,270", "As Incurred", "Us"],
+        ["Inventory", "$5,000", "$7,000", "Before Opening", "Suppliers"],
+        ["Initial Marketing (6 months)", "$15,000", "$15,000", "Within 180 Days", "Us or Suppliers"],
+        ["Franchise Premises Rent (3 months)", "$7,284", "$17,374", "As Incurred", "Landlord"],
+        ["Materials and Supplies", "$500", "$2,000", "Before Opening", "Suppliers"],
+        ["Training (Ops, Enterprise, Foundations)", "$0", "$750", "Prior to Training", "Us"],
+        ["Travel and Living for Training", "$1,180", "$9,305", "As Incurred", "Airlines/Hotels"],
+        ["Employee Training", "$500", "$1,500", "As Incurred", "Employees"],
+        ["Insurance (3 months)", "$375", "$1,175", "Before Opening", "Insurers"],
+        ["Bookkeeping/Payroll (3 months)", "$825", "$1,800", "Monthly", "Approved Vendor"],
+        ["Additional Funds/Working Capital (3 months)", "$10,000", "$50,000", "As Incurred", "Various"],
+        ["TOTAL", "$367,428", "$733,124", "", ""]
+      ],
+      "table_notes": [
+        "Average cost for leasehold improvements in 2024: $173/sq ft.",
+        "Average store size in 2024: 1,490 sq ft (range 1,238–1,754).",
+        "Kitchen Delite format; low range reflects few/no upgrades.",
+        "Based on actual costs from ~3 Kitchen Delite stores in 2024.",
+        "Franchisor does not finance any initial expenses.",
+        "Figures based on actual 2023 expenses and franchisor/franchisee experience."
+      ],
+      "provenance": "Item 7, pp. 36–40"
+    },
+    {
+      "id": "item19_all_stores",
+      "item": 19,
+      "title": "All Franchise Stores Net Sales",
+      "source_pages": [62],
+      "columns": ["Metric", "2024", "2023", "2022"],
+      "rows": [
+        ["Number of Franchised Stores", "1,015", "1,085", "1,102"],
+        ["Highest Net Sales", "$2,397,004", "$2,494,897", "$2,462,983"],
+        ["Lowest Net Sales", "$178,123", "$186,428", "$132,039"],
+        ["Average Net Sales", "$688,133", "$680,607", "$666,663"],
+        ["Median Net Sales", "$616,110", "$612,750", "$593,609"],
+        ["Number Exceeding Average", "408", "438", "447"],
+        ["% Exceeding Average", "40.2%", "40.4%", "40.6%"],
+        ["Top 10% Count", "101", "108", "110"],
+        ["Top 10% Average", "$1,384,981", "$1,389,069", "$1,384,276"],
+        ["Bottom 10% Average", "$311,462", "$288,383", "$273,615"]
+      ],
+      "table_notes": ["Self-reported, unaudited, unverified data. No cost or profit information provided. Written substantiation available on request."],
+      "provenance": "Item 19, p. 62"
+    },
+    {
+      "id": "item19_west",
+      "item": 19,
+      "title": "Franchise Stores – West Net Sales",
+      "source_pages": [62, 63],
+      "columns": ["Metric", "2024", "2023", "2022"],
+      "rows": [
+        ["Number of Stores", "438", "442", "450"],
+        ["Highest", "$2,397,004", "$2,494,897", "$2,462,983"],
+        ["Lowest", "$245,427", "$206,703", "$142,287"],
+        ["Average", "$819,415", "$843,149", "$846,929"],
+        ["Median", "$752,250", "$774,196", "$789,676"],
+        ["% Exceeding Average", "42.2%", "42.5%", "43.3%"],
+        ["Top 10% Average", "$1,606,000", "$1,630,717", "$1,622,224"],
+        ["Bottom 10% Average", "$349,530", "$363,213", "$338,044"]
+      ],
+      "table_notes": ["West includes AK, CA, HI, ID, NV, OR, WA."],
+      "provenance": "Item 19, pp. 62–63"
+    },
+    {
+      "id": "item19_central",
+      "item": 19,
+      "title": "Franchise Stores – Central Net Sales",
+      "source_pages": [63, 64],
+      "columns": ["Metric", "2024", "2023", "2022"],
+      "rows": [
+        ["Number of Stores", "381", "399", "399"],
+        ["Highest", "$1,661,817", "$1,538,697", "$1,454,038"],
+        ["Lowest", "$178,123", "$188,911", "$132,039"],
+        ["Average", "$639,851", "$636,605", "$601,171"],
+        ["Median", "$594,798", "$591,005", "$546,584"],
+        ["% Exceeding Average", "42.5%", "42.9%", "42.4%"],
+        ["Top 10% Average", "$1,142,834", "$1,138,194", "$1,078,308"],
+        ["Bottom 10% Average", "$317,169", "$314,669", "$291,591"]
+      ],
+      "table_notes": ["Central includes AZ, CO, KS, LA, MN, MT, NE, NM, ND, OK, SD, TX, UT, WY."],
+      "provenance": "Item 19, pp. 63–64"
+    },
+    {
+      "id": "item19_east",
+      "item": 19,
+      "title": "Franchise Stores – East Net Sales",
+      "source_pages": [64],
+      "columns": ["Metric", "2024", "2023", "2022"],
+      "rows": [
+        ["Number of Stores", "196", "244", "253"],
+        ["Highest", "$977,308", "$959,846", "$1,099,624"],
+        ["Lowest", "$189,199", "$186,428", "$136,163"],
+        ["Average", "$488,609", "$458,119", "$449,317"],
+        ["Median", "$459,624", "$432,789", "$429,538"],
+        ["% Exceeding Average", "42.9%", "43.0%", "43.9%"],
+        ["Top 10% Average", "$795,708", "$787,034", "$770,565"],
+        ["Bottom 10% Average", "$283,663", "$229,227", "$217,921"]
+      ],
+      "table_notes": ["East includes AL, AR, FL, GA, IL, IN, IA, KY, MI, MS, MO, NC, SC, TN, VA, WI. East region lost 57 stores (253→196) over 2 years."],
+      "provenance": "Item 19, p. 64"
+    },
+    {
+      "id": "item20_table1",
+      "item": 20,
+      "title": "Systemwide Outlet Summary 2022–2024",
+      "source_pages": [65],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "1,212", "1,145", "-67"],
+        ["Franchised", "2023", "1,145", "1,119", "-26"],
+        ["Franchised", "2024", "1,119", "1,001", "-118"],
+        ["Company-Owned", "2022", "27", "23", "-4"],
+        ["Company-Owned", "2023", "23", "8", "-15"],
+        ["Company-Owned", "2024", "8", "43", "+35"],
+        ["Total", "2022", "1,239", "1,168", "-71"],
+        ["Total", "2023", "1,168", "1,127", "-41"],
+        ["Total", "2024", "1,127", "1,044", "-83"]
+      ],
+      "table_notes": ["System has contracted by 195 total outlets over 3 years (1,239→1,044). Franchised outlet count declined 17.4% over 3 years. Company-owned surged from 8 to 43 in 2024 via reacquisitions."],
+      "provenance": "Item 20 Table 1, p. 65"
+    },
+    {
+      "id": "item20_table2",
+      "item": 20,
+      "title": "Transfers 2022–2024",
+      "source_pages": [65, 66, 67],
+      "columns": ["Year", "Total Transfers"],
+      "rows": [
+        ["2022", "109"],
+        ["2023", "54"],
+        ["2024", "71"]
+      ],
+      "table_notes": ["State-level detail provided. Largest transfer markets in 2024: Minnesota 15, California 10, Wisconsin 9, Oregon 5, Texas 5."],
+      "provenance": "Item 20 Table 2, pp. 65–67"
+    },
+    {
+      "id": "item20_table3",
+      "item": 20,
+      "title": "Status of Franchised Outlets 2022–2024 (Summary)",
+      "source_pages": [68, 69, 70],
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        ["2022", "1,210", "6", "71", "0", "0", "0", "1,145"],
+        ["2023", "1,145", "19", "45", "0", "0", "0", "1,119"],
+        ["2024", "1,119", "8", "96", "0", "28", "2", "1,001"]
+      ],
+      "table_notes": [
+        "Note discrepancy: Table 1 shows 1,212 start for 2022 but Table 3 totals show 1,210.",
+        "2024 had massive termination/reacquisition activity: 96 terminations + 28 reacquisitions = 124 net closures.",
+        "2 stores in CA and IA temporarily closed, expected to reopen 2025.",
+        "Key termination states (2024): Alabama 11, Florida 10, Indiana 10, Texas 9, Colorado 7, Michigan 7."
+      ],
+      "provenance": "Item 20 Table 3, pp. 68–70"
+    },
+    {
+      "id": "item20_table4",
+      "item": 20,
+      "title": "Status of Company-Owned Outlets 2022–2024 (Summary)",
+      "source_pages": [71],
+      "columns": ["Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        ["2022", "27", "0", "0", "4", "0", "23"],
+        ["2023", "23", "0", "0", "0", "15", "8"],
+        ["2024", "8", "8", "28", "0", "0", "44"]
+      ],
+      "table_notes": [
+        "In 2024, company reacquired 28 stores from franchisees and opened 8 new company stores.",
+        "Key reacquisition states (2024): Tennessee 15, North Carolina 7, Alabama 3, Georgia 3.",
+        "3 Indiana stores and 5 Michigan stores were closed by franchisee and reopened as company-owned.",
+        "1 Tennessee store temporarily closed, reacquired, listed under Reacquired, reopened in 2025."
+      ],
+      "provenance": "Item 20 Table 4, p. 71"
+    },
+    {
+      "id": "item20_table5",
+      "item": 20,
+      "title": "Projected Openings as of December 2, 2024",
+      "source_pages": [72],
+      "columns": ["State", "FAs Signed Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        ["Arizona", "1", "0", "0"],
+        ["California", "4", "1", "0"],
+        ["Georgia", "4", "2", "0"],
+        ["Idaho", "5", "1", "0"],
+        ["Indiana", "1", "0", "0"],
+        ["Minnesota", "0", "0", "1"],
+        ["Nevada", "1", "1", "0"],
+        ["Oregon", "2", "1", "0"],
+        ["Utah", "5", "2", "0"],
+        ["Washington", "3", "1", "0"],
+        ["Total", "26", "9", "1"]
+      ],
+      "table_notes": [],
+      "provenance": "Item 20 Table 5, p. 72"
+    },
+    {
+      "id": "item11_bmf_summary",
+      "item": 11,
+      "title": "Brand Marketing Fund Contributions and Expenses FY2024",
+      "source_pages": [49],
+      "columns": ["Category", "Amount", "Percentage"],
+      "rows": [
+        ["REVENUES", "", ""],
+        ["Advertising fees", "$21,480,279", "81.76%"],
+        ["Vendor payments", "$2,268,033", "8.63%"],
+        ["Marketing kits", "$723,912", "2.76%"],
+        ["Other revenues", "$1,799,881", "6.85%"],
+        ["Total Revenues", "$26,272,106", "100.00%"],
+        ["Fund balance (deficit) carryover", "$(7,226,366)", ""],
+        ["Total Funds Available", "$19,045,740", ""],
+        ["EXPENSES", "", ""],
+        ["Media placement, digital media, kits", "$7,894,951", "30.00%"],
+        ["Production, Research, Agency, Studio", "$5,250,813", "20.00%"],
+        ["Field marketing support, product dev", "$8,792,429", "33.00%"],
+        ["Administrative support, facilities, taxes", "$4,647,034", "17.00%"],
+        ["Total Expenses", "$26,585,226", "100.00%"],
+        ["Year-end fund deficit", "$(7,539,487)", ""]
+      ],
+      "table_notes": [
+        "Other revenues consist of gift card fees, gift card breakage, CRM services, SMS, co-branding.",
+        "Fund had deficit carryover of $(7,226,366) from 2022.",
+        "Total expenses exceeded total revenues by $313,120, deepening the deficit.",
+        "Unaudited summary available on request."
+      ],
+      "provenance": "Item 11, p. 49"
+    },
+    {
+      "id": "item21_income_fy2022",
+      "item": 21,
+      "title": "Consolidated Income Statement FY2022/2021/2020 (MTY Franchising USA, Inc.)",
+      "source_pages": [163],
+      "columns": ["Line Item", "2022 ($000)", "2021 ($000)", "2020 ($000)"],
+      "rows": [
+        ["Revenue", "263,686", "216,655", "192,657"],
+        ["Operating expenses", "194,664", "141,877", "141,386"],
+        ["Depreciation – PP&E", "2,480", "1,057", "1,415"],
+        ["Amortization – intangible assets", "14,631", "13,888", "14,174"],
+        ["Impairment – PP&E", "338", "27", "579"],
+        ["Impairment – ROU assets", "247", "42", "774"],
+        ["Impairment – intangibles/goodwill", "5,643", "2,862", "62,143"],
+        ["Interest expense", "18,135", "16,264", "16,764"],
+        ["Management fees – parent", "2,928", "1,733", "1,830"],
+        ["Total costs and expenses", "239,066", "177,750", "239,065"],
+        ["Interest income", "2,256", "1,536", "683"],
+        ["Income (loss) before taxes", "26,988", "43,247", "(45,526)"],
+        ["Income tax expense (recovery)", "7,415", "12,559", "(8,703)"],
+        ["Net income (loss)", "19,573", "30,688", "(36,823)"]
+      ],
+      "table_notes": [
+        "Auditor: PricewaterhouseCoopers LLP, Montreal.",
+        "Unqualified opinion.",
+        "FY2020 had $62.1M impairment of intangibles/goodwill and net loss of $(36.8M).",
+        "Interest expense ~$16–18M annually, suggesting significant debt load.",
+        "Management fees to parent company: $2.9M in 2022."
+      ],
+      "provenance": "Exhibit C, p. 163"
+    },
+    {
+      "id": "item21_balance_sheet_fy2022",
+      "item": 21,
+      "title": "Consolidated Balance Sheet FY2022/2021/2020 (MTY Franchising USA, Inc.)",
+      "source_pages": [165],
+      "columns": ["Line Item", "2022 ($000)", "2021 ($000)", "2020 ($000)"],
+      "rows": [
+        ["Cash", "23,059", "17,868", "16,017"],
+        ["Receivable from ultimate parent", "126,323", "100,926", "58,895"],
+        ["Total current assets", "196,760", "147,987", "102,444"],
+        ["PP&E", "54,458", "2,989", "2,741"],
+        ["Operating lease ROU assets", "165,641", "100,872", "124,217"],
+        ["Intangible assets", "522,400", "409,147", "425,894"],
+        ["Goodwill", "238,060", "185,576", "185,576"],
+        ["Total assets", "1,182,481", "851,172", "844,907"],
+        ["Total current liabilities", "398,744", "162,275", "169,294"],
+        ["Stockholder's equity", "235,958", "216,385", "185,697"]
+      ],
+      "table_notes": [
+        "Receivable from ultimate parent: $126.3M — significant related-party balance.",
+        "Goodwill: $238M, intangibles: $522.4M — majority of assets are intangible.",
+        "PP&E jumped from $3M to $54.5M in 2022 (likely acquisition-driven).",
+        "Current liabilities of $398.7M exceed current assets of $196.8M — negative working capital.",
+        "Advance from ultimate parent: $198.8M appeared in 2022 current liabilities."
+      ],
+      "provenance": "Exhibit C, p. 165"
+    }
+  ]
+}

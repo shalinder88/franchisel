@@ -1,0 +1,48 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "FY2024 guarantor had NET LOSS of $(12,556)k driven by $44.3M impairment charges",
+      "source": "Exhibit C image pages 127-128",
+      "canonical_family": "item21",
+      "promoted_to": ["09_final_canonical.json", "12_canonical_enriched_v2.json"]
+    },
+    {
+      "fact": "FY2024 revenue $597,538k (decline from $606,617k in FY2023)",
+      "source": "Exhibit C image page 127",
+      "canonical_family": "item21",
+      "promoted_to": ["09_final_canonical.json"]
+    },
+    {
+      "fact": "FY2024 total assets $1,448,429k, equity $240,380k",
+      "source": "Exhibit C image pages 129-130",
+      "canonical_family": "item21",
+      "promoted_to": ["09_final_canonical.json"]
+    },
+    {
+      "fact": "Long-term loan from company under common control: $708,363k",
+      "source": "Exhibit C image page 130",
+      "canonical_family": "item21",
+      "promoted_to": ["09_final_canonical.json"]
+    },
+    {
+      "fact": "Receivable from ultimate parent: $204,389k (up from $148,828k)",
+      "source": "Exhibit C image page 129",
+      "canonical_family": "item21",
+      "promoted_to": ["09_final_canonical.json"]
+    },
+    {
+      "fact": "Restructuring charge of $1,343k in FY2024 — new line item",
+      "source": "Exhibit C image page 127",
+      "canonical_family": "item21",
+      "promoted_to": ["09_final_canonical.json"]
+    },
+    {
+      "fact": "State addenda overrides structured for 10 states with 24 specific override entries",
+      "source": "Exhibit F pp. 275-283",
+      "canonical_family": "state_addenda_overrides",
+      "promoted_to": ["09_final_canonical.json", "12_canonical_enriched_v2.json"]
+    }
+  ],
+  "total_promoted": 7
+}

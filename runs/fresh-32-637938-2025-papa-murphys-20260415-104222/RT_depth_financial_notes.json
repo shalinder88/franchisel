@@ -1,0 +1,33 @@
+{
+  "depth_pass": "financial_notes",
+  "entity": "MTY Franchising USA, Inc.",
+  "note_families_present": [
+    {"family": "Basis of presentation", "source_pages": [170]},
+    {"family": "Revenue recognition", "source_pages": [170, 171]},
+    {"family": "Lease accounting (ASC 842)", "source_pages": [172, 173]},
+    {"family": "Intangible assets", "source_pages": [175, 176]},
+    {"family": "Goodwill", "source_pages": [177]},
+    {"family": "Impairment", "source_pages": [178]},
+    {"family": "Income taxes", "source_pages": [180, 181]},
+    {"family": "Related party transactions", "source_pages": [182, 183]},
+    {"family": "Long-term debt / loans", "source_pages": [184]},
+    {"family": "Gift card liability", "source_pages": [185]},
+    {"family": "Advertising fund", "source_pages": [186]}
+  ],
+  "key_policies": {
+    "revenue_recognition": "Revenue from franchise operations recognized over term of franchise agreement. Initial franchise fees recognized when performance obligation satisfied (store opening). Royalties recognized as earned. Gift card breakage recognized proportionally.",
+    "depreciation": "PP&E depreciated on straight-line basis over useful lives. Leasehold improvements over shorter of lease term or useful life.",
+    "impairment": "Goodwill tested annually and when triggering events occur. Intangible assets with indefinite lives (trademarks) tested annually. FY2024: $37.5M impairment of intangibles/goodwill + $6.2M PP&E + $649k ROU = $44.3M total. FY2020: $62.1M impairment.",
+    "lease_accounting": "ASC 842 adopted. Operating leases recognized as ROU assets and lease liabilities. FY2024: ROU assets $190.4M, lease liabilities $156.1M (long-term) + $38.3M (current).",
+    "income_taxes": "Deferred tax assets/liabilities recognized. FY2024: deferred income taxes $101M (liability). Tax provision: current $9.9M, deferred recovery $(9.2M)."
+  },
+  "related_party_structure": {
+    "receivable_from_ultimate_parent": {"fy2024_k": 204389, "fy2023_k": 148828, "fy2022_k": 126323},
+    "advance_from_parent": {"fy2024_k": 4417, "fy2023_k": 2249},
+    "long_term_loan_common_control": {"fy2024_k": 708363, "fy2023_k": 705683},
+    "management_fees": {"fy2024_k": 2101, "fy2023_k": 2249, "fy2022_k": 2928},
+    "observation": "Complex intercompany structure. $708M loan from common-control entity is the largest single liability. $204M receivable from ultimate parent is the largest non-intangible asset. Net intercompany position: owes $708M, is owed $204M."
+  },
+  "subsequent_events": "Board approved financial statements January 31, 2025. PwC audit report dated January 31, 2025.",
+  "advertising_fund": "Brand Marketing Fund administered by Murphy's Marketing Services, Inc. (affiliate). FY2024 deficit of $(7.5M). Franchisor has no fiduciary duty. Unaudited."
+}

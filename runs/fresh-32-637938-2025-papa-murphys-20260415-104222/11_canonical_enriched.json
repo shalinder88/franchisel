@@ -1,0 +1,70 @@
+{
+  "_enrichment_version": "v1",
+  "_base": "05_canonical.json",
+  "item19_detail": {
+    "fpr_provided": true,
+    "data_type": "Net Sales only",
+    "years_covered": 3,
+    "regional_breakdowns": 3,
+    "decile_splits": true,
+    "cost_data": false,
+    "ebitda_data": false,
+    "all_stores_2024": {"count": 1015, "average": 688133, "median": 616110, "pct_above_avg": 40.2},
+    "west_2024": {"count": 438, "average": 819415, "median": 752250},
+    "central_2024": {"count": 381, "average": 639851, "median": 594798},
+    "east_2024": {"count": 196, "average": 488609, "median": 459624},
+    "survivorship_bias_flag": true,
+    "cohort_comparability": "no_discrepancy"
+  },
+  "item20_yearly_activity": {
+    "2024": {"start": 1119, "opened": 8, "terminations": 96, "non_renewals": 0, "reacquired": 28, "ceased_other": 2, "end": 1001},
+    "2023": {"start": 1145, "opened": 19, "terminations": 45, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 1119},
+    "2022": {"start": 1210, "opened": 6, "terminations": 71, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 1145},
+    "transfers": {"2024": 71, "2023": 54, "2022": 109},
+    "company_owned": {"2024_end": 44, "2023_end": 8, "2022_end": 23},
+    "projected": {"franchised": 9, "company_owned": 1, "fas_signed_not_opened": 26}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 15,
+    "exhibits": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"],
+    "high_priority": ["C", "D", "F", "J", "M", "N"],
+    "image_only_pages": {"exhibit": "C", "pages": "123-158", "content": "FY2024/2023 audited financial statements"}
+  },
+  "item21_structural": {
+    "entity": "MTY Franchising USA, Inc.",
+    "relationship": "guarantor (parent company)",
+    "auditor": "PricewaterhouseCoopers LLP",
+    "audit_office": "Montreal, Quebec",
+    "opinion": "unqualified",
+    "going_concern": false,
+    "emphasis_of_matter": "ASC 842 lease accounting adoption in 2022",
+    "fiscal_years_covered": ["2022", "2021", "2020"],
+    "current_year_image_only": true
+  },
+  "item1_structural": {
+    "entity_type": "LLC",
+    "state_of_formation": "Delaware",
+    "formed": "June 2004",
+    "converted_to_llc": "May 2010",
+    "franchising_since": 1995,
+    "predecessor_franchising_since": 1982,
+    "concept": "take-and-bake pizza",
+    "store_features": ["no_ovens", "no_delivery", "no_dining", "1400_sqft_avg"],
+    "mtY_acquisition_date": "May 23, 2019",
+    "parent_brands_count": "50+",
+    "franchise_relations_pact": 2017
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage",
+    "royalty_rate": 0.05,
+    "royalty_basis": "Net Sales",
+    "royalty_breach_rate": 0.15,
+    "bmf_rate": 0.02,
+    "local_marketing_min_rate": 0.05,
+    "local_marketing_min_dollar": 2000,
+    "total_ongoing_fee_load_estimate": "12%+ of Net Sales",
+    "ach_required": true,
+    "early_termination_formula": true,
+    "interest_rate_annual": 0.18
+  }
+}

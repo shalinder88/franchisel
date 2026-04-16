@@ -1,0 +1,72 @@
+{
+  "depth_block": "2_key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "B-1 License Agreement",
+      "pages_walked": [70, 71, 72, 73],
+      "clauses_extracted": 29,
+      "note": "Core operative clauses extracted in RT_depth_contract_burdens.json. Key sections: Grant (§1), Term (§2), Operations (§3), Training (§4), Maintenance (§5), Fees (§7), Records (§8), Inspection (§9), Indemnification (§10), Insurance (§11), Transfer (§13), Trademarks (§14), Termination (§15), Dispute Resolution (§16)."
+    },
+    {
+      "exhibit": "G Financial Statements",
+      "pages_walked": [122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138],
+      "note": "Fully walked. All 4 statements + 6 notes extracted in RT_depth_financial_notes.json and RT_depth_item21_notes.json."
+    },
+    {
+      "exhibit": "H State Addenda",
+      "pages_walked": [139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157],
+      "note": "All 11 states extracted in RT_depth_state_addenda_promotion.json."
+    }
+  ],
+  "exhibits_deferred": [
+    {
+      "exhibit": "B-1.5 KT Successor License Agreement",
+      "page_range": [100, 105],
+      "reason_deferred": "Variant agreement for KT successor units only. Key economic and default terms are substantially similar to B-1 with additions for KFC cross-default. Material provisions already surfaced through Item 17 tables.",
+      "already_recovered": "Item 17 tables capture all material provisions including term (5-10 years), minimum sales requirements, KFC franchise agreement termination as incurable breach.",
+      "remaining_missing": "Exact KFC cross-default trigger language. Successor-specific fee schedule if different from B-1."
+    },
+    {
+      "exhibit": "B-2 Assignment/Release/Personal Guaranty",
+      "page_range": [105, 110],
+      "reason_deferred": "Transfer/assignment mechanics fully captured through Item 17 tables and contract burden depth pass. Personal guaranty scope documented (all equity holders, unlimited, spousal exception).",
+      "already_recovered": "Transfer conditions, ROFR, guaranty scope from Item 17 and FDD body.",
+      "remaining_missing": "Exact guaranty waiver language (waiver of defenses, presentment, etc.)."
+    },
+    {
+      "exhibit": "I Asset Purchase Agreement",
+      "page_range": [158, 250],
+      "reason_deferred": "Complex multi-section contract (~90 pages) governing purchase of existing units. Key terms (purchase price mechanics, deposit, liquidated damages, 5-year transfer lock, ROFR) already surfaced through Items 5, 7, 12, 17.",
+      "already_recovered": "Purchase price structure, deposit (2%), 5-year transfer restriction, ROFR, liquidated damages per APA §44.",
+      "remaining_missing": "Detailed representations/warranties, conditions precedent, indemnification mechanics."
+    },
+    {
+      "exhibit": "J Market Build Out Agreement",
+      "page_range": [251, 280],
+      "reason_deferred": "Development commitment agreement. Key terms (5-year standard term, $22,500/unit fee, $4,231/period missed opening penalty, 10-year penalty duration) fully surfaced through Items 6, 12.",
+      "already_recovered": "Development fee structure, opening deadline penalties, standard term.",
+      "remaining_missing": "Exact development milestone definitions, termination triggers specific to MBOA."
+    },
+    {
+      "exhibit": "K Relationship Agreement/Letter of Credit/Guaranty",
+      "page_range": [281, 315],
+      "reason_deferred": "Complex agreement governing larger operators. Material provisions surfaced through Item 17 second table: broad non-compete (QSR + Mexican casual), 95% FMV buyout option, indebtedness limitations, 6-month acquisition moratorium.",
+      "already_recovered": "Non-compete scope, buyout option, transfer restrictions, legal fees ($20K-$100K+), cross-default provisions.",
+      "remaining_missing": "Detailed financial covenants, letter of credit terms, principal operator designation mechanics."
+    },
+    {
+      "exhibit": "L Development Services Agreement",
+      "page_range": [316, 325],
+      "reason_deferred": "Construction/real estate services agreement with YRSG. Key terms (service scope, fees, termination) surfaced through Items 5, 8, 11, and Item 17 second table.",
+      "already_recovered": "Service descriptions (design, feasibility, permitting, construction management), fee structure ($25K construction + $2,250 ADA + $10K optional RE), arbitration in Jefferson County KY.",
+      "remaining_missing": "Exact YRSG liability limitations, insurance requirements specific to DSA."
+    },
+    {
+      "exhibit": "M/N YUM Financing Guaranty",
+      "page_range": [326, 348],
+      "reason_deferred": "YUM lending assistance program documents. Key terms fully surfaced through Item 10: LS BDC Adviser/Lafayette Square lender, up to 33% principal guarantee (max $5M), default triggers including License Agreement termination.",
+      "already_recovered": "Guarantee percentage, maximum amount, default consequences, required waivers.",
+      "remaining_missing": "Exact loan covenants, interest rate parameters, collateral requirements."
+    }
+  ]
+}

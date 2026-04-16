@@ -1,0 +1,41 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "Franchisor derives $6,801,000 (37%) of total revenue from mandatory managed services purchases; gross margin $5,041,000 (32% of total gross margin)",
+      "source": "Reader report Pass C / Item 8, pages 16-17",
+      "promoted_to": "fees.franchisor_revenue_from_purchases in canonical"
+    },
+    {
+      "fact": "Allowance for credit losses growing: $10K (2022) -> $91K (2023) -> $154K (2024)",
+      "source": "Reader report Pass H / Exhibit A notes, page 61",
+      "promoted_to": "item21.allowance_for_credit_losses in canonical"
+    },
+    {
+      "fact": "8 franchisees have signed agreements but not started operations as of 12/31/2024",
+      "source": "Reader report / Note 1 financial statements, page 60",
+      "promoted_to": "item20.signed_not_started in canonical"
+    },
+    {
+      "fact": "Restricted cash for advertising fund: $269K (2024), $271K (2023), $295K (2022)",
+      "source": "Reader report / Note 4 financial statements, page 65",
+      "promoted_to": "item21.restricted_cash_detail in canonical"
+    },
+    {
+      "fact": "Vendor concentration: 44% of products from 2 vendors in 2024",
+      "source": "Reader report / Note 3 financial statements, page 65",
+      "promoted_to": "item21.vendor_concentration in canonical"
+    },
+    {
+      "fact": "Office building owned by parties related to parent's owner — related-party lease",
+      "source": "Reader report / Note 8 financial statements, page 67",
+      "promoted_to": "item21.related_party_transactions.office_building_ownership in canonical"
+    },
+    {
+      "fact": "Confidentiality clause flag — some current/former franchisees restricted from speaking openly",
+      "source": "Reader report Pass G / Item 20, page 49",
+      "promoted_to": "item20.confidentiality_clause in canonical (already present)"
+    }
+  ],
+  "note": "Most reader report facts were already captured in canonical. Key additions are financial note depth items (credit losses, restricted cash, vendor concentration, building ownership)."
+}

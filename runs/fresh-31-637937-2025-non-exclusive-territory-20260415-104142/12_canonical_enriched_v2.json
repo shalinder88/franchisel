@@ -1,0 +1,124 @@
+{
+  "enrichment_version": "v2",
+  "item21_financial_structure": {
+    "entity": "FS Brands, Inc.",
+    "reporting_framework": "US GAAP",
+    "consolidation": "Includes all subsidiaries (CertaPro, Paul Davis, California Closets, Pillar To Post, Floor Coverings International)",
+    "intercompany": "Eliminated on consolidation",
+    "management_fees_to_parent": {"2024": 7540176, "2023": 6772822, "payee": "FirstService Corporate Headquarters"},
+    "due_to_parent": {"2024": 21744502, "2023": 23166961, "nature": "Operational funding for acquisitions and interest"},
+    "note_receivable_from_related": {"amount": 7232377, "from": "FirstService Restoration", "nature": "Proceeds from sale of operating unit"},
+    "nci_balance": {"2024": 72477028, "2023": 66979653},
+    "dividends_paid": {"2024": 30000036, "2023": 0},
+    "dividends_to_nci": {"2024": 2692391, "2023": 1740390}
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "cash": 81752083,
+      "restricted_cash": 728048,
+      "accounts_receivable_net": 98370150,
+      "allowance_doubtful": 4769460,
+      "notes_receivable_current": 753999,
+      "notes_receivable_noncurrent": 9380811,
+      "inventories": 44747610,
+      "prepaid_other_current": 26647680,
+      "income_taxes_recoverable": 16432357,
+      "total_current_assets": 269431927,
+      "other_assets": 10785960,
+      "property_equipment_net": 64308483,
+      "intangible_assets_net": 35099730,
+      "goodwill": 137179959,
+      "rou_assets": 65005041,
+      "total_assets": 591191911,
+      "accounts_payable": 31540435,
+      "accrued_liabilities": 69999391,
+      "deferred_revenue_current": 39806903,
+      "due_to_parent_current": 21744502,
+      "income_taxes_payable_current": 3404120,
+      "operating_lease_current": 14387139,
+      "total_current_liabilities": 180882490,
+      "deferred_revenue_noncurrent": 22747519,
+      "ltvar": 9754020,
+      "income_taxes_payable_noncurrent": 186059,
+      "deferred_income_taxes": 10949640,
+      "operating_lease_noncurrent": 56742291,
+      "total_liabilities": 281262019,
+      "nci_redeemable": 72477028,
+      "common_stock": 1,
+      "apic": 29529067,
+      "retained_earnings": 207923796,
+      "total_equity": 237452864
+    },
+    "income_statement_2024": {
+      "royalties": 99791571,
+      "franchise_fees": 7396575,
+      "merchandise_sales": 645220204,
+      "services_other": 97957315,
+      "total_revenue": 850365665,
+      "franchise_operating": 43037230,
+      "cost_merchandise": 447715916,
+      "cost_services": 14386988,
+      "general_admin": 227676089,
+      "management_fees": 7540176,
+      "depreciation_amortization": 27270896,
+      "total_expenses": 767627295,
+      "income_operations": 82738370,
+      "interest_income": 663746,
+      "income_before_tax": 83402116,
+      "tax_provision": 23297857,
+      "net_income": 60104259,
+      "net_income_to_common": 52547770
+    },
+    "cash_flow_2024": {
+      "operating": 71302391,
+      "investing": -29768144,
+      "financing": -33739062,
+      "depreciation": 19418258,
+      "amortization": 7852638,
+      "capex": -25182341,
+      "acquisitions": -4585803,
+      "working_capital_change": -15242704
+    }
+  },
+  "item6_fee_detail": {
+    "royalty": {
+      "rate": "7%",
+      "base": "Gross Revenues",
+      "minimum_monthly": [0, 582, 1164, 1746, 2328],
+      "minimum_applies_to": "Initial 5-year term only",
+      "payment_method": "EFT",
+      "due_date": "10th business day of next month",
+      "gross_revenues_definition": "All sums from sale of services/products, cash or credit, excluding tips and sales taxes"
+    },
+    "brand_fee": {
+      "rate": "4%",
+      "base": "Gross Revenues",
+      "fund_spending_2024": {
+        "marketing_services": "36%",
+        "administration": "25%",
+        "national_media": "18%",
+        "miscellaneous": "13%",
+        "real_estate_alliances": "8%"
+      },
+      "fund_audited": false,
+      "fund_reviewed": true,
+      "available_to": "FAC Chair and Vice-Chair only"
+    },
+    "per_inspection_total_minimum": {
+      "it_fee": 5.50,
+      "inspection_number": 28.50,
+      "ptp360": 3.10,
+      "ptphomemanual": 9.45,
+      "total_per_inspection": 46.55,
+      "note": "Excludes EZBook booking fee and optional PTPFloorplan/VirtualOpenHouse"
+    },
+    "insurance_requirements": {
+      "professional_liability": {"occ": 1000000, "agg": 2000000, "carrier": "Citadel Inspector Pro"},
+      "general_liability": {"occ": 1000000, "agg": 2000000, "carrier": "Citadel Inspector Pro"},
+      "commercial_auto": {"occ": 1000000, "agg": 2000000},
+      "business_property": {"occ": 1000000, "agg": 2000000},
+      "cyber": {"occ": 1000000, "agg": 2000000},
+      "estimated_annual_cost": "2600-3000"
+    }
+  }
+}

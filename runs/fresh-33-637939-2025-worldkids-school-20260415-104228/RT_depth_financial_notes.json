@@ -1,0 +1,39 @@
+{
+  "depth_pass": "financial_notes",
+  "brand": "WorldKids School",
+  "source_pages": [149, 150, 151, 152, 153, 158, 159, 160, 161, 162],
+  "accounting_policies": {
+    "basis": "accrual",
+    "revenue_recognition": {
+      "standard": "ASC 606",
+      "policy": "Franchise fees recognized when distinct performance obligations substantially satisfied. Pre-opening services (training, site selection) are distinct and upfront. Other fee components deferred until obligations performed.",
+      "deferred_revenue": "$0 as of Dec 31, 2024",
+      "source_pages": [150]
+    },
+    "depreciation": {"method": "straight-line", "useful_life_years": 5, "tax_method": "accelerated", "expense_dec2024": 0, "source_pages": [149]},
+    "accounts_receivable": {"method": "reserve for financial, direct write-off for tax", "balance_dec2024": 0, "reserved_dec2024": 0, "source_pages": [151]},
+    "income_taxes": {"treatment": "LLC pass-through", "standard": "ASC 740-10 for uncertain positions", "source_pages": [151]},
+    "cash_flows": {"definition": "cash on hand and in banks", "source_pages": [151]},
+    "estimates": {"policy": "Management makes estimates affecting assets/liabilities and revenues/expenses. Actual results may differ significantly.", "source_pages": [152]},
+    "long_lived_assets": {"impairment_policy": "Reviewed when events indicate; no adjustments recorded", "source_pages": [152]},
+    "fair_value": {"standard": "ASC 820-10", "policy": "Financial instruments approximate carrying value due to short maturity", "source_pages": [152]}
+  },
+  "risk_factors": {
+    "legal_regulatory": "Changes in legal/regulatory environment may create unanticipated costs",
+    "concentration": "All fees derived from customer services; subject to marketplace conditions",
+    "credit": "Risk that customers may not pay; monitored via active collections",
+    "source_pages": [149]
+  },
+  "property_equipment": {"computer": 0, "office_furniture": 0, "accumulated_depreciation": 0, "net": 0, "source_pages": [153]},
+  "franchise_sales_note": "Company started offering franchises October 2024. Zero franchise agreements executed as of Dec 31, 2024.",
+  "subsequent_events": {
+    "evaluation_date": "March 14, 2025 (reported as 2024 — apparent typo)",
+    "material_events": "None requiring adjustment or disclosure",
+    "source_pages": [153]
+  },
+  "inception_balance_sheet_sep2024": {
+    "cash": 100223, "total_assets": 100223, "total_liabilities": 0, "members_equity": 100223,
+    "note": "Balance sheet only — no income statement or cash flow for inception period",
+    "source_pages": [157]
+  }
+}

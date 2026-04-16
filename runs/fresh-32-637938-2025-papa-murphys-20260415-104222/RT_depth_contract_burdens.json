@@ -1,0 +1,95 @@
+{
+  "depth_pass": "contract_burdens",
+  "source": "Item 17 relationship table + Exhibit D page headers (not full clause walk)",
+  "exhibit_d_pages": [208, 268],
+  "clause_walked": false,
+  "note": "Full clause walk deferred to A4 if needed. Key burdens extracted from Item 17 cross-references.",
+  "burdens": [
+    {
+      "family": "grant_and_term",
+      "term_years": 10,
+      "renewal_years": 5,
+      "renewal_count": 1,
+      "source_pages": [58]
+    },
+    {
+      "family": "fees",
+      "royalty_rate": 0.05,
+      "breach_royalty_rate": 0.15,
+      "breach_minimum_days": 14,
+      "bmf_rate": 0.02,
+      "local_marketing_min": "5% or $2,000/mo",
+      "early_termination_formula": "avg monthly (royalty+BMF) × months remaining ÷ 2",
+      "notice_for_half_damages": "6 months written",
+      "source_pages": [29, 32]
+    },
+    {
+      "family": "transfer",
+      "approval_required": true,
+      "conditions": "30 days notice, price ≤120% FMV, transferee qualifies, training, Transfer Fee, new FA, refurbish, release",
+      "rofr": "21 days to match, notify within 7 days of offer",
+      "source_pages": [59]
+    },
+    {
+      "family": "termination",
+      "by_franchisor_with_cause": true,
+      "by_franchisor_without_cause": false,
+      "by_franchisee": false,
+      "cure_operational_days": 30,
+      "cure_payment_days": 10,
+      "cure_health_safety_hours": 24,
+      "incurable": ["abandonment", "repeated_default", "fraud", "criminal_conviction", "insolvency", "lease_termination", "unauthorized_transfer", "cross_default", "acts_injurious_to_brand"],
+      "cross_default": true,
+      "source_pages": [58, 59]
+    },
+    {
+      "family": "post_termination_obligations",
+      "return_manuals": true,
+      "release_phone_numbers": true,
+      "remove_equipment_signage": true,
+      "franchisor_purchase_option_termination": "depreciated book value (5yr straight-line) for equipment; invoice cost for inventory; no goodwill",
+      "franchisor_purchase_option_expiration": "fair market value; no goodwill",
+      "source_pages": [59]
+    },
+    {
+      "family": "noncompete",
+      "during_term": "No interest in pizza/competing business",
+      "post_term_radius_miles": 25,
+      "post_term_years": 2,
+      "applies_to": "all owners",
+      "source_pages": [60]
+    },
+    {
+      "family": "guaranty",
+      "personal_guaranty_required": true,
+      "scope": "Exhibit J — Guarantee of Performance by MTY Franchising USA, Inc. for franchisor obligations. Separate personal guaranty by franchisee owners likely in FA.",
+      "source_pages": [300]
+    },
+    {
+      "family": "dispute_resolution",
+      "mediation_required": true,
+      "mediation_provider": "US Arbitration & Mediation Service",
+      "litigation_venue": "WA (franchisor principal place of business)",
+      "governing_law": "Washington",
+      "source_pages": [60]
+    },
+    {
+      "family": "insurance",
+      "gl_per_occurrence": 2000000,
+      "auto_per_occurrence": 1000000,
+      "additional_insured": true,
+      "source_pages": [30]
+    },
+    {
+      "family": "death_disability",
+      "transfer_window_days": 180,
+      "options": ["continue_to_operate", "transfer"],
+      "source_pages": [60]
+    },
+    {
+      "family": "assignment_by_franchisor",
+      "restrictions": "None — no restrictions on franchisor's right to transfer",
+      "source_pages": [59]
+    }
+  ]
+}

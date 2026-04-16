@@ -1,0 +1,83 @@
+{
+  "targeted_depth_block": "item20_completion",
+  "tables_extracted": 10,
+  "nonexclusive_tables": {
+    "table1_systemwide": {
+      "source_pages": [60],
+      "data": [
+        {"year": 2022, "start": 440, "end": 436, "net": -4},
+        {"year": 2023, "start": 436, "end": 407, "net": -29},
+        {"year": 2024, "start": 407, "end": 376, "net": -31}
+      ]
+    },
+    "table2_transfers": {
+      "source_pages": [61, 62, 63, 64, 65],
+      "totals": [
+        {"year": 2022, "total": 11},
+        {"year": 2023, "total": 23},
+        {"year": 2024, "total": 13}
+      ],
+      "top_states_2024": [{"state": "Ohio", "count": 3}, {"state": "Texas", "count": 3}, {"state": "Alaska", "count": 2}, {"state": "Minnesota", "count": 2}]
+    },
+    "table3_status": {
+      "source_pages": [65, 66, 67, 68, 69, 70],
+      "totals": [
+        {"year": 2022, "start": 440, "opened": 45, "terminated": 33, "non_renewed": 16, "reacquired": 0, "ceased": 0, "end": 436},
+        {"year": 2023, "start": 436, "opened": 21, "terminated": 36, "non_renewed": 14, "reacquired": 0, "ceased": 0, "end": 407},
+        {"year": 2024, "start": 407, "opened": 12, "terminated": 21, "non_renewed": 22, "reacquired": 0, "ceased": 0, "end": 376}
+      ],
+      "top_termination_states_2024": ["California (3)", "Oklahoma (2)", "Oregon (2)"],
+      "top_nonrenewal_states_2024": ["New Jersey (3)", "Washington (3)", "Texas (3)", "North Carolina (2)", "Tennessee (2)", "Virginia (2)"],
+      "table_notes": ["Zero reacquired by franchisor in any year. Zero ceased operations in any year."]
+    },
+    "table4_company_owned": {
+      "source_pages": [70],
+      "data": "0 in all years 2022-2024"
+    },
+    "table5_projected": {
+      "source_pages": [71, 72],
+      "total_signed_not_open": 0,
+      "total_projected_franchised": 0,
+      "total_projected_company": 0
+    }
+  },
+  "exclusive_tables": {
+    "table1_systemwide": {
+      "source_pages": [72],
+      "data": [
+        {"year": 2022, "start": 45, "end": 39, "net": -6},
+        {"year": 2023, "start": 39, "end": 38, "net": -1},
+        {"year": 2024, "start": 38, "end": 36, "net": -2}
+      ]
+    },
+    "table2_transfers": {
+      "source_pages": [73, 74, 75, 76, 77],
+      "totals": [
+        {"year": 2022, "total": 2},
+        {"year": 2023, "total": 5},
+        {"year": 2024, "total": 1}
+      ]
+    },
+    "table3_status": {
+      "source_pages": [77, 78, 79, 80, 81, 82],
+      "totals": [
+        {"year": 2022, "start": 45, "opened": 0, "terminated": 6, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 39},
+        {"year": 2023, "start": 39, "opened": 0, "terminated": 1, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 38},
+        {"year": 2024, "start": 38, "opened": 0, "terminated": 2, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 36}
+      ]
+    },
+    "table4_company_owned": {
+      "source_pages": [82],
+      "data": "0 in all years 2022-2024"
+    },
+    "table5_projected": {
+      "source_pages": [83, 84],
+      "total_signed_not_open": 0,
+      "total_projected_franchised": 0,
+      "total_projected_company": 0
+    }
+  },
+  "franchisee_list_exhibit_count": "Exhibit A spans pages 86-120 (~34 pages). Exhibit B spans pages 121-123.",
+  "gag_clause": false,
+  "confidentiality_clauses_signed": false
+}

@@ -1,0 +1,78 @@
+{
+  "depth_block": "key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "Exhibit C — Franchise Agreement",
+      "page_range": [58, 98],
+      "status": "clause_walked",
+      "key_clauses": "See RT_depth_contract_burdens.json for full clause walk"
+    },
+    {
+      "exhibit": "Schedule 1 — General Release",
+      "page_range": [99, 100],
+      "status": "identified",
+      "summary": "Standard general release form. Includes California Civil Code §1542 waiver language. Subject to state-specific override in multiple states."
+    },
+    {
+      "exhibit": "Schedule 2 — Nondisclosure and Non-Competition Agreement",
+      "page_range": [104, 105],
+      "status": "identified",
+      "summary": "NDA covers trade secrets and confidential information. Noncompete: during relationship plus 2 years post-term within 25 miles. Subject to state overrides (CA, ND, WA)."
+    },
+    {
+      "exhibit": "Schedule 3 — Unlimited Guaranty",
+      "page_range": [106, 107],
+      "status": "clause_walked",
+      "key_findings": [
+        "Unlimited personal guaranty by all 5%+ equity owners",
+        "Guarantors personally liable for ALL obligations under FA",
+        "Joint and several liability",
+        "Guarantee survives transfer of ownership interest",
+        "Includes indemnification obligation",
+        "Spousal: not explicitly spousal, but applies to all 5%+ holders"
+      ]
+    },
+    {
+      "exhibit": "Schedule 4 — Lease Addendum",
+      "page_range": [110, 111],
+      "status": "clause_walked",
+      "key_findings": [
+        "Landlord acknowledges franchisor rights",
+        "Franchisor right to enter premises on termination/expiration",
+        "Franchisor right to remove signs and branded materials",
+        "Franchisor right to cure defaults under lease",
+        "Franchisor right to assume lease on termination/transfer"
+      ]
+    },
+    {
+      "exhibit": "Schedule 5 — ACH Payment Agreement",
+      "page_range": [112, 112],
+      "status": "identified",
+      "summary": "Standard ACH authorization for electronic fund transfers to franchisor"
+    },
+    {
+      "exhibit": "Schedule 7 — State Addenda to FA",
+      "page_range": [114, 122],
+      "status": "clause_walked",
+      "summary": "See RT_depth_state_addenda_promotion.json"
+    }
+  ],
+  "deferred_exhibits": [
+    {
+      "exhibit": "Exhibit D — Operations Manual TOC",
+      "page_range": [123, 127],
+      "status": "deferred",
+      "rationale": "Operations Manual TOC is a reference exhibit. Content describes section headings and page counts only. Does not contain operative clauses affecting economics, legal burden, or buyer risk.",
+      "already_recovered": "Ops Manual total of 65 pages confirmed from Item 11 (p.28).",
+      "remaining_missing": "Specific section headings and page allocations not extracted."
+    },
+    {
+      "exhibit": "Exhibit E — Area Development Agreement (body)",
+      "page_range": [128, 135],
+      "status": "partially_walked",
+      "rationale": "ADA body provisions are largely parallel to FA terms with development schedule additions. Key economics and territory provisions already captured from Items 5, 7, and 12.",
+      "already_recovered": "ADA fee structure ($40K/unit), development schedule requirements, termination provisions from Item 17 chart, state addenda (WA) from Appendix C.",
+      "remaining_missing": "Specific ADA default triggers beyond those in Item 17 chart; ADA-specific dispute resolution if different from FA."
+    }
+  ]
+}

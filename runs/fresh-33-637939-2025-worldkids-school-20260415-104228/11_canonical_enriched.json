@@ -1,0 +1,84 @@
+{
+  "enrichment_version": 1,
+  "base_file": "09_final_canonical.json",
+  "item19_chart_detail": {
+    "fpr1_2024": {
+      "population": 8,
+      "full_year_count": 6,
+      "partial_year_count": 2,
+      "gross_revenue_range": {"min": 72501, "max": 3983011},
+      "full_year_gross_range": {"min": 396737, "max": 3983011},
+      "full_year_median_gross": 1724539,
+      "full_year_average_gross": 2046549,
+      "adj_revenue_range": {"min": 60151, "max": 3684285},
+      "outlets": [
+        {"location": "Georgetown/SODO", "students": 164, "sqft": 12765, "opened": "2018-06", "gross": 3983011, "adj": 3684285},
+        {"location": "Burien", "students": 180, "sqft": 13156, "opened": "2019-06", "gross": 3810017, "adj": 3524266},
+        {"location": "Upper Fauntleroy", "students": 93, "sqft": 6451, "opened": "2023-09", "gross": 2304398, "adj": 2131568},
+        {"location": "Admiral", "students": 43, "sqft": 2721, "opened": "2015-07", "gross": 1144680, "adj": 1051999},
+        {"location": "Fremont", "students": 37, "sqft": 2460, "opened": "2024-03", "gross": 838057, "adj": 767774},
+        {"location": "Delridge", "students": 26, "sqft": 1345, "opened": "2016-12", "gross": 602449, "adj": 542302},
+        {"location": "Edmonds", "students": 19, "sqft": 1095, "opened": "2016-12", "gross": 396737, "adj": 348933},
+        {"location": "Everett", "students": 59, "sqft": 3367, "opened": "2024-09", "gross": 72501, "adj": 60151}
+      ]
+    },
+    "fpr2_2023": {
+      "population": 6,
+      "full_year_count": 5,
+      "gross_revenue_range": {"min": 449032, "max": 3786372},
+      "outlets": [
+        {"location": "Burien", "gross": 3786372, "adj": 3502394},
+        {"location": "Georgetown/SODO", "gross": 3449535, "adj": 3190820},
+        {"location": "Upper Fauntleroy", "gross": 2020642, "adj": 1869093},
+        {"location": "Admiral", "gross": 898063, "adj": 820179},
+        {"location": "Delridge", "gross": 561289, "adj": 503612},
+        {"location": "Edmonds", "gross": 449032, "adj": 398090}
+      ]
+    }
+  },
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 0, "franchised_end": 0, "company_start": 5, "company_end": 5, "total_end": 5},
+    "2023": {"franchised_start": 0, "franchised_end": 0, "company_start": 5, "company_end": 6, "total_end": 6},
+    "2024": {"franchised_start": 0, "franchised_end": 0, "company_start": 6, "company_end": 8, "total_end": 8}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 12,
+    "critical": ["C (Franchise Agreement)", "F (Financial Statements)"],
+    "high_priority": ["E (ADA)", "G-1", "G-2", "I (State Addenda)"],
+    "state_addenda_states": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington", "Wisconsin"]
+  },
+  "item21_structural_facts": {
+    "auditor": "Smith, Buzzi & Associates, LLC",
+    "opinion": "unqualified",
+    "periods": 2,
+    "entity_type": "LLC",
+    "tax_treatment": "pass-through",
+    "revenue_recognition": "ASC 606",
+    "depreciation_method": "straight-line",
+    "useful_life_years": 5,
+    "going_concern_qualification": false,
+    "material_weakness": false
+  },
+  "item1_structural_facts": {
+    "franchisor_age_months": 8,
+    "franchising_since": "2024-10",
+    "single_officer": true,
+    "has_parent": false,
+    "has_predecessor": false,
+    "affiliate_count": 1,
+    "affiliate_operating_since": "2015-01"
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage",
+    "royalty_rate": 0.06,
+    "ad_fund_rate": 0.02,
+    "ad_fund_delayed_start": true,
+    "ad_fund_delay_months": 12,
+    "local_ad_has_floor": true,
+    "local_ad_floor_monthly": 2000,
+    "transfer_fee_fixed": 10000,
+    "renewal_fee_fixed": 5000,
+    "total_ongoing_percentage": 0.095,
+    "note": "9.5% = 6% royalty + 2% ad fund + 1.5% local ad (when GR > ~$1.6M/year)"
+  }
+}

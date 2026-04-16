@@ -1,0 +1,275 @@
+{
+  "tables": [
+    {
+      "id": "item6_fee_table",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [14, 15, 16, 17, 18],
+      "columns": ["Name of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Royalty", "amount": "7% of Gross Revenues; minimum monthly $0 (yr1) to $2,328 (yr5)", "due_date": "10th business day of next month", "remarks": "Greater of 7% or minimum"},
+        {"fee": "Brand Fee", "amount": "4% of Gross Revenues", "due_date": "Same as Royalty", "remarks": "Promotion and advertising fund"},
+        {"fee": "IT Fee", "amount": "$5.50 per inspection", "due_date": "10th business day of next month", "remarks": "OnePoint software access"},
+        {"fee": "Inspection Numbers", "amount": "$28.50 each", "due_date": "As purchased (typically 20 at a time)", "remarks": "Electronic inspection presentation/storage"},
+        {"fee": "Financial Reporting Fee", "amount": "$30.00/month", "due_date": "10th business day each month", "remarks": "Qvinci/QuickBooks integration"},
+        {"fee": "EZBook Connections", "amount": "$33.45/booking ($29.75 if 90%+ booked)", "due_date": "10th business day of next month", "remarks": "Optional but 80% minimum if elected"},
+        {"fee": "PTP360", "amount": "$3.10 per inspection", "due_date": "10th business day of next month", "remarks": "360 photo software"},
+        {"fee": "PTPFloorplan", "amount": "$21-$350 by house size", "due_date": "10th business day of next month", "remarks": "36% of customers purchased Prestige in 2024"},
+        {"fee": "PTPVirtualOpenHouse", "amount": "$10.00 each", "due_date": "10th business day of next month", "remarks": "Additional service"},
+        {"fee": "PTPHomeManual", "amount": "$9.45 each", "due_date": "10th business day of next month", "remarks": "Included with each inspection"},
+        {"fee": "Brand Conference Fee", "amount": "$900-$1,200/year", "due_date": "12 monthly installments", "remarks": "Mandatory, non-refundable"},
+        {"fee": "Transfer Fee", "amount": "$4,000", "due_date": "Prior to transfer", "remarks": ""},
+        {"fee": "Referral Fee", "amount": "$15,000", "due_date": "At closing", "remarks": "If franchisor referred transferee"},
+        {"fee": "Renewal Fee", "amount": "$2,500", "due_date": "6 months prior to renewal", "remarks": "Administrative fee"},
+        {"fee": "Audit", "amount": "Cost of audit + underpayment + 18% interest", "due_date": "30 days after billing", "remarks": "Only if >2% underreporting"},
+        {"fee": "Entity Transfer", "amount": "$1,000", "due_date": "Prior to transfer", "remarks": "Unless within 6 months of signing"},
+        {"fee": "Late Payment Interest", "amount": "18% per annum", "due_date": "Immediately", "remarks": ""},
+        {"fee": "Attorneys' Fees", "amount": "Variable", "due_date": "As incurred", "remarks": ""},
+        {"fee": "Indemnification", "amount": "Variable", "due_date": "As incurred", "remarks": ""}
+      ],
+      "table_notes": [
+        "All fees paid to franchisor. All uniformly imposed. None refundable.",
+        "EFT required for all continuing fees.",
+        "Fees may be changed/increased upon 90 days notice, max 1 adjustment per calendar year.",
+        "Minimum royalty applies only to initial 5-year term."
+      ]
+    },
+    {
+      "id": "item7_initial_investment",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [22, 23, 24],
+      "columns": ["Item", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        {"item": "Initial Franchise Fee", "low": 58500, "high": 58500, "to_whom": "Pillar To Post"},
+        {"item": "Tool Bundle", "low": 3500, "high": 4500, "to_whom": "Approved suppliers"},
+        {"item": "Local Tools/Equipment", "low": 1000, "high": 2000, "to_whom": "Various local"},
+        {"item": "Computer Equipment/Software", "low": 3500, "high": 6000, "to_whom": "Approved supplier"},
+        {"item": "PTP360 Equipment Package", "low": 800, "high": 1000, "to_whom": "Approved supplier"},
+        {"item": "Office Equipment/Furniture/Supplies", "low": 750, "high": 1000, "to_whom": "Various local"},
+        {"item": "Business Telephone Setup", "low": 190, "high": 190, "to_whom": "Approved supplier"},
+        {"item": "Connected Services", "low": 300, "high": 600, "to_whom": "Various local"},
+        {"item": "Foundations Marketing Bundle", "low": 3000, "high": 5000, "to_whom": "Approved supplier"},
+        {"item": "Business Licenses", "low": 300, "high": 1000, "to_whom": "Government"},
+        {"item": "Automated Marketing Campaign", "low": 10000, "high": 15000, "to_whom": "Approved supplier"},
+        {"item": "Vehicle", "low": 3000, "high": 6000, "to_whom": "Various local"},
+        {"item": "Vehicle Branding", "low": 3000, "high": 4000, "to_whom": "Approved supplier"},
+        {"item": "Professional Services", "low": 1500, "high": 2500, "to_whom": "Various local"},
+        {"item": "Attire", "low": 500, "high": 1000, "to_whom": "Approved supplier"},
+        {"item": "Account Setup/Dues", "low": 600, "high": 1000, "to_whom": "Approved suppliers"},
+        {"item": "Insurance (3 months)", "low": 750, "high": 1000, "to_whom": "Approved carrier"},
+        {"item": "Brand Conference/Regional", "low": 1500, "high": 4000, "to_whom": "PTP/travel"},
+        {"item": "Additional Funds (3 months)", "low": 10000, "high": 20000, "to_whom": "Various"}
+      ],
+      "total_low": 102690,
+      "total_high": 134290,
+      "table_notes": [
+        "None of these payments is refundable.",
+        "Does not include managerial salaries, owner draws, or applicable taxes.",
+        "Real estate not included — most franchisees operate from home.",
+        "Insurance: E&O + GL estimated $750 for 3 months, $2,600-$3,000 for first year."
+      ]
+    },
+    {
+      "id": "item19_sales_by_group",
+      "item": 19,
+      "title": "Average and Median Sales and Job Size by Number of Inspectors (Non-Exclusive)",
+      "source_pages": [55],
+      "columns": ["Group", "Avg Sales", "Median Sales", "Avg Job Size", "Median Job Size"],
+      "rows_2024": [
+        {"group": "A (1 inspector)", "avg_sales": 137522, "median_sales": 124002, "avg_job": 644.73, "median_job": 634.73},
+        {"group": "B (2 inspectors)", "avg_sales": 269792, "median_sales": 251612, "avg_job": 696.17, "median_job": 710.97},
+        {"group": "C (3-5 inspectors)", "avg_sales": 574582, "median_sales": 523732, "avg_job": 733.15, "median_job": 712.84},
+        {"group": "D (6+ inspectors)", "avg_sales": 1997817, "median_sales": 1710728, "avg_job": 987.83, "median_job": 1033.26}
+      ],
+      "rows_2023": [
+        {"group": "A (1 inspector)", "avg_sales": 120636, "median_sales": 108027, "avg_job": 617.16, "median_job": 600.66},
+        {"group": "B (2 inspectors)", "avg_sales": 265475, "median_sales": 247123, "avg_job": 679.06, "median_job": 659.08},
+        {"group": "C (3-5 inspectors)", "avg_sales": 539022, "median_sales": 442603, "avg_job": 685.69, "median_job": 658.67},
+        {"group": "D (6+ inspectors)", "avg_sales": 1701600, "median_sales": 1260896, "avg_job": 927.92, "median_job": 889.16}
+      ],
+      "population_2024": {"total": 293, "excluded": 8, "group_a": 206, "group_b": 47, "group_c": 36, "group_d": 4},
+      "population_2023": {"total": 294, "excluded": 12, "group_a": 204, "group_b": 55, "group_c": 31, "group_d": 4},
+      "table_notes": [
+        "Group A: 1 inspector. Group B: 2 inspectors. Group C: 3-5 inspectors. Group D: 6+ inspectors.",
+        "Excludes units started during year, terminated/ceased during year, and units failing to report.",
+        "Does not reflect costs, operating expenses, or other deductions.",
+        "Based on unaudited franchisee reports for computing royalties."
+      ]
+    },
+    {
+      "id": "item19_sales_thresholds",
+      "item": 19,
+      "title": "Number of Franchises Over Certain Annual Sales Thresholds (Systemwide)",
+      "source_pages": [56],
+      "columns": ["Threshold", "2024", "2023"],
+      "rows": [
+        {"threshold": "Over $3,000,000", "count_2024": 1, "count_2023": 1},
+        {"threshold": "$2,000,000-$2,999,999", "count_2024": 1, "count_2023": 0},
+        {"threshold": "$1,000,000-$1,999,999", "count_2024": 11, "count_2023": 13},
+        {"threshold": "$750,000-$999,999", "count_2024": 4, "count_2023": 2},
+        {"threshold": "$500,000-$749,999", "count_2024": 21, "count_2023": 17},
+        {"threshold": "$250,000-$499,999", "count_2024": 62, "count_2023": 52}
+      ],
+      "total_systemwide_sales_2024": 85587013,
+      "total_units_2024": 316,
+      "total_systemwide_sales_2023": 77253255,
+      "total_units_2023": 318,
+      "table_notes": ["Includes both exclusive and non-exclusive territories."]
+    },
+    {
+      "id": "item19_selling_prices",
+      "item": 19,
+      "title": "Average and Median Selling Prices as Percentage of Annual Sales",
+      "source_pages": [56],
+      "columns": ["Metric", "2024", "2023"],
+      "rows": [
+        {"metric": "Number of Franchises Sold", "val_2024": 11, "val_2023": 13},
+        {"metric": "Average Selling Price as % of Prior Year Sales", "val_2024": "72%", "val_2023": "40%"},
+        {"metric": "Median Selling Price as % of Prior Year Sales", "val_2024": "78%", "val_2023": "41%"},
+        {"metric": "Highest %", "val_2024": "119%", "val_2023": "145%"},
+        {"metric": "Lowest %", "val_2024": "27%", "val_2023": "13%"},
+        {"metric": "Above Average", "val_2024": 7, "val_2023": 5},
+        {"metric": "Above Median", "val_2024": 5, "val_2023": 6}
+      ]
+    },
+    {
+      "id": "item19_seasonality",
+      "item": 19,
+      "title": "Percentage of Total Systemwide Sales by Calendar Quarter",
+      "source_pages": [56],
+      "rows": [
+        {"quarter": "Q1", "pct_2024": "22%", "pct_2023": "23%"},
+        {"quarter": "Q2", "pct_2024": "29%", "pct_2023": "29%"},
+        {"quarter": "Q3", "pct_2024": "27%", "pct_2023": "27%"},
+        {"quarter": "Q4", "pct_2024": "22%", "pct_2023": "21%"}
+      ]
+    },
+    {
+      "id": "item20_systemwide_nonexclusive",
+      "item": 20,
+      "title": "Systemwide Outlet Summary (Non-Exclusive)",
+      "source_pages": [60],
+      "rows": [
+        {"year": 2022, "type": "Franchised", "start": 440, "end": 436, "net_change": -4},
+        {"year": 2023, "type": "Franchised", "start": 436, "end": 407, "net_change": -29},
+        {"year": 2024, "type": "Franchised", "start": 407, "end": 376, "net_change": -31}
+      ],
+      "company_owned": "0 in all years"
+    },
+    {
+      "id": "item20_status_nonexclusive",
+      "item": 20,
+      "title": "Status of Franchised Outlets (Non-Exclusive) — Totals",
+      "source_pages": [65, 66, 67, 68, 69, 70],
+      "rows": [
+        {"year": 2022, "start": 440, "opened": 45, "terminated": 33, "non_renewed": 16, "reacquired": 0, "ceased": 0, "end": 436},
+        {"year": 2023, "start": 436, "opened": 21, "terminated": 36, "non_renewed": 14, "reacquired": 0, "ceased": 0, "end": 407},
+        {"year": 2024, "start": 407, "opened": 12, "terminated": 21, "non_renewed": 22, "reacquired": 0, "ceased": 0, "end": 376}
+      ]
+    },
+    {
+      "id": "item20_transfers_nonexclusive",
+      "item": 20,
+      "title": "Transfers — Non-Exclusive Totals",
+      "source_pages": [61, 62, 63, 64, 65],
+      "rows": [
+        {"year": 2022, "total_transfers": 11},
+        {"year": 2023, "total_transfers": 23},
+        {"year": 2024, "total_transfers": 13}
+      ]
+    },
+    {
+      "id": "item20_systemwide_exclusive",
+      "item": 20,
+      "title": "Systemwide Outlet Summary (Exclusive)",
+      "source_pages": [72],
+      "rows": [
+        {"year": 2022, "type": "Franchised", "start": 45, "end": 39, "net_change": -6},
+        {"year": 2023, "type": "Franchised", "start": 39, "end": 38, "net_change": -1},
+        {"year": 2024, "type": "Franchised", "start": 38, "end": 36, "net_change": -2}
+      ]
+    },
+    {
+      "id": "item20_projected_openings",
+      "item": 20,
+      "title": "Projected Openings (Both Non-Exclusive and Exclusive)",
+      "source_pages": [71, 72, 83, 84],
+      "total_signed_not_open": 0,
+      "total_projected_franchised": 0,
+      "total_projected_company": 0,
+      "table_notes": ["Zero projected openings across all states for both territory types."]
+    },
+    {
+      "id": "item21_balance_sheet",
+      "item": 21,
+      "title": "FS Brands, Inc. Consolidated Balance Sheet",
+      "source_pages": [129, 130],
+      "entity": "FS Brands, Inc.",
+      "as_of": "December 31, 2024 and 2023",
+      "assets": {
+        "current_assets": {"2024": 269431927, "2023": 230477580},
+        "cash_and_equivalents": {"2024": 81752083, "2023": 74395379},
+        "accounts_receivable_net": {"2024": 98370150, "2023": 73640316},
+        "inventories": {"2024": 44747610, "2023": 46944449},
+        "total_assets": {"2024": 591191911, "2023": 544168844},
+        "goodwill": {"2024": 137179959, "2023": 135209812},
+        "intangible_assets": {"2024": 35099730, "2023": 39809871},
+        "property_and_equipment": {"2024": 64308483, "2023": 58187454},
+        "rou_assets": {"2024": 65005041, "2023": 61114454}
+      },
+      "liabilities": {
+        "current_liabilities": {"2024": 180882490, "2023": 169269535},
+        "total_liabilities": {"2024": 281262019, "2023": 262284061},
+        "due_to_parent": {"2024": 21744502, "2023": 23166961},
+        "deferred_revenue_current": {"2024": 39806903, "2023": 42470440},
+        "deferred_revenue_noncurrent": {"2024": 22747519, "2023": 21084490},
+        "operating_lease_current": {"2024": 14387139, "2023": 12328887},
+        "operating_lease_noncurrent": {"2024": 56742291, "2023": 51682224}
+      },
+      "nci": {"2024": 72477028, "2023": 66979653},
+      "equity": {
+        "common_stock": {"2024": 1, "2023": 1},
+        "apic": {"2024": 29529067, "2023": 29529067},
+        "retained_earnings": {"2024": 207923796, "2023": 185376062},
+        "total_equity": {"2024": 237452864, "2023": 214905130}
+      }
+    },
+    {
+      "id": "item21_income_statement",
+      "item": 21,
+      "title": "FS Brands, Inc. Consolidated Income Statement",
+      "source_pages": [131],
+      "revenue": {
+        "royalties": {"2024": 99791571, "2023": 99564101},
+        "franchise_fees": {"2024": 7396575, "2023": 6131358},
+        "merchandise_sales": {"2024": 645220204, "2023": 584521531},
+        "services_and_other": {"2024": 97957315, "2023": 91982256},
+        "total_revenue": {"2024": 850365665, "2023": 782199246}
+      },
+      "expenses": {
+        "franchise_operating": {"2024": 43037230, "2023": 41994603},
+        "cost_merchandise": {"2024": 447715916, "2023": 417539405},
+        "cost_services": {"2024": 14386988, "2023": 7575789},
+        "general_admin": {"2024": 227676089, "2023": 211319558},
+        "management_fees_parent": {"2024": 7540176, "2023": 6772822},
+        "depreciation_amortization": {"2024": 27270896, "2023": 29188378},
+        "total_expenses": {"2024": 767627295, "2023": 714390555}
+      },
+      "income_from_operations": {"2024": 82738370, "2023": 67808691},
+      "income_before_taxes": {"2024": 83402116, "2023": 67551133},
+      "net_income": {"2024": 60104259, "2023": 49983524},
+      "net_income_to_common": {"2024": 52547770, "2023": 40857803}
+    },
+    {
+      "id": "item21_cash_flows",
+      "item": 21,
+      "title": "FS Brands, Inc. Consolidated Cash Flows",
+      "source_pages": [133],
+      "operating": {"2024": 71302391, "2023": 62785192},
+      "investing": {"2024": -29768144, "2023": -44358518},
+      "financing": {"2024": -33739062, "2023": 7155106},
+      "dividends_paid": {"2024": 30000036, "2023": 0}
+    }
+  ]
+}

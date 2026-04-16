@@ -1,0 +1,106 @@
+{
+  "enrichment_version": 2,
+  "base_file": "11_canonical_enriched.json",
+  "item21_financial_structure_detail": {
+    "entity_structure": "LLC (pass-through)",
+    "members_equity_dec2024": 97,
+    "members_equity_sep2024": 100223,
+    "contributions_period": 104157,
+    "distributions_period": 104060,
+    "deferred_franchise_fees": 0,
+    "accounts_receivable": 0,
+    "property_equipment": 0,
+    "accumulated_depreciation": 0,
+    "surety_bond": {"amount": 100000, "required_by": "Washington Securities Division"}
+  },
+  "item21_statement_detail": {
+    "dec_2024": {
+      "balance_sheet": {
+        "cash": 97, "total_assets": 97,
+        "deferred_franchise_fee": 0, "total_liabilities": 0,
+        "members_equity": 97
+      },
+      "income_statement": {
+        "franchise_sales": 0, "total_revenue": 0,
+        "professional_fees": 0, "total_expenses": 0, "net_income": 0
+      },
+      "cash_flows": {
+        "operating": 0, "investing": 0,
+        "contributions": 104157, "distributions": -104060, "financing": 97,
+        "net_change": 97, "ending_cash": 97
+      }
+    },
+    "sep_2024": {
+      "balance_sheet": {"cash": 100223, "total_assets": 100223, "total_liabilities": 0, "members_equity": 100223}
+    }
+  },
+  "item21_notes_detail": {
+    "accounting_policies": {
+      "basis": "accrual",
+      "revenue_recognition": "ASC 606 — franchise fees recognized when distinct performance obligations substantially satisfied",
+      "bad_debts": "reserve method (financial), direct write-off (tax)",
+      "depreciation": "straight-line, 5-year useful lives",
+      "income_taxes": "LLC pass-through; ASC 740-10 for uncertain tax positions",
+      "fair_value": "ASC 820-10",
+      "impairment": "reviewed when events indicate; no adjustments recorded"
+    },
+    "franchise_sales_note": "Company started offering franchises October 2024. Zero franchise sales as of Dec 31, 2024.",
+    "subsequent_events": "Management evaluated through March 14, 2025 (date appears as 2024 — apparent typo). No adjustments or disclosures required.",
+    "risk_factors": ["legal/regulatory risk", "concentration risk", "credit risk"]
+  },
+  "item6_fee_detail": {
+    "all_fees": [
+      {"name": "Royalty", "amount": "6% of GR", "frequency": "monthly", "starts": "month 1", "category": "ongoing"},
+      {"name": "National Ad Fund", "amount": "2% of GR", "frequency": "monthly", "starts": "month 13", "category": "ongoing"},
+      {"name": "Local Advertising", "amount": "max($2,000/mo, 1.5% GR)", "frequency": "monthly", "starts": "month 1", "category": "ongoing"},
+      {"name": "Grand Opening", "amount": "$4,000-$8,000", "frequency": "one-time", "category": "initial"},
+      {"name": "Interest", "amount": "min(1.5%/mo, legal max)", "frequency": "as incurred", "category": "penalty"},
+      {"name": "Convention", "amount": "$500", "frequency": "annual", "category": "ongoing"},
+      {"name": "Maintenance/Refurbishing", "amount": "actual", "frequency": "as incurred", "category": "event"},
+      {"name": "Insufficient Funds", "amount": "$75", "frequency": "per occurrence", "category": "penalty"},
+      {"name": "Relocation", "amount": "actual", "frequency": "as incurred", "category": "event"},
+      {"name": "POS/Software", "amount": "$25-$235+/mo", "frequency": "monthly", "category": "technology"},
+      {"name": "Renewal", "amount": "$5,000", "frequency": "at renewal", "category": "event"},
+      {"name": "Retraining", "amount": "$500/person/day", "frequency": "as needed", "category": "training"},
+      {"name": "Additional Training", "amount": "$500/person/day + expenses", "frequency": "as needed", "category": "training"},
+      {"name": "Audit", "amount": "cost + underpayment + interest", "frequency": "as incurred", "category": "penalty"},
+      {"name": "Product Purchases", "amount": "actual", "frequency": "as incurred", "category": "ongoing"},
+      {"name": "Supplier Testing", "amount": "up to $1,000", "frequency": "as needed", "category": "event"},
+      {"name": "Customer Service", "amount": "actual", "frequency": "as incurred", "category": "event"},
+      {"name": "Email", "amount": "$50/mo/address", "frequency": "monthly", "category": "technology"},
+      {"name": "Insurance", "amount": "actual", "frequency": "as incurred", "category": "event"},
+      {"name": "Transfer", "amount": "$10,000", "frequency": "at transfer", "category": "event"},
+      {"name": "De-Identification", "amount": "actual", "frequency": "at termination", "category": "event"},
+      {"name": "Management", "amount": "$500/person/day + costs", "frequency": "as incurred", "category": "event"},
+      {"name": "Indemnification", "amount": "varies", "frequency": "as incurred", "category": "event"},
+      {"name": "Enforcement", "amount": "all costs + attorneys' fees", "frequency": "as incurred", "category": "event"}
+    ]
+  },
+  "unresolveds": [
+    {"id": "U-001", "description": "Franchisor financial viability: $97 total assets, zero revenue", "severity": "high", "source": "Item 21, Special Risk #4"},
+    {"id": "U-002", "description": "No franchisee operating history: zero franchised outlets", "severity": "medium", "source": "Item 20"},
+    {"id": "U-003", "description": "Auditor report date typo", "severity": "low", "source": "p.145"},
+    {"id": "U-004", "description": "Subsequent events date typo", "severity": "low", "source": "p.153"},
+    {"id": "U-005", "description": "Item 20 Table 4 year label error", "severity": "low", "source": "p.52"},
+    {"id": "U-006", "description": "FPR limited to gross revenue only", "severity": "medium", "source": "Item 19"},
+    {"id": "U-007", "description": "Ad fund not audited", "severity": "low", "source": "Item 11"},
+    {"id": "U-008", "description": "Franchise brokers not in Item 2", "severity": "low", "source": "Receipt"}
+  ],
+  "contradictions": [
+    {"id": "C-001", "description": "Cash balance: $100,223 at Sep 2024 vs $97 at Dec 2024", "items_involved": ["Item 21"], "resolution_status": "Resolved — distributions explain decline"}
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington", "Wisconsin"],
+    "override_summary_table": {
+      "forum_selection": ["California", "Illinois", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+      "governing_law": ["California", "Illinois", "North Dakota", "Rhode Island"],
+      "noncompete": ["California", "North Dakota", "Washington"],
+      "general_release": ["California", "Maryland", "Minnesota", "North Dakota", "Washington"],
+      "termination": ["California", "Michigan", "Minnesota", "Wisconsin"],
+      "renewal": ["Michigan"],
+      "damages": ["Minnesota"],
+      "interest_rate": ["California"],
+      "transfer": ["Washington"]
+    }
+  }
+}

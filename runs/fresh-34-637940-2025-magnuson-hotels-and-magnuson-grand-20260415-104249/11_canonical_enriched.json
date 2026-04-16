@@ -1,0 +1,70 @@
+{
+  "enrichment_version": "v1",
+  "item1_structural": {
+    "entity_type": "Wyoming LLC",
+    "formation_date": "2021-03-17",
+    "parent": "Magnuson Company, L.L.C.",
+    "parent_relationship": "Wholly-owned subsidiary",
+    "ip_ownership": "Parent owns all IP; licenses to franchisor via perpetual license (Jan 4, 2022)",
+    "license_termination_risk": "Parent can terminate on 90 days (breach) or 6 months (no-cause) notice",
+    "company_owned_units": 0,
+    "franchise_model": "Conversion only — existing hotel operators rebrand to Magnuson",
+    "brands_offered": ["Magnuson Hotels", "Magnuson Grand"],
+    "brand_differentiation": "Magnuson Grand for hotels with restaurants/spa/convention centers; Magnuson Hotels for standard properties",
+    "affiliate_hotels": "Magnuson Company operates Affiliate Hotels (non-franchise marketing services) that compete with Branded Hotels"
+  },
+  "item6_fee_attributes": {
+    "total_fee_types": 21,
+    "primary_ongoing_fee": "8% of Gross Room Revenue",
+    "has_marketing_fund": false,
+    "has_ad_cooperative": false,
+    "has_technology_fee": true,
+    "technology_fee_detail": "Approved PMS Connection $300-$2,000/yr if not using Magnuson Cloud PMS",
+    "has_transfer_fee": false,
+    "has_renewal_fee": false,
+    "distribution_channel_control": "Franchisor controls all OTA/GDS listings; 10-20% channel fees passed to franchisee",
+    "minimum_revenue_floor": true,
+    "minimum_revenue_amount": 250,
+    "penalty_fee_count": 8,
+    "highest_penalty": "$9,995 de-identification processing fee",
+    "fee_escalation_provisions": ["Minimum invoice revenue: up to 10%/year compounding", "Re-activation fee: up to 10%/year compounding", "Extended closure fee: up to 10%/year compounding", "Inconvenience fee: up to $5,000"]
+  },
+  "item19_chart_detail": null,
+  "item20_yearly_activity": {
+    "2022": {"start": 0, "opened": 4, "terminated": 0, "end": 4},
+    "2023": {"start": 4, "opened": 5, "terminated": 0, "end": 9},
+    "2024": {"start": 9, "opened": 2, "terminated": 0, "end": 11},
+    "post_fy_changes": "1 TX termination",
+    "transfers_total": 0,
+    "states_represented": ["AR", "FL", "IL", "KY", "MI", "OH", "TX", "UT"],
+    "largest_state": "MI (3 outlets)"
+  },
+  "exhibit_structure": {
+    "total_exhibits": 9,
+    "exhibit_letters": ["A", "B-1", "B-2", "C", "D", "E-1", "E-2", "F", "G", "H", "I"],
+    "franchise_agreement_pages": 40,
+    "financial_statements_pages": 12,
+    "state_addenda_pages": 14,
+    "state_addenda_states": ["CA", "HI", "IL", "MD", "MN", "NY", "ND", "RI", "SD", "VA", "WA"]
+  },
+  "item21_structural": {
+    "auditor_location": "Melville, New York",
+    "opinion": "Unqualified (clean)",
+    "years_audited": [2022, 2023, 2024],
+    "going_concern_paragraph": false,
+    "entity_tax_status": "Disregarded entity (single-member LLC)",
+    "related_party_transactions": [
+      {
+        "party": "Magnuson Company, L.L.C. (parent/member)",
+        "type": "Management fee",
+        "amounts": {"2024": 127435, "2023": 85347, "2022": 18740},
+        "description": "Administrative services performed by parent on company's behalf"
+      },
+      {
+        "party": "Magnuson Company, L.L.C. (parent/member)",
+        "type": "License agreement",
+        "description": "Non-exclusive license for Magnuson brand (99-year term). No license fee charged in any period."
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "extraction_id": "637941-2025",
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "Manuals total 626 pages",
+      "source": "Pass C, Item 11 section of reader report; PDF page 44",
+      "promoted_to": "concept.manual_pages in canonical"
+    },
+    {
+      "fact": "POS system estimated cost ~$100,000; annual maintenance $13,050-$15,900",
+      "source": "Pass C, Computer System section of reader report; PDF page 43",
+      "promoted_to": "technology.pos_initial_cost and technology.pos_annual_maintenance in canonical"
+    },
+    {
+      "fact": "Estimated 12-18 months from signing to opening",
+      "source": "Pass B, Item 7 notes section of reader report; PDF page 37",
+      "promoted_to": "concept.signing_to_opening_months in canonical"
+    },
+    {
+      "fact": "Rent estimate $40-$80/sq ft based on affiliate experience in major metro areas",
+      "source": "Pass B, Item 7 Note 11 in reader report; PDF page 26",
+      "promoted_to": "initial_investment.rent_per_sqft in canonical"
+    },
+    {
+      "fact": "Franchise sellers: Stephen Evans (London), Mathew Horvath (Irving TX), James Rogers (London)",
+      "source": "Pass F, Item 23 section of reader report; PDF page 237",
+      "promoted_to": "franchise_sellers in canonical"
+    },
+    {
+      "fact": "Key personnel: CEO Andy Wenlock, COO Mathew Horvath, Director James Branstetter, MD Stephen Evans, Culinary Lee Bennett, Secretary William Martens III",
+      "source": "Pass B, Item 2 section of reader report; PDF pages 11-12",
+      "promoted_to": "key_personnel in canonical"
+    },
+    {
+      "fact": "Continuing training every 6 months (phone conference or quality assurance visits)",
+      "source": "Pass C, Training section of reader report; PDF page 45",
+      "promoted_to": "training.continuing_frequency in canonical"
+    },
+    {
+      "fact": "At least one Restaurant Manager must be on-site during all operating hours",
+      "source": "Pass D, Item 15 section of reader report; PDF page 54",
+      "promoted_to": "participation.on_site_requirement in canonical"
+    }
+  ],
+  "total_promoted": 8
+}

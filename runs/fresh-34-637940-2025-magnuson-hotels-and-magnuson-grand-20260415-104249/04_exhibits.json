@@ -1,0 +1,104 @@
+{
+  "exhibits": [
+    {
+      "letter": "A",
+      "name": "Franchise Agreement",
+      "category": "contract",
+      "priority": "high",
+      "page_range": [39, 78],
+      "sub_components": [
+        {"name": "Cover Page / Blank Form", "pages": [39, 40, 41]},
+        {"name": "Terms and Conditions (Sections 1-21)", "pages": [42, 63]},
+        {"name": "Guaranty and Assumption of Obligations", "pages": [65, 67]},
+        {"name": "State-Specific Riders (IL, MD, MN, NY, ND, RI, SD, WA)", "pages": [68, 78]}
+      ]
+    },
+    {
+      "letter": "B-1",
+      "name": "Table of Contents - Magnuson Cloud PMS Operating Manual",
+      "category": "operations_manual",
+      "priority": "medium",
+      "page_range": [79, 80],
+      "notes": "40-page manual; 8 sections: Setup, Rooms, Channel Manager, Reservations, Rates/Inventory, Payments, Reports, Support"
+    },
+    {
+      "letter": "B-2",
+      "name": "Table of Contents - Magnuson Brand Standards Manual",
+      "category": "operations_manual",
+      "priority": "medium",
+      "page_range": [81, 82],
+      "notes": "12-page manual; 7 sections: Introduction, Service Standards, Building, Guest Rooms, Brand Identity, Technology, Conclusion"
+    },
+    {
+      "letter": "C",
+      "name": "Financial Statements",
+      "category": "financial",
+      "priority": "high",
+      "page_range": [83, 94],
+      "sub_components": [
+        {"name": "Cover and TOC", "pages": [83, 84]},
+        {"name": "Independent Auditor's Report", "pages": [85, 87]},
+        {"name": "Balance Sheets", "pages": [88]},
+        {"name": "Statements of Operations", "pages": [89]},
+        {"name": "Statements of Cash Flows", "pages": [90]},
+        {"name": "Notes to Financial Statements", "pages": [91, 94]}
+      ]
+    },
+    {
+      "letter": "D",
+      "name": "State Agencies / Agents for Service of Process",
+      "category": "regulatory",
+      "priority": "low",
+      "page_range": [95, 99],
+      "notes": "13 states listed: CA, HI, IL, IN, MD, MI, MN, NY, ND, OR, RI, SD, VA, WA, WI"
+    },
+    {
+      "letter": "E-1",
+      "name": "List of Current Franchisees",
+      "category": "franchisee_list",
+      "priority": "high",
+      "page_range": [100, 102],
+      "notes": "11 current franchisees as of Dec 31, 2024 across 8 states. No signed-but-not-open."
+    },
+    {
+      "letter": "E-2",
+      "name": "List of Franchisees Who Left the System",
+      "category": "franchisee_list",
+      "priority": "high",
+      "page_range": [103, 104],
+      "notes": "2 franchisees left in FY2024: 1 TX (terminated post-FY), 1 IL (terminated without opening)"
+    },
+    {
+      "letter": "F",
+      "name": "Representations Statement",
+      "category": "contract",
+      "priority": "medium",
+      "page_range": [105, 107],
+      "notes": "Not to be signed by residents of registration states"
+    },
+    {
+      "letter": "G",
+      "name": "Sample General Release",
+      "category": "contract",
+      "priority": "medium",
+      "page_range": [108, 111],
+      "notes": "Includes CA Section 1542 waiver, MD and WA carve-outs"
+    },
+    {
+      "letter": "H",
+      "name": "State Addenda",
+      "category": "state_addenda",
+      "priority": "high",
+      "page_range": [112, 126],
+      "notes": "Addenda for CA, HI, IL, MD, MN, NY, ND, RI, SD, VA, WA. Fee deferral required in CA, IL, MD, MN, ND, SD, WA."
+    },
+    {
+      "letter": "I",
+      "name": "Receipts",
+      "category": "receipt",
+      "priority": "low",
+      "page_range": [127, 129],
+      "notes": "State effective dates page + dual receipt pages"
+    }
+  ]
+}

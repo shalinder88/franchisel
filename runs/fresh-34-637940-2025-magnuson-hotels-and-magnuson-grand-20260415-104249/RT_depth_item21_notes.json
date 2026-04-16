@@ -1,0 +1,65 @@
+{
+  "targeted_depth_block": "item21_note_walk",
+  "source_pages": [91, 92, 93, 94],
+  "note_families_present": [
+    {"note": 1, "title": "Organization and Nature of Business", "pages": [91]},
+    {"note": 2, "title": "Summary of Significant Accounting Policies", "pages": [91, 92, 93]},
+    {"note": 3, "title": "Franchised Outlets", "pages": [93]},
+    {"note": 4, "title": "Revenues and Related Contract Balances", "pages": [94]},
+    {"note": 5, "title": "Related-Party Transactions", "pages": [94]}
+  ],
+  "accounting_policy_mechanics": {
+    "revenue_recognition": {
+      "framework": "ASC 606 / ASU 2021-02",
+      "franchise_fees": "Allocated between pre-opening activities (recognized when satisfied) and IP access (straight-line over term). Stand-alone selling price estimated via adjusted market assessment approach.",
+      "continuing_fees": "Sales-based; recognized when franchisee sales occur and fee deemed collectible. Entirely related to IP use.",
+      "gds_booking_fees": "Recognized at point-in-time when services rendered",
+      "transfer_fees": "Due when transfer occurs; recognized at point-in-time",
+      "all_2024_revenue_point_in_time": true,
+      "no_over_time_revenue_recognized": true
+    },
+    "contract_costs": "Incremental costs (commissions) capitalized and amortized over franchise agreement term",
+    "depreciation_amortization": "Not applicable — no fixed assets or amortizable intangibles on balance sheet",
+    "impairment": "Not applicable — no long-lived assets",
+    "lease_accounting": "Not applicable — no leases",
+    "advertising_fund": "Not applicable — no advertising fund",
+    "deferred_franchise_fees": "None — no over-time franchise fee revenue in any period"
+  },
+  "parent_affiliate_structure": {
+    "license_agreement": {
+      "counterparty": "Magnuson Company LLC",
+      "date": "January 4, 2022",
+      "term": "99 years unless terminated earlier",
+      "license_fee": "Mutually determined; $0 in all periods (2022-2024)",
+      "note": "No license fee has ever been charged — this is a latent cost that could be activated"
+    },
+    "management_fee": {
+      "counterparty": "Magnuson Company LLC",
+      "arrangement_date": "July 1, 2022",
+      "description": "Administrative services",
+      "2024": 127435,
+      "2023": 85347,
+      "2022": 18740,
+      "as_pct_opex_2024": 0.623,
+      "as_pct_revenue_2024": 0.491
+    }
+  },
+  "tax_structure": {
+    "status": "Disregarded entity (single-member LLC)",
+    "provision": "No income tax provision — all items pass through to member",
+    "framework": "FASB ASC 740",
+    "uncertain_positions": "None at Dec 31, 2024 and 2023",
+    "rate_reconciliation": "Not applicable — disregarded entity"
+  },
+  "subsequent_events": {
+    "evaluation_through": "March 25, 2025",
+    "material_events": "None requiring recognition or additional disclosure",
+    "note": "The post-FY Texas termination is mentioned in Item 20 footnote but not in the financial statement subsequent events note"
+  },
+  "other_material_observations": [
+    "No allowance for doubtful accounts — management assessed all AR as collectible",
+    "Cash declined from $100,444 at beginning of operations to $19,493 at end of 2024",
+    "Member distributions (~$51K) nearly equal net income (~$55K) in 2024 — minimal capital retention",
+    "Entity started with $78,839 in member contributions (2022) and received $12,600 more in 2023; no contributions in 2024"
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "document_identity": {
+    "franchisor_legal_name": "Papa Murphy's International LLC",
+    "brand": "Papa Murphy's",
+    "state_of_formation": "Delaware",
+    "entity_type": "LLC",
+    "address": "8000 NE Parkway Drive, Suite 100, Vancouver, WA 98662",
+    "phone": "(360) 260-7272",
+    "issuance_date": "March 28, 2025, as amended October 10, 2025",
+    "fiscal_year_end": "Monday closest to November 30",
+    "fdd_filing_id": "637938-2025",
+    "state_filed": "WI-DFI",
+    "source_pages": [1, 2],
+    "confidence": "high"
+  },
+  "parent_structure": {
+    "immediate_parent": "Papa Murphy's Company Stores, Inc. (WA corp)",
+    "intermediate_parent": "Papa Murphy's Holdings, Inc. (DE corp)",
+    "guarantor": "MTY Franchising USA, Inc. (TN corp)",
+    "ultimate_parent": "MTY Food Group Inc. (TSX-listed, Canadian)",
+    "acquisition_date": "May 23, 2019",
+    "source_pages": [10, 11],
+    "confidence": "high"
+  },
+  "concept": {
+    "type": "Take-and-bake pizza",
+    "description": "Guests create fresh pizza in-store, take home, bake. No ovens, no delivery, no dining area.",
+    "average_store_size_sqft": 1400,
+    "store_format": "Kitchen Delite",
+    "source_pages": [17, 18],
+    "confidence": "high"
+  },
+  "system_size": {
+    "as_of_date": "December 2, 2024",
+    "franchised_us": 1001,
+    "company_owned_us": 43,
+    "international": 35,
+    "total": 1079,
+    "source_section": "Item 1 / Item 20",
+    "source_pages": [10, 65],
+    "confidence": "high"
+  },
+  "fees": {
+    "initial_franchise_fee": {"amount": 25000, "subsequent": 15000, "source_pages": [27], "confidence": "high"},
+    "royalty": {"rate": 0.05, "basis": "Net Sales", "frequency": "weekly", "breach_rate": 0.15, "source_pages": [29], "confidence": "high"},
+    "brand_marketing_fee": {"rate": 0.02, "basis": "Net Sales", "frequency": "weekly", "source_pages": [29], "confidence": "high"},
+    "local_marketing": {"minimum_rate": 0.05, "minimum_dollar": 2000, "frequency": "monthly", "source_pages": [29], "confidence": "high"},
+    "online_ordering": {"amount": 0.35, "unit": "per transaction", "source_pages": [29], "confidence": "high"},
+    "technology_monthly": {"store_solutions": 51.25, "core_software": 114, "firewall_low": 30, "firewall_high": 90, "payment_gateway": 11, "source_pages": [32], "confidence": "high"},
+    "transfer_fee": {"range_low": 7500, "range_high": 25000, "formula": "sliding scale by years remaining", "source_pages": [30], "confidence": "high"},
+    "successive_franchise_fee": {"formula": "half of then-current franchise fee", "source_pages": [31], "confidence": "high"},
+    "early_termination_damages": {"formula": "(avg monthly royalty+BMF over 12 months in 48 months) × months remaining ÷ 2", "notice_required": "6 months", "source_pages": [32], "confidence": "high"}
+  },
+  "investment": {
+    "total_low": 367428,
+    "total_high": 733124,
+    "leasehold_improvements_low": 139000,
+    "leasehold_improvements_high": 325000,
+    "opening_package_low": 150114,
+    "opening_package_high": 230000,
+    "source_pages": [36, 37],
+    "confidence": "high"
+  },
+  "territory": {
+    "exclusive": false,
+    "protected": false,
+    "franchisor_competition_rights": "Unrestricted — may open competing stores, sell through any channel, use ECS/internet exclusively",
+    "ecs_reserved_to_franchisor": true,
+    "franchisee_internet_marketing": false,
+    "franchisee_social_media": false,
+    "source_pages": [53, 54],
+    "confidence": "high"
+  },
+  "term_and_renewal": {
+    "initial_term_years": 10,
+    "renewal_term_years": 5,
+    "renewal_count": 1,
+    "renewal_conditions": ["6 months notice", "faithful performance", "refurbish/remodel", "sign general release", "sign then-current FA", "pay successive franchise fee", "acceptable location/lease", "attend required training"],
+    "materially_different_terms_risk": true,
+    "source_pages": [58],
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": "No interest in wholesale/retail sale of pizza or products served by Franchised Store",
+    "post_term_radius_miles": 25,
+    "post_term_duration_years": 2,
+    "source_pages": [60],
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "mediation_required": true,
+    "mediation_provider": "United States Arbitration and Mediation Service, Inc.",
+    "mediation_location": "Nearest office to franchisor's Support Center or mutually agreed",
+    "litigation_venue": "Federal or state court in franchisor's principal place of business (WA)",
+    "governing_law": "Washington",
+    "source_pages": [60],
+    "confidence": "high"
+  },
+  "item19": {
+    "fpr_provided": true,
+    "data_type": "Net Sales only (no costs, no EBITDA)",
+    "years": ["2024", "2023", "2022"],
+    "all_stores": {
+      "2024": {"count": 1015, "average": 688133, "median": 616110, "highest": 2397004, "lowest": 178123, "pct_above_avg": 40.2, "top10_avg": 1384981, "bottom10_avg": 311462},
+      "2023": {"count": 1085, "average": 680607, "median": 612750, "highest": 2494897, "lowest": 186428, "pct_above_avg": 40.4, "top10_avg": 1389069, "bottom10_avg": 288383},
+      "2022": {"count": 1102, "average": 666663, "median": 593609, "highest": 2462983, "lowest": 132039, "pct_above_avg": 40.6, "top10_avg": 1384276, "bottom10_avg": 273615}
+    },
+    "regional_breakdown": true,
+    "regions": ["West", "Central", "East"],
+    "substantiation_available": true,
+    "source_pages": [60, 61, 62, 63, 64],
+    "confidence": "high"
+  },
+  "item20": {
+    "system_trajectory": "declining",
+    "franchised_3yr_change": {"start_2022": 1212, "end_2024": 1001, "net_change": -211, "pct_change": -17.4},
+    "terminations_2024": 96,
+    "reacquisitions_2024": 28,
+    "new_openings_2024": 8,
+    "projected_new_franchised": 9,
+    "projected_new_company_owned": 1,
+    "fas_signed_not_opened": 26,
+    "gag_clause": true,
+    "gag_clause_text": "current and former franchisees sign provisions restricting their ability to speak openly about their experience with the Papa Murphy's franchise system",
+    "source_pages": [65, 66, 67, 68, 69, 70, 71, 72],
+    "confidence": "high"
+  },
+  "item21": {
+    "entity": "MTY Franchising USA, Inc.",
+    "auditor": "PricewaterhouseCoopers LLP",
+    "opinion": "unqualified",
+    "going_concern": false,
+    "fy2022_revenue_k": 263686,
+    "fy2022_net_income_k": 19573,
+    "fy2022_total_assets_k": 1182481,
+    "fy2022_equity_k": 235958,
+    "fy2022_goodwill_k": 238060,
+    "fy2022_intangibles_k": 522400,
+    "image_only_pages": [123, 158],
+    "text_readable_pages": [159, 206],
+    "source_pages": [73, 161, 163, 165],
+    "confidence": "medium",
+    "confidence_note": "FY2024/2023 statements are image-only. FY2022 data confirmed from text. Current-year financials not yet extracted."
+  },
+  "special_risks": [
+    {"risk": "Out-of-state dispute resolution", "source_pages": [5], "severity": "medium"},
+    {"risk": "Guarantor liabilities can exceed tangible assets", "source_pages": [5], "severity": "medium"},
+    {"risk": "Maryland: franchisor financial condition calls into question ability to provide services", "source_pages": [278], "severity": "high"},
+    {"risk": "Brand Marketing Fund deficit of $7.5M", "source_pages": [49], "severity": "medium"},
+    {"risk": "System contraction: 17.4% decline in franchised units over 3 years", "source_pages": [65], "severity": "high"},
+    {"risk": "VP Operations (Dan Rudolph) involved in personal bankruptcy via JND Tropics LLC", "source_pages": [27], "severity": "low"},
+    {"risk": "Gag clause on former franchisees", "source_pages": [72], "severity": "medium"}
+  ],
+  "state_addenda": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "source_pages": [275, 276, 277, 278, 279, 280, 281, 282, 283]
+  },
+  "litigation_summary": {
+    "papa_murphys_specific": [
+      {"case": "DTD Pizza / Brink Holdings class action (2014)", "type": "franchisee_claims", "status": "settled/dismissed June 2020", "settlements": "ranged $0 to $4M per group; store buybacks at asset value + $500k", "source_pages": [23]},
+      {"case": "Rob & Bud's Pizza (2015)", "type": "termination_dispute", "status": "settled", "settlements": "PM purchased 9 stores at asset value + $500k", "source_pages": [23]}
+    ],
+    "affiliate_litigation": "Multiple MTY affiliate matters (Extreme Pita, Triune/Baja Fresh, Blimpie, Maui Wowi, SweetFrog) — mostly state registration violations",
+    "source_pages": [23, 24, 25, 26, 27]
+  },
+  "training": {
+    "in_store_hours": 250,
+    "enterprise_solution_hours": "50–75",
+    "foundations_class_hours": 15,
+    "total_approximate_hours": "315–340",
+    "cost": "Included for 2 signers; $750 per additional",
+    "source_pages": [45, 46, 47],
+    "confidence": "high"
+  }
+}

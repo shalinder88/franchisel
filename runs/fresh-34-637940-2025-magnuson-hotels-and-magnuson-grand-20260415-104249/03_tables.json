@@ -1,0 +1,208 @@
+{
+  "tables": [
+    {
+      "table_id": "item6_other_fees",
+      "source_item": 6,
+      "source_pages": [11, 12, 13, 14],
+      "title": "Other Fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Continuing Fee", "amount": "8% of Gross Room Revenue", "due": "Monthly by invoice due date", "remarks": "See Note 2"},
+        {"fee": "GDS Booking Fees", "amount": "$11.50 per GDS booking (subject to change)", "due": "Monthly by invoice due date", "remarks": "Per booking through GDS channels"},
+        {"fee": "Third-Party Distribution Channel Fees", "amount": "10% (GDS), 15-20% (other channels) (subject to change)", "due": "Payable to Third-Party Distribution Channel or reimbursed to franchisor", "remarks": "Reimbursement of all fees, expenses, commissions"},
+        {"fee": "Airbnb Connection Fees", "amount": "$100-$260 per month (subject to change)", "due": "Monthly by invoice due date", "remarks": "Monthly fee for Airbnb platform connection"},
+        {"fee": "Minimum Invoice Revenue", "amount": "$250 per month (subject to change)", "due": "As invoiced", "remarks": "Deficiency payment if aggregate fees fall below minimum; up to 10%/year increase"},
+        {"fee": "Approved PMS Connection Fee", "amount": "$300-$2,000 per year", "due": "As incurred", "remarks": "If using Approved PMS instead of Magnuson Cloud PMS"},
+        {"fee": "Insufficient Funds Fee", "amount": "$25 per occurrence", "due": "As invoiced", "remarks": "For returned/declined payments"},
+        {"fee": "Late Payment Fee", "amount": "5% per occurrence + 1.5%/month", "due": "As incurred", "remarks": "On overdue amounts; max rate per law"},
+        {"fee": "Conversion Violation", "amount": "$1,000 per month", "due": "Monthly by invoice due date", "remarks": "Failure to convert by deadline"},
+        {"fee": "Standards Violation", "amount": "$2,000 per month", "due": "Monthly by invoice due date", "remarks": "Non-compliance with Brand Standards"},
+        {"fee": "Re-booking Fee / Guest Relations", "amount": "200% of booking fee or alternate accommodation cost (whichever higher)", "due": "As incurred", "remarks": "Failure to honor confirmed reservation; includes guest complaint reimbursement"},
+        {"fee": "Failed Inspection Fee", "amount": "$2,500 (subject to change) + follow-up costs", "due": "As incurred", "remarks": "Violations of Brand Standards found on inspection"},
+        {"fee": "Insurance Certificate Fee", "amount": "$250 per month", "due": "As incurred", "remarks": "Failure to provide insurance certificates"},
+        {"fee": "Audit Costs", "amount": "Reimbursement of all audit costs", "due": "As incurred", "remarks": "If understatement of Gross Room Revenue"},
+        {"fee": "Enforcement Costs and Attorneys' Fees", "amount": "Varies", "due": "As incurred", "remarks": "Prevailing party entitled to costs"},
+        {"fee": "Re-Activation Fee", "amount": "$750 per occurrence + $25/day offline (subject to change)", "due": "As invoiced", "remarks": "Re-activation after service suspension; up to 10%/year increase"},
+        {"fee": "Extended Closure Fee", "amount": "$750 per occurrence + $25/day offline (subject to change)", "due": "As incurred", "remarks": "Guest Room out of inventory >14 days without authorization; up to 10%/year increase"},
+        {"fee": "Indemnification", "amount": "Varies", "due": "As incurred", "remarks": "Claims/damages from hotel operation"},
+        {"fee": "Termination Damages", "amount": "Varies", "due": "Within 10 days of termination", "remarks": "Continuing fees from termination to earlier of (i) term expiration or (ii) 1 year"},
+        {"fee": "Inconvenience Fee", "amount": "$2,000 (subject to change, up to $5,000)", "due": "As incurred", "remarks": "Closure/termination with <90 days notice"},
+        {"fee": "De-Identification Processing Fee", "amount": "$9,995 (subject to change)", "due": "As incurred", "remarks": "If de-identification not completed within 30 days"}
+      ],
+      "table_notes": [
+        "1. All fees imposed and collected by and payable to franchisor except as noted. Nonrefundable unless otherwise noted. Franchisor may negotiate fees.",
+        "2. Must report all Gross Room Revenue on PMS including walk-in/cash. If misreported, fees calculated at 110% of 3-month average."
+      ]
+    },
+    {
+      "table_id": "item7_initial_investment",
+      "source_item": 7,
+      "source_pages": [15, 16, 17],
+      "title": "Estimated Initial Investment",
+      "columns": ["Type of Expenditure", "Amount", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Initial Franchise Fee", "amount_low": 10000, "amount_high": 10000, "method": "Lump Sum", "when": "Upon signing", "to_whom": "Franchisor"},
+        {"type": "Signage and Branded Supplies", "amount_low": 3000, "amount_high": 40000, "method": "As incurred", "when": "Before opening", "to_whom": "Suppliers"},
+        {"type": "Insurance", "amount_low": 10000, "amount_high": 40000, "method": "As incurred", "when": "Before opening", "to_whom": "Insurance carriers"},
+        {"type": "Professional Fees", "amount_low": 2000, "amount_high": 10000, "method": "As incurred", "when": "Before opening", "to_whom": "Attorneys and accountants"},
+        {"type": "Additional Funds - 3 Months", "amount_low": 150000, "amount_high": 300000, "method": "As incurred", "when": "Before opening", "to_whom": "Suppliers, consultants, banks, etc."}
+      ],
+      "totals": {"low": 175000, "high": 400000},
+      "table_notes": [
+        "1. Conversion model — excludes real estate, rent, security deposits, occupancy costs, and existing hotel operating costs.",
+        "2. Signage costs vary by location, type, quantity, size, specifications, condition, labor costs.",
+        "3. Insurance costs depend on policy limits, assets, revenue, employees, location. May not incur additional if existing coverage sufficient.",
+        "4. Professional fees for attorney/accountant; does not include business consultants.",
+        "5. First 3 months operating expenses: wages, utilities, payroll taxes, supplies, maintenance, working capital.",
+        "6. Estimates based on 60 Guest Room hotel. Neither franchisor nor affiliates offer financing."
+      ]
+    },
+    {
+      "table_id": "item20_table1_systemwide",
+      "source_item": 20,
+      "source_pages": [35],
+      "title": "Systemwide Outlet Summary for Years 2022 to 2024",
+      "columns": ["Type", "Year", "Hotels at Start of Year", "Hotels at End of Year", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 0, "end": 4, "net_change": 4},
+        {"type": "Franchised", "year": 2023, "start": 4, "end": 9, "net_change": 5},
+        {"type": "Franchised", "year": 2024, "start": 9, "end": 11, "net_change": 2},
+        {"type": "Company-Owned", "year": 2022, "start": 0, "end": 0, "net_change": 0},
+        {"type": "Company-Owned", "year": 2023, "start": 0, "end": 0, "net_change": 0},
+        {"type": "Company-Owned", "year": 2024, "start": 0, "end": 0, "net_change": 0}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_table2_transfers",
+      "source_item": 20,
+      "source_pages": [35],
+      "title": "Transfers of Hotels to New Owners for Years 2022 to 2024",
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        {"state": "All States", "year": 2022, "transfers": 0},
+        {"state": "All States", "year": 2023, "transfers": 0},
+        {"state": "All States", "year": 2024, "transfers": 0}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_table3_franchised_status",
+      "source_item": 20,
+      "source_pages": [35, 36],
+      "title": "Status of Franchised Hotels for Years 2022 to 2024",
+      "columns": ["State", "Year", "Outlets at Start", "Outlets Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Operations Other", "Outlets at End"],
+      "rows": [
+        {"state": "Arkansas", "year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+        {"state": "Arkansas", "year": 2023, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Arkansas", "year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Florida", "year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+        {"state": "Florida", "year": 2023, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+        {"state": "Florida", "year": 2024, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Illinois", "year": 2022, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Illinois", "year": 2023, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Illinois", "year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Kentucky", "year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+        {"state": "Kentucky", "year": 2023, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Kentucky", "year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Michigan", "year": 2022, "start": 0, "opened": 2, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 2},
+        {"state": "Michigan", "year": 2023, "start": 2, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 2},
+        {"state": "Michigan", "year": 2024, "start": 2, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 3},
+        {"state": "Ohio", "year": 2022, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Ohio", "year": 2023, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Ohio", "year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Texas", "year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+        {"state": "Texas", "year": 2023, "start": 0, "opened": 2, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 2},
+        {"state": "Texas", "year": 2024, "start": 2, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 2, "note": "Raw text shows 21 but should be 2 per context. 1 TX franchisee terminated post-FY."},
+        {"state": "Utah", "year": 2022, "start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+        {"state": "Utah", "year": 2023, "start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+        {"state": "Utah", "year": 2024, "start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1}
+      ],
+      "table_notes": [
+        "1. Since the end of our most recent fiscal year, one franchisee in Texas terminated its franchise."
+      ]
+    },
+    {
+      "table_id": "item20_table4_company_owned",
+      "source_item": 20,
+      "source_pages": [36],
+      "title": "Status of Company-Owned Hotels for Years 2022 to 2024",
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        {"state": "All States", "year": 2022, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+        {"state": "All States", "year": 2023, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+        {"state": "All States", "year": 2024, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_table5_projected",
+      "source_item": 20,
+      "source_pages": [37],
+      "title": "Projected Openings for 2025",
+      "columns": ["State", "FA Signed Not Open", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        {"state": "All States", "signed_not_open": 0, "projected_franchised": 0, "projected_company": 0}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "exhibit_c_balance_sheet",
+      "source_item": 21,
+      "source_pages": [88],
+      "title": "Balance Sheets - December 31, 2024 and 2023",
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"item": "Cash", "y2024": 19493, "y2023": 13794},
+        {"item": "Accounts receivable", "y2024": 10673, "y2023": 14221},
+        {"item": "Prepaid expenses and other current assets", "y2024": 720, "y2023": 0},
+        {"item": "TOTAL ASSETS", "y2024": 30886, "y2023": 28015},
+        {"item": "Accounts payable and accrued expenses", "y2024": 6051, "y2023": 7458},
+        {"item": "Member's equity", "y2024": 24835, "y2023": 20557},
+        {"item": "TOTAL LIABILITIES AND MEMBER'S EQUITY", "y2024": 30886, "y2023": 28015}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "exhibit_c_income_statement",
+      "source_item": 21,
+      "source_pages": [89],
+      "title": "Statements of Operations and Changes in Member's Equity",
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"item": "Continuing fees", "y2024": 259560, "y2023": 173198, "y2022": 18128},
+        {"item": "Franchise fees", "y2024": 0, "y2023": 0, "y2022": 10000},
+        {"item": "Total revenues", "y2024": 259560, "y2023": 173198, "y2022": 28128},
+        {"item": "Operating expenses", "y2024": 204483, "y2023": 137230, "y2022": 84176},
+        {"item": "Net income (loss)", "y2024": 55077, "y2023": 35968, "y2022": -56048},
+        {"item": "Member's equity - beginning", "y2024": 20557, "y2023": 22791, "y2022": 0},
+        {"item": "Member contributions", "y2024": 0, "y2023": 12600, "y2022": 78839},
+        {"item": "Member distributions", "y2024": -50799, "y2023": -50802, "y2022": 0},
+        {"item": "MEMBER'S EQUITY - ENDING", "y2024": 24835, "y2023": 20557, "y2022": 22791}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "exhibit_c_cash_flow",
+      "source_item": 21,
+      "source_pages": [90],
+      "title": "Statements of Cash Flows",
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"item": "Net income (loss)", "y2024": 55077, "y2023": 35968, "y2022": -56048},
+        {"item": "Accounts receivable change", "y2024": 3549, "y2023": -8983, "y2022": -5238},
+        {"item": "Prepaid expenses change", "y2024": -720, "y2023": 0, "y2022": 0},
+        {"item": "AP and accrued expenses change", "y2024": -1408, "y2023": -485, "y2022": -13662},
+        {"item": "Due to member change", "y2024": 0, "y2023": -441, "y2022": 13041},
+        {"item": "Net cash from operations", "y2024": 56498, "y2023": 26059, "y2022": -61907},
+        {"item": "Member distributions", "y2024": -50799, "y2023": -50802, "y2022": 0},
+        {"item": "Net increase (decrease) in cash", "y2024": 5699, "y2023": -24743, "y2022": -61907},
+        {"item": "Cash - beginning", "y2024": 13794, "y2023": 38537, "y2022": 100444},
+        {"item": "Cash - ending", "y2024": 19493, "y2023": 13794, "y2022": 38537}
+      ],
+      "table_notes": [
+        "Non-cash: Member contributions reclassified from due to member: $0 (2024), $12,600 (2023), $0 (2022)"
+      ]
+    }
+  ]
+}

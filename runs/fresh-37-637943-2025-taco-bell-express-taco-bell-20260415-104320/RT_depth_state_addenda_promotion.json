@@ -1,0 +1,40 @@
+{
+  "depth_pass": "4_state_addenda_structured_promotion",
+  "states_with_addenda": ["California", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington", "Wisconsin"],
+  "overrides": [
+    {"state": "California", "affected_family": "termination", "override_summary": "CA Franchise Relations Act §20025 requires 180-day written notice for non-renewal", "why_it_matters": "Licensee gets 6 months notice before non-renewal, longer than default agreement provides", "source_pages": [140]},
+    {"state": "California", "affected_family": "damages", "override_summary": "CA Civil Code §1671: certain liquidated damages clauses unenforceable", "why_it_matters": "$100K minimum liquidated damages may not be enforceable in CA", "source_pages": [140]},
+    {"state": "California", "affected_family": "general_release", "override_summary": "CA Corp Code §31512 voids waiver of rights under Franchise Investment Law; Bus & Prof Code §20010 voids waiver under Franchise Relations Act", "why_it_matters": "General release on renewal/transfer cannot waive state franchise law claims", "source_pages": [140]},
+    {"state": "California", "affected_family": "anti_waiver", "override_summary": "No questionnaire/acknowledgment can waive franchise law claims or disclaim reliance on franchisor statements", "why_it_matters": "Protects licensee's right to rely on franchisor representations", "source_pages": [140]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Illinois law governs interpretation and enforcement of License Agreement for IL licensees", "why_it_matters": "Overrides NY choice of law — IL law controls for IL-based licensees", "source_pages": [142]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Forum selection clause designating Orange County CA is VOID for IL causes of action", "why_it_matters": "IL licensees can sue in Illinois, not forced to go to California", "source_pages": [142]},
+    {"state": "Illinois", "affected_family": "anti_waiver", "override_summary": "No questionnaire/acknowledgment can waive franchise law claims or disclaim reliance", "why_it_matters": "Standard anti-waiver protection", "source_pages": [142]},
+    {"state": "Indiana", "affected_family": "forum_selection", "override_summary": "Indiana Code §23-2-2.7-1(10): unlawful to limit litigation in any manner", "why_it_matters": "IN licensees cannot be forced to litigate in CA", "source_pages": [143]},
+    {"state": "Indiana", "affected_family": "anti_waiver", "override_summary": "No questionnaire/acknowledgment can waive franchise law claims or disclaim reliance", "why_it_matters": "Standard anti-waiver protection", "source_pages": [143]},
+    {"state": "Michigan", "affected_family": "general_release", "override_summary": "MI prohibits certain unfair franchise provisions; such provisions are void", "why_it_matters": "Any unfair provisions in franchise documents are automatically void", "source_pages": [146]},
+    {"state": "Minnesota", "affected_family": "notice_cure", "override_summary": "90-day notice of termination with 60-day cure required", "why_it_matters": "More protection than default 30-day cure — licensee gets 90 days notice and 60 days to fix", "source_pages": [148]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "180-day notice required for non-renewal", "why_it_matters": "6 months advance notice before license non-renewal", "source_pages": [148]},
+    {"state": "Minnesota", "affected_family": "damages", "override_summary": "Liquidated damage provisions are VOID in Minnesota", "why_it_matters": "$100K+ liquidated damages clause is completely unenforceable in MN", "source_pages": [148]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Franchisor cannot require litigation outside Minnesota (Minn. Stat. §80c.21, Rule 2860.4400j)", "why_it_matters": "MN licensees cannot be forced to litigate in CA", "source_pages": [148]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "General release provisions prohibited (MN Rule 2860.4400D)", "why_it_matters": "Cannot be required to sign general release on renewal/transfer", "source_pages": [148]},
+    {"state": "Minnesota", "affected_family": "trademark_indemnification", "override_summary": "Franchisor must indemnify MN licensees against third-party trademark infringement claims", "why_it_matters": "If sued for trademark infringement due to using Taco Bell marks, franchisor covers costs", "source_pages": [148]},
+    {"state": "New York", "affected_family": "termination", "override_summary": "Licensee may terminate on any grounds available by law (replaces 'termination by licensee = default' provision)", "why_it_matters": "NY licensees can exit without it automatically being treated as a breach with $100K damages", "source_pages": [150]},
+    {"state": "New York", "affected_family": "general_release", "override_summary": "NY GBL Article 33 rights preserved; §687(4) and §687(5) non-waiver provisions apply", "why_it_matters": "Renewal/transfer conditions cannot override NY franchise law protections", "source_pages": [150]},
+    {"state": "New York", "affected_family": "governing_law", "override_summary": "Choice of law does not waive NY General Business Law Article 33 rights", "why_it_matters": "Even with NY governing law, NY-specific franchise protections remain", "source_pages": [150]},
+    {"state": "New York", "affected_family": "anti_waiver", "override_summary": "No questionnaire/acknowledgment can waive franchise law claims or disclaim reliance", "why_it_matters": "Standard anti-waiver protection", "source_pages": [151]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "ND Securities Commissioner: certain franchise agreement provisions voided per ND Franchise Investment Law §51-19-09", "why_it_matters": "Multiple franchise agreement provisions may be unenforceable in ND", "source_pages": [152]},
+    {"state": "Washington", "affected_family": "damages", "override_summary": "Attorneys' fees provision applies ONLY if franchisor is the prevailing party", "why_it_matters": "One-directional attorneys' fees — franchisor cannot collect if licensee prevails", "source_pages": [156]},
+    {"state": "Wisconsin", "affected_family": "anti_waiver", "override_summary": "No questionnaire/acknowledgment can waive franchise law claims or disclaim reliance", "why_it_matters": "Standard anti-waiver protection", "source_pages": [157]}
+  ],
+  "summary_table": {
+    "forum_selection_voided": ["Illinois", "Indiana", "Minnesota"],
+    "governing_law_overridden": ["Illinois", "New York"],
+    "liquidated_damages_void_or_limited": ["California", "Minnesota"],
+    "general_release_prohibited_or_limited": ["California", "Michigan", "Minnesota", "New York", "North Dakota"],
+    "termination_notice_extended": ["California (180 days non-renewal)", "Minnesota (90 days termination, 180 days non-renewal)"],
+    "licensee_termination_right_restored": ["New York"],
+    "anti_waiver_protection": ["California", "Illinois", "Indiana", "New York", "Wisconsin"],
+    "trademark_indemnification": ["Minnesota"],
+    "attorneys_fees_limited": ["Washington"]
+  }
+}

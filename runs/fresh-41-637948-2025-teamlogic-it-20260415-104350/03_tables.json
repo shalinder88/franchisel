@@ -1,0 +1,334 @@
+{
+  "extraction_meta": {
+    "fdd_id": "637948-2025",
+    "brand": "TeamLogic IT",
+    "extracted": "2026-04-16"
+  },
+  "tables": [
+    {
+      "table_id": "item5_initial_fees",
+      "source_item": 5,
+      "source_pages": [10],
+      "title": "Initial Franchise Fees",
+      "columns": ["Fee Type", "Amount"],
+      "rows": [
+        {"Fee Type": "Standard Initial Franchise Fee", "Amount": "$49,500"},
+        {"Fee Type": "VetFran Discount Fee", "Amount": "$40,000"},
+        {"Fee Type": "Multiple Franchise Fee", "Amount": "$49,500"},
+        {"Fee Type": "Conversion Franchise Fee", "Amount": "$49,500"}
+      ],
+      "table_notes": [
+        "Non-refundable, fully earned upon execution.",
+        "Fee covers training for up to 2 people including transportation, 1 hotel room (double occupancy), some meals.",
+        "Refund if franchisee fails training: franchise fee less direct costs ($2,500-$38,000 range)."
+      ],
+      "provenance": "Item 5, page 10 of PDF"
+    },
+    {
+      "table_id": "item6_other_fees",
+      "source_item": 6,
+      "source_pages": [11, 12, 13, 14],
+      "title": "Other Fees",
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Fee Type": "Continuing Franchise Fee (CFF)", "Amount": "7% of Gross Sales; min $1,000/mo after month 12", "Due Date": "Monthly; EFT", "Remarks": "No minimums first 12 months"},
+        {"Fee Type": "Advertising Fund", "Amount": "Greater of 1.2% of gross sales or $200/mo", "Due Date": "Monthly; EFT", "Remarks": "None first 12 months"},
+        {"Fee Type": "ACA Fee", "Amount": "$0-$500/month", "Due Date": "Defined by ACA", "Remarks": "Optional; no ACA currently exists"},
+        {"Fee Type": "RMM Managed Services", "Amount": "$3-$6/agent/month", "Due Date": "Monthly; EFT", "Remarks": "Min 3 agents required"},
+        {"Fee Type": "Additional Training", "Amount": "$1,000/person", "Due Date": "At time of training", "Remarks": "Beyond 2 people; trainee pays own travel/hotel/meals"},
+        {"Fee Type": "Multi-Factor Authentication Tool", "Amount": "$0-$30/month", "Due Date": "Monthly", "Remarks": "Paid to various vendors"},
+        {"Fee Type": "Software & Technology - PSA Tools", "Amount": "$175-$225/month", "Due Date": "Monthly", "Remarks": "Payable to franchisor and vendors"},
+        {"Fee Type": "Software & Technology - Anti-Virus", "Amount": "$1-$2/month", "Due Date": "Monthly", "Remarks": ""},
+        {"Fee Type": "Software & Technology - Office Suite", "Amount": "$35/month", "Due Date": "Monthly", "Remarks": ""},
+        {"Fee Type": "Software & Technology - Email Service", "Amount": "$24/user/month", "Due Date": "Monthly", "Remarks": ""},
+        {"Fee Type": "Software & Technology - QuickBooks Online", "Amount": "$100-$150/month", "Due Date": "Monthly", "Remarks": ""},
+        {"Fee Type": "Software & Technology - Process Automation", "Amount": "$150/month", "Due Date": "Monthly", "Remarks": ""},
+        {"Fee Type": "Transfer Fee", "Amount": "$10,000", "Due Date": "Before transfer", "Remarks": "No charge for immediate family actively participating"},
+        {"Fee Type": "Audit Fee", "Amount": "$0-$3,500", "Due Date": "On demand", "Remarks": "Only if >2% understatement for any 2-month period"},
+        {"Fee Type": "Late Payment Interest", "Amount": "10%/year or max legal rate", "Due Date": "As incurred", "Remarks": "On fees >5 days late"},
+        {"Fee Type": "Late Fee", "Amount": "$250 + 1.5%/month interest", "Due Date": "On demand", "Remarks": ""},
+        {"Fee Type": "Failure to Report Sales", "Amount": "$250/week", "Due Date": "On demand", "Remarks": ""},
+        {"Fee Type": "Insufficient Funds Fee", "Amount": "$250", "Due Date": "On demand", "Remarks": ""},
+        {"Fee Type": "Collection Costs", "Amount": "Actual costs", "Due Date": "As incurred", "Remarks": "Including reasonable attorney fees"},
+        {"Fee Type": "Renewal Fee", "Amount": "$2,000", "Due Date": "At renewal signing", "Remarks": "Must be in full compliance"},
+        {"Fee Type": "Custom Domain Names", "Amount": "$0-$40/year", "Due Date": "As appropriate", "Remarks": "Owned by franchisor"},
+        {"Fee Type": "Local Marketing", "Amount": "$2,500/month minimum", "Due Date": "Monthly; paid to vendors", "Remarks": "Not including Ad Fund fees; entire contract term"}
+      ],
+      "table_notes": [
+        "(1) CFF = 7% of Gross Sales. Gross Sales includes all services and installation, Core and Non-Core. Excludes Product sales and sales tax.",
+        "(2) $2,500/month additional local marketing required for length of contract.",
+        "(3) RMM agents based on volume; must be purchased from franchisor. Min 3 agents in Business.",
+        "(8) Conversion franchise CFF waived on average existing Gross Sales for first 12 months.",
+        "(9) Software/tech fees subject to change; portion payable to franchisor.",
+        "(10) Local marketing includes LoyaltyLoop."
+      ],
+      "provenance": "Item 6, pages 11-14 of PDF"
+    },
+    {
+      "table_id": "item7_initial_investment",
+      "source_item": 7,
+      "source_pages": [14, 15],
+      "title": "Estimated Initial Investment",
+      "columns": ["Type of Expenditure", "Amount Low", "Amount High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"Type of Expenditure": "Initial Franchise Fee", "Amount Low": "$40,000", "Amount High": "$49,500", "Method of Payment": "Lump sum", "When Due": "Upon execution", "To Whom": "Franchisor"},
+        {"Type of Expenditure": "Help Desk Service Fee", "Amount Low": "$1,200", "Amount High": "$1,200", "Method of Payment": "One-time + monthly", "When Due": "One-time setup", "To Whom": "Vendor"},
+        {"Type of Expenditure": "Vehicle Lease and Graphics", "Amount Low": "$100", "Amount High": "$3,450", "Method of Payment": "Lease/lump sum", "When Due": "As agreed", "To Whom": "Approved vendor"},
+        {"Type of Expenditure": "Initial Equipment", "Amount Low": "$6,750", "Amount High": "$10,600", "Method of Payment": "Lump sum", "When Due": "Prior to opening", "To Whom": "Various suppliers"},
+        {"Type of Expenditure": "Real Estate Leasehold/Rent", "Amount Low": "$900", "Amount High": "$1,900", "Method of Payment": "As incurred", "When Due": "As agreed", "To Whom": "Lessor"},
+        {"Type of Expenditure": "Additional Funds (10-12 months)", "Amount Low": "$60,540", "Amount High": "$78,092", "Method of Payment": "As incurred", "When Due": "As agreed", "To Whom": "Various"},
+        {"Type of Expenditure": "TOTAL", "Amount Low": "$109,490", "Amount High": "$144,742", "Method of Payment": "", "When Due": "", "To Whom": ""}
+      ],
+      "table_notes": [
+        "(1) VetFran discount: $40,000. Standard/conversion: $49,500. Includes training for 2.",
+        "(2) Vehicle optional but graphics required within 30 days.",
+        "(3) Equipment: 3 laptops, 3 monitors, 3 smartphones, phone system. Software $6,750-$10,600.",
+        "(4) Office space required in territory.",
+        "(5) Additional funds: 10-12 month estimate covering wages, insurance, marketing, dues, software ($2,100-$3,500), operating capital.",
+        "(6) Estimates only. Personal living expenses not included. No franchisor financing."
+      ],
+      "provenance": "Item 7, pages 14-15 of PDF"
+    },
+    {
+      "table_id": "item19_gross_revenue_quartiles",
+      "source_item": 19,
+      "source_pages": [31],
+      "title": "Gross Revenues for 2024 by Quartile",
+      "columns": ["Quartile", "Number of Qualified Franchisees", "Highest Gross Revenue", "Lowest Gross Revenue", "Average Gross Revenue", "# Exceeding Average", "% Exceeding Average", "Median Gross Revenue"],
+      "rows": [
+        {"Quartile": "1st", "Number of Qualified Franchisees": 41, "Highest Gross Revenue": "$22,416,140", "Lowest Gross Revenue": "$1,504,673", "Average Gross Revenue": "$3,340,422", "# Exceeding Average": 9, "% Exceeding Average": "22%", "Median Gross Revenue": "$2,393,334"},
+        {"Quartile": "2nd", "Number of Qualified Franchisees": 40, "Highest Gross Revenue": "$1,494,536", "Lowest Gross Revenue": "$694,133", "Average Gross Revenue": "$1,004,197", "# Exceeding Average": 17, "% Exceeding Average": "43%", "Median Gross Revenue": "$907,858"},
+        {"Quartile": "3rd", "Number of Qualified Franchisees": 40, "Highest Gross Revenue": "$663,710", "Lowest Gross Revenue": "$345,884", "Average Gross Revenue": "$462,720", "# Exceeding Average": 18, "% Exceeding Average": "45%", "Median Gross Revenue": "$450,904"},
+        {"Quartile": "4th", "Number of Qualified Franchisees": 40, "Highest Gross Revenue": "$343,238", "Lowest Gross Revenue": "$13,813", "Average Gross Revenue": "$209,711", "# Exceeding Average": 22, "% Exceeding Average": "55%", "Median Gross Revenue": "$222,300"}
+      ],
+      "table_notes": [
+        "161 qualified franchisees (24+ months operating, reported Gross Revenue). 262 businesses total.",
+        "Total network sales $204M from qualified franchisees; $206M system-wide.",
+        "31 franchisees <24 months excluded; 3 closed during period excluded.",
+        "Average tenure of qualified franchisees: 7.46 years.",
+        "Multi-territory concentration in Q1: 27 of 41 operate multiple businesses; 16 operate 3+.",
+        "Gross Revenue includes all services, managed services, product resale, projects, commissions. Excludes freight and sales tax.",
+        "No cost data disclosed. No EBITDA or profitability information."
+      ],
+      "provenance": "Item 19, pages 31-33 of PDF"
+    },
+    {
+      "table_id": "item20_table1_system_summary",
+      "source_item": 20,
+      "source_pages": [33],
+      "title": "System-wide Outlet Summary 2022-2024",
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": 2022, "Start of Year": 243, "End of Year": 266, "Net Change": "+23"},
+        {"Outlet Type": "Franchised", "Year": 2023, "Start of Year": 266, "End of Year": 282, "Net Change": "+16"},
+        {"Outlet Type": "Franchised", "Year": 2024, "Start of Year": 282, "End of Year": 311, "Net Change": "+29"},
+        {"Outlet Type": "Company-Owned", "Year": 2022, "Start of Year": 0, "End of Year": 0, "Net Change": "0"},
+        {"Outlet Type": "Company-Owned", "Year": 2023, "Start of Year": 0, "End of Year": 0, "Net Change": "0"},
+        {"Outlet Type": "Company-Owned", "Year": 2024, "Start of Year": 0, "End of Year": 0, "Net Change": "0"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20 Table 1, page 33 of PDF"
+    },
+    {
+      "table_id": "item20_table2_transfers",
+      "source_item": 20,
+      "source_pages": [34],
+      "title": "Transfers of Outlets from Franchisees to New Owners 2022-2024",
+      "columns": ["State", "2022", "2023", "2024"],
+      "rows": [
+        {"State": "Arizona", "2022": 3, "2023": 0, "2024": 3},
+        {"State": "Colorado", "2022": 2, "2023": 6, "2024": 0},
+        {"State": "Florida", "2022": 1, "2023": 2, "2024": 1},
+        {"State": "Indiana", "2022": 0, "2023": 0, "2024": 1},
+        {"State": "New Jersey", "2022": 0, "2023": 1, "2024": 0},
+        {"State": "North Carolina", "2022": 4, "2023": 0, "2024": 0},
+        {"State": "Tennessee", "2022": 1, "2023": 1, "2024": 0},
+        {"State": "Texas", "2022": 2, "2023": 0, "2024": 0},
+        {"State": "Wisconsin", "2022": 0, "2023": 0, "2024": 1},
+        {"State": "Total", "2022": 13, "2023": 10, "2024": 6}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20 Table 2, page 34 of PDF"
+    },
+    {
+      "table_id": "item20_table3_franchised_status_summary",
+      "source_item": 20,
+      "source_pages": [35, 36, 37, 38, 39],
+      "title": "Status of Franchised Outlets — System Totals 2022-2024",
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        {"Year": 2022, "Start": 243, "Opened": 29, "Terminations": 0, "Non-Renewals": 1, "Reacquired": 0, "Ceased Other": 5, "End": 266},
+        {"Year": 2023, "Start": 266, "Opened": 20, "Terminations": 0, "Non-Renewals": 0, "Reacquired": 0, "Ceased Other": 4, "End": 282},
+        {"Year": 2024, "Start": 282, "Opened": 34, "Terminations": 0, "Non-Renewals": 2, "Reacquired": 0, "Ceased Other": 3, "End": 311}
+      ],
+      "table_notes": [
+        "Includes US total + 1 Canada location (unchanged all 3 years).",
+        "Zero terminations in all 3 years.",
+        "Very low attrition rate: 6/266=2.3% (2022), 4/282=1.4% (2023), 5/311=1.6% (2024)."
+      ],
+      "provenance": "Item 20 Table 3, pages 35-39 of PDF"
+    },
+    {
+      "table_id": "item20_table4_company_owned",
+      "source_item": 20,
+      "source_pages": [40],
+      "title": "Status of Company-Owned Outlets 2022-2024",
+      "columns": ["Year", "Start", "Opened", "Reacquired", "Closed", "Sold", "End"],
+      "rows": [
+        {"Year": 2022, "Start": 0, "Opened": 0, "Reacquired": 0, "Closed": 0, "Sold": 0, "End": 0},
+        {"Year": 2023, "Start": 0, "Opened": 0, "Reacquired": 0, "Closed": 0, "Sold": 0, "End": 0},
+        {"Year": 2024, "Start": 0, "Opened": 0, "Reacquired": 0, "Closed": 0, "Sold": 0, "End": 0}
+      ],
+      "table_notes": ["No company-owned outlets in any period."],
+      "provenance": "Item 20 Table 4, page 40 of PDF"
+    },
+    {
+      "table_id": "item20_table5_projected_openings",
+      "source_item": 20,
+      "source_pages": [40],
+      "title": "Projected Openings as of December 31, 2024",
+      "columns": ["Metric", "Count"],
+      "rows": [
+        {"Metric": "Franchise Agreements Signed But Not Opened", "Count": 2},
+        {"Metric": "Projected New Franchised Outlets (2025)", "Count": 44},
+        {"Metric": "Projected New Company-Owned (2025)", "Count": 0}
+      ],
+      "table_notes": ["Signed but not opened: 1 Colorado, 1 Pennsylvania. Projected openings across ~20 states."],
+      "provenance": "Item 20 Table 5, page 40 of PDF"
+    },
+    {
+      "table_id": "item21_balance_sheet",
+      "source_item": 21,
+      "source_pages": [56],
+      "title": "Balance Sheets — December 31, 2024, 2023, 2022",
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Cash and Cash Equivalents", "2024": "$1,897,000", "2023": "$1,771,000", "2022": "$2,006,000"},
+        {"Line Item": "Accounts Receivable, Net", "2024": "$1,633,000", "2023": "$1,379,000", "2022": "$1,158,000"},
+        {"Line Item": "Deferred Franchise Costs (Current)", "2024": "$355,000", "2023": "$315,000", "2022": "$294,000"},
+        {"Line Item": "Prepaid Expenses", "2024": "$185,000", "2023": "$147,000", "2022": "$130,000"},
+        {"Line Item": "Total Current Assets", "2024": "$4,070,000", "2023": "$3,612,000", "2022": "$3,588,000"},
+        {"Line Item": "Property and Equipment, Net", "2024": "$700,000", "2023": "$723,000", "2022": "$181,000"},
+        {"Line Item": "Deferred Franchise Costs (Non-Current)", "2024": "$1,701,000", "2023": "$1,417,000", "2022": "$1,463,000"},
+        {"Line Item": "Total Assets", "2024": "$6,471,000", "2023": "$5,752,000", "2022": "$5,232,000"},
+        {"Line Item": "Accounts Payable and Accrued Expenses", "2024": "$681,000", "2023": "$502,000", "2022": "$465,000"},
+        {"Line Item": "Deferred Revenue (Current)", "2024": "$134,000", "2023": "$50,000", "2022": "$180,000"},
+        {"Line Item": "Income Taxes Payable", "2024": "$123,000", "2023": "$120,000", "2022": "$138,000"},
+        {"Line Item": "Total Current Liabilities", "2024": "$938,000", "2023": "$672,000", "2022": "$783,000"},
+        {"Line Item": "Due to Affiliates", "2024": "$521,000", "2023": "$441,000", "2022": "$675,000"},
+        {"Line Item": "Deferred Revenue (Non-Current)", "2024": "$41,000", "2023": "$0", "2022": "$0"},
+        {"Line Item": "Total Liabilities", "2024": "$1,500,000", "2023": "$1,113,000", "2022": "$1,458,000"},
+        {"Line Item": "Retained Earnings", "2024": "$4,971,000", "2023": "$4,639,000", "2022": "$3,774,000"},
+        {"Line Item": "Total Stockholder's Equity", "2024": "$4,971,000", "2023": "$4,639,000", "2022": "$3,774,000"},
+        {"Line Item": "Total Liabilities + Equity", "2024": "$6,471,000", "2023": "$5,752,000", "2022": "$5,232,000"}
+      ],
+      "table_notes": ["Common stock $0.01 par value, 1,000 shares authorized/issued/outstanding. Additional paid-in capital: $0."],
+      "provenance": "Exhibit A, page 56 of PDF"
+    },
+    {
+      "table_id": "item21_income_statement",
+      "source_item": 21,
+      "source_pages": [57],
+      "title": "Statements of Operations — Years Ended December 31, 2024, 2023, 2022",
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Continuing Franchise Fees", "2024": "$10,209,000", "2023": "$8,962,000", "2022": "$7,443,000"},
+        {"Line Item": "Initial, Transfer, and Renewal Fees", "2024": "$1,507,000", "2023": "$793,000", "2022": "$1,374,000"},
+        {"Line Item": "Managed Services and Other Revenues", "2024": "$6,801,000", "2023": "$6,136,000", "2022": "$5,297,000"},
+        {"Line Item": "Franchise Advertising Contributions", "2024": "$1,764,000", "2023": "$1,659,000", "2022": "$1,293,000"},
+        {"Line Item": "Total Revenue", "2024": "$20,281,000", "2023": "$17,550,000", "2022": "$15,407,000"},
+        {"Line Item": "Cost of Sales", "2024": "$2,677,000", "2023": "$2,468,000", "2022": "$2,349,000"},
+        {"Line Item": "Gross Profit", "2024": "$17,604,000", "2023": "$15,082,000", "2022": "$13,058,000"},
+        {"Line Item": "SG&A", "2024": "$4,196,000", "2023": "$3,915,000", "2022": "$3,355,000"},
+        {"Line Item": "Management Fees", "2024": "$3,310,000", "2023": "$3,104,000", "2022": "$3,077,000"},
+        {"Line Item": "Depreciation and Amortization", "2024": "$106,000", "2023": "$70,000", "2022": "$27,000"},
+        {"Line Item": "Franchise Advertising Expenses", "2024": "$1,746,000", "2023": "$1,628,000", "2022": "$1,144,000"},
+        {"Line Item": "Total Operating Expenses", "2024": "$9,358,000", "2023": "$8,717,000", "2022": "$7,603,000"},
+        {"Line Item": "Income Before Taxes", "2024": "$8,246,000", "2023": "$6,365,000", "2022": "$5,455,000"},
+        {"Line Item": "State and Foreign Income Taxes", "2024": "$114,000", "2023": "$100,000", "2022": "$202,000"},
+        {"Line Item": "Net Income", "2024": "$8,132,000", "2023": "$6,265,000", "2022": "$5,253,000"}
+      ],
+      "table_notes": [
+        "QSSS status — no federal income tax at entity level.",
+        "Revenue growth: 15.6% (2022-2023), 15.6% (2023-2024).",
+        "Gross margin: 86.8% (2024).",
+        "Management fees include rent ($280K), payroll, admin from parent."
+      ],
+      "provenance": "Exhibit A, page 57 of PDF"
+    },
+    {
+      "table_id": "item21_equity_changes",
+      "source_item": 21,
+      "source_pages": [58],
+      "title": "Statements of Changes in Stockholder's Equity",
+      "columns": ["Period", "Distributions", "Net Income", "Ending Retained Earnings"],
+      "rows": [
+        {"Period": "2022", "Distributions": "($5,300,000)", "Net Income": "$5,253,000", "Ending Retained Earnings": "$3,774,000"},
+        {"Period": "2023", "Distributions": "($5,400,000)", "Net Income": "$6,265,000", "Ending Retained Earnings": "$4,639,000"},
+        {"Period": "2024", "Distributions": "($7,800,000)", "Net Income": "$8,132,000", "Ending Retained Earnings": "$4,971,000"}
+      ],
+      "table_notes": ["Distributions nearly equal to net income each year. 2024 distributions $7.8M vs net income $8.1M."],
+      "provenance": "Exhibit A, page 58 of PDF"
+    },
+    {
+      "table_id": "item21_cash_flows",
+      "source_item": 21,
+      "source_pages": [59],
+      "title": "Statements of Cash Flows",
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Net Income", "2024": "$8,132,000", "2023": "$6,265,000", "2022": "$5,253,000"},
+        {"Line Item": "Net Cash from Operations", "2024": "$7,929,000", "2023": "$6,011,000", "2022": "$5,145,000"},
+        {"Line Item": "Net Cash from Investing", "2024": "($83,000)", "2023": "($612,000)", "2022": "($135,000)"},
+        {"Line Item": "Distributions", "2024": "($7,800,000)", "2023": "($5,400,000)", "2022": "($5,300,000)"},
+        {"Line Item": "Net Cash from Financing", "2024": "($7,720,000)", "2023": "($5,634,000)", "2022": "($4,884,000)"},
+        {"Line Item": "Change in Cash", "2024": "$126,000", "2023": "($235,000)", "2022": "$126,000"},
+        {"Line Item": "Cash End of Year", "2024": "$1,897,000", "2023": "$1,771,000", "2022": "$2,006,000"}
+      ],
+      "table_notes": ["Cash paid for taxes: $111K (2024), $118K (2023), $119K (2022)."],
+      "provenance": "Exhibit A, page 59 of PDF"
+    },
+    {
+      "table_id": "item11_training_program",
+      "source_item": 11,
+      "source_pages": [20, 21],
+      "title": "Training Program",
+      "columns": ["Subject", "Classroom Hours", "OJT Hours", "Location"],
+      "rows": [
+        {"Subject": "Pre-Opening Training", "Classroom Hours": "44", "OJT Hours": "N/A", "Location": "Online, Webinars, Phone"},
+        {"Subject": "Sales & Marketing Management", "Classroom Hours": "18.75", "OJT Hours": "N/A", "Location": "Mission Viejo, CA"},
+        {"Subject": "Technology Management", "Classroom Hours": "9", "OJT Hours": "N/A", "Location": "Mission Viejo, CA"},
+        {"Subject": "Employee Management", "Classroom Hours": "3.75", "OJT Hours": "N/A", "Location": "Mission Viejo, CA"},
+        {"Subject": "Business & Financial Management", "Classroom Hours": "16.5", "OJT Hours": "N/A", "Location": "Mission Viejo, CA"},
+        {"Subject": "Post-Opening Training", "Classroom Hours": "N/A", "OJT Hours": "61", "Location": "Online, Webinars, Phone"},
+        {"Subject": "Security Training", "Classroom Hours": "2", "OJT Hours": "N/A", "Location": "Mission Viejo, CA"}
+      ],
+      "table_notes": [
+        "Initial training: up to 6 days (44 hrs) classroom + 26 hrs pre-opening + 61 hrs post-opening.",
+        "Must be completed within 2 months of signing.",
+        "Supervised by Lee Dye, SVP of Franchise Support and Training."
+      ],
+      "provenance": "Item 11, pages 20-21 of PDF"
+    },
+    {
+      "table_id": "item8_insurance_requirements",
+      "source_item": 8,
+      "source_pages": [17],
+      "title": "Insurance Requirements",
+      "columns": ["Coverage Type", "Minimum Limit"],
+      "rows": [
+        {"Coverage Type": "General Liability", "Minimum Limit": "$1,000,000 per occurrence / $3,000,000 annual aggregate"},
+        {"Coverage Type": "Auto Liability", "Minimum Limit": "$1,000,000 combined single limit (owned, hired, non-owned)"},
+        {"Coverage Type": "Workers' Compensation", "Minimum Limit": "Statutory"},
+        {"Coverage Type": "E&O + Cyber Security", "Minimum Limit": "$1,000,000 (increases to $2,000,000 when revenue >$1M)"}
+      ],
+      "table_notes": [
+        "Must be occurrence basis (except E&O which is claims-made).",
+        "Carrier rating: A VII or better (A.M. Best).",
+        "Franchisor and affiliates must be named as additional insureds.",
+        "30-day cancellation notice to franchisor required."
+      ],
+      "provenance": "Item 8, page 17 of PDF"
+    }
+  ]
+}

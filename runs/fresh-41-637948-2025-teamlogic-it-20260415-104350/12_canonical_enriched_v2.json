@@ -1,0 +1,107 @@
+{
+  "enrichment_version": "v2",
+  "base_canonical": "11_canonical_enriched.json",
+  "enrichments": {
+    "item21_financial_structure_detail": {
+      "revenue_composition": {
+        "continuing_franchise_fees": {"2024": 10209000, "2023": 8962000, "2022": 7443000, "pct_2024": 50.3, "yoy_growth_pct": 13.9},
+        "initial_transfer_renewal_fees": {"2024": 1507000, "2023": 793000, "2022": 1374000, "pct_2024": 7.4, "yoy_growth_pct": 90.0},
+        "managed_services_other": {"2024": 6801000, "2023": 6136000, "2022": 5297000, "pct_2024": 33.5, "yoy_growth_pct": 10.8},
+        "ad_fund_contributions": {"2024": 1764000, "2023": 1659000, "2022": 1293000, "pct_2024": 8.7, "yoy_growth_pct": 6.3}
+      },
+      "expense_composition": {
+        "cost_of_sales": {"2024": 2677000, "2023": 2468000, "2022": 2349000, "pct_revenue_2024": 13.2},
+        "sga": {"2024": 4196000, "2023": 3915000, "2022": 3355000, "pct_revenue_2024": 20.7},
+        "management_fees_parent": {"2024": 3310000, "2023": 3104000, "2022": 3077000, "pct_revenue_2024": 16.3},
+        "depreciation_amortization": {"2024": 106000, "2023": 70000, "2022": 27000, "pct_revenue_2024": 0.5},
+        "ad_fund_expenses": {"2024": 1746000, "2023": 1628000, "2022": 1144000, "pct_revenue_2024": 8.6}
+      },
+      "related_party_transactions": {
+        "management_fees": {"2024": 3310000, "2023": 3104000, "2022": 3077000, "includes": "rent, payroll, admin support"},
+        "rent_from_parent": {"2024": 280000, "2023": 269000, "2022": 233000},
+        "summit_marketing": {"2024": 7000, "2023": 17000, "2022": 7000},
+        "printing_from_parent": {"2024": 70000, "2023": 70000, "2022": 70000},
+        "due_to_affiliates": {"2024": 521000, "2023": 441000, "2022": 675000},
+        "401k_plan_expense": {"2024": 303000, "2023": 277000, "2022": 247000},
+        "office_building": "Leased and managed by parent; owned by parties related to parent's owner"
+      },
+      "working_capital": {
+        "current_ratio_2024": 4.34,
+        "current_ratio_2023": 5.37,
+        "current_ratio_2022": 4.58
+      }
+    },
+    "item21_statement_detail": {
+      "balance_sheet_highlights": {
+        "cash_trend": "Stable ($1.9M-$2.0M range)",
+        "ar_trend": "Growing ($1.2M→$1.4M→$1.6M) in line with revenue growth",
+        "allowance_trend": "Growing ($10K→$91K→$154K) — watch for credit quality",
+        "deferred_franchise_costs": "Growing ($1.8M→$1.7M→$2.1M) — represents sales commissions amortized over franchise term",
+        "ppe_jump_2023": "Significant increase in 2023 ($181K→$723K) driven by office equipment/software ($87K→$695K) and leasehold improvements ($165K)",
+        "liability_structure": "Simple — primarily AP/accrued ($681K), affiliate payable ($521K), deferred revenue ($175K)",
+        "no_bank_debt": true,
+        "no_long_term_debt": true
+      },
+      "income_statement_highlights": {
+        "revenue_cagr_2yr": 14.7,
+        "gross_margin_trend": "Stable 84.8%→85.9%→86.8%",
+        "operating_margin_trend": "Improving 30.9%→31.0%→34.1%",
+        "net_margin_trend": "Improving 34.1%→35.7%→40.1%",
+        "initial_fees_spike_2024": "From $793K to $1,507K — driven by 34 new openings (vs 20 in 2023)",
+        "managed_services_growth": "Consistent — $5.3M→$6.1M→$6.8M (10-16% annually)"
+      },
+      "cash_flow_highlights": {
+        "operating_cash_strong": "Consistently strong: $5.1M→$6.0M→$7.9M",
+        "capex_low": "Minimal: $135K (2022), $612K (2023, office buildout), $83K (2024)",
+        "free_cash_flow_2024": 7846000,
+        "distribution_policy": "Nearly all FCF distributed to parent",
+        "cash_conversion_cycle": "Short — service business with monthly EFT collections"
+      }
+    },
+    "item6_fee_detail": {
+      "royalty_structure": {
+        "type": "percentage_with_minimum",
+        "base_rate_pct": 7.0,
+        "minimum_monthly_after_12mo": 1000,
+        "collection_method": "EFT",
+        "collection_frequency": "Monthly",
+        "gross_sales_definition": "All services, labor for installation, managed services, Core and Non-Core. Excludes Product (hardware/software) sales and sales tax.",
+        "conversion_waiver": "CFF waived on average existing Gross Sales for first 12 months (conversion franchisees only)"
+      },
+      "ad_fund_structure": {
+        "rate_pct": 1.2,
+        "minimum_monthly": 200,
+        "first_12_months": "None",
+        "franchisor_contributes": false,
+        "audit_status": "Unaudited annual statement provided",
+        "admin_allocation_cap_pct": 15,
+        "spending_breakdown_2024": {
+          "lead_nurturing": 38,
+          "national_marketing": 15,
+          "website_email_domain": 13,
+          "media": 12,
+          "content": 12,
+          "search_display": 6,
+          "production_creative": 3,
+          "other": 1
+        }
+      },
+      "technology_fee_detail": {
+        "rmm_agents": {"range": "$3-$6/agent/month", "mandatory": true, "minimum_agents": 3, "payable_to": "Franchisor"},
+        "psa_autotask": {"range": "$175-$225/month", "mandatory": true, "payable_to": "Franchisor"},
+        "antivirus": {"range": "$1-$2/month", "mandatory": true},
+        "office_suite": {"fixed": "$35/month", "mandatory": true},
+        "email": {"fixed": "$24/user/month", "mandatory": true},
+        "quickbooks": {"range": "$100-$150/month", "mandatory": true},
+        "process_automation": {"fixed": "$150/month", "mandatory": true},
+        "mfa": {"range": "$0-$30/month", "mandatory": true}
+      },
+      "franchisor_revenue_from_purchases": {
+        "managed_services_revenue_2024": 6801000,
+        "pct_of_total_revenue": 37,
+        "gross_margin_from_purchases_2024": 5041000,
+        "pct_of_total_gross_margin": 32
+      }
+    }
+  }
+}

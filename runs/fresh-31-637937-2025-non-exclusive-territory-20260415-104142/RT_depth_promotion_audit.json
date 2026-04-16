@@ -1,0 +1,62 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "PTP360 fee in franchise agreement is $3.00/inspection, but FDD Item 6 lists $3.10/inspection",
+      "source": "Reader report Pass E vs. franchise agreement Section 4.5",
+      "pdf_pages": [16, 192],
+      "promoted_to": "contradictions",
+      "note": "Minor discrepancy — Item 6 fee ($3.10) is the current fee, agreement ($3.00) may be the base fee before adjustment"
+    },
+    {
+      "fact": "Franchisor generated $5,075,240 from required supplier purchases = 35.9% of total revenue of $14,127,981",
+      "source": "Reader report Pass C, Item 8 p.28",
+      "pdf_pages": [28],
+      "promoted_to": "supplier_control",
+      "note": "Already in canonical but verifying Pillar To Post-specific revenue (not FS Brands consolidated)"
+    },
+    {
+      "fact": "Brand Conference Fee in franchise agreement is $1,099 current, vs $924-$1,099 range in FDD Item 6",
+      "source": "Reader report Pass B vs. franchise agreement Section 4.9",
+      "pdf_pages": [17, 193],
+      "promoted_to": "ongoing_fees",
+      "note": "Agreement shows current fee; FDD shows range including early-bird discount"
+    },
+    {
+      "fact": "Punitive damages waiver in franchise agreement Section 25",
+      "source": "Contract burden depth pass",
+      "pdf_pages": [228],
+      "promoted_to": "dispute_resolution",
+      "note": "Not in canonical. Important buyer protection issue — waiver may be void in CA and other states"
+    },
+    {
+      "fact": "1-year limitation period for claims in franchise agreement Section 25",
+      "source": "Contract burden depth pass",
+      "pdf_pages": [228],
+      "promoted_to": "dispute_resolution",
+      "note": "Not in canonical. Shortened statute of limitations — may not be enforceable in all states"
+    },
+    {
+      "fact": "AI policy — expressly prohibits entering proprietary/customer data into public AI models",
+      "source": "Reader report Pass D, Item 14 p.48, franchise agreement Section 10.2",
+      "pdf_pages": [48, 208],
+      "promoted_to": "technology_restrictions",
+      "note": "Distinctive modern clause worth surfacing in canonical"
+    },
+    {
+      "fact": "Domain name and social media accounts irrevocably assigned to franchisor",
+      "source": "Contract burden depth pass, franchise agreement Section 8.4",
+      "pdf_pages": [204],
+      "promoted_to": "intellectual_property",
+      "note": "Unusual broad assignment — includes accounts not approved by franchisor"
+    },
+    {
+      "fact": "Annual reviewed (not audited) financial statements required from franchisee within 90 days of fiscal year end",
+      "source": "Contract burden depth pass, franchise agreement Section 11.3.2",
+      "pdf_pages": [209],
+      "promoted_to": "reporting_burden",
+      "note": "Significant ongoing cost for franchisee — CPA review engagement"
+    }
+  ],
+  "total_promoted": 8
+}

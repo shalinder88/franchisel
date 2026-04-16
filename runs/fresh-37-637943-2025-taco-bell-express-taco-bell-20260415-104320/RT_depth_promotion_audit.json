@@ -1,0 +1,60 @@
+{
+  "depth_pass": "3_narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "Aggregate existing unit sale prices ranged from $1.1M to $12.7M per group for groups of 1-3 units (2022-2024)",
+      "source": "Reader report Pass B / Item 5, PDF page 14",
+      "promoted_to": "investment.existing_unit_sale_history"
+    },
+    {
+      "fact": "Affiliate revenues: $53.0M from tech hardware/support, $39.1M from leases, $199K from YRSG development, $168K Mastercard rebates",
+      "source": "Reader report Pass C / Item 8, PDF pages 25, 26, 29",
+      "promoted_to": "supplier_control.affiliate_revenue_breakdown"
+    },
+    {
+      "fact": "TBC received $46.5M in aggregator royalties (DoorDash, Uber Eats, Grubhub) in FY2024",
+      "source": "Reader report Pass C / Item 8, PDF page 27",
+      "promoted_to": "supplier_control.aggregator_royalties_2024"
+    },
+    {
+      "fact": "Timeline from deposit to opening: approximately 4-6 months",
+      "source": "Reader report Pass C / Item 11, PDF page 37",
+      "promoted_to": "operations.opening_timeline"
+    },
+    {
+      "fact": "Site approval typically 30-60 days from complete site package submission",
+      "source": "Reader report Pass C / Item 11, PDF page 37",
+      "promoted_to": "operations.site_approval_timeline"
+    },
+    {
+      "fact": "NAFA (National Advertising Fund Administration) administered by TBC but Express licensees do NOT contribute to it",
+      "source": "Reader report Pass C / Item 11, PDF page 43",
+      "promoted_to": "fees.advertising_fund.nafa_detail"
+    },
+    {
+      "fact": "Cross-default: breach of any agreement with franchisor/affiliates = breach of ALL agreements",
+      "source": "Reader report Pass E / Item 17, PDF page 52",
+      "promoted_to": "termination.cross_default_detail"
+    },
+    {
+      "fact": "Relationship Agreement 95% FMV buyout option if Principal Operator departs or corporate structure changes without approval",
+      "source": "Reader report Pass E / Item 17, PDF page 55",
+      "promoted_to": "termination.ra_buyout_option"
+    },
+    {
+      "fact": "No confidentiality clauses signed with current/former licensees in last 3 fiscal years",
+      "source": "Reader report Pass F / Item 20, PDF page 62",
+      "promoted_to": "item20.confidentiality_clause_detail"
+    },
+    {
+      "fact": "Section 5.1 modernization protection: no re-imaging required unless Company commits to implement in ≥25% of company-operated US units",
+      "source": "Contract burden depth / License Agreement §5.1, PDF page 72",
+      "promoted_to": "term_and_renewal.modernization_protection"
+    },
+    {
+      "fact": "No force majeure clause in License Agreement",
+      "source": "Contract burden depth / License Agreement, PDF pages 70-80",
+      "promoted_to": "contract_provisions.force_majeure"
+    }
+  ]
+}

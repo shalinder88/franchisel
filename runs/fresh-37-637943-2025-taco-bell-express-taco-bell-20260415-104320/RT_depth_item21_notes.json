@@ -1,0 +1,51 @@
+{
+  "depth_block": "1_item21_note_walk",
+  "source_pages": [131, 132, 133, 134, 135, 136, 137, 138],
+  "note_families": [
+    {"note": "1", "title": "Description of the Business", "pages": [131, 132], "summary": "SPV structure, securitization entities, business purpose, unit counts (6,207 in 2024), franchise/license terminology note"},
+    {"note": "2", "title": "Summary of Significant Accounting Policies", "pages": [132, 133, 134], "summary": "Basis of presentation, estimates, fiscal year (53rd week $12.8M), restricted cash, accounts receivable, fair value, franchise operations, revenue recognition (ASC 606), contract liabilities, income taxes"},
+    {"note": "3", "title": "Member's Equity", "pages": [135], "summary": "Single class LLC interest, cash and non-cash distributions, franchise agreement transfer mechanics between Franchise Holder and Company"},
+    {"note": "4", "title": "Related Party Transactions", "pages": [135, 136], "summary": "Management agreement with TBC (no expenses allocated), master franchise agreements with TBC/TBA (25-year, $63.5M affiliate royalties), due to affiliates ($0.6M incentive reimbursements)"},
+    {"note": "5", "title": "Guarantees and Other Commitments/Contingencies", "pages": [136, 137, 138], "summary": "Securitization notes ($3.74B, 5 tranches), collateral structure, covenant requirements, DSCR thresholds, rapid amortization events, restricted cash requirements"},
+    {"note": "6", "title": "Subsequent Events", "pages": [138], "summary": "Evaluated through March 26, 2025. No items requiring disclosure."}
+  ],
+  "revenue_recognition_mechanics": {
+    "continuing_fees": {
+      "method": "Sales-based royalty exception (Topic 606)",
+      "timing": "As restaurant sales occur",
+      "rates": "5.5% traditional, 10% non-traditional"
+    },
+    "upfront_fees": {
+      "types": ["Initial fees", "Successor fees", "Transfer fees"],
+      "method": "Straight-line over franchise agreement term",
+      "rationale": "Services are interrelated with franchise right, not individually distinct"
+    },
+    "franchise_incentives": {
+      "types": ["Cash payments for new unit openings", "Free/subsidized equipment"],
+      "accounting": "Capitalized as Franchise incentives, amortized as reduction in Franchise and license fees over expected cash flow period",
+      "balance_2024": "$43.4M total",
+      "accrued_2024": "$8.1M unpaid"
+    }
+  },
+  "securitization_structure": {
+    "issuer": "Taco Bell Funding, LLC",
+    "guarantors": ["Taco Bell Franchisor, LLC", "Taco Bell Franchisor Holdings, LLC", "Taco Bell Franchise Holder 1, LLC", "Taco Bell IP Holder, LLC"],
+    "guarantee_type": "Joint and several, secured by substantially all assets",
+    "collateral": ["All existing/future US Taco Bell franchise and license agreements and royalties", "Existing/future US Taco Bell IP", "Certain transaction accounts", "Equity interests in Securitization Entities"],
+    "not_guaranteed_by": ["YUM", "Any non-securitization YUM subsidiary"],
+    "cash_flow_mechanics": "All franchise cash deposited to Issuer account → trustee cash accounts → note payments → excess to TBC",
+    "minimum_net_worth": "$15M (for large franchisor exemption)"
+  },
+  "parent_affiliate_structure": {
+    "due_from_affiliates_2024": "$6.1M (TBC/TBA royalties receivable)",
+    "due_to_affiliates_2024": "$0.6M (reimbursement of incentive payments made by Manager)",
+    "management_fee": "Paid by Issuer, not Company — no allocation to Company",
+    "no_employees": true,
+    "officers_are_tbc_employees": true
+  },
+  "tax_structure": {
+    "entity_type": "Single member LLC, disregarded for tax purposes",
+    "federal_state_income_tax": "None at entity level",
+    "income_taxed_at": "TBC and YUM entities"
+  }
+}

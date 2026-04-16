@@ -1,0 +1,352 @@
+{
+  "extraction_date": "2026-04-16",
+  "brand": "WorldKids School",
+  "filing_id": "637939",
+  "tables": [
+    {
+      "id": "item5_initial_fees",
+      "item": 5,
+      "title": "Initial Fees",
+      "source_pages": [12],
+      "columns": ["Fee Type", "Amount", "Refundable"],
+      "rows": [
+        ["Initial Franchise Fee", "$80,000", "No"],
+        ["ADA Development Fee (per additional outlet)", "$40,000", "No"],
+        ["ADA Total Development Fee (3-5 outlets)", "$160,000-$240,000", "No"]
+      ],
+      "table_notes": ["All fees uniformly imposed, fully earned upon signing, non-refundable."]
+    },
+    {
+      "id": "item6_other_fees",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [13, 14, 15, 16],
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty Fee", "6% of Gross Revenue", "Monthly by 10th", "Begins immediately on first month of operations"],
+        ["National Ad Fund", "2% of Gross Revenue", "Monthly by 10th", "Starts after 12 months operational"],
+        ["Local Advertising", "Greater of $2,000/mo or 1.5% of GR", "Monthly", "Per franchisor guidelines"],
+        ["Grand Opening Advertising", "$4,000-$8,000", "Around opening", "Per franchisor guidelines"],
+        ["Interest", "Lesser of 1.5%/mo or highest legal rate", "15 days after billing", "On all overdue amounts"],
+        ["National Convention Fee", "$500", "As incurred", "Annual convention"],
+        ["Maintenance/Refurbishing", "Actual cost", "As incurred", "If franchisee fails to correct deficiencies"],
+        ["Insufficient Funds", "$75", "As incurred", "Per returned payment"],
+        ["Relocation Assistance", "Actual cost", "At time of assistance", "If needed"],
+        ["POS/Software (Procare)", "$25/mo min + per-item fees + 2.7% discount rate", "Monthly", "Third party, fees may change"],
+        ["POS/Software (QuickBooks)", "$99-$235/mo", "Monthly", "Plus or Advanced plan"],
+        ["Renewal Fee", "$5,000", "At renewal", "FA 4.2.9"],
+        ["Retraining Fee", "$500/person/day", "At retraining", "If manager fails initial training"],
+        ["Additional Training", "$500/person/day + expenses", "At training", "Ongoing/refresher training"],
+        ["Audit Fee", "Cost of inspection + underpayment + interest", "At inspection", "If underpayment >= 2%"],
+        ["Product/Service Purchases", "Actual cost", "As incurred", "From approved suppliers"],
+        ["Supplier Testing/Approval", "Up to $1,000", "When billed", "For proposed new suppliers"],
+        ["Customer Service Fee", "Actual cost", "When billed", "If franchisor resolves customer complaint"],
+        ["Email Maintenance", "$50/mo per email address", "Monthly", "FA 13.11"],
+        ["Insurance (if franchisor obtains)", "Actual cost", "15 days after billing", "If franchisee fails to obtain"],
+        ["Transfer Fee", "$10,000", "Before transfer", "No charge for entity transfer; subject to state law"],
+        ["De-Identification", "Actual cost", "As incurred", "If franchisee fails to de-identify"],
+        ["Management Fee", "$500/person/day + costs", "As incurred", "Death/disability or default management"],
+        ["Indemnification", "Varies", "As incurred", "Claims from outlet operations"],
+        ["Cost of Enforcement", "All costs + attorneys' fees", "Upon demand", "If franchisor prevails"]
+      ],
+      "table_notes": [
+        "All fees uniformly imposed, payable to franchisor, non-refundable.",
+        "Royalty begins immediately on first month of operations.",
+        "Fees payable via EDTA (direct deposit). Franchisor reserves right to change payment method."
+      ]
+    },
+    {
+      "id": "item7_small",
+      "item": 7,
+      "title": "Estimated Initial Investment — Small School (1,000-3,000 sqft)",
+      "source_pages": [17],
+      "columns": ["Component", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Franchise Fee", "$80,000", "$80,000", "As arranged", "Upon signing FA", "Franchisor"],
+        ["Travel/Training", "$2,500", "$4,500", "As arranged", "As incurred", "Third parties"],
+        ["Rent/Deposits", "$10,000", "$25,000", "As arranged", "As incurred", "Landlord"],
+        ["Leasehold Improvements", "$25,000", "$50,000", "As arranged", "As incurred", "Contractors"],
+        ["Furniture/Fixtures/Decor", "$40,000", "$80,000", "As arranged", "As incurred", "Third parties"],
+        ["Equipment/TV/Cameras", "$4,500", "$5,000", "As arranged", "As incurred", "Third parties"],
+        ["Signage", "$2,500", "$5,000", "As arranged", "As incurred", "Third parties"],
+        ["Grand Opening Ad", "$4,000", "$8,000", "As arranged", "As incurred", "Third parties"],
+        ["Licenses/Permits", "$1,500", "$2,500", "As arranged", "As incurred", "Third parties"],
+        ["Insurance (3 mo)", "$1,500", "$2,000", "As arranged", "As incurred", "Insurance co."],
+        ["Professional Fees", "$3,500", "$4,500", "As arranged", "As incurred", "Attorneys/accountants"],
+        ["Additional Funds (3 mo)", "$20,000", "$25,000", "As arranged", "As incurred", "Various"],
+        ["TOTAL", "$195,000", "$291,500", "", "", ""]
+      ],
+      "table_notes": ["See notes 1-13 on pp.19-21. Franchisor does not offer financing."]
+    },
+    {
+      "id": "item7_medium",
+      "item": 7,
+      "title": "Estimated Initial Investment — Medium School (3,001-6,000 sqft)",
+      "source_pages": [18],
+      "columns": ["Component", "Low", "High"],
+      "rows": [
+        ["Initial Franchise Fee", "$80,000", "$80,000"],
+        ["Travel/Training", "$2,500", "$4,500"],
+        ["Rent/Deposits", "$10,000", "$30,000"],
+        ["Leasehold Improvements", "$50,000", "$100,000"],
+        ["Furniture/Fixtures/Decor", "$85,000", "$145,000"],
+        ["Equipment/TV/Cameras", "$4,500", "$5,000"],
+        ["Signage", "$2,500", "$5,000"],
+        ["Grand Opening Ad", "$4,000", "$8,000"],
+        ["Licenses/Permits", "$1,500", "$2,500"],
+        ["Insurance (3 mo)", "$1,500", "$2,000"],
+        ["Professional Fees", "$3,500", "$4,500"],
+        ["Additional Funds (3 mo)", "$25,000", "$50,000"],
+        ["TOTAL", "$270,000", "$436,500"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item7_large",
+      "item": 7,
+      "title": "Estimated Initial Investment — Large School (6,001+ sqft)",
+      "source_pages": [19],
+      "columns": ["Component", "Low", "High"],
+      "rows": [
+        ["Initial Franchise Fee", "$80,000", "$80,000"],
+        ["Travel/Training", "$2,500", "$4,500"],
+        ["Rent/Deposits", "$10,000", "$40,000"],
+        ["Leasehold Improvements", "$100,000", "$150,000"],
+        ["Furniture/Fixtures/Decor", "$200,000", "$240,000"],
+        ["Equipment/TV/Cameras", "$4,500", "$5,000"],
+        ["Signage", "$2,500", "$5,000"],
+        ["Grand Opening Ad", "$4,000", "$8,000"],
+        ["Licenses/Permits", "$1,500", "$2,500"],
+        ["Insurance (3 mo)", "$1,500", "$2,000"],
+        ["Professional Fees", "$3,500", "$4,500"],
+        ["Additional Funds (3 mo)", "$25,000", "$50,000"],
+        ["TOTAL", "$435,000", "$591,500"]
+      ],
+      "table_notes": ["Notes applicable to all tables: see pp.19-21."]
+    },
+    {
+      "id": "item7_ada_small",
+      "item": 7,
+      "title": "ADA Investment — Small School (3-5 outlets)",
+      "source_pages": [21],
+      "columns": ["Component", "Low", "High"],
+      "rows": [
+        ["Area Development Fee", "$160,000", "$240,000"],
+        ["First Outlet Investment", "$115,000", "$211,500"],
+        ["TOTAL", "$275,000", "$451,500"]
+      ],
+      "table_notes": ["First outlet investment excludes IFF (included in ADA fee)."]
+    },
+    {
+      "id": "item7_ada_medium",
+      "item": 7,
+      "title": "ADA Investment — Medium School (3-5 outlets)",
+      "source_pages": [21],
+      "columns": ["Component", "Low", "High"],
+      "rows": [
+        ["Area Development Fee", "$160,000", "$240,000"],
+        ["First Outlet Investment", "$190,000", "$356,500"],
+        ["TOTAL", "$350,000", "$596,500"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item7_ada_large",
+      "item": 7,
+      "title": "ADA Investment — Large School (3-5 outlets)",
+      "source_pages": [22],
+      "columns": ["Component", "Low", "High"],
+      "rows": [
+        ["Area Development Fee", "$160,000", "$240,000"],
+        ["First Outlet Investment", "$355,000", "$511,500"],
+        ["TOTAL", "$515,000", "$751,500"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item19_fpr1_2024",
+      "item": 19,
+      "title": "FPR #1 — 2024 Company Store Historic Performance (8 outlets)",
+      "source_pages": [44, 45, 46, 47, 48],
+      "columns": ["Location", "Students", "Sqft", "Opened", "Gross Revenue", "Royalty (6%)", "Local Ad", "Total Adjustments", "Adj Gross Revenue"],
+      "rows": [
+        ["Georgetown/SODO, WA", "164", "12,765", "Jun 2018", "$3,983,011", "$238,981", "$59,745", "$298,726", "$3,684,285"],
+        ["Upper Fauntleroy, WA", "93", "6,451", "Sep 2023", "$2,304,398", "$138,264", "$34,566", "$172,830", "$2,131,568"],
+        ["Burien, WA", "180", "13,156", "Jun 2019", "$3,810,017", "$228,601", "$57,150", "$285,751", "$3,524,266"],
+        ["Admiral, WA", "43", "2,721", "Jul 2015", "$1,144,680", "$68,681", "$24,000", "$92,681", "$1,051,999"],
+        ["Fremont, WA", "37", "2,460", "Mar 2024", "$838,057", "$50,283", "$20,000", "$70,283", "$767,774"],
+        ["Delridge, WA", "26", "1,345", "Dec 2016", "$602,449", "$36,147", "$24,000", "$60,147", "$542,302"],
+        ["Edmonds, WA", "19", "1,095", "Dec 2016", "$396,737", "$23,804", "$24,000", "$47,804", "$348,933"],
+        ["Everett, WA", "59", "3,367", "Sep 2024", "$72,501", "$4,350", "$8,000", "$12,350", "$60,151"]
+      ],
+      "table_notes": [
+        "All outlets are affiliate-owned (WorldKids Academy, LLC), not franchised.",
+        "6 outlets operated full year 2024; Fremont opened Mar 2024, Everett opened Sep 2024.",
+        "Adjusted Gross Revenue = Gross Revenue minus Royalties (6%) and Local Advertising (greater of 1.5% or $2,000/mo).",
+        "Does NOT reflect COGS, payroll, rent, or any operating expenses.",
+        "2024 had no Grant monies.",
+        "All outlets in Washington State only.",
+        "Substantiation available upon reasonable written request."
+      ]
+    },
+    {
+      "id": "item19_fpr2_2023",
+      "item": 19,
+      "title": "FPR #2 — 2023 Company Store Historic Performance (6 outlets)",
+      "source_pages": [48, 49, 50],
+      "columns": ["Location", "Students", "Sqft", "Opened", "Gross Revenue", "Royalty (6%)", "Local Ad", "Total Adjustments", "Adj Gross Revenue"],
+      "rows": [
+        ["Burien, WA", "180", "13,156", "Jun 2019", "$3,786,372", "$227,182", "$56,796", "$283,978", "$3,502,394"],
+        ["Georgetown/SODO, WA", "164", "12,765", "Jun 2018", "$3,449,535", "$206,972", "$51,743", "$258,715", "$3,190,820"],
+        ["Upper Fauntleroy, WA", "93", "6,451", "Sep 2023", "$2,020,642", "$121,239", "$30,310", "$151,549", "$1,869,093"],
+        ["Admiral, WA", "43", "2,721", "Jul 2015", "$898,063", "$53,884", "$24,000", "$77,884", "$820,179"],
+        ["Delridge, WA", "26", "1,345", "Dec 2016", "$561,289", "$33,677", "$24,000", "$57,677", "$503,612"],
+        ["Edmonds, WA", "19", "1,095", "Dec 2016", "$449,032", "$26,942", "$24,000", "$50,942", "$398,090"]
+      ],
+      "table_notes": [
+        "5 outlets operated full year 2023; Upper Fauntleroy opened Sep 2023.",
+        "$30,415 of Grant monies removed from each Burien and Georgetown/SODO Gross Revenue.",
+        "All outlets are affiliate-owned, not franchised."
+      ]
+    },
+    {
+      "id": "item20_table1",
+      "item": 20,
+      "title": "Table 1 — Systemwide Outlet Summary 2022-2024",
+      "source_pages": [51],
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "0", "0", "0"],
+        ["Franchised", "2023", "0", "0", "0"],
+        ["Franchised", "2024", "0", "0", "0"],
+        ["Company-Owned", "2022", "5", "5", "0"],
+        ["Company-Owned", "2023", "5", "6", "+1"],
+        ["Company-Owned", "2024", "6", "8", "+2"],
+        ["Total", "2022", "5", "5", "0"],
+        ["Total", "2023", "5", "6", "+1"],
+        ["Total", "2024", "6", "8", "+2"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item20_table2",
+      "item": 20,
+      "title": "Table 2 — Transfers 2022-2024",
+      "source_pages": [51],
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        ["All States", "2022", "0"],
+        ["All States", "2023", "0"],
+        ["All States", "2024", "0"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item20_table3",
+      "item": 20,
+      "title": "Table 3 — Status of Franchised Outlets 2022-2024",
+      "source_pages": [51],
+      "columns": ["State", "Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased-Other", "End"],
+      "rows": [
+        ["All States", "2022", "0", "0", "0", "0", "0", "0", "0"],
+        ["All States", "2023", "0", "0", "0", "0", "0", "0", "0"],
+        ["All States", "2024", "0", "0", "0", "0", "0", "0", "0"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item20_table4",
+      "item": 20,
+      "title": "Table 4 — Status of Company-Owned Outlets 2022-2024",
+      "source_pages": [52],
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired", "Closed", "Sold", "End"],
+      "rows": [
+        ["Washington", "2022", "5", "0", "0", "0", "0", "5"],
+        ["Washington", "2023", "5", "1", "0", "0", "0", "6"],
+        ["Washington", "2024", "6", "2", "0", "0", "0", "8"]
+      ],
+      "table_notes": ["Company-Owned refers to outlets run by affiliate WorldKids Academy, LLC.", "Last row labeled 2023 in PDF is actually 2024 data (apparent typo)."]
+    },
+    {
+      "id": "item20_table5",
+      "item": 20,
+      "title": "Table 5 — Projected Openings as of December 31, 2024",
+      "source_pages": [52],
+      "columns": ["State", "Signed Not Open", "Projected Franchised", "Projected Company"],
+      "rows": [
+        ["Washington", "0", "1", "0"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item21_balance_sheet_dec2024",
+      "item": 21,
+      "title": "Balance Sheet — December 31, 2024",
+      "source_pages": [146],
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        ["Cash", "$97"],
+        ["Total Assets", "$97"],
+        ["Deferred Franchise Fee", "$0"],
+        ["Total Liabilities", "$0"],
+        ["Members' Equity", "$97"],
+        ["Total Liabilities + Members' Equity", "$97"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item21_income_statement_dec2024",
+      "item": 21,
+      "title": "Statement of Operations — Jul 19 to Dec 31, 2024",
+      "source_pages": [147],
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        ["Franchise Sales Revenue", "$0"],
+        ["Total Revenue", "$0"],
+        ["Professional Fees Expense", "$0"],
+        ["Total Expenses", "$0"],
+        ["Net Loss", "$0"],
+        ["Contributions (net)", "$97"],
+        ["Members' Equity, beginning", "$0"],
+        ["Members' Equity, ending", "$97"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item21_cash_flows_dec2024",
+      "item": 21,
+      "title": "Statement of Cash Flows — Jul 19 to Dec 31, 2024",
+      "source_pages": [148],
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        ["Net cash from operating activities", "$0"],
+        ["Net cash from investing activities", "$0"],
+        ["Contributions", "$104,157"],
+        ["Distributions", "($104,060)"],
+        ["Net cash from financing activities", "$97"],
+        ["Net increase in cash", "$97"],
+        ["Cash, beginning", "$0"],
+        ["Cash, ending", "$97"],
+        ["Cash paid for interest", "$0"],
+        ["Cash paid for income taxes", "$0"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item21_balance_sheet_sep2024",
+      "item": 21,
+      "title": "Balance Sheet — September 19, 2024",
+      "source_pages": [157],
+      "columns": ["Line Item", "Amount"],
+      "rows": [
+        ["Cash", "$100,223"],
+        ["Total Assets", "$100,223"],
+        ["Deferred Franchise Fee", "$0"],
+        ["Total Liabilities", "$0"],
+        ["Members' Equity", "$100,223"],
+        ["Total Liabilities + Members' Equity", "$100,223"]
+      ],
+      "table_notes": ["Inception balance sheet only — no income statement or cash flow statement for this period."]
+    }
+  ]
+}

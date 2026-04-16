@@ -1,0 +1,137 @@
+{
+  "depth_pass": "financial_note_depth",
+  "source_pages": [85, 86, 87, 88, 89, 90, 91, 92, 93, 94],
+  "auditor": {
+    "firm_name": "Not captured from text layer — in letterhead graphic on p.85-87",
+    "location": "Melville, New York",
+    "report_date": "2025-03-25",
+    "opinion_type": "Unqualified (clean)",
+    "going_concern": false,
+    "source_pages": [85, 86, 87]
+  },
+  "notes": [
+    {
+      "note_number": 1,
+      "title": "Organization and Nature of Business",
+      "source_pages": [91],
+      "content": {
+        "entity": "Magnuson Franchising LLC",
+        "formation": "Formed March 17, 2021 as a Washington limited liability company",
+        "member": "Magnuson Company LLC (sole member)",
+        "license_agreement": "Non-exclusive license agreement dated January 4, 2022 between Company and Licensor",
+        "business": "Sell franchises for hotel facilities under Magnuson name and system",
+        "liability_shield": "LLC — member not liable for debts/obligations unless specific guarantee signed"
+      }
+    },
+    {
+      "note_number": 2,
+      "title": "Summary of Significant Accounting Policies",
+      "source_pages": [91, 92, 93],
+      "sub_policies": {
+        "basis_of_accounting": "Accrual basis per US GAAP",
+        "use_of_estimates": "Standard — management estimates may differ from actual",
+        "accounts_receivable": {
+          "method": "Expected collection amount; collective assessment by risk characteristics",
+          "allowance_for_doubtful_accounts": "None required as of Dec 31, 2024 and 2023",
+          "write_off_policy": "Written off when all collection efforts exhausted"
+        },
+        "revenue_recognition": {
+          "revenue_streams": ["Franchise fees", "Continuing fees (sales-based)", "GDS booking fees", "Transfer fees"],
+          "franchise_fees": {
+            "primary_performance_obligation": "Granting rights to IP + pre-opening activities",
+            "asu_2021_02_treatment": "Pre-opening activities under ASU 2021-02 recognized as single performance obligation",
+            "non_brand_specific_pre_opening": "If distinct from IP, accounted as separate performance obligation",
+            "allocation_method": "Adjusted market assessment approach for stand-alone selling price of pre-opening activities; residual to IP access right",
+            "ip_access_recognition": "Straight-line over franchise agreement term",
+            "timing": "Franchise fees allocated to IP access recognized over time"
+          },
+          "continuing_fees": {
+            "basis": "Percentage of franchisee gross sales (sales-based continuing fees)",
+            "recognition": "Recognized as franchisee sales occur and fee deemed collectible",
+            "rationale": "Entirely related to use of Company's IP"
+          },
+          "other_revenues": "Recognized as single performance obligation when services rendered"
+        },
+        "incremental_costs_of_obtaining_contract": {
+          "policy": "Capitalize direct and incremental costs (principally commissions) and amortize over franchise agreement term"
+        },
+        "depreciation_amortization": null,
+        "impairment": null,
+        "lease_accounting": null,
+        "income_taxes": {
+          "status": "Disregarded entity for income tax purposes (single-member LLC)",
+          "provision": "No provision for income taxes — all items pass through to member's return",
+          "uncertain_tax_positions": "None at Dec 31, 2024 and 2023",
+          "framework": "FASB ASC 740"
+        },
+        "subsequent_events": {
+          "evaluation_date": "Through March 25, 2025",
+          "material_events": "None requiring recognition or additional disclosure"
+        }
+      }
+    },
+    {
+      "note_number": 3,
+      "title": "Franchised Outlets",
+      "source_pages": [93],
+      "content": {
+        "2024": {"franchises_sold": 2, "outlets_in_operation": 11},
+        "2023": {"franchises_sold": 6, "outlets_in_operation": 9},
+        "2022": {"franchises_sold": 4, "outlets_in_operation": 4}
+      }
+    },
+    {
+      "note_number": 4,
+      "title": "Revenues and Related Contract Balances",
+      "source_pages": [94],
+      "content": {
+        "disaggregation": "By timing of recognition and type of revenue",
+        "geographic_risk": "Revenues dependent on US economy strength and collectibility",
+        "point_in_time_revenues": {
+          "2024": {"continuing_fees": 259560, "franchise_fees": 0, "total": 259560},
+          "2023": {"continuing_fees": 173198, "franchise_fees": 0, "total": 173198},
+          "2022": {"continuing_fees": 18128, "franchise_fees": 10000, "total": 28128}
+        },
+        "over_time_revenues": {
+          "2024": {"franchise_fees": 0},
+          "2023": {"franchise_fees": 0},
+          "2022": {"franchise_fees": 0}
+        },
+        "note": "All franchise fee revenue in 2022 was recognized point-in-time; no over-time recognition in any period"
+      }
+    },
+    {
+      "note_number": 5,
+      "title": "Related-Party Transactions",
+      "source_pages": [94],
+      "content": {
+        "license_agreement": {
+          "party": "Magnuson Company LLC (Licensor/Member)",
+          "date": "January 4, 2022",
+          "term": "99 years unless terminated earlier",
+          "rights_granted": "Right to sell Magnuson franchises and earn franchise fees, continuing fees, and other fees",
+          "license_fee": "Mutually determined; NO license fee expense in 2024, 2023, or 2022"
+        },
+        "management_fee": {
+          "party": "Magnuson Company LLC (Licensor/Member)",
+          "arrangement_date": "July 1, 2022",
+          "description": "Administrative services performed by Licensor on Company's behalf",
+          "amounts": {
+            "2024": 127435,
+            "2023": 85347,
+            "2022": 18740
+          },
+          "classification": "Included in Operating expenses"
+        }
+      }
+    }
+  ],
+  "families_not_present": [
+    "Depreciation/amortization (no fixed assets)",
+    "Impairment (no long-lived assets)",
+    "Lease accounting (no leases)",
+    "Variable interest entities",
+    "Advertising fund accounting (no ad fund)",
+    "Deferred franchise fees (all recognized point-in-time in 2022; none deferred)"
+  ]
+}
