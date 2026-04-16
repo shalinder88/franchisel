@@ -1,0 +1,147 @@
+{
+  "depth_pass": "state_addenda_promotion",
+  "extraction_date": "2026-04-15",
+  "filing_id": "637925-2025",
+  "exhibit": "L",
+  "source_pages": [400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 412, 415, 416],
+  "states_with_addenda": ["California", "Hawaii", "Maryland", "Michigan", "Minnesota", "North Dakota"],
+  "no_waiver_disclaimer_states": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "financial_statements",
+      "override_summary": "Franchisor's (Hyatt Place Franchising, L.L.C.) unaudited balance sheet required as supplemental disclosure. Total assets $72.03M, member's equity $53.2M.",
+      "why_it_matters": "Provides franchisor entity-level financial visibility separate from parent's consolidated statements",
+      "source_pages": [400, 401, 402]
+    },
+    {
+      "state": "Hawaii",
+      "affected_family": "general_release",
+      "override_summary": "No waiver of franchise law claims or disclaimer of reliance permitted. Supersedes any other document term.",
+      "why_it_matters": "Protects franchisee's right to bring fraud-in-inducement and reliance claims regardless of agreement language",
+      "source_pages": [403]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "General release required at renewal/transfer will not apply to liability under Maryland Franchise Registration and Disclosure Law.",
+      "why_it_matters": "Maryland franchisees retain right to bring claims under state franchise law even after signing a general release",
+      "source_pages": [403, 407]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "termination",
+      "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law. Franchisor will enforce to extent enforceable.",
+      "why_it_matters": "Bankruptcy-based termination trigger may not be effective in Maryland",
+      "source_pages": [404]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may bring action in Maryland for claims arising under Maryland Franchise Law, subject to arbitration obligations unless preempted by FAA.",
+      "why_it_matters": "Maryland franchisees need not litigate exclusively in Illinois for state franchise law claims",
+      "source_pages": [404, 407]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "governing_law",
+      "override_summary": "Maryland law applies to claims arising under Maryland Franchise Registration and Disclosure Law.",
+      "why_it_matters": "Illinois choice-of-law provision does not override Maryland franchise law protections",
+      "source_pages": [404, 407]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "damages",
+      "override_summary": "Claims under Maryland Franchise Law must be brought within 3 years after grant of franchise.",
+      "why_it_matters": "Provides specific statute of limitations for Maryland franchise law claims",
+      "source_pages": [407]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination",
+      "override_summary": "90 days' notice of termination (with 60 days to cure) and 180 days' notice for non-renewal required under Minn. Stat. §80C.14.",
+      "why_it_matters": "Significantly longer cure and notice periods than standard FA terms (24h-30 days). Provides Minnesota franchisees more time to cure defaults.",
+      "source_pages": [404, 405]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Release at renewal/transfer will not apply to claims arising under Minn. Rule 2860.4400D.",
+      "why_it_matters": "Minnesota franchisees retain state franchise law claims despite signing release",
+      "source_pages": [404]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "damages",
+      "override_summary": "Minn. Rule Part 2860.4400J prohibits waiver of jury trial, waiver of procedures/forums/remedies, and consent to liquidated damages, termination penalties, or judgment notes. Franchisor will enforce to extent law allows.",
+      "why_it_matters": "Liquidated damages and termination penalties may be unenforceable in Minnesota. Jury trial rights preserved.",
+      "source_pages": [405]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "Litigation cannot be required outside Minnesota. Franchisee retains right to submit matters to jurisdiction of Minnesota courts, subject to arbitration obligation.",
+      "why_it_matters": "Illinois forum selection clause does not apply to Minnesota franchisees for state law claims",
+      "source_pages": [405]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "damages",
+      "override_summary": "Commissioner has determined termination/liquidated damages to be unfair, unjust and inequitable under Section 51-19-09. Franchisor will enforce to extent law allows.",
+      "why_it_matters": "Liquidated damages provisions may be unenforceable in North Dakota — significant protection for franchisees",
+      "source_pages": [405]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "general_release",
+      "override_summary": "Release at renewal/transfer will not apply to claims arising under North Dakota Franchise Investment Law.",
+      "why_it_matters": "North Dakota franchisees retain state franchise law claims despite signing release",
+      "source_pages": [405]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration location may need to be mutually agreed (not Chicago) to the extent required by North Dakota law, unless preempted by FAA.",
+      "why_it_matters": "North Dakota franchisees may not be forced to arbitrate in Chicago",
+      "source_pages": [405, 406]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "governing_law",
+      "override_summary": "North Dakota law applies to the extent required by law, replacing Illinois choice of law.",
+      "why_it_matters": "North Dakota franchise law protections apply instead of Illinois law",
+      "source_pages": [406]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "termination",
+      "override_summary": "Termination only for good cause; 30-day cure period. Refusal to renew requires fair market value compensation. Cannot require out-of-state arbitration/litigation.",
+      "why_it_matters": "Michigan provides strongest franchisee protections including FMV compensation for non-renewal and prohibition on out-of-state dispute resolution.",
+      "source_pages": [5, 6]
+    }
+  ],
+  "summary_table": {
+    "override_families": ["forum_selection", "governing_law", "general_release", "termination", "damages"],
+    "states_affected": {
+      "forum_selection": ["Maryland", "Michigan", "Minnesota", "North Dakota"],
+      "governing_law": ["Maryland", "North Dakota"],
+      "general_release": ["Hawaii", "Maryland", "Minnesota", "North Dakota"],
+      "termination": ["Maryland", "Michigan", "Minnesota"],
+      "damages": ["Minnesota", "North Dakota"]
+    }
+  },
+  "riders_identified": [
+    "Rider to Franchise Agreement for use in Maryland",
+    "Rider to Confidentiality Agreement for use in Maryland",
+    "Rider to Franchise Agreement for use in Minnesota",
+    "Rider to Confidentiality Agreement for use in Minnesota",
+    "Rider to Confidentiality Agreement for use in North Dakota"
+  ],
+  "release_form": {
+    "identified": true,
+    "title": "Grant of Franchisor Consent and Franchisee Release",
+    "scope": "Broad general release of all claims from beginning of time",
+    "state_carve_outs": ["Maryland", "Minnesota", "North Dakota"],
+    "source_pages": [416]
+  }
+}

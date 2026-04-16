@@ -1,0 +1,75 @@
+{
+  "enrichment_version": "v2",
+  "extraction_date": "2026-04-14",
+  "filing_id": "637909-2025",
+  "brand": "Delah Coffee",
+  "item21_financial_structure_detail": {
+    "auditor_firm": "Metwally CPA PLLC",
+    "auditor_address": "1312 Norwood Dr Ste 100, Bedford, Texas 76022",
+    "auditor_contact": "Mohamed Metwally, 214-200-5434",
+    "consent_date": "2025-03-11",
+    "report_date": "2025-01-13",
+    "statement_date": "2025-01-02",
+    "opinion_type": "unqualified",
+    "going_concern_language": "Standard evaluation language present in auditor report but no going-concern qualification issued",
+    "statements_provided": ["balance_sheet"],
+    "statements_not_provided": ["income_statement", "cash_flow_statement", "statement_of_changes_in_equity"],
+    "reason": "Company formed Oct 2024; no operations/revenue as of statement date; less than 3 years franchising"
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "date": "2025-01-02",
+      "assets": {
+        "cash_and_equivalents": 500,
+        "total_current_assets": 500,
+        "total_assets": 500
+      },
+      "liabilities": {
+        "total_liabilities": 0
+      },
+      "equity": {
+        "members_equity": 500,
+        "total_liabilities_and_equity": 500
+      }
+    },
+    "notes_summary": {
+      "note_1_description_of_business": "LLC formed in CA for franchise opportunities; Delah Coffee mark; individual and area development franchises",
+      "note_2_significant_accounting_policies": {
+        "basis": "US GAAP",
+        "cash_equivalents": "Highly liquid instruments with original maturity <= 3 months",
+        "income_taxes": "Disregarded entity; taxes at member level",
+        "estimates": "Standard management estimates disclosure",
+        "credit_risk": "Cash with major financial institutions; FDIC $250K limit",
+        "revenue_recognition": "ASC 606 with ASU 2021-02 practical expedient; two performance obligations (pre-opening services + franchise license access over 10-year term); variable consideration for royalties/BDF; no revenue generated yet",
+        "leases": "ASC 842 evaluated; no long-term leases"
+      },
+      "note_3_cash": "~$500 in US noninterest-bearing account; no FDIC limit exposure",
+      "note_4_subsequent_events": "None material through Jan 13, 2025"
+    }
+  },
+  "item6_fee_detail": {
+    "fees": [
+      {"name": "Royalty", "rate": "4.5%", "basis": "Gross Sales", "frequency": "weekly", "currently_assessed": true, "category": "ongoing"},
+      {"name": "Brand Development Fund", "rate": "up to 2%", "basis": "Gross Sales", "frequency": "weekly", "currently_assessed": false, "category": "ongoing"},
+      {"name": "Local Marketing", "rate": "1%", "basis": "Gross Sales", "frequency": "monthly", "currently_assessed": true, "category": "ongoing"},
+      {"name": "Technology", "rate": "up to $500/month", "basis": "flat", "frequency": "monthly", "currently_assessed": false, "category": "ongoing"},
+      {"name": "Ad Cooperative", "rate": "per cooperative", "basis": "variable", "frequency": "as established", "currently_assessed": false, "category": "ongoing"},
+      {"name": "Annual Conference", "rate": "up to $1,500", "basis": "flat", "frequency": "annual", "currently_assessed": false, "category": "event"},
+      {"name": "Additional Training", "rate": "$300/person/day", "basis": "per person per day", "frequency": "as needed", "currently_assessed": false, "category": "event"},
+      {"name": "Supplemental Training", "rate": "$300/day/trainer + expenses", "basis": "per trainer per day", "frequency": "as needed", "currently_assessed": false, "category": "event"},
+      {"name": "Interest", "rate": "18% (CA max 10%)", "basis": "overdue amounts", "frequency": "on demand", "currently_assessed": true, "category": "penalty"},
+      {"name": "Reporting Non-Compliance", "rate": "$150", "basis": "per occurrence", "frequency": "14 days", "currently_assessed": true, "category": "penalty"},
+      {"name": "Operations Non-Compliance", "rate": "$450-$1,000", "basis": "per occurrence", "frequency": "14 days", "currently_assessed": true, "category": "penalty"},
+      {"name": "Payment Non-Compliance", "rate": "$150", "basis": "per occurrence", "frequency": "14 days", "currently_assessed": true, "category": "penalty"},
+      {"name": "Audit", "rate": "cost of audit", "basis": "actual", "frequency": "on demand", "currently_assessed": true, "category": "event"},
+      {"name": "Quality Assurance Audit", "rate": "actual costs", "basis": "actual", "frequency": "as invoiced", "currently_assessed": true, "category": "event"},
+      {"name": "Collections", "rate": "actual costs", "basis": "actual", "frequency": "on demand", "currently_assessed": true, "category": "penalty"},
+      {"name": "NSF/Failed EFT", "rate": "5% or $50", "basis": "whichever greater", "frequency": "on demand", "currently_assessed": true, "category": "penalty"},
+      {"name": "Non-Compliance", "rate": "actual costs", "basis": "actual", "frequency": "on demand", "currently_assessed": true, "category": "penalty"},
+      {"name": "Supplier Evaluation", "rate": "actual costs", "basis": "actual", "frequency": "14 days", "currently_assessed": true, "category": "event"},
+      {"name": "Management Service", "rate": "actual costs", "basis": "actual", "frequency": "as invoiced", "currently_assessed": true, "category": "event"},
+      {"name": "Transfer", "rate": "$10,000", "basis": "flat", "frequency": "on event", "currently_assessed": true, "category": "event"},
+      {"name": "Renewal", "rate": "$5,000", "basis": "flat", "frequency": "on event", "currently_assessed": true, "category": "event"}
+    ]
+  }
+}

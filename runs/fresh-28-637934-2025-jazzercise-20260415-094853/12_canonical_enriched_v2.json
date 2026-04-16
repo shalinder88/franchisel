@@ -1,0 +1,137 @@
+{
+  "enrichment_version": "v2",
+  "extraction_date": "2026-04-15",
+  "brand": "Jazzercise",
+  "fdd_id": "637934-2025",
+  "item21_financial_structure": {
+    "revenue_streams": {
+      "continuing_franchise": {"2024": 9287764, "2023": 9309623, "2022": 8924062},
+      "merchandise": {"2024": 4635945, "2023": 3662956, "2022": 4093922},
+      "on_demand": {"2024": 3671202, "2023": 4129571, "2022": 4321988},
+      "other": {"2024": 2939445, "2023": 2279959, "2022": 2291496}
+    },
+    "franchise_fee_rebates": {"2024": 1226336, "2023": 1087632, "2022": 949041},
+    "insurance_net_income": {"2024": 605956},
+    "merchandise_cogs_pct": 0.505,
+    "advertising_expense": {"2024": 1744387, "2023": 1432864, "2022": 1345785},
+    "shipping_handling_expense": {"2024": 398914, "2023": 366931, "2022": 591189},
+    "retirement_plan_contribution": {"2024": 263700, "2023": 328438, "2022": 221896}
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "cash": 10575896,
+      "ar_net": 1527781,
+      "inventories": 682528,
+      "investments_current": 1975313,
+      "prepaid": 1387496,
+      "total_current_assets": 16149014,
+      "rou_asset": 975671,
+      "equipment_net": 873853,
+      "website_dev_net": 533228,
+      "investments_noncurrent": 2035716,
+      "other_assets": 641206,
+      "total_assets": 21208688,
+      "ap_accrued": 3747413,
+      "deferred_revenue": 2280915,
+      "lease_liability_current": 211968,
+      "total_current_liabilities": 6240296,
+      "deferred_tax_liability": 47048,
+      "lease_liability_noncurrent": 857293,
+      "total_liabilities": 7144637,
+      "common_stock": 20000,
+      "retained_earnings": 14044051,
+      "total_equity": 14064051
+    },
+    "income_statement_2024": {
+      "revenue": 20534356,
+      "cogs": 4157028,
+      "sga": 16464293,
+      "operating_income": -86965,
+      "interest_dividend_income": 483308,
+      "unrealized_gain": 192505,
+      "other_income_net": 691154,
+      "pretax_income": 604189,
+      "income_tax": 184998,
+      "net_income": 419191
+    },
+    "cash_flow_2024": {
+      "operating": -905697,
+      "investing": 3991831,
+      "net_change": 3086134,
+      "taxes_paid": 250574
+    }
+  },
+  "item6_fee_detail": {
+    "fees": [
+      {"name": "Continuing Fee/Royalties", "rate": "20%", "basis": "Gross member enrollment", "minimum_class_owner": "$250/mo", "minimum_business_owner": "$500/mo", "frequency": "Monthly"},
+      {"name": "Associate Fee", "amount": "$130/yr or $13/mo", "frequency": "Annual or Monthly"},
+      {"name": "Music Royalties (ASCAP)", "amount_low": "$73", "amount_high": "$136", "frequency": "Annual"},
+      {"name": "Music Royalties (BMI)", "amount_low": "$69", "amount_high": "$135", "frequency": "Annual"},
+      {"name": "Music Royalties (SESAC)", "amount_low": "$29", "amount_high": "$55", "frequency": "Annual"},
+      {"name": "Music Royalties (GMR)", "amount_low": "$29", "amount_high": "$58", "frequency": "Annual"},
+      {"name": "Music Admin Fee", "amount": "$8", "frequency": "Annual"},
+      {"name": "Insurance", "amount_low": "$245", "amount_high": "$345", "frequency": "Annual"},
+      {"name": "Late Fee", "amount": "$50 ($20 for monthly fees)", "frequency": "Per occurrence"},
+      {"name": "Returning Franchisee Fee", "amount": "$250", "frequency": "One-time"},
+      {"name": "Recertification Fee", "amount": "$625", "frequency": "One-time"},
+      {"name": "Advertising Contribution", "amount": "TBD", "status": "Not established"},
+      {"name": "Technology Fee", "amount": "TBD", "status": "Not established"}
+    ]
+  },
+  "investments_detail": {
+    "mutual_funds": {"2024": 2035716, "2023": 1388710, "2022": 1221691},
+    "treasury_bonds": {"2024": 1975313, "2023": 5111302, "2022": 5799585},
+    "certificates_of_deposit": {"2024": 0, "2023": 2108809, "2022": 1092764},
+    "total": {"2024": 4011029, "2023": 8608821, "2022": 8114040}
+  },
+  "accounts_receivable_detail": {
+    "continuing_franchise_fees": {"2024": 988136, "2023": 150416, "2022": 119522},
+    "trade_receivables": {"2024": 411426, "2023": 179794, "2022": 197570},
+    "licensing_royalties": {"2024": 0, "2023": 0, "2022": 9733},
+    "miscellaneous": {"2024": 136019, "2023": 69783, "2022": 56754},
+    "allowance": {"2024": -7800, "2023": -9498, "2022": -16367},
+    "net_total": {"2024": 1527781, "2023": 390495, "2022": 367212},
+    "note": "2024 increase due to new third-party billing/collection service collecting franchise fees in arrears"
+  },
+  "deferred_revenue_detail": {
+    "associate_fees_insurance": {"2024": 1546347, "2023": 1425651, "2022": 1410315},
+    "on_demand": {"2024": 616209, "2023": 641463, "2022": 702182},
+    "other": {"2024": 118359, "2023": 103478, "2022": 90843},
+    "total": {"2024": 2280915, "2023": 2170592, "2022": 2203340}
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Revenue recognition timing change (AR spike)", "severity": "medium", "source": "Note 4, p.93"},
+    {"id": "U2", "description": "Stock conversion Class A/B purpose unexplained", "severity": "low", "source": "Note 9, p.95"},
+    {"id": "U3", "description": "Related party Trust receivable $543,891", "severity": "medium", "source": "Note 11, p.97"},
+    {"id": "U4", "description": "Revel Dance Fitness competitive risk", "severity": "medium", "source": "Item 12, p.47"},
+    {"id": "U5", "description": "Negative operating cash flow $(905,697)", "severity": "medium", "source": "Cash flows, p.85"}
+  ],
+  "contradictions": [],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington", "Wisconsin"],
+    "forum_selection_overrides": ["Illinois", "Maryland", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+    "governing_law_overrides": ["Illinois", "New York", "North Dakota", "Rhode Island", "Washington", "Wisconsin"],
+    "general_release_overrides": ["California", "Illinois", "Maryland", "Minnesota", "New York", "North Dakota", "Virginia", "Washington"]
+  },
+  "lease_commitments": {
+    "2025": 233182,
+    "2026": 222655,
+    "2027": 226560,
+    "2028": 233357,
+    "2029": 211607,
+    "total_payments": 1127361,
+    "imputed_interest": 58100,
+    "present_value": 1069261,
+    "weighted_avg_discount_rate": "2.23%",
+    "weighted_avg_term_months": 54,
+    "related_party_rent_2024": 294372
+  },
+  "income_tax_detail": {
+    "current_federal": {"2024": -34672, "2023": 297742, "2022": 163881},
+    "current_state": {"2024": 39982, "2023": 83885, "2022": 52186},
+    "deferred_federal": {"2024": 155262, "2023": -23943, "2022": 16874},
+    "deferred_state": {"2024": 24426, "2023": -9216, "2022": -3186},
+    "total_provision": {"2024": 184998, "2023": 348468, "2022": 229755},
+    "entity_tax_status": "C corporation (since Jan 1, 2019; formerly S corp)"
+  }
+}

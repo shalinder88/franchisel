@@ -1,0 +1,66 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "reader_report": "02_reader_report.md",
+  "canonical": "09_final_canonical.json",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "Franchisee sets room rates subject to System Standards compliance and best rate guarantee; may not charge guest more than rate specified at booking time",
+      "source_reader_report": "Pass D, Item 16",
+      "source_pdf_page": 79,
+      "promoted_to": "item16_sales_restrictions"
+    },
+    {
+      "id": "P2",
+      "fact": "System Standards comprise 3,609 pages as of issuance date",
+      "source_reader_report": "Pass C, Item 11",
+      "source_pdf_page": 53,
+      "promoted_to": "training.system_standards_pages (already present)"
+    },
+    {
+      "id": "P3",
+      "fact": "Core Management must devote all working time to Hotel; may not concurrently maintain position at another lodging facility",
+      "source_reader_report": "Pass C, Item 15",
+      "source_pdf_page": 77,
+      "promoted_to": "management.core_management_exclusivity"
+    },
+    {
+      "id": "P4",
+      "fact": "Revenue manager certification required within 90 days; may serve up to 20 Brand Hotels",
+      "source_reader_report": "Pass C, Item 15",
+      "source_pdf_page": 77,
+      "promoted_to": "management.revenue_manager_certification"
+    },
+    {
+      "id": "P5",
+      "fact": "Hotel opening timeline: new development 20-36 months after application fee; conversion 9-12 months",
+      "source_reader_report": "Pass C, Item 11",
+      "source_pdf_page": 56,
+      "promoted_to": "concept.opening_timeline"
+    },
+    {
+      "id": "P6",
+      "fact": "For DRA, application fee per hotel is $50,000 + $500/room over 125 with NO initial franchise fee; royalty 5%; capex reserve 4%; initial term 20 years",
+      "source_reader_report": "Pass B, Item 1",
+      "source_pdf_page": 11,
+      "promoted_to": "initial_fees.dra_per_hotel_terms"
+    },
+    {
+      "id": "P7",
+      "fact": "Existing operating Brand Hotels may receive NO Area of Protection at all upon signing FA",
+      "source_reader_report": "Pass D, Item 12",
+      "source_pdf_page": 67,
+      "promoted_to": "territory.existing_hotels_may_get_no_aop (already present)"
+    },
+    {
+      "id": "P8",
+      "fact": "Hyatt Group's franchise and other fee revenues grew from $297M (2022) to $364M (2023) to $458M (2024) — 54% growth over 2 years across all Hyatt franchise brands",
+      "source_reader_report": "Pass F, Item 21 (via financial statements)",
+      "source_pdf_page": 96,
+      "promoted_to": "item21.key_financials_2024.franchise_fee_growth"
+    }
+  ],
+  "promotion_count": 8,
+  "already_in_canonical": 2,
+  "new_promotions": 6
+}

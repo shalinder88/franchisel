@@ -1,0 +1,63 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "fdd_id": "638056-2025",
+  "promoted_facts": [
+    {
+      "fact": "All entity assets and franchise contracts are pledged as collateral for Hilton parent debt maturing 2025-2033",
+      "source_reader_report": "Not in reader report — discovered in financial notes depth pass (Note 7)",
+      "source_pdf_page": 217,
+      "promoted_to": "item21_financials.key_observations",
+      "severity": "high"
+    },
+    {
+      "fact": "Entity is treated as a disregarded entity for US income tax purposes — no US income tax provision",
+      "source_reader_report": "Not explicitly stated in reader report",
+      "source_pdf_page": 217,
+      "promoted_to": "item21_financials.tax_status",
+      "severity": "medium"
+    },
+    {
+      "fact": "Graduate brand franchise contracts acquired May 2024 for ~$85M, 15-year amortization",
+      "source_reader_report": "Not in reader report — discovered in financial notes depth pass (Note 3)",
+      "source_pdf_page": 216,
+      "promoted_to": "item21_financials.acquisitions",
+      "severity": "medium"
+    },
+    {
+      "fact": "Contract acquisition costs (incentives to hotel owners) totaling $376M gross are amortized as reduction of royalty fees",
+      "source_reader_report": "Not in reader report",
+      "source_pdf_page": 215,
+      "promoted_to": "item21_financials.key_observations",
+      "severity": "medium"
+    },
+    {
+      "fact": "Operator agreement with Hilton affiliate exists, entitling affiliate to reasonable fee, but no compensation paid in 2022-2024",
+      "source_reader_report": "Not in reader report",
+      "source_pdf_page": 218,
+      "promoted_to": "item21_financials.related_party",
+      "severity": "low"
+    },
+    {
+      "fact": "Franchise deposits collected by Hilton affiliates into lockbox account to which entity has no access",
+      "source_reader_report": "Not in reader report",
+      "source_pdf_page": 217,
+      "promoted_to": "item21_financials.related_party",
+      "severity": "low"
+    },
+    {
+      "fact": "Subsequent events note contains apparent date typo — reads 'March 18, 2024' but should be March 18, 2025",
+      "source_reader_report": "Not in reader report",
+      "source_pdf_page": 218,
+      "promoted_to": "contradictions",
+      "severity": "low"
+    },
+    {
+      "fact": "HSM late payment interest rate is 18.5% per year, compounded daily",
+      "source_reader_report": "Mentioned in reader report Item 5 notes but not in canonical",
+      "source_pdf_page": 26,
+      "promoted_to": "item8_supplier_restrictions.hsm_late_payment_interest",
+      "severity": "low"
+    }
+  ],
+  "total_promoted": 8
+}

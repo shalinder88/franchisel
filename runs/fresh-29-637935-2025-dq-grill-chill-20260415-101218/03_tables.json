@@ -1,0 +1,364 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637935-2025",
+  "brand": "DQ Grill & Chill",
+  "tables": [
+    {
+      "table_id": "T5-1",
+      "item": 5,
+      "title": "Initial Fees Summary",
+      "source_pages": [20, 21],
+      "columns": ["Fee Type", "Amount", "Refundable"],
+      "rows": [
+        ["Initial Franchise Fee", "$45,000", "Partial — $10K deposit non-refundable; balance refundable in 4 specified circumstances"],
+        ["MultiTRA Trade Area Reservation Fee", "$22,500 × number of units", "Non-refundable"],
+        ["MTRA Fee", "$200/person", "Non-refundable"],
+        ["MTRA Retake Fee", "$200/retake", "Non-refundable"]
+      ],
+      "table_notes": [
+        "No initial franchise fee for conversion franchisees or relocating franchisees under relocation policy",
+        "ADQ may charge reduced non-refundable fee in certain situations (reopening closed location, certain captive venues, qualified multi-unit operators)",
+        "MultiTRA fee: $22,500 credited against each unit's initial franchise fee"
+      ]
+    },
+    {
+      "table_id": "T6-1",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [22, 23, 24, 25],
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Continuing License Fee (Royalty)", "4% of Gross Sales", "10th of each month for prior month", "Gross Sales = total revenue from all product sales excluding sales taxes and gift card sale revenue. May be reduced for specialty Captive-venue locations."],
+        ["Sales Promotion Program Fee", "5%–6% of Gross Sales", "10th of each month for prior month", "ADQ determines percentage within range; 90 days advance notice of adjustment. May be reduced for specialty Captive-venue."],
+        ["Transfer Fee", "$6,000", "When submit transfer application", "Increases $500 every 5 years starting Jan 1, 2030. Refundable less actual costs if ADQ refuses consent or exercises ROFR. MultiTRA not transferrable."],
+        ["Renewal Fee", "$22,500", "At time of renewal", ""],
+        ["Audit and Recordkeeping Costs", "Unpaid fees on understated Gross Sales plus audit costs", "After audit revealing ≥3% understatement", "If understatement ≥3%, franchisee pays all audit costs plus costs for additional audits within 2 years"],
+        ["Termination Fee", "2× royalty for last 12 months of active operations (or prorated formula)", "Upon termination", "Complex formula: if <12 months operation, 24× average monthly royalty; if <24 months remaining, months remaining × average monthly royalty. Applies only to ADQ-initiated default termination."],
+        ["Interest Expenses", "18% per annum or max contract rate permitted by law", "When due", "On past due payments to ADQ"],
+        ["Late Fees", "$50 per delinquent report or payment", "When due", ""],
+        ["Additional Training Fees", "Variable", "When incurred", "Must always have designated manager + 2 assistant managers trained"],
+        ["Gift Card Program Fees", "3% of total gift card redemptions", "When incurred", "~$200/year/location. Shared cost model with NMF."],
+        ["Costs and Attorneys' Fees", "Variable", "When incurred", "For enforcement of franchise agreement"],
+        ["Training Materials", "$150–$500", "As materials provided", "Periodic required purchase"],
+        ["Training Cancellation/Substitution Fee", "$100–$1,000", "Upon cancellation/substitution", "$150 for phase 1-2 cancel >14 days; $750 for phase 1-2 cancel ≤14 days; $1,000 for phase 3 cancel ≤21 days; $200 substitution fee <14 days before class"]
+      ],
+      "table_notes": [
+        "All fees payable to ADQ or affiliates, uniformly imposed, nonrefundable (except as noted)",
+        "Conversion franchisees have special royalty phase-in schedules (see footnotes 2, 3)",
+        "Relocation franchisees carry over existing rates for years 1-5, mid-point for years 6-10, then standard",
+        "If late paying/reporting, ADQ may require weekly payment program",
+        "Franchisee must pay all business debts, liens and taxes promptly; ADQ may pay them and require reimbursement"
+      ]
+    },
+    {
+      "table_id": "T7-1",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [26, 27, 28, 29, 30, 31],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Franchise Fee", "$45,000", "$45,000", "Lump sum", "When submit franchise application", "ADQ"],
+        ["ALTA Survey and/or SIR", "$0", "$5,000", "Lump sum", "As incurred in site selection", "Third party suppliers"],
+        ["Initial Training Fees and Costs", "$1,200", "$12,600", "Lump sum", "Prior to training", "ADQ or third party"],
+        ["Travel and Living Expenses for Training", "$23,000", "$42,950", "Lump sum", "As incurred during programs", "Transportation/hotels/restaurants"],
+        ["Building, Construction and Leasehold Improvements", "$800,000", "$1,400,000", "As incurred", "Prior to opening", "Landlord/third party/contractors"],
+        ["Construction Consultation Services", "$0", "$7,500", "Lump sum", "Prior to consultation", "ADQ"],
+        ["Building Plans, Design Intent Plans and Architectural Seal", "$15,000", "$60,000", "Lump sum", "As incurred", "ADQ or third party"],
+        ["Equipment (includes signs and POS systems)", "$550,000", "$700,000", "Lump sum or financed", "Usually upon placement of order", "Third party suppliers"],
+        ["Training Inventory", "$6,000", "$12,000", "Lump sum", "Prior to opening", "Third party suppliers"],
+        ["Opening Inventory", "$20,000", "$35,000", "Lump sum", "Prior to opening", "Third party suppliers"],
+        ["Utility Deposits, Business Licenses, Govt Charges", "$4,000", "$17,000", "Lump sum", "Prior to opening", "Third party/municipality"],
+        ["Attorneys' Fees", "$1,000", "$8,000", "Lump sum", "As incurred", "Attorney"],
+        ["Additional Funds - 3 Months", "$51,000", "$198,000", "As incurred", "Prior to opening and as incurred", "ADQ/affiliates/employees/third party"],
+        ["TOTAL", "$1,516,200", "$2,543,050", "", "", ""]
+      ],
+      "table_notes": [
+        "Does not include cost of land ($250K–$800K if purchasing)",
+        "MultiTRA trade area reservation fee not included",
+        "Two prototypical buildings: Next Gen Core 34 (1,938 sq ft, seats 34, lot min 25,830 sq ft) and Next Gen Core 46 (2,208 sq ft, seats 46, lot min 32,026 sq ft)",
+        "Leased facility: building cost $350K–$500K; owned facility: $600K–$980K (site work + building)",
+        "Equipment for owned Next Gen Core 34: $575K–$625K; Core 46: $625K–$650K",
+        "Lenders typically require 20% equity on leasehold improvements, 25% on equipment",
+        "Conversion costs may vary significantly depending on facility type/condition",
+        "Additional Funds high end assumes MultiTRA with Designated Supervisory Executive hire"
+      ]
+    },
+    {
+      "table_id": "T8-1",
+      "item": 8,
+      "title": "Supply Chain Revenue and Vendor Payments",
+      "source_pages": [36],
+      "columns": ["Metric", "Value"],
+      "rows": [
+        ["IDQ product/service/supplier fee revenue (2024)", "$40,325,880"],
+        ["IDQ total revenues (2024)", "$257,640,594"],
+        ["Product revenue as % of total", "16%"],
+        ["Vendor payment range to IDQ/affiliates", "0%–10% of supplier sales to franchisees"],
+        ["USCI authorized warehouse fee to USCI", "Up to 0.5% of gross sales"],
+        ["NMF vendor payments (2024)", "~$3,082,197"],
+        ["USCI maximum average supply chain margin (2025)", "1.5%"]
+      ],
+      "table_notes": [
+        "IDQ/ADQ margin commitment is permanent and binding on any future buyer of USCI",
+        "Manufactured frozen novelties under separate margin schedule, also 1.5% max in 2025",
+        "National vendor payments for marketing flow through NMF and are outside margin commitment scope"
+      ]
+    },
+    {
+      "table_id": "T19-A",
+      "item": 19,
+      "title": "Schedule A — Gross Sales (Qualifying DQ Grill & Chill Restaurants)",
+      "source_pages": [64],
+      "columns": ["Year", "Restaurants", "Average Gross Sales", "Median", "High", "Low", "# At/Above Avg", "% At/Above Avg"],
+      "rows": [
+        ["2021", "247", "$1,380,626", "$1,365,757", "$2,886,417", "$518,468", "119", "48%"],
+        ["2022", "276", "$1,358,926", "$1,316,913", "$3,135,208", "$484,663", "122", "44%"],
+        ["2023", "309", "$1,397,343", "$1,352,607", "$3,336,388", "$568,696", "137", "44%"],
+        ["2024", "321", "$1,427,281", "$1,355,422", "$3,381,809", "$583,730", "140", "44%"]
+      ],
+      "table_notes": [
+        "Population: Newly constructed freestanding restaurants developed under ADQ new/ARD programs, opened Jan 2014–Dec 2023, operated all 12 months of noted year, franchisee-owned",
+        "Excludes: Texas DQ, conversions, fuel centers, non-traditional, territory operator subfranchised units",
+        "Excluded for not reporting all 12 months: 29 (2021), 33 (2022), 31 (2023), 19 (2024)"
+      ]
+    },
+    {
+      "table_id": "T19-B",
+      "item": 19,
+      "title": "Schedule B — Expense Categories and Manageable Profit",
+      "source_pages": [65, 66],
+      "columns": ["Year", "Category", "Store Count", "Average", "Maximum", "Median", "Minimum", "# At/Above Avg", "% At/Above Avg"],
+      "rows": [
+        ["2021", "Gross Sales", "156", "$1,409,751", "$2,895,122", "$1,385,178", "$564,227", "70", "45%"],
+        ["2021", "Cost of Goods", "156", "29.80%", "37.94%", "29.74%", "21.58%", "80", "51%"],
+        ["2021", "Labor", "156", "28.62%", "43.45%", "28.03%", "21.03%", "90", "58%"],
+        ["2021", "Restaurant Controllables", "156", "10.05%", "16.87%", "9.99%", "6.00%", "79", "51%"],
+        ["2021", "Manageable Profit", "156", "31.54%", "44.53%", "32.36%", "11.34%", "90", "58%"],
+        ["2022", "Gross Sales", "175", "$1,386,222", "$3,135,532", "$1,339,956", "$650,772", "77", "44%"],
+        ["2022", "Cost of Goods", "175", "31.84%", "41.81%", "31.50%", "25.69%", "95", "54%"],
+        ["2022", "Labor", "175", "29.17%", "43.56%", "28.62%", "20.57%", "99", "57%"],
+        ["2022", "Restaurant Controllables", "175", "10.83%", "16.60%", "10.63%", "6.08%", "92", "53%"],
+        ["2022", "Manageable Profit", "175", "28.17%", "41.66%", "29.10%", "7.58%", "97", "55%"],
+        ["2023", "Gross Sales", "203", "$1,433,380", "$3,336,926", "$1,377,549", "$568,696", "94", "46%"],
+        ["2023", "Cost of Goods", "203", "30.39%", "38.01%", "30.46%", "23.02%", "100", "49%"],
+        ["2023", "Labor", "203", "28.53%", "42.38%", "28.27%", "20.50%", "108", "53%"],
+        ["2023", "Restaurant Controllables", "203", "10.61%", "16.58%", "10.28%", "6.06%", "113", "56%"],
+        ["2023", "Manageable Profit", "203", "30.47%", "44.20%", "30.91%", "13.62%", "104", "51%"],
+        ["2024", "Gross Sales", "55", "$1,648,666", "$2,602,276", "$1,616,437", "$759,561", "26", "47%"],
+        ["2024", "Cost of Goods", "55", "30.69%", "42.79%", "30.53%", "20.29%", "29", "53%"],
+        ["2024", "Labor", "55", "30.28%", "38.67%", "29.90%", "25.70%", "31", "56%"],
+        ["2024", "Restaurant Controllables", "55", "10.11%", "15.88%", "9.75%", "6.82%", "29", "53%"],
+        ["2024", "Manageable Profit", "55", "28.92%", "41.52%", "29.11%", "15.58%", "28", "51%"]
+      ],
+      "table_notes": [
+        "Schedule B subset: restaurants that submitted usable P&Ls. Excluded from Schedule A count: 91 (2021), 101 (2022), 106 (2023), 285 (2024)",
+        "Manageable Profit = Gross Sales minus COGS, Labor, Controllables. BEFORE occupancy, insurance, royalties (4%), sales promotion fees (5-6%), legal/accounting/admin",
+        "Labor includes franchisee owner compensation paid as manager salary but not owner draws/dividends",
+        "2024 has dramatically smaller sample (55 vs. 321 in Schedule A) — 285 excluded for missing/problematic P&Ls"
+      ]
+    },
+    {
+      "table_id": "T20-1",
+      "item": 20,
+      "title": "DQ Grill & Chill / Brazier Direct-Licensed Systemwide Outlet Summary",
+      "source_pages": [69],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "1,952", "1,965", "+13"],
+        ["Franchised", "2023", "1,965", "1,967", "+2"],
+        ["Franchised", "2024", "1,967", "1,969", "+2"],
+        ["Company-Owned", "2022", "2", "2", "0"],
+        ["Company-Owned", "2023", "2", "2", "0"],
+        ["Company-Owned", "2024", "2", "2", "0"],
+        ["Total", "2022", "1,954", "1,967", "+13"],
+        ["Total", "2023", "1,967", "1,969", "+2"],
+        ["Total", "2024", "1,969", "1,971", "+2"]
+      ],
+      "table_notes": [
+        "Excludes Texas DQ restaurants, subfranchised outlets, and other franchise programs in Item 1"
+      ]
+    },
+    {
+      "table_id": "T20-2",
+      "item": 20,
+      "title": "DQ G&C / Brazier Direct-Licensed Status of Franchised Outlets — Totals",
+      "source_pages": [72, 75],
+      "columns": ["Year", "Start", "Opened", "Terminated", "Non-Renewals", "Reacquired", "Ceased-Other", "End"],
+      "rows": [
+        ["2022", "1,952", "38", "25", "0", "0", "0", "1,965"],
+        ["2023", "1,965", "41", "39", "0", "0", "0", "1,967"],
+        ["2024", "1,967", "30", "28", "0", "0", "0", "1,969"]
+      ],
+      "table_notes": [
+        "Conversions from another DQ concept or acquisitions of territory operator rights included in openings: 1 (2022), 4 (2023), 3 (2024)",
+        "Transfers to new owners: 108 (2022), 101 (2023), 113 (2024)"
+      ]
+    },
+    {
+      "table_id": "T20-3",
+      "item": 20,
+      "title": "DQ G&C / Brazier Direct-Licensed Projected Openings (as of Dec 31, 2024)",
+      "source_pages": [76],
+      "columns": ["Metric", "Value"],
+      "rows": [
+        ["Franchise Agreements Signed But Not Opened", "26"],
+        ["Projected New Franchised Outlets Next Fiscal Year", "38"],
+        ["Projected New Company-Owned Outlets Next Fiscal Year", "0"]
+      ],
+      "table_notes": [
+        "Top projected states: Florida (7), Texas (6), Georgia (5), North Carolina (3), Tennessee (3)"
+      ]
+    },
+    {
+      "table_id": "T20-4",
+      "item": 20,
+      "title": "Subfranchised Territory Operator Outlets — Systemwide Summary",
+      "source_pages": [77],
+      "columns": ["Year", "Start", "End", "Net Change"],
+      "rows": [
+        ["2022", "569", "572", "+3"],
+        ["2023", "572", "566", "-6"],
+        ["2024", "566", "567", "+1"]
+      ],
+      "table_notes": [
+        "Territory operators not required to provide projected opening data to ADQ"
+      ]
+    },
+    {
+      "table_id": "T20-5",
+      "item": 20,
+      "title": "Texas DQ Restaurant — Systemwide Summary",
+      "source_pages": [81],
+      "columns": ["Year", "Start", "End", "Net Change"],
+      "rows": [
+        ["2022", "586", "585", "-1"],
+        ["2023", "585", "579", "-6"],
+        ["2024", "579", "568", "-11"]
+      ],
+      "table_notes": [
+        "Texas DQ declining: 14 terminations vs 3 openings in 2024",
+        "ADQ acquired Texas territory operator subfranchisor rights in 1980 (over 900 subfranchised DQ restaurants)"
+      ]
+    },
+    {
+      "table_id": "T21-1",
+      "item": 21,
+      "title": "IDQ Consolidated Balance Sheet (Key Line Items)",
+      "source_pages": [493],
+      "columns": ["Line Item", "2024 ($000)", "2023 ($000)"],
+      "rows": [
+        ["Cash and cash equivalents", "27,271", "27,032"],
+        ["Notes and accounts receivable (net)", "50,352", "50,742"],
+        ["Cash pooling receivable from affiliate", "44,559", "55,807"],
+        ["Total current assets", "132,080", "137,595"],
+        ["Property and equipment, net", "10,903", "12,309"],
+        ["Goodwill", "92,023", "92,214"],
+        ["Intangibles, net", "82,398", "80,049"],
+        ["Total noncurrent assets", "223,826", "222,918"],
+        ["Total assets", "355,906", "360,513"],
+        ["Accounts payable", "27,026", "24,348"],
+        ["Committed advertising", "39,844", "35,618"],
+        ["Unredeemed gift card liabilities", "102,697", "97,376"],
+        ["Total current liabilities", "207,460", "196,917"],
+        ["Total noncurrent liabilities", "68,136", "70,220"],
+        ["Total liabilities", "275,596", "267,137"],
+        ["Additional paid-in capital", "152,197", "152,197"],
+        ["Retained deficit", "(68,411)", "(56,286)"],
+        ["Total stockholder's equity", "80,310", "93,376"],
+        ["Total liabilities and stockholder's equity", "355,906", "360,513"]
+      ],
+      "table_notes": [
+        "IDQ is consolidated parent of ADQ and all subsidiaries",
+        "Retained deficit indicates cumulative dividends exceed cumulative earnings — Berkshire extracts substantial dividends",
+        "Gift card liabilities ($102.7M) and committed advertising ($39.8M) are large pass-through liabilities"
+      ]
+    },
+    {
+      "table_id": "T21-2",
+      "item": 21,
+      "title": "IDQ Consolidated Income Statement",
+      "source_pages": [494],
+      "columns": ["Line Item", "2024 ($000)", "2023 ($000)", "2022 ($000)"],
+      "rows": [
+        ["Service fees (royalties)", "198,627", "188,908", "173,116"],
+        ["Other fees and franchise sales", "45,681", "45,918", "46,482"],
+        ["Sales of advertising kits", "9,446", "9,751", "13,939"],
+        ["Sales of company-owned restaurants", "3,633", "3,412", "3,146"],
+        ["Other", "254", "272", "254"],
+        ["Total revenues", "257,641", "248,261", "236,937"],
+        ["Total costs and expenses", "131,631", "127,777", "121,027"],
+        ["Operating income", "126,010", "120,484", "115,910"],
+        ["Net interest income", "3,137", "3,370", "1,249"],
+        ["Income before income taxes", "129,147", "123,854", "117,159"],
+        ["Provision for income taxes", "31,272", "29,970", "28,340"],
+        ["Net income", "97,875", "93,884", "88,819"]
+      ],
+      "table_notes": [
+        "Revenue growing steadily: $236.9M (2022) → $248.3M (2023) → $257.6M (2024)",
+        "Service fees (royalties) are dominant revenue source: 77% of total in 2024",
+        "SGA expenses: $115.6M (2024), 44.9% of revenue",
+        "Net income margin: 38.0% (2024)"
+      ]
+    },
+    {
+      "table_id": "T21-3",
+      "item": 21,
+      "title": "IDQ Consolidated Cash Flows",
+      "source_pages": [496],
+      "columns": ["Line Item", "2024 ($000)", "2023 ($000)", "2022 ($000)"],
+      "rows": [
+        ["Net income", "97,875", "93,884", "88,819"],
+        ["Net cash from operating activities", "105,613", "123,935", "84,038"],
+        ["Capital expenditures", "(4,888)", "(6,439)", "(4,047)"],
+        ["Net cash from investing activities", "6,615", "(7,344)", "(57,827)"],
+        ["Dividends paid", "(110,000)", "(110,000)", "(85,000)"],
+        ["Net cash from financing activities", "(110,000)", "(110,000)", "(85,000)"],
+        ["Cash end of year", "27,271", "27,032", "20,207"]
+      ],
+      "table_notes": [
+        "Dividends to Berkshire: $110M (2024), $110M (2023), $85M (2022) — exceeds net income, funded partially from prior retained earnings",
+        "Cash pooling arrangement with BH Finance LLC (Berkshire subsidiary): $44.6M receivable at end of 2024",
+        "Capital expenditures modest ($4.9M in 2024) — asset-light franchisor model"
+      ]
+    },
+    {
+      "table_id": "T11-1",
+      "item": 11,
+      "title": "Training Program Summary",
+      "source_pages": [46, 47],
+      "columns": ["Phase", "Subject", "Classroom Hours", "OJT Hours", "Location"],
+      "rows": [
+        ["Phase 1", "Product & Equipment Training", "0", "121", "Approved certified DQ location"],
+        ["Phase 2", "Service, Management, Financial Basics", "0", "122", "Approved certified DQ location"],
+        ["Phase 3", "People, PRIDE and Profit", "32", "0", "Classroom in Minneapolis, MN or designated location"],
+        ["TOTAL", "", "32", "245", ""]
+      ],
+      "table_notes": [
+        "Phase 1: ~2.5 weeks; includes restaurant operations 116 hrs, customer service 3 hrs, sanitation 2 hrs, safety 2 hrs",
+        "Phase 2: ~2.5 weeks; includes restaurant operations 104 hrs, financial management 8 hrs, marketing 2 hrs, register/back office 8 hrs",
+        "Phase 3: 4 days classroom; includes facility management 3 hrs, HR 7 hrs, customer service 4 hrs, situational leadership 8 hrs, goals/change 4 hrs, profitability 6 hrs",
+        "ARD locations may test out of Phase 1 and/or Phase 2 with 12+ months DQ management experience",
+        "Must complete Phase 3 within 6 months of Phase 2 or pay additional $1,000/person"
+      ]
+    },
+    {
+      "table_id": "T11-2",
+      "item": 11,
+      "title": "Advertising/Marketing Fund Spending Breakdown (2024)",
+      "source_pages": [43],
+      "columns": ["Category", "Percentage"],
+      "rows": [
+        ["Production", "19.7%"],
+        ["Media Placement", "66.8%"],
+        ["Administrative Expenses", "4.3%"],
+        ["Other (audits, CMN, POS, research, advisory councils)", "9.1%"],
+        ["TOTAL", "100.0%"]
+      ],
+      "table_notes": [
+        "Based on combined sales promotion payments from all DQ business types",
+        "Percentages vary by individual restaurant, area, group, or type of DQ business",
+        "ADQ management fee: 7% of sales promotion payments received (not taken above 3% of gross sales)"
+      ]
+    }
+  ]
+}

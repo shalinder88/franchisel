@@ -1,0 +1,114 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-15",
+  "source_pages": [211, 212, 213, 214, 215, 216, 217],
+  "notes": [
+    {
+      "note_number": 1,
+      "title": "Organization and Operations",
+      "content": "ESH Strategies Franchise LLC formed as Delaware LLC on 9/16/2010. Sole member is ESH Hospitality Strategies LLC. On 6/16/2021, Extended Stay America Inc sold 100% interest in the Member to Eagle Strategies Holdings LLC. Company franchises extended stay hotels under three brands: ESA Suites, ESA Select Suites, ESA Premier Suites.",
+      "franchised_hotels_detail": {
+        "end_2024": {"suites": 107, "suites_rooms": 10975, "select": 5, "select_rooms": 435, "premier": 17, "premier_rooms": 1941, "total": 129, "total_rooms": 13351},
+        "end_2023": {"suites": 104, "suites_rooms": 10768, "select": 1, "select_rooms": 84, "premier": 9, "premier_rooms": 984, "total": 114, "total_rooms": 11836}
+      },
+      "activity_2024": "Added 25 franchised hotel properties, removed 10"
+    },
+    {
+      "note_number": 2,
+      "title": "Basis of Presentation and Summary of Significant Accounting Policies",
+      "policies": {
+        "basis": "U.S. GAAP",
+        "use_of_estimates": "Significant estimates for useful lives of intangible assets",
+        "cash_equivalents": "Cash on hand, demand deposits, short-term investments with original maturities ≤3 months. Deposits exceed $250K FDIC limit with one institution.",
+        "accounts_receivable": "Franchise fees, system service fees, reimbursements. Allowance for credit losses when collection doubtful. Historical collection activity and business forecasts used. Allowance immaterial at 12/31/2024 and 12/31/2023.",
+        "contract_acquisition_costs": "Direct incremental costs to obtain contracts. Amortized straight-line over initial non-cancellable term or expected contract life. Included in G&A. Reviewed for impairment — no material impairment 2024 or 2023.",
+        "net_investment_in_leases": "Sales-type leases with certain franchisees for IT equipment, 5-year terms fully maturing in 2025. Lessee purchase option believed reasonably certain to exercise. No interest income recognized (sales price = carrying value).",
+        "intangible_assets": "Franchise agreements (20-year useful life) and software licenses (non-cancellable contract term). Amortized straight-line. Software license fees may vary based on available rooms at franchised hotels. Liability remeasured at each reporting date. $0.5M current, $1.2M/$1.5M non-current license fees payable. No impairment charges 2024 or 2023.",
+        "revenue_recognition_franchise_fees": "Initial fees deferred and recognized over expected contract life. Ongoing royalties (% of monthly revenue) recognized over time as franchisees derive value from IP license.",
+        "revenue_recognition_system_services": "Direct costs: reimbursed dollar-for-dollar, recognized gross. Indirect costs (marketing, tech, reservations, national sales, revenue management): funded by SSF (% of revenue), recognized over time. Single performance obligation combining IP access + system services. Output method based on performance completed. Variable consideration — most likely amount method.",
+        "other_revenues": "Miscellaneous fees, QA penalties, pre-opening/admin activities. Contract termination fees: $2.1M (2024), $0.2M (2023). Recognized when event occurs.",
+        "income_taxes": "LLC not subject to federal income taxes. May be subject to state/local taxes in certain jurisdictions."
+      }
+    },
+    {
+      "note_number": 3,
+      "title": "Intangible Assets",
+      "detail_2024": {
+        "franchise_agreements": {"gross": 4900, "accum_amort": 1286, "net": 3614, "remaining_life": "10 years"},
+        "software_licenses": {"gross": 2356, "accum_amort": 599, "net": 1757, "remaining_life": "3 years"},
+        "total": {"gross": 7256, "accum_amort": 1885, "net": 5371}
+      },
+      "detail_2023": {
+        "franchise_agreements": {"gross": 4900, "accum_amort": 922, "net": 3978, "remaining_life": "11 years"},
+        "software_licenses": {"gross": 2070, "accum_amort": 37, "net": 2033, "remaining_life": "5 years"},
+        "software_in_process": {"gross": 17, "net": 17},
+        "total": {"gross": 6987, "accum_amort": 959, "net": 6028}
+      },
+      "future_amortization": {"2025": 933, "2026": 933, "2027": 933, "2028": 410, "2029": 363, "thereafter": 1799, "total": 5371}
+    },
+    {
+      "note_number": 4,
+      "title": "Brand Launch Expenses",
+      "description": "In 2022, $2.5M incurred for ESA Select Suites brand launch — payments to existing franchisees for area-of-protection exemptions. Mostly satisfied through net reduction in franchise fees.",
+      "remaining_accrued_2024": {"total": 1600, "current": 300, "noncurrent": 1300},
+      "remaining_accrued_2023": {"total": 2200, "current": 600, "noncurrent": 1600}
+    },
+    {
+      "note_number": 5,
+      "title": "Customer Contracts",
+      "contract_liabilities": {
+        "beginning_2024": 4478,
+        "ending_2024": 4842,
+        "recognized_2024": 824,
+        "beginning_2023": 2406,
+        "ending_2023": 4478,
+        "recognized_2023": 117
+      },
+      "classification": {
+        "current_2024": 100,
+        "noncurrent_2024": 4700,
+        "current_2023": "less than 100",
+        "noncurrent_2023": 4400
+      },
+      "performance_obligations": "Franchise fees and SSF considered sales-based or wholly unsatisfied series. Expected satisfaction over 20-year franchise terms."
+    },
+    {
+      "note_number": 6,
+      "title": "Related Party Transactions",
+      "manager": {
+        "entity": "ESA Management LLC",
+        "relationship": "Non-economic, non-member co-managers affiliated with entities owning Eagle Strategies",
+        "overhead_reimbursements": {"2024": 6600, "2023": 6500, "classification": "G&A expenses"},
+        "system_service_reimbursements": {"2024": 3800, "2023": 3200, "classification": "system service expenses"},
+        "due_to_manager": {"2024": 2700, "2023": 3000}
+      },
+      "trademark": {
+        "entity": "ESH Strategies Branding LLC",
+        "license_fee": "5% of franchise royalties",
+        "expense": {"2024": 400, "2023": 400},
+        "due_to": {"2024": 100, "2023": 100}
+      },
+      "esh_reit": {
+        "entity": "ESH Hospitality, Inc.",
+        "relationship": "Disbursements/receipts on company's behalf",
+        "due_to": {"2024": 0, "2023": 1600}
+      }
+    },
+    {
+      "note_number": 7,
+      "title": "Subsequent Events",
+      "evaluation_date": "2025-03-24",
+      "events": "None noted"
+    }
+  ],
+  "accounting_policy_summary": {
+    "depreciation_amortization": "Straight-line for all intangible assets",
+    "impairment": "Reviewed annually or when indicators present; no charges recognized",
+    "income_tax": "Not subject to federal income tax (LLC pass-through)",
+    "lease_accounting": "Sales-type leases for IT equipment; maturing 2025",
+    "vie": "Not applicable / not disclosed",
+    "subsequent_events": "None",
+    "related_party": "Fundamental to operations — auditor emphasis of matter",
+    "advertising_fund": "No separate advertising fund; SSF is general services fee"
+  }
+}

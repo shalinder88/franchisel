@@ -1,0 +1,400 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "AumBio",
+  "filing_id": "637933-2025",
+  "tables": [
+    {
+      "table_id": "T01_item5_initial_franchise_fee",
+      "item": 5,
+      "title": "Initial Franchise Fee / Development Fee Schedule",
+      "source_pages": [9, 10],
+      "columns": ["units", "fee"],
+      "rows": [
+        {"units": "1 franchise", "fee": "$50,000"},
+        {"units": "2 franchises (MUDA)", "fee": "$90,000"},
+        {"units": "3 franchises (MUDA)", "fee": "$125,000"}
+      ],
+      "table_notes": [
+        "Initial Franchise Fee is uniform and fully earned and nonrefundable on signing.",
+        "Development Fee paid upon signing MUDA and first Franchise Agreement.",
+        "Site Evaluation Fee: $1,000 per visit (3rd+ visits) plus out-of-pocket expenses."
+      ],
+      "provenance": "Item 5, PDF pages 9-10"
+    },
+    {
+      "table_id": "T02_item6_other_fees",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [10, 11, 12],
+      "columns": ["fee_type", "amount", "due_date", "remarks"],
+      "rows": [
+        {"fee_type": "Royalty Fee", "amount": "6% of Gross Revenues", "due_date": "Monthly, by 5th day", "remarks": "From first day open for business"},
+        {"fee_type": "Brand Fund", "amount": "1% of Gross Revenue", "due_date": "Monthly, by 5th day", "remarks": "Currently collected at 1%"},
+        {"fee_type": "Transfer Fee", "amount": "50% of then-current IFF", "due_date": "At time of transfer", "remarks": "For >50% interest transfer. No fee for one-time entity conversion."},
+        {"fee_type": "Management Fee", "amount": "$500 per day", "due_date": "Within 10 days of invoice", "remarks": "If franchisor operates after death/disability. Subject to Inflation Adjustment."},
+        {"fee_type": "Audit", "amount": "Cost of audit + 18% interest/annum on understatement", "due_date": "Upon completion", "remarks": "If reports not provided or understatement exceeds 2%"},
+        {"fee_type": "Supplier Evaluation Fee", "amount": "$500", "due_date": "When invoiced", "remarks": "To evaluate alternate supplier"},
+        {"fee_type": "Additional Training & Assistance", "amount": "$500/day/person + per diem", "due_date": "When invoiced", "remarks": "At franchisee request or if franchisor determines additional training needed"},
+        {"fee_type": "Interest on Late Payments", "amount": "18% per annum or max allowed by law", "due_date": "When invoiced", "remarks": "From date of nonpayment on all overdue amounts"},
+        {"fee_type": "Mandatory Convention Attendance", "amount": "$1,000 + employee salary/per diem/travel", "due_date": "If fail to attend", "remarks": "National and regional meetings required"},
+        {"fee_type": "Fee for Lost Manuals", "amount": "$500", "due_date": "When invoiced", "remarks": "Per lost/misplaced manual"},
+        {"fee_type": "Indemnification", "amount": "Actual attorneys' fees and costs", "due_date": "As incurred", "remarks": "For damages, claims, lawsuits related to franchise"},
+        {"fee_type": "Technology Fee", "amount": "$100 per month", "due_date": "Monthly, by 5th day", "remarks": "Includes proprietary client management system, website. Subject to increase upon notice."},
+        {"fee_type": "Local Marketing Requirement", "amount": "Minimum $1,500 per month", "due_date": "As incurred", "remarks": "Must market per franchisor standards"},
+        {"fee_type": "Attorney's Fees", "amount": "Actual fees", "due_date": "As incurred", "remarks": "If noncompliant with FA obligations"},
+        {"fee_type": "Liquidated Damages", "amount": "Royalty + Brand Fund for lesser of 2 years or remaining term", "due_date": "On demand", "remarks": "If terminated for default or franchisee terminates without right"},
+        {"fee_type": "On-Site Inspection Fee", "amount": "Up to $5,000", "due_date": "Upon invoice", "remarks": "If reports missing or material deficiencies found"},
+        {"fee_type": "Prohibited Product/Service Fine", "amount": "$500 per day", "due_date": "If incurred", "remarks": "In addition to other remedies"}
+      ],
+      "table_notes": [
+        "Note 1: All fees imposed by franchisor, payable to franchisor, uniformly imposed. Collected by automatic bank drafts.",
+        "Note 2: Gross Revenues = all revenue whether cash/credit, exchanges, barter, insurance proceeds for lost profit. Excludes separately stated sales taxes.",
+        "Note 3: Renewal Fee compensates for legal/administrative costs including premises inspection.",
+        "Note 4: Inflation Adjustment = increase based on CPI-U (1982-1984=100) or comparable index.",
+        "Note 5: Transfer Fee compensates for attorney fees, training, other assistance for transferee.",
+        "Note 6: Audit rights apply if under-reporting exceeds 2% or reports not provided; costs include travel/lodging/meals.",
+        "Note 7: Technology Fee includes client management system license, website maintenance, upgrades.",
+        "Note 8: Liquidated damages calculated as average monthly royalty for prior 12 months x 24 months."
+      ],
+      "provenance": "Item 6, PDF pages 10-13"
+    },
+    {
+      "table_id": "T03_item7_initial_investment_single",
+      "item": 7,
+      "title": "Your Estimated Initial Investment — Single Unit",
+      "source_pages": [13, 14],
+      "columns": ["type_of_expenditure", "amount_low", "amount_high", "method_of_payment", "when_due", "to_whom"],
+      "rows": [
+        {"type_of_expenditure": "Initial Franchise Fee", "amount_low": "$50,000", "amount_high": "$50,000", "method_of_payment": "Check or wire transfer", "when_due": "Upon signing FA", "to_whom": "Us"},
+        {"type_of_expenditure": "Rent (3 months)", "amount_low": "$6,000", "amount_high": "$9,000", "method_of_payment": "Check", "when_due": "Upon signing lease", "to_whom": "Landlord"},
+        {"type_of_expenditure": "Lease Security Deposit", "amount_low": "$2,000", "amount_high": "$3,000", "method_of_payment": "Check", "when_due": "Upon signing lease", "to_whom": "Landlord"},
+        {"type_of_expenditure": "Utilities", "amount_low": "$1,000", "amount_high": "$1,500", "method_of_payment": "Check/debit/credit", "when_due": "Upon ordering service", "to_whom": "Utility providers"},
+        {"type_of_expenditure": "Leasehold Improvements", "amount_low": "$3,000", "amount_high": "$10,000", "method_of_payment": "Check", "when_due": "As incurred", "to_whom": "Contractors"},
+        {"type_of_expenditure": "Market Introduction Program", "amount_low": "$5,000", "amount_high": "$15,000", "method_of_payment": "Check/debit/credit", "when_due": "As incurred", "to_whom": "Vendors/suppliers"},
+        {"type_of_expenditure": "Furniture, Fixtures & Equipment", "amount_low": "$63,500", "amount_high": "$120,000", "method_of_payment": "Check/debit/credit", "when_due": "As incurred", "to_whom": "Vendors/suppliers"},
+        {"type_of_expenditure": "Computer Systems", "amount_low": "$3,000", "amount_high": "$5,000", "method_of_payment": "Check/debit/credit", "when_due": "As incurred", "to_whom": "Vendors/suppliers"},
+        {"type_of_expenditure": "Insurance (12 months)", "amount_low": "$500", "amount_high": "$1,500", "method_of_payment": "Check", "when_due": "Upon ordering", "to_whom": "Insurance company"},
+        {"type_of_expenditure": "Signage", "amount_low": "$500", "amount_high": "$2,000", "method_of_payment": "Check/debit/credit", "when_due": "Upon ordering", "to_whom": "Vendor"},
+        {"type_of_expenditure": "Office Expenses", "amount_low": "$300", "amount_high": "$500", "method_of_payment": "Check/debit/credit", "when_due": "As incurred", "to_whom": "Vendors"},
+        {"type_of_expenditure": "Inventory", "amount_low": "$100", "amount_high": "$300", "method_of_payment": "Check/debit/credit", "when_due": "Upon ordering", "to_whom": "Vendors"},
+        {"type_of_expenditure": "Software Licenses", "amount_low": "$120", "amount_high": "$120", "method_of_payment": null, "when_due": null, "to_whom": null},
+        {"type_of_expenditure": "Licenses and Permits", "amount_low": "$200", "amount_high": "$500", "method_of_payment": "Check", "when_due": "Upon application", "to_whom": "Government"},
+        {"type_of_expenditure": "Dues and Subscriptions", "amount_low": "$100", "amount_high": "$200", "method_of_payment": "Check/debit/credit", "when_due": "As incurred", "to_whom": "Vendors/trade orgs"},
+        {"type_of_expenditure": "Professional Fees", "amount_low": "$1,000", "amount_high": "$3,000", "method_of_payment": "Check/debit/credit", "when_due": "As incurred", "to_whom": "Professional service firms"},
+        {"type_of_expenditure": "Travel/lodging/meals for training", "amount_low": "$3,000", "amount_high": "$6,000", "method_of_payment": "Cash/debit/credit", "when_due": "As incurred", "to_whom": "Airlines/hotels/restaurants"},
+        {"type_of_expenditure": "Additional funds (first 3 months)", "amount_low": "$20,000", "amount_high": "$40,000", "method_of_payment": "Varies", "when_due": "Varies", "to_whom": "Employees/suppliers/utilities"},
+        {"type_of_expenditure": "TOTAL", "amount_low": "$159,320", "amount_high": "$267,620", "method_of_payment": null, "when_due": null, "to_whom": null}
+      ],
+      "table_notes": [
+        "Note 1: IFF is $50,000 for single territory.",
+        "Note 2: Center will be 700-1,500 sq ft in professional/office building. Rent varies by location. Site must be approved.",
+        "Note 3: Build-out to franchisor standards. Amount depends on landlord allowances and premises condition.",
+        "Note 4: Low end reflects minimum equipment purchase requirement. Additional equipment at discretion.",
+        "Note 5: Insurance requirements: GL ($1M/$2M), all-risks replacement, BI (90 days), workers' comp ($500K+), cyber ($1M/$2M), employment practices ($1M/$2M), other as required.",
+        "Note 6: Required software licenses paid directly to vendor.",
+        "Note 7: License/permit requirements vary by jurisdiction.",
+        "Note 8: Includes legal counsel for FA review, entity formation, accountant for accounting systems.",
+        "Note 9: Training for up to 2 people included in IFF. Franchisee pays travel/lodging/meals/wages.",
+        "Note 10/11: Additional funds cover initial operating expenses; do not include owner salary. Franchisee should have 3+ months personal savings.",
+        "Estimates based on affiliate's operating experience. Actual expenses may exceed estimates."
+      ],
+      "provenance": "Item 7, PDF pages 13-16"
+    },
+    {
+      "table_id": "T04_item7_initial_investment_muda",
+      "item": 7,
+      "title": "Your Estimated Initial Investment — Multi-Unit Development Agreement",
+      "source_pages": [14],
+      "columns": ["type_of_expenditure", "amount_low", "amount_high", "method_of_payment", "when_due", "to_whom"],
+      "rows": [
+        {"type_of_expenditure": "First franchise (see single unit table)", "amount_low": "$159,320", "amount_high": "$267,620", "method_of_payment": "Check or wire transfer", "when_due": "Upon signing FA", "to_whom": "Us"},
+        {"type_of_expenditure": "Additional initial franchise fees - 3 Franchises", "amount_low": "$75,000", "amount_high": "$75,000", "method_of_payment": "Check or wire transfer", "when_due": "Upon signing MUDA", "to_whom": "Us"},
+        {"type_of_expenditure": "TOTAL", "amount_low": "$234,320", "amount_high": "$342,620", "method_of_payment": null, "when_due": null, "to_whom": null}
+      ],
+      "table_notes": [
+        "Multi-unit development agreement covers up to 3 units."
+      ],
+      "provenance": "Item 7, PDF page 14"
+    },
+    {
+      "table_id": "T05_item9_obligations",
+      "item": 9,
+      "title": "Franchisee's Obligations Cross-Reference",
+      "source_pages": [18, 19],
+      "columns": ["obligation", "fa_section", "muda_section", "fdd_item"],
+      "rows": [
+        {"obligation": "a. Site selection and acquisition/lease", "fa_section": "3.1; 5.1; 5.2; 5.5", "muda_section": "7.1; 7.2", "fdd_item": "Item 11"},
+        {"obligation": "b. Pre-opening purchases/leases", "fa_section": "5.3; 7.2; 7.15", "muda_section": "7.2", "fdd_item": "Items 5, 8"},
+        {"obligation": "c. Site development and pre-opening requirements", "fa_section": "5.5; 5.6", "muda_section": "Article 6", "fdd_item": "Item 11"},
+        {"obligation": "d. Initial and ongoing training", "fa_section": "6.1(i); 6.2", "muda_section": "None", "fdd_item": "Items 6, 7, 11"},
+        {"obligation": "e. Opening", "fa_section": "5.5; 7.2", "muda_section": "Article 6", "fdd_item": "Item 5"},
+        {"obligation": "f. Fees", "fa_section": "4", "muda_section": "Article 5", "fdd_item": "Items 5, 6, 11"},
+        {"obligation": "g. Compliance with standards/Operating Manual", "fa_section": "7.6; Article 8", "muda_section": "None", "fdd_item": "Items 8, 11, 16"},
+        {"obligation": "h. Trademarks and proprietary information", "fa_section": "Article 9; 18.4", "muda_section": "Article 8", "fdd_item": "Items 13, 14"},
+        {"obligation": "i. Restrictions on products/services", "fa_section": "7.6(i)(iii)(iv)", "muda_section": "None", "fdd_item": "Items 8, 16"},
+        {"obligation": "j. Warranty and customer service requirements", "fa_section": "7.8", "muda_section": "None", "fdd_item": "Item 11"},
+        {"obligation": "k. Territorial development and sales quotas", "fa_section": "None", "muda_section": "Article 6", "fdd_item": "Item 12"},
+        {"obligation": "l. Ongoing product/service purchases", "fa_section": "None", "muda_section": "None", "fdd_item": "Items 6, 8"},
+        {"obligation": "m. Maintenance, appearance, remodeling", "fa_section": "5.6", "muda_section": "None", "fdd_item": "Item 12"},
+        {"obligation": "n. Insurance", "fa_section": "Article 13", "muda_section": "None", "fdd_item": "Items 6, 7"},
+        {"obligation": "o. Advertising", "fa_section": "Article 10", "muda_section": "None", "fdd_item": "Items 6, 7, 11"},
+        {"obligation": "p. Indemnification", "fa_section": "22.1", "muda_section": "None", "fdd_item": "Item 6"},
+        {"obligation": "q. Owner participation/management/staffing", "fa_section": "7.5; 7.7", "muda_section": "None", "fdd_item": "Item 15"},
+        {"obligation": "r. Records and reports", "fa_section": "12.1", "muda_section": "None", "fdd_item": "Item 6"},
+        {"obligation": "s. Inspection and audits", "fa_section": "12.2", "muda_section": "None", "fdd_item": "Item 6"},
+        {"obligation": "t. Transfer", "fa_section": "Article 15", "muda_section": "Article 9", "fdd_item": "Items 6, 17"},
+        {"obligation": "u. Renewal", "fa_section": "Article 2", "muda_section": "None", "fdd_item": "Item 17"},
+        {"obligation": "v. Post-termination obligations", "fa_section": "Article 17", "muda_section": "None", "fdd_item": "Item 17"},
+        {"obligation": "w. Non-competition covenants", "fa_section": "18.5", "muda_section": "None", "fdd_item": "Item 15"},
+        {"obligation": "x. Dispute resolution", "fa_section": "Article 19", "muda_section": "Article 18", "fdd_item": "Item 17"},
+        {"obligation": "y. Personal Guaranty", "fa_section": "17.6; 20.2", "muda_section": "Article 12", "fdd_item": "Item 15"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 9, PDF pages 18-19"
+    },
+    {
+      "table_id": "T06_item11_training",
+      "item": 11,
+      "title": "Training Program",
+      "source_pages": [21],
+      "columns": ["subject", "classroom_hours", "ojt_hours", "location"],
+      "rows": [
+        {"subject": "Consultations", "classroom_hours": 2, "ojt_hours": 3, "location": "Rolling Meadows Center"},
+        {"subject": "Legal and Scheduling", "classroom_hours": 1, "ojt_hours": 2, "location": "Chicago Center"},
+        {"subject": "Operating System", "classroom_hours": 2, "ojt_hours": 5, "location": "Rolling Meadows"},
+        {"subject": "Device Training", "classroom_hours": 5, "ojt_hours": 35, "location": "Oak Lawn Center"},
+        {"subject": "TOTALS", "classroom_hours": 10, "ojt_hours": 45, "location": null}
+      ],
+      "table_notes": [
+        "Plus mandatory virtual THERA WELLNESS device training (no cost for initial; advanced optional at then-current cost).",
+        "Training led by Kamil Czubacki (16 years industry experience, 35 years with affiliate).",
+        "Training scheduled 3-6 times per year. Must complete 4+ weeks before opening.",
+        "No tuition for up to 2 attendees; franchisee pays travel/lodging/meals/wages."
+      ],
+      "provenance": "Item 11, PDF page 21"
+    },
+    {
+      "table_id": "T07_item17_fa_provisions",
+      "item": 17,
+      "title": "Renewal, Termination, Transfer and Dispute Resolution — Franchise Agreement",
+      "source_pages": [32, 33, 34, 35],
+      "columns": ["provision", "fa_section", "summary"],
+      "rows": [
+        {"provision": "(a) Term", "fa_section": "2.1", "summary": "10 years from FA date unless terminated earlier"},
+        {"provision": "(b) Renewal", "fa_section": "2.2", "summary": "Two additional 5-year terms if still franchising and in good standing; must sign then-current FA which may be materially different"},
+        {"provision": "(c) Renewal requirements", "fa_section": "2.2(i)-(viii)", "summary": "Timely notice, sign new agreement, release, other documents, pay fee"},
+        {"provision": "(d) Termination by you", "fa_section": "16.1", "summary": "60 days notice of franchisor default if uncured"},
+        {"provision": "(e) Termination without cause", "fa_section": "N/A", "summary": "Not applicable"},
+        {"provision": "(f) Termination with cause", "fa_section": "16.2; 16.3", "summary": "Each obligation is material; breach may result in termination"},
+        {"provision": "(g) Cause - curable defaults", "fa_section": "16.2; 16.3", "summary": "Failure to pay (5-day cure), obtain covenants (5 days), procure insurance, lease default, failure to open within 120 days, other breaches"},
+        {"provision": "(h) Cause - non-curable", "fa_section": "16.2", "summary": "Misrepresentation, false books, failure to submit reports/pay fees, 2+ failing inspections in 12 months, unauthorized products, abandonment, felony, trademark misuse, unapproved transfers, repeated defaults, fraud, bankruptcy/insolvency, selling sound-wave equipment wholesale/retail"},
+        {"provision": "(i) Post-termination obligations", "fa_section": "Articles 17-18", "summary": "Pay amounts due, de-identify, return confidential info, cancel assumed names, cease advertising, comply with post-term covenants"},
+        {"provision": "(j) Assignment by franchisor", "fa_section": "15.1", "summary": "No restriction; may assign without franchisee approval"},
+        {"provision": "(k) Transfer definition", "fa_section": "15.2", "summary": "Sale, assignment, conveyance, pledge, mortgage, or other encumbrance of any interest"},
+        {"provision": "(l) Franchisor approval of transfer", "fa_section": "15.4", "summary": "Required; not unreasonably withheld"},
+        {"provision": "(m) Conditions for transfer approval", "fa_section": "15.4", "summary": "Transferee qualifies, amounts paid, not competitive, training completed, signs then-current FA, transfer fee paid, release signed, guaranty signed, non-compete agreed"},
+        {"provision": "(n) ROFR", "fa_section": "None", "summary": "Not applicable"},
+        {"provision": "(o) Option to purchase", "fa_section": "None", "summary": "Not applicable"},
+        {"provision": "(p) Death/disability", "fa_section": "15.3", "summary": "Representative must transfer within 6 months; same conditions as any transfer"},
+        {"provision": "(q) In-term noncompete", "fa_section": "18.5(i)", "summary": "No competing business anywhere in U.S."},
+        {"provision": "(r) Post-term noncompete", "fa_section": "18.5(ii)", "summary": "2 years within territory or 50 miles of location at termination/expiration"},
+        {"provision": "(s) Modification", "fa_section": "23.3", "summary": "Written and signed; but franchisor may change Operations Manual and System Standards"},
+        {"provision": "(t) Integration", "fa_section": "Article 27", "summary": "Only FA terms binding (subject to state law); FDD representations not disclaimed"},
+        {"provision": "(u) Dispute resolution", "fa_section": "Article 19", "summary": "Mediation and arbitration in city of HQ; JAMS rules; except for monies owed, injunctive relief, real estate"},
+        {"provision": "(v) Choice of forum", "fa_section": "19.7", "summary": "Franchisor home county and state (subject to state law)"},
+        {"provision": "(w) Choice of law", "fa_section": "Article 25", "summary": "Illinois law (except federal law; subject to state law)"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 17, PDF pages 32-35"
+    },
+    {
+      "table_id": "T08_item20_table1_systemwide",
+      "item": 20,
+      "title": "Table No. 1 — Systemwide Outlet Summary for Years 2022 to 2024",
+      "source_pages": [38],
+      "columns": ["outlet_type", "year", "outlets_at_start", "outlets_at_end", "net_change"],
+      "rows": [
+        {"outlet_type": "Franchised", "year": 2022, "outlets_at_start": 0, "outlets_at_end": 0, "net_change": 0},
+        {"outlet_type": "Franchised", "year": 2023, "outlets_at_start": 0, "outlets_at_end": 0, "net_change": 0},
+        {"outlet_type": "Franchised", "year": 2024, "outlets_at_start": 0, "outlets_at_end": 0, "net_change": 0},
+        {"outlet_type": "Company-Owned", "year": 2022, "outlets_at_start": 2, "outlets_at_end": 3, "net_change": 1},
+        {"outlet_type": "Company-Owned", "year": 2023, "outlets_at_start": 3, "outlets_at_end": 3, "net_change": 0},
+        {"outlet_type": "Company-Owned", "year": 2024, "outlets_at_start": 3, "outlets_at_end": 3, "net_change": 0},
+        {"outlet_type": "Total", "year": 2022, "outlets_at_start": 2, "outlets_at_end": 3, "net_change": 1},
+        {"outlet_type": "Total", "year": 2023, "outlets_at_start": 3, "outlets_at_end": 3, "net_change": 0},
+        {"outlet_type": "Total", "year": "2014 [sic - should be 2024]", "outlets_at_start": 3, "outlets_at_end": 3, "net_change": 0}
+      ],
+      "table_notes": [
+        "TYPO: The FDD prints '2014' in the Total row for 2024. This is clearly a typographical error.",
+        "All franchised outlets show 0 across all years in this summary table. However, Table 3 shows 1 franchised outlet at start of 2024."
+      ],
+      "provenance": "Item 20, PDF page 38"
+    },
+    {
+      "table_id": "T09_item20_table2_transfers",
+      "item": 20,
+      "title": "Table No. 2 — Transfers of Outlets from Franchisees to New Owners (2022-2024)",
+      "source_pages": [38],
+      "columns": ["state", "year", "number_of_transfers"],
+      "rows": [
+        {"state": "All States", "year": 2022, "number_of_transfers": 0},
+        {"state": "All States", "year": 2023, "number_of_transfers": 0},
+        {"state": "All States", "year": 2024, "number_of_transfers": 0}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF page 38"
+    },
+    {
+      "table_id": "T10_item20_table3_franchised_status",
+      "item": 20,
+      "title": "Table No. 3 — Status of Franchised Outlets for Years 2022 to 2024",
+      "source_pages": [39],
+      "columns": ["state", "year", "outlets_at_start", "outlets_opened", "terminations", "non_renewals", "reacquired", "ceased_other", "outlets_at_end"],
+      "rows": [
+        {"state": "All States", "year": 2022, "outlets_at_start": 0, "outlets_opened": 0, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "outlets_at_end": 0},
+        {"state": "All States", "year": 2023, "outlets_at_start": 0, "outlets_opened": 0, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "outlets_at_end": 0},
+        {"state": "All States", "year": 2024, "outlets_at_start": 1, "outlets_opened": 0, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "outlets_at_end": 0}
+      ],
+      "table_notes": [
+        "UNRESOLVED: 2024 shows 1 at start, all activity columns 0, but 0 at end. Arithmetically 1-0=1, not 0. Either a cessation/termination occurred that is not reflected in the activity columns, or this is a data entry error.",
+        "TOTAL rows mirror the All States rows (only one geographic entry)."
+      ],
+      "provenance": "Item 20, PDF page 39"
+    },
+    {
+      "table_id": "T11_item20_table4_company_owned",
+      "item": 20,
+      "title": "Table No. 4 — Status of Company-Owned Outlets for Years 2022 to 2024",
+      "source_pages": [39],
+      "columns": ["state", "year", "outlets_at_start", "outlets_opened", "reacquired_from_franchisee", "outlets_closed", "sold_to_franchisee", "outlets_at_end"],
+      "rows": [
+        {"state": "IL", "year": 2022, "outlets_at_start": 2, "outlets_opened": 1, "reacquired_from_franchisee": 0, "outlets_closed": 0, "sold_to_franchisee": 0, "outlets_at_end": 3},
+        {"state": "IL", "year": 2023, "outlets_at_start": 3, "outlets_opened": 0, "reacquired_from_franchisee": 0, "outlets_closed": 0, "sold_to_franchisee": 0, "outlets_at_end": 3},
+        {"state": "IL", "year": 2024, "outlets_at_start": 3, "outlets_opened": 0, "reacquired_from_franchisee": 0, "outlets_closed": 0, "sold_to_franchisee": 0, "outlets_at_end": 3}
+      ],
+      "table_notes": [
+        "All company-owned outlets are in Illinois.",
+        "TOTAL rows identical to IL rows."
+      ],
+      "provenance": "Item 20, PDF page 39"
+    },
+    {
+      "table_id": "T12_item20_table5_projected",
+      "item": 20,
+      "title": "Table No. 5 — Projected Openings as of December 31, 2024",
+      "source_pages": [39],
+      "columns": ["state", "fa_signed_not_opened", "projected_new_franchised", "projected_new_company_owned"],
+      "rows": [
+        {"state": "Wisconsin", "fa_signed_not_opened": 0, "projected_new_franchised": 1, "projected_new_company_owned": 0},
+        {"state": "TOTALS", "fa_signed_not_opened": 0, "projected_new_franchised": 1, "projected_new_company_owned": 0}
+      ],
+      "table_notes": [
+        "Header says 'Current Fiscal Year (2024)' but FDD issuance is March 2025 — likely refers to 2025 projection."
+      ],
+      "provenance": "Item 20, PDF page 39"
+    },
+    {
+      "table_id": "T13_item21_balance_sheet",
+      "item": 21,
+      "title": "Balance Sheets — December 31, 2024 and 2023",
+      "source_pages": [150],
+      "columns": ["line_item", "2024", "2023"],
+      "rows": [
+        {"line_item": "Current Assets", "2024": "$—", "2023": "$88"},
+        {"line_item": "Total Assets", "2024": "$—", "2023": "$88"},
+        {"line_item": "Bank Overdraft (Current Liability)", "2024": "$9", "2023": "$—"},
+        {"line_item": "Members' Equity (Deficit)", "2024": "($9)", "2023": "$88"},
+        {"line_item": "Total Liabilities and Members' Equity (Deficit)", "2024": "$—", "2023": "$88"}
+      ],
+      "table_notes": [
+        "Auditor: Muhammad Zubairy, CPA PC, Westbury, NY. Opinion dated March 12, 2025.",
+        "Unqualified (clean) audit opinion.",
+        "Entity is in members' equity deficit as of December 31, 2024."
+      ],
+      "provenance": "Exhibit D, PDF page 150 (rendered image)"
+    },
+    {
+      "table_id": "T14_item21_income_statement",
+      "item": 21,
+      "title": "Statements of Operations and Members' Equity (Deficit) — Years Ended December 31",
+      "source_pages": [151],
+      "columns": ["line_item", "2024", "2023"],
+      "rows": [
+        {"line_item": "Revenues", "2024": "$—", "2023": "$—"},
+        {"line_item": "Operating Expenses", "2024": "$97", "2023": "$12"},
+        {"line_item": "Net (Loss)", "2024": "($97)", "2023": "($12)"},
+        {"line_item": "Members' Equity (Deficit) - Beginning", "2024": "$88", "2023": "$—"},
+        {"line_item": "Member's Contribution (Distributions)", "2024": "$—", "2023": "$100"},
+        {"line_item": "Members' Equity (Deficit) - Ending", "2024": "($9)", "2023": "$88"}
+      ],
+      "table_notes": [
+        "Zero revenue in both years.",
+        "Total operating expenses of $109 over two years ($97 in 2024, $12 in 2023).",
+        "Single member contribution of $100 at inception (2023); no further contributions."
+      ],
+      "provenance": "Exhibit D, PDF page 151 (rendered image)"
+    },
+    {
+      "table_id": "T15_item21_cash_flow",
+      "item": 21,
+      "title": "Statements of Cash Flows — Years Ended December 31",
+      "source_pages": [152],
+      "columns": ["line_item", "2024", "2023"],
+      "rows": [
+        {"line_item": "Cash Flows from Operating Activities - Net Income", "2024": "($97)", "2023": "($12)"},
+        {"line_item": "Total Cash from Operating Activities", "2024": "($97)", "2023": "($12)"},
+        {"line_item": "Cash Flows from Financing Activities - Members' contribution (distributions)", "2024": "$—", "2023": "$100"},
+        {"line_item": "Net Increase (Decrease) in Cash", "2024": "($97)", "2023": "$88"},
+        {"line_item": "Cash - Beginning of Year", "2024": "$88", "2023": "$—"},
+        {"line_item": "Cash (Bank Overdraft) - End of Year", "2024": "($9)", "2023": "$88"}
+      ],
+      "table_notes": [
+        "Entity ended 2024 with a bank overdraft of $9.",
+        "No adjustments to reconcile net income to cash — all expenses appear to be cash-based."
+      ],
+      "provenance": "Exhibit D, PDF page 152 (rendered image)"
+    },
+    {
+      "table_id": "T16_item22_contracts",
+      "item": 22,
+      "title": "Contracts List",
+      "source_pages": [40],
+      "columns": ["agreement", "exhibit"],
+      "rows": [
+        {"agreement": "Franchise Agreement", "exhibit": "Exhibit B"},
+        {"agreement": "Lease Addendum", "exhibit": "Schedule B to FA"},
+        {"agreement": "Authorization for Electronic Funds Transfer", "exhibit": "Schedule C to FA"},
+        {"agreement": "Personal Guaranty", "exhibit": "Schedule D to FA"},
+        {"agreement": "Agreement Not to Compete and Confidentiality Agreement", "exhibit": "Schedule E to FA"},
+        {"agreement": "Confidentiality and Non-Solicitation Agreement for Employees", "exhibit": "Schedule F to FA"},
+        {"agreement": "Telephone Listing Agreement", "exhibit": "Schedule G to FA"},
+        {"agreement": "Form of Release, Covenant Not to Sue, and Indemnification", "exhibit": "Schedule H to FA"},
+        {"agreement": "Multi-Unit Development Agreement", "exhibit": "Exhibit C"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 22, PDF page 40"
+    },
+    {
+      "table_id": "T17_exhibitF_ops_manual",
+      "item": null,
+      "title": "Operations Manual Table of Contents",
+      "source_pages": [155],
+      "columns": ["section", "pages"],
+      "rows": [
+        {"section": "Preface & Introduction & Getting Started", "pages": 35},
+        {"section": "Staffing and Training", "pages": 15},
+        {"section": "Safety", "pages": 5},
+        {"section": "Operations", "pages": 26},
+        {"section": "Customer Service", "pages": 2},
+        {"section": "Marketing", "pages": 19},
+        {"section": "Financial Management", "pages": 10},
+        {"section": "Technology", "pages": 7},
+        {"section": "Conclusion", "pages": 2},
+        {"section": "TOTAL", "pages": 121}
+      ],
+      "table_notes": [],
+      "provenance": "Exhibit F, PDF page 155"
+    }
+  ],
+  "table_count": 17
+}

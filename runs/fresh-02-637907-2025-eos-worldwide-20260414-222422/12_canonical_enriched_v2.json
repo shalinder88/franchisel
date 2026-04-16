@@ -1,0 +1,117 @@
+{
+  "enrichment_version": "v2",
+  "enrichment_date": "2026-04-14",
+  "base_file": "11_canonical_enriched.json",
+  "enrichments": {
+    "item21_financial_structure_detail": {
+      "revenue_composition_2024": {
+        "memberships_subscriptions": {"amount": 12779658, "pct": 53.7},
+        "boot_camp": {"amount": 5567565, "pct": 23.4},
+        "store_income": {"amount": 3309031, "pct": 13.9},
+        "warm_lead_referral": {"amount": 1343637, "pct": 5.6},
+        "franchise_fees": {"amount": 618901, "pct": 2.6},
+        "events": {"amount": 175798, "pct": 0.7},
+        "other": {"amount": 17902, "pct": 0.1}
+      },
+      "revenue_composition_2023": {
+        "memberships_subscriptions": {"amount": 10446384, "pct": 49.8},
+        "boot_camp": {"amount": 5140657, "pct": 24.5},
+        "store_income": {"amount": 3044704, "pct": 14.5},
+        "warm_lead_referral": {"amount": 1064593, "pct": 5.1},
+        "franchise_fees": {"amount": 580494, "pct": 2.8},
+        "events": {"amount": 196800, "pct": 0.9},
+        "other": {"amount": 14959, "pct": 0.1}
+      },
+      "margin_analysis": {
+        "2024": {"gross_margin_pct": 76.9, "operating_margin_pct": 16.3, "net_margin_pct": 11.4},
+        "2023": {"gross_margin_pct": 80.2, "operating_margin_pct": 12.0, "net_margin_pct": 6.4}
+      },
+      "yoy_growth": {
+        "revenue": {"2023_to_2024": 13.5, "2022_to_2023": 13.1},
+        "net_income": {"2023_to_2024": 102.2, "2022_to_2023": -50.9}
+      }
+    },
+    "item21_statement_detail": {
+      "balance_sheet_2024": {
+        "assets": {
+          "cash": 233339,
+          "due_from_affiliates": 5710569,
+          "total_current_assets": 5943908,
+          "total_assets": 5943908
+        },
+        "liabilities": {
+          "deferred_revenue": 1801403,
+          "total_current_liabilities": 1801403,
+          "total_liabilities": 1801403
+        },
+        "equity": {
+          "members_deficit": -3716000,
+          "retained_earnings": 7857505,
+          "total_members_equity": 4142505
+        }
+      },
+      "balance_sheet_2023": {
+        "assets": {
+          "cash": 1260748,
+          "due_from_affiliates": 2436390,
+          "total_assets": 3697138
+        },
+        "liabilities": {
+          "deferred_revenue": 2277196,
+          "total_liabilities": 2277196
+        },
+        "equity": {
+          "members_deficit": -3715000,
+          "retained_earnings": 5134942,
+          "total_members_equity": 1419942
+        }
+      },
+      "balance_sheet_2022": {
+        "assets": {
+          "cash": 719807,
+          "due_from_affiliates": 1419743,
+          "total_assets": 2139550
+        },
+        "liabilities": {
+          "deferred_revenue": 1351039,
+          "total_liabilities": 1351039
+        },
+        "equity": {
+          "total_members_equity": 788511
+        }
+      },
+      "contract_assets_liabilities_2024": {
+        "accounts_receivable": 5710569,
+        "deferred_revenue": -1801403,
+        "notes": "As of Jan 1, 2023: ~$1,420,000 accounts receivable and ~$2,277,000 deferred revenue recognized."
+      }
+    },
+    "item6_fee_detail": {
+      "monthly_membership_tiers": [
+        {"tier": "Professional", "monthly": 1395, "annual": 16740, "effective_rate_at_avg_revenue": "10.3%"},
+        {"tier": "Certified", "monthly": 1495, "annual": 17940, "effective_rate_at_avg_revenue": "4.3%"},
+        {"tier": "Expert", "monthly": 1695, "annual": 20340, "effective_rate_at_avg_revenue": "2.9%"},
+        {"tier": "Legacy", "monthly": 1395, "annual": 16740, "effective_rate_at_avg_revenue": "N/A (semi-retired)"},
+        {"tier": "Emeritus", "monthly": 1395, "annual": 16740, "effective_rate_at_avg_revenue": "N/A (semi-retired)"}
+      ],
+      "max_annual_fee_increase": 200,
+      "reserved_fees_potential_annual_burden": {
+        "brand_development_fund": 1200,
+        "technology_fee": 1200,
+        "total_potential": 2400
+      },
+      "warm_leads_economics": {
+        "rate": 0.50,
+        "minimum": 1500,
+        "example": "A $5,000 Focus Day from a warm lead generates $2,500 fee to franchisor",
+        "2024_franchisor_revenue_from_warm_leads": 1343637
+      },
+      "practice_management_plus": {
+        "pricing_range": {"low": 195, "high": 495},
+        "pricing_basis": "Number of active clients",
+        "included_in_membership": false,
+        "base_practice_management_included": true
+      }
+    }
+  }
+}

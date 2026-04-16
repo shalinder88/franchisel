@@ -1,0 +1,72 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "fdd_id": "638041-2025",
+  "brand": "Wireless Zone",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "Minimum GP floor of $60,000 per calendar year triggers franchisor buyout right (Section 13.04.B.8 of Franchise Agreement)",
+      "source_reader_report": "Not in reader report — discovered in Depth Pass 2 (contract burden) from Franchise Agreement page 140",
+      "source_pdf_page": 140,
+      "target_canonical_field": "item17.minimum_gp_buyout_trigger",
+      "promoted_to": ["09_final_canonical.json", "12_canonical_enriched_v2.json"]
+    },
+    {
+      "id": "P2",
+      "fact": "Abandonment defined as ceasing to operate 5 separate business days in any 12-month period or 3 consecutive days",
+      "source_reader_report": "Not in reader report — discovered in Depth Pass 2 from Franchise Agreement Section 13.04.B.4",
+      "source_pdf_page": 140,
+      "target_canonical_field": "item17.abandonment_definition",
+      "promoted_to": ["09_final_canonical.json"]
+    },
+    {
+      "id": "P3",
+      "fact": "Business Judgment clause (Section 18.05): Franchisor's decisions may not be second-guessed by any court/trier of fact, even when other alternatives are reasonable",
+      "source_reader_report": "Not in reader report — discovered in Depth Pass 2 from Franchise Agreement page 130",
+      "source_pdf_page": 130,
+      "target_canonical_field": "item17.business_judgment_clause",
+      "promoted_to": ["09_final_canonical.json"]
+    },
+    {
+      "id": "P4",
+      "fact": "All franchisee innovations, improvements, and advertising ideas become franchisor's property (Section 2.01.B)",
+      "source_reader_report": "Not in reader report — discovered in Depth Pass 2",
+      "source_pdf_page": 90,
+      "target_canonical_field": "item17.innovation_assignment",
+      "promoted_to": ["09_final_canonical.json"]
+    },
+    {
+      "id": "P5",
+      "fact": "Revenue recognition: royalty range stated as 5%-22% in Note 2 (vs 9%-22% in Item 6). The 5% reflects incentive-adjusted rates.",
+      "source_reader_report": "Item 6 states 9%-22%. Financial note states 5%-22%.",
+      "source_pdf_page": 215,
+      "target_canonical_field": "item6.royalty_rate_min_with_incentives",
+      "promoted_to": ["12_canonical_enriched_v2.json"]
+    },
+    {
+      "id": "P6",
+      "fact": "401(k) matching contributions by Company: $136,014 (2024), $183,347 (2023), $168,925 (2022)",
+      "source_reader_report": "Not in reader report",
+      "source_pdf_page": 219,
+      "target_canonical_field": "item21.employee_benefits",
+      "promoted_to": ["12_canonical_enriched_v2.json"]
+    },
+    {
+      "id": "P7",
+      "fact": "Purchase Price formula: 1x trailing 12-month GP + FMV of tangible assets (equipment at cost less 2%/month depreciation; materials/supplies/inventory at cost)",
+      "source_reader_report": "Partially in reader report (Section E) but without depreciation formula detail",
+      "source_pdf_page": 140,
+      "target_canonical_field": "item17.purchase_price_formula",
+      "promoted_to": ["09_final_canonical.json"]
+    },
+    {
+      "id": "P8",
+      "fact": "Hawaii addendum deletes Section 19 (confidentiality/non-disparagement) of Franchise Agreement entirely",
+      "source_reader_report": "Not in reader report",
+      "source_pdf_page": 226,
+      "target_canonical_field": "state_addenda_overrides.hawaii.confidentiality",
+      "promoted_to": ["09_final_canonical.json"]
+    }
+  ],
+  "total_promoted": 8
+}

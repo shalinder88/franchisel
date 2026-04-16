@@ -1,0 +1,207 @@
+{
+  "depth_pass": "contract_burdens",
+  "source_exhibits": ["D (Franchise Agreement)", "D-1 (State Addenda)", "E (Guaranty)", "G (HITS Agreement)"],
+  "source_pages": [108, 163, 164, 177, 181, 185, 200, 230],
+  "burdens": {
+    "grant_and_term": {
+      "license_type": "Non-exclusive license to use the System at a specified location",
+      "term_new_construction": "23 years from Effective Date",
+      "term_conversion": "10-20 years from Opening Date",
+      "term_coo": "Remaining term or as approved",
+      "renewal": "NONE. No right to renew or extend. Re-licensing at sole discretion with potentially materially different terms.",
+      "hits_agreement_term": "Concurrent with Franchise Agreement; auto-terminates on FA expiration/termination",
+      "source_pages": [78, 79]
+    },
+    "fee_and_payment": {
+      "monthly_royalty": "5% GRR, payable by 15th of following month",
+      "monthly_program_fee": "4% GRR (may increase up to +1% over term)",
+      "electronic_funds_transfer": "May be required; franchisee bears all costs",
+      "offset_rights": "Franchisor may reduce any payment/credit by amounts owed across affiliates",
+      "insurance_casualty_fees": "During business interruption, monthly fees based on forecasted GRR agreed with insurer; franchisor participates in insurance negotiations",
+      "source_pages": [27, 38]
+    },
+    "site_and_construction": {
+      "construction_start_deadline": "16 months from application approval (New Development)",
+      "construction_completion_deadline": "36 months from application approval",
+      "auto_extensions": "30-day rolling extensions for new dev/conversion without fee, until 60 days' notice given",
+      "paid_extensions": "$10,000 per extension after auto-extensions end",
+      "plans_approval": "Must obtain written consent before commencing any renovation work",
+      "architect_approval": "Must obtain prior written consent for architect, designer, general contractor, major subcontractors",
+      "ada_certification": "Required at construction start and before opening",
+      "opening_authorization": "At franchisor's sole business discretion",
+      "source_pages": [25, 46, 54]
+    },
+    "training_obligations": {
+      "pre_opening": "GM and key personnel must complete required training programs",
+      "ongoing": "Replacements must complete appropriate training; all staff must complete Brand Learning Programs",
+      "onq_certification": "Must pass 80% test; hotel opening may be delayed if staff fails",
+      "brand_conference": "GM and Dir Sales required to attend annually ($3,000/attendee)",
+      "forbes_travel_guide": "GM and dept heads required to complete 2-day annual training ($12,000/year)",
+      "luxury_leader": "Mandatory for all new GMs (60 hours, $1,000 + travel)",
+      "annual_compliance": "2-3 hours/year for all staff (harassment, trafficking, cyber, diversity)",
+      "source_pages": [53, 59, 60, 61, 62, 63]
+    },
+    "operational_obligations": {
+      "24_7_operation": "Must operate 24/7 except as permitted for special circumstances",
+      "management_approval": "Must use franchisor-approved management company if deemed unqualified",
+      "management_replacement": "90 days to find replacement if management company departs or becomes unsuitable",
+      "rate_parity": "May be required to maintain rate parity across distribution channels",
+      "reservation_service": "Must use exclusively for outbound referrals",
+      "mandatory_guest_fees": "Must obtain franchisor consent for any MGF; subject to Standards",
+      "renovation_cycles": "Must comply with FRCM renovation schedules and all Standards updates",
+      "source_pages": [76, 77, 69]
+    },
+    "termination_triggers": {
+      "curable_defaults": [
+        "Payment default (10 days cure)",
+        "Construction/opening deadline failure (10 days cure)",
+        "Insurance default (10 days cure)",
+        "Other Standard/Manual breach (30 days cure)"
+      ],
+      "non_curable_defaults": [
+        "Pattern of same non-compliance within 24 months (even if cured each time)",
+        "3 default notices in any 12 months (regardless of cure)",
+        "Insolvency/bankruptcy/assignment for creditors",
+        "Loss of possession of hotel/site",
+        "Failure to operate 5+ consecutive days (except force majeure with reasonable steps)",
+        "Contest of System ownership or Mark validity",
+        "Conduct adversely affecting brand reputation",
+        "False books/concealed revenue/fraud",
+        "Unauthorized transfer",
+        "Become Sanctioned Person",
+        "Gaming license adverse disclosure",
+        "Guarantor breach",
+        "Public health/safety threat",
+        "Become a Competitor",
+        "Termination of any other Hotel Agreement",
+        "Failure to construct shared facilities after consent withdrawal"
+      ],
+      "interim_remedies": [
+        "Suspend from Reservation Service",
+        "Remove from directories/advertising",
+        "Divert reservations to other hotels",
+        "Disable software systems",
+        "Charge intervention/administration fees",
+        "Revoke financial accommodations (fee discounts, ramps, waivers)"
+      ],
+      "source_pages": [80, 81, 82, 83]
+    },
+    "transfer_restrictions": {
+      "no_transfer_to_competitor": true,
+      "no_transfer_to_sanctioned_person": true,
+      "permitted_transfers_no_notice": ["Public equity", "Private <50% no control change", "Institutional fund same manager"],
+      "permitted_transfers_with_notice": ["Affiliates", "Family", "On death", "Private >50% cumulative change"],
+      "coo_transfer_requirements": [
+        "60 days notice",
+        "Not in default",
+        "All amounts current through closing",
+        "Resolve pending suits or provide security",
+        "Transferee meets current requirements",
+        "Transferee signs current-form FA",
+        "PIP may be required",
+        "Transferee's guarantors sign current guaranty",
+        "$150,000 application fee"
+      ],
+      "source_pages": [83, 84, 85]
+    },
+    "noncompete": {
+      "during_term": "Cannot own or be licensor/franchisor of competing brand. May be franchisee, manage (if not exclusive manager), or hold minority interest in competitor.",
+      "post_term": "NONE",
+      "management_company": "Cannot be exclusive manager for a Competitor; 90 days to replace if becomes Competitor",
+      "competitor_definition": "Any individual/entity that owns, licenses, or franchises a Competing Brand (regardless of number of hotels)",
+      "source_pages": [75, 76, 86]
+    },
+    "guaranty_scope": {
+      "guarantors_determined_by": "Review of financial information submitted with Application",
+      "may_include_spouse": true,
+      "personal_guaranty": true,
+      "scope": "Certain of Franchisee's obligations under the Franchise Agreement",
+      "additional_guaranty_triggers": [
+        "Lender comfort letter request",
+        "Cross-collateralized/cross-defaulted loans",
+        "Written notice of default"
+      ],
+      "source_pages": [76, 181, 185]
+    },
+    "liquidated_damages": {
+      "pre_opening_no_work": "$25,000 x rooms (if new hotel at site within 1 year)",
+      "post_opening_before_2yr": "Greater of (avg monthly royalty x 60) or ($25,000 x rooms)",
+      "post_opening_after_2yr": "Avg monthly royalty x 60",
+      "last_60_months": "Avg monthly royalty x remaining months",
+      "unauthorized_opening": "$5,000/day",
+      "state_overrides": "MN and ND delete liquidated damages. CA may limit enforceability.",
+      "source_pages": [35, 36, 140]
+    },
+    "venue_and_dispute": {
+      "governing_law": "New York (without choice-of-law principles)",
+      "forum": "ED Virginia (Alexandria) or Fairfax County VA state court or NY NY",
+      "franchisor_may_sue_at_hotel": true,
+      "arbitration": "None (except Puerto Rico: AAA/JAMS, venue Fairfax VA, seat NY)",
+      "jury_trial_waiver": "Not explicitly stated in standard FA",
+      "state_overrides": {
+        "california": "NY governing law and VA venue may be unenforceable",
+        "illinois": "IL Franchise Disclosure Act governs for IL licensees",
+        "maryland": "May sue in MD for MD franchise law claims",
+        "michigan": "Out-of-state litigation/arbitration void",
+        "minnesota": "Out-of-state litigation, jury waiver, liquidated damages prohibited",
+        "north_dakota": "Out-of-state venue deleted; ND law governs; jury waiver deleted",
+        "rhode_island": "Out-of-state venue and non-RI law void for RI Act claims",
+        "washington": "WA law prevails in conflicts; arbitration/mediation site in WA or mutually agreed"
+      },
+      "source_pages": [87, 250, 251, 252, 253, 254, 255, 256]
+    },
+    "insurance_requirements": {
+      "requirement": "Must maintain minimum levels and types per Manual",
+      "insurer_ratings": "Minimum ratings as specified in Manual",
+      "additional_insureds": "Parties specified in Manual",
+      "endorsements": "As specified in Manual",
+      "franchisor_remedy": "If franchisee fails to obtain/maintain, franchisor may obtain at franchisee's expense",
+      "source_pages": [36, 44]
+    },
+    "indemnification": {
+      "scope": "Franchisee must indemnify and defend franchisor, Hilton Worldwide, all subsidiaries/affiliates, and their officers/directors/employees/agents/successors/assigns",
+      "trigger": "Any claim, demand, tax, penalty, or judicial/administrative proceeding arising from any claimed occurrence at Hotel",
+      "source_pages": [35]
+    },
+    "data_ownership": {
+      "all_guest_data": "Franchisor's property",
+      "information_derived_revenue": "Franchisor's property",
+      "post_term_use": "Franchisee may not use after term except as expressly permitted",
+      "franchisee_data": "Franchisee retains info about itself and its affiliates/officers/directors",
+      "fpr_usage_right": "Franchisor may use information for financial performance representations in future FDDs",
+      "source_pages": [74, 75]
+    },
+    "distinctive_clauses": [
+      {
+        "clause": "Spa mandatory",
+        "description": "Must install luxury spa; third-party spa brand requires written approval",
+        "source_page": 48
+      },
+      {
+        "clause": "Forbes Travel Guide mandatory",
+        "description": "Must participate in FTG rating program ($22,400/year), including on-site training and quality assessment",
+        "source_page": 49
+      },
+      {
+        "clause": "Identity Consultant required",
+        "description": "Must use franchisor-approved consultant for trade name, visual identity, strategic brand positioning",
+        "source_page": 48
+      },
+      {
+        "clause": "Competitor definition",
+        "description": "Any entity that owns/licenses/franchises a competing brand, regardless of size. Uniquely broad — even single-hotel brands qualify.",
+        "source_page": 76
+      },
+      {
+        "clause": "No renewal right",
+        "description": "Franchise is entirely non-renewable. Re-licensing at sole discretion only. Materially different terms may apply.",
+        "source_page": 78
+      },
+      {
+        "clause": "Pattern termination",
+        "description": "Same non-compliance within 24 months is non-curable even if cured after each notice. Very aggressive.",
+        "source_page": 81
+      }
+    ]
+  }
+}

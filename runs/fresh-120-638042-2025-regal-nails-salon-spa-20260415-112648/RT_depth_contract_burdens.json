@@ -1,0 +1,139 @@
+{
+  "depth_pass": "2_contract_burdens",
+  "brand": "Regal Nails, Salon & Spa",
+  "franchise_agreement_sections": 50,
+  "source_pages_exhibit_a": "95-270 (A1-A176)",
+  "burdens": {
+    "grant_and_term": {
+      "grant": "Non-exclusive license to operate single salon at designated address",
+      "initial_term": "Generally 5 years, coinciding with lease term if party tenant",
+      "renewal": "Not automatic; possible 2-5 year successor term; must sign then-current FA with potentially materially different terms",
+      "renewal_conditions": ["180 days written notice", "Full compliance", "Meet current qualification/training standards", "Pay Successor Franchise Fee ($500)", "Sign general release", "Modify salon to then-current standards"],
+      "source_pages": [64, 65]
+    },
+    "fees_and_payments": {
+      "initial_franchise_fee": 25000,
+      "confirmation_fee": 45000,
+      "monthly_fee": {"low": 500, "high": 15000, "includes": "Franchise fee + base rent + rental tax"},
+      "percentage_rent_walmart": "6.5% of Gross Sales above breakpoint",
+      "security_deposit": "Last 2 months Monthly Fee + utility/CAM",
+      "payment_method": "Mandatory ACH electronic funds transfer",
+      "late_payment": "$100 + 12% per year compounded monthly",
+      "liquidated_damages": "All remaining Monthly Fees through end of term, discounted to PV",
+      "holdover_consent": "150% of Monthly Fee",
+      "holdover_no_consent": "300% of Monthly Fee + all legal costs",
+      "source_pages": [14, 20, 21, 29, 73]
+    },
+    "site_selection_construction": {
+      "party_tenant": "Franchisor attempts to lease from Walmart/big box retailer; subleases to franchisee",
+      "non_party_tenant": "Franchisee finds site; franchisor must approve; landlord must sign rider granting franchisor assignment rights",
+      "site_approval_deadline": "60 days from signing FA (non-party tenant)",
+      "minimum_size": "800 sq ft recommended; franchisor reserves right to reject <800",
+      "lease_term_limits": "No shorter than 3 years, no longer than 5 years (non-party tenant)",
+      "buildout": "Arranged by franchisor through approved contractor",
+      "time_to_open": "1-2 years average from signing to grand opening",
+      "source_pages": [45, 46]
+    },
+    "training_obligations": {
+      "initial": "3-day mandatory program at Baton Rouge, LA — franchisee + manager",
+      "cost_to_franchisee": "All travel, lodging, meals",
+      "timing": "Must complete before Grand Opening, at least 8 weeks prior",
+      "retraining": "Required after 2 insurance claims in 3 years within 90 days",
+      "transferee": "Must complete training before transfer approved",
+      "renewal": "Must meet then-current training requirements",
+      "source_pages": [55, 56, 57]
+    },
+    "operational_obligations": {
+      "personal_operation": "Not required but must inspect weekly if not operating; hire licensed on-premises manager",
+      "manager_requirements": "Licensed by state; complete training; sign noncompete/confidentiality; no interest in competitor within 5 miles",
+      "com_compliance": "Must comply with COM as modified from time to time",
+      "operating_hours": "Must operate during prescribed hours (per COM and landlord)",
+      "maintenance": "Must maintain salon 'as new'; repair at own cost",
+      "reporting": "Monthly gross sales reports; I-9s; personnel records; 36-month retention",
+      "insurance": "Must maintain CGL/PL through approved group carrier; grant limited POA for insurance",
+      "remodeling": "Must remodel to then-current standards on renewal; relocation at sole cost ($25K-$50K WM)",
+      "source_pages": [48, 55, 61, 62]
+    },
+    "termination_triggers": {
+      "without_cause": "FA auto-terminates if lease terminated; Walmart can terminate lease on 90 days notice without cause",
+      "curable_14_days": ["Payment default", "Mark/system misuse", "COM standards failure", "Failure to operate continuously", "Lapsed insurance", "Law non-compliance", "Failure to submit reports", "Poor customer service", "Unauthorized equipment/furnishings", "Failure to display licenses"],
+      "non_curable_immediate": ["Failure to attend training", "Unauthorized transfer", "Bankruptcy", "License revoked", "Unauthorized services", "Competing within 5 miles", "Felony conviction", "Abandonment", "False representations", "3 material defaults in 12 months", "Walmart performance covenant failure", "Unlicensed personnel", "Failure to pay within 14 days of written demand"],
+      "cure_period": "14 calendar days (subject to local law)",
+      "source_pages": [66, 67, 68, 69]
+    },
+    "transfer_restrictions": {
+      "definition": "Conveyance of >1/3 interest",
+      "consent_required": true,
+      "conditions": ["Current on all obligations", "Transferee qualifies", "Transferee completes training", "Salon brought to current standards", "Sign bill of sale and assignment", "General release", "$1,000 fee ($500 to own entity)"],
+      "death_disability": "Transfer within 6 months; no fee; transferee must qualify",
+      "no_rofr": true,
+      "source_pages": [71, 72, 73]
+    },
+    "default_cross_default": {
+      "lease_cross_default": "Default on lease = default on FA if party tenant",
+      "multi_location": "Obligations under 'any agreements or arrangements with us' must be satisfied",
+      "source_pages": [70]
+    },
+    "noncompete": {
+      "during_term": "No similar business in territory or within 5-mile radius",
+      "post_term": "Same restriction for 1 year after expiration/termination/transfer",
+      "tolling": "Period tolled for noncompliance",
+      "manager_noncompete": "Manager must sign separate noncompete/confidentiality",
+      "entity_owners": "All entity owners must sign FA and noncompete",
+      "state_overrides": ["CA: may not be enforceable", "ND: generally unenforceable"],
+      "source_pages": [62, 73]
+    },
+    "guaranty_scope": {
+      "personal_guaranty": "Each individual owning interest in franchised entity must sign FA and assume all obligations",
+      "spousal_guaranty": "Not explicitly mentioned",
+      "unlimited": "Franchisee personally liable for all obligations including liquidated damages",
+      "source_pages": [62]
+    },
+    "dispute_resolution": {
+      "method": "Litigation only (no arbitration or mediation except for specific claims per Section 35)",
+      "venue": "Baton Rouge, Louisiana",
+      "governing_law": "Louisiana",
+      "walmart_lease_venue": "Benton County, Arkansas",
+      "walmart_governing_law": "Arkansas",
+      "jury_waiver": true,
+      "punitive_damages_waiver": true,
+      "damages_limitation": "Types and amounts limited; period to bring claims limited",
+      "state_overrides": ["IL: IL law governs, IL venue", "ND: ND law, ND venue, jury/punitive waivers deleted", "MD: franchisee may sue in MD for MD law claims"],
+      "source_pages": [73, 74]
+    },
+    "insurance_requirements": {
+      "cgl": "$2M per occurrence, $4M aggregate",
+      "pl": "$1M per wrongful act, $2M aggregate",
+      "damage_to_premises": "$100,000",
+      "medical": "$5,000",
+      "personal_advertising_injury": "$1M per occurrence",
+      "deductible": "$500-$1,000",
+      "workers_comp": "Statutory limits or $500K per occurrence",
+      "employer_liability": "$500K per employee",
+      "must_use_approved_carrier": true,
+      "poa_to_franchisor": true,
+      "property_insurance_reserved": "Right to require in future",
+      "source_pages": [34, 39, 40]
+    },
+    "indemnification": {
+      "franchisee_to_franchisor": "Must indemnify for all costs/damages from claims relating to salon operation or FA failure",
+      "walmart_indemnification": "Must indemnify Walmart for damages from franchisee acts/employees/operations",
+      "source_pages": [30, 44]
+    },
+    "force_majeure": {
+      "quality_assurance_visits": "May be suspended during force majeure or conditions outside franchisor's control",
+      "training": "May be suspended altogether during force majeure; franchisee must attend next available session when resumed",
+      "source_pages": [48, 55]
+    },
+    "distinctive_clauses": {
+      "white_box_return": "Must return salon in 'broom clean' and 'white box' condition; $25,000 fee if not",
+      "abandoned_property": "Any property left in salon after termination/expiration deemed abandoned; franchisor may dispose at will without compensation",
+      "telephone_assignment": "Must assign phone, fax, websites, social media, d/b/a, yellow pages to franchisor on termination",
+      "data_access": "Must grant franchisor unlimited independent access to all merchant services/POS data at all times",
+      "performance_covenant": "Walmart reserves right to terminate lease if performance covenant not met — covenant specifics not in FDD body",
+      "walmart_no_cause_90_days": "Walmart can terminate any individual lease on 90 days notice without cause",
+      "inflation_guard": "Section 17 of FA provides for inflation adjustment mechanism",
+      "source_pages": [70, 71, 44, 55, 75]
+    }
+  }
+}

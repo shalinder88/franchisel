@@ -1,0 +1,9 @@
+{
+  "retry_id": "R1",
+  "task": "Item 19 Range Anomaly Verification",
+  "target_pages": [95],
+  "finding": "CONFIRMED — FDD text contradiction",
+  "detail": "The 2023 Room Rate range is stated as '$146.86 to $221.25' on page 95 (PDF), but the average Room Rate is $255.91 (page 94). An average above the stated range maximum is arithmetically impossible for a true min-max range. The 2024 figures are consistent (range $157.07-$266.58, average $257.42). Likely a typographical error in the FDD or the 'range' represents an interquartile or truncated range.",
+  "action_taken": "Recorded as contradiction C01 in canonical. Item 19 data preserved as-stated without correction.",
+  "severity": "medium"
+}

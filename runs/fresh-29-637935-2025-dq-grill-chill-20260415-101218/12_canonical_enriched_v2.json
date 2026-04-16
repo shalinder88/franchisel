@@ -1,0 +1,159 @@
+{
+  "enrichment_version": "v2",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637935-2025",
+  "brand": "DQ Grill & Chill",
+  "item21_financial_structure": {
+    "entity": "International Dairy Queen, Inc. and Subsidiaries",
+    "auditor": "Deloitte & Touche LLP",
+    "opinion_type": "clean_unqualified",
+    "opinion_date": "2025-02-07",
+    "fiscal_year_end": "December 31",
+    "guarantee": {
+      "guarantor": "International Dairy Queen, Inc.",
+      "guaranteed_entity": "American Dairy Queen Corporation",
+      "type": "unconditional",
+      "scope": "All obligations under franchise registrations and franchise agreements",
+      "signed_date": "2025-03-27",
+      "signed_by": "Genevieve Beck, Vice President & Assistant General Counsel"
+    },
+    "parent_relationship": "IDQ is wholly owned subsidiary of Berkshire Hathaway Inc.",
+    "cash_pooling": {
+      "counterparty": "BH Finance LLC (Berkshire subsidiary)",
+      "borrowing_limit": 10000000,
+      "investment_limit": "no limit",
+      "rate_borrowing": "one-month SOFR",
+      "rate_investing": "rate established by BH Finance",
+      "auto_renewal": "annually on Dec 31, 90 days notice to terminate"
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "as_of": "2024-12-31",
+      "total_assets": 355906000,
+      "total_current_assets": 132080000,
+      "total_noncurrent_assets": 223826000,
+      "cash_and_equivalents": 27271000,
+      "receivables_net": 50352000,
+      "cash_pooling_receivable": 44559000,
+      "inventories": 120000,
+      "prepaid": 2047000,
+      "property_equipment_net": 10903000,
+      "goodwill": 92023000,
+      "intangibles_net": 82398000,
+      "operating_lease_assets": 5090000,
+      "total_current_liabilities": 207460000,
+      "accounts_payable": 27026000,
+      "committed_advertising": 39844000,
+      "unredeemed_gift_cards": 102697000,
+      "other_current_liabilities": 36889000,
+      "total_noncurrent_liabilities": 68136000,
+      "deferred_franchise_income": 3024000,
+      "deferred_income_taxes_net": 17652000,
+      "long_term_operating_leases": 7305000,
+      "other_long_term_liabilities": 40155000,
+      "total_liabilities": 275596000,
+      "paid_in_capital": 152197000,
+      "retained_deficit": -68411000,
+      "accumulated_oci": -3476000,
+      "total_equity": 80310000
+    },
+    "income_statement": {
+      "years": {
+        "2024": {
+          "service_fees": 198627000,
+          "other_fees_franchise_sales": 45681000,
+          "advertising_kit_sales": 9446000,
+          "company_restaurant_sales": 3633000,
+          "other_revenue": 254000,
+          "total_revenue": 257641000,
+          "cost_other_fees": 3393000,
+          "cost_advertising_kits": 8725000,
+          "cost_company_restaurants": 3913000,
+          "sga": 115600000,
+          "total_costs_expenses": 131631000,
+          "operating_income": 126010000,
+          "net_interest_income": 3137000,
+          "income_before_tax": 129147000,
+          "income_tax": 31272000,
+          "net_income": 97875000,
+          "comprehensive_income": 96934000
+        },
+        "2023": {
+          "total_revenue": 248261000,
+          "operating_income": 120484000,
+          "net_income": 93884000
+        },
+        "2022": {
+          "total_revenue": 236937000,
+          "operating_income": 115910000,
+          "net_income": 88819000
+        }
+      }
+    },
+    "cash_flows": {
+      "2024": {
+        "net_income": 97875000,
+        "depreciation_amortization": 3803000,
+        "cash_from_operations": 105613000,
+        "capital_expenditures": -4888000,
+        "cash_from_investing": 6615000,
+        "dividends_paid": -110000000,
+        "cash_from_financing": -110000000,
+        "fx_effect": -1989000,
+        "net_change_cash": 239000,
+        "cash_end": 27271000,
+        "taxes_paid": 37288000
+      }
+    },
+    "equity_changes": {
+      "2022": {"opening_equity": 106492000, "net_income": 88819000, "dividends": -85000000, "oci": -800000, "closing_equity": 109511000},
+      "2023": {"opening_equity": 109511000, "net_income": 93884000, "dividends": -110000000, "oci": -19000, "closing_equity": 93376000},
+      "2024": {"opening_equity": 93376000, "net_income": 97875000, "dividends": -110000000, "oci": -941000, "closing_equity": 80310000}
+    }
+  },
+  "item6_fee_detail": {
+    "royalty": {
+      "standard_rate": "4% of Gross Sales",
+      "payment_timing": "10th of each month for prior month",
+      "gross_sales_definition": "Total revenues from all product sales, cash/credit/gift card, excluding sales taxes and gift card sale revenue",
+      "captive_venue_reduction": "ADQ may reduce for specialty captive-venue locations (airports, stadiums)"
+    },
+    "sales_promotion": {
+      "rate_range": "5%–6% of Gross Sales",
+      "rate_determination": "ADQ determines within range, without regard to fees paid by other DQ locations",
+      "notice_of_change": "At least 90 days advance notice",
+      "allocation": "ADQ sole discretion — national (NMF), regional (DMA), local, individual store, or concept-specific",
+      "management_fee": "7% of sales promotion payments (not taken above 3% of gross sales)",
+      "fund_audit": "Independent national accounting firm annual review"
+    },
+    "conversion_royalty_schedule": {
+      "nsf_conversion": {
+        "soft_serve": "Carry over existing rate",
+        "food": "No royalty for first 36 months; 4% of (Food Sales minus Base Food Sales) starting month 37"
+      },
+      "limited_system_conversion": {
+        "soft_serve": "Carry over existing rate",
+        "other": "4% of gross sales on all other products"
+      }
+    },
+    "relocation_royalty_schedule": {
+      "years_1_5": "Carry over existing franchise agreement rate",
+      "years_6_10": "Mid-point between existing rate and 4%",
+      "years_11_plus": "4% of Gross Sales (standard)"
+    },
+    "conversion_sales_promotion_schedule_nsf": {
+      "months_1_24": "1% (min $5,000/yr)",
+      "months_25_48": "1.5% (min $6,500/yr)",
+      "months_49_72": "2% (min $8,000/yr)",
+      "months_73_96": "2.5% (min $9,500/yr)",
+      "months_97_120": "3% (min $11,000/yr)",
+      "months_121_plus": "3.5% or then-current NMF rate"
+    },
+    "relocation_sales_promotion_schedule": {
+      "years_1_5": "Existing rate, min 3.5%",
+      "years_6_10": "Existing rate, min 4%",
+      "years_11_plus": "5%–6% (standard)"
+    }
+  }
+}

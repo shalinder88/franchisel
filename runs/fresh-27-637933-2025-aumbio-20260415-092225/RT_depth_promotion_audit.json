@@ -1,0 +1,55 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_date": "2026-04-15",
+  "promoted_facts": [
+    {
+      "fact": "Renewal fee is $5,000 (subject to CPI adjustment)",
+      "source": "Reader report Pass E / FA Section 2.2(iv), PDF page 59",
+      "canonical_field": "item6_other_fees",
+      "action": "Added renewal_fee field"
+    },
+    {
+      "fact": "Mediation venue is specifically Chicago, IL (not generic 'city of headquarters')",
+      "source": "FA Section 19.1, PDF page 92",
+      "canonical_field": "item17_dispute_resolution",
+      "action": "Updated forum to specify Chicago"
+    },
+    {
+      "fact": "Franchisee waives punitive, exemplary, incidental, indirect, special, and consequential damages",
+      "source": "FA Section 19.7, PDF page 95",
+      "canonical_field": "item17_dispute_resolution",
+      "action": "Added punitive_damages_waiver field"
+    },
+    {
+      "fact": "Jury trial waived by both parties",
+      "source": "FA Section 19.8, PDF page 95",
+      "canonical_field": "item17_dispute_resolution",
+      "action": "Added jury_trial_waiver field"
+    },
+    {
+      "fact": "Franchisee must notify franchisor within 30 days of discovering breach as condition precedent to damages claim",
+      "source": "FA Section 19.3, PDF page 95",
+      "canonical_field": "item17_dispute_resolution",
+      "action": "Added prior_notice_days field"
+    },
+    {
+      "fact": "No class action arbitration — individual basis only",
+      "source": "FA Section 19.2, PDF page 92",
+      "canonical_field": "item17_dispute_resolution",
+      "action": "Added class_action_waiver field"
+    },
+    {
+      "fact": "Failure to open for 5 consecutive days is non-curable termination",
+      "source": "FA Section 16.2(xi), PDF page 84",
+      "canonical_field": "item17_termination",
+      "action": "Added abandonment_threshold"
+    },
+    {
+      "fact": "Fixed fees may increase annually per CPI-U",
+      "source": "FA Section 4.9, PDF page 62",
+      "canonical_field": "item6_other_fees",
+      "action": "Added annual_cpi_adjustment field"
+    }
+  ],
+  "promotion_count": 8
+}

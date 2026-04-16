@@ -1,0 +1,58 @@
+{
+  "depth_pass": "promotion_audit",
+  "fdd_id": "638058-2025",
+  "brand": "Hilton Hotels & Resorts",
+  "promoted_facts": [
+    {
+      "fact": "Hilton affiliates revenue from franchisees in 2024 was $1,101,161,898 (excluding royalty/program fees, HSM)",
+      "source_reader_report": "Pass C, Item 8 section",
+      "source_pdf_page": 47,
+      "promoted_to": "item8.affiliate_revenue_2024"
+    },
+    {
+      "fact": "HSM revenues: $19,614,010 rebates/allowances + $38,697,912 admin fees + $8,763,692 goods/services in 2024",
+      "source_reader_report": "Pass C, Item 8 section",
+      "source_pdf_page": [48, 49],
+      "promoted_to": "item8.hsm_revenues_2024"
+    },
+    {
+      "fact": "Required purchases estimated at 15%–20% of establishment cost and 2%–5% of operating expenses",
+      "source_reader_report": "Pass C, Item 8 section",
+      "source_pdf_page": 52,
+      "promoted_to": "item8.required_purchase_percentage"
+    },
+    {
+      "fact": "New Development must start within 16 months, complete within 36 months of approval",
+      "source_reader_report": "Pass C, Item 11 section",
+      "source_pdf_page": 62,
+      "promoted_to": "term.construction_deadlines"
+    },
+    {
+      "fact": "2 eforea spas in franchised hotels, 3 in company-managed as of Dec 31, 2024. Zero restaurants under Restaurant Brands.",
+      "source_reader_report": "Pass F, Item 20 section",
+      "source_pdf_page": 98,
+      "promoted_to": "item20.spa_restaurant_counts"
+    },
+    {
+      "fact": "Groups360 LLC equity interest held by Hilton JV Acquisition LLC (affiliate) — third-party group booking vendor",
+      "source_reader_report": "Pass C, Item 8 section",
+      "source_pdf_page": 49,
+      "promoted_to": "item8.groups360_relationship"
+    },
+    {
+      "fact": "Hilton Advance Purchase Program: 4.5% fee on advance payments; digital payments option (Google Pay, Apple Pay) via Adyen N.V.",
+      "source_reader_report": "Not surfaced in reader report",
+      "source_pdf_page": 62,
+      "promoted_to": "item11.advance_purchase_program"
+    },
+    {
+      "fact": "Subsequent events note references March 18, 2024 but context indicates March 18, 2025 (audit opinion date) — likely typographical error in FDD",
+      "source_reader_report": "Not surfaced in reader report",
+      "source_pdf_page": 125,
+      "promoted_to": "unresolveds (minor)"
+    }
+  ],
+  "promotions_count": 8,
+  "canonical_patched": true,
+  "enriched_v2_patched": true
+}

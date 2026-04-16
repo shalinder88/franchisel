@@ -1,0 +1,53 @@
+{
+  "enrichment_version": "v1",
+  "base": "09_final_canonical.json",
+  "enrichments": {
+    "item19_detail": {
+      "fpr_provided": false,
+      "no_fpr_statement_verbatim": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets. We also do not authorize our employees or representatives to make any such representations either orally or in writing.",
+      "substantiation_availability": "Not applicable (no FPR)",
+      "unauthorized_report_contact": "William Fortier, SVP Development-Americas, 7930 Jones Branch Drive, Suite 1100, McLean, VA 22102, 703-883-1000"
+    },
+    "item20_yearly_activity": {
+      "2022": {"franchised_start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "franchised_end": 0, "company_start": 0, "company_end": 0, "transfers": 0},
+      "2023": {"franchised_start": 0, "opened": 8, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "franchised_end": 8, "company_start": 0, "company_end": 0, "transfers": 0},
+      "2024": {"franchised_start": 8, "opened": 81, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 2, "franchised_end": 91, "company_start": 0, "company_end": 0, "transfers": 0}
+    },
+    "exhibit_structure": {
+      "total_exhibits": 18,
+      "contracts": ["D", "D-1", "D-2", "E", "G", "K", "M", "N"],
+      "financial": ["C"],
+      "franchisee_lists": ["A", "B"],
+      "state_addenda": ["D-1", "J-1"],
+      "other": ["F", "H", "I", "J-2", "L", "O"]
+    },
+    "item21_structural_facts": {
+      "auditor_firm": "CBH",
+      "auditor_location": "Tysons Corner, Virginia",
+      "opinion_type": "Unqualified (clean)",
+      "opinion_date": "2025-03-18",
+      "going_concern": false,
+      "entity_type": "Disregarded entity (single-member LLC)",
+      "tax_treatment": "All items included in Hilton's consolidated federal tax return",
+      "collateral_pledge": "All assets and franchise contracts pledged as collateral for Hilton debt (maturing 2025-2033)",
+      "operator_agreement": "Exists with Hilton affiliate; no compensation paid in 2022, 2023, or 2024",
+      "acquisitions": "Graduate brand franchise contracts acquired May 2024 for ~$85M"
+    },
+    "item1_structural_facts": {
+      "other_brands_count": "~20 (Hilton, Canopy, Conrad, Curio, DoubleTree, Embassy, Graduate, Hampton, Hilton Garden Inn, Home2, Homewood, LivSmart Studios, LXR, Motto, NoMad, Signia, Tapestry, Tempo, Tru, Waldorf Astoria)",
+      "international_affiliates": 4,
+      "service_affiliates": ["Hilton Reservations Worldwide (reservations)", "HSM (procurement)", "Hilton Honors Worldwide (loyalty)", "HSS (IT systems)"],
+      "hilton_jv_interest": "Non-controlling equity interest in Groups360 LLC (group booking platform)"
+    },
+    "item6_fee_attributes": {
+      "royalty_fixed_or_variable": "Variable (% of GRR)",
+      "royalty_negotiable": true,
+      "royalty_modifications_2024": 76,
+      "program_fee_max_increase": "1% of GRR over term",
+      "program_fee_compliance_discount": "0.5% reduction (3.0% vs 3.5%) if in compliance",
+      "late_payment_rate": "1.5% per month",
+      "electronic_funds_transfer": "Required",
+      "mandatory_guest_fee_included_in_grr": true
+    }
+  }
+}

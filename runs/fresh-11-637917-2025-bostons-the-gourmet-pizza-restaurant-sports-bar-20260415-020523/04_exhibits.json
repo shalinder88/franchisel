@@ -1,0 +1,128 @@
+{
+  "extraction_date": "2026-04-15",
+  "filing_id": "637917-2025",
+  "brand": "Boston's The Gourmet Pizza Restaurant & Sports Bar",
+  "exhibits": [
+    {
+      "letter": "A",
+      "name": "State Administrators and Agents for Service of Process",
+      "category": "regulatory",
+      "priority": "low",
+      "page_range": [58, 59],
+      "page_count": 2,
+      "deep_read": false,
+      "notes": "Lists state administrators for CA, HI, IL, IN, MD, MI, MN, NY, ND, RI, SD, VA, WA, WI"
+    },
+    {
+      "letter": "B",
+      "name": "Financial Statements",
+      "category": "financial",
+      "priority": "critical",
+      "page_range": [60, 76],
+      "page_count": 17,
+      "deep_read": true,
+      "notes": "Audited by Moss Adams. December 31, 2024, 2023, 2022. GOING CONCERN opinion. Image-based (no text layer) — rendered via pdftoppm. Includes balance sheet, income statement, changes in partners' capital, cash flow, and notes to financial statements."
+    },
+    {
+      "letter": "C",
+      "name": "Franchise Agreement",
+      "category": "contract",
+      "priority": "high",
+      "page_range": [77, 142],
+      "page_count": 66,
+      "deep_read": false,
+      "notes": "Standard franchise agreement. 31 sections. Key provisions summarized in Item 17. Full clause-by-clause analysis deferred to A2 depth pass."
+    },
+    {
+      "letter": "D",
+      "name": "Area Development Agreement",
+      "category": "contract",
+      "priority": "medium",
+      "page_range": [143, 174],
+      "page_count": 32,
+      "deep_read": false,
+      "notes": "For multi-unit development. Includes development schedule, territory provisions, termination triggers."
+    },
+    {
+      "letter": "E",
+      "name": "List of Current and Former Franchisees/Area Developers",
+      "category": "franchisee_list",
+      "priority": "medium",
+      "page_range": [175, 182],
+      "page_count": 8,
+      "deep_read": false,
+      "notes": "PII content — not extracted per PII rules. No confidentiality provisions restricting franchisee speech."
+    },
+    {
+      "letter": "F",
+      "name": "Operations Manual Table of Contents",
+      "category": "operations",
+      "priority": "low",
+      "page_range": [183, 185],
+      "page_count": 3,
+      "deep_read": false,
+      "notes": "Table of contents for ~1,675 page electronic Operations Manual (Bostonlink.org)"
+    },
+    {
+      "letter": "G",
+      "name": "State Addenda and Agreement Riders",
+      "category": "state_addenda",
+      "priority": "high",
+      "page_range": [186, 205],
+      "page_count": 20,
+      "deep_read": true,
+      "states_covered": ["California", "Hawaii", "Illinois", "Iowa", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Ohio", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+      "notes": "16 states with addenda. Key overrides: forum selection, choice of law, noncompete limitations, general release restrictions, fee deferral (IL, MD, ND, SD, WA), liquidated damages limitations, termination protections."
+    },
+    {
+      "letter": "H",
+      "name": "Contracts for use with the Boston's Restaurant Franchise",
+      "category": "contract",
+      "priority": "medium",
+      "page_range": [206, 241],
+      "page_count": 36,
+      "deep_read": false,
+      "sub_exhibits": [
+        {"sub_letter": "H-1", "name": "Franchise Owners Agreement (Guaranty)", "pages": [206, 209]},
+        {"sub_letter": "H-2", "name": "System Protection Agreement / Confidentiality Agreement", "pages": [210, 213]},
+        {"sub_letter": "H-3", "name": "Confidentiality and Noncompetition Agreement", "pages": [214, 219]},
+        {"sub_letter": "H-4", "name": "ACH Authorization", "pages": [220, 220]},
+        {"sub_letter": "H-5", "name": "Conditional Assignment of Telephone Numbers", "pages": [220, 222]},
+        {"sub_letter": "H-6", "name": "Lease Addendum / Collateral Assignment of Lease", "pages": [223, 231]},
+        {"sub_letter": "H-7", "name": "Terms of Service Agreement", "pages": [231, 231]},
+        {"sub_letter": "H-8", "name": "BostonLink Agreement", "pages": [232, 241]}
+      ],
+      "notes": "Includes guaranty (spousal), system protection, noncompete, ACH, lease addendum, technology agreements."
+    },
+    {
+      "letter": "I",
+      "name": "Franchise Disclosure Questionnaire",
+      "category": "contract",
+      "priority": "low",
+      "page_range": [242, 242],
+      "page_count": 1,
+      "deep_read": false,
+      "notes": "Standard franchise disclosure questionnaire"
+    },
+    {
+      "letter": "J",
+      "name": "State Effective Dates",
+      "category": "regulatory",
+      "priority": "low",
+      "page_range": [242, 243],
+      "page_count": 2,
+      "deep_read": false,
+      "notes": "Lists effective dates for state registrations"
+    },
+    {
+      "letter": "K",
+      "name": "Receipt",
+      "category": "receipt",
+      "priority": "low",
+      "page_range": [244, 246],
+      "page_count": 3,
+      "deep_read": false,
+      "notes": "Two copies (retain and return)"
+    }
+  ]
+}

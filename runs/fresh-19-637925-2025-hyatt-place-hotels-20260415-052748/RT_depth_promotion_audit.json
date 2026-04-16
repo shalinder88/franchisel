@@ -1,0 +1,48 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_date": "2026-04-15",
+  "filing_id": "637925-2025",
+  "promoted_facts": [
+    {
+      "fact": "Hyatt Place Franchising, L.L.C. unaudited balance sheet shows total assets of $72,031,707 and member's equity of $53,205,466 as of December 31, 2024",
+      "source": "State Addenda - California, page 402",
+      "promoted_to": "financial_statements.franchisor_entity_balance_sheet"
+    },
+    {
+      "fact": "Reservations length of stay breakdown: 78.8% for 1-4 nights, 15.8% for 5-11 nights, 3.3% for 12-29 nights, 2.4% for 30+ nights",
+      "source": "Item 19, page 86",
+      "promoted_to": "financial_performance.length_of_stay"
+    },
+    {
+      "fact": "Some Covered Hotels are joint ventures with affiliate owning <50% interest, classified as Franchised Covered Hotels",
+      "source": "Item 19, page 86",
+      "promoted_to": "financial_performance.classification_notes"
+    },
+    {
+      "fact": "Hyatt Hotels Corporation share repurchases: $1,190M in 2024, $453M in 2023, $369M in 2022. Dividends: $60M in 2024.",
+      "source": "Exhibit A-1, page 118",
+      "promoted_to": "financial_statements.capital_returns"
+    },
+    {
+      "fact": "Acquisitions net of cash: $609M in 2024, $175M in 2023, $174M in 2022",
+      "source": "Exhibit A-1, page 118",
+      "promoted_to": "financial_statements.investing_activities"
+    },
+    {
+      "fact": "Loyalty program deferred revenue liability of $1,333M is actuarially determined including breakage estimate. Funds deposited in segregated accounts. Independent annual audit.",
+      "source": "Exhibit A-1, pages 112-113",
+      "promoted_to": "financial_statements.loyalty_program"
+    },
+    {
+      "fact": "Pre-opening marketing requires spending at least $500 × number of guest rooms, submitted 120 days before opening",
+      "source": "Item 11, page 51",
+      "promoted_to": "training.pre_opening_marketing_minimum"
+    },
+    {
+      "fact": "Revenue manager must be certified within 90 days, may manage max 20 Brand Hotels, must have authorized access to reservation system",
+      "source": "Item 15, page 76",
+      "promoted_to": "contract_terms.revenue_manager_restrictions"
+    }
+  ],
+  "total_promoted": 8
+}

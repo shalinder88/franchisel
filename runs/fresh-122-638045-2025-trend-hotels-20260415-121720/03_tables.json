@@ -1,0 +1,274 @@
+{
+  "extraction_id": "638045-2025",
+  "brand": "Trend Hotels and Suites by My Place",
+  "tables": [
+    {
+      "table_id": "T5_initial_fees",
+      "item": 5,
+      "title": "Initial Fees",
+      "source_pages": [12, 13],
+      "columns": ["Fee", "Amount", "Notes"],
+      "rows": [
+        {"Fee": "Initial Franchise Fee", "Amount": "$45,000", "Notes": "Lump sum, nonrefundable. Application Fee of $2,500 credited toward this."},
+        {"Fee": "Application Fee", "Amount": "$2,500", "Notes": "Nonrefundable"},
+        {"Fee": "Training Fee (Resource Evaluation & Guidance)", "Amount": "$10,000", "Notes": "Nonrefundable, due 14 days prior to training"},
+        {"Fee": "Computer Hardware/Software (PMS, CRS, CRM)", "Amount": "$6,000 - $22,000", "Notes": "Nonrefundable, may not be required if existing systems are compatible"}
+      ],
+      "table_notes": [
+        "All fees are nonrefundable.",
+        "Application approval within 30 days. Must sign franchise agreement within 120 days of approval.",
+        "Training fee subject to change at franchisor's sole discretion."
+      ]
+    },
+    {
+      "table_id": "T6_other_fees",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [14, 15, 16, 17, 18, 19, 20, 21, 22],
+      "columns": ["Name of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Name of Fee": "Royalty", "Amount": "0% (30 days) → 2.5% (days 31-90) → 4% (days 91-180) → 5% (thereafter)", "Due Date": "Monthly, 30 days after billing", "Remarks": "Based on Gross Room Revenue. Never decreases once a rate tier is achieved."},
+        {"Name of Fee": "Marketing and Reservation Fund Fee", "Amount": "2.50% of GRR", "Due Date": "Monthly, 30 days after billing", "Remarks": "Nonrefundable"},
+        {"Name of Fee": "Revenue Intelligence Service", "Amount": "1% of GRR", "Due Date": "Monthly, 30 days after billing", "Remarks": "Funds revenue management and business intelligence. Rate may change on 120 days' notice."},
+        {"Name of Fee": "Guest Loyalty Program", "Amount": "1% of GRR", "Due Date": "Monthly, 30 days after billing", "Remarks": "Rate may change on 120 days' notice."},
+        {"Name of Fee": "Initial Training", "Amount": "$10,000 + travel/lodging/meals", "Due Date": "14 days before training", "Remarks": "Nonrefundable. Includes Resource Evaluation and Guidance Program."},
+        {"Name of Fee": "Retraining", "Amount": "$4,125 (subject to change)", "Due Date": "14 days before start", "Remarks": "Additional training if required or requested."},
+        {"Name of Fee": "Administrative Training", "Amount": "Travel, lodging, meal, employee expenses", "Due Date": "N/A", "Remarks": "Optional training at My Place University, Aberdeen, SD."},
+        {"Name of Fee": "Travel Agent/Internet/GDS Fees", "Amount": "Reimbursement of all fees", "Due Date": "30 days after billing", "Remarks": "Franchisor may pay on your behalf. No commissions paid."},
+        {"Name of Fee": "Transfer", "Amount": "50% of then-current Initial Franchise Fee", "Due Date": "Before transfer approval", "Remarks": "No fee if transfer to entity with 51%+ ownership."},
+        {"Name of Fee": "Audit", "Amount": "Cost of audit + underpayment + interest", "Due Date": "10 days after notification", "Remarks": "Payable if audit shows 2%+ underpayment."},
+        {"Name of Fee": "Renewal Fee", "Amount": "Then-current Application Fee + Initial Franchise Fee", "Due Date": "180 days before expiration", "Remarks": "5-year extension if in Good Standing."},
+        {"Name of Fee": "Indemnification", "Amount": "As incurred", "Due Date": "As incurred", "Remarks": "Must indemnify franchisor against claims."},
+        {"Name of Fee": "Damages", "Amount": "Unspecified", "Due Date": "30 days after termination", "Remarks": "All damages caused by default."},
+        {"Name of Fee": "Liquidated Damages", "Amount": "As incurred", "Due Date": "As incurred", "Remarks": "$1,000/day pre-approval operation. Premature termination: 36× avg monthly fees (see footnote 12)."},
+        {"Name of Fee": "Interest", "Amount": "Highest rate allowed by law", "Due Date": "Immediately upon billing", "Remarks": "On delinquent sums."},
+        {"Name of Fee": "Late Fees", "Amount": "$200 per occurrence", "Due Date": "With delinquent payment", "Remarks": "Per late payment and per late report."},
+        {"Name of Fee": "Dishonored Check Fees", "Amount": "Max allowed by SD law ($60)", "Due Date": "When made good", "Remarks": "Per dishonored check."},
+        {"Name of Fee": "Approved Supplier", "Amount": "Not to exceed $1,000", "Due Date": "30 days after billing", "Remarks": "For supplier approval review."},
+        {"Name of Fee": "Securities Offering Fee", "Amount": "50% of then-current Initial Franchise Fee", "Due Date": "With offering application", "Remarks": "If franchisee makes public equity offering."},
+        {"Name of Fee": "Reinspection Fee", "Amount": "$2,500", "Due Date": "30 days after billing", "Remarks": "After unsatisfactory inspection/QA evaluation."},
+        {"Name of Fee": "Convention", "Amount": "Registration + travel/lodging/meals", "Due Date": "Pre-registration required", "Remarks": "Mandatory attendance for franchisee and GM."},
+        {"Name of Fee": "Technology Subscription Fee", "Amount": "$1,204/month + sales tax", "Due Date": "Monthly, 30 days after billing", "Remarks": "PMS, CRS, CRM, website, email, AV/patch, firewall. Variable by rooms/computers."},
+        {"Name of Fee": "Website Fee", "Amount": "$1,000 annually", "Due Date": "30 days after billing, then annually", "Remarks": "Franchisor controls content."},
+        {"Name of Fee": "Change of Opening Date", "Amount": "$5,000", "Due Date": "30 days after billing", "Remarks": "For schedule changes up to 90 days, plus reimbursement of costs."}
+      ],
+      "table_notes": [
+        "All fees payable to franchisor are nonrefundable and uniformly imposed unless noted otherwise.",
+        "Footnote 12 details liquidated damages formula for premature termination: 36-month projection or remaining term multiplied by average monthly fees.",
+        "Revenue Intelligence Service and Guest Loyalty Program rates may change with 120 days' notice."
+      ]
+    },
+    {
+      "table_id": "T7_initial_investment",
+      "item": 7,
+      "title": "Estimated Initial Investment — Trend Conversion Hotel",
+      "source_pages": [22, 23, 24],
+      "columns": ["Type of Expenditure", "Amount Low", "Amount High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"Type of Expenditure": "Initial Franchise Fee (Note 2)", "Amount Low": "$45,000", "Amount High": "$45,000", "Method of Payment": "Lump sum", "When Due": "At/before signing", "To Whom": "Us"},
+        {"Type of Expenditure": "Training Fee (Note 3)", "Amount Low": "$10,000", "Amount High": "$10,000", "Method of Payment": "Lump sum", "When Due": "14 days before training", "To Whom": "Us"},
+        {"Type of Expenditure": "Architects and Engineers (Note 4)", "Amount Low": "$0", "Amount High": "$70,000", "Method of Payment": "As arranged", "When Due": "As arranged", "To Whom": "Architect/Engineer"},
+        {"Type of Expenditure": "Preconstruction Costs (Note 5)", "Amount Low": "$0", "Amount High": "$50,000", "Method of Payment": "As arranged", "When Due": "Before opening", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Building Costs (Note 6)", "Amount Low": "$50,000", "Amount High": "$600,000", "Method of Payment": "As required", "When Due": "As required", "To Whom": "Contractors/Suppliers"},
+        {"Type of Expenditure": "Real Property (Note 7)", "Amount Low": "Varies", "Amount High": "Varies", "Method of Payment": "As required", "When Due": "As required", "To Whom": "Real property owner"},
+        {"Type of Expenditure": "FF&E (Note 8)", "Amount Low": "$10,000", "Amount High": "$1,800,000", "Method of Payment": "As arranged", "When Due": "As incurred", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Insurance (Note 9)", "Amount Low": "$28,000", "Amount High": "$35,000", "Method of Payment": "As arranged", "When Due": "Before construction/opening", "To Whom": "Insurance companies"},
+        {"Type of Expenditure": "Business Permits & Utility Deposits (Note 10)", "Amount Low": "$0", "Amount High": "$25,000", "Method of Payment": "As arranged", "When Due": "As incurred", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Opening Advertising (Note 11)", "Amount Low": "$0", "Amount High": "$20,000", "Method of Payment": "As arranged", "When Due": "Prior to opening", "To Whom": "Advertising media"},
+        {"Type of Expenditure": "Startup Supplies (Note 12)", "Amount Low": "$5,000", "Amount High": "$25,000", "Method of Payment": "As arranged", "When Due": "Prior to opening", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Travel & Living (Training) (Note 13)", "Amount Low": "$1,500", "Amount High": "$3,000", "Method of Payment": "As incurred", "When Due": "During training", "To Whom": "Service providers"},
+        {"Type of Expenditure": "Signage (Note 14)", "Amount Low": "$25,000", "Amount High": "$75,000", "Method of Payment": "As required", "When Due": "As required", "To Whom": "Us or Authorized Supplier"},
+        {"Type of Expenditure": "Computer Hardware/Software (Note 15)", "Amount Low": "$6,000", "Amount High": "$22,000", "Method of Payment": "As incurred", "When Due": "Prior to opening", "To Whom": "Us or Our Affiliate"},
+        {"Type of Expenditure": "Additional Funds (3 months) (Note 16)", "Amount Low": "$92,000", "Amount High": "$167,000", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Various"}
+      ],
+      "total": {"low": "$272,500", "high": "$2,947,000"},
+      "table_notes": [
+        "Note 1: Estimates based on renovating 65-130 guest room hotel. Excludes land/lease cost.",
+        "Note 4: MPHOA has never converted a hotel to Trend. Estimates from industry averages and My Place experience.",
+        "Note 7: Land costs vary too significantly to estimate.",
+        "Note 16: First 3 months operating expenses estimated from existing hotel franchise systems experience.",
+        "Note 17: Information based on experience of franchisees developing and operating hotels. No direct or indirect financing offered."
+      ]
+    },
+    {
+      "table_id": "T11_training",
+      "item": 11,
+      "title": "Training Program",
+      "source_pages": [33, 34],
+      "columns": ["Subject", "Classroom Hours", "On-the-Job Hours", "Location"],
+      "rows": [
+        {"Subject": "Resource Evaluation & Guidance Program — Staff Development", "Classroom Hours": 0, "On-the-Job Hours": 8, "Location": "Selected Hotel"},
+        {"Subject": "Resource Evaluation & Guidance Program — Hotel Operations Observation", "Classroom Hours": 0, "On-the-Job Hours": 50, "Location": "Selected Hotel"},
+        {"Subject": "General Manager Training — Operations Standards & Resources", "Classroom Hours": 16, "On-the-Job Hours": 0, "Location": "Aberdeen, SD"},
+        {"Subject": "General Manager Training — Hotel Operations", "Classroom Hours": 20, "On-the-Job Hours": 0, "Location": "Aberdeen, SD"},
+        {"Subject": "General Manager Training — Hotel Systems", "Classroom Hours": 12, "On-the-Job Hours": 0, "Location": "Aberdeen, SD"},
+        {"Subject": "Administrative Training — Construction & Specs", "Classroom Hours": 1, "On-the-Job Hours": 0, "Location": "Aberdeen, SD"},
+        {"Subject": "Administrative Training — Operations Systems", "Classroom Hours": 1, "On-the-Job Hours": 0, "Location": "Aberdeen, SD"},
+        {"Subject": "Administrative Training — Operations", "Classroom Hours": 4, "On-the-Job Hours": 0, "Location": "Aberdeen, SD"},
+        {"Subject": "Administrative Training — Brand Resources & Support", "Classroom Hours": 6, "On-the-Job Hours": 0, "Location": "Aberdeen, SD"}
+      ],
+      "table_notes": [
+        "Resource Evaluation & Guidance Program must be completed before hotel opens.",
+        "GM Training and Administrative Training conducted after scheduled opening.",
+        "Instructors have at least 2 years practical hotel management experience.",
+        "Total hours: 60 classroom + 58 on-the-job = 118 hours across all programs."
+      ]
+    },
+    {
+      "table_id": "T20_1_systemwide",
+      "item": 20,
+      "title": "Table No. 1 — Systemwide Outlet Summary (2022–2024)",
+      "source_pages": [49],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": 2022, "Start of Year": 0, "End of Year": 0, "Net Change": 0},
+        {"Outlet Type": "Franchised", "Year": 2023, "Start of Year": 0, "End of Year": 0, "Net Change": 0},
+        {"Outlet Type": "Franchised", "Year": 2024, "Start of Year": 0, "End of Year": 0, "Net Change": 0},
+        {"Outlet Type": "Company-Owned", "Year": 2022, "Start of Year": 0, "End of Year": 0, "Net Change": 0},
+        {"Outlet Type": "Company-Owned", "Year": 2023, "Start of Year": 0, "End of Year": 0, "Net Change": 0},
+        {"Outlet Type": "Company-Owned", "Year": 2024, "Start of Year": 0, "End of Year": 0, "Net Change": 0}
+      ],
+      "table_notes": ["Zero Trend outlets in any year. Brand has no operating history."]
+    },
+    {
+      "table_id": "T20_2_transfers",
+      "item": 20,
+      "title": "Table No. 2 — Transfers (2022–2024)",
+      "source_pages": [50],
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        {"State": "TOTAL", "Year": 2022, "Number of Transfers": 0},
+        {"State": "TOTAL", "Year": 2023, "Number of Transfers": 0},
+        {"State": "TOTAL", "Year": 2024, "Number of Transfers": 0}
+      ],
+      "table_notes": ["No transfers — no Trend outlets have ever opened."]
+    },
+    {
+      "table_id": "T20_3_franchised_status",
+      "item": 20,
+      "title": "Table No. 3 — Status of Franchised Outlets (2022–2024)",
+      "source_pages": [50],
+      "columns": ["State", "Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Ops", "End"],
+      "rows": [
+        {"State": "Totals", "Year": 2022, "Start": 0, "Opened": 0, "Terminations": 0, "Non-Renewals": 0, "Reacquired": 0, "Ceased Ops": 0, "End": 0},
+        {"State": "Totals", "Year": 2023, "Start": 0, "Opened": 0, "Terminations": 0, "Non-Renewals": 0, "Reacquired": 0, "Ceased Ops": 0, "End": 0},
+        {"State": "Totals", "Year": 2024, "Start": 0, "Opened": 0, "Terminations": 0, "Non-Renewals": 0, "Reacquired": 0, "Ceased Ops": 0, "End": 0}
+      ],
+      "table_notes": ["All zeros — no Trend franchised outlets."]
+    },
+    {
+      "table_id": "T20_4_company_owned",
+      "item": 20,
+      "title": "Table No. 4 — Status of Company-Owned Outlets (2022–2024)",
+      "source_pages": [50],
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired", "Closed", "Sold", "End"],
+      "rows": [
+        {"State": "Totals", "Year": 2022, "Start": 0, "Opened": 0, "Reacquired": 0, "Closed": 0, "Sold": 0, "End": 0},
+        {"State": "Totals", "Year": 2023, "Start": 0, "Opened": 0, "Reacquired": 0, "Closed": 0, "Sold": 0, "End": 0},
+        {"State": "Totals", "Year": 2024, "Start": 0, "Opened": 0, "Reacquired": 0, "Closed": 0, "Sold": 0, "End": 0}
+      ],
+      "table_notes": ["All zeros — no company-owned Trend outlets."]
+    },
+    {
+      "table_id": "T20_5_projected",
+      "item": 20,
+      "title": "Table No. 5 — Projected Openings as of December 31, 2024",
+      "source_pages": [50],
+      "columns": ["State", "Signed Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        {"State": "TOTAL", "Signed Not Opened": 0, "Projected New Franchised": 0, "Projected New Company-Owned": 0}
+      ],
+      "table_notes": ["Zero projected openings across all categories."]
+    },
+    {
+      "table_id": "T21_balance_sheet",
+      "item": 21,
+      "title": "Balance Sheets (2022–2024)",
+      "source_pages": [90, 91],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Cash and cash equivalents", "2024": 2108988, "2023": 1578469, "2022": 2498445},
+        {"Line Item": "Accounts receivable", "2024": 1469799, "2023": 1210335, "2022": 926142},
+        {"Line Item": "Current portion franchise fee receivable", "2024": 40000, "2023": 165000, "2022": 103000},
+        {"Line Item": "Current portion contract acquisition costs", "2024": 24975, "2023": 22721, "2022": 22700},
+        {"Line Item": "Prepaid expenses", "2024": 207427, "2023": 268196, "2022": 227457},
+        {"Line Item": "Total current assets", "2024": 3851189, "2023": 3244721, "2022": 3777744},
+        {"Line Item": "Net property and equipment", "2024": 438115, "2023": 505096, "2022": 281440},
+        {"Line Item": "Trademark development costs", "2024": 198801, "2023": 198801, "2022": 197363},
+        {"Line Item": "Franchise fee receivable (long-term)", "2024": 233000, "2023": 233000, "2022": 163000},
+        {"Line Item": "Contract acquisition costs (long-term)", "2024": 744902, "2023": 769236, "2022": 693239},
+        {"Line Item": "Total assets", "2024": 5466007, "2023": 4950854, "2022": 5112786},
+        {"Line Item": "Accounts payable", "2024": 837622, "2023": 535913, "2022": 460443},
+        {"Line Item": "Current maturities of long-term debt", "2024": 6652, "2023": 6652, "2022": 6652},
+        {"Line Item": "Accrued salaries and other accruals", "2024": 306673, "2023": 292224, "2022": 294306},
+        {"Line Item": "Current portion deferred revenue", "2024": 330554, "2023": 388886, "2022": 526341},
+        {"Line Item": "Total current liabilities", "2024": 1481501, "2023": 1223675, "2022": 1287742},
+        {"Line Item": "Deferred revenue (long-term)", "2024": 3172118, "2023": 3252027, "2022": 2826073},
+        {"Line Item": "Long-term debt", "2024": 7206, "2023": 13858, "2022": 20510},
+        {"Line Item": "Total liabilities", "2024": 4660825, "2023": 4489560, "2022": 4134325},
+        {"Line Item": "Class A members' equity", "2024": -1755172, "2023": -2579307, "2022": -2462922},
+        {"Line Item": "Class B members' equity", "2024": 2560354, "2023": 3040601, "2022": 3441383},
+        {"Line Item": "Total members' equity", "2024": 805182, "2023": 461294, "2022": 978461}
+      ],
+      "table_notes": [
+        "Class A members have negative equity in all three years (cumulative distributions exceed allocations).",
+        "Deferred revenue is the largest liability ($3.5M total in 2024) — represents unearned franchise/marketing/loyalty fees.",
+        "Minimal debt: only a $13,858 vehicle note at 0% interest."
+      ]
+    },
+    {
+      "table_id": "T21_income_statement",
+      "item": 21,
+      "title": "Statements of Operations (2022–2024)",
+      "source_pages": [92],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Franchise fees", "2024": 204690, "2023": 240229, "2022": 154708},
+        {"Line Item": "Royalty fees", "2024": 4415862, "2023": 4066891, "2022": 4121875},
+        {"Line Item": "Marketing fees", "2024": 2655616, "2023": 2521034, "2022": 2467195},
+        {"Line Item": "Loyalty program fees", "2024": 1100657, "2023": 882837, "2022": 954333},
+        {"Line Item": "Training fees", "2024": 132000, "2023": 193875, "2022": 107250},
+        {"Line Item": "Franchise website fees", "2024": 71747, "2023": 67664, "2022": 65747},
+        {"Line Item": "Conference fees", "2024": 497795, "2023": 0, "2022": 358200},
+        {"Line Item": "Other income", "2024": 475715, "2023": 309045, "2022": 248152},
+        {"Line Item": "Total revenues", "2024": 9554082, "2023": 8281575, "2022": 8477460},
+        {"Line Item": "Salaries", "2024": 2858712, "2023": 3167471, "2022": 2721507},
+        {"Line Item": "Other payroll-related expenses", "2024": 698683, "2023": 636855, "2022": 520710},
+        {"Line Item": "Marketing and program development", "2024": 991435, "2023": 973291, "2022": 964007},
+        {"Line Item": "Rent/leases", "2024": 535798, "2023": 462376, "2022": 461631},
+        {"Line Item": "Travel + Travel air", "2024": 726342, "2023": 760947, "2022": 802980},
+        {"Line Item": "Meetings and conferences", "2024": 543493, "2023": 17469, "2022": 536918},
+        {"Line Item": "Total operating expenses", "2024": 8555653, "2023": 8091805, "2022": 7417953},
+        {"Line Item": "Net Income", "2024": 998429, "2023": 189770, "2022": 1059507}
+      ],
+      "table_notes": [
+        "Revenue grew 15.4% in 2024 vs 2023 (vs -2.3% in 2023 vs 2022).",
+        "Net income swung from $1.06M (2022) to $190K (2023) to $998K (2024).",
+        "All revenue is from the My Place Hotels brand — Trend has zero operating outlets.",
+        "Conference fees are biennial ($498K in 2024, $0 in 2023, $358K in 2022)."
+      ]
+    },
+    {
+      "table_id": "T21_cash_flow",
+      "item": 21,
+      "title": "Statements of Cash Flows (2022–2024)",
+      "source_pages": [94, 95],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Net income", "2024": 998429, "2023": 189770, "2022": 1059507},
+        {"Line Item": "Depreciation and amortization", "2024": 120339, "2023": 62755, "2022": 54227},
+        {"Line Item": "Net cash from operating activities", "2024": 1243570, "2023": 81462, "2022": 576290},
+        {"Line Item": "Net cash used for investing activities", "2024": -51858, "2023": -287849, "2022": -100399},
+        {"Line Item": "Distributions paid to members", "2024": -654541, "2023": -706937, "2022": -506120},
+        {"Line Item": "Net cash used for financing activities", "2024": -661193, "2023": -713589, "2022": -519474},
+        {"Line Item": "Net change in cash", "2024": 530519, "2023": -919976, "2022": -43583},
+        {"Line Item": "Cash end of year", "2024": 2108988, "2023": 1578469, "2022": 2498445}
+      ],
+      "table_notes": [
+        "Operating cash flow recovered strongly in 2024 ($1.24M vs $81K in 2023).",
+        "Member distributions ranged $506K–$707K annually.",
+        "Cash position improved in 2024 after declining in 2022–2023."
+      ]
+    }
+  ]
+}

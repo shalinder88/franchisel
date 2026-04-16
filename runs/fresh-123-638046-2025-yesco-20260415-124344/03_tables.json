@@ -1,0 +1,314 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "YESCO",
+  "fdd_id": "638046-2025",
+  "tables": [
+    {
+      "id": "T5-1",
+      "item": 5,
+      "title": "Initial Franchise Fee Summary",
+      "source_pages": [12],
+      "columns": ["Description", "Amount"],
+      "rows": [
+        ["Standard Franchise Fee", "$50,000"],
+        ["Area Development Fee (existing franchisees)", "$25,000 to $50,000"],
+        ["2024 Actual Range Paid", "$25,000 to $50,000"]
+      ],
+      "table_notes": ["Franchise fee non-refundable except 40% if franchisee fails training. YFS may finance up to 66.67%."]
+    },
+    {
+      "id": "T6-1",
+      "item": 6,
+      "title": "Other Fees Table",
+      "source_pages": [13, 14],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty", "Greater of $1,000 or 6% of Gross Revenue/month", "15th of each calendar month for previous month", "Auto-debited. Reporting by 5th of month."],
+        ["Tiered Royalty (Early Renewal only)", "Greater of $1,000 per agreement or declining % (6%/4%/2%)", "15th of each calendar month", "Applies to Early Renewal Successor Franchise Agreements only"],
+        ["Grand Opening", "$1,000", "Prior to opening", "See Item 11"],
+        ["National Advertising Fee", "Up to 3% of Gross Revenue (when implemented)", "15th of each calendar month", "Combined with Local Ad Fee not to exceed 3%"],
+        ["Local Advertising Fee", "2% of Gross Revenue/year (may increase to 3%)", "As incurred", "Combined with National Ad Fee not to exceed 3%"],
+        ["National Lead Admin Fee", "Up to 6% of amounts received from National Lead", "As incurred", "See Item 12"],
+        ["Audit Fee", "$3,000 to $5,000 (if GR understated by 2%+)", "On demand", "Plus interest on understated amounts"],
+        ["Transfer Fee", "Greater of $5,000 or 4% of Gross Revenue in last year", "At time transfer approved", "Plus other transfer conditions"],
+        ["Successor Franchise Fee", "$15,000", "At time renewal approved", "Per renewal term"],
+        ["Late Fees/Interest", "Highest lawful rate or 1.5%/month + $50/late payment", "Due on receipt", "Per day late fee until paid"],
+        ["Insurance Admin", "Annual premium + 15% admin fee", "As incurred", "If franchisor procures insurance on your behalf"],
+        ["Fees on Default/Indemnity", "All costs associated", "On demand", "Indemnification obligation"],
+        ["Additional Training", "$800/day + travel reimbursement", "3 days before visit", "If you require or request additional assistance"],
+        ["Management Services", "Cost + 15% admin fee (est. 5-10% monthly GR)", "On receipt of invoice", "If business not managed by trained person"],
+        ["YESCO Software Fees", "First 10 users free; $100/user/month additional", "15th of each calendar month", "See Item 11"],
+        ["Data Storage Fees", "$0.25/GB/month", "15th of each calendar month", "See Item 11"],
+        ["Email Subscription Fee", "$150/user + per archived account/year", "On receipt of invoice", "See Item 11"],
+        ["Website Fee", "$20/month", "15th of each calendar month", "Optional separate landing page"],
+        ["Territory Encroachment", "Varies", "On receipt of invoice", "Disgorgement of GR + admin costs"]
+      ],
+      "table_notes": ["All fees to franchisor/affiliates are non-refundable. Franchisor reserves right to require electronic funds transfer. Gross Revenue defined in Note 1: total sales and receipts excluding sales tax."]
+    },
+    {
+      "id": "T6-2",
+      "item": 6,
+      "title": "Tiered Royalty Table (Early Renewal Program)",
+      "source_pages": [15],
+      "columns": ["Tier", "Monthly Gross Revenue Range", "Royalty Rate"],
+      "rows": [
+        ["Tier 0", "$0 to $41,666", "6%"],
+        ["Tier 1", "$41,667 to $62,500", "4%"],
+        ["Tier 2", "$62,501+", "2%"]
+      ],
+      "table_notes": ["Minimum royalty: $1,000 per agreement per month. Must report by 5th day and be in full compliance. Non-compliance reverts all agreements to 6%."]
+    },
+    {
+      "id": "T7-1",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [17, 18],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        ["Franchise Fee", "$50,000", "$50,000", "Lump sum", "At signing", "Franchisor"],
+        ["Rent", "$500", "$5,000", "Monthly", "Before opening", "Landlord"],
+        ["Rental Improvements", "$0", "$20,000", "Lump sum", "At signing", "Vendors/Landlord"],
+        ["Sign", "$1,500", "$6,000", "Lump sum", "Before opening", "Vendors"],
+        ["Deposits", "$0", "$35,000", "Lump sum", "As incurred", "Utilities/Landlord"],
+        ["Training Expenses", "$500", "$8,000", "As incurred", "During training", "Airlines/Hotels"],
+        ["FFE/Software", "$0", "$12,000", "As incurred", "Before opening", "Vendors"],
+        ["Computer HW/SW", "$1,000", "$8,500", "As incurred", "Before opening", "Vendors"],
+        ["Grand Opening/Marketing/Branding", "$1,500", "$7,700", "As incurred", "At open", "Franchisor/Vendors"],
+        ["Insurance", "$1,000", "$20,000", "As incurred", "When incurred", "Insurance carrier"],
+        ["Professional Services", "$500", "$5,000", "As incurred", "When incurred", "Attorneys/Accountants"],
+        ["Vehicles", "$0", "$185,000", "As incurred", "When incurred", "Vendors"],
+        ["Inventory & Tools", "$8,500", "$20,000", "As incurred", "When incurred", "Vendors"],
+        ["Additional Funds (3 months)", "$0", "$50,000", "As incurred", "As incurred", "Various"]
+      ],
+      "total": {"low": "$65,000", "high": "$432,200"},
+      "table_notes": ["Single Business under one Franchise Agreement. Third-party fees may or may not be refundable. Does not include owner salary/draw. Home office allowed first 6 months. Vehicles are the largest variable — $0 if already owned. YFS may finance up to 66.67% of franchise fee."]
+    },
+    {
+      "id": "T19-1",
+      "item": 19,
+      "title": "Table 1 — Summary of Gross Revenue by Quartile (2024)",
+      "source_pages": [48],
+      "columns": ["Quartile", "Count", "Avg Gross Revenue", "At/Above Avg Count", "At/Above Avg %", "Min", "Max", "Median"],
+      "rows": [
+        ["Top", "12", "$2,486,985", "5", "42%", "$1,436,094", "$4,464,693", "$1,973,614"],
+        ["Second", "13", "$1,031,269", "7", "54%", "$806,339", "$1,338,304", "$897,182"],
+        ["Third", "13", "$472,735", "5", "38%", "$328,824", "$747,576", "$364,909"],
+        ["Bottom", "12", "$187,862", "6", "50%", "$92,304", "$321,136", "$124,556"],
+        ["Total", "50", "$1,033,005", "19", "38%", "$92,304", "$4,464,693", "$776,958"]
+      ],
+      "table_notes": ["50 franchised businesses (44 US, 6 Canada) continuously operating 2024. Gross Revenue = total sales/receipts per Item 6 definition. 2 excluded (opened after Jan 1 2024); 4 excluded (not continuously operating). 2 AR businesses combined. Revenue not audited/verified."],
+      "population": {"total_universe": 57, "included": 50, "excluded": 7}
+    },
+    {
+      "id": "T19-2",
+      "item": 19,
+      "title": "Table 2 — Gross Revenue from YESCO National Service (2024)",
+      "source_pages": [49],
+      "columns": ["Business Type", "National Service GR", "Total GR", "% of GR"],
+      "rows": [
+        ["Franchised Businesses", "$7,974,585", "$51,891,579", "15.4%"]
+      ],
+      "table_notes": ["YESCO National Service coordinates national customers through YESCO LLC. Bids coordinated centrally, work directed to local outlets."]
+    },
+    {
+      "id": "T19-3",
+      "item": 19,
+      "title": "Table 3 — Summary of Time in Business by Quartile (2024)",
+      "source_pages": [49],
+      "columns": ["Quartile", "Count", "Avg Years", "At/Above Avg Count", "At/Above Avg %", "Min", "Max", "Median"],
+      "rows": [
+        ["Top", "12", "10.8", "8", "67%", "6.2", "13.3", "11.8"],
+        ["Second", "13", "9.3", "7", "54%", "4.1", "13.8", "8.1"],
+        ["Third", "13", "7.1", "6", "46%", "1.0", "10.3", "7.7"],
+        ["Bottom", "12", "7.8", "5", "42%", "4.1", "12.4", "6.5"],
+        ["Total", "50", "8.7", "26", "52%", "1.0", "13.8", "8.8"]
+      ],
+      "table_notes": ["Same quartile assignment as Table 1 (by Gross Revenue). Time in Business measured from first complete calendar month with $1K+ GR."]
+    },
+    {
+      "id": "T19-4",
+      "item": 19,
+      "title": "Table 4 — Summary of Territories by Quartile (2024)",
+      "source_pages": [49],
+      "columns": ["Quartile", "Count", "Avg Territories", "At/Above Avg Count", "At/Above Avg %", "Min", "Max", "Median"],
+      "rows": [
+        ["Top", "12", "8.7", "6", "50%", "4.0", "15.0", "8.0"],
+        ["Second", "13", "5.1", "5", "38%", "2.0", "8.0", "4.0"],
+        ["Third", "13", "1.8", "8", "62%", "1.0", "3.0", "2.0"],
+        ["Bottom", "12", "1.6", "4", "33%", "1.0", "4.0", "1.0"],
+        ["Total", "50", "4.3", "18", "36%", "1.0", "15.0", "3.0"]
+      ],
+      "table_notes": ["Strong correlation between number of territories and Gross Revenue quartile. Top quartile avg 8.7 territories vs bottom quartile 1.6."]
+    },
+    {
+      "id": "T19-5",
+      "item": 19,
+      "title": "Table 5 — Summary of Daily Leads by Quartile (2024)",
+      "source_pages": [49],
+      "columns": ["Quartile", "Count", "Avg Daily Leads", "At/Above Avg Count", "At/Above Avg %", "Min", "Max", "Median"],
+      "rows": [
+        ["Top", "12", "104", "5", "42%", "13", "261", "75"],
+        ["Second", "13", "29", "7", "54%", "10", "56", "21"],
+        ["Third", "13", "13", "4", "31%", "0", "63", "10"],
+        ["Bottom", "12", "9", "5", "42%", "0", "39", "2"],
+        ["Total", "50", "38", "16", "32%", "0", "261", "18"]
+      ],
+      "table_notes": ["Daily leads = total unique patrol records logged / 250 working days."]
+    },
+    {
+      "id": "T19-6",
+      "item": 19,
+      "title": "Table 6 — Summary of Daily Sales Activities by Quartile (2024)",
+      "source_pages": [50],
+      "columns": ["Quartile", "Count", "Avg Daily Activities", "At/Above Avg Count", "At/Above Avg %", "Min", "Max", "Median"],
+      "rows": [
+        ["Top", "12", "130", "3", "25%", "13", "434", "77"],
+        ["Second", "13", "21", "6", "46%", "1", "48", "16"],
+        ["Third", "13", "10", "2", "15%", "0", "60", "4"],
+        ["Bottom", "12", "10", "4", "33%", "0", "41", "2"],
+        ["Total", "50", "42", "14", "28%", "0", "434", "14"]
+      ],
+      "table_notes": ["Sales activities = scheduled or completed communication associated with a lead or customer."]
+    },
+    {
+      "id": "T19-7",
+      "item": 19,
+      "title": "Table 7 — Summary of Gross Revenue per Invoice by Quartile (2024)",
+      "source_pages": [50],
+      "columns": ["Quartile", "Count", "Avg GR/Invoice", "At/Above Avg Count", "At/Above Avg %", "Min", "Max", "Median"],
+      "rows": [
+        ["Top", "12", "$1,624", "4", "33%", "$1,189", "$2,617", "$1,435"],
+        ["Second", "13", "$1,337", "5", "38%", "$942", "$2,276", "$1,184"],
+        ["Third", "13", "$1,390", "6", "46%", "$835", "$2,122", "$1,343"],
+        ["Bottom", "12", "$1,357", "5", "42%", "$564", "$2,489", "$1,223"],
+        ["Total", "50", "$1,425", "21", "42%", "$564", "$2,617", "$1,322"]
+      ],
+      "table_notes": ["GR per invoice = yearly average GR / total invoices. Relatively consistent across quartiles — revenue differences driven primarily by volume, not ticket size."]
+    },
+    {
+      "id": "T20-1",
+      "item": 20,
+      "title": "Table 1 — Systemwide Business Summary (2022-2024)",
+      "source_pages": [52],
+      "columns": ["Business Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "60", "59", "-1"],
+        ["Franchised", "2023", "59", "57", "-2"],
+        ["Franchised", "2024", "57", "57", "0"],
+        ["Company-Owned", "2022", "42", "42", "0"],
+        ["Company-Owned", "2023", "42", "42", "0"],
+        ["Company-Owned", "2024", "42", "42", "0"],
+        ["Total", "2022", "102", "101", "-1"],
+        ["Total", "2023", "101", "99", "-2"],
+        ["Total", "2024", "99", "99", "0"]
+      ],
+      "table_notes": ["Company-owned businesses operated by YESCO LLC affiliate."]
+    },
+    {
+      "id": "T20-2",
+      "item": 20,
+      "title": "Table 2 — Transfers (2022-2024)",
+      "source_pages": [52],
+      "columns": ["State", "2022", "2023", "2024"],
+      "rows": [
+        ["Nebraska", "1", "0", "0"],
+        ["South Dakota", "0", "1", "0"],
+        ["Kansas", "0", "0", "1"],
+        ["Total", "1", "1", "1"]
+      ],
+      "table_notes": ["1 transfer per year across the 3-year period."]
+    },
+    {
+      "id": "T20-5",
+      "item": 20,
+      "title": "Table 5 — Projected Openings as of December 31, 2024",
+      "source_pages": [57],
+      "columns": ["State", "Signed Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        ["Florida", "2", "1", "0"],
+        ["New York", "0", "1", "0"],
+        ["Texas", "0", "1", "0"],
+        ["Alberta (CA)", "0", "1", "0"],
+        ["Quebec (CA)", "0", "1", "0"],
+        ["Totals", "2", "5", "0"]
+      ],
+      "table_notes": ["No projected new company-owned businesses. Total of 7 potential new franchised outlets including already signed."]
+    },
+    {
+      "id": "T21-BS",
+      "item": 21,
+      "title": "Consolidated Balance Sheet (2022-2024)",
+      "source_pages": [192],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        ["Cash and cash equivalents", "$652,733", "$699,447", "$719,275"],
+        ["Franchise royalties receivable (net)", "$290,772", "$290,848", "$258,984"],
+        ["Initial franchise fees receivable", "$110,000", "$0", "$0"],
+        ["Other receivables", "$44,500", "$72,200", "$0"],
+        ["Notes receivable, current", "$104,244", "$108,391", "$68,392"],
+        ["Prepaid expenses", "$44,799", "$98,292", "$71,802"],
+        ["Total current assets", "$1,247,048", "$1,269,178", "$1,118,453"],
+        ["Notes receivable, long-term", "$800,210", "$778,579", "$340,220"],
+        ["Loan receivable from affiliate", "$7,470,740", "$5,768,892", "$4,487,423"],
+        ["Prepaid expenses, long-term", "$14,335", "$18,143", "$25,759"],
+        ["Total assets", "$9,532,333", "$7,834,792", "$5,971,855"],
+        ["Trade accounts payable", "$524", "$279", "$7,712"],
+        ["Accrued expenses", "$304,892", "$276,400", "$240,184"],
+        ["Contract liabilities, current", "$200,244", "$226,369", "$166,675"],
+        ["Total current liabilities", "$505,660", "$503,048", "$414,571"],
+        ["Contract liabilities, long-term", "$856,710", "$864,579", "$425,198"],
+        ["Total liabilities", "$1,362,370", "$1,367,627", "$839,769"],
+        ["Member's equity", "$8,169,963", "$6,467,165", "$5,132,086"],
+        ["Total liabilities & equity", "$9,532,333", "$7,834,792", "$5,971,855"]
+      ],
+      "table_notes": ["Loan receivable from YESCO Administration LLC is non-interest bearing and represents 78% of total assets in 2024. Grew from $4.5M (2022) to $7.5M (2024). Allowance for doubtful accounts: $7,821 (2024), $8,070 (2023), $0 (2022)."]
+    },
+    {
+      "id": "T21-IS",
+      "item": 21,
+      "title": "Consolidated Statements of Income (2022-2024)",
+      "source_pages": [193],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        ["Franchise fees", "$796,494", "$600,990", "$596,669"],
+        ["Royalty revenues", "$3,206,450", "$3,369,945", "$2,854,116"],
+        ["Total revenues", "$4,002,944", "$3,970,935", "$3,450,785"],
+        ["Selling", "$195,725", "$221,400", "$269,926"],
+        ["Advertising", "$987", "$3,333", "$8,197"],
+        ["General and administrative", "$1,505,550", "$1,609,194", "$1,386,958"],
+        ["Affiliate allocations", "$0", "$361,062", "$296,884"],
+        ["Amortization", "$3,808", "$6,952", "$3,588"],
+        ["Total expenses", "$1,706,070", "$2,201,941", "$1,965,553"],
+        ["Operating income", "$2,296,874", "$1,768,994", "$1,485,232"],
+        ["Interest income", "$15,229", "$9,214", "$621"],
+        ["Interest expense", "($553)", "($1,452)", "$0"],
+        ["Other", "($28,572)", "$7,525", "$51,552"],
+        ["Contribution to profit sharing", "($38,654)", "($36,795)", "($24,655)"],
+        ["Total other income, net", "($52,550)", "($21,508)", "$27,518"],
+        ["Net income before taxes", "$2,244,324", "$1,747,486", "$1,512,750"],
+        ["Income tax provision", "($541,526)", "($412,407)", "($377,431)"],
+        ["Net income", "$1,702,798", "$1,335,079", "$1,135,319"]
+      ],
+      "table_notes": ["Revenue growing: $3.45M (2022) to $4.0M (2024). Royalty revenue declined from $3.37M (2023) to $3.21M (2024) despite stable outlet count — may reflect system contraction or lower per-unit revenue. Affiliate allocations dropped to $0 in 2024 (were $361K in 2023). Net margin: 43% (2024), 34% (2023), 33% (2022)."]
+    },
+    {
+      "id": "T21-CF",
+      "item": 21,
+      "title": "Consolidated Statements of Cash Flows (2022-2024)",
+      "source_pages": [194],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        ["Net income", "$1,702,798", "$1,335,079", "$1,135,319"],
+        ["Depreciation/amortization", "$3,808", "$6,952", "$3,588"],
+        ["Net cash from operations", "$1,537,618", "$1,169,999", "$1,125,874"],
+        ["Proceeds from notes receivable", "$117,516", "$91,642", "$52,347"],
+        ["Net cash from investing", "$117,516", "$91,642", "$52,347"],
+        ["Increase in loan to affiliate", "($1,701,848)", "($1,281,469)", "($717,160)"],
+        ["Net cash from financing", "($1,701,848)", "($1,281,469)", "($717,160)"],
+        ["Net change in cash", "($46,714)", "($19,828)", "$461,061"],
+        ["Cash at end of year", "$652,733", "$699,447", "$719,275"]
+      ],
+      "table_notes": ["Cash generated from operations ($1.54M) is largely transferred to affiliate via loan ($1.70M). Cash balance declining slowly. Non-cash: $135K in notes issued for franchise fee renewals (2024), $570K (2023), $247K (2022). Tax allocated, not paid directly."]
+    }
+  ]
+}

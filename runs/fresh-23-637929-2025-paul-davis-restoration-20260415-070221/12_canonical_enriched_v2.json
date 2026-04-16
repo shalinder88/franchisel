@@ -1,0 +1,156 @@
+{
+  "enrichment_version": "v2",
+  "filing_id": "637929-2025",
+  "brand": "Paul Davis Restoration, Inc.",
+  "item21_financial_structure_detail": {
+    "entity": "FS Brands, Inc.",
+    "nature": "Consolidated parent (multi-brand franchise platform)",
+    "subsidiaries_included": ["Paul Davis Restoration, Inc.", "California Closet Company, Inc.", "CertaPro Painters, Ltd.", "Floorcoverings International, Ltd.", "Pillar To Post Inc.", "Paul Davis Restoration Inc. (Canada)", "PDO Holdings, Inc.", "PDR Holdings, LLC", "Paul Davis Commercial Division, Inc.", "Tele-Link Services Inc."],
+    "auditor": "PricewaterhouseCoopers LLP",
+    "auditor_location": "Toronto, Ontario",
+    "audit_standard": "US GAAS",
+    "accounting_standard": "US GAAP",
+    "fiscal_year_end": "December 31",
+    "has_going_concern": false,
+    "has_subsequent_events": false,
+    "capital_structure": {
+      "common_stock_par": "$1",
+      "additional_paid_in_capital": 29529067,
+      "no_external_debt": true,
+      "due_to_parent": 21744502,
+      "non_controlling_interests": 72477028
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "total_assets": 591191911,
+      "current_assets": 269431927,
+      "cash": 81752083,
+      "accounts_receivable_net": 98370150,
+      "inventories": 44747610,
+      "goodwill": 137179959,
+      "intangible_assets": 35099730,
+      "property_equipment": 64308483,
+      "operating_lease_rou": 65005041,
+      "total_current_liabilities": 180882490,
+      "total_liabilities": 281262019,
+      "deferred_revenue_current": 39806903,
+      "deferred_revenue_lt": 22747519,
+      "stockholders_equity": 237452864,
+      "retained_earnings": 207923796
+    },
+    "balance_sheet_2023": {
+      "total_assets": 544168844,
+      "current_assets": 230477580,
+      "cash": 74395379,
+      "accounts_receivable_net": 73640316,
+      "goodwill": 135209812,
+      "stockholders_equity": 214905130
+    },
+    "income_statement_2024": {
+      "total_revenue": 850365665,
+      "royalties": 99791571,
+      "franchise_fees": 7396575,
+      "merchandise_sales": 645220204,
+      "services_and_other": 97957315,
+      "total_costs_expenses": 767627295,
+      "franchise_operating": 43037230,
+      "cost_merchandise": 447715916,
+      "cost_services": 14386988,
+      "general_admin": 227676089,
+      "mgmt_fees_parent": 7540176,
+      "depreciation_amortization": 27270896,
+      "operating_income": 82738370,
+      "operating_margin": 0.097,
+      "income_before_tax": 83402116,
+      "tax_provision": 23297857,
+      "effective_tax_rate": 0.279,
+      "net_income": 60104259,
+      "net_income_to_common": 52547770
+    },
+    "income_statement_2023": {
+      "total_revenue": 782199246,
+      "operating_income": 67808691,
+      "operating_margin": 0.087,
+      "net_income": 49983524,
+      "net_income_to_common": 40857803
+    },
+    "cash_flow_2024": {
+      "operating_cash_flow": 71302391,
+      "capex": -25182341,
+      "acquisitions": -4585803,
+      "dividends_common": -30000036,
+      "dividends_nci": -2692391,
+      "net_change_cash": 7795185,
+      "cash_end": 82480131,
+      "cash_paid_taxes": 23138856
+    },
+    "key_ratios_2024": {
+      "current_ratio": 1.49,
+      "debt_to_equity": 0.0,
+      "goodwill_to_assets": 0.232,
+      "revenue_growth_yoy": 0.087,
+      "operating_income_growth_yoy": 0.220,
+      "net_income_growth_yoy": 0.203
+    }
+  },
+  "item6_fee_detail": {
+    "royalty": {
+      "rate": 0.04,
+      "base": "Gross Sales (broadly defined: all invoiced sales incl. subcontractor revenue)",
+      "frequency": "monthly_25th",
+      "legacy_rates": "Some older agreements have lower rates"
+    },
+    "minimum_royalty": {
+      "year_1": 1.00,
+      "year_2": 2.00,
+      "year_3": 3.00,
+      "year_4": 3.50,
+      "year_5": 4.00,
+      "year_6": 4.50,
+      "year_7": 5.00,
+      "year_8": 5.50,
+      "year_9_plus": 6.00,
+      "basis": "per_capita_rate × territory_population × 4%",
+      "adjustment": "CPI_annual",
+      "note": "Resale minimum adjusted based on market penetration at closing"
+    },
+    "smp_fee": {
+      "fixed_component": 500,
+      "variable_rate": 0.0075,
+      "variable_base": "invoiced_gross_sales",
+      "cap": "CPI-adjusted annual cap per franchise",
+      "governance": "General Council with NEC oversight; managed by PDRI"
+    },
+    "guarantee_fund": {
+      "rate_new": 0.005,
+      "rate_resale": 0.01,
+      "target_500k_pop": 25000,
+      "additional_per_100k": 2000,
+      "refundable": "2 years after termination if no claims",
+      "manager": "Completion Services, Inc. (franchisee-owned)"
+    },
+    "indemnity_fund": {
+      "tiers": [
+        {"from": 0, "to": 2000000, "rate": 0.0010},
+        {"from": 2000001, "to": 4000000, "rate": 0.0008},
+        {"from": 4000001, "to": 8000000, "rate": 0.0006},
+        {"from": 8000001, "to": null, "rate": 0.0004}
+      ],
+      "refundable": false,
+      "manager": "Completion Services, Inc."
+    },
+    "technology_fees": {
+      "rms_primary": 525,
+      "rms_secondary": 300,
+      "software_support": 75,
+      "xactimate_basic": 105,
+      "xactimate_pro": 149.10,
+      "xactanalysis_per_claim": 9.00,
+      "symbility_per_claim": 15.75,
+      "ms365_range": "7.00–43.00 per user",
+      "quickbooks": 99,
+      "mitigate_max": 100
+    }
+  }
+}

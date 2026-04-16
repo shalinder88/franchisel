@@ -1,0 +1,101 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_date": "2026-04-15",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "YESCO LLC received $334,306 in National Lead Admin Fees from franchisees in 2024",
+      "source": "Reader report Section C / Item 8 (p22)",
+      "promoted_to": "supplier_control.fy2024_national_lead_admin_fees",
+      "already_in_canonical": true
+    },
+    {
+      "id": "P2",
+      "fact": "Home office limited to 6 months maximum unless authorized in writing",
+      "source": "Reader report Section C / Item 11 (p32)",
+      "promoted_to": "operational_requirements.home_office_limit_months",
+      "already_in_canonical": false,
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "id": "P3",
+      "fact": "Manuals total 283 pages across 18 sections, provided electronically",
+      "source": "Reader report Section C / Item 11 (p33)",
+      "promoted_to": "training.manuals_pages",
+      "already_in_canonical": true
+    },
+    {
+      "id": "P4",
+      "fact": "2012 US Census data used for territory business density calculation",
+      "source": "Reader report Section D / Item 12 (p33)",
+      "promoted_to": "territory.determination_method",
+      "already_in_canonical": true
+    },
+    {
+      "id": "P5",
+      "fact": "AI/ML restriction on system information — cannot input into generative AI platforms",
+      "source": "Reader report Section D / Item 14 (p40)",
+      "promoted_to": "ai_ml_restriction",
+      "already_in_canonical": true
+    },
+    {
+      "id": "P6",
+      "fact": "Annual conference mandatory, 1-2 days, Salt Lake City or Las Vegas or trade show city",
+      "source": "Reader report Section C / Item 11 (p29)",
+      "promoted_to": "training.annual_conference",
+      "already_in_canonical": false,
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "id": "P7",
+      "fact": "Tiered royalty under Early Renewal: $0-$41,666 at 6%, $41,667-$62,500 at 4%, $62,501+ at 2%",
+      "source": "Reader report Section B / Item 6 (p15)",
+      "promoted_to": "royalty.tiered_royalty_early_renewal",
+      "already_in_canonical": true
+    },
+    {
+      "id": "P8",
+      "fact": "YESCO Service Advisory Council exists (franchisor-created/sponsored), advisory only",
+      "source": "Reader report Section G / Item 20 (p57)",
+      "promoted_to": "item20.franchisee_association",
+      "already_in_canonical": true
+    },
+    {
+      "id": "P9",
+      "fact": "Post-term noncompete scope extends to 'territory of any other franchisee' — notably broad geographic restriction",
+      "source": "Reader report Section E / Item 17",
+      "promoted_to": "noncompete.post_term_scope",
+      "already_in_canonical": true
+    },
+    {
+      "id": "P10",
+      "fact": "Advertising approval: 15-day window; silence equals disapproval",
+      "source": "Reader report Section C / Item 11 (p26)",
+      "promoted_to": "advertising_fees.approval_process",
+      "already_in_canonical": false,
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "id": "P11",
+      "fact": "Permanent Disability defined as condition preventing supervision for 120 days",
+      "source": "Contract depth pass / FA Section 11.6.3",
+      "promoted_to": "transfer.death_disability_definition",
+      "already_in_canonical": false,
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "id": "P12",
+      "fact": "No goodwill payment on termination/expiration; Fair Market Value purchase excludes goodwill",
+      "source": "Contract depth pass / FA Sections 13.2.1, 14.1.2",
+      "promoted_to": "termination.goodwill_payment",
+      "already_in_canonical": false,
+      "action": "Added to 09_final_canonical.json"
+    }
+  ],
+  "summary": {
+    "total_facts_reviewed": 12,
+    "already_in_canonical": 7,
+    "promoted_new": 5,
+    "promoted_ids": ["P2", "P6", "P10", "P11", "P12"]
+  }
+}

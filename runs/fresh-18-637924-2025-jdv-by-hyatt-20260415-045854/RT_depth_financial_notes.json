@@ -1,0 +1,105 @@
+{
+  "depth_pass": "financial_notes",
+  "entity": "Hyatt Hotels Corporation",
+  "auditor": "Deloitte & Touche LLP",
+  "auditor_since": 2003,
+  "opinion_type": "unqualified",
+  "notes_extracted": [
+    {
+      "note": "Organization (Note 1)",
+      "source_pages": [106],
+      "content": "1,442 hotels comprising 347,301 rooms in 79 countries at Dec 31, 2024. 721 hotels in US (159,829 rooms). 149 all-inclusive resorts (55,708 rooms). Segment realignment in 2024. Transaction and integration costs reclassified to new line item."
+    },
+    {
+      "note": "Revenue Recognition (Note 2)",
+      "source_pages": [107, 108, 109, 110],
+      "policies": {
+        "management_fees": "Base fees as % of gross revenues; incentive fees based on hotel profitability. Recognized over time as services rendered.",
+        "franchise_fees": "Initial franchise fees combined with royalty fees and deferred; recognized over initial term. Ongoing royalty fees as % of gross room revenues.",
+        "system_wide_services": "Fund model — assessment fee billed monthly, revenue recognized over time. Intended to break-even but timing differences impact net income.",
+        "loyalty_program": "Assessment fee based on member expenditures. Revenue deferred until point redemption. Breakage estimated using third-party actuaries. Agent for managed/franchised hotels, principal for owned/leased.",
+        "owned_and_leased": "Room rental recognized daily. Other services recognized when provided. Presented net of sales/occupancy taxes.",
+        "contra_revenue": "Key money assets amortized to contra revenue over expected customer life (typically initial management/franchise agreement term).",
+        "distribution": "ALG Vacations — agent for most services (air, hotels, insurance, car rental). Principal for excursions."
+      }
+    },
+    {
+      "note": "Consolidation Policy",
+      "source_pages": [107],
+      "content": "Consolidates majority owned and controlled subsidiaries plus VIE entities. All intercompany eliminated."
+    },
+    {
+      "note": "Cash Flow Statement Key Data",
+      "source_pages": [102, 103, 104],
+      "operating_cash_flow": {"2024": 633, "2023": 800, "2022": 674},
+      "capital_expenditures": {"2024": -170, "2023": -198, "2022": -201},
+      "acquisitions_net": {"2024": -609, "2023": -175, "2022": -174},
+      "real_estate_sale_proceeds": {"2024": 1421, "2023": -10, "2022": 625},
+      "debt_proceeds": {"2024": 1424, "2023": 596, "2022": 0},
+      "debt_repayments": {"2024": -750, "2023": -660, "2022": -711},
+      "share_repurchases": {"2024": -1190, "2023": -453, "2022": -369},
+      "dividends_paid": {"2024": -60, "2023": -47, "2022": 0},
+      "key_money_payments": {"2024": -153, "2023": -132, "2022": -165},
+      "cash_paid_interest": {"2024": 167, "2023": 115, "2022": 138},
+      "cash_paid_taxes": {"2024": 160, "2023": 153, "2022": 101}
+    },
+    {
+      "note": "Depreciation and Amortization",
+      "source_pages": [99, 102],
+      "amounts": {"2024": 333, "2023": 397, "2022": 426},
+      "trend": "Declining — consistent with asset-light strategy (selling owned hotels)"
+    },
+    {
+      "note": "Impairments",
+      "source_pages": [98, 99],
+      "amounts": {"2024": 213, "2023": 30, "2022": 38},
+      "detail": "$110M goodwill impairment in management/franchising segment reporting unit. Reporting unit goodwill balance $1,116M after impairment. Fair value estimated using weighted DCF + guideline public companies method."
+    },
+    {
+      "note": "Income Tax",
+      "source_pages": [99, 102],
+      "provision": {"2024": -267, "2023": -90, "2022": 92},
+      "deferred_tax_assets_balance": {"2024": 466, "2023": 358},
+      "deferred_income_taxes_cf": {"2024": -123, "2023": -125, "2022": -259},
+      "note_text": "2022 had $92M tax benefit. 2024 $267M provision driven by higher pre-tax income from real estate gains."
+    },
+    {
+      "note": "Lease Accounting",
+      "source_pages": [101],
+      "operating_lease_rou_assets": {"2024": 328, "2023": 369},
+      "current_operating_lease_liabilities": {"2024": 33, "2023": 41},
+      "long_term_operating_lease_liabilities": {"2024": 245, "2023": 273},
+      "total_operating_lease_liabilities": {"2024": 278, "2023": 314},
+      "amortization_rou": {"2024": 36, "2023": 42, "2022": 35}
+    },
+    {
+      "note": "Stockholders Equity",
+      "source_pages": [105],
+      "share_repurchases_2024": {"shares": "4,362,776 Class A + 3,629,480 Class B", "amount_mm": 1198},
+      "dividends_per_share": 0.15,
+      "class_a_outstanding_dec2024": 42613090,
+      "class_b_outstanding_dec2024": 53531579,
+      "noncontrolling_interest_acquisition_2024": 277
+    },
+    {
+      "note": "Key Money Assets",
+      "source_pages": [102, 108],
+      "payments_2024": 153,
+      "payments_2023": 132,
+      "payments_2022": 165,
+      "accounting": "Recorded in other assets, amortized to contra revenue over expected customer life (typically initial management/franchise agreement term)"
+    },
+    {
+      "note": "Contingent Consideration",
+      "source_pages": [104],
+      "liability_assumed_2024": 141,
+      "fair_value_adjustment_2024": -39,
+      "deferred_consideration_assumed_2024": 58
+    },
+    {
+      "note": "Subsequent Events / Acquisitions",
+      "source_pages": [106, 166, 167],
+      "content": "Form 8-K filed March 26, 2025 references Playa Hotels & Resorts tender offer (UVC Transaction). Acquisition activity in 2024 totaled $609M net of cash acquired."
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "extraction_date": "2026-04-14",
+  "filing_id": "637908-2025",
+  "brand": "Elmer's / Egg N' Joe / Elmer's Kitchen",
+  "tables": [
+    {
+      "id": "T01",
+      "item": 5,
+      "title": "Initial Fees Summary",
+      "source_pages": [10, 11],
+      "columns": ["Fee Type", "Amount", "Refundable"],
+      "rows": [
+        ["Development Fee", "$20,000 × (restaurants − 1); typical $60,000–$180,000", "No"],
+        ["Initial Franchise Fee", "$40,000", "No"],
+        ["Branded Inventory and Supplies", "$1,500–$2,500", "No"],
+        ["Lease Addendum Review Fee", "Up to $2,000", "No"]
+      ],
+      "table_notes": [
+        "Development Fee credited $20,000 per subsequent FA toward IFF.",
+        "No IFF on transfers if transfer fee paid by seller."
+      ]
+    },
+    {
+      "id": "T02",
+      "item": 6,
+      "title": "Other Fees Table",
+      "source_pages": [12, 13, 14, 15],
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty", "4% of Gross Sales", "Weekly ACH", "Gross Sales includes lottery commissions, insurance proceeds; excludes sales tax; reduced by refunds/credits/discounts up to 5%"],
+        ["Brand Promotion Fund", "1% of GS (may increase to 2%)", "Weekly ACH", "Subject to 3% aggregate Marketing Cap"],
+        ["Local Marketing Expenditure", "Up to 1% of GS", "Monthly", "Shortfall contributed to BPF; subject to Marketing Cap"],
+        ["Website Maintenance Fee", "Not currently charged; est. $20/mo", "Monthly", "May be implemented"],
+        ["Technology Fee", "Not currently charged; est. $250/yr", "Monthly", "May be implemented"],
+        ["Late Payment Fees", "Up to 18% per annum + $100/occurrence", "As incurred", "$100 per NSF/ACH decline"],
+        ["Transfer Fee – FA", "50% of then-current IFF", "As incurred", "50% refundable if transfer fails for certain reasons"],
+        ["Transfer Fee – ADA", "Greater of 3% of price or $20,000", "As incurred", "$2,500 non-refundable deposit"],
+        ["Renewal Fee", "25% of then-current IFF", "Upon renewal", ""],
+        ["Inspection and Audit", "Actual costs", "On demand", "Only for re-inspection or audit discrepancy >2%"],
+        ["Interim Operations Fee", "4% of GS + costs", "As incurred", "If abandoned or non-compliant"],
+        ["Product or Supplier Testing", "$0–$250", "As incurred", "For new product/supplier approval requests"],
+        ["Additional Training", "$250/person/day", "As incurred", "Initial training for 4 at no cost"],
+        ["Additional Assistance", "$250/person/day + travel", "As incurred", "Subject to CPI adjustment"],
+        ["Annual Conference", "Not currently charged; est. $600", "As incurred", "May be implemented"],
+        ["Insurance", "$10,000–$25,000", "As incurred", "Only if franchisee fails to maintain"],
+        ["Indemnification", "Varies", "As incurred", "Claims related to restaurant operations"],
+        ["Costs and Attorneys' Fees", "Varies", "As incurred", "If franchisor prevails"],
+        ["Non-Compliance Charge", "Up to $100/failure", "Day after non-compliance", "At franchisor's discretion"],
+        ["Lost Revenue Damages", "NPV of royalties+BPF for 5 years or remaining term", "As incurred", "On termination by franchisor or without-cause termination by franchisee"]
+      ],
+      "table_notes": [
+        "Note 1: All fees non-refundable. May not be uniformly imposed on existing franchisees.",
+        "Note 2: Under ADA, royalty rate locked at lower of signing rate or standard rate.",
+        "Note 3: BPF may change to max 2%, subject to Marketing Cap.",
+        "Note 4: Certain fees subject to annual CPI adjustment."
+      ]
+    },
+    {
+      "id": "T03",
+      "item": 7,
+      "title": "Estimated Initial Investment — Area Development Agreement",
+      "source_pages": [16],
+      "columns": ["Expenditure", "Amount", "Method", "When Due", "To Whom"],
+      "rows": [
+        ["Development Fee for Multiple Restaurants", "$60,000–$180,000", "Lump Sum", "On Execution", "Us"],
+        ["Additional Funds – 3 months", "$0", "", "", ""],
+        ["TOTAL", "$60,000–$180,000", "", "", ""]
+      ],
+      "table_notes": [
+        "Development Fee = $20,000 × (restaurants − 1). Credited toward subsequent IFFs.",
+        "Does not include costs under individual Franchise Agreements.",
+        "No financing offered."
+      ]
+    },
+    {
+      "id": "T04",
+      "item": 7,
+      "title": "Estimated Initial Investment — Elmer's Restaurant",
+      "source_pages": [17],
+      "columns": ["Expenditure", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Franchise Fee", "$40,000", "$40,000", "Lump Sum", "On Execution", "Us"],
+        ["Leasehold Improvements", "$700,000", "$2,200,000", "As Arranged", "As Invoiced", "Landlord/Suppliers"],
+        ["Furniture, Fixtures and Equipment", "$500,000", "$1,500,000", "As Arranged", "As Invoiced", "Suppliers"],
+        ["Signage", "$35,000", "$75,000", "As Arranged", "As Invoiced", "Suppliers"],
+        ["Three Month's Rent", "$0", "$75,625", "As Arranged", "As Incurred", "Landlord"],
+        ["Security Deposit", "$10,000", "$40,000", "Lump Sum", "As Incurred", "Landlord"],
+        ["Lease Addendum Review Fee", "$0", "$2,000", "Lump Sum", "As Incurred", "Us"],
+        ["Utility Deposits and Fees", "$1,000", "$10,000", "Lump Sum", "As Incurred", "Utility Providers"],
+        ["Branded Inventory and Supplies", "$1,500", "$2,500", "Lump Sum", "As Invoiced", "Us"],
+        ["Opening Inventory and Supplies", "$45,000", "$110,000", "As Arranged", "As Invoiced", "Suppliers"],
+        ["Grand Opening Advertising", "$2,000", "$2,000", "As Arranged", "As Invoiced", "Suppliers"],
+        ["Training Expenses", "$75,000", "$250,000", "As Arranged", "As Invoiced", "Suppliers and Employees"],
+        ["Miscellaneous Opening Costs", "$9,000", "$95,000", "As Arranged", "As Invoiced", "Suppliers"],
+        ["Professional Fees", "$2,000", "$30,000", "As Arranged", "As Invoiced", "Professionals"],
+        ["Insurance Premiums – 3 Months", "$10,000", "$25,000", "As Arranged", "As Invoiced", "Insurance Carrier"],
+        ["Liquor Licensing", "$250", "$15,000", "As Arranged", "As Invoiced/Filing", "Suppliers/Gov't"],
+        ["Additional Funds – 3 months", "$90,000", "$200,000", "As Arranged", "As Incurred", "Suppliers and Employees"],
+        ["TOTAL", "$1,520,750", "$4,672,125", "", "", ""]
+      ],
+      "table_notes": [
+        "Leasehold estimate does not include tenant improvement allowance.",
+        "FF&E includes computer system, freight, installation, and taxes.",
+        "Building size: 5,000–5,500 sq ft at $25–$60/sq ft/yr.",
+        "Rent low = $0 assumes franchisee owns building.",
+        "Training includes pre-opening payroll ($45K–$112.5K for Elmer's) and grand opening trainer costs ($0 for 1st/2nd, $2.5K–$25K for 3rd+).",
+        "No financing offered. No finance charges included."
+      ]
+    },
+    {
+      "id": "T05",
+      "item": 7,
+      "title": "Estimated Initial Investment — Egg N' Joe / Elmer's Kitchen",
+      "source_pages": [18],
+      "columns": ["Expenditure", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Fees", "$40,000", "$40,000", "Lump Sum", "On Execution", "Us"],
+        ["Leasehold Improvements", "$500,000", "$2,000,000", "As Arranged", "As Invoiced", "Landlord/Suppliers"],
+        ["Furniture, Fixtures and Equipment", "$300,000", "$1,000,000", "As Arranged", "As Invoiced", "Suppliers"],
+        ["Signage", "$20,000", "$60,000", "As Arranged", "As Invoiced", "Suppliers"],
+        ["Three Month's Rent", "$30,000", "$60,000", "As Arranged", "As Incurred", "Landlord"],
+        ["Security Deposit", "$20,000", "$30,000", "Lump Sum", "As Incurred", "Landlord"],
+        ["Lease Addendum Review Fee", "$0", "$2,000", "Lump Sum", "As Incurred", "Us"],
+        ["Utility Deposits and Fees", "$1,000", "$15,000", "As Arranged", "As Incurred", "Utility Providers"],
+        ["Branded Inventory and Supplies", "$1,500", "$2,500", "Lump Sum", "As Invoiced", "Us"],
+        ["Opening Inventory and Supplies", "$45,000", "$110,000", "As Arranged", "As Invoiced", "Suppliers"],
+        ["Grand Opening Advertising", "$2,000", "$2,000", "As Arranged", "As Invoiced", "Suppliers"],
+        ["Training Expenses", "$75,000", "$200,000", "As Arranged", "As Invoiced", "Suppliers and Employees"],
+        ["Miscellaneous Opening Costs", "$10,000", "$95,000", "As Arranged", "As Invoiced", "Suppliers/State/Employees"],
+        ["Professional Fees", "$2,000", "$30,000", "As Arranged", "As Invoiced", "Professionals"],
+        ["Insurance Premiums – 3 Months", "$10,000", "$25,000", "As Arranged", "As Invoiced", "Insurance Carrier"],
+        ["Liquor Licensing", "$250", "$10,000", "As Arranged", "As Invoiced/Filing", "Suppliers/Gov't"],
+        ["Additional Funds – 3 months", "$90,000", "$200,000", "As Arranged", "As Incurred", "Suppliers and Employees"],
+        ["TOTAL", "$1,146,750", "$3,881,500", "", "", ""]
+      ],
+      "table_notes": [
+        "Building size: 3,500–4,000 sq ft at $27–$69/sq ft/yr.",
+        "Training includes pre-opening payroll ($30K–$70K for ENJ/Kitchen).",
+        "No financing offered."
+      ]
+    },
+    {
+      "id": "T06",
+      "item": 19,
+      "title": "Item 19 Part 1 — Egg N' Joe Restaurants Gross Sales",
+      "source_pages": [53],
+      "columns": ["Unit", "2023 Gross Sales", "2024 Gross Sales"],
+      "rows": [
+        ["Egg N' Joe #1", "$1,365,245", "$1,297,789"],
+        ["Egg N' Joe #2", "$2,147,075", "$1,949,526"],
+        ["Egg N' Joe #3", "$1,517,598", "$1,411,013"]
+      ],
+      "table_notes": [
+        "3 affiliate-owned, all open at least one full year.",
+        "2023 = fiscal year ended December 31, 2023.",
+        "2024 = fiscal year ended December 29, 2024.",
+        "Gross Sales definition per Item 6."
+      ]
+    },
+    {
+      "id": "T07",
+      "item": 19,
+      "title": "Item 19 Part 2 — Franchised Elmer's Restaurants Gross Sales",
+      "source_pages": [54],
+      "columns": ["Unit", "2023 Gross Sales", "2024 Gross Sales", "YoY Change"],
+      "rows": [
+        ["A", "$6,797,698", "$6,659,722", "-2.0%"],
+        ["B", "$3,445,560", "$3,483,175", "+1.1%"],
+        ["C", "$2,992,765", "$2,798,793", "-6.5%"],
+        ["D", "$2,618,734", "$2,622,934", "+0.2%"],
+        ["E", "$2,414,436", "$2,556,696", "+5.9%"],
+        ["F", "$2,439,232", "$2,296,659", "-5.8%"],
+        ["G", "$2,247,434", "$2,120,390", "-5.7%"]
+      ],
+      "table_notes": [
+        "7 franchised Elmer's in 2024, all open at least one full year.",
+        "2023: 19 total Elmer's (7 franchised + 12 company). 2024: 20 total (7 franchised + 13 company).",
+        "Excluded: 1 franchised that ceased operations during 2024 fiscal year.",
+        "Franchisee sales compiled from franchisee-reported data.",
+        "Varying fiscal year ends; 13 4-week periods ending nearest Dec 31."
+      ]
+    },
+    {
+      "id": "T08",
+      "item": 19,
+      "title": "Item 19 Part 2 — Company-Owned Elmer's Restaurants Gross Sales",
+      "source_pages": [54],
+      "columns": ["Unit", "2023 Gross Sales", "2024 Gross Sales", "YoY Change"],
+      "rows": [
+        ["AA", "$3,716,936", "$3,888,161", "+4.6%"],
+        ["BB", "$3,618,989", "$3,670,305", "+1.4%"],
+        ["CC", "$3,387,763", "$3,541,734", "+4.5%"],
+        ["DD", "$3,436,800", "$3,383,421", "-1.6%"],
+        ["EE", "$3,067,019", "$3,319,757", "+8.2%"],
+        ["FF", "$2,906,956", "$3,117,173", "+7.2%"],
+        ["GG", "$3,166,622", "$3,089,398", "-2.4%"],
+        ["HH", "$2,696,251", "$2,750,791", "+2.0%"],
+        ["II", "$2,688,456", "$2,699,534", "+0.4%"],
+        ["JJ", "$2,742,186", "$2,697,456", "-1.6%"],
+        ["KK", "$2,817,063", "$2,583,029", "-8.3%"],
+        ["LL", "$2,293,760", "$2,388,538", "+4.1%"],
+        ["MM", "N/A", "$2,113,354", "N/A"]
+      ],
+      "table_notes": [
+        "DD, GG, JJ, KK purchased from franchisees during 2024.",
+        "MM opened during 2023 fiscal year.",
+        "Company-owned fiscal years ended Dec 31, 2023 and Dec 29, 2024."
+      ]
+    },
+    {
+      "id": "T09",
+      "item": 19,
+      "title": "Item 19 Part 3 — Elmer's Kitchen Gross Sales",
+      "source_pages": [55],
+      "columns": ["Unit", "2023 Gross Sales", "2024 Gross Sales"],
+      "rows": [
+        ["Elmer's Kitchen #1", "$2,276,963", "$1,581,053"],
+        ["Elmer's Kitchen #2", "$2,386,626", "$1,571,689"]
+      ],
+      "table_notes": [
+        "2 affiliate-owned, both open at least one full year.",
+        "Both units showed ~30% YoY decline.",
+        "2023 = fiscal year ended December 31, 2023.",
+        "2024 = fiscal year ended December 29, 2024."
+      ]
+    },
+    {
+      "id": "T10",
+      "item": 20,
+      "title": "Elmer's Table 1 — Systemwide Summary",
+      "source_pages": [56],
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "14", "12", "-2"],
+        ["Franchised", "2023", "12", "13", "+1"],
+        ["Franchised", "2024", "13", "7", "-6"],
+        ["Company-Owned", "2022", "11", "9", "-2"],
+        ["Company-Owned", "2023", "9", "8", "-1"],
+        ["Company-Owned", "2024", "8", "13", "+5"],
+        ["Total", "2022", "25", "21", "-4"],
+        ["Total", "2023", "21", "21", "0"],
+        ["Total", "2024", "21", "20", "-1"]
+      ],
+      "table_notes": [
+        "Fiscal years: Jan 1, 2023; Dec 31, 2023; Dec 29, 2024.",
+        "Company-owned includes affiliate-owned or managed.",
+        "During 2022 and 2023, one company-owned Elmer's converted to Kitchen each year."
+      ]
+    },
+    {
+      "id": "T11",
+      "item": 20,
+      "title": "Elmer's Table 3 — Status of Franchised Restaurants",
+      "source_pages": [57],
+      "columns": ["State", "Year", "Start", "Opened", "Terminated", "Non-Renewed", "Reacquired", "Ceased-Other", "End"],
+      "rows": [
+        ["CA", "2022", "1", "0", "0", "0", "0", "0", "1"],
+        ["CA", "2023", "1", "0", "0", "0", "0", "0", "1"],
+        ["CA", "2024", "1", "0", "0", "0", "0", "0", "1"],
+        ["ID", "2022", "2", "0", "0", "0", "0", "0", "2"],
+        ["ID", "2023", "2", "0", "0", "0", "0", "0", "2"],
+        ["ID", "2024", "2", "0", "0", "0", "0", "0", "2"],
+        ["OR", "2022", "10", "0", "0", "0", "0", "1", "9"],
+        ["OR", "2023", "9", "1", "0", "0", "0", "0", "10"],
+        ["OR", "2024", "10", "0", "0", "0", "5", "1", "4"],
+        ["WA", "2022", "1", "0", "0", "0", "0", "1", "0"],
+        ["WA", "2023", "0", "0", "0", "0", "0", "0", "0"],
+        ["WA", "2024", "0", "0", "0", "0", "0", "0", "0"],
+        ["Totals", "2022", "14", "0", "0", "0", "0", "2", "12"],
+        ["Totals", "2023", "12", "1", "0", "0", "0", "0", "13"],
+        ["Totals", "2024", "13", "0", "0", "0", "5", "1", "7"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "T12",
+      "item": 20,
+      "title": "Elmer's Table 5 — Projected Openings (2025)",
+      "source_pages": [58],
+      "columns": ["State", "Signed Not Opened", "Projected Franchised", "Projected Company-Owned"],
+      "rows": [
+        ["OR", "0", "4", "4"],
+        ["Totals", "0", "4", "4"]
+      ],
+      "table_notes": ["All projected openings are company-owned, not franchised."]
+    },
+    {
+      "id": "T13",
+      "item": 21,
+      "title": "Balance Sheets",
+      "source_pages": [183],
+      "columns": ["Line Item", "Dec 29 2024", "Dec 31 2023", "Jan 1 2023"],
+      "rows": [
+        ["Cash - franchise", "$291,076", "$541,803", "$201,230"],
+        ["Cash - advertising fund", "$560,474", "$456,265", "$348,300"],
+        ["Accounts receivable, net", "$72,326", "$66,800", "$67,529"],
+        ["Due from parent - contribution", "$-", "$-", "$100,000"],
+        ["Due from parent company", "$64,559", "$105,800", "$83,818"],
+        ["Total current assets", "$988,435", "$1,170,668", "$800,877"],
+        ["Total assets", "$988,435", "$1,170,668", "$800,877"],
+        ["Accounts payable", "$178,276", "$201,425", "$218,222"],
+        ["Unspent advertising funds", "$609,006", "$478,498", "$442,602"],
+        ["Total current liabilities", "$787,282", "$679,923", "$660,824"],
+        ["Deferred income", "$-", "$-", "$40,000"],
+        ["Member's equity", "$201,153", "$490,745", "$99,853"],
+        ["Total liabilities and member's equity", "$988,435", "$1,170,668", "$800,877"]
+      ],
+      "table_notes": [
+        "AR allowance: $730 (2024 and 2023), $5,000 (2022).",
+        "All assets pledged as collateral for parent company debts."
+      ]
+    },
+    {
+      "id": "T14",
+      "item": 21,
+      "title": "Statements of Operations and Changes in Member's Equity",
+      "source_pages": [184],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        ["Franchise revenues", "$1,248,441", "$1,548,183", "$1,397,123"],
+        ["Advertising revenues", "$662,841", "$781,688", "$831,785"],
+        ["Total revenues", "$1,911,282", "$2,329,871", "$2,228,908"],
+        ["Advertising expenses", "$663,992", "$782,754", "$832,020"],
+        ["General and administrative expenses", "$124,634", "$154,632", "$139,279"],
+        ["Total expenses", "$788,626", "$937,386", "$971,299"],
+        ["Interest income", "$1,752", "$2,365", "$618"],
+        ["Corporate activity tax", "($14,000)", "($8,228)", "($8,096)"],
+        ["Total other income (expense)", "($12,248)", "($5,863)", "($7,478)"],
+        ["Net income", "$1,110,408", "$1,386,622", "$1,250,131"],
+        ["Member's equity, beginning", "$490,745", "$99,853", "$1,271,561"],
+        ["Implementation of ASU 2016-13", "$-", "$4,270", "$-"],
+        ["Distributions", "($1,400,000)", "($1,000,000)", "($2,521,839)"],
+        ["Contributions from parent", "$-", "$-", "$100,000"],
+        ["Member's equity, end", "$201,153", "$490,745", "$99,853"]
+      ],
+      "table_notes": [
+        "G&A expenses = management fee (10% of revenue) paid to parent company.",
+        "Advertising revenue and expense roughly offset.",
+        "Franchise revenues declined 19.4% from 2023 to 2024, reflecting franchisee reacquisitions.",
+        "Distributions exceeded net income in 2024 by $289,592 and in 2022 by $1,271,708."
+      ]
+    },
+    {
+      "id": "T15",
+      "item": 21,
+      "title": "Statements of Cash Flows",
+      "source_pages": [185],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        ["Net income", "$1,110,408", "$1,386,622", "$1,250,131"],
+        ["(Increase) decrease - Accounts receivable", "($5,526)", "$4,999", "$16,919"],
+        ["(Increase) decrease - Due from parent contribution", "$-", "$100,000", "$-"],
+        ["(Increase) decrease - Due from parent company", "$41,241", "($21,982)", "$407,287"],
+        ["Increase (decrease) - Deferred income", "$-", "($40,000)", "$40,000"],
+        ["Increase (decrease) - Accounts payable", "($23,149)", "($16,797)", "$157,966"],
+        ["Increase (decrease) - Unspent advertising funds", "$130,508", "$35,696", "$125,679"],
+        ["Net cash from operating", "$1,253,482", "$1,448,538", "$1,997,982"],
+        ["Distributions (financing)", "($1,400,000)", "($1,000,000)", "($2,521,839)"],
+        ["Net increase (decrease) in cash", "($146,518)", "$448,538", "($523,857)"],
+        ["Cash, beginning", "$998,068", "$549,530", "$1,073,387"],
+        ["Cash, end", "$851,550", "$998,068", "$549,530"]
+      ],
+      "table_notes": [
+        "Cash includes both franchise and advertising fund accounts.",
+        "FDIC insured up to $250,000. Uninsured deposits: $601,700 (2024), $779,892 (2023), $308,662 (2022)."
+      ]
+    }
+  ],
+  "table_count": 15,
+  "items_with_tables": [5, 6, 7, 19, 20, 21]
+}

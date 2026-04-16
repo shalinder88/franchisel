@@ -1,0 +1,76 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "Great Clips converted from S corporation to C corporation effective January 1, 2019",
+      "source": "Reader report Pass F / Item 21 financial notes",
+      "source_pages": [183],
+      "promoted_to": "item21_financials.entity_tax_structure"
+    },
+    {
+      "id": "P2",
+      "fact": "Average multi-unit ownership: 8 salons per franchisee (5+ years), median 5",
+      "source": "Reader report Pass A / Item 19",
+      "source_pages": [60],
+      "promoted_to": "system_size.avg_salons_per_franchisee_5yr"
+    },
+    {
+      "id": "P3",
+      "fact": "Great Clips revenue from all sources (including required purchases) was $115,242,065 in 2024. Note: this differs from total franchise revenue of $202.7M because it represents continuing franchise fee revenue + salon development sales only, excluding Ad Fund pass-through.",
+      "source": "Reader report Pass C / Item 8",
+      "source_pages": [30],
+      "promoted_to": "supplier_control.total_revenue_from_all_sources"
+    },
+    {
+      "id": "P4",
+      "fact": "14 salons closed and relocated/reopened within fiscal year 2024",
+      "source": "Reader report Pass G / Item 20 Table 3",
+      "source_pages": [77],
+      "promoted_to": "item20_outlets.relocations_2024"
+    },
+    {
+      "id": "P5",
+      "fact": "3 of 207 transfers in 2024 were Great Clips exercising right of first refusal",
+      "source": "Reader report Pass G / Item 20 Table 2",
+      "source_pages": [73],
+      "promoted_to": "item20_outlets.rofr_exercised_2024"
+    },
+    {
+      "id": "P6",
+      "fact": "Great Clips registered on Franchise Registry for SBA streamlined lending",
+      "source": "Reader report Pass B / Item 10",
+      "source_pages": [36],
+      "promoted_to": "financing.sba_registry_listed"
+    },
+    {
+      "id": "P7",
+      "fact": "Clairol agreement (Dec 12, 1992) restricts use of sailboat motif mark without GREAT CLIPS in conjunction",
+      "source": "Reader report Pass D / Item 13",
+      "source_pages": [53],
+      "promoted_to": "trademarks.clairol_agreement"
+    },
+    {
+      "id": "P8",
+      "fact": "Operations Manual is 182 pages across 9 sections",
+      "source": "Reader report Pass C / Item 11",
+      "source_pages": [44],
+      "promoted_to": "training.operations_manual_pages"
+    },
+    {
+      "id": "P9",
+      "fact": "Great Clips explicitly prohibits use of confidential information for AI/machine learning without written consent",
+      "source": "Reader report Pass D / Item 14",
+      "source_pages": [54],
+      "promoted_to": "distinctive_clauses.ai_prohibition"
+    },
+    {
+      "id": "P10",
+      "fact": "Punitive damages and jury trial waived in franchise agreement",
+      "source": "Contract burden depth pass / Exhibit F Section 16",
+      "source_pages": [220],
+      "promoted_to": "dispute_resolution.punitive_damages_waiver"
+    }
+  ],
+  "total_promoted": 10
+}

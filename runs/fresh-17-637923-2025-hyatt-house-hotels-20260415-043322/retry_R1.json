@@ -1,0 +1,38 @@
+{
+  "retry_id": "R1",
+  "task": "Franchisor Entity Balance Sheet (California Addendum)",
+  "source_pages": [365],
+  "entity": "Hyatt House Franchising, L.L.C.",
+  "statement_type": "Unaudited Balance Sheet",
+  "as_of": "December 31, 2024",
+  "data": {
+    "assets": {
+      "current_assets": {
+        "accounts_receivable": 2181300,
+        "total_current_assets": 2181300
+      },
+      "franchise_agreement_assets_payments_to_customers": 32429475,
+      "franchise_agreement_intangibles_net": 15930989,
+      "total_assets": 50541764
+    },
+    "liabilities": {
+      "current_liabilities": {
+        "accounts_payable_and_accrued_expenses": 100386,
+        "current_contract_liabilities": 365568,
+        "total_current_liabilities": 465954
+      },
+      "long_term_contract_liabilities": 9112511,
+      "total_liabilities": 9578465
+    },
+    "members_equity": 40963299,
+    "total_liabilities_and_equity": 50541764
+  },
+  "notes": [
+    "Unaudited — no CPA has audited or expressed opinion on these figures",
+    "Required by California state franchise law",
+    "Franchisor entity is small ($50.5M total assets) — parent guarantee is the primary financial backing",
+    "Franchise agreement assets ($32.4M) and intangibles ($15.9M) comprise bulk of assets",
+    "Members equity of $41.0M provides positive net worth",
+    "Minimal liabilities ($9.6M) — entity appears to be a licensing vehicle"
+  ]
+}

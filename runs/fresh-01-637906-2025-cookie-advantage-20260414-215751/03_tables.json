@@ -1,0 +1,348 @@
+{
+  "extraction_date": "2026-04-14",
+  "brand": "Cookie Advantage",
+  "filing_id": "637906-2025",
+  "tables": [
+    {
+      "id": "T5-1",
+      "item": 5,
+      "title": "Initial Fees",
+      "source_pages": [10],
+      "columns": ["Fee", "Amount", "Refundable"],
+      "rows": [
+        {"Fee": "Initial Franchise Fee", "Amount": "$34,900", "Refundable": "No"},
+        {"Fee": "Initial Packaging", "Amount": "$2,500", "Refundable": "No"}
+      ],
+      "table_notes": [
+        "Initial Franchise Fee is uniform, fully earned when paid, non-refundable.",
+        "During FY2024, no Initial Franchise Fees were collected.",
+        "Fee deferral required in certain states (see State Addendum in Exhibit G)."
+      ],
+      "provenance": "Item 5, PDF page 10"
+    },
+    {
+      "id": "T6-1",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [11, 12, 13, 14],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Type of Fee": "Royalty", "Amount": "6% of Gross Revenue/month (first 12 months); greater of $800/month or 6% thereafter", "Due Date": "Monthly by 15th", "Remarks": "Based on prior month Gross Revenue"},
+        {"Type of Fee": "Unauthorized Advertising Fee", "Amount": "$500 per occurrence", "Due Date": "On demand", "Remarks": "Unauthorized advertising violation"},
+        {"Type of Fee": "Audit", "Amount": "Cost of audit + understated amounts + 1.5%/month interest ($1,000-$15,000 est.)", "Due Date": "On demand", "Remarks": "If reports missing or understatement >2%"},
+        {"Type of Fee": "Transfer Fee", "Amount": "$2,900", "Due Date": "$1,000 deposit at application; balance at approval", "Remarks": "Waived for entity/family transfers"},
+        {"Type of Fee": "Payment Service Fee", "Amount": "Up to 4% of total charge", "Due Date": "As incurred", "Remarks": "Credit card payments"},
+        {"Type of Fee": "Additional Training or Assistance Fees", "Amount": "$250/day + expenses", "Due Date": "In advance", "Remarks": "Additional/replacement personnel training"},
+        {"Type of Fee": "Late Payment Fee", "Amount": "Lesser of 1.5%/month or max by law", "Due Date": "As incurred", "Remarks": "On all late payments"},
+        {"Type of Fee": "Indemnification", "Amount": "Varies", "Due Date": "As incurred", "Remarks": "Broad indemnification for expenses/losses"},
+        {"Type of Fee": "Professional Fees and Expenses", "Amount": "Varies", "Due Date": "As incurred", "Remarks": "Legal/accounting from breach or termination"},
+        {"Type of Fee": "Returned Check/NSF Fee", "Amount": "$100 per occurrence", "Due Date": "As incurred", "Remarks": "Insufficient funds or stop payment"},
+        {"Type of Fee": "Renewal Fee", "Amount": "$2,900", "Due Date": "At successor FA signing", "Remarks": "For successor franchise agreement"},
+        {"Type of Fee": "Technology Fee", "Amount": "$100/month (current)", "Due Date": "Monthly with royalty", "Remarks": "Software, website hosting; may increase"},
+        {"Type of Fee": "Conference Fee", "Amount": "Then-current (not currently charged)", "Due Date": "10 days before conference", "Remarks": "Due whether or not you attend"},
+        {"Type of Fee": "Replacement Operations Manual", "Amount": "$500 (current)", "Due Date": "On demand", "Remarks": "Lost/destroyed manual"},
+        {"Type of Fee": "Supplier/Product Evaluation Fee", "Amount": "$100-$500 est.", "Due Date": "As incurred", "Remarks": "For proposed new suppliers"},
+        {"Type of Fee": "Customer Issue Resolution", "Amount": "Reasonable costs", "Due Date": "As incurred", "Remarks": "Franchisor resolves customer complaint"},
+        {"Type of Fee": "Late Report Fee", "Amount": "$100/month + 1.5% interest", "Due Date": "As incurred", "Remarks": "Per missed report, accrues until received"},
+        {"Type of Fee": "Management Fee", "Amount": "$500/day + costs (current)", "Due Date": "As incurred", "Remarks": "Franchisor manages due to breach/absence/death"},
+        {"Type of Fee": "Broker Fees", "Amount": "Actual cost", "Due Date": "As incurred", "Remarks": "On transfers involving brokers"}
+      ],
+      "table_notes": [
+        "All fees uniform, non-refundable once paid. Payment via EFT/ACH required.",
+        "Fixed dollar fees subject to CPI adjustment (>5% threshold; max 1/year; 60 days notice).",
+        "Gross Revenue defined broadly: all revenues including gift certificate redemption, business interruption insurance. Excludes taxes, refunds, valid discounts.",
+        "Additional training fee: $250/day current rate; adjustable via Operations Manual.",
+        "Technology Fee covers Cookie Advantage Business Software, website hosting; may increase with upgrades."
+      ],
+      "provenance": "Item 6, PDF pages 11-14"
+    },
+    {
+      "id": "T7-1",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [15, 16, 17],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"Type of Expenditure": "Initial Franchise Fee", "Low": "$34,900", "High": "$34,900", "Method of Payment": "Lump Sum", "When Due": "Upon signing FA", "To Whom": "Us"},
+        {"Type of Expenditure": "Equipment", "Low": "$24,950", "High": "$80,000", "Method of Payment": "As Incurred", "When Due": "As Incurred", "To Whom": "Third Parties"},
+        {"Type of Expenditure": "3 Months' Lease Payments", "Low": "$1,800", "High": "$4,500", "Method of Payment": "As Incurred", "When Due": "As Incurred", "To Whom": "Landlord"},
+        {"Type of Expenditure": "Utility and Security Deposits", "Low": "$600", "High": "$1,500", "Method of Payment": "As Incurred", "When Due": "Before Opening", "To Whom": "Landlord"},
+        {"Type of Expenditure": "Leasehold Improvements", "Low": "$2,000", "High": "$3,000", "Method of Payment": "As Incurred", "When Due": "Before Opening", "To Whom": "Contractors"},
+        {"Type of Expenditure": "Business Licenses and Permits", "Low": "$500", "High": "$1,000", "Method of Payment": "As Incurred", "When Due": "Before Opening", "To Whom": "Third Parties"},
+        {"Type of Expenditure": "Computer Hardware and Software", "Low": "$2,500", "High": "$4,000", "Method of Payment": "As Incurred", "When Due": "As Incurred", "To Whom": "Third Parties"},
+        {"Type of Expenditure": "Initial Inventory", "Low": "$10,000", "High": "$12,000", "Method of Payment": "As Incurred", "When Due": "Before Opening", "To Whom": "Third Parties"},
+        {"Type of Expenditure": "Packaging", "Low": "$2,500", "High": "$2,500", "Method of Payment": "As Incurred", "When Due": "Before Opening", "To Whom": "Our Affiliate"},
+        {"Type of Expenditure": "Advertising", "Low": "$1,500", "High": "$3,000", "Method of Payment": "As Incurred", "When Due": "As Incurred", "To Whom": "Third Parties"},
+        {"Type of Expenditure": "Professional Fees", "Low": "$250", "High": "$2,500", "Method of Payment": "As Incurred", "When Due": "As Incurred", "To Whom": "Third Parties"},
+        {"Type of Expenditure": "Insurance", "Low": "$250", "High": "$750", "Method of Payment": "As Incurred", "When Due": "Before Opening", "To Whom": "Insurer"},
+        {"Type of Expenditure": "Travel and Initial Training Expenses", "Low": "$800", "High": "$1,600", "Method of Payment": "As Incurred", "When Due": "Before Opening", "To Whom": "Third Parties"},
+        {"Type of Expenditure": "Additional Funds - 3 Months", "Low": "$5,000", "High": "$10,000", "Method of Payment": "As Incurred", "When Due": "As Incurred", "To Whom": "Third Parties"},
+        {"Type of Expenditure": "Miscellaneous", "Low": "$5,000", "High": "$10,000", "Method of Payment": "As Incurred", "When Due": "At Opening", "To Whom": "Third Parties/Employees"},
+        {"Type of Expenditure": "TOTAL", "Low": "$92,550", "High": "$171,250", "Method of Payment": "", "When Due": "", "To Whom": ""}
+      ],
+      "table_notes": [
+        "Equipment: oven, unifiller depositer, KooK E King depositor, commercial refrigerator, sink, tables, shelves, cookie racks, mixer, flour tubs, cookie depositor, cookie sheets, utensils, batter dispenser. Low=used, High=new.",
+        "Lease: based on Tulsa, OK market; 1,000-1,200 sq ft in retail strip malls.",
+        "Packaging: various sized boxes, includes shipping, from affiliate.",
+        "Advertising: not required; estimate for business cards, flyers, SEO, direct mail.",
+        "Training: 1 person estimated. Bixby, OK location.",
+        "Additional Funds: higher estimate recommended for Q4/Christmas openings.",
+        "No financing offered for any items.",
+        "Expenditures to franchisor/affiliate: non-refundable. Third-party expenditures may be refundable per their policies."
+      ],
+      "provenance": "Item 7, PDF pages 15-17"
+    },
+    {
+      "id": "T19-1",
+      "item": 19,
+      "title": "2024 Annual Gross Revenue for Franchised Outlets",
+      "source_pages": [39],
+      "columns": ["Metric", "Value"],
+      "rows": [
+        {"Metric": "Average Gross Revenue", "Value": "$369,522.44"},
+        {"Metric": "Median Gross Revenue", "Value": "$260,925.10"},
+        {"Metric": "Highest Gross Revenue", "Value": "$1,231,277.89"},
+        {"Metric": "Lowest Gross Revenue", "Value": "$50,197.90"},
+        {"Metric": "Number and % that Met or Exceeded Average", "Value": "4 of 17 (24%)"}
+      ],
+      "table_notes": [
+        "Gross Revenue = total revenue from sale of goods/services less sales tax, discounts, allowances, returns.",
+        "Average = total Gross Revenue of 17 Franchised Outlets / 17. Median = 9th of 17.",
+        "Does NOT reflect costs of sales, operating expenses, or other costs.",
+        "Written substantiation available upon reasonable request.",
+        "Some outlets have sold this amount. Individual results may differ. No assurance of matching."
+      ],
+      "provenance": "Item 19, PDF page 39"
+    },
+    {
+      "id": "T20-1",
+      "item": 20,
+      "title": "Table No. 1 — Systemwide Outlet Summary 2022-2024",
+      "source_pages": [40],
+      "columns": ["Outlet Type", "Year", "Outlets at Start", "Outlets at End", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": "2022", "Outlets at Start": "19", "Outlets at End": "19", "Net Change": "0"},
+        {"Outlet Type": "Franchised", "Year": "2023", "Outlets at Start": "19", "Outlets at End": "19", "Net Change": "0"},
+        {"Outlet Type": "Franchised", "Year": "2024", "Outlets at Start": "19", "Outlets at End": "17", "Net Change": "-2"},
+        {"Outlet Type": "Company-Owned", "Year": "2022", "Outlets at Start": "3", "Outlets at End": "3", "Net Change": "0"},
+        {"Outlet Type": "Company-Owned", "Year": "2023", "Outlets at Start": "3", "Outlets at End": "4", "Net Change": "+1"},
+        {"Outlet Type": "Company-Owned", "Year": "2024", "Outlets at Start": "4", "Outlets at End": "6", "Net Change": "+2"},
+        {"Outlet Type": "Total", "Year": "2022", "Outlets at Start": "22", "Outlets at End": "22", "Net Change": "0"},
+        {"Outlet Type": "Total", "Year": "2023", "Outlets at Start": "22", "Outlets at End": "23", "Net Change": "+1"},
+        {"Outlet Type": "Total", "Year": "2024", "Outlets at Start": "23", "Outlets at End": "23", "Net Change": "0"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF page 40"
+    },
+    {
+      "id": "T20-2",
+      "item": 20,
+      "title": "Table No. 2 — Transfers of Franchised Outlets 2022-2024",
+      "source_pages": [40],
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        {"State": "Kansas", "Year": "2022", "Number of Transfers": "0"},
+        {"State": "Kansas", "Year": "2023", "Number of Transfers": "0"},
+        {"State": "Kansas", "Year": "2024", "Number of Transfers": "1"},
+        {"State": "Missouri", "Year": "2022", "Number of Transfers": "0"},
+        {"State": "Missouri", "Year": "2023", "Number of Transfers": "0"},
+        {"State": "Missouri", "Year": "2024", "Number of Transfers": "1"},
+        {"State": "Texas", "Year": "2022", "Number of Transfers": "0"},
+        {"State": "Texas", "Year": "2023", "Number of Transfers": "1"},
+        {"State": "Texas", "Year": "2024", "Number of Transfers": "0"},
+        {"State": "Totals", "Year": "2022", "Number of Transfers": "0"},
+        {"State": "Totals", "Year": "2023", "Number of Transfers": "1"},
+        {"State": "Totals", "Year": "2024", "Number of Transfers": "2"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF page 40"
+    },
+    {
+      "id": "T20-3",
+      "item": 20,
+      "title": "Table No. 3 — Status of Franchised Outlets 2022-2024",
+      "source_pages": [41, 42],
+      "columns": ["State", "Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        {"State": "Arkansas", "Year": "2024", "Start": "1", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "1"},
+        {"State": "Colorado", "Year": "2024", "Start": "2", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "2"},
+        {"State": "IA/NE/ND/SD", "Year": "2024", "Start": "1", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "1"},
+        {"State": "Illinois", "Year": "2024", "Start": "2", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "2"},
+        {"State": "Kansas", "Year": "2024", "Start": "1", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "1"},
+        {"State": "Minnesota", "Year": "2024", "Start": "1", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "1"},
+        {"State": "Missouri", "Year": "2024", "Start": "1", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "1"},
+        {"State": "North Carolina", "Year": "2024", "Start": "1", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "1"},
+        {"State": "Oklahoma", "Year": "2024", "Start": "1", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "1", "Ceased Other": "0", "End": "0"},
+        {"State": "Tennessee", "Year": "2024", "Start": "1", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "1"},
+        {"State": "Texas", "Year": "2024", "Start": "5", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "1", "Ceased Other": "0", "End": "4"},
+        {"State": "Utah", "Year": "2024", "Start": "1", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "1"},
+        {"State": "Wisconsin", "Year": "2024", "Start": "1", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "0", "End": "1"},
+        {"State": "Total", "Year": "2024", "Start": "19", "Opened": "0", "Terminations": "0", "Non-Renewals": "0", "Reacquired": "2", "Ceased Other": "0", "End": "17"}
+      ],
+      "table_notes": [
+        "IA/NE/ND/SD sold as a single Franchise.",
+        "2022 and 2023 totals: 19 start, 19 end, no changes in any category.",
+        "Missouri row for 2023 appears as '2021' in the FDD — likely typographic error; data consistent with stable single outlet."
+      ],
+      "provenance": "Item 20, PDF pages 41-42"
+    },
+    {
+      "id": "T20-4",
+      "item": 20,
+      "title": "Table No. 4 — Status of Affiliate-Owned Outlets 2022-2024",
+      "source_pages": [42, 43],
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        {"State": "Alabama", "Year": "2024", "Start": "1", "Opened": "0", "Reacquired": "0", "Closed": "0", "Sold to Franchisee": "0", "End": "1"},
+        {"State": "Florida", "Year": "2024", "Start": "1", "Opened": "0", "Reacquired": "0", "Closed": "0", "Sold to Franchisee": "0", "End": "1"},
+        {"State": "Nevada", "Year": "2024", "Start": "1", "Opened": "0", "Reacquired": "0", "Closed": "0", "Sold to Franchisee": "0", "End": "1"},
+        {"State": "Oklahoma", "Year": "2024", "Start": "1", "Opened": "0", "Reacquired": "1", "Closed": "0", "Sold to Franchisee": "0", "End": "2"},
+        {"State": "Texas", "Year": "2024", "Start": "0", "Opened": "0", "Reacquired": "1", "Closed": "0", "Sold to Franchisee": "0", "End": "1"},
+        {"State": "Totals", "Year": "2024", "Start": "4", "Opened": "0", "Reacquired": "2", "Closed": "0", "Sold to Franchisee": "0", "End": "6"}
+      ],
+      "table_notes": [
+        "2022: 3 start, 3 end (AL, FL, OK). 2023: 3 start, 4 end (NV opened).",
+        "2024 reacquisitions: 1 Oklahoma (from Adcock), 1 Texas (from Adcock)."
+      ],
+      "provenance": "Item 20, PDF pages 42-43"
+    },
+    {
+      "id": "T20-5",
+      "item": 20,
+      "title": "Table No. 5 — Projected Openings as of December 31, 2024",
+      "source_pages": [43],
+      "columns": ["State", "Signed But Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        {"State": "Alabama", "Signed But Not Opened": "0", "Projected New Franchised": "1", "Projected New Company-Owned": "0"},
+        {"State": "Georgia", "Signed But Not Opened": "0", "Projected New Franchised": "1", "Projected New Company-Owned": "0"},
+        {"State": "Kentucky", "Signed But Not Opened": "0", "Projected New Franchised": "1", "Projected New Company-Owned": "0"},
+        {"State": "Michigan", "Signed But Not Opened": "0", "Projected New Franchised": "1", "Projected New Company-Owned": "0"},
+        {"State": "Texas", "Signed But Not Opened": "0", "Projected New Franchised": "1", "Projected New Company-Owned": "0"},
+        {"State": "Totals", "Signed But Not Opened": "0", "Projected New Franchised": "5", "Projected New Company-Owned": "0"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF page 43"
+    },
+    {
+      "id": "T21-BS",
+      "item": 21,
+      "title": "Balance Sheets — December 31, 2024 and 2023",
+      "source_pages": [52],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"Line Item": "Cash and cash equivalents", "2024": "$49,330", "2023": "$53,263"},
+        {"Line Item": "Franchise receivables", "2024": "$78,867", "2023": "$66,883"},
+        {"Line Item": "Total current assets", "2024": "$128,197", "2023": "$120,146"},
+        {"Line Item": "Reacquired franchise rights, net", "2024": "$19,999", "2023": "$21,666"},
+        {"Line Item": "Total noncurrent assets", "2024": "$19,999", "2023": "$21,666"},
+        {"Line Item": "Total assets", "2024": "$148,196", "2023": "$141,812"},
+        {"Line Item": "Advances from affiliate", "2024": "$69,472", "2023": "$73,718"},
+        {"Line Item": "Total current liabilities", "2024": "$69,472", "2023": "$73,718"},
+        {"Line Item": "Common stock (par $0.01; 50,000 auth; 10,000 issued/outstanding)", "2024": "$100", "2023": "$100"},
+        {"Line Item": "Additional paid-in capital", "2024": "$900", "2023": "$900"},
+        {"Line Item": "Retained earnings", "2024": "$77,724", "2023": "$67,094"},
+        {"Line Item": "Total stockholders' equity", "2024": "$78,724", "2023": "$68,094"},
+        {"Line Item": "Total liabilities and stockholders' equity", "2024": "$148,196", "2023": "$141,812"}
+      ],
+      "table_notes": [
+        "Extracted from scanned image via pdftoppm rendering at 300 DPI.",
+        "Sole liability is advances from affiliate (KDKC, Inc.) — unsecured, non-interest bearing, no repayment terms."
+      ],
+      "provenance": "Exhibit B, PDF page 52 (rendered image)"
+    },
+    {
+      "id": "T21-IS",
+      "item": 21,
+      "title": "Statements of Income — Years Ended December 31, 2024, 2023, 2022",
+      "source_pages": [53],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Franchise royalties", "2024": "$537,435", "2023": "$510,163", "2022": "$449,109"},
+        {"Line Item": "Renewal fees", "2024": "$5,800", "2023": "$11,600", "2022": "$8,850"},
+        {"Line Item": "Franchise transfer fees", "2024": "$5,800", "2023": "$0", "2022": "$0"},
+        {"Line Item": "Total revenues", "2024": "$549,035", "2023": "$521,763", "2022": "$457,959"},
+        {"Line Item": "Administrative fee", "2024": "$488,555", "2023": "$459,151", "2022": "$420,000"},
+        {"Line Item": "General and administrative", "2024": "$36,850", "2023": "$31,593", "2022": "$25,002"},
+        {"Line Item": "Total costs and expenses", "2024": "$525,405", "2023": "$490,744", "2022": "$445,002"},
+        {"Line Item": "Net income", "2024": "$23,630", "2023": "$31,019", "2022": "$12,957"}
+      ],
+      "table_notes": [
+        "Administrative fee = management fee paid to affiliate KDKC, Inc. This is 89% of total revenue in 2024.",
+        "S-corporation: no income tax provision.",
+        "Extracted from scanned image via pdftoppm rendering."
+      ],
+      "provenance": "Exhibit B, PDF page 53 (rendered image)"
+    },
+    {
+      "id": "T21-SE",
+      "item": 21,
+      "title": "Statements of Stockholders' Equity — 2021-2024",
+      "source_pages": [54],
+      "columns": ["Item", "Common Stock Shares", "Common Stock Amount", "Additional Paid-In Capital", "Retained Earnings", "Total"],
+      "rows": [
+        {"Item": "Balance Dec 31, 2021", "Common Stock Shares": "10,000", "Common Stock Amount": "$100", "Additional Paid-In Capital": "$900", "Retained Earnings": "$44,118", "Total": "$45,118"},
+        {"Item": "Net income 2022", "Common Stock Shares": "-", "Common Stock Amount": "-", "Additional Paid-In Capital": "-", "Retained Earnings": "$12,957", "Total": "$12,957"},
+        {"Item": "Distributions 2022", "Common Stock Shares": "-", "Common Stock Amount": "-", "Additional Paid-In Capital": "-", "Retained Earnings": "($1,000)", "Total": "($1,000)"},
+        {"Item": "Balance Dec 31, 2022", "Common Stock Shares": "10,000", "Common Stock Amount": "$100", "Additional Paid-In Capital": "$900", "Retained Earnings": "$56,075", "Total": "$57,075"},
+        {"Item": "Net income 2023", "Common Stock Shares": "-", "Common Stock Amount": "-", "Additional Paid-In Capital": "-", "Retained Earnings": "$31,019", "Total": "$31,019"},
+        {"Item": "Distributions 2023", "Common Stock Shares": "-", "Common Stock Amount": "-", "Additional Paid-In Capital": "-", "Retained Earnings": "($20,000)", "Total": "($20,000)"},
+        {"Item": "Balance Dec 31, 2023", "Common Stock Shares": "10,000", "Common Stock Amount": "$100", "Additional Paid-In Capital": "$900", "Retained Earnings": "$67,094", "Total": "$68,094"},
+        {"Item": "Net income 2024", "Common Stock Shares": "-", "Common Stock Amount": "-", "Additional Paid-In Capital": "-", "Retained Earnings": "$23,630", "Total": "$23,630"},
+        {"Item": "Distributions 2024", "Common Stock Shares": "-", "Common Stock Amount": "-", "Additional Paid-In Capital": "-", "Retained Earnings": "($13,000)", "Total": "($13,000)"},
+        {"Item": "Balance Dec 31, 2024", "Common Stock Shares": "10,000", "Common Stock Amount": "$100", "Additional Paid-In Capital": "$900", "Retained Earnings": "$77,724", "Total": "$78,724"}
+      ],
+      "table_notes": [
+        "Distributions varied widely: $1,000 (2022), $20,000 (2023), $13,000 (2024).",
+        "Extracted from scanned image via pdftoppm rendering."
+      ],
+      "provenance": "Exhibit B, PDF page 54 (rendered image)"
+    },
+    {
+      "id": "T21-CF",
+      "item": 21,
+      "title": "Statements of Cash Flows — Years Ended December 31, 2024, 2023, 2022",
+      "source_pages": [55],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Net income", "2024": "$23,630", "2023": "$31,019", "2022": "$12,957"},
+        {"Line Item": "Amortization", "2024": "$1,667", "2023": "$1,667", "2022": "$1,667"},
+        {"Line Item": "Change in franchise receivables", "2024": "($11,984)", "2023": "$7,434", "2022": "($3,847)"},
+        {"Line Item": "Net cash from operating activities", "2024": "$13,313", "2023": "$40,120", "2022": "$10,777"},
+        {"Line Item": "Advances from affiliate", "2024": "($4,246)", "2023": "($12,825)", "2022": "$12,130"},
+        {"Line Item": "Stockholder distributions", "2024": "($13,000)", "2023": "($20,000)", "2022": "($1,000)"},
+        {"Line Item": "Net cash from financing activities", "2024": "($17,246)", "2023": "($32,825)", "2022": "$11,130"},
+        {"Line Item": "Net increase (decrease) in cash", "2024": "($3,933)", "2023": "$7,295", "2022": "$21,907"},
+        {"Line Item": "Cash beginning of year", "2024": "$53,263", "2023": "$45,968", "2022": "$24,061"},
+        {"Line Item": "Cash end of year", "2024": "$49,330", "2023": "$53,263", "2022": "$45,968"}
+      ],
+      "table_notes": [
+        "Only adjustments to net income: amortization (constant $1,667/year) and franchise receivables changes.",
+        "No investing activities in any year.",
+        "Affiliate advances decreased in 2023 and 2024 (net repayment); increased in 2022.",
+        "Extracted from scanned image via pdftoppm rendering. Some values may have minor OCR uncertainty."
+      ],
+      "provenance": "Exhibit B, PDF page 55 (rendered image)"
+    },
+    {
+      "id": "T11-1",
+      "item": 11,
+      "title": "Training Program",
+      "source_pages": [27],
+      "columns": ["Subject", "Hours Classroom", "Hours On-the-Job", "Location"],
+      "rows": [
+        {"Subject": "Operations Training", "Hours Classroom": "22", "Hours On-the-Job": "4", "Location": "Bixby, OK or other designated location"},
+        {"Subject": "Real Estate and Development", "Hours Classroom": "2", "Hours On-the-Job": "4", "Location": "Bixby, OK or other designated location"},
+        {"Subject": "Administration", "Hours Classroom": "2", "Hours On-the-Job": "4", "Location": "Bixby, OK or other designated location"},
+        {"Subject": "Store Opening Assistance", "Hours Classroom": "2", "Hours On-the-Job": "4", "Location": "Bixby, OK or other designated location"},
+        {"Subject": "TOTALS", "Hours Classroom": "28", "Hours On-the-Job": "16", "Location": ""}
+      ],
+      "table_notes": [
+        "Total training: 44 hours (28 classroom + 16 on-the-job).",
+        "Pre-Opening Training: ~4 days at Bakery (immediately before/after opening).",
+        "No charge for initial training of franchisee/managing owner and designated manager at same session.",
+        "Instructors: Kim Carns, Duane Carns, Kevin Carns, Pixie Greenhaw."
+      ],
+      "provenance": "Item 11, PDF page 27"
+    }
+  ]
+}

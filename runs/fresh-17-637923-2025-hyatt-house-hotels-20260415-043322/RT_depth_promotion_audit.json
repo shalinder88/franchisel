@@ -1,0 +1,59 @@
+{
+  "depth_pass": "3_promotion_audit",
+  "promoted_facts": [
+    {
+      "fact": "Franchisees received $14,396,149 more in loyalty program reimbursements than they paid in loyalty program fees during 2024",
+      "reader_report_section": "Pass C - Supplier Control",
+      "original_pdf_page": 46,
+      "promoted_to": "supplier_control.loyalty_net_benefit_to_franchisees_2024",
+      "already_in_canonical": true
+    },
+    {
+      "fact": "2024 fiscal year actual initial fees paid by franchisees ranged from $64,750 to $214,450",
+      "reader_report_section": "Pass B - Item 5",
+      "original_pdf_page": 21,
+      "promoted_to": "initial_fees.actual_range_paid_2024",
+      "already_in_canonical": true
+    },
+    {
+      "fact": "63.5% of reservations are for 1-4 nights, 10% for 30+ nights",
+      "reader_report_section": "Pass F - Item 19",
+      "original_pdf_page": 85,
+      "promoted_to": "item19_fpr.stay_length_distribution",
+      "already_in_canonical": true
+    },
+    {
+      "fact": "During 2024, only 40% of all Covered Hotels exceeded the average RevPAR of $127.19",
+      "reader_report_section": "Pass F - Item 19",
+      "original_pdf_page": 86,
+      "promoted_to": "Already captured in FPR statistics",
+      "already_in_canonical": true
+    },
+    {
+      "fact": "Hyatt Hotels Corporation portfolio at Dec 31 2024: 1,442 hotels, 347,301 rooms, 79 countries; 721 US hotels with 159,829 rooms",
+      "reader_report_section": "Not in reader report narrative",
+      "original_pdf_page": 116,
+      "promoted_to": "item21_financials",
+      "already_in_canonical": false,
+      "action": "Added to 09_final_canonical.json"
+    },
+    {
+      "fact": "Hyatt Corporation received $129,144 in rebates from suppliers based on franchisee purchases during 2024, but used entire amount to offset System Services Costs",
+      "reader_report_section": "Pass C - Supplier Control",
+      "original_pdf_page": 46,
+      "promoted_to": "supplier_control.supplier_rebates_2024",
+      "already_in_canonical": true
+    },
+    {
+      "fact": "No franchisee has failed to communicate with franchisor within 10 weeks before issuance date",
+      "reader_report_section": "Pass F - Item 20",
+      "original_pdf_page": 101,
+      "promoted_to": "item20_outlets",
+      "already_in_canonical": false,
+      "action": "Added franchisee_communication_confirmed: true to item20_outlets"
+    }
+  ],
+  "total_promotable_facts_found": 7,
+  "already_in_canonical": 5,
+  "newly_promoted": 2
+}

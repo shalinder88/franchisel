@@ -1,0 +1,88 @@
+{
+  "enrichment_version": "v2",
+  "base_file": "11_canonical_enriched.json",
+  "enrichments": {
+    "item21_financial_structure_detail": {
+      "revenue_breakdown_2024": {
+        "franchise_fees": {"amount": 139340, "pct_of_total": 3.7},
+        "franchise_royalties": {"amount": 2190699, "pct_of_total": 58.9},
+        "other_revenue": {"amount": 1391251, "pct_of_total": 37.4, "includes": ["supplier_rebates_~980K", "management_service_fees_~265K", "other"]},
+        "total": 3721290
+      },
+      "expense_structure_2024": {
+        "admin_and_development": 3885318,
+        "includes": "payroll, rent, travel, insurance, professional expenses"
+      },
+      "related_party_2024": {
+        "management_services_from_BPRUSA": 265000,
+        "marketing_services_from_BPRUSA": 24000,
+        "restaurant_operations_paid_to_related": 559000,
+        "related_party_payable_end_2024": 297747,
+        "related_party_receivable_end_2024": 0
+      },
+      "property_equipment_2024": {
+        "computer_software": 215774,
+        "computer_hardware": 166130,
+        "office_equipment": 141632,
+        "total_fixed": 523536,
+        "accumulated_depreciation": -475045,
+        "net": 49490,
+        "depreciation_2024": 24000,
+        "depreciation_2023": 15000,
+        "depreciation_2022": 44000,
+        "useful_life": "three years (property and equipment, computer hardware, software, office equipment)"
+      }
+    },
+    "item21_statement_detail": {
+      "balance_sheet_trends": {
+        "total_assets": {"2024": 1807384, "2023": 2594153, "2022": 2283042},
+        "total_liabilities": {"2024": 2265394, "2023": 2288135, "2022": 2277623},
+        "partners_capital": {"2024": -458010, "2023": 506018, "2022": 5419},
+        "unrestricted_cash": {"2024": 53911, "2023": 63926, "2022": 546663}
+      },
+      "income_statement_trends": {
+        "total_revenue": {"2024": 3721290, "2023": 3966537, "2022": 3732874},
+        "total_expenses": {"2024": 3885318, "2023": 3465938, "2022": 3694750},
+        "net_income": {"2024": -164028, "2023": 500599, "2022": 38124}
+      },
+      "cash_flow_trends": {
+        "operating": {"2024": 736955, "2023": -443053, "2022": 202808},
+        "investing": {"2024": -36959, "2023": -33877, "2022": -8927},
+        "financing": {"2024": -800000, "2023": 0, "2022": -1000000}
+      }
+    },
+    "item6_fee_detail": {
+      "liquidated_damages_formula": {
+        "calculation": "avg_monthly_(royalty+brand_fund) × min(36, remaining_months)",
+        "minimum": 30000,
+        "example_at_2M_gross_sales": {"monthly_royalty_brand": 13333, "36_months": 480000},
+        "example_at_3M_gross_sales": {"monthly_royalty_brand": 20000, "36_months": 720000},
+        "washington_amendment": "Excludes Brand Fund from calculation for WA franchisees"
+      },
+      "insurance_requirements": {
+        "general_liability": "$5,000,000 combined single limit per occurrence",
+        "excess_liability": "Liability over $1M may be umbrella/excess",
+        "workers_comp": "Minimum state-mandated amounts",
+        "employers_liability": "$1,000,000 each accident; $1,000,000 disease each employee; $1,000,000 disease policy limit",
+        "business_interruption": "avg monthly fees × 12, min $100,000",
+        "carrier_rating": "A-VIII or better (AM Best)",
+        "additional_insured": "Franchisor and affiliates"
+      },
+      "gross_sales_definition": "All revenue including cash, credit, barter, business interruption proceeds; excludes sales tax, refunds, chargebacks, charged tips"
+    },
+    "state_addenda_overrides": {
+      "states_with_addenda": ["California", "Hawaii", "Illinois", "Iowa", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Ohio", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+      "total_overrides_extracted": 45,
+      "override_families_count": 13,
+      "source": "RT_depth_state_addenda_promotion.json"
+    },
+    "unresolveds": [
+      {"id": "U1", "description": "Going concern with no remediation plan", "severity": "high"},
+      {"id": "U2", "description": "Leadership instability — President on leave", "severity": "medium"},
+      {"id": "U3", "description": "Supplier rebate revenue concentration (26.3%)", "severity": "medium"},
+      {"id": "U4", "description": "Zero company-owned units", "severity": "medium"},
+      {"id": "U5", "description": "Balance sheet image ambiguity (2023 capital)", "severity": "low"}
+    ],
+    "contradictions": []
+  }
+}

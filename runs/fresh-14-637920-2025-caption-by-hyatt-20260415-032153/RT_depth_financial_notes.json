@@ -1,0 +1,59 @@
+{
+  "depth_pass": "financial_notes",
+  "brand": "Caption by Hyatt",
+  "filing_id": "637920-2025",
+  "source_pages": [90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 102, 110, 120, 130, 145],
+  "auditor": "Deloitte & Touche LLP",
+  "auditor_since": 2003,
+  "opinion": "Clean (unqualified)",
+  "going_concern": false,
+  "accounting_policies": {
+    "revenue_recognition": {
+      "description": "Revenue recognized per ASC 606. Management and franchise fees recognized over time as services performed. Owned/leased revenues recognized daily as rooms occupied. Loyalty program revenues based on points redeemed including breakage estimates. Third-party actuaries assist with breakage calculations.",
+      "source_pages": [100, 102]
+    },
+    "depreciation_amortization": {
+      "description": "D&A was $333M (2024), $397M (2023), $426M (2022). Declining trend reflects asset-light strategy with property dispositions.",
+      "source_pages": [92]
+    },
+    "goodwill": {
+      "description": "Goodwill of $2,541M (2024). Evaluated annually during Q4 using DCF models, guideline public company methods, and third-party appraisals. $110M impairment charge in 2024 on a management and franchising reporting unit.",
+      "impairment_2024": 110,
+      "total_goodwill_2024": 2541,
+      "source_pages": [91, 130]
+    },
+    "lease_accounting": {
+      "description": "Operating lease ROU assets: $328M (2024). Operating lease liabilities: $278M current + long-term. Weighted-average remaining term: 14 years (operating), 2 years (finance). Weighted-average discount rate: 3.8% (operating), 2.0% (finance). Total minimum operating lease payments: $353M.",
+      "rou_assets_2024": 328,
+      "operating_lease_liabilities_2024": 278,
+      "source_pages": [145]
+    },
+    "loyalty_program": {
+      "description": "World of Hyatt deferred revenue liability: $1,333M (2024). Actuarially determined based on anticipated timing of future point redemptions including breakage estimate. Critical audit matter — breakage assumption is subjective.",
+      "deferred_revenue_2024": 1333,
+      "source_pages": [90, 91, 102]
+    },
+    "income_taxes": {
+      "description": "Provision for income taxes: $267M (2024), $90M (2023), benefit of $92M (2022). Deferred tax assets: $466M (2024). Includes deferred income tax benefit of $123M from timing differences.",
+      "provision_2024": 267,
+      "deferred_tax_assets_2024": 466,
+      "source_pages": [92, 94, 95]
+    },
+    "stock_compensation": {
+      "description": "Share-based payment activity: $32M (2024). SARs outstanding: 3.24M shares at weighted avg exercise price $76.59. RSUs nonvested: 873K shares. SAR intrinsic value outstanding: $261M.",
+      "source_pages": [145]
+    }
+  },
+  "subsequent_events": {
+    "description": "Form 8-K filed March 26, 2025 (Exhibit A-2). Contains forward-looking statements about company strategy. No material subsequent events identified in the audited financial statements.",
+    "source_pages": [155, 156, 157]
+  },
+  "related_party_transactions": {
+    "description": "Hyatt Corporation provides Mandatory and Non-Mandatory Services to franchised Brand Hotels. Rosemont provides optional purchasing services. System Services Costs are at actual cost without markup on Mandatory Services, but may include profit on Non-Mandatory Services. Franchise agreement assets ($144.8M on franchisor balance sheet) represent payments to customers — likely key money and franchise incentives.",
+    "source_pages": [24, 25, 26, 27, 325]
+  },
+  "advertising_fund_accounting": {
+    "description": "No separate advertising fund. Marketing covered by 3.5% Commercial Services Fee. No periodic accounting provided. Franchisor need not spend any amount in franchisee's market area. World of Hyatt loyalty funds deposited in segregated accounts with independent investment managers; independently audited annually.",
+    "source_pages": [22, 30, 44]
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-15",
+  "brand": "Jazzercise",
+  "fdd_id": "637934-2025",
+  "auditor": "RSM US LLP",
+  "report_date": "2025-02-28",
+  "opinion": "clean_unqualified",
+  "going_concern": false,
+  "notes": [
+    {
+      "note_number": 1,
+      "title": "Nature of Business and Summary of Significant Accounting Policies",
+      "source_pages": [86, 87, 88, 89, 90],
+      "policies": {
+        "basis_of_presentation": "U.S. GAAP",
+        "variable_interest_entity": {
+          "entity": "Impala Building, LLC",
+          "ownership": "100% common ownership with sole stockholder",
+          "relationship": "Leases certain facilities to the Company",
+          "treatment": "Elected accounting alternative under ASU 2018-17; not consolidated",
+          "source_page": 86
+        },
+        "use_of_estimates": "Significant estimates include valuation of deferred tax asset and reserve for inventory obsolescence",
+        "cash_and_equivalents": {
+          "definition": "Highly liquid instruments with original maturity <= 3 months",
+          "composition": "Cash and money market funds",
+          "no_cash_equivalents_at_year_end": true,
+          "fdic_risk": "At times may exceed federally insured limits",
+          "source_page": 86
+        },
+        "accounts_receivable": {
+          "terms": "30 days from invoice date, uncollateralized",
+          "interest": "No interest on overdue amounts",
+          "methodology": "Allowance for credit losses based on credit risk, historical trends, current conditions, and forecasts",
+          "source_page": 86
+        },
+        "inventories": {
+          "composition": "Dance/fitness apparel",
+          "valuation": "Lower of average cost or net realizable value",
+          "obsolescence_reserve_2024": 130000,
+          "obsolescence_reserve_2023": 0,
+          "source_page": 87
+        },
+        "investments": {
+          "types": ["Treasury bonds", "Certificates of deposit", "Mutual funds"],
+          "valuation": "Level 1 inputs (quoted prices in active markets)",
+          "treasury_bonds_classification": "Current",
+          "cds_classification": "Current or noncurrent based on maturity",
+          "mutual_funds_classification": "Noncurrent",
+          "unrealized_gains_treatment": "Recognized in income per ASU 2016-01",
+          "interest_income_2024": 417535,
+          "interest_income_2023": 239172,
+          "source_page": 87
+        },
+        "equipment_and_leasehold_improvements": {
+          "depreciation_method": "Straight-line",
+          "useful_lives": "3 to 9 years",
+          "leasehold_amortization": "Straight-line over estimated useful life",
+          "source_page": 87
+        },
+        "website_and_software_development": {
+          "capitalization": "ASC 350-50 (website) and ASC 350-40 (internal-use software)",
+          "amortization_life": "3 years",
+          "capitalized_cost_2024": 581703,
+          "amortization_expense_2024": 48475,
+          "gross_cost_2024": 5312502,
+          "accumulated_amortization_2024": 4779274,
+          "source_page": 88
+        },
+        "deferred_contract_costs": {
+          "treatment": "Reduced to zero per ASU 2021-02 practical expedient",
+          "adoption_date": "2020-01-01",
+          "transition": "Retrospective",
+          "source_page": 88
+        },
+        "leases": {
+          "standard": "ASC 842",
+          "adopted": "2022-01-01",
+          "financing_leases": false,
+          "short_term_lease_exemption": true,
+          "discount_rate_election": "Risk-free rate (nonpublic entity practical expedient)",
+          "weighted_avg_discount_rate": "2.23%",
+          "weighted_avg_term_months": 54,
+          "source_page": 88
+        },
+        "revenue_recognition": {
+          "standard": "ASC 606",
+          "practical_expedients": ["Portfolio contracts", "Shipping as FOB Shipping Point", "Exclude sales taxes"],
+          "franchise_revenue": "Variable consideration recognized as franchised sales occur",
+          "merchandise_revenue": "Point in time when shipped (FOB Shipping Point)",
+          "on_demand_revenue": "Over subscription period (monthly or annual)",
+          "insurance_revenue": "Net basis (agent)",
+          "on_demand_reporting": "Gross basis (principal)",
+          "source_pages": [88, 89, 90, 91, 92]
+        },
+        "advertising_costs": {
+          "method": "Expensed as incurred",
+          "2024": 1744387,
+          "2023": 1432864,
+          "2022": 1345785,
+          "source_page": 88
+        },
+        "shipping_handling": {
+          "2024": 398914,
+          "2023": 366931,
+          "2022": 591189,
+          "classification": "SG&A",
+          "source_page": 89
+        },
+        "income_taxes": {
+          "entity_status": "C corporation since 2019-01-01 (revoked S election)",
+          "standard": "ASC 740",
+          "year_end": "December 31",
+          "interest_penalties_policy": "Component of income tax expense",
+          "unrecognized_tax_benefits": "None",
+          "source_page": 89
+        },
+        "subsequent_events": {
+          "evaluation_date": "2025-02-28",
+          "events": ["New 10-year lease with Impala Building, LLC effective Jan 1, 2025 ($26,400/mo, 2.5% annual increases)"],
+          "source_page": 90
+        }
+      }
+    },
+    {
+      "note_number": 2,
+      "title": "Revenue Recognition",
+      "source_pages": [90, 91, 92, 93],
+      "revenue_breakdown": {
+        "continuing_franchise": {"2024": 9287764, "2023": 9309623, "2022": 8924062},
+        "merchandise": {"2024": 4635945, "2023": 3662956, "2022": 4093922},
+        "on_demand": {"2024": 3671202, "2023": 4129571, "2022": 4321988},
+        "other": {"2024": 2939445, "2023": 2279959, "2022": 2291496},
+        "total": {"2024": 20534356, "2023": 19382109, "2022": 19631468}
+      },
+      "franchise_performance_obligation": "Single performance obligation — right to operate under Jazzercise name over term",
+      "training_treatment": "Separate performance obligation recognized at point in time per ASU 2021-02",
+      "deferred_revenue_composition": "Convention registrations, advance franchise/associate fees, On Demand subscriptions"
+    },
+    {
+      "note_number": 3,
+      "title": "Continuing Franchise Fee Rebates",
+      "source_pages": [93],
+      "rebate_range": "10%–35% of continuing franchise fees",
+      "rebates": {"2024": 1226336, "2023": 1087632, "2022": 949041},
+      "treatment": "Reduction to revenue",
+      "accrued_at_year_end": true,
+      "discretionary": "Company may modify or discontinue at any time"
+    },
+    {
+      "note_number": 4,
+      "title": "Accounts Receivable",
+      "source_pages": [93],
+      "detail": {
+        "franchise_fees": {"2024": 988136, "2023": 150416, "2022": 119522},
+        "trade": {"2024": 411426, "2023": 179794, "2022": 197570},
+        "licensing": {"2024": 0, "2023": 0, "2022": 9733},
+        "misc": {"2024": 136019, "2023": 69783, "2022": 56754},
+        "allowance": {"2024": -7800, "2023": -9498, "2022": -16367}
+      },
+      "note": "2024 franchise fee AR spike due to new third-party billing service collecting in arrears"
+    },
+    {
+      "note_number": 5,
+      "title": "Fair Value Measurement",
+      "source_pages": [94],
+      "valuation_level": "Level 1",
+      "investments": {
+        "mutual_funds": {"2024": 2035716, "2023": 1388710, "2022": 1221691},
+        "treasury_bonds": {"2024": 1975313, "2023": 5111302, "2022": 5799585},
+        "cds": {"2024": 0, "2023": 2108809, "2022": 1092764},
+        "total": {"2024": 4011029, "2023": 8608821, "2022": 8114040}
+      }
+    },
+    {
+      "note_number": 6,
+      "title": "Equipment and Leasehold Improvements",
+      "source_pages": [94],
+      "detail": {
+        "office_equipment": {"2024": 85441, "2023": 100022, "2022": 62372},
+        "furniture_fixtures": {"2024": 209467, "2023": 226749, "2022": 231938},
+        "video_equipment": {"2024": 0, "2023": 0, "2022": 40297},
+        "leasehold_improvements": {"2024": 2879392, "2023": 2266680, "2022": 2232147},
+        "gross": {"2024": 3174300, "2023": 2593451, "2022": 2566754},
+        "accumulated_depreciation": {"2024": -2300447, "2023": -2246974, "2022": -2196215},
+        "net": {"2024": 873853, "2023": 346477, "2022": 370539}
+      },
+      "depreciation_expense": {"2024": 112964, "2023": 102851, "2022": 93829}
+    },
+    {
+      "note_number": 7,
+      "title": "Accounts Payable and Accrued Expenses",
+      "source_pages": [95],
+      "detail": {
+        "annual_rebate_accrual": {"2024": 1226336, "2023": 1087632, "2022": 949041},
+        "accrued_paid_days_off": {"2024": 584737, "2023": 746514, "2022": 700322},
+        "accrued_payroll": {"2024": 442102, "2023": 472359, "2022": 362122},
+        "accrued_401k": {"2024": 200530, "2023": 264148, "2022": 172600},
+        "accrued_service_fee": {"2024": 459174, "2023": 0, "2022": 0},
+        "accrued_other": {"2024": 834534, "2023": 553216, "2022": 777584},
+        "total": {"2024": 3747413, "2023": 3123869, "2022": 2961669}
+      }
+    },
+    {
+      "note_number": 8,
+      "title": "Deferred Revenue",
+      "source_pages": [95],
+      "detail": {
+        "associate_fees_insurance": {"2024": 1546347, "2023": 1425651, "2022": 1410315},
+        "on_demand": {"2024": 616209, "2023": 641463, "2022": 702182},
+        "other": {"2024": 118359, "2023": 103478, "2022": 90843},
+        "total": {"2024": 2280915, "2023": 2170592, "2022": 2203340}
+      }
+    },
+    {
+      "note_number": 9,
+      "title": "Common Stock",
+      "source_pages": [95],
+      "conversion_date": "2024-12-02",
+      "before": "3,000 authorized, 2,000 issued and outstanding, no par value common stock",
+      "after": {
+        "class_a": "300 authorized, 200 issued and outstanding, no par value (voting rights)",
+        "class_b": "2,700 authorized, 1,800 issued and outstanding, no par value (no voting rights)"
+      },
+      "sole_stockholder": "Judi Sheppard Missett owns all shares of both classes"
+    },
+    {
+      "note_number": 10,
+      "title": "Income Taxes",
+      "source_pages": [95, 96, 97],
+      "provision_detail": {
+        "current_federal": {"2024": -34672, "2023": 297742, "2022": 163881},
+        "current_state": {"2024": 39982, "2023": 83885, "2022": 52186},
+        "deferred_federal": {"2024": 155262, "2023": -23943, "2022": 16874},
+        "deferred_state": {"2024": 24426, "2023": -9216, "2022": -3186},
+        "total": {"2024": 184998, "2023": 348468, "2022": 229755}
+      },
+      "deferred_tax_assets": {
+        "intangible_basis": {"2024": 20060},
+        "property_equipment": {"2024": 13907},
+        "accrued_pto": {"2024": 128390},
+        "sales_tax": {"2024": 6865},
+        "lease_liabilities": {"2024": 267841},
+        "bad_debt": {"2024": 1954},
+        "inventory_reserve": {"2024": 32564},
+        "nol_carryforwards": {"2024": 178},
+        "other": {"2024": 37214},
+        "total_dta": {"2024": 508973}
+      },
+      "deferred_tax_liabilities": {
+        "rou_assets": {"2024": -244398},
+        "prepaid_insurance": {"2024": -144902},
+        "unrealized_gain": {"2024": -166721},
+        "total_dtl": {"2024": -556021}
+      },
+      "net_deferred_tax": {"2024": -47048, "2023": 132640, "2022": 99481},
+      "tax_exam_federal": "2020 and beyond subject to examination",
+      "tax_exam_state": "2019 and beyond subject to examination"
+    },
+    {
+      "note_number": 11,
+      "title": "Related-Party Transactions",
+      "source_pages": [97],
+      "trust_receivable": {
+        "description": "Loans to sole stockholder's Irrevocable Trust for life insurance premiums",
+        "origin": "August 2013 (termination of two split-dollar policies)",
+        "terms": "Interest at applicable federal rate; annual interest-only payments; principal due within 9 years",
+        "balance_2024": 543891,
+        "balance_2023": 477554,
+        "balance_2022": 412212,
+        "classification": "Other assets"
+      },
+      "related_party_lease": {
+        "lessor": "Impala Building, LLC",
+        "relationship": "100% common ownership",
+        "current_lease": "Jan 1, 2020 – Dec 31, 2024; $23,335/mo with 3% annual increases",
+        "new_lease": "Jan 1, 2025 – Dec 31, 2034; $26,400/mo with 2.5% annual increases",
+        "rent_paid_2024": 309084,
+        "rent_paid_2023": 301548,
+        "rent_paid_2022": 294192,
+        "vie_treatment": "Not consolidated per accounting alternative"
+      }
+    },
+    {
+      "note_number": 12,
+      "title": "Lease Commitments",
+      "source_pages": [97, 98],
+      "rou_asset_beginning_2022": 2060794,
+      "lease_liability_beginning_2022": 2212963,
+      "operating_lease_expense": {"2024": 516684, "2023": 508869, "2022": 511418},
+      "related_party_rent_included": {"2024": 294372, "2023": 294372, "2022": 294372},
+      "future_minimum_payments": {
+        "2025": 233182, "2026": 222655, "2027": 226560, "2028": 233357, "2029": 211607
+      },
+      "total_payments": 1127361,
+      "imputed_interest": 58100,
+      "present_value": 1069261,
+      "weighted_avg_discount_rate": "2.23%",
+      "weighted_avg_term_months": 54,
+      "financing_leases": false
+    },
+    {
+      "note_number": 13,
+      "title": "Commitments and Contingencies",
+      "source_pages": [98],
+      "retirement_plan": {
+        "type": "401(k) profit sharing plan",
+        "availability": "Substantially all employees",
+        "contributions": {"2024": 263700, "2023": 328438, "2022": 221896}
+      },
+      "guarantees": {
+        "minnesota_trademark_indemnification": {
+          "description": "Required by MN law to indemnify MN franchisees against trademark infringement claims",
+          "liability_recorded": false,
+          "claims_defended": false
+        }
+      },
+      "legal_claims": "Routine litigation incidental to business; no material adverse effect expected"
+    }
+  ]
+}

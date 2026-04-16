@@ -1,0 +1,81 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-14",
+  "filing_id": "637909-2025",
+  "brand": "Delah Coffee",
+  "source_pages": [68, 69, 70, 71, 72, 73],
+  "auditor": "Metwally CPA PLLC",
+  "statement_type": "balance_sheet_only",
+  "statement_date": "2025-01-02",
+  "notes_extracted": {
+    "note_1_company_description": {
+      "summary": "LLC established in CA on Oct 17, 2024 (note: Item 1 says Oct 21, 2024 — minor discrepancy) for franchise opportunities. Provides rights to operate Delah Coffee shops under the mark. Offers individual and area development franchises.",
+      "source_pages": [71]
+    },
+    "note_2_significant_accounting_policies": {
+      "a_basis_of_accounting": {
+        "policy": "US GAAP",
+        "source_pages": [71]
+      },
+      "b_cash_equivalents": {
+        "policy": "Highly liquid debt instruments with original maturity of 3 months or less",
+        "source_pages": [71]
+      },
+      "c_federal_income_taxes": {
+        "policy": "LLC is disregarded entity for tax purposes. Accounts included in members' tax return. No tax liability recorded.",
+        "source_pages": [71]
+      },
+      "d_use_of_estimates": {
+        "policy": "Standard management estimates disclosure. Actual results could differ.",
+        "source_pages": [71]
+      },
+      "e_concentration_of_credit_risk": {
+        "policy": "Cash with major financial institutions. FDIC insurance limit $250,000. Mitigated by using high credit rating institutions.",
+        "fdic_exposure": "Not exceeded as of Jan 2, 2025 (only $500 on deposit)",
+        "source_pages": [71]
+      },
+      "f_revenue_recognition": {
+        "standard": "ASC 606 with ASU 2021-02 practical expedient for franchisors",
+        "performance_obligations": 2,
+        "obligation_1": "Pre-opening services (site selection, manuals, initial training) — recognized using input method over completion period",
+        "obligation_2": "Franchise license access — recognized straight-line over 10-year FA term",
+        "variable_consideration": "Royalty and BDF fees based on franchisee sales — recognized as delivered",
+        "contract_assets_liabilities": "Direct contract costs capitalized per ASC 606 and recognized over FA term. Deferred revenue for initial franchise fees amortized over FA life.",
+        "revenue_generated": "None as of balance sheet date",
+        "source_pages": [72, 73]
+      },
+      "g_recent_accounting_pronouncements": {
+        "standard": "FASB ASU 2016-02 (Topic 842) — Leases",
+        "impact": "No long-term leases; no ROU assets or lease liabilities required",
+        "source_pages": [73]
+      }
+    },
+    "note_3_cash": {
+      "balance": 500,
+      "account_type": "US noninterest-bearing transaction account",
+      "fdic_exceeded": false,
+      "source_pages": [73]
+    },
+    "note_4_subsequent_events": {
+      "evaluation_through": "2025-01-13",
+      "material_events": "None",
+      "source_pages": [73]
+    }
+  },
+  "accounting_policies_not_applicable": [
+    "Depreciation/amortization — no fixed assets",
+    "Impairment — no assets to impair",
+    "Income tax provision — disregarded entity",
+    "Lease accounting — no leases",
+    "VIE — not applicable",
+    "Related party transactions — none disclosed (though affiliate structure exists, the franchisor entity had no transactions)",
+    "Advertising fund accounting — no fund established"
+  ],
+  "observations": [
+    "Formation date discrepancy: Note 1 says Oct 17, 2024; Item 1 says Oct 21, 2024",
+    "Revenue recognition policy is fully articulated despite zero revenue — appropriate for FDD",
+    "Financial statements are the absolute minimum required by FTC Franchise Rule",
+    "No income statement or cash flow because no operations occurred",
+    "Going concern evaluation language present in auditor report but no qualification issued"
+  ]
+}

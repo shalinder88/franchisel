@@ -1,0 +1,163 @@
+{
+  "enrichment_version": "v2",
+  "item21_financial_structure": {
+    "debt_structure": {
+      "term_note": {
+        "balance_2024": 8000000,
+        "interest_rate": "SOFR + margin (5.93% effective)",
+        "maturity": "2027-08",
+        "payment_schedule": "Quarterly principal and interest"
+      },
+      "subordinated_shareholder_notes": {
+        "balance_2024": 6754731,
+        "interest_rate": "8.50%",
+        "maturity": "2027-12",
+        "payment_schedule": "Quarterly principal and interest"
+      },
+      "revolving_line_of_credit": {
+        "capacity": 35000000,
+        "outstanding_2024": 0,
+        "maturity": "2027-08",
+        "interest_rate": "Prime or SOFR + margin"
+      },
+      "total_debt_2024": 14754731,
+      "current_maturities_2024": 3250000,
+      "expected_payments": {
+        "2025": 3250000,
+        "2026": 3750000,
+        "2027": 7755000
+      }
+    },
+    "equity_structure": {
+      "voting_common_shares": 6000,
+      "nonvoting_common_shares": 1742153,
+      "par_value": 0.001,
+      "stock_valuation_method": "EBITDA multiple",
+      "redemptions_2024": 2587350,
+      "redemptions_2023": 5112450
+    },
+    "lease_guarantees": {
+      "count": 249,
+      "combined_annual_rentals": 8994000,
+      "liability_reserve": 1277000,
+      "expiration_range": "2025-2035"
+    },
+    "deferred_compensation": {
+      "total_liability_2024": 4508428,
+      "plans": [
+        {
+          "name": "Salary/Bonus Deferral Plan",
+          "type": "Voluntary deferral",
+          "interest": "Weighted-average cost of capital",
+          "liability_2024": 2064000
+        },
+        {
+          "name": "Long-Term Incentive Plan",
+          "type": "Performance-based (3-year)",
+          "adopted": "2023-04-10",
+          "goals": "New salons, customer counts, cash flows",
+          "liability_2024": 908000
+        },
+        {
+          "name": "Additional Deferred Incentive Plan (Terminated)",
+          "type": "Earnings-based",
+          "status": "Terminated 2023-02-16, final payment due 2025",
+          "liability_2024": 1537000
+        }
+      ]
+    },
+    "ad_fund_sponsorships": {
+      "nhl": {"annual": 3800000, "through": 2026},
+      "ncaa": {"2025": 9982000, "2026": 10346000},
+      "espn": {"2025": 1000000, "2026": 930000}
+    }
+  },
+  "item21_statement_detail": {
+    "revenue_trend": {
+      "2022": 179835010,
+      "2023": 193566636,
+      "2024": 202708389,
+      "cagr_2yr": "6.2%"
+    },
+    "net_earnings_trend": {
+      "2022": 22818648,
+      "2023": 19922456,
+      "2024": 22308397
+    },
+    "operating_profit_trend": {
+      "2022": 25863353,
+      "2023": 28241137,
+      "2024": 28141242
+    },
+    "equity_growth": {
+      "2021": -12325151,
+      "2022": 9733436,
+      "2023": 24564507,
+      "2024": 43769441
+    },
+    "cash_position": {
+      "2022": 45472255,
+      "2023": 46038335,
+      "2024": 39839742
+    },
+    "depreciation": {
+      "2022": 3031124,
+      "2023": 3298193,
+      "2024": 3915763
+    },
+    "capex": {
+      "2022": 2001855,
+      "2023": 6227516,
+      "2024": 30077468,
+      "note": "2024 spike driven by transportation equipment purchases of $28.7M"
+    },
+    "salon_development_sales_gross": {
+      "2022": 11967000,
+      "2023": 13876000,
+      "2024": 16270000
+    },
+    "employee_benefit_plan": {
+      "type": "401(k) with safe harbor match",
+      "match": "100% of first 2% + 50% of next 4%",
+      "employer_contributions_2024": 1040000
+    },
+    "related_party": {
+      "board_member_salons": 23,
+      "franchise_fee_revenue_2024": 647000,
+      "accounts_receivable_2024": 42000,
+      "unearned_fees_2024": 116000
+    }
+  },
+  "item6_fee_detail": {
+    "fee_categories": {
+      "ongoing_percentage_fees": {
+        "royalty": {"rate": 0.06, "base": "Gross Sales", "frequency": "biweekly"},
+        "ad_fund": {"rate": 0.05, "base": "Gross Sales", "frequency": "biweekly"}
+      },
+      "annual_fixed_fees": {
+        "training": {"amount": 200, "per": "salon"},
+        "recruiting_tech": {"amount": 750, "per": "salon"},
+        "insurance": {"low": 1500, "high": 3000, "per": "salon"}
+      },
+      "monthly_fixed_fees": {
+        "pos_software": {"amount": 250, "per": "salon"},
+        "managed_services": {"amount": 18.99, "per": "salon"},
+        "management_ipad": {"amount": 24.96, "per": "iPad", "optional_trigger": "management iPad installed"},
+        "credit_card_merchant_protection": {"amount": 5, "per": "salon"}
+      },
+      "annual_equipment_fees": {
+        "mobile_device_mgmt": {"amount": 54, "per": "iPad"},
+        "router_maintenance": {"amount": 312, "per": "router"},
+        "lane5000_warranty": {"amount": 59.76, "per": "terminal"}
+      },
+      "event_driven_fees": {
+        "renewal": {"amount": 1750, "per": "salon", "frequency": "every 10 years", "cpi_adjusted": true},
+        "assignment": {"amount": 1500, "per": "salon", "cpi_adjusted": true},
+        "salon_upgrades": {"low": 20000, "high": 80000, "frequency": "every 7-10 years"},
+        "ongoing_maintenance": {"low": 3000, "high": 9000, "frequency": "annual"},
+        "late_charges": {"rate": 0.14, "basis": "per annum"},
+        "sister_store_appeal": {"low": 500, "high": 1000, "refundable_if_favorable": true}
+      }
+    }
+  }
+}

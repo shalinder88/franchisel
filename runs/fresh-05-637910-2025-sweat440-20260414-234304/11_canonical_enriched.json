@@ -1,0 +1,88 @@
+{
+  "enrichment_version": "v1",
+  "base_canonical": "05_canonical.json",
+  "enrichments": {
+    "item19_chart_detail": {
+      "part1_revenue_distribution": {
+        "count": 17,
+        "mean": 718239,
+        "median": 670576,
+        "q1": 336138,
+        "q3": 936282,
+        "min": 137328,
+        "max": 1452077,
+        "std_dev_estimate": 370000,
+        "above_500k_count": 10,
+        "below_500k_count": 7,
+        "franchisee_only_count": 13,
+        "franchisee_only_mean": 607744,
+        "franchisee_only_median": 540846,
+        "parent_officer_count": 4,
+        "parent_officer_mean": 882373
+      },
+      "part2_parent_margins": {
+        "south_beach": {"revenue": 1295055, "ebitda_margin": 0.476, "adj_ebitda_margin": 0.406, "rent_pct": 0.226, "salary_pct": 0.141},
+        "miami_brickell": {"revenue": 1452077, "ebitda_margin": 0.470, "adj_ebitda_margin": 0.400, "rent_pct": 0.210, "salary_pct": 0.159}
+      },
+      "part3_member_distribution": {
+        "count": 22,
+        "mean": 430,
+        "median": 400,
+        "min": 108,
+        "max": 790,
+        "above_500": 8,
+        "below_300": 6
+      },
+      "part5_presale_distribution": {
+        "post_presale_count": 17,
+        "post_presale_mean": 237,
+        "post_presale_median": 251,
+        "post_presale_min": 84,
+        "post_presale_max": 465
+      }
+    },
+    "item20_yearly_activity": {
+      "2022": {"franchised_opened": 4, "franchised_closed": 0, "company_opened": 0, "company_closed": 0, "net_total": 4},
+      "2023": {"franchised_opened": 9, "franchised_closed": 0, "company_opened": 1, "company_reacquired": 1, "net_total": 10},
+      "2024": {"franchised_opened": 5, "franchised_terminated": 1, "company_opened": 0, "company_closed": 0, "net_total": 4}
+    },
+    "exhibit_structure": {
+      "A": {"type": "financial", "pages": 17, "key_content": "Audited financials, 3 periods, 8 notes"},
+      "B": {"type": "contract", "pages_est": 52, "key_content": "Franchise Agreement with 20 sections and 5 exhibits"},
+      "C": {"type": "contract", "pages_est": 24, "key_content": "Multi-Unit Development Agreement with 15 sections and 4 exhibits"},
+      "D": {"type": "franchisee_data", "pages": 3, "key_content": "17 open locations, 5 signed-not-open groups, 1 former"},
+      "E": {"type": "regulatory", "pages": 2, "key_content": "State administrators and agents"},
+      "F": {"type": "state_compliance", "pages": 24, "key_content": "7 state addenda: CA, IL, MD, MN, NY, VA, WA"},
+      "G": {"type": "regulatory", "pages": 4, "key_content": "Effective dates and receipts"}
+    },
+    "item21_structural_facts": {
+      "entity_type": "Single-member LLC (disregarded for tax)",
+      "auditor_location": "Melville, New York",
+      "opinion": "Unqualified",
+      "fiscal_year_change": "Oct 31 to Dec 31 effective Nov 1, 2023",
+      "going_concern": false,
+      "related_party_expense_pct_of_opex": 0.694,
+      "deferred_revenue_recognition_period": "Over franchise agreement term (10 years)",
+      "deferred_revenue_annual_recognition": 84997
+    },
+    "item1_structural_facts": {
+      "concept": "Membership-based fitness studios, 40-minute group workouts, 4 rotating stations, new groups every 10 minutes",
+      "studio_size_sqft": "2,500-3,500",
+      "parent_owns_marks": true,
+      "parent_owns_patents": true,
+      "affiliate_mandatory_vendor": true,
+      "market_seasonal_variation": "None expected"
+    },
+    "item6_fee_attributes": {
+      "royalty_has_minimum": true,
+      "royalty_minimum_annual": 18200,
+      "brand_fund_has_escalation": true,
+      "brand_fund_escalation_compounding": true,
+      "local_ad_has_escalation": true,
+      "local_ad_max": 2300,
+      "software_subject_to_change": true,
+      "mandatory_vendor_count": 5,
+      "mandatory_vendor_names": ["LeadTeam", "Red Valley Staffing", "designated architect", "designated project manager (Cresa/Build'M)", "Sabor Life (site specialist)"]
+    }
+  }
+}

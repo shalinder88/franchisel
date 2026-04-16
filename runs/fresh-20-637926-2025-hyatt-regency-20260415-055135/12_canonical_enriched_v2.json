@@ -1,0 +1,109 @@
+{
+  "enrichment_version": "v2",
+  "enrichment_date": "2026-04-15",
+  "item19_chart_detail": {
+    "fpr1_occupancy_adr_revpar": {
+      "franchised": {"count": 41, "avg_occ": "65.3%", "avg_adr": "$175.40", "avg_revpar": "$114.58", "med_occ": "64.3%", "med_adr": "$166.70", "med_revpar": "$103.95", "high_occ": "87.8%", "low_occ": "34.9%", "high_adr": "$265.93", "low_adr": "$112.73", "high_revpar": "$193.15", "low_revpar": "$39.40", "pct_exceeding_avg_occ": "48.8%", "pct_exceeding_avg_adr": "39%", "pct_exceeding_avg_revpar": "41.5%"},
+      "owned_managed": {"count": 62, "avg_occ": "67.1%", "avg_adr": "$229.69", "avg_revpar": "$154.18", "med_occ": "67.9%", "med_adr": "$223.85", "med_revpar": "$147.52"},
+      "all": {"count": 103, "avg_occ": "66.6%", "avg_adr": "$214.75", "avg_revpar": "$143.07", "med_occ": "66.7%", "med_adr": "$198.43", "med_revpar": "$131.48"}
+    },
+    "fpr2_smith_travel_indices": {
+      "franchised": {"occ_index": 102.4, "rate_index": 97.4, "revpar_index": 99.8, "med_occ_index": 99.0, "med_rate_index": 97.3, "med_revpar_index": 96.1},
+      "owned_managed": {"occ_index": 103.4, "rate_index": 100.5, "revpar_index": 104.1},
+      "all": {"occ_index": 103.0, "rate_index": 99.3, "revpar_index": 102.4}
+    },
+    "fpr3_world_of_hyatt": {
+      "franchised": {"rev_from_woh": "42.5%", "occ_pct_woh": "44.3%", "avg_woh_room_nights": 40381},
+      "owned_managed": {"rev_from_woh": "45.0%", "occ_pct_woh": "55.1%", "avg_woh_room_nights": 87640},
+      "all": {"rev_from_woh": "44.5%", "occ_pct_woh": "52.1%", "avg_woh_room_nights": 68828}
+    },
+    "channel_mix": {
+      "franchised": {"direct": "71.5%", "indirect": "28.5%"},
+      "owned_managed": {"direct": "77.5%", "indirect": "22.5%"},
+      "all": {"direct": "76.2%", "indirect": "23.8%"}
+    }
+  },
+  "item20_yearly_activity": {
+    "systemwide": [
+      {"year": 2022, "start": 100, "end": 101, "net": 1},
+      {"year": 2023, "start": 101, "end": 103, "net": 2},
+      {"year": 2024, "start": 103, "end": 100, "net": -3}
+    ],
+    "franchised": [
+      {"year": 2022, "start": 39, "opened": 1, "terminated": 1, "end": 39},
+      {"year": 2023, "start": 39, "opened": 1, "terminated": 0, "end": 40},
+      {"year": 2024, "start": 40, "opened": 2, "terminated": 1, "end": 41}
+    ],
+    "company_owned": [
+      {"year": 2022, "start": 61, "opened": 2, "closed": 0, "sold": 1, "end": 62},
+      {"year": 2023, "start": 62, "opened": 2, "closed": 0, "sold": 1, "end": 63},
+      {"year": 2024, "start": 63, "opened": 0, "closed": 2, "sold": 2, "end": 59}
+    ],
+    "projected": {"fa_signed_not_opened": 3, "projected_new_franchised": 1, "projected_new_company": 0}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 14,
+    "high_priority": ["A-1", "C", "H", "L", "M"],
+    "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota"]
+  },
+  "item21_structural_facts": {
+    "auditor": "Deloitte & Touche LLP",
+    "auditor_since": 2003,
+    "opinion": "Unqualified",
+    "going_concern": false,
+    "parent_guarantee": true,
+    "critical_audit_matters": 2
+  },
+  "item1_structural_facts": {
+    "franchisor_entity": "Hyatt Franchising, L.L.C.",
+    "state_of_organization": "Delaware",
+    "entity_type": "LLC",
+    "parent": "Hyatt Hotels Corporation",
+    "franchising_since": "December 1994",
+    "affiliates_offering_franchises": 8,
+    "key_service_affiliates": ["Hyatt Corporation", "Rosemont Project Management, L.L.C."]
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "Percentage of revenue (split rooms/F&B)",
+    "royalty_rooms_pct": 6.0,
+    "royalty_fb_pct": 3.0,
+    "ad_fund_type": "Included in Commercial Services Fee",
+    "ad_fund_pct": 3.0,
+    "ad_fund_per_room": 448,
+    "loyalty_program_pct": 4.5,
+    "digital_acquisition_pct": 1.35,
+    "transfer_fee": "Application Fee amount",
+    "late_fee": "$225 + 1.5%/month"
+  },
+  "item21_financial_structure": {
+    "total_revenue_2024": 6648,
+    "net_fees_2024": 1030,
+    "net_income_2024": 1296,
+    "total_assets_2024": 13324,
+    "total_debt_2024": 3782,
+    "total_equity_2024": 3826,
+    "goodwill_impairment_2024": 110,
+    "stock_repurchases_2024": 1190,
+    "real_estate_gains_2024": 1245,
+    "loyalty_deferred_revenue_2024": 1333,
+    "worldwide_hotels": 1442
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Franchised vs Owned/Managed RevPAR gap unexplained", "severity": "medium"},
+    {"id": "U2", "description": "AOP Term negotiated per deal (1-5 years)", "severity": "medium"},
+    {"id": "U3", "description": "$110M goodwill impairment in M&F segment", "severity": "medium"},
+    {"id": "U4", "description": "Company-owned outlet decline in 2024", "severity": "low"}
+  ],
+  "contradictions": [],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota"],
+    "override_families_by_state": {
+      "general_release": ["Maryland", "Minnesota", "North Dakota"],
+      "forum_selection": ["Maryland", "Minnesota", "North Dakota"],
+      "governing_law": ["Maryland", "North Dakota"],
+      "termination": ["Maryland", "Minnesota"],
+      "damages": ["Minnesota", "North Dakota"],
+      "limitations_period": ["Maryland", "Minnesota"]
+    }
+  }
+}

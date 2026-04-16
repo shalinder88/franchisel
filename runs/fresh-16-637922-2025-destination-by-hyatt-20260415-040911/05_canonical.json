@@ -1,0 +1,346 @@
+{
+  "meta": {
+    "extraction_date": "2026-04-15",
+    "pipeline_version": "automation_v1",
+    "fdd_id": "637922-2025",
+    "pdf_filename": "637922-2025-Destination-by-Hyatt.pdf",
+    "pdf_pages": 376,
+    "issuance_date": "2025-03-26"
+  },
+  "document_identity": {
+    "franchisor_legal_name": "Hyatt Franchising, L.L.C.",
+    "franchisor_state": "Delaware",
+    "franchisor_entity_type": "Limited Liability Company",
+    "parent_company": "Hyatt Hotels Corporation",
+    "brand_name": "Destination by Hyatt",
+    "brand_concept": "Lifestyle resort hotels operating under franchisee-owned tradename, affiliated with Destination by Hyatt brand",
+    "headquarters_address": "150 North Riverside Plaza, Chicago, Illinois 60606",
+    "headquarters_phone": "(312) 750-1234",
+    "website": "www.hyatt.com",
+    "issuance_date": "2025-03-26",
+    "filing_state": "Wisconsin (WI-DFI)",
+    "franchising_since": "2019-05",
+    "source_section": "Item 1, Cover Page",
+    "source_pages": [1, 9],
+    "confidence": "high"
+  },
+  "investment": {
+    "total_investment_low": 45790776,
+    "total_investment_high": 253820733,
+    "total_investment_note": "Excludes real estate costs. Based on 150-500 guest room new-construction resort hotel.",
+    "amount_to_franchisor_low": 279406,
+    "amount_to_franchisor_high": 1199942,
+    "source_section": "Item 7, Cover Page",
+    "source_pages": [1, 36, 37, 38, 39],
+    "confidence": "high"
+  },
+  "fees": {
+    "initial_fees": {
+      "application_fee": {
+        "amount": "$100,000 or $400/room (whichever greater)",
+        "refundable": "Partially — refundable less $7,500 if withdrawn before approval; non-refundable after approval",
+        "source_pages": [16, 17]
+      },
+      "pip_fee": {
+        "amount": "$10,000",
+        "note": "Conversions only",
+        "source_pages": [17]
+      },
+      "comfort_letter_fee": {
+        "amount": "$2,500 per letter",
+        "source_pages": [17]
+      },
+      "it_project_management": {
+        "amount_low": 80715,
+        "amount_high": 87410,
+        "source_pages": [17, 18]
+      },
+      "design_services_review": {
+        "amount_low": 75000,
+        "amount_high": 160000,
+        "source_pages": [19]
+      },
+      "pre_opening_training": {
+        "fees_low": 19450,
+        "fees_high": 46650,
+        "expenses_low": 4241,
+        "expenses_high": 9900,
+        "source_pages": [18]
+      },
+      "actual_range_2024": {
+        "low": 79600,
+        "high": 148450,
+        "note": "Total initial fees paid by Brand Hotel franchisees signing FA in 2024",
+        "source_pages": [20]
+      }
+    },
+    "ongoing_fees": {
+      "royalty": {
+        "rate": "7%",
+        "base": "Gross Rooms Revenue from Channel Bookings",
+        "note": "Excludes OTA bookings (Expedia, Booking.com, etc.); may be reduced for 1-3 years on new construction",
+        "source_pages": [21, 29, 30]
+      },
+      "world_of_hyatt": {
+        "rate": "4.5% of eligible revenue from loyalty members (2.25% for on-property enrollments)",
+        "source_pages": [21, 30]
+      },
+      "commercial_services_fee": {
+        "rate": "3.5% of Gross Rooms Revenue",
+        "classification": "mandatory",
+        "source_pages": [25]
+      },
+      "digital_acquisition_fee": {
+        "rate": "1.35% of GRR from Digital Channels",
+        "classification": "mandatory",
+        "source_pages": [26]
+      },
+      "gds_reservation_services": {
+        "amount": "~$8.50/reservation",
+        "classification": "mandatory",
+        "source_pages": [26, 27]
+      },
+      "mandatory_contracts": {
+        "amount": "$1,500-$25,000/month",
+        "classification": "mandatory",
+        "source_pages": [26]
+      },
+      "other_corporate_services": {
+        "amount": "$500-$15,000/month",
+        "classification": "mandatory",
+        "source_pages": [26]
+      }
+    },
+    "source_section": "Items 5, 6",
+    "source_pages": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
+    "confidence": "high"
+  },
+  "territory": {
+    "type": "Area of Protection (limited term)",
+    "exclusive": false,
+    "aop_size": "Few blocks (urban) to ~3-mile radius (less populated)",
+    "aop_term": "1-5 years after Hotel opening",
+    "post_aop_protection": "None — no territorial rights after AOP Term expires",
+    "exceptions_during_aop": "Acquisition of 4+ hotels allows conversion to Brand Hotels within AOP",
+    "other_hyatt_brands": "May operate in AOP at any time",
+    "no_options_or_rofr": true,
+    "source_section": "Item 12",
+    "source_pages": [64, 65, 66],
+    "confidence": "high"
+  },
+  "term_and_renewal": {
+    "initial_term_years": 20,
+    "term_start": "First day of month Hotel opens",
+    "renewal_term_years": 10,
+    "renewal_terms": "Then-current form of agreement (may be materially different, including fees)",
+    "renewal_conditions": [
+      "Substantially complied during term",
+      "Currently in full compliance",
+      "Meet then-current new franchisee standards",
+      "Passing QA scores for previous 3 years",
+      "Possession rights for 10+ more years",
+      "Renovate/remodel Hotel to current standards",
+      "Sign then-current FA and ancillary documents",
+      "Pay PIP fee",
+      "Sign general releases (if state law allows)"
+    ],
+    "materially_different_risk": true,
+    "source_section": "Item 17(a)(b)(c)",
+    "source_pages": [75, 76],
+    "confidence": "high"
+  },
+  "termination": {
+    "by_franchisee": "Cannot terminate FA except as law allows",
+    "by_franchisor_without_cause": "Cannot terminate FA without cause",
+    "curable_defaults": {
+      "24_hours": "Serious threat to public health/safety",
+      "10_days": "Insurance/payment/real estate document failures",
+      "30_days": "Development deadlines, provider payments, related agreement defaults, other defaults",
+      "60_days": "Guarantor Monetary Threshold failure"
+    },
+    "non_curable_defaults": [
+      "Bankruptcy events",
+      "Failure to discharge $100K+ judgments",
+      "Ceasing operations",
+      "Contesting IP ownership",
+      "Unauthorized transfer",
+      "Felony conviction",
+      "False books/reports",
+      "Unauthorized CI disclosure",
+      "Law violations",
+      "Repeated defaults"
+    ],
+    "source_section": "Item 17(d)(e)(f)(g)(h)",
+    "source_pages": [76, 77, 78],
+    "confidence": "high"
+  },
+  "transfer": {
+    "approval_required": true,
+    "transfer_fee": "Then-current Application Fee (refundable less $7,500 if disapproved)",
+    "conditions": "Transferee qualifies, all amounts paid, training completed, sign then-current or assumed agreements, renovate, sign releases, remain liable",
+    "right_of_first_offer": "Only for strategic markets (Exhibit C)",
+    "death_disability": "6 months to transfer to approved transferee",
+    "source_section": "Item 17(k)(l)(m)(n)(p)",
+    "source_pages": [78, 79, 80],
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": "No formal noncompete, but cannot be Competing Brand Owner",
+    "post_term": "None",
+    "competing_brand_definition": "Hotel concept with 5+ hotels worldwide competing with Brand Hotels",
+    "source_section": "Item 17(q)(r)",
+    "source_pages": [80],
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "method": "Mandatory arbitration",
+    "venue": "Within 10 miles of franchisor's principal business address (currently Chicago, IL)",
+    "governing_law": "Illinois (subject to federal law and state addenda overrides)",
+    "choice_of_forum": "Illinois (subject to arbitration obligation and state law)",
+    "source_section": "Item 17(u)(v)(w)",
+    "source_pages": [80, 81],
+    "confidence": "high"
+  },
+  "item19": {
+    "fpr_provided": false,
+    "statement": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets.",
+    "contact_for_unauthorized_representations": "Dan Hansen, Head of Americas Development",
+    "source_section": "Item 19",
+    "source_pages": [81],
+    "confidence": "high"
+  },
+  "item20": {
+    "system_size_end_2024": {
+      "total": 14,
+      "franchised": 4,
+      "company_owned": 10
+    },
+    "franchised_states": ["California", "Colorado", "Nevada", "Washington"],
+    "company_owned_states": ["Arizona", "California", "Colorado", "Hawaii", "Missouri", "North Carolina", "South Carolina", "Vermont"],
+    "growth_trajectory": "Flat total (14) but shifting from company-owned to franchised. Franchised grew from 1 to 4 (2022-2024); company-owned shrank from 15 to 10.",
+    "transfers": 0,
+    "terminations": 0,
+    "projected_openings": {
+      "fa_signed_not_opened": 3,
+      "projected_new_franchised": 1,
+      "projected_new_company_owned": 0,
+      "states": ["Florida", "Illinois", "Missouri"]
+    },
+    "confidentiality_clause": false,
+    "franchisee_organization": false,
+    "source_section": "Item 20",
+    "source_pages": [82, 83, 84, 85, 86],
+    "confidence": "high"
+  },
+  "item21": {
+    "entity": "Hyatt Hotels Corporation (parent guarantor)",
+    "auditor": "Deloitte & Touche LLP",
+    "auditor_location": "Chicago, Illinois",
+    "auditor_since": 2003,
+    "opinion_type": "Unqualified",
+    "going_concern": false,
+    "guarantee_of_performance": true,
+    "guarantor": "Hyatt Hotels Corporation",
+    "periods_covered": ["FY2024", "FY2023", "FY2022"],
+    "key_financials_2024": {
+      "total_revenue_millions": 6648,
+      "net_income_millions": 1296,
+      "total_assets_millions": 13324,
+      "total_liabilities_millions": 9498,
+      "total_equity_millions": 3826,
+      "cash_millions": 1011,
+      "long_term_debt_millions": 3326,
+      "total_debt_millions": 3782
+    },
+    "franchisor_entity_balance_sheet": {
+      "total_assets": 159290846,
+      "total_liabilities": 10762629,
+      "members_equity": 148528217,
+      "audited": false,
+      "note": "Hyatt Franchising, L.L.C. unaudited balance sheet (California requirement)"
+    },
+    "source_section": "Item 21, Exhibit A",
+    "source_pages": [86, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 352],
+    "confidence": "high"
+  },
+  "litigation": {
+    "cases": [
+      {
+        "caption": "Hyatt Franchising, L.L.C. v. Imperial Hotels, LLC et al.",
+        "docket": "No. 01-24-0008-8964 (AAA 2024)",
+        "type": "Unpaid Royalty Fees",
+        "initiated_by": "franchisor",
+        "source_pages": [16]
+      }
+    ],
+    "total_cases": 1,
+    "source_section": "Item 3",
+    "source_pages": [16],
+    "confidence": "high"
+  },
+  "bankruptcy": {
+    "disclosed": false,
+    "source_section": "Item 4",
+    "source_pages": [16],
+    "confidence": "high"
+  },
+  "training": {
+    "programs": [
+      {"name": "Owner Briefing", "classroom_hours": 8, "ojt_hours": 0, "location": "Chicago or virtual"},
+      {"name": "Orientation", "classroom_hours": 16, "ojt_hours": 0, "location": "Chicago/Hyatt hotel/virtual"},
+      {"name": "GMU", "classroom_hours_range": "53-58", "ojt_hours": 0, "location": "eLearning + virtual + Chicago"},
+      {"name": "Operations Training", "classroom_hours_range": "47-79", "ojt_hours_range": "40-76", "location": "Hotel/Chicago/virtual"},
+      {"name": "Sales/Events/Revenue", "classroom_hours": 136.5, "ojt_hours": 0, "location": "Virtual + eLearning"},
+      {"name": "Other Personnel", "classroom_hours_range": "17-34", "ojt_hours_range": "15-36", "location": "Hotel"},
+      {"name": "Other Personnel Required", "classroom_hours_range": "12-29", "ojt_hours_range": "1-6", "location": "eLearning/Hotel"},
+      {"name": "Pre-Opening Brand Training", "duration": "7+ nights on-site", "location": "Hotel"}
+    ],
+    "source_section": "Item 11",
+    "source_pages": [48, 49, 50, 51, 52, 53, 54, 55, 56],
+    "confidence": "high"
+  },
+  "supplier_restrictions": {
+    "percentage_from_designated": "~75% of both establishment and operating purchases",
+    "required_from_franchisor": [
+      "Opera PMS (mandatory, hosted)",
+      "CRS/GDS/ADS systems",
+      "IT Project Management Services",
+      "System Services (Mandatory)",
+      "Design and construction services (new hotels)"
+    ],
+    "affiliate_revenue_2024": 491320,
+    "loyalty_net_benefit_2024": 21841628,
+    "supplier_rebates_2024": 99,
+    "capital_reserve": "5% of total operating revenue monthly into separate account",
+    "source_section": "Item 8",
+    "source_pages": [40, 41, 42, 43, 44, 45],
+    "confidence": "high"
+  },
+  "management_requirements": {
+    "approved_management_company_required": true,
+    "franchisee_may_self_manage": "Only if approved",
+    "competing_brand_owner_prohibition": true,
+    "core_management_full_time": true,
+    "gm_approval_required": true,
+    "guaranty_required": true,
+    "guarantor_monetary_threshold": true,
+    "source_section": "Item 15",
+    "source_pages": [71, 72, 73],
+    "confidence": "high"
+  },
+  "special_risks": [
+    {
+      "risk": "Out-of-state dispute resolution",
+      "detail": "Arbitration and/or litigation required in Illinois",
+      "source_pages": [4]
+    }
+  ],
+  "state_addenda": {
+    "exists": true,
+    "exhibit": "M",
+    "states_with_addenda": ["California", "Hawaii", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Virginia"],
+    "multi_state_provision": "No waiver of state franchise law claims or disclaimer of reliance — applies to CA, HI, IL, IN, MD, MI, MN, NY, ND, RI, SD, VA, WA, WI",
+    "source_pages": [349, 350, 351, 352, 353, 354, 355, 356, 357, 358],
+    "confidence": "high"
+  }
+}

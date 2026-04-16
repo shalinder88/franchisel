@@ -1,0 +1,114 @@
+{
+  "enrichment_version": "v2",
+  "enrichment_date": "2026-04-15",
+  "item21_financial_structure": {
+    "parent_balance_sheet_2024": {
+      "cash_and_equivalents": 1011000000,
+      "short_term_investments": 372000000,
+      "receivables_net": 1121000000,
+      "total_current_assets": 2733000000,
+      "property_equipment_net": 1689000000,
+      "goodwill": 2541000000,
+      "intangibles_net": 2167000000,
+      "deferred_tax_assets": 466000000,
+      "other_assets": 2843000000,
+      "total_assets": 13324000000,
+      "current_maturities_lt_debt": 456000000,
+      "total_current_liabilities": 3274000000,
+      "long_term_debt": 3326000000,
+      "long_term_contract_liabilities": 843000000,
+      "total_liabilities": 9498000000,
+      "total_stockholders_equity": 3547000000,
+      "noncontrolling_interests": 279000000,
+      "total_equity": 3826000000,
+      "debt_to_equity": 0.99,
+      "current_ratio": 0.83
+    },
+    "parent_income_2024": {
+      "total_revenues": 6648000000,
+      "net_fees": 1030000000,
+      "franchise_and_other_fees": 458000000,
+      "owned_and_leased_revenue": 1174000000,
+      "distribution_revenue": 1023000000,
+      "reimbursed_costs_revenue": 3352000000,
+      "general_and_admin": 548000000,
+      "depreciation_amortization": 333000000,
+      "interest_expense": 180000000,
+      "gains_real_estate_sales": 1245000000,
+      "asset_impairments": 213000000,
+      "income_before_tax": 1563000000,
+      "provision_for_taxes": 267000000,
+      "net_income": 1296000000,
+      "eps_basic": 12.99,
+      "eps_diluted": 12.65
+    },
+    "parent_cash_flow_2024": {
+      "operating_cash_flow": 633000000,
+      "capital_expenditures": 170000000,
+      "acquisitions_net": 609000000,
+      "proceeds_real_estate_sales": 1421000000,
+      "stock_repurchases": 1190000000,
+      "dividends": 60000000,
+      "debt_proceeds": 1424000000,
+      "debt_repayments": 750000000
+    },
+    "franchisor_balance_sheet_unaudited": {
+      "cash": 112484,
+      "receivables_net": 8065116,
+      "total_current_assets": 8177600,
+      "franchise_agreement_assets": 144822971,
+      "franchise_agreement_intangibles_net": 5680345,
+      "deferred_tax_assets": 609930,
+      "total_assets": 159290846,
+      "accounts_payable_accrued": 95719,
+      "current_contract_liabilities": 329024,
+      "long_term_contract_liabilities": 10337886,
+      "total_liabilities": 10762629,
+      "members_equity": 148528217
+    }
+  },
+  "item21_statement_detail": {
+    "revenue_trend": {
+      "total_2024": 6648000000,
+      "total_2023": 6667000000,
+      "total_2022": 5891000000,
+      "net_fees_2024": 1030000000,
+      "net_fees_2023": 923000000,
+      "net_fees_2022": 777000000,
+      "franchise_fees_cagr_2yr": 0.242
+    },
+    "profitability": {
+      "net_income_2024": 1296000000,
+      "net_income_2023": 220000000,
+      "net_income_2022": 455000000,
+      "note": "2024 net income includes $1,245M in real estate sale gains. Normalized recurring earnings significantly lower."
+    },
+    "leverage": {
+      "total_debt_2024": 3782000000,
+      "total_equity_2024": 3826000000,
+      "debt_to_equity_2024": 0.99,
+      "net_debt_2024": 2399000000,
+      "interest_coverage": 8.68
+    }
+  },
+  "item6_fee_detail": {
+    "all_in_fee_estimate": {
+      "royalty_pct": 7.0,
+      "commercial_services_pct": 3.5,
+      "digital_acquisition_pct": 1.35,
+      "woh_assessment_pct": 4.5,
+      "total_pct_grr": "Up to ~16.35% of GRR (with overlap on WOH-booked rooms through channels)",
+      "note": "WOH assessment applies only to eligible WOH member revenue; not all GRR. Royalty applies only to Channel Bookings, not OTA. Effective combined rate depends on WOH penetration and channel mix."
+    },
+    "non_mandatory_monthly_range": {
+      "field_marketing": {"low": 996, "high": 2747},
+      "revenue_management": {"low": 1000, "high": 3500},
+      "central_sales_group": {"low": 3850, "high": 6650},
+      "central_sales_lead": {"low": 1000, "high": 5000},
+      "central_sales_transient": {"low": 1600, "high": 3200},
+      "central_sales_admin": {"low": 3000, "high": 3500},
+      "gpgs_addon": "per interaction $3.50-$16",
+      "digital_ancillary": {"base": 1250, "commission_pct": 5}
+    }
+  }
+}

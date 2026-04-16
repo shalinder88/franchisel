@@ -1,0 +1,145 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-15",
+  "brand": "Gong cha",
+  "fdd_id": "638048-2025",
+  "source_pages": [125, 126, 127, 128, 129, 130, 131, 132, 133, 134],
+  "accounting_policies": {
+    "basis_of_accounting": {
+      "method": "Accrual basis, US GAAP",
+      "source_pages": [125]
+    },
+    "revenue_recognition": {
+      "standard": "ASC 606 (implied by performance obligation analysis)",
+      "franchise_fees": "Initial fees allocated between training (stand-alone selling price, recognized ratably as services rendered) and IP access (residual, recognized straight-line over FA/MFA term)",
+      "royalties": "Sales-based royalties recognized as franchisee sales occur (variable consideration related to IP access)",
+      "brand_marketing_fund": "Recognized gross (franchisor acts as principal). Sales-based royalties related to IP access, recognized as franchisee sales occur. Costs accrued up to revenue when fees exceed expenses.",
+      "transfer_fees": "Recognized when transfer occurs",
+      "fees_from_other_services": "Recognized when services are rendered (single performance obligation)",
+      "source_pages": [127, 128, 129]
+    },
+    "accounts_receivable": {
+      "method": "Stated at amount expected to collect. Allowance for doubtful accounts based on collective assessment of similar risk characteristics. Historical losses adjusted for current and forecasted conditions.",
+      "allowance_2024": 0,
+      "allowance_2023": 0,
+      "source_pages": [125]
+    },
+    "intangible_assets": {
+      "composition": "Franchise relationships and master franchise agreements acquired in common control transaction",
+      "valuation": "Recorded at carrying values on date assigned (common control = no step-up)",
+      "useful_life_years": 10,
+      "amortization_method": "Straight-line over original estimated useful lives",
+      "impairment_method": "Comparison of carrying amount to estimated future undiscounted net cash flows. If less, impairment = fair value minus carrying value.",
+      "impairment_charges_2024": 0,
+      "impairment_charges_2023": 0,
+      "source_pages": [126]
+    }
+  },
+  "income_taxes": {
+    "entity_classification": "Disregarded entity for income tax purposes (single-member LLC)",
+    "provision": "None — all income/loss reported on member's (parent's) tax return",
+    "uncertain_tax_positions": "None at Dec 31, 2024 and 2023",
+    "standard": "ASC 740",
+    "source_pages": [129]
+  },
+  "advertising": {
+    "policy": "Expensed as incurred",
+    "advertising_costs_2024": 167060,
+    "advertising_costs_2023": 140027,
+    "notes": "These are franchisor's own advertising costs, separate from brand marketing fund disbursements",
+    "source_pages": [129]
+  },
+  "variable_interest_entities": {
+    "applicable": false,
+    "standard": "ASU 2018-17 (Consolidation Topic 810)",
+    "assessment": "Nonpublic company exemption applied for common control arrangements including leasing arrangements. Related parties (Note 5) meet conditions under ASU 2018-17 and are not consolidated.",
+    "source_pages": [129]
+  },
+  "subsequent_events": {
+    "evaluation_date": "2025-03-27",
+    "events": [
+      {
+        "date": "2025-03-26",
+        "description": "Asset purchase agreement with third party to acquire certain assets and assume certain liabilities of seller's franchise operations (Gong Cha brand). Total consideration approximately $3.6 million, payable in cash at closing, subject to post-closing adjustment.",
+        "entity": "GCCA (implied from Item 20 context)",
+        "accounting_status": "Purchase accounting in process"
+      }
+    ],
+    "source_pages": [134]
+  },
+  "related_party_transactions": {
+    "license_agreement": {
+      "counterparty": "Gong Cha Global Limited (Licensor/GCG)",
+      "date": "2023-05-01",
+      "term": "10 years, auto-renews 4x5 years",
+      "fee": "Percentage of total franchise fees and royalties earned (waived if net income below $250,000)",
+      "fee_2024": "Waived by Licensor",
+      "fee_2023": "No fee incurred",
+      "source_pages": [132]
+    },
+    "service_agreement": {
+      "counterparty": "Gong Cha Global Limited (Licensor/GCG)",
+      "date": "2023-05-01",
+      "term": "10 years, auto-renews until both parties agree to terminate",
+      "purpose": "Grow Gong Cha stores through marketing and operations-focused initiatives",
+      "fee_basis": "Percentage of sales",
+      "fee_2024": 1496590,
+      "fee_2023": 1245279,
+      "receivable_at_dec2023": "Overpayment of $190,449 included in Due from related parties",
+      "source_pages": [132]
+    },
+    "common_control_transaction": {
+      "date": "2023-05-01",
+      "description": "Assignment and assumption of master and unit franchise agreements from Licensor",
+      "treatment": "Common control transaction — transferred at carrying amounts prospectively",
+      "assets_transferred": {
+        "franchise_relationships": 691511,
+        "master_franchise_agreements": 46597
+      },
+      "liabilities_assumed": {
+        "franchisee_deposits": 365000,
+        "deferred_revenues": 690206
+      },
+      "net_liabilities_transferred": -317098,
+      "loan_receivable": "Recorded for net liabilities assumed; repaid by Licensor during 2023",
+      "source_pages": [132, 133]
+    },
+    "due_from_parent": {
+      "balance_2024": 731749,
+      "balance_2023": -655437,
+      "description": "Ordinary course advances. 2024 balance relates to service fee overpayment. No interest. Unsecured. No specific repayment terms. Management does not expect settlement within next year.",
+      "source_pages": [133]
+    },
+    "due_from_affiliates": {
+      "balance_2024": 52741,
+      "balance_2023": 45501,
+      "description": "Royalties and brand marketing fund fees from commonly-owned stores",
+      "source_pages": [133]
+    }
+  },
+  "concentration_of_credit_risk": {
+    "cash": "May exceed FDIC limits at times; placed with major financial institution",
+    "ar_concentration_2024": "2 franchisees ≈ 84% of accounts receivable",
+    "revenue_concentration_2024": "3 franchisees ≈ 45% of total revenues",
+    "ar_concentration_2023": "2 franchisees ≈ 95% of accounts receivable",
+    "revenue_concentration_2023": "2 franchisees ≈ 40% of total revenues",
+    "source_pages": [131]
+  },
+  "contingencies": {
+    "litigation": "May be involved in ordinary routine litigation. Management believes no material adverse effect. Subject to inherent uncertainties.",
+    "source_pages": [134]
+  },
+  "franchised_outlets_note": {
+    "unit_franchises_operating_2024": 12,
+    "unit_franchises_operating_2023": 0,
+    "affiliate_owned_2024": 2,
+    "affiliate_owned_2023": 2,
+    "master_franchise_outlets_assigned_2023": 5,
+    "master_franchise_outlets_operating_2024": 3,
+    "master_franchise_outlets_operating_2023": 5,
+    "franchised_outlets_under_master_2024": 221,
+    "franchised_outlets_under_master_2023": 222,
+    "notes": "Difference between Note 3 (12 unit franchises) and Item 20 (4 direct franchised + 198 subfranchised) explained by the unit franchise count including subfranchises acquired from master franchisees",
+    "source_pages": [130]
+  }
+}

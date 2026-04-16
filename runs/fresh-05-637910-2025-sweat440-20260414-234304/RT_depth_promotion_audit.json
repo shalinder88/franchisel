@@ -1,0 +1,87 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "fdd_id": "637910-2025",
+  "brand": "Sweat440",
+  "promoted_facts": [
+    {
+      "id": "P01",
+      "fact": "Call center is mandatory at $1,800/month via Red Valley Staffing",
+      "source": "Reader report Pass C / Item 8, page 19",
+      "destination": "fees.call_center already present in canonical",
+      "action": "already_present"
+    },
+    {
+      "id": "P02",
+      "fact": "Reciprocity policy requires accepting members from other studios at reduced rates with no reimbursement",
+      "source": "Reader report Pass D / Item 16, page 37",
+      "destination": "contract_terms.reciprocity_policy",
+      "action": "promote",
+      "promoted_to": "09_final_canonical.json"
+    },
+    {
+      "id": "P03",
+      "fact": "Quality assurance audit score below 90 = default; 2 scores below 90 in 12 months = termination right",
+      "source": "Reader report Pass C / Item 11, pages 26",
+      "destination": "contract_terms.quality_audit_thresholds",
+      "action": "promote",
+      "promoted_to": "09_final_canonical.json"
+    },
+    {
+      "id": "P04",
+      "fact": "Development time 5-12 months typical; 300-day deadline in FA; must meet pre-opening sales requirements",
+      "source": "Reader report Pass C / Item 11, page 25",
+      "destination": "investment.development_timeline",
+      "action": "promote",
+      "promoted_to": "09_final_canonical.json"
+    },
+    {
+      "id": "P05",
+      "fact": "Franchisee may not conduct business or advertise on Internet without written authorization",
+      "source": "Reader report Pass D / Item 12, page 32",
+      "destination": "territory.franchisee_internet_restriction — already in 05_canonical but not in 09_final",
+      "action": "promote",
+      "promoted_to": "09_final_canonical.json"
+    },
+    {
+      "id": "P06",
+      "fact": "Royalty begins at earlier of studio opening or opening deadline (pay even if not open on time)",
+      "source": "Reader report Pass B / Item 6, page 10",
+      "destination": "fees.royalty_trigger",
+      "action": "promote",
+      "promoted_to": "09_final_canonical.json"
+    },
+    {
+      "id": "P07",
+      "fact": "Note 4 in financials shows 21 franchised outlets vs Item 20 showing 17 — likely because officer-owned studios counted differently",
+      "source": "Reader report financial notes / pages 64 vs 48-49",
+      "destination": "contradictions",
+      "action": "promote",
+      "promoted_to": "09_final_canonical.json"
+    },
+    {
+      "id": "P08",
+      "fact": "Franchise fees receivable is net of $945K fees owed offset by $756K commissions to same party — broker arrangement",
+      "source": "Reader report Pass F / financial notes page 63",
+      "destination": "unresolveds",
+      "action": "already_in_unresolveds"
+    },
+    {
+      "id": "P09",
+      "fact": "FIT Radio music streaming at $147/month is mandatory",
+      "source": "Reader report Pass C / Item 8 + 11, page 21",
+      "destination": "fees.music_streaming",
+      "action": "promote",
+      "promoted_to": "09_final_canonical.json"
+    },
+    {
+      "id": "P10",
+      "fact": "Limitation of actions: claims must be commenced within 1 year of discovery",
+      "source": "Franchise Agreement, contract burden depth pass",
+      "destination": "contract_terms.limitation_of_actions",
+      "action": "promote",
+      "promoted_to": "09_final_canonical.json"
+    }
+  ],
+  "facts_already_present": 2,
+  "facts_promoted": 8
+}

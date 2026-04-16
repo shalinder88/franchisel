@@ -1,0 +1,99 @@
+{
+  "depth_pass": "1_financial_notes",
+  "fdd_id": "638052-2025",
+  "entity": "Hilton Franchise Holding LLC",
+  "auditor": "Cherry Bekaert LLP",
+  "auditor_location": "Tysons Corner, Virginia",
+  "auditor_report_date": "March 18, 2025",
+  "opinion": "Unqualified (clean)",
+  "source_pages_pdf": [127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138],
+  "accounting_policies": {
+    "revenue_recognition": {
+      "policy": "Revenue primarily from franchise contracts with third-party hotel owners. Primary performance obligation is IP license (brand IP, reservation systems, PMS). Considered a series of distinct services transferred over time. Variable consideration through franchise royalty fees. Fixed consideration allocated to related performance obligations based on estimated standalone selling prices. Revenue recognized in period earned using time as measure of progress.",
+      "franchise_royalty_fees": "Percentage of hotel's monthly gross room revenue, sometimes gross F&B and other. Billed and collected monthly. Consideration paid to incentivize hotel owners amortized over contract life as reduction to royalty fees.",
+      "franchise_sales_coo_fees": "Fixed fees collected upfront for new hotels, COO, or contract extensions. Recognized over term of franchise contract. Not considered to include significant financing component.",
+      "franchise_termination_fees": "Recognized in period payment received, as no further service to be provided and collection uncertainty.",
+      "source_page": 134
+    },
+    "franchise_contracts_amortization": {
+      "method": "Straight-line over estimated useful lives",
+      "useful_lives": "Contract term, generally 10 to 20 years (including extension periods at franchisor's sole option)",
+      "amortization_start": "Opening date of hotel or contract execution date, whichever is later",
+      "contract_acquisition_costs": "Capitalized as franchise contracts. Amortization recognized as reduction to franchise royalty fees.",
+      "costs_to_obtain": "Capitalized. Amortization recognized as amortization expense.",
+      "franchise_contract_intangibles_acquired": "Graduate brand acquisition ($85M, May 2024). 15-year estimated useful life.",
+      "impairment_policy": "Evaluate carrying value for impairment indicators. If indicators exist, compare expected undiscounted future cash flows to net carrying value. If not recoverable and exceeds fair value, recognize impairment loss.",
+      "gross_carrying_value_2024": "$468,626K",
+      "accumulated_amortization_2024": "$75,878K",
+      "net_carrying_value_2024": "$392,748K",
+      "amortization_2024": "$16,053K (reduction of royalty fees) + $3,751K (amortization expense)",
+      "source_pages": [134, 135, 136, 137]
+    },
+    "accounts_receivable": {
+      "description": "Primarily amounts due from hotel owners with franchise contracts",
+      "allowance_method": "Expected credit losses based on historical collection activity, nature of instrument, current/forecasted conditions",
+      "allowance_ar_2024": "$10,411K (up from $7,339K)",
+      "allowance_financing_2024": "$3,787K total ($3,375K current + $412K non-current)",
+      "source_page": 135
+    },
+    "franchise_deposits": {
+      "description": "Application/initiation fees collected at time of hotel owner application. Recorded as current liability until non-refundable, then reclassified to deferred revenues.",
+      "source_page": 135
+    },
+    "deferred_revenues": {
+      "description": "Non-refundable advance consideration from hotel owners. Recognized over term of related contract.",
+      "current_2024": "$41,598K",
+      "non_current_2024": "$517,282K",
+      "total_2024": "$558,880K",
+      "source_page": 131
+    },
+    "fair_value": {
+      "policy": "Three-level valuation hierarchy. Fair values of financial assets/liabilities estimated equal to carrying values as of Dec 31, 2024 and 2023.",
+      "source_page": [135, 136, 137]
+    },
+    "acquisitions": {
+      "policy": "Business combination vs asset acquisition determination based on inputs/processes/outputs assessment and concentration of fair value. Asset acquisitions: allocate cost including direct/incremental transaction costs to individual assets/liabilities based on relative fair values. No goodwill recognized in asset acquisitions.",
+      "graduate_acquisition": {
+        "date": "May 2024",
+        "type": "Asset acquisition",
+        "amount": "~$85 million",
+        "assets": "Franchise contract intangible assets",
+        "useful_life": "15 years",
+        "amortization_method": "Straight-line to depreciation and amortization",
+        "impact_on_2024": "Not material"
+      },
+      "source_page": [136]
+    }
+  },
+  "income_tax": {
+    "us_federal_state": "No provision — treated as disregarded entity for US income tax purposes. All taxable income included in Hilton's consolidated return.",
+    "foreign_tax": "Certain US territories require taxation of franchise licensing payments to foreign-domiciled entities. Franchisee responsible for withholding and remittance.",
+    "foreign_tax_expense_2024": "$412K",
+    "foreign_tax_expense_2023": "$128K",
+    "foreign_tax_expense_2022": "$70K",
+    "source_page": 137
+  },
+  "commitments_contingencies": {
+    "debt_guarantee": "Certain Hilton debt obligations (maturing 2025-2033) unconditionally and irrevocably guaranteed by certain Hilton domestic subsidiaries including this entity. All assets and franchise contracts pledged as collateral.",
+    "guarantee_liability": "Not recorded as of Dec 31, 2024 and 2023 due to parent-subsidiary relationship.",
+    "litigation": "Involved in various claims and lawsuits. Expect ultimate resolution will not have material adverse effect on financial position, results, or cash flows.",
+    "source_page": 137
+  },
+  "related_party_transactions": {
+    "intercompany_balances": "Result of Hilton's centralized cash management system, not controlled by entity.",
+    "franchise_deposits_lockbox": "Collected by Hilton affiliates, deposited into lockbox account to which entity has no access.",
+    "settlement_mechanism": "Periodic settlements with simultaneous distributions of retained earnings. 2024: $1.5B settled and distributed. 2023: $1.4B. 2022: $1.55B.",
+    "graduate_acquisition_note": "Payment made by Hilton affiliate; entity recorded short-term intercompany payable ($85.3M), settled February 2024 with interest.",
+    "operator_agreement": "Agreement with Hilton affiliate entitling affiliate to reasonable fee. No compensation provided 2022-2024.",
+    "source_page": [137, 138]
+  },
+  "subsequent_events": {
+    "evaluation_through": "March 18, 2025",
+    "note": "Note states 'March 18, 2024' — confirmed typo; auditor report signed March 18, 2025.",
+    "material_events": "None disclosed",
+    "source_page": 138
+  },
+  "lease_accounting": "Not applicable — entity does not appear to have material leases.",
+  "variable_interest_entities": "Not applicable — none disclosed.",
+  "advertising_fund_accounting": "Monthly Program Fees are not accounted for as a separate fund. Not a trust. Franchisor is not a fiduciary. No separate audit disclosed."
+}

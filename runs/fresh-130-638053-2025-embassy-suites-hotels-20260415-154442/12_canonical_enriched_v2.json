@@ -1,0 +1,111 @@
+{
+  "_enrichment_version": "v2",
+  "_base": "11_canonical_enriched.json",
+  "item21_financial_structure_detail": {
+    "entity_nature": "Franchise royalty pass-through to Hilton parent",
+    "operating_margin_2024": "99.2%",
+    "expense_ratio_2024": "0.76%",
+    "distribution_policy": "Annual distribution to Hilton affiliates approximately equal to net income",
+    "distribution_vs_net_income": {
+      "2024": {"net_income": 1487571, "distribution": 1500000, "excess_distribution": 12429},
+      "2023": {"net_income": 1372281, "distribution": 1400000, "excess_distribution": 27719},
+      "2022": {"net_income": 1233442, "distribution": 1550000, "excess_distribution": 316558}
+    },
+    "intercompany_structure": {
+      "receivable_from_affiliates_current": 703943,
+      "receivable_from_affiliates_equity_deduction": -261959,
+      "net_intercompany_exposure": 441984,
+      "note": "Entity relies on Hilton parent for liquidity; minimal independent cash position"
+    },
+    "deferred_revenue_analysis": {
+      "current_2024": 41598,
+      "non_current_2024": 517282,
+      "total_2024": 558880,
+      "total_2023": 524229,
+      "growth_rate": "6.6%",
+      "nature": "Upfront franchise application and initial fees recognized over franchise terms"
+    },
+    "credit_quality": {
+      "ar_allowance_2024": 10411,
+      "ar_allowance_2023": 7339,
+      "allowance_growth": "41.9%",
+      "provision_2024": 6248,
+      "provision_2023": 4430,
+      "trend": "Deteriorating — credit loss provisions and allowances increasing"
+    }
+  },
+  "item21_statement_detail": {
+    "revenue_trend": {
+      "2022": 1229465,
+      "2023": 1376897,
+      "2024": 1502069,
+      "cagr_2yr": "10.5%"
+    },
+    "royalty_trend": {
+      "2022": 1184827,
+      "2023": 1331169,
+      "2024": 1434453,
+      "cagr_2yr": "10.0%"
+    },
+    "termination_fee_trend": {
+      "2022": 4757,
+      "2023": 2434,
+      "2024": 18276,
+      "note": "2024 spike driven by 3 terminations (first in 3+ years)"
+    },
+    "cash_position": {
+      "2022_end": 99,
+      "2023_end": 5348,
+      "2024_end": 317,
+      "note": "Entity maintains minimal cash; all liquidity via Hilton intercompany"
+    },
+    "franchise_contract_intangible": {
+      "2023": 238533,
+      "2024": 392748,
+      "acquisition_2024": 85304,
+      "amortization_2024": 3751,
+      "note": "Significant intangible asset acquisition in 2024; financed via short-term intercompany note"
+    }
+  },
+  "item6_fee_detail": {
+    "total_ongoing_grr_percentage": {
+      "royalty_steady_state": 5.5,
+      "program_fee": 4.0,
+      "subtotal_grr": 9.5,
+      "note": "Plus 4.3% Hilton Honors on eligible guest folio (broader base than GRR)"
+    },
+    "estimated_annual_technology_cost": {
+      "low": "$36,000",
+      "high": "$72,000",
+      "components": {
+        "onq_connectivity": "$4,800-$7,200/yr",
+        "hw_sw_maintenance": "$20,820-$49,536/yr",
+        "connected_room": "$8,652-$12,744/yr",
+        "delphi": "$858-$3,432/yr (1-4 users)",
+        "onq_email": "$285-$600/yr (3 accounts)",
+        "guest_internet_circuit": "$23,400-$58,800/yr",
+        "guest_internet_service": "$8,928-$16,896/yr"
+      }
+    },
+    "distribution_channel_fees": {
+      "third_party_reservations": "up to $5.93/stay",
+      "fastpay": "up to $1.40/transaction + up to 7% commission",
+      "tpcp": "$0.18/transaction + up to 10% commission",
+      "travel_clubs": "$0.30/available room + 10% commission",
+      "hilton_advance": "1.35% of eligible Digital Direct Revenue (max $30/stay)",
+      "consortia": "up to $3.00/consumed night + up to 10% commission",
+      "us_government": "up to $2.30/consumed night or up to 2.25% consumed room revenue",
+      "resmax": "5.4%-5.9% of consumed revenue (3-night max)"
+    },
+    "qa_penalty_schedule": {
+      "brand_non_compliance_per_room": "$65-$145",
+      "brand_non_compliance_cap_6mo": "$50,000",
+      "re_evaluation": "up to $4,500",
+      "special_audit": "$5,500",
+      "pip_renovation_failure": "$10,000 every 6 months",
+      "stay_score_failure": "up to $300/room or 0.5% GRR annually",
+      "service_quality_improvement": "$20,000-$50,000 per 6-month period",
+      "plans_designs_late": "$5,000 every 90 days"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "depth_pass": "promotion_audit",
+  "extraction_date": "2026-04-15",
+  "promotable_facts": [
+    {
+      "id": "P1",
+      "fact": "Franchisor has never owned or operated any hotels — operations conducted entirely by affiliates",
+      "reader_report_section": "A.1, B.Item1",
+      "pdf_pages": [9],
+      "status": "promoted",
+      "canonical_field": "item1.has_operated_franchised_business"
+    },
+    {
+      "id": "P2",
+      "fact": "Franchise Agreement FA term may be shorter than 20 years for conversion hotels — determined by franchisor based on age, condition, location",
+      "reader_report_section": "E.Term and Renewal",
+      "pdf_pages": [11],
+      "status": "promoted",
+      "canonical_field": "item17_contract.conversion_term_note"
+    },
+    {
+      "id": "P3",
+      "fact": "System Services Fee pooled across all ESA Network brands including Select and Premier — SSF not required from franchisor-owned hotels",
+      "reader_report_section": "C.Advertising/System Services",
+      "pdf_pages": [42, 43],
+      "status": "promoted",
+      "canonical_field": "item11_assistance.ssf_pools_across_brands"
+    },
+    {
+      "id": "P4",
+      "fact": "Digital/email marketing prohibited for franchisees — all digital marketing conducted by franchisor",
+      "reader_report_section": "C.Advertising/System Services",
+      "pdf_pages": [42],
+      "status": "promoted",
+      "canonical_field": "item11_assistance.franchisee_digital_marketing_prohibited"
+    },
+    {
+      "id": "P5",
+      "fact": "Other revenues in 2024 include $2.1M in contract termination fees — major contributor to profitability swing",
+      "reader_report_section": "A.8",
+      "pdf_pages": [214],
+      "status": "already in canonical",
+      "canonical_field": "item21_financials.fy2024.contract_termination_fees_k"
+    },
+    {
+      "id": "P6",
+      "fact": "Franchised hotels rely more on Property Direct bookings (33.2%) vs owned (19.3%) — less system-driven demand",
+      "reader_report_section": "F.Reservation Channel Mix",
+      "pdf_pages": [62],
+      "status": "promoted",
+      "canonical_field": "item19_fpr.channel_insight"
+    },
+    {
+      "id": "P7",
+      "fact": "As of March 2025, 15 company-owned hotels under contract for sale to franchisees, 2 for de-branding — ongoing system contraction",
+      "reader_report_section": "G.Item 20",
+      "pdf_pages": [72, 73],
+      "status": "promoted",
+      "canonical_field": "item20_outlets.pipeline_sales"
+    },
+    {
+      "id": "P8",
+      "fact": "Franchisee must notify franchisor of alleged breach within 1 year or claim is waived — short limitations clause in FA",
+      "reader_report_section": "Contract depth pass",
+      "pdf_pages": [120],
+      "status": "promoted",
+      "canonical_field": "item17_contract.claim_notification_period"
+    },
+    {
+      "id": "P9",
+      "fact": "Franchisor may suspend reservation service, website listing, and loyalty program as interim remedy",
+      "reader_report_section": "Contract depth pass",
+      "pdf_pages": [79],
+      "status": "promoted",
+      "canonical_field": "item17_contract.suspension_as_remedy"
+    },
+    {
+      "id": "P10",
+      "fact": "Class action waiver and punitive damages waiver in FA",
+      "reader_report_section": "Contract depth pass",
+      "pdf_pages": [79],
+      "status": "promoted",
+      "canonical_field": "item17_contract.waivers"
+    }
+  ],
+  "facts_promoted": 8,
+  "facts_already_in_canonical": 2
+}

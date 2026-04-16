@@ -1,0 +1,93 @@
+{
+  "enrichment_version": "v2",
+  "base": "11_canonical_enriched.json",
+  "item21_financial_structure": {
+    "entity_type": "LLC (pass-through)",
+    "consolidated": true,
+    "subsidiary_count": 6,
+    "subsidiaries_disposed_2024": 2,
+    "domestic_subsidiaries": ["RNSDS, LLC", "RN Downtown, LLC", "Lumigarnet of Miami, LLC"],
+    "international_subsidiaries": ["Regal Nails, Canada, ULC"],
+    "disposed_subsidiaries": ["RGEU Limited (UK)", "RNS & GV MEX (Mexico)"],
+    "revenue_concentration_canada": 0.125,
+    "pension_plan": "401(k) with 4% employer match",
+    "employer_contributions_2024": 115763,
+    "guarantor_exposure_2024": 44718,
+    "uninsured_cash_us_2024": 5169971,
+    "uninsured_cash_canada_2024": 1226314
+  },
+  "item21_statement_detail": {
+    "revenue_sources": {
+      "franchise_sales": {"2024": 160362, "2023": 539118, "pct_2024": 0.006},
+      "monthly_franchise_fees": {"2024": 7034941, "2023": 6813771, "pct_2024": 0.284},
+      "franchisee_subleases": {"2024": 17476767, "2023": 18175674, "pct_2024": 0.705},
+      "transfer_renewal_fees": {"2024": 98030, "2023": 48714, "pct_2024": 0.004},
+      "other": {"2024": 35553, "2023": 11413, "pct_2024": 0.001}
+    },
+    "operating_expenses": {
+      "payroll": {"2024": 2877914, "2023": 2737847},
+      "insurance": {"2024": 265204, "2023": 324790},
+      "legal_professional": {"2024": 235149, "2023": 205440},
+      "advertising": {"2024": 215010, "2023": 48747},
+      "travel_entertainment": {"2024": 136095, "2023": 189148},
+      "employee_benefits": {"2024": 124319, "2023": 97012},
+      "franchisee_training": {"2024": 110768, "2023": 56692},
+      "commissions": {"2024": 82241, "2023": 106128},
+      "office_expense": {"2024": 68177, "2023": 75711},
+      "depreciation_amortization": {"2024": 66666, "2023": 74091},
+      "lease_cost_office": {"2024": 60000, "2023": 102000}
+    },
+    "lease_portfolio": {
+      "operating_lease_cost_2024": 17558731,
+      "sublease_income_2024": 17476767,
+      "net_sublease_spread_2024": -81964,
+      "weighted_avg_remaining_term_years": 2.13,
+      "weighted_avg_discount_rate": 0.0244,
+      "total_undiscounted_payments": 46231727,
+      "total_undiscounted_receipts": 45716389,
+      "maturity_2025": 17308494,
+      "maturity_2026": 12557752,
+      "maturity_2027": 10343754,
+      "maturity_2028": 5391615,
+      "maturity_2029": 499390,
+      "maturity_thereafter": 130721
+    },
+    "related_party_notes": {
+      "to_owner": {
+        "note_1": {"principal": 3000000, "rate": 0.0207, "maturity": "2031-12-27", "annual_principal": 250000},
+        "note_2": {"principal": 625000, "rate": 0.0302, "maturity": "2027-12-29"},
+        "balance_2024": 2565000,
+        "interest_income_2024": 60275
+      },
+      "to_president": {
+        "note_count": 11,
+        "rates": "1.02% to 4.73%",
+        "maturities": "2025-2027",
+        "balance_2024": 3900000,
+        "interest_income_2024": 91470
+      },
+      "total_insider_notes_2024": 6465000
+    },
+    "alfalfa_payments_2024": {
+      "cost_of_revenues": 94662,
+      "operating_expenses": 164523,
+      "total": 259185
+    },
+    "credit_loss_expense_2024": 432977,
+    "allowance_doubtful_accounts_2024": 361213,
+    "past_due_receivables_2024": 807681
+  },
+  "item6_fee_detail": {
+    "monthly_fee": {"low": 500, "high": 15000, "frequency": "monthly", "bundled": true, "includes_rent": true, "includes_rental_tax": true},
+    "percentage_rent": {"formula": "6.5% of Gross Sales above natural breakpoint", "applies_to": "Walmart party-tenant locations", "frequency": "annual"},
+    "insurance_cgl_pl": {"low": 1000, "high": 8000, "frequency": "annual", "mandatory_carrier": true},
+    "successor_fee": {"amount": 500, "trigger": "renewal"},
+    "transfer_fee": {"standard": 1000, "to_own_entity": 500, "death_disability": 0},
+    "liquidated_damages": {"formula": "All remaining Monthly Fees + Utility/CAM through end of term", "discounting": "Present value using prime rate"},
+    "holdover_with_consent": {"formula": "150% of Monthly Fee"},
+    "holdover_without_consent": {"formula": "300% of Monthly Fee + legal costs"},
+    "white_box_fee": {"amount": 25000, "trigger": "failure to return premises in white box condition"},
+    "late_fee": {"amount": 100, "interest": "12% per year compounded monthly"},
+    "nsf_fee": {"amount": 100, "interest": "12% per year compounded monthly"}
+  }
+}

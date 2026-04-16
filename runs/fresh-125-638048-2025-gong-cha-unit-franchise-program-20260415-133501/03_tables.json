@@ -1,0 +1,269 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "Gong cha",
+  "fdd_id": "638048-2025",
+  "tables": [
+    {
+      "table_id": "T01_item5_initial_fees",
+      "item": 5,
+      "title": "Initial Fees Summary",
+      "source_pages": [18, 19],
+      "columns": ["Fee Type", "Amount", "Refundable"],
+      "rows": [
+        {"Fee Type": "Initial Franchise Fee", "Amount": "$34,500", "Refundable": "No"},
+        {"Fee Type": "Lease Review Fee (additional reviews)", "Amount": "$2,000 per review", "Refundable": "No"},
+        {"Fee Type": "Initial Supplies and Inventory", "Amount": "$25,750 to $61,800", "Refundable": "No"},
+        {"Fee Type": "Grand Opening Advertising Program", "Amount": "Minimum $4,000", "Refundable": "No"},
+        {"Fee Type": "Development Fee (ADA)", "Amount": "50% of current IFF x number of stores", "Refundable": "No"}
+      ],
+      "table_notes": [
+        "IFF fully earned upon signing FA and not credited against any other obligation, except under ADA conditions.",
+        "Initial supplies include food/beverage ingredients, Proprietary Products, paper supplies, small wares, branded items, equipment.",
+        "Development Fee credits reduce IFF for each store developed under ADA to 50% of then-current IFF."
+      ]
+    },
+    {
+      "table_id": "T02_item6_other_fees",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [20, 21, 22, 23, 24, 25, 26],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Type of Fee": "Royalty Fee", "Amount": "6% of weekly Net Sales", "Due Date": "3rd Business Day of each Week", "Remarks": "See Note 1"},
+        {"Type of Fee": "Brand Marketing Fee", "Amount": "1% of weekly Net Sales (can increase to 2%)", "Due Date": "3rd Business Day of each Week", "Remarks": "Deposited to Brand Marketing Fund. See Notes 1 and 2"},
+        {"Type of Fee": "Regional Marketing Fee", "Amount": "Up to 2% of Net Sales (can exceed by coop vote)", "Due Date": "As directed", "Remarks": "If Cooperative Ad Fund established. See Note 2"},
+        {"Type of Fee": "Additional Training Fees", "Amount": "See Note 3", "Due Date": "Upon demand", "Remarks": "Currently $2,000/person"},
+        {"Type of Fee": "Additional Opening or On-site Training", "Amount": "$1,000 to $3,000 per person (per diem + expenses)", "Due Date": "Upon demand", "Remarks": "Only if requested and agreed"},
+        {"Type of Fee": "Supplies and Inventory Fees", "Amount": "Actual costs", "Due Date": "Upon demand", "Remarks": "From franchisor/GCPS. See Note 5 re tariffs"},
+        {"Type of Fee": "Technology System Fees", "Amount": "$313/year beverage maker SaaS + $295/month POS SaaS", "Due Date": "Upon demand", "Remarks": "Can increase 25% over FA term"},
+        {"Type of Fee": "Prohibited Product or Service Fee", "Amount": "$250/day", "Due Date": "Upon demand", "Remarks": "Can increase 25% over FA term"},
+        {"Type of Fee": "Relocation Fee", "Amount": "50% of IFF + costs", "Due Date": "Upon demand", "Remarks": "If you relocate"},
+        {"Type of Fee": "Renewal Fee", "Amount": "50% of then-current standard IFF", "Due Date": "Before FA expires", "Remarks": "If you renew"},
+        {"Type of Fee": "Transfer Fee", "Amount": "50% of then-current standard IFF; ADA adds $5,000", "Due Date": "Before transfer", "Remarks": "If you transfer"},
+        {"Type of Fee": "Securities Offering Review Fee", "Amount": "Actual costs (legal/accounting)", "Due Date": "Upon demand", "Remarks": "If you seek to offer securities"},
+        {"Type of Fee": "Bank Charges and Fees", "Amount": "Assessed charges", "Due Date": "Upon demand", "Remarks": "Failed EFT payments. See Note 6"},
+        {"Type of Fee": "Late Payment Administrative Fee", "Amount": "5% of overdue amount", "Due Date": "As incurred", "Remarks": "Subject to state law"},
+        {"Type of Fee": "Interest", "Amount": "Lesser of 1.5%/month or highest rate allowed by law", "Due Date": "As incurred", "Remarks": "Subject to state law"},
+        {"Type of Fee": "Audit", "Amount": "Cost of audit (travel, lodging, wages, accounting, legal)", "Due Date": "Upon demand", "Remarks": "Only if understatement ≥3% of Net Sales"},
+        {"Type of Fee": "Designated Accountant Fee", "Amount": "Cost of designated accountant", "Due Date": "Monthly", "Remarks": "If franchisor requires coordinated services"},
+        {"Type of Fee": "Quarterly Health and Safety Audits", "Amount": "$200-$400 per audit; $500 1st revisit fail; $11,000 2nd revisit fail", "Due Date": "As incurred", "Remarks": "Up to 4 regular audits/year"},
+        {"Type of Fee": "Cost to Correct Post-Inspection Deficiencies", "Amount": "Franchisor's costs", "Due Date": "As incurred", "Remarks": "If you fail to correct in reasonable time"},
+        {"Type of Fee": "Insurance", "Amount": "Franchisor's cost + admin fee", "Due Date": "Upon demand", "Remarks": "If you fail to maintain required coverage"},
+        {"Type of Fee": "Customer Satisfaction Costs", "Amount": "Franchisor's costs", "Due Date": "Upon demand", "Remarks": "Resolve customer complaints on your behalf"},
+        {"Type of Fee": "Indemnification", "Amount": "Actual costs", "Due Date": "As incurred", "Remarks": "Claims arising from Store"},
+        {"Type of Fee": "Cost of Enforcement or Defense", "Amount": "Attorneys' fees + accounting", "Due Date": "As incurred", "Remarks": "If franchisor wins"},
+        {"Type of Fee": "Taxes", "Amount": "Amount of tax", "Due Date": "Upon demand", "Remarks": "Tax on fees owed, excluding income taxes"}
+      ],
+      "table_notes": [
+        "Note 1: Net Sales defined as all revenue from sale of all products minus customer refunds and collected sales taxes. Week = Monday through Sunday.",
+        "Note 2: Total Advertising Obligation up to 4% of Net Sales in aggregate. Can exceed if coop members vote to increase. Brand Marketing Fee 1% currently, can increase to 2% on 90 days notice.",
+        "Note 3: Initial training for up to 3 attendees at no additional fee. Additional training: $2,000/person. Can increase 25% over FA term.",
+        "Note 4: Additional opening/on-site training per diem $1,000-$3,000/person. Can increase 25% over FA term.",
+        "Note 5: Supplies sourced globally including China; tariffs may apply and will be passed through to franchisee.",
+        "Note 6: EFT required. Franchisor can debit estimated fees if Net Sales not timely reported."
+      ]
+    },
+    {
+      "table_id": "T03_item7_initial_investment",
+      "item": 7,
+      "title": "Your Estimated Initial Investment",
+      "source_pages": [26, 27],
+      "columns": ["Type of Expenditure", "Low Amount", "High Amount", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"Type of Expenditure": "Initial Franchise Fee", "Low Amount": "$34,500", "High Amount": "$34,500", "Method of Payment": "Lump sum", "When Due": "Upon signing FA", "To Whom": "Us"},
+        {"Type of Expenditure": "Training Expenses", "Low Amount": "$3,600", "High Amount": "$7,200", "Method of Payment": "As incurred", "When Due": "During training", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Architect and Engineering Fees", "Low Amount": "$5,150", "High Amount": "$13,000", "Method of Payment": "As incurred", "When Due": "Before opening", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Leasehold Improvements", "Low Amount": "$51,500", "High Amount": "$270,500", "Method of Payment": "As incurred", "When Due": "Before opening", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Furniture, Fixtures, and Equipment", "Low Amount": "$30,250", "High Amount": "$62,300", "Method of Payment": "As incurred", "When Due": "Before opening", "To Whom": "Approved Suppliers and suppliers"},
+        {"Type of Expenditure": "Technology Systems", "Low Amount": "$5,850", "High Amount": "$6,610", "Method of Payment": "As incurred", "When Due": "Before opening", "To Whom": "Designated or Approved Suppliers"},
+        {"Type of Expenditure": "Exterior Signage", "Low Amount": "$2,050", "High Amount": "$5,400", "Method of Payment": "As incurred", "When Due": "Before opening", "To Whom": "Approved Suppliers and suppliers"},
+        {"Type of Expenditure": "Security and Utility Deposits and Rent", "Low Amount": "$5,150", "High Amount": "$32,500", "Method of Payment": "As incurred", "When Due": "Before opening", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Professional Fees and Business Permits/Licenses", "Low Amount": "$1,250", "High Amount": "$29,000", "Method of Payment": "Lump Sum/As incurred", "When Due": "As incurred", "To Whom": "Suppliers; Government"},
+        {"Type of Expenditure": "Initial Supplies and Inventory", "Low Amount": "$25,750", "High Amount": "$61,800", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Affiliates and us"},
+        {"Type of Expenditure": "Grand Opening Advertising", "Low Amount": "$4,000", "High Amount": "$5,400", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Suppliers or us"},
+        {"Type of Expenditure": "Insurance", "Low Amount": "$5,400", "High Amount": "$12,350", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Additional Funds - 3 Months", "Low Amount": "$10,300", "High Amount": "$86,500", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Suppliers and government"},
+        {"Type of Expenditure": "Total", "Low Amount": "$184,750", "High Amount": "$627,060", "Method of Payment": "", "When Due": "", "To Whom": ""}
+      ],
+      "table_notes": [
+        "Note 1: Assumes 500-1,500 sq ft in-line or mall location. Free-standing locations will be considered. None refundable.",
+        "Note 5: Assumes level concrete floor, A/C, electricity, gas, sewers, bathrooms, water/plumbing. First-gen vs second-gen site impacts cost.",
+        "Note 6: Includes intelligent beverage maker ($11,750-$13,300 EX-WORKS China). May be subject to tariffs (could increase high-end by 25%).",
+        "Note 7: Includes POS, kiosks, Wi-Fi, security, labels/receipts, electronic menu, phone, music.",
+        "Note 12: Operating expenses for first 3 months excluding salary/distributions, permits, and insurance.",
+        "Note 13: No financing offered for initial investment except for beverage maker (see Item 10)."
+      ]
+    },
+    {
+      "table_id": "T04_item19_net_sales",
+      "item": 19,
+      "title": "2024 Net Sales of 203 Established Gong Cha Stores",
+      "source_pages": [73],
+      "columns": ["Quartile", "Stores", "Average", "Median", "Low", "High", "Number and % at or Above Average"],
+      "rows": [
+        {"Quartile": "Top Quartile", "Stores": 51, "Average": "$711,899", "Median": "$683,318", "Low": "$538,980", "High": "$1,119,281", "Number and % at or Above Average": "23 / 45.10%"},
+        {"Quartile": "2nd Quartile", "Stores": 50, "Average": "$469,693", "Median": "$470,354", "Low": "$402,869", "High": "$538,067", "Number and % at or Above Average": "25 / 50.00%"},
+        {"Quartile": "3rd Quartile", "Stores": 50, "Average": "$352,966", "Median": "$349,247", "Low": "$306,352", "High": "$402,869", "Number and % at or Above Average": "24 / 48.00%"},
+        {"Quartile": "Bottom Quartile", "Stores": 52, "Average": "$227,558", "Median": "$231,250", "Low": "$72,037", "High": "$306,173", "Number and % at or Above Average": "27 / 51.92%"},
+        {"Quartile": "All 203 Stores", "Stores": 203, "Average": "$439,522", "Median": "$401,211", "Low": "$72,037", "High": "$1,119,281", "Number and % at or Above Average": "86 / 42.36%"}
+      ],
+      "table_notes": [
+        "Based on 203 stores owned/operated by Existing Master Franchisees or their subfranchisees/sublicensees that were open before or at beginning of 2024 and reported Net Sales for all 12 months.",
+        "28 stores are master franchisee or affiliate-owned; 175 are third-party subfranchisees.",
+        "Excludes 29 stores opening in 2024 (incomplete year). Includes 3 stores that closed in 2024 but provided full-year data.",
+        "Net Sales data obtained from master franchisees/subfranchisees; not independently audited or verified.",
+        "No cost data, COGS, or profitability analysis provided.",
+        "States represented: CA, CO, CT, DC, FL, GA, LA, MD, MA, MI, NH, NJ, NY, NC, OK, PA, RI, SC, TX, VA."
+      ]
+    },
+    {
+      "table_id": "T05_item20_table1_systemwide",
+      "item": 20,
+      "title": "Table No. 1 - Systemwide Outlet Summary (For Franchisor)",
+      "source_pages": [74],
+      "columns": ["Outlet Type", "Year", "Outlets at Start", "Outlets at End", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": 2022, "Outlets at Start": 0, "Outlets at End": 0, "Net Change": 0},
+        {"Outlet Type": "Franchised", "Year": 2023, "Outlets at Start": 0, "Outlets at End": 0, "Net Change": 0},
+        {"Outlet Type": "Franchised", "Year": 2024, "Outlets at Start": 0, "Outlets at End": 4, "Net Change": 4},
+        {"Outlet Type": "Company-Owned", "Year": 2022, "Outlets at Start": 0, "Outlets at End": 3, "Net Change": 3},
+        {"Outlet Type": "Company-Owned", "Year": 2023, "Outlets at Start": 3, "Outlets at End": 2, "Net Change": -1},
+        {"Outlet Type": "Company-Owned", "Year": 2024, "Outlets at Start": 2, "Outlets at End": 2, "Net Change": 0},
+        {"Outlet Type": "Total", "Year": 2022, "Outlets at Start": 0, "Outlets at End": 3, "Net Change": 3},
+        {"Outlet Type": "Total", "Year": 2023, "Outlets at Start": 3, "Outlets at End": 2, "Net Change": -1},
+        {"Outlet Type": "Total", "Year": 2024, "Outlets at Start": 2, "Outlets at End": 6, "Net Change": 4}
+      ],
+      "table_notes": ["All numbers as of December 31 of each year."]
+    },
+    {
+      "table_id": "T06_item20_table1a_systemwide_combined",
+      "item": 20,
+      "title": "Table No. 1(a) - Systemwide Store Summary (Franchisor + Master Franchisees)",
+      "source_pages": [78],
+      "columns": ["Store Type", "Year", "Stores at Start", "Stores at End", "Net Change"],
+      "rows": [
+        {"Store Type": "Franchised and Subfranchised", "Year": 2022, "Stores at Start": 116, "Stores at End": 157, "Net Change": 41},
+        {"Store Type": "Franchised and Subfranchised", "Year": 2023, "Stores at Start": 157, "Stores at End": 187, "Net Change": 30},
+        {"Store Type": "Franchised and Subfranchised", "Year": 2024, "Stores at Start": 187, "Stores at End": 198, "Net Change": 11},
+        {"Store Type": "Owner-Operated", "Year": 2022, "Stores at Start": 31, "Stores at End": 30, "Net Change": -1},
+        {"Store Type": "Owner-Operated", "Year": 2023, "Stores at Start": 30, "Stores at End": 37, "Net Change": 7},
+        {"Store Type": "Owner-Operated", "Year": 2024, "Stores at Start": 37, "Stores at End": 31, "Net Change": -6},
+        {"Store Type": "Total", "Year": 2022, "Stores at Start": 147, "Stores at End": 187, "Net Change": 40},
+        {"Store Type": "Total", "Year": 2023, "Stores at Start": 187, "Stores at End": 224, "Net Change": 37},
+        {"Store Type": "Total", "Year": 2024, "Stores at Start": 224, "Stores at End": 229, "Net Change": 5}
+      ],
+      "table_notes": [
+        "Includes all US stores: franchisor's own, franchisee, master franchisee, affiliate, and subfranchisee stores.",
+        "7 Existing Master Franchisees (3 had dev rights terminated in 2024).",
+        "Master territories: CA, CT, DC, FL, GA, ID, MD, MA, NH, NJ, NY, NC, OK, OR, PA, RI, SC, TX, VA, WA.",
+        "GCCA (CA) bought out Mar 2025. DRSAM (13 states) bought out Feb 2026."
+      ]
+    },
+    {
+      "table_id": "T07_item20_table5a_projected",
+      "item": 20,
+      "title": "Table No. 5(a) - Projected Openings (Systemwide, as of Dec 31, 2024)",
+      "source_pages": [85],
+      "columns": ["State", "Signed Not Opened", "Projected New Franchised/Sub 2025", "Projected New Owner-Operated 2025"],
+      "rows": [
+        {"State": "California", "Signed Not Opened": 6, "Projected New Franchised/Sub 2025": 0, "Projected New Owner-Operated 2025": 0},
+        {"State": "Connecticut", "Signed Not Opened": 0, "Projected New Franchised/Sub 2025": 1, "Projected New Owner-Operated 2025": 0},
+        {"State": "Florida", "Signed Not Opened": 0, "Projected New Franchised/Sub 2025": 3, "Projected New Owner-Operated 2025": 1},
+        {"State": "Georgia", "Signed Not Opened": 1, "Projected New Franchised/Sub 2025": 2, "Projected New Owner-Operated 2025": 1},
+        {"State": "Maryland", "Signed Not Opened": 0, "Projected New Franchised/Sub 2025": 0, "Projected New Owner-Operated 2025": 1},
+        {"State": "Massachusetts", "Signed Not Opened": 5, "Projected New Franchised/Sub 2025": 5, "Projected New Owner-Operated 2025": 0},
+        {"State": "New Hampshire", "Signed Not Opened": 0, "Projected New Franchised/Sub 2025": 1, "Projected New Owner-Operated 2025": 0},
+        {"State": "New Jersey", "Signed Not Opened": 3, "Projected New Franchised/Sub 2025": 4, "Projected New Owner-Operated 2025": 0},
+        {"State": "New York", "Signed Not Opened": 3, "Projected New Franchised/Sub 2025": 3, "Projected New Owner-Operated 2025": 0},
+        {"State": "North Carolina", "Signed Not Opened": 0, "Projected New Franchised/Sub 2025": 1, "Projected New Owner-Operated 2025": 0},
+        {"State": "Oklahoma", "Signed Not Opened": 0, "Projected New Franchised/Sub 2025": 1, "Projected New Owner-Operated 2025": 0},
+        {"State": "Oregon", "Signed Not Opened": 0, "Projected New Franchised/Sub 2025": 0, "Projected New Owner-Operated 2025": 3},
+        {"State": "Pennsylvania", "Signed Not Opened": 0, "Projected New Franchised/Sub 2025": 2, "Projected New Owner-Operated 2025": 0},
+        {"State": "Rhode Island", "Signed Not Opened": 0, "Projected New Franchised/Sub 2025": 1, "Projected New Owner-Operated 2025": 0},
+        {"State": "South Carolina", "Signed Not Opened": 1, "Projected New Franchised/Sub 2025": 1, "Projected New Owner-Operated 2025": 0},
+        {"State": "Texas", "Signed Not Opened": 2, "Projected New Franchised/Sub 2025": 3, "Projected New Owner-Operated 2025": 0},
+        {"State": "Washington", "Signed Not Opened": 0, "Projected New Franchised/Sub 2025": 0, "Projected New Owner-Operated 2025": 4},
+        {"State": "Total", "Signed Not Opened": 21, "Projected New Franchised/Sub 2025": 28, "Projected New Owner-Operated 2025": 10}
+      ],
+      "table_notes": ["Projections are speculative per franchisor's own disclosure."]
+    },
+    {
+      "table_id": "T08_item21_balance_sheet",
+      "item": 21,
+      "title": "Balance Sheets (Dec 31, 2024 and 2023)",
+      "source_pages": [122],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"Line Item": "Cash", "2024": "$565,896", "2023": "$60,611"},
+        {"Line Item": "Accounts receivable", "2024": "$447,326", "2023": "$368,576"},
+        {"Line Item": "Other current assets", "2024": "$6,215", "2023": "$0"},
+        {"Line Item": "Total current assets", "2024": "$1,019,437", "2023": "$429,187"},
+        {"Line Item": "Due from related parties, net", "2024": "$584,984", "2023": "$635,343"},
+        {"Line Item": "Intangible assets, net", "2024": "$568,360", "2023": "$670,208"},
+        {"Line Item": "Total other assets", "2024": "$1,153,344", "2023": "$1,305,551"},
+        {"Line Item": "TOTAL ASSETS", "2024": "$2,172,781", "2023": "$1,734,738"},
+        {"Line Item": "Accounts payable and accrued expenses", "2024": "$55,774", "2023": "$131,286"},
+        {"Line Item": "Brand marketing fund payable", "2024": "$265,697", "2023": "$83,811"},
+        {"Line Item": "Franchise deposits - current", "2024": "$100,000", "2023": "$0"},
+        {"Line Item": "Deferred revenues - current", "2024": "$86,860", "2023": "$174,565"},
+        {"Line Item": "Total current liabilities", "2024": "$508,331", "2023": "$389,662"},
+        {"Line Item": "Franchisee deposits, net of current", "2024": "$215,000", "2023": "$365,000"},
+        {"Line Item": "Deferred revenues, net of current", "2024": "$433,965", "2023": "$325,893"},
+        {"Line Item": "Total long-term liabilities", "2024": "$648,965", "2023": "$690,893"},
+        {"Line Item": "Total liabilities", "2024": "$1,157,296", "2023": "$1,080,555"},
+        {"Line Item": "Member's equity", "2024": "$1,015,485", "2023": "$654,183"},
+        {"Line Item": "TOTAL L&E", "2024": "$2,172,781", "2023": "$1,734,738"}
+      ],
+      "table_notes": ["See Notes 5 and 7 for commitments and contingencies."]
+    },
+    {
+      "table_id": "T09_item21_income_statement",
+      "item": 21,
+      "title": "Statements of Income and Changes in Member's Equity",
+      "source_pages": [123],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"Line Item": "Franchise fees and royalties", "2024": "$1,558,968", "2023": "$858,977"},
+        {"Line Item": "Brand marketing fund", "2024": "$1,045,184", "2023": "$789,324"},
+        {"Line Item": "Fees from other services", "2024": "$1,496,590", "2023": "$1,245,279"},
+        {"Line Item": "Total revenues", "2024": "$4,100,742", "2023": "$2,893,580"},
+        {"Line Item": "Operating expenses", "2024": "$3,739,440", "2023": "$2,754,456"},
+        {"Line Item": "Income from operations", "2024": "$361,302", "2023": "$139,124"},
+        {"Line Item": "Interest income", "2024": "$0", "2023": "$15,059"},
+        {"Line Item": "Net income", "2024": "$361,302", "2023": "$154,183"},
+        {"Line Item": "Member's equity - beginning", "2024": "$654,183", "2023": "$0"},
+        {"Line Item": "Member contributions", "2024": "$0", "2023": "$500,000"},
+        {"Line Item": "Member's equity - ending", "2024": "$1,015,485", "2023": "$654,183"}
+      ],
+      "table_notes": [
+        "2023 is from inception (Jan 10, 2023) through Dec 31, 2023.",
+        "Fees from other services: $1,496,590 in 2024, relates to Service Agreement with GCG (see Note 5).",
+        "Brand marketing fund revenue equals fund expenditures (gross basis accounting)."
+      ]
+    },
+    {
+      "table_id": "T10_item21_cash_flow",
+      "item": 21,
+      "title": "Statements of Cash Flows",
+      "source_pages": [124],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"Line Item": "Net income", "2024": "$361,302", "2023": "$154,183"},
+        {"Line Item": "Amortization expense", "2024": "$101,848", "2023": "$67,900"},
+        {"Line Item": "Changes in A/R", "2024": "($78,750)", "2023": "($368,576)"},
+        {"Line Item": "Changes in due from related parties", "2024": "$50,358", "2023": "($635,343)"},
+        {"Line Item": "Changes in other current assets", "2024": "($6,215)", "2023": "$0"},
+        {"Line Item": "Changes in AP and accrued", "2024": "($75,511)", "2023": "$131,285"},
+        {"Line Item": "Changes in brand marketing fund payable", "2024": "$181,886", "2023": "$83,811"},
+        {"Line Item": "Changes in franchisee deposits", "2024": "($50,000)", "2023": "$0"},
+        {"Line Item": "Changes in deferred revenues", "2024": "$20,367", "2023": "($189,747)"},
+        {"Line Item": "Net cash from operating activities", "2024": "$505,285", "2023": "($756,487)"},
+        {"Line Item": "Proceeds from loan receivable", "2024": "$0", "2023": "$317,098"},
+        {"Line Item": "Contribution from member", "2024": "$0", "2023": "$500,000"},
+        {"Line Item": "Net increase in cash", "2024": "$505,285", "2023": "$60,611"},
+        {"Line Item": "Cash - ending", "2024": "$565,896", "2023": "$60,611"}
+      ],
+      "table_notes": ["Non-cash: Common control transaction of $317,098 in 2023 (Note 5)."]
+    }
+  ]
+}

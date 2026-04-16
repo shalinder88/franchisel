@@ -1,0 +1,173 @@
+{
+  "enrichment_version": "v2",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "638049-2025",
+  "brand": "Novus Glass",
+  "item21_financial_structure": {
+    "parent_relationship": "Single-member LLC owned by Mondofix USA LLC",
+    "tax_treatment": "Consolidated filing with parent group; current/deferred taxes allocated as separate taxpayer",
+    "distribution_policy": "Discretionary distributions to parent",
+    "distributions_history": {
+      "2024": 500000,
+      "2023": 1400000
+    },
+    "intercompany_balances_2024": {
+      "advances_to_common_control": 518728,
+      "advances_to_parent": 283449,
+      "ar_parent": 100000,
+      "ar_common_control": 420,
+      "ap_ultimate_parent": 131885,
+      "advances_from_parent": 0
+    },
+    "intercompany_balances_2023": {
+      "advances_to_common_control": 1033233,
+      "advances_to_parent": 0,
+      "ar_parent": 0,
+      "ar_common_control": 3970,
+      "ap_ultimate_parent": 195430,
+      "advances_from_parent": 546457
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet_2024": {
+      "cash": 920901,
+      "cash_in_trust": 13088,
+      "accounts_receivable_gross": 924508,
+      "allowance_for_credit_losses": 311654,
+      "accounts_receivable_net": 612854,
+      "prepaid_expenses": 143517,
+      "total_current_assets": 1790780,
+      "rights": 300000,
+      "rou_assets": 226233,
+      "deferred_tax_asset": 119924,
+      "total_assets": 3239114,
+      "accounts_payable": 273777,
+      "ap_ultimate_parent": 131885,
+      "amounts_to_remit_franchisees": 13088,
+      "deferred_revenue_current": 1265333,
+      "current_lease_liabilities": 77461,
+      "total_current_liabilities": 1761544,
+      "deferred_revenue_noncurrent": 109400,
+      "lease_liabilities_noncurrent": 148772,
+      "total_liabilities": 2019716,
+      "net_investment_parent": 532753,
+      "retained_earnings": 686645,
+      "total_net_membership_interest": 1219398
+    },
+    "income_statement_2024": {
+      "royalties": 3134301,
+      "contributions_from_franchisees": 1953364,
+      "vendor_allowances_discounts": 1166274,
+      "product_sales": 97693,
+      "sublease_income": 39243,
+      "other_revenues": 51400,
+      "total_revenue": 6442275,
+      "direct_operating_expenses": 2988440,
+      "selling_and_administrative": 2265492,
+      "cost_of_products_sold": 82765,
+      "total_expenses": 5336697,
+      "income_before_tax": 1105578,
+      "income_tax_expense": 305584,
+      "net_income": 799994,
+      "effective_tax_rate_pct": 27.6
+    },
+    "income_statement_2023": {
+      "royalties": 3317951,
+      "contributions_from_franchisees": 1208685,
+      "vendor_allowances_discounts": 1106192,
+      "product_sales": 106436,
+      "sublease_income": 0,
+      "other_revenues": 97066,
+      "total_revenue": 5836330,
+      "direct_operating_expenses": 2355705,
+      "selling_and_administrative": 1828798,
+      "cost_of_products_sold": 91499,
+      "total_expenses": 4276002,
+      "income_before_tax": 1560328,
+      "income_tax_expense": 364661,
+      "net_income": 1195667,
+      "effective_tax_rate_pct": 23.4
+    },
+    "cash_flow_2024": {
+      "operating_cash_flow": 140049,
+      "financing_cash_flow": -715401,
+      "net_change_in_cash": -575352,
+      "cash_beginning": 1496253,
+      "cash_ending": 920901
+    },
+    "cash_flow_2023": {
+      "operating_cash_flow": 1394229,
+      "financing_cash_flow": -1091709,
+      "net_change_in_cash": 302520,
+      "cash_beginning": 1193733,
+      "cash_ending": 1496253
+    },
+    "key_ratios": {
+      "current_ratio_2024": 1.02,
+      "current_ratio_2023": 0.78,
+      "net_margin_2024_pct": 12.4,
+      "net_margin_2023_pct": 20.5,
+      "revenue_per_unit_2024": 50330,
+      "revenue_per_unit_2023": 46691,
+      "royalty_per_unit_2024": 24487,
+      "royalty_per_unit_2023": 26544,
+      "advertising_costs_2024": 1114487,
+      "advertising_costs_2023": 629115
+    }
+  },
+  "item6_fee_detail": {
+    "royalty": {
+      "rate": "6% of Gross Revenues",
+      "minimum_monthly": {
+        "month_1_3": 0,
+        "month_4_6": 350,
+        "month_7_plus": 500,
+        "conversion_business": 500,
+        "transfer": 500,
+        "re_franchise": "starts month 2",
+        "repair_only": 300
+      },
+      "holdover_surcharge": "$200/month additional if operating past term without re-franchising",
+      "procolor_collision_carveout": "Collision Glass Work Gross Revenues reported to/paid to ProColor USA instead",
+      "mso_credit": "Available for 2+ retail locations meeting quarterly sales goals"
+    },
+    "marketing": {
+      "rate": "2% of Gross Revenues",
+      "fund_audited": false,
+      "fund_report_available": "within 120 days of year-end on request",
+      "advisory_council": "5 franchisees (3 elected, 2 appointed)"
+    },
+    "local_advertising": {
+      "minimum_rate": "4% of Gross Revenues",
+      "paid_to": "local suppliers (not franchisor unless underspent)",
+      "cooperative_possible": true,
+      "designated_digital_supplier": "Eulerity",
+      "digital_minimum_spend": "$500/month after first 6 months",
+      "napa_joint_advertising": "50% of joint advertising counts toward 4% requirement"
+    },
+    "vehicle_lease": {
+      "monthly_payment_range": [1300, 1600],
+      "admin_fee_included": 100,
+      "term_months": 60,
+      "security_deposit": 2500,
+      "head_lessor": "Doering Leasing Co. (Brookfield, WI)",
+      "vehicle_type": "White van with buildout",
+      "subordination_risk": true,
+      "delay_addendum_available": true,
+      "delay_duration_years": 3
+    },
+    "technology": {
+      "pos_first_year": 3000,
+      "pos_monthly_base": [300, 350],
+      "pos_users_included": 5,
+      "additional_user_monthly": [25, 30],
+      "nags_annual": [700, 950],
+      "technician_route_direct_monthly": [50, 60],
+      "mobile_app_monthly": [20, 35],
+      "ms_office_monthly": [20, 25],
+      "quickbooks_integration_setup": [250, 350],
+      "shop_onboarding_fee": [300, 350],
+      "edi_per_transaction": 2.0
+    }
+  }
+}

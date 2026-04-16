@@ -1,0 +1,71 @@
+{
+  "enrichment_version": "v1",
+  "base_file": "09_final_canonical.json",
+  "enrichments": {
+    "item19_chart_detail": {
+      "chart_type": "single_table",
+      "metrics_provided": ["average", "median", "highest", "lowest", "count_at_above_average", "pct_at_above_average"],
+      "metrics_not_provided": ["quartile_breakdown", "costs", "expenses", "profit", "ebitda"],
+      "population_trend": {"2020": 50, "2021": 54, "2022": 67, "2023": 76, "2024": 80},
+      "average_trend": {"2020": 736081, "2021": 775676, "2022": 696731, "2023": 697747, "2024": 731214},
+      "median_trend": {"2020": 532632, "2021": 563461, "2022": 541481, "2023": 502229, "2024": 467724},
+      "median_declining": true,
+      "average_median_gap_widening": true,
+      "top_performer_share_increasing": true
+    },
+    "item20_yearly_activity": {
+      "2022": {"opened": 11, "terminated": 2, "non_renewals": 0, "ceased_other": 3, "transfers": 2, "net_change_franchised": 6},
+      "2023": {"opened": 11, "terminated": 3, "non_renewals": 0, "ceased_other": 0, "transfers": 4, "net_change_franchised": 8},
+      "2024": {"opened": 10, "terminated": 6, "non_renewals": 0, "ceased_other": 1, "transfers": 2, "net_change_franchised": 4},
+      "termination_trend": "increasing",
+      "florida_2024_terminations": 4
+    },
+    "exhibit_structure": {
+      "total_exhibits": 13,
+      "high_priority": ["C", "D", "G"],
+      "medium_priority": ["E", "F", "I", "J"],
+      "low_priority": ["A", "B", "H", "K", "L", "M"],
+      "franchise_agreement_pages": 86,
+      "state_addenda_count": 9,
+      "financial_statement_pages": 13
+    },
+    "item21_structural_facts": {
+      "entity_type": "wholly_owned_subsidiary",
+      "parent": "RyBrands, Inc.",
+      "tax_status": "S_corp_disregarded_entity",
+      "asset_type": "asset_light",
+      "tangible_assets": "none_significant",
+      "primary_assets": ["cash", "accounts_receivable", "deferred_franchise_costs"],
+      "primary_liabilities": ["deferred_revenue_initial_fees", "accounts_payable", "accrued_expenses"],
+      "accumulated_deficit_2024": true,
+      "distributions_exceed_income": true,
+      "going_concern": false,
+      "master_developer_exists": true,
+      "master_developer_fee": 100000,
+      "master_developer_revenue_share": "50% of initial fee and continuing royalty"
+    },
+    "item1_structural_facts": {
+      "incorporated": "1996-11-25",
+      "state": "Georgia",
+      "franchising_since": "1996-12",
+      "ceo_founder": true,
+      "ceo_controls_affiliate_admin": true,
+      "no_predecessor": true,
+      "business_type": "insurance_restoration_services",
+      "competition_includes": ["water restoration companies", "mold remediation companies", "general contractors", "insurance restoration companies", "carpet cleaning", "professional cleaning firms"]
+    },
+    "item6_fee_attributes": {
+      "total_ongoing_fee_pct": 20,
+      "admin_fee_to_affiliate": true,
+      "admin_fee_pct": 11,
+      "admin_fee_affiliate_revenue_2024": 5721199,
+      "minimum_royalty_exists": true,
+      "minimum_royalty_amount": 2000,
+      "minimum_royalty_waiver_period_months": 12,
+      "minimum_sales_requirement": 500000,
+      "minimum_sales_by_month": 24,
+      "technology_fee_stack_annual_estimate": 5000,
+      "rebuild_fee_reduced_rates": true
+    }
+  }
+}

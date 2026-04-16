@@ -1,0 +1,82 @@
+{
+  "depth_pass": "3_narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "FTC Franchise Rule exemption: franchise sale acknowledged as exceeding $1,469,600 threshold",
+      "source_reader_report": "Not previously captured",
+      "source_pdf_page": 178,
+      "canonical_target": "document_identity.ftc_exemption"
+    },
+    {
+      "id": "P2",
+      "fact": "Interest rate on late payments: 18% per annum or maximum lawful rate",
+      "source_reader_report": "Pass B — Item 6 table mentions 1.5%/month",
+      "source_pdf_page": 177,
+      "canonical_target": "ongoing_fees.late_payment_interest_rate",
+      "note": "1.5%/month = 18%/year, consistent with FA §16.15"
+    },
+    {
+      "id": "P3",
+      "fact": "Jury trial waiver: both parties waive right to jury trial in all litigation",
+      "source_reader_report": "Pass E mentions Virginia venue but jury waiver not in canonical",
+      "source_pdf_page": 178,
+      "canonical_target": "dispute_resolution.jury_trial_waiver"
+    },
+    {
+      "id": "P4",
+      "fact": "Punitive damages waiver: both parties waive punitive/exemplary damages from each other",
+      "source_reader_report": "Not previously captured",
+      "source_pdf_page": 178,
+      "canonical_target": "dispute_resolution.punitive_damages_waiver"
+    },
+    {
+      "id": "P5",
+      "fact": "Confidentiality of negotiated terms: franchisee cannot disclose negotiated FA terms without consent; violation = default",
+      "source_reader_report": "Not previously captured",
+      "source_pdf_page": 178,
+      "canonical_target": "contract_terms.confidentiality_of_negotiated_terms"
+    },
+    {
+      "id": "P6",
+      "fact": "Set-off right: franchisor may set off amounts owed without prior notice",
+      "source_reader_report": "Not previously captured",
+      "source_pdf_page": 160,
+      "canonical_target": "ongoing_fees.setoff_right"
+    },
+    {
+      "id": "P7",
+      "fact": "Graduate brand franchise contracts acquired May 2024 for ~$85M (15-year amortization)",
+      "source_reader_report": "Pass G mentions financial statement notes",
+      "source_pdf_page": 135,
+      "canonical_target": "financial_statements.graduate_brand_acquired_may_2024"
+    },
+    {
+      "id": "P8",
+      "fact": "All franchisor assets and franchise contracts pledged as collateral for Hilton's debt (maturing 2025-2033)",
+      "source_reader_report": "Pass G Unresolveds #3",
+      "source_pdf_page": 136,
+      "canonical_target": "financial_statements.all_assets_pledged_as_collateral"
+    }
+  ],
+  "facts_already_in_canonical": [
+    "Brand description and segment",
+    "System size and growth data",
+    "Initial investment ranges",
+    "All ongoing fee categories",
+    "Franchise term and renewal provisions",
+    "Territory and restricted area provisions",
+    "Dispute resolution (venue, governing law)",
+    "Noncompete provisions",
+    "Transfer provisions",
+    "Termination provisions",
+    "Item 19 financial performance data",
+    "Financial statement key figures",
+    "Litigation summary",
+    "Special risks",
+    "Trademark registrations",
+    "Key personnel",
+    "Supplier control",
+    "Confidentiality clause in Item 20"
+  ]
+}

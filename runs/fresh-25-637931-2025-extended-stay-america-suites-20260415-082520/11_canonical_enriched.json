@@ -1,0 +1,84 @@
+{
+  "enrichment_version": "v1",
+  "enrichment_date": "2026-04-15",
+  "item19_chart_detail": {
+    "tables_extracted": 12,
+    "metrics_covered": ["occupancy", "adr", "revpar", "esocc", "channel_mix", "length_of_stay", "b2b_revenue"],
+    "populations": {
+      "owned": {"count": 337, "total_pool": 339, "exclusion_count": 2, "exclusion_reason": "not open full year"},
+      "franchised": {"count": 93, "total_pool": 107, "exclusion_count": 14, "exclusion_reasons": ["1 closed for renovations", "1 sold out to railroad contract", "1 opened and closed same year", "9 ceased operations", "1 managed hotel excluded (closed for renovation)", "1 managed included"]},
+      "brand": {"count": 430, "note": "337 owned + 93 franchised"}
+    },
+    "key_franchisee_insight": "Franchised hotels achieve $46.85 RevPAR vs $62.35 for owned — 25% lower. Gap driven entirely by ADR ($59.89 vs $80.87); occupancy is comparable.",
+    "channel_insight": "Franchised hotels rely more on Property Direct (33.2% vs 19.3%) and less on Call Center (22.2% vs 31.4%)",
+    "extended_stay_profile": "59.4% of room nights are 30+ day stays; 91.2% of B2B revenue from 7+ night stays"
+  },
+  "item20_yearly_activity": {
+    "franchised_activity_2024": {
+      "opened": 13,
+      "terminated": 0,
+      "nonrenewed": 0,
+      "reacquired": 0,
+      "ceased_operations": 10,
+      "net_change": 3,
+      "states_with_openings": ["Kentucky", "Louisiana", "Michigan", "Minnesota", "New York", "North Carolina", "Pennsylvania", "South Carolina", "Tennessee", "Texas"],
+      "states_with_closures": ["California", "Georgia", "Illinois", "Oklahoma", "South Carolina", "Texas"]
+    },
+    "company_owned_activity_2024": {
+      "at_start": 444,
+      "opened_new": 2,
+      "rebranded_to_select": 80,
+      "sold_to_franchisees": 12,
+      "sold_to_third_parties": 15,
+      "at_end": 339,
+      "net_change": -105
+    },
+    "transfers_by_state_2024": {"Ohio": 1, "Oklahoma": 1, "Texas": 7}
+  },
+  "exhibit_structure": {
+    "exhibits_count": 12,
+    "exhibits": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
+    "contract_exhibits": ["A", "B", "C", "J", "K", "L"],
+    "financial_exhibits": ["D"],
+    "list_exhibits": ["E", "F", "H"],
+    "operations_exhibits": ["G"],
+    "state_addenda_exhibit": "I",
+    "state_addenda_states_count": 11
+  },
+  "item21_structural_facts": {
+    "entity_type": "LLC (single member)",
+    "member": "ESH Hospitality Strategies LLC",
+    "not_subject_to_federal_tax": true,
+    "auditor": "not identified in text layer",
+    "audit_date": "2025-03-24",
+    "opinion_type": "unqualified",
+    "emphasis_of_matter": true,
+    "going_concern": false,
+    "revenue_recognition": "Royalties recognized over time as franchisees derive value from IP license. Initial fees deferred over expected contract life.",
+    "intangible_asset_lives": {"franchise_agreements": "20 years", "software_licenses": "non-cancellable term"},
+    "impairment_charges": "none in 2024 or 2023",
+    "subsequent_events": "none noted"
+  },
+  "item1_structural_facts": {
+    "franchisor_has_never_operated_hotels": true,
+    "operations_entity": "ESA Management LLC",
+    "marks_owned_by": "ESH Strategies Branding LLC",
+    "marks_licensed_via": "Trademark and System License Agreement (7/31/2017)",
+    "system_includes": ["Marks", "Confidential Information", "Standards", "Reservation Service", "Marketing Programs", "Training Programs", "Inspection Programs"],
+    "hotel_description": "Fully furnished rooms with in-room kitchens, complimentary breakfast, free WiFi, flat screen TVs, on-site guest laundry",
+    "guest_segments": ["Business travelers", "Leisure travelers", "Temporary work/training", "Relocating", "Temporarily displaced", "Home purchasing"]
+  },
+  "item6_fee_attributes": {
+    "grr_definition_includes": ["room revenue", "barter transactions", "loyalty redemption", "mandatory guest fees", "group booking rebates", "BI insurance proceeds", "no-show/cancellation fees"],
+    "grr_definition_excludes": ["sales/room taxes", "vending revenue", "laundry revenue"],
+    "grr_accounting_standard": "Uniform System of Accounts for The Lodging Industry, 11th Revised Edition (2014)",
+    "ssf_covers": ["marketing", "website", "reservations", "QA", "national sales", "revenue management", "IT", "training", "market research"],
+    "ssf_does_not_cover": ["cost of operating hotel per Standards", "cost of participating in programs not funded by SSF"],
+    "liquidated_damages_tiers": [
+      {"condition": "After FA effective but before opening", "formula": "rooms × $3,000"},
+      {"condition": "After opening but before end of Year 1", "formula": "avg monthly royalty × 60"},
+      {"condition": "After Year 1, more than 5 years remaining", "formula": "5 × prior 12-month royalty"},
+      {"condition": "5 or fewer years remaining", "formula": "remaining days × avg daily royalty"}
+    ]
+  }
+}

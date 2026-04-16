@@ -1,0 +1,196 @@
+{
+  "depth_pass": "contract_burdens",
+  "source_exhibit": "Exhibit C — Franchise Agreement (PDF pages 80-137)",
+  "additional_exhibits": ["Exhibit D — Area Development Agreement (PDF pages 138-157)"],
+  "grant_and_term": {
+    "grant": "Non-exclusive right to operate one Cupbop restaurant at approved location using Cupbop marks and system",
+    "term": "10 years from restaurant opening date",
+    "successor_term": "One additional 10-year term",
+    "successor_conditions": ["Written notice 180-220 days before expiration", "Maintain premises possession", "Remodel to then-current standards", "Pay $10,000 successor fee", "Sign then-current franchise agreement (may be materially different)", "Be in compliance with all obligations"],
+    "no_right_to_operate_until": ["Franchisor written approval", "All fees paid", "Training completed", "Insurance provided"],
+    "source_pages": [80, 37]
+  },
+  "fee_obligations": {
+    "initial_franchise_fee": {"amount": 40000, "timing": "Upon execution", "refundable": false},
+    "royalty": {"rate": "6% of Gross Sales", "timing": "10th of each month", "collection": "Auto-debit"},
+    "advertising_fund": {"current_rate": "2%", "max_rate": "4.5%", "timing": "10th of each month"},
+    "local_advertising": {"min": "0.5%", "max": "1%"},
+    "auto_debit_required": true,
+    "late_reporting_consequence": "120% of last royalty + advertising + late fee + interest debited",
+    "source_pages": [80, 81, 82, 83]
+  },
+  "site_selection_and_construction": {
+    "site_deadline": "120 days from effective date to purchase or lease approved site",
+    "failure_consequence": "Agreement terminated on written notice",
+    "lease_approval_required": true,
+    "lease_addendum_required": true,
+    "construction_oversight": "Franchisee responsible; franchisor approves contractor and final plans",
+    "opening_deadline": "16 months from effective date",
+    "opening_conditions": ["Franchisor written approval", "All fees paid", "Training completed", "Insurance provided"],
+    "source_pages": [85, 86]
+  },
+  "training_obligations": {
+    "initial_training": "Mandatory for franchisee/Managing Owner and General Manager",
+    "failure_consequence": "Noncurable default — termination",
+    "replacement_gm_training": "Must complete within 90 days of prior GM departure",
+    "ongoing_training": "Must attend courses franchisor periodically provides at times/locations they designate",
+    "source_pages": [90, 91]
+  },
+  "operational_obligations": {
+    "brand_standards_manual": "Must follow all standards as updated by franchisor",
+    "menu_compliance": "Strict compliance with recipes, methods, specifications",
+    "franchisor_right_to_add_products": true,
+    "franchisor_owns_improvements": "All improvements/changes to system, whether developed by franchisor or franchisee, owned by franchisor",
+    "reporting": "Monthly Gross Sales reports, annual financial statements",
+    "inspection_rights": "Franchisor has unlimited access to POS data and right to inspect/audit",
+    "security_codes": "Must share all with franchisor",
+    "source_pages": [88, 89, 90]
+  },
+  "termination_triggers": {
+    "by_franchisee": "Only if franchisor breaches and fails to cure, or as allowed by state law",
+    "by_franchisor_without_cause": "Not permitted",
+    "curable_defaults": {
+      "3_days": "Health, safety, or sanitation law violations",
+      "10_days": "Monetary defaults, failure to maintain insurance",
+      "30_days": "Monetary defaults to third parties, curable operational defaults",
+      "90_days": "Relocation if loss of premises"
+    },
+    "noncurable_defaults": [
+      "Failure to secure approved site within 120 days",
+      "Failure to open within 16 months",
+      "Opening without written approval",
+      "Failure to complete training",
+      "Abandonment of restaurant",
+      "Unapproved transfers",
+      "Material misrepresentations or omissions",
+      "Felony conviction",
+      "Dishonest or unethical conduct",
+      "Unauthorized use or disclosure of manuals/confidential information",
+      "Failure to pay taxes",
+      "Understating Gross Sales",
+      "Violating employee recruiting and hiring restrictions",
+      "Repeated defaults (pattern of default even if cured)",
+      "Bankruptcy or insolvency",
+      "Appointment for benefit of creditors",
+      "Appointment of trustee or receiver",
+      "Violation of anti-terrorism law",
+      "Cross-default under any other agreement with franchisor or affiliates"
+    ],
+    "source_pages": [95, 96, 97, 98]
+  },
+  "transfer_restrictions": {
+    "consent_required": true,
+    "consent_standard": "Not unreasonably withheld",
+    "transfer_fee": 10000,
+    "no_fee_exception": "If transferee is entity franchisee controls",
+    "conditions": [
+      "Full compliance under Franchise Agreement",
+      "Written notice with transfer terms",
+      "Transfer fee paid",
+      "General release by franchisee and all owners",
+      "Transferee assumes all obligations",
+      "Transferee signs then-current franchise agreement",
+      "Transferee completes training",
+      "Transferee acknowledges FDD receipt"
+    ],
+    "right_of_first_refusal": true,
+    "rofr_scope": "Match any offer for assets or ownership interest",
+    "death_disability": "180 days to appoint qualified representative or transfer",
+    "source_pages": [99, 100, 101]
+  },
+  "cross_default": {
+    "present": true,
+    "scope": "Any default under another agreement between franchisor/affiliates and franchisee/members/affiliates that permits termination",
+    "source_pages": [98]
+  },
+  "noncompete": {
+    "during_term": {
+      "scope": "Cannot divert business, own interest in, or perform services for competing business",
+      "employee_restrictions": "Cannot interfere with franchisor's or other franchisees' employees"
+    },
+    "post_term": {
+      "duration": "2 years",
+      "geographic_scope": "At premises OR within 20 miles of ANY Cupbop Restaurant (existing, operating, or under construction at termination/expiration)",
+      "note": "Geographic scope expands as system grows"
+    },
+    "source_pages": [100, 101]
+  },
+  "guaranty": {
+    "required": true,
+    "scope": "All owners of 5%+ equity interest must sign Guaranty of Obligations",
+    "provisions_applied": "All Franchise Agreement provisions apply to guarantors",
+    "joint_and_several": true,
+    "direct_action": "Franchisor may proceed directly against guarantor without first proceeding against franchisee entity",
+    "source_pages": [113]
+  },
+  "liquidated_damages": {
+    "trigger": "Franchisor termination with cause OR franchisee termination without cause",
+    "formula": "Sum of accrued royalties during immediately preceding 24 full calendar months, plus applicable taxes",
+    "adjustment": "If remaining term < 24 months, reduced to remaining months' royalties",
+    "payment_deadline": "Within 15 days of termination (Note 12 says 30 days — discrepancy between Item 6 table and notes)",
+    "scope": "Compensates for loss of royalties only — does not cover other damages",
+    "source_pages": [14, 16]
+  },
+  "venue_and_dispute_resolution": {
+    "governing_law": "Utah",
+    "mediation": "Salt Lake County, Utah, before single mediator, prior to arbitration",
+    "arbitration": "Binding, Salt Lake County, Utah (ADA disputes)",
+    "litigation_venue": "Salt Lake County, Utah",
+    "subject_to": "Applicable state law overrides",
+    "jury_waiver": "Present in agreement (subject to state overrides)",
+    "source_pages": [102, 103]
+  },
+  "insurance_requirements": {
+    "general_liability": {"per_occurrence": 2000000, "aggregate": 2000000, "umbrella_allowed": "Yes ($1M umbrella may satisfy $2M occurrence)"},
+    "additional_insured": "Cupbop Franchise, LLC and affiliates",
+    "waiver_of_subrogation": "Required in favor of franchisor and affiliates",
+    "business_interruption": "Actual Loss Sustained or Loss of Income basis, up to 12 months",
+    "workers_compensation": "Per state law",
+    "employers_liability": {"minimum": 1000000},
+    "construction_insurance": "Required during construction",
+    "franchisor_can_change": "May change coverage types, terms, and amounts at any time",
+    "failure_is_default": true,
+    "franchisor_may_obtain": "If you fail, franchisor may obtain and charge you cost + it's a default",
+    "source_pages": [22]
+  },
+  "indemnification": {
+    "scope": "Franchisee must indemnify and hold harmless franchisor and affiliates for claims related to: unauthorized mark use, law violations, restaurant operations, FA breaches",
+    "source_pages": [16]
+  },
+  "force_majeure": {
+    "disclosed": false,
+    "notes": "No explicit force majeure clause identified in the franchise agreement text reviewed. Standard commercial contracts may have general provisions but none was specifically called out."
+  },
+  "distinctive_clauses": [
+    {
+      "clause": "120% Auto-Debit on Late Reporting",
+      "description": "If franchisee fails to timely report Gross Sales, franchisor may debit 120% of last royalty and advertising contribution plus late fee and interest",
+      "source_pages": [15]
+    },
+    {
+      "clause": "Tax Gross-Up Provision",
+      "description": "Franchisee must reimburse franchisor for any state taxes on payments, including an amount necessary to provide franchisor with after-tax receipts equal to what it would have received without the tax",
+      "source_pages": [83]
+    },
+    {
+      "clause": "Franchisor Owns All Improvements",
+      "description": "All improvements or changes to the system, whether developed by franchisor or franchisee, are owned by franchisor without compensation to franchisee",
+      "source_pages": [36]
+    },
+    {
+      "clause": "Option to Purchase on Termination/Expiration",
+      "description": "Franchisor may purchase or sublease the restaurant including premises at fair market value upon termination or expiration",
+      "source_pages": [100]
+    },
+    {
+      "clause": "No Fiduciary Duty",
+      "description": "Agreement expressly states no fiduciary relationship; parties are independent contractors",
+      "source_pages": [113]
+    },
+    {
+      "clause": "Unlimited POS Data Access",
+      "description": "No limits on franchisor's ability to access franchisee's POS or computer system data; must share all security access codes",
+      "source_pages": [29]
+    }
+  ]
+}

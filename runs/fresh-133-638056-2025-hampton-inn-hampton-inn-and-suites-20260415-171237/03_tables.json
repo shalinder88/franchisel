@@ -1,0 +1,408 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "638056-2025",
+  "brand": "Hampton Inn / Hampton Inn & Suites",
+  "tables": [
+    {
+      "table_id": "T01",
+      "item": 5,
+      "title": "Initial Fees",
+      "source_pages": [22, 23, 24, 25],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Franchise Application Fee – New Development or Conversion", "amount": "$100,000 plus $400 for each additional guest room or suite over 150", "due_date": "With Application", "remarks": "See Note 1"},
+        {"type": "Franchise Application Fee – Change of Ownership", "amount": "$200,000", "due_date": "With Application", "remarks": "See Note 1"},
+        {"type": "Franchise Application Fee – Re-licensing", "amount": "$100,000", "due_date": "With Application", "remarks": "See Note 1"},
+        {"type": "Property Improvement Plan Fee", "amount": "$10,000", "due_date": "Before PIP inspection", "remarks": "For Conversion, COO, or Re-licensing"},
+        {"type": "Construction or Renovation Work Extension Fee", "amount": "$10,000", "due_date": "With written request", "remarks": "See Note 2"},
+        {"type": "OnQ Computer System Fees", "amount": "$27,590 to $83,959", "due_date": "As agreed", "remarks": "See Note 3"},
+        {"type": "Other Initial Start Up Fees", "amount": "$5,100", "due_date": "On or before opening", "remarks": "GRO, Digital Floor Plan, Hilton Opening Transition Tool"},
+        {"type": "Training Program Fees", "amount": "$5,000 to $17,500", "due_date": "As agreed", "remarks": "See Item 11"},
+        {"type": "Opening Process Services Fee", "amount": "$6,000", "due_date": "Before opening", "remarks": "Pre-opening services"},
+        {"type": "Procurement and Services Fees", "amount": "4% to 10% of project cost", "due_date": "As agreed", "remarks": "If we or affiliates furnish/supply/service your hotel"}
+      ],
+      "table_notes": [
+        "Note 1: $7,500 processing fee non-refundable if application withdrawn. Full refund less processing fee if denied. COO fee refunded less $7,500 if COO does not occur.",
+        "Note 2: New development start within 15 months, complete within 27 months. 30-day automatic rolling extensions for new dev/conversion.",
+        "Note 3: Costs do not include third-party costs for Guest Internet, Delphi, or optional systems.",
+        "Note 4: HSM procurement fee 4%-10% of project cost; interest rate for late payments 18.5%/year compounded daily."
+      ],
+      "provenance": "Item 5, PDF pp. 22-25 (FDD pp. 14-17)"
+    },
+    {
+      "table_id": "T02",
+      "item": 6,
+      "title": "Other Fees (Ongoing)",
+      "source_pages": [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Monthly Royalty Fee", "amount": "6% of Gross Rooms Revenue", "due_date": "Monthly by 15th of following month", "remarks": "See Note 1"},
+        {"type": "Monthly Program Fee", "amount": "4% of Gross Rooms Revenue", "due_date": "Monthly by 15th of following month", "remarks": "May increase. See Notes 1 and 2"},
+        {"type": "Room Addition Fee", "amount": "$400 per guest room", "due_date": "With application for approval", "remarks": "Non-refundable once approved"},
+        {"type": "PIP Fee (ongoing)", "amount": "$10,000", "due_date": "Before PIP inspection", "remarks": "For COO, Conversion, Re-licensing, Room Addition, or renovation"},
+        {"type": "OnQ Connectivity", "amount": "$400 to $600/month", "due_date": "Billed monthly", "remarks": "Based on workstations"},
+        {"type": "HW Maintenance/Support", "amount": "$1,114 to $2,568/month", "due_date": "Monthly by 15th", "remarks": "OnQ hardware + HPMS software"},
+        {"type": "OnQ Email", "amount": "$7.92/user/month + $12.50/month mobile", "due_date": "Billed quarterly", "remarks": "Minimum 3 accounts"},
+        {"type": "Connected Room Maintenance", "amount": "$417 to $779/month", "due_date": "Monthly by 15th", "remarks": "See Item 11"},
+        {"type": "Delphi Sales & Events", "amount": "$858/user/year", "due_date": "Billed annually", "remarks": "Passed through to vendor"},
+        {"type": "Guest Assistance – Diamond", "amount": "$300/transaction", "due_date": "Within 48 hours of invoice", "remarks": "Gold $250, other $200"},
+        {"type": "Price Match Guarantee", "amount": "25% discount off lower rate on approved claims", "due_date": "When stay consumed", "remarks": "Mandatory"},
+        {"type": "Plans and Designs Late Fee", "amount": "$5,000 every 90 days", "due_date": "Within 10 days of billing", "remarks": "See Note 3"},
+        {"type": "Brand Non-Compliance Fee", "amount": "$65 to $145/approved room", "due_date": "Within 10 days of billing", "remarks": "Per consecutive unacceptable QA grade, max $50,000 per 6-month period"},
+        {"type": "Brand Non-Compliance Re-Evaluation", "amount": "Up to $4,500", "due_date": "Within 10 days of billing", "remarks": "Per re-evaluation or no-show/cancellation"},
+        {"type": "Brand Non-Compliance Special Audit", "amount": "$5,500", "due_date": "Within 10 days of billing", "remarks": "Per special audit"},
+        {"type": "PIP/Renovation Failure Fee", "amount": "$10,000 every 6 months", "due_date": "Within 10 days of billing", "remarks": "Until work properly completed"},
+        {"type": "Stay Score Failure Fee", "amount": "Up to $300/room or 0.5% GRR annually", "due_date": "Within 10 days of billing", "remarks": "Assessed at least twice per year"},
+        {"type": "Service Quality Improvement Program", "amount": "$20,000 to $50,000 per 6-month period", "due_date": "Within 10 days of billing", "remarks": "For hotels below minimum Service Quality Standards >6 months"},
+        {"type": "Brand Conference", "amount": "$2,500/attendee", "due_date": "Before attendance", "remarks": "GM and DOS required, usually annual"},
+        {"type": "GM/Commercial/Sales Leader Training", "amount": "Up to $1,200/attendee", "due_date": "Before attendance", "remarks": "Required for new GMs and commercial leaders"},
+        {"type": "Core Sales Skills Training", "amount": "Up to $600/attendee", "due_date": "Before attendance", "remarks": "Required for DOS, sales managers"},
+        {"type": "Other Training Programs", "amount": "Up to $5,000/program/attendee", "due_date": "Before attendance", "remarks": "Some required, some optional"},
+        {"type": "Travel Clubs (AAA/CAA)", "amount": "$0.30/available room + 10% commission", "due_date": "Billed annually/monthly", "remarks": "See Note 5"},
+        {"type": "Hilton Advance Program", "amount": "1.35% of Digital Direct Revenue (max $30/stay)", "due_date": "Monthly", "remarks": "See Note 1"},
+        {"type": "Hilton Honors", "amount": "4.9% of total eligible guest folio", "due_date": "10 days after billing", "remarks": "Waived for on-property enrollment. See Note 6"},
+        {"type": "Hilton For Business", "amount": "Up to 3% of GRR per eligible stay", "due_date": "As incurred", "remarks": "Optional, auto-enrolled, may opt out annually"},
+        {"type": "Online Group Event Booking", "amount": "Up to 2% of Booked Reservation Charges + up to 5% Groups360 commissions", "due_date": "On demand", "remarks": "Only if inventory loaded; optional but may become required"},
+        {"type": "Centralized Payment Programs", "amount": "Up to $5.93/stay (3rd party) + $0.18-$1.42/transaction (various)", "due_date": "Monthly", "remarks": "Required programs"},
+        {"type": "COO Application Fee", "amount": "$200,000", "due_date": "With application", "remarks": "For non-Permitted Transfers"},
+        {"type": "Permitted Transfer Processing Fee", "amount": "$5,500", "due_date": "With request", "remarks": "For Permitted Transfers requiring consent"},
+        {"type": "Re-licensing Application Fee", "amount": "$100,000", "due_date": "With application", "remarks": "For re-licensing to existing franchisee"},
+        {"type": "Lender Comfort Letter Fee", "amount": "$3,500 / $1,500 for assignments", "due_date": "Before issuance", "remarks": ""},
+        {"type": "Liquidated Damages – Pre-Opening", "amount": "System's Avg Monthly Royalty × 60", "due_date": "On demand", "remarks": "If terminated before opening. See Note 8"},
+        {"type": "Liquidated Damages – Post-Opening (<2yr)", "amount": "Greater of Hotel's or System's Avg Monthly Royalty × 60", "due_date": "On demand", "remarks": "See Note 8"},
+        {"type": "Liquidated Damages – Post-Opening (>2yr, >60mo remaining)", "amount": "Hotel's Avg Monthly Royalty × 60", "due_date": "On demand", "remarks": "See Note 8"},
+        {"type": "Liquidated Damages – Post-Opening (last 60mo)", "amount": "Hotel's Avg Monthly Royalty × remaining months", "due_date": "On demand", "remarks": "See Note 8"},
+        {"type": "Service Charges on Overdue", "amount": "1.5%/month (or max legal rate)", "due_date": "On demand", "remarks": ""},
+        {"type": "RMCC Category 1", "amount": "$1,815 (one-time)", "due_date": "Within 10 days of billing", "remarks": "Optional unless circumstances trigger"},
+        {"type": "RMCC Category 2", "amount": "$1,355 to $15,709/month", "due_date": "Within 10 days of billing", "remarks": "Monthly full support, mandatory in some circumstances"},
+        {"type": "Procurement and Services Fees", "amount": "4% to 10% of project cost", "due_date": "As agreed", "remarks": "If buying from HSM"}
+      ],
+      "table_notes": [
+        "Note 1: GRR includes all revenues from sale/rental of guest rooms, Hilton Honors redemptions, breakfast bundled in room rate, Mandatory Guest Fees, late cancellation, guaranteed no-show. Royalty modified in 66 instances in 2024; program fee in 6.",
+        "Note 2: Monthly Program Fee rate may increase but not exceed current rate plus 1% of GRR over the term. Funds reservation systems, advertising, tech, QA, and admin.",
+        "Note 3: QA program includes Plans/Designs Late Fee, Brand Non-Compliance, PIP/Renovation Failure, Stay Score Failure, and SQIP. Amounts collected in excess of actual costs used to supplement Monthly Program Fee.",
+        "Note 6: Hilton Honors: 4.9% of eligible folio. Waived for stays where guest enrolled on-property. Additional bonus point costs may apply. Program costs subject to change.",
+        "Note 8: Hotel's Average Monthly Royalty = 24-month lookback divided by 24. System's Average Monthly Royalty = systemwide per-room average × hotel room count. Business Interruption periods excluded."
+      ],
+      "provenance": "Item 6, PDF pp. 26-38 (FDD pp. 18-30)"
+    },
+    {
+      "table_id": "T03",
+      "item": 7,
+      "title": "Estimated Initial Investment — Hampton Inn (89 Rooms)",
+      "source_pages": [39, 40],
+      "columns": ["Type of Expenditure", "Amount", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Franchise Application Fee", "amount_low": 100000, "amount_high": 100000, "to_whom": "Us"},
+        {"type": "Property Improvement Plan", "amount_low": 0, "amount_high": 10000, "to_whom": "Us"},
+        {"type": "Market Study", "amount": "Varies", "to_whom": "Supplier"},
+        {"type": "Environmental Assessment", "amount": "Varies", "to_whom": "Supplier"},
+        {"type": "Real Property", "amount": "Varies", "to_whom": "Supplier"},
+        {"type": "Construction and Leasehold Improvements", "amount_low": 11139759, "amount_high": 16090763, "to_whom": "Suppliers"},
+        {"type": "Design and Engineering Fees", "amount_low": 445509, "amount_high": 643631, "to_whom": "Suppliers"},
+        {"type": "Furniture, Fixtures and Equipment", "amount_low": 1228796, "amount_high": 1746184, "to_whom": "Suppliers"},
+        {"type": "Inventory and Operating Equipment", "amount_low": 99000, "amount_high": 220000, "to_whom": "Suppliers"},
+        {"type": "Signage", "amount_low": 25000, "amount_high": 75000, "to_whom": "Supplier"},
+        {"type": "Computer Hardware and Software Systems", "amount_low": 32685, "amount_high": 86975, "to_whom": "Us or Supplier"},
+        {"type": "Guest Internet Access System", "amount_low": 45467, "amount_high": 65187, "to_whom": "Supplier"},
+        {"type": "Connected Room System", "amount_low": 22345, "amount_high": 26705, "to_whom": "Supplier"},
+        {"type": "Delphi Sales and Events System", "amount_low": 900, "amount_high": 16900, "to_whom": "Supplier"},
+        {"type": "Required Pre-Opening Training", "amount_low": 5000, "amount_high": 17500, "to_whom": "Us and Suppliers"},
+        {"type": "ADA Consultant Fee", "amount_low": 2500, "amount_high": 10000, "to_whom": "Supplier"},
+        {"type": "Construction/Renovation Extension Fees", "amount_low": 0, "amount_high": 10000, "to_whom": "Us"},
+        {"type": "Insurance", "amount": "Varies", "to_whom": "Agent/Insurer"},
+        {"type": "Organizational Expense", "amount_low": 50000, "amount_high": 135239, "to_whom": "Accountant/Attorney"},
+        {"type": "Permits, Licenses and Governmental Fees", "amount_low": 167096, "amount_high": 241361, "to_whom": "Government Agencies"},
+        {"type": "Miscellaneous Pre-Opening and Project Management", "amount_low": 334193, "amount_high": 482723, "to_whom": "Suppliers"},
+        {"type": "Contingencies", "amount_low": 1113976, "amount_high": 1609076, "to_whom": "Suppliers"},
+        {"type": "Additional Funds (3 months operating)", "amount_low": 400000, "amount_high": 600000, "to_whom": "Suppliers"},
+        {"type": "Other Required Pre-opening Services Fees", "amount_low": 6000, "amount_high": 6000, "to_whom": "Us"}
+      ],
+      "total_low": 15218226,
+      "total_high": 22193244,
+      "table_notes": [
+        "Excludes real property, market studies, insurance, interest, and conversion/re-licensing/COO improvement costs.",
+        "Construction estimates based on 89-room prototype.",
+        "Contingencies = at least 10% of construction costs.",
+        "Additional Funds = 3 months operating expenses including payroll."
+      ],
+      "provenance": "Item 7, PDF pp. 39-40 (FDD pp. 31-32)"
+    },
+    {
+      "table_id": "T04",
+      "item": 7,
+      "title": "Estimated Initial Investment — Hampton Inn & Suites (113 Rooms)",
+      "source_pages": [40, 41],
+      "columns": ["Type of Expenditure", "Amount", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Franchise Application Fee", "amount_low": 100000, "amount_high": 100000, "to_whom": "Us"},
+        {"type": "Property Improvement Plan", "amount_low": 0, "amount_high": 10000, "to_whom": "Us"},
+        {"type": "Market Study", "amount": "Varies", "to_whom": "Supplier"},
+        {"type": "Environmental Assessment", "amount": "Varies", "to_whom": "Supplier"},
+        {"type": "Real Property", "amount": "Varies", "to_whom": "Supplier"},
+        {"type": "Construction and Leasehold Improvements", "amount_low": 12929796, "amount_high": 18676372, "to_whom": "Suppliers"},
+        {"type": "Design and Engineering Fees", "amount_low": 517192, "amount_high": 747055, "to_whom": "Suppliers"},
+        {"type": "Furniture, Fixtures and Equipment", "amount_low": 1493027, "amount_high": 2121669, "to_whom": "Suppliers"},
+        {"type": "Inventory and Operating Equipment", "amount_low": 99000, "amount_high": 220000, "to_whom": "Suppliers"},
+        {"type": "Signage", "amount_low": 25000, "amount_high": 75000, "to_whom": "Supplier"},
+        {"type": "Computer Hardware and Software Systems", "amount_low": 35040, "amount_high": 89054, "to_whom": "Us or Supplier"},
+        {"type": "Guest Internet Access System", "amount_low": 57727, "amount_high": 82766, "to_whom": "Supplier"},
+        {"type": "Connected Room System", "amount_low": 27265, "amount_high": 32585, "to_whom": "Supplier"},
+        {"type": "Delphi Sales and Events System", "amount_low": 900, "amount_high": 16900, "to_whom": "Supplier"},
+        {"type": "Required Pre-Opening Training", "amount_low": 5000, "amount_high": 17500, "to_whom": "Us and Suppliers"},
+        {"type": "ADA Consultant Fee", "amount_low": 2500, "amount_high": 10000, "to_whom": "Supplier"},
+        {"type": "Construction/Renovation Extension Fees", "amount_low": 0, "amount_high": 10000, "to_whom": "Us"},
+        {"type": "Insurance", "amount": "Varies", "to_whom": "Agent/Insurer"},
+        {"type": "Organizational Expense", "amount_low": 50000, "amount_high": 135239, "to_whom": "Accountant/Attorney"},
+        {"type": "Permits, Licenses and Governmental Fees", "amount_low": 193947, "amount_high": 280146, "to_whom": "Government Agencies"},
+        {"type": "Miscellaneous Pre-Opening and Project Management", "amount_low": 387894, "amount_high": 560291, "to_whom": "Suppliers"},
+        {"type": "Contingencies", "amount_low": 1292980, "amount_high": 1867637, "to_whom": "Suppliers"},
+        {"type": "Additional Funds (3 months operating)", "amount_low": 500000, "amount_high": 900000, "to_whom": "Suppliers"},
+        {"type": "Other Required Pre-opening Services Fees", "amount_low": 6000, "amount_high": 6000, "to_whom": "Us"}
+      ],
+      "total_low": 17723268,
+      "total_high": 25958214,
+      "table_notes": [
+        "Based on 113-room hotel with 81 rooms and 32 studio suites.",
+        "Same exclusions as Hampton Inn table."
+      ],
+      "provenance": "Item 7, PDF pp. 40-41 (FDD pp. 32-33)"
+    },
+    {
+      "table_id": "T05",
+      "item": 19,
+      "title": "Room Rates — Comparable Hampton Inn Hotels (2023–2024)",
+      "source_pages": [83],
+      "columns": ["Metric", "2023", "2024"],
+      "rows": [
+        {"metric": "Average Room Rate of all Comparable Hotels", "2023": "$144.00", "2024": "$145.82"},
+        {"metric": "Median Room Rate of all Comparable Hotels", "2023": "$134.69", "2024": "$136.40"},
+        {"metric": "Company-Managed at/above Average", "2023": "5/71.4%", "2024": "5/71.4%"},
+        {"metric": "Company-Managed at/above Median", "2023": "6/85.7%", "2024": "6/85.7%"},
+        {"metric": "Franchisee-Managed at/above Average", "2023": "351/32.0%", "2024": "362/33.0%"},
+        {"metric": "Franchisee-Managed at/above Median", "2023": "546/49.8%", "2024": "546/49.8%"}
+      ],
+      "table_notes": ["Population: 1,107 Comparable Hampton Inn hotels (7 Company-Managed, 1,100 Franchisee-Managed). Rate range 2024: $77.60 to $315.97."],
+      "provenance": "Item 19, PDF p. 83 (FDD p. 75)"
+    },
+    {
+      "table_id": "T06",
+      "item": 19,
+      "title": "Room Rates — Comparable Hampton Inn & Suites Hotels (2023–2024)",
+      "source_pages": [83],
+      "columns": ["Metric", "2023", "2024"],
+      "rows": [
+        {"metric": "Average Room Rate of all Comparable Hotels", "2023": "$151.14", "2024": "$152.19"},
+        {"metric": "Median Room Rate of all Comparable Hotels", "2023": "$143.27", "2024": "$145.67"},
+        {"metric": "Company-Managed at/above Average", "2023": "5/62.5%", "2024": "6/75.0%"},
+        {"metric": "Company-Managed at/above Median", "2023": "6/75.0%", "2024": "7/87.5%"},
+        {"metric": "Franchisee-Managed at/above Average", "2023": "314/37.0%", "2024": "325/38.3%"},
+        {"metric": "Franchisee-Managed at/above Median", "2023": "423/49.8%", "2024": "422/49.7%"}
+      ],
+      "table_notes": ["Population: 853 Comparable Hampton Inn & Suites hotels (8 Company-Managed, 845 Franchisee-Managed). Rate range 2024: $86.35 to $285.65."],
+      "provenance": "Item 19, PDF p. 83 (FDD p. 75)"
+    },
+    {
+      "table_id": "T07",
+      "item": 19,
+      "title": "Occupancy — Combined Comparable Hampton Hotels (2023–2024)",
+      "source_pages": [83],
+      "columns": ["Metric", "2023", "2024"],
+      "rows": [
+        {"metric": "Average Occupancy", "2023": "71.6%", "2024": "71.7%"},
+        {"metric": "Median Occupancy", "2023": "71.6%", "2024": "71.9%"},
+        {"metric": "Company-Managed at/above Average", "2023": "12/80.0%", "2024": "12/80.0%"},
+        {"metric": "Company-Managed at/above Median", "2023": "12/80.0%", "2024": "11/73.3%"},
+        {"metric": "Franchisee-Managed at/above Average", "2023": "1,019/52.4%", "2024": "987/50.7%"},
+        {"metric": "Franchisee-Managed at/above Median", "2023": "1,019/52.4%", "2024": "969/49.8%"}
+      ],
+      "table_notes": ["Combined HI + H&S. 1,960 Comparable Hotels (15 Company-Managed, 1,945 Franchisee-Managed). Occupancy range 2024: 30.5% to 96.6%."],
+      "provenance": "Item 19, PDF p. 83 (FDD p. 75)"
+    },
+    {
+      "table_id": "T08",
+      "item": 19,
+      "title": "Occupancy Index — Combined Comparable Hampton Hotels (2023–2024)",
+      "source_pages": [84],
+      "columns": ["Metric", "2023", "2024"],
+      "rows": [
+        {"metric": "Average Occupancy Index", "2023": "109.4", "2024": "109.8"},
+        {"metric": "Median Occupancy Index", "2023": "110.1", "2024": "110.1"},
+        {"metric": "Company-Managed at/above Average", "2023": "3/20.0%", "2024": "5/33.3%"},
+        {"metric": "Company-Managed at/above Median", "2023": "3/20.0%", "2024": "5/33.3%"},
+        {"metric": "Franchisee-Managed at/above Average", "2023": "1006/52.1%", "2024": "987/51.1%"},
+        {"metric": "Franchisee-Managed at/above Median", "2023": "971/50.3%", "2024": "969/50.2%"}
+      ],
+      "table_notes": ["Excludes 9 franchisee-managed in 2023 and 14 in 2024 due to insufficient data. Index of 100 = fair share. Range 2024: 43.4 to 224.0. Source: STR and Hilton."],
+      "provenance": "Item 19, PDF p. 84 (FDD p. 76)"
+    },
+    {
+      "table_id": "T09",
+      "item": 19,
+      "title": "RevPAR Index — Combined Comparable Hampton Hotels (2023–2024)",
+      "source_pages": [85],
+      "columns": ["Metric", "2023", "2024"],
+      "rows": [
+        {"metric": "Average RevPAR Index", "2023": "120.7", "2024": "121.0"},
+        {"metric": "Median RevPAR Index", "2023": "122.6", "2024": "122.7"},
+        {"metric": "Company-Managed at/above Average", "2023": "4/26.7%", "2024": "5/33.3%"},
+        {"metric": "Company-Managed at/above Median", "2023": "4/26.7%", "2024": "5/33.3%"},
+        {"metric": "Franchisee-Managed at/above Average", "2023": "1,036/53.6%", "2024": "1026/53.1%"},
+        {"metric": "Franchisee-Managed at/above Median", "2023": "970/50.2%", "2024": "969/50.2%"}
+      ],
+      "table_notes": ["Excludes 9 franchisee-managed in 2023 and 14 in 2024 due to insufficient data. Range 2024: 39.5 to 334.4. Source: STR and Hilton."],
+      "provenance": "Item 19, PDF p. 85 (FDD p. 77)"
+    },
+    {
+      "table_id": "T10",
+      "item": 20,
+      "title": "Hampton Inn — Systemwide Hotel Summary (2022–2024)",
+      "source_pages": [86],
+      "columns": ["Hotel Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 1313, "end": 1331, "net": 18},
+        {"type": "Franchised", "year": 2023, "start": 1331, "end": 1346, "net": 15},
+        {"type": "Franchised", "year": 2024, "start": 1346, "end": 1345, "net": -1},
+        {"type": "Company-Owned", "year": 2022, "start": 0, "end": 0, "net": 0},
+        {"type": "Company-Owned", "year": 2023, "start": 0, "end": 0, "net": 0},
+        {"type": "Company-Owned", "year": 2024, "start": 0, "end": 0, "net": 0}
+      ],
+      "table_notes": ["100% franchised system."],
+      "provenance": "Item 20, PDF p. 86 (FDD p. 78)"
+    },
+    {
+      "table_id": "T11",
+      "item": 20,
+      "title": "Hampton Inn — Franchised Hotels Activity (2022–2024, National Totals)",
+      "source_pages": [89, 90, 91],
+      "columns": ["Year", "Start", "Opened", "Terminated", "Non-Renewed", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        {"year": 2022, "start": 1323, "opened": 17, "terminated": 6, "non_renewed": 3, "reacquired": 0, "ceased_other": 0, "end": 1331},
+        {"year": 2023, "start": 1331, "opened": 25, "terminated": 10, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1346},
+        {"year": 2024, "start": 1346, "opened": 13, "terminated": 8, "non_renewed": 4, "reacquired": 0, "ceased_other": -2, "end": 1345}
+      ],
+      "table_notes": ["State-by-state detail available in FDD. Transfers 2024: 65."],
+      "provenance": "Item 20, PDF pp. 89-91 (FDD pp. 81-83)"
+    },
+    {
+      "table_id": "T12",
+      "item": 20,
+      "title": "Hampton Inn & Suites — Systemwide Hotel Summary (2022–2024)",
+      "source_pages": [93],
+      "columns": ["Hotel Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 986, "end": 1002, "net": 16},
+        {"type": "Franchised", "year": 2023, "start": 1002, "end": 1015, "net": 13},
+        {"type": "Franchised", "year": 2024, "start": 1015, "end": 1024, "net": 9},
+        {"type": "Company-Owned", "year": 2022, "start": 0, "end": 0, "net": 0},
+        {"type": "Company-Owned", "year": 2023, "start": 0, "end": 0, "net": 0},
+        {"type": "Company-Owned", "year": 2024, "start": 0, "end": 0, "net": 0}
+      ],
+      "table_notes": ["100% franchised system."],
+      "provenance": "Item 20, PDF p. 93 (FDD p. 85)"
+    },
+    {
+      "table_id": "T13",
+      "item": 20,
+      "title": "Hampton Inn & Suites — Franchised Hotels Activity (2022–2024, National Totals)",
+      "source_pages": [96, 97, 98],
+      "columns": ["Year", "Start", "Opened", "Terminated", "Non-Renewed", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        {"year": 2022, "start": 986, "opened": 19, "terminated": 3, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1002},
+        {"year": 2023, "start": 1002, "opened": 14, "terminated": 1, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1015},
+        {"year": 2024, "start": 1015, "opened": 12, "terminated": 0, "non_renewed": 2, "reacquired": 0, "ceased_other": -1, "end": 1024}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF pp. 96-98 (FDD pp. 88-90)"
+    },
+    {
+      "table_id": "T14",
+      "item": 20,
+      "title": "Hampton Inn — Projected Openings (as of Dec 31, 2024)",
+      "source_pages": [92],
+      "columns": ["Metric", "Count"],
+      "rows": [
+        {"metric": "Franchise Agreements Signed but Hotels Not Opened", "count": 167},
+        {"metric": "Projected New Franchised Hotels in Next Fiscal Year", "count": 25},
+        {"metric": "Projected New Company-Owned Hotels in Next Fiscal Year", "count": 0}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF p. 92 (FDD p. 84)"
+    },
+    {
+      "table_id": "T15",
+      "item": 20,
+      "title": "Hampton Inn & Suites — Projected Openings (as of Dec 31, 2024)",
+      "source_pages": [99],
+      "columns": ["Metric", "Count"],
+      "rows": [
+        {"metric": "Franchise Agreements Signed but Hotels Not Opened", "count": 138},
+        {"metric": "Projected New Franchised Hotels in Next Fiscal Year", "count": 27},
+        {"metric": "Projected New Company-Owned Hotels in Next Fiscal Year", "count": 0}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF p. 99 (FDD p. 91)"
+    },
+    {
+      "table_id": "T16",
+      "item": 21,
+      "title": "Balance Sheet (Dec 31, 2024 and 2023, $000s)",
+      "source_pages": [211],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"line": "Cash", "2024": 317, "2023": 5348},
+        {"line": "Accounts receivable, net", "2024": 135970, "2023": 127999},
+        {"line": "Other receivables due from Hilton affiliates", "2024": 703943, "2023": 768478},
+        {"line": "Franchise contracts, net", "2024": 392748, "2023": 238533},
+        {"line": "Total assets", "2024": 1269897, "2023": 1183147},
+        {"line": "Franchise deposits", "2024": 18498, "2023": 18885},
+        {"line": "Deferred revenues (current + non-current)", "2024": 558880, "2023": 524229},
+        {"line": "Total liabilities", "2024": 692892, "2023": 566693},
+        {"line": "Contributed capital", "2024": 310000, "2023": 310000},
+        {"line": "Retained earnings", "2024": 528936, "2023": 541365},
+        {"line": "Due from Hilton affiliates (contra equity)", "2024": -261959, "2023": -234911},
+        {"line": "Member's equity", "2024": 577005, "2023": 616454}
+      ],
+      "table_notes": ["Entity is asset-light franchise fee collection vehicle. $703.9M due from Hilton affiliates represents the largest current asset."],
+      "provenance": "Exhibit C, PDF p. 211 (Financial Statements p. 3)"
+    },
+    {
+      "table_id": "T17",
+      "item": 21,
+      "title": "Income Statement (2022–2024, $000s)",
+      "source_pages": [212],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"line": "Franchise royalty fees", "2024": 1434453, "2023": 1331169, "2022": 1184827},
+        {"line": "Franchise sales and COO fees", "2024": 49340, "2023": 43294, "2022": 39881},
+        {"line": "Franchise termination fees and other", "2024": 18276, "2023": 2434, "2022": 4757},
+        {"line": "Total revenues", "2024": 1502069, "2023": 1376897, "2022": 1229465},
+        {"line": "Total expenses", "2024": 11353, "2023": 5705, "2022": -1544},
+        {"line": "Operating income", "2024": 1490716, "2023": 1371192, "2022": 1231009},
+        {"line": "Net income", "2024": 1487571, "2023": 1372281, "2022": 1233442},
+        {"line": "Distributions to Hilton affiliates", "2024": 1500000, "2023": 1400000, "2022": 1550000}
+      ],
+      "table_notes": [
+        "99%+ operating margin — entity is a pure franchise fee conduit.",
+        "Virtually all net income is distributed upstream.",
+        "Revenue growth: +11.3% (2023), +9.1% (2024)."
+      ],
+      "provenance": "Exhibit C, PDF p. 212 (Financial Statements p. 4)"
+    },
+    {
+      "table_id": "T18",
+      "item": 21,
+      "title": "Cash Flow Statement (2022–2024, $000s)",
+      "source_pages": [213],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"line": "Net cash provided by operating activities", "2024": 1516760, "2023": 1423109, "2022": 1569887},
+        {"line": "Net cash used in investing activities", "2024": -80050, "2023": 0, "2022": 0},
+        {"line": "Net cash used in financing activities", "2024": -1441744, "2023": -1417891, "2022": -1569964},
+        {"line": "Cash, end of year", "2024": 317, "2023": 5348, "2022": 99}
+      ],
+      "table_notes": ["Financing activities dominated by distributions to Hilton affiliates."],
+      "provenance": "Exhibit C, PDF p. 213 (Financial Statements p. 5)"
+    }
+  ]
+}

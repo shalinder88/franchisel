@@ -1,0 +1,68 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "System Standards comprise 3,641 pages",
+      "source": "Pass C (reader report) / Item 11, PDF page 52",
+      "promoted_to": "technology.system_standards_pages",
+      "already_in_canonical": false
+    },
+    {
+      "fact": "PMS vendor monthly fee: $3.90/room/month",
+      "source": "Pass C / Item 11, PDF page 55",
+      "promoted_to": "technology.pms_vendor_monthly",
+      "already_in_canonical": true
+    },
+    {
+      "fact": "Music system: $18.95/month",
+      "source": "Pass C / Item 11, PDF page 55",
+      "promoted_to": "technology.music_monthly",
+      "already_in_canonical": false
+    },
+    {
+      "fact": "Pre-opening marketing minimum: $500 x number of guest rooms",
+      "source": "Pass C / Item 11, PDF page 50",
+      "promoted_to": "fees.ongoing_fees.pre_opening_marketing_minimum",
+      "already_in_canonical": false
+    },
+    {
+      "fact": "Reservation stay length distribution: 78.9% 1-4 nights, 18.8% 5-11 nights, 1.9% 12-29 nights, 0.4% 30+ nights",
+      "source": "Pass F / Item 19, PDF page 81",
+      "promoted_to": "item19_fpr.stay_length_distribution",
+      "already_in_canonical": false
+    },
+    {
+      "fact": "Franchise and other fee revenues grew from $297M (2022) to $458M (2024) — 54% increase",
+      "source": "Pass H / Item 21, PDF page 101",
+      "promoted_to": "item21_financials.franchise_fee_growth",
+      "already_in_canonical": false
+    },
+    {
+      "fact": "Loyalty program liability: $1,333M as of 12/31/2024",
+      "source": "Pass H / Item 21, PDF page 99",
+      "promoted_to": "item21_financials.loyalty_program_liability_millions",
+      "already_in_canonical": false
+    },
+    {
+      "fact": "Global portfolio: 1,442 hotels, 347,301 rooms in 79 countries (including 721 US hotels, 159,829 US rooms)",
+      "source": "Financial notes Note 1, PDF page 108",
+      "promoted_to": "item1_structural_facts.global_portfolio",
+      "already_in_canonical": false
+    },
+    {
+      "fact": "Michigan front matter: Franchisor states intent to enforce arbitration despite Michigan law voiding out-of-state forum provisions",
+      "source": "Front matter, PDF page 6",
+      "promoted_to": "dispute_resolution.michigan_arbitration_tension",
+      "already_in_canonical": false
+    },
+    {
+      "fact": "Hyatt Franchising L.L.C. total assets $159.3M, member's equity $148.5M, franchise agreement assets $144.8M",
+      "source": "California addendum, PDF page 359",
+      "promoted_to": "item21_financials.franchisor_entity_balance_sheet",
+      "already_in_canonical": true
+    }
+  ],
+  "total_promotions": 10,
+  "new_facts_added": 8,
+  "already_present": 2
+}

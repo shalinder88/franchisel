@@ -1,0 +1,318 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637915-2025",
+  "brand": "Rytech",
+  "tables": [
+    {
+      "table_id": "T01_item5_initial_fees",
+      "item": 5,
+      "title": "Initial Franchise Fee Structure",
+      "source_pages": [9, 10],
+      "columns": ["Description", "Amount"],
+      "rows": [
+        {"Description": "Base franchise fee (300K-400K population)", "Amount": "$60,000"},
+        {"Description": "Per person above 400K population", "Amount": "$0.20"},
+        {"Description": "Range for 400,001-500,000 population", "Amount": "$60,000.20 - $85,000"},
+        {"Description": "Veterans discount (first franchise only)", "Amount": "-$10,000"},
+        {"Description": "Expansion franchise fee", "Amount": "$60,000"},
+        {"Description": "Range of fees collected last fiscal year", "Amount": "$35,000 - $60,000"}
+      ],
+      "table_notes": ["Fee is fully earned and non-refundable upon signing", "Maximum territory population is 500,000", "Incentive programs for existing franchisees may apply (Top Ten, Rising Star)"],
+      "provenance": "Item 5, pages 9-10"
+    },
+    {
+      "table_id": "T02_item6_other_fees",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [10, 11, 12],
+      "columns": ["Fee Name", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Fee Name": "Royalty Fees", "Amount": "8% of Gross Revenues, $2,000/mo minimum", "Due Date": "RyPay or 15th of month", "Remarks": "Min waived first 12 months if in good standing; $500K sales by month 24 required"},
+        {"Fee Name": "Administrative Fee", "Amount": "11% of Gross Revenues", "Due Date": "RyPay or 15th of month", "Remarks": "Paid to Rytech Admin Services, LLC (affiliate)"},
+        {"Fee Name": "National Ad Fund", "Amount": "1% GR (max 3%)", "Due Date": "RyPay or by 15th of month", "Remarks": "90 days written notice for increase"},
+        {"Fee Name": "Local Advertising", "Amount": "$1,000 or 4% GR, whichever greater", "Due Date": "Monthly", "Remarks": "May be increased to 6%"},
+        {"Fee Name": "Late Payment", "Amount": "$50 + 1.5%/month or max by law", "Due Date": "When overdue", "Remarks": ""},
+        {"Fee Name": "Additional Persons at Training", "Amount": "$200/day per diem + expenses", "Due Date": "When billed", "Remarks": "Initial training for 2 persons is included"},
+        {"Fee Name": "Additional Training & Assistance", "Amount": "$200/day per diem + expenses", "Due Date": "Before training begins", "Remarks": ""},
+        {"Fee Name": "Renewal", "Amount": "15% of then-current initial franchise fee", "Due Date": "Prior to signing new FA", "Remarks": "NOTE: Footnote 7 says 10%, creating inconsistency"},
+        {"Fee Name": "Transfer", "Amount": "15% of then-current initial franchise fee", "Due Date": "Before transfer effective", "Remarks": "No charge for transfer to wholly-owned entity"},
+        {"Fee Name": "Attorney Fees and Costs", "Amount": "Actual fees and costs", "Due Date": "After adjudication", "Remarks": "Prevailing party"},
+        {"Fee Name": "Supplier Approval", "Amount": "Actual cost of testing", "Due Date": "Upon receipt", "Remarks": "$150/hr, max $2,500 plus actual costs"},
+        {"Fee Name": "Regional Marketing Cooperative", "Amount": "Up to 3% GR", "Due Date": "Monthly", "Remarks": "Counts toward local ad requirement; only FL currently"},
+        {"Fee Name": "Non-Compliance Fee", "Amount": "$250/day", "Due Date": "When billed", "Remarks": "Per day of non-compliance with FA or Manual"},
+        {"Fee Name": "Territory Intrusion Fee (entry 1)", "Amount": "Up to 50% of violating revenue", "Due Date": "RyPay", "Remarks": "For unauthorized territory work"},
+        {"Fee Name": "Rytech U Training Portal", "Amount": "$115/quarter", "Due Date": "RyPay", "Remarks": "IICRC training content, mandatory"},
+        {"Fee Name": "Lead Fee", "Amount": "$10,000", "Due Date": "Prior to closing", "Remarks": "For Rytech-referred leads"},
+        {"Fee Name": "Marketing Supplies", "Amount": "Varies", "Due Date": "When billed", "Remarks": "Through Creative Printing & Publishing (third party)"},
+        {"Fee Name": "Transaction/TPA/Software Fees", "Amount": "Varies per job", "Due Date": "RyPay", "Remarks": "See Addendum 2b to FA"},
+        {"Fee Name": "MICA", "Amount": "$8/transaction + $199/month/location", "Due Date": "RyPay", "Remarks": "Required system of record"},
+        {"Fee Name": "Accounting (NetSuite)", "Amount": "$100/mo single, $175/mo multi", "Due Date": "RyPay", "Remarks": "Cloud accounting platform"},
+        {"Fee Name": "DocuSign", "Amount": "$20/month", "Due Date": "RyPay", "Remarks": "For customer contracts"},
+        {"Fee Name": "Rebuild Fees", "Amount": "4% royalty + 4% admin + 1% ad fund", "Due Date": "RyPay", "Remarks": "Only for rebuild work from Rytech service; subcontractor costs excluded"},
+        {"Fee Name": "Territory Intrusion Fee (entry 2)", "Amount": "75% of total invoiced price", "Due Date": "RyPay", "Remarks": "For unauthorized services in another franchisee's protected territory"},
+        {"Fee Name": "Wizer Security Training", "Amount": "$20/year/user", "Due Date": "RyPay", "Remarks": "Security awareness training"}
+      ],
+      "table_notes": [
+        "Except where otherwise specified, all fees are uniformly imposed, paid to franchisor or affiliate, and non-refundable",
+        "CONTRADICTION: Renewal fee is 15% in table but 10% in Note 7 (page 14)",
+        "CONTRADICTION: Territory Intrusion Fee appears twice with different rates (50% vs 75%)",
+        "POTENTIAL CONTRADICTION: National Ad Fund max is 3% in table but 2% in Note 3"
+      ],
+      "provenance": "Item 6, pages 10-12, footnotes pages 13-14"
+    },
+    {
+      "table_id": "T03_item7_initial_investment",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [15],
+      "columns": ["Type of Expenditure", "Minimum", "Maximum", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"Type of Expenditure": "Initial Franchise Fee", "Minimum": "$60,000", "Maximum": "$85,000", "Method of Payment": "Upon Signing FA", "When Due": "Upon Signing FA", "To Whom": "Franchisor"},
+        {"Type of Expenditure": "Initial Equipment and Supplies", "Minimum": "$55,000", "Maximum": "$60,000", "Method of Payment": "As Incurred", "When Due": "As Arranged", "To Whom": "Franchisor or Approved Suppliers"},
+        {"Type of Expenditure": "Office Equipment & Supplies", "Minimum": "$5,000", "Maximum": "$10,000", "Method of Payment": "As Incurred", "When Due": "As Arranged", "To Whom": "Vendors"},
+        {"Type of Expenditure": "Grand Opening Marketing", "Minimum": "$1,500", "Maximum": "$3,000", "Method of Payment": "As Incurred", "When Due": "As Arranged", "To Whom": "Vendors"},
+        {"Type of Expenditure": "Travel for Initial Training", "Minimum": "$3,000", "Maximum": "$7,000", "Method of Payment": "As Incurred", "When Due": "As Arranged", "To Whom": "Vendors"},
+        {"Type of Expenditure": "Certification Training + Travel", "Minimum": "$4,900", "Maximum": "$7,000", "Method of Payment": "As Incurred per person", "When Due": "As Arranged", "To Whom": "Government/Cert Agencies"},
+        {"Type of Expenditure": "Insurance (3 months)", "Minimum": "$4,000", "Maximum": "$15,000", "Method of Payment": "As Incurred", "When Due": "As Arranged", "To Whom": "Insurance Company"},
+        {"Type of Expenditure": "Business Licenses", "Minimum": "$100", "Maximum": "$1,000", "Method of Payment": "As Incurred", "When Due": "As Arranged", "To Whom": "Government Agencies"},
+        {"Type of Expenditure": "Utility Deposits", "Minimum": "$200", "Maximum": "$600", "Method of Payment": "As Incurred", "When Due": "As Arranged", "To Whom": "Utility Companies"},
+        {"Type of Expenditure": "Legal & Accounting Fees", "Minimum": "$2,000", "Maximum": "$6,000", "Method of Payment": "As Incurred", "When Due": "As Arranged", "To Whom": "Legal & Accounting Firms"},
+        {"Type of Expenditure": "Vehicle Finance Payments (monthly)", "Minimum": "$2,000", "Maximum": "$4,000", "Method of Payment": "As Incurred", "When Due": "Monthly", "To Whom": "Truck Dealer"},
+        {"Type of Expenditure": "Royalty Fees (1st 3 months)", "Minimum": "$2,000", "Maximum": "$4,000", "Method of Payment": "As Incurred", "When Due": "As Arranged", "To Whom": "Franchisor"},
+        {"Type of Expenditure": "Local Advertising (1st 3 months)", "Minimum": "$1,500", "Maximum": "$4,500", "Method of Payment": "As Incurred", "When Due": "As Arranged", "To Whom": "Vendors"},
+        {"Type of Expenditure": "Transaction/TPA/Software Fees", "Minimum": "$300", "Maximum": "$1,000", "Method of Payment": "As Incurred", "When Due": "RyPay", "To Whom": "Franchisor"},
+        {"Type of Expenditure": "Additional Funds", "Minimum": "$25,000", "Maximum": "$50,000", "Method of Payment": "As Arranged", "When Due": "As Arranged", "To Whom": "Vendors"},
+        {"Type of Expenditure": "TOTAL", "Minimum": "$166,500", "Maximum": "$258,100", "Method of Payment": "", "When Due": "", "To Whom": ""}
+      ],
+      "table_notes": [
+        "None of the above expenses are refundable",
+        "Estimates cover the first three months of operation",
+        "Vehicle total cost $26,000-$60,000 (only monthly payment shown); wrap $1,800-$3,000",
+        "Home-based start permitted — no real estate costs included",
+        "Additional funds do not include owner salary/draw or operations manager salary"
+      ],
+      "provenance": "Item 7, pages 15-17"
+    },
+    {
+      "table_id": "T04_item19_fpr",
+      "item": 19,
+      "title": "Average and Median Gross Revenues (2020-2024)",
+      "source_pages": [36],
+      "columns": ["Operating Year", "Number of Franchisees", "Average Annual Gross Revenues", "Number at/above Average", "Percent at/above Average", "Median Annual Gross Revenues", "Highest Annual Gross Revenues", "Lowest Annual Gross Revenues"],
+      "rows": [
+        {"Operating Year": "2024", "Number of Franchisees": "80", "Average Annual Gross Revenues": "$731,214", "Number at/above Average": "22", "Percent at/above Average": "28%", "Median Annual Gross Revenues": "$467,724", "Highest Annual Gross Revenues": "$4,975,620", "Lowest Annual Gross Revenues": "$74,010"},
+        {"Operating Year": "2023", "Number of Franchisees": "76", "Average Annual Gross Revenues": "$697,747", "Number at/above Average": "27", "Percent at/above Average": "36%", "Median Annual Gross Revenues": "$502,229", "Highest Annual Gross Revenues": "$3,878,319", "Lowest Annual Gross Revenues": "$43,327"},
+        {"Operating Year": "2022", "Number of Franchisees": "67", "Average Annual Gross Revenues": "$696,731", "Number at/above Average": "22", "Percent at/above Average": "33%", "Median Annual Gross Revenues": "$541,481", "Highest Annual Gross Revenues": "$4,180,856", "Lowest Annual Gross Revenues": "$73,638"},
+        {"Operating Year": "2021", "Number of Franchisees": "54", "Average Annual Gross Revenues": "$775,676", "Number at/above Average": "17", "Percent at/above Average": "31%", "Median Annual Gross Revenues": "$563,461", "Highest Annual Gross Revenues": "$4,082,473", "Lowest Annual Gross Revenues": "$72,081"},
+        {"Operating Year": "2020", "Number of Franchisees": "50", "Average Annual Gross Revenues": "$736,081", "Number at/above Average": "15", "Percent at/above Average": "30%", "Median Annual Gross Revenues": "$532,632", "Highest Annual Gross Revenues": "$3,417,505", "Lowest Annual Gross Revenues": "$95,986"}
+      ],
+      "table_notes": [
+        "Only franchisees open for entire 12-month period included",
+        "Franchisees open less than one year or who closed within the period are excluded",
+        "Gross revenues generated from sales collected through RyPay",
+        "No adjustments for geographic location, catastrophic events, or open service areas",
+        "Does not deduct royalties, admin fees, or other fees",
+        "Does not reflect net income or profit",
+        "Written substantiation available upon reasonable request"
+      ],
+      "provenance": "Item 19, page 36"
+    },
+    {
+      "table_id": "T05_item20_systemwide",
+      "item": 20,
+      "title": "Table 1: Systemwide Outlet Summary (2022-2024)",
+      "source_pages": [37],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": "2022", "Start of Year": "74", "End of Year": "80", "Net Change": "+6"},
+        {"Outlet Type": "Franchised", "Year": "2023", "Start of Year": "80", "End of Year": "88", "Net Change": "+8"},
+        {"Outlet Type": "Franchised", "Year": "2024", "Start of Year": "88", "End of Year": "92", "Net Change": "+4"},
+        {"Outlet Type": "Company-Owned", "Year": "2022", "Start of Year": "6", "End of Year": "3", "Net Change": "-3"},
+        {"Outlet Type": "Company-Owned", "Year": "2023", "Start of Year": "3", "End of Year": "2", "Net Change": "-1"},
+        {"Outlet Type": "Company-Owned", "Year": "2024", "Start of Year": "2", "End of Year": "2", "Net Change": "0"},
+        {"Outlet Type": "Total", "Year": "2022", "Start of Year": "80", "End of Year": "83", "Net Change": "+3"},
+        {"Outlet Type": "Total", "Year": "2023", "Start of Year": "83", "End of Year": "90", "Net Change": "+7"},
+        {"Outlet Type": "Total", "Year": "2024", "Start of Year": "90", "End of Year": "94", "Net Change": "+4"}
+      ],
+      "table_notes": ["Franchisor affiliated outlets disclosed as company-owned"],
+      "provenance": "Item 20 Table 1, page 37"
+    },
+    {
+      "table_id": "T06_item20_transfers",
+      "item": 20,
+      "title": "Table 2: Transfers of Outlets (2022-2024)",
+      "source_pages": [37, 38],
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        {"State": "Alabama", "Year": "2023", "Number of Transfers": "1"},
+        {"State": "Georgia", "Year": "2023", "Number of Transfers": "1"},
+        {"State": "Georgia", "Year": "2024", "Number of Transfers": "1"},
+        {"State": "Florida", "Year": "2023", "Number of Transfers": "1"},
+        {"State": "New Mexico", "Year": "2022", "Number of Transfers": "1"},
+        {"State": "Tennessee", "Year": "2024", "Number of Transfers": "1"},
+        {"State": "Texas", "Year": "2023", "Number of Transfers": "1"},
+        {"State": "Total", "Year": "2022", "Number of Transfers": "2"},
+        {"State": "Total", "Year": "2023", "Number of Transfers": "4"},
+        {"State": "Total", "Year": "2024", "Number of Transfers": "2"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20 Table 2, pages 37-38"
+    },
+    {
+      "table_id": "T07_item20_franchised_status",
+      "item": 20,
+      "title": "Table 3: Status of Franchised Outlets (2022-2024) — Summary Totals",
+      "source_pages": [38, 39, 40],
+      "columns": ["Year", "Start", "Opened", "Terminated", "Non-Renewals", "Reacquired", "Ceased-Other", "End"],
+      "rows": [
+        {"Year": "2022", "Start": "74", "Opened": "11", "Terminated": "2", "Non-Renewals": "0", "Reacquired": "0", "Ceased-Other": "3", "End": "80"},
+        {"Year": "2023", "Start": "80", "Opened": "11", "Terminated": "3", "Non-Renewals": "0", "Reacquired": "0", "Ceased-Other": "0", "End": "88"},
+        {"Year": "2024", "Start": "88", "Opened": "10", "Terminated": "6", "Non-Renewals": "0", "Reacquired": "0", "Ceased-Other": "1", "End": "92"}
+      ],
+      "table_notes": [
+        "One franchisee transferred territory from Texas to Virginia in 2024",
+        "2024 had highest termination count (6) of the 3-year period; 4 of 6 were in Florida",
+        "States with franchised outlets: AL, AZ, CA, CO, DC, FL, GA, IL, IN, LA, MD, MI, MO, MS, NJ, NM, NY, NC, PA, SC, TN, TX, VA, WA, WI"
+      ],
+      "provenance": "Item 20 Table 3, pages 38-40"
+    },
+    {
+      "table_id": "T08_item20_company_owned",
+      "item": 20,
+      "title": "Table 4: Status of Company-Owned Outlets (2022-2024)",
+      "source_pages": [41],
+      "columns": ["Year", "State", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisees", "End"],
+      "rows": [
+        {"Year": "2022", "State": "Georgia", "Start": "1", "Opened": "0", "Reacquired": "0", "Closed": "0", "Sold to Franchisees": "1", "End": "0"},
+        {"Year": "2022", "State": "Florida", "Start": "5", "Opened": "0", "Reacquired": "0", "Closed": "0", "Sold to Franchisees": "2", "End": "3"},
+        {"Year": "2023", "State": "Florida", "Start": "3", "Opened": "0", "Reacquired": "0", "Closed": "0", "Sold to Franchisees": "1", "End": "2"},
+        {"Year": "2024", "State": "Florida", "Start": "2", "Opened": "0", "Reacquired": "0", "Closed": "0", "Sold to Franchisees": "0", "End": "2"}
+      ],
+      "table_notes": ["Company-owned are franchisor-affiliated (Rytech North Florida, Inc.)"],
+      "provenance": "Item 20 Table 4, page 41"
+    },
+    {
+      "table_id": "T09_item20_projected",
+      "item": 20,
+      "title": "Table 5: Projected Openings (as of Dec 31, 2024)",
+      "source_pages": [41],
+      "columns": ["State", "Signed Not Opened", "Projected Franchised", "Projected Company-Owned"],
+      "rows": [
+        {"State": "Georgia", "Signed Not Opened": "1", "Projected Franchised": "1", "Projected Company-Owned": "0"},
+        {"State": "Maryland", "Signed Not Opened": "1", "Projected Franchised": "1", "Projected Company-Owned": "0"},
+        {"State": "Texas", "Signed Not Opened": "1", "Projected Franchised": "1", "Projected Company-Owned": "0"},
+        {"State": "Virginia", "Signed Not Opened": "3", "Projected Franchised": "1", "Projected Company-Owned": "0"},
+        {"State": "All other states", "Signed Not Opened": "0", "Projected Franchised": "5-10", "Projected Company-Owned": "0"},
+        {"State": "TOTAL", "Signed Not Opened": "6", "Projected Franchised": "9-14", "Projected Company-Owned": "0"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20 Table 5, page 41"
+    },
+    {
+      "table_id": "T10_item21_balance_sheet",
+      "item": 21,
+      "title": "Balance Sheets — December 31",
+      "source_pages": [169],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Cash and cash equivalents", "2024": "$792,460", "2023": "$1,022,915", "2022": "$735,731"},
+        {"Line Item": "Accounts receivable, net", "2024": "$613,691", "2023": "$445,779", "2022": "$604,314"},
+        {"Line Item": "Deferred franchise costs", "2024": "$67,226", "2023": "$61,257", "2022": "$56,209"},
+        {"Line Item": "Other current assets", "2024": "$44,026", "2023": "$74,489", "2022": "$8,723"},
+        {"Line Item": "Total current assets", "2024": "$1,517,393", "2023": "$1,604,440", "2022": "$1,404,907"},
+        {"Line Item": "Deferred franchise costs, less current", "2024": "$328,973", "2023": "$343,965", "2022": "$351,973"},
+        {"Line Item": "Total assets", "2024": "$1,846,366", "2023": "$1,948,405", "2022": "$1,756,970"},
+        {"Line Item": "Accounts payable", "2024": "$218,583", "2023": "$122,051", "2022": "$133,412"},
+        {"Line Item": "Accrued advertising", "2024": "$16,122", "2023": "$78,992", "2022": "$95,232"},
+        {"Line Item": "Accrued other expenses", "2024": "$132,207", "2023": "$158,164", "2022": "—"},
+        {"Line Item": "Deferred revenue on initial franchise fees", "2024": "$225,781", "2023": "$213,948", "2022": "$193,643"},
+        {"Line Item": "Deferred revenue on conference fees", "2024": "$97,425", "2023": "$176,750", "2022": "—"},
+        {"Line Item": "Other current liabilities", "2024": "$2,079", "2023": "$2,650", "2022": "—"},
+        {"Line Item": "Total current liabilities", "2024": "$692,197", "2023": "$747,555", "2022": "$422,287"},
+        {"Line Item": "Deferred revenue on initial franchise fees, non-current", "2024": "$1,189,530", "2023": "$1,179,011", "2022": "$1,028,007"},
+        {"Line Item": "Common stock ($0.01 par, 100K authorized, 1K issued)", "2024": "$10", "2023": "$10", "2022": "$10"},
+        {"Line Item": "Additional paid-in capital", "2024": "$990", "2023": "$990", "2022": "$990"},
+        {"Line Item": "(Accumulated deficit) / retained earnings", "2024": "($36,361)", "2023": "$20,839", "2022": "$305,676"},
+        {"Line Item": "Total stockholder's equity (deficit)", "2024": "($35,361)", "2023": "$21,839", "2022": "$306,676"},
+        {"Line Item": "Total liabilities and equity", "2024": "$1,846,366", "2023": "$1,948,405", "2022": "$1,756,970"}
+      ],
+      "table_notes": [
+        "Source: Scanned image (page 169), values read from rendered image",
+        "Company is a wholly-owned subsidiary of RyBrands, Inc.",
+        "Accumulated deficit in 2024 driven by distributions exceeding net income"
+      ],
+      "provenance": "Exhibit G, page 169 (rendered image)"
+    },
+    {
+      "table_id": "T11_item21_income_statement",
+      "item": 21,
+      "title": "Statements of Operations and Retained Earnings — Year Ended December 31",
+      "source_pages": [170],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Franchise royalty fees", "2024": "$3,867,630", "2023": "$3,269,384", "2022": "$3,206,792"},
+        {"Line Item": "Initial franchise fees", "2024": "$411,637", "2023": "$331,786", "2022": "$211,563"},
+        {"Line Item": "Sponsorship sales", "2024": "$200,675", "2023": "$30,000", "2022": "—"},
+        {"Line Item": "Total revenues", "2024": "$4,479,942", "2023": "$3,631,170", "2022": "$3,418,315"},
+        {"Line Item": "SG&A expenses", "2024": "$3,271,753", "2023": "$2,666,397", "2022": "$2,701,094"},
+        {"Line Item": "Income from operations / Net income", "2024": "$1,208,189", "2023": "$964,773", "2022": "$717,221"},
+        {"Line Item": "Distributions", "2024": "($1,265,000)", "2023": "($1,249,000)", "2022": "($1,200,000)"},
+        {"Line Item": "Retained earnings, beginning of year", "2024": "$20,450", "2023": "$305,676", "2022": "$788,455"},
+        {"Line Item": "(Accumulated deficit) / retained earnings, end of year", "2024": "($36,361)", "2023": "$21,449", "2022": "$305,676"}
+      ],
+      "table_notes": [
+        "Source: Scanned image (page 170), values read from rendered image",
+        "Disregarded entity for income tax — no tax provision",
+        "Distributions exceeded net income in all three years, depleting retained earnings",
+        "Revenue growth driven by franchise royalty fees (reflecting system expansion) and initial franchise fees"
+      ],
+      "provenance": "Exhibit G, page 170 (rendered image)"
+    },
+    {
+      "table_id": "T12_item21_cash_flow",
+      "item": 21,
+      "title": "Statements of Cash Flows — Year Ended December 31",
+      "source_pages": [171],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Net income", "2024": "$1,208,189", "2023": "$964,773", "2022": "$717,221"},
+        {"Line Item": "Net cash from operating activities", "2024": "$1,034,545", "2023": "$1,533,164", "2022": "$851,302"},
+        {"Line Item": "Distributions paid (financing)", "2024": "($1,265,000)", "2023": "($1,250,000)", "2022": "($1,060,000)"},
+        {"Line Item": "Advances from related party (financing)", "2024": "—", "2023": "—", "2022": "$140,000"},
+        {"Line Item": "Net cash used in financing", "2024": "($1,265,000)", "2023": "($1,250,000)", "2022": "($1,060,000)"},
+        {"Line Item": "Net change in cash", "2024": "($230,455)", "2023": "$283,164", "2022": "($208,698)"},
+        {"Line Item": "Cash, beginning of year", "2024": "$1,022,915", "2023": "$739,751", "2022": "$946,449"},
+        {"Line Item": "Cash, end of year", "2024": "$792,460", "2023": "$1,022,915", "2022": "$735,751"}
+      ],
+      "table_notes": [
+        "Source: Scanned image (page 171), values read from rendered image",
+        "Financing activities consist entirely of distributions to parent/owner plus one historical advance",
+        "Cash position declining in 2024 as distributions exceeded operating cash flow"
+      ],
+      "provenance": "Exhibit G, page 171 (rendered image)"
+    },
+    {
+      "table_id": "T13_item11_training",
+      "item": 11,
+      "title": "Training Program",
+      "source_pages": [27],
+      "columns": ["Subject", "Classroom Hours", "OJT Hours", "Location"],
+      "rows": [
+        {"Subject": "Office Procedure Administration", "Classroom Hours": "2-6", "OJT Hours": "8-16", "Location": "Atlanta, GA or designated"},
+        {"Subject": "Job Scope - Utilizing MICA", "Classroom Hours": "2-8", "OJT Hours": "24-48", "Location": "Atlanta, GA or designated"},
+        {"Subject": "Marketing/Sales", "Classroom Hours": "1-2", "OJT Hours": "32-40", "Location": "Atlanta, GA or designated"},
+        {"Subject": "Water Damage Production - Utilizing MICA", "Classroom Hours": "8-12", "OJT Hours": "16-24", "Location": "Atlanta, GA or designated"},
+        {"Subject": "Mold Remediation Production - Utilizing MICA", "Classroom Hours": "4-8", "OJT Hours": "24-32", "Location": "Atlanta, GA or designated"},
+        {"Subject": "MyCore", "Classroom Hours": "8", "OJT Hours": "8", "Location": "Atlanta, GA or designated"}
+      ],
+      "table_notes": [
+        "Phase 1: up to 10 business days at HQ",
+        "Phase 2: up to 5 business days at franchisee location post-opening",
+        "Initial training for owner + 1 employee included in franchise fee",
+        "Additional attendees: $200/day per diem + expenses",
+        "Pre-training IICRC courses required: WRT/ASD Combo, AMRT, Lead Paint, OSHA 10-Hour, Claims Training ($4,900-$7,000)"
+      ],
+      "provenance": "Item 11, page 27"
+    }
+  ]
+}

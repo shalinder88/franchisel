@@ -1,0 +1,160 @@
+{
+  "depth_pass": "1_financial_notes",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "638049-2025",
+  "notes": [
+    {
+      "note_number": 1,
+      "title": "Organization and nature of operations",
+      "source_pages": [101],
+      "content": "LLC registered in Delaware on 2017-04-13. Sole member: Mondofix USA LLC, owned by Mondofix Inc. (Canadian ultimate parent). Franchisor of Novus Glass in USA under license from ultimate parent."
+    },
+    {
+      "note_number": 2,
+      "title": "Significant accounting policies",
+      "source_pages": [101, 102, 103],
+      "sub_policies": {
+        "basis": "US GAAP, presented in USD (functional currency)",
+        "use_of_estimates": "Estimates for allowance for expected credit losses and deferred income tax asset",
+        "cash": "Bank balances including bank overdrafts",
+        "financial_instruments": "Measured at fair value on initial recognition, subsequently at amortized cost. All Level 1 hierarchy.",
+        "revenue_recognition": {
+          "standard": "ASC 606",
+          "royalties": "Recognized monthly based on franchisee gross sales (greater of % or minimum)",
+          "vendor_allowances": "Recognized based on periodic purchases and contractual terms",
+          "franchisee_contributions": "Recognized when earned and services rendered; initial fees deferred over license term",
+          "product_sales": "Recognized upon delivery when substantially performed"
+        },
+        "advertising_fund": "Contributions from franchisees must be spent on advertising/marketing; excess recorded as deferred revenue. 2024 advertising costs: $1,114,487 (2023: $629,115)",
+        "rights": "$300,000 exclusive US area developer rights; indefinite life, not amortized",
+        "leases": "ASC 842; operating leases with ROU assets and liabilities. Risk-free rates used. Short-term leases (<12 months) not recognized. No renewal options included unless reasonably certain to exercise.",
+        "income_taxes": "Deferred tax method per ASC 740. Consolidated filing with parent group; allocated as separate taxpayer. Valuation allowance if more-likely-than-not some DTA not realized.",
+        "comprehensive_income": "ASC 220; comprehensive income equals net income for all periods presented",
+        "depreciation_amortization": "Not explicitly disclosed in notes — no material depreciable assets (rights are not amortized; leases use ROU/liability model)",
+        "impairment": "Not explicitly disclosed — rights tested under indefinite-life intangible framework"
+      }
+    },
+    {
+      "note_number": 3,
+      "title": "Cash in trust or otherwise reserved",
+      "source_pages": [104],
+      "content": "As of 12/31/2024: $13,088 (2023: $43,780) held in separate non-interest-bearing account for amounts from insurers to be remitted to franchisees."
+    },
+    {
+      "note_number": 4,
+      "title": "Leases",
+      "source_pages": [104],
+      "content": {
+        "type": "Operating leases (vehicles)",
+        "lease_expense_2024": 73471,
+        "rou_assets_acquired_2024": 286386,
+        "sublease_income_2024": 39243,
+        "weighted_avg_remaining_term_years": 3.23,
+        "weighted_avg_discount_rate_pct": 4.5,
+        "maturity_schedule": {
+          "2025": 85562,
+          "2026": 79381,
+          "2027": 40339,
+          "2028": 29814,
+          "2029": 7056,
+          "total_undiscounted": 242152,
+          "imputed_interest": -15919,
+          "total_present_value": 226233,
+          "current_portion": 77461,
+          "long_term_portion": 148772
+        }
+      }
+    },
+    {
+      "note_number": 5,
+      "title": "Accounts payable and accrued liabilities",
+      "source_pages": [105],
+      "content": {
+        "2024": {"trade_payable_accrued": 210994, "accrued_salaries_benefits": 62783, "total": 273777},
+        "2023": {"trade_payable_accrued": 274365, "accrued_salaries_benefits": 114909, "total": 389274}
+      }
+    },
+    {
+      "note_number": 6,
+      "title": "Membership's interest",
+      "source_pages": [105],
+      "content": "No shares/units issued. Sole member: Mondofix USA LLC. Capital contributions receivable from parent: $100,000 as of 12/31/2024, received 3/27/2025. Distributions: $500,000 (2024), $1,400,000 (2023)."
+    },
+    {
+      "note_number": 7,
+      "title": "Related party transactions",
+      "source_pages": [105, 106],
+      "transactions": {
+        "with_ultimate_parent_mondofix_inc": {
+          "2024": {"royalties_expense": 802368, "management_fee_expense": 551617},
+          "2023": {"royalties_expense": 838450, "management_fee_expense": 412938}
+        },
+        "with_speedy_novus_glass_llc": {
+          "2024": {"royalties_revenue": null},
+          "2023": {"royalties_revenue": 84266},
+          "note": "2024 amount partially obscured in text extraction"
+        },
+        "with_novus_2_llc": {
+          "2024": {"cogs_expense": 82376},
+          "2023": {"cogs_expense": 90471}
+        },
+        "intercompany_terms": "Non-interest bearing, no specific repayment terms for advances; AR/AP repayable on demand",
+        "tax_consolidation": "Results included in Mondofix USA LLC consolidated tax return; theoretical taxes charged as intercompany balance"
+      }
+    },
+    {
+      "note_number": 8,
+      "title": "Income taxes",
+      "source_pages": [106],
+      "content": {
+        "current_tax_2024": 206123,
+        "deferred_tax_2024": 99461,
+        "total_tax_2024": 305584,
+        "current_tax_2023": 506247,
+        "deferred_tax_2023": -141586,
+        "total_tax_2023": 364661,
+        "statutory_federal_rate_pct": 23.47,
+        "effective_rate_2024_pct": 27.6,
+        "effective_rate_2023_pct": 23.4,
+        "rate_reconciliation_2024": {"expected": 259441, "other": 46143, "actual": 305584},
+        "deferred_tax_components_2024": {
+          "accounts_receivable": 30162,
+          "deferred_revenue": 20769,
+          "accruals_and_other": 101047,
+          "rights": -32054,
+          "net_dta": 119924
+        }
+      }
+    },
+    {
+      "note_number": 9,
+      "title": "Financial instruments",
+      "source_pages": [107, 108],
+      "content": {
+        "fair_value": "Carrying values approximate fair values for all instruments due to short-term maturity or terms",
+        "credit_risk": {
+          "primary_exposure": "Accounts receivable from franchisees",
+          "payment_terms": "30 to 60 days",
+          "aging_2024": {"current": 594178, "31_60_days": 17807, "61_90_days": 7889, "91_plus_days": 304634, "total_gross": 924508, "allowance": 311654, "net": 612854},
+          "aging_2023": {"current": 533410, "31_60_days": 25101, "61_90_days": 11606, "91_plus_days": 265877, "total_gross": 835994, "allowance": 283658, "net": 552336},
+          "allowance_movement_2024": {"beginning": 283658, "additions": 29992, "writedowns": -1996, "ending": 311654},
+          "allowance_movement_2023": {"beginning": 345962, "additions": 10218, "writedowns": -72522, "ending": 283658}
+        },
+        "notable": "91+ day receivables = $304,634 (32.9% of gross AR) — indicates collection challenges with some franchisees"
+      }
+    },
+    {
+      "note_number": 10,
+      "title": "Subsequent events",
+      "source_pages": [108],
+      "content": "Evaluated through March 28, 2025. Capital contribution of $100,000 from parent received 3/27/2025. No other material subsequent events disclosed."
+    }
+  ],
+  "key_findings": [
+    "Related party expenses are significant: $802K royalties + $552K management fees to ultimate parent = $1.35M (21% of total revenue)",
+    "91+ day receivables at $305K (33% of gross AR) suggest collection pressure",
+    "Initial franchise fees are deferred and recognized over the license term — the $441K decline in deferred revenue represents recognition of previously collected fees",
+    "Rights asset ($300K) carried at cost with indefinite life — no impairment testing methodology disclosed",
+    "Vehicle lease accounting is new in 2024 (ROU $226K, liability $226K) — weighted avg term 3.23 years"
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637911-2025",
+  "pipeline_version": "automation_v1",
+  "document_identity": {
+    "brand": "Ivan Ramen",
+    "franchisor_legal_name": "Ivan Ramen Franchising LLC",
+    "franchisor_state_of_formation": "New York",
+    "franchisor_formation_date": "July 2021",
+    "parent_company": "Ivan Ramen Holdings Co, LLC",
+    "parent_state_of_formation": "New York",
+    "principal_address": "42 Maple Street, Dobbs Ferry, NY 10522",
+    "phone": ["(914) 406-1169", "(512) 788-0170"],
+    "website": "www.ivanramen.com",
+    "email": ["ivanramen@gmail.com", "chad@ivanramen.com"],
+    "issuance_date": "2025-03-21",
+    "state_filed": "Wisconsin",
+    "fiscal_year_end": "December 31",
+    "pdf_pages": 346,
+    "source_section": "Item 1, Cover",
+    "source_pages": [1, 7, 8],
+    "confidence": "high"
+  },
+  "business_description": {
+    "concept": "Casual dining restaurants specializing in ramen (Japanese style noodle) dishes / American Izakaya with diverse selection of broths, noodles, proteins, sauces, garnishes, rice bowls, Japanese appetizers, alcoholic beverages, and other food/beverage products for on-premises and off-premises consumption",
+    "restaurant_size_sqft": {"low": 2500, "high": 3500},
+    "location_type": "High-traffic urban areas with nightlife",
+    "source_section": "Item 1, Item 7 Note 3",
+    "source_pages": [1, 7, 17],
+    "confidence": "high"
+  },
+  "key_personnel": [
+    {
+      "name": "Ivan Orkin",
+      "title": "Chief Executive Officer and Manager",
+      "since": "July 2021",
+      "source_section": "Item 2",
+      "source_pages": [9],
+      "confidence": "high"
+    },
+    {
+      "name": "Chad Combs",
+      "title": "Chief Operating Officer and Secretary",
+      "since": "July 2021",
+      "source_section": "Item 2",
+      "source_pages": [9],
+      "confidence": "high"
+    },
+    {
+      "name": "Dale Watkins",
+      "title": "Culinary Director",
+      "since": "January 2024",
+      "source_section": "Item 2",
+      "source_pages": [9],
+      "confidence": "high"
+    }
+  ],
+  "litigation": {
+    "status": "none_required",
+    "source_section": "Item 3",
+    "source_pages": [9],
+    "confidence": "high"
+  },
+  "bankruptcy": {
+    "status": "none_required",
+    "source_section": "Item 4",
+    "source_pages": [9],
+    "confidence": "high"
+  },
+  "fees": {
+    "initial_franchise_fee": {
+      "amount": 35000,
+      "currency": "USD",
+      "refundable": false,
+      "notes": "May be modified for atypical locations; one reduced fee of $25,000 charged in FY 2024 for food hall",
+      "source_section": "Item 5",
+      "source_pages": [9],
+      "confidence": "high"
+    },
+    "area_development_fee": {
+      "formula": "$35,000 × number of units",
+      "range": {"low": 105000, "high": 350000},
+      "units_range": {"low": 3, "high": 10},
+      "refundable": false,
+      "notes": "Applied as credit against each unit's Initial Franchise Fee",
+      "source_section": "Item 5",
+      "source_pages": [9],
+      "confidence": "high"
+    },
+    "continuing_royalty": {
+      "rate": "5%",
+      "basis": "Gross Revenues",
+      "frequency": "Monthly, 15th of next month",
+      "fixed_during_term": true,
+      "source_section": "Item 6",
+      "source_pages": [10],
+      "confidence": "high"
+    },
+    "system_brand_contribution": {
+      "rate": "Up to 1.5%",
+      "basis": "Gross Revenues",
+      "status": "Not yet established",
+      "max_during_term": "1.5%",
+      "source_section": "Item 6",
+      "source_pages": [10],
+      "confidence": "high"
+    },
+    "system_technology_fee": {
+      "rate": "Up to 1.0%",
+      "basis": "Gross Revenues",
+      "current_rate": "0%",
+      "status": "Reserved right, currently not charged",
+      "source_section": "Item 6",
+      "source_pages": [10],
+      "confidence": "high"
+    },
+    "proprietary_products": {
+      "monthly_cost": 7333,
+      "breakdown": {
+        "noodles": 2750,
+        "dashi_specialty_ingredients": 1250,
+        "soup_concentrates": 3333
+      },
+      "source_section": "Item 6",
+      "source_pages": [10],
+      "confidence": "high"
+    },
+    "successor_term_fee": {
+      "amount": 35000,
+      "source_section": "Item 6, Item 17",
+      "source_pages": [12, 46],
+      "confidence": "high"
+    },
+    "transfer_fee": {
+      "franchise_agreement": 10000,
+      "area_development_agreement": 10000,
+      "source_section": "Item 6",
+      "source_pages": [12, 13],
+      "confidence": "high"
+    },
+    "training_additional": {
+      "per_person": 2500,
+      "included_in_iff": 6,
+      "source_section": "Item 6",
+      "source_pages": [11],
+      "confidence": "high"
+    },
+    "on_site_training": {
+      "per_day": 2500,
+      "source_section": "Item 6",
+      "source_pages": [11],
+      "confidence": "high"
+    },
+    "management_fee_death_disability": {
+      "formula": "Greater of 2x salary of assigned personnel or 10% of weekly Gross Revenue",
+      "source_section": "Item 6",
+      "source_pages": [13],
+      "confidence": "high"
+    },
+    "source_section": "Items 5-6",
+    "source_pages": [9, 10, 11, 12, 13, 14, 15],
+    "confidence": "high"
+  },
+  "initial_investment": {
+    "single_unit": {
+      "low": 1024500,
+      "high": 1982100,
+      "source_section": "Item 7",
+      "source_pages": [15, 16],
+      "confidence": "high"
+    },
+    "area_development": {
+      "low": 1106500,
+      "high": 2302100,
+      "units_range": "3 to 10",
+      "source_section": "Item 7",
+      "source_pages": [19],
+      "confidence": "high"
+    },
+    "largest_component": "Construction/leasehold improvements ($500,000-$1,100,000)",
+    "additional_funds_months": 3,
+    "additional_funds_range": {"low": 150000, "high": 300000},
+    "owner_salary_included": false
+  },
+  "supplier_restrictions": {
+    "proprietary_products_required": true,
+    "designated_suppliers": ["Sun Noodles (noodles)", "Mutual Trading Company (dashi/specialty ingredients)"],
+    "pos_system": "Toast (designated, unaffiliated)",
+    "reservation_system": "OpenTable (required, negotiated directly)",
+    "officer_ownership_in_suppliers": false,
+    "alternative_supplier_approval_timeline_days": 30,
+    "testing_fee_range": {"low": 1000, "high": 1500},
+    "required_purchases_pct_of_establishment": "1-5%",
+    "required_purchases_pct_of_operations": "5-10%",
+    "source_section": "Item 8",
+    "source_pages": [20, 21, 22],
+    "confidence": "high"
+  },
+  "financing": {
+    "offered": false,
+    "source_section": "Item 10",
+    "source_pages": [25],
+    "confidence": "high"
+  },
+  "training": {
+    "program_name": "Initial Training Program",
+    "duration_days": 5,
+    "total_hours": 106,
+    "classroom_hours": 19,
+    "on_the_job_hours": 87,
+    "location": "NYC headquarters/affiliate restaurant",
+    "frequency": "Approximately twice per year",
+    "mandatory_attendees": ["Franchisee (if individual)", "Operations Manager", "Trainer", "Chef"],
+    "included_trainees": 6,
+    "instructor_min_experience_years": 1,
+    "annual_conference_required": true,
+    "source_section": "Item 11",
+    "source_pages": [33, 34, 35],
+    "confidence": "high"
+  },
+  "territory": {
+    "exclusive": false,
+    "type": "Non-exclusive; all or specified part of city/municipality",
+    "minimum_size": "No minimum specified",
+    "franchisor_reservations": [
+      "Alternative channels (internet, e-commerce, food trucks, ghost kitchens, catalogs, telemarketing, etc.)",
+      "Nontraditional locations (resorts, supermarkets, schools, hospitals, hotels, airports, military bases)",
+      "National/Regional/Institutional accounts",
+      "Acquisition/operation of competitive businesses under different marks"
+    ],
+    "minimum_sales_quota": {
+      "amount": 1250000,
+      "period": "per calendar year",
+      "consequence": "Removal of territorial protections (not termination)"
+    },
+    "relocation_allowed": "With prior written approval; franchisee pays analysis costs up to $5,000",
+    "right_of_first_refusal_additional": false,
+    "source_section": "Item 12",
+    "source_pages": [35, 36, 37, 38, 39],
+    "confidence": "high"
+  },
+  "trademarks": {
+    "principal_marks": [
+      {"name": "IVAN RAMEN", "reg_number": "4538546", "reg_date": "2014-05-27", "register": "Principal"},
+      {"name": "SLURP SHOP", "reg_number": "4818442", "reg_date": "2015-09-22", "register": "Principal"},
+      {"name": "Design mark", "reg_number": "5110334", "reg_date": "2016-12-27", "register": "Principal"},
+      {"name": "Design mark", "reg_number": "6737311", "reg_date": "2022-05-24", "register": "Principal"}
+    ],
+    "pending_applications": [
+      {"name": "Design mark", "app_number": "97635051", "app_date": "2022-10-17"}
+    ],
+    "ip_owner": "Ivan Ramen IP Holdings LLC",
+    "license_type": "Cross-license (20-year initial, auto-renewable, US and UK)",
+    "no_termination_provision": true,
+    "source_section": "Item 13",
+    "source_pages": [39, 40, 41],
+    "confidence": "high"
+  },
+  "contract_terms": {
+    "initial_term_years": 10,
+    "successor_terms": 1,
+    "successor_term_years": 10,
+    "successor_fee": 35000,
+    "successor_form": "Then-current form (may have materially different terms)",
+    "materially_different_risk": true,
+    "renewal_notice_window": "6-9 months before expiration",
+    "general_release_required": true,
+    "refurbishment_required": true,
+    "time_to_open_months": 15,
+    "typical_time_to_open_months": 12,
+    "source_section": "Item 17",
+    "source_pages": [46, 47],
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": "No involvement in competing business anywhere in US",
+    "post_term_duration_years": 2,
+    "post_term_geographic": "Within territory, 10 miles of territory perimeter, or 10 miles of any Ivan Ramen territory",
+    "no_poach_provision": true,
+    "no_poach_state_override": "California will not enforce",
+    "source_section": "Item 17",
+    "source_pages": [52, 55],
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "arbitration": false,
+    "mediation": false,
+    "litigation_only": true,
+    "forum": "State or federal court in state/county/judicial district of franchisor's principal place of business (currently Westchester County, NY)",
+    "governing_law": "New York",
+    "punitive_damages_waiver": true,
+    "punitive_damages_waiver_enforceable": "May not be enforceable in some states (e.g., CA)",
+    "source_section": "Item 17",
+    "source_pages": [52],
+    "confidence": "high"
+  },
+  "transfer": {
+    "requires_consent": true,
+    "transfer_fee": 10000,
+    "transferee_must_complete_training": true,
+    "transferee_signs_new_fa": true,
+    "transferee_new_fa_term": "Balance of original term",
+    "no_additional_iff": true,
+    "general_release_required": true,
+    "right_of_first_refusal": true,
+    "rofr_noncompete_years": 2,
+    "source_section": "Item 17",
+    "source_pages": [50, 51],
+    "confidence": "high"
+  },
+  "death_disability": {
+    "estate_succession": true,
+    "operating_principal_timeline_months": 1,
+    "estate_sale_timeline_months": 6,
+    "admin_fee": 1000,
+    "franchisor_may_operate": true,
+    "source_section": "Item 17",
+    "source_pages": [51, 52],
+    "confidence": "high"
+  },
+  "financial_performance_representation": {
+    "fpr_made": false,
+    "source_section": "Item 19",
+    "source_pages": [56],
+    "confidence": "high"
+  },
+  "outlet_data": {
+    "as_of_date": "2024-12-31",
+    "total_systemwide_end_2024": 1,
+    "franchised_end_2024": 0,
+    "company_owned_end_2024": 1,
+    "company_owned_location": "New York City",
+    "franchised_opened_2024": 0,
+    "franchised_ceased_2024": 1,
+    "franchised_ceased_reason": "DoorDash ghost kitchen ceased operations",
+    "signed_not_open": 1,
+    "signed_not_open_detail": "Venetian Las Vegas Gaming LLC (Las Vegas, NV food hall)",
+    "projected_new_franchise_next_fy": 1,
+    "projected_new_franchise_state": "New York",
+    "projected_new_company_next_fy": 0,
+    "confidentiality_clauses": false,
+    "franchisee_organizations": false,
+    "source_section": "Item 20",
+    "source_pages": [57, 58, 59],
+    "confidence": "high"
+  },
+  "financial_statements": {
+    "auditor": "BMKR LLP",
+    "auditor_type": "CPA firm",
+    "opinion_type": "Unable to confirm from text extraction (auditor report pages are image-only)",
+    "financial_condition_flag": true,
+    "fiscal_years_audited": [2022, 2023, 2024],
+    "fy2024": {
+      "total_revenue": 5000,
+      "total_expenses": 81856,
+      "net_loss": -76856,
+      "total_assets": 33040,
+      "total_liabilities": 32000,
+      "members_equity": 1040,
+      "cash": 5992,
+      "due_from_related_parties": 27048,
+      "unearned_revenue": 20000
+    },
+    "fy2023": {
+      "total_revenue": 0,
+      "total_expenses": 81337,
+      "net_loss": -81337,
+      "total_assets": 146012,
+      "members_equity": 84666,
+      "cash": 139242
+    },
+    "fy2022": {
+      "total_revenue": 0,
+      "total_expenses": 51767,
+      "net_loss": -51767,
+      "total_assets": 216301,
+      "members_equity": 162003,
+      "cash": 209531
+    },
+    "subsequent_events": [
+      "February 2025: $120,000 capital contribution by owner"
+    ],
+    "related_party_transactions": [
+      "IP license from Ivan Ramen IP Holdings LLC: $1 initial fee + 10% of gross revenues (reduced to maintain $100K net income floor)",
+      "Due from Ivan Ramen USA LLC: $25,848 (no terms, no interest)",
+      "Due from Ivan Ramen Holdings Co. Inc.: $1,200 (no terms, no interest)",
+      "100% ownership transferred to Ivan Ramen Holdings Co. LLC effective Jan 1, 2024"
+    ],
+    "source_section": "Item 21, Exhibit C",
+    "source_pages": [59, 272, 273, 274, 277, 278, 279, 280, 281, 282, 283, 284, 285],
+    "confidence": "high"
+  },
+  "state_addenda": {
+    "states": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "New York", "North Dakota", "Wisconsin"],
+    "material_overrides": {
+      "California": [
+        "Max interest rate 10% annually",
+        "Maximum price agreements viewed as per se Cartwright Act violations",
+        "Non-exclusive territory disclosure",
+        "Noncompete post-term may not be enforceable",
+        "No-poach provision will not be enforced in CA",
+        "Choice of law (NY) may not be enforceable",
+        "Choice of forum (NY) may not be enforceable",
+        "General release requirements subject to Corp Code §31512",
+        "Punitive damages waiver not enforceable under CA Franchise Investment Law",
+        "5%+ owner personal guarantee puts marital/personal assets at risk"
+      ]
+    },
+    "source_section": "Exhibit G",
+    "source_pages": [318, 319, 320, 321, 322, 323, 324, 325, 330, 332, 339],
+    "confidence": "high",
+    "notes": "Only California addendum was fully read line-by-line. Other state addenda identified by location."
+  },
+  "special_risks": [
+    {
+      "risk": "Out-of-State Dispute Resolution",
+      "description": "FA and ADA require dispute resolution by litigation only in New York",
+      "source_pages": [4],
+      "confidence": "high"
+    },
+    {
+      "risk": "Short Operating History",
+      "description": "Franchisor at early stage of development with limited operating history; riskier investment",
+      "source_pages": [4],
+      "confidence": "high"
+    },
+    {
+      "risk": "Sales Performance Required",
+      "description": "Must achieve $1,250,000 minimum gross revenues per calendar year; failure removes territorial protections",
+      "source_pages": [4],
+      "confidence": "high"
+    },
+    {
+      "risk": "Financial Condition",
+      "description": "Franchisor's financial statements call into question ability to provide services and support",
+      "source_pages": [4],
+      "confidence": "high"
+    }
+  ]
+}

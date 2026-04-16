@@ -1,0 +1,138 @@
+{
+  "depth_pass": "financial_notes",
+  "source_pages": [104, 105, 106, 107, 108],
+  "auditor": "Cherry Bekaert LLP",
+  "audit_date": "2025-03-18",
+  "accounting_policies": {
+    "revenue_recognition": {
+      "method": "Sales-based royalty recognized as services provided over time",
+      "primary_performance_obligation": "IP licenses granting right to access brand IP, reservation systems, and property management systems — considered a series of distinct services over time",
+      "variable_consideration": "Franchise royalty fees allocated to distinct daily services using prescribed variable consideration allocation guidance",
+      "fixed_consideration": "Application, initiation, and other fees allocated based on standalone selling prices; recognized over contract term",
+      "termination_fees": "Recognized in period received due to no further service obligation and uncertainty of collection",
+      "no_significant_financing_component": "Upfront fees protect against failure to complete obligations",
+      "source_page": 104
+    },
+    "franchise_contracts": {
+      "recognition": "Capitalized as intangible assets",
+      "amortization_method": "Straight-line over estimated useful life (contract term including sole-option extensions)",
+      "useful_life_range": "Generally 10 to 20 years",
+      "amortization_start": "Opening date of hotel or contract execution date, whichever is later",
+      "contract_acquisition_costs_amortization": "Recognized as reduction to franchise royalty fees",
+      "costs_to_obtain_contracts_amortization": "Recognized as amortization expense",
+      "impairment_testing": "Evaluated for indicators; if present, undiscounted cash flow test performed; impairment recognized if carrying value exceeds fair value; allocated pro rata within asset group",
+      "source_page": 105
+    },
+    "accounts_receivable": {
+      "description": "Primarily amounts due from hotel owners under franchise contracts",
+      "allowance_method": "Based on historical collection activity, nature of instrument, current and forecasted business conditions",
+      "allowance_2024": 10411000,
+      "allowance_2023": 7339000,
+      "source_page": 105
+    },
+    "financing_receivables": {
+      "description": "Loans to certain franchised hotel owners",
+      "current_net_2024": 11438000,
+      "noncurrent_net_2024": 4626000,
+      "allowance_current_2024": 3375000,
+      "allowance_noncurrent_2024": 412000,
+      "source_page": 101
+    },
+    "franchise_deposits": {
+      "treatment": "Recorded as current liability until fees become non-refundable, then reclassified to deferred revenues",
+      "amount_2024": 18498000,
+      "held_by_hilton_affiliates": true,
+      "lockbox_account": "Entity has no access",
+      "source_page": 105
+    },
+    "deferred_revenues": {
+      "description": "Non-refundable advance consideration from hotel owners (application, initiation, other fees)",
+      "current_2024": 41598000,
+      "noncurrent_2024": 517282000,
+      "total_2024": 558880000,
+      "recognition": "Over the term of the related franchise contract",
+      "source_page": 105
+    },
+    "fair_value_measurements": {
+      "hierarchy": "Three-level (Level 1, 2, 3) per GAAP",
+      "financial_instruments": "Carrying value equals fair value as of 12/31/2024 and 12/31/2023",
+      "fair_value_option": "Not elected for any financial assets or liabilities",
+      "source_page": 106
+    },
+    "acquisitions": {
+      "policy": "Business combination vs asset acquisition based on inputs/processes/outputs and concentration test",
+      "asset_acquisitions": "Cost allocated to assets/liabilities based on relative fair values; no goodwill recognized",
+      "source_page": 106
+    }
+  },
+  "material_notes": {
+    "note3_graduate_acquisition": {
+      "date": "May 2024",
+      "type": "Asset acquisition (not business combination)",
+      "assets_acquired": "Graduate franchise contract intangible assets",
+      "cost": 85000000,
+      "amortization_period": "15 years",
+      "amortization_to": "Depreciation and amortization expenses",
+      "impact_2024": "Not material to operating results for partial year",
+      "source_page": 106
+    },
+    "note4_franchise_contracts": {
+      "gross_carrying_value_2024": 468626000,
+      "accumulated_amortization_2024": 75878000,
+      "net_carrying_value_2024": 392748000,
+      "components": {
+        "contract_acquisition_costs": {"gross": 376063000, "amort": 69820000, "net": 306243000},
+        "acquired_intangibles": {"gross": 85304000, "amort": 3317000, "net": 81987000},
+        "costs_to_obtain": {"gross": 7259000, "amort": 2741000, "net": 4518000}
+      },
+      "amortization_2024": {"royalty_fee_reduction": 16053000, "amortization_expense": 3751000},
+      "source_page": [106, 107]
+    },
+    "note6_income_taxes": {
+      "us_tax_status": "Disregarded entity; no US income tax provision",
+      "foreign_taxes": {"2024": 412000, "2023": 128000, "2022": 70000},
+      "foreign_tax_basis": "Withholding on franchise fees to foreign-domiciled entities (includes US territories)",
+      "franchisee_responsible": "For withholding and remittance to local taxing authority",
+      "source_page": 107
+    },
+    "note7_commitments_contingencies": {
+      "debt_guarantee": {
+        "description": "Unconditionally and irrevocably guarantees certain Hilton debt obligations",
+        "maturity_range": "2025 to 2033",
+        "guarantee_parties": "Certain Hilton direct or indirect wholly owned material domestic subsidiaries, including us",
+        "collateral": "All assets and franchise contracts pledged",
+        "liability_recorded": false,
+        "rationale": "Nature of parent-subsidiary relationship",
+        "source_page": 107
+      },
+      "litigation": {
+        "description": "Various claims and lawsuits in ordinary course; some for substantial sums",
+        "expected_resolution": "No material adverse effect on financial position, results, or cash flows",
+        "source_page": 107
+      }
+    },
+    "note8_related_party": {
+      "intercompany_balances": "Result of Hilton's centralized cash management system (not controlled by entity)",
+      "franchise_deposits": "Collected by Hilton affiliates, deposited in lockbox entity cannot access",
+      "settlement_pattern": "Periodic settlements of other receivables with simultaneous distributions",
+      "settlements_2024": 1500000000,
+      "settlements_2023": 1400000000,
+      "settlements_2022": 1550000000,
+      "graduate_note": "Short-term note payable of $85.3M for Graduate acquisition, settled February 2024 with accrued interest",
+      "operator_agreement": "With Hilton affiliate; no compensation paid in any year",
+      "source_page": [107, 108]
+    },
+    "note9_subsequent_events": {
+      "evaluation_date": "March 18, 2025 (Note contains apparent typo of 'March 18, 2024')",
+      "material_events": "None disclosed",
+      "source_page": 108
+    }
+  },
+  "missing_accounting_items": {
+    "depreciation_amortization": "Franchise contracts amortized straight-line; no tangible depreciable assets held by entity",
+    "impairment": "No impairment charges disclosed; entity evaluates for indicators",
+    "lease_accounting": "No leases disclosed; entity appears to have no real property",
+    "variable_interest_entities": "Not applicable; entity is itself a subsidiary",
+    "advertising_fund_accounting": "Program Fees not a trust fund; excess QA fees supplement Program Fee; no separate fund accounting"
+  }
+}

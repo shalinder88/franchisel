@@ -1,0 +1,92 @@
+{
+  "_enrichment_version": "v2",
+  "_base": "11_canonical_enriched.json",
+  "item21_financial_structure": {
+    "entity_classification": "Pass-through royalty collection vehicle",
+    "tax_treatment": "Disregarded entity for US income tax; all items flow to Hilton",
+    "cash_management": "Centralized by Hilton; entity has no independent cash management",
+    "revenue_composition_2024": {
+      "franchise_royalty_fees": 1434453000,
+      "franchise_sales_coo_fees": 49340000,
+      "termination_fees_other": 18276000,
+      "total": 1502069000
+    },
+    "expense_structure_2024": {
+      "operating_expenses": 1354000,
+      "credit_loss_provision": 6248000,
+      "amortization": 3751000,
+      "total": 11353000,
+      "operating_margin_pct": 99.2
+    },
+    "distributions_pattern": {
+      "2024": 1500000000,
+      "2023": 1400000000,
+      "2022": 1550000000,
+      "note": "Substantially all net income distributed annually to parent"
+    },
+    "intercompany_exposure": {
+      "other_receivables_from_affiliates_2024": 703943000,
+      "due_from_affiliates_equity_2024": -261959000,
+      "franchise_deposits_held_by_affiliates": 18498000
+    },
+    "asset_composition_2024": {
+      "cash_pct": 0.02,
+      "receivables_pct": 66.2,
+      "franchise_contracts_pct": 30.9,
+      "other_pct": 2.88
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "current_assets_2024": 872512000,
+      "non_current_assets_2024": 397385000,
+      "total_assets_2024": 1269897000,
+      "current_liabilities_2024": 167610000,
+      "total_liabilities_2024": 692892000,
+      "members_equity_2024": 577005000,
+      "key_items": {
+        "accounts_receivable_net_2024": 135970000,
+        "allowance_for_credit_losses_2024": 10411000,
+        "franchise_contracts_gross_2024": 468626000,
+        "franchise_contracts_accumulated_amort_2024": 75878000,
+        "deferred_revenues_total_2024": 558880000,
+        "contributed_capital_2024": 310000000,
+        "retained_earnings_2024": 528936000
+      }
+    },
+    "income_statement_3yr": {
+      "revenue": {"2024": 1502069000, "2023": 1376897000, "2022": 1229465000},
+      "revenue_growth": {"2024": "9.1%", "2023": "12.0%"},
+      "operating_income": {"2024": 1490716000, "2023": 1371192000, "2022": 1231009000},
+      "net_income": {"2024": 1487571000, "2023": 1372281000, "2022": 1233442000}
+    },
+    "cash_flow_3yr": {
+      "operating": {"2024": 1516760000, "2023": 1423109000, "2022": 1569887000},
+      "investing": {"2024": -80050000, "2023": 0, "2022": 0},
+      "financing": {"2024": -1441744000, "2023": -1417891000, "2022": -1569964000},
+      "cash_end": {"2024": 317000, "2023": 5348000, "2022": 99000}
+    },
+    "notes_summary": {
+      "note1_organization": "DE LLC formed 9/12/2007; franchisor of Hilton brands in US, territories, and Thailand",
+      "note2_accounting_policies": "Revenue recognized as sales-based royalties over time; GAAP basis; franchise contracts amortized straight-line 10-20 years",
+      "note3_acquisition": "Graduate brand franchise contracts acquired May 2024, ~$85M, asset acquisition, 15-year amortization",
+      "note4_franchise_contracts": "Net carrying value $392.7M (2024); gross $468.6M less $75.9M accumulated amortization",
+      "note5_fair_value": "Financial assets/liabilities at carrying value equals fair value",
+      "note6_income_taxes": "Disregarded entity; no US income tax provision; foreign tax only ($412K in 2024)",
+      "note7_commitments": "Guarantees Hilton debt (2025-2033); all assets pledged; no material adverse litigation expected",
+      "note8_related_party": "Centralized cash management by Hilton; periodic settlements of $1.5B with simultaneous distributions; operator agreement with Hilton affiliate (no compensation paid)",
+      "note9_subsequent_events": "Evaluated through March 18, 2025 (Note contains apparent typo of '2024')"
+    }
+  },
+  "item6_fee_detail": {
+    "fee_categories": {
+      "core_monthly": ["Monthly Royalty (6% GRR)", "Monthly Program Fee (2.0-2.5% GRR)"],
+      "loyalty_distribution": ["Hilton Honors (2% folio)", "Hilton Advance (1.35% DDR)", "Travel Clubs", "Group Preferred Partnership", "Hilton For Business", "ResMax", "Centralized Payment Programs", "Consortia", "TMC Programs", "US Government Programs", "Online Group Event Booking", "Hilton Honors Event Planner Bonus"],
+      "technology": ["OnQ Connectivity ($400-600/mo)", "HW/SW Maintenance ($1,095-2,389/mo)", "OnQ Email", "Connected Room ($529-815/mo)", "Delphi (optional)"],
+      "quality_assurance": ["Guest Assistance ($200-300/transaction)", "Price Match Guarantee", "Plans & Designs Late Fee ($5,000/90 days)", "Brand Non-Compliance ($65-145/room)", "Re-Evaluation (up to $4,500)", "Special Audit ($5,500)", "PIP/Renovation Failure ($10,000/6 mo)", "Stay Score Failure (up to $300/room)", "Service Quality Improvement ($20,000-50,000/6 mo)"],
+      "transfer_relicensing": ["COO Application ($100,000)", "Permitted Transfer Processing ($5,500)", "Re-licensing ($100,000)", "Lender Comfort Letter ($3,500/$1,500)"],
+      "remedies_damages": ["Actual Damages", "Audit deficiency + interest", "Default Remedies", "Indemnification", "Insurance (if lapsed)", "Liquidated Damages (various formulas)", "Late Payment (1.5%/mo)", "Taxes", "ID/Sales Non-Compliance ($500)", "FastPay Non-Compliance ($500-3,000)"],
+      "miscellaneous": ["Consultation Fees", "Procurement (4-10%)", "Room Addition ($400/room)", "PIP ($10,000)", "Add-On Program (up to 5%)", "Brand Conference (up to $2,500)", "Training (various)"]
+    }
+  }
+}

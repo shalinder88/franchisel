@@ -1,0 +1,74 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "Cupbop Co. operates concessions at Vivint Smart Home Arena, Rice-Eccles Stadium, and LaVell Edwards Stadium",
+      "source": "Reader Report Pass D / PDF pages 47",
+      "promoted_to": "territory.non_traditional_venue_examples"
+    },
+    {
+      "id": "P2",
+      "fact": "Online delivery orders placed by customers within protected territory may be fulfilled by franchisor, affiliates, or another franchisee",
+      "source": "Reader Report Pass D / PDF page 32",
+      "promoted_to": "territory.online_delivery_carveout_detail"
+    },
+    {
+      "id": "P3",
+      "fact": "Franchisor's total revenue for FY2024 was $2,027,743 with $0 from product sales to franchisees; Cupbop Co. had $36,920 from franchisee product sales",
+      "source": "Reader Report Pass C / PDF page 23",
+      "promoted_to": "item8_supplier.revenue_from_franchisee_purchases"
+    },
+    {
+      "id": "P4",
+      "fact": "Estimated 22-40% of establishment purchases and 22-33% of ongoing purchases subject to specification requirements",
+      "source": "Reader Report Pass C / PDF page 23",
+      "promoted_to": "item8_supplier.purchase_percentage_estimates"
+    },
+    {
+      "id": "P5",
+      "fact": "Two Oklahoma company-owned units sold to franchisees in 2023",
+      "source": "Reader Report Pass F / PDF page 46",
+      "promoted_to": "item20_outlets.company_to_franchise_conversions"
+    },
+    {
+      "id": "P6",
+      "fact": "Ad fund 2024 spending: 31% production, 29% placement, 40% administrative",
+      "source": "Reader Report Pass C / PDF page 29",
+      "promoted_to": "fees.advertising_fund.spending_breakdown_2024"
+    },
+    {
+      "id": "P7",
+      "fact": "POS annual maintenance cost: $7,200-$12,000",
+      "source": "Reader Report Pass C / PDF page 29",
+      "promoted_to": "technology.pos_annual_maintenance"
+    },
+    {
+      "id": "P8",
+      "fact": "Operations manual has 108 pages, version 03-01-2023",
+      "source": "Reader Report Pass C / PDF page 30",
+      "promoted_to": "training.operations_manual_pages"
+    },
+    {
+      "id": "P9",
+      "fact": "Agent for service of process in Utah: Corporate Agent Services, LLC at 36 South State Street, Suite 1900, Salt Lake City, Utah 84111",
+      "source": "Reader Report Pass B / PDF page 9",
+      "promoted_to": "document_identity.agent_for_service"
+    },
+    {
+      "id": "P10",
+      "fact": "Franchise sellers: Dok Kwon and Mike Penn, both at 12184 South Business Park Drive, Suite C, Draper, UT 84020, (801) 916-8968",
+      "source": "Reader Report / PDF page 200",
+      "promoted_to": "document_identity.franchise_sellers"
+    }
+  ],
+  "facts_already_in_canonical": [
+    "All Item 19 data",
+    "All Item 20 data",
+    "Fee stack details",
+    "Contract terms",
+    "Financial statement key figures",
+    "State addenda list"
+  ],
+  "notes": "Most narrative facts were already captured in canonical. The 10 promoted facts above fill minor gaps in subsidiary detail."
+}

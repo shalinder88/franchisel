@@ -1,0 +1,56 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "Average hotel age of Covered Hotels is 30.2 years as of December 31, 2024",
+      "source": "Reader Report Pass F / Item 19, p81",
+      "promoted_to": "item19.population_avg_age_years"
+    },
+    {
+      "fact": "Average number of rooms at Covered Hotels is 541 (range 182-2,032)",
+      "source": "Reader Report Pass F / Item 19, p81",
+      "promoted_to": "item19.population_avg_rooms"
+    },
+    {
+      "fact": "Reservation mix: 78.9% for 1-4 nights, 18.7% for 5-11 nights, 1.9% for 12-29 nights, 0.6% for 30+ nights",
+      "source": "Reader Report Pass F / Item 19, p81",
+      "promoted_to": "item19.reservation_length_mix"
+    },
+    {
+      "fact": "Hyatt Hotels Corporation worldwide portfolio: 1,442 hotels, 347,301 rooms, 79 countries, 721 US hotels",
+      "source": "Financial notes / Note 1, p110",
+      "promoted_to": "item21.parent_portfolio"
+    },
+    {
+      "fact": "Total stock repurchases in 2024: $1,190M ($453M in 2023, $369M in 2022)",
+      "source": "Financial statements / Cash flow + Equity, pp107-109",
+      "promoted_to": "item21.shareholder_returns"
+    },
+    {
+      "fact": "System Standards manual is 3,641 pages",
+      "source": "Reader Report Pass C / Item 11, p51",
+      "promoted_to": "item11.system_standards_pages"
+    },
+    {
+      "fact": "Pre-opening marketing minimum spend: $500 x number of guest rooms",
+      "source": "Reader Report Pass C / Item 11, p49",
+      "promoted_to": "item11.pre_opening_marketing_minimum"
+    },
+    {
+      "fact": "Actual initial fees paid by 2024 signers: $83,500-$215,870",
+      "source": "Reader Report Pass B / Item 5, p20",
+      "promoted_to": "franchise_fee.actual_range_2024"
+    },
+    {
+      "fact": "Franchisor entity (Hyatt Franchising, L.L.C.) has member's equity of $148,528,217",
+      "source": "California addenda / p365-366",
+      "promoted_to": "item21.franchisor_entity_equity"
+    },
+    {
+      "fact": "Upsell commission: 5% of upgrade revenue difference (Upsell Revenue)",
+      "source": "Reader Report / Item 6 Note 10, p35",
+      "promoted_to": "item6.upsell_commission"
+    }
+  ],
+  "total_promoted": 10
+}

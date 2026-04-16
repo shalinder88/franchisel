@@ -1,0 +1,310 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "Jazzercise",
+  "fdd_id": "637934-2025",
+  "tables": [
+    {
+      "table_id": "T01",
+      "source_item": 5,
+      "title": "Initial Franchise Fee",
+      "source_pages": [20],
+      "columns": ["Fee Type", "Amount"],
+      "rows": [
+        {"Fee Type": "Initial Franchise Fee (all franchisees)", "Amount": "$1,250"},
+        {"Fee Type": "Reduced fee (employees 90+ days)", "Amount": "$625"},
+        {"Fee Type": "Recertification fee (>12 months)", "Amount": "$625"},
+        {"Fee Type": "Returning franchisee fee (<12 months)", "Amount": "$250"}
+      ],
+      "table_notes": [
+        "Payment: at least 50% by Monday before initial training; balance auto-debited 30 days after completion.",
+        "Gift program: existing franchisees receive one franchise gift every 5 years (new franchisee pays no fee).",
+        "Refundable less $250 if franchisee doesn't attend training, fails audition, or fails to complete training."
+      ],
+      "provenance": "Item 5, PDF page 20"
+    },
+    {
+      "table_id": "T02",
+      "source_item": 6,
+      "title": "Other Fees",
+      "source_pages": [21, 22],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Type of Fee": "Continuing Fee/Royalties", "Amount": "20% of gross member enrollment (10% for certain programs); class owner min $250/mo; business owner min $500/mo", "Due Date": "Upon processing and monthly report", "Remarks": "See Note 1"},
+        {"Type of Fee": "Associate Fee", "Amount": "Up to $300; currently $130/yr or $13/mo ($156/yr)", "Due Date": "Nov 1 or monthly", "Remarks": "See Note 2"},
+        {"Type of Fee": "Performance Royalties", "Amount": "Varies by member count", "Due Date": "January", "Remarks": "See Note 3"},
+        {"Type of Fee": "Returning Franchisee Fee", "Amount": "$250", "Due Date": "Upon reinstatement", "Remarks": "See Note 4"},
+        {"Type of Fee": "Recertification Fee", "Amount": "$625", "Due Date": "Upon recertification", "Remarks": "See Note 5"},
+        {"Type of Fee": "Member Reimbursement Fee", "Amount": "Jazzercise's costs", "Due Date": "Upon demand", "Remarks": "See Note 6"},
+        {"Type of Fee": "Indemnification", "Amount": "Losses and costs", "Due Date": "Upon demand", "Remarks": "See Note 7"},
+        {"Type of Fee": "Late Fee", "Amount": "$50 ($20 for monthly associate/insurance)", "Due Date": "When overdue", "Remarks": "See Note 8"},
+        {"Type of Fee": "Attorney's Fees", "Amount": "Reasonable fees and costs", "Due Date": "Upon determination", "Remarks": "See Note 9"},
+        {"Type of Fee": "Advertising Contribution", "Amount": "TBD", "Due Date": "Upon demand", "Remarks": "See Note 10"},
+        {"Type of Fee": "Insurance Payment", "Amount": "$245–$345", "Due Date": "Nov 1 or monthly", "Remarks": "See Note 11"},
+        {"Type of Fee": "Technology Fee", "Amount": "TBD", "Due Date": "Upon demand", "Remarks": "See Note 12"}
+      ],
+      "table_notes": [
+        "Note 1: Min continuing fee may increase to $500/mo (class owner) or $1,000/mo (business owner). Royalties may be netted from Glofox Stripe account.",
+        "Note 2: May increase to $300/yr.",
+        "Note 3: Music licensing — ASCAP $73–$136, BMI $69–$135, SESAC $29–$55, GMR $29–$58 + $8 admin. Live stream add-ons: ASCAP $10, SESAC $37, GMR $20 + $6 admin.",
+        "Note 10: Ad fund not yet established.",
+        "Note 11: Monthly payment $23/mo ($276/yr total) if paying monthly.",
+        "Note 12: Technology fee not yet established."
+      ],
+      "provenance": "Item 6, PDF pages 21–24"
+    },
+    {
+      "table_id": "T03",
+      "source_item": 7,
+      "title": "Estimated Initial Investment — Associate Franchisees",
+      "source_pages": [25],
+      "columns": ["Type of Expenditure", "Amount", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"Type of Expenditure": "Initial Franchise Fee", "Amount": "$1,250", "Method of Payment": "Lump Sum or Installments", "When Due": "At least 50% before training", "To Whom": "Jazzercise"},
+        {"Type of Expenditure": "Associate Fee", "Amount": "$0–$130", "Method of Payment": "Lump Sum or Installments", "When Due": "See Note 2", "To Whom": "Jazzercise"},
+        {"Type of Expenditure": "Insurance", "Amount": "$245–$345", "Method of Payment": "Lump Sum or Installments", "When Due": "See Note 3", "To Whom": "Jazzercise or insurance company"},
+        {"Type of Expenditure": "Equipment", "Amount": "$500–$700", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Music", "Amount": "$25–$35", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Digital music stores"},
+        {"Type of Expenditure": "Miscellaneous Opening Costs", "Amount": "$150–$250", "Method of Payment": "As incurred", "When Due": "During training", "To Whom": "Airlines, hotels, suppliers"},
+        {"Type of Expenditure": "Additional Funds (3 months)", "Amount": "$0–$70", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Various"},
+        {"Type of Expenditure": "TOTAL", "Amount": "$2,170–$2,780", "Method of Payment": "", "When Due": "", "To Whom": ""}
+      ],
+      "table_notes": [
+        "All figures are estimates only.",
+        "Equipment: wireless microphone required; mobile device as audio player.",
+        "Music: ~$200–$300/yr ongoing.",
+        "This is not a breakeven analysis."
+      ],
+      "provenance": "Item 7, PDF page 25"
+    },
+    {
+      "table_id": "T04",
+      "source_item": 7,
+      "title": "Estimated Initial Investment — Class Owner or Business Franchisees",
+      "source_pages": [27, 28],
+      "columns": ["Type of Expenditure", "Amount", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"Type of Expenditure": "Initial Franchise Fee", "Amount": "$1,250", "Method of Payment": "Lump Sum or Installments", "When Due": "At least 50% before training", "To Whom": "Jazzercise"},
+        {"Type of Expenditure": "Insurance", "Amount": "$245–$345", "Method of Payment": "Lump Sum or Installments", "When Due": "See Note 2", "To Whom": "Jazzercise or insurance company"},
+        {"Type of Expenditure": "Equipment", "Amount": "$1,710–$4,800", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Suppliers"},
+        {"Type of Expenditure": "Music", "Amount": "$25–$35", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Digital music stores"},
+        {"Type of Expenditure": "Marketing & Advertising", "Amount": "$555–$6,495", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Jazzercise and advertisers"},
+        {"Type of Expenditure": "Security Deposits", "Amount": "$0–$10,000", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Landlord"},
+        {"Type of Expenditure": "Miscellaneous Opening Costs", "Amount": "$150–$250", "Method of Payment": "As incurred", "When Due": "During training", "To Whom": "Airlines, hotels, suppliers"},
+        {"Type of Expenditure": "Additional Funds (3 months)", "Amount": "$0–$17,570", "Method of Payment": "As incurred", "When Due": "As incurred", "To Whom": "Various"},
+        {"Type of Expenditure": "TOTAL", "Amount": "$3,935–$40,745", "Method of Payment": "", "When Due": "", "To Whom": ""}
+      ],
+      "table_notes": [
+        "All figures are estimates only.",
+        "Equipment includes wireless microphone, fitness equipment (bands, weights), stage, speakers, mixer, power amplifier, computer system ($500–$1,500).",
+        "Security deposits: facility sizes 1,200–3,000 sq ft at market rent.",
+        "Additional funds high end includes hiring cleaners and childcare during class hours.",
+        "This is not a breakeven analysis."
+      ],
+      "provenance": "Item 7, PDF pages 27–30"
+    },
+    {
+      "table_id": "T05",
+      "source_item": 20,
+      "title": "Systemwide Outlet Information",
+      "source_pages": [62],
+      "columns": ["Outlet Type", "Year", "Outlets at Start", "Outlets at End", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": "2022", "Outlets at Start": "5,844", "Outlets at End": "5,533", "Net Change": "-311"},
+        {"Outlet Type": "Franchised", "Year": "2023", "Outlets at Start": "5,533", "Outlets at End": "5,253", "Net Change": "-280"},
+        {"Outlet Type": "Franchised", "Year": "2024", "Outlets at Start": "5,253", "Outlets at End": "5,251", "Net Change": "-2"},
+        {"Outlet Type": "Company-Owned", "Year": "2022", "Outlets at Start": "0", "Outlets at End": "0", "Net Change": "0"},
+        {"Outlet Type": "Company-Owned", "Year": "2023", "Outlets at Start": "0", "Outlets at End": "0", "Net Change": "0"},
+        {"Outlet Type": "Company-Owned", "Year": "2024", "Outlets at Start": "0", "Outlets at End": "0", "Net Change": "0"}
+      ],
+      "table_notes": [
+        "Franchisees are instructors conducting dance fitness programs, not necessarily retail outlets.",
+        "Jazzercise operates facilities in Carlsbad and Oceanside, CA; all instructors there are franchisees.",
+        "Years ended December 31."
+      ],
+      "provenance": "Item 20, PDF page 62"
+    },
+    {
+      "table_id": "T06",
+      "source_item": 20,
+      "title": "Transfers of Outlets from Franchisees to New Owners",
+      "source_pages": [63],
+      "columns": ["Year", "Number of Transfers"],
+      "rows": [
+        {"Year": "2022", "Number of Transfers": "0"},
+        {"Year": "2023", "Number of Transfers": "0"},
+        {"Year": "2024", "Number of Transfers": "0"}
+      ],
+      "table_notes": [],
+      "provenance": "Item 20, PDF page 63"
+    },
+    {
+      "table_id": "T07",
+      "source_item": 20,
+      "title": "Status of Franchised Outlets (by state, 2022–2024)",
+      "source_pages": [63, 64, 65, 66],
+      "columns": ["State", "Year", "Start", "New", "Terminations", "Non-Renewals", "Reacquired", "Ceased Other", "End"],
+      "rows_summary": "49 states + DC for 3 years each. Key totals below.",
+      "totals": [
+        {"Year": "2022", "Start": "5,844", "New": "256", "Terminations": "67", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "499", "End": "5,533"},
+        {"Year": "2023", "Start": "5,533", "New": "255", "Terminations": "48", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "487", "End": "5,253"},
+        {"Year": "2024", "Start": "5,253", "New": "385", "Terminations": "24", "Non-Renewals": "0", "Reacquired": "0", "Ceased Other": "363", "End": "5,251"}
+      ],
+      "table_notes": [
+        "New Outlets does not include franchisees reinstated within one year or those who moved from another state.",
+        "Ceased Operations – Other Reasons includes franchisees who resigned but not those who moved to another state.",
+        "Franchisees in multiple states counted in state with most revenue. Associates counted in state of residence.",
+        "0 non-renewals and 0 reacquisitions in all three years."
+      ],
+      "provenance": "Item 20, PDF pages 63–66"
+    },
+    {
+      "table_id": "T08",
+      "source_item": 20,
+      "title": "Status of Company-Owned Outlets",
+      "source_pages": [67],
+      "columns": ["Year", "Start", "New", "Reacquired", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        {"Year": "2022", "Start": "0", "New": "0", "Reacquired": "0", "Closed": "0", "Sold to Franchisee": "0", "End": "0"},
+        {"Year": "2023", "Start": "0", "New": "0", "Reacquired": "0", "Closed": "0", "Sold to Franchisee": "0", "End": "0"},
+        {"Year": "2024", "Start": "0", "New": "0", "Reacquired": "0", "Closed": "0", "Sold to Franchisee": "0", "End": "0"}
+      ],
+      "table_notes": ["Some franchisees may also be Jazzercise employees for non-franchise purposes."],
+      "provenance": "Item 20, PDF page 67"
+    },
+    {
+      "table_id": "T09",
+      "source_item": 20,
+      "title": "Projected Openings (as of December 31, 2024)",
+      "source_pages": [67, 68, 69],
+      "columns": ["State", "FA Signed Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "totals": {"FA Signed Not Opened": "19", "Projected New Franchised": "274", "Projected New Company-Owned": "0"},
+      "table_notes": ["As of January 1, 2025. Signed-not-opened are franchisees who signed but not yet certified."],
+      "provenance": "Item 20, PDF pages 67–69"
+    },
+    {
+      "table_id": "T10",
+      "source_item": 21,
+      "title": "Balance Sheet",
+      "source_pages": [83],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Cash and cash equivalents", "2024": "$10,575,896", "2023": "$7,489,762", "2022": "$6,682,301"},
+        {"Line Item": "Accounts receivable, net", "2024": "$1,527,781", "2023": "$390,495", "2022": "$367,212"},
+        {"Line Item": "Inventories", "2024": "$682,528", "2023": "$447,979", "2022": "$523,956"},
+        {"Line Item": "Investments (current)", "2024": "$1,975,313", "2023": "$5,531,566", "2022": "$6,319,462"},
+        {"Line Item": "Prepaid expenses", "2024": "$1,387,496", "2023": "$1,059,879", "2022": "$1,104,328"},
+        {"Line Item": "Total current assets", "2024": "$16,149,014", "2023": "$14,919,681", "2022": "$14,997,259"},
+        {"Line Item": "ROU asset (operating leases)", "2024": "$975,671", "2023": "$1,113,023", "2022": "$1,601,392"},
+        {"Line Item": "Equipment & leasehold improvements, net", "2024": "$873,853", "2023": "$346,477", "2022": "$370,539"},
+        {"Line Item": "Website development costs, net", "2024": "$533,228", "2023": "$0", "2022": "$0"},
+        {"Line Item": "Investments (noncurrent)", "2024": "$2,035,716", "2023": "$3,077,255", "2022": "$1,794,578"},
+        {"Line Item": "Deferred tax asset", "2024": "$0", "2023": "$132,640", "2022": "$99,481"},
+        {"Line Item": "Other assets", "2024": "$641,206", "2023": "$585,507", "2022": "$530,332"},
+        {"Line Item": "Total assets", "2024": "$21,208,688", "2023": "$20,174,583", "2022": "$19,393,581"},
+        {"Line Item": "AP and accrued expenses", "2024": "$3,747,413", "2023": "$3,123,869", "2022": "$2,961,669"},
+        {"Line Item": "Deferred revenue", "2024": "$2,280,915", "2023": "$2,170,592", "2022": "$2,203,340"},
+        {"Line Item": "Operating lease liability (current)", "2024": "$211,968", "2023": "$506,273", "2022": "$509,752"},
+        {"Line Item": "Total current liabilities", "2024": "$6,240,296", "2023": "$5,800,734", "2022": "$5,674,761"},
+        {"Line Item": "Deferred tax liability", "2024": "$47,048", "2023": "$0", "2022": "$0"},
+        {"Line Item": "Noncurrent operating lease liability", "2024": "$857,293", "2023": "$728,989", "2022": "$1,235,261"},
+        {"Line Item": "Total liabilities", "2024": "$7,144,637", "2023": "$6,529,723", "2022": "$6,910,022"},
+        {"Line Item": "Common/Class stock", "2024": "$20,000", "2023": "$20,000", "2022": "$20,000"},
+        {"Line Item": "Retained earnings", "2024": "$14,044,051", "2023": "$13,624,860", "2022": "$12,463,559"},
+        {"Line Item": "Total equity", "2024": "$14,064,051", "2023": "$13,644,860", "2022": "$12,483,559"},
+        {"Line Item": "Total liabilities and equity", "2024": "$21,208,688", "2023": "$20,174,583", "2022": "$19,393,581"}
+      ],
+      "table_notes": [
+        "Class A (200 shares voting) and Class B (1,800 shares non-voting) converted Dec 2, 2024. Previously 2,000 shares common.",
+        "No debt. All liabilities are operational."
+      ],
+      "provenance": "Exhibit C, PDF page 83"
+    },
+    {
+      "table_id": "T11",
+      "source_item": 21,
+      "title": "Income Statement",
+      "source_pages": [84],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Revenue, net", "2024": "$20,534,356", "2023": "$19,382,109", "2022": "$19,631,468"},
+        {"Line Item": "Cost of revenue", "2024": "$4,157,028", "2023": "$3,159,113", "2022": "$3,337,133"},
+        {"Line Item": "SG&A expenses", "2024": "$16,464,293", "2023": "$15,441,273", "2022": "$15,044,370"},
+        {"Line Item": "Total operating costs", "2024": "$20,621,321", "2023": "$18,600,386", "2022": "$18,381,503"},
+        {"Line Item": "(Loss) income from operations", "2024": "$(86,965)", "2023": "$781,723", "2022": "$1,249,965"},
+        {"Line Item": "Interest and dividend income", "2024": "$483,308", "2023": "$364,516", "2022": "$37,021"},
+        {"Line Item": "Unrealized gain (losses) on investments", "2024": "$192,505", "2023": "$283,255", "2022": "$(230,792)"},
+        {"Line Item": "Other income (expense), net", "2024": "$691,154", "2023": "$728,046", "2022": "$(177,059)"},
+        {"Line Item": "Income before taxes", "2024": "$604,189", "2023": "$1,509,769", "2022": "$1,072,906"},
+        {"Line Item": "Provision for income taxes", "2024": "$(184,998)", "2023": "$(348,468)", "2022": "$(229,755)"},
+        {"Line Item": "Net income", "2024": "$419,191", "2023": "$1,161,301", "2022": "$843,151"}
+      ],
+      "table_notes": [
+        "2024 operating loss offset by investment income to produce positive net income.",
+        "Revenue breakdown: franchise $9.29M, merchandise $4.64M, On Demand $3.67M, other $2.94M."
+      ],
+      "provenance": "Exhibit C, PDF page 84"
+    },
+    {
+      "table_id": "T12",
+      "source_item": 21,
+      "title": "Revenue Breakdown",
+      "source_pages": [92],
+      "columns": ["Revenue Stream", "2024", "2023", "2022"],
+      "rows": [
+        {"Revenue Stream": "Continuing franchise revenue", "2024": "$9,287,764", "2023": "$9,309,623", "2022": "$8,924,062"},
+        {"Revenue Stream": "Merchandise revenue", "2024": "$4,635,945", "2023": "$3,662,956", "2022": "$4,093,922"},
+        {"Revenue Stream": "On Demand revenue", "2024": "$3,671,202", "2023": "$4,129,571", "2022": "$4,321,988"},
+        {"Revenue Stream": "Other revenue", "2024": "$2,939,445", "2023": "$2,279,959", "2022": "$2,291,496"},
+        {"Revenue Stream": "Total revenue", "2024": "$20,534,356", "2023": "$19,382,109", "2022": "$19,631,468"}
+      ],
+      "table_notes": [
+        "Other revenue: insurance program, associate fees, royalty, conventions, operating studio locations.",
+        "Franchise fee rebates of $1,226,336 (2024) recorded as revenue reduction."
+      ],
+      "provenance": "Note 2, PDF page 92"
+    },
+    {
+      "table_id": "T13",
+      "source_item": 11,
+      "title": "Training Program",
+      "source_pages": [43, 44],
+      "columns": ["Subject", "Classroom Hours", "OJT Hours", "Location"],
+      "rows": [
+        {"Subject": "Fundamental Anatomy and Exercise Physiology", "Classroom Hours": "2–4", "OJT Hours": "0", "Location": "Online"},
+        {"Subject": "Exam", "Classroom Hours": "0.5–1", "OJT Hours": "0", "Location": "Online"},
+        {"Subject": "Routine choreography", "Classroom Hours": "6–10", "OJT Hours": "0", "Location": "Online"},
+        {"Subject": "Video calls with Training Specialist", "Classroom Hours": "3", "OJT Hours": "0", "Location": "Online"},
+        {"Subject": "Social Media Basics", "Classroom Hours": "0.5", "OJT Hours": "0", "Location": "Online"},
+        {"Subject": "New Instructor Onboarding", "Classroom Hours": "0.5", "OJT Hours": "0", "Location": "Online"},
+        {"Subject": "Set Structure (video)", "Classroom Hours": "0.08", "OJT Hours": "0", "Location": "Online"},
+        {"Subject": "Additional Class/Business Owner modules (8 topics)", "Classroom Hours": "~8", "OJT Hours": "0", "Location": "Online"}
+      ],
+      "table_notes": [
+        "All training currently conducted online.",
+        "Trainers have minimum 2 years experience as Jazzercise franchisees.",
+        "No charge for training; franchisee pays own travel if in-person.",
+        "Must complete within 6 months of signing."
+      ],
+      "provenance": "Item 11, PDF pages 43–44"
+    },
+    {
+      "table_id": "T14",
+      "source_item": 6,
+      "title": "Music Performance Royalties",
+      "source_pages": [23],
+      "columns": ["Organization", "Up to 74 Members", "75+ Members"],
+      "rows": [
+        {"Organization": "ASCAP", "Up to 74 Members": "$73.00", "75+ Members": "$136.00"},
+        {"Organization": "BMI", "Up to 74 Members": "$69.00", "75+ Members": "$135.00"},
+        {"Organization": "SESAC", "Up to 74 Members": "$29.00", "75+ Members": "$55.00"},
+        {"Organization": "GMR", "Up to 74 Members": "$29.00", "75+ Members": "$58.00"}
+      ],
+      "table_notes": [
+        "$8.00 administrative fee also required.",
+        "Live streaming add-ons: ASCAP $10, BMI $0, SESAC $37, GMR $20, $6 admin.",
+        "Associate instructors do not pay these fees."
+      ],
+      "provenance": "Item 6 Note 3, PDF page 23"
+    }
+  ]
+}

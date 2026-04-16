@@ -1,0 +1,55 @@
+Run a full Claude-first automation pass for this attached FDD.
+
+Mode: fresh shadow benchmark test
+PDF: attached file only
+Run directory: runs/fresh-134-638057-2025-hilton-garden-inn-20260415-173936/
+Benchmark standard: McDonald's manual gold is the benchmark standard, but do not read, compare, or use any prior/manual run until A3 is complete.
+
+Operating rules:
+- Do not patch prompts or bootstrap during the run.
+- Do not ask me for the next prompt.
+- Existing runs for the same brand are not a blocker if they exist; just use a new slug and continue.
+- Do not overwrite any prior run.
+- Read and use the existing repo prompt files directly.
+- Keep one PDF only.
+- Work only in this run directory.
+- Use bootstrap first, then the existing repo prompt files directly.
+- No jumping between phases.
+- Do not start A2 before A1 is fully finished.
+- Do not start A3 before A2 is fully finished.
+- Do not compare against old/manual during bootstrap, A1, or A2.
+- A1 must produce the full artifact set, not a thin summary.
+- Treat exhibits, Item 19, Item 20, Item 21, Item 22, Item 23, state addenda, guaranties, franchisee lists, and financial statements as first-class evidence objects.
+
+Execution sequence:
+1. bootstrap_pdf.py
+2. prompts/A1_fresh_main_controller.txt
+3. prompts/A2_fixed_depth_pass.txt
+4. prompts/A3_publish_gate.txt
+5. prompts/A4_focused_recovery.txt only if A3 explicitly asks for one focused recovery pass
+
+Bootstrap and render rules:
+- Run bootstrap_pdf.py on the attached PDF into runs/fresh-134-638057-2025-hilton-garden-inn-20260415-173936/.
+- Read 00_bootstrap.json and 00_item_map.json before A1.
+- Trust actual_page_count, render_mode, body_start_page, and toc_map from bootstrap over any guess.
+- If toc_map exists but item_map_status is incomplete, continue anyway using toc_map as the primary anchor map.
+- Use pdftoppm whenever available.
+- If pdftoppm is unavailable, use fitz page-to-image render.
+- Use OCR only inline and only for materially needed image-only or text-empty pages.
+- Do not OCR the whole PDF.
+
+Execution rules:
+- Do not stop after each phase.
+- Continue through the whole sequence unless there is a true technical blocker.
+- Do not compare against any prior run before A3 is complete.
+- Preserve uncertainty, contradictions, and unresolveds.
+- Do not invent facts, numbers, clauses, page ranges, or exhibit contents.
+
+Final output:
+- print final inventory of files created or updated
+- print key metrics
+- print the final A3/A4 verdict:
+  - publish-ready
+  - publish-ready with caveats
+  - needs one focused recovery pass
+  - not production-ready

@@ -1,0 +1,65 @@
+{
+  "enrichment_version": "v1",
+  "base_file": "09_final_canonical.json",
+  "enrichments": {
+    "item19_chart_detail": {
+      "methodology": "Divided 17 franchised restaurants open 24+ months into thirds by gross sales performance. Calendar year 2024 data from franchisee POS systems, not audited.",
+      "overall_weighted_avg_gross_sales": 2302203,
+      "full_system_gross_sales_range": {"low": 975231, "high": 4031590, "spread_ratio": 4.13},
+      "newer_restaurants_12mo": {"n": 2, "avg": 1510303, "low": 800184, "high": 2220422},
+      "no_cost_data": true,
+      "no_profit_data": true,
+      "estimated_fee_burden_at_avg": {"royalty_5pct": 115110, "brand_fund_3pct": 69066, "local_adv_1pct": 23022, "total_9pct": 207198}
+    },
+    "item20_yearly_activity": {
+      "2022": {"start": 24, "opened": 2, "terminated": 0, "closed_other": 0, "end": 26, "net": 2},
+      "2023": {"start": 26, "opened": 0, "terminated": 2, "closed_other": 2, "end": 22, "net": -4},
+      "2024": {"start": 22, "opened": 5, "terminated": 2, "closed_other": 0, "end": 24, "net": 2},
+      "company_owned_2024": {"start": 1, "closed": 1, "end": 0},
+      "three_year_cumulative": {"opened": 7, "lost": 6, "net": 1}
+    },
+    "exhibit_structure": {
+      "total_exhibits": 11,
+      "total_exhibit_pages": 189,
+      "exhibits_deep_read": ["B", "G"],
+      "exhibits_pending_depth": ["C", "D", "H"],
+      "sub_exhibits": {"H": ["H-1", "H-2", "H-3", "H-4", "H-5", "H-6", "H-7", "H-8"]}
+    },
+    "item21_structural_facts": {
+      "auditor": "Moss Adams LLP",
+      "auditor_location": "Irvine, California",
+      "going_concern": true,
+      "opinion_type": "unqualified_with_going_concern",
+      "fiscal_year_end": "December 31",
+      "unrestricted_cash_2024": 53911,
+      "restricted_cash_2024": 430950,
+      "current_ratio_2024": 0.77,
+      "debt_to_equity": "N/A (negative equity)",
+      "total_distributions_2022_2024": 1800000,
+      "total_net_income_2022_2024": 374695
+    },
+    "item1_structural_facts": {
+      "franchise_concept": "Full-service casual dining + sports bar",
+      "alcohol_service": true,
+      "liquor_license_required": true,
+      "dram_shop_liability": true,
+      "restaurant_size_sqft": "5,000-7,000",
+      "franchise_start_date": "2001-12-21",
+      "predecessor_start_date": "1995-10",
+      "operations_manual_pages": 1675,
+      "operations_manual_format": "electronic (Bostonlink.org)",
+      "time_to_open_months": "9-15",
+      "max_months_to_open": 15
+    },
+    "item6_fee_attributes": {
+      "total_ongoing_pct": 9.0,
+      "cpi_adjustment_threshold_pct": 5.0,
+      "cpi_max_adjustments_per_year": 1,
+      "cpi_notice_days": 60,
+      "payment_method": "ACH/EFT",
+      "brand_fund_audited": false,
+      "brand_fund_accounting_available": true,
+      "brand_fund_spending_2024": {"production_pct": 25, "media_pct": 50, "admin_pct": 25}
+    }
+  }
+}

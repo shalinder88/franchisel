@@ -1,0 +1,96 @@
+{
+  "enrichment_version": "v2",
+  "extraction_date": "2026-04-15",
+  "filing_id": "637925-2025",
+  "brand": "Hyatt Place",
+  "item21_financial_structure_detail": {
+    "revenue_segments": {
+      "net_fees": {"2024": 1030000000, "2023": 923000000, "2022": 777000000},
+      "owned_and_leased": {"2024": 1174000000, "2023": 1339000000, "2022": 1235000000},
+      "distribution": {"2024": 1023000000, "2023": 1047000000, "2022": 986000000},
+      "reimbursed_costs": {"2024": 3352000000, "2023": 3058000000, "2022": 2620000000}
+    },
+    "fee_revenue_breakdown": {
+      "base_management_fees": {"2024": 399000000, "2023": 374000000, "2022": 319000000},
+      "incentive_management_fees": {"2024": 242000000, "2023": 232000000, "2022": 192000000},
+      "franchise_and_other_fees": {"2024": 458000000, "2023": 364000000, "2022": 297000000},
+      "contra_revenue": {"2024": -69000000, "2023": -47000000, "2022": -31000000}
+    },
+    "asset_light_indicators": {
+      "property_equipment_2024": 1689000000,
+      "property_equipment_2023": 2340000000,
+      "property_decrease": -651000000,
+      "real_estate_gains_2024": 1245000000,
+      "note": "Hyatt continues asset-light transformation — selling owned properties and increasing management/franchise fee revenue"
+    },
+    "debt_profile": {
+      "current_maturities": {"2024": 456000000, "2023": 751000000},
+      "long_term_debt": {"2024": 3326000000, "2023": 2305000000},
+      "total_debt": {"2024": 3782000000, "2023": 3056000000},
+      "debt_increase_2024": 726000000
+    },
+    "loyalty_program_liability": {
+      "deferred_revenue": 1333000000,
+      "note": "Actuarially determined based on anticipated future point redemptions including breakage estimate"
+    }
+  },
+  "item21_statement_detail": {
+    "income_statement": {
+      "total_revenue": {"2024": 6648000000, "2023": 6667000000, "2022": 5891000000},
+      "ga_expense": {"2024": 548000000, "2023": 578000000, "2022": 435000000},
+      "depreciation": {"2024": 333000000, "2023": 397000000, "2022": 426000000},
+      "interest_expense": {"2024": 180000000, "2023": 145000000, "2022": 150000000},
+      "income_before_tax": {"2024": 1563000000, "2023": 310000000, "2022": 363000000},
+      "tax_provision": {"2024": 267000000, "2023": 90000000, "2022": -92000000},
+      "net_income": {"2024": 1296000000, "2023": 220000000, "2022": 455000000}
+    },
+    "balance_sheet": {
+      "total_current_assets": {"2024": 2733000000, "2023": 2130000000},
+      "total_assets": {"2024": 13324000000, "2023": 12833000000},
+      "total_current_liabilities": {"2024": 3274000000, "2023": 3578000000},
+      "total_liabilities": {"2024": 9498000000, "2023": 9266000000},
+      "stockholders_equity": {"2024": 3547000000, "2023": 3564000000},
+      "retained_earnings": {"2024": 3815000000, "2023": 3738000000}
+    },
+    "cash_flow": {
+      "operating": {"2024": 633000000, "2023": 800000000, "2022": 674000000},
+      "key_adjustments_2024": {
+        "real_estate_gains_reversed": -1245000000,
+        "depreciation_added_back": 333000000,
+        "impairments_added_back": 213000000,
+        "deferred_taxes": -123000000,
+        "loyalty_deferred_revenue": 203000000
+      }
+    }
+  },
+  "item6_fee_detail": {
+    "fee_categories": {
+      "franchise_agreement_fees": {
+        "count": 18,
+        "revenue_based": ["Royalty (5% GRR)"],
+        "fixed_periodic": ["PMS subscription ($6.65/room/month)", "Training tools ($3.64/room/year)", "QA inspection ($1,500-$2,000/year)"],
+        "event_driven": ["Transfer ($150,000)", "Liquidated damages", "Late fee ($225)", "Audit costs", "Training ($950/trainer/day)"],
+        "compliance_triggered": ["FIP stages ($5K-$20K/stage)", "BPP ($45,000/year)"]
+      },
+      "mandatory_services": {
+        "count": 5,
+        "revenue_based": ["Commercial Services Fee (3.5% GRR)", "Digital Acquisition Fee (1.35% GRR on digital)"],
+        "per_transaction": ["GDS reservations (~$8.50/res)"],
+        "fixed_periodic": ["Mandatory contracts ($1,500-$7,500/month)", "Other corporate services ($500-$5,000/month)"]
+      },
+      "non_mandatory_services": {
+        "count": 7,
+        "fixed_periodic": ["Field Marketing ($996-$2,747/month)", "Revenue Management ($1,000-$3,500/month)", "Central Sales ($1,750-$7,600/month)", "Digital Ancillary ($1,250/month + 5% commission)"],
+        "per_transaction": ["GPGS Add-On ($3.50-$16/interaction)"],
+        "commission_based": ["HSF sales (1-6% of applicable revenue)"]
+      }
+    },
+    "total_mandatory_fee_estimate": {
+      "royalty_pct": 5.0,
+      "commercial_services_pct": 3.5,
+      "digital_acquisition_pct_effective": "~0.8% of total GRR (1.35% × ~60% direct)",
+      "woh_assessment_pct_effective": "~2% of total GRR (4% × ~50% WOH revenue)",
+      "total_revenue_based_estimate": "~11.3% of GRR before fixed monthly fees"
+    }
+  }
+}

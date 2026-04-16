@@ -1,0 +1,67 @@
+{
+  "depth_pass": 3,
+  "title": "Narrative-to-Canonical Promotion Audit",
+  "promoted_facts": [
+    {
+      "fact": "Gross Rooms Revenue definition includes loyalty redemptions, mandatory guest fees, late cancellation fees, no-show revenue; excludes Gross Receipts Tax",
+      "source": "Reader Report Pass B / Item 6 Note 1, FA §1.0 definitions",
+      "source_page": [29, 134],
+      "promoted_to": "ongoing_fees.grr_definition"
+    },
+    {
+      "fact": "Hilton Advance Program: 1.35% of eligible Digital Direct Revenue, not to exceed $30 per stay. Digital Direct Revenue = all GRR from bookings through Hilton websites and mobile apps.",
+      "source": "Reader Report Pass B / Item 6 table",
+      "source_page": [33],
+      "promoted_to": "ongoing_fees.hilton_advance_detail"
+    },
+    {
+      "fact": "FRCM (Fixed Renovation Cycle Management) program may require periodic renovations. No limit on frequency or cost. Franchisee responsible for all costs.",
+      "source": "Reader Report Pass C / Item 8",
+      "source_page": [48],
+      "promoted_to": "supplier_control.frcm_program"
+    },
+    {
+      "fact": "Franchisor entity guarantees certain Hilton debt obligations maturing 2025-2033. All assets and franchise contracts pledged as collateral.",
+      "source": "Financial Notes Note 7 / Depth Pass 1",
+      "source_page": [124],
+      "promoted_to": "item21_financials.debt_guarantee"
+    },
+    {
+      "fact": "Graduate brand franchise contracts acquired May 2024 for ~$85M, accounted as asset acquisition with 15-year useful life.",
+      "source": "Financial Notes Note 3 / Depth Pass 1",
+      "source_page": [123],
+      "promoted_to": "item21_financials.graduate_acquisition"
+    },
+    {
+      "fact": "Entity is disregarded for US income tax purposes. All taxable income included in Hilton's computation. Foreign tax only on certain US territory franchise fees.",
+      "source": "Financial Notes Note 6 / Depth Pass 1",
+      "source_page": [124],
+      "promoted_to": "item21_financials.tax_status"
+    },
+    {
+      "fact": "Operator agreement with Hilton affiliate entitles affiliate to reasonable fee but no compensation was provided 2022-2024.",
+      "source": "Financial Notes Note 8 / Depth Pass 1",
+      "source_page": [125],
+      "promoted_to": "item21_financials.operator_agreement"
+    },
+    {
+      "fact": "Note 9 subsequent events evaluation date stated as 'March 18, 2024' — likely typo for March 18, 2025 given 2024 financial statements.",
+      "source": "Financial Notes Note 9 / Depth Pass 1",
+      "source_page": [125],
+      "promoted_to": "contradictions (C02)"
+    },
+    {
+      "fact": "Guaranty release possible if: guarantor sells all equity, replacement guarantor approved, franchisee in good standing with no default in prior 24 months.",
+      "source": "Depth Pass 2 / Exhibit E",
+      "source_page": [215],
+      "promoted_to": "transfer.guaranty_release_conditions"
+    },
+    {
+      "fact": "Liquidated damages in FA may use 'Termination Fee' language with additional Guest Room count multiplier ($25,000 × rooms) for early termination in first 2 years.",
+      "source": "Depth Pass 2 / FA §13.4",
+      "source_page": [159],
+      "promoted_to": "liquidated_damages.alternative_calculation"
+    }
+  ],
+  "total_promoted": 10
+}

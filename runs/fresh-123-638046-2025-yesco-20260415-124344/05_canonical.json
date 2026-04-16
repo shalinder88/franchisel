@@ -1,0 +1,284 @@
+{
+  "extraction_date": "2026-04-15",
+  "pipeline_version": "automation_v1",
+  "fdd_id": "638046-2025",
+  "brand": "YESCO",
+  "document_identity": {
+    "franchisor_legal_name": "YESCO Franchising LLC",
+    "entity_type": "Utah limited liability company",
+    "formation_date": "2010-12-20",
+    "principal_office": "2401 Foothill Drive, Salt Lake City, UT 84109",
+    "phone": "801.464.4600",
+    "email": "franchising@yesco.com",
+    "website": "www.yesco.com",
+    "issuance_date": "2025-03-29",
+    "fiscal_year_end": "December 31",
+    "state_filed": "Wisconsin (wi-dfi)",
+    "business_description": "Sign and lighting service and maintenance franchise",
+    "source_section": "Cover page, Item 1",
+    "source_pages": [1, 8],
+    "confidence": "high"
+  },
+  "ownership_structure": {
+    "managing_member": "Young Electric Sign Company (Utah corporation, est. 1920)",
+    "affiliates": [
+      {"name": "YESCO LLC", "type": "Utah LLC", "role": "Operates 42 company-owned businesses, National Accounts Program"},
+      {"name": "YESCO Financial Solutions LLC (YFS)", "type": "Utah LLC", "role": "Franchisee financing"},
+      {"name": "YESCO Administration LLC", "type": "Utah LLC", "role": "Owns YESCO marks, software, IP; licenses to franchisor"},
+      {"name": "YESCO Canada ULC", "type": "British Columbia ULC", "role": "Canadian franchisor (since July 2020)"}
+    ],
+    "predecessors": "None",
+    "source_section": "Item 1",
+    "source_pages": [8, 9],
+    "confidence": "high"
+  },
+  "leadership": [
+    {"name": "Joshua M. Young", "title": "President", "since": "2016-04", "source_pages": [11]},
+    {"name": "Samuel Fisher", "title": "Senior Vice President", "since": "2021-06", "source_pages": [11]}
+  ],
+  "franchise_fee": {
+    "standard": 50000,
+    "area_development_range": {"low": 25000, "high": 50000},
+    "refund_policy": "Non-refundable except 40% if franchisee fails training",
+    "financing_available": "Up to 66.67% via YFS",
+    "fy2024_actual_range": {"low": 25000, "high": 50000},
+    "source_section": "Item 5",
+    "source_pages": [12],
+    "confidence": "high"
+  },
+  "royalty": {
+    "rate": "Greater of $1,000 or 6% of Gross Revenue per month",
+    "minimum_monthly": 1000,
+    "percentage": 6.0,
+    "payment_schedule": "Monthly, 15th of calendar month for prior month",
+    "reporting_deadline": "5th of month for prior month",
+    "tiered_royalty_early_renewal": {
+      "tier_0": {"range": "$0-$41,666", "rate": "6%"},
+      "tier_1": {"range": "$41,667-$62,500", "rate": "4%"},
+      "tier_2": {"range": "$62,501+", "rate": "2%"},
+      "minimum": "$1,000 per agreement per month",
+      "compliance_required": true,
+      "non_compliance_rate": "6%"
+    },
+    "source_section": "Item 6",
+    "source_pages": [13, 15],
+    "confidence": "high"
+  },
+  "advertising_fees": {
+    "national_ad_fee": {"rate": "Up to 3% of Gross Revenue", "status": "Not currently implemented for US", "cap": "Combined with local not to exceed 3%"},
+    "local_ad_fee": {"rate": "2% of Gross Revenue/year", "can_increase_to": "3%", "notice_period": "60 days"},
+    "grand_opening": 1000,
+    "combined_cap": "3% of Gross Revenue",
+    "source_section": "Item 6, Item 11",
+    "source_pages": [13, 16, 30, 31],
+    "confidence": "high"
+  },
+  "initial_investment": {
+    "total_low": 65000,
+    "total_high": 432200,
+    "source_section": "Item 7",
+    "source_pages": [17, 18],
+    "confidence": "high"
+  },
+  "territory": {
+    "type": "Non-exclusive (per Section 2.2.1)",
+    "typical_size": "~10,000 businesses",
+    "minimum_size": "1,000 businesses (smaller markets)",
+    "determination_method": "2012 US Census business density data",
+    "protected_while_compliant": true,
+    "tsq_first_24_months": 400000,
+    "tsq_annual_after": 250000,
+    "tsq_failure_consequences": ["Territory reduction", "Additional franchise sold in territory", "Termination"],
+    "internet_channels_allowed": false,
+    "right_of_first_refusal_for_additional": false,
+    "source_section": "Item 12",
+    "source_pages": [33, 34],
+    "confidence": "high"
+  },
+  "term_and_renewal": {
+    "initial_term_years": 10,
+    "standard_renewal": {"terms": 2, "years_each": 5, "fee": 15000, "financing_rate": "3%", "financing_term_months": 36},
+    "early_renewal": {"extended_term_years": 10, "fee_per_agreement": 15000, "financing_rate": "0%"},
+    "materially_different_terms_risk": true,
+    "general_release_required": true,
+    "time_to_open": "90 days (30-day extension available)",
+    "source_section": "Item 17, Item 1",
+    "source_pages": [9, 10, 43, 44],
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": "Franchisee and owners cannot operate similar business",
+    "post_term_duration_years": 2,
+    "post_term_scope": "Own territory or territory of any other franchisee",
+    "state_overrides": {
+      "north_dakota": "Generally unenforceable",
+      "minnesota": "Subject to MN franchise law protections"
+    },
+    "source_section": "Item 17",
+    "source_pages": [46],
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "pre_litigation": "Face-to-face meeting required; non-binding mediation optional",
+    "venue": "Salt Lake County, Utah",
+    "governing_law": "Utah",
+    "limitation_of_action_years": 1,
+    "jury_trial_waiver": true,
+    "state_overrides": {
+      "illinois": "IL venue; IL governing law; statute of limitations deleted",
+      "indiana": "Jury trial waiver not enforceable",
+      "maryland": "MD federal court for MD franchise law claims; 3-year SOL",
+      "minnesota": "Cannot be outside MN; no jury waiver; no liquidated damages; 3-year SOL",
+      "north_dakota": "Cannot be outside ND; no jury waiver; no liquidated damages; ND law governs; prevailing party fees",
+      "rhode_island": "Venue/law restrictions void for RI franchise law claims",
+      "wisconsin": "90 days notice termination (60 cure); WI Fair Dealership Law supersedes"
+    },
+    "source_section": "Item 17, Exhibit D",
+    "source_pages": [47, 162, 165, 167, 169, 173, 176, 179, 180, 182],
+    "confidence": "high"
+  },
+  "transfer": {
+    "fee": "Greater of $5,000 or 4% of Gross Revenue in last year",
+    "franchisor_approval_required": true,
+    "right_of_first_refusal_days": 30,
+    "general_release_required": true,
+    "transferee_must_sign_current_agreement": true,
+    "death_disability": "Heirs can operate if approved by franchisor",
+    "source_section": "Item 17",
+    "source_pages": [45, 46],
+    "confidence": "high"
+  },
+  "item19": {
+    "fpr_provided": true,
+    "period": "January 1 - December 31, 2024",
+    "population": {
+      "total_franchised_at_period_end": 57,
+      "included_in_fpr": 50,
+      "excluded": 7,
+      "exclusion_reasons": ["2 opened after Jan 1, 2024", "4 did not meet continuous operation definition", "2 AR businesses combined as 1"]
+    },
+    "system_gross_revenue": 51891579,
+    "average_gross_revenue": 1033005,
+    "median_gross_revenue": 776958,
+    "min_gross_revenue": 92304,
+    "max_gross_revenue": 4464693,
+    "top_quartile_avg": 2486985,
+    "bottom_quartile_avg": 187862,
+    "national_service_revenue": 7974585,
+    "national_service_pct": 15.4,
+    "tables_count": 7,
+    "cost_data_disclosed": false,
+    "substantiation_available": true,
+    "critical_caveats": [
+      "No cost/expense data — no COGS, SG&A, or EBITDA disclosed",
+      "Revenue not audited or verified by franchisor",
+      "Canada revenue converted at Bank of Canada daily close rates",
+      "Excludes commissions, sign patrol costs, office expenses, truck operations, advertising",
+      "38% of all businesses met or exceeded overall average"
+    ],
+    "source_section": "Item 19",
+    "source_pages": [48, 49, 50, 51],
+    "confidence": "high"
+  },
+  "item20": {
+    "franchised_end_2024": 57,
+    "company_owned_end_2024": 42,
+    "total_end_2024": 99,
+    "franchised_trend": [60, 59, 57, 57],
+    "franchised_trend_years": [2021, 2022, 2023, 2024],
+    "openings_2024": 2,
+    "closures_2024": 2,
+    "transfers_2024": 1,
+    "projected_new_franchised_2025": 5,
+    "signed_not_opened": 2,
+    "us_states_with_franchisees": 24,
+    "canada_provinces": 4,
+    "confidentiality_clause": false,
+    "franchisee_association": "YESCO Service Advisory Council (franchisor-created/sponsored)",
+    "source_section": "Item 20",
+    "source_pages": [52, 53, 54, 55, 56, 57],
+    "confidence": "high"
+  },
+  "item21": {
+    "auditor": "HBME, LLC",
+    "auditor_location": "Bountiful, UT",
+    "opinion_type": "Unqualified (clean)",
+    "going_concern": false,
+    "years_covered": ["2022", "2023", "2024"],
+    "total_revenue_2024": 4002944,
+    "net_income_2024": 1702798,
+    "total_assets_2024": 9532333,
+    "total_liabilities_2024": 1362370,
+    "members_equity_2024": 8169963,
+    "key_observations": [
+      "Profitable and growing — net income $1.7M on $4.0M revenue (43% margin)",
+      "Loan receivable from affiliate (YESCO Administration LLC) = $7.47M, non-interest bearing, 78% of total assets",
+      "Cash declining: $719K (2022) → $700K (2023) → $653K (2024)",
+      "Cash from operations ($1.54M) largely transferred to affiliate ($1.70M)",
+      "Royalty revenue declined from $3.37M (2023) to $3.21M (2024)",
+      "Income tax allocated by parent YESCO, not paid directly",
+      "No leases (ASC 842 noted, no ROU assets)",
+      "Minimal depreciation ($3,808 in 2024)"
+    ],
+    "source_section": "Item 21, Exhibit F",
+    "source_pages": [58, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199],
+    "confidence": "high"
+  },
+  "litigation": {
+    "item3_actions": [
+      {
+        "description": "Ontario Superior Court action against franchisee 2261116 Ontario Inc. and principals for breach of contract and noncompete violations",
+        "filed": "2015-10-08",
+        "resolved": "2018-08 (final settlement)",
+        "outcome": "Partial summary judgment for YESCO; settled"
+      }
+    ],
+    "current_pending": "None required to be disclosed",
+    "source_section": "Item 3",
+    "source_pages": [11],
+    "confidence": "high"
+  },
+  "bankruptcy": {
+    "disclosed": false,
+    "source_section": "Item 4",
+    "source_pages": [12],
+    "confidence": "high"
+  },
+  "insurance_requirements": {
+    "cgl": "$1M each occurrence / $2M aggregate",
+    "employers_liability": "$1M each accident/disease/occurrence",
+    "auto_liability": "$1M combined single limit",
+    "excess_liability": "$4M follow-form",
+    "workers_comp": "As required by state law",
+    "epli": "$200,000 minimum",
+    "carrier_rating": "A-VII or better (Best)",
+    "source_section": "Item 8",
+    "source_pages": [21, 22],
+    "confidence": "high"
+  },
+  "training": {
+    "pre_training_self_study_hours": {"low": 35, "high": 50},
+    "classroom_hours": {"low": 76, "high": 144},
+    "ojt_hours": {"low": 17, "high": 48},
+    "total_hours": {"low": 128, "high": 242},
+    "locations": ["Salt Lake City, UT", "Las Vegas, NV"],
+    "instructor": "Madeline Christopher (Training Development Director since July 2022)",
+    "tuition": "Free for first 3 attendees; $800/day for additional",
+    "source_section": "Item 11",
+    "source_pages": [27, 28, 29],
+    "confidence": "high"
+  },
+  "special_risks": [
+    "Out-of-state dispute resolution (Utah)",
+    "Mandatory minimum royalty payments regardless of sales",
+    "Spousal liability (guaranty required)",
+    "Sales performance requirement (TSQ)"
+  ],
+  "ai_ml_restriction": {
+    "present": true,
+    "description": "Cannot use system information for machine learning, AI training, algorithm improvement. Cannot input into generative AI platforms without written consent. Must opt out of AI providers using data.",
+    "source_section": "Item 14",
+    "source_pages": [40],
+    "confidence": "high"
+  }
+}

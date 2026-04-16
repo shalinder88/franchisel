@@ -1,0 +1,68 @@
+{
+  "enrichment_version": "v1",
+  "extraction_date": "2026-04-15",
+  "brand": "Jazzercise",
+  "fdd_id": "637934-2025",
+  "item19_detail": {
+    "fpr_provided": false,
+    "no_fpr_statement": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised businesses.",
+    "substantiation_available": false,
+    "tables": [],
+    "charts": []
+  },
+  "item20_yearly_activity": {
+    "2022": {"start": 5844, "new": 256, "terminations": 67, "non_renewals": 0, "reacquired": 0, "ceased_other": 499, "end": 5533, "transfers": 0},
+    "2023": {"start": 5533, "new": 255, "terminations": 48, "non_renewals": 0, "reacquired": 0, "ceased_other": 487, "end": 5253, "transfers": 0},
+    "2024": {"start": 5253, "new": 385, "terminations": 24, "non_renewals": 0, "reacquired": 0, "ceased_other": 363, "end": 5251, "transfers": 0}
+  },
+  "item20_projected": {
+    "fa_signed_not_opened": 19,
+    "projected_new_franchised": 274,
+    "projected_new_company": 0
+  },
+  "exhibit_structure": {
+    "total_exhibits": 13,
+    "exhibits": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"],
+    "financial_exhibit": "C",
+    "franchise_agreements": ["D (Class Owner)", "E (Associate)", "F (Business Owner)"],
+    "state_addenda_exhibit": "K",
+    "franchisee_list_exhibit": "H",
+    "general_release_exhibit": "J"
+  },
+  "item21_structural": {
+    "auditor": "RSM US LLP",
+    "opinion": "clean_unqualified",
+    "going_concern": false,
+    "years_covered": [2024, 2023, 2022],
+    "notes_count": 13,
+    "entity_type": "C corporation (since 2019)",
+    "has_debt": false,
+    "has_vie": true,
+    "vie_entity": "Impala Building, LLC (common ownership, not consolidated per ASU 2018-17)",
+    "subsequent_events_date": "2025-02-28",
+    "subsequent_events": ["New 10-year lease with Impala Building, LLC effective Jan 1, 2025"]
+  },
+  "item1_structural": {
+    "entity_type": "California corporation",
+    "incorporated": "1979-09-26",
+    "sole_shareholder": "Judi Sheppard Missett",
+    "family_controlled": true,
+    "franchise_types": 3,
+    "programs": ["Jazzercise dance fitness", "Junior Jazzercise", "LO Jazzercise", "Jazzercise On Demand", "Simply Plated", "Revel Dance Fitness"],
+    "franchising_since": "1982-07",
+    "predecessor_since": "1969"
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage_with_minimum",
+    "royalty_rate": 0.20,
+    "royalty_reduced_rate": 0.10,
+    "min_continuing_class_owner": 250,
+    "min_continuing_class_owner_max": 500,
+    "min_continuing_business_owner": 500,
+    "min_continuing_business_owner_max": 1000,
+    "ad_fund_established": false,
+    "tech_fee_established": false,
+    "rebate_program": true,
+    "rebate_range": "10%–35%"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "depth_pass": "3_promotion_audit",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "638049-2025",
+  "promoted_facts": [
+    {
+      "fact": "Related party expenses: $802K royalties + $552K management fees paid to Mondofix Inc. (21% of total revenue)",
+      "source": "Financial notes Note 7, page 105-106",
+      "promoted_to": "item_21.related_party_transactions"
+    },
+    {
+      "fact": "91+ day AR is $304,634 (32.9% of gross AR), indicating collection challenges with some franchisees",
+      "source": "Financial notes Note 9, page 108",
+      "promoted_to": "item_21.ar_aging"
+    },
+    {
+      "fact": "Lease maturity schedule: $86K (2025), $79K (2026), $40K (2027), $30K (2028), $7K (2029); total PV $226K",
+      "source": "Financial notes Note 4, page 104",
+      "promoted_to": "item_21.lease_detail"
+    },
+    {
+      "fact": "Products purchased from Novus 2 LLC (affiliate): $82K COGS in 2024",
+      "source": "Financial notes Note 7, page 106",
+      "promoted_to": "item_21.related_party_transactions"
+    },
+    {
+      "fact": "Federal statutory tax rate is 23.47%; effective rate 27.6% in 2024 due to $46K 'other' adjustments",
+      "source": "Financial notes Note 8, page 106",
+      "promoted_to": "item_21.tax_detail"
+    },
+    {
+      "fact": "Capital contribution of $100K receivable from parent at 12/31/2024, received 3/27/2025",
+      "source": "Financial notes Note 6 and Note 10, pages 105, 108",
+      "promoted_to": "item_21.subsequent_events"
+    },
+    {
+      "fact": "Initial franchise fees deferred and recognized over license term (ASC 606)",
+      "source": "Financial notes Note 2, page 102",
+      "promoted_to": "item_21.revenue_recognition_detail"
+    },
+    {
+      "fact": "AI restriction clause: explicit prohibition on using confidential info with ML, AI, or generative AI platforms",
+      "source": "Reader report Pass D / Item 14, page 54",
+      "promoted_to": "distinctive_clauses"
+    },
+    {
+      "fact": "Telephone/domain/social media seizure on termination",
+      "source": "Reader report Pass E / Item 17, page 61",
+      "promoted_to": "termination.post_termination_obligations"
+    },
+    {
+      "fact": "Post-term holdover royalty surcharge of $200/month if operating past term without re-franchising",
+      "source": "Reader report Pass B / Item 6 note (4), page 24",
+      "promoted_to": "ongoing_fees.holdover_surcharge"
+    }
+  ],
+  "already_in_canonical": [
+    "All Item 19 tables and caveats",
+    "All Item 20 outlet data",
+    "All fee stack items",
+    "All territory provisions",
+    "All term/renewal/transfer/termination provisions",
+    "All noncompete provisions",
+    "All dispute resolution provisions",
+    "All special risks",
+    "All financial statement line items"
+  ]
+}

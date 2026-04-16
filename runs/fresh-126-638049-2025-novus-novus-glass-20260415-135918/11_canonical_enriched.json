@@ -1,0 +1,148 @@
+{
+  "enrichment_version": "v1",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "638049-2025",
+  "brand": "Novus Glass",
+  "item19_chart_detail": {
+    "tables": [
+      {
+        "table_id": "1ab",
+        "type": "mobile_1unit",
+        "population": 33,
+        "total_eligible": 43,
+        "exclusion_reasons": ["2 closed during 2024", "3 opened during 2024", "1 did not operate full year", "4 incomplete reporting"],
+        "period": "2024-01-01 to 2024-12-31",
+        "average_gross_sales": 427168,
+        "median_gross_sales": 276856,
+        "highest": 1773255,
+        "lowest": 0,
+        "pct_at_or_above_average": 33.3,
+        "pct_at_or_above_median": 51.5,
+        "distribution": [
+          {"range": "≤$100K", "count": 6, "pct": 18.2},
+          {"range": "$100K-$200K", "count": 6, "pct": 18.2},
+          {"range": "$200K-$300K", "count": 5, "pct": 15.2},
+          {"range": "$300K-$400K", "count": 1, "pct": 3.0},
+          {"range": ">$400K", "count": 15, "pct": 45.5}
+        ]
+      },
+      {
+        "table_id": "2",
+        "type": "mobile_2unit",
+        "population": 1,
+        "average_gross_sales": 731007,
+        "median_gross_sales": 731007,
+        "note": "Combined total for both franchises; n=1, no statistical significance"
+      },
+      {
+        "table_id": "3ab",
+        "type": "retail_1unit",
+        "population": 21,
+        "total_eligible": 31,
+        "exclusion_reasons": ["3 opened during 2024", "7 incomplete reporting"],
+        "period": "2024-01-01 to 2024-12-31",
+        "average_gross_sales": 791251,
+        "median_gross_sales": 702787,
+        "highest": 1695714,
+        "lowest": 68157,
+        "pct_at_or_above_average": 47.6,
+        "pct_at_or_above_median": 47.6,
+        "distribution": [
+          {"range": "≤$200K", "count": 1, "pct": 4.8},
+          {"range": "$200K-$300K", "count": 2, "pct": 9.5},
+          {"range": "$300K-$500K", "count": 4, "pct": 19.0},
+          {"range": "$500K-$1M", "count": 8, "pct": 38.1},
+          {"range": ">$1M", "count": 6, "pct": 28.6}
+        ],
+        "multi_concept_note": "3 of 21 also operated 5 mobile franchises; mobile data combined with retail"
+      },
+      {
+        "table_id": "4",
+        "type": "retail_2unit",
+        "population": 12,
+        "average_gross_sales": 1501431,
+        "median_gross_sales": 1338360,
+        "highest": 2541791,
+        "lowest": 881445,
+        "pct_at_or_above_average": 41.7,
+        "pct_at_or_above_median": 50.0,
+        "multi_concept_note": "2 of 12 also operated 5 mobile franchises; mobile data combined"
+      }
+    ],
+    "general_notes": [
+      "Gross Sales = total gross dollar sales from all products/services, excluding sales taxes and refunds",
+      "All franchisees operate 1-4 vehicles",
+      "15 Repair Only franchisees excluded entirely",
+      "Numbers not verified by franchisor"
+    ]
+  },
+  "item20_yearly_activity": {
+    "franchised": {
+      "2022": {"start": 151, "opened": 5, "terminated": 4, "non_renewed": 4, "reacquired": 0, "ceased_other": 0, "end": 148},
+      "2023": {"start": 148, "opened": 5, "terminated": 9, "non_renewed": 18, "reacquired": 0, "ceased_other": 1, "end": 125},
+      "2024": {"start": 125, "opened": 7, "terminated": 2, "non_renewed": 0, "reacquired": 0, "ceased_other": 2, "end": 128}
+    },
+    "company_owned": {
+      "2022": {"start": 2, "end": 2},
+      "2023": {"start": 2, "end": 0},
+      "2024": {"start": 0, "end": 0}
+    },
+    "transfers": {"2022": 4, "2023": 3, "2024": 4},
+    "projected_2025": {"new_franchised": 8, "new_company_owned": 0},
+    "top_states_by_units_2024": [
+      {"state": "WA", "units": 13},
+      {"state": "CO", "units": 13},
+      {"state": "WI", "units": 9},
+      {"state": "MT", "units": 6},
+      {"state": "CA", "units": 6}
+    ]
+  },
+  "exhibit_structure": {
+    "total_exhibits": 24,
+    "agreement_exhibits": ["D-1", "D-2", "D-3", "D-4", "D-5", "D-6", "D-7", "D-8", "D-9", "D-10", "D-11", "E", "F", "G", "H", "J", "K"],
+    "financial_exhibits": ["A"],
+    "franchisee_list_exhibits": ["B", "C"],
+    "state_addenda_exhibits": ["A-1"],
+    "operations_exhibits": ["I"],
+    "regulatory_exhibits": ["L"]
+  },
+  "item21_structural_facts": {
+    "auditor": "Ernst & Young LLP",
+    "opinion_type": "unqualified",
+    "accounting_basis": "US GAAP",
+    "entity_type": "Single-member LLC",
+    "fiscal_year_end": "December 31",
+    "tax_filing": "Consolidated with parent group; allocated as separate taxpayer",
+    "currency": "USD (functional and presentation)",
+    "revenue_recognition": "ASC 606",
+    "lease_accounting": "ROU assets and lease liabilities recognized in 2024",
+    "rights_asset": "$300,000 (exclusive US area developer rights, indefinite life, not amortized)"
+  },
+  "item1_structural_facts": {
+    "entity_type": "Delaware LLC",
+    "formation_date": "2017-04-13",
+    "acquisition_date": "2017-05-31",
+    "franchise_offering_start": "2017-07",
+    "formats_offered": ["retail_location", "mobile"],
+    "area_development_offered": true,
+    "procolor_colocation_offered": true,
+    "napa_colocation_offered": true,
+    "international_presence": true,
+    "international_licensees": 104,
+    "related_brands": ["Fix Auto", "ProColor Collision", "Speedy Auto Glass", "Collision Repair Experts", "Speedy Auto Service", "Minute Muffler"],
+    "seasonal_variation": "Lower sales in winter months in northern areas"
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage_with_minimum",
+    "royalty_percentage": 6.0,
+    "minimum_monthly_royalty": true,
+    "marketing_contribution_percentage": 2.0,
+    "local_advertising_minimum_percentage": 4.0,
+    "technology_fee_included": true,
+    "vehicle_lease_mandatory": true,
+    "mso_credit_program": true,
+    "eft_required": true,
+    "total_effective_fee_load_pct": 12.0,
+    "post_term_holdover_royalty_surcharge": 200
+  }
+}

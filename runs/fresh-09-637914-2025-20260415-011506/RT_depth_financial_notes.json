@@ -1,0 +1,159 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637914-2025",
+  "brand": "Iron Valley Real Estate",
+  "depth_pass": "financial_notes",
+  "financial_statement_sets": [
+    {
+      "period": "December 31, 2024 and 2023",
+      "auditor": "Schild & Co., Inc.",
+      "auditor_location": "Fountain Valley, California",
+      "audit_date": "2025-03-07",
+      "opinion": "Unqualified (clean)",
+      "source_pages": [107, 108]
+    },
+    {
+      "period": "December 31, 2023 and 2022",
+      "auditor": "Schild & Co., Inc.",
+      "auditor_location": "Fountain Valley, California",
+      "audit_date": "2024-03-06",
+      "opinion": "Unqualified (clean)",
+      "source_pages": [124, 125]
+    }
+  ],
+  "accounting_policies": {
+    "basis_of_accounting": {
+      "method": "Accrual method in conformity with GAAP",
+      "source_pages": [113]
+    },
+    "revenue_recognition": {
+      "standard": "ASC 606 (Topic 606 Revenue from Contracts with Customers)",
+      "franchise_fees": "Recognized straight-line over 5-year FA term. Not distinct from continuing rights — single performance obligation. Recognition begins at opening.",
+      "royalties": "Recognized when earned. $150 per transaction side.",
+      "marketing_fees": "Recognized when earned. Up to $250/month + $17/agent website fee.",
+      "deferred_finders_fees": "Capitalized and amortized over FA term.",
+      "franchise_fees_recognized": {"2024": 98199, "2023": 69500, "2022": 56500},
+      "royalties_recognized": {"2024": 1225783, "2023": 920618, "2022": 743821},
+      "source_pages": [116, 117, 118]
+    },
+    "depreciation": {
+      "method": "Straight-line",
+      "useful_lives": "5 to 7 years",
+      "expense": {"2024": 3414, "2023": 2842, "2022": 2372},
+      "source_pages": [114]
+    },
+    "income_taxes": {
+      "status": "LLC taxed as S-corp under Subchapter S of IRC",
+      "provision": "None — tax liability passes through to members/stockholders",
+      "uncertain_tax_positions": "None at 12/31/2024",
+      "irs_exam_period": "3 years from filing date",
+      "source_pages": [115]
+    },
+    "lease_accounting": {
+      "standard": "ASC 842 (Topic 842 Leases)",
+      "lease_description": "Office space at HQ, Hershey, PA",
+      "lease_term": "5 years (commenced May 1, 2022, expires April 2027)",
+      "monthly_rent": "$5,000 with 2% annual increase",
+      "renewal_options": "Two additional 5-year terms",
+      "security_deposit": 5000,
+      "incremental_borrowing_rate": "6.67%",
+      "rou_asset": {"2024": 167986, "2023": 214855, "2022": 257669},
+      "lease_liability_current": {"2024": 62424, "2023": 46869, "2022": 56248},
+      "lease_liability_noncurrent": {"2024": 105562, "2023": 167986, "2022": 201421},
+      "rent_expense": {"2024": 84711, "2023": 74861, "2022": 54784},
+      "cam_costs": "Prorated share of CAM and RE taxes — not included in lease measurement",
+      "source_pages": [115, 116, 119, 132]
+    },
+    "accounts_receivable": {
+      "nature": "Royalty fees from franchise sales",
+      "credit_loss_method": "CECL (ASC 326, adopted 2024 via modified retrospective)",
+      "past_due_threshold": "30 days",
+      "transition_adjustment": "None",
+      "net_receivable": {"2024": 32144, "2023": 18451, "2022": 7423},
+      "credit_loss_expense_2024": 19509,
+      "source_pages": [114]
+    },
+    "cash_and_equivalents": {
+      "definition": "Amounts on hand and on deposit. No cash equivalents.",
+      "fdic_uninsured": {"2024": 68869, "2023": 0},
+      "source_pages": [113]
+    },
+    "inventories": {
+      "nature": "Promotional products",
+      "method": "Lower of cost or market",
+      "amount": {"2024": 4455, "2023": 5982, "2022": 5043},
+      "source_pages": [114]
+    },
+    "advertising_marketing": {
+      "method": "Expensed when incurred",
+      "expense": {"2024": 129866, "2023": 146547, "2022": 182155},
+      "source_pages": [114]
+    }
+  },
+  "material_notes": {
+    "deferred_franchise_revenue": {
+      "current": {"2024": 87000, "2023": 85583, "2022": 67833},
+      "noncurrent": {"2024": 167470, "2023": 206918, "2022": 169168},
+      "total": {"2024": 254470, "2023": 292501, "2022": 237001},
+      "recognition": "Straight-line over 5-year FA term or upon termination",
+      "source_pages": [118]
+    },
+    "retirement_plan": {
+      "type": "401(k) with ADP safe harbor",
+      "employer_match": {"2024": 59438, "2023": 38423, "2022": 67435},
+      "source_pages": [119]
+    },
+    "franchise_operations_note": {
+      "standard_initial_fee": "$15,000",
+      "same_county_additional_fee": "$5,000",
+      "operating_locations_per_note": {"2024": 46, "2023": 42},
+      "renewal_fee": "Up to $5,000",
+      "marketing_fee_per_note": {"2024_version": "$250/month + $17/agent", "2023_version": "$50/month + $16/agent"},
+      "note": "Fee amounts in 2023/2022 notes differ from 2024/2023 notes, reflecting FDD amendments over time.",
+      "source_pages": [119, 120, 136]
+    },
+    "related_party_transactions": {
+      "due_from_members": {"2024": 0, "2023": 0, "2022": 80400},
+      "nature": "Non-interest-bearing demand advances to members",
+      "status": "Repaid in 2023",
+      "source_pages": [135]
+    },
+    "litigation_note": {
+      "statement": "Various complaints and legal proceedings in normal course. Not expected to have material impact per management and legal counsel.",
+      "source_pages": [120, 136]
+    },
+    "subsequent_events": {
+      "2024_report": "None material through 3/7/2025",
+      "2023_report": "None material through 3/6/2024",
+      "source_pages": [120, 136]
+    },
+    "credit_cards_payable": {
+      "amount": {"2024": 1641, "2023": 6796, "2022": 12375},
+      "bank": "Wells Fargo Bank",
+      "note": "Subsequently paid",
+      "source_pages": [119]
+    },
+    "fair_value": {
+      "statement": "Current assets and liabilities at fair value or carrying value approximating fair value due to short-term nature.",
+      "source_pages": [119]
+    },
+    "reclassifications": {
+      "note": "Certain reclassifications to prior year comparatives. No effect on net income.",
+      "source_pages": [113]
+    },
+    "change_in_accounting_standard": {
+      "standard": "ASU 2016-13 (CECL)",
+      "adoption_method": "Modified retrospective",
+      "transition_adjustment": "None",
+      "applies_to": "Trade receivables",
+      "source_pages": [114]
+    }
+  },
+  "items_not_present": [
+    "Impairment charges (none disclosed)",
+    "Variable interest entities (none)",
+    "Going concern language (not present in audit report)",
+    "Interest expense (none — no debt)",
+    "Goodwill or intangible assets (none besides deferred finders fees)"
+  ]
+}

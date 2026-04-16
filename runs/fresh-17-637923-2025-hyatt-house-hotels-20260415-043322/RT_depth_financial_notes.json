@@ -1,0 +1,124 @@
+{
+  "depth_pass": "1_financial_notes",
+  "entity": "Hyatt Hotels Corporation",
+  "fiscal_year": 2024,
+  "source_pages_range": [116, 171],
+  "accounting_policies": {
+    "revenue_recognition": {
+      "policy": "Revenue recognized when control of product/service transfers to customer. Franchise fees = sales-based royalties recognized over time. Initial franchise fees combined with royalty fees and deferred over expected customer life (typically initial term of franchise agreement). System-wide services accounted for under fund model — revenues deferred, recognized as services provided.",
+      "source_pages": [117, 118]
+    },
+    "depreciation_amortization": {
+      "method": "Straight-line",
+      "useful_lives": {
+        "buildings_and_improvements": "10-50 years",
+        "leasehold_improvements": "Shorter of lease term or useful life",
+        "furniture_and_equipment": "3-20 years",
+        "computers": "3-7 years",
+        "management_franchise_intangibles": "4-31 years",
+        "customer_relationships": "4-12 years"
+      },
+      "depreciation_2024_millions": 333,
+      "source_pages": [125]
+    },
+    "impairment_policy": {
+      "assessment_frequency": "Quarterly and when events/circumstances indicate",
+      "method": "Undiscounted future cash flows; if less than carrying value, then fair value via discounted cash flows, appraisals, or broker valuations",
+      "2024_asset_impairments_millions": 213,
+      "goodwill_impairment_2024_millions": 110,
+      "goodwill_impairment_reporting_unit": "Management and franchising segment",
+      "goodwill_remaining_in_unit_millions": 1116,
+      "source_pages": [125, 108]
+    },
+    "income_taxes": {
+      "provision_2024_millions": 267,
+      "effective_rate_2024_approx": "17.1%",
+      "deferred_tax_assets_millions": 811,
+      "deferred_tax_liabilities_millions": 516,
+      "net_deferred_tax_asset_millions": 295,
+      "valuation_allowance_millions": 90,
+      "loyalty_program_deferred_tax_asset_millions": 288,
+      "foreign_nol_carryforwards_millions": 120,
+      "undistributed_foreign_earnings_millions": 645,
+      "source_pages": [155]
+    },
+    "lease_accounting": {
+      "operating_lease_rou_assets_millions": 328,
+      "current_operating_lease_liabilities_millions": 33,
+      "long_term_operating_lease_liabilities_millions": 245,
+      "finance_lease_obligations_millions": 4,
+      "source_pages": [111]
+    },
+    "loyalty_program": {
+      "deferred_revenue_liability_millions": 1333,
+      "assessment_basis": "4% of eligible revenue (2% for on-property enrollments)",
+      "fund_model": true,
+      "segregated_accounts": true,
+      "invested_in_marketable_securities": true,
+      "independently_audited": true,
+      "breakage_estimate_actuarially_determined": true,
+      "critical_audit_matter": true,
+      "source_pages": [118, 130, 107]
+    },
+    "advertising_costs": {
+      "policy": "Expensed when produced; communication costs expensed when communication occurs",
+      "2024_distribution_advertising_millions": 67,
+      "generally_reimbursed_by_owners_franchisees": true,
+      "source_pages": [130]
+    }
+  },
+  "material_notes": {
+    "organization": {
+      "note_number": 1,
+      "portfolio_size": "1,442 hotels, 347,301 rooms, 79 countries",
+      "us_hotels": 721,
+      "us_rooms": 159829,
+      "all_inclusive_resorts": 149,
+      "segment_realignment": "During 2024, realigned operating and reportable segments",
+      "source_pages": [116]
+    },
+    "debt": {
+      "note_number": 11,
+      "total_debt_before_leases_millions": 3805,
+      "instruments": [
+        {"maturity": 2025, "rate": "5.375%", "amount": 450},
+        {"maturity": 2026, "rate": "4.850%", "amount": 400},
+        {"maturity": 2027, "rate": "5.750%", "amount": 600},
+        {"maturity": 2028, "rate": "4.375%", "amount": 399},
+        {"maturity": 2029, "rate": "5.250%", "amount": 600},
+        {"maturity": 2030, "rate": "5.750%", "amount": 440},
+        {"maturity": 2031, "rate": "5.375%", "amount": 450},
+        {"maturity": 2034, "rate": "5.500%", "amount": 350}
+      ],
+      "variable_rate_debt_millions": 116,
+      "source_pages": [150]
+    },
+    "acquisitions": {
+      "bahia_principe_transaction": {
+        "total_assets_acquired_millions": 921,
+        "goodwill_millions": 336,
+        "intangibles_millions": 517,
+        "noncontrolling_interest_millions": 277,
+        "net_assets_to_hyatt_millions": 465,
+        "transaction_costs_millions": 11
+      },
+      "alua_portfolio": {"enterprise_value_eur_millions": 117, "cash_paid_millions": 65},
+      "standard_international": {"base_consideration_millions": 150, "contingent_up_to_millions": 185},
+      "source_pages": [140, 141]
+    },
+    "dispositions_2024": {
+      "total_real_estate_gains_millions": 1245,
+      "asset_light_strategy": true,
+      "source_pages": [145, 155]
+    },
+    "subsequent_events": {
+      "none_material_identified_in_fdd": true
+    },
+    "related_party_transactions": {
+      "management_of_owned_hotels": true,
+      "loyalty_program_administration": true,
+      "system_wide_services_to_franchisees": true,
+      "source_pages": [118]
+    }
+  }
+}

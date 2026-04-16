@@ -1,0 +1,99 @@
+{
+  "filing_id": "637908-2025",
+  "extraction_date": "2026-04-14",
+  "enrichment_version": "v2",
+  "item21_financial_structure": {
+    "revenue_composition": {
+      "franchise_revenues_pct_2024": 65.3,
+      "advertising_revenues_pct_2024": 34.7,
+      "franchise_revenue_declining": true,
+      "decline_driver": "franchisee reacquisitions reducing fee base"
+    },
+    "expense_structure": {
+      "advertising_expenses_pct_of_ad_revenue": 100.2,
+      "ga_pct_of_total_revenue": 6.5,
+      "ga_equals_management_fee": true,
+      "management_fee_rate": 10
+    },
+    "distribution_analysis": {
+      "2024": {"net_income": 1110408, "distributions": 1400000, "excess": -289592},
+      "2023": {"net_income": 1386622, "distributions": 1000000, "excess": 386622},
+      "2022": {"net_income": 1250131, "distributions": 2521839, "excess": -1271708}
+    },
+    "equity_trend": {
+      "2024": 201153,
+      "2023": 490745,
+      "2022": 99853,
+      "direction": "declining from 2023 peak due to excess distributions"
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "cash_franchise_2024": 291076,
+      "cash_advertising_2024": 560474,
+      "ar_net_2024": 72326,
+      "ar_allowance_2024": 730,
+      "due_from_parent_2024": 64559,
+      "total_assets_2024": 988435,
+      "ap_2024": 178276,
+      "unspent_advertising_2024": 609006,
+      "total_liabilities_2024": 787282,
+      "equity_2024": 201153
+    },
+    "income_statement": {
+      "franchise_revenues_2024": 1248441,
+      "advertising_revenues_2024": 662841,
+      "total_revenues_2024": 1911282,
+      "advertising_expenses_2024": 663992,
+      "ga_expenses_2024": 124634,
+      "interest_income_2024": 1752,
+      "corporate_activity_tax_2024": -14000,
+      "net_income_2024": 1110408
+    },
+    "cash_flow": {
+      "operating_cash_2024": 1253482,
+      "financing_distributions_2024": -1400000,
+      "net_change_2024": -146518,
+      "cash_end_2024": 851550
+    }
+  },
+  "item6_fee_detail": {
+    "fees": [
+      {"name": "royalty", "rate": "4%", "basis": "gross_sales", "frequency": "weekly", "type": "ongoing"},
+      {"name": "brand_promotion_fund", "rate": "1% (max 2%)", "basis": "gross_sales", "frequency": "weekly", "type": "ongoing"},
+      {"name": "local_marketing", "rate": "up to 1%", "basis": "gross_sales", "frequency": "monthly", "type": "ongoing"},
+      {"name": "transfer_fee_fa", "rate": "50% of then-current IFF", "type": "event"},
+      {"name": "transfer_fee_ada", "rate": "greater of 3% of price or $20,000", "type": "event"},
+      {"name": "renewal_fee", "rate": "25% of then-current IFF", "type": "event"},
+      {"name": "late_payment", "rate": "up to 18% per annum + $100", "type": "penalty"},
+      {"name": "lost_revenue_damages", "rate": "NPV of royalties+BPF for 5 years", "type": "penalty"},
+      {"name": "interim_operations", "rate": "4% of GS + costs", "type": "penalty"},
+      {"name": "non_compliance_charge", "rate": "up to $100 per failure", "type": "penalty"},
+      {"name": "additional_training", "rate": "$250/person/day", "type": "event"},
+      {"name": "additional_assistance", "rate": "$250/person/day + travel", "type": "event"},
+      {"name": "inspection_audit", "rate": "actual costs", "type": "event"},
+      {"name": "insurance_cure", "rate": "$10,000-$25,000", "type": "event"},
+      {"name": "indemnification", "rate": "varies", "type": "contingent"},
+      {"name": "attorneys_fees", "rate": "varies", "type": "contingent"}
+    ]
+  },
+  "related_party_transactions": {
+    "advertising_revenue_from_parent_2024": 375417,
+    "management_fee_to_parent_2024": 124634,
+    "distributions_to_parent_2024": 1400000,
+    "payables_to_parent_2024": 130129,
+    "receivables_from_parent_2024": 64559,
+    "parent_ad_revenue_pct_2024": 57
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Elmer's Kitchen revenue collapse — both units declined ~30% YoY with no explanation provided in FDD", "severity": "high", "source": "Item 19, p. 55"},
+    {"id": "U2", "description": "All company assets pledged as collateral for parent company debts — nature and amount of debts undisclosed", "severity": "high", "source": "Financial statement notes, p. 186"},
+    {"id": "U3", "description": "Members' equity ($201K) dramatically below minimum franchisee investment ($1.15M). Distributions exceed net income in 2 of 3 years.", "severity": "medium", "source": "Balance sheet p. 183; Special Risk #2"},
+    {"id": "U4", "description": "No cost/EBITDA data in Item 19 — franchisees cannot assess profitability from FDD alone", "severity": "medium", "source": "Item 19, pp. 52-55"},
+    {"id": "U5", "description": "Confidentiality clauses restrict franchisee speech — prospective franchisees may not get candid feedback", "severity": "medium", "source": "Item 20, p. 64"},
+    {"id": "U6", "description": "Zero franchised openings projected for 2025; all growth is company-owned. Franchise program may be winding down.", "severity": "medium", "source": "Item 20, pp. 58, 61, 63"},
+    {"id": "U7", "description": "Washington state imposed financial condition requiring fee deferral — explicit state-level concern about franchisor financial ability", "severity": "medium", "source": "Exhibit K, p. 219"},
+    {"id": "U8", "description": "20.28% of BPF spent on administrative expenses — relatively high overhead for marketing fund", "severity": "low", "source": "Item 11, p. 29"}
+  ],
+  "contradictions": []
+}

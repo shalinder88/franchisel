@@ -1,0 +1,258 @@
+{
+  "depth_pass": "state_addenda_promotion",
+  "extraction_date": "2026-04-15",
+  "states_with_addenda": ["California", "Connecticut", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington", "Wisconsin"],
+  "total_states": 13,
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "noncompete",
+      "override_summary": "Post-term covenant not to compete may not be enforceable under California law",
+      "why_it_matters": "California broadly prohibits non-compete clauses; the 24-month post-term restriction is likely void for CA franchisees",
+      "source_pages": [172]
+    },
+    {
+      "state": "California",
+      "affected_family": "forum_selection",
+      "override_summary": "Binding arbitration in Colorado — franchisees encouraged to consult counsel on applicability of CA law and Federal Arbitration Act",
+      "why_it_matters": "CA may override the Colorado venue requirement for arbitration/litigation",
+      "source_pages": [172]
+    },
+    {
+      "state": "California",
+      "affected_family": "governing_law",
+      "override_summary": "Colorado choice of law may not be enforceable under California law",
+      "why_it_matters": "California Franchise Investment Law may govern instead of Colorado law",
+      "source_pages": [172]
+    },
+    {
+      "state": "California",
+      "affected_family": "general_release",
+      "override_summary": "General release at renewal/transfer cannot waive rights under CA Franchise Investment Law (Corp Code §31512) or Franchise Relations Act (Bus & Prof Code §20010)",
+      "why_it_matters": "Franchisees retain right to pursue claims under CA franchise law even after signing release",
+      "source_pages": [172, 173]
+    },
+    {
+      "state": "California",
+      "affected_family": "termination",
+      "override_summary": "Bankruptcy termination provision may not be enforceable under federal bankruptcy law (11 USC §101 et seq.)",
+      "why_it_matters": "Franchisor cannot automatically terminate on bankruptcy filing",
+      "source_pages": [172]
+    },
+    {
+      "state": "Hawaii",
+      "affected_family": "general_release",
+      "override_summary": "Transfer and renewal releases must preserve rights under Hawaii Franchise Investment Law",
+      "why_it_matters": "Non-waiver provisions of Hawaii law override standard release language",
+      "source_pages": [175, 188]
+    },
+    {
+      "state": "Hawaii",
+      "affected_family": "termination",
+      "override_summary": "If franchise agreement is inconsistent with Hawaii Franchise Investment Law on non-renewal/termination/transfer, Hawaii law controls",
+      "why_it_matters": "Hawaii law provides additional protections on termination, non-renewal, and transfer",
+      "source_pages": [188]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "general_release",
+      "override_summary": "Any waiver of claims under Illinois Franchise Disclosure Act is void (815 ILCS 705/41)",
+      "why_it_matters": "Release cannot extinguish IL franchise law claims",
+      "source_pages": [176, 190]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "forum_selection",
+      "override_summary": "Illinois law governs the franchise relationship; jurisdiction in Illinois courts",
+      "why_it_matters": "Colorado venue/law may not apply for IL franchise law claims",
+      "source_pages": [176, 190]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "General release does not apply to any liability under Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "MD franchise law claims survive any general release signed at renewal, sale, or transfer",
+      "source_pages": [177, 192]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may bring lawsuit in Maryland for claims arising under MD Franchise Law",
+      "why_it_matters": "Franchisee not bound to Colorado venue for MD law claims",
+      "source_pages": [177, 192]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "damages",
+      "override_summary": "3-year statute of limitations from grant of franchise for MD Franchise Law claims",
+      "why_it_matters": "Overrides the shorter 1-year/2-year limitation in the Franchise Agreement",
+      "source_pages": [177, 192]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "termination",
+      "override_summary": "Termination only for good cause with up to 30-day cure; fair market value compensation on non-renewal (if term < 5 years)",
+      "why_it_matters": "Michigan prohibits unfair termination provisions and requires compensation on non-renewal under certain conditions",
+      "source_pages": [177, 178]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "forum_selection",
+      "override_summary": "Cannot require litigation outside Michigan; cannot preclude entering into arbitration agreement at time of dispute",
+      "why_it_matters": "Colorado venue requirement void in Michigan",
+      "source_pages": [178]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "general_release",
+      "override_summary": "Cannot require assent to release that deprives franchisee of rights under Michigan Franchise Law",
+      "why_it_matters": "Franchisees retain Michigan statutory rights regardless of releases signed",
+      "source_pages": [177]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination",
+      "override_summary": "90-day notice of termination (with 60-day cure) and 180-day notice of non-renewal required (Minn. Stat. §80C.14)",
+      "why_it_matters": "Substantially longer notice/cure periods than the 10/30-day periods in the FA",
+      "source_pages": [179]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "No prospective general release of claims subject to Minnesota Franchise Act (Minn. Rule 2860.4400D)",
+      "why_it_matters": "Cannot require general release at renewal/transfer for MN law claims",
+      "source_pages": [179]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "Cannot require litigation outside Minnesota (Minn. Stat. §80C.21, Minn. Rule 2860.4400J)",
+      "why_it_matters": "Colorado venue requirement void; MN law rights preserved",
+      "source_pages": [179, 180]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "interest_rate",
+      "override_summary": "NSF fee capped at $30 (Minn. Stat. §604.113)",
+      "why_it_matters": "Overrides the FA's 5%/$50 NSF fee provision",
+      "source_pages": [179]
+    },
+    {
+      "state": "New York",
+      "affected_family": "general_release",
+      "override_summary": "Transfer/renewal releases must preserve rights under NY General Business Law §§680–695",
+      "why_it_matters": "NY statutory protections cannot be waived by general release",
+      "source_pages": [181, 197]
+    },
+    {
+      "state": "New York",
+      "affected_family": "governing_law",
+      "override_summary": "Choice of law/forum provisions do not waive NY GBL rights (§§687.4, 687.5)",
+      "why_it_matters": "NY franchisees retain NY law protections regardless of Colorado choice of law",
+      "source_pages": [181, 182, 197]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "noncompete",
+      "override_summary": "Covenants restricting competition contrary to NDCC §9-08-06 generally considered unenforceable",
+      "why_it_matters": "The 24-month post-term noncompete is likely void in North Dakota",
+      "source_pages": [183]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration/mediation site must be agreeable to all parties, not remote from franchisee's business; jurisdiction/venue outside ND void",
+      "why_it_matters": "Colorado venue requirement void; arbitration must be local to franchisee",
+      "source_pages": [183]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "general_release",
+      "override_summary": "General release on renewal determined unfair, unjust, inequitable (NDCC §51-19-09)",
+      "why_it_matters": "Cannot require general release as condition of renewal",
+      "source_pages": [183]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "governing_law",
+      "override_summary": "Choice of law requiring non-ND law is unfair/inequitable under NDCC §51-19-09",
+      "why_it_matters": "ND law may apply instead of Colorado law",
+      "source_pages": [183]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "damages",
+      "override_summary": "No consent to termination or liquidated damages required from ND franchisees; jury trial waiver determined unfair",
+      "why_it_matters": "ND franchisees retain right to jury trial and cannot be bound to liquidated damages consent",
+      "source_pages": [183]
+    },
+    {
+      "state": "Rhode Island",
+      "affected_family": "forum_selection",
+      "override_summary": "Forum selection outside RI void for claims under RI Franchise Investment Act (R.I. Gen. Law §19-28.1-14)",
+      "why_it_matters": "RI franchisees may litigate RI Act claims in Rhode Island",
+      "source_pages": [183]
+    },
+    {
+      "state": "Rhode Island",
+      "affected_family": "general_release",
+      "override_summary": "General release void for claims under RI Franchise Investment Act",
+      "why_it_matters": "RI statutory claims survive any release",
+      "source_pages": [183]
+    },
+    {
+      "state": "Virginia",
+      "affected_family": "termination",
+      "override_summary": "Termination without reasonable cause unlawful under VA Retail Franchising Act (§13.1-564)",
+      "why_it_matters": "Non-curable default triggers may be unenforceable if they don't constitute 'reasonable cause' under VA law",
+      "source_pages": [183]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration/mediation must be in Washington or mutually agreed at time of dispute",
+      "why_it_matters": "Colorado venue overridden; arbitration must be accessible to WA franchisee",
+      "source_pages": [184, 201]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "general_release",
+      "override_summary": "Release cannot include rights under WA Franchise Investment Protection Act except in negotiated settlement with independent counsel",
+      "why_it_matters": "Standard release language void; WA Act rights preserved",
+      "source_pages": [184, 201]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "noncompete",
+      "override_summary": "Noncompete void for employees earning <$100K/year and independent contractors earning <$250K/year (RCW 49.62.020/.030, adjusted for inflation)",
+      "why_it_matters": "WA earnings thresholds may void noncompete for most caregivers and staff; franchise-level noncompete may also be subject to challenge",
+      "source_pages": [184, 201]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "damages",
+      "override_summary": "Transfer fees collectible only to extent they reflect franchisor's reasonable estimated or actual costs",
+      "why_it_matters": "The $10K/$20K transfer fees may be reduced if they exceed actual costs",
+      "source_pages": [184, 201]
+    },
+    {
+      "state": "Wisconsin",
+      "affected_family": "termination",
+      "override_summary": "Wisconsin Fair Dealership Law (Title XIV-A Ch. 135) may affect termination provisions",
+      "why_it_matters": "WI law provides additional protections against unfair termination of dealership/franchise relationships",
+      "source_pages": [185]
+    }
+  ],
+  "summary_table": {
+    "description": "Override families (rows) x States affected (columns)",
+    "families": {
+      "forum_selection": ["California", "Illinois", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+      "governing_law": ["California", "New York", "North Dakota"],
+      "noncompete": ["California", "North Dakota", "Washington"],
+      "general_release": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington"],
+      "termination": ["California", "Hawaii", "Michigan", "Minnesota", "Virginia", "Wisconsin"],
+      "damages": ["Minnesota", "North Dakota", "Washington"],
+      "interest_rate": ["Minnesota"]
+    }
+  }
+}

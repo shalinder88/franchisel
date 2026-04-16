@@ -1,0 +1,81 @@
+{
+  "depth_pass": "promotion_audit",
+  "extraction_date": "2026-04-15",
+  "brand": "Gong cha",
+  "fdd_id": "638048-2025",
+  "promoted_facts": [
+    {
+      "fact": "Brand Marketing Fund 2024 spending breakdown: 22.1% digital media, 25.9% agency fees, 21.2% management salaries, 30.8% store community",
+      "source_reader_report": "Pass C, Marketing Fund Spending",
+      "source_pdf_page": 48,
+      "promoted_to": "item21_financial_statements.brand_marketing_fund_spending_2024",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "Revenue from required purchases by unit franchisees: $1.292M (12.74% of $10.144M total revenue, per separate schedule). GCPS revenue from master franchisees: ~$8.68M",
+      "source_reader_report": "Pass C, Supply Chain Fees",
+      "source_pdf_page": 35,
+      "promoted_to": "fees.supplier_revenue",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "Typical time from FA signing to store opening: 150-240 days",
+      "source_reader_report": "Pass C, Site Selection & Opening",
+      "source_pdf_page": 47,
+      "promoted_to": "operations.typical_opening_timeline_days",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "GCA financing for intelligent beverage maker: 70% financed, 30% down, 10% annual interest, 6- or 12-month term",
+      "source_reader_report": "Pass B, Item 10",
+      "source_pdf_page": 39,
+      "promoted_to": "financing (already present)",
+      "action": "Verified — already in canonical"
+    },
+    {
+      "fact": "Franchisor can independently access all electronic data without compensation; no contractual limit on franchisor's right to use information",
+      "source_reader_report": "Pass C, Technology",
+      "source_pdf_page": 53,
+      "promoted_to": "operations.data_access_rights",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "AI/Machine Learning prohibition on use of confidential information",
+      "source_reader_report": "Pass D, Item 14",
+      "source_pdf_page": 60,
+      "promoted_to": "contract_terms.ai_prohibition",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "No advertising council for unit/multi-unit franchisees; only master franchisee committee exists",
+      "source_reader_report": "Pass C, Advertising",
+      "source_pdf_page": 52,
+      "promoted_to": "operations.advertising_council",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "Family member non-compete extension: immediate family engaging in Competitive Business triggers default",
+      "source_reader_report": "Pass E, Noncompete",
+      "source_pdf_page": 190,
+      "promoted_to": "contract_terms.noncompete_family_extension",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "Release at FA signing (Section 27.6) — franchisee releases all claims prior to effective date upon execution",
+      "source_reader_report": "Not explicitly in reader report; found in contract depth pass",
+      "source_pdf_page": 199,
+      "promoted_to": "contract_terms.release_at_signing",
+      "action": "Added to canonical"
+    },
+    {
+      "fact": "License fee from franchisor to GCG waived for 2024 (net income below $250K threshold); waived by Licensor",
+      "source_reader_report": "Not explicitly in reader report; found in financial notes",
+      "source_pdf_page": 132,
+      "promoted_to": "item21_financial_statements.license_fee_waived",
+      "action": "Added to canonical"
+    }
+  ],
+  "facts_already_in_canonical": 1,
+  "facts_newly_promoted": 9,
+  "total_facts_reviewed": 10
+}

@@ -1,0 +1,294 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637914-2025",
+  "brand": "Iron Valley Real Estate",
+  "tables": [
+    {
+      "table_id": "T5-1",
+      "item": 5,
+      "title": "Initial Franchise Fees",
+      "source_pages": [16],
+      "columns": ["Scenario", "Amount"],
+      "rows": [
+        {"scenario": "First outlet in county", "amount": "$20,000"},
+        {"scenario": "Additional outlet in same county", "amount": "$5,000"},
+        {"scenario": "Additional outlet in new county (signed before 3/10/2022)", "amount": "$10,000"},
+        {"scenario": "Additional outlet in new county (signed 3/11/2022 to 3/11/2025)", "amount": "$15,000"},
+        {"scenario": "Veteran discount", "amount": "-$5,000"},
+        {"scenario": "ADRSA Territory Fee", "amount": "$100"}
+      ],
+      "table_notes": [
+        "All fees non-refundable, due at signing.",
+        "Franchisor may cancel before training completion without liability.",
+        "ADRSA Territory Fee is separate; each ADRSA outlet requires separate FA and initial franchise fee."
+      ]
+    },
+    {
+      "table_id": "T6-1",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [16, 17, 18, 19],
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee_type": "Royalty", "amount": "$150 per Transaction Side", "due_date": "15th of following month", "remarks": "CPI-adjusted. Must send transaction report."},
+        {"fee_type": "Marketing and Promotion Fees", "amount": "$250/month", "due_date": "15th of following month", "remarks": "CPI-adjusted. Monthly."},
+        {"fee_type": "Agent Website Fee", "amount": "$16.96 per agent/month", "due_date": "15th of following month", "remarks": "Only if using recommended website provider. Otherwise Roster Only + IDX charges."},
+        {"fee_type": "Additional Advertising Assessment", "amount": "Variable", "due_date": "On demand", "remarks": "Requires 2/3 franchisee approval."},
+        {"fee_type": "Renewal Fee", "amount": "$5,000 ($2,500 if fully compliant)", "due_date": "At renewal signing", "remarks": "CPI-adjusted."},
+        {"fee_type": "Transfer Fee", "amount": "$5,000", "due_date": "10 days before transfer", "remarks": "No fee for transfer to entity solely owned by franchisee. CPI-adjusted."},
+        {"fee_type": "Interest", "amount": "18% APR", "due_date": "On demand", "remarks": "From date payment originally due."},
+        {"fee_type": "Costs of Collection", "amount": "Variable", "due_date": "On demand", "remarks": "In addition to late penalty and interest."},
+        {"fee_type": "Optional Training/Conference Fee", "amount": "$500 to $5,000 + trainer travel", "due_date": "At training", "remarks": "CPI-adjusted."},
+        {"fee_type": "Late Payment Penalty", "amount": "5% of past due", "due_date": "On demand", "remarks": "Per occurrence. In addition to interest."},
+        {"fee_type": "Audit", "amount": "$3,000 to $7,500 + interest on underpayment", "due_date": "On demand", "remarks": "Only if understated revenue >=5% or audit >8 hours."},
+        {"fee_type": "Interim Manager", "amount": "$750/day + travel/lodging/living", "due_date": "Weekly", "remarks": "CPI-adjusted."},
+        {"fee_type": "Reimbursement for Curing Defaults", "amount": "Variable", "due_date": "On demand", "remarks": "If franchisor cures default on your behalf."},
+        {"fee_type": "Proposed Supplier Review Fee", "amount": "$250", "due_date": "At submission", "remarks": "Non-refundable. CPI-adjusted."},
+        {"fee_type": "Attorneys Fees and Costs", "amount": "Variable", "due_date": "On demand", "remarks": "If franchisor uses attorney to enforce."},
+        {"fee_type": "Recovery of Lost Royalties", "amount": "150%-300% of 3-year aggregate royalty", "due_date": "On demand", "remarks": "Only upon termination for material breach. Minimum $20,000 if <1 year. Tiered: <1yr=300%, 1-2yr=200%, 2-3yr=150%."},
+        {"fee_type": "Indemnification", "amount": "Variable", "due_date": "On demand", "remarks": "For unauthorized IP use, noncompete breach, or tort/negligence."}
+      ],
+      "table_notes": [
+        "Note 1: Fees must be paid in full at indicated time. Credit check required.",
+        "Note 2: 18% APR interest on late payments (or lower state-mandated rate). Court costs, investigator fees, expert witness fees, attorney fees recoverable.",
+        "Note 3: CPI-adjusted upward based on Consumer Price Index for All Urban Consumers.",
+        "Note 4: Additional advertising assessment requires 2/3 affirmative vote of all affected franchisees.",
+        "Note 5: Franchisor has right to continually inspect outlet."
+      ]
+    },
+    {
+      "table_id": "T7-1",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [20, 21, 22],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "Payee"],
+      "rows": [
+        {"type": "Initial Franchise Fee", "low": "$5,000", "high": "$20,000", "method": "Lump sum; non-refundable", "when_due": "At FA signing", "payee": "Franchisor"},
+        {"type": "Grand Opening Advertising", "low": "$1,000", "high": "$3,000", "method": "Lump sum; non-refundable", "when_due": "First 60 days after Opening", "payee": "Various suppliers"},
+        {"type": "Initial Training Travel/Expenses", "low": "$1,500", "high": "$3,500", "method": "As incurred", "when_due": "During training", "payee": "Travel/lodging vendors"},
+        {"type": "Real Property Lease (3 months) + deposit", "low": "$9,000", "high": "$30,000", "method": "As incurred", "when_due": "Before opening", "payee": "Landlord/suppliers"},
+        {"type": "Office Setup/Leasehold Improvements", "low": "$15,000", "high": "$65,000", "method": "As incurred", "when_due": "Before opening", "payee": "Contractor/landlord/vendors"},
+        {"type": "Equipment/Furniture/Fixtures", "low": "$8,000", "high": "$15,000", "method": "As arranged", "when_due": "Before opening", "payee": "Various suppliers"},
+        {"type": "Signage/Exterior Signs", "low": "$3,000", "high": "$18,000", "method": "As arranged", "when_due": "As arranged", "payee": "Various suppliers"},
+        {"type": "POS/Computers/Telecom", "low": "$2,500", "high": "$5,000", "method": "As arranged", "when_due": "Before opening", "payee": "Various suppliers"},
+        {"type": "Professional Fees (legal/accounting)", "low": "$1,000", "high": "$2,500", "method": "As incurred", "when_due": "As arranged", "payee": "Attorneys/accountants"},
+        {"type": "Inventory/Supplies", "low": "$500", "high": "$1,500", "method": "As arranged", "when_due": "Before opening", "payee": "Designated/approved vendors"},
+        {"type": "Insurance", "low": "$1,000", "high": "$2,000", "method": "As incurred", "when_due": "As arranged", "payee": "Insurance company"},
+        {"type": "Utility Deposits/Business Licenses/Prepaid", "low": "$1,000", "high": "$10,000", "method": "As incurred", "when_due": "Before/during opening", "payee": "Various"},
+        {"type": "Additional Funds (3 months)", "low": "$10,000", "high": "$30,000", "method": "As incurred", "when_due": "After opening", "payee": "Employees/landlord/vendors"}
+      ],
+      "total_low": "$58,500",
+      "total_high": "$206,500",
+      "table_notes": [
+        "Note 1: Initial fee varies $5,000-$20,000 based on county and prior franchise history.",
+        "Note 2: Grand opening minimum $1,000 in first 6 months.",
+        "Note 3: Training typically 3 days in Hershey, PA.",
+        "Note 4: Many franchisees convert existing offices. Outlet size 1,500-3,000 sq ft.",
+        "Note 5: Build-out estimates based on basic IVRE office design.",
+        "Note 6: Signage varies per lease space and local regulations.",
+        "Note 7: Accounttech POS at $2.60/agent/month + $10/admin/month. RingCentral $73-$163/month. Office 365 ~$240/year.",
+        "Note 8: Insurance: $1M GL, auto $100K/$300K/$100K, workers comp.",
+        "Note 9: Includes security deposits, utility deposits, business licenses.",
+        "Note 10: 3-month operating reserve based on founder's 18 years experience.",
+        "Note 11: Non-refundable except possible supplier refunds if not opened. Franchisor does not finance."
+      ]
+    },
+    {
+      "table_id": "T7-2",
+      "item": 7,
+      "title": "ADRSA Estimated Initial Investment",
+      "source_pages": [22],
+      "columns": ["Type of Expenditure", "Amount", "Method", "When Due", "Payee"],
+      "rows": [
+        {"type": "Territory Fee", "amount": "$100", "method": "Lump sum", "when_due": "At ADRSA signing", "payee": "Franchisor"}
+      ],
+      "total": "$100",
+      "table_notes": [
+        "Each additional outlet under ADRSA requires separate FA and initial franchise fee.",
+        "Failure to comply with Development Schedule may terminate ADRSA and Royalty Share rights."
+      ]
+    },
+    {
+      "table_id": "T20-1",
+      "item": 20,
+      "title": "Systemwide Outlet Summary 2022-2024",
+      "source_pages": [45],
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 22, "end": 30, "net": "+8"},
+        {"type": "Franchised", "year": 2023, "start": 30, "end": 35, "net": "+5"},
+        {"type": "Franchised", "year": 2024, "start": 35, "end": 44, "net": "+9"},
+        {"type": "Company-Owned", "year": 2022, "start": 8, "end": 7, "net": "-1"},
+        {"type": "Company-Owned", "year": 2023, "start": 7, "end": 7, "net": "0"},
+        {"type": "Company-Owned", "year": 2024, "start": 7, "end": 8, "net": "+1"},
+        {"type": "Total", "year": 2022, "start": 30, "end": 37, "net": "+7"},
+        {"type": "Total", "year": 2023, "start": 37, "end": 42, "net": "+5"},
+        {"type": "Total", "year": 2024, "start": 42, "end": 52, "net": "+10"}
+      ],
+      "table_notes": ["Total net change 2024 is +10 (not +8 as stated in PDF for Total row, which appears to be correct when accounting for the company +1 separately)."]
+    },
+    {
+      "table_id": "T20-2",
+      "item": 20,
+      "title": "Transfers of Outlets 2022-2024",
+      "source_pages": [45, 46],
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        {"state": "Delaware", "year": 2022, "transfers": 1},
+        {"state": "Delaware", "year": 2023, "transfers": 0},
+        {"state": "Delaware", "year": 2024, "transfers": 2},
+        {"state": "Maryland", "year": 2022, "transfers": 1},
+        {"state": "Maryland", "year": 2023, "transfers": 0},
+        {"state": "Maryland", "year": 2024, "transfers": 1},
+        {"state": "Pennsylvania", "year": 2022, "transfers": 0},
+        {"state": "Pennsylvania", "year": 2023, "transfers": 1},
+        {"state": "Pennsylvania", "year": 2024, "transfers": 1},
+        {"state": "Totals", "year": 2022, "transfers": 2},
+        {"state": "Totals", "year": 2023, "transfers": 1},
+        {"state": "Totals", "year": 2024, "transfers": 4}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T20-3",
+      "item": 20,
+      "title": "Status of Franchise Outlets 2022-2024",
+      "source_pages": [46],
+      "columns": ["State", "Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased-Other", "End"],
+      "rows": [
+        {"state": "Delaware", "year": 2022, "start": 1, "opened": 1, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 2},
+        {"state": "Delaware", "year": 2023, "start": 2, "opened": 0, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 2},
+        {"state": "Delaware", "year": 2024, "start": 2, "opened": 2, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 4},
+        {"state": "Florida", "year": 2022, "start": 1, "opened": 4, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 5},
+        {"state": "Florida", "year": 2023, "start": 5, "opened": 1, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 1, "end": 5},
+        {"state": "Florida", "year": 2024, "start": 5, "opened": 1, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 6},
+        {"state": "Maryland", "year": 2022, "start": 2, "opened": 0, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 2},
+        {"state": "Maryland", "year": 2023, "start": 2, "opened": 1, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 3},
+        {"state": "Maryland", "year": 2024, "start": 3, "opened": 0, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 3},
+        {"state": "North Carolina", "year": 2022, "start": 0, "opened": 0, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 0},
+        {"state": "North Carolina", "year": 2023, "start": 0, "opened": 1, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 1},
+        {"state": "North Carolina", "year": 2024, "start": 1, "opened": 0, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 1},
+        {"state": "Pennsylvania", "year": 2022, "start": 15, "opened": 3, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 18},
+        {"state": "Pennsylvania", "year": 2023, "start": 18, "opened": 2, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 20},
+        {"state": "Pennsylvania", "year": 2024, "start": 20, "opened": 4, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 24},
+        {"state": "Virginia", "year": 2022, "start": 3, "opened": 0, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 3},
+        {"state": "Virginia", "year": 2023, "start": 3, "opened": 2, "term": 1, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 4},
+        {"state": "Virginia", "year": 2024, "start": 4, "opened": 2, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 6},
+        {"state": "Totals", "year": 2022, "start": 22, "opened": 8, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 30},
+        {"state": "Totals", "year": 2023, "start": 30, "opened": 7, "term": 1, "nonrenew": 0, "reacq": 0, "ceased": 1, "end": 35},
+        {"state": "Totals", "year": 2024, "start": 35, "opened": 9, "term": 0, "nonrenew": 0, "reacq": 0, "ceased": 0, "end": 44}
+      ],
+      "table_notes": ["One termination in Virginia (2023). One ceased operations-other in Florida (2023)."]
+    },
+    {
+      "table_id": "T20-4",
+      "item": 20,
+      "title": "Status of Company-Owned Outlets 2022-2024",
+      "source_pages": [46],
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired", "Closed", "Sold", "End"],
+      "rows": [
+        {"state": "Maryland", "year": 2022, "start": 0, "opened": 0, "reacq": 0, "closed": 0, "sold": 0, "end": 0},
+        {"state": "Maryland", "year": 2023, "start": 0, "opened": 0, "reacq": 0, "closed": 0, "sold": 0, "end": 0},
+        {"state": "Maryland", "year": 2024, "start": 0, "opened": 1, "reacq": 0, "closed": 0, "sold": 0, "end": 1},
+        {"state": "Pennsylvania", "year": 2022, "start": 8, "opened": 0, "reacq": 0, "closed": 1, "sold": 0, "end": 7},
+        {"state": "Pennsylvania", "year": 2023, "start": 7, "opened": 0, "reacq": 0, "closed": 0, "sold": 0, "end": 7},
+        {"state": "Pennsylvania", "year": 2024, "start": 7, "opened": 0, "reacq": 0, "closed": 0, "sold": 0, "end": 7},
+        {"state": "Totals", "year": 2022, "start": 8, "opened": 0, "reacq": 0, "closed": 1, "sold": 0, "end": 7},
+        {"state": "Totals", "year": 2023, "start": 7, "opened": 0, "reacq": 0, "closed": 0, "sold": 0, "end": 7},
+        {"state": "Totals", "year": 2024, "start": 7, "opened": 1, "reacq": 0, "closed": 0, "sold": 0, "end": 8}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T20-5",
+      "item": 20,
+      "title": "Projected Openings as of December 31, 2024",
+      "source_pages": [47],
+      "columns": ["State", "Signed Not Opened", "Projected New Franchised", "Projected New Company"],
+      "rows": [
+        {"state": "Florida", "signed": 0, "projected_franchised": 1, "projected_company": 0},
+        {"state": "New Jersey", "signed": 0, "projected_franchised": 1, "projected_company": 0},
+        {"state": "New York", "signed": 0, "projected_franchised": 1, "projected_company": 0},
+        {"state": "North Carolina", "signed": 0, "projected_franchised": 1, "projected_company": 0},
+        {"state": "Pennsylvania", "signed": 0, "projected_franchised": 3, "projected_company": 0},
+        {"state": "South Carolina", "signed": 0, "projected_franchised": 1, "projected_company": 0},
+        {"state": "Virginia", "signed": 0, "projected_franchised": 1, "projected_company": 0},
+        {"state": "Totals", "signed": 0, "projected_franchised": 9, "projected_company": 0}
+      ],
+      "table_notes": ["No signed-but-not-opened agreements as of 12/31/2024."]
+    },
+    {
+      "table_id": "T21-BS",
+      "item": 21,
+      "title": "Balance Sheets 2022-2024",
+      "source_pages": [109, 126],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"item": "Cash", "2024": "$316,427", "2023": "$188,130", "2022": "$67,043"},
+        {"item": "Accounts Receivable, net", "2024": "$32,144", "2023": "$18,451", "2022": "$7,423"},
+        {"item": "Inventories", "2024": "$4,455", "2023": "$5,982", "2022": "$5,043"},
+        {"item": "Total Current Assets", "2024": "$353,026", "2023": "$212,563", "2022": "$79,509"},
+        {"item": "Net Property & Equipment", "2024": "$15,237", "2023": "$13,252", "2022": "$13,323"},
+        {"item": "ROU Asset (Operating Lease)", "2024": "$167,986", "2023": "$214,855", "2022": "$257,669"},
+        {"item": "Other Noncurrent Assets", "2024": "$9,100", "2023": "$19,420", "2022": "$96,000"},
+        {"item": "Total Assets", "2024": "$545,349", "2023": "$460,090", "2022": "$446,501"},
+        {"item": "Total Current Liabilities", "2024": "$155,607", "2023": "$139,248", "2022": "$136,456"},
+        {"item": "Deferred Franchise Revenue (current)", "2024": "$87,000", "2023": "$85,583", "2022": "$67,833"},
+        {"item": "Operating Lease Liabilities (long-term)", "2024": "$105,562", "2023": "$167,986", "2022": "$201,421"},
+        {"item": "Deferred Franchise Revenue (non-current)", "2024": "$167,470", "2023": "$206,918", "2022": "$169,168"},
+        {"item": "Total Liabilities", "2024": "$428,639", "2023": "$514,152", "2022": "$507,045"},
+        {"item": "Members' Equity (Deficit)", "2024": "$116,710", "2023": "($54,062)", "2022": "($60,544)"}
+      ],
+      "table_notes": ["2022 'other noncurrent' includes $80,400 due from members."]
+    },
+    {
+      "table_id": "T21-IS",
+      "item": 21,
+      "title": "Income Statements 2022-2024",
+      "source_pages": [110, 127],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"item": "Franchise Fees", "2024": "$87,748", "2023": "$69,500", "2022": "$56,500"},
+        {"item": "Royalties", "2024": "$1,233,567", "2023": "$920,618", "2022": "$743,821"},
+        {"item": "Marketing Fees", "2024": "$25,850", "2023": "$28,007", "2022": "$14,900"},
+        {"item": "Technology Fees", "2024": "$410,076", "2023": "$353,880", "2022": "$165,415"},
+        {"item": "Product Sales", "2024": "$1,429", "2023": "$867", "2022": "$35,161"},
+        {"item": "Total Revenues", "2024": "$1,758,670", "2023": "$1,372,872", "2022": "$1,015,797"},
+        {"item": "Cost of Sales", "2024": "$5,369", "2023": "$300", "2022": "$4,924"},
+        {"item": "Gross Profit", "2024": "$1,753,301", "2023": "$1,372,572", "2022": "$1,010,873"},
+        {"item": "Total Operating Expenses", "2024": "$1,584,172", "2023": "$1,285,690", "2022": "$1,114,191"},
+        {"item": "Income (Loss) from Operations", "2024": "$169,129", "2023": "$86,882", "2022": "($103,318)"},
+        {"item": "Other Income", "2024": "$36,643", "2023": "$0", "2022": "$3,277"},
+        {"item": "Net Income (Loss)", "2024": "$205,772", "2023": "$86,882", "2022": "($100,041)"}
+      ],
+      "table_notes": [
+        "S-corp election — no income tax provision.",
+        "Tech provider expenses ($412K in 2024) nearly offset tech fee revenue ($410K) — essentially pass-through.",
+        "Payroll is largest expense at $542K (2024).",
+        "Credit loss expense of $19,509 in 2024 (new CECL adoption).",
+        "Royalty rebates of $34,725 in 2024 (new or expanded)."
+      ]
+    },
+    {
+      "table_id": "T21-CF",
+      "item": 21,
+      "title": "Cash Flows 2022-2024",
+      "source_pages": [112, 129],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"item": "Net Income (Loss)", "2024": "$205,772", "2023": "$86,882", "2022": "($100,041)"},
+        {"item": "Net Cash from Operations", "2024": "$168,696", "2023": "$204,258", "2022": "($137,993)"},
+        {"item": "Net Cash from Investing", "2024": "($5,399)", "2023": "($2,771)", "2022": "($3,531)"},
+        {"item": "Net Cash from Financing", "2024": "($35,000)", "2023": "($80,400)", "2022": "$15,000"},
+        {"item": "Net Change in Cash", "2024": "$128,297", "2023": "$121,087", "2022": "($126,524)"},
+        {"item": "Cash - Ending", "2024": "$316,427", "2023": "$188,130", "2022": "$67,043"}
+      ],
+      "table_notes": [
+        "No interest paid, no taxes paid in any year.",
+        "2022 financing: $15,000 member contribution.",
+        "2023 financing: $80,400 member distributions (repaid prior member loan).",
+        "2024 financing: $35,000 member distributions."
+      ]
+    }
+  ]
+}

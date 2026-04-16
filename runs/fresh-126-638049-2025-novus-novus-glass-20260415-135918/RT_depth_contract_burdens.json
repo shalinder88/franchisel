@@ -1,0 +1,184 @@
+{
+  "depth_pass": "2_contract_burdens",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "638049-2025",
+  "source": "Item 17 summary table (pages 56-65), Items 5-12 (pages 15-50), state addenda (pages 78-93)",
+  "note": "Contract burden extracted from Item 17 disclosure summary and cross-referenced with Items 5-12. Full agreement text (Exhibits D-2/D-3, pages 163-350) was not read clause-by-clause; Item 17 provides the required summary.",
+  "burdens": {
+    "grant_and_term": {
+      "term_years": 10,
+      "renewal_option": "Re-franchise under then-current agreement (may be materially different)",
+      "renewal_notice_days": 210,
+      "renewal_fee": 4000,
+      "procolor_term": 5,
+      "napa_5yr_term": 5,
+      "area_development_term": 10,
+      "area_development_not_renewable": true,
+      "source_pages": [56]
+    },
+    "fee_obligations": {
+      "royalty": "6% of Gross Revenues or minimum monthly ($350-$500)",
+      "marketing_contribution": "2% of Gross Revenues",
+      "local_advertising_minimum": "4% of Gross Revenues",
+      "vehicle_lease": "$1,300-$1,600/month (60-month term)",
+      "technology_fee": "$300-$350/month base + add-ons",
+      "meeting_registration": "$1,000-$1,500/person, 2x/year",
+      "eft_required": true,
+      "holdover_surcharge": "$200/month if operating past term without re-franchising",
+      "post_term_additional_royalty": "$200/month if continuing to operate after term expiration",
+      "source_pages": [19, 20, 21, 22, 23, 24, 25, 26, 27]
+    },
+    "site_and_construction": {
+      "retail_site_review": "Franchisor has right to review proposed location (not select or approve)",
+      "retail_size": "1,500-5,000 sq ft",
+      "site_deadline": "90 days from Franchise Agreement date (with 90-day extension if operating mobile in meantime)",
+      "signage_requirement": "Must purchase from approved supplier within 30 days of signing",
+      "source_pages": [42, 43]
+    },
+    "training_obligations": {
+      "mandatory_initial": "Owner or manager must attend and complete before operating",
+      "deadline": "60 days after signing (glass replacement may be deferred 60 days after glass repair)",
+      "ongoing_mandatory": "Must attend all additional/advanced training we require",
+      "meeting_attendance": "Must attend all national, regional, and state meetings",
+      "employee_training": "At least 50% of employees must complete training programs",
+      "source_pages": [43, 44, 45]
+    },
+    "operational_obligations": {
+      "full_time_devotion": "Owner or manager must devote full-time best efforts",
+      "minimum_employees": "At least 1 full-time employee performing/marketing glass services",
+      "computer_system_access": "Franchisor has independent access to franchisee computer system",
+      "reporting": "Monthly Gross Revenues reports required; withholding access = $100 fee (increasing 25%/year)",
+      "insurance_requirements": "GL ($1M/$2M), Garage Keepers ($2M), Vehicle ($1M), Property (replacement value), Umbrella ($1M), Workers Comp ($1M), Environmental ($1M)",
+      "digital_marketing": "$500/month minimum spend with designated supplier after 6 months",
+      "quarterly_minimum_gross_revenue": true,
+      "source_pages": [33, 34, 46, 47, 54, 55]
+    },
+    "termination_triggers": {
+      "curable_defaults_30_days": [
+        "Failure to complete training",
+        "Failure to purchase/lease retail site",
+        "Failure to open within 6 months",
+        "Material breach of Franchise Agreement",
+        "Material breach of any agreement with franchisor or affiliates",
+        "Failure to conform to business system",
+        "Failure to pay uncontested obligations",
+        "Dishonored check",
+        "Failure to pay for startup items",
+        "Failure to file tax returns"
+      ],
+      "curable_defaults_15_days": [
+        "Delinquent payments to franchisor",
+        "Failure to make vehicle lease payments",
+        "Failure to maintain vehicle"
+      ],
+      "curable_defaults_90_days": [
+        "Failure to meet Quarterly Minimum Gross Revenues"
+      ],
+      "non_curable_defaults": [
+        "Felony conviction or violation of law relating to business",
+        "Insolvency or bankruptcy",
+        "Abandonment",
+        "Material impairment of Marks (24-hour notice)",
+        "Termination of another franchise/development agreement",
+        "Failure to meet Annual Minimum GR (Repair Only)",
+        "Failure to comply with audit request",
+        "Withholding access to financial systems",
+        "Revoking EFT authorization",
+        "Initiating stop payments against franchisor"
+      ],
+      "cross_default": "Breach of any franchise agreement, development agreement, vehicle lease, equipment lease, or software sublicense triggers cross-default",
+      "procolor_cross_default": "Breach of ProColor franchise agreement = breach of Novus agreement and vice versa",
+      "source_pages": [58, 59, 60]
+    },
+    "transfer_restrictions": {
+      "right_of_first_refusal": true,
+      "transfer_fee": 7500,
+      "transfer_fee_existing_franchisee": 5000,
+      "conditions": [
+        "Pay all debts to franchisor",
+        "Written agreement satisfactory to franchisor",
+        "Transferee shareholders sign personal guaranty",
+        "Transferee meets standards",
+        "Transferee not in competing business",
+        "Transferee signs current franchise agreement",
+        "Transferee completes training",
+        "Pay transfer fee + training fee",
+        "Sign general release (subject to state law)"
+      ],
+      "vehicle_lease_not_transferable": true,
+      "area_development_must_transfer_all_franchise_agreements": true,
+      "source_pages": [62, 63]
+    },
+    "noncompete": {
+      "during_term": "No participation in any competing business",
+      "post_term": "2 years within territory, territory of another franchisee, or 10 miles of any Novus business",
+      "personal_guaranty_extends_to": "Confidentiality and noncompete provisions",
+      "state_overrides": {"ND": "generally unenforceable", "WA": "earnings thresholds apply"},
+      "source_pages": [63, 64]
+    },
+    "guaranty_scope": {
+      "required": true,
+      "who_must_sign": "Each individual with direct or indirect ownership interest that franchisor designates",
+      "scope": "All obligations of franchisee under all agreements (including noncompete and confidentiality)",
+      "spousal_guaranty": "Not specifically mentioned",
+      "unlimited": true,
+      "source_pages": [40]
+    },
+    "liquidated_damages": {
+      "on_abandonment": "60 months x average monthly Gross Revenues (or remaining term months if <60)",
+      "area_development_undeveloped_units": "$10,000 per undeveloped franchise",
+      "state_overrides": {"MN": "prohibited", "ND": "prohibited"},
+      "source_pages": [23, 61]
+    },
+    "dispute_resolution": {
+      "mediation_required": true,
+      "mediation_location": "At least 200 miles from either office (mediator selects)",
+      "litigation_venue": "Ramsey County, Minnesota",
+      "governing_law": "Minnesota",
+      "state_overrides_venue": ["IL", "IN", "ND", "RI", "WA", "MI"],
+      "source_pages": [64, 65]
+    },
+    "indemnification": {
+      "franchisee_indemnifies_franchisor": true,
+      "broadly_across_all_agreements": true,
+      "wa_override": "No obligation for franchisor's negligence, willful misconduct, or fraud",
+      "source_pages": [38]
+    },
+    "force_majeure": {
+      "disclosed_in_item_17": false,
+      "note": "Not specifically addressed in Item 17 summary. Would require reading full agreement text."
+    },
+    "distinctive_clauses": [
+      {
+        "clause": "AI restriction",
+        "description": "Prohibits using confidential information for machine learning, AI training, or generative AI without express written consent",
+        "source_page": 54
+      },
+      {
+        "clause": "Vehicle lease subordination",
+        "description": "Franchisee vehicle sublease terminates automatically if Mondofix USA master lease terminates",
+        "source_page": 41
+      },
+      {
+        "clause": "Franchisor independent computer access",
+        "description": "Franchisor has independent access to all information on franchisee's computer system",
+        "source_page": 47
+      },
+      {
+        "clause": "Customer referral obligation",
+        "description": "Must refer customers to nearest Novus business for services franchisee doesn't offer, before referring elsewhere",
+        "source_page": 49
+      },
+      {
+        "clause": "Telephone/domain/social media seizure",
+        "description": "Franchisor may take phone numbers, directory listings, domain names, and social media accounts on termination",
+        "source_page": 61
+      },
+      {
+        "clause": "Post-term holdover royalty",
+        "description": "$200/month additional royalty if operating past term without re-franchising",
+        "source_page": 24
+      }
+    ]
+  }
+}

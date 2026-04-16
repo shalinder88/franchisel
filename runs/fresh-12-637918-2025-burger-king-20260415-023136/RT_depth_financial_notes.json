@@ -1,0 +1,152 @@
+{
+  "depth_pass": "financial_notes",
+  "fdd_id": "637918-2025",
+  "entity": "Restaurant Brands International Inc. (and RBILP)",
+  "auditor": "KPMG LLP",
+  "opinion": "Unqualified on both RBI and RBILP consolidated statements",
+  "critical_audit_matters": [
+    "Fair value of operating lease assets, lease liabilities and reacquired franchise rights acquired in Carrols business combination",
+    "Recoverability assessment of Firehouse Subs brand ($816M indefinite-lived intangible)"
+  ],
+
+  "revenue_recognition": {
+    "supply_chain_sales": "Revenue recognized upon transfer of control (delivery). Shipping costs = fulfillment costs in cost of sales.",
+    "company_restaurant_sales": "Recognized at point of sale. Taxes excluded.",
+    "franchise_revenues": "Royalties recognized as franchise sales occur (sales-based royalty). Initial/renewal fees recognized straight-line over agreement term. Franchise license + pre-opening + ongoing services bundled into single performance obligation (Franchise PO).",
+    "advertising_revenues": "Franchisee contributions calculated as % of sales. Not separately distinct from Franchise PO.",
+    "gift_card_breakage": "Recognized proportionately as gift cards are redeemed using estimated historical breakage rate.",
+    "franchisee_incentives": "Capitalized and amortized as reduction in franchise/property revenue over contract term.",
+    "source_pages": [817, 818]
+  },
+
+  "depreciation_amortization": {
+    "methods": "Straight-line",
+    "useful_lives": {
+      "buildings_improvements": "up to 40 years",
+      "restaurant_equipment": "up to 17 years",
+      "furniture_fixtures_other": "up to 10 years",
+      "manufacturing_equipment": "up to 25 years",
+      "capitalized_software": "up to 5 years",
+      "leasehold_improvements": "lesser of lease term or useful life"
+    },
+    "total_depreciation_amortization_M": {"2024": 264, "2023": 191, "2022": 190},
+    "source_pages": [815]
+  },
+
+  "impairment": {
+    "goodwill_and_brands": "Tested annually as of October 1. Qualitative or quantitative assessment. No impairment recognized in 2022, 2023, or 2024.",
+    "long_lived_assets": "Tested when events indicate carrying amount may not be recoverable. Compared to undiscounted future cash flows.",
+    "brands_values_M": {"TH": "not separately disclosed", "BK": "not separately disclosed", "PLK": "not separately disclosed", "FHS": 816},
+    "total_intangible_assets_M": 10922,
+    "total_goodwill_M": 5986,
+    "source_pages": [816, 806]
+  },
+
+  "income_tax": {
+    "effective_rate_2024": "20.1% (364/1809)",
+    "effective_rate_2023": "negative (benefit of $265M on $1,453M income)",
+    "effective_rate_2022": "negative (benefit of $117M on $1,365M income)",
+    "deferred_tax_liability_net_M": 1208,
+    "valuation_allowance_M": {"2024": 1588, "2023": 1563, "2022": 194},
+    "valuation_allowance_note": "Massive increase in 2023 ($194M to $1,563M) from additions related to deferred tax assets generated",
+    "unrecognized_tax_benefits_M": {"2024": 44, "2023": 58},
+    "loss_carryforwards": {
+      "canadian_nol_M": 313,
+      "us_state_nol_M": 482,
+      "us_federal_nol_M": 97,
+      "us_foreign_tax_credits_M": 112,
+      "other_foreign_credits_M": 707
+    },
+    "source_pages": [835]
+  },
+
+  "lease_accounting": {
+    "lessor_operating_leases": {
+      "property_equipment_leased_net_M": 1179,
+      "net_investment_direct_financing_M": 83,
+      "total_property_revenues_M": {"2024": 837, "2023": 851, "2022": 813},
+      "minimum_lease_payments_M": 367,
+      "variable_lease_payments_M": 465
+    },
+    "lessee_accounting": {
+      "operating_lease_assets_M": 1852,
+      "operating_lease_liabilities_lt_M": 1770,
+      "discount_rate_basis": "Incremental borrowing rate based on secured borrowings + implied spreads"
+    },
+    "source_pages": [830, 880]
+  },
+
+  "carrols_acquisition_note": {
+    "date": "2024-05-16",
+    "prior_ownership": "15% equity interest (equity method)",
+    "acquired_pct": "85%",
+    "price_per_share": 9.55,
+    "total_cash_paid_M": 543,
+    "effective_settlement_M": 15,
+    "fair_value_existing_interest_M": 90,
+    "total_consideration_M": 648,
+    "step_acquisition_gain_M": 79,
+    "debt_assumed_and_extinguished_M": 431,
+    "funded_by": "Cash on hand + $750M incremental term loan borrowings",
+    "transaction_costs_M": 11,
+    "acquired_assets": {
+      "operating_lease_assets_M": 705,
+      "operating_lease_liabilities_M": 684,
+      "reacquired_franchise_rights_M": 363
+    },
+    "ic_exclusion": {"total_assets_M": 1988, "total_revenues_M": 1171},
+    "source_pages": [870]
+  },
+
+  "debt_structure": {
+    "total_principal_carrying_M": 13651,
+    "total_fair_value_M": 13090,
+    "issuers": "1011778 B.C. Unlimited Liability Company (Parent Issuer) and New Red Finance Inc. (Co-Issuer)",
+    "debt_instruments": "Senior Notes and variable rate term loans",
+    "interest_paid_M": {"2024": 785, "2023": 761, "2022": 487},
+    "loss_early_extinguishment_M": {"2024": 33, "2023": 16},
+    "source_pages": [818]
+  },
+
+  "related_party_transactions": {
+    "3g_capital": "3G Restaurant Brands Holdings LP owns ~26% voting power of RBI",
+    "carrols_pre_acquisition": "15% equity interest prior to May 2024; franchise and lease agreements",
+    "bkc_officers_stock_interests": "Officers hold publicly traded shares in General Mills, J&J, Kraft Heinz, PepsiCo (approved suppliers)",
+    "source_pages": [10, 57]
+  },
+
+  "advertising_fund_accounting": {
+    "treatment": "Advertising contributions received must be spent on advertising, product development, marketing. Not distinct performance obligation. Consolidated with Franchise PO.",
+    "consolidated_ad_expense_M": {"2024": 1268, "2023": 1201, "2022": 1032},
+    "supplier_contributions_to_fund_pct": "8.4% of consolidated fund revenue",
+    "company_restaurant_contributions": "Same rate as franchisees, may be reduced for payments to third-party lenders",
+    "source_pages": [817, 70]
+  },
+
+  "commitments_contingencies": {
+    "letters_of_credit_M": 24,
+    "it_telecom_commitments_M": 84,
+    "advertising_commitments_M": 192,
+    "equipment_commitments_M": 23,
+    "source_pages": [845]
+  },
+
+  "share_based_compensation": {
+    "plan": "2023 Omnibus Incentive Plan",
+    "shares_available": 13641631,
+    "award_types": ["stock options", "time-vested RSUs", "performance-based RSUs"],
+    "expense_M": {"2024": 161, "2023": 177, "2022": 121},
+    "unrecognized_cost_M": 218,
+    "weighted_avg_recognition_years": 2.5,
+    "source_pages": [840]
+  },
+
+  "subsequent_events": "No specific subsequent events disclosed beyond the amendment date of January 16, 2026",
+
+  "supplier_finance_program": {
+    "description": "Tim Hortons supply chain finance program via global financial institution",
+    "confirmed_obligations_M": {"2024_end": 22, "2023_end": 36},
+    "not_applicable_to_bk_franchisees": true,
+    "source_pages": [819]
+  }
+}

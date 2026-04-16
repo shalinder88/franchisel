@@ -1,0 +1,289 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "Hyatt Place",
+  "filing_id": "637925-2025",
+  "tables": [
+    {
+      "table_id": "T5_initial_fees",
+      "item": 5,
+      "title": "Initial Fees Summary",
+      "source_pages": [16, 17, 18, 19, 20],
+      "columns": ["Fee", "Amount", "Refundable"],
+      "rows": [
+        {"Fee": "New development application fee", "Amount": "$75,000 + $500/room over 150", "Refundable": "Partially (less $7,500 if withdrawn before approval)"},
+        {"Fee": "Change of ownership application fee", "Amount": "$150,000", "Refundable": "Partially (less $7,500 if withdrawn before approval)"},
+        {"Fee": "PIP preparation fee", "Amount": "$10,000", "Refundable": "No"},
+        {"Fee": "Operator approval and onboarding", "Amount": "$10,000 (2 participants) + up to $10,000 re-entry", "Refundable": "No"},
+        {"Fee": "Comfort letter fee", "Amount": "$2,500 per letter", "Refundable": "No"},
+        {"Fee": "Pre-opening purchasing (Rosemont)", "Amount": "$85,000-$275,000", "Refundable": "No"},
+        {"Fee": "IT Project Management Services", "Amount": "$58,300 + $6,695-$11,330 expenses", "Refundable": "No"},
+        {"Fee": "Additional pre-opening advisory", "Amount": "$0-$250,000", "Refundable": "No"},
+        {"Fee": "Training fees and reimbursements", "Amount": "$15,175-$34,300 + $3,600-$7,405", "Refundable": "No"},
+        {"Fee": "Extension fee", "Amount": "$10,000", "Refundable": "Only if denied"},
+        {"Fee": "Alternative design review fee", "Amount": "$5,000-$30,000", "Refundable": "No"},
+        {"Fee": "Revenue management (pre-opening)", "Amount": "$0-$7,000", "Refundable": "No"},
+        {"Fee": "Field marketing (pre-opening)", "Amount": "$0-$16,482", "Refundable": "No"}
+      ],
+      "table_notes": ["Actual initial fees paid in FY2024 ranged from $53,250 to $228,950"]
+    },
+    {
+      "table_id": "T6_franchise_agreement_fees",
+      "item": 6,
+      "title": "Fees Under the Franchise Agreement",
+      "source_pages": [21, 22, 23, 24, 25],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Type of Fee": "Royalty Fee", "Amount": "5% of Gross Rooms Revenue", "Due Date": "10th day of each month (Payment Day)", "Remarks": "May be reduced for first 1-3 years for new construction"},
+        {"Type of Fee": "World of Hyatt program assessment", "Amount": "4% of eligible revenue (2% for on-property enrollments)", "Due Date": "Monthly", "Remarks": "Could increase if costs increase"},
+        {"Type of Fee": "Comfort letter fee", "Amount": "$2,500", "Due Date": "As incurred", "Remarks": "Per comfort letter obtained"},
+        {"Type of Fee": "Quality assurance / FIP fees", "Amount": "$5,000-$20,000 per FIP stage; BPP $45,000/year", "Due Date": "As incurred", "Remarks": "Plus reimbursement of costs"},
+        {"Type of Fee": "On-site QA inspections", "Amount": "$1,500-$2,000 per annual inspection", "Due Date": "As incurred", "Remarks": "Re-inspection $2,000"},
+        {"Type of Fee": "Additional training", "Amount": "$950 per trainer per day plus expenses", "Due Date": "As incurred", "Remarks": "Supplemental or replacement training"},
+        {"Type of Fee": "PMS subscription fees", "Amount": "$6.65 per room per month", "Due Date": "Monthly", "Remarks": ""},
+        {"Type of Fee": "Training tools and materials", "Amount": "$3.64 per guest room per year", "Due Date": "Annually", "Remarks": ""},
+        {"Type of Fee": "Owner convention", "Amount": "$2,000-$5,000 per attendee", "Due Date": "As incurred", "Remarks": "Typically annual or biennial"},
+        {"Type of Fee": "Leadership summit", "Amount": "$3,000-$6,000 per attendee", "Due Date": "As incurred", "Remarks": "Approximately every 4 years"},
+        {"Type of Fee": "Application fee for new guest rooms", "Amount": "Greater of $10,000 or $500 × new rooms", "Due Date": "When approved", "Remarks": "Only for rooms added during term"},
+        {"Type of Fee": "General Manager University", "Amount": "$2,700 per newly hired/promoted GM", "Due Date": "As incurred", "Remarks": ""},
+        {"Type of Fee": "Operator approval fee", "Amount": "$10,000-$20,000", "Due Date": "Before screening", "Remarks": "New management companies only"},
+        {"Type of Fee": "Transfer fee", "Amount": "Change of ownership application fee ($150,000)", "Due Date": "With transfer application", "Remarks": "Refund less $7,500 if disapproved"},
+        {"Type of Fee": "Fee for review of offering materials", "Amount": "$5,000", "Due Date": "When submitting", "Remarks": "Private offerings only"},
+        {"Type of Fee": "Royalty fee upon termination", "Amount": "$5,000 per day plus costs", "Due Date": "As incurred", "Remarks": "Failure to de-identify"},
+        {"Type of Fee": "Liquidated damages", "Amount": "Up to 36 months × (AMR × 8.5%)", "Due Date": "15 days after termination", "Remarks": "150% for Consequential Termination"},
+        {"Type of Fee": "Late fee and interest", "Amount": "$225 + 1.5%/month", "Due Date": "As incurred", "Remarks": "On overdue amounts"}
+      ],
+      "table_notes": [
+        "Gross Rooms Revenue includes resort/destination fees and business interruption insurance proceeds",
+        "All payments by EFT"
+      ]
+    },
+    {
+      "table_id": "T6_mandatory_services",
+      "item": 6,
+      "title": "Current System Services Charges for Mandatory Services",
+      "source_pages": [27, 28],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Type of Fee": "Commercial Services Fee", "Amount": "3.5% of Gross Rooms Revenue", "Due Date": "Payment Day", "Remarks": "Covers marketing, reservations, revenue mgmt tech, group sales, PMS, digital, other tech"},
+        {"Type of Fee": "Digital Acquisition Fee", "Amount": "1.35% of GRR through Digital Channels", "Due Date": "Payment Day", "Remarks": "Digital Channels = Hyatt.com, mobile app"},
+        {"Type of Fee": "Global distribution services", "Amount": "~$8.50 per reservation", "Due Date": "Payment Day", "Remarks": "GDS/ADS reservation fees at cost"},
+        {"Type of Fee": "Mandatory Contracts", "Amount": "$1,500-$7,500 per month", "Due Date": "Payment Day", "Remarks": "Credit card, music license, telecom agreements"},
+        {"Type of Fee": "Other corporate services", "Amount": "$500-$5,000 per month", "Due Date": "Payment Day", "Remarks": "Group sales promos, property evals, quality materials"}
+      ],
+      "table_notes": ["These are estimates and may change as Hyatt Group costs change"]
+    },
+    {
+      "table_id": "T6_non_mandatory_services",
+      "item": 6,
+      "title": "Current System Services Charges for Non-Mandatory Services",
+      "source_pages": [28, 29, 30],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"Type of Fee": "Field Marketing Program", "Amount": "$996-$2,747/month", "Due Date": "As incurred", "Remarks": "3 tier levels"},
+        {"Type of Fee": "Revenue Management Services", "Amount": "$1,000-$3,500/month", "Due Date": "Within 30 days of invoice", "Remarks": "Tactical/Essential/Premium tiers"},
+        {"Type of Fee": "Central Sales Services", "Amount": "$1,750-$7,600/month", "Due Date": "As incurred", "Remarks": "Group sales, lead specialist, transient, director of sales, admin support"},
+        {"Type of Fee": "GPGS Add-On Program", "Amount": "$3.50-$16/service interaction", "Due Date": "As incurred", "Remarks": ""},
+        {"Type of Fee": "Digital Ancillary Services", "Amount": "$1,250/month + 5% commission", "Due Date": "As incurred", "Remarks": ""},
+        {"Type of Fee": "Purchasing services", "Amount": "Varies", "Due Date": "As incurred", "Remarks": "Through Rosemont affiliate"},
+        {"Type of Fee": "HSF national sales team", "Amount": "1-6% of applicable revenue", "Due Date": "As incurred", "Remarks": "Optional; fees only on confirmed bookings"}
+      ],
+      "table_notes": ["Non-mandatory but may be required as condition of management company approval or FA negotiation"]
+    },
+    {
+      "table_id": "T7_initial_investment",
+      "item": 7,
+      "title": "Your Estimated Initial Investment",
+      "source_pages": [37, 38, 39, 40],
+      "columns": ["Type of expenditure", "Low", "High", "To whom"],
+      "rows": [
+        {"Type of expenditure": "Application fee", "Low": "$75,000", "High": "$150,000", "To whom": "Us"},
+        {"Type of expenditure": "Comfort letter fee(s)", "Low": "$0", "High": "$2,500", "To whom": "Us"},
+        {"Type of expenditure": "Alternative Design Services Review Fee", "Low": "$0", "High": "$30,000", "To whom": "Us"},
+        {"Type of expenditure": "Extension of opening deadline", "Low": "$0", "High": "$10,000", "To whom": "Us"},
+        {"Type of expenditure": "IT Project Management Services fee and expenses", "Low": "$64,995", "High": "$69,630", "To whom": "Us"},
+        {"Type of expenditure": "Signage", "Low": "$65,000", "High": "$100,000", "To whom": "Suppliers"},
+        {"Type of expenditure": "Telecommunications, security, Technology System", "Low": "$638,600", "High": "$777,650", "To whom": "Suppliers and Hyatt Corporation"},
+        {"Type of expenditure": "Architecture and design", "Low": "$315,000", "High": "$1,200,000", "To whom": "Professionals"},
+        {"Type of expenditure": "Construction, improvements, remodeling", "Low": "$13,500,000", "High": "$40,000,000", "To whom": "General contractor, suppliers, us/affiliate"},
+        {"Type of expenditure": "Furniture, fixtures, other fixed assets and equipment", "Low": "$1,845,000", "High": "$6,000,000", "To whom": "Suppliers"},
+        {"Type of expenditure": "Operating supplies and equipment", "Low": "$414,000", "High": "$1,320,000", "To whom": "Suppliers"},
+        {"Type of expenditure": "General and administrative buildout costs", "Low": "$320,000", "High": "$500,000", "To whom": "Third parties"},
+        {"Type of expenditure": "Revenue management fees", "Low": "$0", "High": "$17,500", "To whom": "Us"},
+        {"Type of expenditure": "Field marketing program fees", "Low": "$0", "High": "$24,723", "To whom": "Us"},
+        {"Type of expenditure": "Pre-opening marketing and sales expenses", "Low": "$45,000", "High": "$250,000", "To whom": "Us and third parties"},
+        {"Type of expenditure": "Liquor license", "Low": "$30,000", "High": "$400,000", "To whom": "Government/previous license holder"},
+        {"Type of expenditure": "Operator approval fees", "Low": "$0", "High": "$22,500", "To whom": "Us"},
+        {"Type of expenditure": "PIP fee", "Low": "$0", "High": "$10,000", "To whom": "Us"},
+        {"Type of expenditure": "Training expenses (to us)", "Low": "$18,775", "High": "$41,705", "To whom": "Us"},
+        {"Type of expenditure": "Training expenses (your costs)", "Low": "$20,085", "High": "$27,810", "To whom": "Suppliers"},
+        {"Type of expenditure": "Additional optional training", "Low": "$0", "High": "$250,000", "To whom": "Us"},
+        {"Type of expenditure": "Fire and life safety consultation", "Low": "$15,000", "High": "$30,000", "To whom": "Suppliers"},
+        {"Type of expenditure": "Miscellaneous pre-opening costs", "Low": "$276,000", "High": "$375,000", "To whom": "Various"},
+        {"Type of expenditure": "Additional funds - 3 months", "Low": "$276,000", "High": "$525,000", "To whom": "Various"},
+        {"Type of expenditure": "TOTAL", "Low": "$17,918,455", "High": "$52,134,018", "To whom": ""}
+      ],
+      "table_notes": [
+        "Based on new-construction hotel with 90-200 guest rooms",
+        "Excludes real estate costs (land purchase/lease)",
+        "Excludes finance charges, interest, debt service",
+        "No amounts refundable except portion of application fee"
+      ]
+    },
+    {
+      "table_id": "T19_fpr1_occ_adr_revpar",
+      "item": 19,
+      "title": "Occupancy Rate, Average Daily Rate and RevPAR for 2024",
+      "source_pages": [87],
+      "columns": ["Category", "Count", "Avg Occupancy Rate", "Avg Daily Rate", "Avg RevPAR"],
+      "rows": [
+        {"Category": "Franchised Covered Hotels", "Count": 323, "Avg Occupancy Rate": "72.0%", "Avg Daily Rate": "$158.98", "Avg RevPAR": "$114.45"},
+        {"Category": "Owned/Managed Covered Hotels", "Count": 25, "Avg Occupancy Rate": "66.7%", "Avg Daily Rate": "$148.73", "Avg RevPAR": "$99.22"},
+        {"Category": "All Covered Hotels", "Count": 348, "Avg Occupancy Rate": "71.6%", "Avg Daily Rate": "$158.30", "Avg RevPAR": "$113.37"},
+        {"Category": "Franchised Urban Hotels", "Count": 73, "Avg Occupancy Rate": "74.5%", "Avg Daily Rate": "$191.32", "Avg RevPAR": "$142.47"},
+        {"Category": "Owned/Managed Urban Hotels", "Count": 4, "Avg Occupancy Rate": "73.1%", "Avg Daily Rate": "$223.55", "Avg RevPAR": "$163.48"},
+        {"Category": "All Urban Hotels", "Count": 77, "Avg Occupancy Rate": "74.4%", "Avg Daily Rate": "$193.16", "Avg RevPAR": "$143.69"}
+      ],
+      "table_notes": ["Based on Hyatt internal unaudited data for calendar year 2024"]
+    },
+    {
+      "table_id": "T19_fpr1_statistics",
+      "item": 19,
+      "title": "Statistics for Occupancy Rate, ADR, and RevPAR for 2024",
+      "source_pages": [87],
+      "columns": ["Category", "Occ High", "Occ Low", "Occ Median", "Occ # Exceeding Avg", "ADR High", "ADR Low", "ADR Median", "ADR # Exceeding Avg", "RevPAR High", "RevPAR Low", "RevPAR Median", "RevPAR # Exceeding Avg"],
+      "rows": [
+        {"Category": "Franchised Covered", "Occ High": "96.4%", "Occ Low": "28.9%", "Occ Median": "72.2%", "Occ # Exceeding Avg": "164/50.8%", "ADR High": "$280.89", "ADR Low": "$68.79", "ADR Median": "$140.95", "ADR # Exceeding Avg": "109/33.7%", "RevPAR High": "$259.58", "RevPAR Low": "$43.29", "RevPAR Median": "$101.75", "RevPAR # Exceeding Avg": "117/36.2%"},
+        {"Category": "All Covered", "Occ High": "96.4%", "Occ Low": "28.9%", "Occ Median": "71.3%", "Occ # Exceeding Avg": "174/50%", "ADR High": "$280.89", "ADR Low": "$68.79", "ADR Median": "$139.39", "ADR # Exceeding Avg": "114/32.8%", "RevPAR High": "$259.58", "RevPAR Low": "$43.29", "RevPAR Median": "$99.85", "RevPAR # Exceeding Avg": "123/35.3%"}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T19_fpr2_smith_travel",
+      "item": 19,
+      "title": "Smith Travel Indices for 2024",
+      "source_pages": [88],
+      "columns": ["Category", "Count", "Avg Occ Rate Index", "Avg Travel Rate Index", "Avg RevPAR Index"],
+      "rows": [
+        {"Category": "Franchised Covered Hotels", "Count": 323, "Avg Occ Rate Index": 105.0, "Avg Travel Rate Index": 100.6, "Avg RevPAR Index": 106.1},
+        {"Category": "Owned/Managed Covered Hotels", "Count": 25, "Avg Occ Rate Index": 96.7, "Avg Travel Rate Index": 100.4, "Avg RevPAR Index": 97.5},
+        {"Category": "All Covered Hotels", "Count": 348, "Avg Occ Rate Index": 104.4, "Avg Travel Rate Index": 100.5, "Avg RevPAR Index": 105.4},
+        {"Category": "Franchised Urban Hotels", "Count": 73, "Avg Occ Rate Index": 105.1, "Avg Travel Rate Index": 100.0, "Avg RevPAR Index": 105.3},
+        {"Category": "All Urban Hotels", "Count": 77, "Avg Occ Rate Index": 105.0, "Avg Travel Rate Index": 100.2, "Avg RevPAR Index": 105.4}
+      ],
+      "table_notes": ["Smith Travel data independently compiled", "Index of 100 = fair share of competitive set"]
+    },
+    {
+      "table_id": "T19_fpr3_woh",
+      "item": 19,
+      "title": "World of Hyatt Revenue and Occupancy for 2024",
+      "source_pages": [90],
+      "columns": ["Category", "Count", "Avg % Revenue from WOH", "Avg % WOH Room Nights", "Avg # WOH Room Nights"],
+      "rows": [
+        {"Category": "Franchised Covered Hotels", "Count": 323, "Avg % Revenue from WOH": "50.7%", "Avg % WOH Room Nights": "42.0%", "Avg # WOH Room Nights": 15267},
+        {"Category": "All Covered Hotels", "Count": 348, "Avg % Revenue from WOH": "51.0%", "Avg % WOH Room Nights": "42.4%", "Avg # WOH Room Nights": 15331},
+        {"Category": "All Urban Hotels", "Count": 77, "Avg % Revenue from WOH": "49.4%", "Avg % WOH Room Nights": "41.1%", "Avg # WOH Room Nights": 18639}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T19_channel_mix",
+      "item": 19,
+      "title": "Reservation Channel Mix for 2024",
+      "source_pages": [91],
+      "columns": ["Category", "Count", "Direct Channel Contribution", "Indirect Channel Contribution"],
+      "rows": [
+        {"Category": "Franchised Covered Hotels", "Count": 323, "Direct Channel Contribution": "60.2%", "Indirect Channel Contribution": "39.8%"},
+        {"Category": "All Covered Hotels", "Count": 348, "Direct Channel Contribution": "60.3%", "Indirect Channel Contribution": "39.7%"},
+        {"Category": "All Urban Hotels", "Count": 77, "Direct Channel Contribution": "55.8%", "Indirect Channel Contribution": "44.2%"}
+      ],
+      "table_notes": ["Direct = electronic rooming list, GPGS, Hyatt.com/app", "Indirect = GDS, third-party OTAs"]
+    },
+    {
+      "table_id": "T20_systemwide_summary",
+      "item": 20,
+      "title": "Table No. 1 — Systemwide Outlet Summary (2022-2024)",
+      "source_pages": [93],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"Outlet Type": "Franchised", "Year": 2022, "Start of Year": 309, "End of Year": 309, "Net Change": 0},
+        {"Outlet Type": "Franchised", "Year": 2023, "Start of Year": 309, "End of Year": 317, "Net Change": 8},
+        {"Outlet Type": "Franchised", "Year": 2024, "Start of Year": 317, "End of Year": 318, "Net Change": 1},
+        {"Outlet Type": "Company-Owned", "Year": 2022, "Start of Year": 23, "End of Year": 24, "Net Change": 1},
+        {"Outlet Type": "Company-Owned", "Year": 2023, "Start of Year": 24, "End of Year": 24, "Net Change": 0},
+        {"Outlet Type": "Company-Owned", "Year": 2024, "Start of Year": 24, "End of Year": 24, "Net Change": 0},
+        {"Outlet Type": "Total", "Year": 2022, "Start of Year": 332, "End of Year": 333, "Net Change": 1},
+        {"Outlet Type": "Total", "Year": 2023, "Start of Year": 333, "End of Year": 341, "Net Change": 8},
+        {"Outlet Type": "Total", "Year": 2024, "Start of Year": 341, "End of Year": 342, "Net Change": 1}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T20_transfers",
+      "item": 20,
+      "title": "Table No. 2 — Transfers (2022-2024)",
+      "source_pages": [93, 94, 95, 96],
+      "columns": ["Year", "Total Transfers"],
+      "rows": [
+        {"Year": 2022, "Total Transfers": 27},
+        {"Year": 2023, "Total Transfers": 14},
+        {"Year": 2024, "Total Transfers": 19}
+      ],
+      "table_notes": ["Excludes organizational restructurings where ultimate ownership/control does not change"]
+    },
+    {
+      "table_id": "T20_projected_openings",
+      "item": 20,
+      "title": "Table No. 5 — Projected Openings as of December 31, 2024",
+      "source_pages": [105, 106],
+      "columns": ["Metric", "Value"],
+      "rows": [
+        {"Metric": "Franchise agreements signed but not opened", "Value": 72},
+        {"Metric": "Projected new franchised outlets in next fiscal year", "Value": 7},
+        {"Metric": "Projected new company-owned outlets in next fiscal year", "Value": 0}
+      ],
+      "table_notes": ["Pipeline states include CA (19), TX (6), FL (5), TN (4), AZ (3), MI (3), MT (3), NC (3)"]
+    },
+    {
+      "table_id": "T21_income_statement",
+      "item": 21,
+      "title": "Hyatt Hotels Corporation — Consolidated Statement of Income",
+      "source_pages": [114],
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"Line Item": "Total revenues", "2024": "$6,648M", "2023": "$6,667M", "2022": "$5,891M"},
+        {"Line Item": "Gross fees", "2024": "$1,099M", "2023": "$970M", "2022": "$808M"},
+        {"Line Item": "Net fees", "2024": "$1,030M", "2023": "$923M", "2022": "$777M"},
+        {"Line Item": "General and administrative", "2024": "$548M", "2023": "$578M", "2022": "$435M"},
+        {"Line Item": "Depreciation and amortization", "2024": "$333M", "2023": "$397M", "2022": "$426M"},
+        {"Line Item": "Interest expense", "2024": "($180M)", "2023": "($145M)", "2022": "($150M)"},
+        {"Line Item": "Gains on real estate sales", "2024": "$1,245M", "2023": "$18M", "2022": "$263M"},
+        {"Line Item": "Asset impairments", "2024": "($213M)", "2023": "($30M)", "2022": "($38M)"},
+        {"Line Item": "Income before income taxes", "2024": "$1,563M", "2023": "$310M", "2022": "$363M"},
+        {"Line Item": "Net income", "2024": "$1,296M", "2023": "$220M", "2022": "$455M"},
+        {"Line Item": "EPS diluted", "2024": "$12.65", "2023": "$2.05", "2022": "$4.09"}
+      ],
+      "table_notes": ["Audited by Deloitte & Touche LLP", "2024 net income heavily influenced by $1,245M real estate gains"]
+    },
+    {
+      "table_id": "T21_balance_sheet",
+      "item": 21,
+      "title": "Hyatt Hotels Corporation — Consolidated Balance Sheet",
+      "source_pages": [116],
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"Line Item": "Cash and cash equivalents", "2024": "$1,011M", "2023": "$881M"},
+        {"Line Item": "Total current assets", "2024": "$2,733M", "2023": "$2,130M"},
+        {"Line Item": "Property and equipment, net", "2024": "$1,689M", "2023": "$2,340M"},
+        {"Line Item": "Goodwill", "2024": "$2,541M", "2023": "$3,205M"},
+        {"Line Item": "Intangibles, net", "2024": "$2,167M", "2023": "$1,670M"},
+        {"Line Item": "Total assets", "2024": "$13,324M", "2023": "$12,833M"},
+        {"Line Item": "Current maturities of long-term debt", "2024": "$456M", "2023": "$751M"},
+        {"Line Item": "Long-term debt", "2024": "$3,326M", "2023": "$2,305M"},
+        {"Line Item": "Total liabilities", "2024": "$9,498M", "2023": "$9,266M"},
+        {"Line Item": "Total stockholders equity", "2024": "$3,547M", "2023": "$3,564M"},
+        {"Line Item": "Total equity", "2024": "$3,826M", "2023": "$3,567M"}
+      ],
+      "table_notes": ["Long-term debt increased from $2,305M to $3,326M (+$1,021M)", "Goodwill decreased $664M (includes $110M impairment)"]
+    }
+  ]
+}

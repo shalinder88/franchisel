@@ -1,0 +1,146 @@
+{
+  "enrichment_version": "v2",
+  "filing_id": "637919-2025",
+  "brand": "Taco Cabana",
+  "enrichment_date": "2026-04-15",
+  "item21_financial_structure_detail": {
+    "entity_name": "Taco Cabana Franchising, Inc.",
+    "entity_type": "Texas S-corporation",
+    "shares_authorized": 100,
+    "shares_outstanding": 100,
+    "par_value": "no par value",
+    "parent_contribution": 500000,
+    "parent_entity": "Taco Cabana, Inc.",
+    "ip_license": {
+      "licensor": "Texas Taco Cabana, L.P.",
+      "term": "10 years, auto-renewing",
+      "royalty_to_licensor": "royalty-free",
+      "franchisee_protection_on_termination": true
+    },
+    "related_party_entity": "Under common control (unnamed in notes)",
+    "related_party_transactions": {
+      "fy2024_advances": 757261,
+      "fy2024_repayments": 183518,
+      "fy2024_net_advance": 573743,
+      "reclassification_to_equity": -423034,
+      "post_fy2024_advances": 700000,
+      "cumulative_outflow_through_jan2025": "~$1,460,000"
+    },
+    "shared_services": {
+      "description": "Management, administrative, and operational services from affiliate",
+      "expense_recorded": false,
+      "note": "No expense recorded — P&L understates true operating costs"
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet_fy2024": {
+      "cash": 562937,
+      "accounts_receivable": 84803,
+      "intangible_assets_net": 137373,
+      "total_assets": 785113,
+      "accounts_payable": 0,
+      "total_liabilities": 0,
+      "paid_in_capital": 500000,
+      "retained_earnings": 285113,
+      "total_equity": 785113
+    },
+    "income_statement_fy2024": {
+      "royalty_revenue": 741061,
+      "advertising_fund_revenue": 154051,
+      "total_revenue": 895112,
+      "advertising_expense": 0,
+      "general_and_administrative": 181715,
+      "total_expenses": 181715,
+      "net_income": 713397
+    },
+    "cash_flow_fy2024": {
+      "net_income": 713397,
+      "amortization": 13336,
+      "operating_cash_flow": 636680,
+      "advances_to_related_party": -757261,
+      "payments_from_related_party": 183518,
+      "financing_cash_flow": -573743,
+      "net_change_in_cash": 62937,
+      "ending_cash": 562937
+    },
+    "balance_sheet_fy2023": {
+      "cash": 500000,
+      "total_assets": 500000,
+      "accounts_payable": 5250,
+      "total_liabilities": 5250,
+      "total_equity": 494750
+    },
+    "income_statement_fy2023": {
+      "total_revenue": 0,
+      "general_and_administrative": 5250,
+      "net_loss": -5250
+    },
+    "intangible_assets": {
+      "description": "Franchise agreements transferred from related party",
+      "gross_value": 150709,
+      "accumulated_amortization": 13336,
+      "net_value": 137373,
+      "amortization_period_years": 10,
+      "annual_amortization": 20000,
+      "future_amortization": {
+        "2025": 20000,
+        "2026": 20000,
+        "2027": 20000,
+        "2028": 20000,
+        "2029": 20000,
+        "thereafter": 37373,
+        "total": 137373
+      }
+    },
+    "advertising_fund": {
+      "opening_balance_fy2024": 0,
+      "fees_collected": 154051,
+      "expenses": 154051,
+      "closing_balance_fy2024": 0,
+      "note": "Fund breaks even — all collected fees spent"
+    }
+  },
+  "item6_fee_detail": {
+    "ongoing_percentage_fees": [
+      {"name": "Royalty", "rate": 5.0, "base": "Gross Sales", "frequency": "weekly"},
+      {"name": "National Brand Fund", "rate": 3.0, "base": "Gross Sales", "frequency": "weekly"},
+      {"name": "Local Marketing", "rate": 1.0, "base": "Gross Sales", "frequency": "as incurred"}
+    ],
+    "fixed_recurring_fees": [
+      {"name": "Technology Fee", "amount": 1840, "frequency": "monthly", "annual": 22080}
+    ],
+    "event_driven_fees": [
+      {"name": "Transfer Fee (FA)", "amount": 10000, "trigger": "transfer of franchise"},
+      {"name": "Transfer Fee (DA)", "amount": "10000 per undeveloped location", "trigger": "transfer of development rights"},
+      {"name": "Successor Franchise Fee", "amount": "then-current IFF", "trigger": "renewal"},
+      {"name": "Additional Training", "amount": "250/day/trainer", "trigger": "additional training requested/required"},
+      {"name": "Audit/Inspection", "amount": "full cost", "trigger": "reporting failure or >2% understatement"},
+      {"name": "QA Audit Failure", "amount": "full cost", "trigger": "failed QA audit"},
+      {"name": "New Supplier Testing", "amount": "actual cost", "trigger": "supplier approval request"}
+    ],
+    "fee_burden_at_median_sales": {
+      "median_gross_sales": 1451946,
+      "royalty_5pct": 72597,
+      "brand_fund_3pct": 43558,
+      "local_marketing_1pct": 14519,
+      "technology_fee_annual": 22080,
+      "total_annual": 152754,
+      "total_as_pct_of_sales": 10.5
+    }
+  },
+  "depth_pass_additions": {
+    "financial_notes_depth": "RT_depth_financial_notes.json",
+    "contract_burdens_depth": "RT_depth_contract_burdens.json",
+    "promotion_audit": "RT_depth_promotion_audit.json (9 facts promoted)",
+    "state_addenda_depth": "RT_depth_state_addenda_promotion.json (26 overrides across 15 states)",
+    "jury_waiver": true,
+    "force_majeure": false,
+    "crisis_control_by_franchisor": true,
+    "customer_data_ownership_by_franchisor": true,
+    "shared_services_unpriced": true,
+    "manual_pages": 1095,
+    "typical_opening_timeline_months": 15,
+    "site_selection_deadline_days_first": 270,
+    "site_selection_deadline_days_subsequent": 180
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "depth_pass": "contract_burdens",
+  "extraction_date": "2026-04-15",
+  "filing_id": "637925-2025",
+  "franchise_agreement_exhibit": "C",
+  "source_pages": [195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260],
+  "grant_and_term": {
+    "grant": "Non-exclusive franchise to operate one Brand Hotel at approved site",
+    "term": "20 years from first day of month Hotel opens",
+    "successor_franchise": "10-year term on then-current terms (may be materially different)",
+    "term_extension_for_casualty": true
+  },
+  "fee_obligations": {
+    "royalty": "5% of Gross Rooms Revenue monthly",
+    "system_services_charges": "As determined by Hyatt Group (currently 3.5% Commercial Services + 1.35% Digital Acquisition)",
+    "world_of_hyatt": "4% of eligible WOH revenue (2% for on-property enrollments)",
+    "electronic_payments_required": true,
+    "ffe_reserve": {"year1": "3% GRR", "year2": "4% GRR", "ongoing": "5% GRR"}
+  },
+  "site_selection_and_construction": {
+    "site_approval_required": true,
+    "franchisor_does_not_select_site": true,
+    "design_construction_standards": "Franchisor-prescribed, may be modified unilaterally",
+    "plan_approval_required": true,
+    "pip_required_for_conversions": true,
+    "no_material_changes_without_consent": true,
+    "opening_deadline_new": "24 months after signing FA",
+    "opening_deadline_conversion": "6 months after signing FA"
+  },
+  "training_and_operations": {
+    "core_management_required": true,
+    "gm_full_time_at_hotel": true,
+    "management_company_approval": true,
+    "operator_approval_revocable": true,
+    "fb_operator_approval": true,
+    "system_standards_3614_pages": true,
+    "unilateral_modification_right": true
+  },
+  "termination_triggers": {
+    "immediate_24h": "Serious threat to public health or safety",
+    "10_day_cure": ["Failure to provide real estate documents", "Failure to provide evidence of insurance", "Failure to pay amounts owed"],
+    "30_day_cure": ["Failure to pay taxes", "Failure to develop Hotel per deadlines", "Failure to pay Providers", "Failure to comply with related agreements", "Other defaults not listed as non-curable"],
+    "60_day_cure": ["Failure to maintain Guarantor Monetary Threshold"],
+    "non_curable": ["Bankruptcy-related events", "Failure to discharge judgments >$100K", "Ceasing operations", "Loss of Hotel possession", "Contesting franchisor IP", "Unauthorized transfer", "Felony conviction", "Action reflecting adversely on franchisor/marks", "False books or reports", "Unauthorized Confidential Information use", "Violation of trade restriction laws", "Repeated defaults"]
+  },
+  "transfer_restrictions": {
+    "all_transfers_require_approval": true,
+    "non_controlling_interest_exception": true,
+    "estate_planning_exception": true,
+    "mortgage_to_lender_permitted": true,
+    "conditions": ["Transferee qualifies", "All amounts paid", "Training completed", "Sign then-current agreement (materially different possible)", "General release", "Renovation commitment", "Capital structure acceptable"],
+    "right_of_first_offer": "Only for strategic markets (Exhibit C)",
+    "death_disability_transfer": "6 months"
+  },
+  "default_and_cross_default": {
+    "repeated_defaults_non_curable": true,
+    "suspension_rights": ["CRS/GDS/ADS access", "Advertising materials", "Hotel System Website listing", "Fee reductions", "Support services"],
+    "consequential_termination": {
+      "triggers": ["Transfer to Competitor", "3+ franchise agreement defaults by same owner group"],
+      "liquidated_damages_multiplier": "150%"
+    }
+  },
+  "noncompete": {
+    "during_term": "No formal covenant; franchisee and mgmt co cannot be Competing Brand Owner",
+    "post_term": "None",
+    "competing_brand_definition": "4+ hotels under that concept's trade name worldwide, ADR at least 60% of Brand Hotel US ADR"
+  },
+  "guaranty": {
+    "personal_guaranty_required": true,
+    "scope": "All obligations — monetary and non-monetary, including confidentiality and arbitration",
+    "guarantor_monetary_threshold": true,
+    "gmt_components": ["Total assets less total liabilities (excluding Hotel)", "Liquid assets (cash, equivalents, marketable securities)"],
+    "annual_cpi_escalation": true,
+    "annual_financial_statements_required": true
+  },
+  "liquidated_damages": {
+    "formula": "Lesser of 36 months or remaining term × (AMR × 5% + AMR × 3.5%)",
+    "consequential_multiplier": "150%",
+    "pre_opening_amr": "Average monthly GRR per available room for all Brand Hotels × approved rooms",
+    "casualty_termination_fee": "Lesser of liquidated damages or Net Recovery"
+  },
+  "dispute_resolution": {
+    "arbitration_mandatory": true,
+    "arbitration_location": "Within 10 miles of franchisor principal address (Chicago, IL)",
+    "governing_law": "Illinois (subject to FAA, federal law, state overrides)",
+    "litigation_forum": "Illinois (subject to arbitration)",
+    "jury_trial_waiver": "Likely in agreement (subject to state overrides)",
+    "class_action_waiver": "Likely in agreement"
+  },
+  "insurance_requirements": {
+    "franchisor_specified_amounts": true,
+    "failure_to_obtain": "Franchisor may obtain on franchisee's behalf at franchisee cost + fee ($200/room/year)"
+  },
+  "indemnification": {
+    "franchisee_must_indemnify": true,
+    "scope": "All claims arising from application, development, operation, breach, failure to open on time, proportionate share of Hotel's defense costs"
+  },
+  "force_majeure": {
+    "casualty_provisions": true,
+    "damage_threshold": "Greater of 60% of market value or insurance proceeds",
+    "below_threshold": "Must repair within 4 months, reopen within 24 months",
+    "above_threshold": "May elect to terminate with termination fee",
+    "term_extension_during_closure": true
+  },
+  "distinctive_clauses": [
+    "Guarantor Monetary Threshold with CPI escalation — unusual financial guarantee obligation",
+    "Right of first offer only in strategic markets — selective ROFO instead of universal",
+    "Competing Brand Owner restriction applies to management company, not just franchisee",
+    "Guest Information belongs to franchisor — franchisee retains limited post-term use rights",
+    "All Innovations are works-for-hire owned by franchisor",
+    "No post-term noncompete — favorable for franchisee",
+    "De-identification penalty of $5,000/day — punitive",
+    "Consequential Termination 150% multiplier for transfer to Competitor",
+    "System Services Cost allocation at franchisor discretion — opaque"
+  ]
+}

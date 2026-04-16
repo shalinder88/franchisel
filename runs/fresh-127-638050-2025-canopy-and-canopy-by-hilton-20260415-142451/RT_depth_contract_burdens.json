@@ -1,0 +1,130 @@
+{
+  "extraction_date": "2026-04-15",
+  "brand": "Canopy by Hilton",
+  "depth_pass": "2_contract_burdens",
+  "source_exhibits": ["D (Franchise Agreement)", "E (Guaranty)", "G (HITS Agreement)"],
+  "fa_structure": {
+    "sections": 20,
+    "total_pages_est": 42,
+    "key_sections": ["1.0 Definitions", "2.0 Grant of License", "3.0 Term", "4.0 Our Responsibilities", "5.0 Your Responsibilities", "6.0 Hotel Work", "7.0 Management", "8.0 Payment of Fees", "9.0 Proprietary Rights", "10.0 Reports/Records/Audits/Privacy", "11.0 Condemnation/Casualty", "12.0 Transfers", "13.0 Termination", "14.0 Indemnity", "15.0 Relationship of Parties", "16.0 Miscellaneous", "17.0 Waiver of Jury Trial and Punitive Damages", "18.0 Acknowledgement of Exemption", "19.0 Notice of Intent to Market", "20.0 Key Money/Development Incentive Note"]
+  },
+  "burdens_extracted": [
+    {
+      "category": "grant_and_term",
+      "provisions": [
+        {"clause": "2.1", "burden": "Non-exclusive license at specified location only", "severity": "high"},
+        {"clause": "2.2", "burden": "Franchisor reserves all rights to operate, franchise any business including competitors, anywhere, anytime", "severity": "high"},
+        {"clause": "2.3", "burden": "Restricted Area Provision optional, time-limited, extensive carve-outs", "severity": "high"},
+        {"clause": "3.0", "burden": "New construction: 23 years. Conversion: 10-20 years. Non-renewable. Re-licensing at sole discretion with materially different terms possible.", "severity": "critical"}
+      ]
+    },
+    {
+      "category": "fee_and_payment",
+      "provisions": [
+        {"clause": "8.1", "burden": "Monthly royalty 5% GRR + program fee 4% GRR (may increase +1% over term)", "severity": "high"},
+        {"clause": "8.2", "burden": "Must transmit payments by wire/electronic transfer at franchisee's cost", "severity": "low"},
+        {"clause": "8.3", "burden": "Must pay all other fees as specified in FDD Items 5 and 6", "severity": "high"},
+        {"clause": "8.4", "burden": "Must reimburse franchisor for sales/use/gross receipts taxes on franchise payments", "severity": "medium"},
+        {"clause": "8.7", "burden": "Franchisor may set off any amount owed against any payment or credit to franchisee (including affiliate obligations)", "severity": "medium"}
+      ]
+    },
+    {
+      "category": "site_and_construction",
+      "provisions": [
+        {"clause": "6.1", "burden": "Must obtain franchisor consent for architect, designer, GC, major subs", "severity": "medium"},
+        {"clause": "6.1.2-4", "burden": "Plans must be approved; no changes without advance consent; no construction until approved", "severity": "medium"},
+        {"clause": "6.3", "burden": "New dev: start within 16 months, complete within 36 months of approval. Extensions $10K each.", "severity": "medium"},
+        {"clause": "6.4", "burden": "May not open without written authorization. Unauthorized opening = $5,000/day liquidated damages.", "severity": "high"},
+        {"clause": "6.6", "burden": "Must comply with FRCM renovation schedule and any required refurbishment at franchisee's cost", "severity": "high"}
+      ]
+    },
+    {
+      "category": "training_and_operations",
+      "provisions": [
+        {"clause": "4.1", "burden": "Must complete required training programs and pay fees plus travel/lodging", "severity": "medium"},
+        {"clause": "5.1", "burden": "29 operational requirements including: Standards compliance, approved management, QA inspections, insurance, advertising, cross-marketing restrictions, approved products only, 24/7 operation, Hilton Honors participation, computer systems, approved consultants (5 types), etc.", "severity": "high"},
+        {"clause": "5.1.29", "burden": "May not be licensor/franchisor of competing brand during term", "severity": "medium"},
+        {"clause": "7.0", "burden": "Must use approved management or approved Management Company. If MC becomes unsuitable, 90 days to replace.", "severity": "high"}
+      ]
+    },
+    {
+      "category": "termination_triggers",
+      "provisions": [
+        {"clause": "13.1", "burden": "Curable defaults: payment (10 days), construction timing (10 days), insurance (10 days), other FA breach (30 days)", "severity": "high"},
+        {"clause": "13.2", "burden": "16 categories of non-curable defaults allowing immediate termination without cure opportunity", "severity": "critical"},
+        {"clause": "13.3", "burden": "Interim remedies on default: suspension from Reservation Service, directory removal, software disabling, fee accommodation revocation", "severity": "critical"},
+        {"clause": "13.4", "burden": "Liquidated damages on termination: System or Hotel avg monthly royalty × up to 60 months. Forfeiture of all incentives.", "severity": "critical"},
+        {"clause": "13.5", "burden": "Actual damages recoverable when franchisee operates competitor hotel at site within timeframes", "severity": "high"}
+      ]
+    },
+    {
+      "category": "transfer_restrictions",
+      "provisions": [
+        {"clause": "12.2", "burden": "All transfers prohibited unless expressly permitted. Two types: Permitted Transfers (no control change) and COO Transfers.", "severity": "high"},
+        {"clause": "12.2.2", "burden": "COO Transfer: 60 days notice, $150K fee, transferee must sign current FA, agree to PIP, meet all current requirements. No transfer to Competitor or Sanctioned Person.", "severity": "high"},
+        {"clause": "12.4", "burden": "Mortgages: simple hotel mortgage without consent if sole borrower and not cross-collateralized. All other mortgages require consent; may require lender comfort letter ($3,500 fee) with estoppel and general release.", "severity": "medium"}
+      ]
+    },
+    {
+      "category": "noncompete",
+      "provisions": [
+        {"clause": "5.1.29", "burden": "During term: may not own or be licensor/franchisor of competing brand", "severity": "medium"},
+        {"clause": "7.2-7.3", "burden": "Management Company restrictions: if MC becomes Competitor, 90 days to replace", "severity": "medium"},
+        {"clause": "Post-term", "burden": "NO post-term noncompete — explicitly not applicable", "severity": "franchisee_favorable"}
+      ]
+    },
+    {
+      "category": "guaranty",
+      "provisions": [
+        {"clause": "8.6 + Exhibit E", "burden": "Guaranty required from principals/owners; may include spouse. Scope: all franchisee obligations under FA. Additional guaranty may be required on default notice or as condition of lender comfort letter.", "severity": "high"},
+        {"clause": "Guaranty form", "burden": "Personal, unlimited guaranty of all FA obligations", "severity": "critical"}
+      ]
+    },
+    {
+      "category": "liquidated_damages",
+      "provisions": [
+        {"clause": "6.4.4.1", "burden": "Unauthorized opening: $5,000/day + costs", "severity": "high"},
+        {"clause": "13.4", "burden": "Pre-opening termination (franchisee builds competitor within 1 year): System Avg Monthly Royalty × 60", "severity": "critical"},
+        {"clause": "13.4", "burden": "Post-opening termination (<2 years): Greater of Hotel or System Avg × 60", "severity": "critical"},
+        {"clause": "13.4", "burden": "Post-opening termination (>2 years, before final 60 months): Hotel Avg × 60", "severity": "critical"},
+        {"clause": "13.4", "burden": "Final 60 months: Hotel Avg × remaining months", "severity": "high"}
+      ]
+    },
+    {
+      "category": "venue_and_dispute",
+      "provisions": [
+        {"clause": "16.2.1", "burden": "Governing law: New York (without choice-of-law)", "severity": "medium"},
+        {"clause": "16.2.2", "burden": "Venue: E.D. Va. (Alexandria) or Fairfax County, VA or New York, NY. Franchisor may sue where hotel is located.", "severity": "high"},
+        {"clause": "17.0", "burden": "WAIVER OF JURY TRIAL AND PUNITIVE DAMAGES — both parties waive right to jury trial and right to seek punitive, exemplary, consequential, or special damages", "severity": "critical"}
+      ]
+    },
+    {
+      "category": "indemnification",
+      "provisions": [
+        {"clause": "14.0", "burden": "Franchisee must indemnify, hold harmless, and defend franchisor, Hilton Worldwide, and all affiliates/officers/directors/employees/agents against any claims arising from hotel operations or franchisee actions. Includes attorney fees and costs.", "severity": "high"}
+      ]
+    },
+    {
+      "category": "general_release",
+      "provisions": [
+        {"clause": "16.8", "burden": "Upon signing FA, franchisee releases franchisor and all affiliates from all claims existing at time of execution (except FDD representation claims). This is a pre-signing release, not just a renewal/transfer release.", "severity": "critical"}
+      ]
+    },
+    {
+      "category": "insurance",
+      "provisions": [
+        {"clause": "5.1.22", "burden": "Must maintain minimum insurance per Manual (confidential). Must name franchisor as additional insured. If franchisee fails, franchisor may purchase and charge franchisee.", "severity": "medium"}
+      ]
+    },
+    {
+      "category": "distinctive_clauses",
+      "provisions": [
+        {"clause": "16.6", "burden": "Consent/Business Judgment: Franchisor may withhold consent in its business judgment. Franchisee's sole remedy for unreasonable withholding is specific performance — NO money damages.", "severity": "high"},
+        {"clause": "16.10", "burden": "Economic Conditions Not a Defense: economic downturn, recession, or adverse market conditions are not a defense to franchisee's obligations", "severity": "high"},
+        {"clause": "16.18", "burden": "Confidentiality of Negotiated Terms: franchisee must keep all negotiated economic terms confidential", "severity": "medium"},
+        {"clause": "10.4", "burden": "Ownership of Information: franchisor owns all data generated by or stored in computer systems", "severity": "high"},
+        {"clause": "5.1.24", "burden": "May lease/sublease commercial space in hotel subject to franchisor review and approval of business and brand/concept", "severity": "low"}
+      ]
+    }
+  ]
+}

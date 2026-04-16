@@ -1,0 +1,147 @@
+{
+  "depth_pass": "financial_notes",
+  "entity": "FS Brands, Inc.",
+  "source_pages": [98, 112],
+  "notes_count": 16,
+  "accounting_policies": {
+    "basis_of_preparation": "US GAAP",
+    "basis_of_consolidation": "All subsidiaries consolidated; intercompany balances eliminated",
+    "revenue_recognition": {
+      "franchise_fees": "Deferred and recognized over the term of the franchise agreement (5-10 years)",
+      "royalties": "Recognized based on contracted percentage of franchisee revenue as reported",
+      "services": "Recognized as services are provided",
+      "construction": "Percentage of completion method (costs incurred / total estimated costs)",
+      "advertising_fund": "Contributions reported as revenue when related franchisee revenues occur; expenditures as incurred; excess accrued as unearned revenue",
+      "contract_costs": "External broker costs and sales commissions capitalized and amortized over FA life. FY2024 amortization: $3,419,647. Closing capitalized amount: $12,683,884"
+    },
+    "depreciation": {
+      "method": "Straight-line",
+      "useful_lives": {
+        "production_equipment": "5-7 years",
+        "vehicles": "5 years",
+        "furniture_fixtures": "5-7 years",
+        "computers_equipment": "3-5 years",
+        "leasehold_improvements": "Lesser of useful life or lease term"
+      },
+      "fy2024_depreciation": 19418258,
+      "fy2023_depreciation": 19480882
+    },
+    "goodwill_intangibles": {
+      "goodwill": "Not amortized. Tested annually (Aug 1) or when indicators present. Market multiple of EBITDA method. No impairment in 2024.",
+      "intangible_useful_lives": {
+        "customer_relationships": "4-20 years",
+        "trademarks": "15-30 years",
+        "franchise_agreements": "Pattern of use"
+      },
+      "fy2024_amortization": 7852638,
+      "fy2023_amortization": 9707496,
+      "projected_amortization": {
+        "2025": 7012732,
+        "2026": 6179158,
+        "2027": 4232386,
+        "2028": 3302454,
+        "2029": 3075966
+      }
+    },
+    "impairment": "Long-lived assets reviewed when indicators present. Undiscounted cash flow test, then fair value if impaired. No impairment charges reported.",
+    "leases": {
+      "type": "Operating leases for offices, copiers, equipment",
+      "remaining_terms": "1-10 years, some with 8-year extension options",
+      "fy2024_lease_expense": 18443863,
+      "fy2023_lease_expense": 15076940,
+      "weighted_avg_remaining_term": "5.54 years",
+      "weighted_avg_discount_rate": "6.57%",
+      "maturity_schedule": {
+        "2025": 16418165,
+        "2026": 17887750,
+        "2027": 13834980,
+        "2028": 11300287,
+        "2029_and_after": 25469061,
+        "total": 84910243
+      }
+    },
+    "income_taxes": {
+      "method": "Asset and liability method",
+      "statutory_rate": 0.265,
+      "effective_rate_2024": 0.279,
+      "effective_rate_2023": 0.260,
+      "rate_reconciliation_items": "Permanent differences, temporary differences, NOLs, state/provincial rate differentials, tax adjustments",
+      "deferred_tax_assets_2024": 12234003,
+      "deferred_tax_liabilities_2024": 21863181,
+      "valuation_allowance_2024": 1320462,
+      "net_deferred_liability_2024": 10949640,
+      "open_tax_years": "2016 and later"
+    },
+    "cash_equivalents": "Investments with initial maturity ≤3 months (money market funds, time deposits)",
+    "restricted_cash": "Cash restricted for marketing fund use. FY2024: $728,048",
+    "inventories": "Finished products, accessories, components at lower of cost (FIFO) or NRV. WIP: percentage of completion.",
+    "deferred_revenue": "Customer deposits (California Closets) and services not yet provided",
+    "nci_accounting": "Redeemable securities at greater of redemption amount or inception amount. Recorded outside equity. Formula price = fixed multiple of average annual EBITDA."
+  },
+  "material_notes": {
+    "related_party_transactions": {
+      "management_fees": {"to": "FirstService Corporate HQ", "2024": 7540176, "2023": 6772822},
+      "note_receivable_from_affiliate": {"from": "FirstService Restoration", "amount": 7232377, "nature": "Sale of operating unit proceeds"},
+      "intercompany_payable": {"to": "FirstService Corporation", "2024": 21744502, "2023": 23166961, "nature": "Acquisition funding and interest"}
+    },
+    "notes_receivable": {
+      "total_2024": 10134810,
+      "interest_rates": "0% to 8% (franchisees); 2.5% (NCI stockholders)",
+      "nci_amount": 473038,
+      "maturity_schedule": {"2025": 753999, "2026": 7819850, "2027": 410252, "2028": 246474, "2029": 37453, "thereafter": 866782}
+    },
+    "acquisitions_2024": {
+      "count": 5,
+      "description": "4 CertaPro franchises (CA, IL x3) + 1 Paul Davis franchise (CO)",
+      "cash_consideration": 2992114,
+      "contingent_consideration": 505800,
+      "goodwill_acquired": 1912611,
+      "intangibles_acquired": 1547097
+    },
+    "acquisitions_2023": {
+      "count": 7,
+      "cash_consideration": 22647371,
+      "contingent_consideration": 1004064,
+      "goodwill_acquired": 15121509,
+      "intangibles_acquired": 10870338
+    },
+    "contingent_consideration": {
+      "liability_2024": 3983042,
+      "max_undiscounted": 4228971,
+      "expiry": "Extending to September 2025",
+      "paid_2024": 670893
+    },
+    "pension": {
+      "type": "401(k) defined contribution",
+      "employer_contribution_2024": 4291815,
+      "employer_contribution_2023": 3824115
+    },
+    "credit_losses": {
+      "write_offs_2024": 2968464,
+      "write_offs_2023": 1325985,
+      "allowance_2024": 4769460,
+      "allowance_2023": 3822098
+    },
+    "nci_reconciliation": {
+      "beginning_2024": 66979653,
+      "share_of_earnings": 2463477,
+      "redemption_increment": 5093012,
+      "distributions": -2692391,
+      "purchases": -675508,
+      "sales": 1308785,
+      "ending_2024": 72477028
+    },
+    "subsequent_events": "None disclosed",
+    "new_accounting_standards": {
+      "ASU_2024_03": "Disaggregation of Income Statement Expenses — effective Jan 1, 2027",
+      "ASU_2023_09": "Improvements to Income Tax Disclosures — effective Jan 1, 2025"
+    },
+    "variable_interest_entities": "None disclosed",
+    "fair_value_measurements": {
+      "notes_receivable_carrying": 10134810,
+      "notes_receivable_fair_value": 8664270,
+      "contingent_consideration": 3983042,
+      "level": "Level 3 (unobservable inputs)"
+    }
+  }
+}

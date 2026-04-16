@@ -1,0 +1,124 @@
+{
+  "_enrichment_version": "v2",
+  "_enrichment_date": "2026-04-15",
+  "_enrichment_scope": "item21 financial structure detail, item21 statement detail, item6 fee detail",
+  "item21_financial_structure": {
+    "reporting_entity": "Hyatt Hotels Corporation",
+    "public_company": true,
+    "ticker": "H",
+    "exchange": "NYSE",
+    "par_value": 0.01,
+    "class_a_shares_outstanding": 42613090,
+    "class_b_shares_outstanding": 53531579,
+    "fiscal_year_end": "December 31",
+    "segments": ["Management and franchising", "Owned and leased", "Distribution"],
+    "asset_light_strategy": true,
+    "real_estate_dispositions_2024_M": 1421,
+    "share_repurchases_2024_M": 1190,
+    "dividends_2024_M": 60,
+    "debt_structure": {
+      "current_maturities_M": 456,
+      "long_term_debt_M": 3326,
+      "new_notes_2025": {
+        "2028_notes": {"rate": "5.050%", "principal_M": 500},
+        "2032_notes": {"rate": "5.750%", "principal_M": 500}
+      },
+      "purpose_new_debt": "Fund Playa Hotels & Resorts acquisition"
+    },
+    "loyalty_program": {
+      "name": "World of Hyatt",
+      "deferred_revenue_M": 1333,
+      "segregated_accounts": true,
+      "independent_audit": true
+    },
+    "goodwill_M": 2541,
+    "goodwill_impairment_2024_M": 110,
+    "intangibles_M": 2167,
+    "related_party_legal_fees_M": 23
+  },
+  "item21_statement_detail": {
+    "income_statement": {
+      "years": [2024, 2023, 2022],
+      "total_revenues_M": [6648, 6667, 5891],
+      "net_fees_M": [1030, 923, 777],
+      "franchise_and_other_fees_M": [458, 364, 297],
+      "owned_leased_revenue_M": [1174, 1339, 1235],
+      "distribution_revenue_M": [1023, 1047, 986],
+      "reimbursed_costs_M": [3352, 3058, 2620],
+      "general_admin_M": [548, 578, 435],
+      "depreciation_amortization_M": [333, 397, 426],
+      "interest_expense_M": [180, 145, 150],
+      "real_estate_gains_M": [1245, 18, 263],
+      "asset_impairments_M": [213, 30, 38],
+      "income_before_taxes_M": [1563, 310, 363],
+      "tax_provision_M": [267, 90, -92],
+      "net_income_M": [1296, 220, 455],
+      "eps_diluted": [12.65, 2.05, 4.09]
+    },
+    "balance_sheet_2024": {
+      "cash_M": 1011,
+      "receivables_M": 1121,
+      "total_current_assets_M": 2733,
+      "ppe_net_M": 1689,
+      "goodwill_M": 2541,
+      "intangibles_M": 2167,
+      "total_assets_M": 13324,
+      "current_liabilities_M": 3274,
+      "long_term_debt_M": 3326,
+      "total_liabilities_M": 9498,
+      "stockholders_equity_M": 3547,
+      "retained_earnings_M": 3815,
+      "accumulated_oci_M": -269,
+      "noncontrolling_interests_M": 279,
+      "total_equity_M": 3826
+    },
+    "cash_flows": {
+      "operating_M": [633, 800, 674],
+      "investing_M": [81, -365, 416],
+      "financing_M": [-618, -578, -1106],
+      "cash_end_M": [1015, 919, 1067]
+    }
+  },
+  "item6_fee_detail": {
+    "fee_categories": {
+      "franchise_agreement_fees": {
+        "count": 26,
+        "percentage_fees": ["royalty (5%)", "World of Hyatt (2%/1%)"],
+        "fixed_fees": ["comfort letter ($2,500)", "PMS ($3.90/room/month)", "training tools ($3.64/room/year)", "QA inspection ($1,500-2,000)", "training ($950/day)", "convention ($2,000-5,000)", "summit ($3,000-6,000)", "GMU ($2,700)"],
+        "event_driven_fees": ["operator approval ($10,000-20,000)", "transfer ($100,000)", "liquidated damages", "late fee ($225+1.5%/month)", "audit", "insurance ($200/room/year)", "new room application", "PIP ($5,000)", "offering review ($5,000)", "supplier testing ($20,000)", "designer approval ($2,000-10,000)", "de-identification ($5,000/day)"]
+      },
+      "mandatory_services_fees": {
+        "count": 5,
+        "percentage_fees": ["Commercial Services (3%)", "Digital Acquisition (1.35%)"],
+        "variable_fees": ["GDS (~$8.50/reservation)", "mandatory contracts ($1,500-7,500/month)", "other corporate ($500-5,000/month)"]
+      },
+      "non_mandatory_services_fees": {
+        "count": 6,
+        "subscription_fees": ["Hyatt Studios Services ($1,900-2,950/month)"],
+        "variable_fees": ["HSF booking (6%/3%/1%)", "purchasing (varies)", "optional corporate (varies)", "related party (varies)", "optional tech (varies)"]
+      }
+    },
+    "total_fee_line_items": 37,
+    "highest_single_fee_impact": "Royalty at 5% of GRR",
+    "aggregate_percentage_burden": "~11.35% of GRR (5% + 3% + 2% + 1.35%)"
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Hyatt Studios trademark pending", "severity": "high"},
+    {"id": "U2", "description": "Imperial Hotels arbitration outcome", "severity": "low"},
+    {"id": "U3", "description": "Guarantor Monetary Threshold amounts", "severity": "medium"},
+    {"id": "U4", "description": "Studios Services tier criteria", "severity": "low"},
+    {"id": "U5", "description": "45 FA status post-Dec 2024", "severity": "medium"},
+    {"id": "U6", "description": "DRA schedules per deal", "severity": "low"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "Item 20 Tables 3/4 header year mismatch (2021-2023 vs 2022-2024)", "resolution": "Template error"}
+  ],
+  "state_addenda_overrides": {
+    "states": ["CA", "HI", "IL", "IN", "MD", "MI", "MN", "NY", "ND", "RI", "SD", "VA", "WA", "WI"],
+    "forum_limited": ["CA", "MD", "MI", "MN", "ND", "RI"],
+    "governing_law_overridden": ["CA", "MD", "ND", "RI"],
+    "release_excludes_state_claims": ["CA", "HI", "MD", "MN", "ND"],
+    "termination_good_cause": ["MI", "MN", "VA"],
+    "liquidated_damages_challenged": ["CA", "MN", "ND"]
+  }
+}

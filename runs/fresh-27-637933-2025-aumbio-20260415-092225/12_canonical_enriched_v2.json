@@ -1,0 +1,87 @@
+{
+  "enrichment_version": "v2",
+  "enrichment_date": "2026-04-15",
+  "item21_financial_structure_detail": {
+    "capital_structure": {
+      "total_member_contributions": 100,
+      "contribution_dates": ["2023 (formation year)"],
+      "distributions": 0,
+      "retained_earnings_deficit": -109,
+      "total_equity_deficit": -9,
+      "debt": 0,
+      "bank_overdraft": 9,
+      "credit_facilities": "None disclosed"
+    },
+    "solvency_indicators": {
+      "current_ratio": "N/A (no current assets)",
+      "total_assets": 0,
+      "equity_positive": false,
+      "cash_position": "Bank overdraft of $9",
+      "revenue_ever_generated": false,
+      "fee_deferral_imposed": true,
+      "fee_deferral_reason": "IL Attorney General — franchisor's financial condition"
+    }
+  },
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "current_assets": {"2024": 0, "2023": 88},
+      "total_assets": {"2024": 0, "2023": 88},
+      "current_liabilities": {"bank_overdraft": {"2024": 9, "2023": 0}},
+      "members_equity": {"2024": -9, "2023": 88}
+    },
+    "income_statement": {
+      "revenue": {"2024": 0, "2023": 0},
+      "operating_expenses": {"2024": 97, "2023": 12},
+      "net_income": {"2024": -97, "2023": -12}
+    },
+    "cash_flow": {
+      "operating": {"2024": -97, "2023": -12},
+      "investing": {"2024": 0, "2023": 0},
+      "financing": {"2024": 0, "2023": 100},
+      "net_change": {"2024": -97, "2023": 88},
+      "ending_cash": {"2024": -9, "2023": 88}
+    },
+    "equity_rollforward": {
+      "beginning_equity": {"2024": 88, "2023": 0},
+      "contributions": {"2024": 0, "2023": 100},
+      "net_income": {"2024": -97, "2023": -12},
+      "ending_equity": {"2024": -9, "2023": 88}
+    }
+  },
+  "item6_fee_detail": {
+    "ongoing_fixed_monthly": {
+      "technology_fee": 100,
+      "local_marketing_minimum": 1500,
+      "total_fixed_monthly": 1600
+    },
+    "ongoing_variable": {
+      "royalty_rate": 0.06,
+      "brand_fund_rate": 0.01,
+      "total_variable_rate": 0.07,
+      "basis": "Gross Revenues"
+    },
+    "event_fees": {
+      "transfer": "50% of then-current IFF",
+      "management": "$500/day",
+      "audit": "cost + 18% interest",
+      "supplier_eval": "$500",
+      "training": "$500/day/person",
+      "late_interest": "18% per annum",
+      "convention_penalty": "$1,000",
+      "lost_manual": "$500",
+      "liquidated_damages": "avg monthly royalty x 24 months",
+      "inspection": "up to $5,000",
+      "prohibited_product": "$500/day",
+      "attorney_fees": "actual",
+      "indemnification": "actual"
+    },
+    "gross_revenue_inclusions": [
+      "All revenue cash or credit",
+      "Exchanges and barter",
+      "Insurance proceeds for lost profit/business/damaged goods"
+    ],
+    "gross_revenue_exclusions": [
+      "Separately stated sales taxes actually paid to taxing authority"
+    ]
+  }
+}

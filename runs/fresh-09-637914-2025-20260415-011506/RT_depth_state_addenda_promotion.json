@@ -1,0 +1,194 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637914-2025",
+  "brand": "Iron Valley Real Estate",
+  "depth_pass": "state_addenda_structured_promotion",
+  "states_with_addenda": ["California", "Maryland", "Michigan", "New York", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "noncompete",
+      "override_summary": "Post-term covenant not to compete may not be enforceable under California law.",
+      "why_it_matters": "California franchisees may be able to compete immediately after franchise termination without restriction.",
+      "source_pages": [148]
+    },
+    {
+      "state": "California",
+      "affected_family": "interest_rate",
+      "override_summary": "Interest rate capped at 10% APR (or 5% + Federal Reserve rate, whichever is higher), overriding the 18% APR in the standard FA.",
+      "why_it_matters": "Late payment penalties are substantially reduced for California franchisees.",
+      "source_pages": [149]
+    },
+    {
+      "state": "California",
+      "affected_family": "notice_cure",
+      "override_summary": "Cure periods in sections 7.2(d), 13.1, and 13.3 extended from 30 days to 60 days.",
+      "why_it_matters": "California franchisees get double the cure time before termination can take effect.",
+      "source_pages": [149]
+    },
+    {
+      "state": "California",
+      "affected_family": "governing_law",
+      "override_summary": "California Franchise Investment Law and California Franchise Relations Act govern, regardless of PA choice of law in standard FA.",
+      "why_it_matters": "California's more protective franchise laws apply, potentially limiting franchisor's termination and non-renewal rights.",
+      "source_pages": [148, 149]
+    },
+    {
+      "state": "California",
+      "affected_family": "general_release",
+      "override_summary": "General release upon transfer excludes rights under CA Franchise Investment Law and CA Franchise Relations Act.",
+      "why_it_matters": "California franchisees cannot be forced to waive franchise law protections as condition of transfer.",
+      "source_pages": [148]
+    },
+    {
+      "state": "California",
+      "affected_family": "damages",
+      "override_summary": "Liquidated damages clause noted with reference to Civil Code Section 1671 enforceability standards.",
+      "why_it_matters": "Lost royalty recovery formula may be challengeable under CA liquidated damages standards.",
+      "source_pages": [148]
+    },
+    {
+      "state": "California",
+      "affected_family": "termination",
+      "override_summary": "Franchisor may have obligation to purchase franchisee assets if franchisee does not continue real estate brokerage at location after termination/non-renewal.",
+      "why_it_matters": "Provides California franchisees with potential asset buyback protection not available in other states.",
+      "source_pages": [149]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may sue in Maryland for claims arising under the Maryland Franchise Registration and Disclosure Law. 3-year statute of limitations.",
+      "why_it_matters": "Maryland franchisees are not required to travel to PA for claims under their own state's franchise law.",
+      "source_pages": [151]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "General release required for renewal/sale/transfer does not apply to liability under Maryland Franchise Registration and Disclosure Law. Release/estoppel/waiver provisions do not affect MD law liability.",
+      "why_it_matters": "MD franchisees retain all rights under state franchise law regardless of releases signed.",
+      "source_pages": [151]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "fee_deferral",
+      "override_summary": "Maryland Securities Commissioner requires financial assurance: all initial fees deferred until franchisor completes pre-opening obligations. Based on franchisor's financial condition.",
+      "why_it_matters": "MD franchisees do not pay initial fees until franchisor performs — mitigating financial condition risk.",
+      "source_pages": [151]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "termination",
+      "override_summary": "Termination only for good cause, with 30-day cure. Franchisee cannot waive rights under Michigan Franchise Investment Law.",
+      "why_it_matters": "Michigan franchisees have stronger termination protections than standard FA provides.",
+      "source_pages": [152]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "renewal",
+      "override_summary": "Franchisor must fairly compensate franchisee on non-renewal by repurchasing inventory, supplies, equipment, fixtures at fair market value (conditions: term <5 years and franchisee prohibited from continuing under another brand or received <6 months notice).",
+      "why_it_matters": "Provides asset protection for Michigan franchisees whose franchise is not renewed, under certain conditions.",
+      "source_pages": [152]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchise documents may not require arbitration or litigation outside Michigan.",
+      "why_it_matters": "Michigan franchisees cannot be forced to arbitrate in Philadelphia County, PA.",
+      "source_pages": [152]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "general_release",
+      "override_summary": "Franchisee cannot be required to assent to release, assignment, novation, waiver, or estoppel that deprives rights under Michigan Act.",
+      "why_it_matters": "Anti-waiver protection for Michigan franchise law rights.",
+      "source_pages": [152]
+    },
+    {
+      "state": "Virginia",
+      "affected_family": "termination",
+      "override_summary": "Cancellation without reasonable cause is unlawful under Virginia Retail Franchising Act (Section 13.1-564).",
+      "why_it_matters": "Virginia provides statutory protection against arbitrary termination beyond FA terms.",
+      "source_pages": [156]
+    },
+    {
+      "state": "Virginia",
+      "affected_family": "fee_deferral",
+      "override_summary": "Virginia SCC requires deferral of initial franchise fee and other initial payments until franchisor completes pre-opening obligations.",
+      "why_it_matters": "Virginia franchisees' initial fees are protected until franchisor performs — similar to Maryland financial condition requirement.",
+      "source_pages": [156]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "governing_law",
+      "override_summary": "Washington Franchise Investment Protection Act (RCW 19.100) prevails in event of conflict with franchise agreement.",
+      "why_it_matters": "WA law provides additional protections in termination and renewal beyond what PA law offers.",
+      "source_pages": [157]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration/mediation must be in Washington or mutually agreed location. Litigation may be brought in Washington for WA Act claims.",
+      "why_it_matters": "Washington franchisees are not required to travel to PA for dispute resolution.",
+      "source_pages": [157]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "general_release",
+      "override_summary": "Release/waiver excludes rights under WA Franchise Investment Protection Act. Provisions restricting statute of limitations, rights, or remedies (including jury trial) may be unenforceable.",
+      "why_it_matters": "Broad anti-waiver protection for WA franchisees.",
+      "source_pages": [157]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "noncompete",
+      "override_summary": "Post-term noncompete void for employees earning <$100,000/year and independent contractors earning <$250,000/year (adjusted annually for inflation). No-poach clause void: franchisor cannot restrict franchisee from soliciting/hiring other franchisees' or franchisor's employees.",
+      "why_it_matters": "Limits noncompete enforcement for most real estate agents and eliminates no-poach restrictions.",
+      "source_pages": [157, 158]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "fee_deferral",
+      "override_summary": "Initial franchise fees deferred until franchisee has received all pre-opening training obligations and is open for business. ADRSA fees released proportionally per outlet.",
+      "why_it_matters": "Most protective fee deferral — franchisee pays nothing until fully trained and open.",
+      "source_pages": [157, 158]
+    },
+    {
+      "state": "Wisconsin",
+      "affected_family": "termination",
+      "override_summary": "WI Fair Dealership Law prohibits termination, cancellation, nonrenewal, or substantial change of competitive circumstances without good cause. 90-day written notice required. 60-day cure period.",
+      "why_it_matters": "Wisconsin provides the longest notice period (90 days vs. 30 in standard FA) and longest cure period (60 days) of any state addendum.",
+      "source_pages": [159]
+    },
+    {
+      "state": "Wisconsin",
+      "affected_family": "governing_law",
+      "override_summary": "WI Fair Dealership Law (Chapter 135) supersedes conflicting FA provisions.",
+      "why_it_matters": "WI statutory protections override PA choice of law for Wisconsin franchisees.",
+      "source_pages": [159]
+    }
+  ],
+  "template_errors": [
+    {
+      "state": "Wisconsin",
+      "error": "Addendum references 'Realty ONE Group Affiliates, Inc.' instead of 'Iron Valley Real Estate, LLC'",
+      "source_pages": [159],
+      "severity": "medium"
+    }
+  ],
+  "summary_table": {
+    "override_families": {
+      "forum_selection": ["Maryland", "Michigan", "Washington"],
+      "governing_law": ["California", "Washington", "Wisconsin"],
+      "noncompete": ["California", "Washington"],
+      "general_release": ["California", "Maryland", "Michigan", "Washington"],
+      "termination": ["California", "Michigan", "Virginia", "Wisconsin"],
+      "renewal": ["Michigan"],
+      "notice_cure": ["California", "Wisconsin"],
+      "fee_deferral": ["Maryland", "Virginia", "Washington"],
+      "interest_rate": ["California"],
+      "damages": ["California"]
+    }
+  },
+  "total_overrides": 23,
+  "total_states": 7
+}

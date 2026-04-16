@@ -1,0 +1,129 @@
+{
+  "extraction_meta": {
+    "fdd_id": "637910-2025",
+    "brand": "Sweat440",
+    "extracted_date": "2026-04-14",
+    "exhibit_count": 7
+  },
+  "exhibits": [
+    {
+      "letter": "A",
+      "name": "Financial Statements",
+      "category": "financial",
+      "priority": "critical",
+      "page_range": [52, 68],
+      "page_count": 17,
+      "contents": [
+        "Independent Auditor's Report (unqualified opinion, Melville NY auditor, dated March 11, 2025)",
+        "Balance Sheets as of Dec 31, 2024 and Oct 31, 2023",
+        "Statements of Operations and Changes in Member's Deficit for 14-month period ended Dec 31, 2024 and FY ended Oct 31, 2023 and 2022",
+        "Statements of Cash Flows for same periods",
+        "Notes to Financial Statements (8 notes): Organization, Accounting Policies, Adopted Standards, Franchised Outlets, Revenues and Contract Balances, Related-Party Transactions, Marketing Fund, Commitments and Contingencies"
+      ],
+      "extracted": true
+    },
+    {
+      "letter": "B",
+      "name": "Franchise Agreement (and Exhibits)",
+      "category": "contract",
+      "priority": "high",
+      "page_range": [69, 120],
+      "page_count_estimate": 52,
+      "contents": [
+        "Franchise Agreement (20 sections): Key Definitions, Grant, Term/Renewal, Fees, Advertising, Development/Opening, Training/Assistance, Intellectual Property, Business Image/Operating Standards, Records/Reports, Inspections/Audits, Confidential Information, Covenants, Assignment, Termination, Post-Termination Obligations, Relationship/Indemnification, Enforcement, Notices, Acknowledgements",
+        "FA Exhibit A: Authorized Location and Opening Deadline",
+        "FA Exhibit B: Ownership and Management Addendum",
+        "FA Exhibit C: Business Lease Addendum",
+        "FA Exhibit D: Guaranty and Assumption of Obligations",
+        "FA Exhibit E: Disclosure Acknowledgment Addendum"
+      ],
+      "extracted": true,
+      "extraction_note": "Key terms extracted via Item 17 tables and targeted page reads. Not all 52 pages itemized line-by-line."
+    },
+    {
+      "letter": "C",
+      "name": "Multi-Unit Development Agreement (and Exhibits)",
+      "category": "contract",
+      "priority": "high",
+      "page_range": [121, 144],
+      "page_count_estimate": 24,
+      "contents": [
+        "Multi-Unit Development Agreement (15 sections): similar structure to FA including Grant, Development Schedule, Fees, Advertising/Marketing, Training, IP, Covenants, Assignment, Termination, Enforcement",
+        "MUD Exhibit A: Designated Area and Development Schedule",
+        "MUD Exhibit B: Ownership Addendum",
+        "MUD Exhibit C: Guaranty and Assumption of Obligations",
+        "MUD Exhibit D: Disclosure Acknowledgment Addendum"
+      ],
+      "extracted": true,
+      "extraction_note": "Key terms extracted via Item 17 MUD table. Non-compete (Section 12), Transfer (Section 13), Termination (Section 14) read in detail."
+    },
+    {
+      "letter": "D",
+      "name": "Franchisee List",
+      "category": "franchisee_data",
+      "priority": "high",
+      "page_range": [145, 147],
+      "page_count": 3,
+      "contents": [
+        "Current Franchisees as of December 31, 2024: 17 open locations across 8 operators",
+        "Signed but not open: 5 groups with 47+ franchise agreements",
+        "Former Franchisees: 1 (Amanda Vachon, Madison AL — remains in system, closed a studio)"
+      ],
+      "extracted": true,
+      "key_operators": [
+        {"name": "Marc Gralnick", "locations": 7, "status": "Multi-Unit, open"},
+        {"name": "Nicholas Marco", "locations": "2 open + 27 signed not open (NJ)", "status": "Multi-Unit"},
+        {"name": "Eugene Kaymen", "locations": 2, "status": "Multi-Unit, open (TX)"},
+        {"name": "Javier Jorge", "locations": "1 open + 2 signed not open (FL)", "status": "Multi-Unit"},
+        {"name": "FIT Investments NYC LLC", "locations": "1 open + 3 signed not open (NY)", "status": "Multi-Unit"},
+        {"name": "Solaris FL-Holdings", "locations": "12 signed not open (Puerto Rico)", "status": "Multi-Unit, not open"}
+      ]
+    },
+    {
+      "letter": "E",
+      "name": "List of State Administrators; Agents for Service of Process",
+      "category": "regulatory",
+      "priority": "low",
+      "page_range": [148, 149],
+      "page_count": 2,
+      "contents": [
+        "State administrators and agents for service of process",
+        "New York listed explicitly (NYS DOL Investor Protection Bureau, NY Dept of State)"
+      ],
+      "extracted": true
+    },
+    {
+      "letter": "F",
+      "name": "State Addenda",
+      "category": "state_compliance",
+      "priority": "high",
+      "page_range": [150, 173],
+      "page_count": 24,
+      "contents": [
+        "California Addendum (FDD + FA): Non-compete may not be enforceable; franchise fee deferral by DFPI; release/waiver limits",
+        "Illinois Addendum (FDD + FA): IL law governs; venue outside IL void; anti-waiver provisions",
+        "Maryland Addendum (FDD + FA): May bring suit in MD; 3-year statute of limitations; release limits",
+        "Minnesota Addendum (FDD + FA): Fee deferral until open; 90-day termination notice; 180-day non-renewal notice; no liquidated damages; indemnification for trademark claims; jury trial waiver may not be enforceable",
+        "New York Addendum (FDD + FA): Registration notice; release does not waive GBL claims; NY franchise law governs",
+        "Virginia Addendum (FDD + FA + MUD): Fee deferral until pre-opening obligations complete; reasonable cause for termination required",
+        "Washington Addendum (FDD + FA + MUD): Franchisee Bill of Rights (RCW 19.100.180); fair pricing; treble damages; anti-waiver; no punitive damages waiver; no forced buy-back without good cause"
+      ],
+      "extracted": true,
+      "states_with_addenda": ["California", "Illinois", "Maryland", "Minnesota", "New York", "Virginia", "Washington"]
+    },
+    {
+      "letter": "G",
+      "name": "State Effective Dates and Receipt Pages",
+      "category": "regulatory",
+      "priority": "low",
+      "page_range": [174, 177],
+      "page_count": 4,
+      "contents": [
+        "State Effective Dates: Michigan 3/11/25, Minnesota 3/19/25, New York 3/24/25; California, Illinois, Indiana, Maryland, Virginia, Washington pending",
+        "Receipt (franchisor copy) — page 176",
+        "Receipt (franchisee copy) — page 177"
+      ],
+      "extracted": true
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "enrichment_version": "v2",
+  "base_file": "11_canonical_enriched.json",
+  "additional_enrichments": {
+    "item21_financial_structure_detail": {
+      "revenue_composition_2024": {
+        "franchise_royalty_fees": {"amount": 3867630, "pct_of_total": 86.3},
+        "initial_franchise_fees": {"amount": 411637, "pct_of_total": 9.2},
+        "sponsorship_sales": {"amount": 200675, "pct_of_total": 4.5}
+      },
+      "revenue_growth": {
+        "2022_to_2023_pct": 6.2,
+        "2023_to_2024_pct": 23.4,
+        "2022_to_2024_pct": 31.1
+      },
+      "expense_ratio": {
+        "2024": 73.0,
+        "2023": 73.4,
+        "2022": 79.0
+      },
+      "net_margin": {
+        "2024": 27.0,
+        "2023": 26.6,
+        "2022": 21.0
+      },
+      "distribution_analysis": {
+        "2024": {"net_income": 1208189, "distributions": 1265000, "excess_distribution": 56811},
+        "2023": {"net_income": 964773, "distributions": 1249000, "excess_distribution": 284227},
+        "2022": {"net_income": 717221, "distributions": 1200000, "excess_distribution": 482779}
+      },
+      "cash_position_trend": {
+        "2022_end": 735731,
+        "2023_end": 1022915,
+        "2024_end": 792460,
+        "trend": "declining_from_2023_peak"
+      }
+    },
+    "item21_statement_detail": {
+      "balance_sheet": {
+        "working_capital_2024": 825196,
+        "current_ratio_2024": 2.19,
+        "total_deferred_revenue_2024": 1512736,
+        "deferred_revenue_pct_of_liabilities": 80.4,
+        "ar_allowance_2024": 180000
+      },
+      "cash_flow": {
+        "operating_cash_2024": 1034545,
+        "key_operating_adjustments_2024": {
+          "ar_change": -167712,
+          "deferred_franchise_costs": -9823,
+          "ap_change": 96532,
+          "deferred_revenue_change": 21952,
+          "accrued_advertising_change": -62870
+        }
+      },
+      "notes_summary": {
+        "revenue_recognition": "ASC 2014-09 (Topic 606). Royalty fees recognized as earned. Initial franchise fees recognized over 10-year term.",
+        "credit_losses": "Allowance $180K (2024, 2023), $170K (2022). No credit loss expense in 2024 or 2023. $140K expense in 2022.",
+        "subsequent_events": "None through February 27, 2025.",
+        "related_party": {
+          "shared_office_expense": 120000,
+          "management_fees_to_parent": 1014000,
+          "royalties_from_ceo_franchises": 85000,
+          "ar_from_ceo_franchises": 40000,
+          "amounts_due_related_companies": 113000
+        },
+        "advertising_fund": {
+          "national_fund_cash_2024": 27167,
+          "national_fund_ar_2024": 118590,
+          "florida_coop_cash_2024": 12199,
+          "florida_coop_ar_2024": 39609
+        }
+      }
+    },
+    "item6_fee_detail": {
+      "fee_count": 24,
+      "recurring_fees": 11,
+      "event_driven_fees": 13,
+      "ryepay_collected_fees": 15,
+      "highest_individual_fee_pct": 11,
+      "highest_individual_fee_name": "Administrative Fee",
+      "contradictions_count": 3,
+      "contradictions": [
+        {"field": "renewal_fee", "values": ["10%", "15%"], "resolution": "15% per FA"},
+        {"field": "territory_intrusion", "values": ["50%", "75%"], "resolution": "unresolved"},
+        {"field": "national_ad_max", "values": ["2%", "3%"], "resolution": "likely 3%"}
+      ]
+    }
+  }
+}

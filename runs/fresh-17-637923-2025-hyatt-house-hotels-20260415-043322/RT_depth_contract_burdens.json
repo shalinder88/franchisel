@@ -1,0 +1,142 @@
+{
+  "depth_pass": "2_contract_burdens",
+  "agreement": "Brand Hotel Franchise Agreement (2025 Template)",
+  "source_pages_range": [188, 258],
+  "provisions": {
+    "grant_and_term": {
+      "initial_term": "20 years from 1st day of month of Hotel opening",
+      "successor_franchise": "10-year term on then-current terms (may be materially different)",
+      "site_restriction": "Must operate only from approved site",
+      "nonexclusive_rights": true,
+      "source_pages": [189, 190]
+    },
+    "fee_and_payment_obligations": {
+      "royalty": "5% of Gross Rooms Revenue, monthly",
+      "system_services_charges": "As determined by Hyatt Group",
+      "eft_required": true,
+      "audit_rights": "Hyatt may audit at any time; understatement ≥3% = franchisee pays audit costs",
+      "late_fee": "$225 on overdue amounts",
+      "interest": "Lesser of 1.5%/month or maximum rate",
+      "tax_gross_up": "Franchisee must pay additional taxes to provide Hyatt with after-tax receipts",
+      "source_pages": [195, 196]
+    },
+    "site_selection_and_construction": {
+      "site_approval_required": true,
+      "no_site_selection_assistance": true,
+      "design_construction_standards": "Must comply with Hyatt DCS and Hotel System",
+      "plan_approval_required": true,
+      "no_material_changes_without_approval": true,
+      "comfort_letter_required": "From each lender, ground lessor, and parties with interest in Hotel property",
+      "source_pages": [191, 192]
+    },
+    "training_and_operational_obligations": {
+      "core_management_training_mandatory": true,
+      "gm_full_time_at_hotel": true,
+      "core_management_no_split_duties": true,
+      "replacement_training_within_90_days": true,
+      "system_standards_compliance": "3,615 pages of System Standards; continuous monitoring required",
+      "quality_assurance_program": "Inspections at any time with or without notice; free lodging for inspectors",
+      "source_pages": [200, 201]
+    },
+    "termination_triggers": {
+      "franchisor_with_cause_curable": [
+        {"default": "Health/safety threat", "cure": "24 hours"},
+        {"default": "Failure to pay amounts owed", "cure": "10 days"},
+        {"default": "Failure to provide insurance/real estate docs", "cure": "10 days"},
+        {"default": "Failure to pay taxes/develop Hotel/pay Providers", "cure": "30 days"},
+        {"default": "Other defaults not listed as non-curable", "cure": "30 days"},
+        {"default": "Guarantor Monetary Threshold failure", "cure": "60 days"}
+      ],
+      "franchisor_with_cause_non_curable": [
+        "Bankruptcy/insolvency events",
+        "Undischarged judgment >$100,000",
+        "Cease Hotel operations or lose possession",
+        "Contest ownership of or try to register Hyatt IP",
+        "Unauthorized transfer",
+        "Felony conviction (with Limited Interest Owner carve-out)",
+        "Action reflecting adversely on Hyatt",
+        "False books or reports",
+        "Unauthorized use/disclosure of Confidential Information",
+        "Law violations (including trade restriction laws)",
+        "Repeated defaults (3+ in 12 months or 2+ same obligation in 6 months)"
+      ],
+      "source_pages": [230, 231, 235]
+    },
+    "transfer_restrictions": {
+      "all_transfers_require_approval": true,
+      "non_control_transfers_permitted": "Without approval if transferee not Competing Brand Owner, not sanctioned, doesn't create Controlling Interest, notice within 30 days",
+      "conditions_for_approval": [
+        "Transferee qualifies",
+        "All fees and amounts paid",
+        "Training completed",
+        "Sign new FA or assume existing (at Hyatt's option)",
+        "General release (if state law allows)",
+        "Agree to renovate",
+        "Capital structure approval",
+        "Franchisee remains liable"
+      ],
+      "source_pages": [220, 221]
+    },
+    "default_and_cross_default": {
+      "cross_default_with_guaranty": true,
+      "cross_default_with_ancillary_agreements": true,
+      "suspension_of_rights_on_default": "CRS/GDS/ADS access, advertising, fee reductions, support",
+      "source_pages": [235]
+    },
+    "noncompete": {
+      "during_term": "No traditional covenant; franchisee/management company may not be Competing Brand Owner",
+      "post_term": "None",
+      "competing_brand_owner_definition": "Entity that franchises/owns/manages brand with 5+ hotels, ADR ≥60% of Brand Hotel ADR",
+      "source_pages": [74, 75, 83]
+    },
+    "guaranty": {
+      "scope": "Personal guarantee of ALL obligations — monetary and non-monetary",
+      "guarantors": "Controlling Ownership Interest owners specified by Hyatt",
+      "unlimited": true,
+      "spousal_guarantee": "Not explicitly required but Controlling Owner could include spouse",
+      "monetary_threshold": "Net worth and liquidity minimums, increasing annually by CPI",
+      "annual_certification": true,
+      "source_pages": [220, 240, 241]
+    },
+    "liquidated_damages": {
+      "formula": "Lesser of 36 months or remaining term × 8.5% of Average Monthly Revenue",
+      "consequential_termination": "150% multiplier (transfer to Competitor or 3+ FA defaults)",
+      "failure_to_deidentify": "$5,000/day plus costs and expenses",
+      "casualty_termination": "With Termination Agreement: no LD, but $5,000/room if new select-service hotel built in AOP within 24 months",
+      "source_pages": [32, 33, 34, 35]
+    },
+    "venue_and_dispute_resolution": {
+      "arbitration": "Mandatory; within 10 miles of Hyatt's principal business address (Chicago, IL)",
+      "litigation_forum": "Illinois (subject to arbitration)",
+      "governing_law": "Illinois (subject to FAA and state law)",
+      "waiver_of_jury_trial": "Likely (standard in Hyatt agreements)",
+      "waiver_of_punitive_damages": "Likely (standard in Hyatt agreements)",
+      "source_pages": [83, 84]
+    },
+    "insurance": {
+      "required": "Amounts per System Standards; Hyatt may obtain and charge if franchisee fails",
+      "insurance_fee_if_hyatt_obtains": "$200 per guest room per year",
+      "source_pages": [25]
+    },
+    "indemnification": {
+      "scope": "Franchisee indemnifies Hyatt and related parties for all claims arising from application, development, operation, breach, and Hotel's proportionate share of multi-hotel actions",
+      "includes_failure_to_open_on_time": true,
+      "source_pages": [25]
+    },
+    "force_majeure": {
+      "excuses_performance": true,
+      "does_not_excuse_payments": true,
+      "extends_development_deadlines": true,
+      "source_pages": [235]
+    },
+    "distinctive_clauses": {
+      "guest_information_ownership": "Hyatt owns all Guest Information during term; unlimited access to PMS data",
+      "innovations_assignment": "All inventions/innovations relating to Brand Hotels are Hyatt's property (work-for-hire or assignment)",
+      "right_of_first_offer": "Only for strategic markets (Exhibit C)",
+      "competing_brand_owner_restriction": "During term only; no post-term restriction",
+      "aop_term_limited": "Typically 3 years — extraordinarily short for 20-year franchise",
+      "system_standards_3615_pages": "Massive operational control document",
+      "source_pages": [73, 74, 53, 67, 68]
+    }
+  }
+}

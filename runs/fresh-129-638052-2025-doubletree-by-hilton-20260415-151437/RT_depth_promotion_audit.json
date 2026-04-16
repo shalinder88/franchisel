@@ -1,0 +1,55 @@
+{
+  "depth_pass": "3_promotion_audit",
+  "fdd_id": "638052-2025",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "Interest rate on overdue amounts is 18% per annum or max lawful rate (FA Section 16.15)",
+      "source_reader_report": "Pass E — noted as 1.5%/month in Item 6",
+      "source_pdf_page": 178,
+      "promoted_to": "09_final_canonical.json → dispute_resolution.interest_rate"
+    },
+    {
+      "id": "P2",
+      "fact": "General release in FA Section 16.8 covers all claims on or before Effective Date, except FDD representations. Survives termination.",
+      "source_reader_report": "Pass E — not in canonical",
+      "source_pdf_page": [176, 177],
+      "promoted_to": "09_final_canonical.json → contract_burdens.general_release"
+    },
+    {
+      "id": "P3",
+      "fact": "Consent standard: franchisor may withhold consent in business judgment; franchisee's sole remedy is specific performance/declaratory judgment, NOT money damages (FA Section 16.6)",
+      "source_reader_report": "Not in reader report narrative — discovered in depth pass",
+      "source_pdf_page": 176,
+      "promoted_to": "09_final_canonical.json → contract_burdens.consent_standard"
+    },
+    {
+      "id": "P4",
+      "fact": "Indemnification survives expiration/termination (FA Section 14.5). Broad scope including guest injuries, IP claims, government fee disputes. Exception only for gross negligence/willful misconduct per final judgment.",
+      "source_reader_report": "Pass B — partially noted in Item 6",
+      "source_pdf_page": [173, 174],
+      "promoted_to": "09_final_canonical.json → contract_burdens.indemnification"
+    },
+    {
+      "id": "P5",
+      "fact": "Economic downturn or financial inability is NOT a defense to breach (FA Section 16.10)",
+      "source_reader_report": "Not in reader report",
+      "source_pdf_page": 177,
+      "promoted_to": "09_final_canonical.json → contract_burdens.economic_conditions_not_defense"
+    },
+    {
+      "id": "P6",
+      "fact": "Auditor report signed March 18, 2025 from Tysons Corner, Virginia — confirming Note 9 date 'March 18, 2024' is a typo",
+      "source_reader_report": "Pass F — unresolved U3",
+      "source_pdf_page": 130,
+      "promoted_to": "09_final_canonical.json → unresolveds (U3 updated with confirmation)"
+    },
+    {
+      "id": "P7",
+      "fact": "Confidentiality of negotiated terms (FA Section 16.18) — any negotiated fee reductions or modifications are confidential",
+      "source_reader_report": "Not in reader report",
+      "source_pdf_page": 143,
+      "promoted_to": "09_final_canonical.json → contract_burdens.confidentiality_of_negotiated_terms"
+    }
+  ]
+}

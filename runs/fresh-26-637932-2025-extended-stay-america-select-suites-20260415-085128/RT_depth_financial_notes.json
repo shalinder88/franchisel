@@ -1,0 +1,135 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637932-2025",
+  "source_pages_pdf": [170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181],
+  "auditor": "Deloitte & Touche LLP",
+  "audit_report_date": "2025-03-24",
+  "accounting_policies": {
+    "revenue_recognition": {
+      "franchise_fees": "Initial fees deferred and recognized over expected contract life. Ongoing royalties recognized over time as franchisees derive value from IP license.",
+      "system_service_fees": "Recognized over time; based on % of franchised hotel's revenue. Revenue recognized on gross basis; managed to break-even over time but timing mismatches expected.",
+      "direct_expense_reimbursements": "Recognized on gross basis (Company acts as principal). Includes incremental reservation/distribution costs reimbursed dollar-for-dollar.",
+      "other_revenues": "Recognized in period of related transaction/event. Includes QA penalties, pre-opening fees, admin fees, contract termination fees ($2.1M in 2024, $0.2M in 2023).",
+      "performance_obligation": "IP license + system services = single performance obligation (series of services over time). Output method based on performance completed to date. Company recognizes revenue to the amount it has right to bill. Variable consideration — most likely amount method used.",
+      "source_pages": [178, 179]
+    },
+    "cash_and_cash_equivalents": {
+      "definition": "Cash on hand, demand deposits, short-term highly liquid investments with original maturities of 3 months or less",
+      "fdic_risk": "Deposits exceed $250,000 at one institution not insured by FDIC",
+      "source_pages": [176, 177]
+    },
+    "accounts_receivable": {
+      "description": "Franchise fees, system service fees, and other amounts due from franchisees including cost reimbursements",
+      "allowance_method": "Made when collection considered doubtful; considers historical collection activity and business forecasts",
+      "allowance_2024": "Immaterial",
+      "allowance_2023": "Immaterial",
+      "source_pages": [177]
+    },
+    "contract_acquisition_costs": {
+      "description": "Direct incremental costs incurred to obtain contracts with customers",
+      "amortization": "Straight-line over initial non-cancellable term or expected contract life",
+      "classification": "Amortization included in G&A expenses",
+      "impairment": "Reviewed when events indicate carrying amount may not be recoverable. No material impairment in 2024 or 2023.",
+      "source_pages": [177]
+    },
+    "net_investment_in_leases": {
+      "description": "Sales-type lease agreements with franchisees for IT equipment over 5-year terms, fully maturing in 2025",
+      "purchase_option": "Lessees have option to purchase; Company believes reasonably certain to exercise",
+      "interest_income": "None — sales price equals carrying value of underlying equipment",
+      "source_pages": [177]
+    },
+    "intangible_assets": {
+      "types": ["Franchise agreements", "Software licenses"],
+      "amortization_method": "Straight-line",
+      "useful_lives": {
+        "franchise_agreements": "~20 years (10 years weighted-average remaining as of 2024)",
+        "software_licenses": "Remaining non-cancellable term (~3 years weighted-average remaining as of 2024)"
+      },
+      "impairment": "Reviewed annually or when events indicate. No impairment in 2024 or 2023.",
+      "software_license_liability": "Estimated liability remeasured at each reporting date. $0.5M current + $1.2M non-current in 2024.",
+      "source_pages": [177, 179]
+    },
+    "income_taxes": {
+      "status": "As an LLC, not subject to federal income taxes. May be subject to state/local taxes in certain jurisdictions.",
+      "deferred_taxes": "None disclosed",
+      "source_pages": [178]
+    }
+  },
+  "material_notes": {
+    "intangible_assets_detail": {
+      "2024": {
+        "franchise_agreements": {"gross": 4900, "accum_amort": 1286, "net": 3614, "wtd_avg_remaining_life": "10 years"},
+        "software_licenses": {"gross": 2356, "accum_amort": 599, "net": 1757, "wtd_avg_remaining_life": "3 years"},
+        "total": {"gross": 7256, "accum_amort": 1885, "net": 5371}
+      },
+      "2023": {
+        "franchise_agreements": {"gross": 4900, "accum_amort": 922, "net": 3978, "wtd_avg_remaining_life": "11 years"},
+        "software_licenses": {"gross": 2070, "accum_amort": 37, "net": 2033, "wtd_avg_remaining_life": "5 years"},
+        "software_in_process": {"gross": 17, "accum_amort": 0, "net": 17},
+        "total": {"gross": 6987, "accum_amort": 959, "net": 6028}
+      },
+      "future_amortization": {"2025": 933, "2026": 933, "2027": 933, "2028": 410, "2029": 363, "thereafter": 1799, "total": 5371},
+      "source_pages": [179]
+    },
+    "brand_launch_expenses": {
+      "description": "In 2022, incurred $2.5M in costs related to payments to certain franchisees for exemptions within areas of protection to facilitate ESA Select Suites brand launch",
+      "satisfaction_method": "Majority via net reduction in franchise fees paid by applicable franchisees",
+      "remaining_2024": "$1.6M in accrued liabilities ($0.3M current, $1.3M non-current)",
+      "remaining_2023": "$2.2M in accrued liabilities ($0.6M current, $1.6M non-current)",
+      "source_pages": [179, 180]
+    },
+    "customer_contracts": {
+      "contract_liabilities_2024_start": 4478,
+      "contract_liabilities_2024_end": 4842,
+      "recognized_from_beginning_balance_2024": 824,
+      "contract_liabilities_2023_start": 2406,
+      "contract_liabilities_2023_end": 4478,
+      "recognized_from_beginning_balance_2023": 117,
+      "performance_obligation_term": "Typically 20 years (franchise agreement term)",
+      "source_pages": [180]
+    },
+    "related_party_transactions": {
+      "manager_agreement": {
+        "entity": "ESA Management LLC",
+        "services": "Overhead services (executive management, accounting, business development, financial analysis, training, technology) and system services",
+        "overhead_reimbursements_2024": 6600,
+        "overhead_reimbursements_2023": 6500,
+        "system_service_reimbursements_2024": 3800,
+        "system_service_reimbursements_2023": 3200,
+        "due_to_manager_2024": 2700,
+        "due_to_manager_2023": 3000,
+        "classification": "Overhead in G&A; system services in system service expenses"
+      },
+      "trademark_license": {
+        "entity": "ESH Strategies Branding LLC",
+        "fee": "5% of franchise royalties",
+        "expense_2024": 400,
+        "expense_2023": 400,
+        "due_2024": 100,
+        "due_2023": 100
+      },
+      "esh_reit": {
+        "entity": "ESH Hospitality, Inc.",
+        "relationship": "Disbursements/receipts on Company's behalf",
+        "due_to_2024": 0,
+        "due_to_2023": 1600
+      },
+      "source_pages": [180, 181]
+    },
+    "subsequent_events": {
+      "evaluation_date": "2025-03-24",
+      "events_noted": "None",
+      "source_pages": [181]
+    },
+    "franchised_system_size": {
+      "2024": {"hotels": 129, "rooms": 13351, "brands": {"esa_suites": {"hotels": 107, "rooms": 10975}, "esa_select_suites": {"hotels": 5, "rooms": 435}, "esa_premier_suites": {"hotels": 17, "rooms": 1941}}},
+      "2023": {"hotels": 114, "rooms": 11836, "brands": {"esa_suites": {"hotels": 104, "rooms": 10768}, "esa_select_suites": {"hotels": 1, "rooms": 84}, "esa_premier_suites": {"hotels": 9, "rooms": 984}}},
+      "changes_2024": "Added 25 franchised hotel properties, removed 10",
+      "source_pages": [176]
+    }
+  },
+  "vies": "None disclosed",
+  "lease_accounting": "Sales-type leases only (IT equipment, fully maturing 2025). No operating leases, no ROU assets, no maturity schedule needed.",
+  "advertising_fund_accounting": "No separate advertising fund. System Services Fee (4.5% of GRR) serves as pooled marketing/system fund. No periodic accounting provided to franchisees. In 2024, $5.3M spent on marketing (per Item 6 Note 2 disclosure, not financial statement note)."
+}

@@ -1,0 +1,217 @@
+{
+  "depth_pass": "contract_burdens",
+  "extraction_date": "2026-04-15",
+  "brand": "Gong cha",
+  "fdd_id": "638048-2025",
+  "source_exhibit": "Exhibit G — Franchise Agreement",
+  "source_pages_pdf": [139, 240],
+  "fa_sections": 28,
+  "burdens": {
+    "grant_and_term": {
+      "section": "Sections 1, 2",
+      "initial_term": "10 years",
+      "renewal": "1 additional 10-year term (Section 2.2)",
+      "renewal_conditions": [
+        "Written notice at least 12 months but not more than 18 months prior to expiration",
+        "Good standing, no breach or default",
+        "Sign then-current Franchise Agreement (may have materially different terms)",
+        "Meet then-current qualification and training requirements",
+        "Remodel Store to then-current standards at franchisee's expense",
+        "Evidence of continued property control",
+        "Execute general release",
+        "Pay Renewal Fee"
+      ],
+      "territory": "As defined in Exhibit A; up to 2-mile radius typical",
+      "search_area": "Non-exclusive search area if no approved location at signing",
+      "source_pages": [143, 144]
+    },
+    "fees_and_payment": {
+      "section": "Section 4",
+      "royalty": "6% of weekly Net Sales, due 3rd business day of each week",
+      "brand_marketing_fee": "1% of weekly Net Sales (can increase to 2% on 90 days notice)",
+      "payment_method": "Electronic funds transfer (EFT) mandatory",
+      "estimated_fee_debit": "If Net Sales not timely reported, franchisor can debit estimated amount",
+      "late_fee": "5% of overdue amount",
+      "interest": "Lesser of 1.5%/month or highest rate allowed by applicable law",
+      "source_pages": [149, 150]
+    },
+    "site_selection_and_construction": {
+      "section": "Section 5",
+      "site_deadline": "2 months from FA signing to agree on site; failure = termination",
+      "property_control_deadline": "60 business days of site approval",
+      "opening_deadline": "6 months from FA signing or 4 months from site approval",
+      "construction": "Must use franchisor-designated or approved architect, engineer, and general contractor",
+      "plans_approval": "All plans require franchisor approval; cannot modify without written approval",
+      "failure_consequences": "Termination and retention of all amounts paid",
+      "source_pages": [151, 152, 153]
+    },
+    "training_obligations": {
+      "section": "Section 6",
+      "initial_training": "Up to 3 trainees at no fee; additional trainees at $2,000/person (can increase 25%)",
+      "completion_required": "Must satisfy pre-opening training requirements 30 days before scheduled opening",
+      "failure_consequence": "May terminate FA; no reimbursement of IFF or training fees",
+      "refresher_training": "May require up to 4 days/person/year plus 3 days conventions",
+      "replacement_training": "Must enroll replacement Designated Principal/GM promptly; franchisor may charge fee",
+      "self_training_after_3rd_store": "For 4th+ ADA store, franchisee trains own personnel per franchisor standards",
+      "source_pages": [155, 156, 157]
+    },
+    "termination_triggers_and_cure": {
+      "section": "Section 16",
+      "non_curable_defaults": [
+        "Failure to open within deadlines",
+        "Fraud, felony conviction, or guilty/no contest plea",
+        "Public health or safety threat",
+        "Loss of premises or required license/permit",
+        "Unauthorized transfer attempt",
+        "False books/records or misleading reports",
+        "Improper disclosure of confidential information",
+        "Non-compete breach or failure to obtain similar covenants from staff",
+        "Trademark misuse or goodwill impairment",
+        "Repeated default after cure (same default again)",
+        "3+ defaults within 12 months (whether or not cured)",
+        "Abandonment",
+        "Insolvency-related events",
+        "IP License Agreement termination"
+      ],
+      "curable_defaults_30_days": "Most other defaults",
+      "curable_defaults_7_days": "Monetary defaults, refuse inspection/audit, not operating during required hours",
+      "source_pages": [186, 187, 188]
+    },
+    "transfer_restrictions": {
+      "section": "Section 15",
+      "all_transfers_require_approval": true,
+      "transfer_definition": "Transfer of any rights, obligations, material assets, or ownership interest",
+      "conditions_transferor": ["Current on obligations", "Not in default", "Pay Transfer Fee", "Execute release"],
+      "conditions_transferee": ["Meet franchisor qualifications", "No conflicting interests", "Sign new FA (may be materially different)", "Upgrade Store", "Complete training"],
+      "rofr": "Franchisor can match any third-party offer (Section 15.6)",
+      "death": "Assign to approved party within 12 months (Section 15.7)",
+      "disability": "Assign within 6 months of permanent disability notice (Sections 15.8, 15.9)",
+      "source_pages": [183, 184, 185]
+    },
+    "noncompete_scope_and_duration": {
+      "section": "Section 18",
+      "during_term": {
+        "scope": "No involvement in any Competitive Business (>50% tea sales or same/similar to Gong cha)",
+        "geographic": "Anywhere (no geographic limit during term)",
+        "family_extension": "Immediate family member engaging in Competitive Business = default",
+        "threshold": "Cannot own more than 1% interest"
+      },
+      "post_term": {
+        "duration": "2 years",
+        "scope": "Same Competitive Business definition",
+        "geographic": "5-mile radius from Store location or any other Gong cha store",
+        "public_company_exception": "Less than 5% beneficial interest in publicly listed corporation"
+      },
+      "personal_covenants": "Must obtain similar covenants from all managers/personnel who receive training or confidential information (Exhibit E form)",
+      "non_dealing": "Cannot engage franchisor's suppliers for direct supply of Products outside the FA (Section 18.10)",
+      "enforcement": "Franchisee pays all enforcement costs; franchisor entitled to injunctive relief",
+      "source_pages": [190, 191, 192]
+    },
+    "guaranty_scope": {
+      "exhibit": "Exhibit C",
+      "type": "Personal guaranty",
+      "scope": "All Principals must sign. Guaranty covers all obligations under FA.",
+      "spousal": "Spouse must sign (flagged as Special Risk in FDD cover)",
+      "unlimited": "Yes — covers all financial obligations",
+      "source_pages": [4]
+    },
+    "liquidated_damages": {
+      "section": "Section 8.7",
+      "prohibited_product_fee": "$250/day for each day unapproved product/service offered",
+      "notes": "Can increase 25% over FA term. CA addendum notes this may be unenforceable under CA Civil Code §1671.",
+      "source_pages": [165]
+    },
+    "dispute_resolution": {
+      "section": "Section 27",
+      "mediation": {
+        "required": true,
+        "location": "Within 5 miles of franchisor's principal place of business (Boston, MA)",
+        "timeline": "45 days from notice",
+        "exception": "IP disputes, monetary obligations, injunctive relief",
+        "cost_sharing": "Each party bears own costs; split mediator cost"
+      },
+      "arbitration": {
+        "required": true,
+        "body": "American Arbitration Association (AAA)",
+        "arbitrators": 1,
+        "location": "Within 5 miles of franchisor's principal place of business",
+        "class_action_waiver": true,
+        "consolidation_waiver": true,
+        "exception": "IP disputes, confidential information disputes",
+        "injunctive_relief": "Preserved for either party pending arbitration"
+      },
+      "consent_to_jurisdiction": "Massachusetts courts",
+      "governing_law": "Massachusetts (except Lanham Act)",
+      "source_pages": [197, 198, 199]
+    },
+    "insurance_requirements": {
+      "section": "Section 14",
+      "required_coverages": [
+        "Builder's risk (during construction/renovation)",
+        "Data privacy and cyber insurance ($5,000,000/claim)",
+        "Comprehensive general liability ($1,000,000/claim, $2,000,000 aggregate)",
+        "Products liability ($5,000,000 aggregate)",
+        "Automobile liability ($1,000,000 single limit, $3,000,000 aggregate)",
+        "Workers' compensation (statutory)",
+        "All-risks insurance (full replacement cost of FF&E, inventory, leasehold improvements)",
+        "Excess liability ($4,000,000/occurrence)",
+        "Business interruption (actual losses, minimum $1,000,000/occurrence)",
+        "Lease-required additional coverage",
+        "Umbrella policies"
+      ],
+      "franchisor_as_insured": "Must name franchisor as additional named insured",
+      "certificates": "30 days before opening; annually on renewal",
+      "failure_consequence": "Franchisor may obtain coverage and charge franchisee",
+      "source_pages": [181, 182]
+    },
+    "indemnification": {
+      "section": "Section 21",
+      "franchisee_indemnifies_franchisor": true,
+      "scope": "Claims arising from Store operations, franchisee's breach, or franchisee's acts/omissions",
+      "source_pages": [194]
+    },
+    "release_at_signing": {
+      "section": "Section 27.6",
+      "description": "By executing the FA, franchisee releases franchisor from all claims prior to and including the effective date",
+      "scope": "All obligations, debts, liabilities, demands, claims, actions, damage — known or unknown",
+      "notes": "This is a release at initial signing, not just at renewal/transfer. Subject to state law limitations (CA §31512).",
+      "source_pages": [199]
+    },
+    "force_majeure": {
+      "present": false,
+      "notes": "No explicit force majeure clause identified in the FA text extraction."
+    },
+    "distinctive_or_unusual_clauses": [
+      {
+        "clause": "AI/Machine Learning Prohibition",
+        "section": "Item 14 / FA Section 11",
+        "description": "Franchisee may not use confidential information for machine learning, AI model training, algorithm improvement, or similar activities. May not input confidential information into any generative AI platform.",
+        "source_pages": [60]
+      },
+      {
+        "clause": "Competition Law Supplemental Agreement",
+        "section": "Section 26.6",
+        "description": "If franchisor determines amendments needed for competition law compliance, franchisee must execute supplemental agreement 'forthwith on demand'.",
+        "source_pages": [197]
+      },
+      {
+        "clause": "Family Member Non-Compete Extension",
+        "section": "Section 18.2.2",
+        "description": "Immediate family (spouse, domestic partner, parent, child) engaging in a Competitive Business triggers default even if they are not personally subject to the covenants.",
+        "source_pages": [190]
+      },
+      {
+        "clause": "Release at FA Signing",
+        "section": "Section 27.6",
+        "description": "Upon executing the FA, franchisee releases all claims against franchisor prior to effective date. This is at initial signing, not only at renewal.",
+        "source_pages": [199]
+      },
+      {
+        "clause": "Franchisor Discretion Standard",
+        "section": "Section 26.5",
+        "description": "Franchisor's exercise of rights/discretion not subject to limitation or review. Good faith covenant cannot imply obligations inconsistent with FA terms.",
+        "source_pages": [197]
+      }
+    ]
+  }
+}

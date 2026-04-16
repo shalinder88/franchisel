@@ -1,0 +1,93 @@
+{
+  "enrichment_version": "v1",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637911-2025",
+  "brand": "Ivan Ramen",
+  "item19_detail": {
+    "fpr_made": false,
+    "charts": [],
+    "tables": [],
+    "notes": "No financial performance representation is made. The franchisor declines to provide any information about actual or potential financial performance of franchised or company-owned outlets."
+  },
+  "item20_yearly_activity": {
+    "2022": {
+      "franchised": {"start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 0},
+      "company_owned": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+      "transfers": 0
+    },
+    "2023": {
+      "franchised": {"start": 0, "opened": 1, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 0, "end": 1},
+      "company_owned": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+      "transfers": 0,
+      "notes": "Franchised unit was a DoorDash ghost kitchen, not an Ivan Ramen Restaurant"
+    },
+    "2024": {
+      "franchised": {"start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_other": 1, "end": 0},
+      "company_owned": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+      "transfers": 0,
+      "notes": "Ghost kitchen ceased operations"
+    },
+    "projected": {
+      "signed_not_open": [{"state": "Nevada", "count": 1, "entity": "Venetian Las Vegas Gaming LLC"}],
+      "projected_franchise": [{"state": "New York", "count": 1}],
+      "projected_company": []
+    }
+  },
+  "exhibit_structure": {
+    "A": {"type": "Franchise Agreement", "pages": "61-206", "sub_exhibits": 9},
+    "B": {"type": "Area Development Agreement", "pages": "207-271", "sub_exhibits": 5},
+    "C": {"type": "Financial Statements", "pages": "272-311", "years": 3},
+    "D": {"type": "State Administrators", "pages": "312-313"},
+    "E": {"type": "Agents for Service of Process", "pages": "314-316"},
+    "F": {"type": "List of Franchisees", "pages": "317", "count": 1},
+    "G": {"type": "State Addenda", "pages": "318-339", "states": 8},
+    "H": {"type": "State Effective Dates", "pages": "340-341"},
+    "I": {"type": "Receipt", "pages": "342-346"}
+  },
+  "item21_structural_facts": {
+    "auditor": "BMKR LLP",
+    "opinion_type": "unqualified",
+    "going_concern": false,
+    "entity_type": "LLC (single-member as of 1/1/2024)",
+    "tax_treatment": "Pass-through (not subject to income tax)",
+    "fiscal_year_end": "December 31",
+    "years_audited": [2022, 2023, 2024],
+    "prior_period_adjustment_2024": -6770,
+    "prior_period_adjustment_reason": "Incorrectly capitalized organization costs reclassified",
+    "subsequent_event": "$120,000 capital contribution by owner in February 2025"
+  },
+  "item1_structural_facts": {
+    "franchisor_entity_type": "New York LLC",
+    "formation_date": "July 2021",
+    "began_offering_franchises": 2021,
+    "parent": "Ivan Ramen Holdings Co, LLC",
+    "parent_formation": "February 2015",
+    "ip_holder": "Ivan Ramen IP Holdings LLC (Delaware)",
+    "ip_license_type": "Cross-license",
+    "ip_license_term": "20 years, auto-renewable",
+    "ip_license_territory": "US and UK",
+    "affiliates": [
+      {"name": "Ivan Ramen USA LLC", "role": "Operates 1 restaurant in NYC since May 2016"},
+      {"name": "Ramen Junkie USA LLC", "role": "Operated Slurp Shop 2013-Nov 2020 (closed)"},
+      {"name": "Ivan Ramen Consulting Group LLC", "role": "Ghost kitchen licensing (ceased 2024); Ivan Mazemen licensing (UK)"},
+      {"name": "Ivan Ramen IP Holdings LLC", "role": "IP owner and licensor"}
+    ],
+    "international_operations": {
+      "uk_master_franchise": {"sold": "September 2023", "initial_fee": "£1", "royalty": "5%"},
+      "ivan_mazemen": {"territory": "UK and Western Europe", "status": "In development"}
+    }
+  },
+  "item6_fee_attributes": {
+    "royalty_fixed_during_term": true,
+    "brand_fund_established": false,
+    "brand_fund_max_rate": "1.5%",
+    "tech_fee_current": "0%",
+    "tech_fee_max": "1.0%",
+    "proprietary_product_suppliers_affiliated": false,
+    "late_charge_formula_fixed": true,
+    "audit_threshold_percentage": 2,
+    "audit_termination_threshold": 8,
+    "alcohol_restriction_law_provision": true,
+    "total_potential_ongoing_fee_rate": "7.5% of Gross Revenues (5% royalty + 1.5% brand fund + 1.0% tech fee) + $7,333/month proprietary products"
+  }
+}

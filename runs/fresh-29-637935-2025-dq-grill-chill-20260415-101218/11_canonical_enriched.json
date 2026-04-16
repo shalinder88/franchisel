@@ -1,0 +1,99 @@
+{
+  "enrichment_version": "v1",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637935-2025",
+  "brand": "DQ Grill & Chill",
+  "item19_chart_detail": {
+    "schedule_a_years": [
+      {
+        "year": 2021, "count": 247, "average": 1380626, "median": 1365757, "high": 2886417, "low": 518468, "pct_at_above": 48, "excluded_for_partial_year": 29
+      },
+      {
+        "year": 2022, "count": 276, "average": 1358926, "median": 1316913, "high": 3135208, "low": 484663, "pct_at_above": 44, "excluded_for_partial_year": 33
+      },
+      {
+        "year": 2023, "count": 309, "average": 1397343, "median": 1352607, "high": 3336388, "low": 568696, "pct_at_above": 44, "excluded_for_partial_year": 31
+      },
+      {
+        "year": 2024, "count": 321, "average": 1427281, "median": 1355422, "high": 3381809, "low": 583730, "pct_at_above": 44, "excluded_for_partial_year": 19
+      }
+    ],
+    "schedule_b_years": [
+      {
+        "year": 2021, "count": 55, "avg_gross_sales": 1409751, "avg_cogs_pct": 29.80, "avg_labor_pct": 28.62, "avg_controllables_pct": 10.05, "avg_manageable_profit_pct": 31.54, "excluded_from_schedule_a": 91
+      },
+      {
+        "year": 2022, "count": 175, "avg_gross_sales": 1386222, "avg_cogs_pct": 31.84, "avg_labor_pct": 29.17, "avg_controllables_pct": 10.83, "avg_manageable_profit_pct": 28.17, "excluded_from_schedule_a": 101
+      },
+      {
+        "year": 2023, "count": 203, "avg_gross_sales": 1433380, "avg_cogs_pct": 30.39, "avg_labor_pct": 28.53, "avg_controllables_pct": 10.61, "avg_manageable_profit_pct": 30.47, "excluded_from_schedule_a": 106
+      },
+      {
+        "year": 2024, "count": 55, "avg_gross_sales": 1648666, "avg_cogs_pct": 30.69, "avg_labor_pct": 30.28, "avg_controllables_pct": 10.11, "avg_manageable_profit_pct": 28.92, "excluded_from_schedule_a": 285
+      }
+    ],
+    "population_criteria": "Newly constructed freestanding, opened Jan 2014-Dec 2023, all 12 months reported, franchisee-owned",
+    "exclusions": "Texas DQ, conversions, fuel centers, non-traditional, territory operator subfranchised"
+  },
+  "item20_yearly_activity": {
+    "direct_licensed": {
+      "2022": {"start": 1952, "opened": 38, "terminated": 25, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 1965, "transfers": 108},
+      "2023": {"start": 1965, "opened": 41, "terminated": 39, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 1967, "transfers": 101},
+      "2024": {"start": 1967, "opened": 30, "terminated": 28, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 1969, "transfers": 113}
+    },
+    "subfranchised": {
+      "2022": {"start": 569, "opened": 10, "terminated": 7, "end": 572},
+      "2023": {"start": 572, "opened": 9, "terminated": 15, "end": 566},
+      "2024": {"start": 566, "opened": 5, "terminated": 4, "end": 567}
+    },
+    "texas_dq": {
+      "2022": {"start": 586, "opened": 6, "terminated": 7, "end": 585},
+      "2023": {"start": 585, "opened": 3, "terminated": 9, "end": 579},
+      "2024": {"start": 579, "opened": 3, "terminated": 14, "end": 568}
+    },
+    "company_owned": {
+      "count": 2, "state": "Minnesota", "operator": "DQTR", "stable": true
+    },
+    "projected_openings": {
+      "signed_not_open": 26, "projected_new_franchised": 38, "projected_company_owned": 0
+    }
+  },
+  "exhibit_structure": {
+    "total_exhibits": 13,
+    "exhibits": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"],
+    "financial_statements_exhibit": "L",
+    "franchise_agreement_exhibit": "B",
+    "franchisee_lists_exhibit": "J",
+    "terminated_lists_exhibit": "K"
+  },
+  "item1_structural_facts": {
+    "incorporation_state": "Delaware",
+    "incorporation_year": 1962,
+    "parent_chain": ["American Dairy Queen Corporation", "International Dairy Queen, Inc.", "Berkshire Hathaway, Inc."],
+    "affiliates": [
+      {"name": "USCI", "full_name": "Unified Supply Chain, Inc.", "role": "supply chain"},
+      {"name": "DQF", "full_name": "DQF, Inc.", "role": "financing services"},
+      {"name": "DQGC", "full_name": "DQGC, Inc.", "role": "gift card services"},
+      {"name": "DQC", "full_name": "Dairy Queen Canada Inc.", "role": "Canadian franchise operations"},
+      {"name": "DQTR", "full_name": "DQ Training Restaurants, LLC", "role": "operates 2 G&C training restaurants in MN"}
+    ],
+    "franchise_formats": ["DQ Grill & Chill (this FDD)", "DQ Treat", "Texas DQ Restaurant"],
+    "conversion_programs": ["NSF conversion", "Soft-serve only conversion", "Limited system food conversion"],
+    "multi_unit_program": "MultiTRA (entities only, not individuals)"
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": 0.04,
+    "royalty_base": "Gross Sales",
+    "sales_promotion_rate_range": [0.05, 0.06],
+    "total_ongoing_fee_range": [0.09, 0.10],
+    "transfer_fee": 6000,
+    "transfer_fee_escalation": "$500 every 5 years starting Jan 1, 2030",
+    "renewal_fee": 22500,
+    "termination_fee_formula": "2x royalty for last 12 months",
+    "interest_rate_past_due": 0.18,
+    "late_fee": 50,
+    "gift_card_fee_pct": 0.03,
+    "conversion_royalty_adjustments": true,
+    "relocation_royalty_adjustments": true
+  }
+}

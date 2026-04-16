@@ -1,0 +1,44 @@
+{
+  "retry_id": "R3",
+  "target": "Item 19 Part 1 — Aggregate Revenue Statistics",
+  "source_pages": [41, 42],
+  "statistics": {
+    "studios_count": 17,
+    "period": "12 months ending December 31, 2024",
+    "total_gross_revenue_all_17": 12210073,
+    "mean_gross_revenue": 718239,
+    "median_gross_revenue": 670576,
+    "min_gross_revenue": {"studio": "Madison", "amount": 137328},
+    "max_gross_revenue": {"studio": "Miami - Brickell", "amount": 1452077},
+    "quartiles": {
+      "q1_threshold": 336138,
+      "q2_median": 670576,
+      "q3_threshold": 936282
+    },
+    "bottom_quartile_studios": [
+      {"studio": "Madison", "revenue": 137328, "monthly_avg": 11444},
+      {"studio": "Coral Springs", "revenue": 314313, "monthly_avg": 26193},
+      {"studio": "Austin Zilker", "revenue": 334515, "monthly_avg": 27879},
+      {"studio": "Austin - Highland", "revenue": 336138, "monthly_avg": 27751}
+    ],
+    "top_quartile_studios": [
+      {"studio": "Miami Lakes", "revenue": 936282, "monthly_avg": 78024},
+      {"studio": "Upper East Side", "revenue": 1074000, "monthly_avg": 89500},
+      {"studio": "NYC - Chelsea", "revenue": 1105235, "monthly_avg": 92103},
+      {"studio": "South Beach", "revenue": 1295055, "monthly_avg": 107921},
+      {"studio": "Miami - Brickell", "revenue": 1452077, "monthly_avg": 121006}
+    ],
+    "studios_above_500k": 10,
+    "studios_below_500k": 7,
+    "pct_above_500k": 58.8,
+    "parent_officer_studios_in_top_quartile": 3,
+    "franchisee_only_mean": 607744,
+    "franchisee_only_median": 540846,
+    "notes": [
+      "Revenue sorted: 137K, 314K, 335K, 336K, 494K, 541K, 557K, 565K, 671K, 729K, 778K, 889K, 936K, 1,074K, 1,105K, 1,295K, 1,452K",
+      "4 of 17 studios are parent/officer-owned and skew toward top of range",
+      "Franchisee-only stats (13 studios): mean ~$608K, median ~$541K",
+      "Bottom-quartile studios (under ~$336K) generate monthly revenue below likely breakeven"
+    ]
+  }
+}

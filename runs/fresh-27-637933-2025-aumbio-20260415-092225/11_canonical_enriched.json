@@ -1,0 +1,66 @@
+{
+  "enrichment_version": "v1",
+  "enrichment_date": "2026-04-15",
+  "item19_chart_detail": {
+    "fpr_provided": false,
+    "charts": [],
+    "note": "No financial performance representation provided. Franchisor makes no earnings claims."
+  },
+  "item20_yearly_activity": {
+    "franchised": {
+      "2022": {"start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 0},
+      "2023": {"start": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 0},
+      "2024": {"start": 1, "opened": 0, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased": 0, "end": 0, "discrepancy_note": "Arithmetic discrepancy: 1 - 0 = 1, not 0"}
+    },
+    "company_owned": {
+      "2022": {"start": 2, "opened": 1, "reacquired": 0, "closed": 0, "sold_to_franchisee": 0, "end": 3, "states": ["IL"]},
+      "2023": {"start": 3, "opened": 0, "reacquired": 0, "closed": 0, "sold_to_franchisee": 0, "end": 3, "states": ["IL"]},
+      "2024": {"start": 3, "opened": 0, "reacquired": 0, "closed": 0, "sold_to_franchisee": 0, "end": 3, "states": ["IL"]}
+    },
+    "projected_openings_2025": {"Wisconsin": 1},
+    "transfers": {"2022": 0, "2023": 0, "2024": 0}
+  },
+  "exhibit_structure": {
+    "state_addenda": {"page_range": [41, 50], "states": ["CA", "CT", "HI", "IL", "IN", "MD", "MN", "NY", "ND", "RI", "VA", "WA", "WI"]},
+    "A_state_administrators": {"page_range": [51, 53], "states": 14},
+    "B_franchise_agreement": {"page_range": [54, 126], "articles": 30, "schedules": 8, "has_il_rider": true},
+    "C_muda": {"page_range": [127, 143], "articles": 18, "schedules": 2, "has_il_rider": true},
+    "D_financial_statements": {"page_range": [145, 153], "image_only": true, "auditor": "Muhammad Zubairy, CPA PC"},
+    "E_franchisee_list": {"page_range": [154, 154], "count": 0},
+    "F_ops_manual_toc": {"page_range": [155, 155], "total_pages": 121, "sections": 9},
+    "G_receipt": {"page_range": [156, 158]}
+  },
+  "item21_structural_facts": {
+    "entity_type": "LLC",
+    "tax_treatment": "Pass-through (taxable income flows to members)",
+    "fiscal_year_end": "December 31",
+    "accounting_basis": "Accrual, GAAP",
+    "auditor": "Muhammad Zubairy, CPA PC",
+    "auditor_location": "Westbury, NY",
+    "opinion_type": "Unqualified",
+    "going_concern_flag": false,
+    "years_in_business": "Less than 3 (formed August 2023)",
+    "revenue_recognition": "ASC 606; franchise fees amortized over FA life",
+    "subsequent_events": "None through March 12, 2025"
+  },
+  "item1_structural_facts": {
+    "formation_date": "2023-08-28",
+    "state_of_formation": "Illinois",
+    "entity_type": "LLC",
+    "franchising_since": "2023-10-17",
+    "operates_centers": false,
+    "predecessor_operates_centers": true,
+    "predecessor_center_count": 3,
+    "trademark_ownership": "Licensed from Aum-Bio, Inc.",
+    "trademark_license_term": "25 years + two 25-year renewals",
+    "sole_principal": "Kamil Czubacki"
+  },
+  "item6_fee_attributes": {
+    "royalty": {"rate": "6%", "basis": "Gross Revenues", "frequency": "monthly", "collection": "auto bank draft"},
+    "brand_fund": {"rate": "1%", "basis": "Gross Revenue", "frequency": "monthly", "company_contributes": false},
+    "technology_fee": {"amount": 100, "frequency": "monthly", "includes": ["client management system", "website maintenance", "upgrades"]},
+    "local_marketing": {"minimum": 1500, "frequency": "monthly"},
+    "transfer_fee": {"rate": "50% of then-current IFF", "trigger": ">50% interest transfer"},
+    "liquidated_damages": {"formula": "avg monthly royalty x 24 months or remaining term", "trigger": "default termination or unauthorized franchisee termination"}
+  }
+}

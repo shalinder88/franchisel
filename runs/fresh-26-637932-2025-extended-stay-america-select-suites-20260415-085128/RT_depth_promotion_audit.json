@@ -1,0 +1,62 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637932-2025",
+  "promoted_facts": [
+    {
+      "fact": "Waiver of punitive damages — franchisee limited to actual damages only",
+      "source_reader_report": "Pass E (Contract Burden)",
+      "source_pdf_page": 105,
+      "promoted_to": "09_final_canonical.json → dispute_resolution.waivers"
+    },
+    {
+      "fact": "Waiver of class actions — neither party may litigate as class representative",
+      "source_reader_report": "Pass E (Contract Burden)",
+      "source_pdf_page": 105,
+      "promoted_to": "09_final_canonical.json → dispute_resolution.waivers"
+    },
+    {
+      "fact": "Business judgment deference clause (Section 18.3) — courts/arbitrators may not substitute their judgment for franchisor's",
+      "source_reader_report": "Depth Pass 2",
+      "source_pdf_page": 103,
+      "promoted_to": "09_final_canonical.json → distinctive_clauses"
+    },
+    {
+      "fact": "Suspension/interim remedies available (Section 15.3) — franchisor may suspend rather than terminate",
+      "source_reader_report": "Depth Pass 2",
+      "source_pdf_page": 99,
+      "promoted_to": "09_final_canonical.json → termination"
+    },
+    {
+      "fact": "Total franchised system across all ESA brands: 129 hotels, 13,351 rooms (Dec 31 2024)",
+      "source_reader_report": "Depth Pass 1 (financial notes)",
+      "source_pdf_page": 176,
+      "promoted_to": "09_final_canonical.json → system_overview"
+    },
+    {
+      "fact": "Related party overhead reimbursements to ESA Management: $6.6M in 2024 (included in G&A)",
+      "source_reader_report": "Depth Pass 1 (financial notes)",
+      "source_pdf_page": 180,
+      "promoted_to": "09_final_canonical.json → item21_financials.observations"
+    },
+    {
+      "fact": "Contract liabilities (deferred revenue) increased from $4.5M to $4.8M — indicating growing franchise pipeline",
+      "source_reader_report": "Depth Pass 1 (financial notes)",
+      "source_pdf_page": 180,
+      "promoted_to": "09_final_canonical.json → item21_financials.observations"
+    },
+    {
+      "fact": "Brand launch expense: $2.5M paid to existing franchisees for territory exemptions; $1.6M still accrued",
+      "source_reader_report": "Depth Pass 1 (financial notes)",
+      "source_pdf_page": 179,
+      "promoted_to": "09_final_canonical.json → item21_financials.observations"
+    },
+    {
+      "fact": "Exhibit D labeling inconsistency: signed-not-open section labeled as Premier Suites rather than Select Suites",
+      "source_reader_report": "Pass K (Contradictions)",
+      "source_pdf_page": 196,
+      "promoted_to": "09_final_canonical.json → contradictions"
+    }
+  ],
+  "total_promoted": 9
+}

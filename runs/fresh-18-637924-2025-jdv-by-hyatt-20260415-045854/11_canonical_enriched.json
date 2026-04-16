@@ -1,0 +1,121 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637924-2025",
+  "brand": "JdV by Hyatt",
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "fpr_count": 3,
+    "fpr1": {
+      "title": "Occupancy Rate, ADR, and RevPAR for 2024",
+      "population": 18,
+      "franchised_count": 6,
+      "owned_managed_count": 12,
+      "metrics": {
+        "franchised": {"occupancy": 0.561, "adr": 195.80, "revpar": 109.83},
+        "owned_managed": {"occupancy": 0.713, "adr": 247.20, "revpar": 176.21},
+        "all": {"occupancy": 0.656, "adr": 230.65, "revpar": 151.22}
+      },
+      "franchised_stats": {
+        "occupancy": {"high": 0.859, "low": 0.396, "median": 0.531, "num_exceeding": 2, "pct_exceeding": 0.333},
+        "adr": {"high": 312.37, "low": 148.79, "median": 200.79, "num_exceeding": 5, "pct_exceeding": 0.833},
+        "revpar": {"high": 175.63, "low": 68.02, "median": 107.85, "num_exceeding": 3, "pct_exceeding": 0.50}
+      }
+    },
+    "fpr2": {
+      "title": "Smith Travel Indices for 2024",
+      "source": "Smith Travel Research, Inc.",
+      "metrics": {
+        "franchised": {"occ_index": 100.4, "rate_index": 96.1, "revpar_index": 95.3},
+        "owned_managed": {"occ_index": 99.0, "rate_index": 91.6, "revpar_index": 92.4},
+        "all": {"occ_index": 99.5, "rate_index": 93.1, "revpar_index": 93.4}
+      }
+    },
+    "fpr3": {
+      "title": "World of Hyatt Contribution for 2024",
+      "metrics": {
+        "franchised": {"pct_revenue_woh": 0.498, "pct_room_nights_woh": 0.409, "avg_woh_room_nights": 11379},
+        "owned_managed": {"pct_revenue_woh": 0.528, "pct_room_nights_woh": 0.463, "avg_woh_room_nights": 18059},
+        "all": {"pct_revenue_woh": 0.520, "pct_room_nights_woh": 0.445, "avg_woh_room_nights": 15387}
+      }
+    },
+    "channel_mix": {
+      "franchised": {"direct": 0.628, "indirect": 0.372},
+      "owned_managed": {"direct": 0.568, "indirect": 0.432},
+      "all": {"direct": 0.584, "indirect": 0.416}
+    }
+  },
+  "item20_yearly_activity": {
+    "systemwide": [
+      {"year": 2022, "start": 14, "end": 15, "net": 1},
+      {"year": 2023, "start": 15, "end": 17, "net": 2},
+      {"year": 2024, "start": 17, "end": 18, "net": 1}
+    ],
+    "franchised": [
+      {"year": 2022, "start": 3, "end": 3, "opened": 0, "terminated": 0, "net": 0},
+      {"year": 2023, "start": 3, "end": 5, "opened": 2, "terminated": 0, "net": 2},
+      {"year": 2024, "start": 5, "end": 6, "opened": 2, "terminated": 1, "net": 1}
+    ],
+    "company_owned": [
+      {"year": 2022, "start": 11, "end": 12, "opened": 1, "closed": 0, "sold": 0, "net": 1},
+      {"year": 2023, "start": 12, "end": 12, "opened": 3, "closed": 2, "sold": 1, "net": 0},
+      {"year": 2024, "start": 12, "end": 12, "opened": 0, "closed": 0, "sold": 0, "net": 0}
+    ],
+    "projected": {
+      "signed_not_open": 5,
+      "projected_franchise_next_fy": 2,
+      "projected_company_next_fy": 0,
+      "states_pipeline": ["Alaska", "Georgia", "New York", "Oregon", "South Carolina"]
+    }
+  },
+  "exhibit_structure": {
+    "total_exhibits": 13,
+    "exhibits": [
+      {"letter": "A", "pages": "93-168", "type": "financial"},
+      {"letter": "B", "pages": "169-176", "type": "contract"},
+      {"letter": "C", "pages": "177-267", "type": "contract"},
+      {"letter": "D", "pages": "268-290", "type": "operational"},
+      {"letter": "E", "pages": "291-294", "type": "regulatory"},
+      {"letter": "F", "pages": "295-299", "type": "operational"},
+      {"letter": "G", "pages": "300-305", "type": "contract"},
+      {"letter": "H", "pages": "306-308", "type": "franchisee_list"},
+      {"letter": "I", "pages": "309-310", "type": "franchisee_list"},
+      {"letter": "J", "pages": "311-322", "type": "contract"},
+      {"letter": "K", "pages": "323-328", "type": "contract"},
+      {"letter": "L", "pages": "329-354", "type": "contract"},
+      {"letter": "M", "pages": "355-377", "type": "regulatory"}
+    ]
+  },
+  "item21_structural_facts": {
+    "parent_auditor": "Deloitte & Touche LLP",
+    "parent_auditor_since": 2003,
+    "parent_opinion": "unqualified",
+    "parent_fiscal_years": [2024, 2023, 2022],
+    "performance_guarantee": true,
+    "guarantee_type": "absolute and unconditional",
+    "franchisor_audited": false,
+    "franchisor_statement_type": "unaudited balance sheet only",
+    "critical_audit_matters": ["Loyalty program deferred revenue liability", "Goodwill impairment ($110M)"]
+  },
+  "item1_structural_facts": {
+    "entity_type": "Delaware LLC",
+    "conversion_history": "Converted from Hyatt Franchise Corporation to LLC",
+    "brand_acquisition": "Two Roads Hospitality acquired December 2018",
+    "franchising_since": "May 2019",
+    "other_brands_offered": ["Hyatt", "Hyatt Regency", "Hyatt Centric", "Hyatt Place", "Hyatt House", "Destination by Hyatt", "The Unbound Collection by Hyatt", "Caption by Hyatt", "Hyatt Studios"],
+    "key_affiliates": ["Hyatt Corporation", "Rosemont Project Management, L.L.C.", "Hyatt Franchising Canada Corp.", "Hyatt Place Franchising, L.L.C.", "Hyatt House Franchising, L.L.C.", "Hyatt Franchising Latin America, L.L.C."],
+    "concept": "Lifestyle resort hotel under franchisee-owned tradename affiliated with JdV by Hyatt brand"
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": 0.07,
+    "royalty_basis": "Gross Rooms Revenue from Channel Bookings",
+    "commercial_services_rate": 0.035,
+    "digital_acquisition_rate": 0.0135,
+    "loyalty_rate": 0.045,
+    "loyalty_reduced_rate": 0.0225,
+    "ad_fund_exists": false,
+    "ad_cooperatives": false,
+    "ad_fund_accounting_provided": false,
+    "transfer_fee": "No separate fee; transferee pays Application Fee",
+    "late_fee": "$225 + 1.5%/month"
+  }
+}

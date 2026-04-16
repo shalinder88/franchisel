@@ -1,0 +1,98 @@
+{
+  "enrichment_version": "v1",
+  "enrichment_date": "2026-04-14",
+  "base_file": "09_final_canonical.json",
+  "enrichments": {
+    "item19_chart_detail": {
+      "annual_performance": {
+        "reporting_period": "2024-02-01 to 2025-01-31",
+        "total_operational": 468,
+        "total_excluded": 314,
+        "tiers": {
+          "professional": {"count": 111, "avg_revenue": 162542, "median_revenue": 161648, "low": 20000, "high": 488750, "avg_days": 33, "avg_fee": 4995, "median_fee": 4928},
+          "certified": {"count": 254, "avg_revenue": 413902, "median_revenue": 389250, "low": 132500, "high": 1014000, "avg_days": 72, "avg_fee": 5706, "median_fee": 5537},
+          "expert": {"count": 103, "avg_revenue": 704649, "median_revenue": 666750, "low": 219000, "high": 1583500, "avg_days": 98, "avg_fee": 7176, "median_fee": 6987}
+        }
+      },
+      "historical_400k": {
+        "population": 350,
+        "milestones_within_3_years": {
+          "100k": {"count": 333, "pct": 95.42},
+          "200k": {"count": 271, "pct": 77.65},
+          "300k": {"count": 197, "pct": 56.45},
+          "400k": {"count": 123, "pct": 35.24}
+        },
+        "milestones_lifetime": {
+          "400k": {"count": 219, "pct": 62.22},
+          "500k": {"count": 178, "pct": 50.57},
+          "600k": {"count": 122, "pct": 34.66},
+          "700k": {"count": 80, "pct": 22.73},
+          "800k": {"count": 52, "pct": 14.77},
+          "900k": {"count": 29, "pct": 8.24},
+          "1m": {"count": 19, "pct": 5.40}
+        }
+      }
+    },
+    "item20_yearly_activity": {
+      "2022": {"start": 389, "opened": 150, "terminations": 1, "non_renewals": 0, "ceased_other": 13, "end": 525, "gross_attrition_rate": "3.6%"},
+      "2023": {"start": 525, "opened": 160, "terminations": 0, "non_renewals": 0, "ceased_other": 23, "end": 662, "gross_attrition_rate": "4.4%"},
+      "2024": {"start": 662, "opened": 122, "terminations": 3, "non_renewals": 0, "ceased_other": 49, "end": 732, "gross_attrition_rate": "7.9%"},
+      "top_states_by_count": [
+        {"state": "TX", "count_2024": 76},
+        {"state": "MI", "count_2024": 46},
+        {"state": "CA", "count_2024": 43},
+        {"state": "MN", "count_2024": 38},
+        {"state": "CO", "count_2024": 35},
+        {"state": "FL", "count_2024": 33},
+        {"state": "OH", "count_2024": 33},
+        {"state": "PA", "count_2024": 31},
+        {"state": "NY", "count_2024": 30},
+        {"state": "NC", "count_2024": 28}
+      ]
+    },
+    "exhibit_structure": {
+      "total_exhibits": 11,
+      "critical_exhibits": ["A", "B", "D"],
+      "franchise_agreement_sections": 21,
+      "franchise_agreement_pages": 62,
+      "state_addenda_count": 15,
+      "financial_statement_format": "image_based_rendered_pdftoppm"
+    },
+    "item21_structural_facts": {
+      "auditor": "RSM US LLP",
+      "opinion": "unqualified",
+      "going_concern": false,
+      "entity_type": "LLC",
+      "tax_treatment": "disregarded_for_federal_income_tax",
+      "revenue_recognition": "ASC_606",
+      "vie_election": "elected_not_to_apply_ASU_2018-17",
+      "has_fixed_assets": false,
+      "has_inventory": false,
+      "has_long_term_debt": false,
+      "deferred_revenue_source": "Boot Camp fees and franchise fees"
+    },
+    "item1_structural_facts": {
+      "franchise_model": "sole_practitioner_consultancy",
+      "physical_location": "not_required",
+      "home_based": true,
+      "franchise_start_date": "2021-02-16",
+      "predecessor_model": "membership_based",
+      "international_operations": true,
+      "international_regions": ["UK", "Australia", "Netherlands"],
+      "company_operated_outlets": 0,
+      "franchisor_competes": true
+    },
+    "item6_fee_attributes": {
+      "royalty_model": "flat_monthly",
+      "percentage_royalty": false,
+      "brand_fund_active": false,
+      "technology_fee_active": false,
+      "warm_leads_fee_rate": 0.50,
+      "warm_leads_minimum": 1500,
+      "speaking_referral_rate": 0.25,
+      "transfer_fee": 5000,
+      "effective_royalty_rate_professional_avg": "10.3%",
+      "effective_royalty_rate_expert_avg": "2.9%"
+    }
+  }
+}

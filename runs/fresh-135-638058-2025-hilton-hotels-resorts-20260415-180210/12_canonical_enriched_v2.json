@@ -1,0 +1,140 @@
+{
+  "fdd_id": "638058-2025",
+  "brand": "Hilton Hotels & Resorts",
+  "enrichment_version": "v2",
+  "item19_detail": {
+    "fpr_provided": true,
+    "comparable_hotels": 199,
+    "total_system_hotels": 242,
+    "non_comparable_excluded": 43,
+    "company_managed": 46,
+    "franchisee_managed": 153,
+    "charts": [
+      {
+        "id": "room_rate",
+        "title": "Room Rate",
+        "years": ["2023", "2024"],
+        "average": {"2023": "$207.33", "2024": "$209.86"},
+        "median": {"2023": "$183.16", "2024": "$188.04"},
+        "range": {"2023": "$93.59–$598.01", "2024": "$112.15–$645.25"},
+        "pct_company_above_avg": {"2023": "55.3%", "2024": "57.4%"},
+        "pct_franchisee_above_avg": {"2023": "27.5%", "2024": "24.8%"},
+        "pct_company_above_median": {"2023": "74.5%", "2024": "76.6%"},
+        "pct_franchisee_above_median": {"2023": "42.5%", "2024": "41.8%"}
+      },
+      {
+        "id": "occupancy",
+        "title": "Occupancy",
+        "years": ["2023", "2024"],
+        "average": {"2023": "69.2%", "2024": "69.5%"},
+        "median": {"2023": "68.5%", "2024": "69.5%"},
+        "range": {"2023": "41.9%–95.1%", "2024": "38.4%–98.4%"},
+        "pct_company_above_avg": {"2023": "38.3%", "2024": "51.1%"},
+        "pct_franchisee_above_avg": {"2023": "49.0%", "2024": "51.0%"}
+      },
+      {
+        "id": "occupancy_index",
+        "title": "Occupancy Index",
+        "years": ["2023", "2024"],
+        "average": {"2023": "105.0", "2024": "104.1"},
+        "median": {"2023": "106.0", "2024": "105.8"},
+        "range": {"2023": "72.1–153.5", "2024": "56.6–155.6"},
+        "note": "100 = fair share. Excludes 1 hotel with insufficient data."
+      },
+      {
+        "id": "revpar_index",
+        "title": "RevPAR Index",
+        "years": ["2023", "2024"],
+        "average": {"2023": "106.0", "2024": "104.7"},
+        "median": {"2023": "108.6", "2024": "107.9"},
+        "range": {"2023": "64.7–325.4", "2024": "52.1–282.1"},
+        "note": "100 = fair share. Excludes 1 hotel with insufficient data."
+      }
+    ],
+    "cost_data_disclosed": false,
+    "ebitda_disclosed": false
+  },
+  "item20_yearly_activity": {
+    "2024": {"start": 189, "opened": 4, "terminations": 3, "non_renewals": 0, "transfers": 3, "end": 187},
+    "2023": {"start": 188, "opened": 0, "terminations": 1, "non_renewals": 1, "transfers": 2, "end": 189},
+    "2022": {"start": 188, "opened": 4, "terminations": 2, "non_renewals": 0, "transfers": 4, "end": 188}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 20,
+    "critical": ["C (Financial Statements)", "D (Franchise Agreement)", "J-1 (State Addenda to FDD)"],
+    "high": ["A (Franchisee List)", "B (Former Franchisees)", "D-1 (State Addenda to FA)", "E (Guaranty)", "G (HITS Agreement)"],
+    "medium": ["D-2 (Dev Incentive Note)", "F (Application)", "K (Lender Comfort)"],
+    "low": ["D-3 (Spa)", "D-4 (Restaurant)", "H-1/2/3 (Manual TOCs)", "I (State Admin)", "J-2 (Restaurant Addendum)", "L (Effective Dates)", "M (Receipts)"]
+  },
+  "item21_structural": {
+    "auditor": "Cherry Bekaert",
+    "opinion": "Unqualified (clean)",
+    "going_concern": false,
+    "fiscal_year_end": "December 31",
+    "years_covered": [2022, 2023, 2024],
+    "entity_type": "Delaware LLC, disregarded entity for US tax",
+    "parent_subsidiary_cash_management": true,
+    "debt_guarantee": true,
+    "debt_maturity_range": "2025–2033"
+  },
+  "item1_structural": {
+    "formation_date": "September 2007",
+    "operations_start": "March 30, 2015",
+    "brand_history_since": 1946,
+    "total_hilton_brands": 20,
+    "international_affiliates": 4,
+    "service_affiliates": ["Hilton Reservations Worldwide", "Hilton Supply Management", "Hilton Honors Worldwide", "Hilton Systems Solutions"]
+  },
+  "item6_fee_attributes": {
+    "royalty_negotiable": true,
+    "royalty_modifications_2024": 11,
+    "program_fee_cap": "Current rate + 1% GRR over term",
+    "total_estimated_core_fee_burden": "16.75%–17.05% of GRR",
+    "liquidated_damages_formula": "Up to 60× average monthly royalty",
+    "late_payment_rate": "1.5%/month or max legal rate"
+  },
+  "item21_financial_structure": {
+    "entity_type": "Single-purpose franchise pass-through",
+    "operating_margin_2024": "99.2%",
+    "revenue_composition": {"franchise_royalty": "95.5%", "sales_coo_fees": "3.3%", "termination_other": "1.2%"},
+    "asset_composition": {"intercompany_receivables": "55.4%", "franchise_contracts": "30.9%", "ar": "10.7%", "other": "2.9%"},
+    "distributions_exceed_income": true,
+    "debt_guarantee": true
+  },
+  "item21_statement_detail": {
+    "revenue_growth_2023_2024": "9.1%",
+    "revenue_growth_2022_2023": "12.0%",
+    "provision_for_credit_losses_trend": "Increasing ($6.2M 2024 vs $4.4M 2023)",
+    "deferred_revenue_growth": "6.6% ($559M vs $524M)",
+    "graduate_acquisition_impact": "$85M intangible, $3.8M amortization in partial year"
+  },
+  "item6_fee_detail": {
+    "fee_categories": {
+      "core_recurring": ["royalty", "program_fee", "fb_fee", "spa_royalty", "onq_fbpp"],
+      "loyalty_distribution": ["hilton_honors", "hilton_advance", "aaa_caa", "consortia", "tmc_programs", "us_govt", "group_preferred", "fastpay", "tpcp", "resmax"],
+      "quality_enforcement": ["brand_non_compliance", "stay_score_failure", "service_quality_improvement", "plans_designs_late", "pip_renovation_failure"],
+      "training_conference": ["brand_conference", "gm_training", "sales_training", "other_training"],
+      "transfer_remedies": ["coo_fee", "permitted_transfer_fee", "lender_comfort", "liquidated_damages", "late_payment", "indemnification"],
+      "technology": ["onq_fbpp", "connected_room_maintenance", "delphi", "onq_email", "onq_interface"],
+      "optional_programs": ["add_on_program", "online_group_booking", "hilton_for_business", "restaurant_brand_annual"]
+    },
+    "total_fee_categories_count": 40
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "No renewal right with $50M–$204M investment", "severity": "high", "source": "Item 17, p.81"},
+    {"id": "U2", "description": "All assets pledged as Hilton parent debt collateral", "severity": "high", "source": "Exhibit C Note 7, p.123"},
+    {"id": "U3", "description": "5 pending antitrust class actions (IDeaS/STR/Amadeus)", "severity": "medium", "source": "Item 3, pp.19–20"},
+    {"id": "U4", "description": "Gag clause restricts franchisee communication", "severity": "medium", "source": "Item 20, p.98"},
+    {"id": "U5", "description": "No protected territory by default", "severity": "medium", "source": "Item 12, p.71"},
+    {"id": "U6", "description": "No cost/profitability data in Item 19", "severity": "medium", "source": "Item 19, p.93"},
+    {"id": "U7", "description": "Liquidated damages uses system avg that may exceed hotel avg", "severity": "low", "source": "Item 6, pp.41–42"},
+    {"id": "U8", "description": "Subsequent events note date error (2024 vs 2025)", "severity": "low", "source": "Exhibit C Note 9, p.125"}
+  ],
+  "contradictions": [],
+  "state_addenda_overrides": {
+    "states_count": 11,
+    "states": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "override_families": ["forum_selection", "governing_law", "liquidated_damages", "termination", "general_release", "noncompete", "renewal", "no_hire"],
+    "most_protective_state": "North Dakota (all liquidated damages deleted, ND law governs, out-of-state venue deleted)"
+  }
+}

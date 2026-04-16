@@ -1,0 +1,71 @@
+{
+  "enrichment_version": "v1",
+  "fdd_id": "638056-2025",
+  "brand": "Hampton Inn / Hampton Inn & Suites",
+  "item19_chart_detail": {
+    "charts": [
+      {"id": "room_rates_hi", "title": "Room Rates — Comparable Hampton Inn Hotels", "years": [2023, 2024], "metrics": ["avg_rate", "median_rate", "pct_above_avg_cm", "pct_above_avg_fm"], "source_page": 83},
+      {"id": "room_rates_hs", "title": "Room Rates — Comparable Hampton Inn & Suites Hotels", "years": [2023, 2024], "source_page": 83},
+      {"id": "occupancy_combined", "title": "Occupancy — Combined Comparable Hotels", "years": [2023, 2024], "source_page": 83},
+      {"id": "occupancy_index", "title": "Occupancy Index — Combined Comparable Hotels", "years": [2023, 2024], "source_page": 84},
+      {"id": "revpar_index", "title": "RevPAR Index — Combined Comparable Hotels", "years": [2023, 2024], "source_page": 85}
+    ],
+    "data_quality": "Reported by individual hotels to Hilton. STR competitive set data self-selected. Not audited.",
+    "comparable_definition": "Active for at least 1 full calendar year, open Jan 1 of prior year, no brand/ownership change, no substantial damage or large-scale capital projects, no significant room count change."
+  },
+  "item20_yearly_activity": {
+    "hampton_inn": {
+      "2022": {"start": 1323, "opened": 17, "terminated": 6, "non_renewed": 3, "ceased_other": 0, "end": 1331},
+      "2023": {"start": 1331, "opened": 25, "terminated": 10, "non_renewed": 0, "ceased_other": 0, "end": 1346},
+      "2024": {"start": 1346, "opened": 13, "terminated": 8, "non_renewed": 4, "ceased_other": -2, "end": 1345}
+    },
+    "hampton_inn_suites": {
+      "2022": {"start": 986, "opened": 19, "terminated": 3, "non_renewed": 0, "ceased_other": 0, "end": 1002},
+      "2023": {"start": 1002, "opened": 14, "terminated": 1, "non_renewed": 0, "ceased_other": 0, "end": 1015},
+      "2024": {"start": 1015, "opened": 12, "terminated": 0, "non_renewed": 2, "ceased_other": -1, "end": 1024}
+    },
+    "transfers": {
+      "hi_2022": 88, "hi_2023": 76, "hi_2024": 65,
+      "hs_2022": "not totaled", "hs_2023": "not totaled", "hs_2024": "estimated ~48"
+    }
+  },
+  "exhibit_structure": {
+    "total_exhibits": 16,
+    "high_priority": ["A", "B", "C", "D"],
+    "medium_priority": ["D-1", "D-2", "E", "G", "J-1"],
+    "low_priority": ["F", "H", "I", "J-2", "K", "L", "M"],
+    "franchise_agreement_pages": 56,
+    "financial_statement_pages": 13,
+    "state_addenda_combined_pages": 22
+  },
+  "item21_structural_facts": {
+    "entity_type": "single-purpose franchise fee conduit",
+    "operating_model": "licenses IP from affiliate HIH royalty-free, sublicenses to franchisees",
+    "revenue_composition_2024": {
+      "franchise_royalty_fees_pct": 95.5,
+      "franchise_sales_coo_fees_pct": 3.3,
+      "termination_fees_other_pct": 1.2
+    },
+    "expense_ratio_2024": 0.76,
+    "distribution_exceeds_income": true,
+    "intercompany_receivable_to_assets_pct": 55.4
+  },
+  "item1_structural_facts": {
+    "other_hilton_brands_count": 20,
+    "international_franchise_affiliates": 4,
+    "key_service_affiliates": 4,
+    "years_franchising_hampton": 42,
+    "years_franchising_hampton_suites": 32
+  },
+  "item6_fee_attributes": {
+    "royalty_fixed_or_variable": "variable (percentage of GRR)",
+    "royalty_negotiable": true,
+    "royalty_modifications_2024": 66,
+    "program_fee_capped": true,
+    "program_fee_cap_formula": "current rate + 1% of GRR over term",
+    "loyalty_fee_mandatory": true,
+    "tech_fees_recurring": true,
+    "qa_fees_punitive": true,
+    "liquidated_damages_multiplier": 60
+  }
+}

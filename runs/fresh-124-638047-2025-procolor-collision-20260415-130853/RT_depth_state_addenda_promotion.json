@@ -1,0 +1,168 @@
+{
+  "depth_pass": "state_addenda_structured_promotion",
+  "source_exhibit": "Exhibit A",
+  "source_pages": [64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75],
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Minnesota", "New York", "Wisconsin"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "general_release",
+      "override_summary": "California Corporations Code Section 31512 provides that any condition purporting to bind a franchisee to waive compliance with the Franchise Investment Law is void.",
+      "why_it_matters": "Release signed at renewal/transfer cannot waive franchise law claims. Franchisee retains all statutory protections.",
+      "source_pages": [65, 66]
+    },
+    {
+      "state": "California",
+      "affected_family": "forum_selection",
+      "override_summary": "The Franchise Agreement requires application of Minnesota law and forum. This provision may not be enforceable under California law.",
+      "why_it_matters": "California franchisees may be able to litigate in California despite the Minnesota forum clause.",
+      "source_pages": [65]
+    },
+    {
+      "state": "California",
+      "affected_family": "interest_rate",
+      "override_summary": "Maximum interest rate charged in California is 10%.",
+      "why_it_matters": "The FA's 1.5%/month (18% annual) interest rate is capped at 10% for California franchisees.",
+      "source_pages": [66]
+    },
+    {
+      "state": "California",
+      "affected_family": "anti_waiver",
+      "override_summary": "No statement, questionnaire, or acknowledgment signed by franchisee shall waive claims under franchise law or disclaim reliance on franchisor statements. Franchisor may not disclaim representations or deny franchisee's ability to rely on them.",
+      "why_it_matters": "Protects against post-sale disclaimers. The Franchisee Questionnaire cannot be used to limit franchisor liability.",
+      "source_pages": [66]
+    },
+    {
+      "state": "California",
+      "affected_family": "termination",
+      "override_summary": "Provision terminating franchise on bankruptcy may not be enforceable under 11 USC §101.",
+      "why_it_matters": "Bankruptcy alone may not be sufficient to terminate the franchise under federal bankruptcy law.",
+      "source_pages": [66]
+    },
+    {
+      "state": "California",
+      "affected_family": "governing_law",
+      "override_summary": "California Franchise Relations Act (BPC 20000-20043) provides additional rights on transfer, termination, and non-renewal that may supersede FA provisions.",
+      "why_it_matters": "California law provides stronger franchisee protections that override contractual terms.",
+      "source_pages": [65]
+    },
+    {
+      "state": "Hawaii",
+      "affected_family": "anti_waiver",
+      "override_summary": "No waiver of franchise law claims (including fraud in the inducement) or disclaimer of reliance on franchisor statements.",
+      "why_it_matters": "Same protection as California — franchisee questionnaires cannot limit franchisor liability.",
+      "source_pages": [68]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "forum_selection",
+      "override_summary": "Any provision designating jurisdiction or venue outside Illinois is void for Illinois-enforceable actions. Arbitration outside Illinois is still permitted.",
+      "why_it_matters": "Illinois franchisees can litigate in Illinois courts despite Minnesota forum clause, but must still arbitrate in Minneapolis.",
+      "source_pages": [69]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "governing_law",
+      "override_summary": "Illinois law will govern to extent required by Rule 200.608 of Illinois Franchise Disclosure Laws.",
+      "why_it_matters": "Illinois franchise law supplements or overrides Minnesota law where applicable.",
+      "source_pages": [69]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "termination",
+      "override_summary": "Termination and non-renewal rights may be affected by 815 ILCS 705/19 and 705/20.",
+      "why_it_matters": "Illinois law provides additional protections on termination and non-renewal beyond what the FA provides.",
+      "source_pages": [69]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "anti_waiver",
+      "override_summary": "Any condition purporting to bind franchisee to waive compliance with Illinois Franchise Disclosure Act is void. No waiver of fraud-in-the-inducement claims.",
+      "why_it_matters": "Cannot contract away Illinois franchise law protections.",
+      "source_pages": [69]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "notice_cure",
+      "override_summary": "90 days' notice of termination with 60 days to cure (vs. 30-day/5-day standard). 180 days' notice of non-renewal.",
+      "why_it_matters": "Significantly longer notice and cure periods than the FA provides. More time to remedy defaults and plan for non-renewal.",
+      "source_pages": [70]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Minnesota Rule 2860.4400(D) prohibits franchisor from requiring franchisee to assent to a general release.",
+      "why_it_matters": "Minnesota franchisees do not have to sign releases at renewal or transfer — a significant protection not available in other states.",
+      "source_pages": [70]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "damages",
+      "override_summary": "Prohibits jury trial waiver, liquidated damages, termination penalties, and judgment notes.",
+      "why_it_matters": "Franchisee retains right to jury trial and cannot be subject to pre-determined damage amounts.",
+      "source_pages": [70]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination",
+      "override_summary": "Transfer will not be unreasonably withheld. Injunctive relief requires court determination of entitlement — cannot require consent to injunctive relief.",
+      "why_it_matters": "More balanced transfer process. Court must decide injunctive relief rather than automatic consent.",
+      "source_pages": [70, 71]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "noncompete",
+      "override_summary": "Franchisor must protect franchisee's right to use trademarks or indemnify from any loss/costs arising from claims regarding Mark use.",
+      "why_it_matters": "Franchisor has affirmative obligation to defend trademark rights, not just discretionary.",
+      "source_pages": [70]
+    },
+    {
+      "state": "New York",
+      "affected_family": "general_release",
+      "override_summary": "All rights under GBL Article 33 remain in force at renewal and transfer. Non-waiver provisions of GBL §§687.4 and 687.5 must be satisfied.",
+      "why_it_matters": "New York statutory franchise protections survive renewal and transfer, regardless of release language.",
+      "source_pages": [73]
+    },
+    {
+      "state": "New York",
+      "affected_family": "termination",
+      "override_summary": "Franchisee may terminate the agreement on any grounds available by law (overriding 'Not applicable' in Item 17).",
+      "why_it_matters": "New York franchisees have affirmative right to terminate — a major departure from the FA which provides no franchisee termination right.",
+      "source_pages": [73]
+    },
+    {
+      "state": "New York",
+      "affected_family": "governing_law",
+      "override_summary": "Choice of law/forum does not waive any right conferred by GBL Article 33.",
+      "why_it_matters": "Minnesota choice of law cannot diminish New York franchise law protections.",
+      "source_pages": [73]
+    },
+    {
+      "state": "New York",
+      "affected_family": "anti_waiver",
+      "override_summary": "No waiver of claims under state franchise law, including fraud in the inducement. No disclaimer of reliance. Supersedes any other document term.",
+      "why_it_matters": "Strongest available protection against post-sale disclaimers and waivers.",
+      "source_pages": [73, 74]
+    },
+    {
+      "state": "Wisconsin",
+      "affected_family": "termination",
+      "override_summary": "Wisconsin Fair Dealership Law prohibits termination, cancellation, non-renewal, or substantial change in competitive circumstances without good cause. 90 days' prior written notice required; dealer has 60 days to cure.",
+      "why_it_matters": "Very strong termination protections. Franchisor must demonstrate good cause and provide substantial notice period.",
+      "source_pages": [75]
+    }
+  ],
+  "summary_table": {
+    "forum_selection": {"California": true, "Illinois": true},
+    "governing_law": {"California": true, "Illinois": true, "New York": true},
+    "general_release": {"California": true, "Minnesota": true, "New York": true},
+    "notice_cure": {"Minnesota": true, "Wisconsin": true},
+    "termination": {"California": true, "Illinois": true, "Minnesota": true, "New York": true, "Wisconsin": true},
+    "interest_rate": {"California": true},
+    "damages": {"Minnesota": true},
+    "noncompete": {"Minnesota": true},
+    "anti_waiver": {"California": true, "Hawaii": true, "Illinois": true, "New York": true}
+  },
+  "override_count": 21,
+  "states_count": 6
+}

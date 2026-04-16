@@ -1,0 +1,92 @@
+{
+  "enrichment_version": "v1",
+  "item19_chart_detail": {
+    "fpr_made": false,
+    "charts": [],
+    "notes": "No financial performance representations made. No charts, tables, or data."
+  },
+  "item20_yearly_activity": {
+    "2022": {
+      "franchised": {"start": 6, "opened": 8, "terminated": 3, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 10},
+      "company_owned": {"start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold_to_franchisee": 0, "end": 0},
+      "transfers": 0,
+      "states_active": ["California"]
+    },
+    "2023": {
+      "franchised": {"start": 10, "opened": 10, "terminated": 1, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 19},
+      "company_owned": {"start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold_to_franchisee": 0, "end": 0},
+      "transfers": 0,
+      "states_active": ["California", "Texas"]
+    },
+    "2024": {
+      "franchised": {"start": 19, "opened": 13, "terminated": 2, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 30},
+      "company_owned": {"start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold_to_franchisee": 0, "end": 0},
+      "transfers": 1,
+      "states_active": ["California", "Montana", "North Carolina", "Texas"]
+    },
+    "projected_2025": {
+      "franchised_agreements_signed_not_opened": 9,
+      "projected_new_franchised": 27,
+      "projected_new_company_owned": 1,
+      "target_states": ["Arizona", "California", "Colorado", "Florida", "Minnesota", "Nevada", "North Carolina", "Oregon", "South Carolina", "Texas", "Washington", "Wisconsin"]
+    }
+  },
+  "exhibit_structure": {
+    "A": {"type": "state_addenda_fdd", "pages": 12, "states": 6},
+    "B": {"type": "state_agencies", "pages": 5},
+    "C": {"type": "operations_manual_toc", "pages": 4, "manuals": 4, "total_manual_pages": 386},
+    "D-1": {"type": "current_franchisees", "pages": 3, "count": 30},
+    "D-2": {"type": "former_franchisees", "pages": 1, "count": 2},
+    "E": {"type": "financial_statements", "pages": 27, "fiscal_years": 3, "auditor": "Ernst & Young"},
+    "F": {"type": "franchise_agreement_package", "pages": 55, "components": ["FA", "Personal Guaranty", "Payment Authorization", "State Addenda to FA"]},
+    "G": {"type": "eft_authorization", "pages": 4},
+    "H": {"type": "franchisee_questionnaire", "pages": 4}
+  },
+  "item21_structural_facts": {
+    "auditor": "Ernst & Young",
+    "opinion_type": "unqualified_clean",
+    "fiscal_years": ["2024", "2023", "2022"],
+    "going_concern_2023": true,
+    "going_concern_2024": false,
+    "entity_type": "LLC",
+    "tax_status": "Pass-through (consolidated with parent group)",
+    "functional_currency": "USD",
+    "accounting_standards": "US GAAP",
+    "revenue_recognition": "ASC 606",
+    "lease_accounting": "ASC 842 (adopted 2024)"
+  },
+  "item1_structural_facts": {
+    "entity_type": "Delaware LLC",
+    "formation_date": "2020-04-23",
+    "began_franchising": "2020-07",
+    "business_model": "Conversion of existing auto repair + new build",
+    "preferred_model": "Owner-operator",
+    "industry": "Automotive collision repair",
+    "target_market": "General public, insurance companies, corporate fleet accounts",
+    "seasonality": "Weather-dependent (snow, ice, rain increase demand)",
+    "regulatory_requirements": ["EPA waste generation license", "Paint booth permits", "VOC compliance", "Zoning"],
+    "parent_brand_portfolio": {
+      "collision_repair": ["ProColor Collision (US)", "Carrossier ProColor (Canada, 157)", "Fix Auto (worldwide, 654)", "Collision Repair Experts (Canada, 17)"],
+      "glass_repair": ["Novus Glass (US, 155)", "Novus Glass (Australia, 47)", "Novus Glass (NZ, 65)", "Novus Glass (other, 104)"],
+      "other": ["Speedy Auto Service (Canada)", "Minute Muffler & Brake (Canada, discontinued)"]
+    }
+  },
+  "item6_fee_attributes": {
+    "royalty_type": "percentage_with_minimum",
+    "royalty_rate_new": "3%",
+    "royalty_minimum_new": 2000,
+    "royalty_type_conversion": "split_base_growth",
+    "royalty_base_rate_conversion": "1.5%",
+    "royalty_growth_rate_conversion": "3%",
+    "marketing_fund_rate": "0.75%",
+    "marketing_fund_max": "1%",
+    "marketing_fund_audited": false,
+    "total_ongoing_percentage_new": "3.75% minimum (royalty + marketing)",
+    "total_ongoing_percentage_max": "7.35% (royalty + marketing + all supplier fees)",
+    "technology_monthly_minimum": 1770,
+    "convention_annual_cost": "2000-3000",
+    "initial_franchise_fee_refundable": false,
+    "payment_method": "Electronic funds transfer (mandatory)",
+    "late_payment_interest": "1.5% per month"
+  }
+}

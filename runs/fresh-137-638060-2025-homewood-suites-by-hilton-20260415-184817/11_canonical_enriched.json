@@ -1,0 +1,104 @@
+{
+  "enrichment_version": "v1",
+  "fdd_id": "638060-2025",
+  "brand": "Homewood Suites by Hilton",
+  "item19_chart_detail": {
+    "charts": [
+      {
+        "chart_id": "room_rate",
+        "title": "Room Rate — Comparable Hotels",
+        "years": [2023, 2024],
+        "population": {"total": 437, "company_managed": 7, "franchisee_managed": 430},
+        "2024": {"average": 160.03, "median": 150.86, "range_low": 68.00, "range_high": 308.08, "pct_franchisee_above_avg": 0.351, "pct_franchisee_above_median": 0.500},
+        "2023": {"average": 158.88, "median": 149.91, "range_low": 74.31, "range_high": 297.69, "pct_franchisee_above_avg": 0.370, "pct_franchisee_above_median": 0.500}
+      },
+      {
+        "chart_id": "occupancy",
+        "title": "Occupancy — Comparable Hotels",
+        "years": [2023, 2024],
+        "population": {"total": 437, "company_managed": 7, "franchisee_managed": 430},
+        "2024": {"average": 0.794, "median": 0.798, "range_low": 0.505, "range_high": 0.971, "pct_franchisee_above_avg": 0.526},
+        "2023": {"average": 0.791, "median": 0.793, "range_low": 0.471, "range_high": 0.994, "pct_franchisee_above_avg": 0.514}
+      },
+      {
+        "chart_id": "occupancy_index",
+        "title": "Occupancy Index — Comparable Hotels (STR Portfolio-Weighted)",
+        "years": [2023, 2024],
+        "population": {"total": 436, "note": "1 franchisee hotel excluded each year for insufficient data"},
+        "2024": {"average": 112.4, "median": 112.2, "range_low": 69.7, "range_high": 171.5},
+        "2023": {"average": 112.6, "median": 112.6, "range_low": 73.0, "range_high": 158.9}
+      },
+      {
+        "chart_id": "revpar_index",
+        "title": "RevPAR Index — Comparable Hotels (STR Portfolio-Weighted)",
+        "years": [2023, 2024],
+        "population": {"total": 436, "note": "1 franchisee hotel excluded each year for insufficient data"},
+        "2024": {"average": 123.0, "median": 123.9, "range_low": 71.9, "range_high": 207.9},
+        "2023": {"average": 123.8, "median": 124.5, "range_low": 76.6, "range_high": 199.4}
+      }
+    ]
+  },
+  "item20_yearly_activity": {
+    "franchised": {
+      "2022": {"start": 499, "opened": 12, "terminations": 3, "non_renewals": 1, "reacquired": 0, "ceased_other": 1, "end": 508},
+      "2023": {"start": 508, "opened": 4, "terminations": 1, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 511},
+      "2024": {"start": 511, "opened": 10, "terminations": 5, "non_renewals": 0, "reacquired": 0, "ceased_other": 2, "end": 518}
+    },
+    "company_owned": {"2022": {"start": 0, "end": 0}, "2023": {"start": 0, "end": 0}, "2024": {"start": 0, "end": 0}},
+    "transfers": {"2022": 28, "2023": 28, "2024": 26},
+    "projected": {"signed_not_open": 142, "projected_new_franchised": 17, "projected_new_company": 0}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 15,
+    "exhibit_list": [
+      {"letter": "A", "pages": "94-121", "category": "franchisee_list"},
+      {"letter": "B", "pages": "122-124", "category": "former_franchisee_list"},
+      {"letter": "C", "pages": "125-137", "category": "financial_statements"},
+      {"letter": "D", "pages": "138-210", "category": "franchise_agreement"},
+      {"letter": "D-1", "pages": "within D", "category": "state_addenda_fa"},
+      {"letter": "D-2", "pages": "within D", "category": "development_incentive_note"},
+      {"letter": "E", "pages": "211-215", "category": "guaranty"},
+      {"letter": "F", "pages": "216-228", "category": "application"},
+      {"letter": "G", "pages": "229-255", "category": "hits_agreement"},
+      {"letter": "H", "pages": "256-266", "category": "manual_toc"},
+      {"letter": "I", "pages": "267-270", "category": "state_administrators"},
+      {"letter": "J-1", "pages": "271-280", "category": "state_addenda_fdd"},
+      {"letter": "J-2", "pages": "281", "category": "restaurant_brands_addendum"},
+      {"letter": "K", "pages": "282-304", "category": "lender_comfort_letters"},
+      {"letter": "L", "pages": "305", "category": "state_effective_dates"},
+      {"letter": "M", "pages": "306-310", "category": "receipts"}
+    ]
+  },
+  "item21_structural_facts": {
+    "auditor": "Cherry Bekaert LLP",
+    "opinion": "unqualified",
+    "entity_type": "Delaware LLC, disregarded for US tax",
+    "all_assets_pledged": true,
+    "parent_debt_maturity": "2025-2033",
+    "centralized_cash_management": true,
+    "operator_agreement_compensation": 0,
+    "graduate_acquisition_2024": true
+  },
+  "item1_structural_facts": {
+    "formed": "September 2007",
+    "became_franchisor": "March 30, 2015",
+    "franchised_since": 1988,
+    "predecessor_chain": ["Promus Hotels predecessors (1988)", "Promus Hotels Inc. (1988-2007)", "Homewood Suites Franchise LLC (2007-2015)", "Hilton Franchise Holding LLC (2015-present)"],
+    "parent_chain": ["Hilton Franchise Holding LLC", "Hilton Domestic Operating Company Inc.", "Hilton Worldwide Holdings Inc. (NYSE: HLT)"],
+    "other_brands_franchised": ["Hilton", "Hampton", "DoubleTree", "Embassy Suites", "Hilton Garden Inn", "Home2 Suites", "Tru", "Tapestry", "Canopy", "Curio", "LXR", "Motto", "Spark", "Tempo", "LivSmart Studios", "Graduate"],
+    "key_affiliates": ["Hilton Reservations Worldwide LLC", "Hilton Supply Management LLC (HSM)", "Hilton Honors Worldwide LLC", "Hilton Systems Solutions LLC (HSS)"]
+  },
+  "item6_fee_attributes": {
+    "royalty_is_graduated": true,
+    "royalty_ramp_years": 3,
+    "royalty_steady_state": "5.5% GRR",
+    "program_fee_adjustable": true,
+    "program_fee_ceiling": "4.5% GRR",
+    "hilton_honors_mandatory": true,
+    "hilton_honors_rate": "2.5% eligible folio",
+    "quality_assurance_fees_capped": true,
+    "qa_cap": "$50,000 per 6-month period (Brand Non-Compliance)",
+    "liquidated_damages_formula": "Average Monthly Royalty × 60",
+    "late_payment_rate": "1.5%/month"
+  }
+}

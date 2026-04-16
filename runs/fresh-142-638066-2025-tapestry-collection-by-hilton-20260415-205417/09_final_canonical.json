@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "version": "final",
+    "source": "05_canonical.json (no retries required, no changes)",
+    "note": "Coverage audit found no material gaps. Final canonical is identical to initial canonical."
+  },
+  "document_identity": {
+    "filing_id": "638066-2025",
+    "brand": "Tapestry Collection by Hilton",
+    "franchisor_legal_name": "Hilton Franchise Holding LLC",
+    "franchisor_state_of_formation": "Delaware",
+    "parent_entity": "Hilton Domestic Operating Company Inc.",
+    "ultimate_parent": "Hilton Worldwide Holdings Inc. (NYSE: HLT)",
+    "hq_address": "7930 Jones Branch Drive, Suite 1100, McLean, VA 22102",
+    "issuance_date": "2025-03-30",
+    "state_filed": "Wisconsin (WI-DFI)",
+    "pdf_pages": 315,
+    "confidence": "high"
+  },
+  "fees": {
+    "initial_franchise_fee": "$100,000 (New Dev/Conversion, 250 rooms) + $400/room over 250",
+    "initial_franchise_fee_coo": "$150,000",
+    "royalty_rate": "5% GRR",
+    "program_fee_rate": "4% GRR (may increase up to +1% over term)",
+    "total_base_ongoing": "9% GRR + 4.3% Hilton Honors + technology/distribution fees",
+    "confidence": "high"
+  },
+  "investment": {
+    "total_low": "$3,898,359",
+    "total_high": "$129,454,079",
+    "prototype": "250-room Tapestry hotel",
+    "excludes": "real property, market studies, insurance, interest",
+    "confidence": "high"
+  },
+  "term": {
+    "new_construction": "23 years",
+    "conversion": "10-20 years",
+    "renewable": false,
+    "confidence": "high"
+  },
+  "territory": {
+    "exclusive": false,
+    "restricted_area_negotiable": true,
+    "confidence": "high"
+  },
+  "item19": {
+    "fpr_provided": false,
+    "confidence": "high"
+  },
+  "system_size": {
+    "total_units_2024": 117,
+    "growth_2022_to_2024": "+86%",
+    "terminations_3yr": 0,
+    "pipeline": 70,
+    "projected_next_year": 23,
+    "confidence": "high"
+  },
+  "financial_health": {
+    "net_income_2024": "$1.488B",
+    "total_assets_2024": "$1.27B",
+    "audit_opinion": "Unqualified (clean)",
+    "auditor": "Cherry Bekaert LLP",
+    "debt_guarantee": "All assets pledged for Hilton debt",
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "venue": "Eastern District of Virginia / Fairfax County, VA / New York, NY",
+    "governing_law": "New York",
+    "arbitration": "None (except Puerto Rico)",
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": "Cannot own/license/franchise Competing Brand",
+    "post_term": "None",
+    "confidence": "high"
+  },
+  "litigation_risk": {
+    "pending_actions": 5,
+    "antitrust_class_actions": 4,
+    "franchise_disputes": 1,
+    "confidence": "high"
+  },
+  "supplier_economics": {
+    "hsm_admin_fees_2024": "$38,697,912",
+    "hsm_rebates_2024": "$19,614,010",
+    "hsm_direct_sales_2024": "$8,763,692",
+    "affiliate_revenue_2024": "$1,101,161,898 (excl. royalty/program fees and HSM)",
+    "groups360_equity": "Hilton JV Acquisition LLC holds non-controlling interest",
+    "confidence": "high"
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Item 20, Table 3: 'Ceased Operations – Other Reasons' shows positive numbers (+1 in 2022, +3 in 2024) — anomalous for a cessation column", "severity": "low", "source": "Item 20, pages 94, 96"},
+    {"id": "U2", "description": "Note 9 in financial statements references 'March 18, 2024' as subsequent events evaluation date but audit report is dated March 18, 2025 — apparent typo", "severity": "low", "source": "Exhibit C, page 127"},
+    {"id": "U3", "description": "All franchisor assets and franchise contracts pledged as collateral for Hilton parent debt (maturing 2025-2033). Implications for franchisees in distress scenario not discussed", "severity": "medium", "source": "Exhibit C, Note 7, page 126"}
+  ],
+  "contradictions": [],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin", "Puerto Rico"],
+    "summary": {
+      "forum_selection_voided_or_limited": ["California", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+      "governing_law_overridden": ["California", "Illinois", "North Dakota", "Washington"],
+      "general_release_excludes_state_claims": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington"],
+      "termination_good_cause_required": ["Michigan", "Minnesota", "Virginia", "Washington"],
+      "liquidated_damages_limited_or_void": ["California", "Minnesota", "North Dakota"],
+      "noncompete_limited": ["Washington"],
+      "mandatory_arbitration": ["Puerto Rico"]
+    },
+    "confidence": "high"
+  }
+}

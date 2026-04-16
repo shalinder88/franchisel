@@ -1,0 +1,81 @@
+{
+  "_enrichment_version": "v1",
+  "_base": "09_final_canonical.json",
+  "item19_chart_detail": {
+    "fpr_provided": false,
+    "charts": [],
+    "tables": [],
+    "note": "No financial performance representations disclosed. No charts, tables, or data of any kind."
+  },
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 0, "franchised_end": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "transfers": 0, "company_start": 0, "company_end": 0},
+    "2023": {"franchised_start": 0, "franchised_end": 0, "opened": 0, "terminated": 0, "non_renewed": 0, "transfers": 0, "company_start": 0, "company_end": 0},
+    "2024": {"franchised_start": 0, "franchised_end": 32, "opened": 32, "terminated": 0, "non_renewed": 0, "transfers": 0, "company_start": 0, "company_end": 0},
+    "projected": {"signed_not_opened": 2, "new_franchised_next_year": 1, "new_company_next_year": 0},
+    "states_2024": {
+      "AL": 1, "AZ": 2, "AR": 1, "CA": 2, "CT": 2, "IL": 1, "IN": 1, "IA": 1,
+      "MD": 1, "MI": 2, "MN": 1, "MS": 1, "NE": 1, "NJ": 1, "NY": 1, "NC": 1,
+      "OH": 2, "OR": 1, "PA": 1, "RI": 1, "SC": 1, "TN": 2, "VA": 2, "WA": 1, "WI": 1
+    }
+  },
+  "exhibit_structure": {
+    "total_exhibits": 16,
+    "exhibit_list": [
+      {"letter": "A", "type": "franchisee_list", "pages": 4},
+      {"letter": "B", "type": "former_franchisee_list", "pages": 2},
+      {"letter": "C", "type": "financial_statements", "pages": 13},
+      {"letter": "D", "type": "franchise_agreement", "pages": 56},
+      {"letter": "D-1", "type": "state_addenda_contract", "pages": 14},
+      {"letter": "D-2", "type": "promissory_note", "pages": 3},
+      {"letter": "E", "type": "guaranty", "pages": 5},
+      {"letter": "F", "type": "application", "pages": 13},
+      {"letter": "G", "type": "hits_agreement", "pages": 27},
+      {"letter": "H", "type": "manual_toc", "pages": 10},
+      {"letter": "I", "type": "state_administrators", "pages": 5},
+      {"letter": "J-1", "type": "state_addenda_fdd", "pages": 10},
+      {"letter": "J-2", "type": "restaurant_brands", "pages": 1},
+      {"letter": "K", "type": "lender_comfort_letters", "pages": 22},
+      {"letter": "L", "type": "state_effective_dates", "pages": 2},
+      {"letter": "M", "type": "receipts", "pages": 5}
+    ]
+  },
+  "item21_structural_facts": {
+    "auditor": "Cherry Bekaert LLP",
+    "opinion_type": "Clean / Unqualified",
+    "entity": "Hilton Franchise Holding LLC",
+    "entity_scope": "All Hilton US brands",
+    "years_covered": [2022, 2023, 2024],
+    "total_pages": 13,
+    "notes_count": 9,
+    "tax_status": "Disregarded entity for US income tax",
+    "debt_guarantee": true,
+    "graduate_intangible_acquired": 85000000,
+    "graduate_intangible_useful_life_years": 15
+  },
+  "item1_structural_facts": {
+    "entity_type": "Delaware LLC",
+    "formed": "2007-09-12",
+    "became_graduate_franchisor": "2024-05-28",
+    "brand_acquired_date": "2024-05-24",
+    "brand_acquired_from": "Graduate IP LLC",
+    "predecessor_brand": "Project Alpha by Hilton",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "ultimate_parent": "Hilton Worldwide Holdings Inc.",
+    "ultimate_parent_ticker": "HLT",
+    "brands_under_same_franchisor": 18,
+    "international_affiliates": 4,
+    "service_affiliates": ["Hilton Reservations Worldwide", "HSM", "Hilton Honors Worldwide", "HSS"]
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": 0.05,
+    "royalty_base": "Gross Rooms Revenue",
+    "royalty_modifiable": false,
+    "program_fee_rate": 0.04,
+    "program_fee_max_increase": 0.01,
+    "hilton_honors_rate": 0.043,
+    "hilton_advance_rate": 0.0135,
+    "hilton_advance_cap_per_stay": 30,
+    "late_payment_rate_monthly": 0.015,
+    "total_core_fee_estimate_pct": 0.133
+  }
+}

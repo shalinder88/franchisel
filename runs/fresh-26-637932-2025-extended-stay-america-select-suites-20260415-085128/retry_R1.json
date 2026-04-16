@@ -1,0 +1,43 @@
+{
+  "retry_id": "R1",
+  "task": "State Addenda Summary",
+  "status": "completed",
+  "source_pages_pdf": [202, 244],
+  "states_with_addenda": [
+    "California", "Hawaii", "Illinois", "Indiana", "Maryland",
+    "Minnesota", "New York", "North Dakota", "Rhode Island",
+    "Virginia", "Washington", "Wisconsin"
+  ],
+  "material_overrides": {
+    "governing_law": {
+      "description": "State law governs instead of NC law",
+      "states": ["California", "Illinois", "Indiana", "Maryland", "Minnesota", "North Dakota", "Washington", "Wisconsin"]
+    },
+    "venue_arbitration": {
+      "description": "Arbitration/litigation must be available in franchisee's home state",
+      "states": ["Indiana", "Maryland", "Minnesota", "North Dakota", "Washington"]
+    },
+    "general_release_limitation": {
+      "description": "General release required on transfer/renewal limited or may be void",
+      "states": ["California", "Maryland", "Minnesota", "Washington"]
+    },
+    "extended_cure_notice": {
+      "description": "Extended cure periods and termination notice requirements",
+      "states": ["Minnesota", "Wisconsin"],
+      "details": "MN/WI: 60-day cure, 90-day termination notice"
+    },
+    "noncompete_unenforceable": {
+      "description": "Post-term noncompete covenants unenforceable",
+      "states": ["North Dakota"],
+      "notes": "Moot for this FDD as no noncompete exists"
+    },
+    "liquidated_damages_challenged": {
+      "description": "Liquidated damages clause may be unenforceable",
+      "states": ["California"]
+    },
+    "jury_trial_waiver_challenged": {
+      "description": "Jury trial waiver may not be enforceable",
+      "states": ["North Dakota"]
+    }
+  }
+}

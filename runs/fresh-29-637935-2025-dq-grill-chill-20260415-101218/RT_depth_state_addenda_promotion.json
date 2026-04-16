@@ -1,0 +1,241 @@
+{
+  "depth_pass": "state_addenda_structured_promotion",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637935-2025",
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "damages",
+      "override_summary": "Liquidated damages clauses may be unenforceable under CA Civil Code §1671",
+      "why_it_matters": "Termination fee (2× royalty) may not be collectible in CA",
+      "source_pages": [85]
+    },
+    {
+      "state": "California",
+      "affected_family": "noncompete",
+      "override_summary": "Post-term noncompete may not be enforceable under California law",
+      "why_it_matters": "Franchisee may be free to compete immediately after termination/expiration in CA",
+      "source_pages": [85]
+    },
+    {
+      "state": "California",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration in Minneapolis may be challenged under CA B&P Code §20040.5",
+      "why_it_matters": "Franchisee may be able to arbitrate/litigate in CA",
+      "source_pages": [85]
+    },
+    {
+      "state": "California",
+      "affected_family": "general_release",
+      "override_summary": "Release cannot waive rights under CA Franchise Investment Law (Corp Code §31512) or Franchise Relations Act (B&P Code §§20000-20043)",
+      "why_it_matters": "Renewal/transfer release is narrower in CA — state franchise law claims survive",
+      "source_pages": [86]
+    },
+    {
+      "state": "California",
+      "affected_family": "anti_waiver",
+      "override_summary": "No questionnaire or acknowledgment can waive claims under state franchise law or disclaim reliance on franchisor statements",
+      "why_it_matters": "Fraud-in-the-inducement claims preserved regardless of what franchisee signed",
+      "source_pages": [86]
+    },
+    {
+      "state": "Hawaii",
+      "affected_family": "anti_waiver",
+      "override_summary": "No questionnaire or acknowledgment can waive claims under state franchise law or disclaim reliance",
+      "why_it_matters": "Same as CA — fraud-in-the-inducement claims preserved",
+      "source_pages": [87]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "governing_law",
+      "override_summary": "Illinois law (815 ILCS 705/19 and 705/20) governs the franchise agreement for IL franchisees",
+      "why_it_matters": "IL law on termination and renewal supersedes contract terms",
+      "source_pages": [88]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "forum_selection",
+      "override_summary": "Forum selection outside IL is void (but arbitration outside IL is permitted)",
+      "why_it_matters": "Litigation must stay in IL; arbitration can still be in Minneapolis",
+      "source_pages": [88]
+    },
+    {
+      "state": "Illinois",
+      "affected_family": "general_release",
+      "override_summary": "Release or acknowledgment cannot negate claims under IL Franchise Disclosure Act",
+      "why_it_matters": "IL franchise law claims survive any release signed at renewal/transfer",
+      "source_pages": [88]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "fee_deferral",
+      "override_summary": "All initial fees deferred until franchisor completes pre-opening obligations and outlet opens (MD Securities Commissioner financial assurance requirement)",
+      "why_it_matters": "No upfront fee risk — full fee due only after restaurant is open. Signals regulatory concern about ADQ's financial condition.",
+      "source_pages": [89]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Claims under MD Franchise Registration and Disclosure Law may be brought in Maryland",
+      "why_it_matters": "No need to go to Minneapolis for MD franchise law claims",
+      "source_pages": [89]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "General release excludes liability under MD Franchise Registration and Disclosure Law",
+      "why_it_matters": "MD franchise law claims survive renewal/transfer release",
+      "source_pages": [89]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "termination",
+      "override_summary": "Good cause required for termination with 30 days to cure. Fair compensation on non-renewal.",
+      "why_it_matters": "Stronger termination protections than base agreement",
+      "source_pages": [5, 6]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration or litigation outside MI not enforceable (but franchisee can agree to out-of-state arbitration at time of arbitration)",
+      "why_it_matters": "Arbitration must start in MI; can agree to move later",
+      "source_pages": [5]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "transfer",
+      "override_summary": "Franchisor cannot refuse transfer without good cause",
+      "why_it_matters": "Lower bar for transfer approval in MI",
+      "source_pages": [6]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "notice_cure",
+      "override_summary": "90 days notice of termination (with 60 days to cure) and 180 days notice for non-renewal required by MN Stat §80C.14",
+      "why_it_matters": "Longer notice periods than base agreement (which has 10-30 day cure periods)",
+      "source_pages": [90]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "Cannot require litigation outside MN, waiver of jury trial, consent to injunctive relief, or consent to liquidated damages/termination penalties",
+      "why_it_matters": "MN franchise law provides maximum protection for venue/procedure",
+      "source_pages": [90]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Franchisor cannot require general release that would waive MN franchise law rights (MN Rule 2860.4400D)",
+      "why_it_matters": "MN franchise law claims survive any release",
+      "source_pages": [90]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "trademark_defense",
+      "override_summary": "ADQ will undertake defense of any third-party trademark infringement claim involving DQ/DQ Grill & Chill trademarks",
+      "why_it_matters": "Unlike base agreement (no obligation to defend), MN addendum requires ADQ defense at ADQ's cost",
+      "source_pages": [90]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "damages",
+      "override_summary": "Termination fee provision DELETED ENTIRELY. ND Securities Commissioner determined liquidated damages/termination penalties are unfair.",
+      "why_it_matters": "No termination fee in ND — significant financial benefit vs. base agreement",
+      "source_pages": [91]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "noncompete",
+      "override_summary": "Post-term noncompete enforceable only under certain conditions per ND law",
+      "why_it_matters": "Noncompete may be unenforceable in ND",
+      "source_pages": [91]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration must be at city nearest to authorized location with AAA office, not Minneapolis",
+      "why_it_matters": "No out-of-state arbitration for ND franchisees",
+      "source_pages": [91]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "damages",
+      "override_summary": "Waiver of exemplary and punitive damages may not be enforceable; jury trial waiver may not be enforceable",
+      "why_it_matters": "ND franchisees retain right to seek punitive damages and jury trial",
+      "source_pages": [91]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "general_release",
+      "override_summary": "General release at renewal is not a waiver of liability under ND Franchise Investment Law",
+      "why_it_matters": "ND franchise law claims survive renewal release",
+      "source_pages": [91]
+    },
+    {
+      "state": "Rhode Island",
+      "affected_family": "forum_selection",
+      "override_summary": "Provision restricting jurisdiction/venue outside RI or requiring application of other state's laws is void under RI Franchise Investment Act §19-28.1-14",
+      "why_it_matters": "RI franchisees can litigate RI Act claims in RI under RI law",
+      "source_pages": [92]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "governing_law",
+      "override_summary": "WA Franchise Investment Protection Act prevails in conflicts of law",
+      "why_it_matters": "WA law supersedes contract in areas of termination and renewal",
+      "source_pages": [93]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "forum_selection",
+      "override_summary": "Arbitration must be in WA or mutually agreed place. Litigation in WA not precluded.",
+      "why_it_matters": "No forced Minneapolis arbitration for WA franchisees",
+      "source_pages": [93]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "general_release",
+      "override_summary": "Release cannot include WA Act rights except in negotiated settlement with independent counsel after agreement in effect",
+      "why_it_matters": "Strong release limitation — independent counsel required",
+      "source_pages": [93]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "transfer",
+      "override_summary": "Transfer fees limited to franchisor's reasonable estimated or actual costs",
+      "why_it_matters": "The $6,000 transfer fee may be reduced if it exceeds ADQ's actual costs",
+      "source_pages": [93]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "noncompete",
+      "override_summary": "Noncompete void for employees earning <$100K/yr and independent contractors earning <$250K/yr (indexed to inflation per RCW 49.62)",
+      "why_it_matters": "Most restaurant-level employees would be exempt from noncompete in WA",
+      "source_pages": [93]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "no_poach",
+      "override_summary": "Franchisor cannot restrict franchisee from soliciting or hiring employees of other franchisees or the franchisor (RCW 49.62.060)",
+      "why_it_matters": "Full labor mobility between DQ franchisees in WA",
+      "source_pages": [94]
+    }
+  ],
+  "summary_table": {
+    "override_families": ["forum_selection", "governing_law", "noncompete", "general_release", "termination/notice_cure", "damages/termination_fee", "transfer", "anti_waiver", "trademark_defense", "fee_deferral", "no_poach"],
+    "states_affected": {
+      "forum_selection": ["California", "Illinois", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+      "governing_law": ["Illinois", "Washington"],
+      "noncompete": ["California", "North Dakota", "Washington"],
+      "general_release": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "North Dakota", "Washington"],
+      "termination_notice_cure": ["Michigan", "Minnesota"],
+      "damages_termination_fee": ["California", "Minnesota", "North Dakota"],
+      "transfer": ["Michigan", "Washington"],
+      "anti_waiver": ["California", "Hawaii"],
+      "trademark_defense": ["Minnesota"],
+      "fee_deferral": ["Maryland"],
+      "no_poach": ["Washington"]
+    }
+  }
+}

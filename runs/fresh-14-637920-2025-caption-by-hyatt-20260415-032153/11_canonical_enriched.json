@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "filing_id": "637920-2025",
+    "brand": "Caption by Hyatt",
+    "enrichment_version": "v1",
+    "extraction_date": "2026-04-15"
+  },
+  "item19_detail": {
+    "fpr_provided": false,
+    "charts": [],
+    "population_counts": null,
+    "exclusion_rules": null,
+    "note": "No FPR. System has only 2 operating hotels. Zero financial performance data disclosed."
+  },
+  "item20_yearly_activity": {
+    "2022": {"franchised_opened": 0, "franchised_closed": 0, "company_opened": 1, "company_closed": 0, "net_system": 1},
+    "2023": {"franchised_opened": 0, "franchised_closed": 0, "company_opened": 0, "company_closed": 0, "net_system": 0},
+    "2024": {"franchised_opened": 1, "franchised_closed": 0, "company_opened": 0, "company_closed": 0, "net_system": 1},
+    "signed_not_opened": 3,
+    "projected_next_fy": {"franchised": 0, "company": 0}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 14,
+    "agreement_exhibits": ["C", "F", "I", "J", "K", "L"],
+    "financial_exhibits": ["A-1", "A-2"],
+    "franchisee_list_exhibits": ["G", "H"],
+    "other_exhibits": ["B", "D", "E"],
+    "total_exhibit_pages": 262
+  },
+  "item21_structural_facts": {
+    "auditor": "Deloitte & Touche LLP",
+    "auditor_since": 2003,
+    "opinion_type": "Clean (unqualified)",
+    "going_concern": false,
+    "guarantee_of_performance": true,
+    "guarantor": "Hyatt Hotels Corporation",
+    "parent_ticker": "H",
+    "franchisor_unaudited": true,
+    "critical_audit_matters": [
+      "Loyalty program deferred revenue ($1,333M) — breakage estimation",
+      "Goodwill impairment ($110M) — fair value assumptions"
+    ]
+  },
+  "item1_structural_facts": {
+    "entity_type": "Delaware LLC",
+    "parent": "Hyatt Hotels Corporation",
+    "franchising_since": "September 2019",
+    "hotel_type": "Select service, urban lifestyle",
+    "room_range": "125-300",
+    "sister_brands": ["Hyatt Centric", "Hyatt Regency", "Hyatt Place", "Hyatt House", "Unbound Collection by Hyatt", "Destination by Hyatt", "JdV by Hyatt", "Hyatt Studios"],
+    "international_entities": ["Hyatt Franchising Canada Corp.", "Hyatt International EAME", "Hyatt Franchising Latin America", "Hyatt do Brasil", "Hyatt International Asia Pacific"],
+    "key_affiliates": ["Hyatt Corporation (services)", "Rosemont Project Management (purchasing)"]
+  },
+  "item6_fee_attributes": {
+    "royalty_base": "Gross Rooms Revenue",
+    "royalty_rate": "5%",
+    "royalty_reduction_available": true,
+    "royalty_reduction_note": "May be reduced for first 1-3 years for new construction",
+    "commercial_services_rate": "3.5%",
+    "loyalty_program_rate": "4% (2% for on-property enrollment)",
+    "digital_fee_rate": "1.35%",
+    "total_percentage_load_estimate": "~13.85% of GRR before fixed fees",
+    "advertising_fund_separate": false,
+    "advertising_in_commercial_services": true,
+    "liquidated_damages_formula": "min(36, remaining months) × avg monthly GRR × 8.5%",
+    "consequential_termination_multiplier": 1.5,
+    "ffe_reserve_schedule": "3%/4%/5% of GRR (years 1/2/3+)"
+  }
+}

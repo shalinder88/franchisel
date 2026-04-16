@@ -1,0 +1,141 @@
+{
+  "depth_pass": "1_financial_notes",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637911-2025",
+  "brand": "Ivan Ramen",
+  "auditor": "BMKR LLP, Certified Public Accountants",
+  "auditor_address": "1200 Veterans Memorial Hwy., Suite 350, Hauppauge, New York 11788",
+  "report_date": "2025-03-10",
+  "opinion_type": "unqualified",
+  "going_concern_emphasis": false,
+  "accounting_policies": {
+    "basis_of_presentation": {
+      "method": "Accrual basis of accounting",
+      "framework": "US GAAP",
+      "source_pages": [281, 294]
+    },
+    "cash_equivalents": {
+      "definition": "Time deposits, CDs, and highly liquid debt instruments with original maturities ≤3 months",
+      "source_pages": [281, 294]
+    },
+    "use_of_estimates": {
+      "description": "Management estimates and assumptions affect reported amounts of assets, liabilities, and contingent disclosures. Actual results could differ.",
+      "source_pages": [281, 294]
+    },
+    "income_taxes": {
+      "status": "Pass-through entity — not subject to income tax",
+      "2022_2023": "Multi-member LLC operating as partnership; income/loss taxed directly to partners",
+      "2024": "Single-member LLC (100% owned by Ivan Ramen Holdings Co. LLC since 1/1/2024); income/loss passes through to parent",
+      "provision_for_taxes": 0,
+      "deferred_taxes": "None (pass-through entity)",
+      "uncertain_tax_positions": "None at any year-end",
+      "tax_returns_open": "2021 and after",
+      "source_pages": [281, 294]
+    },
+    "revenue_recognition": {
+      "standard": "ASC Topic 606, Revenue from Contracts with Customers",
+      "initial_franchise_fees": "Recognized on straight-line basis over term of franchise agreement (performance obligation = right to access IP)",
+      "pre_opening_activities": {
+        "brand_specific": "Single performance obligation with IP access right; recognized over FA term per ASU 2021-02",
+        "non_brand_specific": "Separate distinct performance obligation; recognized ratably as services rendered"
+      },
+      "multi_unit_fees": "Deferred and apportioned to each FA signed; recognized same as initial fees",
+      "royalties": "Sales-based; recognized as franchisee sales occur and royalty deemed collectible",
+      "system_brand_fund": {
+        "treatment": "Principal (gross basis)",
+        "single_performance_obligation": true,
+        "status": "Not yet established",
+        "excess_over_expenses": "Advertising costs accrued up to amount of marketing fund revenues"
+      },
+      "incremental_costs": "Direct/incremental costs (commissions) capitalized and amortized over FA term",
+      "source_pages": [282, 283]
+    },
+    "depreciation_amortization": {
+      "status": "Not applicable — no depreciable assets on balance sheet",
+      "organization_costs": "Previously capitalized at $6,770; reclassified as prior period adjustment in 2024",
+      "source_pages": [284]
+    },
+    "impairment": {
+      "status": "Not disclosed — no long-lived assets to impair",
+      "source_pages": []
+    },
+    "lease_accounting": {
+      "status": "Not applicable — no leases disclosed in financial statements",
+      "notes": "Franchisor's principal address is listed but no lease obligation is on the balance sheet",
+      "source_pages": []
+    },
+    "variable_interest_entities": {
+      "status": "None disclosed",
+      "source_pages": []
+    },
+    "advertising_fund_accounting": {
+      "status": "System Brand Fund not yet established",
+      "planned_treatment": "Franchisor acts as principal; revenues/expenses recognized on gross basis",
+      "single_performance_obligation": true,
+      "source_pages": [283]
+    }
+  },
+  "material_notes": {
+    "note1_organization": {
+      "formation": "July 12, 2021 (stated as DE LLC in notes; Item 1 says NY LLC — discrepancy)",
+      "purpose": "Sell franchises under Ivan Ramen name and system",
+      "limited_liability": "Members not personally liable",
+      "ownership_change": "100% transferred to Ivan Ramen Holdings Co. LLC effective January 1, 2024",
+      "significant_operations": "None through March 10, 2025",
+      "source_pages": [281, 294]
+    },
+    "note3_prior_period_adjustment": {
+      "fy2024": {"amount": -6770, "reason": "Incorrectly capitalized organization costs reclassified against retained earnings"},
+      "fy2023": {"amount": 4000, "reason": "Prior period adjustment (nature not specified in 2023 notes)"},
+      "source_pages": [284, 292]
+    },
+    "note4_concentration_credit_risk": {
+      "description": "Cash may exceed FDIC insurance limits; placed with major financial institution",
+      "source_pages": [284]
+    },
+    "note5_related_party_transactions": {
+      "ip_license": {
+        "counterparty": "Ivan Ramen IP Holdings LLC",
+        "date": "August 2021",
+        "initial_fee": 1.00,
+        "continuing_fee": "10% of prior fiscal year's gross revenues",
+        "floor_provision": "Reduced to maintain $100K net income floor",
+        "modifiable": "Licensor and Licensee may agree to waive/modify at any time"
+      },
+      "related_party_receivables_2024": [
+        {"entity": "Ivan Ramen USA LLC", "amount": 25848, "terms": "No payment terms, no interest"},
+        {"entity": "Ivan Ramen Holdings Co. Inc.", "amount": 1200, "terms": "No payment terms, no interest"}
+      ],
+      "related_party_payables_2023": [
+        {"entity": "Ivan Ramen USA LLC", "amount": 42298, "direction": "Due to (owed by franchisor)"}
+      ],
+      "notes": "In 2024, franchisor repaid funds borrowed from Ivan Ramen USA LLC and then lent funds to them — the relationship reversed from debtor to creditor.",
+      "source_pages": [284, 285]
+    },
+    "note6_commitments": {
+      "uk_license": {
+        "date": "September 2023",
+        "counterparty": "Unrelated entity (UK Licensee)",
+        "territory": "United Kingdom",
+        "initial_fee": "£1 plus VAT",
+        "continuing_fee": "5% of prior fiscal year's proceeds less onboarding fee",
+        "type": "Master Franchise Agreement"
+      },
+      "las_vegas_franchise": {
+        "date": "March 2024",
+        "counterparty": "Unrelated entity (identified as Venetian Las Vegas Gaming LLC in Exhibit F)",
+        "location": "Hotel in Las Vegas, Nevada",
+        "initial_fee": 25000,
+        "continuing_fee": "5% of prior month's generated revenue"
+      },
+      "source_pages": [285]
+    },
+    "note7_subsequent_events": {
+      "evaluation_through": "March 10, 2025",
+      "events": [
+        {"date": "February 2025", "description": "$120,000 capital contribution by one of the owners"}
+      ],
+      "source_pages": [285]
+    }
+  }
+}

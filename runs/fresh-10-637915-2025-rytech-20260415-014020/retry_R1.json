@@ -1,0 +1,14 @@
+{
+  "retry_id": "R1",
+  "task": "Verify renewal fee from franchise agreement",
+  "status": "resolved",
+  "finding": "Franchise Agreement Section 4(e) (page 62) states: 'You pay RYTECH a renewal fee of 15% of the then current initial franchise fee.' This matches the Item 6 fee table and Item 17 table. Note 7 stating '10%' is an error in the FDD footnote.",
+  "resolution": "Renewal fee is 15% of then-current initial franchise fee. Note 7 contains a typographical error.",
+  "source_pages": [62],
+  "canonical_update": {
+    "field": "term_and_renewal.renewal_fee",
+    "old_value": "10% of then-current initial franchise fee",
+    "new_value": "15% of then-current initial franchise fee",
+    "note": "Confirmed from FA Section 4(e). Note 7 error resolved."
+  }
+}

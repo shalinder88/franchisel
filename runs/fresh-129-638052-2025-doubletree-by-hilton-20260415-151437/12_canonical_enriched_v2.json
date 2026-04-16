@@ -1,0 +1,238 @@
+{
+  "enrichment_version": "v2",
+  "fdd_id": "638052-2025",
+  "brand": "DoubleTree by Hilton",
+  "item21_financial_structure_detail": {
+    "entity_type": "Delaware LLC, single-member (Hilton Domestic Operating Company Inc.)",
+    "tax_treatment": "Disregarded entity for US income tax; income included in Hilton consolidated return",
+    "cash_management": "Hilton centralized cash management system; entity has no independent cash control",
+    "asset_pledge": "All assets and franchise contracts pledged as collateral for Hilton parent debt (maturing 2025-2033)",
+    "intercompany_receivable": "$703.9M from Hilton affiliates (2024)",
+    "distributions_mechanism": "Periodic settlement of intercompany receivables with simultaneous distribution of retained earnings",
+    "operator_agreement": "Agreement with Hilton affiliate entitling affiliate to reasonable fee; no compensation provided 2022-2024",
+    "graduate_acquisition": "May 2024; $85M franchise contract intangible assets; accounted for as asset acquisition; 15-year amortization"
+  },
+  "item21_statement_detail": {
+    "revenue_breakdown_2024": {
+      "franchise_royalty_fees": 1434453000,
+      "franchise_sales_coo_fees": 49340000,
+      "franchise_termination_other": 18276000,
+      "total": 1502069000
+    },
+    "expense_breakdown_2024": {
+      "operating_expenses": 1354000,
+      "provision_credit_losses": 6248000,
+      "amortization": 3751000,
+      "total": 11353000
+    },
+    "operating_margin_2024": "99.2%",
+    "net_margin_2024": "99.0%",
+    "revenue_cagr_2022_2024": "10.5%",
+    "deferred_revenue_total_2024": 558880000,
+    "contract_acquisition_costs_gross_2024": 376063000,
+    "allowance_credit_losses_ar_2024": 10411000,
+    "allowance_credit_losses_financing_2024": 3787000,
+    "termination_fee_spike": "Termination fees rose from $2.4M (2023) to $18.3M (2024), a 651% increase"
+  },
+  "item6_fee_detail": {
+    "ongoing_percentage_fees": [
+      {
+        "name": "Monthly Royalty",
+        "rate": "5%",
+        "basis": "Gross Rooms Revenue",
+        "mandatory": true
+      },
+      {
+        "name": "Monthly Program Fee",
+        "rate": "4%",
+        "basis": "GRR",
+        "mandatory": true,
+        "max_increase": "+1% over term"
+      },
+      {
+        "name": "Monthly Spa Royalty",
+        "rate": "2%",
+        "basis": "Gross Spa Revenue",
+        "mandatory": false,
+        "condition": "eforea spa only"
+      },
+      {
+        "name": "Hilton Honors",
+        "rate": "4.3%",
+        "basis": "total eligible guest folio",
+        "mandatory": true
+      },
+      {
+        "name": "Hilton Advance",
+        "rate": "1.35%",
+        "basis": "Digital Direct Revenue",
+        "mandatory": true,
+        "cap": "$30/stay"
+      },
+      {
+        "name": "Hilton For Business",
+        "rate": "up to 3%",
+        "basis": "GRR per eligible stay",
+        "mandatory": false,
+        "auto_enrolled": true
+      }
+    ],
+    "ongoing_fixed_fees_monthly": [
+      {
+        "name": "OnQ Connectivity",
+        "amount_range": "$400-$600"
+      },
+      {
+        "name": "HW/SW Maintenance",
+        "amount_range": "$2,422-$6,815"
+      },
+      {
+        "name": "Connected Room",
+        "amount_range": "$980-$1,395"
+      },
+      {
+        "name": "OnQ Email",
+        "amount": "$7.92/user + $12.50 mobile"
+      }
+    ],
+    "quality_assurance_fees": [
+      {
+        "name": "Brand Non-Compliance",
+        "amount": "$65-$145/room",
+        "cap": "$50,000/6 months"
+      },
+      {
+        "name": "Re-Evaluation",
+        "amount": "up to $4,500"
+      },
+      {
+        "name": "Special Audit",
+        "amount": "$5,500"
+      },
+      {
+        "name": "Plans & Designs Late",
+        "amount": "$8,000/90 days"
+      },
+      {
+        "name": "PIP/Renovation Failure",
+        "amount": "$16,000/6 months"
+      },
+      {
+        "name": "Stay Score Failure",
+        "amount": "up to $300/room or 0.5% GRR annually"
+      },
+      {
+        "name": "Service Quality Improvement",
+        "amount": "$20,000-$50,000/6 months"
+      }
+    ],
+    "liquidated_damages_tiers": [
+      {
+        "scenario": "Pre-opening termination",
+        "formula": "System Avg Monthly Royalty x 60"
+      },
+      {
+        "scenario": "Post-opening <2 years",
+        "formula": "Greater of (Hotel Avg x 60) or (System Avg x 60)"
+      },
+      {
+        "scenario": "Post-opening >2 years, before last 60 months",
+        "formula": "Hotel Avg Monthly Royalty x 60"
+      },
+      {
+        "scenario": "Last 60 months",
+        "formula": "Hotel Avg Monthly Royalty x remaining months"
+      }
+    ]
+  },
+  "contract_burdens_depth": {
+    "general_release_scope": "All claims on/before Effective Date, excluding FDD representations. Survives termination.",
+    "consent_standard": "Business judgment, sole remedy specific performance (no money damages)",
+    "indemnification_scope": "Broad, survives termination, exception only for gross negligence per final judgment",
+    "interest_rate_on_overdue": "18% per annum or max lawful rate",
+    "economic_conditions_not_defense": true,
+    "confidentiality_of_negotiated_terms": true
+  },
+  "state_addenda_overrides": {
+    "states_with_addenda": [
+      "California",
+      "Hawaii",
+      "Illinois",
+      "Indiana",
+      "Maryland",
+      "Michigan",
+      "Minnesota",
+      "New York",
+      "North Dakota",
+      "Rhode Island",
+      "South Dakota",
+      "Virginia",
+      "Washington",
+      "Wisconsin"
+    ],
+    "forum_selection_overridden": [
+      "California",
+      "Maryland",
+      "Michigan",
+      "Minnesota",
+      "North Dakota",
+      "Rhode Island",
+      "Washington"
+    ],
+    "governing_law_overridden": [
+      "California",
+      "Illinois",
+      "Minnesota",
+      "New York",
+      "North Dakota",
+      "Rhode Island",
+      "Washington"
+    ],
+    "jury_waiver_voided": [
+      "Minnesota",
+      "North Dakota",
+      "Washington",
+      "Wisconsin"
+    ],
+    "liquidated_damages_limited": [
+      "California",
+      "Minnesota",
+      "North Dakota"
+    ],
+    "general_release_limited": [
+      "California",
+      "Hawaii",
+      "Illinois",
+      "Indiana",
+      "Maryland",
+      "Michigan",
+      "Minnesota",
+      "New York",
+      "North Dakota",
+      "Rhode Island",
+      "Washington"
+    ],
+    "termination_protections": [
+      "California",
+      "Maryland",
+      "Michigan",
+      "Minnesota",
+      "New York",
+      "Virginia",
+      "Washington"
+    ],
+    "noncompete_limited": [
+      "Washington"
+    ],
+    "source_pages": [
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296
+    ]
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637911-2025",
+  "pipeline_version": "automation_v1",
+  "canonical_version": "final",
+  "document_identity": {
+    "brand": "Ivan Ramen",
+    "franchisor_legal_name": "Ivan Ramen Franchising LLC",
+    "franchisor_state_of_formation": "New York",
+    "franchisor_formation_date": "July 2021",
+    "parent_company": "Ivan Ramen Holdings Co, LLC",
+    "principal_address": "42 Maple Street, Dobbs Ferry, NY 10522",
+    "phone": ["(914) 406-1169", "(512) 788-0170"],
+    "website": "www.ivanramen.com",
+    "email": ["ivanramen@gmail.com", "chad@ivanramen.com"],
+    "issuance_date": "2025-03-21",
+    "state_filed": "Wisconsin",
+    "fiscal_year_end": "December 31",
+    "pdf_pages": 346,
+    "source_section": "Item 1, Cover",
+    "source_pages": [1, 7, 8],
+    "confidence": "high"
+  },
+  "business_description": {
+    "concept": "Casual dining restaurants specializing in ramen / American Izakaya",
+    "restaurant_size_sqft": {"low": 2500, "high": 3500},
+    "location_type": "High-traffic urban areas with nightlife",
+    "source_section": "Item 1, Item 7",
+    "source_pages": [1, 7, 17],
+    "confidence": "high"
+  },
+  "key_personnel": [
+    {"name": "Ivan Orkin", "title": "CEO and Manager", "since": "July 2021"},
+    {"name": "Chad Combs", "title": "COO and Secretary", "since": "July 2021"},
+    {"name": "Dale Watkins", "title": "Culinary Director", "since": "January 2024"}
+  ],
+  "litigation": {"status": "none_required", "confidence": "high"},
+  "bankruptcy": {"status": "none_required", "confidence": "high"},
+  "fees": {
+    "initial_franchise_fee": {"amount": 35000, "refundable": false},
+    "area_development_fee": {"formula": "$35,000 × units", "range": {"low": 105000, "high": 350000}},
+    "continuing_royalty": {"rate": "5%", "basis": "Gross Revenues", "fixed_during_term": true},
+    "system_brand_contribution": {"rate": "Up to 1.5%", "status": "Not yet established"},
+    "system_technology_fee": {"rate": "Up to 1.0%", "current_rate": "0%"},
+    "proprietary_products_monthly": 7333,
+    "successor_term_fee": 35000,
+    "transfer_fee": 10000,
+    "confidence": "high"
+  },
+  "initial_investment": {
+    "single_unit": {"low": 1024500, "high": 1982100},
+    "area_development": {"low": 1106500, "high": 2302100},
+    "confidence": "high"
+  },
+  "territory": {
+    "exclusive": false,
+    "minimum_sales_quota": 1250000,
+    "quota_consequence": "Removal of territorial protections (not termination)",
+    "confidence": "high"
+  },
+  "contract_terms": {
+    "initial_term_years": 10,
+    "successor_terms": 1,
+    "successor_term_years": 10,
+    "materially_different_risk": true,
+    "time_to_open_months": 15,
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": "No competing business anywhere in US",
+    "post_term_years": 2,
+    "post_term_geographic": "Territory + 10 miles of any Ivan Ramen territory",
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "arbitration": false,
+    "mediation": false,
+    "litigation_only": true,
+    "forum": "Westchester County, NY (subject to state overrides)",
+    "governing_law": "New York (subject to state overrides)",
+    "confidence": "high"
+  },
+  "financial_performance_representation": {
+    "fpr_made": false,
+    "confidence": "high"
+  },
+  "outlet_data": {
+    "as_of_date": "2024-12-31",
+    "total_systemwide": 1,
+    "franchised_operating": 0,
+    "company_owned": 1,
+    "signed_not_open": 1,
+    "projected_franchise_next_fy": 1,
+    "confidence": "high"
+  },
+  "financial_statements": {
+    "auditor": "BMKR LLP",
+    "opinion_type": "unqualified",
+    "going_concern_emphasis": false,
+    "financial_condition_flag": true,
+    "fy2024": {
+      "total_revenue": 5000,
+      "net_loss": -76856,
+      "total_assets": 33040,
+      "members_equity": 1040,
+      "cash": 5992
+    },
+    "fy2023": {"total_revenue": 0, "net_loss": -81337, "total_assets": 146012, "cash": 139242},
+    "fy2022": {"total_revenue": 0, "net_loss": -51767, "total_assets": 216301, "cash": 209531},
+    "subsequent_events": ["February 2025: $120,000 capital contribution by owner"],
+    "confidence": "high"
+  },
+  "state_addenda": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "New York", "North Dakota", "Wisconsin"],
+    "fee_deferral_states": ["Illinois", "Maryland", "North Dakota"],
+    "noncompete_unenforceable_states": ["California", "North Dakota"],
+    "governing_law_overrides": ["Illinois", "Indiana", "North Dakota"],
+    "confidence": "high"
+  },
+  "special_risks": [
+    {"risk": "Out-of-State Dispute Resolution", "severity": "medium"},
+    {"risk": "Short Operating History", "severity": "high"},
+    {"risk": "Sales Performance Required ($1.25M minimum)", "severity": "high"},
+    {"risk": "Financial Condition", "severity": "high"}
+  ],
+  "retries_applied": ["R1_auditor_opinion", "R2_state_addenda"],
+  "depth_passes_applied": ["financial_notes", "contract_burdens", "promotion_audit", "state_addenda_promotion"],
+  "unresolveds": [
+    {
+      "id": "U1",
+      "description": "UK master franchise operating status — sold September 2023, terms disclosed (£1 + 5%), but operating status, unit count, and performance not disclosed",
+      "severity": "medium",
+      "source": "Exhibit C Note 6, pp. 285"
+    },
+    {
+      "id": "U2",
+      "description": "Auditor going-concern evaluation outcome — standard evaluation language present but no emphasis-of-matter paragraph; unclear whether going-concern risk was resolved by the February 2025 $120K capital contribution",
+      "severity": "medium",
+      "source": "Exhibit C pp. 275-276"
+    },
+    {
+      "id": "U3",
+      "description": "Franchisor's ability to perform pre-opening obligations — $5,992 cash at 12/31/2024, G&A ~$80K/year; three state regulators (IL, MD, ND) independently imposed fee deferral requirements due to financial concerns",
+      "severity": "high",
+      "source": "Items 4, 11, 21; State Addenda pp. 323, 325, 333"
+    },
+    {
+      "id": "U4",
+      "description": "Ivan Ramen USA LLC financial health — affiliate operating the one company-owned restaurant has borrowed $25,848 from the franchisor with no terms or interest; affiliate's financial condition not disclosed",
+      "severity": "low",
+      "source": "Exhibit C Note 5, p. 284"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "C1",
+      "description": "State of formation discrepancy — Item 1 states 'New York limited liability company'; financial statement Note 1 states 'Delaware limited liability company'. One is incorrect.",
+      "items_involved": ["Item 1", "Exhibit C Note 1"],
+      "resolution_status": "unresolved"
+    },
+    {
+      "id": "C2",
+      "description": "Ghost kitchen classification — counted as 'franchised' outlet in Item 20 tables but footnoted as 'not an Ivan Ramen Restaurant'; cover page describes franchise as 'Ivan Ramen Restaurant Businesses'",
+      "items_involved": ["Item 1", "Item 20"],
+      "resolution_status": "resolved_via_footnote"
+    },
+    {
+      "id": "C3",
+      "description": "Revenue recognition vs. actual revenue — $5,000 recognized in FY2024 from $25,000 Las Vegas franchise fee; ASC 606 policy states straight-line recognition over 10-year term, which would yield ~$2,500 for a mid-year signing. The $5,000 recognized is higher than expected under stated policy.",
+      "items_involved": ["Item 5", "Exhibit C Note 2", "Exhibit C Income Statement"],
+      "resolution_status": "unresolved_but_immaterial"
+    }
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "New York", "North Dakota", "Wisconsin"],
+    "fee_deferral_states": ["Illinois", "Maryland", "North Dakota"],
+    "override_summary_table": {
+      "forum_selection": ["California", "Illinois", "Maryland", "North Dakota"],
+      "governing_law": ["California", "Illinois", "Indiana", "New York", "North Dakota"],
+      "noncompete": ["California", "Indiana", "North Dakota"],
+      "general_release": ["California", "Hawaii", "Indiana", "Maryland", "New York", "North Dakota"],
+      "termination": ["Illinois", "Indiana", "Maryland", "Wisconsin"],
+      "damages": ["California", "Indiana", "North Dakota"],
+      "interest_rate": ["California"],
+      "fee_deferral": ["Illinois", "Maryland", "North Dakota"],
+      "anti_fraud": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "New York", "North Dakota", "Wisconsin"]
+    },
+    "total_overrides": 32
+  },
+  "contract_terms_depth": {
+    "force_majeure": {
+      "present": true,
+      "termination_after_days": 180,
+      "notice_days": 30
+    },
+    "cross_default": true,
+    "withholding_consent_exclusive_remedy": true,
+    "ip_license_back": true,
+    "social_media_prohibition": true
+  }
+}

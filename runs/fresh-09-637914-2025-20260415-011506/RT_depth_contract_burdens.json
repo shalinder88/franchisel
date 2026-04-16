@@ -1,0 +1,209 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637914-2025",
+  "brand": "Iron Valley Real Estate",
+  "depth_pass": "contract_burdens",
+  "agreement": "Franchise Agreement (Exhibit A-1)",
+  "source_pages": [48, 91],
+  "burdens": {
+    "grant_and_term": {
+      "grant": "Non-exclusive license to use System and Marks at one consented location",
+      "initial_term": "5 years from Effective Date",
+      "renewal": "Successive 5-year terms with 180-day notice. Must sign then-current FA (may have materially different terms). Renewal fee $5,000 ($2,500 if fully compliant).",
+      "renewal_conditions": ["Solvent", "Not abandoned", "Not endangering brand", "No false reports", "Sign then-current FA", "Pay renewal fee", "Remodel if needed", "All obligations satisfied"],
+      "month_to_month_extension": "Available by written agreement if renewal not completed. 30-day termination notice.",
+      "source_pages": [57, 58]
+    },
+    "fees_and_payments": {
+      "initial_franchise_fee": "$5,000-$20,000 (varies by county/history/veteran status)",
+      "royalty": "$150 per Transaction Side, due 15th of following month",
+      "marketing_fee": "$250/month, due 15th of following month",
+      "agent_website_fee": "$16.96/agent/month (if using recommended provider)",
+      "local_marketing": "$125/month minimum (paid to third parties)",
+      "grand_opening": "$1,000 minimum in first 6 months",
+      "eft_required": true,
+      "eft_failure_is_material_default": true,
+      "late_fee": "5% of past due (material breach)",
+      "interest": "18% APR on delinquent amounts",
+      "cpi_adjustable": true,
+      "no_setoff": true,
+      "fees_nonrefundable": true,
+      "source_pages": [56, 57]
+    },
+    "site_selection_and_construction": {
+      "site_consent_required": true,
+      "consent_timeline": "10 business days after address provided",
+      "find_site_deadline": "90 days after FA signing",
+      "hard_deadline": "180 days to complete training and begin operations",
+      "cancel_if_no_site_180_days": true,
+      "refund_on_cancel": "Initial fee minus processing costs",
+      "outlet_size": "1,500-3,000 sq ft",
+      "lease_rider_may_be_required": true,
+      "relocation": "Allowed with written consent (90-day notice, 20 business day response)",
+      "source_pages": [26, 27]
+    },
+    "training_obligations": {
+      "initial_training_required": true,
+      "who_must_attend": "Office Manager + at least one Principal Equity Owner",
+      "completion_deadline": "180 days after FA signing, before opening",
+      "failure_consequence": "Grounds for termination; may retake or send replacement",
+      "cost": "Free for OM/PEOs; up to $750/day for others; travel at franchisee expense",
+      "ongoing_training": "May be required at reasonable notice; $500-$5,000 fee",
+      "conferences_required": "At least one OM and one PEO must attend regional/system-wide meetings",
+      "source_pages": [58, 59]
+    },
+    "operational_obligations": {
+      "office_manager_required": true,
+      "om_must_be_50pct_peo": true,
+      "om_full_time": true,
+      "om_no_competitor_interest": true,
+      "agent_minimums": {"6_months": 10, "year_1": 20, "year_2": 30, "ongoing": 24},
+      "community_events": "1+ per year",
+      "office_events": "2+ per year for agents",
+      "lockbox_required": true,
+      "allow_other_ivre_agents_office_use": true,
+      "mls_membership_required": true,
+      "quarterly_mls_report": true,
+      "insurance_required": {"gl": "$1M per occurrence/$1M aggregate", "auto": "$100K/$300K/$100K", "workers_comp": "Statutory"},
+      "franchisor_named_additional_insured": true,
+      "source_pages": [36, 39]
+    },
+    "termination_triggers": {
+      "good_cause_only": true,
+      "cure_period_curable": "30 days (up to 15 additional days if nature of breach requires)",
+      "immediate_termination_triggers": [
+        "Bankruptcy/insolvency",
+        "Failure to commence operations within 210 days",
+        "Abandonment (5 consecutive business days)",
+        "Material misrepresentation",
+        "Failure to comply with law (10 days after notice)",
+        "Repeated same noncompliance after cure",
+        "Repeatedly fail to comply with requirements",
+        "Seizure/foreclosure (judgment unsatisfied 30 days)",
+        "Felony conviction",
+        "Failure to pay fees within 5 days of written notice",
+        "False books/records or 5%+ underreporting",
+        "Imminent danger to public health or safety"
+      ],
+      "cross_default": true,
+      "cross_default_scope": "May declare default of all agreements with franchisee",
+      "lost_royalty_recovery": {
+        "less_than_1_year": "Greater of $20,000, 300% of royalties paid, or amount obligated",
+        "1_to_2_years": "Greater of 200% of royalties paid or amount obligated",
+        "2_to_3_years": "Greater of 150% of royalties paid or amount obligated",
+        "over_3_years": "Aggregate royalty paid or obligated for 3 years before termination"
+      },
+      "source_pages": [76, 77, 78, 79]
+    },
+    "transfer_restrictions": {
+      "franchisor_consent_required": true,
+      "not_unreasonably_withheld": true,
+      "transfer_fee": "$5,000 (10 days before transfer)",
+      "conditions": [
+        "Transferee completes application",
+        "Transferee qualifies (skills, qualifications, resources)",
+        "Transferee assumes obligations in writing",
+        "Transferee signs then-current FA",
+        "Franchisee in compliance with all material obligations",
+        "Transferee completes training within 30 days",
+        "Transferee pays training expenses"
+      ],
+      "response_time": "60 days after receipt of all documentation",
+      "right_of_first_refusal": true,
+      "rofr_response": "15 days (or 10 days after additional info)",
+      "rofr_exceptions": ["Transfers between SBA guarantors", "Partial equity transfers (<100%)"],
+      "family_transfers": "Allowed with consent (not unreasonably withheld). No ROFR. Management provision required.",
+      "no_pledge_or_encumbrance": "Except SBA loan with consent",
+      "unauthorized_transfer_is_void": true,
+      "mutual_release_required": true,
+      "source_pages": [73, 74, 75]
+    },
+    "noncompete_scope": {
+      "during_term": "No use of Marks, System, techniques, or proprietary information in connection with any non-IVRE business (Section 11.1, 11.3)",
+      "post_term": "Must refrain from any use, direct or indirect, of trade secrets or proprietary information, including operational, sales, promotional and marketing methods (Section 11.2)",
+      "geographic_scope_during": "Anywhere",
+      "geographic_scope_post": "Not specified (trade secrets protection)",
+      "duration_post": "Perpetual (trade secret protection)",
+      "applies_to": "Franchisee, Principal Equity Owners, Office Manager, other managers, directors, officers, general partners, affiliates",
+      "source_pages": [39, 43]
+    },
+    "guaranty": {
+      "form": "Guarantee of Franchise Agreement (FA Exhibit 3)",
+      "scope": "Absolute and unconditional guarantee of all payments and performance of all covenants",
+      "who_signs": "Each Principal Equity Owner and their spouses (if applicable)",
+      "joint_and_several": true,
+      "primary_as_sureties": true,
+      "can_proceed_directly": "Franchisor may proceed directly against guarantors without first proceeding against franchisee",
+      "continuing_irrevocable": true,
+      "guaranty_venue": "Court of Common Pleas, Dauphin County, PA or M.D. Pa.",
+      "source_pages": [91]
+    },
+    "liquidated_damages": {
+      "lost_royalty_formula": "See termination_triggers.lost_royalty_recovery above",
+      "basis": "Estimated time for replacement franchisee to achieve similar revenue + franchisor processing/training costs",
+      "source_pages": [79]
+    },
+    "dispute_resolution": {
+      "step_1": "Settlement Conference: In-person meeting at franchisor HQ, without counsel, within 5 business days",
+      "step_2": "Mediation: Mutually acceptable mediator (10+ years franchise experience), mutually agreed PA location, 60-day completion target",
+      "step_3": "Arbitration: JAMS (Streamlined <$250K, Comprehensive ≥$250K)",
+      "venue": "Philadelphia County, PA (or franchisor HQ county, or franchisee's county at franchisor election)",
+      "arbitrator_cannot": "Declare marks generic/invalid or award punitive damages",
+      "excluded_from_mediation_arbitration": ["Immediate termination events (Section 13.2)", "Failure to pay sums due (Section 13.3)"],
+      "waiver_of_jury_trial": true,
+      "waiver_of_class_action": true,
+      "prevailing_party_fees": true,
+      "source_pages": [79, 80]
+    },
+    "insurance_requirements": {
+      "gl": "$1M per occurrence, $1M aggregate",
+      "auto": "$100K/$300K/$100K",
+      "workers_comp": "Statutory",
+      "carrier_rating": "A VII or better (AM Best)",
+      "franchisor_as_additional_insured": true,
+      "annual_proof_required": true,
+      "source_pages": [21, 22]
+    },
+    "indemnification": {
+      "franchisee_indemnifies_franchisor": "All Losses from franchisee's intentional tort, negligence, or agent/servant actions relating to outlet operations",
+      "franchisor_indemnifies_franchisee": "Losses from franchisor's intentional misfeasance, gross negligence, or material breach",
+      "standard": "Asymmetric — franchisee covers negligence; franchisor covers only intentional misfeasance/gross negligence",
+      "surviving": true,
+      "source_pages": [82, 83]
+    },
+    "force_majeure": {
+      "abandonment_exception": "Not deemed abandoned if closure due to natural disasters or matters beyond control, with 5-day notice and 180-day restoration deadline",
+      "general_force_majeure": "Not separately addressed as a standalone clause. Abandonment definition contains the primary carve-out.",
+      "source_pages": [52]
+    },
+    "distinctive_clauses": {
+      "eft_failure_is_material_default": "Failure to implement EFT system is material default (Section 4.4)",
+      "equity_certificate_legend_required": "Must print restrictive legend on equity certificates (Section 3.5)",
+      "no_accord_or_satisfaction": "Partial payment does not constitute accord (Section 4.7)",
+      "cpi_adjustable_all_fees": "All fixed dollar amounts may be CPI-adjusted at franchisor's discretion (Section 4.8)",
+      "telephone_number_assignment": "Must assign all phone numbers/listings to franchisor upon termination (Section 15.1(b)(v))",
+      "franchisor_right_to_cure_defaults": "Franchisor may cure franchisee defaults and charge costs (Section 13.7)",
+      "anti_waiver_carveout": "No statement/questionnaire/acknowledgment waives state franchise law claims or disclaims reliance on franchisor statements (Section 16.14(b))",
+      "source_pages": [56, 57, 79, 81, 86]
+    }
+  },
+  "adrsa_key_burdens": {
+    "territory_fee": "$100",
+    "development_area": "Radius from first outlet (100mi→150mi→200mi)",
+    "development_schedule": "Mutually agreed",
+    "term": "5 years, auto-renewing for 1-year terms",
+    "failure_consequence": "Loss of Royalty Share rights; individual FAs continue",
+    "royalty_share_post_expiry": "12 months for operating outlets",
+    "no_transfer": "Except to entity 100% owned by individual area developer",
+    "source_pages": [95, 96, 97, 98, 99, 100]
+  },
+  "guarantee_key_facts": {
+    "scope": "Absolute, unconditional, continuing, irrevocable",
+    "joint_and_several": true,
+    "spousal_guarantee": true,
+    "primary_obligation": "Guarantors are primary sureties — franchisor need not proceed against franchisee first",
+    "amendment_protection_waived": "FA may be amended without guarantor consent; guarantor remains bound",
+    "venue": "Dauphin County, PA (Court of Common Pleas) or M.D. Pa.",
+    "source_pages": [91]
+  }
+}

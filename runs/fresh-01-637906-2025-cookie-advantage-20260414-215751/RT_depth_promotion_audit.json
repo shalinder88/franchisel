@@ -1,0 +1,81 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_date": "2026-04-14",
+  "brand": "Cookie Advantage",
+  "promoted_facts": [
+    {
+      "id": "P1",
+      "fact": "Accelerated royalties on termination — franchisee owes royalties through remainder of scheduled term even after termination",
+      "source_reader_report": "Pass E — Post-Termination Obligations",
+      "source_pdf_page": 36,
+      "promoted_to": "09_final_canonical.json — termination.post_termination_royalty_acceleration",
+      "status": "promoted"
+    },
+    {
+      "id": "P2",
+      "fact": "No force majeure clause in Franchise Agreement",
+      "source_reader_report": "Not explicitly in reader report — found during contract depth pass",
+      "source_pdf_page": null,
+      "promoted_to": "09_final_canonical.json — contract_provisions.force_majeure",
+      "status": "promoted"
+    },
+    {
+      "id": "P3",
+      "fact": "Operations Manual is 205 pages covering 17 sections, with Computer Operations (50pp) and Training (73pp) as largest sections",
+      "source_reader_report": "Pass C — referenced but not in canonical",
+      "source_pdf_page": 124,
+      "promoted_to": "09_final_canonical.json — operations_manual",
+      "status": "promoted"
+    },
+    {
+      "id": "P4",
+      "fact": "Bakery size requirement: 1,000 to 1,200 square feet, typically in retail strip malls",
+      "source_reader_report": "Pass B — Item 7 notes",
+      "source_pdf_page": 16,
+      "promoted_to": "09_final_canonical.json — site_requirements",
+      "status": "promoted"
+    },
+    {
+      "id": "P5",
+      "fact": "Opening timeline: 60-90 days from signing. Must open within 90 days or material breach",
+      "source_reader_report": "Pass C — Item 11",
+      "source_pdf_page": 23,
+      "promoted_to": "09_final_canonical.json — opening_timeline",
+      "status": "promoted"
+    },
+    {
+      "id": "P6",
+      "fact": "Franchise seller identities: Duane Carns and Kim Carns (from Receipt, Exhibit J)",
+      "source_reader_report": "Not in reader report",
+      "source_pdf_page": 175,
+      "promoted_to": "09_final_canonical.json — franchise_sellers",
+      "status": "promoted"
+    },
+    {
+      "id": "P7",
+      "fact": "Tolling provision on post-term noncompete — restricted period extended by duration of any violation",
+      "source_reader_report": "Pass E — Noncompete Restrictions",
+      "source_pdf_page": 37,
+      "promoted_to": "09_final_canonical.json — noncompete.tolling_provision",
+      "status": "already_in_canonical"
+    },
+    {
+      "id": "P8",
+      "fact": "KDKC affiliate revenue from franchisee purchases in FY2024: $177,913.82",
+      "source_reader_report": "Pass C — Item 8",
+      "source_pdf_page": 19,
+      "promoted_to": "12_canonical_enriched_v2.json — related_party_transactions",
+      "status": "already_in_enriched"
+    },
+    {
+      "id": "P9",
+      "fact": "Revenue recognition: 70% of franchise fee recognized in year 1, 30% in years 2-5. Royalties at time of sale. Renewals when received. Transfers 100% at transfer.",
+      "source_reader_report": "Not in reader report — from financial notes depth pass",
+      "source_pdf_page": 57,
+      "promoted_to": "RT_depth_financial_notes.json",
+      "status": "already_in_depth"
+    }
+  ],
+  "promotion_count": 6,
+  "already_present_count": 3
+}

@@ -1,0 +1,68 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "promoted_facts": [
+    {
+      "fact": "Franchisor began offering franchises June 2018 (not just 'formed 2016')",
+      "source_reader_report": "Pass B, Item 1",
+      "source_pdf_page": 7,
+      "promoted_to": "entity_structure.franchising_since"
+    },
+    {
+      "fact": "Franchisee sales compiled from franchisee-reported data (self-reported, not independently verified)",
+      "source_reader_report": "Pass F, Item 19 notes",
+      "source_pdf_page": 54,
+      "promoted_to": "item19.data_quality_note"
+    },
+    {
+      "fact": "5 company-owned units (DD, GG, JJ, KK, MM) were purchased from franchisees during 2024 — blended operation periods in reported sales",
+      "source_reader_report": "Pass F, Item 19 notes",
+      "source_pdf_page": 54,
+      "promoted_to": "item19.elmers_company_owned.notes"
+    },
+    {
+      "fact": "No franchise sales occurred in fiscal years 2023 or 2024",
+      "source_reader_report": "Pass F, Item 21 financial notes",
+      "source_pdf_page": 188,
+      "promoted_to": "item21.no_franchise_sales_recent"
+    },
+    {
+      "fact": "ERI received $306,594.43 in rebates from approved suppliers in 2024, all contributed to BPF or conference",
+      "source_reader_report": "Pass C, Item 8",
+      "source_pdf_page": 23,
+      "promoted_to": "supplier_restrictions.rebates_received_2024_eri"
+    },
+    {
+      "fact": "BPF 2024 spending: 30.22% media, 20.28% admin, 16.92% sponsorships, 15.8% local marketing, 10.42% retained, 4.56% social/eMarketing, 1.36% website, 0.44% gift card. 0% franchisee solicitation.",
+      "source_reader_report": "Pass C, Item 11",
+      "source_pdf_page": 29,
+      "promoted_to": "item11.bpf_spending_breakdown"
+    },
+    {
+      "fact": "Washington state explicitly flagged financial condition risk and imposed fee deferral requirement",
+      "source_reader_report": "Pass F, State Addenda",
+      "source_pdf_page": 218,
+      "promoted_to": "state_addenda.washington.financial_condition_flag"
+    },
+    {
+      "fact": "Washington no-poach AOD entered October 11, 2019 (Case No. 19-2-26768-2 SEA)",
+      "source_reader_report": "Pass F, State Addenda",
+      "source_pdf_page": 218,
+      "promoted_to": "state_addenda.washington.no_poach_aod"
+    },
+    {
+      "fact": "57% of advertising revenue in 2024 came from Parent Company-owned locations (up from 48%)",
+      "source_reader_report": "Pass F, Item 21",
+      "source_pdf_page": 189,
+      "promoted_to": "related_party_transactions.parent_ad_revenue_pct_2024"
+    },
+    {
+      "fact": "Uninsured deposits of $601,700 as of Dec 29, 2024 — exceeds FDIC limits",
+      "source_reader_report": "Pass F, Item 21",
+      "source_pdf_page": 190,
+      "promoted_to": "item21.uninsured_deposits"
+    }
+  ],
+  "total_promoted": 10,
+  "canonical_patched": true,
+  "enriched_v2_patched": true
+}

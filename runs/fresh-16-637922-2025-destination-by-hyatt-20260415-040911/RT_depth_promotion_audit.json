@@ -1,0 +1,56 @@
+{
+  "depth_pass": "narrative_to_canonical_promotion",
+  "extraction_date": "2026-04-15",
+  "promoted_facts": [
+    {
+      "fact": "Brand Hotel franchisees received $21,841,628 more in loyalty program reimbursements than they paid in loyalty program fees during 2024",
+      "source": "Reader report Pass C / Item 8",
+      "source_pages": [45],
+      "promoted_to": "supplier_restrictions.loyalty_net_benefit_2024"
+    },
+    {
+      "fact": "Hyatt Corporation affiliates collected about $491,320 in fees from providing products/services to Brand Hotel franchisees in 2024 (not including Commercial Services Fee)",
+      "source": "Reader report Pass C / Item 8",
+      "source_pages": [45],
+      "promoted_to": "supplier_restrictions.affiliate_revenue_2024"
+    },
+    {
+      "fact": "System Standards comprise 3,641 pages",
+      "source": "Reader report Pass C / Item 11",
+      "source_pages": [52],
+      "promoted_to": "training.system_standards_pages"
+    },
+    {
+      "fact": "5% of total operating revenue must be deposited monthly into CapEx Account for capital expenditures/upgrades",
+      "source": "Reader report Pass C / Item 8",
+      "source_pages": [45, 190],
+      "promoted_to": "supplier_restrictions.capital_reserve"
+    },
+    {
+      "fact": "PMS/POS vendor currently charges $3.90/room/month for support",
+      "source": "Reader report Pass C / Item 11",
+      "source_pages": [54],
+      "promoted_to": "fees.ongoing_fees.pms_pos_vendor_support"
+    },
+    {
+      "fact": "Sound system vendor charges $18.95/month for quarterly playlist updates",
+      "source": "Reader report Pass C / Item 11",
+      "source_pages": [55],
+      "promoted_to": "fees.ongoing_fees.sound_system_vendor"
+    },
+    {
+      "fact": "Pre-opening marketing minimum: $500 × number of guest rooms",
+      "source": "Reader report Pass C / Item 11",
+      "source_pages": [50],
+      "promoted_to": "fees.initial_fees.pre_opening_marketing_minimum"
+    },
+    {
+      "fact": "Franchise sellers listed on receipt: Daniel Hansen, James Bertram, Rika Lisslo, Ryan McNamara, Joshua Siebert, James Tierney, Christina Wells",
+      "source": "Reader report / Receipt page",
+      "source_pages": [375],
+      "promoted_to": "document_identity.franchise_sellers"
+    }
+  ],
+  "total_promoted": 8,
+  "note": "09_final_canonical.json and 12_canonical_enriched_v2.json patched with promoted facts"
+}

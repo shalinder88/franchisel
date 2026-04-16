@@ -1,0 +1,100 @@
+{
+  "depth_pass": "financial_notes",
+  "extraction_date": "2026-04-15",
+  "filing_id": "637925-2025",
+  "entity": "Hyatt Hotels Corporation",
+  "auditor": "Deloitte & Touche LLP",
+  "fiscal_year": 2024,
+  "source_pages": [112, 113, 114, 115, 116, 117, 118, 119, 120, 125, 130, 140, 150, 170, 175],
+  "accounting_policies": {
+    "revenue_recognition": {
+      "management_fees": "Base management fees recognized over time as services rendered. Incentive management fees based on hotel profitability metrics.",
+      "franchise_fees": "Franchise and other fees recognized over time including initial franchise fees amortized over franchise agreement term.",
+      "loyalty_program": "Points-based program; revenues deferred and recognized upon redemption or breakage. Deferred revenue liability $1,333M at 12/31/2024, actuarially determined.",
+      "distribution": "ALG Vacations — net vs. gross recognition depending on principal vs. agent determination.",
+      "co_branded_credit_cards": "Multiple performance obligations (license, loyalty points, free nights) allocated using relative standalone selling prices.",
+      "reimbursed_costs": "Costs incurred on behalf of managed/franchised hotels recognized as revenue with offsetting expense.",
+      "source_pages": [125, 130]
+    },
+    "depreciation_amortization": {
+      "buildings_and_improvements": "10-50 years straight-line",
+      "leasehold_improvements": "Shorter of lease term or useful life",
+      "furniture_equipment": "3-20 years straight-line",
+      "computers": "3-7 years straight-line",
+      "management_franchise_intangibles": "4-31 years",
+      "customer_relationships": "4-12 years",
+      "depreciation_2024": 333000000,
+      "source_pages": [130]
+    },
+    "impairment_policy": {
+      "method": "Quarterly assessment of property/equipment and definite-lived intangibles. Undiscounted cash flow test; if carrying value exceeds, fair value determined via discounted cash flows, appraisals, or broker valuations.",
+      "goodwill_impairment_2024": 110000000,
+      "goodwill_impairment_reporting_unit": "Management and franchising segment reporting unit",
+      "goodwill_remaining_reporting_unit": 1116000000,
+      "total_asset_impairments_2024": 213000000,
+      "fair_value_method": "Weighted methodology: discounted future cash flows + guideline public companies method",
+      "source_pages": [113, 130]
+    }
+  },
+  "income_tax": {
+    "provision_2024": 267000000,
+    "effective_rate_2024": "17.1% (267/1563)",
+    "deferred_tax_assets_2024": 466000000,
+    "deferred_income_taxes_cf_2024": -123000000,
+    "note": "Full tax note detail not separately extracted at line-item level; deferred tax assets $466M suggest significant timing differences",
+    "source_pages": [116]
+  },
+  "lease_accounting": {
+    "operating_lease_rou_assets_2024": 328000000,
+    "current_operating_lease_liabilities_2024": 33000000,
+    "long_term_operating_lease_liabilities_2024": 245000000,
+    "total_operating_lease_liabilities_2024": 278000000,
+    "lease_payments_2024": 45000000,
+    "rou_assets_obtained_2024": 19000000,
+    "source_pages": [116, 119]
+  },
+  "subsequent_events": {
+    "form_8k_filed": "2025-03-26",
+    "note": "Form 8-K attached as Exhibit A-2. Details not deeply extracted but includes debt issuance information.",
+    "source_pages": [178, 179, 180]
+  },
+  "related_party_transactions": {
+    "supplier_rebates_to_franchisees": "$529,077 offset against System Services Costs (FY2024)",
+    "affiliate_revenue_from_franchisees": "$17,684,840 in fees from Brand Hotel franchisees (FY2024)",
+    "loyalty_program_net_benefit": "$68,882,587 more in reimbursements than fees paid by franchisees (FY2024)",
+    "note": "Hyatt Group entities provide virtually all system services to franchisees. Hyatt Corporation is primary service provider.",
+    "source_pages": [46, 106]
+  },
+  "advertising_fund_accounting": {
+    "separate_fund": false,
+    "mechanism": "Commercial Services Fee (3.5% GRR) covers marketing as part of System Services",
+    "audit_provided": false,
+    "note": "No periodic accounting of Commercial Services Fee spending provided to franchisees. Hyatt Group will not use funds principally to solicit new franchise sales.",
+    "source_pages": [54]
+  },
+  "loyalty_program": {
+    "deferred_revenue_liability_2024": 1333000000,
+    "critical_audit_matter": true,
+    "actuarial_determination": true,
+    "breakage_estimate": "Included in actuarial model",
+    "segregated_accounts": true,
+    "independent_audit": true,
+    "source_pages": [112, 113]
+  },
+  "share_repurchases": {
+    "repurchases_2024": 1190000000,
+    "repurchases_2023": 453000000,
+    "repurchases_2022": 369000000,
+    "dividends_2024": 60000000,
+    "note": "Significant capital return program — $1.19B in repurchases in 2024 alone",
+    "source_pages": [118]
+  },
+  "investing_activities": {
+    "acquisitions_2024": 609000000,
+    "capital_expenditures_2024": 170000000,
+    "real_estate_proceeds_2024": 1421000000,
+    "financing_receivables_issued_2024": 136000000,
+    "note": "Asset-light transformation: $1.4B in real estate sale proceeds vs. $170M capex",
+    "source_pages": [118]
+  }
+}

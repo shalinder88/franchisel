@@ -1,0 +1,173 @@
+{
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637924-2025",
+  "brand": "JdV by Hyatt",
+  "enrichment_version": "v2",
+  "item21_financial_structure_detail": {
+    "parent_entity": "Hyatt Hotels Corporation",
+    "parent_ticker": "H",
+    "parent_exchange": "NYSE",
+    "parent_business_segments": ["Management and franchising", "Owned and leased", "Distribution"],
+    "total_revenue_trend": {"2022": 5891, "2023": 6667, "2024": 6648},
+    "net_income_trend": {"2022": 455, "2023": 220, "2024": 1296},
+    "franchise_fee_trend": {"2022": 297, "2023": 364, "2024": 458},
+    "franchise_fee_growth_yoy": {"2023": 0.226, "2024": 0.258},
+    "asset_light_indicators": {
+      "property_equipment_2024_mm": 1689,
+      "property_equipment_2023_mm": 2340,
+      "decrease_mm": 651,
+      "description": "Hyatt executing asset-light strategy, selling owned hotels and growing through franchising/management"
+    },
+    "leverage": {
+      "long_term_debt_2024_mm": 3326,
+      "total_equity_2024_mm": 3826,
+      "debt_to_equity": 0.87,
+      "total_debt_to_equity": 0.99,
+      "note": "Current maturities of $456M + long-term debt $3,326M = total debt ~$3,782M"
+    },
+    "goodwill": {
+      "goodwill_2024_mm": 2541,
+      "goodwill_2023_mm": 3205,
+      "impairment_2024_mm": 110,
+      "impairment_reporting_unit": "management and franchising segment",
+      "goodwill_to_total_assets_pct": 0.191
+    },
+    "nonrecurring_items_2024": {
+      "real_estate_gains_mm": 1245,
+      "asset_impairments_mm": -213,
+      "note": "2024 earnings quality impacted by large non-recurring gain from real estate sales"
+    }
+  },
+  "item21_statement_detail": {
+    "income_statement": {
+      "base_management_fees": {"2024": 399, "2023": 374, "2022": 319},
+      "incentive_management_fees": {"2024": 242, "2023": 232, "2022": 192},
+      "franchise_and_other_fees": {"2024": 458, "2023": 364, "2022": 297},
+      "gross_fees": {"2024": 1099, "2023": 970, "2022": 808},
+      "contra_revenue": {"2024": -69, "2023": -47, "2022": -31},
+      "net_fees": {"2024": 1030, "2023": 923, "2022": 777},
+      "owned_and_leased_revenue": {"2024": 1174, "2023": 1339, "2022": 1235},
+      "distribution_revenue": {"2024": 1023, "2023": 1047, "2022": 986},
+      "reimbursed_costs_revenue": {"2024": 3352, "2023": 3058, "2022": 2620},
+      "total_revenues": {"2024": 6648, "2023": 6667, "2022": 5891},
+      "general_and_administrative": {"2024": 548, "2023": 578, "2022": 435},
+      "owned_and_leased_costs": {"2024": 925, "2023": 1022, "2022": 916},
+      "depreciation_amortization": {"2024": 333, "2023": 397, "2022": 426},
+      "interest_expense": {"2024": -180, "2023": -145, "2022": -150},
+      "income_before_taxes": {"2024": 1563, "2023": 310, "2022": 363},
+      "income_tax_provision": {"2024": -267, "2023": -90, "2022": 92},
+      "net_income": {"2024": 1296, "2023": 220, "2022": 455},
+      "eps_diluted": {"2024": 12.65, "2023": 2.05, "2022": 4.09}
+    },
+    "balance_sheet": {
+      "cash_and_equivalents": {"2024": 1011, "2023": 881},
+      "short_term_investments": {"2024": 372, "2023": 15},
+      "receivables_net": {"2024": 1121, "2023": 883},
+      "total_current_assets": {"2024": 2733, "2023": 2130},
+      "equity_method_investments": {"2024": 189, "2023": 211},
+      "property_and_equipment_net": {"2024": 1689, "2023": 2340},
+      "financing_receivables_net": {"2024": 368, "2023": 73},
+      "goodwill": {"2024": 2541, "2023": 3205},
+      "intangibles_net": {"2024": 2167, "2023": 1670},
+      "other_assets": {"2024": 2843, "2023": 2477},
+      "total_assets": {"2024": 13324, "2023": 12833},
+      "current_maturities_lt_debt": {"2024": 456, "2023": 751},
+      "accounts_payable": {"2024": 475, "2023": 493},
+      "current_contract_liabilities": {"2024": 1553, "2023": 1598},
+      "total_current_liabilities": {"2024": 3274, "2023": 3578},
+      "long_term_debt": {"2024": 3326, "2023": 2305},
+      "long_term_contract_liabilities": {"2024": 843, "2023": 1759},
+      "total_liabilities": {"2024": 9498, "2023": 9266},
+      "total_stockholders_equity": {"2024": 3547, "2023": 3564},
+      "noncontrolling_interests": {"2024": 279, "2023": 3},
+      "total_equity": {"2024": 3826, "2023": 3567}
+    },
+    "franchisor_balance_sheet": {
+      "entity": "Hyatt Franchising, L.L.C.",
+      "as_of": "2024-12-31",
+      "audited": false,
+      "cash": 112484,
+      "receivables_net": 8065116,
+      "receivables_allowance": 6821037,
+      "total_current_assets": 8177600,
+      "franchise_agreement_assets": 144822971,
+      "franchise_agreement_intangibles_net": 5680345,
+      "deferred_tax_assets": 609930,
+      "total_assets": 159290846,
+      "accounts_payable_accrued": 95719,
+      "current_contract_liabilities": 329024,
+      "total_current_liabilities": 424743,
+      "long_term_contract_liabilities": 10337886,
+      "total_liabilities": 10762629,
+      "members_equity": 148528217
+    }
+  },
+  "item6_fee_detail": {
+    "franchise_agreement_fees": [
+      {"name": "Royalty Fee", "rate": 0.07, "basis": "GRR from Channel Bookings", "frequency": "monthly"},
+      {"name": "World of Hyatt Assessment", "rate": 0.045, "basis": "eligible WOH member revenue", "frequency": "monthly", "reduced_rate": 0.0225, "reduced_condition": "on-property enrollment"},
+      {"name": "Comfort Letter Fee", "amount": 2500, "frequency": "as_incurred"},
+      {"name": "QA/Compliance FIP Stage 1", "amount": 5000, "frequency": "per_6mo_stage"},
+      {"name": "QA/Compliance FIP Stage 2", "amount": 15000, "frequency": "per_6mo_stage"},
+      {"name": "QA/Compliance FIP Stage 3", "amount": 20000, "frequency": "per_6mo_stage"},
+      {"name": "Brand Protection Program (BPP)", "amount": 45000, "frequency": "annual"},
+      {"name": "On-site QA Inspection", "amount_low": 1500, "amount_high": 2000, "frequency": "annual"},
+      {"name": "Re-inspection", "amount": 2000, "frequency": "as_incurred"},
+      {"name": "Additional Training", "amount": 950, "unit": "per_trainer_per_day", "frequency": "as_incurred"},
+      {"name": "Training Tools", "amount": 9.01, "unit": "per_guest_room_per_year", "frequency": "annual"},
+      {"name": "Owner Convention", "amount_low": 2000, "amount_high": 5000, "unit": "per_attendee", "frequency": "annual_or_biennial"},
+      {"name": "Leadership Summit", "amount_low": 3000, "amount_high": 6000, "unit": "per_attendee", "frequency": "every_4_years"},
+      {"name": "GM University", "amount": 2700, "unit": "per_new_gm", "frequency": "as_incurred"},
+      {"name": "Offering Materials Review", "amount": 5000, "frequency": "as_incurred"},
+      {"name": "Royalty Fee Post-Termination", "amount": 5000, "unit": "per_day", "frequency": "daily_during_non_compliance"},
+      {"name": "Late Fee", "amount": 225, "plus_interest": "1.5%/month or max legal rate"},
+      {"name": "Insurance Pass-Through", "amount": 200, "unit": "per_guest_room_per_year", "frequency": "as_incurred"}
+    ],
+    "mandatory_services": [
+      {"name": "Commercial Services Fee", "rate": 0.035, "basis": "GRR", "frequency": "monthly"},
+      {"name": "Digital Acquisition Fee", "rate": 0.0135, "basis": "GRR from Digital Channels", "frequency": "monthly"},
+      {"name": "GDS/Reservation Services", "amount": 8.50, "unit": "per_reservation", "frequency": "monthly"},
+      {"name": "Mandatory Contract Costs", "amount_low": 1500, "amount_high": 25000, "unit": "per_month", "frequency": "monthly"},
+      {"name": "Other Corporate Services", "amount_low": 500, "amount_high": 15000, "unit": "per_month", "frequency": "monthly"}
+    ],
+    "non_mandatory_services": [
+      {"name": "Field Marketing", "tiers": [{"tier": 1, "amount": 996}, {"tier": 2, "amount": 1867}, {"tier": 3, "amount": 2747}], "unit": "per_month"},
+      {"name": "Revenue Management Services", "tiers": [{"tier": "Tactical", "amount": 1000}, {"tier": "Essential_pre", "amount": 1000}, {"tier": "Essential_post", "amount": 2000}, {"tier": "Premium_pre", "amount": 1750}, {"tier": "Premium_post", "amount": 3500}], "unit": "per_month"},
+      {"name": "Central Sales (Group)", "amount_low": 3850, "amount_high": 6650, "unit": "per_month"},
+      {"name": "Central Sales (Lead Specialist)", "amount_low": 1000, "amount_high": 5000, "unit": "per_month"},
+      {"name": "Central Sales (Transient)", "amount_low": 1600, "amount_high": 3200, "unit": "per_month"},
+      {"name": "Central Sales (Admin Support)", "amount_low": 3000, "amount_high": 3500, "unit": "per_month"},
+      {"name": "GPGS Add-On", "amount_low": 3.50, "amount_high": 16.00, "unit": "per_interaction"},
+      {"name": "Digital Ancillary Services", "amount": 1250, "unit": "per_month", "commission": 0.05, "commission_basis": "net revenue from vendor channels"},
+      {"name": "HSF Group Booking", "rate": 0.06, "reduced_rate": 0.03, "basis": "Group Contract Revenue", "cap": 30000},
+      {"name": "HSF Transient", "rate": 0.03, "basis": "GRR per room night"},
+      {"name": "HSF Referral", "rate": 0.01, "basis": "GRR per room night"},
+      {"name": "Upsell Commission", "rate": 0.05, "basis": "upsell revenue differential"}
+    ]
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Franchised vs owned/managed RevPAR gap unexplained", "severity": "high", "source": "Item 19"},
+    {"id": "U2", "description": "One franchised hotel WOH outlier (2.1% revenue)", "severity": "medium", "source": "Item 19"},
+    {"id": "U3", "description": "$110M goodwill impairment — JdV brand involvement unclear", "severity": "low", "source": "Item 21"},
+    {"id": "U4", "description": "$144.8M franchise agreement assets nature unclear", "severity": "low", "source": "Exhibit M"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "AOP 'protection' language vs explicit non-exclusivity disclaimer", "items_involved": ["Item 12"]},
+    {"id": "C2", "description": "Cover page franchisor payment range vs broader Item 7 payables", "items_involved": ["Cover", "Item 7"]}
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island", "Virginia"],
+    "forum_selection_overrides": ["Maryland", "Michigan", "Minnesota", "North Dakota", "Rhode Island"],
+    "governing_law_overrides": ["Maryland", "North Dakota", "Rhode Island"],
+    "general_release_overrides": ["Maryland", "Minnesota", "North Dakota"],
+    "termination_overrides": ["Maryland", "Michigan", "Minnesota", "Virginia"],
+    "damages_overrides": ["Minnesota", "North Dakota"]
+  },
+  "depth_pass_metrics": {
+    "financial_notes_extracted": 12,
+    "contract_burdens_extracted": 14,
+    "promoted_facts": 10,
+    "state_overrides_extracted": 20,
+    "states_with_addenda": 8
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "enrichment_version": "v2",
+  "item21_financial_structure_detail": {
+    "entity_structure": {
+      "type": "LLC",
+      "sole_member": "Mondofix USA LLC",
+      "ultimate_parent": "Mondofix Inc. (Canada)",
+      "no_shares_or_units_issued": true,
+      "tax_filing": "Consolidated with parent group"
+    },
+    "capital_history": {
+      "2020_formation": "LLC formed April 22, 2020",
+      "total_parent_investment": 4825100,
+      "2022_contributions": 1300000,
+      "2022_promissory_note_payment": 600000,
+      "2023_contributions": 275000,
+      "2023_promissory_note_payment": 600000,
+      "2024_contributions": 0,
+      "notes": "No new capital from parent in 2024. First year without additional contributions."
+    },
+    "intercompany_positions": {
+      "advances_to_parent_2024": 426975,
+      "advances_to_common_control_2024": 28745,
+      "advances_from_common_control_2024": 342042,
+      "net_intercompany_position": 113678,
+      "terms": "Non-interest bearing, not repayable before January 1, 2026",
+      "notes": "Significant shift in 2024: $427K advanced TO parent (vs. $523K FROM common control in 2023). Cash flowing upstream."
+    },
+    "deferred_revenue_detail": {
+      "current_2024": 586802,
+      "long_term_2024": 257167,
+      "total_2024": 843969,
+      "current_2023": 439313,
+      "long_term_2023": 128167,
+      "total_2023": 567480,
+      "year_over_year_increase": 276489,
+      "nature": "Initial franchise fees recognized over license term (5 years) plus marketing fund contributions exceeding expenditures",
+      "advertising_costs_2024": 226572,
+      "advertising_costs_2023": 274678
+    },
+    "lease_structure": {
+      "adopted_2024": true,
+      "rou_asset": 802948,
+      "total_lease_liability": 802948,
+      "current_portion": 209151,
+      "long_term_portion": 593797,
+      "weighted_avg_remaining_term_years": 3.73,
+      "weighted_avg_discount_rate": "4.5%",
+      "annual_maturities": {
+        "2025": 239406,
+        "2026": 225155,
+        "2027": 207308,
+        "2028": 197634
+      },
+      "sublease_income_2024": 199579,
+      "lease_expense_2024": 212991,
+      "nature": "Office spaces and vehicles"
+    }
+  },
+  "item21_statement_detail": {
+    "revenue_composition_2024": {
+      "royalties": {"amount": 1176336, "pct": 45.7, "yoy_growth": "69.8%"},
+      "vendor_allowances": {"amount": 641444, "pct": 24.9, "yoy_growth": "33.4%"},
+      "franchisee_contributions": {"amount": 553777, "pct": 21.5, "yoy_growth": "159.9%"},
+      "sublease_income": {"amount": 199579, "pct": 7.8, "yoy_growth": "new"},
+      "total": 2571136
+    },
+    "expense_composition_2024": {
+      "selling_and_admin": {"amount": 1735656, "pct": 67.5, "yoy_change": "-0.3%"},
+      "direct_operating": {"amount": 834016, "pct": 32.4, "yoy_change": "175.2%"},
+      "amortization": {"amount": 3663, "pct": 0.1},
+      "fx_gain": {"amount": -303},
+      "total": 2573032
+    },
+    "profitability_metrics": {
+      "gross_margin_proxy": "Revenue ($2.57M) roughly equals expenses ($2.57M) — breakeven reached",
+      "operating_cash_burn_2024": -323500,
+      "operating_cash_burn_2023": -365435,
+      "operating_cash_burn_2022": -1372898,
+      "cash_burn_improvement": "Operating cash outflow reduced 76% from 2022 to 2024"
+    },
+    "balance_sheet_ratios": {
+      "current_ratio": 1.47,
+      "debt_to_equity": 3.35,
+      "cash_to_current_liabilities": 0.62,
+      "ar_to_revenue": 0.26,
+      "deferred_revenue_to_total_liabilities": 0.38
+    },
+    "ar_aging_2024": {
+      "current": 594199,
+      "31_60_days": 25132,
+      "61_90_days": 19976,
+      "91_plus_days": 84800,
+      "total_gross": 724107,
+      "allowance": 51722,
+      "net": 672385,
+      "pct_91_plus": "11.7%",
+      "allowance_coverage_of_91_plus": "61.0%"
+    },
+    "three_year_revenue_cagr": "125%",
+    "three_year_loss_trend": "Losses shrinking 86% per year on average"
+  },
+  "item6_fee_detail": {
+    "royalty_mechanics": {
+      "new_location": {
+        "formula": "max($2,000, 3% × Gross Sales)",
+        "payment_date": "15th of each month for prior month",
+        "first_payment": "15th day following month of opening",
+        "last_payment": "Within 10 days of FA termination/expiration"
+      },
+      "conversion": {
+        "formula": "Monthly Base Fee + Monthly Growth Royalty",
+        "base_fee_formula": "max($2,000, 1.5% × Monthly Base Volume)",
+        "growth_royalty_formula": "3% × max(0, Monthly Gross Sales - Monthly Base Volume)",
+        "monthly_base_volume": "Annual Base Volume / 12",
+        "annual_base_volume": "Average annual Gross Sales for 3 years before signing",
+        "short_history_adjustment": "If <3 years operating, annualize average monthly Gross Sales from opening",
+        "annual_adjustment": "Franchisor may adjust within 90 days of fiscal year end",
+        "verification": "Franchisee must provide financial statements for 3-year pre-signing period"
+      }
+    },
+    "marketing_fund_mechanics": {
+      "rate": "0.75%",
+      "increase_mechanism": "Majority of all US ProColor locations can approve increase to 1%",
+      "payment_timing": "With monthly franchise fees",
+      "not_audited": true,
+      "annual_statement_available_on_request": true,
+      "no_pro_rata_benefit_guarantee": true,
+      "no_advertising_council": true,
+      "franchisor_may_loan_to_fund": true,
+      "multi_brand_allocation": "ProColor share allocated pro rata as franchisor determines"
+    },
+    "technology_fee_mechanics": {
+      "ccc_one": {
+        "vendor": "CCC",
+        "setup_fee_5_or_fewer_users": 3395,
+        "setup_fee_6_plus_users": 4395,
+        "conversion_discount": "50% on setup if already using CCC ONE",
+        "monthly_base": 1200,
+        "monthly_per_additional_user": 110,
+        "minimum_contract_months": 36,
+        "includes": ["Estimating", "Appointment booking", "Shop management", "Electronic check-in", "Customer engagement", "DRP tools", "KPI dashboards", "Parts sourcing"]
+      },
+      "required_add_ons": {
+        "central_review": {"monthly": 155, "description": "Centralized estimate auditing for insurers"},
+        "engage": {"monthly": 255, "description": "Customer engagement module"},
+        "insurance_mailboxes": {"3_to_5": 160, "6_plus": 215, "minimum": 3, "description": "Direct connection with insurers and claim providers"}
+      }
+    },
+    "insurers_account_mechanics": {
+      "description": "Franchisor holds all insurance company payments in separate account",
+      "distribution": "15th and last day of each month",
+      "franchisor_deduction_rights": "May deduct any fees owed by franchisee",
+      "termination_deposit": 15000,
+      "termination_deposit_term_months": 18,
+      "volume_rebate_range": "1-5% of payment, can be greater"
+    }
+  },
+  "unresolveds": [
+    {"id": "U1", "description": "Termination rates in early years (30% in 2022)", "severity": "medium", "source": "Item 20, page 58"},
+    {"id": "U2", "description": "Fix Auto US conflict resolution: no policy exists", "severity": "medium", "source": "Item 12, pages 43-44"},
+    {"id": "U3", "description": "Insurance volume rebate terms undisclosed", "severity": "low", "source": "Item 6 Note 7, page 21"},
+    {"id": "U4", "description": "80% supermajority FA modification rule", "severity": "medium", "source": "FA Section 29.8, page 155"},
+    {"id": "U5", "description": "Advances to parent ($427K) while cash-flow negative", "severity": "medium", "source": "Exhibit E, pages 94, 101"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "Item 20 Table 4 Total year labels (2021/2022/2023 vs 2022/2023/2024)", "items_involved": ["Item 20"], "resolution_status": "Not material"}
+  ],
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Minnesota", "New York", "Wisconsin"],
+    "override_count": 21,
+    "override_families": 9,
+    "summary_matrix": {
+      "forum_selection": ["California", "Illinois"],
+      "governing_law": ["California", "Illinois", "New York"],
+      "general_release": ["California", "Minnesota", "New York"],
+      "notice_cure": ["Minnesota", "Wisconsin"],
+      "termination": ["California", "Illinois", "Minnesota", "New York", "Wisconsin"],
+      "interest_rate": ["California"],
+      "damages": ["Minnesota"],
+      "noncompete": ["Minnesota"],
+      "anti_waiver": ["California", "Hawaii", "Illinois", "New York"]
+    }
+  }
+}

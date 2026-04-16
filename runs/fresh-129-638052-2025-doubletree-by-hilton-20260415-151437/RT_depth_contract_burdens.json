@@ -1,0 +1,151 @@
+{
+  "depth_pass": "2_contract_burdens",
+  "fdd_id": "638052-2025",
+  "source_exhibit": "D (Franchise Agreement)",
+  "source_pages_pdf": [139, 194],
+  "burdens": {
+    "grant_and_term": {
+      "grant": "Non-exclusive license to use the System at specified location",
+      "term_new_construction": "23 years from Effective Date",
+      "term_conversion": "10-20 years from Opening Date",
+      "renewal_right": false,
+      "re_licensing": "At franchisor's sole discretion, materially different terms possible"
+    },
+    "fee_obligations": {
+      "royalty": "5% of Gross Rooms Revenue, monthly by 15th",
+      "program_fee": "4% of GRR, may increase up to +1% over term",
+      "spa_royalty": "2% of Gross Spa Revenue (if applicable)",
+      "hilton_honors": "4.3% of eligible folio",
+      "electronic_funds_transfer": "Franchisor may require all payments via wire/EFT at franchisee's cost",
+      "offset_right": "Franchisor may reduce any payment or credit by amounts owed"
+    },
+    "construction_requirements": {
+      "new_development_begin": "Within 16 months of application approval",
+      "new_development_complete": "Within 36 months of application approval",
+      "conversion_per_pip": "Per PIP schedule",
+      "extension_fee": "$10,000 per extension request"
+    },
+    "training_obligations": {
+      "mandatory_programs": 13,
+      "gm_training": "Within 90 days of start date, virtual",
+      "sales_training": "24 hours, within 90 days of start",
+      "brand_conference": "Annual, mandatory for GM and director of sales",
+      "replacement_training": "If GM leaves, replacement must complete training within 90 days"
+    },
+    "operational_obligations": {
+      "standards_compliance": "Must comply with Manual and all Standards, which can be changed unilaterally",
+      "frcm_compliance": "Fixed Renovation Cycle Management mandatory",
+      "quality_assurance": "Periodic inspections, Stay Score assessments, Service Quality Improvement Program",
+      "insurance": "Must maintain required insurance per Manual; franchisor may purchase on franchisee's behalf if not maintained",
+      "data_ownership": "All guest data and hotel information is franchisor's property"
+    },
+    "termination_triggers": {
+      "curable": {
+        "payment_default": "10-day cure period",
+        "construction_deadline": "10-day cure period",
+        "insurance_default": "10-day cure period",
+        "other_breach": "30-day cure period"
+      },
+      "non_curable_count": 16,
+      "non_curable_key": [
+        "Repeated non-compliance within 24 months (even if cured)",
+        "3 notices of material default in 12 months (regardless of cure)",
+        "Bankruptcy/insolvency/assignment for benefit of creditors",
+        "Loss of possession of hotel",
+        "5+ consecutive days non-operation (unless Force Majeure)",
+        "Contesting marks or System ownership",
+        "Conduct adversely reflecting on reputation",
+        "False books/records/reports",
+        "Unauthorized transfer",
+        "Becoming a Sanctioned Person",
+        "Gaming license adverse disclosure",
+        "Guarantor breach",
+        "Public health/safety threat",
+        "Becoming a Competitor",
+        "Termination of related Hotel Agreements"
+      ]
+    },
+    "interim_remedies": {
+      "description": "Upon default notice, franchisor may impose interim remedies without termination",
+      "measures": [
+        "Suspend from Reservation Service",
+        "Remove from directories and advertising",
+        "Divert reservations to other hotels",
+        "Disable software systems",
+        "Charge costs of suspension/disabling plus intervention fees",
+        "Revoke financial accommodations (fee discounts, ramps, waivers)"
+      ],
+      "source_page": 86
+    },
+    "transfer_restrictions": {
+      "permitted_transfers": "No change of control. Some without notice (public equity, minority <50%, institutional funds). Others with 60-day notice + consent + $5,500 fee.",
+      "change_of_ownership": "$175,000 fee, 60-day notice, current FA, PIP, background check, guaranty",
+      "competitor_restriction": "Cannot transfer to Competitor or Sanctioned Person",
+      "right_of_first_refusal": "None, but must notify franchisor of intent to market equity"
+    },
+    "noncompete": {
+      "during_term": "Cannot own or be licensor/franchisor of competing brand",
+      "post_term": "None",
+      "management_company": "Cannot be exclusive manager for Competitor"
+    },
+    "guaranty": {
+      "scope": "Each required guarantor (may include spouse) must sign Guaranty assuming certain FA obligations",
+      "additional_guaranty": "May be required as condition for lender comfort letter, certain loans, or upon written notice of default",
+      "jury_waiver_in_guaranty": true,
+      "source_page": [81, 227]
+    },
+    "liquidated_damages": {
+      "unauthorized_opening": "$5,000/day plus costs",
+      "pre_opening_termination": "System's Avg Monthly Royalty x 60",
+      "post_opening_under_2_years": "Greater of (Hotel's or System's Avg Monthly Royalty) x 60",
+      "post_opening_over_2_years": "Hotel's Avg Monthly Royalty x 60",
+      "last_60_months": "Hotel's Avg Monthly Royalty x remaining months",
+      "measurement_period": "24 months for Hotel's Avg, 12 months for System's Avg",
+      "exclusions": "Temporary financial accommodations and Business Interruptions excluded from calculations"
+    },
+    "dispute_resolution": {
+      "governing_law": "New York (without choice of law principles)",
+      "venue": "E.D. Virginia (Alexandria) or Fairfax County, VA or New York, NY",
+      "franchisor_venue_option": "May sue where hotel is located",
+      "arbitration": "None (except Puerto Rico)",
+      "jury_waiver": "Yes (FA Section 17.1)",
+      "punitive_damages_waiver": "Yes (FA Section 17.2)",
+      "source_page": 179
+    },
+    "indemnification": {
+      "scope": "Broad — all losses, costs, liabilities, damages, claims, expenses from: any FA breach, any act/omission of franchisee, any occurrence at hotel, IP infringement, contract/law violations, any business at hotel site, sanctions non-compliance, fees/costs charged to guests",
+      "exception": "Not required to indemnify where damages solely result of indemnified party's gross negligence or willful misconduct (per final non-appealable judgment). Exception does not apply to vicarious/secondary liability theories.",
+      "defense_obligation": "Franchisor may elect franchisee to defend at franchisee's expense",
+      "survival": "Survives expiration or termination",
+      "source_page": [173, 174]
+    },
+    "force_majeure": {
+      "description": "Referenced in termination provisions. 5+ day non-operation excused if due to Force Majeure and reasonable steps taken to minimize impact. Casualty provisions allow 18-month rebuild period.",
+      "source_page": [85, 87]
+    },
+    "general_release": {
+      "scope": "Broad release of all claims existing on or before Effective Date. Excludes claims related to representations in franchise disclosure document.",
+      "survival": "Survives termination",
+      "state_overrides": "Multiple states limit or void this provision",
+      "source_page": [176, 177]
+    },
+    "insurance": {
+      "requirement": "Must maintain insurance per Manual specifications",
+      "franchisor_purchase_right": "If franchisee fails to obtain/maintain, franchisor may purchase on franchisee's behalf and charge actual cost",
+      "source_page": [36, 85]
+    },
+    "interest_rate": {
+      "rate": "18% per annum or maximum lawful rate, whichever is lower",
+      "trigger": "Any sum owed to franchisor that is overdue",
+      "source_page": 178
+    },
+    "distinctive_clauses": {
+      "confidentiality_of_negotiated_terms": "FA Section 16.18 — Negotiated terms are confidential",
+      "no_agency": "Franchisee is independent contractor. No partnership, joint venture, or employment relationship.",
+      "economic_conditions_not_defense": "Economic downturn or financial inability is not a defense to breach",
+      "consent_standard": "Franchisor may withhold consent in business judgment considering long-term System interests. Franchisee's sole remedy for unreasonably withheld consent is specific performance or declaratory judgment — no money damages.",
+      "attorneys_fees": "Prevailing party entitled to reasonable fees, expert fees, costs",
+      "sanctioned_persons": "Extensive anti-bribery/anti-corruption representations and warranties"
+    }
+  }
+}

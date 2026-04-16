@@ -1,0 +1,187 @@
+{
+  "depth_pass": "2_contract_burdens",
+  "extraction_date": "2026-04-15",
+  "fdd_id": "637911-2025",
+  "brand": "Ivan Ramen",
+  "franchise_agreement": {
+    "grant_and_term": {
+      "grant": "Non-exclusive right to use Proprietary Marks and System at one Location within designated Territory",
+      "initial_term": "10 years from Franchisor countersigning",
+      "successor_terms": 1,
+      "successor_term_length": "10 years",
+      "sub_franchising": "Prohibited",
+      "source_pages": [65, 66, 46]
+    },
+    "fee_obligations": {
+      "initial_franchise_fee": {"amount": 35000, "timing": "At signing", "refundable": false},
+      "continuing_royalty": {"rate": "5%", "basis": "Gross Revenues", "timing": "Monthly, 15th of following month"},
+      "system_brand_contribution": {"max_rate": "1.5%", "status": "Not yet established"},
+      "system_technology_fee": {"max_rate": "1.0%", "current": "0%"},
+      "proprietary_products": {"estimated_monthly": 7333},
+      "late_charges": {"rate": "3% of overdue", "financial_statements": "$50/month"},
+      "application_of_funds": "Franchisor may apply payments to oldest obligation due",
+      "source_pages": [10, 11, 12, 13, 14, 15]
+    },
+    "site_selection_and_construction": {
+      "site_selection": "Franchisee selects; franchisor approves/disapproves within 3 weeks",
+      "site_deadline": "Must secure site within 2 months after FA signing + 30 days after approval",
+      "failure_consequence": "Franchisor may terminate FA; no IFF refund",
+      "lease_approval": "20 business days; silence with lease rider = approved",
+      "construction_plans": "Must be approved in writing before construction begins",
+      "sample_layout": "Franchisor provides sample layout and preliminary plans",
+      "modifications": "No modifications without advance written permission",
+      "opening_deadline": "15 months from signing (typical: 12 months)",
+      "source_pages": [26, 35, 75]
+    },
+    "training_obligations": {
+      "initial_training": "106 hours (19 classroom + 87 OJT), ~5 days, in NYC",
+      "mandatory_attendees": ["Franchisee (if individual)", "Operations Manager", "Trainer", "Chef"],
+      "failure_consequence": "One free re-enrollment; second failure = FA terminable, no IFF refund",
+      "ongoing_training": "Annual conferences/conventions may be required; on-site training optional at $2,500/day",
+      "expenses": "All travel, lodging, meals paid by franchisee",
+      "source_pages": [33, 34, 35]
+    },
+    "operational_obligations": {
+      "brand_standards_compliance": "Must strictly comply; franchisor can change; changes must not materially alter rights/obligations",
+      "manual_pages": 211,
+      "hours_of_operation": "As specified in Brand Standards; may establish additional hours",
+      "staffing": "Must maintain competent, trained staff per Brand Standards specifications",
+      "operations_manager": "Required; day-to-day on-premises supervision; franchisor must approve; must complete ITP",
+      "trainer": "Required; responsible for staff training; must complete ITP",
+      "pricing": "Franchisor reserves right to impose max/min prices; may vary by region/subset of franchisees",
+      "delivery": "Only through approved third-party aggregators",
+      "gift_cards_loyalty": "Must participate in all programs at own expense; must honor other restaurants' coupons/gift cards",
+      "source_pages": [26, 27, 43, 44, 45]
+    },
+    "termination_triggers": {
+      "curable_defaults": {
+        "cure_period_days": 30,
+        "payment_cure_days": 5,
+        "categories": 19,
+        "examples": "Non-payment, false reports, unauthorized sales, supplier delinquency, unauthorized mark use, advertising violations, missing permits, lease defaults, staffing failures, system change non-compliance, unsatisfied judgments"
+      },
+      "non_curable_defaults": {
+        "categories": 34,
+        "automatic_no_notice": "Bankruptcy, insolvency, receivership, dissolution, levy",
+        "on_notice": "Failure to open within 15 months, ceasing operations 3+ days, misrepresentation, location loss, felony conviction, unauthorized transfer, non-compete violation, training failure, revenue concealment, 8%+ understatement, audit refusal, repeated defaults within 36 months, health/safety jeopardy"
+      },
+      "source_pages": [47, 48, 49]
+    },
+    "transfer_restrictions": {
+      "consent_required": true,
+      "transfer_fee": 10000,
+      "conditions": 15,
+      "right_of_first_refusal": true,
+      "post_rofr_noncompete": "2 years per Section 12.02",
+      "transferee_signs_new_fa": true,
+      "transferee_new_fa_term": "Balance of original term",
+      "total_sale_price_reasonableness": "Franchisor may reject if excessive",
+      "source_pages": [50, 51]
+    },
+    "cross_default": {
+      "present": true,
+      "description": "Failure to cure breaches under this FA or any other agreement between franchisee (or affiliates) and franchisor (or affiliates) — including other FAs, ADA, lease, promissory note — is a non-curable default",
+      "source_pages": [49]
+    },
+    "noncompete": {
+      "during_term": "No involvement in competing business anywhere in US",
+      "post_term": "2 years within territory, 10 miles of territory perimeter, 10 miles of any Ivan Ramen territory",
+      "no_poach": "Prohibition on employing or soliciting franchisor/affiliate employees (subject to state law)",
+      "source_pages": [52, 55]
+    },
+    "guaranty": {
+      "scope": "Personal guarantee by every owner with 5% or greater interest",
+      "spousal_guarantee": "Not required",
+      "form": "Exhibit F to Franchise Agreement",
+      "source_pages": [43]
+    },
+    "liquidated_damages": {
+      "explicit_provision": false,
+      "default_termination_damages": "All expenses and damages including lost profits, lost opportunities, reputation damage, travel/personnel costs, and cost of securing new business for the territory",
+      "notes": "ND and MD addenda delete consent to liquidated damages provisions",
+      "source_pages": [50]
+    },
+    "venue_and_dispute_resolution": {
+      "arbitration": false,
+      "mediation": false,
+      "forum": "State or federal court in state/county/judicial district of franchisor's principal place of business (currently Westchester County, NY)",
+      "governing_law": "New York",
+      "jury_trial_waiver": true,
+      "punitive_damages_waiver": true,
+      "injunction": "Franchisor may seek in any court with jurisdiction",
+      "attorneys_fees": "Prevailing party (but structured heavily in franchisor's favor)",
+      "source_pages": [52]
+    },
+    "insurance_requirements": {
+      "general_liability": "$1M aggregate / $500K per occurrence (max $5K deductible/SIR)",
+      "fire_extended": "Adequate for replacement",
+      "business_interruption": "120 days minimum",
+      "auto_liability": "$1M per person / $2M per accident / $3M property (or greater of applicable law)",
+      "workers_comp": "Per applicable law (min $1M employer's liability)",
+      "employment_practices": "$250K minimum",
+      "builders_contractors": "During construction",
+      "indemnification_insurance": "Sufficient for indemnification obligations",
+      "source_pages": [20, 21]
+    },
+    "indemnification": {
+      "scope": "Franchisee indemnifies franchisor from certain losses and expenses (FA Section 8.10)",
+      "limitation_indiana": "Not required for franchisor's negligence or proper use of franchisor materials",
+      "source_pages": [13, 324]
+    },
+    "force_majeure": {
+      "definition": "Fire, floods, natural disasters, Acts of God, war, civil commotion, terrorist acts, government acts, carrier delays, network outages, vendor failures, strikes, lockouts, similar events beyond control",
+      "effect": "Not a breach or default if party takes reasonable mitigation steps",
+      "termination_right": "If force majeure continues >180 days, franchisor may terminate on 30 days notice",
+      "source_pages": [128]
+    },
+    "distinctive_clauses": {
+      "withholding_consent_exclusive_remedy": {
+        "description": "Franchisee waives money damages for unreasonable withholding/delay of consent; sole remedy is action for specific performance or declaratory judgment",
+        "state_override": "Does not apply in Indiana",
+        "source_pages": [128, 324]
+      },
+      "intellectual_property_license_back": {
+        "description": "Franchisee must irrevocably license to franchisor all IP, products, programs, advertising, sales methods developed for the business; franchisor not liable",
+        "source_pages": [42]
+      },
+      "no_warranty_on_approvals": {
+        "description": "Any franchisor waiver, approval, consent, or suggestion creates no warranty, guarantee, or liability",
+        "source_pages": [128]
+      },
+      "alcohol_restriction_law_fee_equalization": {
+        "description": "If state/local law restricts royalty collection on alcohol sales, non-alcohol revenue percentages increased to equalize dollar amount",
+        "source_pages": [14]
+      },
+      "social_media_prohibition": {
+        "description": "Franchisee may not maintain own website, URL, domain, or social media pages without prior written approval (revocable); franchisor owns all content copyrights",
+        "source_pages": [31]
+      },
+      "professional_photographs": {
+        "description": "Franchisor may require professional-grade photographs assigned to franchisor or provided on royalty-free, worldwide, perpetual basis; cost may be deducted from Brand Fund contributions",
+        "source_pages": [31]
+      }
+    }
+  },
+  "area_development_agreement": {
+    "term": "Until earlier of actual or scheduled date of last FA execution under Development Schedule",
+    "renewable": false,
+    "development_fee": "$35,000 × number of committed units",
+    "development_schedule": "Mutually agreed; must comply with timetable",
+    "failure_consequence": "ADA terminable; but existing FAs survive if in compliance",
+    "area_business_manager": "Required; may not hold any other position; must complete ITP",
+    "death_disability": "Estate has 90 days to designate successor Area Business Manager",
+    "cross_default": "ADA termination gives right to terminate FAs; FA termination gives right to terminate ADA",
+    "source_pages": [53, 54, 55]
+  },
+  "guaranty_exhibit": {
+    "scope": "Personal guarantee by 5%+ owners",
+    "spousal": "Not required",
+    "unlimited": "Scope not explicitly limited in Item 17 disclosures",
+    "source_pages": [43]
+  },
+  "lease_rider": {
+    "required": true,
+    "exhibit": "Exhibit C to Franchise Agreement",
+    "source_pages": [167, 168]
+  }
+}

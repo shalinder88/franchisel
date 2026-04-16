@@ -1,0 +1,82 @@
+{
+  "enrichment_version": "v1",
+  "extraction_date": "2026-04-14",
+  "filing_id": "637909-2025",
+  "brand": "Delah Coffee",
+  "item19_chart_detail": {
+    "outlets_in_data": [
+      {"name": "SF#1 Fourth Street", "opened": "2022-06", "sqft": 1800, "seats": 34, "address": "370 4th Street, San Francisco, CA 94107", "type": "corner store retail", "years_reported": [2023, 2024]},
+      {"name": "Oakland W. Grand Ave.", "opened": "2023-02", "sqft": 1780, "seats": 32, "address": "420 W Grand Ave, Oakland 95612", "type": "commercial complex", "years_reported": [2024]},
+      {"name": "Berkeley Euclid Ave.", "opened": "2023-09", "sqft": 1860, "seats": 40, "address": "1807 Euclid Ave, Berkeley, CA 94709", "type": "one-story retail near UC Berkeley", "years_reported": [2024]}
+    ],
+    "excluded_outlets": [
+      {"name": "SF#2 Sansome", "opened": "2024-07", "sqft": 2100, "seats": 42, "address": "450 Sansome Street, San Francisco, CA 94111", "type": "ground floor 15-story office building", "reason": "New Company Owned Outlet in 2024"}
+    ],
+    "gross_sales_summary": {
+      "sf1_2023": 1122970, "sf1_2024": 1140063,
+      "oakland_2024": 834648,
+      "berkeley_2024": 557339,
+      "average_2024": 844017,
+      "median_2024": 834648,
+      "range_2024": {"low": 557339, "high": 1140063}
+    },
+    "dgp_after_fees_summary": {
+      "sf1_2023": {"amount": 230951, "pct": 20.57},
+      "sf1_2024": {"amount": 252712, "pct": 22.17},
+      "oakland_2024": {"amount": 189759, "pct": 22.74},
+      "berkeley_2024": {"amount": 114868, "pct": 20.61}
+    }
+  },
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 0, "franchised_end": 0, "company_start": 0, "company_end": 1, "total_end": 1},
+    "2023": {"franchised_start": 0, "franchised_end": 0, "company_start": 1, "company_end": 3, "total_end": 3},
+    "2024": {"franchised_start": 0, "franchised_end": 0, "company_start": 3, "company_end": 4, "total_end": 4}
+  },
+  "exhibit_structure": {
+    "exhibit_count": 11,
+    "exhibits": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"],
+    "contracts_in_item22": ["Franchise Agreement (Exhibit E)", "Multi-Unit Development Agreement (Exhibit F)", "State Specific Addenda (Exhibit I)"],
+    "fa_sub_exhibits": ["Owner/Spouse Guaranty", "Confidentiality Agreement", "Site Selection Ack", "Lease Agreement Rider", "Collateral Assignment of Lease", "Assignment of Phone/Digital Media", "ACH Authorization", "General Release"]
+  },
+  "item21_structural_facts": {
+    "auditor": "Metwally CPA PLLC",
+    "opinion": "unqualified",
+    "statement_type": "balance_sheet_only",
+    "total_assets": 500,
+    "total_liabilities": 0,
+    "equity": 500,
+    "revenue": 0,
+    "entity_type_tax": "disregarded_entity",
+    "accounting_basis": "US GAAP",
+    "revenue_recognition": "ASC 606",
+    "leases": "none",
+    "subsequent_events": "none material"
+  },
+  "item1_structural_facts": {
+    "entity_type": "LLC",
+    "state_of_formation": "California",
+    "formation_date": "2024-10-21",
+    "parent_company": null,
+    "predecessors": null,
+    "affiliate_count": 5,
+    "company_owned_shops_operator": "Delah Coffee Inc. and Delah Imports Inc.",
+    "trademark_owner": "Delah Coffee IP, LLC",
+    "designated_suppliers_affiliate": ["Delah Wholesale Inc.", "Adenii Imports Inc."]
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": 4.5,
+    "royalty_basis": "Gross Sales",
+    "royalty_frequency": "weekly",
+    "bdf_rate_max": 2.0,
+    "bdf_currently_assessed": false,
+    "local_marketing_rate": 1.0,
+    "tech_fee_max_monthly": 500,
+    "tech_fee_currently_assessed": false,
+    "transfer_fee": 10000,
+    "renewal_fee": 5000,
+    "interest_rate": 18.0,
+    "interest_rate_ca_override": 10.0,
+    "current_total_ongoing_pct": 5.5,
+    "potential_total_ongoing_pct": 8.0
+  }
+}
