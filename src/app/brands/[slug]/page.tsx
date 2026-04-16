@@ -35,6 +35,9 @@ import {
   type DeteriorationSignal,
 } from "@/lib/diligence";
 import { BrandDataDisclaimer, DataSourceBadge } from "@/components/DataDisclaimer";
+import BrandToolsCallout from "@/components/BrandToolsCallout";
+import DossierPanel from "@/components/brand-page/DossierPanel";
+import { getDossier } from "@/data/dossiers";
 import WatchButton from "@/components/WatchButton";
 import UnitGrowthChart from "@/components/UnitGrowthChart";
 import DataCoverageWidget from "@/components/DataCoverageWidget";
@@ -153,6 +156,9 @@ export default async function BrandPage({
   const brand = getBrandBySlug(slug);
   if (!brand) notFound();
 
+  /* ── Merged dossier (best-supported output across runs) ── */
+  const dossier = getDossier(brand.slug);
+
   const isGovVerified = brand.dataSource === "fdd_verified" || brand.dataSource === "state_filing";
 
   /* ── Production scores (new methodology) ── */
@@ -269,6 +275,9 @@ export default async function BrandPage({
         />
       </div>
 
+      {/* ── Merged FDD dossier (best-supported output) ── */}
+      {dossier && <DossierPanel dossier={dossier} />}
+
       {/* ── Breadcrumb ── */}
       <nav className="max-w-6xl mx-auto px-6 pt-4 pb-2">
         <ol className="flex items-center gap-2 text-sm text-muted">
@@ -287,6 +296,9 @@ export default async function BrandPage({
           <li className="text-foreground font-medium">{brand.name}</li>
         </ol>
       </nav>
+
+      {/* ── Free buyer tools, prefilled for this brand ── */}
+      <BrandToolsCallout brand={brand} />
 
       {/* ── Brand Header ── */}
       <section className="hero-mesh border-b border-border">

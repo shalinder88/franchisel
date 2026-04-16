@@ -9,7 +9,7 @@ import WatchlistNavBadge from "./WatchlistNavBadge";
 const nav = [
   { href: "/brands", label: "Franchise Directory" },
   { href: "/compare", label: "Compare" },
-  { href: "/tools/contradiction-finder", label: "Tools" },
+  { href: "/tools", label: "Tools" },
   { href: "/watchlist", label: "Watchlist" },
   { href: "/reports", label: "Reports" },
   { href: "/community", label: "Community" },

@@ -46,6 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: BASE_URL, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
     { url: `${BASE_URL}/brands`, lastModified: new Date(), changeFrequency: "daily", priority: 0.95 },
     { url: `${BASE_URL}/compare`, lastModified: staticDate, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/tools`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/tools/contradiction-finder`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
     { url: `${BASE_URL}/tools/fee-stack`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
     { url: `${BASE_URL}/tools/item-19-quality`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
