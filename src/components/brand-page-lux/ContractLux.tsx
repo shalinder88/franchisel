@@ -32,7 +32,7 @@ export default function ContractLux({
     <SectionLux
       id="contract"
       eyebrow="The contract"
-      headline="What you give up"
+      headline="Where does the contract reduce your flexibility?"
       kicker="Most of the burden traces to one fact: McDonald's owns the real estate and you don't. That shapes territory, rent, transfer, and termination."
     >
       {/* Severity count row */}

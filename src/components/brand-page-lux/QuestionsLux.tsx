@@ -22,9 +22,10 @@ export default function QuestionsLux({
     <SectionLux
       id="questions"
       eyebrow="Your next call"
-      headline="What to ask existing operators"
+      headline="What should you ask existing operators?"
       kicker="Seven questions mapped directly to this FDD. Click a question to see the clause it's based on."
     >
+      <CopyQuestionsButton questions={questions} />
       <div className="lux-card overflow-hidden">
         <ol>
           {questions.map((q, i) => {
@@ -62,5 +63,53 @@ export default function QuestionsLux({
         </ol>
       </div>
     </SectionLux>
+  )
+}
+
+/** Module-level action: copy the full validation question list as plain text.
+ *  Useful for pasting into a call script or email to operators. */
+function CopyQuestionsButton({
+  questions,
+}: {
+  questions: BrandPageModel["franchiseeQuestions"]
+}) {
+  const [copied, setCopied] = useState(false)
+
+  async function copyAll() {
+    const body = questions
+      .map((q, i) => `${String(i + 1).padStart(2, "0")}. ${q.question}`)
+      .join("\n\n")
+    const text = `Validation questions for McDonald's operators\n${"=".repeat(46)}\n\n${body}\n\n— Generated from Franchisel diligence\n`
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1800)
+    } catch {
+      // silent fail — user can still read the list on-page
+    }
+  }
+
+  return (
+    <div className="flex justify-end mb-4 -mt-4">
+      <button
+        type="button"
+        onClick={copyAll}
+        aria-live="polite"
+        className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-[11px] tracking-wider uppercase border border-[color:var(--lux-edge)] bg-[color:var(--lux-surface-1)] text-[color:var(--lux-ink-mute)] hover:border-[color:var(--lux-gold)]/40 hover:text-[color:var(--lux-ink-soft)] transition-colors"
+      >
+        <Icon
+          name={copied ? "check" : "stack"}
+          width={12}
+          height={12}
+          strokeWidth={1.75}
+          className={
+            copied
+              ? "text-[color:var(--lux-good)]"
+              : "text-[color:var(--lux-ink-faint)]"
+          }
+        />
+        {copied ? "Copied to clipboard" : "Copy all questions"}
+      </button>
+    </div>
   )
 }

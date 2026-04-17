@@ -24,8 +24,8 @@ export default function StabilityLux({
     <SectionLux
       id="stability"
       eyebrow="The system"
-      headline="Is it growing?"
-      kicker="Three-year movement across 13,559 U.S. restaurants. The signal worth watching is transfer volume — how often operators sell."
+      headline="Is the system really growing?"
+      kicker="Three-year unit movement across 13,559 restaurants. Transfer volume is the signal — how often existing operators sell tells you more than the growth headline."
     >
       {/* Headline row: two stats + ownership split */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr_1fr] gap-4 mb-4">

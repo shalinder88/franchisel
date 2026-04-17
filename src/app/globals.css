@@ -382,6 +382,23 @@ td.hover-cell:hover {
 .mcd-lux a.lux-link { color: var(--lux-accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 220ms ease; }
 .mcd-lux a.lux-link:hover { border-bottom-color: var(--lux-accent); }
 
+/* ── Mode gating ────────────────────────────────────────────────
+   The ModeSwitcherLux writes data-mode="quick|guided|evidence" onto
+   the .mcd-lux root. Sections opt-out of a mode via data-mode-hide
+   with space-separated mode ids.
+*/
+.mcd-lux[data-mode="quick"]    [data-mode-hide~="quick"],
+.mcd-lux[data-mode="evidence"] [data-mode-hide~="evidence"] {
+  display: none !important;
+}
+.mcd-lux[data-mode="evidence"] section[id] { padding-top: 36px; }
+.mcd-lux[data-mode="evidence"] .lux-rule { opacity: 0.5; }
+.mcd-lux[data-mode="quick"]    section[id] { padding-top: 28px; padding-bottom: 0; }
+.mcd-lux[data-mode="quick"]    .lux-rule { display: none; }
+
+/* Softer chrome — calmer separators between stacked modules */
+.mcd-lux .lux-card + .lux-card { border-top-color: var(--lux-edge); }
+
 /* Print styles */
 @media print {
   header, footer, nav, .no-print { display: none !important; }

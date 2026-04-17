@@ -97,7 +97,8 @@ export default function EconomicsLux({ economics }: { economics: BrandPageModel[
     <SectionLux
       id="economics"
       eyebrow="The money"
-      headline="What you pay to open, and what you keep paying forever"
+      headline="What do you actually pay every year?"
+      kicker="Initial outlay, ongoing extraction, and revenue quality — translated into dollars a new operator will actually see."
     >
       {/* ══ PANEL 1 — Investment anatomy ══ */}
       <div className="lux-card p-7 sm:p-10 mb-5 lux-fade">

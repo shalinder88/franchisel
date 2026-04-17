@@ -39,8 +39,8 @@ export default function FinancialLux({
     <SectionLux
       id="financial-strength"
       eyebrow="Franchisor health"
-      headline="Franchisor financials"
-      kicker="Audited financial statements show McDonald's USA is financially sound with a clean Ernst & Young opinion."
+      headline="What does the franchisor's financial strength actually tell you?"
+      kicker="Audited statements are a backstop, not a promise. Here is what the numbers — and the intercompany structure — really mean for your downside."
     >
       {/* Audit status strip */}
       <div className="lux-card px-6 py-4 mb-4 flex flex-wrap items-center gap-4">

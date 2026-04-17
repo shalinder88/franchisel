@@ -3,19 +3,20 @@ import { SectionLux, Chip, type LuxSeverity } from "./primitives"
 import { Icon } from "./icons"
 import { stateAbbreviation } from "@/lib/brand-pages/mappers"
 
-// Compact grid layout approximating US geography (simplified).
-// Each row left-to-right roughly west → east. Used because an accurate US map
-// SVG is out of scope; this gives clear visual density without pretending to
-// be a geographic map. Empty cells use "·".
-const GRID: string[][] = [
-  ["·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "ME"],
-  ["·", "WA", "·", "·", "MT", "ND", "MN", "WI", "MI", "·", "VT", "NH"],
-  ["·", "OR", "ID", "WY", "SD", "IA", "IL", "IN", "OH", "PA", "NY", "MA"],
-  ["·", "·", "NV", "UT", "CO", "NE", "MO", "KY", "WV", "VA", "NJ", "CT", "RI"],
-  ["·", "·", "CA", "AZ", "NM", "KS", "AR", "TN", "NC", "SC", "MD", "DE"],
-  ["·", "·", "·", "·", "·", "OK", "LA", "MS", "AL", "GA", "·"],
-  ["HI", "·", "·", "·", "·", "·", "TX", "·", "·", "·", "FL"],
-  ["·", "·", "·", "·", "·", "AK", "·", "·", "·", "·", "·"],
+// Compact tile-map approximating US geography. Each row is exactly 12 columns
+// so the grid lines up as a clean institutional surface (no ragged edges).
+// Row order is roughly north → south, left → right = west → east.
+// Empty slots use null so spacing stays deterministic.
+const COLS = 12
+type Cell = string | null
+const GRID: Cell[][] = [
+  [null, null, null, null, null, null, null, null, null, null, null, "ME"],
+  ["AK", "WA", null, "MT", "ND", "MN", null, "WI", null, "MI", "VT", "NH"],
+  [null, "OR", "ID", "WY", "SD", "IA", "IL", "IN", "OH", "PA", "NY", "MA"],
+  [null, "NV", "UT", "CO", "NE", "MO", "KY", "WV", "VA", "NJ", "CT", "RI"],
+  [null, "CA", "AZ", "NM", "KS", "AR", "TN", "NC", "SC", "DC", "MD", "DE"],
+  ["HI", null, null, null, "OK", "LA", "MS", "AL", "GA", null, null, null],
+  [null, null, null, null, "TX", null, null, null, "FL", null, null, null],
 ]
 
 export default function StateLux({
@@ -30,38 +31,56 @@ export default function StateLux({
     <SectionLux
       id="state-addenda"
       eyebrow="State by state"
-      headline="Where the default contract changes"
+      headline="Which states change the deal?"
       kicker="Six states materially modify the default FA. North Dakota, Minnesota, and Washington deliver the most economically valuable operator protections."
     >
       <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] gap-6 mb-6">
         {/* Map grid */}
         <div className="lux-card p-7">
-          <div className="lux-eyebrow mb-4">Addenda coverage map</div>
-          <div className="space-y-1">
-            {GRID.map((row, ri) => (
-              <div key={ri} className="flex gap-1 justify-start">
-                {row.map((st, ci) => {
-                  if (st === "·") return <div key={ci} className="w-8 h-8" />
-                  const entry = entriesByAbbr.get(st)
-                  const sev = (entry?.severity ?? null) as LuxSeverity | null
-                  const hasAddendum = !!entry
-                  const color =
-                    sev === "high" ? "bg-[color:var(--lux-danger)]/15 border-[color:var(--lux-danger)]/35 text-[color:var(--lux-danger)]"
-                    : sev === "caution" ? "bg-[color:var(--lux-warn)]/12 border-[color:var(--lux-warn)]/30 text-[color:var(--lux-warn)]"
-                    : sev === "neutral" ? "bg-[color:var(--lux-good)]/10 border-[color:var(--lux-good)]/30 text-[color:var(--lux-good)]"
+          <div className="flex items-baseline justify-between mb-4">
+            <div className="lux-eyebrow">Addenda coverage map</div>
+            <div className="text-[10px] tracking-[0.18em] uppercase text-[color:var(--lux-ink-faint)]">
+              {addenda.entries.length} states modified
+            </div>
+          </div>
+          <div
+            className="grid gap-[5px]"
+            style={{ gridTemplateColumns: `repeat(${COLS}, minmax(0, 1fr))` }}
+          >
+            {GRID.flatMap((row, ri) =>
+              row.map((st, ci) => {
+                if (st === null) {
+                  return <div key={`${ri}-${ci}`} className="aspect-square" />
+                }
+                const entry = entriesByAbbr.get(st)
+                const sev = (entry?.severity ?? null) as LuxSeverity | null
+                const hasAddendum = !!entry
+                const color =
+                  sev === "high"
+                    ? "bg-[color:var(--lux-danger)]/15 border-[color:var(--lux-danger)]/35 text-[color:var(--lux-danger)]"
+                    : sev === "caution"
+                    ? "bg-[color:var(--lux-warn)]/12 border-[color:var(--lux-warn)]/30 text-[color:var(--lux-warn)]"
+                    : sev === "neutral"
+                    ? "bg-[color:var(--lux-good)]/10 border-[color:var(--lux-good)]/30 text-[color:var(--lux-good)]"
                     : "bg-[color:var(--lux-surface-0)] border-[color:var(--lux-edge)] text-[color:var(--lux-ink-faint)]"
-                  return (
-                    <div
-                      key={ci}
-                      title={entry ? `${entry.state} · ${entry.affectedFamily}` : st}
-                      className={`w-8 h-8 rounded-md border flex items-center justify-center text-[10px] font-bold tracking-wider ${color} ${hasAddendum ? "shadow-[inset_0_1px_0_var(--lux-highlight)]" : ""}`}
-                    >
-                      {st}
-                    </div>
-                  )
-                })}
-              </div>
-            ))}
+                return (
+                  <a
+                    key={`${ri}-${ci}`}
+                    href={hasAddendum ? `#state-${st}` : undefined}
+                    title={
+                      entry ? `${entry.state} · ${entry.affectedFamily}` : st
+                    }
+                    className={`aspect-square rounded-md border flex items-center justify-center text-[10px] font-bold tracking-wider transition-transform duration-220 ${color} ${
+                      hasAddendum
+                        ? "shadow-[inset_0_1px_0_var(--lux-highlight)] hover:scale-[1.08] cursor-pointer"
+                        : "cursor-default"
+                    }`}
+                  >
+                    {st}
+                  </a>
+                )
+              }),
+            )}
           </div>
           <div className="mt-5 pt-5 border-t border-[color:var(--lux-edge)] flex flex-wrap gap-2">
             <Chip severity="neutral">Operator-favorable</Chip>
@@ -92,7 +111,8 @@ export default function StateLux({
           return (
             <div
               key={e.state}
-              className={`lux-card p-6 ${sev === "high" ? "lux-rail-high" : sev === "caution" ? "lux-rail-caution" : "lux-rail-neutral"}`}
+              id={`state-${stateAbbreviation(e.state)}`}
+              className={`scroll-mt-28 lux-card p-6 ${sev === "high" ? "lux-rail-high" : sev === "caution" ? "lux-rail-caution" : "lux-rail-neutral"}`}
             >
               <div className="flex items-start justify-between gap-3 mb-3">
                 <div>
