@@ -1,0 +1,120 @@
+{
+  "slug": "hilton-hotels-resorts",
+  "name": "Hilton Hotels & Resorts",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "headquarters": "7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": "$85,000 + $400/room over 250",
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": false,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": 187,
+    "company_owned_units": 0
+  },
+  "economics": {
+    "franchise_fee_raw": "$85,000 + $400/room over 250",
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": 187,
+    "company_owned": 0,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": false
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Cherry Bekaert",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": 5
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "litigation",
+      "summary": "5 pending lawsuit(s)"
+    }
+  ],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-135-638058-2025-hilton-hotels-resorts-20260415-180210",
+    "primary_run_folder": "fresh-135-638058-2025-hilton-hotels-resorts-20260415-180210",
+    "primary_fdd_id": "638058",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "?",
+    "phase": "first200",
+    "slot": 135
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "No renewal right with $50M\u2013$204M investment \u2014 franchise is non-renewable, re-licensing at franchisor's sole discretion with potentially materially different terms"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "All assets and franchise contracts pledged as collateral for Hilton parent debt obligations (maturing 2025\u20132033)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "5 pending antitrust class actions related to IDeaS/STR/Amadeus revenue management software \u2014 uncertain outcome"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Gag clause: some current and former franchisees restricted from speaking about their experience"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No protected territory by default; negotiable Restricted Area has extensive carve-outs and time-limited Restrictive Period"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No cost/profitability data in Item 19 \u2014 only top-line performance metrics (room rate, occupancy, indices)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Liquidated damages formula for pre-2yr termination uses system-wide average which may exceed hotel-specific average"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Subsequent events note references March 18, 2024 but audit opinion dated March 18, 2025 \u2014 likely typographical error"
+    },
+    {
+      "topic": "schema_unrecognized",
+      "reason": "canonical schema not parsed by first-200 extractor"
+    }
+  ],
+  "_status": "PARTIAL"
+}

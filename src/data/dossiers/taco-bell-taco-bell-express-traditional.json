@@ -1,0 +1,105 @@
+{
+  "slug": "taco-bell-taco-bell-express-traditional",
+  "name": "Taco Bell",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Taco Bell Franchisor, LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": false,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": false
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion.",
+    "Request current state-by-state addenda packet."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-36-637942-2025-taco-bell-taco-bell-express-traditional-20260415-104313",
+    "primary_run_folder": "fresh-36-637942-2025-taco-bell-taco-bell-express-traditional-20260415-104313",
+    "primary_fdd_id": "637942",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 36
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "No actual unit-level financials in Item 19"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Mid-term upgrade costs not estimated"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Near-term securitization refinancing ($1.82B due 2026-2027)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Successor materially different terms risk"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Integrated Expansion Policy not in FDD"
+    }
+  ],
+  "_status": "PARTIAL"
+}

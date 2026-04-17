@@ -1,0 +1,104 @@
+{
+  "slug": "doubletree-by-hilton",
+  "name": "Hilton Franchise Holding LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Cherry Bekaert (cbh.com)",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": 5
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "litigation",
+      "summary": "5 pending lawsuit(s)"
+    }
+  ],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-129-638052-2025-doubletree-by-hilton-20260415-151437",
+    "primary_run_folder": "fresh-129-638052-2025-doubletree-by-hilton-20260415-151437",
+    "primary_fdd_id": "638052",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 129
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit D-4 (Restaurant Brand Amendment) listed in TOC but no cover page found"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit H-3 (Restaurant Brands Manual TOC) listed in TOC but not found as standalone"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Note 9 Subsequent Events date says 'March 18, 2024' \u2014 likely typo for March 18, 2025"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Cover page states DoubleTree Suites high investment as $122,675,079 but Item 7 table totals $122,625,079 \u2014 $50K discrepancy"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Cover page DoubleTree Suites high-end investment ($122,675,079) does not match Item 7 table total ($122,625,079) \u2014 $50,000 discrepancy"
+    }
+  ],
+  "_status": "PARTIAL"
+}

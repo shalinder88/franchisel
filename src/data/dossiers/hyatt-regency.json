@@ -1,0 +1,94 @@
+{
+  "slug": "hyatt-regency",
+  "name": "Hyatt Franchising, L.L.C.",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hyatt Franchising, L.L.C.",
+    "parent": "Hyatt Hotels Corporation",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": "Limited Area of Protection with expiration",
+    "item_19_present": true,
+    "system_total_units": 100,
+    "franchised_units": 41,
+    "company_owned_units": 59
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": 100,
+    "franchised": 41,
+    "company_owned": 59,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": "Limited Area of Protection with expiration"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Deloitte & Touche LLP",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-20-637926-2025-hyatt-regency-20260415-055135",
+    "primary_run_folder": "fresh-20-637926-2025-hyatt-regency-20260415-055135",
+    "primary_fdd_id": "637926",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 20
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Franchised vs Owned/Managed RevPAR gap ($114.58 vs $154.18, 25.7% difference) is unexplained in the FDD. Prospective franchisees should investigate whether this reflects structural disadvantage or loc"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "AOP Term is negotiated per deal (1-5 years). The exact term is not disclosed and cannot be assessed until negotiation."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "$110M goodwill impairment in management and franchising reporting unit signals declining valuation. Whether this specifically reflects the franchise segment is unclear."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Company-owned outlet decline (-4 in 2024) may reflect asset-light strategy or performance challenges at specific hotels."
+    }
+  ],
+  "_status": "PUBLISHED"
+}

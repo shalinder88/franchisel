@@ -1,0 +1,118 @@
+{
+  "slug": "caption-by-hyatt",
+  "name": "Caption by Hyatt",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Caption by Hyatt",
+    "parent": "Hyatt Hotels Corporation",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Deloitte & Touche LLP",
+    "audit_opinion": "Clean (unqualified)",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-14-637920-2025-caption-by-hyatt-20260415-032153",
+    "primary_run_folder": "fresh-14-637920-2025-caption-by-hyatt-20260415-032153",
+    "primary_fdd_id": "637920",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 14
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "No FPR data available. Zero financial performance information for a $28M-$88M investment."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "AOP Term is 'typically 3 years after opening' but exact duration is deal-specific and negotiable."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Guarantor Monetary Threshold specific amounts not disclosed; determined per deal. Could be material constraint."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Competing Brand Owner definition (5-hotel threshold) could restrict management company options."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Renovation/upgrade costs unpredictable; no cap on frequency or cost of mandated upgrades."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Franchise agreement assets on franchisor balance sheet ($144.8M) \u2014 likely key money/incentives. Suggests franchisor spending significantly to attract franchisees to nascent brand."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Michigan arbitration enforcement: franchisor explicitly intends to enforce arbitration despite Michigan law potentially voiding it. Legal uncertainty for Michigan franchisees."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 20 Table 3 shows 1 franchised outlet end 2024, Exhibit G lists 4 franchisees. Resolved: 3 are signed but not yet open (consistent with Table 5)."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 8 says no rebates received from suppliers in 2024, but Non-Mandatory Services may include profit markup. Different categories \u2014 rebates from suppliers vs. franchisor profit on services."
+    }
+  ],
+  "_status": "PARTIAL"
+}

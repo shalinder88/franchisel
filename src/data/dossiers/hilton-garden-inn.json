@@ -1,0 +1,117 @@
+{
+  "slug": "hilton-garden-inn",
+  "name": "Hilton Garden Inn",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$21,933,588 to $32,384,982",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": 750,
+    "company_owned_units": 0
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 21933588,
+    "investment_high_raw": 32384982
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": 750,
+    "company_owned": 0,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": 5
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "litigation",
+      "summary": "5 pending lawsuit(s)"
+    }
+  ],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-134-638057-2025-hilton-garden-inn-20260415-173936",
+    "primary_run_folder": "fresh-134-638057-2025-hilton-garden-inn-20260415-173936",
+    "primary_fdd_id": "638057",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 134
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Item 19 discloses no EBITDA, cost build-up, or profit/loss data"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Territory protection (Restricted Area) is not standard; scope/conditions not disclosed"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Insurance requirements specified in Manual only, not enumerated in FDD"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Management Company approval criteria described in general terms only"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Hilton parent debt guarantee \u2014 total guaranteed amount not quantified; all assets pledged for debt maturing 2025-2033"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "4 pending antitrust class actions (IDeaS/STR/Amadeus) \u2014 outcome uncertain, systemic implications"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Gag clause \u2014 some franchisees restricted from speaking about experience"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Note 9 date states 'March 18, 2024' but audit report dated March 18, 2025 \u2014 apparent typographical error"
+    }
+  ],
+  "_status": "PARTIAL"
+}

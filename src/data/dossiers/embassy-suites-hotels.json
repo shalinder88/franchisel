@@ -1,0 +1,113 @@
+{
+  "slug": "embassy-suites-hotels",
+  "name": "Hilton Franchise Holding LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": false,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": false
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Cherry Bekaert LLP",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": 5
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "litigation",
+      "summary": "5 pending lawsuit(s)"
+    }
+  ],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Request current state-by-state addenda packet."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-130-638053-2025-embassy-suites-hotels-20260415-154442",
+    "primary_run_folder": "fresh-130-638053-2025-embassy-suites-hotels-20260415-154442",
+    "primary_fdd_id": "638053",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 130
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "No cost/profit/EBITDA data in Item 19 \u2014 cannot independently assess unit economics"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Insurance requirements not specified in FDD (referenced to Manual)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "FRCM renovation schedule details not available (referenced to Standards)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No disclosure of specific Restricted Area examples or typical sizes"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Marketing fund spending not audited or reported to franchisees"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Franchise Agreement deep provisions (56 pages) not exhaustively extracted"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit C financial statement notes not fully extracted in A1 (now resolved in A2 depth pass)"
+    }
+  ],
+  "_status": "PARTIAL"
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "the-unbound-collection-by-hyatt",
+  "name": "Hyatt Franchising, L.L.C.",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hyatt Franchising, L.L.C.",
+    "parent": "Hyatt Hotels Corporation",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": "Greater of $100,000 or $400 per guest room",
+    "investment_range_headline": null,
+    "royalty_headline": "7%",
+    "ad_fund_headline": null,
+    "term_headline": 20,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": 18,
+    "franchised_units": 10,
+    "company_owned_units": 8
+  },
+  "economics": {
+    "franchise_fee_raw": "Greater of $100,000 or $400 per guest room",
+    "royalty_raw": "7%",
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": 18,
+    "franchised": 10,
+    "company_owned": 8,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 20,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Deloitte & Touche LLP",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-22-637928-2025-the-unbound-collection-by-hyatt-20260415-063845",
+    "primary_run_folder": "fresh-22-637928-2025-the-unbound-collection-by-hyatt-20260415-063845",
+    "primary_fdd_id": "637928",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 22
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "One franchised hotel has 7.9% occupancy and $17.78 RevPAR \u2014 nature of severe underperformance unknown"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Franchised hotels average 92.5 RevPAR Index \u2014 systematic competitive set underperformance not explained"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "AOP Term expires 1-5 years after opening on a 20-year term \u2014 long-term encroachment risk unquantified"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Successor franchise on 'materially different' terms \u2014 no floor or ceiling on fee changes at renewal"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Consequential Termination 150% liquidated damages multiplier creates significant exit burden"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Competing Hyatt brands (25+) may operate within AOP without restriction \u2014 no compensation mechanism"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Small system size (18 hotels) makes financial performance data statistically fragile \u2014 extreme variance in key metrics"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

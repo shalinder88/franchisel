@@ -1,0 +1,740 @@
+{
+  "slug": "the-joint-chiropractic",
+  "name": "The Joint Chiropractic",
+  "schema_version": 1,
+  "current_snapshot": {
+    "legal_name": null,
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": null,
+    "franchise_fee_headline": "$39,900",
+    "investment_range_headline": "$245,250 to $543,000",
+    "royalty_headline": {
+      "rate": 0.07,
+      "minimum": 700,
+      "minimum_unit": "per month",
+      "calculation_basis": "Gross Sales",
+      "reporting_period": "bimonthly"
+    },
+    "ad_fund_headline": {
+      "current_rate": 0.02,
+      "maximum_rate": 0.03,
+      "calculation_basis": "Gross Sales"
+    },
+    "term_headline": null,
+    "renewal_headline": 1,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": 970,
+    "franchised_units": 845,
+    "company_owned_units": 125
+  },
+  "economics": {
+    "initial_fees_by_format": {
+      "initial_franchise_fee": 39900,
+      "initial_franchise_fee_refundable": false,
+      "discounts": [
+        {
+          "type": "Veterans Discount",
+          "amount": 6000,
+          "resulting_fee": 33900
+        },
+        {
+          "type": "Multi-Clinic Discount",
+          "amount": 10000,
+          "resulting_fee": 29900
+        },
+        {
+          "type": "DC Path to Ownership",
+          "amount": 19900,
+          "resulting_fee": 20000
+        },
+        {
+          "type": "2025 Sales Incentive",
+          "discount_pct": 0.5,
+          "expires": "2025-12-31"
+        }
+      ],
+      "clinic_design_fee": {
+        "new": 1000,
+        "renewal_remodel": 600,
+        "revision": 500
+      },
+      "imputed_royalty_fee": {
+        "amount": 700,
+        "unit": "per month",
+        "trigger": "After Required Opening Date if not open"
+      },
+      "development_fee_per_additional_clinic": 10000,
+      "source_pages": [
+        17,
+        18
+      ],
+      "confidence": "high"
+    },
+    "investment_by_format": {
+      "total_low": 245250,
+      "total_high": 543000,
+      "ada_total_low": 255250,
+      "ada_total_high": 583000,
+      "financing_available": false,
+      "source_pages": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "confidence": "high"
+    },
+    "recurring_fees_raw": {
+      "royalty": {
+        "rate": 0.07,
+        "minimum": 700,
+        "minimum_unit": "per month",
+        "calculation_basis": "Gross Sales",
+        "reporting_period": "bimonthly"
+      },
+      "royalty_incentive_2025": {
+        "year1": 0.03,
+        "year2": 0.05,
+        "year3_onwards": 0.07,
+        "eligibility": "New clinics opening in 2025"
+      },
+      "brand_fund": {
+        "current_rate": 0.02,
+        "maximum_rate": 0.03,
+        "calculation_basis": "Gross Sales"
+      },
+      "local_advertising": {
+        "minimum_rate": 0.05,
+        "minimum_fixed": 3000,
+        "minimum_fixed_unit": "per month"
+      },
+      "technology_fee": {
+        "current": 599,
+        "maximum": 799,
+        "unit": "per month"
+      },
+      "renewal_fee": {
+        "formula": "25% of then-current initial franchise fee"
+      },
+      "transfer_fee": {
+        "permitted": 2500,
+        "dc_path": 5000,
+        "standard": 15000,
+        "failed": "lesser of $5,000 or actual costs"
+      },
+      "liquidated_damages": {
+        "formula": "avg monthly (royalty + brand fund) x lesser of 24 or months remaining"
+      },
+      "late_fee": {
+        "flat": 100,
+        "interest_rate": 0.18,
+        "interest_rate_ca": 0.1,
+        "nsf": 35
+      },
+      "source_pages": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "confidence": "high"
+    },
+    "tech_fee_detail": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null,
+    "high_low": null,
+    "presentation_basis": null,
+    "raw_keys": [
+      "fpr_provided",
+      "gross_sales_sample",
+      "gross_sales_system_average",
+      "gross_sales_system_median",
+      "gross_sales_highest",
+      "gross_sales_lowest",
+      "net_profit_sample",
+      "net_profit_system_average",
+      "net_profit_system_median",
+      "net_profit_margin_pct",
+      "net_profit_highest",
+      "net_profit_lowest",
+      "million_dollar_clinics",
+      "million_dollar_avg_net_profit",
+      "q4_avg_net_profit",
+      "exclusions",
+      "ramp_up_month1",
+      "ramp_up_month12",
+      "weekly_visits_avg",
+      "weekly_new_patients_avg",
+      "active_members_avg",
+      "substantiation_available",
+      "source_pages",
+      "confidence"
+    ]
+  },
+  "item20_system_movement": {
+    "system_total": 970,
+    "franchised": 845,
+    "company_owned": 125,
+    "openings": 60,
+    "terminations": 0,
+    "non_renewals": 0,
+    "transfers": 41,
+    "net_change": 35,
+    "raw": {
+      "total_outlets_end_2024": 970,
+      "franchised_end_2024": 845,
+      "company_owned_end_2024": 125,
+      "net_change_2024": 35,
+      "net_change_2023": 97,
+      "net_change_2022": 132,
+      "franchised_opened_2024": 60,
+      "franchised_terminations_2024": 0,
+      "franchised_non_renewals_2024": 0,
+      "franchised_reacquired_2024": 0,
+      "franchised_ceased_ops_2024": 15,
+      "transfers_2024": 41,
+      "signed_not_opened": 134,
+      "projected_new_franchised": 37,
+      "projected_new_company_owned": 0,
+      "gag_clause_flag": true,
+      "gag_clause_quote": "current and former franchisees sign provisions restricting their ability to speak openly about their experience with us",
+      "gag_clause_source_pages": [
+        67
+      ],
+      "source_pages": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "confidence": "high"
+    }
+  },
+  "contract_burden": {
+    "from_canonical": null,
+    "from_depth_pass_v2": null,
+    "from_rt_depth": {
+      "method": "targeted_page_reads",
+      "pages_read": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "exhibit": "C \u2014 Franchise Agreement",
+      "clauses": [
+        {
+          "family": "Grant and Term",
+          "provisions": [
+            {
+              "clause": "\u00a72.1 Grant of Franchise",
+              "burden": "License to use Marks and System to operate one Clinic from accepted site. Not a sale of territory rights."
+            },
+            {
+              "clause": "\u00a75.1 Term",
+              "burden": "10-year initial term from effective date."
+            },
+            {
+              "clause": "\u00a75.2 Renewal",
+              "burden": "One 10-year renewal. Must sign then-current FA (may be materially different), pay 25% of then-current IFF, sign general release, remodel, upgrade FFE, extend lease. If no mutual agreement on further renewals, franchise ends after renewal term."
+            }
+          ],
+          "source_pages": [
+            75,
+            76,
+            77
+          ]
+        },
+        {
+          "family": "Fee and Payment Obligations",
+          "provisions": [
+            {
+              "clause": "\u00a714.1 Royalty",
+              "burden": "Greater of 7% of Gross Sales or $700/month. Bimonthly reporting and payment. 2025 incentive: 3%/5%/7% ramp-up for new clinics."
+            },
+            {
+              "clause": "\u00a714.2 Brand Fund",
+              "burden": "Currently 2%, up to 3% on 30 days notice. No voting rights."
+            },
+            {
+              "clause": "\u00a714.3 Technology Fee",
+              "burden": "$599/month, up to $799 on 30 days notice."
+            },
+            {
+              "clause": "\u00a714.4 Late Fees",
+              "burden": "$100 flat + 18% per annum (10% in CA). $35 NSF fee per incident."
+            },
+            {
+              "clause": "ACH Requirement",
+              "burden": "Must authorize ACH debit for all amounts owed (ATTACHMENT E). Must maintain sufficient funds."
+            }
+          ],
+          "source_pages": [
+            99,
+            100
+          ]
+        },
+        {
+          "family": "Site Selection and Construction",
+          "provisions": [
+            {
+              "clause": "\u00a78.1 Site Selection",
+              "burden": "Franchisee must identify site within Site Selection Area. Franchisor acceptance required (15 business days)."
+            },
+            {
+              "clause": "\u00a78.3 Clinic Design",
+              "burden": "Must use franchisor's Clinic Design. Must hire licensed architect. Plans must be approved. Minimum $20,000 every 4 years for remodel."
+            },
+            {
+              "clause": "\u00a78.5 Opening",
+              "burden": "Must open by Required Opening Date. Imputed Royalty Fees of $700/month if delayed."
+            }
+          ],
+          "source_pages": [
+            86,
+            87,
+            88
+          ]
+        },
+        {
+          "family": "Training and Operational Obligations",
+          "provisions": [
+            {
+              "clause": "\u00a76 Training",
+              "burden": "Managing Owner and General Manager must complete initial training. Post-opening training up to $1,000/person/day. Remedial training if clinic not in compliance."
+            },
+            {
+              "clause": "\u00a79 Management & Staffing",
+              "burden": "Managing Owner required (5%+ ownership). Either MO or trained GM onsite during business hours."
+            },
+            {
+              "clause": "\u00a712 Operating Standards",
+              "burden": "Must comply with Manual, maintain equipment, follow pricing guidelines, purchase from approved suppliers, maintain HIPAA compliance."
+            }
+          ],
+          "source_pages": [
+            78,
+            79,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ]
+        },
+        {
+          "family": "Termination Triggers and Cure Periods",
+          "provisions": [
+            {
+              "clause": "\u00a721.1 By Franchisee",
+              "burden": "May terminate if franchisor fails to cure material breach within 90 days. Must still comply with post-term obligations (excl. liquidated damages)."
+            },
+            {
+              "clause": "\u00a721.2 By Franchisor (Curable)",
+              "burden": "10 days: monetary, insurance, credentialing. 20 days: license maintenance. 90 days: failure to open (max 180 after Required Opening Date). 30 days: other."
+            },
+            {
+              "clause": "\u00a721.2 By Franchisor (Non-curable)",
+              "burden": "Insolvency, bankruptcy, seizure, abandonment (3 consecutive business days), loss of license, criminal conviction, material law violation, adverse reputation acts, health/safety hazards, material misrepresentations, unauthorized transfers, IP violations, 3+ defaults in 12 months, cross-default."
+            },
+            {
+              "clause": "\u00a721.3 No-Fault Termination",
+              "burden": "If business model deemed unlawful in franchisee's state and parties can't agree on fix. No liquidated damages if franchisee signs Mutual Termination and Release."
+            }
+          ],
+          "source_pages": [
+            110,
+            111,
+            112
+          ]
+        },
+        {
+          "family": "Transfer Restrictions and Conditions",
+          "provisions": [
+            {
+              "clause": "\u00a720.2 Transfer Requirements",
+              "burden": "Transferee must: apply, qualify, train, assume obligations, sign then-current FA, remodel within 6 months, pay transfer fee ($5K DC Path / $15K other). Seller must: be in compliance, assign lease, sign general release. 16 conditions total."
+            },
+            {
+              "clause": "\u00a720.3 Permitted Transfers",
+              "burden": "No approval needed for: <5% ownership, family/trust, between owners, to 100% owned entity. Must give 10 days notice and pay $2,500."
+            },
+            {
+              "clause": "\u00a720.6 Right of First Refusal",
+              "burden": "Franchisor has 30-day evaluation period to match any bona fide offer. Can substitute cash for any payment form. Reinstated if material change to offer terms or sale not completed within 120 days."
+            }
+          ],
+          "source_pages": [
+            106,
+            107,
+            108,
+            109
+          ]
+        },
+        {
+          "family": "Noncompete Scope and Duration",
+          "provisions": [
+            {
+              "clause": "\u00a715.3 During Term",
+              "burden": "No involvement in 'competing business' \u2014 defined as private-pay, non-insurance chiropractic under membership model deriving $10K+/year. Does NOT restrict general chiropractic practice."
+            },
+            {
+              "clause": "\u00a715.3 & \u00a722.1 Post-Term",
+              "burden": "2 years after termination/expiration. No competing business at clinic premises or within 10 miles of your clinic or ANY other clinic in the system. Very broad geographic scope."
+            }
+          ],
+          "source_pages": [
+            100,
+            101
+          ]
+        },
+        {
+          "family": "Guaranty Scope",
+          "provisions": [
+            {
+              "clause": "\u00a710 & ATTACHMENT D",
+              "burden": "All owners and spouses of owners must sign Franchise Owner Agreement. Includes brand protection covenants, transfer restrictions, and FINANCIAL ASSURANCE for all obligations. Spouse liable even without ownership interest."
+            },
+            {
+              "clause": "Special Risk #2",
+              "burden": "Spousal Liability explicitly flagged as special risk: 'Your spouse must sign a document that makes your spouse liable for all financial obligations under the franchise agreement even though your spouse has no ownership interest.'"
+            }
+          ],
+          "source_pages": [
+            4,
+            83,
+            84
+          ]
+        },
+        {
+          "family": "Liquidated Damages",
+          "provisions": [
+            {
+              "clause": "\u00a714 / Item 6 Note 3",
+              "burden": "On termination for default or unauthorized termination: Average monthly (royalty + brand fund) for preceding 12 months \u00d7 lesser of 24 or months remaining in term. If paid timely, franchisor will not pursue lost profits (but may seek other damages)."
+            }
+          ],
+          "source_pages": [
+            22,
+            99
+          ]
+        },
+        {
+          "family": "Venue and Dispute Resolution",
+          "provisions": [
+            {
+              "clause": "\u00a723 Dispute Resolution",
+              "burden": "Mandatory pre-suit mediation (except IP/noncompete). Mediation and litigation in Maricopa County, AZ (subject to state law)."
+            },
+            {
+              "clause": "\u00a725.1 Governing Law",
+              "burden": "Arizona law governs (subject to state law and federal trademark law)."
+            },
+            {
+              "clause": "\u00a725.2 Jury Waiver",
+              "burden": "Mutual waiver of jury trial (subject to state law)."
+            }
+          ],
+          "source_pages": [
+            114,
+            115,
+            116
+          ]
+        },
+        {
+          "family": "Insurance Requirements",
+          "provisions": [
+            {
+              "clause": "\u00a716.1",
+              "burden": "Must maintain: all-risk property (replacement value), CGL ($1M/$3M), auto ($1M/$3M), malpractice ($1M/$3M), commercial umbrella ($1M/$3M), business interruption (6 months), employer's liability, workers comp, landlord-required, licensure-required. A-VIII+ rated carrier. 30 days notice to franchisor."
+            }
+          ],
+          "source_pages": [
+            28
+          ]
+        },
+        {
+          "family": "Indemnification Obligations",
+          "provisions": [
+            {
+              "clause": "\u00a719.1 By Franchisee",
+              "burden": "Broad indemnification: clinic operations, chiropractic services, breach of agreement, breach of third-party contracts, failure to name franchisor as insured, representations to transferees, tax penalties, libel/slander, labor/employment claims. Franchisor controls defense. Survives termination."
+            },
+            {
+              "clause": "\u00a719.2 By Franchisor",
+              "burden": "Limited: only for claims that franchisee's use of Marks in strict compliance infringes third-party IP. Requires full compliance with all agreements."
+            }
+          ],
+          "source_pages": [
+            105,
+            106
+          ]
+        },
+        {
+          "family": "Post-Termination Obligations",
+          "provisions": [
+            {
+              "clause": "\u00a722.1",
+              "burden": "Remove trade dress, alter premises, cease IP use (including software), return Manual/branded materials, delete social media, assign phone numbers/domain names/listings, send patient list and records (subject to privacy laws), cancel fictitious names, comply with data retention, pay amounts due including liquidated damages."
+            }
+          ],
+          "source_pages": [
+            113,
+            114
+          ]
+        },
+        {
+          "family": "Purchase Option",
+          "provisions": [
+            {
+              "clause": "\u00a722.2",
+              "burden": "Franchisor has option to purchase clinic at expiration or termination. Must sign Asset Purchase Agreement (Exhibit H-5)."
+            }
+          ],
+          "source_pages": [
+            114
+          ]
+        },
+        {
+          "family": "Force Majeure",
+          "provisions": [
+            {
+              "clause": "\u00a725.6",
+              "burden": "Neither party liable for delays due to Force Majeure (fire, flood, earthquake, strike, pandemic, government order, etc.). Must resume performance within reasonable time."
+            }
+          ],
+          "source_pages": [
+            116
+          ]
+        }
+      ]
+    },
+    "termination_with_cause": null,
+    "termination_by_franchisee": null,
+    "transfer": null,
+    "noncompete_in_term": null,
+    "noncompete_post_term": null
+  },
+  "territory_reality": {
+    "headline": null,
+    "raw": {
+      "exclusive_territory": false,
+      "territory_size": "10,000 to 25,000 households",
+      "territory_measurement": "ArcGIS mapping and analytics",
+      "captive_venue_carveout": true,
+      "acquisition_carveout": true,
+      "alternative_channels_reserved": true,
+      "territory_may_shrink_at_renewal": true,
+      "source_pages": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "confidence": "high"
+    }
+  },
+  "state_overrides": {
+    "states_with_addenda": [
+      "California",
+      "Hawaii",
+      "Illinois",
+      "Indiana",
+      "Maryland",
+      "Michigan",
+      "Minnesota",
+      "New York",
+      "North Dakota",
+      "Rhode Island",
+      "South Dakota",
+      "Virginia",
+      "Washington",
+      "Wisconsin"
+    ],
+    "extraction_status": "extracted_in_A1",
+    "source_pages": [
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317
+    ],
+    "confidence": "high"
+  },
+  "financial_strength": {
+    "auditor": "BDO USA, P.C.",
+    "audit_opinion": "unqualified",
+    "audit_opinion_date": "2025-03-11",
+    "fiscal_year_end": null,
+    "total_revenue": null,
+    "net_income": null,
+    "total_assets": 80421656,
+    "total_equity": null,
+    "bankruptcy_flag": {
+      "franchisor_bankruptcy": false,
+      "officer_bankruptcy": {
+        "person": "Craig Sherwood (SVP Development)",
+        "entity": "GGI Holdings, LLC (Gold's Gym parent)",
+        "case": "Case No. 20-31318, Northern District of Texas",
+        "filed": "2020-05-04",
+        "resolved": "2020-09-09",
+        "note": "Not related to The Joint Chiropractic."
+      },
+      "source_pages": [
+        16
+      ],
+      "confidence": "high"
+    },
+    "litigation_summary": {
+      "pending": null,
+      "raw": {
+        "count": 1,
+        "cases": [
+          {
+            "name": "Carmel Mountain et al. v. The Joint",
+            "case_number": "01-15-0004-1604",
+            "filed": "2015-07-07",
+            "type": "Arbitration",
+            "allegations": "Breach of contract, breach of implied covenant, wrongful termination, fraud, promissory fraud, negligent misrepresentation, CA Franchise Investment Law violations",
+            "resolution": "Settled December 12, 2016. $800,000 total ($600K insurance, $100K stock). Mutual general releases. Dismissed with prejudice Dec 20, 2016.",
+            "source_pages": [
+              16
+            ]
+          }
+        ],
+        "source_section": "Item 3",
+        "confidence": "high"
+      }
+    }
+  },
+  "red_flags": [
+    {
+      "severity": "warning",
+      "kind": "bankruptcy",
+      "summary": "{'franchisor_bankruptcy': False, 'officer_bankruptcy': {'person': 'Craig Sherwood (SVP Development)', 'entity': \"GGI Holdings, LLC (Gold's Gym parent)\", 'case': 'Case No. 20-31318, Northern District o"
+    }
+  ],
+  "validation_questions": [
+    "Confirm Item 19 cohort definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run": "the-joint-chiropractic-2025",
+    "harvest_runs": [],
+    "filing_year": 2025,
+    "key_exhibits": [],
+    "issuance_date_pages": null,
+    "primary_layers_present": {
+      "v2": true,
+      "v1": true,
+      "final": true,
+      "raw": true
+    },
+    "rt_depth_files": [
+      "RT_depth_key_exhibits",
+      "RT_depth_contract_burdens",
+      "RT_depth_item19_cohort_comparability",
+      "RT_depth_financial_notes",
+      "RT_depth_promotion_audit",
+      "RT_depth_state_addenda_promotion",
+      "RT_depth_item21_notes"
+    ]
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Item 21 auditor and opinion type unknown \u2014 financial statements are image-only"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 21 financial metrics (total assets, liabilities, equity, revenue, net income) not extractable from text"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Going concern status unknown without auditor's report"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Franchise agreement not fully clause-walked \u2014 covered via Item 17 cross-references"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Net Profit sample bias \u2014 only 406 of 785 qualifying clinics (51.7%) provided P&L data"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Maturity bias in quartiles \u2014 Q1 avg 97.6 months vs Q4 avg 48.8 months"
+    }
+  ]
+}

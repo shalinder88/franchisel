@@ -1,0 +1,449 @@
+{
+  "slug": "burger-king",
+  "name": "Burger King",
+  "schema_version": 1,
+  "current_snapshot": {
+    "legal_name": "Burger King Company LLC",
+    "parent": null,
+    "headquarters": "5707 Blue Lagoon Drive, Miami, Florida 33126",
+    "fdd_filing_year": 2025,
+    "issuance_date": "03/2025, as amended 01/2026",
+    "franchise_fee_headline": "$50,000 for 20-year term",
+    "investment_range_headline": null,
+    "royalty_headline": "4.5% of Gross Sales",
+    "ad_fund_headline": "Up to 4.5% (set at 4.5% as of 1/1/2025)",
+    "term_headline": "20 years freestanding; shorter for non-traditional or limited property control",
+    "renewal_headline": "Option (not right). Requires compliance, BKC approval, then-current FA, general release, successor fee, building upgrades. No successor for Big-Box/Delivery.",
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "initial_fees_by_format": {
+      "franchise_fee_standard": "$50,000 for 20-year term",
+      "franchise_fee_minimum": "$15,000 (prorated)",
+      "application_fee_individual": "$250 per applicant",
+      "application_fee_entity": "Up to $5,000",
+      "training_fee": "$7,500 per trainee",
+      "tra_deposit": "$5,000",
+      "mtra_deposit": "$10,000 per committed opening",
+      "development_agreement_prepayment": "$50,000 per committed restaurant",
+      "refundability": "All nonrefundable except limited TRA/MTRA deposit refund and Carrols 30-day refund"
+    },
+    "investment_by_format": {},
+    "recurring_fees_raw": {
+      "royalty": "4.5% of Gross Sales",
+      "advertising": "Up to 4.5% (set at 4.5% as of 1/1/2025)",
+      "investment_spending": "Up to 2.0% of Gross Sales",
+      "digital_services": "$110/mo + 1% digital sales, cap $4,500/yr",
+      "bk_university": "$700/yr per restaurant",
+      "service_desk": "$750-$1,200/yr per restaurant",
+      "bk_foundation": "$1,000/yr per restaurant",
+      "late_charges": "18%/yr or max legal rate",
+      "combined_mandatory_minimum": "9.0% of Gross Sales (royalty + advertising) before rent, digital, local marketing, other",
+      "remodel_penalty_surcharge": "+3.0% royalty on all Gross Sales for missed RTF2/RTF1/Forbearance deadlines"
+    },
+    "tech_fee_detail": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null,
+    "high_low": null,
+    "presentation_basis": null,
+    "raw_keys": [
+      "section_a_sales_distributions",
+      "section_b_remodel_uplift",
+      "cost_data_disclosed"
+    ]
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "terminations": null,
+    "non_renewals": null,
+    "transfers": 254,
+    "net_change": null,
+    "raw": {
+      "systemwide_2024": {
+        "franchised_start": 6640,
+        "franchised_end": 5524,
+        "company_owned_start": 138,
+        "company_owned_end": 1177,
+        "total_end": 6701,
+        "net_change": -77
+      },
+      "franchise_outlets_2024": {
+        "opened": 63,
+        "terminations": 0,
+        "non_renewals": 49,
+        "reacquired_by_franchisor": 1061,
+        "ceased_other": 69
+      },
+      "company_owned_2024": {
+        "opened": 1,
+        "reacquired_from_franchisee": 1061,
+        "closed": 12,
+        "sold_to_franchisee": 11
+      },
+      "projected_openings_next_year": {
+        "franchised": 48,
+        "company_owned": 2,
+        "signed_not_opened": 0
+      },
+      "transfers_2024": 254,
+      "carrols_acquisition_note": "On May 16, 2024, RBI acquired Carrols Restaurant Group (1,023 restaurants). This single transaction accounts for nearly all 2024 reacquisitions and makes year-over-year comparisons misleading without context.",
+      "ceased_operations_count_exhibit_o3": 1433,
+      "franchisee_gag_clause": "Some current and former franchisees signed provisions restricting their ability to speak openly about their experience in the last three fiscal years.",
+      "independent_franchisee_association": "National Franchisee Association (NFA), Kennesaw, GA",
+      "source_object": "03_tables.json",
+      "source_section": "T20-01 through T20-05",
+      "source_pages": [
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+  "contract_burden": {
+    "from_canonical": null,
+    "from_depth_pass_v2": null,
+    "from_rt_depth": null,
+    "termination_with_cause": null,
+    "termination_by_franchisee": null,
+    "transfer": "BKC consent. Buyer approved, training, fees ($2K+$500/add'l), general release, current image. ROFR on same terms.",
+    "noncompete_in_term": null,
+    "noncompete_post_term": "1 year, 2 miles, no hamburger business"
+  },
+  "territory_reality": {
+    "headline": null,
+    "raw": {
+      "exclusive_territory": "No. Explicitly: 'You will not receive an exclusive territory.'",
+      "franchise_agreement_territory": "Single location only. No protected area.",
+      "alternative_channels": "BKC reserves all rights \u2014 grocery, convenience, internet, direct marketing. No franchisee compensation.",
+      "affiliate_competition": "TH, Popeyes, FHS may operate in same markets. BKC not responsible for resolving inter-brand conflicts."
+    }
+  },
+  "state_overrides": {
+    "states_with_fdd_addenda": [
+      "CA",
+      "HI",
+      "IL",
+      "MD",
+      "MN",
+      "NY",
+      "ND",
+      "RI",
+      "SD",
+      "VA",
+      "WA"
+    ],
+    "states_with_agreement_amendments": [
+      "CA",
+      "HI",
+      "IL",
+      "MD",
+      "MN",
+      "ND",
+      "WA"
+    ],
+    "most_protective_state": "North Dakota \u2014 effectively voids noncompete, forum, governing law, jury waiver, liquidated damages, general release, one-sided fee recovery",
+    "mn_termination_override": "90 days' notice (60 to cure) for termination; 180 days for non-renewal \u2014 supersedes FA cure periods",
+    "ca_unaudited_bkc_balance_sheet": "Added to Exhibit Q per California addendum",
+    "ca_late_interest_cap": "10% annually (vs. FA's 18%)",
+    "wa_buy_back_restriction": "BKC repurchase without franchisee consent unlawful unless termination for good cause",
+    "source": "10_retry/Exhibit P FDD Addenda",
+    "pages": [
+      782,
+      784,
+      785,
+      787,
+      788,
+      789,
+      790,
+      791,
+      793,
+      794,
+      795,
+      796,
+      799,
+      800
+    ],
+    "confidence": "high",
+    "status": "surfaced",
+    "notes": "FDD-level addenda fully surfaced for 9 states. Agreement-level amendments (FA, DA, MTRA, TRA per state) mapped but not read."
+  },
+  "financial_strength": {
+    "bankruptcy_flag": null,
+    "litigation_summary": {
+      "pending": null,
+      "raw": {
+        "pending_matters_count": {
+          "value": 10,
+          "source": "08_retry/Item 3",
+          "pages": [
+            20,
+            27
+          ],
+          "confidence": "high",
+          "status": "surfaced"
+        },
+        "franchisor_initiated_count": {
+          "value": 1,
+          "source": "08_retry/Item 3",
+          "pages": [
+            24
+          ],
+          "confidence": "high",
+          "status": "surfaced"
+        },
+        "concluded_matters_count": {
+          "value": 8,
+          "source": "08_retry/Item 3",
+          "pages": [
+            24,
+            27
+          ],
+          "confidence": "high",
+          "status": "surfaced"
+        },
+        "highest_impact_pending": [
+          {
+            "name": "Arrington v. BK Worldwide (No-Hire Class Action)",
+            "forum": "S.D. Fla.",
+            "claims": "Sherman Act Section 1 \u2014 no-hire clause in standard FA",
+            "status": "Mediation ordered by April 3, 2026",
+            "bkc_party": true
+          },
+          {
+            "name": "Plymouth County v. RBI (Carrols Acquisition Fairness)",
+            "forum": "Delaware Chancery",
+            "claims": "Breach of fiduciary duty, unjust enrichment in Carrols acquisition",
+            "status": "Trial set February 1, 2027",
+            "bkc_party": false
+          }
+        ],
+        "notable_concluded": [
+          {
+            "name": "Hapema v. BKE (Switzerland)",
+            "outcome": "Court found BKE infringed Swiss Cartel Act via coupon pricing. Settled."
+          },
+          {
+            "name": "Meals Catalunya v. BKE (Spain)",
+            "outcome": "Court found wrongful termination of 3 of 4 locations. EUR 1.5M damages to franchisee."
+          }
+        ],
+        "bankruptcy": {
+          "value": "None",
+          "source": "08_retry/Item 4",
+          "pages": [
+            28
+          ],
+          "confidence": "high",
+          "status": "surfaced"
+        }
+      }
+    }
+  },
+  "red_flags": [
+    {
+      "severity": "warning",
+      "kind": "contradiction",
+      "summary": "Cover page investment range ($348K-$4.7M) spans all 6 formats without format-level clarification."
+    },
+    {
+      "severity": "warning",
+      "kind": "contradiction",
+      "summary": "38-unit gap: Carrols 1,023 vs. reacquisition column 1,061."
+    },
+    {
+      "severity": "warning",
+      "kind": "contradiction",
+      "summary": "Base Fee definition allows future royalty increase above 4.5%."
+    }
+  ],
+  "validation_questions": [
+    "Reconcile: Cover page investment range ($348K-$4.7M) spans all 6 formats without format-level clarification.",
+    "Reconcile: 38-unit gap: Carrols 1,023 vs. reacquisition column 1,061.",
+    "Reconcile: Base Fee definition allows future royalty increase above 4.5%.",
+    "Confirm Item 19 cohort definition with franchisor.",
+    "Confirm current auditor and most recent opinion date."
+  ],
+  "filing_changes": [
+    {
+      "field": "franchise_fee",
+      "from_run": "merged-burger-king-2025",
+      "old_value": "$50,000 standard (20-year term). Prorated for shorter terms, minimum $15,000. Fully earned at signing, nonrefundable.",
+      "current_value": "$50,000 for 20-year term"
+    },
+    {
+      "field": "royalty",
+      "from_run": "merged-burger-king-2025",
+      "old_value": "4.5% of monthly Gross Sales (standard)",
+      "current_value": "4.5% of Gross Sales"
+    },
+    {
+      "field": "franchise_fee",
+      "from_run": "637918-2025-Burger-King",
+      "old_value": "$50,000 standard (20-year term). Prorated for shorter terms, minimum $15,000. Fully earned at signing, nonrefundable.",
+      "current_value": "$50,000 for 20-year term"
+    },
+    {
+      "field": "royalty",
+      "from_run": "637918-2025-Burger-King",
+      "old_value": "4.5% of monthly Gross Sales (standard)",
+      "current_value": "4.5% of Gross Sales"
+    }
+  ],
+  "source_evidence": {
+    "primary_run": "burger-king-2025",
+    "harvest_runs": [
+      "merged-burger-king-2025",
+      "shadow-live-burger-king-2025",
+      "637918-2025-Burger-King"
+    ],
+    "filing_year": 2025,
+    "key_exhibits": [
+      {
+        "id": "D1/D2",
+        "title": "Franchise Agreements",
+        "pages": "185-274",
+        "status": "partial",
+        "notes": "Via Item 17 summaries only. 90 pages unsurfaced."
+      },
+      {
+        "id": "G1",
+        "title": "Lease/Sublease (BKL)",
+        "pages": "358-398",
+        "status": "partial",
+        "notes": "Via Item 6 footnotes. 41 pages unsurfaced."
+      },
+      {
+        "id": "M1",
+        "title": "Development Agreement",
+        "pages": "540-563",
+        "status": "partial",
+        "notes": "Via Item 17 summary. 24 pages unsurfaced."
+      },
+      {
+        "id": "Q",
+        "title": "Financial Statements + Guarantees",
+        "pages": "802-910",
+        "status": "partial",
+        "notes": "Headlines extracted. Notes (~80pp) and guarantee text unsurfaced."
+      },
+      {
+        "id": "X1",
+        "title": "RTF2 Master Program Agreement",
+        "pages": "969-990",
+        "status": "surfaced"
+      },
+      {
+        "id": "Y1",
+        "title": "Fuel the Flame Co-Investment Agreement",
+        "pages": "999-1008",
+        "status": "surfaced"
+      },
+      {
+        "id": "D1/D2",
+        "title": "Franchise Agreements",
+        "pages": "185-274",
+        "status": "surfaced",
+        "notes": "Fully read. 8 critical findings beyond Item 17. See 11_fa_deep_read.md."
+      },
+      {
+        "id": "V",
+        "title": "Digital App Services Agreement",
+        "pages": "942-956",
+        "status": "surfaced",
+        "notes": "Fully read. AS-IS, no SLAs, 6-month liability cap, broad data ownership. See 12_digital_services.md."
+      },
+      {
+        "id": "O1",
+        "title": "Franchisee List",
+        "pages": "592-653",
+        "status": "surfaced",
+        "notes": "Extracted: 604 entities, top 30 operators, concentration analysis. See 13_franchisee_list.json."
+      },
+      {
+        "id": "O2/O3",
+        "title": "Company-Owned + Ceased Operations Lists",
+        "pages": "654-705",
+        "status": "partial",
+        "notes": "Structure mapped. No individual records."
+      },
+      {
+        "id": "P",
+        "title": "State Addenda",
+        "pages": "706-801",
+        "status": "partial",
+        "notes": "FDD addenda for 9 states surfaced. Agreement amendments not read."
+      }
+    ],
+    "issuance_date_pages": null,
+    "primary_layers_present": {
+      "v2": false,
+      "v1": false,
+      "final": true,
+      "raw": true
+    },
+    "rt_depth_files": []
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "No training table found in Item 11 or FA operative text. Training described narratively throughout."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Modern Image vs Legacy Image comparison referenced in Item 19 Section A but confirmed absent as standalone table on pages 99-103."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Guarantee of Performance documents not located as separate pages in Exhibit Q. Likely embedded in financial statement notes."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "BKC standalone revenue ($1.427B) from unaudited internal statements. No standalone BKC financials except CA unaudited balance sheet."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Value Menu maximum prices not disclosed \u2014 set in MOD Manual, not FDD."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "38-unit gap between Carrols 1,023 and reacquisition total 1,061 in 2024."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Cover page investment range ($348K-$4.7M) spans all 6 formats without format-level clarification."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "38-unit gap: Carrols 1,023 vs. reacquisition column 1,061."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Base Fee definition allows future royalty increase above 4.5%."
+    }
+  ]
+}

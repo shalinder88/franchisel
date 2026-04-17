@@ -1,0 +1,106 @@
+{
+  "slug": "teamlogic-it",
+  "name": "Teamlogic IT",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "TeamLogic, Inc.",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-27",
+    "franchise_fee_headline": "$49,500",
+    "investment_range_headline": "$109,490 to $144,742",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 49500,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 109490,
+    "investment_high_raw": 144742
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "CliftonLarsonAllen LLP",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-41-637948-2025-teamlogic-it-20260415-104350",
+    "primary_run_folder": "fresh-41-637948-2025-teamlogic-it-20260415-104350",
+    "primary_fdd_id": "637948",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "?",
+    "phase": "first200",
+    "slot": 41
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Item 19 does not disclose costs, expenses, EBITDA, or profitability \u2014 cannot estimate franchisee net income"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Multi-territory operators dominate Q1 Item 19 data; single-territory performance not separately reported"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Renewal may require signing 'materially different' terms \u2014 scope of changes unspecified"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Mandatory minimum floor payments ($3,700/mo) may strain Q3/Q4 performers"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Page 6 header shows 'FDD TLI 03/2024' \u2014 likely typographical carryover from prior year"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Page 6 header reads 'FDD TLI 03/2024' while all other pages show '03/2025'. Issuance date March 27, 2025. Content references December 31, 2024 data consistent with 2025 FDD."
+    },
+    {
+      "topic": "schema_unrecognized",
+      "reason": "canonical schema not parsed by first-200 extractor"
+    }
+  ],
+  "_status": "PARTIAL"
+}

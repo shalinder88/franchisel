@@ -1,0 +1,121 @@
+{
+  "slug": "canopy-and-canopy-by-hilton",
+  "name": "Canopy by Hilton",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": null,
+    "headquarters": "7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$64,100,689 to $141,712,721",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 64100689,
+    "investment_high_raw": 141712721
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": 5
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    },
+    {
+      "severity": "info",
+      "kind": "litigation",
+      "summary": "5 pending lawsuit(s)"
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-127-638050-2025-canopy-and-canopy-by-hilton-20260415-142451",
+    "primary_run_folder": "fresh-127-638050-2025-canopy-and-canopy-by-hilton-20260415-142451",
+    "primary_fdd_id": "638050",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "F",
+    "phase": "first200",
+    "slot": 127
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Restricted Area negotiability \u2014 no standard formula, minimum area, or typical scope disclosed"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Management fee for affiliate management \u2014 'will be established by mutual agreement' with no range disclosed"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "PIP requirements for conversions \u2014 determined project-by-project, no standard template"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Insurance requirements \u2014 per confidential Manual, not disclosed in FDD"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Restaurant Brand concept specifics \u2014 deferred to Exhibit J-2"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Note 9 subsequent events date discrepancy \u2014 states 'March 18, 2024' for FY2024 financials, likely should be 2025"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Special risks states no federal registration for 'Canopy' principal mark, but Item 13 lists Registration 7552571 dated Oct 29, 2024 \u2014 five months before FDD issuance"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Note 9 subsequent events evaluation date 'March 18, 2024' appears to be typographical error for 'March 18, 2025'"
+    }
+  ],
+  "_status": "PARTIAL"
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "sweat440",
+  "name": "Sweat440 Franchise Systems, LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Sweat440 Franchise Systems, LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-11",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": 17,
+    "company_owned_units": 5
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": 17,
+    "company_owned": 5,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": "unqualified",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-05-637910-2025-sweat440-20260414-234304",
+    "primary_run_folder": "fresh-05-637910-2025-sweat440-20260414-234304",
+    "primary_fdd_id": "637910",
+    "harvest_paths": [
+      "fresh-05-637910-2025-sweat440-20260413-202342"
+    ],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 5
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Auditor firm name not captured from text layer (on letterhead image pages 55-56)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Tennessee company-owned studio table shows closure but FDD notes relocation"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Franchise fees receivable net of $945K fees and $756K commissions to same party \u2014 identity of party and commission arrangement unclear"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Parent studio salary/payroll (14-16% of revenue) appears low and may not reflect franchisee reality"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "28 of 32 signed-not-open agreements from one NJ operator \u2014 extreme pipeline concentration risk with no disclosed progress or capitalization info"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Note 4 shows 21 franchised outlets vs Item 20 showing 17 \u2014 likely officer-owned studios counted differently in financial vs FDD reporting"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Company-owned Table 4 shows TN going from 1 to 0 in 2024 but Table 1 shows 5\u21925 total \u2014 TN relocation accounts for discrepancy"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "14-month fiscal period (2024) not comparable to 12-month prior years; Item 19 uses calendar year while Item 21 uses fiscal year"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Training described as 3-5 days but table totals 48 hours requiring minimum 5-6 days"
+    }
+  ],
+  "_status": "PARTIAL"
+}

@@ -1,0 +1,108 @@
+{
+  "slug": "procolor-collision",
+  "name": "ProColor Collision USA LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "ProColor Collision USA LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-29",
+    "franchise_fee_headline": "$20,000",
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": "0.75% of Gross Sales",
+    "term_headline": 5,
+    "renewal_headline": 2,
+    "territory_headline": "designated_non_exclusive",
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 20000,
+    "royalty_raw": null,
+    "ad_fund_raw": "0.75% of Gross Sales",
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 5,
+    "renewal": 2
+  },
+  "territory_reality": {
+    "headline": "designated_non_exclusive"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-124-638047-2025-procolor-collision-20260415-130853",
+    "primary_run_folder": "fresh-124-638047-2025-procolor-collision-20260415-130853",
+    "primary_fdd_id": "638047",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 124
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Termination rates in early years: 3 terminations in 2022 out of 10 end-of-year units (30% rate). Reasons not disclosed."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Fix Auto US conflict resolution: No policy for resolving conflicts between ProColor and Fix Auto franchisees, despite common parent ownership (Mondofix)."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Insurance company volume rebate terms: Described as 'typically 1-5%' but 'can be greater.' Specific terms undisclosed."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "80% supermajority modification rule: Any FA modification accepted by 80% of ProColor locations is binding on all. In a 30-unit system, 24 franchisees control outcome."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Advances to parent company: $427K non-interest-bearing advances to parent, not repayable before Jan 1, 2026. Cash flowing upstream while entity is cash-flow negative."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 20 Table 4 (Company-Owned) Total rows show years 2021, 2022, 2023 instead of 2022, 2023, 2024. Data (all zeros) is consistent regardless."
+    }
+  ],
+  "_status": "PUBLISHED"
+}

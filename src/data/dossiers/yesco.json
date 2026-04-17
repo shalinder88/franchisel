@@ -1,0 +1,102 @@
+{
+  "slug": "yesco",
+  "name": "YESCO",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "YESCO Franchising LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-29",
+    "franchise_fee_headline": "$50,000",
+    "investment_range_headline": "$65,000 to $432,200",
+    "royalty_headline": "Greater of $1,000 or 6% of Gross Revenue per month",
+    "ad_fund_headline": null,
+    "term_headline": 10,
+    "renewal_headline": null,
+    "territory_headline": "Non-exclusive (per Section 2.2.1)",
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": 57,
+    "company_owned_units": 42
+  },
+  "economics": {
+    "franchise_fee_raw": 50000,
+    "royalty_raw": "Greater of $1,000 or 6% of Gross Revenue per month",
+    "ad_fund_raw": null,
+    "investment_low_raw": 65000,
+    "investment_high_raw": 432200
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": 57,
+    "company_owned": 42,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 10,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": "Non-exclusive (per Section 2.2.1)"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "HBME, LLC",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-123-638046-2025-yesco-20260415-124344",
+    "primary_run_folder": "fresh-123-638046-2025-yesco-20260415-124344",
+    "primary_fdd_id": "638046",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 123
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Loan to YESCO Administration LLC ($7.47M, 78% of assets) is non-interest bearing with no disclosed repayment schedule. Material concentration risk."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Bottom quartile avg GR ($187,862) is below annual TSQ ($250,000). At least 12 franchisees may face territory reduction or termination."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "National Advertising Fund not currently active for US. May be established at up to 3% of GR on 30 days notice at franchisor's sole discretion."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Servizio service mark is not federally registered. If challenged, franchisees may need to change at own expense."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Renewal requires signing then-current agreement with potentially 'materially different terms and conditions.' Territory boundaries may change."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Royalty revenue declined 4.9% ($3.37M to $3.21M) from 2023 to 2024 despite stable franchised outlet count (57). Not explained in FDD."
+    }
+  ],
+  "_status": "PUBLISHED"
+}

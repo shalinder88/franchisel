@@ -1,0 +1,797 @@
+{
+  "slug": "ivybrook-academy",
+  "name": "Ivybrook Academy",
+  "schema_version": 1,
+  "current_snapshot": {
+    "legal_name": "IVYBROOK FRANCHISING, LLC",
+    "parent": null,
+    "headquarters": "9801 Suzanne Court, Weddington, NC 28173",
+    "fdd_filing_year": 2025,
+    "issuance_date": null,
+    "franchise_fee_headline": "$50,000",
+    "investment_range_headline": "$540,700 to $869,860",
+    "royalty_headline": 7.0,
+    "ad_fund_headline": 1.0,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": {
+      "franchised": 40,
+      "company": 1,
+      "total": 41
+    },
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "initial_fees_by_format": {
+      "initial_franchise_fee_single": 50000,
+      "initial_franchise_fee_2nd_muda": 35000,
+      "initial_franchise_fee_3rd_muda": 25000,
+      "real_estate_facility_coordination_fee": 10000,
+      "training_opening_support_fee": 15000,
+      "decor_package_current": 7500,
+      "transfer_training_fee_for_existing_unit_buyer": 10000
+    },
+    "investment_by_format": {
+      "total_low_usd": 540700,
+      "total_high_usd": 869860,
+      "franchisor_captured_portion_usd": 82500,
+      "muda_total_low_usd": 575700,
+      "muda_total_high_usd": 929860,
+      "muda_franchisor_captured_usd": 117500,
+      "construction_leasehold_low": 277300,
+      "construction_leasehold_high": 518860,
+      "grand_opening_advertising_min_usd": 20000,
+      "ti_allowance_assumption": "$40/sq ft on 6,000 sq ft"
+    },
+    "recurring_fees_raw": {
+      "royalty_rate_pct_gr": 7.0,
+      "brand_fund_rate_pct_gr": 1.0,
+      "brand_fund_planned_increase_2026_pct": 2.0,
+      "local_marketing_min_pct_gr": 1.0,
+      "marketing_coop_cap_pct_gr": 2.0,
+      "technology_fee_usd_per_month": 250,
+      "transfer_fee_usd": 10000,
+      "renewal_fee": "greater of $10,000 or 10% of then-current initial franchise fee",
+      "liquidated_damages_formula": "trailing-12-month avg monthly Royalty \u00d7 months remaining in term (payable on termination for cause)",
+      "transfer_damages_unauthorized_transfer_usd": 25000,
+      "ongoing_noncompliance_cap_usd_per_week": 1000,
+      "continuing_operation_fee_formula": "greater of $1,000 or 150% of weekly royalty per week, cap = then-current initial franchise fee",
+      "late_fee_rate_per_month": "1.5% (or state max, whichever is lower)"
+    },
+    "tech_fee_detail": {
+      "royalty": {
+        "rate_pct": 7,
+        "basis": "Gross Revenues",
+        "cadence": "monthly by 6th",
+        "waiverable": true,
+        "self_reported_uniform": true
+      },
+      "brand_fund": {
+        "rate_pct": 1,
+        "basis": "Gross Revenues",
+        "cadence": "monthly by 6th",
+        "planned_increase_pct": 2,
+        "planned_increase_year": 2026,
+        "audited": false,
+        "surplus_carryforward": true,
+        "may_borrow_from_franchisor": true,
+        "company_unit_contributes_same_basis": false
+      },
+      "local_marketing": {
+        "min_pct_gr": 1,
+        "measurement": "yearly",
+        "reporting_cadence": "monthly within 30 days of month end",
+        "franchisor_may_direct_specific_suppliers": true,
+        "franchisor_may_collect_directly": true
+      },
+      "marketing_coop": {
+        "max_pct_gr": 2,
+        "currently_active": false,
+        "votes_per_member": 1,
+        "company_units_contribute_same_basis_when_in_coop": true
+      },
+      "tech_fee": {
+        "usd_per_month": 250,
+        "may_increase_unilaterally": true,
+        "any_purpose": true
+      },
+      "audit_trigger": {
+        "under_report_threshold_pct": 3,
+        "cost_range_usd": [
+          1500,
+          5000
+        ]
+      },
+      "renewal_fee_rule_precomputed": {
+        "minimum_usd": 10000,
+        "alt_formula": "10% of then-current initial franchise fee",
+        "take_max": true
+      }
+    }
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null,
+    "high_low": null,
+    "presentation_basis": null,
+    "raw_keys": [
+      "disclosed",
+      "population_criteria",
+      "period",
+      "table_2a_affiliate",
+      "table_2b_franchisee_2plus",
+      "table_2c_franchisee_3plus",
+      "table_3_by_classroom",
+      "critical_caveats"
+    ]
+  },
+  "item20_system_movement": {
+    "system_total": {
+      "franchised": 40,
+      "company": 1,
+      "total": 41
+    },
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "terminations": null,
+    "non_renewals": null,
+    "transfers": 0,
+    "net_change": 7,
+    "raw": {
+      "totals_end_2022": {
+        "franchised": 26,
+        "company": 1,
+        "total": 27
+      },
+      "totals_end_2023": {
+        "franchised": 33,
+        "company": 1,
+        "total": 34
+      },
+      "totals_end_2024": {
+        "franchised": 40,
+        "company": 1,
+        "total": 41
+      },
+      "net_change_2024": 7,
+      "transfers_2022_2024": 0,
+      "ceased_operations_other_2022_2024": [
+        {
+          "year": 2023,
+          "count": 1,
+          "state": "TX"
+        },
+        {
+          "year": 2024,
+          "count": 1,
+          "state": "TX"
+        }
+      ],
+      "projected_openings_next_fy": 16,
+      "signed_but_unopened_total": 42,
+      "largest_unopened_backlogs": {
+        "TX": 8,
+        "FL": 5,
+        "PA": 4,
+        "NC": 3,
+        "VA": 3
+      },
+      "confidentiality_clause_flag": true,
+      "trademark_specific_franchisee_org": false,
+      "source_pages": [
+        50,
+        51,
+        52,
+        53
+      ]
+    }
+  },
+  "contract_burden": {
+    "from_canonical": null,
+    "from_depth_pass_v2": null,
+    "from_rt_depth": {
+      "pass": "depth_2_contract_burdens",
+      "source_exhibit": "A \u2014 Franchise Agreement (pp 55-132) + Exhibit C MUDA (pp 139-143) + Exhibit F Guaranty (pp 148-151)",
+      "fa_section_index": [
+        {
+          "section": 1,
+          "title": "Definitions",
+          "pages_approx": [
+            56
+          ]
+        },
+        {
+          "section": 2,
+          "title": "Grant of Franchise and Accepted Location",
+          "pages_approx": [
+            56,
+            57
+          ]
+        },
+        {
+          "section": 3,
+          "title": "Fees",
+          "pages_approx": [
+            58
+          ]
+        },
+        {
+          "section": 4,
+          "title": "Term and Renewal",
+          "pages_approx": [
+            60
+          ]
+        },
+        {
+          "section": 5,
+          "title": "Accepted Location",
+          "pages_approx": [
+            56
+          ]
+        },
+        {
+          "section": 6,
+          "title": "Proprietary Marks",
+          "pages_approx": [
+            60
+          ]
+        },
+        {
+          "section": 7,
+          "title": "Trade Secrets and Other Confidential Information",
+          "pages_approx": [
+            70
+          ]
+        },
+        {
+          "section": 8,
+          "title": "Training and Assistance",
+          "pages_approx": [
+            73
+          ]
+        },
+        {
+          "section": 9,
+          "title": "Confidential Brand Standards Manual",
+          "pages_approx": [
+            74
+          ]
+        },
+        {
+          "section": 10,
+          "title": "Franchise System",
+          "pages_approx": [
+            75
+          ]
+        },
+        {
+          "section": 11,
+          "title": "Advertising and Promotional Activities",
+          "pages_approx": [
+            76
+          ]
+        },
+        {
+          "section": 12,
+          "title": "Accounting, Records and Reporting Obligations",
+          "pages_approx": [
+            79
+          ]
+        },
+        {
+          "section": 13,
+          "title": "Standards of Operation",
+          "pages_approx": [
+            81
+          ]
+        },
+        {
+          "section": 14,
+          "title": "Franchisor Additional Operations Assistance",
+          "pages_approx": [
+            90
+          ]
+        },
+        {
+          "section": 15,
+          "title": "Insurance",
+          "pages_approx": [
+            91
+          ]
+        },
+        {
+          "section": 16,
+          "title": "Default and Termination",
+          "pages_approx": [
+            92
+          ]
+        },
+        {
+          "section": 17,
+          "title": "Rights and Duties upon Expiration, Nonrenewal, or Termination",
+          "pages_approx": [
+            97
+          ]
+        },
+        {
+          "section": 18,
+          "title": "Transferability of Interest",
+          "pages_approx": [
+            102
+          ]
+        },
+        {
+          "section": 19,
+          "title": "Right of First Refusal",
+          "pages_approx": [
+            106
+          ]
+        },
+        {
+          "section": 20,
+          "title": "Beneficial Owners of Franchisee",
+          "pages_approx": [
+            106
+          ]
+        },
+        {
+          "section": 21,
+          "title": "Relationship and Indemnification",
+          "pages_approx": [
+            107
+          ]
+        },
+        {
+          "section": 22,
+          "title": "General Conditions and Provisions",
+          "pages_approx": [
+            109
+          ]
+        },
+        {
+          "section": 23,
+          "title": "Dispute Resolution",
+          "pages_approx": [
+            112
+          ]
+        },
+        {
+          "section": 24,
+          "title": "Acknowledgements",
+          "pages_approx": [
+            115
+          ]
+        }
+      ],
+      "burden_clauses": {
+        "grant_and_term": {
+          "term_years": 15,
+          "renewal_terms": [
+            10,
+            10
+          ],
+          "successor_may_be_materially_different": true,
+          "source": "FA \u00a74; Item 17 table a-c"
+        },
+        "fees_and_payments": {
+          "royalty_pct_gr": 7,
+          "brand_fund_pct_gr": 1,
+          "brand_fund_planned_2026_pct": 2,
+          "tech_fee_usd_monthly": 250,
+          "renewal_fee_rule": "max($10,000, 10% of then-current initial franchise fee)",
+          "payment_method": "EFT",
+          "source": "FA \u00a73, \u00a711; Item 6"
+        },
+        "site_selection_and_construction": {
+          "site_acceptance_required": true,
+          "site_acceptance_window_months": 6,
+          "must_use_approved_architect_and_construction_manager": true,
+          "lease_assignment_on_default_right": true,
+          "lease_rider_required": true,
+          "source": "FA \u00a72, \u00a75, \u00a713; Item 11"
+        },
+        "training_and_operational_obligations": {
+          "pre_open_training_hours": 80,
+          "owner_ceo_min_ownership_pct": 10,
+          "ceo_onsite_min_weekly_hours_first_year": 20,
+          "school_admin_onsite_weekly_hours": 40,
+          "naeyc_membership_required": true,
+          "nayec_accreditation_after_years": 2,
+          "narea_membership_required": true,
+          "bbb_accreditation_required": true,
+          "source": "FA \u00a78, \u00a713; Item 11, Item 15"
+        },
+        "termination_triggers_and_cure": {
+          "no_cause_termination_by_franchisor": false,
+          "curable_default_types": [
+            "failure to maintain insurance",
+            "failure to pay",
+            "Manual/spec noncompliance"
+          ],
+          "noncurable_default_types_summary": "See Item 17 table \u2014 includes failure to open, felony, bankruptcy, \u22652 reporting failures in 12 months, \u22652 law violations, customer-evaluation score failure, license loss, 3-day abandonment, unauthorized transfer, etc.",
+          "franchisee_termination_cure_window_franchisor_breach_days": 90,
+          "franchisee_notice_days": 30,
+          "source": "FA \u00a716; Item 17"
+        },
+        "transfer_restrictions": {
+          "written_consent_required": true,
+          "rofr_present": true,
+          "transfer_fee_usd": 10000,
+          "transfer_training_fee_usd": 10000,
+          "unauthorized_transfer_damages_usd": 25000,
+          "general_release_required": true,
+          "transferee_signs_then_current_fa": true,
+          "death_disability_transfer_window_days": 180,
+          "source": "FA \u00a718, \u00a719, \u00a720; Item 17; Item 6"
+        },
+        "noncompete": {
+          "during_term_scope": "diversion + competitive ownership or employment (owners + spouses/domestic partners)",
+          "post_term_years": 2,
+          "post_term_geo": "greater of Territory, 10-mile radius of franchise location, or 10-mile radius of any other Ivybrook Academy Franchised Business",
+          "state_law_override": true,
+          "source": "FA \u00a77.3, \u00a717.3; Item 17 q, r"
+        },
+        "guaranty_scope": {
+          "personal_guaranty_required": true,
+          "spousal_guaranty_implied_for_noncompete": true,
+          "unlimited_indemnification": true,
+          "exhibit": "F",
+          "source": "Exhibit F; FA \u00a721"
+        },
+        "liquidated_damages": {
+          "formula": "trailing 12-month average monthly Royalty \u00d7 months remaining in term",
+          "trigger": "termination for cause",
+          "due_within_days": 15,
+          "source": "Item 6; FA \u00a716/17"
+        },
+        "venue_and_dispute_resolution": {
+          "mediation_venue": "Charlotte, NC",
+          "arbitration_venue": "Charlotte, NC",
+          "litigation_venue": "Charlotte, NC",
+          "governing_law": "North Carolina",
+          "exception": "subject to state law overrides (IL, MN, VA)",
+          "source": "FA \u00a723; Item 17 u, v, w"
+        },
+        "insurance": {
+          "all_risk_property": true,
+          "workers_comp_per_state": true,
+          "employer_liability_min_usd": 100000,
+          "commercial_general_liability_per_occurrence_usd": 2000000,
+          "franchisor_additional_insured": true,
+          "subrogation_waiver": true,
+          "source": "FA \u00a715; Item 8"
+        },
+        "indemnification": {
+          "scope": "broad \u2014 indemnifies franchisor and related parties for third-party claims and franchisee operations",
+          "owner_and_guarantor_joint": true,
+          "source": "FA \u00a721; Item 6"
+        },
+        "force_majeure": {
+          "not_captured_in_body_items": true,
+          "source_section_in_fa_pages_approx": [
+            109,
+            110
+          ]
+        },
+        "distinctive_clauses": [
+          "Unilateral right of franchisor to access all franchisee technology data at any time without notice (FA \u00a712.6, \u00a712.7).",
+          "Customer-evaluation minimum score is a non-curable termination trigger without disclosed threshold.",
+          "Continuing Operation Fee in holdover: greater of $1,000 or 150% of weekly royalty per week, capped at then-current initial franchise fee.",
+          "Brand Fund may borrow from franchisor; not audited; company units not on same contribution basis.",
+          "Innovations clause auto-assigns franchisee inventions/curriculum/software to franchisor without separate compensation.",
+          "Customer List is franchisor property; must be turned over on demand and at termination.",
+          "Franchisor may substitute trademarks at franchisee expense."
+        ]
+      }
+    },
+    "termination_with_cause": null,
+    "termination_by_franchisee": null,
+    "transfer": null,
+    "noncompete_in_term": null,
+    "noncompete_post_term": null
+  },
+  "territory_reality": {
+    "headline": null,
+    "raw": {
+      "territory_definition": "Lesser of 125,000 population or 3-mile radius around the location",
+      "exclusivity_scope": "Protected only against another Ivybrook Academy School under the Marks; franchisor retains customer-solicitation, alternative-channel, merchandise, and non-Ivybrook-brand rights inside the Territory",
+      "online_sales_rights": "Franchisor retains all online sale rights; franchisee may not sell via mail order, phone, mobile app, internet, or any off-site channel except approved off-site events",
+      "territory_can_change_at_renewal": true
+    }
+  },
+  "state_overrides": {
+    "states_with_addenda": [
+      "Illinois",
+      "Minnesota",
+      "Virginia"
+    ],
+    "illinois": {
+      "fee_deferral": {
+        "rule": "Initial franchise + development fees deferred until franchisor has satisfied pre-opening obligations AND franchisee has commenced operations; imposed by Illinois AG due to franchisor's financial condition",
+        "source_pages": [
+          133
+        ]
+      },
+      "forum_selection": {
+        "rule": "Out-of-state litigation clauses void per IL FDA \u00a74 (mediation/arbitration may be out of state)",
+        "source_pages": [
+          133,
+          134
+        ]
+      },
+      "governing_law": {
+        "rule": "Illinois law governs the Agreements",
+        "source_pages": [
+          133,
+          134
+        ]
+      },
+      "termination": {
+        "rule": "IL FDA \u00a719 termination conditions/notice preserved",
+        "source_pages": [
+          134
+        ]
+      },
+      "non_renewal": {
+        "rule": "IL FDA \u00a720 non-renewal conditions/compensation preserved",
+        "source_pages": [
+          134
+        ]
+      },
+      "anti_waiver": {
+        "rule": "IL FDA \u00a741 voids any waiver of IL FDA compliance; no acknowledgment can waive state franchise law claims or disclaim reliance",
+        "source_pages": [
+          134
+        ]
+      }
+    },
+    "minnesota": {
+      "forum_selection": {
+        "rule": "Minn. Stat. \u00a780C.21 / Rule 2860.4400J \u2014 litigation cannot be required outside MN (arbitration may be)",
+        "source_pages": [
+          135
+        ]
+      },
+      "termination_notice_and_cure": {
+        "rule": "Minn. Stat. \u00a780C.14 subds. 3-5 \u2014 90 days notice, 60-day cure; 180 days non-renewal notice",
+        "source_pages": [
+          135
+        ]
+      },
+      "general_release": {
+        "rule": "No release of MN Franchises Act claims as a condition to renewal or assignment",
+        "source_pages": [
+          135
+        ]
+      },
+      "anti_waiver": {
+        "rule": "No waiver of \u00a7\u00a780C.01\u201380C.22 liability; no acknowledgment can waive claims or disclaim reliance",
+        "source_pages": [
+          135
+        ]
+      },
+      "trademark_protection": {
+        "rule": "Franchisor will protect franchisee mark usage and indemnify infringement claims while franchisee in compliance",
+        "source_pages": [
+          135
+        ]
+      }
+    },
+    "virginia": {
+      "termination_standard": {
+        "rule": "VA \u00a713.1-564 \u2014 cancellation only for reasonable cause; defaults not constituting reasonable cause may be unenforceable",
+        "source_pages": [
+          137
+        ]
+      },
+      "undue_influence": {
+        "rule": "VA \u00a713.1-564 \u2014 undue influence inducing rights surrender is unenforceable",
+        "source_pages": [
+          137
+        ]
+      },
+      "integration_merger": {
+        "rule": "Item 17(t) amended under VA law; outside representations may not be enforceable",
+        "source_pages": [
+          137
+        ]
+      },
+      "anti_waiver": {
+        "rule": "No acknowledgment can waive state franchise law claims or disclaim reliance",
+        "source_pages": [
+          137
+        ]
+      },
+      "financial_condition_risk_factor": {
+        "rule": "Estimated initial investment exceeds franchisor stockholder's equity as of 12/31/2024 ($345,862)",
+        "source_pages": [
+          137
+        ]
+      }
+    }
+  },
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": "Unmodified (clean). Going concern explicitly evaluated; no modification issued.",
+    "audit_opinion_date": null,
+    "fiscal_year_end": "December 31",
+    "total_revenue": null,
+    "net_income": null,
+    "total_assets": null,
+    "total_equity": null,
+    "depth_v2": {
+      "statement_scope": "Exhibit J audited statements for FYE 2022, 2023, 2024",
+      "fiscal_year_end": "December 31",
+      "auditor_name": {
+        "value": null,
+        "source": "Exhibit J image-only in v2 run",
+        "benchmark_prior_run": "Reese CPA (from runs/ivybrook-academy-2025)"
+      },
+      "opinion_type": {
+        "value": null,
+        "benchmark_prior_run": "unqualified/clean (from prior run)"
+      },
+      "balance_sheet_lines": {
+        "total_assets": null,
+        "total_liabilities": null,
+        "members_equity": null
+      },
+      "income_statement_lines": {
+        "total_revenue_2024": 2171363,
+        "total_revenue_source": "Item 8 narrative p 22",
+        "net_income_2024": null
+      },
+      "cash_flow_lines": {
+        "operating": null,
+        "investing": null,
+        "financing": null
+      },
+      "stockholders_equity_2024_usd": 345862,
+      "stockholders_equity_source": "Exhibit B Virginia addendum risk factor (p 137)",
+      "investment_vs_equity_ratio_low": 1.56,
+      "investment_vs_equity_ratio_high": 2.52,
+      "going_concern_language_present": {
+        "value": null,
+        "inferred_from_illinois_deferral_and_va_equity_gap": true
+      },
+      "related_party_activity": {
+        "catapult_affiliate_revenue_from_franchisees_2024": 36000,
+        "classroom_and_branded_supplier_rebates_2024": 33821
+      },
+      "distributions_to_owners": {
+        "value": null
+      },
+      "leverage_indicators": {
+        "value": null
+      }
+    },
+    "statement_detail": {
+      "extractable_from_text_layer": false,
+      "pages": [
+        168,
+        197
+      ],
+      "num_pages": 30,
+      "retry_recommended": "vision OCR on pp 168-197; cross-check against benchmark run"
+    },
+    "bankruptcy_flag": null,
+    "litigation_summary": null
+  },
+  "red_flags": [
+    {
+      "severity": "warning",
+      "kind": "contradiction",
+      "summary": "Table 3 n=19 vs Table 2C n=18"
+    },
+    {
+      "severity": "warning",
+      "kind": "contradiction",
+      "summary": "40 vs 41 outlets at 2024 year-end"
+    },
+    {
+      "severity": "warning",
+      "kind": "contradiction",
+      "summary": "Exhibit K label vs body label L"
+    },
+    {
+      "severity": "warning",
+      "kind": "contradiction",
+      "summary": "Cover Special Risk #2 financial condition vs unreadable Exhibit J"
+    }
+  ],
+  "validation_questions": [
+    "Reconcile: Table 3 n=19 vs Table 2C n=18",
+    "Reconcile: 40 vs 41 outlets at 2024 year-end",
+    "Reconcile: Exhibit K label vs body label L",
+    "Reconcile: Cover Special Risk #2 financial condition vs unreadable Exhibit J",
+    "Confirm Item 19 cohort definition with franchisor.",
+    "Confirm current auditor and most recent opinion date."
+  ],
+  "filing_changes": [
+    {
+      "field": "franchise_fee",
+      "from_run": "ivybrook-academy-2025",
+      "old_value": "$50,000 (non-refundable)",
+      "current_value": "$50,000"
+    },
+    {
+      "field": "royalty",
+      "from_run": "ivybrook-academy-2025",
+      "old_value": "7% of Gross Revenue, paid monthly by the 6th of the month",
+      "current_value": "7.0"
+    }
+  ],
+  "source_evidence": {
+    "primary_run": "ivybrook-academy-2025-v2",
+    "harvest_runs": [
+      "ivybrook-academy-2025"
+    ],
+    "filing_year": 2025,
+    "key_exhibits": [],
+    "issuance_date_pages": null,
+    "primary_layers_present": {
+      "v2": true,
+      "v1": true,
+      "final": true,
+      "raw": true
+    },
+    "rt_depth_files": [
+      "RT_depth_contract_burdens",
+      "RT_depth_financial_notes",
+      "RT_depth_promotion_audit",
+      "RT_depth_state_addenda_promotion"
+    ]
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit J (audited financial statements, pp 168\u2013197) is image-only; auditor name, opinion type, balance sheet, income statement, cash flow, and any going-concern language are not directly readable wit"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit K label missing. TOC labels K=Current Franchisees, L=Franchisee Disclosure Questionnaire; body labels the franchisee list as Exhibit L and includes no Exhibit K. Questionnaire may be absent or"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Table 3 (19 franchisees by classroom count) vs Table 2C (18 franchisees open 3+ years) 1-unit population mismatch."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 19 states '40 total schools were in operation as of December 31, 2024.' Item 20 reports 41 total outlets end 2024 (40 franchised + 1 company). 1-unit mismatch likely from inclusion/exclusion of t"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Customer-evaluation minimum score threshold is listed as a non-curable termination trigger (Item 17) but the threshold itself is not disclosed in Item 11 or Item 17 narrative."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Unilateral technology data-access right in FA 12.6/12.7 allows franchisor to access any franchisee technology at any time without notice."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Brand Fund planned to rise from 1% to 2% of Gross Revenues in 2026 per Item 6; timing and mechanism of the change not specified."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Table 3 n=19 vs Table 2C n=18"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "40 vs 41 outlets at 2024 year-end"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Exhibit K label vs body label L"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Cover Special Risk #2 financial condition vs unreadable Exhibit J"
+    }
+  ]
+}

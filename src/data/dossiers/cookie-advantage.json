@@ -1,0 +1,110 @@
+{
+  "slug": "cookie-advantage",
+  "name": "Cookie Advantage",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Cookie Advantage, Inc.",
+    "parent": null,
+    "headquarters": "7 North Armstrong, Bixby, Oklahoma 74008",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-24",
+    "franchise_fee_headline": "$34,900",
+    "investment_range_headline": "$92,550 to $171,250",
+    "royalty_headline": "6% of Gross Revenue",
+    "ad_fund_headline": null,
+    "term_headline": 5,
+    "renewal_headline": 1,
+    "territory_headline": "protected_not_exclusive",
+    "item_19_present": true,
+    "system_total_units": 23,
+    "franchised_units": 17,
+    "company_owned_units": 6
+  },
+  "economics": {
+    "franchise_fee_raw": 34900,
+    "royalty_raw": "6% of Gross Revenue",
+    "ad_fund_raw": null,
+    "investment_low_raw": 92550,
+    "investment_high_raw": 171250
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": 23,
+    "franchised": 17,
+    "company_owned": 6,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 5,
+    "renewal": 1
+  },
+  "territory_reality": {
+    "headline": "protected_not_exclusive"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Morse & Co.",
+    "audit_opinion": "unqualified",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-01-637906-2025-cookie-advantage-20260414-215751",
+    "primary_run_folder": "fresh-01-637906-2025-cookie-advantage-20260414-215751",
+    "primary_fdd_id": "637906",
+    "harvest_paths": [
+      "fresh-01-637906-2025-cookie-advantage-20260413-182007",
+      "fresh-01-637906-2025-cookie-advantage-20260414-213604",
+      "fresh-01-637906-2025-cookie-advantage-20260414-214449"
+    ],
+    "filing_year": 2025,
+    "canonical_schema": "?",
+    "phase": "first200",
+    "slot": 1
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Missouri Table 3 year label shows '2021' instead of '2023' \u2014 likely typographic error in FDD"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Administrative fee to KDKC ($488,555 in 2024, 89% of revenue) \u2014 exact formula/basis not disclosed; only described as management fee"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Virginia addendum notes investment range ($92,550-$171,250) exceeds franchisor's stockholders' equity ($78,724) \u2014 signals thin capitalization"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Minimum royalty impact on bottom-quartile performers \u2014 $800/month minimum creates 19.1% effective rate at lowest revenue level ($50,198)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Zero new franchise openings in 3 years (2022-2024) while projecting 5 for 2025 \u2014 credibility of projection unclear"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Missouri Table 3 year label '2021' vs expected '2023' \u2014 cosmetic/typographic error only; data consistent with stable single outlet"
+    },
+    {
+      "topic": "schema_unrecognized",
+      "reason": "canonical schema not parsed by first-200 extractor"
+    }
+  ],
+  "_status": "PARTIAL"
+}

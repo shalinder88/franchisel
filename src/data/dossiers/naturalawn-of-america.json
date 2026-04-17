@@ -1,0 +1,120 @@
+{
+  "slug": "naturalawn-of-america",
+  "name": "NaturaLawn of America, Inc.",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "NaturaLawn of America, Inc.",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-28",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$77,500 to $152,650",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": 88,
+    "company_owned_units": 10
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 77500,
+    "investment_high_raw": 152650
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": 88,
+    "company_owned": 10,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": [
+      {
+        "case": "Venisha Ford v. NaturaLawn of America, Inc.",
+        "case_number": "8:24-cv-00354-PJM",
+        "court": "USDC Maryland",
+        "allegation": "Violation of Telephone Consumer Protection Act",
+        "status": "Answer filed, denying liability with affirmative defenses; no class certified",
+        "management_assessment": "Potential material liability possible but not probable"
+      }
+    ]
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-40-637946-2025-naturalawn-of-america-20260415-104343",
+    "primary_run_folder": "fresh-40-637946-2025-naturalawn-of-america-20260415-104343",
+    "primary_fdd_id": "637946",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 40
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "TCPA litigation outcome unknown \u2014 class action potential could create material exposure"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Enforcement of $500K minimum Gross Sales \u2014 some franchisees appear to operate well below threshold ($252K low)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Confidentiality clause scope and enforceability \u2014 may impede prospective franchisee due diligence"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Advertising fee (1%) spending accountability \u2014 no fund audit or reporting disclosed; appears franchisor-retained"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Due from related entities ($882K) \u2014 no formal repayment terms; 1% interest rate below market"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Territory is 'exclusive' but franchisor may solicit/accept orders in territory without compensation"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 7 notes required credit line of $150K-$250K; Item 9 references $75K-$125K credit line per FA \u00a712L"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Note 6 states 'no franchisor-owned outlets' but Table 4 shows 10 company-owned outlets operated by affiliated entities"
+    }
+  ],
+  "_status": "PARTIAL"
+}

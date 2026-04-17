@@ -1,0 +1,113 @@
+{
+  "slug": "extended-stay-america-suites",
+  "name": "Extended Stay America Suites",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "ESH Strategies Franchise LLC",
+    "parent": null,
+    "headquarters": "13024 Ballantyne Corporate Place, Suite 1000, Charlotte, NC 28277",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-27",
+    "franchise_fee_headline": "$50,000",
+    "investment_range_headline": null,
+    "royalty_headline": 0.055,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 50000,
+    "royalty_raw": 0.055,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": 1
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "litigation",
+      "summary": "1 pending lawsuit(s)"
+    }
+  ],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-25-637931-2025-extended-stay-america-suites-20260415-082520",
+    "primary_run_folder": "fresh-25-637931-2025-extended-stay-america-suites-20260415-082520",
+    "primary_fdd_id": "637931",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "F",
+    "phase": "first200",
+    "slot": 25
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Auditor identity not captured from text layer"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "ADR gap between owned ($80.87) and franchised ($59.89) hotels is ~$21/night \u2014 unexplained"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "System Services Fee: no periodic accounting, pools across all ESA brands, franchisor hotels exempt"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No renewal right on 20-year franchise term"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Trademark license expires 12/31/2030 \u2014 within term of new franchise agreements"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Liquidated damages use full royalty rate even with temporary reductions"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 21 shows 129 franchised hotels (all ESA brands) vs Item 20 showing 107 ESA Suites \u2014 resolved: difference is 5 Select + 17 Premier hotels"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

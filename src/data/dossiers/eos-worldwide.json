@@ -1,0 +1,111 @@
+{
+  "slug": "eos-worldwide",
+  "name": "EOS Worldwide",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "EOS Worldwide Franchising, LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-25",
+    "franchise_fee_headline": "$5,000",
+    "investment_range_headline": "$61,045 to $150,660",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": 5,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": 0
+  },
+  "economics": {
+    "franchise_fee_raw": 5000,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 61045,
+    "investment_high_raw": 150660
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": 0,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 5,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-02-637907-2025-eos-worldwide-20260414-222422",
+    "primary_run_folder": "fresh-02-637907-2025-eos-worldwide-20260414-222422",
+    "primary_fdd_id": "637907",
+    "harvest_paths": [
+      "fresh-02-637907-2025-eos-worldwide-20260413-185947",
+      "fresh-02-637907-2025-eos-worldwide-20260414-214109",
+      "fresh-02-637907-2025-eos-worldwide-20260414-215318"
+    ],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 2
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Rising attrition cause unknown \u2014 49 voluntary departures in 2024 (up from 13 in 2022). FDD does not explain trend."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Cash flowing to affiliates despite declining cash balance ($233K). Collectability of $5.7M intercompany receivable uncertain."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Note purchase agreement terms (interest rate, maturity, covenants) not disclosed beyond balance and interest paid. Balance grew from ~$2.4M to ~$17.9M in 2 years."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Materially different terms on renewal \u2014 no specificity on potential changes."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Warm leads fee language ambiguous \u2014 'initial (or any one-time) session' could be read narrowly or broadly."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 20 shows 3 terminations + 49 ceased ops in calendar year 2024. Item 19 notes 47 operational franchisees terminated during Feb 2024-Jan 2025. Different time periods/definitions create confusion ab"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Member's deficit increases by $1 ($3,715,000\u2192$3,716,000) between 2023 and 2024 with no apparent distribution."
+    }
+  ],
+  "_status": "PUBLISHED"
+}

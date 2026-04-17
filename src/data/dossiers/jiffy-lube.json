@@ -1,0 +1,560 @@
+{
+  "slug": "jiffy-lube",
+  "name": "Jiffy Lube",
+  "schema_version": 1,
+  "current_snapshot": {
+    "legal_name": "Jiffy Lube International, Inc.",
+    "parent": "Pennzoil-Quaker State Company dba SOPUS Products",
+    "headquarters": "150 N. Dairy Ashford, Houston, TX 77079",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-27",
+    "franchise_fee_headline": "$35,000",
+    "investment_range_headline": "$211,000 to $510,000",
+    "royalty_headline": 0.04,
+    "ad_fund_headline": "",
+    "term_headline": 20,
+    "renewal_headline": "One 10-year renewal",
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": 2075,
+    "franchised_units": 1721,
+    "company_owned_units": 354
+  },
+  "economics": {
+    "initial_fees_by_format": {
+      "new_center_fee": 35000,
+      "conversion_fee": 17500,
+      "fee_payment_structure": "$10,000 at signing + $25,000 on 15th of month after opening",
+      "refundable": false,
+      "veteran_waiver": true,
+      "growth_program_waiver": true,
+      "actual_range_2024": {
+        "low": 0,
+        "high": 35000
+      },
+      "initial_product_inventory": {
+        "low": 20000,
+        "high": 30000
+      },
+      "source_pages": [
+        27,
+        28
+      ],
+      "confidence": "high"
+    },
+    "investment_by_format": {
+      "total_low": 211000,
+      "total_high": 510000,
+      "net_total_low": 236000,
+      "net_total_high": 452650,
+      "growth_funding_offset_max": 77350,
+      "site_purchase_land": {
+        "low": 300000,
+        "high": 800000
+      },
+      "site_purchase_building": {
+        "low": 700000,
+        "high": 1200000
+      },
+      "source_pages": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "confidence": "high"
+    },
+    "recurring_fees_raw": {
+      "royalty_rate": 0.04,
+      "royalty_prompt_pay_rate": 0.03,
+      "royalty_without_psa_rate": 0.05,
+      "royalty_without_psa_prompt_rate": 0.04,
+      "royalty_holiday_months": 6,
+      "royalty_multicare_tire_reduction": 0.01,
+      "national_ad_fund_rate": 0.015,
+      "local_coop_rate": 0.025,
+      "minimum_ad_rate": 0.04,
+      "pos_support_max": 192,
+      "hardware_support": 73,
+      "transfer_fee": 3500,
+      "renewal_fee": 10000,
+      "relocation_fee": 7500,
+      "replacement_fee": 12500,
+      "training_per_person": 75,
+      "fleet_processing": 1.25,
+      "auto_integrate": 0.95,
+      "cisco_meraki": 18,
+      "bts_reimbursement": 25000,
+      "source_pages": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "confidence": "high"
+    },
+    "tech_fee_detail": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null,
+    "high_low": null,
+    "presentation_basis": "Net Adjusted Sales (Gross Sales minus promotions, warranty, non-royalty income, national fleet discounts)",
+    "raw_keys": [
+      "fpr_provided",
+      "type",
+      "basis",
+      "population",
+      "audited",
+      "system_2024",
+      "system_2023",
+      "system_2022",
+      "vehicle_count_2024",
+      "vehicle_count_trend",
+      "new_store_2024_cohort",
+      "multicare_maturation",
+      "source_pages",
+      "confidence"
+    ]
+  },
+  "item20_system_movement": {
+    "system_total": 2075,
+    "franchised": 1721,
+    "company_owned": 354,
+    "openings": 26,
+    "terminations": 14,
+    "non_renewals": 1,
+    "transfers": 63,
+    "net_change": null,
+    "raw": {
+      "franchised_2024_end": 1721,
+      "company_owned_2024_end": 354,
+      "total_2024_end": 2075,
+      "franchised_opened_2024": 26,
+      "franchised_terminations_2024": 14,
+      "franchised_non_renewals_2024": 1,
+      "franchised_reacquired_2024": 0,
+      "transfers_2024": 63,
+      "projected_new_franchised": 8,
+      "projected_new_company": 1,
+      "signed_not_opened": 16,
+      "gag_clause_flag": true,
+      "gag_clause_evidence": {
+        "source_pages": [
+          96
+        ],
+        "quote_fragment": "Franchisees may be parties to confidentiality agreements which may restrict their ability to speak freely about their experience"
+      },
+      "franchisee_organizations": [
+        {
+          "name": "JLAF (Jiffy Lube Association of Franchisees)",
+          "president": "D.J. Griffin",
+          "location": "Owings Mills, MD"
+        },
+        {
+          "name": "TSAB (Technology Services Advisory Board)",
+          "type": "JLI/JLAF joint"
+        },
+        {
+          "name": "National Advertising Board",
+          "type": "JLI/SOPUS/franchisee reps"
+        }
+      ],
+      "source_pages": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "confidence": "high"
+    }
+  },
+  "contract_burden": {
+    "from_canonical": null,
+    "from_depth_pass_v2": null,
+    "from_rt_depth": {
+      "depth_pass": "contract_burdens",
+      "extraction_date": "2026-04-09",
+      "exhibit": "B \u2014 Pacesetter Franchise Agreement",
+      "page_range": [
+        158,
+        371
+      ],
+      "clauses": [
+        {
+          "clause_family": "grant_and_term",
+          "section": "1.1-1.5, 2.1",
+          "obligation": "Non-exclusive license to operate one Service Center at specified location using System",
+          "restriction": "Cannot operate System at any other location. No rights outside Three Mile Area. Franchisor reserves all rights not expressly granted.",
+          "right": "3-mile exclusive radius around Franchised Center",
+          "trigger": "Execution of Agreement",
+          "duration": "20-year initial term",
+          "source_pages": [
+            164,
+            165
+          ]
+        },
+        {
+          "clause_family": "renewal",
+          "section": "2.2",
+          "obligation": "Must sign then-current form of franchise agreement (may have materially different terms); complete renovation requirements; satisfy new franchisee qualifications; complete training; pay renewal fee ($10,000 CPI adjusted); release claims",
+          "restriction": "No current defaults; no more than 2 cured defaults in previous 5 years; all monetary obligations current",
+          "right": "One 10-year renewal term",
+          "trigger": "Written notice no earlier than 18 months and no later than 12 months before expiration",
+          "duration": "10 years",
+          "money": "$10,000 renewal fee (CPI adjusted, 1982-84 base)",
+          "exceptions": "Renewal term may be modified to coincide with sublease expiration for BTS tenants",
+          "source_pages": [
+            165,
+            166,
+            167,
+            168
+          ]
+        },
+        {
+          "clause_family": "royalty_and_fees",
+          "section": "4.1-4.2",
+          "obligation": "Pay 4% royalty on Gross Sales monthly (3% if paid on time). 5%/4% if PSA terminates. 0% first 6 months new-to-system. 1% reduction on Multicare tire rubber revenue.",
+          "trigger": "Monthly on 15th; first payment 7th month after opening",
+          "money": "4% (3% prompt) of Gross Sales",
+          "source_pages": [
+            175,
+            176,
+            177
+          ]
+        },
+        {
+          "clause_family": "transfer",
+          "section": "10.2-10.8",
+          "obligation": "Must obtain JLI approval for any transfer of controlling interest, pledge of FA, equity sale, family transfers. Transferee must sign then-current FA, meet qualifications, complete training.",
+          "restriction": "Approval required (may not be unreasonably withheld). Must pay transfer fee. Must pay all outstanding debts. Must release claims.",
+          "right": "JLI right of first refusal: 20 days to exercise, 60 days to close, subject to environmental review",
+          "trigger": "Intent to accept offer to buy FA or interest",
+          "money": "$3,500 transfer fee + actual expenses. Waived for family of deceased/incapacitated.",
+          "exceptions": "No transfer fee for non-controlling interest changes; no fee for death/disability family transfers",
+          "source_pages": [
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199
+          ]
+        },
+        {
+          "clause_family": "termination_noncurable",
+          "section": "13.1-13.2",
+          "obligation": "Immediate termination without cure opportunity",
+          "trigger": "Bankruptcy; failure to locate site/open in time; failure to repair material damage; discontinuation of operations; loss of possession; felony conviction; threat to public safety; unauthorized transfer (by franchisee or equity holder); breach of in-term noncompete; unauthorized disclosure of confidential info; repeated late payments; false reports; repeated unauthorized services",
+          "source_pages": [
+            200,
+            201,
+            202
+          ]
+        },
+        {
+          "clause_family": "termination_curable",
+          "section": "13.3-13.4",
+          "obligation": "Cure default within specified period after written notice",
+          "trigger": "Any FA breach not listed in 13.1-13.2; non-payment of debts to JLI/subsidiaries; non-payment of affiliate debts; default under guaranteed loans; breaking/failing to maintain Product Supply Agreement",
+          "duration": "Cure period as specified in notice",
+          "source_pages": [
+            202,
+            203,
+            204
+          ]
+        },
+        {
+          "clause_family": "post_termination",
+          "section": "14",
+          "obligation": "Surrender premises (may be required); surrender trademarked materials; change appearance; discontinue Jiffy Lube name; return all manuals; discontinue confidential info use; discontinue POS software; pay all debts. Return CPUs, VPN routers, credit card machines within 30 days.",
+          "trigger": "Termination or expiration of FA",
+          "source_pages": [
+            205,
+            206
+          ]
+        },
+        {
+          "clause_family": "noncompete_during_term",
+          "section": "15.1",
+          "obligation": "Cannot divert business to competitor, engage in substantially similar business in state of service center or within 10 miles of any Jiffy Lube service center in US",
+          "duration": "During term of FA",
+          "source_pages": [
+            208,
+            209
+          ]
+        },
+        {
+          "clause_family": "noncompete_post_term",
+          "section": "15.2",
+          "obligation": "Cannot engage in substantially similar business within 10 miles of any Jiffy Lube service center in US",
+          "duration": "3 years after termination/expiration",
+          "exceptions": "May be limited by state law (CA, ND, MN, WA)",
+          "source_pages": [
+            209
+          ]
+        },
+        {
+          "clause_family": "dispute_resolution",
+          "section": "16.11",
+          "obligation": "Mediation first (CPR Franchise Mediation Program), then arbitration (CPR Fast Track for <$5M, Non-Administered for \u2265$5M or injunctive). Venue: Houston, TX.",
+          "restriction": "Waiver of jury trial (16.11.7); waiver of punitive damages (16.11.8); disclaimer of consequential damages (16.11.8); 2-year limitation of actions (16.11.6)",
+          "trigger": "Any dispute between parties",
+          "exceptions": "Trademark/IP/monies disputes may go to federal court in Houston. State overrides: MN (litigation in MN), ND (ND forum), WA (arbitration in WA), IL (forum outside IL void), MI (arbitration outside MI void)",
+          "source_pages": [
+            210,
+            211,
+            212
+          ]
+        },
+        {
+          "clause_family": "insurance",
+          "section": "11",
+          "obligation": "Must maintain insurance coverage as specified by JLI. Estimated annual premium: $10,000-$20,000.",
+          "source_pages": [
+            200
+          ]
+        },
+        {
+          "clause_family": "indemnification",
+          "section": "12 (POS Software License), 8.2 (FA)",
+          "obligation": "Franchisee indemnifies JLI. JLI indemnifies franchisee for trademark infringement claims (with conditions: 30-day notice, JLI controls litigation).",
+          "source_pages": [
+            200
+          ]
+        },
+        {
+          "clause_family": "guaranty",
+          "section": "10.3.2, 16.14",
+          "obligation": "Corporate franchisee's obligations may be guaranteed by any or all direct and indirect owners. Forms: Individual (Exhibit G), Joint (Exhibit H), Corporate (Exhibit I).",
+          "restriction": "Guarantors must also agree to noncompete covenants.",
+          "source_pages": [
+            72,
+            390,
+            396,
+            402
+          ]
+        }
+      ]
+    },
+    "termination_with_cause": null,
+    "termination_by_franchisee": null,
+    "transfer": null,
+    "noncompete_in_term": null,
+    "noncompete_post_term": null
+  },
+  "territory_reality": {
+    "headline": null,
+    "raw": {
+      "exclusive_radius_miles": 3,
+      "performance_contingency": false,
+      "franchisor_competition_rights": "May develop other businesses under Marks within/outside ring; no obligation to offer additional franchises",
+      "sopus_pennzoil_sign_exclusion_miles": 2,
+      "sopus_major_financing_exclusion_miles": 1,
+      "right_of_first_refusal_outside_ring": false,
+      "source_pages": [
+        62,
+        63,
+        64
+      ],
+      "confidence": "high"
+    }
+  },
+  "state_overrides": {
+    "states_with_addenda": [
+      "Michigan",
+      "California",
+      "Hawaii",
+      "Illinois",
+      "Maryland",
+      "Minnesota",
+      "New York",
+      "North Dakota",
+      "Virginia",
+      "Washington"
+    ],
+    "override_count": 31,
+    "source_pages": [
+      5,
+      6,
+      7,
+      640,
+      641,
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649,
+      650,
+      651
+    ],
+    "override_families_by_state": {
+      "forum_selection": [
+        "Michigan",
+        "Illinois",
+        "Minnesota",
+        "North Dakota",
+        "Washington"
+      ],
+      "governing_law": [
+        "California",
+        "North Dakota",
+        "Washington"
+      ],
+      "noncompete": [
+        "California",
+        "North Dakota"
+      ],
+      "general_release": [
+        "Michigan",
+        "California",
+        "Hawaii",
+        "Maryland",
+        "Minnesota",
+        "New York",
+        "North Dakota",
+        "Washington"
+      ],
+      "termination": [
+        "Michigan",
+        "Hawaii",
+        "Illinois",
+        "Minnesota",
+        "Virginia",
+        "Washington"
+      ],
+      "non_renewal": [
+        "Michigan",
+        "Minnesota"
+      ],
+      "transfer": [
+        "Michigan"
+      ],
+      "damages": [
+        "North Dakota"
+      ],
+      "jury_trial_waiver": [
+        "Minnesota",
+        "North Dakota"
+      ],
+      "price_fixing": [
+        "California"
+      ]
+    },
+    "confidence": "high"
+  },
+  "financial_strength": {
+    "auditor": "Ernst & Young LLP",
+    "audit_opinion": "unqualified",
+    "audit_opinion_date": null,
+    "fiscal_year_end": "December 31",
+    "total_revenue": null,
+    "net_income": null,
+    "total_assets": null,
+    "total_equity": null,
+    "bankruptcy_flag": {
+      "disclosure": "None required",
+      "source_pages": [
+        26
+      ],
+      "confidence": "high"
+    },
+    "litigation_summary": {
+      "pending": 6,
+      "raw": {
+        "pending_count": 6,
+        "closed_count": 11,
+        "notable_matters": [
+          "TCC vs JLI/SOPUS LPOH metric arbitration \u2014 settled Mar 2025, consent judgment Aug 2025",
+          "Najjar arbitration \u2014 franchisee contested Pacesetter renewal requirement, hearing Dec 2025",
+          "Fuentes no-poach class action \u2014 $2M Philadelphia-area class settlement, dismissed May 2024",
+          "Enitor arbitration \u2014 arbitrator ruled Enitor entitled to renew under non-product form, $521,978 damages"
+        ],
+        "source_pages": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "confidence": "high"
+      }
+    }
+  },
+  "red_flags": [
+    {
+      "severity": "warning",
+      "kind": "bankruptcy",
+      "summary": "{'disclosure': 'None required', 'source_pages': [26], 'confidence': 'high'}"
+    }
+  ],
+  "validation_questions": [
+    "Confirm Item 19 cohort definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run": "jiffy-lube-2025",
+    "harvest_runs": [],
+    "filing_year": 2025,
+    "key_exhibits": [],
+    "issuance_date_pages": null,
+    "primary_layers_present": {
+      "v2": true,
+      "v1": true,
+      "final": true,
+      "raw": true
+    },
+    "rt_depth_files": [
+      "RT_depth_key_exhibits",
+      "RT_depth_contract_burdens",
+      "RT_depth_financial_notes",
+      "RT_depth_item20_tables",
+      "RT_depth_promotion_audit",
+      "RT_depth_state_addenda_promotion",
+      "RT_depth_thin_items",
+      "RT_depth_item21_notes"
+    ]
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Item 21 financial statements are image-only \u2014 balance sheet, income statement, cash flow, and notes not extracted from text layer"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit B (Franchise Agreement, 213 pages) not directly clause-walked \u2014 key operative burdens only via Item 17 summary"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Guaranty exhibits (G/H/I) not clause-walked \u2014 personal guaranty scope, spousal liability, corporate guaranty scope not directly extracted"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Sublease (Exhibit J-1, 40 pages) not clause-walked \u2014 lease terms, rent structure, default provisions not directly extracted"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Najjar arbitration pending as of FDD date \u2014 outcome (Dec 2025 hearing) affects whether JLI can require Pacesetter FA on renewal"
+    }
+  ]
+}

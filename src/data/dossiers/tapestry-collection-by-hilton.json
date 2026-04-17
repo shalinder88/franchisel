@@ -1,0 +1,96 @@
+{
+  "slug": "tapestry-collection-by-hilton",
+  "name": "Hilton Franchise Holding LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-142-638066-2025-tapestry-collection-by-hilton-20260415-205417",
+    "primary_run_folder": "fresh-142-638066-2025-tapestry-collection-by-hilton-20260415-205417",
+    "primary_fdd_id": "638066",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 142
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Item 20, Table 3: 'Ceased Operations \u2013 Other Reasons' shows positive numbers (+1 in 2022, +3 in 2024) \u2014 anomalous for a cessation column"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Note 9 in financial statements references 'March 18, 2024' as subsequent events evaluation date but audit report is dated March 18, 2025 \u2014 apparent typo"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "All franchisor assets and franchise contracts pledged as collateral for Hilton parent debt (maturing 2025-2033). Implications for franchisees in distress scenario not discussed"
+    }
+  ],
+  "_status": "PARTIAL"
+}
