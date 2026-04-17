@@ -1,0 +1,120 @@
+{
+  "slug": "trend-hotels",
+  "name": "Trend Hotels and Suites by My Place",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "My Place Hotels of America, LLC",
+    "parent": null,
+    "headquarters": "1910 8th Avenue Northeast, Aberdeen, South Dakota 57401",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-28",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$272,500 to $2,947,000",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": "Protected Area",
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 272500,
+    "investment_high_raw": 2947000
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": "Protected Area"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-122-638045-2025-trend-hotels-20260415-121720",
+    "primary_run_folder": "fresh-122-638045-2025-trend-hotels-20260415-121720",
+    "primary_fdd_id": "638045",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "F",
+    "phase": "first200",
+    "slot": 122
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Zero operating Trend hotels \u2014 all cost and operational estimates are theoretical"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Brand viability unknown \u2014 franchise offered since June 2020, zero outlets opened in nearly 5 years, zero projected openings"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Marketing fund shared with My Place Hotels, not audited, cumulative shortfall of $430,306 loaned by MPHOA"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "My Place Hotels may be franchised within Trend's Protected Area with no conflict resolution mechanism"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Related party concentration: ~26% of revenue and substantial expenses from related entities; all leases are short-term cancelable with related parties"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "NY addendum investment figure ($5.68M-$6.95M) inconsistent with Item 7 ($272.5K-$2.95M) \u2014 likely My Place new-build numbers in Trend FDD"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 3 references state addenda without body text \u2014 scope of litigation history unclear from FDD body alone"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "NY addendum states initial investment of $5,677,950-$6,951,450 vs Item 7 stating $272,500-$2,947,000. NY figures appear to be My Place new-build numbers erroneously included in Trend FDD."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "FA Section 3(A) states agreement is 'non-renewable' with 'no rights of license renewal,' but Item 17(c) describes an 'option to renew for 5 years.' The FA provides an 'option to extend' (Section 3(C))"
+    }
+  ],
+  "_status": "PARTIAL"
+}

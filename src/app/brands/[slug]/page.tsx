@@ -35,6 +35,8 @@ import {
   type DeteriorationSignal,
 } from "@/lib/diligence";
 import { BrandDataDisclaimer, DataSourceBadge } from "@/components/DataDisclaimer";
+import DossierPanel from "@/components/brand-page/DossierPanel";
+import { getDossier } from "@/data/dossiers";
 import WatchButton from "@/components/WatchButton";
 import UnitGrowthChart from "@/components/UnitGrowthChart";
 import DataCoverageWidget from "@/components/DataCoverageWidget";
@@ -142,6 +144,9 @@ export default async function BrandPage({
   const { slug } = await params;
   const brand = getBrandBySlug(slug);
   if (!brand) notFound();
+
+  /* ── Merged dossier (best-supported output across runs) ── */
+  const dossier = getDossier(brand.slug);
 
   const isGovVerified = brand.dataSource === "fdd_verified" || brand.dataSource === "state_filing";
 
@@ -258,6 +263,9 @@ export default async function BrandPage({
           coreStatsComplete={brand.totalInvestmentLow > 0 || brand.totalInvestmentHigh > 0 || brand.totalUnits > 0}
         />
       </div>
+
+      {/* ── Merged FDD dossier (best-supported output) ── */}
+      {dossier && <DossierPanel dossier={dossier} />}
 
       {/* ── Breadcrumb ── */}
       <nav className="max-w-6xl mx-auto px-6 pt-4 pb-2">

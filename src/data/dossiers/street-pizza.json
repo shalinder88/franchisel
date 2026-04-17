@@ -1,0 +1,120 @@
+{
+  "slug": "street-pizza",
+  "name": "Street Pizza",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "GRNA Street Pizza Group LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": null,
+    "franchise_fee_headline": "$50,000",
+    "investment_range_headline": "$1,803,500 to $3,303,333",
+    "royalty_headline": "5%",
+    "ad_fund_headline": "0.5%",
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": "Designated Area (FA) / Development Territory (ADA)",
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 50000,
+    "royalty_raw": "5%",
+    "ad_fund_raw": "0.5%",
+    "investment_low_raw": 1803500,
+    "investment_high_raw": 3303333
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": "Designated Area (FA) / Development Territory (ADA)"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": "Unqualified",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-38-637944-2025-street-pizza-20260415-104330",
+    "primary_run_folder": "fresh-38-637944-2025-street-pizza-20260415-104330",
+    "primary_fdd_id": "637944",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "E",
+    "phase": "first200",
+    "slot": 38
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Liquor license cost variance (7K-160K) with no guidance on typical costs"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Brand Fund not yet established - unclear when activated"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "POS System vendor not identified by name"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Music/TV/entertainment requirements reserved - unknown future cost"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No current or former franchisees to contact for validation"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Franchisor entity has not commenced operations"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Investment estimates based on limited comparable data"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Cover page aggregate fee vs Item 5 component breakdown"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 1 Cherokee NC station vs Item 20 exclusion"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

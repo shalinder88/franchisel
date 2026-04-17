@@ -1,0 +1,922 @@
+{
+  "slug": "cupbop",
+  "name": "Cupbop",
+  "schema_version": 1,
+  "current_snapshot": {
+    "legal_name": "Cupbop Franchise, LLC",
+    "parent": [
+      {
+        "name": "Cupbop Co.",
+        "type": "Utah corporation",
+        "relationship": "parent since 2021-01 (was affiliate prior); licensor of Cupbop trademark via 2020-12-15 License Agreement; supplier of required products"
+      },
+      {
+        "name": "Gold Light Holdings, LLC",
+        "type": "Utah LLC",
+        "relationship": "parent"
+      },
+      {
+        "name": "MAK Holdings LLC",
+        "type": "Nevada LLC",
+        "relationship": "parent"
+      }
+    ],
+    "headquarters": "12184 South Business Park Drive, Suite C, Draper, UT 84020",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": "$40,000",
+    "investment_range_headline": null,
+    "royalty_headline": "",
+    "ad_fund_headline": "",
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "initial_fees_by_format": {
+      "initial_franchise_fee": 40000,
+      "subsequent_franchise_fee": 30000,
+      "opening_inventory_from_affiliate": {
+        "low": 1250,
+        "high": 2000
+      },
+      "ada_development_fee_low": 160000,
+      "ada_development_fee_high": 610000,
+      "non_refundable": true,
+      "evidence_pages": [
+        11
+      ]
+    },
+    "investment_by_format": {
+      "single_unit_low": 296400,
+      "single_unit_high": 664400,
+      "to_franchisor_or_affiliate_low": 41250,
+      "to_franchisor_or_affiliate_high": 42000,
+      "ada_low": 160000,
+      "ada_high": 610000,
+      "footprint_sqft_low": 1200,
+      "footprint_sqft_high": 2000,
+      "additional_funds_months": 3,
+      "additional_funds_low": 27000,
+      "additional_funds_high": 63000,
+      "grand_opening_minimum": 10000,
+      "grand_opening_window_days": "90 to 120",
+      "evidence_pages": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "recurring_fees_raw": {
+      "royalty_pct": 6.0,
+      "royalty_basis": "monthly Gross Sales",
+      "ad_fund_current_pct": 2.0,
+      "ad_fund_max_pct": 4.5,
+      "local_advertising_min_pct": 0.5,
+      "local_advertising_max_pct": 1.0,
+      "cooperative_max_pct": 2.0,
+      "cooperative_currently_assessed": false,
+      "advertising_total_cap_pct": 6.5,
+      "successor_fee": 10000,
+      "transfer_fee": 10000,
+      "transfer_fee_waived_for_entity_control": true,
+      "relocation_fee": 10000,
+      "interest_rate_max_pct": 18.0,
+      "non_compliance_fee": 500,
+      "non_compliance_per_day": 500,
+      "unauthorized_advertising_fee": 1000,
+      "late_fee_pct": 10.0,
+      "management_fee_per_day": 500,
+      "additional_training_max_per_day": 800,
+      "annual_meeting_fee_max": 2500,
+      "audit_trigger_understatement_pct": 3.0,
+      "liquidated_damages_basis": "sum of accrued royalties for prior 24 months (or remaining term if shorter)",
+      "evidence_pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "tech_fee_detail": {
+      "ongoing_fee_categories": [
+        {
+          "name": "Royalty",
+          "type": "percent_of_gross_sales",
+          "current_pct": 6.0,
+          "max_pct": 6.0,
+          "billing": "monthly",
+          "due_day_of_month": 10
+        },
+        {
+          "name": "Ad Fund",
+          "type": "percent_of_gross_sales",
+          "current_pct": 2.0,
+          "max_pct": 4.5,
+          "billing": "monthly",
+          "due_day_of_month": 10
+        },
+        {
+          "name": "Local Advertising",
+          "type": "percent_of_gross_sales",
+          "current_pct": 0.5,
+          "max_pct": 1.0,
+          "billing": "ongoing"
+        },
+        {
+          "name": "Cooperative",
+          "type": "percent_of_gross_sales",
+          "current_pct": 0.0,
+          "max_pct": 2.0,
+          "billing": "as_required"
+        }
+      ],
+      "advertising_total_cap_basis": "cumulative cap on local + ad fund + coop = 6.5% of Gross Sales",
+      "event_driven_fees": [
+        {
+          "name": "Successor",
+          "amount": 10000,
+          "trigger": "FA renewal"
+        },
+        {
+          "name": "Transfer",
+          "amount": 10000,
+          "trigger": "transfer of ownership",
+          "waiver_condition": "entity-controlled transfer"
+        },
+        {
+          "name": "Relocation",
+          "amount": 10000,
+          "trigger": "site relocation"
+        },
+        {
+          "name": "Liquidated Damages",
+          "amount": "24 months royalty lookback",
+          "trigger": "termination with cause or franchisee termination without cause"
+        }
+      ],
+      "compliance_fees": [
+        {
+          "name": "Non-compliance",
+          "amount": 500,
+          "per": "occurrence",
+          "continuing_per_day": 500
+        },
+        {
+          "name": "Unauthorized advertising",
+          "amount": 1000,
+          "per": "occurrence"
+        },
+        {
+          "name": "Late fee",
+          "amount": "10% of past due"
+        },
+        {
+          "name": "Interest",
+          "amount": "min(18%/yr, max legal)"
+        },
+        {
+          "name": "Audit",
+          "amount": "actual cost",
+          "trigger": "if Gross Sales understatement >3% or reports missing"
+        }
+      ],
+      "training_fees": [
+        {
+          "name": "Additional initial trainee",
+          "amount_current": 1500,
+          "amount_max": 4000,
+          "per_person": true
+        },
+        {
+          "name": "Expelled re-attendee",
+          "amount_current": 2000,
+          "per_person": true
+        },
+        {
+          "name": "Training facility day rate",
+          "amount_current": 400,
+          "amount_max": 800,
+          "per_day": true,
+          "location": "training facility"
+        },
+        {
+          "name": "Restaurant training day rate",
+          "amount_current": 600,
+          "amount_max": 800,
+          "per_day": true,
+          "location": "franchisee restaurant"
+        }
+      ]
+    }
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null,
+    "high_low": null,
+    "presentation_basis": null,
+    "raw_keys": [
+      "presented",
+      "fy",
+      "metric_disclosed",
+      "audited",
+      "company_owned",
+      "franchised",
+      "all",
+      "company_franchise_avg_gap",
+      "evidence_pages"
+    ]
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "terminations": null,
+    "non_renewals": null,
+    "transfers": [
+      0,
+      0,
+      0
+    ],
+    "net_change": null,
+    "raw": {
+      "fy_end": 2024,
+      "system_wide": [
+        {
+          "year": 2022,
+          "franchised_start": 9,
+          "franchised_end": 19,
+          "company_start": 20,
+          "company_end": 26,
+          "total_start": 29,
+          "total_end": 45
+        },
+        {
+          "year": 2023,
+          "franchised_start": 19,
+          "franchised_end": 27,
+          "company_start": 26,
+          "company_end": 27,
+          "total_start": 44,
+          "total_end": 54
+        },
+        {
+          "year": 2024,
+          "franchised_start": 27,
+          "franchised_end": 30,
+          "company_start": 27,
+          "company_end": 29,
+          "total_start": 54,
+          "total_end": 59
+        }
+      ],
+      "transfers_2022_2024": [
+        0,
+        0,
+        0
+      ],
+      "franchised_ceased_2024": 3,
+      "franchised_ceased_state": "Nevada (Las Vegas, all Gold Bowl LLC)",
+      "franchised_terminations_3yr": 0,
+      "franchised_non_renewals_3yr": 0,
+      "projected_new_franchised_2025": 5,
+      "projected_new_company_2025": 9,
+      "signed_unopened": 0,
+      "confidentiality_clause_present": true,
+      "franchisee_associations": false,
+      "evidence_pages": [
+        45,
+        46,
+        47,
+        48
+      ]
+    }
+  },
+  "contract_burden": {
+    "from_canonical": null,
+    "from_depth_pass_v2": null,
+    "from_rt_depth": {
+      "depth_pass": "2_contract_burdens",
+      "scope_note": "FA body pp 80\u2013126 read at item-mapping depth only in this test run; all clause references below are anchored to Item 17 cross-walk evidence (pp 36\u201342) plus the Guaranty exhibit (pp 143\u2013144). Full clause-by-clause FA extraction deferred to a non-test run.",
+      "fa_grant_and_term": {
+        "term_years": 10,
+        "starts_from": "opening date",
+        "fa_section": "1D",
+        "renewal_term_years": 10,
+        "renewal_notice_window": "180\u2013220 days before expiration",
+        "renewal_conditions": [
+          "maintain possession of premises",
+          "remodel to current standards",
+          "pay successor fee $10,000",
+          "sign then-current FA which 'may be materially different'"
+        ],
+        "evidence_pages": [
+          36,
+          37
+        ]
+      },
+      "fee_obligations": {
+        "royalty": "6% monthly Gross Sales due 10th of next month, FA \u00a73",
+        "ad_fund": "currently 2%, up to 4.5% of Gross Sales, FA \u00a710",
+        "local_advertising": "0.5% min, up to 1%, FA \u00a710",
+        "successor_fee": 10000,
+        "transfer_fee": 10000,
+        "relocation_fee": 10000,
+        "non_compliance_fee": "$500/occurrence + $500/day continuing",
+        "auto_debit_authorization_required": true,
+        "evidence_pages": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "site_construction_obligations": {
+        "site_clock_days": 120,
+        "opening_clock_months": 16,
+        "lease_addendum_required": true,
+        "franchisor_lease_approval_required": true,
+        "ada_compliance_franchisee_responsibility": true,
+        "general_contractor_franchisor_approval_required": true,
+        "evidence_pages": [
+          22,
+          27
+        ]
+      },
+      "training_operational_obligations": {
+        "initial_training_days": 14,
+        "total_hours": 115.5,
+        "must_complete_before_opening": true,
+        "replacement_gm_window_days": 90,
+        "ongoing_training_at_franchisor_discretion": true,
+        "evidence_pages": [
+          30,
+          31
+        ]
+      },
+      "termination_triggers_and_cure": {
+        "curable_defaults": [
+          {
+            "category": "health/safety/sanitation",
+            "cure_days": 3
+          },
+          {
+            "category": "monetary / insurance lapse",
+            "cure_days": 10
+          },
+          {
+            "category": "third-party monetary",
+            "cure_days": 30
+          },
+          {
+            "category": "lost premises (relocation)",
+            "cure_days": 90
+          }
+        ],
+        "noncurable_defaults": [
+          "120-day site failure",
+          "16-month opening failure",
+          "opening without written approval",
+          "training failure",
+          "abandonment",
+          "unapproved transfer",
+          "material misrepresentation/omission",
+          "felony conviction",
+          "dishonest/unethical conduct",
+          "manual or Confidential Information disclosure",
+          "tax payment failure",
+          "Gross Sales understatement",
+          "recruiting/hiring restriction violation",
+          "repeated defaults",
+          "bankruptcy/insolvency/trustee/receiver appointment",
+          "anti-terrorism law violation",
+          "cross-default \u2014 any default under any other agreement with franchisor or affiliates"
+        ],
+        "fa_section": "15B",
+        "ada_noncurable": [
+          "insolvency / assignment for benefit of creditors",
+          "failure to comply with Development Schedule",
+          "misrepresentation",
+          "felony conviction",
+          "unauthorized transfer or termination of any agreement",
+          "unauthorized trademark use or IP disclosure",
+          "failure 3 times in a year to pay financial obligations",
+          "failure 3 times in a calendar year to comply with ADA even if cured",
+          "cross-default"
+        ],
+        "evidence_pages": [
+          37,
+          38,
+          39
+        ]
+      },
+      "transfer_restrictions": {
+        "fa_section": "13",
+        "transfer_fee": 10000,
+        "transfer_fee_waived_for_entity_control": true,
+        "franchisor_consent_standard": "not unreasonably withheld",
+        "transferee_must_assume_obligations": true,
+        "transferee_must_sign_then_current_fa": true,
+        "transferee_must_complete_training": true,
+        "right_of_first_refusal": true,
+        "rofr_section": "13E",
+        "rofr_basis": "match any offer received for assets or ownership interest",
+        "evidence_pages": [
+          39,
+          40
+        ]
+      },
+      "death_disability": {
+        "appoint_replacement_within_days": 180,
+        "fa_section": "13D",
+        "evidence_pages": [
+          40
+        ]
+      },
+      "non_compete_during_term": {
+        "fa_section": "8",
+        "scope": "no diversion of business; no ownership of or services for competing business; no employee interference",
+        "evidence_pages": [
+          40
+        ]
+      },
+      "non_compete_post_term": {
+        "fa_section": "16D",
+        "duration_years": 2,
+        "premises_blocked": true,
+        "radius_miles": 20,
+        "radius_basis": "20 miles from any Cupbop Restaurant existing, operating, or under construction at termination",
+        "characterization": "broader than typical \u2014 most franchise systems use the franchisee's own premises radius only; this clause references ANY Cupbop, creating a near-total geographic block in dense Cupbop markets (UT/AZ/ID)",
+        "evidence_pages": [
+          41
+        ]
+      },
+      "guaranty": {
+        "exhibit": "FA Exhibit H",
+        "guarantor_class": "all owners with at least 5% equity",
+        "structure": "unconditional, individual, joint and several",
+        "scope": "full, complete, timely payment AND performance of every term, covenant, condition of FA",
+        "covers_modifications": true,
+        "covers_assignments": true,
+        "survives_franchisee_insolvency": true,
+        "primary_and_independent_of_franchisee_liability": true,
+        "guarantor_waives_statute_of_limitations": true,
+        "guarantor_waives_right_to_require_pursuit_of_other_persons_or_security": true,
+        "guarantor_pays_collection_attorneys_fees": true,
+        "spousal_consent_required": "not specified in pages read",
+        "characterization": "Effectively unlimited personal guaranty by all 5%+ owners with full waiver of standard guarantor defenses",
+        "evidence_pages": [
+          143,
+          144
+        ]
+      },
+      "liquidated_damages": {
+        "trigger": "termination by franchisor with cause OR franchisee termination without cause",
+        "formula": "sum of accrued royalties for prior 24 full calendar months + applicable taxes",
+        "fallback_if_remaining_term_short": "number of previous months reduced to remaining term months",
+        "due_within_days": 30,
+        "evidence_pages": [
+          16
+        ]
+      },
+      "venue_and_dispute_resolution": {
+        "fa_arbitration_section": "18D",
+        "fa_venue_section": "18B",
+        "fa_choice_of_law_section": "18A",
+        "mediation_first": true,
+        "mediation_location": "Salt Lake County, Utah",
+        "arbitration_required_under_ada": true,
+        "ada_arbitration_section": "10A",
+        "litigation_venue": "Salt Lake County, Utah",
+        "choice_of_law": "Utah",
+        "subject_to_state_law_overrides": true,
+        "evidence_pages": [
+          41,
+          42
+        ]
+      },
+      "insurance_requirements": {
+        "general_liability_per_occurrence": 2000000,
+        "general_liability_aggregate": 2000000,
+        "umbrella_allowed": 1000000,
+        "additional_insured_required": "Cupbop Franchise, LLC and affiliates",
+        "waiver_of_subrogation_required": true,
+        "business_interruption": "ALS or 12-month loss-of-income",
+        "workers_compensation_required": true,
+        "employer_liability": 1000000,
+        "franchisor_can_change_coverage_at_will": true,
+        "evidence_pages": [
+          22
+        ]
+      },
+      "indemnification": {
+        "fa_section": "17",
+        "scope": "indemnify and hold harmless franchisor and affiliates for unauthorized mark use, law violations, restaurant operation, FA breach",
+        "evidence_pages": [
+          25
+        ]
+      },
+      "force_majeure": {
+        "found": "not in pages read",
+        "evidence_pages": []
+      },
+      "distinctive_or_unusual_clauses": [
+        {
+          "clause": "Non-compete radius 20 miles from ANY Cupbop",
+          "why_distinctive": "Most concepts use franchisee's own premises radius. This clause makes post-term reentry into UT/AZ/ID effectively impossible."
+        },
+        {
+          "clause": "Cross-default: any default under any other agreement with franchisor or affiliates triggers noncurable default",
+          "why_distinctive": "Combined with the parent-supplier relationship (Cupbop Co. supplies sauces/proteins), a payment dispute with the supplier could become an FA termination event."
+        },
+        {
+          "clause": "Sales performance kill switch (50% of trailing-12-month national average over 2 years)",
+          "why_distinctive": "Most concepts use absolute revenue targets or quartile thresholds; the moving national-average benchmark means a franchisee can default by underperforming relative to a system-wide rising tide even if their absolute sales are stable."
+        },
+        {
+          "clause": "Renewal FA 'may be materially different'",
+          "why_distinctive": "Open-ended future-burden risk. New royalty rates, new fees, new territory restrictions could all be imposed at renewal."
+        },
+        {
+          "clause": "Franchisor option to purchase at FMV upon termination/expiration",
+          "why_distinctive": "Combined with right of first refusal on transfers, franchisor controls exit liquidity in both directions."
+        },
+        {
+          "clause": "Confidentiality clauses on franchisees that 'may restrict ability to speak openly'",
+          "why_distinctive": "Disclosed in Item 20; reduces value of franchisee references in due diligence."
+        }
+      ]
+    },
+    "termination_with_cause": null,
+    "termination_by_franchisee": "only for franchisor breach uncured after notice, or per state law",
+    "transfer": null,
+    "noncompete_in_term": null,
+    "noncompete_post_term": null
+  },
+  "territory_reality": {
+    "headline": null,
+    "raw": {
+      "exclusive_territory": false,
+      "protected_territory": true,
+      "protected_territory_size_basis": "varies based on location characteristics, population density, no minimum guaranteed",
+      "online_orders_inside_territory": "may be fulfilled by franchisor, affiliates, or another franchisee \u2014 no customer right",
+      "channels_reserved_by_franchisor": [
+        "non-traditional venues (arenas, stadiums, airports, hospitals, universities, military bases, food courts, department stores, supermarkets)",
+        "internet/wholesale/catalog/mail order",
+        "Cupbop Co. concessions at Vivint Smart Home Arena, Rice-Eccles Stadium, LaVell Edwards Stadium"
+      ],
+      "sales_performance_minimum": "Year 2+ must maintain 50% of trailing 12-month national average gross sales",
+      "sales_performance_default_window_years": 2,
+      "evidence_pages": [
+        32,
+        33
+      ]
+    }
+  },
+  "state_overrides": {
+    "states_with_addenda": [
+      "California",
+      "Illinois",
+      "Maryland",
+      "Minnesota",
+      "New York",
+      "North Dakota",
+      "Rhode Island",
+      "Virginia",
+      "Washington"
+    ],
+    "California": {
+      "noncompete": "may not be enforceable",
+      "forum_selection": "Utah arbitration may not be enforceable; CA BPC \u00a720040.5 controls",
+      "governing_law": "Utah law may not apply; CA Franchise Investment Law and Franchise Relations Act control",
+      "termination": "BPC \u00a7\u00a720000\u201320043 control; bankruptcy termination may not be enforceable"
+    },
+    "Minnesota": {
+      "forum_selection": "litigation outside MN cannot be required; jury trial waiver invalid",
+      "ld_unenforceable": true,
+      "termination_notice": "90-day notice + 60-day cure",
+      "non_renewal_notice": "180 days",
+      "general_release": "cannot be required (Rule 2860.4400(D))",
+      "transfer": "consent cannot be unreasonably withheld (80C.14)",
+      "anti_fraud": "no acknowledgement waives claims including fraud-in-inducement",
+      "interest_NSF": "$30 cap (\u00a7604.113)"
+    },
+    "New York": {
+      "disclosure_amendment": "NY-mandated cover-page language; expanded Item 3 attestations re felony/antitrust/securities/fraud"
+    },
+    "Washington": {
+      "governing_law": "WFIPA (RCW 19.100) prevails",
+      "forum_selection": "WA arbitration site; WA litigation venue available",
+      "general_release": "void except via post-effectiveness negotiated settlement with independent counsel (RCW 19.100.220(2)); also void on renewal/transfer",
+      "limitations_jury": "limitations and jury waiver protected",
+      "transfer_fee": "actual-cost only",
+      "termination": "franchisee may terminate under any state-law-permitted grounds",
+      "buy_back": "during-term franchisor purchase clauses limited"
+    },
+    "Illinois": {
+      "status": "addendum located pp 173\u2013175; clause text not extracted in test run"
+    },
+    "Maryland": {
+      "status": "addendum located pp 176\u2013178; clause text not extracted in test run"
+    },
+    "North Dakota": {
+      "status": "addendum located p 185; clause text not extracted in test run"
+    },
+    "Rhode Island": {
+      "status": "addendum located p 186; clause text not extracted in test run"
+    },
+    "Virginia": {
+      "status": "addendum located p 187; clause text not extracted in test run"
+    },
+    "summary_table": {
+      "noncompete_limited": [
+        "California"
+      ],
+      "forum_selection_voided": [
+        "California",
+        "Minnesota",
+        "Washington"
+      ],
+      "governing_law_overridden": [
+        "California",
+        "Washington"
+      ],
+      "general_release_unenforceable": [
+        "Minnesota",
+        "Washington"
+      ],
+      "termination_protections": [
+        "California",
+        "Minnesota",
+        "Washington"
+      ],
+      "anti_fraud": [
+        "Minnesota",
+        "New York"
+      ],
+      "transfer_fee_actual_cost_only": [
+        "Washington"
+      ],
+      "jury_trial_protected": [
+        "Minnesota",
+        "Washington"
+      ],
+      "ld_unenforceable": [
+        "Minnesota"
+      ]
+    },
+    "states_enumerated_but_not_clause_extracted": [
+      "Illinois",
+      "Maryland",
+      "North Dakota",
+      "Rhode Island",
+      "Virginia"
+    ]
+  },
+  "financial_strength": {
+    "depth_v2": {
+      "balance_sheet": {
+        "fy2024": {
+          "current_assets": {
+            "cash": 251150,
+            "accounts_receivable": 246291,
+            "other_current": 3319,
+            "total": 500760
+          },
+          "ppe": {
+            "furniture_equipment": 17042,
+            "website_development": 35642,
+            "accumulated_depreciation": -29415,
+            "net": 23269
+          },
+          "noncurrent_other": {
+            "accounts_receivable_related_party": 133826
+          },
+          "total_assets": 657855,
+          "current_liabilities": {
+            "accounts_payable_accruals": 26219,
+            "accounts_payable_related_party": 11430,
+            "contract_liabilities_current": 37500,
+            "total": 75149
+          },
+          "noncurrent_liabilities": {
+            "contract_liabilities_long_term": 562354
+          },
+          "total_liabilities": 636503,
+          "members_equity": 21352,
+          "total_liab_and_equity": 657855
+        },
+        "fy2023": {
+          "current_assets": {
+            "cash": 17066,
+            "accounts_receivable": 329181,
+            "other_current": 0,
+            "total": 346247
+          },
+          "ppe": {
+            "furniture_equipment": 17637,
+            "website_development": 17642,
+            "accumulated_depreciation": -25351,
+            "net": 9928
+          },
+          "noncurrent_other": {
+            "accounts_receivable_related_party": 892586
+          },
+          "total_assets": 1248761,
+          "current_liabilities": {
+            "accounts_payable_accruals": 36841,
+            "accounts_payable_related_party": 10556,
+            "contract_liabilities_current": 31250,
+            "total": 78647
+          },
+          "noncurrent_liabilities": {
+            "contract_liabilities_long_term": 277832
+          },
+          "total_liabilities": 356480,
+          "members_equity": 892301
+        }
+      },
+      "income_statement": {
+        "fy2024": {
+          "revenues": 2027743,
+          "sga": 902734,
+          "depreciation": 94064,
+          "total_opex": 996798,
+          "income_from_operations": 1030945,
+          "other_expenses": -5287,
+          "net_income": 1025658,
+          "operating_margin_pct": 50.8
+        },
+        "fy2023": {
+          "revenues": 1861859,
+          "sga": 1069133,
+          "depreciation": 5767,
+          "total_opex": 1074900,
+          "income_from_operations": 786959,
+          "other_expenses": -5666,
+          "net_income": 781293,
+          "operating_margin_pct": 42.3
+        }
+      },
+      "cash_flow": {
+        "fy2024": {
+          "net_income": 1025658,
+          "depreciation": 94064,
+          "ar_change": 82890,
+          "ar_related_party_change": 758760,
+          "other_current_change": -3319,
+          "ap_change": -10622,
+          "ap_related_party_change": 874,
+          "contract_liab_change": 289791,
+          "operating": 2148096,
+          "investing": -17405,
+          "financing_distributions": -1896607,
+          "financing_total": -1896607,
+          "net_change_in_cash": 234084,
+          "beginning_cash": 17066,
+          "ending_cash": 251150
+        },
+        "fy2023": {
+          "net_income": 781293,
+          "depreciation": 5767,
+          "ar_change": -244,
+          "ar_related_party_change": -541006,
+          "other_current_change": 0,
+          "ap_change": 36091,
+          "ap_related_party_change": 10284,
+          "contract_liab_change": 35001,
+          "operating": 327186,
+          "investing": -596,
+          "financing_distributions": -357331,
+          "financing_total": -357331,
+          "net_change_in_cash": -30741,
+          "beginning_cash": 47807,
+          "ending_cash": 17066
+        }
+      },
+      "members_equity_walk": {
+        "fy2024": {
+          "beginning": 892301,
+          "net_income": 1025658,
+          "distributions": -1896607,
+          "ending": 21352
+        },
+        "fy2023": {
+          "beginning": 468339,
+          "net_income": 781293,
+          "distributions": -357331,
+          "ending": 892301
+        }
+      }
+    },
+    "statement_detail": {
+      "revenue_growth_pct": 8.9,
+      "net_income_growth_pct": 31.3,
+      "sga_change_pct": -15.6,
+      "depreciation_jump_factor": 16.3,
+      "depreciation_jump_likely_cause": "addition of $18,000 to website development asset and accelerated depreciation policy change or one-time write-down",
+      "operating_cash_flow_quality": "low \u2014 $758,760 (35.3%) of operating cash flow in FY2024 came from one-time related-party A/R collection",
+      "operating_cash_flow_excluding_related_party_collection": 1389336,
+      "free_cash_flow": 2130691,
+      "distribution_coverage_ratio": 0.541,
+      "interpretation": "Cash flow more than covered distributions, but at the cost of nearly draining members' equity. The transfer is not a dividend out of earnings \u2014 it is a recapitalization-style payout funded partly by collecting receivables from the parent."
+    },
+    "bankruptcy_flag": {
+      "required_disclosure": false,
+      "evidence_pages": [
+        11
+      ]
+    },
+    "litigation_summary": {
+      "pending": null,
+      "raw": {
+        "required_disclosure": false,
+        "evidence_pages": [
+          10
+        ],
+        "source": "Item 3 \u2014 'No litigation is required to be disclosed in this Item.'"
+      }
+    }
+  },
+  "red_flags": [
+    {
+      "severity": "warning",
+      "kind": "bankruptcy",
+      "summary": "{'required_disclosure': False, 'evidence_pages': [11]}"
+    }
+  ],
+  "validation_questions": [
+    "Confirm Item 19 cohort definition with franchisor.",
+    "Confirm current auditor and most recent opinion date."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run": "cupbop-2025",
+    "harvest_runs": [],
+    "filing_year": 2025,
+    "key_exhibits": [],
+    "issuance_date_pages": null,
+    "primary_layers_present": {
+      "v2": true,
+      "v1": true,
+      "final": true,
+      "raw": true
+    },
+    "rt_depth_files": [
+      "RT_depth_contract_burdens",
+      "RT_depth_financial_notes",
+      "RT_depth_promotion_audit",
+      "RT_depth_state_addenda_promotion"
+    ]
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Operating cash flow includes a $758,760 one-time related-party A/R collection (35.3% of operating cash flow). Sustainability of FY2024 operating cash flow without that swing is unclear."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Going-concern question: $21,352 of equity supports $636,503 of liabilities. Parent commitment to fund the franchising entity is undisclosed."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Cross-default scope: noncurable default lists 'any default under any other agreement with franchisor or affiliates.' Whether this includes franchisee obligations to affiliated supplier (Cupbop Co.) is"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Transfer ROFR mechanics not specified \u2014 how is 'matching offer' valued, what timeline."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "FMV determination methodology on franchisor purchase option not specified"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "3 Las Vegas Gold Bowl closures in 2024 \u2014 market vs operator cause undisclosed"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Marketing fund 40% admin overhead \u2014 peer benchmark comparison not in FDD"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Customer concentration: majority of A/R from one customer (likely related party); identity not disclosed"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "All state effective dates (10 listed states) marked PENDING \u2014 none of the listed registration states is actually effective for sale at issuance date"
+    }
+  ]
+}

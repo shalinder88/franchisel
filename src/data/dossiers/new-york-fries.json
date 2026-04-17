@@ -1,0 +1,117 @@
+{
+  "slug": "new-york-fries",
+  "name": "New York Fries",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Recipe Unlimited US, LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": null,
+    "franchise_fee_headline": "$30,000",
+    "investment_range_headline": "$450,000 to $1,233,400",
+    "royalty_headline": "6%",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": "Non-exclusive with limited protection",
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 30000,
+    "royalty_raw": "6%",
+    "ad_fund_raw": null,
+    "investment_low_raw": 450000,
+    "investment_high_raw": 1233400
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": "Non-exclusive with limited protection"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion.",
+    "Request current state-by-state addenda packet."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-39-637945-2025-new-york-fries-20260415-104337",
+    "primary_run_folder": "fresh-39-637945-2025-new-york-fries-20260415-104337",
+    "primary_fdd_id": "637945",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "?",
+    "phase": "first200",
+    "slot": 39
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Franchisor entity standalone financial viability unknown \u2014 only Parent consolidated financials provided. Two state regulators require fee deferrals."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "CFO retiring mid-2025 with no named replacement."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "VP Franchising appointed same month as FDD issuance (March 2025) from non-franchising role."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Zero US franchise operating history. All estimates based on Canadian experience and 4 corporate US openings."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Ad Fund not yet established. No system-wide US marketing infrastructure exists."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Restaurant Technology Program not yet implemented. Future cost impact unknown."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "India NYF master license arbitration pending (Dec 2025). Outcome could affect brand/system."
+    },
+    {
+      "topic": "schema_unrecognized",
+      "reason": "canonical schema not parsed by first-200 extractor"
+    }
+  ],
+  "_status": "PARTIAL"
+}

@@ -1,0 +1,112 @@
+{
+  "slug": "homewood-suites-by-hilton",
+  "name": "Hilton Franchise Holding LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$20,824,955 to $32,522,797",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 20824955,
+    "investment_high_raw": 32522797
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-137-638060-2025-homewood-suites-by-hilton-20260415-184817",
+    "primary_run_folder": "fresh-137-638060-2025-homewood-suites-by-hilton-20260415-184817",
+    "primary_fdd_id": "638060",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 137
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "'Homewood' mark lacks federal registration \u2014 if challenged, franchisee rebrands at own expense"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Multiple antitrust class actions pending (IDeaS/STR/Amadeus) \u2014 outcome could have system-wide pricing implications"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "All franchisor assets pledged for Hilton parent debt (maturing 2025-2033)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Service Quality Improvement Program undergoing changes \u2014 fees capped $50K/6 months plus third-party costs"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Monthly Program Fee ceiling allows increase up to +1% GRR over term"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Note 9 subsequent events date appears to be typo ('March 18, 2024' should be '2025')"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 6 states Connected Room maintenance '$564-$860 per guest room per month' but Item 11 annualizes as '$6,768-$10,320/year' per hotel \u2014 inconsistent if read as per-room"
+    }
+  ],
+  "_status": "PARTIAL"
+}

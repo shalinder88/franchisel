@@ -1,0 +1,1427 @@
+{
+  "slug": "mcdonalds",
+  "name": "McDonald's",
+  "schema_version": 1,
+  "current_snapshot": {
+    "legal_name": "McDonald's USA, LLC",
+    "parent": "McDonald's Corporation (Delaware corporation; sole member)",
+    "headquarters": "110 N. Carpenter Street, Chicago, IL 60607",
+    "fdd_filing_year": 2025,
+    "issuance_date": "May 1, 2025, as amended February 1, 2026",
+    "franchise_fee_headline": "$45,000",
+    "investment_range_headline": "$1,471,000 to $2,728,000",
+    "royalty_headline": "5% of Gross Sales (post-Jan 1 2024 new restaurants, McOpCo purchases, post-ROFR re-sales) or 4% (legacy: family transactions, new term agreements on existing restaurants, franchisee-to-franchisee sales of existing restaurants, rebuilds)",
+    "ad_fund_headline": "Not less than 4% of Gross Sales spent during each calendar year; OPNAD national fund currently 2.25% of sales; local cooperatives variable",
+    "term_headline": "20 years (generally)",
+    "renewal_headline": "No contractual right to renew or extend; new term governed only by McDonald's discretionary New Term Policy (Exhibit K)",
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": 13559,
+    "franchised_units": 12887,
+    "company_owned_units": 672
+  },
+  "economics": {
+    "initial_fees_by_format": {
+      "traditional": "$45,000",
+      "sto_str": "$22,500",
+      "satellite": "$500 (Walmart $0)",
+      "mcopco": "$0",
+      "bfl": "$45,000 paid only on exercise of conditional purchase option"
+    },
+    "investment_by_format": {
+      "traditional": "$1,471,000 to $2,728,000",
+      "sto_str": "$1,014,500 to $1,793,500",
+      "satellite": "$525,000 to $1,193,500"
+    },
+    "recurring_fees_raw": {
+      "royalty": "5% of Gross Sales (post-Jan 1 2024 new restaurants, McOpCo purchases, post-ROFR re-sales) or 4% (legacy: family transactions, new term agreements on existing restaurants, franchisee-to-franchisee sales of existing restaurants, rebuilds)",
+      "advertising": "Not less than 4% of Gross Sales spent during each calendar year; OPNAD national fund currently 2.25% of sales; local cooperatives variable",
+      "rent": "Hybrid: Monthly Base Rent + Pass-Thru Rent + Percentage Rent. New traditional Percentage Rent generally 6%\u201323% of Gross Sales; minimum 11.50% from year 8. STO/STR per tiered table 9.0%\u201311.50% by acquisition+development cost. MIW Satellite 14%\u201315.5% Fixed Percentage Rent. Effective rent in 2024 ranged 0.00%\u201333.33%.",
+      "technology_fees_total_annual_estimate": "\u2248$10,500\u2013$11,500/year per restaurant from itemized Item 6 tech fees (sum of Sesame, Global Mobile App, McDelivery, kiosk, eProduction, Back Office, Payments and Fraud Mgmt, Employee Engagement, PDW, McD Connect, REES, Deployment/OTP/Support, Network Mgmt, Restaurant Hardware, RFM, Microsoft, Pricing Engine, GRNT, Edge, Store Mail; plus several thousand in one-time deployment fees)"
+    },
+    "tech_fee_detail": {
+      "tech_fees_itemized": [
+        {
+          "name": "Sesame",
+          "annual_fee_usd": 1133,
+          "one_time_fee_usd": 2600,
+          "optional": false,
+          "purpose": "POS system software maintenance, integration, and localization"
+        },
+        {
+          "name": "Global Mobile App / Digital Capabilities",
+          "annual_fee_usd": 664,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "Localization of digital technology software"
+        },
+        {
+          "name": "McDelivery POS Integration",
+          "annual_fee_usd": 620,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "McDelivery orders integration into POS"
+        },
+        {
+          "name": "Self-Ordering Kiosk",
+          "annual_fee_usd": 558,
+          "one_time_fee_usd": 1500,
+          "optional": false,
+          "purpose": "Kiosk technology and accessibility software"
+        },
+        {
+          "name": "Hand-Held Order Taker (HHOT)",
+          "annual_fee_usd": 50,
+          "one_time_fee_usd": 500,
+          "optional": true,
+          "purpose": "HHOT software maintenance"
+        },
+        {
+          "name": "eProduction",
+          "annual_fee_usd": 47,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "eProduction software support"
+        },
+        {
+          "name": "Back Office Integration and Enhancements",
+          "annual_fee_usd": 545,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "Back office integration and store system enhancements"
+        },
+        {
+          "name": "Payments and Fraud Management",
+          "annual_fee_usd": 740,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "Payments and fraud management software and encryption"
+        },
+        {
+          "name": "Employee Engagement Platforms",
+          "annual_fee_usd": 385,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "Fred and Campus solutions and employee engagement integrations"
+        },
+        {
+          "name": "People Data Warehouse (PDW) Reporting",
+          "annual_fee_usd": 167,
+          "one_time_fee_usd": 0,
+          "optional": true,
+          "purpose": "PDW reporting platform support"
+        },
+        {
+          "name": "McD Connect",
+          "annual_fee_usd": 250,
+          "one_time_fee_usd": 0,
+          "optional": true,
+          "purpose": "Use of McD Connect"
+        },
+        {
+          "name": "Restaurant Employee Experience Survey",
+          "annual_fee_usd": 62,
+          "one_time_fee_usd": 0,
+          "optional": true,
+          "purpose": "REES platform"
+        },
+        {
+          "name": "Deployment, OTP, Execution and Support",
+          "annual_fee_usd": 2529,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "Deployment / OTP / execution / support services"
+        },
+        {
+          "name": "Restaurant Network Management, Access and Security",
+          "annual_fee_usd": 1134,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "Network infrastructure, identity access management, and security"
+        },
+        {
+          "name": "Restaurant Hardware, Data Movement, Management, and Monitoring",
+          "annual_fee_usd": 951,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "Restaurant data movement, management, monitoring, and hardware services"
+        },
+        {
+          "name": "Restaurant File Maintenance (RFM)",
+          "annual_fee_usd": 690,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "RFM software maintenance and support"
+        },
+        {
+          "name": "Microsoft License Subscription",
+          "annual_fee_usd": 707,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "Microsoft annual license subscription"
+        },
+        {
+          "name": "Pricing Engine",
+          "annual_fee_usd": 264,
+          "one_time_fee_usd": 0,
+          "optional": true,
+          "purpose": "Use of Base Pricing Engine"
+        },
+        {
+          "name": "DMB 2.0",
+          "annual_fee_usd": 0,
+          "one_time_fee_usd": 264,
+          "optional": false,
+          "purpose": "DMB 2.0 deployment"
+        },
+        {
+          "name": "GRNT",
+          "annual_fee_usd": 185,
+          "one_time_fee_usd": 491,
+          "optional": false,
+          "purpose": "Restaurant Network Transformation maintenance and deployment"
+        },
+        {
+          "name": "Edge",
+          "annual_fee_usd": 435,
+          "one_time_fee_usd": 120,
+          "optional": false,
+          "purpose": "Edge computing technology"
+        },
+        {
+          "name": "Store Mail (email accounts)",
+          "annual_fee_usd": 56.4,
+          "one_time_fee_usd": 0,
+          "optional": false,
+          "purpose": "Email account support for us.stores.mcd.com domain"
+        }
+      ],
+      "tech_fee_annual_total_required_only": "\u2248$10,544 (sum of non-optional annual fees)",
+      "tech_fee_annual_total_with_optional": "\u2248$11,287 (sum of all annual fees)",
+      "tech_fee_one_time_total": "\u2248$5,475 (Sesame $2,600 + Kiosk $1,500 + HHOT $500 + DMB 2.0 $264 + GRNT $491 + Edge $120)",
+      "rent_structure_detail": {
+        "monthly_base_rent_basis": "McDonald's total invested in land/building acquisition + development; finance factor applied to produce target return. Where leased from third party, base also reflects monthly rent McDonald's pays in year 1.",
+        "pass_thru_rent": "Third-party landlord rent escalations passed through; no finance factor applied.",
+        "percentage_rent_traditional_post_2026_01_14": {
+          "general_range_pct": [
+            0.06,
+            0.23
+          ],
+          "year8_minimum_pct": 0.115,
+          "max_change_over_term_pct": 0.035,
+          "payable_only_if_gross_sales_exceed_base_threshold": true
+        },
+        "co_investment_policy": {
+          "increment_pct": 0.0025,
+          "min_per_quarter_usd": 30000,
+          "term_max_years": 10,
+          "title_retained_by_mcdonalds": true,
+          "tax_benefits_to_franchisee": true,
+          "floor_traditional_pct": 0.115,
+          "floor_str_pct": 0.09,
+          "floor_sto_pct": 0.095,
+          "two_options_for_post_2026_01_14_new_restaurants": [
+            {
+              "option": 1,
+              "calculation_floor_pct": 0.115,
+              "refund_provision": false
+            },
+            {
+              "option": 2,
+              "calculation_floor_pct": 0.125,
+              "refund_provision": "partial refund if year-1 sales projection not achieved by year 3"
+            }
+          ]
+        },
+        "sto_str_tier_table": [
+          {
+            "cost_more_than_usd": 0,
+            "cost_up_to_usd": 640000,
+            "sto_pct": 0.095,
+            "str_pct": 0.09
+          },
+          {
+            "cost_more_than_usd": 640000.01,
+            "cost_up_to_usd": 670000,
+            "sto_pct": 0.0975,
+            "str_pct": 0.0925
+          },
+          {
+            "cost_more_than_usd": 670000.01,
+            "cost_up_to_usd": 700000,
+            "sto_pct": 0.1,
+            "str_pct": 0.095
+          },
+          {
+            "cost_more_than_usd": 700000.01,
+            "cost_up_to_usd": 730000,
+            "sto_pct": 0.1025,
+            "str_pct": 0.0975
+          },
+          {
+            "cost_more_than_usd": 730000.01,
+            "cost_up_to_usd": 760000,
+            "sto_pct": 0.105,
+            "str_pct": 0.1
+          },
+          {
+            "cost_more_than_usd": 760000.01,
+            "cost_up_to_usd": 820000,
+            "sto_pct": 0.1075,
+            "str_pct": 0.1025
+          },
+          {
+            "cost_more_than_usd": 820000.01,
+            "cost_up_to_usd": 880000,
+            "sto_pct": 0.11,
+            "str_pct": 0.105
+          },
+          {
+            "cost_more_than_usd": 880000.01,
+            "cost_up_to_usd": 940000,
+            "sto_pct": 0.1125,
+            "str_pct": 0.1075
+          },
+          {
+            "cost_more_than_usd": 940000.01,
+            "cost_up_to_usd": 1000000,
+            "sto_pct": 0.115,
+            "str_pct": 0.11
+          },
+          {
+            "cost_more_than_usd": 1000000.01,
+            "cost_up_to_usd": null,
+            "sto_pct": "case_by_case",
+            "str_pct": "case_by_case"
+          }
+        ],
+        "miw_fixed_percentage_rent_range_pct": [
+          0.14,
+          0.155
+        ],
+        "effective_rent_2024_pct_range": [
+          0.0,
+          0.3333
+        ]
+      }
+    }
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": 12572,
+    "average": "$4,002,000",
+    "median": "$3,838,000",
+    "high_low": {
+      "high": "$19,680,000",
+      "low": "$914,000"
+    },
+    "presentation_basis": "11,332 independent franchisee traditional restaurants open \u22651 year (4% royalty cohort, excludes McOpCo, Satellites, restaurants that changed owners in 2024)",
+    "raw_keys": [
+      "cohort_n_traditional_open_1yr",
+      "average_auv_2024_traditional",
+      "median_auv_2024_traditional",
+      "high_low_auv_2024",
+      "average_auv_2024_franchised",
+      "median_auv_2024_franchised",
+      "average_auv_2024_mcopco",
+      "pro_forma_basis",
+      "pro_forma_oibcoc_at_3M_3p2M_3p4M",
+      "excludes",
+      "effective_rent_range_2024",
+      "internal_inconsistency"
+    ]
+  },
+  "item20_system_movement": {
+    "system_total": 13559,
+    "franchised": 12887,
+    "company_owned": 672,
+    "openings": 167,
+    "terminations": 29,
+    "non_renewals": 15,
+    "transfers": 843,
+    "net_change": "+115",
+    "raw": {
+      "system_total_2024_end": 13559,
+      "franchised_2024_end": 12887,
+      "company_owned_2024_end": 672,
+      "franchised_net_change_2024": "+115",
+      "transfers_2024": 843,
+      "openings_franchised_2024": 167,
+      "terminations_franchised_2024": 29,
+      "non_renewals_franchised_2024": 15,
+      "reacquired_franchised_2024": 8,
+      "company_owned_sold_to_franchisee_2024": 32,
+      "signed_not_opened_total": 0,
+      "projected_new_franchised_next_year": 181,
+      "projected_new_company_owned_next_year": 14,
+      "exhibit_R_directly_surfaced": true,
+      "exhibit_S_count": 113,
+      "franchisee_organizations": [
+        "NFLA (endorsed)",
+        "AMOA (endorsed)",
+        "MHOA (endorsed)",
+        "NBMOA (endorsed)",
+        "WON (endorsed)",
+        "OPN (endorsed)",
+        "NOA (independent; requested inclusion)"
+      ]
+    }
+  },
+  "contract_burden": {
+    "from_canonical": {
+      "gross_sales_credit_sale_timing": "Each charge or credit sale treated as a sale at the FULL price in the month it is made, regardless of when payment is received",
+      "gross_sales_includes_orders_filled_elsewhere": "Gross Sales includes amounts of all orders taken or received at the Restaurant whether filled from the Restaurant or elsewhere",
+      "delinquency_interest_rate_pct": 0.15,
+      "guarantor_enforcement_interest_rate": "18% per annum or, if higher, the Lender's Prime Rate plus 4% (capped by maximum permitted under applicable law)",
+      "consolidation_waiver": true,
+      "eft_mandatory": true,
+      "attorneys_fees_recovery": "FA Section 23: McDonald's recovers reasonable attorneys' fees plus court costs and expenses of litigation",
+      "indemnification_obligation": "FA Section 24: Broad franchisee indemnity covering judgments, settlements, penalties, attorneys' fees, court costs and expenses; franchisee defends McDonald's at McDonald's election",
+      "fmv_purchase_option_on_termination": "FA Section 20(b)/(c): 30-day FMV purchase option after breach termination + 30-day no-removal freeze; pre-expiration 60-day no-removal window plus FMV purchase option on expiration/eminent domain \u2014 no payment for intangibles",
+      "rofr_mechanics": "FA Section 15(c): 20-day prior written notice with proposed purchaser identity and offer terms; McDonald's has 10 days to elect to match; continuing first option on subsequent offers",
+      "in_term_noncompete_includes_landlord": "FA Section 11(a): in-term non-compete extends to 'becoming a landlord for' any similar restaurant business; <2% public-company stock exception",
+      "operating_hours_floor": "FA Section 12(g): 7 days/week, 7:00 a.m.\u201311:00 p.m. minimum, or other hours as McDonald's may prescribe",
+      "material_breach_judgment_threshold_usd": 5000,
+      "public_conduct_political_carveout": "FA Section 18(o) carves out 'legitimate political activity (including testifying, lobbying, or otherwise attempting to influence legislation)'",
+      "transferor_continuing_liability": "FA Section 15(d): transferring franchisee remains personally liable for all affirmative obligations for the full term (or shorter at McDonald's sole discretion); royalty resets automatically to then-prevailing rate",
+      "insurance_minimums": {
+        "WC_EL_limits_usd": "100,000 / 500,000 / 100,000",
+        "CGL_limits_usd": "5,000,000 per occurrence / 5,000,000 aggregate",
+        "carrier_rating_min": "A.M. Best Financial Size Category \u2265 IX, Policyholders Rating A+ or A",
+        "cancellation_notice_days": 30,
+        "additional_insureds": "McDonald's and any party McDonald's designates",
+        "source_object": "RT_depth_contract_burdens.json",
+        "source_section": "FA Section 17",
+        "source_pages": [
+          82
+        ],
+        "confidence": "high"
+      },
+      "cpa_audit_certification_obligation": "FA Section 10: annual P&L and balance sheet within 90 days of fiscal year close, GAAP, certifiable by CPA at McDonald's request, with franchisee bearing CPA consultation cost; 2% Gross Sales understatement audit-cost shift",
+      "daily_and_monthly_reporting_cadence": "FA Section 10: daily receipts statement by 11:00 a.m. CST first business day of each month; monthly operating statement and statistical report by 25th; 3-year retention",
+      "entity_assignment_constraint": "FA Section 15(b): assignment to wholly-owned controlled corporation only; corporate name may not include McDonald's marks"
+    },
+    "from_depth_pass_v2": {
+      "gross_sales_definition_breadth": "Includes orders received at restaurant even if filled elsewhere; credit sales counted at full price in month of sale regardless of payment timing (FA Section 7, page 76)",
+      "delinquency_interest_rate_pct": 0.15,
+      "eft_mandatory": true,
+      "attorneys_fees_recovery_one_way": true,
+      "indemnification_broad": true,
+      "fmv_purchase_option_on_termination": true,
+      "fmv_purchase_no_intangibles_payment": true,
+      "rofr_mechanics": "20-day notice / 10-day match window / continuing first option",
+      "in_term_noncompete_includes_landlord": true,
+      "consolidation_waiver_present": true,
+      "consolidation_waiver_source": "Exhibit N Unlimited Guaranty Section 18, page 213",
+      "guarantor_enforcement_interest_rate_pct_floor": 0.18,
+      "guarantor_enforcement_interest_rate_alt": "Lender Prime Rate + 4% (whichever is higher), capped at usury max",
+      "guarantor_enforcement_interest_rate_source": "Exhibit N Unlimited Guaranty Section 2, page 208",
+      "operating_hours_floor": "7 days/week, 7am-11pm minimum",
+      "material_breach_judgment_threshold_usd": 5000,
+      "material_breach_payment_overdue_threshold_days": 30,
+      "public_conduct_political_carveout": true,
+      "transferor_remains_liable_full_term": true,
+      "royalty_resets_on_transfer": true,
+      "insurance_cgl_per_occurrence_usd": 5000000,
+      "insurance_cgl_aggregate_usd": 5000000,
+      "insurance_carrier_min_rating": "A.M. Best A or A+, Financial Size Category IX+",
+      "insurance_cancellation_notice_days": 30,
+      "annual_pl_balance_sheet_due_days_after_fye": 90,
+      "annual_pl_certifiable_by_cpa_at_franchisor_request": true,
+      "audit_cost_shift_threshold_pct_of_gross_sales": 0.02,
+      "daily_receipts_statement_due_time_cst": "11:00 a.m.",
+      "monthly_operating_statement_due_day": 25,
+      "records_retention_years": 3,
+      "entity_assignment_only_to_wholly_owned_corp": true
+    },
+    "from_rt_depth": {
+      "source": "Exhibit B \u2014 Franchise Agreement (Traditional), McDonald's USA, LLC",
+      "source_pages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "financial_obligations": [
+        {
+          "section": "8(a) Royalty",
+          "burden": "Monthly royalty payable on or before the 10th day of the following month at the percentage stated in Item 6, Footnote 2 (5% post-2024 / 4% legacy) of Gross Sales for the preceding month.",
+          "page": 76
+        },
+        {
+          "section": "8(c) Interest on Delinquencies",
+          "burden": "Past-due amounts (including accrued interest) bear interest at the highest rate allowed by law, or 15% per annum if no maximum, computed on monthly compounding using actual days elapsed / 365.",
+          "page": 77
+        },
+        {
+          "section": "5 Advertising",
+          "burden": "Franchisee must spend not less than 4% of Gross Sales in each calendar year on advertising and promotion of the Restaurant. Expenditures to national/regional cooperatives or restaurant groups containing the Restaurant credit against the requirement.",
+          "page": 75
+        },
+        {
+          "section": "9 Initial Fee",
+          "burden": "$45,000 initial franchise fee earned upon execution; refundable only if construction is not completed within one year of FA execution; franchisee may terminate and obtain refund only if restaurant is not ready for occupancy within one year.",
+          "page": 77
+        },
+        {
+          "section": "23 Cost of Enforcement",
+          "burden": "If McDonald's institutes any action at law or equity to enforce the Franchise, in addition to any judgment in its favor, McDonald's is entitled to recover reasonable attorneys' fees as allowed by the court together with court costs and expenses of litigation.",
+          "page": 87
+        },
+        {
+          "section": "10 Audit Cost",
+          "burden": "If audit shows actual Gross Sales exceeded reported Gross Sales by 2% or more, franchisee bears the cost of the inspection and audit.",
+          "page": 78
+        },
+        {
+          "section": "10 CPA Consultation",
+          "burden": "Franchisee, at franchisee's expense, must cause its public accountant and/or CPA to consult with McDonald's concerning annual P&L and balance sheet.",
+          "page": 78
+        },
+        {
+          "section": "17 Insurance Cost (failure to obtain)",
+          "burden": "If franchisee fails to obtain required insurance, McDonald's may purchase it and add the premium paid to franchisee's monthly rent.",
+          "page": 82
+        }
+      ],
+      "lien_or_security_interest": [
+        {
+          "section": "Exhibit N (cross-reference) \u2014 BoA Loan Security Agreement",
+          "burden": "Loan to franchisee under the McDonald's Corporation guaranteed program is secured by restaurant equipment, seating, signage, decor, and inventory; default also a default under the Franchise Agreement (per Item 10).",
+          "page": "Item 10 / Exhibit N pages 22, 196-230"
+        },
+        {
+          "section": "20(b) Right to Take Possession on Material Breach",
+          "burden": "On material breach, McDonald's has an immediate right to enter and take possession of the Restaurant to maintain continuous operation, provide for orderly change of management and disposition of personal property, and to otherwise protect McDonald's interest.",
+          "page": 86
+        }
+      ],
+      "data_ownership_or_data_access_rights": [
+        {
+          "section": "10 Reports",
+          "burden": "Daily statement of receipts due by 11:00 a.m. CST first business day of each month; monthly operating statement and statistical report due by 25th of next month; records retained at least 3 years; additional financial/operating reports as McDonald's reasonably requests; annual P&L and balance sheet within 90 days of fiscal year close, GAAP, certifiable by CPA on request.",
+          "page": 78
+        },
+        {
+          "section": "Item 11 cross-reference + Item 8",
+          "burden": "Franchisee must submit monthly statements via web-based Franchisee Financial System (FFS) including consolidated balance sheet, G&A statement, debt summary, and individual restaurant P&L. POS transaction-level data is stored on franchisee server, transmitted to McDonald's, and held on McDonald's servers; McDonald's has independent access to this information with no contractual limits on its right to access.",
+          "page": "Item 11 / page 25"
+        },
+        {
+          "section": "12 Inspection",
+          "burden": "McDonald's has the right to inspect the Restaurant at all reasonable times to ensure compliance with McDonald's standards and policies (also includes books and records under Section 10).",
+          "page": 79
+        }
+      ],
+      "system_change_exposure": [
+        {
+          "section": "1(d), 4 Manuals",
+          "burden": "Franchisee must operate in conformity with McDonald's System through strict adherence to standards and policies as they exist now and as they may be modified from time to time. The business manuals (incorporated by reference) and the policies in them are binding as modified \u2014 McDonald's may unilaterally modify the manuals.",
+          "page": [
+            73,
+            74,
+            75
+          ]
+        },
+        {
+          "section": "12(b)(c)(d) Equipment / Building Standards",
+          "burden": "Franchisee must purchase kitchen fixtures, lighting, seating, signs, and equipment per McDonald's specifications; keep restaurant constructed and equipped per McDonald's blueprints and equipment layout plans (which McDonald's may reasonably change from time to time); cannot make alterations or building design conversions without McDonald's prior written consent.",
+          "page": 80
+        },
+        {
+          "section": "12(g) Hours of Operation",
+          "burden": "Operate seven days per week throughout the year, at least from 7:00 a.m. to 11:00 p.m. or such other hours as McDonald's may from time to time prescribe.",
+          "page": 80
+        },
+        {
+          "section": "12(i) Food Specifications",
+          "burden": "Use only flavorings, garnishments, and food/beverage ingredients meeting McDonald's specifications and quality standards as McDonald's may designate from time to time; employ only food handling and preparation methods McDonald's may designate from time to time.",
+          "page": 80
+        },
+        {
+          "section": "Item 6 Note 10 (cross-reference)",
+          "burden": "Technology fees disclosed in Item 6 are subject to periodic review and may increase over time; franchisee must adopt technology when it becomes a system requirement.",
+          "page": "Item 6 page 22"
+        }
+      ],
+      "eft_auto_debit_mechanics": [
+        {
+          "section": "8(b) Method of Payment",
+          "burden": "Franchisee shall at all times participate in McDonald's automatic debit/credit transfer program for all amounts due. Franchisee must execute and deliver such documents and instruments as may be necessary to establish and maintain the auto-debit/credit transfer program.",
+          "page": 77
+        }
+      ],
+      "remodel_rebuild_obligations": [
+        {
+          "section": "12(a) and 12(e) Maintenance and Repair",
+          "burden": "Operate Restaurant in clean wholesome manner in compliance with prescribed standards of QSC; maintain building, fixtures, equipment, signage, seating, decor, and parking area in good clean wholesome condition and repair, well lighted, in compliance with designated standards as McDonald's may prescribe from time to time. Make repairs and replacements due to damage, wear and tear, and to maintain in conformity to blueprints and plans.",
+          "page": 80
+        },
+        {
+          "section": "Item 6 Footnote 9 / cross-reference",
+          "burden": "Relocation contribution of $50,000 due on opening of relocated restaurant.",
+          "page": "Item 6 page 11"
+        }
+      ],
+      "appraisal_or_fair_market_value_transfer_mechanics": [
+        {
+          "section": "20(b) Option to Purchase on Material Breach",
+          "burden": "For 30 days following any termination on material breach, McDonald's has the option to purchase franchisee's furniture, fixtures, signs, equipment, other property, and leasehold improvements (or any portion) for a sum equal to the fair market value of such property. There is no payment by McDonald's for intangible assets of franchisee.",
+          "page": 86
+        },
+        {
+          "section": "20(c) Option to Purchase on Expiration / Eminent Domain",
+          "burden": "On expiration or eminent domain, franchisee may not remove fixtures within 60 days prior to the date specified for termination; McDonald's, on 30-day prior written notice, has the option to purchase the same items at fair market value, with no payment for intangibles.",
+          "page": 86
+        },
+        {
+          "section": "15(c) First Option to Purchase (ROFR)",
+          "burden": "Franchisee must give McDonald's at least 20 days' prior written notice of intent to sell or transfer, including the proposed purchaser's name/address and all offer terms. McDonald's has 10 days following receipt to elect to match. If McDonald's declines and the sale to the proposed purchaser does not close, McDonald's continuing first option applies to any subsequent offer on the same conditions.",
+          "page": 83
+        }
+      ],
+      "tax_permit_or_indebtedness_burden": [
+        {
+          "section": "12(k) Compliance",
+          "burden": "Franchisee must comply at its own expense with all federal, state, and local laws, ordinances, and regulations affecting the operation of the Restaurant.",
+          "page": 80
+        },
+        {
+          "section": "18(d) Material Breach \u2014 Judgments and Liens",
+          "burden": "Any judgment or judgments aggregating in excess of $5,000 against franchisee, or any lien in excess of $5,000 against franchisee's property, shall remain unsatisfied or unbonded of record in excess of 30 days = material breach permitting termination.",
+          "page": 85
+        },
+        {
+          "section": "18(b) Material Breach \u2014 Bankruptcy",
+          "burden": "Adjudication as bankrupt, insolvency, appointment of receiver (permanent or temporary) for all/substantially all property, general assignment for benefit of creditors, or voluntary/involuntary bankruptcy petition not dismissed within 30 days = material breach.",
+          "page": 85
+        },
+        {
+          "section": "18(c) Material Breach \u2014 Unpaid Amounts",
+          "burden": "Any payment owing to McDonald's not paid within 30 days after due = material breach.",
+          "page": 85
+        },
+        {
+          "section": "Item 11 (cross-reference) \u2014 STO/STR shared common areas",
+          "burden": "STO franchisees may be required to maintain common areas within the shared building and external common areas for the fuel facility operator, plus obtain certain utilities and insurance for the fuel facility operator (with reimbursement for a portion); STR franchisees may be required to maintain a proportionate share of external common areas and obtain insurance for certain common areas.",
+          "page": "Item 9 note 1 page 21-22"
+        }
+      ],
+      "estoppel_certificate_or_acknowledgement_obligation": [
+        {
+          "section": "28 Acknowledgment (a)\u2013(j)",
+          "burden": "Franchisee acknowledges: (a) no promise of renewal or new term; (b) received the Franchise, read and understood obligations, opportunity to consult attorney at least 7 days prior to execution; (c) no representation as to future profitability; (d) franchisee has worked at a McDonald's restaurant prior to execution and had ample opportunity to contact existing franchisees; (e) no exclusive/protected/territorial rights; (f) FA supersedes prior agreements but does not disclaim representations made in the FDD; (g) McDonald's or affiliates are sole owners of trademarks; (h) no future franchise offers have been promised; (i) no representations outside the FA or FDD; (j) FA is offered to franchisee personally only and may not be transferred by assignment, will, or operation of law without consent.",
+          "page": [
+            88,
+            89
+          ]
+        },
+        {
+          "section": "26 Scope and Modification",
+          "burden": "FA (with Exhibit A and any riders) constitutes entire agreement and supersedes all prior or contemporaneous oral or written agreements; nothing disclaims FDD representations; no modification binding on McDonald's unless in writing signed by an officer or franchising director and specifically identified as an amendment.",
+          "page": [
+            87,
+            88
+          ]
+        },
+        {
+          "section": "Hawaii / Maryland / Minnesota / North Dakota / Washington Riders to FA (Exhibit B)",
+          "burden": "State riders deleting/modifying acknowledgements (e.g. Hawaii deletes Sec 28(b)(c)(d)(i)) and adding state-specific governing law and waiver-of-state-claim language; Maryland adds release/estoppel/waiver carve-outs from Maryland Franchise Registration and Disclosure Law liability.",
+          "page": [
+            88,
+            89,
+            90
+          ]
+        }
+      ],
+      "entity_or_guarantor_structure_requirement": [
+        {
+          "section": "1(e) Personal Ownership",
+          "burden": "Franchisee acknowledges McDonald's basic policy that franchises are granted only to individuals who live in the locality of the restaurant, actually own the entire equity interest in the business of the Restaurant and its profits, and who will work full time at the Restaurant. Franchisee represents and warrants and agrees to maintain such interest during the term, and must furnish evidence as McDonald's may request.",
+          "page": 74
+        },
+        {
+          "section": "13 Best Efforts",
+          "burden": "Franchisee must diligently and fully exploit the rights granted by personally devoting full time and best efforts; if more than one individual is the franchisee, a named individual personally devotes full time. Franchisee must keep free from conflicting enterprises.",
+          "page": 80
+        },
+        {
+          "section": "15(b) Wholly-Owned Corporation",
+          "burden": "Franchisee may assign to a wholly-owned and controlled corporation; corporate name may not include McDonald's marks; subsequent transfers of shares must comply with 15(a) and 15(d).",
+          "page": 83
+        },
+        {
+          "section": "15(d) Conditions on Transfer",
+          "burden": "Transferee must execute an agreement personally assuming full and unconditional liability for all obligations under the FA. Transferring franchisee remains personally liable for all affirmative obligations for the full term (or for such shorter period as McDonald's may, in its sole discretion, determine). Royalty resets automatically to the then-prevailing percentage charge required for new franchises at the time of transfer. McDonald's evaluates transferee on (i) work experience, (ii) financial background, (iii) character, (iv) ability to personally devote full time, (v) residence in the locality, (vi) equity interest, (vii) conflicting interests, (viii) other criteria McDonald's then applies.",
+          "page": 83
+        },
+        {
+          "section": "Exhibit N \u2014 Operator Assistance Program Agreement (cross-reference)",
+          "burden": "If franchisee defaults under the BoA loan, franchisee must sign an OAP Agreement with McDonald's under which franchisee waives all claims against McDonald's; personal guarantees from franchisee and spouse are required; jury trial waiver and consolidation prohibition.",
+          "page": "Item 10 / Exhibit N"
+        }
+      ],
+      "termination_default_supplement": [
+        {
+          "section": "18(a) Maintenance Failure",
+          "burden": "Failure to maintain and operate the Restaurant in a good, clean, wholesome manner per McDonald's System standards = material breach.",
+          "page": 85
+        },
+        {
+          "section": "18(e) Loss of Possession",
+          "burden": "Causing or permitting (voluntarily or involuntarily) franchisee's right of possession as lessee or sublessee of the premises to be terminated prematurely for any cause whatsoever = material breach.",
+          "page": 85
+        },
+        {
+          "section": "18(j) Unauthorized Food",
+          "burden": "Knowingly selling food or beverage products other than those designated by McDonald's, or that fail to conform to McDonald's specifications, or that are not prepared per McDonald's methods, or failing to sell products designated by McDonald's = material breach.",
+          "page": 85
+        },
+        {
+          "section": "18(m) Vendor Payment Delays",
+          "burden": "Failure or repeated delays in prompt payment of undisputed invoices from suppliers, or in remittances required by the FA = material breach.",
+          "page": 85
+        },
+        {
+          "section": "18(o) Public Conduct",
+          "burden": "Public conduct that reflects materially and unfavorably on the Restaurant, the McDonald's System, or the goodwill associated with the McDonald's trademarks = material breach (carve-out for legitimate political activity including testifying, lobbying, or otherwise attempting to influence legislation).",
+          "page": 86
+        },
+        {
+          "section": "18(p) Felony Conviction",
+          "burden": "Conviction of, or plea of guilty or no contest to, a felony or any other crime reasonably likely to adversely affect the McDonald's System, the Restaurant, or trademark goodwill = material breach.",
+          "page": 86
+        },
+        {
+          "section": "18(q) Intentional Understatement",
+          "burden": "Intentional understatement of Gross Sales reported to McDonald's = material breach.",
+          "page": 86
+        }
+      ],
+      "non_compete_detail": [
+        {
+          "section": "11(a) In-Term",
+          "burden": "Franchisee may not, without McDonald's prior written consent, directly or indirectly engage in, acquire any financial or beneficial interest (including in corporations, partnerships, trusts, unincorporated associations, or joint ventures) in, OR BECOME A LANDLORD FOR any restaurant business which is similar to the Restaurant.",
+          "page": 79
+        },
+        {
+          "section": "11(b) Post-Term",
+          "burden": "For 18 months after termination of the Franchise for any reason or the sale of the Restaurant, no engagement in or acquisition of any financial or beneficial interest in, or becoming a landlord of, any similar restaurant business within a 10-mile radius of the Restaurant.",
+          "page": 79
+        },
+        {
+          "section": "11 Exception",
+          "burden": "The 11(a) and 11(b) restrictions do NOT apply to ownership of less than 2% of shares of a company whose shares are listed and traded on a national or regional securities exchange.",
+          "page": 79
+        }
+      ],
+      "insurance_requirements_detail": [
+        {
+          "section": "17(a) Workers Comp / EL",
+          "burden": "Workers Compensation insurance prescribed by state law plus Employer's Liability insurance with $100,000 / $500,000 / $100,000 minimum limit. Where state allows opt-out from WC and franchisee opts out, franchisee must carry alternative insurance approved by McDonald's.",
+          "page": 82
+        },
+        {
+          "section": "17(b) CGL",
+          "burden": "Commercial general liability insurance in form approved by McDonald's with limits of $5,000,000 per occurrence / $5,000,000 aggregate.",
+          "page": 82
+        },
+        {
+          "section": "17 General",
+          "burden": "All policies must name McDonald's and any party designated by McDonald's as additional insureds; effective on or prior to date of possession; evidence of payment and duplicate copies delivered to McDonald's at least 30 days prior to opening or 30 days prior to expiration of an existing policy; all policies must include a 30-day prior-written-notice provision for cancellations or material changes; insurer must have A.M. Best Financial Size Category \u2265 IX and Policyholders Rating of A+ or A.",
+          "page": 82
+        }
+      ],
+      "indemnification": [
+        {
+          "section": "24 Indemnification",
+          "burden": "Franchisee must indemnify and hold McDonald's harmless against all judgments, settlements, penalties, and expenses (including attorneys' fees, court costs, and other expenses of litigation or administrative proceedings) incurred by or imposed on McDonald's by reason of any claimed act or omission of franchisee or its employees/agents, or any act on the Restaurant premises, or any omission with respect to the business or operation of the Restaurant. At McDonald's election, franchisee shall also defend McDonald's.",
+          "page": 87
+        }
+      ],
+      "gross_sales_definition_detail": {
+        "section": "7 Gross Sales",
+        "scope": "All revenues from sales of the franchisee based on all business conducted upon or from the Restaurant, whether by check, cash, credit, charge account, exchange, or otherwise; includes goods, wares, merchandise, food, beverages, tangible property, promotional or otherwise, and services performed from or at the Restaurant; INCLUDES amounts of all orders taken or received at the Restaurant whether such orders are filled from the Restaurant or elsewhere.",
+        "deductions": "Sales of merchandise for which cash has been refunded (if previously included in Gross Sales); price of merchandise returned by customers for exchange (if previously included); sales tax imposed by federal/state/municipal/governmental authority directly on sales and collected from customers (if added to selling price or absorbed therein and actually paid).",
+        "credit_sale_timing": "Each charge or sale upon credit shall be treated as a sale for the FULL price in the month during which the charge or sale shall be made, irrespective of when payment is received (whether full or partial).",
+        "page": 76
+      },
+      "modification_severability": [
+        {
+          "section": "25 Construction and Severability",
+          "burden": "If any part of the FA is declared invalid, the validity of the rest is unaffected. In the event that any MATERIAL provision is stricken or declared invalid, McDonald's reserves the right to terminate the Franchise.",
+          "page": 87
+        }
+      ],
+      "governing_law_and_forum": [
+        {
+          "section": "27 Governing Law",
+          "burden": "Illinois law governs; per Item 17 the Special Risk on the cover page is the out-of-state Illinois forum requirement (mediation/arbitration/litigation only in Illinois).",
+          "page": 88
+        }
+      ],
+      "personal_only_no_assignment_by_operation_of_law": [
+        {
+          "section": "28(j) Personal Only",
+          "burden": "The Franchise is offered to franchisee personally and to no others; may not be accepted by any other person, partnership, or corporation, or transferred by assignment, will, or operation of law (which means death/disability assignment to spouse/heirs is not automatic but requires a separate qualification process per Item 17 Note 1).",
+          "page": 89
+        }
+      ],
+      "cross_references_to_existing_canonical": {
+        "ach_eft_now_disclosed": "FA Section 8(b) makes ACH/EFT participation mandatory and self-executing \u2014 franchisee must execute documents to establish and maintain the program. Not previously surfaced as a structured contract burden.",
+        "interest_on_delinquencies_now_disclosed": "FA Section 8(c) \u2014 15% per annum or highest rate allowed by law, monthly compounded \u2014 not previously surfaced.",
+        "5000_judgment_lien_threshold_now_structured": "FA Section 18(d) \u2014 judgments/liens >$5,000 unsatisfied 30 days = material breach. Was in narrative in 02_reader_report.md but not structured in canonical.",
+        "felony_or_other_crime_termination_now_structured": "FA Section 18(p) \u2014 was mentioned in narrative, not structured in canonical with crime-class detail.",
+        "public_conduct_termination_carveout_now_disclosed": "FA Section 18(o) carves out 'legitimate political activity (including testifying, lobbying, or otherwise attempting to influence legislation)' \u2014 carve-out language not previously surfaced.",
+        "audit_threshold_2_pct_now_disclosed": "FA Section 10 \u2014 2% understatement threshold for franchisee to bear audit cost (was in Item 6 row but reaffirmed in FA).",
+        "post_termination_fixture_freeze_now_disclosed": "FA Section 20(b) imposes a 30-day no-removal window after termination on breach; Section 20(c) imposes a 60-day no-removal window before expiration/eminent-domain takeover, with McDonald's option to purchase at FMV (no payment for intangibles). Not previously structured.",
+        "in_term_landlord_prohibition_now_disclosed": "FA Section 11(a) explicitly prohibits 'becoming a landlord' for any similar restaurant business \u2014 beyond just 'engaging in' a similar business \u2014 was not surfaced previously.",
+        "operator_hours_floor_now_disclosed": "FA Section 12(g) \u2014 7 days/week, 7 a.m.\u201311 p.m. minimum, or other hours as McDonald's may prescribe \u2014 was not previously surfaced.",
+        "annual_pl_balance_sheet_certifiability_now_disclosed": "FA Section 10 \u2014 annual P&L and balance sheet GAAP, certifiable by CPA on McDonald's request, with franchisee bearing the consultation cost \u2014 was not previously surfaced.",
+        "indemnification_scope_now_disclosed": "FA Section 24 \u2014 broad indemnity obligation; franchisee defends McDonald's at McDonald's election. Not previously structured.",
+        "insurance_floor_now_quantified": "FA Section 17 \u2014 WC EL $100K/$500K/$100K; CGL $5M/$5M; A.M. Best A/A+ minimum; 30-day cancellation notice. Not previously structured."
+      }
+    },
+    "termination_with_cause": "McDonald's may terminate for material breaches including: failure to maintain restaurant; bankruptcy; unpaid amount over 30 days; unsatisfied $5,000+ judgment over 30 days; loss of right of possession; violation of restrictions; sale of unauthorized food; transfer without consent; intentional under-reporting of Gross Sales; conduct damaging McDonald's reputation; conviction of felony; repeated other breaches",
+    "termination_by_franchisee": "Not provided in Franchise Agreement",
+    "transfer": "Requires McDonald's prior written consent; royalty resets to current rate (5%); transferring franchisee remains personally liable; no current breach allowed; McDonald's holds right of first refusal",
+    "noncompete_in_term": "Yes \u2014 no involvement in competing or similar business (FA Sec 11)",
+    "noncompete_post_term": "18 months, 10 miles from any McDonald's location, applies after assignment or sale (FA Sec 11)"
+  },
+  "territory_reality": {
+    "headline": null,
+    "raw": {
+      "value": "No exclusive territory, no protected area, no rights to exclude. McDonald's reserves the right to develop other restaurants, sell McCaf\u00e9 in retail and via e-commerce, and use Marks in any other channel of distribution.",
+      "source_object": "02_reader_report.md",
+      "source_section": "Item 12",
+      "source_pages": [
+        37
+      ],
+      "confidence": "high",
+      "status": "surfaced"
+    }
+  },
+  "state_overrides": {
+    "states_with_addenda": [
+      "California",
+      "Hawaii",
+      "Maryland",
+      "Minnesota",
+      "North Dakota",
+      "Washington"
+    ],
+    "wisconsin_addendum_present": false,
+    "california": {
+      "focus": "CA Fast Food Act (AB 1228) disclosures",
+      "family": "operational_compliance"
+    },
+    "hawaii": {
+      "focus": "Item 17 anti-waiver language + HI filing disclosure",
+      "family": "anti_waiver"
+    },
+    "maryland": {
+      "focus": "Release exclusion for MD Franchise Registration and Disclosure Law; MD venue option; 3-year limitations period",
+      "family": "general_release + forum_selection + limitations_period"
+    },
+    "minnesota": {
+      "focus": "Minn. Stat. 80C.14 termination notice/cure (90d/60d cure, 180d non-renewal), reasonable transfer consent, trademark defense",
+      "family": "termination_notice + cure_period + transfer_consent + trademark_defense"
+    },
+    "north_dakota": {
+      "focus": "Non-compete generally unenforceable; ND law governs ND Franchise Investment Law claims",
+      "family": "noncompete + governing_law"
+    },
+    "washington": {
+      "focus": "RCW 19.100.180 / WA FIPA supremacy; separate AOD removes no-hire/no-poach provisions",
+      "family": "relationship_law_supremacy + no_poach_removal"
+    },
+    "override_family_matrix_source": "RT_depth_state_addenda_promotion.json",
+    "source": "retry_R1_exhibit_t_state_addenda.json + RT_depth_state_addenda_promotion.json"
+  },
+  "financial_strength": {
+    "auditor": "Ernst & Young LLP, Chicago",
+    "audit_opinion": "Unqualified (clean)",
+    "audit_opinion_date": "March 14, 2025",
+    "fiscal_year_end": "December 31",
+    "total_revenue": "$10,630.8M",
+    "net_income": "$3,461.6M",
+    "total_assets": "$22,195.3M",
+    "total_equity": "$10,222.0M (members' capital $5,588.1M, retained earnings $4,633.9M)",
+    "depth_v2": {
+      "auditor_firm": "Ernst & Young LLP",
+      "auditor_city": "Chicago",
+      "audit_report_date": "2025-03-14",
+      "opinion_type": "unqualified_clean",
+      "going_concern_doubt_raised": false,
+      "fiscal_year_end_month_day": "12-31",
+      "comparative_periods_income": [
+        "2024",
+        "2023",
+        "2022"
+      ],
+      "comparative_periods_balance_sheet": [
+        "2024",
+        "2023"
+      ],
+      "presentation_unit": "millions_USD",
+      "consolidation_basis": "consolidated",
+      "consolidation_scope_note": "McDonald's USA, LLC and its subsidiaries; concluded that consolidation of variable interest entities (franchisees, JV partners, suppliers, advertising co-ops) is not appropriate.",
+      "parent_dividend_policy": "All net income dividended to McDonald's Corporation each year; members' capital and retained earnings flat YoY.",
+      "operating_segment_reporting": "Single segment (U.S. McDonald's restaurants).",
+      "intercompany_relationships_disclosed": [
+        "Royalty expense to parent (\u2248$1.07B/yr)",
+        "Due to parent net (\u2248$3.31B at Dec 31 2024)",
+        "Accrued interest due to parent (\u2248$0.3M at Dec 31 2024)",
+        "Property and equipment used by McDonald's USA but with legal title retained by McDonald's Corporation under intercompany agreements",
+        "Trademark and IP licensed to McDonald's USA by Restaurant Brands LLC and McDonald's Corporation"
+      ],
+      "lease_accounting_present": true,
+      "lease_right_of_use_assets_2024": 5841.4,
+      "long_term_lease_liability_2024": 5849.0,
+      "current_lease_liability_2024": 195.9,
+      "deferred_income_taxes_2024": 1416.7
+    },
+    "statement_detail": {
+      "income_statement_2024": {
+        "revenues": {
+          "sales_by_company_owned": 3196.9,
+          "revenues_from_franchised": 7210.6,
+          "other_revenues": 223.3,
+          "total_revenues": 10630.8
+        },
+        "operating_costs_and_expenses": {
+          "food_and_paper": 925.7,
+          "payroll_and_employee_benefits": 1107.5,
+          "occupancy_and_other_company_owned": 746.5,
+          "franchised_occupancy_expenses": 1294.1,
+          "selling_general_administrative": 654.2,
+          "other_operating_income_expense_net": 7.2,
+          "other_restaurant_expenses": 162.6,
+          "total_operating_costs": 4897.8
+        },
+        "operating_income_before_royalty_to_parent": 5733.0,
+        "royalty_expense_to_parent": 1069.4,
+        "operating_income": 4663.6,
+        "interest_expense_net": 159.1,
+        "capitalized_interest_excluded": 11.4,
+        "nonoperating_income_expense_net": -2.0,
+        "income_before_taxes": 4506.5,
+        "provision_for_income_taxes": 1044.9,
+        "net_income": 3461.6
+      },
+      "income_statement_2023": {
+        "total_revenues": 10568.4,
+        "operating_income": 4631.7,
+        "net_income": 3394.4
+      },
+      "income_statement_2022": {
+        "total_revenues": 9588.4,
+        "operating_income": 4120.9,
+        "net_income": 3095.7
+      },
+      "balance_sheet_2024": {
+        "cash": 34.6,
+        "accounts_and_notes_receivable_net": 775.6,
+        "inventories": 18.1,
+        "prepaid_and_other_current": 50.3,
+        "total_current_assets": 878.6,
+        "goodwill": 1498.7,
+        "lease_right_of_use_assets": 5841.4,
+        "miscellaneous_other_assets": 896.2,
+        "total_other_assets": 8236.3,
+        "property_and_equipment_at_cost": 22921.1,
+        "accumulated_depreciation": -9840.7,
+        "net_property_and_equipment": 13080.4,
+        "total_assets": 22195.3,
+        "accounts_payable": 143.5,
+        "due_to_parent_net": 3310.6,
+        "current_lease_liability": 195.9,
+        "other_taxes": 33.9,
+        "accrued_interest_due_to_parent": 0.3,
+        "accrued_payroll_and_other": 370.2,
+        "total_current_liabilities": 4054.4,
+        "other_long_term_liabilities": 653.2,
+        "long_term_lease_liability": 5849.0,
+        "deferred_income_taxes": 1416.7,
+        "members_capital": 5588.1,
+        "retained_earnings": 4633.9,
+        "total_members_equity": 10222.0
+      },
+      "balance_sheet_2023": {
+        "cash": 42.5,
+        "total_assets": 22124.1,
+        "total_members_equity": 10222.0
+      },
+      "cash_flow_2024": {
+        "net_income": 3461.6,
+        "depreciation_and_amortization": 980.0,
+        "deferred_income_taxes": 11.5,
+        "cash_from_operations": 4552.4,
+        "property_and_equipment_expenditures": -1055.2,
+        "purchases_of_restaurant_businesses": -135.4,
+        "sales_of_restaurant_businesses_and_property": 151.1,
+        "cash_used_for_investing": -1060.7,
+        "other_financing": -38.0,
+        "dividends_to_parent": -3461.6,
+        "cash_used_for_financing": -3499.6,
+        "cash_change": -7.9,
+        "cash_end_of_year": 34.6,
+        "state_income_taxes_paid": 125.7
+      },
+      "members_equity_movement_2024": {
+        "members_capital_open": 5588.1,
+        "members_capital_close": 5588.1,
+        "retained_earnings_open": 4633.9,
+        "net_income": 3461.6,
+        "dividends_to_parent": -3461.6,
+        "retained_earnings_close": 4633.9,
+        "total_members_equity_open": 10222.0,
+        "total_members_equity_close": 10222.0
+      }
+    },
+    "bankruptcy_flag": "None",
+    "litigation_summary": {
+      "pending": "7 pending federal cases + 1 collection action (Pestonjee, Sri Lanka)",
+      "raw": {
+        "pending_count": {
+          "value": "7 pending federal cases + 1 collection action (Pestonjee, Sri Lanka)",
+          "source_object": "02_reader_report.md",
+          "source_section": "Item 3",
+          "source_pages": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "confidence": "high",
+          "status": "surfaced",
+          "notes": "Convention normalized per 17_conflict_adjudication.md \u2014 7 federal cases (Deslandes, Turner, Crawford/McPherson, Kytch, Michell, Williams, Le) plus 1 international collection action (Pestonjee Sri Lanka)"
+        },
+        "concluded_cases": [
+          {
+            "caption": "Lentini v. McDonald's USA, LLC",
+            "case_no": "LCV2017217171",
+            "court": "Hudson County Superior Court NJ",
+            "claim_type": "age discrimination / constructive termination",
+            "settlement_amount_usd": 22000000,
+            "settlement_form": "buyout of 6 franchises + general release",
+            "year": 2017,
+            "source_pages": [
+              17
+            ]
+          },
+          {
+            "caption": "Washington v. McDonald's USA, LLC",
+            "case_no": "4:21-cv-00367",
+            "court": "N.D. Ohio",
+            "claim_type": "race discrimination",
+            "settlement_amount_usd": 33500000,
+            "settlement_form": "buyout of 13 franchises + general release",
+            "year": 2021,
+            "source_pages": [
+              17
+            ]
+          },
+          {
+            "caption": "Byrd v. McDonald's USA, LLC",
+            "case_no": "1:20-cv-6447",
+            "court": "N.D. Ill.",
+            "claim_type": "race discrimination",
+            "settlement_amount_usd": 6500000,
+            "settlement_form": "buyout of 4 franchises + general release",
+            "year": 2020,
+            "source_pages": [
+              17
+            ]
+          },
+          {
+            "caption": "Tavarua Restaurants v. McDonald's USA, LLC",
+            "case_no": "19-CV-0021-MMA-NLS",
+            "court": "S.D. Cal.",
+            "claim_type": "ROFR / California franchise relations law",
+            "settlement_amount_usd": 15600000,
+            "settlement_form": "purchase of 8 franchises",
+            "year": 2019,
+            "source_pages": [
+              16
+            ]
+          },
+          {
+            "caption": "AA&S Food Service Corp. v. McDonald's Corporation",
+            "case_no": "KAC07-0725",
+            "court": "PR Court of First Instance, San Juan",
+            "claim_type": "Puerto Rico Law 75 franchise distribution",
+            "settlement_amount_usd": 15780655.92,
+            "settlement_form": "buyout of 23 franchises + attorneys' fees",
+            "year": 2007,
+            "source_pages": [
+              16
+            ]
+          },
+          {
+            "caption": "Quijano v. McDonald's USA, LLC",
+            "case_no": "CAC 402-2014-3456",
+            "court": "PR Court of First Instance, Arecibo",
+            "claim_type": "Puerto Rico Law 75",
+            "settlement_amount_usd": 6319344.08,
+            "settlement_form": "buyout of 10 franchises + attorneys' fees",
+            "year": 2014,
+            "source_pages": [
+              16
+            ]
+          },
+          {
+            "caption": "Ochoa v. McDonald's Corp.",
+            "case_no": "3:14-cv-02098-JD",
+            "court": "N.D. Cal.",
+            "claim_type": "CA labor / joint employer",
+            "settlement_amount_usd": 3750000,
+            "settlement_form": "cash + limited injunctive relief",
+            "year": 2017,
+            "source_pages": [
+              17
+            ]
+          },
+          {
+            "caption": "Bramante v. Les Restaurants McDonald du Canada",
+            "case_no": "500-06-000824-165",
+            "court": "Quebec Superior Court",
+            "claim_type": "Quebec Consumer Protection Act / Happy Meal toys",
+            "settlement_amount_cad": 1440000,
+            "settlement_form": "charitable contributions + practice changes",
+            "year": 2016,
+            "source_pages": [
+              16
+            ]
+          },
+          {
+            "caption": "Pandya / Il Ristorante del Centro v. McDonald's Development Italy",
+            "case_no": "R.G. 30320/2017",
+            "court": "Court of Milan",
+            "claim_type": "abuse of dominant position / economic dependence",
+            "settlement_amount_eur_net": 761408,
+            "settlement_form": "purchase of restaurant by McDonald's affiliate (\u20ac1,671,680 gross less \u20ac910,272 fees offset)",
+            "year": 2018,
+            "source_pages": [
+              16
+            ]
+          },
+          {
+            "caption": "Snow Estate v. McDonald's Corporation",
+            "case_no": "2:16-cv-07394",
+            "court": "C.D. Cal.",
+            "claim_type": "copyright infringement / Lanham Act",
+            "settlement_amount_usd": 650000,
+            "settlement_form": "cash + artwork removal in UK restaurant",
+            "year": 2017,
+            "source_pages": [
+              16
+            ]
+          },
+          {
+            "caption": "Howe v. McDonald's Corporation",
+            "case_no": "5:16-cv-00176",
+            "court": "C.D. Cal.",
+            "claim_type": "CA Mozzarella Cheese Sticks false advertising",
+            "settlement_amount_usd": 32500,
+            "settlement_form": "cash + general release",
+            "year": 2016,
+            "source_pages": [
+              16
+            ]
+          },
+          {
+            "caption": "Knowles v. McDonald's USA, LLC",
+            "case_no": "9:16-cv-81657-KAM",
+            "court": "S.D. Fla.",
+            "claim_type": "Happy Meal drink upcharge",
+            "settlement_amount_usd": 35000,
+            "settlement_form": "cash + release",
+            "year": 2018,
+            "source_pages": [
+              16
+            ]
+          },
+          {
+            "caption": "Bledsoe v. McDonald's USA, LLC",
+            "case_no": "2:18-cv-09354-JFW-GJS",
+            "court": "C.D. Cal. / LA County",
+            "claim_type": "drink upcharge in extra value meal",
+            "settlement_amount_usd": 2500,
+            "settlement_form": "cash + general release",
+            "year": 2019,
+            "source_pages": [
+              16
+            ]
+          },
+          {
+            "caption": "Abt v. McDonald's Corp.",
+            "case_no": "BC 552072",
+            "court": "CA state court",
+            "claim_type": "fraud re McDonald's Channel in-store TV test",
+            "settlement_amount_usd": 150000,
+            "settlement_form": "cash + release",
+            "year": 2019,
+            "source_pages": [
+              16
+            ]
+          },
+          {
+            "caption": "Kim v. McDonald's USA, LLC",
+            "case_no": "1:21-cv-05287",
+            "court": "N.D. Ill.",
+            "claim_type": "cybersecurity / personal information breach",
+            "settlement_amount_usd": 10000,
+            "settlement_form": "cash + general release",
+            "year": 2021,
+            "source_pages": [
+              17
+            ]
+          },
+          {
+            "caption": "In the Matter of Stephen J. Easterbrook and McDonald's Corporation",
+            "case_no": "SEC File 3-21269",
+            "court": "SEC administrative",
+            "claim_type": "proxy disclosure violations re former CEO separation",
+            "settlement_amount_usd": 0,
+            "settlement_form": "cease-and-desist; no monetary penalty (SEC recognized substantial cooperation)",
+            "year": 2023,
+            "source_pages": [
+              17
+            ]
+          },
+          {
+            "caption": "Clark / McDowell / Collora v. McDonald's Corporation (PFAS)",
+            "case_no": "3:22-cv-628 + N.D. Ill. consolidated",
+            "court": "S.D. Ill. + N.D. Ill.",
+            "claim_type": "PFAS in food packaging consumer fraud",
+            "settlement_amount_usd": 145000,
+            "settlement_form": "individual cash + release",
+            "year": 2023,
+            "source_pages": [
+              17
+            ]
+          },
+          {
+            "caption": "Gohari v. McDonald's Corporation",
+            "case_no": "2016-CH-08261",
+            "court": "Cook County Cir. Ct., Chancery Div.",
+            "claim_type": "Digital Menu Board pricing / Illinois consumer fraud",
+            "settlement_amount_usd": 180000,
+            "settlement_form": "individual cash + release",
+            "year": 2024,
+            "source_pages": [
+              17
+            ]
+          },
+          {
+            "caption": "Zhuang Zhi-Xun v. McDonald's Restaurants (Taiwan)",
+            "case_no": "105 Xu-Zhi No.710",
+            "court": "Taipei District Court",
+            "claim_type": "Taiwan Fair Trade Commission franchisor disclosure",
+            "settlement_amount_twd": 111172552,
+            "settlement_form": "termination of franchises + asset sale to McDonald's affiliate",
+            "year": 2016,
+            "source_pages": [
+              16
+            ]
+          }
+        ],
+        "pending_cases": [
+          {
+            "caption": "Deslandes v. McDonald's USA, LLC and McDonald's Corporation",
+            "case_no": "1:17-cv-04857",
+            "court": "N.D. Ill.",
+            "type": "no-poach class action (Sherman Act, Illinois antitrust)",
+            "status": "remanded by 7th Cir.; back at district court"
+          },
+          {
+            "caption": "Turner v. McDonald's USA, LLC and McDonald's Corporation",
+            "case_no": "1:19-cv-05524",
+            "court": "N.D. Ill.",
+            "type": "no-poach class action",
+            "status": "remanded by 7th Cir.; back at district court"
+          },
+          {
+            "caption": "Crawford et al. v. McDonald's USA, LLC",
+            "case_no": "1:20-cv-05132",
+            "court": "N.D. Ill.",
+            "type": "race discrimination by 77 former Black franchisees; bad faith breach, fraudulent inducement, federal civil rights claims; related McPherson Complaint",
+            "status": "second amended complaints; motions to dismiss pending"
+          },
+          {
+            "caption": "Kytch, Inc. v. McDonald's Corporation",
+            "case_no": "1:22-cv-00279",
+            "court": "D. Del. \u2192 N.D. Cal.",
+            "type": "false advertising / trade libel / tortious interference re ice cream machine diagnostic device",
+            "status": "transferred to N.D. Cal.; motion to dismiss largely denied"
+          },
+          {
+            "caption": "Michell v. McDonald's Corporation et al.",
+            "case_no": "1:24-cv-03442",
+            "court": "E.D.N.Y.",
+            "type": "Hispanic franchisee discrimination + Connecticut Franchise Act + retaliation; counterclaim for declaratory judgment of franchisee breach",
+            "status": "Amended Complaint partially dismissed Sept 22 2025"
+          },
+          {
+            "caption": "Williams v. McDonald's USA, LLC",
+            "case_no": "1:24-cv-11275",
+            "court": "N.D. Ill.",
+            "type": "Quarter Pounder E. coli class action; consumer fraud, negligence, unjust enrichment",
+            "status": "motion to dismiss filed Sept 26 2025"
+          },
+          {
+            "caption": "Le et al. v. McDonald's Corporation",
+            "case_no": "1:2-cv-15609",
+            "court": "N.D. Ill.",
+            "type": "McRib false advertising class action",
+            "status": "filed December 23 2025"
+          },
+          {
+            "caption": "McDonald's Corporation v. Pestonjee",
+            "case_no": "CHC 07/2024 IP",
+            "court": "Commercial High Court, Colombo, Sri Lanka",
+            "type": "collection action against franchisee",
+            "status": "filed March 21 2024"
+          }
+        ],
+        "concluded_cases_pattern": {
+          "value": "Multiple high-dollar settlement-by-buyout outcomes, including: Lentini (NJ) $22M for 6 restaurants (age discrimination); Washington (OH) $33.5M for 13 restaurants (race discrimination); Byrd (IL) $6.5M for 4 restaurants (race discrimination); Tavarua (CA) $15.6M for 8 franchises (ROFR dispute); AA&S Puerto Rico $15.78M for 23 franchises (Law 75); Quijano Puerto Rico $6.32M for 10 franchises (Law 75); Easterbrook SEC settlement (no monetary penalty); McDonald's Channel (CA) $150,000; Bramante Quebec CAD $1.44M; PFAS Clark $145,000; Snow copyright UK $650,000; Kim cybersecurity $10,000; PR Italy purchase EUR 1.67M; Bledsoe drink upcharge $2,500; Knowles Happy Meal upcharge $35,000; Howe Mozzarella sticks $32,500; Gohari digital menu pricing $180,000; Ochoa CA labor $3.75M.",
+          "source_object": "02_reader_report.md",
+          "source_section": "Item 3",
+          "source_pages": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "confidence": "high",
+          "status": "surfaced"
+        }
+      }
+    }
+  },
+  "red_flags": [
+    {
+      "severity": "warning",
+      "kind": "contradiction",
+      "summary": "Item 19 pro forma is derived from a restaurant cohort whose royalty during the covered period was 4% of Gross Sales. As of January 1, 2024, new restaurants, McOpCo-sale purchases, and franchisor ROFR "
+    },
+    {
+      "severity": "info",
+      "kind": "fee",
+      "summary": "Delinquency interest rate >= 12%/yr"
+    },
+    {
+      "severity": "warning",
+      "kind": "bankruptcy",
+      "summary": "None"
+    }
+  ],
+  "validation_questions": [
+    "Reconcile: Item 19 pro forma is derived from a restaurant cohort whose royalty during the covered period was 4% of Gross Sales. As of January 1, 2024, new restaurants, McO"
+  ],
+  "filing_changes": [
+    {
+      "field": "royalty",
+      "from_run": "shadow-final-mcdonalds-2026-04-13",
+      "old_value": "4% or 5% of Gross Sales",
+      "current_value": "5% of Gross Sales (post-Jan 1 2024 new restaurants, McOpCo purchases, post-ROFR re-sales) or 4% (legacy: family transact"
+    },
+    {
+      "field": "royalty",
+      "from_run": "mcdonalds-2025",
+      "old_value": "4% or 5% of Gross Sales",
+      "current_value": "5% of Gross Sales (post-Jan 1 2024 new restaurants, McOpCo purchases, post-ROFR re-sales) or 4% (legacy: family transact"
+    }
+  ],
+  "source_evidence": {
+    "primary_run": "mcdonalds-2025-merged-v2",
+    "harvest_runs": [
+      "mcdonalds-2025-merged",
+      "shadow-final-mcdonalds-2026-04-13",
+      "shadow-live-mcdonalds-2026-04-07-final",
+      "shadow-live-mcdonalds-2025-v2",
+      "mcdonalds-2025",
+      "shadow-previous-mcdonalds-2025"
+    ],
+    "filing_year": 2025,
+    "key_exhibits": [
+      "A \u2014 Audited financial statements (E&Y clean)",
+      "B/C/D \u2014 Three franchise agreements (Traditional, Satellite, Walmart)",
+      "G \u2014 Operator's Lease (with internal landlord/oil/co-brand/excess-property addenda)",
+      "K \u2014 New Term Policy",
+      "L \u2014 Growth Policy",
+      "N \u2014 BoA loan documents + Operator Assistance Program Agreement",
+      "R \u2014 12,887-restaurant franchisee directory",
+      "S \u2014 113 terminated/ceased franchisees",
+      "T \u2014 State addenda (CA, HI, MD, MN, ND, WA + WA AOD)"
+    ],
+    "issuance_date_pages": [
+      1,
+      389
+    ],
+    "primary_layers_present": {
+      "v2": true,
+      "v1": true,
+      "final": true,
+      "raw": true
+    },
+    "rt_depth_files": [
+      "RT_depth_contract_burdens",
+      "RT_depth_financial_notes",
+      "RT_depth_promotion_audit",
+      "RT_depth_state_addenda_promotion"
+    ]
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Notes to financial statements only sampled (page 63+) \u2014 full notes not enumerated in this canonical."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Full Operator's Lease and franchise agreement clauses not extracted line-by-line; only Item 17 cross-reference table."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit R and Exhibit S contents are extracted by structure (counts, presence) but full row-level enumeration not reproduced here."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "BoA loan loss/default rates and franchisee uptake of the guarantee program not disclosed."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "BoA guarantee-program loan loss/default rates and franchisee uptake of the BoA loan program are not disclosed in the FDD. Item 10 describes terms and pricing but provides no visibility into the realiz"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 19 pro forma is derived from a restaurant cohort whose royalty during the covered period was 4% of Gross Sales. As of January 1, 2024, new restaurants, McOpCo-sale purchases, and franchisor ROFR "
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 20 Table 1 reports 12,887 franchised outlets at year-end 2024. Exhibit A Nature of Business note reports 12,886 franchised outlets at year-end 2024. One-outlet gap. Both sources are from the same"
+    }
+  ]
+}

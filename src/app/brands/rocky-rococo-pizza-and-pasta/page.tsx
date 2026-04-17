@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getBrandBySlug } from "@/data/brands";
 import WatchButton from "@/components/WatchButton";
+import DossierPanel from "@/components/brand-page/DossierPanel";
+import { getDossier } from "@/data/dossiers";
 
 export const dynamic = "force-dynamic";
 
@@ -56,6 +58,7 @@ function MiniStat({ label, value, delta, tone }: { label: string; value: string;
 export default function RockyRococoPage() {
   const brand = getBrandBySlug("rocky-rococo-pizza-and-pasta");
   if (!brand) return notFound();
+  const dossier = getDossier("rocky-rococo-pizza-and-pasta");
 
   const royaltyPct = 5;
   const marketingFundPct = 0.75;
@@ -123,6 +126,8 @@ export default function RockyRococoPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Merged FDD dossier (best-supported output) */}
+      {dossier && <DossierPanel dossier={dossier} />}
       {/* breadcrumb */}
       <nav className="max-w-7xl mx-auto px-6 pt-6 pb-2">
         <ol className="flex items-center gap-2 text-sm text-muted">

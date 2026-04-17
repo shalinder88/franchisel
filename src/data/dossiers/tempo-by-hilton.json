@@ -1,0 +1,121 @@
+{
+  "slug": "tempo-by-hilton",
+  "name": "Tempo by Hilton",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "headquarters": "7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$23,180,398 to $57,806,098",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 23180398,
+    "investment_high_raw": 57806098
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": 5
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    },
+    {
+      "severity": "info",
+      "kind": "litigation",
+      "summary": "5 pending lawsuit(s)"
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-143-638068-2025-tempo-by-hilton-20260415-212039",
+    "primary_run_folder": "fresh-143-638068-2025-tempo-by-hilton-20260415-212039",
+    "primary_fdd_id": "638068",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 143
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Principal mark 'Tempo' not federally registered; applications pending since Dec 2019 (5+ years)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "HOA Hotels LLC license of 'The Tempo' mark to HIH is on 1-year auto-renewal \u2014 could be contested"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Three antitrust class actions pending re: IDeaS/Amadeus/STR revenue management data sharing \u2014 potential systemic impact on GRO system"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Graduate brand acquisition ($85.3M) recorded in 2024 \u2014 implications for balance sheet and portfolio management"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "$261.9M 'Due from Hilton affiliates' equity reduction \u2014 amounts not expected to be repaid"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "OnQ costs in Item 5 ($102,817-$209,352) differ from Item 7 ($107,912-$214,447) \u2014 Item 7 includes third-party costs"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 7 Note 22 says no actual Tempo data but table provides detailed estimates \u2014 estimates based on Hilton experience, not Tempo actuals"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Restricted Area historically extended for full term but franchisor states future intent to not do so \u2014 deliberate policy change"
+    }
+  ],
+  "_status": "PARTIAL"
+}

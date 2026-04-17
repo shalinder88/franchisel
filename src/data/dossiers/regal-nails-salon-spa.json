@@ -1,0 +1,128 @@
+{
+  "slug": "regal-nails-salon-spa",
+  "name": "Regal Nails, Salon & Spa",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Regal Nails, Salon & Spa, LLC",
+    "parent": null,
+    "headquarters": "5150 Florida Boulevard, Baton Rouge, LA 70806",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-28",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": 5,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 5,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-120-638042-2025-regal-nails-salon-spa-20260415-112648",
+    "primary_run_folder": "fresh-120-638042-2025-regal-nails-salon-spa-20260415-112648",
+    "primary_fdd_id": "638042",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "?",
+    "phase": "first200",
+    "slot": 120
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Financial condition risk: Special Risk #3 states franchisor's financial condition calls into question ability to provide services \u2014 yet auditor issued clean opinion with no going concern. CA DFPI and "
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Walmart 90-day no-cause termination: 2009 MLA allows Walmart to terminate any individual location lease on 90 days notice without cause \u2014 existential risk not within franchisee's control."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Percentage-based rent transition: Walmart contemplating monthly rent based on % of gross sales (up to 20%) with minimum base. Could materially change economics."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Accelerating non-renewals: 9\u219216\u219221 over three years. Root cause unclear (Walmart, franchisee, performance covenant, or franchisor decisions)."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Related party lending: $6.47M in notes to owner ($2.57M) and president ($3.90M) \u2014 45% of total equity. 11 separate notes to president."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Alfalfa pricing independence: FDD claims no control over Alfalfa pricing while CEO sole-owns both entities."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Zero projected new outlets despite 14 signed-but-not-opened agreements."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Credit loss expense increased 130% to $432,977 (2024) from $188,132 (2023), suggesting deteriorating franchisee payment performance."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Cover page Special Risk #3 states financial condition concerns vs. auditor's clean opinion with no going concern. CA DFPI fee deferral and IL addendum financial condition flag support the risk disclos"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 1/8 claim franchisor does not control Alfalfa's pricing while CEO is sole owner of both entities."
+    },
+    {
+      "topic": "schema_unrecognized",
+      "reason": "canonical schema not parsed by first-200 extractor"
+    }
+  ],
+  "_status": "PARTIAL"
+}

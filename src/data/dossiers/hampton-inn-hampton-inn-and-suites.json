@@ -1,0 +1,130 @@
+{
+  "slug": "hampton-inn-hampton-inn-and-suites",
+  "name": "Hampton Inn Hampton Inn And Suites",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": null,
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": "6% of GRR",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": 2369,
+    "franchised_units": null,
+    "company_owned_units": 0
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": "6% of GRR",
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": 2369,
+    "franchised": null,
+    "company_owned": 0,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": 5
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "litigation",
+      "summary": "5 pending lawsuit(s)"
+    }
+  ],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion.",
+    "Request current state-by-state addenda packet."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-133-638056-2025-hampton-inn-hampton-inn-and-suites-20260415-171237",
+    "primary_run_folder": "fresh-133-638056-2025-hampton-inn-hampton-inn-and-suites-20260415-171237",
+    "primary_fdd_id": "638056",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "C",
+    "phase": "first200",
+    "slot": 133
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Antitrust litigation (IDeaS, Amadeus, STR) \u2014 potential systemic impact on required technology and pricing"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No EBITDA or cost data in Item 19 \u2014 franchisees cannot assess profitability from FDD alone"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Restricted Area negotiability unknown \u2014 FDD provides no guidance on what is typically granted"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Program Fee increase ceiling ambiguity \u2014 'current rate + 1% of GRR' interpretation unclear"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Service Quality Improvement Program updates pending later this year"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Technology refresh costs have no cap on frequency or cost"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Confidentiality clause restricts former franchisee communication"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Hampton Inn brand contraction \u2014 first net decrease in recent years (-1 in 2024)"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Total hotel count discrepancy: Item 19 states 2,368; Item 20 sums to 2,369"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 20 Table 1 vs Table 3 start-of-2022 count difference (1,313 vs 1,323 for Hampton Inn)"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Financial statements Note 9 subsequent events evaluation date reads 'March 18, 2024' but should be March 18, 2025 (matching audit opinion date)"
+    }
+  ],
+  "_status": "PARTIAL"
+}

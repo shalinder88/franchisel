@@ -1,0 +1,110 @@
+{
+  "slug": "graduate-by-hilton",
+  "name": "Hilton Franchise Holding LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$18,746,437 to $91,125,745",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": false,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 18746437,
+    "investment_high_raw": 91125745
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": false
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Cherry Bekaert LLP",
+    "audit_opinion": "Clean / Unqualified",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-132-638055-2025-graduate-by-hilton-20260415-163939",
+    "primary_run_folder": "fresh-132-638055-2025-graduate-by-hilton-20260415-163939",
+    "primary_fdd_id": "638055",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 132
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Financial statements Note 9 references 'March 18, 2024' as subsequent events evaluation date \u2014 likely typo for March 18, 2025"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 20 footnote says '34 franchises in the US' but only 32 at end of 2024 \u2014 2 are signed-but-not-opened (Texas)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Financial statements cover ALL Hilton brands; Graduate-specific revenue/profitability not separately disclosed"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Monthly Program Fee spending breakdown not audited or disclosed to franchisees"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Hilton does not yet have actual initial investment data for Graduate hotels developed in their system \u2014 Item 7 estimates based on general Hilton experience"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 20 Table 3 shows 32 franchised hotels at end of 2024; footnote references 34 US franchises"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Exhibit C Note 9 references 'March 18, 2024' as subsequent events evaluation date vs. financial statements for year ended December 31, 2024"
+    }
+  ],
+  "_status": "PARTIAL"
+}

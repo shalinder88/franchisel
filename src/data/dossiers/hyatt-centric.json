@@ -1,0 +1,95 @@
+{
+  "slug": "hyatt-centric",
+  "name": "Hyatt Franchising, L.L.C.",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hyatt Franchising, L.L.C.",
+    "parent": "Hyatt Hotels Corporation",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": 20,
+    "renewal_headline": null,
+    "territory_headline": "Area of Protection (AOP) \u2014 limited time, variable size",
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 20,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": "Area of Protection (AOP) \u2014 limited time, variable size"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-15-637921-2025-hyatt-centric-20260415-034513",
+    "primary_run_folder": "fresh-15-637921-2025-hyatt-centric-20260415-034513",
+    "primary_fdd_id": "637921",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 15
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Item 19 ADR statistics \u2014 Owned/Managed '#/% Exceeding Average' shows 13/40.6% which appears to reference all 32 hotels rather than the 12 owned/managed hotels"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "AOP Term is described as 'typically' 1-5 years but is individually negotiated \u2014 prospective franchisee should clarify specific AOP duration"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Guarantor Monetary Threshold specific dollar amounts in Exhibit B-1 (negotiated per deal, not disclosed in FDD body)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Insurance requirements detailed in FA Article 9 and System Standards, not in FDD body"
+    }
+  ],
+  "_status": "PARTIAL"
+}

@@ -1,0 +1,110 @@
+{
+  "slug": "destination-by-hyatt",
+  "name": "Destination by Hyatt",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hyatt Franchising, L.L.C.",
+    "parent": "Hyatt Hotels Corporation",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": 20,
+    "renewal_headline": "Then-current form of agreement (may be materially different, including fees)",
+    "territory_headline": "Area of Protection (limited term)",
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 20,
+    "renewal": "Then-current form of agreement (may be materially different, including fees)"
+  },
+  "territory_reality": {
+    "headline": "Area of Protection (limited term)"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Deloitte & Touche LLP",
+    "audit_opinion": "Unqualified",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-16-637922-2025-destination-by-hyatt-20260415-040911",
+    "primary_run_folder": "fresh-16-637922-2025-destination-by-hyatt-20260415-040911",
+    "primary_fdd_id": "637922",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 16
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Area of Protection dimensions and AOP Term length are individually negotiated \u2014 not disclosed in FDD. A prospective franchisee cannot evaluate territorial protection without seeing their specific FA."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Guarantor Monetary Threshold specific minimum net worth and minimum liquidity amounts are set per-deal in Exhibit B-1 to the FA. Not disclosed in FDD."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Criteria for when franchisor will require (vs. offer optional) revenue management services are described qualitatively but not quantitatively."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "System Services Cost allocation methodology described at high level but actual formulas and per-hotel impact not disclosed."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Some pre-Two Roads Hospitality hotels under legacy contracts may pay less for same System Services. Extent of subsidy not disclosed."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No contractual limit on frequency or cost of required Technology System changes, upgrades, or updates."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No financial performance data of any kind provided (Item 19) for a franchise requiring $46M-$254M in investment."
+    }
+  ],
+  "_status": "PARTIAL"
+}
