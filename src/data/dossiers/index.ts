@@ -61,17 +61,17 @@ export type FranchiseDossier = {
 };
 
 const REGISTRY: Record<string, FranchiseDossier> = {
-  mcdonalds: mcdonalds as FranchiseDossier,
-  "ivybrook-academy": ivybrook as FranchiseDossier,
-  "burger-king": burgerKing as FranchiseDossier,
-  "qdoba-mexican-eats": qdoba as FranchiseDossier,
-  "rocky-rococo-pizza-and-pasta": rocky as FranchiseDossier,
-  "chick-fil-a": chickFilA as FranchiseDossier,
-  "anago-cleaning-systems": anago as FranchiseDossier,
-  "cruise-planners": cruise as FranchiseDossier,
-  cupbop: cupbop as FranchiseDossier,
-  "jiffy-lube": jiffy as FranchiseDossier,
-  "the-joint-chiropractic": joint as FranchiseDossier,
+  mcdonalds: mcdonalds as unknown as FranchiseDossier,
+  "ivybrook-academy": ivybrook as unknown as FranchiseDossier,
+  "burger-king": burgerKing as unknown as FranchiseDossier,
+  "qdoba-mexican-eats": qdoba as unknown as FranchiseDossier,
+  "rocky-rococo-pizza-and-pasta": rocky as unknown as FranchiseDossier,
+  "chick-fil-a": chickFilA as unknown as FranchiseDossier,
+  "anago-cleaning-systems": anago as unknown as FranchiseDossier,
+  "cruise-planners": cruise as unknown as FranchiseDossier,
+  cupbop: cupbop as unknown as FranchiseDossier,
+  "jiffy-lube": jiffy as unknown as FranchiseDossier,
+  "the-joint-chiropractic": joint as unknown as FranchiseDossier,
 };
 
 export function getDossier(slug: string): FranchiseDossier | null {
