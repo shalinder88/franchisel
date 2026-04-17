@@ -247,6 +247,141 @@ td.hover-cell:hover {
   animation: shimmer 3s ease-in-out infinite;
 }
 
+/* ══════════════════════════════════════════════════════════════
+   McDonald's Lux scope — premium editorial-diligence visual system
+   Scope: any descendant of `.mcd-lux`. Nothing here leaks globally.
+   ══════════════════════════════════════════════════════════════ */
+
+.mcd-lux {
+  /* Tier 2 surface and deeper ink for institutional depth */
+  --lux-ink: #f8fafc;
+  --lux-ink-soft: rgba(248, 250, 252, 0.72);
+  --lux-ink-mute: rgba(248, 250, 252, 0.48);
+  --lux-ink-faint: rgba(248, 250, 252, 0.28);
+  --lux-surface-0: #0b111d;
+  --lux-surface-1: #0f172a;
+  --lux-surface-2: #111a2e;
+  --lux-edge: rgba(255, 255, 255, 0.06);
+  --lux-edge-strong: rgba(255, 255, 255, 0.12);
+  --lux-highlight: rgba(255, 255, 255, 0.04);
+  --lux-accent: #22d3ee;
+  --lux-accent-soft: rgba(34, 211, 238, 0.14);
+  --lux-gold: #d4af7a;
+  --lux-gold-soft: rgba(212, 175, 122, 0.14);
+  --lux-danger: #f87171;
+  --lux-warn: #f59e0b;
+  --lux-good: #4ade80;
+  --lux-serif: ui-serif, Georgia, "Times New Roman", serif;
+}
+
+/* Serif display uses system ui-serif (Georgia fallback) so no webfont load */
+.mcd-lux .lux-serif { font-family: var(--lux-serif); font-feature-settings: "liga", "dlig"; letter-spacing: -0.02em; }
+.mcd-lux .lux-num { font-variant-numeric: tabular-nums; }
+.mcd-lux .lux-eyebrow { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--lux-ink-mute); font-weight: 600; }
+.mcd-lux .lux-rule { height: 1px; background: linear-gradient(90deg, transparent, var(--lux-edge-strong), transparent); }
+
+/* Card with inner highlight — the signature surface */
+.mcd-lux .lux-card {
+  background: linear-gradient(180deg, var(--lux-surface-2) 0%, var(--lux-surface-1) 100%);
+  border: 1px solid var(--lux-edge);
+  border-radius: 18px;
+  box-shadow: inset 0 1px 0 var(--lux-highlight), 0 1px 0 rgba(0,0,0,0.35);
+  transition: border-color 220ms ease, transform 220ms ease;
+}
+.mcd-lux .lux-card-hover:hover {
+  border-color: var(--lux-edge-strong);
+  transform: translateY(-1px);
+}
+.mcd-lux .lux-card-tight {
+  background: var(--lux-surface-1);
+  border: 1px solid var(--lux-edge);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 var(--lux-highlight);
+}
+
+/* Severity rails (4px left stripe on cards) */
+.mcd-lux .lux-rail-high    { box-shadow: inset 3px 0 0 var(--lux-danger), inset 0 1px 0 var(--lux-highlight); }
+.mcd-lux .lux-rail-caution { box-shadow: inset 3px 0 0 var(--lux-warn),   inset 0 1px 0 var(--lux-highlight); }
+.mcd-lux .lux-rail-neutral { box-shadow: inset 3px 0 0 var(--lux-good),   inset 0 1px 0 var(--lux-highlight); }
+
+/* Severity chips */
+.mcd-lux .lux-chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; border: 1px solid var(--lux-edge); background: var(--lux-surface-1); }
+.mcd-lux .lux-chip-high    { color: var(--lux-danger); border-color: rgba(248, 113, 113, 0.30); background: rgba(248, 113, 113, 0.08); }
+.mcd-lux .lux-chip-caution { color: var(--lux-warn);   border-color: rgba(245, 158, 11, 0.28); background: rgba(245, 158, 11, 0.08); }
+.mcd-lux .lux-chip-neutral { color: var(--lux-good);   border-color: rgba(74, 222, 128, 0.25); background: rgba(74, 222, 128, 0.06); }
+.mcd-lux .lux-chip-muted   { color: var(--lux-ink-mute); }
+
+.mcd-lux .lux-dot { width: 6px; height: 6px; border-radius: 999px; background: currentColor; }
+
+/* Delta arrow (YoY) */
+.mcd-lux .lux-delta-up   { color: var(--lux-good); }
+.mcd-lux .lux-delta-down { color: var(--lux-danger); }
+.mcd-lux .lux-delta-flat { color: var(--lux-ink-mute); }
+
+/* Section heading treatment */
+.mcd-lux .lux-section-title {
+  font-family: var(--lux-serif);
+  font-weight: 500;
+  font-size: clamp(28px, 3.2vw, 44px);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--lux-ink);
+}
+
+/* Editorial pull quote */
+.mcd-lux .lux-quote {
+  font-family: var(--lux-serif);
+  font-style: italic;
+  font-size: clamp(18px, 1.8vw, 22px);
+  line-height: 1.45;
+  color: var(--lux-ink-soft);
+  border-left: 2px solid var(--lux-gold);
+  padding-left: 18px;
+}
+
+/* Hero gradient — deeper, editorial */
+.mcd-lux .lux-hero-mesh {
+  background:
+    radial-gradient(ellipse 100% 60% at 50% -20%, rgba(34, 211, 238, 0.10), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 85% 30%, rgba(212, 175, 122, 0.06), transparent 60%),
+    linear-gradient(180deg, var(--lux-surface-2), var(--lux-surface-0));
+}
+
+/* KPI rail row (used in hero right column) */
+.mcd-lux .lux-kpi-row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--lux-edge); }
+.mcd-lux .lux-kpi-row:last-child { border-bottom: 0; }
+.mcd-lux .lux-kpi-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--lux-ink-mute); }
+.mcd-lux .lux-kpi-value { font-family: var(--lux-serif); font-weight: 500; font-size: 22px; color: var(--lux-ink); letter-spacing: -0.015em; }
+
+/* Stacked bar segments */
+.mcd-lux .lux-stack { height: 56px; border-radius: 10px; overflow: hidden; border: 1px solid var(--lux-edge); display: flex; }
+.mcd-lux .lux-stack-seg { position: relative; display: flex; align-items: center; justify-content: center; color: #0b111d; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; transition: filter 220ms ease; }
+.mcd-lux .lux-stack-seg:hover { filter: brightness(1.08); z-index: 2; }
+
+/* Range rail */
+.mcd-lux .lux-rail { position: relative; height: 10px; border-radius: 999px; background: var(--lux-surface-0); border: 1px solid var(--lux-edge); overflow: visible; }
+.mcd-lux .lux-rail-fill { position: absolute; top: -1px; bottom: -1px; border-radius: 999px; background: linear-gradient(90deg, var(--lux-accent), #67e8f9); box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 18px rgba(34, 211, 238, 0.25); }
+.mcd-lux .lux-rail-muted { position: absolute; top: 1px; bottom: 1px; border-radius: 999px; background: rgba(255, 255, 255, 0.08); }
+.mcd-lux .lux-rail-marker { position: absolute; top: -6px; width: 2px; height: 22px; background: var(--lux-gold); }
+
+/* Animated counter entrance */
+@keyframes lux-fade-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.mcd-lux .lux-fade { animation: lux-fade-up 420ms ease-out both; }
+.mcd-lux .lux-fade-1 { animation-delay: 60ms; }
+.mcd-lux .lux-fade-2 { animation-delay: 120ms; }
+.mcd-lux .lux-fade-3 { animation-delay: 180ms; }
+.mcd-lux .lux-fade-4 { animation-delay: 240ms; }
+
+/* Trend line dot */
+.mcd-lux .lux-trend-dot { fill: var(--lux-accent); stroke: var(--lux-surface-1); stroke-width: 2; }
+.mcd-lux .lux-trend-line { fill: none; stroke: var(--lux-accent); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.mcd-lux .lux-trend-area { fill: url(#lux-trend-grad); opacity: 0.35; }
+.mcd-lux .lux-trend-axis { stroke: var(--lux-edge); stroke-width: 1; }
+
+/* Link restraint */
+.mcd-lux a.lux-link { color: var(--lux-accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 220ms ease; }
+.mcd-lux a.lux-link:hover { border-bottom-color: var(--lux-accent); }
+
 /* Print styles */
 @media print {
   header, footer, nav, .no-print { display: none !important; }

@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
-import BrandPage from "@/components/brand-page/BrandPage"
+import BrandPageLux from "@/components/brand-page-lux/BrandPageLux"
 import { mcdonaldsBrandPage } from "@/lib/brand-pages/mcdonalds"
-import DossierPanel from "@/components/brand-page/DossierPanel"
 import { getDossier } from "@/data/dossiers"
 
 export const metadata: Metadata = {
@@ -20,10 +19,5 @@ export const metadata: Metadata = {
 
 export default function McDonaldsPage() {
   const dossier = getDossier("mcdonalds")
-  return (
-    <>
-      {dossier && <DossierPanel dossier={dossier} />}
-      <BrandPage model={mcdonaldsBrandPage} />
-    </>
-  )
+  return <BrandPageLux model={mcdonaldsBrandPage} dossier={dossier} />
 }
