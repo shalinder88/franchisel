@@ -93,56 +93,94 @@ export default function FinancialLux({
       {/* Balance + intercompany callout */}
       <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-4">
         <div className="lux-card p-7">
-          <div className="lux-eyebrow mb-4">Balance sheet · 2024</div>
+          <div className="flex items-baseline justify-between mb-4">
+            <div className="lux-eyebrow">Balance sheet · 2024</div>
+            <div className="text-[10px] tracking-wider uppercase text-[color:var(--lux-ink-faint)]">
+              $ millions
+            </div>
+          </div>
           <div className="grid grid-cols-2 gap-x-8 gap-y-0 text-[13px]">
             <div className="py-2.5 border-b border-[color:var(--lux-edge)] flex justify-between">
               <span className="text-[color:var(--lux-ink-mute)]">Total assets</span>
-              <span className="lux-num text-[color:var(--lux-ink)]">$22.20B</span>
+              <span className="lux-num text-[color:var(--lux-ink)]">$22,195</span>
             </div>
             <div className="py-2.5 border-b border-[color:var(--lux-edge)] flex justify-between">
               <span className="text-[color:var(--lux-ink-mute)]">Members&apos; equity</span>
-              <span className="lux-num text-[color:var(--lux-ink)]">$10.22B</span>
+              <span className="lux-num text-[color:var(--lux-ink)]">$10,222</span>
             </div>
             <div className="py-2.5 border-b border-[color:var(--lux-edge)] flex justify-between">
               <span className="text-[color:var(--lux-ink-mute)]">Net P&amp;E</span>
-              <span className="lux-num text-[color:var(--lux-ink)]">$13.08B</span>
+              <span className="lux-num text-[color:var(--lux-ink)]">$13,081</span>
             </div>
             <div className="py-2.5 border-b border-[color:var(--lux-edge)] flex justify-between">
               <span className="text-[color:var(--lux-ink-mute)]">ROU lease</span>
-              <span className="lux-num text-[color:var(--lux-ink)]">$5.84B</span>
+              <span className="lux-num text-[color:var(--lux-ink)]">$5,840</span>
             </div>
             <div className="py-2.5 border-b border-[color:var(--lux-edge)] flex justify-between">
-              <span className="text-[color:var(--lux-ink-mute)]">Cash</span>
-              <span className="lux-num text-[color:var(--lux-ink)]">$34.6M</span>
+              <span className="text-[color:var(--lux-ink-mute)]">Future min rent receivable</span>
+              <span className="lux-num text-[color:var(--lux-ink)]">$14,161</span>
             </div>
             <div className="py-2.5 border-b border-[color:var(--lux-edge)] flex justify-between">
               <span className="text-[color:var(--lux-ink-mute)]">Due to parent</span>
-              <span className="lux-num text-[color:var(--lux-ink)]">$3.31B</span>
+              <span className="lux-num text-[color:var(--lux-ink)]">$2,400</span>
             </div>
           </div>
-          <p className="mt-4 pt-4 border-t border-[color:var(--lux-edge)] text-[12px] text-[color:var(--lux-ink-mute)]">
-            Cash balance looks small only because 100% of net income is dividended upstream to McDonald&apos;s Corporation every year.
+          <p className="mt-4 pt-4 border-t border-[color:var(--lux-edge)] text-[12px] text-[color:var(--lux-ink-mute)] leading-relaxed">
+            $14.16B future minimum rent receivable is the real asset — McDonald&apos;s owns the real estate and
+            you pay a stream of rent on it. That is a strength for the franchisor, a burden for operators.
           </p>
         </div>
 
         <div className="lux-card lux-rail-caution p-7">
           <div className="flex items-center gap-2 mb-3">
             <Icon name="info" width={15} height={15} className="text-[color:var(--lux-warn)]" />
-            <div className="lux-eyebrow">Structural caution</div>
+            <div className="lux-eyebrow">Structural cautions</div>
           </div>
-          <div className="lux-serif text-[18px] text-[color:var(--lux-ink)] leading-snug mb-3">
-            2% IP royalty to parent · <span className="lux-num">≈ $1.07B/yr</span>
-          </div>
-          <p className="text-[12px] text-[color:var(--lux-ink-mute)] leading-relaxed">
-            This royalty reduces McDonald&apos;s USA operating income before it&apos;s consolidated at the Corporation level. It doesn&apos;t threaten solvency, but it is worth modeling explicitly.
-          </p>
-          <div className="mt-4 pt-4 border-t border-[color:var(--lux-edge)]">
-            <div className="lux-eyebrow mb-2">Subsequent event</div>
-            <p className="text-[12px] text-[color:var(--lux-ink-soft)] leading-relaxed">
-              $2.4B intercompany payable converted to equity on February 17, 2025 — disclosed in notes.
-            </p>
+          <div className="space-y-4">
+            <div>
+              <div className="lux-serif text-[16px] text-[color:var(--lux-ink)] leading-snug mb-1">
+                2% IP royalty to parent · <span className="lux-num">$1,069M / yr</span>
+              </div>
+              <p className="text-[11.5px] text-[color:var(--lux-ink-mute)] leading-relaxed">
+                Reduces operating income before consolidation. Does not threaten solvency — model explicitly.
+              </p>
+            </div>
+            <div className="border-t border-[color:var(--lux-edge)] pt-4">
+              <div className="lux-serif text-[16px] text-[color:var(--lux-ink)] leading-snug mb-1">
+                Subsequent event · <span className="lux-num">$2.4B → equity</span>
+              </div>
+              <p className="text-[11.5px] text-[color:var(--lux-ink-mute)] leading-relaxed">
+                Intercompany payable converted to equity on 2025-02-17. Disclosed in notes.
+              </p>
+            </div>
+            <div className="border-t border-[color:var(--lux-edge)] pt-4">
+              <div className="lux-serif text-[16px] text-[color:var(--lux-ink)] leading-snug mb-1">
+                Guarantor floor · <span className="lux-num">18%</span>{" "}
+                <span className="text-[12px] text-[color:var(--lux-ink-mute)]">vs FA delinquency 15%</span>
+              </div>
+              <p className="text-[11.5px] text-[color:var(--lux-ink-mute)] leading-relaxed">
+                Parent can enforce guaranties once delinquencies cross 18% of receivable. Current rate sits 3 pts below — close enough to watch.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+
+      {/* Effective rent range — compact full-width strip */}
+      <div className="mt-4 lux-card px-7 py-5 flex flex-wrap items-center justify-between gap-4">
+        <div className="flex items-center gap-3">
+          <Icon name="rent" width={16} height={16} className="text-[color:var(--lux-gold)]" />
+          <div>
+            <div className="lux-eyebrow mb-1">Effective rent range · operator lens</div>
+            <div className="lux-serif text-[18px] text-[color:var(--lux-ink)] leading-tight">
+              0% – 33.33% of gross sales
+            </div>
+          </div>
+        </div>
+        <p className="text-[12px] text-[color:var(--lux-ink-mute)] max-w-md leading-relaxed">
+          Percentage-rent plus base-rent-equivalent can push effective rent above 30% at weak locations.
+          It is the single biggest variable in whether a McDonald&apos;s P&amp;L actually works.
+        </p>
       </div>
     </SectionLux>
   )

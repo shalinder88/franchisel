@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { Fragment, useState } from "react"
 import type { BrandPageModel } from "@/lib/brand-page-model"
 import { Icon, type IconName } from "./icons"
 
@@ -272,11 +272,8 @@ export default function CompareTrayLux() {
             ))}
 
             {DIMS.map((dim) => (
-              <>
-                <div
-                  key={`h-${dim.key}`}
-                  className="flex items-center gap-2 py-2.5 border-t border-[color:var(--lux-edge)] text-[color:var(--lux-ink-soft)]"
-                >
+              <Fragment key={dim.key}>
+                <div className="flex items-center gap-2 py-2.5 border-t border-[color:var(--lux-edge)] text-[color:var(--lux-ink-soft)]">
                   <Icon
                     name={dim.icon}
                     width={12}
@@ -293,7 +290,7 @@ export default function CompareTrayLux() {
                     {c.values[dim.key]}
                   </div>
                 ))}
-              </>
+              </Fragment>
             ))}
           </div>
         </div>

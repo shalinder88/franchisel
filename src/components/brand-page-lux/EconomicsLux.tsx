@@ -3,6 +3,8 @@ import { useState } from "react"
 import type { BrandPageModel } from "@/lib/brand-page-model"
 import { SectionLux, Chip } from "./primitives"
 import { Icon, type IconName } from "./icons"
+
+type BurdenView = "mix" | "fixed" | "variable"
 import {
   formatUsdCompact,
   formatUsdRange,
@@ -47,6 +49,7 @@ const MCOPCO_PCT_ABOVE_3M = 96
 const MCOPCO_MEAN = 4.79
 
 export default function EconomicsLux({ economics }: { economics: BrandPageModel["economics"] }) {
+  const [burdenView, setBurdenView] = useState<BurdenView>("mix")
   const { investment, ongoingFees, item19 } = economics
   const bars = investmentBucketBars(investment.buckets, investment.rangeLow, investment.rangeHigh)
 
@@ -82,11 +85,24 @@ export default function EconomicsLux({ economics }: { economics: BrandPageModel[
 
   // Translate each % into dollars @ $3.8M median unit
   const medianRev = 3_800_000
-  const feesInDollars = feeSegments.map((s) => ({
-    ...s,
-    dollars: Math.round((s.pct / 100) * medianRev),
-  }))
+  const feesInDollars = feeSegments.map((s) => {
+    const l = s.fullLabel.toLowerCase()
+    // "Fixed" = not driven by gross sales. Tech fees are effectively flat.
+    // Everything else scales with sales (royalty, ad, OPNAD, % rent).
+    const isFixed = l.includes("tech")
+    return {
+      ...s,
+      dollars: Math.round((s.pct / 100) * medianRev),
+      isFixed,
+    }
+  })
   const totalDollars = feesInDollars.reduce((a, s) => a + s.dollars, 0)
+
+  const visibleFees = feesInDollars.filter((s) =>
+    burdenView === "mix" ? true : burdenView === "fixed" ? s.isFixed : !s.isFixed,
+  )
+  const renderedPct = visibleFees.reduce((a, s) => a + s.pct, 0)
+  const renderedDollars = visibleFees.reduce((a, s) => a + s.dollars, 0)
 
   const conditional = ongoingFees.components.filter((c) => c.type === "conditional")
 
@@ -160,42 +176,112 @@ export default function EconomicsLux({ economics }: { economics: BrandPageModel[
 
       {/* ══ PANEL 2 — Recurring fee extraction (pct + dollars) ══ */}
       <div className="lux-card p-7 sm:p-10 mb-5 lux-fade lux-fade-1">
-        <div className="flex items-start justify-between flex-wrap gap-6 mb-6">
+        <div className="flex items-start justify-between flex-wrap gap-6 mb-5">
           <div>
             <div className="lux-eyebrow mb-2">Recurring fee extraction</div>
             <div className="flex items-baseline gap-3">
               <span className="lux-serif font-medium text-[40px] sm:text-[52px] leading-none text-[color:var(--lux-ink)] lux-num tracking-tight">
-                ~{Math.round(totalPct)}%
+                ~{Math.round(renderedPct)}%
               </span>
-              <span className="text-[14px] text-[color:var(--lux-ink-mute)]">of gross sales, before rent uplift</span>
+              <span className="text-[14px] text-[color:var(--lux-ink-mute)]">
+                {burdenView === "fixed"
+                  ? "fixed burden · non-sales-linked"
+                  : burdenView === "variable"
+                    ? "variable burden · tied to gross sales"
+                    : "of gross sales, before rent uplift"}
+              </span>
             </div>
           </div>
           <div className="text-right">
             <div className="lux-eyebrow mb-2">@ $3.8M median unit</div>
             <div className="lux-serif font-medium text-[22px] text-[color:var(--lux-gold)] lux-num tracking-tight">
-              ≈ ${Math.round(totalDollars / 1000).toLocaleString()}K
+              ≈ ${Math.round(renderedDollars / 1000).toLocaleString()}K
             </div>
             <div className="text-[11px] text-[color:var(--lux-ink-faint)] mt-1">per year extracted</div>
           </div>
         </div>
 
-        {/* Stacked % bar */}
-        <div className="lux-stack mb-4">
-          {feeSegments.map((s) => (
-            <div
-              key={s.key}
-              className="lux-stack-seg"
-              style={{ width: `${(s.pct / totalPct) * 100}%`, background: s.color }}
-              title={`${s.fullLabel}: ${s.value}`}
-            >
-              {s.pct >= 3 ? `${s.pct}%` : ""}
-            </div>
-          ))}
+        {/* Burden view toggle — Explorer control */}
+        <div
+          role="tablist"
+          aria-label="Burden view"
+          className="inline-flex items-center gap-1 p-1 mb-5 rounded-full border border-[color:var(--lux-edge)] bg-[color:var(--lux-surface-0)]"
+        >
+          {(
+            [
+              { id: "mix", label: "All fees", tag: "% + $" },
+              { id: "variable", label: "Variable", tag: "sales-linked" },
+              { id: "fixed", label: "Fixed", tag: "flat" },
+            ] as Array<{ id: BurdenView; label: string; tag: string }>
+          ).map((opt) => {
+            const active = burdenView === opt.id
+            return (
+              <button
+                key={opt.id}
+                role="tab"
+                aria-selected={active}
+                onClick={() => setBurdenView(opt.id)}
+                className={`inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[11px] transition-colors duration-220 ${
+                  active
+                    ? "bg-[color:var(--lux-gold)]/15 text-[color:var(--lux-ink)] shadow-[inset_0_0_0_1px_rgba(212,175,122,0.28)]"
+                    : "text-[color:var(--lux-ink-mute)] hover:text-[color:var(--lux-ink-soft)]"
+                }`}
+              >
+                <span className="font-medium">{opt.label}</span>
+                <span
+                  className={`text-[9px] tracking-wider uppercase ${active ? "text-[color:var(--lux-gold)]" : "text-[color:var(--lux-ink-faint)]"}`}
+                >
+                  {opt.tag}
+                </span>
+              </button>
+            )
+          })}
         </div>
+
+        {burdenView === "fixed" ? (
+          /* Fixed burden is dollar-denominated, not % — render as dollar strip */
+          <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div className="lux-card-tight p-4">
+              <div className="lux-eyebrow mb-2">Required tech fees</div>
+              <div className="lux-serif text-[22px] text-[color:var(--lux-ink)] lux-num leading-none">
+                ≈ $10,500 / yr
+              </div>
+              <p className="mt-2 text-[11px] text-[color:var(--lux-ink-faint)] leading-snug">
+                Flat annual tech stack (POS, back-office, digital). Does not scale with sales.
+              </p>
+            </div>
+            <div className="lux-card-tight p-4">
+              <div className="lux-eyebrow mb-2">Other flat obligations</div>
+              <div className="lux-serif text-[16px] text-[color:var(--lux-ink-soft)] leading-snug">
+                Build-out, training, insurance minimums, local marketing floors.
+              </div>
+              <p className="mt-2 text-[11px] text-[color:var(--lux-ink-faint)] leading-snug">
+                Modelled in Item 7 anatomy above. Sales-independent but material.
+              </p>
+            </div>
+          </div>
+        ) : (
+          /* Stacked % bar — for "mix" and "variable" modes */
+          <div className="lux-stack mb-4">
+            {visibleFees.map((s) => (
+              <div
+                key={s.key}
+                className="lux-stack-seg"
+                style={{
+                  width: `${(s.pct / (renderedPct || 1)) * 100}%`,
+                  background: s.color,
+                }}
+                title={`${s.fullLabel}: ${s.value}`}
+              >
+                {s.pct >= 3 ? `${s.pct}%` : ""}
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Legend with icon + dollar translation */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2.5 mt-5">
-          {feesInDollars.map((s) => (
+          {visibleFees.map((s) => (
             <div key={s.key} className="flex items-baseline gap-3 text-[12px] py-1.5 border-b border-[color:var(--lux-edge)]">
               <span className="h-2.5 w-2.5 rounded-sm shrink-0" style={{ background: s.color }} />
               <Icon name={s.icon} width={13} height={13} className="text-[color:var(--lux-ink-mute)] shrink-0" />
@@ -242,9 +328,44 @@ export default function EconomicsLux({ economics }: { economics: BrandPageModel[
             </div>
           </div>
           <div className="flex flex-col items-end gap-2">
-            <Chip severity="neutral" icon="check">Large sample</Chip>
-            <Chip severity="neutral" icon="check">Breakdown shown</Chip>
-            <Chip severity="caution" icon="flag">4% royalty basis</Chip>
+            <Chip severity="neutral" icon="check">Large sample · 12,572 units</Chip>
+            <Chip severity="neutral" icon="check">Medians + percentiles disclosed</Chip>
+            <Chip severity="caution" icon="flag">Royalty basis caveat below</Chip>
+          </div>
+        </div>
+
+        {/* 4% vs 5% royalty caveat — explicit teaching block */}
+        <div className="grid grid-cols-1 sm:grid-cols-[1fr_1fr_auto] items-stretch gap-0 mb-8 rounded-[14px] border border-[color:var(--lux-warn)]/25 overflow-hidden bg-[color:var(--lux-warn)]/4">
+          <div className="px-5 py-4 border-r border-[color:var(--lux-edge)]">
+            <div className="lux-eyebrow mb-1.5">As disclosed · Item 19</div>
+            <div className="flex items-baseline gap-2">
+              <span className="lux-serif text-[28px] text-[color:var(--lux-ink)] lux-num leading-none">4%</span>
+              <span className="text-[11px] text-[color:var(--lux-ink-mute)]">royalty basis used in pro forma</span>
+            </div>
+            <p className="mt-2 text-[11px] text-[color:var(--lux-ink-faint)] leading-snug">
+              The FDD models average-unit math against the <em>legacy</em> royalty rate that applied before 2024.
+            </p>
+          </div>
+          <div className="px-5 py-4 border-r border-[color:var(--lux-edge)] sm:border-r">
+            <div className="lux-eyebrow mb-1.5 text-[color:var(--lux-warn)]">
+              What you'll actually pay
+            </div>
+            <div className="flex items-baseline gap-2">
+              <span className="lux-serif text-[28px] text-[color:var(--lux-warn)] lux-num leading-none">5%</span>
+              <span className="text-[11px] text-[color:var(--lux-ink-mute)]">royalty basis for new restaurants</span>
+            </div>
+            <p className="mt-2 text-[11px] text-[color:var(--lux-ink-faint)] leading-snug">
+              Every post-2024 franchise agreement uses 5%. The disclosure math does not.
+            </p>
+          </div>
+          <div className="px-5 py-4 flex flex-col justify-center sm:min-w-[168px]">
+            <div className="lux-eyebrow mb-1.5">Annual gap</div>
+            <div className="lux-serif text-[28px] text-[color:var(--lux-ink)] lux-num leading-none">
+              –$38K
+            </div>
+            <p className="mt-2 text-[11px] text-[color:var(--lux-ink-faint)] leading-snug">
+              per unit at $3.8M median. Redo unit economics at 5%.
+            </p>
           </div>
         </div>
 

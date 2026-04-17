@@ -104,6 +104,35 @@ export default function StateLux({
         </div>
       </div>
 
+      {/* Six-state severity summary strip */}
+      <div className="mb-4 px-5 py-3 rounded-[14px] border border-[color:var(--lux-edge)] bg-[color:var(--lux-surface-1)]/60 flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px]">
+        <span className="lux-eyebrow">Six states modify the FA</span>
+        <span className="text-[color:var(--lux-ink-faint)]">·</span>
+        <span className="text-[color:var(--lux-good)]">
+          <span className="lux-num">
+            {addenda.entries.filter((e) => e.severity === "neutral").length}
+          </span>{" "}
+          operator-favorable
+        </span>
+        <span className="text-[color:var(--lux-ink-faint)]">·</span>
+        <span className="text-[color:var(--lux-warn)]">
+          <span className="lux-num">
+            {addenda.entries.filter((e) => e.severity === "caution").length}
+          </span>{" "}
+          mixed
+        </span>
+        <span className="text-[color:var(--lux-ink-faint)]">·</span>
+        <span className="text-[color:var(--lux-danger)]">
+          <span className="lux-num">
+            {addenda.entries.filter((e) => e.severity === "high").length}
+          </span>{" "}
+          operator-adverse
+        </span>
+        <span className="ml-auto text-[color:var(--lux-ink-faint)] text-[10px] tracking-wider uppercase">
+          {addenda.entries.map((e) => stateAbbreviation(e.state)).join(" · ")}
+        </span>
+      </div>
+
       {/* Always-expanded state cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {addenda.entries.map((e) => {
@@ -123,14 +152,32 @@ export default function StateLux({
                   {sev === "high" ? "Adverse" : sev === "caution" ? "Mixed" : "Favorable"}
                 </Chip>
               </div>
-              <p className="text-[13px] text-[color:var(--lux-ink-soft)] leading-relaxed">{e.overrideSummary}</p>
-              <p className="mt-3 pt-3 border-t border-[color:var(--lux-edge)] text-[12px] text-[color:var(--lux-ink-mute)] leading-relaxed">
-                <span className="text-[color:var(--lux-ink-soft)] font-medium">Why it matters — </span>
-                {e.whyItMatters}
-              </p>
+              {/* Change → Impact two-row structure */}
+              <div className="space-y-2.5">
+                <div className="flex items-start gap-2.5">
+                  <span className="lux-eyebrow shrink-0 w-[60px] pt-[3px]">Change</span>
+                  <p className="text-[13px] text-[color:var(--lux-ink-soft)] leading-relaxed">
+                    {e.overrideSummary}
+                  </p>
+                </div>
+                <div className="flex items-start gap-2.5 pt-2.5 border-t border-[color:var(--lux-edge)]">
+                  <span className="lux-eyebrow shrink-0 w-[60px] pt-[3px] text-[color:var(--lux-gold)]">Impact</span>
+                  <p className="text-[12px] text-[color:var(--lux-ink-mute)] leading-relaxed">
+                    {e.whyItMatters}
+                  </p>
+                </div>
+              </div>
               {e.sourcePages && e.sourcePages.length > 0 && (
-                <div className="mt-3 text-[10px] text-[color:var(--lux-ink-faint)] lux-num tracking-wider uppercase">
-                  Exhibit T · p. {e.sourcePages.join(", ")}
+                <div className="mt-3 pt-3 border-t border-[color:var(--lux-edge)] flex items-center justify-between">
+                  <span className="text-[10px] text-[color:var(--lux-ink-faint)] lux-num tracking-wider uppercase">
+                    Exhibit T · p. {e.sourcePages.join(", ")}
+                  </span>
+                  <a
+                    href="#dossier"
+                    className="text-[10px] tracking-[0.18em] uppercase text-[color:var(--lux-ink-faint)] hover:text-[color:var(--lux-ink-soft)] transition-colors"
+                  >
+                    See evidence →
+                  </a>
                 </div>
               )}
             </div>

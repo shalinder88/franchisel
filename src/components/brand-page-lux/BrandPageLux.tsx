@@ -5,6 +5,7 @@ import StickyTocLux from "./StickyTocLux"
 import HeroLux from "./HeroLux"
 import TrustRailLux from "./TrustRailLux"
 import ModeSwitcherLux from "./ModeSwitcherLux"
+import WhatChangedLux from "./WhatChangedLux"
 import LeanStripLux from "./LeanStripLux"
 import CTARailLux from "./CTARailLux"
 import GuidedLux from "./GuidedLux"
@@ -90,6 +91,8 @@ export default function BrandPageLux({
           </nav>
 
           <TrustRailLux model={model} dossier={dossier} />
+
+          <WhatChangedLux />
 
           <ModeSwitcherLux />
 
