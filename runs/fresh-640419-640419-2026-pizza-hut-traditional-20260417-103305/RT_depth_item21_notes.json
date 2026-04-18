@@ -1,0 +1,43 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_block": "A2 Targeted Depth Block 1 — Item 21 note walk",
+  "extraction_method": "normal_text_extraction",
+  "note_pages_surfaced": [383, 384, 385, 386, 387, 388, 389],
+  "note_pages_walked": [383, 384, 385, 386, 387, 388, 389],
+  "note_families_present": [
+    {"family": "description_of_business", "note": 1, "pages": [383], "walked": true},
+    {"family": "consolidation_basis", "note": "2(a)", "pages": [383, 384], "walked": true},
+    {"family": "reclassifications", "note": "2(b)", "pages": [384], "walked": true},
+    {"family": "use_of_estimates", "note": "2(c)", "pages": [385], "walked": true},
+    {"family": "fiscal_year", "note": "2(d)", "pages": [385], "walked": true},
+    {"family": "cash_restricted_cash", "note": "2(e)", "pages": [385], "walked": true},
+    {"family": "accounts_receivable", "note": "2(f)", "pages": [385], "walked": true},
+    {"family": "fair_value", "note": "2(g)", "pages": [386], "walked": true},
+    {"family": "software_equipment", "note": "2(h)", "pages": [386], "walked": true},
+    {"family": "revolving_loc", "note": "2(i)", "pages": [386], "walked": true},
+    {"family": "revenue_recognition", "note": "2(j)", "pages": [386, 387], "walked": true},
+    {"family": "franchise_support_costs", "note": "2(k)", "pages": [387], "walked": true},
+    {"family": "franchise_incentives", "note": "2(l)", "pages": [388], "walked": true},
+    {"family": "contract_liabilities", "note": "2(m)", "pages": [388], "walked": true},
+    {"family": "income_taxes", "note": "2(n)", "pages": [388], "walked": true},
+    {"family": "related_party", "note": "2(o)", "pages": [388], "walked": true},
+    {"family": "member_equity", "note": 3, "pages": [389], "walked": true},
+    {"family": "costs_expenses_detail", "note": 4, "pages": [389], "walked": true},
+    {"family": "subsequent_events", "note": 5, "pages": [389], "walked": true}
+  ],
+  "lease_rou_structure": "Not applicable — entity does not hold leases. PHALLC leases real estate.",
+  "parent_affiliate_structure": {
+    "due_from_affiliate_pha": {"2025": 14589000, "2024": 13285000},
+    "due_from_yum_cash_sweep": {"2025": 193422000, "2024": 226900000, "2023": 231843000},
+    "no_management_services_agreement": true,
+    "all_costs_allocated_from_pha": true,
+    "no_yum_costs_allocated": true
+  },
+  "tax_structure": {
+    "disregarded_entity": true,
+    "no_income_taxes": true,
+    "income_taxed_at_yum_level": true,
+    "current_deferred_tax": "None recorded"
+  },
+  "unread_or_uncertain": []
+}

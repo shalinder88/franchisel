@@ -1,0 +1,389 @@
+{
+  "tables": [
+    {
+      "id": "item6_fees",
+      "item": "6",
+      "title": "Other Fees",
+      "source_pages": [24],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "License Fee", "amount": "10% of Gross Receipts", "due_date": "Monthly, by 25th of each month", "remarks": "Transportation venues pay 7% instead of 10%"},
+        {"fee": "Additional Training", "amount": "$250-$400 per employee", "due_date": "At least 10 days prior to 1st day of training", "remarks": "No fee for first 2 employees to be trained per new site"},
+        {"fee": "Handling Fee", "amount": "8% of equipment/signage purchase price", "due_date": "As incurred", "remarks": "Covers admin costs of CFA equipment vendor"},
+        {"fee": "Audit", "amount": "Underpayment + 12% p.a. interest", "due_date": "Within 30 days of notification", "remarks": "If 5%+ understatement, also pay all CFA audit costs"},
+        {"fee": "Indemnification", "amount": "Varies", "due_date": "As incurred", "remarks": "Claims from Licensed Unit operations"},
+        {"fee": "Late Payment Charge", "amount": "12% p.a. on amounts 30+ days overdue", "due_date": "As incurred", "remarks": ""}
+      ],
+      "table_notes": [
+        "1. All fees imposed by and payable to Chick-fil-A. All fees non-refundable and uniformly imposed except as noted.",
+        "2. Gross Receipts includes all cash and charge sales from Licensed Units except refunds and employee meals incident to employment.",
+        "3. Training fee does not include travel, room, living expenses, wages, or workers comp coverage.",
+        "4. If audit discloses 5%+ understatement, must also pay all CFA audit costs."
+      ],
+      "provenance": "Extracted from Item 6 fee table, page 24"
+    },
+    {
+      "id": "item7_initial_investment",
+      "item": "7",
+      "title": "Estimated Initial Investment",
+      "source_pages": [25, 26],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Opening Inventory/Paper Supplies", "low": 11500, "high": 65000, "payment": "As Incurred", "when": "As Incurred", "to": "CFA, CFA Supply, Other Suppliers"},
+        {"type": "Utensils and Other Smallwares", "low": 10000, "high": 35000, "payment": "As Incurred", "when": "As Incurred", "to": "CFA, CFA Supply, Other Suppliers"},
+        {"type": "Equipment/Signage", "low": 100000, "high": 400000, "payment": "As Incurred", "when": "As Incurred", "to": "CFA/Third Parties"},
+        {"type": "Build-out", "low": 300000, "high": 1886000, "payment": "As Incurred", "when": "As Incurred", "to": "Third Parties"},
+        {"type": "Architectural/Mechanical/Other Drawings", "low": 15000, "high": 100000, "payment": "As Incurred", "when": "As Incurred", "to": "Third Parties"},
+        {"type": "Additional Funds (first 3 months)", "low": 149000, "high": 951000, "payment": "As Incurred", "when": "First 3 Months", "to": "CFA, CFA Supply, Employees, Utilities, Other"}
+      ],
+      "total_low": 585500,
+      "total_high": 3437000,
+      "table_notes": [
+        "1. Covers Self-Operator and Food Service Provider Licensed Units including custom facades, counter areas, retail facilities.",
+        "2. Security deposits, insurance, lease/sublease payments not included — vary greatly.",
+        "3. Opening inventory costs only estimated — CFA does not know actual Licensee costs.",
+        "4. Equipment costs based on CFA's own experience in establishing similar operations.",
+        "5. Build-out costs vary greatly by location.",
+        "6. Additional funds estimate for first 3 months including repairs, maintenance, utilities."
+      ],
+      "provenance": "Extracted from Item 7 investment table, pages 25-26"
+    },
+    {
+      "id": "item19_fpr_college",
+      "item": "19",
+      "title": "Financial Performance — College/University Campus Licensed Units (2024)",
+      "source_pages": [53, 54],
+      "population": 312,
+      "total_qualified": 409,
+      "period": "Calendar Year 2024",
+      "metrics": {
+        "median_annual_sales": 897932,
+        "average_annual_sales": 1395745,
+        "pct_at_or_above_average": 40,
+        "count_at_or_above_average": 126,
+        "highest_annual_sales": 4906963,
+        "lowest_annual_sales": 192830
+      },
+      "distribution": [
+        {"range": "< $500,000", "pct": 10},
+        {"range": "$500,000 - $750,000", "pct": 13},
+        {"range": "$750,000 - $1,000,000", "pct": 19},
+        {"range": "$1,000,000 - $2,000,000", "pct": 35},
+        {"range": "> $2,000,000", "pct": 23}
+      ],
+      "closures_2024": {"permanent_closures": 2, "open_less_than_12_months": 0},
+      "table_notes": [
+        "Annual sales volume = entire gross receipts excluding sales taxes.",
+        "Does NOT reflect costs of sales or operating expenses.",
+        "Individual results may differ."
+      ],
+      "provenance": "Extracted from Item 19, pages 53-54"
+    },
+    {
+      "id": "item19_fpr_hospital_airport",
+      "item": "19",
+      "title": "Financial Performance — Hospital/Business/Industry/Airport Licensed Units (2024)",
+      "source_pages": [53, 54],
+      "population": 97,
+      "total_qualified": 409,
+      "period": "Calendar Year 2024",
+      "metrics": {
+        "median_annual_sales": 3152764,
+        "average_annual_sales": 3451788,
+        "pct_at_or_above_average": 46,
+        "count_at_or_above_average": 45,
+        "highest_annual_sales": 11573107,
+        "lowest_annual_sales": 150498
+      },
+      "distribution": [
+        {"range": "< $1,000,000", "pct": 11},
+        {"range": "$1,000,000 - $2,000,000", "pct": 33},
+        {"range": "$2,000,000 - $4,000,000", "pct": 30},
+        {"range": "> $4,000,000", "pct": 26}
+      ],
+      "closures_2024": {"permanent_closures": 3, "open_less_than_12_months": 0},
+      "table_notes": [
+        "Annual sales volume = entire gross receipts excluding sales taxes.",
+        "Does NOT reflect costs of sales or operating expenses.",
+        "Individual results may differ."
+      ],
+      "provenance": "Extracted from Item 19, pages 53-54"
+    },
+    {
+      "id": "item20_table1_licensed",
+      "item": "20",
+      "title": "Table 1 — System-Wide Outlet Summary — Licensed Units",
+      "source_pages": [56],
+      "rows": [
+        {"year": 2022, "type": "Licensed", "start": 393, "end": 395, "net_change": 2},
+        {"year": 2023, "type": "Licensed", "start": 395, "end": 412, "net_change": 17},
+        {"year": 2024, "type": "Licensed", "start": 412, "end": 425, "net_change": 13},
+        {"year": 2022, "type": "Company Owned", "start": 0, "end": 0, "net_change": 0},
+        {"year": 2023, "type": "Company Owned", "start": 0, "end": 0, "net_change": 0},
+        {"year": 2024, "type": "Company Owned", "start": 0, "end": 0, "net_change": 0}
+      ],
+      "provenance": "Extracted from Item 20 Table 1, page 56"
+    },
+    {
+      "id": "item20_table1_restaurants",
+      "item": "20",
+      "title": "Table 1 — System-Wide Outlet Summary — Franchised/Company Restaurants",
+      "source_pages": [56],
+      "rows": [
+        {"year": 2022, "type": "Franchised", "start": 2230, "end": 2338, "net_change": 108},
+        {"year": 2023, "type": "Franchised", "start": 2331, "end": 2494, "net_change": 163},
+        {"year": 2024, "type": "Franchised", "start": 2494, "end": 2629, "net_change": 135},
+        {"year": 2022, "type": "Company Owned", "start": 81, "end": 73, "net_change": -8},
+        {"year": 2023, "type": "Company Owned", "start": 80, "end": 58, "net_change": -22},
+        {"year": 2024, "type": "Company Owned", "start": 58, "end": 55, "net_change": -3}
+      ],
+      "provenance": "Extracted from Item 20 Table 1, page 56"
+    },
+    {
+      "id": "item20_table2_transfers",
+      "item": "20",
+      "title": "Table 2 — Transfers of Outlets",
+      "source_pages": [57],
+      "summary": "Zero transfers in all three years (2022-2024) for both Licensed Units and Franchised Restaurants",
+      "rows": [
+        {"year": 2022, "type": "Licensed Units", "transfers": 0},
+        {"year": 2023, "type": "Licensed Units", "transfers": 0},
+        {"year": 2024, "type": "Licensed Units", "transfers": 0},
+        {"year": 2022, "type": "Franchised Restaurants", "transfers": 0},
+        {"year": 2023, "type": "Franchised Restaurants", "transfers": 0},
+        {"year": 2024, "type": "Franchised Restaurants", "transfers": 0}
+      ],
+      "table_notes": [
+        "Transfer = acquisition of Licensed Unit or Restaurant during its term by person other than CFA or affiliate."
+      ],
+      "provenance": "Extracted from Item 20 Table 2, page 57"
+    },
+    {
+      "id": "item20_table3_licensed_totals",
+      "item": "20",
+      "title": "Table 3 — Status of Licensed Units (Footer Totals)",
+      "source_pages": [58, 59, 60, 61],
+      "footer_totals": {
+        "2022": {"start": 393, "opened": 8, "terminations": 6, "non_renewals": 0, "reacquired": 0, "ceased_operations": 0, "end": 395},
+        "2023": {"start": 395, "opened": 25, "terminations": 8, "non_renewals": 0, "reacquired": 0, "ceased_operations": 0, "end": 412},
+        "2024": {"start": 412, "opened": 18, "terminations": 5, "non_renewals": 0, "reacquired": 0, "ceased_operations": 0, "end": 425}
+      },
+      "table_notes": [
+        "1. Start/End of Year as of beginning/end of each fiscal year.",
+        "2. Opened includes new Licensed Units and company-owned units purchased by Licensee.",
+        "3. Terminations = License Agreements terminated by CFA prior to end of term without consideration to Licensee."
+      ],
+      "provenance": "Extracted from Item 20 Table 3 footer totals, pages 58-61"
+    },
+    {
+      "id": "item20_table3_franchised_totals",
+      "item": "20",
+      "title": "Table 3 — Status of Franchised Restaurants (Footer Totals)",
+      "source_pages": [62, 63, 64, 65, 66],
+      "footer_totals": {
+        "2022": {"start": 2230, "opened": 181, "terminations": 1, "non_renewals": 0, "reacquired": 54, "ceased_operations": 18, "end": 2338},
+        "2023": {"start": 2331, "opened": 239, "terminations": 0, "non_renewals": 0, "reacquired": 57, "ceased_operations": 19, "end": 2494},
+        "2024": {"start": 2494, "opened": 210, "terminations": 1, "non_renewals": 0, "reacquired": 58, "ceased_operations": 16, "end": 2629}
+      },
+      "table_notes": [
+        "1. Start/End of Year as of beginning/end of each fiscal year.",
+        "2. Opened includes new Restaurants and company-owned Restaurants purchased by Operator.",
+        "3. Terminations = Franchise Agreements terminated by CFA prior to end of term without consideration.",
+        "4. Non-Renewals = Operators who elected not to continue at franchise term end.",
+        "5. Reacquired = Restaurants reacquired by CFA for any reason, including voluntary termination by Operator to get a different Restaurant.",
+        "6. Ceased Operations = Restaurants closed for any reason (including lease expiration, relocation, etc.)."
+      ],
+      "provenance": "Extracted from Item 20 Table 3 footer totals, pages 62-66"
+    },
+    {
+      "id": "item20_table4_company_licensed",
+      "item": "20",
+      "title": "Table 4 — Company-Owned Licensed Units",
+      "source_pages": [67],
+      "summary": "Zero company-owned Licensed Units in all three years (2022-2024). CFA does not own or operate Licensed Units.",
+      "provenance": "Extracted from Item 20 Table 4, page 67"
+    },
+    {
+      "id": "item20_table4_company_restaurants_totals",
+      "item": "20",
+      "title": "Table 4 — Company-Owned Restaurants (Footer Totals)",
+      "source_pages": [68, 69, 70],
+      "footer_totals": {
+        "2022": {"start": 81, "opened": 0, "reacquired_from_franchisees": 109, "closed": 40, "sold_to_franchisees": 77, "end": 73},
+        "2023": {"start": 80, "opened": 0, "reacquired_from_franchisees": 92, "closed": 21, "sold_to_franchisees": 93, "end": 58},
+        "2024": {"start": 58, "opened": 0, "reacquired_from_franchisees": 108, "closed": 25, "sold_to_franchisees": 86, "end": 55}
+      },
+      "table_notes": [
+        "Note: Reacquired from Franchisees includes all instances where Restaurant transfers from Operator to CFA for any reason — voluntary termination, mutual consent, etc."
+      ],
+      "provenance": "Extracted from Item 20 Table 4 footer totals, pages 68-70"
+    },
+    {
+      "id": "item20_table5_licensed_projections",
+      "item": "20",
+      "title": "Table 5 — Projected Openings — Licensed Units",
+      "source_pages": [72],
+      "as_of": "December 31, 2024",
+      "signed_not_opened": 3,
+      "projected_new_franchised_next_year": 25,
+      "projected_new_company_owned_next_year": 0,
+      "by_state": [
+        {"state": "AL", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "AR", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "CA", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "CO", "signed_not_opened": 0, "projected_new": 3},
+        {"state": "CT", "signed_not_opened": 0, "projected_new": 2},
+        {"state": "FL", "signed_not_opened": 0, "projected_new": 2},
+        {"state": "LA", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "MA", "signed_not_opened": 0, "projected_new": 3},
+        {"state": "MI", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "MS", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "NY", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "NC", "signed_not_opened": 2, "projected_new": 2},
+        {"state": "PA", "signed_not_opened": 1, "projected_new": 1},
+        {"state": "SC", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "TN", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "TX", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "VA", "signed_not_opened": 0, "projected_new": 1},
+        {"state": "DC", "signed_not_opened": 0, "projected_new": 1}
+      ],
+      "table_notes": ["CFA does not intend to open any company-owned Licensed Units."],
+      "provenance": "Extracted from Item 20 Table 5, page 72"
+    },
+    {
+      "id": "item20_table5_restaurant_projections",
+      "item": "20",
+      "title": "Table 5 — Projected Openings — Franchised/Company Restaurants",
+      "source_pages": [73],
+      "as_of": "December 31, 2024",
+      "signed_not_opened_total": 38,
+      "projected_new_franchised_total": 183,
+      "projected_new_company_owned_total": 0,
+      "table_notes": [
+        "CFA does not intend to open company-owned Restaurants; however, may open temporarily until Operator selected."
+      ],
+      "provenance": "Extracted from Item 20 Table 5, page 73"
+    },
+    {
+      "id": "item11_training",
+      "item": "11",
+      "title": "Licensee Training Program",
+      "source_pages": [36, 37],
+      "components": [
+        {
+          "name": "2-day In-Person Cultural Experience",
+          "location": "Chick-fil-A Support Center: Buffington, Atlanta, GA",
+          "classroom_hours": 15,
+          "on_job_hours": 5,
+          "subjects": ["CFA Brand/History/Culture", "Roles & Responsibilities", "Winning Hearts Every Day", "SERVE Model & Leadership", "Training Resources", "Menu Tasting Experience"]
+        },
+        {
+          "name": "5-day Virtual Licensee Training",
+          "location": "Zoom (broadcast from Atlanta Support Center)",
+          "classroom_hours": 15,
+          "on_job_hours": 10,
+          "subjects": ["CFA History/Culture", "Winning Hearts Every Day", "Quality Assessments", "Back of House Processes/Equipment", "Critical Success Factors", "Roles & Responsibilities", "Training Resources", "Non-Compliance Process", "Licensing Visit Report", "Product Assembly", "Front of House Processes/Equipment", "Action Planning"]
+        }
+      ],
+      "certification_duration_years": 5,
+      "frequency": "8 times per year (2 per quarter)",
+      "director": "Bill Dunphy (30+ years CFA experience)",
+      "provenance": "Extracted from Item 11 training table, pages 36-37"
+    },
+    {
+      "id": "item21_balance_sheet",
+      "item": "21",
+      "title": "Consolidated Balance Sheet (Key Line Items)",
+      "source_pages": [150, 151],
+      "as_of": "December 31",
+      "data": {
+        "2024": {
+          "cash_and_equivalents": 1407908682,
+          "short_term_investments": 193839681,
+          "total_current_assets": 1805751523,
+          "property_equipment_net": 14141768175,
+          "total_assets": 16587589467,
+          "total_current_liabilities": 1937611596,
+          "long_term_notes_payable": 2833904072,
+          "total_liabilities": 10744189725,
+          "retained_earnings": 5574478306,
+          "total_stockholders_equity": 5843399742
+        },
+        "2023": {
+          "cash_and_equivalents": 1266114339,
+          "short_term_investments": 25018613,
+          "total_current_assets": 1722000392,
+          "property_equipment_net": 12258217568,
+          "total_assets": 14486666430,
+          "total_current_liabilities": 1753475599,
+          "long_term_notes_payable": 2322353377,
+          "total_liabilities": 9394228302,
+          "retained_earnings": 4729850294,
+          "total_stockholders_equity": 5092438128
+        }
+      },
+      "provenance": "Extracted from Exhibit C balance sheets, pages 150-151"
+    },
+    {
+      "id": "item21_income_statement",
+      "item": "21",
+      "title": "Consolidated Statements of Comprehensive Earnings (Key Line Items)",
+      "source_pages": [152],
+      "period": "Years Ended December 31",
+      "data": {
+        "2024": {
+          "franchise_fees": 4499874469,
+          "rental_income": 1598939656,
+          "company_operated_sales": 345172933,
+          "licensee_fees": 76768654,
+          "product_sales": 2352913605,
+          "other_income": 188951119,
+          "total_revenue": 9062620436,
+          "cost_of_sales": 2301478018,
+          "sga": 4204014792,
+          "depreciation": 1053950178,
+          "interest": 127259249,
+          "total_expenses": 7686702237,
+          "earnings_before_tax": 1375918199,
+          "income_taxes": 331721013,
+          "net_earnings": 1044197186
+        },
+        "2023": {
+          "franchise_fees": 4226750046,
+          "rental_income": 1511525247,
+          "company_operated_sales": 319407253,
+          "licensee_fees": 64692844,
+          "product_sales": 1536183392,
+          "other_income": 229491804,
+          "total_revenue": 7888050586,
+          "cost_of_sales": 1529982465,
+          "sga": 3991001461,
+          "depreciation": 864699465,
+          "interest": 111630408,
+          "total_expenses": 6497313799,
+          "earnings_before_tax": 1390736787,
+          "income_taxes": 332742126,
+          "net_earnings": 1057994661
+        },
+        "2022": {
+          "franchise_fees": 3571607329,
+          "rental_income": 1331359932,
+          "company_operated_sales": 310400266,
+          "licensee_fees": 50464443,
+          "product_sales": 1019404359,
+          "other_income": 90549779,
+          "total_revenue": 6373786108,
+          "cost_of_sales": 1060735903,
+          "sga": 3167988917,
+          "depreciation": 706100732,
+          "interest": 100564540,
+          "total_expenses": 5035390092,
+          "earnings_before_tax": 1338396016,
+          "income_taxes": 349661712,
+          "net_earnings": 988734304
+        }
+      },
+      "provenance": "Extracted from Exhibit C income statement, page 152"
+    }
+  ]
+}

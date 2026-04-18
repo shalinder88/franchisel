@@ -1,0 +1,33 @@
+{
+  "depth_pass": "A2_DP4_state_addenda",
+  "overrides": [
+    {"state": "California", "affected_family": "franchise_law", "override_summary": "California Franchise Investment Law applies; all proposed agreements must be delivered with FDD; fee restrictions per Cal. Corp. Code § 31125", "why_it_matters": "Fee collection may be deferred until franchisee opens; additional disclosure requirements", "source_pages": [403, 404]},
+    {"state": "Hawaii", "affected_family": "anti_waiver", "override_summary": "No waiver of claims under state franchise law; no disclaimer of reliance on franchisor statements", "why_it_matters": "Franchisee retains right to bring franchise law claims regardless of general release provisions", "source_pages": [421]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Illinois Franchise Disclosure Act applies; venue and choice of law provisions subject to Illinois law", "why_it_matters": "Franchisees may litigate in Illinois rather than being forced to Florida", "source_pages": [430, 431]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Illinois law applies to extent of Illinois Franchise Disclosure Act", "why_it_matters": "Illinois franchise law may override Florida choice of law provisions", "source_pages": [430]},
+    {"state": "Indiana", "affected_family": "franchise_law", "override_summary": "Indiana franchise law compliance required", "why_it_matters": "State franchise law protections apply", "source_pages": [444, 445]},
+    {"state": "Maryland", "affected_family": "fee_deferral", "override_summary": "Maryland law may require deferral of franchise fee collection until franchisee opens for business", "why_it_matters": "Reduces upfront financial burden; franchise fee escrow possible", "source_pages": [445]},
+    {"state": "Michigan", "affected_family": "termination", "override_summary": "Cannot terminate prior to expiration except for good cause; must provide 30-day cure period", "why_it_matters": "Franchisee protected from arbitrary termination; cure right guaranteed", "source_pages": [5, 6]},
+    {"state": "Michigan", "affected_family": "renewal", "override_summary": "Cannot refuse renewal without fairly compensating franchisee at fair market value (for terms <5 years with noncompete)", "why_it_matters": "Provides compensation on non-renewal; limits franchise asset loss", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "forum_selection", "override_summary": "Provision requiring litigation outside Michigan is void", "why_it_matters": "Michigan franchisee cannot be forced to litigate in Florida", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "transfer", "override_summary": "Cannot refuse transfer except for good cause", "why_it_matters": "Franchisee has greater freedom to sell business", "source_pages": [6]},
+    {"state": "Michigan", "affected_family": "anti_waiver", "override_summary": "Cannot require waiver of rights under Michigan Franchise Investment Act; cannot restrict right to join franchisee association", "why_it_matters": "Preserves franchisee legal rights and association freedom", "source_pages": [5]},
+    {"state": "Minnesota", "affected_family": "anti_waiver", "override_summary": "No waiver of franchise law claims; no disclaimer of reliance; each provision effective only to extent jurisdictional requirements met", "why_it_matters": "Broad protection for Minnesota franchisees; franchise law is non-waivable", "source_pages": [446, 450]},
+    {"state": "New York", "affected_family": "anti_waiver", "override_summary": "No waiver of state franchise law claims including fraud in inducement; no disclaimer of reliance", "why_it_matters": "Franchisee retains all New York franchise law protections", "source_pages": [460]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Venue and choice of law provisions subject to North Dakota law", "why_it_matters": "May litigate in North Dakota rather than Florida", "source_pages": [465, 470]},
+    {"state": "Washington", "affected_family": "governing_law", "override_summary": "Washington Franchise Investment Protection Act (Ch. 19.100 RCW) prevails in conflicts of law", "why_it_matters": "Washington state law takes precedence over Florida choice of law", "source_pages": [480, 481]},
+    {"state": "Washington", "affected_family": "forum_selection", "override_summary": "Venue subject to Washington law", "why_it_matters": "May litigate in Washington rather than Florida", "source_pages": [491]},
+    {"state": "Wisconsin", "affected_family": "franchise_law", "override_summary": "Wisconsin Fair Dealership Law (Ch. 135) applies", "why_it_matters": "Provides strong dealer protection including good cause termination requirements", "source_pages": [496]}
+  ],
+  "summary_table": {
+    "forum_selection_voided": ["Illinois", "Michigan", "North Dakota", "Washington"],
+    "choice_of_law_overridden": ["Illinois", "Washington"],
+    "noncompete_limited": [],
+    "general_release_limited": ["Hawaii", "Minnesota", "New York"],
+    "termination_good_cause": ["Michigan", "Wisconsin"],
+    "fair_market_value_on_non_renewal": ["Michigan"],
+    "anti_fraud_anti_waiver": ["Hawaii", "Michigan", "Minnesota", "New York"],
+    "fee_deferral": ["Maryland"],
+    "franchisee_association_protected": ["Michigan"]
+  }
+}

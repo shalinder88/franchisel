@@ -1,0 +1,48 @@
+{
+  "depth_block": "A2_targeted_depth_block_1",
+  "target": "Item 21 Note Walk",
+  "source_pages": [175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186],
+  "note_families_present": 11,
+  "accounting_policies": {
+    "revenue_recognition": {"method": "ASC 606. CFF recognized as underlying franchisee sales occur. IFF deferred and amortized over 12 years. Ad Fund recognized when underlying sales occur.", "source_pages": [179]},
+    "depreciation": {"method": "Straight-line. Transportation 5-20 yr, Computer 3-5 yr, Leasehold improvements 5-10 yr, Equipment 3-7 yr.", "source_pages": [176]},
+    "impairment": {"policy": "Review when events indicate non-recoverability. No triggering events 2022-2024.", "charges": 0, "source_pages": [178]},
+    "goodwill": {"method": "Private company alternative (ASU 2014-02). Straight-line over 10 years. Entity-level testing. Fully amortized 2024.", "source_pages": [178]},
+    "advertising_fund": {"policy": "5% of franchisee sales collected. Restricted cash held separately. Admin fee paid to GC (5% of Ad Fund receipts).", "source_pages": [175, 179, 180]},
+    "deferred_franchise_fees": {"policy": "IFF deferred upon collection, amortized over 12 years. Total unearned: $21.2M at 12/31/2024.", "source_pages": [179]}
+  },
+  "lease_rou_structure": {
+    "classification": "Operating leases only",
+    "rou_assets_2024": 4157000,
+    "lease_liabilities_current_2024": 1397000,
+    "lease_liabilities_noncurrent_2024": 3973000,
+    "total_lease_liabilities_2024": 5370000,
+    "weighted_avg_remaining_term": "4.5 years",
+    "discount_rate": "1.9% (risk-free rate election)",
+    "maturity_schedule": {"2025": 1501000, "2026": 1100000, "2027": 1058000, "2028": 1075000, "2029": 986000},
+    "source_pages": [180, 181]
+  },
+  "parent_affiliate_structure": {
+    "related_party_salons": 23,
+    "related_party_cff_revenue": 647000,
+    "related_party_ar": 42000,
+    "related_party_unearned_iff": 116000,
+    "note": "Board members and immediate family own/operate 23 GREAT CLIPS salons",
+    "source_pages": [186]
+  },
+  "tax_structure": {
+    "entity_type": "C corporation (since January 1, 2019)",
+    "effective_rate": 0.25,
+    "current_expense_2024": 8456151,
+    "deferred_benefit_2024": -1913256,
+    "net_dta_2024": 5267000,
+    "no_valuation_allowance": true,
+    "no_unrecognized_tax_benefits": true,
+    "source_pages": [184, 185]
+  },
+  "subsequent_events": {
+    "evaluated_through": "March 26, 2025",
+    "material_events": "None disclosed",
+    "source_pages": [179]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "note_families_present": [
+    {"family": "Note 1 — Significant Accounting Policies", "pages": [198, 199, 200, 201, 202, 203]},
+    {"family": "Note 2 — Related Party Transactions", "pages": [203, 204]},
+    {"family": "Note 3 — Property and Equipment", "pages": [204, 205]},
+    {"family": "Note 4 — Number of Licensed Locations", "pages": [205]}
+  ],
+  "revenue_recognition": {
+    "standard": "ASC 606",
+    "royalties": "Sales-based; recognized as franchisee store-level sales occur",
+    "initial_fees": "Ratably over franchise term (5-10 years) starting at store opening",
+    "license_fees": "Usage-based mark-up fees; recognized as purchases occur",
+    "rental_income": "Straight-line over lease term",
+    "single_performance_obligation": true,
+    "source_pages": [198, 199, 200]
+  },
+  "depreciation": {
+    "method": "Straight-line",
+    "airplanes": "15 years",
+    "buildings": "10-20 years",
+    "leasehold_improvements": "Shorter of life or lease terms",
+    "restaurant_equipment": "5 years",
+    "furniture_fixtures": "7 years",
+    "vehicles": "5 years",
+    "source_pages": [202]
+  },
+  "lease_structure": {
+    "role": "Lessor",
+    "assets_leased": "3 buildings to PEI",
+    "term": "20 years initial (Dec 2004); extended to Dec 2029",
+    "annual_rent": 145900,
+    "variable_payments": false,
+    "maturity_total": 2918000,
+    "asc_842": "Practical expedient — combined lease/non-lease components",
+    "source_pages": [203, 204]
+  },
+  "related_party": {
+    "due_from_prg_2024": 35310459,
+    "due_from_prg_2023": 11992768,
+    "nature": "Non-interest-bearing advances, due on demand",
+    "presentation_change_2024": "Reclassified from current asset to equity reduction",
+    "management_services": "PRG provides without charge",
+    "airplane_transactions": {
+      "purchase_2023": {"airplane": "N100GA", "amount": 6610400},
+      "sale_2023": {"airplane": "N882PX", "proceeds": 13489754}
+    },
+    "source_pages": [203, 204, 205]
+  },
+  "tax_structure": {
+    "election": "S Corporation",
+    "federal_tax": "None at entity level",
+    "state_tax": "CA franchise tax: min $800 or 1.5% net income",
+    "foreign_withholding": "0-15%",
+    "source_pages": [202]
+  },
+  "concentration": {
+    "revenue_top2_pct_2024": 25,
+    "ar_top4_pct_2024": 54,
+    "source_pages": [202]
+  },
+  "subsequent_events": {
+    "evaluated_through": "April 7, 2025",
+    "events_disclosed": false,
+    "source_pages": [203]
+  },
+  "licensed_locations_reconciliation": {
+    "domestic_2024": 175,
+    "international_2024": 97,
+    "total_2024": 272,
+    "item_20_domestic": 173,
+    "discrepancy": 2,
+    "source_pages": [205]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "depth_block": "key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "D1 — Franchise Agreement (Individual)",
+      "pages": [185, 232],
+      "clause_walk_status": "partial",
+      "clauses_recovered": [
+        {"clause": "Sec 1 — Grant, Term, Location", "summary": "20-year term for freestanding. Location-specific only. No territory. No renewal right. Successor per Sec 17.", "source_pages": [190]},
+        {"clause": "Introduction C — No reliance", "summary": "Franchisee acknowledges no representations as to profits/sales outside the FDD and FA", "source_pages": [190]}
+      ],
+      "deferred_pages": [191, 232],
+      "why_deferred": "48-page FA partially walked via targeted pages. Key operative terms recovered from Item 17 chart (pp.82-87) and Sec 1 direct read. Remaining sections (2-22) not individually walked due to volume.",
+      "what_recovered_elsewhere": "Term, renewal, termination, transfer, noncompete, dispute resolution, death/disability all recovered from Item 17 chart with FA section cross-references",
+      "what_remains_missing": "Detailed clause-by-clause language for Sec 5 (standards), Sec 6 (construction), Sec 8 (insurance details), Sec 9 (royalty calculation mechanics), Sec 11 (reports), Sec 13 (indemnification details), Sec 14 (ROFR mechanics), Sec 20 (mediation procedural details)"
+    },
+    {
+      "exhibit": "D3 — Guaranty",
+      "pages": [275, 281],
+      "clause_walk_status": "complete",
+      "clauses_recovered": [
+        {"clause": "Sec 1 — Acknowledgments", "summary": "Guarantor acknowledges BKC entered into FA solely on condition of personal guaranty. Includes spouse.", "source_pages": [276]},
+        {"clause": "Sec 2 — Covenants and Guaranty", "summary": "Personal, irrevocable, unconditional guaranty. Joint and several. Guarantor personally bound as if franchisee. Includes unfair competition (Sec 12), assignment (Sec 15), restrictive covenant (Sec 19). Must indemnify BKC.", "source_pages": [276, 277]}
+      ],
+      "what_remains_missing": "Waiver provisions (likely in pp.278-281) not individually read"
+    },
+    {
+      "exhibit": "G1 — Lease/Sublease",
+      "pages": [358, 398],
+      "clause_walk_status": "labeled_only",
+      "clauses_recovered": [],
+      "deferred_pages": [358, 398],
+      "why_deferred": "41-page lease deferred. Key terms recovered from Item 17 BKL chart (pp.90-91) covering term, renewal, termination, cure periods, transfer, ROFR, environmental obligations.",
+      "what_recovered_elsewhere": "Term (20 yrs), no renewal right, termination with cause only, cure periods (5/10/30 days), ROFR on adjacent property, environmental remediation obligation, cross-default with FA",
+      "what_remains_missing": "Detailed rent calculation mechanics, maintenance obligations, insurance requirements, assignment conditions, condemnation provisions, subletting restrictions"
+    },
+    {
+      "exhibit": "M1 — Development Agreement",
+      "pages": [540, 563],
+      "clause_walk_status": "labeled_only",
+      "clauses_recovered": [],
+      "deferred_pages": [540, 563],
+      "why_deferred": "24-page DA deferred. Key terms recovered from Item 17 DA chart (pp.92-96) covering term, termination, transfer, noncompete, leverage covenants.",
+      "what_recovered_elsewhere": "Term (3-15 yrs), no renewal, termination cure periods, non-curable defaults (including FSS 'F' grade, excessive leverage ratios), brand damage fee, transfer at sole discretion",
+      "what_remains_missing": "Detailed development schedule mechanics, site approval process, construction requirements, FSS grade calculation methodology, EBITDA/EBITDAR ratio specifics"
+    },
+    {
+      "exhibit": "P — State Addenda",
+      "pages": [706, 801],
+      "clause_walk_status": "partial",
+      "clauses_recovered": [
+        {"state": "California", "overrides": 6, "source_pages": [707]},
+        {"state": "Michigan", "overrides": 5, "source_pages": [5, 6]},
+        {"state": "Washington", "overrides": 7, "source_pages": [720, 721]}
+      ],
+      "deferred_pages": "IL, IN, MD, MN, NY, ND, RI, VA, WI state addenda pages not individually structured",
+      "why_deferred": "96 pages covering 12+ states. Only CA, MI, WA directly walked. Remaining states follow similar override patterns."
+    }
+  ]
+}

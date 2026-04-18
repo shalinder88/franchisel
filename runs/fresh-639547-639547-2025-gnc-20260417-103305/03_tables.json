@@ -1,0 +1,222 @@
+{
+  "tables": [
+    {
+      "id": "item5_initial_franchise_fee",
+      "source_item": "Item 5",
+      "source_pages": [32],
+      "title": "Initial Franchise Fee Schedule",
+      "columns": ["Store Type", "Initial Franchise Fee"],
+      "rows": [
+        {"store_type": "New Franchise Store - New Franchisee", "fee": "$20,000"},
+        {"store_type": "New Franchise Store - Existing Franchisee", "fee": "$15,000"},
+        {"store_type": "New Franchise Store - Employee", "fee": "$15,000"},
+        {"store_type": "Conversion Store - New Franchisee", "fee": "$20,000"},
+        {"store_type": "Conversion Store - Existing Franchisee", "fee": "$15,000"},
+        {"store_type": "Conversion Store - Employee", "fee": "$15,000"},
+        {"store_type": "GNC Smoothie Bar Inclusion", "fee": "$1,000"}
+      ],
+      "table_notes": [
+        "Existing franchisee must be current and in good standing with no past-due A/R.",
+        "Employee must have been full-time 12+ months or part-time 24+ months.",
+        "Fee may be prorated if lease term shorter than 5-year franchise term.",
+        "VetFran program: $15,000 for honorably discharged veterans."
+      ]
+    },
+    {
+      "id": "item6_fee_table",
+      "source_item": "Item 6",
+      "source_pages": [35, 36, 37, 38, 39, 40, 41],
+      "title": "Other Fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Royalty", "amount": "6% of total gross sales", "due": "Monthly", "remarks": "Gross sales exclude sales tax and substantiated refunds"},
+        {"type": "National Advertising", "amount": "3% of total gross sales", "due": "Monthly", "remarks": "May increase/decrease on 30 days notice"},
+        {"type": "Transfer Fee (FA)", "amount": "Up to then-current initial franchise fee; $1,000 intra-family; $2,500 for <50% interest", "due": "At transfer", "remarks": "Payable when selling franchised business"},
+        {"type": "Transfer Fee (ADA)", "amount": "$10,000", "due": "At permitted assignment", "remarks": ""},
+        {"type": "Relocation Fee", "amount": "$10,000+", "due": "At relocation", "remarks": "Approval in sole discretion"},
+        {"type": "Remodeling", "amount": "$25,000-$150,000", "due": "When complete or periodic payments", "remarks": "Once every 5 years"},
+        {"type": "Insurance Reimbursement", "amount": "$500 per occurrence", "due": "Immediately", "remarks": "If franchisee fails to obtain required insurance"},
+        {"type": "Late Payment", "amount": "1.5% per month on overdue amount", "due": "Immediately", "remarks": "All payments"},
+        {"type": "Insufficient Funds Fee", "amount": "$30 per occurrence", "due": "Immediately", "remarks": ""},
+        {"type": "Store Tech Maintenance", "amount": "$75/mo (1st register), $25/mo (2nd register)", "due": "Monthly", "remarks": ""},
+        {"type": "Network Connection", "amount": "$233/mo", "due": "Monthly", "remarks": ""},
+        {"type": "Credit Card Processing (EMV)", "amount": "$16/mo", "due": "Monthly", "remarks": ""},
+        {"type": "In-Store Wi-Fi", "amount": "$18/mo", "due": "Monthly", "remarks": "GNC IT equipment only"},
+        {"type": "Cellular Plan", "amount": "$16/mo", "due": "Monthly", "remarks": "If iPad for outside events"},
+        {"type": "Financial Services (GNFS)", "amount": "$220-$345/mo per store (tiered)", "due": "Monthly", "remarks": "Optional/required; includes inventory, payroll, HR"},
+        {"type": "Franchise Renewal", "amount": "$12,500", "due": "On or before expiration", "remarks": "May be prorated for shorter lease"},
+        {"type": "Audit", "amount": "Cost of audit if 3%+ understatement", "due": "Immediately", "remarks": ""},
+        {"type": "Sublease Rent", "amount": "Varies", "due": "Monthly", "remarks": "Only if subleasing from franchisor"},
+        {"type": "Non-compliance (notice failure)", "amount": "Up to $1,000", "due": "As incurred", "remarks": "Failure to give proper renewal notice"},
+        {"type": "Indemnification", "amount": "Varies", "due": "As incurred", "remarks": ""},
+        {"type": "Attorneys' Fees", "amount": "Varies", "due": "As incurred", "remarks": "If non-compliance with FA"},
+        {"type": "Liquidated Damages", "amount": "Formula-based", "due": "Immediately", "remarks": "Avg monthly royalty × remaining months"},
+        {"type": "Default Cure Fee", "amount": "Up to $1,000 per occurrence", "due": "Before cure expiration", "remarks": ""},
+        {"type": "Annual Inventory Fee", "amount": "$540", "due": "Annually", "remarks": "Included in GNFS if enrolled"},
+        {"type": "Non-compliance Management Fee", "amount": "25% of total gross sales", "due": "As incurred", "remarks": "If franchisor operates store due to non-compliance"},
+        {"type": "Operating Management Fee", "amount": "$2,000/week", "due": "As incurred", "remarks": "Death/disability period"},
+        {"type": "Securities Offering Fee", "amount": "$5,000", "due": "Upon submission", "remarks": "Per proposed offering"}
+      ],
+      "table_notes": [
+        "Note 1: All fees generally non-refundable; may be reduced case-by-case.",
+        "Note 2: Royalty 6% of gross sales.",
+        "Note 3: Advertising fee currently 3%, may change on 30 days notice. Company stores not required to contribute.",
+        "Note 8: GNFS tiered pricing: 1 store $345, 2-5 stores $320/store, 6-9 $295, 10-14 $245, 15+ $220.",
+        "Note 11: Liquidated damages = max(avg monthly royalty for 2 years, avg monthly royalty for 12 months) × remaining months in term.",
+        "Note 14: Non-compliance management fee of 25% applies when franchisor assumes operations due to default."
+      ]
+    },
+    {
+      "id": "item7_single_unit_new",
+      "source_item": "Item 7",
+      "source_pages": [42, 43, 44],
+      "title": "Estimated Initial Investment - Single Unit (New Franchise Store)",
+      "columns": ["Type", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Initial Franchise Fee", "low": "$20,000", "high": "$20,000", "to": "Us"},
+        {"type": "Security Deposit", "low": "$2,500", "high": "$2,500", "to": "Us"},
+        {"type": "Equipment (POS + PC)", "low": "$4,500", "high": "$9,000", "to": "Us/Third Party"},
+        {"type": "Signage", "low": "$8,500", "high": "$20,000", "to": "Us/Approved Suppliers"},
+        {"type": "Fixtures", "low": "$7,500", "high": "$38,000", "to": "Us/Approved Suppliers"},
+        {"type": "Construction", "low": "$35,000", "high": "$250,000", "to": "Us/Contractor"},
+        {"type": "A&E Consulting", "low": "$5,000", "high": "$7,500", "to": "Us/Consultants"},
+        {"type": "Project Management", "low": "$5,000", "high": "$5,000", "to": "Us"},
+        {"type": "Opening Inventory", "low": "$80,000", "high": "$85,000", "to": "Us/Approved Suppliers"},
+        {"type": "Utility Deposits", "low": "$1,500", "high": "$3,000", "to": "Utility Companies"},
+        {"type": "Insurance", "low": "$2,500", "high": "$10,500", "to": "Insurance Broker"},
+        {"type": "Training Expenses", "low": "$1,500", "high": "$3,000", "to": "Airlines/Hotels"},
+        {"type": "Misc Opening", "low": "$3,000", "high": "$4,000", "to": "Suppliers"},
+        {"type": "Rent (1 month)", "low": "$1,219", "high": "$19,042", "to": "Landlord/Us"},
+        {"type": "Additional Funds (3 months)", "low": "$10,000", "high": "$30,000", "to": "Various"}
+      ],
+      "total": {"low": "$187,719", "high": "$506,542"},
+      "table_notes": [
+        "Does not include compensation for franchisee's time/labor or finance charges.",
+        "Inventory minimum: $60,000 wholesale at all times.",
+        "Insurance averages ~$6,000/year; range $2,500-$10,500.",
+        "Lease costs from company store data: strip avg $36,658 base rent/year, mall avg $38,042, downtown avg $123,118."
+      ]
+    },
+    {
+      "id": "item19_fpr",
+      "source_item": "Item 19",
+      "source_pages": [101, 102],
+      "title": "Franchised Stores Average Gross Sales (Jan 1 - Dec 31, 2024)",
+      "columns": ["Average Gross Sales", "Total Stores", "# at/above Average", "Median", "High", "Low"],
+      "rows": [
+        {"average": "$475,924.53", "total_stores": 675, "at_above_avg": "279 (41%)", "median": "$443,685.41", "high": "$1,591,917.87", "low": "$139,454.20"}
+      ],
+      "table_notes": [
+        "Based on 675 franchised stores operating continuously Jan 1-Dec 31, 2024.",
+        "703 total franchised stores at YE 2024; 675 operated full year.",
+        "69 stores closed during measuring period; 1 open <12 months before closing.",
+        "3 relocations; 2 uninterrupted (included), 1 interrupted (excluded).",
+        "No cost/expense data included. Unaudited, franchisee-submitted, not independently verified.",
+        "Substantiation available on reasonable request."
+      ]
+    },
+    {
+      "id": "item20_table1",
+      "source_item": "Item 20",
+      "source_pages": [103],
+      "title": "Item 20 Table 1 - Systemwide Outlet Summary (2022-2024)",
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 789, "end": 774, "net": -15},
+        {"type": "Franchised", "year": 2023, "start": 774, "end": 750, "net": -24},
+        {"type": "Franchised", "year": 2024, "start": 750, "end": 703, "net": -47},
+        {"type": "Company-Owned", "year": 2022, "start": 1554, "end": 1526, "net": -28},
+        {"type": "Company-Owned", "year": 2023, "start": 1526, "end": 1555, "net": 29},
+        {"type": "Company-Owned", "year": 2024, "start": 1555, "end": 1437, "net": -118},
+        {"type": "Total", "year": 2022, "start": 2343, "end": 2300, "net": -43},
+        {"type": "Total", "year": 2023, "start": 2300, "end": 2305, "net": 5},
+        {"type": "Total", "year": 2024, "start": 2305, "end": 2140, "net": -165}
+      ],
+      "table_notes": ["Company-owned includes Puerto Rico (20 stores)."]
+    },
+    {
+      "id": "item20_table2",
+      "source_item": "Item 20",
+      "source_pages": [104, 105],
+      "title": "Item 20 Table 2 - Transfers (2022-2024)",
+      "columns": ["State", "2022", "2023", "2024"],
+      "footer_totals": {"2022": 17, "2023": 11, "2024": 23},
+      "table_notes": ["Texas had most transfers in 2024 (9)."]
+    },
+    {
+      "id": "item20_table3",
+      "source_item": "Item 20",
+      "source_pages": [106, 107, 108, 109],
+      "title": "Item 20 Table 3 - Status of Franchised Outlets (2022-2024)",
+      "columns": ["State", "Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Ops", "End"],
+      "footer_totals": {
+        "2022": {"start": 789, "opened": 3, "terminations": 9, "non_renewals": 9, "reacquired": 0, "ceased": 0, "end": 774},
+        "2023": {"start": 774, "opened": 12, "terminations": 12, "non_renewals": 18, "reacquired": 3, "ceased": 3, "end": 750},
+        "2024": {"start": 750, "opened": 22, "terminations": 22, "non_renewals": 36, "reacquired": 5, "ceased": 6, "end": 703}
+      },
+      "table_notes": [
+        "2022: 7 relocations (CA, FL, MN, MO, OH, TX, VA) not reflected in table.",
+        "2023: 6 relocations (CA, MI, MN, NE, TX x2) not reflected in table.",
+        "2024: 3 relocations (SC, SD, TX) not reflected in table."
+      ]
+    },
+    {
+      "id": "item20_table4",
+      "source_item": "Item 20",
+      "source_pages": [110, 111, 112, 113],
+      "title": "Item 20 Table 4 - Status of Company-Owned Outlets (2022-2024)",
+      "columns": ["State", "Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisees", "End"],
+      "footer_totals": {
+        "2022": {"start": 1554, "opened": 62, "reacquired": 0, "closed": 90, "sold": 0, "end": 1526},
+        "2023": {"start": 1526, "opened": 82, "reacquired": 3, "closed": 52, "sold": 4, "end": 1555},
+        "2024": {"start": 1555, "opened": 13, "reacquired": 5, "closed": 117, "sold": 19, "end": 1437}
+      },
+      "table_notes": ["Includes Puerto Rico (20 stores)."]
+    },
+    {
+      "id": "item20_table5",
+      "source_item": "Item 20",
+      "source_pages": [114],
+      "title": "Item 20 Table 5 - Projected Openings",
+      "columns": ["State", "Signed Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        {"state": "California", "signed": 1, "new_franchised": 1, "new_company": 1},
+        {"state": "New York", "signed": 0, "new_franchised": 1, "new_company": 0},
+        {"state": "North Carolina", "signed": 1, "new_franchised": 0, "new_company": 0},
+        {"state": "Texas", "signed": 2, "new_franchised": 1, "new_company": 1}
+      ],
+      "footer_totals": {"signed": 4, "new_franchised": 3, "new_company": 2},
+      "table_notes": ["Only 5 total projected new outlets (3 franchised + 2 company) — very low growth projection."]
+    },
+    {
+      "id": "item7_lease_costs",
+      "source_item": "Item 7",
+      "source_pages": [47, 54],
+      "title": "Average Annual Lease Costs (Company Stores)",
+      "columns": ["Cost Category", "Mall", "Strip", "Downtown"],
+      "rows": [
+        {"category": "Base Rent", "mall": "$38,042", "strip": "$36,658", "downtown": "$123,118"},
+        {"category": "CAM", "mall": "$4,277", "strip": "$3,706", "downtown": "$574"},
+        {"category": "Real Estate Tax", "mall": "$3,576", "strip": "$2,637", "downtown": "$6,355"},
+        {"category": "Insurance", "mall": "$28", "strip": "$321", "downtown": "$98"},
+        {"category": "Other", "mall": "$4,777", "strip": "$367", "downtown": "$1,144"}
+      ],
+      "table_notes": ["Based on company store experiences. Strip centers are typical locations."]
+    },
+    {
+      "id": "item6_gnfs_pricing",
+      "source_item": "Item 6",
+      "source_pages": [40],
+      "title": "GNFS Financial Services Tiered Pricing",
+      "columns": ["Store Count", "Monthly Fee Per Store"],
+      "rows": [
+        {"count": "1 Store", "fee": "$345"},
+        {"count": "2-5 Stores", "fee": "$320"},
+        {"count": "6-9 Stores", "fee": "$295"},
+        {"count": "10-14 Stores", "fee": "$245"},
+        {"count": "15+ Stores", "fee": "$220"}
+      ],
+      "table_notes": ["Includes annual physical inventory. Payroll services additional pass-through."]
+    }
+  ]
+}

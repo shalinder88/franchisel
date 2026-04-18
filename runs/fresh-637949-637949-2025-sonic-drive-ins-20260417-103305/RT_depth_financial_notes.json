@@ -1,0 +1,105 @@
+{
+  "extraction_method": "normal_text_extraction",
+  "entities": ["Sonic Franchising LLC", "Sonic Industries Services LLC and Subsidiaries"],
+  "sfllc_notes": {
+    "note_1_description": {"policy": "Single-member LLC formed 3/23/2011. Sole owner: Sonic Capital LLC. Franchises QSR chain in US. Revenue from royalties post-5/20/2011 FAs.", "source_pages": [317]},
+    "note_2_accounting_policies": {
+      "basis": "GAAP",
+      "fiscal_year": "52 or 53 weeks ending Sunday closest to Dec 31",
+      "restricted_cash": "Cash held to meet securitization reserve requirements",
+      "accounts_receivable": "Due within 30 days; allowance based on lifetime expected loss",
+      "intangible_assets": "Franchise agreements amortized straight-line; reviewed for impairment — none indicated 2022-2024",
+      "revenue_recognition": "Royalties recognized when earned. Initial franchise fees deferred and recognized straight-line over FA term.",
+      "income_taxes": "Single-member LLC not subject to federal/state income taxes — pass-through to Parent",
+      "source_pages": [317, 318]
+    },
+    "note_3_intangible_assets": {"franchise_agreements_gross": 56665, "accumulated_amortization": 25725, "net": 30940, "amortization_per_year": 2833, "source_pages": [318]},
+    "note_4_revenue_recognition": {"deferred_revenue_2024": 5941, "deferred_revenue_annual_estimates": {"2025": 518, "2026": 510, "2027": 508, "2028": 505, "2029": 498, "thereafter": 3402}, "source_pages": [319]},
+    "note_5_commitments": {
+      "securitization_notes_outstanding": 1417300,
+      "variable_funding_capacity": 25000,
+      "letters_of_credit": 12500,
+      "remaining_borrowing_capacity": 12500,
+      "legal_final_maturities": ["January 2050 (2020 notes)", "August 2051 (2021 notes)"],
+      "guarantor_status": "Sonic Franchising LLC guarantees Sonic Co-Issuer obligations and pledged substantially all assets",
+      "legal_matters": "Various litigation incidental to business; no material adverse effect expected",
+      "source_pages": [319]
+    },
+    "note_6_related_party": {"license_fees": "Based primarily on royalty fees collected, included in Royalty fees to Affiliates on income statement. Results may not be indicative of stand-alone operations.", "source_pages": [320]},
+    "note_7_subsequent_events": {"evaluated_through": "2025-03-20", "items": "None", "source_pages": [320]}
+  },
+  "sis_notes": {
+    "note_1_description": {"policy": "Direct wholly-owned sub of Sonic LLC. Indirect sub of Inspire Brands. Converted from corp to LLC on 12/31/2022. Provides franchising services; leases real estate.", "source_pages": [329]},
+    "note_2_accounting_policies": {
+      "consolidation": "All intercompany eliminated",
+      "fiscal_year": "52 or 53 weeks ending Sunday closest to Dec 31",
+      "cash": "Restricted cash for securitization reserves",
+      "accounts_receivable": "Due within 30 days; allowance for credit losses based on lifetime expected loss",
+      "property_equipment": "Cost less accumulated depreciation. Useful lives: office/restaurant equip 3-15 yrs, transportation 3-5 yrs, buildings 7-40 yrs, site improvements 7-25 yrs",
+      "goodwill": "Annual impairment test (Q4); income approach (DCF) + market approach (Level 3). No impairment 2022-2024. $822.6M.",
+      "indefinite_lived_intangibles": "Trademark $1.1B. Relief-from-royalty method for fair value. No impairment 2022-2024.",
+      "definite_lived_intangibles": "Franchise agreements 17 years straight-line ($250M gross, $160.8M net). Computer software 1-7 years ($12.5M gross, $3.3M net). Developed technology fully amortized.",
+      "revenue_recognition": "Royalties when earned. Franchise fees deferred over FA term. Rental income straight-line.",
+      "rental_income": "Variable lease receipts: $8.3M (2024), $8.4M (2023), $7.8M (2022)",
+      "income_taxes": "Included in Inspire consolidated returns through 2022 conversion. Post-conversion: LLC not subject to federal/state income taxes. 2024 effective rate: -0.1%.",
+      "debt_issuance_costs": "Direct deduction from debt, amortized as interest using effective interest method",
+      "leases_lessor": "Operating leases; fixed monthly or tiered % (5-8%) of gross sales. Leases expire over next 8 years.",
+      "fair_value": "Cash, receivables, payables approximate book value. Goodwill and indefinite-lived tested Level 3.",
+      "source_pages": [329, 330, 331, 332, 333]
+    },
+    "note_3_supplemental_balance_sheet": {
+      "accounts_receivable": {"royalties_fees": 21872, "gift_cards": 7798, "other": 1927, "gross": 31597, "allowance": -3586, "net": 28011},
+      "property_equipment": {"land": 124760, "buildings": 61583, "equipment": 11691, "construction_in_progress": 4244, "finance_lease": 152, "gross": 202430, "accumulated_depr": -53332, "net": 149098},
+      "depreciation_expense": {"2024": 4100, "2023": 7800, "2022": 10800},
+      "other_current_liabilities": {"gift_card": 36620, "payroll_incentive": 2118, "accrued_income_taxes": 0, "other": 2707, "total": 41445},
+      "source_pages": [333, 334]
+    },
+    "note_4_intangible_assets": {
+      "trademark_indefinite": 1100000,
+      "franchise_agreements": {"gross": 250000, "accum_amort": -89241, "net": 160759, "useful_life": "17 years"},
+      "computer_software": {"gross": 12485, "accum_amort": -9218, "net": 3267, "useful_life": "1-7 years"},
+      "amortization_actual": {"2022": 40425, "2023": 35434, "2024": 17435},
+      "amortization_estimated": {"2025": 16699, "2026": 15275, "2027": 15186, "2028": 14931, "2029": 14706, "thereafter": 87229},
+      "source_pages": [334, 335]
+    },
+    "note_5_long_term_debt": {
+      "total_debt_gross": 1417313,
+      "finance_lease": 2,
+      "debt_issuance_costs_net": -10139,
+      "total_debt_net": 1407176,
+      "current_portion": 14752,
+      "long_term_net": 1392424,
+      "fair_value": {"2024": 1295300, "2023": 1274200},
+      "tranches": [
+        {"name": "2020-1 A-2 I", "principal": 621833, "stated_rate": 3.85, "effective_rate": 4.16, "anticipated_repayment": "January 2027"},
+        {"name": "2020-1 A-1 VFN", "principal": 0, "anticipated_repayment": "January 2030 (extended 11/2024)"},
+        {"name": "2020-1 A-2 II", "principal": 239167, "stated_rate": 4.34, "effective_rate": 4.58, "anticipated_repayment": "January 2030"},
+        {"name": "2021-1 A-2-I", "principal": 241875, "stated_rate": 2.19, "effective_rate": 2.42, "anticipated_repayment": "August 2028"},
+        {"name": "2021-1 A-2-II", "principal": 314438, "stated_rate": 2.64, "effective_rate": 2.80, "anticipated_repayment": "August 2031"}
+      ],
+      "maturity_schedule": {"2025": 14750, "2026": 14750, "2027": 617083, "2028": 240125, "2029": 5750, "thereafter": 524855},
+      "covenants_compliant": true,
+      "source_pages": [335, 336]
+    },
+    "note_6_leases": {
+      "lessor_land": {"2024": 56605, "2023": 57235},
+      "lessor_buildings": {"2024": 28147, "2023": 28397},
+      "lessor_gross": {"2024": 84752, "2023": 85632},
+      "lessor_accumulated_depr": {"2024": -20999, "2023": -19923},
+      "lessor_net": {"2024": 63753, "2023": 65709},
+      "future_min_lease_receipts": {"2025": 3785, "2026": 3772, "2027": 3828, "2028": 3830, "2029": 3798, "thereafter": 9093, "total": 28106},
+      "source_pages": [336, 337]
+    },
+    "note_7_revenue_recognition": {"deferred_revenue_2024": 12176, "estimated_future": {"2025": 1309, "2026": 1155, "2027": 965, "2028": 801, "2029": 640, "thereafter": 7306}, "source_pages": [337]},
+    "note_8_income_taxes": {
+      "effective_rate": {"2024": -0.1, "2023": -179.8, "2022": 27.6},
+      "current_tax": {"2024": -95, "2023": 35141, "2022": 45971},
+      "deferred_tax": {"2024": 0, "2023": -317751, "2022": -12788},
+      "llc_conversion_impact": "All subsidiaries became LLCs by 12/31/2023; no longer subject to federal/state income taxes",
+      "source_pages": [338]
+    },
+    "note_9_related_party": "Included in SIS note 2 and income statement line items. Affiliate revenues: royalties $18.6M, rental $10.8M, other $23.0M (FY2024).",
+    "note_10_commitments": "Same securitization structure as SFLLC Note 5. Legal matters: no material adverse effect expected.",
+    "note_11_subsequent_events": {"evaluated_through": "2025-03-20", "items": "None", "source_pages": [340]}
+  }
+}

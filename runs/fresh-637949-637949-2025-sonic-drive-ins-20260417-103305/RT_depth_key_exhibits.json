@@ -1,0 +1,37 @@
+{
+  "exhibits_walked": [
+    {
+      "exhibit": "B-1 (Number 25 Franchise Agreement)",
+      "page_range": [88, 140],
+      "clause_walk_status": "substantial",
+      "clauses_extracted": 28,
+      "key_clauses_in": "RT_depth_contract_burdens.json",
+      "deferred_pages": "Full 52-page line-by-line walk not performed; key operative terms extracted via targeted reads of pp 89-90, 95, 110, 115, 120, 125, 130 plus cross-references from Items 5-17",
+      "already_recovered_from": "Items 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17",
+      "remaining_missing": "Detailed construction specifications clause (§3.03-3.04), detailed records/reporting clause (§11), detailed audit/inspection clause (§11.04-11.05)"
+    },
+    {
+      "exhibit": "C-1 (Number 25 Development Agreement)",
+      "page_range": [166, 180],
+      "clause_walk_status": "deferred",
+      "reason": "Key DA terms (development fee, schedule, territory, termination, transfer, noncompete) all extracted from Items 5, 12, 17 cross-references",
+      "already_recovered_from": "Items 5, 12, 17",
+      "remaining_missing": "Detailed development schedule mechanics, target area definition specifics"
+    },
+    {
+      "exhibit": "F (Financial Statements)",
+      "page_range": [310, 340],
+      "clause_walk_status": "complete",
+      "notes_walked": 11,
+      "detail_in": "RT_depth_financial_notes.json, RT_depth_item21_notes.json"
+    },
+    {
+      "exhibit": "G (State Specific Addenda)",
+      "page_range": [341, 362],
+      "clause_walk_status": "complete",
+      "states_extracted": 6,
+      "overrides_extracted": 17,
+      "detail_in": "RT_depth_state_addenda_promotion.json"
+    }
+  ]
+}

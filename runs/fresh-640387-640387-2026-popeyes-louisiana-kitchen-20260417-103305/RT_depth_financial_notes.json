@@ -1,0 +1,95 @@
+{
+  "depth_pass": "A2_DP1_financial_notes",
+  "entity": "Restaurant Brands International Inc. and subsidiaries",
+  "auditor": "KPMG LLP",
+  "opinion_type": "unqualified (clean)",
+  "opinion_pages": [500, 501, 502],
+  "fiscal_year": "December 31, 2025",
+  "item21_extraction_method": "normal_text_extraction",
+  "accounting_policies": {
+    "revenue_recognition": {
+      "franchise_royalties": "Recognized as franchisee sales occur (point-in-time for royalties based on Gross Sales)",
+      "franchise_fees": "Initial franchise fees recognized over franchise agreement term (performance obligation satisfied over time)",
+      "property_revenues": "Recognized on straight-line basis over lease term for operating leases",
+      "supply_chain_sales": "Recognized at point of delivery to restaurant",
+      "advertising_revenues": "Contributions recognized as franchisee sales occur; advertising expenses recognized as incurred",
+      "unsatisfied_performance_obligations": "$53M (2026), $51M (2027), declining thereafter",
+      "source_pages": [509, 510, 520]
+    },
+    "depreciation_amortization": {
+      "property_equipment": "Accumulated depreciation $1,245M (2025), $1,087M (2024)",
+      "intangible_assets_net": "$11,190M (2025), $10,922M (2024)",
+      "goodwill": "$6,306M (2025), $5,986M (2024)",
+      "plk_segment_da": "$14M (2025), $13M (2024)",
+      "total_da": "$301M (2025), $264M (2024)",
+      "source_pages": [503, 522, 523]
+    },
+    "impairment": {
+      "policy": "Annual impairment testing for goodwill and indefinite-lived intangible assets; property/equipment reviewed for impairment when events indicate carrying amount may not be recoverable",
+      "carrols_bk_reporting_unit": "Critical audit matter identified by KPMG regarding fair value determination of Carrols BK reporting unit goodwill",
+      "source_pages": [501, 522]
+    },
+    "income_tax": {
+      "current_expense_2025": "Canadian federal $109M, provincial $8M, plus US and other jurisdictions",
+      "total_expense_2025": "$483M",
+      "total_expense_2024": "$364M",
+      "total_benefit_2023": "($265M)",
+      "effective_rate_2025": "~29%",
+      "tax_payments_2025": "Canadian federal $76M, BC provincial $33M, others",
+      "source_pages": [540, 545]
+    },
+    "lease_accounting": {
+      "lessor": "~4,700 restaurant properties leased/subleased to franchisees under operating, direct financing, and sales-type leases",
+      "initial_terms": "10-20 years",
+      "rental_income_2025": "Minimum lease payments $362M",
+      "rental_income_2024": "$367M",
+      "rental_income_2023": "$385M",
+      "operating_lease_assets_net": "$1,961M (2025), $1,852M (2024)",
+      "operating_lease_liabilities": "$1,900M (2025), $1,770M (2024)",
+      "source_pages": [538, 590]
+    },
+    "vie": {
+      "present": false,
+      "note": "No variable interest entities disclosed for PLK segment",
+      "source_pages": [508]
+    },
+    "subsequent_events": {
+      "disclosed": "Not separately noted for PLK. RBI-level: no material subsequent events identified beyond normal course",
+      "source_pages": [547]
+    },
+    "related_party": {
+      "timwen_partnership": "50% JV with Wendy's for Canadian restaurant real estate. Distributions: $15M (2025). Rent expense: $21M (2025).",
+      "carrols_acquisition": "Carrols Restaurant Group acquisition completed May 16, 2024 — added ~1,000 Burger King restaurants to company-owned portfolio",
+      "plk_guarantor_status": "PLK is a guarantor on RBI's Credit Facilities and Senior Notes",
+      "intercompany": "Advertising expenses include $303M for PLK segment in both 2025 and 2024",
+      "source_pages": [525, 528, 570, 575]
+    },
+    "advertising_fund": {
+      "accounting": "Contributions recognized as franchisee sales occur; expenses recognized as incurred",
+      "plk_advertising_expense": "$303M (2025), $303M (2024)",
+      "source_pages": [570]
+    }
+  },
+  "key_financial_lines": {
+    "balance_sheet_2025": {
+      "cash": 1163, "total_current_assets": 2830, "property_equipment_net": 2303,
+      "operating_lease_assets": 1961, "intangible_assets": 11190, "goodwill": 6306,
+      "total_assets": 25615, "total_current_liabilities": 2891,
+      "long_term_debt": 13250, "total_liabilities": 20456,
+      "total_equity": 5159, "noncontrolling_interests": 1525
+    },
+    "income_statement_2025": {
+      "total_revenue": 9434, "supply_chain_sales": 2909, "company_restaurant_sales": 2348,
+      "franchise_property_revenues": 2960, "advertising_revenues": 1217,
+      "income_from_operations": 2202, "interest_expense_net": 516,
+      "net_income_continuing": 1201, "net_loss_discontinued": 126,
+      "net_income": 1075, "net_income_attributable": 776
+    },
+    "plk_segment_2025": {
+      "external_revenues": 800, "company_restaurant_expenses": 159,
+      "segment_fp_expenses": 13, "advertising_expenses": 303,
+      "segment_ga": 75, "adjusted_operating_income": 250,
+      "depreciation": 14, "capex": 16
+    }
+  }
+}

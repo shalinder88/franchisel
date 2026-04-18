@@ -1,0 +1,304 @@
+{
+  "_enrichment_version": "v2",
+  "_self_contained": true,
+  "_enrichment_layers_beyond_v1": ["item1_detail", "item3_litigation_detail", "item6_fee_detail", "item7_total_investment_detail", "item8_supplier_restrictions_detail", "item11_training_detail", "item12_territory_detail", "item17_termination_detail", "item17_transfer_detail", "item17_noncompete_detail", "item19_chart_detail_extended", "item20_yearly_activity_extended", "item21_financial_structure_detail", "item21_statement_detail", "item21_note_families", "contract_burden_depth"],
+
+  "document_identity": {
+    "filing_id": "640453",
+    "brand": "Sonic Drive-In",
+    "franchisor_legal_name": "Sonic Franchising LLC",
+    "state_formed": "Delaware",
+    "formation_date": "March 23, 2011",
+    "principal_address": "Three Glenlake Parkway NE, Atlanta, Georgia 30328",
+    "phone": "(678) 514-4100",
+    "issuance_date": "March 26, 2026",
+    "fiscal_year_end": "December 28, 2025",
+    "parent_company": "Inspire Brands, Inc.",
+    "auditor": "KPMG LLP",
+    "audit_opinion": "unqualified",
+    "audit_date": "March 19, 2026",
+    "pdf_pages": 366
+  },
+
+  "item1": {
+    "entity_type": "Special-purpose Delaware LLC",
+    "sole_owner": "Sonic Capital LLC",
+    "ownership_chain": ["Sonic Franchising LLC", "Sonic Capital LLC", "Sonic LLC", "Sonic Holding Company", "IRB Holding Corp", "Inspire Brands, Inc."],
+    "pe_sponsor": "Roark Capital Management, LLC",
+    "franchise_since": 1974,
+    "predecessor": "Sonic Industries Services LLC (SIS)",
+    "management_agreement": "SIS performs all obligations under management agreement",
+    "trademark_owner": "ADIBP",
+    "trademark_license_term_years": 99,
+    "system_size": {"total": 3412, "franchised": 3120, "company": 292},
+    "inspire_brands_portfolio": ["Arby's (3,265)", "BWW (1,178+219 GO)", "Dunkin' (9,999)", "Baskin-Robbins (2,186)", "Jimmy John's (2,777)", "Subway (18,773)", "Dave's Hot Chicken (348)"],
+    "securitization_structure": true,
+    "securitization_amount": 1402563000,
+    "source_pages": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+  },
+
+  "item2_leadership": [
+    {"name": "Paul J. Brown", "role": "Board/CEO Inspire", "tenure": "Since 2018", "source_pages": [22]},
+    {"name": "John Kelly", "role": "President", "tenure": "Since Jan 2026", "source_pages": [22]},
+    {"name": "Tommy Deeley", "role": "COO", "tenure": "Since Jan 2026", "source_pages": [22]},
+    {"name": "Haddon Bennett", "role": "CISO", "tenure": "Since Dec 2019", "source_pages": [22]},
+    {"name": "Scott Catlett", "role": "CLO/Secretary/Board", "tenure": "Since Sep 2025", "source_pages": [22]},
+    {"name": "Ryan Dickerson", "role": "Sonic CMO (SIS)", "tenure": "Since Jan 2024", "source_pages": [22]},
+    {"name": "Joel Blanchard", "role": "Chief Supply Officer", "tenure": "Since Mar 2025", "source_pages": [23]},
+    {"name": "Katherine Jaspon", "role": "CFO/Board", "tenure": "Since Jul 2021", "source_pages": [23]},
+    {"name": "Daniel Lynn", "role": "Chief Commercial Officer", "tenure": "Since Aug 2022", "source_pages": [23]},
+    {"name": "Jason Maceda", "role": "Chief Portfolio Officer", "tenure": "Since Dec 2025", "source_pages": [23]},
+    {"name": "Scott Murphy", "role": "Chief Brand Officer", "tenure": "Since Nov 2023", "source_pages": [23]},
+    {"name": "John Dawson", "role": "President US Development", "tenure": "Since Dec 2025", "source_pages": [23]},
+    {"name": "Garrett Tash", "role": "VP US Development", "tenure": "Since Feb 2026", "source_pages": [23]},
+    {"name": "Dennis McCarthy", "role": "SVP Franchise Finance", "tenure": "Since Jun 2022", "source_pages": [24]},
+    {"name": "Luigi Beccarelli", "role": "SVP Franchise Optimization", "tenure": "Since Jun 2024", "source_pages": [24]},
+    {"name": "Vans Nelson", "role": "SVP Operations Excellence", "tenure": "Since Jan 2025", "source_pages": [24]},
+    {"name": "William Duffy", "role": "VP Restaurant Portfolio Mgmt", "tenure": "Since Aug 2020", "source_pages": [24]},
+    {"name": "Volker Heimeshoff", "role": "VP Construction", "tenure": "Since Jun 2022", "source_pages": [24]},
+    {"name": "Laura Ivanishvili", "role": "VP Architecture", "tenure": "Since Mar 2023", "source_pages": [24]},
+    {"name": "Kevin Knutson", "role": "VP Operating Services/Training", "tenure": "Since Jan 2025", "source_pages": [25]},
+    {"name": "Nicki Robinson", "role": "VP Franchise Operations", "tenure": "Since Nov 2021", "source_pages": [25]},
+    {"name": "Lisa Storey", "role": "VP Franchise Counsel", "tenure": "Since Mar 2020", "source_pages": [25]},
+    {"name": "Ted Tetrick", "role": "VP Finance", "tenure": "Since Jan 2020", "source_pages": [25]},
+    {"name": "Tim Asire", "role": "VP Franchise Health", "tenure": "Since Jan 2025", "source_pages": [25]},
+    {"name": "Kelli Holmes", "role": "VP Brand Training", "tenure": "Since Jan 2025", "source_pages": [25]}
+  ],
+
+  "item3_litigation": {
+    "pending": "None",
+    "concluded_count": 6,
+    "total_settlements": 10735000,
+    "direct_settlements": 10055000,
+    "affiliated_penalties": 680000,
+    "source_pages": [26, 27, 28]
+  },
+
+  "item4_bankruptcy": {"disclosed": false},
+
+  "item5_initial_fees": {
+    "franchise_fee_traditional": 15000,
+    "franchise_fee_non_traditional": 11250,
+    "development_fee_per_restaurant": 10000,
+    "training_fee_gm": 250,
+    "training_fee_additional": 5000,
+    "source_pages": [28, 29]
+  },
+
+  "item6_fee_detail": {
+    "royalty": {"rate": 0.05, "base": "Gross Sales", "frequency": "monthly"},
+    "sbf": {"rate": 0.009, "frequency": "monthly"},
+    "smf_cooperative": {"rate_range": "3.25%-5%", "frequency": "monthly"},
+    "technology": {"amount_range": "$365-$565/month"},
+    "late_charge": {"rate": 0.0175, "frequency": "monthly"},
+    "renewal": 15000,
+    "transfer": {"non_control": 1000, "standard": 3000},
+    "management_post_term": {"rate": 0.03},
+    "audit_surcharge": "10% of unpaid if understatement ≥3%",
+    "total_ongoing_burden_pct": "9.15%-10.90%",
+    "incentive_programs": {
+      "standard": {"year1": 0.01, "year2": 0.015, "year3": 0.02, "year4": 0.025, "year5_plus": 0.05},
+      "smf_discount": "50% off through Year 5",
+      "low_volume_threshold": 1400000,
+      "low_volume_extended_rate": 0.025,
+      "relocation": {"year1": 0.01, "year2": 0.02, "year3": 0.03, "year4_plus": 0.05},
+      "early_opening": "0% until required opening date (up to 6 months)",
+      "vetfran": {"credit_per_unit": 10000, "max": 100000},
+      "pioneer": {"credit_per_unit": 50000, "states": ["DC", "ME", "NH", "VT"]}
+    }
+  },
+
+  "item7_total_investment": {
+    "traditional": {"low": 1485200, "high": 2522900},
+    "c_store": {"low": 670200, "high": 1412900},
+    "urban_inline": {"low": 679200, "high": 1250900},
+    "major_components": {
+      "building": {"traditional_range": "$600K-$800K"},
+      "site_work": {"traditional_range": "$450K-$700K"},
+      "equipment": {"range": "$175K-$310K"},
+      "technology": {"traditional_range": "$105K-$160K"},
+      "signage": {"traditional_range": "$50K-$80K"}
+    }
+  },
+
+  "item8_supplier_restrictions": {
+    "pct_establishment": "16%-25%",
+    "pct_operations": "34%-50%",
+    "supplier_contributions_2025": 76500000,
+    "affiliate_revenue_from_franchisees": 0,
+    "purchasing_cooperatives": false
+  },
+
+  "item9_obligations": {"summary": "26 obligations covering all major franchise categories"},
+  "item10_financing": {"offered": false},
+
+  "item11_training": {
+    "total_hours": "164-194",
+    "classroom_hours": "44-59",
+    "ojt_hours": "120-135",
+    "duration_weeks": 5,
+    "gm_class_hours": 24,
+    "ops_manual_pages": 733,
+    "technology_cost_range": "$72K-$182K",
+    "annual_maintenance": "$4K-$8K"
+  },
+
+  "item12_territory": {
+    "exclusive": false,
+    "radius_range": "0.75-3 miles",
+    "population_based": true,
+    "carve_outs": 4,
+    "franchisor_reserved_rights": 5,
+    "franchisee_channel_restrictions": true
+  },
+
+  "item13_trademarks": {"registrations": 8, "license_years": 99, "owner": "ADIBP"},
+  "item14_patents": {"utility_patents": 1, "copyrights": 6, "innovations_owned_by": "franchisor"},
+  "item15_participation": {"principal_required": true, "guaranty_threshold": "10%"},
+  "item16_product_restrictions": {"franchisor_unlimited_menu_control": true, "pricing_control": true},
+
+  "item17_termination": {
+    "franchisee_can_terminate": false,
+    "non_curable_count": 10,
+    "curable_cure_days": "10 or 30",
+    "key_triggers": ["insolvency", "unauthorized_transfer", "terrorism", "felony", "trademark_misuse", "health_safety", "false_books", "3_defaults_in_12mo"]
+  },
+
+  "item17_transfer": {
+    "approval_required": true,
+    "conditions_count": 8,
+    "rofr": true,
+    "option_to_purchase_days": 30,
+    "transfer_fee": {"non_control": 1000, "standard": 3000},
+    "death_disability_days": "120 or probate"
+  },
+
+  "item17_renewal": {
+    "initial_term_years": 10,
+    "renewal_count": 2,
+    "renewal_term_years": 10,
+    "max_term_years": 30,
+    "renewal_fee": 15000,
+    "materially_different_terms": true,
+    "general_release_required": true,
+    "remodel_required": true
+  },
+
+  "item17_noncompete": {
+    "during_term": "No competing business",
+    "post_term_months": 18,
+    "post_term_miles": 3,
+    "applies_to_any_sonic": true,
+    "landlord_restriction": true
+  },
+
+  "item17_dispute_resolution": {
+    "arbitration": false,
+    "forum": "Atlanta, Georgia courts",
+    "governing_law": "Georgia"
+  },
+
+  "item18_public_figures": {"used": false},
+
+  "item19_chart_detail": {
+    "population": 3057,
+    "overall": {"avg": 1552145, "median": 1465090, "low": 225308, "high": 4800647, "pct_above_avg": 44},
+    "quartiles": [
+      {"q": 1, "n": 764, "avg": 2332093, "median": 2228716},
+      {"q": 2, "n": 764, "avg": 1659107, "median": 1653634},
+      {"q": 3, "n": 764, "avg": 1298578, "median": 1301671},
+      {"q": 4, "n": 765, "avg": 919629, "median": 958893}
+    ],
+    "by_venue": [
+      {"type": "Free-Standing/Urban", "n": 2988, "avg": 1562839},
+      {"type": "Gas/C-Store", "n": 69, "avg": 1089017}
+    ],
+    "cost_data": false,
+    "avg_age": 28,
+    "drive_thru_pct": 68
+  },
+
+  "item20_yearly_activity": {
+    "system_trajectory": {"2023": 3521, "2024": 3461, "2025": 3412},
+    "three_year_net": -134,
+    "transfers": {"2023": 75, "2024": 334, "2025": 100},
+    "projected_new": 16,
+    "gag_clause": true
+  },
+
+  "item21_financial_structure_detail": {
+    "two_entity_reporting": true,
+    "franchisor_entity": {
+      "assets": 34121000,
+      "equity": 25217000,
+      "net_income": 2820000,
+      "revenue": 51946000,
+      "royalty_to_affiliates": 45520000,
+      "distributions": 3987000,
+      "deferred_revenue": 8904000,
+      "intangible_net": 28108000,
+      "securitization_guarantee": 1402563000
+    },
+    "operating_entity": {
+      "assets": 2316915000,
+      "equity": 844694000,
+      "net_income": 168930000,
+      "revenue": 279790000,
+      "debt": 1402563000,
+      "interest": 50610000,
+      "goodwill": 822553000,
+      "trademark": 1100000000,
+      "property_net": 139271000,
+      "distributions": 180889000
+    }
+  },
+
+  "item21_statement_detail": {
+    "franchisor_income_trend": {"2023": 8056000, "2024": 5971000, "2025": 2820000},
+    "franchisor_revenue_trend": {"2023": 58747000, "2024": 58991000, "2025": 51946000},
+    "franchisor_equity_trend": {"2023_start": 31764000, "2023_end": 28475000, "2024_end": 26384000, "2025_end": 25217000},
+    "sis_revenue_components": {"franchise_fees_royalties": 218717000, "rental_income": 16623000, "other": 44450000},
+    "sis_cost_components": {"ga": 40320000, "da": 19464000},
+    "sis_debt_maturities": {"2026": 14750000, "2027": 617083000, "2028": 240125000, "2029": 5750000, "2030": 229917000, "thereafter": 294938000}
+  },
+
+  "item21_note_families": [
+    {"entity": "Sonic Franchising LLC", "note": "Intangible Assets", "key_fact": "Franchise agreements $48.1M gross, 17yr life, $28.1M net"},
+    {"entity": "Sonic Franchising LLC", "note": "Revenue Recognition", "key_fact": "Deferred fees $8.9M; franchise fees straight-line over FA term"},
+    {"entity": "Sonic Franchising LLC", "note": "Commitments", "key_fact": "Guarantees $1.4B securitization notes; $12.4M letters of credit"},
+    {"entity": "SIS", "note": "Long-Term Debt", "key_fact": "5 tranches, 2.19%-4.34%, $617M due 2027"},
+    {"entity": "SIS", "note": "Intangible Assets", "key_fact": "Trademark $1.1B indefinite-lived; franchise agreements $250M gross"},
+    {"entity": "SIS", "note": "Leases", "key_fact": "Assets leased $61.7M net; variable rent $8.4M/yr"},
+    {"entity": "SIS", "note": "Related Party", "key_fact": "Admin fee from Funds $22.5M (15% of receipts)"}
+  ],
+
+  "contract_burden_depth": {
+    "total_ongoing_fee_pct": "9.15%-10.90%",
+    "renewal_risk": "materially_different_terms",
+    "transfer_rofr": true,
+    "post_term_noncompete": "18mo/3mi from any Sonic",
+    "forum_selection": "Atlanta GA",
+    "no_arbitration": true,
+    "pricing_control": "max/min pricing to extent law allows",
+    "unlimited_menu_change": true,
+    "unlimited_pos_data_access": true,
+    "franchisor_can_reduce_territory": true,
+    "gag_clause": true
+  },
+
+  "special_risks": [{"risk": "Out-of-state dispute resolution", "venue": "Atlanta, Georgia"}],
+  "unresolveds": [
+    {"id": "U1", "description": "FA not fully clause-walked", "severity": "medium"},
+    {"id": "U2", "description": "No cost/profit data in Item 19", "severity": "high"},
+    {"id": "U3", "description": "Revenue declining 12% YoY", "severity": "medium"},
+    {"id": "U4", "description": "Distributions exceed net income", "severity": "medium"}
+  ],
+  "contradictions": [],
+
+  "state_addenda_overrides": {
+    "california": "Fast Food Act compliance",
+    "maryland": "Release limits, venue, 3yr SOL",
+    "washington": "AOD re: no-poaching",
+    "michigan": "MI Franchise Investment Law protections"
+  }
+}

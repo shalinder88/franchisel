@@ -1,0 +1,25 @@
+{
+  "depth_pass": "A2_item19_cohort_comparability",
+  "finding": "comparability_warning_present",
+  "id": "item19_cohort_comparability_warning",
+  "severity": "medium",
+  "cohort_royalty_rate": "2% to 10% (actual range paid in FY2025; standard is 5%)",
+  "cohort_ad_fund_rate": "4.6% or 5.0% (Ad Fund Test Program rates in effect during 2025)",
+  "cohort_tech_fee": "$200/mo + 1% of Digital Sales (max $6,500/yr)",
+  "current_royalty_rate": "5% (standard) with Ad Fund Test Program mandatory for new franchisees",
+  "current_ad_fund_rate": "5.0% (Ad Fund Test Program starting rate, with potential escalation to 5.25% or 5.50%)",
+  "current_tech_fee": "$200/mo + 1% of Digital Sales (max $6,500/yr)",
+  "basis_point_difference": "0-40 bps (advertising: cohort includes restaurants at 4.6% while new franchisees start at 5.0%; potential future gap if rate escalates to 5.25% or 5.50%)",
+  "dollar_impact_by_tier": [
+    {"tier_label": "Free-standing average ($1.89M)", "tier_sales": 1893880, "annual_impact_at_40bps": 7576, "annual_impact_at_90bps": 17045},
+    {"tier_label": "Free-standing upper ($2.62M)", "tier_sales": 2620074, "annual_impact_at_40bps": 10480, "annual_impact_at_90bps": 23581},
+    {"tier_label": "Free-standing lower ($1.17M)", "tier_sales": 1167953, "annual_impact_at_40bps": 4672, "annual_impact_at_90bps": 10512}
+  ],
+  "source_pages_item19": [89, 96, 97, 102],
+  "source_pages_item6": [29, 36, 37],
+  "reasoning": "The Item 19 EBITDA calculations are based on FY2025 P&L statements from existing restaurants. The 'Other Costs' category (which includes royalties, advertising, occupancy, etc.) reflects the actual rates those restaurants paid in 2025. The ad contribution cohort includes restaurants paying 4.6% (pre-Ad Fund Test Program) as well as 5.0% (post-program). New franchisees are locked into the Ad Fund Test Program at 5.0% minimum, with potential escalation to 5.50%. The royalty rate is consistent at 5% for standard franchisees. The primary comparability gap is in the advertising contribution rate, where the cohort average is diluted by legacy 4.6% payers while new franchisees pay 5.0%+. At the average free-standing sales level of $1.89M, a 40 bps gap equals ~$7,576/year; a 90 bps gap (if rate reaches 5.50% vs legacy 4.6%) equals ~$17,045/year — material but not severe relative to absolute EBITDA levels for restaurants above $1.5M in sales.",
+  "quote_fragments": [
+    "Restaurants participating in the Ad Fund Test Program will pay an Advertising Contribution of 5% starting April 1, 2025",
+    "We require participation in the Ad Fund Test Program for all new franchisees"
+  ]
+}

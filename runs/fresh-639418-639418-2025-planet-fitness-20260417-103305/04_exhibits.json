@@ -1,0 +1,169 @@
+{
+  "exhibits": [
+    {
+      "letter": "A",
+      "name": "List of State Agencies and Agents for Service of Process",
+      "category": "regulatory",
+      "priority": "low",
+      "pdf_page_range": [106, 108],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Standard regulatory listing; no operative clauses to walk."
+    },
+    {
+      "letter": "B",
+      "name": "Nondisclosure & Non-Use Agreement",
+      "category": "pre-contractual",
+      "priority": "medium",
+      "pdf_page_range": [109, 111],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["confidentiality", "non-use", "non-disclosure"],
+      "why_not_complete": "Pre-contractual NDA; key terms summarized from Item 14. Full clause walk deferred to A2. Pages 109-111."
+    },
+    {
+      "letter": "C",
+      "name": "Franchise Agreement (including Addenda and Appendices)",
+      "category": "core_contract",
+      "priority": "critical",
+      "pdf_page_range": [112, 211],
+      "clause_walk_status": "partial",
+      "material_clause_count": 19,
+      "operative_terms_extracted": ["term", "royalty", "territory", "transfer", "termination", "renewal", "non-compete", "insurance", "confidentiality", "indemnification", "training", "advertising", "marks", "operations_manual", "dispute_resolution", "guaranty", "debranding", "ROFR", "death_disability"],
+      "why_not_complete": "Key terms extracted via Item 17 tables. Full article-by-article clause walk deferred to A2. Pages 112-211 (100 pages)."
+    },
+    {
+      "letter": "D",
+      "name": "Acquisition Amendment to Franchise Agreement",
+      "category": "contract_amendment",
+      "priority": "medium",
+      "pdf_page_range": [212, 221],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["acquisition_terms"],
+      "why_not_complete": "Amendment for acquiring existing PF locations. Key terms summarized in Item 17. Full walk deferred to A2. Pages 212-221."
+    },
+    {
+      "letter": "E",
+      "name": "Successor Amendment to Franchise Agreement",
+      "category": "contract_amendment",
+      "priority": "medium",
+      "pdf_page_range": [222, 232],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["successor_terms"],
+      "why_not_complete": "Amendment for successor/renewal terms. Key terms in Item 17. Pages 222-232."
+    },
+    {
+      "letter": "F",
+      "name": "Conversion Amendment to Franchise Agreement",
+      "category": "contract_amendment",
+      "priority": "low",
+      "pdf_page_range": [233, 241],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["conversion_terms"],
+      "why_not_complete": "Amendment for converting existing fitness facilities. Pages 233-241."
+    },
+    {
+      "letter": "G",
+      "name": "Area Development Agreement (including Addenda and Appendices)",
+      "category": "core_contract",
+      "priority": "critical",
+      "pdf_page_range": [242, 283],
+      "clause_walk_status": "partial",
+      "material_clause_count": 15,
+      "operative_terms_extracted": ["development_area", "development_schedule", "non-traditional_locations", "multi-territory_acquisitions", "transfer", "termination", "non-compete", "right_of_first_refusal", "late_development_fee", "minimum_holding_period"],
+      "why_not_complete": "Key terms extracted via Item 12 and Item 17 ADA tables. Full clause walk deferred to A2. Pages 242-283."
+    },
+    {
+      "letter": "H",
+      "name": "Financial Statements",
+      "category": "financial",
+      "priority": "critical",
+      "pdf_page_range": [284, 391],
+      "clause_walk_status": "partial",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["auditor_opinion", "balance_sheet", "income_statement", "cash_flows", "note_families"],
+      "why_not_complete": "Franchisor LLC statements fully walked. Planet Fitness Inc. consolidated statements walked at headline level. Full note walk deferred to A2. Pages 284-391 (108 pages)."
+    },
+    {
+      "letter": "I",
+      "name": "List of Franchise and Corporate Locations",
+      "category": "franchisee_list",
+      "priority": "high",
+      "pdf_page_range": [392, 442],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Contact list of ~2,568 locations + 16 former franchisees. Not walked for PII reasons. Pages 392-442."
+    },
+    {
+      "letter": "J",
+      "name": "Form of General Release",
+      "category": "legal",
+      "priority": "high",
+      "pdf_page_range": [443, 447],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["general_release"],
+      "why_not_complete": "Release required for successor franchise and transfers. Pages 443-447."
+    },
+    {
+      "letter": "K-1",
+      "name": "Equipment Terms",
+      "category": "supplier_agreement",
+      "priority": "high",
+      "pdf_page_range": [448, 450],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["equipment_purchase_terms"],
+      "why_not_complete": "Terms for mandatory equipment purchase from PF Equipment affiliate. Pages 448-450."
+    },
+    {
+      "letter": "K-2",
+      "name": "Co-op Bylaws",
+      "category": "advertising",
+      "priority": "medium",
+      "pdf_page_range": [451, 462],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["cooperative_bylaws"],
+      "why_not_complete": "Advertising cooperative governance. Pages 451-462."
+    },
+    {
+      "letter": "K-3",
+      "name": "POS Agreements",
+      "category": "technology",
+      "priority": "high",
+      "pdf_page_range": [463, 487],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["billing_services", "fee_schedule", "payment_processing"],
+      "why_not_complete": "POS System agreements including billing, fee schedules. Pages 463-487."
+    },
+    {
+      "letter": "L",
+      "name": "Table of Contents to Operations Manual",
+      "category": "operations",
+      "priority": "low",
+      "pdf_page_range": [488, 493],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "TOC only; Operations Manual itself is proprietary and confidential. Pages 488-493."
+    },
+    {
+      "letter": "M",
+      "name": "State Addenda",
+      "category": "state_compliance",
+      "priority": "high",
+      "pdf_page_range": [494, 534],
+      "clause_walk_status": "partial",
+      "material_clause_count": 9,
+      "operative_terms_extracted": ["california_overrides", "illinois_overrides", "maryland_overrides", "minnesota_overrides", "new_york_overrides", "north_dakota_overrides", "rhode_island_overrides", "virginia_overrides", "wisconsin_overrides"],
+      "why_not_complete": "9 state addenda identified. California reviewed in depth. Others identified but not fully walked. Pages 494-534."
+    }
+  ]
+}

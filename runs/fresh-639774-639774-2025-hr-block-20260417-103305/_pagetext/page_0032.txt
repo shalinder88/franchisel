@@ -1,0 +1,54 @@
+   Prohibited Technologies                  Description                                  Risk
+
+                                  Any PC model that is not
+                                  featured in the Technology        G3 models and older are unable to support
+ Incompatible PC Models
+                                  Standards. (G3 models and         Windows 11 upgrade
+                                  below)
+                                  Any technology that allows
+ Network Attached Storage         access to a file storage device   Increases the exposure to unauthorized
+ (NAS)                            (NAS) on the Tax Office           network and storage access.
+                                  network.
+                                  Any software or hardware
+                                  technology that allows one tax
+                                                                  If one network is compromised, all systems
+ Site-to-Site VPN                 office network to share network
+                                                                  that share the network may also be at risk.
+                                  resources with another tax
+                                  office network.
+                               Any unapproved wireless
+                               network device that allows
+                               access to the Internet or local
+                               network resources shared with
+                                                                    Increases the exposure of unauthorized access
+ Wireless access points / WiFi the tax office network.
+                                                                    to the tax office network.
+                                  Note: A Block approved
+                                  isolated WiFi configuration is
+                                  available.
+                                  All tax office computers must
+                                  be connected to Port 1 on the
+                                  Cradlepoint Router via a 1Gbps
+ Unapproved Network               Network Switch. All other       Increases the exposure of unauthorized access
+ Configuration                    ports on the Cradlepoint Router to the tax office network.
+                                  are reserved for devices that
+                                  must be isolated from the tax
+                                  office network.
+                                  Any non-Block managed
+                                  computer network, device, or
+                                  user management framework         Interferes with Block’s ability to centrally
+ Active Directory / Domain
+                                  that utilizes either a Windows    manage systems in the tax office.
+                                  domain or any other group
+                                  management methodology.
+                                  Any software or configuration
+ Non-Block managed Anti-          management technology             Interferes with Block centrally managed anti-
+ Virus / Malware Software         intended to prevent/mitigate      virus / malware technologies.
+                                  impacts of malicious software.
+
+                         Standards required for support of specific models
+      Each item will be verified individually in order to receive technical support for that item.
+
+
+2025 H&R Block Tax Services FDD                      25
+

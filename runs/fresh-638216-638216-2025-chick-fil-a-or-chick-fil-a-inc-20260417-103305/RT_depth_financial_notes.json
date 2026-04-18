@@ -1,0 +1,23 @@
+{
+  "depth_pass": "A2_financial_note_depth",
+  "item21_extraction_method": "normal_text_extraction",
+  "auditor": "PricewaterhouseCoopers LLP",
+  "opinion_type": "unqualified",
+  "opinion_date": "2025-03-21",
+  "note_families": [
+    {"family": "nature_of_business", "pages": [155], "walked": true},
+    {"family": "revenue_recognition", "pages": [158, 159, 160, 161], "walked": true, "key_fact": "Operator base fee 12-15% + additional 50% net profit; Licensee fee 10% gross receipts"},
+    {"family": "property_equipment", "pages": [162], "walked": true, "key_fact": "Buildings 10-40yr, fixtures 3-20yr, restaurant 10-20yr/3-10yr"},
+    {"family": "leases", "pages": [162, 163, 182, 183], "walked": true, "key_fact": "US Operator leases month-to-month; $6.4B total future lease payments"},
+    {"family": "business_combinations", "pages": [157], "walked": true, "key_fact": "DHG acquisition $67.6M from STC Brands"},
+    {"family": "debt", "pages": [168, 169, 170], "walked": true, "key_fact": "$750M related party note, $1.7B 2020 senior notes, $750M 2024 senior notes"},
+    {"family": "treasury_stock_preferred_stock", "pages": [165], "walked": true, "key_fact": "Series A preferred 2,733,225 shares, 7% cumulative, $196 liquidation"},
+    {"family": "pension_postretirement", "pages": [171, 175, 180], "walked": true, "key_fact": "Frozen DB pension; EDC $56.7M; Rabbi Trust $446.2M; SERP $20M"},
+    {"family": "income_taxes", "pages": [158], "walked": true, "key_fact": "ASU 2023-09 Income Taxes not yet adopted (effective 2026)"},
+    {"family": "gift_card_deferred_revenue", "pages": [160, 161], "walked": true, "key_fact": "Gift card liability $305.6M; breakage $17.0M/yr"},
+    {"family": "advertising_fund", "pages": [160, 161], "walked": true, "key_fact": "Ad revenues from franchisees $46.2M (2024); contract liability $15.5M"},
+    {"family": "equity_method_investments", "pages": [183, 185], "walked": true, "key_fact": "WFF social impact 16.67%; Engage Venture Fund II/III"},
+    {"family": "related_party_transactions", "pages": [168, 157], "walked": true, "key_fact": "$750M note to related party for stock repurchase; $67.6M DHG acquisition from STC Brands"},
+    {"family": "subsequent_events", "pages": [185], "walked": true, "key_fact": "No material subsequent events disclosed beyond normal course"}
+  ]
+}

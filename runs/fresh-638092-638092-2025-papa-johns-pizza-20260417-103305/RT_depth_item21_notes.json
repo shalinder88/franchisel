@@ -1,0 +1,35 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_pass": "A2_item21_note_walk",
+  "brand": "Papa Johns",
+  "note": "All 5 financial statement notes fully walked via normal text extraction. Text layer is excellent. No image fallback needed.",
+  "note_families": [
+    {"note_family": "organization", "page_range": [484], "key_facts": ["KY LLC organized 2020-11-06", "Wholly owned by PJI", "Purpose: manage and sell US/Canadian franchises"]},
+    {"note_family": "accounting_policies", "page_range": [484, 485, 486], "key_facts": [
+      "GAAP basis", "Fiscal year ends last Sunday in December",
+      "Cash: all swept to PJUSA, zero balance at all times",
+      "AR: substantially all franchisee royalties, allowance $321K (2024)",
+      "Taxes: disregarded entity, reported on PJI consolidated return",
+      "Revenue: royalties recognized as sales occur; franchise fees amortized over 10-year term",
+      "Refranchising royalty streams: $11.4M remaining balance being recognized over FA terms",
+      "Deferred revenue: $17.2M total ($15.5M royalty/franchise fees + $1.7M area dev fees)"
+    ]},
+    {"note_family": "related_parties", "page_range": [487], "key_facts": [
+      "PJUSA supervision fee: $33.9M (2024) vs $14.1M (2023) — updated cost allocations",
+      "PJI trademark license: $803K (2024)",
+      "$15M interest-free note to PJUSA due earlier of demand or Dec 2030, 10.25% default penalty",
+      "Advances to related parties = excess cash from centralized cash management"
+    ]},
+    {"note_family": "members_equity", "page_range": [487, 488], "key_facts": [
+      "No member contributions in 2022-2024",
+      "Distributions: $111M (2024), $132M (2023), $128M (2022)",
+      "Distributions represent forgiveness of PJUSA advances, settled through equity"
+    ]},
+    {"note_family": "subsequent_events", "page_range": [488], "key_facts": [
+      "Evaluated through March 28, 2025",
+      "None identified"
+    ]}
+  ],
+  "not_present": ["lease_accounting", "depreciation", "impairment", "income_tax_provision", "variable_interest_entities", "advertising_fund_accounting"],
+  "explanation": "PJF is a single-member LLC with no employees, no fixed assets, no leases, and no operating activities beyond royalty collection. Many standard financial statement note families do not apply to this entity."
+}

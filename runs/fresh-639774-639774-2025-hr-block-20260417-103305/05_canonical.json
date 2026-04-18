@@ -1,0 +1,483 @@
+{
+  "document_identity": {
+    "filing_id": "639774",
+    "brand": "H&R Block",
+    "franchisor_legal_name": "H&R Block Tax Services LLC",
+    "parent": "H&R Block, Inc.",
+    "parent_ticker": "HRB",
+    "state_of_organization": "Missouri",
+    "state_filed": "Wisconsin",
+    "principal_place_of_business": "One H&R Block Way, Kansas City, Missouri 64105",
+    "fdd_year": 2025,
+    "fiscal_year_end": "June 30",
+    "issuance_date": "2025",
+    "pdf_pages": 315,
+    "source_pages": [1],
+    "confidence": "high"
+  },
+  "item1_entity_structure": {
+    "franchisor_type": "Missouri LLC",
+    "organized_date": "July 1, 2008 (via merger with predecessor)",
+    "predecessor": "H&R Block Tax Services, Inc. (1993-2008)",
+    "parent_incorporated": "July 27, 1955",
+    "parent_guarantees_performance": true,
+    "key_affiliates": [
+      {"name": "HRB Innovations, Inc.", "state": "Delaware", "role": "Owns Proprietary Marks, licensed to franchisor"},
+      {"name": "Emerald Financial Services, LLC", "state": "Delaware", "role": "Financial products program management"},
+      {"name": "Franchise Partner, Inc. (FPI)", "state": "Nevada", "role": "Commercial financing to franchisees"},
+      {"name": "H&R Block Insurance Agency, Inc.", "state": "Delaware", "role": "Franchise insurance program"},
+      {"name": "Companion Insurance, Ltd.", "state": "Missouri", "role": "POM service and administration"},
+      {"name": "H&R Block Canada, Inc.", "state": "Canada", "role": "Canadian franchisor since 1964"},
+      {"name": "HRB International LLC", "state": "Missouri", "role": "International franchisor"}
+    ],
+    "franchise_business_description": "Tax return preparation, electronic filing, financial products, bookkeeping, payroll services, and training",
+    "international_note": "No longer offers franchises outside US from this entity",
+    "source_section": "Item 1",
+    "source_pages": [8, 9, 10, 11, 12],
+    "confidence": "high"
+  },
+  "item2_leadership_roster": [
+    {"name": "Curtis Campbell", "role": "President, Global Consumer Tax & Chief Product Officer", "since": "May 2024", "note": "CEO of H&R Block, Inc. effective Jan 1, 2026; former CEO of TaxAct", "source_pages": [13]},
+    {"name": "Mark J. Darling", "role": "Senior Vice President, U.S. Retail Operations", "since": "May 2023", "source_pages": [13]},
+    {"name": "Shawn P. Moore", "role": "Vice President, Acquisitions and Development", "since": "June 2025", "source_pages": [14]},
+    {"name": "Katharine M. Haynes", "role": "Vice President, Secretary and Chief Ethics Officer", "since": "January 2022", "source_pages": [14]},
+    {"name": "Aubrey M. Holden", "role": "Vice President, Corporate Tax", "since": "April 2024", "source_pages": [14]},
+    {"name": "Roxane Harris", "role": "Vice President, U.S. Franchise/Block Advisors", "since": "May 2023", "note": "Supervises training programs", "source_pages": [14]},
+    {"name": "Christina Thomas", "role": "Director of Franchise Operations", "since": "November 2023", "source_pages": [14]},
+    {"name": "Stacy Henzel", "role": "Franchise Regional Director", "since": "August 2022", "source_pages": [14]},
+    {"name": "Chris Lohner", "role": "Franchise Regional Director", "since": "October 2020", "source_pages": [15]}
+  ],
+  "item3_litigation": {
+    "matters_disclosed": 7,
+    "active_matters": 1,
+    "settled_matters": 5,
+    "dismissed_matters": 1,
+    "key_matters": [
+      {"name": "Lopez v. H&R Block (compliance fee class action)", "status": "settled", "amount": "$660,000 (combined with Perras)", "source_pages": [15]},
+      {"name": "Perras v. H&R Block (compliance fee class action)", "status": "settled", "amount": "$660,000 (combined with Lopez)", "source_pages": [15, 16]},
+      {"name": "Form 8863 Class Actions (MDL)", "status": "settled", "amount": "$150,000", "source_pages": [15, 16]},
+      {"name": "Vocational Consultants v. H&R Block (franchise takeover)", "status": "settled", "amount": "$840,000", "source_pages": [16]},
+      {"name": "FTC v. H&R Block (DIY practices)", "status": "settled", "amount": "$7,000,000 + business practice changes", "source_pages": [16]},
+      {"name": "Colorado Tax Specialists v. H&R Block (wrongful termination)", "status": "ongoing", "source_pages": [16]},
+      {"name": "H&R Block v. Calise Enterprises (noncompete breach)", "status": "settled", "amount": "consent injunction through April 30, 2026", "source_pages": [16]}
+    ],
+    "litigation_against_franchisees_last_fy": 1,
+    "source_section": "Item 3",
+    "source_pages": [15, 16, 17],
+    "confidence": "high"
+  },
+  "item4_bankruptcy": {
+    "bankruptcy_history": false,
+    "source_section": "Item 4",
+    "source_pages": [17],
+    "confidence": "high"
+  },
+  "item5_initial_fees": {
+    "initial_franchise_fee": 2500,
+    "payment_timing": "Lump sum when FLA signed",
+    "refundable": false,
+    "uniform": true,
+    "source_section": "Item 5",
+    "source_pages": [17],
+    "confidence": "high"
+  },
+  "item6_royalty": {
+    "structure": "tiered_by_revenue_and_timing",
+    "tiers": [
+      {"description": "First $5,000 revenue per calendar year", "rate_standard": 0.60, "rate_early_pay": 0.50},
+      {"description": "Revenue above $5,000 per calendar year", "rate_standard": 0.40, "rate_early_pay": 0.30},
+      {"description": "Incremental revenue above 2-year average (after 2 full Tax Seasons)", "rate_early_pay": 0.20, "note": "Only available if paid within 4 days and no overdue amounts"}
+    ],
+    "early_pay_window": "4 days after end of Reporting Period",
+    "early_pay_condition": "No other amounts payable are overdue",
+    "source_section": "Item 6",
+    "source_pages": [17, 18],
+    "confidence": "high"
+  },
+  "item6_product_specific_royalties": {
+    "business_services": {"rate_standard": 0.15, "rate_early_pay": 0.10},
+    "pom": {"rate": 0.20, "type": "Product Specific Royalty"},
+    "second_look": {"rate": 0.20, "type": "Product Specific Royalty"},
+    "note": "Products subject to Product Specific Royalty may change; current rates in Manual",
+    "source_section": "Item 6",
+    "source_pages": [18],
+    "confidence": "high"
+  },
+  "item6_advertising": {
+    "advertising_fund": false,
+    "brand_management_budget": {
+      "amount": "Greater of $500 or 1% of prior FY Net Amount Subject to Royalties",
+      "availability": "On or around July 15 annually",
+      "approval_required": true,
+      "discretionary": true,
+      "may_be_discontinued": true
+    },
+    "local_advertising": "Permitted at franchisee expense with prior written approval; no unsolicited email",
+    "source_section": "Item 11",
+    "source_pages": [28, 29],
+    "confidence": "high"
+  },
+  "item6_technology_fees": {
+    "tax_prep_software": "Provided at no charge",
+    "computer_hardware": "$10,000-$12,000 initial; $3,000-$5,000 periodic upgrade (3-5 year cycle)",
+    "ongoing_tech_requirements": "BTR standards compliance, Windows 11, Cradlepoint router, Block-managed security",
+    "source_section": "Items 6, 11",
+    "source_pages": [22, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35],
+    "confidence": "high"
+  },
+  "item6_rent": {
+    "note": "Franchisor does not lease to franchisee. Franchisee must secure own lease. $7-$100/sq ft annually for 800-1,200 sq ft.",
+    "source_section": "Item 7",
+    "source_pages": [19, 20],
+    "confidence": "high"
+  },
+  "item7_total_investment": {
+    "low": 34080,
+    "high": 158750,
+    "largest_components": [
+      {"component": "Leasehold improvements", "low": 0, "high": 50000},
+      {"component": "Real property (3 months)", "low": 1400, "high": 30000},
+      {"component": "Furniture and decor", "low": 15000, "high": 30000},
+      {"component": "Equipment", "low": 10000, "high": 12000}
+    ],
+    "space_requirements": "800-1,200 sq ft with 5+ parking spaces",
+    "source_section": "Item 7",
+    "source_pages": [19, 20, 21],
+    "confidence": "high"
+  },
+  "item8_supplier_restrictions": {
+    "required_from_franchisor": ["Tax preparation software", "POM Extended Service Plan", "Tax Identity Shield", "Financial products (via approved banking partner)"],
+    "required_from_approved_suppliers": ["Office module system", "Computer hardware (via Coupa)", "Insurance (Franchise Insurance Program or A-VII rated carrier)"],
+    "franchisor_revenue_from_suppliers": false,
+    "officer_equity_in_suppliers": false,
+    "purchasing_cooperatives": false,
+    "insurance_minimums": {
+      "general_liability": "$2M per occurrence, $10M aggregate",
+      "errors_omissions": "$3M per claim and aggregate",
+      "property": "100% replacement cost (contents, betterments, improvements)"
+    },
+    "source_section": "Item 8",
+    "source_pages": [21, 22, 23],
+    "confidence": "high"
+  },
+  "item9_obligations": {
+    "summary": "Full obligations table with 25 categories cross-referenced to FLA sections and disclosure items",
+    "key_obligations": ["site_selection", "training", "fees", "manual_compliance", "trademark_use", "insurance", "advertising_approval", "inspections", "transfer_restrictions", "noncompete"],
+    "source_section": "Item 9",
+    "source_pages": [23, 24],
+    "confidence": "high"
+  },
+  "item10_financing": {
+    "financing_available": true,
+    "lender": "Franchise Partner, Inc. (FPI) — affiliate",
+    "term_loan": {
+      "purpose": "Acquire franchise, tax business, partner buyout, SBA refinance, brand upgrades",
+      "interest_rate": "Prime + 3.0% (10.5% as of June 30, 2025)",
+      "administration_fee": "2%",
+      "term": "4-10 years",
+      "prepayment_penalty": false,
+      "secured_by": "All franchise business property"
+    },
+    "short_term_loan": {
+      "purpose": "Operating expenses pre-Tax Season",
+      "term": "7 months (Sep 1 - Apr 30)",
+      "limit": "Up to 20% of prior year net tax prep revenue",
+      "secured_by": "All franchise business property"
+    },
+    "cross_default": true,
+    "personal_guarantee": "Associates may be required as co-borrowers",
+    "third_party_financing_allowed": true,
+    "cannot_pledge_client_data": true,
+    "source_section": "Item 10",
+    "source_pages": [24, 25],
+    "confidence": "high"
+  },
+  "item11_training": {
+    "initial_training": {
+      "total_hours": 61,
+      "classroom_hours": 42,
+      "ojt_hours": 19,
+      "format": "First session in-person Kansas City, MO; subsequent sessions virtual",
+      "frequency": "Quarterly",
+      "cost_to_franchisee": "Free (franchisee pays travel, lodging, wages)",
+      "supervised_by": "Roxane Harris, VP US Franchise/Block Advisors"
+    },
+    "ongoing_training": {
+      "annual_required_hours": 19,
+      "cost": "Free (franchisee pays labor)",
+      "additional_training_fee": "$35 annual per participant"
+    },
+    "income_tax_course": {
+      "available": true,
+      "format": "Virtual and in-person",
+      "cost": "Free (materials fee)"
+    },
+    "source_section": "Item 11",
+    "source_pages": [26, 27, 28],
+    "confidence": "high"
+  },
+  "item12_territory": {
+    "exclusive": false,
+    "territory_definition": "Varies: rural = municipal boundaries; metro = specific address or mapped area",
+    "minimum_territory": "May be limited to a specific address",
+    "franchisor_competition_rights": [
+      "Internet/virtual services under any marks inside territory",
+      "Non-Authorized Services under any marks inside territory",
+      "Authorized Services under non-Licensed Marks inside territory",
+      "Optional Services if franchisee declines",
+      "Acquire or be acquired by competitors operating in territory"
+    ],
+    "options_or_rofr_for_additional": false,
+    "relocation_requires_approval": true,
+    "closed_location_rights": "Franchisor may operate abandoned location and amend territory to exclude it",
+    "performance_contingency": false,
+    "source_section": "Item 12",
+    "source_pages": [36, 37],
+    "confidence": "high"
+  },
+  "item13_trademarks": {
+    "mark_owner": "HRB Innovations, Inc.",
+    "license_agreement_date": "April 1, 1993",
+    "license_term": "Indefinite (30-day termination by either party)",
+    "principal_marks_count": 9,
+    "all_registrations_current": true,
+    "infringement_proceedings": false,
+    "defense_policy": "Franchisor defends if marks used in compliance; franchisee bears cost if not",
+    "source_section": "Item 13",
+    "source_pages": [37, 38, 39],
+    "confidence": "high"
+  },
+  "item14_patents": {
+    "patent_portfolio": "Small but growing (1-20 year remaining terms)",
+    "material_copyrights": false,
+    "copyright_claims": ["Manual", "Software"],
+    "proprietary_info_protection": "Confidentiality required; employee covenants required; all Developments assigned to H&R Block",
+    "source_section": "Item 14",
+    "source_pages": [39, 40],
+    "confidence": "high"
+  },
+  "item15_participation": {
+    "full_time_required": true,
+    "physical_presence_required": false,
+    "principal_training_required": true,
+    "qualified_staff_required": true,
+    "source_section": "Item 15",
+    "source_pages": [40],
+    "confidence": "high"
+  },
+  "item16_product_restrictions": {
+    "only_approved_products": true,
+    "franchisor_may_change_at_any_time": true,
+    "price_controls": "May but currently does not specify prices",
+    "internet_sales_restricted": true,
+    "source_section": "Item 16",
+    "source_pages": [40, 41],
+    "confidence": "high"
+  },
+  "item17_renewal": {
+    "term": "Ends June 1 following 10th full Tax Season after Effective Date",
+    "automatic_renewal": false,
+    "successor_franchise": "Franchisor may offer at sole discretion",
+    "materially_different_terms": true,
+    "source_section": "Item 17",
+    "source_pages": [41],
+    "confidence": "high"
+  },
+  "item17_termination": {
+    "by_franchisee": {
+      "notice": "30 days written notice before June 1",
+      "condition": "Not in default",
+      "payment": "25% of 3-year average gross sales (or 100% of prior year if <3 years)",
+      "subject_to_state_law": true
+    },
+    "by_franchisor_without_cause": false,
+    "by_franchisor_with_cause": {
+      "curable_cure_period": "15+ days",
+      "incurable_defaults": ["Prohibited competition/disclosure", "3+ defaults in 12 months", "Criminal conviction", "Fraud", "E-file prohibition/suspension", "Assignment for creditors", "Receivership/bankruptcy", "Refusing inspection", "False books", "Prohibited assignments", "Cross-default from related party franchise termination"]
+    },
+    "source_section": "Item 17",
+    "source_pages": [41, 42],
+    "confidence": "high"
+  },
+  "item17_transfer": {
+    "approval_required": true,
+    "exceptions": ["Individual to wholly-owned entity", "Entity to substantially-same entity", "Non-controlling equity changes"],
+    "conditions": ["Payment of debts", "No default", "$2,500 transfer fee", "Transferee qualifications", "May require then-current FLA"],
+    "rofr": "30 days to match offer terms",
+    "death_disability": "Transfer within 6 months",
+    "source_section": "Item 17",
+    "source_pages": [42],
+    "confidence": "high"
+  },
+  "item17_noncompete": {
+    "during_term": {
+      "scope": "Franchisee and Associates",
+      "radius": "45 miles from Franchise Territory or any Network Office",
+      "activity": "Owning or working at similar business",
+      "subject_to_state_law": true
+    },
+    "post_term": {
+      "duration": "2 years",
+      "radius": "25 miles from Franchise Territory",
+      "includes_nonsolicitation": true,
+      "exception": "If franchisee terminates under §15 and meets all requirements",
+      "subject_to_state_law": true
+    },
+    "source_section": "Item 17",
+    "source_pages": [42],
+    "confidence": "high"
+  },
+  "item17_dispute_resolution": {
+    "method": "Litigation",
+    "venue": "State or federal court, Jackson County, Missouri",
+    "governing_law": "Missouri",
+    "arbitration": false,
+    "mediation": false,
+    "state_amendments_apply": true,
+    "source_section": "Item 17",
+    "source_pages": [42, 43],
+    "confidence": "high"
+  },
+  "item17_death_disability": {
+    "transfer_deadline": "6 months",
+    "source_section": "Item 17",
+    "source_pages": [42],
+    "confidence": "high"
+  },
+  "item18_public_figures": {
+    "public_figures_used": false,
+    "source_section": "Item 18",
+    "source_pages": [43],
+    "confidence": "high"
+  },
+  "item19_fpr": {
+    "fpr_provided": false,
+    "statement": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets.",
+    "substantiation_available": false,
+    "source_section": "Item 19",
+    "source_pages": [43],
+    "confidence": "high"
+  },
+  "item20_systemwide": {
+    "total_outlets_end_fy2025": 8688,
+    "franchised_end_fy2025": 1987,
+    "company_owned_end_fy2025": 6701,
+    "franchised_net_change_fy2025": -148,
+    "company_owned_net_change_fy2025": 72,
+    "franchised_3yr_decline": -574,
+    "gag_clause_flag": true,
+    "gag_clause_quote": "In some instances, during the last three Fiscal Years, current and former franchisees signed provisions restricting their ability to speak openly about their experience with us.",
+    "independent_association": {"name": "Franchise Community Association, Inc.", "location": "Prairie Village, KS", "phone": "501-417-1040"},
+    "franchisee_leadership_council": {"chair": "Tony Temple", "vice_chair": "Beth Bennett"},
+    "source_section": "Item 20",
+    "source_pages": [44, 56],
+    "confidence": "high"
+  },
+  "item20_transfers": {
+    "transfers_FY2023": 40,
+    "transfers_FY2024": 42,
+    "transfers_FY2025": 26,
+    "source_pages": [44, 45, 46, 47]
+  },
+  "item20_franchised_status": {
+    "FY2023": {"start": 2561, "opened": 0, "terminations": 20, "non_renewals": 2, "reacquired": 151, "ceased_ops": 49, "end": 2339},
+    "FY2024": {"start": 2339, "opened": 0, "terminations": 11, "non_renewals": 6, "reacquired": 169, "ceased_ops": 18, "end": 2135},
+    "FY2025": {"start": 2135, "opened": 1, "terminations": 9, "non_renewals": 1, "reacquired": 118, "ceased_ops": 21, "end": 1987},
+    "source_pages": [47, 48, 49, 50, 51]
+  },
+  "item20_company_owned_status": {
+    "FY2023": {"start": 6665, "opened": 71, "closed": 154, "end": 6582},
+    "FY2024": {"start": 6582, "opened": 114, "closed": 67, "end": 6629},
+    "FY2025": {"start": 6629, "opened": 107, "closed": 35, "end": 6701},
+    "source_pages": [51, 52, 53, 54]
+  },
+  "item20_projected_openings": {
+    "projected_new_franchised_fy2026": 0,
+    "projected_new_company_owned_fy2026": 138,
+    "franchise_agreements_signed_not_opened": 0,
+    "source_pages": [54, 55]
+  },
+  "item21_financial_statements": {
+    "entity": "H&R Block, Inc. (parent — consolidated)",
+    "auditor": "Deloitte & Touche LLP",
+    "auditor_since": 2007,
+    "opinion": "unqualified",
+    "going_concern": false,
+    "report_date": "August 15, 2025",
+    "fiscal_years_covered": ["FY2023", "FY2024", "FY2025"],
+    "parent_guarantee": true,
+    "income_statement": {
+      "FY2025": {"total_revenue": 3760995, "operating_expenses": 2933025, "income_before_tax": 781403, "net_income": 605773, "diluted_eps": 4.39},
+      "FY2024": {"total_revenue": 3610347, "operating_expenses": 2805070, "income_before_tax": 762322, "net_income": 595317, "diluted_eps": 4.12},
+      "FY2023": {"total_revenue": 3472185, "operating_expenses": 2723487, "income_before_tax": 711212, "net_income": 553700, "diluted_eps": 3.51}
+    },
+    "balance_sheet": {
+      "FY2025": {"total_assets": 3263898, "total_liabilities": 3175002, "total_equity": 88896, "goodwill": 802053, "long_term_debt": 1143305, "cash": 983277},
+      "FY2024": {"total_assets": 3218810, "total_liabilities": 3128216, "total_equity": 90594, "goodwill": 785226, "long_term_debt": 1491095, "cash": 1053326}
+    },
+    "cash_flow": {
+      "FY2025": {"operating": 680883, "investing": -105373, "financing": -647443}
+    },
+    "key_observations": [
+      "Highly leveraged: equity $88.9M vs liabilities $3.18B",
+      "Revenue growing ~4-5% annually",
+      "Royalty/product revenue declining ($315M→$308M→$287M) — consistent with franchise contraction",
+      "Returning ~$634M to shareholders annually (dividends + buybacks)",
+      "Strong operating cash flow ~$681M",
+      "Current debt maturity: $349.9M in FY2025",
+      "Goodwill $802M (Wave $159M — critical audit matter)",
+      "POM deferred revenue $149.3M"
+    ],
+    "amounts_in": "thousands (000s)",
+    "source_section": "Item 21 / Exhibit D",
+    "source_pages": [56, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102],
+    "confidence": "high"
+  },
+  "item22_contracts_listed": ["A", "B", "C", "D", "E", "F-1", "F-2", "F-3", "G", "H-1", "H-2", "I-1", "I-2", "I-3", "J", "K"],
+  "special_risks": [
+    {
+      "risk": "Out-of-state dispute resolution",
+      "description": "Franchise agreement requires disputes resolved by litigation in Missouri. May force less favorable settlement and higher costs.",
+      "source_pages": [4]
+    },
+    {
+      "risk": "Seasonality of business",
+      "description": "Most significant income generated January 1 through April 15 (or extended deadline). State restrictions may require business closure and cause additional costs.",
+      "source_pages": [4]
+    }
+  ],
+  "state_addenda_identified": {
+    "states_with_amendments": ["California", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington", "Wisconsin"],
+    "total_states": 11,
+    "source_pages": [60, 89],
+    "structured_overrides_pending": "Deferred to A2 depth pass"
+  },
+  "unresolveds": [
+    {
+      "id": "UR-001",
+      "description": "Item 20 Table 3 footnotes reference 'Correction to total from previous years' counts' for multiple states (AL, IN, KY, PA, VI). Nature of corrections unclear.",
+      "severity": "medium",
+      "source": "Item 20, pp.47-51"
+    },
+    {
+      "id": "UR-002",
+      "description": "Table 4 'Reacquired from Franchisee' column shows 0 for all years while Table 3 shows 118-169 reacquisitions per year. Reconciliation path between tables unclear.",
+      "severity": "medium",
+      "source": "Item 20, pp.47-54"
+    },
+    {
+      "id": "UR-003",
+      "description": "State addenda operative details not yet structured per-state. 11 states identified but detailed override content deferred to A2.",
+      "severity": "medium",
+      "source": "Exhibit B, pp.60-89"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "CONTRA-001",
+      "description": "Item 20 Table 3 shows 0 new franchised outlets opened in FY2023 and FY2024, but 1 in FY2025 (Georgia). Table 5 projects 0 new franchised for FY2026. System is in sustained franchise contraction while company-owned side grows — appears to be strategic reacquisition program.",
+      "items_involved": ["Item 20 Table 1", "Item 20 Table 3", "Item 20 Table 5"],
+      "resolution_status": "Consistent across tables — this is strategic contraction, not a data contradiction"
+    }
+  ]
+}

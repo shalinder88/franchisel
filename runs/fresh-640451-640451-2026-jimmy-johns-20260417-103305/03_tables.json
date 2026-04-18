@@ -1,0 +1,300 @@
+{
+  "extraction_date": "2026-04-18",
+  "brand": "Jimmy John's",
+  "tables": [
+    {
+      "table_id": "item5_initial_franchise_fee",
+      "source_item": "Item 5",
+      "source_pages": [32],
+      "title": "Initial Franchise Fee Schedule",
+      "columns": ["Restaurant Type", "Initial Franchise Fee"],
+      "rows": [
+        {"restaurant_type": "Standard Traditional Restaurant", "initial_franchise_fee": "$35,000"},
+        {"restaurant_type": "Standard Traditional Restaurant Previously Operated and Closed within the Last Year", "initial_franchise_fee": "$12,500, or $5,000 for existing franchisee in good standing"},
+        {"restaurant_type": "Non-Traditional Location", "initial_franchise_fee": "$17,500 (or $1,750 × number of full or partial years in the term, up to 10 years)"}
+      ],
+      "table_notes": ["Initial franchise fees are fully earned when paid and not refundable under any circumstances."]
+    },
+    {
+      "table_id": "item6_fee_table",
+      "source_item": "Item 6",
+      "source_pages": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47],
+      "title": "Other Fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Royalty", "amount": "6% of weekly Gross Sales", "due_date": "Wednesday of each week", "remarks": "Standard rate; various incentive programs may reduce"},
+        {"type": "Advertising and Development Fund", "amount": "Up to 4.5% of weekly Gross Sales (currently full 4.5%); 2.25% for Non-Traditional Locations", "due_date": "Wednesday of each week", "remarks": "Item 11 discusses Fund"},
+        {"type": "Cooperative Advertising Programs", "amount": "Up to 2% of Gross Sales", "due_date": "As Cooperative Program directs", "remarks": "Item 11 discusses programs"},
+        {"type": "Successor Franchise", "amount": "$10,000", "due_date": "When acquiring successor franchise", "remarks": "After initial term expires"},
+        {"type": "Site Design Fee / Kitchen Layout Design Fee", "amount": "$1,200 PSL / $750-$1,200 PKL", "due_date": "Upon request", "remarks": "PSL only for drive-thru restaurants"},
+        {"type": "Certified Management Training (additional/repeat)", "amount": "$1,000 ($4,000 for expelled re-attending)", "due_date": "Upon registration", "remarks": "First 2 people at no additional cost"},
+        {"type": "New Training / Additional Guidance", "amount": "$400-$600/person/day + expenses (up to $1,000)", "due_date": "When begins", "remarks": "Excluding labor relations"},
+        {"type": "District Manager Training", "amount": "$2,000 (up to $5,000)", "due_date": "Upon registration", "remarks": "Item 11 discusses"},
+        {"type": "Controlling Ownership Interest Transfer", "amount": "$2,500 / $7,500 / $12,500", "due_date": "Half when request, balance before completion", "remarks": "$12,500 non-existing; $7,500 existing; $2,500 family; $0 controlled entity"},
+        {"type": "Non-Controlling Ownership Interest Transfer", "amount": "$1,000", "due_date": "Before proposed effective date", "remarks": ""},
+        {"type": "Audit", "amount": "Cost of inspection/audit", "due_date": "15 days after report", "remarks": "If understate royalties >3% or fail to submit reports"},
+        {"type": "Interest", "amount": "Lesser of 1.5%/month or highest allowed", "due_date": "When billed", "remarks": "On amounts >7 days late"},
+        {"type": "Non-Approved Restaurant Opening", "amount": "$2,500/day", "due_date": "When billed", "remarks": "If open before approval"},
+        {"type": "Non-Compliance", "amount": "$250-$1,000 per deviation", "due_date": "When billed", "remarks": "Escalating: $250 first, $500 first repeat, $1,000 subsequent"},
+        {"type": "Unauthorized Advertising Fee", "amount": "$1,000/occurrence", "due_date": "When billed", "remarks": ""},
+        {"type": "Late Fee", "amount": "10% of original amount", "due_date": "When billed", "remarks": ""},
+        {"type": "Confidential Operations Manual Replacement", "amount": "$500", "due_date": "15 days after billing", "remarks": ""},
+        {"type": "Management Fee", "amount": "$600/person/day + costs", "due_date": "As incurred", "remarks": "After death/disability/default/abandonment; not for Sophisticated Franchisees"},
+        {"type": "Liquidated Damages", "amount": "min(36, remaining months) × avg monthly royalty (prior 12 months)", "due_date": "15 days after termination", "remarks": "If franchisor terminates with cause or franchisee terminates without cause"},
+        {"type": "Maintenance Cost Reimbursement", "amount": "$600/day + costs", "due_date": "As incurred", "remarks": "If franchisor corrects sub-standard appearance"},
+        {"type": "Franchisee Convention", "amount": "Up to $500", "due_date": "When billed", "remarks": "Plus travel/living"},
+        {"type": "Indemnification", "amount": "Varies", "due_date": "As incurred", "remarks": "Reimburse for third-party claims from restaurant operation"}
+      ],
+      "table_notes": [
+        "All fees are imposed and collected by franchisor, affiliates, or designees.",
+        "Franchisor may charge higher or lower royalty for certain Non-Traditional Locations.",
+        "No fee is refundable.",
+        "Before opening, franchisee must sign EDTA authorization for automatic debiting.",
+        "Local marketing requirement: 0.5% of weekly Gross Sales.",
+        "Must participate in Regional Advisory Franchisee Council; Council assessments vary."
+      ]
+    },
+    {
+      "table_id": "item7_initial_investment_traditional",
+      "source_item": "Item 7",
+      "source_pages": [48, 49],
+      "title": "Estimated Initial Investment — Traditional Location",
+      "columns": ["Type of Expenditure", "Amount Low", "Amount High"],
+      "rows": [
+        {"type": "Initial Franchise Fee", "low": 35000, "high": 35000},
+        {"type": "Real Estate/Rent (1 month)", "low": 2500, "high": 8000},
+        {"type": "Security Deposit", "low": 2500, "high": 8000},
+        {"type": "Leasehold Improvements", "low": 115000, "high": 310000},
+        {"type": "Furniture, Fixtures, Signage, and Equipment (including POS)", "low": 120000, "high": 215000},
+        {"type": "Architect/Design Services", "low": 9500, "high": 22000},
+        {"type": "Office Equipment", "low": 2200, "high": 2500},
+        {"type": "Utility Deposits", "low": 1000, "high": 2000},
+        {"type": "Opening Inventory and Supplies", "low": 6000, "high": 6000},
+        {"type": "Grand Opening Event", "low": 3000, "high": 5000},
+        {"type": "Training Expenses (up to 3 people)", "low": 6000, "high": 15000},
+        {"type": "Insurance", "low": 11500, "high": 20000},
+        {"type": "Miscellaneous Expenses", "low": 2000, "high": 10000},
+        {"type": "Additional Funds – 3 months", "low": 50000, "high": 75000}
+      ],
+      "total": {"low": 366200, "high": 733500},
+      "table_notes": [
+        "Excludes real estate purchase costs.",
+        "No expenditure refundable except security deposit and perhaps some utility deposits.",
+        "Drive-thru locations more expensive due to larger size and additional construction.",
+        "Traditional location typically 1,000-1,800 sq ft."
+      ]
+    },
+    {
+      "table_id": "item7_initial_investment_nontraditional",
+      "source_item": "Item 7",
+      "source_pages": [48, 49],
+      "title": "Estimated Initial Investment — Non-Traditional Location",
+      "columns": ["Type of Expenditure", "Amount Low", "Amount High"],
+      "rows": [
+        {"type": "Initial Franchise Fee", "low": 17500, "high": 17500},
+        {"type": "Real Estate/Rent (1 month)", "low": 2500, "high": 8000},
+        {"type": "Security Deposit", "low": 2500, "high": 8000},
+        {"type": "Leasehold Improvements", "low": 31500, "high": 300000},
+        {"type": "Furniture, Fixtures, Signage, and Equipment (including POS)", "low": 65000, "high": 195000},
+        {"type": "Architect/Design Services", "low": 5500, "high": 22000},
+        {"type": "Office Equipment", "low": 2200, "high": 2500},
+        {"type": "Utility Deposits", "low": 1000, "high": 2000},
+        {"type": "Opening Inventory and Supplies", "low": 6000, "high": 6000},
+        {"type": "Grand Opening Event", "low": 3000, "high": 5000},
+        {"type": "Training Expenses (up to 3 people)", "low": 6000, "high": 15000},
+        {"type": "Insurance", "low": 11500, "high": 20000},
+        {"type": "Miscellaneous Expenses", "low": 2000, "high": 10000},
+        {"type": "Additional Funds – 3 months", "low": 50000, "high": 75000}
+      ],
+      "total": {"low": 206200, "high": 686000},
+      "table_notes": ["Non-Traditional location typically 500-1,200 sq ft."]
+    },
+    {
+      "table_id": "item19_auv_quartile",
+      "source_item": "Item 19",
+      "source_pages": [89],
+      "title": "Annual Unit Volumes for 2025 Franchised Restaurants",
+      "columns": ["Quartile", "# Restaurants", "Highest AUV", "Median AUV", "Lowest AUV", "Average AUV", "# Above Average", "% Above Average"],
+      "rows": [
+        {"quartile": "1st", "count": 645, "highest": 3046579, "median": 1411318, "lowest": 1212927, "average": 1490247, "above_avg_count": 227, "above_avg_pct": 35.0},
+        {"quartile": "2nd", "count": 645, "highest": 1212584, "median": 1076504, "lowest": 955810, "average": 1081405, "above_avg_count": 307, "above_avg_pct": 47.5},
+        {"quartile": "3rd", "count": 645, "highest": 955646, "median": 848939, "lowest": 744686, "average": 850650, "above_avg_count": 317, "above_avg_pct": 49.1},
+        {"quartile": "4th", "count": 646, "highest": 744645, "median": 632334, "lowest": 159965, "average": 608313, "above_avg_count": 391, "above_avg_pct": 60.5},
+        {"quartile": "All", "count": 2581, "highest": 3046579, "median": 955639, "lowest": 159965, "average": 1007437, "above_avg_count": 1241, "above_avg_pct": 48.0}
+      ],
+      "table_notes": [
+        "AUV = Annual Unit Volume = annual Gross Sales as defined in Item 6.",
+        "Excludes: 123 restaurants opened during 2025, 12 closed for extended periods, 38 multi-brand locations, 33 closures, and all company-owned.",
+        "Average AUVs calculated by summing AUVs and dividing by restaurant count.",
+        "AUVs obtained from franchisee sales reports and POS data; not independently audited.",
+        "Does not reflect costs of sales, operating expenses, or other expenses.",
+        "2025 Franchised Restaurants have operated for an average of 14 years."
+      ]
+    },
+    {
+      "table_id": "item19_auv_by_type",
+      "source_item": "Item 19",
+      "source_pages": [89],
+      "title": "Annual Unit Volumes for 2025 Franchised Restaurants By Restaurant Type",
+      "columns": ["Restaurant Type", "# Restaurants", "Highest AUV", "Median AUV", "Lowest AUV", "Average AUV", "# Above Average", "% Above Average"],
+      "rows": [
+        {"type": "Traditional / Drive-Thru", "count": 972, "highest": 3046579, "median": 1073927, "lowest": 256319, "average": 1107798, "above_avg_count": 457, "above_avg_pct": 47.0},
+        {"type": "Traditional / No Drive-Thru", "count": 1584, "highest": 2368548, "median": 893888, "lowest": 159965, "average": 943539, "above_avg_count": 692, "above_avg_pct": 43.7},
+        {"type": "Non-Traditional", "count": 25, "highest": 2904609, "median": 1014872, "lowest": 161135, "average": 1085163, "above_avg_count": 11, "above_avg_pct": 44.0}
+      ],
+      "table_notes": ["972 of 2,581 restaurants (37.7%) have drive-thru windows."]
+    },
+    {
+      "table_id": "item20_table1_systemwide",
+      "source_item": "Item 20",
+      "source_pages": [91],
+      "title": "Table No. 1 — Systemwide Outlet Summary",
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2023, "start": 2597, "end": 2604, "net": 7},
+        {"type": "Franchised", "year": 2024, "start": 2604, "end": 2647, "net": 43},
+        {"type": "Franchised", "year": 2025, "start": 2647, "end": 2737, "net": 90},
+        {"type": "Company-Owned", "year": 2023, "start": 40, "end": 40, "net": 0},
+        {"type": "Company-Owned", "year": 2024, "start": 40, "end": 42, "net": 2},
+        {"type": "Company-Owned", "year": 2025, "start": 42, "end": 40, "net": -2},
+        {"type": "Total", "year": 2023, "start": 2637, "end": 2644, "net": 7},
+        {"type": "Total", "year": 2024, "start": 2644, "end": 2689, "net": 45},
+        {"type": "Total", "year": 2025, "start": 2689, "end": 2777, "net": 88}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_table2_transfers",
+      "source_item": "Item 20",
+      "source_pages": [91, 92, 93],
+      "title": "Table No. 2 — Transfers of Outlets from Franchisees to New Owners",
+      "footer_totals": {
+        "transfers_2023": 205,
+        "transfers_2024": 170,
+        "transfers_2025": 124
+      },
+      "table_notes": ["Declining transfer trend: 205 → 170 → 124 over three years."]
+    },
+    {
+      "table_id": "item20_table3_franchised_status",
+      "source_item": "Item 20",
+      "source_pages": [94, 95, 96, 97],
+      "title": "Table No. 3 — Status of Franchised Outlets",
+      "footer_totals": {
+        "2025": {
+          "start_of_year": 2647,
+          "outlets_opened": 123,
+          "terminations_total": 0,
+          "non_renewals_total": 13,
+          "reacquired_total": 0,
+          "ceased_operations_other_total": 20,
+          "end_of_year": 2737
+        },
+        "2024": {
+          "start_of_year": 2602,
+          "outlets_opened": 88,
+          "terminations_total": 1,
+          "non_renewals_total": 13,
+          "reacquired_total": 0,
+          "ceased_operations_other_total": 29,
+          "end_of_year": 2647
+        },
+        "2023": {
+          "start_of_year": 2597,
+          "outlets_opened": 58,
+          "terminations_total": 1,
+          "non_renewals_total": 12,
+          "reacquired_total": 0,
+          "ceased_operations_other_total": 40,
+          "end_of_year": 2602
+        }
+      },
+      "table_notes": [
+        "Fiscal year 2025: Dec 30, 2024 to Dec 28, 2025.",
+        "* denotes openings at Multi-Brand Locations.",
+        "If multiple events occurred, table shows last event.",
+        "Includes standalone and Multi-Brand Locations."
+      ]
+    },
+    {
+      "table_id": "item20_table4_company_owned",
+      "source_item": "Item 20",
+      "source_pages": [97],
+      "title": "Table No. 4 — Status of Company-Owned Outlets",
+      "footer_totals": {
+        "2025": {"start": 42, "opened": 0, "reacquired": 0, "closed": 2, "sold": 0, "end": 40},
+        "2024": {"start": 42, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 42},
+        "2023": {"start": 41, "opened": 1, "reacquired": 0, "closed": 0, "sold": 0, "end": 42}
+      },
+      "table_notes": ["Company-owned in GA, IL, IN, MI, WI."]
+    },
+    {
+      "table_id": "item20_table5_projected",
+      "source_item": "Item 20",
+      "source_pages": [97, 98],
+      "title": "Table No. 5 — Projected Openings",
+      "footer_totals": {
+        "signed_not_open": 75,
+        "projected_new_franchised": 87,
+        "projected_new_company_owned": 3
+      },
+      "table_notes": ["Company-owned projected in MI (1), OH (1), WI (1)."]
+    },
+    {
+      "table_id": "item21_balance_sheet",
+      "source_item": "Item 21",
+      "source_pages": [306],
+      "title": "Balance Sheets (in thousands)",
+      "rows": [
+        {"line": "Restricted cash and cash equivalents", "2025": 20888, "2024": 24037},
+        {"line": "Accounts receivable, net", "2025": 6309, "2024": 3742},
+        {"line": "Prepaid and other current assets", "2025": 60, "2024": 60},
+        {"line": "Total current assets", "2025": 27257, "2024": 27839},
+        {"line": "Intangible assets, net", "2025": 724020, "2024": 749314},
+        {"line": "Other assets", "2025": 361, "2024": 422},
+        {"line": "Total assets", "2025": 751638, "2024": 777575},
+        {"line": "Accounts payable", "2025": 611, "2024": 689},
+        {"line": "Deferred revenue, current", "2025": 1354, "2024": 1069},
+        {"line": "Other current liabilities", "2025": 1592, "2024": 1036},
+        {"line": "Total current liabilities", "2025": 3557, "2024": 2794},
+        {"line": "Noncurrent deferred revenue", "2025": 23243, "2024": 18776},
+        {"line": "Other liabilities", "2025": 985, "2024": 765},
+        {"line": "Total liabilities", "2025": 27785, "2024": 22335},
+        {"line": "Member's equity", "2025": 723853, "2024": 755240},
+        {"line": "Total liabilities and member's equity", "2025": 751638, "2024": 777575}
+      ],
+      "table_notes": ["AR allowance: $706K (2025), $0 (2024)."]
+    },
+    {
+      "table_id": "item21_income_statement",
+      "source_item": "Item 21",
+      "source_pages": [307],
+      "title": "Statements of Income (in thousands)",
+      "rows": [
+        {"line": "Revenue", "2025": 159740, "2024": 153698, "2023": 152869},
+        {"line": "Management fee to affiliate", "2025": 31453, "2024": 31323, "2023": 29839},
+        {"line": "Amortization", "2025": 25294, "2024": 25294, "2023": 25294},
+        {"line": "Other operating loss, net", "2025": 610, "2024": 8, "2023": 50},
+        {"line": "Total operating expenses", "2025": 57357, "2024": 56625, "2023": 55183},
+        {"line": "Income from operations", "2025": 102383, "2024": 97073, "2023": 97686},
+        {"line": "Interest income", "2025": -675, "2024": -530, "2023": -374},
+        {"line": "Net income", "2025": 103058, "2024": 97603, "2023": 98060}
+      ],
+      "table_notes": ["Revenue primarily franchise fees and royalties. Management fee to JJF affiliate."]
+    },
+    {
+      "table_id": "item21_cash_flow",
+      "source_item": "Item 21",
+      "source_pages": [309],
+      "title": "Statements of Cash Flows (in thousands)",
+      "rows": [
+        {"line": "Net income", "2025": 103058, "2024": 97603, "2023": 98060},
+        {"line": "Net cash provided by operating activities", "2025": 131296, "2024": 123738, "2023": 126635},
+        {"line": "Distributions to member, net", "2025": -134445, "2024": -113536, "2023": -125719},
+        {"line": "Net (decrease) increase in restricted cash", "2025": -3149, "2024": 10202, "2023": 916},
+        {"line": "Restricted cash at end of period", "2025": 20888, "2024": 24037, "2023": 13835}
+      ],
+      "table_notes": ["Distributions exceed net income in all 3 years, drawing down equity."]
+    }
+  ]
+}

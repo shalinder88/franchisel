@@ -1,0 +1,136 @@
+{
+  "depth_pass": "state_addenda_structured_promotion",
+  "source_pages": [321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333],
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {
+      "state": "All 14 states",
+      "affected_family": "general_release",
+      "override_summary": "No waiver of disclaimer of reliance — no questionnaire or acknowledgment may waive claims under state franchise law or disclaim reliance on franchisor statements",
+      "why_it_matters": "Protects franchisee's right to rely on pre-sale representations despite integration clauses",
+      "source_pages": [322]
+    },
+    {
+      "state": "California",
+      "affected_family": "operations",
+      "override_summary": "Added disclosure about California Fast Food Act (Cal. Lab. Code §§ 1474-1475) requiring compliance with health, safety, and employment standards including minimum wages. No franchisor training or fee provided for compliance.",
+      "why_it_matters": "CA franchisees face additional labor cost burden (higher minimum wages for fast food workers) not reflected in Item 7 or Item 19 data",
+      "source_pages": [322]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "Any release required at renewal or transfer will not apply to liability under Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "MD franchisees retain right to sue under state franchise law even after signing release",
+      "source_pages": [323]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "termination",
+      "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law but franchisor will enforce to extent enforceable",
+      "why_it_matters": "Limits franchisor's ability to terminate franchise due to bankruptcy filing",
+      "source_pages": [324]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may bring action in Maryland for claims arising under Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "Overrides Georgia forum selection for state franchise law claims",
+      "source_pages": [324]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "governing_law",
+      "override_summary": "Franchisee may bring action in Maryland to the extent required by Maryland Franchise Registration and Disclosure Law",
+      "why_it_matters": "Maryland law may override Georgia choice of law for franchise law claims",
+      "source_pages": [324]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "statute_of_limitations",
+      "override_summary": "Claims under Maryland Franchise Registration and Disclosure Law must be brought within 3 years after grant of franchise",
+      "why_it_matters": "Sets specific limitation period for Maryland franchise law claims",
+      "source_pages": [324]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination",
+      "override_summary": "90 days' notice of termination (with 60 days to cure) and 180 days' notice of non-renewal required under Minn. Stat. § 80C.14",
+      "why_it_matters": "Significantly longer cure and notice periods than standard FA provisions (which provide as little as 24 hours to 30 days)",
+      "source_pages": [325]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "transfer",
+      "override_summary": "Consent to transfer will not be unreasonably withheld",
+      "why_it_matters": "Strengthens franchisee's transfer rights beyond FA requirements",
+      "source_pages": [325]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Any release at renewal/transfer will not apply to extent prohibited by Minn. Rule 2860.4400D",
+      "why_it_matters": "Protects franchisee claims under Minnesota franchise law despite release requirement",
+      "source_pages": [325]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisor may not require litigation outside Minnesota, waiver of jury trial, or consent to liquidated damages, termination penalties, or judgment notes under Minn. Stat. § 80C.21 and Rule 2860.4400(J)",
+      "why_it_matters": "Nullifies Georgia forum selection, jury trial waiver, and liquidated damages provisions for MN franchisees — among the strongest state franchise law protections",
+      "source_pages": [325]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "damages",
+      "override_summary": "Liquidated damages provision might not be enforceable under North Dakota Franchise Investment Law",
+      "why_it_matters": "Potentially eliminates up to $180K+ in liquidated damages exposure for ND franchisees",
+      "source_pages": [325]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "general_release",
+      "override_summary": "Release at renewal/transfer will not apply to claims under ND Franchise Investment Law",
+      "why_it_matters": "Protects ND franchisee claims despite release requirement",
+      "source_pages": [325]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "noncompete",
+      "override_summary": "Covenants not to compete generally considered unenforceable in North Dakota; franchisor will seek to enforce to extent enforceable",
+      "why_it_matters": "Post-term noncompete effectively unenforceable in ND — franchisee can open competing business immediately after termination",
+      "source_pages": [326]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may bring action in North Dakota to extent required by ND Franchise Investment Law",
+      "why_it_matters": "Overrides Georgia forum selection for state franchise law claims",
+      "source_pages": [326]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "governing_law",
+      "override_summary": "North Dakota law applies (except federal law)",
+      "why_it_matters": "Replaces Georgia choice of law entirely for ND franchisees",
+      "source_pages": [326]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "operations",
+      "override_summary": "Assurance of Discontinuance with WA AG — agreed to remove no-poach/no-hire provisions from franchise agreements, not enforce existing provisions, and notify franchisees",
+      "why_it_matters": "WA franchisees have full freedom to hire from other JJ locations; no-poach provisions unenforceable",
+      "source_pages": [326]
+    }
+  ],
+  "summary_table": {
+    "forum_selection_overridden": ["Maryland", "Minnesota", "North Dakota"],
+    "governing_law_overridden": ["North Dakota"],
+    "noncompete_limited_or_unenforceable": ["North Dakota"],
+    "general_release_excludes_state_claims": ["Maryland", "Minnesota", "North Dakota"],
+    "termination_notice_extended": ["Minnesota"],
+    "liquidated_damages_limited": ["Minnesota", "North Dakota"],
+    "no_poach_removed": ["Washington"],
+    "fast_food_act_compliance": ["California"]
+  }
+}

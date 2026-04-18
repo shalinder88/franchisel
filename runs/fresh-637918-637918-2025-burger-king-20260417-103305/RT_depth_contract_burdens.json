@@ -1,0 +1,56 @@
+{
+  "depth_pass": "A2_contract_burdens",
+  "sources": ["Exhibit D1 (FA Individual pp.185-232)", "Exhibit D2 (FA Entity pp.233-274)", "Exhibit D3 (Guaranty pp.275-281)", "Item 17 charts pp.82-96"],
+  "guaranty_scope": {
+    "type": "personal, irrevocable, unconditional",
+    "joint_and_several": true,
+    "spousal": true,
+    "scope": "All BKC Agreements — Franchise Agreement, Lease, Promissory Note (if CYC), all amendments, extensions, renewals, and ancillary agreements",
+    "obligations": ["prompt payment", "performance of all obligations", "personally bound as if franchisee", "indemnification of BKC"],
+    "waiver_of_defenses": true,
+    "includes_restrictive_covenant": true,
+    "includes_unfair_competition": true,
+    "includes_assignment": true,
+    "source_pages": [276, 277, 278, 279, 280, 281]
+  },
+  "franchise_agreement_key_clauses": {
+    "grant_and_term": {"provision": "Sec 1", "term": "20 years for freestanding", "no_renewal_right": true, "location_specific": true, "no_territory": true, "source_pages": [190]},
+    "royalty": {"rate": "4.5% of Gross Sales", "due": "monthly 10th", "source_pages": [34]},
+    "advertising": {"rate": "up to 4.5%", "current": "4.5%", "source_pages": [34]},
+    "termination_by_franchisor": {"with_cause_only": true, "cure_periods": "5/10/30/60/180 days depending on default type", "non_curable": ["bankruptcy", "felony", "fraud", "understatement", "unauthorized_transfer", "repeated_breaches"], "source_pages": [83, 84]},
+    "termination_by_franchisee": "Not applicable (only under state law)",
+    "transfer": {"consent_required": true, "rofr": true, "fees": "$2,000 first + $500 each additional", "buyer_signs_current_fa": true, "general_release": true, "source_pages": [85]},
+    "noncompete_during": "No hamburger business ownership/operation",
+    "noncompete_post": "1 year, 2 miles of restaurant",
+    "death_disability": {"heir_approval": true, "deadline_months": 12, "franchisor_can_operate": true},
+    "indemnification": "Franchisee must indemnify BKC for all claims related to restaurant operation, including third-party delivery platform claims",
+    "insurance": {"cgl": "$2M/$2M (1-10 restaurants), $5M (11-50), $10M (50+)", "auto": "$1M", "property": "all risks"},
+    "dispute_resolution": {"venue": "S.D. Fla. or Miami-Dade County", "law": "Florida", "arbitration": "voluntary for development disputes only"},
+    "successor": {"no_right_of_renewal": true, "materially_different_terms": true, "requires": ["compliance", "property control", "current successor requirements", "successor fee", "general release", "building upgrades"]},
+    "cross_default": ["Crown Your Career program", "Reclaim the Flame program", "Carrols Refranchise Addendum", "any BKC agreement"],
+    "source_pages": [82, 83, 84, 85, 86, 87, 190]
+  },
+  "lease_key_clauses": {
+    "term": "20 years (freestanding), shorter for non-traditional",
+    "rent_bkc_owned": "10% of cap costs, +12% every 5 yrs",
+    "rent_bkc_leased": "125% of BKC rent + 10% of costs",
+    "percentage_rent": "8.5% up to $133,333/mo, 10% above",
+    "termination": "no right by franchisee; franchisor with cause only",
+    "cure_periods": {"5_days": "building improvement fund restore", "10_days": "nonpayment of rent", "30_days": "reports, false statements, unauthorized transfer, loss of premises"},
+    "rofr": "Adjacent property — 20 business days",
+    "environmental": "Franchisee responsible for hazardous waste remediation",
+    "cross_default_fa": true,
+    "source_pages": [90, 91]
+  },
+  "development_agreement_key_clauses": {
+    "term": "3 to 15 years typically",
+    "no_renewal": true,
+    "territory_not_exclusive": true,
+    "termination_cure": {"10_days": "nonpayment", "30_days": "bankruptcy, general noncompliance", "180_days": "failure to meet cumulative opening target"},
+    "non_curable": ["unauthorized transfer", "BK system duplication", "breach of confidentiality", "materially false info", "F grade FSS", "excessive leverage ratios"],
+    "liquidated_damages": "Brand Damage Fee = remaining balance of prepaid franchise fees",
+    "restrictive_covenant": "1 year, 2 miles of developer restaurants",
+    "transfer": "BKC sole discretion to consent",
+    "source_pages": [92, 93, 94, 95, 96]
+  }
+}

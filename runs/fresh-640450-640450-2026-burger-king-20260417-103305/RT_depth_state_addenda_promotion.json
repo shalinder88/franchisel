@@ -1,0 +1,114 @@
+{
+  "states_with_addenda": ["California", "Connecticut", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+  "state_overrides": [
+    {
+      "state": "California",
+      "source_pages": [653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 725, 726, 727, 728, 729, 730],
+      "overrides": [
+        {"affected_family": "forum_selection", "override_summary": "Provision restricting venue to forum outside California is void for claims arising under or relating to franchise agreement involving CA franchise business (CA Franchise Relations Act §20040.5)", "why_it_matters": "Franchisee can litigate in California, not just Florida"},
+        {"affected_family": "general_release", "override_summary": "General release requirement modified per CA Corporations Code §31512", "why_it_matters": "CA franchisees may have broader release protections"},
+        {"affected_family": "governing_law", "override_summary": "CA law applies to franchise agreements involving CA franchise businesses despite FL choice of law", "why_it_matters": "CA franchise law protections override FL law provisions"},
+        {"affected_family": "interest_rate", "override_summary": "Maximum interest rate for late payments capped at 10% annually", "why_it_matters": "Limits penalty interest charges"},
+        {"affected_family": "liquidated_damages", "override_summary": "Liquidated damages clause in Development Agreement may not be enforceable under CA law", "why_it_matters": "May limit BKC's ability to recover certain damages"}
+      ]
+    },
+    {
+      "state": "Michigan",
+      "source_pages": [5, 6],
+      "overrides": [
+        {"affected_family": "association_rights", "override_summary": "Cannot prohibit franchisee from joining association of franchisees", "why_it_matters": "Protects NFA membership rights"},
+        {"affected_family": "termination", "override_summary": "Cannot terminate prior to expiration except for good cause with 30-day cure opportunity", "why_it_matters": "Provides minimum cure period protection"},
+        {"affected_family": "non_renewal", "override_summary": "Cannot refuse to renew without fair market value compensation for inventory/equipment/fixtures (if term <5 years and no continued use allowed)", "why_it_matters": "Protects franchisee investment on non-renewal"},
+        {"affected_family": "forum_selection", "override_summary": "Cannot require arbitration or litigation outside Michigan", "why_it_matters": "MI franchisees can litigate in-state"},
+        {"affected_family": "transfer", "override_summary": "Cannot refuse transfer except for good cause (transferee qualifications, competitor, unwillingness to comply, default)", "why_it_matters": "Limits transfer refusal grounds"},
+        {"affected_family": "general_release", "override_summary": "Cannot require release/assignment/novation/waiver depriving franchisee of statutory rights (post-execution settlement permitted)", "why_it_matters": "Protects MI statutory franchise rights"}
+      ]
+    },
+    {
+      "state": "Maryland",
+      "source_pages": [690, 691, 692, 693],
+      "overrides": [
+        {"affected_family": "termination", "override_summary": "MD Franchise Registration and Disclosure Law provides additional termination protections", "why_it_matters": "Enhanced cure periods and good cause requirements"},
+        {"affected_family": "general_release", "override_summary": "General release requirements modified per MD franchise law", "why_it_matters": "May not require release of MD statutory claims"},
+        {"affected_family": "forum_selection", "override_summary": "Venue restrictions modified per MD law", "why_it_matters": "MD franchisees may litigate in-state"}
+      ]
+    },
+    {
+      "state": "North Dakota",
+      "source_pages": [740, 741, 742, 743, 744, 745, 746, 747],
+      "overrides": [
+        {"affected_family": "forum_selection", "override_summary": "ND franchise law provides in-state venue rights", "why_it_matters": "Cannot force ND franchisee to litigate in FL"},
+        {"affected_family": "noncompete", "override_summary": "Covenants not to compete may be unenforceable under ND law", "why_it_matters": "Post-term non-compete may not be enforced"},
+        {"affected_family": "governing_law", "override_summary": "ND law governs franchise relationships in ND", "why_it_matters": "Overrides FL choice of law"},
+        {"affected_family": "general_release", "override_summary": "General release waiver limited per ND Century Code", "why_it_matters": "Protects ND statutory rights"},
+        {"affected_family": "statute_of_limitations", "override_summary": "ND statute of limitations applies; references to limitation of claims deleted", "why_it_matters": "Longer filing deadlines may apply"},
+        {"affected_family": "jury_trial", "override_summary": "Jury trial waiver provisions may be unenforceable", "why_it_matters": "Preserves right to jury trial"}
+      ]
+    },
+    {
+      "state": "Hawaii",
+      "source_pages": [700, 701, 702],
+      "overrides": [
+        {"affected_family": "forum_selection", "override_summary": "HI franchise law may void out-of-state venue requirements", "why_it_matters": "Can litigate in Hawaii"},
+        {"affected_family": "governing_law", "override_summary": "HI law may apply to HI franchise relationships", "why_it_matters": "HI protections override FL law"}
+      ]
+    },
+    {
+      "state": "Illinois",
+      "source_pages": [675, 676, 677],
+      "overrides": [
+        {"affected_family": "forum_selection", "override_summary": "IL Franchise Disclosure Act may void out-of-state venue", "why_it_matters": "IL franchisees can sue in IL"},
+        {"affected_family": "governing_law", "override_summary": "IL law governs IL franchise relationships", "why_it_matters": "Overrides FL choice of law"}
+      ]
+    },
+    {
+      "state": "Washington",
+      "source_pages": [710, 711, 712, 713, 714],
+      "overrides": [
+        {"affected_family": "forum_selection", "override_summary": "WA Franchise Investment Protection Act provides in-state venue rights", "why_it_matters": "Cannot force WA franchisee to FL"},
+        {"affected_family": "general_release", "override_summary": "Release provisions modified per WA law", "why_it_matters": "WA statutory claims protected"},
+        {"affected_family": "termination", "override_summary": "WA provides additional termination protections", "why_it_matters": "Enhanced cure periods"}
+      ]
+    },
+    {
+      "state": "Minnesota",
+      "source_pages": [695, 696, 697],
+      "overrides": [
+        {"affected_family": "termination", "override_summary": "MN Franchise Act provides additional termination protections and cure periods", "why_it_matters": "Enhanced franchisee protections"},
+        {"affected_family": "general_release", "override_summary": "Limitations on general release requirements", "why_it_matters": "MN statutory claims protected"}
+      ]
+    },
+    {
+      "state": "Rhode Island",
+      "source_pages": [705, 706],
+      "overrides": [
+        {"affected_family": "forum_selection", "override_summary": "RI may void out-of-state venue requirements", "why_it_matters": "Can litigate in-state"}
+      ]
+    },
+    {
+      "state": "Virginia",
+      "source_pages": [707, 708],
+      "overrides": [
+        {"affected_family": "forum_selection", "override_summary": "VA Retail Franchising Act may limit venue restrictions", "why_it_matters": "VA franchisees have in-state options"}
+      ]
+    },
+    {
+      "state": "Wisconsin",
+      "source_pages": [715, 716, 717],
+      "overrides": [
+        {"affected_family": "termination", "override_summary": "WI Fair Dealership Law provides additional termination protections", "why_it_matters": "Cannot terminate without good cause and 90-day cure"},
+        {"affected_family": "non_renewal", "override_summary": "Must provide 90 days' written notice", "why_it_matters": "Extended notice period"}
+      ]
+    }
+  ],
+  "summary_table": {
+    "forum_selection_voided": ["California", "Hawaii", "Illinois", "Michigan", "North Dakota", "Rhode Island", "Virginia", "Washington"],
+    "governing_law_overridden": ["California", "Hawaii", "Illinois", "North Dakota"],
+    "noncompete_limited": ["North Dakota"],
+    "general_release_limited": ["California", "Maryland", "Michigan", "Minnesota", "North Dakota", "Washington"],
+    "termination_protections": ["Maryland", "Michigan", "Minnesota", "Washington", "Wisconsin"],
+    "interest_rate_capped": ["California"],
+    "jury_trial_waiver_limited": ["North Dakota"],
+    "fair_value_on_non_renewal": ["Michigan"]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "depth_pass": "A2_DP2_contract_burdens",
+  "exhibit": "C — Franchise Agreement",
+  "page_range": [112, 211],
+  "articles_total": 19,
+  "clauses": [
+    {"clause_family": "grant_and_term", "article": "3", "obligation": "License to operate single PF business at specific location", "duration": "12 years from operations commencement", "restrictions": "No sublicensing of marks; specific location only", "source_pages": [126]},
+    {"clause_family": "reservation_of_rights", "article": "3.2", "obligation": "Franchisor retains all rights to marks, system, PF businesses worldwide", "restrictions": "6 enumerated reserved rights including competing locations, digital channels, brand acquisitions", "source_pages": [126]},
+    {"clause_family": "location_development", "article": "4", "obligation": "Lease/purchase location within 6 months of signing FA; begin construction within 120 days of lease; complete within 120 days of start; open within 360 days (480 for ground-up)", "trigger": "Failure to meet any timeline = termination right + retain all fees", "source_pages": [127, 128, 129, 130, 131]},
+    {"clause_family": "reserved_area", "article": "4.3", "obligation": "Must sublease up to 10% of total sqft at fair market value upon franchisor request", "source_pages": [128]},
+    {"clause_family": "fees", "article": "5", "obligations": [
+      {"fee": "Initial Franchise Fee", "amount": "$20,000", "timing": "At signing"},
+      {"fee": "Royalty", "amount": "7% of EFT Dues Draft", "timing": "Monthly/annually"},
+      {"fee": "Join Fee", "amount": "20% of regular monthly fee or 5% of prepaid", "timing": "Monthly"},
+      {"fee": "Interest", "amount": "10% annualized or max legal rate", "timing": "On late payments"}
+    ], "source_pages": [132, 133]},
+    {"clause_family": "eft_authorization", "article": "5.9", "obligation": "Must authorize EFT withdrawals from designated account for all fees, royalties, and third-party payments", "source_pages": [134]},
+    {"clause_family": "training", "article": "6", "obligation": "Must complete initial training to franchisor satisfaction; failure = termination right", "trigger": "Non-completion within 90 days of FA signing", "source_pages": [134, 135]},
+    {"clause_family": "marks", "article": "7", "restrictions": ["No sublicensing", "No use as corporate name", "No advertising franchise sale", "Must cease all use upon termination", "Full debranding required including trade dress"], "source_pages": [136, 137]},
+    {"clause_family": "confidentiality", "article": "8", "obligation": "Keep all proprietary info confidential during and after term", "restrictions": ["May not disclose to AI/ML platforms", "Must implement prescribed NDA procedures", "All materials returned at termination"], "source_pages": [137, 138]},
+    {"clause_family": "operations", "article": "9", "obligations": [
+      {"item": "Compliance with Methods of Operations", "scope": "Must comply with all standards in Operations Manual"},
+      {"item": "Condition of business", "scope": "Must maintain premises to brand standards; franchisor can enter and maintain at your expense"},
+      {"item": "Products/services", "scope": "Only approved products; must participate in all national campaigns/promotions"},
+      {"item": "Pricing", "scope": "Must comply with max price and min advertised price policies"},
+      {"item": "Reciprocity", "scope": "Full reciprocal membership to all PF members, possibly without payment"},
+      {"item": "Data security", "scope": "PCI compliance, breach notification, franchisor may terminate for data breach"},
+      {"item": "Technology", "scope": "Must use designated POS; no unapproved equipment; no contractual limits on upgrade costs"}
+    ], "source_pages": [139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149]},
+    {"clause_family": "advertising", "article": "10", "obligations": [
+      {"item": "NAF", "amount": "2% EFT Dues Draft (max 3%)", "mechanism": "EFT withdrawal"},
+      {"item": "LAF", "amount": "Greater of $60K or 7% Monthly EFT", "mechanism": "Self-spend or collection by franchisor"},
+      {"item": "Pre-sale/Grand Opening", "amount": "Up to $120,000"},
+      {"item": "Special marketing", "amount": "Up to 7% Monthly EFT for single month"},
+      {"item": "National campaigns", "obligation": "Must participate; may require fee waivers or reduced pricing"}
+    ], "source_pages": [150, 151, 152, 153, 154, 155, 156, 157, 158, 159]},
+    {"clause_family": "records_reports", "article": "11", "obligation": "Must maintain complete records; periodic reports as required; franchisor may verify/audit", "source_pages": [159, 160]},
+    {"clause_family": "inspections_audits", "article": "12", "obligation": "Franchisor may inspect business at any time without notice; must cooperate; franchisor may audit financial records", "money": "Must reimburse audit costs if noncompliant", "source_pages": [160, 161]},
+    {"clause_family": "transfer", "article": "13", "obligations": [
+      {"item": "ROFR", "scope": "Franchisor may match bona fide offer; 30-day exercise period; may assign ROFR rights"},
+      {"item": "Transfer fee", "amount": "$10,000 + up to $10,000 out-of-pocket"},
+      {"item": "Conditions", "scope": "Transferee must meet qualifications, complete training, sign then-current FA"},
+      {"item": "General release", "scope": "Required for all transfers"}
+    ], "source_pages": [161, 162, 163, 164, 165, 166, 167, 168, 169, 170]},
+    {"clause_family": "successor_franchise", "article": "14.1", "obligations": [
+      {"item": "9 conditions", "scope": "Compliance, cure deficiencies, remodel, pay $20K, sign then-current SA (materially different terms possible), maintain premises, training, release, current on obligations"},
+      {"item": "Materially different terms explicit", "quote": "the terms of which may differ materially from the terms of this Agreement, including a higher Royalty rate, different Royalty calculation, additional fees"}
+    ], "source_pages": [170, 171]},
+    {"clause_family": "month_to_month", "article": "14.2", "obligation": "If expired without renewal, franchisor may permit continued operation; royalty may increase up to 4%", "trigger": "30 days written notice by either party to end", "source_pages": [171]},
+    {"clause_family": "termination_by_franchisee", "article": "15.1", "rights": [
+      {"trigger": "Franchisor material breach uncured 60 days after notice", "notice": "30 days to terminate"},
+      {"trigger": "Lowest 5% EFT for 12 consecutive months + unprofitable + open 3+ years", "notice": "12 months", "note": "Waives franchisor right to future lost royalties but does not waive ADA obligations"}
+    ], "source_pages": [171, 172]},
+    {"clause_family": "termination_by_franchisor", "article": "15.2", "defaults": [
+      {"category": "Solvency (non-curable)", "triggers": ["Insolvency", "Bankruptcy", "Receiver appointed", "Assignment for creditors", "Asset attachment", "Execution levied", "Foreclosure suit", "Dissolution"]},
+      {"category": "Abandonment/Control (non-curable)", "triggers": ["Abandon for 3+ consecutive days", "Surrender control without consent", "Unauthorized transfer", "Lose lease/right to premises", "Fail to replace Responsible Owner"]},
+      {"category": "Payment (curable)", "triggers": [
+        {"default": "Fail to maintain designated account or pay amounts due", "cure": "10 business days"},
+        {"default": "Fail to pay third-party obligations (lender, supplier, landlord)", "cure": "30 days"},
+        {"default": "Fail to pay taxes", "cure": "30 days"}
+      ]},
+      {"category": "Opening (curable)", "triggers": [
+        {"default": "Fail to lease/purchase location per Art 4.2", "cure": "30 days"},
+        {"default": "Fail to meet construction deadline", "cure": "45 days"},
+        {"default": "Fail to provide weekly construction reports", "cure": "10 days"},
+        {"default": "Fail to open per Art 4.8", "cure": "60 days"}
+      ]},
+      {"category": "Operational (curable with varying periods)", "note": "Extensive list including failure to maintain standards, failure to comply with operations manual, unauthorized use of marks, failure to maintain insurance, data security breach, etc."}
+    ], "source_pages": [172, 173, 174, 175, 176, 177]},
+    {"clause_family": "post_termination", "article": "16", "obligations": [
+      {"item": "Pay all amounts owed"},
+      {"item": "Cease all use of marks within 30 days"},
+      {"item": "Full debranding including trade dress, flooring colors, wall colors, equipment piping colors"},
+      {"item": "Debrand deficiency fee: $35K strength/amenity + $35K cardio"},
+      {"item": "Communicate to members as directed"},
+      {"item": "Transfer phone numbers, domain names, accounts"},
+      {"item": "Return all confidential information"},
+      {"item": "Non-compete: 2 years at location + 15 miles of location + 15 miles of any PF business"},
+      {"item": "ROFR non-compete: 5 years within 15 miles of any PF business sold to franchisor"}
+    ], "source_pages": [177, 178, 179, 180, 181, 182, 183]},
+    {"clause_family": "indemnification", "article": "18.4", "obligation": "Franchisee indemnifies franchisor for claims arising from operations, breaches, ownership disputes, unauthorized mark use, confidentiality violations, securities offerings, unapproved marketing, debranding, IP infringement, defamation", "source_pages": [185, 186]},
+    {"clause_family": "force_majeure", "article": "19.5", "scope": "Excuses performance for acts of God, strikes, utility outages, government orders, etc.; but does not excuse financial obligations or post-term obligations", "source_pages": [188]},
+    {"clause_family": "dispute_resolution", "article": "19.9", "mechanism": "Mediation first (mandatory); then binding arbitration (AAA rules); venue: Portsmouth, NH (or then-current HQ city)", "exceptions": "Either party may seek injunctive relief from any court", "source_pages": [189, 190, 191]},
+    {"clause_family": "governing_law", "article": "19.10", "law": "New Hampshire", "source_pages": [191]},
+    {"clause_family": "waiver_of_damages", "article": "19.12", "scope": "Waive right to claim punitive, exemplary, or multiple damages; waive jury trial; waive right to participate in class actions", "source_pages": [192]},
+    {"clause_family": "entire_agreement", "article": "19.20", "scope": "FA supersedes all prior agreements and representations (subject to state law)", "source_pages": [194]},
+    {"clause_family": "amendments", "article": "19.21", "scope": "Must be in writing; but franchisor can modify by 70% franchised vote; NAF/LAF changes by 66%/51% vote; remodel/re-equip acceleration by 66%/51% vote", "source_pages": [194]}
+  ],
+  "distinctive_clauses": [
+    {"clause": "Sublease Right (Art 4.3)", "note": "Franchisor can require franchisee to sublease 10% of location at fair market value — unusual provision"},
+    {"clause": "AI/ML Prohibition (Art 8.1)", "note": "May not disclose proprietary information to AI or ML platforms without authorization"},
+    {"clause": "Reciprocal Membership (Art 9.12)", "note": "May be required to give full reciprocity to all PF members including unlimited access potentially without payment"},
+    {"clause": "Pricing Policies (Art 9.10)", "note": "Max price and minimum advertised price policies — franchisor controls pricing"},
+    {"clause": "Low-Performance Exit (Art 15.1(2))", "note": "Franchisee-favorable: can exit on 12 months notice if in lowest 5% for 12 months and unprofitable"},
+    {"clause": "Voting Amendments (Art 19.21)", "note": "70% franchised vote can amend FA; 66%/51% vote can change fee caps and remodel timelines"},
+    {"clause": "Cure Period Extension Fee (Art 15)", "note": "Up to 4% additional royalty during extended cure period — penalty for slow cure"}
+  ]
+}

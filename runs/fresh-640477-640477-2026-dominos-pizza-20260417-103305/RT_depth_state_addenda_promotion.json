@@ -1,0 +1,45 @@
+{
+  "depth_pass": "A2_depth_pass_4",
+  "target": "State Addenda Structured Promotion",
+
+  "overrides": [
+    {"state": "California", "affected_family": "labor_minimum_wage", "override_summary": "Fast Food Act establishes $20/hr minimum wage for fast food employees; Council may raise 3.5%/yr through 2028", "why_it_matters": "Directly increases labor costs for CA franchisees; may affect unit economics significantly vs. non-CA stores", "source_pages": [90, 91]},
+    {"state": "California", "affected_family": "franchisor_training", "override_summary": "DPF provides no training or assistance for Fast Food Act compliance", "why_it_matters": "Franchisee bears full compliance burden", "source_pages": [90, 91]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Choice of forum exception for claims under Illinois law", "why_it_matters": "IL franchisees can litigate IL franchise law claims in Illinois", "source_pages": [91]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Choice of law exception for Illinois law", "why_it_matters": "IL franchise law governs IL-law claims", "source_pages": [91]},
+    {"state": "Maryland", "affected_family": "fee_deferral", "override_summary": "All initial fees deferred until pre-opening obligations complete; development fees deferred until first franchise opens", "why_it_matters": "Reduces upfront cash burden for MD franchisees; indicates MD Securities Commissioner identified financial assurance concerns about DPF", "source_pages": [91, 92]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "Release excludes Maryland Franchise Registration and Disclosure Law liability", "why_it_matters": "MD franchisees retain all MD franchise law claims regardless of release", "source_pages": [92]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Termination upon insolvency may not be enforceable under federal bankruptcy law", "why_it_matters": "Franchisor acknowledges bankruptcy termination limitation", "source_pages": [92]},
+    {"state": "Maryland", "affected_family": "statute_of_limitations", "override_summary": "3-year SOL for MD Franchise Law claims from grant of franchise", "why_it_matters": "Time-limited window for MD claims", "source_pages": [92]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Litigation cannot be required outside Minnesota; no jury trial waiver; no liquidated damages/termination penalties/judgment notes", "why_it_matters": "Comprehensive protection for MN franchisees; prevents penalty clauses", "source_pages": [93]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days notice of termination with 60 days to cure", "why_it_matters": "Significantly longer cure period than FA default (7-30 days)", "source_pages": [93]},
+    {"state": "Minnesota", "affected_family": "renewal", "override_summary": "180 days notice for non-renewal", "why_it_matters": "6-month advance warning for MN franchisees", "source_pages": [93]},
+    {"state": "Minnesota", "affected_family": "transfer", "override_summary": "Consent to transfer not unreasonably withheld when transferee meets standards", "why_it_matters": "Limits franchisor discretion on transfers", "source_pages": [93]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Release excludes Minn. Rule 2860.4400D claims", "why_it_matters": "MN franchisees retain MN franchise law claims", "source_pages": [94]},
+    {"state": "Minnesota", "affected_family": "interest_rate", "override_summary": "$30 service charge cap", "why_it_matters": "Caps certain fees charged to MN franchisees", "source_pages": [94]},
+    {"state": "Washington", "affected_family": "governing_law", "override_summary": "WA Franchise Investment Protection Act prevails in conflicts of law", "why_it_matters": "WA franchise law supersedes FA terms", "source_pages": [94]},
+    {"state": "Washington", "affected_family": "termination", "override_summary": "RCW 19.100.180 may supersede FA on termination/renewal", "why_it_matters": "State statute may override FA termination provisions", "source_pages": [94]},
+    {"state": "Washington", "affected_family": "noncompete", "override_summary": "Noncompete void if employee earnings <$100K/yr; independent contractor <$250K/yr (adjusted for inflation)", "why_it_matters": "Significantly limits post-term noncompete enforceability for most store-level employees", "source_pages": [94]},
+    {"state": "Washington", "affected_family": "no_poach", "override_summary": "Franchisor cannot restrict franchisee from soliciting/hiring employees of other franchisees or franchisor per RCW 49.62.060", "why_it_matters": "No-poach provisions void in WA; supported by 2018 AOD with WA Attorney General", "source_pages": [94, 95]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "Release excludes WA Franchise Act rights unless negotiated with independent counsel after agreement in effect", "why_it_matters": "WA franchisees retain all WA franchise law claims", "source_pages": [94]},
+    {"state": "Washington", "affected_family": "transfer", "override_summary": "Transfer fees limited to reasonable estimated or actual costs", "why_it_matters": "Transfer fee ($1,500) must reflect actual costs", "source_pages": [94]}
+  ],
+
+  "summary_matrix": {
+    "rows": ["forum_selection", "governing_law", "noncompete", "general_release", "termination", "renewal", "transfer", "fee_deferral", "interest_rate", "no_poach", "labor_minimum_wage"],
+    "columns": ["CA", "HI", "IL", "MD", "MN", "WA"],
+    "data": {
+      "forum_selection": [false, false, true, false, true, false],
+      "governing_law": [false, false, true, false, false, true],
+      "noncompete": [false, false, false, false, false, true],
+      "general_release": [false, false, false, true, true, true],
+      "termination": [false, false, false, true, true, true],
+      "renewal": [false, false, false, false, true, false],
+      "transfer": [false, false, false, false, true, true],
+      "fee_deferral": [false, false, false, true, false, false],
+      "interest_rate": [false, false, false, false, true, false],
+      "no_poach": [false, false, false, false, false, true],
+      "labor_minimum_wage": [true, false, false, false, false, false]
+    }
+  }
+}

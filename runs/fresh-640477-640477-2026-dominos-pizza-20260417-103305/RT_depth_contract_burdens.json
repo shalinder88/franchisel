@@ -1,0 +1,43 @@
+{
+  "depth_pass": "A2_depth_pass_2",
+  "target": "Contract Burden Depth — Exhibit E (Traditional Store Standard Franchise Agreement)",
+  "source_pages": [329, 335, 340, 345, 350, 355, 360, 365, 370],
+
+  "clauses": [
+    {"family": "grant_and_term", "section": "2", "obligation": "10-year term from Store opening date", "source_pages": [335]},
+    {"family": "renewal", "section": "3.1", "obligation": "One 10-year renewal; must sign new FA", "restrictions": ["No material default (6+ breaches during term or 3+ in last 24 months = not substantial compliance)", "Must maintain possession or secure alternative site", "Must refurbish or relocate per current standards"], "trigger": "Option at end of 10-year term", "source_pages": [335]},
+    {"family": "royalty", "section": "5", "obligation": "5.5% of weekly Royalty Sales via EFT by Thursday", "source_pages": [22]},
+    {"family": "advertising", "section": "13", "obligation": "4% national + up to 5% cooperative = max 9%", "source_pages": [22, 27]},
+    {"family": "brand_technology", "section": "15.9", "obligation": "Must use designated Brand Technology; DPF may modify all aspects", "restrictions": ["Must acquire PULSE from designated vendor", "Must participate in online ordering", "Must maintain broadband connectivity", "Must enter agreements with third parties as required"], "money": "Additions capped at 1.5% of cumulative Royalty Sales (10yr lookback); cap does not apply to PULSE acquisition or renewal requirements", "source_pages": [355]},
+    {"family": "management_appointment", "section": "21.7", "obligation": "DPF may appoint manager upon death/disability; management fee of 5.5% on top of royalty and advertising", "duration": "Until transfer completed", "source_pages": [370]},
+    {"family": "noncompete_in_term", "section": "20.1", "obligation": "No involvement in any carry-out/delivery pizza business anywhere", "exceptions": "Other Domino's stores; <5% public company ownership", "source_pages": [365]},
+    {"family": "noncompete_post_term", "section": "20.2", "obligation": "1 year post-termination/expiration/cessation, within 10 miles of Store or at premises", "exceptions": "Other Domino's stores; <5% public company ownership", "source_pages": [365]},
+    {"family": "right_of_first_refusal", "section": "21.8", "obligation": "DPF has 30-day ROFR from receipt of bona fide offer plus all required documents", "money": "May substitute cash for any payment form", "source_pages": [370]},
+    {"family": "termination_incurable", "section": "18.2.1", "obligation": "Immediate termination for specified defaults", "triggers": ["Material misrepresentation", "Failure to open within 6 months", "Bankruptcy/insolvency", "Abandonment", "Child labor violations", "Felony/dishonesty", "Intentional underreporting", "Unauthorized assignment", "Restrictive covenant violation", "Repeated violations", "Anti-terrorism"], "source_pages": [360]},
+    {"family": "termination_curable", "section": "18.2.2-18.2.3", "obligation": "Cure periods before termination", "triggers": [{"type": "insurance", "cure": "48 hours"}, {"type": "marks_safety_food", "cure": "7 days"}, {"type": "payment", "cure": "10 days"}, {"type": "health_sanitation", "cure": "7 days cease operations"}, {"type": "other", "cure": "30 days"}], "source_pages": [360]},
+    {"family": "transfer", "section": "21", "obligation": "DPF approval required; transferee must meet standards", "conditions": ["Sign current FA", "Refurbish", "Complete training", "Pay $1,500 fee", "Execute Rider to Purchase Agreement", "Mutual termination agreement and customary release (subject to state law)"], "source_pages": [61, 62]},
+    {"family": "indemnification", "section": "22.3", "obligation": "Franchisee must defend, indemnify, hold harmless DPF and affiliates from all claims arising from Store operations", "source_pages": [22]},
+    {"family": "insurance", "section": "15.7", "obligation": "Property (replacement cost), GL ($1.5M/occurrence), Auto ($1.5M/occurrence), Workers' comp; carrier rated B+ or better; DPF as additional insured; 30-day notice", "source_pages": [39]},
+    {"family": "confidentiality", "section": "20.4", "obligation": "Absolute confidentiality of Operating Manual and all Domino's System information during and after term", "source_pages": [365]},
+    {"family": "choice_of_law", "section": "22.6", "obligation": "Laws of state where Store is located", "source_pages": [62]},
+    {"family": "dispute_resolution", "obligation": "No arbitration or mediation required; no choice of forum specified", "source_pages": [62]},
+    {"family": "purchase_option", "section": "19", "obligation": "DPF may purchase Store on termination/non-renewal", "money": "Based on percentage of Royalty Sales during prior 12 months less deductions; if open <12 months, documented cost; real property at appraised value; commissary at net book value", "source_pages": [365]},
+    {"family": "death_disability", "section": "21.5", "obligation": "Personal representative must submit transfer proposal within 120 days; DPF may appoint manager during interim at 5.5% management fee", "source_pages": [370]}
+  ],
+
+  "guaranty_assessment": {
+    "note": "The Standard Franchise Agreement requires owners to guarantee and be bound by all FA provisions (per Item 1, page 10). The guaranty scope appears to be unlimited personal guaranty of all obligations. No separate guaranty exhibit was identified — guaranty language is embedded in the FA ownership requirements. All owners with any ownership interest must sign.",
+    "spousal_guaranty": "Not explicitly addressed in extracted sections; the FA requires 'your owners' to guarantee, which would include spousal ownership interests.",
+    "source_pages": [10, 12]
+  },
+
+  "liquidated_damages_assessment": {
+    "note": "The purchase option in Section 19 provides a formula (percentage of Royalty Sales during prior 12 months less deductions) but this is framed as a purchase price, not liquidated damages. No separate liquidated damages clause identified in extracted sections. Minnesota state addendum prohibits liquidated damages/termination penalties.",
+    "source_pages": [62, 93]
+  },
+
+  "cross_default_assessment": {
+    "note": "Substantial compliance definition in Section 3.1(a) references 'any other agreement with us or our subsidiaries or affiliates.' Termination triggers in 18.2.1 include cross-default: termination of any other Domino's FA or DA owned by franchisee or Controlling Person. Development Agreement termination also triggers on cross-default.",
+    "source_pages": [335, 360]
+  }
+}

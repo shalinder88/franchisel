@@ -1,0 +1,146 @@
+{
+  "_enrichment_version": "v1",
+  "_base_source": "09_final_canonical.json",
+  "_enrichment_layers": ["item19_chart_detail", "item20_yearly_activity", "exhibit_structure", "item21_structural_facts", "item1_structural_facts", "item6_fee_attributes"],
+
+  "document_identity": {"filing_id": "638153", "entity": "Anytime Fitness Franchisor LLC", "state_of_formation": "Delaware", "issuance_date": "March 31, 2025, as amended April 24, 2025", "pdf_pages": 444, "fdd_to_pdf_offset": 7, "source_pages": [1], "confidence": "high"},
+
+  "brand_identity": {"brand_name": "Anytime Fitness", "business_type": "24-hour fitness centers", "principal_address": "111 Weir Drive, Woodbury, MN 55125", "recommended_size_sqft": "4,000 to 6,300", "source_pages": [1, 8], "confidence": "high"},
+
+  "item1_structural_facts": {
+    "formation_date": "October 25, 2021",
+    "franchising_since": "November 2021 (predecessor since October 2002)",
+    "securitization_date": "November 2021",
+    "otf_acquisition_date": "April 2, 2024",
+    "parent_chain": ["Purpose Brands Holdings LLC", "Purpose Brands Intermediate LLC", "Self Esteem Brands LLC", "Anytime Fitness LLC", "SEB SPV Guarantor LLC", "SEB Funding LLC", "SEB Systems LLC", "Anytime Fitness Franchisor LLC"],
+    "affiliate_brands": [
+      {"name": "Orangetheory Fitness", "studios": 1298, "acquired": "April 2024"},
+      {"name": "Waxing the City", "studios": 151},
+      {"name": "Basecamp Fitness", "studios": 23},
+      {"name": "The Bar Method", "studios": 73},
+      {"name": "Anytime Fitness Iberia", "studios": 42, "country": "Spain"}
+    ],
+    "source_pages": [8, 9, 10, 11]
+  },
+
+  "item2_leadership_roster": [
+    {"name": "Thomas Leverton", "role": "CEO (Purpose Brands Holdings / PBI)", "tenure": "Since November 2024", "source_pages": [11, 12]},
+    {"name": "Charles Runyon", "role": "Board Member/Founder", "tenure": "Board since October 2021", "source_pages": [12]},
+    {"name": "Dave Mortensen", "role": "Board Member/Founder", "tenure": "Board since October 2021", "source_pages": [12]},
+    {"name": "Stacy Anderson", "role": "Global Brand President", "tenure": "Since January 2024", "source_pages": [12]},
+    {"name": "Benjamin Selden", "role": "CFO (Interim)", "tenure": "Since April 2025", "source_pages": [12]},
+    {"name": "James Goniea", "role": "General Counsel & Secretary", "tenure": "Since October 2021", "source_pages": [12, 13]},
+    {"name": "Matt Stanton", "role": "Chief Development Officer", "tenure": "Since January 2025", "source_pages": [13]},
+    {"name": "Ameen Kazerouni", "role": "Chief Technology Officer", "tenure": "Since July 2024", "source_pages": [13]},
+    {"name": "Jennifer Yiangou", "role": "SVP Franchise Administration", "tenure": "Since July 2024", "source_pages": [13]},
+    {"name": "Sander van den Born", "role": "SVP International Development", "tenure": "Since July 2024", "source_pages": [13]},
+    {"name": "Nicholas Herrild", "role": "Brand President", "tenure": "Since October 2024", "source_pages": [13]},
+    {"name": "Mitchell Keyes", "role": "VP Operations", "tenure": "Since January 2023", "source_pages": [13]}
+  ],
+
+  "item6_fee_attributes": {
+    "royalty_type": "flat_monthly_with_percentage_switch",
+    "flat_amount": 820,
+    "percentage_cap": 0.08,
+    "switch_notice_days": 30,
+    "tech_fee_escalator_pct": 10,
+    "tech_fee_escalator_compounding": "cumulative",
+    "ad_fund_cap": "Greater of $600/month or 2% Gross Revenue",
+    "local_marketing_tiers": {"tier1": 1000, "tier2": 800, "tier3": 600},
+    "tier_definitions": {"tier1": ">50,000 in 3-mile radius", "tier2": "25,000-49,999", "tier3": "<25,000"},
+    "source_pages": [18, 23, 24, 25]
+  },
+
+  "item19_chart_detail": {
+    "section1_coaching_suite": {
+      "population": 1656,
+      "total_system_centers": 2289,
+      "coverage_pct": 72.3,
+      "period": "12 months ended February 28, 2025",
+      "revenue_sources": ["membership_fees", "personal_training", "pay_per_visit"],
+      "excluded_revenue": ["enrollment_fees", "vending"],
+      "quartile_breakpoints": {
+        "q4_min": 534059,
+        "q3_min": 395007,
+        "q2_min": 293800
+      },
+      "member_count_correlation": "Strong positive — Q4 avg 1,029 members vs Q1 avg 422"
+    },
+    "section2_smartcoaching": {
+      "population": 297,
+      "revenue_premium_vs_coaching_suite": "20% ($531,750 vs $442,686)",
+      "pt_revenue_premium": "62% ($120,336 vs $74,006)",
+      "tools_required": ["VI Smart Engagement", "Coaching Dashboard", "Fab 5", "Evolt", "bi-weekly billing"],
+      "minimum_usage_months": 9
+    },
+    "section3_company_pl": {
+      "population": 11,
+      "locations": "9 in Illinois, 2 in Minnesota",
+      "expense_adjustments": "Adjusted to reflect estimated franchisee costs",
+      "largest_expenses": ["rent_cam_21.4pct", "pt_expenses_19.9pct", "processing_3.7pct", "utilities_5.0pct"],
+      "breakeven_estimate": "Monthly revenue ~$28K (based on $340K annual opex)",
+      "owner_compensation_note": "Manager salary $45K excluded from EBITDA; if owner-managed, EBITDA is owner's pre-tax income"
+    }
+  },
+
+  "item20_yearly_activity": {
+    "2022": {"start": 2347, "opened": 49, "terminated": 45, "non_renewed": 20, "reacquired": 0, "ceased": 0, "end": 2330, "transfers": 204},
+    "2023": {"start": 2330, "opened": 47, "terminated": 42, "non_renewed": 25, "reacquired": 0, "ceased": 0, "end": 2310, "transfers": 243},
+    "2024": {"start": 2310, "opened": 46, "terminated": 33, "non_renewed": 21, "reacquired": 0, "ceased": 0, "end": 2301, "transfers": 207},
+    "trend": "Declining unit count decelerating; terminations improving; transfer volume healthy"
+  },
+
+  "exhibit_structure": {
+    "total_exhibits": 22,
+    "exhibit_letters": 18,
+    "key_operative_exhibits": ["E (FA)", "F (ADA)", "G (State Addenda)", "D (Financial Statements)"],
+    "vendor_agreement_exhibits": ["H", "I-1", "I-2", "I-3", "I-4", "J", "L", "O", "P"],
+    "program_addendum_exhibits": ["N", "Q", "R"],
+    "state_addenda_states": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington", "Wisconsin"]
+  },
+
+  "item21_structural_facts": {
+    "guarantor_entity": "SEB Franchising Guarantor LLC",
+    "guarantor_total_assets": 5000000,
+    "guarantor_purpose": "Holds $5M cash to guarantee obligations of franchising subsidiaries",
+    "guarantor_special_risk_flag": true,
+    "operating_entity": "Anytime Fitness LLC and Subsidiaries",
+    "operating_auditor": "PricewaterhouseCoopers LLP",
+    "operating_opinion": "unqualified",
+    "operating_total_assets": 111119000,
+    "operating_total_liabilities": 1060128000,
+    "operating_members_deficit": -949044000,
+    "operating_revenue": 317009000,
+    "operating_net_income": 113091000,
+    "operating_ocf": 126828000,
+    "securitization_debt": 955589000,
+    "deferred_revenue": 77151000,
+    "interest_expense": 53325000,
+    "2024_new_debt_issuance": 524000000,
+    "2024_distributions": 599060000,
+    "source_pages": [164, 165, 168, 170, 171, 173, 177, 180, 182, 183, 185]
+  },
+
+  "special_risks": [
+    {"risk": "out_of_state_dispute", "source_pages": [4]},
+    {"risk": "spousal_liability", "source_pages": [4]},
+    {"risk": "mandatory_minimum", "source_pages": [4]},
+    {"risk": "supplier_control", "source_pages": [4]},
+    {"risk": "financial_condition", "source_pages": [4]},
+    {"risk": "unopened_franchises", "source_pages": [4]}
+  ],
+  "unresolveds": [
+    {"id": "UR-1", "description": "Royalty switch from $820/month to up to 8% Gross Revenue on 30 days' notice", "severity": "high", "source": "Item 6 Note 4, p.23"},
+    {"id": "UR-2", "description": "Construction Management mandatory transition timing unspecified", "severity": "medium", "source": "Item 8, p.32"},
+    {"id": "UR-3", "description": "Provider/Nutrition programs may become mandatory", "severity": "medium", "source": "Items 11, 16"},
+    {"id": "UR-4", "description": "Digital content display cost unspecified", "severity": "low", "source": "Item 8, p.32"},
+    {"id": "UR-5", "description": "CMS vendor switching risk", "severity": "medium", "source": "Item 11, p.47"},
+    {"id": "UR-6", "description": "Guarantor financial condition — $5M shell", "severity": "high", "source": "Special Risks, Item 21"}
+  ],
+  "contradictions": [
+    {"id": "C-1", "description": "Revenue $133.8M (franchisor) vs $317M (AFLLC consolidated)", "items_involved": ["Item 1/8", "Item 21"], "resolution_status": "explained — different entity scopes"}
+  ],
+  "item20_gag_clause_flag": true,
+  "item20_gag_clause_quote": "During the last 3 years current and former franchisees have signed provisions restricting their ability to speak openly about their experience with us or our predecessor.",
+  "item20_gag_clause_source_pages": [74]
+}

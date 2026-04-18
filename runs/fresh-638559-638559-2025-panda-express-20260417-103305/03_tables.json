@@ -1,0 +1,253 @@
+{
+  "tables": [
+    {
+      "id": "item5_initial_fees",
+      "item": "Item 5",
+      "title": "Initial License Fees",
+      "source_pages": [18],
+      "columns": ["Fee", "Amount", "Notes"],
+      "rows": [
+        {"fee": "Initial License Fee", "amount": "$25,000", "notes": "Standard for new licensees; non-refundable; payable within 5 days of written authorization"}
+      ],
+      "table_notes": ["In 2024, actual fees ranged from $12,500 to $25,000. Lower amounts for multi-restaurant licensees under existing agreement terms."]
+    },
+    {
+      "id": "item6_fee_table",
+      "item": "Item 6",
+      "title": "Other Fees",
+      "source_pages": [18, 19, 20, 21, 22, 23],
+      "columns": ["Fee", "Amount", "When Payable", "Remarks"],
+      "rows": [
+        {"fee": "Royalty", "amount": "8% of Gross Volume or $4,000 minimum per Royalty Period", "when_payable": "15th of each month", "remarks": "CPI-adjustable; no min during force majeure; starts with first Royalty Period of operations"},
+        {"fee": "Initial Training Fees", "amount": "No fee (up to 8 attendees/restaurant); up to $1,000 per attendee beyond 8", "when_payable": "Before training", "remarks": "$50-$100 for uniforms per attendee; licensee pays all travel/salary/lodging"},
+        {"fee": "Opening Operational Assistance", "amount": "$500 per whole/partial 8-hour day", "when_payable": "Before training or as incurred", "remarks": "Plus travel/lodging/food expenses for franchisor personnel"},
+        {"fee": "Remedial Training Fees & On-Site Consultations", "amount": "$500 per whole/partial 8-hour day", "when_payable": "Before training or as incurred", "remarks": "CPI-adjustable; plus travel/lodging/food expenses"},
+        {"fee": "Online Training/Continuous Education", "amount": "$250-$500", "when_payable": "Before training or as incurred", "remarks": "Varies by number of people trained"},
+        {"fee": "Inspections/Quality Control Programs", "amount": "$177.24/quarterly food safety; $20-$22/mo surveys; $19.75-$55 mystery shopper + $11-$12 meal", "when_payable": "As incurred", "remarks": "Ecosure food safety; SMG surveys; Ipsos mystery shop; Refused Entry Fee $177.24"},
+        {"fee": "Transfer Fee", "amount": "$10,000 per restaurant + out-of-pocket costs/atty fees (max $30,000 cumulative per transaction)", "when_payable": "Upon application for transfer", "remarks": "Due even if transfer not completed; CPI-adjustable"},
+        {"fee": "Inspection or Audit Costs", "amount": "Understated royalties + interest + cost of audit", "when_payable": "On demand", "remarks": "Only if understatement exceeds 3%"},
+        {"fee": "Interest on Late Payments/Bank Charges", "amount": "10% per annum or max legal rate; plus bank fees for dishonored payments", "when_payable": "On demand", "remarks": ""},
+        {"fee": "Successor Restaurant Fee", "amount": "$10,000 per restaurant", "when_payable": "On successor term election", "remarks": "CPI-adjustable"},
+        {"fee": "Management Fees and Costs", "amount": "7% of Gross Volume per restaurant managed + costs", "when_payable": "If franchisor manages due to uncured default", "remarks": "Can discontinue on 10 days' notice"},
+        {"fee": "Gift Card Program (optional)", "amount": "$0.09-$0.535/card; $0.0199-$0.032/transaction + support/admin costs", "when_payable": "As incurred if elected", "remarks": "Not currently required"},
+        {"fee": "Tax Payments", "amount": "Unknown/variable", "when_payable": "On demand", "remarks": "Reimbursement of taxes paid on licensee's behalf"},
+        {"fee": "Early Termination Fee", "amount": "Anticipated royalties for remaining 8-month notice period", "when_payable": "On demand", "remarks": "Based on average daily Gross Revenue times remaining days"},
+        {"fee": "Quarterly Promotional Materials", "amount": "$300-$1,000 per year", "when_payable": "As incurred", "remarks": "Must purchase from marketing department"}
+      ],
+      "table_notes": [
+        "All fees non-refundable and payable to Citadel Panda Express, Inc.",
+        "Payment by wire transfer, ACH, or other method stated in Manuals.",
+        "CPI-adjustable amounts may be adjusted once per year per Consumer Price Index (U.S. Average, all items).",
+        "Gross Volume includes all sales and billings — cash, credit, insurance proceeds, third-party delivery — with no deduction except sales tax and customer refunds.",
+        "Royalty period is currently a four-week period.",
+        "Other licensees may operate under more favorable fee and Proprietary Product markup terms."
+      ]
+    },
+    {
+      "id": "item7_estimated_initial_investment",
+      "item": "Item 7",
+      "title": "Your Estimated Initial Investment",
+      "source_pages": [24, 25],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"expenditure": "Initial License Fee", "low": "$25,000", "high": "$25,000", "method": "Cashier's check", "when": "Within 5 days of authorization", "to_whom": "Us"},
+        {"expenditure": "Lease of Premises (3 months)", "low": "$10,000", "high": "$425,000", "method": "As incurred", "when": "As arranged", "to_whom": "Lessor"},
+        {"expenditure": "Leasehold Improvements", "low": "$100,000", "high": "$1,500,000", "method": "As arranged", "when": "Before opening", "to_whom": "Lessor/contractors/us/affiliates"},
+        {"expenditure": "FF&E and Supplies", "low": "$120,000", "high": "$650,000", "method": "Varies", "when": "As incurred", "to_whom": "Approved suppliers/us/affiliates"},
+        {"expenditure": "Initial Inventory", "low": "$11,000", "high": "$18,000", "method": "Lump sum", "when": "Varies", "to_whom": "Approved suppliers/us/affiliates"},
+        {"expenditure": "Computer HW/SW", "low": "$16,500", "high": "$27,000", "method": "As arranged", "when": "As incurred", "to_whom": "Approved suppliers"},
+        {"expenditure": "Non-resettable Cash Registers", "low": "$6,000", "high": "$8,000", "method": "As arranged", "when": "As incurred", "to_whom": "Outside supplier"},
+        {"expenditure": "Insurance (annual premium)", "low": "$94,500", "high": "$157,500", "method": "As arranged", "when": "As incurred", "to_whom": "Insurance carrier"},
+        {"expenditure": "Training Expenses", "low": "$13,000", "high": "$29,000", "method": "As incurred", "when": "During training", "to_whom": "Transportation/hotels/restaurants"},
+        {"expenditure": "Architectural/Design Fees", "low": "$35,000", "high": "$120,000", "method": "Lump sum", "when": "As incurred", "to_whom": "Architects/designers"},
+        {"expenditure": "Construction Supervision", "low": "$20,000", "high": "$150,000", "method": "As arranged", "when": "As incurred", "to_whom": "General contractor"},
+        {"expenditure": "Sales Tax Deposits", "low": "$4,500", "high": "$10,000", "method": "Lump sum", "when": "Before opening", "to_whom": "State revenue dept"},
+        {"expenditure": "Telephone/Comms", "low": "$500", "high": "$1,000", "method": "As incurred", "when": "As incurred", "to_whom": "Outside suppliers"},
+        {"expenditure": "Licenses and Permits", "low": "$1,500", "high": "$60,000", "method": "As required", "when": "As incurred", "to_whom": "Government authorities"},
+        {"expenditure": "Payroll and Related Taxes (3 months)", "low": "$39,000", "high": "$65,000", "method": "As incurred", "when": "As incurred", "to_whom": "Employees"},
+        {"expenditure": "Additional Funds (3 months)", "low": "$18,000", "high": "$30,000", "method": "As incurred", "when": "Before opening", "to_whom": "Vendors/utilities/employees"}
+      ],
+      "total_low": "$514,500",
+      "total_high": "$3,275,500",
+      "table_notes": [
+        "Typical captive-venue footprint: 500-1,500 sq ft (some up to 3,000 sq ft).",
+        "Airport rent significantly higher — accounts for high end of lease range.",
+        "Drive-thru pilot program adds up to $1,500,000 to total.",
+        "Amounts paid to franchisor are non-refundable.",
+        "Insurance: $10M CGL, $3M auto liability, $10M cyber, property all-risk, workers comp per state law.",
+        "Self-insurance permitted with $150M minimum net worth and annual audited financials.",
+        "Estimates cover pre-opening + first 3 months of operations."
+      ]
+    },
+    {
+      "id": "item19_fpr_captive_venues",
+      "item": "Item 19",
+      "title": "Financial Performance Representations — Captive Venues FY2024",
+      "source_pages": [77, 78],
+      "columns": ["Metric", "Airport", "Hospital", "Military", "University", "Casino", "Travel Plaza", "Total"],
+      "rows": [
+        {"metric": "Total Gross Sales", "airport": "$85,875,528", "hospital": "$1,826,193", "military": "$75,940,332", "university": "$64,053,798", "casino": "$7,538,285", "travel_plaza": "$12,035,896", "total": "$247,270,032"},
+        {"metric": "Average Gross Sales", "airport": "$3,903,433", "hospital": "$608,731", "military": "$1,489,026", "university": "$889,636", "casino": "$1,884,571", "travel_plaza": "$3,008,974", "total": "$1,585,064"},
+        {"metric": "Minimum Gross Sales", "airport": "$767,490", "hospital": "$512,872", "military": "$400,353", "university": "$246,547", "casino": "$1,146,308", "travel_plaza": "$246,547", "total": "$246,547"},
+        {"metric": "Median Gross Sales", "airport": "$3,580,050", "hospital": "$514,206", "military": "$1,370,147", "university": "$824,825", "casino": "$1,747,508", "travel_plaza": "$824,825", "total": "$1,186,865"},
+        {"metric": "Maximum Gross Sales", "airport": "$9,233,961", "hospital": "$799,115", "military": "$2,984,075", "university": "$2,514,523", "casino": "$2,896,962", "travel_plaza": "$2,514,523", "total": "$9,233,961"},
+        {"metric": "Units Exceeding Average", "airport": "8 (36%)", "hospital": "1 (33%)", "military": "23 (45%)", "university": "30 (42%)", "casino": "1 (25%)", "travel_plaza": "2 (50%)", "total": "65 (42%)"},
+        {"metric": "Average Age (years)", "airport": "5.89", "hospital": "8.87", "military": "7.39", "university": "7.06", "casino": "6.57", "travel_plaza": "2.74", "total": "6.91"},
+        {"metric": "Total Units", "airport": "22", "hospital": "3", "military": "51", "university": "72", "casino": "4", "travel_plaza": "4", "total": "156"}
+      ],
+      "table_notes": [
+        "Unaudited gross sales data for FY2024 (12/31/2023 to 12/28/2024).",
+        "156 captive-venue restaurants operating minimum 52 weeks.",
+        "59 of 156 are JV with PRG affiliate as minority owner.",
+        "Excluded: 15 restaurants open <1 year; 7 closed in 2024; 2 sole-venue-type restaurants (privacy).",
+        "Gross Sales includes all revenue — no deductions except sales tax and customer refunds.",
+        "No cost, expense, or profit data provided.",
+        "Restaurants in areas with stronger brand recognition tend to outperform."
+      ]
+    },
+    {
+      "id": "item20_table1_systemwide",
+      "item": "Item 20",
+      "title": "Table 1 — Systemwide Outlet Summary",
+      "source_pages": [81],
+      "columns": ["Outlet Type", "Year", "Outlets at Start", "Outlets at End", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": "2022", "start": 146, "end": 157, "net_change": 11},
+        {"type": "Franchised", "year": "2023", "start": 157, "end": 165, "net_change": 8},
+        {"type": "Franchised", "year": "2024", "start": 165, "end": 173, "net_change": 8},
+        {"type": "Company-Owned", "year": "2022", "start": 2153, "end": 2195, "net_change": 42},
+        {"type": "Company-Owned", "year": "2023", "start": 2195, "end": 2248, "net_change": 54},
+        {"type": "Company-Owned", "year": "2024", "start": 2248, "end": 2329, "net_change": 81},
+        {"type": "Total", "year": "2022", "start": 2299, "end": 2352, "net_change": 53},
+        {"type": "Total", "year": "2023", "start": 2352, "end": 2413, "net_change": 61},
+        {"type": "Total", "year": "2024", "start": 2413, "end": 2502, "net_change": 89}
+      ],
+      "table_notes": [
+        "59 franchised restaurants are JV with PRG affiliate as minority owner.",
+        "Company-Owned refers to outlets owned by affiliates of Citadel Panda Express (PEI/PRG)."
+      ]
+    },
+    {
+      "id": "item20_table2_transfers",
+      "item": "Item 20",
+      "title": "Table 2 — Transfers of Outlets from Franchisees to New Owners",
+      "source_pages": [81, 82],
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        {"state": "AR", "year": "2024", "transfers": 1},
+        {"state": "FL", "year": "2022", "transfers": 2},
+        {"state": "ID", "year": "2022", "transfers": 1},
+        {"state": "IL", "year": "2024", "transfers": 1},
+        {"state": "MD", "year": "2023", "transfers": 1},
+        {"state": "MN", "year": "2022", "transfers": 2},
+        {"state": "TX", "year": "2023", "transfers": 4},
+        {"state": "TX", "year": "2024", "transfers": 1}
+      ],
+      "transfers_total": {"2022": 5, "2023": 5, "2024": 3},
+      "table_notes": []
+    },
+    {
+      "id": "item20_table3_franchised_status",
+      "item": "Item 20",
+      "title": "Table 3 — Status of Franchised Outlets",
+      "source_pages": [82, 83, 84, 85],
+      "footer_totals": {
+        "2022": {"start": 146, "opened": 15, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_operations": 4, "end": 157},
+        "2023": {"start": 157, "opened": 9, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_operations": 1, "end": 165},
+        "2024": {"start": 165, "opened": 11, "terminations": 2, "non_renewals": 0, "reacquired": 1, "ceased_operations": 0, "end": 173}
+      },
+      "terminations_total": {"2022": 0, "2023": 0, "2024": 2},
+      "non_renewals_total": {"2022": 0, "2023": 0, "2024": 0},
+      "reacquired_total": {"2022": 0, "2023": 0, "2024": 1},
+      "ceased_operations_total": {"2022": 4, "2023": 1, "2024": 0},
+      "table_notes": [
+        "CA 2024: 1 existing non-licensed restaurant transitioned to licensed.",
+        "GA 2024: 1 existing licensed restaurant transitioned to company-owned."
+      ]
+    },
+    {
+      "id": "item20_table4_company_owned",
+      "item": "Item 20",
+      "title": "Table 4 — Status of Company-Owned Outlets",
+      "source_pages": [85, 86, 87, 88, 89],
+      "footer_totals": {
+        "2022": {"start": 2153, "opened": 57, "reacquired_from_franchisees": 0, "closed": 15, "sold_to_franchisees": 0, "end": 2195},
+        "2023": {"start": 2195, "opened": 75, "reacquired_from_franchisees": 0, "closed": 21, "sold_to_franchisees": 0, "end": 2248},
+        "2024": {"start": 2248, "opened": 87, "reacquired_from_franchisees": 0, "closed": 6, "sold_to_franchisees": 0, "end": 2329}
+      },
+      "table_notes": [
+        "MO: 1 store stopped operating in 2023, officially closed in 2024.",
+        "Includes prior year (2021) totals showing start of 2099, opened 68, closed 14, end 2153."
+      ]
+    },
+    {
+      "id": "item20_table5_projected_openings",
+      "item": "Item 20",
+      "title": "Table 5 — Projected Openings for 2025",
+      "source_pages": [90, 91],
+      "projected_openings_total": {
+        "franchise_agreements_signed_not_opened": 15,
+        "projected_new_franchised": 14,
+        "projected_new_company_owned": 123
+      },
+      "table_notes": [
+        "Largest projected company-owned growth: TX (15), FL (15), CA (10), VA (8), IL (7), GA (6).",
+        "Largest projected franchise growth: HI (2), NC (2), NY (2)."
+      ]
+    },
+    {
+      "id": "item21_balance_sheet",
+      "item": "Item 21",
+      "title": "Consolidated Balance Sheet",
+      "source_pages": [194],
+      "as_of": "December 28, 2024",
+      "rows": [
+        {"line_item": "Cash and Cash Equivalents", "amount_2024": 3664078, "amount_2023": 950516},
+        {"line_item": "Accounts Receivable", "amount_2024": 4829081, "amount_2023": 3633937},
+        {"line_item": "Due from Affiliate", "amount_2024": 0, "amount_2023": 11992768},
+        {"line_item": "Prepaid Taxes", "amount_2024": 10900, "amount_2023": 59159},
+        {"line_item": "Total Current Assets", "amount_2024": 8504059, "amount_2023": 16636380},
+        {"line_item": "Property and Equipment Net", "amount_2024": 61495728, "amount_2023": 63637653},
+        {"line_item": "Total Assets", "amount_2024": 69999787, "amount_2023": 80274033},
+        {"line_item": "Current Portion Deferred Revenue", "amount_2024": 816591, "amount_2023": 545410},
+        {"line_item": "Taxes Payable", "amount_2024": 102946, "amount_2023": 0},
+        {"line_item": "Total Current Liabilities", "amount_2024": 919537, "amount_2023": 545410},
+        {"line_item": "Deferred Revenue LT", "amount_2024": 3293727, "amount_2023": 3474332},
+        {"line_item": "Total Liabilities", "amount_2024": 4213264, "amount_2023": 4019742},
+        {"line_item": "Common Stock (16,000 shares)", "amount_2024": 160000, "amount_2023": 160000},
+        {"line_item": "Additional Paid-in Capital", "amount_2024": 4200000, "amount_2023": 4200000},
+        {"line_item": "Retained Earnings", "amount_2024": 96736982, "amount_2023": 71894291},
+        {"line_item": "Less Due from Affiliate", "amount_2024": -35310459, "amount_2023": 0},
+        {"line_item": "Total Shareholders Equity", "amount_2024": 65786523, "amount_2023": 76254291}
+      ],
+      "table_notes": ["Due from Affiliate ($35.3M) reclassified as reduction of equity in 2024."]
+    },
+    {
+      "id": "item21_income_statement",
+      "item": "Item 21",
+      "title": "Consolidated Statement of Income",
+      "source_pages": [195],
+      "period": "Thirteen periods ended December 28, 2024",
+      "rows": [
+        {"line_item": "Royalty Income", "amount_2024": 24916622, "amount_2023": 22646186},
+        {"line_item": "License Fees", "amount_2024": 2378044, "amount_2023": 2336303},
+        {"line_item": "Initial Fees", "amount_2024": 816928, "amount_2023": 545411},
+        {"line_item": "Rental Income", "amount_2024": 145900, "amount_2023": 145900},
+        {"line_item": "Restaurant Income", "amount_2024": 10235, "amount_2023": 0},
+        {"line_item": "Miscellaneous Income (Loss)", "amount_2024": -4870, "amount_2023": 45000},
+        {"line_item": "Total Net Revenues", "amount_2024": 28262859, "amount_2023": 25718800},
+        {"line_item": "Depreciation", "amount_2024": 2167676, "amount_2023": 2282215},
+        {"line_item": "Professional Services", "amount_2024": 339112, "amount_2023": 274595},
+        {"line_item": "Salaries and Benefits", "amount_2024": 143456, "amount_2023": 53227},
+        {"line_item": "Loss on Sale of Airplane", "amount_2024": 0, "amount_2023": 319838},
+        {"line_item": "Miscellaneous", "amount_2024": 64983, "amount_2023": 13913},
+        {"line_item": "Property Tax", "amount_2024": 230723, "amount_2023": 193880},
+        {"line_item": "Total Expenses", "amount_2024": 2945950, "amount_2023": 3137668},
+        {"line_item": "Income Before Foreign Tax", "amount_2024": 25316909, "amount_2023": 22581132},
+        {"line_item": "Foreign Tax Provision", "amount_2024": -474218, "amount_2023": -513095},
+        {"line_item": "Net Income", "amount_2024": 24842691, "amount_2023": 22068037}
+      ],
+      "table_notes": ["S Corporation — no federal income tax at entity level. Only foreign withholding taxes."]
+    }
+  ]
+}

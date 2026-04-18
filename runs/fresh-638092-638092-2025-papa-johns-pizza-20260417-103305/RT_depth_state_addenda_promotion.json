@@ -1,0 +1,65 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_pass": "A2_state_addenda",
+  "brand": "Papa Johns",
+  "states_with_addenda": ["Illinois", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington"],
+  "overrides": [
+    {"state": "Illinois", "affected_family": "fee_deferral", "override_summary": "All initial fees deferred until 30 days after close of fiscal Period in which Restaurant opens. Imposed by Illinois AG due to Franchisor's financial condition.", "why_it_matters": "Franchisee does not pay fees until restaurant is operational, reducing pre-opening risk. But the 'financial condition' language raises solvency questions.", "source_pages": [490]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Forum designation voided under IFDA §4. Arbitration in KY may still be permitted.", "why_it_matters": "Illinois franchisees can litigate state law claims in Illinois courts rather than Kentucky.", "source_pages": [490]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Illinois law applies if IFDA jurisdictional requirements are met.", "why_it_matters": "Illinois franchise law protections apply rather than Kentucky law.", "source_pages": [490]},
+    {"state": "Illinois", "affected_family": "renewal_compensation", "override_summary": "If franchisor refuses to renew, must compensate franchisee as required by IFDA §20.", "why_it_matters": "Provides financial protection against non-renewal that does not exist in other states.", "source_pages": [491]},
+    {"state": "Illinois", "affected_family": "termination", "override_summary": "If termination provisions are inconsistent with IFDA §19, the Act applies.", "why_it_matters": "State law termination protections override franchise agreement terms.", "source_pages": [491]},
+    {"state": "Illinois", "affected_family": "anti_waiver", "override_summary": "No provision may bind franchisee to waive compliance with IFDA.", "why_it_matters": "All Illinois franchise law protections are preserved regardless of agreement language.", "source_pages": [492]},
+
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General release required as condition of renewal, sale, or assignment does not apply to liability under Maryland Franchise Registration and Disclosure Law.", "why_it_matters": "Maryland franchisees retain right to pursue state law claims even after signing a release.", "source_pages": [502]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Franchisee may bring lawsuit in Maryland for claims arising under Maryland law.", "why_it_matters": "Avoids forced travel to Kentucky for Maryland-law claims.", "source_pages": [502]},
+    {"state": "Maryland", "affected_family": "fee_deferral", "override_summary": "Based on franchisor's financial condition, Maryland Securities Commissioner required financial assurance. All initial fees deferred until pre-opening obligations completed. Development fees deferred until first franchise opens.", "why_it_matters": "Like Illinois, protects franchisee from paying fees before receiving value. The 'financial condition' trigger is the same concern.", "source_pages": [502]},
+    {"state": "Maryland", "affected_family": "anti_waiver", "override_summary": "No statement or acknowledgment may waive claims under state franchise law or disclaim reliance on franchisor statements.", "why_it_matters": "Preserves anti-fraud protections.", "source_pages": [502]},
+    {"state": "Maryland", "affected_family": "statute_of_limitations", "override_summary": "Claims under Maryland law must be brought within 3 years after grant of franchise.", "why_it_matters": "Establishes clear timeline for claims.", "source_pages": [502]},
+
+    {"state": "Minnesota", "affected_family": "noncompete", "override_summary": "Post-term noncompete limited by Minn. Stat. §80C.21 — unreasonable restrictions voided.", "why_it_matters": "May significantly limit the 2-year/10-mile post-term restriction.", "source_pages": [511, 512]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Cannot require litigation outside Minnesota under Minn. Stat. §80C.21.", "why_it_matters": "Minnesota franchisees litigate locally.", "source_pages": [512]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "May not require release that would relieve franchisor from liability imposed by Minn. Stat. §§80C.01-80C.22.", "why_it_matters": "Franchise law claims cannot be released.", "source_pages": [512]},
+    {"state": "Minnesota", "affected_family": "anti_waiver", "override_summary": "No provision waives compliance with Minnesota Franchise Law. No acknowledgment may waive claims or disclaim reliance.", "why_it_matters": "Full preservation of Minnesota franchise law protections.", "source_pages": [511, 513]},
+
+    {"state": "New York", "affected_family": "additional_risk_factors", "override_summary": "Detailed additional risk factor disclosures required by NY GBL §§680-695, including comparisons, registration information, and franchisor litigation history.", "why_it_matters": "Provides New York franchisees with enhanced disclosure.", "source_pages": [520, 521, 522, 523]},
+    {"state": "New York", "affected_family": "anti_waiver", "override_summary": "Franchisor represents FDD does not knowingly omit material facts or contain untrue statements.", "why_it_matters": "Strengthens anti-fraud protections for NY franchisees.", "source_pages": [523]},
+
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Restrictive covenants subject to ND §9-08-06, which may void or limit them.", "why_it_matters": "North Dakota generally disfavors post-employment noncompetes.", "source_pages": [535]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Cannot require arbitration at location remote from franchisee's business. Cannot require consent to jurisdiction outside ND.", "why_it_matters": "ND franchisees can resolve disputes locally.", "source_pages": [535]},
+    {"state": "North Dakota", "affected_family": "liquidated_damages", "override_summary": "Requiring consent to liquidated damages or termination penalties is considered unfair, unjust, or inequitable.", "why_it_matters": "The 24-month royalty liquidated damages formula may be unenforceable in ND.", "source_pages": [535]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "Claims under ND franchise law must be governed by ND law.", "why_it_matters": "Kentucky choice of law voided for ND franchise law claims.", "source_pages": [535]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "Requiring general release as condition of renewal or transfer is unfair.", "why_it_matters": "ND franchisees cannot be forced to release claims on renewal/transfer.", "source_pages": [535]},
+    {"state": "North Dakota", "affected_family": "jury_trial_waiver", "override_summary": "Requiring waiver of trial by jury is unfair.", "why_it_matters": "Preserves jury trial rights.", "source_pages": [535]},
+    {"state": "North Dakota", "affected_family": "punitive_damages_waiver", "override_summary": "Requiring waiver of exemplary and punitive damages is unfair.", "why_it_matters": "Preserves ability to seek punitive damages.", "source_pages": [535]},
+
+    {"state": "Rhode Island", "affected_family": "forum_selection", "override_summary": "Provisions restricting jurisdiction or venue to forum outside RI or requiring laws of another state are void for claims under RI Franchise Investment Act.", "why_it_matters": "RI franchisees can litigate locally under state law.", "source_pages": [544]},
+
+    {"state": "Washington", "affected_family": "governing_law", "override_summary": "In event of conflict, Washington Franchise Investment Protection Act prevails.", "why_it_matters": "WA franchise law protections override conflicting agreement terms.", "source_pages": [553]},
+    {"state": "Washington", "affected_family": "forum_selection", "override_summary": "Arbitration/mediation site must be in Washington or mutually agreed. Litigation not precluded may be brought in Washington.", "why_it_matters": "WA franchisees can resolve disputes locally.", "source_pages": [553]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "Release or waiver of rights purporting to waive compliance with WA Act is void, except when executed pursuant to negotiated settlement with independent counsel.", "why_it_matters": "General releases on renewal/transfer are void unless properly negotiated.", "source_pages": [553]},
+    {"state": "Washington", "affected_family": "statute_of_limitations", "override_summary": "Provisions unreasonably restricting statute of limitations for WA Act claims may not be enforceable.", "why_it_matters": "Preserves full statutory limitations period.", "source_pages": [553]},
+    {"state": "Washington", "affected_family": "transfer_fees", "override_summary": "Transfer fees collectable only to extent reflecting reasonable estimated or actual costs.", "why_it_matters": "$4,000 transfer fee may be challenged if it exceeds actual transfer processing costs.", "source_pages": [553]},
+    {"state": "Washington", "affected_family": "termination", "override_summary": "Franchisee may terminate under any grounds permitted by state law. WA Act provisions on termination/renewal may supersede agreement.", "why_it_matters": "Provides additional termination rights not in the base agreement.", "source_pages": [553]},
+    {"state": "Washington", "affected_family": "buy_back", "override_summary": "Buy-back provisions permitting repurchase during term may be subject to WA Act limitations.", "why_it_matters": "FMV purchase option may be restricted.", "source_pages": [553]}
+  ],
+  "summary_table": {
+    "override_families": ["fee_deferral", "forum_selection", "governing_law", "noncompete", "general_release", "renewal_compensation", "termination", "anti_waiver", "liquidated_damages", "jury_trial", "punitive_damages", "statute_of_limitations", "transfer_fees", "buy_back"],
+    "states_affected": {
+      "fee_deferral": ["Illinois", "Maryland"],
+      "forum_selection": ["Illinois", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+      "governing_law": ["Illinois", "Minnesota", "North Dakota", "Washington"],
+      "noncompete": ["Minnesota", "North Dakota"],
+      "general_release": ["Maryland", "Minnesota", "North Dakota", "Washington"],
+      "renewal_compensation": ["Illinois"],
+      "termination": ["Illinois", "Maryland", "Washington"],
+      "anti_waiver": ["Illinois", "Maryland", "Minnesota", "New York"],
+      "liquidated_damages": ["North Dakota"],
+      "jury_trial": ["North Dakota"],
+      "punitive_damages": ["North Dakota"],
+      "statute_of_limitations": ["Maryland", "Washington"],
+      "transfer_fees": ["Washington"],
+      "buy_back": ["Washington"]
+    }
+  }
+}

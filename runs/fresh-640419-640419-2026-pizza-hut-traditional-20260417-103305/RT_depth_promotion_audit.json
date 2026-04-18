@@ -1,0 +1,68 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_pass": "A2 Pass 3 — Narrative-to-canonical promotion",
+  "promoted_facts": [
+    {
+      "fact": "PHLLC may prescribe maximum retail prices franchisees may charge",
+      "source": "Reader report Pass C / Item 11, p. 35",
+      "canonical_key": "item11_training.franchisor_pricing_control",
+      "value": true
+    },
+    {
+      "fact": "Standards Library has 97 pages",
+      "source": "Reader report Pass C / Item 11, p. 40",
+      "canonical_key": "item11_training.standards_library_pages",
+      "value": 97
+    },
+    {
+      "fact": "Advertising Committee spending: 75% media, 18% other, 0% admin, 7% unspent",
+      "source": "Reader report Pass C / Item 11, p. 40",
+      "canonical_key": "item6_advertising.ad_spend_breakdown",
+      "already_present": true
+    },
+    {
+      "fact": "Computer System initial setup cost $15,000-$30,000",
+      "source": "Reader report Pass C / Item 11, p. 41",
+      "canonical_key": "item6_technology_fees.computer_system_initial_cost",
+      "value": {"low": 15000, "high": 30000}
+    },
+    {
+      "fact": "Computer System annual maintenance $1,000-$3,500 per unit",
+      "source": "Reader report Pass C / Item 11, p. 42",
+      "canonical_key": "item6_technology_fees.computer_system_maintenance_annual",
+      "value": {"low": 1000, "high": 3500}
+    },
+    {
+      "fact": "Typical time from signing FA to opening: 6-12 months",
+      "source": "Reader report Pass C / Item 11, p. 36",
+      "canonical_key": "item11_training.typical_time_to_open",
+      "value": "6-12 months"
+    },
+    {
+      "fact": "First restaurant must open within 6 months of FA effective date",
+      "source": "Reader report Pass C / Item 11, p. 36",
+      "canonical_key": "item11_training.first_restaurant_deadline",
+      "value": "6 months from FA effective date"
+    },
+    {
+      "fact": "PHLLC does not currently earn profit on proprietary product sales but reserves right",
+      "source": "Reader report Pass C / Item 8, p. 28",
+      "canonical_key": "item8_supplier_restrictions.franchisor_profit_on_proprietary",
+      "value": "Not currently, reserves right"
+    },
+    {
+      "fact": "Lease approval auto-approved if PHLLC doesn't respond within 20 business days (with rider attached)",
+      "source": "Reader report Pass C / Item 11, p. 34",
+      "canonical_key": "item11_training.lease_auto_approval",
+      "value": "20 business days with Appendix D rider"
+    },
+    {
+      "fact": "Advertising material auto-disapproved if PHLLC doesn't respond within 10 business days",
+      "source": "Reader report Pass C / Item 11, p. 35",
+      "canonical_key": "item11_training.advertising_auto_disapproval",
+      "value": "10 business days"
+    }
+  ],
+  "facts_already_present": 1,
+  "facts_promoted": 9
+}

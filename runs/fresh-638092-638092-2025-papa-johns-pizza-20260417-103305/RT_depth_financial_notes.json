@@ -1,0 +1,127 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_pass": "A2_financial_note_depth",
+  "brand": "Papa Johns",
+  "filing_id": "638092",
+  "item21_extraction_method": "normal_text_extraction",
+  "notes_extracted": [
+    {
+      "note_number": 1,
+      "note_family": "organization",
+      "source_pages": [484],
+      "content": {
+        "entity": "Papa John's Franchising, LLC",
+        "type": "Kentucky LLC",
+        "organized": "2020-11-06",
+        "purpose": "Manage and sell US and Canadian franchises for Papa Johns restaurants",
+        "parent": "Papa John's International, Inc. (PJI)",
+        "parent_relationship": "PJI is sole member with full ownership interest"
+      }
+    },
+    {
+      "note_number": 2,
+      "note_family": "significant_accounting_policies",
+      "source_pages": [484, 485, 486],
+      "content": {
+        "basis_of_accounting": "GAAP (US)",
+        "fiscal_year": "Ends last Sunday in December each year",
+        "comprehensive_income": "No other comprehensive income; equals net income",
+        "cash_and_equivalents": {
+          "policy": "Highly liquid investments with initial maturity ≤3 months",
+          "actual": "Zero cash — all swept to PJUSA for centralized cash management",
+          "amounts_swept": {"2024": 112034, "2023": 127551, "2022": 127759}
+        },
+        "accounts_receivable": {
+          "composition": "Substantially all from franchisee royalties",
+          "credit_extension": "Based on franchisee financial condition, no collateral required",
+          "allowance_2024": 321,
+          "allowance_2023": 366,
+          "credit_loss_provision_2024": 106,
+          "writeoffs_2024": 151
+        },
+        "income_taxes": "PJF is a single member LLC, disregarded entity for federal and state tax. All income/loss on PJI's consolidated return.",
+        "revenue_recognition": {
+          "royalties": "Recognized as sales occur, based on percentage of franchise restaurant sales. Standard rate 5%. Incentive reductions recognized at same time.",
+          "franchise_fees": "Billed at store opening. Combined with franchise right (not separately distinguishable). Amortized straight-line from opening through 10-year FA term.",
+          "area_development_fees": "Billed at execution of development agreement. Included in deferred revenue. Allocated pro-rata to stores opened under that development agreement.",
+          "renewal_fees": "Billed before renewal date. Amortized over renewal period.",
+          "incentive_programs": "Royalty incentives, development incentives, and other support initiatives reduce royalties and franchise fees."
+        },
+        "refranchising_royalty_streams": {
+          "2024_amount": 2603,
+          "2022_amount": 12150,
+          "remaining_balance_2024": 11368,
+          "remaining_balance_2023": 10024,
+          "recognition": "Over 10-year franchise agreement terms executed concurrent with dispositions"
+        },
+        "contract_liabilities": {
+          "total_deferred_2024": 17181,
+          "total_deferred_2023": 16141,
+          "future_recognition": {"2025": 2369, "2026": 2279, "2027": 2167, "2028": 2043, "2029": 1931, "thereafter": 4725},
+          "royalty_and_franchise_fees": 15514,
+          "area_development_fees": 1667
+        },
+        "fair_value": "Assets and liabilities approximate carrying value due to short-term nature"
+      }
+    },
+    {
+      "note_number": 3,
+      "note_family": "related_parties",
+      "source_pages": [487],
+      "content": {
+        "pji_relationship": "Parent company, directly or indirectly, of all Papa Johns entities. Transferred franchise agreements to PJF on Feb 22, 2021.",
+        "trademark_license": {
+          "counterparty": "PJI",
+          "date": "2021-02-22",
+          "fee_2024": 803,
+          "fee_2023": 773,
+          "classification": "G&A expenses"
+        },
+        "franchise_supervision_agreement": {
+          "counterparty": "PJUSA",
+          "date": "2021-02-22",
+          "services": "Financial, support, training, supervision, compliance-related services",
+          "fee_2024": 33914,
+          "fee_2023": 14089,
+          "classification": "G&A expenses",
+          "note": "Updated internal cost allocations in 2024 resulted in higher fees"
+        },
+        "promissory_note": {
+          "counterparty": "PJUSA",
+          "date": "2021-03-02",
+          "amount": 15000,
+          "interest_rate": "0% (interest-free)",
+          "imputed_interest": "None considered (related party transaction)",
+          "due_date": "Earlier of written demand or December 31, 2030",
+          "default_penalty_rate": "10.25% annual, commencing only on due date if in default",
+          "status_2024": "Not called, not currently due",
+          "balance_sheet_line": "Related party notes receivable"
+        },
+        "advances_to_related_parties": "Excess cash flows above distributions to PJI, parked at PJUSA under centralized cash management"
+      }
+    },
+    {
+      "note_number": 4,
+      "note_family": "members_equity",
+      "source_pages": [487, 488],
+      "content": {
+        "member_contributions": {"2024": 0, "2023": 0, "2022": 0},
+        "member_distributions": {
+          "2024": {"amount": 111000, "authorized": "December 2024"},
+          "2023": {"amount": 132000, "authorized": "December 2023"},
+          "2022": {"amount": 127883}
+        },
+        "distribution_mechanism": "Forgiveness or extinguishment of Advances to related parties initially made through centralized cash management, subsequently settled through Member's Equity"
+      }
+    },
+    {
+      "note_number": 5,
+      "note_family": "subsequent_events",
+      "source_pages": [488],
+      "content": {
+        "evaluation_date": "2025-03-28",
+        "events_identified": "None"
+      }
+    }
+  ]
+}

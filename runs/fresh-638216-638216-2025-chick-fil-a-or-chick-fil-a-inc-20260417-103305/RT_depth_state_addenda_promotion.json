@@ -1,0 +1,35 @@
+{
+  "depth_pass": "A2_state_addenda_structured_promotion",
+  "overrides": [
+    {"state": "California", "affected_family": "noncompete", "override_summary": "Post-term noncompete likely unenforceable under CA Business & Professions Code §16600", "why_it_matters": "CA Licensee may freely operate competing chicken business after license ends", "source_pages": [265, 266]},
+    {"state": "California", "affected_family": "forum_selection", "override_summary": "Cannot require out-of-state litigation for CA residents per CA Corporations Code §20040.5", "why_it_matters": "CA Licensee can litigate in California instead of Georgia", "source_pages": [265, 266]},
+    {"state": "California", "affected_family": "termination", "override_summary": "CA Business & Professions Code §20000-20043 provides non-renewal/transfer/termination rights", "why_it_matters": "Additional protections beyond what the License Agreement provides", "source_pages": [265]},
+    {"state": "Hawaii", "affected_family": "notice_cure", "override_summary": "90 days notice of termination; 180 days notice of non-renewal", "why_it_matters": "HI Licensee gets significantly more notice before losing the license", "source_pages": [270, 271]},
+    {"state": "Illinois", "affected_family": "termination", "override_summary": "Illinois Franchise Disclosure Act §705/19-20 applies to termination/transfer", "why_it_matters": "IL provides additional franchisee protections on termination", "source_pages": [274, 276]},
+    {"state": "Indiana", "affected_family": "termination", "override_summary": "Indiana Deceptive Franchise Practices Act IC 23-2-2.7 provides termination/non-renewal/transfer protections", "why_it_matters": "IN Licensee has state-law protections on franchise relationship", "source_pages": [279, 281]},
+    {"state": "Maryland", "affected_family": "notice_cure", "override_summary": "CFA must provide 90 days notice of termination with 60 days to cure", "why_it_matters": "MD Licensee has more time to cure defaults before termination", "source_pages": [284, 286]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General release as condition of renewal may not be enforceable", "why_it_matters": "MD Licensee cannot be forced to waive claims as price of renewal", "source_pages": [286]},
+    {"state": "Minnesota", "affected_family": "notice_cure", "override_summary": "90 days notice of termination (60 days to cure); 180 days notice of non-renewal", "why_it_matters": "Significantly more time for MN Licensee", "source_pages": [288, 291]},
+    {"state": "Minnesota", "affected_family": "transfer", "override_summary": "Consent to transfer not to be unreasonably withheld", "why_it_matters": "MN limits CFA's absolute discretion on transfer approval", "source_pages": [291]},
+    {"state": "Minnesota", "affected_family": "noncompete", "override_summary": "Noncompete enforcement limited per MN franchise law", "why_it_matters": "MN Licensee may have more freedom post-termination", "source_pages": [291, 292]},
+    {"state": "Minnesota", "affected_family": "trademark_defense", "override_summary": "CFA must defend Licensee against third-party trademark infringement claims at CFA's cost if Licensee used marks properly", "why_it_matters": "MN shifts trademark defense cost to CFA", "source_pages": [291]},
+    {"state": "New York", "affected_family": "forum_selection", "override_summary": "Forum selection limited — cannot require out-of-state litigation for NY residents asserting NY franchise law claims", "why_it_matters": "NY Licensee can litigate NY franchise claims in New York", "source_pages": [294, 298]},
+    {"state": "New York", "affected_family": "anti_waiver", "override_summary": "CFA cannot require waiver of rights under NY General Business Law", "why_it_matters": "NY franchise law rights are non-waivable", "source_pages": [294]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Noncompete may not be enforceable per ND law", "why_it_matters": "ND Licensee may freely compete post-termination", "source_pages": [301, 303]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "ND law governs for ND claims", "why_it_matters": "ND law applies instead of Georgia law for ND-specific claims", "source_pages": [303]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "General release not required as condition of renewal/transfer", "why_it_matters": "ND Licensee cannot be forced to waive claims", "source_pages": [303]},
+    {"state": "Wisconsin", "affected_family": "termination", "override_summary": "Wisconsin Fair Dealership Law Ch. 135 applies — additional termination protections", "why_it_matters": "WI provides some of the strongest franchisee termination protections", "source_pages": [323, 325]}
+  ],
+  "summary_table": {
+    "noncompete_limited": ["CA", "MN", "ND"],
+    "forum_selection_limited": ["CA", "NY"],
+    "termination_notice_90_days": ["HI", "MD", "MN"],
+    "non_renewal_notice_180_days": ["HI", "MN"],
+    "transfer_not_unreasonably_withheld": ["MN"],
+    "general_release_prohibited": ["MD", "ND"],
+    "governing_law_overridden": ["ND"],
+    "anti_waiver": ["NY"],
+    "trademark_defense_shifted": ["MN"],
+    "state_franchise_law_protections": ["CA", "HI", "IL", "IN", "MD", "MN", "NY", "ND", "RI", "SD", "VA", "WA", "WI"]
+  }
+}

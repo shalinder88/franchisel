@@ -1,0 +1,15 @@
+{
+  "audit_type": "narrative_to_canonical_promotion",
+  "promotions": [
+    {"fact": "Distribution centers grew from 3 (2022) to 9 (2024)", "source": "Reader Report Section C / FS Note 1", "pdf_page": 405, "promoted_to": "item1_entity_structure.distribution_centers"},
+    {"fact": "CFA Supply served 1,107 restaurant locations in 2024 (up from 410 in 2022)", "source": "FS Note (Revenue Recognition)", "pdf_page": 409, "promoted_to": "item8_supplier_restrictions.cfa_supply_locations_served"},
+    {"fact": "Property tax pass-through income: $105.4M (2024)", "source": "FS Note (Revenue Recognition)", "pdf_page": 409, "promoted_to": "item21_revenue_decomposition.property_tax_income_2024"},
+    {"fact": "US franchisee leases are month-to-month; Canada/PR are 5-year initial term", "source": "FS Note (Lessor Accounting)", "pdf_page": 413, "promoted_to": "item11_training.franchise_term_structure"},
+    {"fact": "Operating lease weighted average remaining term: 18.5 years", "source": "FS Note (Leases)", "pdf_page": 432, "promoted_to": "item21_lease_detail"},
+    {"fact": "Total future lease payments: $3.7B operating + $2.7B finance = $6.4B", "source": "FS Note (Leases)", "pdf_page": 432, "promoted_to": "item21_lease_detail"},
+    {"fact": "Sublease income from franchisees: $369M (2024)", "source": "FS Note (Leases)", "pdf_page": 432, "promoted_to": "item21_lease_detail"},
+    {"fact": "No material subsequent events through March 21, 2025", "source": "FS Note 15", "pdf_page": 435, "promoted_to": "item21_financial_health.subsequent_events"},
+    {"fact": "Compensated absence liability: $81.2M (2024)", "source": "FS Note 1", "pdf_page": 413, "promoted_to": "item21_employee_obligations"},
+    {"fact": "Series A preferred stock: $196 liquidation preference, 7% cumulative dividend", "source": "FS Note 1", "pdf_page": 420, "promoted_to": "item21_equity_structure"}
+  ]
+}

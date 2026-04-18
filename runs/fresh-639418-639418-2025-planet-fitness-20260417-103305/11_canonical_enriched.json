@@ -1,0 +1,126 @@
+{
+  "_enrichment_version": "v1",
+  "_base_file": "09_final_canonical.json — ALL fields from that file are included below plus enrichment layers",
+
+  "document_identity": {"filing_id": "639418", "franchisor_legal_name": "Planet Fitness Franchising LLC", "brand": "Planet Fitness", "state_of_formation": "Delaware", "formation_date": "2018-06-13", "fdd_year": "2025", "issuance_date": "June 27, 2025, as amended September 4, 2025", "headquarters": "4 Liberty Lane West, Floor 2, Hampton, NH 03842", "phone": "(603) 750-0001", "website": "www.planetfitness.com", "ultimate_parent": "Planet Fitness, Inc. (publicly traded)", "source_section": "Item 1", "source_pages": [8, 9, 10, 11], "confidence": "high"},
+
+  "item1_entity_structure": {"franchisor": "Planet Fitness Franchising LLC (DE LLC, formed 2018-06-13)", "predecessor": "Pla-Fit Franchise, LLC (NH LLC, formed 2003-01-27)", "securitization_structure": true, "franchise_offered_since": "August 2018", "source_pages": [8, 9, 10, 11], "confidence": "high"},
+
+  "item19_chart_detail": {
+    "charts_disclosed": 4,
+    "chart_1_franchised_eft": {
+      "population": 2197, "excluded": 101, "year": 2024,
+      "tiers": {
+        "bottom": {"avg": 1205580, "med": 1255397, "high": 1536894, "low": 283269, "clubs": 733, "attainment_pct": 58},
+        "middle": {"avg": 1803265, "med": 1794689, "high": 2093010, "low": 1537067, "clubs": 732, "attainment_pct": 48},
+        "upper": {"avg": 2613753, "med": 2493416, "high": 5280380, "low": 2093692, "clubs": 732, "attainment_pct": 40}
+      }
+    },
+    "chart_2_corporate_eft": {
+      "population": 252, "excluded": 18, "year": 2024,
+      "tiers": {
+        "bottom": {"avg": 1322893, "med": 1338496, "clubs": 84, "attainment_pct": 54},
+        "middle": {"avg": 1990138, "med": 1995768, "clubs": 84, "attainment_pct": 51},
+        "upper": {"avg": 2650931, "med": 2537332, "clubs": 84, "attainment_pct": 35}
+      }
+    },
+    "chart_3_combined_eft": {
+      "population": 2449, "year": 2024,
+      "tiers": {
+        "bottom": {"avg": 1215017, "med": 1269667, "clubs": 817, "attainment_pct": 58},
+        "middle": {"avg": 1823030, "med": 1815044, "clubs": 816, "attainment_pct": 48},
+        "upper": {"avg": 2619680, "med": 2505089, "clubs": 816, "attainment_pct": 39}
+      }
+    },
+    "chart_4_revenue_operations": {
+      "population": 252, "type": "corporate_only", "year": 2024,
+      "ebitda_tiers": {
+        "bottom": {"avg": 266824, "med": 340330, "pct_avg": 0.21, "pct_med": 0.26, "attainment_pct": 61},
+        "middle": {"avg": 683438, "med": 734527, "pct_avg": 0.35, "pct_med": 0.38, "attainment_pct": 57},
+        "upper": {"avg": 1089084, "med": 1043205, "pct_avg": 0.42, "pct_med": 0.42, "attainment_pct": 46}
+      }
+    },
+    "source_pages": [84, 85, 86, 87, 88, 89, 90, 91]
+  },
+
+  "item20_yearly_activity": {
+    "2022": {"franchised_start": 2060, "franchised_end": 2082, "corporate_start": 110, "corporate_end": 232, "total_end": 2314, "franchised_opened": 118, "franchised_terminated": 0, "franchised_reacquired": 114, "transfers": 206},
+    "2023": {"franchised_start": 2082, "franchised_end": 2201, "corporate_start": 232, "corporate_end": 254, "total_end": 2455, "franchised_opened": 123, "franchised_terminated": 0, "franchised_reacquired": 4, "transfers": 100},
+    "2024": {"franchised_start": 2201, "franchised_end": 2298, "corporate_start": 254, "corporate_end": 270, "total_end": 2568, "franchised_opened": 100, "franchised_terminated": 1, "franchised_ceased": 2, "transfers": 270},
+    "projected": {"franchised_openings": 78, "corporate_openings": 9, "signed_not_opened": 84},
+    "source_pages": [92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102]
+  },
+
+  "exhibit_structure": {
+    "total_exhibits": 15,
+    "exhibit_pages": {"A": [106, 108], "B": [109, 111], "C": [112, 211], "D": [212, 221], "E": [222, 232], "F": [233, 241], "G": [242, 283], "H": [284, 391], "I": [392, 442], "J": [443, 447], "K1": [448, 450], "K2": [451, 462], "K3": [463, 487], "L": [488, 493], "M": [494, 534]},
+    "critical_exhibits": ["C (FA, 100pp)", "G (ADA, 42pp)", "H (Financials, 108pp)", "I (Franchisee List, 51pp)", "M (State Addenda, 41pp)"]
+  },
+
+  "state_addenda_overrides": {
+    "California": ["Non-compete may not be enforceable", "General release may be unenforceable", "NH law may not be enforceable", "Punitive damages waiver may not be enforceable"],
+    "Minnesota": ["90-day termination notice + 60-day cure", "180-day non-renewal notice", "No out-of-state litigation", "General release prohibited"],
+    "North_Dakota": ["Non-compete may be unenforceable", "General release may be unenforceable", "Out-of-state venue may not be enforceable"],
+    "Wisconsin": ["Fair Dealership Law supersedes", "No termination without good cause", "90-day notice + 60-day cure"]
+  },
+
+  "item21_structural_facts": {
+    "auditor": "KPMG LLP", "opinion": "Unqualified",
+    "franchisor_revenue_2024": 350145000, "franchisor_net_income_2024": 301316000,
+    "franchisor_total_assets_2024": 151027000, "franchisor_equity_2024": 117013000,
+    "securitized_debt_total": 2250000000, "dividends_exceed_income": true,
+    "note_families_walked": 6
+  },
+
+  "item1_structural_facts": {
+    "entity_type": "Delaware LLC (securitization SPV)",
+    "key_affiliates_count": 6,
+    "international_presence": ["Canada", "Central America", "Spain", "New Zealand", "Mexico", "Australia"],
+    "manager_entity": "Planet Fitness Holdings, LLC",
+    "parent_guarantee": true
+  },
+
+  "item6_fee_attributes": {
+    "total_fee_categories": 31,
+    "royalty_rate": 0.07,
+    "naf_rate": 0.02,
+    "naf_max_rate": 0.03,
+    "combined_ad_cap": 0.09,
+    "join_fee_rate": 0.20,
+    "successor_fee": 20000,
+    "transfer_fee": 10000,
+    "reequip_range": [363000, 1137000],
+    "remodel_range": [250000, 1200000]
+  },
+
+  "item2_leadership_roster": [
+    {"name": "Colleen Keating", "role": "CEO", "tenure_start": "June 2024"},
+    {"name": "Jay Stasz", "role": "CFO", "tenure_start": "November 2024"},
+    {"name": "Bill Bode", "role": "COO", "tenure_start": "March 2025"},
+    {"name": "Chip Ohlsson", "role": "CDO", "tenure_start": "January 2025"},
+    {"name": "Jamie Medeiros", "role": "CBO", "tenure_start": "May 2022"},
+    {"name": "Brian Povinelli", "role": "CMO", "tenure_start": "February 2025"},
+    {"name": "Paul Barber", "role": "CIO", "tenure_start": "October 2022"}
+  ],
+
+  "item5_initial_fees": {"initial_franchise_fee": 20000, "ada_fee_per_location": [10000, 60000], "equipment_purchase": [363000, 1103000], "source_pages": [19, 20], "confidence": "high"},
+  "item6_royalty": {"rate": "7% of EFT Dues Draft", "source_pages": [20, 28], "confidence": "high"},
+  "item6_advertising": {"naf_rate": "2% (max 3%)", "laf_minimum": "Greater of $60K or 7% Monthly EFT", "combined_cap": "9% EFT", "source_pages": [23, 30], "confidence": "high"},
+  "item7_total_investment": {"low": 1525000, "high": 5221500, "source_pages": [31, 32], "confidence": "high"},
+  "item8_supplier_restrictions": {"sole_source_equipment": true, "pf_equipment_revenue_2024": 255000000, "source_pages": [36, 37, 38, 39], "confidence": "high"},
+  "item10_financing": {"offered": false, "source_pages": [44], "confidence": "high"},
+  "item12_territory": {"exclusive_fa": false, "protected_ada": true, "carveouts": 5, "source_pages": [60, 61, 62, 63, 64, 65], "confidence": "high"},
+  "item17_renewal": {"term_years": 12, "successor_fee": 20000, "materially_different_terms_risk": true, "source_pages": [72, 73], "confidence": "high"},
+  "item17_noncompete": {"post_term_years": 2, "radius_miles": 15, "rofr_extended_years": 5, "source_pages": [77, 78], "confidence": "high"},
+  "item17_dispute_resolution": {"venue": "Portsmouth, NH", "governing_law": "New Hampshire", "source_pages": [79, 80], "confidence": "high"},
+  "item18_public_figures": {"disclosed": false, "source_pages": [84], "confidence": "high"},
+  "item20_outlets": {"total_2024": 2568, "franchised_2024": 2298, "corporate_2024": 270, "gag_clause": true, "source_pages": [92, 102], "confidence": "high"},
+  "item22_contracts_listed": ["B", "C", "D", "E", "F", "G", "J", "K-1", "K-2", "K-3", "M"],
+  "special_risks": [{"risk": "Out-of-State Dispute Resolution", "source_pages": [4]}],
+  "unresolveds": [
+    {"id": "U2", "description": "FA full clause walk deferred", "severity": "medium"},
+    {"id": "U4", "description": "Equipment Terms not reviewed", "severity": "medium"},
+    {"id": "U5", "description": "POS Agreements not walked", "severity": "medium"}
+  ],
+  "contradictions": [{"id": "C1", "description": "Item 20 Table 1 vs Table 3 start-of-year 2022 count discrepancy (2,060 vs 2,073)", "source_pages": [92, 95]}]
+}

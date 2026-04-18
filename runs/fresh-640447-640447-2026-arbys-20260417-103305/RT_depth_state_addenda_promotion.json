@@ -1,0 +1,42 @@
+{
+  "depth_pass": "4_state_addenda_structured_promotion",
+  "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota", "Washington"],
+  "overrides": [
+    {"state": "California", "affected_family": "operating_compliance", "override_summary": "Must comply with California Fast Food Act (AB 1228) — health, safety, employment standards including minimum wages. Franchisor provides no training/assistance related to Act; compliance is solely franchisee's responsibility.", "why_it_matters": "California franchisees face higher labor costs and compliance burden not reflected in Item 7 estimates", "source_pages": [295]},
+    {"state": "Hawaii", "affected_family": "disclosure", "override_summary": "Standard Hawaii franchise investment law filing disclosure; 7-day pre-signing delivery requirement", "why_it_matters": "Procedural protection for Hawaii franchisees", "source_pages": [296]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "Release required for renewal/transfer will not apply to claims under Maryland Franchise Registration and Disclosure Law", "why_it_matters": "Maryland franchisees retain right to bring franchise law claims even after signing release", "source_pages": [297]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law, but will be enforced to extent enforceable", "why_it_matters": "Insolvency-based termination is limited in Maryland", "source_pages": [297]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Franchisee may bring action in Maryland for claims arising under Maryland Franchise Law", "why_it_matters": "Overrides Atlanta, GA forum selection for Maryland franchise law claims", "source_pages": [297]},
+    {"state": "Maryland", "affected_family": "governing_law", "override_summary": "Maryland law may apply for claims under Maryland Franchise Law, overriding Georgia choice of law", "why_it_matters": "Maryland franchisees not bound by Georgia law for state franchise claims", "source_pages": [297]},
+    {"state": "Maryland", "affected_family": "statute_of_limitations", "override_summary": "Must bring claims under Maryland Franchise Law within 3 years after grant of franchise", "why_it_matters": "Defines claims window for Maryland franchisees", "source_pages": [297]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "Requires 90 days' notice of termination (with 60 days to cure) — overrides FA's 30-day cure period", "why_it_matters": "Minnesota franchisees get significantly longer cure period", "source_pages": [298]},
+    {"state": "Minnesota", "affected_family": "non_renewal", "override_summary": "Requires 180 days' notice for non-renewal — matches existing FA requirement for Traditional", "why_it_matters": "Codified protection against surprise non-renewal", "source_pages": [298]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Cannot require litigation outside Minnesota; cannot require jury trial waiver; cannot require consent to injunctive relief, liquidated damages, termination penalties, or judgment notes", "why_it_matters": "Overrides Atlanta forum selection, jury waiver, and liquidated damages/penalty provisions for MN franchisees", "source_pages": [298]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Release for renewal/sale/transfer will not apply to extent prohibited by MN Rule 2860.4400D", "why_it_matters": "Limits scope of general release for Minnesota franchisees", "source_pages": [298]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Restrictive covenants are subject to N.D.C.C. Section 9-08-06, which limits enforceability of noncompetes", "why_it_matters": "Post-term noncompete may be unenforceable or limited in North Dakota", "source_pages": [300]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Cannot require ND franchisees to consent to jurisdiction of courts outside North Dakota", "why_it_matters": "Overrides Atlanta forum selection for ND franchisees", "source_pages": [300]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "FA governed by state other than North Dakota is deemed unfair", "why_it_matters": "Georgia choice of law may not apply in North Dakota", "source_pages": [300]},
+    {"state": "North Dakota", "affected_family": "damages", "override_summary": "Cannot require consent to liquidated damages, termination penalties, or waiver of exemplary/punitive damages", "why_it_matters": "ND franchisees retain right to punitive damages and cannot be penalized with liquidated damages", "source_pages": [300]},
+    {"state": "North Dakota", "affected_family": "jury_trial", "override_summary": "Cannot require waiver of trial by jury", "why_it_matters": "Overrides FA's irrevocable jury waiver for ND franchisees", "source_pages": [300]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "General release upon renewal is deemed unfair", "why_it_matters": "ND franchisees cannot be required to sign general release for renewal", "source_pages": [300]},
+    {"state": "North Dakota", "affected_family": "statute_of_limitations", "override_summary": "Cannot require franchisee to consent to limitation of claims; ND statute of limitations applies", "why_it_matters": "ND law governs claims timeline, not FA provisions", "source_pages": [300]},
+    {"state": "Washington", "affected_family": "no_poaching", "override_summary": "Assurance of Discontinuance: removed employee no-solicitation/no-hiring provision from franchise agreement; will not enforce in existing agreements; will request WA franchisees amend to remove; no fines assessed", "why_it_matters": "Washington franchisees and employees protected from no-poach restrictions", "source_pages": [301]}
+  ],
+  "no_waiver_disclaimer_states": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+  "summary_table": {
+    "override_families": ["forum_selection", "governing_law", "general_release", "noncompete", "termination", "non_renewal", "jury_trial", "damages", "statute_of_limitations", "no_poaching", "operating_compliance"],
+    "states_affected": {
+      "forum_selection": ["Maryland", "Minnesota", "North Dakota"],
+      "governing_law": ["Maryland", "North Dakota"],
+      "general_release": ["Maryland", "Minnesota", "North Dakota"],
+      "noncompete": ["North Dakota"],
+      "termination": ["Maryland", "Minnesota"],
+      "non_renewal": ["Minnesota"],
+      "jury_trial": ["Minnesota", "North Dakota"],
+      "damages": ["North Dakota"],
+      "statute_of_limitations": ["Maryland", "North Dakota"],
+      "no_poaching": ["Washington"],
+      "operating_compliance": ["California"]
+    }
+  }
+}

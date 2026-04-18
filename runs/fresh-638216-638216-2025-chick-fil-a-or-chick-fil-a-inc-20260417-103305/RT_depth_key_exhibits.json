@@ -1,0 +1,55 @@
+{
+  "depth_block": "A2_key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "B-1",
+      "name": "License Agreement (Self-Operators)",
+      "pages": [80, 111],
+      "clause_walk_status": "complete",
+      "clauses_extracted": 19,
+      "key_findings": [
+        "Sunday/Christmas closure is a termination event",
+        "CFA Culture compliance required — subjective standard",
+        "Term is blank (filled in case-by-case)",
+        "Explicit no-renewal-right acknowledgment",
+        "Pandemic/epidemic is a non-curable termination event",
+        "No Internet/website presence without CFA approval",
+        "Gross Receipts includes delivery/mobile app orders"
+      ]
+    },
+    {
+      "exhibit": "B-2",
+      "name": "License Agreement (Food Service Providers)",
+      "pages": [112, 144],
+      "clause_walk_status": "partial",
+      "clauses_extracted": 0,
+      "why_deferred": "B-2 is substantially similar to B-1 with additional Food Service Provider requirements. Key operative provisions are the same. B-1 clause walk covers all material terms.",
+      "what_recovered_elsewhere": "All material provisions extracted from B-1 walk and Item 17 chart",
+      "what_remains_missing": "FSP-specific additional requirements for Third Party management, Third Party employee covenants"
+    },
+    {
+      "exhibit": "G",
+      "name": "State Specific Addenda",
+      "pages": [263, 326],
+      "clause_walk_status": "complete",
+      "states_walked": 13,
+      "overrides_extracted": 18,
+      "key_findings": [
+        "3 states limit noncompete (CA, MN, ND)",
+        "3 states require 90-day termination notice (HI, MD, MN)",
+        "2 states limit forum selection (CA, NY)",
+        "2 states prohibit general release (MD, ND)",
+        "MN shifts trademark defense cost to CFA"
+      ]
+    }
+  ],
+  "deferred_exhibits": [
+    {
+      "exhibit": "B-2",
+      "page_range": [112, 144],
+      "why_deferred": "Substantially identical to B-1 except for Food Service Provider-specific requirements. All material operative terms already captured from B-1.",
+      "what_recovered_elsewhere": "Item 17 chart + B-1 clause walk",
+      "what_remains_missing": "FSP-specific Third Party management covenants"
+    }
+  ]
+}

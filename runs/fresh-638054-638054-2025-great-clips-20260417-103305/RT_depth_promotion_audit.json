@@ -1,0 +1,19 @@
+{
+  "depth_pass": "A2_depth_pass_3",
+  "target": "Narrative-to-Canonical Promotion Audit",
+  "promotions": [
+    {"fact": "Auditor is RSM US LLP (Minneapolis, MN)", "source": "Image fallback of p.168 letterhead", "promoted_to": "item21_financial_statements.auditor"},
+    {"fact": "State addenda cover 11 states: Michigan, California, Hawaii, Illinois, Maryland, Minnesota, New York, North Dakota, Rhode Island, Virginia, Wisconsin", "source": "Reader report + state addenda pages", "promoted_to": "state_addenda_overrides"},
+    {"fact": "Forum selection overridden in 8 states", "source": "State addenda extraction", "promoted_to": "state_addenda_overrides.summary_table"},
+    {"fact": "Noncompete unenforceable in California and North Dakota", "source": "State addenda extraction", "promoted_to": "state_addenda_overrides"},
+    {"fact": "Interest rate capped at 10% in California (vs. 14% in FA)", "source": "State addenda extraction", "promoted_to": "state_addenda_overrides"},
+    {"fact": "3-day abandonment trigger for immediate termination", "source": "FA Section 17.1(d), p.220", "promoted_to": "item17_termination.non_curable_defaults"},
+    {"fact": "Unlimited personal guaranty from all equity holders", "source": "FA Guaranty section, pp.228-229", "promoted_to": "item15_participation.guaranty_scope"},
+    {"fact": "No liquidated damages formula found in franchise agreement", "source": "FA clause walk", "promoted_to": "contract_burden_depth"},
+    {"fact": "No force majeure provision found in franchise agreement", "source": "FA clause walk", "promoted_to": "contract_burden_depth"},
+    {"fact": "Salon development sales act as agent ($16.27M gross, recorded net)", "source": "Note 1 revenue recognition, p.179", "promoted_to": "item21_note_families"},
+    {"fact": "Ad Fund sponsorship commitments: $14.8M-$15.1M/year (NHL, NCAA, ESPN)", "source": "Note 7, p.184", "promoted_to": "item21_financial_statements"},
+    {"fact": "S corp to C corp conversion January 1, 2019", "source": "Note 6, p.183", "promoted_to": "item1_franchisor"}
+  ],
+  "total_promotions": 12
+}

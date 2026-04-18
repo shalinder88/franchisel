@@ -1,0 +1,107 @@
+{
+  "depth_pass": "1_financial_note_depth",
+  "entities": ["Arby's Franchisor, LLC and Subsidiary", "Arby's Restaurant Group, Inc. and Subsidiaries"],
+  "franchisor_llc_notes": {
+    "note_1_organization": {
+      "spv_purpose": "Serve as franchisor of Arby's restaurants in US, Canada, Turkey, Qatar",
+      "securitization_closing_date": "November 13, 2015",
+      "permitted_activities": "Limited to owning franchise/development agreements, IP, and entering into securitization-related documents",
+      "license_to_arg": "99-year non-exclusive license to use Securitization IP for company-owned restaurants at 5% royalty on net sales",
+      "source_pages": [183, 184]
+    },
+    "note_2_accounting_policies": {
+      "revenue_recognition": "Royalties recognized as earned; initial franchise fees deferred and recognized over contractual term after restaurant opening; renewal fees recognized over term after license signed and fee paid",
+      "intangible_assets": "Definite-lived amortized straight-line (20 years for franchise/development agreements); indefinite-lived trademark not amortized, tested annually",
+      "impairment": "Annual test for indefinite-lived intangibles in Q4; no impairment in 2023, 2024, 2025",
+      "income_taxes": "Single-member LLC — not subject to federal/state income taxes; responsibility of ARG",
+      "fiscal_year": "52 or 53 weeks ending Sunday closest to December 31; 2023, 2024, 2025 all 52 weeks",
+      "source_pages": [184, 185, 186]
+    },
+    "note_3_intangibles": {
+      "trademark": {"value": 250000000, "type": "indefinite-lived", "impairment": "none"},
+      "franchise_agreements": {"gross": 7400000, "accumulated_amort": 5365000, "net": 2035000},
+      "development_agreements": {"gross": 1300000, "accumulated_amort": 943000, "net": 357000},
+      "annual_amortization": 435000,
+      "source_pages": [187]
+    },
+    "note_4_revenue_recognition": {
+      "contract_assets_2025": 32289000,
+      "contract_liabilities_2025": 10080000,
+      "revenue_recognized_2025": 2173000,
+      "incentive_program_note": "2025 twelve-month incentive program for strategic initiatives; eligible participants receive monthly payment credits",
+      "source_pages": [188]
+    },
+    "note_5_securitization": {
+      "notes_outstanding": 781688000,
+      "class": "2020 Class A-2 Senior Secured Fixed Rate Notes",
+      "issuance_date": "July 2020",
+      "anticipated_repayment": "July 2027",
+      "legal_maturity": "July 2050",
+      "variable_funding_capacity": 300000000,
+      "variable_funding_drawn": 0,
+      "letters_of_credit": 6900000,
+      "remaining_capacity": 293100000,
+      "legal_matters": "Various litigation and claims incidental to business; no material adverse effect expected",
+      "source_pages": [189]
+    },
+    "note_6_related_parties": {
+      "affiliate_royalty_revenues": 68542000,
+      "management_fee_structure": "Base $10.4M + variable component based on Retained Collections; 2% annual increases",
+      "management_fee_2025": 31347000,
+      "incentive_program_2025": "Twelve-month program with monthly payment credits for franchisees and affiliates",
+      "source_pages": [189, 190]
+    },
+    "note_7_subsequent_events": {
+      "evaluation_date": "March 19, 2026",
+      "items": "None to disclose or adjust",
+      "source_pages": [190]
+    }
+  },
+  "arg_financial_summary": {
+    "auditor": "KPMG LLP",
+    "opinion": "Unqualified",
+    "balance_sheet_2025": {
+      "total_assets": 1308104000,
+      "cash": 45226000,
+      "restricted_cash": 18185000,
+      "property_equipment_net": 372184000,
+      "goodwill": 18925000,
+      "intangible_assets_net": 265828000,
+      "operating_lease_assets": 435754000,
+      "total_current_liabilities": 217952000,
+      "long_term_debt_net": 859832000,
+      "long_term_operating_lease_liabilities": 420009000,
+      "deferred_tax_liabilities": 55793000,
+      "stockholders_deficit": -267919000,
+      "note_receivable_from_parent": -380000000
+    },
+    "income_statement_2025": {
+      "company_owned_sales": 1382160000,
+      "franchise_royalty_revenue": 112365000,
+      "franchise_advertising_contributions": 133136000,
+      "other_revenue": 26011000,
+      "total_revenue": 1653672000,
+      "company_owned_expenses": 1160855000,
+      "depreciation_amortization": 80457000,
+      "impairment_charges": 9009000,
+      "management_fee_to_affiliate": 122764000,
+      "operating_income": 94927000,
+      "interest_expense_net": 40773000,
+      "income_before_tax": 62577000,
+      "income_tax_expense": 10554000,
+      "net_income": 52023000
+    },
+    "key_observations": [
+      "Stockholders' deficit of -$267.9M (driven by $380M note receivable from parent)",
+      "ARG operating income declined from $221.2M (2023) to $94.9M (2025) — significant compression",
+      "Company-owned restaurant sales declined from $1.546B (2023) to $1.382B (2025) — reflecting refranchising and closures",
+      "Impairment charges of $9.0M in 2025 (up from $3.2M in 2024)",
+      "Management fee to affiliate surged from $66.4M (2024) to $122.8M (2025) — nearly doubled",
+      "Long-term debt $859.8M (securitization notes + other); maturity profile shows $8.25M in 2026, $773.4M in 2027",
+      "Operating lease assets $435.8M with liabilities $483.5M (current + long-term)",
+      "ARG is in compliance with all debt covenants as of December 28, 2025",
+      "Debt maturity concentration: $773.4M due in 2027 (anticipated repayment)"
+    ],
+    "source_pages": [191, 193, 195, 196, 197, 200, 209]
+  }
+}

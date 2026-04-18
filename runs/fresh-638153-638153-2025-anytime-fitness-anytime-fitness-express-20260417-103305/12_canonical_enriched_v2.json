@@ -1,0 +1,196 @@
+{
+  "_enrichment_version": "v2",
+  "_self_contained": true,
+  "_enrichment_layers": ["item1", "item3_litigation", "item6_fee_detail", "item7_total_investment", "item8_supplier_restrictions", "item9_obligations", "item10_financing", "item11_training", "item12_territory", "item17_termination", "item17_transfer", "item17_renewal", "item17_noncompete", "item17_dispute_resolution", "item19_chart_detail", "item20_yearly_activity", "item21_structural_facts", "item21_financial_structure_detail", "contract_burden_depth"],
+
+  "document_identity": {"filing_id": "638153", "entity": "Anytime Fitness Franchisor LLC", "state_of_formation": "Delaware", "issuance_date": "March 31, 2025, as amended April 24, 2025", "pdf_pages": 444, "fdd_to_pdf_offset": 7},
+  "brand_identity": {"brand_name": "Anytime Fitness", "business_type": "24-hour fitness centers", "principal_address": "111 Weir Drive, Woodbury, MN 55125", "recommended_size_sqft": "4,000 to 6,300"},
+
+  "item1": {
+    "formation_date": "October 25, 2021",
+    "franchising_since_predecessor": "October 2002",
+    "franchising_since_current_entity": "November 2021",
+    "securitization_date": "November 2021",
+    "otf_acquisition_date": "April 2, 2024",
+    "manager": "Anytime Fitness LLC (AFLLC) under management agreement",
+    "parent_ultimate": "Purpose Brands Holdings LLC",
+    "affiliate_revenue_from_franchisees_2024": {"provision": 28999676, "healthy_contributions": 8000646, "seb_distribution": 36780, "franchisor_direct": 32098134},
+    "franchisor_total_revenue": 133789368,
+    "source_pages": [8, 9, 10, 11, 33]
+  },
+
+  "item2_leadership_roster": [
+    {"name": "Thomas Leverton", "role": "CEO", "tenure": "Since Nov 2024", "source_pages": [11, 12]},
+    {"name": "Charles Runyon", "role": "Board/Founder", "tenure": "Board since Oct 2021", "source_pages": [12]},
+    {"name": "Dave Mortensen", "role": "Board/Founder", "tenure": "Board since Oct 2021", "source_pages": [12]},
+    {"name": "Stacy Anderson", "role": "Global Brand President", "tenure": "Since Jan 2024", "source_pages": [12]},
+    {"name": "Benjamin Selden", "role": "CFO (Interim)", "tenure": "Since Apr 2025", "source_pages": [12]},
+    {"name": "James Goniea", "role": "GC & Secretary", "tenure": "Since Oct 2021", "source_pages": [12, 13]},
+    {"name": "Matt Stanton", "role": "CDO", "tenure": "Since Jan 2025", "source_pages": [13]},
+    {"name": "Ameen Kazerouni", "role": "CTO", "tenure": "Since Jul 2024", "source_pages": [13]},
+    {"name": "Jennifer Yiangou", "role": "SVP Franchise Admin", "tenure": "Since Jul 2024", "source_pages": [13]},
+    {"name": "Sander van den Born", "role": "SVP Intl Dev", "tenure": "Since Jul 2024", "source_pages": [13]},
+    {"name": "Nicholas Herrild", "role": "Brand President", "tenure": "Since Oct 2024", "source_pages": [13]},
+    {"name": "Mitchell Keyes", "role": "VP Operations", "tenure": "Since Jan 2023", "source_pages": [13]}
+  ],
+
+  "item3_litigation": {"total_matters": 5, "us_franchise_matters": 0, "affiliate_matters": 5, "material_pending": false, "source_pages": [14, 15]},
+  "item4_bankruptcy": {"entity_bankruptcies": 0, "associated_person_disclosures": 2, "source_pages": [15]},
+
+  "item5_initial_fees": {"standard_franchise_fee": 42500, "range": [22500, 42500], "technology_package": {"low": 30036, "high": 36472}, "grand_opening": {"tier3": 11000, "tier2": 16000, "tier1": 23000}, "source_pages": [15, 16, 17]},
+
+  "item6_fee_detail": {
+    "royalty": {"type": "flat_monthly", "amount": 820, "can_switch_to_pct": true, "max_pct": 0.08, "switch_notice_days": 30, "cpi_adjustment": true},
+    "ad_fund": {"amount": 600, "cap": "Greater of $600 or 2% of Gross Revenue"},
+    "tech_fee": {"amount": 799, "escalator": "10% annually compounded cumulative"},
+    "local_marketing": {"tier1": 1000, "tier2": 800, "tier3": 600},
+    "renewal_fee": 7500,
+    "transfer_fee_open": 9999,
+    "transfer_fee_pre_open": 25000,
+    "club_enhancement": 1000,
+    "conference_fee": {"range": [499, 749], "max": 1500, "frequency": "biennial"},
+    "default_fee": {"max_per_month": 1000},
+    "interest_rate": "Lesser of 1.5%/month or max legal rate",
+    "source_pages": [18, 19, 20, 21, 22, 23, 24, 25]
+  },
+
+  "item7_total_investment": {"low": 458826, "high": 907607, "center_size_sqft": "4,000-6,300", "avg_base_rent_sqft": 21.31, "avg_cam_sqft": 5.47, "avg_ti_sqft": 21, "source_pages": [26, 27, 28, 29]},
+
+  "item8_supplier_restrictions": {
+    "pre_opening_pct": "90%+",
+    "ongoing_pct": "~70%",
+    "mandatory_vendors": ["billing processor", "ProVision (tech)", "Healthy Contributions", "grand opening", "uniforms", "surety bond", "architect", "CMS", "Coaching Suite"],
+    "vendor_rebates": "up to 15%",
+    "source_pages": [29, 30, 31, 32]
+  },
+
+  "item9_obligations": {"total_listed": 24, "cross_default": true, "source_pages": [33, 34]},
+
+  "item10_financing": {
+    "franchisor_direct": false,
+    "arrangements": [
+      {"lender": "Geneva Capital", "type": "equipment lease", "max": 200000, "term": "12-60 months"},
+      {"lender": "Guidant Financial", "type": "401k/SBA/unsecured"},
+      {"lender": "RV Now", "type": "reinvention loan", "max": 40000, "apr": "8.99-11.99%"},
+      {"lender": "Mitsubishi HC", "type": "equipment financing", "max": 600000, "rate": "7.50-10.50%"}
+    ],
+    "source_pages": [34, 35, 36, 37]
+  },
+
+  "item11_training": {"initial_hours": 63, "classroom": 39, "otj": 24, "location": "Virtual or Woodbury, MN", "fee": 0, "source_pages": [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48]},
+
+  "item12_territory": {
+    "exclusive": false,
+    "protected": true,
+    "max_radius_miles": 3,
+    "max_population": 30000,
+    "affiliate_brands_can_operate_in_territory": true,
+    "franchisee_internet_sales_prohibited": true,
+    "franchisor_digital_rights_unrestricted": true,
+    "territory_modifiable_on_renewal": true,
+    "source_pages": [49, 50, 51, 52]
+  },
+
+  "item13_trademarks": {"principal_mark": "ANYTIME FITNESS", "reg_no": "2,814,114", "pending_disputes": false, "source_pages": [53]},
+  "item14_patents": {"material_patents": false, "ai_prohibition": true, "source_pages": [54]},
+  "item15_participation": {"personal_supervision_required": false, "all_owners_guaranty": true, "spousal_guaranty": true, "source_pages": [54, 55]},
+  "item16_product_restrictions": {"approved_only": true, "internet_prohibited": true, "source_pages": [55]},
+
+  "item17_renewal": {"initial_term": 6, "renewal_term": 5, "renewal_periods": 1, "new_agreement_required": true, "materially_different_terms_possible": true, "general_release_required": true, "fee": 7500, "source_pages": [56]},
+  "item17_termination": {"by_franchisee": "Material breach + 30 day cure + 10 day notice", "cross_default": true, "curable_cure_days": 30, "pattern_default": "3 material breaches in 12 months", "source_pages": [56, 57]},
+  "item17_transfer": {"fee_open": 9999, "fee_pre_open": 25000, "rofr": true, "post_termination_purchase": "book value", "source_pages": [57, 58]},
+  "item17_noncompete": {"during_term": "Any fitness business, anywhere", "post_term_years": 2, "post_term_radius": "Territory + 10 mi (5 mi metro >50K)", "includes_creditor_landlord": true, "source_pages": [58]},
+  "item17_dispute_resolution": {"mediation": true, "arbitration_location": "Minneapolis, MN", "litigation_venue": "District of Minnesota or Ramsey County", "governing_law": "Minnesota", "source_pages": [59]},
+
+  "item18_public_figures": {"used": false, "source_pages": [59]},
+
+  "item19_chart_detail": {
+    "fpr_provided": true,
+    "sections": 3,
+    "section1": {"population": 1656, "avg_revenue": 442686, "median_revenue": 394973, "q4_avg": 742106, "q1_avg": 231962, "avg_members": 677, "pct_above_avg": 39},
+    "section2": {"population": 297, "avg_revenue": 531750, "median_revenue": 484987, "avg_members": 731},
+    "section3": {"population": 11, "avg_revenue": 529223, "avg_ebitda": 144002, "ebitda_margin": 27.21, "bottom_third_ebitda": 65101},
+    "cohort_comparability_issue": false,
+    "source_pages": [59, 60, 61, 62, 63, 64, 65]
+  },
+
+  "item20_yearly_activity": {
+    "2022": {"start": 2347, "end": 2330, "opened": 49, "terminated": 45, "non_renewed": 20, "transfers": 204},
+    "2023": {"start": 2330, "end": 2310, "opened": 47, "terminated": 42, "non_renewed": 25, "transfers": 243},
+    "2024": {"start": 2310, "end": 2301, "opened": 46, "terminated": 33, "non_renewed": 21, "transfers": 207},
+    "gag_clause_flag": true,
+    "gag_clause_quote": "During the last 3 years current and former franchisees have signed provisions restricting their ability to speak openly about their experience with us or our predecessor.",
+    "gag_clause_source_pages": [74],
+    "projected_openings": 48,
+    "fas_signed_not_opened": 179,
+    "source_pages": [66, 67, 68, 69, 70, 71, 72, 73, 74]
+  },
+
+  "item21_structural_facts": {
+    "auditor": "PricewaterhouseCoopers LLP",
+    "opinion": "unqualified",
+    "going_concern": false,
+    "guarantor_total_assets": 5000000,
+    "guarantor_special_risk": true,
+    "consolidated_total_assets": 111119000,
+    "consolidated_total_liabilities": 1060128000,
+    "consolidated_deficit": -949044000,
+    "consolidated_revenue": 317009000,
+    "consolidated_net_income": 113091000,
+    "consolidated_ocf": 126828000,
+    "securitization_debt": 955589000,
+    "deferred_revenue": 77151000,
+    "interest_expense": 53325000,
+    "source_pages": [164, 165, 168, 170, 171, 173, 177, 180, 182, 183, 185]
+  },
+
+  "item21_financial_structure_detail": {
+    "revenue_components": {
+      "franchise_royalties": 145245000,
+      "franchise_fees": 20063000,
+      "sales": 78248000,
+      "advertising_fund": 16379000,
+      "vendor_rebates": 55950000,
+      "other": 1124000
+    },
+    "gross_margin_pct": 86.3,
+    "operating_margin_pct": 52.8,
+    "net_margin_pct": 35.7,
+    "debt_to_assets_ratio": 9.5,
+    "cash_interest_coverage": 2.4,
+    "securitization_series": ["2021-1", "2024-1"],
+    "2024_refinancing_new_debt": 524000000,
+    "2024_distributions": 599060000,
+    "source_pages": [182, 183, 185, 186]
+  },
+
+  "contract_burden_depth": {
+    "term": {"initial": "6 years", "renewal": "5 years (1 period)", "materially_different_terms_at_renewal": true},
+    "fee_escalation_risks": ["8% royalty switch on 30 days notice", "10% annual tech fee escalator", "Ad fund can increase to 2% of GR"],
+    "noncompete_breadth": "Broadest possible during term (anywhere, any fitness business); post-term 2 years within territory + 10 mi",
+    "cross_default": "Default under any FA, ADA, or affiliate agreement triggers termination",
+    "supplier_lock_in": "90%+ pre-opening, 70% ongoing from mandatory/designated vendors",
+    "digital_asymmetry": "Franchisee prohibited from internet/app sales; franchisor unrestricted in territory",
+    "guaranty_scope": "Personal guaranty from all owners and spouses; unlimited"
+  },
+
+  "special_risks": [
+    {"risk": "out_of_state_dispute", "source_pages": [4]},
+    {"risk": "spousal_liability", "source_pages": [4]},
+    {"risk": "mandatory_minimum", "source_pages": [4]},
+    {"risk": "supplier_control", "source_pages": [4]},
+    {"risk": "financial_condition", "source_pages": [4]},
+    {"risk": "unopened_franchises", "source_pages": [4]}
+  ],
+  "unresolveds": [
+    {"id": "UR-1", "description": "Royalty switch from $820/month to up to 8% GR on 30 days' notice", "severity": "high", "source": "Item 6 Note 4"},
+    {"id": "UR-2", "description": "Construction Management mandatory transition", "severity": "medium", "source": "Item 8"},
+    {"id": "UR-3", "description": "Provider/Nutrition programs may become mandatory", "severity": "medium", "source": "Items 11, 16"},
+    {"id": "UR-4", "description": "Digital content display cost unspecified", "severity": "low", "source": "Item 8"},
+    {"id": "UR-5", "description": "CMS vendor switching risk", "severity": "medium", "source": "Item 11"},
+    {"id": "UR-6", "description": "Guarantor $5M shell with explicit special risk flag", "severity": "high", "source": "Special Risks, Item 21"}
+  ],
+  "contradictions": [
+    {"id": "C-1", "description": "Revenue $133.8M (franchisor) vs $317M (AFLLC consolidated) — different entity scopes", "items_involved": ["Item 1/8", "Item 21"], "resolution_status": "explained"}
+  ]
+}

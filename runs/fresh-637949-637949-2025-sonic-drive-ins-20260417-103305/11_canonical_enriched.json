@@ -1,0 +1,116 @@
+{
+  "_enrichment_version": "v1",
+  "_self_contained": true,
+  "_note": "This file contains ALL fields from 09_final_canonical.json PLUS enrichment layers. It is self-contained and does not reference any other file.",
+
+  "document_identity": {"brand": "Sonic Drive-Ins", "franchisor_legal_name": "Sonic Franchising LLC", "issuance_date": "2025-03-27", "filing_id": "637949", "pdf_pages": 368},
+
+  "item19_chart_detail": {
+    "overall": {"population": 3086, "auv": 1587024, "median": 1500713, "highest": 4838846, "lowest": 282129, "pct_above_avg": 43},
+    "quartiles": [
+      {"q": 1, "n": 772, "auv": 935705, "median": 969886, "high": 1146501, "low": 282129, "pct_above": 57},
+      {"q": 2, "n": 772, "auv": 1320788, "median": 1320171, "high": 1501675, "low": 1146519, "pct_above": 50},
+      {"q": 3, "n": 771, "auv": 1693845, "median": 1690128, "high": 1919295, "low": 1502041, "pct_above": 49},
+      {"q": 4, "n": 771, "auv": 2398950, "median": 2270659, "high": 4838846, "low": 1919501, "pct_above": 38}
+    ],
+    "by_region": [
+      {"region": "Northeast", "n": 67, "auv": 1561042, "median": 1294624},
+      {"region": "Midwest", "n": 474, "auv": 1621362, "median": 1500428},
+      {"region": "South", "n": 2152, "auv": 1559050, "median": 1481406},
+      {"region": "West", "n": 393, "auv": 1703222, "median": 1606376}
+    ],
+    "by_venue": [
+      {"venue": "Free-standing", "n": 3015, "auv": 1597296, "median": 1510818},
+      {"venue": "Gas/C-Store", "n": 67, "auv": 1121215, "median": 1154982},
+      {"venue": "Other Traditional", "n": 4, "auv": 1647515, "median": 1498188}
+    ],
+    "cost_data_disclosed": false,
+    "ebitda_disclosed": false,
+    "average_restaurant_age": 27,
+    "drive_thru_equipped": 2403,
+    "no_drive_thru": 683
+  },
+
+  "item20_yearly_activity": {
+    "franchised": {
+      "2022": {"start": 3231, "opened": 39, "terminated": 10, "non_renewed": 0, "reacquired": 0, "ceased_ops": 40, "end": 3220},
+      "2023": {"start": 3220, "opened": 23, "terminated": 2, "non_renewed": 0, "reacquired": 0, "ceased_ops": 47, "end": 3194},
+      "2024": {"start": 3194, "opened": 30, "terminated": 12, "non_renewed": 0, "reacquired": 0, "ceased_ops": 68, "end": 3144}
+    },
+    "company": {
+      "2022": {"start": 321, "opened": 5, "reacquired": 0, "closed": 0, "sold": 0, "end": 326},
+      "2023": {"start": 326, "opened": 4, "reacquired": 0, "closed": 3, "sold": 0, "end": 327},
+      "2024": {"start": 327, "opened": 1, "reacquired": 0, "closed": 11, "sold": 0, "end": 317}
+    },
+    "transfers": {"2022": 132, "2023": 75, "2024": 334},
+    "projected_openings": {"franchise": 23, "company": 0, "fas_signed_not_opened": 20},
+    "gag_clause_flag": true,
+    "terminated_das": 14
+  },
+
+  "exhibit_structure": {
+    "A": {"name": "State Administrators", "pages": [85, 87]},
+    "B-1": {"name": "Number 25 Franchise Agreement", "pages": [88, 140], "type": "franchise_agreement"},
+    "B-2": {"name": "Non-Traditional Rider", "pages": [141, 145], "type": "rider"},
+    "B-3": {"name": "Incentives Addendum", "pages": [146, 160], "type": "incentive"},
+    "B-4": {"name": "Multi-Brand Addendum", "pages": [161, 165], "type": "addendum"},
+    "C-1": {"name": "Development Agreement", "pages": [166, 180], "type": "development_agreement"},
+    "C-2": {"name": "DA Incentive Amendment", "pages": [181, 184], "type": "incentive"},
+    "D": {"name": "Confidentiality Agreement", "pages": [185, 186], "type": "ancillary"},
+    "E-1": {"name": "Franchisees and Sonic Restaurants", "pages": [187, 296], "type": "franchisee_list"},
+    "E-2": {"name": "Franchisees Not Yet Opened", "pages": [297, 297], "type": "franchisee_list"},
+    "E-3": {"name": "Developers", "pages": [298, 305], "type": "developer_list"},
+    "E-4": {"name": "Former Franchisees/Developers", "pages": [306, 309], "type": "former_list"},
+    "F": {"name": "Financial Statements", "pages": [310, 340], "type": "financial_statements"},
+    "G": {"name": "State Specific Addenda", "pages": [341, 362], "type": "state_addenda"},
+    "H": {"name": "General Release", "pages": [359, 362], "type": "ancillary"},
+    "I": {"name": "Option to Assume Lease", "pages": [363, 364], "type": "ancillary"},
+    "J": {"name": "Receipts", "pages": [365, 368], "type": "administrative"}
+  },
+
+  "state_addenda_overrides": {
+    "california": ["Fast Food Act compliance (franchisee responsibility)", "No waiver of state franchise law claims"],
+    "hawaii": ["Registration notice"],
+    "maryland": ["Release excludes MD franchise law claims", "May bring action in MD", "3-year SOL", "Insolvency termination may not be enforceable"],
+    "minnesota": ["Trademark indemnification required", "90-day termination notice / 60-day cure", "180-day non-renewal notice", "No out-of-state litigation", "No jury trial waiver", "Release excludes MN claims"],
+    "north_dakota": ["Release excludes ND claims", "Noncompete generally unenforceable", "May bring action in ND", "ND law applies"],
+    "washington": ["No-poach AOD — removed employee solicitation restrictions"]
+  },
+
+  "item1_system_size": {"franchised": 3144, "company_owned": 317, "total": 3461},
+  "item2_leadership_count": 26,
+  "item3_material_actions": 3,
+  "item4_bankruptcy": false,
+  "item5_initial_franchise_fee": 15000,
+  "item6_royalty_rate": "5%",
+  "item6_sbf_rate": "0.90%",
+  "item6_smf_rate": "1.625%–5%",
+  "item6_btf_rate": "0.25%",
+  "item7_investment_traditional_low": 1676000,
+  "item7_investment_traditional_high": 3140900,
+  "item10_financing_offered": false,
+  "item12_exclusive_territory": false,
+  "item17_term_years": 10,
+  "item17_renewal_terms": "2×10 years",
+  "item17_materially_different_renewal": true,
+  "item17_noncompete_months": 18,
+  "item17_noncompete_miles": 3,
+  "item17_dispute_venue": "Atlanta, GA",
+  "item17_governing_law": "Georgia",
+  "item18_public_figures": false,
+  "item19_auv": 1587024,
+  "item20_gag_clause": true,
+  "item21_auditor": "KPMG LLP",
+  "item21_opinion": "Unqualified",
+  "item21_securitization_debt": 1417313,
+
+  "special_risks": [{"risk": "Out-of-state dispute resolution in Atlanta, GA"}],
+  "unresolveds": [
+    {"id": "U1", "description": "BTF continuation post-3/2026 requires 67% franchisee vote", "severity": "medium"},
+    {"id": "U2", "description": "$16.7M BTF rebates redirected to SBF", "severity": "low"},
+    {"id": "U3", "description": "Franchisor guarantees $1.4B+ securitization notes", "severity": "high"},
+    {"id": "U4", "description": "Georgia franchise collapse: 77→52 in 2024", "severity": "medium"},
+    {"id": "U5", "description": "Transfer spike: 334 in 2024 vs 75 in 2023", "severity": "medium"}
+  ],
+  "contradictions": [{"id": "C1", "status": "resolved", "description": "Item 19/20 outlet count difference explained by exclusions"}]
+}

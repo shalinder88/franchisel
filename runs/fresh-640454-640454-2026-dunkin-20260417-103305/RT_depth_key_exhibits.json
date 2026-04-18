@@ -1,0 +1,41 @@
+{
+  "depth_block": "A2_key_exhibit_clause_walk",
+  "exhibits_assessed": [
+    {
+      "exhibit": "C-1 Dunkin' Franchise Agreement",
+      "page_range": [165, 196],
+      "clause_walked": false,
+      "deferred": true,
+      "reason": "32-page agreement; Item 17 chart and A2 contract burden depth pass provide operative substance for key provisions (term, fees, termination, transfer, noncompete, dispute resolution, insurance, indemnification). Full clause-by-clause walk deferred.",
+      "substance_recovered_elsewhere": ["Item 17 chart covers all major provisions", "Item 6 covers all fee details", "Item 9 maps FA sections to disclosure items", "A2 contract burden depth pass extracts key terms"],
+      "remaining_missing": ["Liquidated damages formula (if any)", "Specific personal guaranty scope language", "Force majeure provisions", "Detailed cross-default mechanics", "Specific representations and warranties"]
+    },
+    {
+      "exhibit": "D-1 Dunkin' Development Agreement",
+      "page_range": [260, 282],
+      "clause_walked": false,
+      "deferred": true,
+      "reason": "23-page DA; key terms in Items 9, 12, 17. Development schedule mechanics and territorial protection extracted from body.",
+      "substance_recovered_elsewhere": ["Item 12 territory description", "Item 17 DA provisions", "Item 9 DA section references"],
+      "remaining_missing": ["Specific development schedule enforcement mechanics", "Performance benchmarks"]
+    },
+    {
+      "exhibit": "E State-Specific Appendices",
+      "page_range": [323, 352],
+      "clause_walked": true,
+      "deferred": false,
+      "clauses_extracted": 21,
+      "states_covered": ["California", "Hawaii", "Maryland", "Michigan", "Minnesota", "North Dakota"],
+      "general_provision_states": 14
+    },
+    {
+      "exhibit": "I General Release",
+      "page_range": [662, 666],
+      "clause_walked": false,
+      "deferred": true,
+      "reason": "Release form; scope established from Item 17 and state addenda overrides.",
+      "substance_recovered_elsewhere": ["Item 17(c) and (m) describe release requirements", "State addenda document release exclusions for MD, MN, ND"],
+      "remaining_missing": ["Exact release language and scope of claims released"]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "depth_pass": "A2 Depth Pass 1 — Financial Note Depth",
+  "entity": "H&R Block, Inc. (parent, consolidated)",
+  "note_families": [
+    {
+      "note": "Note 1 — Summary of Significant Accounting Policies",
+      "source_pages": [103, 104, 105, 106, 107],
+      "key_policies": {
+        "nature_of_operations": "Assisted and DIY tax preparation through multiple channels (in-person, online, mobile, virtual, desktop). Also small business solutions via Wave. Operations in US, Canada, Australia.",
+        "consolidation": "Consolidated financial statements include all subsidiaries; intercompany eliminated",
+        "discontinued_operations": "Sand Canyon Corporation (formerly Option One Mortgage), exited mortgage business FY2008",
+        "segment_reporting": "Single reportable segment",
+        "cash_equivalents": "Highly liquid instruments maturing within 3 months",
+        "restricted_cash": "Cash held by captive insurance subsidiary for claims",
+        "receivables": "Trade receivables from tax clients; allowance based on pooled evaluation; charge-off typically in December",
+        "financing_receivables": "EA participations, franchise loans, Instant Refund",
+        "property_depreciation": {
+          "method": "Straight-line",
+          "buildings": "15-40 years",
+          "computers_equipment": "2-5 years",
+          "purchased_software": "3-5 years",
+          "leasehold_improvements": "up to 8 years"
+        },
+        "goodwill": "Not amortized; tested annually as of February 1; impairment if fair value < carrying value",
+        "intangible_assets": "Finite lives, straight-line amortization, reviewed for impairment",
+        "leases": {
+          "type": "Operating leases",
+          "portfolio": "Primarily retail office space in US, Canada, Australia",
+          "typical_term": "May 1 to April 30, generally 2-5 years",
+          "rou_measurement": "Discounted future minimum lease payments",
+          "renewal_options": "Generally not included in term",
+          "discount_rate": "Incremental borrowing rate based on term and geography",
+          "expense_recognition": "Straight-line"
+        },
+        "revenue_recognition": "Recognized when performance obligations satisfied by transfer of service/product",
+        "marketing_advertising": {
+          "FY2025": 285800000,
+          "FY2024": 277700000,
+          "FY2023": 286300000,
+          "method": "Expensed as used"
+        },
+        "employee_benefits": {
+          "type": "401(k) defined contribution",
+          "employer_contributions_FY2025": 28900000,
+          "severance_expense_FY2025": 8400000
+        }
+      }
+    },
+    {
+      "note": "Note 2 — Revenue Recognition",
+      "source_pages": [107, 108],
+      "revenue_disaggregation_FY2025": {
+        "us_assisted_tax_prep": 2413229,
+        "us_royalties": 192877,
+        "us_diy_tax_prep": 383738,
+        "refund_transfers": 137526,
+        "pom": 87326,
+        "tax_identity_shield": 29920,
+        "emerald_card_spruce": 72888,
+        "ea_interest_fee_income": 28958,
+        "international": 246993,
+        "wave": 109222,
+        "other": 58318,
+        "total": 3760995
+      },
+      "pom_deferred_revenue": {
+        "beginning_FY2025": 156610,
+        "deferred_FY2025": 94888,
+        "recognized_FY2025": 102196,
+        "ending_FY2025": 149302,
+        "expected_next_12_months": 87400,
+        "remaining_over_5_years": true,
+        "plan_effective_life": "life of tax return (up to 6 years)"
+      },
+      "tis_deferred_revenue_FY2025": 22600,
+      "amounts_in": "thousands"
+    },
+    {
+      "note": "Note 3 — Earnings Per Share",
+      "source_pages": [108],
+      "method": "Two-class method",
+      "basic_weighted_shares_FY2025": 135629,
+      "diluted_weighted_shares_FY2025": 137340,
+      "antidilutive_shares_FY2025": 300
+    },
+    {
+      "note": "Note 4 — Receivables",
+      "source_pages": [108, 109, 110, 111],
+      "franchise_loans": {
+        "short_term_FY2025": 7386,
+        "long_term_FY2025": 16402,
+        "total_FY2025": 23788,
+        "past_due_90_days_FY2025": 3100,
+        "past_due_90_days_FY2024": 1100,
+        "collateral": "Franchise territory"
+      },
+      "royalties_receivable_FY2025": 4414,
+      "ea_receivables_FY2025": {
+        "gross_balance": 56378,
+        "non_accrual": 56378,
+        "allowance": 19663,
+        "net": 36715
+      },
+      "allowance_for_credit_losses": {
+        "total_FY2025": 64819,
+        "ea_portion": 19663,
+        "other_portion": 45156,
+        "provision_FY2025": 65191
+      }
+    },
+    {
+      "note": "Note 5 — Property and Equipment",
+      "source_pages": [111],
+      "net_pp_e_FY2025": 135068,
+      "components": {
+        "buildings": 12919,
+        "computers_equipment": 54853,
+        "leasehold_improvements": 66758,
+        "purchased_software": 151,
+        "land_other": 387
+      },
+      "depreciation_FY2025": 69100,
+      "foreign_pp_e": 20900
+    },
+    {
+      "note": "Note 6 — Goodwill and Intangible Assets",
+      "source_pages": [111, 112, 113],
+      "goodwill": {
+        "gross_FY2025": 940350,
+        "accumulated_impairment": 138297,
+        "net_FY2025": 802053,
+        "acquisitions_FY2025": 15579,
+        "impairments_FY2025": 0
+      },
+      "intangible_assets_FY2025": {
+        "reacquired_franchise_rights": {"gross": 415700, "net": 172370},
+        "customer_relationships": {"gross": 354107, "net": 67040},
+        "internally_developed_software": {"gross": 119959, "net": 2355},
+        "noncompete_agreements": {"gross": 23070, "net": 2882},
+        "purchased_technology": {"gross": 68100, "net": 12445},
+        "trade_name": {"gross": 5800, "net": 2320},
+        "total_net": 259412
+      },
+      "amortization_FY2025": 47700,
+      "business_acquisitions_FY2025": 35500,
+      "acquired_assets_FY2025": {
+        "customer_relationships": {"amount": 27712, "life_years": 5},
+        "reacquired_franchise_rights": {"amount": 11738, "life_years": 6},
+        "internally_developed_software": {"amount": 2305, "life_years": 3},
+        "noncompete_agreements": {"amount": 1259, "life_years": 5}
+      },
+      "key_observation": "Reacquired franchise rights is the single largest intangible asset ($172M net), confirming the franchise reacquisition strategy. $11.7M added in FY2025."
+    },
+    {
+      "note": "Note 7 — Long-Term Debt",
+      "source_pages": [113, 114],
+      "senior_notes": [
+        {"rate": 5.250, "maturity": "October 2025", "principal": 350000},
+        {"rate": 2.500, "maturity": "July 2028", "principal": 500000},
+        {"rate": 3.875, "maturity": "August 2030", "principal": 650000}
+      ],
+      "total_debt_FY2025": 1493198,
+      "current_portion": 349893,
+      "long_term_portion": 1143305,
+      "fair_value": 1437000,
+      "cloc": {
+        "facility": 1500000,
+        "outstanding_FY2025": 0,
+        "maturity": "July 11, 2030 (extended)",
+        "covenants": {
+          "debt_to_ebitda_max": "3.50 (Q1-Q3), 4.50 (Q4)",
+          "interest_coverage_min": 2.50
+        },
+        "in_compliance": true
+      },
+      "aggregate_maturities": {
+        "FY2026": 350000,
+        "FY2029": 500000,
+        "FY2031": 650000
+      }
+    },
+    {
+      "note": "Note 8 — Stock-Based Compensation",
+      "source_pages": [114, 115],
+      "expense_FY2025": 32503,
+      "tax_benefit_FY2025": 11621,
+      "shares_reserved": 8400000,
+      "vesting": "Typically 3-year pro-rata (RSUs), 3-year cliff (performance units)",
+      "performance_range": "0-200% of granted units"
+    }
+  ],
+  "amounts_in": "thousands unless noted"
+}

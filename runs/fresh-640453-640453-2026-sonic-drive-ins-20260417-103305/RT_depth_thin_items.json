@@ -1,0 +1,116 @@
+{
+  "retry_id": "R3",
+  "target": "Items 9-16 Operative Burdens",
+  "items": {
+    "item9_obligations": {
+      "obligations": [
+        {"category": "site_selection", "franchisee_must": "Locate and propose Site within 90 days of signing FA", "franchisor_controls": "Acceptance/rejection of proposed site", "references": "FA 3.01, 3.02"},
+        {"category": "pre_opening", "franchisee_must": "Purchase approved equipment, develop to specs, sign Option to Assume Lease with landlord", "franchisor_controls": "Plans, specs, approved suppliers", "references": "FA 3.03-3.05"},
+        {"category": "training", "franchisee_must": "Complete Sonic Training Program (Principal + 2), GM Leadership Class, pay travel/living", "franchisor_controls": "Training curriculum, certification standards", "references": "FA 6.01-6.03"},
+        {"category": "fees", "franchisee_must": "Pay royalty 5%, SBF 0.90%, cooperative/SMF 3.25-5%, Inspire Payment Services $365-$565/mo", "franchisor_controls": "Fee rates, market classification, incentive eligibility", "references": "FA 5.02, 7, 11-12"},
+        {"category": "operations", "franchisee_must": "Comply with Ops Manual (733 pages), maintain standards, participate in mandatory programs", "franchisor_controls": "Standards, specifications, supplier approval, menu items, pricing policies", "references": "FA 8.01-8.04"},
+        {"category": "reports", "franchisee_must": "Submit Gross Sales reports, maintain daily records, provide development cost reports within 120 days", "franchisor_controls": "Report formats, unlimited POS data access", "references": "FA 11"},
+        {"category": "insurance", "franchisee_must": "Acquire and maintain required insurance, name franchisor as additional insured", "franchisor_controls": "Coverage types, amounts, acceptable carriers", "references": "FA 13"},
+        {"category": "transfer", "franchisee_must": "Obtain approval, meet all conditions, pay transfer fee, sign release", "franchisor_controls": "All transfer approval, ROFR, option to purchase", "references": "FA 14"},
+        {"category": "noncompete", "franchisee_must": "No competing business during term; 18 months post-term within 3 miles", "franchisor_controls": "Definition of competing business", "references": "FA 17"},
+        {"category": "guaranty", "franchisee_must": "10%+ owners sign Personal Guaranty", "franchisor_controls": "Guaranty form", "references": "FA 2.02"}
+      ],
+      "source_pages": [45, 46]
+    },
+    "item10_financing": {
+      "obligations": [],
+      "restrictions": [],
+      "rights": [],
+      "triggers": [],
+      "summary": "No direct or indirect financing. No guarantees.",
+      "source_pages": [46]
+    },
+    "item11_training": {
+      "obligations": [
+        {"who": "Principal + 2 others", "what": "Sonic Training Program (5 weeks, 164-194 hours)", "when": "Before opening", "cost": "First 3 included; $5,000/person 4th+"},
+        {"who": "At least 1 GM", "what": "GM Leadership Class (24 hours)", "when": "60 days before opening or 6 months after hire", "cost": "$250/person"},
+        {"who": "All Management Personnel", "what": "ServSafe certification", "when": "Upon opening; new hires within 120 days", "cost": "Third-party fees"},
+        {"who": "All employees", "what": "Sonic Safe Training Program", "when": "First stage of training", "cost": "Included"}
+      ],
+      "restrictions": [
+        "Cannot deviate from Sonic Plans and Specifications without prior written approval",
+        "Cannot use non-approved technology/POS systems",
+        "Cannot develop social media presence without authorization"
+      ],
+      "source_pages": [46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56]
+    },
+    "item12_territory": {
+      "obligations": [
+        "Must operate from approved Site only",
+        "Must relocate within Protected Area if lease expires or restaurant destroyed",
+        "Must pay all relocation costs and de-identify old site"
+      ],
+      "restrictions": [
+        "Cannot use internet, catalog, telemarketing, or direct marketing for sales",
+        "No right to acquire additional franchises in Protected Area or contiguous areas",
+        "Protected Area may shrink based on census data"
+      ],
+      "rights": [
+        "May solicit/accept orders from customers outside Protected Area",
+        "Protected Area exclusion (subject to carve-outs) for new Sonic restaurants"
+      ],
+      "triggers": [
+        "Population census update → may reduce Protected Area",
+        "Relocation → may modify territorial rights"
+      ],
+      "source_pages": [57, 58, 59, 60]
+    },
+    "item13_trademarks": {
+      "obligations": [
+        "Use Proprietary Marks only as periodically designated and authorized",
+        "Identify as independent owner with any use of marks",
+        "Notify franchisor of any infringement or challenge",
+        "Sign documents for trademark protection proceedings",
+        "Comply with substitute marks at franchisee expense"
+      ],
+      "restrictions": [
+        "Marks only for restaurant operation, not other business",
+        "No right under DA to use marks (only under FA)"
+      ],
+      "source_pages": [61, 62, 63]
+    },
+    "item14_patents": {
+      "obligations": [
+        "Notify franchisor of infringement/challenges",
+        "Disclose all Innovations promptly",
+        "All Innovations are work-for-hire belonging to franchisor",
+        "Sign assignment documents as requested",
+        "May not use any Innovation without prior approval"
+      ],
+      "restrictions": [
+        "Cannot use any Innovation in operations without approval",
+        "Must modify or discontinue using patents/copyrights as directed"
+      ],
+      "source_pages": [64, 65]
+    },
+    "item15_participation": {
+      "obligations": [
+        "Principal must personally participate and devote best efforts",
+        "At least one trained individual working full-time at all times",
+        "All Management Personnel must have ServSafe within 120 days",
+        "10%+ owners must sign Personal Guaranty",
+        "NDA clauses required for employees/owners with Confidential Information access"
+      ],
+      "restrictions": [],
+      "source_pages": [65, 66]
+    },
+    "item16_product_restrictions": {
+      "obligations": [
+        "Serve all required menu items",
+        "Display and offer only approved menu",
+        "Comply with pricing policies (max, min, or other) to maximum extent law allows",
+        "Participate in mandatory promotions, loyalty programs, gift card programs"
+      ],
+      "restrictions": [
+        "No items not listed in Ops Manual or not otherwise approved",
+        "Franchisor has unlimited right to change authorized products/services"
+      ],
+      "source_pages": [66]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "depth_pass": "A2_DP3_promotion_audit",
+  "promoted_facts": [
+    {"fact": "Management fee formula: $20M fixed + $18K/franchised club + $40K/corporate club", "source": "Item 21 Note 1 / reader report Section H", "promoted_to": "item21_note_families in canonical", "status": "already_present"},
+    {"fact": "Securitized debt ~$2.25B with 2024 refinancing at 5.77-6.24%", "source": "Item 21 Note 2 / reader report Section H", "promoted_to": "item21_financial_statements", "status": "already_present"},
+    {"fact": "Customer relationships fully amortized (final year 2024)", "source": "Item 21 Note 3", "promoted_to": "item21_note_families", "status": "already_present"},
+    {"fact": "Former interim CEO of PF Inc. has financial interest in franchisee", "source": "Item 21 Note 5 / reader report Section H", "promoted_to": "item21_financial_statements", "status": "needs_promotion"},
+    {"fact": "Sublease right: franchisor can require 10% of franchise sqft at FMV", "source": "Reader report Section D / Item 12", "promoted_to": "item12_territory", "status": "already_present"},
+    {"fact": "AI/ML disclosure prohibition", "source": "Reader report Section C / Item 14", "promoted_to": "item14_patents", "status": "already_present"},
+    {"fact": "Low-performance exit: lowest 5% for 12 months + unprofitable + 12 months notice", "source": "Reader report Section E / Item 17", "promoted_to": "item17_termination", "status": "already_present"},
+    {"fact": "Cure Period Extension Fee: up to 4% additional royalty", "source": "Item 6 fee table", "promoted_to": "item6_fee_detail in enriched_v2", "status": "already_present"},
+    {"fact": "2024 NAF spending: 24% production, 53% media, 7% admin, 16% other", "source": "Reader report Section C", "promoted_to": "needs_promotion_to_canonical"},
+    {"fact": "POS annual transaction costs: $9,000-$53,000/location", "source": "Reader report Section C / Item 11", "promoted_to": "item6_technology_fees", "status": "already_present"},
+    {"fact": "Operations Manual: 120 pages", "source": "Reader report Section C", "promoted_to": "item11_training", "status": "already_present"},
+    {"fact": "Debranding requirement includes trade dress (flooring colors, wall colors, equipment piping)", "source": "FA Art 16.2 / Item 13", "promoted_to": "needs_promotion"},
+    {"fact": "Voting amendment thresholds: 70% franchised for FA changes, 66%/51% for fee caps and remodel", "source": "FA Art 19.21 / Item 17", "promoted_to": "item17_dispute_resolution", "status": "partially_present"}
+  ],
+  "facts_needing_promotion": 3,
+  "facts_already_present": 10
+}

@@ -1,0 +1,150 @@
+{
+  "_enrichment_version": "v1",
+  "_base_file": "09_final_canonical.json",
+  "_enrichment_layers": ["item19_chart_detail", "item20_yearly_activity", "exhibit_structure", "item21_structural_facts", "item1_structural_facts", "item6_fee_attributes"],
+
+  "document_identity": {
+    "filing_id": "640477",
+    "brand": "Domino's Pizza",
+    "franchisor_legal_name": "Domino's Pizza Franchising LLC",
+    "franchisor_state": "Delaware",
+    "issuance_date": "April 1, 2026",
+    "fiscal_year_end": "December 28, 2025",
+    "pdf_pages": 548,
+    "parent_entity": "Domino's Pizza Master Issuer LLC",
+    "ultimate_parent": "Domino's Pizza, Inc. (DPI, NYSE)",
+    "source_pages": [1, 2, 10],
+    "confidence": "high"
+  },
+
+  "item1_structural_facts": {
+    "securitization_vehicle": true,
+    "founded_year": 1960,
+    "franchising_since": 1967,
+    "publicly_traded_parent": true,
+    "ticker": "DPZ",
+    "total_domestic_stores": 7236,
+    "total_international_franchises": 14956,
+    "total_global_approximate": 22192,
+    "key_affiliates": {
+      "ip_holder": "Domino's IP Holder LLC",
+      "distributor": "Domino's Pizza Distribution LLC (DPD)",
+      "advertising": "Domino's National Advertising Fund Inc. (DNAF)",
+      "international": "Domino's Pizza International Franchising Inc.",
+      "servicer": "Domino's Pizza LLC (DPL)"
+    },
+    "source_pages": [10, 11, 12, 13]
+  },
+
+  "item6_fee_attributes": {
+    "royalty_rate_pct": 5.5,
+    "advertising_national_pct": 4.0,
+    "advertising_cooperative_min_pct": 2.0,
+    "advertising_max_combined_pct": 9.0,
+    "total_max_top_line_fee_pct": 14.5,
+    "tech_transaction_fee_per_order": 0.385,
+    "pulse_hardware_range": [15000, 25000],
+    "annual_tech_maintenance_cap": 7000,
+    "brand_tech_addition_cap": "1.5% of cumulative Royalty Sales (10yr)",
+    "fee_count": 30,
+    "source_pages": [22, 23, 24, 25, 26, 27, 28, 29]
+  },
+
+  "item19_chart_detail": {
+    "awus_trend": {
+      "2020": {"franchised": 25264, "company": 26579, "combined": 25336},
+      "2021": {"franchised": 26004, "company": 25399, "combined": 25970},
+      "2022": {"franchised": 25554, "company": 23663, "combined": 25334},
+      "2023": {"franchised": 25825, "company": 25509, "combined": 25810},
+      "2024": {"franchised": 26467, "company": 26120, "combined": 26269}
+    },
+    "median_trend": {
+      "2020": {"franchised": 23845, "combined": 24004},
+      "2021": {"franchised": 24739, "combined": 24735},
+      "2022": {"franchised": 24322, "combined": 24322},
+      "2023": {"franchised": 24594, "combined": 24665},
+      "2024": {"franchised": 25160, "combined": 25210}
+    },
+    "ebitda_detail": {
+      "bottom_tier_pct": 1.7,
+      "bottom_tier_stores": 490,
+      "bottom_tier_annualized_earnings_approx": 13260,
+      "top_tier_pct": 14.7,
+      "top_tier_stores": 1861,
+      "top_tier_annualized_earnings_approx": 229000,
+      "variable_cost_range": [76.4, 80.9],
+      "fixed_cost_range": [11.4, 20.2]
+    },
+    "cohort_comparability": "No gap identified — uses actual franchised store data at current 5.5% royalty rate",
+    "source_pages": [65, 66, 67]
+  },
+
+  "item20_yearly_activity": {
+    "traditional_franchised": {
+      "2023": {"start": 6438, "opened": 178, "closed": 16, "end": 6600, "net": 162},
+      "2024": {"start": 6600, "opened": 160, "closed": 9, "end": 6751, "net": 151},
+      "2025": {"start": 6751, "opened": 214, "closed": 17, "end": 6948, "net": 197}
+    },
+    "company_owned": {
+      "2023": {"start": 286, "end": 288},
+      "2024": {"start": 288, "end": 292},
+      "2025": {"start": 292, "end": 262, "note": "36 MD stores sold to franchisee"}
+    },
+    "transfers": {"2023": 523, "2024": 550, "2025": 490},
+    "development_agreements": {"2023_end": 226, "2024_end": 323, "2025_end": 356},
+    "projected_next_year": {"franchised": 188, "company": 7},
+    "attrition_rate_2025_pct": 0.24,
+    "source_pages": [68, 69, 74, 78, 85, 86, 87]
+  },
+
+  "exhibit_structure": {
+    "total_exhibits": 20,
+    "financial_exhibits": ["C (DPF)", "D (DPL)"],
+    "franchise_agreements": ["E (Traditional)", "F (Non-Traditional)"],
+    "development_agreement": "G",
+    "key_operational": ["H (Help Desk)", "J (PULSE License)", "K (Lease Rider)", "O (Online Ordering)"],
+    "franchisee_lists": ["B (Traditional)", "B-1 (Non-Traditional)", "B-2 (Former)"],
+    "state_addenda_location": "Body pages 89-95",
+    "source_pages": [9, 89]
+  },
+
+  "item21_structural_facts": {
+    "auditor": "PricewaterhouseCoopers LLP",
+    "opinion": "Unqualified",
+    "going_concern": false,
+    "fiscal_year_type": "52-week ending Sunday nearest Dec 31",
+    "entity_type": "Single-member LLC (disregarded for tax)",
+    "revenue_source": "Franchise royalties and fees only",
+    "royalty_rate_per_notes": "5.5% of retail sales",
+    "revenue_3yr": [463263000, 487089000, 512068000],
+    "net_income_3yr": [452872000, 462563000, 491570000],
+    "distributions_3yr": [440210000, 478544000, 490136000],
+    "total_assets": 17472000,
+    "guaranteed_debt_approximate": 5250000000,
+    "dscr_minimum": 1.75,
+    "management_fee_2025": 19061000,
+    "operating_margin_pct": 96.1,
+    "source_pages": [285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295]
+  },
+
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "Washington"],
+    "california": {"overrides": ["Fast Food Act $20/hr minimum wage", "Council authority to raise 3.5%/yr through 2028"], "source_pages": [90, 91]},
+    "illinois": {"overrides": ["Forum/law exceptions for IL claims"], "source_pages": [91]},
+    "maryland": {"overrides": ["Fee deferral until pre-opening obligations complete", "Release excludes MD law", "3-year SOL"], "source_pages": [91, 92]},
+    "minnesota": {"overrides": ["No out-of-state litigation", "90-day termination notice/60-day cure", "180-day non-renewal notice", "$30 service charge cap"], "source_pages": [92, 93, 94]},
+    "washington": {"overrides": ["WA Franchise Act prevails", "Noncompete void <$100K employee", "No-poach void", "2018 AOD"], "source_pages": [94, 95]}
+  },
+
+  "unresolveds": [
+    {"id": "U1", "description": "DPL financial statements not fully extracted", "severity": "medium", "source": "Exhibit D"},
+    {"id": "U2", "description": "FA clause walk deferred", "severity": "medium", "source": "Exhibit E"},
+    {"id": "U3", "description": "Lease Rider terms not extracted", "severity": "low", "source": "Exhibit K"},
+    {"id": "U4", "description": "Securities class action outcome pending", "severity": "medium", "source": "Item 3"},
+    {"id": "U5", "description": "Joint employer litigation pending", "severity": "medium", "source": "Item 3"}
+  ],
+
+  "contradictions": [
+    {"id": "C1", "description": "Item 20/21 outlet count reconciliation deferred — DPF is securitization vehicle without store counts in notes", "items_involved": ["Item 20", "Item 21"], "resolution_status": "Deferred to A2"}
+  ]
+}

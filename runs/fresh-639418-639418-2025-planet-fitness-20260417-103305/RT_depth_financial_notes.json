@@ -1,0 +1,74 @@
+{
+  "depth_pass": "A2_DP1_financial_notes",
+  "item21_extraction_method": "normal_text_extraction",
+  "text_layer_quality": "clean — no image fallback needed",
+  "franchisor_entity": "Planet Fitness Franchising LLC",
+  "auditor": "KPMG LLP",
+  "opinion": "Unqualified (clean)",
+  "periods": ["FY2024", "FY2023"],
+  "accounting_policies": {
+    "revenue_recognition": {
+      "standard": "ASC 606",
+      "royalties": "Sales-based royalties recognized as franchise sales occur",
+      "franchise_fees": "Straight-line over franchise agreement term",
+      "ada_fees": "Deferred and apportioned pro-rata to each FA signed, then straight-line over FA term",
+      "transfer_fees": "Straight-line over remaining franchise agreement term",
+      "join_fees": "Recognized as each transaction occurs",
+      "source_pages": [296]
+    },
+    "intangible_assets": {
+      "trade_brand_names": {"amount": 146300000, "life": "indefinite", "impairment": "Annual assessment Dec 1; qualitative analysis only; no impairment charges recorded"},
+      "customer_relationships": {"gross": 88400000, "accumulated_amortization": 88400000, "net": 0, "life_years": 12, "status": "Fully amortized as of Dec 31, 2024"},
+      "source_pages": [295, 297]
+    },
+    "income_taxes": {
+      "treatment": "Disregarded entity for federal and primarily all state tax purposes",
+      "provision": "No US federal income tax provision; foreign withholding taxes only",
+      "tax_expense_2024": 602000,
+      "tax_expense_2023": 478000,
+      "source_pages": [296]
+    },
+    "deferred_revenue": {
+      "total_2024": 32586000,
+      "current_2024": 3801000,
+      "long_term_2024": 28785000,
+      "composition": {"ada_fees": 13783000, "franchise_fees": 10514000, "transfer_fees": 7663000, "grace_period": 626000},
+      "recognition_schedule": {"2025": 3801000, "2026": 3589000, "2027": 3357000, "2028": 3078000, "2029": 2700000, "thereafter": 16061000},
+      "source_pages": [298]
+    },
+    "lease_accounting": "Not applicable — franchisor entity has no direct lease obligations; leases are held by franchisees and affiliates",
+    "vie_consolidation": "Franchise entities and NAF LLC not consolidated as Company is not primary beneficiary",
+    "subsequent_events": "Evaluated through April 7, 2025; no items to disclose",
+    "contingencies": "No material legal proceedings expected to have adverse effect"
+  },
+  "securitized_debt_detail": {
+    "issuer": "Planet Fitness Master Issuer LLC",
+    "total_issuance": 2250000000,
+    "notes": [
+      {"series": "2019-1 Class A-2", "rate": "3.858%", "principal": 550000000},
+      {"series": "2022-1 Class A-2-I", "rate": "3.251%", "principal": 425000000},
+      {"series": "2022-1 Class A-2-II", "rate": "4.008%", "principal": 475000000},
+      {"series": "2024-1 Class A-2-I", "rate": "5.765%", "principal": 425000000},
+      {"series": "2024-1 Class A-2-II", "rate": "6.237%", "principal": 375000000}
+    ],
+    "variable_funding": {"max": 75000000, "series": "2022 Variable Funding Notes"},
+    "security": "Substantially all assets of Guarantors including the Company",
+    "source_pages": [297]
+  },
+  "related_party_detail": {
+    "management_fees": {"2024": 41425000, "2023": 38710000, "formula": "$20M fixed + $18K/franchised club + $40K/corporate club"},
+    "dividends_to_parent": {"2024": 306900000, "2023": 280536000},
+    "due_to_affiliates": {"2024": 1349000, "2023": 686000},
+    "assetco_royalty": {"2024": 36198000, "2023": 33586000, "rate": "7%"},
+    "assetco_other_revenue": {"2024": 3652000, "2023": 4122000},
+    "related_party_franchisee": {"deferred_ada_revenue": 134000, "franchise_revenue_2024": 4448000, "note": "Former interim CEO of PF Inc. (board member) has financial interest in franchisee"},
+    "licensing_agreements": {
+      "pf_assetco": "7% royalty, 99-year term",
+      "pf_canada": "5% royalty, 99-year term",
+      "pf_international": "~1.67% royalty, 99-year term",
+      "pf_naf": "Royalty-free, 99-year term",
+      "pf_distribution": "Royalty-free, 99-year term"
+    },
+    "source_pages": [298, 299]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "enrichment_version": "v2",
+  "self_contained": true,
+  "document_identity": {"filing_id": "638054", "brand": "Great Clips", "franchisor_legal_name": "Great Clips, Inc.", "issuance_date": "March 30, 2025, as amended on January 1, 2026", "state_of_incorporation": "Minnesota", "principal_office": "4400 West 78th Street, Suite 700, Minneapolis, MN 55435"},
+  "item1": {
+    "franchisor_legal_name": "Great Clips, Inc.",
+    "incorporation_date": "July 12, 1982",
+    "c_corp_conversion": "January 1, 2019",
+    "parents": null, "predecessors": null, "affiliates": null,
+    "system_size": 4439, "company_owned": 0,
+    "franchise_structures": ["Single FA", "Three Star Program", "MDA"],
+    "typical_salon_sqft": "900-1,200",
+    "avg_salons_per_franchisee_5yr": 8,
+    "source_pages": [9, 10, 11]
+  },
+  "item2_leadership": {
+    "total_named": 34,
+    "c_suite": [
+      {"name": "Raymond L. Barton", "role": "Chairman", "since": "1983"},
+      {"name": "Rhoda C. Olsen", "role": "Vice Chair", "since": "1984"},
+      {"name": "Robert D. Goggins", "role": "CEO & President", "since": "2007"},
+      {"name": "Rachelle M. Johnson", "role": "CFO", "since": "1999"},
+      {"name": "Yvonne S. Mercer", "role": "COO", "since": "1994"},
+      {"name": "Kerry L. Bundy", "role": "CLO & Secretary", "since": "2023"}
+    ],
+    "source_pages": [12, 13, 14, 15, 16, 17]
+  },
+  "item3_litigation": {"disclosed": false, "source_pages": [18]},
+  "item4_bankruptcy": {"disclosed": false, "source_pages": [18]},
+  "item5_initial_fee": {
+    "single": 20000, "three_star": 35000, "mda_per_salon": 6000, "mda_dev_fee_per_salon": 4000,
+    "mdaf_contribution": 5000, "architecture_fees": [100, 3800],
+    "vetfran_rebate": 5000, "expediter_max": 20000,
+    "source_pages": [18, 19, 20, 21]
+  },
+  "item6_fee_detail": {
+    "royalty": {"rate": 0.06, "basis": "Gross Sales", "frequency": "biweekly"},
+    "ad_fund": {"rate": 0.05, "basis": "Gross Sales", "frequency": "biweekly"},
+    "software": {"amount": 250, "unit": "month/salon", "provider": "ICS"},
+    "network": {"amount": 18.99, "unit": "month/salon", "provider": "Foundation Technologies"},
+    "recruiting_tech": {"amount": 750, "unit": "year/salon"},
+    "training": {"amount": 200, "unit": "year/salon"},
+    "renewal": {"amount": 1750, "cpi_adjusted": true},
+    "assignment": {"amount": 1500, "cpi_adjusted": true},
+    "late_charges": {"rate": 0.14},
+    "salon_upgrades": [20000, 80000],
+    "salon_maintenance_annual": [3000, 9000],
+    "total_fee_rows": 29,
+    "source_pages": [22, 23, 24, 25]
+  },
+  "item7_total_investment": {
+    "single": [187800, 419900], "mda": [14000, 46000],
+    "leasehold_improvements": [70000, 200000],
+    "fixtures_signage": [40000, 55000],
+    "grand_opening": [20000, 25000],
+    "additional_funds_3_6_months": [20000, 60000],
+    "source_pages": [25, 26, 27, 28, 29]
+  },
+  "item8_supplier_restrictions": {
+    "pct_initial": "90-95%", "pct_ongoing": "80-85%",
+    "gc_required_purchase_revenue": 16270369, "gc_total_revenue": 115242065,
+    "sole_source_suppliers": ["ICS (POS)", "Heartland (payment)", "Foundation Technologies (network)"],
+    "required_brands": ["MATRIX TOTAL RESULTS", "AMERICAN CREW", "BOSLEY MD", "SEXY HAIR", "TIGI BEDHEAD", "JOHN PAUL MITCHELL SYSTEMS"],
+    "source_pages": [29, 30, 31, 32, 33]
+  },
+  "item9_obligations": {"chart_items": 27, "source_pages": [34, 35]},
+  "item10_financing": {"direct": false, "lease_guarantees": true, "sba_registry": true, "source_pages": [35, 36]},
+  "item11_training": {
+    "total_classroom": 49.56, "total_ojt": 13,
+    "completion_days": 180, "annual_fee": 200,
+    "ops_manual_pages": 182,
+    "ad_fund_admin_fee_2024": 4347880,
+    "ad_fund_2024_expense_to_revenue": 1.018,
+    "source_pages": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
+  },
+  "item12_territory": {
+    "protected_radius": "3/4 mile", "dense_radius": "1/10 mile",
+    "exclusive": false, "non_traditional_excluded": true,
+    "mda_exclusive_dma": true,
+    "gc_alt_channel_rights": true, "gc_different_brand_rights": true,
+    "source_pages": [49, 50]
+  },
+  "item13_trademarks": {"us_registrations": 36, "pending": 12, "international": 30, "source_pages": [50, 51, 52, 53]},
+  "item14_patents": {"patents": false, "ai_ml_prohibition": true, "source_pages": [53, 54]},
+  "item15_participation": {"owner_operated": true, "guaranty_required": true, "guaranty_scope": "all equity holders", "source_pages": [54, 55]},
+  "item16_product_restrictions": {"confined_to": "haircare/grooming", "gc_unlimited_change_right": true, "source_pages": [55]},
+  "item17_termination": {
+    "by_gc_without_cause": false,
+    "cure_nonpayment_days": 7, "cure_other_days": 30,
+    "cross_default": true,
+    "non_curable": ["impairment of Marks", "insolvency", "unauthorized assignment", "criminal conviction", "data misuse"],
+    "source_pages": [56, 57]
+  },
+  "item17_transfer": {
+    "consent_required": true, "assignment_fee": 1500,
+    "rofr_days": 60, "transaction_window_days": 120,
+    "source_pages": [57, 58]
+  },
+  "item17_renewal": {
+    "right_to_renew": false, "at_gc_discretion": true,
+    "renewal_term": 10, "renewal_fee": 1750,
+    "materially_different_risk": true,
+    "source_pages": [56]
+  },
+  "item17_noncompete": {
+    "during_term": "all haircare/grooming at any location",
+    "post_term_years": 1, "post_term_miles": 5,
+    "post_term_scope": "any GREAT CLIPS salon system-wide",
+    "source_pages": [55, 58, 59]
+  },
+  "item17_dispute_resolution": {
+    "arbitration": "Minneapolis, MN",
+    "litigation_venue": "Hennepin County, MN",
+    "governing_law": "state of salon location",
+    "source_pages": [59]
+  },
+  "item18_public_figures": {"used": false, "source_pages": [59]},
+  "item19_chart_detail": {
+    "fpr_provided": true, "tables": 4,
+    "table1_population": 4147, "table1_avg_sales": 399179, "table1_median": 382316,
+    "table2_population": 2175, "table2_avg_cash_flow": 82637, "table2_median_cash_flow": 75851,
+    "non_reporting": 1972, "non_reporting_bias": true,
+    "bottom_tier_negative": true, "bottom_tier_cash_flow": -3635,
+    "top_tier_cash_flow": 193727,
+    "source_pages": [59, 60, 61, 62, 63, 64, 65, 66, 67, 68]
+  },
+  "item20_yearly_activity": {
+    "end_2024": 4439, "net_change_2024": 12,
+    "opened_2024": 115, "closed_2024": 103,
+    "transfers_2024": 207,
+    "signed_not_opened": 965, "projected_new": 90,
+    "gag_clause_flag": true,
+    "gag_clause_quote": "current and former franchisees sign provisions restricting their ability to speak openly about their experience",
+    "source_pages": [69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]
+  },
+  "item21_financial_structure_detail": {
+    "auditor": "Not identified from text layer",
+    "opinion": "Unqualified", "going_concern": false,
+    "balance_sheet_2024": {"total_assets": 135222744, "cash": 39839742, "total_current_assets": 89882851, "pp_and_e_net": 35866431, "total_equity": 43769441, "retained_earnings": 44759630, "total_current_liabilities": 52891112, "long_term_debt": 14754731, "unearned_franchise_fees": 21178641, "operating_lease_rou": 4157428, "deferred_tax_asset": 5267196},
+    "income_2024": {"total_revenue": 202708389, "cff_revenue": 112771070, "iff_revenue": 2470995, "ad_fund_revenue": 87466324, "gross_profit": 78953592, "ga_expenses": 50812350, "operating_profit": 28141242, "net_earnings": 22308397, "effective_tax_rate": 0.25},
+    "cash_flows_2024": {"operating": 17602739, "capex": -30077468, "equipment_proceeds": 12400000, "debt_payments": -4552159, "stock_redemptions": -2587350},
+    "source_pages": [168, 169, 170, 171, 172, 173, 174]
+  },
+  "item21_note_families": [
+    {"family": "Nature of Business and Accounting Policies", "walked": true, "source_pages": [175, 176, 177, 178, 179]},
+    {"family": "North American Advertising Fund", "walked": true, "source_pages": [179, 180]},
+    {"family": "Leases (ASC 842)", "walked": true, "source_pages": [180, 181]},
+    {"family": "Goodwill", "walked": true, "source_pages": [181]},
+    {"family": "Deferred Compensation", "walked": true, "source_pages": [182]},
+    {"family": "Financing Arrangements", "walked": true, "source_pages": [182, 183]},
+    {"family": "Commitments and Contingencies", "walked": true, "source_pages": [183, 184]},
+    {"family": "Shareholders' Equity", "walked": true, "source_pages": [184]},
+    {"family": "Income Taxes", "walked": true, "source_pages": [184, 185]},
+    {"family": "Employee Benefit Plan", "walked": true, "source_pages": [186]},
+    {"family": "Related-Party Transactions", "walked": true, "source_pages": [186]}
+  ],
+  "contract_burden_depth": {
+    "term_years": 10,
+    "renewal_discretionary": true,
+    "renewal_materially_different": true,
+    "guaranty_scope": "every shareholder with any equity interest",
+    "noncompete_during": "all haircare at any location",
+    "noncompete_post": "1 year, 5 miles of any GC salon",
+    "rofr_days": 60,
+    "cross_default": true,
+    "general_release_required": true,
+    "source_pages": [54, 55, 56, 57, 58, 59]
+  },
+  "special_risks": [
+    {"risk": "Out-of-State Dispute Resolution", "source_pages": [5]},
+    {"risk": "Supplier Control", "source_pages": [5]}
+  ],
+  "unresolveds": [
+    {"id": "UR-1", "description": "Auditor firm name not identified", "severity": "low", "source": "p.168"},
+    {"id": "UR-2", "description": "State addenda not structured", "severity": "medium", "source": "Exhibit P"},
+    {"id": "UR-3", "description": "Franchise Agreement not clause-walked", "severity": "medium", "source": "Exhibit F"},
+    {"id": "UR-4", "description": "Non-reporting salon bias in Item 19", "severity": "high", "source": "p.63"},
+    {"id": "UR-5", "description": "Ceased operations ambiguity", "severity": "medium", "source": "p.77"},
+    {"id": "UR-6", "description": "Lease documents not reviewed", "severity": "low", "source": "Exhibit L"}
+  ],
+  "contradictions": [
+    {"id": "CONTRA-1", "description": "Item 20/21 salon count methodology difference", "resolution": "Explained by methodology"}
+  ]
+}

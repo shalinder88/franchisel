@@ -1,0 +1,157 @@
+{
+  "depth_pass": "financial_notes",
+  "entity": "Anytime Fitness LLC and Subsidiaries (Consolidated)",
+  "auditor": "PricewaterhouseCoopers LLP",
+  "opinion": "unqualified",
+  "going_concern": false,
+  "financial_statement_date": "December 31, 2024",
+  "notes_page_range": [186, 203],
+
+  "revenue_recognition": {
+    "policy": "ASC 606",
+    "franchise_royalties": "Recognized monthly as services rendered; technology fees included in franchise royalties",
+    "franchise_fees": "Initial franchise fees, ADA fees, master franchise fees — deferred and recognized straight-line over term of agreement net of pre-opening performance obligations",
+    "pre_opening_services": "Training and construction management recognized upon opening (practical expedient elected)",
+    "vendor_rebates": "Recognized when franchisees purchase from preferred vendors and collectability is reasonably assured",
+    "corporate_owned_sales": "Membership dues recognized straight-line over term; PT revenue recognized when service performed; prepaid sessions deferred until used or expired",
+    "equipment_sales": "Revenue recognized upon delivery and installation",
+    "advertising_fund": "Contributions recognized as revenue; expenses recognized as operating expenses; continuing engagement credits included in other revenues",
+    "source_pages": [191, 192, 193]
+  },
+
+  "deferred_revenue": {
+    "balance_2024": 77151000,
+    "balance_2023": 44338000,
+    "increase_from_otf_contribution": 27689000,
+    "revenue_recognized_from_deferred_2024": 20258000,
+    "expected_recognition_2025": 17401000,
+    "classification": {"current": 17401000, "long_term": 59750000},
+    "source_pages": [201]
+  },
+
+  "securitization_debt": {
+    "series_2021_1": {
+      "class_a2_principal": 483788000,
+      "class_a2_rate": "4.969% fixed",
+      "class_a2_maturity_legal": "January 2052",
+      "class_a2_maturity_anticipated": "January 2027",
+      "class_a1_vfn_capacity": 20000000,
+      "class_a1_vfn_drawn": 0,
+      "class_a1_vfn_rate": "SOFR + 3.56%",
+      "liquidity_reserve_notes": 6100000,
+      "debt_issuance_costs": 8700000,
+      "issuance_date": "November 24, 2021"
+    },
+    "series_2024_1": {
+      "class_a2_principal": 480000000,
+      "class_a2_rate": "7.386% fixed",
+      "class_a2_maturity_legal": "April 30, 2054",
+      "class_a2_maturity_anticipated": "April 2029",
+      "class_a1_vfn_capacity": 90000000,
+      "class_a1_vfn_drawn_at_close": 40000000,
+      "class_a1_vfn_outstanding_dec_2024": 15000000,
+      "class_a1_vfn_rate": "SOFR + 3.3%",
+      "liquidity_reserve_notes": 16000000,
+      "debt_issuance_costs": 14892000,
+      "issuance_date": "April 2, 2024"
+    },
+    "total_principal_outstanding": 978788000,
+    "unamortized_financing_costs": 15961000,
+    "net_long_term_debt": 962827000,
+    "covenants": "Debt service and securitized net cash flow coverage ratios; maintenance of reserve accounts; optional and mandatory prepayment provisions; rapid amortization events",
+    "covenant_compliance": "In compliance for all quarters in 2024 and 2023",
+    "principal_payment_schedule": {
+      "2025": 7238000,
+      "2026": 9650000,
+      "2027": 495100000,
+      "2028": 4800000,
+      "2029": 462000000
+    },
+    "source_pages": [197, 198, 199, 200, 201]
+  },
+
+  "otf_acquisition": {
+    "transaction_date": "April 2, 2024",
+    "accounting_treatment": "Business combination between entities under common control — no step up to fair value; pushdown accounting not elected",
+    "net_liabilities_contributed": -1359000,
+    "deferred_revenue_contributed": 27689000,
+    "results_included_from": "April 2, 2024",
+    "source_pages": [188, 197]
+  },
+
+  "related_party_transactions": {
+    "due_from_related_parties_2024": 461000,
+    "due_to_related_parties_2024": 30000,
+    "payroll_allocation_from_seb_2024": 32808000,
+    "payroll_allocation_from_seb_2023": 31553000,
+    "payroll_allocation_from_seb_2022": 26089000,
+    "allocation_basis": "Management estimate of time and resources dedicated to Company operations",
+    "source_pages": [195, 196]
+  },
+
+  "property_and_equipment": {
+    "total_gross_2024": 12831000,
+    "accumulated_depreciation_2024": 9866000,
+    "net_2024": 2965000,
+    "depreciation_expense_2024": 1016000,
+    "useful_lives": "Furniture/equipment/auto: 5-7 years; leasehold improvements: shorter of lease term or useful life",
+    "source_pages": [196]
+  },
+
+  "intangible_assets": {
+    "amortizable_intangibles_net_2024": 566000,
+    "nonamortizable_trademarks_2024": 1127000,
+    "total_intangibles_net_2024": 1693000,
+    "software_development_net_2024": 27385000,
+    "amortization_expense_2024": 12801000,
+    "future_amortization": {"2025": 14547000, "2026": 8945000, "2027": 2781000, "2028": 42000, "2029": 42000, "thereafter": 107000},
+    "source_pages": [197]
+  },
+
+  "lease_accounting": {
+    "lease_type": "operating",
+    "weighted_avg_remaining_term_years": 3.36,
+    "weighted_avg_discount_rate": 0.05,
+    "rou_assets_2024": 2575000,
+    "total_lease_liabilities_2024": 2873000,
+    "current_lease_liabilities": 946000,
+    "noncurrent_lease_liabilities": 1927000,
+    "lease_expense_2024": 1527000,
+    "maturity_schedule": {"2025": 1068000, "2026": 885000, "2027": 755000, "2028": 323000, "2029": 91000},
+    "source_pages": [202]
+  },
+
+  "income_taxes": {
+    "treatment": "Disregarded entity for tax purposes — income, losses, credits included in Purpose Brands Holdings LLC returns",
+    "provision": "No federal/state income tax provision; state minimum fees provided",
+    "uncertain_positions": "None",
+    "source_pages": [191]
+  },
+
+  "allowance_for_credit_losses": {
+    "balance_2024": 1801000,
+    "balance_2023": 165000,
+    "source_pages": [189]
+  },
+
+  "inventory": {
+    "method": "FIFO",
+    "composition": "Finished goods — equipment, studio supplies, retail products, technology hardware",
+    "supplier_concentration": "53% of inventory from 5 vendors (2024)",
+    "source_pages": [189, 203]
+  },
+
+  "contingencies": {
+    "legal": "Various claims and proceedings; management believes no material effect",
+    "concentration_credit": "Cash in excess of FDIC limits at major institutions",
+    "concentration_geographic": "Primarily U.S. operations",
+    "concentration_supplier": "53% of inventory from 5 vendors",
+    "source_pages": [202, 203]
+  },
+
+  "subsequent_events": {
+    "evaluation_through": "March 21, 2025",
+    "material_events": "None disclosed",
+    "source_pages": [195]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "promotion_audit": {
+    "facts_promoted": [
+      {"fact": "Carrols LLC and Nashville Quality LLC operate BK Restaurants in US, may sell to franchisees", "source": "Item 1, page 12", "promoted_to": "item1_franchisor.carrols_affiliate"},
+      {"fact": "BK APac's 999 company restaurants sold to franchisee as of Jan 30, 2026", "source": "Item 1, page 12", "promoted_to": "item1_franchisor.bk_apac_note"},
+      {"fact": "Fuel the Flame 4-Wall EBITDA threshold $230,000", "source": "Item 6 Note 3, page 45", "promoted_to": "item6_advertising.fuel_the_flame.4wall_ebitda_threshold"},
+      {"fact": "RSI board: 21 members (18 franchisees, 1 BKC, 1 minority, 1 independent)", "source": "Item 8, page 59", "promoted_to": "item8_supplier_restrictions.rsi_board_composition"},
+      {"fact": "Supplier rebates 7.9% of consolidated fund revenue (FY2025)", "source": "Item 8, page 59", "promoted_to": "item8_supplier_restrictions.supplier_rebate_pct"},
+      {"fact": "Training director: Greg Moscetti, joined June 2025, 15+ years experience", "source": "Item 11, page 69", "promoted_to": "item11_training.training_director"},
+      {"fact": "BK University/support $600/year per restaurant", "source": "Item 6, page 36", "promoted_to": "item6_technology_fees.bk_university"},
+      {"fact": "NFA CEO: Christy Williams, Kennesaw GA, (678) 797-5160", "source": "Item 20, page 131", "promoted_to": "item20_outlets.nfa_contact"},
+      {"fact": "BK Foundation $1,000/year per restaurant mandatory", "source": "Item 6, page 38", "promoted_to": "item6_fee_detail.bk_foundation"},
+      {"fact": "Advertising fund breakdown FY2025: Working media 80.0%, Production 3.3%, Agency 6.9%, Other 9.8%", "source": "Item 11, page 72", "promoted_to": "item6_advertising.fy2025_breakdown"},
+      {"fact": "Insurance: CGL $2M/occurrence, auto $1M, property full replacement, boiler/machinery full replacement", "source": "Item 8, pages 57-58", "promoted_to": "item8_supplier_restrictions.insurance_requirements"},
+      {"fact": "Double Drive-Thru required for most facility types (adds $80K-$120K)", "source": "Item 7, footnote 10, page 55", "promoted_to": "item7_component_detail.double_drive_thru_cost"},
+      {"fact": "Free guest Wi-Fi required", "source": "Item 11, page 71", "promoted_to": "item11_technology_detail.guest_wifi_required"}
+    ],
+    "item19_cohort_comparability": {
+      "finding": "No material comparability discrepancy found. Item 19 reports actual Gross Sales for restaurants operating during FY2025. The sales data includes restaurants paying various royalty and advertising rates (standard 4.5%, reduced DIP rates, DA rates, legacy rates from prior programs). BKC does not present a pro-forma or cost-adjusted FPR. The current new-franchisee royalty rate (4.5%) and advertising rate (4.5%) are the same as the standard rates disclosed in Item 6. Some restaurants in the sample may pay reduced rates under prior programs, which would give them a slight operating advantage vs. new franchisees. However, the FPR reports Gross Sales (top-line), not net income, so the royalty/advertising rate difference does not directly affect the reported figures.",
+      "severity": "informational",
+      "source_pages_item19": [99, 100],
+      "source_pages_item6": [34, 40]
+    }
+  }
+}

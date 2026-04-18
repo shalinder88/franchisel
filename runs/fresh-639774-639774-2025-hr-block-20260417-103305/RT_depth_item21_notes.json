@@ -1,0 +1,83 @@
+{
+  "depth_pass": "A2 Targeted Depth Block 1 — Item 21 Note Walk",
+  "entity": "H&R Block, Inc. (consolidated)",
+  "note_families_present": [
+    {"family": "accounting_policies", "pages": [103, 104, 105, 106], "walked": true},
+    {"family": "revenue_recognition", "pages": [105, 106, 107, 108], "walked": true},
+    {"family": "earnings_per_share", "pages": [108], "walked": true},
+    {"family": "receivables", "pages": [108, 109, 110, 111], "walked": true},
+    {"family": "property_equipment", "pages": [111], "walked": true},
+    {"family": "goodwill_intangibles", "pages": [111, 112, 113], "walked": true},
+    {"family": "long_term_debt", "pages": [113, 114], "walked": true},
+    {"family": "stock_based_compensation", "pages": [114, 115], "walked": true},
+    {"family": "income_taxes", "pages": [115, 116, 117, 118], "walked": true},
+    {"family": "leases", "pages": [119], "walked": true},
+    {"family": "loss_contingencies", "pages": [120, 121], "walked": true},
+    {"family": "segment_reporting", "pages": [122, 123], "walked": true}
+  ],
+  "key_facts_recovered": {
+    "revenue_recognition": {
+      "assisted_tax_prep": "Revenue recognized when completed return accepted by customer",
+      "royalties": "Based on contractual percentages of franchise gross receipts, recorded when franchisee provides service",
+      "pom": "Deferred and recognized over plan life (up to 6 years) based on historical claims pattern; majority claims in years 2-3",
+      "tis": "Deferred and recognized as services provided through April 30 of following year",
+      "refund_transfer": "Recognized when IRS acknowledgment received and bank account established",
+      "wave": "Percentage of transaction amounts, recognized upon authorization"
+    },
+    "lease_structure": {
+      "type": "Operating leases",
+      "portfolio": "Retail office space in US, Canada, Australia",
+      "typical_term": "May 1 to April 30, 2-5 years",
+      "rou_asset_FY2025": 521215,
+      "lease_liabilities_current": 209203,
+      "lease_liabilities_noncurrent": 322847,
+      "discount_method": "Incremental borrowing rate",
+      "renewal_options_included": false
+    },
+    "goodwill_impairment": {
+      "total_goodwill": 802053,
+      "accumulated_impairment": 138297,
+      "wave_reporting_unit": 159000,
+      "test_date": "February 1 annually",
+      "FY2025_impairment": 0,
+      "method": "Qualitative assessment then quantitative (DCF + guideline public company)"
+    },
+    "intangible_assets_key": {
+      "reacquired_franchise_rights_net": 172370,
+      "customer_relationships_net": 67040,
+      "total_net": 259412,
+      "FY2025_amortization": 47700,
+      "estimated_amortization_FY2026": 42000,
+      "estimated_amortization_FY2027": 35300
+    },
+    "debt_structure": {
+      "senior_notes_total": 1500000,
+      "upcoming_maturity_FY2026": 350000,
+      "cloc_facility": 1500000,
+      "cloc_outstanding": 0,
+      "cloc_maturity": "July 2030",
+      "in_compliance": true
+    },
+    "income_tax_key": {
+      "effective_tax_rate_FY2025": 22.0,
+      "uncertain_tax_positions": "Material — transfer pricing is critical audit matter",
+      "gross_interest_accrued": 44700
+    },
+    "franchise_loan_portfolio": {
+      "total_outstanding": 23788,
+      "past_due_90_days": 3100,
+      "collateral": "Franchise territory",
+      "write_off_method": "Territory revocation, loan write-off, refranchise or company-operate"
+    },
+    "marketing_spend": {
+      "FY2025": 285800,
+      "FY2024": 277700,
+      "FY2023": 286300
+    },
+    "employee_benefits": {
+      "401k_contributions_FY2025": 28900,
+      "severance_FY2025": 8400
+    }
+  },
+  "amounts_in": "thousands"
+}

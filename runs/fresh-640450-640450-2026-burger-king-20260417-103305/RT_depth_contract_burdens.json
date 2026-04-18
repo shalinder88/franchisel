@@ -1,0 +1,67 @@
+{
+  "franchise_agreement": {
+    "exhibit": "D1/D2",
+    "source_pages": [221, 340],
+    "clauses": [
+      {"clause_family": "grant_and_term", "obligation": "20-year term for freestanding; shorter for non-traditional", "trigger": "Execution of FA", "duration": "20 years", "exceptions": "Non-traditional, shorter property control"},
+      {"clause_family": "successor", "obligation": "Sign then-current FA with materially different terms, pay successor fee, building upgrades, general release", "trigger": "Expiration of term if in compliance", "duration": "Up to 20 years (successor)", "exceptions": "No successor for Big-Box or Delivery"},
+      {"clause_family": "royalty", "obligation": "4.5% of monthly Gross Sales", "trigger": "Ongoing operation", "money": "4.5%", "exceptions": "Reduction programs: DIP, DA, RTF2, CYC"},
+      {"clause_family": "advertising", "obligation": "Up to 4.5% of monthly Gross Sales", "trigger": "Ongoing operation", "money": "up to 4.5%", "exceptions": "FTF program rates, DA reductions"},
+      {"clause_family": "digital_services", "obligation": "Pay digital services fee", "money": "$110/mo + 1% digital sales, cap $4,500/yr", "trigger": "Ongoing operation"},
+      {"clause_family": "insurance", "obligation": "Maintain CGL $2M/occurrence, auto $1M, property at replacement cost, boiler/machinery at replacement cost, workers comp per law", "trigger": "At all times during term"},
+      {"clause_family": "operational_compliance", "obligation": "Operate per MOD Manual, BK University, all BKC specifications", "trigger": "At all times"},
+      {"clause_family": "remodel", "obligation": "Complete remodels per BKC specifications by deadline", "trigger": "BKC notification", "money": "Varies by program; penalty: +3% royalty for default"},
+      {"clause_family": "technology", "obligation": "Use approved POS, network, digital platforms, kiosks; transmit all data to BKC", "trigger": "At all times", "money": "$20K-$25K initial + ongoing fees"},
+      {"clause_family": "noncompete_during", "restriction": "No ownership/operation/interest in any hamburger business", "duration": "During term", "exceptions": "Other BK Restaurants"},
+      {"clause_family": "noncompete_post", "restriction": "No hamburger business within 2 miles of restaurant", "duration": "1 year post-termination", "exceptions": "Corporate Addendum Contract Feeders"},
+      {"clause_family": "transfer", "restriction": "BKC consent required", "trigger": "Any transfer/sale/assignment/pledge", "money": "$2,000 + $500/ea + $175 weekend", "exceptions": "CYC: may withhold first 5 years; Carrols: until remodel completion"},
+      {"clause_family": "termination_cure_5day", "trigger": "Operational/quality/health/sanitation defaults", "duration": "5 days"},
+      {"clause_family": "termination_cure_10day", "trigger": "Non-payment of royalty/advertising", "duration": "10 days"},
+      {"clause_family": "termination_cure_30day", "trigger": "Late reports, unapproved equipment, maintenance, judgments", "duration": "30 days"},
+      {"clause_family": "termination_cure_60day", "trigger": "Failure to pay bills, other provisions", "duration": "60 days"},
+      {"clause_family": "termination_cure_180day", "trigger": "Failure to meet minimum financial criteria", "duration": "180 days"},
+      {"clause_family": "termination_non_curable", "trigger": "Bankruptcy, felony, fraud, false statements, unauthorized transfer, repeated breaches", "duration": "Immediate"},
+      {"clause_family": "indemnification", "obligation": "Indemnify BKC for all costs/judgments relating to restaurant operation", "trigger": "Any third-party claim"},
+      {"clause_family": "confidentiality", "restriction": "Cannot disclose MOD Manual or trade secrets during or after term", "duration": "Perpetual", "exceptions": "Employees who need access"},
+      {"clause_family": "ai_restriction", "restriction": "Cannot input trade secrets into generative AI without prior approval; must opt out of AI training", "trigger": "At all times"},
+      {"clause_family": "venue", "obligation": "Litigation in US District Court S.D. Florida or Miami-Dade County state court", "exceptions": "State addenda overrides"},
+      {"clause_family": "governing_law", "obligation": "Florida law", "exceptions": "State addenda overrides"},
+      {"clause_family": "integration", "obligation": "FA + addenda + TRA/MTRA = entire agreement", "exceptions": "Subject to applicable state law"},
+      {"clause_family": "death_disability", "obligation": "Heir must be approved or sell within 12 months", "trigger": "Death or disability of OP/MO"}
+    ]
+  },
+  "lease_sublease": {
+    "exhibit": "G1",
+    "source_pages": [456, 500],
+    "clauses": [
+      {"clause_family": "term", "obligation": "20 years matching FA; shorter if property control limited", "trigger": "Execution"},
+      {"clause_family": "rent", "obligation": "10% capitalized costs + 8.5%/10% percentage rent", "money": "Varies by property"},
+      {"clause_family": "escalation", "obligation": "12% every 5 years if BKC-owned; 125% of landlord escalation if leased", "trigger": "Every 5 years"},
+      {"clause_family": "termination", "trigger": "Default with cure periods (10 days non-payment, 30 days other)", "duration": "Per cure period"},
+      {"clause_family": "hazardous_materials", "obligation": "Remove hazardous waste, remediate soil on termination", "trigger": "Termination/expiration"},
+      {"clause_family": "rofr", "right": "BKC right of first refusal on adjacent controlled property", "trigger": "Third-party offer", "duration": "20 business days"}
+    ]
+  },
+  "development_agreement": {
+    "exhibit": "M",
+    "source_pages": [535, 548],
+    "clauses": [
+      {"clause_family": "term", "obligation": "3-15 years", "trigger": "Execution"},
+      {"clause_family": "territory", "obligation": "Geographic area designated; NOT exclusive", "trigger": "Execution"},
+      {"clause_family": "development_schedule", "obligation": "Open committed number/type of restaurants per schedule", "trigger": "Per development year"},
+      {"clause_family": "fss_grading", "obligation": "Royalty/advertising/franchise fee vary by FSS Development Grade (A/B/D/F)", "trigger": "Each restaurant opening"},
+      {"clause_family": "financial_covenants", "obligation": "Maintain agreed debt/EBITDA and debt/EBITDAR ratios", "trigger": "Ongoing", "non_curable_if_breached": true},
+      {"clause_family": "termination", "trigger": "10-day (non-payment), 30-day (bankruptcy, other), 180-day (missed targets)", "duration": "Per cure"},
+      {"clause_family": "non_curable_defaults", "trigger": "Transfer, duplication of system, confidentiality breach, false information, F rating, financial ratio breach", "duration": "Immediate"}
+    ]
+  },
+  "guaranty": {
+    "exhibit": "D3",
+    "source_pages": [341, 350],
+    "clauses": [
+      {"clause_family": "scope", "obligation": "Joint and several liability for all FA obligations", "trigger": "Execution"},
+      {"clause_family": "waivers", "obligation": "Waive all defenses, notices, presentment, demand, protest", "trigger": "Execution"},
+      {"clause_family": "spousal", "obligation": "Spouse/partner may be required to sign", "trigger": "If BKC requires"}
+    ]
+  }
+}

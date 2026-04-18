@@ -1,0 +1,30 @@
+{
+  "depth_pass": "A2_targeted_depth_block_3_item20",
+  "all_tables_extracted": true,
+  "tables": [
+    {"table": "Table 1 - Systemwide Summary", "extracted": true, "source_pages": [74]},
+    {"table": "Table 2 - Transfers", "extracted": true, "source_pages": [74, 75, 76], "total_2024": 54, "total_2023": 87, "total_2022": 41},
+    {"table": "Table 3 - Franchised Status", "extracted": true, "source_pages": [76, 77, 78, 79, 80]},
+    {"table": "Table 4 - Company-Owned Status", "extracted": true, "source_pages": [80, 81, 82]},
+    {"table": "Table 5 - Projected Openings", "extracted": true, "source_pages": [82]}
+  ],
+  "footer_totals": {
+    "table3_2024": {"opened": 33, "terminations": 0, "non_renewals": 29, "reacquired": 0, "ceased_other": 34, "end": 2286},
+    "table4_2024": {"opened": 2, "reacquired": 0, "closed": 20, "sold": 0, "end": 1079},
+    "table5": {"fas_signed_not_opened": 8, "projected_franchised": 13, "projected_company": 0}
+  },
+  "gag_clause_flag": true,
+  "gag_clause_quote": "current and former franchisees sign provisions restricting their ability to speak openly about their experience with us",
+  "gag_clause_source_pages": [83],
+  "item20_item21_reconciliation": {
+    "item20_franchised_count": 2286,
+    "item20_company_count": 1079,
+    "item20_total": 3365,
+    "arg_note1_franchised_count": 2517,
+    "arg_note1_company_count": 1079,
+    "arg_note1_total": 3596,
+    "discrepancy_explanation": "ARG Note 1 includes 231 international franchised units not counted in Item 20 (which is US-only). 2517 - 231 = 2286, which matches Item 20. No contradiction.",
+    "source_pages_item20": [74],
+    "source_pages_item21": [229]
+  }
+}

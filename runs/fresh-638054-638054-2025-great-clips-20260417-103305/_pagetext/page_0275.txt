@@ -1,0 +1,63 @@
+2.43      “Voice Authorization” means an Authorization obtained by a direct-dialed telephone call.
+
+
+3. Data Security Requirements
+
+    3.1      The PCI Security Standards Council (“PCI SSC”) was founded by American Express, Discover Financial
+             Services, JCB, MasterCard Worldwide and Visa, Inc. All five founders agreed to incorporate the PCI DSS as
+             the technical requirements of each of their data security compliance programs. The PCI SSC is responsible for
+             the PIN Transaction Security Requirements for PIN-Entry Devices (“PED”).
+
+             PCI DSS applies to HPS and any Merchant and Merchant Servicer that stores, processes or transmits
+             Cardholder information. HPS acknowledges that it has an obligation to comply with PCI DSS for Cardholder
+             information it possesses.
+
+             For the avoidance of doubt, as between Merchant, HPS and the Member Sponsor Bank, Merchant shall be
+             solely responsible for any unauthorized access to Cardholder information or Transaction Data while such
+             Cardholder Information or Transaction Data resides on Merchant’s or its Third Party Agent’s systems or
+             networks. Any such unauthorized access shall be considered an Event of Default.
+
+             All eligible Merchants, regardless of size, must comply with these standards. The following are standards that,
+             at a minimum, Merchant must comply with:
+             (a) Install and maintain a firewall configuration to protect Cardholder data.
+             (b) Do not use vendor-supplied defaults for system passwords and other security parameters.
+             (c) Protect stored Cardholder data.
+             (d) Encrypt transmission of Cardholder data across open, public networks.
+             (e) Use and regularly update anti-virus software or programs.
+             (f) Develop and maintain secure systems and applications.
+             (g) Restrict access to Cardholder data by business need-to-know.
+             (h) Assign a unique ID to each person with computer access.
+             (i) Restrict physical access to Cardholder data.
+             (j) Track and monitor all access to network resources and Cardholder data.
+             (k) Regularly test security systems and processes.
+             (l) Maintain a policy that addresses information security for all personnel.
+
+             More information, including the complete PCI DSS specifications can be found at:
+             https://www.pcisecuritystandards.org
+
+             Each of the Card Schemes has requirements based on PCI DSS that define a standard of due care and
+             enforcement for protecting sensitive information. Merchant must meet the compliance validation requirements
+             defined by the Card Schemes available at:
+             www.visa.com/cisp
+             www.mastercard.com/sdp
+             www.discovernetwork.com/fraudsecurity/disc.html
+             www.americanexpress.com/datasecurity - For American Express Direct merchants only
+
+             In cases where payment application software is used as a part of Authorization or settlement of Cardholder
+             data, Merchant must use a compliant payment application or have current proof of PCI DSS compliance
+             validation. The List of Validated Payment Applications may be found at:
+             https://zh.pcisecuritystandards.org/assessors_and_solutions/payment_applications?agree=true
+
+             In cases where PIN-based debit Transactions are processed, Merchant must use a compliant PIN Entry Device
+             (“PED”). The List of PCI SSC Approved PIN Transaction Security Devices may be found at:
+             https://listings.pcisecuritystandards.org/assessors_and_solutions/pin_transaction_devices?agree=true
+
+             Transactions must comply with the Triple Data Encryption Standard (TDES) and any successor technologies
+             or standards connected therewith.
+
+
+
+
+A Global Payments Company                                     5 | Page                                    Revised: 11/01/24
+© 2024 Heartland Payment Systems, LLC. All rights reserved.                                  Merchant Processing Agreement
+

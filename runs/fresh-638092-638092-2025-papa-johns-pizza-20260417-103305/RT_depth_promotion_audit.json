@@ -1,0 +1,62 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_pass": "A2_promotion_audit",
+  "brand": "Papa Johns",
+  "promoted_facts": [
+    {
+      "fact": "California AB 1228 minimum wage impact — $20/hr for fast food employees effective April 1, 2024",
+      "reader_report_section": "Item 1 / Pass B",
+      "pdf_page": 8,
+      "canonical_location": "item1_franchisor.california_ab1228",
+      "already_in_canonical": true
+    },
+    {
+      "fact": "No force majeure clause found in standard Franchise Agreement",
+      "reader_report_section": "Pass E / Contract Burden",
+      "pdf_page": "100-165 (Exhibit B)",
+      "canonical_location": "Added to contract_burden_depth",
+      "already_in_canonical": false,
+      "action": "Promoted via RT_depth_contract_burdens.json"
+    },
+    {
+      "fact": "Arbitration excludes class-wide proceedings — individual basis only",
+      "reader_report_section": "Pass E / Dispute Resolution",
+      "pdf_page": 155,
+      "canonical_location": "item17_dispute_resolution",
+      "already_in_canonical": false,
+      "action": "Promoted to canonical"
+    },
+    {
+      "fact": "Security interest in all franchisee personal property on premises at termination",
+      "reader_report_section": "Pass E / Post-termination",
+      "pdf_page": 151,
+      "canonical_location": "RT_depth_contract_burdens.json",
+      "already_in_canonical": false,
+      "action": "Promoted via contract burden file"
+    },
+    {
+      "fact": "Asset purchase option excludes Marks goodwill, going-concern value, and proprietary software from FMV calculation",
+      "reader_report_section": "Pass E / Purchase Option",
+      "pdf_page": [152, 153],
+      "canonical_location": "RT_depth_contract_burdens.json",
+      "already_in_canonical": false,
+      "action": "Promoted via contract burden file"
+    },
+    {
+      "fact": "NMF Initiative approved December 2023 — 6% marketing fund rate effective April 1, 2024",
+      "reader_report_section": "Pass B / Item 6",
+      "pdf_page": 20,
+      "canonical_location": "item6_advertising.marketing_fund_rate",
+      "already_in_canonical": true
+    },
+    {
+      "fact": "Refranchising royalty streams: $2.6M (2024) and $12.15M (2022) deferred and recognized over 10-year FA terms",
+      "reader_report_section": "Pass H / Item 21",
+      "pdf_page": 486,
+      "canonical_location": "item21_financial_statements",
+      "already_in_canonical": true
+    }
+  ],
+  "total_promoted": 4,
+  "total_already_present": 3
+}

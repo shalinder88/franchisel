@@ -1,0 +1,280 @@
+{
+  "tables": [
+    {
+      "id": "item5_initial_fees",
+      "source_item": "Item 5",
+      "source_pages": [19, 20],
+      "title": "Initial Fees",
+      "columns": ["Fee", "Amount", "Conditions"],
+      "rows": [
+        {"fee": "Initial Franchise Fee", "amount": "$20,000", "conditions": "Currently waived under ADA"},
+        {"fee": "Area Development Fee", "amount": "$10,000-$60,000 per location", "conditions": "$60,000 if same/similar territory as terminated ADA"},
+        {"fee": "Site Evaluation", "amount": "$0-$10,000", "conditions": "If franchisor visits at request"},
+        {"fee": "Construction Dev Plan Review", "amount": "$4,000", "conditions": "If not using designated architects"},
+        {"fee": "Equipment Down Payment (financed)", "amount": "$36,300-$330,900", "conditions": "10-30% of financed amount"},
+        {"fee": "Equipment Purchase", "amount": "$363,000-$1,103,000", "conditions": "If purchased outright"}
+      ],
+      "table_notes": ["All initial fees are the same for both initial and conversion franchises", "Equipment must be purchased from affiliate PF Equipment"]
+    },
+    {
+      "id": "item6_fee_table",
+      "source_item": "Item 6",
+      "source_pages": [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+      "title": "Other Fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Royalty", "amount": "7% of EFT Dues Draft", "due": "Monthly/annually", "remarks": "Based on total gross monthly and annual membership fees"},
+        {"fee": "Interest", "amount": "10% annualized or max legal rate", "due": "As incurred", "remarks": "From date payment due"},
+        {"fee": "Join Fee", "amount": "20% of regular monthly fee or 5% of prepaid", "due": "Monthly", "remarks": "Per new membership"},
+        {"fee": "Administrative Fees", "amount": "Up to 50% of commercial partnership revenue", "due": "Varies", "remarks": "Commercial partnerships"},
+        {"fee": "Refresher Training", "amount": "$500-$1,500", "due": "As agreed", "remarks": "Per training course"},
+        {"fee": "Per Diem Fee", "amount": "$100-$1,000", "due": "As agreed", "remarks": "Additional training"},
+        {"fee": "Re-Equip Costs", "amount": "$363,000-$1,103,000", "due": "As incurred", "remarks": "Every 5-9 years; cardio 5-7yr, other 7-9yr"},
+        {"fee": "Remodel Costs", "amount": "$250,000-$1,200,000", "due": "As incurred", "remarks": "Every 12 years"},
+        {"fee": "Supplier Evaluation", "amount": "Up to $25,000", "due": "Upon demand", "remarks": "Alternative supplier approval"},
+        {"fee": "Third-party Payments", "amount": "Actual costs", "due": "Monthly", "remarks": "Pass-through payments"},
+        {"fee": "Insurance", "amount": "Actual costs", "due": "Within 5 business days", "remarks": "If franchisor must obtain for you"},
+        {"fee": "Pre-Sale/Grand Opening Marketing", "amount": "Up to $120,000", "due": "Upon demand", "remarks": "If you fail to execute plan"},
+        {"fee": "NAF Fee", "amount": "2% EFT Dues Draft (max 3%); 2026: 2% EFT + 1% Monthly EFT", "due": "Monthly with royalty", "remarks": "Variable monthly percentages"},
+        {"fee": "LAF", "amount": "Greater of $60,000 or 7% cumulative Monthly EFT (2026: $50,000 or 6%)", "due": "Per advertising budget", "remarks": "Combined LAF+NAF cap 9%"},
+        {"fee": "Advertising Cooperative", "amount": "Per co-op determination", "due": "Per co-op", "remarks": "If co-op exists in market"},
+        {"fee": "Special Marketing Programs", "amount": "Up to 7% Monthly EFT for single month", "due": "Upon demand", "remarks": "Credits toward LAF"},
+        {"fee": "Auditing/Inspection", "amount": "Actual costs", "due": "After audit", "remarks": "Only if noncompliant"},
+        {"fee": "FA Transfer Fee", "amount": "$10,000 + up to $10,000 out-of-pocket", "due": "Before/concurrent with transfer", "remarks": "Exceptions for internal/family/estate transfers"},
+        {"fee": "Securities Offering Fee", "amount": "Up to $100,000 + up to $100,000 expenses", "due": "Upon submission", "remarks": "For proposed securities offerings"},
+        {"fee": "ADA Transfer Fee", "amount": "$5,000/location + up to $5,000 expenses", "due": "Before/concurrent with transfer", "remarks": "Per unmet development obligation"},
+        {"fee": "Site Evaluation Fees", "amount": "Up to $25,000", "due": "As incurred", "remarks": "Construction-phase visits"},
+        {"fee": "Successor Franchise Fee", "amount": "$20,000", "due": "Upon grant", "remarks": "For renewal/successor term"},
+        {"fee": "Indemnification", "amount": "Variable", "due": "As incurred", "remarks": "Claims arising from operations"},
+        {"fee": "Administrative Third-Party Costs", "amount": "Up to $5,000", "due": "Upon demand", "remarks": "Registration/filing in non-registered states"},
+        {"fee": "Costs and Attorney's Fees", "amount": "Actual costs", "due": "Upon demand", "remarks": "If franchisor prevails in dispute"},
+        {"fee": "Cure Period Extension Fee", "amount": "Up to 4% of EFT Dues Draft", "due": "Monthly via EFT", "remarks": "Only if default cure period extended"},
+        {"fee": "Debrand Deficiency Fee", "amount": "$35,000 strength/amenity + $35,000 cardio", "due": "Upon demand", "remarks": "Failure to debrand after termination"},
+        {"fee": "Management Fees", "amount": "Up to 10% monthly gross revenue", "due": "As incurred", "remarks": "If franchisor must manage your business"},
+        {"fee": "Emergency Purchases", "amount": "Actual costs", "due": "As incurred", "remarks": "Emergency purchases by franchisor"},
+        {"fee": "Software Licensing", "amount": "$100/year", "due": "Upon demand", "remarks": "CRM software reimbursement"},
+        {"fee": "Late Development Fee", "amount": "$50,000", "due": "As incurred", "remarks": "Failure to meet ADA development schedule"}
+      ],
+      "table_notes": [
+        "Note 1: Unless otherwise noted, all fees uniformly imposed, payable to franchisor, non-refundable.",
+        "Note 2: Royalty based on EFT Dues Draft regardless of actual collection. Can switch to Total Net Membership Revenues on 60 days notice.",
+        "Note 3: Interest from date payment due.",
+        "Note 4: Re-equip frequency: high-use clubs cardio 5yr/other 7yr; normal clubs cardio 6yr/other 8yr; low-use clubs cardio 7yr/other 9yr. Estimated $363K-$1,137K every 5-9 years.",
+        "Note 5: Remodel every 12 years, $250K-$1.2M. Franchisor can do maintenance on your behalf at your expense if you fail.",
+        "Note 6: Early remodel/re-equip possible with 66% all-business or 51% franchised-business vote.",
+        "Note 7: NAF increase above 3% and LAF changes require 66% all-business or 51% franchised vote. Combined cap 9% EFT Dues Draft. LAF non-compliance: franchisor may collect + 8% admin fee or redirect underspend to NAF.",
+        "Note 8: Special marketing contribution max 7% Monthly EFT per month, credited toward LAF.",
+        "Note 9: Emergency purchases only under limited, infrequent circumstances; must apply to all similarly situated businesses including corporate."
+      ]
+    },
+    {
+      "id": "item7_initial_investment",
+      "source_item": "Item 7",
+      "source_pages": [31, 32],
+      "title": "Estimated Initial Investment",
+      "columns": ["Expenditure", "Low", "High", "Payment Method", "When Due", "To Whom"],
+      "rows": [
+        {"item": "Initial Franchise Fee", "low": "$0", "high": "$20,000", "method": "Lump sum", "when": "At signing", "to": "Franchisor"},
+        {"item": "Site Selection Costs", "low": "$0", "high": "$10,000", "method": "Lump sum", "when": "As incurred", "to": "Franchisor"},
+        {"item": "Construction Dev Plan Review Fee", "low": "$0", "high": "$4,000", "method": "Lump sum", "when": "Upon submission", "to": "Franchisor"},
+        {"item": "Leasehold Improvements", "low": "$1,250,000", "high": "$2,142,000", "method": "Varies", "when": "Before opening", "to": "Approved suppliers"},
+        {"item": "Fitness Equipment", "low": "$36,300", "high": "$1,103,000", "method": "Varies", "when": "Varies", "to": "Lender/Affiliate"},
+        {"item": "Non-Fitness Equipment", "low": "$76,200", "high": "$1,061,000", "method": "Varies", "when": "Varies", "to": "Lender/Affiliate"},
+        {"item": "Pre-Sale/Grand Opening Marketing", "low": "$40,000", "high": "$132,000", "method": "Varies", "when": "Monthly", "to": "Various media"},
+        {"item": "Exterior Signs", "low": "$13,000", "high": "$37,000", "method": "Varies", "when": "Before opening", "to": "Approved suppliers"},
+        {"item": "Computer/POS System", "low": "$5,000", "high": "$13,000", "method": "Varies", "when": "Varies", "to": "Approved suppliers"},
+        {"item": "Insurance", "low": "$20,000", "high": "$40,000", "method": "Lump sum", "when": "Before opening", "to": "Insurance companies"},
+        {"item": "Real Estate Lease Deposits", "low": "$0", "high": "$87,000", "method": "Lump sum", "when": "At lease signing", "to": "Landlord"},
+        {"item": "Other Deposits", "low": "$0", "high": "$46,000", "method": "Lump sum", "when": "At engagement", "to": "Various"},
+        {"item": "Professional Fees", "low": "$5,000", "high": "$25,000", "method": "Varies", "when": "Varies", "to": "Advisors"},
+        {"item": "Training Expenses", "low": "$1,500", "high": "$7,500", "method": "Varies", "when": "Varies", "to": "Travel/lodging"},
+        {"item": "Licenses/Bonds", "low": "$10,000", "high": "$25,000", "method": "Lump sum", "when": "Before opening", "to": "Government"},
+        {"item": "Additional Funds (3 months)", "low": "$68,000", "high": "$469,000", "method": "Varies", "when": "Varies", "to": "Various"}
+      ],
+      "total_low": 1525000,
+      "total_high": 5221500,
+      "table_notes": [
+        "Excludes cost of purchasing or leasing real estate",
+        "Typical facility: 15,000-25,000 sq ft in strip centers, malls, freestanding",
+        "Wide range driven by equipment finance vs. purchase decision",
+        "Cannot borrow more than 80% of initial investment",
+        "Dense urban areas may significantly exceed estimates"
+      ]
+    },
+    {
+      "id": "item19_eft_revenue_franchised",
+      "source_item": "Item 19",
+      "source_pages": [84, 85],
+      "title": "2024 EFT Revenue - Franchised Clubs Only",
+      "population": 2197,
+      "excluded": 101,
+      "total_franchised": 2298,
+      "columns": ["Metric", "Bottom Third", "Middle Third", "Upper Third"],
+      "rows": [
+        {"metric": "Average Annual EFT Revenue", "bottom": 1205580, "middle": 1803265, "upper": 2613753},
+        {"metric": "Median Annual EFT Revenue", "bottom": 1255397, "middle": 1794689, "upper": 2493416},
+        {"metric": "High Annual EFT Revenue", "bottom": 1536894, "middle": 2093010, "upper": 5280380},
+        {"metric": "Low Annual EFT Revenue", "bottom": 283269, "middle": 1537067, "upper": 2093692},
+        {"metric": "Clubs", "bottom": 733, "middle": 732, "upper": 732}
+      ],
+      "attainment": {"bottom_pct": 58, "middle_pct": 48, "upper_pct": 40}
+    },
+    {
+      "id": "item19_eft_revenue_corporate",
+      "source_item": "Item 19",
+      "source_pages": [85],
+      "title": "2024 EFT Revenue - Corporate Clubs Only",
+      "population": 252,
+      "excluded": 18,
+      "total_corporate": 270,
+      "columns": ["Metric", "Bottom Third", "Middle Third", "Upper Third"],
+      "rows": [
+        {"metric": "Average Annual EFT Revenue", "bottom": 1322893, "middle": 1990138, "upper": 2650931},
+        {"metric": "Median Annual EFT Revenue", "bottom": 1338496, "middle": 1995768, "upper": 2537332},
+        {"metric": "High Annual EFT Revenue", "bottom": 1700173, "middle": 2232019, "upper": 4006957},
+        {"metric": "Low Annual EFT Revenue", "bottom": 543129, "middle": 1700376, "upper": 2236900},
+        {"metric": "Clubs", "bottom": 84, "middle": 84, "upper": 84}
+      ],
+      "attainment": {"bottom_pct": 54, "middle_pct": 51, "upper_pct": 35}
+    },
+    {
+      "id": "item19_eft_revenue_combined",
+      "source_item": "Item 19",
+      "source_pages": [86],
+      "title": "2024 EFT Revenue - All Clubs Combined",
+      "population": 2449,
+      "columns": ["Metric", "Bottom Third", "Middle Third", "Upper Third"],
+      "rows": [
+        {"metric": "Average Annual EFT Revenue", "bottom": 1215017, "middle": 1823030, "upper": 2619680},
+        {"metric": "Median Annual EFT Revenue", "bottom": 1269667, "middle": 1815044, "upper": 2505089},
+        {"metric": "High Annual EFT Revenue", "bottom": 1553589, "middle": 2112665, "upper": 5280380},
+        {"metric": "Low Annual EFT Revenue", "bottom": 283269, "middle": 1554498, "upper": 2112879},
+        {"metric": "Clubs", "bottom": 817, "middle": 816, "upper": 816}
+      ],
+      "attainment": {"bottom_pct": 58, "middle_pct": 48, "upper_pct": 39}
+    },
+    {
+      "id": "item19_revenue_operations",
+      "source_item": "Item 19",
+      "source_pages": [87, 88, 89, 90, 91],
+      "title": "2024 Revenue and Operations Statement - 252 Corporate Clubs",
+      "population": 252,
+      "columns": ["Line Item", "Bottom Avg", "Bottom Med", "Middle Avg", "Middle Med", "Upper Avg", "Upper Med"],
+      "rows": [
+        {"item": "Membership Sales - EFT", "bottom_avg": 1297728, "bottom_med": 1324688, "middle_avg": 1971895, "middle_med": 1976717, "upper_avg": 2613161, "upper_med": 2491321},
+        {"item": "Other Membership Sales", "bottom_avg": -20599, "bottom_med": -12972, "middle_avg": -22159, "middle_med": -19469, "upper_avg": -27983, "upper_med": -19898},
+        {"item": "Net Revenue", "bottom_avg": 1277129, "bottom_med": 1311716, "middle_avg": 1949736, "middle_med": 1957247, "upper_avg": 2585178, "upper_med": 2471424},
+        {"item": "Payroll", "bottom_avg": 286959, "bottom_med": 274100, "middle_avg": 324860, "middle_med": 314006, "upper_avg": 356039, "upper_med": 347868},
+        {"item": "Marketing Total", "bottom_avg": 114311, "bottom_med": 111671, "middle_avg": 156114, "middle_med": 156168, "upper_avg": 205499, "upper_med": 198165},
+        {"item": "Royalties", "bottom_avg": 92769, "bottom_med": 93695, "middle_avg": 139460, "middle_med": 139704, "upper_avg": 185249, "upper_med": 177613},
+        {"item": "Utilities", "bottom_avg": 66781, "bottom_med": 66968, "middle_avg": 72970, "middle_med": 67767, "upper_avg": 88055, "upper_med": 83896},
+        {"item": "Supplies/Maintenance", "bottom_avg": 66818, "bottom_med": 62154, "middle_avg": 85719, "middle_med": 82447, "upper_avg": 106492, "upper_med": 97571},
+        {"item": "Miscellaneous", "bottom_avg": 89097, "bottom_med": 87250, "middle_avg": 112154, "middle_med": 108439, "upper_avg": 134517, "upper_med": 127587},
+        {"item": "Total OpEx excl Rent", "bottom_avg": 716735, "bottom_med": 695838, "middle_avg": 891276, "middle_med": 868532, "upper_avg": 1075850, "upper_med": 1032700},
+        {"item": "EBITDAR", "bottom_avg": 560394, "bottom_med": 615878, "middle_avg": 1058460, "middle_med": 1088715, "upper_avg": 1509328, "upper_med": 1438724},
+        {"item": "EBITDAR %", "bottom_avg": 0.44, "bottom_med": 0.47, "middle_avg": 0.54, "middle_med": 0.56, "upper_avg": 0.58, "upper_med": 0.58},
+        {"item": "Rent", "bottom_avg": 293570, "bottom_med": 275548, "middle_avg": 375022, "middle_med": 354188, "upper_avg": 420244, "upper_med": 395519},
+        {"item": "EBITDA", "bottom_avg": 266824, "bottom_med": 340330, "middle_avg": 683438, "middle_med": 734527, "upper_avg": 1089084, "upper_med": 1043205},
+        {"item": "EBITDA %", "bottom_avg": 0.21, "bottom_med": 0.26, "middle_avg": 0.35, "middle_med": 0.38, "upper_avg": 0.42, "upper_med": 0.42},
+        {"item": "Avg Sqft", "bottom_avg": 18973, "bottom_med": 19188, "middle_avg": 19805, "middle_med": 19733, "upper_avg": 21530, "upper_med": 21034}
+      ],
+      "ebitdar_attainment": {"bottom_pct": 58, "middle_pct": 50, "upper_pct": 35},
+      "ebitda_attainment": {"bottom_pct": 61, "middle_pct": 57, "upper_pct": 46},
+      "table_notes": [
+        "Corporate-only data; franchisee expense data not received.",
+        "EBITDA excludes income taxes, depreciation, amortization, debt service, initial investment.",
+        "Does not include equipment replacement or remodel costs.",
+        "Monthly decline/return rates: 3.0%-34.8% of gross EFT.",
+        "Insurance based on bulk-buy pricing for multiple clubs.",
+        "Net Revenue attainment: Bottom 55%, Middle 51%, Upper 33%."
+      ]
+    },
+    {
+      "id": "item20_table1",
+      "source_item": "Item 20",
+      "source_pages": [92],
+      "title": "System-wide Outlet Summary 2022-2024",
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 2060, "end": 2082, "net": 22},
+        {"type": "Franchised", "year": 2023, "start": 2082, "end": 2201, "net": 119},
+        {"type": "Franchised", "year": 2024, "start": 2201, "end": 2298, "net": 97},
+        {"type": "Company-Owned", "year": 2022, "start": 110, "end": 232, "net": 122},
+        {"type": "Company-Owned", "year": 2023, "start": 232, "end": 254, "net": 22},
+        {"type": "Company-Owned", "year": 2024, "start": 254, "end": 270, "net": 16},
+        {"type": "Total", "year": 2022, "start": 2170, "end": 2314, "net": 144},
+        {"type": "Total", "year": 2023, "start": 2314, "end": 2455, "net": 141},
+        {"type": "Total", "year": 2024, "start": 2455, "end": 2568, "net": 113}
+      ],
+      "table_notes": ["Figures as of December 31 of each year", "Company-owned includes affiliate-operated locations"]
+    },
+    {
+      "id": "item20_table2_transfers",
+      "source_item": "Item 20",
+      "source_pages": [92, 93, 94, 95],
+      "title": "Transfers of Outlets From Franchisees to New Owners 2022-2024",
+      "transfers_total": {"2022": 206, "2023": 100, "2024": 270},
+      "table_notes": ["Does not include transfers where <50% beneficial ownership unchanged, individual-to-entity, or transfers to heirs"]
+    },
+    {
+      "id": "item20_table3_franchised_status",
+      "source_item": "Item 20",
+      "source_pages": [95, 96, 97, 98, 99],
+      "title": "Status of Franchised Outlets 2022-2024",
+      "footer_totals": {
+        "2022": {"start": 2073, "opened": 118, "terminations": 0, "non_renewals": 0, "reacquired": 114, "ceased_operations": 1, "end": 2082},
+        "2023": {"start": 2082, "opened": 123, "terminations": 0, "non_renewals": 0, "reacquired": 4, "ceased_operations": 0, "end": 2201},
+        "2024": {"start": 2201, "opened": 100, "terminations": 1, "non_renewals": 0, "reacquired": 0, "ceased_operations": 2, "end": 2298}
+      },
+      "table_notes": [
+        "If multiple events affected an outlet, table shows last event in time.",
+        "2022: Affiliate acquired 114 franchised clubs in single transaction. Affiliate sold 6 clubs to franchisee.",
+        "2023: Affiliate acquired 4 franchised clubs in single transaction.",
+        "2024: 1 termination in Illinois. Ceased operations: 1 California, 1 Ohio."
+      ]
+    },
+    {
+      "id": "item20_table4_company_owned_status",
+      "source_item": "Item 20",
+      "source_pages": [99, 100],
+      "title": "Status of Company-Owned Outlets 2022-2024",
+      "footer_totals": {
+        "2022": {"start": 110, "opened": 15, "reacquired_from_franchisees": 114, "closed": 1, "sold_to_franchisees": 6, "end": 232},
+        "2023": {"start": 232, "opened": 18, "reacquired_from_franchisees": 4, "closed": 0, "sold_to_franchisees": 0, "end": 254},
+        "2024": {"start": 254, "opened": 16, "reacquired_from_franchisees": 0, "closed": 0, "sold_to_franchisees": 0, "end": 270}
+      },
+      "table_notes": [
+        "Company-owned includes affiliate-operated locations.",
+        "One NY club relocated to nearby PA site (2022)."
+      ]
+    },
+    {
+      "id": "item20_table5_projected_openings",
+      "source_item": "Item 20",
+      "source_pages": [101, 102],
+      "title": "Projected Openings as of December 31, 2024",
+      "projected_openings_total": {
+        "signed_not_opened": 84,
+        "projected_new_franchised": 78,
+        "projected_new_company_owned": 9
+      },
+      "table_notes": ["Based on signed leases as of December 31, 2024"]
+    },
+    {
+      "id": "item11_training_program",
+      "source_item": "Item 11",
+      "source_pages": [57, 58, 59],
+      "title": "Training Program",
+      "columns": ["Subject", "Classroom Hours", "On-the-Job Hours", "Location"],
+      "rows": [
+        {"subject": "Phase 1: Owner Orientation", "classroom": 14, "otj": 0, "location": "Hampton, NH HQ + PF business"},
+        {"subject": "Phase 2: Pre-Sale/Operations Training", "classroom": 20, "otj": 20, "location": "Hampton, NH HQ + PF business"},
+        {"subject": "Manager Workshops", "classroom": 16, "otj": 0, "location": "Hampton, NH HQ + PF business"},
+        {"subject": "Regional Manager Workshops", "classroom": 16, "otj": 0, "location": "Hampton, NH HQ + PF business"},
+        {"subject": "PF University e-Learning", "classroom": 8, "otj": 0, "location": "Remote"}
+      ],
+      "total_hours": {"classroom": 74, "on_the_job": 20, "grand_total": 94},
+      "table_notes": ["Training may be conducted remotely. No charge for initial training up to 3 people. Franchisee bears travel/lodging costs."]
+    }
+  ]
+}

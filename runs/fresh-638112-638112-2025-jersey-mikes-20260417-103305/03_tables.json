@@ -1,0 +1,199 @@
+{
+  "tables": [
+    {
+      "id": "item5_initial_fees",
+      "item": "Item 5",
+      "title": "Initial Fees Summary",
+      "source_pages": [14],
+      "columns": ["Fee", "Amount", "Refundable"],
+      "rows": [
+        {"fee": "Development Fee", "amount": "$10,000 per restaurant", "refundable": false},
+        {"fee": "Initial Franchise Fee", "amount": "$20,000", "refundable": false},
+        {"fee": "Grand Opening Advertising", "amount": "$10,000 ($5,000 for transfers/relocations)", "refundable": false},
+        {"fee": "POS Network Connection", "amount": "$4,500", "refundable": false},
+        {"fee": "POS License", "amount": "$2,000-$4,000 (1-2 registers)", "refundable": false}
+      ],
+      "table_notes": ["Fees are typically uniform. Coach Rod Smith participants may finance initial franchise fee."]
+    },
+    {
+      "id": "item6_fee_table",
+      "item": "Item 6",
+      "title": "Other Fees",
+      "source_pages": [15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Continuing Royalty Fees", "amount": "6.5% of Gross Receipts", "due_date": "Weekly via wire transfer", "remarks": "See Definition of Gross Receipts"},
+        {"type": "Grand Opening Advertising", "amount": "$10,000; $5,000 for transfers/relocations", "due_date": "At FA signing or transfer closing", "remarks": "Spent during first month of operation"},
+        {"type": "Corporate Advertising and Development Fund", "amount": "Currently 1.0% of Gross Receipts", "due_date": "Same as royalty", "remarks": "May increase to 6%. Total of all 3 funds capped at 6%"},
+        {"type": "Cooperative Advertising Fund", "amount": "Currently not required", "due_date": "Same as royalty", "remarks": "Total of all 3 funds capped at 6%"},
+        {"type": "National Media Fund", "amount": "4.0% of Gross Receipts", "due_date": "Same as royalty", "remarks": "Total of all 3 funds capped at 6%"},
+        {"type": "Audit", "amount": "Cost of audit plus interest", "due_date": "30 days after billing", "remarks": "Only if 2%+ understatement of Gross Receipts"},
+        {"type": "Operation in Default", "amount": "$125/hour plus expenses", "due_date": "Weekly", "remarks": "If default not cured in 20 days"},
+        {"type": "Late Fees", "amount": "1.5%/month max; 5% charge or $25 minimum", "due_date": "After due date", "remarks": "On all late payments"},
+        {"type": "Supplier/Supplies Approval", "amount": "Reasonable cost of inspection", "due_date": "Time of inspection", "remarks": "For unapproved suppliers"},
+        {"type": "General Contractor Approval", "amount": "$5,000 each", "due_date": "At construction start", "remarks": "May be waived"},
+        {"type": "Architect Approval", "amount": "$5,000 each", "due_date": "At construction start", "remarks": "May be waived"},
+        {"type": "Operation in Absence/Death", "amount": "$125/hour plus expenses", "due_date": "Weekly", "remarks": "Rate subject to change"},
+        {"type": "POS Software License & Support", "amount": "$395/month (may increase to $795/month)", "due_date": "1st of month", "remarks": "All software programs, licensing, upgrades, Help Desk"},
+        {"type": "Secure Network Fee", "amount": "$31.85/month (may increase to $39.85/month)", "due_date": "1st of month", "remarks": "Credit card processing and data transfer"},
+        {"type": "Back-Up Cellular Service", "amount": "$30/month", "due_date": "1st of month", "remarks": "Subject to change"},
+        {"type": "Teamworx Software Fee", "amount": "$53.50/month (optional; $59.99 by April 2026)", "due_date": "1st of month", "remarks": "Labor management via Crunchtime platform"},
+        {"type": "Gift Card Program", "amount": "$9.50/month", "due_date": "1st of month", "remarks": "Collected by Company, paid to vendor"},
+        {"type": "Third-Party Delivery Fee", "amount": "$6-$9 per delivery", "due_date": "As incurred", "remarks": "Based on delivery distance"},
+        {"type": "Online Ordering Fees", "amount": "$0.2921/transaction + 3.74% of sale", "due_date": "1st of month", "remarks": "Credit card, patent licensing, e-commerce, sales tax, authentication"},
+        {"type": "Third-Party Order Fees", "amount": "$0.2921/transaction (not currently charged)", "due_date": "1st of month", "remarks": "Third-party order integration"},
+        {"type": "Text Message Fees", "amount": "$0.025/text", "due_date": "As incurred", "remarks": "Franchisee-initiated texts only"},
+        {"type": "Transfer Fee", "amount": "$15,000 per restaurant", "due_date": "At closing", "remarks": "Does not apply to Section 19.6 assignments"},
+        {"type": "Replacement Training", "amount": "Up to $2,500 per trainee", "due_date": "In advance", "remarks": "Subject to change"},
+        {"type": "Additional Assistance", "amount": "$75/hour plus expenses", "due_date": "Time of assistance", "remarks": "3 days included at opening"},
+        {"type": "Continuing Education", "amount": "Your expenses + employee expenses", "due_date": "Time of program", "remarks": "Max 2x/year, 4 days total"},
+        {"type": "Maintenance", "amount": "Cost of maintenance", "due_date": "Time of maintenance", "remarks": "If franchisee fails, Company may enter premises"},
+        {"type": "Cost of Enforcement/Defense", "amount": "All costs + attorneys fees ($300/hour in-house)", "due_date": "On settlement/conclusion", "remarks": "Prevailing party recovers"},
+        {"type": "Relocation Fee", "amount": "$5,000 plus costs", "due_date": "At relocation", "remarks": "If Company allows relocation"},
+        {"type": "Bookkeeping/Accounting Fee", "amount": "~$150/week (subject to change)", "due_date": "Within 10 days after month end", "remarks": "Coach Rod Smith participants only"},
+        {"type": "Indemnification", "amount": "All costs + attorneys fees", "due_date": "On settlement/conclusion", "remarks": "Franchisee holds Company harmless"},
+        {"type": "Liquidated Damages", "amount": "Avg monthly royalty+ad × lesser of 36 or remaining months", "due_date": "Upon termination for default", "remarks": "In addition to other damages"}
+      ],
+      "table_notes": [
+        "Note 1: Gross Receipts includes all sales less taxes and refunds/discounts/coupons",
+        "Note 2: Grand Opening Advertising - $10,000 ($5,000 for transfers/relocations), non-refundable",
+        "Note 3: Corporate Ad Fund - 1.0% currently, may increase to 6%. Amounts may be reallocated between funds",
+        "Note 4: Cooperative Ad Fund - currently inactive/not required",
+        "Note 5: National Media Fund - 4.0%, may increase to 6%. 2024: 96.3% media placement",
+        "Note 6: Audit - if 2%+ discrepancy, franchisee pays all inspection costs",
+        "Note 7-11: Various operational fees",
+        "Note 12: Transfer fee $15,000 for administrative/overhead/legal costs",
+        "Note 13: Replacement training $2,500 for Phases 1 and 3 (360 hours)",
+        "Note 14-18: Additional assistance, continuing education, maintenance, enforcement, relocation fees",
+        "Note 19: Bookkeeping ~$150/week for Coach Rod Smith participants only",
+        "Note 20: Indemnification - franchisee not Company's agent",
+        "Note 22: Liquidated damages formula detailed"
+      ]
+    },
+    {
+      "id": "item7_initial_investment",
+      "item": "Item 7",
+      "title": "Estimated Initial Investment",
+      "source_pages": [23, 24],
+      "columns": ["Type of Expenditure", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Development Fee", "low": "$10,000", "high": "$10,000", "method": "Lump Sum", "when": "On Signing ADA", "to_whom": "Company"},
+        {"type": "Initial Franchise Fee", "low": "$20,000", "high": "$20,000", "method": "Lump Sum", "when": "On Signing FA", "to_whom": "Company"},
+        {"type": "Rent/Lease/CAM/Deposits", "low": "$0", "high": "$72,480", "method": "Monthly", "when": "Monthly", "to_whom": "Landlord"},
+        {"type": "Architectural Fees", "low": "$1,050", "high": "$33,142", "method": "As Incurred", "when": "As Arranged", "to_whom": "Approved Suppliers"},
+        {"type": "Leasehold Improvements", "low": "$75,172", "high": "$722,422", "method": "As Arranged", "when": "As Arranged", "to_whom": "Landlord/Contractors"},
+        {"type": "Equipment/Furniture/Smallwares", "low": "$31,627", "high": "$207,546", "method": "As Arranged", "when": "As Arranged", "to_whom": "Designated/Approved Suppliers"},
+        {"type": "Initial Inventory", "low": "$1,923", "high": "$35,000", "method": "As Arranged", "when": "As Arranged", "to_whom": "Designated/Approved Suppliers"},
+        {"type": "Insurance", "low": "$1,000", "high": "$24,780", "method": "As Arranged", "when": "As Arranged", "to_whom": "Insurance Company"},
+        {"type": "Training", "low": "$1,000", "high": "$68,000", "method": "As Incurred", "when": "As Incurred", "to_whom": "Transportation/Hotels/Staff"},
+        {"type": "Grand Opening Advertising", "low": "$10,000", "high": "$10,000", "method": "Lump Sum", "when": "On Signing FA", "to_whom": "Company"},
+        {"type": "Exterior Signage", "low": "$1,121", "high": "$40,073", "method": "As Arranged", "when": "As Arranged", "to_whom": "Approved Suppliers"},
+        {"type": "Interior Branding/Graphics", "low": "$1,610", "high": "$11,208", "method": "As Incurred", "when": "As Incurred", "to_whom": "Approved Suppliers"},
+        {"type": "Uniforms/Office/TVs/Security", "low": "$900", "high": "$65,507", "method": "As Incurred", "when": "As Incurred", "to_whom": "Designated/Approved Suppliers"},
+        {"type": "POS System", "low": "$8,250", "high": "$27,509", "method": "As Incurred", "when": "As Incurred", "to_whom": "Designated Suppliers"},
+        {"type": "POS Network Connection", "low": "$4,500", "high": "$4,500", "method": "As Incurred", "when": "Prior to Opening", "to_whom": "Company"},
+        {"type": "POS License", "low": "$2,000", "high": "$4,000", "method": "As Incurred", "when": "Prior to Opening", "to_whom": "Company"},
+        {"type": "Professional Fees", "low": "$250", "high": "$21,425", "method": "As Incurred", "when": "As Incurred", "to_whom": "Accountant/Lawyer"},
+        {"type": "Business Licenses/Permits", "low": "$500", "high": "$25,000", "method": "As Incurred", "when": "As Incurred", "to_whom": "Municipality/State"},
+        {"type": "Additional Funds (3 months)", "low": "$15,000", "high": "$15,000", "method": "As Incurred", "when": "As Incurred", "to_whom": "Suppliers/Employees"}
+      ],
+      "total_low": "$185,903",
+      "total_high": "$1,417,592",
+      "table_notes": ["Does not include international, non-traditional, standalone, or drive-thru locations", "Company does not offer direct financing except Coach Rod Smith Program"]
+    },
+    {
+      "id": "item19_fpr",
+      "item": "Item 19",
+      "title": "Unit Volume During Measurement Period (Jan-Dec 2024)",
+      "source_pages": [63],
+      "columns": ["Metric", "Value"],
+      "rows": [
+        {"metric": "Number of Restaurants", "value": "2,255"},
+        {"metric": "Average Unit Volume", "value": "$1,338,874"},
+        {"metric": "Median Unit Volume", "value": "$1,285,259"},
+        {"metric": "High", "value": "$4,131,736"},
+        {"metric": "Low", "value": "$472,525"},
+        {"metric": "Met or Exceeded Average", "value": "1,013 / 45%"}
+      ],
+      "table_notes": [
+        "Traditional Franchised Restaurants only (operated >360 days, using designated POS, not non-traditional, not company/affiliate-owned)",
+        "Excluded 734 restaurants: 683 <361 days, 10 non-POS, 12 non-traditional, 29 company/affiliate-owned",
+        "No cost build-up or profitability data provided",
+        "Substantiation available on request"
+      ]
+    },
+    {
+      "id": "item20_table1_systemwide",
+      "item": "Item 20",
+      "title": "Table 1 - Systemwide Outlet Summary (2022-2024)",
+      "source_pages": [63, 64],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 2069, "end": 2361, "net_change": 292},
+        {"type": "Franchised", "year": 2023, "start": 2361, "end": 2647, "net_change": 286},
+        {"type": "Franchised", "year": 2024, "start": 2647, "end": 2955, "net_change": 308},
+        {"type": "Company-Owned", "year": 2022, "start": 22, "end": 26, "net_change": 4},
+        {"type": "Company-Owned", "year": 2023, "start": 26, "end": 28, "net_change": 2},
+        {"type": "Company-Owned", "year": 2024, "start": 28, "end": 34, "net_change": 6},
+        {"type": "Total", "year": 2022, "start": 2091, "end": 2387, "net_change": 296},
+        {"type": "Total", "year": 2023, "start": 2387, "end": 2675, "net_change": 288},
+        {"type": "Total", "year": 2024, "start": 2675, "end": 2989, "net_change": 314}
+      ],
+      "table_notes": ["Numbers as of December 31 of each year", "Company does not own restaurants; company-owned are affiliate-owned", "7 company-owned outlets reclassified as franchised post-Blackstone acquisition (Jan 15, 2025)"]
+    },
+    {
+      "id": "item20_table2_transfers",
+      "item": "Item 20",
+      "title": "Table 2 - Transfers of Outlets (2022-2024)",
+      "source_pages": [64, 65, 66],
+      "transfers_total": {"2022": 105, "2023": 96, "2024": 79},
+      "table_notes": ["Numbers as of December 31 of each year"]
+    },
+    {
+      "id": "item20_table3_franchised_status",
+      "item": "Item 20",
+      "title": "Table 3 - Franchised Outlets Status Summary (2022-2024)",
+      "source_pages": [66, 67, 68, 69, 70],
+      "footer_totals": {
+        "2022": {"start": 2069, "opened": 301, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_operations": 9, "end": 2361},
+        "2023": {"start": 2361, "opened": 296, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_operations": 10, "end": 2647},
+        "2024": {"start": 2647, "opened": 318, "terminations": 0, "non_renewals": 0, "reacquired": 5, "ceased_operations": 5, "end": 2955}
+      },
+      "terminations_total": 0,
+      "non_renewals_total": 0,
+      "reacquired_total": 5,
+      "ceased_operations_total": 24,
+      "table_notes": ["Numbers as of December 31 of each year", "Zero terminations and zero non-renewals across all three years"]
+    },
+    {
+      "id": "item20_table4_company_owned",
+      "item": "Item 20",
+      "title": "Table 4 - Company-Owned Outlets Status Summary (2022-2024)",
+      "source_pages": [70, 71],
+      "footer_totals": {
+        "2022": {"start": 22, "opened": 10, "reacquired": 0, "closed": 1, "sold_to_franchisee": 5, "end": 26},
+        "2023": {"start": 26, "opened": 3, "reacquired": 0, "closed": 0, "sold_to_franchisee": 1, "end": 28},
+        "2024": {"start": 28, "opened": 6, "reacquired": 6, "closed": 1, "sold_to_franchisee": 5, "end": 34}
+      },
+      "sold_total": 11,
+      "table_notes": ["Numbers as of December 31 of each year", "Company does not own restaurants; affiliate-owned", "7 reclassified post-Blackstone acquisition"]
+    },
+    {
+      "id": "item20_table5_projected",
+      "item": "Item 20",
+      "title": "Table 5 - Projected Openings (as of Dec 31, 2024)",
+      "source_pages": [72, 73],
+      "projected_openings_total": {"signed_not_opened": 574, "projected_franchised_2025": 270, "projected_company_2025": 7},
+      "table_notes": ["Projected for next fiscal year (2025)"]
+    },
+    {
+      "id": "item9_obligations",
+      "item": "Item 9",
+      "title": "Franchisee's Obligations",
+      "source_pages": [31, 32],
+      "columns": ["Obligation", "FA Section", "ADA Section", "Disclosure Item"],
+      "rows_count": 26,
+      "table_notes": ["Cross-reference table between FA, ADA, and FDD items"]
+    }
+  ]
+}

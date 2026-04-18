@@ -1,0 +1,89 @@
+{
+  "run_id": "fresh-640447-640447-2026-arbys-20260417-103305",
+  "fdd_id": "640447",
+  "brand": "Arby's",
+  "franchisor_legal_name": "Arby's Franchisor, LLC",
+  "state_filed": "Wisconsin (WI-DFI)",
+  "issuance_date": "2026-03-26",
+  "extraction_date": "2026-04-18",
+  "pdf_filename": "640447-2026-Arbys.pdf",
+  "pdf_pages": 329,
+  "pipeline_version": "automation_v1",
+  "run_metrics": {
+    "items_covered": 23,
+    "items_total": 23,
+    "exhibits_cataloged": 18,
+    "tables_extracted": 13,
+    "leadership_roster_count": 22,
+    "unresolveds_count": 5,
+    "contradictions_count": 0,
+    "retry_tasks_count": 5,
+    "retries_executed": 0,
+    "item21_extraction_method": "normal_text_extraction",
+    "state_addenda_extracted": 4,
+    "canonical_top_level_keys": 35,
+    "depth_pass_1_financial_notes": {
+      "franchisor_notes_walked": 7,
+      "arg_statements_read": true,
+      "arg_key_notes_read": true
+    },
+    "depth_pass_2_contract_burdens": {
+      "clauses_walked": 8,
+      "key_findings": 5
+    },
+    "depth_pass_3_promotion_audit": {
+      "facts_promoted": 10
+    },
+    "depth_pass_4_state_addenda": {
+      "states_structured": 6,
+      "overrides_extracted": 19,
+      "override_families": 11
+    }
+  },
+  "key_brand_metrics": {
+    "system_size_us": 3265,
+    "franchised_units": 2344,
+    "company_owned_units": 921,
+    "international_units": 243,
+    "average_auv": 1274787,
+    "median_auv": 1201669,
+    "investment_low": 651550,
+    "investment_high": 2456600,
+    "royalty_rate": "4% (Traditional); 6.2% (Non-Traditional)",
+    "advertising_rate": "3.22%-5.0% + local/co-op (min aggregate 5.2%)",
+    "initial_term": "Up to 20 years (Traditional)",
+    "auditor": "KPMG LLP",
+    "opinion": "Unqualified",
+    "net_income_2025": 152950000,
+    "total_assets": 302707000,
+    "gag_clause": true
+  },
+  "files_created": [
+    "00_bootstrap.json",
+    "00_item_map.json",
+    "01_source_map.md",
+    "02_reader_report.md",
+    "03_tables.json",
+    "04_exhibits.json",
+    "05_canonical.json",
+    "06_coverage_audit.md",
+    "07_retry_tasks.md",
+    "08_final_report.md",
+    "09_final_canonical.json",
+    "10_scorecard.md",
+    "14_run_summary.json",
+    "RT_depth_financial_notes.json",
+    "RT_depth_contract_burdens.json",
+    "RT_depth_promotion_audit.json",
+    "RT_depth_state_addenda_promotion.json"
+  ],
+  "files_count": 17,
+  "notes": [
+    "A1 extraction complete. All 23 items fully covered.",
+    "5 retry tasks deferred to A2 depth passes: FA clause walk, state addenda, ARG notes, General Release, DA clause walk.",
+    "Enriched canonical files (11, 12) to be written after final canonical updates.",
+    "329-page PDF with excellent text layer throughout.",
+    "Two sets of financial statements: Franchisor LLC (pp. 175-190) and ARG (pp. 192-216).",
+    "Major 2025 refranchising event: 115 company stores sold to franchisees."
+  ]
+}

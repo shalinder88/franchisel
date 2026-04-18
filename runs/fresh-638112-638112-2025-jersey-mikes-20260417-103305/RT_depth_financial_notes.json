@@ -1,0 +1,90 @@
+{
+  "depth_pass": "A2_depth_pass_1_financial_notes",
+  "entity_d1": {
+    "note_1_business_description": {"summary": "A Sub Above LLC, Delaware LLC, wholly-owned subsidiary of Jersey Mike's Funding LLC (Master Issuer). Primarily engaged in franchising Jersey Mike's restaurants.", "source_pages": [173]},
+    "note_2_accounting_policies": {
+      "revenue_recognition": "Royalty fees (ASC 606) recognized when earned. Franchise fees recognized over term of each franchise/ADA agreement as deferred revenue.",
+      "cash_equivalents": "Maturity <3 months. $0 equivalents in 2024, $5.3M in 2023.",
+      "restricted_cash": "$8.7M for securitization reserves + franchisee/cooperative cash collected and transferred weekly.",
+      "accounts_receivable": "Royalty receivables, no reserve deemed necessary.",
+      "intangible_assets": "Trademark, area service agreements, software, website. Straight-line amortization.",
+      "impairment": "No triggering events identified 2022-2024.",
+      "income_taxes": "Disregarded entity for federal taxes. Minimal state income taxes ($825 in 2024). Earnings included in Jersey Mike's Inc. consolidated returns.",
+      "fair_value": "Level 1/2/3 hierarchy; financial instruments at cost approximating fair value.",
+      "source_pages": [173, 174, 175]
+    },
+    "note_3_securitization": {
+      "initial_2019": "Parent contributed IP, franchise agreements, ADA agreements to Company. License agreement back to Parent.",
+      "management_agreement": "JMFS receives annual base fees + percentage of cash collections for management services.",
+      "subsequent_transactions": "Second securitization Dec 2021, third Dec 2024.",
+      "dependency": "Master Issuer dependent on Company for cash flows to service senior notes.",
+      "source_pages": [175, 176]
+    },
+    "note_4_services_from_manager": {
+      "balance_2024": "$3,679,049",
+      "amortization_2024": "$737,810",
+      "remaining_life": "Through 2029",
+      "source_pages": [176]
+    },
+    "restaurant_count": {"as_of_dec_2024": 2997, "under_contract": 964, "source_pages": [174]}
+  },
+  "entity_d2": {
+    "note_1_business": {"subsidiaries_count": 40, "vies_identified": "Certain franchisees are VIEs; Company not primary beneficiary — not consolidated.", "canada_acquisition": "Acquired noncontrolling 49% of Canada entity Q3 2023; sold Canada stores March 2024.", "source_pages": [190, 191]},
+    "note_2_accounting": {
+      "cash_equivalents_2024": "$764.7M",
+      "restricted_cash_2024": "$103.5M (securitization reserves + note receivable reserves)",
+      "vendor_receivables_2024": "$21.1M",
+      "gift_card": "JM Gift Card Operating Co. LLC formed for gift card restructuring.",
+      "source_pages": [191, 192]
+    },
+    "note_4_securitization": {
+      "series_2019": {"amount": "$500M", "class": "A-2", "anticipated_repayment": "Feb 2027", "final_maturity": "Feb 2050", "carrying_2024": "$496,250,000", "fair_value_2024": "$490,543,125"},
+      "series_2021_tranche_1": {"amount": "$250M", "class": "A-2-I", "anticipated_repayment": "Feb 2027", "carrying_2024": "$248,750,000", "fair_value_2024": "$238,551,250"},
+      "series_2021_tranche_2": {"amount": "$250M", "class": "A-2-II", "anticipated_repayment": "Feb 2029", "carrying_2024": "$248,750,000", "fair_value_2024": "$221,462,125"},
+      "series_2024": {"amount": "$750M", "class": "A-2", "anticipated_repayment": "Feb 2032", "final_maturity": "Feb 2055", "carrying_2024": "$750,000,000", "fair_value_2024": "$743,025,000"},
+      "total_senior_notes": "$1,743,750,000 (face value)",
+      "debt_issuance_costs_2024": "$28,809,729",
+      "net_long_term_debt_2024": "$1,699,315,271",
+      "secured_by": "Substantially all assets of Master Issuer and subsidiaries",
+      "source_pages": [196, 197]
+    },
+    "note_5_notes_receivable": {
+      "total_2024": "$7,413,563",
+      "interest_rates": "3%-10%",
+      "maturity": "Through October 2037",
+      "secured_by": "Franchisee assets",
+      "notes_sold_to_bank_2021": "$12,770,693 at 0.5% premium",
+      "notes_sold_to_bank_2022": "$8,518,559 at 0.5% premium",
+      "reserve_requirement": "18% of outstanding balance",
+      "source_pages": [197, 198]
+    },
+    "note_6_property_equipment": {
+      "aircraft_2024": "$41,744,200",
+      "aircraft_cip_2024": "$41,000,000",
+      "total_ppe_gross_2024": "$102,728,674",
+      "accumulated_depreciation": "$12,995,155",
+      "net_2024": "$89,733,519",
+      "depreciation_2024": "$3,030,354",
+      "source_pages": [198]
+    },
+    "note_7_unconsolidated_affiliates": {
+      "advances_2024": "$14,061,102",
+      "description": "Advances to franchise locations not owned by sole stockholder/family",
+      "source_pages": [198]
+    },
+    "note_18_subsequent_events": {
+      "blackstone_acquisition": {
+        "agreement_date": "November 8, 2024",
+        "buyer": "Submarine Buyer LLC (controlled by Blackstone Inc. affiliates)",
+        "closing_date": "January 16, 2025",
+        "enterprise_value": "$8.0 billion",
+        "earnout": "Up to $250M additional, payable upon certain conditions or change in control",
+        "structure": "Jersey Mike's Inc. formed Jersey Mike's HoldCo LLC to hold 100% of Company equity",
+        "entities_transferred_to_seller": "2251 Landmark Place LLC and Farnborough LLC (decreases P&E ~$79M and notes payable ~$56M)",
+        "purchase_price_allocation": "Not yet complete; expected within measurement period (up to 1 year)",
+        "variable_funding_notes": "$100M Series 2024-1 VFN revolving facility"
+      },
+      "source_pages": [205]
+    }
+  }
+}

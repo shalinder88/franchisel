@@ -1,0 +1,65 @@
+{
+  "depth_pass": "A2 Depth Pass 2 — Contract Burden Depth",
+  "franchise_agreement": {
+    "exhibit": "F-1",
+    "pages": [185, 225],
+    "total_sections": 39,
+    "burdens": [
+      {"clause_family": "grant_and_term", "section": "2, 4", "obligation": "Franchise grant for specific territory; term ends June 1 following 10th full Tax Season", "trigger": "Signing of FLA", "duration": "~10 years", "source_pages": [187, 188]},
+      {"clause_family": "initial_fee", "section": "5", "obligation": "$2,500 initial franchise fee, fully earned and non-refundable", "trigger": "Execution of FLA", "money": "$2,500", "source_pages": [188]},
+      {"clause_family": "royalty", "section": "6", "obligation": "Tiered royalty: 60%/40%/20% structure with early-pay discounts", "trigger": "Revenue generation", "money": "60%/50% on first $5K; 40%/30% above $5K; 20% incentive on incremental growth", "source_pages": [188, 189]},
+      {"clause_family": "training", "section": "7", "obligation": "Must attend and complete Initial Training to satisfaction; management employees may also be required to attend", "trigger": "New franchise or new principal", "source_pages": [189, 190]},
+      {"clause_family": "computer_systems", "section": "8", "obligation": "Must use H&R Block System, software, and BTR-compliant hardware exclusively; no other tax prep software permitted", "restriction": "Prohibited from using non-approved software, hardware, or systems", "source_pages": [190, 191]},
+      {"clause_family": "conduct_of_business", "section": "10", "obligation": "Full-time best efforts during Tax Season and Preseason; comply with Manual; maintain standards", "restriction": "Cannot operate internet website or solicit online without authorization", "source_pages": [192, 193]},
+      {"clause_family": "books_records", "section": "11", "obligation": "Maintain accurate books and records; submit to inspections and audits", "trigger": "Ongoing obligation; audit if ≥2% revenue understatement", "source_pages": [195, 196]},
+      {"clause_family": "noncompete_during_term", "section": "12", "obligation": "Franchisee and Associates prohibited from competing", "restriction": "No owning/working at similar business within 45 miles of territory or any Network Office", "duration": "During term", "source_pages": [197, 198]},
+      {"clause_family": "noncompete_post_term", "section": "12", "obligation": "Post-term noncompete and non-solicitation", "restriction": "No similar business within 25 miles of territory for 2 years; no client solicitation", "duration": "2 years", "exceptions": "Franchisee termination under §15 with all requirements met", "source_pages": [197, 198]},
+      {"clause_family": "termination_incurable", "section": "13", "obligation": "Immediate termination for specified incurable defaults", "trigger": "Prohibited competition, 3+ defaults in 12 months, conviction, fraud, e-file suspension, bankruptcy, false records, prohibited transfer, cross-default", "source_pages": [200, 201]},
+      {"clause_family": "termination_curable", "section": "14", "obligation": "Termination with cure period for other breaches", "trigger": "Breach of FLA not listed in §13", "duration": "15+ days to cure", "source_pages": [201]},
+      {"clause_family": "termination_by_franchisee", "section": "15", "obligation": "Franchisee may terminate with notice and payment", "trigger": "30 days written notice before June 1", "money": "25% of 3-year average gross sales (or 100% of prior year if <3 years)", "source_pages": [202]},
+      {"clause_family": "post_termination", "section": "16", "obligation": "Complete de-identification, return files, assign phone numbers and elected leases, pay all sums", "restriction": "If franchisee owns real property, 2-year prohibition on similar-service use", "duration": "Immediate upon termination + 2-year real property restriction", "source_pages": [203, 204]},
+      {"clause_family": "rofr", "section": "17", "obligation": "Franchisor has 30-day right of first refusal to match bona fide offer", "trigger": "Franchisee receives third-party purchase offer", "duration": "30 days", "source_pages": [205]},
+      {"clause_family": "transfer", "section": "18", "obligation": "All transfers require franchisor approval except certain restructurings", "money": "$2,500 transfer fee", "conditions": ["Payment of debts", "No default", "Transferee qualifications", "May require then-current FLA"], "source_pages": [206, 207]},
+      {"clause_family": "death_disability", "section": "20", "obligation": "Estate must transfer within 6 months", "trigger": "Death or incapacity of franchisee", "duration": "6 months", "source_pages": [209]},
+      {"clause_family": "indemnification", "section": "21", "obligation": "Franchisee indemnifies H&R Block for claims arising from franchisee's operations", "source_pages": [210]},
+      {"clause_family": "independent_contractor", "section": "24", "obligation": "Franchisee is independent contractor, not employee, agent, partner, or joint venturer", "source_pages": [212]},
+      {"clause_family": "applicable_law", "section": "29", "obligation": "Missouri law governs; venue in Jackson County, Missouri state or federal court", "exceptions": "Subject to state-specific amendments (11 states)", "source_pages": [213]},
+      {"clause_family": "litigation_limitations", "section": "39", "obligation": "Limitations on litigation remedies", "source_pages": [216]},
+      {"clause_family": "waiver_of_jury", "section": "FLA", "obligation": "Waiver of jury trial (if included)", "source_pages": [213]}
+    ]
+  },
+  "loan_agreements": {
+    "term_loan": {
+      "exhibit": "H-1",
+      "pages": [233, 248],
+      "key_terms": {
+        "interest_rate": "Prime + 3.0%",
+        "admin_fee": "2%",
+        "term": "4-10 years",
+        "prepayment_penalty": false,
+        "security": "All franchise business property (now owned or later acquired)",
+        "co_borrowers": "Associates may be required",
+        "cross_default": "Default on FLA or other FPI loans triggers default",
+        "rate_increase_on_default": "4%",
+        "waivers": ["Presentment", "Demand", "Protest", "Notice of dishonor"],
+        "collection_costs": "Franchisee pays including attorney fees"
+      }
+    },
+    "short_term_loan": {
+      "exhibit": "H-2",
+      "pages": [249, 264],
+      "key_terms": {
+        "term": "7 months (Sep 1 - Apr 30)",
+        "limit": "Up to 20% of prior year net tax prep revenue",
+        "security": "All franchise business property",
+        "cross_default": true
+      }
+    }
+  },
+  "general_release": {
+    "exhibit": "G",
+    "pages": [231, 232],
+    "scope": "Release required upon renewal or transfer",
+    "state_limitations": "CA, IL, MD, MN, ND, WA, WI limit or void release for state franchise law claims"
+  }
+}

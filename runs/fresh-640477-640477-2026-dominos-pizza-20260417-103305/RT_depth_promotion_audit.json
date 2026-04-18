@@ -1,0 +1,20 @@
+{
+  "depth_pass": "A2_depth_pass_3",
+  "target": "Narrative-to-Canonical Promotion Audit",
+  "promoted_facts": [
+    {"fact": "DPL total revenue FY2025: $4.94 billion", "source": "DPL income statement, p.302", "promoted_to": "item21_dpl_financials in canonical"},
+    {"fact": "DPL net income FY2025: $601.7 million", "source": "DPL income statement, p.302", "promoted_to": "item21_dpl_financials in canonical"},
+    {"fact": "DPL member's deficit: ($3.9 billion)", "source": "DPL balance sheet, p.301", "promoted_to": "item21_dpl_financials in canonical"},
+    {"fact": "DPL total long-term debt: $4.81 billion", "source": "DPL balance sheet, p.301", "promoted_to": "item21_dpl_financials in canonical"},
+    {"fact": "DPL operating cash flow: $792 million", "source": "DPL cash flows, p.305", "promoted_to": "item21_dpl_financials in canonical"},
+    {"fact": "Supply chain profit-sharing rebates: $193M (2025)", "source": "DPL notes, p.310", "promoted_to": "item8 in canonical"},
+    {"fact": "International royalty average rate: 3.0%", "source": "DPL notes, p.310", "promoted_to": "item21_dpl_financials in canonical"},
+    {"fact": "U.S. franchise advertising rate in DPL notes: 6.0% of retail sales", "source": "DPL notes, p.310", "promoted_to": "item11 enrichment note"},
+    {"fact": "DPL franchisee lease guarantees max: $12.6M", "source": "DPL notes, p.320", "promoted_to": "item21_dpl_financials in canonical"},
+    {"fact": "Substantial compliance = not 6+ breaches during term or 3+ in last 24 months", "source": "FA Section 3.1, p.335", "promoted_to": "item17_renewal in canonical"},
+    {"fact": "Management appointment fee: 5.5% on top of royalty and advertising", "source": "FA Section 21.7, p.370", "promoted_to": "item17_death_disability in canonical"},
+    {"fact": "ROFR period: 30 days from receipt of complete documents", "source": "FA Section 21.8, p.370", "promoted_to": "item17_transfer in canonical"},
+    {"fact": "Cross-default: termination of any other Domino's agreement triggers", "source": "FA Section 18.2.1, p.360", "promoted_to": "item17_termination in canonical"}
+  ],
+  "total_promoted": 13
+}

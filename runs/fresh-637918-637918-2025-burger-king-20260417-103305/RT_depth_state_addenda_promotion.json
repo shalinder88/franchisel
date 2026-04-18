@@ -1,0 +1,37 @@
+{
+  "depth_pass": "A2_state_addenda",
+  "source_pages_range": [706, 801],
+  "total_pages": 96,
+  "states_with_addenda": ["California", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {"state": "California", "affected_family": "governing_law", "override_summary": "California Franchise Relations Act and Franchise Investment Law may supersede FA provisions on termination, renewal", "why_it_matters": "CA law controls if inconsistent with FA", "source_pages": [707]},
+    {"state": "California", "affected_family": "forum_selection", "override_summary": "Florida law application may not be enforceable", "why_it_matters": "CA franchisees may litigate in CA", "source_pages": [707]},
+    {"state": "California", "affected_family": "general_release", "override_summary": "General release excluded to extent required by Corps Code §31512 and Bus & Prof Code §20010", "why_it_matters": "CA franchisees cannot be forced to waive franchise law claims on renewal/transfer", "source_pages": [707]},
+    {"state": "California", "affected_family": "noncompete", "override_summary": "Post-term covenant not to compete may not be enforceable", "why_it_matters": "CA franchisees may be free to compete immediately after termination", "source_pages": [707]},
+    {"state": "California", "affected_family": "jury_waiver", "override_summary": "Jury trial waiver may not be enforceable", "why_it_matters": "CA franchisees retain right to jury trial", "source_pages": [707]},
+    {"state": "California", "affected_family": "anti_fraud", "override_summary": "No questionnaire or acknowledgment may waive franchise law claims or disclaim reliance on franchisor statements", "why_it_matters": "Protects against disclaiming reliance defense", "source_pages": [707]},
+    {"state": "Michigan", "affected_family": "termination", "override_summary": "Termination only for good cause; 30-day cure required", "why_it_matters": "MI law prohibits termination without good cause", "source_pages": [5, 6]},
+    {"state": "Michigan", "affected_family": "noncompete", "override_summary": "Right to join franchisee association cannot be prohibited", "why_it_matters": "MI protects franchisee association rights", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "general_release", "override_summary": "Cannot require release as condition of franchise grant — waiver void", "why_it_matters": "MI franchisees retain pre-existing claims", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "forum_selection", "override_summary": "Cannot require arbitration or litigation outside MI", "why_it_matters": "MI franchisees can dispute in MI", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "transfer", "override_summary": "Cannot refuse transfer except for good cause", "why_it_matters": "Limited grounds for transfer denial in MI", "source_pages": [6]},
+    {"state": "Washington", "affected_family": "governing_law", "override_summary": "Washington Franchise Investment Protection Act prevails in conflict", "why_it_matters": "WA law controls over FL law", "source_pages": [720]},
+    {"state": "Washington", "affected_family": "forum_selection", "override_summary": "Arbitration/mediation/litigation site must be in WA or mutually agreed", "why_it_matters": "WA franchisees can litigate in WA", "source_pages": [720]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "Release void except in negotiated settlement after FA in effect, with independent counsel", "why_it_matters": "Strong protection against forced releases on renewal/transfer", "source_pages": [720]},
+    {"state": "Washington", "affected_family": "statute_of_limitations", "override_summary": "Unreasonable restrictions on statute of limitations or jury trial rights may not be enforceable", "why_it_matters": "WA preserves franchise law remedies", "source_pages": [720]},
+    {"state": "Washington", "affected_family": "transfer_fees", "override_summary": "Transfer fees must reflect reasonable estimated or actual costs", "why_it_matters": "Limits transfer fee to cost basis", "source_pages": [720]},
+    {"state": "Washington", "affected_family": "termination", "override_summary": "Franchisee may terminate under any grounds permitted by state law", "why_it_matters": "Adds franchisee termination rights", "source_pages": [720]},
+    {"state": "Washington", "affected_family": "anti_fraud", "override_summary": "No signed statement may waive franchise law claims or disclaim reliance", "why_it_matters": "Anti-reliance disclaimer void", "source_pages": [720]}
+  ],
+  "override_matrix": {
+    "forum_selection": ["California", "Michigan", "Washington"],
+    "governing_law": ["California", "Washington"],
+    "noncompete": ["California"],
+    "general_release": ["California", "Michigan", "Washington"],
+    "termination_good_cause": ["Michigan"],
+    "transfer_restrictions": ["Michigan", "Washington"],
+    "jury_trial": ["California", "Washington"],
+    "anti_fraud_anti_waiver": ["California", "Washington"]
+  },
+  "notes": "Only CA, MI, and WA addenda were directly read in detail. Remaining states (IL, IN, MD, MN, NY, ND, RI, VA, WI) were identified in page headers but not individually structured. The override patterns for IL, MD, MN, NY, ND, RI, VA, WI are likely similar to the CA/WA templates but specific details were not extracted."
+}

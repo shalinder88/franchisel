@@ -1,0 +1,20 @@
+{
+  "depth_block": "A2_item20_completion",
+  "tables_extracted": 5,
+  "all_tables_complete": true,
+  "tables": {
+    "table1": {"title": "System-Wide Outlet Summary", "pages": [56], "status": "complete", "subtables": ["Licensed Units", "Franchised/Company Restaurants"]},
+    "table2": {"title": "Transfers", "pages": [57], "status": "complete", "subtables": ["Licensed Units", "Franchised Restaurants"], "finding": "Zero transfers all 3 years"},
+    "table3": {"title": "Status of Franchise Outlets", "pages": [58, 59, 60, 61, 62, 63, 64, 65, 66], "status": "complete", "subtables": ["Licensed Units by state", "Franchised Restaurants by state"], "footer_totals_extracted": true},
+    "table4": {"title": "Status of Company-Owned Outlets", "pages": [67, 68, 69, 70, 71], "status": "complete", "subtables": ["Licensed Units (all zeros)", "Company-Operated Restaurants by state"], "footer_totals_extracted": true},
+    "table5": {"title": "Projected Openings", "pages": [72, 73], "status": "complete", "subtables": ["Licensed Units by state", "Franchised/Company Restaurants by state"]}
+  },
+  "gag_clause_flag": false,
+  "gag_clause_operator_flag": true,
+  "gag_clause_evidence": {"source_pages": [75], "quote": "former Chick-fil-A Restaurant Operators have signed provisions restricting their ability to speak openly about their experiences"},
+  "signed_not_opened": [
+    {"state": "NC", "city": "Asheville", "licensee": "Aria at Mission, LLC", "location": "Mission Hospital"},
+    {"state": "NC", "city": "Davidson", "licensee": "The Trustees of Davidson College", "location": "Davidson College"},
+    {"state": "PA", "city": "Millersville", "licensee": "Student Services, Inc.", "location": "Millersville University"}
+  ]
+}

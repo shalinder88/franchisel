@@ -1,0 +1,100 @@
+ 3.21 Definitions                                                                                                                V AppAtt                   V AppAtt                Domestic system integrity fee per transaction assessed for
+ In addition to terms otherwise defined in this Agreement, capitalized terms shall have the meaning ascribed to them                                                                the first and each subsequent reattempt.
+                                                                                                                                 V AppAtt Xb                V AppAtt XB             Cross-border system integrity fee per transaction assessed
+ in this section.
+                                                                                                                                                                                    for the first and each subsequent reattempt.
+ “Account” means a commercial checking or demand deposit account maintained by Merchant for the crediting                        V AVS                      V AVS                   Assessed per AVS request on all transactions.
+     of collected funds and the debiting of fees and charges under this Agreement.
+ “ACH” means the Automated Clearing House paperless entry system controlled by the Federal Reserve Board.                        MasterCard Fee Names        Statement Names        Fee Descriptions
+ “Agreement” means the Merchant Application, and these Terms and Conditions, and any supplementary                               MC Auth                     Auth fee m             Authorization Fee on MasterCard Transactions
+     documents referenced herein, and schedules, exhibits and amendments to the foregoing.                                       MC ARU                      ARU auth m             Authorization Fee for Automated Response Unit on
+ “American Express” means the Cards bearing the Marks of, and Card Network operated by, American Express                                                                            MasterCard transactions
+     Travel Related Services Company, Inc. or its aﬃliates.                                                                      MC Voice Auth               Voice auth m         Authorization Fee for Voice Authorization on MasterCard
+ “Authorization” means a computerized function or a direct phone call to a designated number to examine                                                                            transactions
+     individual Transactions to obtain approval from the Card Issuer to charge the Card for the amount of the sale in
+                                                                                                                                MC Misuse Fee                Misuse auth system m Fee for Misuse of Authorization System on MasterCard
+     accordance with the terms of this Agreement and the Network Rules.
+                                                                                                                                                                                  Transactions
+ “Bank” has the meaning set forth on the Merchant Application.
+                                                                                                                                MC Cross Border/Acq Sup %   Cross Border/Acq Sup  Fees on MasterCard foreign authorizations and/or
+ “Card” means (i) a valid credit card or debit card in the form issued under license from a Card Network. (“Bank
+                                                                                                                                                                                  transactions
+     Card"); or (ii) any other valid credit card or debit card or other payment device approved by Bank and accepted            MC DEF                      DEF                   The Digital Enablement Fee will be assessed on all
+     by Mer-chant.                                                                                                                                                              MasterCard card not present sale transactions.
+ “Card Issuer” means the financial institution or company which has provided a Card to a Cardholder.                            M Acq Merch Advice           M Acq Merch Advice Fee assessed on CNP where in the past 30 days a
+ “Card Network” means Visa U.S.A., Inc., MasterCard International, Inc., American Express Travel Related Services                                                               transaction on the same card for the same amount is
+     Company, Inc., DFS Services LLC (the owner of Discover) and their aﬃliates, or any other payment networks                                                                  declined with MAC 03 or 21.
+                                                                                                                                 MLocation Fee               MLocation Fee      Monthly fee for opened merchants
+     approved by Bank that provide Cards accepted by Merchant.
+                                                                                                                                  NABU                        NABU              Network Brand Access Usage for MasterCard
+ “Card Not Present” or “CNP” means that an Imprint of the Card is not obtained at the point-of-sale.
+                                                                                                                                                                                authorizations
+ “Cardholder” (sometimes referred to as “Card Member” in certain Card Network materials) shall mean any person
+                                                                                                                                MC Exc Auth                  MC Exc Auth        Fee assessed on authorization attempts in excess of 10
+     authorized to use the Cards or the accounts established in connection with the Cards.
+                                                                                                                                                                                declined attempts
+ “Credit Voucher” means a document executed by a Merchant evidencing any refund or price adjustment relating to                 MC Decline RC CNP           MC Decline RC CNP Fee assessed on authorizations processed on
+     Cards to be credited to a Cardholder account.                                                                                                                              MasterCard network where enhanced intelligence is
+ “Discover Card” means a Card bearing the Discover Marks and accepted as part of the DFS Services Network.                                                                      provided
+ “Guarantor” has the meaning set forth on the Merchant Application.
+                                                                                                                                Discover Fee Names          Statement Names         Fee Descriptions
+ “Guaranty” has the meaning set forth on the Merchant Application.
+ “ISO” has the meaning set forth on the Merchant Application                                                                    Discover Network Auth Fee   DNAF                    Network Access Fee on Discover Transactions
+ “Merchant” has the meaning set forth on the Merchant Application.                                                                                          IPF/ISF                 International Processing Fee/International Service Fee on
+                                                                                                                                Disc IPF/ISF
+ “Merchant Application” has the meaning set forth on the Merchant Application.                                                                                                      Discover foreign transactions
+                                                                                                                                D Trans Integrity           D Trans Integrity       Program Integrity fee applied to all card sales which are
+ “Network Rules” means the rules, regulations, releases, interpretations and other requirements (whether contractual                                                                submitted at a Mid or Base level program
+     or otherwise) imposed or adopted by any Card Networks and related authorities, including without limitation,               Disc DUC                    DUC                    Data Usage Fee on Discover authorizations
+     those of the PCI Security Standards Council, LLC and the National Automated Clearing House Association (including,
+                                                                                                                                Disc Auth                   Auth fee d             Authorization Fee on Discover Transactions
+     with respect to EBT, the Quest Operating Rules and with respect to PIN debit cards, the rules, regulations, policies
+                                                                                                                                Disc ARU                    ARU auth d             Authorization Fee for Automated Response Unit on Discover
+     and procedures of the applicable debit network).
+                                                                                                                                                                                   transactions
+ “Provider” as provided by the introductory paragraph to these Terms and Conditions, means ISO and Bank together.
+ “Transaction” means any sale of products or services, or credit for such, from a Merchant for which the Cardholder             Disc Voice Auth             Voice auth d           Authorization Fee for Voice Authorization on Discover
+     makes payment through the use of any Card and which is presented to Provider for collection.                                                                                  transactions
+ “Voice Authorization” means a direct phone call to a designated number to obtain credit approval on a Transaction              D AVS Fee                   D AVS Fee               Assessed per AVS request on all transactions
+                                                                                                                                D DigInv Fee                                        Assessed on gross sales for keyed and ecommerce
+                                                                                                                                                            D DigInv Fee
+    from the Card Issuer, whether by voice or voice-activated systems.                                                                                                              transactions
+ 3.22 Merchant Statement Key                                                                                                    D Acct Verify Serv          D Acct Verify Serv      Fee assessed per account verification request
+ Brand-Originated Fee Names             The names given to particular fees by the card brands (Visa, MasterCard, Discover,
+                                        American Express)
+ Statement Fee Names                    The names of particular fees as they appear on the repay monthly merchant               Amex Fee Names              Statement Names         Fee Descriptions
+                                        statement                                                                               Assessment Fee              Assessment Fee          The fee applies to gross American Express card volume.
+ Fee Descriptions                       Explanation/Descriptions of a particular fee                                            Card-Not-Present Fee         Non-Swiped             The fee applies to gross card-not-present volume, such as keyed
+                                                                                                                                                                                    and e-commerce transactions. The CNP surcharge is charged in
+ Visa Fee Names                  Statement Names              Fee Descriptions
+                                                                                                                                                                                    addition to to the sponsorship fee of 0.15%, making the total
+ Visa Auth                       Auth fee                     Authorization Fee on Visa Transactions                                                                                assessment on card-not-present volume 0.45%.
+ Visa ARU                        ARU auth                     Authorization Fee for Automated Response Unit on Visa             Inbound Fee                  Inbound Fee           The American Express international assessment applies to
+                                                              transactions                                                                                                         gross sales volume involving a card issued outside of the
+ Visa Voice Auth                 Voice auth                   Authorization Fee for Voice Authorization on Visa transactions                                                       United States.
+ VISA APF credit                  APF credit                  Acquiring Processing Fee for Visa Credit Transactions             Data Quality Fee            Data Quality Fee       The fee applies to any American Express transaction that does
+ VISA APF Debit                   APF debit                   Acquiring Processing Fee for Visa Debit Transactions                                                                 not meet data quality standards, e.g. incorrect MID numbers
+                                                                                                                                                                                   or incorrect MCCs. The fee is 0.75% of the face amount of the
+ VISA Misuse Auth                 Misuse auth system          Fee for Misuse of Authorization System on Visa Transactions
+                                                                                                                                                                                   transaction amount.
+ Visa FANF                        FANF                        Fixed Acquirer Network Fee for access to Visa networks
+                                                                                                                                 AcqTran A                                          Assessed to all OptBlue US Credit and prepaid
+                                                                                                                                                            AcqTran A
+ Visa Integrity Fee               Trans Integrity fee         US domestic debit & prepaid card failing CPS qualifications                                                           transactions. Excludes debit card trans and Refunds
+                                                              on Visa transactions                                               Auth                       Auth Fee A              Authorization fee on American Express (AXP) transactions
+                                                                                                                                 ARU                        ARU auth a              Authorization Fee for Automated Response Unit on AXP
+ Visa Floor Limit Rate            Floor Limit Rate            Transactions without matching authorizations through EQT                                                              authorizations
+                                                              device on Visa transactions                                        Voice Auth                  Voice auth a           Authorization Fee for Voice Authorization on AXP
+ Visa IAF                         IAF                         International Acquiring Fee on foreign issued Visa transactions                                                       authorizations
+ Visa ISA                         ISA                         International Service Assessment on Visa transactions              AX OB Pgm Fee               AX OB Pgm Fee          Fees assessed on each AXP OptBlue transaction when
+ File Transfer                   File Transfer                File transfer fee on all Visa transactions                                                                            AXP volume exceeds $3M.
+ V Excess Att                    V Excess Att                 Fee for domestic authorization reattempt in excess of 15
+                                                              within 30 days.
+ V Excess Att XB                 V Excess Att XB              Fee for Cross-Border authorization reattempts in excess of
+                                                              15 within 30 days.
+ V High Fallbck                 V High Fallbck                Visa Fallback rate of 10% or higher
+
+                                   PR APPROVED:
+                                                                                                                                    ©2021 TriSource Solutions, LLC dba REPAY— Merchant Agreement                                    T & C Page 6
+March 14, 2023
+

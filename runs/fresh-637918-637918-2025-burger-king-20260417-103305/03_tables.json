@@ -1,0 +1,159 @@
+{
+  "tables": [
+    {
+      "id": "item6_fee_table",
+      "item": "6",
+      "title": "Other Fees",
+      "source_pages": [34, 35, 36, 37, 38, 39],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Royalty", "amount": "4.5% of monthly Gross Sales", "due": "Monthly, 10th of next month"},
+        {"fee": "Advertising", "amount": "Up to 4.5% of monthly Gross Sales", "due": "Same as Royalty"},
+        {"fee": "Rent (BKL)", "amount": "Varies", "due": "Monthly, 1st of each month"},
+        {"fee": "Building Improvement Payments", "amount": "$500/month", "due": "Monthly, 1st of each month"},
+        {"fee": "Service Desk Fee", "amount": "$750-$1,200/yr/restaurant", "due": "On demand"},
+        {"fee": "Late charges/interest", "amount": "Lesser of 18%/yr or max by law", "due": "On demand"},
+        {"fee": "Crown Your Career late charges", "amount": "2%/yr above Note rate", "due": "On demand"},
+        {"fee": "Stamp tax", "amount": "$0.35 per $100", "due": "On demand"},
+        {"fee": "Transfer of Interests", "amount": "$2,000 first + $500 each additional", "due": "On sale"},
+        {"fee": "Intercreditor Agreement", "amount": "$2,000", "due": "If applicable"},
+        {"fee": "Application Fee", "amount": "$250/individual, up to $5,000/entity", "due": "On submission"},
+        {"fee": "Training Fees", "amount": "$7,500/trainee", "due": "Before training"},
+        {"fee": "Entity/LLC Fee", "amount": "Up to $5,000/entity + up to $1,000/restaurant", "due": "At conversion"},
+        {"fee": "Franchise Extension Fee", "amount": "$2,500/year", "due": "On signing"},
+        {"fee": "Investment Spending (marketing)", "amount": "Up to 2.0% of Gross Sales", "due": "Monthly"},
+        {"fee": "Sales Transfer Study", "amount": "$3,000-$8,000/restaurant", "due": "As incurred"},
+        {"fee": "Sales Impact Contribution", "amount": "Varies", "due": "As agreed"},
+        {"fee": "Gift Card Services", "amount": "Setup $40; transaction ~1.8%", "due": "Paid to supplier"},
+        {"fee": "BK University/Support", "amount": "$700/yr/restaurant", "due": "On demand"},
+        {"fee": "Digital Services Fee", "amount": "$110/mo + 1% digital sales; cap $4,500/yr", "due": "Monthly"},
+        {"fee": "Static Menu Board Kit", "amount": "$200-$300/month", "due": "Monthly"},
+        {"fee": "Miscellaneous Training", "amount": "Up to $25,000/person", "due": "As agreed"},
+        {"fee": "Follow-Up Walk-Thru", "amount": "$1,500", "due": "On demand"},
+        {"fee": "One Time Cure Fee", "amount": "TRA $10,000; MTRA: balance of FF", "due": "On failure"},
+        {"fee": "Deferred Remodel Default", "amount": "Royalty increases to 6.0% or 7.5%", "due": "Monthly"},
+        {"fee": "Audit Expenses", "amount": "Cost of audit", "due": "15 days after audit"},
+        {"fee": "Indemnity", "amount": "Losses and expenses incurred", "due": "On demand"},
+        {"fee": "Costs and Attorneys' Fees", "amount": "Varies", "due": "Immediately"},
+        {"fee": "Background Check", "amount": "$395-$15,000", "due": "On demand"},
+        {"fee": "Burger King Foundation", "amount": "$1,000/restaurant/year", "due": "On demand"},
+        {"fee": "Dev Agreement Brand Damage Fee", "amount": "Balance of prepaid FF", "due": "On demand"},
+        {"fee": "Development Agreement Indirect Tax", "amount": "Applicable taxes", "due": "On demand"},
+        {"fee": "Product Testing", "amount": "Up to $5,000", "due": "On demand"},
+        {"fee": "Third-Party Inspections", "amount": "Inspection costs", "due": "On demand"},
+        {"fee": "Resale Fee (Carrols)", "amount": "$10,000/restaurant", "due": "30 days after closing"},
+        {"fee": "Sublease Fee (Carrols)", "amount": "Varies", "due": "30 days after closing"}
+      ],
+      "table_notes": [
+        "Note 1: Fees may be varied by negotiation. Prior franchisees may pay different fees.",
+        "Note 2: Royalty rate programs — DIP 2024: Yr1 2.5%, Yr2 3.0%, Yr3 3.5%, Yr4 3.5%, Yr5 4.0%, Yr6+ 4.5%",
+        "Note 3: Advertising currently 4.5% of Gross Sales. DIP 2024 advertising: Yr1 2.0%, Yr2 2.5%, Yr3 3.0%, Yr4 3.0%, Yr5 3.5%, Yr6+ Base Fee",
+        "Note 4: BKL rent: BKC-owned min 10% of cap costs; BKC-leased min 125% of BKC rent + 10% costs; percentage rent 8.5% up to $133,333/mo, 10% above",
+        "Note 7: Digital services fee for BK mobile app, website, third-party platform ordering, delivery, and loyalty"
+      ]
+    },
+    {
+      "id": "item7_traditional_freestanding",
+      "item": "7",
+      "title": "Estimated Initial Investment — Traditional Freestanding",
+      "source_pages": [48],
+      "total_low": 2049200,
+      "total_high": 4705600,
+      "rows": [
+        {"component": "Franchise Fee", "low": 50000, "high": 50000},
+        {"component": "Training Fee, Travel & Living", "low": 7500, "high": 25000},
+        {"component": "Real Property/Occupancy", "low": 300000, "high": 1500000},
+        {"component": "Civil/Architectural/Professional Fees", "low": 50000, "high": 100000},
+        {"component": "Zoning Expenses", "low": 5000, "high": 40000},
+        {"component": "Improvements/Construction", "low": 1000000, "high": 1800000},
+        {"component": "Landscaping", "low": 25000, "high": 60000},
+        {"component": "Equipment", "low": 250600, "high": 304600},
+        {"component": "Decor Package", "low": 48000, "high": 95000},
+        {"component": "Signage & Drive-Thru", "low": 150000, "high": 230000},
+        {"component": "Pre-Opening Wages", "low": 67100, "high": 72500},
+        {"component": "Opening Inventory", "low": 6400, "high": 12800},
+        {"component": "POS/Inventory System", "low": 20000, "high": 25000},
+        {"component": "Insurance", "low": 14000, "high": 25000},
+        {"component": "Working Capital", "low": 45000, "high": 90000},
+        {"component": "Business Licenses/Deposits", "low": 10000, "high": 30000},
+        {"component": "2-Story Playground (optional)", "low": 0, "high": 245000},
+        {"component": "BK University/Training Material", "low": 600, "high": 700}
+      ]
+    },
+    {
+      "id": "item19_traditional_sales",
+      "item": "19",
+      "title": "Sales Distribution — Traditional Restaurants (Jan-Dec 2024)",
+      "source_pages": [100, 101],
+      "population": {
+        "consolidated": {"count": 5837, "average": 1671613, "median": 1579183, "high": 5833717, "low": 271485, "above_avg_pct": 43},
+        "franchisee_owned": {"count": 4774, "average": 1658463, "median": 1561502, "high": 5833717, "low": 271485, "above_avg_pct": 43},
+        "company_owned": {"count": 1063, "average": 1730667, "median": 1638579, "high": 4430058, "low": 629239, "above_avg_pct": 43}
+      },
+      "distribution_consolidated": [
+        {"range": "Above $1.9M", "pct": 29.1},
+        {"range": "$1.7M-$1.9M", "pct": 11.9},
+        {"range": "$1.5M-$1.7M", "pct": 15.5},
+        {"range": "$1.3M-$1.5M", "pct": 15.7},
+        {"range": "$1.1M-$1.3M", "pct": 14.2},
+        {"range": "$0.9M-$1.1M", "pct": 8.8},
+        {"range": "$0.7M-$0.9M", "pct": 4.1},
+        {"range": "Below $0.7M", "pct": 0.7}
+      ]
+    },
+    {
+      "id": "item19_nontrad_sales",
+      "item": "19",
+      "title": "Sales Distribution — Non-Traditional Restaurants (Jan-Dec 2024)",
+      "source_pages": [100, 101],
+      "population": {
+        "franchisee_owned": {"count": 741, "average": 1321324, "median": 1155563, "high": 7387029, "low": 208320, "above_avg_pct": 39}
+      }
+    },
+    {
+      "id": "item19_remodel_uplift",
+      "item": "19",
+      "title": "Remodeled Restaurant Sales Uplift Results",
+      "source_pages": [105, 106, 107, 108, 109],
+      "remodel_sample_size": 893,
+      "uplift_by_scope": {
+        "full": {"count": 840, "avg_sales_uplift": 11.4, "median_sales_uplift": 9.9, "avg_traffic_uplift": 10.3},
+        "scrape_rebuild": {"count": 53, "avg_sales_uplift": 26.1, "median_sales_uplift": 21.2, "avg_traffic_uplift": 24.5},
+        "total": {"count": 893, "avg_sales_uplift": 12.3, "median_sales_uplift": 10.7, "avg_traffic_uplift": 11.1}
+      },
+      "uplift_by_dt_conversion": {
+        "no_conversion": {"count": 577, "avg_sales_uplift": 10.3},
+        "sdt_to_double_dt": {"count": 316, "avg_sales_uplift": 15.8}
+      },
+      "multi_year": {
+        "3yr_plus": {"count": 629, "yr1_avg": 11.7, "yr2_avg": 12.3, "yr3_avg": 13.4}
+      }
+    },
+    {
+      "id": "item20_table1_systemwide",
+      "item": "20",
+      "title": "Systemwide Outlet Summary",
+      "source_pages": [112],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 7053, "end": 6992, "net": -61},
+        {"type": "Franchised", "year": 2023, "start": 6992, "end": 6640, "net": -352},
+        {"type": "Franchised", "year": 2024, "start": 6640, "end": 5524, "net": -1116},
+        {"type": "Company-Owned", "year": 2022, "start": 51, "end": 50, "net": -1},
+        {"type": "Company-Owned", "year": 2023, "start": 50, "end": 138, "net": 88},
+        {"type": "Company-Owned", "year": 2024, "start": 138, "end": 1177, "net": 1039},
+        {"type": "Total", "year": 2022, "start": 7104, "end": 7042, "net": -62},
+        {"type": "Total", "year": 2023, "start": 7042, "end": 6778, "net": -264},
+        {"type": "Total", "year": 2024, "start": 6778, "end": 6701, "net": -77}
+      ],
+      "table_notes": ["On May 16, 2024, RBI acquired Carrols Restaurant Group Inc., resulting in 1,023 franchised Restaurants becoming company-owned."],
+      "projected_openings_total": 50,
+      "projected_franchised": 48,
+      "projected_company": 2,
+      "gag_clause_flag": true,
+      "gag_clause_quote": "current and former franchisees signed provisions restricting their ability to speak openly about their experience with our predecessor",
+      "gag_clause_source_pages": [126],
+      "ceased_operations_count": 1433,
+      "franchisee_association": "National Franchisee Association (NFA), Kennesaw, GA, (678) 797-5160"
+    }
+  ]
+}

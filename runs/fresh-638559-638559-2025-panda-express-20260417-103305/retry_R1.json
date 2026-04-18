@@ -1,0 +1,41 @@
+{
+  "retry_id": "R1",
+  "task": "Exhibit A License Agreement Depth Pass",
+  "pages_read": [108, 137, 177, 301, 302, 303, 305, 308, 312, 316, 320],
+  "findings": {
+    "noncompete_scope": {
+      "during_term": "Cannot sell/offer competing Asian-style food items (Chinese, Japanese, Thai, Korean) at the facility where restaurant is located — facility-level restriction only (airport, military base, university, etc.)",
+      "post_term": "Section 17.4A: All obligations that expressly or by their nature survive termination continue in full force, including indemnity, confidentiality, non-use, non-infringement, payment obligations, Sections 19 and 22",
+      "post_term_noncompete_duration": "Not separately specified — the noncompete is the Item 8.2 facility-level Asian food restriction which continues in full force per Section 17.4. Since the restriction is to the specific facility and the license for that facility has ended, practical enforceability is limited.",
+      "confidentiality_duration": "5 years post-term per Section 8.1(F) if court deems disclosure requirements overbroad",
+      "source_pages": [108, 137, 177]
+    },
+    "death_disability": {
+      "addressed": false,
+      "notes": "No specific death/disability provisions found in License Agreement. 'Not applicable' confirmed. The agreement binds 'executors, administrators, heirs, assigns, and successors in interest' per Section 19.7, suggesting interest passes through estate but no specific succession mechanism."
+    },
+    "termination_triggers_california_addendum": {
+      "cure_periods_modified": "CA addendum modifies cure periods: 5-day cure for payment defaults; 60-day cure for other defaults; 75-day maximum if cannot cure in 60 days",
+      "market_withdrawal": "Franchisor can make general market area withdrawal — no liability for termination, no obligation to offer renewal. But cannot prevent franchisee from retaining control of principal place of business or restaurants.",
+      "post_termination_repurchase": "CA: Franchisor can purchase inventory/equipment at price paid minus depreciation (MACRS or IRS return schedule, whichever lower). FMV established by certified business appraiser if termination found to violate CFRA.",
+      "source_pages": [301, 302, 303]
+    },
+    "state_addenda_summary": {
+      "california": "Modified termination/cure periods; market withdrawal rights; repurchase at depreciated value; CFRA compliance; release waiver per Corp Code 31512",
+      "hawaii": "No fractional franchise exemption",
+      "illinois": "Standard NASAA statement; registration state protections",
+      "indiana": "Standard NASAA statement",
+      "kansas": "Arbitration/litigation must be in Kansas; Kansas law governs; no indemnification for own negligence",
+      "maryland": "Materially different terms provisions; Section 22 rewritten; franchise exemption criteria detailed",
+      "michigan": "Covered in front matter (pp.5-6); protections per Michigan Franchise Investment Law",
+      "minnesota": "Standard NASAA statement",
+      "new_york": "Additional risk factors on cover page; arbitration in CA disclosed as risk; cannot negotiate less favorable terms than FDD",
+      "north_dakota": "No fractional franchise exemption",
+      "rhode_island": "Fractional franchise exemption criteria",
+      "south_dakota": "Standard NASAA statement",
+      "virginia": "Cannot cancel without reasonable cause per Section 13.1-564",
+      "washington": "No fractional franchise exemption",
+      "wisconsin": "Standard NASAA statement"
+    }
+  }
+}

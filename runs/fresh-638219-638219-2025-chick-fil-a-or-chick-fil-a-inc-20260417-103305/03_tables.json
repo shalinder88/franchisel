@@ -1,0 +1,234 @@
+{
+  "tables": [
+    {
+      "table_id": "item5_initial_fees",
+      "source_item": "Item 5",
+      "source_pages": [26],
+      "title": "Initial Fees",
+      "columns": ["Fee Type", "Amount", "Refundable"],
+      "rows": [
+        {"fee_type": "Initial Franchise Fee", "amount": "$10,000", "refundable": "$5,000 working capital deposit refundable at termination"},
+        {"fee_type": "Additional Franchise Fee", "amount": "$5,000 per additional restaurant", "refundable": "Non-refundable"},
+        {"fee_type": "Pre-Opening Insurance", "amount": "$4,100–$200,000/yr", "refundable": "Non-refundable"},
+        {"fee_type": "Pre-Opening Inventory (CFA Supply)", "amount": "$15,000–$65,000", "refundable": "Non-refundable"}
+      ],
+      "table_notes": [
+        "Initial franchise fee: $5,000 fully earned on payment; $5,000 maintained as working capital deposit.",
+        "Working capital deposit refunded within 2.5 months after termination/non-renewal, less costs and losses.",
+        "Pre-opening expenditures not due until after restaurant opens."
+      ]
+    },
+    {
+      "table_id": "item6_fee_table",
+      "source_item": "Item 6",
+      "source_pages": [27, 28, 29, 30, 31, 32],
+      "title": "Other Fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Advertising", "amount": "0%–3.25% of GR", "due_date": "Monthly", "remarks": "Currently 0% since June 30, 1989"},
+        {"type": "Advertising Support & Services", "amount": "$100/hr blended rate + costs", "due_date": "As incurred", "remarks": "Optional in-house agency alternative"},
+        {"type": "Additional Franchise Fee", "amount": "$5,000 per additional business", "due_date": "At signing", "remarks": "For additional restaurants"},
+        {"type": "Business Services Fee", "amount": "$300", "due_date": "Monthly", "remarks": "Mandatory"},
+        {"type": "Rent (Traditional)", "amount": "$2,725–$96,285/mo", "due_date": "Monthly", "remarks": "Includes percentage rent; capped at 6% of annual GR by internal policy"},
+        {"type": "Occupancy Charge (Captive Venue)", "amount": "4%–30% of GR", "due_date": "Monthly or per agreement", "remarks": "Passed through dollar-for-dollar"},
+        {"type": "Use/Occupancy Charge (Delivery Kitchen)", "amount": "4%–30% of GR", "due_date": "Monthly or per DK Lease", "remarks": "Passed through dollar-for-dollar"},
+        {"type": "Food Truck Usage Fee (Subleased)", "amount": "$2,100–$3,738/mo + costs", "due_date": "Monthly", "remarks": "In lieu of CFA lease rental to lessor"},
+        {"type": "Food Truck Fee (Vendor-leased)", "amount": "$7,000–$7,500", "due_date": "At signing or monthly", "remarks": "License fee to CFA"},
+        {"type": "Food Truck Insurance Fee", "amount": "$305–$525/mo", "due_date": "Monthly", "remarks": "Covers truck and contents"},
+        {"type": "Insurance", "amount": "$260–$10,240/mo", "due_date": "Monthly", "remarks": "See Item 8"},
+        {"type": "Equipment Rental", "amount": "$750–$5,000/mo", "due_date": "Monthly", "remarks": "Free-standing/in-line $5,000; drive-thru $4,000; mall $3,000; captive $750–$3,000; delivery kitchen $2,500–$5,000"},
+        {"type": "Hardware/Software Support + Internet", "amount": "$9,500–$20,000/yr", "due_date": "As incurred", "remarks": "May be reduced for captive venue/delivery kitchen"},
+        {"type": "Operating Service Fees", "amount": "Formula-based", "due_date": "Monthly", "remarks": "Base = 15% of GR minus equipment rental and business services fee; Additional = 50% of Net Profit"},
+        {"type": "Fines (Minimum Standards)", "amount": "Varies", "due_date": "As incurred", "remarks": "For failure to maintain standards"},
+        {"type": "Indemnification", "amount": "Varies", "due_date": "As incurred", "remarks": "Claims from restaurant operations"},
+        {"type": "Credit Card/Gift Card Fees", "amount": "Varies", "due_date": "As incurred", "remarks": "System-negotiated rates; CFA Servco for gift cards"},
+        {"type": "Highway Signage", "amount": "Varies", "due_date": "As incurred", "remarks": "Fabrication + annual expense"},
+        {"type": "Interest on Late Payments", "amount": "Max legal rate or 1.25%/mo", "due_date": "As incurred", "remarks": "Compounded monthly"},
+        {"type": "Cash Handling System", "amount": "$85–$450/mo", "due_date": "As incurred", "remarks": "May not apply to mall/office/captive/delivery kitchen"},
+        {"type": "Reimbursement of Cost of Performance", "amount": "Costs + interest", "due_date": "As incurred", "remarks": "If CFA performs Operator obligations"},
+        {"type": "Holdover Liquidated Damages", "amount": "Double base + percentage rent", "due_date": "As incurred", "remarks": "For occupancy after lease termination"}
+      ],
+      "table_notes": [
+        "Note 1: All fees imposed by CFA; non-refundable; imposed uniformly except as noted.",
+        "Note 2: Operating Service Fee formula calculates Base Operating Service Fee (15% GR – equipment rental – business services fee) and Additional Operating Service Fee (50% of Net Profit).",
+        "Note 3: Fees calculated monthly, paid from GR on monthly or pro rata daily basis.",
+        "Note 5: CFA acts as agent for collecting and accounting for GR.",
+        "Note 6: Rent Policy (since Jan 1, 2015) caps rent at 6% of annual GR — non-contractual, revocable.",
+        "Note 8: Cash handling fees may not apply if vendor services not available in area or location is mall/office/captive venue/delivery kitchen."
+      ]
+    },
+    {
+      "table_id": "item7_initial_investment",
+      "source_item": "Item 7",
+      "source_pages": [41],
+      "title": "Estimated Initial Investment",
+      "columns": ["Type of Expenditure", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Initial Franchise Fee", "low": "$10,000", "high": "$10,000", "method": "Lump Sum", "when_due": "At signing", "to_whom": "Chick-fil-A"},
+        {"type": "Opening Inventory", "low": "$22,000", "high": "$84,000", "method": "As Incurred", "when_due": "After opening", "to_whom": "CFA, CFA Supply, Other Suppliers"},
+        {"type": "First Month Equipment Rental", "low": "$750", "high": "$5,000", "method": "Monthly", "when_due": "After opening", "to_whom": "Chick-fil-A"},
+        {"type": "First Month Lease/Sublease", "low": "$2,725", "high": "$96,285", "method": "Monthly", "when_due": "After opening", "to_whom": "Chick-fil-A"},
+        {"type": "First Month Insurance", "low": "$260", "high": "$10,240", "method": "Monthly", "when_due": "After opening", "to_whom": "CFA/Insurance Carrier"},
+        {"type": "Additional Funds (3 months)", "low": "$391,000", "high": "$2,134,000", "method": "As Incurred", "when_due": "First 3 months", "to_whom": "CFA, suppliers, employees, utilities, etc."}
+      ],
+      "total_low": "$426,735",
+      "total_high": "$2,339,525",
+      "table_notes": [
+        "Note 1: Covers all unit types (free-standing, mall, in-line, drive-thru, captive venue, delivery kitchen).",
+        "Note 2: $10,000 initial fee is only out-of-pocket investment; all other costs deducted from operations.",
+        "Note 4: Amounts depend on location, size, and type; could be higher for flagship urban locations.",
+        "Note 6: Additional funds based on CFA's 50+ years experience; includes expenses, repairs, maintenance, utilities."
+      ]
+    },
+    {
+      "table_id": "item19_sales_summary",
+      "source_item": "Item 19",
+      "source_pages": [81, 82],
+      "title": "Annual Sales of Chick-fil-A Restaurants Open Full 12 Months During 2024",
+      "columns": ["Restaurant Type", "Median Annual Sales", "Average Annual Sales", "Lowest", "Highest"],
+      "rows": [
+        {"type": "Non-Captive Venue Mall (197 units)", "median": "$3,386,837", "average": "$4,516,855", "lowest": "$1,219,834", "highest": "$18,918,134"},
+        {"type": "Non-Captive Venue Non-Mall (2,179 units)", "median": "$9,226,669", "average": "$9,317,007", "lowest": "$1,878,888", "highest": "$19,318,796"},
+        {"type": "Delivery Kitchens (4 units)", "median": "$3,048,803", "average": "$3,526,342", "lowest": "$2,786,286", "highest": "$5,221,575"}
+      ],
+      "table_notes": [
+        "Revenue only — no cost or expense data disclosed.",
+        "Population: 2,380 non-captive venue franchised Operator restaurants open full year as of Dec 31, 2024.",
+        "Excludes: 25 captive venue units, 55 company-operated restaurants, 425 Licensed Units.",
+        "Mall bottom third: < $2,700,000; middle: $2.7M–$4.5M; top: > $4,500,000.",
+        "Non-mall bottom third: < $8,325,000; middle: $8.325M–$10.155M; top: > $10,155,000.",
+        "49% of non-mall units met or exceeded average (1,061 of 2,179); 34% of mall units met or exceeded average (66 of 197)."
+      ]
+    },
+    {
+      "table_id": "item20_table1_system_summary",
+      "source_item": "Item 20",
+      "source_pages": [84],
+      "title": "Table 1 — System-Wide Outlet Summary 2022–2024",
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 2230, "end": 2338, "net_change": 108},
+        {"type": "Franchised", "year": 2023, "start": 2331, "end": 2494, "net_change": 163},
+        {"type": "Franchised", "year": 2024, "start": 2494, "end": 2629, "net_change": 135},
+        {"type": "Company Owned", "year": 2022, "start": 81, "end": 73, "net_change": -8},
+        {"type": "Company Owned", "year": 2023, "start": 80, "end": 58, "net_change": -22},
+        {"type": "Company Owned", "year": 2024, "start": 58, "end": 55, "net_change": -3},
+        {"type": "Total", "year": 2022, "start": 2311, "end": 2411, "net_change": 100},
+        {"type": "Total", "year": 2023, "start": 2411, "end": 2552, "net_change": 141},
+        {"type": "Total", "year": 2024, "start": 2552, "end": 2684, "net_change": 132},
+        {"type": "Licensed", "year": 2022, "start": 393, "end": 395, "net_change": 2},
+        {"type": "Licensed", "year": 2023, "start": 395, "end": 412, "net_change": 17},
+        {"type": "Licensed", "year": 2024, "start": 412, "end": 425, "net_change": 13}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_table2_transfers",
+      "source_item": "Item 20",
+      "source_pages": [85],
+      "title": "Table 2 — Transfers of Outlets 2022–2024",
+      "columns": ["Year", "Franchised Transfers", "Licensed Transfers"],
+      "rows": [
+        {"year": 2022, "franchised": 0, "licensed": 0},
+        {"year": 2023, "franchised": 0, "licensed": 0},
+        {"year": 2024, "franchised": 0, "licensed": 0}
+      ],
+      "table_notes": [
+        "A 'transfer' means acquisition by a person other than CFA or an affiliate during the franchise term.",
+        "Zero transfers in all three years reflects CFA's policy of not permitting third-party franchise transfers."
+      ]
+    },
+    {
+      "table_id": "item20_table3_franchise_status_totals",
+      "source_item": "Item 20",
+      "source_pages": [86, 87, 88, 89, 90],
+      "title": "Table 3 — Status of Franchised Outlets (Totals) 2022–2024",
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        {"year": 2022, "start": 2230, "opened": 213, "terminations": 1, "non_renewals": 0, "reacquired": 91, "ceased_other": 13, "end": 2338},
+        {"year": 2023, "start": 2331, "opened": 255, "terminations": 0, "non_renewals": 0, "reacquired": 84, "ceased_other": 8, "end": 2494},
+        {"year": 2024, "start": 2494, "opened": 243, "terminations": 0, "non_renewals": 0, "reacquired": 102, "ceased_other": 6, "end": 2629}
+      ],
+      "terminations_total": 1,
+      "non_renewals_total": 0,
+      "reacquired_total": 277,
+      "ceased_operations_total": 27,
+      "table_notes": [
+        "Note 1: Start/end counts as of beginning/end of fiscal year.",
+        "Note 2: 'Opened' includes new restaurants and company-owned restaurants purchased by Operators.",
+        "Note 3: 'Terminations' reflects FA terminations without any consideration to Operator."
+      ]
+    },
+    {
+      "table_id": "item20_table4_company_owned_totals",
+      "source_item": "Item 20",
+      "source_pages": [95, 96, 97],
+      "title": "Table 4 — Status of Company-Owned Outlets (Totals) 2022–2024",
+      "columns": ["Year", "Start", "Opened", "Reacquired From Franchisees", "Closed", "Sold to Franchisees", "End"],
+      "rows": [
+        {"year": 2022, "start": 81, "opened": 0, "reacquired": 109, "closed": 40, "sold": 77, "end": 73},
+        {"year": 2023, "start": 80, "opened": 0, "reacquired": 92, "closed": 21, "sold": 93, "end": 58},
+        {"year": 2024, "start": 58, "opened": 0, "reacquired": 108, "closed": 25, "sold": 86, "end": 55}
+      ],
+      "table_notes": [
+        "Note 3: 'Reacquired from Franchisees' includes all instances where a restaurant transfers from Operator to CFA for any reason (voluntary termination for new opportunity, CFA termination, mutual consent, or Operator leaves system)."
+      ]
+    },
+    {
+      "table_id": "item20_table5_projected_openings",
+      "source_item": "Item 20",
+      "source_pages": [99, 101],
+      "title": "Table 5 — Projected Openings as of December 31, 2024",
+      "columns": ["Type", "FA Signed Not Opened", "Projected New Franchised", "Projected New Company-Owned"],
+      "rows": [
+        {"type": "Franchised Restaurants", "signed_not_opened": 38, "projected_franchised": 183, "projected_company": 0},
+        {"type": "Licensed Units", "signed_not_opened": 3, "projected_franchised": 25, "projected_company": 0}
+      ],
+      "projected_openings_total": 208,
+      "table_notes": [
+        "CFA does not intend to open company-owned restaurants; may do so temporarily until Operator selected."
+      ]
+    },
+    {
+      "table_id": "item21_balance_sheet",
+      "source_item": "Item 21 / Exhibit C",
+      "source_pages": [400, 401],
+      "title": "Consolidated Balance Sheet Summary",
+      "columns": ["Line Item", "2024", "2023"],
+      "rows": [
+        {"item": "Total Current Assets", "y2024": "$1,805,751,523", "y2023": "$1,722,000,392"},
+        {"item": "Cash and Cash Equivalents", "y2024": "$1,407,908,682", "y2023": "$1,266,114,339"},
+        {"item": "Property and Equipment, Net", "y2024": "$14,141,768,175", "y2023": "$12,258,217,568"},
+        {"item": "Total Assets", "y2024": "$16,587,589,467", "y2023": "$14,486,666,430"},
+        {"item": "Total Current Liabilities", "y2024": "$1,937,611,596", "y2023": "$1,753,475,599"},
+        {"item": "Long-term Notes Payable", "y2024": "$2,833,904,072", "y2023": "$2,322,353,377"},
+        {"item": "Long-term Operating Lease Liabilities", "y2024": "$2,586,688,422", "y2023": "$2,619,846,497"},
+        {"item": "Long-term Finance Lease Liabilities", "y2024": "$1,749,459,883", "y2023": "$1,413,377,775"},
+        {"item": "Total Liabilities", "y2024": "$10,744,189,725", "y2023": "$9,394,228,302"},
+        {"item": "Total Stockholders Equity", "y2024": "$5,843,399,742", "y2023": "$5,092,438,128"},
+        {"item": "Retained Earnings", "y2024": "$5,574,478,306", "y2023": "$4,729,850,294"}
+      ],
+      "table_notes": ["Audited by PwC, unqualified opinion, March 21, 2025."]
+    },
+    {
+      "table_id": "item21_income_statement",
+      "source_item": "Item 21 / Exhibit C",
+      "source_pages": [402],
+      "title": "Consolidated Statement of Comprehensive Earnings Summary",
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        {"item": "Franchise Fees", "y2024": "$4,499,874,469", "y2023": "$4,226,750,046", "y2022": "$3,571,607,329"},
+        {"item": "Rental Income", "y2024": "$1,598,939,656", "y2023": "$1,511,525,247", "y2022": "$1,331,359,932"},
+        {"item": "Company-Operated Restaurant Sales", "y2024": "$345,172,933", "y2023": "$319,407,253", "y2022": "$310,400,266"},
+        {"item": "Licensee Fees", "y2024": "$76,768,654", "y2023": "$64,692,844", "y2022": "$50,464,443"},
+        {"item": "Product Sales", "y2024": "$2,352,913,605", "y2023": "$1,536,183,392", "y2022": "$1,019,404,359"},
+        {"item": "Other Income", "y2024": "$188,951,119", "y2023": "$229,491,804", "y2022": "$90,549,779"},
+        {"item": "Total Revenue and Income", "y2024": "$9,062,620,436", "y2023": "$7,888,050,586", "y2022": "$6,373,786,108"},
+        {"item": "Total Costs and Expenses", "y2024": "$7,686,702,237", "y2023": "$6,497,313,799", "y2022": "$5,035,390,092"},
+        {"item": "Earnings Before Income Taxes", "y2024": "$1,375,918,199", "y2023": "$1,390,736,787", "y2022": "$1,338,396,016"},
+        {"item": "Net Earnings", "y2024": "$1,044,197,186", "y2023": "$1,057,994,661", "y2022": "$988,734,304"}
+      ],
+      "table_notes": []
+    }
+  ]
+}

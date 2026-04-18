@@ -1,0 +1,29 @@
+{
+  "source": "Exhibit G — State Specific Addenda (Depth Pass 4)",
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {"state": "California", "affected_family": "rofr", "override_summary": "CFA has 60-day right of first refusal to purchase franchise interest — not in base FA", "why_it_matters": "Gives CFA ability to match any third-party offer, effectively preventing independent sale", "source_pages": [514]},
+    {"state": "California", "affected_family": "integration_clause", "override_summary": "Integration clause cannot disclaim California Franchise Investment Law or Relations Act protections", "why_it_matters": "Representations made by CFA during sales process may be enforceable even if not in FA", "source_pages": [514]},
+    {"state": "California", "affected_family": "noncompete", "override_summary": "Post-term noncompete may be unenforceable under California Business & Professions Code §16600", "why_it_matters": "CA operators may be free to compete immediately after termination despite FA language", "source_pages": [517]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Illinois Franchise Disclosure Act may allow litigation in Illinois", "why_it_matters": "Operator may not be forced to litigate in Georgia", "source_pages": [529]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Illinois law may apply to franchise relationship", "why_it_matters": "Illinois franchise protections may override Georgia law provisions", "source_pages": [531]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Maryland Franchise Registration and Disclosure Law may impose good cause termination requirements", "why_it_matters": "CFA's without-cause termination right may be limited in Maryland", "source_pages": [543]},
+    {"state": "Maryland", "affected_family": "fee_deferral", "override_summary": "Fee deferral may be required", "why_it_matters": "Initial fees may need to be escrowed until opening", "source_pages": [543]},
+    {"state": "Minnesota", "affected_family": "noncompete", "override_summary": "Minnesota law limits noncompete provisions", "why_it_matters": "Post-term noncompete may be narrower or unenforceable", "source_pages": [549]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "Minnesota franchise law may impose good cause and notice requirements", "why_it_matters": "CFA's without-cause termination may be restricted", "source_pages": [549]},
+    {"state": "New York", "affected_family": "termination", "override_summary": "New York franchise law protections may apply", "why_it_matters": "Additional notice and cure period requirements", "source_pages": [557]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "North Dakota generally prohibits noncompete agreements", "why_it_matters": "Both during-term and post-term noncompetes may be unenforceable", "source_pages": [566]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Georgia venue clause may be overridden", "why_it_matters": "ND operator may be able to litigate locally", "source_pages": [566]},
+    {"state": "Virginia", "affected_family": "termination", "override_summary": "Virginia Retail Franchising Act provides additional protections", "why_it_matters": "Notice and cure period requirements may differ from FA", "source_pages": [584]},
+    {"state": "Washington", "affected_family": "termination", "override_summary": "Washington Franchise Investment Protection Act provisions apply", "why_it_matters": "Good cause requirements for termination and non-renewal", "source_pages": [589]},
+    {"state": "Wisconsin", "affected_family": "termination", "override_summary": "Wisconsin Fair Dealership Law provides additional protections", "why_it_matters": "Good cause required for termination; notice and cure periods may differ; applicable as this is the filing state", "source_pages": [595]}
+  ],
+  "summary_table": {
+    "noncompete_limited": ["California", "Minnesota", "North Dakota"],
+    "forum_selection_overridden": ["Illinois", "North Dakota"],
+    "termination_good_cause": ["Maryland", "Minnesota", "New York", "Virginia", "Washington", "Wisconsin"],
+    "integration_clause_limited": ["California"],
+    "rofr_added": ["California"],
+    "fee_deferral": ["Maryland"]
+  }
+}

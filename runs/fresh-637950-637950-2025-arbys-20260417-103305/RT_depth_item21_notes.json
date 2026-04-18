@@ -1,0 +1,25 @@
+{
+  "depth_pass": "A2_targeted_depth_block_1_item21_notes",
+  "method": "normal_text_extraction",
+  "entities_covered": ["Arby's Franchisor, LLC", "ARG"],
+
+  "franchisor_llc_note_families": [
+    {"family": "description_of_business", "walked": true, "pages": [215], "key_facts": ["SPV organized Jul 2, 2015", "Securitization transaction Nov 13, 2015", "Franchisor for US/Canada/Turkey/Qatar"]},
+    {"family": "accounting_policies", "walked": true, "pages": [216, 217], "key_facts": ["Revenue: royalties as earned, franchise fees deferred over term", "Not subject to income taxes", "Credit losses: lifetime expected loss"]},
+    {"family": "intangible_assets", "walked": true, "pages": [218], "key_facts": ["Trademark $250M indefinite-lived, no impairment", "Franchise agreements $2.4M net, 20-yr amortization"]},
+    {"family": "revenue_recognition", "walked": true, "pages": [219], "key_facts": ["Deferred revenue $13.6M total", "Future recognition $1.0M/yr declining"]},
+    {"family": "commitments_securitization", "walked": true, "pages": [219, 220], "key_facts": ["$789.9M notes at 3.24%/3.50%", "$300M VFN facility, $293.1M available"]},
+    {"family": "related_parties", "walked": true, "pages": [220], "key_facts": ["5% royalty on affiliate restaurant sales", "Management fee base $10.4M + escalator"]},
+    {"family": "subsequent_events", "walked": true, "pages": [220], "key_facts": ["None"]}
+  ],
+
+  "arg_note_families": [
+    {"family": "description_of_business", "walked": true, "pages": [229], "key_facts": ["Total system 3,596 (incl international)", "AFA is a VIE consolidated by ARG"]},
+    {"family": "accounting_policies", "walked": true, "pages": [229, 230, 231, 232, 233, 234], "key_facts": ["Property useful lives: equip 3-15yr, buildings 7-40yr", "Goodwill $18.9M no impairment", "Income taxes: pro rata method under Inspire consolidated", "Leases: IBR-based discount rate, ROU assets $454.5M"]},
+    {"family": "intangible_assets", "walked": true, "pages": [237], "key_facts": ["Trademark $250M", "Reacquired franchise rights $30.6M net", "Total intangibles $36.3M net"]},
+    {"family": "long_term_debt", "walked": true, "pages": [238], "key_facts": ["Securitization $789.9M at 3.24%/3.50%", "Finance leases $122.0M", "Total debt $906.8M", "Fair value of securitization $750.4M"]},
+    {"family": "commitments_contingencies", "walked": true, "pages": [244], "key_facts": ["IRB Term Loans ~$4.2B (parent-level, guaranteed by ARG)", "IRB Revolving $461.8M available", "Lease guarantees $1.6M", "Beverage commitments $116.5M through 2034"]},
+    {"family": "related_parties", "walked": true, "pages": [245], "key_facts": ["$380M note receivable from ARG IH LLC at 1.58%, due no later than Jul 2027", "Classified in stockholder's deficit"]},
+    {"family": "subsequent_events", "walked": true, "pages": [245], "key_facts": ["None"]}
+  ]
+}

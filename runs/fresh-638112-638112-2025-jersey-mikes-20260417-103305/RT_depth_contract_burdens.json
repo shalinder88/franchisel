@@ -1,0 +1,52 @@
+{
+  "depth_pass": "A2_depth_pass_2_contract_burdens",
+  "franchise_agreement": {
+    "page_range": [104, 158],
+    "clauses_walked": [
+      {"family": "grant_and_term", "obligation": "10-year initial term from opening date; 1 renewal of 10 years", "trigger": "Signing FA", "source_pages": [111]},
+      {"family": "royalty", "obligation": "6.5% of Gross Receipts weekly via ACH", "trigger": "Ongoing", "source_pages": [112]},
+      {"family": "advertising_funds", "obligation": "1% Corporate Ad + 4% National Media + 0% Coop (cap 6% total)", "trigger": "Ongoing", "source_pages": [112, 113]},
+      {"family": "training", "obligation": "Must complete Phases 1-3; must maintain 3 trained employees at all times; replacement training at $2,500", "trigger": "Pre-opening and ongoing", "source_pages": [114, 115]},
+      {"family": "operations", "obligation": "Full compliance with System Standards in Manual (412 pages); maintain meat case at full capacity; use only authorized products", "trigger": "Ongoing", "source_pages": [118, 119, 130]},
+      {"family": "crisis_management", "obligation": "Immediately notify Area Director and Operations; Franchisor may control crisis response including closing restaurant; franchisee reimburses all costs; indemnification applies", "trigger": "Crisis Management Event", "source_pages": [130]},
+      {"family": "vendor_payment", "obligation": "Must timely pay all vendor/supplier amounts; past-due amounts constitute breach", "trigger": "Ongoing", "source_pages": [130]},
+      {"family": "insurance", "obligation": "CGL $1M/$2M; property; business interruption (covers lost royalties to Company); EPLI $500K; workers comp. Must name Company and JMFS as additional insureds.", "trigger": "Ongoing", "source_pages": [121, 122]},
+      {"family": "termination_triggers", "obligation": "16 non-curable defaults including abandonment (2 days), royalty understatement (3%+ twice), report failures (2x in 12 months), 3+ non-compliance in 12 months, cross-default", "trigger": "Default occurrence", "source_pages": [135, 136]},
+      {"family": "liquidated_damages", "obligation": "Avg monthly (royalty+ad) × lesser of 36 or remaining months. If <12 months operation, use system average. If unapproved closure, use pre-closure period. In addition to other damages.", "formula": "Monthly avg × min(36, remaining)", "source_pages": [140]},
+      {"family": "post_termination", "obligation": "Stop operations; de-identify; pay liquidated damages; assign lease; return materials; comply with non-compete; cease Online Presence; sell assets to Company at option", "trigger": "Termination/expiration", "source_pages": [138, 139, 140]},
+      {"family": "transfer", "obligation": "Company approval (sole and absolute discretion); $15K fee + $5K grand opening; transferee signs then-current FA; general release; right of first refusal 15 business days", "trigger": "Any transfer attempt", "source_pages": [141, 142, 143]},
+      {"family": "noncompete_during", "obligation": "No Competitive Business (25%+ sandwich revenue) anywhere", "duration": "Term of FA", "source_pages": [125]},
+      {"family": "noncompete_post", "obligation": "No Competitive Business within MSA or 10-mile radius for 2 years", "duration": "2 years post-termination/expiration", "source_pages": [125, 126]},
+      {"family": "dispute_resolution", "obligation": "Informal meeting → mediation → binding arbitration, all in Monmouth County NJ. Exceptions: Mark disputes, injunctive relief, covenant enforcement, indemnification.", "venue": "Monmouth County, NJ", "source_pages": [150]},
+      {"family": "governing_law", "obligation": "New Jersey law. NJ Franchise Practices Act applies only if restaurant in NJ and jurisdictional scope independently met.", "source_pages": [150]},
+      {"family": "indemnification", "obligation": "Franchisee indemnifies Company, affiliates, officers, directors, employees against all claims from restaurant operations. Joint and several. Includes enforcement costs.", "source_pages": [146]},
+      {"family": "pos_upgrade_cap", "obligation": "POS upgrades/updates not to exceed $50,000 during FA term. No limit on frequency.", "source_pages": [115]},
+      {"family": "remodeling_cap", "obligation": "Investment required for equipment, supplies, remodeling, upgrades not to exceed $150,000 during FA term.", "source_pages": [120]}
+    ]
+  },
+  "guaranty_exhibit_c2": {
+    "page_range": [160, 162],
+    "scope": "Personal and unconditional",
+    "obligations": [
+      "Guarantees punctual payment and performance of all FA obligations",
+      "Personally bound by and liable for breach of every FA provision (monetary and non-monetary)",
+      "Includes Section 16 non-compete covenants",
+      "Joint and several liability",
+      "Waives: acceptance notice, demand notice, protest notice, right to require action against Franchisee first, all legal/equitable defenses",
+      "Continues for term of FA and thereafter as provided",
+      "Not diminished by extensions, credits, or indulgences granted to Franchisee"
+    ],
+    "spousal_requirement": "Spouse must also sign as Guarantor",
+    "source_pages": [160, 161]
+  },
+  "lease_rider_exhibit_j": {
+    "page_range": [328, 331],
+    "key_provisions": [
+      "Lease rider requires franchisee to assign lease to Franchisor upon termination",
+      "Landlord irrevocably consents to assignment",
+      "Franchisor has right to cure franchisee's lease defaults",
+      "Franchisor has right to enter premises for de-identification"
+    ],
+    "source_pages": [328, 329, 330]
+  }
+}

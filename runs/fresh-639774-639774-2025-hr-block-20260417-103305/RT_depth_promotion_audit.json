@@ -1,0 +1,18 @@
+{
+  "depth_pass": "A2 Depth Pass 3 — Narrative-to-Canonical Promotion Audit",
+  "promoted_facts": [
+    {"fact": "US royalties revenue declining: $210.6M (FY2023) → $204.8M (FY2024) → $192.9M (FY2025)", "source": "Note 2 revenue disaggregation, p.107", "promoted_to": "item21_financial_structure_detail.royalty_revenue_detail"},
+    {"fact": "POM deferred revenue balance $149.3M with $87.4M expected in next 12 months, remainder over 5 years", "source": "Note 2, pp.107-108", "promoted_to": "item21_financial_structure_detail.pom_deferred_detail"},
+    {"fact": "Franchise loans outstanding: $23.8M total ($7.4M short-term, $16.4M long-term), with $3.1M past due 90+ days", "source": "Note 4, p.109", "promoted_to": "item10_financing.franchise_loan_portfolio"},
+    {"fact": "Reacquired franchise rights is largest intangible at $172.4M net ($415.7M gross), $11.7M added in FY2025", "source": "Note 6, p.112", "promoted_to": "item21_financial_structure_detail.reacquired_franchise_rights"},
+    {"fact": "Senior Notes: 5.25% due Oct 2025 ($350M), 2.50% due Jul 2028 ($500M), 3.875% due Aug 2030 ($650M)", "source": "Note 7, p.113", "promoted_to": "item21_financial_structure_detail.debt_detail"},
+    {"fact": "CLOC $1.5B facility with $0 outstanding; extended to July 2030; debt-to-EBITDA covenant 3.50x/4.50x", "source": "Note 7, pp.113-114", "promoted_to": "item21_financial_structure_detail.credit_facility"},
+    {"fact": "Marketing/advertising expense: $285.8M (FY2025)", "source": "Note 1, p.106", "promoted_to": "item6_advertising.total_marketing_spend"},
+    {"fact": "Business acquisitions $35.5M in FY2025 — including franchise reacquisitions with 6-year average useful life for reacquired rights", "source": "Note 6, p.113", "promoted_to": "item21_financial_structure_detail.acquisition_spending"},
+    {"fact": "Depreciation and amortization: $116.8M total ($69.1M property, $47.7M intangibles)", "source": "Notes 5, 6", "promoted_to": "item21_financial_structure_detail.depreciation_amortization"},
+    {"fact": "TIS deferred revenue $22.6M, all recognized by April 2026", "source": "Note 2, p.108", "promoted_to": "item21_financial_structure_detail.tis_deferred_revenue"},
+    {"fact": "State addenda structured overrides extracted for 11 states with 8 override families", "source": "Exhibit B, pp.60-89", "promoted_to": "state_addenda_overrides"},
+    {"fact": "CA interest rate cap at 10% may affect FPI Term Loan rate (disclosed at 10.5%)", "source": "CA amendment, p.61", "promoted_to": "state_addenda_overrides.california.interest_rate_cap"}
+  ],
+  "total_promoted": 12
+}

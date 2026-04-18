@@ -1,0 +1,14 @@
+{
+  "depth_pass": "A2_promotion_audit",
+  "promoted_facts": [
+    {"fact": "Guaranty is personal, irrevocable, unconditional, joint and several, includes spouse", "source": "Exhibit D3, pp.276-277", "promoted_to": "09_final_canonical.json / guaranty_scope"},
+    {"fact": "RBI total debt structure: Term Loan B $4,726M, Term Loan A $1,275M, multiple senior notes totaling $13.6B gross", "source": "Note 9, p.825", "promoted_to": "09_final_canonical.json / item21"},
+    {"fact": "Carrols acquisition total consideration $648M ($543M cash + $15M pre-existing balances + $90M existing equity), $431M assumed debt extinguished", "source": "Note 3, p.820", "promoted_to": "09_final_canonical.json / item1"},
+    {"fact": "BK segment adjusted operating income $410M for 2024", "source": "Note 18 segment reporting, p.850", "promoted_to": "09_final_canonical.json / item21"},
+    {"fact": "Property revenues (lease income) $837M in 2024 ($367M min + $465M variable + $4M direct financing)", "source": "Lease note, p.840", "promoted_to": "12_canonical_enriched_v2.json / item21"},
+    {"fact": "Share-based compensation $161M in 2024", "source": "Note 14, p.840", "promoted_to": "12_canonical_enriched_v2.json / item21"},
+    {"fact": "IT/telecom commitments $84M, advertising commitments $192M, equipment $23M", "source": "Note 17, p.845", "promoted_to": "12_canonical_enriched_v2.json / item21"},
+    {"fact": "No goodwill or brand impairment in 2024, 2023, 2022", "source": "Note 2, p.815", "promoted_to": "09_final_canonical.json / item21"},
+    {"fact": "State addenda override matrix: forum selection voided (CA, MI, WA), general release restricted (CA, MI, WA), noncompete limited (CA)", "source": "Exhibit P, pp.707, 720", "promoted_to": "09_final_canonical.json / state_addenda_overrides"}
+  ]
+}

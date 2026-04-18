@@ -1,0 +1,58 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_block": "A2 Targeted Depth Block 3 — Item 20 completion",
+  "tables_surfaced": 5,
+  "tables_extracted": 5,
+  "table_details": [
+    {
+      "table": "Table 1 — Systemwide Outlet Summary",
+      "source_pages": [58],
+      "status": "complete",
+      "footer_totals": {
+        "2025": {"franchised_end": 4956, "company_owned_end": 75, "total_end": 5031, "net_change": -206},
+        "2024": {"franchised_end": 5214, "company_owned_end": 23, "total_end": 5237, "net_change": -70},
+        "2023": {"franchised_end": 5300, "company_owned_end": 7, "total_end": 5307, "net_change": -16}
+      },
+      "table_notes": ["Post-period: 127 closures Dec 30, 2025 – Mar 6, 2026", "Company-Owned = PHLLC or affiliates"]
+    },
+    {
+      "table": "Table 2 — Transfers",
+      "source_pages": [59, 60],
+      "status": "complete",
+      "states_with_data": 15,
+      "footer_totals": {"2023": 147, "2024": 37, "2025": 189},
+      "table_notes": ["System Restaurants transferred (not FA). Excludes unchanged beneficial ownership and PHLLC-to-franchisee."]
+    },
+    {
+      "table": "Table 3 — Status of Franchised Outlets",
+      "source_pages": [60, 61, 62, 63, 64],
+      "status": "complete",
+      "states_with_data": 42,
+      "footer_totals": {
+        "2025": {"start": 5214, "opened": 55, "terminations": 0, "non_renewals": 0, "reacquired": 54, "ceased": 259, "end": 4956},
+        "2024": {"start": 5300, "opened": 89, "terminations": 0, "non_renewals": 0, "reacquired": 16, "ceased": 159, "end": 5214},
+        "2023": {"start": 5302, "opened": 155, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased": 157, "end": 5300}
+      },
+      "table_notes": ["(1*) New, relocated, acquired from franchisor", "(2*) Low volume, lease expiration, relocated", "(3*) Post-period 127 closures", "Zero terminations and zero non-renewals all 3 years"]
+    },
+    {
+      "table": "Table 4 — Status of Company-Owned Outlets",
+      "source_pages": [65],
+      "status": "complete",
+      "states_with_data": 7,
+      "footer_totals": {
+        "2025": {"start": 23, "opened": 0, "reacquired": 54, "closed": 2, "sold_to_franchisee": 0, "end": 75},
+        "2024": {"start": 7, "opened": 0, "reacquired": 16, "closed": 0, "sold_to_franchisee": 0, "end": 23},
+        "2023": {"start": 21, "opened": 0, "reacquired": 0, "closed": 0, "sold_to_franchisee": 14, "end": 7}
+      },
+      "table_notes": ["2025 reacquisitions: LA (18), NC (30), SC (6). 2024 reacquisition: UT (16). 2023 sales to franchisee: IN (10), KY (4)."]
+    },
+    {
+      "table": "Table 5 — Projected Openings FY2026",
+      "source_pages": [65, 66],
+      "status": "complete",
+      "footer_totals": {"agreements_signed_not_opened": 0, "projected_franchised": 33, "projected_company_owned": 0},
+      "table_notes": ["33 projected across 17 states. Top: IN (4), MA (3), SC (3)."]
+    }
+  ]
+}

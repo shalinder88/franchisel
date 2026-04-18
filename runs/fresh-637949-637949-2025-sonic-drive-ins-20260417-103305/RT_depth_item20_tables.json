@@ -1,0 +1,81 @@
+{
+  "tables_extracted": 5,
+  "table_1": {
+    "title": "System Restaurant Summary (2022-2024)",
+    "source_pages": [75],
+    "data": "Already in 03_tables.json as T_item20_table1",
+    "complete": true
+  },
+  "table_2": {
+    "title": "Transfers from Franchisees to New Owners (2022-2024)",
+    "source_pages": [76, 77, 78],
+    "totals": {"2022": 132, "2023": 75, "2024": 334},
+    "top_states_2024": [
+      {"state": "Texas", "transfers": 110},
+      {"state": "South Carolina", "transfers": 30},
+      {"state": "Kentucky", "transfers": 29},
+      {"state": "Arkansas", "transfers": 25},
+      {"state": "Oklahoma", "transfers": 19},
+      {"state": "Virginia", "transfers": 18},
+      {"state": "Georgia", "transfers": 13},
+      {"state": "North Carolina", "transfers": 12}
+    ],
+    "complete": true,
+    "notes": ["Per-state detail for all states read. 28 states had transfers in 2024."]
+  },
+  "table_3": {
+    "title": "Status of Franchised Restaurants (2022-2024)",
+    "source_pages": [79, 80, 81, 82],
+    "totals_2024": {
+      "start": 3194,
+      "opened": 30,
+      "terminations": 12,
+      "non_renewals": 0,
+      "reacquired": 0,
+      "ceased_ops_other": 68,
+      "end": 3144
+    },
+    "notable_states_2024": [
+      {"state": "Georgia", "start": 77, "end": 52, "terminations": 4, "ceased_ops": 21, "note": "Largest single-state contraction"},
+      {"state": "Texas", "start": 896, "end": 888, "opened": 10, "terminations": 1, "ceased_ops": 17, "note": "1 opening is Multi-Brand with Jimmy John's"},
+      {"state": "Maryland", "start": 15, "end": 12, "terminations": 3},
+      {"state": "Washington", "start": 13, "end": 13, "note": "Stable after 2022 contraction (8 terminations in 2022)"}
+    ],
+    "complete": true,
+    "table_notes": [
+      "2024: Jan 1 to Dec 29. 2023: Jan 1 to Dec 31. 2022: Jan 2 to Jan 1, 2023.",
+      "Texas 2023: 2 restaurants ceased operations to relocate, anticipated reopening 2024.",
+      "Texas 2024: 1 opening is Multi-Brand Location with Jimmy John's restaurant."
+    ]
+  },
+  "table_4": {
+    "title": "Status of Company Restaurants (2022-2024)",
+    "source_pages": [82, 83],
+    "totals_2024": {
+      "start": 327,
+      "opened": 1,
+      "reacquired": 0,
+      "closed": 11,
+      "sold_to_franchisees": 0,
+      "end": 317
+    },
+    "closures_by_state_2024": [
+      {"state": "Georgia", "closed": 4},
+      {"state": "Texas", "closed": 3},
+      {"state": "Colorado", "closed": 2},
+      {"state": "Alabama", "closed": 1},
+      {"state": "Ohio", "closed": 1}
+    ],
+    "complete": true,
+    "table_notes": []
+  },
+  "table_5": {
+    "title": "Projected Openings (as of Dec 29, 2024)",
+    "source_pages": [82, 83],
+    "fas_signed_not_opened": 20,
+    "projected_franchise": 23,
+    "projected_company": 0,
+    "complete": true,
+    "table_notes": ["No projected company-owned openings."]
+  }
+}
