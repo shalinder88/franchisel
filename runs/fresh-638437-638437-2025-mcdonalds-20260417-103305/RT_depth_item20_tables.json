@@ -1,0 +1,13 @@
+{
+  "extraction_date": "2026-04-17",
+  "phase": "A2_targeted_depth_block_3",
+  "note": "All 5 Item 20 tables were fully extracted in A1 (03_tables.json). This file confirms completeness.",
+  "tables_extracted": 5,
+  "table1_systemwide": {"complete": true, "years": [2022, 2023, 2024]},
+  "table2_transfers": {"complete": true, "state_detail": true, "footer_totals": {"2022": 1169, "2023": 672, "2024": 843}},
+  "table3_franchised_status": {"complete": true, "state_detail": true, "footer_totals_2024": {"start": 12772, "opened": 167, "terminated": 73, "non_renewed": 15, "reacquired": 8, "ceased": 1, "end": 12887}},
+  "table4_company_owned": {"complete": true, "state_detail": true, "footer_totals_2024": {"start": 685, "opened": 14, "reacquired": 8, "closed": 3, "sold": 32, "end": 672}},
+  "table5_projected": {"complete": true, "state_detail": true, "totals": {"signed_not_opened": 0, "projected_franchised": 181, "projected_company": 14}},
+  "gag_clause_flag": true,
+  "franchisee_organizations": 7
+}

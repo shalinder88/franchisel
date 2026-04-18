@@ -1,0 +1,53 @@
+{
+  "depth_pass": "A2_depth_pass_3_promotion_audit",
+  "promoted_facts": [
+    {
+      "fact": "Interest on delinquent payments is 15% annual with monthly compounding (or maximum legal rate)",
+      "source": "Reader report Pass E / Franchise Agreement Section 8(c)",
+      "original_pdf_page": 77,
+      "promoted_to": "item17_contract.delinquency_interest_rate"
+    },
+    {
+      "fact": "McDonald's may enter and take possession immediately upon material breach",
+      "source": "Reader report Pass E / Franchise Agreement Section 20(a)",
+      "original_pdf_page": 84,
+      "promoted_to": "item17_contract.immediate_possession_on_breach"
+    },
+    {
+      "fact": "Operating hours minimum: 7 days/week, 7am-11pm or as prescribed",
+      "source": "Reader report Pass C / Franchise Agreement Section 12(g)",
+      "original_pdf_page": 79,
+      "promoted_to": "item9_obligations.operating_hours"
+    },
+    {
+      "fact": "CGL insurance minimum $5M per occurrence / $5M aggregate; A+ or A rating, category IX+",
+      "source": "Reader report Pass C / Franchise Agreement Section 17",
+      "original_pdf_page": 82,
+      "promoted_to": "item17_contract.insurance_requirements"
+    },
+    {
+      "fact": "Political activity carve-out: legitimate political activity including testifying, lobbying, or attempting to influence legislation is not grounds for reputation-based termination",
+      "source": "Franchise Agreement Section 18(o)",
+      "original_pdf_page": 84,
+      "promoted_to": "item17_contract.political_activity_carveout"
+    },
+    {
+      "fact": "Reports due: monthly statement by 11am CT first business day; operating statement by 25th; annual P&L and balance sheet within 90 days of fiscal year end; records kept 3 years",
+      "source": "Franchise Agreement Section 10",
+      "original_pdf_page": 77,
+      "promoted_to": "item9_obligations.reporting_detail"
+    },
+    {
+      "fact": "McDonald's reserves right to terminate if material provision stricken by court (severability with termination right)",
+      "source": "Franchise Agreement Section 25",
+      "original_pdf_page": 85,
+      "promoted_to": "item17_contract.severability_termination_right"
+    },
+    {
+      "fact": "Franchisee must bear cost of enforcement — McDonald's entitled to attorneys' fees, court costs, litigation expenses",
+      "source": "Franchise Agreement Section 23",
+      "original_pdf_page": 85,
+      "promoted_to": "item17_contract.cost_of_enforcement"
+    }
+  ]
+}

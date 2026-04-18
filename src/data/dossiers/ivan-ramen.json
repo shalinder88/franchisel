@@ -1,0 +1,119 @@
+{
+  "slug": "ivan-ramen",
+  "name": "Ivan Ramen Franchising LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Ivan Ramen Franchising LLC",
+    "parent": "Ivan Ramen Holdings Co, LLC",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-21",
+    "franchise_fee_headline": "$35,000",
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 35000,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": "none_required",
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    },
+    {
+      "severity": "warning",
+      "kind": "bankruptcy",
+      "summary": "none_required"
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-06-637911-2025-ivan-ramen-20260415-001003",
+    "primary_run_folder": "fresh-06-637911-2025-ivan-ramen-20260415-001003",
+    "primary_fdd_id": "637911",
+    "harvest_paths": [
+      "fresh-06-637911-2025-ivan-ramen-20260413-205255"
+    ],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 6
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "UK master franchise operating status \u2014 sold September 2023, terms disclosed (\u00a31 + 5%), but operating status, unit count, and performance not disclosed"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Auditor going-concern evaluation outcome \u2014 standard evaluation language present but no emphasis-of-matter paragraph; unclear whether going-concern risk was resolved by the February 2025 $120K capital "
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Franchisor's ability to perform pre-opening obligations \u2014 $5,992 cash at 12/31/2024, G&A ~$80K/year; three state regulators (IL, MD, ND) independently imposed fee deferral requirements due to financia"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Ivan Ramen USA LLC financial health \u2014 affiliate operating the one company-owned restaurant has borrowed $25,848 from the franchisor with no terms or interest; affiliate's financial condition not discl"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "State of formation discrepancy \u2014 Item 1 states 'New York limited liability company'; financial statement Note 1 states 'Delaware limited liability company'. One is incorrect."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Ghost kitchen classification \u2014 counted as 'franchised' outlet in Item 20 tables but footnoted as 'not an Ivan Ramen Restaurant'; cover page describes franchise as 'Ivan Ramen Restaurant Businesses'"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Revenue recognition vs. actual revenue \u2014 $5,000 recognized in FY2024 from $25,000 Las Vegas franchise fee; ASC 606 policy states straight-line recognition over 10-year term, which would yield ~$2,500 "
+    }
+  ],
+  "_status": "PUBLISHED"
+}

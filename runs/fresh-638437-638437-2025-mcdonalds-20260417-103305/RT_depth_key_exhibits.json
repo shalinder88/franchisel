@@ -1,0 +1,59 @@
+{
+  "extraction_date": "2026-04-17",
+  "phase": "A2_targeted_depth_block_2",
+  "exhibits_walked": [
+    {
+      "exhibit": "B",
+      "name": "Franchise Agreement (Traditional)",
+      "pages": [73, 88],
+      "clause_walk_status": "complete",
+      "clauses": [
+        {"family": "grant", "obligation": "Limited right to operate at specific location", "source_pages": [74, 75]},
+        {"family": "term", "duration": "Specified per agreement (typically 20 years)", "source_pages": [75]},
+        {"family": "royalty", "money": "[%] of Gross Sales, monthly", "source_pages": [76]},
+        {"family": "auto_debit", "obligation": "Mandatory auto debit/credit transfer", "source_pages": [77]},
+        {"family": "delinquency_interest", "money": "Highest legal rate or 15%, monthly compounding", "source_pages": [77]},
+        {"family": "reporting", "obligation": "Monthly receipts, operating statement, annual P&L/BS", "source_pages": [77, 78]},
+        {"family": "noncompete_during", "restriction": "No interest in similar business", "duration": "Term", "source_pages": [78]},
+        {"family": "noncompete_post", "restriction": "No interest in similar business within 10 miles", "duration": "18 months", "source_pages": [78]},
+        {"family": "compliance", "obligation": "Entire McDonald's System including menu, specs, QSC", "source_pages": [78, 79, 80]},
+        {"family": "hours", "obligation": "7 days/week, 7am-11pm minimum", "source_pages": [79]},
+        {"family": "best_efforts", "obligation": "Full time and best efforts, personally", "source_pages": [80]},
+        {"family": "assignment_death", "right": "To spouse/heirs if qualified; McD may manage 12 months then purchase at FMV", "source_pages": [80]},
+        {"family": "assignment_general", "restriction": "Requires consent (not arbitrary); 8 criteria", "source_pages": [81]},
+        {"family": "rofr", "right": "20 days notice; McD has 10 days to match", "source_pages": [81]},
+        {"family": "royalty_on_transfer", "trigger": "Auto-adjusts to then-prevailing rate", "source_pages": [81]},
+        {"family": "insurance", "obligation": "Workers comp + CGL $5M/$5M; AM Best IX+, A+/A", "source_pages": [82]},
+        {"family": "material_breach", "trigger": "17 enumerated grounds", "source_pages": [83, 84]},
+        {"family": "post_termination", "obligation": "McD may enter immediately; 30-day purchase option at FMV; no intangibles", "source_pages": [84, 85]},
+        {"family": "indemnification", "obligation": "Hold harmless + defend McD for all claims from restaurant operations", "source_pages": [85]},
+        {"family": "attorneys_fees", "money": "McD recovers reasonable fees if it prevails", "source_pages": [85]},
+        {"family": "governing_law", "restriction": "Illinois", "source_pages": [86]},
+        {"family": "no_renewal", "restriction": "No promise or representation as to renewal", "source_pages": [86]},
+        {"family": "no_territory", "restriction": "No exclusive/protected territory", "source_pages": [86]},
+        {"family": "integration", "restriction": "Entire agreement; no oral representations binding", "source_pages": [85, 86]}
+      ]
+    },
+    {
+      "exhibit": "K",
+      "name": "New Term Policy",
+      "pages": [191, 192],
+      "clause_walk_status": "complete",
+      "clauses": [
+        {"family": "eligibility", "obligation": "Consistently meet National Franchising Standards throughout term", "source_pages": [191]},
+        {"family": "application", "trigger": "Apply in year 16 by completing New Term Request", "source_pages": [191]},
+        {"family": "recommendation", "trigger": "Year 17 — VP recommends to New Term Committee", "source_pages": [191]},
+        {"family": "decision", "restriction": "New Term Committee decides. Decision is final.", "source_pages": [191]},
+        {"family": "conditions", "obligation": "May include reinvestment, rebuilds, relocations, real estate, ownership. McD may require controlling interest in additional property.", "source_pages": [191]},
+        {"family": "royalty", "money": "Remains same as previous rate", "source_pages": [191]},
+        {"family": "fee", "money": "Then-current rates for similar restaurants", "source_pages": [191]},
+        {"family": "rent", "money": "Per then-current new term rent policy", "source_pages": [192]},
+        {"family": "denial", "right": "Alternative offer may allow sale to qualified buyer before new term. Legal release required.", "source_pages": [192]}
+      ]
+    }
+  ],
+  "deferred_exhibits": [
+    {"exhibit": "G", "name": "Operator's Lease", "pages": [133, 165], "why_deferred": "33-page lease. Key terms covered via Item 17 OL table and body cross-references. Contract burden depth pass extracted grant, termination, rent, and assignment terms from Item 17.", "what_recovered_elsewhere": "All key operative burdens (term, rent, termination, transfer, default, choice of law) recovered from Item 17 second table.", "what_remains_missing": "Detailed rent computation formulas, specific maintenance obligations by section, force majeure, condemnation provisions."},
+    {"exhibit": "N", "name": "Loan and Related Documents", "pages": [196, 230], "why_deferred": "35-page loan package. Key terms fully described in Item 10: SOFR+3.10%, 3-5yr/7yr amort, personal+spousal guarantee, cross-default, OAPA waiver.", "what_recovered_elsewhere": "All material financing terms from Item 10.", "what_remains_missing": "Specific security agreement clauses, ACH authorization terms, detailed OAPA provisions."}
+  ]
+}

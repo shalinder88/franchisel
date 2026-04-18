@@ -1,0 +1,272 @@
+{
+  "extraction_date": "2026-04-17",
+  "brand": "McDonald's USA, LLC",
+  "tables": [
+    {
+      "id": "item5_initial_fees",
+      "item": 5,
+      "title": "Initial Franchise Fees",
+      "source_pages": [18],
+      "columns": ["Restaurant Type", "Fee"],
+      "rows": [
+        {"type": "Traditional", "fee": "$45,000"},
+        {"type": "STO/STR", "fee": "$22,500"},
+        {"type": "Satellite (non-Walmart)", "fee": "$500"},
+        {"type": "Satellite (Walmart)", "fee": "$0"},
+        {"type": "BFL (at option exercise)", "fee": "$45,000"}
+      ],
+      "table_notes": ["Full refund if construction not completed within 1 year of signing. No refunds otherwise. Rebuild/relocate: fee less credit for prior fee."]
+    },
+    {
+      "id": "item6_fee_table",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [18, 19, 20, 21, 22, 23, 24],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Royalty", "amount": "5% or 4% of Gross Sales", "due": "Monthly 10th", "remarks": "5% for new/McOpCo sales/ROFR post-1/1/2024; 4% for legacy"},
+        {"fee": "Rent (Base)", "amount": "Varies", "due": "Monthly 1st", "remarks": "Based on McD investment + finance factor"},
+        {"fee": "Rent (Pass Thru)", "amount": "Varies", "due": "Monthly 1st", "remarks": "Lease escalations passed through"},
+        {"fee": "Rent (Percentage)", "amount": "6%-23% of Gross Sales (new)", "due": "Monthly 10th", "remarks": "Min 11.50% starting year 8"},
+        {"fee": "Advertising/Promotion", "amount": "Min 4% of Gross Sales", "due": "Annual", "remarks": "Not payable to McD; OPNAD + local co-ops"},
+        {"fee": "Audit/Inspection", "amount": "Cost of audit", "due": "On billing", "remarks": "Only if understatement ≥2%"},
+        {"fee": "Satellite Annual", "amount": "$500-$2,500", "due": "Annual", "remarks": ""},
+        {"fee": "Satellite Rent", "amount": "Varies", "due": "Monthly", "remarks": "MIW: 14%-15.5% fixed"},
+        {"fee": "STO/STR Rent", "amount": "Varies", "due": "Monthly", "remarks": "Tiered by McD development costs"},
+        {"fee": "BFL Rent", "amount": "Varies", "due": "Monthly", "remarks": "Case-by-case"},
+        {"fee": "Relocation Contribution", "amount": "$50,000", "due": "At opening", "remarks": "Required if relocating"},
+        {"fee": "Sesame POS", "amount": "$1,133/yr + $2,600 one-time", "due": "Monthly 25th", "remarks": "Software maintenance"},
+        {"fee": "Global Mobile App", "amount": "$664/yr", "due": "Monthly 25th", "remarks": "Digital tech localization"},
+        {"fee": "McDelivery POS", "amount": "$620/yr", "due": "Monthly 25th", "remarks": "Delivery integration"},
+        {"fee": "Self-Ordering Kiosk", "amount": "$558/yr + $1,500 one-time", "due": "Monthly 25th", "remarks": "Kiosk tech/accessibility"},
+        {"fee": "HHOT", "amount": "$50/yr + $500 one-time", "due": "Monthly 25th", "remarks": "Hand-held order taker"},
+        {"fee": "eProduction", "amount": "$47/yr", "due": "Monthly 25th", "remarks": "eProduction software"},
+        {"fee": "Back Office Integration", "amount": "$545/yr", "due": "Monthly 25th", "remarks": "Store system platform"},
+        {"fee": "Payments & Fraud Mgmt", "amount": "$740/yr", "due": "Monthly 25th", "remarks": "Encryption services"},
+        {"fee": "Employee Engagement", "amount": "$385/yr", "due": "Monthly 25th", "remarks": "Fred/Campus solutions"},
+        {"fee": "PDW Reporting", "amount": "$167/yr", "due": "Monthly 25th", "remarks": "Optional"},
+        {"fee": "McD Connect", "amount": "$250/yr", "due": "Monthly 25th", "remarks": "Optional"},
+        {"fee": "Restaurant Employee Survey", "amount": "$62/yr", "due": "Monthly 25th", "remarks": "Optional"},
+        {"fee": "Deployment/OTP/Support", "amount": "$2,529/yr", "due": "Monthly 25th", "remarks": "Deployment services"},
+        {"fee": "Network Mgmt/Security", "amount": "$1,134/yr", "due": "Monthly 25th", "remarks": "Network/IAM/security"},
+        {"fee": "Hardware/Data Mgmt", "amount": "$951/yr", "due": "Monthly 25th", "remarks": "Data movement/monitoring"},
+        {"fee": "RFM", "amount": "$690/yr", "due": "Monthly 25th", "remarks": "File maintenance software"},
+        {"fee": "Microsoft License", "amount": "$707/yr", "due": "Monthly 25th", "remarks": "Annual license subscription"},
+        {"fee": "Pricing Engine", "amount": "$264/yr", "due": "Monthly 25th", "remarks": "Optional"},
+        {"fee": "DMB 2.0", "amount": "$264 one-time", "due": "On deployment", "remarks": "Digital menu board 2.0"},
+        {"fee": "GRNT", "amount": "$185/yr + $491 one-time", "due": "Monthly 25th", "remarks": "Restaurant Network Transform"},
+        {"fee": "Edge", "amount": "$435/yr + $120 one-time", "due": "Monthly 25th", "remarks": "Edge computing"},
+        {"fee": "Store Mail", "amount": "$56.40/yr", "due": "Annual", "remarks": "Email accounts"}
+      ],
+      "table_notes": [
+        "Note 1: All fees imposed/collected by and payable to McDonald's. Non-refundable and uniform. McD may draft miscellaneous receivables.",
+        "Note 2: 5% royalty applies post-1/1/2024 for new restaurants, McOpCo sales, ROFR exercises. 4% continues for family/ownership transfers, new terms on existing, franchisee sales, rebuilds.",
+        "Note 3: Percentage Rent for new/relocated traditionals opening on/after 1/14/2026: target allocation split; generally 6%-23%; min 11.50% year 8. Payable only if monthly Gross Sales exceed base sales figure.",
+        "Note 4: Co-investment policy allows Percentage Rent reduction in 0.25% increments (Quarters); cost ≥$30K per Quarter; two options for new restaurants (11.50% or 12.50% floor).",
+        "Note 5: Advertising not payable to McD. OPNAD currently 2.25%. McOpCo companies are voting members without controlling power.",
+        "Note 6: Satellite rent determined case-by-case. MIW: Fixed Percentage Rent 14%-15.5%.",
+        "Note 7: STO/STR rent tiered by McD total acquisition/development costs ($640K-$1M+). STR starts at 9%, STO at 9.5%.",
+        "Note 8: BFL rent structure determined case-by-case.",
+        "Note 9: Relocation contribution required for relocated restaurants.",
+        "Note 10: Technology fees subject to periodic review and may increase.",
+        "Note 11: One-time fees for new and existing restaurants adopting specified technology."
+      ]
+    },
+    {
+      "id": "item7_initial_investment",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [25, 26],
+      "columns": ["Type of Expenditure", "Traditional Low", "Traditional High", "STO/STR Low", "STO/STR High", "Satellite Low", "Satellite High"],
+      "rows": [
+        {"type": "Initial Franchise Fee", "trad_low": "$45,000", "trad_high": "$45,000", "sto_low": "$22,500", "sto_high": "$22,500", "sat_low": "$0", "sat_high": "$500"},
+        {"type": "Real Estate/Building (3 mo)", "trad_low": "$0", "trad_high": "$313,000", "sto_low": "$0", "sto_high": "$60,000", "sat_low": "$0", "sat_high": "$65,000"},
+        {"type": "Signs/Seating/Equipment/Decor", "trad_low": "$1,100,000", "trad_high": "$1,785,000", "sto_low": "$735,000", "sto_high": "$1,295,000", "sat_low": "$375,000", "sat_high": "$840,000"},
+        {"type": "Opening Inventory", "trad_low": "$20,000", "trad_high": "$39,000", "sto_low": "$16,000", "sto_high": "$31,000", "sat_low": "$14,000", "sat_high": "$45,000"},
+        {"type": "Misc Opening Expenses", "trad_low": "$54,000", "trad_high": "$66,000"},
+        {"type": "Travel/Living", "trad_low": "$2,000", "trad_high": "$41,000"},
+        {"type": "Additional Funds (3 mo)", "trad_low": "$250,000", "trad_high": "$439,000", "sto_low": "$185,000", "sto_high": "$278,000", "sat_low": "$80,000", "sat_high": "$136,000"},
+        {"type": "TOTAL", "trad_low": "$1,471,000", "trad_high": "$2,728,000", "sto_low": "$1,014,500", "sto_high": "$1,793,500", "sat_low": "$525,000", "sat_high": "$1,193,500"}
+      ],
+      "table_notes": [
+        "Store Systems cost $150K-$250K (included in Signs/Equipment).",
+        "McD acquires real estate and building; franchises right to operate at location.",
+        "Of 31 McOpCo sales in 2024, 9 exceeded the high end by $65K to $2.04M.",
+        "Percentage Rent for new traditionals opening on/after 1/14/2026: 0%-29%; for STO/STR: 0%-15%."
+      ]
+    },
+    {
+      "id": "item19_pro_forma",
+      "item": 19,
+      "title": "Pro Forma Operating Statement — Independent Franchisee Traditional Restaurants",
+      "source_pages": [43, 44, 45],
+      "population": 11332,
+      "population_description": "Independent franchisee traditional restaurants open ≥1 year, excluding McOpCo, Satellites, and restaurants that changed owners in 2024",
+      "columns": ["Line Item", "$3.0M Sales", "% of Sales", "$3.2M Sales", "% of Sales", "$3.4M Sales", "% of Sales"],
+      "rows": [
+        {"line": "Product Sales", "v3_0": 3000000, "p3_0": "100.0%", "v3_2": 3200000, "p3_2": "100.0%", "v3_4": 3400000, "p3_4": "100.0%"},
+        {"line": "Cost of Sales", "v3_0": 850000, "p3_0": "28.3%", "v3_2": 901000, "p3_2": "28.2%", "v3_4": 954000, "p3_4": "28.1%"},
+        {"line": "Gross Profit", "v3_0": 2149000, "p3_0": "71.6%", "v3_2": 2301000, "p3_2": "71.9%", "v3_4": 2446000, "p3_4": "71.9%"},
+        {"line": "Other Operating Expenses", "v3_0": 1415000, "p3_0": "47.2%", "v3_2": 1469000, "p3_2": "46.5%", "v3_4": 1567000, "p3_4": "46.1%"},
+        {"line": "OIBOC", "v3_0": 734000, "p3_0": "24.5%", "v3_2": 812000, "p3_2": "25.4%", "v3_4": 879000, "p3_4": "25.9%"}
+      ],
+      "attainment": {
+        "pct_above_734k": "76%",
+        "pct_above_812k": "69%",
+        "pct_above_879k": "62%"
+      },
+      "critical_caveat": "Pro-forma royalties are at 4% of Gross Sales. New franchisees post-1/1/2024 pay 5%. The 100 bps difference at $4M avg sales = ~$40K/yr higher costs not reflected.",
+      "effective_rent_range_2024": "0.00% to 33.33%",
+      "table_notes": [
+        "OIBOC excludes rent, royalty, D&A, interest, and income taxes.",
+        "Other Operating Expenses include labor, payroll taxes, advertising (4% min), promotion, outside services, linen, operating supplies, small equipment, maintenance, utilities, office supplies, legal/accounting, insurance, RE/personal property taxes, licenses, non-product income/expense.",
+        "If McOpCo data included, OIBOC range would be $730K-$868K.",
+        "Product Sales bands: $2.9M-$3.1M, $3.1M-$3.3M, $3.3M-$3.5M respectively."
+      ]
+    },
+    {
+      "id": "item19_sales_distribution",
+      "item": 19,
+      "title": "Sales Volume Distribution",
+      "source_pages": [43],
+      "segments": [
+        {
+          "population": "All Traditional (12,572)",
+          "avg_sales": 4002000,
+          "median_sales": 3838000,
+          "high": 19680000,
+          "low": 914000,
+          "pct_above_3m": "79%",
+          "pct_above_3_2m": "72%",
+          "pct_above_3_4m": "65%"
+        },
+        {
+          "population": "Franchised Traditional (12,023)",
+          "avg_sales": 3966000,
+          "median_sales": 3797000,
+          "high": 19680000,
+          "low": 914000,
+          "pct_above_3m": "78%",
+          "pct_above_3_2m": "71%",
+          "pct_above_3_4m": "64%"
+        },
+        {
+          "population": "McOpCo Traditional (549)",
+          "avg_sales": 4793000,
+          "median_sales": 4612000,
+          "high": 10030000,
+          "low": 1820000,
+          "pct_above_3m": "96%",
+          "pct_above_3_2m": "94%",
+          "pct_above_3_4m": "89%"
+        }
+      ]
+    },
+    {
+      "id": "item20_table1_systemwide",
+      "item": 20,
+      "title": "Table 1 — Systemwide Outlet Summary",
+      "source_pages": [45],
+      "years": [2022, 2023, 2024],
+      "data": {
+        "franchised": {"start": [12775, 12764, 12772], "end": [12764, 12772, 12887], "net_change": [-11, 8, 115]},
+        "company_owned": {"start": [661, 691, 685], "end": [691, 685, 672], "net_change": [30, -6, -13]},
+        "total": {"start": [13436, 13455, 13457], "end": [13455, 13457, 13559], "net_change": [19, 2, 102]}
+      }
+    },
+    {
+      "id": "item20_table2_transfers",
+      "item": 20,
+      "title": "Table 2 — Transfers of Outlets from Franchisees to New Owners",
+      "source_pages": [45, 46, 47, 48],
+      "footer_totals": {"2022": 1169, "2023": 672, "2024": 843},
+      "table_notes": ["Includes 'spin' transactions where McD acquired and immediately resold without operating."]
+    },
+    {
+      "id": "item20_table3_franchised_status",
+      "item": 20,
+      "title": "Table 3 — Status of Franchised Outlets",
+      "source_pages": [48, 49, 50, 51, 52],
+      "footer_totals": {
+        "2024": {
+          "outlets_start": 12772,
+          "opened": 167,
+          "terminations": 73,
+          "non_renewals": 15,
+          "reacquired_by_franchisor": 8,
+          "ceased_operations_other": 1,
+          "outlets_end": 12887
+        },
+        "2023": {
+          "outlets_start": 12764,
+          "opened": 128,
+          "terminations": 33,
+          "non_renewals": 29,
+          "reacquired_by_franchisor": 13,
+          "ceased_operations_other": 0,
+          "outlets_end": 12772
+        },
+        "2022": {
+          "outlets_start": 12775,
+          "opened": 84,
+          "terminations": 30,
+          "non_renewals": 18,
+          "reacquired_by_franchisor": 47,
+          "ceased_operations_other": 1,
+          "outlets_end": 12764
+        }
+      },
+      "table_notes": [
+        "Substantially all Terminations are closings by mutual agreement during the franchise term.",
+        "Franchisees have no right to renew. Non-Renewals are substantially all closings by mutual agreement at term end. If McD does not grant new term, franchisee may sell during remaining term.",
+        "Reacquired does not include 'spin' transactions.",
+        "Ceased Operations includes mutual terminations for relocations (old agreement terminated, new one signed)."
+      ]
+    },
+    {
+      "id": "item20_table4_company_owned",
+      "item": 20,
+      "title": "Table 4 — Status of Company-Owned Outlets",
+      "source_pages": [52, 53],
+      "footer_totals": {
+        "2024": {
+          "outlets_start": 685,
+          "opened": 14,
+          "reacquired_from_franchisee": 8,
+          "closed": 3,
+          "sold_to_franchisee": 32,
+          "outlets_end": 672
+        },
+        "2023": {
+          "outlets_start": 691,
+          "opened": 3,
+          "reacquired_from_franchisee": 13,
+          "closed": 4,
+          "sold_to_franchisee": 20,
+          "outlets_end": 685
+        },
+        "2022": {
+          "outlets_start": 661,
+          "opened": 2,
+          "reacquired_from_franchisee": 49,
+          "closed": 3,
+          "sold_to_franchisee": 18,
+          "outlets_end": 691
+        }
+      },
+      "table_notes": ["Reacquired from Franchisee does not include 'spin' transactions."]
+    },
+    {
+      "id": "item20_table5_projected",
+      "item": 20,
+      "title": "Table 5 — Projected Openings as of December 31, 2024",
+      "source_pages": [53, 54],
+      "projected_openings_total": {
+        "agreements_signed_not_opened": 0,
+        "projected_new_franchised": 181,
+        "projected_new_company_owned": 14
+      },
+      "table_notes": ["Reflects projections of gross restaurant openings."]
+    }
+  ]
+}

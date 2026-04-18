@@ -1,0 +1,96 @@
+{
+  "slug": "fish-chips",
+  "name": "Fish & Chips Gordon Ramsay",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "GRNA FC Group LLC",
+    "parent": null,
+    "headquarters": "6191 North State Highway 161, Suite 400, Irving, TX 75038-2251",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-02-26",
+    "franchise_fee_headline": "$50,000",
+    "investment_range_headline": "$1,503,000 to $2,410,000",
+    "royalty_headline": "5%",
+    "ad_fund_headline": "0.5%",
+    "term_headline": 10,
+    "renewal_headline": "Four additional 5-year terms",
+    "territory_headline": "Designated Area (not exclusive territory)",
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 50000,
+    "royalty_raw": "5%",
+    "ad_fund_raw": "0.5%",
+    "investment_low_raw": 1503000,
+    "investment_high_raw": 2410000
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 10,
+    "renewal": "Four additional 5-year terms"
+  },
+  "territory_reality": {
+    "headline": "Designated Area (not exclusive territory)"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion.",
+    "Request current state-by-state addenda packet."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-35-637941-2025-fish-chips-20260415-104259",
+    "primary_run_folder": "fresh-35-637941-2025-fish-chips-20260415-104259",
+    "primary_fdd_id": "637941",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 35
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "{'question': 'Whether affiliate hotel/casino/resort experience translates to standalone fast-casual franchise', 'severity': 'high'}"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "{'question': 'Whether $1.5M-$2.4M investment is competitive with no disclosed unit economics', 'severity': 'high'}"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "{'question': 'Effective royalty burden under Menu Item Price Policy', 'severity': 'medium'}"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "{'question': 'Scope of celebrity chef noncompete on exit', 'severity': 'medium'}"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

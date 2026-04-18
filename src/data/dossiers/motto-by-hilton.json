@@ -1,0 +1,125 @@
+{
+  "slug": "motto-by-hilton",
+  "name": "Motto by Hilton",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": null,
+    "headquarters": "7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102",
+    "fdd_filing_year": 2025,
+    "issuance_date": null,
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": false,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": false
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": 2
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    },
+    {
+      "severity": "info",
+      "kind": "litigation",
+      "summary": "2 pending lawsuit(s)"
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-140-638064-2025-motto-by-hilton-20260415-200808",
+    "primary_run_folder": "fresh-140-638064-2025-motto-by-hilton-20260415-200808",
+    "primary_fdd_id": "638064",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "F",
+    "phase": "first200",
+    "slot": 140
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Marketing fund (4% GRR Monthly Program Fee) is not separately audited or reported to franchisees"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No FPR made despite 5 open hotels and $19M-$91M investment threshold"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Early-stage brand risk \u2014 only 5 hotels after 6+ years of franchising, modest pipeline of 8"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Hilton Franchise Holding LLC unconditionally guarantees Hilton parent debt maturing 2025-2033; all assets and franchise contracts pledged as collateral"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 7 Note 22 states 'new brand' without actual investment data despite 5 operating hotels \u2014 likely outdated boilerplate"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Note 9 subsequent events evaluation date 'March 18, 2024' appears to be typo for 2025"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Gag clause restricts some current/former franchisees from discussing experience, limiting due diligence with only 5 open hotels"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 7 Note 22 describes Motto as 'new brand' without actual investment data, but brand has been franchising since September 2018 with 5 open hotels"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Note 9 states events evaluated through 'March 18, 2024' but FDD issuance date is March 30, 2025 and financials are for year ended December 31, 2024"
+    }
+  ],
+  "_status": "PARTIAL"
+}

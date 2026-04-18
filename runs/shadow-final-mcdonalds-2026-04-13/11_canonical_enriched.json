@@ -1,0 +1,196 @@
+{
+  "_enrichment_version": "v1",
+  "_base": "09_final_canonical.json",
+  "_enrichment_layers": ["item19_chart_detail", "item20_yearly_activity", "exhibit_structure", "state_addenda_overrides", "item21_structural_facts"],
+
+  "item19_chart_detail": {
+    "sales_distribution": {
+      "all_traditional": {
+        "population": 12572,
+        "average": 4002000,
+        "median": 3838000,
+        "high": 19680000,
+        "low": 914000,
+        "pct_above_3m": 79,
+        "pct_above_3_2m": 72,
+        "pct_above_3_4m": 65,
+        "spread_high_low": 18766000,
+        "coefficient_of_variation_implied": "high"
+      },
+      "franchised_only": {
+        "population": 12023,
+        "average": 3966000,
+        "median": 3797000,
+        "high": 19680000,
+        "low": 914000,
+        "pct_above_3m": 78,
+        "pct_above_3_2m": 71,
+        "pct_above_3_4m": 64,
+        "avg_vs_median_gap": 169000,
+        "positive_skew": true
+      },
+      "mcopco_only": {
+        "population": 549,
+        "average": 4793000,
+        "median": 4612000,
+        "high": 10030000,
+        "low": 1820000,
+        "pct_above_3m": 96,
+        "avg_premium_over_franchised": 827000,
+        "premium_pct": 20.9
+      }
+    },
+    "pro_forma_detail": {
+      "population": 11332,
+      "excludes": ["McOpCo", "Satellites", "restaurants that changed owners in 2024"],
+      "royalty_rate_during_period": 0.04,
+      "current_royalty_rate_new": 0.05,
+      "tiers": [
+        {
+          "sales_band": "2900000-3100000",
+          "center_point": 3000000,
+          "cogs_pct": 28.3,
+          "gross_margin_pct": 71.6,
+          "opex_pct": 47.2,
+          "oiboc_pct": 24.5,
+          "oiboc_amount": 734000,
+          "pct_above_this_oiboc": 76
+        },
+        {
+          "sales_band": "3100000-3300000",
+          "center_point": 3200000,
+          "cogs_pct": 28.2,
+          "gross_margin_pct": 71.9,
+          "opex_pct": 46.5,
+          "oiboc_pct": 25.4,
+          "oiboc_amount": 812000,
+          "pct_above_this_oiboc": 69
+        },
+        {
+          "sales_band": "3300000-3500000",
+          "center_point": 3400000,
+          "cogs_pct": 28.1,
+          "gross_margin_pct": 71.9,
+          "opex_pct": 46.1,
+          "oiboc_pct": 25.9,
+          "oiboc_amount": 879000,
+          "pct_above_this_oiboc": 62
+        }
+      ],
+      "effective_rent_range_pct": {"low": 0.0, "high": 33.33},
+      "caveats": [
+        "Excludes rent, royalty, D&A, interest, income taxes",
+        "Royalties were 4% during covered period; new restaurants now 5%",
+        "Organization overhead not included",
+        "If McOpCo included, OIBOC range $730K-$868K"
+      ]
+    }
+  },
+
+  "item20_yearly_activity": {
+    "franchised_outlets": {
+      "2022": {"start": 12775, "opened": 84, "terminations": 30, "non_renewals": 18, "reacquired": 47, "ceased_other": 0, "end": 12764, "transfers": 1169},
+      "2023": {"start": 12764, "opened": 128, "terminations": 73, "non_renewals": 33, "reacquired": 13, "ceased_other": 1, "end": 12772, "transfers": 672},
+      "2024": {"start": 12772, "opened": 167, "terminations": 29, "non_renewals": 15, "reacquired": 8, "ceased_other": 0, "end": 12887, "transfers": 843}
+    },
+    "company_owned_outlets": {
+      "2022": {"start": 661, "opened": 2, "reacquired": 49, "closed": 3, "sold": 18, "end": 691},
+      "2023": {"start": 691, "opened": 3, "reacquired": 13, "closed": 4, "sold": 20, "end": 685},
+      "2024": {"start": 685, "opened": 14, "reacquired": 8, "closed": 3, "sold": 32, "end": 672}
+    },
+    "projected_2025": {"franchised": 181, "company_owned": 14, "total": 195, "fa_signed_not_opened": 0},
+    "system_totals": {
+      "2022": {"start": 13436, "end": 13455, "net": 19},
+      "2023": {"start": 13455, "end": 13457, "net": 2},
+      "2024": {"start": 13457, "end": 13559, "net": 102}
+    },
+    "churn_analysis": {
+      "2024_gross_openings_franchised": 167,
+      "2024_total_closures_franchised": 52,
+      "2024_net_franchised": 115,
+      "2024_closure_rate_pct": 0.41,
+      "2024_transfer_rate_pct": 6.60
+    }
+  },
+
+  "exhibit_structure": {
+    "total_exhibits": 20,
+    "critical_exhibits": ["A", "B", "G", "K", "R", "T"],
+    "exhibit_page_allocation": {
+      "A_financial_statements": 15,
+      "B_franchise_agreement_traditional": 18,
+      "C_franchise_agreement_satellite": 18,
+      "D_franchise_agreement_walmart": 18,
+      "E_new_restaurant_rider": 3,
+      "F_bfl_rider": 3,
+      "G_operators_lease": 33,
+      "H_assignment_entity": 6,
+      "I_assignment_agreement": 8,
+      "J_candidate_agreements": 11,
+      "K_new_term_policy": 2,
+      "L_growth_policy": 1,
+      "M_new_term_offer_letter": 2,
+      "N_loan_documents": 35,
+      "O_agents_for_service": 3,
+      "P_state_administrators": 2,
+      "Q_affiliates": 1,
+      "R_franchisee_list": 144,
+      "S_ceased_operations_list": 2,
+      "T_state_addenda": 5
+    }
+  },
+
+  "state_addenda_overrides": {
+    "california": {
+      "topic": "Employment standards",
+      "override": "Fast Food Act (AB 1228) compliance required; franchisor provides no training or assistance",
+      "impact": "Additional labor cost burden on franchisee"
+    },
+    "maryland": {
+      "topic": "Franchise law protections",
+      "overrides": [
+        "Releases for renewal/transfer do not apply to Maryland Franchise Law",
+        "May bring action in Maryland for MD Franchise Law claims",
+        "3-year statute of limitations from franchise grant"
+      ]
+    },
+    "minnesota": {
+      "topic": "Termination/non-renewal protections",
+      "overrides": [
+        "90 days notice of termination with 60 days to cure",
+        "180 days notice of non-renewal",
+        "Transfer consent not unreasonably withheld"
+      ]
+    },
+    "north_dakota": {
+      "topic": "Non-compete enforceability",
+      "override": "Non-competes generally unenforceable; ND law governs ND claims"
+    },
+    "washington": {
+      "topic": "No-poach provisions",
+      "override": "AOD with Attorney General: removed no-poach from FA; will not enforce existing provisions"
+    }
+  },
+
+  "item21_structural_facts": {
+    "auditor": "Ernst & Young LLP",
+    "opinion": "unqualified",
+    "opinion_date": "2025-03-14",
+    "fiscal_years": [2022, 2023, 2024],
+    "entity_type": "wholly-owned subsidiary",
+    "parent": "McDonald's Corporation",
+    "asset_contribution_date": "2005-01-01",
+    "asset_contribution_amount_millions": 5548.8,
+    "dividend_policy": "100% of net income distributed annually",
+    "intercompany_debt_millions": 2400,
+    "debt_matured": "2025-02-17",
+    "debt_disposition": "converted to equity",
+    "restaurant_count_per_notes": {"2024": 13557, "2023": 13457, "2022": 13444},
+    "total_revenue_trend": [9588.4, 10568.4, 10630.8],
+    "net_income_trend": [3095.7, 3394.4, 3461.6],
+    "capex_trend": [860.0, 962.5, 1055.2],
+    "depreciation_trend": [912.4, 968.9, 980.0],
+    "operating_margin_before_royalty": [53.2, 53.9, 53.9],
+    "effective_tax_rate": [23.6, 24.0, 23.2]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "slug": "jdv-by-hyatt",
+  "name": "JdV by Hyatt",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hyatt Franchising, L.L.C.",
+    "parent": "Hyatt Hotels Corporation",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": "Greater of $100,000 or $400 per guest room",
+    "investment_range_headline": "$42,040,926 to $142,134,233",
+    "royalty_headline": "7%",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": "Area of Protection (limited, time-bound)",
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": "Greater of $100,000 or $400 per guest room",
+    "royalty_raw": "7%",
+    "ad_fund_raw": null,
+    "investment_low_raw": 42040926,
+    "investment_high_raw": 142134233
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": "Area of Protection (limited, time-bound)"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-18-637924-2025-jdv-by-hyatt-20260415-045854",
+    "primary_run_folder": "fresh-18-637924-2025-jdv-by-hyatt-20260415-045854",
+    "primary_fdd_id": "637924",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 18
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Franchised vs owned/managed RevPAR gap ($109.83 vs $176.21 \u2014 38% lower) is unexplained"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "One franchised hotel had only 2.1% WOH revenue and 4 WOH room nights \u2014 nature unclear"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "$110M goodwill impairment in management/franchising segment \u2014 unclear if JdV brand affected"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Franchisor entity has $144.8M 'franchise agreement assets constituting payments to customers' \u2014 nature not fully explained"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 12 uses 'Area of Protection' language while simultaneously disclaiming exclusivity ('you will not receive an exclusive territory')"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Cover page states $279,406\u2013$1,119,942 paid to franchisor/affiliate, but Item 7 contains many additional line items payable to 'Us' or 'Hyatt Corporation'"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

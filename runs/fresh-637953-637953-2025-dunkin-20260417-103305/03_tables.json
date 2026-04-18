@@ -1,0 +1,304 @@
+{
+  "tables": [
+    {
+      "id": "item5_iff_by_dma",
+      "item": 5,
+      "title": "Initial Franchise Fee by Development Area Type",
+      "source_pages": [32, 33],
+      "columns": ["Development Area Type", "IFF Amount", "Key Markets"],
+      "rows": [
+        {"type": 1, "iff": 90000, "markets": "Boston, NY, Hartford/New Haven, Philadelphia, Portland ME, Providence, Rochester, Springfield MA, Syracuse, Utica, Watertown NY, Wilkes-Barre/Scranton, Youngstown"},
+        {"type": 2, "iff": 80000, "markets": "Baltimore, Chicago, Ft. Myers, Miami, Orlando, Presque Isle, Salisbury, Tampa, West Palm Beach"},
+        {"type": 3, "iff": 70000, "markets": "Cleveland, Greenville NC, Jacksonville, Pittsburgh"},
+        {"type": 4, "iff": 60000, "markets": "Atlanta, Charlotte, Cincinnati, Columbus OH, Dayton, Des Moines, Indianapolis, Nashville, Norfolk, Phoenix, Raleigh-Durham, Richmond, Washington DC, and many others"},
+        {"type": 5, "iff": 50000, "markets": "Pacific Northwest Territory, Cleveland, Jacksonville, Greenville NC, Pittsburgh"},
+        {"type": 6, "iff": 40000, "markets": "All other US geographic areas"}
+      ],
+      "table_notes": [
+        "Gas & Convenience: IFF pro-rated by term length (e.g., Type 1, 10-year term = $45,000)",
+        "Self-Service Gas & Convenience: 50% of standard IFF, pro-rated by term",
+        "SDO locations: 50% of standard IFF, pro-rated by term",
+        "Combo Restaurant: Dunkin' IFF + $10,000 BR IFF",
+        "Pacific Northwest Territory: ID, MT, ND, OR, SD, WA, WY"
+      ]
+    },
+    {
+      "id": "item6_fee_table",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [40, 41, 42],
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Continuing Franchise Fee (CFF)", "amount": "5.9% of Gross Sales", "due": "Weekly", "note": "Core royalty"},
+        {"fee": "Continuing Advertising Fee (CAF)", "amount": "5.0% of Gross Sales (2.5% SDOs)", "due": "Weekly", "note": "National ad fund"},
+        {"fee": "The Center Annual Fee", "amount": "$340", "due": "Annually", "note": "Online training platform"},
+        {"fee": "Additional Training Fee", "amount": "$4,000/person", "due": "Upon registration", "note": "Beyond initial included"},
+        {"fee": "Training Cancellation Fee", "amount": "$1,000 (8-14 days) / $2,000 (≤7 days)", "due": "Upon demand", "note": "Per person"},
+        {"fee": "PSL/PKL Design Fee", "amount": "$750-$1,200", "due": "Upon request", "note": "Site/kitchen layout"},
+        {"fee": "Loyalty Program Contribution", "amount": "1.4% Loyalty Sales (1.2% from 2027)", "due": "Weekly", "note": "Consumer loyalty program"},
+        {"fee": "Taxes", "amount": "Varies", "due": "Upon demand", "note": "Pass-through"},
+        {"fee": "Late Fee/Interest", "amount": "1.5%/month or max legal rate", "due": "Upon demand", "note": "On overdue amounts"},
+        {"fee": "Collection Costs", "amount": "Varies", "due": "Upon demand", "note": "Actual costs"},
+        {"fee": "Relocation Fee", "amount": "Varies (pro-rated IFF)", "due": "Upon relocation", "note": "Based on remaining term"},
+        {"fee": "Insurance", "amount": "Cost of coverage", "due": "As incurred", "note": "Required coverages"},
+        {"fee": "Indemnification", "amount": "Varies", "due": "Upon demand", "note": "Claims/liabilities"},
+        {"fee": "Transfer Fee (≤3 yrs, Dunkin')", "amount": "$12,500 base", "due": "Upon transfer", "note": "Plus gross-sales-based"},
+        {"fee": "Transfer Fee (>3 yrs, Dunkin')", "amount": "$5,000-$20,000", "due": "Upon transfer", "note": "Tiered by trailing 12-mo sales"},
+        {"fee": "Transfer Fee (≤3 yrs, Combo)", "amount": "$20,000 base", "due": "Upon transfer", "note": "Plus gross-sales-based"},
+        {"fee": "Transfer Fee (>3 yrs, Combo)", "amount": "$12,500-$27,500", "due": "Upon transfer", "note": "Tiered by trailing 12-mo sales"},
+        {"fee": "Fixed Documentation Fee", "amount": "$2,000/transferee", "due": "Upon transfer", "note": "Non-controlling transfers"},
+        {"fee": "SDA Transfer Fee", "amount": "$10,000", "due": "Upon transfer", "note": "Majority interest"},
+        {"fee": "Enforcement Expenses", "amount": "Varies", "due": "Upon demand", "note": "Successful enforcement"},
+        {"fee": "Immigration Review", "amount": "Our costs", "due": "Upon demand", "note": "Outside attorney"},
+        {"fee": "Supplier Testing", "amount": "$1,000-$10,000", "due": "Upon request", "note": "New supplier samples"},
+        {"fee": "Lease Costs", "amount": "Varies", "due": "Per lease", "note": "NNN lease from affiliate"}
+      ]
+    },
+    {
+      "id": "item6_transfer_fee_dunkin",
+      "item": 6,
+      "title": "Transfer Fee Schedule — Dunkin' Restaurant (After 3 Years)",
+      "source_pages": [48],
+      "columns": ["Gross Sales Trailing 12 Months", "Transfer Fee"],
+      "rows": [
+        {"sales_range": "Less than $400,000", "fee": 5000},
+        {"sales_range": "$400,000–$599,999", "fee": 6000},
+        {"sales_range": "$600,000–$999,999", "fee": 8000},
+        {"sales_range": "$1,000,000–$1,399,999", "fee": 12000},
+        {"sales_range": "$1,400,000+", "fee": 20000}
+      ],
+      "table_notes": ["Plus $12,500 base fee if within first 3 years of operation"]
+    },
+    {
+      "id": "item7_freestanding",
+      "item": 7,
+      "title": "Estimated Initial Investment — Freestanding Restaurant (Table A)",
+      "source_pages": [49, 50],
+      "columns": ["Type of Expenditure", "Low", "High"],
+      "rows": [
+        {"item": "Initial Franchise Fee", "low": 40000, "high": 90000},
+        {"item": "Building Costs", "low": 180000, "high": 600000},
+        {"item": "Site Development", "low": 13000, "high": 350000},
+        {"item": "Additional Development", "low": 12000, "high": 90000},
+        {"item": "Equipment, Fixtures & Signs", "low": 189000, "high": 300000},
+        {"item": "Restaurant Technology", "low": 65000, "high": 118000},
+        {"item": "Licenses, Permits, Fees", "low": 3500, "high": 7500},
+        {"item": "Real Estate Costs", "low": null, "high": null, "note": "Variable"},
+        {"item": "Opening Inventory", "low": 8000, "high": 20000},
+        {"item": "Miscellaneous Opening", "low": 9500, "high": 70000},
+        {"item": "Uniforms", "low": 400, "high": 3000},
+        {"item": "Insurance", "low": 4500, "high": 16000},
+        {"item": "Training", "low": 2000, "high": 50000},
+        {"item": "Marketing Start-Up Fee", "low": 0, "high": 10000},
+        {"item": "Additional Funds (3 months)", "low": 0, "high": 108000}
+      ],
+      "total_low": 526900,
+      "total_high": 1832500,
+      "table_notes": [
+        "Building costs: $83-$566/SF for 750-3,100 SF",
+        "Real estate variable — land purchase $100K-$1.2M+ if applicable",
+        "Does not include delivery vehicle costs",
+        "Government impact fees can be $87,000+ in some markets"
+      ]
+    },
+    {
+      "id": "item7_storefront",
+      "item": 7,
+      "title": "Estimated Initial Investment — Shopping Center/Storefront (Table B)",
+      "source_pages": [50, 51],
+      "total_low": 437500,
+      "total_high": 1333500,
+      "table_notes": ["Building costs: $59-$378/SF for 600-2,800 SF"]
+    },
+    {
+      "id": "item7_gas_convenience",
+      "item": 7,
+      "title": "Estimated Initial Investment — Gas & Convenience (Table C)",
+      "source_pages": [51, 52, 53],
+      "total_low": 210900,
+      "total_high": 1065500,
+      "table_notes": ["Building costs: $56-$340/SF for 600-2,300 SF"]
+    },
+    {
+      "id": "item19_overall_auv",
+      "item": 19,
+      "title": "Average Unit Volume for 2024 Franchised Restaurants (Overall)",
+      "source_pages": [87, 88],
+      "population": 7190,
+      "columns": ["Quartile", "AUV", "Median", "Highest", "Lowest", "Count", "% Above Average"],
+      "rows": [
+        {"quartile": "1st", "auv": 2073245, "median": 1955573, "highest": 5720770, "lowest": 1633960, "count": 1797, "pct_above": "39%"},
+        {"quartile": "2nd", "auv": 1426011, "median": 1421785, "highest": 1633629, "lowest": 1240951, "count": 1798, "pct_above": "49%"},
+        {"quartile": "3rd", "auv": 1070961, "median": 1072984, "highest": 1240700, "lowest": 905015, "count": 1797, "pct_above": "51%"},
+        {"quartile": "4th", "auv": 646650, "median": 700889, "highest": 905001, "lowest": 4877, "count": 1798, "pct_above": "59%"},
+        {"quartile": "All", "auv": 1304217, "median": 1240107, "highest": 5720770, "lowest": 4877, "count": 7190, "pct_above": "45%"}
+      ],
+      "table_notes": [
+        "Excludes 309 new openings, 956 extended closures, 18 Multi-Brand, 96 closed, 34 company-owned, 1,269 combos",
+        "5,592 traditional + 1,598 non-traditional/SDO",
+        "Average operating tenure: 16.4 years",
+        "94 drive-thru only, 4,643 with drive-thru, 2,453 no drive-thru"
+      ]
+    },
+    {
+      "id": "item19_by_region",
+      "item": 19,
+      "title": "AUV by Region and Division",
+      "source_pages": [88],
+      "columns": ["Region/Division", "AUV", "Count", "Median", "Highest", "Lowest", "% Above Avg"],
+      "rows": [
+        {"region": "Northeast/Mid-Atlantic", "auv": 1308535, "count": 2191, "median": 1219933, "highest": 5720770, "lowest": 7767, "pct_above": "44%"},
+        {"region": "Northeast/New England", "auv": 1448073, "count": 1785, "median": 1395708, "highest": 3961527, "lowest": 38071, "pct_above": "46%"},
+        {"region": "Midwest/East North Central", "auv": 1257075, "count": 793, "median": 1214203, "highest": 4821773, "lowest": 29301, "pct_above": "46%"},
+        {"region": "Midwest/West North Central", "auv": 996410, "count": 134, "median": 986531, "highest": 2311241, "lowest": 16293, "pct_above": "49%"},
+        {"region": "South/East South Central", "auv": 1138601, "count": 215, "median": 1099766, "highest": 2518855, "lowest": 82224, "pct_above": "47%"},
+        {"region": "South/South Atlantic", "auv": 1260990, "count": 1605, "median": 1199080, "highest": 3634237, "lowest": 4877, "pct_above": "45%"},
+        {"region": "South/West South Central", "auv": 953320, "count": 156, "median": 955949, "highest": 2623766, "lowest": 13740, "pct_above": "51%"},
+        {"region": "West/Mountain", "auv": 1148506, "count": 183, "median": 1053558, "highest": 3238773, "lowest": 108452, "pct_above": "43%"},
+        {"region": "West/Pacific", "auv": 1327756, "count": 128, "median": 1312170, "highest": 3535995, "lowest": 16924, "pct_above": "48%"}
+      ]
+    },
+    {
+      "id": "item19_by_site_type",
+      "item": 19,
+      "title": "AUV by Site Type and Venue",
+      "source_pages": [89],
+      "columns": ["Venue Type", "AUV", "Count", "Median", "Highest", "Lowest", "% Above Avg"],
+      "rows": [
+        {"venue": "Traditional/Freestanding", "auv": 1534772, "count": 3105, "median": 1469296, "highest": 4449654, "lowest": 82224, "pct_above": "46%"},
+        {"venue": "Traditional/Other", "auv": 1212602, "count": 2487, "median": 1140680, "highest": 4821773, "lowest": 110424, "pct_above": "44%"},
+        {"venue": "SDO-Gas/C-store", "auv": 1071111, "count": 963, "median": 1004301, "highest": 2663549, "lowest": 13740, "pct_above": "45%"},
+        {"venue": "SDO-Airport", "auv": 1527194, "count": 119, "median": 1354395, "highest": 5720770, "lowest": 4877, "pct_above": "45%"},
+        {"venue": "SDO-Casino", "auv": 1305515, "count": 21, "median": 821529, "highest": 3427802, "lowest": 428735, "pct_above": "38%"},
+        {"venue": "SDO-Other", "auv": 723001, "count": 495, "median": 605454, "highest": 4050231, "lowest": 7767, "pct_above": "40%"}
+      ]
+    },
+    {
+      "id": "item19_by_drivethru",
+      "item": 19,
+      "title": "AUV by Drive-Thru Status (Traditional Only)",
+      "source_pages": [89],
+      "columns": ["Venue", "AUV", "Count", "Median", "Highest", "Lowest", "% Above Avg"],
+      "rows": [
+        {"venue": "Drive-Thru", "auv": 1508901, "count": 4051, "median": 1445373, "highest": 4821773, "lowest": 82224, "pct_above": "49%"},
+        {"venue": "No Drive-Thru", "auv": 1082835, "count": 1541, "median": 1035891, "highest": 5720770, "lowest": 4877, "pct_above": "58%"}
+      ]
+    },
+    {
+      "id": "item20_dunkin_systemwide",
+      "item": 20,
+      "title": "Systemwide Dunkin' Outlet Summary (Table 1)",
+      "source_pages": [91],
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 8010, "end": 8087, "net": 77},
+        {"type": "Franchised", "year": 2023, "start": 8087, "end": 8265, "net": 178},
+        {"type": "Franchised", "year": 2024, "start": 8265, "end": 8465, "net": 200},
+        {"type": "Company-Owned", "year": 2022, "start": 0, "end": 31, "net": 31},
+        {"type": "Company-Owned", "year": 2023, "start": 31, "end": 32, "net": 1},
+        {"type": "Company-Owned", "year": 2024, "start": 32, "end": 34, "net": 2},
+        {"type": "Total", "year": 2022, "start": 8010, "end": 8118, "net": 108},
+        {"type": "Total", "year": 2023, "start": 8118, "end": 8297, "net": 179},
+        {"type": "Total", "year": 2024, "start": 8297, "end": 8499, "net": 202}
+      ],
+      "table_notes": [
+        "Note 1: Solo Dunkin' count affected by combo conversions (adding/removing BR)",
+        "Note 2: Multi-Brand Location openings reflected as new Dunkin' openings",
+        "Note 3: Excludes restaurants on US military bases outside the US"
+      ]
+    },
+    {
+      "id": "item20_dunkin_franchised_status",
+      "item": 20,
+      "title": "Status of Dunkin' Franchised Outlets (Table 3) — Totals",
+      "source_pages": [93, 94, 95, 96],
+      "columns": ["Year", "Start", "Opened", "Terminated", "Non-Renewed", "Reacquired", "Ceased Other", "End"],
+      "rows": [
+        {"year": 2022, "start": 8010, "opened": 271, "terminated": 14, "non_renewed": 12, "reacquired": 31, "ceased_other": 137, "end": 8087},
+        {"year": 2023, "start": 8087, "opened": 344, "terminated": 4, "non_renewed": 23, "reacquired": 0, "ceased_other": 139, "end": 8265},
+        {"year": 2024, "start": 8265, "opened": 312, "terminated": 1, "non_renewed": 28, "reacquired": 0, "ceased_other": 67, "end": 8465}
+      ],
+      "footer_totals": {
+        "transfers_total_2024": 137,
+        "transfers_total_2023": 224,
+        "transfers_total_2022": 392,
+        "terminations_total_2024": 1,
+        "non_renewals_total_2024": 28,
+        "ceased_other_total_2024": 67,
+        "projected_openings_total": 278
+      }
+    },
+    {
+      "id": "item20_combo_systemwide",
+      "item": 20,
+      "title": "Systemwide Combo Outlet Summary (Table 1)",
+      "source_pages": [101],
+      "columns": ["Year", "Start", "End", "Net Change"],
+      "rows": [
+        {"year": 2022, "start": 1234, "end": 1252, "net": 18},
+        {"year": 2023, "start": 1252, "end": 1283, "net": 31},
+        {"year": 2024, "start": 1283, "end": 1269, "net": -14}
+      ]
+    },
+    {
+      "id": "item20_projected_dunkin",
+      "item": 20,
+      "title": "Projected Dunkin' Openings (Table 5)",
+      "source_pages": [97],
+      "columns": ["Metric", "Value"],
+      "rows": [
+        {"metric": "FA Signed But Not Opened", "value": 115},
+        {"metric": "Projected New Franchised", "value": 278},
+        {"metric": "Projected New Company-Owned", "value": 0}
+      ]
+    },
+    {
+      "id": "item21_balance_sheet",
+      "item": 21,
+      "title": "DB Master Finance Parent — Consolidated Balance Sheet",
+      "source_pages": [116],
+      "entity": "DB Master Finance Parent LLC and Subsidiaries",
+      "columns": ["Line Item", "Dec 29, 2024 ($K)", "Dec 30, 2023 ($K)"],
+      "rows": [
+        {"item": "Total current assets", "fy2024": 922357, "fy2023": 219554},
+        {"item": "Property and improvements, net", "fy2024": 138258, "fy2023": 149541},
+        {"item": "Operating lease assets, net", "fy2024": 337514, "fy2023": 351926},
+        {"item": "Intangible assets, net", "fy2024": 8303529, "fy2023": 8394417},
+        {"item": "Other assets", "fy2024": 24542, "fy2023": 22353},
+        {"item": "Total assets", "fy2024": 9726200, "fy2023": 9137791},
+        {"item": "Total current liabilities", "fy2024": 173107, "fy2023": 168000},
+        {"item": "Long-term debt, net", "fy2024": 5006188, "fy2023": 4662130},
+        {"item": "Long-term operating lease liabilities", "fy2024": 295449, "fy2023": 301120},
+        {"item": "Deferred revenue (long-term)", "fy2024": 148598, "fy2023": 120392},
+        {"item": "Member's equity (total)", "fy2024": 4099814, "fy2023": 3881257}
+      ]
+    },
+    {
+      "id": "item21_income_statement",
+      "item": 21,
+      "title": "DB Master Finance Parent — Consolidated Statements of Income",
+      "source_pages": [117],
+      "entity": "DB Master Finance Parent LLC and Subsidiaries",
+      "columns": ["Line Item", "FY2024 ($K)", "FY2023 ($K)", "FY2022 ($K)"],
+      "rows": [
+        {"item": "Franchise fees and royalty revenues", "fy2024": 800335, "fy2023": 766919, "fy2022": 718108},
+        {"item": "Franchise contributions for advertising", "fy2024": 631398, "fy2023": 604860, "fy2022": 570449},
+        {"item": "Rental income", "fy2024": 134371, "fy2023": 132326, "fy2022": 129725},
+        {"item": "Licensing fees", "fy2024": 68793, "fy2023": 76279, "fy2022": 73929},
+        {"item": "Wholesale revenues", "fy2024": 4523, "fy2023": 4893, "fy2022": 4540},
+        {"item": "Other revenues", "fy2024": 6837, "fy2023": 6355, "fy2022": 7751},
+        {"item": "Total revenues", "fy2024": 1646257, "fy2023": 1591632, "fy2022": 1504502},
+        {"item": "Management fees", "fy2024": 113548, "fy2023": 111751, "fy2022": 102696},
+        {"item": "Advertising expenses", "fy2024": 631398, "fy2023": 604860, "fy2022": 570449},
+        {"item": "Depreciation and amortization", "fy2024": 99858, "fy2023": 100321, "fy2022": 105257},
+        {"item": "Total operating costs and expenses", "fy2024": 938322, "fy2023": 909853, "fy2022": 869446},
+        {"item": "Operating income", "fy2024": 707935, "fy2023": 681779, "fy2022": 635056},
+        {"item": "Interest expense", "fy2024": 162810, "fy2023": 171059, "fy2022": 127677},
+        {"item": "Interest income from affiliate", "fy2024": 41416, "fy2023": 0, "fy2022": 0},
+        {"item": "Income before income taxes", "fy2024": 592194, "fy2023": 516211, "fy2022": 508456},
+        {"item": "Income tax expense", "fy2024": 7185, "fy2023": 7045, "fy2022": 5899},
+        {"item": "Net income", "fy2024": 585009, "fy2023": 509166, "fy2022": 502557}
+      ]
+    }
+  ]
+}

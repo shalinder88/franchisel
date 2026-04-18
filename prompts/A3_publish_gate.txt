@@ -213,6 +213,34 @@ The gate MUST include exactly one of the following lines verbatim:
   - "Deferred surfaced exhibit policy applied: verdict 2 allowed with explicit rationale"
   - "Deferred surfaced exhibit policy triggered verdict 3."
 
+## GATE DEPTH FLOOR — REQUIRED
+
+These rules set a minimum depth for the publish gate itself. They do not change
+the verdict options, the checklist, or the mandatory sections above.
+
+1. `15_publish_gate.md` must be a full publish gate, not a compressed verdict
+   note. It must contain substantive narrative for every checklist item and
+   every mandatory section.
+
+2. Target minimum: 10 KB unless the FDD is unusually small.
+
+3. The gate must include all of the following with real substance:
+   - Strongest parts of the run with exact pages
+   - Weakest parts of the run with exact pages
+   - Where a prior or manual run could be stronger — concrete, not hedging
+   - Unresolved taxonomy with all three buckets shown
+   - Buyer-trust paragraph — a real assessment, not a placeholder sentence
+   - Explicit follow-up roadmap if any gap remains, even under verdict 1 or 2
+
+4. A short or compressed gate is itself evidence of under-review and must be
+   noted as a gate-quality weakness in the "Weakest remaining parts" section.
+
+5. Verdict 1 is not allowed if the gate is materially thin relative to the
+   evidence volume in the run. A run with 10+ extraction files and hundreds
+   of pages of source material requires a gate that demonstrates thorough
+   review of that evidence. A gate under 10 KB for such a run cannot
+   credibly claim publish-ready status.
+
 ## Rules
 - Do not read the PDF. Use only the run directory files.
 - Do not invent assessments. Base everything on what the files actually contain.

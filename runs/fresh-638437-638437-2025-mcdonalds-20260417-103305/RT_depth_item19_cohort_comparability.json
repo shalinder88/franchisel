@@ -1,0 +1,25 @@
+{
+  "id": "item19_cohort_comparability_warning",
+  "severity": "high",
+  "cohort_royalty_rate": 0.04,
+  "cohort_ad_fund_rate": 0.04,
+  "cohort_tech_fee": null,
+  "current_royalty_rate": 0.05,
+  "current_ad_fund_rate": 0.04,
+  "current_tech_fee": null,
+  "basis_point_difference": 100,
+  "dollar_impact_by_tier": [
+    {"tier_label": "$3.0M Sales", "tier_sales": 3000000, "annual_impact": 30000},
+    {"tier_label": "$3.2M Sales", "tier_sales": 3200000, "annual_impact": 32000},
+    {"tier_label": "$3.4M Sales", "tier_sales": 3400000, "annual_impact": 34000},
+    {"tier_label": "Average Franchised Sales ($3,966K)", "tier_sales": 3966000, "annual_impact": 39660},
+    {"tier_label": "Average All Traditional ($4,002K)", "tier_sales": 4002000, "annual_impact": 40020}
+  ],
+  "source_pages_item19": [43, 44],
+  "source_pages_item6": [18, 21],
+  "reasoning": "The Item 19 pro-forma operating statements are based on 11,332 independent franchisee traditional restaurants whose royalties were at 4% of Gross Sales. However, new franchisees entering the system after January 1, 2024, pay a 5% royalty rate (per Item 6, Footnote 2). This creates a 100 basis point (1 percentage point) difference. The OIBOC figures in the pro-forma are therefore overstated for prospective new franchisees by the additional 1% royalty that they will pay but which is not reflected in the historical cohort's costs. At the all-traditional average sales volume of $4,002,000, this represents approximately $40,020 per year in additional royalty burden not captured in the pro-forma.",
+  "quote_fragments": [
+    "The royalties payable by these franchised restaurants during the covered period were 4% of Gross Sales.",
+    "The royalty of 5% of Gross Sales applies on and after January 1, 2024, in the following scenarios: (i) a franchisee opens a new restaurant"
+  ]
+}

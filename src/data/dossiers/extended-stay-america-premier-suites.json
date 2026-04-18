@@ -1,0 +1,113 @@
+{
+  "slug": "extended-stay-america-premier-suites",
+  "name": "ESH Strategies Franchise LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "ESH Strategies Franchise LLC",
+    "parent": null,
+    "headquarters": "13024 Ballantyne Corporate Place, Suite 1000, Charlotte, NC 28277",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-27",
+    "franchise_fee_headline": "$50,000",
+    "investment_range_headline": null,
+    "royalty_headline": "5.5%",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 50000,
+    "royalty_raw": "5.5%",
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Deloitte & Touche LLP",
+    "audit_opinion": "Unqualified with emphasis of matter (related party transactions)",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": [
+      {
+        "case": "In re Extended Stay Hotel Antitrust Litigation, Case No. 24-cv-6324",
+        "type": "Antitrust class action",
+        "allegations": "Sherman Act violations via IDeaS revenue management algorithm",
+        "status": "Pending in N.D. Cal.; briefing stayed",
+        "source_pages": [
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-24-637930-2025-extended-stay-america-premier-suites-20260415-073341",
+    "primary_run_folder": "fresh-24-637930-2025-extended-stay-america-premier-suites-20260415-073341",
+    "primary_fdd_id": "637930",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 24
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit K (former franchisees) referenced in TOC but no separate exhibit section found. Likely empty."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Digital Marketing Commission: FDD says 'not currently charged but will go into effect at beginning of 2025.' Unclear if now being collected as of issuance date 3/27/2025."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Antitrust litigation (IDeaS): Two pending class actions alleging algorithmic price-fixing. Uncertain outcome and potential impact on revenue management practices."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "System Services Fee denominator ambiguity: 2024 spending reported as '2.4% of total Franchisee Gross Room Revenue' but SSF is pooled across ESA brands. Unclear if denominator is Premier Suites only or"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Page 9 header says 'FDD (2024)' while cover page and all other pages say 'FDD (2025)'. Issuance date 3/27/2025 confirms 2025."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "SSF spending denominator: Item 11 reports spending as '2.4% of total Franchisee GRR' but the SSF is pooled with other ESA brands. It is unclear whether the denominator includes all ESA brand franchise"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

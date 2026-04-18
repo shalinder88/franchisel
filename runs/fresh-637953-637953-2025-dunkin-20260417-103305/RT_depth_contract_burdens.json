@@ -1,0 +1,27 @@
+{
+  "depth_pass": "A2_contract_burden",
+  "exhibit": "C-1 Dunkin' Franchise Agreement",
+  "page_range": [164, 195],
+  "clauses": [
+    {"family": "grant_and_term", "obligation": "20-year term from Opening Date", "trigger": "FA execution", "source_pages": [165]},
+    {"family": "required_opening", "obligation": "Open by Required Opening Date (typically 15 months from Effective Date)", "trigger": "FA signing", "consequence": "Termination if not opened by Required Opening Date", "source_pages": [165]},
+    {"family": "remodel", "obligation": "Remodel at 10 years after Opening Date per then-current standards", "trigger": "10-year anniversary", "source_pages": [165, 175]},
+    {"family": "refurbishment", "obligation": "Refurbish at 5 years and 15 years after Opening Date", "trigger": "5/15-year anniversaries", "source_pages": [165, 175]},
+    {"family": "royalty", "obligation": "CFF as specified in Contract Data Schedule (standard 5.9%)", "trigger": "Weekly", "source_pages": [165]},
+    {"family": "advertising", "obligation": "CAF at 5.0% of Gross Sales (fixed in agreement)", "trigger": "Weekly", "source_pages": [165]},
+    {"family": "proprietary_marks", "obligation": "Use only designated marks in approved manner; no sublicensing; no internet use without approval; no use as corporate name", "restriction": "All goodwill accrues to franchisor/IP affiliate", "source_pages": [175]},
+    {"family": "confidential_information", "obligation": "Maintain absolute confidentiality during and after term; adopt franchisor-specified security procedures", "restriction": "No use in other business", "source_pages": [175]},
+    {"family": "innovations", "obligation": "All innovations are franchisor's property (work made for hire); must assign if not qualifying", "restriction": "No compensation for innovations", "source_pages": [175]},
+    {"family": "repairs_maintenance", "obligation": "Continuously maintain Restaurant and Premises per Standards; ongoing repairs and replacements", "cost": "Franchisee bears all costs", "source_pages": [175]},
+    {"family": "insurance", "obligation": "CGL $2M per occurrence, EPL $1M, all-risk property, workers comp, other per Standards", "requirement": "Franchisor and affiliates as additional insureds", "consequence": "Franchisor may obtain coverage at franchisee expense", "source_pages": [180]},
+    {"family": "indemnification", "obligation": "Defend, indemnify, hold harmless franchisor from all claims related to restaurant development/operation", "scope": "Unlimited (not limited by insurance amount)", "carveout": "If franchisor assumes defense of class action or brand-impact claim, franchisor bears its own costs", "duration": "Survives termination", "source_pages": [180]},
+    {"family": "transfer_by_franchisor", "obligation": "Franchisor may assign without restriction; no further obligation upon transfer except accrued liabilities", "source_pages": [180]},
+    {"family": "transfer_by_franchisee", "restriction": "No transfer without prior written approval; transfer without approval is breach with no effect", "source_pages": [180]},
+    {"family": "termination_curable", "triggers": ["Health/safety violation (24h cure)", "Ceased operations (24h cure)", "Failure to pay (7d cure)", "Other FA/Standard breach (30d cure)"], "note": "State law longer cure period applies if applicable", "source_pages": [190]},
+    {"family": "additional_remedies", "rights": ["Enter restaurant if health/safety threat without trespass liability", "Enter and correct condition after 30-day non-compliance", "Disapprove participation in new products/programs for repeated defaults"], "source_pages": [190]},
+    {"family": "enforcement_expenses", "obligation": "Pay all costs, payroll, travel, attorneys' fees for successful enforcement", "source_pages": [190]},
+    {"family": "injunctive_relief", "obligation": "Franchisee agrees not to contest appropriateness of injunctive relief for Standards breach", "source_pages": [190]},
+    {"family": "no_related_party_liability", "restriction": "No liability for franchisor's directors, officers, employees, affiliates, attorneys", "source_pages": [190]},
+    {"family": "no_waiver_disclaimer", "scope": "Applies to franchises in CA, HI, IL, IN, MD, MI, MN, NY, ND, RI, SD, VA, WA, WI", "effect": "No statement/questionnaire can waive franchise law claims or disclaim reliance", "source_pages": [190]}
+  ]
+}

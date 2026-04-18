@@ -10,5 +10,5 @@ FDD extraction operating rules
 - Prefer writing output files over long inline responses.
 - Prefer targeted retries over broad re-reading.
 - Do not run broad retries unless an audit, publish gate, or regression check identifies a material gap.
-- Use specialist subagents only for narrow recovery work, regression recovery, conflict adjudication, or hard-family decoding.
-- Do not use specialist subagents as the default first reader.
+- Do not use the Agent tool during A1, A2, A3, or A4 phases. No exceptions. You are the single reader AND the single writer — every file read, depth-pass write, canonical update, and publish-gate write must be performed by you directly, never delegated to subagents.
+- The only permitted use of the Agent tool is post-pipeline comparison work (scorecards, cross-run analysis) — never during extraction.

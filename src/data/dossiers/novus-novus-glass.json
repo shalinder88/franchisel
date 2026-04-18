@@ -1,0 +1,120 @@
+{
+  "slug": "novus-novus-glass",
+  "name": "Novus Glass",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Novus Franchising 2 LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-29",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": 10,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 10,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-126-638049-2025-novus-novus-glass-20260415-135918",
+    "primary_run_folder": "fresh-126-638049-2025-novus-novus-glass-20260415-135918",
+    "primary_fdd_id": "638049",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 126
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "2023 contraction: -23 units (18 non-renewals, especially MN -14). Root cause not disclosed."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "11 franchisees excluded from Item 19 for incomplete reporting \u2014 potential survivorship/reporting bias."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Marketing Fund not audited. Only report available on request."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Vehicle lease subordination: if Mondofix USA master lease terminates, all franchisee subleases terminate automatically."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Materially different terms at renewal: franchisee must sign then-current agreement which may differ substantially."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "AI restriction clause in Item 14: blanket prohibition on using confidential info with AI tools."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Royalty revenue declined 5.5% ($3.32M to $3.13M) despite net unit growth \u2014 possible declining per-unit economics."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Royalty revenue declined 5.5% ($3.32M to $3.13M) despite net unit growth (+3). Likely timing/composition effects."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Bootstrap item_map placed Items 11 and 17 at wrong pages (82 and 86 vs actual 42 and 56)"
+    }
+  ],
+  "_status": "PARTIAL"
+}

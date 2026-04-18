@@ -1,0 +1,107 @@
+{
+  "slug": "taco-cabana",
+  "name": "Taco Cabana Franchising, Inc.",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Taco Cabana Franchising, Inc.",
+    "parent": "Taco Cabana, Inc. (Delaware, formed November 11, 1991)",
+    "headquarters": "1077 Central Parkway South, Unit 600, San Antonio, Texas 78232",
+    "fdd_filing_year": 2025,
+    "issuance_date": "March 25, 2025",
+    "franchise_fee_headline": "$45,000 (standalone); $35,000 (DA subsequent)",
+    "investment_range_headline": null,
+    "royalty_headline": "5% of Gross Sales, weekly",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": "$45,000 (standalone); $35,000 (DA subsequent)",
+    "royalty_raw": "5% of Gross Sales, weekly",
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-13-637919-2025-taco-cabana-20260415-025821",
+    "primary_run_folder": "fresh-13-637919-2025-taco-cabana-20260415-025821",
+    "primary_fdd_id": "637919",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 13
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Revenue recognition discrepancy \u2014 FDD body states 5% royalty + 3% brand fund; FY2023 financial notes say up to 4% royalty and up to 1% advertising. Legacy NM franchise agreements may have different fe"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Related-party cash drain \u2014 franchisor advanced $1.46M+ to related parties (FY2024 + post-year-end), exceeding operating cash flow. Independent financial capacity of franchisor entity is minimal."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Zero franchise growth \u2014 no new franchise units opened in 3 years despite active FDD. Growth ambition unclear."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Brand Fund never activated \u2014 3% contractual obligation exists but no monies collected as of issuance date."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Ghost kitchen encroachment \u2014 franchisor reserves right to operate/license delivery kitchens in Protected Area using Taco Cabana Marks."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Nick the Greek cross-brand competition \u2014 same ownership can place Nick the Greek units inside franchisee's Protected Area."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Fee rates in financial statements vs. FDD body \u2014 FY2023 notes say royalty up to 4% and advertising up to 1%; FDD body says 5% and 3%. Likely reflects legacy vs. current franchise agreement terms."
+    }
+  ],
+  "_status": "PUBLISHED"
+}

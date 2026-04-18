@@ -1,0 +1,463 @@
+{
+  "slug": "chick-fil-a",
+  "name": "Chick-fil-A",
+  "schema_version": 1,
+  "current_snapshot": {
+    "legal_name": "Chick-fil-A, Inc.",
+    "parent": null,
+    "headquarters": "5200 Buffington Road, Atlanta, Georgia 30349-2998",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-31",
+    "franchise_fee_headline": "$0",
+    "investment_range_headline": null,
+    "royalty_headline": "",
+    "ad_fund_headline": "",
+    "term_headline": "Specified per individual agreement (blank in template)",
+    "renewal_headline": "CFA has the right but not the obligation to renew. No automatic renewal right.",
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "initial_fees_by_format": {
+      "initial_franchise_fee": 0,
+      "opening_inventory_if_cfa_supply": {
+        "low": 15000,
+        "high": 65000,
+        "notes": "Not due until after Licensed Unit opens. Only if CFA Supply is your distributor."
+      },
+      "source_object": "03_tables.json, T01_item5_initial_fees",
+      "source_section": "Item 5",
+      "source_pages": [
+        23
+      ],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "investment_by_format": {},
+    "recurring_fees_raw": {
+      "license_fee": {
+        "rate": "10% of Gross Receipts",
+        "transportation_rate": "7% of Gross Receipts",
+        "due": "Monthly by the 25th for preceding month"
+      },
+      "training_fee": {
+        "rate": "$250-$400 per additional employee",
+        "notes": "First 2 employees free"
+      },
+      "equipment_handling_fee": {
+        "rate": "8% of purchase price",
+        "notes": "Only if purchased through CFA"
+      },
+      "audit_penalty": {
+        "rate": "Underpayment + 12% per annum interest",
+        "extra": "If understatement >= 5%, licensee pays all CFA audit costs"
+      },
+      "late_payment": {
+        "rate": "12% per annum on amounts 30+ days overdue"
+      },
+      "advertising_fee": {
+        "value": "None",
+        "notes": "No advertising fees or fund contributions required"
+      },
+      "source_object": "03_tables.json, T02_item6_other_fees",
+      "source_section": "Item 6",
+      "source_pages": [
+        24
+      ],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "tech_fee_detail": {
+      "license_fee_definition_of_gross_receipts": "All cash and charge sales of every kind made at or from or related to the Licensed Units except refunds to customers and meals given employees incident to their employment.",
+      "license_fee_accounting_period": "4-week Accounting Period",
+      "license_fee_payment_method": "Mail or ACH",
+      "license_fee_payment_address": "Chick-fil-A, Inc., P.O. Box 208913, Dallas, TX 75320-8806",
+      "training_fee_excludes": "Travel, room, living expenses, wages, workers compensation",
+      "audit_5pct_threshold": "If understatement >= 5%, licensee pays all CFA audit costs including accounting and legal fees",
+      "cfa_bank_accounts_not_trust_funds": true,
+      "cfa_not_fiduciary": true,
+      "fees_uniformly_imposed": true,
+      "fees_non_refundable": true
+    }
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null,
+    "high_low": null,
+    "presentation_basis": null,
+    "raw_keys": [
+      "scope",
+      "excludes",
+      "categories",
+      "definition_of_annual_sales_volume",
+      "source_object",
+      "source_section",
+      "source_pages",
+      "confidence",
+      "status"
+    ]
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "terminations": null,
+    "non_renewals": null,
+    "transfers": null,
+    "net_change": null,
+    "raw": {
+      "as_of_date": "2024-12-31",
+      "licensed_units": {
+        "start_2024": 412,
+        "end_2024": 425,
+        "opened_2024": 18,
+        "terminated_2024": 5,
+        "non_renewals_2024": 0,
+        "reacquired_2024": 0,
+        "transfers_2024": 0,
+        "company_owned_licensed": 0
+      },
+      "franchised_restaurants": {
+        "start_2024": 2494,
+        "end_2024": 2629,
+        "opened_2024": 243,
+        "terminated_2024": 0,
+        "non_renewals_2024": 0,
+        "reacquired_2024": 102,
+        "ceased_other_2024": 6,
+        "transfers_2024": 0
+      },
+      "company_operated_restaurants": {
+        "start_2024": 58,
+        "end_2024": 55
+      },
+      "total_domestic_system": {
+        "licensed_units": 425,
+        "operator_restaurants": 2629,
+        "company_operated": 55,
+        "total": 3109
+      },
+      "source_object": "03_tables.json, T06-T09",
+      "source_section": "Item 20",
+      "source_pages": [
+        56,
+        57,
+        58,
+        62,
+        67,
+        68
+      ],
+      "confidence": "high",
+      "status": "surfaced",
+      "table5_projected_openings": {
+        "licensed_units": {
+          "signed_not_opened": 3,
+          "projected_new_franchised": 25,
+          "projected_new_company": 0
+        },
+        "franchised_restaurants": {
+          "signed_not_opened": 38,
+          "projected_new_franchised": 183,
+          "projected_new_company": 0
+        },
+        "source_pages": [
+          72,
+          73,
+          74
+        ]
+      }
+    }
+  },
+  "contract_burden": {
+    "from_canonical": null,
+    "from_depth_pass_v2": null,
+    "from_rt_depth": null,
+    "termination_with_cause": null,
+    "termination_by_franchisee": null,
+    "transfer": "No transfer without CFA's prior written approval. CFA has right but not obligation to approve.",
+    "noncompete_in_term": null,
+    "noncompete_post_term": {
+      "duration": "12 months",
+      "scope": "At the former Licensed Site only",
+      "restriction": "No nationally or regionally branded chicken products or substantially similar products"
+    }
+  },
+  "territory_reality": {
+    "headline": null,
+    "raw": {
+      "exclusive": false,
+      "protection_scope": "During License Term, CFA will not operate or license another unit from the same Site where licensee operates. No geographic, campus, or area exclusivity.",
+      "encroachment_risk": "moderate",
+      "source_object": "02_reader_report.md, License Agreement Section 2.3",
+      "source_section": "Item 12",
+      "source_pages": [
+        37,
+        83
+      ],
+      "confidence": "high",
+      "status": "surfaced",
+      "encroachment_note": "Legal protection is minimal (same-site only, non-exclusive license), but practical encroachment risk is moderated by the captive-venue model \u2014 a university food court CFA does not directly compete with a nearby free-standing Operator restaurant."
+    }
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "depth_v2": {
+      "revenue_composition_2024": {
+        "franchise_fees": {
+          "amount": 4499874469,
+          "pct": 49.6
+        },
+        "rental_income": {
+          "amount": 1598939656,
+          "pct": 17.6
+        },
+        "product_sales": {
+          "amount": 2352913605,
+          "pct": 26.0
+        },
+        "company_restaurant_sales": {
+          "amount": 345172933,
+          "pct": 3.8
+        },
+        "licensee_fees": {
+          "amount": 76768654,
+          "pct": 0.8
+        },
+        "other_income": {
+          "amount": 188951119,
+          "pct": 2.1
+        }
+      },
+      "cost_structure_2024": {
+        "cost_of_sales": {
+          "amount": 2301478018,
+          "pct_of_revenue": 25.4
+        },
+        "sga": {
+          "amount": 4204014792,
+          "pct_of_revenue": 46.4
+        },
+        "depreciation": {
+          "amount": 1053950178,
+          "pct_of_revenue": 11.6
+        },
+        "interest": {
+          "amount": 127259249,
+          "pct_of_revenue": 1.4
+        }
+      },
+      "balance_sheet_highlights_2024": {
+        "cash": 1407908682,
+        "total_current_assets": 1805751523,
+        "property_and_equipment_net": 14141768175,
+        "total_assets": 16587589467,
+        "total_current_liabilities": 1937611596,
+        "long_term_debt": 2833904072,
+        "total_liabilities": 10744189725,
+        "stockholders_equity": 5843399742,
+        "retained_earnings": 5574478306
+      },
+      "three_year_trends": {
+        "revenue": [
+          6373786108,
+          7888050586,
+          9062620436
+        ],
+        "net_earnings": [
+          988734304,
+          1057994661,
+          1044197186
+        ],
+        "total_assets": [
+          null,
+          14486666430,
+          16587589467
+        ],
+        "revenue_cagr_2yr_pct": 19.2,
+        "notes": "Revenue grew 42% over 2 years. Net earnings stabilized around B. Asset base grew 14.5% YoY."
+      }
+    },
+    "statement_detail": {
+      "statements_present": [
+        "Balance Sheet",
+        "Income Statement",
+        "Stockholders Equity",
+        "Cash Flows"
+      ],
+      "notes_pages": 38,
+      "key_notes": [
+        "Note 1: Summary of Significant Accounting Policies \u2014 revenue recognition, lease accounting, equity investments",
+        "Note 9: Related Party Transactions \u2014 principal shareholder owns fixtures supplier (.6M in 2024); Truetts Group land leases",
+        "Note 10: Leases \u2014 massive real estate portfolio; operating lease liabilities .7B; finance lease liabilities .8B",
+        "Note 12: Health Insurance \u2014 self-insured since 2023; .3M expense in 2024",
+        "Note 14: Commitments and Contingencies \u2014 referenced but no material items noted",
+        "Note 15: Subsequent Events \u2014 none material through March 21, 2025"
+      ],
+      "stockholders_equity_movement": {
+        "treasury_stock_repurchase_2024": 161960502,
+        "dividends_2024": 37610676,
+        "shares_outstanding_voting": 110806,
+        "shares_outstanding_nonvoting": 55312194,
+        "preferred_shares": 2733225
+      }
+    },
+    "bankruptcy_flag": {
+      "franchisor_bankruptcy": false,
+      "item4_disclosure_exists": true,
+      "description": "Pier 1 Imports, Inc. filed Chapter 11 on February 17, 2020. Pier 1 is NOT the franchisor or an affiliate. Cheryl Bachelder (CFA Board member since April 2019) served as Interim CEO of Pier 1 Dec 2018-Nov 2019. Matter still pending.",
+      "entity": "Pier 1 Imports, Inc.",
+      "person_connected": "Cheryl Bachelder (CFA Board member)",
+      "filing_date": "2020-02-17",
+      "case_number": "20-30805-KRH",
+      "court": "U.S. Bankruptcy Court, Eastern District of Virginia",
+      "franchisor_or_affiliate": false,
+      "source_pages": [
+        22
+      ],
+      "confidence": "high",
+      "status": "surfaced"
+    },
+    "litigation_summary": {
+      "pending": null,
+      "raw": {
+        "cases": [
+          {
+            "name": "Stephens and Strawn v. Chick-fil-A (Data Breach)",
+            "case_no": "1:23-cv-00964",
+            "court": "U.S. District Court for the Northern District of Georgia",
+            "filed": "2023-03-06",
+            "type": "Data breach / PII compromise \u2014 Chick-fil-A One members (Dec 2022 - Feb 2023)",
+            "claims": "Negligence, breach of implied contract, negligence per se, Georgia Uniform Deceptive Trade Practices Act",
+            "resolution": "Settled individually (not class). $210,000 total ($2,500 per plaintiff x5, remainder to counsel). Dismissed with prejudice Dec 7, 2023.",
+            "source_pages": [
+              21
+            ]
+          },
+          {
+            "name": "Mayheu / Pittman / Ukpere / Goldstein / Ortega v. Chick-fil-A (Delivery Fee)",
+            "case_no": "2022CV365400 (consolidated)",
+            "court": "Superior Court of Fulton County, Georgia (consolidated)",
+            "filed": "Various 2021-2022",
+            "type": "Delivery fee misrepresentation \u2014 higher delivery menu prices not disclosed",
+            "claims": "Negligent misrepresentation, violations of GA/NY/NJ/FL/CA consumer protection statutes",
+            "resolution": "Class action settlement approved Feb 29, 2024. $4,400,000 fund. $880K attorney fees, $15,579 costs, $5K per lead plaintiff, $29.25 per valid claimant (3,984 claims), ~$230K to Feeding America. No franchisees named.",
+            "source_pages": [
+              21,
+              22
+            ]
+          }
+        ],
+        "total_disclosed_cases": 2,
+        "franchisee_involvement": "No franchisees named as defendants in any disclosed litigation",
+        "source_object": "02_reader_report.md",
+        "source_section": "Item 3",
+        "source_pages": [
+          21,
+          22
+        ],
+        "confidence": "high",
+        "status": "surfaced"
+      }
+    }
+  },
+  "red_flags": [
+    {
+      "severity": "warning",
+      "kind": "contradiction",
+      "summary": "Item 20 Table 1 shows 2023 Franchised Restaurants starting at 2,331 but Table 3 2023 totals show start of 2,331 \u2014 however Table 1 shows 2022 end at 2,338 and 2023 start at 2,331. The 7-unit discrepanc"
+    },
+    {
+      "severity": "warning",
+      "kind": "bankruptcy",
+      "summary": "{'franchisor_bankruptcy': False, 'item4_disclosure_exists': True, 'description': 'Pier 1 Imports, Inc. filed Chapter 11 on February 17, 2020. Pier 1 is NOT the franchisor or an affiliate. Cheryl Bache"
+    }
+  ],
+  "validation_questions": [
+    "Reconcile: Item 20 Table 1 shows 2023 Franchised Restaurants starting at 2,331 but Table 3 2023 totals show start of 2,331 \u2014 however Table 1 shows 2022 end at 2,338 and 20",
+    "Confirm Item 19 cohort definition with franchisor.",
+    "Confirm current auditor and most recent opinion date.",
+    "Request current state-by-state addenda packet."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run": "chick-fil-a-2025",
+    "harvest_runs": [],
+    "filing_year": 2025,
+    "key_exhibits": {
+      "franchise_agreement_self_op": {
+        "exhibit": "B-1",
+        "pages": "81-102",
+        "status": "surfaced"
+      },
+      "franchise_agreement_fsp": {
+        "exhibit": "B-2",
+        "pages": "103-144",
+        "status": "surfaced"
+      },
+      "financial_statements": {
+        "exhibit": "C",
+        "pages": "145-185",
+        "status": "surfaced"
+      },
+      "manual_toc": {
+        "exhibit": "D",
+        "pages": "186-187",
+        "status": "surfaced"
+      },
+      "franchisee_list": {
+        "exhibit": "E",
+        "pages": "188-260",
+        "status": "partial \u2014 CID encoding on Licensed Unit pages"
+      },
+      "former_licensees": {
+        "exhibit": "F",
+        "pages": "261-262",
+        "status": "surfaced"
+      },
+      "state_addenda": {
+        "exhibit": "G",
+        "pages": "263-326",
+        "status": "surfaced"
+      },
+      "receipts": {
+        "exhibit": "I",
+        "pages": "328-330",
+        "status": "surfaced"
+      }
+    },
+    "issuance_date_pages": [
+      1
+    ],
+    "primary_layers_present": {
+      "v2": true,
+      "v1": true,
+      "final": true,
+      "raw": true
+    },
+    "rt_depth_files": []
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit E Licensed Unit pages (~189-200+) have CID font encoding. Individual Licensed Unit names, addresses, and contact information are unreadable."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "License term is blank in the template License Agreement. Actual term is specified per individual agreement."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 11 training schedule table referenced but not fully extracted as a structured table."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 20 Table 1 shows 2023 Franchised Restaurants starting at 2,331 but Table 3 2023 totals show start of 2,331 \u2014 however Table 1 shows 2022 end at 2,338 and 2023 start at 2,331. The 7-unit discrepanc"
+    }
+  ]
+}

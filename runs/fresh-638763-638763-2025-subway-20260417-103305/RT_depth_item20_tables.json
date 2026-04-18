@@ -1,0 +1,52 @@
+{
+  "depth_block": "item20_completion",
+  "tables_extracted": [
+    {
+      "table": "Table 1 — Systemwide Outlet Summary",
+      "source_pages": [95],
+      "data": {
+        "2022": {"start": 21147, "end": 20576, "net": -571, "franchised": true, "company_owned": false},
+        "2023": {"start": 20576, "end": 20133, "net": -443, "franchised": true, "company_owned": false},
+        "2024": {"start": 20133, "end": 19502, "net": -631, "franchised": true, "company_owned": false}
+      }
+    },
+    {
+      "table": "Table 2 — Transfers (state-by-state)",
+      "source_pages": [96, 97, 98, 99],
+      "notes": "Full state-by-state transfer data for 2022-2024 across all 50 states + territories",
+      "high_transfer_states_2024": ["California (117)", "Florida (98)", "Georgia (63)", "Arizona (52)", "Indiana (48)", "Ohio (75)"]
+    },
+    {
+      "table": "Table 3 — Status of Franchised Outlets",
+      "source_pages": [100, 101, 102, 103, 104],
+      "data": {
+        "2022": {"start": 21147, "opened": 529, "terminations": 8, "non_renewals": 18, "reacquired": 98, "ceased": 995, "end": 20576},
+        "2023": {"start": 20576, "opened": 455, "terminations": 3, "non_renewals": 19, "reacquired": 90, "ceased": 733, "end": 20133},
+        "2024": {"start": 20133, "opened": 435, "terminations": 4, "non_renewals": 30, "reacquired": 139, "ceased": 881, "end": 19502}
+      },
+      "table_notes": [
+        "Opened includes reopenings (~52% in 2024)",
+        "Terminations/Ceased Ops include temporarily closed locations",
+        "Reacquired = immediately resold (1-2 days) to new franchisee"
+      ]
+    },
+    {
+      "table": "Table 4 — Company-Owned Status",
+      "source_pages": [105, 106, 107, 108, 109],
+      "data": {
+        "2022": {"start": 0, "opened": 0, "reacquired": 82, "closed": 0, "sold": 82, "end": 0},
+        "2023": {"start": 0, "opened": 0, "reacquired": 79, "closed": 0, "sold": 79, "end": 0},
+        "2024": {"start": 0, "opened": 0, "reacquired": 139, "closed": 0, "sold": 139, "end": 0}
+      },
+      "notes": "No company-owned outlets; reacquired units are pass-through"
+    },
+    {
+      "table": "Table 5 — Projected Openings",
+      "source_pages": [110, 111],
+      "totals": {"fa_signed_not_open": 120, "projected_new_franchise": 150, "projected_company": 0}
+    }
+  ],
+  "gag_clause_flag": true,
+  "gag_clause_quote": "During the last three fiscal years, we have signed confidentiality clauses with current or former franchisees which restrict them from speaking openly with you about their experience with us.",
+  "gag_clause_source_page": 111
+}

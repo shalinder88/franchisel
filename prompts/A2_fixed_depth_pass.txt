@@ -41,6 +41,23 @@ facts are still missing after normal text extraction — for example the auditor
 name, the opinion paragraph, or balance-sheet / income-statement headline rows
 do not appear in the extracted text — run a targeted image fallback.
 
+If Item 21 statement pages or note pages are surfaced and text extraction
+is weak, low-text, or image-only, A2 MUST render and directly inspect the
+key Item 21 pages before stopping. Prioritize this exact page order:
+  1. auditor report page
+  2. balance sheet page
+  3. income statement page
+  4. cash flow page
+  5. stockholders' equity / members' equity page
+  6. note pages containing:
+     - revenue recognition
+     - lease / rent / right-of-use / lease liability
+     - goodwill / impairment
+     - income taxes / effective tax rate
+     - related-party / parent / affiliate balances
+     - subsequent events
+     - deferred revenue / deferred franchise fees
+
 Strict scope rules:
 - Do NOT OCR the whole PDF.
 - Do NOT broad-reread the whole PDF.
@@ -62,9 +79,24 @@ Strict scope rules:
 - Do not infer, reconstruct, or compute figures. If a line is not directly
   legible on a targeted page, leave it null and mark it unresolved.
 
+For each recovered page, record:
+  - exact PDF page number
+  - statement or note family (e.g. "balance_sheet", "note_lease_rou",
+    "note_revenue_recognition")
+  - exact headline figures recovered
+  - extraction method: "text_layer", "render_read", or "image_fallback"
+  - what remains unread or uncertain on that page
+
 Write the recovered fields to `RT_depth_item21_image_fallback.json` with
 per-field page provenance and a top-level `method: "targeted_image_fallback"`
-marker. Merge the recovered facts into `09_final_canonical.json` and
+marker.
+
+For image-fallback Item 21 recovery, also create or update:
+  - `RT_depth_financial_notes.json` — with note-family entries recovered
+    via render or image fallback
+  - `RT_depth_item21_notes.json` — with per-note-page recovery detail
+
+Merge the recovered facts into `09_final_canonical.json` and
 `12_canonical_enriched_v2.json` under the existing Item 21 family.
 
 Whether or not the fallback runs, the run summary and scorecard MUST state
@@ -75,6 +107,22 @@ explicitly which method was used for Item 21:
 - In `10_scorecard.md`, add a one-line note in the Item 21 section stating
   the same: "Item 21 method: normal text extraction" OR
   "Item 21 method: targeted image fallback (pages X–Y)".
+
+Hard stop rules for Item 21 image fallback:
+
+- A2 may NOT stop Item 21 after only auditor + statement headlines if note
+  pages are surfaced and materially readable by targeted render. When note
+  pages are surfaced, A2 must attempt targeted render of each note-page
+  family in the priority order above before concluding Item 21 extraction.
+
+- If exact Item 21 net income, total assets, equity, or note-family detail
+  still cannot be recovered after targeted render attempts, both
+  `10_scorecard.md` and `14_run_summary.json` MUST say exactly which page
+  family remained image-limited. In the scorecard, list each unrecovered
+  family with its page number and the reason (e.g., "balance sheet p.247:
+  image-limited — render unreadable"). In run_summary, populate
+  `run_metrics.item21_image_limited_families` as an array of
+  `{family, page, reason}` entries.
 
 ### Depth Pass 2: Contract burden depth
 Read the franchise agreement exhibit (and any development agreement, guaranty, or lease rider exhibits).

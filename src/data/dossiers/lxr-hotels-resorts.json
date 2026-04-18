@@ -1,0 +1,128 @@
+{
+  "slug": "lxr-hotels-resorts",
+  "name": "Hilton Franchise Holding LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hilton Franchise Holding LLC",
+    "parent": "Hilton Domestic Operating Company Inc.",
+    "headquarters": "7930 Jones Branch Drive, Suite 1100, McLean, Virginia 22102",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": "5%",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": "5%",
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-139-638062-2025-lxr-hotels-resorts-20260415-194238",
+    "primary_run_folder": "fresh-139-638062-2025-lxr-hotels-resorts-20260415-194238",
+    "primary_fdd_id": "638062",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 139
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Investment range ($5.4M-$845.8M) lacks practical utility; no actual LXR investment data"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "HPMS migration timeline and cost unknown; anticipated but not required"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "All franchisor assets pledged for Hilton parent debt (2025-2033)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Ultra-small system (4 hotels) with zero projected growth"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Gag clause limits franchisee contact"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Forbes Travel Guide mandatory cost ($22,400/yr) with no performance benchmarks"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Spa ongoing management fees not specified"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Mandatory Guest Fee amounts not disclosed; included in GRR"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Financial statement Note 9 date typo (2024 vs 2025)"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Arizona Biltmore shows as '+1 Ceased Operations - Other Reasons' in Table 3 yet system grew by 1 \u2014 likely brand conversion, not cessation"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Note 9 states 'through March 18, 2024' but auditor report dated March 18, 2025 \u2014 typographical error"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

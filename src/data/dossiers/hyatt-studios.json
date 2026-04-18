@@ -1,0 +1,110 @@
+{
+  "slug": "hyatt-studios",
+  "name": "Hyatt Franchising, L.L.C.",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hyatt Franchising, L.L.C.",
+    "parent": "Hyatt Hotels Corporation",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$12,188,106 to $21,863,907",
+    "royalty_headline": "5%",
+    "ad_fund_headline": null,
+    "term_headline": 20,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": 0,
+    "company_owned_units": 0
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": "5%",
+    "ad_fund_raw": null,
+    "investment_low_raw": 12188106,
+    "investment_high_raw": 21863907
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": 0,
+    "company_owned": 0,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 20,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Deloitte & Touche LLP",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-21-637927-2025-hyatt-studios-20260415-061338",
+    "primary_run_folder": "fresh-21-637927-2025-hyatt-studios-20260415-061338",
+    "primary_fdd_id": "637927",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 21
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Whether 'Hyatt Studios' trademark application (pending since April 2023) will be granted"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Outcome of Imperial Hotels AAA arbitration (2024, unpaid royalties)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Specific Guarantor Monetary Threshold dollar amounts (set per deal, not disclosed in FDD body)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Hyatt Studios Services tier assignment criteria (Basic vs High not specified)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Status of 45 signed franchise agreements since December 31, 2024 cut-off date"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Specific DRA development schedules and deadlines (negotiated per deal, not disclosed)"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 20 Tables 3 and 4 header says 'For years 2021 to 2023' but data clearly covers 2022-2024"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "home-halo",
+  "name": "Home Halo",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": null,
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-01-29",
+    "franchise_fee_headline": "$49,000",
+    "investment_range_headline": null,
+    "royalty_headline": "5% of Gross Sales",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 49000,
+    "royalty_raw": "5% of Gross Sales",
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Roos & McNabb CPA's, PC",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": "2024-12-31",
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-07-637912-2025-home-halo-20260415-004402",
+    "primary_run_folder": "fresh-07-637912-2025-home-halo-20260415-004402",
+    "primary_fdd_id": "637912",
+    "harvest_paths": [
+      "fresh-07-637912-2025-home-halo-20260413-212358"
+    ],
+    "filing_year": 2025,
+    "canonical_schema": "C",
+    "phase": "first200",
+    "slot": 7
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Date inconsistency in Item 1 (page 9): Iowa and NM affiliates described as operating 'as Home Halo Agency' both 'prior to December 31, 2024' and 'as of January 1, 2024' \u2014 likely editorial typo for Jan"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Contact Center fee cap contradiction: Item 6 says 3% cap; Item 19 Table 2 Footnote 6 says 'up to 5%'. Franchise Agreement Article 5.D. confirms 3% cap."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Financial viability flagged on cover page (risk factor #4): total assets $29,513, 'calls into question financial ability to provide services and support'"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "All 3 primary trademarks are pending USPTO registration only \u2014 not federally registered. Cover page risk factor #6."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 20 Table 1 net change: Total Outlets 2024 shows +2 but arithmetic suggests +1 (start 1, end 2). Possible source document error."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No related party transaction note in financial statements despite 100% of revenue ($55,013) from Iowa affiliate. Potential disclosure gap."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Income statement shows $1,414 Amortization & Depreciation but balance sheet shows $0 fixed assets and $0 accumulated depreciation. Minor financial statement inconsistency."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Contact Center fee cap: Item 6 (table + Note 9) and FA Article 5.D. state cap of 3% of monthly Gross Sales. Item 19 Table 2 Footnote 6 states 'up to 5% of Gross Sales.'"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Iowa/NM affiliate operating dates: Item 1 states 'prior to December 31, 2024, the business operated as a Home Halo Agency' then 'As of January 1, 2024, the business operated as a Home Halo Agency' \u2014 d"
+    }
+  ],
+  "_status": "PARTIAL"
+}

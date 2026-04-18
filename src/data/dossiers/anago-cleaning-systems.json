@@ -1,0 +1,565 @@
+{
+  "slug": "anago-cleaning-systems",
+  "name": "Anago Cleaning Systems",
+  "schema_version": 1,
+  "current_snapshot": {
+    "legal_name": "Anago Franchising, Inc.",
+    "parent": "Anago Cleaning Systems, Inc.",
+    "headquarters": null,
+    "fdd_filing_year": 2026,
+    "issuance_date": "2026-04-01",
+    "franchise_fee_headline": "$98,000",
+    "investment_range_headline": "$219,000 to $339,000",
+    "royalty_headline": "",
+    "ad_fund_headline": "",
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "initial_fees_by_format": {
+      "initial_fee": 98000,
+      "fee_description": "Initial Fee / Subfranchise Fee, payable in full upon signing, fully earned and non-refundable",
+      "vetfran_discount": "15% off initial fee + no royalty for first 6 months (51%+ veteran ownership required)",
+      "deposit_refund": "Refunded less amounts per Deposit Agreement if franchise not offered or not executed within 30 days",
+      "source_section": "Item 5",
+      "source_pages": [
+        13
+      ],
+      "confidence": "high"
+    },
+    "investment_by_format": {
+      "total_low": 219000,
+      "total_high": 339000,
+      "initial_fee": 98000,
+      "source_section": "Item 7",
+      "source_pages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "confidence": "high"
+    },
+    "recurring_fees_raw": {},
+    "tech_fee_detail": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null,
+    "high_low": null,
+    "presentation_basis": null,
+    "raw_keys": [
+      "fpr_disclosed",
+      "metric",
+      "metric_is_not_profit",
+      "data_source",
+      "tables",
+      "caveats",
+      "source_section",
+      "source_pages",
+      "confidence"
+    ]
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "terminations": null,
+    "non_renewals": null,
+    "transfers": null,
+    "net_change": null,
+    "raw": {
+      "domestic": {
+        "total_end_2025": 45,
+        "franchised_end_2025": 44,
+        "company_owned_end_2025": 1,
+        "net_change_2025": 0,
+        "openings_2025": 1,
+        "terminations_2025": 0,
+        "non_renewals_2025": 0,
+        "reacquired_2025": 1,
+        "ceased_other_2025": 1,
+        "transfers_2025": 1,
+        "projected_openings_2026": 5,
+        "states_represented": 24
+      },
+      "international": {
+        "total_end_2025": 3,
+        "country": "Canada",
+        "net_change_2025": 0,
+        "projected_openings": 2
+      },
+      "gag_clause_flag": true,
+      "gag_clause_evidence": {
+        "source_pages": [
+          65
+        ],
+        "quote_fragment": "certain Subfranchisors have signed confidentiality provisions restricting their ability to speak openly about their experience with us"
+      },
+      "franchisee_associations": "None",
+      "source_section": "Item 20",
+      "source_pages": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "confidence": "high"
+    }
+  },
+  "contract_burden": {
+    "from_canonical": null,
+    "from_depth_pass_v2": null,
+    "from_rt_depth": {
+      "depth_pass": "contract_burdens",
+      "brand": "Anago Cleaning Systems",
+      "agreement": "Anago Subfranchise Rights Agreement (Exhibit A)",
+      "source_pages": [
+        85,
+        148
+      ],
+      "clauses": [
+        {
+          "family": "grant",
+          "article": "1.1",
+          "obligation": "Nonexclusive right to sublicense System and Proprietary Marks in Area to Unit Franchisees via Unit Franchise Agreements",
+          "trigger": "Signing",
+          "source_pages": [
+            89
+          ]
+        },
+        {
+          "family": "territory",
+          "article": "1.2-1.3",
+          "obligation": "Area defined in Schedule A. Must only deal with prospective Unit Franchisees residing within Area. Territory protection conditional on compliance \u2014 area may be reduced after 3 defaults in 12 months or 2 in 6 months",
+          "trigger": "Ongoing; default-based reduction",
+          "source_pages": [
+            90
+          ]
+        },
+        {
+          "family": "office_requirement",
+          "article": "1.4",
+          "obligation": "Must secure approved office within Area within 90 days. Collateral assignment of lease to franchisor required. Must have phone, computer, internet, fax, email",
+          "trigger": "Within 90 days of signing",
+          "duration": "Term",
+          "source_pages": [
+            90,
+            91
+          ]
+        },
+        {
+          "family": "training",
+          "article": "2.1",
+          "obligation": "Mandatory 2-week initial training within 90 days. Failure to complete = franchisor may retrain or terminate and retain fee. Refresher training max once/year at franchisee expense",
+          "trigger": "Within 90 days of signing",
+          "source_pages": [
+            91
+          ]
+        },
+        {
+          "family": "manuals",
+          "article": "2.2",
+          "obligation": "Loaned one copy of Anago Manuals. Cannot emulate, edit, or alter. Must provide copy to each Unit Franchisee at own cost",
+          "source_pages": [
+            92
+          ]
+        },
+        {
+          "family": "billing_collection",
+          "article": "2.4",
+          "obligation": "All client payments deposited to Anago Escrow Account (franchisor-designated). Franchisor distributes weekly less fees. Daily deposit required. Unintentional payment to wrong account = immediate default allowing franchisor to assume all billing. Franchisor has 24/7/365 access to all records including electronic/computer systems",
+          "trigger": "Ongoing",
+          "source_pages": [
+            92,
+            93,
+            94
+          ]
+        },
+        {
+          "family": "fdd_maintenance",
+          "article": "2.6",
+          "obligation": "Subfranchisor solely responsible for maintaining annual FDD updates. Failure to maintain proper updates = material breach, franchisor may terminate WITHOUT opportunity to cure",
+          "trigger": "Annual",
+          "source_pages": [
+            96
+          ]
+        },
+        {
+          "family": "franchise_sales",
+          "article": "3.1",
+          "obligation": "Must comply with all franchise regulations. Must retain qualified franchise attorney. Send proposed FDD to franchisor for approval. Register in applicable states. All costs borne by subfranchisor",
+          "trigger": "Ongoing",
+          "source_pages": [
+            96,
+            97
+          ]
+        },
+        {
+          "family": "unit_franchise_agreement",
+          "article": "3.1(d)",
+          "obligation": "Must use form Unit Franchise Agreement designated by franchisor. Cannot modify without written approval",
+          "source_pages": [
+            97
+          ]
+        },
+        {
+          "family": "operating_standards",
+          "article": "3.2-3.3",
+          "obligation": "Must operate in compliance with Manuals, brand standards, quality requirements. Must maintain records per franchisor's formats/schedules. Franchisor has audit rights",
+          "source_pages": [
+            97,
+            98
+          ]
+        },
+        {
+          "family": "client_marketing_spend",
+          "article": "3.1(d)/4.2(d)",
+          "obligation": "Minimum $50,000/year on marketing Anago services in Area. Shortfall paid to franchisor. Prorated for partial years. Must provide satisfactory proof of expenditures",
+          "trigger": "Annual",
+          "money": "$50,000 minimum",
+          "source_pages": [
+            32
+          ]
+        },
+        {
+          "family": "client_bid_schedule",
+          "article": "3.1(g)",
+          "obligation": "Must schedule minimum number of Client Bids per month based on Area population. Failure = $150/bid deficiency fee + potential territory reduction",
+          "money": "$150 per missed bid",
+          "source_pages": [
+            21
+          ]
+        },
+        {
+          "family": "royalty",
+          "article": "4.1",
+          "obligation": "5% of Gross Revenues, monthly on 20th. Escalating minimums: months 1-12=$0, 13-24=$1,500/mo, then +$1,500/year. Successor agreement minimum = average of last year",
+          "money": "5% + escalating floor",
+          "source_pages": [
+            14
+          ]
+        },
+        {
+          "family": "admin_support_fee",
+          "article": "4.2",
+          "obligation": "2% of Gross Revenues collected, monthly on 20th",
+          "money": "2%",
+          "source_pages": [
+            15
+          ]
+        },
+        {
+          "family": "nbds_fee",
+          "article": "4.2",
+          "obligation": "$550/month NBDS access/support, paid to franchisor",
+          "money": "$550/month",
+          "source_pages": [
+            16
+          ]
+        },
+        {
+          "family": "insurance",
+          "article": "3.6",
+          "obligation": "Must participate in Anago National Insurance program for entire Term. $1M GL, $2M umbrella, $1M E&O, workers' comp. Premiums paid directly to carrier",
+          "trigger": "Entire Term",
+          "source_pages": [
+            25,
+            26
+          ]
+        },
+        {
+          "family": "trademarks",
+          "article": "5",
+          "obligation": "Must use marks as sole trade identification. Cannot use marks as corporate name. Must follow all identity rules. Cannot register domains with Anago marks without written consent. No unauthorized use of marks",
+          "source_pages": [
+            40,
+            41,
+            42
+          ]
+        },
+        {
+          "family": "confidentiality",
+          "article": "6",
+          "obligation": "Manuals and system information are trade secrets. All personnel with access must sign confidentiality agreements identifying franchisor as third-party beneficiary",
+          "duration": "Perpetual",
+          "source_pages": [
+            44,
+            45
+          ]
+        },
+        {
+          "family": "transfer",
+          "article": "7",
+          "obligation": "No transfer without prior written approval. Transferee must meet standards, assume or sign current agreement, pay $10K fee. ROFR: 30 days to match, 60 days to close. Death: transfer within 6 months",
+          "money": "$10,000 transfer fee",
+          "source_pages": [
+            51,
+            52
+          ]
+        },
+        {
+          "family": "default_termination",
+          "article": "8",
+          "obligation": "25 non-curable defaults including insolvency, bankruptcy, felony, audit denial, dishonesty, unauthorized transfer, false books, repeated complaints, performance failure, 3+ defaults in 12 months. Curable defaults: 30 days to cure",
+          "source_pages": [
+            49,
+            50
+          ]
+        },
+        {
+          "family": "post_termination",
+          "article": "9",
+          "obligation": "Must: cease operations, de-identify, return all proprietary property, assign all Unit Franchises/Agreements and Client Accounts to franchisor, transfer phone numbers/websites/social media, cancel trade names, pay all amounts within 10 days, comply with non-compete",
+          "trigger": "Expiration or termination",
+          "source_pages": [
+            50
+          ]
+        },
+        {
+          "family": "noncompete",
+          "article": "10.2",
+          "obligation": "During term: no Competitive Business, no interference. Post-term: 24 months, within Area + other subfranchisor areas + 20 miles of perimeter. Failure to comply restarts 24-month clock",
+          "duration": "Term + 24 months post",
+          "source_pages": [
+            52,
+            53
+          ]
+        },
+        {
+          "family": "indemnification",
+          "article": "11.2",
+          "obligation": "Subfranchisor indemnifies franchisor for: operations, Unit Franchise Agreement nonperformance, negligence, law violations, breach, joint employer claims, acts of subfranchisor or associated persons including Unit Franchisees",
+          "source_pages": [
+            17
+          ]
+        },
+        {
+          "family": "dispute_resolution",
+          "article": "13",
+          "obligation": "60-day good faith negotiation first. Then binding arbitration per AAA Commercial Rules, 1 arbitrator, within 50 miles of franchisor's principal place of business. Federal Arbitration Act governs. Franchisor may seek injunctive relief in court for IP matters",
+          "source_pages": [
+            54
+          ]
+        },
+        {
+          "family": "term",
+          "article": "14",
+          "obligation": "10-year initial term. One 10-year renewal. Renewal requires: notice 9-12 months prior, not in default, sign then-current successor agreement (may have materially different terms) + general release, meet current requirements, minimum royalty floor",
+          "duration": "10 + 10 years",
+          "source_pages": [
+            47
+          ]
+        },
+        {
+          "family": "personal_guaranty",
+          "exhibit": "III",
+          "obligation": "All individual shareholders/members must personally guarantee all obligations under the Subfranchise Rights Agreement. Unlimited personal guaranty",
+          "source_pages": [
+            216,
+            217
+          ]
+        },
+        {
+          "family": "collateral_assignment_lease",
+          "exhibit": "VIII",
+          "obligation": "If premises leased, must execute collateral assignment giving franchisor right to assume lease on termination/expiration",
+          "source_pages": [
+            225
+          ]
+        },
+        {
+          "family": "collateral_assignment_clients",
+          "exhibit": "V",
+          "obligation": "Must assign client accounts to franchisor on termination/expiration",
+          "source_pages": [
+            220
+          ]
+        },
+        {
+          "family": "security_agreement",
+          "exhibit": "VII",
+          "obligation": "Must grant security interest in collateral to franchisor",
+          "source_pages": [
+            238
+          ]
+        }
+      ],
+      "distinctive_clauses": [
+        "FDD maintenance failure = non-curable termination (no cure opportunity) \u2014 Section 2.6",
+        "Unintentional client payment to wrong account = immediate default \u2014 Section 2.4(d)",
+        "Territory reduction after 3 defaults in 12 months or 2 in 6 months \u2014 Section 1.3",
+        "Non-compete clock restarts if franchisee fails to comply \u2014 Section 10.2(b)",
+        "Franchisor is third-party beneficiary of all Unit Franchise Agreements with independent enforcement rights \u2014 Section 2.5(d)",
+        "Daily deposit of all client payments required \u2014 Section 2.4(b)",
+        "24/7/365 franchisor access to all records including electronic systems \u2014 Section 2.4(e)"
+      ]
+    },
+    "termination_with_cause": null,
+    "termination_by_franchisee": null,
+    "transfer": null,
+    "noncompete_in_term": null,
+    "noncompete_post_term": null
+  },
+  "territory_reality": {},
+  "state_overrides": {
+    "states_with_addenda": [
+      "CA",
+      "IL",
+      "MD",
+      "MI",
+      "MN",
+      "NY",
+      "VA",
+      "WA"
+    ],
+    "material_overrides": {
+      "CA": [
+        "Arbitration venue notice",
+        "Non-compete may not be enforceable",
+        "FL choice of law may not be enforceable",
+        "General release may be void under Corp Code \u00a731512",
+        "Max price agreements = per se Cartwright Act violations",
+        "Janitorial franchise literature review recommended"
+      ],
+      "IL": [
+        "Choice of forum/venue deleted (void under \u00a74 IL Franchise Disclosure Act)",
+        "IL law governs",
+        "Waiver of IL FD Act compliance is void"
+      ],
+      "MD": [
+        "General release excludes MD Franchise Law claims",
+        "Bankruptcy termination may not be enforceable",
+        "3-year statute of limitations",
+        "Arbitration forum may be unenforceable"
+      ],
+      "MI": [
+        "Michigan Franchise Investment Law protections (termination, renewal, transfer, arbitration venue)",
+        "Escrow of initial investment may be required if net worth <$100K"
+      ],
+      "MN": [
+        "90 days termination notice + 60 days cure",
+        "180 days non-renewal notice",
+        "No waiver of jury trial rights",
+        "Release excludes MN Franchise Law claims"
+      ],
+      "NY": [
+        "Additional cover page disclosures",
+        "NY GBL Article 33 rights preserved",
+        "Termination by franchisee on any grounds available by law"
+      ],
+      "VA": [
+        "Franchisor cannot cancel without reasonable cause per VA Retail Franchising Act"
+      ],
+      "WA": [
+        "WA Franchise Investment Protection Act prevails over inconsistent FDD/agreement terms"
+      ]
+    },
+    "source_section": "Exhibit H",
+    "source_pages": [
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283
+    ],
+    "confidence": "high"
+  },
+  "financial_strength": {
+    "auditor": "Miller CPA, PLLC",
+    "audit_opinion": "Clean (unqualified)",
+    "audit_opinion_date": "2026-03-11",
+    "fiscal_year_end": null,
+    "total_revenue": null,
+    "net_income": null,
+    "total_assets": null,
+    "total_equity": null,
+    "bankruptcy_flag": {
+      "disclosed": "None",
+      "source_pages": [
+        13
+      ],
+      "confidence": "high"
+    },
+    "litigation_summary": {
+      "pending": "None",
+      "raw": {
+        "pending": "None",
+        "prior": "None required to be disclosed",
+        "source_pages": [
+          13
+        ],
+        "confidence": "high"
+      }
+    }
+  },
+  "red_flags": [
+    {
+      "severity": "warning",
+      "kind": "bankruptcy",
+      "summary": "{'disclosed': 'None', 'source_pages': [13], 'confidence': 'high'}"
+    }
+  ],
+  "validation_questions": [
+    "Confirm Item 19 cohort definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run": "anago-cleaning-systems-2026",
+    "harvest_runs": [],
+    "filing_year": 2026,
+    "key_exhibits": [],
+    "issuance_date_pages": null,
+    "primary_layers_present": {
+      "v2": true,
+      "v1": true,
+      "final": true,
+      "raw": true
+    },
+    "rt_depth_files": [
+      "RT_depth_key_exhibits",
+      "RT_depth_contract_burdens",
+      "RT_depth_item19_cohort_comparability",
+      "RT_depth_financial_notes",
+      "RT_depth_item20_tables",
+      "RT_depth_promotion_audit",
+      "RT_depth_state_addenda_promotion",
+      "RT_depth_thin_items",
+      "RT_depth_item21_notes"
+    ]
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Item 19 Table 3 header says '2023' but data appears to represent groupings by years in operation as of December 31, 2025"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Minimum Annual Performance Requirements mentioned as non-curable termination trigger (Item 17, \u00a78.2 #22) but specific thresholds not disclosed in FDD body \u2014 likely in agreement or Manuals"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Guaranty of Performance text referenced in Exhibit F cover but not separately extracted; may be embedded within financial statement pages or may be a brief statement"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 20 domestic Table 3 shows CA outlets declining from 4 to 1 to 0 (2023-2025) under 'Ceased Operations Other Reasons' with footnote about Market Developer conversions \u2014 the conversions are not trul"
+    }
+  ]
+}

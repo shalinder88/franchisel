@@ -1,0 +1,113 @@
+{
+  "slug": "rytech",
+  "name": "Rytech",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Rytech Franchising, Inc.",
+    "parent": "RyBrands, Inc.",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-04-01",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$166,500 to $258,100",
+    "royalty_headline": "8%",
+    "ad_fund_headline": null,
+    "term_headline": 10,
+    "renewal_headline": 5,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": 94,
+    "franchised_units": 92,
+    "company_owned_units": 2
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": "8%",
+    "ad_fund_raw": null,
+    "investment_low_raw": 166500,
+    "investment_high_raw": 258100
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": 94,
+    "franchised": 92,
+    "company_owned": 2,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 10,
+    "renewal": 5
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-10-637915-2025-rytech-20260415-014020",
+    "primary_run_folder": "fresh-10-637915-2025-rytech-20260415-014020",
+    "primary_fdd_id": "637915",
+    "harvest_paths": [
+      "fresh-10-637915-2025-rytech-20260414-190533"
+    ],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 10
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Renewal fee: Item 6 Note 7 says 10% but fee table, Item 17, and FA Section 4(e) all say 15%. Resolved in favor of 15% but the FDD text contains the error."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Territory intrusion fee: Two entries in Item 6 with different rates (50% vs 75%). Likely different scenarios but FDD is unclear."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "National Ad Fund max: Note 3 initially says 2% then later says 3%. Table says 3%."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit K naming: Item 22 calls it 'SBA Addendum' but exhibit is titled 'Prospective Franchisee Non-Disclosure Agreement'."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Financial statement values: Read from scanned images; minor line items may have small inaccuracies."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Renewal fee: 15% (fee table, Item 17, FA) vs 10% (Note 7)"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Territory intrusion fee: 50% (first entry) vs 75% (second entry)"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "National Ad Fund max: 2% (first sentence of Note 3) vs 3% (later in Note 3 and fee table)"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

@@ -1,0 +1,59 @@
+{
+  "depth_block": "key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "Exhibit A — Franchise Agreement",
+      "page_range": [114, 162],
+      "clause_walk_status": "walked",
+      "clause_entries": 26,
+      "key_clauses": [
+        {"clause_family": "grant_and_term", "obligation": "20-year term; must open within 12 months", "source_pages": [117]},
+        {"clause_family": "royalty", "obligation": "8% of gross sales weekly", "source_pages": [118, 119]},
+        {"clause_family": "advertising", "obligation": "4.5% of gross sales weekly to SFAFT", "source_pages": [119]},
+        {"clause_family": "operations_manual", "obligation": "Strict compliance required; franchisor may modify unilaterally", "source_pages": [123, 124]},
+        {"clause_family": "supplier_restrictions", "obligation": "Exclusive purchasing from approved sources", "source_pages": [125]},
+        {"clause_family": "insurance", "obligation": "GL $2M/$4M, WC, Auto $1M, Gold Standard Program", "source_pages": [127]},
+        {"clause_family": "indemnification", "obligation": "Broad indemnification of franchisor and all affiliates", "source_pages": [128]},
+        {"clause_family": "termination", "obligation": "14 non-curable defaults; 10-day/30-day cure for curable", "source_pages": [135, 136, 137, 138]},
+        {"clause_family": "transfer", "obligation": "30-day ROFR; 9 conditions; general release required", "source_pages": [140, 141]},
+        {"clause_family": "noncompete", "obligation": "Anywhere during term; 3-mile/1-year post-term; $15K + 8% penalty", "source_pages": [143]},
+        {"clause_family": "guaranty", "obligation": "Personal guaranty by all principal owners", "source_pages": [145]},
+        {"clause_family": "arbitration", "obligation": "AAA/ADRC in Connecticut; FAA governs; no court litigation; claims only vs. DAL", "source_pages": [153, 154, 155]},
+        {"clause_family": "damages", "obligation": "No special/incidental/consequential/punitive damages", "source_pages": [155]},
+        {"clause_family": "innovations", "obligation": "All franchisee innovations assigned to franchisor; irrevocable power of attorney", "source_pages": [144, 145]},
+        {"clause_family": "post_termination", "obligation": "De-identify 14 days; assign phone/domain/social; pay lost future royalties; franchisor purchase option at FMV (excluding mark goodwill)", "source_pages": [150, 151]},
+        {"clause_family": "joint_several", "obligation": "Joint and several liability of all individual signers", "source_pages": [155]}
+      ]
+    }
+  ],
+  "exhibits_deferred": [
+    {
+      "exhibit": "Exhibit A-12 — Development Agreement",
+      "page_range": [315, 330],
+      "reason": "Key operative terms already extracted via Item 17 chart and FA parallel provisions. Development-specific terms (schedule, termination triggers) surfaced in Item 17 cross-references.",
+      "substance_recovered_elsewhere": "Item 17 DA provisions, Item 5 development fees, Item 7 development program costs",
+      "remaining_missing": "Detailed development schedule penalties, DA-specific default triggers beyond those in Item 17"
+    },
+    {
+      "exhibit": "Exhibit A-13 — Multi-Unit Franchise Agreement",
+      "page_range": [331, 379],
+      "reason": "49-page MUFA substantially parallel to FA. Key differences are multi-unit management and per-restaurant terms.",
+      "substance_recovered_elsewhere": "FA clause walk covers operative burdens; Item 17 MUFA cross-references",
+      "remaining_missing": "MUFA-specific management structure requirements, multi-unit default triggers"
+    },
+    {
+      "exhibit": "Exhibit D — Sublease",
+      "page_range": [747, 769],
+      "reason": "23-page sublease; key rent/occupancy terms surfaced in Items 6/7/10",
+      "substance_recovered_elsewhere": "Rent ranges, security deposits, guaranty requirements, affiliate profit from spread — all in Items 6, 7, 10",
+      "remaining_missing": "Specific default/cure provisions under sublease, sublease-specific termination triggers, rent escalation mechanics"
+    },
+    {
+      "exhibit": "Exhibit O — General Release",
+      "page_range": [914, 917],
+      "reason": "Required at renewal and transfer; state addenda restrict its scope. Template form.",
+      "substance_recovered_elsewhere": "State addenda overrides identified for CA, MD, MN, WA",
+      "remaining_missing": "Exact scope of claims released; interaction with state franchise law protections"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "magnuson-hotels-and-magnuson-grand",
+  "name": "Magnuson Franchising, LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Magnuson Franchising, LLC",
+    "parent": "Magnuson Company, L.L.C.",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-27",
+    "franchise_fee_headline": "$10,000",
+    "investment_range_headline": "$175,000 to $400,000",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": 5,
+    "renewal_headline": "One additional 5-year auto-renewal",
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 10000,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 175000,
+    "investment_high_raw": 400000
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 5,
+    "renewal": "One additional 5-year auto-renewal"
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion.",
+    "Request current state-by-state addenda packet."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-34-637940-2025-magnuson-hotels-and-magnuson-grand-20260415-104249",
+    "primary_run_folder": "fresh-34-637940-2025-magnuson-hotels-and-magnuson-grand-20260415-104249",
+    "primary_fdd_id": "637940",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 34
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Parent license termination risk: Magnuson Company can terminate trademark license on 6 months' notice without cause, stripping all franchisees of brand rights. No mitigation or contingency plan disclo"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Affiliate Hotel competition: Parent operates Affiliate Hotels competing with Branded Hotels; conflict resolution entirely at franchisor discretion with no formal protocol"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Confidentiality restrictions on former franchisees \u2014 'in some instances' sign provisions restricting ability to speak openly; scope and enforceability unclear"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Formation state ambiguity: financial statement notes say formed as Washington LLC; Item 1 says Wyoming LLC"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "TX outlet count OCR artifact: Table 3 raw text shows '21' for Texas 2024 year-end; corrected to 2 based on all cross-references"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "TX outlet count: Table 3 shows '21' in raw text vs. 11 systemwide in Table 1 and 2 TX properties in E-1"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Formation state: Note 1 says 'Washington limited liability company'; Item 1 says 'Wyoming limited liability company'"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "E-2 lists Texarkana franchisee as 'left the system' in FY2024 but Table 3 shows zero terminations in Texas 2024; footnote says 'since the end of our most recent fiscal year'"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

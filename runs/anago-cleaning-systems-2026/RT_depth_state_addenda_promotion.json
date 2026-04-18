@@ -1,0 +1,40 @@
+{
+  "depth_pass": "state_addenda_structured_promotion",
+  "states_with_addenda": ["CA", "IL", "MD", "MI", "MN", "NY", "VA", "WA"],
+  "overrides": [
+    {"state": "CA", "affected_family": "noncompete", "override_summary": "Post-term covenant not to compete may not be enforceable under California law", "why_it_matters": "California Business & Professions Code generally voids non-compete agreements. A CA-based subfranchisor may not be bound by the 24-month post-term restriction", "source_pages": [277]},
+    {"state": "CA", "affected_family": "governing_law", "override_summary": "Florida choice of law may not be enforceable under California law", "why_it_matters": "CA courts may apply CA law instead of FL law, which could change multiple contract interpretations", "source_pages": [278]},
+    {"state": "CA", "affected_family": "general_release", "override_summary": "General release required at renewal/transfer may be void under CA Corporations Code §31512 and Business & Professions Code §20010", "why_it_matters": "CA franchisees may not be required to waive Franchise Investment Law or Franchise Relations Act claims at renewal", "source_pages": [278]},
+    {"state": "CA", "affected_family": "forum_selection", "override_summary": "Binding arbitration in FL venue notice — CA franchisees encouraged to consult counsel on applicability of CA law and Federal Arbitration Act", "why_it_matters": "FL arbitration venue may be challengeable under CA law", "source_pages": [277]},
+    {"state": "CA", "affected_family": "termination", "override_summary": "Termination upon bankruptcy may not be enforceable under federal bankruptcy law", "why_it_matters": "11 USC §365 may protect franchisee's rights in bankruptcy", "source_pages": [277]},
+    {"state": "CA", "affected_family": "pricing", "override_summary": "Maximum price agreements viewed as per se violations of Cartwright Act by CA AG", "why_it_matters": "Franchisor will not interpret agreement as permitting or requiring maximum price limits in CA", "source_pages": [277]},
+    {"state": "IL", "affected_family": "forum_selection", "override_summary": "Choice of forum/venue provision deleted entirely. §4 of IL Franchise Disclosure Act voids out-of-state venue clauses for litigation (arbitration in non-IL venue may still be permitted)", "why_it_matters": "IL franchisees cannot be forced to litigate in FL courts", "source_pages": [278]},
+    {"state": "IL", "affected_family": "governing_law", "override_summary": "Illinois law governs the agreements (not Florida)", "why_it_matters": "IL franchise protections apply in full", "source_pages": [278]},
+    {"state": "IL", "affected_family": "anti_waiver", "override_summary": "§41 of IL Franchise Disclosure Act voids any provision purporting to waive compliance with IL law", "why_it_matters": "General release and other waiver provisions unenforceable to extent they waive IL franchise law claims", "source_pages": [278]},
+    {"state": "MD", "affected_family": "general_release", "override_summary": "General release required at renewal/sale/transfer does not apply to claims under MD Franchise Registration and Disclosure Law", "why_it_matters": "MD franchisees preserve right to assert MD franchise law claims even after signing release", "source_pages": [279]},
+    {"state": "MD", "affected_family": "termination", "override_summary": "Termination upon bankruptcy may not be enforceable under federal bankruptcy law", "why_it_matters": "Bankruptcy protection applies", "source_pages": [279]},
+    {"state": "MD", "affected_family": "statute_of_limitations", "override_summary": "Claims under MD Franchise Law must be brought within 3 years after grant of franchise", "why_it_matters": "MD has a specific 3-year SOL for franchise claims", "source_pages": [279]},
+    {"state": "MD", "affected_family": "forum_selection", "override_summary": "MD regulation states requiring franchisee to waive right to file lawsuit in MD is unfair/deceptive practice. Enforceability of FL arbitration requirement disputed under Federal Arbitration Act", "why_it_matters": "MD franchisees may challenge FL arbitration venue", "source_pages": [279]},
+    {"state": "MI", "affected_family": "termination", "override_summary": "Cannot terminate prior to expiration except for good cause. Good cause requires failure to comply + written notice + 30 days to cure", "why_it_matters": "MI law provides stronger termination protections than the agreement alone", "source_pages": [5, 6]},
+    {"state": "MI", "affected_family": "renewal", "override_summary": "Cannot refuse to renew without fair compensation (repurchase or FMV) for inventory, supplies, equipment, fixtures — unless term ≥5 years or 6-month advance non-renewal notice given", "why_it_matters": "MI franchisees may be entitled to FMV compensation on non-renewal", "source_pages": [5]},
+    {"state": "MI", "affected_family": "forum_selection", "override_summary": "Cannot require arbitration or litigation outside Michigan. However, franchisor states it will seek to enforce arbitration provisions and believes MI law is unconstitutional on this point", "why_it_matters": "Arbitration venue is disputed — franchisor explicitly challenges MI law", "source_pages": [6]},
+    {"state": "MN", "affected_family": "notice_cure", "override_summary": "90 days notice of termination + 60 days to cure (vs 30 days in agreement). 180 days notice for non-renewal", "why_it_matters": "MN franchisees get substantially longer notice periods", "source_pages": [279, 280]},
+    {"state": "MN", "affected_family": "damages", "override_summary": "MN law may prohibit requiring waiver of jury trial, consent to liquidated damages, termination penalties, or judgment notes", "why_it_matters": "Several agreement provisions may be unenforceable in MN", "source_pages": [280]},
+    {"state": "MN", "affected_family": "general_release", "override_summary": "Release at renewal/transfer does not apply to claims under MN Rule 2860.4400D", "why_it_matters": "MN franchise law claims preserved", "source_pages": [280]},
+    {"state": "NY", "affected_family": "general_release", "override_summary": "NY GBL Article 33 rights preserved despite general release requirements. §687(4) and (5) non-waiver provisions apply", "why_it_matters": "NY franchise law claims cannot be waived", "source_pages": [281]},
+    {"state": "NY", "affected_family": "termination", "override_summary": "Franchisee may terminate agreement on any grounds available by law (replacing 'not applicable' in Item 17)", "why_it_matters": "NY explicitly grants franchisee termination right not present in base agreement", "source_pages": [281]},
+    {"state": "VA", "affected_family": "termination", "override_summary": "Franchisor cannot cancel without reasonable cause per VA Retail Franchising Act §13.1-564", "why_it_matters": "VA provides additional termination protections; unreasonable termination grounds may be unenforceable", "source_pages": [281, 282]},
+    {"state": "WA", "affected_family": "anti_waiver", "override_summary": "WA Franchise Investment Protection Act prevails over any inconsistent FDD or agreement provisions", "why_it_matters": "WA franchise law is the ceiling — agreement cannot provide less protection", "source_pages": [282]}
+  ],
+  "summary_matrix": {
+    "override_families": ["forum_selection", "governing_law", "noncompete", "general_release", "termination", "notice_cure", "damages", "anti_waiver", "renewal", "pricing", "statute_of_limitations"],
+    "CA": ["forum_selection", "governing_law", "noncompete", "general_release", "termination", "pricing"],
+    "IL": ["forum_selection", "governing_law", "anti_waiver"],
+    "MD": ["forum_selection", "general_release", "termination", "statute_of_limitations"],
+    "MI": ["forum_selection", "termination", "renewal"],
+    "MN": ["notice_cure", "damages", "general_release"],
+    "NY": ["general_release", "termination"],
+    "VA": ["termination"],
+    "WA": ["anti_waiver"]
+  }
+}

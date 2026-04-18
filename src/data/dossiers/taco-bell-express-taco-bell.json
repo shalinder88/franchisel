@@ -1,0 +1,114 @@
+{
+  "slug": "taco-bell-express-taco-bell",
+  "name": "Taco Bell Express",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Taco Bell Franchisor, LLC",
+    "parent": null,
+    "headquarters": "1 Glen Bell Way, Irvine, California 92618",
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "KPMG LLP",
+    "audit_opinion": "Unqualified",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-37-637943-2025-taco-bell-express-taco-bell-20260415-104320",
+    "primary_run_folder": "fresh-37-637943-2025-taco-bell-express-taco-bell-20260415-104320",
+    "primary_fdd_id": "637943",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 37
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "No FPR \u2014 zero financial performance disclosure for Express Units. Prospective licensees have no official guidance on revenues, costs, or profitability."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Franchise incentives growing ($34M\u2192$43M). Are Express units specifically receiving incentives? What are the terms?"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Revenue breakdown between Traditional ($663M total) and Express not disclosed. Express represents ~3.6% of system units."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Integrated Expansion Policy content not in FDD body. Referenced as source of possible temporary impact protection."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "7 company-owned units reacquired in Texas in 2024 \u2014 reason for licensee exit not disclosed."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "2025 follow-on securitization planned but not yet executed. May affect fee structures or covenant requirements."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Royalty rate differential: Express 10% vs Traditional 5.5%. Not a contradiction per se but creates significant cost disadvantage for Express format. Not prominently flagged in FDD body."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "System trajectory vs projected growth: Item 20 shows declining system (-27 over 3 years) but projects 8 new units. Projections may be optimistic given 11-20 closures per year."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "No renewal rights vs elaborate successor policy: Item 17 states 'No renewal rights' but describes successor policy in detail. Legally distinct but potentially confusing."
+    }
+  ],
+  "_status": "PARTIAL"
+}

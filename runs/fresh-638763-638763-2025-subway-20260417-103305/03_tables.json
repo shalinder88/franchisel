@@ -1,0 +1,236 @@
+{
+  "tables": [
+    {
+      "id": "item5_initial_franchise_fees",
+      "item": "5",
+      "title": "Initial Franchise Fees",
+      "source_pages": [30, 31, 32],
+      "columns": ["Type of Fee", "Amount", "Description"],
+      "rows": [
+        {"type": "Standard Franchise Fee", "amount": "$15,000", "description": "Standard for all first-time franchisees except veterans, affiliate owners, school lunch, community development, or non-traditional"},
+        {"type": "Reduced Fee for Additional Franchises", "amount": "$7,500", "description": "For qualified existing franchise owners in substantial compliance"},
+        {"type": "Reduced Fee for Affiliate Subway Owners/BDs", "amount": "$7,500", "description": "For qualified Subway franchisees of affiliates"},
+        {"type": "Reduced Fee for US Armed Forces", "amount": "$7,500", "description": "For honorably discharged US Veterans purchasing first franchise"},
+        {"type": "Reduced Fee for Non-Traditional", "amount": "$7,500", "description": "For approved convenience store operators, food service cos, hospitals, universities, etc."},
+        {"type": "Add-on Fee", "amount": "$3,750", "description": "For adding individual owner not already a Subway franchisee"},
+        {"type": "Satellite Franchise Fee", "amount": "$5,000", "description": "Waived if in same facility as Base Restaurant"},
+        {"type": "Short-Term Satellite Fee", "amount": "$1,000", "description": "For 1 year or less operation"},
+        {"type": "Additional Fee for Non-Compliance", "amount": "$7,500", "description": "If existing restaurants not in substantial compliance at opening"}
+      ],
+      "table_notes": [
+        "Note 1: Financing available for low-density markets. Multi-unit operators may qualify for rebate if ahead of development schedule.",
+        "Note 2: If you don't qualify for reduced fee, must pay full $15,000.",
+        "Note 3: If representations not true at opening, full fee due.",
+        "Note 4: Oil company retailers with 50+ units converting existing sandwich shop: franchise fee waived.",
+        "Note 5: Satellite fee may be refunded if lease not obtainable within 90 days.",
+        "Note 6: Short-term satellite renewable for additional 1 year at $1,000.",
+        "Note 7: Satellite to full restaurant conversion may receive credit."
+      ]
+    },
+    {
+      "id": "item5_other_initial_fees",
+      "item": "5",
+      "title": "Other Initial Fees",
+      "source_pages": [33, 34, 35, 36],
+      "columns": ["Type of Fee", "Amount", "Description"],
+      "rows": [
+        {"type": "Extension Fee", "amount": "$1,000", "description": "If you need more than 12 months to open"},
+        {"type": "Location Fees/Deposits/Rent", "amount": "$2,000-$12,000", "description": "Security deposit (2 months rent) plus $50 admin fee plus recording fees"},
+        {"type": "Menu Board Translites", "amount": "$500-$750 traditional; $8,000-$14,000 digital", "description": "Required purchase from franchisor or SFAFT"},
+        {"type": "Training Cancellation Fee", "amount": "$100", "description": "If you fail to attend or cancel with <10 business days notice"},
+        {"type": "Purchase Price of Company-Owned Restaurant", "amount": "Varies ($1-$56,500 in 2024)", "description": "139 restaurants sold in 2024"},
+        {"type": "POS System Hardware", "amount": "$57/month", "description": "HP RTaaS program, base package"},
+        {"type": "Payment Terminal P400", "amount": "$237.70 terminal; $323.30 kit", "description": "Required until Q4 2025; then Ingenico at $10/mo lease"},
+        {"type": "Gift Card Terminal (non-traditional)", "amount": "$320 + $2.50/mo maintenance", "description": "SVS terminal for gift card processing only"}
+      ],
+      "table_notes": [
+        "Extension fee non-refundable. Additional year with no further extensions.",
+        "Development program fee = current franchise fee × number of restaurants."
+      ]
+    },
+    {
+      "id": "item6_other_fees",
+      "item": "6",
+      "title": "Other Fees",
+      "source_pages": [38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Royalty", "amount": "8% of total gross sales", "due_date": "Payable weekly", "remarks": "Note 1 — reduced rates 6.5%-8% for airports/stations; 7.5%-8% for DA holders"},
+        {"type": "Advertising", "amount": "4.5% of total gross sales", "due_date": "Payable weekly", "remarks": "Note 2 — reduced 0.5%-2% for some non-traditional; 2%-3.5% for DA holders"},
+        {"type": "Audit", "amount": "Overdue Amount", "due_date": "After billing", "remarks": "Note 3 — if under-reported >2%"},
+        {"type": "Fees for Unpaid Balances", "amount": "12% interest + 10% late fee per annum", "due_date": "When >1 week late", "remarks": "Plus $50 bank change fee, $20 bounced check, collection costs"},
+        {"type": "Renewal Fee", "amount": "$3,750 standard; $1,250 satellite; $1,000 short-term satellite", "due_date": "When you submit request", "remarks": "25% of then-current franchise fee"},
+        {"type": "Additional Term", "amount": "$187.50/year plus tax", "due_date": "When you submit request", "remarks": "For extending franchise with <10 years remaining; max 10-year extension"},
+        {"type": "Transfer", "amount": "$7,500 standard + $3,000 per satellite", "due_date": "When you submit request", "remarks": "Reduced: $3,200 standard; $200 death/disability; $2,000 entity changes"},
+        {"type": "Location Rent", "amount": "$1,000-$6,000/month estimated", "due_date": "Monthly", "remarks": "Paid to affiliate or landlord; affiliate may profit from sublease spread"},
+        {"type": "Insurance", "amount": "$1,000-$6,000/year", "due_date": "Per policy", "remarks": "Gold Standard Insurance Program required; EFT payments"},
+        {"type": "Indemnification", "amount": "All liability, damages, costs, lawyers' fees", "due_date": "When incurred", "remarks": "Broad indemnification obligation"},
+        {"type": "Noncompete Violation", "amount": "$15,000 per business + 8% of gross sales", "due_date": "Upon competition", "remarks": "3-mile radius, 1 year post-term"},
+        {"type": "Confidentiality Violation", "amount": "Our damages", "due_date": "Upon violation", "remarks": "Trade secrets and Operations Manual"},
+        {"type": "Trademark Violation", "amount": "$250/day", "due_date": "Upon violation", "remarks": "Must stop using marks and return materials"},
+        {"type": "Co-Brand Continuing Fee", "amount": "0%-8% of gross sales", "due_date": "Payable weekly", "remarks": "On third-party co-brand concept sales"},
+        {"type": "Restaurant Technology Fee", "amount": "$75/month", "due_date": "Monthly", "remarks": "Covers SubwayPOS and other tech; subject to annual change"},
+        {"type": "Payment Processing (Adyen)", "amount": "$0.005 auth + $0.005 capture + $0.01 refund + network/interchange", "due_date": "Per transaction", "remarks": "Until Q4 2025"},
+        {"type": "Payment Processing (Global)", "amount": "$0.00-$0.10 acquirer + network/interchange + $10/mo terminal + $10/mo switching", "due_date": "Varies", "remarks": "Starting Q4 2025 via FreedomPay/Fiserv/WorldPay"},
+        {"type": "Sub Club Program", "amount": "1.9% of gross sales per loyalty transaction", "due_date": "Payable weekly", "remarks": "30.9% reimbursement on $2 Rewards and Surprise Rewards"},
+        {"type": "POS Hardware-as-a-Service", "amount": "~$57/month", "due_date": "Monthly", "remarks": "HP RTaaS program"},
+        {"type": "Digital Menu Board HaaS", "amount": "$155/month", "due_date": "Monthly", "remarks": "4 screens, media players, installation, support"},
+        {"type": "Digital Menu Board CapEx", "amount": "$7,150-$8,200 + $39/month", "due_date": "Monthly", "remarks": "For franchisees purchasing outright"},
+        {"type": "Kount Fraud Protection", "amount": "$0.0068/digital transaction", "due_date": "Monthly", "remarks": "Digital transaction fraud protection"},
+        {"type": "Restaurant Design Charge", "amount": "$1,000 + $250/additional revision", "due_date": "Varies", "remarks": "Waived if remodel completed within 6 months (or 12 months for new)"},
+        {"type": "Training", "amount": "Free for 2; $7,500 additional", "due_date": "At registration", "remarks": "Plus all personal expenses"},
+        {"type": "Catering (ezCater)", "amount": "~5% ezOrdering or ~13% Marketplace + ~2.75% CC", "due_date": "Weekly", "remarks": "Optional online catering program"},
+        {"type": "Restaurant Excellence Revisit", "amount": "$140.69/revisit (3% annual increase)", "due_date": "Varies", "remarks": "Charged only for 'Fail' scores; $144.92 from Jan 2026"},
+        {"type": "Legacy Support Fee", "amount": "$200/month", "due_date": "Monthly", "remarks": "For technology non-compliance"},
+        {"type": "ServSafe", "amount": "$50/2 years", "due_date": "At certification", "remarks": "Currently optional; may become required"},
+        {"type": "Optional Restaurant Listing", "amount": "$100/6 months", "due_date": "When listed", "remarks": "Help Sell Program"},
+        {"type": "Dispute Resolution", "amount": "Half arbitration fee; full if withholding money", "due_date": "Upon invoicing", "remarks": "Plus case management fees: $500 probation, $250 extension, $250 interim order"},
+        {"type": "Taxes", "amount": "Varies by state", "due_date": "When fee is due", "remarks": "Sales tax on royalty, advertising, other amounts"}
+      ],
+      "table_notes": [
+        "Note 1: Gross sales includes all sales. Royalty payable weekly due Friday. We may pay up to 1/3 of royalties to Business Developers.",
+        "Note 2: Advertising deposited into SFAFT. Legacy franchise agreements allow 2/3 vote to increase advertising; current agreements fix at 4.5%.",
+        "Note 3: Under-reporting by >2% triggers overdue amount plus all costs plus potential termination.",
+        "Note 14: Restaurant Technology Fee may be subject to annual change. Digital Technology Fee may be imposed in future.",
+        "Note 15: Required to accept Visa, MC, Discover, AmEx. Must use designated integrated payment solution.",
+        "Note 20: Restaurant Excellence Visits by third-party provider. No charge for periodic visits; Revisit Fee only for Fail scores."
+      ]
+    },
+    {
+      "id": "item7_estimated_initial_investment",
+      "item": "7",
+      "title": "Estimated Initial Investment (Single Restaurant)",
+      "source_pages": [53, 54, 55, 56, 57, 58],
+      "columns": ["Type of Expenditure", "Lower Amount", "Mid Amount", "Higher Amount"],
+      "rows": [
+        {"type": "Initial Franchise Fee", "low": 15000, "mid": 15000, "high": 15000},
+        {"type": "Real Property", "low": 3000, "mid": 6000, "high": 12000},
+        {"type": "Leasehold Improvements", "low": 75000, "mid": 150000, "high": 250000},
+        {"type": "Leasehold (Non-Traditional)", "low": 42000, "mid": 46000, "high": 80000},
+        {"type": "Equipment, Furniture, Décor", "low": 110000, "mid": 160000, "high": 210000},
+        {"type": "Optional Security System", "low": 2500, "mid": 3000, "high": 4000},
+        {"type": "Freight Charges", "low": 8000, "mid": 11000, "high": 15000},
+        {"type": "Freight (Non-Traditional)", "low": 5000, "mid": 8000, "high": 11000},
+        {"type": "Exterior Signage", "low": 5000, "mid": 6000, "high": 12000},
+        {"type": "Signage (Non-Traditional)", "low": 2000, "mid": 5000, "high": 10000},
+        {"type": "Opening Inventory", "low": 7500, "mid": 10000, "high": 15000},
+        {"type": "Insurance", "low": 1500, "mid": 3500, "high": 7500},
+        {"type": "Supplies & Smallwares", "low": 5000, "mid": 7500, "high": 9000},
+        {"type": "Training Expenses", "low": 4500, "mid": 5500, "high": 6500},
+        {"type": "Legal and Accounting", "low": 1000, "mid": 3500, "high": 6000},
+        {"type": "Grand Opening Advertising", "low": 2500, "mid": 3500, "high": 4500},
+        {"type": "Miscellaneous", "low": 8000, "mid": 16000, "high": 20000},
+        {"type": "Additional Funds (3 months)", "low": 15000, "mid": 30000, "high": 45000}
+      ],
+      "totals": {
+        "traditional": {"low": 263000, "mid": 430000, "high": 630000},
+        "non_traditional": {"low": 227000, "mid": 325000, "high": 458000}
+      },
+      "development_program_totals": {
+        "development_fee_range": {"low": 22500, "mid": 52500, "high": 82500},
+        "traditional": {"low": 246123, "mid": 431427, "high": 604245},
+        "non_traditional": {"low": 206635, "mid": 319577, "high": 471245}
+      },
+      "table_notes": [
+        "Typical restaurant ~1,375 sq ft (range 300-2,000 sq ft). Monthly rent $1,000-$6,000.",
+        "Additional Funds: 3-month estimate only; does not include royalty, advertising, food costs, or owner's draw.",
+        "Fresh Forward 2.0 décor required for all new restaurants and relocations; remodel costs for existing locations may be higher.",
+        "Grease trap may add $10,000-$15,000 to leasehold improvements.",
+        "Impact fees may add $5,000-$25,000 depending on municipality.",
+        "Nevada requires licensed architect ($1,500-$3,000 additional)."
+      ]
+    },
+    {
+      "id": "item20_table1_systemwide",
+      "item": "20",
+      "title": "Table 1 — Systemwide Outlet Summary (2022-2024)",
+      "source_pages": [95],
+      "columns": ["Outlet Type", "Year", "Outlets at Start", "Outlets at End", "Net Change"],
+      "rows": [
+        {"type": "US Franchised", "year": 2022, "start": 21147, "end": 20576, "net_change": -571},
+        {"type": "US Franchised", "year": 2023, "start": 20576, "end": 20133, "net_change": -443},
+        {"type": "US Franchised", "year": 2024, "start": 20133, "end": 19502, "net_change": -631},
+        {"type": "US Company Owned", "year": 2022, "start": 0, "end": 0, "net_change": 0},
+        {"type": "US Company Owned", "year": 2023, "start": 0, "end": 0, "net_change": 0},
+        {"type": "US Company Owned", "year": 2024, "start": 0, "end": 0, "net_change": 0}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item20_table3_franchised_status",
+      "item": "20",
+      "title": "Table 3 — Status of Franchised Outlets (2022-2024)",
+      "source_pages": [100, 101, 102, 103, 104],
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Ops Other", "End"],
+      "rows": [
+        {"year": 2022, "start": 21147, "opened": 529, "terminations": 8, "non_renewals": 18, "reacquired": 98, "ceased_ops": 995, "end": 20576},
+        {"year": 2023, "start": 20576, "opened": 455, "terminations": 3, "non_renewals": 19, "reacquired": 90, "ceased_ops": 733, "end": 20133},
+        {"year": 2024, "start": 20133, "opened": 435, "terminations": 4, "non_renewals": 30, "reacquired": 139, "ceased_ops": 881, "end": 19502}
+      ],
+      "footer_totals": {
+        "terminations_total_2024": 4,
+        "non_renewals_total_2024": 30,
+        "reacquired_total_2024": 139,
+        "ceased_operations_total_2024": 881
+      },
+      "table_notes": [
+        "Column 4 (Opened) includes restaurants reopened after temporary closure. For 2024, reopens account for approximately 52% of outlets in this column.",
+        "Columns 5 and 8 include locations that may have been closed temporarily as of fiscal year end. Many will reopen in subsequent year.",
+        "Column 7 (Reacquired) represents franchises reacquired and immediately (usually within 1-2 days) resold to another franchisee. Also appears in Table 4 Columns 5 and 7."
+      ]
+    },
+    {
+      "id": "item20_table4_company_owned_status",
+      "item": "20",
+      "title": "Table 4 — Status of Company-Owned Outlets (2022-2024)",
+      "source_pages": [105, 106, 107, 108, 109],
+      "columns": ["Year", "Start", "Opened", "Reacquired from Franchisee", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        {"year": 2022, "start": 0, "opened": 0, "reacquired": 82, "closed": 0, "sold": 82, "end": 0},
+        {"year": 2023, "start": 0, "opened": 0, "reacquired": 79, "closed": 0, "sold": 79, "end": 0},
+        {"year": 2024, "start": 0, "opened": 0, "reacquired": 139, "closed": 0, "sold": 139, "end": 0}
+      ],
+      "footer_totals": {
+        "reacquired_total_2024": 139,
+        "sold_total_2024": 139
+      },
+      "table_notes": [
+        "Numbers in Column 4 reflect restaurants reacquired and closed temporarily, then reopened in conjunction with resale.",
+        "Numbers in Column 6 include locations that may have been closed temporarily.",
+        "Franchisor does not currently intend to open company-operated restaurants but reserves the right."
+      ]
+    },
+    {
+      "id": "item20_table5_projected_openings",
+      "item": "20",
+      "title": "Table 5 — Projected Openings as of December 31, 2024",
+      "source_pages": [110, 111],
+      "columns": ["State", "FA Signed Not Open", "Projected New Franchise (Next FY)", "Projected New Company-Owned"],
+      "totals": {
+        "fa_signed_not_open": 120,
+        "projected_new_franchise": 150,
+        "projected_new_company": 0
+      },
+      "table_notes": []
+    },
+    {
+      "id": "item10_financing_summary",
+      "item": "10",
+      "title": "Summary of Financing Offered",
+      "source_pages": [68, 69, 70],
+      "columns": ["Item Financed", "Source", "Down Payment", "Amount Financed", "Term", "Interest Rate", "Monthly Payment", "Prepay Penalty", "Security Required", "Liability on Default"],
+      "rows": [
+        {"item": "Leased Space", "source": "Designated Affiliate", "down_payment": "$2,000-$12,000", "amount": "Varies", "term": "Varies", "rate": "N/A", "monthly": "$1,000-$6,000/mo", "prepay": "N/A", "security": "Deposit (depends on master lease)", "default": "Lose right to enforce Sublease"},
+        {"item": "Loans for Subway restaurant", "source": "Us (DAL)", "down_payment": "Negotiable", "amount": "Negotiable", "term": "Negotiable", "rate": "1% loan guarantee fee", "monthly": "Varies", "prepay": "None", "security": "Varies", "default": "Entire balance due + interest + costs + Sublease termination + FA default"},
+        {"item": "Equipment Leasing", "source": "Huntington Technology Finance", "down_payment": "Varies", "amount": "Varies", "term": "3 years (2-year renewals)", "rate": "N/A", "monthly": "Varies", "prepay": "None; may purchase at FMV", "security": "Title retained by lender", "default": "All payments due + repossession + costs + FA default"},
+        {"item": "RTaaS POS Hardware", "source": "HP", "down_payment": "$57/mo", "amount": "None", "term": "N/A", "rate": "N/A", "monthly": "$57/mo", "prepay": "N/A", "security": "HP retains title", "default": "Liquidated damages + repossession + costs + FA default"}
+      ],
+      "table_notes": [
+        "All equity holders must guarantee financing obligations.",
+        "General release required as condition of loans.",
+        "SBA Franchise Registry expedited processing available.",
+        "Franchisor may change or eliminate loan programs without notice."
+      ]
+    }
+  ]
+}

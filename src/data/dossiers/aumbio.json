@@ -1,0 +1,106 @@
+{
+  "slug": "aumbio",
+  "name": "Aumbio",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": null,
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-19",
+    "franchise_fee_headline": "$50,000",
+    "investment_range_headline": "$159,320 to $267,620",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 50000,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 159320,
+    "investment_high_raw": 267620
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Muhammad Zubairy, CPA PC",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": "December 31",
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-27-637933-2025-aumbio-20260415-092225",
+    "primary_run_folder": "fresh-27-637933-2025-aumbio-20260415-092225",
+    "primary_fdd_id": "637933",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "C",
+    "phase": "first200",
+    "slot": 27
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Item 20 Table 3 arithmetic discrepancy: 2024 shows 1 franchised outlet at start, all activity columns 0, but 0 at end. 1-0=1, not 0."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 20 Table 5 year label says 'Current Fiscal Year (2024)' but FDD issued March 2025; likely refers to 2025 projections."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 20 Table 1 typographical error: Total row prints '2014' instead of '2024'."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Renewal fee amount not disclosed in Item 6 fee table but found in FA Section 2.2(iv) as $5,000 (subject to CPI)."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Specific per-unit pricing for THERA WELLNESS and Oberon devices not separately itemized in FF&E line."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 20 Table 1 shows 0 franchised outlets at start and end of 2024. Table 3 shows 1 at start and 0 at end. These are directly contradictory."
+    }
+  ],
+  "_status": "PARTIAL"
+}

@@ -1,0 +1,124 @@
+{
+  "slug": "hyatt-place-hotels",
+  "name": "Hyatt Place",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Hyatt Place Franchising, L.L.C.",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-26",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$17,918,455 to $52,134,018",
+    "royalty_headline": "5%",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": "5%",
+    "ad_fund_raw": null,
+    "investment_low_raw": 17918455,
+    "investment_high_raw": 52134018
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-19-637925-2025-hyatt-place-hotels-20260415-052748",
+    "primary_run_folder": "fresh-19-637925-2025-hyatt-place-hotels-20260415-052748",
+    "primary_fdd_id": "637925",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 19
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Territory protection expires 3 years after opening. After that, zero encroachment protection for an $18M-$52M investment."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Successor franchise terms explicitly may be 'materially different' including fees. No cap on how different."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "System Standards (3,614 pages) can be modified unilaterally. No limit on frequency or cost of required Technology System upgrades."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "$110M goodwill impairment in 2024 on management/franchising reporting unit. Signals potential concerns about segment value."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "$1,245M real estate gains inflate 2024 net income. Stripping gains and impairments, underlying operating income is substantially lower."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "System Services Cost allocation methodology at franchisor discretion. No independent audit required."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "F&B Operations Plan requires franchisor approval, including restaurant concepts and F&B operators."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Competing Brand Owner definition is broad (4+ hotels, 60% of Brand Hotel ADR), potentially limiting management company choices."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 18 and Item 19 share the same TOC page number (77). In the PDF, Item 18 is a single sentence followed immediately by Item 19 on the same page. Not material."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Loyalty program economics: Item 8 states franchisees received $68.88M net benefit from WOH, but Item 6 shows 4% assessment is significant ongoing cost. Net benefit likely varies dramatically by hotel."
+    }
+  ],
+  "_status": "PUBLISHED"
+}

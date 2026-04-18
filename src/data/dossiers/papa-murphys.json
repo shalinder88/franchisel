@@ -1,0 +1,126 @@
+{
+  "slug": "papa-murphys",
+  "name": "Papa Murphy's International LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Papa Murphy's International LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "March 28, 2025, as amended October 10, 2025",
+    "franchise_fee_headline": "$25,000",
+    "investment_range_headline": null,
+    "royalty_headline": 0.05,
+    "ad_fund_headline": null,
+    "term_headline": 10,
+    "renewal_headline": 5,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": 1079,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 25000,
+    "royalty_raw": 0.05,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": 1079,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 10,
+    "renewal": 5
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "PricewaterhouseCoopers LLP",
+    "audit_opinion": "unqualified",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-32-637938-2025-papa-murphys-20260415-104222",
+    "primary_run_folder": "fresh-32-637938-2025-papa-murphys-20260415-104222",
+    "primary_fdd_id": "637938",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 32
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Maryland special risk: franchisor financial condition calls into question ability to provide services \u2014 validated by FY2024 net loss of $(12.6M) and $44.3M impairment"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "System contraction: 17.4% decline in franchised units over 3 years (1,212\u21921,001). 96 terminations in 2024 \u2014 is this stabilizing or accelerating?"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Brand Marketing Fund deficit of $(7.5M) \u2014 who bears the shortfall and what happens if it grows?"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Gag clause on former franchisees limits due diligence ability"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 19 provides only Net Sales \u2014 no cost data, no EBITDA. Cannot model unit-level profitability from FDD alone."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Exhibit D Franchise Agreement not clause-walked \u2014 guaranty scope, liquidated damages detail, cross-default triggers not confirmed from primary source"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Long-term intercompany loan of $708M from common-control entity \u2014 nature, terms, and repayment obligations unclear from FDD text alone"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Table 1 vs Table 3 franchised outlet count discrepancy (1,212 vs 1,210 for start of 2022)"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Dan Rudolph (VP Operations) personal bankruptcy via JND Tropics LLC (Tropical Smoothie)"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Table 1 vs Table 3 franchised start count 2022: 1,212 vs 1,210"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Company-owned count end 2024: Table 4 shows 44, Item 1 states 43"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Brand Marketing Fund deficit carryover labeled as from 2022 but should be from FY2023"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

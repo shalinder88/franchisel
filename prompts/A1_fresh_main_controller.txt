@@ -1,0 +1,420 @@
+You are running the FDD extraction pipeline for a single franchise disclosure document.
+
+PDF path: {pdf_path}
+Output directory: {run_dir}
+Filing ID: {filing_id}
+Brand: {brand}
+
+## Your task
+
+BOOTSTRAP RULE
+- Before Step 1, read `00_bootstrap.json` and `00_item_map.json` if they exist in the run directory.
+- Trust `actual_page_count`, `render_mode`, `body_start_page`, and `toc_map` from those files over any earlier guess or chat statement.
+- If `toc_map` exists but `item_map_status` is incomplete, continue anyway using `toc_map` as the primary item anchor map.
+- Do not stop just because some body item-start pages were not deterministically verified.
+- Treat missing verified body item starts as a navigation limitation, not as a reason to abort extraction.
+
+Execute Steps 1 through 7 of the serial extraction pipeline, in order, one at a time.
+Do NOT skip any step. Do NOT combine steps. Do NOT parallelize.
+Do NOT use subagents. You are the single reader.
+
+### Step 0 — Document bootstrap
+Read the cover page, "How to Use" page, special risks, state notices, TOC, exhibit list.
+Build the extraction plan: document_identity, toc_map, exhibit_map, risk_flags_early.
+
+### Step 1 — Source map
+Read every page. Classify every page. Write `01_source_map.md` to the run directory.
+
+### Step 2 — Reader report
+Read Items 1-23 IN ORDER. No skipping. No rushing to Item 19.
+Write 7 narrative passes (A through G) covering:
+  A: Executive snapshot (8-15 bullets)
+  B: Front matter, formats, fees, investment (Items 1-7)
+  C: Supplier control, operations, training, tech (Items 8-11)
+  D: Territory, channels, encroachment (Items 12-16)
+  E: Contract burden, legal mechanics (Items 17)
+  F: Items 18-23, exhibits, unresolveds
+  G: Fully surfaced vs. partial — what is known, what is missing, what needs follow-up
+Write `02_reader_report.md` to the run directory.
+
+### Step 3 — Tables
+Extract every material table from Items 5, 6, 7, 8, 19, 20, 21, 22, 23.
+Each table is a first-class object with columns, rows, table_notes, provenance.
+Write `03_tables.json` to the run directory.
+
+### Step 4 — Exhibits
+Catalog every exhibit with letter, name, category, priority, page range.
+Write `04_exhibits.json` to the run directory.
+
+### Step 5 — Canonical
+Build the normalized canonical JSON using ONLY evidence from steps 1-4.
+Every field must have source_section, source_pages, confidence.
+No field without supporting evidence. No invented economics.
+Write `05_canonical.json` to the run directory.
+
+### Step 6 — Coverage audit
+Audit the extraction against all 23 items + exhibits.
+Identify omissions, partial coverage, missing tables, missing exhibit follow-through.
+Write `06_coverage_audit.md` to the run directory.
+
+### Step 7 — Retry tasks
+Based on the coverage audit, list targeted retries for material gaps.
+Mark each as EXECUTE or SKIP with rationale.
+Execute any retries marked EXECUTE — read the specific PDF sections, write retry output files.
+Write `07_retry_tasks.md` to the run directory.
+Write each executed retry as `retry_R*.json` to the run directory.
+
+After retries, update the canonical and write:
+  `09_final_canonical.json`
+  `10_scorecard.md`
+
+Then write `08_final_report.md` — this is a FULL diligence report, NOT a concise summary.
+It must contain ALL of the following sections, with substantive narrative in each:
+
+  A. Executive snapshot (8-15 numbered bullets covering system size, entity structure,
+     ownership history, investment range, fee burden, Item 19 highlights, bottom-quartile
+     risk, financial health, growth trajectory, territory, renewal, disputes, special risks)
+  B. Fee stack, entry structure, initial investment
+     - Front matter and entity structure
+     - Fee stack (initial fees, ongoing fees, event-driven fees — every fee from Item 6)
+     - Initial investment (all tables from Item 7 with component breakdown)
+  C. Supplier control, operating control, technology burden, reporting burden
+     - Supplier restrictions, approved supplier process, supply chain fees
+     - Training program detail (hours, duration, costs)
+     - Technology stack and costs
+     - Marketing fund spending breakdown and audit status
+  D. Territory, competition, channels, encroachment
+     - Protected territory definition and carve-outs
+     - Channel restrictions and franchisor rights
+  E. Contract burden and legal mechanics
+     - Term and renewal (include "materially different" risk if present)
+     - Transfer provisions
+     - Termination and death/disability
+     - Noncompete restrictions (during term and post-term, with state overrides)
+     - Dispute resolution (venue, governing law, with state overrides)
+     - Litigation history
+  F. Item 19 — Financial performance representations
+     - Every chart/table with population counts, averages, medians, ranges
+     - Quartile distribution
+     - Cost build-up and EBITDA if disclosed
+     - Critical caveats (sample bias, timing, exclusions)
+  G. Item 20 — Outlet data
+     - Multi-year trajectory table
+     - Franchised and company-owned activity tables
+     - Projected openings
+     - Confidentiality clause flag
+  H. Item 21 — Financial statements
+     - Auditor and opinion type
+     - Balance sheet, income statement, cash flow (key line items)
+     - Key financial observations (leverage, distributions, related party, asset composition)
+  I. State addenda summary (if state addenda exist in exhibits)
+     - List states with addenda
+     - Summarize material overrides per state
+     - If state addenda are not yet extracted, note this explicitly
+  J. Unresolveds
+     - Every open question, pending issue, or unresolved item found during extraction
+     - Each with severity (high/medium/low) and source
+  K. Contradictions
+     - Any contradictions between FDD sections, between text and tables, or timing mismatches
+     - Each with items involved and resolution status
+  L. Final coverage note
+     - What is fully surfaced vs. not directly surfaced
+     - What was recovered via retries
+
+The prior run's final report was ~400 lines. Do NOT write a concise metrics table.
+Write a full narrative diligence report that a prospective franchisee could read standalone.
+
+Then write enrichment passes:
+  `11_canonical_enriched.json` — enrichment v1 (item19 chart detail, item20 yearly activity, exhibit structure, item21 structural facts, item1 structural facts, item6 fee attributes)
+  `12_canonical_enriched_v2.json` — enrichment v2 (item21 financial structure detail, item21 statement detail, item6 fee detail)
+
+Finally write `14_run_summary.json` with:
+  run_id, fdd_id, brand, franchisor_legal_name, state_filed,
+  issuance_date, extraction_date, pdf_filename, pdf_pages,
+  pipeline_version: "automation_v1",
+  run_metrics, key_brand_metrics, files_created, files_count, notes
+
+## Rules
+- One PDF only. Do not read other PDFs.
+- Do not invent data. Preserve uncertainty, contradictions, unresolveds.
+- Tables are first-class objects. Notes under tables are mandatory.
+- PII hard block on all public-facing output.
+- Read the WHOLE PDF slowly. Every page must be visited and classified.
+- Items 8-18 are NOT filler. Kill switches hide in Items 11, 12, 14, 15, 16.
+
+## Mandatory depth rules
+
+These rules are non-negotiable and apply to every step above. They do not change
+the file set, the step sequencing, or the output filenames. They raise the floor
+on how deep each step must go when a family is directly surfaced in the PDF.
+
+Definition — "directly surfaced":
+A family (item, sub-item, table, note family, exhibit, roster, endorsement,
+addendum) is directly surfaced if it physically appears in the PDF body,
+exhibits, or addenda — regardless of whether it was easy or hard to read.
+
+### Rule 1 — No "light" coverage for directly surfaced high-value families
+A1 may NOT mark any directly surfaced item, table, note family, or exhibit as
+"light", "summary-only", "labeled", or "headline-only" coverage.
+For every directly surfaced high-value family, A1 must either:
+  (a) extract it to a materially useful depth (operative burdens, clause walk,
+      full table rows, note structure), OR
+  (b) mark it explicitly partial, with:
+        - exact reason the family was not fully extracted
+        - exact source page range where the family lives
+        - what specifically would be required to complete it
+"Partial without reason" and "partial without page range" are not allowed.
+
+### Rule 2 — `02_reader_report.md` mandatory subsections
+In addition to narrative passes A–G, `02_reader_report.md` MUST include
+dedicated subsections, with operative burden summaries (not labels), for each
+of the following families when directly surfaced:
+  - Item 2 leadership / officers / directors roster — every named person with
+    role and tenure as surfaced
+  - Items 9, 10, 11, 12, 13, 14, 15, 16 — ONE subsection per item, each with an
+    operative burden summary (what the franchisee must do, what the franchisor
+    controls, what the franchisee is forbidden from doing)
+  - Item 18 public figures / endorsements / limitations — every named figure,
+    compensation if disclosed, restriction scope
+  - Item 20 — EVERY directly surfaced table, not just headline totals
+  - Item 21 — auditor opinion + statement families + every directly surfaced
+    note family (walked, not just listed)
+  - Key exhibits — franchise agreement, lease, new-term, growth, loan docs,
+    franchisee list, state addenda — each with an operative burden summary,
+    NOT just an exhibit label
+
+### Rule 3 — `03_tables.json` Item 20 completeness
+Every directly surfaced Item 20 table must be extracted as a first-class table
+object. A1 may NOT stop at Table 1 or at a single "sample" table when Tables
+2, 3, 4, 5, or more are directly surfaced. "Tables 2–5 not extracted because
+Table 1 covered the headline" is NOT acceptable.
+
+### Rule 4 — `04_exhibits.json` required fields
+For every material exhibit (franchise agreement, lease, new-term addendum,
+growth / development / area-development addendum, loan docs, franchisee list,
+state addenda, and any other exhibit with operative burden), the exhibit
+object MUST include these fields in addition to the existing catalog fields:
+  - clause_walk_status          ("complete" | "partial" | "labeled_only")
+  - material_clause_count        integer — number of operative clauses walked
+  - operative_terms_extracted    array of operative term names actually pulled
+  - why_not_complete             string — required whenever clause_walk_status
+                                 is not "complete"; must cite reason and pages
+"labeled_only" is permitted ONLY with a populated why_not_complete and a
+matching retry task in `07_retry_tasks.md`.
+
+### Rule 5 — `05_canonical.json` structured promotions
+The canonical JSON must promote structured facts (not prose) for:
+  - Item 2 leadership roster        — array of {name, role, tenure, source_pages}
+  - Items 9–16 operative burdens     — one structured burden object per item
+  - Item 18 public figure restrictions — array of {figure, scope, source_pages}
+  - Item 20 — every directly surfaced table as a structured object
+  - Item 21 note-family structure    — array of {note_family, walked, source_pages}
+  - Key exhibit burdens              — structured burden object per key exhibit
+Every promoted structure keeps source_section, source_pages, confidence.
+
+### Rule 6 — `06_coverage_audit.md` covered-complete gating
+A family may NOT be marked covered-complete if ANY of the following are true:
+  - only headline totals were extracted for a family with sub-tables
+  - a directly surfaced Item 20 table was skipped
+  - a directly surfaced Item 21 note family was not walked
+  - a material exhibit was only labeled and not clause-walked
+  - an Item 2 / 9–16 / 18 family was surfaced but left thin
+In any of these cases the family must be marked partial with the exact reason.
+
+### Rule 7 — `07_retry_tasks.md` mandatory retries
+A1 must emit a targeted retry task (EXECUTE by default) for every directly
+surfaced instance of:
+  - Item 20 table omitted from `03_tables.json`
+  - Item 21 note family omitted from the walk
+  - Key exhibit with clause_walk_status != "complete"
+  - Item 2 leadership roster left thin
+  - Items 9–16 operative burden left thin
+  - Item 18 public figure / endorsement family left thin
+Retries may be marked SKIP only with an explicit, family-specific rationale —
+never as a blanket skip.
+
+### Rule 8 — Operating rule: exhaustiveness over compactness
+Do NOT optimize for compactness. When in doubt, prefer exhaustive directly
+supported structure over compressed summary. Length is not a defect. A thin
+write-up of a directly surfaced family IS a defect.
+
+### Rule 9 — Item 6 multi-page fee table
+Read the Item 6 fee table through ALL continuation pages until the Item 7
+heading begins. Do NOT stop after the first two pages of Item 6 if fee rows
+or fee notes continue. Every fee row and every fee-table footnote on every
+continuation page must be captured before moving to Item 7.
+
+### Rule 10 — Item 20 / Item 21 outlet-count contradiction check
+Always reconcile Item 20 outlet counts against the Item 21 Notes restaurant
+table (or equivalent outlet table in the financial-statement notes) when both
+are surfaced. If counts differ, create a structured contradiction entry with:
+  - item_20_count: integer from Item 20
+  - item_21_count: integer from Item 21 notes
+  - source_pages_item_20: array of page numbers
+  - source_pages_item_21: array of page numbers
+  - explanation: short description of the discrepancy
+Add this entry to the contradictions section of the canonical and the final
+report (Section K — Contradictions).
+
+### Rule 11 — Item 20 Tables 3/4/5 footer totals
+Even if per-state rows are deferred, extract the footer totals and table
+notes for Item 20 Table 3, Table 4, and Table 5 into structured fields.
+Capture at minimum:
+  - transfers_total
+  - terminations_total
+  - non_renewals_total
+  - reacquired_total (when surfaced)
+  - sold_total (when surfaced)
+  - ceased_operations_total (when surfaced)
+  - projected_openings_total (when surfaced)
+  - table_notes: array of verbatim table footnotes and exclusions
+These fields must appear in `03_tables.json`, `05_canonical.json`, and
+`09_final_canonical.json` for each table where the footer is surfaced.
+
+### Rule 12 — Item 20 gag clause flag
+Create a structured boolean field `gag_clause_flag` in the Item 20 section
+of the canonical output. Set it true if the FDD states that current or former
+franchisees signed provisions restricting their ability to speak openly about
+their experience with the franchise. Set it false if no such provision is
+disclosed. Supporting evidence metadata must include:
+  - source_pages: array of page numbers
+  - quote_fragment: short verbatim reference (≤30 words) from the FDD
+This field must appear in `05_canonical.json`, `09_final_canonical.json`,
+and in the final report Section G — Item 20.
+
+### Rule 13 — Canonical decomposition
+
+`05_canonical.json` and `09_final_canonical.json` must have a SEPARATE
+top-level key for EVERY FDD item that is directly surfaced (Items 1–23).
+Do NOT lump multiple items under a single key. Specifically:
+
+  - Item 6: use separate keys for `item6_royalty`, `item6_rent`,
+    `item6_advertising`, and `item6_technology_fees` (not one merged
+    `item6_fees` key).
+  - Item 17: use separate keys for `item17_renewal`, `item17_termination`,
+    `item17_transfer`, `item17_noncompete`, `item17_dispute_resolution`,
+    and `item17_death_disability` (not one merged `item17_contract` key).
+  - Items 9–16: each item gets its own top-level key
+    (`item9_obligations`, `item10_financing`, `item11_training`,
+    `item12_territory`, `item13_trademarks`, `item14_patents`,
+    `item15_participation`, `item16_product_restrictions`).
+
+The canonical MUST also include these families as top-level keys when
+the source material supports them:
+  - `unresolveds`  — array extracted from 06_coverage_audit.md / reader
+    report. Every unresolved needs id, description, severity, source.
+  - `contradictions` — array of any identified discrepancies.
+  - `special_risks` — array from the Special Risks page.
+  - `item22_contracts_listed` — array of exhibit letters referenced.
+
+Target: at least 40 top-level keys for any FDD of 200+ pages.
+Fewer than 25 top-level keys is a defect.
+
+### Rule 14 — Enriched v2 completeness
+
+`12_canonical_enriched_v2.json` must be a COMPLETE, self-contained document.
+It must contain ALL fields from `09_final_canonical.json` PLUS all enrichment
+layers. It must NOT use a `_base` reference to another file. A downstream
+consumer must be able to read v2 alone without needing any other file.
+
+`11_canonical_enriched.json` (v1) must likewise be self-contained, not a
+delta. It must contain all canonical fields plus its own enrichment layers.
+
+### OUTPUT DEPTH FLOOR — REQUIRED
+
+These rules set a minimum depth for key output files. They do not change
+the file set, the step sequencing, or the output filenames. They prevent
+compressing or stubbing outputs when the extracted evidence supports deeper
+structure.
+
+1. `08_final_report.md`
+   - Must be a full standalone diligence narrative, not a compressed summary.
+   - Target minimum: 500 lines or 35 KB unless the FDD is unusually small.
+   - Write every major section with real prose, not just bullets.
+   - For each major section, write 3–5 paragraphs when materially supported.
+   - Rebuild important inline tables in narrative form where useful (for example
+     Item 7 investment components, key fee stacks from Item 6, Item 19 tier
+     summaries, Item 20 totals).
+   - Do not optimize for compactness.
+   - Section minimums (non-negotiable for FDDs of 200+ pages):
+     - Section B (Fees/Investment): min 80 lines — rebuild fee tables inline,
+       discuss each fee component as prose paragraphs
+     - Section C (Supplier/Operations): min 60 lines — training detail,
+       technology stack, supplier approval process
+     - Section E (Contract): min 50 lines — clause-by-clause termination
+       triggers, transfer conditions, noncompete scope
+     - Section G (Item 20): min 50 lines — trajectory narrative, transfer
+       trends, state-level highlights
+     - Section H (Item 21): min 70 lines — full financial statement walk
+       as narrative paragraphs, not just tables
+     - Section I (State Addenda): min 40 lines — each state with
+       override detail and why-it-matters
+
+2. `11_canonical_enriched.json`
+   - Must not be a copy of `09_final_canonical.json`.
+   - Must add real enrichment layers such as:
+     - item19_chart_detail
+     - item20_yearly_activity
+     - exhibit_structure
+     - state_addenda_overrides if present
+     - other derived item-level structures surfaced from A1
+
+3. `12_canonical_enriched_v2.json`
+   - Must not be identical to either `09_final_canonical.json` or
+     `11_canonical_enriched.json`.
+   - Must add deeper per-item structured families, using item-scoped keys
+     where supported.
+   - Prefer item-scoped structure such as:
+     - item1
+     - item3_litigation
+     - item6_fee_detail
+     - item7_total_investment
+     - item8_supplier_restrictions
+     - item9_obligations
+     - item10_financing
+     - item11_training
+     - item12_territory
+     - item17_termination
+     - item17_transfer
+     - item19_chart_detail
+     - item20_yearly_activity
+     - item21_structural_facts
+     - item21_financial_structure_detail
+     - item21_note_families
+     - contract_burden_depth
+   - Do not use only generic family names if item-scoped structure is supported
+     by the run.
+
+4. `05_canonical.json` and `09_final_canonical.json`
+   - Promote materially supported item-scoped facts aggressively.
+   - Do not leave known facts trapped only in the reader report or final report.
+   - If a fact is extracted and supported, it should usually exist in canonical
+     form.
+   - After writing `02_reader_report.md`, re-read it top to bottom. For every
+     structured fact (numbers, dates, names, fees, terms, counts, percentages),
+     verify it exists in the canonical JSON. If not, add it.
+   - Target: canonical should be at least 20 KB for a 200+ page FDD, at least
+     30 KB for a 300+ page FDD. Below these thresholds is a depth defect.
+   - The full Item 2 leadership roster must appear as a structured array in
+     canonical — every officer/director, not just the first 5–7.
+
+5. `RT_depth_item21_notes.json`
+   - Must not be a pointer or stub file.
+   - Must contain actual note families, page ranges, and key facts recovered.
+
+6. `RT_depth_thin_items.json`
+   - Use structured arrays per item:
+     - obligations
+     - restrictions
+     - rights
+     - triggers
+   - Do not write only narrative prose if structured extraction is supported.
+
+7. If `08_final_report.md`, `11_canonical_enriched.json`, or
+   `12_canonical_enriched_v2.json` are materially thinner than the extracted
+   evidence supports, mark that as an A1 self-failure in `06_coverage_audit.md`
+   and generate a retry task in `07_retry_tasks.md`.
+
+8. Same facts, thinner writing, stub enrichment files, or pointer RT files
+   are not acceptable when the source evidence has already been read and
+   supports deeper structure.

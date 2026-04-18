@@ -1,0 +1,95 @@
+{
+  "slug": "great-clips",
+  "name": "Great Clips, Inc.",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Great Clips, Inc.",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-30",
+    "franchise_fee_headline": null,
+    "investment_range_headline": null,
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": 10,
+    "renewal_headline": 10,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": 10,
+    "renewal": 10
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-131-638054-2025-great-clips-20260415-161606",
+    "primary_run_folder": "fresh-131-638054-2025-great-clips-20260415-161606",
+    "primary_fdd_id": "638054",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 131
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Auditor identity not visible in text layer of financial statements. Firm name likely in image/letterhead on pages 168-169."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Ad Fund accumulated surplus/deficit position not disclosed. 2024 expenses exceeded revenue by 1.8% (101.8% expense ratio). Whether fund has accumulated surplus from prior years is unknown."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Non-reporting salon bias in Item 19 Section II: 1,972 of 4,147 salons (47.6%) excluded from expense/cash flow analysis. Non-reporting salons skewed lower (1,138 below median vs 834 above). Actual impa"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Confidentiality clauses signed with current/former franchisees during last 3 fiscal years as part of dispute settlements. Some franchisees restricted from speaking openly about their experience, limit"
+    }
+  ],
+  "_status": "PARTIAL"
+}

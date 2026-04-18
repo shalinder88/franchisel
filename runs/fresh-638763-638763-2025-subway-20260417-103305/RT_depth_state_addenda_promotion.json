@@ -1,0 +1,36 @@
+{
+  "depth_pass": "state_addenda",
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "North Dakota", "New York", "Rhode Island", "Virginia", "Washington"],
+  "overrides": [
+    {"state": "California", "affected_family": "noncompete", "override_summary": "Post-term covenant not to compete is void under Business and Professions Code Section 16600", "why_it_matters": "CA franchisees can operate a competing business immediately after franchise ends — noncompete provision is unenforceable", "source_pages": [920]},
+    {"state": "California", "affected_family": "liquidated_damages", "override_summary": "Liquidated damages clause may be unenforceable under Civil Code Section 1671", "why_it_matters": "The $15,000 + 8% noncompete violation penalty may not be enforceable in CA", "source_pages": [920]},
+    {"state": "California", "affected_family": "general_release", "override_summary": "General release must not waive rights under Franchise Investment Law (Corp Code §31512) or Franchise Relations Act (B&P Code §20010)", "why_it_matters": "Renewal/transfer release cannot extinguish CA franchise law claims", "source_pages": [920]},
+    {"state": "California", "affected_family": "forum_selection", "override_summary": "Connecticut arbitration venue may not be enforceable under CA law. CA Franchise Investment Law and Franchise Relations Act apply regardless of choice of law or venue.", "why_it_matters": "CA franchisees may be able to arbitrate/litigate in California rather than Connecticut", "source_pages": [920]},
+    {"state": "California", "affected_family": "governing_law", "override_summary": "Florida choice of law provision may not be enforceable for CA franchisees", "why_it_matters": "CA law may govern rather than FL law for CA-based disputes", "source_pages": [920]},
+    {"state": "California", "affected_family": "anti_waiver", "override_summary": "No statement or acknowledgment shall waive claims under applicable state franchise law or disclaim reliance on franchisor statements", "why_it_matters": "Protects franchisees from signing away fraud-in-the-inducement claims", "source_pages": [920, 921]},
+    {"state": "Hawaii", "affected_family": "anti_waiver", "override_summary": "No statement or acknowledgment shall waive claims under applicable state franchise law or disclaim reliance", "why_it_matters": "Standard state franchise law protection", "source_pages": [925]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Section 4 of IFDA provides jurisdiction in Illinois for IL franchisees", "why_it_matters": "IL franchisees may have right to litigate in IL courts", "source_pages": [926]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Arbitration may be conducted in Connecticut OR Maryland", "why_it_matters": "MD franchisees have choice of venue including their home state", "source_pages": [930]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General release shall not apply to liability under Maryland Franchise Registration and Disclosure Law. Excludes alleged breach under Franchise Law.", "why_it_matters": "MD franchisees retain right to sue under state franchise law despite signing release", "source_pages": [930]},
+    {"state": "Maryland", "affected_family": "damages", "override_summary": "Any limitation on time to bring claims shall not reduce the 3-year statute of limitations under MD Franchise Law", "why_it_matters": "Franchisees have full 3 years to bring claims regardless of FA limitations", "source_pages": [930]},
+    {"state": "Maryland", "affected_family": "anti_waiver", "override_summary": "Sections 25.A-25.F of FA deleted; no waiver of MD franchise law rights", "why_it_matters": "Comprehensive protection of franchisee rights under state law", "source_pages": [930]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days notice of termination (with 60 days to cure) and 180 days notice for nonrenewal required under Minn. Stat. Sec. 80C.14", "why_it_matters": "Substantially more cure time than FA's 10/30 day periods; 180-day nonrenewal notice vs. FA's 12-month renewal notice", "source_pages": [935]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Release cannot relieve liability under Minnesota Statutes Chapter 80C", "why_it_matters": "MN franchise law claims survive any general release", "source_pages": [935]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Right to submit matters to jurisdiction of MN courts preserved", "why_it_matters": "MN franchisees retain court access in their home state", "source_pages": [935]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Post-term covenants not to compete may be subject to limitations under ND law", "why_it_matters": "Noncompete may be unenforceable or limited in ND", "source_pages": [937]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Connecticut venue and Florida choice of law may be unenforceable", "why_it_matters": "ND franchisees may be able to litigate locally under ND law", "source_pages": [937]},
+    {"state": "Virginia", "affected_family": "general", "override_summary": "Virginia Retail Franchising Act provisions apply", "why_it_matters": "Additional franchisee protections under state law", "source_pages": [945]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "Release or waiver provisions may be void under RCW 19.100", "why_it_matters": "WA franchise law protections cannot be waived", "source_pages": [947]}
+  ],
+  "summary_table": {
+    "override_families": {
+      "noncompete_limited": ["California", "North Dakota"],
+      "forum_selection_limited": ["California", "Illinois", "Maryland", "Minnesota", "North Dakota"],
+      "general_release_restricted": ["California", "Maryland", "Minnesota", "Washington"],
+      "governing_law_limited": ["California", "North Dakota"],
+      "termination_protection": ["Minnesota"],
+      "liquidated_damages_limited": ["California"],
+      "anti_waiver": ["California", "Hawaii", "Maryland", "Minnesota"]
+    }
+  }
+}

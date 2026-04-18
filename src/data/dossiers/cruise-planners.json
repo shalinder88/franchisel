@@ -1,0 +1,785 @@
+{
+  "slug": "cruise-planners",
+  "name": "Cruise Planners",
+  "schema_version": 1,
+  "current_snapshot": {
+    "legal_name": "CP Franchising, LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": null,
+    "franchise_fee_headline": "$695 to $10,995",
+    "investment_range_headline": null,
+    "royalty_headline": "",
+    "ad_fund_headline": "",
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "initial_fees_by_format": {
+      "franchise_fee_range": {
+        "low": 695,
+        "high": 10995
+      },
+      "franchise_fee_tiers": [
+        {
+          "amount": 10995,
+          "category": "New Travel Advisor",
+          "criteria": "No previous experience"
+        },
+        {
+          "amount": 6995,
+          "category": "SETI",
+          "criteria": "Currently/recently with Approved Travel Entity"
+        },
+        {
+          "amount": 3995,
+          "category": "RET",
+          "criteria": "Direct retail travel sales within 18 months"
+        },
+        {
+          "amount": 695,
+          "category": "Seasoned Travel Advisor",
+          "criteria": "IATAN/CLIA + $100K DCR or $5K commissions"
+        }
+      ],
+      "vetfran_discount": 4000,
+      "refundable": false,
+      "eo_insurance_initial": {
+        "amount": 180,
+        "note": "Per additional person; 1st person included in franchise fee"
+      },
+      "annual_access_initial": {
+        "amount": 95,
+        "note": "Per additional person; 1st person waived"
+      },
+      "training_fee": {
+        "amount": 695,
+        "note": "Per additional person attending Initial Training"
+      },
+      "source_section": "Item 5",
+      "source_pages": [
+        12,
+        13
+      ],
+      "confidence": "high"
+    },
+    "investment_by_format": {},
+    "recurring_fees_raw": {},
+    "tech_fee_detail": {
+      "royalty_structure": {
+        "type": "sliding_scale_percentage",
+        "base": "Gross Commissionable Fares",
+        "tiers": [
+          {
+            "condition": "Commission rate >= 6%",
+            "royalty": "3% of GCF"
+          },
+          {
+            "condition": "Commission rate < 6%",
+            "royalty": "1.5% of GCF"
+          },
+          {
+            "condition": "No itemized breakdown from supplier",
+            "royalty": "3% of total gross amount"
+          },
+          {
+            "condition": "Non-commissionable markup",
+            "royalty": "20%-30% of markup amount"
+          }
+        ],
+        "incentive": "May be reduced to 0% via sales volume incentive programs",
+        "collection": "Deducted from commissions before remittance"
+      },
+      "commission_remittance_schedule": {
+        "mid_month": "15th of month for commissions meeting all requirements between 1st-12th",
+        "end_month": "1st of next month for commissions meeting all requirements between 13th-last day",
+        "requirements": [
+          "Reservation recorded in CRM",
+          "Booking departed",
+          "Commission received from Travel Supplier"
+        ],
+        "forfeiture": "Commissions held 6+ months without CRM recording are forfeited"
+      },
+      "annual_maintenance_detail": {
+        "new_ret_seti": {
+          "fiscal_years_1_3_and_renewals": {
+            "under_15k_dcr": 500,
+            "over_15k_dcr": 0
+          }
+        },
+        "seasoned": {
+          "fiscal_years_1_2": {
+            "under_75k_dcr": 2000,
+            "75k_to_100k_dcr": 1000,
+            "over_100k_dcr": 0
+          },
+          "fiscal_year_3_and_renewals": {
+            "under_15k_dcr": 500,
+            "over_15k_dcr": 0
+          }
+        }
+      }
+    }
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null,
+    "high_low": null,
+    "presentation_basis": null,
+    "raw_keys": [
+      "provided",
+      "no_fpr_statement",
+      "substantiation_availability",
+      "source_section",
+      "source_pages",
+      "confidence"
+    ]
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "terminations": null,
+    "non_renewals": null,
+    "transfers": null,
+    "net_change": null,
+    "raw": {
+      "systemwide_summary": {
+        "2022": {
+          "franchised_start": 2655,
+          "franchised_end": 2594,
+          "company_start": 1,
+          "company_end": 1
+        },
+        "2023": {
+          "franchised_start": 2594,
+          "franchised_end": 2796,
+          "company_start": 1,
+          "company_end": 1
+        },
+        "2024": {
+          "franchised_start": 2796,
+          "franchised_end": 3008,
+          "company_start": 1,
+          "company_end": 1
+        }
+      },
+      "transfers_total": {
+        "2022": 3,
+        "2023": 3,
+        "2024": 1
+      },
+      "franchised_status_totals": {
+        "2022": {
+          "start": 2655,
+          "opened": 316,
+          "terminations": 221,
+          "non_renewals": 89,
+          "reacquired": 0,
+          "ceased_ops": 67,
+          "end": 2594
+        },
+        "2023": {
+          "start": 2594,
+          "opened": 458,
+          "terminations": 145,
+          "non_renewals": 67,
+          "reacquired": 0,
+          "ceased_ops": 44,
+          "end": 2796
+        },
+        "2024": {
+          "start": 2796,
+          "opened": 432,
+          "terminations": 128,
+          "non_renewals": 42,
+          "reacquired": 0,
+          "ceased_ops": 50,
+          "end": 3008
+        }
+      },
+      "company_owned_totals": {
+        "2022": {
+          "start": 1,
+          "opened": 0,
+          "reacquired": 0,
+          "closed": 0,
+          "sold": 0,
+          "end": 1
+        },
+        "2023": {
+          "start": 1,
+          "opened": 0,
+          "reacquired": 0,
+          "closed": 0,
+          "sold": 0,
+          "end": 1
+        },
+        "2024": {
+          "start": 1,
+          "opened": 0,
+          "reacquired": 0,
+          "closed": 0,
+          "sold": 0,
+          "end": 1
+        }
+      },
+      "projected_openings": {
+        "signed_not_opened": 17,
+        "projected_franchised_2025": 310,
+        "projected_company_2025": 0
+      },
+      "ceased_operations_note": "Includes only franchisees who moved their businesses to other states",
+      "gag_clause_flag": false,
+      "gag_clause_evidence": {
+        "source_pages": [
+          41
+        ],
+        "quote_fragment": "no current or former franchisees have signed confidentiality clauses that restrict them from discussing with you their experiences"
+      },
+      "franchisee_organization": false,
+      "source_section": "Item 20",
+      "source_pages": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "confidence": "high"
+    }
+  },
+  "contract_burden": {
+    "from_canonical": null,
+    "from_depth_pass_v2": null,
+    "from_rt_depth": {
+      "depth_pass": "2_contract_burdens",
+      "brand": "Cruise Planners",
+      "source_pages": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "clauses": [
+        {
+          "family": "grant_and_term",
+          "section": "1.1-1.7",
+          "obligation": "Non-exclusive right to operate CP Business from agreed location. 3-year term from Commencement of Operations (1st day of 2nd full month after signing), then week-to-week. Renewable for additional 3-year periods. Must sign then-current FA which may be materially different.",
+          "trigger": "Execution of FA",
+          "duration": "3 years + renewals",
+          "source_pages": [
+            48
+          ]
+        },
+        {
+          "family": "no_territory",
+          "section": "1.2",
+          "obligation": "Franchisee acknowledges no territory rights of any kind. Franchisor may grant franchises to others irrespective of proximity.",
+          "trigger": "Always in effect",
+          "duration": "Perpetual during term",
+          "source_pages": [
+            48
+          ]
+        },
+        {
+          "family": "training",
+          "section": "2.1-2.2",
+          "obligation": "At least 1 owner must complete 6-day in-person mandatory Initial Training within 2 training cycles of effective date. Franchisor may require additional/refresher training at $695/person.",
+          "trigger": "Signing FA",
+          "duration": "Within 2 training cycles",
+          "money": "$695 re-take; $249 virtual; $695 additional",
+          "source_pages": [
+            49,
+            50
+          ]
+        },
+        {
+          "family": "commencement",
+          "section": "2.3",
+          "obligation": "Commencement deemed 1st day of 2nd full month after effective date. Must begin operations timely or face termination.",
+          "trigger": "Effective date + 2 months",
+          "source_pages": [
+            50
+          ]
+        },
+        {
+          "family": "system_standards",
+          "section": "3.1",
+          "obligation": "Must operate per System Standards in operating manuals. Standards may change at franchisor discretion. Must check for updates daily. No material change to obligations without written amendment.",
+          "trigger": "Always in effect",
+          "source_pages": [
+            50
+          ]
+        },
+        {
+          "family": "compliance",
+          "section": "3.2-3.5",
+          "obligation": "Comply with all laws (labor, FTC Act, Patriot Act, seller of travel, data privacy). Comply with all Travel Supplier policies. Operate competently, professionally, ethically.",
+          "trigger": "Always in effect",
+          "source_pages": [
+            50,
+            51
+          ]
+        },
+        {
+          "family": "duty_to_service",
+          "section": "3.7",
+          "obligation": "Must ensure communications monitored when away >7 consecutive days. If franchisee fails to service bookings, franchisor may take over and charge $50/booking servicing fee.",
+          "trigger": "Absence >7 days",
+          "source_pages": [
+            51
+          ]
+        },
+        {
+          "family": "technology",
+          "section": "3.8",
+          "obligation": "Must have operating phone, compatible computer, MS Outlook, Office, high-speed internet, email. Must obtain approved domain name before Commencement.",
+          "money": "$75 + $20/year for domain changes",
+          "source_pages": [
+            51,
+            52
+          ]
+        },
+        {
+          "family": "commission_collection",
+          "section": "3.9",
+          "obligation": "Franchisor has exclusive right to collect commissions from Travel Suppliers. Franchisee has no right to collect directly. Must immediately remit any commissions received directly.",
+          "trigger": "Always in effect",
+          "source_pages": [
+            52
+          ]
+        },
+        {
+          "family": "reservations",
+          "section": "3.10",
+          "obligation": "Must promptly, honestly, accurately record all bookings in franchisor's CRM. Must use franchisor's phone/IATA number. Cannot accept direct electronic/cash/credit card payments without consent. Cannot consolidate DCR with other franchisees.",
+          "trigger": "Each booking",
+          "source_pages": [
+            52
+          ]
+        },
+        {
+          "family": "remittance",
+          "section": "3.11",
+          "obligation": "Must establish and maintain dedicated bank account. Commissions remitted on 15th (for 1st-12th) and 1st of next month (for 13th-last day). Commissions forfeited if not recorded in CRM within 6 months of departure.",
+          "trigger": "Commission cycle",
+          "source_pages": [
+            52,
+            53
+          ]
+        },
+        {
+          "family": "books_and_records",
+          "section": "3.12",
+          "obligation": "Permit franchisor access to books and records for audit with 72 hours advance written notice.",
+          "trigger": "72hr notice",
+          "source_pages": [
+            53
+          ]
+        },
+        {
+          "family": "approved_products",
+          "section": "4.1-4.3",
+          "obligation": "Must sell only approved Travel Products and Services. Must sell only designated travel insurance from approved insurers. Must follow specifications and standards.",
+          "trigger": "Always in effect",
+          "source_pages": [
+            53
+          ]
+        },
+        {
+          "family": "insurance",
+          "section": "5.1",
+          "obligation": "Must purchase E&O insurance from franchisor in required amounts for all owners, agents, Associates.",
+          "money": "$180/person/year currently",
+          "source_pages": [
+            53,
+            54
+          ]
+        },
+        {
+          "family": "confidentiality",
+          "section": "6.1-6.3",
+          "obligation": "Never divulge Confidential Information during or after term. Limited to CP Business use only. Must exercise highest degree of diligence. May require owners/Associates to sign Confidentiality/NDA/Non-Competition agreement.",
+          "trigger": "During and after term",
+          "duration": "Perpetual",
+          "source_pages": [
+            54
+          ]
+        },
+        {
+          "family": "noncompete",
+          "section": "7.1-7.9",
+          "obligation": "During term: sell Travel Products only through CP. Post-term (1 year): no Competing Business at/within 50 miles of place of business, any CP Business, or HQ. No solicitation of CP customers, Travel Suppliers, or potential franchisees. Exception: up to 2% public company ownership.",
+          "trigger": "Termination/transfer",
+          "duration": "1 year post-term",
+          "money": "Must pay costs/attorneys fees for enforcement",
+          "source_pages": [
+            55,
+            56
+          ]
+        },
+        {
+          "family": "royalty",
+          "section": "8.2-8.3",
+          "obligation": "Pay royalties on all sales: 3% on commission rates >=6%; 1.5% on <6%; 3% if no itemized breakdown; 20-30% on non-commissionable markup. Deducted from commissions. Franchisor may change calculation method at any time without prior written notice.",
+          "trigger": "Each commission cycle",
+          "source_pages": [
+            56
+          ]
+        },
+        {
+          "family": "annual_maintenance",
+          "section": "8.6",
+          "obligation": "Pay annual maintenance fee based on experience level and DCR. New/RET/SETI: $500 if DCR<$15K. Seasoned FY1-2: up to $2,000 if DCR<$75K.",
+          "trigger": "Anniversary",
+          "source_pages": [
+            57
+          ]
+        },
+        {
+          "family": "admin_service_fee",
+          "section": "8.7",
+          "obligation": "Pay monthly administrative service fee ($80 currently) for support services. Franchisor may record telephone calls for quality control.",
+          "trigger": "Monthly",
+          "money": "$80/month",
+          "source_pages": [
+            58
+          ]
+        },
+        {
+          "family": "commission_forfeiture",
+          "section": "8.10",
+          "obligation": "Forfeit all commissions if you violate noncompete or abandon franchise. If franchisee abandons or fails to service accounts, franchisor takes over bookings and may charge $50/booking servicing fee. Absence >14 days in 12 months without notice = deemed abandonment.",
+          "trigger": "Violation/abandonment",
+          "source_pages": [
+            58
+          ]
+        },
+        {
+          "family": "fee_increases",
+          "section": "8.12",
+          "obligation": "Franchisor may increase fees no more than once per 3-calendar-year period, limited to 15% per increase.",
+          "source_pages": [
+            58
+          ]
+        },
+        {
+          "family": "trademarks",
+          "section": "9.1-9.4",
+          "obligation": "Use marks exclusively as directed. Cannot use CP as legal entity name. Post-term: can never use 'cruise' or 'planner' in travel business. Grant franchisor irrevocable license to use name/likeness/image/voice for marketing without compensation.",
+          "trigger": "During and after term",
+          "source_pages": [
+            58,
+            59
+          ]
+        },
+        {
+          "family": "indemnification",
+          "section": "10",
+          "obligation": "Indemnify and hold harmless franchisor, affiliates, officers, directors, owners, employees, agents from all claims arising from franchisee's ownership/operation, including credit card chargebacks. Survives termination.",
+          "trigger": "Any claim",
+          "duration": "Perpetual",
+          "source_pages": [
+            59,
+            60
+          ]
+        },
+        {
+          "family": "termination",
+          "section": "11.1-11.4",
+          "obligation": "19 grounds for termination. Non-curable: misrepresentation, felony, dishonest conduct, unauthorized disclosure, fail $15K DCR, bankruptcy, cease ops 6+ months, false books, 3+ failures in 12 months. Curable (7-30 days): fail to pay, fail to train, unauthorized transfer.",
+          "trigger": "Default event",
+          "source_pages": [
+            60,
+            61
+          ]
+        },
+        {
+          "family": "post_termination",
+          "section": "11.3",
+          "obligation": "Complete pending bookings or franchisor takes over (no compensation). Return all materials within 5 working days. Cease all mark usage immediately. Cancel registrations within 15 days. Franchisor appointed attorney-in-fact.",
+          "trigger": "Termination",
+          "source_pages": [
+            61
+          ]
+        },
+        {
+          "family": "transfer",
+          "section": "12.1-12.5",
+          "obligation": "Franchisor may freely transfer without notice. Franchisee transfer requires 30-day notice, approval, transfer fee ($695-$7,500), transferee signs current FA and completes training. Max 2 owners. Must remain 1 year after adding new owner.",
+          "money": "$695-$7,500 transfer fee",
+          "source_pages": [
+            62,
+            63
+          ]
+        },
+        {
+          "family": "death_disability",
+          "section": "12.5",
+          "obligation": "60-day window to transfer. Franchisor exclusively controls bookings and retains commissions during period. 90 days without transfer initiation = franchise reverts to franchisor including pending commissions.",
+          "trigger": "Death or disability",
+          "duration": "60-90 days",
+          "source_pages": [
+            63
+          ]
+        },
+        {
+          "family": "dispute_resolution",
+          "section": "14.5",
+          "obligation": "Florida law governs. Venue: Broward County FL courts. Mandatory mediation (JAMS) before litigation (except injunctive relief/fee collection). Prevailing party gets attorneys' fees.",
+          "source_pages": [
+            64
+          ]
+        },
+        {
+          "family": "jury_waiver",
+          "section": "14.7",
+          "obligation": "All parties waive jury trial for all claims.",
+          "source_pages": [
+            65
+          ]
+        },
+        {
+          "family": "class_action_waiver",
+          "section": "14.6",
+          "obligation": "All proceedings on individual basis only. No consolidation with other proceedings.",
+          "source_pages": [
+            64
+          ]
+        },
+        {
+          "family": "punitive_damages_waiver",
+          "section": "14.8",
+          "obligation": "Franchisor not liable for punitive, special, consequential, exemplary damages or lost profits.",
+          "source_pages": [
+            65
+          ]
+        },
+        {
+          "family": "personal_guarantee",
+          "section": "14.2",
+          "obligation": "All individuals regardless of capacity individually, jointly and severally guarantee performance and payment under agreement.",
+          "source_pages": [
+            64
+          ]
+        },
+        {
+          "family": "joinder",
+          "section": "14.1",
+          "obligation": "All beneficial and legal owners must sign Joinder. Each jointly and severally liable. Bound by all terms including confidentiality and noncompete.",
+          "source_pages": [
+            63,
+            66
+          ]
+        }
+      ]
+    },
+    "termination_with_cause": null,
+    "termination_by_franchisee": null,
+    "transfer": null,
+    "noncompete_in_term": null,
+    "noncompete_post_term": null
+  },
+  "territory_reality": {},
+  "state_overrides": {
+    "states_with_addenda": [
+      "California",
+      "Hawaii",
+      "Illinois",
+      "Maryland",
+      "Minnesota",
+      "New York",
+      "North Dakota",
+      "Ohio",
+      "Rhode Island",
+      "Washington",
+      "Indiana",
+      "Michigan",
+      "South Dakota",
+      "Virginia",
+      "Wisconsin"
+    ],
+    "override_count": 18,
+    "anti_waiver_states": 12
+  },
+  "financial_strength": {
+    "statement_detail": {
+      "income_statement_2024": {
+        "commission_revenue": 28422136,
+        "franchise_fee_revenue": 8704645,
+        "volume_commission_revenue": 13173057,
+        "marketing_revenue": 11167018,
+        "other_revenue": 1314759,
+        "total_revenue": 62781555,
+        "cost_of_revenue": 11263600,
+        "gross_profit": 51517955,
+        "operating_admin_expenses": 23198416,
+        "depreciation": 382728,
+        "total_operating_expenses": 23581144,
+        "operating_income": 27936811,
+        "interest_income_net": 1913547,
+        "other_income": 66679,
+        "total_other_income": 1980226,
+        "net_income": 29917037
+      },
+      "balance_sheet_2024": {
+        "assets": {
+          "cash": 35064739,
+          "accounts_receivable_net": 20726911,
+          "allowance_credit_losses": 150000,
+          "other_receivable": 663331,
+          "other_current_assets": 2231183,
+          "investments_htm": 16178408,
+          "total_current_assets": 74864572,
+          "furniture_equipment_net": 675892,
+          "operating_rou_asset": 1611233,
+          "other_noncurrent": 52847,
+          "due_from_related_party": 191993,
+          "total_assets": 77396537
+        },
+        "liabilities": {
+          "accounts_payable": 20911269,
+          "accrued_expenses": 6841532,
+          "current_deferred_revenue": 5727761,
+          "short_term_lease_liability": 453970,
+          "total_current_liabilities": 33934532,
+          "noncurrent_deferred_revenue": 2279507,
+          "long_term_lease_liability": 1346870,
+          "total_long_term_liabilities": 3626377,
+          "total_liabilities": 37560909
+        },
+        "equity": {
+          "members_equity": 39835628
+        }
+      },
+      "key_ratios": {
+        "current_ratio": 2.21,
+        "debt_to_equity": 0,
+        "gross_margin": 0.821,
+        "net_margin": 0.477,
+        "return_on_equity": 0.751,
+        "revenue_per_outlet": 20862,
+        "payout_ratio": 0.792
+      }
+    },
+    "bankruptcy_flag": null,
+    "litigation_summary": {
+      "pending": [],
+      "raw": {
+        "pending": [],
+        "concluded": [
+          {
+            "case": "CP Franchising v. Allison Elliott",
+            "court": "U.S. District Court S.D. Florida",
+            "case_no": "19-cv-62911",
+            "filed": "2019-11-22",
+            "claims": "Trademark infringement, breach of contract, defamation",
+            "outcome": "Default judgment Nov 2021, $56,740 damages, injunction against defamatory statements",
+            "source_pages": [
+              11,
+              12
+            ]
+          },
+          {
+            "case": "Maryland Securities Commissioner",
+            "case_no": "2011-0223",
+            "filed": "2011-04-21",
+            "claims": "Violation of registration/disclosure provisions of Maryland Franchise Law",
+            "outcome": "Consent order Nov 2011: cease violations, complete registration, offer rescission",
+            "source_pages": [
+              12
+            ]
+          }
+        ],
+        "source_section": "Items 3-4",
+        "confidence": "high"
+      }
+    }
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort definition with franchisor.",
+    "Confirm current auditor and most recent opinion date."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run": "cruise-planners-2025",
+    "harvest_runs": [],
+    "filing_year": 2025,
+    "key_exhibits": [],
+    "issuance_date_pages": null,
+    "primary_layers_present": {
+      "v2": true,
+      "v1": true,
+      "final": true,
+      "raw": true
+    },
+    "rt_depth_files": [
+      "RT_depth_key_exhibits",
+      "RT_depth_contract_burdens",
+      "RT_depth_financial_notes",
+      "RT_depth_item20_tables",
+      "RT_depth_promotion_audit",
+      "RT_depth_state_addenda_promotion",
+      "RT_depth_thin_items",
+      "RT_depth_item21_notes"
+    ]
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "No Item 19 FPR"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Materially different renewal agreement risk"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "$15K DCR minimum performance threshold"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Death/disability commission retention by franchisor"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "ERC receivable ($963K) outstanding"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Live Planner patent pending"
+    }
+  ]
+}

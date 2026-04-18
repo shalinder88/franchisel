@@ -1,0 +1,102 @@
+{
+  "slug": "gong-cha-unit-franchise-program",
+  "name": "Gong cha",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Gong cha USA Franchising, LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-29",
+    "franchise_fee_headline": "$34,500",
+    "investment_range_headline": null,
+    "royalty_headline": "6%",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": 34500,
+    "royalty_raw": "6%",
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "Firm in Melville, New York",
+    "audit_opinion": "Unqualified (clean)",
+    "fiscal_year_end": "December 31",
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-125-638048-2025-gong-cha-unit-franchise-program-20260415-133501",
+    "primary_run_folder": "fresh-125-638048-2025-gong-cha-unit-franchise-program-20260415-133501",
+    "primary_fdd_id": "638048",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 125
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Tariff impact on Chinese-sourced products is uncertain; franchisor plans to pass through tariff costs"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "DRSAM acquisition cost not disclosed in financial statements or FDD body"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Revenue concentration risk: 3 franchisees account for 45% of 2024 revenue; 2 franchisees account for 84% of A/R"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Systemwide growth decelerated sharply from +40 (2022) to +5 (2024); organic growth rate unclear due to master franchisee buyouts and development right terminations"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Auditor firm name not captured from text layer (likely in image/signature block)"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Unaudited stub opening equity ($1,015,488) differs from audited year-end 2024 ($1,015,485) by $3"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

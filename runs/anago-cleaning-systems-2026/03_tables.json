@@ -1,0 +1,341 @@
+{
+  "extraction_date": "2026-04-09",
+  "brand": "Anago Cleaning Systems",
+  "tables": [
+    {
+      "table_id": "item5_initial_fees",
+      "source_item": "Item 5",
+      "source_pages": [13],
+      "title": "Initial Fees",
+      "columns": ["Fee", "Amount", "Notes"],
+      "rows": [
+        {"fee": "Initial Fee / Subfranchise Fee", "amount": "$98,000", "notes": "Fully earned, non-refundable upon signing"},
+        {"fee": "VetFran Discount", "amount": "15% off initial fee", "notes": "Plus no royalty for first 6 months; requires 51%+ veteran ownership"}
+      ],
+      "table_notes": ["Deposit Agreement (Exhibit C) governs refund if franchise not offered within 30 days"]
+    },
+    {
+      "table_id": "item6_other_fees",
+      "source_item": "Item 6",
+      "source_pages": [14, 15, 16, 17, 18, 19, 20, 21],
+      "title": "Other Fees",
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"type": "Royalty Fee", "amount": "5% of Gross Revenues", "due_date": "Monthly, 20th", "remarks": "Escalating minimums: months 1-12=$0; months 13-24=$1,500/mo; then +$1,500/year. Successor agreement min = avg of last year's royalty. Gross Revenues defined broadly — all amounts from client services."},
+        {"type": "Training Fees", "amount": "$500/day", "due_date": "As incurred", "remarks": "Only if unsatisfactory audit or failed training requires refresher/retraining"},
+        {"type": "Administrative Support Fee", "amount": "2% of Gross Revenues", "due_date": "Monthly, 20th", "remarks": "Continued advisory, franchise promotion, lead referral, NBDS support phone/email"},
+        {"type": "Billing and Collection Fees", "amount": "Greater of $1,000 or 1% of Gross Revenues + $25/unit franchise statement", "due_date": "Monthly, 20th", "remarks": "Only after Event of Default or at franchisee request"},
+        {"type": "Deficiencies", "amount": "Reimbursement of costs", "due_date": "Immediately upon invoice", "remarks": "If franchisor performs franchisee obligations"},
+        {"type": "NBDS Support/Access Fees", "amount": "Currently $550/month", "due_date": "Monthly upon invoice", "remarks": "Proprietary software; subject to change; not refundable"},
+        {"type": "Website Maintenance Fee", "amount": "Currently $1,500/month", "due_date": "Monthly, 20th", "remarks": "Only if franchisor assumes website responsibility"},
+        {"type": "Technology Fee", "amount": "Up to 1.5% of Gross Revenues", "due_date": "Monthly, 20th", "remarks": "Not currently assessed; for hardware/software development/license"},
+        {"type": "Transfer Fee", "amount": "$10,000", "due_date": "At time of transfer", "remarks": "In lieu of Initial Fee; no fee for spouse/child transfers"},
+        {"type": "Replacement of Manuals", "amount": "$500", "due_date": "As incurred", "remarks": "Initial set free; replacement if lost"},
+        {"type": "Indemnification", "amount": "Varies", "due_date": "Immediately upon invoice", "remarks": "Broad coverage: operations, Unit Franchise Agreement nonperformance, negligence, law violations, breach, joint employer claims"},
+        {"type": "Enforcement Costs", "amount": "Varies", "due_date": "Immediately upon invoice", "remarks": "Prevailing party gets attorneys fees; includes pre-litigation enforcement costs"},
+        {"type": "Miscellaneous Merchandise", "amount": "Varies", "due_date": "Immediately upon invoice", "remarks": "Optional branded items; cannot create own branded items without consent"},
+        {"type": "Sale of Unit Franchise Fee", "amount": "$400 per Unit Franchise sold", "due_date": "Upon sale", "remarks": "Per-unit fee"},
+        {"type": "Client Bid Schedule Deficiency Fee", "amount": "$150 per missed bid", "due_date": "January each year (or Jan+Jul)", "remarks": "If below minimum monthly Client Bids; minimums vary by Area population"},
+        {"type": "Banking Fees", "amount": "4.75% per CC transaction", "due_date": "Monthly", "remarks": "Optional; franchisor CC processing; may exceed actual bank charges"},
+        {"type": "Client Marketing Spend", "amount": "Minimum $50,000/year", "due_date": "Immediately upon invoice", "remarks": "Shortfall paid to franchisor; prorated for partial years"},
+        {"type": "Advertising Fund", "amount": "Up to 2.2% of Gross Revenues", "due_date": "When invoiced", "remarks": "Not currently collected; Fund not audited; not asset of AFI"},
+        {"type": "Supplier Testing Fee", "amount": "Reasonable costs of inspection + actual testing cost", "due_date": "Immediately upon invoice", "remarks": "If proposing unapproved supplier"}
+      ],
+      "table_notes": [
+        "Note 1: Unless otherwise indicated, all fees are nonrefundable and are imposed and collected by us.",
+        "Note 2: All fees payable to us or our designee.",
+        "Note 3: We may accept from your Anago Escrow Account any amounts we are owed under the Subfranchise Rights Agreement.",
+        "Note 4: Currently $550/month for NBDS access support services; subject to change.",
+        "Note 5: Client Bid minimums by population: ≤1M pop = 15/20/25 bids per month (yr1/yr2/yr3+); 1-3M pop = 20/30/40; ≥3M pop = 30/45/60."
+      ]
+    },
+    {
+      "table_id": "item7_initial_investment",
+      "source_item": "Item 7",
+      "source_pages": [21, 22, 23, 24],
+      "title": "Your Estimated Initial Investment",
+      "columns": ["Type of Expense", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"expense": "Initial Fee / Subfranchise Fee", "low": 98000, "high": 98000, "to_whom": "Us"},
+        {"expense": "Legal and Accounting", "low": 5000, "high": 15000, "to_whom": "Attorneys and Accountants"},
+        {"expense": "Marketing and Advertising", "low": 50000, "high": 100000, "to_whom": "Suppliers"},
+        {"expense": "Travel Expenses for Training", "low": 2000, "high": 3000, "to_whom": "Third Parties"},
+        {"expense": "Lease/Utility Deposits and Rent", "low": 10000, "high": 20000, "to_whom": "Third Parties"},
+        {"expense": "Equipment, Fixtures, Computer Systems", "low": 15000, "high": 25000, "to_whom": "Us and Suppliers"},
+        {"expense": "Office Supplies", "low": 1000, "high": 2000, "to_whom": "Third Parties"},
+        {"expense": "Vehicle Operating Expenses", "low": 3000, "high": 6000, "to_whom": "Third Parties"},
+        {"expense": "Insurance", "low": 5000, "high": 10000, "to_whom": "Third Parties"},
+        {"expense": "Miscellaneous Start-up Costs", "low": 10000, "high": 20000, "to_whom": "Third Parties"},
+        {"expense": "Additional Funds (6 months)", "low": 20000, "high": 40000, "to_whom": "Third Parties"}
+      ],
+      "total_low": 219000,
+      "total_high": 339000,
+      "table_notes": [
+        "Note 1: All payments non-refundable; no direct/indirect financing offered.",
+        "Note 2: See Item 5 for Initial Fee description.",
+        "Note 3: Includes FDD development and annual audited financials. Requires LLC/Corp entity with 4-character name.",
+        "Note 4: Includes website, PPC, telemarketing, social media, sales personnel salary for first 6 months.",
+        "Note 5: Transportation, lodging, meals for training. Varies with distance and accommodations.",
+        "Note 6: Office space 1,000-1,500 sq ft recommended. Assumes 1 month deposit + 6 months rent.",
+        "Note 7: Includes NBDS software license ($550/mo). Computer costs $15K-$25K. Copier, phone, furniture, signage.",
+        "Note 8: Only franchisor-approved supplies (brochures, flyers, presentation materials, etc.).",
+        "Note 9: Per vehicle for sales/brand manager. Varies with territory size.",
+        "Note 10: 6-month premium for GL, umbrella, crime, casualty, workers comp. Must be on Anago National Insurance program.",
+        "Note 11: Licenses, permits, professional fees, utility deposits. Initial 6 months.",
+        "Note 12: 6-month working capital for wages, taxes, insurance, rent, other operating expenses. Does not include revenue."
+      ]
+    },
+    {
+      "table_id": "item11_training",
+      "source_item": "Item 11",
+      "source_pages": [36, 37],
+      "title": "Training Program",
+      "columns": ["Subject", "Hours Classroom", "Hours On-the-Job", "Location"],
+      "rows": [
+        {"subject": "Anago Unit Franchise Sales", "classroom": 5, "otj": 15, "location": "Franchisor offices or agreed location"},
+        {"subject": "Anago Contract Sales & Operations", "classroom": 2, "otj": 24, "location": "Franchisor offices or agreed location"},
+        {"subject": "NBDS System (CleanSuite, CleanSource)", "classroom": 2, "otj": 32, "location": "Franchisor offices or agreed location"},
+        {"subject": "Management & Marketing", "classroom": 12, "otj": 12, "location": "Franchisor offices or agreed location"},
+        {"subject": "Anago Administration & Telemarketing Overview", "classroom": 2, "otj": 30, "location": "Franchisor offices or agreed location"}
+      ],
+      "total_classroom_hours": 23,
+      "total_otj_hours": 113,
+      "table_notes": [
+        "Note 1: Time schedules may vary by instructor availability.",
+        "Note 2: Hours may change based on franchisee's prior experience in janitorial franchise business."
+      ]
+    },
+    {
+      "table_id": "item19_table1",
+      "source_item": "Item 19",
+      "source_pages": [55, 56],
+      "title": "Average Annual Sales 2022-2025 (All Qualifying Franchisees)",
+      "columns": ["Metric", "2022", "2023", "2024", "2025"],
+      "rows": [
+        {"metric": "Average Annual Sales", "2022": 2739828, "2023": 3029925, "2024": 3363327, "2025": 3453102},
+        {"metric": "Median Annual Sales", "2022": 2190135, "2023": 2485498, "2024": 3187641, "2025": 3531399},
+        {"metric": "High", "2022": 7702075, "2023": 8185855, "2024": 8373146, "2025": 8243733},
+        {"metric": "Low", "2022": 556164, "2023": 332846, "2024": 136026, "2025": 282393},
+        {"metric": "# Within Group", "2022": 38, "2023": 40, "2024": 39, "2025": 37},
+        {"metric": "# Above Average", "2022": 16, "2023": 17, "2024": 17, "2025": 19},
+        {"metric": "% Above Average", "2022": "42%", "2023": "43%", "2024": "44%", "2025": "51%"}
+      ],
+      "population_note": "Domestic franchisees open/operating continuously 1+ year as of Dec 31 each year. 2025: 37 of 41 qualifying = 90%.",
+      "table_notes": [
+        "AAS = total billed for janitorial services + unit franchise sales revenue.",
+        "AAS does NOT reflect profits or net income. Subject to deductions per Item 6.",
+        "Excludes prepayments for additional janitorial services, supplies, equipment.",
+        "Excludes federal, state, local taxes collected.",
+        "AAS is not the same as Gross Revenues for fee calculation purposes.",
+        "Self-reported, unaudited data."
+      ]
+    },
+    {
+      "table_id": "item19_table2",
+      "source_item": "Item 19",
+      "source_pages": [56],
+      "title": "Average Annual Sales by Quartile — 2025",
+      "columns": ["Metric", "4th Quartile", "3rd Quartile", "2nd Quartile", "1st Quartile", "All Data"],
+      "rows": [
+        {"metric": "Average Annual Sales", "4th_q": 1266186, "3rd_q": 2642270, "2nd_q": 3984876, "1st_q": 6162068, "all": 3453102},
+        {"metric": "Median Annual Sales", "4th_q": 1569293, "3rd_q": 2674468, "2nd_q": 3940583, "1st_q": 5791371, "all": 3531399},
+        {"metric": "High", "4th_q": 1852687, "3rd_q": 3531399, "2nd_q": 4742381, "1st_q": 8243733, "all": 8243733},
+        {"metric": "Low", "4th_q": 282393, "3rd_q": 1890111, "2nd_q": 3549609, "1st_q": 4806898, "all": 282393},
+        {"metric": "# Within Group", "4th_q": 10, "3rd_q": 9, "2nd_q": 9, "1st_q": 9, "all": 37},
+        {"metric": "# Above Average", "4th_q": 6, "3rd_q": 5, "2nd_q": 4, "1st_q": 3, "all": 19},
+        {"metric": "% Above Average", "4th_q": "60%", "3rd_q": "56%", "2nd_q": "44%", "1st_q": "33%", "all": "51%"}
+      ],
+      "table_notes": ["37 Franchisees in 2025 fiscal year. Unaudited, self-reported."]
+    },
+    {
+      "table_id": "item19_table3",
+      "source_item": "Item 19",
+      "source_pages": [57],
+      "title": "Average Annual Sales of Start-Up and Emerging Locations — by Years in Operation as of Dec 31, 2025",
+      "columns": ["Metric", "0-3 Years Open", "3-6 Years Open", "6-8 Years Open"],
+      "rows": [
+        {"metric": "Average Annual Sales", "0_3": 1067540, "3_6": 2256011, "6_8": 3373011},
+        {"metric": "Median Annual Sales", "0_3": 1067540, "3_6": 1927176, "6_8": 2789224},
+        {"metric": "High", "0_3": 1852687, "3_6": 4150460, "6_8": 8243733},
+        {"metric": "Low", "0_3": 282393, "3_6": 864146, "6_8": 789486},
+        {"metric": "# Within Group", "0_3": 2, "3_6": 7, "6_8": 9},
+        {"metric": "# Above Average", "0_3": 1, "3_6": 0, "6_8": 0},
+        {"metric": "% Above Average", "0_3": "50%", "3_6": "0%", "6_8": "40%"}
+      ],
+      "table_notes": [
+        "18 total franchisees in this analysis.",
+        "Table header says '2023' in the FDD but data represents groupings by years in operation as of December 31, 2025 — possible mislabel."
+      ]
+    },
+    {
+      "table_id": "item20_domestic_table1",
+      "source_item": "Item 20",
+      "source_pages": [58, 59],
+      "title": "Systemwide Domestic Outlet Summary 2023-2025",
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2023, "start": 45, "end": 47, "net": 2},
+        {"type": "Franchised", "year": 2024, "start": 47, "end": 45, "net": -2},
+        {"type": "Franchised", "year": 2025, "start": 45, "end": 44, "net": -1},
+        {"type": "Company Owned", "year": 2023, "start": 1, "end": 1, "net": 0},
+        {"type": "Company Owned", "year": 2024, "start": 1, "end": 0, "net": -1},
+        {"type": "Company Owned", "year": 2025, "start": 0, "end": 1, "net": 1},
+        {"type": "Total", "year": 2023, "start": 46, "end": 48, "net": 2},
+        {"type": "Total", "year": 2024, "start": 48, "end": 45, "net": -3},
+        {"type": "Total", "year": 2025, "start": 45, "end": 45, "net": 0}
+      ],
+      "table_notes": ["Reductions in 2024 and 2025 reflect subfranchisors that converted to Market Developer model. All such locations have remained open and continue to operate as Anago franchises."]
+    },
+    {
+      "table_id": "item20_domestic_table2",
+      "source_item": "Item 20",
+      "source_pages": [59],
+      "title": "Transfers of Domestic Outlets 2023-2025",
+      "columns": ["State", "Year", "Number of Transfers"],
+      "rows": [
+        {"state": "AZ", "year": 2023, "transfers": 0},
+        {"state": "AZ", "year": 2024, "transfers": 0},
+        {"state": "AZ", "year": 2025, "transfers": 0},
+        {"state": "MN", "year": 2023, "transfers": 0},
+        {"state": "MN", "year": 2024, "transfers": 1},
+        {"state": "MN", "year": 2025, "transfers": 0},
+        {"state": "OH", "year": 2023, "transfers": 0},
+        {"state": "OH", "year": 2024, "transfers": 4},
+        {"state": "OH", "year": 2025, "transfers": 0},
+        {"state": "NJ", "year": 2023, "transfers": 0},
+        {"state": "NJ", "year": 2024, "transfers": 0},
+        {"state": "NJ", "year": 2025, "transfers": 1}
+      ],
+      "transfers_total": {"2023": 0, "2024": 5, "2025": 1},
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_domestic_table3",
+      "source_item": "Item 20",
+      "source_pages": [60, 61, 62],
+      "title": "Status of Domestic Subfranchise Outlets 2023-2025",
+      "summary_totals": {
+        "2023": {"start": 45, "opened": 2, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 47},
+        "2024": {"start": 47, "opened": 2, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased_other": 4, "end": 45},
+        "2025": {"start": 45, "opened": 1, "terminations": 0, "non_renewals": 0, "reacquired": 1, "ceased_other": 1, "end": 44}
+      },
+      "terminations_total": 0,
+      "non_renewals_total": 0,
+      "reacquired_total": 1,
+      "ceased_operations_total": 5,
+      "states_represented_2025": ["AZ", "CO", "CT", "FL", "GA", "HI", "MD", "MI", "MN", "MO", "NE", "NV", "NJ", "NY", "NC", "OH", "OK", "OR", "PA", "SC", "TN", "TX", "UT", "VA"],
+      "table_notes": [
+        "Reductions in 2024 and 2025 reflect subfranchisors that converted to Market Developer model. All such locations have remained open and continue to operate as Anago franchises.",
+        "2025 reacquired: 1 (ID). 2025 ceased other reasons: 1 (CA - Market Developer conversion).",
+        "2024 ceased other reasons: 4 (3 CA + 1 PR - all Market Developer conversions)."
+      ]
+    },
+    {
+      "table_id": "item20_domestic_table4",
+      "source_item": "Item 20",
+      "source_pages": [62],
+      "title": "Status of Company Owned Domestic Outlets 2023-2025",
+      "rows": [
+        {"state": "ID", "year": 2025, "start": 0, "opened": 0, "reacquired": 1, "closed": 0, "sold": 0, "end": 1},
+        {"state": "NV", "year": 2024, "start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 1, "end": 0}
+      ],
+      "summary_totals": {
+        "2023": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 1},
+        "2024": {"start": 1, "opened": 0, "reacquired": 0, "closed": 0, "sold": 1, "end": 0},
+        "2025": {"start": 0, "opened": 0, "reacquired": 1, "closed": 0, "sold": 0, "end": 1}
+      },
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_domestic_table5",
+      "source_item": "Item 20",
+      "source_pages": [63],
+      "title": "Projected Domestic Openings as of Dec 31, 2025 for 2026",
+      "rows": [
+        {"state": "AL", "signed_not_open": 0, "projected_franchised": 1, "projected_company": 0},
+        {"state": "IN", "signed_not_open": 0, "projected_franchised": 1, "projected_company": 0},
+        {"state": "KS", "signed_not_open": 0, "projected_franchised": 1, "projected_company": 0},
+        {"state": "MO", "signed_not_open": 0, "projected_franchised": 1, "projected_company": 0},
+        {"state": "TX", "signed_not_open": 0, "projected_franchised": 1, "projected_company": 0}
+      ],
+      "projected_openings_total": 5,
+      "table_notes": []
+    },
+    {
+      "table_id": "item20_international_table1",
+      "source_item": "Item 20",
+      "source_pages": [63],
+      "title": "Systemwide International Outlet Summary 2023-2025",
+      "summary_totals": {
+        "2023": {"start": 2, "end": 3, "net": 1},
+        "2024": {"start": 3, "end": 3, "net": 0},
+        "2025": {"start": 3, "end": 3, "net": 0}
+      },
+      "table_notes": ["All in Canada. No company-owned international outlets."]
+    },
+    {
+      "table_id": "item20_international_table5",
+      "source_item": "Item 20",
+      "source_pages": [64, 65],
+      "title": "Projected International Openings",
+      "projected_openings_total": 2,
+      "table_notes": ["2 projected new franchised outlets in Canada"]
+    },
+    {
+      "table_id": "item21_balance_sheet",
+      "source_item": "Item 21 / Exhibit F",
+      "source_pages": [71],
+      "title": "Consolidated Balance Sheets — ACS and Subsidiaries (Dec 31)",
+      "columns": ["Line Item", "2025", "2024", "2023"],
+      "rows": [
+        {"line": "Cash and equivalents", "2025": 2548143, "2024": 2551926, "2023": 2013241},
+        {"line": "Accounts receivable, net (current)", "2025": 145040, "2024": 183041, "2023": 377754},
+        {"line": "Investments", "2025": 3780816, "2024": 2390442, "2023": 1636538},
+        {"line": "Total current assets", "2025": 6764096, "2024": 5284819, "2023": 4212718},
+        {"line": "Property and equipment, net", "2025": 494145, "2024": 247146, "2023": 262953},
+        {"line": "Total assets", "2025": 8893362, "2024": 7158867, "2023": 6108852},
+        {"line": "Total current liabilities", "2025": 910675, "2024": 899440, "2023": 702325},
+        {"line": "Total long-term liabilities", "2025": 1329009, "2024": 626703, "2023": 885173},
+        {"line": "Total liabilities", "2025": 2239684, "2024": 1526143, "2023": 1587498},
+        {"line": "Retained earnings", "2025": 6268779, "2024": 5247825, "2023": 4136455},
+        {"line": "Total stockholders' equity", "2025": 6653678, "2024": 5632724, "2023": 4521354}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "item21_income_statement",
+      "source_item": "Item 21 / Exhibit F",
+      "source_pages": [72],
+      "title": "Consolidated Statements of Operations — ACS and Subsidiaries (Year Ended Dec 31)",
+      "columns": ["Line Item", "2025", "2024", "2023"],
+      "rows": [
+        {"line": "Franchise sales", "2025": 293229, "2024": 777457, "2023": 132783},
+        {"line": "Royalties", "2025": 7040370, "2024": 6314233, "2023": 5840390},
+        {"line": "Franchise fees and other revenue", "2025": 2061121, "2024": 2328454, "2023": 2851358},
+        {"line": "Total revenue", "2025": 9394720, "2024": 9420144, "2023": 8824531},
+        {"line": "Operating expenses", "2025": 8526131, "2024": 8100207, "2023": 7778039},
+        {"line": "Operating income", "2025": 868589, "2024": 1319937, "2023": 1046492},
+        {"line": "Total other income", "2025": 84633, "2024": 57086, "2023": 291588},
+        {"line": "Net income before comp income & taxes", "2025": 953222, "2024": 1377023, "2023": 1338080},
+        {"line": "Income tax provision", "2025": 327392, "2024": 496448, "2023": 348384},
+        {"line": "Comprehensive income", "2025": 1020954, "2024": 1111370, "2023": 1223300}
+      ],
+      "table_notes": ["EBITDA per Note B: 2025=$1,023,943; 2024=$1,454,248; 2023=$1,454,333"]
+    },
+    {
+      "table_id": "item21_cash_flows",
+      "source_item": "Item 21 / Exhibit F",
+      "source_pages": [74],
+      "title": "Consolidated Statements of Cash Flows — ACS and Subsidiaries (Year Ended Dec 31)",
+      "columns": ["Category", "2025", "2024", "2023"],
+      "rows": [
+        {"category": "Net cash from operating activities", "2025": 1225927, "2024": 939143, "2023": 1228625},
+        {"category": "Net cash from investing activities", "2025": -1273894, "2024": -502149, "2023": -199108},
+        {"category": "Net cash from financing activities", "2025": 44184, "2024": 101691, "2023": -124244},
+        {"category": "Net change in cash", "2025": -3783, "2024": 538685, "2023": 905273},
+        {"category": "Cash at end of year", "2025": 2548143, "2024": 2551926, "2023": 2013241}
+      ],
+      "table_notes": []
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "jazzercise",
+  "name": "Jazzercise",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Jazzercise, Inc.",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-01",
+    "franchise_fee_headline": "$1,250",
+    "investment_range_headline": null,
+    "royalty_headline": "20% of gross member enrollment",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": "One additional 5-year term",
+    "territory_headline": "Non-exclusive; state or portion of state",
+    "item_19_present": false,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": null
+  },
+  "economics": {
+    "franchise_fee_raw": "$1,250",
+    "royalty_raw": "20% of gross member enrollment",
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": false,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": null,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": "One additional 5-year term"
+  },
+  "territory_reality": {
+    "headline": "Non-exclusive; state or portion of state"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "RSM US LLP",
+    "audit_opinion": "Clean/unqualified",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [
+    {
+      "severity": "info",
+      "kind": "item19",
+      "summary": "No Item 19 financial performance representation disclosed."
+    }
+  ],
+  "validation_questions": [],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-28-637934-2025-jazzercise-20260415-094853",
+    "primary_run_folder": "fresh-28-637934-2025-jazzercise-20260415-094853",
+    "primary_fdd_id": "637934",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "?",
+    "phase": "first200",
+    "slot": 28
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "Revenue recognition timing change: new billing/collection service in 2024 caused franchise fees to be collected in arrears, spiking AR from $150K to $988K. Impact on revenue recognition timing not ful"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Stock conversion to Class A/B on Dec 2, 2024: purpose not explained in FDD body or financial notes."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Related party Trust receivable: $543,891 outstanding from sole stockholder's Irrevocable Trust for life insurance premiums. Principal due within 9 years of each disbursement."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Revel Dance Fitness competitive risk: separate dance fitness brand under common ownership, currently digital only, may franchise at any location in the future."
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Negative operating cash flow in 2024: OCF of $(905,697) \u2014 first negative OCF in reported three-year period."
+    },
+    {
+      "topic": "schema_unrecognized",
+      "reason": "canonical schema not parsed by first-200 extractor"
+    }
+  ],
+  "_status": "PARTIAL"
+}

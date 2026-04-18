@@ -1,0 +1,78 @@
+{
+  "depth_block": "targeted_depth_block_2_key_exhibits",
+  "exhibits_walked": [
+    {
+      "exhibit": "B",
+      "name": "Franchise Agreement (Traditional)",
+      "page_range": [73, 87],
+      "clause_walk_status": "complete",
+      "clauses_walked": 28,
+      "method": "Direct page-by-page text walk of all 15 pages",
+      "key_findings": "All operative provisions directly read and structured in RT_depth_contract_burdens.json"
+    },
+    {
+      "exhibit": "A",
+      "name": "Financial Statements",
+      "page_range": [58, 72],
+      "clause_walk_status": "complete",
+      "method": "Direct text extraction of all 15 pages",
+      "key_findings": "Auditor report, 4 financial statements, 14 note families — all fully walked"
+    },
+    {
+      "exhibit": "K",
+      "name": "New Term Policy",
+      "page_range": [191, 192],
+      "clause_walk_status": "partial",
+      "method": "Key terms surfaced via Item 17 and Item 6 footnotes",
+      "deferred_rationale": "2-page policy. Core operative substance (no renewal right, rent not lower, 8.50% minimum, discretionary) fully surfaced in Item 17 and Item 6 footnote 3. Direct text walk would add template details but no additional operative burden beyond what is disclosed in the body.",
+      "already_recovered_elsewhere": "Item 17 chart (row b), Item 6 footnote 3, Item 17 Note 2",
+      "missing_despite_deferral": "Exact procedural steps in new term evaluation process"
+    },
+    {
+      "exhibit": "T",
+      "name": "State Specific Addenda",
+      "page_range": [383, 387],
+      "clause_walk_status": "complete",
+      "method": "Direct text walk of all 5 pages",
+      "key_findings": "5 state addenda (CA, MD, MN, ND, WA) + state effective dates. All overrides structured in RT_depth_state_addenda_promotion.json"
+    }
+  ],
+  "exhibits_deferred": [
+    {
+      "exhibit": "C",
+      "name": "Franchise Agreement (Satellite)",
+      "page_range": [91, 108],
+      "pages_not_walked": [91, 108],
+      "why_deferred": "Parallel structure to Exhibit B (Traditional FA). Satellites represent <5% of system. Key differences (term, fees, menu) surfaced in Items 1, 5, 6. Full clause walk would largely duplicate Exhibit B findings.",
+      "recovered_elsewhere": "Item 1 (restaurant types), Item 5 (fees), Item 6 (satellite fees), Item 17 (terms)",
+      "missing": "Satellite-specific clause variations, if any, beyond what Items 1/5/6/17 disclose"
+    },
+    {
+      "exhibit": "D",
+      "name": "Franchise Agreement (Walmart)",
+      "page_range": [109, 126],
+      "pages_not_walked": [109, 126],
+      "why_deferred": "Parallel structure to Exhibit B. Walmart locations are a small subset. Key differences surfaced in Items 1, 5, 6.",
+      "recovered_elsewhere": "Item 1 (MIW description), Item 5 ($0 initial fee), Item 6 (MIW rent 14-15.5%)",
+      "missing": "Walmart-specific clause variations"
+    },
+    {
+      "exhibit": "G",
+      "name": "Operator's Lease",
+      "page_range": [133, 165],
+      "pages_not_walked": [133, 165],
+      "why_deferred": "33-page standard commercial lease. Key operative provisions fully surfaced via Item 9 obligations table (15 cross-references to Operator's Lease sections) and Item 17 Operator's Lease table (all provision summaries). Rent terms extensively documented in Item 6 footnotes 3, 4, 6, 7, 8. Direct walk would extract standard lease boilerplate.",
+      "recovered_elsewhere": "Item 9 (24 obligations with lease section references), Item 17 (full Operator's Lease provision table), Item 6 (complete rent structure with 12 footnotes)",
+      "missing": "Specific lease holdover provisions, environmental clauses, casualty/condemnation detail, subletting restrictions beyond what Item 17 discloses"
+    },
+    {
+      "exhibit": "N",
+      "name": "Loan and Related Documents",
+      "page_range": [196, 230],
+      "pages_not_walked": [196, 230],
+      "why_deferred": "35-page template document set. Key terms (interest rate, amortization, security, personal guarantee, jury waiver, Operator Assistance Program waiver) fully surfaced in Item 10. Loan is optional; not all franchisees use it.",
+      "recovered_elsewhere": "Item 10 (complete loan terms: SOFR + 0.10% + 3.00%, APR 7.42%, 3-5 year term, 7-year amortization, security, guarantee, waiver)",
+      "missing": "Specific default triggers in Promissory Note, cross-default mechanics, exact OAPA waiver language"
+    }
+  ]
+}

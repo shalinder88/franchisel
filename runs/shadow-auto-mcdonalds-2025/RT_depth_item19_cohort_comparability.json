@@ -1,0 +1,25 @@
+{
+  "id": "item19_cohort_comparability_warning",
+  "severity": "high",
+  "cohort_royalty_rate": 0.04,
+  "cohort_ad_fund_rate": null,
+  "cohort_tech_fee": null,
+  "current_royalty_rate": 0.05,
+  "current_ad_fund_rate": null,
+  "current_tech_fee": null,
+  "basis_point_difference": 100,
+  "dollar_impact_by_tier": [
+    {"tier_label": "$3M pro forma", "tier_sales": 3000000, "annual_impact": -30000},
+    {"tier_label": "$3.2M pro forma", "tier_sales": 3200000, "annual_impact": -32000},
+    {"tier_label": "$3.4M pro forma", "tier_sales": 3400000, "annual_impact": -34000},
+    {"tier_label": "Average franchised ($3.966M)", "tier_sales": 3966000, "annual_impact": -39660},
+    {"tier_label": "Median franchised ($3.797M)", "tier_sales": 3797000, "annual_impact": -37970}
+  ],
+  "source_pages_item19": [43, 44],
+  "source_pages_item6": [18, 21],
+  "reasoning": "The pro forma OIBOC statements in Item 19 are based on 11,332 independent franchisee traditional restaurants whose royalties were 4% of Gross Sales during the covered period. However, per Item 6 Footnote 2, new restaurants opened after January 1, 2024 pay a 5% royalty. This 100 basis point difference means the pro forma overstates OIBOC for new franchisees by approximately 1% of gross sales. At the median franchised sales of $3,797,000, this represents approximately $37,970 per year in additional costs not reflected in the pro forma. The FDD explicitly notes the 4% royalty in the pro forma footnotes but does not compute the dollar impact of the difference for prospective new franchisees.",
+  "quote_fragments": [
+    "The royalties payable by these franchised restaurants during the covered period were 4% of Gross Sales",
+    "The royalty of 5% of Gross Sales applies on and after January 1, 2024, in the following scenarios: (i) a franchisee opens a new restaurant"
+  ]
+}

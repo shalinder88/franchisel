@@ -1,0 +1,181 @@
+{
+  "_enrichment_version": "v2",
+  "_base_source": "09_final_canonical.json",
+  "_enrichment_layers": ["item1", "item3_litigation", "item6_fee_detail", "item7_total_investment", "item8_supplier_restrictions", "item9_obligations", "item10_financing", "item11_training", "item12_territory", "item17_termination", "item17_transfer", "item19_chart_detail", "item20_yearly_activity", "item21_structural_facts", "item21_financial_structure_detail", "contract_burden_depth"],
+  "document_identity": {
+    "entity": "Dunkin' Donuts Franchising LLC",
+    "brand": "Dunkin'",
+    "issue_date": "March 27, 2025",
+    "amendment_date": "October 24, 2025",
+    "filing_id": "637953",
+    "pdf_pages": 574
+  },
+  "item1": {
+    "entity": "Dunkin' Donuts Franchising LLC",
+    "state": "Delaware",
+    "formed": "March 15, 2006",
+    "hq": "Three Glenlake Parkway, Atlanta, GA 30328",
+    "parent_chain": ["DB Master Finance LLC", "DB Master Finance Parent LLC", "Dunkin' Brands, Inc.", "IRB Holding Corp.", "Inspire Brands, Inc."],
+    "securitization": {"year": 2015, "structure": "DB Master Finance LLC base indenture", "debt_amount": 5006188000},
+    "system_size": {"us_total": 9768, "franchised": 9734, "company_owned": 34, "international": 4328},
+    "offering_types": ["standard", "non_traditional_sdo", "combo_dunkin_br", "multi_brand"],
+    "source_pages": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  },
+  "item3_litigation": {
+    "pending_count": 6,
+    "concluded_count": 10,
+    "key_risks": ["Class action re hidden dine-in fee (Taferner/Diaz, C.D. Cal. 2024)", "Long-running bakery supply dispute (Fahrad, PA 2011)"],
+    "affiliate_litigation": ["Jimmy John's MD consent order ($30K)", "Arby's no-poach settlement"],
+    "source_pages": [24, 25, 26, 27, 28, 29, 30, 31]
+  },
+  "item6_fee_detail": {
+    "royalty": {"rate": "5.9%", "base": "Gross Sales", "frequency": "weekly"},
+    "advertising": {"rate": "5.0%", "base": "Gross Sales", "frequency": "weekly", "sdo_rate": "2.5%"},
+    "loyalty": {"rate_2025_2026": "1.4%", "rate_2027_plus": "1.2%", "base": "Loyalty Program Sales"},
+    "total_ongoing_pct": 12.3,
+    "transfer_fee_tiers_dunkin": [
+      {"sales_range": "<$400K", "fee": 5000},
+      {"sales_range": "$400K-$600K", "fee": 6000},
+      {"sales_range": "$600K-$1M", "fee": 8000},
+      {"sales_range": "$1M-$1.4M", "fee": 12000},
+      {"sales_range": "$1.4M+", "fee": 20000}
+    ],
+    "incentive_programs": {
+      "brewed_for_growth": {"markets": "CA, TX, OK", "cff_yr1_5": "1.9%", "iff_rebate": "50%"},
+      "pacific_northwest": {"markets": "ID, MT, ND, OR, SD, WA, WY", "cff_credits": "$50K-$300K"},
+      "select_developing_markets": {"cff_yr1": "1.9%", "ramp_to_standard": "5 years"},
+      "go_west": {"cff_yr1_5": "2.4%", "ramp_to_standard": "9 years"},
+      "early_opening": {"cff": "0%", "duration": "up to 12 months"},
+      "vetfran": {"credit": "$10K/restaurant", "max": "$100K"}
+    },
+    "source_pages": [40, 41, 42, 43, 44, 45, 46, 47, 48]
+  },
+  "item7_total_investment": {
+    "freestanding": {"low": 526900, "high": 1832500, "sf_range": "750-3100", "cost_per_sf": "$83-$566"},
+    "storefront": {"low": 437500, "high": 1333500, "sf_range": "600-2800", "cost_per_sf": "$59-$378"},
+    "gas_convenience": {"low": 210900, "high": 1065500, "sf_range": "600-2300", "cost_per_sf": "$56-$340"},
+    "technology_initial": {"low": 65000, "high": 118000},
+    "land_purchase": {"low": 100000, "high": 1200000, "note": "if applicable"},
+    "source_pages": [49, 50, 51, 52, 53, 54, 55, 56]
+  },
+  "item8_supplier_restrictions": {
+    "designated_supplier": "National DCP, LLC (NDCP)",
+    "ndcp_type": "Franchisee-owned cooperative",
+    "purchase_pct_from_approved": 95,
+    "approval_timeline_days": 180,
+    "exclusive_categories": ["Purchasing/distribution", "Fountain/packaged beverages", "Certain technology"],
+    "source_pages": [56, 57, 58, 59, 60]
+  },
+  "item9_obligations": {
+    "obligation_rows": 25,
+    "key_fa_sections": ["3.A/B (site)", "4 (training)", "5 (fees)", "7.A (standards)", "9 (IP)", "10 (noncompete)", "13 (transfer)", "15 (dispute)"],
+    "source_pages": [60, 61]
+  },
+  "item10_financing": {"offered": false, "source_pages": [61]},
+  "item11_training": {
+    "program_days": 19,
+    "total_hours": {"low": 266.5, "high": 486.5},
+    "modules": ["Orientation", "Virtual Fundamentals", "In-Restaurant Fundamentals", "In-Restaurant Practice", "Shift Management", "CML & Full Producer Production", "POS and Back Office"],
+    "pass_threshold_pct": 90,
+    "staff": {"total_trainers": 20, "avg_tenure": 8},
+    "manual_pages": 817,
+    "source_pages": [61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75]
+  },
+  "item12_territory": {
+    "fa_exclusive": false,
+    "fa_nonexclusive": false,
+    "sda_protection": true,
+    "sda_exceptions": ["Existing restaurants", "Controlled Affiliates", "SDO opportunities"],
+    "alternative_distribution_reserved": true,
+    "source_pages": [75, 76, 77, 78]
+  },
+  "item17_termination": {
+    "franchisee_right": false,
+    "franchisor_without_cause": false,
+    "cure_periods": {"health_safety": "24h", "ceased_operations": "24h", "payment": "7d", "other": "30d"},
+    "non_curable": ["Loss of premises", "Unauthorized transfer", "Felony", "Fraud", "Cross-default", "3+ same defaults in 12mo", "Bankruptcy"],
+    "cross_default": true,
+    "source_pages": [83, 84]
+  },
+  "item17_transfer": {
+    "definition_scope": "Broad — all ownership changes",
+    "rofr_days": 60,
+    "option_to_purchase_days": 30,
+    "death_proposal_months": 12,
+    "death_completion_months": 18,
+    "source_pages": [84, 85]
+  },
+  "item19_chart_detail": {
+    "representations": 4,
+    "overall_auv": 1304217,
+    "overall_median": 1240107,
+    "q1_auv": 2073245,
+    "q4_auv": 646650,
+    "population": 7190,
+    "highest_performing_venue": {"type": "Traditional/Freestanding", "auv": 1534772},
+    "drivethru_premium": 39,
+    "cost_data": false,
+    "source_pages": [86, 87, 88, 89, 90, 91]
+  },
+  "item20_yearly_activity": {
+    "end_2024_standalone": 8465,
+    "end_2024_combo": 1269,
+    "end_2024_company": 34,
+    "net_growth_2024": 200,
+    "closures_2024": 96,
+    "terminations_2024": 1,
+    "transfers_2024": 137,
+    "projected_openings": 278,
+    "gag_clause": true,
+    "gag_clause_quote": "In some instances, current and former franchisees sign provisions restricting their ability to speak openly about their experience with us.",
+    "source_pages": [91, 92, 93, 94, 95, 96, 97]
+  },
+  "item21_structural_facts": {
+    "auditor": "KPMG LLP",
+    "opinion": "unqualified",
+    "going_concern": false,
+    "entities_audited": ["DB Master Finance Parent LLC and Subsidiaries", "Dunkin' Brands, Inc. and Subsidiaries"],
+    "guarantor": "DB Master Finance Parent LLC"
+  },
+  "item21_financial_structure_detail": {
+    "total_assets": 9726200000,
+    "intangible_assets": 8303529000,
+    "intangible_pct_of_assets": 85.4,
+    "long_term_debt": 5006188000,
+    "debt_type": "securitized_notes",
+    "operating_income": 707935000,
+    "net_income": 585009000,
+    "operating_cash_flow": 681120000,
+    "debt_service_coverage": 4.2,
+    "distributions_2024": 366438000,
+    "deferred_revenue_total": 182579000,
+    "franchise_fee_revenue": 800335000,
+    "advertising_revenue": 631398000,
+    "management_fees_expense": 113548000,
+    "source_pages": [116, 117, 118, 119]
+  },
+  "contract_burden_depth": {
+    "note": "Deferred to A2. Item 17 chart cross-references extracted. Full FA/SDA clause walk pending.",
+    "key_burdens_from_item17": {
+      "renewal": "Then-current form + general release",
+      "noncompete_scope": "5 miles / any Dunkin' / 24 months",
+      "noncompete_definition": ">20% revenue from coffee and/or baked goods",
+      "transfer_rofr": "60 days",
+      "death_disability": "12 months to propose, 18 months to complete",
+      "forum": "Atlanta, Georgia",
+      "governing_law": "Georgia"
+    }
+  },
+  "special_risks": [{"risk": "out_of_state_dispute_resolution", "source_pages": [5]}],
+  "unresolveds": [
+    {"id": "UR-001", "description": "No cost/profitability data in Item 19", "severity": "high"},
+    {"id": "UR-002", "description": "FA not clause-walked", "severity": "medium"},
+    {"id": "UR-003", "description": "State addenda partially extracted", "severity": "medium"},
+    {"id": "UR-004", "description": "Financial notes partially read", "severity": "medium"},
+    {"id": "UR-005", "description": "Cup with D' trademark unregistered", "severity": "low"},
+    {"id": "UR-006", "description": "Securitization debt complexity", "severity": "medium"}
+  ],
+  "contradictions": [
+    {"id": "CD-001", "description": "TOC pagination mismatch", "resolution_status": "resolved"}
+  ]
+}

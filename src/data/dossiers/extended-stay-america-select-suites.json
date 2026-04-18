@@ -1,0 +1,119 @@
+{
+  "slug": "extended-stay-america-select-suites",
+  "name": "ESH Strategies Franchise LLC",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "ESH Strategies Franchise LLC",
+    "parent": null,
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-27",
+    "franchise_fee_headline": "$50,000",
+    "investment_range_headline": null,
+    "royalty_headline": "5.5%",
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": null,
+    "item_19_present": true,
+    "system_total_units": 211,
+    "franchised_units": 5,
+    "company_owned_units": 206
+  },
+  "economics": {
+    "franchise_fee_raw": 50000,
+    "royalty_raw": "5.5%",
+    "ad_fund_raw": null,
+    "investment_low_raw": null,
+    "investment_high_raw": null
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": 211,
+    "franchised": 5,
+    "company_owned": 206,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": null
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": null,
+    "audit_opinion": null,
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor.",
+    "Confirm current auditor and most recent audit opinion."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-26-637932-2025-extended-stay-america-select-suites-20260415-085128",
+    "primary_run_folder": "fresh-26-637932-2025-extended-stay-america-select-suites-20260415-085128",
+    "primary_fdd_id": "637932",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 26
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "No cost data in Item 19 \u2014 cannot model unit economics from FDD"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Territory criteria entirely at franchisor's discretion \u2014 no formula or guaranteed minimum"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Materially different terms risk on transfer \u2014 transferee must accept then-current FA"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No renewal right \u2014 franchise expires at end of 20-year term with no guaranteed continuation"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "22 company-owned hotels being sold to franchisees \u2014 terms and pricing unknown"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Trademark license expires December 31, 2030 \u2014 only ~5 years into a 20-year franchise term"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Digital Marketing Commission implementation status uncertain as of FDD issuance"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "System Services Fees pooled across all ESA Network brands \u2014 no proportionality obligation"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Auditor emphasis on related party transactions \u2014 financial statements may not reflect arm's-length conditions"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Exhibit D labeling inconsistency: signed-not-open section labeled as 'ESA Premier Suites Franchisees' rather than Select Suites, but Item 20 Table 5 identifies them as Select Suites projected openings"
+    }
+  ],
+  "_status": "PUBLISHED"
+}

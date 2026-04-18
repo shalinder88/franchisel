@@ -1,0 +1,135 @@
+{
+  "_enrichment_version": "v1",
+  "_base_source": "09_final_canonical.json",
+  "_enrichment_layers": ["item19_chart_detail", "item20_yearly_activity", "exhibit_structure", "item21_structural_facts", "item1_structural_facts", "item6_fee_attributes"],
+
+  "document_identity": {
+    "filing_id": "638763",
+    "brand": "Subway",
+    "franchisor_legal_name": "Doctor's Associates LLC",
+    "issuance_date": "April 25, 2025, amended September 4, 2025, and amended December 1, 2025",
+    "state_filed": "WI-DFI",
+    "pdf_pages": 955
+  },
+
+  "item1_structural_facts": {
+    "entity_type": "Delaware LLC",
+    "conversion_history": ["Florida corporation → Florida LLC (Oct 29, 2018)", "Florida LLC → Delaware LLC (May 29, 2024)"],
+    "acquisition_date": "April 30, 2024",
+    "acquirer": "Underground Purchaser LLC (Roark Capital)",
+    "securitization_date": "June 20, 2024",
+    "securitization_total_notes": 5685000000,
+    "securitization_series": [
+      {"series": "2024-1", "amount": 3350000000, "type": "fixed rate senior secured"},
+      {"series": "2024-3", "amount": 2335000000, "type": "fixed rate senior secured"}
+    ],
+    "variable_rate_notes": 93000000,
+    "revolving_facility": 400000000,
+    "ip_holder": "Subway US IP Holder LLC",
+    "ip_license_term": "99 years",
+    "ip_license_royalty": "royalty-free",
+    "management_entity": "Franchise World Headquarters LLC (FWH)",
+    "management_fee_2024": 49325000,
+    "international_master_franchises": "30+ countries via SIP and SIBV",
+    "source_pages": [8, 9, 10, 11, 12, 13, 14, 15]
+  },
+
+  "item6_fee_attributes": {
+    "royalty_rate": 0.08,
+    "royalty_base": "total gross sales",
+    "royalty_frequency": "weekly",
+    "advertising_rate": 0.045,
+    "advertising_fund": "SFAFT",
+    "technology_monthly_total_estimate": 307,
+    "technology_breakdown": {
+      "restaurant_technology_fee": 75,
+      "pos_hardware": 57,
+      "digital_menu_board": 155,
+      "terminal_fee": 10,
+      "switching_fee": 10
+    },
+    "sub_club_rate": 0.019,
+    "total_ongoing_pct_of_gross": "approximately 14.4% (8% royalty + 4.5% advertising + 1.9% Sub Club)",
+    "transfer_fee_standard": 7500,
+    "renewal_fee": 3750,
+    "source_pages": [38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
+  },
+
+  "item19_chart_detail": {
+    "fpr_provided": false,
+    "no_fpr_statement": "We do not make any representations about a franchisee's future financial performance or the past financial performance of company-owned or franchised outlets.",
+    "substantiation_available": false,
+    "source_pages": [94]
+  },
+
+  "item20_yearly_activity": {
+    "2022": {"start": 21147, "opened": 529, "terminated": 8, "non_renewed": 18, "reacquired": 98, "ceased": 995, "end": 20576, "net": -571},
+    "2023": {"start": 20576, "opened": 455, "terminated": 3, "non_renewed": 19, "reacquired": 90, "ceased": 733, "end": 20133, "net": -443},
+    "2024": {"start": 20133, "opened": 435, "terminated": 4, "non_renewed": 30, "reacquired": 139, "ceased": 881, "end": 19502, "net": -631},
+    "three_year_net_change": -1645,
+    "three_year_pct_decline": -7.8,
+    "reopens_pct_of_openings_2024": 0.52,
+    "projected_fa_signed_not_open": 120,
+    "projected_new_next_fy": 150,
+    "gag_clause_flag": true,
+    "source_pages": [95, 100, 101, 102, 103, 104, 110, 111]
+  },
+
+  "exhibit_structure": {
+    "total_exhibits": 41,
+    "key_exhibits": [
+      {"letter": "A", "name": "Franchise Agreement", "pages": 49, "page_range": [114, 162]},
+      {"letter": "A-12", "name": "Development Agreement", "pages": 16, "page_range": [315, 330]},
+      {"letter": "A-13", "name": "Multi-Unit Franchise Agreement", "pages": 49, "page_range": [331, 379]},
+      {"letter": "C", "name": "Audited Financial Statements", "pages": 16, "page_range": [697, 712]},
+      {"letter": "D", "name": "Sublease", "pages": 23, "page_range": [747, 769]},
+      {"letter": "L", "name": "Litigation", "pages": 23, "page_range": [870, 892]},
+      {"letter": "P", "name": "State Addenda", "pages": 32, "page_range": [918, 949]}
+    ],
+    "source_pages": [7, 112]
+  },
+
+  "item21_structural_facts": {
+    "auditor": "PricewaterhouseCoopers LLP",
+    "opinion": "unqualified",
+    "going_concern": false,
+    "fiscal_years": ["2024", "2023", "2022"],
+    "total_revenue_2024": 975292000,
+    "net_income_2024": 397040000,
+    "total_assets_2024": 390053000,
+    "members_equity_2024": 317391000,
+    "distributions_2024": 683307000,
+    "securitization_guarantee": 5685000000,
+    "restricted_cash_2024": 89975000,
+    "vendor_funds_revenue_2024": 136462000,
+    "operating_expense_drop_2023_to_2024": -374381000,
+    "source_pages": [697, 698, 699, 700, 701, 702, 703, 704]
+  },
+
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "North Dakota", "New York", "Rhode Island", "Virginia", "Washington"],
+    "key_overrides": {
+      "noncompete_void": ["California"],
+      "forum_selection_limited": ["California", "North Dakota"],
+      "general_release_restricted": ["California", "Maryland", "Minnesota", "Washington"],
+      "choice_of_law_limited": ["California", "North Dakota"]
+    },
+    "source_pages": [918, 919, 920, 921]
+  },
+
+  "unresolveds": [
+    {"id": "U1", "description": "Unaudited interim statements location", "severity": "medium", "source": "Item 21, p.112"},
+    {"id": "U2", "description": "Business Developer compensation formulas", "severity": "low", "source": "Item 2, p.29"},
+    {"id": "U3", "description": "Securitization implications for franchisee claims", "severity": "high", "source": "Item 1/Note 5, pp.8-25, 711"},
+    {"id": "U4", "description": "Fresh Forward 2.0 remodel costs undisclosed", "severity": "medium", "source": "Item 7 Note 3, p.55"},
+    {"id": "U5", "description": "Future Digital Technology Fee undisclosed", "severity": "medium", "source": "Item 6 Note 14, p.49"}
+  ],
+
+  "contradictions": [
+    {"id": "C1", "description": "Operating expenses dropped $374M while revenue flat — restructured affiliate fees, not organic improvement", "items_involved": ["Item 21"], "resolution_status": "explained_in_notes", "source_pages": [702, 710, 711]}
+  ],
+
+  "special_risks": [
+    {"risk": "Out-of-State Dispute Resolution", "description": "Arbitration/litigation only in Connecticut", "source_pages": [4]}
+  ]
+}

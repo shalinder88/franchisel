@@ -1,0 +1,102 @@
+{
+  "slug": "pillar-to-post-home-inspectors",
+  "name": "Pillar To Post Home Inspectors",
+  "schema_version": 1,
+  "source_batch": "first200",
+  "current_snapshot": {
+    "legal_name": "Pillar To Post, Inc.",
+    "parent": "FS Brands, Inc.",
+    "headquarters": null,
+    "fdd_filing_year": 2025,
+    "issuance_date": "2025-03-25",
+    "franchise_fee_headline": null,
+    "investment_range_headline": "$102,690 to $134,290",
+    "royalty_headline": null,
+    "ad_fund_headline": null,
+    "term_headline": null,
+    "renewal_headline": null,
+    "territory_headline": "Non-exclusive",
+    "item_19_present": true,
+    "system_total_units": null,
+    "franchised_units": null,
+    "company_owned_units": 0
+  },
+  "economics": {
+    "franchise_fee_raw": null,
+    "royalty_raw": null,
+    "ad_fund_raw": null,
+    "investment_low_raw": 102690,
+    "investment_high_raw": 134290
+  },
+  "item19_quality": {
+    "present": true,
+    "cohort_n": null,
+    "average": null,
+    "median": null
+  },
+  "item20_system_movement": {
+    "system_total": null,
+    "franchised": null,
+    "company_owned": 0,
+    "openings": null,
+    "closures": null,
+    "transfers": null
+  },
+  "contract_burden": {
+    "term_years": null,
+    "renewal": null
+  },
+  "territory_reality": {
+    "headline": "Non-exclusive"
+  },
+  "state_overrides": null,
+  "financial_strength": {
+    "auditor": "PricewaterhouseCoopers LLP (Toronto)",
+    "audit_opinion": "Unqualified",
+    "fiscal_year_end": null,
+    "bankruptcy_flag": null,
+    "litigation_pending": null
+  },
+  "red_flags": [],
+  "validation_questions": [
+    "Confirm Item 19 cohort size and definition with franchisor."
+  ],
+  "filing_changes": [],
+  "source_evidence": {
+    "primary_run_path": "/Users/shelly/Franchiese/runs/fresh-31-637937-2025-non-exclusive-territory-20260415-104142",
+    "primary_run_folder": "fresh-31-637937-2025-non-exclusive-territory-20260415-104142",
+    "primary_fdd_id": "637937",
+    "harvest_paths": [],
+    "filing_year": 2025,
+    "canonical_schema": "B",
+    "phase": "first200",
+    "slot": 31
+  },
+  "internal_unresolveds": [
+    {
+      "topic": "unspecified",
+      "reason": "System shrinkage unexplained \u2014 73 units lost in 3 years with zero projected openings"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Pillar To Post standalone financials not available \u2014 only FS Brands consolidated"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "No cost/EBITDA data in Item 19 FPR \u2014 sales only"
+    },
+    {
+      "topic": "unspecified",
+      "reason": "Item 20 Table 1 exclusive count formatting issue \u2014 shows 2 instead of 36"
+    },
+    {
+      "topic": "contradiction",
+      "reason": "Item 20 Table 1 (Exclusive) shows 2024 end-of-year as 2 but Table 3 totals show 36. Likely net change value displayed as ending count."
+    },
+    {
+      "topic": "contradiction",
+      "reason": "PTP360 fee in franchise agreement Section 4.5 is $3.00/inspection but FDD Item 6 lists $3.10/inspection. Minor \u2014 Item 6 reflects current adjusted fee."
+    }
+  ],
+  "_status": "PARTIAL"
+}
