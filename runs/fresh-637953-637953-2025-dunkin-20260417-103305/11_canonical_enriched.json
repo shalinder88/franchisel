@@ -1,0 +1,118 @@
+{
+  "_enrichment_version": "v1",
+  "_base_source": "09_final_canonical.json",
+  "_enrichment_layers": ["item19_chart_detail", "item20_yearly_activity", "exhibit_structure", "item1_structural_facts", "item6_fee_attributes"],
+  "document_identity": {
+    "entity": "Dunkin' Donuts Franchising LLC",
+    "brand": "Dunkin'",
+    "issue_date": "March 27, 2025",
+    "amendment_date": "October 24, 2025",
+    "filing_id": "637953",
+    "pdf_pages": 574
+  },
+  "item19_chart_detail": {
+    "representations_count": 4,
+    "representation_1": {
+      "title": "Overall AUV with Quartiles",
+      "population": 7190,
+      "overall_auv": 1304217,
+      "overall_median": 1240107,
+      "quartile_spread_ratio": 3.2,
+      "pct_above_average": 45,
+      "revenue_only": true,
+      "cost_data": false
+    },
+    "representation_2": {
+      "title": "AUV by Region and Division",
+      "regions": 9,
+      "highest_region": {"name": "Northeast/New England", "auv": 1448073},
+      "lowest_region": {"name": "South/West South Central", "auv": 953320}
+    },
+    "representation_3": {
+      "title": "AUV by Site Type and Venue",
+      "venue_types": 6,
+      "highest_venue": {"name": "Traditional/Freestanding", "auv": 1534772},
+      "lowest_venue": {"name": "SDO-Other", "auv": 723001}
+    },
+    "representation_4": {
+      "title": "AUV by Drive-Thru Status (Traditional Only)",
+      "drivethru_premium_pct": 39,
+      "drivethru_auv": 1508901,
+      "no_drivethru_auv": 1082835
+    }
+  },
+  "item20_yearly_activity": {
+    "dunkin_standalone": {
+      "2022": {"start": 8010, "opened": 271, "closed_total": 194, "end": 8087, "net": 77, "transfers": 392},
+      "2023": {"start": 8087, "opened": 344, "closed_total": 166, "end": 8265, "net": 178, "transfers": 224},
+      "2024": {"start": 8265, "opened": 312, "closed_total": 96, "end": 8465, "net": 200, "transfers": 137}
+    },
+    "combo": {
+      "2022": {"start": 1234, "opened": 43, "closed_total": 23, "end": 1252, "net": 18},
+      "2023": {"start": 1252, "opened": 52, "closed_total": 21, "end": 1283, "net": 31},
+      "2024": {"start": 1283, "opened": 31, "closed_total": 45, "end": 1269, "net": -14}
+    },
+    "three_year_trends": {
+      "openings_trend": "stable_high",
+      "closures_trend": "declining_sharply",
+      "transfer_trend": "declining",
+      "net_growth_trend": "accelerating"
+    }
+  },
+  "exhibit_structure": {
+    "total_exhibits": 20,
+    "high_priority": ["B", "C-1", "D-1", "E", "I"],
+    "franchise_agreement_pages": 32,
+    "development_agreement_pages": 19,
+    "state_addenda_pages": 23,
+    "financial_statements_pages": 53,
+    "franchisee_list_pages": 206,
+    "total_exhibit_pages": 466
+  },
+  "item1_structural_facts": {
+    "securitization_year": 2015,
+    "guarantor": "DB Master Finance Parent LLC",
+    "guarantor_type": "Absolute and unconditional",
+    "management_entity": "Dunkin' Brands, Inc.",
+    "inspire_brands_acquisition_year": 2020,
+    "roark_capital_ownership": true,
+    "sister_brand_count": 17,
+    "us_restaurant_count": 9768,
+    "international_count": 4328,
+    "total_global": 14096,
+    "pure_franchisor": true
+  },
+  "item6_fee_attributes": {
+    "total_ongoing_pct": 12.3,
+    "cff_rate": 5.9,
+    "caf_rate": 5.0,
+    "loyalty_rate": 1.4,
+    "cff_is_negotiable": false,
+    "incentive_programs_available": true,
+    "incentive_market_count": 6,
+    "max_cff_reduction": "1.9% (Brewed for Growth, years 1-5)",
+    "ad_fund_admin_cap_pct": 20,
+    "ad_fund_audited": true,
+    "transfer_fee_structure": "tiered_by_gross_sales"
+  },
+  "item5_initial_fees": {"iff_range": {"low": 40000, "high": 90000}},
+  "item7_total_investment": {"freestanding": {"low": 526900, "high": 1832500}, "storefront": {"low": 437500, "high": 1333500}, "gas_convenience": {"low": 210900, "high": 1065500}},
+  "item12_territory": {"exclusive": false, "sda_protection": true, "sda_protection_conditional": true},
+  "item17_renewal": {"term_years": 20, "renewal_available": true, "materially_different_risk": true},
+  "item17_noncompete": {"during_term": true, "post_term_months": 24, "radius_miles": 5},
+  "item17_dispute_resolution": {"arbitration": false, "forum": "Atlanta, Georgia", "governing_law": "Georgia"},
+  "item19_fpr": {"fpr_provided": true, "overall_auv": 1304217, "cost_data": false},
+  "item20_outlets": {"end_2024_total": 9768, "net_growth_2024": 200, "gag_clause": true},
+  "item21_financial_statements": {"auditor": "KPMG", "opinion": "unqualified", "going_concern": false, "net_income_2024": 585009000},
+  "unresolveds": [
+    {"id": "UR-001", "description": "Item 19 provides only AUV — no cost/profitability data", "severity": "high"},
+    {"id": "UR-002", "description": "Franchise Agreement not clause-walked", "severity": "medium"},
+    {"id": "UR-003", "description": "State addenda partially extracted", "severity": "medium"},
+    {"id": "UR-004", "description": "Financial statement notes partially read", "severity": "medium"},
+    {"id": "UR-005", "description": "Cup with D' trademark unregistered", "severity": "low"},
+    {"id": "UR-006", "description": "Securitization debt complexity", "severity": "medium"}
+  ],
+  "contradictions": [
+    {"id": "CD-001", "description": "TOC page numbers don't match actual pagination", "resolution_status": "resolved"}
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "depth_block": "thin_family_thickening",
+  "items": {
+    "item2_leadership": {
+      "note": "Full leadership roster spans pages 26-29 with many officers/directors of DAL, SWSH, FWH, FWHT. Named individuals extracted where individually surfaced. Complete structured array would require line-by-line extraction of all names, which number in the dozens across multiple affiliated entities.",
+      "named_individuals": [
+        {"name": "David Strawhince", "role": "Senior Global Account Manager, FWH", "tenure": "Since April 2021", "source_pages": [29]},
+        {"name": "Hector Trejo", "role": "Global Account Manager, FWH", "tenure": "Since February 2023", "source_pages": [29]},
+        {"name": "Faneva Durandisse", "role": "Assistant Manager Non-Traditional, FWH", "tenure": "Since July 2023", "source_pages": [29]},
+        {"name": "Benjamin Selden", "role": "CFO of SWSH, SUIPH, FWH, FWHT, DAL, Subway MyWay LLC", "tenure": "Not specified", "source_pages": [29]}
+      ],
+      "source_pages": [26, 27, 28, 29]
+    },
+    "item9_obligations": {
+      "obligations": [
+        {"category": "site_selection", "fa_section": "Section 4", "fdd_items": "Items 1,6,7,8,11,12"},
+        {"category": "pre_opening_purchases", "fa_section": "Section 5,7,10", "fdd_items": "Items 7,8,10"},
+        {"category": "site_development", "fa_section": "Section 5,6,7,10", "fdd_items": "Items 6,7,8,11,17"},
+        {"category": "training", "fa_section": "Section 6,10", "fdd_items": "Items 11,15"},
+        {"category": "opening", "fa_section": "Section 6,10", "fdd_items": "Items 7,11"},
+        {"category": "fees", "fa_section": "Key Contract Data, Section 3,4,6,10,11,13,16,18-24", "fdd_items": "Items 5,6,7,10,17"},
+        {"category": "compliance", "fa_section": "Section 5,6,8,9,10-16,21,22,24", "fdd_items": "Items 8,16,17"},
+        {"category": "trademarks", "fa_section": "Section 5,8,15,19,23", "fdd_items": "Items 6,13,14,17"},
+        {"category": "product_restrictions", "fa_section": "Section 9,10,11,12,14", "fdd_items": "Items 8,16"},
+        {"category": "warranty", "fa_section": "Section 9,10", "fdd_items": "Items 8,16"}
+      ],
+      "source_pages": [65, 66, 67]
+    },
+    "item12_territory_burden": {
+      "obligations": ["Must operate only at single approved site", "May not exclude or control location of any other Subway"],
+      "restrictions": ["No exclusive territory", "No radius restrictions", "No population requirements", "May not sell from unapproved locations", "Must get written approval for advertising methods"],
+      "rights": ["May solicit orders from restaurant location", "May relocate if lease terminates without fault (at own expense)"],
+      "source_pages": [80, 81]
+    },
+    "item15_participation_burden": {
+      "obligations": ["On-premises supervision required (franchisee or Designated Manager)", "Must keep franchisor informed of DM identity", "Must hire and manage all personnel", "Must keep restaurant open within Operations Manual hours"],
+      "restrictions": ["DM not required to own equity", "Confidentiality obligation during and after term", "Noncompete: no competitive business during term (anywhere) and 1 year post-term (3 miles)"],
+      "rights": ["May employ DM instead of personal supervision"],
+      "triggers": ["Franchisor may require DM training if standards not met (30-day notice)"],
+      "source_pages": [84, 85]
+    },
+    "item16_sales_restrictions_burden": {
+      "obligations": ["Must offer all designated required goods", "Must follow MOP decisions for market", "Must comply with all Operations Manual methods and procedures"],
+      "restrictions": ["May not operate any other business at location without written consent", "May not sell any non-approved goods or services", "Co-branding requires separate franchise agreement with third party"],
+      "rights": ["May make SOP decisions for individual restaurant", "May request waiver for market-level MOP decisions"],
+      "source_pages": [85, 86]
+    },
+    "item18_public_figures": {
+      "used": false,
+      "source_pages": [94]
+    }
+  }
+}

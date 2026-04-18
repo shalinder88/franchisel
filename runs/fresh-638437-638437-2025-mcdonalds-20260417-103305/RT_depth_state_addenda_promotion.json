@@ -1,0 +1,29 @@
+{
+  "extraction_date": "2026-04-17",
+  "phase": "A2_depth_pass_4",
+  "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota", "Washington"],
+  "overrides": [
+    {"state": "California", "affected_family": "compliance", "override_summary": "California Fast Food Act (AB 1228) compliance is franchisee's sole responsibility. No training, assistance, or fees from McDonald's.", "why_it_matters": "California franchisees face higher labor costs due to state-mandated minimum wage and working condition standards. The franchisor provides no support.", "source_pages": [383]},
+    {"state": "Hawaii", "affected_family": "anti_waiver", "override_summary": "No signed statement, questionnaire, or acknowledgment may waive claims under applicable state franchise law (including fraud in the inducement) or disclaim reliance on franchisor statements.", "why_it_matters": "Preserves franchisee's right to pursue franchise law claims regardless of contract acknowledgments. Sections 28(b),(c),(d),(i) of FA are deleted for Hawaii.", "source_pages": [383, 384]},
+    {"state": "Maryland", "affected_family": "release", "override_summary": "Any release required for renewal or transfer does not apply to liability under Maryland Franchise Registration and Disclosure Law.", "why_it_matters": "Franchisee cannot be forced to release Maryland franchise law claims as a condition of renewal or transfer.", "source_pages": [384]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law (11 USC §101 et seq.).", "why_it_matters": "Bankruptcy filing may not automatically trigger franchise termination in Maryland.", "source_pages": [384]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Franchisee may bring claims arising under MD Franchise Law in Maryland, subject to any arbitration obligations.", "why_it_matters": "Overrides the Illinois forum selection for Maryland franchise law claims.", "source_pages": [384]},
+    {"state": "Maryland", "affected_family": "governing_law", "override_summary": "Maryland law may apply to MD Franchise Law claims, subject to arbitration obligation.", "why_it_matters": "Supplements Illinois governing law for state-specific claims.", "source_pages": [384]},
+    {"state": "Maryland", "affected_family": "statute_of_limitations", "override_summary": "MD Franchise Law claims must be brought within 3 years after the grant of the franchise.", "why_it_matters": "Sets a specific limitations period for Maryland claims.", "source_pages": [384]},
+    {"state": "Minnesota", "affected_family": "trademarks", "override_summary": "McDonald's protects franchisees against claims of infringement or unfair competition arising from authorized mark use.", "why_it_matters": "Explicit trademark defense commitment for Minnesota franchisees.", "source_pages": [384]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days notice of termination (60 days to cure); 180 days notice of non-renewal. Transfer consent not unreasonably withheld. Nothing abrogates Minn. Stat. Ch. 80C.", "why_it_matters": "Significantly stronger termination protection. Cure period and advance notice requirements exceed base franchise agreement.", "source_pages": [385]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Post-term noncompete covenants generally considered unenforceable in North Dakota.", "why_it_matters": "The 18-month/10-mile noncompete is likely void in North Dakota.", "source_pages": [385]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "North Dakota law governs claims arising under the North Dakota Franchise Investment Law.", "why_it_matters": "Overrides Illinois governing law for ND franchise law claims.", "source_pages": [385]},
+    {"state": "Washington", "affected_family": "franchise_act", "override_summary": "If WA Franchise Investment Protection Act (RCW §19.100.180) applies, its provisions prevail over inconsistent franchise agreement terms.", "why_it_matters": "Washington state law overrides conflicting franchise agreement provisions.", "source_pages": [385]},
+    {"state": "Washington", "affected_family": "no_poach", "override_summary": "Assurance of Discontinuance with WA AG: removed no-poach/no-solicitation provision from franchise agreements. Agreed not to enforce in existing agreements. Requested amendment by franchisees. No fines assessed.", "why_it_matters": "Major antitrust concession. Franchise employees in Washington are free to work at other McDonald's locations.", "source_pages": [385]}
+  ],
+  "summary_table": {
+    "rows": ["compliance", "anti_waiver", "release", "termination", "forum_selection", "governing_law", "statute_of_limitations", "trademarks", "noncompete", "franchise_act", "no_poach"],
+    "california": ["X", "", "", "", "", "", "", "", "", "", ""],
+    "hawaii": ["", "X", "", "", "", "", "", "", "", "", ""],
+    "maryland": ["", "", "X", "X", "X", "X", "X", "", "", "", ""],
+    "minnesota": ["", "", "", "X", "", "", "", "X", "", "", ""],
+    "north_dakota": ["", "", "", "", "", "X", "", "", "X", "", ""],
+    "washington": ["", "", "", "", "", "", "", "", "", "X", "X"]
+  }
+}
