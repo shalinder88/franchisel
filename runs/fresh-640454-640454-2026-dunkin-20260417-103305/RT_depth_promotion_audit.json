@@ -1,0 +1,17 @@
+{
+  "depth_pass": "A2_promotion_audit",
+  "promoted_facts": [
+    {"fact": "Securitization notes total $4.639 billion with company as guarantor and all assets pledged", "source": "Note 7 Commitments/Contingencies p.134", "promoted_to": "item21_financial_statements.securitization_total"},
+    {"fact": "Company has NO employees — all services performed by DBI under management agreement", "source": "Note 8 Related Party p.135", "promoted_to": "item1_affiliates.management_structure"},
+    {"fact": "Deferred franchise fees grew from $119M (2023) to $194M (2025) — reflecting accelerating system development", "source": "Note 5 Revenue Recognition p.133", "promoted_to": "item21_financial_statements.deferred_franchise_fees"},
+    {"fact": "2025 Fixed Rate Notes ($900M) issued Nov 2025; proceeds used to repay prior notes and distribute to Inspire", "source": "Note 7 p.134", "promoted_to": "item21_financial_statements.recent_financing"},
+    {"fact": "Available borrowing capacity: $61.2M (2019 VFN) + $793.6M (2023 VFN) = $854.8M total", "source": "Note 7 p.134", "promoted_to": "item21_financial_statements.available_capacity"},
+    {"fact": "Accrued settlements $1.881M (2025) — relates to litigation/dispute settlements", "source": "Note 3 p.132", "promoted_to": "item3_litigation.accrued_settlements"},
+    {"fact": "Dunkin' Brands Inc. consolidated total assets $13.8B with $8.2B intangibles + $3.6B goodwill", "source": "DBI Balance Sheet p.140", "promoted_to": "item21_financial_statements.dbi_consolidated"},
+    {"fact": "DBI long-term debt $4.6B — securitization notes at parent level", "source": "DBI Balance Sheet p.140", "promoted_to": "item21_financial_statements.dbi_debt"},
+    {"fact": "DBI deferred tax liabilities $1.9B — significant tax shield from acquisition intangibles", "source": "DBI Balance Sheet p.140", "promoted_to": "item21_financial_statements.dbi_tax_shield"},
+    {"fact": "Minnesota requires 90-day termination notice with 60-day cure and 180-day non-renewal notice", "source": "State Addenda p.328", "promoted_to": "state_addenda_overrides"},
+    {"fact": "North Dakota — post-term noncompete generally considered unenforceable", "source": "State Addenda p.330", "promoted_to": "state_addenda_overrides"},
+    {"fact": "Forum selection overridden in Maryland, Michigan, Minnesota, North Dakota", "source": "State Addenda pp.327-330", "promoted_to": "state_addenda_overrides"}
+  ]
+}

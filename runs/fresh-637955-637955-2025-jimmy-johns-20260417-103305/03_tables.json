@@ -1,0 +1,265 @@
+{
+  "tables": [
+    {
+      "id": "T06_01",
+      "item": 6,
+      "title": "Other Fees — Ongoing Fees",
+      "source_pages": [32, 33, 34, 35, 36, 37, 38, 39, 40],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Royalty", "amount": "6% of weekly Gross Sales", "due": "Wednesday each week", "remarks": "Gross Sales defined; excludes taxes, JJ gift card sales, reduced by refunds/credits"},
+        {"fee": "Advertising & Development Fund", "amount": "Up to 4.5% weekly GS (currently 4.5%); 2.25% Non-Traditional", "due": "Wednesday each week", "remarks": "See Item 11"},
+        {"fee": "Cooperative Advertising", "amount": "Up to 2% of Gross Sales", "due": "As cooperative directs", "remarks": "See Item 11"},
+        {"fee": "Successor Franchise", "amount": "$10,000", "due": "Upon renewal", "remarks": ""},
+        {"fee": "Site Design/Kitchen Layout", "amount": "$1,200 PSL / $750-$1,200 PKL", "due": "Upon request", "remarks": "PSL only for drive-thru locations"},
+        {"fee": "Training (additional)", "amount": "$1,500/person ($2,000 expelled re-attending); may increase to $5,000", "due": "Upon registration", "remarks": "2 free for initial training; 3 for first-time franchisees"},
+        {"fee": "New Training/Additional Support", "amount": "$400-$600/person/day + expenses; may increase to $1,000", "due": "When begins", "remarks": ""},
+        {"fee": "District Manager Training", "amount": "$2,000; may increase to $5,000", "due": "Upon registration", "remarks": ""},
+        {"fee": "Controlling Transfer", "amount": "$2,500 / $7,500 / $12,500", "due": "½ upon request, balance before transfer", "remarks": "$12,500 new franchisee; $7,500 existing; $2,500 family"},
+        {"fee": "Non-Controlling Transfer", "amount": "$1,000", "due": "Before proposed effective date", "remarks": ""},
+        {"fee": "Product & Service Purchases", "amount": "See Item 8", "due": "As incurred", "remarks": ""},
+        {"fee": "Testing", "amount": "Cost of testing", "due": "When billed", "remarks": "For new products/suppliers"},
+        {"fee": "Relocation", "amount": "$2,500 + costs", "due": "As incurred", "remarks": ""},
+        {"fee": "Computer Systems/Maintenance", "amount": "Costs of service", "due": "As incurred", "remarks": "May charge in future"},
+        {"fee": "Franchisee Convention", "amount": "Up to $500", "due": "When billed", "remarks": "Plus travel/living expenses"},
+        {"fee": "Regional Advisory Council", "amount": "Council assessments", "due": "When billed", "remarks": ""}
+      ],
+      "contingent_rows": [
+        {"fee": "Audit", "amount": "Cost of audit", "due": "15 days after report", "remarks": "If understate >3% or fail to report"},
+        {"fee": "Interest", "amount": "1.5%/month or max legal", "due": "When billed", "remarks": "On amounts >7 days late"},
+        {"fee": "Non-Approved Opening", "amount": "$2,500/day", "due": "When billed", "remarks": ""},
+        {"fee": "Non-Compliance", "amount": "$250-$1,000/deviation", "due": "When billed", "remarks": "$250 first; $500 1st repeat; $1,000 subsequent"},
+        {"fee": "Unauthorized Advertising", "amount": "$1,000/occurrence", "due": "When billed", "remarks": ""},
+        {"fee": "Late Fee", "amount": "10% of amount due", "due": "When billed", "remarks": ""},
+        {"fee": "Manual Replacement", "amount": "$500", "due": "15 days after billing", "remarks": ""},
+        {"fee": "Management Fee", "amount": "$600/person/day + expenses", "due": "As incurred", "remarks": "Death/disability/default/abandonment"},
+        {"fee": "Liquidated Damages", "amount": "Up to 36 months × avg monthly royalty", "due": "15 days after termination", "remarks": "On cause termination only"},
+        {"fee": "Maintenance Reimbursement", "amount": "$600/day + costs", "due": "As incurred", "remarks": "Sub-standard condition correction"},
+        {"fee": "Customer Complaint Reimb.", "amount": "Out-of-pocket cost", "due": "As incurred", "remarks": ""},
+        {"fee": "Insurance Reimb.", "amount": "Out-of-pocket cost", "due": "As incurred", "remarks": ""},
+        {"fee": "Tax Reimb.", "amount": "Out-of-pocket cost", "due": "As incurred", "remarks": ""},
+        {"fee": "De-identification Reimb.", "amount": "Out-of-pocket cost", "due": "As incurred", "remarks": ""},
+        {"fee": "Costs & Attorneys' Fees", "amount": "Varies", "due": "As incurred", "remarks": ""},
+        {"fee": "Indemnification", "amount": "Varies", "due": "As incurred", "remarks": ""}
+      ],
+      "table_notes": [
+        "All fees non-refundable. Royalty may be negotiated for certain Non-Traditional Locations.",
+        "EDTA auto-debit required for all fees. May debit 120% of prior week if Gross Sales not reported.",
+        "Multi-Brand Locations: additional fees under Other Franchisor agreements."
+      ]
+    },
+    {
+      "id": "T06_02",
+      "item": 6,
+      "title": "Incentive Royalty Schedules",
+      "source_pages": [37, 38, 39, 40],
+      "sub_tables": [
+        {
+          "name": "NRO / Deeper NRO Royalty Schedule",
+          "rows": [
+            {"period": "Opening through Year 1", "royalty": "1%"},
+            {"period": "Year 2", "royalty": "2%"},
+            {"period": "Year 3", "royalty": "4%"},
+            {"period": "Year 4 through remainder", "royalty": "6%"}
+          ]
+        },
+        {
+          "name": "SDM / Deeper SDM Royalty Schedule",
+          "rows": [
+            {"period": "Opening through Year 1", "royalty": "1%"},
+            {"period": "Year 2", "royalty": "2%"},
+            {"period": "Year 3", "royalty": "3%"},
+            {"period": "Year 4", "royalty": "4%"},
+            {"period": "Year 5", "royalty": "5%"},
+            {"period": "Year 6 through remainder", "royalty": "6%"}
+          ]
+        },
+        {
+          "name": "Drive-Thru Remodel/Relocation Incentive",
+          "rows": [
+            {"period": "Re-opening through Year 1", "royalty": "2%"},
+            {"period": "Year 2", "royalty": "3%"},
+            {"period": "Year 3", "royalty": "4%"},
+            {"period": "Year 4 through remainder", "royalty": "6%"}
+          ]
+        },
+        {
+          "name": "Deeper NRO Fund Contribution Schedule",
+          "rows": [
+            {"period": "Opening through Year 1", "rate": "2%"},
+            {"period": "Year 2 through Year 3", "rate": "3%"},
+            {"period": "Year 4 through remainder", "rate": "4.5%"}
+          ]
+        },
+        {
+          "name": "Deeper SDM Fund Contribution Schedule",
+          "rows": [
+            {"period": "Opening through Year 1", "rate": "1%"},
+            {"period": "Year 2 through Year 3", "rate": "2%"},
+            {"period": "Year 4 through remainder", "rate": "4.5%"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T07_01",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [41, 42],
+      "columns": ["Type of Expenditure", "Low", "High", "Method", "When Due", "To Whom"],
+      "rows": [
+        {"type": "Initial Franchise Fee", "low": 35000, "high": 35000, "to_whom": "Franchisor"},
+        {"type": "Real Estate/Rent (1 month)", "low": 2500, "high": 8000, "to_whom": "Landlord"},
+        {"type": "Security Deposit", "low": 2500, "high": 8000, "to_whom": "Landlord"},
+        {"type": "Leasehold Improvements", "low": 115000, "high": 310000, "to_whom": "Outside Suppliers"},
+        {"type": "FF&E incl. POS", "low": 120000, "high": 215000, "to_whom": "Outside Suppliers"},
+        {"type": "Architect/Design Services", "low": 9500, "high": 22000, "to_whom": "Architect or affiliate"},
+        {"type": "Office Equipment", "low": 2200, "high": 2200, "to_whom": "Outside Suppliers"},
+        {"type": "Utility Deposits", "low": 1000, "high": 2000, "to_whom": "Utility Companies"},
+        {"type": "Opening Inventory & Supplies", "low": 6000, "high": 6000, "to_whom": "Designated/Approved Suppliers"},
+        {"type": "Grand Opening Event", "low": 3000, "high": 5000, "to_whom": "Advertising Sources"},
+        {"type": "Training Expenses (up to 3 people)", "low": 6000, "high": 15000, "to_whom": "Third Parties"},
+        {"type": "Insurance (1 year)", "low": 11500, "high": 15000, "to_whom": "Insurance Company"},
+        {"type": "Miscellaneous", "low": 2000, "high": 10000, "to_whom": "Advisors and Others"},
+        {"type": "Additional Funds (3 months)", "low": 50000, "high": 75000, "to_whom": "Employees and Suppliers"}
+      ],
+      "total": {"low": 366200, "high": 728200},
+      "table_notes": [
+        "Excludes real estate purchase costs.",
+        "Except security deposit and some utility deposits, no expenditure is refundable.",
+        "Restaurant typically 1,000-1,800 sq ft.",
+        "Drive-thru locations are more expensive (larger size, additional construction/equipment).",
+        "No franchisor financing offered."
+      ]
+    },
+    {
+      "id": "T19_01",
+      "item": 19,
+      "title": "Average Unit Volume — Overall Quartiles",
+      "source_pages": [79],
+      "population": 2529,
+      "fiscal_year": "2024 (Jan 1 - Dec 29, 2024)",
+      "rows": [
+        {"quartile": "1st", "count": 632, "auv": 1455501, "median": 1366055, "highest": 3269663, "lowest": 1192737, "above_avg_count": 224, "above_avg_pct": 35},
+        {"quartile": "2nd", "count": 632, "auv": 1058718, "median": 1053373, "highest": 1192443, "lowest": 935075, "above_avg_count": 307, "above_avg_pct": 49},
+        {"quartile": "3rd", "count": 633, "auv": 834012, "median": 833617, "highest": 935022, "lowest": 730059, "above_avg_count": 316, "above_avg_pct": 50},
+        {"quartile": "4th", "count": 632, "auv": 596390, "median": 620024, "highest": 729796, "lowest": 197539, "above_avg_count": 376, "above_avg_pct": 59},
+        {"quartile": "All", "count": 2529, "auv": 986095, "median": 935022, "highest": 3269663, "lowest": 197539, "above_avg_count": 1123, "above_avg_pct": 44}
+      ],
+      "exclusions": ["88 restaurants opened in 2024 (not full year)", "24 closed for extended periods (remodel/casualty/relocation)", "20 multi-brand locations", "43 restaurants that closed in 2024", "42 company-owned restaurants"]
+    },
+    {
+      "id": "T19_02",
+      "item": 19,
+      "title": "Average Unit Volume — By Type and Drive-Thru",
+      "source_pages": [80],
+      "rows": [
+        {"type": "Traditional Locations", "count": 2507, "auv": 985107, "median": 935075, "highest": 2994494, "lowest": 197539, "above_avg_count": 1113, "above_avg_pct": 44},
+        {"type": "Non-Traditional Locations", "count": 22, "auv": 1098717, "median": 887476, "highest": 3269663, "lowest": 400218, "above_avg_count": 9, "above_avg_pct": 41},
+        {"type": "All Franchised", "count": 2529, "auv": 986095, "median": 935022, "highest": 3269663, "lowest": 197539, "above_avg_count": 1123, "above_avg_pct": 44},
+        {"type": "Drive-Thru (Traditional)", "count": 936, "auv": 1082680, "median": 1052647, "highest": 2994494, "lowest": 204927, "above_avg_count": 437, "above_avg_pct": 47},
+        {"type": "No Drive-Thru (Traditional)", "count": 1571, "auv": 926973, "median": 871854, "highest": 2285702, "lowest": 197539, "above_avg_count": 675, "above_avg_pct": 43}
+      ]
+    },
+    {
+      "id": "T20_01",
+      "item": 20,
+      "title": "Systemwide Outlet Summary (2022-2024)",
+      "source_pages": [81],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 2616, "end": 2597, "net": -19},
+        {"type": "Franchised", "year": 2023, "start": 2597, "end": 2604, "net": 7},
+        {"type": "Franchised", "year": 2024, "start": 2604, "end": 2647, "net": 43},
+        {"type": "Company-Owned", "year": 2022, "start": 41, "end": 40, "net": -1},
+        {"type": "Company-Owned", "year": 2023, "start": 40, "end": 40, "net": 0},
+        {"type": "Company-Owned", "year": 2024, "start": 40, "end": 42, "net": 2},
+        {"type": "Total", "year": 2022, "start": 2657, "end": 2637, "net": -20},
+        {"type": "Total", "year": 2023, "start": 2637, "end": 2644, "net": 7},
+        {"type": "Total", "year": 2024, "start": 2644, "end": 2689, "net": 45}
+      ]
+    },
+    {
+      "id": "T20_03",
+      "item": 20,
+      "title": "Franchised Outlet Status Summary (2024 totals)",
+      "source_pages": [85, 86, 87, 88, 89, 90],
+      "year": 2024,
+      "summary": {
+        "start": 2602,
+        "opened": 88,
+        "terminated": 1,
+        "non_renewals": 13,
+        "reacquired": 0,
+        "ceased_other": 29,
+        "end": 2647
+      },
+      "note": "2024 start count 2602 differs from Table 1 start of 2604; possible rounding or timing difference in state-level aggregation"
+    },
+    {
+      "id": "T20_05",
+      "item": 20,
+      "title": "Projected Openings (as of Dec 29, 2024)",
+      "source_pages": [91, 92],
+      "totals": {
+        "agreements_signed_not_open": 76,
+        "projected_new_franchised": 59,
+        "projected_new_company_owned": 0
+      }
+    },
+    {
+      "id": "T21_BS",
+      "item": 21,
+      "title": "Balance Sheet (in thousands)",
+      "source_pages": [333],
+      "as_of": ["December 29, 2024", "December 31, 2023"],
+      "data": {
+        "2024": {
+          "restricted_cash": 24037,
+          "accounts_receivable_net": 3742,
+          "prepaid_other_current": 60,
+          "total_current_assets": 27839,
+          "intangible_assets_net": 749314,
+          "other_assets": 422,
+          "total_assets": 777575,
+          "accounts_payable": 689,
+          "deferred_revenue_current": 2105,
+          "accounts_payable_affiliates": 0,
+          "total_current_liabilities": 2794,
+          "noncurrent_deferred_revenue": 19541,
+          "total_liabilities": 22335,
+          "members_equity": 755240,
+          "total_liabilities_equity": 777575
+        },
+        "2023": {
+          "restricted_cash": 13835,
+          "accounts_receivable_net": 3798,
+          "prepaid_other_current": 60,
+          "total_current_assets": 17693,
+          "intangible_assets_net": 774608,
+          "other_assets": 481,
+          "total_assets": 792782,
+          "accounts_payable": 95,
+          "deferred_revenue_current": 1744,
+          "accounts_payable_affiliates": 3603,
+          "total_current_liabilities": 5442,
+          "noncurrent_deferred_revenue": 16167,
+          "total_liabilities": 21609,
+          "members_equity": 771173,
+          "total_liabilities_equity": 792782
+        }
+      }
+    },
+    {
+      "id": "T21_IS",
+      "item": 21,
+      "title": "Statements of Income (in thousands)",
+      "source_pages": [334],
+      "periods": ["Year Ended Dec 29, 2024", "Year Ended Dec 31, 2023", "Year Ended Jan 1, 2023"],
+      "data": {
+        "2024": {"revenue": 153698, "management_fee": 31323, "amortization": 25294, "other_operating": 8, "total_operating_expenses": 56625, "income_from_operations": 97073, "interest_income": 530, "net_income": 97603},
+        "2023": {"revenue": 152869, "management_fee": 29839, "amortization": 25294, "other_operating": 50, "total_operating_expenses": 55183, "income_from_operations": 97686, "interest_income": 374, "net_income": 98060},
+        "2022": {"revenue": 143161, "management_fee": 28362, "amortization": 26822, "other_operating": -4, "total_operating_expenses": 55180, "income_from_operations": 87981, "interest_income": 32, "net_income": 88013}
+      }
+    }
+  ]
+}

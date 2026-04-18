@@ -1,0 +1,150 @@
+{
+  "depth_pass": "A2_depth_pass_2",
+  "brand": "Jimmy John's",
+  "note": "Contract burdens extracted from Items 5-17 summary provisions and Exhibit B cross-references. Full Exhibit B clause walk deferred (82 pages) — key operative burdens captured below.",
+  "burdens": [
+    {
+      "family": "grant_and_term",
+      "obligation": "10-year initial term from opening date; one 10-year successor franchise on then-current terms (may be materially different)",
+      "trigger": "signing franchise agreement",
+      "source_pages": [74],
+      "money": "$10,000 successor franchise fee"
+    },
+    {
+      "family": "site_selection",
+      "obligation": "Must secure acceptable site within 12 months of signing FA; franchisor must approve site, lease, and general contractor",
+      "trigger": "signing FA without identified site",
+      "duration": "12 months",
+      "consequence": "termination if not met",
+      "source_pages": [51, 52, 66]
+    },
+    {
+      "family": "construction_development",
+      "obligation": "Must build to franchisor specifications; franchisor must approve all plans/specs; franchisor may designate general contractor; must open within 16 months of FA effective date",
+      "trigger": "site secured",
+      "consequence": "termination (non-curable) if not met",
+      "source_pages": [48, 49, 75]
+    },
+    {
+      "family": "training_obligations",
+      "obligation": "Operations Partner must complete 3-week training + 4-week apprenticeship before opening; if cannot complete to satisfaction, FA may be terminated (half of franchise fee kept). All certified managers must pass proficiency tests. Re-certification required if inactive 6+ months.",
+      "trigger": "before opening",
+      "consequence": "termination; half franchise fee forfeited",
+      "source_pages": [53, 54, 55, 60, 61]
+    },
+    {
+      "family": "shift_coverage",
+      "obligation": "10 certified-manager shifts/week (14/week for first 12 months of first restaurant). Operations Partner: 5 half-shifts/week (first restaurant).",
+      "trigger": "ongoing operations",
+      "source_pages": [55, 56]
+    },
+    {
+      "family": "district_manager",
+      "obligation": "Required for 3rd+ restaurant; 1 DM per 3-5 restaurants; cannot manage >5; must complete all certified manager training plus DM training program",
+      "trigger": "3rd restaurant",
+      "money": "$2,000 training fee",
+      "source_pages": [65]
+    },
+    {
+      "family": "fee_obligations",
+      "obligation": "6% royalty + 4.5% ad fund + 0.5% local marketing + up to 2% cooperative = up to 13% of Gross Sales, auto-debited weekly via EDTA",
+      "trigger": "opening",
+      "consequence": "interest at 1.5%/month; late fee 10%; if not reported, 120% of prior week debited",
+      "source_pages": [32, 40, 41]
+    },
+    {
+      "family": "supplier_restrictions",
+      "obligation": "Must buy Trade Secret Food Products and Branded Products exclusively from designated sources. Equipment and POS from designated suppliers. Insurance from A.M. Best A-VII rated insurer.",
+      "trigger": "ongoing operations",
+      "scope": "virtually 100% of purchases",
+      "source_pages": [45, 46, 47]
+    },
+    {
+      "family": "noncompete_during_term",
+      "obligation": "No ownership or services in competitive business anywhere",
+      "definition": "Competitive = >50% non-beverage revenue from submarine/hero/deli/wrapped sandwiches",
+      "scope": "worldwide",
+      "source_pages": [77, 78]
+    },
+    {
+      "family": "noncompete_post_term",
+      "obligation": "2 years post-expiration/termination",
+      "scope": "At premises; within 3 miles of premises; within 3 miles of any JJ restaurant existing at signing; within 1 mile of any JJ restaurant existing at termination",
+      "source_pages": [78]
+    },
+    {
+      "family": "transfer_restrictions",
+      "obligation": "No transfer without prior written consent. DRA development rights not assignable. ROFR: franchisor may match any offer.",
+      "conditions": "Transferee must qualify, train, sign current FA, upgrade/remodel, pay transfer fee ($2,500-$12,500), sign release, no defaults in 60-day lookback",
+      "source_pages": [76, 77]
+    },
+    {
+      "family": "termination_triggers_non_curable",
+      "obligation": "13 non-curable defaults: failure to secure site (12 mo), failure to open (16 mo), opening before approval, training failure, abandonment, loss of premises, unapproved transfers, material misrepresentation, felony, dishonest conduct, unauthorized disclosure, repeated defaults (even if cured), cross-default with other JJ agreements",
+      "source_pages": [75]
+    },
+    {
+      "family": "liquidated_damages",
+      "obligation": "Up to 36 months (or remaining term, whichever shorter) × average monthly royalty for 12 months preceding termination",
+      "trigger": "franchisor terminates with cause or franchisee terminates without cause",
+      "due": "within 15 days of termination effective date",
+      "source_pages": [41]
+    },
+    {
+      "family": "post_termination_obligations",
+      "obligation": "Pay outstanding amounts, complete de-identification, assign phone numbers, return confidential information",
+      "source_pages": [76]
+    },
+    {
+      "family": "indemnification",
+      "obligation": "Must reimburse franchisor and affiliates for claims from restaurant operation or costs to defend",
+      "scope": "unlimited",
+      "source_pages": [36]
+    },
+    {
+      "family": "guaranty",
+      "obligation": "Owners must sign Principal's Agreement (Guaranty and Assumption of Obligations) — all FA provisions apply to owners",
+      "scope": "personal liability for all FA obligations",
+      "source_pages": [8, 324]
+    },
+    {
+      "family": "insurance_requirements",
+      "obligation": "Property (100% replacement), business interruption (covers royalty), GL + umbrella, auto, workers' comp, EPLI, MVR affidavit. Franchisor/affiliates as additional insureds (CG2029). Primary and non-contributory. Minimum A.M. Best A-VII.",
+      "source_pages": [47]
+    },
+    {
+      "family": "edta_auto_debit",
+      "obligation": "Must sign EDTA authorization before opening. Franchisor may auto-debit all fees, purchases, and amounts owed. May debit before due date if payment appears at risk.",
+      "source_pages": [40]
+    },
+    {
+      "family": "cross_termination_multi_brand",
+      "obligation": "Under Multi-Brand Addendum, termination or expiration of Other Franchise Agreement triggers termination of JJ FA",
+      "trigger": "termination/expiration of Other Restaurant's franchise agreement",
+      "source_pages": [75]
+    },
+    {
+      "family": "dispute_resolution",
+      "obligation": "Litigation only in courts closest to franchisor's principal business address (currently Atlanta, GA); Georgia law governs",
+      "exceptions": "MD, MN, ND state riders override forum and governing law",
+      "source_pages": [78]
+    },
+    {
+      "family": "death_disability",
+      "obligation": "9 months to assign to approved party; franchisor may manage at $600/person/day + expenses",
+      "source_pages": [77]
+    },
+    {
+      "family": "option_to_assume_lease",
+      "obligation": "Must sign Option to Assume Lease (Exhibit B-5) with landlord when signing lease — gives franchisor right to Restaurant's site if franchise terminates/not renewed or franchisee loses possession",
+      "source_pages": [48]
+    }
+  ],
+  "distinctive_clauses": [
+    "Securitization SPV structure — franchisor is a special purpose vehicle that delegates all operations to affiliate JJF",
+    "120% auto-debit: if Gross Sales not reported on time, franchisor debits 120% of prior week's royalty and fund contribution",
+    "Expelled trainee wait period: must wait 6 months before re-applying; re-attendance costs $2,000",
+    "Non-Traditional College/University Incentive: existing franchisee gets royalty reduction on nearby restaurant when opening campus location",
+    "Pioneer Incentive: $50,000 royalty credit per restaurant for first developer of 5+ restaurants in AK, HI, ME, NH, RI, VT"
+  ]
+}

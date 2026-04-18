@@ -1,0 +1,80 @@
+{
+  "depth_pass": "A2_contract_burden",
+  "source": "Item 17 chart + targeted FA/DA section reads",
+  "franchise_agreement": {
+    "exhibit": "C-1",
+    "page_range": [165, 196],
+    "term": {"initial_years": 20, "renewal_years": 20, "sdo_no_renewal": true},
+    "fees": {"cff": "5.9%", "caf": "5.0% (2.5% SDO)", "loyalty": "1.4%", "payment": "weekly EFT"},
+    "site_selection": "Franchisee responsible; franchisor must accept site; 60-90 day approval",
+    "construction": "Must meet franchisor Standards and specifications; no deviations without written approval",
+    "termination_triggers": {
+      "curable": [
+        "Health/safety/sanitation violation — 24 hours",
+        "Ceasing operations without consent — 24 hours",
+        "Failure to pay — 7 days",
+        "Any other provision violation — 30 days"
+      ],
+      "non_curable": [
+        "Loss of Premises/lease termination",
+        "Unauthorized transfer",
+        "Unauthorized use of Confidential Information",
+        "Felony conviction/crime of moral turpitude",
+        "Fraud",
+        "Intentional underreporting of Gross Sales",
+        "Unauthorized use of Premises",
+        "Cross-default (another agreement terminated)",
+        "Three-strikes rule (3+ same/similar defaults in 12 months)",
+        "Bankruptcy"
+      ]
+    },
+    "transfer": {
+      "rofr_days": 60,
+      "controlling_conditions": 7,
+      "non_controlling_conditions": 3,
+      "death_transfer_months": 12,
+      "death_completion_months": 18,
+      "post_term_purchase_option_days": 30,
+      "purchase_price": "FMV less indebtedness"
+    },
+    "noncompete": {
+      "during_term": ">20% coffee/baked goods revenue",
+      "post_term_months": 24,
+      "post_term_radius_miles": 5,
+      "includes_any_dunkin_location": true
+    },
+    "insurance": {
+      "cgl_min": "$2M per occurrence",
+      "epl_min": "$1M per occurrence",
+      "property": "All risk including flood and earthquake",
+      "additional_insureds": "Franchisor, owners, affiliates including Inspire Brands Inc."
+    },
+    "indemnification": "Franchisee must indemnify franchisor for claims/liabilities relating to Restaurant or Premises",
+    "dispute_resolution": {
+      "forum": "Atlanta, Georgia",
+      "governing_law": "Georgia",
+      "arbitration": false,
+      "mediation": false
+    },
+    "assignment_by_franchisor": "No restriction",
+    "modification": "Only in writing except franchisor can modify System/Manuals/Standards/Marks"
+  },
+  "development_agreement": {
+    "exhibit": "D-1",
+    "page_range": [260, 282],
+    "territory": "Limited protection within Development Area during term",
+    "development_schedule": "Must open minimum restaurants per schedule",
+    "curable_defaults": ["Failure to pay — 7 days"],
+    "non_curable_defaults": ["Failure to satisfy development schedule", "Bankruptcy", "Fraud", "Felony", "Unauthorized transfer", "Cross-default"],
+    "renewal": "Available if development obligations met + criteria to expand + new schedule agreed",
+    "cross_default": true
+  },
+  "general_release": {
+    "exhibit": "I",
+    "page_range": [662, 666],
+    "required_at": ["Transfer (controlling)", "Renewal"],
+    "scope": "Mutual general release",
+    "state_overrides": ["Maryland — excludes Maryland Franchise Law claims", "Minnesota — excludes Minn. Rule 2860.4400D claims", "North Dakota — excludes ND Franchise Investment Law claims"]
+  },
+  "clause_walk_status": "partial — headline terms from Item 17 chart and targeted section reads; full operative clause-by-clause walk of C-1 not completed"
+}

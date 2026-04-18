@@ -1,0 +1,341 @@
+{
+  "tables": [
+    {
+      "id": "item5_franchise_fees",
+      "item": 5,
+      "title": "Initial Franchise Fee / Development Fee Schedule",
+      "source_pages": [15, 16],
+      "columns": ["Locations", "New Franchisee", "Existing Franchisee", "Veteran Pricing", "Veteran Existing", "Club Purple", "Club Platinum"],
+      "rows": [
+        ["1 location", "$42,500", "$37,500", "$38,250", "$33,750", "$27,500", "$22,500"],
+        ["2 locations", "$75,000", "$65,000", "$67,500", "$58,500", "$55,000", "$45,000"],
+        ["3 locations", "$97,500", "$82,500", "$87,750", "$74,250", "$75,000", "$67,500"],
+        ["4 locations", "$130,000", "$110,000", "$117,000", "$99,000", "$100,000", "$90,000"],
+        ["5+ locations (each)", "$27,500", "$25,000", "$27,000", "$22,500", "$25,000", "$22,500"]
+      ],
+      "table_notes": [
+        "Veteran pricing requires current military service or honorable discharge",
+        "Club Purple/Platinum eligibility varies; franchisees with 4+ centers need 25% qualified",
+        "ADA development fees paid in full at signing, nonrefundable"
+      ]
+    },
+    {
+      "id": "item6_fee_table",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [18, 19, 20, 21, 22, 23, 24, 25],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Monthly Fee", "$820/month (may be replaced with up to 8% royalty)", "1st of each month", "Begins at opening; after 12 months if not open"],
+        ["General Advertising & Marketing Fee", "$600/month", "1st of each month", "Cannot exceed greater of $600 or 2% of Gross Revenue"],
+        ["Grand Opening and Ramp Up", "$11,000-$23,000", "As incurred", "Tier-based: T3=$11K, T2=$16K, T1=$23K"],
+        ["Base Technology Fee", "$799/month", "1st of each month", "10% annual increase, compounded and cumulative"],
+        ["Coaching Suite Fee (pre-2019 FAs)", "$109-$149/center/month", "1st of each month", "Only for FAs dated March 28, 2019 or earlier"],
+        ["Coaching Suite Registration Fee", "$250/person", "When scheduled", "For existing franchisees not previously trained"],
+        ["On-Site Relaunch Training", "$4,000", "When scheduled", "2-6 days, travel included"],
+        ["On-Site Re-booking Fee", "$2,000", "Upon re-booking", "If docs not provided 14 days ahead"],
+        ["On-Site Cancellation Fee", "$0-$10,500", "Upon cancellation", "100% if <30 days notice"],
+        ["No Show Fee", "$750 or actual costs", "Immediately", "Whichever is greater"],
+        ["Healthy Contributions Initial", "$0-$3/member", "ACH ~40-45 days", "Setup + per-member enrollment"],
+        ["Healthy Contributions Ongoing", "$5/program/month + $0.35/deposit + $0.40/member/month", "ACH ~40-45 days", "Data storage and security"],
+        ["Charitable Contribution", "$100/month", "1st of each month", "Not currently required; may become mandatory"],
+        ["Inspection Fee", "$50-$100", "Upon notice", "For failed post-opening inspection"],
+        ["Peer Compliance Committee Fee", "Up to $1,000/violation/month", "Immediately", "Peer-reviewed, in addition to standard default fee"],
+        ["Standard Default Fee", "Up to $1,000/violation/month", "Immediately", "Until default cured"],
+        ["Marketing Materials", "$5,000 first year", "When incurred", "Required promotions"],
+        ["Conference Fee", "$499-$749", "When registering", "May increase to $1,500; biennial; mandatory"],
+        ["CEC Credits", "Up to $1,200/year", "Q1 following year", "For failing to complete 1,200 credits"],
+        ["Customer Service Webinar", "$250/month", "Upon notice", "For failing customer service standards"],
+        ["Renewal Fee", "$7,500", "30 days before expiration", "Only if renewing"],
+        ["Transfer Fee", "$9,999 (open) or $25,000 (pre-open)", "Before transfer", "50% discount for Club Purple/Platinum buying <$125K club"],
+        ["Liquidated Damages", "$10,000 per center", "Upon ADA failure", "Per undeveloped center"],
+        ["Insurance/Bond Handling", "$100", "Upon notice", "If franchisor obtains for you"],
+        ["Costs and Attorneys' Fees", "Varies", "As incurred", "If franchisor prevails"],
+        ["Interest", "Lesser of 1.5%/month or max legal rate", "As incurred", "On overdue amounts"],
+        ["Indemnification", "Varies", "As incurred", "Claims arising from your business"],
+        ["Club Enhancement Program", "$1,000/month", "Monthly", "Recommended remodel set-aside; franchisor may require payment"],
+        ["Local Marketing Spend", "$600/$800/$1,000/month by tier", "Monthly", "T3=$600, T2=$800, T1=$1,000; plus $350 setup if managed"],
+        ["PT Revenue Reporting Fee", "$500/missing report", "Monthly", "Per month not reporting via CMS"],
+        ["Pre-transfer/Renewal Tech Inspection", "$300", "Upon invoice", "ProVision technology inspection"],
+        ["Provider Program", "7% of PT/chiro revenue (max 15%)", "Monthly", "If enrolled; optional currently"],
+        ["Anytime Nutrition Program", "$1,000-$2,000 training + $149/month (max $249)", "Monthly", "If enrolled; optional currently"]
+      ],
+      "table_notes": [
+        "Note 1: Unless stated, all fees paid to franchisor, non-refundable, uniform for new franchisees",
+        "Note 2: State income/business activity tax on fees is additional obligation of franchisee",
+        "Note 3: Franchisor may collect fees by pre-authorized check/credit card; preferred billing provider collects from member fees",
+        "Note 4: Monthly Fee may be adjusted annually for CPI; can be replaced with up to 8% Gross Revenue royalty on 30 days' notice",
+        "Note 5: Monthly Fee, Ad Fee, Tech Fee paid in advance on 1st of month via billing vendor",
+        "Note 6: Grand Opening spend: Tier 3=$11K, Tier 2=$16K, Tier 1=$23K",
+        "Note 7: Tech Fee 10% annual increase compounded and cumulative",
+        "Note 13: Transfer fee $25K pre-open, $9,999 post-open; 50% discount for Club Purple/Platinum under $125K"
+      ]
+    },
+    {
+      "id": "item7_initial_investment",
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "source_pages": [26, 27, 28, 29],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Franchise/Development Fee", "$42,500", "$42,500", "Lump sum", "At signing", "Us"],
+        ["Travel and Training", "$1,500", "$1,875", "As incurred", "Before/during training", "Vendors"],
+        ["Leasehold Improvements", "$93,900", "$430,000", "As incurred", "As incurred", "Vendors"],
+        ["3 Months' Rent + Security Deposit", "$36,000", "$56,500", "Monthly", "As incurred", "Landlord"],
+        ["Construction Management Fees", "$0", "$13,500", "As incurred", "Before opening", "Vendors"],
+        ["Architect/Design Fees", "$17,370", "$30,820", "As specified", "At design", "Architect"],
+        ["Fitness Equipment", "$138,000", "$155,760", "Lump sum", "Before order", "Us/affiliates/vendors"],
+        ["Technology Equipment Package", "$30,036", "$36,472", "Lump sum", "Before order", "Us/affiliates/vendors"],
+        ["Supplies", "$3,500", "$3,800", "As incurred", "As incurred", "Vendors"],
+        ["Interior & Exterior Signs", "$20,500", "$37,000", "Lump sum", "Before opening", "Vendors"],
+        ["Miscellaneous Opening Costs", "$7,000", "$8,930", "As incurred", "As incurred", "Vendors"],
+        ["Pre-Sale/Grand Opening", "$11,000", "$23,000", "As incurred", "60 days pre/post opening", "Us or vendors"],
+        ["Insurance/Bond", "$2,900", "$3,450", "Lump sum", "Before opening", "Vendors"],
+        ["Furniture & Fixtures", "$8,000", "$16,000", "As incurred", "Before opening", "Vendors"],
+        ["Additional Funds - 3 Months", "$46,620", "$48,000", "As incurred", "As incurred", "Us/suppliers/utilities"],
+        ["TOTAL", "$458,826", "$907,607", "", "", ""]
+      ],
+      "table_notes": [
+        "Based on 4,000-6,300 sq ft vanilla shell",
+        "Avg base rent $21.31/sq ft, avg CAM $5.47/sq ft (2024 system averages)",
+        "Avg tenant improvement allowance $21/sq ft (range $0-$45)",
+        "Technology package includes 38% for taxes, shipping, installation",
+        "AED required (~$2,000 included in supplies)",
+        "Additional funds include payroll for 1 FT trainer + 2 FT employees, 3 months fees",
+        "No financing offered by franchisor; SBA fee not included"
+      ]
+    },
+    {
+      "id": "item9_obligations",
+      "item": 9,
+      "title": "Franchisee's Obligations",
+      "source_pages": [33, 34],
+      "columns": ["Obligation", "FA Section", "ADA Section", "FDD Item"],
+      "rows": [
+        ["Site selection", "1, 7, 8.A", "1", "7, 11, 12"],
+        ["Pre-opening purchases", "1, 7, 9.A", "N/A", "5, 7, 8"],
+        ["Site development", "1, 7, 9.A", "1, 3, Rider", "7, 11, 12"],
+        ["Initial and ongoing training", "2, 8, 9", "N/A", "11"],
+        ["Opening", "1.A, 6.A, 7, Rider", "3.A, 3.B, Rider", "7, 11, 12"],
+        ["Fees", "1-9, 11.A, 11.B, 13.B, 14, 16, 18, Rider", "2, 6.B, 7, 9, Rider", "5, 6, 11"],
+        ["Compliance with standards", "6, 8, 9", "1, Rider", "8, 11, 14, 16"],
+        ["Trademarks", "8", "N/A", "13, 14"],
+        ["Product restrictions", "8, 9", "N/A", "8, 11, 16"],
+        ["Territorial development", "1, 3, 5, Rider", "1, Rider", "12"],
+        ["Ongoing purchases", "9", "N/A", "8"],
+        ["Maintenance/remodeling", "2.B, 9, 13, 14", "N/A", "6"],
+        ["Insurance", "7, 11.A", "N/A", "7"],
+        ["Advertising", "3, 6, 9", "N/A", "6, 7, 11"],
+        ["Indemnification", "9, 11", "9", "6"],
+        ["Owner participation", "8.D, 8.F, 9", "N/A", "11, 15"],
+        ["Records and reports", "12", "N/A", "N/A"],
+        ["Inspections and audits", "6, 9.T, 12.B", "N/A", "N/A"],
+        ["Transfer", "13", "7", "17"],
+        ["Renewal", "2.B, 9", "N/A", "17"],
+        ["Post-termination", "16, 17.B", "6", "17"],
+        ["Non-competition", "9, 10, 16.J, 17", "9", "15, 17"],
+        ["Dispute resolution", "18", "9", "17"],
+        ["Guaranty", "20, Personal Guaranty", "Personal Guaranty", "15"]
+      ],
+      "table_notes": ["Cross-default provisions between FA and ADA"]
+    },
+    {
+      "id": "item11_training",
+      "item": 11,
+      "title": "Training Program",
+      "source_pages": [39],
+      "columns": ["Subject", "Classroom Hours", "On-the-Job Hours", "Location"],
+      "rows": [
+        ["Brand Values and Philosophy", "2", "1", "Virtual or Minnesota offices"],
+        ["Brand Strategy & General Marketing", "3", "3", "Virtual or Minnesota offices"],
+        ["Technology, Software and Security", "6", "3", "Virtual or Minnesota offices"],
+        ["Member Experience and Customer Service", "7", "4", "Virtual or Minnesota offices"],
+        ["Member Sales", "7", "3", "Virtual or Minnesota offices"],
+        ["Club Operations", "5", "2", "Virtual or Minnesota offices"],
+        ["Staffing and Hiring", "1", "1", "Virtual or Minnesota offices"],
+        ["One-On-Ones", "1", "0", "Virtual or Minnesota offices"],
+        ["Financial Acumen", "1", "1", "Virtual or Minnesota offices"],
+        ["Construction & Design", "1", "0", "Virtual or Minnesota offices"],
+        ["Coaching Suite", "5", "6", "Virtual or Minnesota offices"],
+        ["TOTAL", "39", "24", ""]
+      ],
+      "table_notes": [
+        "Self-paced online courses + 3-5 days classroom + 1-3 days in-person job shadow",
+        "Overseen by Martha Tobin (Director Global Learning & Development, since Mar 2020)",
+        "Facilitated by McKenzie Gagne (Learning & Development Manager, since Jun 2023)",
+        "No charge for training; franchisee pays travel/lodging"
+      ]
+    },
+    {
+      "id": "item19_section1_coaching_suite",
+      "item": 19,
+      "title": "Historical Revenues — Coaching Suite Centers (1,656 centers)",
+      "source_pages": [60, 61],
+      "columns": ["Metric", "All Avg", "All Median", "Q4 Avg", "Q4 Median", "Q3 Avg", "Q3 Median", "Q2 Avg", "Q2 Median", "Q1 Avg", "Q1 Median"],
+      "rows": [
+        ["Membership Revenue", "$339,064", "$301,444", "$553,162", "$514,261", "$345,336", "$346,640", "$268,359", "$266,796", "$189,400", "$190,700"],
+        ["PT Revenue", "$74,006", "$49,858", "$145,497", "$123,441", "$78,744", "$70,792", "$47,574", "$39,768", "$24,210", "$18,129"],
+        ["PPV Revenue", "$29,615", "$24,011", "$43,446", "$32,574", "$31,193", "$28,240", "$25,470", "$22,889", "$18,352", "$14,898"],
+        ["Total Revenue", "$442,686", "$394,973", "$742,106", "$670,417", "$455,273", "$451,275", "$341,403", "$341,755", "$231,962", "$239,134"],
+        ["% At/Above Avg Revenue", "39%", "N/A", "36%", "N/A", "47%", "N/A", "51%", "N/A", "56%", "N/A"],
+        ["Highest Total Revenue", "$1,835,348", "N/A", "$1,835,348", "N/A", "$534,001", "N/A", "$394,940", "N/A", "$293,650", "N/A"],
+        ["Lowest Total Revenue", "$86,175", "N/A", "$534,059", "N/A", "$395,007", "N/A", "$293,800", "N/A", "$86,175", "N/A"],
+        ["Avg Monthly Members", "677", "604", "1,029", "976", "694", "682", "561", "549", "422", "412"]
+      ],
+      "table_notes": [
+        "Period: 12 months ended February 28, 2025",
+        "Population: 1,656 franchised centers operating with Coaching Suite for full period",
+        "Excludes 2 severely damaged/temporarily closed centers and 29 permanently closed centers",
+        "Revenue excludes one-time enrollment fees and vending income",
+        "Quartiles based on total revenue ranking"
+      ]
+    },
+    {
+      "id": "item19_section2_smartcoaching",
+      "item": 19,
+      "title": "Historical Revenues — SmartCoaching Centers (297 centers)",
+      "source_pages": [62],
+      "columns": ["Metric", "All Avg", "All Median", "Q4 Avg", "Q1 Avg"],
+      "rows": [
+        ["Membership Revenue", "$375,551", "$337,067", "$602,788", "$210,415"],
+        ["PT Revenue", "$120,336", "$94,242", "$210,409", "$55,757"],
+        ["PPV Revenue", "$35,863", "$28,189", "$52,349", "$20,729"],
+        ["Total Revenue", "$531,750", "$484,987", "$865,546", "$286,901"],
+        ["Avg Monthly Members", "731", "656", "1,102", "451"]
+      ],
+      "table_notes": [
+        "SmartCoaching = using all 5 tools (VI Smart Engagement, Coaching Dashboard, Fab 5, Evolt, bi-weekly billing) for at least 9 months",
+        "297 centers out of 2,289 total system"
+      ]
+    },
+    {
+      "id": "item19_section3_company_owned_pl",
+      "item": 19,
+      "title": "Company-Owned P&L (11 centers)",
+      "source_pages": [63, 64, 65],
+      "columns": ["Line Item", "All Avg (11)", "Top Third (4)", "Middle Third (3)", "Bottom Third (4)"],
+      "rows": [
+        ["Avg Monthly Members", "640", "816", "579", "509"],
+        ["Membership Fees", "$308,737", "$403,014", "$263,492", "$248,393"],
+        ["PT/Coaching Revenue", "$191,824", "$271,889", "$192,816", "$111,015"],
+        ["PPV Revenue", "$28,663", "$41,995", "$18,354", "$23,063"],
+        ["Total Revenue", "$529,223", "$716,899", "$474,661", "$382,470"],
+        ["Rent and CAM", "$113,199", "$143,522", "$99,752", "$92,961"],
+        ["PT Expenses", "$105,211", "$144,705", "$108,885", "$62,962"],
+        ["Royalties", "$9,840", "$9,840", "$9,840", "$9,840"],
+        ["Processing/CC Fees", "$19,834", "$25,418", "$17,919", "$15,687"],
+        ["Utilities", "$26,358", "$30,023", "$19,720", "$27,672"],
+        ["Insurance", "$3,200", "$3,200", "$3,200", "$3,200"],
+        ["Key Fobs", "$2,011", "$2,975", "$1,658", "$1,311"],
+        ["Ad Fund", "$7,200", "$7,200", "$7,200", "$7,200"],
+        ["Local Advertising", "$10,036", "$10,200", "$10,400", "$9,600"],
+        ["Maintenance", "$11,890", "$13,322", "$10,964", "$11,153"],
+        ["Tech Fee", "$9,588", "$9,588", "$9,588", "$9,588"],
+        ["Conference Fee", "$750", "$750", "$750", "$750"],
+        ["Office Expense", "$5,579", "$5,974", "$4,075", "$6,313"],
+        ["Cleaning Expense", "$11,713", "$14,238", "$5,426", "$13,903"],
+        ["License Fees", "$150", "$150", "$150", "$150"],
+        ["Miscellaneous", "$3,488", "$3,479", "$3,299", "$3,640"],
+        ["Total Operating Expenses", "$340,048", "$424,583", "$312,827", "$275,930"],
+        ["NOI (before manager salary)", "$189,175", "$292,315", "$161,835", "$106,540"],
+        ["NOI Margin %", "35.75%", "40.77%", "34.09%", "27.86%"],
+        ["Manager(s) Base Salary", "$45,173", "$49,797", "$43,986", "$41,439"],
+        ["EBITDA", "$144,002", "$242,519", "$117,848", "$65,101"],
+        ["EBITDA Margin %", "27.21%", "33.83%", "24.83%", "17.02%"]
+      ],
+      "table_notes": [
+        "11 company-owned centers using SmartCoaching, 12 months ended Feb 28, 2025",
+        "9 centers in Illinois, 2 in Minnesota",
+        "Expenses adjusted to reflect estimated franchisee costs",
+        "Royalties reflect $820/month = $9,840/year",
+        "Insurance $3,200 per third-party insurance company estimate",
+        "Local advertising adjusted to tier-based requirements",
+        "Manager salary not included in NOI; if owner-managed, would be additional profit",
+        "401K benefits excluded (most franchisees don't offer)",
+        "Revenue excludes one-time enrollment fees and vending income"
+      ]
+    },
+    {
+      "id": "item20_table1_systemwide",
+      "item": 20,
+      "title": "Table 1 — Systemwide Outlet Summary 2022-2024",
+      "source_pages": [66],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "2334", "2318", "-16"],
+        ["Franchised", "2023", "2318", "2298", "-20"],
+        ["Franchised", "2024", "2298", "2290", "-8"],
+        ["Company-Owned", "2022", "13", "12", "-1"],
+        ["Company-Owned", "2023", "12", "12", "0"],
+        ["Company-Owned", "2024", "12", "11", "-1"],
+        ["Total", "2022", "2347", "2330", "-17"],
+        ["Total", "2023", "2330", "2310", "-20"],
+        ["Total", "2024", "2310", "2301", "-9"]
+      ],
+      "table_notes": ["All information as of December 31 of applicable year"]
+    },
+    {
+      "id": "item20_table2_transfers",
+      "item": 20,
+      "title": "Table 2 — Transfers 2022-2024",
+      "source_pages": [66, 67, 68, 69],
+      "columns": ["Year", "Total Transfers"],
+      "rows": [
+        ["2022", "204"],
+        ["2023", "243"],
+        ["2024", "207"]
+      ],
+      "table_notes": [
+        "Top transfer states 2024: Wisconsin 28, California 13, Florida 12, Minnesota 12, Texas 11, Indiana 8, Georgia 8, Illinois 9"
+      ]
+    },
+    {
+      "id": "item20_table3_franchised_status",
+      "item": 20,
+      "title": "Table 3 — Status of Franchised Outlets 2022-2024 (Totals)",
+      "source_pages": [69, 70, 71, 72],
+      "columns": ["Year", "Start", "Opened", "Terminated", "Non-Renewed", "Reacquired", "Ceased Ops", "End"],
+      "rows": [
+        ["2022", "2334", "49", "45", "20", "0", "0", "2318"],
+        ["2023", "2318", "47", "42", "25", "0", "0", "2298"],
+        ["2024", "2298", "46", "33", "21", "0", "0", "2290"]
+      ],
+      "table_notes": [
+        "1 company-owned club sold to franchisee in Florida in 2024 counted as 'opened'",
+        "No reacquisitions or ceased operations in any year"
+      ]
+    },
+    {
+      "id": "item20_table4_company_owned",
+      "item": 20,
+      "title": "Table 4 — Status of Company-Owned Outlets 2022-2024",
+      "source_pages": [72],
+      "columns": ["Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisees", "End"],
+      "rows": [
+        ["2022", "13", "0", "0", "1", "0", "12"],
+        ["2023", "12", "0", "0", "0", "0", "12"],
+        ["2024", "12", "0", "0", "0", "1", "11"]
+      ],
+      "table_notes": [
+        "States: Florida (0 at end 2024), Illinois (9), Minnesota (2)",
+        "Maine outlet closed in 2022"
+      ]
+    },
+    {
+      "id": "item20_table5_projected",
+      "item": 20,
+      "title": "Table 5 — Projected Openings as of Dec 31, 2024",
+      "source_pages": [73, 74],
+      "columns": ["Metric", "Count"],
+      "rows": [
+        ["FA Signed But Not Opened", "179"],
+        ["Projected New Franchised", "48"],
+        ["Projected New Company-Owned", "0"]
+      ],
+      "table_notes": [
+        "Top states for signed-not-opened: California 21, Florida 23, Texas 19, North Carolina 12, Michigan 12, Pennsylvania 10",
+        "Projected openings do not include all signed-but-not-opened FAs"
+      ]
+    }
+  ]
+}

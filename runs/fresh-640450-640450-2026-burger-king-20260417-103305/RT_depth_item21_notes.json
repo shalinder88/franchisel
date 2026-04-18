@@ -1,0 +1,40 @@
+{
+  "extraction_method": "normal_text_extraction",
+  "note_families_present": [
+    {"family": "description_of_business", "pages": [758, 759], "walked": true},
+    {"family": "significant_accounting_policies", "pages": [759, 765], "walked": true},
+    {"family": "earnings_per_share", "pages": [765, 766], "walked": true},
+    {"family": "segment_reporting", "pages": [766, 770], "walked": true},
+    {"family": "revenue_recognition", "pages": [770, 771], "walked": true},
+    {"family": "carrols_acquisition", "pages": [772, 773], "walked": true},
+    {"family": "bk_china_discontinued_ops", "pages": [773, 774], "walked": true},
+    {"family": "equity_method_investments", "pages": [775], "walked": true},
+    {"family": "intangible_assets_goodwill", "pages": [776, 777], "walked": true},
+    {"family": "other_liabilities", "pages": [777], "walked": true},
+    {"family": "long_term_debt", "pages": [778, 780], "walked": true},
+    {"family": "derivative_instruments", "pages": [781, 782], "walked": true},
+    {"family": "shareholders_equity", "pages": [783, 786], "walked": true},
+    {"family": "leases", "pages": [787, 789], "walked": true},
+    {"family": "income_taxes", "pages": [790, 795], "walked": true},
+    {"family": "commitments_contingencies", "pages": [796], "walked": true},
+    {"family": "subsequent_events", "pages": [797], "walked": true}
+  ],
+  "key_accounting_policies": {
+    "revenue_recognition": "Franchise fees, property revenues, supply chain sales recognized per GAAP. Deferred franchise fee revenue and incentives amortized over contract term.",
+    "depreciation": "Property and equipment depreciated over useful lives. Accumulated depreciation $1,245M as of Dec 31, 2025.",
+    "impairment": "Annual goodwill test Oct 1. Carrols BK reporting unit fair value only ~7.0% above $1,000M carrying value. Firehouse >20% above.",
+    "lease_accounting": "~4,700 restaurant properties leased/subleased to franchisees. Operating leases (straight-line), sales-type leases, direct financing leases. ROU assets and lease liabilities on balance sheet.",
+    "income_taxes": "Current/deferred by jurisdiction. GILTI as period cost. Rate reconciliation from Canada federal statutory rate.",
+    "advertising_fund": "Advertising commitments $195M mostly due within 12 months. Fund reimbursements for marketing support.",
+    "derivatives": "$5,700M cross-currency swaps hedging Canadian subsidiary net investment. Level 2 fair value."
+  },
+  "subsequent_events": [
+    {"event": "Dividend $0.62/share paid Jan 6, 2026", "source_pages": [797]},
+    {"event": "Partnership distribution $0.62/unit same date", "source_pages": [797]}
+  ],
+  "related_party": {
+    "timwen_partnership": "50% JV with Wendy's for Canadian combination restaurant real estate. Distributions $15M (2025). Rent expense $21M (2025)."
+  },
+  "going_concern": false,
+  "going_concern_language": null
+}

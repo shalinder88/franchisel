@@ -1,0 +1,48 @@
+{
+  "depth_pass": "A2_state_addenda",
+  "source_pages": [323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 335],
+  "states_with_addenda": ["California", "Hawaii", "Maryland", "Michigan", "Minnesota", "North Dakota"],
+  "general_provision": {
+    "applies_to": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+    "override": "No waiver of disclaimer of reliance — no statement/questionnaire/acknowledgment can waive claims under state franchise law or disclaim reliance on franchisor statements",
+    "source_pages": [324]
+  },
+  "overrides": [
+    {"state": "California", "affected_family": "labor_law", "override_summary": "Must comply with Fast Food Act (Cal. Lab. Code §§1474-1475) — health, safety, employment standards including minimum wages, working hours, working conditions", "why_it_matters": "Additional labor cost burden not reflected in Item 7 estimates; franchisee solely responsible for compliance", "source_pages": [325]},
+    {"state": "California", "affected_family": "general_release", "override_summary": "Anti-waiver/anti-reliance provision supersedes any document executed in connection with franchise", "why_it_matters": "Protects California franchisees from releasing claims under state franchise law", "source_pages": [325]},
+    {"state": "Hawaii", "affected_family": "general_release", "override_summary": "Anti-waiver/anti-reliance provision", "why_it_matters": "Standard state franchise law protection", "source_pages": [326]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "Any release at renewal/transfer will not apply to claims under Maryland Franchise Registration and Disclosure Law", "why_it_matters": "Franchisee retains right to sue under Maryland law even after signing general release", "source_pages": [327]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law", "why_it_matters": "Protects bankrupt franchisees from automatic termination", "source_pages": [327]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Franchisee may bring action in Maryland for claims under Maryland Franchise Law, unless preempted by federal law", "why_it_matters": "Overrides Atlanta, Georgia venue requirement for Maryland franchise law claims", "source_pages": [327]},
+    {"state": "Maryland", "affected_family": "governing_law", "override_summary": "Maryland law applies to claims under Maryland Franchise Law", "why_it_matters": "Overrides Georgia choice of law for Maryland franchise law claims", "source_pages": [327]},
+    {"state": "Maryland", "affected_family": "statute_of_limitations", "override_summary": "Claims under Maryland Franchise Law must be brought within 3 years after franchise grant", "why_it_matters": "Establishes specific limitations period for Maryland claims", "source_pages": [327]},
+    {"state": "Michigan", "affected_family": "termination", "override_summary": "Cannot terminate prior to expiration except for good cause; franchisee gets written notice and reasonable opportunity to cure (up to 30 days)", "why_it_matters": "Michigan law prohibits termination without good cause and mandatory cure period", "source_pages": [5, 6]},
+    {"state": "Michigan", "affected_family": "renewal", "override_summary": "Cannot refuse renewal without fairly compensating franchisee for FMV of inventory/supplies/equipment/fixtures (if term <5 years and franchisee prohibited from operating under other brand or <6 months notice)", "why_it_matters": "Requires buyback at FMV upon non-renewal under certain conditions", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "forum_selection", "override_summary": "Cannot require arbitration or litigation outside Michigan", "why_it_matters": "Overrides Atlanta venue; franchisee can litigate in Michigan", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "transfer", "override_summary": "Cannot refuse transfer except for good cause (failure to meet qualifications, proposed transferee is competitor, refusal to comply, unpaid amounts)", "why_it_matters": "Limits franchisor's discretion to block transfers", "source_pages": [5, 6]},
+    {"state": "Michigan", "affected_family": "association_rights", "override_summary": "Cannot prohibit franchisee from joining association of franchisees", "why_it_matters": "Protects franchisee organizing rights", "source_pages": [5]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days' notice of termination with 60 days to cure; 180 days' notice for non-renewal", "why_it_matters": "Much longer cure period than standard 24h-30d cure windows in FA; major franchisee protection", "source_pages": [328]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Cannot require litigation outside Minnesota; cannot require jury trial waiver; cannot require consent to liquidated damages, termination penalties, or judgment notes", "why_it_matters": "Comprehensive override of dispute resolution provisions; protects Minnesota franchisees", "source_pages": [328]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Release at renewal/sale/transfer will not apply to claims under Minn. Rule 2860.4400D", "why_it_matters": "Preserves franchisee rights under Minnesota franchise law despite release requirement", "source_pages": [329]},
+    {"state": "Minnesota", "affected_family": "trademarks", "override_summary": "Franchisor must indemnify Minnesota franchisees against third-party trademark infringement claims arising from franchisee's authorized use of marks", "why_it_matters": "Shifts trademark defense cost to franchisor", "source_pages": [328]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "Release will not apply to claims under North Dakota Franchise Investment Law", "why_it_matters": "Preserves ND franchise law claims despite release", "source_pages": [330]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Covenants not to compete generally considered unenforceable in North Dakota; franchisor will seek to enforce to extent enforceable", "why_it_matters": "Post-term noncompete effectively void in North Dakota — major franchisee benefit", "source_pages": [330]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Franchisee may bring action in North Dakota for claims under ND Franchise Investment Law", "why_it_matters": "Overrides Atlanta venue for ND franchise law claims", "source_pages": [330]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "To the extent required by law, North Dakota law applies", "why_it_matters": "Overrides Georgia choice of law", "source_pages": [330]}
+  ],
+  "summary_table": {
+    "rows": ["forum_selection", "governing_law", "noncompete", "general_release", "termination_cure", "non_renewal_notice", "transfer_restrictions", "association_rights", "trademark_indemnity", "labor_law"],
+    "states_affected": {
+      "forum_selection": ["Maryland", "Michigan", "Minnesota", "North Dakota"],
+      "governing_law": ["Maryland", "North Dakota"],
+      "noncompete": ["North Dakota"],
+      "general_release": ["California", "Hawaii", "Maryland", "Michigan", "Minnesota", "North Dakota"],
+      "termination_cure": ["Michigan", "Minnesota"],
+      "non_renewal_notice": ["Michigan", "Minnesota"],
+      "transfer_restrictions": ["Michigan"],
+      "association_rights": ["Michigan"],
+      "trademark_indemnity": ["Minnesota"],
+      "labor_law": ["California"]
+    }
+  }
+}

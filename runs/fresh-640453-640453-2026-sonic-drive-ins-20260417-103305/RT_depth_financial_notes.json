@@ -1,0 +1,42 @@
+{
+  "depth_pass": "A2_financial_notes",
+  "item21_extraction_method": "normal_text_extraction",
+  "entities": [
+    {
+      "entity": "Sonic Franchising LLC",
+      "auditor": "KPMG LLP",
+      "opinion": "unqualified",
+      "opinion_date": "March 19, 2026",
+      "going_concern": false,
+      "note_families": [
+        {"family": "description_of_business", "pages": [312], "policy": "Single-member LLC franchising quick-service restaurants; revenue from royalties and license agreements"},
+        {"family": "accounting_policies", "pages": [312, 313], "policies": ["52-week fiscal year", "Restricted cash for securitization", "Receivables due within 30 days with lifetime ECL", "Franchise agreements amortized straight-line 17 years", "Revenue: royalties earned; franchise fees straight-line over FA term", "Not subject to income tax (single-member LLC)", "Fair value: restricted cash and AR approximate book value"]},
+        {"family": "intangible_assets", "pages": [314], "detail": "Franchise agreements $48,116K gross, 17yr useful life, $28,108K net. Annual amortization $2,833K. No impairment."},
+        {"family": "revenue_recognition", "pages": [315], "detail": "Deferred franchise fees $8,904K. Revenue recognized from prior deferred $558K (2025). Future: $417K/yr declining, $6,858K thereafter."},
+        {"family": "commitments_contingencies", "pages": [315, 316], "detail": "Guarantees $1,402,563K Sonic Securitization Notes. VFN: $25M capacity, $12.4M LOC outstanding, $12.6M remaining. Legal matters: no material adverse effect expected."},
+        {"family": "related_party", "pages": [316], "detail": "Licenses trademarks from Affiliates; license fees based on royalty fees collected. Results may not be indicative of standalone."},
+        {"family": "subsequent_events", "pages": [316], "detail": "Evaluated through March 19, 2026. No items to disclose."}
+      ]
+    },
+    {
+      "entity": "SIS and Subsidiaries",
+      "auditor": "KPMG LLP",
+      "opinion": "unqualified",
+      "opinion_date": "March 19, 2026",
+      "going_concern": false,
+      "note_families": [
+        {"family": "description_of_business", "pages": [325], "policy": "Provides franchising services; revenue from royalties, leases to franchisees/affiliates"},
+        {"family": "accounting_policies", "pages": [325, 326, 327, 328, 329], "policies": ["GAAP consolidated", "52-week fiscal year", "Cash in excess of FDIC limits", "Restricted cash for securitization reserves", "AR lifetime ECL", "Property straight-line (3-40 years by class)", "Goodwill tested annually Q4 — no impairment", "Trademark/trade name indefinite-lived — no impairment", "Revenue: royalties earned, franchise fees straight-line over FA term, rental income straight-line", "Income taxes: single-member LLC not taxed directly; parent responsibility", "Debt issuance costs amortized via effective interest method", "Leases: operating vs finance classification"]},
+        {"family": "supplemental_balance_sheet", "pages": [330], "detail": "AR: royalties $25.7M, gift cards $7.1M, allowance ($5.5M). Property: land $123.6M, buildings $60.1M, equipment $5.1M. Gift card liability $36.7M."},
+        {"family": "intangible_assets", "pages": [330], "detail": "Trademark $1.1B indefinite-lived. Franchise agreements $250M gross, 17yr, $146M net. Software $3.6M gross, $1.7M net. Amortization $16.3M (2025). No impairment."},
+        {"family": "long_term_debt", "pages": [331, 332], "detail": "Securitization Notes $1,402,563K total. 5 tranches (2.19%-4.34%). Fair value $1,329.1M (Level 2). Current portion $14,750K. $617M due 2027. In compliance with all covenants. LOC $12.4M outstanding."},
+        {"family": "leases", "pages": [332], "detail": "Operating leases to affiliates/franchisees. Lease term up to 9 years. Rent: fixed or 5%-10% of gross sales. Variable rent income $8.4M/yr. Assets leased: net $61.7M. Future minimum receivables $23.9M."},
+        {"family": "revenue_recognition", "pages": [333], "detail": "Deferred franchise fees $10,925K. Revenue recognized $896K (2025). Future: $673K (2026) declining, $7,846K thereafter."},
+        {"family": "income_taxes", "pages": [333, 334], "detail": "Not subject to income tax as single-member LLC since 2023 conversion. Prior year: effective rate (0.1)% (2024), (179.8)% (2023, includes tax entity status change). All subsidiaries now single-member LLCs."},
+        {"family": "related_party", "pages": [334], "detail": "Admin services to Brand Tech Fund and SBF. Admin fee ~15% of Fund receipts: $22.5M (2025). IRB note receivable repaid July 2024."},
+        {"family": "commitments_contingencies", "pages": [334], "detail": "Legal matters: no material adverse effect. Securitization note covenants: in compliance."},
+        {"family": "subsequent_events", "pages": [334], "detail": "Evaluated through March 19, 2026. No items to disclose."}
+      ]
+    }
+  ]
+}

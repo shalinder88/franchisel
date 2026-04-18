@@ -1,0 +1,39 @@
+{
+  "depth_pass": "A2_state_addenda",
+  "states_with_addenda": ["California", "Illinois", "Hawaii", "Maryland", "Minnesota", "Washington"],
+  "general_no_waiver_states": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {"state": "California", "affected_family": "compliance", "override_summary": "Fast Food Act: $20/hr minimum wage for fast food workers effective April 2024; annual increases up to 3.5% through Dec 2028; Fast Food Council may adopt additional standards. No franchisor training/fees for compliance — franchisee's sole responsibility.", "why_it_matters": "Dramatically increases labor costs for CA stores, particularly bottom-quartile AWUS stores where variable labor is already 40%+ of costs. EBITDA compression likely.", "source_pages": [90, 91]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Choice of forum exception for claims arising under Illinois Franchise Law", "why_it_matters": "Franchisees in IL can litigate IL franchise law claims in IL courts regardless of any future forum clause", "source_pages": [91]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Choice of law exception for Illinois Law", "why_it_matters": "IL franchise law governs IL franchise relationships regardless of contract choice of law", "source_pages": [91]},
+    {"state": "Hawaii", "affected_family": "disclosure", "override_summary": "Standard Hawaii Franchise Investment Law filing/disclosure notice. 7-day pre-signing delivery requirement.", "why_it_matters": "Administrative; no operative override of franchise terms", "source_pages": [91]},
+    {"state": "Maryland", "affected_family": "fee_deferral", "override_summary": "All initial fees and development fees deferred until franchisor completes pre-opening obligations / first franchise opens. Financial assurance required by MD Securities Commissioner.", "why_it_matters": "MD franchisees don't pay upfront until franchisor delivers — reduces early cash risk", "source_pages": [92]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "Release at renewal/transfer does not apply to claims under MD Franchise Registration and Disclosure Law", "why_it_matters": "MD franchisees retain right to sue under MD franchise law even after signing a release", "source_pages": [92]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Termination upon insolvency may not be enforceable under federal bankruptcy law", "why_it_matters": "Narrow protection for franchisees in bankruptcy proceedings", "source_pages": [92]},
+    {"state": "Maryland", "affected_family": "statute_of_limitations", "override_summary": "3-year statute of limitations for claims under MD Franchise Law from date of franchise grant", "why_it_matters": "Establishes clear deadline for MD franchise law claims", "source_pages": [92]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Cannot require litigation outside MN, waiver of jury trial, liquidated damages, termination penalties, or judgment notes per Minn. Stat. 80C.21 and Rule 2860.4400(J)", "why_it_matters": "Strong franchisee protection — preserves jury trial right and prevents out-of-state litigation burden", "source_pages": [92]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days notice of termination with 60 days to cure; 180 days notice for non-renewal per Minn. Stat. 80C.14", "why_it_matters": "More generous cure periods than standard FA (which has 30 days general cure)", "source_pages": [93]},
+    {"state": "Minnesota", "affected_family": "transfer", "override_summary": "Franchisor will not unreasonably withhold consent to transfer if transferee meets qualifications", "why_it_matters": "Codifies reasonableness standard for transfer approvals in MN", "source_pages": [93]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Release at renewal/sale/transfer not applicable to claims under Minn. Rule 2860.4400D", "why_it_matters": "MN franchisees retain right to MN franchise law claims despite release", "source_pages": [93]},
+    {"state": "Minnesota", "affected_family": "interest_rate", "override_summary": "Service charges capped at $30 per Minn. Stat. 604.113", "why_it_matters": "Limits late payment and similar charges", "source_pages": [93]},
+    {"state": "Minnesota", "affected_family": "injunctive_relief", "override_summary": "Cannot require consent to injunctive relief; court determines if bond required", "why_it_matters": "Franchisee not pre-committed to injunctions", "source_pages": [93]},
+    {"state": "Washington", "affected_family": "governing_law", "override_summary": "WA Franchise Investment Protection Act (RCW 19.100) prevails in conflicts of law", "why_it_matters": "WA franchise law takes priority over contract provisions", "source_pages": [93]},
+    {"state": "Washington", "affected_family": "forum_selection", "override_summary": "Arbitration/mediation must be in WA or mutually agreed; franchisee may bring WA franchise law action in WA", "why_it_matters": "Keeps dispute resolution accessible for WA franchisees", "source_pages": [94]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "Release cannot include WA Act rights except in negotiated settlement after agreement in effect, with independent counsel", "why_it_matters": "Very strong protection — release requires independent counsel and is prospective only", "source_pages": [94]},
+    {"state": "Washington", "affected_family": "transfer", "override_summary": "Transfer fees collectable only to extent reflecting reasonable estimated or actual costs", "why_it_matters": "Transfer fee ($1,500) must reflect actual costs; excess could be challenged", "source_pages": [94]},
+    {"state": "Washington", "affected_family": "noncompete", "override_summary": "Noncompete void against employees earning <$100K/year and contractors earning <$250K/year (adjusted for inflation) per RCW 49.62.020/030", "why_it_matters": "Most store-level employees would be exempt from noncompete; limits franchisor's ability to enforce employee non-competes", "source_pages": [94]},
+    {"state": "Washington", "affected_family": "no_poach", "override_summary": "Franchisor cannot restrict franchisee from soliciting/hiring employees of other franchisees or franchisor per RCW 49.62.060. AOD with WA AG (October 2018) formalized this.", "why_it_matters": "Eliminates no-poach restrictions in WA — franchisees can freely hire from each other or from corporate", "source_pages": [94, 95]}
+  ],
+  "summary_table": {
+    "forum_override": ["Illinois", "Minnesota", "Washington"],
+    "governing_law_override": ["Illinois", "Washington"],
+    "noncompete_limited": ["Washington"],
+    "general_release_limited": ["Maryland", "Minnesota", "Washington"],
+    "termination_enhanced_notice": ["Minnesota"],
+    "fee_deferral": ["Maryland"],
+    "interest_rate_cap": ["Minnesota"],
+    "transfer_fee_limited": ["Washington"],
+    "no_poach_prohibited": ["Washington"],
+    "fast_food_act_compliance": ["California"]
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "extraction_date": "2026-04-18",
+  "brand": "Papa Johns",
+  "filing_id": "638092",
+  "tables": [
+    {
+      "table_id": "item5_initial_fees_to_franchisor",
+      "source_item": "Item 5",
+      "source_pages": [15],
+      "title": "Initial Amounts to be Paid to Franchisor or Affiliates",
+      "columns": ["Fee", "Standard Restaurant", "Small-Town Restaurant", "Non-Traditional Restaurant"],
+      "rows": [
+        ["Initial Franchise Fee / Dev Fee Deposit", "$5,000 to $25,000", "$5,000", "$5,000"],
+        ["Information System", "$20,000 to $30,000", "$20,000 to $30,000", "$0 to $30,000"],
+        ["GIS New Store Map Package", "$1,050", "$1,050", "$0 to $1,050"],
+        ["On-Site Support Fee", "$2,500", "$2,500", "$0 to $2,500"],
+        ["On-Site Installation Fee", "$2,000 to $5,000", "$2,000 to $5,000", "$0 to $5,000"],
+        ["Help Desk Service Fee", "$240", "$240", "$0 to $240"],
+        ["Test Fit Fee", "$950", "$950", "$0 to $950"],
+        ["Software Maintenance Fee", "$1,125", "$1,125", "$0 to $1,125"],
+        ["Opening Inventory", "$6,000 to $15,000", "$6,000 to $15,000", "$4,000 to $15,000"],
+        ["TOTAL", "$38,865 to $80,865", "$38,865 to $60,865", "$9,000 to $60,865"]
+      ],
+      "table_notes": ["All amounts are non-refundable."]
+    },
+    {
+      "table_id": "item6_fee_table",
+      "source_item": "Item 6",
+      "source_pages": [15, 16, 17, 18, 19, 20, 21, 22],
+      "title": "Other Fees",
+      "columns": ["Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty", "Traditional: 5% Net Sales; NT: 5%; ST: 6%", "10th day of each month", "Auto-debited; may increase up to 6%"],
+        ["Digital Fee", "2.00% of digital/online Net Sales", "20th day of each month", "Includes aggregator orders"],
+        ["Transfer", "$4,000 per transferee; $8,000 if affiliated", "Prior to transfer", "Per restaurant if multiple unaffiliated"],
+        ["Renewal", "Traditional: $4,000; NT/ST: $1,000", "Upon signing renewal FA", "If renewal conditions met"],
+        ["Audit Expenses", "Cost + 12% interest", "10 days after billing", "Only if understatement >5%"],
+        ["Interest", "Lesser of 12%/year or max legal rate", "Accrues until paid", "On overdue amounts"],
+        ["Management Fee", "Compensation + travel + $200/day", "As agreed", "During franchisor-appointed management"],
+        ["Costs/Attorneys Fees", "Variable", "As incurred", "For enforcement actions"],
+        ["Indemnification", "Variable", "As incurred", "For third-party claims from operations"],
+        ["Marketing Fund", "Traditional: 6%; NT/ST: 25% of standard (1.50%)", "24th day of each month", "NMF Initiative through Dec 2029; reverts to 5% if royalty increases"],
+        ["Papa Card Transaction/IVR", "Max 2% of redemptions", "Monthly", "NT generally exempt"],
+        ["Cooperative Contributions", "Currently voluntary; min 2% during Mandatory Period", "As designated", "Combined with Marketing Fund capped at 7%"],
+        ["Local Advertising", "Currently voluntary; 8% minus MF minus Coop during Mandatory Period", "As incurred", "Grand opening: $10K standard, $5K ST/NT"],
+        ["On-Site Installation/Support", "$2,200 standard 2-day; $1,100/additional day", "When released", "May increase"],
+        ["Software Maintenance Fee", "$375/month", "Monthly", "May increase"],
+        ["Help Desk Service Fee", "$80/month", "Monthly", "May increase"],
+        ["Required Purchases", "Variable", "Upon receipt", "Dough, sauce, Information System, Designated Software"],
+        ["Training Fees", "$150/year per restaurant", "Annually", "PIZZAcademy"],
+        ["Alternative Supplier Fees", "Reasonable inspection + test cost", "Upon demand", "For new supplier proposals"],
+        ["Liquidated Damages", "Avg royalty × 12 months × 24", "Upon termination", "For franchisee breach/default"]
+      ],
+      "table_notes": [
+        "1/ All fees except Marketing Fund, Papa Card, Cooperative, and local advertising are payable to franchisor.",
+        "2/ Royalty may increase up to 6% if new FA rate matches or exceeds.",
+        "3/ Net Sales = gross revenues less sales tax, refunds, non-ordinary course sales.",
+        "4/ Period = 4-4-5 accounting system.",
+        "5/ Auto-debit via Exhibit F authorization.",
+        "6/ Digital Fee only on digital/online Net Sales; rate may change by Marketing Fund Board.",
+        "7/ NMF Initiative: 6% rate from Apr 1, 2024 through Dec 30, 2029. Development Incentive: 0% for 3 years for qualifying 2025 openings.",
+        "8/ Papa Card is electronic cash card; 2% fee on redemption transactions.",
+        "9/ Papa Card fee may not exceed 2% without franchisor approval.",
+        "10/ Cooperative participation voluntary through 2029; mandatory after if NMF Initiative repealed.",
+        "11/ Local advertising voluntary through 2029.",
+        "12/ During Mandatory Period: combined Marketing + Coop + Local must equal at least 8% of Net Sales.",
+        "13/ Software Maintenance Fee covers R&D, enhancements, upgrades.",
+        "14/ Required purchases include dough, sauce, Information System from franchisor/affiliates."
+      ]
+    },
+    {
+      "table_id": "item7_standard_investment",
+      "source_item": "Item 7",
+      "source_pages": [23, 24],
+      "title": "Estimated Initial Investment — Standard and Small-Town Restaurant",
+      "columns": ["Expenditure", "Low", "High", "When Payable", "To Whom"],
+      "rows": [
+        ["Initial Franchise Fee / Dev Fee Deposit", "$5,000", "$25,000", "Upon signing FA/DA", "Us"],
+        ["GIS New Store Map Package", "$1,050", "$1,050", "Prior to execution", "Us"],
+        ["Construction/Leasehold Improvements", "$102,000", "$365,000", "As incurred", "Outside Suppliers"],
+        ["Furniture, Fixtures and Equipment", "$77,000", "$239,000", "As incurred", "Outside Suppliers"],
+        ["Information System", "$20,000", "$30,000", "When ordered", "Us"],
+        ["On-Site Support Fee", "$2,500", "$2,500", "As incurred", "Us/Affiliate"],
+        ["On-Site Installation Fee", "$2,000", "$5,000", "When installed", "Us/Affiliate"],
+        ["Help Desk Service Fee", "$240", "$240", "$80/month", "Us/Affiliate"],
+        ["Software Maintenance Fee", "$1,125", "$1,125", "$375 monthly", "Us/Affiliate"],
+        ["Signage", "$7,300", "$35,000", "As incurred", "Outside Suppliers"],
+        ["Test Fit Fee", "$950", "$950", "As incurred", "Us/Affiliate"],
+        ["First Month's Rent", "$2,500", "$8,500", "Per lease", "Landlord"],
+        ["Security Deposit/Insurance Premium", "$2,500", "$10,000", "On signing lease", "Landlord"],
+        ["Opening Inventory and Supplies", "$6,000", "$15,000", "As incurred", "Us/Affiliates/Outside"],
+        ["Opening Advertising", "$5,000", "$10,000", "As incurred", "Third Parties"],
+        ["Training Expenses", "$1,000", "$30,000", "As incurred", "Third Parties"],
+        ["Miscellaneous Opening Costs", "$5,000", "$25,000", "As incurred", "Third Parties"],
+        ["Additional Funds – 3 months", "$20,000", "$50,000", "As incurred", "Third Parties"],
+        ["TOTAL", "$261,165", "$853,365", "", ""]
+      ],
+      "table_notes": [
+        "Construction: In-line range $120K-$493K (avg $335K); avg architect fee $33K; free-standing up to $700K; new construction up to $2M (rare). Average TI allowance $42K. Footprint: 1,200-1,600 sq ft.",
+        "FF&E: Average equipment package for 1,400 sq ft = $170K.",
+        "Training: 7-week training for one person; may extend to 16+ weeks.",
+        "Additional Funds: 3-month startup excluding royalty/advertising.",
+        "None refundable except utility deposits (usually) and lease deposits (may be)."
+      ]
+    },
+    {
+      "table_id": "item7_nt_investment",
+      "source_item": "Item 7",
+      "source_pages": [25, 26],
+      "title": "Estimated Initial Investment — Non-Traditional Restaurant",
+      "columns": ["Expenditure", "Low", "High"],
+      "rows": [
+        ["Initial Franchise Fee", "$5,000", "$5,000"],
+        ["GIS New Store Map Package", "$0", "$1,050"],
+        ["Construction/Leasehold", "$25,000", "$125,000"],
+        ["FF&E", "$37,000", "$87,000"],
+        ["Information System", "$0", "$30,000"],
+        ["On-Site Support Fee", "$0", "$2,500"],
+        ["On-Site Installation Fee", "$0", "$5,000"],
+        ["Help Desk", "$0", "$240"],
+        ["Software Maintenance", "$0", "$1,125"],
+        ["Signage", "$8,000", "$30,000"],
+        ["First Month's Rent", "$0", "$5,000"],
+        ["Security/Insurance", "$1,000", "$6,000"],
+        ["Opening Inventory", "$4,000", "$15,000"],
+        ["Opening Advertising", "$5,000", "$10,000"],
+        ["Training", "$1,000", "$6,000"],
+        ["Miscellaneous", "$5,000", "$25,000"],
+        ["Additional Funds – 3 months", "$20,000", "$50,000"],
+        ["TOTAL", "$111,000", "$403,915"]
+      ],
+      "table_notes": ["NT categories: Captive (stadiums, arenas, colleges, airports) and C-Store. Widely varying requirements."]
+    },
+    {
+      "table_id": "item19_table1_all_standard",
+      "source_item": "Item 19",
+      "source_pages": [74],
+      "title": "Net Royalty Sales — All Standard Restaurants (2024)",
+      "columns": ["Metric", "Top 25%", "Top 50%", "Top 75%", "Total"],
+      "rows": [
+        ["No. of Stores", "720", "1,439", "2,158", "2,878"],
+        ["Range", "$1,377,891-$3,325,328", "$1,101,905-$3,325,328", "$885,388-$3,325,328", "$291,819-$3,325,328"],
+        ["Average", "$1,674,893", "$1,453,925", "$1,301,755", "$1,157,331"],
+        ["Median", "$1,585,851", "$1,377,891", "$1,227,979", "$1,101,782"],
+        ["No. Meeting/Exceeding Avg", "268", "571", "892", "1,273"],
+        ["% Meeting/Exceeding Avg", "37.2%", "39.7%", "41.3%", "44.2%"]
+      ],
+      "table_notes": [
+        "Bottom 25%: avg $724,460, median $749,740, 57.1% met/exceeded avg.",
+        "Population: 2,878 standard restaurants (franchised + company-owned) open full year 2024."
+      ]
+    },
+    {
+      "table_id": "item19_table2_franchised",
+      "source_item": "Item 19",
+      "source_pages": [75],
+      "title": "Net Royalty Sales — Franchised Standard Restaurants (2024)",
+      "columns": ["Metric", "Top 25%", "Top 50%", "Top 75%", "Total"],
+      "rows": [
+        ["No. of Stores", "592", "1,183", "1,774", "2,365"],
+        ["Range", "$1,338,185-$3,056,001", "$1,068,262-$3,056,001", "$851,198-$3,056,001", "$291,819-$3,056,001"],
+        ["Average", "$1,641,017", "$1,416,343", "$1,264,288", "$1,122,575"],
+        ["Median", "$1,549,813", "$1,338,185", "$1,188,394", "$1,068,262"],
+        ["No. Meeting/Exceeding Avg", "224", "465", "724", "1,039"],
+        ["% Meeting/Exceeding Avg", "37.8%", "39.3%", "40.8%", "43.9%"]
+      ],
+      "table_notes": [
+        "Bottom 25% franchise: avg $697,195, median $720,222.",
+        "Excludes 170 NT, 151 ST, 66 partial-year standard restaurants."
+      ]
+    },
+    {
+      "table_id": "item19_table3_corporate",
+      "source_item": "Item 19",
+      "source_pages": [76],
+      "title": "Net Sales — Company-Owned Standard Restaurants (2024)",
+      "columns": ["Metric", "Top 25%", "Top 50%", "Top 75%", "Total"],
+      "rows": [
+        ["No. of Stores", "129", "257", "385", "513"],
+        ["Range", "$1,512,918-$3,325,328", "$1,263,416-$3,325,328", "$1,063,180-$3,325,328", "$615,464-$3,325,328"],
+        ["Average", "$1,789,059", "$1,584,864", "$1,445,709", "$1,317,561"],
+        ["Median", "$1,725,533", "$1,512,918", "$1,371,724", "$1,263,416"],
+        ["No. Meeting/Exceeding Avg", "52", "102", "155", "230"],
+        ["% Meeting/Exceeding Avg", "40.3%", "39.7%", "40.3%", "44.8%"]
+      ],
+      "table_notes": [
+        "Company-owned stores concentrated in Atlanta, St. Louis, Louisville, Nashville.",
+        "Company avg ($1,317,561) exceeds franchise avg ($1,122,575) by ~$195K (17.4% premium)."
+      ]
+    },
+    {
+      "table_id": "item19_table4_weekly_psa",
+      "source_item": "Item 19",
+      "source_pages": [77],
+      "title": "Weekly Per Store Average and Median (2020-2024)",
+      "columns": ["Year", "Franchised Avg", "Corporate Avg", "Combined Avg", "Franchised Median", "Corporate Median", "Combined Median", "F Count", "C Count", "Combined Count"],
+      "rows": [
+        ["2020", "$19,658", "$23,279", "$20,395", "$17,417", "$20,487", "$18,075", "2,257", "577", "2,834"],
+        ["2021", "$22,006", "$25,787", "$22,776", "$19,598", "$22,873", "$20,326", "2,265", "579", "2,844"],
+        ["2022", "$22,344", "$27,087", "$23,182", "$19,934", "$21,322", "$20,109", "2,337", "501", "2,838"],
+        ["2023", "$22,483", "$26,660", "$23,232", "$21,411", "$25,735", "$22,258", "2,350", "513", "2,863"],
+        ["2024", "$21,588", "$25,338", "$22,256", "$20,543", "$24,296", "$21,188", "2,365", "513", "2,878"]
+      ],
+      "table_notes": [
+        "2024 decline: combined PSA down 4.2% from 2023.",
+        "Company-owned consistently outperform franchised by 17-21%.",
+        "Store counts exclude NT, ST, and partial-year restaurants."
+      ]
+    },
+    {
+      "table_id": "item20_table1_systemwide",
+      "source_item": "Item 20",
+      "source_pages": [81],
+      "title": "Systemwide Outlet Summary (2022-2024)",
+      "columns": ["Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        ["Franchised", "2022", "2,564", "2,658", "+94"],
+        ["Franchised", "2023", "2,658", "2,689", "+31"],
+        ["Franchised", "2024", "2,689", "2,752", "+63"],
+        ["Company-Owned", "2022", "600", "522", "-78"],
+        ["Company-Owned", "2023", "522", "531", "+9"],
+        ["Company-Owned", "2024", "531", "539", "+8"],
+        ["Total", "2022", "3,164", "3,180", "+16"],
+        ["Total", "2023", "3,180", "3,220", "+40"],
+        ["Total", "2024", "3,220", "3,291", "+71"]
+      ],
+      "table_notes": [
+        "US only. Alaska and Hawaii included but operate on materially different program.",
+        "Company-owned includes 98 majority-owned JV outlets."
+      ]
+    },
+    {
+      "table_id": "item20_table2_transfers",
+      "source_item": "Item 20",
+      "source_pages": [82, 83, 84, 85],
+      "title": "Transfers from Franchisees to New Owners (2022-2024)",
+      "columns": ["Year", "Total Transfers"],
+      "rows": [
+        ["2022", "252"],
+        ["2023", "74"],
+        ["2024", "106"]
+      ],
+      "table_notes": [
+        "Full state-by-state detail extracted. Largest clusters: AZ 45 (2022), CA 31 (2022), PA 47 (2022+2024), OH 39 (3-year total).",
+        "Transfer activity declined from 2022 peak but rebounded in 2024."
+      ]
+    },
+    {
+      "table_id": "item20_table3_franchised_status",
+      "source_item": "Item 20",
+      "source_pages": [85, 86, 87, 88],
+      "title": "Status of Franchised Outlets (2022-2024)",
+      "columns": ["Year", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Ops-Other", "Start", "End"],
+      "rows": [
+        ["2022", "145", "49", "0", "0", "2", "2,564", "2,658"],
+        ["2023", "73", "32", "0", "9", "1", "2,658", "2,689"],
+        ["2024", "90", "0", "0", "1", "26", "2,689", "2,752"]
+      ],
+      "table_notes": [
+        "Zero terminations in 2024 — significant improvement from 49 (2022) and 32 (2023).",
+        "26 ceased operations-other in 2024 (up from 1 in 2023) distributed across 12 states.",
+        "Wisconsin: 19 openings in 2024 (post-reacquisition restructuring).",
+        "Texas: +94 net franchised in 2022 (refranchising of 90 company stores)."
+      ]
+    },
+    {
+      "table_id": "item20_table4_company_owned",
+      "source_item": "Item 20",
+      "source_pages": [89, 90, 91],
+      "title": "Status of Company-Owned Outlets (2022-2024)",
+      "columns": ["Year", "Opened", "Reacquired", "Closed", "Sold to Franchisee", "Start", "End"],
+      "rows": [
+        ["2022", "10", "2", "0", "90", "600", "522"],
+        ["2023", "5", "10", "2", "4", "522", "531"],
+        ["2024", "22", "1", "0", "15", "531", "539"]
+      ],
+      "table_notes": [
+        "90 company stores sold in Texas in 2022 (major refranchising).",
+        "Wisconsin: 9 reacquired (2023), 15 sold back to franchisees (2024).",
+        "22 company openings in 2024 (highest in 3 years)."
+      ]
+    },
+    {
+      "table_id": "item20_table5_projected_openings",
+      "source_item": "Item 20",
+      "source_pages": [92, 93],
+      "title": "Projected Openings (Next Fiscal Year as of Dec 29, 2024)",
+      "columns": ["Type", "Small Town", "Traditional", "Non-Traditional", "Total"],
+      "rows": [
+        ["Franchised", "14", "59", "8", "81"],
+        ["Company-Owned", "0", "8", "0", "8"],
+        ["Total", "14", "67", "8", "89"]
+      ],
+      "table_notes": [
+        "Zero franchise agreements signed but not yet opened.",
+        "Top projected franchise markets: FL (14), TX (11), PA (9), NY (3), OH (4), NC (4)."
+      ]
+    },
+    {
+      "table_id": "item11_marketing_fund_spending",
+      "source_item": "Item 11",
+      "source_pages": [43],
+      "title": "Marketing Fund Spending — Fiscal Year 2024",
+      "columns": ["Category", "Percentage"],
+      "rows": [
+        ["Production", "9%"],
+        ["Media", "83%"],
+        ["Promotions and Public Relations", "2%"],
+        ["Research", "5%"],
+        ["Administrative/Other", "1%"]
+      ],
+      "table_notes": [
+        "Total spent: $188.8 million.",
+        "No money spent to solicit new franchisees."
+      ]
+    },
+    {
+      "table_id": "item21_balance_sheet",
+      "source_item": "Item 21",
+      "source_pages": [480],
+      "title": "Balance Sheets (in Thousands)",
+      "columns": ["Line Item", "Dec 29, 2024", "Dec 31, 2023"],
+      "rows": [
+        ["Cash and cash equivalents", "$0", "$0"],
+        ["Accounts receivable (net)", "$14,692", "$17,754"],
+        ["Total current assets", "$14,692", "$17,754"],
+        ["Advances to related parties", "$7,701", "$6,667"],
+        ["Related party notes receivable", "$15,000", "$15,000"],
+        ["Total assets", "$37,393", "$39,421"],
+        ["Accrued expenses", "$2", "$46"],
+        ["Current deferred revenue", "$2,368", "$2,076"],
+        ["Total current liabilities", "$2,370", "$2,122"],
+        ["Deferred revenue (non-current)", "$14,813", "$14,065"],
+        ["Total liabilities", "$17,183", "$16,187"],
+        ["Paid-in capital", "$15,100", "$15,100"],
+        ["Retained earnings", "$5,110", "$8,134"],
+        ["Total member's equity", "$20,210", "$23,234"]
+      ],
+      "table_notes": ["Allowance for credit losses: $321 (2024), $366 (2023)."]
+    },
+    {
+      "table_id": "item21_income_statement",
+      "source_item": "Item 21",
+      "source_pages": [481],
+      "title": "Statements of Operations (in Thousands)",
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        ["Royalty fees", "$141,892", "$146,990", "$140,476"],
+        ["Franchise fees", "$1,349", "$1,827", "$1,045"],
+        ["Total revenues", "$143,241", "$148,817", "$141,521"],
+        ["G&A expenses", "$34,905", "$14,793", "$13,674"],
+        ["Other taxes", "$253", "$276", "$221"],
+        ["Bad debt expense (benefit)", "$107", "$276", "($36)"],
+        ["Total costs and expenses", "$35,265", "$15,345", "$13,859"],
+        ["Operating income / Net income", "$107,976", "$133,472", "$127,662"]
+      ],
+      "table_notes": ["G&A spike in 2024 due to updated cost allocations with PJUSA. Revenue is 99% royalty fees."]
+    },
+    {
+      "table_id": "item21_members_equity",
+      "source_item": "Item 21",
+      "source_pages": [482],
+      "title": "Statements of Member's Equity (in Thousands)",
+      "columns": ["Period", "Paid-In Capital", "Retained Earnings", "Total"],
+      "rows": [
+        ["Balance Dec 26, 2021", "$15,100", "$6,883", "$21,983"],
+        ["2022 Distributions", "—", "($127,883)", "($127,883)"],
+        ["2022 Net Income", "—", "$127,662", "$127,662"],
+        ["Balance Dec 25, 2022", "$15,100", "$6,662", "$21,762"],
+        ["2023 Distributions", "—", "($132,000)", "($132,000)"],
+        ["2023 Net Income", "—", "$133,472", "$133,472"],
+        ["Balance Dec 31, 2023", "$15,100", "$8,134", "$23,234"],
+        ["2024 Distributions", "—", "($111,000)", "($111,000)"],
+        ["2024 Net Income", "—", "$107,976", "$107,976"],
+        ["Balance Dec 29, 2024", "$15,100", "$5,110", "$20,210"]
+      ],
+      "table_notes": ["Distributions exceed net income in 2022 and 2024, reducing retained earnings."]
+    },
+    {
+      "table_id": "item21_cash_flow",
+      "source_item": "Item 21",
+      "source_pages": [483],
+      "title": "Statements of Cash Flows (in Thousands)",
+      "columns": ["Line Item", "2024", "2023", "2022"],
+      "rows": [
+        ["Net income", "$107,976", "$133,472", "$127,662"],
+        ["Changes in AR", "$3,062", "($3,676)", "($917)"],
+        ["Changes in accrued expenses", "($44)", "($68)", "$113"],
+        ["Changes in deferred revenue", "$1,040", "($2,177)", "$901"],
+        ["Net cash from operations", "$112,034", "$127,551", "$127,759"],
+        ["Advances to related parties", "($112,034)", "($127,551)", "($127,759)"],
+        ["Net cash from investing", "($112,034)", "($127,551)", "($127,759)"],
+        ["Change in cash", "$0", "$0", "$0"],
+        ["Cash beginning/end", "$0", "$0", "$0"]
+      ],
+      "table_notes": ["All operating cash flow advanced to PJUSA. PJF holds zero cash at all times."]
+    }
+  ]
+}

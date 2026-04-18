@@ -1,0 +1,48 @@
+{
+  "depth_block": "A2_targeted_depth_block_2",
+  "exhibits_walked": [
+    {
+      "exhibit": "Exhibit F — Franchise Agreement",
+      "page_range": [187, 236],
+      "clause_walk_status": "complete",
+      "clause_families_extracted": 30,
+      "key_operative_findings": [
+        "Unlimited personal guaranty from all equity holders — no cap",
+        "3-day abandonment trigger for immediate termination",
+        "AI/ML prohibition on use of confidential information",
+        "GC owns all salon data; franchisee has limited license only",
+        "No liquidated damages formula found",
+        "No explicit force majeure provision found",
+        "Waiver of jury trial and punitive damages",
+        "Prevailing party gets costs and attorneys' fees in disputes"
+      ],
+      "detail_file": "RT_depth_contract_burdens.json"
+    },
+    {
+      "exhibit": "Exhibit G — Three Star Program Agreement",
+      "page_range": [237, 240],
+      "clause_walk_status": "partial",
+      "why_not_complete": "Short 4-page agreement. Key terms (program fee, 24-month term, lease-signing incentive, conversion provisions) are thoroughly described in Item 5 body text (pp.19-20). Remaining content is standard boilerplate.",
+      "recovered_elsewhere": "All material economic terms from Item 5. Program fee $35,000 + $5,000 MDAF. 24-month term. Conversion at $15,000 if 2 of 3 leases signed.",
+      "remaining_missing": "Specific default/termination triggers unique to the Three Star Agreement (if any beyond FA cross-reference)."
+    },
+    {
+      "exhibit": "Exhibit H — Master Development Agreement",
+      "page_range": [241, 249],
+      "clause_walk_status": "partial",
+      "why_not_complete": "Key terms (Exclusive DMA, development fee per salon, development schedule formula, renewal conditions) are described in Items 1, 5, 12, and 17 body text. The agreement largely cross-references the Franchise Agreement for most operative provisions.",
+      "recovered_elsewhere": "Exclusive DMA protection, $4,000/salon dev fee + $6,000 IFF, IMUP formula, 10-year term, renewal at GC discretion, termination triggers from Item 17 chart.",
+      "remaining_missing": "Specific development schedule acceleration/deceleration provisions."
+    },
+    {
+      "exhibit": "Exhibit L — Lease Documents",
+      "page_range": [327, 358],
+      "clause_walk_status": "deferred",
+      "why_not_complete": "Sample lease documents (~32 pages). These are form documents between franchisee and landlord with GC as guarantor in some cases. Lease terms vary by location. Key guarantee provisions are covered in Item 10 (lease liability fee $1,500, review fee $2,200-$2,500).",
+      "recovered_elsewhere": "Lease guarantee terms from Item 10. 249 lease guarantees with $8.994M combined annual rentals from Note 7.",
+      "remaining_missing": "Specific sublease terms, assignment restrictions, renewal options in the sample lease."
+    }
+  ],
+  "deferred_exhibits_promoted_to_scorecard": true,
+  "deferred_exhibits_promoted_to_run_summary": true
+}

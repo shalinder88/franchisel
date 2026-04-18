@@ -1,0 +1,113 @@
+{
+  "depth_pass": "A2_depth_pass_1_financial_notes",
+  "entity": "Arby's Franchisor, LLC + ARG",
+  "source_pages_franchisor": [215, 216, 217, 218, 219, 220],
+  "source_pages_arg": [229, 230, 231, 232, 233, 234, 237, 238, 244, 245],
+
+  "franchisor_llc_notes": {
+    "note_1_description_of_business": {
+      "summary": "SPV organized July 2, 2015. Securitization transaction closed Nov 13, 2015. Franchisor for US, Canada, Turkey, Qatar. Managed by ARG.",
+      "source_pages": [215]
+    },
+    "note_2_accounting_policies": {
+      "revenue_recognition": "Royalties recognized as earned. Initial franchise fees deferred and recognized over contract term after restaurant opens. Renewal fees recognized over contract term.",
+      "income_taxes": "LLC not subject to federal/state income taxes — pass-through to ARG.",
+      "intangible_assets": "Trademark/trade name $250M indefinite-lived, tested annually. Franchise agreements $7.4M amortized over 20 years.",
+      "credit_losses": "Lifetime expected loss method on receivables.",
+      "source_pages": [216, 217]
+    },
+    "note_3_intangible_assets": {
+      "trademark": {"gross": 250000000, "amortization": "indefinite", "impairment_2024": "none"},
+      "franchise_agreements": {"gross": 7400000, "accumulated_amortization": 4995000, "net": 2405000, "useful_life_years": 20},
+      "development_agreements": {"gross": 1300000, "accumulated_amortization": 878000, "net": 422000, "useful_life_years": 20},
+      "total_annual_amortization": 435000,
+      "source_pages": [218]
+    },
+    "note_4_revenue_recognition": {
+      "deferred_revenue_total": {"2024": 13646000, "2023": 14300000, "2022": 14600000},
+      "deferred_fee_amortization_2024": 1600000,
+      "future_recognition": {"2025": 1026000, "2026": 933000, "2027": 840000, "2028": 756000, "2029": 707000, "thereafter": 9384000},
+      "source_pages": [219]
+    },
+    "note_5_commitments_securitization": {
+      "notes_outstanding": 789938000,
+      "note_type": "2020 Class A-2 Senior Secured Fixed Rate",
+      "issuance_date": "July 2020",
+      "anticipated_repayment": "July 2027",
+      "legal_final_maturity": "July 2050",
+      "variable_funding": {"facility_size": 300000000, "outstanding": 0, "letters_of_credit": 6900000, "remaining_capacity": 293100000},
+      "source_pages": [219, 220]
+    },
+    "note_6_related_parties": {
+      "affiliate_royalty_rate": 0.05,
+      "management_fee_formula": "base $10.4M + incremental tied to Retained Collections, 2% annual escalator",
+      "management_fee_2024": 31334000,
+      "source_pages": [220]
+    },
+    "note_7_subsequent_events": {"disclosed": "none", "evaluation_date": "March 20, 2025", "source_pages": [220]}
+  },
+
+  "arg_notes": {
+    "note_1_business": {
+      "unit_count_2024": {"franchised": 2517, "company_owned": 1079, "total": 3596},
+      "unit_count_2023": {"franchised": 2516, "company_owned": 1097, "total": 3613},
+      "note": "ARG counts include international franchised units (2,517 vs 2,286 domestic-only in Item 20)",
+      "source_pages": [229]
+    },
+    "note_2_accounting_policies": {
+      "consolidation": "Includes VIE — AFA Service Corporation is consolidated as ARG is the primary beneficiary",
+      "property_useful_lives": {"restaurant_equipment": "3-15 years", "transportation": "3-5 years", "buildings": "7-40 years", "site_improvements": "7-25 years"},
+      "goodwill": "$18.9M, tested annually in Q4, no impairment 2022-2024",
+      "revenue_recognition": {
+        "company_owned": "Recognized upon delivery of food to customer",
+        "royalties": "Recognized as earned, based on % of restaurant sales",
+        "franchise_fees": "Deferred and recognized over franchise term",
+        "advertising_contributions": "Recognized as earned; ARG acts as principal and consolidates ad funds"
+      },
+      "income_taxes": "Included in Inspire consolidated returns. Pro rata method. Tax Sharing Agreement.",
+      "leases": "Operating and finance leases recognized. IBR used as discount rate. ROU assets $454.5M.",
+      "advertising_costs": "Company-owned advertising expense: $78.4M (2024), $83.7M (2023), $84.4M (2022)",
+      "source_pages": [229, 230, 231, 232, 233, 234]
+    },
+    "note_4_intangible_assets": {
+      "trademark": 250000000,
+      "reacquired_franchise_rights": {"gross": 55769000, "accumulated_amortization": 25122000, "net": 30647000},
+      "computer_software": {"gross": 4442000, "net": 2790000},
+      "franchise_agreements": {"gross": 7400000, "net": 2405000},
+      "total_intangibles_net": 36264000,
+      "amortization_2024": 4796000,
+      "source_pages": [237]
+    },
+    "note_5_long_term_debt": {
+      "securitization_notes": 789938000,
+      "securitization_stated_rate": 0.0324,
+      "securitization_effective_rate": 0.035,
+      "variable_funding_rate": "funding cost or index + 3.00%",
+      "variable_funding_effective_rate": 0.0788,
+      "finance_lease_obligations": 121955000,
+      "total_debt": 906782000,
+      "current_portion": 22102000,
+      "debt_issuance_costs_net": 5111000,
+      "fair_value_securitization_notes": 750400000,
+      "source_pages": [238]
+    },
+    "note_10_commitments": {
+      "irb_term_loans_outstanding": 4200000000,
+      "irb_revolving_capacity": 461800000,
+      "lease_guarantees": 1600000,
+      "beverage_commitments": 116500000,
+      "legal_matters": "No material adverse effect expected",
+      "source_pages": [244]
+    },
+    "note_11_related_parties": {
+      "note_receivable_from_parent": 380000000,
+      "note_rate": 0.0158,
+      "note_due": "demand, no later than July 30, 2027",
+      "annual_interest_income": 6000000,
+      "classified_in": "Stockholder's deficit (no intent to cash settle)",
+      "management_fee_allocation": "Direct charges from Inspire (changed from revenue-based allocation in 2023)",
+      "source_pages": [245]
+    },
+    "note_12_subsequent_events": {"disclosed": "none", "source_pages": [245]}
+  }
+}

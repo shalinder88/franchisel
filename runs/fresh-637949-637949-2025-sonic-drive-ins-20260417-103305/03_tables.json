@@ -1,0 +1,364 @@
+{
+  "tables": [
+    {
+      "id": "T_item5_initial_fees",
+      "item": "5",
+      "title": "Initial Fees Summary",
+      "source_pages": [28],
+      "columns": ["Fee Type", "Amount", "Notes"],
+      "rows": [
+        ["Standard initial franchise fee (Traditional/Non-Drive-In)", "$15,000", "Nonrefundable"],
+        ["Non-Traditional Location", "$11,250", "$1,125 × years in term, up to 10"],
+        ["Reopened closed restaurant (existing franchisee)", "$5,000", ""],
+        ["Reopened closed restaurant (new franchisee)", "$12,500", ""],
+        ["Development fee", "$10,000 per restaurant", "$10,000 credited toward each FA fee"],
+        ["Site Design Fee (PSL)", "$1,200", "Optional"],
+        ["Kitchen Layout Design Fee (PKL - new)", "$1,200", "Optional"],
+        ["Kitchen Layout Design Fee (PKL - remodel)", "$750", "Optional"],
+        ["Training fee (GM Leadership Class)", "$200 per attendee", "Nonrefundable"]
+      ],
+      "table_notes": ["All fees nonrefundable. During FY2024, fees ranged from $0 to $45,000."]
+    },
+    {
+      "id": "T_item6_other_fees",
+      "item": "6",
+      "title": "Other Fees Table",
+      "source_pages": [29, 30, 31],
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty fee", "5% of Gross Sales", "Monthly 10th of next month", "Reduced via NRO and other incentives"],
+        ["Brand fee/SBF contribution", "0.90% of Gross Sales", "Monthly 10th of next month", "Payable to Sonic Brand Fund"],
+        ["Advertising cooperative/SMF contribution", "1.625%–3.25% (minimum) of Gross Sales", "Monthly 10th of next month", "Market-type dependent: Core 0.5% coop + 2.75%–4.5% SMF; Developing 0.5% coop + 4.5% SMF; New 5% SMF"],
+        ["Technology fee/BTF contribution", "0.25% of Gross Sales", "Monthly 10th of next month", "Subject to 67% franchisee vote to continue post-3/2026"],
+        ["Additional training fee", "$200/person; $1,000/failed inspection", "Before training", "New GM must attend within 6 months"],
+        ["Site design/kitchen layout fee", "$1,200 PSL / $750 PKL", "Upon request", "Remodeling only"],
+        ["Transfer fee", "$1,000 (non-control/family/wholly-owned); $3,000 (other)", "Before transfer", ""],
+        ["Audit fee, interest, surcharge", "Unpaid amounts + interest + 10% surcharge", "When billed", "If ≥3% understatement"],
+        ["Late charge", "1.75% per month", "Monthly", ""],
+        ["Renewal fee", "$15,000", "Upon signing new FA", ""],
+        ["Insurance", "Cost of obtaining", "As incurred", "If franchisee fails to maintain"],
+        ["Management fee", "3% of Gross Sales", "Monthly 10th of next month", "Only if franchisor manages pending option to purchase"],
+        ["Indemnification", "Varies", "On demand", ""],
+        ["Enforcement costs", "Varies", "On demand", "Prevailing party recovers"]
+      ],
+      "table_notes": [
+        "(1) All fees payable to franchisor, nonrefundable, and uniform unless otherwise noted.",
+        "(2) Standard royalty 5%. NRO incentive: 1% (Yr 1), 1.5% (Yr 2), 2% (Yr 3), 2.5% (Yr 4), 5% (Yr 5+). Relocation: 1%/2%/3%/5%. Early Opening: 0% until required opening date.",
+        "(3) Gross Sales definition excludes refunds, exchanges, taxes, discounts/coupons, stored-value card sales, and proceeds from restaurant sale.",
+        "(4) SMF allocation: Core markets 0.5% coop + 2.75%–4.5% SMF; Developing 0.5% coop + 4.5% SMF; New markets 5% all to SMF. Max total 5% but cooperative can vote for additional.",
+        "(5) BTF: For Drive-Ins open full CY2020, flat monthly amount through 3/2026. Requires 67% franchisee vote to continue.",
+        "(6) Multi-Brand Location must also pay all fees under Other Franchisor's agreements."
+      ]
+    },
+    {
+      "id": "T_item7_traditional_freestanding",
+      "item": "7",
+      "title": "Estimated Initial Investment — Traditional Free-Standing (Leased)",
+      "source_pages": [36, 37],
+      "columns": ["Type of Expenditure", "Low", "High"],
+      "rows": [
+        ["Initial franchise fee", "$15,000", "$15,000"],
+        ["Travel and living expenses during training", "$8,200", "$93,600"],
+        ["Franchisee Certified Training Team expenses", "$15,200", "$42,500"],
+        ["Prepaid expenses", "$2,000", "$125,000"],
+        ["Real property/occupancy charge", "Variable", "Variable"],
+        ["Building costs", "$800,000", "$1,100,000"],
+        ["Site work", "$450,000", "$1,000,000"],
+        ["Restaurant equipment", "$175,000", "$260,000"],
+        ["POS, POPS & other technology", "$105,000", "$160,000"],
+        ["External signage", "$50,000", "$150,000"],
+        ["Beginning inventory", "$20,000", "$50,000"],
+        ["Advertising funds", "$2,000", "$5,000"],
+        ["Insurance premiums", "$10,000", "$20,000"],
+        ["Payroll", "$26,800", "$94,800"],
+        ["Additional funds (3 months)", "$5,000", "$25,000"],
+        ["TOTAL", "$1,676,000", "$3,140,900"]
+      ],
+      "table_notes": ["Excludes free-standing real estate costs. Lot size 34,000–43,560 sq ft for 1,250–1,500 sq ft building with canopies for 6–12 stalls, drive-thru, patio."]
+    },
+    {
+      "id": "T_item7_cstore",
+      "item": "7",
+      "title": "Estimated Initial Investment — C-Store (Non-Drive-In, Leased)",
+      "source_pages": [36, 37],
+      "columns": ["Type of Expenditure", "Low", "High"],
+      "rows": [
+        ["Initial franchise fee", "$15,000", "$15,000"],
+        ["Travel and living expenses during training", "$8,200", "$93,600"],
+        ["Franchisee Certified Training Team expenses", "$15,200", "$42,500"],
+        ["Prepaid expenses", "$2,000", "$15,000"],
+        ["Real property/occupancy charge", "$0", "$35,000"],
+        ["Building costs", "$250,000", "$500,000"],
+        ["Site work", "$50,000", "$100,000"],
+        ["Restaurant equipment", "$175,000", "$260,000"],
+        ["POS, POPS & other technology", "$70,000", "$80,000"],
+        ["External signage", "$30,000", "$50,000"],
+        ["Beginning inventory", "$10,000", "$25,000"],
+        ["Advertising funds", "$2,000", "$5,000"],
+        ["Insurance premiums", "$10,000", "$20,000"],
+        ["Payroll", "$26,800", "$94,800"],
+        ["Additional funds (3 months)", "$5,000", "$25,000"],
+        ["TOTAL", "$669,200", "$1,360,900"]
+      ],
+      "table_notes": ["C-Store location 1,200–2,500 sq ft."]
+    },
+    {
+      "id": "T_item7_drivethru",
+      "item": "7",
+      "title": "Estimated Initial Investment — Drive-Thru Only (Leased)",
+      "source_pages": [36, 37],
+      "columns": ["Type of Expenditure", "Low", "High"],
+      "rows": [
+        ["Initial franchise fee", "$15,000", "$15,000"],
+        ["Travel and living expenses during training", "$8,200", "$93,600"],
+        ["Franchisee Certified Training Team expenses", "$15,200", "$42,500"],
+        ["Prepaid expenses", "$2,000", "$15,000"],
+        ["Real property/occupancy charge", "Variable", "Variable"],
+        ["Building costs", "$800,000", "$1,100,000"],
+        ["Site work", "$400,000", "$1,000,000"],
+        ["Restaurant equipment", "$175,000", "$260,000"],
+        ["POS, POPS & other technology", "$90,000", "$120,000"],
+        ["External signage", "$50,000", "$150,000"],
+        ["Beginning inventory", "$10,000", "$25,000"],
+        ["Advertising funds", "$2,000", "$5,000"],
+        ["Insurance premiums", "$10,000", "$20,000"],
+        ["Payroll", "$26,800", "$94,800"],
+        ["Additional funds (3 months)", "$5,000", "$25,000"],
+        ["TOTAL", "$1,609,200", "$2,965,900"]
+      ],
+      "table_notes": ["Lot size 24,000–32,670 sq ft. Drive-thru only, no stalls or patio."]
+    },
+    {
+      "id": "T_item19_quartile",
+      "item": "19",
+      "title": "Average Unit Volume for 2024 Franchised Traditional Restaurants — Quartile Breakdown",
+      "source_pages": [72, 73],
+      "columns": ["Quartile", "# Restaurants", "AUV", "Median", "Highest", "Lowest", "#/% Above Average"],
+      "rows": [
+        ["1st", "772", "$935,705", "$969,886", "$1,146,501", "$282,129", "439 / 57%"],
+        ["2nd", "772", "$1,320,788", "$1,320,171", "$1,501,675", "$1,146,519", "385 / 50%"],
+        ["3rd", "771", "$1,693,845", "$1,690,128", "$1,919,295", "$1,502,041", "380 / 49%"],
+        ["4th", "771", "$2,398,950", "$2,270,659", "$4,838,846", "$1,919,501", "294 / 38%"],
+        ["All", "3,086", "$1,587,024", "$1,500,713", "$4,838,846", "$282,129", "1,334 / 43%"]
+      ],
+      "table_notes": [
+        "AUV = Gross Sales. Excludes 30 opened during 2024, 26 closed for extended periods, 2 non-traditional, 1 multi-brand, 80 closed in 2024, and 317 company-owned.",
+        "Does not reflect costs of sales, operating expenses, or other costs.",
+        "2,403 of 3,086 have drive-thru windows; 683 do not. Average restaurant age: 27 years."
+      ]
+    },
+    {
+      "id": "T_item19_region",
+      "item": "19",
+      "title": "Average Unit Volume by Region",
+      "source_pages": [73],
+      "columns": ["Region", "AUV", "#", "Median", "Highest", "Lowest", "#/% Above Average"],
+      "rows": [
+        ["Northeast", "$1,561,042", "67", "$1,294,624", "$4,838,846", "$542,093", "21 / 31%"],
+        ["Midwest", "$1,621,362", "474", "$1,500,428", "$3,926,280", "$472,331", "204 / 43%"],
+        ["South", "$1,559,050", "2,152", "$1,481,406", "$4,161,151", "$282,129", "946 / 44%"],
+        ["West", "$1,703,222", "393", "$1,606,376", "$3,366,723", "$350,389", "170 / 43%"]
+      ],
+      "table_notes": ["Northeast: CT, ME, MA, NH, NJ, NY, PA, RI, VT. Midwest: IL, IN, IA, KS, MI, MN, MO, NE, ND, OH, SD, WI. South: AL, AR, DE, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN, TX, VA, WV. West: AZ, CA, CO, ID, MT, NV, NM, OR, UT, WA, WY."]
+    },
+    {
+      "id": "T_item19_venue",
+      "item": "19",
+      "title": "Average Unit Volume by Venue Type",
+      "source_pages": [73],
+      "columns": ["Venue Type", "AUV", "#", "Median", "Highest", "Lowest", "#/% Above Average"],
+      "rows": [
+        ["Free-standing", "$1,597,296", "3,015", "$1,510,818", "$4,838,846", "$350,389", "1,303 / 43%"],
+        ["Gas/C-Store", "$1,121,215", "67", "$1,154,982", "$2,253,332", "$282,129", "35 / 52%"],
+        ["Other Traditional", "$1,647,515", "4", "$1,498,188", "$2,675,439", "$918,243", "2 / 50%"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "T_item20_table1",
+      "item": "20",
+      "title": "Table 1 — System Restaurant Summary (2022–2024)",
+      "source_pages": [75],
+      "columns": ["Type", "Year", "Start", "End", "Gross Change"],
+      "rows": [
+        ["Franchise", "2022", "3,231", "3,220", "-11"],
+        ["Franchise", "2023", "3,220", "3,194", "-26"],
+        ["Franchise", "2024", "3,194", "3,144", "-50"],
+        ["Company", "2022", "321", "326", "+5"],
+        ["Company", "2023", "326", "327", "+1"],
+        ["Company", "2024", "327", "317", "-10"],
+        ["Total", "2022", "3,552", "3,546", "-6"],
+        ["Total", "2023", "3,546", "3,521", "-25"],
+        ["Total", "2024", "3,521", "3,461", "-60"]
+      ],
+      "table_notes": ["2024: Jan 1 to Dec 29. 2023: Jan 1 to Dec 31. 2022: Jan 2 to Jan 1, 2023."]
+    },
+    {
+      "id": "T_item20_table3_totals",
+      "item": "20",
+      "title": "Table 3 — Status of Franchised Restaurants (Totals)",
+      "source_pages": [79, 80, 81, 82],
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Ops/Other", "End"],
+      "rows": [
+        ["2022", "3,231", "39", "10", "0", "0", "40", "3,220"],
+        ["2023", "3,220", "23", "2", "0", "0", "47", "3,194"],
+        ["2024", "3,194", "30", "12", "0", "0", "68", "3,144"]
+      ],
+      "table_notes": [
+        "Per-state detail in full table. Georgia lost 25 franchise units in 2024 (4 terminations, 21 ceased operations).",
+        "Texas: 2023 — 2 restaurants ceased operations to relocate, anticipated reopening in 2024.",
+        "Texas 2024: 1 opening is Multi-Brand Location with Jimmy John's."
+      ]
+    },
+    {
+      "id": "T_item20_table4_totals",
+      "item": "20",
+      "title": "Table 4 — Status of Company Restaurants (Totals)",
+      "source_pages": [82, 83],
+      "columns": ["Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisees", "End"],
+      "rows": [
+        ["2022", "321", "5", "0", "0", "0", "326"],
+        ["2023", "326", "4", "0", "3", "0", "327"],
+        ["2024", "327", "1", "0", "11", "0", "317"]
+      ],
+      "table_notes": ["Company closures in 2024: GA (4), TX (3), CO (2), AL (1), OH (1)."]
+    },
+    {
+      "id": "T_item20_table5",
+      "item": "20",
+      "title": "Table 5 — Projected Openings",
+      "source_pages": [82, 83],
+      "columns": ["State", "FA Signed Not Opened", "Projected New Franchise", "Projected New Company"],
+      "rows": [
+        ["Alabama", "1", "1", "0"],
+        ["Arkansas", "3", "3", "0"],
+        ["California", "3", "4", "0"],
+        ["Colorado", "0", "1", "0"],
+        ["Florida", "0", "1", "0"],
+        ["Illinois", "2", "2", "0"],
+        ["Indiana", "2", "1", "0"],
+        ["Minnesota", "0", "1", "0"],
+        ["Missouri", "1", "1", "0"],
+        ["New Mexico", "0", "1", "0"],
+        ["North Dakota", "0", "1", "0"],
+        ["Oklahoma", "0", "1", "0"],
+        ["Rhode Island", "1", "1", "0"],
+        ["Texas", "7", "4", "0"],
+        ["Total", "20", "23", "0"]
+      ],
+      "table_notes": ["As of December 29, 2024. No projected company openings."],
+      "projected_openings_total": 23
+    },
+    {
+      "id": "T_item20_table2_totals",
+      "item": "20",
+      "title": "Table 2 — Transfers Summary (Totals)",
+      "source_pages": [76, 77, 78],
+      "columns": ["Year", "Total Transfers"],
+      "rows": [
+        ["2022", "132"],
+        ["2023", "75"],
+        ["2024", "334"]
+      ],
+      "table_notes": ["Dramatic spike in 2024 transfers. Texas: 110 transfers in 2024 (up from 30 in 2023). South Carolina: 30 (up from 0). Kentucky: 29 (up from 1). Arkansas: 25 (up from 1)."],
+      "transfers_total": {"2022": 132, "2023": 75, "2024": 334}
+    },
+    {
+      "id": "T_item11_training",
+      "item": "11",
+      "title": "Training Programs Summary",
+      "source_pages": [55, 56],
+      "columns": ["Subject", "Classroom Hours", "On-the-Job Hours", "Location"],
+      "rows": [
+        ["General Manager Training", "0", "72", "Certified Sonic restaurant"],
+        ["Shift Manager Training (professional skills)", "0", "56", "Certified Sonic restaurant"],
+        ["Shift Manager Training (computer/station)", "0", "40", "Certified Sonic restaurant"],
+        ["Assistant Manager Training", "0", "72", "Certified Sonic restaurant"],
+        ["Team Member Positional Training", "0", "96", "Certified Sonic restaurant"],
+        ["TOTAL", "0", "336", ""],
+        ["General Manager Leadership Class", "24", "0", "Oklahoma City, locations throughout US, or virtual"],
+        ["ServSafe", "8", "0", "Certified third parties, throughout US"]
+      ],
+      "table_notes": ["Additional 5-week certification training for first 3 restaurants. No classroom hours in main training program — all on-the-job."]
+    },
+    {
+      "id": "T_item21_sfllc_balance_sheet",
+      "item": "21",
+      "title": "Sonic Franchising LLC — Balance Sheet",
+      "source_pages": [312],
+      "columns": ["Line Item", "Dec 29, 2024 ($K)", "Dec 31, 2023 ($K)"],
+      "rows": [
+        ["Restricted cash and cash equivalents", "593", "567"],
+        ["Accounts receivable, net", "4,713", "4,650"],
+        ["Total current assets", "5,306", "5,217"],
+        ["Intangible assets, net", "30,940", "33,773"],
+        ["Total assets", "36,246", "38,990"],
+        ["Current deferred revenue", "518", "588"],
+        ["Noncurrent deferred revenue", "6,510", "5,976"],
+        ["Franchisee deposits and other liabilities", "2,834", "3,951"],
+        ["Total liabilities", "9,862", "10,515"],
+        ["Member's equity", "26,384", "28,475"],
+        ["Total liabilities and member's equity", "36,246", "38,990"]
+      ],
+      "table_notes": ["Single-member LLC, no income taxes. Pass-through entity."]
+    },
+    {
+      "id": "T_item21_sfllc_income",
+      "item": "21",
+      "title": "Sonic Franchising LLC — Statements of Income",
+      "source_pages": [313],
+      "columns": ["Line Item", "FY2024 ($K)", "FY2023 ($K)", "FY2022 ($K)"],
+      "rows": [
+        ["Franchise fees and royalty revenues", "58,991", "58,747", "57,895"],
+        ["Royalty fees to Affiliates", "49,380", "47,101", "47,058"],
+        ["General and administrative", "834", "784", "726"],
+        ["Amortization", "2,833", "2,833", "2,833"],
+        ["Total costs and expenses", "53,047", "50,718", "50,617"],
+        ["Operating income", "5,944", "8,029", "7,278"],
+        ["Interest income, net", "-27", "-27", "-7"],
+        ["Net income", "5,971", "8,056", "7,285"]
+      ],
+      "table_notes": ["Includes $7,980K (2024), $8,242K (2023), $7,865K (2022) from Affiliates."]
+    },
+    {
+      "id": "T_item21_sis_balance_sheet",
+      "item": "21",
+      "title": "SIS — Consolidated Balance Sheet",
+      "source_pages": [325],
+      "columns": ["Line Item", "Dec 29, 2024 ($K)", "Dec 31, 2023 ($K)"],
+      "rows": [
+        ["Cash and cash equivalents", "48,923", "37,237"],
+        ["Restricted cash", "13,834", "8,922"],
+        ["Accounts receivable, net", "28,011", "27,872"],
+        ["Total current assets", "91,985", "88,587"],
+        ["Property and equipment, net", "149,098", "151,864"],
+        ["Goodwill", "822,553", "822,553"],
+        ["Intangible assets, net", "1,264,026", "1,280,952"],
+        ["Total assets", "2,334,969", "2,351,731"],
+        ["Total current liabilities", "74,235", "108,162"],
+        ["Long-term debt, net", "1,392,424", "1,417,373"],
+        ["Member's equity", "856,653", "811,089"]
+      ],
+      "table_notes": ["Includes $1.1B indefinite-lived trademark. Goodwill $822.6M."]
+    },
+    {
+      "id": "T_item21_sis_income",
+      "item": "21",
+      "title": "SIS — Consolidated Statements of Income",
+      "source_pages": [326],
+      "columns": ["Line Item", "FY2024 ($K)", "FY2023 ($K)", "FY2022 ($K)"],
+      "rows": [
+        ["Franchise fees and royalty revenues", "233,246", "241,107", "240,343"],
+        ["Rental income", "17,992", "18,829", "19,357"],
+        ["Other revenues", "44,618", "37,239", "41,276"],
+        ["Total revenues", "295,856", "297,175", "300,976"],
+        ["General and administrative", "41,372", "45,231", "78,158"],
+        ["Depreciation and amortization", "21,487", "43,214", "51,248"],
+        ["Operating income", "233,292", "207,801", "171,445"],
+        ["Interest expense", "51,424", "52,146", "52,224"],
+        ["Net income", "183,322", "439,817", "86,962"]
+      ],
+      "table_notes": ["FY2023 net income includes $282.6M income tax benefit from LLC conversion. Distributions to parent: $137.8M (2024), $142.2M (2023), $116.2M (2022)."]
+    }
+  ]
+}

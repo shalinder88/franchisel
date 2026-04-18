@@ -1,0 +1,177 @@
+{
+  "exhibits": [
+    {
+      "letter": "A",
+      "name": "State Administrators and Agents for Service of Process",
+      "category": "regulatory",
+      "priority": "low",
+      "page_range": [58, 59],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "State administrator contact info; standard regulatory listing, no operative clauses"
+    },
+    {
+      "letter": "B",
+      "name": "State Amendments to FDD and FLA",
+      "category": "state_addenda",
+      "priority": "high",
+      "page_range": [60, 89],
+      "states_covered": ["California", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington", "Wisconsin"],
+      "clause_walk_status": "partial",
+      "material_clause_count": 11,
+      "operative_terms_extracted": ["forum_selection_override", "general_release_limitation", "noncompete_limitation", "termination_good_cause", "fair_market_value_compensation", "governing_law_override"],
+      "why_not_complete": "State amendment override themes identified but per-state operative details deferred to A2 depth pass. Pages 60-89."
+    },
+    {
+      "letter": "C",
+      "name": "Guarantee of Performance",
+      "category": "guarantee",
+      "priority": "high",
+      "page_range": [90, 90],
+      "clause_walk_status": "complete",
+      "material_clause_count": 1,
+      "operative_terms_extracted": ["unconditional_guarantee_by_parent"]
+    },
+    {
+      "letter": "D",
+      "name": "Financial Statements (H&R Block, Inc.)",
+      "category": "financial",
+      "priority": "high",
+      "page_range": [91, 125],
+      "clause_walk_status": "complete",
+      "material_clause_count": 0,
+      "operative_terms_extracted": ["auditor_opinion", "income_statement", "balance_sheet", "cash_flow", "stockholders_equity", "financial_notes"]
+    },
+    {
+      "letter": "E",
+      "name": "List of Franchisees and Certain Former Franchisees",
+      "category": "franchisee_list",
+      "priority": "medium",
+      "page_range": [126, 184],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "PII-sensitive franchisee contact information; standard pipeline handling. Pages 126-184 (59 pages)."
+    },
+    {
+      "letter": "F-1",
+      "name": "Franchise License Agreement",
+      "category": "franchise_agreement",
+      "priority": "high",
+      "page_range": [185, 225],
+      "clause_walk_status": "partial",
+      "material_clause_count": 39,
+      "operative_terms_extracted": ["definitions", "grant", "marks", "term", "initial_fee", "royalties", "training", "computer_systems", "supplies", "conduct_of_business", "books_records", "noncompete", "termination_incurable", "termination_curable", "termination_by_franchisee", "post_termination", "rofr", "transfer", "change_of_principal", "death_disability", "indemnification", "representations", "choice_of_remedies", "independent_contractor", "non_waiver", "amendments", "applicable_law", "litigation_limitations"],
+      "why_not_complete": "FLA structure identified via TOC (39 sections). Key operative provisions covered via Item 17 cross-references. Full clause-by-clause walk deferred to A2 depth pass. Pages 185-225."
+    },
+    {
+      "letter": "F-2",
+      "name": "Addendum to FLA — H&R Block Small Business Standard",
+      "category": "franchise_agreement_addendum",
+      "priority": "medium",
+      "page_range": [226, 228],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Small Business services addendum; optional service. Pages 226-228."
+    },
+    {
+      "letter": "F-3",
+      "name": "Amendment to FLA — Non-H&R Block Business",
+      "category": "franchise_agreement_addendum",
+      "priority": "low",
+      "page_range": [229, 230],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Non-H&R Block business amendment; optional activity. Pages 229-230."
+    },
+    {
+      "letter": "G",
+      "name": "Sample Form of General Release",
+      "category": "release",
+      "priority": "high",
+      "page_range": [231, 232],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "General release form; operative scope to be walked in A2. Pages 231-232."
+    },
+    {
+      "letter": "H-1",
+      "name": "Term Loan Credit and Security Agreement",
+      "category": "financing",
+      "priority": "high",
+      "page_range": [233, 248],
+      "clause_walk_status": "partial",
+      "material_clause_count": 5,
+      "operative_terms_extracted": ["loan_terms", "security_interest", "cross_default", "personal_guarantee", "remedies"],
+      "why_not_complete": "Key terms extracted from Item 10 body text. Detailed clause walk of 16-page agreement deferred to A2. Pages 233-248."
+    },
+    {
+      "letter": "H-2",
+      "name": "Short-Term Loan Credit and Security Agreement",
+      "category": "financing",
+      "priority": "high",
+      "page_range": [249, 264],
+      "clause_walk_status": "partial",
+      "material_clause_count": 5,
+      "operative_terms_extracted": ["loan_terms", "security_interest", "cross_default", "personal_guarantee", "remedies"],
+      "why_not_complete": "Key terms extracted from Item 10 body text. Detailed clause walk deferred to A2. Pages 249-264."
+    },
+    {
+      "letter": "I-1",
+      "name": "Franchise Electronic Filing and Software Systems Agreement",
+      "category": "technology",
+      "priority": "medium",
+      "page_range": [265, 274],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "Software licensing and e-filing agreement; annual electronic acceptance required. Pages 265-274."
+    },
+    {
+      "letter": "I-2",
+      "name": "Peace of Mind Franchise Acknowledgement",
+      "category": "product_agreement",
+      "priority": "medium",
+      "page_range": [275, 277],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "POM program acknowledgement. Pages 275-277."
+    },
+    {
+      "letter": "I-3",
+      "name": "Franchise Financial Products Distribution Agreement",
+      "category": "product_agreement",
+      "priority": "medium",
+      "page_range": [278, 310],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": [],
+      "why_not_complete": "FDA governing financial product distribution through approved banking partner. 33 pages. Pages 278-310."
+    },
+    {
+      "letter": "J",
+      "name": "Operations Manual Table of Contents",
+      "category": "manual",
+      "priority": "low",
+      "page_range": [311, 313],
+      "clause_walk_status": "labeled_only",
+      "material_clause_count": 0,
+      "operative_terms_extracted": []
+    },
+    {
+      "letter": "K",
+      "name": "Receipts",
+      "category": "receipt",
+      "priority": "low",
+      "page_range": [314, 315],
+      "clause_walk_status": "complete",
+      "material_clause_count": 0,
+      "operative_terms_extracted": []
+    }
+  ]
+}

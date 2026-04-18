@@ -1,0 +1,136 @@
+{
+  "depth_pass": "financial_note_depth",
+  "source_pages": [310, 311, 312, 313, 314, 315],
+  "note_families": [
+    {
+      "note": "Note 1 — Description of Operations",
+      "page": 310,
+      "key_facts": [
+        "Company formed June 12, 2017 as Delaware LLC; no operations before July 7, 2017",
+        "Direct wholly-owned subsidiary of Jimmy John's Funding, LLC (JJ Issuer)",
+        "Ownership chain: JJ Issuer → SPV Guarantor → JJBC → Jimmy John's LLC → JJ Holding Company LLC → IRB Holding Corp → Inspire Brands, Inc.",
+        "Company offers franchises for development and operation of Jimmy John's restaurants"
+      ]
+    },
+    {
+      "note": "Note 2 — Summary of Significant Accounting Policies",
+      "pages": [310, 311, 312],
+      "policies": {
+        "basis_of_presentation": "GAAP",
+        "fiscal_year": "52 or 53 weeks ending Sunday closest to December 31; all three reported years were 52 weeks",
+        "restricted_cash": "Primarily cash held to meet securitization reserve requirements; balances in excess of FDIC limits",
+        "accounts_receivable": "Generated from ongoing franchisee relationships; due within 30 days; allowance for credit losses based on lifetime expected loss",
+        "indefinite_lived_intangible": {
+          "asset": "Trademark/trade name",
+          "gross_value": 450000000,
+          "accumulated_impairment": 180000000,
+          "net_value": 270000000,
+          "impairment_test": "Annual (Q4) using relief-from-royalty method (Level 3 inputs)",
+          "impairment_2025": "none",
+          "impairment_2024": "none",
+          "impairment_2023": "none",
+          "key_assumptions": "future revenues, royalty rate, terminal value, discount rate"
+        },
+        "definite_lived_intangible": {
+          "asset": "Franchise agreements",
+          "gross_value": 430000000,
+          "accumulated_amortization_2025": 155980000,
+          "net_value_2025": 274020000,
+          "useful_life_years": 17,
+          "amortization_method": "straight-line",
+          "annual_amortization": 25294000,
+          "impairment_2025": "none"
+        },
+        "fair_value_measurements": "Restricted cash, AR, AP approximate book value. Trademark tested using Level 3 inputs.",
+        "distributions_to_member": "Principally from centralized cash management; not expected to be repaid; presented net as financing activity",
+        "income_taxes": "LLC — income taxes are obligation of Member; no provision in these statements",
+        "revenue_recognition": {
+          "method": "ASC 606 five-step model",
+          "royalty_rate": "6% of restaurant sales",
+          "royalty_recognition": "as earned",
+          "initial_franchise_fees": "deferred when received; recognized over contractual term (10 years) once restaurant opens",
+          "renewal_fees": "recognized over contractual term once agreement signed and fee paid",
+          "forfeitures": "recognized as revenue upon termination of commitment",
+          "training_income": "recognized when services provided",
+          "development_incentives": "lower royalties for new franchisees; recognized over remaining term",
+          "development_incentive_start": 2021
+        },
+        "change_in_accounting_principle_2025": "Reclassified certain upfront cash payments from deferred revenue to other liabilities; $1.6M current + $1.0M noncurrent reclassified as of Dec 29, 2024",
+        "new_accounting_pronouncements": "Reviewed; none expected to have material effect"
+      }
+    },
+    {
+      "note": "Note 3 — Commitments and Contingencies",
+      "page": 313,
+      "key_facts": {
+        "securitization_notes": {
+          "total_outstanding": 1036625000,
+          "notes": [
+            {"class": "2017-1 A-2-II", "principal": 288750000, "issuance": "July 2017", "anticipated_repayment": "July 2027", "legal_maturity": "July 2047"},
+            {"class": "2022-1 A-1 (VFN)", "principal": 0, "issuance": "March 2022", "anticipated_repayment": "April 2027 (+ two 1-year extensions)", "capacity": 50000000},
+            {"class": "2022-1 A-2-I", "principal": 144750000, "issuance": "March 2022", "anticipated_repayment": "April 2027", "legal_maturity": "April 2052"},
+            {"class": "2022-1 A-2-II", "principal": 434250000, "issuance": "March 2022", "anticipated_repayment": "April 2029", "legal_maturity": "April 2052"},
+            {"class": "2022-1 A-2-III", "principal": 168875000, "issuance": "March 2022", "anticipated_repayment": "April 2032", "legal_maturity": "April 2052"}
+          ],
+          "vfn_outstanding_borrowings": 0,
+          "vfn_letters_of_credit": 11900000,
+          "vfn_remaining_capacity": 38100000,
+          "secured_by": "substantially all assets of securitization entities including the Company",
+          "additional_interest_if_not_repaid_by_anticipated_date": true
+        },
+        "legal_matters": "Various litigation and claims incidental to business; no material adverse effect expected"
+      }
+    },
+    {
+      "note": "Note 4 — Revenue Recognition",
+      "page": 314,
+      "key_facts": {
+        "deferred_franchise_fees": {"2025": 24597000, "2024": 19364000, "2023": 16568000},
+        "revenue_recognized_from_prior_deferrals": {"2025": 1864000, "2024": 1351000, "2023": 2063000},
+        "future_recognition_schedule": {
+          "2026": 1354000,
+          "2027": 1227000,
+          "2028": 1128000,
+          "2029": 1044000,
+          "2030": 949000,
+          "thereafter": 18895000,
+          "total": 24597000
+        }
+      }
+    },
+    {
+      "note": "Note 5 — Intangible Assets, Net",
+      "page": 314,
+      "key_facts": {
+        "amortization_schedule": {
+          "2026": 25294000,
+          "2027": 25294000,
+          "2028": 25294000,
+          "2029": 25294000,
+          "2030": 25294000,
+          "thereafter": 147550000,
+          "total": 274020000
+        }
+      }
+    },
+    {
+      "note": "Note 6 — Related-Party Transactions",
+      "page": 315,
+      "key_facts": {
+        "management_agreement_with": "Jimmy John's Franchise, LLC",
+        "services_provided": "franchising, marketing, intellectual property, reporting, operating, and support services to franchisees",
+        "management_fee_2025": 31453000,
+        "standalone_caveat": "Results of operations may not be indicative of those that would have been achieved had the Company operated on a stand-alone basis"
+      }
+    },
+    {
+      "note": "Note 7 — Subsequent Events",
+      "page": 315,
+      "key_facts": {
+        "evaluation_through": "2026-03-19",
+        "items_to_disclose": "none",
+        "adjustments_required": "none"
+      }
+    }
+  ]
+}

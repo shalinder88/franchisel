@@ -1,0 +1,352 @@
+{
+  "document_identity": {
+    "filing_id": "638559",
+    "brand": "Panda Express",
+    "franchisor_legal_name": "Citadel Panda Express, Inc.",
+    "state_of_incorporation": "California",
+    "date_incorporated": "October 25, 1990",
+    "principal_address": "1683 Walnut Grove Avenue, Rosemead, California 91770",
+    "phone": "626-799-9898",
+    "website": "www.pandaexpress.com",
+    "issuance_date": "April 18, 2025",
+    "fiscal_year_end": "December 28, 2024",
+    "parent_entities": ["Panda Express, Inc. (PEI)", "Panda Restaurant Group, Inc. (PRG)"],
+    "source_section": "Item 1, Cover Page",
+    "source_pages": [1, 9],
+    "confidence": "high"
+  },
+  "item1": {
+    "entity_type": "California corporation",
+    "parent_chain": "Citadel Panda Express → PEI → PRG",
+    "subsidiary": "Citadel Aviation Investments, LLC",
+    "s_corporation": true,
+    "franchising_since": 1995,
+    "current_license_form_since": 2004,
+    "business_model": "Captive venue Chinese/Asian food restaurants",
+    "venue_types": ["airports", "military bases", "universities", "hospitals", "casinos", "travel plazas"],
+    "company_owned_outlets": 2329,
+    "company_owned_operator": "PEI",
+    "hibachi_san": {"company_owned": 8, "franchised": 2},
+    "jv_restaurants": 59,
+    "international": ["Canada", "Japan", "Korea"],
+    "pilot_drive_thru": true,
+    "drive_thru_sq_ft": 2600,
+    "drive_thru_adder": 1500000,
+    "first_restaurant_year": 1983,
+    "source_pages": [9, 10, 11, 12]
+  },
+  "item2_leadership": [
+    {"name": "Andrew Jin-Chan Cherng", "role": "Co-Chairman/Co-CEO", "tenure": "Since 1990"},
+    {"name": "Peggy Tsiang Cherng", "role": "Co-Chairman/Co-CEO/Treasurer", "tenure": "Since 1990"},
+    {"name": "David Landsberg", "role": "CFO", "tenure": "Since Jan 2011"},
+    {"name": "James Ku", "role": "Chief Development Officer", "tenure": "Since Jan 2023"},
+    {"name": "Monte H. Baier", "role": "SVP General Counsel & Secretary", "tenure": "Since Sept 2007"},
+    {"name": "Douglas Stalgren", "role": "VP Panda Express International", "tenure": "Since May 2016"},
+    {"name": "Andrew Chan", "role": "Director Domestic & Intl Licensing", "tenure": "Since Feb 2019"},
+    {"name": "Donna Wanser", "role": "VP Real Estate Legal & Property Mgmt", "tenure": "Since Nov 2004"},
+    {"name": "Brian Jarvis", "role": "Exec Dir Business Dev NT/Licensing/Intl", "tenure": "Since Aug 2022"}
+  ],
+  "item3_litigation": {
+    "pending_count": 4,
+    "concluded_count": 6,
+    "total_settlement_exposure_concluded": 10692965,
+    "key_cases": [
+      {"type": "data_breach", "status": "pending_settlement", "parties": "Halliday v. PRG"},
+      {"type": "wage_hour", "status": "settled", "amount": 2752965, "parties": "Minas/Lee/Martinez"},
+      {"type": "vendor_arbitration", "status": "concluded", "net_result": "PRG won $3.6M net", "parties": "NovaDine v. PRG"}
+    ]
+  },
+  "item5_initial_fees": {
+    "standard_fee": 25000,
+    "fee_range_2024": [12500, 25000],
+    "refundable": false,
+    "when_due": "Within 5 days of written authorization"
+  },
+  "item6_fee_detail": {
+    "royalty": {"rate_pct": 8.0, "minimum_per_period": 4000, "period": "four_weeks", "cpi_adjustable": true},
+    "proprietary_product_surcharge_pct": 10.0,
+    "transfer_fee": {"per_restaurant": 10000, "max_per_transaction": 30000},
+    "successor_fee": 10000,
+    "training_initial": {"fee": 0, "max_attendees_free": 8, "per_additional": 1000},
+    "training_remedial": {"per_day": 500},
+    "opening_assistance": {"per_day": 500},
+    "online_training": {"range": [250, 500]},
+    "food_safety_inspection": {"quarterly": 177.24, "annual_increase_pct": 4},
+    "customer_satisfaction_survey": {"monthly_per_store": [20, 22]},
+    "mystery_shopper": {"per_service": [19.75, 55], "meal_reimbursement": [11, 12]},
+    "management_fee_pct": 7.0,
+    "early_termination": "anticipated_royalties_for_8_month_notice_period",
+    "promotional_materials": {"annual": [300, 1000]},
+    "interest_rate": 10.0,
+    "audit_threshold_pct": 3.0
+  },
+  "item7_total_investment": {
+    "low": 514500,
+    "high": 3275500,
+    "components": [
+      {"name": "Initial License Fee", "low": 25000, "high": 25000},
+      {"name": "Lease (3 months)", "low": 10000, "high": 425000},
+      {"name": "Leasehold Improvements", "low": 100000, "high": 1500000},
+      {"name": "FF&E", "low": 120000, "high": 650000},
+      {"name": "Initial Inventory", "low": 11000, "high": 18000},
+      {"name": "Computer HW/SW", "low": 16500, "high": 27000},
+      {"name": "Cash Registers", "low": 6000, "high": 8000},
+      {"name": "Insurance", "low": 94500, "high": 157500},
+      {"name": "Training", "low": 13000, "high": 29000},
+      {"name": "Architecture/Design", "low": 35000, "high": 120000},
+      {"name": "Construction Supervision", "low": 20000, "high": 150000},
+      {"name": "Sales Tax Deposits", "low": 4500, "high": 10000},
+      {"name": "Telecom", "low": 500, "high": 1000},
+      {"name": "Licenses/Permits", "low": 1500, "high": 60000},
+      {"name": "Payroll (3 months)", "low": 39000, "high": 65000},
+      {"name": "Additional Funds (3 months)", "low": 18000, "high": 30000}
+    ],
+    "typical_sq_ft": [500, 1500],
+    "insurance_requirements": {
+      "cgl": 10000000,
+      "auto": 3000000,
+      "cyber": 10000000,
+      "property": "replacement_cost",
+      "workers_comp": "per_state_law",
+      "self_insurance_min_net_worth": 150000000
+    }
+  },
+  "item8_supplier_restrictions": {
+    "designated_supplier_pct": [85, 90],
+    "proprietary_product_surcharge_pct": 10,
+    "supplier_approval_weeks": 8,
+    "officer_owned_suppliers": ["Stampede Holdings (beef)", "I/O Controls (equipment)"],
+    "rebates_retained": true,
+    "soda_rebate_2024_passed_through": 612286,
+    "revenue_from_purchases_2024": 2378044,
+    "pct_of_domestic_revenue": 10.65
+  },
+  "item9_obligations": {
+    "categories": 27,
+    "key_items": ["site_selection", "training", "fees", "standards_compliance", "insurance", "records_reports", "inspections", "transfer", "renewal", "noncompete", "dispute_resolution", "personal_guaranty"]
+  },
+  "item10_financing": {
+    "available": true,
+    "source": "PRG/PEI affiliate",
+    "typical_amount_under": 100000,
+    "interest_rate": 7.0,
+    "default_rate_adder": 5.0,
+    "term_years": [1, 2],
+    "prepay_penalty": false,
+    "security": "personal_guarantee_plus_blanket_lien",
+    "cross_default": true
+  },
+  "item11_training": {
+    "programs": [
+      {"role": "Head of Business/Ops", "weeks": 11, "classroom_hrs": 148, "ojt_hrs": 290},
+      {"role": "Ops Training Leader", "weeks": 4, "classroom_hrs": 33, "ojt_hrs": 127},
+      {"role": "Store Manager", "weeks": 8, "classroom_hrs": 24, "ojt_hrs": 328},
+      {"role": "AM/Head Chef/Cook", "weeks": 6, "classroom_hrs": 32, "ojt_hrs": 243},
+      {"role": "Kitchen Help", "weeks": 2, "classroom_hrs": 8, "ojt_hrs": 78},
+      {"role": "Shift Lead", "weeks": 2, "classroom_hrs": 13, "ojt_hrs": 67},
+      {"role": "Counter Help", "weeks": 1, "classroom_hrs": 5, "ojt_hrs": 35}
+    ],
+    "min_staffing": {"sm_am": 1, "chefs_cooks_base": 6, "service_base": 3},
+    "scaling": "+1 per $8K weekly sales above $7K",
+    "annual_recertification": 6,
+    "ops_training_leader_threshold": 5
+  },
+  "item12_territory": {
+    "exclusive": false,
+    "protected_area": false,
+    "channel_restrictions_on_franchisee": true,
+    "franchisor_unrestricted": true,
+    "brand_conversion_possible": true,
+    "solicitation_restrictions": false,
+    "relocation_consent_required": true,
+    "early_termination_venue_closure_penalty": "min_royalty_90_days_plus_24_months_royalties"
+  },
+  "item13_trademarks": {
+    "count": "40+",
+    "owner": "PRG",
+    "ip_license_date": "1999-12-26",
+    "ip_license_term_years": 20,
+    "auto_renewing": true,
+    "key_marks": ["PANDA EXPRESS", "PANDA", "ORANGE CHICKEN", "PANDA REWARDS", "CUB MEAL"]
+  },
+  "item14_patents": {
+    "count": 1,
+    "patent_no": "US 7,661,421",
+    "description": "Wok support ring",
+    "expires_approx": "2028-04-26"
+  },
+  "item15_participation": {
+    "sm_onsite_required": true,
+    "personal_guaranty_possible": true,
+    "spouse_cosign_possible": true,
+    "pci_dss_required": true,
+    "sm_dedicated_possible": true
+  },
+  "item16_product_restrictions": {
+    "retail_only": true,
+    "no_competing_asian_at_facility": true,
+    "independent_pricing": true,
+    "brand_refresh_year": 5,
+    "complete_update_year": 10
+  },
+  "item17_termination": {
+    "curable_15_day": 7,
+    "curable_30_day": "all_other",
+    "non_curable": 14,
+    "three_defaults_12_months": true,
+    "post_termination_penalty": "24_months_royalties_plus_90_days_min"
+  },
+  "item17_transfer": {
+    "consent_required": true,
+    "fee_per_restaurant": 10000,
+    "fee_max": 30000,
+    "rofr": true,
+    "rofr_days": 30,
+    "transferor_remains_liable": true
+  },
+  "item17_renewal": {
+    "operating_term_years": 10,
+    "successor_term_years": 5,
+    "successor_count": 1,
+    "materially_different_risk": true,
+    "successor_fee": 10000,
+    "notice_window_months": [6, 12]
+  },
+  "item17_dispute_resolution": {
+    "mediation": true,
+    "arbitration": true,
+    "rules": "AAA",
+    "venue": "Los_Angeles_County",
+    "jury_waiver": true,
+    "class_action_waiver": true,
+    "governing_law": "California"
+  },
+  "item17_noncompete": {
+    "during_term": "facility_level_asian_food",
+    "post_term": "continues_per_17.4A",
+    "confidentiality_survival_years": 5
+  },
+  "item17_death_disability": {
+    "addressed": false,
+    "agreement_binds": "executors_administrators_heirs_successors"
+  },
+  "item18_public_figures": false,
+  "item19_chart_detail": {
+    "population": 156,
+    "jv_included": 59,
+    "total_gross_sales": 247270032,
+    "average": 1585064,
+    "median": 1186865,
+    "min": 246547,
+    "max": 9233961,
+    "pct_above_avg": 42,
+    "cost_data": false,
+    "ebitda_disclosed": false,
+    "venues": {
+      "airport": {"n": 22, "avg": 3903433},
+      "hospital": {"n": 3, "avg": 608731},
+      "military": {"n": 51, "avg": 1489026},
+      "university": {"n": 72, "avg": 889636},
+      "casino": {"n": 4, "avg": 1884571},
+      "travel_plaza": {"n": 4, "avg": 3008974}
+    }
+  },
+  "item20_yearly_activity": {
+    "franchised_end_2024": 173,
+    "company_owned_end_2024": 2329,
+    "total_end_2024": 2502,
+    "three_year_franchise_growth": 27,
+    "three_year_company_growth": 176,
+    "terminations_3yr": [0, 0, 2],
+    "non_renewals_3yr": [0, 0, 0],
+    "transfers_3yr": [5, 5, 3],
+    "projected_2025_franchise": 14,
+    "projected_2025_company": 123,
+    "gag_clause": true
+  },
+  "item21_financial_structure_detail": {
+    "auditor": "CliftonLarsonAllen LLP",
+    "opinion": "unqualified",
+    "opinion_date": "2025-04-07",
+    "total_assets": 69999787,
+    "total_liabilities": 4213264,
+    "equity": 65786523,
+    "retained_earnings": 96736982,
+    "revenue": 28262859,
+    "net_income": 24842691,
+    "net_margin_pct": 87.9,
+    "revenue_growth_pct": 9.9,
+    "cash": 3664078,
+    "ar": 4829081,
+    "ppe_net": 61495728,
+    "due_from_affiliate": 35310459,
+    "deferred_revenue": 4110318,
+    "debt": 0,
+    "tax_structure": "S_Corp",
+    "airplane_assets_gross": 61157629,
+    "land": 5865000,
+    "buildings": 4376175
+  },
+  "item21_statement_detail": {
+    "revenue_breakdown": {
+      "royalty_income": 24916622,
+      "license_fees": 2378044,
+      "initial_fees": 816928,
+      "rental_income": 145900,
+      "restaurant_income": 10235,
+      "misc": -4870
+    },
+    "expense_breakdown": {
+      "depreciation": 2167676,
+      "professional_services": 339112,
+      "salaries": 143456,
+      "property_tax": 230723,
+      "misc": 64983
+    },
+    "foreign_tax": 474218,
+    "operating_cash_flow": 2739313,
+    "investing_cash_flow": -25751
+  },
+  "item21_note_families": [
+    {"note": "Note 1 — Accounting Policies", "key": "S Corp; ASC 606 revenue recognition; initial fees over 5-10 years; 52/53-week year; lessor of 3 buildings to PEI"},
+    {"note": "Note 2 — Related Parties", "key": "$35.3M due from PRG (equity reduction); PRG management services free; PEI building leases $145,900/yr; airplane sale $13.5M in 2023"},
+    {"note": "Note 3 — Property", "key": "Airplanes $61.2M; land $5.9M; buildings $4.4M; accumulated depreciation $10.4M"},
+    {"note": "Note 4 — Licensed Locations", "key": "175 domestic + 97 international = 272 total; opened 24 / closed 12 in 2024"}
+  ],
+  "contract_burden_depth": {
+    "total_term_max_years": 15,
+    "renewal_at_franchisor_discretion": true,
+    "materially_different_terms_possible": true,
+    "no_death_disability_provision": true,
+    "personal_guaranty_required": true,
+    "post_termination_24_month_penalty": true,
+    "no_exclusive_territory": true,
+    "mandatory_minimum_royalty": true,
+    "gag_clause": true,
+    "brand_conversion_at_franchisee_expense": true,
+    "equipment_buyback_at_net_book_value": true,
+    "california_dispute_resolution": true
+  },
+  "state_addenda_overrides": {
+    "california": {"cure_modified": true, "market_withdrawal": true, "repurchase_depreciated": true},
+    "kansas": {"in_state_arbitration": true, "state_law_governs": true},
+    "maryland": {"section_22_rewritten": true},
+    "michigan": {"good_cause_termination": true},
+    "new_york": {"additional_risk_factors": true},
+    "virginia": {"reasonable_cause_required": true}
+  },
+  "special_risks": [
+    "Out-of-state dispute resolution (California)",
+    "Training completion cancellation — no refund",
+    "Mandatory minimum royalty regardless of sales",
+    "Significant unopened franchise agreements"
+  ],
+  "contradictions": [{"id": "C1", "item_20": 173, "item_21": 175, "explanation": "2-unit discrepancy — likely excluded venues"}],
+  "unresolveds": [
+    {"id": "U1", "description": "Death/disability not addressed", "severity": "medium"},
+    {"id": "U2", "description": "Post-term noncompete scope — facility-level, limited enforceability", "severity": "low"},
+    {"id": "U3", "description": "Airplane assets on franchise entity balance sheet", "severity": "low"},
+    {"id": "U4", "description": "Due from Affiliate $35.3M increasing", "severity": "medium"}
+  ],
+  "item22_contracts_listed": ["A", "C", "F", "H", "I", "J", "K", "L"]
+}

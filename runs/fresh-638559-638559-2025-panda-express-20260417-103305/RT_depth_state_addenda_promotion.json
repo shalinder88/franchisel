@@ -1,0 +1,32 @@
+{
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Indiana", "Kansas", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+  "overrides": [
+    {"state": "California", "affected_family": "termination", "override_summary": "Cure periods modified: 5-day for payments, 60-day for other defaults, 75-day maximum. Section 16.3 entirely rewritten.", "why_it_matters": "Longer cure periods give CA franchisees more time to fix problems before termination", "source_pages": [301, 302]},
+    {"state": "California", "affected_family": "termination", "override_summary": "Market Withdrawal provision: franchisor can withdraw from state/area with no liability, but cannot prevent franchisee from retaining business control", "why_it_matters": "If Panda exits your market, you keep the business but lose the brand", "source_pages": [303]},
+    {"state": "California", "affected_family": "renewal", "override_summary": "Post-termination repurchase of items at price paid minus depreciation (MACRS or IRS schedule, whichever lower)", "why_it_matters": "CA law requires fair compensation — depreciation formula defined", "source_pages": [303]},
+    {"state": "California", "affected_family": "general_release", "override_summary": "Corp Code Section 31512 voids waivers of rights under Franchise Investment Law; B&P Code 20010 voids waivers under Franchise Relations Act", "why_it_matters": "CA franchisees cannot waive statutory franchise protections even if release is signed", "source_pages": [305]},
+    {"state": "California", "affected_family": "forum_selection", "override_summary": "Arbitration and litigation in Rosemead, California. Prospective franchisees encouraged to consult counsel re: venue restrictions.", "why_it_matters": "Arbitration is in-state for CA franchisees but out-of-state for all others", "source_pages": [305]},
+    {"state": "Kansas", "affected_family": "forum_selection", "override_summary": "All arbitration/litigation must be conducted in Kansas under Kansas law", "why_it_matters": "Kansas franchisees get in-state dispute resolution — a significant override of the default CA venue", "source_pages": [308]},
+    {"state": "Kansas", "affected_family": "governing_law", "override_summary": "Kansas law governs every franchise agreement performed in Kansas", "why_it_matters": "Overrides default California choice of law", "source_pages": [308]},
+    {"state": "Kansas", "affected_family": "indemnification", "override_summary": "Cannot require indemnification for promisee's own negligence or intentional acts", "why_it_matters": "Limits franchisor's ability to shift blame for its own mistakes to franchisee", "source_pages": [308]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "Section 22 entirely rewritten — NASAA standard; cannot waive franchise law claims or disclaim reliance on FDD statements", "why_it_matters": "Strongest integration clause override — preserves franchisee's right to rely on FDD representations", "source_pages": [310]},
+    {"state": "Michigan", "affected_family": "termination", "override_summary": "Good cause required for termination; 30-day cure opportunity; fair compensation on non-renewal (repurchase at FMV)", "why_it_matters": "MI provides strong termination and non-renewal protections beyond the license agreement", "source_pages": [5, 6]},
+    {"state": "Michigan", "affected_family": "forum_selection", "override_summary": "Arbitration or litigation outside Michigan is void", "why_it_matters": "MI franchisees cannot be forced to arbitrate in California", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "transfer", "override_summary": "Cannot refuse transfer without good cause; ROFR preserved but standards clarified", "why_it_matters": "Makes transfer approval more objective", "source_pages": [5, 6]},
+    {"state": "New York", "affected_family": "general_release", "override_summary": "Additional risk factors required on cover page; franchisor cannot negotiate less favorable terms than FDD", "why_it_matters": "NY provides disclosure-level protections and prevents bait-and-switch", "source_pages": [316]},
+    {"state": "Virginia", "affected_family": "termination", "override_summary": "Cannot cancel franchise without reasonable cause per Section 13.1-564 of Virginia Retail Franchising Act", "why_it_matters": "Any termination without reasonable cause is unlawful in Virginia", "source_pages": [320]},
+    {"state": "All Registration States", "affected_family": "general_release", "override_summary": "NASAA Required Statement: No waiver of claims under state franchise law; no disclaiming reliance on franchisor/franchise seller statements", "why_it_matters": "Baseline anti-waiver protection in all 14+ registration states", "source_pages": [300]}
+  ],
+  "summary_table": {
+    "override_families": ["termination", "forum_selection", "governing_law", "general_release", "transfer", "renewal", "indemnification"],
+    "by_family": {
+      "termination": ["California", "Michigan", "Virginia"],
+      "forum_selection": ["California", "Kansas", "Michigan"],
+      "governing_law": ["Kansas"],
+      "general_release": ["California", "Maryland", "New York", "All Registration States"],
+      "transfer": ["Michigan"],
+      "renewal": ["California"],
+      "indemnification": ["Kansas"]
+    }
+  }
+}

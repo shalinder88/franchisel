@@ -1,0 +1,66 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_pass": "A2_key_exhibit_clause_walk",
+  "brand": "Papa Johns",
+  "exhibits": [
+    {
+      "exhibit": "B — Franchise Agreement (Standard Restaurant)",
+      "page_range": [100, 165],
+      "clause_walk_status": "complete",
+      "clauses_walked": 18,
+      "key_clauses": [
+        {"clause_family": "grant", "section": "§1", "obligation": "Single-location franchise for System and Marks at specified Location", "source_pages": [103]},
+        {"clause_family": "term", "section": "§2(a)", "obligation": "10-year initial term", "source_pages": [103]},
+        {"clause_family": "renewal", "section": "§2(b)", "obligation": "One 10-year renewal if all conditions met; materially different FA required", "source_pages": [103, 104]},
+        {"clause_family": "fees", "section": "§3", "obligation": "5% royalty, 2% digital fee, 6% marketing fund, auto-debit", "source_pages": [104, 105]},
+        {"clause_family": "territory", "section": "§5", "obligation": "1.5-mile non-exclusive radius; franchisor retains broad carve-outs", "source_pages": [107, 108]},
+        {"clause_family": "premises", "section": "§6", "obligation": "Lease addendum required; lease term >= FA term", "source_pages": [109, 110]},
+        {"clause_family": "marks", "section": "§7", "obligation": "Non-exclusive license; all goodwill to franchisor", "source_pages": [111, 112]},
+        {"clause_family": "advertising", "section": "§8", "obligation": "Marketing Fund, Cooperatives, local advertising, Papa Card, Papa Rewards", "source_pages": [112, 113, 114, 115, 116, 117, 118, 119]},
+        {"clause_family": "information_system", "section": "§10(c)", "obligation": "Mandatory proprietary IS; unlimited franchisor data access; all data owned by franchisor; upgrades required within 120 days", "source_pages": [122, 123, 124]},
+        {"clause_family": "operations_standards", "section": "§11", "obligation": "Compliance with Manuals; operational inspections; quality control", "source_pages": [126, 127, 128, 129, 130, 131]},
+        {"clause_family": "transfer", "section": "§14", "obligation": "All transfers require consent; ROFR; conditions include compliance, training, current FA, release, $4K fee", "source_pages": [135, 136, 137, 138, 139, 140, 141]},
+        {"clause_family": "death_disability", "section": "§15", "obligation": "9-month assignment deadline; franchisor may appoint manager pending sale", "source_pages": [141, 142]},
+        {"clause_family": "noncompete", "section": "§16, §20(a)(x)", "obligation": "During term: no competing business anywhere. Post-term: 2 years, 10 miles, covers all capacities", "source_pages": [142, 143, 151, 152]},
+        {"clause_family": "termination", "section": "§19", "obligation": "Detailed curable (30-day) and non-curable default lists", "source_pages": [147, 148, 149, 150]},
+        {"clause_family": "liquidated_damages", "section": "§20(a)(vii)", "obligation": "Avg monthly royalty × lesser of (24, months remaining)", "source_pages": [151]},
+        {"clause_family": "asset_purchase_option", "section": "§20(b)", "obligation": "FMV purchase within 15 days, closing within 90 days, excludes goodwill/Marks", "source_pages": [152, 153]},
+        {"clause_family": "indemnification", "section": "§21(c)", "obligation": "Unlimited — hold harmless, defend, indemnify for all claims from construction/operation", "source_pages": [154]},
+        {"clause_family": "arbitration", "section": "§23(a)", "obligation": "AAA in Louisville KY, one arbitrator, individual basis only, no class/consolidated, no punitive damages", "source_pages": [154, 155]}
+      ]
+    },
+    {
+      "exhibit": "E — Development Agreement",
+      "page_range": [298, 334],
+      "clause_walk_status": "partial",
+      "clauses_walked": 5,
+      "key_clauses": [
+        {"clause_family": "development_rights", "section": "§1", "obligation": "Rights to develop specified number of Restaurants in Development Area", "source_pages": [298, 299]},
+        {"clause_family": "development_schedule", "section": "§3", "obligation": "Must comply with development schedule; lease/deed 120 days before opening; construction start 90 days before", "source_pages": [301, 302]},
+        {"clause_family": "cross_default", "section": "§9", "obligation": "Default under any FA constitutes cause for DA termination with 15-day cure", "source_pages": [310, 311]},
+        {"clause_family": "noncompete", "section": "§7, §9(e)", "obligation": "Same as FA during term; post-term 2 years within DA or 10 miles of any Papa Johns", "source_pages": [308, 312]},
+        {"clause_family": "transfer", "section": "§10", "obligation": "Not transferable without consent; governed by same definition as FA", "source_pages": [313]}
+      ],
+      "deferred_detail": {
+        "exhibit_name": "Development Agreement",
+        "pages_not_walked": [303, 304, 305, 306, 307, 308, 309, 314, 315, 316, 317, 318, 319, 320],
+        "why_deferred": "Operating provisions (equipment, construction, site approval) are substantially covered in Items 7, 8, 10, and 11 of the body. Key contractual provisions (term, fees, termination, transfer, noncompete) extracted.",
+        "substance_recovered_elsewhere": "Items 5, 7, 10, 11, 17; RT_depth_contract_burdens.json",
+        "remaining_missing": "Detailed construction timelines, insurance during development, equipment bill of sale mechanics"
+      }
+    },
+    {
+      "exhibit": "K-1 — Owner Agreement",
+      "page_range": [370, 385],
+      "clause_walk_status": "partial",
+      "clauses_walked": 4,
+      "key_clauses": [
+        {"clause_family": "personal_guarantee", "section": "§3", "obligation": "Each owner personally guarantees all of franchisee's debts and obligations to franchisor and affiliates. Joint and several. Unlimited.", "source_pages": [372, 373]},
+        {"clause_family": "noncompete_during", "section": "§2(a)", "obligation": "No involvement in competing business anywhere during term", "source_pages": [371]},
+        {"clause_family": "noncompete_post", "section": "§2(b)", "obligation": "2 years, 10 miles of restaurant or any Papa Johns", "source_pages": [371, 372]},
+        {"clause_family": "confidentiality", "section": "§2(c), §2(d)", "obligation": "Must maintain confidentiality of all proprietary information during and after term", "source_pages": [372]}
+      ],
+      "guaranty_scope_confirmed": "Personal guarantee is unlimited and joint/several. Covers all debts and obligations under FA, DA, Equipment Lease, and all other agreements with franchisor and affiliates. No spousal exception noted in the Owner Agreement form."
+    }
+  ]
+}

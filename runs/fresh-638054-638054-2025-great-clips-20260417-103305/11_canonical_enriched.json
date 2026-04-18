@@ -1,0 +1,109 @@
+{
+  "enrichment_version": "v1",
+  "base_source": "09_final_canonical.json",
+  "self_contained": true,
+  "document_identity": {"filing_id": "638054", "brand": "Great Clips", "franchisor_legal_name": "Great Clips, Inc.", "issuance_date": "March 30, 2025, as amended on January 1, 2026"},
+  "item19_chart_detail": {
+    "table1": {
+      "population": 4147, "excluded": 292, "total_eligible": 4439,
+      "avg_total_sales": 399179, "median_total_sales": 382316,
+      "avg_service_sales": 388522, "avg_product_sales": 10657,
+      "pct_attained_total": 44.78, "low": 37920, "high": 1099873
+    },
+    "table2": {
+      "population": 2175, "non_reporting": 1972,
+      "avg_total_sales": 413389, "median_total_sales": 393907,
+      "avg_cash_flow": 82637, "median_cash_flow": 75851,
+      "cash_flow_pct": 19.99,
+      "expense_breakdown": {"labor_pct": 48.92, "occupancy_pct": 10.83, "products_pct": 1.75, "franchise_fees_pct": 6.03, "advertising_pct": 5.32, "other_pct": 7.16}
+    },
+    "table3_tiers": [
+      {"range": "<$250k", "count": 196, "cash_flow_dollar": -3635, "cash_flow_pct": -1.74},
+      {"range": "$250-300k", "count": 258, "cash_flow_dollar": 21875, "cash_flow_pct": 7.90},
+      {"range": "$300-350k", "count": 335, "cash_flow_dollar": 46424, "cash_flow_pct": 14.30},
+      {"range": "$350-400k", "count": 342, "cash_flow_dollar": 69565, "cash_flow_pct": 18.51},
+      {"range": "$400-450k", "count": 291, "cash_flow_dollar": 87014, "cash_flow_pct": 20.52},
+      {"range": "$450-500k", "count": 241, "cash_flow_dollar": 109367, "cash_flow_pct": 23.06},
+      {"range": "$500-600k", "count": 289, "cash_flow_dollar": 140420, "cash_flow_pct": 25.77},
+      {"range": ">$600k", "count": 223, "cash_flow_dollar": 193727, "cash_flow_pct": 27.98}
+    ]
+  },
+  "item20_yearly_activity": {
+    "systemwide": [
+      {"year": 2022, "start": 4447, "end": 4427, "net": -20},
+      {"year": 2023, "start": 4427, "end": 4427, "net": 0},
+      {"year": 2024, "start": 4427, "end": 4439, "net": 12}
+    ],
+    "franchised_activity": [
+      {"year": 2022, "opened": 116, "terminations": 4, "non_renewals": 4, "reacquired": 0, "ceased_other": 128},
+      {"year": 2023, "opened": 98, "terminations": 3, "non_renewals": 6, "reacquired": 0, "ceased_other": 89},
+      {"year": 2024, "opened": 115, "terminations": 4, "non_renewals": 1, "reacquired": 0, "ceased_other": 98}
+    ],
+    "transfers": [{"year": 2022, "total": 325}, {"year": 2023, "total": 164}, {"year": 2024, "total": 207}],
+    "projected": {"signed_not_opened": 965, "new_franchised": 90, "new_company_owned": 0},
+    "gag_clause_flag": true
+  },
+  "exhibit_structure": {
+    "total": 19,
+    "key_exhibits": ["F", "G", "H", "L", "P"],
+    "clause_walked": ["E"],
+    "labeled_only": ["F", "G", "H", "I", "J", "K", "L", "M", "N", "R", "S"],
+    "state_addenda_exhibit": "P",
+    "state_addenda_pages": [359, 399]
+  },
+  "item21_structural_facts": {
+    "auditor": "Not identified from text layer",
+    "opinion": "Unqualified",
+    "going_concern": false,
+    "total_assets_2024": 135222744,
+    "total_equity_2024": 43769441,
+    "net_earnings_2024": 22308397,
+    "total_revenue_2024": 202708389,
+    "long_term_debt_2024": 14754731,
+    "rloc_capacity": 35000000,
+    "rloc_drawn": 0,
+    "lease_guarantees_count": 249,
+    "lease_guarantees_annual_rent": 8994000,
+    "deferred_franchise_fees_total": 21178641,
+    "related_party_salons": 23,
+    "related_party_cff_revenue": 647000,
+    "note_families_count": 11
+  },
+  "item1_structural_facts": {
+    "incorporation_year": 1982,
+    "franchising_since": 1983,
+    "c_corp_conversion": "January 1, 2019",
+    "system_size": 4439,
+    "company_owned": 0,
+    "franchise_structures": 3,
+    "avg_salons_per_franchisee_5yr": 8,
+    "median_salons_per_franchisee_5yr": 5
+  },
+  "item6_fee_attributes": {
+    "royalty_rate": 0.06,
+    "ad_fund_rate": 0.05,
+    "total_pct_based": 0.11,
+    "software_monthly": 250,
+    "network_monthly": 18.99,
+    "recruiting_tech_annual": 750,
+    "training_annual": 200,
+    "renewal_fee": 1750,
+    "assignment_fee": 1500,
+    "late_charge_rate": 0.14
+  },
+  "special_risks": [
+    {"risk": "Out-of-State Dispute Resolution", "source_pages": [5]},
+    {"risk": "Supplier Control", "source_pages": [5]}
+  ],
+  "unresolveds": [
+    {"id": "UR-1", "description": "Auditor firm name not identified", "severity": "low"},
+    {"id": "UR-2", "description": "State addenda not structured", "severity": "medium"},
+    {"id": "UR-3", "description": "Franchise Agreement not clause-walked", "severity": "medium"},
+    {"id": "UR-4", "description": "Non-reporting salon bias in Item 19", "severity": "high"},
+    {"id": "UR-5", "description": "Ceased operations ambiguity", "severity": "medium"},
+    {"id": "UR-6", "description": "Lease documents not reviewed", "severity": "low"}
+  ],
+  "contradictions": [
+    {"id": "CONTRA-1", "description": "Item 20/21 salon count methodology difference (116 vs 117 opened in 2022)", "resolution": "Methodological difference — not substantive"}
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "depth_pass": "A2_depth_pass_4_state_addenda",
+  "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota", "Washington"],
+  "michigan_notice": true,
+
+  "overrides": [
+    {"state": "California", "affected_family": "labor_law", "override_summary": "Must comply with Fast Food Act (AB 1228) on minimum wages, working hours, working conditions", "why_it_matters": "Higher labor costs for CA franchisees; may affect unit economics significantly", "source_pages": [338]},
+
+    {"state": "Hawaii", "affected_family": "disclosure", "override_summary": "Standard Hawaii franchise investment law disclosure requirements; no waiver of reliance", "why_it_matters": "Additional procedural protections for HI franchisees", "source_pages": [339]},
+
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General Release at renewal/transfer does not apply to MD Franchise Registration and Disclosure Law liability", "why_it_matters": "MD franchisees retain right to bring MD franchise law claims even after signing General Release", "source_pages": [340]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Termination upon insolvency may not be enforceable under federal bankruptcy law", "why_it_matters": "Adds protection against automatic termination in bankruptcy", "source_pages": [340]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Franchisee may bring MD Franchise Law claims in Maryland courts", "why_it_matters": "No need to litigate in Atlanta for MD-law claims", "source_pages": [340]},
+    {"state": "Maryland", "affected_family": "statute_of_limitations", "override_summary": "3-year limitations period for MD Franchise Law claims", "why_it_matters": "Clear deadline for bringing franchise law claims", "source_pages": [340]},
+
+    {"state": "Minnesota", "affected_family": "trademarks", "override_summary": "Arby's will protect franchisee's trademark rights or indemnify per Minn. Stat. §80C.12", "why_it_matters": "Mandatory trademark protection obligation", "source_pages": [341]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days notice of termination (60 days to cure); 180 days notice of non-renewal", "why_it_matters": "Longer notice periods than standard FA provisions", "source_pages": [341]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Litigation cannot be required outside Minnesota; cannot require jury trial waiver, liquidated damages, termination penalties, or injunctive relief consent", "why_it_matters": "MN franchisees cannot be forced to litigate in Atlanta", "source_pages": [341]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Release at renewal/transfer does not apply to extent prohibited by MN Franchises Law", "why_it_matters": "Preserves MN franchise law claims through renewal/transfer", "source_pages": [341, 345]},
+    {"state": "Minnesota", "affected_family": "governing_law", "override_summary": "Nothing in agreement abrogates any MN Statutes Chapter 80C rights or remedies", "why_it_matters": "MN law protections preserved regardless of GA governing law clause", "source_pages": [346]},
+
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Restrictive covenants subject to N.D.C.C. §9-08-06", "why_it_matters": "ND may limit enforceability of non-compete provisions", "source_pages": [342]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Cannot require out-of-state arbitration or forum for ND franchisees", "why_it_matters": "ND franchisees protected from Atlanta venue requirement", "source_pages": [342]},
+    {"state": "North Dakota", "affected_family": "damages", "override_summary": "No liquidated damages, termination penalties, jury trial waiver, or exemplary/punitive damages waiver", "why_it_matters": "Broad protection against one-sided damage provisions", "source_pages": [342]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "ND law governs, not other-state law", "why_it_matters": "GA governing law clause overridden", "source_pages": [342]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "No general release on renewal", "why_it_matters": "ND franchisees do not waive claims at renewal", "source_pages": [342]},
+    {"state": "North Dakota", "affected_family": "statute_of_limitations", "override_summary": "ND statute of limitations applies, not contractual limitation", "why_it_matters": "Cannot shorten limitations period by contract", "source_pages": [342]},
+
+    {"state": "Washington", "affected_family": "noncompete", "override_summary": "No-poach provisions removed from franchise agreements per AOD with WA AG", "why_it_matters": "WA franchisee employees can be hired by other Arby's franchisees", "source_pages": [343]}
+  ],
+
+  "summary_table": {
+    "override_families": ["forum_selection", "governing_law", "general_release", "termination", "noncompete", "damages", "statute_of_limitations", "labor_law", "trademarks"],
+    "states_affected": {
+      "forum_selection": ["Maryland", "Minnesota", "North Dakota"],
+      "governing_law": ["Minnesota", "North Dakota"],
+      "general_release": ["Maryland", "Minnesota", "North Dakota"],
+      "termination": ["Maryland", "Minnesota"],
+      "noncompete": ["North Dakota", "Washington"],
+      "damages": ["North Dakota"],
+      "statute_of_limitations": ["Maryland", "North Dakota"],
+      "labor_law": ["California"],
+      "trademarks": ["Minnesota"]
+    }
+  }
+}

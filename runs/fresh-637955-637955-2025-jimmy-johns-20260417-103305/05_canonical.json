@@ -1,0 +1,279 @@
+{
+  "document_identity": {
+    "entity_name": "Jimmy John's Franchisor SPV, LLC",
+    "entity_type": "Delaware limited liability company",
+    "brand": "JIMMY JOHN'S",
+    "filing_id": "637955",
+    "state_filed": "Wisconsin DFI",
+    "issuance_date": "March 27, 2025, as amended July 18, 2025",
+    "fiscal_year_end": "December 29, 2024",
+    "address": "Three Glenlake Parkway NE, Atlanta, Georgia 30328",
+    "phone": "(678) 514-4100",
+    "website": "www.jimmyjohns.com",
+    "source_section": "Cover, Item 1",
+    "source_pages": [1, 8],
+    "confidence": "high"
+  },
+  "parent_company": {
+    "name": "Inspire Brands, Inc.",
+    "acquisition_date": "October 18, 2019",
+    "type": "indirect parent",
+    "source_section": "Item 1",
+    "source_pages": [8],
+    "confidence": "high"
+  },
+  "business_description": {
+    "concept": "Quick-service restaurant featuring gourmet deli sandwiches, fresh-baked breads, and other food and beverage products",
+    "formats": ["Traditional (strip malls, shopping centers, free-standing)", "Non-Traditional (military, universities, airports, stadiums, food courts, hotels)", "Multi-Brand Locations (with Arby's, BWW, Dunkin', Baskin-Robbins, Sonic)"],
+    "typical_size_sqft": {"low": 1000, "high": 1800},
+    "source_section": "Item 1",
+    "source_pages": [9],
+    "confidence": "high"
+  },
+  "system_size": {
+    "as_of": "December 29, 2024",
+    "total": 2689,
+    "franchised": 2647,
+    "company_owned": 42,
+    "single_branded": 2668,
+    "multi_brand": 20,
+    "source_section": "Item 1, Item 20",
+    "source_pages": [8, 81],
+    "confidence": "high"
+  },
+  "fees": {
+    "initial_franchise_fee": {
+      "standard": 35000,
+      "reopening_good_standing": 5000,
+      "reopening_other": 12500,
+      "non_traditional": 17500,
+      "refundable": false,
+      "source_section": "Item 5",
+      "source_pages": [28],
+      "confidence": "high"
+    },
+    "development_fee": {
+      "per_restaurant": 10000,
+      "minimum_restaurants": 3,
+      "source_section": "Item 5",
+      "source_pages": [28, 29],
+      "confidence": "high"
+    },
+    "royalty": {
+      "rate": "6%",
+      "basis": "weekly Gross Sales",
+      "frequency": "weekly (Wednesday)",
+      "incentive_range": "1% to 6% (ramp over 3-5 years under incentive programs)",
+      "source_section": "Item 6",
+      "source_pages": [32],
+      "confidence": "high"
+    },
+    "advertising_fund": {
+      "rate": "up to 4.5%",
+      "current_rate": "4.5%",
+      "non_traditional_rate": "2.25%",
+      "basis": "weekly Gross Sales",
+      "source_section": "Item 6",
+      "source_pages": [32],
+      "confidence": "high"
+    },
+    "local_marketing": {
+      "rate": "0.5%",
+      "basis": "weekly Gross Sales",
+      "required": true,
+      "source_section": "Item 6 footnote 5",
+      "source_pages": [41],
+      "confidence": "high"
+    },
+    "cooperative_advertising": {
+      "rate": "up to 2%",
+      "basis": "Gross Sales",
+      "source_section": "Item 6",
+      "source_pages": [32],
+      "confidence": "high"
+    },
+    "total_ongoing_fee_burden": "up to 13% of Gross Sales (6% royalty + 4.5% ad fund + 0.5% local + 2% coop)",
+    "source_section": "Item 6",
+    "source_pages": [32, 41],
+    "confidence": "high"
+  },
+  "investment": {
+    "total_low": 366200,
+    "total_high": 728200,
+    "includes_real_estate_lease": true,
+    "excludes_real_estate_purchase": true,
+    "paid_to_franchisor_low": 5000,
+    "paid_to_franchisor_high": 39400,
+    "source_section": "Item 7",
+    "source_pages": [41, 42],
+    "confidence": "high"
+  },
+  "financing": {
+    "offered": false,
+    "source_section": "Item 10",
+    "source_pages": [51],
+    "confidence": "high"
+  },
+  "territory": {
+    "exclusive_under_fa": false,
+    "exclusive_under_dra": true,
+    "dra_carveouts": ["Non-Traditional Locations"],
+    "delivery_area": "assigned but non-exclusive; may be reduced at any time",
+    "internet_rights_reserved": true,
+    "rofr_additional_franchises": false,
+    "source_section": "Item 12",
+    "source_pages": [66, 67, 68],
+    "confidence": "high"
+  },
+  "contract_terms": {
+    "initial_term_years": 10,
+    "renewal_terms": "one 10-year successor franchise",
+    "renewal_fee": 10000,
+    "renewal_conditions": "full compliance, remodel to current standards, sign then-current agreement (may be materially different), sign release",
+    "termination_notice_curable": {"monetary": "10 days", "health_safety": "3 days", "delivery_stoppage": "24 hours", "operational": "30 days"},
+    "termination_notice_non_curable": "immediate for listed defaults",
+    "transfer_fee": {"family": 2500, "existing_franchisee": 7500, "new_franchisee": 12500},
+    "death_disability_transfer_period": "9 months",
+    "source_section": "Item 17",
+    "source_pages": [74, 75, 76, 77],
+    "confidence": "high"
+  },
+  "noncompete": {
+    "during_term": "no ownership/services in competitive business anywhere",
+    "competitive_business_definition": "derives >50% of non-beverage revenue from submarine/hero/deli/wrapped sandwiches",
+    "post_term_duration": "2 years",
+    "post_term_radius": "at premises, within 3 miles of premises, within 3 miles of any JJ restaurant at signing, within 1 mile of any JJ restaurant at termination/expiration",
+    "source_section": "Item 17",
+    "source_pages": [77, 78],
+    "confidence": "high"
+  },
+  "dispute_resolution": {
+    "method": "litigation",
+    "forum": "courts closest to franchisor's then-current principal business address (currently Atlanta, Georgia)",
+    "governing_law": "Georgia",
+    "state_overrides": {
+      "maryland": "MD law for MD Franchise Law claims; forum in MD",
+      "minnesota": "no out-of-state litigation; MN law applies; no liquidated damages/termination penalties",
+      "north_dakota": "ND law applies; forum in ND; noncompete generally unenforceable; liquidated damages may not be enforceable"
+    },
+    "source_section": "Item 17, Exhibit G",
+    "source_pages": [78, 344, 347, 348, 349],
+    "confidence": "high"
+  },
+  "item_19_fpr": {
+    "provided": true,
+    "type": "historical_auv",
+    "fiscal_year": "2024 (Jan 1 - Dec 29, 2024)",
+    "population_total": 2529,
+    "population_excluded": 218,
+    "overall_auv": 986095,
+    "overall_median": 935022,
+    "first_quartile_auv": 1455501,
+    "fourth_quartile_auv": 596390,
+    "highest": 3269663,
+    "lowest": 197539,
+    "pct_above_average": 44,
+    "drive_thru_auv": 1082680,
+    "no_drive_thru_auv": 926973,
+    "includes_cost_data": false,
+    "includes_profit_data": false,
+    "substantiation_available": true,
+    "source_section": "Item 19",
+    "source_pages": [78, 79, 80, 81],
+    "confidence": "high"
+  },
+  "item_20_outlets": {
+    "systemwide_2024_end": 2689,
+    "franchised_2024_end": 2647,
+    "company_owned_2024_end": 42,
+    "net_change_2024": 45,
+    "opened_2024": 88,
+    "terminated_2024": 1,
+    "non_renewed_2024": 13,
+    "ceased_other_2024": 29,
+    "transfers_2024": 170,
+    "projected_signed_not_open": 76,
+    "projected_new_franchised": 59,
+    "gag_clause": false,
+    "source_section": "Item 20",
+    "source_pages": [81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92],
+    "confidence": "high"
+  },
+  "item_21_financials": {
+    "auditor": "KPMG LLP",
+    "opinion": "unqualified",
+    "going_concern": false,
+    "audit_date": "March 20, 2025",
+    "periods": ["Dec 29, 2024", "Dec 31, 2023", "Jan 1, 2023"],
+    "balance_sheet_2024": {
+      "total_assets": 777575,
+      "total_liabilities": 22335,
+      "members_equity": 755240,
+      "unit": "thousands"
+    },
+    "income_statement_2024": {
+      "revenue": 153698,
+      "total_operating_expenses": 56625,
+      "income_from_operations": 97073,
+      "net_income": 97603,
+      "unit": "thousands"
+    },
+    "income_statement_2023": {
+      "revenue": 152869,
+      "net_income": 98060,
+      "unit": "thousands"
+    },
+    "key_notes": {
+      "securitization_notes": "$1.049B outstanding (held by parent JJ Issuer, not on SPV balance sheet)",
+      "intangible_assets": "Trademark $450M (net of $180M impairment); Franchise agreements $430M gross ($299.3M net after $130.7M amortization)",
+      "amortization": "$25.3M/year (17-year useful life on franchise agreements)",
+      "management_fee": "$31.3M paid to JJF (2024)",
+      "distributions_to_member": "$113.5M (2024), $125.7M (2023), $162.3M (2022)",
+      "deferred_revenue": "$21.6M total (current $2.1M + noncurrent $19.5M)",
+      "income_taxes": "LLC pass-through; no tax provision",
+      "no_impairment": "No impairment indicated in any period"
+    },
+    "source_section": "Item 21, Exhibit F",
+    "source_pages": [92, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342],
+    "confidence": "high"
+  },
+  "training": {
+    "initial_program": "3-week training (6 hrs classroom + 117-127 hrs OJT) + 4-week apprenticeship",
+    "one_week_program": "6 hrs classroom + 34-37 hrs OJT (experienced managers)",
+    "location": "Champaign, IL or Atlanta, GA or designated restaurant",
+    "cost_initial": "Free for first 2 people (3 for first-time franchisees); $1,500/additional person",
+    "district_manager_training": "$2,000; required for 3rd+ restaurant",
+    "certified_shift_coverage": "10 full shifts/week (14 during first 12 months of first restaurant)",
+    "source_section": "Item 11",
+    "source_pages": [53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65],
+    "confidence": "high"
+  },
+  "litigation_summary": {
+    "total_disclosed": 11,
+    "all_resolved_or_pending": "10 resolved, 1 pending (C&C Resources — damages hearing completed, $0 awarded, fee recovery pending)",
+    "material_settlements": ["CWL Investments: $4.867M (2019)", "In Re Overtime: $1.835M (2021)", "Martin/Erwin: $690K (supplier-funded, 2021)", "Maryland consent order: $30K (2025)"],
+    "source_section": "Item 3",
+    "source_pages": [22, 23, 24, 25, 26, 27, 28],
+    "confidence": "high"
+  },
+  "state_addenda": {
+    "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota", "Washington"],
+    "michigan_front_matter": true,
+    "franchise_agreement_riders": ["Maryland"],
+    "source_section": "Exhibit G, front matter pp.5-6",
+    "source_pages": [5, 6, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352],
+    "confidence": "high"
+  },
+  "risk_flags": [
+    "Out-of-state dispute resolution (Georgia)",
+    "No exclusive territory under Franchise Agreement",
+    "Delivery area non-exclusive and may be reduced at any time",
+    "Successor franchise terms may be materially different",
+    "Release required at renewal (where state law permits)",
+    "Securitization structure: $1.049B in notes outstanding at parent level",
+    "Franchisor retains right to all alternative distribution channels including internet",
+    "Post-term noncompete: 2 years within 3 miles",
+    "Liquidated damages: up to 36 months × average monthly royalty",
+    "Cross-termination under Multi-Brand Addendum"
+  ]
+}

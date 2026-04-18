@@ -1,0 +1,57 @@
+{
+  "depth_pass": "A2_TDB3_item20_tables",
+  "tables_extracted": 5,
+  "table1_system_summary": {
+    "source_pages": [104],
+    "data": {
+      "franchised": {"2023": {"start": 2905, "end": 3035, "net": 130}, "2024": {"start": 3035, "end": 3079, "net": 44}, "2025": {"start": 3079, "end": 3134, "net": 55}},
+      "company_owned": {"2023": {"start": 41, "end": 41, "net": 0}, "2024": {"start": 41, "end": 98, "net": 57}, "2025": {"start": 98, "end": 95, "net": -3}},
+      "total": {"2023": {"start": 2946, "end": 3076, "net": 130}, "2024": {"start": 3076, "end": 3177, "net": 101}, "2025": {"start": 3177, "end": 3229, "net": 52}}
+    }
+  },
+  "table2_transfers": {
+    "source_pages": [104, 105, 106, 107],
+    "totals": {"2023": 128, "2024": 125, "2025": 229},
+    "table_notes": ["Transfers = 50%+ ownership interest changes"],
+    "top_states_2025": {"IL": 38, "CA": 26, "OH": 23, "MI": 21, "AZ": 16, "WI": 11, "VA": 10, "CO": 9, "MS": 9, "NC": 8, "AL": 8, "GA": 8}
+  },
+  "table3_franchised_status": {
+    "source_pages": [108, 109, 110, 111, 112],
+    "totals": {
+      "2023": {"start": 2905, "opened": 165, "terminated": 0, "non_renewed": 4, "reacquired": 0, "ceased_other": 31, "end": 3035},
+      "2024": {"start": 3035, "opened": 136, "terminated": 0, "non_renewed": 8, "reacquired": 58, "ceased_other": 26, "end": 3079},
+      "2025": {"start": 3079, "opened": 104, "terminated": 14, "non_renewed": 2, "reacquired": 0, "ceased_other": 33, "end": 3134}
+    },
+    "table_notes": [
+      "2024 reacquisitions: MS (32), TN (17), LA (5), KY (3), VA (1)",
+      "2025 first material terminations in 3-year period",
+      "2025 GA: 6 terminations + 12 ceased_other = net -14 units",
+      "2025 NC: 3 terminations + 5 ceased_other = net -7 units",
+      "2025 TX: 4 terminations, still net +11 (15 opened)"
+    ]
+  },
+  "table4_company_owned": {
+    "source_pages": [113],
+    "totals": {
+      "2023": {"start": 41, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 41},
+      "2024": {"start": 41, "opened": 0, "reacquired": 58, "closed": 1, "sold": 0, "end": 98},
+      "2025": {"start": 98, "opened": 0, "reacquired": 0, "closed": 3, "sold": 0, "end": 95}
+    },
+    "state_distribution_2025_end": {"MS": 34, "LA": 30, "TN": 26, "KY": 3, "AR": 1, "VA": 1}
+  },
+  "table5_projected_openings": {
+    "source_pages": [114, 115],
+    "totals": {
+      "agreements_signed_not_opened": 12,
+      "projected_new_franchised": 104,
+      "projected_new_company": 0
+    },
+    "top_projected_states": {"TX": 15, "PA": 10, "CA": 9, "NY": 7, "MI": 5, "FL": 4, "VA": 4, "PR": 4, "CT": 3, "IL": 3, "KS": 2, "KY": 3, "MA": 3, "MD": 3, "NJ": 3, "OK": 3, "AZ": 3}
+  },
+  "gag_clause": {
+    "flag": true,
+    "quote_fragment": "current and former franchisees sign provisions restricting their ability to speak openly about their experience with Popeyes",
+    "context": "settlement agreements, workout agreements and certain amendments to franchise and development agreements",
+    "source_pages": [115]
+  }
+}

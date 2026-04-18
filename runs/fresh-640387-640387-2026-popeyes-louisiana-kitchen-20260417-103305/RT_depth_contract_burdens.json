@@ -1,0 +1,127 @@
+{
+  "depth_pass": "A2_DP2_contract_burdens",
+  "source": "Exhibit D (Franchise Agreement, pp 185-243), Exhibit C3 (Development Agreement, pp 162-184), Exhibit E1 (Guaranty, pp 244-253), Exhibit H (Lease, pp 290-323), plus Item 17 tables",
+  "franchise_agreement": {
+    "grant_and_term": {
+      "term": "20 years from commencement of operations",
+      "renewal": "One 10-year renewal + optional supplemental 10-year",
+      "alternative_venue_term": "1-20 years",
+      "source_pages": [80, 185]
+    },
+    "fee_and_payment": {
+      "initial_franchise_fee": "$50,000 lump sum at signing",
+      "royalty": "5% of Gross Sales, weekly via EFT",
+      "advertising_contribution": "4.6%-5.0% of Gross Sales, weekly via EFT",
+      "rent": "If PLK property: base rent + percentage rent (8.5% up to $133K/mo, 10% above)",
+      "consumer_ordering_tech_fee": "$200/mo + 1% Digital Sales (max $6,500/yr)",
+      "late_payment_interest": "1.5%/month or max legal rate",
+      "returned_payment_fee": "$75",
+      "source_pages": [29, 30, 31, 32, 33, 34, 35, 185]
+    },
+    "site_and_construction": {
+      "site_selection": "Franchisee selects, PLK approves. Must submit Site Package with site plan, floor plan, elevations",
+      "construction_plans": "PLK provides standard plans in PDF/AutoCAD; franchisee hires architect for site-specific design",
+      "approval_required": "Written approval for all plans, modifications, and deviations",
+      "time_to_open": "Typically 12-24 months from site approval",
+      "non_qualified_vendors_surcharge": "$20,000-$80,000 for non-Qualified Partners construction review",
+      "source_pages": [54, 55, 56]
+    },
+    "training_and_operations": {
+      "ptp_required": "5 managers (first restaurant) or 3-4 (additional); 115 hours over 6 weeks",
+      "training_fee": "$5,000 per participant",
+      "managing_director": "Full-time devotion, nearby residence, cannot own/operate competing chicken business",
+      "certified_manager_on_site": "At all times during operation",
+      "manual_compliance": "Must comply with all Manual revisions; PLK can modify at any time",
+      "financial_reporting": "Monthly P&L, quarterly unaudited financial statement",
+      "source_pages": [54, 55, 56, 57, 58, 59, 60, 74, 75]
+    },
+    "termination": {
+      "by_franchisee": "Not available",
+      "without_cause": "Not available",
+      "curable_defaults": "30 days to cure (10 days for non-payment)",
+      "noncurable_defaults": [
+        "Insolvency/bankruptcy (may not be enforceable under Title 11)",
+        "Failure to open by deadline",
+        "Failure to stay open",
+        "Criminal convictions",
+        "Threats to health and safety",
+        "Failure to close after verbal notice for health/safety violation",
+        "Failure to meet financial ratios",
+        "Transfer violations",
+        "Noncompete breach",
+        "Confidentiality breach",
+        "False books/records/reports",
+        "Default under other agreements",
+        "Repeated failed assessment scores",
+        "Failure to permit inspections",
+        "Sale of unapproved products",
+        "Adverse conduct affecting reputation"
+      ],
+      "post_termination": "Complete de-identification, return manuals/records, pay all amounts due, assign/transfer lease to PLK, comply with noncompete, return all confidential information",
+      "source_pages": [80, 81, 82]
+    },
+    "transfer": {
+      "requires_consent": true,
+      "conditions": ["Payment of debts", "Noncompete compliance", "General release", "Qualified transferee", "New franchise agreement", "New guaranty", "Restaurant remodeling", "Transferee training", "Corporate document compliance", "Transfer fee ($7,500)"],
+      "rofr": "PLK can match any bona fide offer",
+      "death_disability": "12 months to assign (extendable to 18 months)",
+      "convenience_entity_transfer": "No transfer fee if 100% owned entity formed for convenience",
+      "source_pages": [81, 82]
+    },
+    "cross_default": {
+      "description": "Default under Development Agreement (other than development schedule) is a non-curable default under Franchise Agreement. Default under any PLK affiliate agreement is grounds for termination.",
+      "source_pages": [81]
+    },
+    "noncompete": {
+      "during_term": "Cannot own/operate QSR specializing in chicken",
+      "post_term": "2 years after termination/expiration/transfer",
+      "geographic": "Within 10 miles of any Popeyes Restaurant owned",
+      "bound_parties": ["Franchisee", "Officers", "Directors", "10%+ owners", "Managing Director", "Managing Owner"],
+      "source_pages": [80, 82]
+    },
+    "guaranty": {
+      "scope": "Joint and several guarantee of all payment and performance obligations",
+      "who_must_guarantee": "Officers, directors, and all holders of 10%+ legal or beneficial interests",
+      "personal_liability": true,
+      "spousal_guarantee": "Not specifically required in FDD text",
+      "unlimited": true,
+      "source_pages": [50, 75, 244]
+    },
+    "liquidated_damages": {
+      "development_agreement": "If terminated before expiration, PLK retains all prepaid franchise fees plus franchisee must pay next installment as liquidated damages",
+      "source_pages": [78]
+    },
+    "venue_and_dispute": {
+      "method": "Litigation only (no arbitration)",
+      "venue": "S.D. Florida or 11th Judicial Court in Miami-Dade County, FL",
+      "governing_law": "Florida",
+      "jury_waiver": "Not specified in Item 17 summary",
+      "state_overrides": ["Illinois", "Washington"],
+      "source_pages": [79, 82]
+    },
+    "insurance": {
+      "general_liability": "$5,000,000 per occurrence (bodily injury, death, property damage)",
+      "auto_liability": "$1,000,000 combined single limit",
+      "property_insurance": "All Risk, replacement cost basis",
+      "employers_liability": "$1,000,000 bodily injury by accident and disease",
+      "workers_compensation": "Statutory limits",
+      "higher_limits": "Required if mandated by law, landlord, or PLK headlease",
+      "source_pages": [45]
+    },
+    "indemnification": {
+      "franchisee_indemnifies_plk": "For costs and any judgment if PLK sued for claims relating to restaurant operation or arising from agreements",
+      "franchisee_pays_enforcement_costs": "If franchisee defaults or sues PLK (unless franchisee found in compliance)",
+      "source_pages": [30]
+    },
+    "force_majeure": {
+      "disclosed": "Not specifically addressed in Item 17 tables",
+      "note": "May exist in full Franchise Agreement text — not surfaced in Item 17 summary"
+    },
+    "distinctive_clauses": [
+      {"clause": "AI restrictions", "description": "Prohibited from using confidential information for machine learning, AI model training, or generative AI input without prior approval", "source_pages": [73]},
+      {"clause": "Operational tier requirement (Dev Agreement)", "description": "Restaurant operations must score in top 50% of peer category; grade D or F in any metric is non-curable default", "source_pages": [78]},
+      {"clause": "Ad Fund Test Program", "description": "Mandatory for new franchisees; advertising contribution may escalate from 5.0% to 5.50% based on EBITDA tests", "source_pages": [36, 37]},
+      {"clause": "PLK Foundation contribution", "description": "$1,000/yr per restaurant via in-restaurant fundraising or donation", "source_pages": [34]}
+    ]
+  }
+}

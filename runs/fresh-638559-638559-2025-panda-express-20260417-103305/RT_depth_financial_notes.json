@@ -1,0 +1,140 @@
+{
+  "extraction_method": "normal_text_extraction",
+  "item21_page_range": [189, 207],
+  "auditor": "CliftonLarsonAllen LLP",
+  "opinion_type": "unqualified",
+  "opinion_date": "April 7, 2025",
+  "going_concern": false,
+  "note_families": [
+    {
+      "note": "Note 1 — Summary of Significant Accounting Policies",
+      "source_pages": [198, 199, 200, 201, 202, 203],
+      "policies": {
+        "nature_of_operations": "Citadel Panda Express and subsidiary Citadel Aviation Investments LLC; wholly owned sub of PEI/PRG; licenses Panda Express brand in US and internationally (Mexico, Guatemala, Korea, Japan, India, Philippines, Middle East) through April 11, 2031",
+        "consolidation": "Consolidated statements include Citadel Panda Express and Citadel Aviation Investments LLC; all intercompany eliminated",
+        "revenue_recognition": {
+          "standard": "ASC 606 (Topic 606)",
+          "royalties": "Recognized as franchisee store-level sales occur; sales-based royalties; collected periodically",
+          "initial_service_fees": "Recognized ratably on straight-line basis over franchise term (5-10 years); initially recorded as contract liability (deferred revenue); range $7,500-$25,000",
+          "license_fees": "Usage-based mark-up fees allocated to franchise license; recognized as purchases occur",
+          "rental_income": "Recognized when earned; straight-line basis",
+          "single_performance_obligation": "All services considered single performance obligation — franchise license"
+        },
+        "deferred_revenue": {
+          "balance_2024": 4110318,
+          "balance_2023": 4019742,
+          "recognized_2024": 816591,
+          "received_deferred_2024": 907167
+        },
+        "accounts_receivable": {
+          "balance_2024": 4829081,
+          "balance_2023": 3633937,
+          "allowance_for_credit_losses": "Unwarranted as of both periods",
+          "no_interest_on_trade_receivables": true
+        },
+        "depreciation": {
+          "method": "Straight-line",
+          "useful_lives": {
+            "airplanes": "15 years",
+            "buildings_improvements": "10-20 years",
+            "leasehold_improvements": "Shorter of life or lease terms",
+            "restaurant_equipment": "5 years",
+            "furniture_fixtures": "7 years",
+            "vehicles": "5 years"
+          }
+        },
+        "income_taxes": {
+          "election": "S Corporation",
+          "federal_tax": "None at entity level — passed through to shareholder",
+          "california_franchise_tax": "Minimum $800 or 1.5% of net income",
+          "foreign_withholding": "0-15% on payments from foreign licensees"
+        },
+        "concentration_of_credit_risk": {
+          "revenue_concentration_2024": "25% from 2 customers",
+          "revenue_concentration_2023": "29% from 2 customers",
+          "ar_concentration_2024": "54% from 4 customers",
+          "ar_concentration_2023": "38% from 2 customers"
+        },
+        "fiscal_year": "52/53-week year; 2024 = 52 weeks; 2023 = 53 weeks",
+        "leases_asc_842": {
+          "role": "Lessor",
+          "leased_assets": "3 buildings to PEI since Dec 2004",
+          "lease_term": "20 years initial; extended for additional 5-year periods until Dec 2029",
+          "variable_payments": false,
+          "annual_rent_range": "$45,000-$55,900 per building",
+          "total_annual_rent": 145900,
+          "practical_expedient": "Combined lease and non-lease components"
+        },
+        "subsequent_events": "Evaluated through April 7, 2025; none disclosed"
+      }
+    },
+    {
+      "note": "Note 2 — Related Party Transactions",
+      "source_pages": [203, 204],
+      "transactions": {
+        "due_from_affiliate": {
+          "nature": "Non-interest-bearing advances to PRG, due on demand",
+          "balance_2024": 35310459,
+          "balance_2023": 11992768,
+          "presentation_2024": "Reduction of equity on consolidated balance sheet",
+          "presentation_2023": "Current asset"
+        },
+        "management_services": "PRG provides management services without charge",
+        "building_leases": {
+          "count": 3,
+          "lessee": "PEI",
+          "initial_term": "20 years from Dec 2004",
+          "current_extension": "Until Dec 2029",
+          "annual_rent": 145900,
+          "maturity_schedule": [
+            {"period_ending": "Dec 27, 2025", "amount": 145900},
+            {"period_ending": "Dec 26, 2026", "amount": 145900},
+            {"period_ending": "Dec 25, 2027", "amount": 145900},
+            {"period_ending": "Dec 30, 2028", "amount": 145900},
+            {"period_ending": "Dec 29, 2029", "amount": 145900},
+            {"thereafter": 2188500}
+          ],
+          "total_minimum_future_rentals": 2918000
+        },
+        "airplane_transactions": {
+          "purchase_2023": {"airplane": "N100GA", "final_payment_by_prg": 6610400, "delivered": "Feb 10, 2023"},
+          "sale_2023": {"airplane": "N882PX", "proceeds": 13489754, "received_by": "PRG on behalf of Company", "date": "Aug 2023"}
+        }
+      }
+    },
+    {
+      "note": "Note 3 — Property and Equipment",
+      "source_pages": [204, 205],
+      "detail": {
+        "airplanes": {"gross_2024": 61157629, "gross_2023": 61157629, "note": "Primarily used by PEI and PRG who pay operating costs"},
+        "land": {"gross_2024": 5865000, "gross_2023": 5865000},
+        "buildings_improvements": {"gross_2024": 4376175, "gross_2023": 4376175},
+        "leasehold_improvements": {"gross_2024": 367055, "gross_2023": 367055},
+        "restaurant_equipment": {"gross_2024": 0, "gross_2023": 60237},
+        "furniture_fixtures": {"gross_2024": 7600, "gross_2023": 70286},
+        "vehicles": {"gross_2024": 75589, "gross_2023": 75589},
+        "construction_in_progress": {"gross_2024": 25750, "gross_2023": 0},
+        "subtotal": {"gross_2024": 71874798, "gross_2023": 71971971},
+        "accumulated_depreciation": {"2024": -10379070, "2023": -8334318},
+        "net": {"2024": 61495728, "2023": 63637653}
+      }
+    },
+    {
+      "note": "Note 4 — Number of Licensed Locations",
+      "source_pages": [205],
+      "detail": {
+        "domestic_2024": 175,
+        "international_2024": 97,
+        "total_2024": 272,
+        "opened_2024": {"domestic": 15, "international": 9, "total": 24},
+        "closed_2024": {"domestic": 7, "international": 5, "total": 12},
+        "domestic_2023": 167,
+        "international_2023": 93,
+        "total_2023": 260
+      }
+    }
+  ],
+  "advertising_fund_accounting": "No advertising fund exists — not applicable",
+  "impairment_policy": "Not separately disclosed; no impairment charges recorded",
+  "variable_interest_entities": "None disclosed"
+}

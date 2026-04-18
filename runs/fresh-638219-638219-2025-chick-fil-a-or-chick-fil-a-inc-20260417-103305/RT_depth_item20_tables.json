@@ -1,0 +1,59 @@
+{
+  "source": "Item 20 — All Tables",
+  "tables_extracted": 5,
+  "table1_system_summary": {
+    "source_pages": [84],
+    "years": [2022, 2023, 2024],
+    "franchised": {"start_2024": 2494, "end_2024": 2629, "net_2024": 135},
+    "company_owned": {"start_2024": 58, "end_2024": 55, "net_2024": -3},
+    "licensed": {"start_2024": 412, "end_2024": 425, "net_2024": 13},
+    "total": {"start_2024": 2552, "end_2024": 2684, "net_2024": 132}
+  },
+  "table2_transfers": {
+    "source_pages": [85],
+    "franchised_transfers": {"2022": 0, "2023": 0, "2024": 0},
+    "licensed_transfers": {"2022": 0, "2023": 0, "2024": 0},
+    "transfers_total": 0
+  },
+  "table3_franchise_status": {
+    "source_pages": [86, 87, 88, 89, 90],
+    "totals_2024": {"start": 2494, "opened": 243, "terminations": 0, "non_renewals": 0, "reacquired": 102, "ceased_other": 6, "end": 2629},
+    "totals_2023": {"start": 2331, "opened": 255, "terminations": 0, "non_renewals": 0, "reacquired": 84, "ceased_other": 8, "end": 2494},
+    "totals_2022": {"start": 2230, "opened": 213, "terminations": 1, "non_renewals": 0, "reacquired": 91, "ceased_other": 13, "end": 2338},
+    "state_detail_extracted": true,
+    "states_count": 47,
+    "table_notes": [
+      "Note 1: Start/end as of beginning/end of fiscal year",
+      "Note 2: 'Opened' includes new restaurants and company-owned acquired by Operator",
+      "Note 3: 'Terminations' = FA terminated without any consideration to Operator"
+    ]
+  },
+  "table3_licensed_status": {
+    "source_pages": [91, 92, 93, 94],
+    "totals_2024": {"start": 412, "opened": 18, "terminations": 5, "non_renewals": 0, "reacquired": 0, "ceased_other": 0, "end": 425},
+    "state_detail_extracted": true
+  },
+  "table4_company_owned": {
+    "source_pages": [95, 96, 97, 98],
+    "restaurants_totals_2024": {"start": 58, "opened": 0, "reacquired": 108, "closed": 25, "sold_to_franchisees": 86, "end": 55},
+    "licensed_totals_2024": {"start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+    "state_detail_extracted": true,
+    "table_notes": [
+      "Note 3: 'Reacquired' includes all instances of restaurant transfer from Operator to CFA (voluntary termination for new opportunity, CFA termination, mutual consent, or departure)"
+    ]
+  },
+  "table5_projected_openings": {
+    "source_pages": [99, 100, 101],
+    "restaurants": {"signed_not_opened": 38, "projected_franchised": 183, "projected_company": 0},
+    "licensed": {"signed_not_opened": 3, "projected_franchised": 25, "projected_company": 0},
+    "total_projected": 208,
+    "fa_signed_not_opened_list": true,
+    "fa_list_states": ["CA", "FL", "GA", "IA", "ID", "IL", "IN", "MD", "MI", "MO", "NE", "NJ", "NV", "NY", "OK", "OR", "SC", "TN", "TX"],
+    "table_notes": ["CFA does not intend to open company-owned restaurants; may do so temporarily until Operator selected"]
+  },
+  "gag_clause": {
+    "present": true,
+    "quote": "During the last three fiscal years, some former Operators have signed provisions restricting their ability to speak openly about their experiences with us.",
+    "source_pages": [102]
+  }
+}

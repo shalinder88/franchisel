@@ -1,0 +1,34 @@
+{
+  "overrides": [
+    {"state": "California", "affected_family": "operating_obligations", "override_summary": "Franchisee solely responsible for Fast Food Act compliance (min wage, working hours, employment standards)", "why_it_matters": "CA franchise operations may face higher labor costs than disclosed in Item 7/19 — franchisee bears all compliance risk", "source_pages": [343]},
+    {"state": "California", "affected_family": "anti_waiver", "override_summary": "No waiver of state franchise law claims including fraud in inducement; no disclaimer of reliance on franchisor statements", "why_it_matters": "Preserves franchisee's right to pursue claims under CA franchise law regardless of FA provisions", "source_pages": [343]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "Release required for renewal/transfer does NOT apply to claims under MD Franchise Registration and Disclosure Law", "why_it_matters": "MD franchisees retain right to pursue franchise law claims even after signing renewal/transfer release", "source_pages": [345]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law", "why_it_matters": "Provides potential protection against automatic termination in bankruptcy", "source_pages": [345]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Franchisee may bring action in MD for claims under MD franchise law (unless preempted by federal law)", "why_it_matters": "Overrides Atlanta, GA venue for MD franchise law claims", "source_pages": [345]},
+    {"state": "Maryland", "affected_family": "limitations", "override_summary": "3-year statute of limitations for claims under MD franchise law from grant of franchise", "why_it_matters": "Establishes specific SOL for MD franchise law claims", "source_pages": [345]},
+    {"state": "Minnesota", "affected_family": "trademark_indemnification", "override_summary": "Franchisor must indemnify MN franchisees against third-party trademark infringement claims", "why_it_matters": "MN franchisees have additional protection against trademark disputes that other states' franchisees lack", "source_pages": [346]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days' notice of termination (60 days to cure) required per Minn. Stat. §80C.14", "why_it_matters": "Significantly longer cure period than FA's 10-30 days; provides more time to resolve issues", "source_pages": [346]},
+    {"state": "Minnesota", "affected_family": "renewal", "override_summary": "180 days' notice of non-renewal required", "why_it_matters": "Gives MN franchisees 6 months advance notice vs FA's potentially shorter window", "source_pages": [346]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Cannot require litigation outside Minnesota per Minn. Stat. §80C.21", "why_it_matters": "Overrides Atlanta, GA venue requirement entirely for MN franchisees", "source_pages": [346]},
+    {"state": "Minnesota", "affected_family": "damages", "override_summary": "Cannot require waiver of jury trial, consent to injunctive relief, liquidated damages, termination penalties, or judgment notes", "why_it_matters": "Voids multiple FA provisions that limit franchisee remedies and expose franchisee to penalties", "source_pages": [346]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Release for renewal/sale/transfer does not apply to claims under Minn. Rule 2860.4400D", "why_it_matters": "Preserves MN franchise law claims through renewal/transfer events", "source_pages": [346]},
+    {"state": "North Dakota", "affected_family": "general_release", "override_summary": "Release does not apply to claims under ND Franchise Investment Law", "why_it_matters": "ND franchisees retain franchise law rights through releases", "source_pages": [347]},
+    {"state": "North Dakota", "affected_family": "noncompete", "override_summary": "Non-competition covenants generally considered unenforceable in ND", "why_it_matters": "Post-term noncompete likely void in ND — franchisee may open competing business immediately", "source_pages": [347]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Franchisee may bring action in ND to extent required by ND Franchise Investment Law", "why_it_matters": "Partial override of Atlanta venue", "source_pages": [347]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "North Dakota law applies to extent required by law (instead of Georgia law)", "why_it_matters": "ND franchise law governs over Georgia law for applicable claims", "source_pages": [347]},
+    {"state": "Washington", "affected_family": "employment_restrictions", "override_summary": "Assurance of Discontinuance: removed no-poach provision from FA; will not enforce in existing agreements", "why_it_matters": "WA franchisees and their employees are not restricted from being recruited by other Sonic franchisees", "source_pages": [348]}
+  ],
+  "summary_table": {
+    "general_release_override": ["Maryland", "Minnesota", "North Dakota"],
+    "forum_selection_override": ["Maryland", "Minnesota", "North Dakota"],
+    "governing_law_override": ["North Dakota"],
+    "noncompete_override": ["North Dakota"],
+    "termination_notice_override": ["Minnesota"],
+    "renewal_notice_override": ["Minnesota"],
+    "jury_trial_waiver_voided": ["Minnesota"],
+    "liquidated_damages_voided": ["Minnesota"],
+    "trademark_indemnification": ["Minnesota"],
+    "anti_waiver_protection": ["California", "Maryland", "Minnesota", "North Dakota"],
+    "employment_restriction_removed": ["Washington"]
+  }
+}

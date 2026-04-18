@@ -1,0 +1,340 @@
+{
+  "extraction_date": "2026-04-18",
+  "filing_id": "640419",
+  "brand": "Pizza Hut",
+  "tables": [
+    {
+      "table_id": "item5_initial_fees",
+      "item": "Item 5",
+      "title": "Initial Fees",
+      "source_pages": [19],
+      "columns": ["fee_type", "amount", "notes"],
+      "rows": [
+        {"fee_type": "Initial Franchise Fee", "amount": "$25,000 per System Restaurant", "notes": "Lump sum, non-refundable. May increase with CPI. Waived for ACE program enrollees (closed)."}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "item6_other_fees",
+      "item": "Item 6",
+      "title": "Other Fees",
+      "source_pages": [19, 20, 21, 22, 23, 24],
+      "columns": ["fee_type", "amount", "due_date", "remarks"],
+      "rows": [
+        {"fee_type": "Monthly Service Fee", "amount": "6.0% of Gross Sales (6.5% in certain circumstances)", "due_date": "Monthly by 20th", "remarks": "Not uniformly imposed. See Note 1 re: alcoholic beverage exclusion."},
+        {"fee_type": "Taxes", "amount": "As levied", "due_date": "As incurred", "remarks": "All taxes on franchisor services/goods."},
+        {"fee_type": "System Advertising Fund Contribution", "amount": "4.75% of Gross Sales", "due_date": "Same as Monthly Service Fee", "remarks": "Credited against IPHFHA dues."},
+        {"fee_type": "IPHFHA Dues", "amount": "4.75% of Gross Sales", "due_date": "Per IPHFHA", "remarks": "Credited to System Ad Fund."},
+        {"fee_type": "Digital Innovation Fee", "amount": "$0.41 per digital transaction", "due_date": "Same as Monthly Service Fee", "remarks": "To PHLLC or affiliates (Digico). See Notes 3, 4."},
+        {"fee_type": "Restaurant Technology Fee", "amount": "$2,950 per year", "due_date": "12 monthly bills", "remarks": "To PHLLC or PH Connect. Max 12%/yr increase. See Notes 3, 4."},
+        {"fee_type": "Help Desk High-Use Fee", "amount": "$12/call, $7/other event beyond 52/yr", "due_date": "When applicable", "remarks": "Excludes system-wide issues, new openings. May increase 50%."},
+        {"fee_type": "Dragontail KMX Fee", "amount": "$240 install + $75/mo/restaurant", "due_date": "Monthly with tech fee", "remarks": "Required for DaaS. Suspended Q1 2026 per Hut Forward."},
+        {"fee_type": "Initial Training Costs", "amount": "$500/person/week additional trainees", "due_date": "Before training", "remarks": "First QO included in franchise fee."},
+        {"fee_type": "On-Going Training", "amount": "$50-$150/day + travel/lodging", "due_date": "As incurred", "remarks": "May increase 50%."},
+        {"fee_type": "Inspection/Testing Costs", "amount": "Actual costs", "due_date": "When requested", "remarks": "For proposed supplier approval."},
+        {"fee_type": "Audit", "amount": "Actual audit expenses", "due_date": "5 business days after billing", "remarks": "Pay deficiency + finance charge if ≥2%."},
+        {"fee_type": "Late Charges", "amount": "1.5%/month", "due_date": "As incurred", "remarks": "May increase to max legal rate."},
+        {"fee_type": "Unauthorized Closure", "amount": "24x avg monthly royalty of prior year", "due_date": "Upon closure", "remarks": "If open <1 year: 24x highest monthly royalty."},
+        {"fee_type": "Relocation", "amount": "Varies", "due_date": "When replacement opens", "remarks": "New franchise fee if not open within 12 months."},
+        {"fee_type": "Transfer Fee", "amount": "$2,500 + $250/restaurant", "due_date": "Upon request", "remarks": "Plus outside counsel fees."},
+        {"fee_type": "Renewal Fee", "amount": "$12,500/restaurant", "due_date": "Upon execution", "remarks": "May increase to $25,000."},
+        {"fee_type": "Interim Operation Fee", "amount": "Greater of 2x salary or 10% monthly Gross Sales + expenses", "due_date": "As incurred", "remarks": "On death/disability without QO."},
+        {"fee_type": "Advances", "amount": "Varies", "due_date": "When requested", "remarks": "Not obligated to make advances."},
+        {"fee_type": "Indemnification", "amount": "Varies", "due_date": "When requested", "remarks": "Broad scope. See FA Section 14.01."},
+        {"fee_type": "Attorneys'/Experts' Fees", "amount": "Varies", "due_date": "Upon demand", "remarks": "Loser-pays."},
+        {"fee_type": "Termination Damages", "amount": "Varies", "due_date": "Upon demand", "remarks": "Lost profits, lost opportunities."},
+        {"fee_type": "De-identification Costs", "amount": "Actual cost", "due_date": "As incurred", "remarks": "If you fail to de-identify."},
+        {"fee_type": "Third Party Dinova Program", "amount": "9.5% on orders >$20", "due_date": "60 days from invoice", "remarks": "Opt-out available."},
+        {"fee_type": "EPR Fees", "amount": "Actual fees + costs", "due_date": "Upon demand", "remarks": "Extended producer liability."}
+      ],
+      "table_notes": [
+        "Note 1: If state law excludes alcoholic beverage sales from royalty base, PHLLC estimates excluded revenues and sets effective royalty rate.",
+        "Note 2: Gross Sales = all revenues from any source, less good-faith customer credits/allowances and sales taxes properly remitted.",
+        "Note 3: Tech Framework Agreement (Dec 27, 2022) affects SUS/FMS and QuikOrder agreements including fee increases for Restaurant Technology Fee, Digital Innovation Fee, and Help Desk High-Use Fee.",
+        "Note 4: Digital Innovation Fee and Restaurant Technology Fee may increase (i) consistent with CPI or (ii) as approved by Technology Governance Committee. Digital Innovation Fee last increased Jan 1, 2024.",
+        "Note 5: You must pay outside counsel fees for proposed transfers (FA Section 18.11).",
+        "Note 6: Interim Operation Fee is in addition to Monthly Service Fee.",
+        "Note 7: You indemnify PHLLC from losses arising from your FA execution, operations, employment practices, third-party claims (FA Section 14.01, Appendix A).",
+        "Note 8: Loser-pays attorneys' fees in litigation (FA Section 36.07). You also pay PHLLC's counsel fees for FA amendments (FA Section 30.02).",
+        "Note 9: On termination for default, you must pay all losses including reasonable attorneys' fees, lost profits, lost opportunities (FA Section 24.01).",
+        "All fees nonrefundable. PHLLC can apply payments to oldest obligation."
+      ]
+    },
+    {
+      "table_id": "item7_rbd_dbr",
+      "item": "Item 7",
+      "title": "Estimated Initial Investment — RBD & DBR Dine-In/Delivery/Carryout",
+      "source_pages": [24],
+      "columns": ["expenditure", "amount_low", "amount_high", "method", "when_due", "to_whom"],
+      "rows": [
+        {"expenditure": "Initial Franchise Fee", "amount_low": 25000, "amount_high": 25000, "method": "Lump Sum", "when_due": "Before opening", "to_whom": "PHLLC"},
+        {"expenditure": "Equipment", "amount_low": 150000, "amount_high": 300000, "method": "Lump Sum", "when_due": "When acquired", "to_whom": "Vendor"},
+        {"expenditure": "Opening Inventory", "amount_low": 4000, "amount_high": 8000, "method": "Lump Sum", "when_due": "When acquired", "to_whom": "Vendor"},
+        {"expenditure": "Smallwares", "amount_low": 15000, "amount_high": 50000, "method": "Lump Sum", "when_due": "When acquired", "to_whom": "Vendor"},
+        {"expenditure": "Building and Site Improvements", "amount_low": 619000, "amount_high": 1651500, "method": "Varies", "when_due": "Varies", "to_whom": "Varies"},
+        {"expenditure": "Land", "amount_low": null, "amount_high": null, "method": "Varies", "when_due": "When acquired", "to_whom": "Seller/Lessor"},
+        {"expenditure": "Computer System", "amount_low": 15000, "amount_high": 30000, "method": "Lump Sum", "when_due": "When acquired", "to_whom": "Approved Vendors"},
+        {"expenditure": "Computer System Training", "amount_low": 0, "amount_high": 1500, "method": "Lump Sum", "when_due": "When requested", "to_whom": "Approved Vendors"},
+        {"expenditure": "Additional Funds (3 months)", "amount_low": 5000, "amount_high": 21500, "method": "As Incurred", "when_due": "As Incurred", "to_whom": "Employees, Utilities, Suppliers"},
+        {"expenditure": "Miscellaneous", "amount_low": 10000, "amount_high": 22000, "method": "As Incurred", "when_due": "As Incurred", "to_whom": "Employees, Utilities, Suppliers"},
+        {"expenditure": "Advertising", "amount_low": 0, "amount_high": 16500, "method": "As Incurred", "when_due": "First 18 weeks", "to_whom": "Media, Suppliers"},
+        {"expenditure": "Start-up Other", "amount_low": 3000, "amount_high": 4000, "method": "As Incurred", "when_due": "As Incurred", "to_whom": "Approved Vendors"}
+      ],
+      "total_low": 846000,
+      "total_high": 2130000,
+      "table_notes": ["Land excluded from total. No expenditures refundable. Typical sq ft: 2,000-4,000. Does not include delivery vehicle costs."]
+    },
+    {
+      "table_id": "item7_fcd",
+      "item": "Item 7",
+      "title": "Estimated Initial Investment — FCD Dine-In/Delivery/Carryout",
+      "source_pages": [25],
+      "total_low": 818000,
+      "total_high": 2130000,
+      "table_notes": ["Same structure as RBD/DBR. Building/site: $619,000-$1,751,500. Equipment: $125,000-$225,000. Typical sq ft: 1,600-2,900."]
+    },
+    {
+      "table_id": "item7_freestanding_delco",
+      "item": "Item 7",
+      "title": "Estimated Initial Investment — Freestanding Delco Delivery/Carryout",
+      "source_pages": [25, 26, 27],
+      "total_low": 816000,
+      "total_high": 1900000,
+      "table_notes": ["Building/site: $619,000-$1,489,200. Equipment: $125,000-$269,500. Typical sq ft: 1,200-1,600. 6-8 week ad campaign recommended."]
+    },
+    {
+      "table_id": "item7_inline_delco",
+      "item": "Item 7",
+      "title": "Estimated Initial Investment — Inline/Endcap Delco Delivery/Carryout",
+      "source_pages": [26, 27],
+      "total_low": 670000,
+      "total_high": 960000,
+      "table_notes": ["Building/site: $473,000-$618,700. Equipment: $125,000-$200,000. Lowest investment option. Leasehold Interest (not Land)."]
+    },
+    {
+      "table_id": "item11_training",
+      "item": "Item 11",
+      "title": "Initial Training Program",
+      "source_pages": [37],
+      "columns": ["subject", "classroom_online_hours", "ojt_hours", "location"],
+      "rows": [
+        {"subject": "Restaurant Training (BCM/LEAD On!)", "classroom_online_hours": "15-37 hours online over 6-12 weeks", "ojt_hours": "~8 hours/day for 6-12 weeks", "location": "Qualified Restaurant"},
+        {"subject": "Franchisee Onboarding", "classroom_online_hours": "N/A", "ojt_hours": "~8 hours/day for 3 days", "location": "Plano, TX or virtual"},
+        {"subject": "Pizza Prep 1", "classroom_online_hours": "~6 hours/day for 2 days", "ojt_hours": "0", "location": "Plano, TX"},
+        {"subject": "Pizza Prep 2", "classroom_online_hours": "~8 hours/day for 2 days", "ojt_hours": "0", "location": "Plano, TX"}
+      ],
+      "table_notes": ["First QO training included in franchise fee. Additional trainees $500/person/week. Franchisee pays all living/transportation."]
+    },
+    {
+      "table_id": "item19_fpr_dinein_rbd",
+      "item": "Item 19",
+      "title": "Mature Franchised System Restaurants — Dine-In/Red Roof and RBD",
+      "source_pages": [56],
+      "columns": ["fiscal_year", "count", "average_gross_sales", "median_gross_sales"],
+      "rows": [
+        {"fiscal_year": "2025", "count": 1875, "average_gross_sales": 1037823, "median_gross_sales": 978424},
+        {"fiscal_year": "2024", "count": 2007, "average_gross_sales": 1088360, "median_gross_sales": 1027406}
+      ],
+      "table_notes": [
+        "FY2025: Range $258,403-$3,050,083. 807 (43.0%) exceeded average.",
+        "FY2024: Range $263,921-$3,111,502. 860 (42.9%) exceeded average."
+      ]
+    },
+    {
+      "table_id": "item19_fpr_delco",
+      "item": "Item 19",
+      "title": "Mature Franchised System Restaurants — Delco Delivery/Carry-out",
+      "source_pages": [56],
+      "columns": ["fiscal_year", "count", "average_gross_sales", "median_gross_sales"],
+      "rows": [
+        {"fiscal_year": "2025", "count": 2892, "average_gross_sales": 937342, "median_gross_sales": 895289},
+        {"fiscal_year": "2024", "count": 3052, "average_gross_sales": 983165, "median_gross_sales": 936719}
+      ],
+      "table_notes": [
+        "FY2025: Range $233,001-$2,797,075. 1,286 (44.5%) exceeded average.",
+        "FY2024: Range $258,098-$2,871,378. 1,357 (44.5%) exceeded average."
+      ]
+    },
+    {
+      "table_id": "item19_fpr_all",
+      "item": "Item 19",
+      "title": "All Mature Franchise System Restaurants",
+      "source_pages": [56],
+      "columns": ["fiscal_year", "count", "average_gross_sales", "median_gross_sales"],
+      "rows": [
+        {"fiscal_year": "2025", "count": 4767, "average_gross_sales": 972864, "median_gross_sales": 929232},
+        {"fiscal_year": "2024", "count": 5059, "average_gross_sales": 1024898, "median_gross_sales": 969232}
+      ],
+      "table_notes": [
+        "FY2025: Range $233,001-$3,050,083. 2,071 (43.4%) exceeded average.",
+        "FY2024: Range $258,098-$3,111,502. 2,207 (43.6%) exceeded average.",
+        "Average Gross Sales = mathematical average of total annual cash/payments received, less discounts/allowances/sales taxes.",
+        "Excludes DBR/FCD, carryout-only, seasonal, Express, restaurants operating ≤24 days in a period.",
+        "Does not take into account ASC revenue recognition adjustments for loyalty programs."
+      ]
+    },
+    {
+      "table_id": "item20_table1",
+      "item": "Item 20",
+      "title": "Table No. 1 — Systemwide Outlet Summary",
+      "source_pages": [58],
+      "columns": ["outlet_type", "year", "start_of_year", "end_of_year", "net_change"],
+      "rows": [
+        {"outlet_type": "Franchised", "year": 2023, "start_of_year": 5302, "end_of_year": 5300, "net_change": -2},
+        {"outlet_type": "Franchised", "year": 2024, "start_of_year": 5300, "end_of_year": 5214, "net_change": -86},
+        {"outlet_type": "Franchised", "year": 2025, "start_of_year": 5214, "end_of_year": 4956, "net_change": -258},
+        {"outlet_type": "Company-Owned", "year": 2023, "start_of_year": 21, "end_of_year": 7, "net_change": -14},
+        {"outlet_type": "Company-Owned", "year": 2024, "start_of_year": 7, "end_of_year": 23, "net_change": 16},
+        {"outlet_type": "Company-Owned", "year": 2025, "start_of_year": 23, "end_of_year": 75, "net_change": 52},
+        {"outlet_type": "Total", "year": 2023, "start_of_year": 5323, "end_of_year": 5307, "net_change": -16},
+        {"outlet_type": "Total", "year": 2024, "start_of_year": 5307, "end_of_year": 5237, "net_change": -70},
+        {"outlet_type": "Total", "year": 2025, "start_of_year": 5237, "end_of_year": 5031, "net_change": -206}
+      ],
+      "table_notes": [
+        "Fiscal years: 2025 ended Dec 29, 2025; 2024 ended Dec 30, 2024; 2023 ended Dec 31, 2023.",
+        "From Dec 30, 2025 through Mar 6, 2026, 127 franchised Restaurants have ceased operations.",
+        "Company-Owned = owned/operated by PHLLC or affiliates."
+      ]
+    },
+    {
+      "table_id": "item20_table2",
+      "item": "Item 20",
+      "title": "Table No. 2 — Transfers of Franchised Outlets to New Owners",
+      "source_pages": [59, 60],
+      "columns": ["state", "year", "number_of_transfers"],
+      "footer_totals": {
+        "2023": 147,
+        "2024": 37,
+        "2025": 189
+      },
+      "table_notes": [
+        "System Restaurants transferred (not franchise agreements). Does not include transfers where beneficial ownership unchanged or transfers from PHLLC to franchisee.",
+        "Notable 2025 transfers: Georgia (50), Illinois (29), North Carolina (24), Wisconsin (23), Alabama (18), Tennessee (11), Texas (9)."
+      ]
+    },
+    {
+      "table_id": "item20_table3",
+      "item": "Item 20",
+      "title": "Table No. 3 — Status of Franchised Outlets",
+      "source_pages": [60, 61, 62, 63, 64],
+      "columns": ["state", "year", "outlets_at_start", "outlets_opened", "terminations", "non_renewals", "reacquired_by_franchisor", "ceased_operations_other", "outlets_at_end"],
+      "footer_totals": {
+        "2023": {"start": 5302, "opened": 155, "terminations": 0, "non_renewals": 0, "reacquired": 0, "ceased": 157, "end": 5300},
+        "2024": {"start": 5300, "opened": 89, "terminations": 0, "non_renewals": 0, "reacquired": 16, "ceased": 159, "end": 5214},
+        "2025": {"start": 5214, "opened": 55, "terminations": 0, "non_renewals": 0, "reacquired": 54, "ceased": 259, "end": 4956}
+      },
+      "transfers_total": null,
+      "terminations_total": 0,
+      "non_renewals_total": 0,
+      "reacquired_total": {"2023": 0, "2024": 16, "2025": 54},
+      "ceased_operations_total": {"2023": 157, "2024": 159, "2025": 259},
+      "table_notes": [
+        "(1*) Includes new, relocated, and locations acquired by franchisee from franchisor.",
+        "(2*) Includes closures due to low volume, lease expiration, relocated locations, etc.",
+        "(3*) From Dec 30, 2025 through Mar 6, 2026, 127 franchised Restaurants have ceased operations.",
+        "Zero terminations and zero non-renewals across all three years.",
+        "Reacquisitions in 2025: Louisiana (18), North Carolina (30), South Carolina (6).",
+        "States with largest net declines in 2025: California (-28), Florida (-25), Louisiana (-25), Illinois (-20), Georgia (-18), Texas (-9), Wisconsin (-9), Minnesota (-10), Pennsylvania (-7)."
+      ]
+    },
+    {
+      "table_id": "item20_table4",
+      "item": "Item 20",
+      "title": "Table No. 4 — Status of Company-Owned Outlets",
+      "source_pages": [65],
+      "columns": ["state", "year", "outlets_at_start", "outlets_opened", "reacquired_from_franchisee", "outlets_closed", "sold_to_franchisee", "outlets_at_end"],
+      "footer_totals": {
+        "2023": {"start": 21, "opened": 0, "reacquired": 0, "closed": 0, "sold": 14, "end": 7},
+        "2024": {"start": 7, "opened": 0, "reacquired": 16, "closed": 0, "sold": 0, "end": 23},
+        "2025": {"start": 23, "opened": 0, "reacquired": 54, "closed": 2, "sold": 0, "end": 75}
+      },
+      "sold_total": {"2023": 14, "2024": 0, "2025": 0},
+      "table_notes": [
+        "Company-Owned = owned/operated by PHLLC or affiliates.",
+        "2023: Sold 10 (Indiana) + 4 (Kentucky) to franchisees.",
+        "2024: Reacquired 16 (Utah).",
+        "2025: Reacquired 54 (Louisiana 18, North Carolina 30, South Carolina 6). Closed 2 (NC 1, SC 1).",
+        "Texas: 7 company-owned throughout all three years."
+      ]
+    },
+    {
+      "table_id": "item20_table5",
+      "item": "Item 20",
+      "title": "Table No. 5 — Projected Openings for FY2026",
+      "source_pages": [65, 66],
+      "columns": ["state", "agreements_signed_not_opened", "projected_new_franchised", "projected_new_company_owned"],
+      "footer_totals": {
+        "agreements_signed_not_opened": 0,
+        "projected_new_franchised": 33,
+        "projected_new_company_owned": 0
+      },
+      "projected_openings_total": 33,
+      "table_notes": [
+        "33 projected new franchised outlets across 17 states.",
+        "Top projected states: Indiana (4), Massachusetts (3), South Carolina (3).",
+        "Zero franchise agreements signed but outlet not opened.",
+        "Zero projected company-owned openings."
+      ]
+    },
+    {
+      "table_id": "item21_balance_sheet",
+      "item": "Item 21",
+      "title": "Consolidated Balance Sheets — PH Guarantor, LLC",
+      "source_pages": [379],
+      "columns": ["line_item", "2025", "2024"],
+      "rows": [
+        {"line_item": "Cash", "2025": 1060, "2024": 379},
+        {"line_item": "Restricted cash", "2025": 5, "2024": 16049},
+        {"line_item": "Accounts and notes receivable, net", "2025": 93354, "2024": 81744},
+        {"line_item": "Due from affiliate PHA", "2025": 14589, "2024": 13285},
+        {"line_item": "Total current assets", "2025": 117109, "2024": 118547},
+        {"line_item": "Total assets", "2025": 146098, "2024": 149558},
+        {"line_item": "AP and other current liabilities", "2025": 67030, "2024": 73799},
+        {"line_item": "Total current liabilities", "2025": 69955, "2024": 74758},
+        {"line_item": "Total liabilities", "2025": 76996, "2024": 82256},
+        {"line_item": "Member's equity", "2025": 69102, "2024": 67302},
+        {"line_item": "Total liabilities and equity", "2025": 146098, "2024": 149558}
+      ],
+      "table_notes": ["All amounts in thousands. Allowance for doubtful accounts: $13,119 (2025), $22,923 (2024)."]
+    },
+    {
+      "table_id": "item21_income_statement",
+      "item": "Item 21",
+      "title": "Consolidated Statements of Income — PH Guarantor, LLC",
+      "source_pages": [380],
+      "columns": ["line_item", "2025", "2024", "2023"],
+      "rows": [
+        {"line_item": "Franchise and license revenues", "2025": 261236, "2024": 288807, "2023": 284733},
+        {"line_item": "Franchise contributions for ad/other", "2025": 218441, "2024": 240784, "2023": 249440},
+        {"line_item": "Total revenues", "2025": 479677, "2024": 529591, "2023": 534173},
+        {"line_item": "G&A expenses", "2025": 54680, "2024": 57290, "2023": 54638},
+        {"line_item": "Franchise and license expenses", "2025": 23070, "2024": 17127, "2023": 6703},
+        {"line_item": "Franchise ad/other expense", "2025": 218861, "2024": 240993, "2023": 250461},
+        {"line_item": "Total costs and expenses", "2025": 296611, "2024": 315410, "2023": 311802},
+        {"line_item": "Other income", "2025": 12156, "2024": 12603, "2023": 9472},
+        {"line_item": "Net Income", "2025": 195222, "2024": 226784, "2023": 231843}
+      ],
+      "table_notes": ["All amounts in thousands. FY2024 included 53rd week adding ~$5.5M revenue and ~$4.0M net income."]
+    },
+    {
+      "table_id": "item21_cash_flow",
+      "item": "Item 21",
+      "title": "Consolidated Statements of Cash Flows — PH Guarantor, LLC",
+      "source_pages": [382],
+      "columns": ["line_item", "2025", "2024", "2023"],
+      "rows": [
+        {"line_item": "Net Income", "2025": 195222, "2024": 226784, "2023": 231843},
+        {"line_item": "Net Cash Provided by Operating", "2025": 176102, "2024": 219700, "2023": 206757},
+        {"line_item": "Net Cash Used in Investing", "2025": -20, "2024": -168, "2023": -76},
+        {"line_item": "Net cash swept to YUM", "2025": -193422, "2024": -226900, "2023": -231843},
+        {"line_item": "Net Cash Used in Financing", "2025": -191444, "2024": -226900, "2023": -231843}
+      ],
+      "table_notes": ["All amounts in thousands. Short-term borrowings in 2025: $88.3M proceeds, $86.4M payments (AdCom LOC). Essentially all operating cash swept to YUM."]
+    }
+  ],
+  "gag_clause_flag": true,
+  "gag_clause_evidence": {
+    "source_pages": [66],
+    "quote_fragment": "In some instances, current and former franchisees sign provisions restricting their ability to speak openly about their experience with us."
+  }
+}

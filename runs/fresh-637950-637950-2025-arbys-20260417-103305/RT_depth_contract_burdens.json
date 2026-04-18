@@ -1,0 +1,93 @@
+{
+  "depth_pass": "A2_depth_pass_2_contract_burdens",
+  "source_pages": [267, 268, 290, 295, 296],
+  "exhibits_read": ["Franchise Agreement (Exhibit D)", "portions of Development Agreement"],
+
+  "franchise_agreement_burdens": {
+    "grant_and_term": {
+      "term_traditional": "up to 20 years",
+      "term_nontrad": "shorter of 10 years or lease term",
+      "successor_fa": "materially different terms possible",
+      "source_pages": [63, 64]
+    },
+    "fee_obligations": {
+      "royalty": "4% of Gross Sales (Traditional); 6.2% (Non-Traditional)",
+      "advertising": "minimum aggregate 5.2% including AFA + local",
+      "payment_method": "EFT initiated by franchisor",
+      "source_pages": [31, 32, 33]
+    },
+    "site_selection": {
+      "franchisor_acceptance_required": true,
+      "lease_approval_required": true,
+      "lease_protective_provisions": "required to protect franchisor interests",
+      "source_pages": [48, 49]
+    },
+    "training_obligations": {
+      "mtp_required": true,
+      "manager_count_first_two": 6,
+      "manager_count_subsequent": 1,
+      "ongoing_training_at_discretion": true,
+      "source_pages": [55, 56, 57]
+    },
+    "termination_triggers": {
+      "automatic_no_notice": ["insolvency", "bankruptcy", "assignment for benefit of creditors", "receiver appointed", "unauthorized transfer"],
+      "immediate_on_notice": ["loss of premises rights", "criminal violation", "false information", "system duplication", "non-compete violation", "denial of inspection", "2+ monetary defaults in 12 months", "imminent health/safety danger", "abandonment"],
+      "curable_30_days": ["non-compliance with Manual", "operation detrimental to system"],
+      "curable_10_days": ["non-payment of fees"],
+      "curable_180_days": ["casualty rendering premises inoperable"],
+      "source_pages": [65, 66]
+    },
+    "transfer_restrictions": {
+      "approval_required": true,
+      "transfer_fee": {"first": 17500, "existing": 2500},
+      "general_release_required": true,
+      "rofr": true,
+      "rofr_exercise_period_days": 30,
+      "rofr_closing_period_days": 60,
+      "prequalified_buyer_exception": "5+ Arby's, in compliance, not in litigation",
+      "family_exception": "less than 50% to family/trust without consent",
+      "source_pages": [68, 69, 290]
+    },
+    "noncompete": {
+      "during_term": true,
+      "post_term_months": 12,
+      "scope": "business offering roast beef sandwiches for sale",
+      "geographic_scope": "within Protected Area",
+      "threshold_pct": 15,
+      "survives_termination": true,
+      "source_pages": [62, 69, 70]
+    },
+    "guaranty": {
+      "required_from": "principals",
+      "spousal_guaranty": false,
+      "scope": "unconditional guaranty to punctually pay and perform all obligations",
+      "source_pages": [62]
+    },
+    "venue_and_dispute": {
+      "forum": "federal or state court closest to franchisor principal office (Atlanta, GA)",
+      "governing_law": "Georgia (without conflict of laws)",
+      "jury_waiver": "not explicitly stated in body",
+      "source_pages": [70, 71]
+    },
+    "insurance_requirements": {
+      "cgl_minimum": 1000000,
+      "additional_insureds": ["franchisor", "owners", "affiliates", "AFA"],
+      "carrier_rating": "A.M. Best A- / FSC X",
+      "source_pages": [45]
+    },
+    "indemnification": {
+      "scope": "all claims arising from operation, construction, occupancy, use of fixtures/equipment, sale of products, or FA",
+      "source_pages": [34]
+    },
+    "force_majeure": {
+      "noted": "casualty clause allows 180 days to restore premises",
+      "source_pages": [66]
+    },
+    "distinctive_clauses": {
+      "ofac_compliance": "Restricted persons/OFAC representations required (Article 21.11)",
+      "no_waiver_of_reliance": "Multi-state anti-disclaimer provision (Article 21.13, applies to 13 states)",
+      "securitization_encumbrance": "All franchise agreements pledged as collateral for securitization notes",
+      "source_pages": [295]
+    }
+  }
+}

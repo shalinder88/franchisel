@@ -1,0 +1,179 @@
+{
+  "extraction_date": "2026-04-18",
+  "enrichment_version": "v1",
+  "brand": "Papa Johns",
+  "filing_id": "638092",
+  "fdd_year": 2025,
+  "issuance_date": "2025-03-28",
+  "note": "This is a self-contained enriched canonical. All fields from 09_final_canonical.json are included plus enrichment layers.",
+
+  "document_identity": {
+    "franchisor_legal_name": "Papa John's Franchising, LLC",
+    "state_of_organization": "Kentucky",
+    "date_of_organization": "2020-11-06",
+    "principal_address": "2002 Papa John's Boulevard, Louisville, KY 40299",
+    "parent_company": "Papa John's International, Inc. (PJI)",
+    "fdd_scope": "US (excluding Alaska, Hawaii, and Maryland)",
+    "franchise_type": "Quick service restaurant — pizza",
+    "programs": ["Standard", "Non-Traditional", "Small-Town"],
+    "source_pages": [1, 6, 7],
+    "confidence": "high"
+  },
+
+  "item19_chart_detail": {
+    "chart_type": "Weekly Per Store Average Net Sales — Combined (2020-2024)",
+    "data_points": [
+      {"year": 2020, "value": 20395},
+      {"year": 2021, "value": 22776},
+      {"year": 2022, "value": 23182},
+      {"year": 2023, "value": 23232},
+      {"year": 2024, "value": 22256}
+    ],
+    "trend": "Rose sharply 2020-2021 (+11.7%), plateaued 2022-2023, declined 2024 (-4.2%)",
+    "peak_year": 2023,
+    "source_pages": [79]
+  },
+
+  "item20_yearly_activity": {
+    "franchised": {
+      "2022": {"start": 2564, "opened": 145, "terminated": 49, "non_renewed": 0, "reacquired": 0, "ceased_other": 2, "end": 2658, "transfers": 252},
+      "2023": {"start": 2658, "opened": 73, "terminated": 32, "non_renewed": 0, "reacquired": 9, "ceased_other": 1, "end": 2689, "transfers": 74},
+      "2024": {"start": 2689, "opened": 90, "terminated": 0, "non_renewed": 0, "reacquired": 1, "ceased_other": 26, "end": 2752, "transfers": 106}
+    },
+    "company_owned": {
+      "2022": {"start": 600, "opened": 10, "reacquired": 2, "closed": 0, "sold": 90, "end": 522},
+      "2023": {"start": 522, "opened": 5, "reacquired": 10, "closed": 2, "sold": 4, "end": 531},
+      "2024": {"start": 531, "opened": 22, "reacquired": 1, "closed": 0, "sold": 15, "end": 539}
+    },
+    "source_pages": [81, 85, 86, 87, 88, 89, 90, 91]
+  },
+
+  "exhibit_structure": [
+    {"letter": "A", "name": "State Agencies", "pages": "95-97", "category": "regulatory"},
+    {"letter": "B", "name": "Franchise Agreement (Standard)", "pages": "100-165", "category": "franchise_agreement"},
+    {"letter": "C", "name": "Equipment Lease", "pages": "171-177", "category": "financing"},
+    {"letter": "D-1", "name": "FA Non-Traditional", "pages": "178-250", "category": "franchise_agreement"},
+    {"letter": "D-2", "name": "FA Small-Town", "pages": "250-297", "category": "franchise_agreement"},
+    {"letter": "E", "name": "Development Agreement", "pages": "298-334", "category": "development_agreement"},
+    {"letter": "F", "name": "ACH Authorization", "pages": "335", "category": "financial"},
+    {"letter": "G", "name": "Cheese Purchase Agreement", "pages": "335-345", "category": "supply"},
+    {"letter": "H", "name": "Advertising Agreement", "pages": "345-355", "category": "advertising"},
+    {"letter": "I", "name": "Operating Manual TOC", "pages": "355-360", "category": "operations"},
+    {"letter": "J", "name": "Cooperative By-Laws", "pages": "360-369", "category": "advertising"},
+    {"letter": "K-1", "name": "Owner Agreement", "pages": "370-385", "category": "guaranty"},
+    {"letter": "K-2", "name": "Relationship Agreement", "pages": "385-400", "category": "guaranty"},
+    {"letter": "L", "name": "Transfer Authorization", "pages": "400-402", "category": "transfer"},
+    {"letter": "M", "name": "Franchisee List", "pages": "403-463", "category": "franchisee_list"},
+    {"letter": "N", "name": "Departed Franchisees", "pages": "464-473", "category": "franchisee_list"},
+    {"letter": "O", "name": "Financial Statements", "pages": "474-488", "category": "financial_statements"},
+    {"letter": "P", "name": "State Addenda", "pages": "489-565", "category": "state_addenda"},
+    {"letter": "Q", "name": "State Effective Dates", "pages": "566", "category": "regulatory"},
+    {"letter": "R", "name": "Receipts", "pages": "567-568", "category": "administrative"}
+  ],
+
+  "state_addenda_overrides": {
+    "states_with_addenda": ["Illinois", "Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island", "Washington"],
+    "override_families_summary": {
+      "fee_deferral": ["Illinois"],
+      "forum_selection": ["Illinois", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+      "choice_of_law": ["Illinois", "Minnesota", "North Dakota", "Rhode Island"],
+      "noncompete_limits": ["Minnesota", "North Dakota", "Washington"],
+      "general_release_exclusion": ["Maryland", "Minnesota", "New York", "North Dakota", "Rhode Island"],
+      "renewal_compensation": ["Illinois"],
+      "anti_waiver": ["Illinois", "Minnesota", "New York"],
+      "termination_good_cause": ["Maryland"]
+    }
+  },
+
+  "item1_structural_facts": {
+    "entity_type": "LLC",
+    "sole_member": "PJI",
+    "no_employees": "All services via PJUSA franchise supervision agreement",
+    "no_cash": "All cash swept to PJUSA",
+    "no_operating_restaurants": "Company stores operated by PJ USA, Inc.",
+    "supply_chain": "PJ Food Service operates Quality Control Centers for dough/sauce distribution",
+    "franchise_began": "2021-02-25",
+    "predecessor_began": "1991-11"
+  },
+
+  "item6_fee_attributes": {
+    "total_ongoing_pct_standard": "13%+ of Net Sales (5% royalty + 6% marketing + 2% digital)",
+    "total_ongoing_pct_st": "8%+ (6% royalty incl marketing + 2% digital)",
+    "total_ongoing_pct_nt": "8.5%+ (5% royalty + 1.5% marketing + 2% digital)",
+    "nmf_initiative_expiry": "2029-12-30",
+    "acceleration_incentive": "0% royalty for early 2025 openings (max 12 months)",
+    "development_incentive": "0% marketing fund for 3 years for qualifying 2025 openings",
+    "liquidated_damages_formula": "avg_monthly_royalty × 12 × 24"
+  },
+
+  "item2_leadership_roster": [
+    {"name": "Todd Penegor", "role": "CEO and President", "tenure_start": "2024-08", "source_pages": [8]},
+    {"name": "Ravi Thanawala", "role": "CFO and EVP, International", "tenure_start": "2024-09", "source_pages": [8, 9]},
+    {"name": "Kurt Milburn", "role": "Chief Supply Chain Officer", "tenure_start": "2024-05", "source_pages": [9]},
+    {"name": "Caroline M. Oyler", "role": "Chief Legal and Risk Officer", "tenure_start": "2012", "source_pages": [9]},
+    {"name": "Kevin Vasconi", "role": "CDTO", "tenure_start": "2024-09", "source_pages": [9]},
+    {"name": "Jenna Bromberg", "role": "CMO", "tenure_start": "2024-11", "source_pages": [9]},
+    {"name": "Madeline Chadwick", "role": "Chief Corporate Affairs Officer", "tenure_start": "2023-02", "source_pages": [9]},
+    {"name": "Elias Reyna", "role": "CPDO", "tenure_start": "2022-11", "source_pages": [9]},
+    {"name": "Joe Sieve", "role": "Chief Restaurant & Global Dev Officer", "tenure_start": "2024-09", "source_pages": [10]},
+    {"name": "Patrick Coelho", "role": "SVP NA Development", "tenure_start": "2023-07", "source_pages": [10]},
+    {"name": "Michelle Ryman", "role": "VP Real Estate", "tenure_start": "2024-04", "source_pages": [10]},
+    {"name": "Amy Elder", "role": "Sr Dir Franchise Compliance", "tenure_start": "2023-12", "source_pages": [10]},
+    {"name": "Mike Coomes", "role": "DVP Midwest", "tenure_start": "2008-09", "source_pages": [10]},
+    {"name": "Rebecca Durica", "role": "DVP East", "tenure_start": "2020-10", "source_pages": [10]},
+    {"name": "Daniel Collinsworth", "role": "DVP West", "tenure_start": "2020-04", "source_pages": [10]},
+    {"name": "Christopher Coleman", "role": "Director", "tenure_start": "2012-10", "source_pages": [11]},
+    {"name": "John Garratt", "role": "Director", "tenure_start": "2023-10", "source_pages": [11]},
+    {"name": "Stephen Gibbs", "role": "Director", "tenure_start": "2023-10", "source_pages": [11]},
+    {"name": "Laurette Koellner", "role": "Director", "tenure_start": "2014-06", "source_pages": [11]},
+    {"name": "Jocelyn Mangan", "role": "Director", "tenure_start": "2019-03", "source_pages": [11]},
+    {"name": "Sonya E. Medina", "role": "Director", "tenure_start": "2015-09", "source_pages": [11]},
+    {"name": "John Miller", "role": "Director", "tenure_start": "2023-07", "source_pages": [12]}
+  ],
+
+  "item5_initial_fees": {"development_fee_deposit": "$5,000-$25,000 per restaurant (standard)", "initial_franchise_fee": "$5,000-$25,000 (standard)", "source_pages": [13, 14, 15], "confidence": "high"},
+  "item6_royalty": {"standard_rate": "5% of Net Sales", "max_increase": "Up to 6%", "source_pages": [15, 16, 19], "confidence": "high"},
+  "item6_advertising": {"marketing_fund_rate": "6% (NMF Initiative)", "source_pages": [17, 20, 21, 42, 43, 44], "confidence": "high"},
+  "item6_technology_fees": {"digital_fee": "2%", "software_maintenance": "$375/month", "source_pages": [16, 17, 18], "confidence": "high"},
+  "item7_total_investment": {"standard_low": 261165, "standard_high": 853365, "source_pages": [23, 24, 25, 26], "confidence": "high"},
+  "item8_supplier_restrictions": {"mandatory_from_franchisor": ["dough", "sauce", "IS", "software"], "affiliate_revenue_2024": "$871M combined", "source_pages": [30, 31, 32], "confidence": "high"},
+  "item9_obligations": {"summary": "24-category cross-reference table", "source_pages": [33, 34, 35, 36], "confidence": "high"},
+  "item10_financing": {"equipment_lease_term": "48 months", "interest": "0%", "buyout": "$50", "source_pages": [36, 37, 38], "confidence": "high"},
+  "item11_training": {"po_training_weeks": "16+", "manager_training_weeks": "15+", "source_pages": [44, 45, 46, 47, 48, 49, 50, 51], "confidence": "high"},
+  "item12_territory": {"radius_miles": 1.5, "non_exclusive": true, "source_pages": [55, 56, 57], "confidence": "high"},
+  "item13_trademarks": {"owner": "PJI", "registered_count": 26, "source_pages": [57, 58, 59, 60], "confidence": "high"},
+  "item14_patents": {"material_patents": false, "source_pages": [60, 61, 62], "confidence": "high"},
+  "item15_participation": {"po_required": true, "po_equity": "5%", "source_pages": [62, 63], "confidence": "high"},
+  "item16_product_restrictions": {"approved_only": true, "source_pages": [63, 64], "confidence": "high"},
+  "item17_renewal": {"standard_term": "10 years", "renewal_term": "10 years", "materially_different_risk": true, "source_pages": [65, 68], "confidence": "high"},
+  "item17_termination": {"curable_cure_days": 30, "liquidated_damages": "avg royalty × 12 × 24", "source_pages": [65, 66, 67, 68], "confidence": "high"},
+  "item17_transfer": {"fee": "$4,000", "rofr": true, "source_pages": [66, 67], "confidence": "high"},
+  "item17_noncompete": {"during_term": "anywhere", "post_term": "2 years / 10 miles", "source_pages": [67, 70], "confidence": "high"},
+  "item17_dispute_resolution": {"arbitration_venue": "Louisville, KY", "governing_law": "Kentucky", "source_pages": [67, 68], "confidence": "high"},
+  "item17_death_disability": {"assignment_deadline_months": 9, "source_pages": [67], "confidence": "high"},
+  "item18_public_figures": [{"figure": "Shaquille O'Neal", "compensation": "$3.5M/year", "equity": "~30% of 9-restaurant JV", "source_pages": [71, 72]}],
+  "item19_fpr": {"type": "actual_historical", "franchised_avg": 1122575, "franchised_median": 1068262, "company_avg": 1317561, "source_pages": [73, 74, 75, 76, 77], "confidence": "high"},
+  "item20_system_size": {"total_2024": 3291, "franchised_2024": 2752, "company_2024": 539, "source_pages": [81], "confidence": "high"},
+  "item20_gag_clause": {"flag": true, "source_pages": [93]},
+  "item21_financial_statements": {"auditor": "Ernst & Young", "opinion": "unqualified", "going_concern": false, "net_income_2024": 107976, "total_assets_2024": 37393, "source_pages": [474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488], "confidence": "high"},
+  "item21_note_families": [
+    {"note_family": "organization", "walked": true, "source_pages": [484]},
+    {"note_family": "significant_accounting_policies", "walked": true, "source_pages": [484, 485, 486]},
+    {"note_family": "related_parties", "walked": true, "source_pages": [487]},
+    {"note_family": "members_equity", "walked": true, "source_pages": [487, 488]},
+    {"note_family": "subsequent_events", "walked": true, "source_pages": [488]}
+  ],
+  "item22_contracts_listed": ["B", "C", "D-1", "D-2", "E", "F", "G", "H", "K-1", "K-2", "L"],
+  "special_risks": [{"risk": "Out-of-State Dispute Resolution", "description": "Arbitration/litigation in Kentucky", "source_pages": [4]}],
+  "unresolveds": [
+    {"id": "UR-01", "description": "Company-owned performance premium source unclear", "severity": "medium", "source": "Item 19 pp.74-76"},
+    {"id": "UR-02", "description": "2024 sales decline not explained", "severity": "medium", "source": "Item 19 p.77"},
+    {"id": "UR-03", "description": "26 ceased operations-other in 2024 unexplained", "severity": "medium", "source": "Item 20 p.88"},
+    {"id": "UR-04", "description": "Illinois fee deferral due to financial condition", "severity": "high", "source": "Exhibit P p.490"},
+    {"id": "UR-05", "description": "G&A expense +136% from cost reallocation", "severity": "medium", "source": "Item 21 p.481"},
+    {"id": "UR-06", "description": "PJ Food Service NT pricing not transparent", "severity": "low", "source": "Items 6, 8"}
+  ],
+  "contradictions": [
+    {"id": "CT-01", "description": "Zero terminations + 26 ceased-ops-other classification ambiguity", "items_involved": ["Item 20 Table 3"], "resolution_status": "unresolved"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_pass": "A2_item20_completion",
+  "brand": "Papa Johns",
+  "note": "All 5 Item 20 tables were fully extracted in A1 with state-level detail for Tables 2-4. This file confirms completeness.",
+  "tables_extracted": [
+    {"table": "Table 1 — Systemwide Summary", "status": "complete", "years": [2022, 2023, 2024], "source_pages": [81]},
+    {"table": "Table 2 — Transfers", "status": "complete", "years": [2022, 2023, 2024], "state_detail": true, "source_pages": [82, 83, 84, 85]},
+    {"table": "Table 3 — Status of Franchised Outlets", "status": "complete", "years": [2022, 2023, 2024], "state_detail": true, "source_pages": [85, 86, 87, 88]},
+    {"table": "Table 4 — Status of Company-Owned", "status": "complete", "years": [2022, 2023, 2024], "state_detail": true, "source_pages": [89, 90, 91]},
+    {"table": "Table 5 — Projected Openings", "status": "complete", "state_detail": true, "source_pages": [92, 93]}
+  ],
+  "footer_totals": {
+    "table3_franchised": {
+      "2024": {"opened": 90, "terminations": 0, "non_renewals": 0, "reacquired": 1, "ceased_other": 26, "start": 2689, "end": 2752},
+      "2023": {"opened": 73, "terminations": 32, "non_renewals": 0, "reacquired": 9, "ceased_other": 1, "start": 2658, "end": 2689},
+      "2022": {"opened": 145, "terminations": 49, "non_renewals": 0, "reacquired": 0, "ceased_other": 2, "start": 2564, "end": 2658}
+    },
+    "table4_company": {
+      "2024": {"opened": 22, "reacquired": 1, "closed": 0, "sold": 15, "start": 531, "end": 539},
+      "2023": {"opened": 5, "reacquired": 10, "closed": 2, "sold": 4, "start": 522, "end": 531},
+      "2022": {"opened": 10, "reacquired": 2, "closed": 0, "sold": 90, "start": 600, "end": 522}
+    },
+    "table5_projected": {
+      "franchised": {"small_town": 14, "traditional": 59, "non_traditional": 8, "total": 81},
+      "company": {"small_town": 0, "traditional": 8, "non_traditional": 0, "total": 8},
+      "total": 89
+    },
+    "transfers_total": {"2024": 106, "2023": 74, "2022": 252}
+  },
+  "gag_clause_flag": true,
+  "gag_clause_source_pages": [93],
+  "gag_clause_quote": "current and former franchisees sign provisions restricting their ability to speak openly about their experience with Papa Johns"
+}

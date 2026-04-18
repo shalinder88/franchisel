@@ -1,0 +1,187 @@
+{
+  "depth_pass": "A2_depth_pass_4",
+  "brand": "Jimmy John's",
+  "states_with_addenda": ["California", "Hawaii", "Maryland", "Michigan", "Minnesota", "North Dakota", "Washington"],
+  "overrides": [
+    {
+      "state": "California",
+      "affected_family": "operating_compliance",
+      "override_summary": "Must comply with Fast Food Act (Cal. Lab. Code §§1474-1475) setting health, safety, and employment standards including minimum wages",
+      "why_it_matters": "May increase labor costs significantly; no franchisor training or fee assistance provided for compliance",
+      "source_pages": [344]
+    },
+    {
+      "state": "California",
+      "affected_family": "anti_waiver",
+      "override_summary": "No waiver of claims under state franchise law or disclaimer of reliance on franchisor statements",
+      "why_it_matters": "Preserves franchisee's fraud-in-the-inducement claims regardless of acknowledgment forms",
+      "source_pages": [344, 345]
+    },
+    {
+      "state": "Hawaii",
+      "affected_family": "anti_waiver",
+      "override_summary": "Same anti-waiver protection as California",
+      "why_it_matters": "Preserves franchisee claims under Hawaii Franchise Investment Law",
+      "source_pages": [345, 346]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "general_release",
+      "override_summary": "Release required at renewal/transfer does not apply to claims under MD Franchise Registration and Disclosure Law",
+      "why_it_matters": "Franchisee retains right to pursue MD law claims even after signing renewal/transfer release",
+      "source_pages": [346, 351]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "termination",
+      "override_summary": "Termination upon insolvency might not be enforceable under federal bankruptcy law",
+      "why_it_matters": "Provides additional protection during financial distress",
+      "source_pages": [346]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "forum_selection",
+      "override_summary": "Franchisee may bring action in Maryland for MD Franchise Law claims",
+      "why_it_matters": "Overrides Georgia forum requirement for state franchise law claims",
+      "source_pages": [346, 351]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "governing_law",
+      "override_summary": "MD law applies to MD Franchise Law claims",
+      "why_it_matters": "Overrides Georgia governing law for state franchise law claims",
+      "source_pages": [346, 351]
+    },
+    {
+      "state": "Maryland",
+      "affected_family": "limitation_of_claims",
+      "override_summary": "3-year statute of limitations for MD Franchise Law claims from grant of franchise",
+      "why_it_matters": "Specific deadline for bringing claims",
+      "source_pages": [347, 351]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "termination",
+      "override_summary": "May not terminate prior to expiration except for good cause (30 days to cure)",
+      "why_it_matters": "Limits franchisor's termination rights",
+      "source_pages": [5]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "noncompete",
+      "override_summary": "No restriction on franchisee joining association of franchisees",
+      "why_it_matters": "Protects collective action rights",
+      "source_pages": [5]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "renewal",
+      "override_summary": "Must fairly compensate franchisee on non-renewal (repurchase at FMV) if term <5 years and franchisee prohibited from competing",
+      "why_it_matters": "May provide exit compensation (but JJ term is 10 years, likely not triggered)",
+      "source_pages": [5]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "forum_selection",
+      "override_summary": "May not require arbitration or litigation outside Michigan",
+      "why_it_matters": "Overrides Georgia forum for MI franchisees",
+      "source_pages": [5]
+    },
+    {
+      "state": "Michigan",
+      "affected_family": "transfer",
+      "override_summary": "May not refuse transfer without good cause",
+      "why_it_matters": "Limits franchisor's discretion to block transfers",
+      "source_pages": [6]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "termination",
+      "override_summary": "90 days notice of termination with 60 days to cure; 180 days notice of non-renewal",
+      "why_it_matters": "Significantly extends standard cure periods (vs. 10-30 days in FA) and requires long-lead nonrenewal notice",
+      "source_pages": [347, 354]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "transfer",
+      "override_summary": "Consent to transfer will not be unreasonably withheld",
+      "why_it_matters": "Statutory protection for transferring franchisees",
+      "source_pages": [347, 354]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "forum_selection",
+      "override_summary": "May not require litigation outside Minnesota",
+      "why_it_matters": "Overrides Georgia forum completely for MN franchisees",
+      "source_pages": [347, 354, 355]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "damages",
+      "override_summary": "May not require consent to liquidated damages, termination penalties, or judgment notes; jury trial waiver deleted",
+      "why_it_matters": "Eliminates liquidated damages provision (up to 36 months × avg royalty) for MN franchisees",
+      "source_pages": [347, 354, 355]
+    },
+    {
+      "state": "Minnesota",
+      "affected_family": "general_release",
+      "override_summary": "Release at renewal/transfer does not apply to MN Franchise Law claims",
+      "why_it_matters": "Preserves MN law rights",
+      "source_pages": [347, 354]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "noncompete",
+      "override_summary": "Post-term noncompete generally unenforceable in ND",
+      "why_it_matters": "Franchisee can compete freely after franchise ends despite 2-year/3-mile restriction in FA",
+      "source_pages": [348, 357]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "damages",
+      "override_summary": "Liquidated damages provision may not be enforceable",
+      "why_it_matters": "May eliminate 36-month liquidated damages on termination",
+      "source_pages": [348, 357]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "governing_law",
+      "override_summary": "North Dakota law governs (replaces Georgia law entirely)",
+      "why_it_matters": "ND-friendly law applies to all disputes",
+      "source_pages": [348, 358]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "forum_selection",
+      "override_summary": "May bring action in North Dakota to extent required by ND Franchise Investment Law",
+      "why_it_matters": "Overrides Georgia forum",
+      "source_pages": [348, 358]
+    },
+    {
+      "state": "North Dakota",
+      "affected_family": "general_release",
+      "override_summary": "Release at renewal/transfer does not apply to ND Franchise Investment Law claims",
+      "why_it_matters": "Preserves ND law rights",
+      "source_pages": [348, 357]
+    },
+    {
+      "state": "Washington",
+      "affected_family": "employment",
+      "override_summary": "Assurance of Discontinuance: removed no-poach provision from FA; will not enforce in existing agreements; no fines assessed",
+      "why_it_matters": "Employees can move freely between JJ franchisee locations in WA",
+      "source_pages": [349]
+    }
+  ],
+  "summary_table": {
+    "override_families": ["forum_selection", "governing_law", "noncompete", "general_release", "termination", "damages", "transfer", "anti_waiver", "employment", "operating_compliance"],
+    "states": {
+      "California": ["anti_waiver", "operating_compliance"],
+      "Hawaii": ["anti_waiver"],
+      "Maryland": ["general_release", "forum_selection", "governing_law", "limitation_of_claims", "termination"],
+      "Michigan": ["termination", "forum_selection", "transfer", "noncompete"],
+      "Minnesota": ["termination", "forum_selection", "damages", "general_release", "transfer"],
+      "North_Dakota": ["noncompete", "damages", "governing_law", "forum_selection", "general_release"],
+      "Washington": ["employment"]
+    }
+  }
+}

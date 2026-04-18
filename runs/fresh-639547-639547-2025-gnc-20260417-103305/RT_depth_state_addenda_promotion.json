@@ -1,0 +1,51 @@
+{
+  "depth_pass": "A2_state_addenda",
+  "states_with_addenda": 12,
+  "overrides": [
+    {"state": "California", "affected_family": "governing_law", "override_summary": "PA law may not be enforceable under CA law", "why_it_matters": "CA franchisee may have broader protections under CA Franchise Investment Law and CA Franchise Relations Act", "source_pages": [136, 137]},
+    {"state": "California", "affected_family": "forum_selection", "override_summary": "PA forum and arbitration may not be enforceable under CA law", "why_it_matters": "CA franchisee may be able to litigate/arbitrate in CA", "source_pages": [137]},
+    {"state": "California", "affected_family": "noncompete", "override_summary": "Post-term noncompete may not be enforceable under CA law", "why_it_matters": "CA law disfavors noncompete agreements; post-term restriction may be void", "source_pages": [136]},
+    {"state": "California", "affected_family": "general_release", "override_summary": "Release excludes claims under CA Franchise Investment Law (§31512) and CA Franchise Relations Act (§20010)", "why_it_matters": "Franchisee retains statutory rights despite signing release at renewal/transfer", "source_pages": [136]},
+    {"state": "California", "affected_family": "interest_rate", "override_summary": "Maximum interest rate in CA is 10% annually", "why_it_matters": "FA late payment rate of 1.5%/month (18% annual) exceeds CA cap; only 10% enforceable", "source_pages": [137]},
+    {"state": "California", "affected_family": "liquidated_damages", "override_summary": "Liquidated damages clause may be unenforceable under CA Civil Code §1671", "why_it_matters": "Franchisor's formula-based liquidated damages at termination may not be collectible in CA", "source_pages": [136]},
+    {"state": "California", "affected_family": "no_poach", "override_summary": "GNC will not enforce non-solicitation of employees (§22.B FA, §13.2 ADA) in CA", "why_it_matters": "Employees free to move between GNC franchisees and franchisor in CA", "source_pages": [137]},
+    {"state": "Hawaii", "affected_family": "general_release", "override_summary": "Release excludes claims under Hawaii Franchise Investment Law", "why_it_matters": "Statutory franchise law protections preserved", "source_pages": [139]},
+    {"state": "Hawaii", "affected_family": "termination", "override_summary": "Termination/non-renewal/transfer provisions only applicable to extent not inconsistent with HI Franchise Investment Law", "why_it_matters": "State law may override FA termination triggers", "source_pages": [139]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "IL law governs IL franchise relationship; venue may not be limited to PA", "why_it_matters": "IL franchisee likely litigates in IL", "source_pages": [140]},
+    {"state": "Illinois", "affected_family": "general_release", "override_summary": "Release may not waive rights under IL Franchise Disclosure Act", "why_it_matters": "Statutory protections preserved at renewal/transfer", "source_pages": [140]},
+    {"state": "Indiana", "affected_family": "termination", "override_summary": "Provisions subject to Indiana Franchise Act", "why_it_matters": "IN requires good cause for termination and additional protections", "source_pages": [141]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General release as condition of renewal/transfer may not require release of claims under MD Franchise Registration and Disclosure Law", "why_it_matters": "MD franchisee retains statutory claims", "source_pages": [142, 143, 144, 145]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Must have good cause for termination; 90 days notice in some cases", "why_it_matters": "MD franchisee has enhanced termination protections", "source_pages": [142]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days notice of termination (60 days to cure); 180 days notice of non-renewal", "why_it_matters": "Significantly extends cure/notice periods vs. FA standard 30 days", "source_pages": [146]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Cannot require litigation/arbitration outside MN; cannot require jury waiver; cannot require liquidated damages/termination penalties/judgment notes", "why_it_matters": "Nullifies PA forum, jury waiver, liquidated damages, and confession of judgment in MN", "source_pages": [146]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Release excludes claims under MN Statutes 80C.01-80C.22", "why_it_matters": "Full statutory protection preserved", "source_pages": [146]},
+    {"state": "Minnesota", "affected_family": "transfer", "override_summary": "Consent to transfer will not be unreasonably withheld", "why_it_matters": "Limits franchisor discretion on transfers", "source_pages": [146]},
+    {"state": "New York", "affected_family": "general_release", "override_summary": "Release excludes claims under NY GBL Article 33, §§680-695", "why_it_matters": "NY franchise law protections preserved", "source_pages": [148]},
+    {"state": "New York", "affected_family": "governing_law", "override_summary": "Choice of law/forum not waiver of rights under NY GBL Article 33", "why_it_matters": "NY franchisee retains NY statutory rights regardless of PA choice of law", "source_pages": [148]},
+    {"state": "New York", "affected_family": "termination", "override_summary": "Franchisee may terminate on any grounds available by law", "why_it_matters": "Expands franchisee termination rights beyond FA", "source_pages": [148]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "PA forum may be subject to ND law; cannot waive rights under ND franchise law", "why_it_matters": "ND franchisee may litigate locally", "source_pages": [152, 153]},
+    {"state": "Rhode Island", "affected_family": "general_release", "override_summary": "Release subject to RI Franchise Investment Act §19-28.1-14", "why_it_matters": "Statutory protections preserved", "source_pages": [154]},
+    {"state": "South Dakota", "affected_family": "general_release", "override_summary": "Release subject to SD franchise law", "why_it_matters": "Statutory protections preserved", "source_pages": [154]},
+    {"state": "Virginia", "affected_family": "general_release", "override_summary": "Release subject to VA Retail Franchising Act §13.1-564", "why_it_matters": "Statutory protections preserved", "source_pages": [155]},
+    {"state": "Washington", "affected_family": "forum_selection", "override_summary": "Arbitration must be in WA or mutually agreed location; litigation may be brought in WA", "why_it_matters": "Nullifies PA forum requirement for WA franchisees", "source_pages": [155]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "Release excludes rights under WA Franchise Investment Protection Act; only valid in negotiated settlement with independent counsel", "why_it_matters": "Strongest release protection — requires independent counsel", "source_pages": [155]},
+    {"state": "Washington", "affected_family": "noncompete", "override_summary": "Noncompete void unless employee earns >$100K/year annualized (adjusted for inflation); independent contractor >$250K", "why_it_matters": "Most GNC store employees likely below threshold — noncompete void for them", "source_pages": [155]},
+    {"state": "Washington", "affected_family": "no_poach", "override_summary": "Franchisor prohibited from restricting franchisee from soliciting/hiring employees of other franchisees or franchisor (RCW 49.62.060)", "why_it_matters": "Employee mobility fully protected in WA", "source_pages": [155]},
+    {"state": "Washington", "affected_family": "fees", "override_summary": "Transfer fees collectible only to extent reflecting reasonable actual/estimated costs; initial fees deferred until pre-opening obligations met and store is open", "why_it_matters": "Limits transfer fee to cost basis; protects franchisee from paying fees before receiving value", "source_pages": [155]}
+  ],
+  "summary_table": {
+    "override_families": ["forum_selection", "governing_law", "noncompete", "general_release", "termination", "transfer", "interest_rate", "liquidated_damages", "no_poach", "fees"],
+    "states_by_family": {
+      "forum_selection": ["California", "Illinois", "Minnesota", "North Dakota", "Washington"],
+      "governing_law": ["California", "New York"],
+      "noncompete": ["California", "Washington"],
+      "general_release": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "New York", "Rhode Island", "South Dakota", "Virginia", "Washington"],
+      "termination": ["Hawaii", "Indiana", "Maryland", "Minnesota", "New York"],
+      "transfer": ["Minnesota"],
+      "interest_rate": ["California"],
+      "liquidated_damages": ["California", "Minnesota"],
+      "no_poach": ["California", "Washington"],
+      "fees": ["Washington"]
+    }
+  }
+}

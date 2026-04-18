@@ -1,0 +1,251 @@
+{
+  "_enrichment_version": "v2",
+  "_self_contained": true,
+  "_note": "Complete self-contained document with all canonical fields plus v2 enrichment layers. Does not reference any other file.",
+
+  "document_identity": {"brand": "Sonic Drive-Ins", "franchisor_legal_name": "Sonic Franchising LLC", "issuance_date": "2025-03-27", "filing_id": "637949", "pdf_pages": 368, "state_filed": "Wisconsin DFI"},
+
+  "item1": {
+    "franchisor_entity": "Sonic Franchising LLC",
+    "state_of_organization": "Delaware LLC",
+    "formed": "2011-03-23",
+    "franchising_since": 1974,
+    "management_company": "Sonic Industries Services LLC (SIS)",
+    "ultimate_parent": "Inspire Brands, Inc.",
+    "pe_sponsor": "Roark Capital Management, LLC",
+    "brand_founded": "early 1950s",
+    "system_size": {"franchised": 3144, "company_owned": 317, "total": 3461},
+    "formats": ["Traditional Drive-In", "Drive-Thru Only", "Non-Drive-In (C-Store)", "Non-Traditional"],
+    "multi_brand_partners": ["Arby's", "Buffalo Wild Wings", "Dunkin'", "Baskin-Robbins", "Jimmy John's"],
+    "inspire_brands_portfolio": ["Arby's (3,365)", "BWW (1,183)", "BWW-GO (140)", "Dunkin' (9,768)", "Baskin-Robbins (2,245)", "Jimmy John's (2,689)", "Subway (19,502)"],
+    "roark_affiliated_brands": ["GoTo Foods", "Primrose Schools", "Massage Envy", "CKE (Carl's Jr./Hardee's)", "Driven Holdings", "ServiceMaster", "Nothing Bundt Cakes", "Mathnasium", "i9 Sports", "School of Rock"]
+  },
+
+  "item2_leadership": {
+    "count": 26,
+    "key_officers": [
+      {"name": "Paul J. Brown", "role": "Board/CEO Inspire", "since": "12/2018"},
+      {"name": "James Taylor", "role": "President/Board", "since": "6/2023"},
+      {"name": "Katherine Jaspon", "role": "CFO/Secretary/Board", "since": "7/2021"},
+      {"name": "Nils H. Okeson", "role": "CAO/GC/Secretary/Board", "since": "12/2018"},
+      {"name": "Ryan Dickerson", "role": "Sonic CMO", "since": "1/2024"},
+      {"name": "Jason Maceda", "role": "CDO", "since": "1/2024"},
+      {"name": "Kevin Knutson", "role": "Head of Restaurant Experience", "since": "1/2025"},
+      {"name": "Nicki Robinson", "role": "VP Franchise Operations", "since": "11/2021"}
+    ]
+  },
+
+  "item3_litigation": {
+    "material_count": 3,
+    "data_breach_settlements": 2,
+    "fee_collection_suits": 1,
+    "affiliated_no_poach_settlements": 2,
+    "total_settlement_exposure": "$10,705,000"
+  },
+
+  "item5_initial_fees": {"standard": 15000, "non_traditional": 11250, "reopened_existing": 5000, "reopened_new": 12500, "development_per_unit": 10000, "all_nonrefundable": true},
+
+  "item6_fee_detail": {
+    "royalty": {"rate": "5%", "base": "Gross Sales", "incentive_available": true},
+    "sbf": {"rate": "0.90%", "base": "Gross Sales"},
+    "smf": {"rate": "1.625%–5%", "base": "Gross Sales", "market_dependent": true},
+    "btf": {"rate": "0.25%", "base": "Gross Sales", "vote_required_post_2026": true},
+    "total_ongoing_range": "6.4%–11.15%",
+    "transfer_fee": {"non_control": 1000, "other": 3000},
+    "renewal_fee": 15000,
+    "late_charge": "1.75%/month",
+    "incentive_programs": {
+      "nro": {"royalty_ramp": [1, 1.5, 2, 2.5, 5], "smf_discount": "50% for 5 years", "extended_relief_threshold": 1400000},
+      "relocation": {"royalty_ramp": [1, 2, 3, 5]},
+      "early_opening": {"rate": "0%", "max_months": 12},
+      "vetfran": {"credit_per_unit": 10000, "max_credit": 100000},
+      "pioneer": {"credit_per_unit": 50000, "states": ["DC", "ME", "NH", "VT"]},
+      "dto_endcap_inline": {"payment_per_unit": 50000}
+    }
+  },
+
+  "item7_total_investment": {
+    "traditional": {"low": 1676000, "high": 3140900, "building": [800000, 1100000], "site_work": [450000, 1000000], "equipment": [175000, 260000], "technology": [105000, 160000]},
+    "cstore": {"low": 669200, "high": 1360900},
+    "drivethru": {"low": 1609200, "high": 2965900}
+  },
+
+  "item8_supplier_restrictions": {
+    "establishment_pct_designated": "16%–25%",
+    "operating_pct_designated": "34%–50%",
+    "supplier_contributions_fy2024": 76750000,
+    "no_formal_approval_process": true,
+    "no_franchisor_direct_revenue_from_franchisees": true
+  },
+
+  "item9_obligations": {"complete": true, "key_count": 26},
+
+  "item10_financing": {"offered": false},
+
+  "item11_training": {
+    "total_otj_hours": 336,
+    "classroom_hours": 24,
+    "gm_leadership_fee": 200,
+    "certification_weeks": 5,
+    "servsafe_required": true,
+    "ops_manual_pages": 575,
+    "technology_system_cost_range": [72000, 182000],
+    "annual_pos_maintenance": [4000, 8000]
+  },
+
+  "item12_territory": {
+    "exclusive": false,
+    "radius_miles_range": [0.75, 3.0],
+    "carveouts": 4,
+    "reserved_rights": 5,
+    "internet_rights_retained_by_franchisor": true
+  },
+
+  "item13_trademarks": {"owner": "ADIBP", "license_years": 99, "challenges": false},
+
+  "item14_patents": {"utility_patents": 1, "patent_status": "expired", "copyrights": 6},
+
+  "item15_participation": {"principal_required": true, "trained_manager_required": true, "guaranty_threshold": "10%"},
+
+  "item16_product_restrictions": {"all_menu_required": true, "pricing_control": true, "unlimited_change_right": true},
+
+  "item17_termination": {
+    "franchisee_right": false,
+    "franchisor_without_cause": false,
+    "non_curable_defaults": 11,
+    "cross_default": true
+  },
+
+  "item17_transfer": {
+    "approval_required": true,
+    "rofr": true,
+    "option_to_purchase": true,
+    "general_release_required": true
+  },
+
+  "item17_renewal": {
+    "term": 10,
+    "renewals": "2×10",
+    "materially_different": true,
+    "fee": 15000,
+    "remodel_required": true,
+    "release_required": true
+  },
+
+  "item17_noncompete": {"during_term": "all competing business", "post_term_months": 18, "post_term_miles": 3},
+
+  "item17_dispute_resolution": {"method": "litigation only", "venue": "Atlanta, GA", "governing_law": "Georgia"},
+
+  "item17_death_disability": {"assignment_window": "120 days or probate completion"},
+
+  "item18_public_figures": false,
+
+  "item19_chart_detail": {
+    "population": 3086,
+    "auv": 1587024,
+    "median": 1500713,
+    "q1_auv": 935705,
+    "q4_auv": 2398950,
+    "highest": 4838846,
+    "lowest": 282129,
+    "cost_data": false,
+    "ebitda": false
+  },
+
+  "item20_yearly_activity": {
+    "net_change": {"2022": -6, "2023": -25, "2024": -60},
+    "transfers": {"2022": 132, "2023": 75, "2024": 334},
+    "projected_openings": 23,
+    "gag_clause": true,
+    "terminated_das": 14
+  },
+
+  "item21_structural_facts": {
+    "auditor": "KPMG LLP",
+    "opinion": "unqualified",
+    "entities": 2,
+    "sfllc_net_income": {"2024": 5971, "2023": 8056, "2022": 7285},
+    "sis_net_income": {"2024": 183322, "2023": 439817, "2022": 86962},
+    "securitization_debt": 1417313,
+    "goodwill": 822553,
+    "trademark_value": 1100000
+  },
+
+  "item21_financial_structure_detail": {
+    "sfllc": {
+      "assets": 36246,
+      "equity": 26384,
+      "revenue": 58991,
+      "royalties_to_affiliates": 49380,
+      "operating_income": 5944,
+      "restricted_cash": 593,
+      "intangibles": 30940,
+      "deferred_revenue_total": 7028,
+      "securitization_guarantee": 1417300,
+      "pass_through": true,
+      "equity_trend": "declining — from 42,214 (1/2/2022) to 26,384 (12/29/2024)"
+    },
+    "sis": {
+      "assets": 2334969,
+      "equity": 856653,
+      "revenue": 295856,
+      "operating_income": 233292,
+      "interest_expense": 51424,
+      "total_debt": 1417313,
+      "property_net": 149098,
+      "land": 124760,
+      "gift_card_liability": 36620,
+      "debt_maturity_2027": 617083,
+      "debt_covenants_compliant": true,
+      "distributions_to_parent": 137758
+    }
+  },
+
+  "item21_note_families": [
+    {"family": "Description of Business", "walked": true, "source_pages": [317, 329]},
+    {"family": "Significant Accounting Policies", "walked": true, "source_pages": [317, 318, 329, 330, 331, 332, 333]},
+    {"family": "Supplemental Balance Sheet Info (SIS)", "walked": true, "source_pages": [333, 334]},
+    {"family": "Intangible Assets (SIS)", "walked": true, "source_pages": [334, 335]},
+    {"family": "Long-Term Debt (SIS)", "walked": true, "source_pages": [335, 336]},
+    {"family": "Leases (SIS)", "walked": true, "source_pages": [336, 337]},
+    {"family": "Revenue Recognition", "walked": true, "source_pages": [319, 337]},
+    {"family": "Income Taxes (SIS)", "walked": true, "source_pages": [338]},
+    {"family": "Commitments and Contingencies", "walked": true, "source_pages": [319]},
+    {"family": "Related-Party Transactions", "walked": true, "source_pages": [320]},
+    {"family": "Subsequent Events", "walked": true, "source_pages": [320, 340]}
+  ],
+
+  "contract_burden_depth": {
+    "innovations_assigned": true,
+    "confidential_info_broad": true,
+    "advertising_30day_deemed_disapproval": true,
+    "deidentification_30days": true,
+    "franchisor_entry_to_premises": true,
+    "option_to_purchase_assets": true,
+    "injunction_consent_noncompete": true,
+    "independent_contractor_explicit": true,
+    "broad_indemnification": true,
+    "prevailing_party_fees": true
+  },
+
+  "state_addenda_detail": {
+    "california": {"fast_food_act": true, "anti_waiver": true},
+    "hawaii": {"registration_notice": true},
+    "maryland": {"release_excludes_md_claims": true, "venue_override": true, "sol_3_years": true},
+    "minnesota": {"trademark_indemnification": true, "termination_90_day_notice": true, "non_renewal_180_day": true, "no_out_of_state_litigation": true, "no_jury_waiver": true},
+    "north_dakota": {"noncompete_unenforceable": true, "venue_override": true, "nd_law_applies": true},
+    "washington": {"no_poach_aod": true}
+  },
+
+  "special_risks": [{"risk": "Out-of-state dispute resolution (Atlanta, GA)", "source_pages": [5]}],
+  "unresolveds": [
+    {"id": "U1", "severity": "medium", "description": "BTF continuation requires 67% franchisee vote post-3/2026"},
+    {"id": "U2", "severity": "low", "description": "$16.7M BTF rebates redirected to SBF"},
+    {"id": "U3", "severity": "high", "description": "Franchisor guarantees $1.4B+ securitization notes"},
+    {"id": "U4", "severity": "medium", "description": "Georgia: 77→52 franchised in 2024"},
+    {"id": "U5", "severity": "medium", "description": "Transfer spike: 334 in 2024 vs 75 in 2023"}
+  ],
+  "contradictions": [{"id": "C1", "status": "resolved"}],
+
+  "pipeline_metadata": {"extraction_date": "2026-04-18", "pipeline_version": "automation_v1", "top_level_key_count": 44}
+}

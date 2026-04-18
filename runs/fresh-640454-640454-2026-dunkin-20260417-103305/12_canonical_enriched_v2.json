@@ -1,0 +1,248 @@
+{
+  "_enrichment_version": "v2",
+  "_self_contained": true,
+  "_note": "Complete self-contained document with ALL canonical fields plus v1 and v2 enrichment layers.",
+
+  "document_identity": {"filing_id": "640454", "entity": "Dunkin' Donuts Franchising LLC", "brand": "Dunkin'", "issuance_date": "March 26, 2026", "fiscal_year_end": "December 28, 2025", "pdf_pages": 685, "fdd_to_pdf_offset": 8},
+  "brand_identity": {"brand_name": "Dunkin'", "legal_entity": "Dunkin' Donuts Franchising LLC", "parent_company": "Inspire Brands, Inc.", "ultimate_parent": "Roark Capital Management, LLC", "formation_date": "March 15, 2006", "brand_origin_year": 1954, "franchising_since": 1955, "principal_address": "Three Glenlake Parkway, Atlanta, Georgia 30328"},
+  "system_size": {"total_us_outlets": 9999, "franchised_us": 9963, "company_owned_us": 36, "standalone_dunkin": 8744, "combo": 1219, "multi_brand": 36, "international": 4242, "as_of": "December 28, 2025"},
+
+  "item1": {
+    "entity_type": "Delaware LLC",
+    "securitization": true,
+    "securitization_entity": "DB Master Finance LLC",
+    "management_agreement_with": "Dunkin' Brands, Inc.",
+    "franchisor_never_operated": true,
+    "inspire_brands_subsidiaries": ["Arby's", "Buffalo Wild Wings", "Jimmy John's", "Sonic", "Baskin-Robbins"],
+    "roark_affiliates_count": "30+",
+    "offering_paths": ["Standard Dunkin'", "Combo (Dunkin'+BR)", "Gas/C-Store", "SDO/Non-Traditional", "Multi-Brand Location", "Development Agreement"],
+    "real_estate_affiliates": ["DB Real Estate Assets I LLC", "DB Real Estate Assets II LLC"],
+    "source_pages": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+  },
+
+  "item2_leadership": [
+    {"name": "Paul Brown", "role": "Board of Managers; Inspire Brands CEO", "tenure": "Since Feb 2018"},
+    {"name": "Katherine Jaspon", "role": "CFO, Board of Managers", "tenure": "CFO since Apr 2017"},
+    {"name": "Scott Murphy", "role": "Chief Brand Officer", "tenure": "Since Nov 2023"},
+    {"name": "Scott Catlett", "role": "Chief Legal Officer, Board of Managers", "tenure": "Since Sep 2025"},
+    {"name": "Ricardo Colon", "role": "SVP/COO – Dunkin'", "tenure": "Since Jan 2021"},
+    {"name": "Jason Maceda", "role": "Chief Portfolio Officer", "tenure": "Since Dec 2025"},
+    {"name": "Jill Nelson", "role": "CMO – Dunkin'", "tenure": "Since Sep 2022"},
+    {"name": "Yasir Anwar", "role": "CTO & AI Acceleration", "tenure": "Since May 2024"},
+    {"name": "Joel Blanchard", "role": "Chief Supply Officer", "tenure": "Since Mar 2025"},
+    {"name": "Daniel Lynn", "role": "Chief Commercial/Restaurant Officer", "tenure": "Since Aug 2022"},
+    {"name": "John Dawson", "role": "President, U.S. Development", "tenure": "Since Dec 2025"},
+    {"name": "Dennis McCarthy", "role": "SVP, Franchise Finance", "tenure": "Since Feb 2024"}
+  ],
+
+  "item3_litigation": {
+    "pending_count": 7, "commenced_count": 3, "concluded_count": 5, "affiliate_count": 2,
+    "key_themes": ["Termination disputes (remodel compliance, franchise agreement)", "International MUDFA disputes (Pakistan)", "No-poaching settlements", "Data breach settlement ($650K)"],
+    "source_pages": [26, 27, 28, 29, 30, 31, 32]
+  },
+
+  "item5_initial_fees": {
+    "iff_tiers": [
+      {"type": 1, "iff": 90000, "markets": "Boston, New York, Philadelphia, Hartford, etc."},
+      {"type": 2, "iff": 80000, "markets": "Baltimore, Chicago, Miami, Orlando, Tampa"},
+      {"type": 3, "iff": 70000, "markets": "Cleveland, Greenville NC, Jacksonville, Pittsburgh"},
+      {"type": 4, "iff": 60000, "markets": "Atlanta, Charlotte, Cincinnati, Columbus, DC, Nashville, etc."},
+      {"type": 5, "iff": 50000, "markets": "Denver, Portland, Seattle, Salt Lake City"},
+      {"type": 6, "iff": 40000, "markets": "All other"}
+    ],
+    "source_pages": [32, 33, 34, 35]
+  },
+
+  "item6_fee_detail": {
+    "cff": {"rate": 0.059, "frequency": "weekly"},
+    "caf": {"rate_standard": 0.05, "rate_sdo": 0.025, "frequency": "weekly"},
+    "loyalty": {"rate_2025_2026": 0.014, "rate_2027_plus": 0.012},
+    "transfer_fee_tiers": [
+      {"gross_sales_threshold": "<$400K", "dunkin_fee": 5000, "combo_fee": 12500},
+      {"gross_sales_threshold": "$400K-$600K", "dunkin_fee": 6000, "combo_fee": 13500},
+      {"gross_sales_threshold": "$600K-$1M", "dunkin_fee": 8000, "combo_fee": 15500},
+      {"gross_sales_threshold": "$1M-$1.4M", "dunkin_fee": 12000, "combo_fee": 19500},
+      {"gross_sales_threshold": "≥$1.4M", "dunkin_fee": 20000, "combo_fee": 27500}
+    ],
+    "base_transfer_fee_under_3yr": {"dunkin": 12500, "combo": 20000},
+    "total_ongoing_pct_standard": 12.3,
+    "total_ongoing_pct_sdo": 9.8
+  },
+
+  "item7_total_investment": {
+    "freestanding": {"low": 532400, "high": 1832500, "sqft_range": "750-3,100", "cost_per_sqft": "$83-$566"},
+    "shopping_center": {"low": 443000, "high": 1333500, "sqft_range": "600-2,800", "cost_per_sqft": "$59-$378"},
+    "gas_convenience": {"low": 216400, "high": 1065500, "sqft_range": "600-2,300", "cost_per_sqft": "$56-$340"},
+    "sdo": {"low": 142000, "high": 862500}
+  },
+
+  "item8_supplier_restrictions": {
+    "purchase_pct_controlled": ">95%",
+    "ndcp_membership_fee": 2500,
+    "ndcp_personal_guarantee": true,
+    "exclusive_arrangements": 3,
+    "alternative_supplier_response_days": 180,
+    "franchisor_revenue_from_franchisees_fy2025": 134600000
+  },
+
+  "item10_financing": {"available": false},
+
+  "item11_training": {
+    "duration_weeks": "4-8",
+    "fee_per_person": 4000,
+    "manual_pages": 1235,
+    "ongoing_platform": "The Center"
+  },
+
+  "item12_territory": {
+    "exclusive": false,
+    "da_limited_protection": true,
+    "encroachment_risk": "high"
+  },
+
+  "item17_termination": {
+    "cure_periods": {"health_safety": "24 hours", "cease_ops": "24 hours", "failure_to_pay": "7 days", "other": "30 days"},
+    "non_curable_count": 10,
+    "cross_default": true,
+    "three_strikes_rule": "3+ same/similar defaults in 12 months = non-curable"
+  },
+
+  "item17_transfer": {
+    "rofr_days": 60,
+    "death_disability_transfer_months": 12,
+    "death_disability_completion_months": 18,
+    "post_term_purchase_option_days": 30
+  },
+
+  "item17_renewal": {
+    "initial_term": 20,
+    "renewal_term": 20,
+    "materially_different_risk": true,
+    "general_release_required": true,
+    "sdo_no_renewal": true,
+    "max_defaults_10yr": 3
+  },
+
+  "item17_noncompete": {
+    "during_term_scope": ">20% revenue from coffee and/or baked goods",
+    "post_term_months": 24,
+    "post_term_miles": 5,
+    "any_dunkin_location": true
+  },
+
+  "item17_dispute_resolution": {
+    "arbitration": false,
+    "mediation": false,
+    "forum": "Atlanta, Georgia",
+    "governing_law": "Georgia"
+  },
+
+  "item19_chart_detail": {
+    "population": 7010,
+    "overall_avg": 1372069,
+    "overall_median": 1297694,
+    "top_quartile_avg": 2154341,
+    "bottom_quartile_avg": 718088,
+    "drive_thru_avg": 1547899,
+    "no_drive_thru_avg": 1124559,
+    "pct_above_1m_traditional": 0.78,
+    "no_cost_buildup": true
+  },
+
+  "item20_yearly_activity": {
+    "2025": {"start": 8499, "end": 8780, "net": 281, "opened": 314, "closed": 81, "transfers": 241},
+    "2024": {"start": 8297, "end": 8499, "net": 202, "opened": 312, "closed": 96, "transfers": 137},
+    "2023": {"start": 8118, "end": 8297, "net": 179, "opened": 344, "closed": 166, "transfers": 224},
+    "closure_rate_2025": 0.009,
+    "projected_new_franchised": 406,
+    "gag_clause_flag": true
+  },
+
+  "item21_financial_structure_detail": {
+    "auditor": "KPMG LLP",
+    "opinion": "unqualified",
+    "going_concern": false,
+    "balance_sheet_2025": {
+      "total_assets": 1571509000,
+      "intangible_assets": 1453401000,
+      "intangible_pct_of_assets": 0.925,
+      "total_current_assets": 117440000,
+      "accounts_receivable": 114438000,
+      "total_liabilities": 240752000,
+      "deferred_revenue": 195519000,
+      "members_equity": 1330757000
+    },
+    "income_statement_2025": {
+      "total_revenue": 1398356000,
+      "franchise_royalty_revenue": 793158000,
+      "advertising_revenue": 597779000,
+      "operating_income": 739039000,
+      "net_income": 732910000,
+      "operating_margin": 0.528,
+      "non_ad_operating_margin": 0.932
+    },
+    "cash_flow_2025": {
+      "operating": 813295000,
+      "distributions_to_parent": 813303000
+    },
+    "equity_trend": {
+      "2022_end": 1582128000,
+      "2023_end": 1495780000,
+      "2024_end": 1411150000,
+      "2025_end": 1330757000,
+      "decline_3yr": 251371000
+    }
+  },
+
+  "item21_statement_detail": {
+    "revenue_growth_yoy": {"2024_to_2025": 0.029, "2023_to_2024": 0.047},
+    "royalty_revenue_growth_yoy": 0.048,
+    "amortization_annual": 60885000,
+    "amortization_useful_life": "10-29 years",
+    "no_impairment": true,
+    "income_tax_rate_effective": 0.0086,
+    "distributions_exceed_income_all_years": true
+  },
+
+  "item21_note_families": [
+    {"note_family": "Description of Business", "walked": true, "source_pages": [129]},
+    {"note_family": "Summary of Significant Accounting Policies", "walked": true, "source_pages": [129, 130]},
+    {"note_family": "Revenue Recognition", "walked": true, "source_pages": [130]},
+    {"note_family": "Variable Interest Entity (SVC)", "walked": true, "source_pages": [129]},
+    {"note_family": "Intangible Assets", "walked": true, "source_pages": [130]},
+    {"note_family": "Commitments and Contingencies", "walked": false, "source_pages": [131]},
+    {"note_family": "Tail-end notes", "walked": false, "source_pages": [131, 132, 133]}
+  ],
+
+  "contract_burden_depth": {
+    "status": "partial — deferred to A2",
+    "headline_terms_from_item17": true,
+    "clause_walk_complete": false
+  },
+
+  "state_addenda_overrides": {
+    "exhibit_letter": "E",
+    "page_range": [323, 352],
+    "states_identified_in_state_notice": ["Michigan"],
+    "structured": false,
+    "status": "deferred to A2"
+  },
+
+  "special_risks": [{"risk": "out_of_state_dispute_resolution", "source_pages": [4]}],
+  "gag_clause_flag": true,
+  "gag_clause_source_pages": [114],
+  "gag_clause_quote": "In some instances, current and former franchisees sign provisions restricting their ability to speak openly about their experience with us.",
+
+  "unresolveds": [
+    {"id": "U1", "description": "DBI consolidated financials deferred", "severity": "medium", "source": "Exhibit B pp.141-164"},
+    {"id": "U2", "description": "No cost/expense data in Item 19", "severity": "medium", "source": "Item 19 Note 4 p.99"},
+    {"id": "U3", "description": "FA not clause-walked", "severity": "medium", "source": "Exhibit C-1 pp.165-196"},
+    {"id": "U4", "description": "State addenda not extracted", "severity": "high", "source": "Exhibit E pp.323-352"},
+    {"id": "U5", "description": "Distributions exceed net income structurally", "severity": "medium", "source": "Exhibit B p.127"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "Item 1 total (9,999) vs Item 20 (8,780 standalone) — resolved via Combo count (1,219)", "items_involved": ["Item 1", "Item 20"], "resolution_status": "resolved"}
+  ],
+
+  "item22_contracts_listed": ["C-1", "C-2", "C-3", "C-4", "C-5", "D-1", "D-2", "D-3", "E", "F", "I", "J", "K"]
+}

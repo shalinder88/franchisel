@@ -1,0 +1,32 @@
+{
+  "depth_pass": "contract_burden_depth",
+  "source": "Exhibit B (Franchise Agreement, pp. 106-175)",
+  "clauses": [
+    {"family": "grant_and_term", "obligation": "10-year term from restaurant opening date", "trigger": "signing of FA", "source_pages": [107]},
+    {"family": "royalty", "obligation": "6% of weekly Gross Sales, auto-debited via EDTA", "trigger": "weekly (Wednesday)", "duration": "term", "source_pages": [107, 108]},
+    {"family": "advertising_fund", "obligation": "Up to 4.5% of weekly Gross Sales", "trigger": "weekly", "duration": "term", "source_pages": [108]},
+    {"family": "site_selection", "obligation": "Secure acceptable site within 12 months of FA effective date", "trigger": "FA signing", "duration": "12 months", "consequences": "FA may be terminated", "source_pages": [108, 109]},
+    {"family": "construction", "obligation": "Open restaurant within 16 months of FA effective date; must receive written approval before opening", "trigger": "FA signing", "duration": "16 months", "consequences": "Non-curable default if not met", "source_pages": [108]},
+    {"family": "training_initial", "obligation": "Operations Partner and designated managers must complete 4-week program + apprenticeship + pass proficiency tests", "trigger": "before opening", "consequences": "FA may be terminated if OP cannot complete; franchisor keeps half of initial franchise fee", "source_pages": [110, 111]},
+    {"family": "training_ongoing", "obligation": "Attend up to 2 courses/year, max 10 business days; attend annual meeting up to 4 days", "trigger": "franchisor designation", "source_pages": [112]},
+    {"family": "shift_coverage", "obligation": "Min 10 certified manager full shifts/week (14 for first 12 months of first restaurant)", "trigger": "ongoing", "source_pages": [112, 113]},
+    {"family": "operations_partner", "obligation": "Must have OP with ≥5% ownership managing on-site; min 5 half-shifts/week", "exceptions": "Sophisticated Franchisees (≥5 LSR): general manager instead", "source_pages": [113]},
+    {"family": "insurance", "obligation": "Property (100% replacement), BI (covering franchisor royalty), CGL+umbrella, auto, workers comp, EPLI", "trigger": "before opening, annually", "additional": "Named additional insureds: franchisor, parents, affiliates (Inspire Brands)", "source_pages": [114, 115]},
+    {"family": "termination_curable", "obligation": "Cure periods: 24h (delivery), 3 days (health/safety), 10 days (monetary/insurance), 30 days (operational/other)", "source_pages": [155]},
+    {"family": "termination_non_curable", "obligation": "Immediate termination for: failure to secure site (12mo), failure to open (16mo), unapproved opening, training failure, abandonment, loss of premises, unapproved transfer, material misrep, felony, dishonesty, confidential info breach, tax failure, gross sales understatement, repeated defaults (even if cured), assignment for creditors, anti-terrorism violation, cross-default", "source_pages": [155, 156]},
+    {"family": "cross_default", "obligation": "Termination if any other FA with franchisor is terminated or if franchisor delivers notice of default under any other FA (whether or not cured)", "source_pages": [156]},
+    {"family": "transfer_right_of_first_refusal", "obligation": "Franchisor may match any bona fide offer within 60 days; may substitute cash for non-cash consideration; additional 30 days to prepare for closing", "source_pages": [150]},
+    {"family": "post_termination_purchase_option", "obligation": "Franchisor may purchase restaurant and premises at fair market value (excluding franchise value, goodwill, brand) and/or sublease premises", "trigger": "termination or expiration without renewal", "source_pages": [160]},
+    {"family": "noncompete_during", "obligation": "No ownership or services in competitive business (>50% non-beverage revenue from submarine/deli/wrapped sandwiches) anywhere", "duration": "term", "source_pages": [162]},
+    {"family": "noncompete_post", "obligation": "2 years; at premises, within 3 miles of premises, within 3 miles of any JJ at FA signing, within 1 mile of any JJ at termination/expiration", "source_pages": [162]},
+    {"family": "liquidated_damages", "obligation": "min(36, remaining months) × average monthly royalty for prior 12 months", "trigger": "franchisor terminates with cause or franchisee terminates without cause", "source_pages": [163]},
+    {"family": "governing_law", "obligation": "Georgia law, without regard to conflict-of-law principles", "source_pages": [165]},
+    {"family": "forum_selection", "obligation": "Courts closest to franchisor's then-current principal business address (currently Atlanta, GA)", "source_pages": [165]},
+    {"family": "force_majeure", "obligation": "Excuses performance for government orders, acts of God, fires, strikes, war, terrorism — but NOT payment obligations", "source_pages": [165]},
+    {"family": "no_withholding", "obligation": "Franchisee may not withhold payments due to alleged franchisor nonperformance; waives right to offset", "source_pages": [165]},
+    {"family": "costs_and_attorneys_fees", "obligation": "Franchisee must reimburse franchisor's internal and external costs for any non-compliance, whether or not formal proceeding is initiated", "source_pages": [165]},
+    {"family": "indemnification", "obligation": "Franchisee must reimburse franchisor and affiliates for claims from restaurant operation and costs to defend them", "source_pages": [163]},
+    {"family": "confidential_information", "obligation": "Absolute confidentiality during and after term; must lock written materials in safe; may not remove from restaurant; all innovations assigned to franchisor as work-for-hire", "source_pages": [118, 119]},
+    {"family": "guaranty", "obligation": "All owners must personally guarantee all FA obligations including monetary and non-monetary (including noncompete)", "source_pages": [168, 169]}
+  ]
+}

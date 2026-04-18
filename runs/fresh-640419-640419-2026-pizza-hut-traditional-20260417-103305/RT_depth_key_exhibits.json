@@ -1,0 +1,68 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_block": "A2 Targeted Depth Block 2 — Key exhibit clause walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "C-1 Location Franchise Agreement",
+      "pages": [83, 158],
+      "clause_walk_status": "partial — key operative articles walked via targeted reads",
+      "clauses_captured": 14,
+      "walked_articles": ["1 (Purpose/Scope)", "2-3 (Grant/Territory)", "4 (Term/Renewal)", "5 (Site/Construction)", "6-8 (Standards/Training/Opening)", "9 (Products)", "14 (Indemnification)", "18 (Transfer)", "21 (Non-compete)", "22 (Renewal conditions)", "23 (Termination)", "24-25 (Post-termination)", "27 (Force Majeure)", "36 (Dispute Resolution)"],
+      "deferred_articles": "Articles 10-13, 15-17, 19-20, 26, 28-35 not individually read in full but covered via Item 17 table cross-references and FDD body text",
+      "why_partially_deferred": "181-page agreement; key operative provisions captured through combination of targeted article reads and comprehensive Item 17 table. Deferred articles contain operational detail already surfaced in Items 8-16 of FDD body.",
+      "already_recovered_elsewhere": "All 23 Item 17 table provisions (a-w) captured; all Items 8-16 operative burdens captured from FDD body",
+      "remaining_missing": "Detailed numbering of sub-clauses within Articles 10-17; specific formulas in Article 19 (fees); detailed mechanics of Articles 28-35 (miscellaneous)"
+    },
+    {
+      "exhibit": "Appendix F — Personal Guaranty",
+      "pages": [175, 178],
+      "clause_walk_status": "partial",
+      "clauses_captured": 5,
+      "key_terms": ["Unconditional and continuing guaranty", "Guarantor liable for all FA obligations", "Survives amendment/compromise/release", "Release of one guarantor doesn't release others", "Consent to jurisdiction"],
+      "deferred": false
+    },
+    {
+      "exhibit": "Appendix I-1 — Confidentiality/Non-Competition Agreement",
+      "pages": [183, 187],
+      "clause_walk_status": "labeled_only",
+      "why_not_walked": "Non-compete operative terms fully captured from Item 17 and Article 21 of FA",
+      "already_recovered_elsewhere": "Full non-compete scope (during-term and post-term) with geographic/temporal details in canonical"
+    },
+    {
+      "exhibit": "Exhibit I — Financial Statements",
+      "pages": [374, 390],
+      "clause_walk_status": "complete",
+      "clauses_captured": 19,
+      "note": "All 4 statements + all 5 notes (19 sub-notes) fully walked"
+    },
+    {
+      "exhibit": "Exhibit C-2 — State Addenda",
+      "pages": [269, 277],
+      "clause_walk_status": "complete",
+      "clauses_captured": 26,
+      "note": "All 10 states with material overrides extracted in RT_depth_state_addenda_promotion.json"
+    },
+    {
+      "exhibit": "Exhibit K — Dragontail Adoption Agreement",
+      "pages": [397, 400],
+      "clause_walk_status": "partial",
+      "key_terms_captured": ["Installation fee $160/store (discrepancy with Item 6 $240)", "$0 monthly first 3 months", "KMX kitchen management services"],
+      "deferred_sections": "Full terms and conditions not clause-walked",
+      "why_deferred": "4-page adoption agreement; key economic terms captured; operational terms covered by FA and Brand Standards",
+      "remaining_missing": "Termination provisions, liability limitations, service levels within Dragontail agreement"
+    },
+    {
+      "exhibit": "Exhibit L — HutBot Digital Program Agreement",
+      "pages": [401, 418],
+      "clause_walk_status": "partial",
+      "key_terms_captured": ["AAA arbitration for disputes", "Pizza Hut owns all derived data", "SLA in Exhibit A to agreement", "No separate HutBot subscription fee currently"],
+      "deferred_sections": "Full 18-page agreement not clause-walked",
+      "why_deferred": "Technology agreement; key terms (data ownership, dispute resolution, SLA framework) captured; detailed operational provisions covered by Brand Standards",
+      "remaining_missing": "Detailed SLA metrics, indemnification specifics, termination triggers specific to HutBot"
+    }
+  ],
+  "deferred_exhibits_summary": {
+    "scorecard_gap": "Exhibit L (HutBot, 18pp) and portions of Exhibit C-1 (Articles 10-17, 19-20, 26, 28-35) not individually clause-walked",
+    "run_summary_deferred": ["HutBot Agreement (Exhibit L pp. 401-418)", "FA Articles 10-17, 19-20, 26, 28-35"]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "depth_pass": "A2_depth_pass_4_state_addenda",
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Minnesota", "North Dakota", "Rhode Island", "Washington"],
+  "overrides": [
+    {"state": "California", "affected_family": "labor_law", "override_summary": "Must comply with CA fast food labor laws including CFFC authority to increase minimum wage (AB 1228)", "why_it_matters": "Higher labor costs for CA franchisees; minimum wage may be set above state/federal minimums by CFFC", "source_pages": [357]},
+    {"state": "Illinois", "affected_family": "forum_selection", "override_summary": "Item 17(v) choice of forum deleted for FA and ADA", "why_it_matters": "IL franchisees may not be forced to litigate in NJ", "source_pages": [359]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Illinois law governs FA and ADA (except federal arbitration and federal law)", "why_it_matters": "IL franchise law protections apply instead of NJ law", "source_pages": [359]},
+    {"state": "Illinois", "affected_family": "anti_waiver", "override_summary": "Section 41 of IL Franchise Disclosure Act: any waiver of IL compliance is void", "why_it_matters": "Cannot waive IL franchise law protections", "source_pages": [359]},
+    {"state": "Illinois", "affected_family": "termination", "override_summary": "Termination and non-renewal rights governed by Sections 19 and 20 of IL FDA", "why_it_matters": "Additional protections on termination/non-renewal for IL franchisees", "source_pages": [359]},
+    {"state": "Maryland", "affected_family": "financial_assurance", "override_summary": "Maryland Securities Commissioner required surety bond from franchisor", "why_it_matters": "Additional financial protection for MD franchisees", "source_pages": [360, 387]},
+    {"state": "Minnesota", "affected_family": "trademark_indemnification", "override_summary": "Company will protect franchisee's trademark rights and indemnify from trademark claims per Minn. Stat. §80C.12 Subd. 1(g)", "why_it_matters": "Franchisee has trademark defense protection not available in base FA", "source_pages": [361]},
+    {"state": "Minnesota", "affected_family": "liquidated_damages", "override_summary": "Liquidated damages provision will not be enforced to extent prohibited by MN law", "why_it_matters": "Potential reduction in post-termination financial exposure for MN franchisees", "source_pages": [361]},
+    {"state": "Minnesota", "affected_family": "termination", "override_summary": "90 days notice of termination (60 days to cure); 180 days notice for non-renewal per Minn. Stat. §80C.14", "why_it_matters": "Significantly longer cure/notice periods than base FA (which provides 10-30 days)", "source_pages": [361]},
+    {"state": "Minnesota", "affected_family": "forum_selection", "override_summary": "Cannot require litigation outside MN; cannot require waiver of jury trial; cannot require liquidated damages/termination penalties/judgment notes", "why_it_matters": "MN franchisees can litigate in MN, retain jury trial right, and avoid liquidated damages", "source_pages": [361]},
+    {"state": "Minnesota", "affected_family": "general_release", "override_summary": "Release as condition of renewal/transfer does not apply to claims under Minn. Rule 2860.4400D", "why_it_matters": "MN franchisees retain franchise law claims at renewal/transfer", "source_pages": [361]},
+    {"state": "North Dakota", "affected_family": "forum_selection", "override_summary": "Forum selection provisions restricted under ND law", "why_it_matters": "ND franchisees may litigate in ND", "source_pages": [362]},
+    {"state": "North Dakota", "affected_family": "statute_of_limitations", "override_summary": "ND statutes of limitations apply to claims under ND Franchise Investment Law", "why_it_matters": "ND limitations apply, not NJ", "source_pages": [362, 377]},
+    {"state": "Rhode Island", "affected_family": "governing_law", "override_summary": "Venue and applicable law modified for RI franchisees", "why_it_matters": "RI franchise law protections apply", "source_pages": [363]},
+    {"state": "Washington", "affected_family": "governing_law", "override_summary": "WA Franchise Investment Protection Act prevails in any conflict of laws", "why_it_matters": "WA franchise law supersedes NJ law provisions", "source_pages": [364]},
+    {"state": "Washington", "affected_family": "forum_selection", "override_summary": "Arbitration/mediation must be in WA or mutually agreed location; litigation may be brought in WA", "why_it_matters": "WA franchisees avoid mandatory NJ venue", "source_pages": [364]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "Release/waiver of WA franchise law rights is void except via negotiated settlement with independent counsel per RCW 19.100.220(2)", "why_it_matters": "Cannot be forced to waive WA franchise law claims at renewal/transfer", "source_pages": [364]},
+    {"state": "Washington", "affected_family": "statute_of_limitations", "override_summary": "Provisions unreasonably restricting WA Act limitations or jury trial rights may not be enforceable", "why_it_matters": "Preserves WA franchisee remedies", "source_pages": [364]},
+    {"state": "Washington", "affected_family": "transfer", "override_summary": "Transfer fees must reflect reasonable estimate or actual costs", "why_it_matters": "May limit $15K flat transfer fee if not cost-justified", "source_pages": [364]},
+    {"state": "Washington", "affected_family": "termination", "override_summary": "Franchisee may terminate under WA state law grounds; buy-back provisions limited to good cause termination only", "why_it_matters": "Additional termination rights and buy-back protection for WA franchisees", "source_pages": [364, 365]},
+    {"state": "Washington", "affected_family": "supplier_pricing", "override_summary": "Requiring purchase/rent of products at more than fair and reasonable price is unlawful under RCW 19.100.180(2)(d)", "why_it_matters": "WA franchisees may challenge above-market supplier pricing", "source_pages": [365]}
+  ],
+  "summary_table": {
+    "override_families": ["forum_selection", "governing_law", "general_release", "termination", "liquidated_damages", "statute_of_limitations", "supplier_pricing", "transfer", "trademark_indemnification", "financial_assurance", "labor_law", "anti_waiver"],
+    "states_by_family": {
+      "forum_selection": ["Illinois", "Minnesota", "North Dakota", "Washington"],
+      "governing_law": ["Illinois", "Rhode Island", "Washington"],
+      "general_release": ["Minnesota", "Washington"],
+      "termination": ["Illinois", "Minnesota", "Washington"],
+      "liquidated_damages": ["Minnesota"],
+      "statute_of_limitations": ["North Dakota", "Washington"],
+      "supplier_pricing": ["Washington"],
+      "transfer": ["Washington"],
+      "trademark_indemnification": ["Minnesota"],
+      "financial_assurance": ["Maryland"],
+      "labor_law": ["California"],
+      "anti_waiver": ["Illinois"]
+    }
+  }
+}

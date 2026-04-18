@@ -1,0 +1,17 @@
+{
+  "depth_pass": "A2_depth_pass_3_promotion_audit",
+  "promoted_facts": [
+    {"fact": "ARG unit count includes international (2,517 franchised vs 2,286 domestic)", "source": "ARG Note 1, p.229", "promoted_to": "item21_financial_structure_detail.arg.note_1_business"},
+    {"fact": "AFA Service Corporation is a VIE consolidated by ARG", "source": "ARG Note 2, p.229", "promoted_to": "item21_financial_structure_detail.arg"},
+    {"fact": "IRB parent-level Term Loans: ~$4.2B outstanding, guaranteed by ARG", "source": "ARG Note 10, p.244", "promoted_to": "item21_financial_structure_detail.arg.parent_debt"},
+    {"fact": "$380M note receivable from ARG IH LLC at 1.58%, due no later than July 2027, classified in stockholder's deficit", "source": "ARG Note 11, p.245", "promoted_to": "item21_financial_structure_detail.arg.related_party"},
+    {"fact": "Beverage purchase commitments $116.5M through 2034", "source": "ARG Note 10, p.244", "promoted_to": "item21_financial_structure_detail.arg.commitments"},
+    {"fact": "Lease guarantees $1.6M through 2028", "source": "ARG Note 10, p.244", "promoted_to": "item21_financial_structure_detail.arg.commitments"},
+    {"fact": "Company-owned advertising expense: $78.4M (2024)", "source": "ARG Note 2, p.233", "promoted_to": "item6_advertising"},
+    {"fact": "Securitization notes stated rate 3.24%, effective rate 3.50%", "source": "ARG Note 5, p.238", "promoted_to": "item21_financial_structure_detail"},
+    {"fact": "Finance lease obligations: $121.96M", "source": "ARG Note 5, p.238", "promoted_to": "item21_financial_structure_detail.arg"},
+    {"fact": "Reacquired franchise rights: $30.6M net (intangible)", "source": "ARG Note 4, p.237", "promoted_to": "item21_financial_structure_detail.arg"},
+    {"fact": "OFAC/restricted persons clause in FA Article 21.11", "source": "FA p.295", "promoted_to": "contract_burden_depth"},
+    {"fact": "ROFR exercise period: 30 days, closing: 60 days", "source": "FA Article 16:2:1, p.290", "promoted_to": "item17_transfer"}
+  ]
+}

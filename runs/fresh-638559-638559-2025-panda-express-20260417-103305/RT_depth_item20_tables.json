@@ -1,0 +1,44 @@
+{
+  "tables_extracted": 5,
+  "table_1_systemwide": {
+    "source_pages": [81],
+    "data": {
+      "franchised": {"2022": {"start": 146, "end": 157, "net": 11}, "2023": {"start": 157, "end": 165, "net": 8}, "2024": {"start": 165, "end": 173, "net": 8}},
+      "company_owned": {"2022": {"start": 2153, "end": 2195, "net": 42}, "2023": {"start": 2195, "end": 2248, "net": 54}, "2024": {"start": 2248, "end": 2329, "net": 81}},
+      "total": {"2022": {"start": 2299, "end": 2352, "net": 53}, "2023": {"start": 2352, "end": 2413, "net": 61}, "2024": {"start": 2413, "end": 2502, "net": 89}}
+    },
+    "table_notes": ["59 franchised are JV with PRG affiliate as minority owner", "Company-Owned refers to outlets owned by affiliates"]
+  },
+  "table_2_transfers": {
+    "source_pages": [81, 82],
+    "transfers_total": {"2022": 5, "2023": 5, "2024": 3},
+    "states": ["AR", "FL", "ID", "IL", "MD", "MN", "TX"]
+  },
+  "table_3_franchised_status": {
+    "source_pages": [82, 83, 84, 85],
+    "footer_totals": {
+      "2022": {"start": 146, "opened": 15, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_ops": 4, "end": 157},
+      "2023": {"start": 157, "opened": 9, "terminated": 0, "non_renewed": 0, "reacquired": 0, "ceased_ops": 1, "end": 165},
+      "2024": {"start": 165, "opened": 11, "terminated": 2, "non_renewed": 0, "reacquired": 1, "ceased_ops": 0, "end": 173}
+    },
+    "table_notes": ["CA 2024: non-licensed restaurant transitioned to licensed", "GA 2024: licensed transitioned to company-owned"],
+    "states_with_activity_2024": {"opened": ["CA", "CO", "FL", "MS", "NY", "OH", "TX"], "terminated": ["OH"], "reacquired": ["GA"]}
+  },
+  "table_4_company_owned": {
+    "source_pages": [85, 86, 87, 88, 89],
+    "footer_totals": {
+      "2022": {"start": 2153, "opened": 57, "reacquired": 0, "closed": 15, "sold": 0, "end": 2195},
+      "2023": {"start": 2195, "opened": 75, "reacquired": 0, "closed": 21, "sold": 0, "end": 2248},
+      "2024": {"start": 2248, "opened": 87, "reacquired": 0, "closed": 6, "sold": 0, "end": 2329}
+    },
+    "table_notes": ["MO: 1 store stopped operating 2023, officially closed 2024"],
+    "top_states_by_count_2024": [{"state": "TX", "end": 301}, {"state": "CA", "end": 597}, {"state": "AZ", "end": 113}, {"state": "FL", "end": 113}, {"state": "IL", "end": 111}]
+  },
+  "table_5_projected_openings": {
+    "source_pages": [90, 91],
+    "projected_openings_total": {"franchise_signed_not_opened": 15, "projected_franchise": 14, "projected_company": 123},
+    "table_notes": ["Largest company-owned growth: TX(15), FL(15), CA(10), VA(8), IL(7), GA(6)"]
+  },
+  "gag_clause_flag": true,
+  "gag_clause_quote": "current and former franchisees sign provisions restricting their ability to speak openly about their experience"
+}

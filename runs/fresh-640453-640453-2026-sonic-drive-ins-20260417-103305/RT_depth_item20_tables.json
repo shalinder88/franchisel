@@ -1,0 +1,53 @@
+{
+  "depth_pass": "A2_item20_completion",
+  "tables_extracted": 5,
+  "tables_surfaced": 5,
+  "all_tables_complete": true,
+  "table_1_system_summary": {
+    "complete": true,
+    "years": [2023, 2024, 2025],
+    "source_pages": [74]
+  },
+  "table_2_transfers": {
+    "complete": true,
+    "states_with_activity": 29,
+    "totals": {"2023": 75, "2024": 334, "2025": 100},
+    "source_pages": [74, 75, 76]
+  },
+  "table_3_franchised_status": {
+    "complete": true,
+    "states_covered": 38,
+    "footer_totals": {
+      "2023": {"start": 3220, "opened": 23, "terminations": 2, "non_renewals": 0, "reacquired": 0, "ceased_other": 47, "end": 3194},
+      "2024": {"start": 3194, "opened": 30, "terminations": 12, "non_renewals": 0, "reacquired": 0, "ceased_other": 68, "end": 3144},
+      "2025": {"start": 3144, "opened": 32, "terminations": 2, "non_renewals": 0, "reacquired": 0, "ceased_other": 54, "end": 3120}
+    },
+    "table_notes": ["Zero non-renewals in all 3 years", "Zero reacquisitions in all 3 years", "If multiple events, shows last in time", "Multi-Brand Location openings denoted with *"],
+    "transfers_total": {"2023": 75, "2024": 334, "2025": 100},
+    "terminations_total": {"2023": 2, "2024": 12, "2025": 2},
+    "non_renewals_total": {"2023": 0, "2024": 0, "2025": 0},
+    "reacquired_total": {"2023": 0, "2024": 0, "2025": 0},
+    "ceased_operations_total": {"2023": 47, "2024": 68, "2025": 54},
+    "source_pages": [76, 77, 78, 79]
+  },
+  "table_4_company_status": {
+    "complete": true,
+    "states_covered": 12,
+    "footer_totals": {
+      "2023": {"start": 326, "opened": 4, "reacquired": 0, "closed": 3, "sold": 0, "end": 327},
+      "2024": {"start": 327, "opened": 1, "reacquired": 0, "closed": 11, "sold": 0, "end": 317},
+      "2025": {"start": 317, "opened": 0, "reacquired": 0, "closed": 21, "sold": 4, "end": 292}
+    },
+    "sold_total": {"2023": 0, "2024": 0, "2025": 4},
+    "source_pages": [80]
+  },
+  "table_5_projected_openings": {
+    "complete": true,
+    "totals": {"fa_signed_not_opened": 12, "projected_new_franchise": 16, "projected_new_company": 0},
+    "projected_openings_total": 16,
+    "source_pages": [81]
+  },
+  "gag_clause_flag": true,
+  "gag_clause_quote": "current and former franchisees sign provisions restricting their ability to speak openly about their experience with us",
+  "gag_clause_source_pages": [82]
+}

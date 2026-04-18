@@ -1,0 +1,307 @@
+{
+  "tables": [
+    {
+      "id": "item5_franchise_fee",
+      "item": "5",
+      "title": "Franchise Fee Structure",
+      "source_pages": [29, 30, 31, 32, 33],
+      "columns": ["Program", "Fee", "Conditions"],
+      "rows": [
+        {"program": "Standard", "fee": "$50,000", "conditions": "20-year term; prorated for shorter terms, min $15,000"},
+        {"program": "TRA Deposit", "fee": "$5,000", "conditions": "Per restaurant opening committed"},
+        {"program": "MTRA Deposit", "fee": "$10,000 x # restaurants", "conditions": "Per restaurant opening committed"},
+        {"program": "Development Agreement", "fee": "$50,000 prepaid per restaurant", "conditions": "Credited against franchise fees; FSS grade-based after exhaustion"},
+        {"program": "Dev Agreement (A/B grade)", "fee": "$25,000", "conditions": "After prepaid fees exhausted"},
+        {"program": "Dev Agreement (D/F grade)", "fee": "Base Fee (greater of $50,000 or then-current)", "conditions": "After prepaid fees exhausted"},
+        {"program": "RTF2 Successor", "fee": "$2,500/year x additional years", "conditions": "Total years = 20 from remodel deadline"},
+        {"program": "Training", "fee": "$7,500 per trainee", "conditions": "Non-refundable, payable before training begins"},
+        {"program": "CYC Deposit", "fee": "$7,500", "conditions": "Within 5 days of Term Sheet signing"}
+      ],
+      "table_notes": [
+        "Franchise fee is fully earned upon signing and non-refundable",
+        "Application fee: $250/individual, $5,000/entity — non-refundable"
+      ],
+      "provenance": "Item 5, pages 29-33"
+    },
+    {
+      "id": "item6_fee_table",
+      "item": "6",
+      "title": "Other Fees",
+      "source_pages": [34, 35, 36, 37, 38, 39, 40],
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee_type": "Royalty", "amount": "4.5% of monthly Gross Sales", "due_date": "Monthly, 10th of next month", "remarks": "See Note 2 for reduction programs"},
+        {"fee_type": "Advertising", "amount": "Up to 4.5% of monthly Gross Sales", "due_date": "Same as royalty", "remarks": "See Note 3 for reduction programs"},
+        {"fee_type": "Rent (BKL/BKG)", "amount": "Varies — see Note 4", "due_date": "Monthly, 1st of month (base); as agreed (percentage)", "remarks": "Net of all taxes, CAM, insurance"},
+        {"fee_type": "Service Desk Fee", "amount": "$750-$1,200/year per restaurant", "due_date": "On demand", "remarks": "Centralized IT support"},
+        {"fee_type": "Late Charges", "amount": "$0-$75/month", "due_date": "On demand", "remarks": "$0 if <$2K; $30 if $2K-$5K; $75 if >$5K"},
+        {"fee_type": "CYC Late Charges", "amount": "2% above Promissory Note rate", "due_date": "On demand", "remarks": "Overdue CYC loan amounts"},
+        {"fee_type": "Stamp Tax", "amount": "$0.35/$100", "due_date": "On demand", "remarks": "Florida instruments only"},
+        {"fee_type": "Transfer Fee", "amount": "$2,000 first + $500 each additional", "due_date": "At sale/transfer", "remarks": "$175 weekend/holiday surcharge; $2,000 Intercreditor Agreement"},
+        {"fee_type": "Application Fee", "amount": "$250/individual; up to $5,000/entity", "due_date": "At application", "remarks": ""},
+        {"fee_type": "Training Fee", "amount": "$7,500 per trainee", "due_date": "Before training or at transfer", "remarks": ""},
+        {"fee_type": "Entity/LLC Fee", "amount": "Up to $5,000/entity + up to $1,000/restaurant", "due_date": "At conversion", "remarks": "$1K/restaurant (1-10); $0 (11-20); $500 (21+)"},
+        {"fee_type": "Franchise Extension Fee", "amount": "$2,500 annually", "due_date": "At signing", "remarks": "BKC not obligated to extend"},
+        {"fee_type": "Investment Spending", "amount": "Up to 2.0% of Gross Sales", "due_date": "Monthly, 10th", "remarks": "DMA-determined; Majority Clause may require participation"},
+        {"fee_type": "Sales Transfer Study", "amount": "$3,000-$8,000/restaurant", "due_date": "As arranged", "remarks": "BKC decides who pays"},
+        {"fee_type": "Sales Impact Contribution", "amount": "Varies", "due_date": "As agreed", "remarks": "Development dispute resolution costs"},
+        {"fee_type": "Gift Card Services", "amount": "Setup $40; Transaction ~1.8% of redeemed sales", "due_date": "To vendor/supplier", "remarks": "Mandatory BK Crown Card participation"},
+        {"fee_type": "BK University/Support", "amount": "$600/year per restaurant", "due_date": "On demand", "remarks": "eLearning platform and training materials"},
+        {"fee_type": "Digital Services Fee", "amount": "$110/mo + 1% digital sales; cap $4,500/yr", "due_date": "Monthly, 10th", "remarks": "BK app, website, third-party ordering, ROYAL PERKS"},
+        {"fee_type": "Static Menu Board Kit", "amount": "$200-$300/month", "due_date": "Monthly", "remarks": "Only if no outdoor digital menu board"},
+        {"fee_type": "Misc Reimbursements/Training", "amount": "Up to $25,000/person", "due_date": "As agreed", "remarks": "Course, material, travel expenses"},
+        {"fee_type": "Follow-Up Walk-Thru", "amount": "$1,500", "due_date": "On demand", "remarks": "If remodel not substantially complete"},
+        {"fee_type": "One-Time Cure Fee", "amount": "TRA: $10,000; MTRA: balance x #", "due_date": "At development failure", "remarks": "Must also open by extended date"},
+        {"fee_type": "Deferred Remodel Default", "amount": "Royalty increases to 6.0% or 7.5%", "due_date": "Monthly until remodel complete", "remarks": "Prior incentive program defaults"},
+        {"fee_type": "Audit Expenses", "amount": "Cost of audit", "due_date": "Within 15 days of audit report", "remarks": "If Gross Sales understated >2%"},
+        {"fee_type": "Indemnity", "amount": "Losses and expenses incurred", "due_date": "On demand", "remarks": "Includes third-party claims from Services Agreement"},
+        {"fee_type": "Costs & Attorneys' Fees", "amount": "Varies", "due_date": "After notice", "remarks": "If BKC successful in legal action; $2,500 arbitration deposit"},
+        {"fee_type": "Background Check", "amount": "$145-$15,000", "due_date": "On demand", "remarks": "$225 US, $145 Canada, $1K-$15K international"},
+        {"fee_type": "BK Foundation", "amount": "$1,000/year per restaurant", "due_date": "On demand", "remarks": "Purchase or fundraise in-restaurant"},
+        {"fee_type": "DA Brand Damage Fee", "amount": "Remaining prepaid franchise fees", "due_date": "Upon demand", "remarks": "If DA terminated before expiration"},
+        {"fee_type": "DA Indirect Tax", "amount": "Applicable taxes on DA fees", "due_date": "Upon demand", "remarks": "Sales, VAT, excise, etc."},
+        {"fee_type": "DA Base Fees", "amount": "See Notes 2 and 3", "due_date": "Upon demand", "remarks": "Royalty and advertising base fees"},
+        {"fee_type": "Product Testing/Approval", "amount": "Up to $30,000/product or supplier", "due_date": "On demand", "remarks": "New product/supplier evaluation costs"},
+        {"fee_type": "Third-Party Food Safety Inspections", "amount": "Cost of re-inspection", "due_date": "On demand", "remarks": "Only if failed initial inspection"},
+        {"fee_type": "Resale Fee (Carrols)", "amount": "$10,000/restaurant", "due_date": "30 days after closing", "remarks": ""},
+        {"fee_type": "Sublease Fee (Carrols)", "amount": "Varies", "due_date": "30 days after closing", "remarks": "Reimburse landlord consent costs"}
+      ],
+      "table_notes": [
+        "Note 1: Fees may vary by negotiation; prior FA holders may pay different rates",
+        "Note 2: Royalty reduction programs: 2024 DIP (2.5-4.5% ramp), RTF2, DA (FSS-based), CYC additional 1-5%",
+        "Note 3: Advertising reduction programs: 2024 DIP (2.0-Base Fee ramp), DA (FSS-based), Fuel the Flame 4.5% through 2027+",
+        "Note 4: BKL rent typically 10% capitalized costs + 8.5%/10% percentage rent; escalation 12%/5 years if BKC-owned",
+        "Note 5: Late charge schedule: $0 ($1-$2K), $30 ($2K-$5K), $75 ($5K+)",
+        "Note 6: Entity/LLC conversion fees: $5K/entity + $1K/restaurant (1-10), $0 (11-20), $500 (21+)",
+        "Note 7: Sales Impact Contribution per development dispute resolution procedures",
+        "Note 8: Digital Services Fee covers BK app, website, third-party ordering platforms, ROYAL PERKS loyalty"
+      ],
+      "provenance": "Item 6, pages 34-48"
+    },
+    {
+      "id": "item6_royalty_reduction_dip",
+      "item": "6",
+      "title": "2024 Multi-Unit DIP Royalty Schedule",
+      "source_pages": [40],
+      "columns": ["Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6+"],
+      "rows": [
+        {"year_1": "2.5%", "year_2": "3.0%", "year_3": "3.5%", "year_4": "3.5%", "year_5": "4.0%", "year_6_plus": "4.5%"}
+      ],
+      "provenance": "Item 6, Note 2, page 40"
+    },
+    {
+      "id": "item6_da_royalty_reduction",
+      "item": "6",
+      "title": "Development Agreement Royalty Reduction (Non-Excess Restaurants)",
+      "source_pages": [42],
+      "columns": ["FSS Grade", "Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6", "Year 7+"],
+      "rows": [
+        {"fss_grade": "A or B", "year_1": "2.5%", "year_2": "2.0%", "year_3": "1.5%", "year_4": "1.0%", "year_5": "0.5%", "year_6": "0.5%", "year_7_plus": "None"},
+        {"fss_grade": "D or F", "year_1": "None", "year_2": "None", "year_3": "None", "year_4": "None", "year_5": "None", "year_6": "None", "year_7_plus": "None"}
+      ],
+      "table_notes": ["Reduction from then-current Base Fee (greater of 4.5% or standard rate)"],
+      "provenance": "Item 6, Note 2, page 42"
+    },
+    {
+      "id": "item7_traditional",
+      "item": "7",
+      "title": "Estimated Initial Investment — Traditional Facility (Freestanding)",
+      "source_pages": [50],
+      "columns": ["Expenditure", "Low", "High"],
+      "rows": [
+        {"expenditure": "Franchise Fee", "low": "$50,000", "high": "$50,000"},
+        {"expenditure": "Training Fee, Travel & Living", "low": "$7,500", "high": "$25,000"},
+        {"expenditure": "Real Property / Occupancy", "low": "$300,000", "high": "$90,000"},
+        {"expenditure": "Civil & Architectural / Professional Fees", "low": "$50,000", "high": "$125,000"},
+        {"expenditure": "Zoning Expenses", "low": "$5,000", "high": "$40,000"},
+        {"expenditure": "Improvements / Construction", "low": "$1,200,000", "high": "$1,800,000"},
+        {"expenditure": "Landscaping", "low": "$25,000", "high": "$60,000"},
+        {"expenditure": "Equipment", "low": "$250,600", "high": "$304,600"},
+        {"expenditure": "Decor Package", "low": "$48,000", "high": "$95,000"},
+        {"expenditure": "Signage & Drive-Thru", "low": "$150,000", "high": "$230,000"},
+        {"expenditure": "Pre-Opening Wages", "low": "$67,100", "high": "$72,500"},
+        {"expenditure": "Opening Inventory", "low": "$6,400", "high": "$12,800"},
+        {"expenditure": "Cash/Inventory/POS System", "low": "$20,000", "high": "$25,000"},
+        {"expenditure": "Insurance", "low": "$14,000", "high": "$25,000"},
+        {"expenditure": "Working Capital / Additional Funds", "low": "$45,000", "high": "$90,000"},
+        {"expenditure": "Business Licenses, Deposits, Payments", "low": "$10,000", "high": "$30,000"},
+        {"expenditure": "2-Story Interior Playground (optional)", "low": "$0", "high": "$245,000"},
+        {"expenditure": "BK University/Support", "low": "$600", "high": "$700"},
+        {"expenditure": "TOTAL", "low": "$2,249,200", "high": "$3,320,600"}
+      ],
+      "table_notes": [
+        "Excludes real estate purchase costs ($250K-$2M if buying unimproved property)",
+        "Double Drive-Thru required (adds $80K-$120K to remodel costs)",
+        "Franchise fee non-refundable"
+      ],
+      "provenance": "Item 7, page 50"
+    },
+    {
+      "id": "item19_traditional_sales",
+      "item": "19",
+      "title": "Sales Distribution — Traditional Restaurants (Jan 1 - Dec 31, 2025)",
+      "source_pages": [101, 102],
+      "columns": ["Annual Sales Level", "Consolidated %", "Company-Owned %", "Franchisee-Owned %"],
+      "rows": [
+        {"level": "Above $1.9M", "consolidated": "31.2%", "company_owned": "36.1%", "franchisee_owned": "30.2%"},
+        {"level": "$1.7M-$1.9M", "consolidated": "12.5%", "company_owned": "12.5%", "franchisee_owned": "12.6%"},
+        {"level": "$1.5M-$1.7M", "consolidated": "15.0%", "company_owned": "16.1%", "franchisee_owned": "14.8%"},
+        {"level": "$1.3M-$1.5M", "consolidated": "16.2%", "company_owned": "16.5%", "franchisee_owned": "16.1%"},
+        {"level": "$1.1M-$1.3M", "consolidated": "13.5%", "company_owned": "11.9%", "franchisee_owned": "13.8%"},
+        {"level": "$0.9M-$1.1M", "consolidated": "7.6%", "company_owned": "5.1%", "franchisee_owned": "8.2%"},
+        {"level": "$0.7M-$0.9M", "consolidated": "3.3%", "company_owned": "1.7%", "franchisee_owned": "3.7%"},
+        {"level": "Below $0.7M", "consolidated": "0.6%", "company_owned": "0.1%", "franchisee_owned": "0.7%"}
+      ],
+      "summary_stats": {
+        "consolidated": {"average": "$1,707,974", "median": "$1,610,633", "high": "$5,532,973", "low": "$188,523", "pct_at_above_avg": "43%", "count": 5747},
+        "company_owned": {"average": "$1,779,702", "median": "$1,685,154", "high": "$4,287,457", "low": "$661,763", "pct_at_above_avg": "43%", "count": 1017},
+        "franchisee_owned": {"average": "$1,692,549", "median": "$1,593,606", "high": "$5,532,973", "low": "$188,523", "pct_at_above_avg": "43%", "count": 4730}
+      },
+      "table_notes": [
+        "5,953 Traditional Restaurants total as of Dec 31, 2025; 74 permanently closed excluded",
+        "5,747 included: open and operating entire 12 months ended Dec 31, 2025",
+        "181 excluded: 77 company-owned and 104 franchisee-owned temporarily closed; 24 opened in 2025",
+        "Gross Sales excludes taxes"
+      ],
+      "provenance": "Item 19, Section A, pages 101-102"
+    },
+    {
+      "id": "item19_nontrad_sales",
+      "item": "19",
+      "title": "Sales Distribution — Non-Traditional Restaurants (Jan 1 - Dec 31, 2025)",
+      "source_pages": [102, 103],
+      "columns": ["Annual Sales Level", "Consolidated %", "Company-Owned %", "Franchisee-Owned %"],
+      "rows": [
+        {"level": "Above $1.9M", "consolidated": "13.9%", "company_owned": "10.0%", "franchisee_owned": "14.1%"},
+        {"level": "$1.7M-$1.9M", "consolidated": "8.3%", "company_owned": "6.7%", "franchisee_owned": "8.4%"},
+        {"level": "$1.5M-$1.7M", "consolidated": "8.5%", "company_owned": "20.0%", "franchisee_owned": "7.9%"},
+        {"level": "$1.3M-$1.5M", "consolidated": "13.5%", "company_owned": "30.0%", "franchisee_owned": "12.7%"},
+        {"level": "$1.1M-$1.3M", "consolidated": "13.3%", "company_owned": "16.7%", "franchisee_owned": "13.2%"},
+        {"level": "$0.9M-$1.1M", "consolidated": "16.1%", "company_owned": "6.7%", "franchisee_owned": "16.5%"},
+        {"level": "$0.7M-$0.9M", "consolidated": "13.5%", "company_owned": "6.7%", "franchisee_owned": "13.8%"},
+        {"level": "Below $0.7M", "consolidated": "12.9%", "company_owned": "3.3%", "franchisee_owned": "13.3%"}
+      ],
+      "summary_stats": {
+        "consolidated": {"average": "$1,387,999", "median": "$1,210,626", "high": "$7,717,024", "low": "$228,551", "pct_at_above_avg": "38%", "count": 661},
+        "company_owned": {"average": "$1,521,448", "median": "$1,379,670", "high": "$4,603,273", "low": "$641,695", "pct_at_above_avg": "37%", "count": 31},
+        "franchisee_owned": {"average": "$1,381,645", "median": "$1,197,033", "high": "$7,717,024", "low": "$228,551", "pct_at_above_avg": "38%", "count": 630}
+      },
+      "table_notes": [
+        "697 Non-Traditional Restaurants total; 20 permanently closed excluded",
+        "661 included: open entire 12 months ended Dec 31, 2025",
+        "36 excluded: 33 franchisee + 3 company temporarily closed"
+      ],
+      "provenance": "Item 19, Section A, pages 102-103"
+    },
+    {
+      "id": "item19_remodel_uplift",
+      "item": "19",
+      "title": "Remodel Sales Uplift — By Scope",
+      "source_pages": [108],
+      "columns": ["Remodel Type", "Count", "Avg Sales Uplift %", "Median Sales Uplift %", "Avg Traffic Uplift %"],
+      "rows": [
+        {"type": "Full Remodel", "count": 964, "avg_sales": "11.9%", "median_sales": "10.2%", "avg_traffic": "10.8%"},
+        {"type": "Scrape & Rebuild", "count": 67, "avg_sales": "26.0%", "median_sales": "21.0%", "avg_traffic": "23.5%"},
+        {"type": "Grand Total", "count": 1031, "avg_sales": "12.8%", "median_sales": "10.7%", "avg_traffic": "11.6%"}
+      ],
+      "table_notes": [
+        "1,144 total remodeled Jan 2018-Dec 2024; 1,031 had sufficient data",
+        "83 excluded for missing construction dates/sales data; 11 excluded for permanent closure",
+        "Modern Image = Garden Grill, Pavilion, or Sizzle"
+      ],
+      "provenance": "Item 19, Section B, page 108"
+    },
+    {
+      "id": "item20_table1",
+      "item": "20",
+      "title": "Systemwide Outlet Summary (2023-2025)",
+      "source_pages": [117],
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": 2023, "start": 6992, "end": 6640, "net": -352},
+        {"type": "Franchised", "year": 2024, "start": 6640, "end": 5524, "net": -1116},
+        {"type": "Franchised", "year": 2025, "start": 5524, "end": 5518, "net": -6},
+        {"type": "Company-Owned", "year": 2023, "start": 50, "end": 138, "net": 88},
+        {"type": "Company-Owned", "year": 2024, "start": 138, "end": 1177, "net": 1039},
+        {"type": "Company-Owned", "year": 2025, "start": 1177, "end": 1132, "net": -45},
+        {"type": "Total", "year": 2023, "start": 7042, "end": 6778, "net": -264},
+        {"type": "Total", "year": 2024, "start": 6778, "end": 6701, "net": -77},
+        {"type": "Total", "year": 2025, "start": 6701, "end": 6650, "net": -51}
+      ],
+      "table_notes": [
+        "May 16, 2024: RBI acquired Carrols Restaurant Group resulting in 1,023 franchised becoming company-owned"
+      ],
+      "provenance": "Item 20, Table 1, page 117"
+    },
+    {
+      "id": "item20_table2_totals",
+      "item": "20",
+      "title": "Transfers — Annual Totals (2023-2025)",
+      "source_pages": [117, 121],
+      "columns": ["Year", "Total Transfers"],
+      "rows": [
+        {"year": 2023, "total": 245},
+        {"year": 2024, "total": 254},
+        {"year": 2025, "total": 242}
+      ],
+      "table_notes": ["Does not include transfers where beneficial ownership unchanged"],
+      "provenance": "Item 20, Table 2, pages 117-121"
+    },
+    {
+      "id": "item20_table3_totals",
+      "item": "20",
+      "title": "Franchise Outlet Status — Annual Totals (2023-2025)",
+      "source_pages": [122, 126],
+      "columns": ["Year", "Outlets Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Ops", "Outlets End"],
+      "rows": [
+        {"year": 2023, "start": 6992, "opened": 61, "terminations": 55, "non_renewals": 0, "reacquired": 88, "ceased_ops": 270, "end": 6640},
+        {"year": 2024, "start": 6640, "opened": 63, "terminations": 49, "non_renewals": 7, "reacquired": 1061, "ceased_ops": 69, "end": 5524},
+        {"year": 2025, "start": 5524, "opened": 83, "terminations": 33, "non_renewals": 7, "reacquired": 13, "ceased_ops": 36, "end": 5518}
+      ],
+      "table_notes": [
+        "Limited license restaurants may not appear as terminated",
+        "Non-renewed may include unilateral or mutual decisions",
+        "Ceased ops may include offsets where franchisee opened nearby replacement",
+        "Totals may not reconcile due to date posting overlaps"
+      ],
+      "provenance": "Item 20, Table 3, pages 122-126"
+    },
+    {
+      "id": "item20_table4_totals",
+      "item": "20",
+      "title": "Company-Owned Outlet Status — Annual Totals (2023-2025)",
+      "source_pages": [127, 129],
+      "columns": ["Year", "Start", "Opened", "Reacquired", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        {"year": 2023, "start": 50, "opened": 0, "reacquired": 88, "closed": 0, "sold": 0, "end": 138},
+        {"year": 2024, "start": 138, "opened": 1, "reacquired": 1061, "closed": 12, "sold": 11, "end": 1177},
+        {"year": 2025, "start": 1177, "opened": 4, "reacquired": 13, "closed": 14, "sold": 48, "end": 1132}
+      ],
+      "table_notes": ["Includes one WHOPPER Bar"],
+      "provenance": "Item 20, Table 4, pages 127-129"
+    },
+    {
+      "id": "item20_table5_totals",
+      "item": "20",
+      "title": "Projected Openings (Next Fiscal Year from Dec 31, 2025)",
+      "source_pages": [129, 130, 131],
+      "columns": ["Category", "FA Signed Not Opened", "Projected Franchised", "Projected Company-Owned"],
+      "rows": [
+        {"category": "Total", "fa_signed": 0, "franchised": 39, "company_owned": 1}
+      ],
+      "projected_openings_total": 40,
+      "top_states_franchised": [
+        {"state": "TX", "count": 10},
+        {"state": "CA", "count": 2},
+        {"state": "CO", "count": 2},
+        {"state": "FL", "count": 3},
+        {"state": "GA", "count": 2},
+        {"state": "NJ", "count": 3},
+        {"state": "NY", "count": 3},
+        {"state": "PA", "count": 3}
+      ],
+      "table_notes": ["Only MI has projected company-owned opening (1)"],
+      "provenance": "Item 20, Table 5, pages 129-131"
+    }
+  ]
+}

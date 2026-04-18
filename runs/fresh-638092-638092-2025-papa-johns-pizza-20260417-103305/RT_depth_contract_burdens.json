@@ -1,0 +1,157 @@
+{
+  "extraction_date": "2026-04-18",
+  "depth_pass": "A2_contract_burden_depth",
+  "brand": "Papa Johns",
+  "filing_id": "638092",
+  "source_exhibit": "Exhibit B — Franchise Agreement (Standard Restaurant)",
+  "source_pages": [100, 101, 102, 103, 104, 148, 149, 150, 151, 152, 153, 154, 155],
+  "clauses": [
+    {
+      "clause_family": "grant_and_term",
+      "section": "§1, §2",
+      "obligation": "Grant of single-location franchise to operate restaurant at specified location under System and Marks",
+      "restriction": "Must operate only from Location; must commence within 60 days of Effective Date; must provide 14 days' prior notice of opening date",
+      "trigger": "Effective Date",
+      "duration": "10 years initial; one 10-year renewal option",
+      "source_pages": [103, 104]
+    },
+    {
+      "clause_family": "renewal",
+      "section": "§2(b)",
+      "obligation": "Renewal available if all conditions met: written notice 4-12 months before term end; no material default; sign then-current FA (may differ); franchisor still operating in state; approved location; pay renewal fee; general release; training",
+      "restriction": "Renewal FA may contain materially different terms",
+      "trigger": "Written notice within notice window",
+      "duration": "10-year renewal term",
+      "money": "$4,000 renewal fee",
+      "exceptions": "30-day grace period if notice not timely received",
+      "source_pages": [103, 104]
+    },
+    {
+      "clause_family": "fee_and_payment",
+      "section": "§3",
+      "obligation": "Royalty 5% of Net Sales; Digital Fee 2% of digital Net Sales; Marketing Fund 6%; auto-debit authorization required",
+      "restriction": "Royalty may increase up to 6% if new FA rate matches",
+      "trigger": "Monthly — 10th (royalty), 20th (digital), 24th (marketing)",
+      "source_pages": [104, 105]
+    },
+    {
+      "clause_family": "termination_noncurable",
+      "section": "§19(a), §19(b)",
+      "obligation": "Franchise terminates immediately without cure for: bankruptcy, unsatisfied judgment, dissolution, attachment, cease operations, lose possession, unpermitted transfer, criminal conviction, failure to transfer after death within 9 months, confidential info disclosure, repeated defaults, noncompete violation, false books, uninsured, Marks impairment, public health danger, government noncompliance (15-day cure)",
+      "trigger": "Occurrence of any listed event",
+      "source_pages": [148, 149]
+    },
+    {
+      "clause_family": "termination_curable",
+      "section": "§19(c)",
+      "obligation": "30-day cure period for: failure to construct/operate, failure to pay, unauthorized transfer of 5% or less interest, misuse of Marks, health/safety violations (72-hour cure), lease breach, manual noncompliance, failure to complete training, failure to comply with standards",
+      "trigger": "Written notice of default",
+      "duration": "30 days (72 hours for health/safety/imminent danger)",
+      "source_pages": [149, 150]
+    },
+    {
+      "clause_family": "liquidated_damages",
+      "section": "§20(a)(vii)",
+      "obligation": "On termination for franchisee default (including abandonment): pay liquidated damages = average monthly royalty for prior 12 months × lesser of 24 or months remaining in term",
+      "restriction": "Not charged if franchisor approves closure under Store Closing Policy",
+      "money": "Formula: avg monthly royalty × min(24, months remaining)",
+      "trigger": "Termination for default or abandonment",
+      "source_pages": [151]
+    },
+    {
+      "clause_family": "noncompete_during_term",
+      "section": "§16",
+      "obligation": "No involvement in any competing business anywhere during term",
+      "source_pages": [142, 143]
+    },
+    {
+      "clause_family": "noncompete_post_term",
+      "section": "§20(a)(x)",
+      "obligation": "For 2 years after transfer/termination/expiration: no interest in competing business within 10-mile radius of (1) the Restaurant, or (2) any Papa Johns restaurant operated by franchisor/affiliate/franchisee",
+      "restriction": "Covers employment, investment, consulting, any capacity. Exception: ownership of ≤1% of publicly traded securities",
+      "duration": "2 years (Restricted Period)",
+      "source_pages": [151, 152]
+    },
+    {
+      "clause_family": "transfer",
+      "section": "§14",
+      "obligation": "All transfers require prior written consent. Conditions: compliance, qualified transferee, amounts paid, training, current FA, release, landlord consent",
+      "restriction": "Any transfer of interest in agreement, assets, or entity (including PO interest)",
+      "money": "$4,000 per restaurant (unaffiliated); $8,000 total (affiliated)",
+      "exceptions": "Transfers among existing shareholders/members/partners require only 30 days prior written notice",
+      "source_pages": [136, 137, 138, 139]
+    },
+    {
+      "clause_family": "right_of_first_refusal",
+      "section": "§14(c)(ii)",
+      "obligation": "Franchisor has right to match any bona fide third-party offer for the franchise or its assets",
+      "trigger": "Receipt of bona fide third-party offer",
+      "source_pages": [137, 138]
+    },
+    {
+      "clause_family": "asset_purchase_option",
+      "section": "§20(b)",
+      "obligation": "On termination or expiration, franchisor may purchase all restaurant assets at FMV (excluding real property, Marks goodwill, going-concern value, proprietary software). Exercise within 15 days.",
+      "money": "Fair market value determined by independent appraisal if parties cannot agree. Three-appraiser process if single appraiser not agreed.",
+      "trigger": "Termination or expiration",
+      "duration": "15-day exercise window; closing within 90 days",
+      "source_pages": [152, 153]
+    },
+    {
+      "clause_family": "death_disability",
+      "section": "§15",
+      "obligation": "Franchise must be assigned to approved buyer within 9 months of death/incapacity/dissolution of franchisee or owner",
+      "restriction": "If not effected within 9 months, constitutes non-curable default",
+      "source_pages": [141]
+    },
+    {
+      "clause_family": "indemnification",
+      "section": "§21(c)",
+      "obligation": "Franchisee must hold harmless, defend and indemnify franchisor, affiliates, and their officers/directors/agents/employees from all losses, expenses, judgments, claims, costs (including attorney fees) arising from franchisee's construction or operation of restaurant",
+      "scope": "Unlimited",
+      "source_pages": [154]
+    },
+    {
+      "clause_family": "dispute_resolution",
+      "section": "§23(a)",
+      "obligation": "Binding arbitration in Louisville, KY before AAA, one arbitrator, under commercial arbitration rules. Governed by Federal Arbitration Act.",
+      "exceptions": "Carve-outs: (1) public health/safety actions, (2) debt collection (except coop contributions), (3) at claimant's option: §16/17/20(a)(x) violations or post-expiration Mark use",
+      "restriction": "Individual basis only — no class-wide or consolidated arbitration. No exemplary or punitive damages. Compulsory counterclaim rule applies.",
+      "source_pages": [154, 155]
+    },
+    {
+      "clause_family": "venue_litigation",
+      "section": "§23(c)",
+      "obligation": "Litigation in Jefferson County, Kentucky",
+      "restriction": "Subject to state law overrides",
+      "source_pages": [155]
+    },
+    {
+      "clause_family": "governing_law",
+      "section": "§23(b)",
+      "obligation": "Kentucky law governs",
+      "restriction": "Unless prohibited by laws of state where Restaurant is located",
+      "source_pages": [155]
+    },
+    {
+      "clause_family": "insurance",
+      "section": "§18",
+      "obligation": "$1M each occurrence combined single limit; $1M personal injury; $1M products-completed operations aggregate; $2M general aggregate; $500K fire legal liability; $1M auto combined single limit; $1M umbrella minimum. Must name franchisor as additional insured. 30-day cancellation notice.",
+      "restriction": "Franchisor may increase limits at any time",
+      "source_pages": [144, 145]
+    },
+    {
+      "clause_family": "security_interest",
+      "section": "§20(a)(vi)",
+      "obligation": "Franchisor has security interest in all personal property, furnishings, equipment, signs, fixtures and inventory on premises as of termination date, until all amounts owed are paid",
+      "trigger": "Termination or expiration",
+      "source_pages": [151]
+    },
+    {
+      "clause_family": "force_majeure",
+      "section": "Not expressly found in standard FA",
+      "obligation": "No express force majeure clause identified in the standard Franchise Agreement",
+      "source_pages": [100, 101]
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "tables": [
+    {
+      "id": "item5_initial_fees",
+      "item": "Item 5",
+      "title": "Initial Fees Schedule",
+      "source_pages": [21],
+      "columns": ["Scenario", "Fee", "Notes"],
+      "rows": [
+        {"scenario": "New construction", "fee": "Up to $10,000", "notes": "Initial franchise application processing fee"},
+        {"scenario": "Refranchising closed store", "fee": "Up to $10,000", "notes": "Initial franchise application processing fee"},
+        {"scenario": "Purchasing existing store", "fee": "$1,500", "notes": "Transfer fee"},
+        {"scenario": "Training fee", "fee": "Up to $1,250/session", "notes": "Operational and classroom training"},
+        {"scenario": "Reservation fee (Development Agreement)", "fee": "$25,000", "notes": "If fail to meet DA requirements; non-refundable"}
+      ],
+      "table_notes": ["Initial Fee payable before issuance, non-refundable. Generally not billed until operating.", "Payments to DPF/affiliates + Initial Fee: $117,950-$196,500 (Traditional), $69,950-$187,500 (Non-Traditional)."]
+    },
+    {
+      "id": "item6_fee_table",
+      "item": "Item 6",
+      "title": "Other Fees",
+      "source_pages": [22, 23, 24, 25, 26, 27],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Royalty Fee", "amount": "5.5% of weekly Royalty Sales", "due": "EFT by Thursday weekly", "remarks": "Royalty Sales = total receipts less taxes, approved coupons"},
+        {"fee": "Advertising Fund", "amount": "4% of weekly Royalty Sales", "due": "Same as Royalty", "remarks": "Non-Traditional may receive partial credit"},
+        {"fee": "Advertising Cooperatives", "amount": "1-4%", "due": "Same as Royalty", "remarks": "May be required; see Item 11"},
+        {"fee": "PULSE initial license fee", "amount": "$4,200", "due": "As invoiced", "remarks": "Paid to DPL"},
+        {"fee": "Third Party Vendor PULSE Fees", "amount": "$1,357.04", "due": "As invoiced", "remarks": "Annual, subject to adjustment"},
+        {"fee": "Annual Software Enhancement Fee", "amount": "$819.25/yr (after year 1)", "due": "As invoiced", "remarks": "Max 5% annual increase unless OAC approves"},
+        {"fee": "Help Desk/Software Support", "amount": "$44/call, $28/chat", "due": "As invoiced", "remarks": ""},
+        {"fee": "Connectivity Fee", "amount": "$1,200/yr", "due": "As invoiced", "remarks": "If no broadband where available"},
+        {"fee": "Flex Client Fee", "amount": "$150/device", "due": "As invoiced", "remarks": "Chrome OS devices"},
+        {"fee": "Annual Service Fee (SmartRecruiters)", "amount": "$432/yr per store", "due": "As invoiced", "remarks": "Application processing"},
+        {"fee": "Technology Transaction Fee", "amount": "$0.385/digital order", "due": "As invoiced", "remarks": "Per Online Ordering Agreement"},
+        {"fee": "Credit Card Processing Fee", "amount": "$0.0525/transaction", "due": "As invoiced", "remarks": "Security costs"},
+        {"fee": "Spanish Language Call Center", "amount": "$3.00/call", "due": "As invoiced", "remarks": "Monthly per store"},
+        {"fee": "Inspections", "amount": "Varies", "due": "As incurred", "remarks": "Travel, room/board, compensation"},
+        {"fee": "Audit Expenses", "amount": "Cost + 1.5%/mo interest", "due": "10 days after final audit", "remarks": "If >2% understatement"},
+        {"fee": "Transfer", "amount": "$1,500", "due": "Before transfer", "remarks": "Per transfer of FA, assets, or ownership"},
+        {"fee": "Training Fees", "amount": "Max $1,250/session", "due": "Upon registration", "remarks": "Supplemental max $500"},
+        {"fee": "Interest on Late Payments", "amount": "Lesser of 1.5%/mo or highest legal rate", "due": "As incurred", "remarks": "2% above Libor for AK/HI"},
+        {"fee": "Testing/Evaluation", "amount": "Varies", "due": "As incurred", "remarks": "See Item 8"},
+        {"fee": "Indemnification", "amount": "Varies", "due": "As incurred", "remarks": "Hold harmless obligation"},
+        {"fee": "Costs of Enforcement/Non-compliance", "amount": "Varies", "due": "As incurred", "remarks": "Customer Care: $20 first/$30 subsequent"},
+        {"fee": "Carryout Tracker Bundle", "amount": "$440.87", "due": "As invoiced", "remarks": "Flex Client + cabling"},
+        {"fee": "Server Bundle", "amount": "$4,025.20", "due": "As invoiced", "remarks": "Pair of servers"},
+        {"fee": "Meraki Licensing", "amount": "$280.00/yr", "due": "As invoiced", "remarks": "WAP & router licensing"},
+        {"fee": "Meraki Router/WAP Bundle", "amount": "$1,039.34", "due": "As invoiced", "remarks": "Hardware only"},
+        {"fee": "Lane 3600 Wired Customer Facing", "amount": "$709.92", "due": "As invoiced", "remarks": "CC reader + 3yr warranty"},
+        {"fee": "Lane 3000 Wired EPP", "amount": "$496.34", "due": "As invoiced", "remarks": "Handheld payment terminal"},
+        {"fee": "Flex Client", "amount": "$431.07", "due": "As invoiced", "remarks": ""},
+        {"fee": "Menuboard Client Bundle", "amount": "$483.31", "due": "As invoiced", "remarks": "Flex client + cabling"},
+        {"fee": "Environmental/EPR Costs", "amount": "Varies", "due": "As invoiced", "remarks": "OR and CO currently; packaging compliance"}
+      ],
+      "table_notes": [
+        "(1) All fees imposed by and payable to us or affiliates. Non-refundable.",
+        "(2) Incentive programs may reduce royalty and/or advertising for periods.",
+        "(3) Royalty Sales exclude taxes, approved coupons; Non-Traditional stadium/airport commissions deducted.",
+        "(4) Current advertising rate is 4%. Certain pre-April 2025 Non-Traditional agreements may have different rate.",
+        "(5) Non-Traditional Stores may get up to 3.5% of 4% rebated for local advertising.",
+        "(6) If 65%+ of cooperative stores agree, same rate applies; min 2%; max 9% combined.",
+        "(7) PULSE hardware $15,000-$25,000; annual maintenance ~$7,000; enhancement fee max 5% increase/yr; Brand Technology additions capped at 1.5% of cumulative Royalty Sales."
+      ]
+    },
+    {
+      "id": "item7_traditional",
+      "item": "Item 7",
+      "title": "Estimated Initial Investment — Traditional Store",
+      "source_pages": [29, 30],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"item": "Initial Fee", "low": "$0", "high": "$10,000", "method": "Lump Sum", "when": "When approved", "to": "Us"},
+        {"item": "Leasehold Improvements", "low": "$67,000", "high": "$350,000", "method": "Lump Sum", "when": "When completed", "to": "Landlord/third party"},
+        {"item": "Furniture, Fixtures & Equipment", "low": "$105,000", "high": "$145,000", "method": "Lump Sum", "when": "30 days after invoice", "to": "DPD/approved supplier"},
+        {"item": "Signage", "low": "$8,200", "high": "$35,000", "method": "Lump Sum", "when": "50% ordered/50% shipped", "to": "Approved Suppliers"},
+        {"item": "3 Month's Rent", "low": "$6,000", "high": "$25,000", "method": "Lump Sum", "when": "When lease signed", "to": "Landlord"},
+        {"item": "Security Deposit", "low": "$1,000", "high": "$10,000", "method": "Lump Sum", "when": "When lease signed", "to": "Landlord"},
+        {"item": "Opening Inventory & Supplies", "low": "$4,750", "high": "$6,500", "method": "Lump Sum", "when": "30 days of delivery", "to": "DPD/approved suppliers"},
+        {"item": "Opening Advertising", "low": "$0", "high": "$3,000", "method": "Lump Sum", "when": "Proof due 90 days after opening", "to": "Us"},
+        {"item": "Training Expenses", "low": "$1,000", "high": "$4,000", "method": "Lump Sum", "when": "When registered", "to": "Us"},
+        {"item": "Insurance", "low": "$25,000", "high": "$75,000", "method": "Lump Sum", "when": "Before opening/sale", "to": "Insurance Company"},
+        {"item": "Miscellaneous Opening Costs", "low": "$3,500", "high": "$7,000", "method": "N/A", "when": "N/A", "to": "Various"},
+        {"item": "Additional Funds — 3 Months", "low": "$10,000", "high": "$73,000", "method": "Unknown", "when": "As incurred", "to": "Employees/third parties"}
+      ],
+      "total": {"low": "$231,450", "high": "$743,500"},
+      "table_notes": ["Leases generally 5 years with 5-year renewal.", "Delivery vehicles not included.", "Insurance may be significantly higher depending on state/location/loss history.", "In 2025, two company store sales exceeded upper range."]
+    },
+    {
+      "id": "item7_non_traditional",
+      "item": "Item 7",
+      "title": "Estimated Initial Investment — Non-Traditional Store",
+      "source_pages": [30, 31],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"item": "Initial Fee", "low": "$0", "high": "$10,000", "method": "Lump Sum", "when": "When approved", "to": "Us"},
+        {"item": "Leasehold Improvements", "low": "$5,000", "high": "$350,000", "method": "Lump Sum", "when": "When completed", "to": "Landlord/third party"},
+        {"item": "Furniture, Fixtures & Equipment", "low": "$62,000", "high": "$136,000", "method": "Lump Sum", "when": "30 days after invoice", "to": "DPD/approved supplier"},
+        {"item": "Signage", "low": "$5,200", "high": "$35,000", "method": "Lump Sum", "when": "50% ordered/50% shipped", "to": "Approved Suppliers"},
+        {"item": "3 Month's Rent", "low": "$3,000", "high": "$25,000", "method": "Lump Sum", "when": "When lease signed", "to": "Landlord"},
+        {"item": "Security Deposit", "low": "$1,000", "high": "$10,000", "method": "Lump Sum", "when": "When lease signed", "to": "Landlord"},
+        {"item": "Opening Inventory & Supplies", "low": "$2,750", "high": "$6,500", "method": "Lump Sum", "when": "30 days of delivery", "to": "DPD/approved suppliers"},
+        {"item": "Opening Advertising", "low": "$0", "high": "$3,000", "method": "Lump Sum", "when": "Proof due 90 days after opening", "to": "Us"},
+        {"item": "Training Expenses", "low": "$1,000", "high": "$4,000", "method": "Lump Sum", "when": "When registered", "to": "Us"},
+        {"item": "Insurance", "low": "$15,000", "high": "$50,000", "method": "Lump Sum", "when": "Before opening/sale", "to": "Insurance Company"},
+        {"item": "Miscellaneous Opening Costs", "low": "$2,500", "high": "$7,000", "method": "N/A", "when": "N/A", "to": "Various"},
+        {"item": "Additional Funds — 3 Months", "low": "$10,000", "high": "$73,000", "method": "Unknown", "when": "As incurred", "to": "Employees/third parties"}
+      ],
+      "total": {"low": "$107,450", "high": "$709,500"},
+      "table_notes": ["Non-Traditional lease terms may be 3 years or less."]
+    },
+    {
+      "id": "item19_awus",
+      "item": "Item 19",
+      "title": "Average Weekly Unit Sales (AWUS)",
+      "source_pages": [65],
+      "columns": ["Year", "Franchised", "Company-Owned", "Combined"],
+      "rows": [
+        {"year": 2020, "franchised": "$25,264", "company": "$26,579", "combined": "$25,336"},
+        {"year": 2021, "franchised": "$26,004", "company": "$25,399", "combined": "$25,970"},
+        {"year": 2022, "franchised": "$25,554", "company": "$23,663", "combined": "$25,334"},
+        {"year": 2023, "franchised": "$25,825", "company": "$25,509", "combined": "$25,810"},
+        {"year": 2024, "franchised": "$26,467", "company": "$26,120", "combined": "$26,269"}
+      ],
+      "table_notes": ["Store counts include all stores open at year end operating full 12 months.", "2024 average delivery area households: 13,982; avg $/household: $1.89."]
+    },
+    {
+      "id": "item19_median",
+      "item": "Item 19",
+      "title": "Median Weekly Unit Sales",
+      "source_pages": [65],
+      "columns": ["Year", "Franchised", "Company-Owned", "Combined"],
+      "rows": [
+        {"year": 2020, "franchised": "$23,845", "company": "$25,776", "combined": "$24,004"},
+        {"year": 2021, "franchised": "$24,739", "company": "$24,683", "combined": "$24,735"},
+        {"year": 2022, "franchised": "$24,322", "company": "$24,248", "combined": "$24,322"},
+        {"year": 2023, "franchised": "$24,594", "company": "$25,535", "combined": "$24,665"},
+        {"year": 2024, "franchised": "$25,160", "company": "$26,264", "combined": "$25,210"}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item19_ebitda_tiers",
+      "item": "Item 19",
+      "title": "EBITDA as Percentage of Royalty Sales by AWUS Tier (FY2024)",
+      "source_pages": [66, 67],
+      "columns": ["AWUS Tier", "Total Variable Costs", "Total Cash Fixed Costs", "EBITDA", "Store Count", "At/Above EBITDA %"],
+      "rows": [
+        {"tier": "<$15,000", "variable": "80.9%", "fixed": "20.2%", "ebitda": "1.7%", "stores": 490, "at_above": "48.6%"},
+        {"tier": "$15,001-$20,000", "variable": "78.7%", "fixed": "17.2%", "ebitda": "6.7%", "stores": 1135, "at_above": "50.4%"},
+        {"tier": "$20,001-$25,000", "variable": "77.5%", "fixed": "15.0%", "ebitda": "10.1%", "stores": 1426, "at_above": "53.1%"},
+        {"tier": "$25,001-$30,000", "variable": "76.9%", "fixed": "13.5%", "ebitda": "12.1%", "stores": 1350, "at_above": "51.6%"},
+        {"tier": "$30,001+", "variable": "76.4%", "fixed": "11.4%", "ebitda": "14.7%", "stores": 1861, "at_above": "49.3%"}
+      ],
+      "table_notes": [
+        "Based on 6,262 franchised stores (of 6,699 operating at year end). 437 excluded: 256 incomplete P&L, 181 not operational full year.",
+        "Variable costs: food, variable labor (excl manager salary), bonus, payroll taxes, workers' comp, mileage/delivery, advertising, royalty, operating supplies.",
+        "Fixed costs: phone/utilities, rent, repairs/maintenance, professional fees, equipment/computer, other taxes, insurance (excl workers' comp), manager salary, misc.",
+        "EBITDA = Royalty Sales - Variable Costs - Fixed Costs + Supply Chain Profit Sharing/Volume Discounts.",
+        "Written substantiation available upon reasonable request."
+      ]
+    },
+    {
+      "id": "item20_table1_traditional",
+      "item": "Item 20",
+      "title": "Table 1 — Systemwide Traditional Outlet Summary",
+      "source_pages": [68],
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        {"type": "Traditional Franchised", "year": 2023, "start": 6438, "end": 6600, "change": 162},
+        {"type": "Traditional Franchised", "year": 2024, "start": 6600, "end": 6751, "change": 151},
+        {"type": "Traditional Franchised", "year": 2025, "start": 6751, "end": 6948, "change": 197},
+        {"type": "Traditional Company-Owned", "year": 2023, "start": 286, "end": 288, "change": 2},
+        {"type": "Traditional Company-Owned", "year": 2024, "start": 288, "end": 292, "change": 4},
+        {"type": "Traditional Company-Owned", "year": 2025, "start": 292, "end": 262, "change": -30},
+        {"type": "Total", "year": 2023, "start": 6724, "end": 6888, "change": 164},
+        {"type": "Total", "year": 2024, "start": 6888, "end": 7043, "change": 155},
+        {"type": "Total", "year": 2025, "start": 7043, "end": 7210, "change": 167}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item20_table3_traditional_totals",
+      "item": "Item 20",
+      "title": "Table 3 — Status of Traditional Franchised Outlets (Totals)",
+      "source_pages": [74, 78],
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased", "End"],
+      "rows": [
+        {"year": 2023, "start": 6438, "opened": 178, "terminations": 8, "non_renewals": 1, "reacquired": 0, "ceased": 7, "end": 6600},
+        {"year": 2024, "start": 6600, "opened": 160, "terminations": 2, "non_renewals": 1, "reacquired": 0, "ceased": 6, "end": 6751},
+        {"year": 2025, "start": 6751, "opened": 214, "terminations": 9, "non_renewals": 2, "reacquired": 2, "ceased": 4, "end": 6948}
+      ],
+      "footer_totals": {
+        "transfers_total_2025": 490,
+        "terminations_total_2025": 9,
+        "non_renewals_total_2025": 2,
+        "reacquired_total_2025": 2,
+        "ceased_operations_total_2025": 4,
+        "projected_openings_total": 195
+      },
+      "table_notes": [
+        "(1) Terminations = FA terminated by DPF for cause.",
+        "(2) Non-Renewals = FA expired, no new FA entered.",
+        "(3) Ceased Operations = FA terminated mutually by DPF and franchisee."
+      ]
+    },
+    {
+      "id": "item20_table4_company_owned",
+      "item": "Item 20",
+      "title": "Table 4 — Status of Company-Owned Outlets",
+      "source_pages": [85, 86],
+      "columns": ["Year", "Start", "Opened", "Reacquired From Franchisee", "Closed", "Sold to Franchisee", "End"],
+      "rows": [
+        {"year": 2023, "start": 286, "opened": 4, "reacquired": 0, "closed": 1, "sold": 1, "end": 288},
+        {"year": 2024, "start": 288, "opened": 7, "reacquired": 0, "closed": 1, "sold": 2, "end": 292},
+        {"year": 2025, "start": 292, "opened": 5, "reacquired": 2, "closed": 0, "sold": 37, "end": 262}
+      ],
+      "table_notes": ["States: FL, MD (sold all 36 in 2025), MI, NV, TX, VA."]
+    },
+    {
+      "id": "item20_table5_projected",
+      "item": "Item 20",
+      "title": "Table 5 — Projected Openings (Dec 29 2025 to Jan 3 2027)",
+      "source_pages": [86, 87],
+      "columns": ["Category", "Total"],
+      "rows": [
+        {"category": "Franchise Agreements Signed But Not Opened", "total": 29},
+        {"category": "Projected New Franchised Outlets", "total": 188},
+        {"category": "Projected New Company-Owned Outlets", "total": 7}
+      ],
+      "projected_openings_total": 195,
+      "table_notes": []
+    },
+    {
+      "id": "item21_dpf_balance_sheet",
+      "item": "Item 21",
+      "title": "DPF Consolidated Balance Sheet",
+      "source_pages": [287],
+      "columns": ["Line Item", "Dec 28 2025 ($K)", "Dec 29 2024 ($K)"],
+      "rows": [
+        {"line": "Restricted cash and cash equivalents", "fy2025": 2871, "fy2024": 1885},
+        {"line": "Accounts receivable, net", "fy2025": 10593, "fy2024": 9019},
+        {"line": "Accounts receivable from affiliated companies", "fy2025": 223, "fy2024": 2490},
+        {"line": "Prepaid expenses and other", "fy2025": 314, "fy2024": 18},
+        {"line": "Total current assets", "fy2025": 14001, "fy2024": 13412},
+        {"line": "Buildings", "fy2025": 16365, "fy2024": 16214},
+        {"line": "Construction in progress", "fy2025": 173, "fy2024": 0},
+        {"line": "Accumulated depreciation", "fy2025": -13367, "fy2024": -13011},
+        {"line": "Property, net", "fy2025": 3171, "fy2024": 3203},
+        {"line": "Other assets", "fy2025": 300, "fy2024": 783},
+        {"line": "Total assets", "fy2025": 17472, "fy2024": 17398},
+        {"line": "Accounts payable and accrued liabilities", "fy2025": 255, "fy2024": 105},
+        {"line": "Total current liabilities", "fy2025": 255, "fy2024": 105},
+        {"line": "Member's interest", "fy2025": 17217, "fy2024": 17293},
+        {"line": "Total liabilities and member's interest", "fy2025": 17472, "fy2024": 17398}
+      ],
+      "table_notes": ["AR reserves: $13K (2025), $9K (2024)."]
+    },
+    {
+      "id": "item21_dpf_income",
+      "item": "Item 21",
+      "title": "DPF Consolidated Statements of Income",
+      "source_pages": [288],
+      "columns": ["Line Item", "FY2025 ($K)", "FY2024 ($K)", "FY2023 ($K)"],
+      "rows": [
+        {"line": "Franchise royalties and fees", "fy2025": 512068, "fy2024": 487089, "fy2023": 463263},
+        {"line": "Total revenues", "fy2025": 512068, "fy2024": 487089, "fy2023": 463263},
+        {"line": "Depreciation and amortization", "fy2025": 381, "fy2024": 396, "fy2023": 656},
+        {"line": "Management fee", "fy2025": 19061, "fy2024": 23578, "fy2023": 22421},
+        {"line": "Gain on sale of assets", "fy2025": 0, "fy2024": 0, "fy2023": -13548},
+        {"line": "Other operating expenses", "fy2025": 637, "fy2024": 602, "fy2023": 640},
+        {"line": "Total operating expenses", "fy2025": 20079, "fy2024": 24576, "fy2023": 10169},
+        {"line": "Income from operations", "fy2025": 491989, "fy2024": 462513, "fy2023": 453094},
+        {"line": "Interest income, net", "fy2025": 34, "fy2024": 454, "fy2023": 193},
+        {"line": "Income before taxes", "fy2025": 492023, "fy2024": 462967, "fy2023": 453287},
+        {"line": "Provision for income taxes", "fy2025": 453, "fy2024": 404, "fy2023": 415},
+        {"line": "Net income", "fy2025": 491570, "fy2024": 462563, "fy2023": 452872}
+      ],
+      "table_notes": []
+    }
+  ]
+}

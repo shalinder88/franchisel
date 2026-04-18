@@ -1,0 +1,345 @@
+{
+  "tables": [
+    {
+      "id": "item5_initial_fees",
+      "item": "5",
+      "title": "Initial Fees Summary",
+      "source_pages": [25, 26, 27, 28],
+      "columns": ["Fee Type", "Amount", "Notes"],
+      "rows": [
+        ["Initial Franchise Fee", "$50,000", "Non-refundable; paid at signing"],
+        ["Veterans Program Fee", "$27,500", "Plus 2% royalty for 6 months"],
+        ["College Program Fee", "$12,500", "0% advertising; 3-5% royalty; min 10-year term"],
+        ["Airport Program Fee", "$12,500", "0% advertising; 4% royalty; min 10-year term"],
+        ["MTRA Deposit", "$25,000 × committed openings", "Non-refundable; credited against franchise fees"],
+        ["Background Check (US)", "$210", "Non-refundable"],
+        ["Background Check (Intl)", "$1,000-$15,000", "Non-refundable"],
+        ["Dev Agreement Costs", "$0-$2,500 per restaurant", "Onboarding/preparation"],
+        ["Construction Review", "$20,000-$80,000", "Only for non-Qualified Partners vendors"],
+        ["Sitewise Software", "$4,545", "Required for Dev/TRA/MTRA holders or new franchisees"]
+      ],
+      "table_notes": ["Actual franchise fees paid in FY2025 ranged from $0 to $50,000"],
+      "provenance": "Item 5 text extraction"
+    },
+    {
+      "id": "item6_fee_table",
+      "item": "6",
+      "title": "Other Fees",
+      "source_pages": [29, 30, 31, 32, 33, 34, 35],
+      "columns": ["Fee Type", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["Royalty", "5% of Gross Sales", "Weekly", "Veterans: 2% for 6 months; ranges 2%-10% in practice"],
+        ["Advertising Contribution", "4.6%-5.0% of Gross Sales", "Weekly", "Ad Fund Test Program; may escalate to 5.25%, then 5.50%"],
+        ["Advertising Co-Op", "0.5%-1.75% of Gross Sales", "Weekly", "DMA-dependent; max 2% without unanimous vote"],
+        ["Consumer Ordering Tech Fee", "$200/mo + 1% Digital Sales (max $6,500/yr)", "Monthly/Weekly", "Covers mobile app, website, kiosk, delivery, loyalty"],
+        ["POP I.T. Fee", "Up to $1,980/yr", "Monthly in advance", "For Easy to Run Kitchen restaurants"],
+        ["Rent (PLK property)", "Varies - see Note 6", "Monthly in advance", "Base + percentage rent structure"],
+        ["Audit", "Cost of audit", "On demand", "If Gross Sales understated by >2%"],
+        ["Costs and Attorneys' Fees", "Our costs and expenses", "Immediately", "Upon termination for default"],
+        ["Guest Recovery Fee", "Not to exceed $150/mo", "On demand", "~$1,200/yr average"],
+        ["Indemnity", "Losses and expenses incurred", "On demand", "Claims relating to restaurant operation"],
+        ["Insurance", "Cost + 15% service charge", "On demand", "If franchisee fails to maintain coverage"],
+        ["Interest on Overdue Payments", "1.5%/mo or max legal rate", "On demand", "From payment due date"],
+        ["Interest on Understated Sales", "1.5%/mo or max legal rate", "On demand", "From payment due date"],
+        ["Late charges/interest (Lease)", "Lesser of 18% or max legal rate", "On demand", "For late lease payments"],
+        ["Indirect Tax", "Amount of applicable tax", "On demand", "Sales/use/VAT/excise taxes"],
+        ["Returned Payment Fee", "$75 per returned payment", "On demand", "NSF or dishonored payments"],
+        ["Product Testing/Approval", "Up to $5,000", "On demand", "Per supplier evaluation"],
+        ["Third-Party Inspections", "Cost of inspections", "On demand", "For failed food safety/brand standards"],
+        ["Renewal", "Pro-rated then-current franchise fee", "At signing", "10-year renewal term"],
+        ["Extension Fee", "Pro-rated then-current franchise fee", "At signing", "For extended term"],
+        ["Supplemental Term Option", "50% of then-current franchise fee", "At signing", "Additional 10-year option"],
+        ["Securities Offering Review", "$5,000-$20,000", "Upon request", "For proposed securities offerings"],
+        ["Transfer Fee", "$7,500 ($1,000 deposit)", "Before transfer", "No fee for 100% owned entity transfers"],
+        ["Impact Study", "$3,500 per study", "On demand", "Site proximity review"],
+        ["Background Check Fee", "$210-$15,000", "On demand", "US vs international"],
+        ["Training Platform Maintenance", "$60/mo ($720/yr)", "On demand", "Per restaurant"],
+        ["Miscellaneous", "Not to exceed $10,000", "As agreed", "Training materials, product initiatives"],
+        ["Gift Card Services", "~1.8% of redeemed sales", "Ongoing", "Transaction fee through vendor"],
+        ["Cure Fee", "Varies by agreement type", "At default", "TRA: full franchise fee; MTRA: balance × missed"],
+        ["Site-Approval Extension", "$5,000", "At request", "If MTRA site approval expires"],
+        ["Shortfall Fee", "Up to $10,000/mo per restaurant", "After target date", "Until restaurant opens"],
+        ["PLK Foundation", "$1,000/yr per restaurant", "On demand", "In-restaurant fundraising or donation"],
+        ["Brand Damage Fee", "Next installment of prepaid franchise fees", "On demand", "Dev Agreement termination"],
+        ["Rescheduling Fee", "Up to $5,000", "On demand", "Opening rescheduled <30 days before"],
+        ["Repair and Maintenance", "Cost + 15% service charge", "Within 15 days", "Franchisor-performed repairs"],
+        ["Food Safety Modernization", "Up to $100/yr per restaurant", "On demand", "FSMA compliance"],
+        ["Sitewise", "$4,545/yr", "On demand", "Mapping/marketing/analytics software"],
+        ["Static Menu Board Kit", "$200-$300/mo", "Monthly", "If no outdoor digital menu board"]
+      ],
+      "table_notes": [
+        "Note 1: All fees non-refundable unless noted. Limitations expire with Franchise Agreement.",
+        "Note 2: Royalty, advertising, rent paid via electronic funds transfer/pre-authorized bank draft.",
+        "Note 3: Veterans Program reduces royalty to 2% for 6 months. Non-traditional locations: 2%-8%.",
+        "Note 4: Ad Fund Test Program starts at 5.0%, may escalate to 5.25% then 5.50% based on EBITDA tests.",
+        "Note 5: Co-op contributions additional to Ad Fund. Max 2% without unanimous vote.",
+        "Note 6: Rent formulas vary by property type (PLK-owned, PLK-leased, direct tenant).",
+        "Note 7: Guest recovery fee averages ~$1,200/yr per restaurant.",
+        "Note 8: $1,000 transfer deposit non-refundable if transfer does not complete."
+      ],
+      "provenance": "Item 6 table extraction from pages 29-35"
+    },
+    {
+      "id": "item7_initial_investment_freestanding",
+      "item": "7",
+      "title": "Estimated Initial Investment — Free-Standing Restaurant",
+      "source_pages": [40],
+      "columns": ["Type of Expenditure", "Low", "High", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        ["Initial Franchise Fee", "$50,000", "$50,000", "Lump sum", "Prior to opening", "Popeyes"],
+        ["Real Estate", "Variable", "Variable", "Monthly", "As arranged", "Lessors/Vendors"],
+        ["Soft Costs", "$10,000", "$420,000", "As arranged", "As arranged", "Popeyes/vendors/govt"],
+        ["Site Work", "$40,000", "$800,000", "As arranged", "As arranged", "General contractors/vendors"],
+        ["Building", "$700,000", "$1,600,000", "As arranged", "As arranged", "General contractors/vendors"],
+        ["FF&E, Signage, Technology", "$340,000", "$865,000", "Lump sum", "As ordered", "Vendors"],
+        ["Initial Training", "$17,200", "$24,200", "Lump sum", "As incurred", "Employees/Vendors/Popeyes"],
+        ["Opening Supplies", "$13,000", "$26,000", "As arranged", "As incurred", "Vendors"],
+        ["Insurance", "$23,000", "$47,000", "As arranged", "As ordered", "Insurance company"],
+        ["Utility Deposits", "$3,000", "$50,000", "Lump sum", "As incurred", "Utility companies/Lessors"],
+        ["Business Licenses", "$1,300", "$6,500", "Lump sum", "Before opening", "Government agencies"],
+        ["Sitewise", "$4,545", "$4,545", "Lump sum", "Annually", "Popeyes"],
+        ["Additional Funds – 3 months", "$20,000", "$30,000", "As arranged", "As needed", "Employees/Suppliers"],
+        ["TOTAL", "$1,222,045", "$3,923,245", "", "", "(excludes real estate)"]
+      ],
+      "table_notes": [
+        "Restaurant size: 1,600-3,500 sq ft. Land: 28,000-38,000 sq ft with 25-30 parking spaces.",
+        "No financing of initial investment offered. No refunds.",
+        "Build to Suit scenarios may substantially lower costs.",
+        "Soft costs include $20K-$80K construction review if using non-Qualified Partners vendors."
+      ],
+      "provenance": "Item 7, page 40"
+    },
+    {
+      "id": "item7_initial_investment_inline",
+      "item": "7",
+      "title": "Estimated Initial Investment — In-Line Restaurant",
+      "source_pages": [40],
+      "columns": ["Type of Expenditure", "Low", "High"],
+      "rows": [
+        ["Initial Franchise Fee", "$50,000", "$50,000"],
+        ["Real Estate", "Variable", "Variable"],
+        ["Soft Costs", "$8,000", "$140,000"],
+        ["Site Work", "Typically not required", "Typically not required"],
+        ["Building", "$100,000", "$800,000"],
+        ["FF&E, Signage, Technology", "$265,000", "$815,000"],
+        ["Initial Training", "$17,200", "$24,200"],
+        ["Opening Supplies", "$13,000", "$26,000"],
+        ["Insurance", "$23,000", "$47,000"],
+        ["Utility Deposits", "$2,500", "$25,000"],
+        ["Business Licenses", "$1,300", "$6,500"],
+        ["Sitewise", "$4,545", "$4,545"],
+        ["Additional Funds – 3 months", "$20,000", "$30,000"],
+        ["TOTAL", "$504,545", "$1,968,245"]
+      ],
+      "table_notes": ["In-line includes strip-style retail, convenience stores, travel plazas, malls, food courts"],
+      "provenance": "Item 7, page 40"
+    },
+    {
+      "id": "item19_table1_freestanding_sales",
+      "item": "19",
+      "title": "Table I: Free-Standing Restaurant Sales (2025)",
+      "source_pages": [90, 91],
+      "columns": ["Metric", "Company Owned", "Franchised", "Consolidated"],
+      "rows": [
+        ["Arithmetic Average Sales", "$1,898,999", "$1,893,675", "$1,893,880"],
+        ["% Met or Exceeded Average", "44.4% (40)", "43.6% (980)", "43.7% (1,021)"],
+        ["Median", "$1,845,516", "$1,785,736", "$1,788,529"],
+        ["High", "$3,282,604", "$5,931,837", "$5,931,837"],
+        ["Low", "$852,812", "$492,576", "$492,576"],
+        ["Number of Restaurants", "90", "2,248", "2,338"],
+        ["Upper Range Avg ($2M+)", "$2,499,332", "$2,624,920", "$2,620,074"],
+        ["Upper Range Count", "34", "847", "881"],
+        ["Middle Range Avg ($1.5M-$2M)", "$1,746,921", "$1,741,756", "$1,741,990"],
+        ["Middle Range Count", "33", "695", "728"],
+        ["Lower Range Avg (<$1.5M)", "$1,229,747", "$1,165,940", "$1,167,953"],
+        ["Lower Range Count", "23", "706", "729"]
+      ],
+      "table_notes": [
+        "Excludes 64 restaurants not in continuous operation during 2025 (52 temporarily closed)",
+        "Sales = all revenue excluding refunds and sales taxes",
+        "Restaurants operating between 1 and 51 years"
+      ],
+      "provenance": "Item 19 Table I, pages 90-91"
+    },
+    {
+      "id": "item19_table2_inline_sales",
+      "item": "19",
+      "title": "Table II: In-Line Restaurant Sales (2025)",
+      "source_pages": [92, 93],
+      "columns": ["Metric", "Company Owned", "Franchised", "Consolidated"],
+      "rows": [
+        ["Arithmetic Average Sales", "$2,232,708", "$1,802,688", "$1,804,415"],
+        ["% Met or Exceeded Average", "50.0% (1)", "42.5% (211)", "42.6% (212)"],
+        ["Median", "$2,232,708", "$1,656,017", "$1,656,017"],
+        ["High", "$3,404,453", "$5,532,409", "$5,532,409"],
+        ["Low", "$1,060,964", "$556,497", "$556,497"],
+        ["Number of Restaurants", "2", "496", "498"]
+      ],
+      "table_notes": ["13 excluded (all temporarily closed)", "Operating between 1 and 46 years"],
+      "provenance": "Item 19 Table II, pages 92-93"
+    },
+    {
+      "id": "item19_table3_foodcourt_sales",
+      "item": "19",
+      "title": "Table III: Franchised Food Court Restaurant Sales (2025)",
+      "source_pages": [94, 95],
+      "columns": ["Metric", "Franchised"],
+      "rows": [
+        ["Arithmetic Average Sales", "$1,328,516"],
+        ["% Met or Exceeded Average", "39.6% (74)"],
+        ["Median", "$1,177,028"],
+        ["High", "$5,570,945"],
+        ["Low", "$336,393"],
+        ["Number of Restaurants", "187"]
+      ],
+      "table_notes": ["Food court includes malls, airports, travel plazas, amusement parks, military bases", "6 excluded", "Operating between 1 and 33 years"],
+      "provenance": "Item 19 Table III, pages 94-95"
+    },
+    {
+      "id": "item19_table4_ebitda_by_sales",
+      "item": "19",
+      "title": "Table IV: EBITDA by Annual Sales Level — Free-Standing & In-Line Franchised (2025)",
+      "source_pages": [96, 97, 98],
+      "columns": ["Sales Level", "Avg Sales", "Food & Paper %", "Labor %", "Other %", "EBITDA %", "EBITDA $", "Count"],
+      "rows": [
+        ["FS <$1.5M", "$1,176,101", "31.3%", "29.1%", "36.1%", "3.5%", "$41,234", "637"],
+        ["FS $1.5M-$2.0M", "$1,744,623", "30.8%", "26.3%", "31.7%", "11.2%", "$194,886", "624"],
+        ["FS $2.0M-$2.5M", "$2,230,216", "30.4%", "25.1%", "29.6%", "14.9%", "$331,499", "382"],
+        ["FS >$2.5M", "$3,066,573", "30.0%", "24.8%", "27.4%", "17.9%", "$547,990", "364"],
+        ["IL <$1.5M", "$1,201,327", "29.7%", "32.2%", "30.7%", "7.4%", "$88,814", "169"],
+        ["IL $1.5M-$2.0M", "$1,759,965", "29.0%", "28.8%", "30.5%", "11.7%", "$206,236", "133"],
+        ["IL $2.0M-$2.5M", "$2,231,624", "29.0%", "25.7%", "31.2%", "14.1%", "$315,259", "70"],
+        ["IL >$2.5M", "$3,135,750", "29.1%", "24.8%", "27.6%", "18.5%", "$579,799", "56"]
+      ],
+      "table_notes": [
+        "Based on 2,435 of 2,818 restaurants (383 excluded: 309 incomplete/improper P&L, 74 not full year)",
+        "FS = Free-Standing, IL = In-Line",
+        "EBITDA = Sales - Food & Paper - Labor - Other Costs",
+        "EBITDA excludes depreciation, amortization, interest, taxes, franchise fees, loan fees",
+        "Labor Costs do NOT include owner's draw",
+        "Other Costs include royalties, advertising, occupancy, utilities, insurance, misc."
+      ],
+      "provenance": "Item 19 Table IV, pages 96-98"
+    },
+    {
+      "id": "item19_table5_ebitda_by_tier",
+      "item": "19",
+      "title": "Table V: EBITDA by Operational Tier — Free-Standing & In-Line Franchised (2025)",
+      "source_pages": [99, 100, 101],
+      "columns": ["Format/Tier", "Avg Sales", "EBITDA %", "EBITDA $", "Count"],
+      "rows": [
+        ["FS Tier 4 (lowest)", "$1,609,612", "8.3%", "$134,384", "397"],
+        ["FS Tier 3", "$1,755,572", "11.2%", "$196,929", "364"],
+        ["FS Tier 2", "$1,955,696", "13.0%", "$254,652", "827"],
+        ["FS Tier 1 (highest)", "$2,173,251", "15.2%", "$330,183", "419"],
+        ["IL Tier 4 (lowest)", "$1,438,568", "9.8%", "$141,084", "33"],
+        ["IL Tier 3", "$1,598,103", "10.2%", "$163,700", "51"],
+        ["IL Tier 2", "$1,796,886", "12.9%", "$231,589", "190"],
+        ["IL Tier 1 (highest)", "$1,938,512", "13.4%", "$259,541", "154"]
+      ],
+      "table_notes": [
+        "Tiers assigned 3x/year based on guest complaints, speed of service, training certifications, brand standards audits",
+        "Tier 1 = highest quality; Tier 4 = lowest quality",
+        "Strong correlation: FS Tier 1 averages $196K more EBITDA than Tier 4"
+      ],
+      "provenance": "Item 19 Table V, pages 99-101"
+    },
+    {
+      "id": "item20_table1_system_summary",
+      "item": "20",
+      "title": "Table 1: System-wide Outlet Summary (2023-2025)",
+      "source_pages": [104],
+      "columns": ["Outlet Type", "Year", "Start of Year", "End of Year", "Net Change"],
+      "rows": [
+        ["Franchised", "2023", "2,905", "3,035", "+130"],
+        ["Franchised", "2024", "3,035", "3,079", "+44"],
+        ["Franchised", "2025", "3,079", "3,134", "+55"],
+        ["Company-Owned", "2023", "41", "41", "0"],
+        ["Company-Owned", "2024", "41", "98", "+57"],
+        ["Company-Owned", "2025", "98", "95", "-3"],
+        ["Total", "2023", "2,946", "3,076", "+130"],
+        ["Total", "2024", "3,076", "3,177", "+101"],
+        ["Total", "2025", "3,177", "3,229", "+52"]
+      ],
+      "table_notes": [],
+      "provenance": "Item 20 Table 1, page 104"
+    },
+    {
+      "id": "item20_table2_transfers_totals",
+      "item": "20",
+      "title": "Table 2: Transfers — Annual Totals",
+      "source_pages": [104, 105, 106, 107],
+      "columns": ["Year", "Total Transfers"],
+      "rows": [
+        ["2023", "128"],
+        ["2024", "125"],
+        ["2025", "229"]
+      ],
+      "table_notes": ["Transfers = 50%+ ownership interest changes", "2025 top states: IL (38), CA (26), OH (23), MI (21), AZ (16)"],
+      "provenance": "Item 20 Table 2, pages 104-107"
+    },
+    {
+      "id": "item20_table3_franchised_status_totals",
+      "item": "20",
+      "title": "Table 3: Status of Franchised Outlets — Totals",
+      "source_pages": [108, 109, 110, 111, 112],
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased-Other", "End"],
+      "rows": [
+        ["2023", "2,905", "165", "0", "4", "0", "31", "3,035"],
+        ["2024", "3,035", "136", "0", "8", "58", "26", "3,079"],
+        ["2025", "3,079", "104", "14", "2", "0", "33", "3,134"]
+      ],
+      "table_notes": [
+        "2024: 58 reacquired (MS: 32, TN: 17, LA: 5, KY: 3, VA: 1)",
+        "2025: First material terminations (14) in 3-year period",
+        "2025: GA notable — 6 terminations + 12 ceased = net -14 units"
+      ],
+      "provenance": "Item 20 Table 3, pages 108-112"
+    },
+    {
+      "id": "item20_table4_company_owned",
+      "item": "20",
+      "title": "Table 4: Company-Owned Outlets (2023-2025)",
+      "source_pages": [113],
+      "columns": ["Year", "Start", "Opened", "Reacquired", "Closed", "Sold", "End"],
+      "rows": [
+        ["2023", "41", "0", "0", "0", "0", "41"],
+        ["2024", "41", "0", "58", "1", "0", "98"],
+        ["2025", "98", "0", "0", "3", "0", "95"]
+      ],
+      "table_notes": ["Concentrated in MS (34), LA (30), TN (26), KY (3), AR (1), VA (1)"],
+      "provenance": "Item 20 Table 4, page 113"
+    },
+    {
+      "id": "item20_table5_projected_openings",
+      "item": "20",
+      "title": "Table 5: Projected Openings",
+      "source_pages": [114, 115],
+      "columns": ["Metric", "Total"],
+      "rows": [
+        ["Franchise Agreements Signed but Not Opened", "12"],
+        ["Projected New Franchised Outlets", "104"],
+        ["Projected New Company-Owned Outlets", "0"]
+      ],
+      "table_notes": ["Top projected states: TX (15), PA (10), CA (9), NY (7), MI (5), FL (4), VA (4), PR (4)"],
+      "provenance": "Item 20 Table 5, pages 114-115"
+    },
+    {
+      "id": "item11_training_program",
+      "item": "11",
+      "title": "Popeyes Training Program (PTP) Schedule",
+      "source_pages": [60],
+      "columns": ["Week", "Subject", "On-The-Job Hours", "Location"],
+      "rows": [
+        ["Week 1", "Welcome to Popeyes! & Team Member Production", "15", "Certified Training Restaurant"],
+        ["Week 2", "ServSafe & Team Member Service", "20", "Certified Training Restaurant"],
+        ["Week 3", "Shift Manager Production", "20", "Certified Training Restaurant"],
+        ["Week 4", "Shift Manager Service & Certification", "20", "Certified Training Restaurant"],
+        ["Week 5", "RGM Training & Shadow Shift Running", "20", "Certified Training Restaurant"],
+        ["Week 6", "Supervised Shift Running & RGM Certification", "20", "Certified Training Restaurant"]
+      ],
+      "table_notes": ["Total: 115 hours over 6 weeks", "PTP may last 6-10 weeks total including orientation"],
+      "provenance": "Item 11, page 60"
+    }
+  ]
+}

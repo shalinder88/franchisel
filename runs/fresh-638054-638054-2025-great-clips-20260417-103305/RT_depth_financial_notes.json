@@ -1,0 +1,126 @@
+{
+  "depth_pass": "A2_depth_pass_1",
+  "target": "Item 21 Financial Statement Notes",
+  "source_pages": [175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186],
+  "auditor_identified_via": "targeted_image_fallback",
+  "auditor": "RSM US LLP",
+  "auditor_location": "Minneapolis, Minnesota",
+  "audit_date": "March 26, 2025",
+  "opinion": "Unqualified (clean)",
+  "going_concern": false,
+  "note_families": [
+    {
+      "note": "Note 1 — Nature of Business and Significant Accounting Policies",
+      "pages": [175, 176, 177, 178, 179],
+      "policies": {
+        "cash_and_equivalents": "Highly liquid investments with original maturities ≤90 days. Cash in Canadian banks: $7,346,000 (2024).",
+        "restricted_cash": "Ad Fund restricted cash + state-required franchise fee deposits.",
+        "trade_receivables": "Carried at original invoice less credit loss estimate ($704,000 at 12/31/2024). Written off when uncollectible.",
+        "inventories": "FIFO, lower of cost or net realizable value. Graphics, salon supplies, equipment.",
+        "property_equipment": "Straight-line depreciation. Useful lives: transportation 5-20 years, computer 3-5 years, leasehold improvements 5-10 years, equipment 3-7 years.",
+        "leases_rou": "ASC 842 adopted 1/1/2022. Operating leases recognized as ROU assets and liabilities. Risk-free discount rate election (US Treasury). Initial ROU assets ~$11.5M, liabilities ~$13.9M. Cumulative adoption adjustment ~$450k to accumulated deficit.",
+        "impairment": "Reviewed when events indicate non-recoverability. No triggering events 2022-2024.",
+        "goodwill": "Private company alternative (ASU 2014-02). Amortized straight-line over 10 years. Entity-level impairment testing. Fully amortized in 2024. Original $4,569,158 from two regional franchisee acquisitions.",
+        "employee_retention_credit": "$3,985,000 recognized in 2022. Receivable of $1,480,000 at 12/31/2024 and 2023.",
+        "revenue_recognition": "ASC 606. CFF: 6% royalty recognized as underlying sales occur. IFF: deferred and amortized over 12 years (estimated franchise life). Ad Fund: 5% recognized when underlying sales occur.",
+        "salon_development_sales": "Agent arrangement — recorded net. Gross sales $16,270,000 (2024).",
+        "advertising": "Franchise development advertising expensed when incurred: $186,000 (2024).",
+        "income_taxes": "C corporation. Asset/liability method. Deferred taxes on temporary differences. More-likely-than-not threshold for uncertain positions. No unrecognized tax benefits.",
+        "foreign_currency": "Canadian locations translated at year-end rates (assets/liabilities), period rates (revenue/expense). Translation gains/losses in OCI.",
+        "use_of_estimates": "Standard GAAP estimate disclosure.",
+        "subsequent_events": "Evaluated through March 26, 2025."
+      }
+    },
+    {
+      "note": "Note 2 — North American Advertising Fund",
+      "pages": [179, 180],
+      "key_facts": {
+        "restricted_cash_2024": 20560695,
+        "other_current_assets_2024": 12505167,
+        "total_ad_fund_2024": 33065862,
+        "admin_services_2024": 4348000,
+        "trade_receivables_from_ad_fund_2024": 707000,
+        "canadian_bank_cash_2024": 5411000
+      }
+    },
+    {
+      "note": "Note 3 — Leases",
+      "pages": [180, 181],
+      "key_facts": {
+        "rou_assets_2024": 4157000,
+        "total_lease_liabilities_2024": 5370000,
+        "current_lease_liabilities_2024": 1397000,
+        "weighted_avg_remaining_term_years": 4.5,
+        "weighted_avg_discount_rate": 0.019,
+        "operating_lease_cost_2024": 1902000,
+        "variable_lease_cost_2024": 941000,
+        "total_lease_cost_2024": 2843000,
+        "future_payments": {"2025": 1501000, "2026": 1100000, "2027": 1058000, "2028": 1075000, "2029": 986000, "total": 5720000, "imputed_interest": -350000, "present_value": 5370000}
+      }
+    },
+    {
+      "note": "Note 4 — Goodwill",
+      "pages": [181],
+      "key_facts": {"gross_value": 4569158, "accumulated_amortization_2024": 4569158, "net_book_value_2024": 0, "amortization_2024": 485000, "fully_amortized": true}
+    },
+    {
+      "note": "Note 5 — Deferred Compensation",
+      "pages": [182],
+      "key_facts": {
+        "plan1_traditional": {"max_deferral": 100000, "interest": "WACC", "liability_2024": 2064000},
+        "plan2_long_term_incentive": {"adopted": "April 10, 2023", "performance_period": "3 years", "expense_2024": 467000, "liability_2024": 908000},
+        "plan3_terminated": {"terminated": "February 16, 2023", "remaining_due_2025": 1537000, "paid_2024": 3106000}
+      }
+    },
+    {
+      "note": "Note 6 — Financing Arrangements",
+      "pages": [182, 183],
+      "key_facts": {
+        "rloc_capacity": 35000000, "rloc_drawn_2024": 0, "rloc_maturity": "August 2027",
+        "term_note_2024": 8000000, "term_note_rate": "5.93% (SOFR+margin)",
+        "subordinated_notes_2024": 6754731, "subordinated_rate": "8.5%",
+        "total_debt_2024": 14754731,
+        "principal_payments": {"2025": 3250000, "2026": 3750000, "2027": 7755000},
+        "collateral": "Substantially all business assets",
+        "covenants": ["dividend restrictions", "stock redemption limits", "interest coverage ratio", "debt service coverage ratio", "leverage ratio"]
+      }
+    },
+    {
+      "note": "Note 7 — Commitments and Contingencies",
+      "pages": [183, 184],
+      "key_facts": {
+        "lease_guarantees_count": 249,
+        "lease_guarantees_annual_rent": 8994000,
+        "lease_guarantee_liability": 1277000,
+        "lease_guarantee_expirations": "2025-2035",
+        "sponsorships": {"NHL_2025": 3800000, "NHL_2026": 3800000, "NCAA_2025": 9982000, "NCAA_2026": 10346000, "ESPN_2025": 1000000, "ESPN_2026": 930000},
+        "litigation": "No material adverse effect expected"
+      }
+    },
+    {
+      "note": "Note 8 — Shareholders' Equity",
+      "pages": [184],
+      "key_facts": {"stock_repurchase_agreements": true, "valuation_method": "EBITDA multiple", "voting_shares": 6000, "nonvoting_shares_2024": 1742153}
+    },
+    {
+      "note": "Note 9 — Income Taxes",
+      "pages": [184, 185],
+      "key_facts": {
+        "effective_rate": 0.25, "current_expense_2024": 8456151, "deferred_benefit_2024": -1913256,
+        "total_tax_2024": 6542895, "net_dta_2024": 5267000,
+        "valuation_allowance_2024": 0, "unrecognized_tax_benefits": 0,
+        "key_dta_components": {"revenue_recognition": 2379000, "operating_lease_liabilities": 1317000, "deferred_compensation": 1106000, "deferred_revenue": 1064000, "section_174": 845000}
+      }
+    },
+    {
+      "note": "Note 10 — Employee Benefit Plan",
+      "pages": [186],
+      "key_facts": {"type": "401(k) safe harbor", "match": "100% of first 2% + 50% of next 4%", "employer_match_2024": 1040000}
+    },
+    {
+      "note": "Note 11 — Related-Party Transactions",
+      "pages": [186],
+      "key_facts": {"related_party_salons_2024": 23, "cff_revenue_2024": 647000, "accounts_receivable_2024": 42000, "unearned_iff_2024": 116000}
+    }
+  ]
+}

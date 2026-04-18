@@ -1,0 +1,41 @@
+{
+  "depth_pass": "state_addenda",
+  "states_with_addenda": ["California", "Hawaii", "Illinois", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "Virginia", "Washington", "Wisconsin"],
+  "total_states": 12,
+
+  "overrides": [
+    {"state": "California", "affected_family": "general_release", "override_summary": "General release may not be required under CA Corp Code §31512 and CA Bus & Prof Code §20010", "why_it_matters": "CA franchisees cannot be forced to waive franchise law rights upon renewal/transfer", "source_pages": [252, 288, 289]},
+    {"state": "California", "affected_family": "noncompete", "override_summary": "Post-term noncompete may not be enforceable under California law", "why_it_matters": "CA franchisees may be free to operate competing businesses immediately after termination", "source_pages": [252]},
+    {"state": "California", "affected_family": "forum_selection", "override_summary": "Arbitration in MN and MN forum selection may not be enforceable", "why_it_matters": "CA franchisees may be able to litigate/arbitrate in California", "source_pages": [252]},
+    {"state": "California", "affected_family": "damages", "override_summary": "Waiver of punitive damages and jury trial may not be enforceable", "why_it_matters": "CA franchisees retain access to punitive damages and jury trials", "source_pages": [252]},
+    {"state": "Illinois", "affected_family": "governing_law", "override_summary": "Illinois Franchise Disclosure Act provisions supersede inconsistent agreement terms", "why_it_matters": "IL law protections apply regardless of MN choice of law", "source_pages": [254, 292]},
+    {"state": "Maryland", "affected_family": "general_release", "override_summary": "General release upon renewal/transfer does not apply to Maryland Franchise Law claims", "why_it_matters": "MD franchisees retain right to sue under MD franchise law even after signing release", "source_pages": [255, 293]},
+    {"state": "Maryland", "affected_family": "forum_selection", "override_summary": "Franchisee may sue in Maryland for claims arising under Maryland Franchise Registration and Disclosure Law", "why_it_matters": "MD franchisees can litigate MD law claims in home state", "source_pages": [293]},
+    {"state": "Maryland", "affected_family": "termination", "override_summary": "Termination for bankruptcy may not be enforceable under US Bankruptcy Act", "why_it_matters": "Bankruptcy filing alone may not justify termination for MD franchisees", "source_pages": [293]},
+    {"state": "Maryland", "affected_family": "surety_bond", "override_summary": "Surety bond required by Maryland Securities Division to secure pre-opening obligations", "why_it_matters": "Additional protection for MD franchisees' pre-opening payments", "source_pages": [293]},
+    {"state": "Michigan", "affected_family": "termination", "override_summary": "Termination only for good cause; must provide 30-day written notice and cure opportunity", "why_it_matters": "MI franchisees get stronger termination protections", "source_pages": [5, 6]},
+    {"state": "Michigan", "affected_family": "noncompete", "override_summary": "Franchisor cannot refuse renewal without fair market value compensation (if term <5 years and franchisee prohibited from continuing under different brand)", "why_it_matters": "MI franchisees entitled to FMV compensation on non-renewal", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "forum_selection", "override_summary": "Cannot require arbitration or litigation outside Michigan", "why_it_matters": "MI franchisees can arbitrate/litigate in Michigan", "source_pages": [5]},
+    {"state": "Michigan", "affected_family": "transfer", "override_summary": "Cannot refuse transfer except for good cause (enumerated)", "why_it_matters": "MI franchisees have stronger transfer rights", "source_pages": [5, 6]},
+    {"state": "Minnesota", "affected_family": "governing_law", "override_summary": "Minnesota Franchise Act provisions may supersede agreement terms", "why_it_matters": "Additional MN franchise law protections apply", "source_pages": [257, 295, 296, 297]},
+    {"state": "North Dakota", "affected_family": "governing_law", "override_summary": "North Dakota Century Code franchise provisions supersede inconsistent terms", "why_it_matters": "ND franchise law protections apply", "source_pages": [258, 300]},
+    {"state": "Washington", "affected_family": "governing_law", "override_summary": "Washington Franchise Investment Protection Act prevails in conflicts", "why_it_matters": "WA law supersedes MN choice-of-law", "source_pages": [302]},
+    {"state": "Washington", "affected_family": "forum_selection", "override_summary": "Arbitration/mediation must be in Washington or mutually agreed location", "why_it_matters": "WA franchisees can resolve disputes locally", "source_pages": [302]},
+    {"state": "Washington", "affected_family": "general_release", "override_summary": "Release void except in negotiated post-agreement settlements with independent counsel per RCW 19.100.220(2)", "why_it_matters": "WA franchisees retain franchise law rights through renewal/transfer", "source_pages": [302]},
+    {"state": "Washington", "affected_family": "transfer", "override_summary": "Transfer fees collectable only to extent they reflect franchisor's reasonable estimated or actual costs", "why_it_matters": "WA may limit the $9,999/$25,000 transfer fees to actual costs", "source_pages": [302]},
+    {"state": "Washington", "affected_family": "termination", "override_summary": "Franchisee may terminate under any grounds permitted by state law; buy-back at less than FMV may be voidable within 2 years of signing", "why_it_matters": "WA franchisees have expanded termination rights and asset protection", "source_pages": [302, 303]},
+    {"state": "Washington", "affected_family": "surety_bond", "override_summary": "Surety bond required due to SFG's lack of operating history", "why_it_matters": "Additional WA franchisee protection for pre-opening obligations", "source_pages": [302]},
+    {"state": "Virginia", "affected_family": "governing_law", "override_summary": "Virginia franchise law provisions supersede inconsistent terms", "why_it_matters": "VA franchise law protections apply", "source_pages": [260]},
+    {"state": "Rhode Island", "affected_family": "governing_law", "override_summary": "Rhode Island franchise law provisions apply", "why_it_matters": "RI franchise law protections apply", "source_pages": [259, 301]}
+  ],
+
+  "summary_table": {
+    "forum_selection_override": ["California", "Michigan", "Washington"],
+    "noncompete_limited": ["California"],
+    "general_release_limited": ["California", "Maryland", "Washington"],
+    "termination_protections": ["Maryland", "Michigan", "Washington"],
+    "transfer_protections": ["Michigan", "Washington"],
+    "surety_bond_required": ["Maryland", "Washington"],
+    "governing_law_override": ["Illinois", "Minnesota", "North Dakota", "Virginia", "Washington", "Rhode Island"]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "depth_block": "A2_item20_completion",
+  "tables_extracted": {
+    "dunkin_table1_systemwide": {"status": "complete", "source_pages": [99]},
+    "dunkin_table2_transfers": {"status": "complete", "source_pages": [99, 100, 101, 102], "total_2025": 241, "total_2024": 137, "total_2023": 224},
+    "dunkin_table3_franchised_status": {"status": "complete", "source_pages": [102, 103, 104, 105], "totals_2025": {"start": 8465, "opened": 314, "terminations": 2, "non_renewals": 24, "reacquired": 0, "ceased": 55, "end": 8744}},
+    "dunkin_table4_company_owned": {"status": "complete", "source_pages": [105], "all_ohio": true, "end_2025": 36},
+    "dunkin_table5_projected": {"status": "complete", "source_pages": [105, 106], "fas_signed_not_open": 229, "projected_franchised": 406, "projected_company_owned": 10},
+    "combo_table1_systemwide": {"status": "complete", "source_pages": [108]},
+    "combo_table2_transfers": {"status": "complete", "source_pages": [108, 109]},
+    "combo_table3_franchised_status": {"status": "complete", "source_pages": [110, 111, 112]},
+    "combo_table4_company_owned": {"status": "complete", "source_pages": [112]},
+    "combo_table5_projected": {"status": "complete", "source_pages": [112, 113]}
+  },
+  "multi_brand_notes": {
+    "total_multi_brand_locations": 36,
+    "jimmy_johns": 14,
+    "arbys": 4,
+    "br_plus_jj": 2,
+    "no_closures_3yr": true
+  },
+  "gag_clause": {
+    "present": true,
+    "quote": "In some instances, current and former franchisees sign provisions restricting their ability to speak openly about their experience with us.",
+    "source_pages": [114]
+  }
+}

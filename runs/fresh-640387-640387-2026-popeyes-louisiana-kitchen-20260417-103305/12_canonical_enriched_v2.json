@@ -1,0 +1,197 @@
+{
+  "_enrichment_version": "v2",
+  "_note": "Self-contained enrichment v2 — all canonical fields plus deeper per-item structured families",
+  "document_identity": {
+    "filing_id": "640387",
+    "brand": "Popeyes Louisiana Kitchen",
+    "franchisor_legal_name": "Popeyes Louisiana Kitchen, Inc.",
+    "issuance_date": "2026-03-20",
+    "pdf_pages": 630,
+    "extraction_date": "2026-04-18"
+  },
+  "item1": {
+    "formed_date": "1992-07-27",
+    "franchising_since": "1976",
+    "first_restaurant": "1972 (New Orleans, LA)",
+    "system_size": {"worldwide": 5413, "us_total": 3228, "us_franchised": 3133, "us_company": 95, "international": 2112},
+    "parent": "Restaurant Brands International Inc. (RBI)",
+    "ultimate_owner": "3G Restaurant Brands Holdings (~22% voting power)",
+    "sister_brands": ["Burger King", "Tim Hortons", "Firehouse Subs"]
+  },
+  "item2_leadership": [
+    {"name": "Jill Granat", "role": "Director, Secretary, General Counsel RBI", "since": "2017-03"},
+    {"name": "Sami Siddiqui", "role": "Director, CFO & VP", "since": "2024-03"},
+    {"name": "Vicente Tome", "role": "Director, VP Legal", "since": "2025-06"},
+    {"name": "Patrick Doyle", "role": "Executive Chairman RBI", "since": "2022-11"},
+    {"name": "Joshua Kobza", "role": "CEO RBI", "since": "2023-03"},
+    {"name": "Peter Perdue", "role": "President US & Canada", "since": "2025-11"},
+    {"name": "Tiffany Ahmed", "role": "CFO & VP Finance", "since": "2025-09"},
+    {"name": "Matt Rubin", "role": "CMO", "since": "2026-01"},
+    {"name": "Bryan Saul", "role": "VP Development & Franchising", "since": "2026-01"},
+    {"name": "Michael Black", "role": "Regional VP West", "since": "2024-04"},
+    {"name": "Jack McCluskey", "role": "Regional VP East", "since": "2026-01"}
+  ],
+  "item3_litigation": {
+    "pending": 7, "franchisor_initiated": 4, "concluded": 3,
+    "no_poach_settlements": true,
+    "material_exposure": "CAD$6M (Syed), CAD$36M (ADP Direct Poultry), putative class action (Mun)"
+  },
+  "item5_initial_fees": {
+    "standard": 50000, "veterans": 27500, "college": 12500, "airport": 12500,
+    "mtra_deposit_per_unit": 25000, "background_us": 210
+  },
+  "item6_fee_detail": {
+    "royalty": {"standard": "5%", "veterans": "2% for 6 months", "range_actual": "2%-10%"},
+    "advertising": {"base": "4.6%", "test_program": "5.0%", "potential_max": "5.50%"},
+    "co_op": {"range": "0.5%-1.75%", "max": "2%"},
+    "tech_fee": {"fixed": "$200/mo", "variable": "1% of Digital Sales", "cap": "$6,500/yr"},
+    "pop_it": "$1,980/yr",
+    "training_platform": "$720/yr",
+    "plk_foundation": "$1,000/yr",
+    "sitewise": "$4,545/yr",
+    "transfer_fee": 7500,
+    "renewal_fee": "pro-rated then-current franchise fee"
+  },
+  "item7_total_investment": {
+    "freestanding": {"low": 1222045, "high": 3923245},
+    "inline": {"low": 504545, "high": 1968245},
+    "excludes_real_estate": true
+  },
+  "item8_supplier_restrictions": {
+    "approved_pct": "95%",
+    "revenue_from_purchases": {"amount": "13.7M", "pct_of_revenue": "1.7%"},
+    "cooperative": "Supply Management Services, Inc. (SMS)"
+  },
+  "item9_obligations": {
+    "categories": 25,
+    "guarantee_threshold": "10%+ owners"
+  },
+  "item10_financing": {
+    "direct": false,
+    "ascentium": {"range": [5000, 2000000], "rate": "~7.25%", "term_months": [12, 72]},
+    "leaf": {"range": [5000, 2000000], "rate": "8.25%-12.50%", "term_months": [24, 84]}
+  },
+  "item11_training": {
+    "program": "PTP",
+    "hours": 115,
+    "weeks": "6-10",
+    "fee_per_participant": 5000,
+    "min_trainees_first": 5,
+    "min_trainees_additional": 3,
+    "ongoing": "1 RGM + 3 shift managers certified at all times"
+  },
+  "item12_territory": {
+    "protected_area": "lesser of 1-mile or 50K population",
+    "exclusivity_tra_mtra": false,
+    "alternative_venues_excluded": true,
+    "channel_rights_reserved": true
+  },
+  "item17_termination": {
+    "cure_period_days": 30,
+    "nonpayment_cure_days": 10,
+    "noncurable_defaults_count": 13
+  },
+  "item17_transfer": {
+    "fee": 7500,
+    "rofr": true,
+    "death_disability_months": 12
+  },
+  "item17_renewal": {
+    "initial_term": 20,
+    "renewal_term": 10,
+    "supplemental_term": 10,
+    "materially_different_risk": true
+  },
+  "item17_noncompete": {
+    "scope": "chicken QSR",
+    "radius_miles": 10,
+    "post_term_years": 2
+  },
+  "item17_dispute_resolution": {
+    "method": "litigation",
+    "venue": "S.D. Florida or 11th Judicial Court Miami-Dade",
+    "law": "Florida"
+  },
+  "item19_chart_detail": {
+    "freestanding_avg": 1893880,
+    "freestanding_median": 1788529,
+    "freestanding_count": 2338,
+    "inline_avg": 1804415,
+    "foodcourt_avg": 1328516,
+    "bottom_quartile_ebitda_pct": 3.5,
+    "top_quartile_ebitda_pct": 17.9,
+    "tier1_vs_tier4_delta": 195799
+  },
+  "item20_yearly_activity": {
+    "2025": {
+      "franchised_net": 55,
+      "openings": 104,
+      "terminations": 14,
+      "ceased_other": 33,
+      "transfers": 229,
+      "projected_openings": 104
+    },
+    "gag_clause": true,
+    "former_franchisees": 278,
+    "franchisee_association": "PIFA"
+  },
+  "item21_structural_facts": {
+    "auditor": "KPMG LLP",
+    "opinion": "clean/unqualified",
+    "total_assets": "25.615B",
+    "long_term_debt": "13.250B",
+    "net_income_continuing": "1.201B",
+    "plk_revenue": "800M",
+    "plk_aoi": "250M"
+  },
+  "item21_financial_structure_detail": {
+    "debt_to_equity": 2.57,
+    "interest_expense": "516M",
+    "intangibles_pct": "68%",
+    "cash": "1.163B",
+    "revolver_available": "1.248B",
+    "plk_is_guarantor": true
+  },
+  "item21_note_families": [
+    {"family": "Revenue Recognition", "walked": true, "pages": [520]},
+    {"family": "Equity Method Investments", "walked": true, "pages": [525]},
+    {"family": "Interest Expense", "walked": true, "pages": [530]},
+    {"family": "Long-Term Debt", "walked": true, "pages": [528]},
+    {"family": "Leases", "walked": true, "pages": [590]},
+    {"family": "Segments", "walked": true, "pages": [570]},
+    {"family": "Property Revenues", "walked": true, "pages": [538]},
+    {"family": "Income Taxes", "walked": true, "pages": [540]}
+  ],
+  "contract_burden_depth": {
+    "franchise_agreement_term": "20 years",
+    "total_potential_term": "40 years (20 + 10 renewal + 10 supplemental)",
+    "noncompete": "2 years post-term, chicken QSR within 10 miles",
+    "dispute_venue": "Florida (litigation only)",
+    "managing_director": "Full-time, nearby residence, no competing business",
+    "guarantee": "Joint and several, 10%+ owners",
+    "renewal_risk": "Must sign then-current form with potentially different terms",
+    "territory_risk": "Narrow protected area (≤1 mile or ≤50K population), reducible"
+  },
+  "state_addenda_overrides": {
+    "count": 14,
+    "key_overrides": {
+      "venue": ["Illinois", "Washington", "North Dakota"],
+      "franchise_law": ["California", "Hawaii", "Minnesota", "New York", "North Dakota", "Washington"],
+      "waiver": ["Hawaii", "Minnesota", "New York", "Michigan"],
+      "guarantor_rbilp": ["California", "Illinois", "Maryland", "North Dakota", "Rhode Island", "Virginia", "Washington"]
+    }
+  },
+  "special_risks": ["Out-of-state dispute resolution (Florida)"],
+  "unresolveds": [
+    {"id": "U1", "description": "EBITDA excludes owner compensation", "severity": "medium"},
+    {"id": "U2", "description": "Ad Fund Test rate uncertainty (up to 5.50%)", "severity": "medium"},
+    {"id": "U3", "description": "Protected Area reducible for population shifts", "severity": "medium"},
+    {"id": "U4", "description": "Renewal with materially different terms", "severity": "high"},
+    {"id": "U5", "description": "Georgia 2025: net loss of 14 units unexplained", "severity": "medium"},
+    {"id": "U6", "description": "Transfer acceleration (229 vs 125)", "severity": "medium"},
+    {"id": "U7", "description": "Gag clause limits due diligence", "severity": "high"}
+  ],
+  "contradictions": [
+    {"id": "C1", "description": "Item 1 vs Item 20 US count discrepancy of 1 unit", "status": "unresolved — minor"}
+  ]
+}

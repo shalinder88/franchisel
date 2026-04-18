@@ -1,0 +1,68 @@
+{
+  "depth_pass": "A2_DP3_promotion_audit",
+  "promotable_facts": [
+    {
+      "fact": "Ad Fund spending: 3% media production, 71% media placement, 7% agency, 2% POP, 16% other/research",
+      "source": "Reader report Pass B / Item 11, pages 63-64",
+      "status": "already_in_canonical",
+      "canonical_key": "item6_advertising.ad_fund_spending_fy2025"
+    },
+    {
+      "fact": "Revenue from franchisee purchases: $13.7M (1.7% of $799M)",
+      "source": "Reader report Pass C / Item 8, page 46",
+      "status": "already_in_canonical",
+      "canonical_key": "item8_supplier_restrictions.revenue_from_franchisee_purchases"
+    },
+    {
+      "fact": "SMS purchasing cooperative membership required",
+      "source": "Reader report Pass C / Item 8, page 47",
+      "status": "already_in_canonical",
+      "canonical_key": "item8_supplier_restrictions.purchasing_cooperative"
+    },
+    {
+      "fact": "Restaurant size 1,600-3,500 sq ft; free-standing land 28,000-38,000 sq ft; 25-30 parking spaces",
+      "source": "Reader report Pass B / Item 7 notes, pages 41-43",
+      "status": "already_in_canonical",
+      "canonical_key": "item7_total_investment"
+    },
+    {
+      "fact": "Kiosk initial cost $17,000-$26,000 with $1,000-$1,200/yr per screen ongoing",
+      "source": "Reader report Pass C / Item 11, page 62",
+      "status": "promoted",
+      "promoted_to": "item11_training (already present in reader report, now confirmed in canonical under technology_stack)"
+    },
+    {
+      "fact": "Computer system cost $800-$3,000; outdoor digital menu boards $25,000-$70,000; indoor $9,000-$20,000",
+      "source": "Reader report Pass C / Item 11, pages 62-63",
+      "status": "promoted",
+      "promoted_to": "item11_training technology_stack"
+    },
+    {
+      "fact": "PLK is guarantor on RBI Credit Facilities and Senior Notes",
+      "source": "Reader report Pass H / Exhibit L, page 528",
+      "status": "already_in_canonical",
+      "canonical_key": "item21_financial_structure_detail.plk_is_guarantor"
+    },
+    {
+      "fact": "Michigan Franchise Investment Act Section 8 notice included in FDD front matter (pages 5-6)",
+      "source": "Reader report Pass I / Front matter, pages 5-6",
+      "status": "promoted",
+      "promoted_to": "state_addenda_overrides.michigan"
+    },
+    {
+      "fact": "Beverage partners: Coca-Cola Company and Dr. Pepper/Snapple Group (KDPR)",
+      "source": "Reader report Pass C / Item 8, page 46",
+      "status": "already_in_canonical",
+      "canonical_key": "item8_supplier_restrictions.beverage_partners"
+    },
+    {
+      "fact": "Supplier contributions = 4.8% of consolidated Ad Fund revenue",
+      "source": "Reader report Pass C / Item 8, page 46",
+      "status": "promoted",
+      "promoted_to": "item8_supplier_restrictions.supplier_ad_fund_contribution_pct"
+    }
+  ],
+  "total_facts_audited": 10,
+  "already_in_canonical": 7,
+  "newly_promoted": 3
+}

@@ -1,0 +1,280 @@
+{
+  "tables": [
+    {
+      "table_id": "item6_other_fees",
+      "item": "Item 6",
+      "title": "Other Fees",
+      "source_pages": [17, 18, 19],
+      "columns": ["Type of Fee", "Amount", "Date Due", "Remarks"],
+      "rows": [
+        {
+          "fee_type": "Royalty",
+          "amount": "60% on first $5,000 revenue (50% early-pay); 40% on revenue above $5,000 (30% early-pay); 20% Incentive Rate on incremental above 2-yr average (early-pay only); 15% on business services (10% early-pay); 20% Product Specific on POM and Second Look",
+          "date_due": "Within 30 days after end of Reporting Period (reduced if within 4 days)",
+          "remarks": "Revenue = all revenue from all products/services. Reporting Periods: semi-monthly Feb-Mar, monthly May-Jan, special April periods. Early-pay discount requires no overdue amounts."
+        },
+        {
+          "fee_type": "POM Extended Service Plan and POM Protection Program",
+          "amount": "20% Product Specific Royalty on POM + designated premium (not exceeding $15 last Tax Season) + $50 deductible per approved claim",
+          "date_due": "As incurred and paid as directed",
+          "remarks": "Required service. Premium determined annually by actuarial evaluation."
+        },
+        {
+          "fee_type": "Transfer",
+          "amount": "$2,500",
+          "date_due": "Prior to approval of Transfer",
+          "remarks": "May be waived by H&R Block at sole discretion."
+        },
+        {
+          "fee_type": "Audit",
+          "amount": "Cost of inspection or audit",
+          "date_due": "As incurred",
+          "remarks": "Only if audit shows ≥2% understatement of revenue."
+        },
+        {
+          "fee_type": "Additional Training",
+          "amount": "$35 annual fee per participant",
+          "date_due": "As incurred",
+          "remarks": "Additional tax preparation training. Required annual training ~19 hours provided free, but franchisee pays labor."
+        },
+        {
+          "fee_type": "Term Loan Interest Rate Default",
+          "amount": "4% increase to loan interest rate",
+          "date_due": "As incurred",
+          "remarks": "Only if franchisee defaults under Term Loan or Short-Term Loan security agreement."
+        }
+      ],
+      "table_notes": [
+        "Products and services subject to Product Specific Royalty Rate may change; current rates set in Manual.",
+        "All fees uniformly imposed and nonrefundable.",
+        "Franchisee must sign documents authorizing automatic debit of business checking account for royalty payments."
+      ]
+    },
+    {
+      "table_id": "item7_estimated_initial_investment",
+      "item": "Item 7",
+      "title": "Your Estimated Initial Investment",
+      "source_pages": [19, 20, 21],
+      "columns": ["Type of expenditure", "Amount From", "Amount To", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"expenditure": "Initial Franchise Fee", "from": 2500, "to": 2500, "method": "Lump sum", "when": "When FLA signed", "to_whom": "Us"},
+        {"expenditure": "Real property (3 months)", "from": 1400, "to": 30000, "method": "Monthly", "when": "As arranged", "to_whom": "Landlord"},
+        {"expenditure": "Leasehold improvements/construction", "from": 0, "to": 50000, "method": "Progress payments", "when": "As arranged", "to_whom": "Contractor"},
+        {"expenditure": "Signage", "from": 1200, "to": 6500, "method": "As arranged", "when": "As arranged", "to_whom": "Us, carrier, installers"},
+        {"expenditure": "Furniture and decor items", "from": 15000, "to": 30000, "method": "As arranged", "when": "As arranged", "to_whom": "Suppliers"},
+        {"expenditure": "Equipment", "from": 10000, "to": 12000, "method": "As arranged", "when": "As incurred", "to_whom": "Suppliers and us"},
+        {"expenditure": "Opening (media buys)", "from": 500, "to": 1000, "method": "As arranged", "when": "As incurred", "to_whom": "Suppliers"},
+        {"expenditure": "Initial training expenses", "from": 1500, "to": 3000, "method": "As arranged", "when": "As arranged", "to_whom": "Various"},
+        {"expenditure": "Start-up supplies", "from": 500, "to": 500, "method": "As arranged", "when": "As incurred", "to_whom": "Suppliers and us"},
+        {"expenditure": "Insurance", "from": 1000, "to": 1650, "method": "As arranged", "when": "As incurred", "to_whom": "Affiliate Insurers"},
+        {"expenditure": "Zoning expenses", "from": 0, "to": 500, "method": "As arranged", "when": "As incurred", "to_whom": "Various government entities"},
+        {"expenditure": "Utility deposits", "from": 50, "to": 300, "method": "As arranged", "when": "As incurred", "to_whom": "Landlord, utility companies"},
+        {"expenditure": "Architect design", "from": 0, "to": 4500, "method": "As arranged", "when": "As incurred", "to_whom": "Architect"},
+        {"expenditure": "Professional fees", "from": 0, "to": 2500, "method": "As arranged", "when": "As incurred", "to_whom": "Professionals"},
+        {"expenditure": "Additional funds (3 months)", "from": 430, "to": 12000, "method": "As arranged", "when": "As incurred", "to_whom": "Various"},
+        {"expenditure": "Business licenses", "from": 0, "to": 1800, "method": "As arranged", "when": "As incurred", "to_whom": "Various government entities"}
+      ],
+      "total_from": 34080,
+      "total_to": 158750,
+      "table_notes": [
+        "(1) Initial franchise fee is non-refundable (see Item 5).",
+        "(2) 800-1,200 sq ft, 5+ parking spaces. Lease $7-$100/sq ft annually. Includes one month security deposit.",
+        "(3) Wiring/lighting; $20-$30/sq ft average. May be offset by landlord contributions.",
+        "(4) Signage; may need landlord approval and city permits.",
+        "(5) Self-install or professional installation at additional fee. 6-workstation package.",
+        "(6) Computer equipment per Item 11. Some hardware may be provided free for assisted acquisition.",
+        "(7) Pre-opening media buys.",
+        "(8) Travel, lodging for Kansas City training. Includes estimated wages for one employee.",
+        "(9) Standard office and cleaning supplies for 3 months.",
+        "(10) Annual premium. Franchise Insurance Program or independent (rated A-VII minimum).",
+        "(11) Zoning variance/waiver costs if applicable.",
+        "(12) Utility deposits; may be refundable.",
+        "(13) Architect for drawings; would be unusual.",
+        "(14) Attorney, accountant, consultant fees.",
+        "(15) Working capital for 3 months (payroll, utilities not covered by revenue).",
+        "(16) Business licensing, tax preparer certification, registration costs.",
+        "(17) Estimates based on 60+ years industry experience. Single new retail office. Multi-office or territory purchases will be more. No company-owned outlets sold in preceding fiscal year."
+      ]
+    },
+    {
+      "table_id": "item9_franchisees_obligations",
+      "item": "Item 9",
+      "title": "Franchisee's Obligations",
+      "source_pages": [23, 24],
+      "columns": ["Obligation", "Section in Agreement", "Disclosure Document Item"],
+      "rows": [
+        {"obligation": "Site selection and acquisition/lease", "section": "Sections 7, 10, 16 FLA", "item": "Items 1, 7, 11, 12"},
+        {"obligation": "Pre-opening purchases/leases", "section": "Sections 7, 8, 9, 10 FLA", "item": "Items 5, 7, 8, 11"},
+        {"obligation": "Site development and pre-opening", "section": "Sections 7, 8, 9, 10 FLA", "item": "Items 5, 7, 8, 11"},
+        {"obligation": "Initial and ongoing training", "section": "Section 7 FLA", "item": "Item 11"},
+        {"obligation": "Opening", "section": "Sections 2, 10 FLA", "item": "Item 11"},
+        {"obligation": "Fees", "section": "Sections 4, 5, 6, 7, 18 FLA; Sections 3, 4 POM", "item": "Items 5, 6, 7, 8"},
+        {"obligation": "Compliance with standards/manual", "section": "Section 10 FLA", "item": "Items 11, 14, 15, 16"},
+        {"obligation": "Trademarks and proprietary info", "section": "Sections 2, 3, 8, 10, 11, 12, 16 FLA", "item": "Items 13, 14"},
+        {"obligation": "Restrictions on products/services", "section": "Sections 2, 3, 8, 10, 12, 16 FLA", "item": "Item 16"},
+        {"obligation": "Warranty and customer service", "section": "Sections 10, 22 FLA", "item": "Item 1"},
+        {"obligation": "Territorial development and sales quotas", "section": "Sections 2, 10 FLA", "item": "Items 1, 12"},
+        {"obligation": "Ongoing product/service purchases", "section": "Sections 8, 9, 10 FLA", "item": "Items 8, 11"},
+        {"obligation": "Maintenance, appearance, remodeling", "section": "Section 10 FLA", "item": "Items 8, 11"},
+        {"obligation": "Insurance", "section": "Section 10 FLA", "item": "Items 1, 6, 7, 8"},
+        {"obligation": "Advertising", "section": "Sections 2, 3, 7, 10, 16 FLA", "item": "Items 1, 7, 11, 12, 18"},
+        {"obligation": "Indemnification", "section": "Section 21 FLA", "item": "None"},
+        {"obligation": "Owner's participation/management/staffing", "section": "Sections 7, 10, 19 FLA", "item": "Item 15"},
+        {"obligation": "Records and reports", "section": "Sections 6, 7, 10, 11, 22 FLA", "item": "Items 6, 17"},
+        {"obligation": "Inspections and audits", "section": "Section 11 FLA", "item": "Items 6, 17"},
+        {"obligation": "Transfer", "section": "Sections 17, 18, 20, 22 FLA", "item": "Item 17"},
+        {"obligation": "Renewal", "section": "Section 4 FLA", "item": "Item 17"},
+        {"obligation": "Post-termination obligations", "section": "Sections 12, 16 FLA", "item": "Item 17"},
+        {"obligation": "Non-competition covenants", "section": "Section 12 FLA", "item": "Item 17"},
+        {"obligation": "Dispute resolution", "section": "Section 29 FLA", "item": "Item 17"},
+        {"obligation": "Other", "section": "None", "item": "None"}
+      ]
+    },
+    {
+      "table_id": "item11_training_program",
+      "item": "Item 11",
+      "title": "Training Program",
+      "source_pages": [27],
+      "columns": ["Subject", "Hours of Training", "Hours of On-The-Job Training", "Location"],
+      "rows": [
+        {"subject": "HRB Tax Software", "classroom": 11, "ojt": 2, "location": "Virtual/In person Kansas City, MO"},
+        {"subject": "Office Operations", "classroom": 6, "ojt": 6, "location": "Virtual/In person Kansas City, MO"},
+        {"subject": "HRB Products and Services", "classroom": 3, "ojt": 1, "location": "Virtual/In person Kansas City, MO"},
+        {"subject": "Franchisor/Franchisee Commitments", "classroom": 2, "ojt": 0, "location": "Virtual/In person Kansas City, MO"},
+        {"subject": "HRB Client Service Model", "classroom": 2, "ojt": 3, "location": "Virtual/In person Kansas City, MO"},
+        {"subject": "Franchise Employee Compliance and Systems", "classroom": 2, "ojt": 0, "location": "Virtual/In person Kansas City, MO"},
+        {"subject": "HRB Training Programs", "classroom": 3, "ojt": 0, "location": "Virtual/In person Kansas City, MO"},
+        {"subject": "HRB Systems Training", "classroom": 3, "ojt": 3, "location": "Virtual/In person Kansas City, MO"},
+        {"subject": "Compliance", "classroom": 2, "ojt": 1, "location": "Virtual/In person Kansas City, MO"},
+        {"subject": "Marketing/Growth", "classroom": 3, "ojt": 3, "location": "Virtual/In person Kansas City, MO"},
+        {"subject": "General", "classroom": 5, "ojt": 0, "location": "Virtual/In person Kansas City, MO"}
+      ],
+      "total_classroom_hours": 42,
+      "total_ojt_hours": 19,
+      "table_notes": [
+        "Initial Training facilitated quarterly. First session in-person in Kansas City, subsequent sessions virtual.",
+        "Class content and hours may be modified based on experience and tax field knowledge.",
+        "Supervised by Roxane Harris, VP US Franchise/Block Advisors.",
+        "Training free of charge; franchisee responsible for travel, lodging, and wages."
+      ]
+    },
+    {
+      "table_id": "item17_franchise_relationship",
+      "item": "Item 17",
+      "title": "The Franchise Relationship",
+      "source_pages": [41, 42, 43],
+      "columns": ["Provision", "Section in FLA", "Summary"],
+      "rows": [
+        {"provision": "Term", "section": "4.1", "summary": "Ends June 1 following 10th full Tax Season after Effective Date"},
+        {"provision": "Renewal/extension", "section": "4.2", "summary": "No automatic renewal; franchisor may offer successor at sole discretion"},
+        {"provision": "Requirements to renew", "section": "4.2", "summary": "Sign new FLA if offered; terms may be materially different"},
+        {"provision": "Termination by franchisee", "section": "15", "summary": "30 days notice before June 1 + payment of 25% of 3-year avg gross sales (or 100% of prior year if <3 years)"},
+        {"provision": "Termination by franchisor without cause", "section": "None", "summary": "Not permitted"},
+        {"provision": "Termination by franchisor with cause", "section": "13, 14", "summary": "Only if franchisee in default"},
+        {"provision": "Curable defaults", "section": "14", "summary": "15+ days to cure"},
+        {"provision": "Incurable defaults", "section": "13", "summary": "Prohibited competition/disclosure, 3+ defaults in 12 months, conviction, fraud, e-file prohibition, bankruptcy, false books, prohibited assignments, cross-default"},
+        {"provision": "Post-termination obligations", "section": "16", "summary": "De-identification, payment, return files, assign phone/leases, 2-year real property restriction"},
+        {"provision": "Franchisor assignment", "section": "18.4", "summary": "No restriction"},
+        {"provision": "Transfer by franchisee", "section": "18", "summary": "Approval required; conditions include payment, no default, $2,500 fee, transferee qualifications"},
+        {"provision": "ROFR", "section": "17", "summary": "30 days to match offer terms"},
+        {"provision": "Death/disability", "section": "20", "summary": "Transfer within 6 months"},
+        {"provision": "Noncompete during term", "section": "12", "summary": "45 miles from territory or any Network Office"},
+        {"provision": "Noncompete post-term", "section": "12", "summary": "2 years, 25 miles from territory + non-solicitation (exception under §15)"},
+        {"provision": "Modification", "section": "27", "summary": "Writing signed by both parties"},
+        {"provision": "Integration", "section": "27", "summary": "Only FLA terms binding (subject to state law)"},
+        {"provision": "Arbitration/mediation", "section": "None", "summary": "None"},
+        {"provision": "Choice of forum", "section": "29", "summary": "State or federal court, Jackson County, Missouri"},
+        {"provision": "Choice of law", "section": "29", "summary": "Missouri law"}
+      ]
+    },
+    {
+      "table_id": "item20_table1_systemwide",
+      "item": "Item 20",
+      "title": "Table 1 — Systemwide Outlet Summary",
+      "source_pages": [44],
+      "columns": ["Outlet Type", "Fiscal Year", "Outlets at Start", "Outlets at End", "Net Change"],
+      "rows": [
+        {"type": "Franchised", "year": "FY2023", "start": 2561, "end": 2339, "net": -222},
+        {"type": "Franchised", "year": "FY2024", "start": 2339, "end": 2135, "net": -204},
+        {"type": "Franchised", "year": "FY2025", "start": 2135, "end": 1987, "net": -148},
+        {"type": "Company-Owned", "year": "FY2023", "start": 6665, "end": 6582, "net": 83},
+        {"type": "Company-Owned", "year": "FY2024", "start": 6582, "end": 6629, "net": 47},
+        {"type": "Company-Owned", "year": "FY2025", "start": 6629, "end": 6701, "net": 72},
+        {"type": "Total", "year": "FY2023", "start": 9226, "end": 8921, "net": -305},
+        {"type": "Total", "year": "FY2024", "start": 8921, "end": 8764, "net": -157},
+        {"type": "Total", "year": "FY2025", "start": 8764, "end": 8688, "net": -76}
+      ]
+    },
+    {
+      "table_id": "item20_table3_franchised_status",
+      "item": "Item 20",
+      "title": "Table 3 — Status of Franchised Outlets (Footer Totals)",
+      "source_pages": [47, 48, 49, 50, 51],
+      "footer_totals": {
+        "FY2023": {"start": 2561, "opened": 0, "terminations": 20, "non_renewals": 2, "reacquired": 151, "ceased_operations": 49, "end": 2339},
+        "FY2024": {"start": 2339, "opened": 0, "terminations": 11, "non_renewals": 6, "reacquired": 169, "ceased_operations": 18, "end": 2135},
+        "FY2025": {"start": 2135, "opened": 1, "terminations": 9, "non_renewals": 1, "reacquired": 118, "ceased_operations": 21, "end": 1987}
+      },
+      "table_notes": [
+        "Numbers include US outlets (including military bases and territories) franchised by us or affiliates.",
+        "Does not include outlets franchised by affiliates outside US/territories.",
+        "Multiple footnotes reference 'Correction to total from previous years' counts' affecting AL, IN, KY, PA, VI."
+      ]
+    },
+    {
+      "table_id": "item20_table4_company_owned",
+      "item": "Item 20",
+      "title": "Table 4 — Status of Company-Owned Outlets (Footer Totals)",
+      "source_pages": [51, 52, 53, 54],
+      "footer_totals": {
+        "FY2023": {"start": 6665, "opened": 71, "reacquired_from_franchisee": 0, "closed": 154, "sold_to_franchisee": 0, "end": 6582},
+        "FY2024": {"start": 6582, "opened": 114, "reacquired_from_franchisee": 0, "closed": 67, "sold_to_franchisee": 0, "end": 6629},
+        "FY2025": {"start": 6629, "opened": 107, "reacquired_from_franchisee": 0, "closed": 35, "sold_to_franchisee": 0, "end": 6701}
+      }
+    },
+    {
+      "table_id": "item20_table5_projected",
+      "item": "Item 20",
+      "title": "Table 5 — Projected Openings (FY2026)",
+      "source_pages": [54, 55],
+      "footer_totals": {
+        "franchise_signed_not_opened": 0,
+        "projected_new_franchised": 0,
+        "projected_new_company_owned": 138
+      },
+      "table_notes": [
+        "Zero projected new franchised outlets for FY2026.",
+        "138 projected new company-owned outlets across multiple states."
+      ]
+    },
+    {
+      "table_id": "item20_table2_transfers",
+      "item": "Item 20",
+      "title": "Table 2 — Transfers (Footer Totals)",
+      "source_pages": [44, 45, 46, 47],
+      "footer_totals": {
+        "transfers_FY2023": 40,
+        "transfers_FY2024": 42,
+        "transfers_FY2025": 26
+      }
+    },
+    {
+      "table_id": "item13_trademarks",
+      "item": "Item 13",
+      "title": "Principal Trademarks",
+      "source_pages": [38],
+      "columns": ["Mark", "Registration No.", "Registration Date", "Status"],
+      "rows": [
+        {"mark": "H&R BLOCK with square logo", "reg_no": "2,533,014", "date": "January 22, 2002", "status": "Required Affidavits filed"},
+        {"mark": "H&R BLOCK with square logo", "reg_no": "3,213,068", "date": "February 27, 2007", "status": "Required Affidavits filed"},
+        {"mark": "H&R BLOCK (words only)", "reg_no": "3,338,962", "date": "November 20, 2007", "status": "Required Affidavits filed"},
+        {"mark": "H&R BLOCK on Green Square", "reg_no": "7,775,566", "date": "April 29, 2025", "status": "Required Affidavits filed"},
+        {"mark": "PEACE OF MIND", "reg_no": "2,939,919", "date": "April 12, 2005", "status": "Required Affidavits filed"},
+        {"mark": "Green square logo", "reg_no": "3,656,593", "date": "July 21, 2009", "status": "Required Affidavits filed"},
+        {"mark": "EMERALD CARD", "reg_no": "3,629,907", "date": "June 2, 2009", "status": "Required Affidavits filed"},
+        {"mark": "SECOND LOOK", "reg_no": "3,215,762", "date": "March 6, 2007", "status": "Required Affidavits filed"},
+        {"mark": "TAX IDENTITY SHIELD", "reg_no": "4,842,335", "date": "October 27, 2015", "status": "Required Affidavits filed"}
+      ]
+    }
+  ]
+}

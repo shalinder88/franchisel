@@ -1,0 +1,49 @@
+{
+  "depth_block": "key_exhibit_clause_walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "Exhibit B — Franchise Agreement",
+      "page_range": [106, 175],
+      "clause_walk_status": "partial",
+      "clauses_walked": 26,
+      "key_clauses": [
+        {"family": "grant", "section": "1", "obligation": "Non-exclusive franchise for 10-year term", "source_pages": [107]},
+        {"family": "site_selection", "section": "2.A-B", "obligation": "Secure site within 12 months; franchisor must accept lease", "source_pages": [108, 109]},
+        {"family": "development", "section": "2.C-F", "obligation": "Build to specs; open within 16 months; franchisor approval before opening", "source_pages": [109, 110]},
+        {"family": "fee_payments", "section": "3", "obligation": "6% royalty, 4.5% fund, via EDTA auto-debit", "source_pages": [110]},
+        {"family": "training", "section": "4.A-B", "obligation": "4-week initial + apprenticeship; ongoing as required", "source_pages": [110, 111]},
+        {"family": "marks", "section": "5", "obligation": "Non-exclusive license to use marks during term only", "source_pages": [116, 117]},
+        {"family": "confidential_info", "section": "6", "obligation": "Absolute confidentiality; locked in safe; innovations are franchisor's property", "source_pages": [118, 119]},
+        {"family": "noncompete_during", "section": "7", "obligation": "No competitive business (>50% sandwich revenue) anywhere during term", "source_pages": [120]},
+        {"family": "operating_standards", "section": "8", "obligation": "Full compliance with Brand Standards; supplier restrictions; customer complaint resolution", "source_pages": [121, 122, 123]},
+        {"family": "advertising", "section": "9", "obligation": "Fund (4.5%), local (0.5%), cooperative (up to 2%); franchisor controls all programs", "source_pages": [124, 125, 126]},
+        {"family": "records_reporting", "section": "10", "obligation": "Weekly sales reports; annual P&L and balance sheet; franchisor access to all data", "source_pages": [130]},
+        {"family": "inspection", "section": "11", "obligation": "Franchisor may inspect at any time with or without notice; audit rights", "source_pages": [131]},
+        {"family": "transfer", "section": "12", "obligation": "No transfer without prior consent; comprehensive conditions; ROFR within 60 days", "source_pages": [133, 134, 135, 150]},
+        {"family": "renewal", "section": "13", "obligation": "One successor franchise on then-current (materially different) terms; $10K fee; remodel to current standards", "source_pages": [136]},
+        {"family": "termination", "section": "14", "obligation": "Extensive curable and non-curable defaults; cross-default; repeated defaults even if cured", "source_pages": [137, 138, 155, 156]},
+        {"family": "post_termination", "section": "15", "obligation": "De-identification; assign phone numbers; return confidential info; noncompete 2 years; liquidated damages; franchisor purchase option at FMV", "source_pages": [157, 158, 159, 160, 161, 162]},
+        {"family": "indemnification", "section": "16", "obligation": "Franchisee indemnifies franchisor for all claims from restaurant operation", "source_pages": [163]},
+        {"family": "general_provisions", "section": "17", "obligation": "Georgia law; Atlanta forum; no waiver; force majeure (except payments); no withholding; costs and fees; cumulative rights", "source_pages": [164, 165, 166, 167]},
+        {"family": "guaranty", "section": "Attachment", "obligation": "All owners personally guarantee all FA obligations including noncompete", "source_pages": [168, 169]}
+      ],
+      "deferred_pages": "None — all key operative sections reviewed via targeted page reads"
+    },
+    {
+      "exhibit": "Exhibit E — Principal's Agreement",
+      "page_range": [297, 300],
+      "clause_walk_status": "labeled_only",
+      "why_deferred": "4-page agreement requiring directors/officers to comply with confidentiality and noncompete; operative terms summarized in Item 15",
+      "what_recovered_elsewhere": "Confidentiality and noncompete obligations extracted from Item 15 and FA Sections 6, 7, 15",
+      "what_remains_missing": "Specific scope of principal agreement obligations (e.g., whether it covers spousal obligations)"
+    },
+    {
+      "exhibit": "Exhibit G — Form of General Release",
+      "page_range": [316, 320],
+      "clause_walk_status": "labeled_only",
+      "why_deferred": "5-page release form; scope is known (required at renewal and transfer, subject to state law exceptions)",
+      "what_recovered_elsewhere": "Release requirements from Item 17 provisions (c) and (m)",
+      "what_remains_missing": "Specific release language, carveouts, state-specific exceptions within the form itself"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "tables": [
+    {
+      "id": "item5_initial_fees",
+      "item": 5,
+      "title": "Development Fees and Franchise Fees",
+      "source_pages": [28],
+      "columns": ["Franchise Offers", "Non-Refundable Development Fee per Restaurant", "Non-Refundable Franchise Fee per Restaurant"],
+      "rows": [
+        {"offer": "Standard Traditional Restaurant", "development_fee": "$12,500", "franchise_fee": "$37,500"},
+        {"offer": "Non-Traditional Restaurant", "development_fee": "$0", "franchise_fee": "$18,750"},
+        {"offer": "NRO Incentive", "development_fee": "$12,500", "franchise_fee": "$0"}
+      ],
+      "table_notes": ["Fees are uniform, fully earned when paid and not refundable.", "NRO available through March 31, 2026."]
+    },
+    {
+      "id": "item6_other_fees",
+      "item": 6,
+      "title": "Other Fees",
+      "source_pages": [31, 32, 33, 34],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Royalty Fee", "amount": "4% of Gross Sales (Traditional); 6.2% (Non-Traditional)", "due": "Monthly by 10th", "remarks": "Subject to incentives"},
+        {"fee": "Advertising and Marketing Service Fee", "amount": "3.22%-5.00% of Gross Sales (Traditional); paid from royalty for NT", "due": "Monthly by 10th", "remarks": "Min aggregate 5.2% including local"},
+        {"fee": "Renewal Fee", "amount": "10% of then-current standard franchise fee (Trad); full NT fee", "due": "At renewal application", "remarks": ""},
+        {"fee": "Transfer Fee", "amount": "$17,500 first; $2,500 if existing franchisee", "due": "At transfer request", "remarks": "Non-refundable"},
+        {"fee": "MTP Training Fee", "amount": "$2,100/attendee", "due": "As incurred", "remarks": "First 4 waived"},
+        {"fee": "LMS Fee", "amount": "$59.22/year/restaurant", "due": "Annually", "remarks": "Cornerstone system"},
+        {"fee": "Order Ahead Platform", "amount": "$50/month + 4% per transaction (35¢-$1.25); 3% on 3P delivery", "due": "Monthly", "remarks": "Optional; paid to IRB affiliate"},
+        {"fee": "Audit", "amount": "Costs + interest", "due": "5 days after demand", "remarks": "If >3% deficiency"},
+        {"fee": "Supplier Approval", "amount": "$2,500-$10,000", "due": "As incurred", "remarks": "Charged to proposed supplier"},
+        {"fee": "Interest", "amount": "Up to 18%/year", "due": "As assessed", "remarks": "On overdue amounts"},
+        {"fee": "Indemnity", "amount": "Varies", "due": "As incurred", "remarks": ""},
+        {"fee": "Insurance", "amount": "Carrier-set premium", "due": "As incurred", "remarks": ""}
+      ],
+      "table_notes": [
+        "Fees paid by EFT. All fees non-refundable.",
+        "Gross Sales = total revenue excluding coupons/discounts and sales tax.",
+        "NRO royalty ramp: 0.5% (Yr1), 1.0% (Yr2-4), 2.0% (Yr5), 4.0% (Yr6+).",
+        "NRO advertising discount: 75% off AFA dues Yrs 1-3; 50% off Yr 4; standard from Yr 5. Min 0.85%.",
+        "Relocation royalty ramp: 1% (Yr1), 2% (Yr2), 3% (Yr3), 4% (Yr4+).",
+        "Early Opening Incentive: 0% royalty from opening to required opening date, up to 12 months.",
+        "VetFran: $10K royalty credit per restaurant, up to $100K.",
+        "Pioneer Incentive: $50K royalty credit per unit (first 2) in CT/DC/HI/MA/NH/RI/VT."
+      ]
+    },
+    {
+      "id": "item7_initial_investment_freestanding",
+      "item": 7,
+      "title": "Estimated Initial Investment — Free-Standing Leased",
+      "source_pages": [38, 39, 40],
+      "total_low": 861950,
+      "total_high": 2451000,
+      "components": [
+        {"name": "Development & Franchise Fees + Training", "low": 11250, "high": 73400},
+        {"name": "Lease Deposits & Payments", "low": 12000, "high": 50000},
+        {"name": "Site Costs", "low": 0, "high": 451000},
+        {"name": "Landscaping", "low": 0, "high": 45000},
+        {"name": "Civil/Architectural/Professional", "low": 40000, "high": 150000},
+        {"name": "Zoning/Permitting", "low": 1000, "high": 112000},
+        {"name": "Building Costs", "low": 400000, "high": 850000},
+        {"name": "Equipment", "low": 225000, "high": 325000},
+        {"name": "Computer/POS", "low": 32000, "high": 55000},
+        {"name": "Decor", "low": 11000, "high": 35000},
+        {"name": "Signage & Drive-Thru", "low": 44000, "high": 88000},
+        {"name": "Pre-Opening Wages", "low": 21300, "high": 41200},
+        {"name": "Opening Inventory", "low": 18000, "high": 26000},
+        {"name": "Insurance", "low": 8400, "high": 14400},
+        {"name": "Working Capital (3 months)", "low": 33000, "high": 100000},
+        {"name": "Rent (1 month)", "low": 4000, "high": 10000},
+        {"name": "Business Licenses/Utilities", "low": 1000, "high": 25000}
+      ],
+      "table_notes": ["Inspire image design required.", "No financing offered by franchisor."]
+    },
+    {
+      "id": "item7_initial_investment_nonfreestanding",
+      "item": 7,
+      "title": "Estimated Initial Investment — Non-Free-Standing Leased",
+      "source_pages": [38, 39, 40],
+      "total_low": 644950,
+      "total_high": 1374000
+    },
+    {
+      "id": "item19_auv_quartiles",
+      "item": 19,
+      "title": "AUV for 2024 Franchised Traditional Restaurants by Quartile",
+      "source_pages": [72],
+      "columns": ["Quartile", "# Restaurants", "AUV", "Median", "Highest", "Lowest", "# Above Average", "% Above Average"],
+      "rows": [
+        {"quartile": "1st", "count": 555, "auv": 1856562, "median": 1754983, "highest": 3957746, "lowest": 1507181, "above_avg_count": 213, "above_avg_pct": 38.4},
+        {"quartile": "2nd", "count": 555, "auv": 1343596, "median": 1339208, "highest": 1504546, "lowest": 1193215, "above_avg_count": 269, "above_avg_pct": 48.5},
+        {"quartile": "3rd", "count": 554, "auv": 1081262, "median": 1079979, "highest": 1192753, "lowest": 968826, "above_avg_count": 271, "above_avg_pct": 48.9},
+        {"quartile": "4th", "count": 555, "auv": 794630, "median": 814049, "highest": 968870, "lowest": 368870, "above_avg_count": 302, "above_avg_pct": 54.4}
+      ],
+      "population": 2219,
+      "overall_auv": 1269097,
+      "overall_median": 1193215,
+      "table_notes": ["Revenue-only; does not reflect costs of sales, operating expenses, or other costs.", "Sales data from franchisee POS systems; not independently audited.", "Excludes 33 partial-year, 15 closed for remodel, 19 NT, 1 multi-brand, 63 closed, 1079 company-owned."]
+    },
+    {
+      "id": "item19_auv_venue",
+      "item": 19,
+      "title": "AUV for 2024 Franchised Traditional Restaurants by Venue Type",
+      "source_pages": [73],
+      "rows": [
+        {"venue": "Free-standing", "count": 1888, "auv": 1257170, "median": 1188622, "highest": 3957746, "lowest": 368870, "above_avg_count": 820, "above_avg_pct": 43.4},
+        {"venue": "Travel Plaza", "count": 175, "auv": 1564424, "median": 1503873, "highest": 3395992, "lowest": 466706, "above_avg_count": 79, "above_avg_pct": 45.1},
+        {"venue": "Other Non-Free-Standing", "count": 156, "auv": 1082148, "median": 1016322, "highest": 2182361, "lowest": 369760, "above_avg_count": 68, "above_avg_pct": 43.6}
+      ],
+      "table_notes": ["Same population as quartile table (2,219 restaurants)."]
+    },
+    {
+      "id": "item20_table1_systemwide",
+      "item": 20,
+      "title": "Table 1 — Systemwide Outlet Summary",
+      "source_pages": [74],
+      "rows": [
+        {"type": "Franchised", "year": 2022, "start": 2291, "end": 2305, "net": 14},
+        {"type": "Franchised", "year": 2023, "start": 2305, "end": 2316, "net": 11},
+        {"type": "Franchised", "year": 2024, "start": 2316, "end": 2286, "net": -30},
+        {"type": "Company-Owned", "year": 2022, "start": 1116, "end": 1110, "net": -6},
+        {"type": "Company-Owned", "year": 2023, "start": 1110, "end": 1097, "net": -13},
+        {"type": "Company-Owned", "year": 2024, "start": 1097, "end": 1079, "net": -18},
+        {"type": "Total", "year": 2022, "start": 3407, "end": 3415, "net": 8},
+        {"type": "Total", "year": 2023, "start": 3415, "end": 3413, "net": -2},
+        {"type": "Total", "year": 2024, "start": 3413, "end": 3365, "net": -48}
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item20_table2_transfers",
+      "item": 20,
+      "title": "Table 2 — Transfers of Outlets from Franchisees to New Owners",
+      "source_pages": [74, 75, 76],
+      "transfers_total": {"2022": 41, "2023": 87, "2024": 54},
+      "table_notes": []
+    },
+    {
+      "id": "item20_table3_franchised_status",
+      "item": 20,
+      "title": "Table 3 — Status of Franchised Outlets",
+      "source_pages": [76, 77, 78, 79, 80],
+      "footer_totals": {
+        "2024": {"start": 2316, "opened": 33, "terminations": 0, "non_renewals": 29, "reacquired": 0, "ceased_other": 34, "end": 2286},
+        "2023": {"start": 2305, "opened": 55, "terminations": 1, "non_renewals": 14, "reacquired": 0, "ceased_other": 29, "end": 2316},
+        "2022": {"start": 2291, "opened": 62, "terminations": 0, "non_renewals": 15, "reacquired": 3, "ceased_other": 30, "end": 2305}
+      },
+      "table_notes": ["Per-state detail extracted. 2024: largest states by outlet count include OH 157, TX 160, IN 104, IL 101."]
+    },
+    {
+      "id": "item20_table4_company_owned",
+      "item": 20,
+      "title": "Table 4 — Status of Company-Owned Outlets",
+      "source_pages": [80, 81, 82],
+      "footer_totals": {
+        "2024": {"start": 1097, "opened": 2, "reacquired": 0, "closed": 20, "sold": 0, "end": 1079},
+        "2023": {"start": 1110, "opened": 5, "reacquired": 0, "closed": 17, "sold": 1, "end": 1097},
+        "2022": {"start": 1116, "opened": 8, "reacquired": 3, "closed": 12, "sold": 5, "end": 1110}
+      },
+      "table_notes": []
+    },
+    {
+      "id": "item20_table5_projected",
+      "item": 20,
+      "title": "Table 5 — Projected Openings as of December 29, 2024",
+      "source_pages": [82],
+      "fas_signed_not_opened": 8,
+      "projected_new_franchised": 13,
+      "projected_new_company_owned": 0,
+      "table_notes": ["Projected states: AZ(1), CA(1), FL(1), MD(2), MO(1), SC(0/1FA), TN(2), TX(2), VA(2), WV(1)."]
+    }
+  ]
+}

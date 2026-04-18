@@ -1,0 +1,228 @@
+{
+  "tables": [
+    {
+      "table_id": "item6_fee_table",
+      "item": "Item 6",
+      "title": "Other Fees",
+      "source_pages": [22, 23, 24, 25],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        {"fee": "Continuing Franchise Fee", "amount": "6% of Gross Sales", "due": "Biweekly", "notes": "Gross Sales = all revenue less sales taxes. Via ACH."},
+        {"fee": "Sales/other taxes on CFF", "amount": "As imposed", "due": "Biweekly"},
+        {"fee": "Continuing Advertising Contribution", "amount": "5% of Gross Sales", "due": "Biweekly", "notes": "Additional 1-3% recommended for local advertising"},
+        {"fee": "Training Fee (Academy + LEADS + GC University)", "amount": "$200/year/salon", "due": "April 1 each year"},
+        {"fee": "Renewal Fee", "amount": "$1,750/salon (CPI-adjusted)", "due": "At expiration of 10-year term"},
+        {"fee": "MDA Renewal Fee", "amount": "$1,000/unopened salon (CPI-adjusted)", "due": "At MDA expiration"},
+        {"fee": "Assignment Fee", "amount": "$1,500/salon (CPI-adjusted)", "due": "Upon transfer request"},
+        {"fee": "Local Co-op Dues", "amount": "~$100/month avg", "due": "As determined by Co-op"},
+        {"fee": "Recruiting Technology Fee", "amount": "$750/year/salon", "due": "Semi-annually Nov 15 & May 15"},
+        {"fee": "Franchisee Program Fee", "amount": "$345-$550/event", "due": "When due"},
+        {"fee": "Insurance Coverage", "amount": "$1,500-$3,000/year", "due": "Upon demand"},
+        {"fee": "Software License & Support Fee", "amount": "$250/month/salon", "due": "Monthly", "notes": "ICS Styleware; $25/call after-hours"},
+        {"fee": "Network & Hardware Managed Services Fee", "amount": "$18.99/month/salon", "due": "Monthly", "notes": "Foundation Technologies"},
+        {"fee": "Mobile Device Management Licensing Fee", "amount": "$54/year/iPad", "due": "Monthly"},
+        {"fee": "Management iPad Management Fee", "amount": "$24.96/month/iPad", "due": "Monthly"},
+        {"fee": "Meraki MX68-CW Router Maintenance Fee", "amount": "$312/year/router", "due": "Monthly, after first year"},
+        {"fee": "Lane 5000 Warranty & Support Program", "amount": "$59.76/year/terminal", "due": "Monthly", "notes": "Discontinuing June 2026"},
+        {"fee": "Other Technology Fees", "amount": "$90/router + $30/iPad", "due": "As incurred", "notes": "Transfer/reconfiguration"},
+        {"fee": "Credit Card Processing Setup", "amount": "$15/location", "due": "One-time"},
+        {"fee": "Credit Card Processing Fee", "amount": "$0.016/transaction", "due": "Per transaction"},
+        {"fee": "Heartland Merchant Protection", "amount": "$5/month/salon", "due": "Monthly"},
+        {"fee": "Gift Card Cost", "amount": "$0.32/card", "due": "As incurred"},
+        {"fee": "Gift Card Processing Fee", "amount": "$0.095/transaction", "due": "Per transaction"},
+        {"fee": "Sister Store Review Appeal Fee", "amount": "$500-$1,000", "due": "As incurred"},
+        {"fee": "Late Charges", "amount": "14% per annum interest", "due": "Upon demand", "notes": "Plus attorneys' fees and costs"},
+        {"fee": "Audit/Inspection Cost", "amount": "Cost of audit", "due": "Upon demand", "notes": "If discrepancy ≥5% or underpayment ≥2%"},
+        {"fee": "Salon Upgrades", "amount": "$20,000-$80,000", "due": "Every 7-10 years"},
+        {"fee": "Salon Ongoing Maintenance", "amount": "$3,000-$9,000", "due": "Annually"},
+        {"fee": "Architectural Fees (remodel)", "amount": "$100-$3,800", "due": "As incurred"}
+      ],
+      "table_notes": [
+        "All fees imposed/collected by and payable to Great Clips and are non-refundable except as noted. All fees uniformly imposed except as noted.",
+        "GC does not charge or collect any fees on behalf of third parties.",
+        "Biweekly accounting periods and payment dates determined periodically by GC.",
+        "CFF, Advertising, RTF and all other fees payable via automatic bank withdrawal (ACH)."
+      ]
+    },
+    {
+      "table_id": "item7_initial_investment_single",
+      "item": "Item 7",
+      "title": "Estimated Initial Investment — Franchise Agreement",
+      "source_pages": [25, 26, 27, 28],
+      "columns": ["Type of Expenditure", "Amount", "Method of Payment", "When Due", "To Whom"],
+      "rows": [
+        {"expenditure": "Initial Franchise Fee", "amount_low": 20000, "amount_high": 35000, "to_whom": "Great Clips"},
+        {"expenditure": "Initial Advertising Contribution to MDAF", "amount_low": 5000, "amount_high": 5000, "to_whom": "Great Clips"},
+        {"expenditure": "Travel and Expenses While Training", "amount_low": 1500, "amount_high": 2500, "to_whom": "Airlines, hotels, restaurants"},
+        {"expenditure": "Architecture Fees", "amount_low": 100, "amount_high": 3800, "to_whom": "Great Clips"},
+        {"expenditure": "Leasehold Improvements incl. Labor", "amount_low": 70000, "amount_high": 200000, "to_whom": "Suppliers, Great Clips, Landlord"},
+        {"expenditure": "Rent and Security Deposits", "amount_low": 1000, "amount_high": 10000, "to_whom": "Landlord, utilities, Great Clips"},
+        {"expenditure": "Fixtures, Signage, Furnishings + Salon Technology Hardware", "amount_low": 40000, "amount_high": 55000, "to_whom": "Suppliers, Great Clips, Landlord"},
+        {"expenditure": "Freight", "amount_low": 4000, "amount_high": 7000, "to_whom": "Freight carriers, suppliers, Great Clips"},
+        {"expenditure": "Sales Tax on Fixtures/Signage/Furnishings", "amount_low": 0, "amount_high": 3200, "to_whom": "Suppliers, Great Clips"},
+        {"expenditure": "Opening Inventory and Supplies", "amount_low": 4700, "amount_high": 6400, "to_whom": "Suppliers, Great Clips"},
+        {"expenditure": "Grand Opening Advertising", "amount_low": 20000, "amount_high": 25000, "to_whom": "Suppliers"},
+        {"expenditure": "Insurance", "amount_low": 1500, "amount_high": 3000, "to_whom": "Insurance carrier"},
+        {"expenditure": "Lease Liability Fee and Lease Review Fee", "amount_low": 0, "amount_high": 4000, "to_whom": "Great Clips"},
+        {"expenditure": "Additional Funds (3-6 Months)", "amount_low": 20000, "amount_high": 60000, "to_whom": "Employees, suppliers, utilities"}
+      ],
+      "total_low": 187800,
+      "total_high": 419900,
+      "table_notes": [
+        "IFF is $20,000 for single; $35,000 for Three Star Program (3 franchise agreements).",
+        "Leasehold improvements assume vanilla shell condition in shopping center. 900-1,200 sq ft typical.",
+        "Grand opening marketing: $20,000-$25,000 for first salon per Grand Opening Policy.",
+        "Additional funds does not include owner's salary or draw.",
+        "Great Clips does not offer direct or indirect financing.",
+        "Costs may vary if purchasing an existing salon."
+      ]
+    },
+    {
+      "table_id": "item7_initial_investment_mda",
+      "item": "Item 7",
+      "title": "Estimated Initial Investment — Master Development Agreement",
+      "source_pages": [29],
+      "rows": [
+        {"expenditure": "Development Fee", "amount_low": 8000, "amount_high": 40000, "to_whom": "Great Clips"},
+        {"expenditure": "Initial Franchise Fee", "amount_low": 6000, "amount_high": 6000, "to_whom": "Great Clips"}
+      ],
+      "total_low": 14000,
+      "total_high": 46000,
+      "table_notes": ["Development Fee = $4,000 per salon (2-10 salons). Separate from per-salon investment."]
+    },
+    {
+      "table_id": "item19_table1",
+      "item": "Item 19",
+      "title": "Table 1 — Average Yearly Sales (All Eligible 2024 Salons)",
+      "source_pages": [62],
+      "population": 4147,
+      "excluded": 292,
+      "total_eligible": 4439,
+      "data": {
+        "service_sales": {"average": 388522, "median": 371729, "low": 37607, "high": 1065849, "pct_attained": 44.71},
+        "product_sales": {"average": 10657, "median": 8925, "low": 193, "high": 84732, "pct_attained": 38.12},
+        "total_sales": {"average": 399179, "median": 382316, "low": 37920, "high": 1099873, "pct_attained": 44.78}
+      },
+      "table_notes": [
+        "Lowest Total Sales salon ($37,920) was not open to customers from May 1 - Dec 31, 2024.",
+        "103 salons permanently closed in 2024; 0 closed after being open less than 12 months.",
+        "Sales data from POS System; Canadian dollars converted at 0.73 rate.",
+        "Neither GC nor its auditors independently verified POS data."
+      ]
+    },
+    {
+      "table_id": "item19_table2",
+      "item": "Item 19",
+      "title": "Table 2 — Average Operating Cash Flow Statement (Reporting 2024 Salons)",
+      "source_pages": [63],
+      "population": 2175,
+      "non_reporting": 1972,
+      "non_reporting_bias": "1,138 non-reporting had sales below reporting median; 834 above. If included, median would decrease 2.9% and cash flow by larger percent.",
+      "sales": {
+        "service_sales": {"average": 401893, "median": 383249, "pct_of_total": 97.22},
+        "product_sales": {"average": 11497, "median": 9697, "pct_of_total": 2.78},
+        "total_sales": {"average": 413389, "median": 393907, "pct_of_total": 100.00}
+      },
+      "expenses": {
+        "labor": {"average": 202219, "median": 193568, "pct_of_total": 48.92},
+        "occupancy": {"average": 44775, "median": 44019, "pct_of_total": 10.83},
+        "products": {"average": 7224, "median": 6489, "pct_of_total": 1.75},
+        "continuing_franchise_fees": {"average": 24932, "median": 23761, "pct_of_total": 6.03},
+        "advertising": {"average": 22004, "median": 21052, "pct_of_total": 5.32},
+        "other": {"average": 29598, "median": 27468, "pct_of_total": 7.16},
+        "total_expenses": {"average": 330752, "median": 319722, "pct_of_total": 80.01}
+      },
+      "operating_cash_flow": {"average": 82637, "median": 75851, "pct_of_total": 19.99},
+      "table_notes": [
+        "Operating Cash Flow = Total Sales - Total Expenses. Excludes income taxes, depreciation, amortization, and capital expenditure reserves.",
+        "Highest operating cash flow: $412,669. Lowest: -$116,986.",
+        "Labor excludes general manager or franchisee salary if identifiable."
+      ]
+    },
+    {
+      "table_id": "item19_table3",
+      "item": "Item 19",
+      "title": "Table 3 — Averages Based on Sales Range (Reporting 2024 Salons)",
+      "source_pages": [64],
+      "population": 2175,
+      "tiers": [
+        {"range": "<$250k", "count": 196, "pct": 9.01, "avg_sales": 208509, "labor_pct": 57.95, "occupancy_pct": 19.50, "other_pct": 24.30, "total_expense_pct": 101.74, "cash_flow_pct": -1.74, "cash_flow_dollar": -3635},
+        {"range": "$250-300k", "count": 258, "pct": 11.86, "avg_sales": 276787, "labor_pct": 53.78, "occupancy_pct": 15.48, "other_pct": 22.84, "total_expense_pct": 92.10, "cash_flow_pct": 7.90, "cash_flow_dollar": 21875},
+        {"range": "$300-350k", "count": 335, "pct": 15.40, "avg_sales": 324702, "labor_pct": 50.88, "occupancy_pct": 13.27, "other_pct": 21.55, "total_expense_pct": 85.70, "cash_flow_pct": 14.30, "cash_flow_dollar": 46424},
+        {"range": "$350-400k", "count": 342, "pct": 15.72, "avg_sales": 375725, "labor_pct": 48.91, "occupancy_pct": 11.94, "other_pct": 20.63, "total_expense_pct": 81.49, "cash_flow_pct": 18.51, "cash_flow_dollar": 69565},
+        {"range": "$400-450k", "count": 291, "pct": 13.38, "avg_sales": 424099, "labor_pct": 48.88, "occupancy_pct": 10.43, "other_pct": 20.18, "total_expense_pct": 79.48, "cash_flow_pct": 20.52, "cash_flow_dollar": 87014},
+        {"range": "$450-500k", "count": 241, "pct": 11.08, "avg_sales": 474295, "labor_pct": 47.58, "occupancy_pct": 9.76, "other_pct": 19.61, "total_expense_pct": 76.94, "cash_flow_pct": 23.06, "cash_flow_dollar": 109367},
+        {"range": "$500-600k", "count": 289, "pct": 13.29, "avg_sales": 544879, "labor_pct": 46.54, "occupancy_pct": 8.52, "other_pct": 19.17, "total_expense_pct": 74.23, "cash_flow_pct": 25.77, "cash_flow_dollar": 140420},
+        {"range": ">$600k", "count": 223, "pct": 10.25, "avg_sales": 692295, "labor_pct": 46.34, "occupancy_pct": 7.23, "other_pct": 18.45, "total_expense_pct": 72.02, "cash_flow_pct": 27.98, "cash_flow_dollar": 193727}
+      ]
+    },
+    {
+      "table_id": "item20_table1",
+      "item": "Item 20",
+      "title": "Table 1 — Systemwide Outlet Summary",
+      "source_pages": [69],
+      "data": [
+        {"year": 2022, "type": "Franchised", "start": 4447, "end": 4427, "net_change": -20},
+        {"year": 2023, "type": "Franchised", "start": 4427, "end": 4427, "net_change": 0},
+        {"year": 2024, "type": "Franchised", "start": 4427, "end": 4439, "net_change": 12},
+        {"year": 2022, "type": "Company-Owned", "start": 0, "end": 0, "net_change": 0},
+        {"year": 2023, "type": "Company-Owned", "start": 0, "end": 0, "net_change": 0},
+        {"year": 2024, "type": "Company-Owned", "start": 0, "end": 0, "net_change": 0}
+      ]
+    },
+    {
+      "table_id": "item20_table2",
+      "item": "Item 20",
+      "title": "Table 2 — Transfers from Franchisees to New Owners",
+      "source_pages": [69, 70, 71, 72, 73],
+      "transfers_total": [
+        {"year": 2022, "total": 325},
+        {"year": 2023, "total": 164},
+        {"year": 2024, "total": 207}
+      ],
+      "table_notes": [
+        "Shows salons affected by transfer of controlling interest. Many transfers were single transfers between like parties involving multiple units.",
+        "3 of 207 transfers in 2024: GC exercised ROFR and simultaneously transferred to new owner."
+      ]
+    },
+    {
+      "table_id": "item20_table3",
+      "item": "Item 20",
+      "title": "Table 3 — Status of Franchised Outlets",
+      "source_pages": [73, 74, 75, 76, 77],
+      "footer_totals": [
+        {"year": 2022, "start": 4447, "opened": 116, "terminations": 4, "non_renewals": 4, "reacquired": 0, "ceased_operations_other": 128, "end": 4427},
+        {"year": 2023, "start": 4427, "opened": 98, "terminations": 3, "non_renewals": 6, "reacquired": 0, "ceased_operations_other": 89, "end": 4427},
+        {"year": 2024, "start": 4427, "opened": 115, "terminations": 4, "non_renewals": 1, "reacquired": 0, "ceased_operations_other": 98, "end": 4439}
+      ],
+      "table_notes": [
+        "'Ceased operations - other reasons' includes salons closed pending relocation pursuant to Relocation Policy (permits close and relocate within DMA within 2 years under existing FA).",
+        "Average salons per franchisee (5+ years): 8.",
+        "14 salons closed and then relocated/reopened within fiscal year 2024."
+      ]
+    },
+    {
+      "table_id": "item20_table4",
+      "item": "Item 20",
+      "title": "Table 4 — Status of Company-Owned Outlets",
+      "source_pages": [78],
+      "data": [
+        {"year": 2022, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+        {"year": 2023, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0},
+        {"year": 2024, "start": 0, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 0}
+      ]
+    },
+    {
+      "table_id": "item20_table5",
+      "item": "Item 20",
+      "title": "Table 5 — Projected Openings",
+      "source_pages": [78, 79],
+      "projected_openings_total": {
+        "signed_not_opened": 965,
+        "projected_new_franchised": 90,
+        "projected_new_company_owned": 0
+      },
+      "table_notes": ["GC does not anticipate opening company-owned salons but may reacquire for refranchising in limited instances."]
+    }
+  ]
+}

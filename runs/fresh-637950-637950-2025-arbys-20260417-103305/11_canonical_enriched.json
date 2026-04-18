@@ -1,0 +1,116 @@
+{
+  "_enrichment_version": "v1",
+  "_base_file": "09_final_canonical.json",
+  "_enrichment_layers": ["item19_chart_detail", "item20_yearly_activity", "exhibit_structure", "state_addenda_overrides", "item1_structural_facts"],
+
+  "document_identity": {
+    "filing_id": "637950",
+    "brand": "Arby's",
+    "franchisor_legal_name": "Arby's Franchisor, LLC",
+    "state_filed": "Wisconsin",
+    "issuance_date": "March 27, 2025",
+    "amendment_date": "July 2, 2025",
+    "fdd_year": 2025,
+    "pdf_pages": 362
+  },
+
+  "item19_chart_detail": {
+    "fiscal_year": "2024",
+    "fiscal_period": "Jan 1 - Dec 29, 2024",
+    "population": 2219,
+    "overall_auv": 1269097,
+    "overall_median": 1193215,
+    "overall_highest": 3957746,
+    "overall_lowest": 368870,
+    "pct_above_overall_avg": 43.6,
+    "quartile_detail": [
+      {"quartile": 1, "count": 555, "auv": 1856562, "median": 1754983, "highest": 3957746, "lowest": 1507181, "above_avg_pct": 38.4},
+      {"quartile": 2, "count": 555, "auv": 1343596, "median": 1339208, "highest": 1504546, "lowest": 1193215, "above_avg_pct": 48.5},
+      {"quartile": 3, "count": 554, "auv": 1081262, "median": 1079979, "highest": 1192753, "lowest": 968826, "above_avg_pct": 48.9},
+      {"quartile": 4, "count": 555, "auv": 794630, "median": 814049, "highest": 968870, "lowest": 368870, "above_avg_pct": 54.4}
+    ],
+    "venue_detail": [
+      {"venue": "Free-standing", "count": 1888, "auv": 1257170, "median": 1188622, "highest": 3957746, "lowest": 368870, "above_avg_pct": 43.4},
+      {"venue": "Travel Plaza", "count": 175, "auv": 1564424, "median": 1503873, "highest": 3395992, "lowest": 466706, "above_avg_pct": 45.1},
+      {"venue": "Other Non-Free-Standing", "count": 156, "auv": 1082148, "median": 1016322, "highest": 2182361, "lowest": 369760, "above_avg_pct": 43.6}
+    ],
+    "avg_restaurant_age_years": 25,
+    "avg_sqft_freestanding": 2867,
+    "avg_sqft_nonfreestanding": 2472,
+    "avg_sqft_travel_plaza": 3310,
+    "drive_thru_count": 2204,
+    "no_drive_thru_count": 15,
+    "cost_data_provided": false,
+    "substantiation_statement": "Upon your reasonable request, we will provide written substantiation for these financial performance representations."
+  },
+
+  "item20_yearly_activity": {
+    "franchised": {
+      "2024": {"start": 2316, "opened": 33, "terminations": 0, "non_renewals": 29, "reacquired": 0, "ceased_other": 34, "end": 2286},
+      "2023": {"start": 2305, "opened": 55, "terminations": 1, "non_renewals": 14, "reacquired": 0, "ceased_other": 29, "end": 2316},
+      "2022": {"start": 2291, "opened": 62, "terminations": 0, "non_renewals": 15, "reacquired": 3, "ceased_other": 30, "end": 2305}
+    },
+    "company_owned": {
+      "2024": {"start": 1097, "opened": 2, "reacquired": 0, "closed": 20, "sold": 0, "end": 1079},
+      "2023": {"start": 1110, "opened": 5, "reacquired": 0, "closed": 17, "sold": 1, "end": 1097},
+      "2022": {"start": 1116, "opened": 8, "reacquired": 3, "closed": 12, "sold": 5, "end": 1110}
+    },
+    "transfers": {"2024": 54, "2023": 87, "2022": 41},
+    "projected": {"franchised": 13, "company_owned": 0, "fas_signed_not_opened": 8}
+  },
+
+  "exhibit_structure": {
+    "exhibits": [
+      {"letter": "A", "name": "List of Franchisees", "pages": 122, "category": "franchisee_list"},
+      {"letter": "B", "name": "Financial Statements", "pages": 41, "category": "financial", "sub_entities": ["Arby's Franchisor LLC", "ARG"]},
+      {"letter": "C", "name": "Development Agreement", "pages": 13, "category": "contract"},
+      {"letter": "C-1", "name": "Incentive Amendment to DA", "pages": 7, "category": "contract"},
+      {"letter": "D", "name": "Franchise Agreement", "pages": 39, "category": "contract"},
+      {"letter": "D-1", "name": "Incentive Amendment to FA", "pages": 11, "category": "contract"},
+      {"letter": "D-2", "name": "Non-Traditional Restaurant Amendment", "pages": 1, "category": "contract"},
+      {"letter": "D-3", "name": "Multi-Brand Addendum", "pages": 7, "category": "contract"},
+      {"letter": "E", "name": "State-Specific Addenda & Riders", "pages": 11, "category": "state_addenda"},
+      {"letter": "F", "name": "General Release", "pages": 5, "category": "contract"},
+      {"letter": "G", "name": "State Administrators", "pages": 2, "category": "reference"},
+      {"letter": "H", "name": "Agents for Service of Process", "pages": 5, "category": "reference"},
+      {"letter": "I", "name": "State Effective Dates & Receipts", "pages": 4, "category": "administrative"}
+    ]
+  },
+
+  "state_addenda_overrides": {
+    "states_with_addenda": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota", "Washington"],
+    "michigan_notice": true,
+    "multi_state_no_waiver": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+    "overrides": [
+      {"state": "Maryland", "affected_family": "general_release", "override": "Release at renewal/transfer does not apply to MD Franchise Law liability"},
+      {"state": "Maryland", "affected_family": "forum_selection", "override": "Franchisee may bring MD Franchise Law claims in Maryland"},
+      {"state": "Maryland", "affected_family": "termination", "override": "Termination on insolvency may not be enforceable under federal bankruptcy law"},
+      {"state": "Minnesota", "affected_family": "termination", "override": "90 days notice of termination (60 days to cure); 180 days notice of non-renewal"},
+      {"state": "Minnesota", "affected_family": "forum_selection", "override": "Litigation cannot be required outside Minnesota"},
+      {"state": "Minnesota", "affected_family": "general_release", "override": "Release does not apply to extent prohibited by MN Franchises Law"},
+      {"state": "Minnesota", "affected_family": "trademarks", "override": "Arby's will protect franchisee trademark rights per Minn. Stat. §80C.12"},
+      {"state": "North Dakota", "affected_family": "noncompete", "override": "Subject to N.D.C.C. §9-08-06"},
+      {"state": "North Dakota", "affected_family": "forum_selection", "override": "Cannot require out-of-state forum or arbitration"},
+      {"state": "North Dakota", "affected_family": "governing_law", "override": "North Dakota law applies, not other-state law"},
+      {"state": "North Dakota", "affected_family": "damages", "override": "No liquidated damages, termination penalties, or punitive/exemplary damages waiver"},
+      {"state": "North Dakota", "affected_family": "general_release", "override": "No general release on renewal"},
+      {"state": "Washington", "affected_family": "noncompete", "override": "No-poach provisions removed per AOD with WA AG"}
+    ]
+  },
+
+  "item1_structural_facts": {
+    "securitization_transaction_date": "November 13, 2015",
+    "securitization_notes_outstanding": 789938000,
+    "securitization_anticipated_repayment": "July 2027",
+    "securitization_legal_final": "July 2050",
+    "variable_funding_capacity": 293100000,
+    "management_agreement": true,
+    "management_fee_base_annual": 10400000,
+    "management_fee_escalator_pct": 2,
+    "management_fee_2024": 31334000,
+    "ip_license_term_years": 99,
+    "ip_licensee_royalty_on_company_stores": 0.05,
+    "inspire_brands_portfolio": ["Arby's", "Buffalo Wild Wings", "BWW-GO", "Dunkin'", "Baskin-Robbins", "Jimmy John's", "Sonic"],
+    "roark_affiliated_brands": ["GoTo Foods (Auntie Anne's, Carvel, Cinnabon, Jamba, McAlister's, Moe's, Schlotzsky's)", "Primrose Schools", "Massage Envy", "CKE (Carl's Jr., Hardee's)", "Driven Holdings (Meineke, Maaco, CARSTAR, Take 5, etc.)", "ServiceMaster (Merry Maids, Two Men and a Truck)", "Nothing Bundt Cakes", "Mathnasium", "i9 Sports", "School of Rock", "Subway"]
+  }
+}

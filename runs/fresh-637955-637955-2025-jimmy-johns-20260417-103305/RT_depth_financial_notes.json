@@ -1,0 +1,186 @@
+{
+  "depth_pass": "A2_depth_pass_1",
+  "brand": "Jimmy John's",
+  "source_pages": [337, 338, 339, 340, 341, 342],
+  "extraction_method": "normal_text_extraction",
+  "auditor": "KPMG LLP",
+  "opinion": "unqualified",
+  "going_concern": false,
+  "notes": [
+    {
+      "note_number": 1,
+      "family": "description_of_operations",
+      "source_pages": [337],
+      "content": {
+        "formation": "Delaware LLC formed June 12, 2017; no operations before July 7, 2017",
+        "ownership_chain": "JJF SPV → JJ Funding LLC (JJ Issuer/Member) → JJ SPV Guarantor LLC → JJBC LLC → Jimmy John's LLC → JJ Holding Company LLC → IRB Holding Corp → Inspire Brands, Inc.",
+        "business": "Offers franchises for development and operation of restaurants under Jimmy John's trademark"
+      }
+    },
+    {
+      "note_number": 2,
+      "family": "significant_accounting_policies",
+      "source_pages": [337, 338],
+      "sub_policies": [
+        {
+          "policy": "basis_of_presentation",
+          "detail": "GAAP"
+        },
+        {
+          "policy": "fiscal_year",
+          "detail": "52 or 53 weeks ending Sunday closest to December 31. 2024, 2023, 2022 each consisted of 52 weeks."
+        },
+        {
+          "policy": "use_of_estimates",
+          "detail": "Standard GAAP disclosure"
+        },
+        {
+          "policy": "restricted_cash",
+          "detail": "Cash held to meet reserve requirements under Securitization Transaction. Balances exceed FDIC limits. All highly liquid investments with maturity ≤3 months are cash equivalents."
+        },
+        {
+          "policy": "accounts_receivable",
+          "detail": "Primarily from franchisees per franchise agreements. Due within 30 days. Allowance estimated on lifetime expected loss, historical collection experience, and current conditions."
+        },
+        {
+          "policy": "intangible_assets_indefinite",
+          "detail": "Trademark/trade name reviewed at least annually (first day of fiscal Q4). Qualitative then quantitative test. Relief from royalty method (Level 3 inputs). Assumptions: future revenues, royalty rate, terminal value, discount rate. No impairment indicated in 2024, 2023, or 2022."
+        },
+        {
+          "policy": "intangible_assets_definite",
+          "detail": "Franchise agreements amortized straight-line over 17-year useful life. Reviewed for impairment when events or circumstances indicate carrying amount may not be recoverable. No impairment indicated in any period."
+        },
+        {
+          "policy": "fair_value_measurements",
+          "detail": "Cash, receivables, payables approximate book value (short-term). Indefinite-lived intangible tested using Level 3 inputs. No changes in valuation techniques in 2024."
+        },
+        {
+          "policy": "contributions_distributions",
+          "detail": "From/to Member per Inspire centralized cash management. Not expected to be repaid. Presented net on equity statement and as financing on cash flow."
+        },
+        {
+          "policy": "income_taxes",
+          "detail": "LLC — income taxes are obligation of Member. No provision, benefit, assets, or liabilities for federal or state income taxes."
+        },
+        {
+          "policy": "commitments_contingencies",
+          "detail": "Recorded when probable and reasonably estimable. Legal costs expensed as incurred."
+        },
+        {
+          "policy": "revenue_recognition",
+          "detail": "Five-step model per ASC 606. Revenue includes franchise fees, royalty revenue, and training/other income."
+        }
+      ]
+    },
+    {
+      "note_number": 2,
+      "family": "revenue_recognition_detail",
+      "source_pages": [339],
+      "content": {
+        "royalty_revenue": "6% of restaurant sales per franchise agreement. Recognized as earned. Royalties from JJE (related party) on same basis.",
+        "development_incentives": "Starting 2021, offered lower royalties in initial years. Recognized over remaining agreement term.",
+        "initial_franchise_fees": "Deferred when received; recognized over 10-year contractual term once restaurant opens.",
+        "renewal_fees": "Recognized over contractual term once agreement signed and fee paid.",
+        "commitment_fee_deposits": "Forfeited and recognized as revenue upon termination of commitment to open.",
+        "training_and_other": "Training fees from franchisee owners/employees per franchise agreement terms."
+      }
+    },
+    {
+      "note_number": 3,
+      "family": "commitments_and_contingencies",
+      "source_pages": [340],
+      "content": {
+        "securitization_notes": {
+          "total_outstanding": 1049375,
+          "unit": "thousands",
+          "components": [
+            {"name": "2017-1 Class A-2-II Senior Notes", "issued": "July 2017", "anticipated_repayment": "July 2027", "principal_thousands": 293750},
+            {"name": "2022-1 Class A-1 Senior VFN", "issued": "March 2022", "anticipated_repayment": "April 2027 (2 one-year extensions)", "principal_thousands": 0},
+            {"name": "2022-1 Class A-2-I Senior Notes", "issued": "March 2022", "anticipated_repayment": "April 2027", "principal_thousands": 146250},
+            {"name": "2022-1 Class A-2-II Senior Notes", "issued": "March 2022", "anticipated_repayment": "April 2029", "principal_thousands": 438750},
+            {"name": "2022-1 Class A-2-III Senior Notes", "issued": "March 2022", "anticipated_repayment": "April 2032", "principal_thousands": 170625}
+          ],
+          "legal_final_maturity": {"2017_notes": "July 2047", "2022_notes": "April 2052"},
+          "variable_funding_capacity": {"total": 50000, "letters_of_credit_outstanding": 11900, "remaining_capacity": 38100},
+          "secured_by": "substantially all assets of securitization entities including the Company",
+          "note": "If not repaid by anticipated repayment date, additional interest accrues"
+        },
+        "legal_matters": "Involved in various litigation; based on available information, does not believe outcome will have material adverse effect on financial position."
+      }
+    },
+    {
+      "note_number": 4,
+      "family": "revenue_recognition_deferred",
+      "source_pages": [340],
+      "content": {
+        "deferred_revenue": {
+          "as_of_2024": 19400,
+          "as_of_2023": 16600,
+          "as_of_2022": 13600,
+          "unit": "thousands (approximate from text)"
+        },
+        "revenue_recognized_from_prior_deferrals": {
+          "2024": 1400,
+          "2023": 2100,
+          "2022": 1800,
+          "unit": "thousands"
+        },
+        "estimated_future_recognition": {
+          "2025": 1067,
+          "2026": 977,
+          "2027": 894,
+          "2028": 830,
+          "2029": 763,
+          "thereafter": 14833,
+          "total": 19364,
+          "unit": "thousands"
+        }
+      }
+    },
+    {
+      "note_number": 5,
+      "family": "intangible_assets",
+      "source_pages": [341],
+      "content": {
+        "trademark_trade_name": {"gross": 450000, "accumulated_impairment": 180000, "net": 270000, "useful_life": "indefinite"},
+        "franchise_agreements": {
+          "2024": {"gross": 430000, "accumulated_amortization": 130686, "net": 299314, "useful_life_years": 17},
+          "2023": {"gross": 430000, "accumulated_amortization": 105392, "net": 324608, "useful_life_years": 17}
+        },
+        "amortization_schedule": {
+          "2025": 25294, "2026": 25294, "2027": 25294, "2028": 25294, "2029": 25294, "thereafter": 172844, "total": 299314,
+          "unit": "thousands"
+        },
+        "total_intangible_assets_net_2024": 749314
+      }
+    },
+    {
+      "note_number": 6,
+      "family": "related_party_transactions",
+      "source_pages": [341],
+      "content": {
+        "management_agreement": "JJF manages assets and performs franchising, marketing, IP, reporting, operating, and support services on behalf of the Company.",
+        "management_fee_line": "Management fee to affiliate (income statement)",
+        "payable_line": "Accounts payable to affiliates (balance sheet)",
+        "standalone_caveat": "Results of operations may not be indicative of those that would have been achieved on a stand-alone basis."
+      }
+    },
+    {
+      "note_number": 7,
+      "family": "subsequent_events",
+      "source_pages": [342],
+      "content": {
+        "evaluation_date": "March 20, 2025",
+        "items_to_disclose": "none",
+        "adjustments_required": "none"
+      }
+    }
+  ],
+  "note_families_not_present": [
+    "lease_accounting (entity has no leases — SPV structure)",
+    "variable_interest_entities",
+    "goodwill",
+    "long_term_debt (securitization notes are at parent level, not on SPV balance sheet)",
+    "advertising_fund_accounting (not separately disclosed in SPV financials)"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "depth_pass": "A2 Targeted Depth Block 2 — Key Exhibit Clause Walk",
+  "exhibits_walked": [
+    {
+      "exhibit": "F-1 — Franchise License Agreement",
+      "pages": [185, 225],
+      "clause_walk_status": "partial",
+      "clauses_walked": 21,
+      "source_method": "Body cross-references (Item 17 chart) + FLA TOC + targeted page reads",
+      "key_clauses": [
+        {"clause_family": "grant", "section": "2", "content": "Non-exclusive franchise grant for territory; franchisee may not operate internet business without authorization"},
+        {"clause_family": "term", "section": "4.1", "content": "Ends June 1 following 10th full Tax Season after Effective Date"},
+        {"clause_family": "renewal", "section": "4.2", "content": "No automatic renewal; franchisor may offer successor franchise at sole discretion under then-current, potentially materially different terms"},
+        {"clause_family": "royalty", "section": "6", "content": "Tiered 60%/40%/20% with early-pay discounts; Product-Specific Royalties on business services (15%/10%), POM (20%), Second Look (20%)"},
+        {"clause_family": "noncompete", "section": "12", "content": "During term: 45 miles. Post-term: 25 miles, 2 years + non-solicitation. Subject to state law."},
+        {"clause_family": "termination_incurable", "section": "13", "content": "11 incurable default categories including cross-default"},
+        {"clause_family": "termination_curable", "section": "14", "content": "15+ days to cure"},
+        {"clause_family": "termination_by_franchisee", "section": "15", "content": "30 days notice + 25% of 3-year average gross sales payment"},
+        {"clause_family": "post_termination", "section": "16", "content": "De-identification, file return, phone/lease assignment, 2-year real property restriction"},
+        {"clause_family": "rofr", "section": "17", "content": "30-day right of first refusal"},
+        {"clause_family": "transfer", "section": "18", "content": "Approval required with conditions; $2,500 fee"},
+        {"clause_family": "death_disability", "section": "20", "content": "6-month transfer deadline"},
+        {"clause_family": "indemnification", "section": "21", "content": "Franchisee indemnifies franchisor"},
+        {"clause_family": "dispute_resolution", "section": "29", "content": "Missouri law; Jackson County, MO courts"}
+      ],
+      "deferred_sections": [
+        {"section": "1 - Definitions", "pages": [187, 188], "reason": "Definitional; key defined terms covered via operative sections"},
+        {"section": "3 - Licensed Marks/Copyrights", "pages": [189], "reason": "Covered via Item 13 extraction"},
+        {"section": "7 - Training/Assistance", "pages": [189, 190], "reason": "Covered via Item 11 extraction"},
+        {"section": "8-9 - Computer/Supplies", "pages": [190, 191], "reason": "Covered via Items 8, 11 extraction"},
+        {"section": "10 - Conduct of Business", "pages": [192, 193], "reason": "Operative duties covered via Items 15, 16"},
+        {"section": "22-38 - Misc provisions", "pages": [211, 215], "reason": "Standard boilerplate (representations, remedies, non-waiver, amendments, counterparts, headings, acknowledgments)"}
+      ]
+    },
+    {
+      "exhibit": "G — General Release",
+      "pages": [231, 232],
+      "clause_walk_status": "labeled_only",
+      "reason": "Standard release form; operative scope is release of all claims upon renewal/transfer. Limited by state amendments in CA, IL, MD, MN, ND, WA, WI.",
+      "what_recovered_elsewhere": "Release scope identified from Item 17 chart and state amendment analysis"
+    },
+    {
+      "exhibit": "H-1 — Term Loan Credit and Security Agreement",
+      "pages": [233, 248],
+      "clause_walk_status": "partial",
+      "what_recovered": "Key terms from Item 10 body text: interest rate (Prime+3%), 2% admin fee, 4-10 year term, no prepayment penalty, collateral, cross-default, personal guarantee, remedies",
+      "what_remains_missing": "Detailed security agreement schedules, specific collateral descriptions, detailed event of default definitions beyond what Item 10 discloses"
+    },
+    {
+      "exhibit": "H-2 — Short-Term Loan Credit and Security Agreement",
+      "pages": [249, 264],
+      "clause_walk_status": "partial",
+      "what_recovered": "Key terms from Item 10: 7-month term (Sep-Apr), 20% of prior year revenue limit, collateral, cross-default",
+      "what_remains_missing": "Detailed schedules and specific default mechanics"
+    },
+    {
+      "exhibit": "I-3 — Financial Products Distribution Agreement",
+      "pages": [278, 310],
+      "clause_walk_status": "labeled_only",
+      "reason": "33-page FDA governing financial product distribution through approved banking partner. Annual electronic acceptance required. Key obligation: franchisee must offer products only through approved banking partner.",
+      "what_recovered_elsewhere": "Key obligations from Items 1, 8 body text",
+      "what_remains_missing": "Detailed compliance requirements, termination provisions, liability allocation between franchisee and banking partner"
+    }
+  ]
+}

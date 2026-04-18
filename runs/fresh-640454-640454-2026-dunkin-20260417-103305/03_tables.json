@@ -1,0 +1,287 @@
+{
+  "tables": [
+    {
+      "id": "item5_iff_by_dma",
+      "item": 5,
+      "title": "Initial Franchise Fees by Development Area Type",
+      "source_pages": [32, 33, 34, 35],
+      "columns": ["Development Area Type", "IFF (Standard Dunkin')", "Key DMAs"],
+      "rows": [
+        ["Type 1", "$90,000", "Boston, New York, Philadelphia, Hartford, Providence, Rochester, Syracuse, Portland ME, Springfield MA, etc."],
+        ["Type 2", "$80,000", "Baltimore, Chicago, Miami/Ft. Lauderdale, Orlando, Tampa, Presque Isle ME, Salisbury MD, West Palm Beach"],
+        ["Type 3", "$70,000", "Cleveland, Greenville NC, Jacksonville, Pittsburgh"],
+        ["Type 4", "$60,000", "Atlanta, Charlotte, Cincinnati, Columbus OH, DC, Nashville, Indianapolis, Phoenix, Las Vegas, etc."],
+        ["Type 5", "$50,000", "Denver, Portland OR, Seattle, Salt Lake City, Boise, Spokane, Pacific NW markets"],
+        ["Type 6", "$40,000", "All other geographic areas"]
+      ],
+      "table_notes": [
+        "Gas/C-Store: IFF pro-rated by term length",
+        "Self-Serve Gas/C-Store: 50% of standard IFF, pro-rated by term",
+        "SDO: 50% of standard IFF, pro-rated by term",
+        "Combo: Dunkin' IFF + BR IFF ($10,000)"
+      ]
+    },
+    {
+      "id": "item6_fee_table",
+      "item": 6,
+      "title": "Item 6 Other Fees",
+      "source_pages": [44, 45, 46, 47, 48, 49, 50, 51],
+      "columns": ["Type of Fee", "Amount", "Due Date", "Remarks"],
+      "rows": [
+        ["CFF (Royalty)", "5.9% of Gross Sales", "Weekly (Thursday for 7-day period ending Saturday 12 days prior)", "Note 1, 2"],
+        ["CAF (Advertising)", "5.0% of Gross Sales (2.5% for SDOs)", "Weekly with CFF", "Note 3"],
+        ["Center Annual Subscription", "$340/restaurant", "Annually", ""],
+        ["Additional Training Fee", "$4,000/person", "Upon registration", "If retraining required"],
+        ["Training Cancellation Fee", "$1,000 (8-14 days) / $2,000 (≤7 days)", "Upon demand", ""],
+        ["Site/Kitchen Layout Design Fee", "$1,200 PSL / $750 PKL (remodel)", "Upon request", "PSL for drive-thru only"],
+        ["Inspire Payment Services", "Varies", "Varies", "Billing/admin service fee"],
+        ["Loyalty Program Contribution", "1.4% of Loyalty Program Sales (1.2% from 2027)", "Weekly with CFF", "Note 4"],
+        ["Taxes", "Varies", "Upon demand", "Reimburse taxes on franchisor fee receipts"],
+        ["Late Fee/Interest", "1.5%/month or max legal rate", "Upon demand", ""],
+        ["Renewal Fee", "Varies", "Upon signing renewal FA", "Then-current renewal fee"],
+        ["Relocation Fee", "Varies", "Upon request", "IFF minus remaining-term credit"],
+        ["Insurance", "Cost of obtaining", "As incurred", "Franchisor may obtain at franchisee expense"],
+        ["Indemnification", "Varies", "Upon demand", "Claims/liabilities relating to Restaurant"],
+        ["Transfer Fee (<3 yrs)", "$12,500 Dunkin' / $20,000 Combo", "Upon transfer", "Note 6"],
+        ["Transfer Fee (≥3 yrs)", "$12,500 + $5K-$20K (Dunkin') / $20K + $12.5K-$27.5K (Combo) based on trailing 12-mo GS", "Upon transfer", "Note 6"],
+        ["Fixed Documentation Fee", "$2,000/transferee", "Upon transfer", "Non-controlling transfers only"],
+        ["DA Transfer Fee", "$10,000", "Upon transfer", "Majority interest"],
+        ["Enforcement Expenses", "Varies", "Upon demand", "Successful enforcement of FA/DA"],
+        ["Supplier Testing", "$1,000-$10,000", "Upon request", "Testing unapproved supplier samples"],
+        ["Lease Costs", "Varies", "Per lease", "If leasing from affiliates; net-net-net"]
+      ],
+      "table_notes": [
+        "Note 1: All fees non-refundable; may be waived/reduced at sole discretion. Gross Sales excludes stored value card deposits, taxes collected, inter-franchisee resale.",
+        "Note 2: Standard CFF 5.9%. Incentive programs: Standard ($125K CFF credit, reduced CAF 2%→5% over 4 yrs), Strategic ($225K CFF credit, CAF 2.4%→5% over 9 yrs), Pacific NW ($25K + $50K one-time + $300K 2026-2027 opening credit), Early Opening (0% CFF to required opening date, up to 6 months), VetFran ($10K/restaurant up to $100K).",
+        "Note 3: CAF 5.0% standard; 2.5% for SDOs. Standard incentive reduces CAF: 2% yr1, 3% yr2, 4% yr3, 5% yr4+. Strategic: 2.4% yr1-5, 3.4% yr6-8, 5.0% yr9+.",
+        "Note 4: Loyalty Program Sales = Gross Sales to Loyalty Program members for in-store eligible products. Reimbursement at NAPC for redeemed items. Fund audited annually by independent third party.",
+        "Note 6: Transfer fee based on trailing 12-month Gross Sales tiers: <$400K=$5K/$12.5K, $400-600K=$6K/$13.5K, $600K-1M=$8K/$15.5K, $1-1.4M=$12K/$19.5K, ≥$1.4M=$20K/$27.5K.",
+        "Note 8: Lease from affiliates: fixed rent + potential percentage rent; net-net-net structure (taxes, insurance, maintenance, CAM, utilities)."
+      ]
+    },
+    {
+      "id": "item7_table_a_freestanding",
+      "item": 7,
+      "title": "Table A: Freestanding Restaurant Estimated Initial Investment",
+      "source_pages": [52, 53],
+      "columns": ["Type of Expenditure", "Low", "High"],
+      "rows": [
+        ["Initial Franchise Fee", "$40,000", "$90,000"],
+        ["Building Costs", "$180,000", "$600,000"],
+        ["Site Development Costs", "$13,000", "$350,000"],
+        ["Additional Development Costs", "$12,000", "$90,000"],
+        ["Equipment, Fixtures & Signs", "$189,000", "$300,000"],
+        ["Restaurant Technology System", "$65,000", "$118,000"],
+        ["Licenses, Permits, Fees & Deposits", "$3,500", "$7,500"],
+        ["Real Estate Costs", "Variable", "Variable"],
+        ["Opening Inventory", "$8,000", "$20,000"],
+        ["Miscellaneous Opening Costs", "$9,500", "$70,000"],
+        ["Uniforms", "$400", "$3,000"],
+        ["Insurance", "$10,000", "$16,000"],
+        ["Training Related Expenses", "$2,000", "$50,000"],
+        ["Marketing Start-Up Fee", "$0", "$10,000"],
+        ["Additional Funds (3 Months)", "$0", "$108,000"],
+        ["TOTAL", "$532,400", "$1,832,500"]
+      ],
+      "table_notes": ["Building $83-$566/sqft (750-3,100 sqft). Land purchase additional $100K-$1.2M+."]
+    },
+    {
+      "id": "item7_table_b_shopping_center",
+      "item": 7,
+      "title": "Table B: Shopping Center/Storefront Restaurant",
+      "source_pages": [53, 54],
+      "columns": ["Type of Expenditure", "Low", "High"],
+      "rows": [
+        ["TOTAL", "$443,000", "$1,333,500"]
+      ],
+      "table_notes": ["Building $59-$378/sqft (600-2,800 sqft)."]
+    },
+    {
+      "id": "item7_table_c_gas_convenience",
+      "item": 7,
+      "title": "Table C: Gas & Convenience Restaurant",
+      "source_pages": [54, 55],
+      "columns": ["Type of Expenditure", "Low", "High"],
+      "rows": [
+        ["TOTAL", "$216,400", "$1,065,500"]
+      ],
+      "table_notes": ["Building $56-$340/sqft (600-2,300 sqft)."]
+    },
+    {
+      "id": "item7_table_d_sdo",
+      "item": 7,
+      "title": "Table D: SDO (Non-Traditional) Restaurant",
+      "source_pages": [55, 56],
+      "columns": ["Type of Expenditure", "Low", "High"],
+      "rows": [
+        ["TOTAL", "$142,000", "$862,500"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item19_table1_overall_auvs",
+      "item": 19,
+      "title": "Annual Unit Volumes for 2025 Franchised Restaurants",
+      "source_pages": [97],
+      "columns": ["Quartile", "# Restaurants", "Highest AUV", "Median AUV", "Lowest AUV", "Average AUV", "# / % Above Average"],
+      "rows": [
+        ["1st Quartile", "1,752", "$6,007,706", "$2,041,189", "$1,703,327", "$2,154,341", "675 / 39%"],
+        ["2nd Quartile", "1,753", "$1,703,007", "$1,488,156", "$1,297,861", "$1,489,962", "869 / 50%"],
+        ["3rd Quartile", "1,752", "$1,297,527", "$1,124,919", "$953,095", "$1,126,192", "871 / 50%"],
+        ["4th Quartile", "1,753", "$952,914", "$753,308", "$65,354", "$718,088", "1,003 / 57%"],
+        ["All Restaurants", "7,010", "$6,007,706", "$1,297,694", "$65,354", "$1,372,069", "3,155 / 45%"]
+      ],
+      "table_notes": ["AUV = Gross Sales. Does not reflect COGS, operating expenses, or other costs. Not independently audited."]
+    },
+    {
+      "id": "item19_table2_by_site_type",
+      "item": 19,
+      "title": "AUVs by Site Type and Venue",
+      "source_pages": [97],
+      "columns": ["Site Type", "# Restaurants", "Highest AUV", "Median AUV", "Lowest AUV", "Average AUV", "#/% Above Average"],
+      "rows": [
+        ["Traditional/Freestanding Pad or Building", "3,169", "$4,704,400", "$1,522,154", "$292,090", "$1,584,319", "1,410 / 44%"],
+        ["Traditional/Other", "2,423", "$3,796,187", "$1,175,390", "$190,905", "$1,250,245", "1,056 / 44%"],
+        ["Non-Traditional/SDO – Gas or C-store", "900", "$2,971,032", "$1,088,513", "$65,354", "$1,141,971", "403 / 45%"],
+        ["Non-Traditional/SDO – Airport", "102", "$6,007,706", "$1,551,836", "$88,742", "$1,667,646", "48 / 47%"],
+        ["Non-Traditional/SDO – Other", "416", "$4,535,673", "$747,043", "$75,638", "$890,102", "153 / 37%"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item19_table3_drive_thru",
+      "item": 19,
+      "title": "AUVs for Traditional Restaurants by Drive-Thru Status",
+      "source_pages": [97],
+      "columns": ["Type", "# Restaurants", "Highest AUV", "Median AUV", "Lowest AUV", "Average AUV", "#/% Above Average"],
+      "rows": [
+        ["Drive-Thru", "4,161", "$4,704,400", "$1,485,494", "$292,090", "$1,547,899", "1,876 / 45%"],
+        ["No Drive-Thru", "1,431", "$2,957,745", "$1,070,654", "$190,905", "$1,124,559", "635 / 44%"]
+      ],
+      "table_notes": ["Drive-thru includes 117 drive-thru only + 4,723 with drive-thru (not drive-thru only); 2,170 without drive-thru."]
+    },
+    {
+      "id": "item19_table4_above_thresholds",
+      "item": 19,
+      "title": "Traditional Restaurants Above AUV Thresholds",
+      "source_pages": [98],
+      "columns": ["Total Restaurants", "Above $3M", "Above $2.5M", "Above $2M", "Above $1.5M", "Above $1M"],
+      "rows": [
+        ["5,592", "64 / 1%", "244 / 4%", "844 / 15%", "2,269 / 41%", "4,348 / 78%"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item20_dunkin_table1_systemwide",
+      "item": 20,
+      "title": "Systemwide Dunkin' Outlet Summary (2023-2025)",
+      "source_pages": [99],
+      "columns": ["Outlet Type", "Year", "Start", "End", "Net Change"],
+      "rows": [
+        ["Franchised", "2023", "8,087", "8,265", "+178"],
+        ["Franchised", "2024", "8,265", "8,465", "+200"],
+        ["Franchised", "2025", "8,465", "8,744", "+279"],
+        ["Company-Owned", "2023", "31", "32", "+1"],
+        ["Company-Owned", "2024", "32", "34", "+2"],
+        ["Company-Owned", "2025", "34", "36", "+2"],
+        ["Total", "2023", "8,118", "8,297", "+179"],
+        ["Total", "2024", "8,297", "8,499", "+202"],
+        ["Total", "2025", "8,499", "8,780", "+281"]
+      ],
+      "table_notes": []
+    },
+    {
+      "id": "item20_dunkin_table3_franchised_status",
+      "item": 20,
+      "title": "Status of Dunkin' Franchised Outlets (2023-2025) — Totals",
+      "source_pages": [102, 103, 104, 105],
+      "columns": ["Year", "Start", "Opened", "Terminations", "Non-Renewals", "Reacquired", "Ceased Ops", "End"],
+      "rows": [
+        ["2023", "8,087", "344", "4", "23", "0", "139", "8,265"],
+        ["2024", "8,265", "312", "1", "28", "0", "67", "8,465"],
+        ["2025", "8,465", "314", "2", "24", "0", "55", "8,744"]
+      ],
+      "table_notes": [
+        "Ceased operations declined significantly from 139 (2023) to 55 (2025).",
+        "Terminations very low across all years (4, 1, 2).",
+        "* denotes includes Multi-Brand Location openings."
+      ],
+      "transfers_total": {"2023": 224, "2024": 137, "2025": 241},
+      "terminations_total": {"2023": 4, "2024": 1, "2025": 2},
+      "non_renewals_total": {"2023": 23, "2024": 28, "2025": 24},
+      "ceased_operations_total": {"2023": 139, "2024": 67, "2025": 55},
+      "projected_openings_total": 406
+    },
+    {
+      "id": "item20_dunkin_table5_projected",
+      "item": 20,
+      "title": "Projected Dunkin' Openings as of Dec 28, 2025",
+      "source_pages": [105, 106],
+      "columns": ["Metric", "Count"],
+      "rows": [
+        ["FAs Signed But Not Open", "229"],
+        ["Projected New Franchised", "406"],
+        ["Projected New Company-Owned", "10"]
+      ],
+      "table_notes": ["Company-owned projected openings all in Ohio."]
+    },
+    {
+      "id": "item20_combo_table1_systemwide",
+      "item": 20,
+      "title": "Systemwide Combo Outlet Summary (2023-2025)",
+      "source_pages": [108],
+      "columns": ["Year", "Start", "End", "Net Change"],
+      "rows": [
+        ["2023", "1,252", "1,283", "+31"],
+        ["2024", "1,283", "1,269", "-14"],
+        ["2025", "1,269", "1,219", "-50"]
+      ],
+      "table_notes": ["Combo restaurants declining."]
+    },
+    {
+      "id": "item21_balance_sheet",
+      "item": 21,
+      "title": "DD Franchisor LLC Balance Sheet (Dec 28, 2025)",
+      "source_pages": [125],
+      "columns": ["Line Item", "Dec 28, 2025 ($000)", "Dec 29, 2024 ($000)"],
+      "rows": [
+        ["Restricted cash", "3,002", "3,010"],
+        ["Accounts/notes receivable (net)", "114,438", "72,414"],
+        ["Total current assets", "117,440", "75,424"],
+        ["Intangible assets (net)", "1,453,401", "1,514,286"],
+        ["Other assets", "668", "106"],
+        ["Total assets", "1,571,509", "1,589,816"],
+        ["Accounts payable/accrued", "2,899", "2,656"],
+        ["Current deferred revenue", "9,253", "9,100"],
+        ["Advertising due to affiliates", "42,299", "28,019"],
+        ["Total current liabilities", "54,451", "39,775"],
+        ["Deferred revenue (long-term)", "186,266", "138,846"],
+        ["Other liabilities", "35", "45"],
+        ["Total liabilities", "240,752", "178,666"],
+        ["Member's equity", "1,330,757", "1,411,150"]
+      ],
+      "table_notes": ["Allowances for credit losses: $4.8M (2025), $5.5M (2024)."]
+    },
+    {
+      "id": "item21_income_statement",
+      "item": 21,
+      "title": "DD Franchisor LLC Income Statement",
+      "source_pages": [126],
+      "columns": ["Line Item", "FY2025 ($000)", "FY2024 ($000)", "FY2023 ($000)"],
+      "rows": [
+        ["Franchise fees/royalty revenues", "793,158", "756,620", "723,575"],
+        ["Franchise contributions for advertising", "597,779", "596,461", "568,463"],
+        ["Other revenues", "7,419", "6,062", "5,948"],
+        ["Total revenues", "1,398,356", "1,359,143", "1,297,986"],
+        ["Franchise advertising expenses", "597,779", "596,461", "568,463"],
+        ["Amortization of intangibles", "60,885", "60,885", "60,885"],
+        ["Other operating costs", "653", "2,840", "922"],
+        ["Total costs/expenses", "659,317", "660,186", "630,270"],
+        ["Operating income", "739,039", "698,957", "667,716"],
+        ["Income tax expense", "6,318", "6,068", "5,983"],
+        ["Net income", "732,910", "692,944", "661,838"]
+      ],
+      "table_notes": ["Advertising revenue and expense net to zero."]
+    }
+  ]
+}

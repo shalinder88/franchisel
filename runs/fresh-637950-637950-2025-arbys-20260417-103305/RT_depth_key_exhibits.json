@@ -1,0 +1,32 @@
+{
+  "depth_pass": "A2_targeted_depth_block_2_key_exhibits",
+  "exhibits_walked": [
+    {
+      "exhibit": "Franchise Agreement (Exhibit D)",
+      "page_range": [267, 305],
+      "clause_walk_status": "partial",
+      "clauses_walked": [
+        {"clause_family": "transfer", "source_pages": [290], "key_terms": "ROFR 30-day exercise / 60-day closing; pre-qualified buyer exception; non-cash substitution; General Release required"},
+        {"clause_family": "restricted_persons_ofac", "source_pages": [295], "key_terms": "OFAC compliance representations; cannot transfer to SDN/blocked persons"},
+        {"clause_family": "no_waiver_of_reliance", "source_pages": [295], "key_terms": "Anti-disclaimer provision for 13 states"},
+        {"clause_family": "signature", "source_pages": [296], "key_terms": "Standard execution page"}
+      ],
+      "deferred_families": ["grant_of_rights", "operations", "financial_covenants", "records_and_reporting", "insurance_detail", "confidentiality", "default_cross_default"],
+      "why_deferred": "39-page agreement. Key operative terms from Item 17 chart provide adequate coverage of major burdens. Full clause walk would require reading all 39 pages line by line.",
+      "substance_recovered_elsewhere": "Item 17 chart (term, renewal, termination, transfer, non-compete, dispute), Item 6 (fees), Item 8 (supplier), Item 11 (training, technology), Item 12 (territory), Item 15 (participation)",
+      "what_remains_missing": "Detailed default/cross-default triggers beyond Item 17 summary; specific liquidated damages formula if any; detailed insurance schedules; specific records/reporting obligations"
+    },
+    {
+      "exhibit": "State-Specific Riders to FA (Exhibit E, FA portion)",
+      "page_range": [344, 346],
+      "clause_walk_status": "complete",
+      "clauses_walked": [
+        {"clause_family": "minnesota_rider", "source_pages": [345, 346], "key_terms": "Trademark protection; injunctive relief not automatic; release limitation; 90/180 day notice; governing law preserves MN rights; forum preserved"}
+      ],
+      "deferred_families": [],
+      "why_deferred": null,
+      "substance_recovered_elsewhere": null,
+      "what_remains_missing": null
+    }
+  ]
+}

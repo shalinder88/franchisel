@@ -1,0 +1,44 @@
+{
+  "depth_pass": "A2_depth_pass_3",
+  "brand": "Jimmy John's",
+  "promoted_facts": [
+    {
+      "fact": "Average restaurant age is 12.5 years (for 2024 Franchised Restaurants)",
+      "source_reader_report": "Pass A, bullet 9 / Pass F Item 19 notes",
+      "source_pdf_page": 79,
+      "promoted_to": "system_size.avg_age_years"
+    },
+    {
+      "fact": "942 of 2,529 included restaurants operate drive-thru windows; 1,587 do not",
+      "source_reader_report": "Pass A / Pass F",
+      "source_pdf_page": 79,
+      "promoted_to": "system_size.drive_thru_count, system_size.no_drive_thru_count"
+    },
+    {
+      "fact": "Franchisee Advisory Council exists (contact: Tim Asire)",
+      "source_reader_report": "Pass F, Item 20 section",
+      "source_pdf_page": 92,
+      "promoted_to": "item_20_outlets.franchisee_association"
+    },
+    {
+      "fact": "Confidential Operations Manual is 272 pages covering: Advertising (15), Customer Service (22), Financials/Accounting (45), Food Safety (53), Operations: Store Setup (18), Paperwork (8), Product Storage (17), Systems & Procedures (14), Recipes (80)",
+      "source_reader_report": "Pass C, Item 11",
+      "source_pdf_page": 52,
+      "promoted_to": "training.operations_manual_pages"
+    },
+    {
+      "fact": "State effective dates page shows Maryland registration is pending; other states have effective dates between March 27 and April 14, 2025",
+      "source_reader_report": "Not in reader report — discovered in retry R2",
+      "source_pdf_page": 360,
+      "promoted_to": "state_addenda.registration_status"
+    },
+    {
+      "fact": "Item 19 cohort economics match current new-franchisee economics — standard 6% royalty used for AUV calculation (no comparability issue)",
+      "source_reader_report": "Pass F Item 19 notes",
+      "source_pdf_page": [79, 80],
+      "promoted_to": "item_19_fpr.cohort_comparability"
+    }
+  ],
+  "no_promotable_gaps_found": true,
+  "note": "Reader report was comprehensive; canonical already captured the vast majority of material facts. Promoted items are enrichment additions."
+}

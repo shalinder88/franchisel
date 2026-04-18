@@ -1,0 +1,103 @@
+{
+  "depth_pass": "A2_depth_pass_1",
+  "target": "Item 21 Financial Note Depth — DPF and DPL",
+
+  "dpf_notes": {
+    "note_1_description": {"family": "Description of Business", "source_pages": [291], "key_facts": ["Single-member Delaware LLC, commenced April 2007", "Primarily franchising U.S. Domino's stores", "Revenue from royalties (5.5%) and franchise fees"]},
+    "note_1_revenue_recognition": {"family": "Revenue Recognition", "source_pages": [291], "key_facts": ["Royalty at 5.5% of retail sales", "Recognized at delivery/carryout", "Lower rates for DA incentives, sales initiatives, relocation/new store incentives", "Payments due within 7 days of week end"]},
+    "note_1_fiscal_year": {"family": "Fiscal Year", "source_pages": [291], "key_facts": ["52-week year ending Sunday nearest Dec 31"]},
+    "note_1_restricted_cash": {"family": "Restricted Cash", "source_pages": [291], "key_facts": ["Cash restricted under Parent debt agreements"]},
+    "note_1_property": {"family": "Property", "source_pages": [291], "key_facts": ["Buildings at cost, 20-year useful life, straight-line depreciation"]},
+    "note_1_subsequent_events": {"family": "Subsequent Events", "source_pages": [292], "key_facts": ["Evaluated through March 23, 2026", "No subsequent events requiring recognition or disclosure"]},
+    "note_2_taxation": {"family": "Taxation", "source_pages": [292], "key_facts": ["Disregarded entity for federal/state tax", "Non-resident withholding: $0.5M (2025), $0.4M (2024), $0.4M (2023)"]},
+    "note_3_financing": {"family": "DPI Financing Arrangements", "source_pages": [293, 294], "key_facts": [
+      "2025 Notes: $1.0B (5yr at 4.930%, 7yr at 5.217%)",
+      "2021 Notes: $1.85B (7.5yr at 2.662%, 10yr at 3.151%)",
+      "2019 Notes: $675M (10yr at 3.668%)",
+      "2018 Notes: $825M (7.5yr at 4.116%, 9.25yr at 4.328%)",
+      "2017 Notes: $1.9B (floating, 5yr at 3.082%, 10yr at 4.118%)",
+      "2025 Variable Funding: $320M facility, undrawn",
+      "DSCR minimum: 1.75x",
+      "DPF guarantees all notes"
+    ]},
+    "note_4_purchase_sale": {"family": "Purchase and Sale Agreement", "source_pages": [294], "key_facts": ["Q4 2023: Sold supply chain center for $14.9M, gain $13.5M"]},
+    "note_5_related_party": {"family": "Related Party Transactions", "source_pages": [295], "key_facts": [
+      "Distributions: $490.1M (2025), $478.5M (2024), $440.2M (2023)",
+      "Management fee: $19.1M (2025), $23.6M (2024), $22.4M (2023)",
+      "Post-2025 refinancing: fee allocation changed; DPF portion expected lower",
+      "Capital contribution: $1.0M (2025) for large franchisor registration exemptions",
+      "2025 refinancing amendments impact: ($2.5M) to member's interest"
+    ]}
+  },
+
+  "dpl_financials": {
+    "auditor": "PricewaterhouseCoopers LLP",
+    "opinion": "Unqualified",
+    "going_concern": false,
+    "opinion_date": "March 23, 2026",
+
+    "income_statement_fy2025": {
+      "us_company_owned_stores_revenue": 375153000,
+      "us_franchise_royalties_fees": 677114000,
+      "supply_chain_revenue": 2989529000,
+      "international_franchise_royalties_fees": 338704000,
+      "us_franchise_advertising": 559494000,
+      "total_revenue": 4939994000,
+      "us_company_owned_cos": 321646000,
+      "supply_chain_cos": 2644788000,
+      "total_cost_of_sales": 2966434000,
+      "gross_margin": 1973560000,
+      "general_and_admin": 464120000,
+      "us_franchise_advertising_expense": 559494000,
+      "refranchising_gain": 4028000,
+      "income_from_operations": 953974000,
+      "interest_expense": 195972000,
+      "interest_income": 14880000,
+      "income_before_taxes": 770338000,
+      "tax_provision": 168634000,
+      "net_income": 601704000
+    },
+
+    "balance_sheet_dec_2025": {
+      "cash_and_equivalents": 125675000,
+      "restricted_cash": 216110000,
+      "accounts_receivable_net": 315958000,
+      "inventories": 79189000,
+      "total_current_assets": 894201000,
+      "property_plant_equipment_net": 324022000,
+      "operating_lease_rou_assets": 219485000,
+      "goodwill": 10726000,
+      "capitalized_software_net": 159256000,
+      "investment_dpc_dash": 36070000,
+      "total_assets": 1716459000,
+      "current_long_term_debt": 6131000,
+      "long_term_debt": 4810683000,
+      "total_liabilities": 5617601000,
+      "members_deficit": -3896446000,
+      "total_members_deficit": -3901142000
+    },
+
+    "cash_flows_fy2025": {
+      "operating": 792062000,
+      "capex": -120558000,
+      "investing": -70190000,
+      "distributions": -605918000,
+      "financing": -752093000
+    },
+
+    "key_notes": {
+      "profit_sharing_rebates": {"2025": 193000000, "2024": 164000000, "2023": 138700000},
+      "international_royalty_average_rate": "3.0%",
+      "us_franchise_advertising_rate": "6.0% of retail sales",
+      "operating_lease_maturities_total": 271400000,
+      "finance_lease_maturities_total": 83196000,
+      "franchisee_lease_guarantees_max": 12600000,
+      "supply_chain_revenue_recognition": "Upon delivery to franchisees; payments due within 30 days"
+    },
+
+    "source_pages": [297, 298, 299, 300, 301, 302, 303, 304, 305, 310, 315, 320, 325]
+  },
+
+  "item21_extraction_method": "normal_text_extraction",
+  "image_fallback_needed": false
+}

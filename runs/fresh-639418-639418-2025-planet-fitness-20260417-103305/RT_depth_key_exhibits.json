@@ -1,0 +1,51 @@
+{
+  "depth_pass": "A2_targeted_depth_block_2",
+  "exhibits_walked": [
+    {
+      "exhibit": "C — Franchise Agreement",
+      "page_range": [112, 211],
+      "clause_walk_status": "complete",
+      "material_clause_count": 25,
+      "operative_terms_extracted": ["grant_term", "reservation_of_rights", "location_development", "reserved_area", "fees", "eft_authorization", "training", "marks", "confidentiality", "operations", "advertising", "records_reports", "inspections_audits", "transfer", "successor_franchise", "month_to_month", "termination_by_franchisee", "termination_by_franchisor", "post_termination", "indemnification", "force_majeure", "dispute_resolution", "governing_law", "waiver_of_damages", "amendments"],
+      "distinctive_clauses_found": 7,
+      "source": "RT_depth_contract_burdens.json"
+    }
+  ],
+  "exhibits_deferred": [
+    {
+      "exhibit": "D — Acquisition Amendment",
+      "page_range": [212, 221],
+      "why_deferred": "Acquisition amendment modifies standard FA for purchasing existing PF locations. Key terms summarized in Item 17 chart. Does not introduce new fee structures or unique default triggers beyond those in the standard FA.",
+      "recovered_elsewhere": "Item 17 chart rows a-w cover all material acquisition amendment terms",
+      "what_remains_missing": "Specific negotiation-related clauses for company-to-franchisee sales; typically customized per transaction"
+    },
+    {
+      "exhibit": "E — Successor Amendment",
+      "page_range": [222, 232],
+      "why_deferred": "Successor amendment sets terms for renewal. Key conditions fully extracted from FA Art 14.1 and Item 17 chart. The critical risk (materially different terms) is already surfaced.",
+      "recovered_elsewhere": "FA Art 14.1 clause walk + Item 17 chart row c",
+      "what_remains_missing": "None material — successor conditions are fully enumerated"
+    },
+    {
+      "exhibit": "G — Area Development Agreement",
+      "page_range": [242, 283],
+      "why_deferred": "ADA key terms comprehensively extracted from Item 12 (territory/carve-outs), Item 17 ADA chart (all provisions a-w), and Item 6 notes (ADA fees). The 5 carve-out structure and ROFR mechanics are fully surfaced.",
+      "recovered_elsewhere": "Item 12 territory section + Item 17 ADA table + FA cross-references",
+      "what_remains_missing": "Development Schedule template and Map of Development Area (Exhibit A to ADA) — location-specific"
+    },
+    {
+      "exhibit": "K-1 — Equipment Terms",
+      "page_range": [448, 450],
+      "why_deferred": "3-page exhibit covering sole-source equipment purchase terms from PF Equipment affiliate. Key economics (pricing, re-equip frequency, affiliate revenue) fully captured in Items 6, 7, 8. The specific financing terms and payment mechanics are operational.",
+      "recovered_elsewhere": "Item 6 Notes 4-6, Item 7 Note 4, Item 8 supplier restrictions",
+      "what_remains_missing": "Warranty terms, payment schedule, acceptance criteria for delivered equipment"
+    },
+    {
+      "exhibit": "K-3 — POS Agreements",
+      "page_range": [463, 487],
+      "why_deferred": "25-page exhibit covering POS system billing services. Fee structure fully captured in Items 6, 11 ($199/month software, $50-100/month security, $9K-53K annual transaction costs, $800/day POS training). Technology lock-in risk is surfaced.",
+      "recovered_elsewhere": "Item 11 computer hardware/software section, Item 6 technology fees",
+      "what_remains_missing": "Specific merchant processing rate tables, ACH fee schedules, payment gateway terms"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "tables": [
+    {
+      "table_id": "T5_initial_fees",
+      "item": "5",
+      "title": "Initial Franchise Fees by Restaurant Type",
+      "source_pages": [28, 29],
+      "columns": ["restaurant_type", "initial_franchise_fee"],
+      "rows": [
+        {"restaurant_type": "Traditional Drive-In or Non-Drive-In Location", "initial_franchise_fee": "$15,000"},
+        {"restaurant_type": "Reopened (closed <1 year, existing franchisee in good standing)", "initial_franchise_fee": "$5,000"},
+        {"restaurant_type": "Reopened (closed <1 year, new franchisee)", "initial_franchise_fee": "$12,500"},
+        {"restaurant_type": "Non-Traditional Location", "initial_franchise_fee": "$11,250 (or $1,125/year, up to 10 years)"},
+        {"restaurant_type": "Non-Drive-In Locations That Are C-Stores", "initial_franchise_fee": "$11,250 (or $1,125/year, up to 10 years)"},
+        {"restaurant_type": "Relocation", "initial_franchise_fee": "$0"}
+      ],
+      "table_notes": ["All fees fully earned when paid and non-refundable", "2025 fiscal year actual franchise fees: $1,250 to $45,000", "Development fee: $10,000 per restaurant (credited toward franchise fee)"]
+    },
+    {
+      "table_id": "T6_other_fees",
+      "item": "6",
+      "title": "Other Fees",
+      "source_pages": [30, 31, 32],
+      "columns": ["fee_type", "amount", "due_date", "remarks"],
+      "rows": [
+        {"fee_type": "Royalty fee", "amount": "5% of Gross Sales", "due_date": "Monthly on 10th", "remarks": "Standard rate; incentive programs may reduce"},
+        {"fee_type": "Brand fee/SBF contribution", "amount": "0.90% of Gross Sales", "due_date": "Monthly on 10th", "remarks": "Payable to Sonic Brand Fund"},
+        {"fee_type": "Advertising cooperative/SMF contribution", "amount": "1.625% (Non-Trad/C-Store) or 3.25% min (Traditional) of Gross Sales", "due_date": "Monthly on 10th", "remarks": "Core: 0.5% coop + 2.75%-4.5% SMF; Developing: 0.5% + 4.5%; New: 0% + 5%"},
+        {"fee_type": "Additional training fee", "amount": "$250/person (GM class), $1,000/failed inspection", "due_date": "Before training", "remarks": "New GM must attend within 6 months"},
+        {"fee_type": "Inspire Payment Services", "amount": "$365-$565/month", "due_date": "Monthly", "remarks": "Cybersecurity + payment processing"},
+        {"fee_type": "Site design/kitchen layout fee", "amount": "$1,200 PSL, $750-$1,200 PKL", "due_date": "Upon request", "remarks": "Optional; PSL only for drive-thru restaurants"},
+        {"fee_type": "Transfer fee", "amount": "$1,000 (non-control/family/wholly-owned) or $3,000 (other)", "due_date": "Before transfer", "remarks": ""},
+        {"fee_type": "Audit fee, interest and surcharge", "amount": "Unpaid amounts + interest + 10% of unpaid", "due_date": "When billed", "remarks": "If audit shows ≥3% understatement"},
+        {"fee_type": "Late charge", "amount": "1.75% per month", "due_date": "When billed", "remarks": "On overdue amounts"},
+        {"fee_type": "Renewal fee", "amount": "$15,000", "due_date": "Upon signing renewal FA", "remarks": ""},
+        {"fee_type": "Insurance", "amount": "Cost of obtaining", "due_date": "As incurred", "remarks": "If franchisee fails to obtain, franchisor may obtain at franchisee expense"},
+        {"fee_type": "Management fee", "amount": "3% of Gross Sales", "due_date": "Monthly on 10th", "remarks": "Only if franchisor manages post-termination"},
+        {"fee_type": "Indemnification", "amount": "Varies", "due_date": "On demand", "remarks": "Claims/liabilities relating to restaurant"},
+        {"fee_type": "Enforcement costs", "amount": "Varies", "due_date": "On demand", "remarks": "Prevailing party recovers costs/fees"}
+      ],
+      "table_notes": [
+        "All fees payable to franchisor, non-refundable, uniform unless noted",
+        "Gross Sales defined to include all revenues from all business conducted from restaurant",
+        "Late report penalty: 120% of last fees paid"
+      ]
+    },
+    {
+      "table_id": "T6_standard_incentive_royalty",
+      "item": "6",
+      "title": "Standard Incentive Royalty Schedule",
+      "source_pages": [33],
+      "columns": ["duration", "effective_royalty_fee"],
+      "rows": [
+        {"duration": "Opening through Year 1", "effective_royalty_fee": "1%"},
+        {"duration": "Year 2", "effective_royalty_fee": "1.5%"},
+        {"duration": "Year 3", "effective_royalty_fee": "2%"},
+        {"duration": "Year 4", "effective_royalty_fee": "2.5%"},
+        {"duration": "Year 5 through remainder of term", "effective_royalty_fee": "5%"}
+      ],
+      "table_notes": ["Available for new FA signed by March 31, 2027 for Traditional Restaurant", "Additional relief if AUV < $1.4M after Year 3 (2.5% through Year 8)"]
+    },
+    {
+      "table_id": "T7_initial_investment",
+      "item": "7",
+      "title": "Estimated Initial Investment",
+      "source_pages": [37, 38],
+      "columns": ["expenditure_type", "traditional_freestanding_leased", "c_store_leased", "urban_inline_leased"],
+      "rows": [
+        {"expenditure_type": "Initial franchise fee", "traditional_freestanding_leased": "$15,000", "c_store_leased": "$15,000", "urban_inline_leased": "$15,000"},
+        {"expenditure_type": "Travel and living (training)", "traditional_freestanding_leased": "$8,200-$93,600", "c_store_leased": "$8,200-$93,600", "urban_inline_leased": "$8,200-$93,600"},
+        {"expenditure_type": "Crew training expenses", "traditional_freestanding_leased": "$15,200-$42,500", "c_store_leased": "$15,200-$42,500", "urban_inline_leased": "$15,200-$42,500"},
+        {"expenditure_type": "Prepaid expenses", "traditional_freestanding_leased": "$2,000-$125,000", "c_store_leased": "$2,000-$15,000", "urban_inline_leased": "$2,000-$15,000"},
+        {"expenditure_type": "Real property/occupancy", "traditional_freestanding_leased": "Variable", "c_store_leased": "$0-$35,000", "urban_inline_leased": "Variable"},
+        {"expenditure_type": "Building costs", "traditional_freestanding_leased": "$600,000-$800,000", "c_store_leased": "$250,000-$500,000", "urban_inline_leased": "$330,000-$500,000"},
+        {"expenditure_type": "Site work", "traditional_freestanding_leased": "$450,000-$700,000", "c_store_leased": "$50,000-$100,000", "urban_inline_leased": "$0-$10,000"},
+        {"expenditure_type": "Restaurant equipment", "traditional_freestanding_leased": "$175,000-$310,000", "c_store_leased": "$175,000-$310,000", "urban_inline_leased": "$175,000-$295,000"},
+        {"expenditure_type": "POS, POPS & other tech", "traditional_freestanding_leased": "$105,000-$160,000", "c_store_leased": "$70,000-$80,000", "urban_inline_leased": "$60,000-$70,000"},
+        {"expenditure_type": "External signage", "traditional_freestanding_leased": "$50,000-$80,000", "c_store_leased": "$30,000-$50,000", "urban_inline_leased": "$20,000-$40,000"},
+        {"expenditure_type": "Beginning inventory", "traditional_freestanding_leased": "$20,000-$50,000", "c_store_leased": "$10,000-$25,000", "urban_inline_leased": "$10,000-$25,000"},
+        {"expenditure_type": "Advertising funds", "traditional_freestanding_leased": "$2,000-$5,000", "c_store_leased": "$2,000-$5,000", "urban_inline_leased": "$2,000-$5,000"},
+        {"expenditure_type": "Insurance premiums", "traditional_freestanding_leased": "$11,000-$22,000", "c_store_leased": "$11,000-$22,000", "urban_inline_leased": "$10,000-$20,000"},
+        {"expenditure_type": "Payroll", "traditional_freestanding_leased": "$26,800-$94,800", "c_store_leased": "$26,800-$94,800", "urban_inline_leased": "$26,800-$94,800"},
+        {"expenditure_type": "Additional funds (3 months)", "traditional_freestanding_leased": "$5,000-$25,000", "c_store_leased": "$5,000-$25,000", "urban_inline_leased": "$5,000-$25,000"},
+        {"expenditure_type": "TOTAL", "traditional_freestanding_leased": "$1,485,200-$2,522,900", "c_store_leased": "$670,200-$1,412,900", "urban_inline_leased": "$679,200-$1,250,900"}
+      ],
+      "table_notes": [
+        "Traditional: 34,000-43,560 sqft lot, 1,250-1,500 sqft building, 6-12 stalls",
+        "C-Store: 1,200-2,500 sqft within host facility",
+        "Urban inline: 1,200-2,100 sqft street-facing commercial space",
+        "Excludes real estate purchase costs and Non-Traditional Location costs",
+        "Multi-Brand Location may incur additional costs per Other Franchisor FDD",
+        "Based on ~70 years of experience"
+      ]
+    },
+    {
+      "table_id": "T19_auv_quartiles",
+      "item": "19",
+      "title": "Annual Unit Volumes for 2025 Franchised Traditional Restaurants",
+      "source_pages": [71, 72],
+      "columns": ["quartile", "count", "highest_auv", "median_auv", "lowest_auv", "average_auv", "pct_above_avg"],
+      "rows": [
+        {"quartile": "1st Quartile", "count": 764, "highest_auv": "$4,800,647", "median_auv": "$2,228,716", "lowest_auv": "$1,886,236", "average_auv": "$2,332,093", "pct_above_avg": "38%"},
+        {"quartile": "2nd Quartile", "count": 764, "highest_auv": "$1,886,035", "median_auv": "$1,653,634", "lowest_auv": "$1,465,475", "average_auv": "$1,659,107", "pct_above_avg": "47%"},
+        {"quartile": "3rd Quartile", "count": 764, "highest_auv": "$1,465,090", "median_auv": "$1,301,671", "lowest_auv": "$1,123,556", "average_auv": "$1,298,578", "pct_above_avg": "51%"},
+        {"quartile": "4th Quartile", "count": 765, "highest_auv": "$1,123,408", "median_auv": "$958,893", "lowest_auv": "$225,308", "average_auv": "$919,629", "pct_above_avg": "59%"},
+        {"quartile": "All Restaurants", "count": 3057, "highest_auv": "$4,800,647", "median_auv": "$1,465,090", "lowest_auv": "$225,308", "average_auv": "$1,552,145", "pct_above_avg": "44%"}
+      ],
+      "table_notes": [
+        "AUV = Annual Unit Volume = Gross Sales",
+        "Based on franchised restaurants only, excludes 29 new, 23 closed for remodeling/casualty, 1 Multi-Brand, 10 Non-Traditional, 3 transferred from company, 56 that closed in 2025, all company-owned",
+        "2,093 of 3,057 (68%) operate with drive-thru windows",
+        "Average restaurant age: 28 years",
+        "Data from POS reports, not independently audited",
+        "No cost/expense/profit data included"
+      ]
+    },
+    {
+      "table_id": "T19_auv_venue_type",
+      "item": "19",
+      "title": "Annual Unit Volumes by Venue Type",
+      "source_pages": [72],
+      "columns": ["venue_type", "count", "highest_auv", "median_auv", "lowest_auv", "average_auv", "pct_above_avg"],
+      "rows": [
+        {"venue_type": "Free-Standing and Urban Storefront", "count": 2988, "highest_auv": "$4,800,647", "median_auv": "$1,472,566", "lowest_auv": "$317,214", "average_auv": "$1,562,839", "pct_above_avg": "44%"},
+        {"venue_type": "Gas/C-Store", "count": 69, "highest_auv": "$2,230,220", "median_auv": "$1,049,767", "lowest_auv": "$255,308", "average_auv": "$1,089,017", "pct_above_avg": "49%"}
+      ],
+      "table_notes": []
+    },
+    {
+      "table_id": "T20_1_system_summary",
+      "item": "20",
+      "title": "System Restaurant Summary 2023-2025",
+      "source_pages": [74],
+      "columns": ["type", "year", "beginning", "end", "gross_change"],
+      "rows": [
+        {"type": "Franchise", "year": 2023, "beginning": 3220, "end": 3194, "gross_change": -26},
+        {"type": "Franchise", "year": 2024, "beginning": 3194, "end": 3144, "gross_change": -50},
+        {"type": "Franchise", "year": 2025, "beginning": 3144, "end": 3120, "gross_change": -24},
+        {"type": "Company", "year": 2023, "beginning": 326, "end": 327, "gross_change": 1},
+        {"type": "Company", "year": 2024, "beginning": 327, "end": 317, "gross_change": -10},
+        {"type": "Company", "year": 2025, "beginning": 317, "end": 292, "gross_change": -25},
+        {"type": "Total", "year": 2023, "beginning": 3546, "end": 3521, "gross_change": -25},
+        {"type": "Total", "year": 2024, "beginning": 3521, "end": 3461, "gross_change": -60},
+        {"type": "Total", "year": 2025, "beginning": 3461, "end": 3412, "gross_change": -49}
+      ],
+      "table_notes": ["Fiscal year 2025: Dec 30, 2024 to Dec 28, 2025"]
+    },
+    {
+      "table_id": "T20_2_transfers",
+      "item": "20",
+      "title": "Transfers of Restaurants from Franchisees to New Owners",
+      "source_pages": [74, 75, 76],
+      "columns": ["state", "year_2023", "year_2024", "year_2025"],
+      "rows_summary": "29 states with transfer activity",
+      "totals": {
+        "2023": 75,
+        "2024": 334,
+        "2025": 100
+      },
+      "top_states_2025": [
+        {"state": "Texas", "transfers": 21},
+        {"state": "Louisiana", "transfers": 15},
+        {"state": "Alabama", "transfers": 13},
+        {"state": "Florida", "transfers": 13}
+      ],
+      "table_notes": ["Texas had 110 transfers in 2024, by far the highest single-state total"]
+    },
+    {
+      "table_id": "T20_3_franchised_status",
+      "item": "20",
+      "title": "Status of Franchised Restaurants by State 2023-2025",
+      "source_pages": [76, 77, 78, 79],
+      "columns": ["state", "year", "start", "opened", "terminations", "non_renewals", "reacquired", "ceased_other", "end"],
+      "totals": {
+        "2023": {"start": 3220, "opened": 23, "terminations": 2, "non_renewals": 0, "reacquired": 0, "ceased_other": 47, "end": 3194},
+        "2024": {"start": 3194, "opened": 30, "terminations": 12, "non_renewals": 0, "reacquired": 0, "ceased_other": 68, "end": 3144},
+        "2025": {"start": 3144, "opened": 32, "terminations": 2, "non_renewals": 0, "reacquired": 0, "ceased_other": 54, "end": 3120}
+      },
+      "table_notes": [
+        "Zero non-renewals and zero reacquisitions in all 3 years",
+        "Georgia: dramatic drop from 77 (2023) to 49 (2025) — 21 ceased other reasons in 2024",
+        "Texas: 25 ceased other reasons in 2025; 17 in 2024",
+        "New York: grew from 20 to 24 (3 new in 2025)"
+      ]
+    },
+    {
+      "table_id": "T20_4_company_status",
+      "item": "20",
+      "title": "Status of Company Restaurants by State 2023-2025",
+      "source_pages": [80],
+      "columns": ["state", "year", "start", "opened", "reacquired", "closed", "sold_to_franchisees", "end"],
+      "totals": {
+        "2023": {"start": 326, "opened": 4, "reacquired": 0, "closed": 3, "sold": 0, "end": 327},
+        "2024": {"start": 327, "opened": 1, "reacquired": 0, "closed": 11, "sold": 0, "end": 317},
+        "2025": {"start": 317, "opened": 0, "reacquired": 0, "closed": 21, "sold": 4, "end": 292}
+      },
+      "table_notes": [
+        "Significant company store closures: 21 in 2025 (up from 3 in 2023)",
+        "First franchisee sales: 4 in 2025 (Louisiana 3, Texas 1)",
+        "Company-owned states: AL, CO, FL, GA, KY, LA, NC, OH, OK, TN, TX, VA"
+      ]
+    },
+    {
+      "table_id": "T20_5_projected_openings",
+      "item": "20",
+      "title": "Projected Openings as of December 28, 2025",
+      "source_pages": [81],
+      "columns": ["state", "fa_signed_not_opened", "projected_new_franchise", "projected_new_company"],
+      "rows": [
+        {"state": "Arkansas", "fa_signed_not_opened": 1, "projected_new_franchise": 1, "projected_new_company": 0},
+        {"state": "California", "fa_signed_not_opened": 2, "projected_new_franchise": 1, "projected_new_company": 0},
+        {"state": "Georgia", "fa_signed_not_opened": 1, "projected_new_franchise": 0, "projected_new_company": 0},
+        {"state": "Hawaii", "fa_signed_not_opened": 0, "projected_new_franchise": 1, "projected_new_company": 0},
+        {"state": "Florida", "fa_signed_not_opened": 0, "projected_new_franchise": 2, "projected_new_company": 0},
+        {"state": "Idaho", "fa_signed_not_opened": 0, "projected_new_franchise": 1, "projected_new_company": 0},
+        {"state": "Indiana", "fa_signed_not_opened": 1, "projected_new_franchise": 1, "projected_new_company": 0},
+        {"state": "Missouri", "fa_signed_not_opened": 2, "projected_new_franchise": 1, "projected_new_company": 0},
+        {"state": "New Mexico", "fa_signed_not_opened": 1, "projected_new_franchise": 1, "projected_new_company": 0},
+        {"state": "New York", "fa_signed_not_opened": 2, "projected_new_franchise": 1, "projected_new_company": 0},
+        {"state": "South Carolina", "fa_signed_not_opened": 1, "projected_new_franchise": 1, "projected_new_company": 0},
+        {"state": "Tennessee", "fa_signed_not_opened": 0, "projected_new_franchise": 1, "projected_new_company": 0},
+        {"state": "Texas", "fa_signed_not_opened": 1, "projected_new_franchise": 4, "projected_new_company": 0}
+      ],
+      "totals": {"fa_signed_not_opened": 12, "projected_new_franchise": 16, "projected_new_company": 0},
+      "table_notes": ["Zero projected new company-owned drive-ins"]
+    },
+    {
+      "table_id": "T21_sonic_franchising_balance_sheet",
+      "item": "21",
+      "title": "Sonic Franchising LLC Balance Sheet",
+      "source_pages": [308],
+      "columns": ["line_item", "dec_28_2025", "dec_29_2024"],
+      "rows": [
+        {"line_item": "Restricted cash and cash equivalents", "dec_28_2025": "$0", "dec_29_2024": "$593K"},
+        {"line_item": "Accounts receivable, net", "dec_28_2025": "$6,013K", "dec_29_2024": "$4,713K"},
+        {"line_item": "Total current assets", "dec_28_2025": "$6,013K", "dec_29_2024": "$5,306K"},
+        {"line_item": "Intangible assets, net", "dec_28_2025": "$28,108K", "dec_29_2024": "$30,940K"},
+        {"line_item": "Total assets", "dec_28_2025": "$34,121K", "dec_29_2024": "$36,246K"},
+        {"line_item": "Current deferred revenue", "dec_28_2025": "$417K", "dec_29_2024": "$518K"},
+        {"line_item": "Noncurrent deferred revenue", "dec_28_2025": "$8,487K", "dec_29_2024": "$9,344K"},
+        {"line_item": "Total liabilities", "dec_28_2025": "$8,904K", "dec_29_2024": "$9,862K"},
+        {"line_item": "Member's equity", "dec_28_2025": "$25,217K", "dec_29_2024": "$26,384K"}
+      ],
+      "table_notes": ["In thousands"]
+    },
+    {
+      "table_id": "T21_sonic_franchising_income",
+      "item": "21",
+      "title": "Sonic Franchising LLC Statements of Income",
+      "source_pages": [309],
+      "columns": ["line_item", "fy2025", "fy2024", "fy2023"],
+      "rows": [
+        {"line_item": "Franchise fees and royalty revenues", "fy2025": "$51,946K", "fy2024": "$58,991K", "fy2023": "$58,747K"},
+        {"line_item": "Royalty fees to Affiliates", "fy2025": "$45,520K", "fy2024": "$49,380K", "fy2023": "$47,101K"},
+        {"line_item": "G&A expenses", "fy2025": "$787K", "fy2024": "$834K", "fy2023": "$784K"},
+        {"line_item": "Amortization", "fy2025": "$2,832K", "fy2024": "$2,833K", "fy2023": "$2,833K"},
+        {"line_item": "Operating income", "fy2025": "$2,807K", "fy2024": "$5,944K", "fy2023": "$8,029K"},
+        {"line_item": "Net income", "fy2025": "$2,820K", "fy2024": "$5,971K", "fy2023": "$8,056K"}
+      ],
+      "table_notes": ["Revenue includes $7,239K (2025), $7,980K (2024), $8,242K (2023) from Affiliates", "Revenue decline reflects system contraction and lower Gross Sales"]
+    }
+  ]
+}

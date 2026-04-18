@@ -1,0 +1,28 @@
+{
+  "depth_block": "item20_completion",
+  "tables_extracted": 5,
+  "table1_systemwide": {"status": "complete", "source_pages": [91]},
+  "table2_transfers": {"status": "complete", "source_pages": [91, 92, 93], "total_2025": 124, "total_2024": 170, "total_2023": 205, "states_with_transfers_2025": 23},
+  "table3_franchised_status": {
+    "status": "complete",
+    "source_pages": [94, 95, 96, 97],
+    "totals_2025": {"start": 2647, "opened": 123, "terminated": 0, "non_renewed": 13, "reacquired": 0, "ceased_other": 20, "end": 2737},
+    "states_covered": 41,
+    "multi_brand_notes": "38 multi-brand locations; openings denoted with *"
+  },
+  "table4_company_owned": {
+    "status": "complete",
+    "source_pages": [97],
+    "totals_2025": {"start": 42, "opened": 0, "reacquired": 0, "closed": 2, "sold": 0, "end": 40},
+    "states": ["Georgia (2)", "Illinois (8)", "Indiana (5)", "Michigan (18)", "Wisconsin (7)"]
+  },
+  "table5_projected": {
+    "status": "complete",
+    "source_pages": [97, 98],
+    "totals": {"signed_not_open": 75, "projected_franchised": 87, "projected_company": 3},
+    "states_with_projected": 32
+  },
+  "gag_clause_flag": false,
+  "gag_clause_quote": "During the last 3 fiscal years, no current or former franchisees have signed confidentiality clauses restricting them from discussing with you their experiences",
+  "gag_clause_source_pages": [100]
+}

@@ -1,0 +1,232 @@
+{
+  "_enrichment_version": "v2",
+  "_description": "Complete self-contained enrichment with all canonical fields plus item-scoped deep structure",
+
+  "document_identity": {"filing_id": "639418", "brand": "Planet Fitness", "franchisor_legal_name": "Planet Fitness Franchising LLC", "fdd_year": "2025", "issuance_date": "June 27, 2025, as amended September 4, 2025", "pdf_pages": 534},
+
+  "item1": {
+    "entity_type": "Delaware LLC (securitization SPV)",
+    "formation_date": "2018-06-13",
+    "predecessor": "Pla-Fit Franchise, LLC (2003-2018)",
+    "manager": "Planet Fitness Holdings, LLC",
+    "management_fee_structure": {"fixed_annual": 20000000, "per_franchised_club": 18000, "per_corporate_club": 40000},
+    "affiliates": ["PF Equipment (sole equipment supplier)", "Assetco (270 company-owned)", "Pla-Fit Canada", "PF International", "PF Mexico", "PF Australia"],
+    "parent_guarantee": true,
+    "ultimate_parent": "Planet Fitness, Inc. (public)"
+  },
+
+  "item2_leadership": {
+    "total_officers": 28,
+    "c_suite": [
+      {"name": "Colleen Keating", "role": "CEO", "start": "2024-06", "new_to_pf": true},
+      {"name": "Jay Stasz", "role": "CFO", "start": "2024-11", "new_to_pf": true},
+      {"name": "Bill Bode", "role": "COO", "start": "2025-03", "pf_tenure_since": "2016-10"},
+      {"name": "Chip Ohlsson", "role": "CDO", "start": "2025-01", "new_to_pf": true, "litigation_risk": "named in counterclaim from Wyndham role"},
+      {"name": "Jamie Medeiros", "role": "CBO", "start": "2022-05", "pf_tenure_since": "2015-02"},
+      {"name": "Brian Povinelli", "role": "CMO", "start": "2025-02", "new_to_pf": true},
+      {"name": "Paul Barber", "role": "CIO", "start": "2022-10", "new_to_pf": true}
+    ],
+    "recent_turnover_flag": true,
+    "turnover_note": "CEO, CFO, CDO, CMO all joined 2024-2025; significant C-suite refresh"
+  },
+
+  "item3_litigation": {
+    "active_count": 1,
+    "settled_count": 4,
+    "governmental_count": 1,
+    "largest_judgment": 8826394,
+    "litigation_against_franchisees": "None in last year"
+  },
+
+  "item6_fee_detail": {
+    "royalty": {"rate": 0.07, "basis": "EFT Dues Draft", "can_switch_to_total_net": true},
+    "join_fee": {"rate": 0.20, "prepaid_rate": 0.05},
+    "naf": {"rate": 0.02, "max": 0.03, "increase_mechanism": "66%/51% vote"},
+    "laf": {"minimum_dollar": 60000, "minimum_pct": 0.07, "q1_min_dollar": 24000, "q1_min_pct": 0.10},
+    "combined_ad_cap": 0.09,
+    "transfer_fee_fa": 10000,
+    "transfer_fee_ada": 5000,
+    "successor_fee": 20000,
+    "cure_extension_fee": "up to 4% EFT",
+    "debrand_fee": 70000,
+    "late_dev_fee": 50000,
+    "reequip": {"low": 363000, "high": 1137000, "frequency_years": "5-9"},
+    "remodel": {"low": 250000, "high": 1200000, "frequency_years": 12}
+  },
+
+  "item7_total_investment": {
+    "low": 1525000, "high": 5221500,
+    "financed_range": [1525000, 3706700],
+    "purchased_range": [2537500, 5221500],
+    "sqft": [15000, 25000],
+    "time_to_open_months": [8, 15],
+    "max_borrowing_pct": 80
+  },
+
+  "item8_supplier_restrictions": {
+    "sole_source": ["PF Equipment (fitness equipment)"],
+    "pf_equipment_revenue_2024": 255000000,
+    "pf_equipment_rebate_2024": 12600000,
+    "assetco_discount_2024": 9600000,
+    "startup_purchase_concentration": 0.97,
+    "ongoing_purchase_concentration": [0.11, 0.40],
+    "alt_supplier_approval_days": 45,
+    "alt_supplier_fee_max": 25000
+  },
+
+  "item9_obligations": {"categories": 25, "guaranty_threshold_pct": 10},
+
+  "item10_financing": {"offered": false},
+
+  "item11_training": {
+    "total_hours": 94, "classroom": 74, "otj": 20,
+    "phases": [
+      {"name": "Owner Orientation", "hours": 14, "otj": 0},
+      {"name": "Pre-Sale/Operations", "hours": 20, "otj": 20},
+      {"name": "Manager Workshops", "hours": 16, "otj": 0},
+      {"name": "Regional Manager Workshops", "hours": 16, "otj": 0},
+      {"name": "PF University e-Learning", "hours": 8, "otj": 0}
+    ],
+    "location": "Hampton, NH HQ + designated PF business",
+    "pos_training": {"days": 1, "cost_per_person": 800}
+  },
+
+  "item12_territory": {
+    "exclusive_fa": false,
+    "protected_ada": true,
+    "ada_carveouts": 5,
+    "sublease_right": "10% of franchise location sqft",
+    "post_ada_rofr": true
+  },
+
+  "item13_trademarks": {"registered_count": 20, "pending": 5, "key_marks": ["PLANET FITNESS", "JUDGEMENT FREE ZONE", "BLACK CARD", "PF+"]},
+
+  "item14_patents": {"material_patents": false, "ai_prohibition": true, "innovations_assignment": true},
+
+  "item15_participation": {"responsible_owner_required": true, "approved_operator_allowed": true, "full_time_required": true, "weekly_portal_login": true},
+
+  "item16_product_restrictions": {"approved_only": true, "national_campaigns_mandatory": true, "reciprocity": true, "price_policies": true},
+
+  "item17_termination": {
+    "no_cause_by_franchisor": false,
+    "low_performance_exit": {"threshold": "lowest 5% for 12 months", "notice": "12 months", "conditions": "open 3+ years, demonstrate unprofitability"},
+    "curable_cure_range": "24h to 60 days",
+    "non_curable": ["insolvency", "abandonment", "misrepresentation", "cross-default", "anti-terrorism"]
+  },
+
+  "item17_transfer": {
+    "consent_required": true,
+    "fee": 10000,
+    "rofr": true,
+    "materially_different_terms_risk": true,
+    "minimum_holding_period_ada_years": 2
+  },
+
+  "item17_renewal": {
+    "term_years": 12,
+    "successor_fee": 20000,
+    "materially_different_terms": true,
+    "general_release_required": true,
+    "month_to_month_royalty_increase": "up to 4%"
+  },
+
+  "item17_noncompete": {
+    "during_term": "No Competitive Business involvement",
+    "post_term_years": 2,
+    "radius_miles": 15,
+    "scope": "Location + 15mi of any PF business",
+    "rofr_extended_years": 5,
+    "competitive_definition": "Fitness, exercise, athletic services, digital fitness"
+  },
+
+  "item17_dispute_resolution": {"method": "Mediation + arbitration", "venue": "Portsmouth, NH", "law": "New Hampshire"},
+
+  "item17_death_disability": {"treatment": "Transfer", "ada_deadline_months": 6},
+
+  "item18_public_figures": {"disclosed": false},
+
+  "item19_chart_detail": {
+    "charts": 4,
+    "franchised_population": 2197,
+    "franchised_avg_eft": {"bottom": 1205580, "middle": 1803265, "upper": 2613753},
+    "corporate_ebitda": {"bottom_avg": 266824, "bottom_pct": 0.21, "middle_avg": 683438, "middle_pct": 0.35, "upper_avg": 1089084, "upper_pct": 0.42},
+    "decline_return_range": "3.0%-34.8%"
+  },
+
+  "item20_yearly_activity": {
+    "2024": {"total": 2568, "franchised": 2298, "corporate": 270, "opened": 100, "terminated": 1, "ceased": 2, "transfers": 270},
+    "projected": {"franchised": 78, "corporate": 9, "signed_not_opened": 84},
+    "gag_clause": true
+  },
+
+  "item21_financial_structure_detail": {
+    "entity_type": "Securitization SPV (disregarded for tax)",
+    "auditor": "KPMG LLP",
+    "opinion": "Unqualified",
+    "revenue_2024": 350145000,
+    "royalty_revenue_2024": 313386000,
+    "net_income_2024": 301316000,
+    "operating_margin": 0.86,
+    "total_assets_2024": 151027000,
+    "intangible_assets_2024": 146300000,
+    "cash_2024": 258000,
+    "equity_2024": 117013000,
+    "accumulated_deficit_2024": -50100000,
+    "dividends_2024": 306900000,
+    "dividends_exceed_income": true,
+    "management_fees_2024": 41425000,
+    "deferred_revenue_2024": 32586000
+  },
+
+  "item21_statement_detail": {
+    "balance_sheet": {
+      "current_assets": 4727000, "intangible_assets": 146300000, "total_assets": 151027000,
+      "current_liabilities": 5229000, "lt_deferred_revenue": 28785000, "total_liabilities": 34014000,
+      "members_equity": 117013000
+    },
+    "income_statement": {
+      "royalty_revenue": 313386000, "franchise_fees": 32378000, "commission_other": 4381000,
+      "total_revenue": 350145000, "management_fees": 41425000, "sga": 818000, "amortization": 6282000,
+      "operating_income": 301552000, "net_income": 301316000
+    },
+    "cash_flow": {
+      "operating": 306874000, "financing": -306900000, "net_change": -26000
+    }
+  },
+
+  "item21_note_families": [
+    {"note": 1, "title": "Nature of business and accounting policies", "key": "Securitization SPV; disregarded entity; management fee formula"},
+    {"note": 2, "title": "Guarantees and commitments", "key": "~$2.25B securitized debt; 2024 refinancing at 5.77-6.24%"},
+    {"note": 3, "title": "Intangible assets", "key": "$146.3M trade/brand names (indefinite); customer relationships fully amortized"},
+    {"note": 4, "title": "Deferred revenue", "key": "$32.6M (ADA $13.8M, franchise fees $10.5M, transfer fees $7.7M)"},
+    {"note": 5, "title": "Related party transactions", "key": "Dividends $306.9M > net income $301.3M; Assetco royalty $36.2M; mgmt fees $41.4M"},
+    {"note": 6, "title": "Subsequent events", "key": "None through April 7, 2025"}
+  ],
+
+  "contract_burden_depth": {
+    "term": "12 years",
+    "successor_risk": "Materially different terms possible",
+    "non_compete_severity": "High — 2yr/15mi from any PF (2,568+ locations)",
+    "transfer_risk": "ROFR + materially different terms for transferee",
+    "territory_risk": "No exclusive territory under FA; ADA protection has 5 carve-outs",
+    "equipment_lock_in": "Sole source affiliate; $363K-$1.1M re-equip every 5-9 years",
+    "ad_burden": "NAF + LAF + special marketing; up to 9% EFT + $120K pre-sale"
+  },
+
+  "state_addenda_detail": {
+    "states": ["CA", "IL", "MD", "MN", "NY", "ND", "RI", "VA", "WI"],
+    "strongest_protections": ["MN (general release prohibited, 90-day notice, no out-of-state litigation)", "ND (non-compete may be unenforceable, general release may be unenforceable)", "WI (Fair Dealership Law, good cause required)"],
+    "weakest_protections": ["RI (general reference to state law)", "VA (no disclaimer of reliance only)"]
+  },
+
+  "special_risks": [{"risk": "Out-of-State Dispute Resolution", "venue": "Portsmouth, NH"}],
+  "unresolveds": [
+    {"id": "U2", "description": "FA full clause walk deferred", "severity": "medium"},
+    {"id": "U4", "description": "Equipment Terms not reviewed", "severity": "medium"},
+    {"id": "U5", "description": "POS Agreements not walked", "severity": "medium"}
+  ],
+  "contradictions": [{"id": "C1", "items": ["Item 20 Table 1", "Item 20 Table 3"], "description": "Start-of-2022 franchised count discrepancy (2,060 vs 2,073)"}],
+  "item22_contracts_listed": ["B", "C", "D", "E", "F", "G", "J", "K-1", "K-2", "K-3", "M"],
+  "item20_gag_clause": {"flag": true, "quote": "some franchisees have signed confidentiality clauses... restricting their ability to speak openly"},
+  "item20_franchisee_association": {"name": "PF Independent Franchisee Council", "location": "Atlanta, GA", "phone": "678-737-2396"}
+}

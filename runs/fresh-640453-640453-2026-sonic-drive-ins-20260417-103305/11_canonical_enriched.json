@@ -1,0 +1,141 @@
+{
+  "_enrichment_version": "v1",
+  "_base_source": "09_final_canonical.json",
+  "_enrichment_layers": ["item19_chart_detail", "item20_yearly_activity", "exhibit_structure", "state_addenda_overrides", "item21_structural_facts", "item1_structural_facts", "item6_fee_attributes"],
+
+  "document_identity": {
+    "filing_id": "640453",
+    "brand": "Sonic Drive-In",
+    "franchisor_legal_name": "Sonic Franchising LLC",
+    "state_formed": "Delaware",
+    "issuance_date": "March 26, 2026",
+    "fiscal_year_end": "December 28, 2025",
+    "parent_company": "Inspire Brands, Inc.",
+    "auditor": "KPMG LLP",
+    "audit_opinion": "unqualified",
+    "pdf_pages": 366
+  },
+
+  "item1_structural_facts": {
+    "entity_type": "Special-purpose Delaware LLC for securitization",
+    "formation_date": "March 23, 2011",
+    "operational_entity": "Sonic Industries Services LLC (SIS)",
+    "trademark_owner": "ADIBP",
+    "trademark_license_term_years": 99,
+    "system_size_total": 3412,
+    "system_size_franchised": 3120,
+    "system_size_company": 292,
+    "brand_age_years": 74,
+    "franchise_age_years": 52,
+    "multi_brand_available": true,
+    "multi_brand_partners": ["Arby's", "Buffalo Wild Wings", "Dunkin'", "Baskin-Robbins", "Jimmy John's"],
+    "affiliate_brands_count": 40,
+    "franchise_formats": {
+      "traditional_drive_in": {"description": "Free-standing with canopies, 6-12 stalls, drive-thru, patio", "sqft_building": "1,250-1,500", "sqft_lot": "34,000-43,560"},
+      "non_drive_in": {"description": "C-Stores, gas stations, travel plazas", "sqft": "1,200-2,500"},
+      "non_traditional": {"description": "Airports, military, stadiums, etc."},
+      "urban_inline": {"description": "Ground-level street-facing commercial space", "sqft": "1,200-2,100"},
+      "drive_thru_only": {"description": "Free-standing, drive-thru only, no stalls/dine-in"}
+    }
+  },
+
+  "item6_fee_attributes": {
+    "royalty_type": "percentage_of_gross_sales",
+    "royalty_base": "Gross Sales",
+    "royalty_standard_rate": 0.05,
+    "sbf_rate": 0.009,
+    "smf_rate_range": {"core_low": 0.0275, "core_high": 0.045, "developing": 0.045, "new": 0.05},
+    "cooperative_rate_range": {"core": 0.005, "developing": 0.005, "new": 0},
+    "total_fee_burden_range": {"low": 0.0915, "high": 0.109},
+    "technology_fee_monthly_range": {"low": 365, "high": 565},
+    "late_charge_rate_monthly": 0.0175,
+    "renewal_fee": 15000,
+    "transfer_fee_range": {"non_control": 1000, "standard": 3000},
+    "incentive_year1_rate": 0.01,
+    "incentive_eligibility_deadline": "March 31, 2027"
+  },
+
+  "item19_chart_detail": {
+    "chart_type": "AUV quartile distribution",
+    "fiscal_year": "2025",
+    "total_population": 3057,
+    "overall_average": 1552145,
+    "overall_median": 1465090,
+    "overall_range": {"low": 225308, "high": 4800647},
+    "pct_above_average": 44,
+    "spread_ratio": 21.3,
+    "q1_to_q4_ratio": 2.54,
+    "venue_types": {
+      "free_standing_urban": {"count": 2988, "pct_of_total": 97.7, "avg": 1562839, "median": 1472566},
+      "gas_c_store": {"count": 69, "pct_of_total": 2.3, "avg": 1089017, "median": 1049767}
+    },
+    "avg_restaurant_age": 28,
+    "pct_with_drive_thru": 68,
+    "cost_data_disclosed": false,
+    "audited": false
+  },
+
+  "item20_yearly_activity": {
+    "franchised": {
+      "2023": {"start": 3220, "opened": 23, "terminated": 2, "non_renewed": 0, "reacquired": 0, "ceased_other": 47, "end": 3194, "net": -26},
+      "2024": {"start": 3194, "opened": 30, "terminated": 12, "non_renewed": 0, "reacquired": 0, "ceased_other": 68, "end": 3144, "net": -50},
+      "2025": {"start": 3144, "opened": 32, "terminated": 2, "non_renewed": 0, "reacquired": 0, "ceased_other": 54, "end": 3120, "net": -24}
+    },
+    "company": {
+      "2023": {"start": 326, "opened": 4, "closed": 3, "sold": 0, "end": 327, "net": 1},
+      "2024": {"start": 327, "opened": 1, "closed": 11, "sold": 0, "end": 317, "net": -10},
+      "2025": {"start": 317, "opened": 0, "closed": 21, "sold": 4, "end": 292, "net": -25}
+    },
+    "transfers": {"2023": 75, "2024": 334, "2025": 100},
+    "projected": {"signed_not_opened": 12, "new_franchise": 16, "new_company": 0},
+    "three_year_net_change": -134,
+    "annual_contraction_rate_pct": 1.4
+  },
+
+  "exhibit_structure": {
+    "total_exhibits": 19,
+    "critical_exhibits": ["B-1 Franchise Agreement (48pp)", "C-1 Development Agreement (14pp)", "F Financial Statements (32pp)", "G State Addenda (19pp)"],
+    "franchisee_list_pages": 112,
+    "total_contract_pages": 62,
+    "state_addenda_count": 7
+  },
+
+  "state_addenda_overrides": {
+    "california": {"override": "Fast Food Act compliance (AB 1228)", "impact": "Higher wages, additional compliance costs"},
+    "maryland": {"override": "Release limits; venue for MD claims; 3-year SOL", "impact": "Cannot release MD Franchise Law claims at renewal/transfer"},
+    "washington": {"override": "AOD re: no-poaching provisions", "impact": "No-poaching provisions unenforceable"},
+    "michigan": {"override": "MI Franchise Investment Law protections", "impact": "Enhanced franchisee protections per MI law"}
+  },
+
+  "item21_structural_facts": {
+    "two_entity_structure": true,
+    "franchisor_entity": "Sonic Franchising LLC",
+    "operating_entity": "Sonic Industries Services LLC and Subsidiaries",
+    "securitization_total": 1402563000,
+    "securitization_nearest_maturity": "January 2027 ($615.3M)",
+    "goodwill": 822553000,
+    "trademark_value": 1100000000,
+    "franchisor_net_income_trend": {"2023": 8056000, "2024": 5971000, "2025": 2820000},
+    "franchisor_revenue_trend": {"2023": 58747000, "2024": 58991000, "2025": 51946000},
+    "operating_entity_net_income": 168930000,
+    "operating_entity_interest_expense": 50610000,
+    "distributions_exceed_income": true,
+    "tax_status": "Single-member LLC — no income tax"
+  },
+
+  "gag_clause_flag": true,
+  "materially_different_renewal_terms": true,
+
+  "special_risks": [
+    {"risk": "Out-of-state dispute resolution", "venue": "Atlanta, Georgia", "source_pages": [4]}
+  ],
+
+  "unresolveds": [
+    {"id": "U1", "description": "FA not fully clause-walked (48 pages)", "severity": "medium"},
+    {"id": "U2", "description": "No cost/expense/profit data in Item 19", "severity": "high"},
+    {"id": "U3", "description": "Revenue declining 12% YoY alongside system contraction", "severity": "medium"},
+    {"id": "U4", "description": "Distributions exceed net income, eroding equity", "severity": "medium"}
+  ],
+
+  "contradictions": []
+}

@@ -1,0 +1,56 @@
+{
+  "exhibits_walked": [
+    {
+      "exhibit": "A — License Agreement",
+      "pages": [93, 188],
+      "clause_walk_status": "partial",
+      "clauses_extracted": 30,
+      "key_sections_read": ["Section 2 (Grant)", "Section 3 (Development)", "Section 4 (Equipment)", "Section 5 (Training)", "Section 8 (Confidentiality/Exclusivity)", "Section 16 (Termination)", "Section 17 (Post-Termination)", "Section 19 (Dispute Resolution)"],
+      "sections_deferred": ["Section 6 (Marks)", "Section 7 (Relationship/Indemnification)", "Section 9 (Fees detail)", "Section 10 (Operations — 10 pages)", "Section 11 (Marketing)", "Section 12 (Records)", "Section 13 (Inspections)", "Section 14 (Transfer detail)", "Section 15 (Successor Rights detail)", "Section 20 (Notices)", "Section 21 (Multiple Concepts)", "Section 23 (Definitions)"],
+      "why_deferred": "96-page exhibit; key operative burden clauses (termination, noncompete, liquidated damages, confidentiality, guaranty, transfer, dispute resolution) walked directly. Remaining sections substantially covered through Item 17 cross-reference tables and body-text disclosures in Items 5-16. Full line-by-line walk of operations, records, and inspections sections deferred as lower incremental value given A1 depth on these items.",
+      "what_recovered_elsewhere": "Items 5-16 in FDD body provide detailed discussion of Agreement Sections 6-15. Item 17 provides complete summary tables for termination, transfer, renewal, noncompete, dispute resolution.",
+      "what_remains_missing": "Detailed clause-level language for operations standards (Section 10), records/reporting (Section 12), inspections/audits (Section 13), and full definitions (Section 23)"
+    },
+    {
+      "exhibit": "B — Financial Statements",
+      "pages": [189, 207],
+      "clause_walk_status": "complete",
+      "notes": "All statements and notes fully walked"
+    },
+    {
+      "exhibit": "F — Sample Asset Purchase Agreement",
+      "pages": [241, 256],
+      "clause_walk_status": "partial",
+      "why_deferred": "Key provisions extracted from Item 17 APA table. Direct clause walk deferred — lower priority than License Agreement.",
+      "what_recovered_elsewhere": "Item 17 provides complete summary of termination, dispute resolution, noncompete, representations/warranties",
+      "what_remains_missing": "Specific purchase price mechanics, inspection provisions, closing conditions"
+    },
+    {
+      "exhibit": "I — Sample JV LLC Operating Agreement",
+      "pages": [271, 298],
+      "clause_walk_status": "partial",
+      "why_deferred": "Key provisions extracted from Item 17 JV table. Direct clause walk deferred.",
+      "what_recovered_elsewhere": "Item 17 provides complete summary of dissolution, transfer, repurchase, death/disability, noncompete, dispute resolution",
+      "what_remains_missing": "Capital contribution mechanics, profit distribution, management structure detail"
+    },
+    {
+      "exhibit": "J — State Addenda",
+      "pages": [299, 324],
+      "clause_walk_status": "complete",
+      "notes": "All 14+ state addenda read and overrides extracted to RT_depth_state_addenda_promotion.json"
+    },
+    {
+      "exhibit": "K — Sample Loan Agreements",
+      "pages": [325, 358],
+      "clause_walk_status": "partial",
+      "why_deferred": "Key provisions extracted from Item 17 financing docs table. Direct clause walk deferred.",
+      "what_recovered_elsewhere": "Item 17 provides complete summary of term, default, cure, assignment, dispute resolution, choice of law",
+      "what_remains_missing": "Specific collateral descriptions, acceleration mechanics, UCC provisions detail"
+    }
+  ],
+  "deferred_exhibits_summary": {
+    "exhibits_deferred": ["F — APA", "I — JV LLC", "K — Loan Agreements"],
+    "reason": "Key operative provisions extracted from Item 17 cross-reference tables; full clause walk deferred due to lower incremental value relative to License Agreement and State Addenda",
+    "what_is_covered_despite_deferral": "All major provisions (termination, transfer, default, dispute resolution, choice of law) extracted via Item 17 tables"
+  }
+}

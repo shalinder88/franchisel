@@ -1,0 +1,85 @@
+{
+  "_enrichment_version": "v1",
+  "_base_file": "09_final_canonical.json",
+  "_note": "This is a self-contained enrichment file containing all canonical fields plus enrichment layers",
+  "document_identity": {
+    "filing_id": "640387",
+    "brand": "Popeyes Louisiana Kitchen",
+    "franchisor_legal_name": "Popeyes Louisiana Kitchen, Inc.",
+    "issuance_date": "2026-03-20",
+    "pdf_pages": 630
+  },
+  "item19_chart_detail": {
+    "table_i_freestanding": {
+      "company_owned": {"count": 90, "avg": 1898999, "median": 1845516, "high": 3282604, "low": 852812},
+      "franchised": {"count": 2248, "avg": 1893675, "median": 1785736, "high": 5931837, "low": 492576},
+      "consolidated": {"count": 2338, "avg": 1893880, "median": 1788529, "high": 5931837, "low": 492576},
+      "excluded": 64,
+      "exclusion_reason": "52 temporarily closed, 12 not in continuous operation"
+    },
+    "table_ii_inline": {
+      "company_owned": {"count": 2, "avg": 2232708, "median": 2232708},
+      "franchised": {"count": 496, "avg": 1802688, "median": 1656017, "high": 5532409, "low": 556497},
+      "consolidated": {"count": 498, "avg": 1804415, "median": 1656017}
+    },
+    "table_iii_foodcourt": {
+      "franchised": {"count": 187, "avg": 1328516, "median": 1177028, "high": 5570945, "low": 336393}
+    },
+    "table_iv_ebitda": {
+      "freestanding": {
+        "under_1_5M": {"avg_sales": 1176101, "food_paper": 0.313, "labor": 0.291, "other": 0.361, "ebitda_pct": 0.035, "ebitda_dollars": 41234, "count": 637},
+        "1_5M_to_2M": {"avg_sales": 1744623, "food_paper": 0.308, "labor": 0.263, "other": 0.317, "ebitda_pct": 0.112, "ebitda_dollars": 194886, "count": 624},
+        "2M_to_2_5M": {"avg_sales": 2230216, "food_paper": 0.304, "labor": 0.251, "other": 0.296, "ebitda_pct": 0.149, "ebitda_dollars": 331499, "count": 382},
+        "over_2_5M": {"avg_sales": 3066573, "food_paper": 0.300, "labor": 0.248, "other": 0.274, "ebitda_pct": 0.179, "ebitda_dollars": 547990, "count": 364}
+      },
+      "inline": {
+        "under_1_5M": {"avg_sales": 1201327, "food_paper": 0.297, "labor": 0.322, "other": 0.307, "ebitda_pct": 0.074, "ebitda_dollars": 88814, "count": 169},
+        "1_5M_to_2M": {"avg_sales": 1759965, "food_paper": 0.290, "labor": 0.288, "other": 0.305, "ebitda_pct": 0.117, "ebitda_dollars": 206236, "count": 133},
+        "2M_to_2_5M": {"avg_sales": 2231624, "food_paper": 0.290, "labor": 0.257, "other": 0.312, "ebitda_pct": 0.141, "ebitda_dollars": 315259, "count": 70},
+        "over_2_5M": {"avg_sales": 3135750, "food_paper": 0.291, "labor": 0.248, "other": 0.276, "ebitda_pct": 0.185, "ebitda_dollars": 579799, "count": 56}
+      }
+    },
+    "table_v_operational_tier": {
+      "freestanding": {
+        "tier4": {"avg_sales": 1609612, "ebitda_pct": 0.083, "ebitda_dollars": 134384, "count": 397},
+        "tier3": {"avg_sales": 1755572, "ebitda_pct": 0.112, "ebitda_dollars": 196929, "count": 364},
+        "tier2": {"avg_sales": 1955696, "ebitda_pct": 0.130, "ebitda_dollars": 254652, "count": 827},
+        "tier1": {"avg_sales": 2173251, "ebitda_pct": 0.152, "ebitda_dollars": 330183, "count": 419}
+      },
+      "inline": {
+        "tier4": {"avg_sales": 1438568, "ebitda_pct": 0.098, "ebitda_dollars": 141084, "count": 33},
+        "tier3": {"avg_sales": 1598103, "ebitda_pct": 0.102, "ebitda_dollars": 163700, "count": 51},
+        "tier2": {"avg_sales": 1796886, "ebitda_pct": 0.129, "ebitda_dollars": 231589, "count": 190},
+        "tier1": {"avg_sales": 1938512, "ebitda_pct": 0.134, "ebitda_dollars": 259541, "count": 154}
+      }
+    }
+  },
+  "item20_yearly_activity": {
+    "franchised": {
+      "2023": {"start": 2905, "opened": 165, "terminated": 0, "non_renewed": 4, "reacquired": 0, "ceased_other": 31, "end": 3035},
+      "2024": {"start": 3035, "opened": 136, "terminated": 0, "non_renewed": 8, "reacquired": 58, "ceased_other": 26, "end": 3079},
+      "2025": {"start": 3079, "opened": 104, "terminated": 14, "non_renewed": 2, "reacquired": 0, "ceased_other": 33, "end": 3134}
+    },
+    "company_owned": {
+      "2023": {"start": 41, "opened": 0, "reacquired": 0, "closed": 0, "sold": 0, "end": 41},
+      "2024": {"start": 41, "opened": 0, "reacquired": 58, "closed": 1, "sold": 0, "end": 98},
+      "2025": {"start": 98, "opened": 0, "reacquired": 0, "closed": 3, "sold": 0, "end": 95}
+    },
+    "transfers": {"2023": 128, "2024": 125, "2025": 229}
+  },
+  "exhibit_structure": {
+    "total_exhibits": 22,
+    "page_allocation": {
+      "A_agents": 8, "B_application": 12, "C_development": 46, "D_franchise_agreement": 59,
+      "E_guaranty": 14, "F_renewal": 8, "G_addenda": 24, "H_lease": 34,
+      "I_manual_index": 7, "J_franchisee_lists": 71, "K_state_addenda": 95,
+      "L_financial_statements": 123, "M_loan_docs": 5, "N_sellers": 4
+    }
+  },
+  "state_addenda_overrides": {
+    "states_count": 14,
+    "states": ["California", "Hawaii", "Illinois", "Indiana", "Maryland", "Michigan", "Minnesota", "New York", "North Dakota", "Rhode Island", "South Dakota", "Virginia", "Washington", "Wisconsin"],
+    "venue_overrides": ["Illinois", "Washington", "North Dakota"],
+    "guarantor_rbilp_states": ["California", "Illinois", "Maryland", "North Dakota", "Rhode Island", "Virginia", "Washington"]
+  }
+}

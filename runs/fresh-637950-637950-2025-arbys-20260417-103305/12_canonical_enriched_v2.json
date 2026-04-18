@@ -1,0 +1,209 @@
+{
+  "_enrichment_version": "v2",
+  "_self_contained": true,
+  "_enrichment_layers": ["all_canonical_fields", "item19_chart_detail", "item20_yearly_activity", "exhibit_structure", "state_addenda_overrides", "item1_structural_facts", "item6_fee_detail", "item7_total_investment", "item11_training", "item21_financial_structure_detail"],
+
+  "document_identity": {
+    "filing_id": "637950", "brand": "Arby's", "franchisor_legal_name": "Arby's Franchisor, LLC",
+    "state_filed": "Wisconsin", "issuance_date": "March 27, 2025", "amendment_date": "July 2, 2025",
+    "fdd_year": 2025, "pdf_pages": 362
+  },
+
+  "item1": {
+    "franchisor": "Arby's Franchisor, LLC", "state_of_organization": "Delaware", "date_organized": "July 2, 2015",
+    "parent_company": "Inspire Brands, Inc.", "predecessor": "ARG",
+    "principal_address": "Three Glenlake Parkway NE, Atlanta, Georgia 30328",
+    "system_size": {"franchised": 2286, "company_owned": 1079, "total": 3365, "international": 231, "as_of": "December 29, 2024"},
+    "restaurant_types": ["Traditional", "Non-Traditional"],
+    "multi_brand_partners": ["Buffalo Wild Wings", "Dunkin'", "Baskin-Robbins", "Jimmy John's", "Sonic"],
+    "securitization": {"date": "November 13, 2015", "notes_outstanding": 789938000, "anticipated_repayment": "July 2027"},
+    "management_agreement": {"manager": "ARG", "base_fee": 10400000, "2024_fee": 31334000, "escalator_pct": 2}
+  },
+
+  "item2_leadership_roster": [
+    {"name": "Paul Brown", "role": "CEO, Inspire Brands", "tenure_start": "Feb 2018"},
+    {"name": "David Graves", "role": "President, Arby's/ARG", "tenure_start": "Sep 2024"},
+    {"name": "Katherine Jaspon", "role": "CFO & Asst Secretary", "tenure_start": "Jul 2021"},
+    {"name": "Nils H. Okeson", "role": "CAO, General Counsel, Secretary", "tenure_start": "Jul 2015"},
+    {"name": "Jason Maceda", "role": "Chief Development Officer", "tenure_start": "Jan 2024"},
+    {"name": "Yasir Anwar", "role": "CTO, Inspire Brands", "tenure_start": "May 2024"},
+    {"name": "Jeff Baker", "role": "Chief Brand Marketing Officer", "tenure_start": "Aug 2024"},
+    {"name": "Haddon Bennett", "role": "CISO, Inspire Brands", "tenure_start": "Dec 2019"},
+    {"name": "Joel Blanchard", "role": "Chief Supply Officer", "tenure_start": "Mar 2025"},
+    {"name": "Daniel Lynn", "role": "Chief Commercial & Restaurant Officer", "tenure_start": "Aug 2022"},
+    {"name": "Scott Murphy", "role": "Chief Brand Officer, Inspire", "tenure_start": "Nov 2023"},
+    {"name": "Dennis McCarthy", "role": "SVP Franchise Finance", "tenure_start": "May 2022"},
+    {"name": "Luigi C. Beccarelli", "role": "SVP Franchise Optimization", "tenure_start": "Jun 2024"},
+    {"name": "Vans Nelson", "role": "SVP Operations Excellence", "tenure_start": "Jan 2025"},
+    {"name": "Tim Asire", "role": "VP Franchise Health", "tenure_start": "Jan 2025"},
+    {"name": "William Duffy", "role": "VP Restaurant Portfolio Mgmt", "tenure_start": "Jul 2015"},
+    {"name": "Volker Heimeshoff", "role": "VP Construction Programs", "tenure_start": "Jun 2022"},
+    {"name": "Russell Holland", "role": "VP Real Estate", "tenure_start": "Dec 2019"},
+    {"name": "Kelli Holmes", "role": "VP Brand Training", "tenure_start": "Jan 2025"},
+    {"name": "Laura Ivanishvili", "role": "VP Architecture & Design", "tenure_start": "Mar 2023"},
+    {"name": "Lisa P. Storey", "role": "VP Franchise Counsel", "tenure_start": "Mar 2020"},
+    {"name": "Brian Forrester", "role": "Sr Director Field Training", "tenure_start": "Jan 2025"},
+    {"name": "Theresa Rivello", "role": "Sr Director Franchise Development", "tenure_start": "Jan 2023"}
+  ],
+
+  "item3_litigation": {
+    "pending_count": 1, "resolved_count": 4,
+    "pending": [{"name": "Alongis v. ARG", "type": "consumer class action", "filed": "Sep 2023", "status": "pending"}],
+    "resolved": [
+      {"name": "Jaghori v. ARG", "settlement": 155000},
+      {"name": "Data Security Consumer", "settlement_cap": 2000000},
+      {"name": "Data Security Financial Institution", "settlement_cap": 2987136},
+      {"name": "Multi-Jurisdictional No-Poach", "settlement": "no money; removed provisions"}
+    ]
+  },
+
+  "item5_initial_fees": {
+    "traditional": {"development_fee": 12500, "franchise_fee": 37500},
+    "nontrad": {"development_fee": 0, "franchise_fee": 18750},
+    "nro": {"development_fee": 12500, "franchise_fee": 0},
+    "training_fee_per_attendee": 2100, "training_fee_waived_first": 4
+  },
+
+  "item6_fee_detail": {
+    "royalty": {"traditional": 0.04, "nontrad": 0.062},
+    "nro_royalty_ramp": [
+      {"period": "Year 1", "rate": 0.005}, {"period": "Year 2-4", "rate": 0.01},
+      {"period": "Year 5", "rate": 0.02}, {"period": "Year 6+", "rate": 0.04}
+    ],
+    "nro_low_sales_extension": {"threshold": 1300000, "rate": 0.02, "period": "Year 6-10"},
+    "relocation_ramp": [
+      {"period": "Year 1", "rate": 0.01}, {"period": "Year 2", "rate": 0.02},
+      {"period": "Year 3", "rate": 0.03}, {"period": "Year 4+", "rate": 0.04}
+    ],
+    "advertising": {"afa_range": [0.0322, 0.05], "min_aggregate": 0.052, "coop_range": [0.03, 0.07], "nro_discount_yr1_3": 0.75, "nro_discount_yr4": 0.50, "min_afa_floor": 0.0085},
+    "transfer_fee": {"first": 17500, "existing": 2500},
+    "renewal_fee": "10% of then-current standard franchise fee",
+    "technology": {"order_ahead_monthly": 50, "order_ahead_pct": 0.04, "delivery_pct": 0.03, "lms_annual": 59.22},
+    "interest_max_pct": 18,
+    "additional_incentives": [
+      {"name": "Early Opening", "benefit": "0% royalty from opening to required opening date, up to 12 months"},
+      {"name": "VetFran", "benefit": "$10K royalty credit per unit, up to $100K"},
+      {"name": "Pioneer", "benefit": "$50K royalty credit per unit (first 2) in CT/DC/HI/MA/NH/RI/VT"},
+      {"name": "DTO", "benefit": "$25K rebate per DTO restaurant opened by Dec 31, 2027"}
+    ]
+  },
+
+  "item7_total_investment": {
+    "freestanding": {"low": 861950, "high": 2451000},
+    "nonfreestanding": {"low": 644950, "high": 1374000},
+    "building_sqft": [2400, 3000], "lot_sqft": [30000, 40000],
+    "financing_offered": false
+  },
+
+  "item8_supplier_restrictions": {
+    "approved_pct": 0.90, "arcop": true,
+    "supplier_approval_days": 90, "supplier_approval_cost": [2500, 10000],
+    "refresh_anniversary": 10
+  },
+
+  "item10_financing": {"offered": false},
+
+  "item11_training": {
+    "mtp_hours": 336, "mtp_weeks": 7, "mtp_location": "NCTR",
+    "phases": [
+      {"name": "TMTP", "weeks": 2, "hours": 96},
+      {"name": "SMTP", "weeks": 3, "hours": 144},
+      {"name": "MTP", "weeks": 2, "hours": 96}
+    ],
+    "manager_requirements": {"first_two": 3, "subsequent": 1},
+    "manual_pages": 658,
+    "time_to_open_days": [90, 540]
+  },
+
+  "item12_territory": {
+    "exclusive": false, "protected_area": "1-mile radius (free-standing); none (NT)",
+    "alternative_channels_reserved": true, "cpg_retail_stores": 44000
+  },
+
+  "item17_renewal": {"term_traditional": 20, "term_nontrad": 10, "materially_different_successor": true, "general_release_required": true},
+  "item17_termination": {"cure_period_days": 30, "monetary_cure_days": 10, "casualty_cure_days": 180},
+  "item17_transfer": {"approval_required": true, "fee_first": 17500, "fee_existing": 2500, "rofr": true},
+  "item17_noncompete": {"during_term": true, "post_term_months": 12, "scope": "roast beef sandwiches within Protected Area", "threshold_pct": 15},
+  "item17_dispute_resolution": {"arbitration": false, "venue": "Atlanta, GA", "governing_law": "Georgia"},
+  "item17_death_disability": {"da_terminates_on_death": true, "disability_provision": "none specified"},
+
+  "item18_public_figures": {"used": false},
+
+  "item19_chart_detail": {
+    "population": 2219, "overall_auv": 1269097, "overall_median": 1193215,
+    "cost_data": false, "ebitda": false,
+    "quartiles": [
+      {"q": 1, "n": 555, "auv": 1856562, "median": 1754983},
+      {"q": 2, "n": 555, "auv": 1343596, "median": 1339208},
+      {"q": 3, "n": 554, "auv": 1081262, "median": 1079979},
+      {"q": 4, "n": 555, "auv": 794630, "median": 814049}
+    ],
+    "venues": [
+      {"venue": "Free-standing", "n": 1888, "auv": 1257170},
+      {"venue": "Travel Plaza", "n": 175, "auv": 1564424},
+      {"venue": "Other NFS", "n": 156, "auv": 1082148}
+    ]
+  },
+
+  "item20_yearly_activity": {
+    "2024": {"franchised_start": 2316, "franchised_end": 2286, "franchised_net": -30, "company_start": 1097, "company_end": 1079, "company_net": -18, "total_net": -48},
+    "2023": {"franchised_net": 11, "company_net": -13, "total_net": -2},
+    "2022": {"franchised_net": 14, "company_net": -6, "total_net": 8},
+    "transfers_2024": 54, "projected_franchised": 13, "projected_company": 0,
+    "gag_clause_flag": true
+  },
+
+  "item21_financial_structure_detail": {
+    "franchisor_llc": {
+      "auditor": "KPMG LLP", "opinion": "unqualified", "going_concern": false,
+      "total_assets": 271861000, "total_revenue": 191680000, "net_income": 156473000,
+      "members_equity": 254370000, "trademark_value": 250000000,
+      "securitization_notes": 789938000,
+      "not_subject_to_income_tax": true,
+      "distributions_2024": 163394000
+    },
+    "arg": {
+      "auditor": "KPMG LLP", "opinion": "unqualified", "going_concern": false,
+      "total_assets": 1405257000, "total_revenue": 1690035000,
+      "company_owned_sales": 1433219000, "net_income": 91273000,
+      "operating_income": 158404000, "interest_expense": 43373000,
+      "long_term_debt": 884680000, "stockholders_deficit": -227292000,
+      "operating_lease_assets": 454529000, "goodwill": 18925000,
+      "impairment_charges": 3188000, "capex_2024": 92981000
+    }
+  },
+
+  "item21_note_families": [
+    {"family": "description_of_business", "walked": true, "source_pages": [215]},
+    {"family": "accounting_policies", "walked": true, "source_pages": [216, 217]},
+    {"family": "intangible_assets", "walked": true, "source_pages": [218]},
+    {"family": "revenue_recognition", "walked": true, "source_pages": [219]},
+    {"family": "commitments_securitization", "walked": true, "source_pages": [219, 220]},
+    {"family": "related_parties", "walked": true, "source_pages": [220]},
+    {"family": "subsequent_events", "walked": true, "source_pages": [220]}
+  ],
+
+  "special_risks": [{"risk": "out_of_state_dispute_resolution", "source_pages": [4]}],
+  "state_addenda_overrides": {
+    "states": ["California", "Hawaii", "Maryland", "Minnesota", "North Dakota", "Washington"],
+    "key_overrides": [
+      {"state": "Maryland", "family": "general_release", "override": "Does not apply to MD Franchise Law"},
+      {"state": "Minnesota", "family": "termination", "override": "90 days notice (60 to cure); 180 days non-renewal"},
+      {"state": "Minnesota", "family": "forum_selection", "override": "Litigation cannot be required outside MN"},
+      {"state": "North Dakota", "family": "forum_selection", "override": "No out-of-state forum"},
+      {"state": "North Dakota", "family": "governing_law", "override": "ND law applies"},
+      {"state": "North Dakota", "family": "damages", "override": "No liquidated damages or termination penalties"}
+    ]
+  },
+
+  "unresolveds": [
+    {"id": "UR-1", "description": "FA not clause-walked", "severity": "medium"},
+    {"id": "UR-2", "description": "DA not clause-walked", "severity": "medium"},
+    {"id": "UR-3", "description": "General Release not clause-walked", "severity": "medium"},
+    {"id": "UR-4", "description": "ARG notes not fully walked", "severity": "medium"},
+    {"id": "UR-5", "description": "No cost data in Item 19", "severity": "high"}
+  ],
+  "contradictions": [
+    {"id": "C-1", "description": "Gag clause coexists with franchisee list", "items_involved": ["Item 20"], "resolution_status": "informational"}
+  ]
+}
